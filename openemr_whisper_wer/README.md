@@ -1,6 +1,12 @@
 # (Whisper Models) Word Error Rate
 This repository has code to evaluate the performance of whisper-edge and whisper-web for transcription over a dataset of 
 audio files and six simulated patient doctor conversations recorded.
+
+## System Requirements:
+* Python version 3.9.6
+* Git, Git Hub (To clone the repository)
+* pip install -r requirements
+
 ## Execution: 
 
 Run
