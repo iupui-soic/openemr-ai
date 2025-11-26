@@ -1,0 +1,154 @@
+name: WER Evaluation
+
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: 'Model to evaluate'
+        required: true
+        default: 'whisper-large-v3-turbo'
+        type: choice
+        options:
+          - whisper-large-v3-turbo
+          - whisper-large-v3
+          - whisper-medium
+          - whisper-small
+  push:
+    paths:
+      - 'openemr_whisper_wer/**'
+      - '.github/workflows/wer-evaluation.yml'
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python whisper_wer.py --output results.csv
+
+      - name: Generate summary table
+        run: |
+          python << 'EOF'
+          import pandas as pd
+          import os
+
+          df = pd.read_csv("openemr_whisper_wer/results.csv")
+          model = os.environ.get("MODEL_NAME", "whisper-large-v3-turbo")
+
+          # Calculate summary stats
+          valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
+          avg_wer = valid['wer'].mean() if len(valid) > 0 else 1.0
+
+          # Create markdown summary
+          summary = f"""
+          ## 🎯 WER Evaluation Results
+
+          **Model:** `{model}`
+          **Average WER:** `{avg_wer:.2%}`
+          **Samples:** {len(valid)} successful / {len(df)} total
+
+          ### Per-Sample Results
+
+          | Sample | WER | Status |
+          |--------|-----|--------|
+          """
+
+          for _, row in df.iterrows():
+              name = row['name']
+              if 'error' in row and pd.notna(row.get('error')) and row['error']:
+                  status = f"❌ {row['error'][:30]}..."
+                  wer_str = "N/A"
+              else:
+                  wer = row['wer']
+                  if wer < 0.10:
+                      status = "🟢 Excellent"
+                  elif wer < 0.20:
+                      status = "🟡 Good"
+                  elif wer < 0.30:
+                      status = "🟠 Fair"
+                  else:
+                      status = "🔴 Poor"
+                  wer_str = f"{wer:.2%}"
+              summary += f"| {name} | {wer_str} | {status} |\n"
+
+          summary += f"""
+          ### Comparison Table
+
+          | Model | Avg WER | Date |
+          |-------|---------|------|
+          | {model} | {avg_wer:.2%} | $(date +%Y-%m-%d) |
+
+          ---
+          *Results saved as artifact: `results.csv`*
+          """
+
+          # Write to GitHub step summary
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write(summary)
+
+          print(summary)
+          EOF
+        env:
+          MODEL_NAME: ${{ inputs.model || 'whisper-large-v3-turbo' }}
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: wer-results-${{ inputs.model || 'whisper-large-v3-turbo' }}
+          path: openemr_whisper_wer/results.csv
+          retention-days: 90
+
+      - name: Update results history
+        run: |
+          # Append to history file for tracking over time
+          python << 'EOF'
+          import pandas as pd
+          import os
+          from datetime import datetime
+
+          df = pd.read_csv("openemr_whisper_wer/results.csv")
+          model = os.environ.get("MODEL_NAME", "whisper-large-v3-turbo")
+
+          valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
+          avg_wer = valid['wer'].mean() if len(valid) > 0 else 1.0
+
+          history_file = "openemr_whisper_wer/wer_history.csv"
+
+          new_row = {
+              "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
+              "model": model,
+              "avg_wer": round(avg_wer, 4),
+              "samples": len(valid),
+              "commit": os.environ.get("GITHUB_SHA", "")[:7]
+          }
+
+          if os.path.exists(history_file):
+              history = pd.read_csv(history_file)
+              history = pd.concat([history, pd.DataFrame([new_row])], ignore_index=True)
+          else:
+              history = pd.DataFrame([new_row])
+
+          history.to_csv(history_file, index=False)
+          print(f"Updated {history_file}")
+          print(history.tail(10).to_string())
+          EOF
+        env:
+          MODEL_NAME: ${{ inputs.model || 'whisper-large-v3-turbo' }}
