@@ -89,12 +89,15 @@ jobs:
                   wer_str = f"{wer:.2%}"
               summary += f"| {name} | {wer_str} | {status} |\n"
 
+          from datetime import datetime
+          now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+
           summary += f"""
           ### Comparison Table
 
           | Model | Avg WER | Date |
           |-------|---------|------|
-          | {model} | {avg_wer:.2%} | $(date +%Y-%m-%d) |
+          | {model} | {avg_wer:.2%} | {now} |
 
           ---
           *Results saved as artifact: `results.csv`*
