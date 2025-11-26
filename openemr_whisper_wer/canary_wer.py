@@ -1,10 +1,10 @@
 """
 NVIDIA Canary WER Calculator
 
-Fetches audio from Notion database, transcribes with NVIDIA Canary-1B on Modal (ephemeral),
+Fetches audio from Notion database, transcribes with NVIDIA Canary-1B-v2 on Modal (ephemeral),
 calculates Word Error Rate, and generates detailed error analysis.
 
-Canary-1B is NVIDIA's multi-task ASR model based on the NeMo toolkit.
+Canary-1B-v2 is NVIDIA's multi-task ASR model based on the NeMo toolkit.
 
 Usage:
     python canary_wer.py --output results.csv
@@ -31,7 +31,7 @@ if not os.environ.get("MODAL_IS_REMOTE"):
 
 app = modal.App("canary-transcription")
 
-MODEL_ID = "nvidia/canary-1b"
+MODEL_ID = "nvidia/canary-1b-v2"
 
 canary_image = (
     modal.Image.debian_slim(python_version="3.10")
@@ -48,16 +48,13 @@ canary_image = (
 
 @app.cls(image=canary_image, gpu="A10G", timeout=600)
 class CanaryTranscriber:
-    def __init__(self, model_id: str = MODEL_ID):
-        self.model_id = model_id
-
     @modal.enter()
     def load_model(self):
         import nemo.collections.asr as nemo_asr
 
-        print(f"Loading {self.model_id}...")
+        print(f"Loading {MODEL_ID}...")
         self.model = nemo_asr.models.EncDecMultiTaskModel.from_pretrained(
-            model_name=self.model_id,
+            model_name=MODEL_ID,
             map_location="cuda"
         )
         self.model.eval()
@@ -105,9 +102,9 @@ class CanaryTranscriber:
                 "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
             ], check=True, capture_output=True)
 
-            # Transcribe with Canary
+            # Transcribe with Canary v2 (uses 'audio' parameter)
             result = self.model.transcribe(
-                paths2audio_files=[output_path],
+                audio=[output_path],
                 batch_size=1,
             )
 
