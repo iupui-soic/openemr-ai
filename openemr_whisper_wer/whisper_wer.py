@@ -68,12 +68,12 @@ class WhisperTranscriber:
         )
         model.to(self.device)
 
-        self.processor = AutoProcessor.from_pretrained(self.model_id)
+        processor = AutoProcessor.from_pretrained(self.model_id)
         self.pipe = pipeline(
             "automatic-speech-recognition",
             model=model,
-            tokenizer=self.processor.tokenizer,
-            feature_extractor=self.processor.feature_extractor,
+            tokenizer=processor.tokenizer,
+            feature_extractor=processor.feature_extractor,
             chunk_length_s=30,
             batch_size=16,
             torch_dtype=self.torch_dtype,
@@ -82,13 +82,12 @@ class WhisperTranscriber:
         print("Model loaded!")
 
     @modal.method()
-    def transcribe(self, audio_bytes: bytes, prompt: Optional[str] = None) -> str:
+    def transcribe(self, audio_bytes: bytes) -> str:
         """
         Transcribe audio bytes to text.
 
         Args:
             audio_bytes: Raw audio file bytes (m4a, mp3, wav, etc.)
-            prompt: Optional prompt to condition the model (e.g., medical terms)
 
         Returns:
             Transcribed text
@@ -124,17 +123,7 @@ class WhisperTranscriber:
                 "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
             ], check=True, capture_output=True)
 
-            # Build generation kwargs
-            generate_kwargs = {}
-            if prompt:
-                prompt_ids = self.processor.get_prompt_ids(prompt, return_tensors="pt")
-                generate_kwargs["prompt_ids"] = prompt_ids.to(self.device)
-
-            result = self.pipe(
-                output_path,
-                return_timestamps=True,
-                generate_kwargs=generate_kwargs if generate_kwargs else None,
-            )
+            result = self.pipe(output_path, return_timestamps=True)
             return result["text"].strip()
 
         except subprocess.CalledProcessError as e:
@@ -482,7 +471,6 @@ def run_pipeline(
         database_id: str,
         output_csv: str = "results.csv",
         use_large_v3: bool = False,
-        medical_prompt: bool = False,
         error_report_path: str = "error_analysis.txt",
 ):
     """
@@ -492,7 +480,6 @@ def run_pipeline(
         database_id: Notion database ID
         output_csv: Path for results CSV
         use_large_v3: Use whisper-large-v3 instead of turbo (slower, more accurate)
-        medical_prompt: Add medical context prompt to Whisper
         error_report_path: Path for detailed error analysis report
     """
     print("=" * 60)
@@ -501,17 +488,6 @@ def run_pipeline(
 
     model_id = "openai/whisper-large-v3" if use_large_v3 else "openai/whisper-large-v3-turbo"
     print(f"Model: {model_id}")
-
-    # Medical prompt for conditioning
-    prompt = None
-    if medical_prompt:
-        prompt = (
-            "Medical consultation transcript. "
-            "Terms: diagnosis, symptoms, medication, prescription, "
-            "patient history, vital signs, blood pressure, heart rate, "
-            "chronic condition, acute, benign, malignant, prognosis."
-        )
-        print(f"Using medical prompt: {prompt[:50]}...")
 
     # Initialize
     print("\n[1/5] Fetching entries from Notion...")
@@ -544,7 +520,7 @@ def run_pipeline(
 
                 # Transcribe
                 print(f"    Transcribing...")
-                transcript = transcriber.transcribe.remote(audio_bytes, prompt=prompt)
+                transcript = transcriber.transcribe.remote(audio_bytes)
 
                 # Calculate WER
                 metrics = wer_calc.calculate(entry["ground_truth"], transcript)
@@ -600,7 +576,6 @@ def run_pipeline(
     print("RESULTS SUMMARY")
     print("=" * 60)
     print(f"Model: {model_id}")
-    print(f"Medical prompt: {'Yes' if medical_prompt else 'No'}")
     print(f"Entries: {len(entries)} total, {len(valid)} successful")
     print(f"\nAverage WER: {avg_wer:.4f} ({avg_wer*100:.2f}%)")
     print(f"Aggregate WER: {agg_wer:.4f} ({agg_wer*100:.2f}%)")
@@ -651,11 +626,6 @@ def main():
         action="store_true",
         help="Use whisper-large-v3 (more accurate, slower) instead of turbo",
     )
-    parser.add_argument(
-        "--medical-prompt",
-        action="store_true",
-        help="Add medical terminology prompt to improve transcription",
-    )
 
     args = parser.parse_args()
 
@@ -663,7 +633,6 @@ def main():
         database_id=args.database_id,
         output_csv=args.output,
         use_large_v3=args.use_large_v3,
-        medical_prompt=args.medical_prompt,
         error_report_path=args.error_report,
     )
 
