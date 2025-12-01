@@ -43,7 +43,7 @@ jobs:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY}}
-          MODEL_NAME: ${{ inputs.model || 'canary-1b-v2' }}
+          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
 
         run: |
           cd openemr_whisper_wer
@@ -68,7 +68,7 @@ jobs:
           import os
 
           df = pd.read_csv("openemr_whisper_wer/results.csv")
-          model = os.environ.get("MODEL_NAME", "canary-1b-v2")
+          model = os.environ.get("MODEL_NAME", "groq-whisper-large-v3-turbo")
 
           # Calculate summary stats
           valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
@@ -127,12 +127,12 @@ jobs:
           print(summary)
           EOF
         env:
-          MODEL_NAME: ${{ inputs.model || 'canary-1b-v2' }}
+          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: wer-results-${{ inputs.model || 'canary-1b-v2' }}
+          name: wer-results-${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
           path: openemr_whisper_wer/results.csv
           retention-days: 90
 
@@ -145,7 +145,7 @@ jobs:
           from datetime import datetime
 
           df = pd.read_csv("openemr_whisper_wer/results.csv")
-          model = os.environ.get("MODEL_NAME", "canary-1b-v2")
+          model = os.environ.get("MODEL_NAME", "groq-whisper-large-v3-turbo")
 
           valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
           avg_wer = valid['wer'].mean() if len(valid) > 0 else 1.0
@@ -171,4 +171,4 @@ jobs:
           print(history.tail(10).to_string())
           EOF
         env:
-          MODEL_NAME: ${{ inputs.model || 'canary-1b-v2' }}
+          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
