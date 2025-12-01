@@ -30,7 +30,7 @@ from wer_utils import (
 # Configuration
 # ============================================================================
 
-MODEL_ID = "whisper-large-v3-turbo_groq"
+MODEL_ID = "whisper-large-v3-turbo"
 
 
 # ============================================================================
@@ -41,7 +41,7 @@ class GroqTranscriber:
     """Transcribe audio using Groq's Whisper API."""
 
     def __init__(self, api_key: str = None):
-        self.api_key = api_key or os.environ.get("GROQ_API_KEY") or os.environ.get("groq_api_key")
+        self.api_key = api_key or os.environ.get("GROQ_API_KEY")
         if not self.api_key:
             raise ValueError("Set GROQ_API_KEY environment variable")
         self.client = Groq(api_key=self.api_key)
