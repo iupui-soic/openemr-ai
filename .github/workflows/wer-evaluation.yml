@@ -6,7 +6,7 @@ on:
       model:
         description: 'Model to evaluate'
         required: true
-        default: 'canary-1b-v2'
+        default: 'groq-whisper-large-v3-turbo'
         type: choice
         options:
           - whisper-large-v3-turbo
