@@ -55,7 +55,7 @@ jobs:
             python phi4_wer.py --output results.csv
           elif [ "$MODEL_NAME" = "whisper-large-v3" ]; then
             python whisper_wer.py --output results.csv --use-large-v3
-          elif [ "$MODEL_NAME" = "whisper-large-v3" ]; then
+          elif [ "$MODEL_NAME" = "groq-whisper-large-v3-turbo" ]; then
             python wlv3t_on_groq.py --output results.csv
           else
             python whisper_wer.py --output results.csv
