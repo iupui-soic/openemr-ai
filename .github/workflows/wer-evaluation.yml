@@ -30,7 +30,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install Modal
         run: pip install modal
@@ -45,7 +45,7 @@ jobs:
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-        run: modal run kaggle_dataset.py
+        run: modal run openemr_whisper_wer/kaggle_dataset.py
 
   detect-changes:
     runs-on: ubuntu-latest
