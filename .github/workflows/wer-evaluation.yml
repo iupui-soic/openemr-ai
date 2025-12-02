@@ -21,6 +21,7 @@ jobs:
       granite_changed: ${{ steps.filter.outputs.granite }}
       phi4_changed: ${{ steps.filter.outputs.phi4 }}
       groq_changed: ${{ steps.filter.outputs.groq }}
+      parakeet_changed: ${{ steps.filter.outputs.parakeet }}
       utils_changed: ${{ steps.filter.outputs.utils }}
       # Script hashes for cache keys
       whisper_hash: ${{ steps.hashes.outputs.whisper }}
@@ -28,6 +29,7 @@ jobs:
       granite_hash: ${{ steps.hashes.outputs.granite }}
       phi4_hash: ${{ steps.hashes.outputs.phi4 }}
       groq_hash: ${{ steps.hashes.outputs.groq }}
+      parakeet_hash: ${{ steps.hashes.outputs.parakeet }}
       utils_hash: ${{ steps.hashes.outputs.utils }}
     steps:
       - uses: actions/checkout@v4
@@ -49,6 +51,8 @@ jobs:
               - 'openemr_whisper_wer/phi4_wer.py'
             groq:
               - 'openemr_whisper_wer/wlv3t_on_groq.py'
+            parakeet:
+              - 'openemr_whisper_wer/parakeet_wer.py'
             utils:
               - 'openemr_whisper_wer/wer_utils.py'
               - 'openemr_whisper_wer/requirements.txt'
@@ -61,6 +65,7 @@ jobs:
           echo "granite=${{ hashFiles('openemr_whisper_wer/granite_wer.py') }}" >> $GITHUB_OUTPUT
           echo "phi4=${{ hashFiles('openemr_whisper_wer/phi4_wer.py') }}" >> $GITHUB_OUTPUT
           echo "groq=${{ hashFiles('openemr_whisper_wer/wlv3t_on_groq.py') }}" >> $GITHUB_OUTPUT
+          echo "parakeet=${{ hashFiles('openemr_whisper_wer/parakeet_wer.py') }}" >> $GITHUB_OUTPUT
           echo "utils=${{ hashFiles('openemr_whisper_wer/wer_utils.py', 'openemr_whisper_wer/requirements.txt') }}" >> $GITHUB_OUTPUT
 
   # ============================================
@@ -387,6 +392,59 @@ jobs:
           path: openemr_whisper_wer/results-groq-whisper-large-v3-turbo.csv
           retention-days: 90
 
+  evaluate-parakeet:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-parakeet-tdt-1.1b.csv
+          key: wer-parakeet-${{ needs.detect-changes.outputs.parakeet_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python parakeet_wer.py --output results-parakeet-tdt-1.1b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-parakeet-tdt-1.1b
+          path: openemr_whisper_wer/results-parakeet-tdt-1.1b.csv
+          retention-days: 90
+
   # ============================================
   # Comparison table generation
   # ============================================
@@ -400,6 +458,7 @@ jobs:
       - evaluate-granite
       - evaluate-phi4
       - evaluate-groq
+      - evaluate-parakeet
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -434,6 +493,7 @@ jobs:
               ('granite-speech-3.3-8b', 'results-granite-speech-3.3-8b'),
               ('phi4-multimodal', 'results-phi4-multimodal'),
               ('groq-whisper-large-v3-turbo', 'results-groq-whisper-large-v3-turbo'),
+              ('parakeet-tdt-1.1b', 'results-parakeet-tdt-1.1b'),
           ]
 
           results = []
