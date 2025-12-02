@@ -7,10 +7,10 @@ on:
         description: 'Force run all models (ignore cache)'
         type: boolean
         default: false
-      setup_volume:
-        description: 'Setup Modal volume (only needed once)'
-        type: boolean
-        default: true
+#      setup_volume:
+#        description: 'Setup Modal volume (only needed once)'
+#        type: boolean
+#        default: false
   push:
     paths:
       - 'openemr_whisper_wer/**'
@@ -22,7 +22,7 @@ jobs:
   # ============================================
   setup-modal-volume:
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.setup_volume == 'true' }}
+    #if: ${{ github.event.inputs.setup_volume == 'true' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
