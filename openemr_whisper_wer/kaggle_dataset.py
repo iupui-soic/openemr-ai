@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Modal Persistent Volume Setup for Medical Speech Dataset
-
-Usage (from GitHub Actions):
-    KAGGLE_USERNAME=xxx KAGGLE_KEY=xxx modal run modal_dataset_volume.py
-"""
-
 import os
 import modal
 
@@ -55,7 +47,7 @@ def download_dataset():
     dataset_marker = data_dir / ".dataset_downloaded"
 
     if dataset_marker.exists():
-        print("✓ Dataset already downloaded to volume!")
+        print("Dataset already downloaded to volume!")
         return {"status": "already_exists", "path": str(data_dir)}
 
     print("=== Downloading Medical Speech Dataset to Modal Volume ===\n")
@@ -65,7 +57,7 @@ def download_dataset():
 
     print(f"✓ Kaggle credentials found for user: {kaggle_username}")
 
-    print("\n📥 Downloading dataset from Kaggle...")
+    print("\nDownloading dataset from Kaggle...")
     result = subprocess.run(
         [
             "kaggle", "datasets", "download",

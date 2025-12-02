@@ -7,12 +7,46 @@ on:
         description: 'Force run all models (ignore cache)'
         type: boolean
         default: false
+      setup_volume:
+        description: 'Setup Modal volume (only needed once)'
+        type: boolean
+        default: false
   push:
     paths:
       - 'openemr_whisper_wer/**'
       - '.github/workflows/wer-evaluation.yml'
 
 jobs:
+  # ============================================
+  # Optional: Setup Modal persistent volume (run once)
+  # ============================================
+  setup-modal-volume:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.setup_volume == 'true' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Modal
+        run: pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Download dataset to Modal volume
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: modal run kaggle_dataset.py
+
   detect-changes:
     runs-on: ubuntu-latest
     outputs:
