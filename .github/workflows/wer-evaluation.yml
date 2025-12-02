@@ -10,7 +10,7 @@ on:
       setup_volume:
         description: 'Setup Modal volume (only needed once)'
         type: boolean
-        default: false
+        default: true
   push:
     paths:
       - 'openemr_whisper_wer/**'
