@@ -7,12 +7,53 @@ on:
         description: 'Force run all models (ignore cache)'
         type: boolean
         default: false
+      setup_volume:
+        description: 'Setup Modal volume (only needed once)'
+        type: boolean
+        default: false
   push:
     paths:
       - 'openemr_whisper_wer/**'
       - '.github/workflows/wer-evaluation.yml'
 
 jobs:
+  # Optional setup volume job - only runs if setup_volume is true
+  setup-modal-volume:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.setup_volume == 'true' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Modal
+        run: pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Download dataset to Modal volume
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: kaggle_dataset.py
+      - name: List files in volume
+        id: list_volume
+        run: |
+          echo "Listing files in Modal volume..."
+          output=$(modal run modal_dataset_volume.py list_volume_contents)
+          echo "$output"
+          echo "volume_files<<EOF" >> $GITHUB_OUTPUT
+          echo "$output" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
   detect-changes:
     runs-on: ubuntu-latest
     outputs:
