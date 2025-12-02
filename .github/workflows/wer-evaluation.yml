@@ -3,172 +3,592 @@ name: WER Evaluation
 on:
   workflow_dispatch:
     inputs:
-      model:
-        description: 'Model to evaluate'
-        required: true
-        default: 'groq-whisper-large-v3-turbo'
-        type: choice
-        options:
-          - whisper-large-v3-turbo
-          - whisper-large-v3
-          - canary-1b-v2
-          - granite-speech-3.3-8b
-          - phi4-multimodal
-          - groq-whisper-large-v3-turbo
+      force_all:
+        description: 'Force run all models (ignore cache)'
+        type: boolean
+        default: false
   push:
     paths:
       - 'openemr_whisper_wer/**'
       - '.github/workflows/wer-evaluation.yml'
 
 jobs:
-  evaluate:
+  detect-changes:
     runs-on: ubuntu-latest
-
+    outputs:
+      whisper_changed: ${{ steps.filter.outputs.whisper }}
+      canary_changed: ${{ steps.filter.outputs.canary }}
+      granite_changed: ${{ steps.filter.outputs.granite }}
+      phi4_changed: ${{ steps.filter.outputs.phi4 }}
+      groq_changed: ${{ steps.filter.outputs.groq }}
+      utils_changed: ${{ steps.filter.outputs.utils }}
+      # Script hashes for cache keys
+      whisper_hash: ${{ steps.hashes.outputs.whisper }}
+      canary_hash: ${{ steps.hashes.outputs.canary }}
+      granite_hash: ${{ steps.hashes.outputs.granite }}
+      phi4_hash: ${{ steps.hashes.outputs.phi4 }}
+      groq_hash: ${{ steps.hashes.outputs.groq }}
+      utils_hash: ${{ steps.hashes.outputs.utils }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed files
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            whisper:
+              - 'openemr_whisper_wer/whisper_wer.py'
+            canary:
+              - 'openemr_whisper_wer/canary_wer.py'
+            granite:
+              - 'openemr_whisper_wer/granite_wer.py'
+            phi4:
+              - 'openemr_whisper_wer/phi4_wer.py'
+            groq:
+              - 'openemr_whisper_wer/wlv3t_on_groq.py'
+            utils:
+              - 'openemr_whisper_wer/wer_utils.py'
+              - 'openemr_whisper_wer/requirements.txt'
+
+      - name: Calculate script hashes
+        id: hashes
+        run: |
+          echo "whisper=${{ hashFiles('openemr_whisper_wer/whisper_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "canary=${{ hashFiles('openemr_whisper_wer/canary_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "granite=${{ hashFiles('openemr_whisper_wer/granite_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "phi4=${{ hashFiles('openemr_whisper_wer/phi4_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "groq=${{ hashFiles('openemr_whisper_wer/wlv3t_on_groq.py') }}" >> $GITHUB_OUTPUT
+          echo "utils=${{ hashFiles('openemr_whisper_wer/wer_utils.py', 'openemr_whisper_wer/requirements.txt') }}" >> $GITHUB_OUTPUT
+
+  # ============================================
+  # Model evaluation jobs (run in parallel)
+  # ============================================
+
+  evaluate-whisper-turbo:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-whisper-large-v3-turbo.csv
+          key: wer-whisper-turbo-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+            echo "Force run requested"
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+            echo "Using cached results"
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+            echo "Running evaluation"
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python whisper_wer.py --output results-whisper-large-v3-turbo.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-whisper-large-v3-turbo
+          path: openemr_whisper_wer/results-whisper-large-v3-turbo.csv
+          retention-days: 90
+
+  evaluate-whisper-v3:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-whisper-large-v3.csv
+          key: wer-whisper-v3-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python whisper_wer.py --output results-whisper-large-v3.csv --use-large-v3
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-whisper-large-v3
+          path: openemr_whisper_wer/results-whisper-large-v3.csv
+          retention-days: 90
+
+  evaluate-canary:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-canary-1b-v2.csv
+          key: wer-canary-${{ needs.detect-changes.outputs.canary_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python canary_wer.py --output results-canary-1b-v2.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-canary-1b-v2
+          path: openemr_whisper_wer/results-canary-1b-v2.csv
+          retention-days: 90
+
+  evaluate-granite:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
+          key: wer-granite-${{ needs.detect-changes.outputs.granite_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python granite_wer.py --output results-granite-speech-3.3-8b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-granite-speech-3.3-8b
+          path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
+          retention-days: 90
+
+  evaluate-phi4:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-phi4-multimodal.csv
+          key: wer-phi4-${{ needs.detect-changes.outputs.phi4_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python phi4_wer.py --output results-phi4-multimodal.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-phi4-multimodal
+          path: openemr_whisper_wer/results-phi4-multimodal.csv
+          retention-days: 90
+
+  evaluate-groq:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-groq-whisper-large-v3-turbo.csv
+          key: wer-groq-${{ needs.detect-changes.outputs.groq_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          cd openemr_whisper_wer
+          python wlv3t_on_groq.py --output results-groq-whisper-large-v3-turbo.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-groq-whisper-large-v3-turbo
+          path: openemr_whisper_wer/results-groq-whisper-large-v3-turbo.csv
+          retention-days: 90
+
+  # ============================================
+  # Comparison table generation
+  # ============================================
+
+  generate-comparison:
+    needs:
+      - detect-changes
+      - evaluate-whisper-turbo
+      - evaluate-whisper-v3
+      - evaluate-canary
+      - evaluate-granite
+      - evaluate-phi4
+      - evaluate-groq
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install -r openemr_whisper_wer/requirements.txt
+      - name: Install pandas
+        run: pip install pandas
 
-      - name: Run WER evaluation
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY}}
-          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: results-*
+          merge-multiple: false
 
-        run: |
-          cd openemr_whisper_wer
-          if [ "$MODEL_NAME" = "canary-1b-v2" ]; then
-            python canary_wer.py --output results.csv
-          elif [ "$MODEL_NAME" = "granite-speech-3.3-8b" ]; then
-            python granite_wer.py --output results.csv
-          elif [ "$MODEL_NAME" = "phi4-multimodal" ]; then
-            python phi4_wer.py --output results.csv
-          elif [ "$MODEL_NAME" = "whisper-large-v3" ]; then
-            python whisper_wer.py --output results.csv --use-large-v3
-          elif [ "$MODEL_NAME" = "groq-whisper-large-v3-turbo" ]; then
-            python wlv3t_on_groq.py --output results.csv
-          else
-            python whisper_wer.py --output results.csv
-          fi
-
-      - name: Generate summary table
+      - name: Generate comparison table
         run: |
           python << 'EOF'
           import pandas as pd
           import os
-
-          df = pd.read_csv("openemr_whisper_wer/results.csv")
-          model = os.environ.get("MODEL_NAME", "groq-whisper-large-v3-turbo")
-
-          # Calculate summary stats
-          valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
-          avg_wer = valid['wer'].mean() if len(valid) > 0 else 1.0
-
-          # Create markdown summary
-          summary = f"""
-          ## 🎯 WER Evaluation Results
-
-          **Model:** `{model}`
-          **Average WER:** `{avg_wer:.2%}`
-          **Samples:** {len(valid)} successful / {len(df)} total
-
-          ### Per-Sample Results
-
-          | Sample | WER | Status |
-          |--------|-----|--------|
-          """
-
-          for _, row in df.iterrows():
-              name = row['name']
-              if 'error' in row and pd.notna(row.get('error')) and row['error']:
-                  status = f"❌ {row['error'][:30]}..."
-                  wer_str = "N/A"
-              else:
-                  wer = row['wer']
-                  if wer < 0.10:
-                      status = "🟢 Excellent"
-                  elif wer < 0.20:
-                      status = "🟡 Good"
-                  elif wer < 0.30:
-                      status = "🟠 Fair"
-                  else:
-                      status = "🔴 Poor"
-                  wer_str = f"{wer:.2%}"
-              summary += f"| {name} | {wer_str} | {status} |\n"
-
           from datetime import datetime
+
+          models = [
+              ('whisper-large-v3-turbo', 'results-whisper-large-v3-turbo'),
+              ('whisper-large-v3', 'results-whisper-large-v3'),
+              ('canary-1b-v2', 'results-canary-1b-v2'),
+              ('granite-speech-3.3-8b', 'results-granite-speech-3.3-8b'),
+              ('phi4-multimodal', 'results-phi4-multimodal'),
+              ('groq-whisper-large-v3-turbo', 'results-groq-whisper-large-v3-turbo'),
+          ]
+
+          results = []
+          all_samples = {}
+
+          for model_name, artifact_name in models:
+              # Try to find the results file (artifact downloads to subdir with artifact name)
+              csv_path = f"artifacts/{artifact_name}/{artifact_name}.csv"
+
+              if os.path.exists(csv_path):
+                  try:
+                      df = pd.read_csv(csv_path)
+                      # Calculate stats - handle missing error column
+                      if 'error' in df.columns:
+                          valid = df[df['error'].isna() | (df['error'] == '')]
+                      else:
+                          valid = df
+                      avg_wer = valid['wer'].mean() if len(valid) > 0 else None
+                      samples = len(valid)
+                      total = len(df)
+
+                      results.append({
+                          'model': model_name,
+                          'avg_wer': avg_wer,
+                          'samples': samples,
+                          'total': total,
+                          'status': 'available'
+                      })
+
+                      # Store per-sample results for detailed comparison
+                      for _, row in df.iterrows():
+                          name = row['name']
+                          if name not in all_samples:
+                              all_samples[name] = {}
+                          wer = row.get('wer')
+                          has_error = 'error' in row and pd.notna(row.get('error')) and row.get('error')
+                          if pd.notna(wer) and not has_error:
+                              all_samples[name][model_name] = wer
+                  except Exception as e:
+                      results.append({
+                          'model': model_name,
+                          'avg_wer': None,
+                          'samples': 0,
+                          'total': 0,
+                          'status': f'error: {str(e)[:50]}'
+                      })
+              else:
+                  results.append({
+                      'model': model_name,
+                      'avg_wer': None,
+                      'samples': 0,
+                      'total': 0,
+                      'status': 'no results'
+                  })
+
+          # Generate markdown summary
           now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+          commit = os.environ.get('GITHUB_SHA', 'unknown')[:7]
 
-          summary += f"""
-          ### Comparison Table
+          lines = []
+          lines.append("## WER Model Comparison Results\n")
+          lines.append(f"**Date:** {now}")
+          lines.append(f"**Commit:** `{commit}`\n")
+          lines.append("### Summary Table\n")
+          lines.append("| Model | Avg WER | Samples | Status |")
+          lines.append("|-------|---------|---------|--------|")
 
-          | Model | Avg WER | Date |
-          |-------|---------|------|
-          | {model} | {avg_wer:.2%} | {now} |
+          # Sort by avg_wer (best first)
+          sorted_results = sorted(results, key=lambda x: x['avg_wer'] if x['avg_wer'] is not None else 999)
 
-          ---
-          *Results saved as artifact: `results.csv`*
-          """
+          for r in sorted_results:
+              if r['avg_wer'] is not None:
+                  wer_str = f"{r['avg_wer']:.2%}"
+                  if r['avg_wer'] < 0.10:
+                      status_icon = "🥇"
+                  elif r['avg_wer'] < 0.15:
+                      status_icon = "🥈"
+                  elif r['avg_wer'] < 0.20:
+                      status_icon = "🥉"
+                  elif r['avg_wer'] < 0.30:
+                      status_icon = "🟡"
+                  else:
+                      status_icon = "🔴"
+              else:
+                  wer_str = "N/A"
+                  status_icon = "⚪"
+
+              lines.append(f"| {r['model']} | {wer_str} | {r['samples']}/{r['total']} | {status_icon} {r['status']} |")
+
+          # Add per-sample comparison if we have data
+          if all_samples:
+              lines.append("\n### Per-Sample Comparison\n")
+
+              # Get models that have results
+              active_models = [r['model'] for r in results if r['avg_wer'] is not None]
+
+              if active_models:
+                  header = "| Sample |"
+                  divider = "|--------|"
+                  for m in active_models:
+                      short_name = m.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
+                      header += f" {short_name} |"
+                      divider += "--------|"
+
+                  lines.append(header + " Best |")
+                  lines.append(divider + "------|")
+
+                  for sample_name, wers in sorted(all_samples.items()):
+                      if not wers:
+                          continue
+                      row = f"| {sample_name[:20]} |"
+                      best_wer = min(wers.values()) if wers else None
+                      for m in active_models:
+                          if m in wers:
+                              wer = wers[m]
+                              marker = " **" if wer == best_wer else ""
+                              end_marker = "**" if wer == best_wer else ""
+                              row += f" {marker}{wer:.0%}{end_marker} |"
+                          else:
+                              row += " - |"
+                      # Add best model name
+                      if best_wer is not None:
+                          best_model = min(wers.items(), key=lambda x: x[1])[0]
+                          best_short = best_model.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
+                          row += f" {best_short} |"
+                      else:
+                          row += " - |"
+                      lines.append(row)
+
+          lines.append("\n---\n")
+          lines.append("### Legend")
+          lines.append("- 🥇 Excellent (WER < 10%)")
+          lines.append("- 🥈 Very Good (WER < 15%)")
+          lines.append("- 🥉 Good (WER < 20%)")
+          lines.append("- 🟡 Fair (WER < 30%)")
+          lines.append("- 🔴 Poor (WER >= 30%)")
+          lines.append("- ⚪ No results available")
+          lines.append("\n*Results cached based on script content hash. Use 'Force run all models' to regenerate.*")
+
+          summary = "\n".join(lines)
 
           # Write to GitHub step summary
-          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+          with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/stdout'), 'a') as f:
               f.write(summary)
 
           print(summary)
-          EOF
-        env:
-          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
 
-      - name: Upload results
+          # Save comparison CSV
+          comparison_df = pd.DataFrame(results)
+          comparison_df.to_csv('comparison_results.csv', index=False)
+          EOF
+
+      - name: Upload comparison results
         uses: actions/upload-artifact@v4
         with:
-          name: wer-results-${{ inputs.model || 'groq-whisper-large-v3-turbo' }}
-          path: openemr_whisper_wer/results.csv
+          name: wer-comparison
+          path: comparison_results.csv
           retention-days: 90
-
-      - name: Update results history
-        run: |
-          # Append to history file for tracking over time
-          python << 'EOF'
-          import pandas as pd
-          import os
-          from datetime import datetime
-
-          df = pd.read_csv("openemr_whisper_wer/results.csv")
-          model = os.environ.get("MODEL_NAME", "groq-whisper-large-v3-turbo")
-
-          valid = df[~df.get('error', pd.Series([None]*len(df))).notna() | (df.get('error', '') == '')]
-          avg_wer = valid['wer'].mean() if len(valid) > 0 else 1.0
-
-          history_file = "openemr_whisper_wer/wer_history.csv"
-
-          new_row = {
-              "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
-              "model": model,
-              "avg_wer": round(avg_wer, 4),
-              "samples": len(valid),
-              "commit": os.environ.get("GITHUB_SHA", "")[:7]
-          }
-
-          if os.path.exists(history_file):
-              history = pd.read_csv(history_file)
-              history = pd.concat([history, pd.DataFrame([new_row])], ignore_index=True)
-          else:
-              history = pd.DataFrame([new_row])
-
-          history.to_csv(history_file, index=False)
-          print(f"Updated {history_file}")
-          print(history.tail(10).to_string())
-          EOF
-        env:
-          MODEL_NAME: ${{ inputs.model || 'groq-whisper-large-v3-turbo' }}

@@ -33,27 +33,31 @@ app = modal.App("phi4-multimodal-transcription")
 
 MODEL_ID = "microsoft/Phi-4-multimodal-instruct"
 
-# Phi-4 Multimodal requires transformers with audio support and flash attention
+# Phi-4 Multimodal requires specific versions per official docs:
+# https://huggingface.co/microsoft/Phi-4-multimodal-instruct
+# Use prebuilt flash-attn wheel from Dao-AILab releases (much faster than building)
+# See: https://modal.com/docs/examples/install_flash_attn
+FLASH_ATTN_WHEEL = (
+    "https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/"
+    "flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl"
+)
+
 phi4_image = (
-    modal.Image.from_registry("nvidia/cuda:12.4.0-devel-ubuntu22.04", add_python="3.11")
-    .apt_install("ffmpeg", "libsndfile1", "git")
+    modal.Image.debian_slim(python_version="3.11")
+    .apt_install("ffmpeg", "libsndfile1")
     .pip_install(
-        "torch",
-        "torchaudio",
-        "torchvision",
-        "transformers>=4.45.0",
-        "accelerate",
+        "torch==2.6.0",
+        "torchaudio==2.6.0",
+        "torchvision==0.21.0",
+        "transformers==4.48.2",  # Official recommended version for Phi-4
+        "accelerate==1.3.0",     # Official recommended version
         "soundfile",
         "librosa",
         "scipy",
-        "peft",
+        "peft==0.13.2",          # Official recommended version
         "backoff",
         "packaging",
-        "ninja",
-    )
-    .pip_install(
-        "flash-attn",
-        extra_options="--no-build-isolation",
+        FLASH_ATTN_WHEEL,        # Prebuilt wheel - no compilation needed
     )
 )
 
@@ -111,7 +115,7 @@ class Phi4Transcriber:
                 trust_remote_code=True,
                 cache_dir=hf_cache,
                 device_map="auto",
-                attn_implementation="eager",  # Disable flash attention requirement
+                attn_implementation="flash_attention_2",  # Use flash attention for better performance
             )
             self.model.eval()
 
@@ -177,16 +181,23 @@ class Phi4Transcriber:
 
             # Create ASR prompt for Phi-4 multimodal
             # Phi-4 uses a chat-style format with audio input
-            prompt = "<|audio|>\nTranscribe the speech in this audio clip exactly as spoken."
+            # Audio placeholder must be <|audio_1|> (numbered) and wrapped in chat template
+            user_message = "<|audio_1|>\nTranscribe the speech in this audio clip exactly as spoken."
+            messages = [
+                {"role": "user", "content": user_message},
+            ]
+            prompt = self.processor.tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True
+            )
 
-            # Process inputs
+            # Process inputs - Phi-4 expects audios as list of (audio, sample_rate) tuples
             inputs = self.processor(
                 text=prompt,
-                audios=[audio],
-                sampling_rate=sr,
+                audios=[(audio, sr)],
                 return_tensors="pt",
-            )
-            inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
+            ).to(self.model.device)
 
             # Generate transcription
             with torch.no_grad():

@@ -31,17 +31,19 @@ if not os.environ.get("MODAL_IS_REMOTE"):
 
 app = modal.App("granite-speech-transcription")
 
-# Granite Speech model requires transformers with audio support
+# Granite Speech model requires transformers with audio support + peft for LoRA
+# Image version 2: fixed torchaudio backend
 granite_image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("ffmpeg", "libsndfile1")
     .pip_install(
-        "torch",
-        "torchaudio",
-        "transformers>=4.45.0",
+        "torch==2.4.0",  # Pin torch to avoid torchcodec default in torchaudio
+        "torchaudio==2.4.0",
+        "transformers>=4.52.0",
         "accelerate",
         "soundfile",
         "librosa",
+        "peft==0.13.0",  # Pin to older version for compatibility
     )
 )
 
@@ -50,8 +52,8 @@ granite_image = (
 class GraniteSpeechTranscriber:
     """IBM Granite Speech 3.3 8B transcriber."""
 
-    def __init__(self, model_id: str = "ibm-granite/granite-speech-3.3-8b"):
-        self.model_id = model_id
+    # Use modal.parameter() instead of __init__ (Modal deprecation fix)
+    model_id: str = modal.parameter(default="ibm-granite/granite-speech-3.3-8b")
 
     @modal.enter()
     def load_model(self):
@@ -59,21 +61,17 @@ class GraniteSpeechTranscriber:
         from transformers import AutoProcessor, AutoModelForSpeechSeq2Seq
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+        self.torch_dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
         print(f"Loading {self.model_id}...")
 
-        self.processor = AutoProcessor.from_pretrained(
-            self.model_id,
-            trust_remote_code=True,
-        )
+        self.processor = AutoProcessor.from_pretrained(self.model_id)
+        self.tokenizer = self.processor.tokenizer
         self.model = AutoModelForSpeechSeq2Seq.from_pretrained(
             self.model_id,
+            device_map=self.device,
             torch_dtype=self.torch_dtype,
-            trust_remote_code=True,
         )
-        self.model.to(self.device)
-        self.model.eval()
 
         print("Model loaded!")
 
@@ -92,7 +90,7 @@ class GraniteSpeechTranscriber:
         import os
         import subprocess
         import torch
-        import librosa
+        import torchaudio
 
         # Detect format from magic bytes
         if audio_bytes[:12].find(b'ftyp') >= 0:
@@ -121,27 +119,44 @@ class GraniteSpeechTranscriber:
                 "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
             ], check=True, capture_output=True)
 
-            # Load audio with librosa
-            audio, sr = librosa.load(output_path, sr=16000)
+            # Load audio with torchaudio using soundfile backend (avoids torchcodec dependency)
+            wav, sr = torchaudio.load(output_path, normalize=True, backend="soundfile")
+            assert sr == 16000, f"Expected 16kHz, got {sr}Hz"
 
-            # Process with Granite Speech
-            inputs = self.processor(
-                audio,
-                sampling_rate=sr,
-                return_tensors="pt",
+            # Create text prompt with audio placeholder (required by Granite Speech API)
+            system_prompt = "You are a helpful AI assistant that transcribes speech to text accurately."
+            user_prompt = "<|audio|>can you transcribe the speech into a written format?"
+            chat = [
+                dict(role="system", content=system_prompt),
+                dict(role="user", content=user_prompt),
+            ]
+            prompt = self.tokenizer.apply_chat_template(
+                chat, tokenize=False, add_generation_prompt=True
             )
-            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+
+            # Process with Granite Speech (requires both text prompt and audio)
+            model_inputs = self.processor(
+                prompt,
+                wav,
+                device=self.device,
+                return_tensors="pt",
+            ).to(self.device)
 
             # Generate transcription
             with torch.no_grad():
-                generated_ids = self.model.generate(
-                    **inputs,
+                model_outputs = self.model.generate(
+                    **model_inputs,
                     max_new_tokens=448,
+                    do_sample=False,
+                    num_beams=1,
                 )
 
-            # Decode
-            transcription = self.processor.batch_decode(
-                generated_ids,
+            # Decode only the new tokens (skip input tokens)
+            num_input_tokens = model_inputs["input_ids"].shape[-1]
+            new_tokens = model_outputs[0, num_input_tokens:].unsqueeze(0)
+            transcription = self.tokenizer.batch_decode(
+                new_tokens,
+                add_special_tokens=False,
                 skip_special_tokens=True,
             )[0]
 
