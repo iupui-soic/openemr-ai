@@ -181,16 +181,23 @@ class Phi4Transcriber:
 
             # Create ASR prompt for Phi-4 multimodal
             # Phi-4 uses a chat-style format with audio input
-            prompt = "<|audio|>\nTranscribe the speech in this audio clip exactly as spoken."
+            # Audio placeholder must be <|audio_1|> (numbered) and wrapped in chat template
+            user_message = "<|audio_1|>\nTranscribe the speech in this audio clip exactly as spoken."
+            messages = [
+                {"role": "user", "content": user_message},
+            ]
+            prompt = self.processor.tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True
+            )
 
-            # Process inputs
+            # Process inputs - Phi-4 expects audios as list of (audio, sample_rate) tuples
             inputs = self.processor(
                 text=prompt,
-                audios=[audio],
-                sampling_rate=sr,
+                audios=[(audio, sr)],
                 return_tensors="pt",
-            )
-            inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
+            ).to(self.model.device)
 
             # Generate transcription
             with torch.no_grad():
