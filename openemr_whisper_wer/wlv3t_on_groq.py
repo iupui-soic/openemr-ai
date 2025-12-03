@@ -109,6 +109,7 @@ groq_image = (
         "groq",
         "jiwer",
         "pandas",
+        "python-dotenv",
     )
 )
 
