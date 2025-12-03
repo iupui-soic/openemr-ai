@@ -3,6 +3,7 @@ Shared utilities for WER (Word Error Rate) calculation.
 
 Contains:
 - NotionFetcher: Fetch audio entries from Notion database
+- KaggleFetcher: Fetch entries from Kaggle medical speech dataset
 - WERCalculator: Calculate WER with detailed error analysis
 - generate_error_report: Generate detailed error analysis report
 """
@@ -17,6 +18,93 @@ if not os.environ.get("MODAL_IS_REMOTE"):
     import jiwer
     import pandas as pd
     from notion_client import Client as NotionClient
+
+
+# ============================================================================
+# Kaggle Dataset Fetcher (runs inside Modal with volume mounted)
+# ============================================================================
+
+def load_kaggle_dataset(split: str = "validate", data_dir: str = "/data/Medical Speech, Transcription, and Intent") -> list[dict]:
+    """
+    Load audio files and transcripts from Kaggle medical speech dataset on Modal volume.
+
+    This function is designed to run inside a Modal container with the dataset volume mounted.
+
+    Args:
+        split: Dataset split to use ('validate' or 'train')
+        data_dir: Base directory of the dataset on the Modal volume
+
+    Returns:
+        List of dicts with: file_name, path, transcript, prompt
+    """
+    import pandas as pd
+    from pathlib import Path
+
+    data_path = Path(data_dir)
+    recordings_dir = data_path / "recordings" / split
+    csv_path = data_path / "overview-of-recordings.csv"
+
+    if not recordings_dir.exists():
+        raise ValueError(f"Split '{split}' not found at {recordings_dir}")
+
+    # Get audio files
+    audio_files = list(recordings_dir.rglob("*.wav"))
+    print(f"Found {len(audio_files)} audio files in {split} split")
+
+    # Load CSV for transcripts
+    df = pd.read_csv(csv_path)
+
+    # Match audio files with transcripts
+    results = []
+    for audio_path in audio_files:
+        file_name = audio_path.name
+        transcript_row = df[df['file_name'] == file_name]
+
+        if not transcript_row.empty:
+            results.append({
+                "file_name": file_name,
+                "path": str(audio_path),
+                "transcript": transcript_row['phrase'].iloc[0],
+                "prompt": transcript_row['prompt'].iloc[0] if 'prompt' in transcript_row.columns else None
+            })
+
+    print(f"Matched {len(results)} files with transcripts")
+    return results
+
+
+def calculate_wer_metrics(reference: str, hypothesis: str) -> dict:
+    """
+    Calculate WER and related metrics (for use inside Modal containers).
+
+    Args:
+        reference: Ground truth transcript
+        hypothesis: Model's transcription
+
+    Returns:
+        Dict with wer, mer, wil, insertions, deletions, substitutions, hits
+    """
+    import jiwer
+
+    transform = jiwer.Compose([
+        jiwer.RemoveMultipleSpaces(),
+        jiwer.Strip(),
+        jiwer.RemovePunctuation(),
+        jiwer.ToLowerCase(),
+    ])
+
+    ref = transform(reference)
+    hyp = transform(hypothesis)
+    output = jiwer.process_words(ref, hyp)
+
+    return {
+        "wer": output.wer,
+        "mer": output.mer,
+        "wil": output.wil,
+        "insertions": output.insertions,
+        "deletions": output.deletions,
+        "substitutions": output.substitutions,
+        "hits": output.hits,
+    }
 
 
 # ============================================================================

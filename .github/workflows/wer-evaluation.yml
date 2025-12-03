@@ -7,6 +7,10 @@ on:
         description: 'Force run all models (ignore cache)'
         type: boolean
         default: false
+      run_kaggle:
+        description: 'Run Kaggle dataset evaluation'
+        type: boolean
+        default: true
 #      setup_volume:
 #        description: 'Setup Modal volume (only needed once)'
 #        type: boolean
@@ -56,6 +60,7 @@ jobs:
       phi4_changed: ${{ steps.filter.outputs.phi4 }}
       groq_changed: ${{ steps.filter.outputs.groq }}
       parakeet_changed: ${{ steps.filter.outputs.parakeet }}
+      kaggle_changed: ${{ steps.filter.outputs.kaggle }}
       utils_changed: ${{ steps.filter.outputs.utils }}
       # Script hashes for cache keys
       whisper_hash: ${{ steps.hashes.outputs.whisper }}
@@ -64,6 +69,7 @@ jobs:
       phi4_hash: ${{ steps.hashes.outputs.phi4 }}
       groq_hash: ${{ steps.hashes.outputs.groq }}
       parakeet_hash: ${{ steps.hashes.outputs.parakeet }}
+      kaggle_hash: ${{ steps.hashes.outputs.kaggle }}
       utils_hash: ${{ steps.hashes.outputs.utils }}
     steps:
       - uses: actions/checkout@v4
@@ -87,6 +93,9 @@ jobs:
               - 'openemr_whisper_wer/wlv3t_on_groq.py'
             parakeet:
               - 'openemr_whisper_wer/parakeet_wer.py'
+            kaggle:
+              - 'openemr_whisper_wer/kaggle_wer_evaluation.py'
+              - 'openemr_whisper_wer/kaggle_dataset.py'
             utils:
               - 'openemr_whisper_wer/wer_utils.py'
               - 'openemr_whisper_wer/requirements.txt'
@@ -100,6 +109,7 @@ jobs:
           echo "phi4=${{ hashFiles('openemr_whisper_wer/phi4_wer.py') }}" >> $GITHUB_OUTPUT
           echo "groq=${{ hashFiles('openemr_whisper_wer/wlv3t_on_groq.py') }}" >> $GITHUB_OUTPUT
           echo "parakeet=${{ hashFiles('openemr_whisper_wer/parakeet_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "kaggle=${{ hashFiles('openemr_whisper_wer/kaggle_wer_evaluation.py', 'openemr_whisper_wer/kaggle_dataset.py') }}" >> $GITHUB_OUTPUT
           echo "utils=${{ hashFiles('openemr_whisper_wer/wer_utils.py', 'openemr_whisper_wer/requirements.txt') }}" >> $GITHUB_OUTPUT
 
   # ============================================
@@ -121,6 +131,13 @@ jobs:
           path: openemr_whisper_wer/results-whisper-large-v3-turbo.csv
           key: wer-whisper-turbo-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-whisper-turbo.csv
+          key: kaggle-whisper-turbo-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -135,14 +152,28 @@ jobs:
             echo "Running evaluation"
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          # Note: github.event.inputs.run_kaggle is empty on push events, so we default to true
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -155,11 +186,28 @@ jobs:
           cd openemr_whisper_wer
           python whisper_wer.py --output results-whisper-large-v3-turbo.csv
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python whisper_wer.py --kaggle --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-whisper-large-v3-turbo
           path: openemr_whisper_wer/results-whisper-large-v3-turbo.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-whisper-turbo
+          path: openemr_whisper_wer/kaggle-results-whisper-turbo.csv
           retention-days: 90
 
   evaluate-whisper-v3:
@@ -177,6 +225,13 @@ jobs:
           path: openemr_whisper_wer/results-whisper-large-v3.csv
           key: wer-whisper-v3-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-whisper-v3.csv
+          key: kaggle-whisper-v3-${{ needs.detect-changes.outputs.whisper_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -188,14 +243,27 @@ jobs:
             echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -208,11 +276,28 @@ jobs:
           cd openemr_whisper_wer
           python whisper_wer.py --output results-whisper-large-v3.csv --use-large-v3
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python whisper_wer.py --kaggle --use-large-v3 --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-whisper-large-v3
           path: openemr_whisper_wer/results-whisper-large-v3.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-whisper-v3
+          path: openemr_whisper_wer/kaggle-results-whisper-v3.csv
           retention-days: 90
 
   evaluate-canary:
@@ -230,6 +315,13 @@ jobs:
           path: openemr_whisper_wer/results-canary-1b-v2.csv
           key: wer-canary-${{ needs.detect-changes.outputs.canary_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-canary.csv
+          key: kaggle-canary-${{ needs.detect-changes.outputs.canary_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -241,14 +333,27 @@ jobs:
             echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -261,11 +366,28 @@ jobs:
           cd openemr_whisper_wer
           python canary_wer.py --output results-canary-1b-v2.csv
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python canary_wer.py --kaggle --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-canary-1b-v2
           path: openemr_whisper_wer/results-canary-1b-v2.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-canary
+          path: openemr_whisper_wer/kaggle-results-canary.csv
           retention-days: 90
 
   evaluate-granite:
@@ -283,6 +405,13 @@ jobs:
           path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
           key: wer-granite-${{ needs.detect-changes.outputs.granite_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-granite.csv
+          key: kaggle-granite-${{ needs.detect-changes.outputs.granite_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -294,14 +423,27 @@ jobs:
             echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -314,11 +456,28 @@ jobs:
           cd openemr_whisper_wer
           python granite_wer.py --output results-granite-speech-3.3-8b.csv
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python granite_wer.py --kaggle --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-granite-speech-3.3-8b
           path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-granite
+          path: openemr_whisper_wer/kaggle-results-granite.csv
           retention-days: 90
 
   evaluate-phi4:
@@ -389,6 +548,13 @@ jobs:
           path: openemr_whisper_wer/results-groq-whisper-large-v3-turbo.csv
           key: wer-groq-${{ needs.detect-changes.outputs.groq_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-groq.csv
+          key: kaggle-groq-${{ needs.detect-changes.outputs.groq_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -400,14 +566,27 @@ jobs:
             echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -419,11 +598,28 @@ jobs:
           cd openemr_whisper_wer
           python wlv3t_on_groq.py --output results-groq-whisper-large-v3-turbo.csv
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python wlv3t_on_groq.py --kaggle --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-groq-whisper-large-v3-turbo
           path: openemr_whisper_wer/results-groq-whisper-large-v3-turbo.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-groq
+          path: openemr_whisper_wer/kaggle-results-groq.csv
           retention-days: 90
 
   evaluate-parakeet:
@@ -441,6 +637,13 @@ jobs:
           path: openemr_whisper_wer/results-parakeet-tdt-1.1b.csv
           key: wer-parakeet-${{ needs.detect-changes.outputs.parakeet_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
 
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-parakeet.csv
+          key: kaggle-parakeet-${{ needs.detect-changes.outputs.parakeet_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
       - name: Determine if evaluation needed
         id: check
         run: |
@@ -452,14 +655,27 @@ jobs:
             echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
       - name: Run WER evaluation
@@ -472,11 +688,28 @@ jobs:
           cd openemr_whisper_wer
           python parakeet_wer.py --output results-parakeet-tdt-1.1b.csv
 
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python parakeet_wer.py --kaggle --output-dir .
+
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
           name: results-parakeet-tdt-1.1b
           path: openemr_whisper_wer/results-parakeet-tdt-1.1b.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-parakeet
+          path: openemr_whisper_wer/kaggle-results-parakeet.csv
           retention-days: 90
 
   # ============================================
@@ -506,11 +739,19 @@ jobs:
       - name: Install pandas
         run: pip install pandas
 
-      - name: Download all artifacts
+      - name: Download Notion artifacts
         uses: actions/download-artifact@v4
         with:
           path: artifacts
           pattern: results-*
+          merge-multiple: false
+
+      - name: Download Kaggle artifacts
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          path: artifacts
+          pattern: kaggle-*
           merge-multiple: false
 
       - name: Generate comparison table
@@ -518,9 +759,11 @@ jobs:
           python << 'EOF'
           import pandas as pd
           import os
+          import glob
           from datetime import datetime
 
-          models = [
+          # Notion dataset models
+          notion_models = [
               ('whisper-large-v3-turbo', 'results-whisper-large-v3-turbo'),
               ('whisper-large-v3', 'results-whisper-large-v3'),
               ('canary-1b-v2', 'results-canary-1b-v2'),
@@ -530,58 +773,147 @@ jobs:
               ('parakeet-tdt-1.1b', 'results-parakeet-tdt-1.1b'),
           ]
 
-          results = []
-          all_samples = {}
+          # Kaggle dataset models
+          kaggle_models = [
+              ('whisper-turbo', 'kaggle-results-whisper-turbo'),
+              ('whisper-v3', 'kaggle-results-whisper-v3'),
+              ('canary', 'kaggle-results-canary'),
+              ('parakeet', 'kaggle-results-parakeet'),
+              ('granite', 'kaggle-results-granite'),
+              ('groq', 'kaggle-results-groq'),
+          ]
 
-          for model_name, artifact_name in models:
-              # Try to find the results file (artifact downloads to subdir with artifact name)
-              csv_path = f"artifacts/{artifact_name}/{artifact_name}.csv"
+          def process_results(models, prefix="artifacts"):
+              results = []
+              all_samples = {}
+              for model_name, artifact_name in models:
+                  csv_path = f"{prefix}/{artifact_name}/{artifact_name}.csv"
+                  # Also check for direct file path (Kaggle results)
+                  if not os.path.exists(csv_path):
+                      # Try finding the file in the kaggle-results directory
+                      alt_paths = glob.glob(f"{prefix}/kaggle-results/{artifact_name}.csv")
+                      if alt_paths:
+                          csv_path = alt_paths[0]
 
-              if os.path.exists(csv_path):
-                  try:
-                      df = pd.read_csv(csv_path)
-                      # Calculate stats - handle missing error column
-                      if 'error' in df.columns:
-                          valid = df[df['error'].isna() | (df['error'] == '')]
-                      else:
-                          valid = df
-                      avg_wer = valid['wer'].mean() if len(valid) > 0 else None
-                      samples = len(valid)
-                      total = len(df)
+                  if os.path.exists(csv_path):
+                      try:
+                          df = pd.read_csv(csv_path)
+                          if 'error' in df.columns:
+                              valid = df[df['error'].isna() | (df['error'] == '')]
+                          else:
+                              valid = df
+                          avg_wer = valid['wer'].mean() if len(valid) > 0 else None
+                          samples = len(valid)
+                          total = len(df)
 
-                      results.append({
-                          'model': model_name,
-                          'avg_wer': avg_wer,
-                          'samples': samples,
-                          'total': total,
-                          'status': 'available'
-                      })
+                          results.append({
+                              'model': model_name,
+                              'avg_wer': avg_wer,
+                              'samples': samples,
+                              'total': total,
+                              'status': 'available'
+                          })
 
-                      # Store per-sample results for detailed comparison
-                      for _, row in df.iterrows():
-                          name = row['name']
-                          if name not in all_samples:
-                              all_samples[name] = {}
-                          wer = row.get('wer')
-                          has_error = 'error' in row and pd.notna(row.get('error')) and row.get('error')
-                          if pd.notna(wer) and not has_error:
-                              all_samples[name][model_name] = wer
-                  except Exception as e:
+                          for _, row in df.iterrows():
+                              name = row['name']
+                              if name not in all_samples:
+                                  all_samples[name] = {}
+                              wer = row.get('wer')
+                              has_error = 'error' in row and pd.notna(row.get('error')) and row.get('error')
+                              if pd.notna(wer) and not has_error:
+                                  all_samples[name][model_name] = wer
+                      except Exception as e:
+                          results.append({
+                              'model': model_name,
+                              'avg_wer': None,
+                              'samples': 0,
+                              'total': 0,
+                              'status': f'error: {str(e)[:50]}'
+                          })
+                  else:
                       results.append({
                           'model': model_name,
                           'avg_wer': None,
                           'samples': 0,
                           'total': 0,
-                          'status': f'error: {str(e)[:50]}'
+                          'status': 'no results'
                       })
-              else:
-                  results.append({
-                      'model': model_name,
-                      'avg_wer': None,
-                      'samples': 0,
-                      'total': 0,
-                      'status': 'no results'
-                  })
+              return results, all_samples
+
+          def generate_table(results, all_samples, title, note="", show_per_sample=True):
+              lines = []
+              lines.append(f"### {title}\n")
+              if note:
+                  lines.append(f"*{note}*\n")
+              lines.append("| Model | Avg WER | Samples | Status |")
+              lines.append("|-------|---------|---------|--------|")
+
+              sorted_results = sorted(results, key=lambda x: x['avg_wer'] if x['avg_wer'] is not None else 999)
+
+              for r in sorted_results:
+                  if r['avg_wer'] is not None:
+                      wer_str = f"{r['avg_wer']:.2%}"
+                      if r['avg_wer'] < 0.10:
+                          status_icon = "🥇"
+                      elif r['avg_wer'] < 0.15:
+                          status_icon = "🥈"
+                      elif r['avg_wer'] < 0.20:
+                          status_icon = "🥉"
+                      elif r['avg_wer'] < 0.30:
+                          status_icon = "🟡"
+                      else:
+                          status_icon = "🔴"
+                  else:
+                      wer_str = "N/A"
+                      status_icon = "⚪"
+
+                  lines.append(f"| {r['model']} | {wer_str} | {r['samples']}/{r['total']} | {status_icon} {r['status']} |")
+
+              # Add per-sample comparison if enabled and we have data
+              if show_per_sample and all_samples:
+                  lines.append("\n#### Per-Sample Comparison\n")
+                  active_models = [r['model'] for r in results if r['avg_wer'] is not None]
+
+                  if active_models:
+                      header = "| Sample |"
+                      divider = "|--------|"
+                      for m in active_models:
+                          short_name = m.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
+                          header += f" {short_name} |"
+                          divider += "--------|"
+
+                      lines.append(header + " Best |")
+                      lines.append(divider + "------|")
+
+                      for sample_name, wers in sorted(all_samples.items())[:20]:  # Limit to 20 samples
+                          if not wers:
+                              continue
+                          row = f"| {sample_name[:20]} |"
+                          best_wer = min(wers.values()) if wers else None
+                          for m in active_models:
+                              if m in wers:
+                                  wer = wers[m]
+                                  marker = " **" if wer == best_wer else ""
+                                  end_marker = "**" if wer == best_wer else ""
+                                  row += f" {marker}{wer:.0%}{end_marker} |"
+                              else:
+                                  row += " - |"
+                          if best_wer is not None:
+                              best_model = min(wers.items(), key=lambda x: x[1])[0]
+                              best_short = best_model.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
+                              row += f" {best_short} |"
+                          else:
+                              row += " - |"
+                          lines.append(row)
+
+                      if len(all_samples) > 20:
+                          lines.append(f"\n*Showing 20 of {len(all_samples)} samples*")
+
+              return lines
+
+          # Process both datasets
+          notion_results, notion_samples = process_results(notion_models)
+          kaggle_results, kaggle_samples = process_results(kaggle_models)
 
           # Generate markdown summary
           now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
@@ -591,73 +923,33 @@ jobs:
           lines.append("## WER Model Comparison Results\n")
           lines.append(f"**Date:** {now}")
           lines.append(f"**Commit:** `{commit}`\n")
-          lines.append("### Summary Table\n")
-          lines.append("| Model | Avg WER | Samples | Status |")
-          lines.append("|-------|---------|---------|--------|")
 
-          # Sort by avg_wer (best first)
-          sorted_results = sorted(results, key=lambda x: x['avg_wer'] if x['avg_wer'] is not None else 999)
-
-          for r in sorted_results:
-              if r['avg_wer'] is not None:
-                  wer_str = f"{r['avg_wer']:.2%}"
-                  if r['avg_wer'] < 0.10:
-                      status_icon = "🥇"
-                  elif r['avg_wer'] < 0.15:
-                      status_icon = "🥈"
-                  elif r['avg_wer'] < 0.20:
-                      status_icon = "🥉"
-                  elif r['avg_wer'] < 0.30:
-                      status_icon = "🟡"
-                  else:
-                      status_icon = "🔴"
-              else:
-                  wer_str = "N/A"
-                  status_icon = "⚪"
-
-              lines.append(f"| {r['model']} | {wer_str} | {r['samples']}/{r['total']} | {status_icon} {r['status']} |")
-
-          # Add per-sample comparison if we have data
-          if all_samples:
-              lines.append("\n### Per-Sample Comparison\n")
-
-              # Get models that have results
-              active_models = [r['model'] for r in results if r['avg_wer'] is not None]
-
-              if active_models:
-                  header = "| Sample |"
-                  divider = "|--------|"
-                  for m in active_models:
-                      short_name = m.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
-                      header += f" {short_name} |"
-                      divider += "--------|"
-
-                  lines.append(header + " Best |")
-                  lines.append(divider + "------|")
-
-                  for sample_name, wers in sorted(all_samples.items()):
-                      if not wers:
-                          continue
-                      row = f"| {sample_name[:20]} |"
-                      best_wer = min(wers.values()) if wers else None
-                      for m in active_models:
-                          if m in wers:
-                              wer = wers[m]
-                              marker = " **" if wer == best_wer else ""
-                              end_marker = "**" if wer == best_wer else ""
-                              row += f" {marker}{wer:.0%}{end_marker} |"
-                          else:
-                              row += " - |"
-                      # Add best model name
-                      if best_wer is not None:
-                          best_model = min(wers.items(), key=lambda x: x[1])[0]
-                          best_short = best_model.replace('whisper-large-v3', 'wlv3').replace('-turbo', '-t').replace('multimodal', 'mm')
-                          row += f" {best_short} |"
-                      else:
-                          row += " - |"
-                      lines.append(row)
+          # Notion dataset results
+          lines.extend(generate_table(
+              notion_results,
+              notion_samples,
+              "Notion Dataset (Custom Medical Recordings)",
+              "Evaluations on audio recordings from Notion database"
+          ))
 
           lines.append("\n---\n")
+
+          # Kaggle dataset results (no per-sample comparison due to 300+ samples)
+          has_kaggle_results = any(r['avg_wer'] is not None for r in kaggle_results)
+          if has_kaggle_results:
+              lines.extend(generate_table(
+                  kaggle_results,
+                  kaggle_samples,
+                  "Kaggle Medical Speech Dataset",
+                  "Evaluations on paultimothymooney/medical-speech-transcription-and-intent",
+                  show_per_sample=False
+              ))
+              lines.append("\n---\n")
+          else:
+              lines.append("### Kaggle Medical Speech Dataset\n")
+              lines.append("*No Kaggle evaluation results available. Run with 'Run Kaggle dataset evaluation' option enabled.*\n")
+              lines.append("\n---\n")
+
           lines.append("### Legend")
           lines.append("- 🥇 Excellent (WER < 10%)")
           lines.append("- 🥈 Very Good (WER < 15%)")
@@ -675,8 +967,12 @@ jobs:
 
           print(summary)
 
-          # Save comparison CSV
-          comparison_df = pd.DataFrame(results)
+          # Save comparison CSV (combine both datasets)
+          notion_df = pd.DataFrame(notion_results)
+          notion_df['dataset'] = 'notion'
+          kaggle_df = pd.DataFrame(kaggle_results)
+          kaggle_df['dataset'] = 'kaggle'
+          comparison_df = pd.concat([notion_df, kaggle_df], ignore_index=True)
           comparison_df.to_csv('comparison_results.csv', index=False)
           EOF
 
