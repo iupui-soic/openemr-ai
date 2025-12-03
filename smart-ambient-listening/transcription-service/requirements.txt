@@ -1,0 +1,12 @@
+# Transcription Service API - Dependencies
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Modal client for calling remote ASR
+modal>=0.64.0
+
+# Utilities
+python-dotenv>=1.0.0

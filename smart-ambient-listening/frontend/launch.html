@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching SMART App...</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="launch-container">
+        <div class="launch-content">
+            <div class="spinner large"></div>
+            <h2>Connecting to OpenEMR...</h2>
+            <p>Please wait while we authorize your session.</p>
+        </div>
+    </div>
+
+    <!-- Configuration -->
+    <script>
+        window.SMART_CONFIG = {
+            clientId: 'smart-ambient-listening',
+            scope: 'launch patient/*.read openid fhirUser',
+            redirectUri: window.location.origin + '/index.html'
+        };
+    </script>
+
+    <script src="js/fhirclient.min.js"></script>
+    <script>
+        /**
+         * SMART-on-FHIR Launch Handler
+         * Uses the official fhirclient.js library for authorization
+         */
+        FHIR.oauth2.authorize({
+            clientId: window.SMART_CONFIG.clientId,
+            scope: window.SMART_CONFIG.scope,
+            redirectUri: window.SMART_CONFIG.redirectUri
+        }).catch(error => {
+            console.error('Authorization error:', error);
+            document.querySelector('.launch-content').innerHTML = `
+                <h2>Launch Failed</h2>
+                <p class="error">${error.message}</p>
+                <p>Please close this window and try again from OpenEMR.</p>
+            `;
+        });
+    </script>
+</body>
+</html>
