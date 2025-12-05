@@ -74,3 +74,6 @@ This file serves as the main entry point and orchestrator of the entire workflow
 4.  **Prompt Construction**: `prompt.py` formats the data and schema into a strict instruction set.
 5.  **Generation**: MedGemma generates the discharge summary.
 6.  **Evaluation**: The generated text is compared to a gold-standard reference, and metrics are calculated.
+
+<img width="2784" height="1536" alt="Diagram" src="https://github.com/user-attachments/assets/c8244b57-adb2-4e66-a553-8b522c2b1b8f" />
+
