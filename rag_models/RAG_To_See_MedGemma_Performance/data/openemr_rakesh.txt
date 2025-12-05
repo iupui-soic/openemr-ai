@@ -1,0 +1,195 @@
+==== Patient-Level Information ====
+
+-- Demographics --
+Name: Rakesh Sharma
+DOB: 1972-10-22
+Sex: Male
+Unit Number: 11040
+Address: 256 Heller Pathway Unit 81, Jeffersonville, Indiana 47111
+
+-- Family_History --
+Mother: None
+Father: None
+Siblings: None
+Offspring: None
+Cancer: None
+Diabetes: None
+Heart Problems: None
+Stroke: None
+Mother: 
+Father: 
+Siblings: 
+Offspring: 
+Cancer: 
+Diabetes: 
+Heart Problems: 
+Stroke: 
+
+-- Social_History --
+Coffee: None
+Tobacco: ||0000-00-00
+Alcohol: ||0000-00-00
+Recreational Drugs: None
+Exercise: None
+Sleep: None
+
+Coffee: |0|
+Tobacco: |currenttobacco||1
+Alcohol: |0|0000-00-00
+Recreational Drugs: |0|
+Exercise: |0|
+Sleep: 
+
+
+-- Allergies --
+No data found.
+
+-- Vitals --
+Date: 2016-02-07 23:09:24
+Temperature: N/A °C
+Blood Pressure: N/A/N/A mmHg
+Heart Rate: 72.00 bpm
+Respiration Rate: 15.00 breaths/min
+SpO₂: N/A %
+Weight: N/A kg
+Height: 182.10 cm
+BMI: 28.02
+
+
+
+==== Discharge Summary for Encounter 816228 (2025-08-04 00:09:24 → 2025-08-04 00:24:24) ====
+
+-- Encounter_Info --
+Encounter: 816228
+Admission: 2025-08-04 00:09:24 → Discharge: 2025-08-04 00:24:24
+Facility: 
+Chief Complaint: Asthma follow-up (regime/therapy)
+Discharge Disposition: 
+Attending: Dr. External Provider (None)
+
+-- HPI --
+Date: 2025-08-04 00:09:24
+HPI: None
+
+-- Past_Medical_History --
+title: Risk activity involvement (finding); diagnosis: SNOMED-CT:160968000; begdate: 1986-12-01 00:24:47
+title: Prediabetes (finding); diagnosis: SNOMED-CT:714628002; begdate: 1990-12-23 23:09:24
+title: Housing unsatisfactory (finding); diagnosis: SNOMED-CT:105531004; begdate: 1990-12-23 23:44:06
+title: Educated to high school level (finding); diagnosis: SNOMED-CT:473461003; begdate: 1990-12-23 23:44:06
+title: Transport problem (finding); diagnosis: SNOMED-CT:266934004; begdate: 1990-12-23 23:44:06
+title: Anemia (disorder); diagnosis: SNOMED-CT:271737000; begdate: 1991-03-10 23:09:24
+title: Lack of access to transportation (finding); diagnosis: SNOMED-CT:713458007; begdate: 1991-12-30 00:01:57
+title: Body mass index 30+ - obesity (finding); diagnosis: SNOMED-CT:162864005; begdate: 1993-01-03 23:09:24
+title: Stress (finding); diagnosis: SNOMED-CT:73595000; begdate: 2013-04-29 01:05:21; enddate: 2016-05-16 01:08:33
+title: Full-time employment (finding); diagnosis: SNOMED-CT:160903007; begdate: 2014-05-05 00:54:10; enddate: 2016-02-07 23:51:25
+title: Medication review due (situation); diagnosis: SNOMED-CT:314529007; begdate: 2015-05-11 00:09:24; enddate: 2016-02-14 23:09:24
+title: Acute bronchitis (disorder); diagnosis: SNOMED-CT:10509002; begdate: 2016-01-28 09:09:24; enddate: 2016-02-17 09:09:24
+title: Ischemic heart disease (disorder); diagnosis: SNOMED-CT:414545008; begdate: 2016-02-07 23:09:24
+title: Part-time employment (finding); diagnosis: SNOMED-CT:160904001; begdate: 2016-02-07 23:51:25; enddate: 2017-05-22 00:41:42
+title: Abnormal findings diagnostic imaging heart+coronary circulat (finding); diagnosis: SNOMED-CT:274531002; begdate: 2016-02-22 23:40:56
+title: Medication review due (situation); diagnosis: SNOMED-CT:314529007; begdate: 2016-05-16 00:09:24; enddate: 2016-05-16 00:09:24
+title: Victim of intimate partner abuse (finding); diagnosis: SNOMED-CT:706893006; begdate: 2016-05-16 01:08:33; enddate: 2017-05-22 00:41:42
+title: Unhealthy alcohol drinking behavior (finding); diagnosis: SNOMED-CT:10939881000119105; begdate: 2016-05-16 02:56:18; enddate: 2018-05-28 02:51:02
+title: Medication review due (situation); diagnosis: SNOMED-CT:314529007; begdate: 2017-05-22 00:09:24; enddate: 2017-05-22 00:09:24
+title: Full-time employment (finding); diagnosis: SNOMED-CT:160903007; begdate: 2017-05-22 00:41:42; enddate: 2025-02-23 23:42:44
+title: Stress (finding); diagnosis: SNOMED-CT:73595000; begdate: 2017-05-22 00:41:42; enddate: 2021-06-14 00:58:18
+title: Gingivitis (disorder); diagnosis: SNOMED-CT:66383009; begdate: 2017-05-22 02:49:31; enddate: 2017-06-05 06:29:44
+title: Gingival disease (disorder); diagnosis: SNOMED-CT:18718003; begdate: 2017-06-05 03:08:11; enddate: 2017-06-05 05:17:13
+title: Medication review due (situation); diagnosis: SNOMED-CT:314529007; begdate: 2018-05-28 00:09:24; enddate: 2020-06-08 00:09:24
+title: Metabolic syndrome X (disorder); diagnosis: SNOMED-CT:237602007; begdate: 2020-06-08 00:09:24
+title: Diabetes mellitus type 2 (disorder); diagnosis: SNOMED-CT:44054006; begdate: 2020-06-08 00:09:24
+title: Essential hypertension (disorder); diagnosis: SNOMED-CT:59621000; begdate: 2021-06-14 00:09:24
+title: Medication review due (situation); diagnosis: SNOMED-CT:314529007; begdate: 2021-06-14 00:09:24; enddate: 2025-07-07 00:09:24
+title: Hypertriglyceridemia (disorder); diagnosis: SNOMED-CT:302870006; begdate: 2021-06-14 00:09:24
+title: Victim of intimate partner abuse (finding); diagnosis: SNOMED-CT:706893006; begdate: 2021-06-14 01:42:22; enddate: 2023-06-26 00:43:49
+title: Social isolation (finding); diagnosis: SNOMED-CT:422650009; begdate: 2023-06-26 00:43:49; enddate: 2024-07-01 00:55:06
+title: Stress (finding); diagnosis: SNOMED-CT:73595000; begdate: 2023-06-26 00:43:49; enddate: 2025-07-07 00:54:01
+title: Part-time employment (finding); diagnosis: SNOMED-CT:160904001; begdate: 2025-02-23 23:42:44
+title: Victim of intimate partner abuse (finding); diagnosis: SNOMED-CT:706893006; begdate: 2025-02-23 23:42:44; enddate: 2025-07-07 00:54:01
+title: Viral sinusitis (disorder); diagnosis: SNOMED-CT:444814009; begdate: 2025-03-02 23:09:24; enddate: 2025-03-24 00:09:24
+
+-- Physical_Exam --
+Date: 2025-08-04 00:09:24
+Physical Exam: None
+
+-- Lab_Results --
+No data found.
+
+-- Imaging_Procedures --
+No data found.
+
+-- Medications --
+amLODIPine 2.5 MG Oral Tablet (RxNorm: 308136)
+Dosage: 1 | Route: 16
+Start: N/A → End: 2022-06-20 (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+sodium fluoride 0.0272 MG/MG Oral Gel (RxNorm: 1535362)
+Dosage: 1 | Route: 16
+Start: N/A → End: 2020-06-22 (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+Clopidogrel 75 MG Oral Tablet (RxNorm: 309362)
+Dosage: 1 | Route: 16
+Start: N/A → End: Ongoing (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+Simvastatin 20 MG Oral Tablet (RxNorm: 312961)
+Dosage: 1 | Route: 16
+Start: N/A → End: Ongoing (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+24 HR metoprolol succinate 100 MG Extended Release Oral Tablet (RxNorm: 866412)
+Dosage: 1 | Route: 16
+Start: N/A → End: Ongoing (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129)
+Dosage: 1 | Route: 16
+Start: N/A → End: Ongoing (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+Acetaminophen 325 MG Oral Tablet (RxNorm: 313782)
+Dosage: 1 | Route: 16
+Start: N/A → End: 2016-02-17 (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin] (RxNorm: 859088)
+Dosage: 1 | Route: 16
+Start: N/A → End: 2016-02-07 (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+budesonide 0.25 MG/ML Inhalation Suspension (RxNorm: 351109)
+Dosage: 1 | Route: 16
+Start: N/A → End: 2016-02-07 (Active)
+Quantity: N/A | Refills: N/A
+Notes: None
+
+
+
+-- Hospital_Course --
+Date: 2025-08-04 00:09:24
+Assessment: None
+Plan: None
+
+-- Care_Plan --
+No data found.
+
+-- Discharge_Instructions --
+No data found.
