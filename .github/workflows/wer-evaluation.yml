@@ -60,7 +60,7 @@ jobs:
   # ============================================
   setup-vectordb-volume:
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.setup_vectordb == 'true' }}
+#    if: ${{ github.event.inputs.setup_vectordb == 'true' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
