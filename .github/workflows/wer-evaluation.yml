@@ -80,7 +80,7 @@ jobs:
         run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
       - name: Upload Vector DB to Modal volume
-        run: modal run rag_models/RAG_To_See_MedGemma_Performance/vectordb_volume.py
+        run: modal run rag_models/RAG_To_See_MedGemma_Performance/vector_db_host.py
 
 
   detect-changes:
