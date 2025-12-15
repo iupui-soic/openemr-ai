@@ -7,114 +7,114 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ambient Clinical Listening</h1>
-            <div id="patient-banner" class="patient-banner hidden">
-                <span id="patient-name"></span>
-                <span id="patient-dob"></span>
-                <span id="patient-mrn"></span>
-            </div>
-        </header>
+<div class="container">
+    <header>
+        <h1>Ambient Clinical Listening</h1>
+        <div id="patient-banner" class="patient-banner hidden">
+            <span id="patient-name"></span>
+            <span id="patient-dob"></span>
+            <span id="patient-mrn"></span>
+        </div>
+    </header>
 
-        <main>
-            <!-- Connection Status -->
-            <div id="connection-status" class="status-bar">
-                <span class="status-indicator disconnected"></span>
-                <span id="status-text">Not connected to EHR</span>
-            </div>
+    <main>
+        <!-- Connection Status -->
+        <div id="connection-status" class="status-bar">
+            <span class="status-indicator disconnected"></span>
+            <span id="status-text">Not connected to EHR</span>
+        </div>
 
-            <!-- Recording Controls -->
-            <section class="recording-section">
-                <div class="recording-controls">
-                    <button id="btn-ambient" class="btn btn-primary btn-large" disabled>
+        <!-- Recording Controls -->
+        <section class="recording-section">
+            <div class="recording-controls">
+                <button id="btn-ambient" class="btn btn-primary btn-large" disabled>
                         <span class="btn-icon">
                             <svg viewBox="0 0 24 24" width="32" height="32">
                                 <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
                                 <circle cx="12" cy="12" r="4" fill="currentColor"/>
                             </svg>
                         </span>
-                        <span class="btn-text">Start Ambient Listening</span>
-                    </button>
+                    <span class="btn-text">Start Ambient Listening</span>
+                </button>
+            </div>
+
+            <div id="recording-status" class="recording-status hidden">
+                <div class="recording-indicator">
+                    <span class="pulse"></span>
+                    <span>Recording...</span>
                 </div>
-
-                <div id="recording-status" class="recording-status hidden">
-                    <div class="recording-indicator">
-                        <span class="pulse"></span>
-                        <span>Recording...</span>
-                    </div>
-                    <div id="recording-timer">00:00</div>
-                    <div class="audio-visualizer">
-                        <canvas id="visualizer" width="300" height="60"></canvas>
-                    </div>
+                <div id="recording-timer">00:00</div>
+                <div class="audio-visualizer">
+                    <canvas id="visualizer" width="300" height="60"></canvas>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Transcription Results -->
-            <section class="transcription-section">
-                <h2>Transcription</h2>
-                <div id="transcription-container">
-                    <div id="transcription-loading" class="loading hidden">
-                        <div class="spinner"></div>
-                        <span>Transcribing audio...</span>
-                    </div>
-                    <div id="transcription-results" class="transcription-results">
-                        <p class="placeholder-text">
-                            Click "Start Ambient Listening" to begin capturing audio.
-                            The transcription will appear here.
-                        </p>
-                    </div>
+        <!-- Transcription Results -->
+        <section class="transcription-section">
+            <h2>Transcription</h2>
+            <div id="transcription-container">
+                <div id="transcription-loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <span>Transcribing audio...</span>
                 </div>
-
-                <!-- Transcription History -->
-                <div id="transcription-history" class="history-section hidden">
-                    <h3>Session History</h3>
-                    <div id="history-list" class="history-list"></div>
+                <div id="transcription-results" class="transcription-results">
+                    <p class="placeholder-text">
+                        Click "Start Ambient Listening" to begin capturing audio.
+                        The transcription will appear here.
+                    </p>
                 </div>
-            </section>
+            </div>
 
-            <!-- Actions -->
-            <section class="actions-section hidden" id="actions-section">
-                <button id="btn-copy" class="btn btn-secondary">Copy Transcription</button>
-                <button id="btn-clear" class="btn btn-secondary">Clear Session</button>
-            </section>
-        </main>
+            <!-- Transcription History -->
+            <div id="transcription-history" class="history-section hidden">
+                <h3>Session History</h3>
+                <div id="history-list" class="history-list"></div>
+            </div>
+        </section>
 
-        <footer>
-            <p>SMART on FHIR Application | Powered by NVIDIA Parakeet ASR</p>
-        </footer>
+        <!-- Actions -->
+        <section class="actions-section hidden" id="actions-section">
+            <button id="btn-copy" class="btn btn-secondary">Copy Transcription</button>
+            <button id="btn-clear" class="btn btn-secondary">Clear Session</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>SMART on FHIR Application | Powered by NVIDIA Parakeet ASR</p>
+    </footer>
+</div>
+
+<!-- Error Modal -->
+<div id="error-modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Error</h3>
+        <p id="error-message"></p>
+        <button id="btn-close-error" class="btn btn-primary">Close</button>
     </div>
+</div>
 
-    <!-- Error Modal -->
-    <div id="error-modal" class="modal hidden">
-        <div class="modal-content">
-            <h3>Error</h3>
-            <p id="error-message"></p>
-            <button id="btn-close-error" class="btn btn-primary">Close</button>
-        </div>
+<!-- Permission Modal -->
+<div id="permission-modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Microphone Access Required</h3>
+        <p>This application needs access to your microphone to capture audio for transcription.</p>
+        <button id="btn-request-permission" class="btn btn-primary">Request Permission</button>
     </div>
+</div>
 
-    <!-- Permission Modal -->
-    <div id="permission-modal" class="modal hidden">
-        <div class="modal-content">
-            <h3>Microphone Access Required</h3>
-            <p>This application needs access to your microphone to capture audio for transcription.</p>
-            <button id="btn-request-permission" class="btn btn-primary">Request Permission</button>
-        </div>
-    </div>
+<!-- Configuration (set by deployment) -->
+<script>
+    window.SMART_CONFIG = {
+        clientId: 'smart-ambient-listening',
+        scope: 'launch patient/Patient.read openid fhirUser',
+        // Set this to your transcription service URL
+        transcriptionServiceUrl: 'https://vishnu.b691.us'
+    };
+</script>
 
-    <!-- Configuration (set by deployment) -->
-    <script>
-        window.SMART_CONFIG = {
-            clientId: 'smart-ambient-listening',
-            scope: 'launch patient/*.read openid fhirUser',
-            // Set this to your transcription service URL
-            transcriptionServiceUrl: 'http://localhost:8001'
-        };
-    </script>
-
-    <script src="js/fhirclient.min.js"></script>
-    <script src="js/ambient-recorder.js"></script>
-    <script src="js/app.js"></script>
+<script src="js/fhirclient.min.js"></script>
+<script src="js/ambient-recorder.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

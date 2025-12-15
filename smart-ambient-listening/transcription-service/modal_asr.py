@@ -30,6 +30,7 @@ parakeet_image = (
         "torchaudio",
         "nemo_toolkit[asr]",
         "scipy",
+        "fastapi"
     )
 )
 
@@ -60,6 +61,15 @@ class ParakeetTranscriber:
         )
         self.model.eval()
         print("Model loaded successfully!")
+    # --- ADD THIS NEW METHOD ---
+    @modal.method()
+    def wakeup(self):
+        """A dummy method to warm up the container and trigger the
+        load_model() method.
+        """
+        print("Warm-up signal received. Container is active.")
+        pass
+    # --- END OF ADDED METHOD ---
 
     @modal.method()
     def transcribe(self, audio_bytes: bytes) -> dict:

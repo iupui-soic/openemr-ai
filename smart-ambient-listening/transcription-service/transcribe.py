@@ -50,14 +50,27 @@ def get_transcriber():
     global _transcriber
     if _transcriber is None:
         logger.info(f"Connecting to Modal app: {MODAL_APP_NAME}")
-        _transcriber = modal.Cls.lookup(MODAL_APP_NAME, "ParakeetTranscriber")
+        ParakeetTranscriber = modal.Cls.from_name(MODAL_APP_NAME, "ParakeetTranscriber")
+        _transcriber = ParakeetTranscriber()
     return _transcriber
+# --- ADD THIS NEW ENDPOINT ---
+@app.get("/warmup")
+async def warmup_model():
+    logger.info("Warmup request received, pinging Modal container.")
+    try:
+        transcriber = get_transcriber()
+        # Instantiate the class
+        transcriber.wakeup.remote()      # Call the dummy wakeup method
+        return {"message": "Warmup signal sent."}
+    except Exception as e:
+        logger.error(f"Warmup signal failed: {str(e)}")
+        return {"message": "Warmup signal failed to send."}
 
 
 @app.post("/transcribe")
 async def transcribe_audio(
-    audio: UploadFile = File(...),
-    patient_id: str = Form(None)
+        audio: UploadFile = File(...),
+        patient_id: str = Form(None)
 ):
     """
     Transcribe audio file using Modal-hosted Parakeet ASR.
