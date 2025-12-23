@@ -39,12 +39,12 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
 
 | Model | Avg WER | Status |
 |-------|---------|--------|
-| whisper-turbo | - | Run evaluation |
-| whisper-v3 | - | Run evaluation |
-| canary | - | Run evaluation |
-| parakeet | - | Run evaluation |
-| granite | - | Run evaluation |
-| groq | - | Run evaluation |
+| groq | 14.91% | Run evaluation |
+| canary | 15.05% | Run evaluation |
+| parakeet | 16.28% | Run evaluation |
+| granite | 17.70% | Run evaluation |
+| whisper-v3 | 19.35% | Run evaluation |
+| whisper-turbo | 23.92% | Run evaluation |
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
 
@@ -59,6 +59,7 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
   - `NOTION_API_KEY` - For Notion dataset access
   - `GROQ_API_KEY` - For Groq API evaluations
   - `KAGGLE_USERNAME` and `KAGGLE_KEY` - For Kaggle dataset setup
+  - `HF_TOKEN` - For ELMJSON validation experiments
 
 ### Installation
 
