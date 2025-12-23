@@ -37,6 +37,13 @@
         "existing diabetes"
       ],
       "notes": "INVALID: This implementation has multiple errors - (1) Uses age 45-75 instead of USPSTF recommended 35-70, (2) Uses OR logic instead of AND for inclusion criteria, (3) Incorrectly excludes females from screening, (4) Uses hypertension as risk factor instead of BMI/obesity, (5) Missing BMI check entirely, (6) No exclusion for existing diabetes diagnosis"
+    },
+    "Chlamydia_Screening_Common_CQL.json": {
+      "valid": true,
+      "cpg_file": "Chlamydia_Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Chlamydia screening CDS for sexually active females age 16-23. Correctly implements demographic check, sexual activity verification, and exclusions for recent screening, pending orders, and documented refusal reasons."
     }
   }
 }
