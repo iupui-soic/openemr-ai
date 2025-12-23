@@ -1,0 +1,2074 @@
+{
+  "library": {
+    "annotation": [
+      {
+        "translatorVersion": "3.3.2",
+        "translatorOptions": "EnableDateRangeOptimization,EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion,DisableMethodInvocation",
+        "signatureLevel": "All",
+        "type": "CqlToElmInfo"
+      },
+      {
+        "type": "Annotation",
+        "s": {
+          "r": "137",
+          "s": [
+            {
+              "value": [
+                "",
+                "library \"Prans-Diabetes-Screening-Alert\" version '1.0.0'"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "identifier": {
+      "id": "Prans-Diabetes-Screening-Alert",
+      "version": "1.0.0"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [
+        {
+          "localIdentifier": "System",
+          "uri": "urn:hl7-org:elm-types:r1"
+        },
+        {
+          "localId": "1",
+          "locator": "3:1-3:26",
+          "localIdentifier": "FHIR",
+          "uri": "http://hl7.org/fhir",
+          "version": "4.0.1",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "1",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "using "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "FHIR"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version '4.0.1'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "includes": {
+      "def": [
+        {
+          "localId": "2",
+          "locator": "5:1-5:56",
+          "localIdentifier": "FHIRHelpers",
+          "path": "FHIRHelpers",
+          "version": "4.0.1",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "2",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "include "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "\"FHIRHelpers\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version ",
+                      "'4.0.1'",
+                      " called ",
+                      "FHIRHelpers"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "codeSystems": {
+      "def": [
+        {
+          "localId": "3",
+          "locator": "7:1-7:45",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}CodeSystem",
+          "name": "SNOMED",
+          "id": "http://snomed.info/sct",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "3",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "codesystem ",
+                      "\"SNOMED\"",
+                      ": ",
+                      "'http://snomed.info/sct'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "codes": {
+      "def": [
+        {
+          "localId": "5",
+          "locator": "9:1-9:151",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Code",
+          "name": "Hypertensive disorder, systemic arterial (disorder) code",
+          "id": "38341003",
+          "display": "Hypertensive disorder, systemic arterial (disorder)",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "5",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "code ",
+                      "\"Hypertensive disorder, systemic arterial (disorder) code\"",
+                      ": ",
+                      "'38341003'",
+                      " from "
+                    ]
+                  },
+                  {
+                    "r": "4",
+                    "s": [
+                      {
+                        "value": [
+                          "\"SNOMED\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " display ",
+                      "'Hypertensive disorder, systemic arterial (disorder)'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "codeSystem": {
+            "localId": "4",
+            "locator": "9:82-9:89",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name": "SNOMED"
+          }
+        }
+      ]
+    },
+    "contexts": {
+      "def": [
+        {
+          "locator": "11:1-11:15",
+          "name": "Patient"
+        }
+      ]
+    },
+    "statements": {
+      "def": [
+        {
+          "locator": "11:1-11:15",
+          "name": "Patient",
+          "context": "Patient",
+          "expression": {
+            "type": "SingletonFrom",
+            "operand": {
+              "locator": "11:1-11:15",
+              "dataType": "{http://hl7.org/fhir}Patient",
+              "templateId": "http://hl7.org/fhir/StructureDefinition/Patient",
+              "type": "Retrieve"
+            }
+          }
+        },
+        {
+          "localId": "13",
+          "locator": "13:1-15:26",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Screening Age",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "13",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Screening Age\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "12",
+                    "s": [
+                      {
+                        "r": "8",
+                        "s": [
+                          {
+                            "r": "6",
+                            "s": [
+                              {
+                                "value": [
+                                  "AgeInYears",
+                                  "()"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "r": "7",
+                            "value": [
+                              " ",
+                              ">=",
+                              " ",
+                              "45"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    and "
+                        ]
+                      },
+                      {
+                        "r": "11",
+                        "s": [
+                          {
+                            "r": "9",
+                            "s": [
+                              {
+                                "value": [
+                                  "AgeInYears",
+                                  "()"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "r": "10",
+                            "value": [
+                              " ",
+                              "<=",
+                              " ",
+                              "75"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "12",
+            "locator": "14:3-15:26",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "8",
+                "locator": "14:3-14:20",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "GreaterOrEqual",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "6",
+                    "locator": "14:3-14:14",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "signature": [
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}Date",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ],
+                    "operand": {
+                      "path": "birthDate.value",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "localId": "7",
+                    "locator": "14:19-14:20",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "45",
+                    "type": "Literal"
+                  }
+                ]
+              },
+              {
+                "localId": "11",
+                "locator": "15:9-15:26",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "LessOrEqual",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "9",
+                    "locator": "15:9-15:20",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "signature": [
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}Date",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ],
+                    "operand": {
+                      "path": "birthDate.value",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "localId": "10",
+                    "locator": "15:25-15:26",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "75",
+                    "type": "Literal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "localId": "137",
+          "locator": "56:1-59:3",
+          "resultTypeName": "{http://hl7.org/fhir}Condition",
+          "name": "FirstCondition",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "137",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define function FirstCondition(CondList List<Condition>):\n  "
+                    ]
+                  },
+                  {
+                    "r": "136",
+                    "s": [
+                      {
+                        "r": "136",
+                        "s": [
+                          {
+                            "value": [
+                              "First",
+                              "("
+                            ]
+                          },
+                          {
+                            "r": "135",
+                            "s": [
+                              {
+                                "s": [
+                                  {
+                                    "r": "99",
+                                    "s": [
+                                      {
+                                        "r": "98",
+                                        "s": [
+                                          {
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "CondList"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          " ",
+                                          "C"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "\n      "
+                                ]
+                              },
+                              {
+                                "r": "134",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "sort by "
+                                    ]
+                                  },
+                                  {
+                                    "r": "133",
+                                    "s": [
+                                      {
+                                        "r": "132",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "Coalesce",
+                                              "("
+                                            ]
+                                          },
+                                          {
+                                            "r": "119",
+                                            "s": [
+                                              {
+                                                "r": "118",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "("
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "118",
+                                                    "s": [
+                                                      {
+                                                        "r": "116",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "onset"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          " as "
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "117",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "FHIR",
+                                                              ".",
+                                                              "dateTime"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "119",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ","
+                                            ]
+                                          },
+                                          {
+                                            "r": "124",
+                                            "s": [
+                                              {
+                                                "r": "123",
+                                                "s": [
+                                                  {
+                                                    "r": "122",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "("
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "122",
+                                                        "s": [
+                                                          {
+                                                            "r": "120",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "onset"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "value": [
+                                                              " as "
+                                                            ]
+                                                          },
+                                                          {
+                                                            "r": "121",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "FHIR",
+                                                                  ".",
+                                                                  "Period"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      "."
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "123",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "\"start\""
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "124",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ","
+                                            ]
+                                          },
+                                          {
+                                            "r": "129",
+                                            "s": [
+                                              {
+                                                "r": "128",
+                                                "s": [
+                                                  {
+                                                    "r": "127",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "("
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "127",
+                                                        "s": [
+                                                          {
+                                                            "r": "125",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "onset"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "value": [
+                                                              " as "
+                                                            ]
+                                                          },
+                                                          {
+                                                            "r": "126",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "FHIR",
+                                                                  ".",
+                                                                  "Period"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      "."
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "128",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "\"end\""
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "129",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ", "
+                                            ]
+                                          },
+                                          {
+                                            "r": "131",
+                                            "s": [
+                                              {
+                                                "r": "130",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "recordedDate"
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "131",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ")"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n  )"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "136",
+            "locator": "57:3-59:3",
+            "resultTypeName": "{http://hl7.org/fhir}Condition",
+            "type": "First",
+            "signature": [
+              {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Condition",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            ],
+            "source": {
+              "localId": "135",
+              "locator": "57:9-58:146",
+              "type": "Query",
+              "resultTypeSpecifier": {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Condition",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              "source": [
+                {
+                  "localId": "99",
+                  "locator": "57:9-57:18",
+                  "alias": "C",
+                  "resultTypeSpecifier": {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Condition",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  "expression": {
+                    "localId": "98",
+                    "locator": "57:9-57:16",
+                    "name": "CondList",
+                    "type": "OperandRef",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Condition",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    }
+                  }
+                }
+              ],
+              "relationship": [],
+              "sort": {
+                "localId": "134",
+                "locator": "58:7-58:146",
+                "by": [
+                  {
+                    "localId": "133",
+                    "locator": "58:15-58:146",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "direction": "asc",
+                    "type": "ByExpression",
+                    "expression": {
+                      "localId": "132",
+                      "locator": "58:15-58:146",
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "type": "Coalesce",
+                      "signature": [
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      ],
+                      "operand": [
+                        {
+                          "localId": "119",
+                          "locator": "58:24-58:53",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "118",
+                            "locator": "58:24-58:47",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "strict": false,
+                            "type": "As",
+                            "operand": {
+                              "localId": "116",
+                              "locator": "58:25-58:29",
+                              "name": "onset",
+                              "type": "IdentifierRef",
+                              "resultTypeSpecifier": {
+                                "type": "ChoiceTypeSpecifier",
+                                "choice": [
+                                  {
+                                    "name": "{http://hl7.org/fhir}dateTime",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Age",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Period",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Range",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}string",
+                                    "type": "NamedTypeSpecifier"
+                                  }
+                                ]
+                              }
+                            },
+                            "asTypeSpecifier": {
+                              "localId": "117",
+                              "locator": "58:34-58:46",
+                              "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                              "name": "{http://hl7.org/fhir}dateTime",
+                              "type": "NamedTypeSpecifier"
+                            }
+                          }
+                        },
+                        {
+                          "localId": "124",
+                          "locator": "58:55-58:90",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "123",
+                            "locator": "58:55-58:84",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "path": "start",
+                            "type": "Property",
+                            "source": {
+                              "localId": "122",
+                              "locator": "58:55-58:76",
+                              "resultTypeName": "{http://hl7.org/fhir}Period",
+                              "strict": false,
+                              "type": "As",
+                              "operand": {
+                                "localId": "120",
+                                "locator": "58:56-58:60",
+                                "name": "onset",
+                                "type": "IdentifierRef",
+                                "resultTypeSpecifier": {
+                                  "type": "ChoiceTypeSpecifier",
+                                  "choice": [
+                                    {
+                                      "name": "{http://hl7.org/fhir}dateTime",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Age",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Period",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Range",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}string",
+                                      "type": "NamedTypeSpecifier"
+                                    }
+                                  ]
+                                }
+                              },
+                              "asTypeSpecifier": {
+                                "localId": "121",
+                                "locator": "58:65-58:75",
+                                "resultTypeName": "{http://hl7.org/fhir}Period",
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "localId": "129",
+                          "locator": "58:92-58:125",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "128",
+                            "locator": "58:92-58:119",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "path": "end",
+                            "type": "Property",
+                            "source": {
+                              "localId": "127",
+                              "locator": "58:92-58:113",
+                              "resultTypeName": "{http://hl7.org/fhir}Period",
+                              "strict": false,
+                              "type": "As",
+                              "operand": {
+                                "localId": "125",
+                                "locator": "58:93-58:97",
+                                "name": "onset",
+                                "type": "IdentifierRef",
+                                "resultTypeSpecifier": {
+                                  "type": "ChoiceTypeSpecifier",
+                                  "choice": [
+                                    {
+                                      "name": "{http://hl7.org/fhir}dateTime",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Age",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Period",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Range",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}string",
+                                      "type": "NamedTypeSpecifier"
+                                    }
+                                  ]
+                                }
+                              },
+                              "asTypeSpecifier": {
+                                "localId": "126",
+                                "locator": "58:102-58:112",
+                                "resultTypeName": "{http://hl7.org/fhir}Period",
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "localId": "131",
+                          "locator": "58:128-58:145",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "130",
+                            "locator": "58:128-58:139",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "name": "recordedDate",
+                            "type": "IdentifierRef"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "operand": [
+            {
+              "name": "CondList",
+              "operandTypeSpecifier": {
+                "localId": "16",
+                "locator": "56:41-56:55",
+                "type": "ListTypeSpecifier",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Condition",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "elementType": {
+                  "localId": "15",
+                  "locator": "56:46-56:54",
+                  "resultTypeName": "{http://hl7.org/fhir}Condition",
+                  "name": "{http://hl7.org/fhir}Condition",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localId": "58",
+          "locator": "17:1-18:105",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Hypertensive disorder, systemic arterial (disorder)",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "58",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Hypertensive disorder, systemic arterial (disorder)\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "57",
+                    "s": [
+                      {
+                        "r": "56",
+                        "s": [
+                          {
+                            "value": [
+                              "( "
+                            ]
+                          },
+                          {
+                            "r": "56",
+                            "s": [
+                              {
+                                "value": [
+                                  "FirstCondition",
+                                  "("
+                                ]
+                              },
+                              {
+                                "r": "14",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "[",
+                                      "Condition",
+                                      ": "
+                                    ]
+                                  },
+                                  {
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "\"Hypertensive disorder, systemic arterial (disorder) code\""
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "]"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  ")"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              " )"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " is not null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "57",
+            "locator": "18:3-18:105",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Not",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": {
+              "locator": "18:3-18:105",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "IsNull",
+              "signature": [
+                {
+                  "name": "{urn:hl7-org:elm-types:r1}Any",
+                  "type": "NamedTypeSpecifier"
+                }
+              ],
+              "operand": {
+                "localId": "56",
+                "locator": "18:3-18:93",
+                "resultTypeName": "{http://hl7.org/fhir}Condition",
+                "name": "FirstCondition",
+                "type": "FunctionRef",
+                "signature": [
+                  {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Condition",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "14",
+                    "locator": "18:20-18:90",
+                    "dataType": "{http://hl7.org/fhir}Condition",
+                    "templateId": "http://hl7.org/fhir/StructureDefinition/Condition",
+                    "codeProperty": "code",
+                    "codeComparator": "~",
+                    "type": "Retrieve",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Condition",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    },
+                    "codes": {
+                      "type": "ToList",
+                      "operand": {
+                        "locator": "18:32-18:89",
+                        "resultTypeName": "{urn:hl7-org:elm-types:r1}Code",
+                        "name": "Hypertensive disorder, systemic arterial (disorder) code",
+                        "type": "CodeRef"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "localId": "64",
+          "locator": "20:1-21:33",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Gender-f4b99bd7-976b-4516-9ef1-db6c8a0aa0fa",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "64",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Gender-f4b99bd7-976b-4516-9ef1-db6c8a0aa0fa\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "63",
+                    "s": [
+                      {
+                        "r": "61",
+                        "s": [
+                          {
+                            "r": "60",
+                            "s": [
+                              {
+                                "r": "59",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "Patient"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "."
+                                ]
+                              },
+                              {
+                                "r": "60",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "gender"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "."
+                            ]
+                          },
+                          {
+                            "r": "61",
+                            "s": [
+                              {
+                                "value": [
+                                  "value"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " ",
+                          "=",
+                          " "
+                        ]
+                      },
+                      {
+                        "r": "62",
+                        "s": [
+                          {
+                            "value": [
+                              "'female'"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "63",
+            "locator": "21:3-21:33",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Equal",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}String",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}String",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "61",
+                "locator": "21:3-21:22",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "localId": "60",
+                  "locator": "21:3-21:16",
+                  "resultTypeName": "{http://hl7.org/fhir}AdministrativeGender",
+                  "path": "gender",
+                  "type": "Property",
+                  "source": {
+                    "localId": "59",
+                    "locator": "21:3-21:9",
+                    "resultTypeName": "{http://hl7.org/fhir}Patient",
+                    "name": "Patient",
+                    "type": "ExpressionRef"
+                  }
+                }
+              },
+              {
+                "localId": "62",
+                "locator": "21:26-21:33",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "valueType": "{urn:hl7-org:elm-types:r1}String",
+                "value": "female",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "68",
+          "locator": "23:1-25:60",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "MeetsInclusionCriteria",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "68",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"MeetsInclusionCriteria\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "67",
+                    "s": [
+                      {
+                        "r": "65",
+                        "s": [
+                          {
+                            "value": [
+                              "\"Screening Age\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    or "
+                        ]
+                      },
+                      {
+                        "r": "66",
+                        "s": [
+                          {
+                            "value": [
+                              "\"Hypertensive disorder, systemic arterial (disorder)\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "67",
+            "locator": "24:3-25:60",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Or",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "65",
+                "locator": "24:3-24:17",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "Screening Age",
+                "type": "ExpressionRef"
+              },
+              {
+                "localId": "66",
+                "locator": "25:8-25:60",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "Hypertensive disorder, systemic arterial (disorder)",
+                "type": "ExpressionRef"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "70",
+          "locator": "27:1-28:47",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "MeetsExclusionCriteria",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "70",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"MeetsExclusionCriteria\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "69",
+                    "s": [
+                      {
+                        "value": [
+                          "\"Gender-f4b99bd7-976b-4516-9ef1-db6c8a0aa0fa\""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "69",
+            "locator": "28:3-28:47",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "name": "Gender-f4b99bd7-976b-4516-9ef1-db6c8a0aa0fa",
+            "type": "ExpressionRef"
+          }
+        },
+        {
+          "localId": "75",
+          "locator": "30:1-32:36",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "InPopulation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "75",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"InPopulation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "74",
+                    "s": [
+                      {
+                        "r": "71",
+                        "s": [
+                          {
+                            "value": [
+                              "\"MeetsInclusionCriteria\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    and "
+                        ]
+                      },
+                      {
+                        "r": "73",
+                        "s": [
+                          {
+                            "value": [
+                              "not "
+                            ]
+                          },
+                          {
+                            "r": "72",
+                            "s": [
+                              {
+                                "value": [
+                                  "\"MeetsExclusionCriteria\""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "74",
+            "locator": "31:3-32:36",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "71",
+                "locator": "31:3-31:26",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "MeetsInclusionCriteria",
+                "type": "ExpressionRef"
+              },
+              {
+                "localId": "73",
+                "locator": "32:9-32:36",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "Not",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": {
+                  "localId": "72",
+                  "locator": "32:13-32:36",
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "name": "MeetsExclusionCriteria",
+                  "type": "ExpressionRef"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "localId": "80",
+          "locator": "34:1-38:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+          "name": "Recommendation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "80",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Recommendation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "79",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "76",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " then "
+                        ]
+                      },
+                      {
+                        "r": "77",
+                        "s": [
+                          {
+                            "value": [
+                              "' Patient meets criteria for diabetes screening. Consider ordering:\n  - Fasting plasma glucose test\n  - HbA1c test'"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "78",
+                        "value": [
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "79",
+            "locator": "35:3-38:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+            "type": "If",
+            "condition": {
+              "localId": "76",
+              "locator": "35:6-35:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "77",
+              "locator": "35:26-35:142",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": " Patient meets criteria for diabetes screening. Consider ordering:\r\n  - Fasting plasma glucose test\r\n  - HbA1c test",
+              "type": "Literal"
+            },
+            "else": {
+              "asType": "{urn:hl7-org:elm-types:r1}String",
+              "type": "As",
+              "operand": {
+                "localId": "78",
+                "locator": "38:10-38:13",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              }
+            }
+          }
+        },
+        {
+          "localId": "85",
+          "locator": "40:1-43:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+          "name": "Rationale",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "85",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Rationale\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "84",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "81",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " then "
+                        ]
+                      },
+                      {
+                        "r": "82",
+                        "s": [
+                          {
+                            "value": [
+                              "'Patient is between 45-75 years old with risk factors (BMI ≥25 or hypertension).\n Diabetes screening is recommended per USPSTF guidelines.'"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "83",
+                        "value": [
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "84",
+            "locator": "41:3-43:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+            "type": "If",
+            "condition": {
+              "localId": "81",
+              "locator": "41:6-41:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "82",
+              "locator": "41:26-41:165",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "Patient is between 45-75 years old with risk factors (BMI ≥25 or hypertension).\r\n Diabetes screening is recommended per USPSTF guidelines.",
+              "type": "Literal"
+            },
+            "else": {
+              "asType": "{urn:hl7-org:elm-types:r1}String",
+              "type": "As",
+              "operand": {
+                "localId": "83",
+                "locator": "43:10-43:13",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              }
+            }
+          }
+        },
+        {
+          "localId": "90",
+          "locator": "45:1-47:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Links",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "90",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Links\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "89",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "86",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "87",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "89",
+            "locator": "46:3-47:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "86",
+              "locator": "46:6-46:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "87",
+              "locator": "46:26-46:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "88",
+              "locator": "47:10-47:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "95",
+          "locator": "49:1-51:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Suggestions",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "95",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Suggestions\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "94",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "91",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "92",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "94",
+            "locator": "50:3-51:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "91",
+              "locator": "50:6-50:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "92",
+              "locator": "50:26-50:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "93",
+              "locator": "51:10-51:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "97",
+          "locator": "53:1-54:6",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Errors",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "97",
+                "s": [
+                  {
+                    "r": "96",
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Errors\"",
+                      ":\n  ",
+                      "null"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "96",
+            "locator": "54:3-54:6",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "Null"
+          }
+        }
+      ]
+    }
+  }
+}

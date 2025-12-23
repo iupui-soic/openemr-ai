@@ -1,0 +1,764 @@
+name: ELM JSON Validation
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: 'Force run all models (ignore cache)'
+        type: boolean
+        default: false
+      models:
+        description: 'Models to run (comma-separated, or "all")'
+        type: string
+        default: 'all'
+  push:
+    paths:
+      - 'cdr_elmjson_validator/**'
+      - '.github/workflows/elm-validation.yml'
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      validator_changed: ${{ steps.filter.outputs.validator }}
+      # Script hashes for cache keys
+      modal_hash: ${{ steps.hashes.outputs.modal }}
+      helper_hash: ${{ steps.hashes.outputs.helper }}
+      runner_hash: ${{ steps.hashes.outputs.runner }}
+      elm_hash: ${{ steps.hashes.outputs.elm }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed files
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            validator:
+              - 'cdr_elmjson_validator/**'
+
+      - name: Calculate script hashes
+        id: hashes
+        run: |
+          echo "modal=${{ hashFiles('cdr_elmjson_validator/modal_app.py') }}" >> $GITHUB_OUTPUT
+          echo "helper=${{ hashFiles('cdr_elmjson_validator/import_helper.py') }}" >> $GITHUB_OUTPUT
+          echo "runner=${{ hashFiles('cdr_elmjson_validator/run_validation.py') }}" >> $GITHUB_OUTPUT
+          echo "elm=${{ hashFiles('cdr_elmjson_validator/test_data/*.json') }}" >> $GITHUB_OUTPUT
+          echo "cpg=${{ hashFiles('cdr_elmjson_validator/test_data/*.md') }}" >> $GITHUB_OUTPUT
+
+  # ============================================
+  # Model evaluation jobs (run in parallel)
+  # ============================================
+
+  evaluate-llama-1b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-llama-3.2-1b.csv
+          key: elm-llama-1b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+            echo "Using cached results"
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup HuggingFace secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-llama-3.2-1b
+          path: cdr_elmjson_validator/results-llama-3.2-1b.csv
+          retention-days: 90
+
+  evaluate-llama-3b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-llama-3.2-3b.csv
+          key: elm-llama-3b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup HuggingFace secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model llama-3.2-3b --output results-llama-3.2-3b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-llama-3.2-3b
+          path: cdr_elmjson_validator/results-llama-3.2-3b.csv
+          retention-days: 90
+
+  evaluate-qwen-1-5b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-qwen-2.5-1.5b.csv
+          key: elm-qwen-1-5b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model qwen-2.5-1.5b --output results-qwen-2.5-1.5b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-qwen-2.5-1.5b
+          path: cdr_elmjson_validator/results-qwen-2.5-1.5b.csv
+          retention-days: 90
+
+  evaluate-qwen-3b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-qwen-2.5-3b.csv
+          key: elm-qwen-3b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model qwen-2.5-3b --output results-qwen-2.5-3b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-qwen-2.5-3b
+          path: cdr_elmjson_validator/results-qwen-2.5-3b.csv
+          retention-days: 90
+
+  evaluate-phi3:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-phi-3-mini.csv
+          key: elm-phi3-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model phi-3-mini --output results-phi-3-mini.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-phi-3-mini
+          path: cdr_elmjson_validator/results-phi-3-mini.csv
+          retention-days: 90
+
+  evaluate-gemma:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-gemma-3-4b.csv
+          key: elm-gemma-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup HuggingFace secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model gemma-3-4b --output results-gemma-3-4b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-gemma-3-4b
+          path: cdr_elmjson_validator/results-gemma-3-4b.csv
+          retention-days: 90
+
+  evaluate-medgemma:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-medgemma-4b.csv
+          key: elm-medgemma-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup HuggingFace secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model medgemma-4b --output results-medgemma-4b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-medgemma-4b
+          path: cdr_elmjson_validator/results-medgemma-4b.csv
+          retention-days: 90
+
+  # ============================================
+  # Comparison table generation
+  # ============================================
+
+  generate-comparison:
+    needs:
+      - detect-changes
+      - evaluate-llama-1b
+      - evaluate-llama-3b
+      - evaluate-qwen-1-5b
+      - evaluate-qwen-3b
+      - evaluate-phi3
+      - evaluate-gemma
+      - evaluate-medgemma
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pandas
+        run: pip install pandas
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: results-*
+          merge-multiple: false
+
+      - name: Generate comparison table
+        run: |
+          python << 'EOF'
+          import pandas as pd
+          import os
+          from datetime import datetime
+
+          models = [
+              ('llama-3.2-1b', 'results-llama-3.2-1b', 'Llama 3.2 1B'),
+              ('llama-3.2-3b', 'results-llama-3.2-3b', 'Llama 3.2 3B'),
+              ('qwen-2.5-1.5b', 'results-qwen-2.5-1.5b', 'Qwen 2.5 1.5B'),
+              ('qwen-2.5-3b', 'results-qwen-2.5-3b', 'Qwen 2.5 3B'),
+              ('phi-3-mini', 'results-phi-3-mini', 'Phi-3 Mini'),
+              ('gemma-3-4b', 'results-gemma-3-4b', 'Gemma 3 4B'),
+              ('medgemma-4b', 'results-medgemma-4b', 'MedGemma 4B'),
+          ]
+
+          results = []
+          all_per_file = {}
+
+          for model_id, artifact_name, display_name in models:
+              csv_path = f"artifacts/{artifact_name}/{artifact_name}.csv"
+
+              if os.path.exists(csv_path):
+                  try:
+                      df = pd.read_csv(csv_path)
+                      total = len(df)
+
+                      # Check if we have ground truth data
+                      has_gt = 'has_ground_truth' in df.columns and df['has_ground_truth'].any()
+
+                      if has_gt:
+                          # Calculate accuracy against ground truth
+                          with_gt = df[df['has_ground_truth'] == True]
+                          correct = len(with_gt[with_gt['correct'] == True])
+                          accuracy = correct / len(with_gt) if len(with_gt) > 0 else None
+                          error_match = with_gt['error_match'].mean() if 'error_match' in with_gt.columns else None
+                      else:
+                          # No ground truth - just count valid/invalid
+                          correct = len(df[df['valid'] == True])
+                          accuracy = None
+                          error_match = None
+
+                      avg_time = df['time_seconds'].mean() if 'time_seconds' in df.columns else 0
+
+                      results.append({
+                          'model': model_id,
+                          'display_name': display_name,
+                          'accuracy': accuracy,
+                          'correct': correct,
+                          'total': total,
+                          'with_gt': len(df[df['has_ground_truth'] == True]) if has_gt else 0,
+                          'error_match': error_match,
+                          'avg_time': avg_time,
+                          'has_ground_truth': has_gt,
+                          'status': 'available'
+                      })
+
+                      # Per-file results
+                      for _, row in df.iterrows():
+                          file_name = row.get('file', 'unknown')
+                          if file_name not in all_per_file:
+                              all_per_file[file_name] = {}
+                          all_per_file[file_name][model_id] = {
+                              'valid': row.get('valid', False),
+                              'correct': row.get('correct', None),
+                              'time': row.get('time_seconds', 0)
+                          }
+
+                  except Exception as e:
+                      results.append({
+                          'model': model_id,
+                          'display_name': display_name,
+                          'accuracy': None,
+                          'correct': 0,
+                          'total': 0,
+                          'with_gt': 0,
+                          'error_match': None,
+                          'avg_time': 0,
+                          'has_ground_truth': False,
+                          'status': f'error: {str(e)[:30]}'
+                      })
+              else:
+                  results.append({
+                      'model': model_id,
+                      'display_name': display_name,
+                      'accuracy': None,
+                      'correct': 0,
+                      'total': 0,
+                      'with_gt': 0,
+                      'error_match': None,
+                      'avg_time': 0,
+                      'has_ground_truth': False,
+                      'status': 'no results'
+                  })
+
+          # Generate markdown
+          now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+          commit = os.environ.get('GITHUB_SHA', 'unknown')[:7]
+
+          # Check if any model has ground truth
+          has_any_gt = any(r.get('has_ground_truth') for r in results)
+
+          lines = []
+          lines.append("## ELM JSON Validation Results\n")
+          lines.append(f"**Date:** {now}")
+          lines.append(f"**Commit:** `{commit}`\n")
+
+          if has_any_gt:
+              lines.append("### Model Comparison (vs Ground Truth)\n")
+              lines.append("| Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |")
+              lines.append("|-------|----------|---------------|-------------|----------|--------|")
+          else:
+              lines.append("### Model Comparison\n")
+              lines.append("⚠️ **No ground truth annotations found.** Add annotations to `ground_truth.json` to measure accuracy.\n")
+              lines.append("| Model | Files | Avg Time | Status |")
+              lines.append("|-------|-------|----------|--------|")
+
+          # Sort by accuracy (or time if no accuracy)
+          def sort_key(x):
+              if x['accuracy'] is not None:
+                  return (1, -x['accuracy'])  # Has accuracy, sort by accuracy desc
+              return (0, x['avg_time'])  # No accuracy, sort by time asc
+
+          sorted_results = sorted(results, key=sort_key)
+
+          for r in sorted_results:
+              acc = r.get('accuracy')
+
+              if acc is not None:
+                  if acc >= 0.95:
+                      status_icon = "🥇"
+                  elif acc >= 0.90:
+                      status_icon = "🥈"
+                  elif acc >= 0.80:
+                      status_icon = "🥉"
+                  elif acc >= 0.70:
+                      status_icon = "🟡"
+                  else:
+                      status_icon = "🔴"
+
+                  error_str = f"{r['error_match']:.0%}" if r.get('error_match') is not None else "N/A"
+                  lines.append(
+                      f"| {r['display_name']} | {acc:.1%} | "
+                      f"{r['correct']}/{r['with_gt']} | {error_str} | "
+                      f"{r['avg_time']:.2f}s | {status_icon} {r['status']} |"
+                  )
+              elif r['status'] == 'available':
+                  lines.append(
+                      f"| {r['display_name']} | {r['total']} | "
+                      f"{r['avg_time']:.2f}s | ⚪ No ground truth |"
+                  )
+              else:
+                  lines.append(
+                      f"| {r['display_name']} | - | - | ⚪ {r['status']} |"
+                  )
+
+          # Accuracy chart (only if we have ground truth)
+          if has_any_gt:
+              lines.append("\n### Accuracy Comparison\n")
+              lines.append("```")
+              max_bar = 30
+              for r in sorted_results:
+                  name = r['display_name'][:12].ljust(12)
+                  acc = r.get('accuracy')
+                  if acc is not None:
+                      bar_len = int(acc * max_bar)
+                      bar = "█" * bar_len + "░" * (max_bar - bar_len)
+                      lines.append(f"{name} {bar} {acc:.1%}")
+                  else:
+                      lines.append(f"{name} {'░' * max_bar} N/A")
+              lines.append("```\n")
+
+          # Timing chart
+          lines.append("### Inference Time Comparison\n")
+          lines.append("```")
+          max_time = max(r['avg_time'] for r in results) if results else 1
+          for r in sorted(results, key=lambda x: x['avg_time']):
+              name = r['display_name'][:12].ljust(12)
+              bar_len = int((r['avg_time'] / max_time) * max_bar) if max_time > 0 else 0
+              bar = "█" * bar_len + "░" * (max_bar - bar_len)
+              lines.append(f"{name} {bar} {r['avg_time']:.2f}s")
+          lines.append("```\n")
+
+          # Per-file comparison (if we have data)
+          if all_per_file:
+              lines.append("### Per-File Results\n")
+              active_models = [r['model'] for r in results if r['status'] == 'available']
+
+              if active_models:
+                  header = "| File |"
+                  divider = "|------|"
+                  for m in active_models[:5]:  # Limit to 5 models for readability
+                      short = m.replace('llama-3.2-', 'L').replace('qwen-2.5-', 'Q').replace('phi-3-', 'P').replace('gemma-3-', 'G').replace('medgemma-', 'M')
+                      header += f" {short} |"
+                      divider += "-----|"
+
+                  lines.append(header)
+                  lines.append(divider)
+
+                  for file_name, file_results in sorted(all_per_file.items())[:15]:
+                      row = f"| {file_name[:25]} |"
+                      for m in active_models[:5]:
+                          if m in file_results:
+                              valid = file_results[m]['valid']
+                              icon = "✅" if valid else "❌"
+                              row += f" {icon} |"
+                          else:
+                              row += " - |"
+                      lines.append(row)
+
+                  if len(all_per_file) > 15:
+                      lines.append(f"\n*Showing 15 of {len(all_per_file)} files*")
+
+          lines.append("\n### Legend")
+          lines.append("- 🥇 Excellent (≥95% accuracy)")
+          lines.append("- 🥈 Very Good (≥90% accuracy)")
+          lines.append("- 🥉 Good (≥80% accuracy)")
+          lines.append("- 🟡 Fair (≥70% accuracy)")
+          lines.append("- 🔴 Needs Work (<70% accuracy)")
+          lines.append("- ⚪ No results available")
+          lines.append("\n*Results cached based on script and ELM file hashes. Use 'Force run all models' to regenerate.*")
+
+          summary = "\n".join(lines)
+
+          # Write to GitHub step summary
+          with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/stdout'), 'a') as f:
+              f.write(summary)
+
+          print(summary)
+
+          # Save comparison CSV
+          comparison_df = pd.DataFrame(results)
+          comparison_df.to_csv('comparison_results.csv', index=False)
+          EOF
+
+      - name: Upload comparison results
+        uses: actions/upload-artifact@v4
+        with:
+          name: elm-validation-comparison
+          path: comparison_results.csv
+          retention-days: 90
