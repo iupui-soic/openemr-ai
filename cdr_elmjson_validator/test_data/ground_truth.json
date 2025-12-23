@@ -1,0 +1,42 @@
+{
+  "_description": "Ground truth annotations for ELM JSON validation against Clinical Practice Guidelines",
+  "_instructions": "For each ELM file, specify the expected validation result and the CPG to validate against",
+  "_fields": {
+    "valid": "boolean - Does the ELM correctly implement the CPG recommendation?",
+    "cpg_file": "string - Filename of the Clinical Practice Guideline (in same folder)",
+    "expected_errors": "array - List of expected error keywords/patterns if invalid",
+    "expected_warnings": "array - List of expected warning keywords/patterns",
+    "notes": "string - Optional notes about this test case"
+  },
+  "test_cases": {
+    "USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json": {
+      "valid": true,
+      "cpg_file": "USPSTF_Statin_Use_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "USPSTF Statin Use for Primary Prevention of CVD - should correctly implement the recommendation logic"
+    },
+    "Condition_and_Medication_Count_FHIRv401.json": {
+      "valid": true,
+      "cpg_file": "Condition_Medication_Count_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Utility library for counting confirmed conditions and medication requests - should correctly filter conditions by verificationStatus=confirmed and count all MedicationRequests"
+    },
+    "Prans-Diabetes-Screening-Alert.json": {
+      "valid": false,
+      "cpg_file": "USPSTF_Diabetes_Screening_CPG.md",
+      "expected_errors": [
+        "wrong age range",
+        "missing BMI",
+        "gender exclusion",
+        "OR instead of AND",
+        "hypertension"
+      ],
+      "expected_warnings": [
+        "existing diabetes"
+      ],
+      "notes": "INVALID: This implementation has multiple errors - (1) Uses age 45-75 instead of USPSTF recommended 35-70, (2) Uses OR logic instead of AND for inclusion criteria, (3) Incorrectly excludes females from screening, (4) Uses hypertension as risk factor instead of BMI/obesity, (5) Missing BMI check entirely, (6) No exclusion for existing diabetes diagnosis"
+    }
+  }
+}
