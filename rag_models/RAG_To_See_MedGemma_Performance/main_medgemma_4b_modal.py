@@ -95,7 +95,7 @@ def generate_summary(
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_compute_dtype=torch.float16,  # <-- changed from bfloat16
     )
 
     processor = AutoProcessor.from_pretrained(MODEL_NAME)
@@ -127,12 +127,15 @@ def generate_summary(
 
         input_len = inputs["input_ids"].shape[-1]
 
+        # Stable generation with top-p and top-k
         with torch.inference_mode():
             generation = model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
-                do_sample=True,
-                temperature=temperature,
+                do_sample=False,
+                temperature=max(temperature, 0.3),  # avoid very low temperature
+                top_p=1.0,
+                top_k=5,
             )
 
         generation = generation[0][input_len:]
