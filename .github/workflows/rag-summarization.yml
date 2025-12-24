@@ -12,7 +12,11 @@ on:
         type: boolean
         default: true
       run_medgemma:
-        description: 'Run MedGemma 4B-IT model'
+        description: 'Run MedGemma 4B-IT model (currently broken)'
+        type: boolean
+        default: false
+      run_groq:
+        description: 'Run Groq (GPT-OSS-20B) model'
         type: boolean
         default: true
       run_evaluation:
@@ -181,15 +185,92 @@ jobs:
           retention-days: 90
 
   # ============================================
-  # JOB 3: Compare Results (Optional - runs after both complete)
+  # JOB 3: Groq (GPT-OSS-20B) RAG Summarization
+  # ============================================
+  groq-summarization:
+    name: Groq GPT-OSS-20B Summarization
+    if: github.event.inputs.run_groq != 'false'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Modal
+        run: |
+          pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Set patient name
+        id: patient
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
+          else
+            echo "name=Rakesh" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Groq GPT-OSS-20B RAG Summarization
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          cd pranathi_RAG
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+
+          echo "🚀 Running Groq GPT-OSS-20B summarization for patient: $PATIENT_NAME"
+
+          modal run main_groq.py \
+            --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_${PATIENT_LOWER}.txt" \
+            --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_${PATIENT_LOWER}.txt" \
+            --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_${PATIENT_LOWER}.txt" \
+            --patient-name="$PATIENT_NAME" \
+            --output-dir="results"
+
+      - name: Display Groq GPT-OSS-20B Results
+        run: |
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          RESULT_FILE="pranathi_RAG/results/evaluation_${PATIENT_NAME}_groq.txt"
+
+          echo "## 🚀 Groq GPT-OSS-20B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f "$RESULT_FILE" ]; then
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Groq GPT-OSS-20B Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: groq-results-${{ steps.patient.outputs.name }}
+          path: pranathi_RAG/results/
+          retention-days: 90
+
+  # ============================================
+  # JOB 4: Compare Results (Optional - runs after all complete)
   # ============================================
   compare-model-results:
     name: Compare Model Results
-    needs: [llama-3-1-8b-summarization, medgemma-4b-it-summarization]
+    needs: [llama-3-1-8b-summarization, medgemma-4b-it-summarization, groq-summarization]
     if: |
-      always() && 
+      always() &&
       github.event.inputs.run_evaluation != 'false' &&
-      (needs.llama-3-1-8b-summarization.result == 'success' || needs.medgemma-4b-it-summarization.result == 'success')
+      (needs.llama-3-1-8b-summarization.result == 'success' || needs.medgemma-4b-it-summarization.result == 'success' || needs.groq-summarization.result == 'success')
     runs-on: ubuntu-latest
 
     steps:
@@ -211,7 +292,9 @@ jobs:
           for file in all-results/evaluation_*.txt; do
             if [ -f "$file" ]; then
               # Detect model type
-              if grep -q "Llama" "$file" 2>/dev/null; then
+              if grep -q "Groq" "$file" 2>/dev/null; then
+                MODEL="Groq GPT-OSS-20B"
+              elif grep -q "Llama" "$file" 2>/dev/null; then
                 MODEL="Llama 3.1 8B"
               elif grep -q "MedGemma" "$file" 2>/dev/null; then
                 MODEL="MedGemma 4B-IT"
