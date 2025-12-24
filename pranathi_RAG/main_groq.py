@@ -101,27 +101,13 @@ Transcript:
 
 Primary Disease:"""
 
-    try:
-        disease_response = client.chat.completions.create(
-            model=MODEL_NAME,
-            messages=[{"role": "user", "content": disease_prompt}],
-            temperature=0.1,
-            max_tokens=20,
-        )
-        detected_disease = disease_response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"⚠️ Groq disease extraction failed: {e}")
-        print("Falling back to keyword detection...")
-        # Fallback to simple keyword detection
-        transcript_lower = transcript_text.lower()
-        if any(kw in transcript_lower for kw in ["copd", "chronic obstructive", "emphysema"]):
-            detected_disease = "COPD"
-        elif any(kw in transcript_lower for kw in ["diabetes", "diabetic", "blood sugar"]):
-            detected_disease = "Diabetes"
-        elif any(kw in transcript_lower for kw in ["hypertension", "high blood pressure"]):
-            detected_disease = "Hypertension"
-        else:
-            detected_disease = "General"
+    disease_response = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": disease_prompt}],
+        temperature=0.1,
+        max_tokens=50,
+    )
+    detected_disease = disease_response.choices[0].message.content.strip()
 
     print(f"✅ Detected Disease: {detected_disease}")
 
@@ -165,7 +151,7 @@ Primary Disease:"""
     start_gen = time.time()
 
     # Build prompt
-    prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in SOAP format by extracting information from the provided transcript and medical records.
+    prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in narrative prose format by extracting information from the provided transcript and medical records.
 
 ### INPUT DATA
 
@@ -175,20 +161,27 @@ Primary Disease:"""
 **OPENEMR EXTRACT** (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-**SCHEMA GUIDE** (Required sections and structure):
+**SCHEMA GUIDE** (Reference sections to include):
 {schema_context}
 
+### OUTPUT FORMAT REQUIREMENTS
+- Generate a NARRATIVE TEXT document, NOT JSON or structured data
+- Use clear section headers (e.g., "Patient Information", "Chief Complaint", "History of Present Illness")
+- Write in complete sentences and paragraphs
+- Use professional medical documentation prose style
+- Format similar to a hospital discharge summary
+
 ### INSTRUCTIONS
-1. Follow the EXACT structure and sections shown in the SCHEMA GUIDE above
-2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT to fill each section
-3. Use professional medical documentation style with bullet points for lists
-4. If information for a section is missing, write "Information not available"
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
 5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
 6. Do NOT include any meta-commentary, explanations, or references to this prompt
-7. Do NOT hallucinate or invent information not present in the inputs
-8. Start your output directly with the formatted medical summary
+7. Do NOT output JSON, XML, or any structured data format
+8. Do NOT hallucinate or invent information not present in the inputs
 
-Generate the medical summary now, beginning with the Patient Information section:"""
+Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
 
     # Calculate input tokens
     try:
