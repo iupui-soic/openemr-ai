@@ -4,9 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       patient_name:
-        description: 'Patient name (e.g., Rakesh, Toma, Taylor)'
+        description: 'Patient name (e.g., Rakesh, Toma, Taylor, Heath, Nicholas, Bhavana)'
         type: string
         default: 'Rakesh'
+      run_llama:
+        description: 'Run Llama 3.1 8B model'
+        type: boolean
+        default: true
+      run_medgemma:
+        description: 'Run MedGemma 4B-IT model'
+        type: boolean
+        default: true
       run_evaluation:
         description: 'Run evaluation metrics'
         type: boolean
@@ -14,12 +22,18 @@ on:
   push:
     paths:
       - 'pranathi_RAG/**'
+      - 'rag_models/RAG_To_See_MedGemma_Performance/**'
       - '.github/workflows/rag-summarization.yml'
-      - 'rag_models/RAG_To_See_MedGemma_Performance/data/**'
 
+# ============================================
+# JOB 1: Llama 3.1 8B RAG Summarization
+# ============================================
 jobs:
-  generate-summary:
+  llama-3-1-8b-summarization:
+    name: Llama 3.1 8B Summarization
+    if: github.event.inputs.run_llama != 'false'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -49,7 +63,7 @@ jobs:
             echo "name=Rakesh" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run RAG Summarization on Modal
+      - name: Run Llama 3.1 8B RAG Summarization
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
@@ -57,6 +71,8 @@ jobs:
           PATIENT_NAME=${{ steps.patient.outputs.name }}
           PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
 
+          echo "🚀 Running Llama 3.1 8B summarization for patient: $PATIENT_NAME"
+          
           modal run main.py \
             --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_${PATIENT_LOWER}.txt" \
             --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_${PATIENT_LOWER}.txt" \
@@ -64,54 +80,170 @@ jobs:
             --patient-name="$PATIENT_NAME" \
             --output-dir="results"
 
-      - name: Display results
+      - name: Display Llama 3.1 8B Results
         run: |
           PATIENT_NAME=${{ steps.patient.outputs.name }}
-          if [ -f "pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt" ]; then
-            echo "## Summary Generation Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-            head -100 "pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt" >> $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          RESULT_FILE="pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt"
+          
+          echo "## 🦙 Llama 3.1 8B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULT_FILE" ]; then
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            head -50 "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
           else
-            echo "❌ Results file not found" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
           fi
 
-      - name: Upload results artifact
+      - name: Upload Llama 3.1 8B Results
         uses: actions/upload-artifact@v4
         with:
-          name: rag-summary-${{ steps.patient.outputs.name }}
+          name: llama-3-1-8b-results-${{ steps.patient.outputs.name }}
           path: pranathi_RAG/results/
           retention-days: 90
 
-  compare-results:
-    needs: generate-summary
-    if: always() && github.event.inputs.run_evaluation != 'false'
+  # ============================================
+  # JOB 2: MedGemma 4B-IT RAG Summarization
+  # ============================================
+  medgemma-4b-it-summarization:
+    name: MedGemma 4B-IT Summarization
+    if: github.event.inputs.run_medgemma != 'false'
     runs-on: ubuntu-latest
+
     steps:
-      - name: Download results
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Modal
+        run: |
+          pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Set patient name
+        id: patient
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
+          else
+            echo "name=Rakesh" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run MedGemma 4B-IT RAG Summarization
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          cd rag_models/RAG_To_See_MedGemma_Performance
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+
+          echo "🚀 Running MedGemma 4B-IT summarization for patient: $PATIENT_NAME"
+          
+          modal run main_medgemma_4b_modal.py \
+            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
+            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
+            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
+            --patient-name="$PATIENT_NAME" \
+            --output-dir="results"
+
+      - name: Display MedGemma 4B-IT Results
+        run: |
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}.txt"
+          
+          echo "## 🏥 MedGemma 4B-IT Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULT_FILE" ]; then
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            head -50 "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload MedGemma 4B-IT Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: medgemma-4b-it-results-${{ steps.patient.outputs.name }}
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/
+          retention-days: 90
+
+  # ============================================
+  # JOB 3: Compare Results (Optional - runs after both complete)
+  # ============================================
+  compare-model-results:
+    name: Compare Model Results
+    needs: [llama-3-1-8b-summarization, medgemma-4b-it-summarization]
+    if: |
+      always() && 
+      github.event.inputs.run_evaluation != 'false' &&
+      (needs.llama-3-1-8b-summarization.result == 'success' || needs.medgemma-4b-it-summarization.result == 'success')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
-          path: results
-          pattern: rag-summary-*
+          path: all-results
+          pattern: '*-results-*'
           merge-multiple: true
 
-      - name: Generate comparison summary
+      - name: Generate Comparison Report
         run: |
-          echo "## RAG Summarization Evaluation" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Model Comparison Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Model | BLEU | ROUGE-L | SBERT | BERTScore F1 | Total Time |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|------|---------|-------|--------------|------------|" >> $GITHUB_STEP_SUMMARY
 
-          for file in results/evaluation_*.txt; do
+          # Process each result file
+          for file in all-results/evaluation_*.txt; do
             if [ -f "$file" ]; then
-              patient=$(basename "$file" | sed 's/evaluation_//' | sed 's/.txt//')
-              echo "### Patient: $patient" >> $GITHUB_STEP_SUMMARY
-              echo "" >> $GITHUB_STEP_SUMMARY
+              # Detect model type
+              if grep -q "Llama" "$file" 2>/dev/null; then
+                MODEL="Llama 3.1 8B"
+              elif grep -q "MedGemma" "$file" 2>/dev/null; then
+                MODEL="MedGemma 4B-IT"
+              else
+                MODEL="Unknown"
+              fi
 
               # Extract metrics
-              if grep -q "BLEU Score" "$file"; then
-                echo "#### Metrics" >> $GITHUB_STEP_SUMMARY
-                grep -E "(BLEU Score|ROUGE-L|SBERT|BERTScore|Total Time|Total Tokens)" "$file" >> $GITHUB_STEP_SUMMARY
-                echo "" >> $GITHUB_STEP_SUMMARY
-              fi
+              BLEU=$(grep "BLEU Score" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
+              ROUGE=$(grep "ROUGE-L" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
+              SBERT=$(grep "SBERT" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
+              BERT=$(grep "BERTScore" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
+              TIME=$(grep "Total Time" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
+
+              echo "| $MODEL | $BLEU | $ROUGE | $SBERT | $BERT | $TIME |" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📋 Detailed Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Show detailed results for each model
+          for file in all-results/evaluation_*.txt; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              echo "#### $filename" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              head -30 "$file" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
             fi
           done
