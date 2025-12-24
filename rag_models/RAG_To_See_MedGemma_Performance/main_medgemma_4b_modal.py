@@ -84,7 +84,6 @@ def generate_summary(
     print(f"🔹 Loading MedGemma 4B-IT pipeline...")
     start_load = time.time()
 
-    # Use pipeline approach (matches working Colab code)
     pipe = pipeline(
         "text-generation",
         model=MODEL_NAME,
@@ -96,9 +95,9 @@ def generate_summary(
     print(f"⏱️ Model loading took {load_time:.2f}s")
 
     # Helper function using pipeline
-    def generate_text(messages: list, max_new_tokens: int = 500) -> str:
+    def generate_text(messages: list, max_new_tokens: int = 500,temperature: float = 0.3) -> str:
         """Generate text using the pipeline."""
-        output = pipe(messages, max_new_tokens=max_new_tokens)
+        output = pipe(messages, max_new_tokens=max_new_tokens, temperature=temperature)
         return output[0]["generated_text"][-1]["content"]
 
     # ==============================
@@ -120,7 +119,7 @@ Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"
 If no specific disease is mentioned, return "General".
 
 Transcript:
-{transcript_text[:2000]}
+{transcript_text}
 
 Primary Disease:"""
         }
@@ -162,23 +161,17 @@ Primary Disease:"""
         schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
 
     retrieval_time = time.time() - start_retrieval
-    print(f"⏱️ Disease extraction and retrieval took {retrieval_time:.2f}s")
+    print(f"Disease extraction and retrieval took {retrieval_time:.2f}s")
 
     # ==============================
     # 5. GENERATE SUMMARY
     # ==============================
-    print("🔹 Generating summary...")
+    print("Generating summary...")
     start_gen = time.time()
 
-    # Truncate inputs to prevent context overflow
-    max_transcript_len = 5000
-    max_openemr_len = 1500
-
-    transcript_for_prompt = transcript_text[:max_transcript_len]
-    openemr_for_prompt = openemr_text[:max_openemr_len] if openemr_text else ""
-
-    if len(transcript_text) > max_transcript_len:
-        print(f"⚠️ Truncated transcript from {len(transcript_text)} to {max_transcript_len} chars")
+    # Use full transcript and OpenEMR text (no truncation)
+    transcript_for_prompt = transcript_text
+    openemr_for_prompt = openemr_text if openemr_text else ""
 
     summary_messages = [
         {
@@ -216,11 +209,9 @@ Primary Disease:"""
 8. Do NOT hallucinate or invent information not present in the inputs
 
 Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
-
         }
     ]
 
-    # Calculate input tokens (approximate)
     prompt_text = summary_messages[0]["content"] + summary_messages[1]["content"]
     try:
         encoding = tiktoken.encoding_for_model("gpt-4")
@@ -233,7 +224,6 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
     # Generate using pipeline
     generated_text = generate_text(summary_messages, max_new_tokens=2048)
 
-    # Calculate output tokens
     try:
         output_tokens = len(encoding.encode(generated_text))
     except:
@@ -278,7 +268,6 @@ def evaluate_summary(generated: str, reference: str) -> dict:
 
     print("🔹 Computing evaluation metrics...")
 
-    # Handle empty generated text
     if not generated or not generated.strip():
         print("⚠️ Warning: Generated text is empty, returning zero scores")
         return {
