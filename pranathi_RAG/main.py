@@ -28,6 +28,9 @@ image = (
         "huggingface-hub>=0.20.0",
         "vllm>=0.3.0",
         "tiktoken>=0.5.0",
+        "nltk>=3.8.1",
+        "rouge-score>=0.1.2",
+        "bert-score>=0.3.13",
     )
 )
 
