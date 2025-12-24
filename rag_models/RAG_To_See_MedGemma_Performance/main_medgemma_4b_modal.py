@@ -23,7 +23,7 @@ image = (
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
-        "transformers>=4.37.0",
+        "transformers>=4.45.0",
         "torch>=2.1.0",
         "accelerate>=0.25.0",
         "bitsandbytes>=0.41.0",
@@ -54,18 +54,10 @@ def generate_summary(
 ) -> dict:
     """
     Generate SOAP-format medical summary from transcript using RAG.
-
-    Args:
-        transcript_text: Doctor-patient conversation transcript
-        openemr_text: OpenEMR extract (optional)
-        patient_name: Patient name for logging
-
-    Returns:
-        dict with summary, retrieval info, and metrics
     """
     import time
     import torch
-    from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndBytesConfig
+    from transformers import pipeline
     from langchain_huggingface import HuggingFaceEmbeddings
     from langchain_chroma import Chroma
     from sentence_transformers import SentenceTransformer, util
@@ -87,59 +79,26 @@ def generate_summary(
     )
 
     # ==============================
-    # 2. LOAD MEDGEMMA 4B-IT MODEL
+    # 2. LOAD MEDGEMMA 4B-IT PIPELINE
     # ==============================
-    print(f"🔹 Loading MedGemma 4B-IT model with 4-bit quantization...")
+    print(f"🔹 Loading MedGemma 4B-IT pipeline...")
     start_load = time.time()
 
-    quantization_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.float16,  # <-- changed from bfloat16
-    )
-
-    processor = AutoProcessor.from_pretrained(MODEL_NAME)
-    model = AutoModelForImageTextToText.from_pretrained(
-        MODEL_NAME,
+    pipe = pipeline(
+        "text-generation",
+        model=MODEL_NAME,
+        torch_dtype=torch.bfloat16,
         device_map="auto",
-        quantization_config=quantization_config,
     )
 
     load_time = time.time() - start_load
     print(f"⏱️ Model loading took {load_time:.2f}s")
 
-    # Helper function for MedGemma generation
-    def generate_text(prompt: str, max_new_tokens: int = 4096, temperature: float = 0.3) -> str:
-        messages = [
-            {
-                "role": "user",
-                "content": [{"type": "text", "text": prompt}]
-            }
-        ]
-
-        inputs = processor.apply_chat_template(
-            messages,
-            add_generation_prompt=True,
-            tokenize=True,
-            return_dict=True,
-            return_tensors="pt"
-        ).to(model.device)
-
-        input_len = inputs["input_ids"].shape[-1]
-
-        # Stable generation with top-p and top-k
-        with torch.inference_mode():
-            generation = model.generate(
-                **inputs,
-                max_new_tokens=max_new_tokens,
-                do_sample=False,
-                temperature=max(temperature, 0.3),  # avoid very low temperature
-                top_p=1.0,
-                top_k=5,
-            )
-
-        generation = generation[0][input_len:]
-        return processor.decode(generation, skip_special_tokens=True)
+    # Helper function using pipeline
+    def generate_text(messages: list, max_new_tokens: int = 500,temperature: float = 0.3) -> str:
+        """Generate text using the pipeline."""
+        output = pipe(messages, max_new_tokens=max_new_tokens, temperature=temperature)
+        return output[0]["generated_text"][-1]["content"]
 
     # ==============================
     # 3. EXTRACT DISEASE USING LLM
@@ -147,16 +106,31 @@ def generate_summary(
     print("🔹 Extracting disease from transcript using MedGemma 4B-IT...")
     start_retrieval = time.time()
 
-    disease_prompt = f"""You are a medical expert. Read the following doctor-patient conversation transcript and identify the PRIMARY medical condition or disease being discussed.
+    disease_messages = [
+        {
+            "role": "system",
+            "content": "You are a medical expert. Identify the primary medical condition from clinical conversations. Respond with ONLY the disease name."
+        },
+        {
+            "role": "user",
+            "content": f"""Read this transcript and identify the PRIMARY medical condition being discussed.
 
-Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"). If multiple conditions are discussed, return the most prominent one. If no specific disease is mentioned, return "General".
+Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"). 
+If no specific disease is mentioned, return "General".
 
 Transcript:
-{transcript_text[:2000]}
+{transcript_text}
 
 Primary Disease:"""
+        }
+    ]
 
-    detected_disease = generate_text(disease_prompt, max_new_tokens=20, temperature=0.1).strip()
+    detected_disease = generate_text(disease_messages, max_new_tokens=20).strip()
+
+    # Clean up
+    if not detected_disease:
+        detected_disease = "General"
+    detected_disease = detected_disease.split('\n')[0].split(',')[0].strip()
 
     print(f"✅ Detected Disease: {detected_disease}")
 
@@ -165,21 +139,17 @@ Primary Disease:"""
     # ==============================
     print("🔹 Retrieving relevant schemas from vector DB...")
 
-    # Semantic retrieval from vector DB
     sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
     collection_data = vector_store.get(include=["metadatas", "documents"])
     all_metadatas = collection_data["metadatas"]
-    all_ids = collection_data["ids"]
     all_docs = collection_data["documents"]
 
-    # Encode and find top matches
     metadata_diseases = [m.get("diseases", "Unspecified") for m in all_metadatas]
     target_emb = sbert_model.encode(detected_disease, convert_to_tensor=True)
     candidate_embs = sbert_model.encode(metadata_diseases, convert_to_tensor=True)
     cosine_scores = util.cos_sim(target_emb, candidate_embs)[0]
 
-    # Get top 2 schemas
     k = min(2, len(cosine_scores))
     top_k_result = cosine_scores.topk(k)
     top_indices = top_k_result.indices.tolist()
@@ -191,53 +161,69 @@ Primary Disease:"""
         schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
 
     retrieval_time = time.time() - start_retrieval
-    print(f"⏱️ Disease extraction and retrieval took {retrieval_time:.2f}s")
+    print(f"Disease extraction and retrieval took {retrieval_time:.2f}s")
 
     # ==============================
     # 5. GENERATE SUMMARY
     # ==============================
-    print("🔹 Generating summary...")
+    print("Generating summary...")
     start_gen = time.time()
 
-    # Build prompt
-    prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in SOAP format by extracting information from the provided transcript and medical records.
+    # Use full transcript and OpenEMR text (no truncation)
+    transcript_for_prompt = transcript_text
+    openemr_for_prompt = openemr_text if openemr_text else ""
 
-### INPUT DATA
+    summary_messages = [
+        {
+            "role": "system",
+            "content": "You are an expert medical scribe specialized in clinical documentation. Generate comprehensive SOAP-format medical summaries."
+        },
+        {
+            "role": "user",
+            "content": f"""Generate a comprehensive medical summary in SOAP format from the following data:
 
-**TRANSCRIPT** (Doctor-patient conversation):
-{transcript_text}
+### TRANSCRIPT (Doctor-patient conversation):
+{transcript_for_prompt}
 
-**OPENEMR EXTRACT** (Electronic health record):
-{openemr_text if openemr_text else "No OpenEMR data available."}
+### OPENEMR EXTRACT (Electronic health record):
+{openemr_for_prompt if openemr_for_prompt else "No OpenEMR data available."}
 
-**SCHEMA GUIDE** (Required sections and structure):
+### SCHEMA GUIDE (Required sections and structure):
 {schema_context}
 
+### OUTPUT FORMAT REQUIREMENTS
+- Generate a NARRATIVE TEXT document, NOT JSON or structured data
+- Use clear section headers (e.g., "Patient Information", "Chief Complaint", "History of Present Illness")
+- Write in complete sentences and paragraphs
+- Use professional medical documentation prose style
+- Format similar to a hospital discharge summary
+
 ### INSTRUCTIONS
-1. Follow the EXACT structure and sections shown in the SCHEMA GUIDE above
-2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT to fill each section
-3. Use professional medical documentation style with bullet points for lists
-4. If information for a section is missing, write "Information not available"
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
 5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
 6. Do NOT include any meta-commentary, explanations, or references to this prompt
-7. Do NOT hallucinate or invent information not present in the inputs
-8. Start your output directly with the formatted medical summary
+7. Do NOT output JSON, XML, or any structured data format
+8. Do NOT hallucinate or invent information not present in the inputs
 
-Generate the medical summary now, beginning with the Patient Information section:"""
+Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
+        }
+    ]
 
-    # Calculate input tokens
+    prompt_text = summary_messages[0]["content"] + summary_messages[1]["content"]
     try:
         encoding = tiktoken.encoding_for_model("gpt-4")
-        input_tokens = len(encoding.encode(prompt))
+        input_tokens = len(encoding.encode(prompt_text))
     except:
-        input_tokens = int(len(prompt.split()) * 1.3)
+        input_tokens = int(len(prompt_text.split()) * 1.3)
 
     print(f"📊 Input tokens: {input_tokens:,}")
 
-    # Generate using MedGemma 4B-IT
-    generated_text = generate_text(prompt, max_new_tokens=4096, temperature=0.3)
+    # Generate using pipeline
+    generated_text = generate_text(summary_messages, max_new_tokens=2048)
 
-    # Calculate output tokens
     try:
         output_tokens = len(encoding.encode(generated_text))
     except:
@@ -268,23 +254,13 @@ Generate the medical summary now, beginning with the Patient Information section
     volumes={"/vectordb": vectordb_volume},
 )
 def evaluate_summary(generated: str, reference: str) -> dict:
-    """
-    Evaluate generated summary against reference using multiple metrics.
-
-    Args:
-        generated: Generated summary text
-        reference: Reference summary text
-
-    Returns:
-        dict with BLEU, ROUGE-L, SBERT coherence, and BERTScore
-    """
+    """Evaluate generated summary against reference using multiple metrics."""
     from nltk.translate.bleu_score import sentence_bleu
     from rouge_score import rouge_scorer
     from sentence_transformers import SentenceTransformer, util
     from bert_score import score
     import nltk
 
-    # Download NLTK data if needed
     try:
         nltk.data.find('tokenizers/punkt')
     except LookupError:
@@ -292,20 +268,25 @@ def evaluate_summary(generated: str, reference: str) -> dict:
 
     print("🔹 Computing evaluation metrics...")
 
-    # BLEU Score
+    if not generated or not generated.strip():
+        print("⚠️ Warning: Generated text is empty, returning zero scores")
+        return {
+            "bleu": 0.0,
+            "rouge_l": 0.0,
+            "sbert_coherence": 0.0,
+            "bert_f1": 0.0,
+        }
+
     bleu = sentence_bleu([reference.split()], generated.split())
 
-    # ROUGE-L
-    scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
-    rouge_l = scorer.score(reference, generated)["rougeL"].fmeasure
+    scorer_rouge = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
+    rouge_l = scorer_rouge.score(reference, generated)["rougeL"].fmeasure
 
-    # SBERT Coherence
     sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
     ref_emb = sbert_model.encode(reference, convert_to_tensor=True)
     gen_emb = sbert_model.encode(generated, convert_to_tensor=True)
     sbert_coherence = util.cos_sim(ref_emb, gen_emb).item()
 
-    # BERTScore
     P, R, F1 = score([generated], [reference], lang="en", verbose=False)
     bert_f1 = F1.mean().item()
 
@@ -332,28 +313,17 @@ def main(
         patient_name: str = "Rakesh",
         output_dir: str = "results",
 ):
-    """
-    Main function to run summarization and evaluation.
-
-    Args:
-        transcript_path: Path to transcript file
-        openemr_path: Path to OpenEMR file
-        reference_path: Path to reference summary
-        patient_name: Patient name
-        output_dir: Output directory for results
-    """
+    """Main function to run summarization and evaluation."""
     from pathlib import Path
 
     print("=" * 60)
     print(f"Medical Transcript Summarization (MedGemma 4B-IT) - {patient_name}")
     print("=" * 60)
 
-    # Read input files
     transcript_text = Path(transcript_path).read_text(encoding="utf-8")
     openemr_text = Path(openemr_path).read_text(encoding="utf-8") if Path(openemr_path).exists() else ""
     reference_text = Path(reference_path).read_text(encoding="utf-8") if Path(reference_path).exists() else ""
 
-    # Generate summary
     print("\n🚀 Generating summary...")
     result = generate_summary.remote(
         transcript_text=transcript_text,
@@ -361,7 +331,6 @@ def main(
         patient_name=patient_name,
     )
 
-    # Evaluate if reference exists
     eval_results = {}
     if reference_text:
         print("\n🔍 Evaluating summary...")
@@ -370,7 +339,6 @@ def main(
             reference=reference_text,
         )
 
-    # Save results
     output_path = Path(output_dir)
     output_path.mkdir(exist_ok=True)
     result_file = output_path / f"evaluation_{patient_name}.txt"
@@ -398,13 +366,16 @@ def main(
             f.write(f"BERTScore F1: {eval_results['bert_f1']:.4f}\n\n")
 
         f.write("### GENERATED SUMMARY ###\n")
-        f.write(result["summary"])
+        f.write(result["summary"] if result["summary"] else "[No summary generated]")
 
     print(f"\n✅ Results saved to: {result_file}")
     print("\n" + "=" * 60)
     print("Summary Preview:")
     print("=" * 60)
-    print(result["summary"][:500] + "..." if len(result["summary"]) > 500 else result["summary"])
+    if result["summary"]:
+        print(result["summary"][:500] + "..." if len(result["summary"]) > 500 else result["summary"])
+    else:
+        print("[No summary generated]")
 
     if eval_results:
         print("\n" + "=" * 60)
