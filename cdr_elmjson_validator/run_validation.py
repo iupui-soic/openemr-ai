@@ -32,6 +32,7 @@ MODELS = [
     "gemma-3-4b",
     "medgemma-4b",
     "llama-3.1-8b",
+    "gemma-3-270m",
 ]
 
 DEFAULT_MODEL = "llama-3.2-1b"

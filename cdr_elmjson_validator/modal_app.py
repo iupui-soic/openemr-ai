@@ -460,6 +460,27 @@ def validate_llama_3_1_8b(data: dict) -> dict:
     )
 
 
+@app.function(
+    image=image,
+    gpu="T4",
+    timeout=300,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
+def validate_gemma_270m(data: dict) -> dict:
+    """Validate ELM JSON with Gemma 3 270M."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+
+    return run_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="google/gemma-3-270m-it",
+        model_id="gemma-3-270m"
+    )
+
+
 # ============================================
 # Batch validation functions (process multiple files with single model load)
 # ============================================
@@ -567,6 +588,20 @@ def validate_batch_llama_3_1_8b(items: list) -> list:
     return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b")
 
 
+@app.function(
+    image=image,
+    gpu="T4",
+    timeout=1800,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
+def validate_batch_gemma_270m(items: list) -> list:
+    """Batch validate ELM JSON files with Gemma 3 270M."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+    return run_batch_validation(items, "google/gemma-3-270m-it", "gemma-3-270m")
+
+
 # Model function registry (single file)
 MODEL_FUNCTIONS = {
     "llama-3.2-1b": validate_llama_1b,
@@ -577,6 +612,7 @@ MODEL_FUNCTIONS = {
     "gemma-3-4b": validate_gemma,
     "medgemma-4b": validate_medgemma,
     "llama-3.1-8b": validate_llama_3_1_8b,
+    "gemma-3-270m": validate_gemma_270m,
 }
 
 # Model function registry (batch processing)
@@ -589,6 +625,7 @@ BATCH_MODEL_FUNCTIONS = {
     "gemma-3-4b": validate_batch_gemma,
     "medgemma-4b": validate_batch_medgemma,
     "llama-3.1-8b": validate_batch_llama_3_1_8b,
+    "gemma-3-270m": validate_batch_gemma_270m,
 }
 
 
