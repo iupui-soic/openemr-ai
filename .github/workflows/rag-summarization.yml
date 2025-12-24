@@ -50,6 +50,8 @@ jobs:
           fi
 
       - name: Run RAG Summarization on Modal
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           cd pranathi_RAG
           PATIENT_NAME=${{ steps.patient.outputs.name }}

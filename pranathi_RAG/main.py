@@ -41,7 +41,7 @@ CHROMA_PATH = "/vectordb/chroma_schema_improved"
     gpu="A10G",  # A10G is good for Llama 3.1 8B
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
-    secrets=[modal.Secret.from_name("huggingface-secret")],  # For accessing Llama model
+    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
 def generate_summary(
     transcript_text: str,
