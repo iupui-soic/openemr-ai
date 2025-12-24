@@ -85,27 +85,52 @@ def generate_summary(
     )
 
     # ==============================
-    # 2. DISEASE EXTRACTION & RETRIEVAL
+    # 2. LOAD LLAMA MODEL
     # ==============================
-    print("🔹 Extracting disease from transcript...")
+    print("🔹 Loading Llama 3.1 8B model...")
+    start_load = time.time()
+
+    llm = LLM(
+        model=MODEL_NAME,
+        dtype="float16",
+        gpu_memory_utilization=0.9,
+        max_model_len=8192,
+    )
+
+    load_time = time.time() - start_load
+    print(f"⏱️ Model loading took {load_time:.2f}s")
+
+    # ==============================
+    # 3. EXTRACT DISEASE USING LLM
+    # ==============================
+    print("🔹 Extracting disease from transcript using LLM...")
     start_retrieval = time.time()
 
-    # Simple keyword-based disease extraction (you can enhance this)
-    diseases_keywords = {
-        "COPD": ["copd", "chronic obstructive", "emphysema", "chronic bronchitis"],
-        "Diabetes": ["diabetes", "diabetic", "blood sugar", "glucose"],
-        "Hypertension": ["hypertension", "high blood pressure", "htn"],
-        "Asthma": ["asthma", "wheezing", "bronchospasm"],
-    }
+    disease_prompt = f"""You are a medical expert. Read the following doctor-patient conversation transcript and identify the PRIMARY medical condition or disease being discussed.
 
-    transcript_lower = transcript_text.lower()
-    detected_disease = "General"
-    for disease, keywords in diseases_keywords.items():
-        if any(kw in transcript_lower for kw in keywords):
-            detected_disease = disease
-            break
+Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"). If multiple conditions are discussed, return the most prominent one. If no specific disease is mentioned, return "General".
+
+Transcript:
+{transcript_text[:2000]}
+
+Primary Disease:"""
+
+    sampling_params_disease = SamplingParams(
+        temperature=0.1,  # Low temperature for factual extraction
+        top_p=0.9,
+        max_tokens=20,  # Short output
+        stop=["</s>", "[/INST]", "\n"],
+    )
+
+    disease_output = llm.generate([disease_prompt], sampling_params_disease)
+    detected_disease = disease_output[0].outputs[0].text.strip()
 
     print(f"✅ Detected Disease: {detected_disease}")
+
+    # ==============================
+    # 4. RETRIEVE SCHEMAS FROM VECTOR DB
+    # ==============================
+    print("🔹 Retrieving relevant schemas from vector DB...")
 
     # Semantic retrieval from vector DB
     sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -133,26 +158,10 @@ def generate_summary(
         schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
 
     retrieval_time = time.time() - start_retrieval
-    print(f"⏱️ Retrieval took {retrieval_time:.2f}s")
+    print(f"⏱️ Disease extraction and retrieval took {retrieval_time:.2f}s")
 
     # ==============================
-    # 3. LOAD LLAMA MODEL
-    # ==============================
-    print("🔹 Loading Llama 3.1 8B model...")
-    start_load = time.time()
-
-    llm = LLM(
-        model=MODEL_NAME,
-        dtype="float16",
-        gpu_memory_utilization=0.9,
-        max_model_len=8192,
-    )
-
-    load_time = time.time() - start_load
-    print(f"⏱️ Model loading took {load_time:.2f}s")
-
-    # ==============================
-    # 4. GENERATE SUMMARY
+    # 5. GENERATE SUMMARY
     # ==============================
     print("🔹 Generating summary...")
     start_gen = time.time()
