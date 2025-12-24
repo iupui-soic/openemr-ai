@@ -439,6 +439,27 @@ def validate_medgemma(data: dict) -> dict:
     )
 
 
+@app.function(
+    image=image,
+    gpu="T4",
+    timeout=300,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
+def validate_llama_3_1_8b(data: dict) -> dict:
+    """Validate ELM JSON with Llama 3.1 8B."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+
+    return run_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="meta-llama/Llama-3.1-8B-Instruct",
+        model_id="llama-3.1-8b"
+    )
+
+
 # ============================================
 # Batch validation functions (process multiple files with single model load)
 # ============================================
@@ -532,6 +553,20 @@ def validate_batch_medgemma(items: list) -> list:
     return run_batch_validation(items, "google/medgemma-4b-it", "medgemma-4b")
 
 
+@app.function(
+    image=image,
+    gpu="T4",
+    timeout=1800,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
+def validate_batch_llama_3_1_8b(items: list) -> list:
+    """Batch validate ELM JSON files with Llama 3.1 8B."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+    return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b")
+
+
 # Model function registry (single file)
 MODEL_FUNCTIONS = {
     "llama-3.2-1b": validate_llama_1b,
@@ -541,6 +576,7 @@ MODEL_FUNCTIONS = {
     "phi-3-mini": validate_phi3,
     "gemma-3-4b": validate_gemma,
     "medgemma-4b": validate_medgemma,
+    "llama-3.1-8b": validate_llama_3_1_8b,
 }
 
 # Model function registry (batch processing)
@@ -552,6 +588,7 @@ BATCH_MODEL_FUNCTIONS = {
     "phi-3-mini": validate_batch_phi3,
     "gemma-3-4b": validate_batch_gemma,
     "medgemma-4b": validate_batch_medgemma,
+    "llama-3.1-8b": validate_batch_llama_3_1_8b,
 }
 
 
