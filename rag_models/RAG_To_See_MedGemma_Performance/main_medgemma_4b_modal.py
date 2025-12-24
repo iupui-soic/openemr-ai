@@ -23,7 +23,7 @@ image = (
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
-        "transformers>=4.37.0",
+        "transformers>=4.45.0",
         "torch>=2.1.0",
         "accelerate>=0.25.0",
         "bitsandbytes>=0.41.0",
@@ -95,7 +95,7 @@ def generate_summary(
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.float16,  # <-- changed from bfloat16
+        bnb_4bit_compute_dtype=torch.float16,
     )
 
     processor = AutoProcessor.from_pretrained(MODEL_NAME)
@@ -126,20 +126,46 @@ def generate_summary(
         ).to(model.device)
 
         input_len = inputs["input_ids"].shape[-1]
+        print(f"📊 Generation input length: {input_len} tokens")
 
-        # Stable generation with top-p and top-k
+        # Get pad token id
+        pad_token_id = processor.tokenizer.pad_token_id
+        if pad_token_id is None:
+            pad_token_id = processor.tokenizer.eos_token_id
+
+        # Try sampling first
         with torch.inference_mode():
             generation = model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
-                do_sample=False,
-                temperature=max(temperature, 0.3),  # avoid very low temperature
-                top_p=1.0,
+                do_sample=True,
+                temperature=temperature,
+                top_p=0.9,
                 top_k=5,
+                pad_token_id=pad_token_id,
+                eos_token_id=processor.tokenizer.eos_token_id,
+                repetition_penalty=1.1,
             )
 
-        generation = generation[0][input_len:]
-        return processor.decode(generation, skip_special_tokens=True)
+        # Check if anything was generated
+        if generation.shape[-1] <= input_len:
+            print("⚠️ Warning: Sampling produced no tokens, trying greedy decoding...")
+            with torch.inference_mode():
+                generation = model.generate(
+                    **inputs,
+                    max_new_tokens=max_new_tokens,
+                    do_sample=False,
+                    pad_token_id=pad_token_id,
+                    eos_token_id=processor.tokenizer.eos_token_id,
+                )
+
+        generated_tokens = generation[0][input_len:]
+        result = processor.decode(generated_tokens, skip_special_tokens=True)
+
+        if not result.strip():
+            print("⚠️ Warning: Empty output after decoding!")
+
+        return result
 
     # ==============================
     # 3. EXTRACT DISEASE USING LLM
@@ -157,6 +183,10 @@ Transcript:
 Primary Disease:"""
 
     detected_disease = generate_text(disease_prompt, max_new_tokens=20, temperature=0.1).strip()
+
+    # Clean up detected disease
+    if not detected_disease:
+        detected_disease = "General"
 
     print(f"✅ Detected Disease: {detected_disease}")
 
@@ -199,16 +229,32 @@ Primary Disease:"""
     print("🔹 Generating summary...")
     start_gen = time.time()
 
+    # Truncate transcript if too long to prevent context overflow
+    max_transcript_len = 6000
+    if len(transcript_text) > max_transcript_len:
+        print(f"⚠️ Truncating transcript from {len(transcript_text)} to {max_transcript_len} chars")
+        transcript_for_prompt = transcript_text[:max_transcript_len]
+    else:
+        transcript_for_prompt = transcript_text
+
+    # Truncate OpenEMR if needed
+    max_openemr_len = 2000
+    if len(openemr_text) > max_openemr_len:
+        print(f"⚠️ Truncating OpenEMR from {len(openemr_text)} to {max_openemr_len} chars")
+        openemr_for_prompt = openemr_text[:max_openemr_len]
+    else:
+        openemr_for_prompt = openemr_text
+
     # Build prompt
     prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in SOAP format by extracting information from the provided transcript and medical records.
 
 ### INPUT DATA
 
 **TRANSCRIPT** (Doctor-patient conversation):
-{transcript_text}
+{transcript_for_prompt}
 
 **OPENEMR EXTRACT** (Electronic health record):
-{openemr_text if openemr_text else "No OpenEMR data available."}
+{openemr_for_prompt if openemr_for_prompt else "No OpenEMR data available."}
 
 **SCHEMA GUIDE** (Required sections and structure):
 {schema_context}
@@ -291,6 +337,16 @@ def evaluate_summary(generated: str, reference: str) -> dict:
         nltk.download('punkt', quiet=True)
 
     print("🔹 Computing evaluation metrics...")
+
+    # Handle empty generated text
+    if not generated or not generated.strip():
+        print("⚠️ Warning: Generated text is empty, returning zero scores")
+        return {
+            "bleu": 0.0,
+            "rouge_l": 0.0,
+            "sbert_coherence": 0.0,
+            "bert_f1": 0.0,
+        }
 
     # BLEU Score
     bleu = sentence_bleu([reference.split()], generated.split())
@@ -398,13 +454,16 @@ def main(
             f.write(f"BERTScore F1: {eval_results['bert_f1']:.4f}\n\n")
 
         f.write("### GENERATED SUMMARY ###\n")
-        f.write(result["summary"])
+        f.write(result["summary"] if result["summary"] else "[No summary generated]")
 
     print(f"\n✅ Results saved to: {result_file}")
     print("\n" + "=" * 60)
     print("Summary Preview:")
     print("=" * 60)
-    print(result["summary"][:500] + "..." if len(result["summary"]) > 500 else result["summary"])
+    if result["summary"]:
+        print(result["summary"][:500] + "..." if len(result["summary"]) > 500 else result["summary"])
+    else:
+        print("[No summary generated]")
 
     if eval_results:
         print("\n" + "=" * 60)
