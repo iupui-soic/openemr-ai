@@ -198,14 +198,25 @@ Primary Disease:"""
 ### SCHEMA GUIDE (Required sections and structure):
 {schema_context}
 
-### INSTRUCTIONS:
-1. Follow the EXACT structure shown in the SCHEMA GUIDE
-2. Extract information from TRANSCRIPT and OPENEMR EXTRACT
-3. Use professional medical documentation style
-4. If information is missing, write "Information not available"
-5. Do NOT hallucinate or invent information
+### OUTPUT FORMAT REQUIREMENTS
+- Generate a NARRATIVE TEXT document, NOT JSON or structured data
+- Use clear section headers (e.g., "Patient Information", "Chief Complaint", "History of Present Illness")
+- Write in complete sentences and paragraphs
+- Use professional medical documentation prose style
+- Format similar to a hospital discharge summary
 
-Generate the medical summary now:"""
+### INSTRUCTIONS
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
+5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
+6. Do NOT include any meta-commentary, explanations, or references to this prompt
+7. Do NOT output JSON, XML, or any structured data format
+8. Do NOT hallucinate or invent information not present in the inputs
+
+Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
+
         }
     ]
 
