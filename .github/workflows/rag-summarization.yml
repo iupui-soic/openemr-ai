@@ -29,9 +29,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Modal
         run: |
-          pip install -r pranathi_RAG/requirements.txt
+          pip install modal
 
       - name: Authenticate Modal
         env:
