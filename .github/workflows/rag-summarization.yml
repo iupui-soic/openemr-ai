@@ -1,0 +1,115 @@
+name: RAG Medical Summarization
+
+on:
+  workflow_dispatch:
+    inputs:
+      patient_name:
+        description: 'Patient name (e.g., Rakesh, Toma, Taylor)'
+        type: string
+        default: 'Rakesh'
+      run_evaluation:
+        description: 'Run evaluation metrics'
+        type: boolean
+        default: true
+  push:
+    paths:
+      - 'pranathi_RAG/**'
+      - '.github/workflows/rag-summarization.yml'
+      - 'rag_models/RAG_To_See_MedGemma_Performance/data/**'
+
+jobs:
+  generate-summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r pranathi_RAG/requirements.txt
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Set patient name
+        id: patient
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
+          else
+            echo "name=Rakesh" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run RAG Summarization on Modal
+        run: |
+          cd pranathi_RAG
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+
+          modal run main.py \
+            --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_${PATIENT_LOWER}.txt" \
+            --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_${PATIENT_LOWER}.txt" \
+            --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_${PATIENT_LOWER}.txt" \
+            --patient-name="$PATIENT_NAME" \
+            --output-dir="results"
+
+      - name: Display results
+        run: |
+          PATIENT_NAME=${{ steps.patient.outputs.name }}
+          if [ -f "pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt" ]; then
+            echo "## Summary Generation Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            head -100 "pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results file not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rag-summary-${{ steps.patient.outputs.name }}
+          path: pranathi_RAG/results/
+          retention-days: 90
+
+  compare-results:
+    needs: generate-summary
+    if: always() && github.event.inputs.run_evaluation != 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          path: results
+          pattern: rag-summary-*
+          merge-multiple: true
+
+      - name: Generate comparison summary
+        run: |
+          echo "## RAG Summarization Evaluation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          for file in results/evaluation_*.txt; do
+            if [ -f "$file" ]; then
+              patient=$(basename "$file" | sed 's/evaluation_//' | sed 's/.txt//')
+              echo "### Patient: $patient" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+
+              # Extract metrics
+              if grep -q "BLEU Score" "$file"; then
+                echo "#### Metrics" >> $GITHUB_STEP_SUMMARY
+                grep -E "(BLEU Score|ROUGE-L|SBERT|BERTScore|Total Time|Total Tokens)" "$file" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          done
