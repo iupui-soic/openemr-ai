@@ -104,14 +104,15 @@ Primary Disease:"""
     disease_response = client.chat.completions.create(
         model=MODEL_NAME,
         messages=[{"role": "user", "content": disease_prompt}],
-        temperature=0.1,
-        max_tokens=50,
+        temperature=0.3,
+        max_tokens=20,
+        stop=["\n", ".", ","],
     )
 
     # Debug: Print raw response
     raw_disease = disease_response.choices[0].message.content
     print(f"🔍 Raw disease response: '{raw_disease}'")
-    print(f"🔍 Raw response length: {len(raw_disease)}")
+    print(f"🔍 Raw response length: {len(raw_disease) if raw_disease else 0}")
     print(f"🔍 Raw response repr: {repr(raw_disease)}")
 
     detected_disease = raw_disease.strip() if raw_disease else "General"
