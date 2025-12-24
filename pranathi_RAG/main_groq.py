@@ -107,7 +107,14 @@ Primary Disease:"""
         temperature=0.1,
         max_tokens=50,
     )
-    detected_disease = disease_response.choices[0].message.content.strip()
+
+    # Debug: Print raw response
+    raw_disease = disease_response.choices[0].message.content
+    print(f"🔍 Raw disease response: '{raw_disease}'")
+    print(f"🔍 Raw response length: {len(raw_disease)}")
+    print(f"🔍 Raw response repr: {repr(raw_disease)}")
+
+    detected_disease = raw_disease.strip() if raw_disease else "General"
 
     print(f"✅ Detected Disease: {detected_disease}")
 
