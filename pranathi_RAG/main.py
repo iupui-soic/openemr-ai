@@ -158,42 +158,30 @@ def generate_summary(
     start_gen = time.time()
 
     # Build prompt
-    prompt = f"""You are an expert medical scribe. Generate a comprehensive medical summary in SOAP format.
+    prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in SOAP format by extracting information from the provided transcript and medical records.
 
 ### INPUT DATA
-1. **TRANSCRIPT**: Doctor-patient conversation
-2. **OPENEMR EXTRACT**: Patient's electronic health record
-3. **SCHEMA GUIDE**: Required sections and structure
 
-### INSTRUCTIONS
-- **Structure**: Follow the sections in the SCHEMA GUIDE exactly
-- **Content**: Extract information from TRANSCRIPT and OPENEMR EXTRACT
-- **Missing Info**: Write "Information not available" if data is missing
-- **Style**: Professional medical documentation, use bullet points for lists
-- **Conflict**: Trust TRANSCRIPT over OPENEMR for current status
-
-### CRITICAL REQUIREMENTS
-1. Use EXACT structure from SCHEMA GUIDE
-2. Do NOT omit sections even if empty
-3. Do NOT hallucinate information
-4. Include Patient Information section at top
-
---- START OF DATA ---
-
-**TRANSCRIPT**:
+**TRANSCRIPT** (Doctor-patient conversation):
 {transcript_text}
 
-**OPENEMR EXTRACT**:
+**OPENEMR EXTRACT** (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-**SCHEMA GUIDE**:
+**SCHEMA GUIDE** (Required sections and structure):
 {schema_context}
 
---- END OF DATA ---
+### INSTRUCTIONS
+1. Follow the EXACT structure and sections shown in the SCHEMA GUIDE above
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT to fill each section
+3. Use professional medical documentation style with bullet points for lists
+4. If information for a section is missing, write "Information not available"
+5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
+6. Do NOT include any meta-commentary, explanations, or references to this prompt
+7. Do NOT hallucinate or invent information not present in the inputs
+8. Start your output directly with the formatted medical summary
 
-**OUTPUT**:
-Generate the full medical summary below in clean, formatted text (NOT JSON).
-"""
+Generate the medical summary now, beginning with the Patient Information section:"""
 
     # Calculate input tokens
     try:
