@@ -2,6 +2,67 @@
 
 Artificial Intelligence tooling for OpenEMR related to clinical decision rules, ambient listening, note summarization and automated coding.
 
+## ELM JSON Validation (Clinical Decision Support Validation)
+
+This repository includes comprehensive evaluation of LLM models for validating clinical decision support logic. We evaluate multiple language models on their ability to identify whether ELM (Expression Logical Model) JSON implementations correctly implement Clinical Practice Guidelines (CPG).
+
+**What is ELM?** Expression Logical Model (ELM) is the compiled JSON representation of Clinical Quality Language (CQL) - the standard for expressing clinical decision rules in systems like OpenEMR. This evaluation tests if LLMs can act as automated reviewers of clinical logic by analyzing ELM files against medical guidelines.
+
+**Test Dataset**: Ground truth annotated test cases with ELM JSON files and corresponding CPG markdown files. Each test case includes expected validation results (valid/invalid) and specific errors the LLM should identify.
+
+### Models Evaluated
+
+| Model | Provider | Size | Notes |
+|-------|----------|------|-------|
+| Llama 3.2 1B Instruct | Meta | 1B | Compact general-purpose LLM |
+| Llama 3.2 3B Instruct | Meta | 3B | Larger general-purpose LLM |
+| Llama 3.1 8B Instruct | Meta | 8B | High-capacity general-purpose |
+| Qwen 2.5 1.5B Instruct | Alibaba | 1.5B | Efficient multilingual LLM |
+| Qwen 2.5 3B Instruct | Alibaba | 3B | Balanced performance LLM |
+| Phi-3 Mini | Microsoft | 3.8B | Compact reasoning model |
+| Gemma 3 270M | Google | 270M | Ultra-compact model |
+| Gemma 3 4B | Google | 4B | Efficient open model |
+| MedGemma 4B | Google | 4B | Healthcare-specialized model |
+
+### Latest Results
+
+| Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |
+|-------|----------|---------------|-------------|----------|--------|
+| [Fill from workflow] | | | | | |
+
+> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/elm-validation.yml)
+
+## RAG Medical Summarization (SOAP Note Generation)
+
+This repository includes evaluation of LLM models for generating medical discharge summaries in SOAP format using Retrieval-Augmented Generation (RAG). We test multiple models on their ability to create structured clinical summaries from doctor-patient transcripts and electronic health records.
+
+**What is RAG?** Retrieval-Augmented Generation combines language models with a vector database to retrieve relevant context (SOAP note schemas from MIMIC Clinical Notes) before generating summaries. This ensures outputs follow proper clinical documentation structure.
+
+**Vector Database**: ChromaDB hosted on Modal Volume containing SOAP note structures extracted from MIMIC Clinical Notes. Uses **all-MiniLM-L6-v2** for semantic retrieval of top 2 relevant schemas based on detected disease.
+
+**Test Dataset**: 6 patient cases (Rakesh, Toma, Taylor, Heath, Nicholas, Bhavana) with doctor-patient transcripts, OpenEMR extracts, and reference summaries for evaluation.
+
+### Models Evaluated
+
+| Model | Provider | Size | Infrastructure | Notes |
+|-------|----------|------|----------------|-------|
+| Llama 3.1 8B Instruct | Meta | 8B | Modal (A10G GPU) | vLLM for fast inference |
+| MedGemma 4B-IT | Google | 4B | Modal (A10G GPU) | Healthcare-specialized model |
+| Groq GPT-OSS-20B | Groq | 20B | API-based | Fast inference, no GPU needed |
+
+### Latest Results
+
+| Model | BLEU | ROUGE-L | SBERT | BERTScore F1 | Total Time | Status |
+|-------|------|---------|-------|--------------|------------|--------|
+| [Fill from workflow] | | | | | | |
+
+**Evaluation Metrics:**
+- **BLEU & ROUGE-L**: Lexical overlap and structural recall
+- **SBERT Similarity**: Global semantic coherence (0.80-0.90 indicates clinical equivalence)
+- **BERTScore F1**: Local semantic accuracy for clinical details
+
+> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/rag-summarization.yml)
+
 ## ASR Model Evaluation (Word Error Rate)
 
 This repository includes comprehensive evaluation of Automatic Speech Recognition (ASR) models for medical transcription. We evaluate multiple state-of-the-art models on two datasets:
@@ -59,9 +120,51 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
   - `NOTION_API_KEY` - For Notion dataset access
   - `GROQ_API_KEY` - For Groq API evaluations
   - `KAGGLE_USERNAME` and `KAGGLE_KEY` - For Kaggle dataset setup
-  - `HF_TOKEN` - For ELMJSON validation experiments
+  - `HF_TOKEN` - For ELM JSON validation experiments
 
-### Installation
+### ELM JSON Validation
+
+```bash
+cd cdr_elmjson_validator
+pip install -r requirements.txt
+
+# List available models
+python run_validation.py --list-models
+
+# Run validation with specific model
+python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv
+
+# Run validation with all models
+python run_validation.py --all-models --output-dir results/
+```
+
+### RAG Medical Summarization
+
+```bash
+cd pranathi_RAG
+pip install -r requirements.txt
+
+# Run Llama 3.1 8B summarization
+modal run main.py \
+  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_rakesh.txt" \
+  --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_rakesh.txt" \
+  --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_rakesh.txt" \
+  --patient-name="Rakesh" \
+  --output-dir="results"
+
+# Run Groq GPT-OSS-20B summarization
+modal run main_groq.py \
+  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_rakesh.txt" \
+  --patient-name="Rakesh"
+
+# Run MedGemma 4B-IT summarization
+cd ../rag_models/RAG_To_See_MedGemma_Performance
+modal run main_medgemma_4b_modal.py \
+  --transcript-path="data/transcription_rakesh.txt" \
+  --patient-name="Rakesh"
+```
+
+### ASR Model Evaluation
 
 ```bash
 cd openemr_whisper_wer
