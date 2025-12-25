@@ -28,7 +28,15 @@ This repository includes comprehensive evaluation of LLM models for validating c
 
 | Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |
 |-------|----------|---------------|-------------|----------|--------|
-| [Fill from workflow] | | | | | |
+| Llama 3.2 1B | 75.0% | 3/4 | 75% | 4.73s | ✓ |
+| Qwen 2.5 3B | 75.0% | 3/4 | 75% | 16.63s | ✓ |
+| Gemma 3 270M | 75.0% | 3/4 | 75% | 22.76s | ✓ |
+| MedGemma 4B | 75.0% | 3/4 | 75% | 35.44s | ✓ |
+| Gemma 3 4B | 75.0% | 3/4 | 75% | 40.74s | ✓ |
+| Llama 3.1 8B | 75.0% | 3/4 | 50% | 321.68s | ✓ |
+| Llama 3.2 3B | 50.0% | 2/4 | 50% | 8.02s | ✓ |
+| Phi-3 Mini | 50.0% | 2/4 | 25% | 27.05s | ✓ |
+| Qwen 2.5 1.5B | 25.0% | 1/4 | 75% | 13.97s | ✓ |
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/elm-validation.yml)
 
