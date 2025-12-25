@@ -40,7 +40,7 @@ This repository includes evaluation of LLM models for generating medical dischar
 
 **Vector Database**: ChromaDB hosted on Modal Volume containing SOAP note structures extracted from MIMIC Clinical Notes. Uses **all-MiniLM-L6-v2** for semantic retrieval of top 2 relevant schemas based on detected disease.
 
-**Test Dataset**: 6 patient cases (Rakesh, Toma, Taylor, Heath, Nicholas, Bhavana) with doctor-patient transcripts, OpenEMR extracts, and reference summaries for evaluation.
+**Test Dataset**: 6 patient test cases with doctor-patient transcripts, OpenEMR extracts, and reference summaries for evaluation.
 
 ### Models Evaluated
 
@@ -146,22 +146,22 @@ pip install -r requirements.txt
 
 # Run Llama 3.1 8B summarization
 modal run main.py \
-  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_rakesh.txt" \
-  --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_rakesh.txt" \
-  --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_rakesh.txt" \
-  --patient-name="Rakesh" \
+  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_<patient>.txt" \
+  --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_<patient>.txt" \
+  --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_<patient>.txt" \
+  --patient-name="<PatientName>" \
   --output-dir="results"
 
 # Run Groq GPT-OSS-20B summarization
 modal run main_groq.py \
-  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_rakesh.txt" \
-  --patient-name="Rakesh"
+  --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_<patient>.txt" \
+  --patient-name="<PatientName>"
 
 # Run MedGemma 4B-IT summarization
 cd ../rag_models/RAG_To_See_MedGemma_Performance
 modal run main_medgemma_4b_modal.py \
-  --transcript-path="data/transcription_rakesh.txt" \
-  --patient-name="Rakesh"
+  --transcript-path="data/transcription_<patient>.txt" \
+  --patient-name="<PatientName>"
 ```
 
 ### ASR Model Evaluation
