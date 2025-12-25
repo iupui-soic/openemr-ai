@@ -6,7 +6,7 @@ Artificial Intelligence tooling for OpenEMR related to clinical decision rules, 
 
 This repository includes comprehensive evaluation of LLM models for validating clinical decision support logic. We evaluate multiple language models on their ability to identify whether ELM (Expression Logical Model) JSON implementations correctly implement Clinical Practice Guidelines (CPG).
 
-**What is ELM?** Expression Logical Model (ELM) is the compiled JSON representation of Clinical Quality Language (CQL) - the standard for expressing clinical decision rules in systems like OpenEMR. This evaluation tests if LLMs can act as automated reviewers of clinical logic by analyzing ELM files against medical guidelines.
+**What is ELM?** Expression Logical Model (ELM) is the compiled JSON representation of Clinical Quality Language (CQL) - the standard for expressing clinical decision rules. This evaluation tests if LLMs can act as automated reviewers of clinical logic by analyzing ELM files against medical guidelines.
 
 **Test Dataset**: Ground truth annotated test cases with ELM JSON files and corresponding CPG markdown files. Each test case includes expected validation results (valid/invalid) and specific errors the LLM should identify.
 
