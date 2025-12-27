@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
 # Configuration
-data_path = "data/all_notes_structure.json"
+data_path = "data/all_notes_structure.jsonl"
 chroma_path = "vectorDB/chroma_schema_improved/"
 
 print("Creating NEW vector database:", chroma_path)
@@ -28,12 +28,16 @@ embeddings = HuggingFaceEmbeddings(
 # Create new database
 db = Chroma(persist_directory=chroma_path, embedding_function=embeddings)
 
-# Read JSON file
+# Read JSONL file
 print("Reading", data_path)
-text = Path(data_path).read_text(encoding="utf-8", errors="ignore")
-data = json.loads(text)
+data = []
+with open(data_path, 'r', encoding='utf-8') as f:
+    for line in f:
+        line = line.strip()
+        if line:
+            data.append(json.loads(line))
 
-print("Found", len(data), "notes in JSON file")
+print("Found", len(data), "notes in JSONL file")
 
 # Process and index
 docs, metadatas, ids = [], [], []
