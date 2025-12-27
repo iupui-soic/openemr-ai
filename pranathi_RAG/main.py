@@ -1,20 +1,48 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses Llama 3.1 8B to generate SOAP-format summaries with schema guidance from vector DB
+Uses Llama 3.1 8B (vLLM) to generate SOAP-format summaries with schema guidance from vector DB
+
+Complete pipeline that:
+1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
+2. Generates summaries for each patient using RAG + Llama 3.1 8B
+3. Evaluates summaries against manual references
+4. Outputs: evaluation_results.csv + individual summary files
+
+Usage:
+    modal run rag_llama_3_1_8b_pipeline.py
+    modal run rag_llama_3_1_8b_pipeline.py --output-dir results/llama-3.1-8b
+
+Requirements (local):
+    pip install notion-client httpx pandas python-dotenv
 """
 
 import modal
 import os
-from pathlib import Path
+from typing import Dict, List, Any
 
-# Define Modal app
-app = modal.App("medical-summarization-rag")
+# Local import for Notion fetching (runs on local machine, not Modal)
+from summary_utils import NotionFetcher
 
-# Create persistent volume reference for vector database
+# ============================================================================
+# Modal App Configuration
+# ============================================================================
+
+app = modal.App("medical-summarization-rag-llama-3-1-8b")
+
+# Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
-# Define the image with all dependencies
-image = (
+# Model configuration
+MODEL_NAME = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+MODEL_SHORT_NAME = "llama-3.1-8b"
+CHROMA_PATH = "/vectordb/chroma_schema_improved"
+
+# ============================================================================
+# Modal Images
+# ============================================================================
+
+# Image for summarization (vLLM + RAG)
+summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
         "langchain>=0.1.0",
@@ -28,85 +56,161 @@ image = (
         "huggingface-hub>=0.20.0",
         "vllm>=0.3.0",
         "tiktoken>=0.5.0",
-        "nltk>=3.8.1",
-        "rouge-score>=0.1.2",
-        "bert-score>=0.3.13",
     )
 )
 
-# Model configuration
-MODEL_NAME = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-CHROMA_PATH = "/vectordb/chroma_schema_improved"
+# Image for evaluation
+evaluator_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install(
+        "nltk>=3.8.1",
+        "rouge-score>=0.1.2",
+        "bert-score>=0.3.13",
+        "sentence-transformers>=2.2.2",
+        "pandas>=2.0.0",
+    )
+)
 
 
-@app.function(
-    image=image,
-    gpu="A10G",  # A10G is good for Llama 3.1 8B
+# ============================================================================
+# Medical Summarizer Class (with persistent model loading)
+# ============================================================================
+
+@app.cls(
+    image=summarizer_image,
+    gpu="A10G",
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
     secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
-def generate_summary(
-    transcript_text: str,
-    openemr_text: str = "",
-    patient_name: str = "Patient",
-) -> dict:
+class MedicalSummarizer:
     """
-    Generate SOAP-format medical summary from transcript using RAG.
+    RAG-based medical summarizer using Llama 3.1 8B with vLLM.
 
-    Args:
-        transcript_text: Doctor-patient conversation transcript
-        openemr_text: OpenEMR extract (optional)
-        patient_name: Patient name for logging
+    Models are loaded once in @modal.enter() and reused across all
+    generate_summary() calls for efficient batch processing.
 
-    Returns:
-        dict with summary, retrieval info, and metrics
+    This significantly reduces costs since Llama 3.1 8B takes ~30-60s to load.
     """
-    import time
-    from vllm import LLM, SamplingParams
-    from langchain_huggingface import HuggingFaceEmbeddings
-    from langchain_chroma import Chroma
-    from sentence_transformers import SentenceTransformer, util
-    import tiktoken
 
-    print(f"🔹 Starting summarization for {patient_name}")
-    start_total = time.time()
+    @modal.enter()
+    def load_models(self):
+        """Load all models once when container starts."""
+        from vllm import LLM, SamplingParams
+        from langchain_huggingface import HuggingFaceEmbeddings
+        from langchain_chroma import Chroma
+        from sentence_transformers import SentenceTransformer
+        import tiktoken
+        import time
 
-    # ==============================
-    # 1. LOAD VECTOR STORE
-    # ==============================
-    print(f"🔹 Loading Vector Store from: {CHROMA_PATH}")
-    embeddings = HuggingFaceEmbeddings(
-        model_name="pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb"
-    )
-    vector_store = Chroma(
-        persist_directory=CHROMA_PATH,
-        embedding_function=embeddings
-    )
+        print("🔄 Loading models (one-time initialization)...")
+        print(f"   Model: {MODEL_NAME}")
 
-    # ==============================
-    # 2. LOAD LLAMA MODEL
-    # ==============================
-    print("🔹 Loading Llama 3.1 8B model...")
-    start_load = time.time()
+        # ==============================
+        # LOAD LLAMA 3.1 8B WITH VLLM
+        # ==============================
+        print("  → Loading Llama 3.1 8B with vLLM...")
+        start_load = time.time()
 
-    llm = LLM(
-        model=MODEL_NAME,
-        dtype="float16",
-        gpu_memory_utilization=0.9,
-        max_model_len=8192,
-    )
+        self.llm = LLM(
+            model=MODEL_NAME,
+            dtype="float16",
+            gpu_memory_utilization=0.9,
+            max_model_len=8192,
+        )
 
-    load_time = time.time() - start_load
-    print(f"⏱️ Model loading took {load_time:.2f}s")
+        load_time = time.time() - start_load
+        print(f"  → Llama loaded in {load_time:.2f}s")
 
-    # ==============================
-    # 3. EXTRACT DISEASE USING LLM
-    # ==============================
-    print("🔹 Extracting disease from transcript using LLM...")
-    start_retrieval = time.time()
+        # Store sampling params for reuse
+        self.sampling_params_disease = SamplingParams(
+            temperature=0.1,
+            top_p=0.9,
+            max_tokens=20,
+            stop=["</s>", "[/INST]", "\n"],
+        )
 
-    disease_prompt = f"""You are a medical expert. Read the following doctor-patient conversation transcript and identify the PRIMARY medical condition or disease being discussed.
+        self.sampling_params_summary = SamplingParams(
+            temperature=0.3,
+            top_p=0.95,
+            max_tokens=4096,
+            stop=["</s>", "[/INST]"],
+        )
+
+        # ==============================
+        # LOAD RAG COMPONENTS
+        # ==============================
+        # Load BioBERT embeddings for ChromaDB
+        print("  → Loading BioBERT embeddings...")
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb"
+        )
+
+        # Load vector store
+        print(f"  → Loading Vector Store from: {CHROMA_PATH}")
+        self.vector_store = Chroma(
+            persist_directory=CHROMA_PATH,
+            embedding_function=self.embeddings
+        )
+
+        # Pre-fetch collection data (avoids repeated DB queries)
+        print("  → Pre-fetching collection data...")
+        collection_data = self.vector_store.get(include=["metadatas", "documents"])
+        self.all_metadatas = collection_data["metadatas"]
+        self.all_docs = collection_data["documents"]
+        self.metadata_diseases = [m.get("diseases", "Unspecified") for m in self.all_metadatas]
+
+        # Load SBERT for semantic matching
+        print("  → Loading SBERT model...")
+        self.sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+        # Pre-encode all disease metadata for faster retrieval
+        print("  → Pre-encoding disease embeddings...")
+        self.candidate_embs = self.sbert_model.encode(self.metadata_diseases, convert_to_tensor=True)
+
+        # Initialize tokenizer for token counting
+        print("  → Initializing tokenizer...")
+        try:
+            self.encoding = tiktoken.encoding_for_model("gpt-4")
+        except:
+            self.encoding = None
+
+        print("✅ All models loaded successfully!")
+
+    @modal.method()
+    def generate_summary(
+            self,
+            transcript_text: str,
+            openemr_text: str = "",
+            patient_name: str = "Patient",
+    ) -> Dict[str, Any]:
+        """
+        Generate SOAP-format medical summary from transcript using RAG + Llama.
+
+        Args:
+            transcript_text: Doctor-patient conversation transcript
+            openemr_text: OpenEMR extract (optional)
+            patient_name: Patient name for logging
+
+        Returns:
+            dict with summary, detected_disease, timing metrics, token counts
+        """
+        import time
+        from sentence_transformers import util
+
+        print(f"\n{'='*60}")
+        print(f"🔹 Generating summary for: {patient_name}")
+        print(f"🔹 Model: {MODEL_NAME}")
+        print(f"{'='*60}")
+        start_total = time.time()
+
+        # ==============================
+        # 1. EXTRACT DISEASE USING LLAMA
+        # ==============================
+        print("🔹 Extracting disease from transcript...")
+        start_retrieval = time.time()
+
+        disease_prompt = f"""You are a medical expert. Read the following doctor-patient conversation transcript and identify the PRIMARY medical condition or disease being discussed.
 
 Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"). If multiple conditions are discussed, return the most prominent one. If no specific disease is mentioned, return "General".
 
@@ -115,59 +219,45 @@ Transcript:
 
 Primary Disease:"""
 
-    sampling_params_disease = SamplingParams(
-        temperature=0.1,  # Low temperature for factual extraction
-        top_p=0.9,
-        max_tokens=20,  # Short output
-        stop=["</s>", "[/INST]", "\n"],
-    )
+        disease_output = self.llm.generate([disease_prompt], self.sampling_params_disease)
+        detected_disease = disease_output[0].outputs[0].text.strip()
 
-    disease_output = llm.generate([disease_prompt], sampling_params_disease)
-    detected_disease = disease_output[0].outputs[0].text.strip()
+        # Clean up
+        if not detected_disease:
+            detected_disease = "General"
 
-    print(f"✅ Detected Disease: {detected_disease}")
+        print(f"✅ Detected Disease: {detected_disease}")
 
-    # ==============================
-    # 4. RETRIEVE SCHEMAS FROM VECTOR DB
-    # ==============================
-    print("🔹 Retrieving relevant schemas from vector DB...")
+        # ==============================
+        # 2. RETRIEVE SCHEMAS FROM VECTOR DB
+        # ==============================
+        print("🔹 Retrieving relevant schemas from vector DB...")
 
-    # Semantic retrieval from vector DB
-    sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+        # Encode query and find top matches (using pre-computed candidate embeddings)
+        target_emb = self.sbert_model.encode(detected_disease, convert_to_tensor=True)
+        cosine_scores = util.cos_sim(target_emb, self.candidate_embs)[0]
 
-    collection_data = vector_store.get(include=["metadatas", "documents"])
-    all_metadatas = collection_data["metadatas"]
-    all_ids = collection_data["ids"]
-    all_docs = collection_data["documents"]
+        # Get top 2 schemas
+        k = min(2, len(cosine_scores))
+        top_k_result = cosine_scores.topk(k)
+        top_indices = top_k_result.indices.tolist()
 
-    # Encode and find top matches
-    metadata_diseases = [m.get("diseases", "Unspecified") for m in all_metadatas]
-    target_emb = sbert_model.encode(detected_disease, convert_to_tensor=True)
-    candidate_embs = sbert_model.encode(metadata_diseases, convert_to_tensor=True)
-    cosine_scores = util.cos_sim(target_emb, candidate_embs)[0]
+        schema_context = ""
+        for rank, idx in enumerate(top_indices):
+            doc_content = self.all_docs[idx]
+            disease_meta = self.metadata_diseases[idx]
+            schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
 
-    # Get top 2 schemas
-    k = min(2, len(cosine_scores))
-    top_k_result = cosine_scores.topk(k)
-    top_indices = top_k_result.indices.tolist()
+        retrieval_time = time.time() - start_retrieval
+        print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
-    schema_context = ""
-    for rank, idx in enumerate(top_indices):
-        doc_content = all_docs[idx]
-        disease_meta = metadata_diseases[idx]
-        schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
+        # ==============================
+        # 3. GENERATE SUMMARY WITH LLAMA
+        # ==============================
+        print("🔹 Generating summary with Llama 3.1 8B...")
+        start_gen = time.time()
 
-    retrieval_time = time.time() - start_retrieval
-    print(f"⏱️ Disease extraction and retrieval took {retrieval_time:.2f}s")
-
-    # ==============================
-    # 5. GENERATE SUMMARY
-    # ==============================
-    print("🔹 Generating summary...")
-    start_gen = time.time()
-
-    # Build prompt
-    prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in SOAP format by extracting information from the provided transcript and medical records.
+        prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in narrative prose format by extracting information from the provided transcript and medical records.
 
 ### INPUT DATA
 
@@ -177,212 +267,428 @@ Primary Disease:"""
 **OPENEMR EXTRACT** (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-**SCHEMA GUIDE** (Required sections and structure):
+**SCHEMA GUIDE** (Reference sections to include):
 {schema_context}
 
+### OUTPUT FORMAT REQUIREMENTS
+- Generate a NARRATIVE TEXT document, NOT JSON or structured data
+- Use clear section headers (e.g., "Patient Information", "Chief Complaint", "History of Present Illness")
+- Write in complete sentences and paragraphs
+- Use professional medical documentation prose style
+- Format similar to a hospital discharge summary
+
 ### INSTRUCTIONS
-1. Follow the EXACT structure and sections shown in the SCHEMA GUIDE above
-2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT to fill each section
-3. Use professional medical documentation style with bullet points for lists
-4. If information for a section is missing, write "Information not available"
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
 5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
 6. Do NOT include any meta-commentary, explanations, or references to this prompt
-7. Do NOT hallucinate or invent information not present in the inputs
-8. Start your output directly with the formatted medical summary
+7. Do NOT output JSON, XML, or any structured data format
+8. Do NOT hallucinate or invent information not present in the inputs
 
-Generate the medical summary now, beginning with the Patient Information section:"""
+Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
 
-    # Calculate input tokens
-    try:
-        encoding = tiktoken.encoding_for_model("gpt-4")
-        input_tokens = len(encoding.encode(prompt))
-    except:
-        input_tokens = int(len(prompt.split()) * 1.3)
+        # Calculate input tokens
+        if self.encoding:
+            input_tokens = len(self.encoding.encode(prompt))
+        else:
+            input_tokens = int(len(prompt.split()) * 1.3)
 
-    print(f"📊 Input tokens: {input_tokens:,}")
+        print(f"📊 Input tokens: {input_tokens:,}")
 
-    # Generate
-    sampling_params = SamplingParams(
-        temperature=0.3,
-        top_p=0.95,
-        max_tokens=4096,
-        stop=["</s>", "[/INST]"],
-    )
+        # Generate with Llama
+        try:
+            outputs = self.llm.generate([prompt], self.sampling_params_summary)
+            generated_text = outputs[0].outputs[0].text.strip()
 
-    outputs = llm.generate([prompt], sampling_params)
-    generated_text = outputs[0].outputs[0].text.strip()
+            if self.encoding:
+                output_tokens = len(self.encoding.encode(generated_text))
+            else:
+                output_tokens = int(len(generated_text.split()) * 1.3)
 
-    # Calculate output tokens
-    try:
-        output_tokens = len(encoding.encode(generated_text))
-    except:
-        output_tokens = int(len(generated_text.split()) * 1.3)
+        except Exception as e:
+            print(f"❌ Llama generation failed: {e}")
+            generated_text = f"Error generating summary: {str(e)}"
+            output_tokens = 0
 
-    generation_time = time.time() - start_gen
-    total_time = time.time() - start_total
+        generation_time = time.time() - start_gen
+        total_time = time.time() - start_total
 
-    print(f"📊 Output tokens: {output_tokens:,}")
-    print(f"📊 Total tokens: {input_tokens + output_tokens:,}")
-    print(f"⏱️ Generation took {generation_time:.2f}s")
-    print(f"⏱️ Total time: {total_time:.2f}s")
+        print(f"📊 Tokens: {input_tokens:,} in / {output_tokens:,} out / {input_tokens + output_tokens:,} total")
+        print(f"⏱️ Generation: {generation_time:.2f}s | Total: {total_time:.2f}s")
 
-    return {
-        "summary": generated_text,
-        "detected_disease": detected_disease,
-        "retrieval_time": retrieval_time,
-        "generation_time": generation_time,
-        "total_time": total_time,
-        "input_tokens": input_tokens,
-        "output_tokens": output_tokens,
-        "total_tokens": input_tokens + output_tokens,
-    }
+        return {
+            "summary": generated_text,
+            "patient_name": patient_name,
+            "detected_disease": detected_disease,
+            "retrieval_time": retrieval_time,
+            "generation_time": generation_time,
+            "total_time": total_time,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "total_tokens": input_tokens + output_tokens,
+            "model": MODEL_NAME,
+        }
 
 
-@app.function(
-    image=image,
-    volumes={"/vectordb": vectordb_volume},
+# ============================================================================
+# Summary Evaluator Class (with persistent model loading)
+# ============================================================================
+
+@app.cls(
+    image=evaluator_image,
+    timeout=1800,
+    cpu=2,
+    memory=4096,
 )
-def evaluate_summary(generated: str, reference: str) -> dict:
+class SummaryEvaluator:
     """
-    Evaluate generated summary against reference using multiple metrics.
+    Evaluator for medical summaries using multiple metrics.
 
-    Args:
-        generated: Generated summary text
-        reference: Reference summary text
-
-    Returns:
-        dict with BLEU, ROUGE-L, SBERT coherence, and BERTScore
+    SBERT model is loaded once and reused across evaluations.
     """
-    from nltk.translate.bleu_score import sentence_bleu
-    from rouge_score import rouge_scorer
-    from sentence_transformers import SentenceTransformer, util
-    from bert_score import score
-    import nltk
 
-    # Download NLTK data if needed
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        nltk.download('punkt', quiet=True)
+    @modal.enter()
+    def load_models(self):
+        """Load evaluation models once."""
+        from sentence_transformers import SentenceTransformer
+        import nltk
 
-    print("🔹 Computing evaluation metrics...")
+        print("🔄 Loading evaluation models...")
 
-    # BLEU Score
-    bleu = sentence_bleu([reference.split()], generated.split())
+        # Download NLTK data
+        try:
+            nltk.data.find('tokenizers/punkt')
+        except LookupError:
+            nltk.download('punkt', quiet=True)
+            nltk.download('punkt_tab', quiet=True)
 
-    # ROUGE-L
-    scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
-    rouge_l = scorer.score(reference, generated)["rougeL"].fmeasure
+        # Load SBERT for coherence scoring
+        print("  → Loading SBERT model...")
+        self.sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-    # SBERT Coherence
-    sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
-    ref_emb = sbert_model.encode(reference, convert_to_tensor=True)
-    gen_emb = sbert_model.encode(generated, convert_to_tensor=True)
-    sbert_coherence = util.cos_sim(ref_emb, gen_emb).item()
+        print("✅ Evaluation models loaded!")
 
-    # BERTScore
-    P, R, F1 = score([generated], [reference], lang="en", verbose=False)
-    bert_f1 = F1.mean().item()
+    @modal.method()
+    def evaluate(self, generated: str, reference: str) -> Dict[str, float]:
+        """
+        Evaluate generated summary against reference using multiple metrics.
 
-    results = {
-        "bleu": bleu,
-        "rouge_l": rouge_l,
-        "sbert_coherence": sbert_coherence,
-        "bert_f1": bert_f1,
-    }
+        Args:
+            generated: Generated summary text
+            reference: Reference summary text
 
-    print(f"✅ BLEU: {bleu:.4f}")
-    print(f"✅ ROUGE-L: {rouge_l:.4f}")
-    print(f"✅ SBERT: {sbert_coherence:.4f}")
-    print(f"✅ BERTScore F1: {bert_f1:.4f}")
+        Returns:
+            dict with BLEU, ROUGE-L, SBERT coherence, and BERTScore F1
+        """
+        from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+        from rouge_score import rouge_scorer
+        from sentence_transformers import util
+        from bert_score import score
 
-    return results
+        print("🔹 Computing evaluation metrics...")
 
+        # Handle empty inputs
+        if not generated or not generated.strip() or not reference:
+            print("⚠️ Warning: Empty text, returning zero scores")
+            return {
+                "bleu": 0.0,
+                "rouge_l": 0.0,
+                "sbert_coherence": 0.0,
+                "bert_f1": 0.0,
+            }
 
-@app.local_entrypoint()
-def main(
-    transcript_path: str = "../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_rakesh.txt",
-    openemr_path: str = "../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_rakesh.txt",
-    reference_path: str = "../rag_models/RAG_To_See_MedGemma_Performance/data/reference_rakesh.txt",
-    patient_name: str = "Rakesh",
-    output_dir: str = "results",
-):
-    """
-    Main function to run summarization and evaluation.
-
-    Args:
-        transcript_path: Path to transcript file
-        openemr_path: Path to OpenEMR file
-        reference_path: Path to reference summary
-        patient_name: Patient name
-        output_dir: Output directory for results
-    """
-    from pathlib import Path
-
-    print("=" * 60)
-    print(f"Medical Transcript Summarization - {patient_name}")
-    print("=" * 60)
-
-    # Read input files
-    transcript_text = Path(transcript_path).read_text(encoding="utf-8")
-    openemr_text = Path(openemr_path).read_text(encoding="utf-8") if Path(openemr_path).exists() else ""
-    reference_text = Path(reference_path).read_text(encoding="utf-8") if Path(reference_path).exists() else ""
-
-    # Generate summary
-    print("\n🚀 Generating summary...")
-    result = generate_summary.remote(
-        transcript_text=transcript_text,
-        openemr_text=openemr_text,
-        patient_name=patient_name,
-    )
-
-    # Evaluate if reference exists
-    eval_results = {}
-    if reference_text:
-        print("\n🔍 Evaluating summary...")
-        eval_results = evaluate_summary.remote(
-            generated=result["summary"],
-            reference=reference_text,
+        # BLEU Score (with smoothing for short texts)
+        smoother = SmoothingFunction()
+        bleu = sentence_bleu(
+            [reference.split()],
+            generated.split(),
+            smoothing_function=smoother.method1
         )
 
-    # Save results
+        # ROUGE-L
+        scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
+        rouge_l = scorer.score(reference, generated)["rougeL"].fmeasure
+
+        # SBERT Coherence (using pre-loaded model)
+        ref_emb = self.sbert_model.encode(reference, convert_to_tensor=True)
+        gen_emb = self.sbert_model.encode(generated, convert_to_tensor=True)
+        sbert_coherence = util.cos_sim(ref_emb, gen_emb).item()
+
+        # BERTScore
+        P, R, F1 = score([generated], [reference], lang="en", verbose=False)
+        bert_f1 = F1.mean().item()
+
+        results = {
+            "bleu": bleu,
+            "rouge_l": rouge_l,
+            "sbert_coherence": sbert_coherence,
+            "bert_f1": bert_f1,
+        }
+
+        print(f"  BLEU: {bleu:.4f} | ROUGE-L: {rouge_l:.4f} | SBERT: {sbert_coherence:.4f} | BERTScore: {bert_f1:.4f}")
+
+        return results
+
+
+# ============================================================================
+# Results Saver (runs locally)
+# ============================================================================
+
+def save_results(
+        results: List[Dict[str, Any]],
+        output_dir: str = "results",
+) -> None:
+    """
+    Save evaluation results table and individual summaries.
+
+    Args:
+        results: List of result dicts from pipeline
+        output_dir: Directory to save outputs
+    """
+    import pandas as pd
+    from pathlib import Path
+    from datetime import datetime
+
     output_path = Path(output_dir)
-    output_path.mkdir(exist_ok=True)
-    result_file = output_path / f"evaluation_{patient_name}.txt"
+    output_path.mkdir(parents=True, exist_ok=True)
 
-    with open(result_file, "w", encoding="utf-8") as f:
-        f.write("=" * 60 + "\n")
-        f.write(f"Medical Summary Evaluation - {patient_name}\n")
-        f.write("=" * 60 + "\n\n")
+    # ==============================
+    # 1. SAVE EVALUATION RESULTS TABLE (CSV)
+    # ==============================
+    print("\n📊 Saving evaluation results table...")
 
-        f.write("### GENERATION METRICS ###\n")
-        f.write(f"Detected Disease: {result['detected_disease']}\n")
-        f.write(f"Retrieval Time: {result['retrieval_time']:.2f}s\n")
-        f.write(f"Generation Time: {result['generation_time']:.2f}s\n")
-        f.write(f"Total Time: {result['total_time']:.2f}s\n")
-        f.write(f"Input Tokens: {result['input_tokens']:,}\n")
-        f.write(f"Output Tokens: {result['output_tokens']:,}\n")
-        f.write(f"Total Tokens: {result['total_tokens']:,}\n\n")
+    table_data = []
+    for r in results:
+        row = {
+            "patient_name": r.get("patient_name", "Unknown"),
+            "model": MODEL_SHORT_NAME,
+            "detected_disease": r.get("detected_disease", ""),
+            "bleu": r.get("bleu", 0.0),
+            "rouge_l": r.get("rouge_l", 0.0),
+            "sbert_coherence": r.get("sbert_coherence", 0.0),
+            "bert_f1": r.get("bert_f1", 0.0),
+            "total_time_s": r.get("total_time", 0.0),
+            "input_tokens": r.get("input_tokens", 0),
+            "output_tokens": r.get("output_tokens", 0),
+        }
+        table_data.append(row)
 
-        if eval_results:
-            f.write("### EVALUATION METRICS ###\n")
-            f.write(f"BLEU Score: {eval_results['bleu']:.4f}\n")
-            f.write(f"ROUGE-L Score: {eval_results['rouge_l']:.4f}\n")
-            f.write(f"SBERT Coherence: {eval_results['sbert_coherence']:.4f}\n")
-            f.write(f"BERTScore F1: {eval_results['bert_f1']:.4f}\n\n")
+    df = pd.DataFrame(table_data)
 
-        f.write("### GENERATED SUMMARY ###\n")
-        f.write(result["summary"])
+    # Calculate averages
+    avg_row = {
+        "patient_name": "AVERAGE",
+        "model": MODEL_SHORT_NAME,
+        "detected_disease": "",
+        "bleu": df["bleu"].mean(),
+        "rouge_l": df["rouge_l"].mean(),
+        "sbert_coherence": df["sbert_coherence"].mean(),
+        "bert_f1": df["bert_f1"].mean(),
+        "total_time_s": df["total_time_s"].mean(),
+        "input_tokens": df["input_tokens"].mean(),
+        "output_tokens": df["output_tokens"].mean(),
+    }
+    df = pd.concat([df, pd.DataFrame([avg_row])], ignore_index=True)
 
-    print(f"\n✅ Results saved to: {result_file}")
-    print("\n" + "=" * 60)
-    print("Summary Preview:")
-    print("=" * 60)
-    print(result["summary"][:500] + "..." if len(result["summary"]) > 500 else result["summary"])
+    # Save CSV
+    csv_path = output_path / f"evaluation_results_{MODEL_SHORT_NAME}.csv"
+    df.to_csv(csv_path, index=False)
+    print(f"   ✅ Saved: {csv_path}")
 
-    if eval_results:
-        print("\n" + "=" * 60)
-        print("Evaluation Metrics:")
-        print("=" * 60)
-        for metric, value in eval_results.items():
-            print(f"{metric.upper()}: {value:.4f}")
+    # Print table to console
+    print("\n" + "=" * 100)
+    print(f"EVALUATION RESULTS - {MODEL_NAME}")
+    print("=" * 100)
+    print(df.to_string(index=False, float_format="%.4f"))
+    print("=" * 100)
+
+    # ==============================
+    # 2. SAVE INDIVIDUAL SUMMARIES
+    # ==============================
+    print("\n📝 Saving individual summaries...")
+
+    summaries_dir = output_path / "summaries"
+    summaries_dir.mkdir(exist_ok=True)
+
+    for r in results:
+        patient_name = r.get("patient_name", "unknown")
+        summary = r.get("summary", "")
+
+        summary_file = summaries_dir / f"summary_{patient_name}_{MODEL_SHORT_NAME}.txt"
+
+        with open(summary_file, "w", encoding="utf-8") as f:
+            f.write(f"{'='*60}\n")
+            f.write(f"MEDICAL SUMMARY - {patient_name.upper()}\n")
+            f.write(f"Model: {MODEL_NAME}\n")
+            f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"{'='*60}\n\n")
+
+            f.write(f"Detected Disease: {r.get('detected_disease', 'N/A')}\n")
+            f.write(f"Generation Time: {r.get('total_time', 0):.2f}s\n")
+            f.write(f"Tokens: {r.get('input_tokens', 0):,} in / {r.get('output_tokens', 0):,} out\n\n")
+
+            f.write(f"{'='*60}\n")
+            f.write("EVALUATION METRICS\n")
+            f.write(f"{'='*60}\n")
+            f.write(f"BLEU:            {r.get('bleu', 0):.4f}\n")
+            f.write(f"ROUGE-L:         {r.get('rouge_l', 0):.4f}\n")
+            f.write(f"SBERT Coherence: {r.get('sbert_coherence', 0):.4f}\n")
+            f.write(f"BERTScore F1:    {r.get('bert_f1', 0):.4f}\n\n")
+
+            f.write(f"{'='*60}\n")
+            f.write("GENERATED SUMMARY\n")
+            f.write(f"{'='*60}\n\n")
+            f.write(summary if summary else "[No summary generated]")
+
+        print(f"   ✅ {summary_file.name}")
+
+    # ==============================
+    # 3. SAVE CONSOLIDATED REPORT
+    # ==============================
+    report_path = output_path / f"full_report_{MODEL_SHORT_NAME}.txt"
+
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write("=" * 80 + "\n")
+        f.write(f"MEDICAL SUMMARIZATION EVALUATION REPORT\n")
+        f.write(f"Model: {MODEL_NAME}\n")
+        f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("=" * 80 + "\n\n")
+
+        f.write("EVALUATION METRICS SUMMARY\n")
+        f.write("-" * 80 + "\n")
+        f.write(df.to_string(index=False, float_format="%.4f"))
+        f.write("\n\n")
+
+        f.write("=" * 80 + "\n")
+        f.write("INDIVIDUAL SUMMARIES\n")
+        f.write("=" * 80 + "\n\n")
+
+        for r in results:
+            patient = r.get("patient_name", "Unknown")
+            f.write(f"\n{'#'*80}\n")
+            f.write(f"# {patient.upper()}\n")
+            f.write(f"{'#'*80}\n\n")
+            f.write(r.get("summary", "No summary generated."))
+            f.write("\n\n")
+
+    print(f"   ✅ Full report: {report_path}")
+    print(f"\n✅ All results saved to: {output_path}/")
+
+
+# ============================================================================
+# Main Pipeline (Local Entrypoint)
+# ============================================================================
+
+@app.local_entrypoint()
+def main(output_dir: str = "results"):
+    """
+    Main pipeline: Fetch patients → Generate summaries → Evaluate → Save results.
+
+    Args:
+        output_dir: Directory for output files (CSV, summaries, report)
+    """
+    import time
+
+    print("=" * 80)
+    print("🏥 MEDICAL TRANSCRIPT SUMMARIZATION PIPELINE")
+    print(f"   Model: {MODEL_NAME}")
+    print("=" * 80)
+
+    pipeline_start = time.time()
+
+    # ==============================
+    # STEP 1: FETCH PATIENTS FROM NOTION
+    # ==============================
+    print("\n[1/3] FETCHING PATIENT DATA FROM NOTION")
+    print("-" * 40)
+
+    try:
+        fetcher = NotionFetcher()
+        patients = fetcher.get_entries()
+    except ValueError as e:
+        print(f"❌ Error: {e}")
+        print("   Make sure VISHNU_NOTION and VISHNU_NOTION_DB_ID are set in your .env file")
+        return
+
+    if not patients:
+        print("❌ No patients found in database!")
+        return
+
+    print(f"   Found {len(patients)} patients to process")
+
+    # ==============================
+    # STEP 2: GENERATE SUMMARIES & EVALUATE (on Modal)
+    # ==============================
+    print("\n[2/3] GENERATING SUMMARIES & EVALUATING")
+    print("-" * 40)
+
+    # Initialize Modal classes (models load once via @modal.enter())
+    summarizer = MedicalSummarizer()
+    evaluator = SummaryEvaluator()
+
+    results = []
+
+    for i, patient in enumerate(patients):
+        patient_name = patient["patient_name"]
+        print(f"\n[{i+1}/{len(patients)}] Processing: {patient_name}")
+
+        try:
+            # Generate summary (runs on Modal A10G GPU with vLLM)
+            summary_result = summarizer.generate_summary.remote(
+                transcript_text=patient["transcript"],
+                openemr_text=patient.get("openemr_data", ""),
+                patient_name=patient_name,
+            )
+
+            # Evaluate against reference (runs on Modal CPU)
+            reference = patient.get("manual_reference_summary", "")
+            if reference:
+                eval_metrics = evaluator.evaluate.remote(
+                    generated=summary_result["summary"],
+                    reference=reference,
+                )
+            else:
+                print(f"   ⚠️ No reference summary for {patient_name}, skipping evaluation")
+                eval_metrics = {
+                    "bleu": 0.0,
+                    "rouge_l": 0.0,
+                    "sbert_coherence": 0.0,
+                    "bert_f1": 0.0,
+                }
+
+            # Combine results
+            combined = {**summary_result, **eval_metrics}
+            results.append(combined)
+
+            print(f"   ✅ Completed: BLEU={eval_metrics['bleu']:.4f}, BERTScore={eval_metrics['bert_f1']:.4f}")
+
+        except Exception as e:
+            print(f"   ❌ Error processing {patient_name}: {e}")
+            results.append({
+                "patient_name": patient_name,
+                "summary": f"Error: {str(e)}",
+                "error": str(e),
+                "bleu": 0.0,
+                "rouge_l": 0.0,
+                "sbert_coherence": 0.0,
+                "bert_f1": 0.0,
+            })
+
+    # ==============================
+    # STEP 3: SAVE RESULTS
+    # ==============================
+    print("\n[3/3] SAVING RESULTS")
+    print("-" * 40)
+
+    save_results(results, output_dir)
+
+    pipeline_time = time.time() - pipeline_start
+
+    print("\n" + "=" * 80)
+    print("🎉 PIPELINE COMPLETE")
+    print(f"   Patients processed: {len(results)}")
+    print(f"   Total time: {pipeline_time:.1f}s ({pipeline_time/60:.1f} min)")
+    print(f"   Output directory: {output_dir}/")
+    print("=" * 80)

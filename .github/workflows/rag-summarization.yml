@@ -1,42 +1,34 @@
-name: RAG Medical Summarization
+name: RAG Medical Summarization (All Patients)
 
 on:
   workflow_dispatch:
     inputs:
-      patient_name:
-        description: 'Patient name (e.g., Rakesh, Toma, Taylor, Heath, Nicholas, Bhavana)'
-        type: string
-        default: 'Rakesh'
-      run_llama:
+      run_llama_3_1_8b:
         description: 'Run Llama 3.1 8B model'
         type: boolean
         default: true
-      run_medgemma:
-        description: 'Run MedGemma 4B-IT model (currently broken)'
-        type: boolean
-        default: false
-      run_groq_gpt_oss_20b:
-        description: 'Run Groq (GPT-OSS-20B) model'
-        type: boolean
-        default: true
-      run_groq_gpt_oss_120b:
-        description: 'Run Groq (GPT-OSS-120B) model'
-        type: boolean
-        default: true
-      run_groq_qwen3_32b:
-        description: 'Run Groq (Qwen3-32B) model'
-        type: boolean
-        default: true
-      run_groq_llama4_scout:
-        description: 'Run Groq (Llama-4-Scout-17B) model'
+      run_medgemma_4b:
+        description: 'Run MedGemma 4B-IT model'
         type: boolean
         default: true
       run_medgemma_27b_4bit:
         description: 'Run MedGemma 27B-Text-IT (4-bit) model'
         type: boolean
         default: true
-      run_evaluation:
-        description: 'Run evaluation metrics'
+      run_gpt_oss_20b:
+        description: 'Run Groq GPT-OSS-20B model'
+        type: boolean
+        default: true
+      run_gpt_oss_120b:
+        description: 'Run Groq GPT-OSS-120B model'
+        type: boolean
+        default: true
+      run_qwen3_32b:
+        description: 'Run Groq Qwen3-32B model'
+        type: boolean
+        default: true
+      run_llama4_scout:
+        description: 'Run Groq Llama-4-Scout-17B model'
         type: boolean
         default: true
   push:
@@ -45,13 +37,17 @@ on:
       - 'rag_models/RAG_To_See_MedGemma_Performance/**'
       - '.github/workflows/rag-summarization.yml'
 
-# ============================================
-# JOB 1: Llama 3.1 8B RAG Summarization
-# ============================================
+env:
+  PYTHON_VERSION: '3.11'
+
 jobs:
-  llama-3-1-8b-summarization:
-    name: Llama 3.1 8B Summarization
-    if: github.event.inputs.run_llama != 'false'
+  # ============================================
+  # JOB 1: Llama 3.1 8B RAG Summarization
+  # File: pranathi_RAG/main.py
+  # ============================================
+  llama-3-1-8b:
+    name: 🦙 Llama 3.1 8B (All Patients)
+    if: github.event.inputs.run_llama_3_1_8b != 'false'
     runs-on: ubuntu-latest
 
     steps:
@@ -61,11 +57,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install Modal
+      - name: Install dependencies
         run: |
-          pip install modal
+          pip install modal notion-client httpx pandas python-dotenv
 
       - name: Authenticate Modal
         env:
@@ -74,61 +70,50 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Set patient name
-        id: patient
+      - name: Copy summary_utils.py to pranathi_RAG
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
+          cp rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py pranathi_RAG/
 
-      - name: Run Llama 3.1 8B RAG Summarization
+      - name: Run Llama 3.1 8B Pipeline
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
           cd pranathi_RAG
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+          echo "🚀 Running Llama 3.1 8B summarization for ALL patients from Notion"
+          modal run main.py --output-dir results/llama-3.1-8b
 
-          echo "🚀 Running Llama 3.1 8B summarization for patient: $PATIENT_NAME"
-          
-          modal run main.py \
-            --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display Llama 3.1 8B Results
+      - name: Display Results Summary
         run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="pranathi_RAG/results/evaluation_${PATIENT_NAME}.txt"
+          RESULTS_DIR="pranathi_RAG/results/llama-3.1-8b"
           
-          echo "## 🦙 Llama 3.1 8B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "## 🦙 Llama 3.1 8B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f "$RESULT_FILE" ]; then
+          if [ -f "$RESULTS_DIR/evaluation_results_llama-3.1-8b.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_llama-3.1-8b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
           fi
 
-      - name: Upload Llama 3.1 8B Results
+      - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
-          name: llama-3-1-8b-results-${{ steps.patient.outputs.name }}
-          path: pranathi_RAG/results/
+          name: llama-3.1-8b-results
+          path: pranathi_RAG/results/llama-3.1-8b/
           retention-days: 90
 
   # ============================================
   # JOB 2: MedGemma 4B-IT RAG Summarization
+  # File: rag_models/RAG_To_See_MedGemma_Performance/main_medgemma_4b_modal.py
   # ============================================
-  medgemma-4b-it-summarization:
-    name: MedGemma 4B-IT Summarization
-    if: github.event.inputs.run_medgemma != 'false'
+  medgemma-4b:
+    name: 🏥 MedGemma 4B-IT (All Patients)
+    if: github.event.inputs.run_medgemma_4b != 'false'
     runs-on: ubuntu-latest
 
     steps:
@@ -138,11 +123,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install Modal
+      - name: Install dependencies
         run: |
-          pip install modal
+          pip install modal notion-client httpx pandas python-dotenv
 
       - name: Authenticate Modal
         env:
@@ -151,368 +136,45 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run MedGemma 4B-IT RAG Summarization
+      - name: Run MedGemma 4B-IT Pipeline
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
           cd rag_models/RAG_To_See_MedGemma_Performance
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+          echo "🚀 Running MedGemma 4B-IT summarization for ALL patients from Notion"
+          modal run main_medgemma_4b_modal.py --output-dir results/medgemma-4b
 
-          echo "🚀 Running MedGemma 4B-IT summarization for patient: $PATIENT_NAME"
-          
-          modal run main_medgemma_4b_modal.py \
-            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display MedGemma 4B-IT Results
+      - name: Display Results Summary
         run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}.txt"
+          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-4b"
           
-          echo "## 🏥 MedGemma 4B-IT Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "## 🏥 MedGemma 4B-IT Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f "$RESULT_FILE" ]; then
+          if [ -f "$RESULTS_DIR/evaluation_results_medgemma-4b.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_medgemma-4b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
           fi
 
-      - name: Upload MedGemma 4B-IT Results
+      - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
-          name: medgemma-4b-it-results-${{ steps.patient.outputs.name }}
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/
+          name: medgemma-4b-results
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-4b/
           retention-days: 90
 
   # ============================================
-  # JOB 3: Groq (GPT-OSS-20B) RAG Summarization
+  # JOB 3: MedGemma 27B-Text-IT (4-bit) RAG Summarization
+  # File: rag_models/RAG_To_See_MedGemma_Performance/medgemma_27b_4bit_modal.py
   # ============================================
-  groq-gpt-oss-20b-summarization:
-    name: Groq GPT-OSS-20B Summarization
-    if: github.event.inputs.run_groq_gpt_oss_20b != 'false'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Modal
-        run: |
-          pip install modal
-
-      - name: Authenticate Modal
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run Groq GPT-OSS-20B RAG Summarization
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          cd pranathi_RAG
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
-
-          echo "🚀 Running Groq GPT-OSS-20B summarization for patient: $PATIENT_NAME"
-
-          modal run main_groq.py \
-            --transcript-path="../rag_models/RAG_To_See_MedGemma_Performance/data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="../rag_models/RAG_To_See_MedGemma_Performance/data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="../rag_models/RAG_To_See_MedGemma_Performance/data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display Groq GPT-OSS-20B Results
-        run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="pranathi_RAG/results/evaluation_${PATIENT_NAME}_groq.txt"
-
-          echo "## 🚀 Groq GPT-OSS-20B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f "$RESULT_FILE" ]; then
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      - name: Upload Groq GPT-OSS-20B Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: groq-gpt-oss-20b-results-${{ steps.patient.outputs.name }}
-          path: pranathi_RAG/results/
-          retention-days: 90
-
-  # ============================================
-  # JOB 4: Groq (GPT-OSS-120B) RAG Summarization
-  # ============================================
-  groq-gpt-oss-120b-summarization:
-    name: Groq GPT-OSS-120B Summarization
-    if: github.event.inputs.run_groq_gpt_oss_120b != 'false'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Modal
-        run: |
-          pip install modal
-
-      - name: Authenticate Modal
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run Groq GPT-OSS-120B RAG Summarization
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
-
-          echo "🚀 Running Groq GPT-OSS-120B summarization for patient: $PATIENT_NAME"
-
-          modal run gpt_120b_modal.py \
-            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display Groq GPT-OSS-120B Results
-        run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}_gpt_oss_120b.txt"
-
-          echo "## 🚀 Groq GPT-OSS-120B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f "$RESULT_FILE" ]; then
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      - name: Upload Groq GPT-OSS-120B Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: groq-gpt-oss-120b-results-${{ steps.patient.outputs.name }}
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/
-          retention-days: 90
-
-  # ============================================
-  # JOB 5: Groq (Qwen3-32B) RAG Summarization
-  # ============================================
-  groq-qwen3-32b-summarization:
-    name: Groq Qwen3-32B Summarization
-    if: github.event.inputs.run_groq_qwen3_32b != 'false'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Modal
-        run: |
-          pip install modal
-
-      - name: Authenticate Modal
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run Groq Qwen3-32B RAG Summarization
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
-
-          echo "🚀 Running Groq Qwen3-32B summarization for patient: $PATIENT_NAME"
-
-          modal run qwen_32b_modal.py \
-            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display Groq Qwen3-32B Results
-        run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}_qwen3_32b.txt"
-
-          echo "## 🧠 Groq Qwen3-32B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f "$RESULT_FILE" ]; then
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      - name: Upload Groq Qwen3-32B Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: groq-qwen3-32b-results-${{ steps.patient.outputs.name }}
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/
-          retention-days: 90
-
-  # ============================================
-  # JOB 6: Groq (Llama-4-Scout-17B) RAG Summarization
-  # ============================================
-  groq-llama4-scout-summarization:
-    name: Groq Llama-4-Scout-17B Summarization
-    if: github.event.inputs.run_groq_llama4_scout != 'false'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Modal
-        run: |
-          pip install modal
-
-      - name: Authenticate Modal
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run Groq Llama-4-Scout-17B RAG Summarization
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
-
-          echo "🚀 Running Groq Llama-4-Scout-17B summarization for patient: $PATIENT_NAME"
-
-          modal run groq_llama_4_scout_modal.py \
-            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display Groq Llama-4-Scout-17B Results
-        run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}_llama4_scout.txt"
-
-          echo "## 🦙 Groq Llama-4-Scout-17B Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f "$RESULT_FILE" ]; then
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      - name: Upload Groq Llama-4-Scout-17B Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: groq-llama4-scout-results-${{ steps.patient.outputs.name }}
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/
-          retention-days: 90
-
-  # ============================================
-  # JOB 7: MedGemma 27B-Text-IT (4-bit) RAG Summarization
-  # ============================================
-  medgemma-27b-4bit-summarization:
-    name: MedGemma 27B-Text-IT (4-bit) Summarization
+  medgemma-27b-4bit:
+    name: 🏥 MedGemma 27B (4-bit) (All Patients)
     if: github.event.inputs.run_medgemma_27b_4bit != 'false'
     runs-on: ubuntu-latest
 
@@ -523,11 +185,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install Modal
+      - name: Install dependencies
         run: |
-          pip install modal
+          pip install modal notion-client httpx pandas python-dotenv
 
       - name: Authenticate Modal
         env:
@@ -536,129 +198,339 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Set patient name
-        id: patient
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "name=${{ github.event.inputs.patient_name }}" >> $GITHUB_OUTPUT
-          else
-            echo "name=Rakesh" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run MedGemma 27B-Text-IT (4-bit) RAG Summarization
+      - name: Run MedGemma 27B (4-bit) Pipeline
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
           cd rag_models/RAG_To_See_MedGemma_Performance
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          PATIENT_LOWER=$(echo $PATIENT_NAME | tr '[:upper:]' '[:lower:]')
+          echo "🚀 Running MedGemma 27B (4-bit) summarization for ALL patients from Notion"
+          modal run medgemma_27b_4bit_modal.py --output-dir results/medgemma-27b-4bit
 
-          echo "🚀 Running MedGemma 27B-Text-IT (4-bit) summarization for patient: $PATIENT_NAME"
-
-          modal run medgemma_27b_4bit_modal.py \
-            --transcript-path="data/transcription_${PATIENT_LOWER}.txt" \
-            --openemr-path="data/openemr_${PATIENT_LOWER}.txt" \
-            --reference-path="data/reference_${PATIENT_LOWER}.txt" \
-            --patient-name="$PATIENT_NAME" \
-            --output-dir="results"
-
-      - name: Display MedGemma 27B-Text-IT (4-bit) Results
+      - name: Display Results Summary
         run: |
-          PATIENT_NAME=${{ steps.patient.outputs.name }}
-          RESULT_FILE="rag_models/RAG_To_See_MedGemma_Performance/results/evaluation_${PATIENT_NAME}_medgemma_27b_4bit.txt"
-
-          echo "## 🏥 MedGemma 27B-Text-IT (4-bit) Results - ${PATIENT_NAME}" >> $GITHUB_STEP_SUMMARY
+          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-27b-4bit"
+          
+          echo "## 🏥 MedGemma 27B (4-bit) Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f "$RESULT_FILE" ]; then
+          
+          if [ -f "$RESULTS_DIR/evaluation_results_medgemma-27b-4bit.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
-            cat "$RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_medgemma-27b-4bit.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           else
-            echo "❌ Results file not found at $RESULT_FILE" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
           fi
 
-      - name: Upload MedGemma 27B-Text-IT (4-bit) Results
+      - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
-          name: medgemma-27b-4bit-results-${{ steps.patient.outputs.name }}
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/
+          name: medgemma-27b-4bit-results
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-27b-4bit/
           retention-days: 90
 
   # ============================================
-  # JOB 8: Compare Results (Optional - runs after all complete)
+  # JOB 4: Groq GPT-OSS-20B RAG Summarization
+  # File: pranathi_RAG/main_groq.py
   # ============================================
-  compare-model-results:
-    name: Compare Model Results
-    needs: [llama-3-1-8b-summarization, medgemma-4b-it-summarization, groq-gpt-oss-20b-summarization, groq-gpt-oss-120b-summarization, groq-qwen3-32b-summarization, groq-llama4-scout-summarization, medgemma-27b-4bit-summarization]
-    if: |
-      always() &&
-      github.event.inputs.run_evaluation != 'false' &&
-      (needs.llama-3-1-8b-summarization.result == 'success' || needs.medgemma-4b-it-summarization.result == 'success' || needs.groq-gpt-oss-20b-summarization.result == 'success' || needs.groq-gpt-oss-120b-summarization.result == 'success' || needs.groq-qwen3-32b-summarization.result == 'success' || needs.groq-llama4-scout-summarization.result == 'success' || needs.medgemma-27b-4bit-summarization.result == 'success')
+  gpt-oss-20b:
+    name: 🚀 Groq GPT-OSS-20B (All Patients)
+    if: github.event.inputs.run_gpt_oss_20b != 'false'
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install modal notion-client httpx pandas python-dotenv
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Copy summary_utils.py to pranathi_RAG
+        run: |
+          cp rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py pranathi_RAG/
+
+      - name: Run Groq GPT-OSS-20B Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
+        run: |
+          cd pranathi_RAG
+          echo "🚀 Running Groq GPT-OSS-20B summarization for ALL patients from Notion"
+          modal run main_groq.py --output-dir results/gpt-oss-20b
+
+      - name: Display Results Summary
+        run: |
+          RESULTS_DIR="pranathi_RAG/results/gpt-oss-20b"
+          
+          echo "## 🚀 Groq GPT-OSS-20B Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULTS_DIR/evaluation_results_gpt-oss-20b.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_gpt-oss-20b.csv" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpt-oss-20b-results
+          path: pranathi_RAG/results/gpt-oss-20b/
+          retention-days: 90
+
+  # ============================================
+  # JOB 5: Groq GPT-OSS-120B RAG Summarization
+  # File: rag_models/RAG_To_See_MedGemma_Performance/gpt_120b_modal.py
+  # ============================================
+  gpt-oss-120b:
+    name: 🚀 Groq GPT-OSS-120B (All Patients)
+    if: github.event.inputs.run_gpt_oss_120b != 'false'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install modal notion-client httpx pandas python-dotenv
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run Groq GPT-OSS-120B Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
+        run: |
+          cd rag_models/RAG_To_See_MedGemma_Performance
+          echo "🚀 Running Groq GPT-OSS-120B summarization for ALL patients from Notion"
+          modal run gpt_120b_modal.py --output-dir results/gpt-oss-120b
+
+      - name: Display Results Summary
+        run: |
+          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/gpt-oss-120b"
+          
+          echo "## 🚀 Groq GPT-OSS-120B Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULTS_DIR/evaluation_results_gpt-oss-120b.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_gpt-oss-120b.csv" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpt-oss-120b-results
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/gpt-oss-120b/
+          retention-days: 90
+
+  # ============================================
+  # JOB 6: Groq Qwen3-32B RAG Summarization
+  # File: rag_models/RAG_To_See_MedGemma_Performance/qwen_32b_modal.py
+  # ============================================
+  qwen3-32b:
+    name: 🧠 Groq Qwen3-32B (All Patients)
+    if: github.event.inputs.run_qwen3_32b != 'false'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install modal notion-client httpx pandas python-dotenv
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run Groq Qwen3-32B Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
+        run: |
+          cd rag_models/RAG_To_See_MedGemma_Performance
+          echo "🚀 Running Groq Qwen3-32B summarization for ALL patients from Notion"
+          modal run qwen_32b_modal.py --output-dir results/qwen3-32b
+
+      - name: Display Results Summary
+        run: |
+          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/qwen3-32b"
+          
+          echo "## 🧠 Groq Qwen3-32B Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULTS_DIR/evaluation_results_qwen3-32b.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_qwen3-32b.csv" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: qwen3-32b-results
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/qwen3-32b/
+          retention-days: 90
+
+  # ============================================
+  # JOB 7: Groq Llama-4-Scout-17B RAG Summarization
+  # File: rag_models/RAG_To_See_MedGemma_Performance/groq_llama_4_scout_modal.py
+  # ============================================
+  llama4-scout:
+    name: 🦙 Groq Llama-4-Scout-17B (All Patients)
+    if: github.event.inputs.run_llama4_scout != 'false'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install modal notion-client httpx pandas python-dotenv
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Run Groq Llama-4-Scout-17B Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
+          VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
+        run: |
+          cd rag_models/RAG_To_See_MedGemma_Performance
+          echo "🚀 Running Groq Llama-4-Scout-17B summarization for ALL patients from Notion"
+          modal run groq_llama_4_scout_modal.py --output-dir results/llama4-scout
+
+      - name: Display Results Summary
+        run: |
+          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/llama4-scout"
+          
+          echo "## 🦙 Groq Llama-4-Scout-17B Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "$RESULTS_DIR/evaluation_results_llama4-scout.csv" ]; then
+            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat "$RESULTS_DIR/evaluation_results_llama4-scout.csv" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Results CSV not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: llama4-scout-results
+          path: rag_models/RAG_To_See_MedGemma_Performance/results/llama4-scout/
+          retention-days: 90
+
+  # ============================================
+  # JOB 8: Compare All Model Results
+  # Uses: rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py
+  # ============================================
+  compare-results:
+    name: 📊 Compare All Models
+    needs: [llama-3-1-8b, medgemma-4b, medgemma-27b-4bit, gpt-oss-20b, gpt-oss-120b, qwen3-32b, llama4-scout]
+    if: always()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install pandas notion-client httpx python-dotenv
+
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
           path: all-results
-          pattern: '*-results-*'
-          merge-multiple: true
 
-      - name: Generate Comparison Report
+      - name: Generate Consolidated Report
         run: |
-          echo "## 📊 Model Comparison Report" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Model | BLEU | ROUGE-L | SBERT | BERTScore F1 | Total Time |" >> $GITHUB_STEP_SUMMARY
-          echo "|-------|------|---------|-------|--------------|------------|" >> $GITHUB_STEP_SUMMARY
+          cd rag_models/RAG_To_See_MedGemma_Performance
+          python summary_utils.py --report ../../all-results ../../all-results
 
-          # Process each result file
-          for file in all-results/evaluation_*.txt; do
-            if [ -f "$file" ]; then
-              # Detect model type
-              if grep -q "medgemma-27b" "$file" 2>/dev/null || grep -q "MedGemma 27B" "$file" 2>/dev/null; then
-                MODEL="MedGemma 27B-Text-IT (4-bit)"
-              elif grep -q "gpt-oss-120b" "$file" 2>/dev/null; then
-                MODEL="Groq GPT-OSS-120B"
-              elif grep -q "gpt-oss-20b" "$file" 2>/dev/null || grep -q "Groq/openai/gpt-oss-20b" "$file" 2>/dev/null; then
-                MODEL="Groq GPT-OSS-20B"
-              elif grep -q "qwen3-32b" "$file" 2>/dev/null || grep -q "Qwen3-32B" "$file" 2>/dev/null; then
-                MODEL="Groq Qwen3-32B"
-              elif grep -q "llama-4-scout" "$file" 2>/dev/null || grep -q "Llama-4-Scout" "$file" 2>/dev/null; then
-                MODEL="Groq Llama-4-Scout-17B"
-              elif grep -q "Llama" "$file" 2>/dev/null; then
-                MODEL="Llama 3.1 8B"
-              elif grep -q "MedGemma" "$file" 2>/dev/null; then
-                MODEL="MedGemma 4B-IT"
-              else
-                MODEL="Unknown"
-              fi
+      - name: Append to GitHub Summary
+        run: |
+          if [ -f "all-results/comparison_report.md" ]; then
+            cat all-results/comparison_report.md >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ⚠️ No comparison report generated" >> $GITHUB_STEP_SUMMARY
+            echo "Some model jobs may have failed or been skipped." >> $GITHUB_STEP_SUMMARY
+          fi
 
-              # Extract metrics
-              BLEU=$(grep "BLEU Score" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
-              ROUGE=$(grep "ROUGE-L" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
-              SBERT=$(grep "SBERT" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
-              BERT=$(grep "BERTScore" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
-              TIME=$(grep "Total Time" "$file" 2>/dev/null | head -1 | awk '{print $NF}' || echo "N/A")
-
-              echo "| $MODEL | $BLEU | $ROUGE | $SBERT | $BERT | $TIME |" >> $GITHUB_STEP_SUMMARY
-            fi
-          done
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "---" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 📋 Detailed Results" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          # Show detailed results for each model (full content)
-          for file in all-results/evaluation_*.txt; do
-            if [ -f "$file" ]; then
-              filename=$(basename "$file")
-              echo "#### $filename" >> $GITHUB_STEP_SUMMARY
-              echo '```' >> $GITHUB_STEP_SUMMARY
-              cat "$file" >> $GITHUB_STEP_SUMMARY
-              echo '```' >> $GITHUB_STEP_SUMMARY
-              echo "" >> $GITHUB_STEP_SUMMARY
-            fi
-          done
+      - name: Upload Consolidated Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: consolidated-comparison
+          path: |
+            all-results/consolidated_results.csv
+            all-results/model_comparison.csv
+            all-results/comparison_report.md
+          retention-days: 90
