@@ -21,7 +21,7 @@ import os
 from typing import Dict, List, Any
 
 # Local import for Notion fetching (runs on local machine, not Modal)
-from summary_utils import NotionFetcher
+# NotionFetcher is imported inside main() to avoid Modal container import issues
 
 # ============================================================================
 # Modal App Configuration
@@ -599,6 +599,9 @@ def main(output_dir: str = "results"):
         output_dir: Directory for output files (CSV, summaries, report)
     """
     import time
+
+    # Import here - this runs LOCALLY only, not on Modal containers
+    from summary_utils import NotionFetcher
 
     print("=" * 80)
     print("🏥 MEDICAL TRANSCRIPT SUMMARIZATION PIPELINE")

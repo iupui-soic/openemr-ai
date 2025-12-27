@@ -1,16 +1,16 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses Groq API with GPT-OSS-120B for inference, Modal for vector database storage
+Uses Llama 3.1 8B (vLLM) to generate SOAP-format summaries with schema guidance from vector DB
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + GPT-OSS-120B (Groq)
+2. Generates summaries for each patient using RAG + Llama 3.1 8B
 3. Evaluates summaries against manual references
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_gpt_oss_120b_pipeline.py
-    modal run rag_gpt_oss_120b_pipeline.py --output-dir results/gpt-oss-120b
+    modal run rag_llama_3_1_8b_pipeline.py
+    modal run rag_llama_3_1_8b_pipeline.py --output-dir results/llama-3.1-8b
 
 Requirements (local):
     pip install notion-client httpx pandas python-dotenv
@@ -20,38 +20,41 @@ import modal
 import os
 from typing import Dict, List, Any
 
-# Local import for Notion fetching (runs on local machine, not Modal)
 # NotionFetcher is imported inside main() to avoid Modal container import issues
+# It only runs locally, not on Modal's remote containers
 
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-gpt-oss-120b")
+app = modal.App("medical-summarization-rag-llama-3-1-8b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "openai/gpt-oss-120b"
-MODEL_SHORT_NAME = "gpt-oss-120b"
+MODEL_NAME = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+MODEL_SHORT_NAME = "llama-3.1-8b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
 # Modal Images
 # ============================================================================
 
-# Image for summarization (Groq + RAG)
+# Image for summarization (vLLM + RAG)
 summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
-        "groq>=0.4.0",
         "langchain>=0.1.0",
         "langchain-community>=0.0.20",
         "langchain-huggingface>=0.0.1",
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
+        "transformers>=4.37.0",
+        "torch>=2.1.0",
+        "huggingface-hub>=0.20.0",
+        "vllm>=0.3.0",
         "tiktoken>=0.5.0",
     )
 )
@@ -75,34 +78,68 @@ evaluator_image = (
 
 @app.cls(
     image=summarizer_image,
+    gpu="A10G",
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
-    secrets=[modal.Secret.from_dict({"GROQ_API_KEY": os.environ.get("GROQ_API_KEY", "")})],
+    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using Groq API with GPT-OSS-120B.
+    RAG-based medical summarizer using Llama 3.1 8B with vLLM.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
+
+    This significantly reduces costs since Llama 3.1 8B takes ~30-60s to load.
     """
 
     @modal.enter()
     def load_models(self):
         """Load all models once when container starts."""
-        from groq import Groq
+        from vllm import LLM, SamplingParams
         from langchain_huggingface import HuggingFaceEmbeddings
         from langchain_chroma import Chroma
         from sentence_transformers import SentenceTransformer
         import tiktoken
+        import time
 
         print("🔄 Loading models (one-time initialization)...")
         print(f"   Model: {MODEL_NAME}")
 
-        # Initialize Groq client
-        print("  → Initializing Groq client...")
-        self.client = Groq()
+        # ==============================
+        # LOAD LLAMA 3.1 8B WITH VLLM
+        # ==============================
+        print("  → Loading Llama 3.1 8B with vLLM...")
+        start_load = time.time()
 
+        self.llm = LLM(
+            model=MODEL_NAME,
+            dtype="float16",
+            gpu_memory_utilization=0.9,
+            max_model_len=8192,
+        )
+
+        load_time = time.time() - start_load
+        print(f"  → Llama loaded in {load_time:.2f}s")
+
+        # Store sampling params for reuse
+        self.sampling_params_disease = SamplingParams(
+            temperature=0.1,
+            top_p=0.9,
+            max_tokens=20,
+            stop=["</s>", "[/INST]", "\n"],
+        )
+
+        self.sampling_params_summary = SamplingParams(
+            temperature=0.3,
+            top_p=0.95,
+            max_tokens=4096,
+            stop=["</s>", "[/INST]"],
+        )
+
+        # ==============================
+        # LOAD RAG COMPONENTS
+        # ==============================
         # Load BioBERT embeddings for ChromaDB
         print("  → Loading BioBERT embeddings...")
         self.embeddings = HuggingFaceEmbeddings(
@@ -148,7 +185,7 @@ class MedicalSummarizer:
             patient_name: str = "Patient",
     ) -> Dict[str, Any]:
         """
-        Generate SOAP-format medical summary from transcript using RAG + Groq.
+        Generate SOAP-format medical summary from transcript using RAG + Llama.
 
         Args:
             transcript_text: Doctor-patient conversation transcript
@@ -168,7 +205,7 @@ class MedicalSummarizer:
         start_total = time.time()
 
         # ==============================
-        # 1. EXTRACT DISEASE USING GROQ
+        # 1. EXTRACT DISEASE USING LLAMA
         # ==============================
         print("🔹 Extracting disease from transcript...")
         start_retrieval = time.time()
@@ -182,16 +219,13 @@ Transcript:
 
 Primary Disease:"""
 
-        disease_response = self.client.chat.completions.create(
-            model=MODEL_NAME,
-            messages=[{"role": "user", "content": disease_prompt}],
-            temperature=0.3,
-            max_tokens=20,
-            stop=["\n", ".", ","],
-        )
+        disease_output = self.llm.generate([disease_prompt], self.sampling_params_disease)
+        detected_disease = disease_output[0].outputs[0].text.strip()
 
-        raw_disease = disease_response.choices[0].message.content
-        detected_disease = raw_disease.strip() if raw_disease else "General"
+        # Clean up
+        if not detected_disease:
+            detected_disease = "General"
+
         print(f"✅ Detected Disease: {detected_disease}")
 
         # ==============================
@@ -218,9 +252,9 @@ Primary Disease:"""
         print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
         # ==============================
-        # 3. GENERATE SUMMARY WITH GROQ
+        # 3. GENERATE SUMMARY WITH LLAMA
         # ==============================
-        print("🔹 Generating summary with Groq (GPT-OSS-120B)...")
+        print("🔹 Generating summary with Llama 3.1 8B...")
         start_gen = time.time()
 
         prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in narrative prose format by extracting information from the provided transcript and medical records.
@@ -263,15 +297,10 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
 
         print(f"📊 Input tokens: {input_tokens:,}")
 
-        # Generate with Groq
+        # Generate with Llama
         try:
-            response = self.client.chat.completions.create(
-                model=MODEL_NAME,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.3,
-                max_tokens=4096,
-            )
-            generated_text = response.choices[0].message.content.strip()
+            outputs = self.llm.generate([prompt], self.sampling_params_summary)
+            generated_text = outputs[0].outputs[0].text.strip()
 
             if self.encoding:
                 output_tokens = len(self.encoding.encode(generated_text))
@@ -279,7 +308,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
                 output_tokens = int(len(generated_text.split()) * 1.3)
 
         except Exception as e:
-            print(f"❌ Groq generation failed: {e}")
+            print(f"❌ Llama generation failed: {e}")
             generated_text = f"Error generating summary: {str(e)}"
             output_tokens = 0
 
@@ -609,7 +638,7 @@ def main(output_dir: str = "results"):
         print(f"\n[{i+1}/{len(patients)}] Processing: {patient_name}")
 
         try:
-            # Generate summary (runs on Modal - Groq API call)
+            # Generate summary (runs on Modal A10G GPU with vLLM)
             summary_result = summarizer.generate_summary.remote(
                 transcript_text=patient["transcript"],
                 openemr_text=patient.get("openemr_data", ""),

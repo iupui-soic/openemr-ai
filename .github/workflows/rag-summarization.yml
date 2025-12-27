@@ -33,17 +33,17 @@ on:
         default: true
   push:
     paths:
-      - 'pranathi_RAG/**'
       - 'rag_models/RAG_To_See_MedGemma_Performance/**'
       - '.github/workflows/rag-summarization.yml'
 
 env:
   PYTHON_VERSION: '3.11'
+  WORK_DIR: 'rag_models/RAG_To_See_MedGemma_Performance'
 
 jobs:
   # ============================================
   # JOB 1: Llama 3.1 8B RAG Summarization
-  # File: pranathi_RAG/main.py
+  # File: llama_3_1_8b_modal.py
   # ============================================
   llama-3-1-8b:
     name: 🦙 Llama 3.1 8B (All Patients)
@@ -70,23 +70,19 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Copy summary_utils.py to pranathi_RAG
-        run: |
-          cp rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py pranathi_RAG/
-
       - name: Run Llama 3.1 8B Pipeline
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd pranathi_RAG
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running Llama 3.1 8B summarization for ALL patients from Notion"
-          modal run main.py --output-dir results/llama-3.1-8b
+          modal run llama_3_1_8b_modal.py --output-dir results/llama-3.1-8b
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="pranathi_RAG/results/llama-3.1-8b"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/llama-3.1-8b"
           
           echo "## 🦙 Llama 3.1 8B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -104,12 +100,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: llama-3.1-8b-results
-          path: pranathi_RAG/results/llama-3.1-8b/
+          path: ${{ env.WORK_DIR }}/results/llama-3.1-8b/
           retention-days: 90
 
   # ============================================
   # JOB 2: MedGemma 4B-IT RAG Summarization
-  # File: rag_models/RAG_To_See_MedGemma_Performance/main_medgemma_4b_modal.py
+  # File: main_medgemma_4b_modal.py
   # ============================================
   medgemma-4b:
     name: 🏥 MedGemma 4B-IT (All Patients)
@@ -142,13 +138,13 @@ jobs:
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running MedGemma 4B-IT summarization for ALL patients from Notion"
           modal run main_medgemma_4b_modal.py --output-dir results/medgemma-4b
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-4b"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/medgemma-4b"
           
           echo "## 🏥 MedGemma 4B-IT Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -166,12 +162,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: medgemma-4b-results
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-4b/
+          path: ${{ env.WORK_DIR }}/results/medgemma-4b/
           retention-days: 90
 
   # ============================================
   # JOB 3: MedGemma 27B-Text-IT (4-bit) RAG Summarization
-  # File: rag_models/RAG_To_See_MedGemma_Performance/medgemma_27b_4bit_modal.py
+  # File: medgemma_27b_4bit_modal.py
   # ============================================
   medgemma-27b-4bit:
     name: 🏥 MedGemma 27B (4-bit) (All Patients)
@@ -204,13 +200,13 @@ jobs:
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running MedGemma 27B (4-bit) summarization for ALL patients from Notion"
           modal run medgemma_27b_4bit_modal.py --output-dir results/medgemma-27b-4bit
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-27b-4bit"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/medgemma-27b-4bit"
           
           echo "## 🏥 MedGemma 27B (4-bit) Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -228,12 +224,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: medgemma-27b-4bit-results
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/medgemma-27b-4bit/
+          path: ${{ env.WORK_DIR }}/results/medgemma-27b-4bit/
           retention-days: 90
 
   # ============================================
   # JOB 4: Groq GPT-OSS-20B RAG Summarization
-  # File: pranathi_RAG/main_groq.py
+  # File: gpt_oss_20b_modal.py
   # ============================================
   gpt-oss-20b:
     name: 🚀 Groq GPT-OSS-20B (All Patients)
@@ -260,23 +256,19 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Copy summary_utils.py to pranathi_RAG
-        run: |
-          cp rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py pranathi_RAG/
-
       - name: Run Groq GPT-OSS-20B Pipeline
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd pranathi_RAG
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq GPT-OSS-20B summarization for ALL patients from Notion"
-          modal run main_groq.py --output-dir results/gpt-oss-20b
+          modal run gpt_oss_20b_modal.py --output-dir results/gpt-oss-20b
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="pranathi_RAG/results/gpt-oss-20b"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/gpt-oss-20b"
           
           echo "## 🚀 Groq GPT-OSS-20B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -294,12 +286,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gpt-oss-20b-results
-          path: pranathi_RAG/results/gpt-oss-20b/
+          path: ${{ env.WORK_DIR }}/results/gpt-oss-20b/
           retention-days: 90
 
   # ============================================
   # JOB 5: Groq GPT-OSS-120B RAG Summarization
-  # File: rag_models/RAG_To_See_MedGemma_Performance/gpt_120b_modal.py
+  # File: gpt_120b_modal.py
   # ============================================
   gpt-oss-120b:
     name: 🚀 Groq GPT-OSS-120B (All Patients)
@@ -332,13 +324,13 @@ jobs:
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq GPT-OSS-120B summarization for ALL patients from Notion"
           modal run gpt_120b_modal.py --output-dir results/gpt-oss-120b
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/gpt-oss-120b"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/gpt-oss-120b"
           
           echo "## 🚀 Groq GPT-OSS-120B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -356,12 +348,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gpt-oss-120b-results
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/gpt-oss-120b/
+          path: ${{ env.WORK_DIR }}/results/gpt-oss-120b/
           retention-days: 90
 
   # ============================================
   # JOB 6: Groq Qwen3-32B RAG Summarization
-  # File: rag_models/RAG_To_See_MedGemma_Performance/qwen_32b_modal.py
+  # File: qwen_32b_modal.py
   # ============================================
   qwen3-32b:
     name: 🧠 Groq Qwen3-32B (All Patients)
@@ -394,13 +386,13 @@ jobs:
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq Qwen3-32B summarization for ALL patients from Notion"
           modal run qwen_32b_modal.py --output-dir results/qwen3-32b
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/qwen3-32b"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/qwen3-32b"
           
           echo "## 🧠 Groq Qwen3-32B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -418,12 +410,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: qwen3-32b-results
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/qwen3-32b/
+          path: ${{ env.WORK_DIR }}/results/qwen3-32b/
           retention-days: 90
 
   # ============================================
   # JOB 7: Groq Llama-4-Scout-17B RAG Summarization
-  # File: rag_models/RAG_To_See_MedGemma_Performance/groq_llama_4_scout_modal.py
+  # File: groq_llama_4_scout_modal.py
   # ============================================
   llama4-scout:
     name: 🦙 Groq Llama-4-Scout-17B (All Patients)
@@ -456,13 +448,13 @@ jobs:
           VISHNU_NOTION: ${{ secrets.VISHNU_NOTION }}
           VISHNU_NOTION_DB_ID: ${{ secrets.VISHNU_NOTION_DB_ID }}
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq Llama-4-Scout-17B summarization for ALL patients from Notion"
           modal run groq_llama_4_scout_modal.py --output-dir results/llama4-scout
 
       - name: Display Results Summary
         run: |
-          RESULTS_DIR="rag_models/RAG_To_See_MedGemma_Performance/results/llama4-scout"
+          RESULTS_DIR="${{ env.WORK_DIR }}/results/llama4-scout"
           
           echo "## 🦙 Groq Llama-4-Scout-17B Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -480,12 +472,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: llama4-scout-results
-          path: rag_models/RAG_To_See_MedGemma_Performance/results/llama4-scout/
+          path: ${{ env.WORK_DIR }}/results/llama4-scout/
           retention-days: 90
 
   # ============================================
   # JOB 8: Compare All Model Results
-  # Uses: rag_models/RAG_To_See_MedGemma_Performance/summary_utils.py
+  # Uses: summary_utils.py generate_consolidated_report()
   # ============================================
   compare-results:
     name: 📊 Compare All Models
@@ -513,7 +505,7 @@ jobs:
 
       - name: Generate Consolidated Report
         run: |
-          cd rag_models/RAG_To_See_MedGemma_Performance
+          cd ${{ env.WORK_DIR }}
           python summary_utils.py --report ../../all-results ../../all-results
 
       - name: Append to GitHub Summary

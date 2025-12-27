@@ -1,16 +1,16 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses Groq API with GPT-OSS-120B for inference, Modal for vector database storage
+Uses Groq API with GPT-OSS-20B for inference, Modal for vector database storage
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + GPT-OSS-120B (Groq)
+2. Generates summaries for each patient using RAG + GPT-OSS-20B (Groq)
 3. Evaluates summaries against manual references
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_gpt_oss_120b_pipeline.py
-    modal run rag_gpt_oss_120b_pipeline.py --output-dir results/gpt-oss-120b
+    modal run rag_gpt_oss_20b_pipeline.py
+    modal run rag_gpt_oss_20b_pipeline.py --output-dir results/gpt-oss-20b
 
 Requirements (local):
     pip install notion-client httpx pandas python-dotenv
@@ -27,14 +27,14 @@ from typing import Dict, List, Any
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-gpt-oss-120b")
+app = modal.App("medical-summarization-rag-gpt-oss-20b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "openai/gpt-oss-120b"
-MODEL_SHORT_NAME = "gpt-oss-120b"
+MODEL_NAME = "openai/gpt-oss-20b"
+MODEL_SHORT_NAME = "gpt-oss-20b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
@@ -81,7 +81,7 @@ evaluator_image = (
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using Groq API with GPT-OSS-120B.
+    RAG-based medical summarizer using Groq API with GPT-OSS-20B.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
@@ -220,7 +220,7 @@ Primary Disease:"""
         # ==============================
         # 3. GENERATE SUMMARY WITH GROQ
         # ==============================
-        print("🔹 Generating summary with Groq (GPT-OSS-120B)...")
+        print("🔹 Generating summary with Groq (GPT-OSS-20B)...")
         start_gen = time.time()
 
         prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in narrative prose format by extracting information from the provided transcript and medical records.

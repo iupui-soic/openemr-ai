@@ -46,6 +46,7 @@ class NotionFetcher:
         - transcript: str (doctor-patient conversation)
         - openemr_data: str (EHR data, may be empty string)
         - manual_reference_summary: str (reference for evaluation, may be empty string)
+        - To use add inside main call
     """
 
     def __init__(self, api_key: Optional[str] = None, database_id: Optional[str] = None):
