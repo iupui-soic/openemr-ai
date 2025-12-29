@@ -1,5 +1,10 @@
 /**
  * SMART Ambient Listening Application
+ *
+ * Flow:
+ * 1. User clicks "Start Recording" → Deploy Modal app + Warmup (model loads)
+ * 2. User speaks...
+ * 3. User clicks "Stop Recording" → Transcribe (fast, container already warm)
  */
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -8,11 +13,60 @@ document.addEventListener('DOMContentLoaded', async () => {
     let patient = null;
     let recorder = null;
     let transcriptionHistory = [];
+    let modalDeployed = false;
+    let warmupInterval = null;
+    let deployPromise = null;
 
     // Configuration
     const config = window.SMART_CONFIG || {
         transcriptionServiceUrl: 'http://localhost:8001'
     };
+
+    /**
+     * Send a warmup ping to keep the container alive.
+     */
+    async function sendWarmupPing() {
+        console.log('Sending warmup ping to keep container alive...');
+        try {
+            const response = await fetch(`${config.transcriptionServiceUrl}/warmup`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: '{}'
+            });
+            if (!response.ok) {
+                console.warn('Warmup ping failed, container may scale down');
+            } else {
+                console.log('Warmup ping successful');
+            }
+        } catch (error) {
+            console.error('Failed to send warmup ping:', error);
+        }
+    }
+
+    /**
+     * Deploy Modal app and warm up the container.
+     */
+    async function deployAndWarmup() {
+        console.log('Deploying Modal app and warming up container...');
+        try {
+            const response = await fetch(`${config.transcriptionServiceUrl}/deploy-and-warmup`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: '{}'
+            });
+            if (!response.ok) {
+                const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
+                throw new Error(error.detail || `Server error: ${response.status}`);
+            }
+            const result = await response.json();
+            console.log('Modal app deployed and warmed up:', result);
+            modalDeployed = true;
+            return true;
+        } catch (error) {
+            console.error('Failed to deploy/warmup:', error);
+            return false;
+        }
+    }
 
     // DOM Elements
     const elements = {
@@ -52,14 +106,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Try to complete SMART authorization
         try {
             smartClient = await FHIR.oauth2.ready();
             await connectToEHR();
         } catch (error) {
             console.log('No SMART context available:', error.message);
             updateConnectionStatus(false, 'Not connected to EHR. Launch from OpenEMR patient dashboard.');
-            // Allow standalone testing without SMART context
             elements.btnAmbient.disabled = false;
         }
 
@@ -73,11 +125,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function connectToEHR() {
         try {
             updateConnectionStatus(true, 'Connected to OpenEMR');
-
-            // Get patient from SMART context
             patient = await smartClient.patient.read();
             displayPatientBanner(patient);
-
             elements.btnAmbient.disabled = false;
         } catch (error) {
             console.error('EHR connection error:', error);
@@ -194,21 +243,81 @@ document.addEventListener('DOMContentLoaded', async () => {
      * Handle recording start
      */
     function handleRecordingStart() {
+        console.log('handleRecordingStart called');
+
         elements.btnAmbient.classList.add('recording');
         elements.btnAmbient.querySelector('.btn-text').textContent = 'Stop Listening';
         elements.recordingStatus.classList.remove('hidden');
-        elements.transcriptionResults.innerHTML = '';
+        elements.transcriptionResults.innerHTML = `
+            <p class="placeholder-text">
+                🚀 Setting up transcription service (first time may take 1-2 minutes)...
+            </p>
+        `;
+
+        // Start deployment - store promise so handleRecordingStop can wait for it
+        deployPromise = deployAndWarmup();
+
+        deployPromise.then(success => {
+            if (success) {
+                elements.transcriptionResults.innerHTML = `
+                    <p class="placeholder-text">
+                        ✅ Transcription service ready. Recording...
+                    </p>
+                `;
+
+                // Start sending warmup pings every 60 seconds to keep container alive
+                warmupInterval = setInterval(sendWarmupPing, 60000);
+                console.log('Warmup interval started');
+            } else {
+                elements.transcriptionResults.innerHTML = `
+                    <p class="placeholder-text">
+                        ⚠️ Service setup in progress... Recording will be transcribed when ready.
+                    </p>
+                `;
+            }
+        });
     }
 
     /**
      * Handle recording stop
      */
     async function handleRecordingStop(blob) {
+        console.log('handleRecordingStop called');
+
+        // Stop warmup pings IMMEDIATELY
+        if (warmupInterval) {
+            console.log('Clearing warmup interval...');
+            clearInterval(warmupInterval);
+            warmupInterval = null;
+            console.log('Warmup interval cleared');
+        } else {
+            console.log('No warmup interval to clear');
+        }
+
         elements.btnAmbient.classList.remove('recording');
         elements.btnAmbient.querySelector('.btn-text').textContent = 'Start Ambient Listening';
         elements.recordingStatus.classList.add('hidden');
         elements.transcriptionLoading.classList.remove('hidden');
+
         try {
+            // Wait for deployment to complete if it's still in progress
+            if (deployPromise) {
+                elements.transcriptionResults.innerHTML = `
+                    <p class="placeholder-text">
+                        ⏳ Finishing transcription service setup... Please wait.
+                    </p>
+                `;
+                const deploySuccess = await deployPromise;
+                if (!deploySuccess) {
+                    throw new Error('Transcription service failed to initialize. Please try again.');
+                }
+                elements.transcriptionResults.innerHTML = `
+                    <p class="placeholder-text">
+                        📝 Transcribing your recording...
+                    </p>
+                `;
+            }
+
             const result = await transcribeAudio(blob);
             displayTranscription(result);
             addToHistory(result);
@@ -218,6 +327,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             showError(`Transcription failed: ${error.message}`);
         } finally {
             elements.transcriptionLoading.classList.add('hidden');
+            deployPromise = null;
         }
     }
 
@@ -225,6 +335,15 @@ document.addEventListener('DOMContentLoaded', async () => {
      * Handle recording error
      */
     function handleRecordingError(error) {
+        console.log('handleRecordingError called');
+
+        // Stop warmup pings on error too
+        if (warmupInterval) {
+            console.log('Clearing warmup interval due to error...');
+            clearInterval(warmupInterval);
+            warmupInterval = null;
+        }
+
         showError(`Recording error: ${error.message}`);
         elements.btnAmbient.classList.remove('recording');
         elements.btnAmbient.querySelector('.btn-text').textContent = 'Start Ambient Listening';
@@ -312,6 +431,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    /**
+     * Generate SOAP note from transcription
+     */
     async function generateSOAPNote() {
         const text = transcriptionHistory.map(h => h.text).join('\n\n');
         if (!text.trim()) {
@@ -341,6 +463,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    /**
+     * Display SOAP note
+     */
     function displaySOAPNote(result) {
         const sections = parseSOAPSections(result.soap_note || result.summary || '');
         elements.soapResults.innerHTML = `
@@ -366,6 +491,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
+    /**
+     * Parse SOAP sections from text
+     */
     function parseSOAPSections(text) {
         const sections = {
             subjective: '',
@@ -391,6 +519,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         return sections;
     }
 
+    /**
+     * Copy SOAP note to clipboard
+     */
     window.copySOAPNote = async function() {
         const soapText = elements.soapResults.innerText;
         try {
@@ -401,6 +532,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     };
 
+    /**
+     * Clear session
+     */
     function clearSession() {
         transcriptionHistory = [];
         elements.transcriptionResults.innerHTML = `
