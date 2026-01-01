@@ -1,0 +1,2512 @@
+{
+  "library": {
+    "annotation": [
+      {
+        "translatorVersion": "3.3.2",
+        "translatorOptions": "EnableDateRangeOptimization,EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion,DisableMethodInvocation",
+        "signatureLevel": "All",
+        "type": "CqlToElmInfo"
+      },
+      {
+        "type": "Annotation",
+        "s": {
+          "r": "133",
+          "s": [
+            {
+              "value": [
+                "",
+                "library \"Prostate-Cancer-Screening-OpenEMR\" version '1.0.0'"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "identifier": {
+      "id": "Prostate-Cancer-Screening-OpenEMR",
+      "version": "1.0.0"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [
+        {
+          "localIdentifier": "System",
+          "uri": "urn:hl7-org:elm-types:r1"
+        },
+        {
+          "localId": "1",
+          "locator": "3:1-3:26",
+          "localIdentifier": "FHIR",
+          "uri": "http://hl7.org/fhir",
+          "version": "4.0.0",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "1",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "using "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "FHIR"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version '4.0.0'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "includes": {
+      "def": [
+        {
+          "localId": "2",
+          "locator": "5:1-5:56",
+          "localIdentifier": "FHIRHelpers",
+          "path": "FHIRHelpers",
+          "version": "4.0.0",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "2",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "include "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "\"FHIRHelpers\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version ",
+                      "'4.0.0'",
+                      " called ",
+                      "FHIRHelpers"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "valueSets": {
+      "def": [
+        {
+          "localId": "3",
+          "locator": "7:1-7:115",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+          "name": "Prostate Specific Antigen Test VS",
+          "id": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.215",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "3",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "valueset ",
+                      "\"Prostate Specific Antigen Test VS\"",
+                      ": ",
+                      "'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.215'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "localId": "4",
+          "locator": "8:1-8:113",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+          "name": "Digital Rectal Examination VS",
+          "id": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.7643.3.1042",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "4",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "valueset ",
+                      "\"Digital Rectal Examination VS\"",
+                      ": ",
+                      "'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.7643.3.1042'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "localId": "5",
+          "locator": "9:1-9:102",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+          "name": "Prostate biopsy VS",
+          "id": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1078.1248",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "5",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "valueset ",
+                      "\"Prostate biopsy VS\"",
+                      ": ",
+                      "'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1078.1248'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "def": [
+        {
+          "locator": "11:1-11:15",
+          "name": "Patient"
+        }
+      ]
+    },
+    "statements": {
+      "def": [
+        {
+          "locator": "11:1-11:15",
+          "name": "Patient",
+          "context": "Patient",
+          "expression": {
+            "type": "SingletonFrom",
+            "operand": {
+              "locator": "11:1-11:15",
+              "dataType": "{http://hl7.org/fhir}Patient",
+              "type": "Retrieve"
+            }
+          }
+        },
+        {
+          "localId": "11",
+          "locator": "13:1-16:43",
+          "name": "generic_procedure_valuesets",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "11",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"generic_procedure_valuesets\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "10",
+                    "s": [
+                      {
+                        "r": "8",
+                        "s": [
+                          {
+                            "r": "6",
+                            "s": [
+                              {
+                                "value": [
+                                  "[",
+                                  "Procedure",
+                                  ": "
+                                ]
+                              },
+                              {
+                                "s": [
+                                  {
+                                    "value": [
+                                      "\"Prostate Specific Antigen Test VS\""
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "]"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n    union "
+                            ]
+                          },
+                          {
+                            "r": "7",
+                            "s": [
+                              {
+                                "value": [
+                                  "[",
+                                  "Procedure",
+                                  ": "
+                                ]
+                              },
+                              {
+                                "s": [
+                                  {
+                                    "value": [
+                                      "\"Digital Rectal Examination VS\""
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "]"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    union "
+                        ]
+                      },
+                      {
+                        "r": "9",
+                        "s": [
+                          {
+                            "value": [
+                              "[",
+                              "Procedure",
+                              ": "
+                            ]
+                          },
+                          {
+                            "s": [
+                              {
+                                "value": [
+                                  "\"Prostate biopsy VS\""
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "]"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "resultTypeSpecifier": {
+            "type": "ListTypeSpecifier",
+            "elementType": {
+              "name": "{http://hl7.org/fhir}Procedure",
+              "type": "NamedTypeSpecifier"
+            }
+          },
+          "expression": {
+            "localId": "10",
+            "locator": "14:3-16:43",
+            "type": "Union",
+            "resultTypeSpecifier": {
+              "type": "ListTypeSpecifier",
+              "elementType": {
+                "name": "{http://hl7.org/fhir}Procedure",
+                "type": "NamedTypeSpecifier"
+              }
+            },
+            "signature": [
+              {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Procedure",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Procedure",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            ],
+            "operand": [
+              {
+                "localId": "8",
+                "locator": "14:3-15:54",
+                "type": "Union",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "signature": [
+                  {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "6",
+                    "locator": "14:3-14:50",
+                    "dataType": "{http://hl7.org/fhir}Procedure",
+                    "codeProperty": "code",
+                    "codeComparator": "in",
+                    "type": "Retrieve",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Procedure",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    },
+                    "codes": {
+                      "locator": "14:15-14:49",
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+                      "name": "Prostate Specific Antigen Test VS",
+                      "preserve": true,
+                      "type": "ValueSetRef"
+                    }
+                  },
+                  {
+                    "localId": "7",
+                    "locator": "15:11-15:54",
+                    "dataType": "{http://hl7.org/fhir}Procedure",
+                    "codeProperty": "code",
+                    "codeComparator": "in",
+                    "type": "Retrieve",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Procedure",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    },
+                    "codes": {
+                      "locator": "15:23-15:53",
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+                      "name": "Digital Rectal Examination VS",
+                      "preserve": true,
+                      "type": "ValueSetRef"
+                    }
+                  }
+                ]
+              },
+              {
+                "localId": "9",
+                "locator": "16:11-16:43",
+                "dataType": "{http://hl7.org/fhir}Procedure",
+                "codeProperty": "code",
+                "codeComparator": "in",
+                "type": "Retrieve",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "codes": {
+                  "locator": "16:23-16:42",
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+                  "name": "Prostate biopsy VS",
+                  "preserve": true,
+                  "type": "ValueSetRef"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "localId": "15",
+          "locator": "18:1-19:20",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Screening Age",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "15",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Screening Age\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "14",
+                    "s": [
+                      {
+                        "r": "12",
+                        "s": [
+                          {
+                            "value": [
+                              "AgeInYears",
+                              "()"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "13",
+                        "value": [
+                          " ",
+                          ">=",
+                          " ",
+                          "50"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "14",
+            "locator": "19:3-19:20",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "GreaterOrEqual",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Integer",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Integer",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "12",
+                "locator": "19:3-19:14",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                "precision": "Year",
+                "type": "CalculateAge",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Date",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": {
+                  "path": "birthDate.value",
+                  "type": "Property",
+                  "source": {
+                    "name": "Patient",
+                    "type": "ExpressionRef"
+                  }
+                }
+              },
+              {
+                "localId": "13",
+                "locator": "19:19-19:20",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                "value": "50",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "21",
+          "locator": "21:1-22:31",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Patient Gender",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "21",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Patient Gender\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "20",
+                    "s": [
+                      {
+                        "r": "18",
+                        "s": [
+                          {
+                            "r": "17",
+                            "s": [
+                              {
+                                "r": "16",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "Patient"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "."
+                                ]
+                              },
+                              {
+                                "r": "17",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "gender"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "."
+                            ]
+                          },
+                          {
+                            "r": "18",
+                            "s": [
+                              {
+                                "value": [
+                                  "value"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " ",
+                          "=",
+                          " "
+                        ]
+                      },
+                      {
+                        "r": "19",
+                        "s": [
+                          {
+                            "value": [
+                              "'male'"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "20",
+            "locator": "22:3-22:31",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Equal",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}String",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}String",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "18",
+                "locator": "22:3-22:22",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "localId": "17",
+                  "locator": "22:3-22:16",
+                  "resultTypeName": "{http://hl7.org/fhir}AdministrativeGender",
+                  "path": "gender",
+                  "type": "Property",
+                  "source": {
+                    "localId": "16",
+                    "locator": "22:3-22:9",
+                    "resultTypeName": "{http://hl7.org/fhir}Patient",
+                    "name": "Patient",
+                    "type": "ExpressionRef"
+                  }
+                }
+              },
+              {
+                "localId": "19",
+                "locator": "22:26-22:31",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "valueType": "{urn:hl7-org:elm-types:r1}String",
+                "value": "male",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "121",
+          "locator": "54:1-58:79",
+          "name": "ProcedureLookBack",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "121",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define function ProcedureLookBack(ProcList List<Procedure>, LookBack System.Quantity):\n  "
+                    ]
+                  },
+                  {
+                    "r": "120",
+                    "s": [
+                      {
+                        "r": "120",
+                        "s": [
+                          {
+                            "s": [
+                              {
+                                "r": "98",
+                                "s": [
+                                  {
+                                    "r": "97",
+                                    "s": [
+                                      {
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "ProcList"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      " ",
+                                      "P"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n    "
+                            ]
+                          },
+                          {
+                            "s": [
+                              {
+                                "value": [
+                                  "let "
+                                ]
+                              },
+                              {
+                                "r": "104",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "LookBackInterval",
+                                      ": "
+                                    ]
+                                  },
+                                  {
+                                    "r": "103",
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "Interval["
+                                        ]
+                                      },
+                                      {
+                                        "r": "101",
+                                        "s": [
+                                          {
+                                            "r": "99",
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "Now",
+                                                  "()"
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              " - "
+                                            ]
+                                          },
+                                          {
+                                            "r": "100",
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "LookBack"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          ", "
+                                        ]
+                                      },
+                                      {
+                                        "r": "102",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "Now",
+                                              "()"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "]"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n    "
+                            ]
+                          },
+                          {
+                            "r": "119",
+                            "s": [
+                              {
+                                "value": [
+                                  "where "
+                                ]
+                              },
+                              {
+                                "r": "119",
+                                "s": [
+                                  {
+                                    "r": "111",
+                                    "s": [
+                                      {
+                                        "r": "109",
+                                        "s": [
+                                          {
+                                            "r": "108",
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "( "
+                                                ]
+                                              },
+                                              {
+                                                "r": "108",
+                                                "s": [
+                                                  {
+                                                    "r": "106",
+                                                    "s": [
+                                                      {
+                                                        "r": "105",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "P"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          "."
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "106",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "performed"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      " as "
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "107",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "FHIR",
+                                                          ".",
+                                                          "dateTime"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  " )"
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              "."
+                                            ]
+                                          },
+                                          {
+                                            "r": "109",
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "value"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          " in "
+                                        ]
+                                      },
+                                      {
+                                        "r": "110",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "LookBackInterval"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "\n      or "
+                                    ]
+                                  },
+                                  {
+                                    "r": "118",
+                                    "s": [
+                                      {
+                                        "r": "116",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "PeriodToInterval",
+                                              "("
+                                            ]
+                                          },
+                                          {
+                                            "r": "115",
+                                            "s": [
+                                              {
+                                                "r": "113",
+                                                "s": [
+                                                  {
+                                                    "r": "112",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "P"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      "."
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "113",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "performed"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  " as "
+                                                ]
+                                              },
+                                              {
+                                                "r": "114",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "FHIR",
+                                                      ".",
+                                                      "Period"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ")"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "r": "118",
+                                        "value": [
+                                          " ",
+                                          "overlaps",
+                                          " "
+                                        ]
+                                      },
+                                      {
+                                        "r": "117",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "LookBackInterval"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "resultTypeSpecifier": {
+            "type": "ListTypeSpecifier",
+            "elementType": {
+              "name": "{http://hl7.org/fhir}Procedure",
+              "type": "NamedTypeSpecifier"
+            }
+          },
+          "expression": {
+            "localId": "120",
+            "locator": "55:3-58:79",
+            "type": "Query",
+            "resultTypeSpecifier": {
+              "type": "ListTypeSpecifier",
+              "elementType": {
+                "name": "{http://hl7.org/fhir}Procedure",
+                "type": "NamedTypeSpecifier"
+              }
+            },
+            "source": [
+              {
+                "localId": "98",
+                "locator": "55:3-55:12",
+                "alias": "P",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "expression": {
+                  "localId": "97",
+                  "locator": "55:3-55:10",
+                  "name": "ProcList",
+                  "type": "OperandRef",
+                  "resultTypeSpecifier": {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  }
+                }
+              }
+            ],
+            "let": [
+              {
+                "localId": "104",
+                "locator": "56:9-56:59",
+                "identifier": "LookBackInterval",
+                "resultTypeSpecifier": {
+                  "type": "IntervalTypeSpecifier",
+                  "pointType": {
+                    "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "expression": {
+                  "localId": "103",
+                  "locator": "56:27-56:59",
+                  "lowClosed": true,
+                  "highClosed": true,
+                  "type": "Interval",
+                  "resultTypeSpecifier": {
+                    "type": "IntervalTypeSpecifier",
+                    "pointType": {
+                      "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  "low": {
+                    "localId": "101",
+                    "locator": "56:36-56:51",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "Subtract",
+                    "signature": [
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ],
+                    "operand": [
+                      {
+                        "localId": "99",
+                        "locator": "56:36-56:40",
+                        "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "Now"
+                      },
+                      {
+                        "localId": "100",
+                        "locator": "56:44-56:51",
+                        "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                        "name": "LookBack",
+                        "type": "OperandRef"
+                      }
+                    ]
+                  },
+                  "high": {
+                    "localId": "102",
+                    "locator": "56:54-56:58",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "Now"
+                  }
+                }
+              }
+            ],
+            "relationship": [],
+            "where": {
+              "localId": "119",
+              "locator": "57:5-58:79",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "Or",
+              "signature": [
+                {
+                  "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "NamedTypeSpecifier"
+                },
+                {
+                  "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "NamedTypeSpecifier"
+                }
+              ],
+              "operand": [
+                {
+                  "localId": "111",
+                  "locator": "57:11-57:68",
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "In",
+                  "signature": [
+                    {
+                      "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "type": "NamedTypeSpecifier"
+                    },
+                    {
+                      "type": "IntervalTypeSpecifier",
+                      "pointType": {
+                        "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    }
+                  ],
+                  "operand": [
+                    {
+                      "localId": "109",
+                      "locator": "57:11-57:48",
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "path": "value",
+                      "type": "Property",
+                      "source": {
+                        "localId": "108",
+                        "locator": "57:11-57:42",
+                        "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                        "strict": false,
+                        "type": "As",
+                        "operand": {
+                          "localId": "106",
+                          "locator": "57:13-57:23",
+                          "path": "performed",
+                          "scope": "P",
+                          "type": "Property",
+                          "resultTypeSpecifier": {
+                            "type": "ChoiceTypeSpecifier",
+                            "choice": [
+                              {
+                                "name": "{http://hl7.org/fhir}dateTime",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}string",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Age",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Range",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            ]
+                          }
+                        },
+                        "asTypeSpecifier": {
+                          "localId": "107",
+                          "locator": "57:28-57:40",
+                          "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                          "name": "{http://hl7.org/fhir}dateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    },
+                    {
+                      "localId": "110",
+                      "locator": "57:53-57:68",
+                      "name": "LookBackInterval",
+                      "type": "QueryLetRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "localId": "118",
+                  "locator": "58:10-58:79",
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "Overlaps",
+                  "signature": [
+                    {
+                      "type": "IntervalTypeSpecifier",
+                      "pointType": {
+                        "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    },
+                    {
+                      "type": "IntervalTypeSpecifier",
+                      "pointType": {
+                        "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    }
+                  ],
+                  "operand": [
+                    {
+                      "localId": "116",
+                      "locator": "58:10-58:53",
+                      "name": "PeriodToInterval",
+                      "type": "FunctionRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      },
+                      "signature": [
+                        {
+                          "name": "{http://hl7.org/fhir}Period",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      ],
+                      "operand": [
+                        {
+                          "localId": "115",
+                          "locator": "58:27-58:52",
+                          "resultTypeName": "{http://hl7.org/fhir}Period",
+                          "strict": false,
+                          "type": "As",
+                          "operand": {
+                            "localId": "113",
+                            "locator": "58:27-58:37",
+                            "path": "performed",
+                            "scope": "P",
+                            "type": "Property",
+                            "resultTypeSpecifier": {
+                              "type": "ChoiceTypeSpecifier",
+                              "choice": [
+                                {
+                                  "name": "{http://hl7.org/fhir}dateTime",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Period",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}string",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Age",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Range",
+                                  "type": "NamedTypeSpecifier"
+                                }
+                              ]
+                            }
+                          },
+                          "asTypeSpecifier": {
+                            "localId": "114",
+                            "locator": "58:42-58:52",
+                            "resultTypeName": "{http://hl7.org/fhir}Period",
+                            "name": "{http://hl7.org/fhir}Period",
+                            "type": "NamedTypeSpecifier"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "localId": "117",
+                      "locator": "58:64-58:79",
+                      "name": "LookBackInterval",
+                      "type": "QueryLetRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "operand": [
+            {
+              "name": "ProcList",
+              "operandTypeSpecifier": {
+                "localId": "25",
+                "locator": "54:44-54:58",
+                "type": "ListTypeSpecifier",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "elementType": {
+                  "localId": "24",
+                  "locator": "54:49-54:57",
+                  "resultTypeName": "{http://hl7.org/fhir}Procedure",
+                  "name": "{http://hl7.org/fhir}Procedure",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            },
+            {
+              "name": "LookBack",
+              "operandTypeSpecifier": {
+                "localId": "26",
+                "locator": "54:70-54:84",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                "type": "NamedTypeSpecifier"
+              }
+            }
+          ]
+        },
+        {
+          "localId": "133",
+          "locator": "60:1-62:59",
+          "name": "PeriodToInterval",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "133",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define function PeriodToInterval(period FHIR.Period):\n  "
+                    ]
+                  },
+                  {
+                    "r": "132",
+                    "s": [
+                      {
+                        "r": "132",
+                        "s": [
+                          {
+                            "value": [
+                              "if "
+                            ]
+                          },
+                          {
+                            "r": "123",
+                            "s": [
+                              {
+                                "r": "122",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "period"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  " is null"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "r": "124",
+                            "value": [
+                              " then ",
+                              "null",
+                              " \n    else "
+                            ]
+                          },
+                          {
+                            "r": "131",
+                            "s": [
+                              {
+                                "value": [
+                                  "Interval["
+                                ]
+                              },
+                              {
+                                "r": "127",
+                                "s": [
+                                  {
+                                    "r": "126",
+                                    "s": [
+                                      {
+                                        "r": "125",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "period"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "."
+                                        ]
+                                      },
+                                      {
+                                        "r": "126",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "\"start\""
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "."
+                                    ]
+                                  },
+                                  {
+                                    "r": "127",
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "value"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  ", "
+                                ]
+                              },
+                              {
+                                "r": "130",
+                                "s": [
+                                  {
+                                    "r": "129",
+                                    "s": [
+                                      {
+                                        "r": "128",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "period"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "."
+                                        ]
+                                      },
+                                      {
+                                        "r": "129",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "\"end\""
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "."
+                                    ]
+                                  },
+                                  {
+                                    "r": "130",
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "value"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "]"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "resultTypeSpecifier": {
+            "type": "IntervalTypeSpecifier",
+            "pointType": {
+              "name": "{urn:hl7-org:elm-types:r1}DateTime",
+              "type": "NamedTypeSpecifier"
+            }
+          },
+          "expression": {
+            "localId": "132",
+            "locator": "61:3-62:59",
+            "type": "If",
+            "resultTypeSpecifier": {
+              "type": "IntervalTypeSpecifier",
+              "pointType": {
+                "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                "type": "NamedTypeSpecifier"
+              }
+            },
+            "condition": {
+              "localId": "123",
+              "locator": "61:6-61:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "IsNull",
+              "signature": [
+                {
+                  "name": "{urn:hl7-org:elm-types:r1}Any",
+                  "type": "NamedTypeSpecifier"
+                }
+              ],
+              "operand": {
+                "localId": "122",
+                "locator": "61:6-61:11",
+                "resultTypeName": "{http://hl7.org/fhir}Period",
+                "name": "period",
+                "type": "OperandRef"
+              }
+            },
+            "then": {
+              "type": "As",
+              "operand": {
+                "localId": "124",
+                "locator": "61:26-61:29",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              },
+              "asTypeSpecifier": {
+                "type": "IntervalTypeSpecifier",
+                "pointType": {
+                  "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            },
+            "else": {
+              "localId": "131",
+              "locator": "62:10-62:59",
+              "lowClosed": true,
+              "highClosed": true,
+              "type": "Interval",
+              "resultTypeSpecifier": {
+                "type": "IntervalTypeSpecifier",
+                "pointType": {
+                  "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              "low": {
+                "localId": "127",
+                "locator": "62:19-62:38",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "localId": "126",
+                  "locator": "62:19-62:32",
+                  "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                  "path": "start",
+                  "type": "Property",
+                  "source": {
+                    "localId": "125",
+                    "locator": "62:19-62:24",
+                    "resultTypeName": "{http://hl7.org/fhir}Period",
+                    "name": "period",
+                    "type": "OperandRef"
+                  }
+                }
+              },
+              "high": {
+                "localId": "130",
+                "locator": "62:41-62:58",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "localId": "129",
+                  "locator": "62:41-62:52",
+                  "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                  "path": "end",
+                  "type": "Property",
+                  "source": {
+                    "localId": "128",
+                    "locator": "62:41-62:46",
+                    "resultTypeName": "{http://hl7.org/fhir}Period",
+                    "name": "period",
+                    "type": "OperandRef"
+                  }
+                }
+              }
+            }
+          },
+          "operand": [
+            {
+              "name": "period",
+              "operandTypeSpecifier": {
+                "localId": "46",
+                "locator": "60:41-60:51",
+                "resultTypeName": "{http://hl7.org/fhir}Period",
+                "name": "{http://hl7.org/fhir}Period",
+                "type": "NamedTypeSpecifier"
+              }
+            }
+          ]
+        },
+        {
+          "localId": "66",
+          "locator": "24:1-25:78",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Assessment",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "66",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Assessment\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "65",
+                    "s": [
+                      {
+                        "value": [
+                          "not "
+                        ]
+                      },
+                      {
+                        "r": "64",
+                        "s": [
+                          {
+                            "value": [
+                              "( "
+                            ]
+                          },
+                          {
+                            "r": "64",
+                            "s": [
+                              {
+                                "value": [
+                                  "exists "
+                                ]
+                              },
+                              {
+                                "r": "63",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "( "
+                                    ]
+                                  },
+                                  {
+                                    "r": "63",
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "ProcedureLookBack",
+                                          "("
+                                        ]
+                                      },
+                                      {
+                                        "r": "22",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "\"generic_procedure_valuesets\""
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          ", "
+                                        ]
+                                      },
+                                      {
+                                        "r": "23",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "1 ",
+                                              "month"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          ")"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      " )"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              " )"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "65",
+            "locator": "25:3-25:78",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Not",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": {
+              "localId": "64",
+              "locator": "25:7-25:78",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "Exists",
+              "signature": [
+                {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                }
+              ],
+              "operand": {
+                "localId": "63",
+                "locator": "25:16-25:76",
+                "name": "ProcedureLookBack",
+                "type": "FunctionRef",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "signature": [
+                  {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "22",
+                    "locator": "25:36-25:64",
+                    "name": "generic_procedure_valuesets",
+                    "type": "ExpressionRef",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Procedure",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    }
+                  },
+                  {
+                    "localId": "23",
+                    "locator": "25:67-25:73",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                    "value": 1,
+                    "unit": "month",
+                    "type": "Quantity"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "localId": "72",
+          "locator": "27:1-30:20",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "MeetsInclusionCriteria",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "72",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"MeetsInclusionCriteria\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "71",
+                    "s": [
+                      {
+                        "r": "69",
+                        "s": [
+                          {
+                            "r": "67",
+                            "s": [
+                              {
+                                "value": [
+                                  "\"Screening Age\""
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n    and "
+                            ]
+                          },
+                          {
+                            "r": "68",
+                            "s": [
+                              {
+                                "value": [
+                                  "\"Patient Gender\""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    and "
+                        ]
+                      },
+                      {
+                        "r": "70",
+                        "s": [
+                          {
+                            "value": [
+                              "\"Assessment\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "71",
+            "locator": "28:3-30:20",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "69",
+                "locator": "28:3-29:24",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "And",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "type": "NamedTypeSpecifier"
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "67",
+                    "locator": "28:3-28:17",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "name": "Screening Age",
+                    "type": "ExpressionRef"
+                  },
+                  {
+                    "localId": "68",
+                    "locator": "29:9-29:24",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "name": "Patient Gender",
+                    "type": "ExpressionRef"
+                  }
+                ]
+              },
+              {
+                "localId": "70",
+                "locator": "30:9-30:20",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "Assessment",
+                "type": "ExpressionRef"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "74",
+          "locator": "32:1-33:26",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "InPopulation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "74",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"InPopulation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "73",
+                    "s": [
+                      {
+                        "value": [
+                          "\"MeetsInclusionCriteria\""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "73",
+            "locator": "33:3-33:26",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "name": "MeetsInclusionCriteria",
+            "type": "ExpressionRef"
+          }
+        },
+        {
+          "localId": "79",
+          "locator": "35:1-37:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+          "name": "Recommendation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "79",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Recommendation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "78",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "75",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " then "
+                        ]
+                      },
+                      {
+                        "r": "76",
+                        "s": [
+                          {
+                            "value": [
+                              "'Perform prostate cancer screening (PSA test, DRE, or biopsy as appropriate)'"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "77",
+                        "value": [
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "78",
+            "locator": "36:3-37:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+            "type": "If",
+            "condition": {
+              "localId": "75",
+              "locator": "36:6-36:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "76",
+              "locator": "36:26-36:102",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "Perform prostate cancer screening (PSA test, DRE, or biopsy as appropriate)",
+              "type": "Literal"
+            },
+            "else": {
+              "asType": "{urn:hl7-org:elm-types:r1}String",
+              "type": "As",
+              "operand": {
+                "localId": "77",
+                "locator": "37:10-37:13",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              }
+            }
+          }
+        },
+        {
+          "localId": "84",
+          "locator": "39:1-41:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Rationale",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "84",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Rationale\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "83",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "80",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "81",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "83",
+            "locator": "40:3-41:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "80",
+              "locator": "40:6-40:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "81",
+              "locator": "40:26-40:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "82",
+              "locator": "41:10-41:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "89",
+          "locator": "43:1-45:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Links",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "89",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Links\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "88",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "85",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "86",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "88",
+            "locator": "44:3-45:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "85",
+              "locator": "44:6-44:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "86",
+              "locator": "44:26-44:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "87",
+              "locator": "45:10-45:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "94",
+          "locator": "47:1-49:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Suggestions",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "94",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Suggestions\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "93",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "90",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "91",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "93",
+            "locator": "48:3-49:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "90",
+              "locator": "48:6-48:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "91",
+              "locator": "48:26-48:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "92",
+              "locator": "49:10-49:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "96",
+          "locator": "51:1-52:6",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Errors",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "96",
+                "s": [
+                  {
+                    "r": "95",
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Errors\"",
+                      ":\n  ",
+                      "null"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "95",
+            "locator": "52:3-52:6",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "Null"
+          }
+        }
+      ]
+    }
+  }
+}

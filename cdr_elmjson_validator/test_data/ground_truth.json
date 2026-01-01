@@ -65,6 +65,13 @@
       "expected_errors": [],
       "expected_warnings": [],
       "notes": "Validates that patients (50+) are screened for colon cancer if no colonoscopy (VS ...108.12.1020) exists in the last 1 month."
+    },
+    "Prostate-Cancer-Screening-OpenEMR.json": {
+      "valid": true,
+      "cpg_file": "Prostate-Cancer-Screening-OpenEMR_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Validates Prostate Screening for Males 50+ who have not had PSA, DRE, or Biopsy in the last 1 month."
     }
   }
 }
