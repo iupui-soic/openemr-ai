@@ -58,6 +58,13 @@
       "expected_errors": [],
       "expected_warnings": [],
       "notes": "Validates that females (40+) are screened for breast cancer if no mammogram (VS 2.16.840.1.113762.1.4.1182.380) exists in the last 1 year."
+    },
+    "Colon-Cancer-Screening-OpenEMR.json": {
+      "valid": true,
+      "cpg_file": "Colon-Cancer-Screening-OpenEMR_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Validates that patients (50+) are screened for colon cancer if no colonoscopy (VS ...108.12.1020) exists in the last 1 month."
     }
   }
 }
