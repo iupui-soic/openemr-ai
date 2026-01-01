@@ -47,10 +47,17 @@
     },
     "Adult-Weight-Screening-and-Follow-Up-OpenEMR.json": {
       "valid": true,
-      "cpg_file": "Adult-Weight-Screening-and-Follow-Up-OpenEMR.md",
+      "cpg_file": "Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md",
       "expected_errors": [],
       "expected_warnings": [],
       "notes": "Standalone implementation. Logic checks for patients 18+ who lack a Body Weight observation (VS 2.16.840.1.113762.1.4.1045.159) in the past 1 month."
+    },
+    "Breast-Cancer-Screening-OpenEMR.json": {
+      "valid": true,
+      "cpg_file": "Breast-Cancer-Screening-OpenEMR_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Validates that females (40+) are screened for breast cancer if no mammogram (VS 2.16.840.1.113762.1.4.1182.380) exists in the last 1 year."
     }
   }
 }
