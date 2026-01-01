@@ -44,6 +44,13 @@
       "expected_errors": [],
       "expected_warnings": [],
       "notes": "Chlamydia screening CDS for sexually active females age 16-23. Correctly implements demographic check, sexual activity verification, and exclusions for recent screening, pending orders, and documented refusal reasons."
+    },
+    "Adult-Weight-Screening-and-Follow-Up-OpenEMR.json": {
+      "valid": true,
+      "cpg_file": "Adult-Weight-Screening-and-Follow-Up-OpenEMR.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Standalone implementation. Logic checks for patients 18+ who lack a Body Weight observation (VS 2.16.840.1.113762.1.4.1045.159) in the past 1 month."
     }
   }
 }
