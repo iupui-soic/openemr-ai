@@ -1,0 +1,2107 @@
+{
+  "library": {
+    "annotation": [
+      {
+        "translatorVersion": "3.3.2",
+        "translatorOptions": "EnableDateRangeOptimization,EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion,DisableMethodInvocation",
+        "signatureLevel": "All",
+        "type": "CqlToElmInfo"
+      },
+      {
+        "type": "Annotation",
+        "s": {
+          "r": "156",
+          "s": [
+            {
+              "value": [
+                "",
+                "library \"Statin-Therapy-for-CVD-Prevention\" version '1.0.0'"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "identifier": {
+      "id": "Statin-Therapy-for-CVD-Prevention",
+      "version": "1.0.0"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [
+        {
+          "localIdentifier": "System",
+          "uri": "urn:hl7-org:elm-types:r1"
+        },
+        {
+          "localId": "1",
+          "locator": "3:1-3:26",
+          "localIdentifier": "FHIR",
+          "uri": "http://hl7.org/fhir",
+          "version": "4.0.0",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "1",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "using "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "FHIR"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version '4.0.0'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "includes": {
+      "def": [
+        {
+          "localId": "2",
+          "locator": "5:1-5:56",
+          "localIdentifier": "FHIRHelpers",
+          "path": "FHIRHelpers",
+          "version": "4.0.0",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "2",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "include "
+                    ]
+                  },
+                  {
+                    "s": [
+                      {
+                        "value": [
+                          "\"FHIRHelpers\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": [
+                      " version ",
+                      "'4.0.0'",
+                      " called ",
+                      "FHIRHelpers"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "valueSets": {
+      "def": [
+        {
+          "localId": "3",
+          "locator": "7:1-7:101",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+          "name": "LDL Cholesterol VS",
+          "id": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1573",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "3",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "valueset ",
+                      "\"LDL Cholesterol VS\"",
+                      ": ",
+                      "'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1573'"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "def": [
+        {
+          "locator": "9:1-9:15",
+          "name": "Patient"
+        }
+      ]
+    },
+    "statements": {
+      "def": [
+        {
+          "locator": "9:1-9:15",
+          "name": "Patient",
+          "context": "Patient",
+          "expression": {
+            "type": "SingletonFrom",
+            "operand": {
+              "locator": "9:1-9:15",
+              "dataType": "{http://hl7.org/fhir}Patient",
+              "type": "Retrieve"
+            }
+          }
+        },
+        {
+          "localId": "11",
+          "locator": "11:1-13:26",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Age range",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "11",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Age range\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "10",
+                    "s": [
+                      {
+                        "r": "6",
+                        "s": [
+                          {
+                            "r": "4",
+                            "s": [
+                              {
+                                "value": [
+                                  "AgeInYears",
+                                  "()"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "r": "5",
+                            "value": [
+                              " ",
+                              ">=",
+                              " ",
+                              "30"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    and "
+                        ]
+                      },
+                      {
+                        "r": "9",
+                        "s": [
+                          {
+                            "r": "7",
+                            "s": [
+                              {
+                                "value": [
+                                  "AgeInYears",
+                                  "()"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "r": "8",
+                            "value": [
+                              " ",
+                              "<=",
+                              " ",
+                              "80"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "10",
+            "locator": "12:3-13:26",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "6",
+                "locator": "12:3-12:20",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "GreaterOrEqual",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "4",
+                    "locator": "12:3-12:14",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "signature": [
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}Date",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ],
+                    "operand": {
+                      "path": "birthDate.value",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "localId": "5",
+                    "locator": "12:19-12:20",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "30",
+                    "type": "Literal"
+                  }
+                ]
+              },
+              {
+                "localId": "9",
+                "locator": "13:9-13:26",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "LessOrEqual",
+                "signature": [
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  },
+                  {
+                    "name": "{urn:hl7-org:elm-types:r1}Integer",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "7",
+                    "locator": "13:9-13:20",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "signature": [
+                      {
+                        "name": "{urn:hl7-org:elm-types:r1}Date",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ],
+                    "operand": {
+                      "path": "birthDate.value",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "localId": "8",
+                    "locator": "13:25-13:26",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "80",
+                    "type": "Literal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "localId": "149",
+          "locator": "44:1-47:3",
+          "resultTypeName": "{http://hl7.org/fhir}Observation",
+          "name": "MostRecent",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "149",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define function MostRecent(ObsList List<Observation>):\n  "
+                    ]
+                  },
+                  {
+                    "r": "148",
+                    "s": [
+                      {
+                        "r": "148",
+                        "s": [
+                          {
+                            "value": [
+                              "Last",
+                              "("
+                            ]
+                          },
+                          {
+                            "r": "147",
+                            "s": [
+                              {
+                                "s": [
+                                  {
+                                    "r": "103",
+                                    "s": [
+                                      {
+                                        "r": "102",
+                                        "s": [
+                                          {
+                                            "s": [
+                                              {
+                                                "value": [
+                                                  "ObsList"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          " ",
+                                          "O"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  "\n      "
+                                ]
+                              },
+                              {
+                                "r": "146",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "sort by "
+                                    ]
+                                  },
+                                  {
+                                    "r": "145",
+                                    "s": [
+                                      {
+                                        "r": "144",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "Coalesce",
+                                              "("
+                                            ]
+                                          },
+                                          {
+                                            "r": "127",
+                                            "s": [
+                                              {
+                                                "r": "126",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "("
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "126",
+                                                    "s": [
+                                                      {
+                                                        "r": "124",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "effective"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          " as "
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "125",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "FHIR",
+                                                              ".",
+                                                              "dateTime"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "127",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ","
+                                            ]
+                                          },
+                                          {
+                                            "r": "131",
+                                            "s": [
+                                              {
+                                                "r": "130",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "("
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "130",
+                                                    "s": [
+                                                      {
+                                                        "r": "128",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "effective"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          " as "
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "129",
+                                                        "s": [
+                                                          {
+                                                            "value": [
+                                                              "FHIR",
+                                                              ".",
+                                                              "instant"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "131",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ","
+                                            ]
+                                          },
+                                          {
+                                            "r": "136",
+                                            "s": [
+                                              {
+                                                "r": "135",
+                                                "s": [
+                                                  {
+                                                    "r": "134",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "("
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "134",
+                                                        "s": [
+                                                          {
+                                                            "r": "132",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "effective"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "value": [
+                                                              " as "
+                                                            ]
+                                                          },
+                                                          {
+                                                            "r": "133",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "FHIR",
+                                                                  ".",
+                                                                  "Period"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      "."
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "135",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "\"end\""
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "136",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ","
+                                            ]
+                                          },
+                                          {
+                                            "r": "141",
+                                            "s": [
+                                              {
+                                                "r": "140",
+                                                "s": [
+                                                  {
+                                                    "r": "139",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "("
+                                                        ]
+                                                      },
+                                                      {
+                                                        "r": "139",
+                                                        "s": [
+                                                          {
+                                                            "r": "137",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "effective"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "value": [
+                                                              " as "
+                                                            ]
+                                                          },
+                                                          {
+                                                            "r": "138",
+                                                            "s": [
+                                                              {
+                                                                "value": [
+                                                                  "FHIR",
+                                                                  ".",
+                                                                  "Period"
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "value": [
+                                                      "."
+                                                    ]
+                                                  },
+                                                  {
+                                                    "r": "140",
+                                                    "s": [
+                                                      {
+                                                        "value": [
+                                                          "\"start\""
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "141",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ", "
+                                            ]
+                                          },
+                                          {
+                                            "r": "143",
+                                            "s": [
+                                              {
+                                                "r": "142",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "issued"
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "value": [
+                                                  "."
+                                                ]
+                                              },
+                                              {
+                                                "r": "143",
+                                                "s": [
+                                                  {
+                                                    "value": [
+                                                      "value"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "value": [
+                                              ")"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "\n  )"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "148",
+            "locator": "45:3-47:3",
+            "resultTypeName": "{http://hl7.org/fhir}Observation",
+            "type": "Last",
+            "signature": [
+              {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Observation",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            ],
+            "source": {
+              "localId": "147",
+              "locator": "45:8-46:186",
+              "type": "Query",
+              "resultTypeSpecifier": {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Observation",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              "source": [
+                {
+                  "localId": "103",
+                  "locator": "45:8-45:16",
+                  "alias": "O",
+                  "resultTypeSpecifier": {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Observation",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  "expression": {
+                    "localId": "102",
+                    "locator": "45:8-45:14",
+                    "name": "ObsList",
+                    "type": "OperandRef",
+                    "resultTypeSpecifier": {
+                      "type": "ListTypeSpecifier",
+                      "elementType": {
+                        "name": "{http://hl7.org/fhir}Observation",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    }
+                  }
+                }
+              ],
+              "relationship": [],
+              "sort": {
+                "localId": "146",
+                "locator": "46:7-46:186",
+                "by": [
+                  {
+                    "localId": "145",
+                    "locator": "46:15-46:186",
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "direction": "asc",
+                    "type": "ByExpression",
+                    "expression": {
+                      "localId": "144",
+                      "locator": "46:15-46:186",
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "type": "Coalesce",
+                      "signature": [
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        },
+                        {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      ],
+                      "operand": [
+                        {
+                          "localId": "127",
+                          "locator": "46:24-46:57",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "126",
+                            "locator": "46:24-46:51",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "strict": false,
+                            "type": "As",
+                            "operand": {
+                              "localId": "124",
+                              "locator": "46:25-46:33",
+                              "name": "effective",
+                              "type": "IdentifierRef",
+                              "resultTypeSpecifier": {
+                                "type": "ChoiceTypeSpecifier",
+                                "choice": [
+                                  {
+                                    "name": "{http://hl7.org/fhir}dateTime",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Period",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Timing",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}instant",
+                                    "type": "NamedTypeSpecifier"
+                                  }
+                                ]
+                              }
+                            },
+                            "asTypeSpecifier": {
+                              "localId": "125",
+                              "locator": "46:38-46:50",
+                              "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                              "name": "{http://hl7.org/fhir}dateTime",
+                              "type": "NamedTypeSpecifier"
+                            }
+                          }
+                        },
+                        {
+                          "localId": "131",
+                          "locator": "46:59-46:91",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "130",
+                            "locator": "46:59-46:85",
+                            "resultTypeName": "{http://hl7.org/fhir}instant",
+                            "strict": false,
+                            "type": "As",
+                            "operand": {
+                              "localId": "128",
+                              "locator": "46:60-46:68",
+                              "name": "effective",
+                              "type": "IdentifierRef",
+                              "resultTypeSpecifier": {
+                                "type": "ChoiceTypeSpecifier",
+                                "choice": [
+                                  {
+                                    "name": "{http://hl7.org/fhir}dateTime",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Period",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}Timing",
+                                    "type": "NamedTypeSpecifier"
+                                  },
+                                  {
+                                    "name": "{http://hl7.org/fhir}instant",
+                                    "type": "NamedTypeSpecifier"
+                                  }
+                                ]
+                              }
+                            },
+                            "asTypeSpecifier": {
+                              "localId": "129",
+                              "locator": "46:73-46:84",
+                              "resultTypeName": "{http://hl7.org/fhir}instant",
+                              "name": "{http://hl7.org/fhir}instant",
+                              "type": "NamedTypeSpecifier"
+                            }
+                          }
+                        },
+                        {
+                          "localId": "136",
+                          "locator": "46:93-46:130",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "135",
+                            "locator": "46:93-46:124",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "path": "end",
+                            "type": "Property",
+                            "source": {
+                              "localId": "134",
+                              "locator": "46:93-46:118",
+                              "resultTypeName": "{http://hl7.org/fhir}Period",
+                              "strict": false,
+                              "type": "As",
+                              "operand": {
+                                "localId": "132",
+                                "locator": "46:94-46:102",
+                                "name": "effective",
+                                "type": "IdentifierRef",
+                                "resultTypeSpecifier": {
+                                  "type": "ChoiceTypeSpecifier",
+                                  "choice": [
+                                    {
+                                      "name": "{http://hl7.org/fhir}dateTime",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Period",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Timing",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}instant",
+                                      "type": "NamedTypeSpecifier"
+                                    }
+                                  ]
+                                }
+                              },
+                              "asTypeSpecifier": {
+                                "localId": "133",
+                                "locator": "46:107-46:117",
+                                "resultTypeName": "{http://hl7.org/fhir}Period",
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "localId": "141",
+                          "locator": "46:132-46:171",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "140",
+                            "locator": "46:132-46:165",
+                            "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                            "path": "start",
+                            "type": "Property",
+                            "source": {
+                              "localId": "139",
+                              "locator": "46:132-46:157",
+                              "resultTypeName": "{http://hl7.org/fhir}Period",
+                              "strict": false,
+                              "type": "As",
+                              "operand": {
+                                "localId": "137",
+                                "locator": "46:133-46:141",
+                                "name": "effective",
+                                "type": "IdentifierRef",
+                                "resultTypeSpecifier": {
+                                  "type": "ChoiceTypeSpecifier",
+                                  "choice": [
+                                    {
+                                      "name": "{http://hl7.org/fhir}dateTime",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Period",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}Timing",
+                                      "type": "NamedTypeSpecifier"
+                                    },
+                                    {
+                                      "name": "{http://hl7.org/fhir}instant",
+                                      "type": "NamedTypeSpecifier"
+                                    }
+                                  ]
+                                }
+                              },
+                              "asTypeSpecifier": {
+                                "localId": "138",
+                                "locator": "46:146-46:156",
+                                "resultTypeName": "{http://hl7.org/fhir}Period",
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "localId": "143",
+                          "locator": "46:174-46:185",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "path": "value",
+                          "type": "Property",
+                          "source": {
+                            "localId": "142",
+                            "locator": "46:174-46:179",
+                            "resultTypeName": "{http://hl7.org/fhir}instant",
+                            "name": "issued",
+                            "type": "IdentifierRef"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "operand": [
+            {
+              "name": "ObsList",
+              "operandTypeSpecifier": {
+                "localId": "14",
+                "locator": "44:36-44:52",
+                "type": "ListTypeSpecifier",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Observation",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "elementType": {
+                  "localId": "13",
+                  "locator": "44:41-44:51",
+                  "resultTypeName": "{http://hl7.org/fhir}Observation",
+                  "name": "{http://hl7.org/fhir}Observation",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localId": "156",
+          "locator": "49:1-50:55",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+          "name": "QuantityValue",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "156",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define function QuantityValue(Obs Observation):\n  "
+                    ]
+                  },
+                  {
+                    "r": "155",
+                    "s": [
+                      {
+                        "r": "155",
+                        "s": [
+                          {
+                            "r": "150",
+                            "s": [
+                              {
+                                "value": [
+                                  "FHIRHelpers"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              "."
+                            ]
+                          },
+                          {
+                            "r": "155",
+                            "s": [
+                              {
+                                "value": [
+                                  "ToQuantity",
+                                  " ( "
+                                ]
+                              },
+                              {
+                                "r": "154",
+                                "s": [
+                                  {
+                                    "r": "152",
+                                    "s": [
+                                      {
+                                        "r": "151",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "Obs"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "."
+                                        ]
+                                      },
+                                      {
+                                        "r": "152",
+                                        "s": [
+                                          {
+                                            "value": [
+                                              "value"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      " as "
+                                    ]
+                                  },
+                                  {
+                                    "r": "153",
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "FHIR",
+                                          ".",
+                                          "Quantity"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  " )"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "155",
+            "locator": "50:3-50:55",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+            "name": "ToQuantity",
+            "libraryName": "FHIRHelpers",
+            "type": "FunctionRef",
+            "signature": [
+              {
+                "name": "{http://hl7.org/fhir}Quantity",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "154",
+                "locator": "50:28-50:53",
+                "resultTypeName": "{http://hl7.org/fhir}Quantity",
+                "strict": false,
+                "type": "As",
+                "operand": {
+                  "localId": "152",
+                  "locator": "50:28-50:36",
+                  "path": "value",
+                  "type": "Property",
+                  "resultTypeSpecifier": {
+                    "type": "ChoiceTypeSpecifier",
+                    "choice": [
+                      {
+                        "name": "{http://hl7.org/fhir}Quantity",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}CodeableConcept",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}string",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}boolean",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}integer",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}Range",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}Ratio",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}SampledData",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}time",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}dateTime",
+                        "type": "NamedTypeSpecifier"
+                      },
+                      {
+                        "name": "{http://hl7.org/fhir}Period",
+                        "type": "NamedTypeSpecifier"
+                      }
+                    ]
+                  },
+                  "source": {
+                    "localId": "151",
+                    "locator": "50:28-50:30",
+                    "resultTypeName": "{http://hl7.org/fhir}Observation",
+                    "name": "Obs",
+                    "type": "OperandRef"
+                  }
+                },
+                "asTypeSpecifier": {
+                  "localId": "153",
+                  "locator": "50:41-50:53",
+                  "resultTypeName": "{http://hl7.org/fhir}Quantity",
+                  "name": "{http://hl7.org/fhir}Quantity",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            ]
+          },
+          "operand": [
+            {
+              "name": "Obs",
+              "operandTypeSpecifier": {
+                "localId": "63",
+                "locator": "49:35-49:45",
+                "resultTypeName": "{http://hl7.org/fhir}Observation",
+                "name": "{http://hl7.org/fhir}Observation",
+                "type": "NamedTypeSpecifier"
+              }
+            }
+          ]
+        },
+        {
+          "localId": "73",
+          "locator": "15:1-16:79",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "LDL Cholesterol",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "73",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"LDL Cholesterol\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "72",
+                    "s": [
+                      {
+                        "r": "70",
+                        "s": [
+                          {
+                            "value": [
+                              "QuantityValue",
+                              "("
+                            ]
+                          },
+                          {
+                            "r": "62",
+                            "s": [
+                              {
+                                "value": [
+                                  "MostRecent",
+                                  "("
+                                ]
+                              },
+                              {
+                                "r": "12",
+                                "s": [
+                                  {
+                                    "value": [
+                                      "[",
+                                      "Observation",
+                                      ": "
+                                    ]
+                                  },
+                                  {
+                                    "s": [
+                                      {
+                                        "value": [
+                                          "\"LDL Cholesterol VS\""
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "]"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "value": [
+                                  ")"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              ")"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " ",
+                          ">=",
+                          " "
+                        ]
+                      },
+                      {
+                        "r": "71",
+                        "s": [
+                          {
+                            "value": [
+                              "190 ",
+                              "'mg/dL'"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "72",
+            "locator": "16:3-16:79",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "GreaterOrEqual",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "70",
+                "locator": "16:3-16:64",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                "name": "QuantityValue",
+                "type": "FunctionRef",
+                "signature": [
+                  {
+                    "name": "{http://hl7.org/fhir}Observation",
+                    "type": "NamedTypeSpecifier"
+                  }
+                ],
+                "operand": [
+                  {
+                    "localId": "62",
+                    "locator": "16:17-16:63",
+                    "resultTypeName": "{http://hl7.org/fhir}Observation",
+                    "name": "MostRecent",
+                    "type": "FunctionRef",
+                    "signature": [
+                      {
+                        "type": "ListTypeSpecifier",
+                        "elementType": {
+                          "name": "{http://hl7.org/fhir}Observation",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    ],
+                    "operand": [
+                      {
+                        "localId": "12",
+                        "locator": "16:28-16:62",
+                        "dataType": "{http://hl7.org/fhir}Observation",
+                        "codeProperty": "code",
+                        "codeComparator": "in",
+                        "type": "Retrieve",
+                        "resultTypeSpecifier": {
+                          "type": "ListTypeSpecifier",
+                          "elementType": {
+                            "name": "{http://hl7.org/fhir}Observation",
+                            "type": "NamedTypeSpecifier"
+                          }
+                        },
+                        "codes": {
+                          "locator": "16:42-16:61",
+                          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+                          "name": "LDL Cholesterol VS",
+                          "preserve": true,
+                          "type": "ValueSetRef"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "localId": "71",
+                "locator": "16:69-16:79",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                "value": 190,
+                "unit": "mg/dL",
+                "type": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "77",
+          "locator": "18:1-20:25",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "MeetsInclusionCriteria",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "77",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"MeetsInclusionCriteria\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "76",
+                    "s": [
+                      {
+                        "r": "74",
+                        "s": [
+                          {
+                            "value": [
+                              "\"Age range\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          "\n    and "
+                        ]
+                      },
+                      {
+                        "r": "75",
+                        "s": [
+                          {
+                            "value": [
+                              "\"LDL Cholesterol\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "76",
+            "locator": "19:3-20:25",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "signature": [
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              },
+              {
+                "name": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "NamedTypeSpecifier"
+              }
+            ],
+            "operand": [
+              {
+                "localId": "74",
+                "locator": "19:3-19:13",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "Age range",
+                "type": "ExpressionRef"
+              },
+              {
+                "localId": "75",
+                "locator": "20:9-20:25",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "LDL Cholesterol",
+                "type": "ExpressionRef"
+              }
+            ]
+          }
+        },
+        {
+          "localId": "79",
+          "locator": "22:1-23:26",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "InPopulation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "79",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"InPopulation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "78",
+                    "s": [
+                      {
+                        "value": [
+                          "\"MeetsInclusionCriteria\""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "78",
+            "locator": "23:3-23:26",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "name": "MeetsInclusionCriteria",
+            "type": "ExpressionRef"
+          }
+        },
+        {
+          "localId": "84",
+          "locator": "25:1-27:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+          "name": "Recommendation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "84",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Recommendation\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "83",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "80",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "value": [
+                          " then "
+                        ]
+                      },
+                      {
+                        "r": "81",
+                        "s": [
+                          {
+                            "value": [
+                              "'Start Statin Therapy'"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "82",
+                        "value": [
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "83",
+            "locator": "26:3-27:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+            "type": "If",
+            "condition": {
+              "localId": "80",
+              "locator": "26:6-26:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "81",
+              "locator": "26:26-26:47",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "Start Statin Therapy",
+              "type": "Literal"
+            },
+            "else": {
+              "asType": "{urn:hl7-org:elm-types:r1}String",
+              "type": "As",
+              "operand": {
+                "localId": "82",
+                "locator": "27:10-27:13",
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              }
+            }
+          }
+        },
+        {
+          "localId": "89",
+          "locator": "29:1-31:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Rationale",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "89",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Rationale\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "88",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "85",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "86",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "88",
+            "locator": "30:3-31:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "85",
+              "locator": "30:6-30:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "86",
+              "locator": "30:26-30:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "87",
+              "locator": "31:10-31:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "94",
+          "locator": "33:1-35:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Links",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "94",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Links\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "93",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "90",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "91",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "93",
+            "locator": "34:3-35:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "90",
+              "locator": "34:6-34:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "91",
+              "locator": "34:26-34:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "92",
+              "locator": "35:10-35:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "99",
+          "locator": "37:1-39:13",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Suggestions",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "99",
+                "s": [
+                  {
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Suggestions\"",
+                      ":\n  "
+                    ]
+                  },
+                  {
+                    "r": "98",
+                    "s": [
+                      {
+                        "value": [
+                          "if "
+                        ]
+                      },
+                      {
+                        "r": "95",
+                        "s": [
+                          {
+                            "value": [
+                              "\"InPopulation\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "r": "96",
+                        "value": [
+                          " then ",
+                          "null",
+                          " \n    else ",
+                          "null"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "98",
+            "locator": "38:3-39:13",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "localId": "95",
+              "locator": "38:6-38:19",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "localId": "96",
+              "locator": "38:26-38:29",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "localId": "97",
+              "locator": "39:10-39:13",
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "localId": "101",
+          "locator": "41:1-42:6",
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Errors",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "annotation": [
+            {
+              "type": "Annotation",
+              "s": {
+                "r": "101",
+                "s": [
+                  {
+                    "r": "100",
+                    "value": [
+                      "",
+                      "define ",
+                      "\"Errors\"",
+                      ":\n  ",
+                      "null"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "expression": {
+            "localId": "100",
+            "locator": "42:3-42:6",
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "Null"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -72,6 +72,36 @@
       "expected_errors": [],
       "expected_warnings": [],
       "notes": "Validates Prostate Screening for Males 50+ who have not had PSA, DRE, or Biopsy in the last 1 month."
+    },
+    "Hypertension-Screening.json": {
+      "valid": false,
+      "cpg_file": "Hypertension-Screening_CPG.md",
+      "expected_errors": [
+        "wrong age",
+        "age 25",
+        "frequency mismatch",
+        "6 months"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code uses Age 25+ (Guideline requires 18+) and 6-month lookback (Guideline requires 1 year)."
+    },
+    "Statin-Therapy-for-CVD-Prevention.json": {
+      "valid": false,
+      "cpg_file": "Statin-Therapy-for-CVD-Prevention_CPG.md",
+      "expected_errors": ["wrong age upper limit", "age 80", "coverage gap 80-85"],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code caps age at 80, but Guideline requires screening up to age 85."
+    },
+    "Type-2-Diabetes-Diagnosis.json": {
+      "valid": false,
+      "cpg_file": "Type-2-Diabetes-Diagnosis_CPG.md",
+      "expected_errors": [
+        "threshold mismatch",
+        "value 9 vs 6.5",
+        "misses early diabetes"
+      ],
+      "expected_warnings": ["unit mismatch g%"],
+      "notes": "INVALID CASE: Code uses HbA1c >= 9.0 g% (Severe), but Guideline requires >= 6.5% (Standard Diagnosis)."
     }
   }
 }
