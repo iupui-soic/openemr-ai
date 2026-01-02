@@ -33,6 +33,9 @@ MODELS = [
     "medgemma-4b",
     "llama-3.1-8b",
     "gemma-3-270m",
+    "gpt-oss-120b",
+    "gpt-oss-20b",
+    "llama-3.3-70b",
 ]
 
 DEFAULT_MODEL = "llama-3.2-1b"
@@ -193,7 +196,7 @@ with app.run():
             cmd,
             capture_output=True,
             text=True,
-            timeout=1800,  # 30 minute timeout for batch
+            timeout=3600,  # 60 minute timeout for batch (matches Modal timeout)
             cwd=str(script_dir)
         )
 
@@ -272,7 +275,7 @@ with app.run():
             "library": item["library_name"],
             "model": model_id,
             "valid": False,
-            "errors": ["Modal batch command timed out after 30 minutes"],
+            "errors": ["Modal batch command timed out after 60 minutes"],
             "warnings": [],
             "time_seconds": elapsed / len(items),
             "source": "error",

@@ -15,6 +15,9 @@ image = modal.Image.debian_slim().pip_install(
     "transformers", "torch", "accelerate", "sentencepiece"
 )
 
+# Groq image for API-based inference (no GPU/volume needed)
+groq_image = modal.Image.debian_slim().pip_install("groq>=0.4.0")
+
 # Cache volume for model weights
 volume = modal.Volume.from_name("elm-model-cache", create_if_missing=True)
 
@@ -300,6 +303,174 @@ def run_batch_validation(items: list, model_name: str, model_id: str) -> list:
     return results
 
 
+def run_groq_validation(elm_json, library_name, cpg_content, model_name, model_id):
+    """Groq API-based validation (single file) - no model loading needed."""
+    from groq import Groq
+
+    start_time = time.time()
+
+    # Check for embedded CQL-to-ELM errors
+    embedded_errors = extract_embedded_errors(elm_json)
+    if embedded_errors:
+        return {
+            "valid": False,
+            "errors": embedded_errors,
+            "warnings": [],
+            "source": "embedded",
+            "model": model_id,
+            "model_name": model_name,
+            "library_name": library_name,
+            "time_seconds": time.time() - start_time
+        }
+
+    # Build validation prompt
+    prompt = build_prompt(elm_json, library_name, cpg_content)
+
+    if cpg_content:
+        print(f"  Validating {library_name} against CPG...")
+
+    # Initialize Groq client and generate response
+    print(f"  Calling Groq API with {model_name}...")
+    inference_start = time.time()
+
+    try:
+        client = Groq()  # Uses GROQ_API_KEY from secrets
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.1,
+            max_tokens=500,
+        )
+        answer = response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"  ❌ Groq API error: {e}")
+        return {
+            "valid": False,
+            "errors": [f"Groq API error: {str(e)}"],
+            "warnings": [],
+            "source": "error",
+            "model": model_id,
+            "model_name": model_name,
+            "library_name": library_name,
+            "time_seconds": time.time() - start_time
+        }
+
+    inference_time = time.time() - inference_start
+
+    # Parse response
+    result = parse_response(answer)
+    total_time = time.time() - start_time
+
+    result.update({
+        "source": "groq",
+        "model": model_id,
+        "model_name": model_name,
+        "library_name": library_name,
+        "has_cpg": cpg_content is not None,
+        "time_seconds": total_time,
+        "inference_time_seconds": inference_time,
+        "raw_response": answer[:500]
+    })
+
+    print(f"  {library_name}: valid={result['valid']} in {total_time:.2f}s")
+
+    return result
+
+
+def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> list:
+    """Groq API-based batch validation - no model loading needed."""
+    from groq import Groq
+
+    if not items:
+        return []
+
+    print(f"Running batch validation with {model_name} via Groq API for {len(items)} files...")
+
+    # Initialize Groq client once
+    client = Groq()
+
+    results = []
+    for i, item in enumerate(items, 1):
+        print(f"[{i}/{len(items)}] Processing {item.get('file_name', 'unknown')}...")
+
+        start_time = time.time()
+
+        # Check for embedded errors
+        elm_json = item.get("elm_json")
+        library_name = item.get("library_name", "Unknown")
+        cpg_content = item.get("cpg_content")
+
+        embedded_errors = extract_embedded_errors(elm_json)
+        if embedded_errors:
+            result = {
+                "valid": False,
+                "errors": embedded_errors,
+                "warnings": [],
+                "source": "embedded",
+                "model": model_id,
+                "model_name": model_name,
+                "library_name": library_name,
+                "file_name": item.get("file_name"),
+                "time_seconds": time.time() - start_time,
+                "load_time_seconds": 0
+            }
+            results.append(result)
+            continue
+
+        # Build prompt and call API
+        prompt = build_prompt(elm_json, library_name, cpg_content)
+
+        inference_start = time.time()
+        try:
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,
+                max_tokens=500,
+            )
+            answer = response.choices[0].message.content.strip()
+        except Exception as e:
+            print(f"  ❌ Groq API error: {e}")
+            result = {
+                "valid": False,
+                "errors": [f"Groq API error: {str(e)}"],
+                "warnings": [],
+                "source": "error",
+                "model": model_id,
+                "model_name": model_name,
+                "library_name": library_name,
+                "file_name": item.get("file_name"),
+                "time_seconds": time.time() - start_time,
+                "load_time_seconds": 0
+            }
+            results.append(result)
+            continue
+
+        inference_time = time.time() - inference_start
+
+        # Parse response
+        result = parse_response(answer)
+        result.update({
+            "source": "groq",
+            "model": model_id,
+            "model_name": model_name,
+            "library_name": library_name,
+            "file_name": item.get("file_name"),
+            "has_cpg": cpg_content is not None,
+            "time_seconds": time.time() - start_time,
+            "inference_time_seconds": inference_time,
+            "load_time_seconds": 0,  # No model loading for API
+            "raw_response": answer[:500]
+        })
+
+        results.append(result)
+
+    total_time = sum(r.get("time_seconds", 0) for r in results)
+    print(f"\nBatch complete: {len(results)} files in {total_time:.2f}s (API calls only, no model loading)")
+
+    return results
+
+
 # ============================================
 # Model-specific validation functions
 # ============================================
@@ -481,6 +652,54 @@ def validate_gemma_270m(data: dict) -> dict:
     )
 
 
+@app.function(
+    image=groq_image,
+    timeout=600,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_gpt_oss_120b(data: dict) -> dict:
+    """Validate ELM JSON with GPT OSS 120B via Groq API."""
+    return run_groq_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="openai/gpt-oss-120b",
+        model_id="gpt-oss-120b"
+    )
+
+
+@app.function(
+    image=groq_image,
+    timeout=600,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_gpt_oss_20b(data: dict) -> dict:
+    """Validate ELM JSON with GPT OSS 20B via Groq API."""
+    return run_groq_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="openai/gpt-oss-20b",
+        model_id="gpt-oss-20b"
+    )
+
+
+@app.function(
+    image=groq_image,
+    timeout=600,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_llama_3_3_70b(data: dict) -> dict:
+    """Validate ELM JSON with Llama 3.3 70B via Groq API."""
+    return run_groq_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="llama-3.3-70b-versatile",
+        model_id="llama-3.3-70b"
+    )
+
+
 # ============================================
 # Batch validation functions (process multiple files with single model load)
 # ============================================
@@ -577,7 +796,7 @@ def validate_batch_medgemma(items: list) -> list:
 @app.function(
     image=image,
     gpu="T4",
-    timeout=1800,
+    timeout=3600,  # 60 min for larger 8B model
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
@@ -602,6 +821,36 @@ def validate_batch_gemma_270m(items: list) -> list:
     return run_batch_validation(items, "google/gemma-3-270m-it", "gemma-3-270m")
 
 
+@app.function(
+    image=groq_image,
+    timeout=1800,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_batch_gpt_oss_120b(items: list) -> list:
+    """Batch validate ELM JSON files with GPT OSS 120B via Groq API."""
+    return run_batch_groq_validation(items, "openai/gpt-oss-120b", "gpt-oss-120b")
+
+
+@app.function(
+    image=groq_image,
+    timeout=1800,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_batch_gpt_oss_20b(items: list) -> list:
+    """Batch validate ELM JSON files with GPT OSS 20B via Groq API."""
+    return run_batch_groq_validation(items, "openai/gpt-oss-20b", "gpt-oss-20b")
+
+
+@app.function(
+    image=groq_image,
+    timeout=1800,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_batch_llama_3_3_70b(items: list) -> list:
+    """Batch validate ELM JSON files with Llama 3.3 70B via Groq API."""
+    return run_batch_groq_validation(items, "llama-3.3-70b-versatile", "llama-3.3-70b")
+
+
 # Model function registry (single file)
 MODEL_FUNCTIONS = {
     "llama-3.2-1b": validate_llama_1b,
@@ -613,6 +862,9 @@ MODEL_FUNCTIONS = {
     "medgemma-4b": validate_medgemma,
     "llama-3.1-8b": validate_llama_3_1_8b,
     "gemma-3-270m": validate_gemma_270m,
+    "gpt-oss-120b": validate_gpt_oss_120b,
+    "gpt-oss-20b": validate_gpt_oss_20b,
+    "llama-3.3-70b": validate_llama_3_3_70b,
 }
 
 # Model function registry (batch processing)
@@ -626,6 +878,9 @@ BATCH_MODEL_FUNCTIONS = {
     "medgemma-4b": validate_batch_medgemma,
     "llama-3.1-8b": validate_batch_llama_3_1_8b,
     "gemma-3-270m": validate_batch_gemma_270m,
+    "gpt-oss-120b": validate_batch_gpt_oss_120b,
+    "gpt-oss-20b": validate_batch_gpt_oss_20b,
+    "llama-3.3-70b": validate_batch_llama_3_3_70b,
 }
 
 

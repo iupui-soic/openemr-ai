@@ -614,6 +614,198 @@ jobs:
           path: cdr_elmjson_validator/results-gemma-3-270m.csv
           retention-days: 90
 
+  evaluate-gpt-oss-120b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-gpt-oss-120b.csv
+          key: elm-gpt-oss-120b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup Groq API secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model gpt-oss-120b --output results-gpt-oss-120b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-gpt-oss-120b
+          path: cdr_elmjson_validator/results-gpt-oss-120b.csv
+          retention-days: 90
+
+  evaluate-gpt-oss-20b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-gpt-oss-20b.csv
+          key: elm-gpt-oss-20b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup Groq API secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model gpt-oss-20b --output results-gpt-oss-20b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-gpt-oss-20b
+          path: cdr_elmjson_validator/results-gpt-oss-20b.csv
+          retention-days: 90
+
+  evaluate-llama-3-3-70b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-llama-3.3-70b.csv
+          key: elm-llama-3-3-70b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup Groq API secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model llama-3.3-70b --output results-llama-3.3-70b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-llama-3.3-70b
+          path: cdr_elmjson_validator/results-llama-3.3-70b.csv
+          retention-days: 90
+
   # ============================================
   # Comparison table generation
   # ============================================
@@ -630,6 +822,9 @@ jobs:
       - evaluate-medgemma
       - evaluate-llama-3-1-8b
       - evaluate-gemma-270m
+      - evaluate-gpt-oss-120b
+      - evaluate-gpt-oss-20b
+      - evaluate-llama-3-3-70b
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -667,6 +862,9 @@ jobs:
               ('medgemma-4b', 'results-medgemma-4b', 'MedGemma 4B'),
               ('llama-3.1-8b', 'results-llama-3.1-8b', 'Llama 3.1 8B'),
               ('gemma-3-270m', 'results-gemma-3-270m', 'Gemma 3 270M'),
+              ('gpt-oss-120b', 'results-gpt-oss-120b', 'GPT OSS 120B'),
+              ('gpt-oss-20b', 'results-gpt-oss-20b', 'GPT OSS 20B'),
+              ('llama-3.3-70b', 'results-llama-3.3-70b', 'Llama 3.3 70B'),
           ]
 
           results = []
