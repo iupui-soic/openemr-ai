@@ -1,16 +1,31 @@
-# Hypertension Screening Logic (Standard)
+# Hypertension Screening Clinical Practice Guideline
 
 ## Target Population
-Patients must meet **ALL** of the following criteria to be eligible for screening:
-1.  **Age:** Patient is **18 years** or older. (Standard adult screening age).
-2.  **No Recent Screening:** Patient has **0 (zero)** documented "Encounter to Screen for Blood Pressure" in the past **1 year** (12 months).
-    * *Note:* Use Value Set `2.16.840.1.113883.3.600.1920`.
 
-## Recommendation Rule
-**IF** the patient is in the Target Population:
-**THEN** the system must recommend:
-* "Screen patient for hypertension"
+### Inclusion Criteria (Minimum Age)
+1. **Age**: 18 years or older
 
-## Exclusion/Error Rule
-**IF** the patient does **NOT** meet the Target Population criteria:
-**THEN** the system returns `null`.
+### Screening Criteria
+
+### No Screening Needed If:
+- Blood pressure screening encounter (from "Encounter to Screen for Blood Pressure VS" - `2.16.840.1.113883.3.600.1920`) exists within the past **1 year** (12 months)
+
+## Decision Logic
+
+**MeetsInclusionCriteria** = ALL of the following must be true:
+1. Minimum Age (age >= 18 years)
+2. AND Encounter to Screen for Blood Pressure (no encounter in past 1 year)
+
+**InPopulation** = MeetsInclusionCriteria
+
+## Recommendation Output
+
+When screening is needed (InPopulation = true):
+- **Recommendation**: "Screen patient for hypertension"
+
+When screening is not needed (InPopulation = false):
+- **Recommendation**: null
+- **Rationale**: null
+- **Links**: null
+- **Suggestions**: null
+- **Errors**: null

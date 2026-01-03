@@ -1,20 +1,39 @@
-# Prostate Cancer Screening Logic
+# Prostate Cancer Screening Clinical Practice Guideline
 
 ## Target Population
-Patients must meet **ALL** of the following criteria to be eligible for screening:
-1.  **Age:** Patient is **50 years** or older.
-2.  **Gender:** Patient gender is **Male**.
-3.  **No Recent Screening:** Patient has **0 (zero)** documented screening procedures in the past **1 month**.
-    * *Note:* The system checks for **any** of the following procedures:
-        * PSA Test (VS `...3.526.2.215`)
-        * Digital Rectal Exam (VS `...3.7643.3.1042`)
-        * Prostate Biopsy (VS `...1.4.1078.1248`)
 
-## Recommendation Rule
-**IF** the patient is in the Target Population:
-**THEN** the system must recommend:
-* "Perform prostate cancer screening (PSA test, DRE, or biopsy as appropriate)"
+### Inclusion Criteria (Demographics)
+1. **Age**: 50 years or older (Screening Age)
+2. **Sex**: Male (Patient Gender)
 
-## Exclusion/Error Rule
-**IF** the patient does **NOT** meet the Target Population criteria:
-**THEN** the system returns no specific error message (Null).
+### Screening Criteria
+
+### Procedures Checked (generic_procedure_valuesets)
+The system checks for ANY of the following procedures:
+- Prostate Specific Antigen Test (from "Prostate Specific Antigen Test VS" - `2.16.840.1.113883.3.526.2.215`)
+- Digital Rectal Examination (from "Digital Rectal Examination VS" - `2.16.840.1.113883.3.7643.3.1042`)
+- Prostate biopsy (from "Prostate biopsy VS" - `2.16.840.1.113762.1.4.1078.1248`)
+
+### No Screening Needed If:
+- Any of the above procedures exist within the past **1 month**
+
+## Decision Logic
+
+**MeetsInclusionCriteria** = ALL of the following must be true:
+1. Screening Age (age >= 50 years)
+2. AND Patient Gender (male)
+3. AND Assessment (no procedure from generic_procedure_valuesets in past 1 month)
+
+**InPopulation** = MeetsInclusionCriteria
+
+## Recommendation Output
+
+When screening is needed (InPopulation = true):
+- **Recommendation**: "Perform prostate cancer screening (PSA test, DRE, or biopsy as appropriate)"
+
+When screening is not needed (InPopulation = false):
+- **Recommendation**: null
+- **Rationale**: null
+- **Links**: null
+- **Suggestions**: null
+- **Errors**: null

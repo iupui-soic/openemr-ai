@@ -1,17 +1,33 @@
-# Breast Cancer Screening Logic
+# Breast Cancer Screening Clinical Practice Guideline
 
 ## Target Population
-Patients must meet **ALL** of the following criteria to be eligible for screening:
-1.  **Age:** Patient is **40 years** or older.
-2.  **Gender:** Patient gender is **Female**.
-3.  **No Recent Screening:** Patient has **0 (zero)** documented "Mammogram" procedures in the past **1 year**.
-    * *Note:* Use Value Set `2.16.840.1.113762.1.4.1182.380` to identify Mammogram procedures.
 
-## Recommendation Rule
-**IF** the patient is in the Target Population (Female, 40+, No recent mammogram):
-**THEN** the system must recommend:
-* "Perform mammogram screening"
+### Inclusion Criteria (Demographics)
+1. **Age**: 40 years or older (Screening Age)
+2. **Sex**: Female (Gender)
 
-## Exclusion/Error Rule
-**IF** the patient does **NOT** meet the Target Population criteria:
-**THEN** the system returns no specific error message (Null).
+### Screening Criteria
+
+### No Screening Needed If:
+- Mammogram procedure (from "Mammogram VS" - `2.16.840.1.113762.1.4.1182.380`) exists within the past **1 year**
+
+## Decision Logic
+
+**MeetsInclusionCriteria** = ALL of the following must be true:
+1. Screening Age (age >= 40 years)
+2. AND Gender (female)
+3. AND Mammogram (no procedure in past 1 year)
+
+**InPopulation** = MeetsInclusionCriteria
+
+## Recommendation Output
+
+When screening is needed (InPopulation = true):
+- **Recommendation**: "Perform mammogram screening"
+
+When screening is not needed (InPopulation = false):
+- **Recommendation**: null
+- **Rationale**: null
+- **Links**: null
+- **Suggestions**: null
+- **Errors**: null

@@ -1,16 +1,31 @@
-# Type 2 Diabetes Diagnosis Logic
+# Type 2 Diabetes Diagnosis Clinical Practice Guideline
 
 ## Target Population
-Patients should be flagged for potential Type 2 Diabetes if they meet the following lab criteria:
-1.  **Lab Test:** Hemoglobin A1c (HbA1c).
-2.  **Threshold:** Result is greater than or equal to **6.5%**.
-    * *Note:* Use standard LOINC codes for HbA1c (e.g., `4548-4`, `17856-6`).
 
-## Recommendation Rule
-**IF** the patient has an HbA1c result $\ge$ 6.5%:
-**THEN** the system must recommend:
-* "Diabetes Diagnosis Indicated - Follow up required"
+### Inclusion Criteria (Age Range)
+1. **Age**: 18 years or older
 
-## Exclusion/Error Rule
-**IF** the patient does **NOT** meet the threshold:
-**THEN** the system returns `null`.
+### Laboratory Test Criteria (HbA1c Laboratory Test)
+Patient must have:
+- Most recent HbA1c Laboratory Test result (from "HbA1c Laboratory Test VS" - `2.16.840.1.113883.3.464.1003.198.11.1024`)
+- Result value >= **6.5%**
+
+## Decision Logic
+
+**MeetsInclusionCriteria** = ALL of the following must be true:
+1. Age Range (age >= 18 years)
+2. AND HbA1c Laboratory Test (most recent HbA1c >= 6.5%)
+
+**InPopulation** = MeetsInclusionCriteria
+
+## Recommendation Output
+
+When criteria are met (InPopulation = true):
+- **Recommendation**: "Diabetes Diagnosis Indicated - Follow up required"
+
+When criteria are not met (InPopulation = false):
+- **Recommendation**: null
+- **Rationale**: null
+- **Links**: null
+- **Suggestions**: null
+- **Errors**: null
