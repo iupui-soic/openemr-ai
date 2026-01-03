@@ -108,7 +108,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv
+          python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -172,7 +172,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.2-3b --output results-llama-3.2-3b.csv
+          python run_validation.py --model llama-3.2-3b --output results-llama-3.2-3b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -231,7 +231,7 @@ jobs:
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model qwen-2.5-1.5b --output results-qwen-2.5-1.5b.csv
+          python run_validation.py --model qwen-2.5-1.5b --output results-qwen-2.5-1.5b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -290,7 +290,7 @@ jobs:
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model qwen-2.5-3b --output results-qwen-2.5-3b.csv
+          python run_validation.py --model qwen-2.5-3b --output results-qwen-2.5-3b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -349,7 +349,7 @@ jobs:
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model phi-3-mini --output results-phi-3-mini.csv
+          python run_validation.py --model phi-3-mini --output results-phi-3-mini.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -413,7 +413,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model gemma-3-4b --output results-gemma-3-4b.csv
+          python run_validation.py --model gemma-3-4b --output results-gemma-3-4b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -477,7 +477,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model medgemma-4b --output results-medgemma-4b.csv
+          python run_validation.py --model medgemma-4b --output results-medgemma-4b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -541,7 +541,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.1-8b --output results-llama-3.1-8b.csv
+          python run_validation.py --model llama-3.1-8b --output results-llama-3.1-8b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -605,7 +605,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model gemma-3-270m --output results-gemma-3-270m.csv
+          python run_validation.py --model gemma-3-270m --output results-gemma-3-270m.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -669,7 +669,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model gpt-oss-120b --output results-gpt-oss-120b.csv
+          python run_validation.py --model gpt-oss-120b --output results-gpt-oss-120b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -733,7 +733,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model gpt-oss-20b --output results-gpt-oss-20b.csv
+          python run_validation.py --model gpt-oss-20b --output results-gpt-oss-20b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
@@ -797,7 +797,7 @@ jobs:
         if: steps.check.outputs.ran == 'true'
         run: |
           cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.3-70b --output results-llama-3.3-70b.csv
+          python run_validation.py --model llama-3.3-70b --output results-llama-3.3-70b.csv --no-batch
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
