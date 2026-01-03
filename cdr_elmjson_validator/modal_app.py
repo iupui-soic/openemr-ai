@@ -48,21 +48,21 @@ def build_prompt(elm_json, library_name, cpg_content=None):
     if cpg_content:
         prompt = f"""You are a Clinical Decision Support (CDS) validation expert. Your task is to validate whether the ELM (Expression Logical Model) implementation correctly implements the Clinical Practice Guideline (CPG).
 
-## Clinical Practice Guideline (user-written, any format):
+Clinical Practice Guideline (user-written, any format):
 {cpg_content}
 
-## ELM Implementation:
+ELM Implementation:
 {json.dumps(elm_content, indent=2)}
 
-## Validation Process:
-1. **Understand the CPG**: Read and understand what clinical criteria the CPG describes (age ranges, lab values, time periods, procedures, conditions, etc.) - regardless of how it's written
-2. **Find in ELM**: Locate where those criteria are implemented in the ELM statements
-3. **Compare**: Check if the ELM implementation matches what the CPG describes
-4. **Report**: Note any discrepancies between the CPG's intent and the ELM's implementation
+Validation Process:
+1. Understand the CPG: Read and understand what clinical criteria the CPG describes (age ranges, lab values, time periods, procedures, conditions, etc.) - regardless of how it's written
+2. Find in ELM: Locate where those criteria are implemented in the ELM statements
+3. Compare: Check if the ELM implementation matches what the CPG describes
+4. Report: Note any discrepancies between the CPG's intent and the ELM's implementation
 
 The CPG is the source of truth. If the ELM does something different from what the CPG describes, it's an error.
 
-## Response Format (respond EXACTLY in this format):
+Response Format (respond EXACTLY in this format):
 VALID: YES or NO
 ERRORS: List specific issues where ELM doesn't match CPG, or "None"
 WARNINGS: List potential issues or suggestions, or "None"
