@@ -39,27 +39,10 @@ def extract_embedded_errors(elm_json):
 def build_prompt(elm_json, library_name, cpg_content=None):
     """Build validation prompt for LLM."""
     library = elm_json.get("library", {})
-    statements = library.get("statements", {}).get("def", [])
 
-    # Extract statement details for better analysis
-    stmt_details = []
-    for s in statements[:15]:
-        if isinstance(s, dict):
-            stmt_info = {
-                "name": s.get("name"),
-                "context": s.get("context"),
-                "accessLevel": s.get("accessLevel")
-            }
-            expr = s.get("expression", {})
-            if isinstance(expr, dict):
-                stmt_info["expressionType"] = expr.get("type")
-            stmt_details.append(stmt_info)
-
-    summary = {
-        "libraryName": library.get("identifier", {}).get("id", library_name),
-        "version": library.get("identifier", {}).get("version", "unknown"),
-        "statementCount": len(statements),
-        "statements": stmt_details
+    # Send FULL ELM library content (no truncation!)
+    elm_content = {
+        "library": library
     }
 
     if cpg_content:
@@ -68,8 +51,8 @@ def build_prompt(elm_json, library_name, cpg_content=None):
 ## Clinical Practice Guideline:
 {cpg_content}
 
-## ELM Implementation Summary:
-{json.dumps(summary, indent=2)}
+## ELM Implementation (FULL):
+{json.dumps(elm_content, indent=2)}
 
 ## Validation Task:
 Analyze if the ELM logic correctly implements the CPG by checking:
@@ -89,8 +72,8 @@ Your response:"""
     else:
         prompt = f"""You are a Clinical Quality Language (CQL) expert. Analyze this ELM clinical logic.
 
-ELM Library:
-{json.dumps(summary, indent=2)}
+ELM Library (FULL):
+{json.dumps(elm_content, indent=2)}
 
 Check for LOGICAL ISSUES only:
 - Contradictory conditions?

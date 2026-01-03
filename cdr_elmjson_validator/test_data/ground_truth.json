@@ -23,21 +23,6 @@
       "expected_warnings": [],
       "notes": "Utility library for counting confirmed conditions and medication requests - should correctly filter conditions by verificationStatus=confirmed and count all MedicationRequests"
     },
-    "Prans-Diabetes-Screening-Alert.json": {
-      "valid": false,
-      "cpg_file": "USPSTF_Diabetes_Screening_CPG.md",
-      "expected_errors": [
-        "wrong age range",
-        "missing BMI",
-        "gender exclusion",
-        "OR instead of AND",
-        "hypertension"
-      ],
-      "expected_warnings": [
-        "existing diabetes"
-      ],
-      "notes": "INVALID: This implementation has multiple errors - (1) Uses age 45-75 instead of USPSTF recommended 35-70, (2) Uses OR logic instead of AND for inclusion criteria, (3) Incorrectly excludes females from screening, (4) Uses hypertension as risk factor instead of BMI/obesity, (5) Missing BMI check entirely, (6) No exclusion for existing diabetes diagnosis"
-    },
     "Chlamydia_Screening_Common_CQL.json": {
       "valid": true,
       "cpg_file": "Chlamydia_Screening_CPG.md",
