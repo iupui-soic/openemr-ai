@@ -522,7 +522,8 @@ def main(output_dir: str = "results"):
     # Lookup shared evaluator service (must be deployed first)
     try:
         evaluator_app = modal.App.lookup("shared-evaluator-service")
-        SummaryEvaluator = evaluator_app.cls("SummaryEvaluator")
+        #SummaryEvaluator = evaluator_app.cls("SummaryEvaluator")
+        SummaryEvaluator = evaluator_app.SummaryEvaluator
         evaluator = SummaryEvaluator()
         print("✅ Connected to shared evaluator service")
     except Exception as e:
