@@ -75,6 +75,13 @@ jobs:
           modal deploy shared_evaluator_service.py
           echo "✅ Shared evaluator service deployed successfully"
 
+      - name: Warm up Evaluator (Load Models)
+        run: |
+          cd ${{ env.WORK_DIR }}
+          echo "🔥 Warming up evaluator (this loads scispaCy, MedCAT, UMLS - may take 5-15 min)..."
+          modal run shared_evaluator_service.py
+          echo "✅ Evaluator models loaded and ready"
+
   # ============================================
   # JOB 1: Llama 3.1 8B RAG Summarization
   # File: llama_3_1_8b_modal.py
