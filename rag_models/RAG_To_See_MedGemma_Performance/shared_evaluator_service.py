@@ -33,13 +33,16 @@ app = modal.App("shared-evaluator-service")
 evaluator_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
+        # Pin numpy first to ensure compatibility
+        "numpy>=1.26.0,<2.0.0",
         # Existing evaluation dependencies
         "nltk>=3.8.1",
         "rouge-score>=0.1.2",
         "bert-score>=0.3.13",
         "sentence-transformers>=2.2.2",
         "pandas>=2.0.0",
-        # scispaCy dependencies
+        # scispaCy dependencies - pin compatible versions
+        "spacy>=3.7.0,<3.8.0",
         "scispacy>=0.5.4",
         "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz",
         # MedCAT dependencies
