@@ -28,7 +28,7 @@ app = modal.App("entity-evaluator-service")
 # Entity Evaluator Image
 # ============================================================================
 
-entity_evaluator_image = (
+entity_evaluator_image = entity_evaluator_image = (
     modal.Image.debian_slim(python_version="3.11")
     .run_commands("apt-get update && apt-get install -y wget unzip")
     .pip_install("numpy==1.26.4")
@@ -37,7 +37,11 @@ entity_evaluator_image = (
     .run_commands(
         "pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz"
     )
-    .pip_install("medcat==1.16.0")
+    .pip_install(
+        "transformers==4.57.3",
+        "peft==0.18.0",
+        "medcat==1.16.7",
+    )
     .run_commands(
         "mkdir -p /medcat_models",
         "wget -q https://cogstack-medcat-example-models.s3.eu-west-2.amazonaws.com/medcat-example-models/medmen_wstatus_2021_oct.zip -O /medcat_models/medmen_wstatus_2021_oct.zip",
