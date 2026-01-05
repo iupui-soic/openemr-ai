@@ -30,28 +30,28 @@ app = modal.App("shared-evaluator-service")
 # Evaluator Image (scispaCy + MedCAT + existing metrics)
 # ============================================================================
 
-evaluator_image = (
+evaluator_image =  (
     modal.Image.debian_slim(python_version="3.11")
+    .run_commands("apt-get update && apt-get install -y wget unzip")
+    # Stage 1: Install numpy first
+    .pip_install("numpy>=1.26.0,<2.0.0")
+    # Stage 2: Install spacy and scispacy
     .pip_install(
-        # Pin numpy first to ensure compatibility
-        "numpy>=1.26.0,<2.0.0",
-        # Existing evaluation dependencies
+        "spacy>=3.8.0",
+        "scispacy>=0.5.4",
+        "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz",
+    )
+    # Stage 3: Install medcat (requires spacy>=3.8.0)
+    .pip_install("medcat[spacy,dict-ner]>=2.0.0")
+    # Stage 4: Install evaluation dependencies
+    .pip_install(
         "nltk>=3.8.1",
         "rouge-score>=0.1.2",
         "bert-score>=0.3.13",
         "sentence-transformers>=2.2.2",
         "pandas>=2.0.0",
-        # scispaCy dependencies - pin compatible versions
-        "spacy>=3.7.0,<3.8.0",
-        "scispacy>=0.5.4",
-        "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz",
-        # MedCAT dependencies
-        "medcat[spacy,dict-ner]>=2.0.0",
     )
     .run_commands(
-        # Install wget first
-        "apt-get update && apt-get install -y wget unzip",
-        # Download MedCAT model
         "mkdir -p /medcat_models",
         "wget -q https://cogstack-medcat-example-models.s3.eu-west-2.amazonaws.com/medcat-example-models/medmen_wstatus_2021_oct.zip -O /medcat_models/medmen_wstatus_2021_oct.zip",
     )
@@ -67,7 +67,7 @@ evaluator_image = (
     timeout=1800,
     cpu=2,
     memory=8192,
-    container_idle_timeout=600,  # Auto-sleep after 10 min idle (cost saving)
+    scaledown_window =600,  # Auto-sleep after 10 min idle (cost saving)
 )
 class SummaryEvaluator:
     """
