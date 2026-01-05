@@ -1,16 +1,19 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses Llama 3.1 8B (vLLM) to generate SOAP-format summaries with schema guidance from vector DB
+Uses HuggingFace Inference API with Llama-3.1-8B-Instruct for inference
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + Llama 3.1 8B
-3. Evaluates summaries against manual references
+2. Generates summaries for each patient using RAG + Llama 3.1 8B (HF Inference)
+3. Evaluates summaries against manual references (via shared evaluator service)
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_llama_3_1_8b_pipeline.py
-    modal run rag_llama_3_1_8b_pipeline.py --output-dir results/llama-3.1-8b
+    modal run rag_llama_8b_pipeline.py
+    modal run rag_llama_8b_pipeline.py --output-dir results/llama-8b
+
+Prerequisites:
+    Deploy shared evaluator first: modal deploy shared_evaluator_service.py
 
 Requirements (local):
     pip install notion-client httpx pandas python-dotenv
@@ -20,54 +23,36 @@ import modal
 import os
 from typing import Dict, List, Any
 
-# NotionFetcher is imported inside main() to avoid Modal container import issues
-# It only runs locally, not on Modal's remote containers
-
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-llama-3-1-8b")
+app = modal.App("medical-summarization-rag-llama-8b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-MODEL_SHORT_NAME = "llama-3.1-8b"
+MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+MODEL_SHORT_NAME =  "llama-3.1-8b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
 # Modal Images
 # ============================================================================
 
-# Image for summarization (vLLM + RAG)
+# Image for summarization (HF Inference API + RAG)
 summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
+        "huggingface-hub>=0.20.0",
         "langchain>=0.1.0",
         "langchain-community>=0.0.20",
         "langchain-huggingface>=0.0.1",
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
-        "transformers>=4.37.0",
-        "torch>=2.1.0",
-        "huggingface-hub>=0.20.0",
-        "vllm>=0.3.0",
         "tiktoken>=0.5.0",
-    )
-)
-
-# Image for evaluation
-evaluator_image = (
-    modal.Image.debian_slim(python_version="3.11")
-    .pip_install(
-        "nltk>=3.8.1",
-        "rouge-score>=0.1.2",
-        "bert-score>=0.3.13",
-        "sentence-transformers>=2.2.2",
-        "pandas>=2.0.0",
     )
 )
 
@@ -78,68 +63,34 @@ evaluator_image = (
 
 @app.cls(
     image=summarizer_image,
-    gpu="A10G",
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
     secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using Llama 3.1 8B with vLLM.
+    RAG-based medical summarizer using HuggingFace Inference API with Llama 3.1 8B.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
-
-    This significantly reduces costs since Llama 3.1 8B takes ~30-60s to load.
     """
 
     @modal.enter()
     def load_models(self):
         """Load all models once when container starts."""
-        from vllm import LLM, SamplingParams
+        from huggingface_hub import InferenceClient
         from langchain_huggingface import HuggingFaceEmbeddings
         from langchain_chroma import Chroma
         from sentence_transformers import SentenceTransformer
         import tiktoken
-        import time
 
         print("🔄 Loading models (one-time initialization)...")
         print(f"   Model: {MODEL_NAME}")
 
-        # ==============================
-        # LOAD LLAMA 3.1 8B WITH VLLM
-        # ==============================
-        print("  → Loading Llama 3.1 8B with vLLM...")
-        start_load = time.time()
+        # Initialize HuggingFace Inference Client
+        print("  → Initializing HuggingFace Inference client...")
+        self.client = InferenceClient(api_key=os.environ.get("HF_TOKEN"))
 
-        self.llm = LLM(
-            model=MODEL_NAME,
-            dtype="float16",
-            gpu_memory_utilization=0.9,
-            max_model_len=8192,
-        )
-
-        load_time = time.time() - start_load
-        print(f"  → Llama loaded in {load_time:.2f}s")
-
-        # Store sampling params for reuse
-        self.sampling_params_disease = SamplingParams(
-            temperature=0.1,
-            top_p=0.9,
-            max_tokens=20,
-            stop=["</s>", "[/INST]", "\n"],
-        )
-
-        self.sampling_params_summary = SamplingParams(
-            temperature=0.3,
-            top_p=0.95,
-            max_tokens=4096,
-            stop=["</s>", "[/INST]"],
-        )
-
-        # ==============================
-        # LOAD RAG COMPONENTS
-        # ==============================
         # Load BioBERT embeddings for ChromaDB
         print("  → Loading BioBERT embeddings...")
         self.embeddings = HuggingFaceEmbeddings(
@@ -185,7 +136,7 @@ class MedicalSummarizer:
             patient_name: str = "Patient",
     ) -> Dict[str, Any]:
         """
-        Generate SOAP-format medical summary from transcript using RAG + Llama.
+        Generate SOAP-format medical summary from transcript using RAG + HF Inference.
 
         Args:
             transcript_text: Doctor-patient conversation transcript
@@ -205,27 +156,47 @@ class MedicalSummarizer:
         start_total = time.time()
 
         # ==============================
-        # 1. EXTRACT DISEASE USING LLAMA
+        # 1. EXTRACT DISEASE USING HF INFERENCE
         # ==============================
         print("🔹 Extracting disease from transcript...")
         start_retrieval = time.time()
 
-        disease_prompt = f"""You are a medical expert. Read the following doctor-patient conversation transcript and identify the PRIMARY medical condition or disease being discussed.
+        disease_messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are a medical expert. Identify the primary disease or medical "
+                    "condition discussed in a clinical conversation. "
+                    "Respond with ONLY the disease name."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"""
+Read the following doctor-patient conversation and identify the PRIMARY medical condition.
 
-Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma"). If multiple conditions are discussed, return the most prominent one. If no specific disease is mentioned, return "General".
+Rules:
+- Return ONLY the disease name
+- If multiple conditions are mentioned, choose the most prominent
+- If no disease is clearly stated, return "General"
 
 Transcript:
 {transcript_text[:2000]}
 
-Primary Disease:"""
+Primary Disease:
+""",
+            },
+        ]
 
-        disease_output = self.llm.generate([disease_prompt], self.sampling_params_disease)
-        detected_disease = disease_output[0].outputs[0].text.strip()
+        disease_response = self.client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=disease_messages,
+            temperature=0.3,
+            max_tokens=20,
+        )
 
-        # Clean up
-        if not detected_disease:
-            detected_disease = "General"
-
+        raw_disease = disease_response.choices[0].message.content
+        detected_disease = raw_disease.strip() if raw_disease else "General"
         print(f"✅ Detected Disease: {detected_disease}")
 
         # ==============================
@@ -252,32 +223,37 @@ Primary Disease:"""
         print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
         # ==============================
-        # 3. GENERATE SUMMARY WITH LLAMA
+        # 3. GENERATE SUMMARY WITH HF INFERENCE
         # ==============================
-        print("🔹 Generating summary with Llama 3.1 8B...")
+        print("🔹 Generating summary with HF Inference (Llama 3.1 8B)...")
         start_gen = time.time()
 
-        prompt = f"""You are an expert medical scribe. Your task is to generate a comprehensive medical summary in narrative prose format by extracting information from the provided transcript and medical records.
+        summary_messages = [
+            {
+                "role": "system",
+                "content": "You are an expert medical scribe specialized in clinical documentation. Generate comprehensive SOAP-format medical summaries."
+            },
+            {
+                "role": "user",
+                "content": f"""Generate a comprehensive medical summary in SOAP format from the following data:
 
-### INPUT DATA
-
-**TRANSCRIPT** (Doctor-patient conversation):
+TRANSCRIPT (Doctor-patient conversation):
 {transcript_text}
 
-**OPENEMR EXTRACT** (Electronic health record):
+OPENEMR EXTRACT (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-**SCHEMA GUIDE** (Reference sections to include):
+SCHEMA GUIDE (Required sections and structure):
 {schema_context}
 
-### OUTPUT FORMAT REQUIREMENTS
+OUTPUT FORMAT REQUIREMENTS:
 - Generate a NARRATIVE TEXT document, NOT JSON or structured data
 - Use clear section headers (e.g., "Patient Information", "Chief Complaint", "History of Present Illness")
 - Write in complete sentences and paragraphs
 - Use professional medical documentation prose style
 - Format similar to a hospital discharge summary
 
-### INSTRUCTIONS
+INSTRUCTIONS:
 1. Use the SCHEMA GUIDE as a reference for which sections to include
 2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
 3. Write in narrative prose with proper paragraphs
@@ -288,19 +264,27 @@ Primary Disease:"""
 8. Do NOT hallucinate or invent information not present in the inputs
 
 Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
+            }
+        ]
 
         # Calculate input tokens
+        prompt_text = summary_messages[0]["content"] + summary_messages[1]["content"]
         if self.encoding:
-            input_tokens = len(self.encoding.encode(prompt))
+            input_tokens = len(self.encoding.encode(prompt_text))
         else:
-            input_tokens = int(len(prompt.split()) * 1.3)
+            input_tokens = int(len(prompt_text.split()) * 1.3)
 
         print(f"📊 Input tokens: {input_tokens:,}")
 
-        # Generate with Llama
+        # Generate with HF Inference API
         try:
-            outputs = self.llm.generate([prompt], self.sampling_params_summary)
-            generated_text = outputs[0].outputs[0].text.strip()
+            response = self.client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=summary_messages,
+                temperature=0.3,
+                max_tokens=2048,
+            )
+            generated_text = response.choices[0].message.content.strip()
 
             if self.encoding:
                 output_tokens = len(self.encoding.encode(generated_text))
@@ -308,7 +292,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
                 output_tokens = int(len(generated_text.split()) * 1.3)
 
         except Exception as e:
-            print(f"❌ Llama generation failed: {e}")
+            print(f"❌ HF Inference generation failed: {e}")
             generated_text = f"Error generating summary: {str(e)}"
             output_tokens = 0
 
@@ -330,106 +314,6 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
             "total_tokens": input_tokens + output_tokens,
             "model": MODEL_NAME,
         }
-
-
-# ============================================================================
-# Summary Evaluator Class (with persistent model loading)
-# ============================================================================
-
-@app.cls(
-    image=evaluator_image,
-    timeout=1800,
-    cpu=2,
-    memory=4096,
-)
-class SummaryEvaluator:
-    """
-    Evaluator for medical summaries using multiple metrics.
-
-    SBERT model is loaded once and reused across evaluations.
-    """
-
-    @modal.enter()
-    def load_models(self):
-        """Load evaluation models once."""
-        from sentence_transformers import SentenceTransformer
-        import nltk
-
-        print("🔄 Loading evaluation models...")
-
-        # Download NLTK data
-        try:
-            nltk.data.find('tokenizers/punkt')
-        except LookupError:
-            nltk.download('punkt', quiet=True)
-            nltk.download('punkt_tab', quiet=True)
-
-        # Load SBERT for coherence scoring
-        print("  → Loading SBERT model...")
-        self.sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
-
-        print("✅ Evaluation models loaded!")
-
-    @modal.method()
-    def evaluate(self, generated: str, reference: str) -> Dict[str, float]:
-        """
-        Evaluate generated summary against reference using multiple metrics.
-
-        Args:
-            generated: Generated summary text
-            reference: Reference summary text
-
-        Returns:
-            dict with BLEU, ROUGE-L, SBERT coherence, and BERTScore F1
-        """
-        from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-        from rouge_score import rouge_scorer
-        from sentence_transformers import util
-        from bert_score import score
-
-        print("🔹 Computing evaluation metrics...")
-
-        # Handle empty inputs
-        if not generated or not generated.strip() or not reference:
-            print("⚠️ Warning: Empty text, returning zero scores")
-            return {
-                "bleu": 0.0,
-                "rouge_l": 0.0,
-                "sbert_coherence": 0.0,
-                "bert_f1": 0.0,
-            }
-
-        # BLEU Score (with smoothing for short texts)
-        smoother = SmoothingFunction()
-        bleu = sentence_bleu(
-            [reference.split()],
-            generated.split(),
-            smoothing_function=smoother.method1
-        )
-
-        # ROUGE-L
-        scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
-        rouge_l = scorer.score(reference, generated)["rougeL"].fmeasure
-
-        # SBERT Coherence (using pre-loaded model)
-        ref_emb = self.sbert_model.encode(reference, convert_to_tensor=True)
-        gen_emb = self.sbert_model.encode(generated, convert_to_tensor=True)
-        sbert_coherence = util.cos_sim(ref_emb, gen_emb).item()
-
-        # BERTScore
-        P, R, F1 = score([generated], [reference], lang="en", verbose=False)
-        bert_f1 = F1.mean().item()
-
-        results = {
-            "bleu": bleu,
-            "rouge_l": rouge_l,
-            "sbert_coherence": sbert_coherence,
-            "bert_f1": bert_f1,
-        }
-
-        print(f"  BLEU: {bleu:.4f} | ROUGE-L: {rouge_l:.4f} | SBERT: {sbert_coherence:.4f} | BERTScore: {bert_f1:.4f}")
-
-        return results
 
 
 # ============================================================================
@@ -469,6 +353,8 @@ def save_results(
             "rouge_l": r.get("rouge_l", 0.0),
             "sbert_coherence": r.get("sbert_coherence", 0.0),
             "bert_f1": r.get("bert_f1", 0.0),
+            "scispacy_entity_recall": r.get("scispacy_entity_recall", 0.0),
+            "medcat_entity_recall": r.get("medcat_entity_recall", 0.0),
             "total_time_s": r.get("total_time", 0.0),
             "input_tokens": r.get("input_tokens", 0),
             "output_tokens": r.get("output_tokens", 0),
@@ -486,6 +372,8 @@ def save_results(
         "rouge_l": df["rouge_l"].mean(),
         "sbert_coherence": df["sbert_coherence"].mean(),
         "bert_f1": df["bert_f1"].mean(),
+        "scispacy_entity_recall": df["scispacy_entity_recall"].mean(),
+        "medcat_entity_recall": df["medcat_entity_recall"].mean(),
         "total_time_s": df["total_time_s"].mean(),
         "input_tokens": df["input_tokens"].mean(),
         "output_tokens": df["output_tokens"].mean(),
@@ -498,11 +386,11 @@ def save_results(
     print(f"   ✅ Saved: {csv_path}")
 
     # Print table to console
-    print("\n" + "=" * 100)
+    print("\n" + "=" * 120)
     print(f"EVALUATION RESULTS - {MODEL_NAME}")
-    print("=" * 100)
+    print("=" * 120)
     print(df.to_string(index=False, float_format="%.4f"))
-    print("=" * 100)
+    print("=" * 120)
 
     # ==============================
     # 2. SAVE INDIVIDUAL SUMMARIES
@@ -532,10 +420,12 @@ def save_results(
             f.write(f"{'='*60}\n")
             f.write("EVALUATION METRICS\n")
             f.write(f"{'='*60}\n")
-            f.write(f"BLEU:            {r.get('bleu', 0):.4f}\n")
-            f.write(f"ROUGE-L:         {r.get('rouge_l', 0):.4f}\n")
-            f.write(f"SBERT Coherence: {r.get('sbert_coherence', 0):.4f}\n")
-            f.write(f"BERTScore F1:    {r.get('bert_f1', 0):.4f}\n\n")
+            f.write(f"BLEU:                   {r.get('bleu', 0):.4f}\n")
+            f.write(f"ROUGE-L:                {r.get('rouge_l', 0):.4f}\n")
+            f.write(f"SBERT Coherence:        {r.get('sbert_coherence', 0):.4f}\n")
+            f.write(f"BERTScore F1:           {r.get('bert_f1', 0):.4f}\n")
+            f.write(f"scispaCy Entity Recall: {r.get('scispacy_entity_recall', 0):.4f}\n")
+            f.write(f"MedCAT Entity Recall:   {r.get('medcat_entity_recall', 0):.4f}\n\n")
 
             f.write(f"{'='*60}\n")
             f.write("GENERATED SUMMARY\n")
@@ -612,7 +502,7 @@ def main(output_dir: str = "results"):
         patients = fetcher.get_entries()
     except ValueError as e:
         print(f"❌ Error: {e}")
-        print("   Make sure VISHNU_NOTION and VISHNU_NOTION_DB_ID are set in your .env file")
+        print("   Make sure VISHNU_NOTION is set in your environment")
         return
 
     if not patients:
@@ -627,9 +517,19 @@ def main(output_dir: str = "results"):
     print("\n[2/3] GENERATING SUMMARIES & EVALUATING")
     print("-" * 40)
 
-    # Initialize Modal classes (models load once via @modal.enter())
+    # Initialize summarizer (local to this app)
     summarizer = MedicalSummarizer()
-    evaluator = SummaryEvaluator()
+
+    # Lookup shared evaluator service (must be deployed first)
+    try:
+        evaluator_app = modal.App.lookup("shared-evaluator-service")
+        SummaryEvaluator = evaluator_app.cls("SummaryEvaluator")
+        evaluator = SummaryEvaluator()
+        print("✅ Connected to shared evaluator service")
+    except Exception as e:
+        print(f"❌ Error: Could not connect to shared evaluator service: {e}")
+        print("   Make sure to deploy it first: modal deploy shared_evaluator_service.py")
+        return
 
     results = []
 
@@ -638,14 +538,14 @@ def main(output_dir: str = "results"):
         print(f"\n[{i+1}/{len(patients)}] Processing: {patient_name}")
 
         try:
-            # Generate summary (runs on Modal A10G GPU with vLLM)
+            # Generate summary (runs on Modal)
             summary_result = summarizer.generate_summary.remote(
                 transcript_text=patient["transcript"],
                 openemr_text=patient.get("openemr_data", ""),
                 patient_name=patient_name,
             )
 
-            # Evaluate against reference (runs on Modal CPU)
+            # Evaluate against reference (runs on shared evaluator service)
             reference = patient.get("manual_reference_summary", "")
             if reference:
                 eval_metrics = evaluator.evaluate.remote(
@@ -659,13 +559,15 @@ def main(output_dir: str = "results"):
                     "rouge_l": 0.0,
                     "sbert_coherence": 0.0,
                     "bert_f1": 0.0,
+                    "scispacy_entity_recall": 0.0,
+                    "medcat_entity_recall": 0.0,
                 }
 
             # Combine results
             combined = {**summary_result, **eval_metrics}
             results.append(combined)
 
-            print(f"   ✅ Completed: BLEU={eval_metrics['bleu']:.4f}, BERTScore={eval_metrics['bert_f1']:.4f}")
+            print(f"   ✅ Completed: BLEU={eval_metrics['bleu']:.4f}, BERTScore={eval_metrics['bert_f1']:.4f}, scispaCy={eval_metrics['scispacy_entity_recall']:.4f}, MedCAT={eval_metrics['medcat_entity_recall']:.4f}")
 
         except Exception as e:
             print(f"   ❌ Error processing {patient_name}: {e}")
@@ -677,6 +579,8 @@ def main(output_dir: str = "results"):
                 "rouge_l": 0.0,
                 "sbert_coherence": 0.0,
                 "bert_f1": 0.0,
+                "scispacy_entity_recall": 0.0,
+                "medcat_entity_recall": 0.0,
             })
 
     # ==============================

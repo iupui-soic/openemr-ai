@@ -42,11 +42,46 @@ env:
 
 jobs:
   # ============================================
+  # JOB 0: Deploy Shared Evaluator Service
+  # Must run BEFORE all model jobs
+  # ============================================
+  deploy-evaluator:
+    name: 🚀 Deploy Shared Evaluator Service
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Modal
+        run: pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Deploy Shared Evaluator Service
+        run: |
+          cd ${{ env.WORK_DIR }}
+          echo "🚀 Deploying shared evaluator service (scispaCy + MedCAT)..."
+          modal deploy shared_evaluator_service.py
+          echo "✅ Shared evaluator service deployed successfully"
+
+  # ============================================
   # JOB 1: Llama 3.1 8B RAG Summarization
   # File: llama_3_1_8b_modal.py
   # ============================================
   llama-3-1-8b:
     name: 🦙 Llama 3.1 8B (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_llama_3_1_8b != 'false'
     runs-on: ubuntu-latest
 
@@ -88,7 +123,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_llama-3.1-8b.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_llama-3.1-8b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -109,6 +144,7 @@ jobs:
   # ============================================
   medgemma-4b:
     name: 🏥 MedGemma 4B-IT (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_medgemma_4b != 'false'
     runs-on: ubuntu-latest
 
@@ -150,7 +186,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_medgemma-4b.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_medgemma-4b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -171,6 +207,7 @@ jobs:
   # ============================================
   medgemma-27b-4bit:
     name: 🏥 MedGemma 27B (4-bit) (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_medgemma_27b_4bit != 'false'
     runs-on: ubuntu-latest
 
@@ -212,7 +249,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_medgemma-27b-4bit.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_medgemma-27b-4bit.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -233,6 +270,7 @@ jobs:
   # ============================================
   gpt-oss-20b:
     name: 🚀 Groq GPT-OSS-20B (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_gpt_oss_20b != 'false'
     runs-on: ubuntu-latest
 
@@ -274,7 +312,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_gpt-oss-20b.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_gpt-oss-20b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -295,6 +333,7 @@ jobs:
   # ============================================
   gpt-oss-120b:
     name: 🚀 Groq GPT-OSS-120B (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_gpt_oss_120b != 'false'
     runs-on: ubuntu-latest
 
@@ -336,7 +375,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_gpt-oss-120b.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_gpt-oss-120b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -357,6 +396,7 @@ jobs:
   # ============================================
   qwen3-32b:
     name: 🧠 Groq Qwen3-32B (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_qwen3_32b != 'false'
     runs-on: ubuntu-latest
 
@@ -398,7 +438,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_qwen3-32b.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_qwen3-32b.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -419,6 +459,7 @@ jobs:
   # ============================================
   llama4-scout:
     name: 🦙 Groq Llama-4-Scout-17B (All Patients)
+    needs: deploy-evaluator
     if: github.event.inputs.run_llama4_scout != 'false'
     runs-on: ubuntu-latest
 
@@ -460,7 +501,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "$RESULTS_DIR/evaluation_results_llama4-scout.csv" ]; then
-            echo "### Evaluation Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "### Evaluation Metrics (including Entity Recall)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
             cat "$RESULTS_DIR/evaluation_results_llama4-scout.csv" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
@@ -526,3 +567,35 @@ jobs:
             all-results/model_comparison.csv
             all-results/comparison_report.md
           retention-days: 90
+
+  # ============================================
+  # JOB 9: Stop Shared Evaluator Service (Cleanup)
+  # Runs after all model jobs complete
+  # ============================================
+  cleanup-evaluator:
+    name: 🧹 Stop Shared Evaluator Service
+    needs: [llama-3-1-8b, medgemma-4b, medgemma-27b-4bit, gpt-oss-20b, gpt-oss-120b, qwen3-32b, llama4-scout]
+    if: always()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Modal
+        run: pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Stop Shared Evaluator Service
+        run: |
+          echo "🧹 Stopping shared evaluator service..."
+          modal app stop shared-evaluator-service || echo "⚠️ Service may already be stopped or not exist"
+          echo "✅ Cleanup complete"
