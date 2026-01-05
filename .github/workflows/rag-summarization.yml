@@ -42,11 +42,11 @@ env:
 
 jobs:
   # ============================================
-  # JOB 0: Deploy Shared Evaluator Service
+  # JOB 0: Deploy Both Evaluator Services
   # Must run BEFORE all model jobs
   # ============================================
-  deploy-evaluator:
-    name: 🚀 Deploy Shared Evaluator Service
+  deploy-evaluators:
+    name: 🚀 Deploy Evaluator Services
     runs-on: ubuntu-latest
 
     steps:
@@ -68,19 +68,33 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Deploy Shared Evaluator Service
+      - name: Deploy Text Evaluator Service
         run: |
           cd ${{ env.WORK_DIR }}
-          echo "🚀 Deploying shared evaluator service (scispaCy + MedCAT)..."
-          modal deploy shared_evaluator_service.py
-          echo "✅ Shared evaluator service deployed successfully"
+          echo "🚀 Deploying text evaluator service (BLEU, ROUGE, SBERT, BERTScore)..."
+          modal deploy text_evaluator_service.py
+          echo "✅ Text evaluator service deployed successfully"
 
-      - name: Warm up Evaluator (Load Models)
+      - name: Deploy Entity Evaluator Service
         run: |
           cd ${{ env.WORK_DIR }}
-          echo "🔥 Warming up evaluator (this loads scispaCy, MedCAT, UMLS - may take 5-15 min)..."
-          modal run shared_evaluator_service.py
-          echo "✅ Evaluator models loaded and ready"
+          echo "🚀 Deploying entity evaluator service (scispaCy, MedCAT)..."
+          modal deploy entity_evaluator_service.py
+          echo "✅ Entity evaluator service deployed successfully"
+
+      - name: Warm up Text Evaluator
+        run: |
+          cd ${{ env.WORK_DIR }}
+          echo "🔥 Warming up text evaluator..."
+          modal run text_evaluator_service.py
+          echo "✅ Text evaluator ready"
+
+      - name: Warm up Entity Evaluator
+        run: |
+          cd ${{ env.WORK_DIR }}
+          echo "🔥 Warming up entity evaluator (this may take 5-10 min)..."
+          modal run entity_evaluator_service.py
+          echo "✅ Entity evaluator ready"
 
   # ============================================
   # JOB 1: Llama 3.1 8B RAG Summarization
@@ -88,7 +102,7 @@ jobs:
   # ============================================
   llama-3-1-8b:
     name: 🦙 Llama 3.1 8B (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_llama_3_1_8b != 'false'
     runs-on: ubuntu-latest
 
@@ -151,7 +165,7 @@ jobs:
   # ============================================
   medgemma-4b:
     name: 🏥 MedGemma 4B-IT (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_medgemma_4b != 'false'
     runs-on: ubuntu-latest
 
@@ -214,7 +228,7 @@ jobs:
   # ============================================
   medgemma-27b-4bit:
     name: 🏥 MedGemma 27B (4-bit) (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_medgemma_27b_4bit != 'false'
     runs-on: ubuntu-latest
 
@@ -277,7 +291,7 @@ jobs:
   # ============================================
   gpt-oss-20b:
     name: 🚀 Groq GPT-OSS-20B (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_gpt_oss_20b != 'false'
     runs-on: ubuntu-latest
 
@@ -340,7 +354,7 @@ jobs:
   # ============================================
   gpt-oss-120b:
     name: 🚀 Groq GPT-OSS-120B (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_gpt_oss_120b != 'false'
     runs-on: ubuntu-latest
 
@@ -403,7 +417,7 @@ jobs:
   # ============================================
   qwen3-32b:
     name: 🧠 Groq Qwen3-32B (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_qwen3_32b != 'false'
     runs-on: ubuntu-latest
 
@@ -466,7 +480,7 @@ jobs:
   # ============================================
   llama4-scout:
     name: 🦙 Groq Llama-4-Scout-17B (All Patients)
-    needs: deploy-evaluator
+    needs: deploy-evaluators
     if: github.event.inputs.run_llama4_scout != 'false'
     runs-on: ubuntu-latest
 
@@ -576,11 +590,11 @@ jobs:
           retention-days: 90
 
   # ============================================
-  # JOB 9: Stop Shared Evaluator Service (Cleanup)
+  # JOB 9: Stop Both Evaluator Services (Cleanup)
   # Runs after all model jobs complete
   # ============================================
-  cleanup-evaluator:
-    name: 🧹 Stop Shared Evaluator Service
+  cleanup-evaluators:
+    name: 🧹 Stop Evaluator Services
     needs: [llama-3-1-8b, medgemma-4b, medgemma-27b-4bit, gpt-oss-20b, gpt-oss-120b, qwen3-32b, llama4-scout]
     if: always()
     runs-on: ubuntu-latest
@@ -601,8 +615,13 @@ jobs:
         run: |
           modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
 
-      - name: Stop Shared Evaluator Service
+      - name: Stop Text Evaluator Service
         run: |
-          echo "🧹 Stopping shared evaluator service..."
-          modal app stop shared-evaluator-service || echo "⚠️ Service may already be stopped or not exist"
+          echo "🧹 Stopping text evaluator service..."
+          modal app stop text-evaluator-service || echo "⚠️ Service may already be stopped or not exist"
+
+      - name: Stop Entity Evaluator Service
+        run: |
+          echo "🧹 Stopping entity evaluator service..."
+          modal app stop entity-evaluator-service || echo "⚠️ Service may already be stopped or not exist"
           echo "✅ Cleanup complete"

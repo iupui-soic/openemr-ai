@@ -519,17 +519,28 @@ def main(output_dir: str = "results"):
     # Initialize summarizer (local to this app)
     summarizer = MedicalSummarizer()
 
-    # Lookup shared evaluator service (must be deployed first)
+    # ==========================================
+    # Connect to TWO evaluator services
+    # ==========================================
+
+    # Text Evaluator (BLEU, ROUGE-L, SBERT, BERTScore)
     try:
-        evaluator_app = modal.App.lookup("shared-evaluator-service")
-        #SummaryEvaluator = evaluator_app.cls("SummaryEvaluator")
-        #SummaryEvaluator = evaluator_app.SummaryEvaluator
-        SummaryEvaluator = modal.Cls.from_name("shared-evaluator-service", "SummaryEvaluator")
-        evaluator = SummaryEvaluator()
-        print("✅ Connected to shared evaluator service")
+        TextEvaluator = modal.Cls.from_name("text-evaluator-service", "TextEvaluator")
+        text_evaluator = TextEvaluator()
+        print("✅ Connected to text evaluator service")
     except Exception as e:
-        print(f"❌ Error: Could not connect to shared evaluator service: {e}")
-        print("   Make sure to deploy it first: modal deploy shared_evaluator_service.py")
+        print(f"❌ Error: Could not connect to text evaluator service: {e}")
+        print("   Make sure to deploy it first: modal deploy text_evaluator_service.py")
+        return
+
+    # Entity Evaluator (scispaCy, MedCAT)
+    try:
+        EntityEvaluator = modal.Cls.from_name("entity-evaluator-service", "EntityEvaluator")
+        entity_evaluator = EntityEvaluator()
+        print("✅ Connected to entity evaluator service")
+    except Exception as e:
+        print(f"❌ Error: Could not connect to entity evaluator service: {e}")
+        print("   Make sure to deploy it first: modal deploy entity_evaluator_service.py")
         return
 
     results = []
@@ -539,20 +550,27 @@ def main(output_dir: str = "results"):
         print(f"\n[{i+1}/{len(patients)}] Processing: {patient_name}")
 
         try:
-            # Generate summary (runs on Modal GPU)
+            # Generate summary (runs on Modal)
             summary_result = summarizer.generate_summary.remote(
                 transcript_text=patient["transcript"],
                 openemr_text=patient.get("openemr_data", ""),
                 patient_name=patient_name,
             )
 
-            # Evaluate against reference (runs on shared evaluator service)
+            # Evaluate against reference
             reference = patient.get("manual_reference_summary", "")
             if reference:
-                eval_metrics = evaluator.evaluate.remote(
+                # Call BOTH evaluators
+                text_metrics = text_evaluator.evaluate.remote(
                     generated=summary_result["summary"],
                     reference=reference,
                 )
+                entity_metrics = entity_evaluator.evaluate.remote(
+                    generated=summary_result["summary"],
+                    reference=reference,
+                )
+                # Combine both results
+                eval_metrics = {**text_metrics, **entity_metrics}
             else:
                 print(f"   ⚠️ No reference summary for {patient_name}, skipping evaluation")
                 eval_metrics = {
