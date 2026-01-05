@@ -46,7 +46,9 @@ evaluator_image = (
         "medcat[spacy,dict-ner]>=2.0.0",
     )
     .run_commands(
-        # Download MedCAT model during image build
+        # Install wget first
+        "apt-get update && apt-get install -y wget unzip",
+        # Download MedCAT model
         "mkdir -p /medcat_models",
         "wget -q https://cogstack-medcat-example-models.s3.eu-west-2.amazonaws.com/medcat-example-models/medmen_wstatus_2021_oct.zip -O /medcat_models/medmen_wstatus_2021_oct.zip",
     )
