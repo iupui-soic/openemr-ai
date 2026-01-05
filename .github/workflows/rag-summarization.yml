@@ -539,7 +539,7 @@ jobs:
 
   # ============================================
   # JOB 8: Compare All Model Results
-  # Uses: summary_utils.py generate_consolidated_report()
+  # Generates clear comparison table with averages
   # ============================================
   compare-results:
     name: 📊 Compare All Models
@@ -558,25 +558,184 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas notion-client httpx python-dotenv
+          pip install pandas tabulate
 
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
           path: all-results
 
-      - name: Generate Consolidated Report
+      - name: Generate Consolidated Report with Averages
         run: |
-          cd ${{ env.WORK_DIR }}
-          python summary_utils.py --report ../../all-results ../../all-results
+          python << 'EOF'
+          import pandas as pd
+          from pathlib import Path
+          from tabulate import tabulate
+
+          results_dir = Path("all-results")
+          all_data = []
+
+          # Load all CSV files
+          for csv_file in results_dir.rglob("evaluation_results_*.csv"):
+              print(f"📂 Loading: {csv_file}")
+              df = pd.read_csv(csv_file)
+              all_data.append(df)
+
+          if not all_data:
+              print("❌ No CSV files found!")
+              exit(1)
+
+          # Combine all data
+          combined = pd.concat(all_data, ignore_index=True)
+
+          # Remove existing AVERAGE rows
+          combined = combined[combined['patient_name'] != 'AVERAGE']
+
+          print(f"✅ Loaded {len(combined)} patient records")
+          print(f"   Models: {combined['model'].unique().tolist()}")
+
+          # Define metrics
+          metrics = ['bleu', 'rouge_l', 'sbert_coherence', 'bert_f1', 
+                     'scispacy_entity_recall', 'medcat_entity_recall', 
+                     'total_time_s']
+          available_metrics = [m for m in metrics if m in combined.columns]
+
+          # Calculate averages per model
+          comparison = combined.groupby('model')[available_metrics].mean().reset_index()
+          comparison = comparison.sort_values('bert_f1', ascending=False).reset_index(drop=True)
+
+          # Add rank column
+          comparison.insert(0, 'Rank', range(1, len(comparison) + 1))
+
+          # Rename columns for display
+          comparison.columns = ['Rank', 'Model', 'BLEU', 'ROUGE-L', 'SBERT', 'BERTScore', 
+                                'scispaCy Recall', 'MedCAT Recall', 'Time (s)']
+
+          # Round values
+          for col in comparison.columns[2:]:
+              if col == 'Time (s)':
+                  comparison[col] = comparison[col].round(2)
+              else:
+                  comparison[col] = comparison[col].round(4)
+
+          # Save comparison CSV
+          comparison.to_csv(results_dir / "model_comparison.csv", index=False)
+
+          # Print table to console
+          print("\n" + "=" * 120)
+          print("📊 MODEL COMPARISON - AVERAGE METRICS ACROSS ALL PATIENTS")
+          print("=" * 120)
+          print(tabulate(comparison, headers='keys', tablefmt='grid', showindex=False))
+          print("=" * 120)
+
+          # Generate HTML table for GitHub Summary
+          html = """<h2>📊 Model Comparison - Average Metrics Across All Patients</h2>
+
+          <table>
+          <tr style="background-color: #4CAF50; color: white;">
+              <th>Rank</th>
+              <th>Model</th>
+              <th>BLEU</th>
+              <th>ROUGE-L</th>
+              <th>SBERT</th>
+              <th>BERTScore</th>
+              <th>scispaCy Recall</th>
+              <th>MedCAT Recall</th>
+              <th>Time (s)</th>
+          </tr>
+          """
+
+          for idx, row in comparison.iterrows():
+              bg_color = "#f2f2f2" if idx % 2 == 0 else "white"
+              # Highlight best model (rank 1)
+              if row['Rank'] == 1:
+                  bg_color = "#c8e6c9"
+          
+              html += f"""<tr style="background-color: {bg_color};">
+                  <td><b>{int(row['Rank'])}</b></td>
+                  <td><b>{row['Model']}</b></td>
+                  <td>{row['BLEU']:.4f}</td>
+                  <td>{row['ROUGE-L']:.4f}</td>
+                  <td>{row['SBERT']:.4f}</td>
+                  <td>{row['BERTScore']:.4f}</td>
+                  <td>{row['scispaCy Recall']:.4f}</td>
+                  <td>{row['MedCAT Recall']:.4f}</td>
+                  <td>{row['Time (s)']:.2f}</td>
+              </tr>
+              """
+
+          html += "</table>"
+
+          # Add best models section
+          html += """<h2>🏆 Best Models by Metric</h2>
+          <table>
+          <tr style="background-color: #2196F3; color: white;">
+              <th>Metric</th>
+              <th>Best Model</th>
+              <th>Score</th>
+          </tr>
+          """
+
+          # Reset column names for finding best
+          comparison.columns = ['Rank', 'Model', 'BLEU', 'ROUGE-L', 'SBERT', 'BERTScore', 
+                                'scispaCy Recall', 'MedCAT Recall', 'Time (s)']
+
+          rankings = [
+              ('BERTScore', True),
+              ('BLEU', True),
+              ('ROUGE-L', True),
+              ('SBERT', True),
+              ('scispaCy Recall', True),
+              ('MedCAT Recall', True),
+              ('Time (s)', False),  # Lower is better
+          ]
+
+          for idx, (metric, higher_better) in enumerate(rankings):
+              if higher_better:
+                  best_idx = comparison[metric].idxmax()
+              else:
+                  best_idx = comparison[metric].idxmin()
+          
+              best_model = comparison.loc[best_idx, 'Model']
+              best_value = comparison.loc[best_idx, metric]
+          
+              bg_color = "#f2f2f2" if idx % 2 == 0 else "white"
+          
+              if metric == 'Time (s)':
+                  html += f"""<tr style="background-color: {bg_color};">
+                      <td>{metric} (lower is better)</td>
+                      <td><b>{best_model}</b></td>
+                      <td>{best_value:.2f}s</td>
+                  </tr>
+                  """
+              else:
+                  html += f"""<tr style="background-color: {bg_color};">
+                      <td>{metric}</td>
+                      <td><b>{best_model}</b></td>
+                      <td>{best_value:.4f}</td>
+                  </tr>
+                  """
+
+          html += "</table>"
+
+          # Save HTML report
+          with open(results_dir / "comparison_report.html", 'w') as f:
+              f.write(html)
+
+          # Also save as markdown for artifact
+          with open(results_dir / "comparison_report.md", 'w') as f:
+              f.write(tabulate(comparison, headers='keys', tablefmt='pipe', showindex=False))
+
+          print("\n✅ Reports generated successfully!")
+          EOF
 
       - name: Append to GitHub Summary
         run: |
-          if [ -f "all-results/comparison_report.md" ]; then
-            cat all-results/comparison_report.md >> $GITHUB_STEP_SUMMARY
+          if [ -f "all-results/comparison_report.html" ]; then
+            cat all-results/comparison_report.html >> $GITHUB_STEP_SUMMARY
           else
-            echo "## ⚠️ No comparison report generated" >> $GITHUB_STEP_SUMMARY
-            echo "Some model jobs may have failed or been skipped." >> $GITHUB_STEP_SUMMARY
+            echo "<h2>⚠️ No comparison report generated</h2>" >> $GITHUB_STEP_SUMMARY
+            echo "<p>Some model jobs may have failed or been skipped.</p>" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Upload Consolidated Results
@@ -584,8 +743,8 @@ jobs:
         with:
           name: consolidated-comparison
           path: |
-            all-results/consolidated_results.csv
             all-results/model_comparison.csv
+            all-results/comparison_report.html
             all-results/comparison_report.md
           retention-days: 90
 
