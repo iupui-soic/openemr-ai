@@ -52,7 +52,7 @@ text_evaluator_image = (
 @app.cls(
     image=text_evaluator_image,
     timeout=1800,
-    cpu=2,
+    gpu="T4",
     memory=8192,
     scaledown_window=600,
 )
