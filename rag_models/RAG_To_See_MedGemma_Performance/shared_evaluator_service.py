@@ -30,20 +30,17 @@ app = modal.App("shared-evaluator-service")
 # Evaluator Image (scispaCy + MedCAT + existing metrics)
 # ============================================================================
 
-evaluator_image =  (
+evaluator_image = (
     modal.Image.debian_slim(python_version="3.11")
     .run_commands("apt-get update && apt-get install -y wget unzip")
-    # Stage 1: Install numpy first
-    .pip_install("numpy>=1.26.0,<2.0.0")
-    # Stage 2: Install spacy and scispacy
-    .pip_install(
-        "spacy>=3.8.0",
-        "scispacy>=0.5.4",
-        "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz",
+    # Use versions that work together
+    .pip_install("numpy==1.26.4")
+    .pip_install("spacy==3.7.5")
+    .pip_install("scispacy==0.5.4")
+    .run_commands(
+        "pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz"
     )
-    # Stage 3: Install medcat (requires spacy>=3.8.0)
-    .pip_install("medcat[spacy,dict-ner]>=2.0.0")
-    # Stage 4: Install evaluation dependencies
+    .pip_install("medcat==1.16.0")
     .pip_install(
         "nltk>=3.8.1",
         "rouge-score>=0.1.2",
