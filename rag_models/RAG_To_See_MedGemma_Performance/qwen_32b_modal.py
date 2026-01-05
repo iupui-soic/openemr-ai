@@ -251,6 +251,7 @@ OUTPUT FORMAT REQUIREMENTS:
 - Write in complete sentences and paragraphs
 - Use professional medical documentation prose style
 - Format similar to a hospital discharge summary
+- Do NOT use markdown formatting (no #, ##, **, *, -, ```, etc.)
 
 INSTRUCTIONS:
 1. Use the SCHEMA GUIDE as a reference for which sections to include
@@ -261,6 +262,7 @@ INSTRUCTIONS:
 6. Do NOT include any meta-commentary, explanations, or references to this prompt
 7. Do NOT output JSON, XML, or any structured data format
 8. Do NOT hallucinate or invent information not present in the inputs
+9. Do NOT use any markdown syntax - plain text only
 
 Generate the medical summary now in narrative prose format, beginning with "Patient Information":"""
             }
