@@ -4,41 +4,33 @@ Artificial Intelligence tooling for OpenEMR related to clinical decision rules, 
 
 ## ELM JSON Validation (Clinical Decision Support Validation)
 
-This repository includes comprehensive evaluation of LLM models for validating clinical decision support logic. We evaluate multiple language models on their ability to identify whether ELM (Expression Logical Model) JSON implementations correctly implement Clinical Practice Guidelines (CPG).
+Evaluation of LLM models for validating clinical decision support logic. Tests whether LLMs can identify if ELM (Expression Logical Model) JSON implementations correctly implement Clinical Practice Guidelines (CPG).
 
-**What is ELM?** Expression Logical Model (ELM) is the compiled JSON representation of Clinical Quality Language (CQL) - the standard for expressing clinical decision rules. This evaluation tests if LLMs can act as automated reviewers of clinical logic by analyzing ELM files against medical guidelines.
+**What is ELM?** ELM is the compiled JSON representation of Clinical Quality Language (CQL) - the standard for expressing clinical decision rules.
 
-**Test Dataset**: Ground truth annotated test cases with ELM JSON files and corresponding CPG markdown files. Each test case includes expected validation results (valid/invalid) and specific errors the LLM should identify.
+**Approach:**
+- **ELM Simplifier**: Deterministic code extracts key values (age thresholds, time intervals, value sets) from complex nested JSON, reducing 500+ lines to ~20 lines of structured data
+- **Step-by-step prompts**: Models compare extracted values against CPG requirements with explicit decision criteria
+- **Batch processing**: Each model loads once and processes all test files efficiently
+
+**Test Dataset**: 10 ground-truth annotated test cases (7 valid, 3 invalid) with ELM JSON and CPG markdown files.
 
 ### Models Evaluated
 
-| Model | Provider | Size | Notes |
-|-------|----------|------|-------|
-| Llama 3.2 1B Instruct | Meta | 1B | Compact general-purpose LLM |
-| Llama 3.2 3B Instruct | Meta | 3B | Larger general-purpose LLM |
-| Llama 3.1 8B Instruct | Meta | 8B | High-capacity general-purpose |
-| Qwen 2.5 1.5B Instruct | Alibaba | 1.5B | Efficient multilingual LLM |
-| Qwen 2.5 3B Instruct | Alibaba | 3B | Balanced performance LLM |
-| Phi-3 Mini | Microsoft | 3.8B | Compact reasoning model |
-| Gemma 3 270M | Google | 270M | Ultra-compact model |
-| Gemma 3 4B | Google | 4B | Efficient open model |
-| MedGemma 4B | Google | 4B | Healthcare-specialized model |
+| Model | Provider | Size | Infrastructure |
+|-------|----------|------|----------------|
+| Llama 3.2 1B/3B | Meta | 1-3B | Modal T4 GPU |
+| Llama 3.1 8B | Meta | 8B | Modal T4 GPU |
+| Llama 3.3 70B | Meta | 70B | Groq API |
+| Qwen 2.5 1.5B/3B | Alibaba | 1.5-3B | Modal T4 GPU |
+| Phi-3 Mini | Microsoft | 3.8B | Modal T4 GPU |
+| Gemma 3 270M/4B | Google | 270M-4B | Modal T4 GPU |
+| MedGemma 4B/1.5-4B | Google | 4B | Modal T4 GPU |
+| GPT-OSS 20B/120B | OpenAI | 20-120B | Groq API |
 
 ### Latest Results
 
-| Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |
-|-------|----------|---------------|-------------|----------|--------|
-| Llama 3.2 1B | 75.0% | 3/4 | 75% | 4.73s | ✓ |
-| Qwen 2.5 3B | 75.0% | 3/4 | 75% | 16.63s | ✓ |
-| Gemma 3 270M | 75.0% | 3/4 | 75% | 22.76s | ✓ |
-| MedGemma 4B | 75.0% | 3/4 | 75% | 35.44s | ✓ |
-| Gemma 3 4B | 75.0% | 3/4 | 75% | 40.74s | ✓ |
-| Llama 3.1 8B | 75.0% | 3/4 | 50% | 321.68s | ✓ |
-| Llama 3.2 3B | 50.0% | 2/4 | 50% | 8.02s | ✓ |
-| Phi-3 Mini | 50.0% | 2/4 | 25% | 27.05s | ✓ |
-| Qwen 2.5 1.5B | 25.0% | 1/4 | 75% | 13.97s | ✓ |
-
-> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/elm-validation.yml)
+Results updated via GitHub Actions. View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
 
 ## RAG Medical Summarization (SOAP Note Generation)
 
@@ -259,6 +251,12 @@ To manually run:
 ## Project Structure
 
 ```
+cdr_elmjson_validator/
+├── modal_app.py            # Modal functions for LLM validation
+├── run_validation.py       # CLI runner for validation
+├── elm_simplifier.py       # ELM JSON to simplified format converter
+└── test_data/              # ELM JSON files, CPG markdown, ground_truth.json
+
 openemr_whisper_wer/
 ├── whisper_wer.py          # OpenAI Whisper evaluation (--kaggle for Kaggle dataset)
 ├── canary_wer.py           # NVIDIA Canary evaluation (--kaggle for Kaggle dataset)
