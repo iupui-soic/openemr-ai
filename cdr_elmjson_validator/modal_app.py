@@ -1,7 +1,7 @@
 """
 ELM Validator using Multiple LLMs on Modal
 
-Each model has its own dedicated function for better caching and parallel execution.
+Consolidated batch processing - each model loads once and processes all files.
 """
 
 import modal
@@ -22,6 +22,105 @@ groq_image = modal.Image.debian_slim().pip_install("groq>=0.4.0")
 volume = modal.Volume.from_name("elm-model-cache", create_if_missing=True)
 
 
+# ============================================
+# Model Configuration Registry
+# ============================================
+
+MODEL_CONFIGS = {
+    "llama-3.2-1b": {
+        "hf_name": "meta-llama/Llama-3.2-1B-Instruct",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "llama-3.2-3b": {
+        "hf_name": "meta-llama/Llama-3.2-3B-Instruct",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "qwen-2.5-1.5b": {
+        "hf_name": "Qwen/Qwen2.5-1.5B-Instruct",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "huggingface",
+    },
+    "qwen-2.5-3b": {
+        "hf_name": "Qwen/Qwen2.5-3B-Instruct",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "huggingface",
+    },
+    "phi-3-mini": {
+        "hf_name": "microsoft/Phi-3-mini-4k-instruct",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "huggingface",
+    },
+    "gemma-3-4b": {
+        "hf_name": "google/gemma-3-4b-it",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "medgemma-4b": {
+        "hf_name": "google/medgemma-4b-it",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "medgemma-1.5-4b": {
+        "hf_name": "google/medgemma-1.5-4b-it",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "llama-3.1-8b": {
+        "hf_name": "meta-llama/Llama-3.1-8B-Instruct",
+        "gpu": "T4",
+        "timeout": 3600,  # Longer timeout for larger model
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "gemma-3-270m": {
+        "hf_name": "google/gemma-3-270m-it",
+        "gpu": "T4",
+        "timeout": 1800,
+        "needs_hf_token": True,
+        "provider": "huggingface",
+    },
+    "gpt-oss-120b": {
+        "hf_name": "openai/gpt-oss-120b",
+        "gpu": None,  # API-based, no GPU needed
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "groq",
+    },
+    "gpt-oss-20b": {
+        "hf_name": "openai/gpt-oss-20b",
+        "gpu": None,
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "groq",
+    },
+    "llama-3.3-70b": {
+        "hf_name": "llama-3.3-70b-versatile",
+        "gpu": None,
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "groq",
+    },
+}
+
+
 def extract_embedded_errors(elm_json):
     """Extract errors from ELM annotations."""
     errors = []
@@ -40,10 +139,7 @@ def build_prompt(elm_json, library_name, cpg_content=None):
     """Build validation prompt for LLM."""
     library = elm_json.get("library", {})
 
-    # Send FULL ELM library content (no truncation!)
-    elm_content = {
-        "library": library
-    }
+    elm_content = {"library": library}
 
     if cpg_content:
         prompt = f"""You are a Clinical Decision Support (CDS) validation expert. Your task is to validate whether the ELM (Expression Logical Model) implementation correctly implements the Clinical Practice Guideline (CPG).
@@ -159,14 +255,13 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     # Gemma models have numerical stability issues with low-temperature sampling
-    # Use greedy decoding for Gemma, sampling for others
     is_gemma = "gemma" in model_name.lower()
 
     if is_gemma:
         outputs = model.generate(
             **inputs,
             max_new_tokens=500,
-            do_sample=False,  # Greedy decoding for Gemma (avoids NaN/inf in probability tensor)
+            do_sample=False,
             pad_token_id=tokenizer.eos_token_id
         )
     else:
@@ -198,32 +293,6 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
     })
 
     print(f"  {library_name}: valid={result['valid']} in {total_time:.2f}s")
-
-    return result
-
-
-def run_validation(elm_json, library_name, cpg_content, model_name, model_id):
-    """Common validation logic for all models (single file)."""
-    import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM
-
-    # Load model
-    print(f"Loading {model_name}...")
-    load_start = time.time()
-
-    tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir="/cache")
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype=torch.float16,
-        device_map="auto",
-        cache_dir="/cache"
-    )
-
-    load_time = time.time() - load_start
-    print(f"Model loaded in {load_time:.2f}s")
-
-    result = run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, model_id, model_name)
-    result["load_time_seconds"] = load_time
 
     return result
 
@@ -276,87 +345,14 @@ def run_batch_validation(items: list, model_name: str, model_id: str) -> list:
             model_name=model_name
         )
         result["file_name"] = item.get("file_name")
-        result["load_time_seconds"] = load_time if i == 1 else 0  # Only count load time once
+        result["load_time_seconds"] = load_time if i == 1 else 0
         results.append(result)
 
     total_inference_time = sum(r.get("inference_time_seconds", 0) for r in results)
-    print(f"\nBatch complete: {len(results)} files in {load_time + total_inference_time:.2f}s (load: {load_time:.2f}s, inference: {total_inference_time:.2f}s)")
+    print(f"\nBatch complete: {len(results)} files in {load_time + total_inference_time:.2f}s "
+          f"(load: {load_time:.2f}s, inference: {total_inference_time:.2f}s)")
 
     return results
-
-
-def run_groq_validation(elm_json, library_name, cpg_content, model_name, model_id):
-    """Groq API-based validation (single file) - no model loading needed."""
-    from groq import Groq
-
-    start_time = time.time()
-
-    # Check for embedded CQL-to-ELM errors
-    embedded_errors = extract_embedded_errors(elm_json)
-    if embedded_errors:
-        return {
-            "valid": False,
-            "errors": embedded_errors,
-            "warnings": [],
-            "source": "embedded",
-            "model": model_id,
-            "model_name": model_name,
-            "library_name": library_name,
-            "time_seconds": time.time() - start_time
-        }
-
-    # Build validation prompt
-    prompt = build_prompt(elm_json, library_name, cpg_content)
-
-    if cpg_content:
-        print(f"  Validating {library_name} against CPG...")
-
-    # Initialize Groq client and generate response
-    print(f"  Calling Groq API with {model_name}...")
-    inference_start = time.time()
-
-    try:
-        client = Groq()  # Uses GROQ_API_KEY from secrets
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.1,
-            max_tokens=500,
-        )
-        answer = response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"  ❌ Groq API error: {e}")
-        return {
-            "valid": False,
-            "errors": [f"Groq API error: {str(e)}"],
-            "warnings": [],
-            "source": "error",
-            "model": model_id,
-            "model_name": model_name,
-            "library_name": library_name,
-            "time_seconds": time.time() - start_time
-        }
-
-    inference_time = time.time() - inference_start
-
-    # Parse response
-    result = parse_response(answer)
-    total_time = time.time() - start_time
-
-    result.update({
-        "source": "groq",
-        "model": model_id,
-        "model_name": model_name,
-        "library_name": library_name,
-        "has_cpg": cpg_content is not None,
-        "time_seconds": total_time,
-        "inference_time_seconds": inference_time,
-        "raw_response": answer[:500]
-    })
-
-    print(f"  {library_name}: valid={result['valid']} in {total_time:.2f}s")
-
-    return result
 
 
 def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> list:
@@ -368,7 +364,6 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
 
     print(f"Running batch validation with {model_name} via Groq API for {len(items)} files...")
 
-    # Initialize Groq client once
     client = Groq()
 
     results = []
@@ -377,7 +372,6 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
 
         start_time = time.time()
 
-        # Check for embedded errors
         elm_json = item.get("elm_json")
         library_name = item.get("library_name", "Unknown")
         cpg_content = item.get("cpg_content")
@@ -399,7 +393,6 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
             results.append(result)
             continue
 
-        # Build prompt and call API
         prompt = build_prompt(elm_json, library_name, cpg_content)
 
         inference_start = time.time()
@@ -412,7 +405,7 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
             )
             answer = response.choices[0].message.content.strip()
         except Exception as e:
-            print(f"  ❌ Groq API error: {e}")
+            print(f"  Groq API error: {e}")
             result = {
                 "valid": False,
                 "errors": [f"Groq API error: {str(e)}"],
@@ -430,7 +423,6 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
 
         inference_time = time.time() - inference_start
 
-        # Parse response
         result = parse_response(answer)
         result.update({
             "source": "groq",
@@ -441,281 +433,31 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
             "has_cpg": cpg_content is not None,
             "time_seconds": time.time() - start_time,
             "inference_time_seconds": inference_time,
-            "load_time_seconds": 0,  # No model loading for API
+            "load_time_seconds": 0,
             "raw_response": answer[:500]
         })
 
         results.append(result)
 
     total_time = sum(r.get("time_seconds", 0) for r in results)
-    print(f"\nBatch complete: {len(results)} files in {total_time:.2f}s (API calls only, no model loading)")
+    print(f"\nBatch complete: {len(results)} files in {total_time:.2f}s (API calls only)")
 
     return results
 
 
 # ============================================
-# Model-specific validation functions
+# Modal Functions - One per model for proper caching
 # ============================================
 
 @app.function(
     image=image,
     gpu="T4",
-    timeout=300,
+    timeout=1800,
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_llama_1b(data: dict) -> dict:
-    """Validate ELM JSON with Llama 3.2 1B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="meta-llama/Llama-3.2-1B-Instruct",
-        model_id="llama-3.2-1b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_llama_3b(data: dict) -> dict:
-    """Validate ELM JSON with Llama 3.2 3B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="meta-llama/Llama-3.2-3B-Instruct",
-        model_id="llama-3.2-3b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume}
-)
-def validate_qwen_1_5b(data: dict) -> dict:
-    """Validate ELM JSON with Qwen 2.5 1.5B."""
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="Qwen/Qwen2.5-1.5B-Instruct",
-        model_id="qwen-2.5-1.5b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume}
-)
-def validate_qwen_3b(data: dict) -> dict:
-    """Validate ELM JSON with Qwen 2.5 3B."""
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="Qwen/Qwen2.5-3B-Instruct",
-        model_id="qwen-2.5-3b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume}
-)
-def validate_phi3(data: dict) -> dict:
-    """Validate ELM JSON with Phi-3 Mini."""
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="microsoft/Phi-3-mini-4k-instruct",
-        model_id="phi-3-mini"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_gemma(data: dict) -> dict:
-    """Validate ELM JSON with Gemma 3 4B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="google/gemma-3-4b-it",
-        model_id="gemma-3-4b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_medgemma(data: dict) -> dict:
-    """Validate ELM JSON with MedGemma 4B (healthcare-specialized)."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="google/medgemma-4b-it",
-        model_id="medgemma-4b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_medgemma_1_5(data: dict) -> dict:
-    """Validate ELM JSON with MedGemma 1.5 4B (healthcare-specialized)."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="google/medgemma-1.5-4b-it",
-        model_id="medgemma-1.5-4b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_llama_3_1_8b(data: dict) -> dict:
-    """Validate ELM JSON with Llama 3.1 8B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="meta-llama/Llama-3.1-8B-Instruct",
-        model_id="llama-3.1-8b"
-    )
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=300,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_gemma_270m(data: dict) -> dict:
-    """Validate ELM JSON with Gemma 3 270M."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-
-    return run_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="google/gemma-3-270m-it",
-        model_id="gemma-3-270m"
-    )
-
-
-@app.function(
-    image=groq_image,
-    timeout=600,
-    secrets=[modal.Secret.from_name("groq-api")]
-)
-def validate_gpt_oss_120b(data: dict) -> dict:
-    """Validate ELM JSON with GPT OSS 120B via Groq API."""
-    return run_groq_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="openai/gpt-oss-120b",
-        model_id="gpt-oss-120b"
-    )
-
-
-@app.function(
-    image=groq_image,
-    timeout=600,
-    secrets=[modal.Secret.from_name("groq-api")]
-)
-def validate_gpt_oss_20b(data: dict) -> dict:
-    """Validate ELM JSON with GPT OSS 20B via Groq API."""
-    return run_groq_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="openai/gpt-oss-20b",
-        model_id="gpt-oss-20b"
-    )
-
-
-@app.function(
-    image=groq_image,
-    timeout=600,
-    secrets=[modal.Secret.from_name("groq-api")]
-)
-def validate_llama_3_3_70b(data: dict) -> dict:
-    """Validate ELM JSON with Llama 3.3 70B via Groq API."""
-    return run_groq_validation(
-        elm_json=data.get("elm_json"),
-        library_name=data.get("library_name", "Unknown"),
-        cpg_content=data.get("cpg_content"),
-        model_name="llama-3.3-70b-versatile",
-        model_id="llama-3.3-70b"
-    )
-
-
-# ============================================
-# Batch validation functions (process multiple files with single model load)
-# ============================================
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,  # 30 min for batch processing
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_batch_llama_1b(items: list) -> list:
-    """Batch validate ELM JSON files with Llama 3.2 1B."""
+def validate_llama_1b(items: list) -> list:
+    """Batch validate with Llama 3.2 1B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "meta-llama/Llama-3.2-1B-Instruct", "llama-3.2-1b")
@@ -728,8 +470,8 @@ def validate_batch_llama_1b(items: list) -> list:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_llama_3b(items: list) -> list:
-    """Batch validate ELM JSON files with Llama 3.2 3B."""
+def validate_llama_3b(items: list) -> list:
+    """Batch validate with Llama 3.2 3B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "meta-llama/Llama-3.2-3B-Instruct", "llama-3.2-3b")
@@ -741,8 +483,8 @@ def validate_batch_llama_3b(items: list) -> list:
     timeout=1800,
     volumes={"/cache": volume}
 )
-def validate_batch_qwen_1_5b(items: list) -> list:
-    """Batch validate ELM JSON files with Qwen 2.5 1.5B."""
+def validate_qwen_1_5b(items: list) -> list:
+    """Batch validate with Qwen 2.5 1.5B."""
     return run_batch_validation(items, "Qwen/Qwen2.5-1.5B-Instruct", "qwen-2.5-1.5b")
 
 
@@ -752,8 +494,8 @@ def validate_batch_qwen_1_5b(items: list) -> list:
     timeout=1800,
     volumes={"/cache": volume}
 )
-def validate_batch_qwen_3b(items: list) -> list:
-    """Batch validate ELM JSON files with Qwen 2.5 3B."""
+def validate_qwen_3b(items: list) -> list:
+    """Batch validate with Qwen 2.5 3B."""
     return run_batch_validation(items, "Qwen/Qwen2.5-3B-Instruct", "qwen-2.5-3b")
 
 
@@ -763,8 +505,8 @@ def validate_batch_qwen_3b(items: list) -> list:
     timeout=1800,
     volumes={"/cache": volume}
 )
-def validate_batch_phi3(items: list) -> list:
-    """Batch validate ELM JSON files with Phi-3 Mini."""
+def validate_phi3(items: list) -> list:
+    """Batch validate with Phi-3 Mini."""
     return run_batch_validation(items, "microsoft/Phi-3-mini-4k-instruct", "phi-3-mini")
 
 
@@ -775,8 +517,8 @@ def validate_batch_phi3(items: list) -> list:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_gemma(items: list) -> list:
-    """Batch validate ELM JSON files with Gemma 3 4B."""
+def validate_gemma(items: list) -> list:
+    """Batch validate with Gemma 3 4B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "google/gemma-3-4b-it", "gemma-3-4b")
@@ -789,8 +531,8 @@ def validate_batch_gemma(items: list) -> list:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_medgemma(items: list) -> list:
-    """Batch validate ELM JSON files with MedGemma 4B."""
+def validate_medgemma(items: list) -> list:
+    """Batch validate with MedGemma 4B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "google/medgemma-4b-it", "medgemma-4b")
@@ -803,8 +545,8 @@ def validate_batch_medgemma(items: list) -> list:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_medgemma_1_5(items: list) -> list:
-    """Batch validate ELM JSON files with MedGemma 1.5 4B."""
+def validate_medgemma_1_5(items: list) -> list:
+    """Batch validate with MedGemma 1.5 4B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "google/medgemma-1.5-4b-it", "medgemma-1.5-4b")
@@ -813,12 +555,12 @@ def validate_batch_medgemma_1_5(items: list) -> list:
 @app.function(
     image=image,
     gpu="T4",
-    timeout=3600,  # 60 min for larger 8B model
+    timeout=3600,
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_llama_3_1_8b(items: list) -> list:
-    """Batch validate ELM JSON files with Llama 3.1 8B."""
+def validate_llama_3_1_8b(items: list) -> list:
+    """Batch validate with Llama 3.1 8B."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b")
@@ -831,8 +573,8 @@ def validate_batch_llama_3_1_8b(items: list) -> list:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
-def validate_batch_gemma_270m(items: list) -> list:
-    """Batch validate ELM JSON files with Gemma 3 270M."""
+def validate_gemma_270m(items: list) -> list:
+    """Batch validate with Gemma 3 270M."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
     return run_batch_validation(items, "google/gemma-3-270m-it", "gemma-3-270m")
@@ -843,8 +585,8 @@ def validate_batch_gemma_270m(items: list) -> list:
     timeout=1800,
     secrets=[modal.Secret.from_name("groq-api")]
 )
-def validate_batch_gpt_oss_120b(items: list) -> list:
-    """Batch validate ELM JSON files with GPT OSS 120B via Groq API."""
+def validate_gpt_oss_120b(items: list) -> list:
+    """Batch validate with GPT OSS 120B via Groq API."""
     return run_batch_groq_validation(items, "openai/gpt-oss-120b", "gpt-oss-120b")
 
 
@@ -853,8 +595,8 @@ def validate_batch_gpt_oss_120b(items: list) -> list:
     timeout=1800,
     secrets=[modal.Secret.from_name("groq-api")]
 )
-def validate_batch_gpt_oss_20b(items: list) -> list:
-    """Batch validate ELM JSON files with GPT OSS 20B via Groq API."""
+def validate_gpt_oss_20b(items: list) -> list:
+    """Batch validate with GPT OSS 20B via Groq API."""
     return run_batch_groq_validation(items, "openai/gpt-oss-20b", "gpt-oss-20b")
 
 
@@ -863,12 +605,12 @@ def validate_batch_gpt_oss_20b(items: list) -> list:
     timeout=1800,
     secrets=[modal.Secret.from_name("groq-api")]
 )
-def validate_batch_llama_3_3_70b(items: list) -> list:
-    """Batch validate ELM JSON files with Llama 3.3 70B via Groq API."""
+def validate_llama_3_3_70b(items: list) -> list:
+    """Batch validate with Llama 3.3 70B via Groq API."""
     return run_batch_groq_validation(items, "llama-3.3-70b-versatile", "llama-3.3-70b")
 
 
-# Model function registry (single file)
+# Single unified registry
 MODEL_FUNCTIONS = {
     "llama-3.2-1b": validate_llama_1b,
     "llama-3.2-3b": validate_llama_3b,
@@ -885,23 +627,6 @@ MODEL_FUNCTIONS = {
     "llama-3.3-70b": validate_llama_3_3_70b,
 }
 
-# Model function registry (batch processing)
-BATCH_MODEL_FUNCTIONS = {
-    "llama-3.2-1b": validate_batch_llama_1b,
-    "llama-3.2-3b": validate_batch_llama_3b,
-    "qwen-2.5-1.5b": validate_batch_qwen_1_5b,
-    "qwen-2.5-3b": validate_batch_qwen_3b,
-    "phi-3-mini": validate_batch_phi3,
-    "gemma-3-4b": validate_batch_gemma,
-    "medgemma-4b": validate_batch_medgemma,
-    "medgemma-1.5-4b": validate_batch_medgemma_1_5,
-    "llama-3.1-8b": validate_batch_llama_3_1_8b,
-    "gemma-3-270m": validate_batch_gemma_270m,
-    "gpt-oss-120b": validate_batch_gpt_oss_120b,
-    "gpt-oss-20b": validate_batch_gpt_oss_20b,
-    "llama-3.3-70b": validate_batch_llama_3_3_70b,
-}
-
 
 def get_validator(model_id: str):
     """Get the validation function for a model."""
@@ -910,11 +635,11 @@ def get_validator(model_id: str):
     return MODEL_FUNCTIONS[model_id]
 
 
-def get_batch_validator(model_id: str):
-    """Get the batch validation function for a model."""
-    if model_id not in BATCH_MODEL_FUNCTIONS:
-        raise ValueError(f"Unknown model: {model_id}. Available: {list(BATCH_MODEL_FUNCTIONS.keys())}")
-    return BATCH_MODEL_FUNCTIONS[model_id]
+def get_model_config(model_id: str) -> dict:
+    """Get configuration for a model."""
+    if model_id not in MODEL_CONFIGS:
+        raise ValueError(f"Unknown model: {model_id}. Available: {list(MODEL_CONFIGS.keys())}")
+    return MODEL_CONFIGS[model_id]
 
 
 @app.local_entrypoint()
@@ -961,11 +686,13 @@ def main(
                 cpg_content = f.read()
             print(f"Loaded CPG: {cpg_file}")
 
-    data = {
+    # Create batch item (single file)
+    items = [{
         "elm_json": elm_json,
         "library_name": library_name,
-        "cpg_content": cpg_content
-    }
+        "cpg_content": cpg_content,
+        "file_name": elm_path.name
+    }]
 
     models_to_run = list(MODEL_FUNCTIONS.keys()) if all_models else [model]
 
@@ -975,20 +702,21 @@ def main(
         print(f"CPG: {cpg_file}")
     print(f"{'='*70}\n")
 
-    results = []
+    all_results = []
     for model_id in models_to_run:
         print(f"\nValidating with {model_id}...")
         validator = get_validator(model_id)
-        result = validator.remote(data)
-        results.append(result)
+        results = validator.remote(items)
 
-        status = "VALID" if result.get("valid") else "INVALID"
-        print(f"  Result: {status}")
-        print(f"  Time: {result['time_seconds']:.2f}s")
-        if result["errors"]:
-            print(f"  Errors: {result['errors']}")
-        if result["warnings"]:
-            print(f"  Warnings: {result['warnings']}")
+        for result in results:
+            all_results.append(result)
+            status = "VALID" if result.get("valid") else "INVALID"
+            print(f"  Result: {status}")
+            print(f"  Time: {result['time_seconds']:.2f}s")
+            if result["errors"]:
+                print(f"  Errors: {result['errors']}")
+            if result["warnings"]:
+                print(f"  Warnings: {result['warnings']}")
 
     if all_models:
         print(f"\n{'='*70}")
@@ -996,6 +724,6 @@ def main(
         print(f"{'='*70}")
         print(f"{'Model':<20} {'Status':<10} {'Time (s)':<10}")
         print("-" * 40)
-        for r in sorted(results, key=lambda x: x['time_seconds']):
+        for r in sorted(all_results, key=lambda x: x['time_seconds']):
             status = "VALID" if r["valid"] else "INVALID"
             print(f"{r['model']:<20} {status:<10} {r['time_seconds']:<10.2f}")
