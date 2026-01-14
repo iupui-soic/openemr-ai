@@ -652,6 +652,17 @@ jobs:
         if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
         run: pip install -r openemr_whisper_wer/requirements.txt
 
+      - name: Setup HuggingFace secret
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
+
       - name: Run WER evaluation
         if: steps.check.outputs.ran == 'true'
         env:

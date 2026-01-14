@@ -40,8 +40,8 @@ MODEL_ID = "google/medasr"
 kaggle_volume = modal.Volume.from_name("medical-speech-dataset")
 
 medasr_image = (
-    modal.Image.debian_slim(python_version="3.10")
-    .apt_install("git", "libsndfile1", "ffmpeg", "build-essential")
+    modal.Image.debian_slim(python_version="3.12")
+    .apt_install("git", "libsndfile1", "ffmpeg", "build-essential", "cmake")
     .pip_install(
         "torch",
         "torchaudio",
@@ -51,30 +51,130 @@ medasr_image = (
         "jiwer",
         "pandas",
         "huggingface_hub",
+        # KenLM and pyctcdecode for language model decoding
+        "kenlm==0.3.0",
+        "git+https://github.com/mediacatch/pyctcdecode.git@ff49fc562bf8fc5d6697d4dcd34188dd630cc977",
         # Install transformers from specific commit for MedASR support
         "git+https://github.com/huggingface/transformers.git@65dc261512cbdb1ee72b88ae5b222f2605aad8e5",
     )
 )
 
 
-@app.cls(image=medasr_image, gpu="A10G", timeout=600)
+def _restore_text(text: str) -> str:
+    """
+    Restore text from pyctcdecode format.
+
+    pyctcdecode converts "▁" to spaces internally, so by the time we get the text,
+    all "▁" prefixes have become spaces between tokens.
+    "#" was used to mark original word boundaries (original "▁" in vocabulary).
+
+    So we:
+    1. Remove all spaces (which came from our artificial "▁" prefixes)
+    2. Convert "#" back to space (restore original word boundaries)
+    3. Remove </s> end-of-sequence tokens
+    """
+    return text.replace(" ", "").replace("#", " ").replace("</s>", "").strip()
+
+
+def _normalize_for_wer(s: str) -> str:
+    """
+    Normalize text for WER calculation - matches official MedASR notebook.
+
+    https://github.com/Google-Health/medasr/blob/main/notebooks/quick_start_with_hugging_face.ipynb
+    """
+    import re
+    s = s.lower()
+    s = s.replace('</s>', '')  # Remove end-of-sequence tokens from MedASR
+    s = re.sub(r"[^ a-z0-9']", ' ', s)  # Keep only alphanumeric, space, apostrophe
+    s = ' '.join(s.split())  # Normalize whitespace
+    return s
+
+
+def _calculate_medasr_wer(reference: str, hypothesis: str) -> dict:
+    """
+    Calculate WER using MedASR notebook's normalization.
+    """
+    import jiwer
+
+    ref = _normalize_for_wer(reference)
+    hyp = _normalize_for_wer(hypothesis)
+    output = jiwer.process_words(ref, hyp)
+
+    return {
+        "wer": output.wer,
+        "mer": output.mer,
+        "wil": output.wil,
+        "insertions": output.insertions,
+        "deletions": output.deletions,
+        "substitutions": output.substitutions,
+        "hits": output.hits,
+    }
+
+
+def _create_pipeline_with_lm(model_id: str, lm_path: str):
+    """Create ASR pipeline with language model for better accuracy."""
+    import dataclasses
+    import pyctcdecode
+    import transformers
+
+    class LasrCtcBeamSearchDecoder:
+        def __init__(self, tokenizer, kenlm_model_path=None, **kwargs):
+            vocab = [None for _ in range(tokenizer.vocab_size)]
+            for k, v in tokenizer.vocab.items():
+                if v < tokenizer.vocab_size:
+                    vocab[v] = k
+            assert not [i for i in vocab if i is None]
+            vocab[0] = ""
+            for i in range(1, len(vocab)):
+                piece = vocab[i]
+                if not piece.startswith("<") and not piece.endswith(">"):
+                    piece = "▁" + piece.replace("▁", "#")
+                vocab[i] = piece
+            self._decoder = pyctcdecode.build_ctcdecoder(vocab, kenlm_model_path, **kwargs)
+
+        def decode_beams(self, *args, **kwargs):
+            beams = self._decoder.decode_beams(*args, **kwargs)
+            return [dataclasses.replace(i, text=_restore_text(i.text)) for i in beams]
+
+    feature_extractor = transformers.LasrFeatureExtractor.from_pretrained(model_id)
+    feature_extractor._processor_class = "LasrProcessorWithLM"
+    pipe = transformers.pipeline(
+        task="automatic-speech-recognition",
+        model=model_id,
+        feature_extractor=feature_extractor,
+        decoder=LasrCtcBeamSearchDecoder(
+            transformers.AutoTokenizer.from_pretrained(model_id), lm_path
+        ),
+    )
+    assert pipe.type == "ctc_with_lm"
+    return pipe
+
+
+@app.cls(
+    image=medasr_image,
+    gpu="A10G",
+    timeout=600,
+    secrets=[modal.Secret.from_name("huggingface")]
+)
 class MedASRTranscriber:
     @modal.enter()
     def load_model(self):
-        import torch
-        from transformers import AutoModelForCTC, AutoProcessor
+        import huggingface_hub
 
-        print(f"Loading {MODEL_ID}...")
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.processor = AutoProcessor.from_pretrained(MODEL_ID)
-        self.model = AutoModelForCTC.from_pretrained(MODEL_ID).to(self.device)
-        self.model.eval()
-        print(f"Model loaded on {self.device}!")
+        print(f"Loading {MODEL_ID} with language model...")
+
+        # Download the KenLM language model
+        lm_path = huggingface_hub.hf_hub_download(MODEL_ID, filename='lm_6.kenlm')
+        print(f"Downloaded LM to: {lm_path}")
+
+        # Create pipeline with language model
+        self.pipe = _create_pipeline_with_lm(MODEL_ID, lm_path)
+        print("Model loaded with LM!")
 
     @modal.method()
     def transcribe(self, audio_bytes: bytes) -> str:
         """
-        Transcribe audio bytes to text.
+        Transcribe audio bytes to text using MedASR with language model.
 
         Args:
             audio_bytes: Raw audio file bytes (m4a, mp3, wav, etc.)
@@ -85,7 +185,6 @@ class MedASRTranscriber:
         import tempfile
         import os
         import subprocess
-        import librosa
 
         # Detect format from magic bytes
         if audio_bytes[:12].find(b'ftyp') >= 0:
@@ -114,23 +213,28 @@ class MedASRTranscriber:
                 "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
             ], check=True, capture_output=True)
 
-            # Load audio with librosa
-            speech, sample_rate = librosa.load(output_path, sr=16000)
+            # Load audio to check duration
+            import librosa
+            audio, sr = librosa.load(output_path, sr=16000, mono=True)
+            duration_s = len(audio) / sr
 
-            # Process with MedASR
-            inputs = self.processor(
-                speech,
-                sampling_rate=sample_rate,
-                return_tensors="pt",
-                padding=True
-            )
-            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+            # Use chunking only for audio longer than 10 seconds
+            # Short audio can be processed directly without chunking
+            if duration_s > 10:
+                result = self.pipe(
+                    output_path,
+                    chunk_length_s=20,
+                    stride_length_s=2,
+                    decoder_kwargs=dict(beam_width=8),
+                )
+            else:
+                # For short audio, process directly without chunking
+                result = self.pipe(
+                    {"raw": audio, "sampling_rate": sr},
+                    decoder_kwargs=dict(beam_width=8),
+                )
 
-            # Generate transcription
-            outputs = self.model.generate(**inputs)
-            decoded_text = self.processor.batch_decode(outputs)[0]
-
-            return decoded_text.strip()
+            return result['text'].strip()
 
         except subprocess.CalledProcessError as e:
             raise RuntimeError(f"FFmpeg conversion failed: {e.stderr.decode()}")
@@ -156,35 +260,32 @@ medasr_kaggle_image = medasr_image.add_local_file(
     gpu="A10G",
     timeout=1800,
     volumes={"/data": kaggle_volume},
+    secrets=[modal.Secret.from_name("huggingface")]
 )
 class MedASRKaggleEvaluator:
-    """Evaluates MedASR on Kaggle medical speech dataset."""
+    """Evaluates MedASR on Kaggle medical speech dataset with language model."""
 
     @modal.enter()
     def load_model(self):
-        import torch
-        from transformers import AutoModelForCTC, AutoProcessor
+        import huggingface_hub
 
-        print(f"Loading {MODEL_ID}...")
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.processor = AutoProcessor.from_pretrained(MODEL_ID)
-        self.model = AutoModelForCTC.from_pretrained(MODEL_ID).to(self.device)
-        self.model.eval()
-        print(f"Model loaded on {self.device}!")
+        print(f"Loading {MODEL_ID} with language model...")
 
-    def _load_audio_16k(self, audio_path: str):
-        """Load audio and resample to 16kHz mono."""
-        import librosa
+        # Download the KenLM language model
+        lm_path = huggingface_hub.hf_hub_download(MODEL_ID, filename='lm_6.kenlm')
+        print(f"Downloaded LM to: {lm_path}")
 
-        speech, _ = librosa.load(audio_path, sr=16000, mono=True)
-        return speech
+        # Create pipeline with language model
+        self.pipe = _create_pipeline_with_lm(MODEL_ID, lm_path)
+        print("Model loaded with LM!")
 
     @modal.method()
     def evaluate_dataset(self, split: str = "validate") -> list[dict]:
-        """Evaluate MedASR on Kaggle dataset."""
+        """Evaluate MedASR on Kaggle dataset using LM-based pipeline."""
         import sys
+        import librosa
         sys.path.insert(0, "/root")
-        from wer_utils import load_kaggle_dataset, calculate_wer_metrics
+        from wer_utils import load_kaggle_dataset
 
         entries = load_kaggle_dataset(split)
         results = []
@@ -192,22 +293,21 @@ class MedASRKaggleEvaluator:
         for i, entry in enumerate(entries):
             print(f"[{i+1}/{len(entries)}] {entry['file_name']}")
             try:
-                # Load and process audio
-                speech = self._load_audio_16k(entry["path"])
+                audio, sr = librosa.load(entry["path"], sr=16000, mono=True)
+                duration_s = len(audio) / sr
 
-                inputs = self.processor(
-                    speech,
-                    sampling_rate=16000,
-                    return_tensors="pt",
-                    padding=True
-                )
-                inputs = {k: v.to(self.device) for k, v in inputs.items()}
+                if duration_s > 10:
+                    result = self.pipe(
+                        audio,
+                        chunk_length_s=20,
+                        stride_length_s=2,
+                        decoder_kwargs=dict(beam_width=8),
+                    )
+                else:
+                    result = self.pipe(audio, decoder_kwargs=dict(beam_width=8))
 
-                # Generate transcription
-                outputs = self.model.generate(**inputs)
-                transcript = self.processor.batch_decode(outputs)[0].strip()
-
-                metrics = calculate_wer_metrics(entry["transcript"], transcript)
+                transcript = result['text'].strip()
+                metrics = _calculate_medasr_wer(entry["transcript"], transcript)
                 print(f"  WER: {metrics['wer']:.2%}")
 
                 results.append({
