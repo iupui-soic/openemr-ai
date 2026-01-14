@@ -8,7 +8,7 @@
 ### Screening Criteria
 
 ### No Screening Needed If:
-- Blood pressure screening encounter (from "Encounter to Screen for Blood Pressure VS" - `2.16.840.1.113883.3.600.1920`) exists within the past **1 year** (12 months)
+- Blood pressure screening encounter (from "Encounter to Screen for Blood Pressure VS" - `2.16.840.1.113883.3.600.1920`) exists within the past 1 year (12 months)
 
 ## Decision Logic
 

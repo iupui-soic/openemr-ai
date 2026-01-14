@@ -121,6 +121,11 @@ MODEL_CONFIGS = {
 }
 
 
+# Token limits for different contexts
+MAX_PROMPT_CHARS_LOCAL = 24000  # ~6k tokens for local models on T4
+MAX_PROMPT_CHARS_GROQ = 6000    # ~1.5k tokens for Groq API (conservative)
+
+
 def extract_embedded_errors(elm_json):
     """Extract errors from ELM annotations."""
     errors = []
@@ -135,11 +140,83 @@ def extract_embedded_errors(elm_json):
     return errors
 
 
-def build_prompt(elm_json, library_name, cpg_content=None):
-    """Build validation prompt for LLM."""
+def truncate_elm_json(elm_json, max_chars):
+    """
+    Truncate ELM JSON to fit within token limits while preserving key structure.
+
+    Strategy:
+    1. Keep library identifier, usings, includes, parameters
+    2. Keep statement names and types
+    3. Truncate expression bodies if needed
+    """
     library = elm_json.get("library", {})
 
+    # Always keep these small sections
+    truncated = {
+        "library": {
+            "identifier": library.get("identifier", {}),
+            "schemaIdentifier": library.get("schemaIdentifier", {}),
+            "usings": library.get("usings", {}),
+            "includes": library.get("includes", {}),
+            "parameters": library.get("parameters", {}),
+            "codeSystems": library.get("codeSystems", {}),
+            "valueSets": library.get("valueSets", {}),
+            "codes": library.get("codes", {}),
+        }
+    }
+
+    # Try to include statements, truncating if needed
+    statements = library.get("statements", {})
+    if statements:
+        truncated_statements = {"def": []}
+
+        for defn in statements.get("def", []):
+            # Create a summary of the definition
+            summary = {
+                "name": defn.get("name"),
+                "context": defn.get("context"),
+                "accessLevel": defn.get("accessLevel"),
+            }
+
+            # Check if we can include the full expression
+            current_json = json.dumps(truncated, indent=2)
+            full_defn_json = json.dumps(defn, indent=2)
+
+            if len(current_json) + len(full_defn_json) < max_chars * 0.8:
+                # Include full definition
+                truncated_statements["def"].append(defn)
+            else:
+                # Include only summary with expression type
+                expr = defn.get("expression", {})
+                summary["expression_type"] = expr.get("type", "unknown")
+                summary["_truncated"] = True
+                truncated_statements["def"].append(summary)
+
+        truncated["library"]["statements"] = truncated_statements
+
+    return truncated
+
+
+def estimate_tokens(text):
+    """Rough estimate of token count (4 chars per token average)."""
+    return len(text) // 4
+
+
+def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
+    """Build validation prompt for LLM with optional truncation."""
+    library = elm_json.get("library", {})
     elm_content = {"library": library}
+    elm_json_str = json.dumps(elm_content, indent=2)
+
+    # Check if truncation is needed
+    truncated = False
+    if max_chars and len(elm_json_str) > max_chars:
+        truncated_elm = truncate_elm_json(elm_json, max_chars)
+        elm_json_str = json.dumps(truncated_elm, indent=2)
+        truncated = True
+        print(f"  ELM truncated from {len(json.dumps(elm_content))} to {len(elm_json_str)} chars")
+
+    truncation_note = "\n\n(Note: ELM content was truncated due to size. Focus on the available structure.)" if truncated else ""
 
     if cpg_content:
         prompt = f"""You are a Clinical Decision Support (CDS) validation expert. Your task is to validate whether the ELM (Expression Logical Model) implementation correctly implements the Clinical Practice Guideline (CPG).
@@ -148,7 +225,7 @@ Clinical Practice Guideline (user-written, any format):
 {cpg_content}
 
 ELM Implementation:
-{json.dumps(elm_content, indent=2)}
+{elm_json_str}{truncation_note}
 
 Validation Process:
 1. Understand the CPG: Read and understand what clinical criteria the CPG describes (age ranges, lab values, time periods, procedures, conditions, etc.) - regardless of how it's written
@@ -167,8 +244,8 @@ Your response:"""
     else:
         prompt = f"""You are a Clinical Quality Language (CQL) expert. Analyze this ELM clinical logic.
 
-ELM Library (FULL):
-{json.dumps(elm_content, indent=2)}
+ELM Library:
+{elm_json_str}{truncation_note}
 
 Check for LOGICAL ISSUES only:
 - Contradictory conditions?
@@ -226,8 +303,10 @@ def parse_response(response):
     }
 
 
-def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, model_id, model_name):
+def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, model_id, model_name, max_chars=None):
     """Run inference for a single ELM file using pre-loaded model."""
+    import torch
+
     start_time = time.time()
 
     # Check for embedded CQL-to-ELM errors
@@ -244,37 +323,87 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
             "time_seconds": time.time() - start_time
         }
 
-    # Build validation prompt
-    prompt = build_prompt(elm_json, library_name, cpg_content)
+    # Build validation prompt with optional truncation
+    prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=max_chars)
 
     if cpg_content:
         print(f"  Validating {library_name} against CPG...")
 
-    # Generate response
+    # Generate response with OOM handling
     inference_start = time.time()
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
-    # Gemma models have numerical stability issues with low-temperature sampling
-    is_gemma = "gemma" in model_name.lower()
+    try:
+        inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=4096).to(model.device)
 
-    if is_gemma:
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=500,
-            do_sample=False,
-            pad_token_id=tokenizer.eos_token_id
-        )
-    else:
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=500,
-            temperature=0.1,
-            do_sample=True,
-            pad_token_id=tokenizer.eos_token_id
-        )
+        # Gemma models have numerical stability issues with low-temperature sampling
+        is_gemma = "gemma" in model_name.lower()
 
-    response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    answer = response_text[len(prompt):].strip()
+        if is_gemma:
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=500,
+                do_sample=False,
+                pad_token_id=tokenizer.eos_token_id
+            )
+        else:
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=500,
+                temperature=0.1,
+                do_sample=True,
+                pad_token_id=tokenizer.eos_token_id
+            )
+
+        response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        answer = response_text[len(prompt):].strip()
+
+    except (torch.cuda.OutOfMemoryError, RuntimeError) as e:
+        if "out of memory" in str(e).lower() or "CUDA" in str(e):
+            # Clear CUDA cache and try with truncated input
+            torch.cuda.empty_cache()
+            print(f"  OOM error, retrying with truncated input...")
+
+            # Retry with more aggressive truncation
+            truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_LOCAL // 2)
+            try:
+                inputs = tokenizer(truncated_prompt, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
+
+                if "gemma" in model_name.lower():
+                    outputs = model.generate(
+                        **inputs,
+                        max_new_tokens=300,
+                        do_sample=False,
+                        pad_token_id=tokenizer.eos_token_id
+                    )
+                else:
+                    outputs = model.generate(
+                        **inputs,
+                        max_new_tokens=300,
+                        temperature=0.1,
+                        do_sample=True,
+                        pad_token_id=tokenizer.eos_token_id
+                    )
+
+                response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+                answer = response_text[len(truncated_prompt):].strip()
+
+            except Exception as retry_error:
+                print(f"  Retry failed: {retry_error}")
+                return {
+                    "valid": False,
+                    "errors": [f"GPU memory error (file too large for model): {str(e)[:100]}"],
+                    "warnings": ["Consider using a smaller ELM file or API-based model"],
+                    "source": "error",
+                    "model": model_id,
+                    "model_name": model_name,
+                    "library_name": library_name,
+                    "has_cpg": cpg_content is not None,
+                    "time_seconds": time.time() - start_time,
+                    "inference_time_seconds": 0
+                }
+        else:
+            raise
+
     inference_time = time.time() - inference_start
 
     # Parse response
@@ -393,7 +522,8 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
             results.append(result)
             continue
 
-        prompt = build_prompt(elm_json, library_name, cpg_content)
+        # Use truncation for Groq API (strict token limits)
+        prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ)
 
         inference_start = time.time()
         try:
@@ -404,22 +534,54 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
                 max_tokens=500,
             )
             answer = response.choices[0].message.content.strip()
+
         except Exception as e:
-            print(f"  Groq API error: {e}")
-            result = {
-                "valid": False,
-                "errors": [f"Groq API error: {str(e)}"],
-                "warnings": [],
-                "source": "error",
-                "model": model_id,
-                "model_name": model_name,
-                "library_name": library_name,
-                "file_name": item.get("file_name"),
-                "time_seconds": time.time() - start_time,
-                "load_time_seconds": 0
-            }
-            results.append(result)
-            continue
+            error_str = str(e)
+            # Check if it's a token limit error and retry with more truncation
+            if "413" in error_str or "too large" in error_str.lower() or "token" in error_str.lower():
+                print(f"  Token limit exceeded, retrying with more truncation...")
+                try:
+                    # Retry with even more aggressive truncation
+                    truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ // 2)
+                    response = client.chat.completions.create(
+                        model=model_name,
+                        messages=[{"role": "user", "content": truncated_prompt}],
+                        temperature=0.1,
+                        max_tokens=300,
+                    )
+                    answer = response.choices[0].message.content.strip()
+                except Exception as retry_error:
+                    print(f"  Retry failed: {retry_error}")
+                    result = {
+                        "valid": False,
+                        "errors": [f"ELM file too large for {model_name} API limits"],
+                        "warnings": ["Consider using a local model for large ELM files"],
+                        "source": "error",
+                        "model": model_id,
+                        "model_name": model_name,
+                        "library_name": library_name,
+                        "file_name": item.get("file_name"),
+                        "time_seconds": time.time() - start_time,
+                        "load_time_seconds": 0
+                    }
+                    results.append(result)
+                    continue
+            else:
+                print(f"  Groq API error: {e}")
+                result = {
+                    "valid": False,
+                    "errors": [f"Groq API error: {error_str[:200]}"],
+                    "warnings": [],
+                    "source": "error",
+                    "model": model_id,
+                    "model_name": model_name,
+                    "library_name": library_name,
+                    "file_name": item.get("file_name"),
+                    "time_seconds": time.time() - start_time,
+                    "load_time_seconds": 0
+                }
+                results.append(result)
+                continue
 
         inference_time = time.time() - inference_start
 

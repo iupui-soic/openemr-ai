@@ -32,7 +32,7 @@ The following patients should be excluded from this recommendation:
 
 1. Patients with existing cardiovascular disease (secondary prevention)
 2. Patients with familial hypercholesterolemia
-3. Patients with LDL-C levels ≥190 mg/dL
+3. Patients with LDL-C levels >=190 mg/dL
 4. Patients already on statin therapy
 5. Pregnant or breastfeeding women
 6. Patients with contraindications to statin therapy
@@ -43,10 +43,10 @@ The following patients should be excluded from this recommendation:
 2. **Risk Factor Check**: Patient must have at least one of:
    - Dyslipidemia (elevated LDL, low HDL, or elevated total cholesterol)
    - Type 2 Diabetes
-   - Hypertension (BP ≥140/90 or on antihypertensive medication)
+   - Hypertension (BP >=140/90 or on antihypertensive medication)
    - Current smoking status
 3. **CVD Risk Calculation**: Use validated risk calculator (e.g., ASCVD Pooled Cohort Equations)
-4. **Risk Threshold**: 10-year CVD risk ≥10%
+4. **Risk Threshold**: 10-year CVD risk >=10%
 5. **Exclusion Check**: Verify patient doesn't meet exclusion criteria
 
 ## Expected CDS Behavior

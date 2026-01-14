@@ -8,7 +8,7 @@
 ### Laboratory Test Criteria (LDL Cholesterol)
 Patient must have:
 - Most recent LDL Cholesterol result (from "LDL Cholesterol VS" - `2.16.840.1.113883.3.526.3.1573`)
-- Result value >= **190 mg/dL**
+- Result value >= 190 mg/dL
 
 ## Decision Logic
 

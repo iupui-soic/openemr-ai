@@ -8,7 +8,7 @@
 ### Screening Criteria
 
 ### No Screening Needed If:
-- Colonoscopy procedure (from "Colonoscopy VS" - `2.16.840.1.113883.3.464.1003.108.12.1020`) exists within the past **1 month**
+- Colonoscopy procedure (from "Colonoscopy VS" - `2.16.840.1.113883.3.464.1003.108.12.1020`) exists within the past 1 month
 
 ## Decision Logic
 
