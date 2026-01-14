@@ -27,34 +27,6 @@ volume = modal.Volume.from_name("elm-model-cache", create_if_missing=True)
 # ============================================
 
 MODEL_CONFIGS = {
-    "llama-3.2-1b": {
-        "hf_name": "meta-llama/Llama-3.2-1B-Instruct",
-        "gpu": "T4",
-        "timeout": 1800,
-        "needs_hf_token": True,
-        "provider": "huggingface",
-    },
-    "llama-3.2-3b": {
-        "hf_name": "meta-llama/Llama-3.2-3B-Instruct",
-        "gpu": "T4",
-        "timeout": 1800,
-        "needs_hf_token": True,
-        "provider": "huggingface",
-    },
-    "qwen-2.5-1.5b": {
-        "hf_name": "Qwen/Qwen2.5-1.5B-Instruct",
-        "gpu": "T4",
-        "timeout": 1800,
-        "needs_hf_token": False,
-        "provider": "huggingface",
-    },
-    "qwen-2.5-3b": {
-        "hf_name": "Qwen/Qwen2.5-3B-Instruct",
-        "gpu": "T4",
-        "timeout": 1800,
-        "needs_hf_token": False,
-        "provider": "huggingface",
-    },
     "phi-3-mini": {
         "hf_name": "microsoft/Phi-3-mini-4k-instruct",
         "gpu": "T4",
@@ -83,20 +55,6 @@ MODEL_CONFIGS = {
         "needs_hf_token": True,
         "provider": "huggingface",
     },
-    "llama-3.1-8b": {
-        "hf_name": "meta-llama/Llama-3.1-8B-Instruct",
-        "gpu": "T4",
-        "timeout": 3600,  # Longer timeout for larger model
-        "needs_hf_token": True,
-        "provider": "huggingface",
-    },
-    "gemma-3-270m": {
-        "hf_name": "google/gemma-3-270m-it",
-        "gpu": "T4",
-        "timeout": 1800,
-        "needs_hf_token": True,
-        "provider": "huggingface",
-    },
     "gpt-oss-120b": {
         "hf_name": "openai/gpt-oss-120b",
         "gpu": None,  # API-based, no GPU needed
@@ -113,6 +71,13 @@ MODEL_CONFIGS = {
     },
     "llama-3.3-70b": {
         "hf_name": "llama-3.3-70b-versatile",
+        "gpu": None,
+        "timeout": 1800,
+        "needs_hf_token": False,
+        "provider": "groq",
+    },
+    "qwen3-32b": {
+        "hf_name": "qwen/qwen3-32b",
         "gpu": None,
         "timeout": 1800,
         "needs_hf_token": False,
@@ -710,56 +675,6 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
     image=image,
     gpu="T4",
     timeout=1800,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_llama_1b(items: list) -> list:
-    """Batch validate with Llama 3.2 1B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-    return run_batch_validation(items, "meta-llama/Llama-3.2-1B-Instruct", "llama-3.2-1b")
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_llama_3b(items: list) -> list:
-    """Batch validate with Llama 3.2 3B."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-    return run_batch_validation(items, "meta-llama/Llama-3.2-3B-Instruct", "llama-3.2-3b")
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
-    volumes={"/cache": volume}
-)
-def validate_qwen_1_5b(items: list) -> list:
-    """Batch validate with Qwen 2.5 1.5B."""
-    return run_batch_validation(items, "Qwen/Qwen2.5-1.5B-Instruct", "qwen-2.5-1.5b")
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
-    volumes={"/cache": volume}
-)
-def validate_qwen_3b(items: list) -> list:
-    """Batch validate with Qwen 2.5 3B."""
-    return run_batch_validation(items, "Qwen/Qwen2.5-3B-Instruct", "qwen-2.5-3b")
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
     volumes={"/cache": volume}
 )
 def validate_phi3(items: list) -> list:
@@ -810,34 +725,6 @@ def validate_medgemma_1_5(items: list) -> list:
 
 
 @app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_llama_3_1_8b(items: list) -> list:
-    """Batch validate with Llama 3.1 8B (4-bit quantized to fit on T4)."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-    return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b", use_4bit=True)
-
-
-@app.function(
-    image=image,
-    gpu="T4",
-    timeout=1800,
-    volumes={"/cache": volume},
-    secrets=[modal.Secret.from_name("huggingface")]
-)
-def validate_gemma_270m(items: list) -> list:
-    """Batch validate with Gemma 3 270M."""
-    import os
-    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-    return run_batch_validation(items, "google/gemma-3-270m-it", "gemma-3-270m")
-
-
-@app.function(
     image=groq_image,
     timeout=1800,
     secrets=[modal.Secret.from_name("groq-api")]
@@ -867,21 +754,26 @@ def validate_llama_3_3_70b(items: list) -> list:
     return run_batch_groq_validation(items, "llama-3.3-70b-versatile", "llama-3.3-70b")
 
 
+@app.function(
+    image=groq_image,
+    timeout=1800,
+    secrets=[modal.Secret.from_name("groq-api")]
+)
+def validate_qwen3_32b(items: list) -> list:
+    """Batch validate with Qwen 3 32B via Groq API."""
+    return run_batch_groq_validation(items, "qwen/qwen3-32b", "qwen3-32b")
+
+
 # Single unified registry
 MODEL_FUNCTIONS = {
-    "llama-3.2-1b": validate_llama_1b,
-    "llama-3.2-3b": validate_llama_3b,
-    "qwen-2.5-1.5b": validate_qwen_1_5b,
-    "qwen-2.5-3b": validate_qwen_3b,
     "phi-3-mini": validate_phi3,
     "gemma-3-4b": validate_gemma,
     "medgemma-4b": validate_medgemma,
     "medgemma-1.5-4b": validate_medgemma_1_5,
-    "llama-3.1-8b": validate_llama_3_1_8b,
-    "gemma-3-270m": validate_gemma_270m,
     "gpt-oss-120b": validate_gpt_oss_120b,
     "gpt-oss-20b": validate_gpt_oss_20b,
     "llama-3.3-70b": validate_llama_3_3_70b,
+    "qwen3-32b": validate_qwen3_32b,
 }
 
 
@@ -902,7 +794,7 @@ def get_model_config(model_id: str) -> dict:
 @app.local_entrypoint()
 def main(
     elm_file: str = None,
-    model: str = "llama-3.2-1b",
+    model: str = "phi-3-mini",
     cpg_file: str = None,
     all_models: bool = False
 ):
@@ -911,7 +803,7 @@ def main(
 
     Usage:
         modal run modal_app.py --elm-file path/to/elm.json
-        modal run modal_app.py --elm-file path/to/elm.json --model qwen-2.5-1.5b
+        modal run modal_app.py --elm-file path/to/elm.json --model phi-3-mini
         modal run modal_app.py --elm-file path/to/elm.json --cpg-file path/to/cpg.md
         modal run modal_app.py --elm-file path/to/elm.json --all-models
     """
