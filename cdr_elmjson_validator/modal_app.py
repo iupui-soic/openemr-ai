@@ -305,36 +305,38 @@ def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
     elm_simplified = simplify_elm_for_prompt(elm_json)
 
     if cpg_content:
-        prompt = f"""Check if the ELM code matches the CPG requirements exactly.
+        prompt = f"""You are validating a clinical decision support (CDS) implementation.
 
-CPG (requirements):
+## Clinical Practice Guideline (CPG) Requirements:
 {cpg_content}
 
-ELM (implementation):
+## ELM Implementation Summary:
 {elm_simplified}
 
-TASK: Match each value by its concept, then compare.
-- Ages must match ages (e.g., CPG age vs ELM age)
-- Time intervals must match time intervals
-- Thresholds must match thresholds (e.g., HbA1c, LDL)
-- Do NOT compare age with interval or different concepts
+## Task:
+Compare the ELM implementation against the CPG requirements.
+Check that all numeric values (ages, time intervals) match EXACTLY.
 
-For each concept in CPG, find the same concept in ELM and check if values match exactly.
+## Response Format (use EXACTLY this format):
+VALID: YES
+ERRORS: None
 
-If ALL matching concepts have equal values → VALID: YES
-If ANY value differs for the same concept → VALID: NO
-
-VALID: YES or NO
-ERRORS: None, or list each mismatch with concept name"""
+OR if there are mismatches:
+VALID: NO
+ERRORS: [describe specific value mismatches between ELM and CPG]
+"""
     else:
-        prompt = f"""Analyze this clinical logic implementation.
+        prompt = f"""You are analyzing a clinical decision support implementation.
 
+## ELM Implementation:
 {elm_simplified}
 
-Are the values clinically reasonable?
+## Task:
+Check if the values are clinically reasonable.
 
+## Response Format:
 VALID: YES or NO
-ERRORS: None, or list issues"""
+ERRORS: None, or list specific issues"""
 
     return prompt
 

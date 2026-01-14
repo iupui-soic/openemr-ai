@@ -37,7 +37,19 @@ MODELS = [
     "gpt-oss-120b",
     "gpt-oss-20b",
     "llama-3.3-70b",
+    # Local API models (no Modal required, uses local API keys)
+    "gemini-2.0-flash",  # Google Gemini 2.0 Flash
+    "gemini-3-flash",    # Google Gemini 3 Flash Preview (latest)
+    "gemma-3-27b",       # Free tier via Google AI (27B params)
+    "gemma-3-12b",       # Free tier via Google AI (12B params)
+    # Anthropic Claude models (requires ANTHROPIC_API_KEY)
+    "claude-haiku",      # Claude Haiku 4 - fast and cheap
+    "claude-sonnet",     # Claude Sonnet 4 - balanced
+    "claude-opus",       # Claude Opus 4.5 - most capable
 ]
+
+# Models that run locally via API (no Modal)
+LOCAL_API_MODELS = ["gemini-2.0-flash", "gemini-3-flash", "gemma-3-27b", "gemma-3-12b", "claude-haiku", "claude-sonnet", "claude-opus"]
 
 DEFAULT_MODEL = "llama-3.2-1b"
 GROUND_TRUTH_FILE = "ground_truth.json"
@@ -145,9 +157,10 @@ def validate_batch_with_modal(items: list, model_id: str) -> list:
         items_file = f.name
 
     try:
-        # Run Modal with batch processing
+        # Run Modal with batch processing using ephemeral app.run()
+        # This doesn't require deploying the app first
         cmd = [
-            "python3", "-c", f'''
+            "python", "-c", f'''
 import json
 import modal
 
@@ -285,6 +298,414 @@ with app.run():
             pass
 
 
+def validate_with_local_api(items: list, model_id: str) -> list:
+    """
+    Validate using local API calls (no Modal required).
+
+    Supports:
+    - gemini-2.0-flash: Google's Gemini (requires billing enabled)
+    - gemma-3-27b: Google's Gemma 27B (free tier)
+    - gemma-3-12b: Google's Gemma 12B (free tier)
+    - claude-haiku: Anthropic Claude 3.5 Haiku
+    - claude-sonnet: Anthropic Claude 4 Sonnet
+
+    Requires GOOGLE_API_KEY or ANTHROPIC_API_KEY environment variable.
+    """
+    if model_id in ["gemini-2.0-flash", "gemini-3-flash", "gemma-3-27b", "gemma-3-12b"]:
+        return validate_with_gemini(items, model_id)
+    elif model_id in ["claude-haiku", "claude-sonnet", "claude-opus"]:
+        return validate_with_anthropic(items, model_id)
+    else:
+        raise ValueError(f"Unknown local API model: {model_id}")
+
+
+def validate_with_anthropic(items: list, model_id: str) -> list:
+    """Validate using Anthropic Claude API."""
+    try:
+        import anthropic
+    except ImportError:
+        print("  ERROR: anthropic not installed.")
+        print("  Run: pip install anthropic")
+        return [{
+            "file": item["file_name"],
+            "library": item["library_name"],
+            "model": model_id,
+            "valid": False,
+            "errors": ["anthropic package not installed"],
+            "warnings": [],
+            "time_seconds": 0,
+            "source": "error",
+            "has_cpg": item.get("cpg_content") is not None
+        } for item in items]
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("  ERROR: ANTHROPIC_API_KEY environment variable not set.")
+        print("  Get an API key at: https://console.anthropic.com")
+        return [{
+            "file": item["file_name"],
+            "library": item["library_name"],
+            "model": model_id,
+            "valid": False,
+            "errors": ["ANTHROPIC_API_KEY not set"],
+            "warnings": [],
+            "time_seconds": 0,
+            "source": "error",
+            "has_cpg": item.get("cpg_content") is not None
+        } for item in items]
+
+    client = anthropic.Anthropic(api_key=api_key)
+
+    # Map model IDs to actual API model names
+    model_map = {
+        "claude-haiku": "claude-3-5-haiku-20241022",
+        "claude-sonnet": "claude-sonnet-4-20250514",
+        "claude-opus": "claude-opus-4-20250514",
+    }
+    api_model = model_map.get(model_id, "claude-sonnet-4-20250514")
+    print(f"  Using API model: {api_model}")
+
+    results = []
+    for i, item in enumerate(items, 1):
+        print(f"  [{i}/{len(items)}] Processing {item.get('file_name', 'unknown')}...")
+        start_time = time.time()
+
+        elm_json = item.get("elm_json")
+        library_name = item.get("library_name", "Unknown")
+        cpg_content = item.get("cpg_content")
+
+        # Build prompt (reuse the same format)
+        prompt = build_gemini_prompt(elm_json, library_name, cpg_content)
+
+        try:
+            message = client.messages.create(
+                model=api_model,
+                max_tokens=500,
+                temperature=0.1,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            answer = message.content[0].text.strip()
+
+            # Parse response
+            result = parse_llm_response(answer)
+            elapsed = time.time() - start_time
+
+            result.update({
+                "file": item["file_name"],
+                "library": library_name,
+                "model": model_id,
+                "source": "anthropic",
+                "has_cpg": cpg_content is not None,
+                "time_seconds": elapsed,
+                "raw_response": answer[:500]
+            })
+
+            status = "VALID" if result["valid"] else "INVALID"
+            print(f"    -> {status} ({elapsed:.2f}s)")
+
+        except Exception as e:
+            elapsed = time.time() - start_time
+            error_msg = str(e)
+            print(f"    -> ERROR: {error_msg[:100]}")
+            result = {
+                "file": item["file_name"],
+                "library": library_name,
+                "model": model_id,
+                "valid": False,
+                "errors": [f"Anthropic API error: {error_msg[:200]}"],
+                "warnings": [],
+                "source": "error",
+                "has_cpg": cpg_content is not None,
+                "time_seconds": elapsed
+            }
+
+        results.append(result)
+
+    return results
+
+
+def validate_with_gemini(items: list, model_id: str) -> list:
+    """Validate using Google Gemini/Gemma API (free tier available)."""
+    try:
+        from google import genai
+    except ImportError:
+        print("  ERROR: google-genai not installed.")
+        print("  Run: pip install google-genai")
+        return [{
+            "file": item["file_name"],
+            "library": item["library_name"],
+            "model": model_id,
+            "valid": False,
+            "errors": ["google-genai package not installed"],
+            "warnings": [],
+            "time_seconds": 0,
+            "source": "error",
+            "has_cpg": item.get("cpg_content") is not None
+        } for item in items]
+
+    api_key = os.environ.get("GOOGLE_API_KEY")
+    if not api_key:
+        print("  ERROR: GOOGLE_API_KEY environment variable not set.")
+        print("  Get a free API key at: https://aistudio.google.com/app/apikey")
+        return [{
+            "file": item["file_name"],
+            "library": item["library_name"],
+            "model": model_id,
+            "valid": False,
+            "errors": ["GOOGLE_API_KEY not set"],
+            "warnings": [],
+            "time_seconds": 0,
+            "source": "error",
+            "has_cpg": item.get("cpg_content") is not None
+        } for item in items]
+
+    client = genai.Client(api_key=api_key)
+
+    # Map model IDs to actual API model names
+    model_map = {
+        "gemini-2.0-flash": "gemini-2.0-flash",
+        "gemini-3-flash": "gemini-3-flash-preview",
+        "gemma-3-27b": "gemma-3-27b-it",
+        "gemma-3-12b": "gemma-3-12b-it",
+        "gemma-3-4b": "gemma-3-4b-it",
+    }
+    api_model = model_map.get(model_id, "gemma-3-27b-it")
+    print(f"  Using API model: {api_model}")
+
+    results = []
+    for i, item in enumerate(items, 1):
+        print(f"  [{i}/{len(items)}] Processing {item.get('file_name', 'unknown')}...")
+        start_time = time.time()
+
+        elm_json = item.get("elm_json")
+        library_name = item.get("library_name", "Unknown")
+        cpg_content = item.get("cpg_content")
+
+        # Build prompt using the same format as modal_app.py
+        prompt = build_gemini_prompt(elm_json, library_name, cpg_content)
+
+        try:
+            response = client.models.generate_content(
+                model=api_model,
+                contents=prompt,
+                config=genai.types.GenerateContentConfig(
+                    temperature=0.1,
+                    max_output_tokens=500,
+                )
+            )
+            answer = response.text.strip()
+
+            # Parse response
+            result = parse_llm_response(answer)
+            elapsed = time.time() - start_time
+
+            result.update({
+                "file": item["file_name"],
+                "library": library_name,
+                "model": model_id,
+                "source": "gemini",
+                "has_cpg": cpg_content is not None,
+                "time_seconds": elapsed,
+                "raw_response": answer[:500]
+            })
+
+            status = "VALID" if result["valid"] else "INVALID"
+            print(f"    -> {status} ({elapsed:.2f}s)")
+
+        except Exception as e:
+            elapsed = time.time() - start_time
+            error_msg = str(e)
+            print(f"    -> ERROR: {error_msg[:100]}")
+            result = {
+                "file": item["file_name"],
+                "library": library_name,
+                "model": model_id,
+                "valid": False,
+                "errors": [f"Gemini API error: {error_msg[:200]}"],
+                "warnings": [],
+                "source": "error",
+                "has_cpg": cpg_content is not None,
+                "time_seconds": elapsed
+            }
+
+        results.append(result)
+
+        # Rate limiting: Gemini free tier allows 15 req/min
+        if i < len(items):
+            time.sleep(4)  # ~15 req/min = 4 seconds between requests
+
+    return results
+
+
+def build_gemini_prompt(elm_json: dict, library_name: str, cpg_content: str = None) -> str:
+    """Build validation prompt for Gemini with simplified ELM format."""
+    elm_simplified = simplify_elm_for_gemini(elm_json)
+
+    if cpg_content:
+        prompt = f"""You are validating a clinical decision support (CDS) implementation.
+
+## Clinical Practice Guideline (CPG) Requirements:
+{cpg_content}
+
+## ELM Implementation Summary:
+{elm_simplified}
+
+## Task:
+Compare the ELM implementation against the CPG requirements.
+Check that all numeric values (ages, time intervals) match EXACTLY.
+
+## Response Format (use EXACTLY this format):
+VALID: YES
+ERRORS: None
+
+OR if there are mismatches:
+VALID: NO
+ERRORS: [describe specific value mismatches between ELM and CPG]
+"""
+    else:
+        prompt = f"""Analyze this clinical logic implementation.
+
+{elm_simplified}
+
+Are the values clinically reasonable?
+
+VALID: YES or NO
+ERRORS: None, or list issues"""
+
+    return prompt
+
+
+def simplify_elm_for_gemini(elm_json: dict) -> str:
+    """
+    Simplify ELM JSON for Gemini prompt.
+    Extracts key values that need to be compared against CPG.
+    """
+    library = elm_json.get("library", {})
+    identifier = library.get("identifier", {})
+
+    age_thresholds = []
+    time_intervals = []
+    value_sets = []
+
+    # Extract value sets
+    for vs in library.get("valueSets", {}).get("def", []):
+        name = vs.get("name", "Unknown")
+        vs_id = vs.get("id", "").split("/")[-1]
+        value_sets.append(f"- {name}: {vs_id}")
+
+    # Recursively find ages and quantities
+    def extract_values(expr: dict, context: str = ""):
+        if not isinstance(expr, dict):
+            return
+
+        expr_type = expr.get("type", "")
+
+        # Age comparisons
+        if expr_type in ("GreaterOrEqual", "Greater", "LessOrEqual", "Less", "Equal"):
+            operands = expr.get("operand", [])
+            if len(operands) >= 2:
+                left = operands[0]
+                right = operands[1]
+                if left.get("type") == "CalculateAge":
+                    precision = left.get("precision", "Year")
+                    value = right.get("value", "?")
+                    comp_map = {"GreaterOrEqual": ">=", "Greater": ">",
+                               "LessOrEqual": "<=", "Less": "<", "Equal": "="}
+                    comp = comp_map.get(expr_type, "?")
+                    age_thresholds.append(f"- Age {comp} {value} {precision.lower()}s (in: {context})")
+
+        # Quantity values
+        if expr_type == "Quantity":
+            value = expr.get("value", "?")
+            unit = expr.get("unit", "")
+            time_intervals.append(f"- {value} {unit} (in: {context})")
+
+        # Recurse
+        for key, val in expr.items():
+            if isinstance(val, dict):
+                extract_values(val, context)
+            elif isinstance(val, list):
+                for item in val:
+                    if isinstance(item, dict):
+                        extract_values(item, context)
+
+    # Process all statements
+    for stmt in library.get("statements", {}).get("def", []):
+        name = stmt.get("name", "Unknown")
+        expr = stmt.get("expression", {})
+        extract_values(expr, context=name)
+        for operand in stmt.get("operand", []):
+            extract_values(operand, context=name)
+
+    # Build output
+    lines = []
+    lines.append(f"Library: {identifier.get('id', 'Unknown')}")
+    lines.append("")
+
+    lines.append("**Age Thresholds:**")
+    if age_thresholds:
+        lines.extend(age_thresholds)
+    else:
+        lines.append("- None specified")
+    lines.append("")
+
+    lines.append("**Time Intervals (Lookback Periods):**")
+    if time_intervals:
+        lines.extend(time_intervals)
+    else:
+        lines.append("- None specified")
+    lines.append("")
+
+    lines.append("**Value Sets:**")
+    if value_sets:
+        lines.extend(value_sets)
+    else:
+        lines.append("- None specified")
+
+    return "\n".join(lines)
+
+
+def parse_llm_response(response: str) -> dict:
+    """Parse LLM's structured response."""
+    lines = [l.strip() for l in response.split('\n') if l.strip()]
+
+    valid = True
+    errors = []
+    warnings = []
+    section = None
+
+    for line in lines:
+        upper = line.upper()
+
+        if upper.startswith('VALID:'):
+            valid = 'YES' in upper
+        elif upper.startswith('ERRORS:'):
+            section = 'errors'
+            content = line.split(':', 1)[1].strip()
+            if content.lower() != 'none':
+                errors.append(content)
+        elif upper.startswith('WARNINGS:'):
+            section = 'warnings'
+            content = line.split(':', 1)[1].strip()
+            if content.lower() != 'none':
+                warnings.append(content)
+        elif line.startswith('-') or line.startswith('*'):
+            item = line[1:].strip()
+            if item.lower() != 'none':
+                if section == 'warnings':
+                    warnings.append(item)
+                elif section == 'errors':
+                    errors.append(item)
+
+    return {
+        "valid": valid and len(errors) == 0,
+        "errors": errors,
+        "warnings": warnings,
+    }
+
+
 def compare_with_ground_truth(result: dict, test_case: dict) -> dict:
     """
     Compare LLM result with ground truth.
@@ -373,8 +794,12 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
     print("Preparing batch validation...")
     items = prepare_batch_items(elm_files, data_dir, test_cases)
 
-    # Run batch validation
-    batch_results = validate_batch_with_modal(items, model_id)
+    # Run batch validation - use local API for supported models
+    if model_id in LOCAL_API_MODELS:
+        print(f"Using local API for {model_id} (no Modal required)")
+        batch_results = validate_with_local_api(items, model_id)
+    else:
+        batch_results = validate_batch_with_modal(items, model_id)
 
     # Process results and compare with ground truth
     results = []

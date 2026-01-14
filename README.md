@@ -19,6 +19,12 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 | Model | Provider | Size | Infrastructure |
 |-------|----------|------|----------------|
+| **Gemini 3 Flash** | Google | - | Google AI Studio API |
+| **Gemini 2.0 Flash** | Google | - | Google AI Studio API |
+| **Gemma 3 27B** | Google | 27B | Google AI Studio API |
+| **Claude 3.5 Haiku** | Anthropic | - | Anthropic API |
+| **Claude Sonnet 4** | Anthropic | - | Anthropic API |
+| **Claude Opus 4** | Anthropic | - | Anthropic API |
 | Llama 3.2 1B/3B | Meta | 1-3B | Modal T4 GPU |
 | Llama 3.1 8B | Meta | 8B | Modal T4 GPU |
 | Llama 3.3 70B | Meta | 70B | Groq API |
@@ -30,7 +36,44 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 ### Latest Results
 
-Results updated via GitHub Actions. View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
+#### Frontier Models (via API)
+
+| Model | Accuracy | Correct/Total | Avg Time | Status |
+|-------|----------|---------------|----------|--------|
+| Gemini 3 Flash | **100%** | 10/10 | 3.0s | Excellent |
+| Gemini 2.0 Flash | 90% | 9/10 | 2.9s | Very Good |
+| Gemma 3 27B | 80% | 8/10 | 4.1s | Good |
+| Claude 3.5 Haiku | 80% | 8/10 | 4.5s | Good |
+| Claude Sonnet 4 | 70% | 7/10 | 5.2s | Fair |
+| Claude Opus 4 | 60% | 6/10 | 5.3s | Needs Work |
+
+#### Small/Medium Models (via Modal/Groq)
+
+| Model | Accuracy | Correct/Total | Avg Time | Status |
+|-------|----------|---------------|----------|--------|
+| GPT OSS 20B | 90% | 9/10 | 23.75s | Very Good |
+| Llama 3.2 1B | 70% | 7/10 | 17.86s | Fair |
+| Qwen 2.5 3B | 70% | 7/10 | 39.90s | Fair |
+| Gemma 3 4B | 70% | 7/10 | 40.64s | Fair |
+| MedGemma 4B | 70% | 7/10 | 38.06s | Fair |
+| MedGemma 1.5 4B | 70% | 7/10 | 37.13s | Fair |
+| Gemma 3 270M | 70% | 7/10 | 25.97s | Fair |
+| Llama 3.3 70B | 70% | 7/10 | 8.47s | Fair |
+| Llama 3.2 3B | 60% | 6/10 | 44.21s | Needs Work |
+| Qwen 2.5 1.5B | 60% | 6/10 | 21.57s | Needs Work |
+| Phi-3 Mini | 50% | 5/10 | 32.05s | Needs Work |
+| GPT OSS 120B | 50% | 5/10 | 23.84s | Needs Work |
+| Llama 3.1 8B | 30% | 3/10 | 124.80s | Needs Work |
+
+**Key Findings:**
+- **Gemini 3 Flash** achieved perfect 100% accuracy - best overall performer
+- **GPT OSS 20B** (via Groq) matches Gemini 2.0 Flash at 90% accuracy - best cost-effective option
+- Small models (1-4B) achieve 60-70% accuracy with proper prompting - competitive with Claude Sonnet/Opus
+- **Gemma 3 270M** achieves 70% accuracy despite having only 270M parameters - remarkably efficient
+- Model size doesn't always correlate with accuracy (GPT OSS 120B: 50% vs GPT OSS 20B: 90%)
+- The ELM simplification approach works well across model sizes
+
+View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
 
 ## RAG Medical Summarization (SOAP Note Generation)
 
@@ -117,9 +160,11 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
 ### Prerequisites
 
 - Python 3.11+
-- [Modal](https://modal.com/) account (for GPU compute)
+- [Modal](https://modal.com/) account (for GPU compute with small models)
 - Environment variables:
   - `MODAL_TOKEN_ID` and `MODAL_TOKEN_SECRET` - Modal authentication
+  - `GOOGLE_API_KEY` - For Gemini/Gemma API models (get at [Google AI Studio](https://aistudio.google.com/app/apikey))
+  - `ANTHROPIC_API_KEY` - For Claude API models (get at [Anthropic Console](https://console.anthropic.com))
   - `NOTION_API_KEY` - For Notion dataset access
   - `GROQ_API_KEY` - For Groq API evaluations
   - `KAGGLE_USERNAME` and `KAGGLE_KEY` - For Kaggle dataset setup
@@ -134,8 +179,20 @@ pip install -r requirements.txt
 # List available models
 python run_validation.py --list-models
 
-# Run validation with specific model
+# Run validation with small models via Modal (requires Modal account)
 python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv
+
+# Run validation with Gemini models (requires GOOGLE_API_KEY)
+GOOGLE_API_KEY=your_key python run_validation.py --model gemini-3-flash --output results.csv
+
+# Run validation with Claude models (requires ANTHROPIC_API_KEY)
+ANTHROPIC_API_KEY=your_key python run_validation.py --model claude-haiku --output results.csv
+
+# Available frontier models (no Modal required):
+# - gemini-3-flash (100% accuracy - recommended)
+# - gemini-2.0-flash (90% accuracy)
+# - gemma-3-27b (free tier)
+# - claude-haiku, claude-sonnet, claude-opus
 
 # Run validation with all models
 python run_validation.py --all-models --output-dir results/
