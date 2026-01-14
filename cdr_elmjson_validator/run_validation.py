@@ -37,6 +37,7 @@ MODELS = [
     "gpt-oss-120b",
     "gpt-oss-20b",
     "llama-3.3-70b",
+    "qwen3-32b",
     # Local API models (no Modal required, uses local API keys)
     "gemini-2.0-flash",  # Google Gemini 2.0 Flash
     "gemini-3-flash",    # Google Gemini 3 Flash Preview (latest)
