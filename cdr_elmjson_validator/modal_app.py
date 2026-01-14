@@ -202,64 +202,141 @@ def estimate_tokens(text):
     return len(text) // 4
 
 
-def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
-    """Build validation prompt for LLM with optional truncation."""
+def simplify_elm_for_prompt(elm_json: dict) -> str:
+    """
+    Convert ELM JSON to a simplified, comparison-friendly format.
+
+    This extracts key values (ages, intervals, value sets) that need to
+    be compared against CPG requirements, making the task much easier
+    for smaller language models.
+    """
     library = elm_json.get("library", {})
-    elm_content = {"library": library}
-    elm_json_str = json.dumps(elm_content, indent=2)
+    identifier = library.get("identifier", {})
 
-    # Check if truncation is needed
-    truncated = False
-    if max_chars and len(elm_json_str) > max_chars:
-        truncated_elm = truncate_elm_json(elm_json, max_chars)
-        elm_json_str = json.dumps(truncated_elm, indent=2)
-        truncated = True
-        print(f"  ELM truncated from {len(json.dumps(elm_content))} to {len(elm_json_str)} chars")
+    # Extract key values
+    age_thresholds = []
+    time_intervals = []
+    value_sets = []
 
-    truncation_note = "\n\n(Note: ELM content was truncated due to size. Focus on the available structure.)" if truncated else ""
+    # Extract value sets
+    for vs in library.get("valueSets", {}).get("def", []):
+        name = vs.get("name", "Unknown")
+        vs_id = vs.get("id", "").split("/")[-1]
+        value_sets.append(f"- {name}: {vs_id}")
+
+    # Recursively find ages and quantities
+    def extract_values(expr: dict, context: str = ""):
+        if not isinstance(expr, dict):
+            return
+
+        expr_type = expr.get("type", "")
+
+        # Age comparisons
+        if expr_type in ("GreaterOrEqual", "Greater", "LessOrEqual", "Less", "Equal"):
+            operands = expr.get("operand", [])
+            if len(operands) >= 2:
+                left = operands[0]
+                right = operands[1]
+                if left.get("type") == "CalculateAge":
+                    precision = left.get("precision", "Year")
+                    value = right.get("value", "?")
+                    comp_map = {"GreaterOrEqual": ">=", "Greater": ">",
+                               "LessOrEqual": "<=", "Less": "<", "Equal": "="}
+                    comp = comp_map.get(expr_type, "?")
+                    age_thresholds.append(f"- Age {comp} {value} {precision.lower()}s (in: {context})")
+
+        # Quantity values
+        if expr_type == "Quantity":
+            value = expr.get("value", "?")
+            unit = expr.get("unit", "")
+            time_intervals.append(f"- {value} {unit} (in: {context})")
+
+        # Recurse
+        for key, val in expr.items():
+            if isinstance(val, dict):
+                extract_values(val, context)
+            elif isinstance(val, list):
+                for item in val:
+                    if isinstance(item, dict):
+                        extract_values(item, context)
+
+    # Process all statements
+    for stmt in library.get("statements", {}).get("def", []):
+        name = stmt.get("name", "Unknown")
+        expr = stmt.get("expression", {})
+        extract_values(expr, context=name)
+        for operand in stmt.get("operand", []):
+            extract_values(operand, context=name)
+
+    # Build output
+    lines = []
+    lines.append(f"## ELM Implementation: {identifier.get('id', 'Unknown')}")
+    lines.append("")
+    lines.append("### Key Values to Compare:")
+    lines.append("")
+
+    lines.append("**Age Thresholds:**")
+    if age_thresholds:
+        lines.extend(age_thresholds)
+    else:
+        lines.append("- None specified")
+    lines.append("")
+
+    lines.append("**Time Intervals (Lookback Periods):**")
+    if time_intervals:
+        lines.extend(time_intervals)
+    else:
+        lines.append("- None specified")
+    lines.append("")
+
+    lines.append("**Value Sets:**")
+    if value_sets:
+        lines.extend(value_sets)
+    else:
+        lines.append("- None specified")
+
+    return "\n".join(lines)
+
+
+def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
+    """Build validation prompt for LLM with simplified ELM format."""
+
+    # Use simplified ELM format for easier comparison
+    elm_simplified = simplify_elm_for_prompt(elm_json)
 
     if cpg_content:
-        prompt = f"""You are a Clinical Decision Support (CDS) validation expert. Your task is to validate whether the ELM (Expression Logical Model) implementation correctly implements the Clinical Practice Guideline (CPG).
+        prompt = f"""Compare this ELM implementation against the CPG requirements.
 
-Clinical Practice Guideline (user-written, any format):
+## CPG Requirements (Source of Truth):
 {cpg_content}
 
-ELM Implementation:
-{elm_json_str}{truncation_note}
+## ELM Implementation (To Validate):
+{elm_simplified}
 
-Validation Process:
-1. Understand the CPG: Read and understand what clinical criteria the CPG describes (age ranges, lab values, time periods, procedures, conditions, etc.) - regardless of how it's written
-2. Find in ELM: Locate where those criteria are implemented in the ELM statements
-3. Compare: Check if the ELM implementation matches what the CPG describes
-4. Report: Note any discrepancies between the CPG's intent and the ELM's implementation
+## Instructions:
+Step 1: Find the age requirement in CPG and ELM. Do they match exactly?
+Step 2: Find the time interval/lookback period in CPG and ELM. Do they match exactly?
+Step 3: If ALL values match exactly, answer VALID: YES. If ANY value differs, answer VALID: NO.
 
-The CPG is the source of truth. If the ELM does something different from what the CPG describes, it's an error.
+Example: CPG says "18 years", ELM says "25 years" → VALID: NO, ERROR: age mismatch 25 vs 18
 
-Response Format (respond EXACTLY in this format):
+## Your Answer:
 VALID: YES or NO
-ERRORS: List specific issues where ELM doesn't match CPG, or "None"
-WARNINGS: List potential issues or suggestions, or "None"
-
-Your response:"""
+ERRORS: None, or list each mismatch
+WARNINGS: None"""
     else:
-        prompt = f"""You are a Clinical Quality Language (CQL) expert. Analyze this ELM clinical logic.
+        prompt = f"""Analyze this clinical logic implementation.
 
-ELM Library:
-{elm_json_str}{truncation_note}
+{elm_simplified}
 
-Check for LOGICAL ISSUES only:
-- Contradictory conditions?
-- Missing logic steps?
-- Inappropriate recommendations?
+Check:
+1. Are age thresholds clinically reasonable?
+2. Are time intervals appropriate?
 
-DO NOT check syntax - already validated.
-
-Respond EXACTLY:
+## Your Answer:
 VALID: YES or NO
-ERRORS: List or "None"
-WARNINGS: List or "None"
-
-Your response:"""
+ERRORS: None, or list issues
+WARNINGS: None"""
 
     return prompt
 

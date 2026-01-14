@@ -147,7 +147,7 @@ def validate_batch_with_modal(items: list, model_id: str) -> list:
     try:
         # Run Modal with batch processing
         cmd = [
-            "python", "-c", f'''
+            "python3", "-c", f'''
 import json
 import modal
 
