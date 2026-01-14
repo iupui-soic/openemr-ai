@@ -599,6 +599,27 @@ def validate_medgemma(data: dict) -> dict:
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
+def validate_medgemma_1_5(data: dict) -> dict:
+    """Validate ELM JSON with MedGemma 1.5 4B (healthcare-specialized)."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+
+    return run_validation(
+        elm_json=data.get("elm_json"),
+        library_name=data.get("library_name", "Unknown"),
+        cpg_content=data.get("cpg_content"),
+        model_name="google/medgemma-1.5-4b-it",
+        model_id="medgemma-1.5-4b"
+    )
+
+
+@app.function(
+    image=image,
+    gpu="T4",
+    timeout=300,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
 def validate_llama_3_1_8b(data: dict) -> dict:
     """Validate ELM JSON with Llama 3.1 8B."""
     import os
@@ -778,6 +799,20 @@ def validate_batch_medgemma(items: list) -> list:
 @app.function(
     image=image,
     gpu="T4",
+    timeout=1800,
+    volumes={"/cache": volume},
+    secrets=[modal.Secret.from_name("huggingface")]
+)
+def validate_batch_medgemma_1_5(items: list) -> list:
+    """Batch validate ELM JSON files with MedGemma 1.5 4B."""
+    import os
+    os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
+    return run_batch_validation(items, "google/medgemma-1.5-4b-it", "medgemma-1.5-4b")
+
+
+@app.function(
+    image=image,
+    gpu="T4",
     timeout=3600,  # 60 min for larger 8B model
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
@@ -842,6 +877,7 @@ MODEL_FUNCTIONS = {
     "phi-3-mini": validate_phi3,
     "gemma-3-4b": validate_gemma,
     "medgemma-4b": validate_medgemma,
+    "medgemma-1.5-4b": validate_medgemma_1_5,
     "llama-3.1-8b": validate_llama_3_1_8b,
     "gemma-3-270m": validate_gemma_270m,
     "gpt-oss-120b": validate_gpt_oss_120b,
@@ -858,6 +894,7 @@ BATCH_MODEL_FUNCTIONS = {
     "phi-3-mini": validate_batch_phi3,
     "gemma-3-4b": validate_batch_gemma,
     "medgemma-4b": validate_batch_medgemma,
+    "medgemma-1.5-4b": validate_batch_medgemma_1_5,
     "llama-3.1-8b": validate_batch_llama_3_1_8b,
     "gemma-3-270m": validate_batch_gemma_270m,
     "gpt-oss-120b": validate_batch_gpt_oss_120b,

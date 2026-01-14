@@ -31,6 +31,7 @@ MODELS = [
     "phi-3-mini",
     "gemma-3-4b",
     "medgemma-4b",
+    "medgemma-1.5-4b",
     "llama-3.1-8b",
     "gemma-3-270m",
     "gpt-oss-120b",
