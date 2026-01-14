@@ -88,8 +88,6 @@ jobs:
     outputs:
       whisper_changed: ${{ steps.filter.outputs.whisper }}
       canary_changed: ${{ steps.filter.outputs.canary }}
-      granite_changed: ${{ steps.filter.outputs.granite }}
-      phi4_changed: ${{ steps.filter.outputs.phi4 }}
       groq_changed: ${{ steps.filter.outputs.groq }}
       parakeet_changed: ${{ steps.filter.outputs.parakeet }}
       medasr_changed: ${{ steps.filter.outputs.medasr }}
@@ -98,8 +96,6 @@ jobs:
       # Script hashes for cache keys
       whisper_hash: ${{ steps.hashes.outputs.whisper }}
       canary_hash: ${{ steps.hashes.outputs.canary }}
-      granite_hash: ${{ steps.hashes.outputs.granite }}
-      phi4_hash: ${{ steps.hashes.outputs.phi4 }}
       groq_hash: ${{ steps.hashes.outputs.groq }}
       parakeet_hash: ${{ steps.hashes.outputs.parakeet }}
       medasr_hash: ${{ steps.hashes.outputs.medasr }}
@@ -119,10 +115,6 @@ jobs:
               - 'openemr_whisper_wer/whisper_wer.py'
             canary:
               - 'openemr_whisper_wer/canary_wer.py'
-            granite:
-              - 'openemr_whisper_wer/granite_wer.py'
-            phi4:
-              - 'openemr_whisper_wer/phi4_wer.py'
             groq:
               - 'openemr_whisper_wer/wlv3t_on_groq.py'
             parakeet:
@@ -141,8 +133,6 @@ jobs:
         run: |
           echo "whisper=${{ hashFiles('openemr_whisper_wer/whisper_wer.py') }}" >> $GITHUB_OUTPUT
           echo "canary=${{ hashFiles('openemr_whisper_wer/canary_wer.py') }}" >> $GITHUB_OUTPUT
-          echo "granite=${{ hashFiles('openemr_whisper_wer/granite_wer.py') }}" >> $GITHUB_OUTPUT
-          echo "phi4=${{ hashFiles('openemr_whisper_wer/phi4_wer.py') }}" >> $GITHUB_OUTPUT
           echo "groq=${{ hashFiles('openemr_whisper_wer/wlv3t_on_groq.py') }}" >> $GITHUB_OUTPUT
           echo "parakeet=${{ hashFiles('openemr_whisper_wer/parakeet_wer.py') }}" >> $GITHUB_OUTPUT
           echo "medasr=${{ hashFiles('openemr_whisper_wer/medasr_wer.py') }}" >> $GITHUB_OUTPUT
@@ -427,149 +417,6 @@ jobs:
           path: openemr_whisper_wer/kaggle-results-canary.csv
           retention-days: 90
 
-  evaluate-granite:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
-          key: wer-granite-${{ needs.detect-changes.outputs.granite_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
-
-      - name: Check cache for Kaggle results
-        id: kaggle-cache
-        uses: actions/cache@v4
-        with:
-          path: openemr_whisper_wer/kaggle-results-granite.csv
-          key: kaggle-granite-${{ needs.detect-changes.outputs.granite_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "kaggle_run=true" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
-            echo "kaggle_run=false" >> $GITHUB_OUTPUT
-            echo "Kaggle evaluation disabled"
-          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
-            echo "kaggle_run=false" >> $GITHUB_OUTPUT
-            echo "Using cached Kaggle results"
-          else
-            echo "kaggle_run=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
-        run: pip install -r openemr_whisper_wer/requirements.txt
-
-      - name: Run WER evaluation
-        if: steps.check.outputs.ran == 'true'
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          cd openemr_whisper_wer
-          python granite_wer.py --output results-granite-speech-3.3-8b.csv
-
-      - name: Run Kaggle evaluation
-        if: steps.check.outputs.kaggle_run == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          cd openemr_whisper_wer
-          python granite_wer.py --kaggle --output-dir .
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-granite-speech-3.3-8b
-          path: openemr_whisper_wer/results-granite-speech-3.3-8b.csv
-          retention-days: 90
-
-      - name: Upload Kaggle results artifact
-        if: steps.check.outputs.kaggle_run == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: kaggle-results-granite
-          path: openemr_whisper_wer/kaggle-results-granite.csv
-          retention-days: 90
-
-  evaluate-phi4:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: openemr_whisper_wer/results-phi4-multimodal.csv
-          key: wer-phi4-${{ needs.detect-changes.outputs.phi4_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r openemr_whisper_wer/requirements.txt
-
-      - name: Run WER evaluation
-        if: steps.check.outputs.ran == 'true'
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: |
-          cd openemr_whisper_wer
-          python phi4_wer.py --output results-phi4-multimodal.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-phi4-multimodal
-          path: openemr_whisper_wer/results-phi4-multimodal.csv
-          retention-days: 90
-
   evaluate-groq:
     needs: detect-changes
     runs-on: ubuntu-latest
@@ -849,8 +696,6 @@ jobs:
       - evaluate-whisper-turbo
       - evaluate-whisper-v3
       - evaluate-canary
-      - evaluate-granite
-      - evaluate-phi4
       - evaluate-groq
       - evaluate-parakeet
       - evaluate-medasr
@@ -895,8 +740,6 @@ jobs:
               ('whisper-large-v3-turbo', 'results-whisper-large-v3-turbo'),
               ('whisper-large-v3', 'results-whisper-large-v3'),
               ('canary-1b-v2', 'results-canary-1b-v2'),
-              ('granite-speech-3.3-8b', 'results-granite-speech-3.3-8b'),
-              ('phi4-multimodal', 'results-phi4-multimodal'),
               ('groq-whisper-large-v3-turbo', 'results-groq-whisper-large-v3-turbo'),
               ('parakeet-tdt-1.1b', 'results-parakeet-tdt-1.1b'),
               ('medasr', 'results-medasr'),
@@ -908,7 +751,6 @@ jobs:
               ('whisper-v3', 'kaggle-results-whisper-v3'),
               ('canary', 'kaggle-results-canary'),
               ('parakeet', 'kaggle-results-parakeet'),
-              ('granite', 'kaggle-results-granite'),
               ('groq', 'kaggle-results-groq'),
               ('medasr', 'kaggle-results-medasr'),
           ]
