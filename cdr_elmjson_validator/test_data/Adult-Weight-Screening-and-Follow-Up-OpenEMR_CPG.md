@@ -8,7 +8,7 @@
 ### Screening Criteria
 
 ### No Screening Needed If:
-- Body Weight observation (from "Body Weight VS" - `2.16.840.1.113762.1.4.1045.159`) exists within the past **1 month**
+- Body Weight observation (from "Body Weight VS" - `2.16.840.1.113762.1.4.1045.159`) exists within the past 1 month
 
 ## Decision Logic
 

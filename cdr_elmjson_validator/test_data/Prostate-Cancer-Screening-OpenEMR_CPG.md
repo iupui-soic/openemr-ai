@@ -15,7 +15,7 @@ The system checks for ANY of the following procedures:
 - Prostate biopsy (from "Prostate biopsy VS" - `2.16.840.1.113762.1.4.1078.1248`)
 
 ### No Screening Needed If:
-- Any of the above procedures exist within the past **1 month**
+- Any of the above procedures exist within the past 1 month
 
 ## Decision Logic
 

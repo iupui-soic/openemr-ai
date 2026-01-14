@@ -8,7 +8,7 @@
 ### Laboratory Test Criteria (HbA1c Laboratory Test)
 Patient must have:
 - Most recent HbA1c Laboratory Test result (from "HbA1c Laboratory Test VS" - `2.16.840.1.113883.3.464.1003.198.11.1024`)
-- Result value >= **6.5%**
+- Result value >= 6.5%
 
 ## Decision Logic
 

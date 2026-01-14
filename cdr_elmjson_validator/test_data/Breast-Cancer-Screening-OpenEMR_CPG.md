@@ -9,7 +9,7 @@
 ### Screening Criteria
 
 ### No Screening Needed If:
-- Mammogram procedure (from "Mammogram VS" - `2.16.840.1.113762.1.4.1182.380`) exists within the past **1 year**
+- Mammogram procedure (from "Mammogram VS" - `2.16.840.1.113762.1.4.1182.380`) exists within the past 1 year
 
 ## Decision Logic
 
