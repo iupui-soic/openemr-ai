@@ -52,247 +52,6 @@ jobs:
   # Each model uses batch processing - loads once, processes all files
   # ============================================
 
-  evaluate-llama-1b:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-llama-3.2-1b.csv
-          key: elm-llama-1b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-            echo "Using cached results"
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Setup HuggingFace secret in Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.2-1b --output results-llama-3.2-1b.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-llama-3.2-1b
-          path: cdr_elmjson_validator/results-llama-3.2-1b.csv
-          retention-days: 90
-
-  evaluate-llama-3b:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-llama-3.2-3b.csv
-          key: elm-llama-3b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Setup HuggingFace secret in Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.2-3b --output results-llama-3.2-3b.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-llama-3.2-3b
-          path: cdr_elmjson_validator/results-llama-3.2-3b.csv
-          retention-days: 90
-
-  evaluate-qwen-1-5b:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-qwen-2.5-1.5b.csv
-          key: elm-qwen-1-5b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model qwen-2.5-1.5b --output results-qwen-2.5-1.5b.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-qwen-2.5-1.5b
-          path: cdr_elmjson_validator/results-qwen-2.5-1.5b.csv
-          retention-days: 90
-
-  evaluate-qwen-3b:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-qwen-2.5-3b.csv
-          key: elm-qwen-3b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model qwen-2.5-3b --output results-qwen-2.5-3b.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-qwen-2.5-3b
-          path: cdr_elmjson_validator/results-qwen-2.5-3b.csv
-          retention-days: 90
-
   evaluate-phi3:
     needs: detect-changes
     runs-on: ubuntu-latest
@@ -541,134 +300,6 @@ jobs:
           path: cdr_elmjson_validator/results-medgemma-1.5-4b.csv
           retention-days: 90
 
-  evaluate-llama-3-1-8b:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-llama-3.1-8b.csv
-          key: elm-llama-3-1-8b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Setup HuggingFace secret in Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model llama-3.1-8b --output results-llama-3.1-8b.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-llama-3.1-8b
-          path: cdr_elmjson_validator/results-llama-3.1-8b.csv
-          retention-days: 90
-
-  evaluate-gemma-270m:
-    needs: detect-changes
-    runs-on: ubuntu-latest
-    outputs:
-      ran: ${{ steps.check.outputs.ran }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check cache for previous results
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: cdr_elmjson_validator/results-gemma-3-270m.csv
-          key: elm-gemma-270m-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
-
-      - name: Determine if evaluation needed
-        id: check
-        run: |
-          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
-            echo "ran=true" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
-            echo "ran=false" >> $GITHUB_OUTPUT
-          else
-            echo "ran=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set up Python
-        if: steps.check.outputs.ran == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        if: steps.check.outputs.ran == 'true'
-        run: pip install -r cdr_elmjson_validator/requirements.txt
-
-      - name: Authenticate Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
-          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
-
-      - name: Setup HuggingFace secret in Modal
-        if: steps.check.outputs.ran == 'true'
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
-          modal secret create huggingface HF_TOKEN="$HF_TOKEN" --force
-
-      - name: Run validation
-        if: steps.check.outputs.ran == 'true'
-        run: |
-          cd cdr_elmjson_validator
-          python run_validation.py --model gemma-3-270m --output results-gemma-3-270m.csv
-
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-gemma-3-270m
-          path: cdr_elmjson_validator/results-gemma-3-270m.csv
-          retention-days: 90
-
   evaluate-gpt-oss-120b:
     needs: detect-changes
     runs-on: ubuntu-latest
@@ -861,6 +492,70 @@ jobs:
           path: cdr_elmjson_validator/results-llama-3.3-70b.csv
           retention-days: 90
 
+  evaluate-qwen3-32b:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: cdr_elmjson_validator/results-qwen3-32b.csv
+          key: elm-qwen3-32b-${{ needs.detect-changes.outputs.modal_hash }}-${{ needs.detect-changes.outputs.runner_hash }}-${{ needs.detect-changes.outputs.elm_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true'
+        run: pip install -r cdr_elmjson_validator/requirements.txt
+
+      - name: Authenticate Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Setup Groq API secret in Modal
+        if: steps.check.outputs.ran == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+
+      - name: Run validation
+        if: steps.check.outputs.ran == 'true'
+        run: |
+          cd cdr_elmjson_validator
+          python run_validation.py --model qwen3-32b --output results-qwen3-32b.csv
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-qwen3-32b
+          path: cdr_elmjson_validator/results-qwen3-32b.csv
+          retention-days: 90
+
   # ============================================
   # Comparison table generation
   # ============================================
@@ -868,19 +563,14 @@ jobs:
   generate-comparison:
     needs:
       - detect-changes
-      - evaluate-llama-1b
-      - evaluate-llama-3b
-      - evaluate-qwen-1-5b
-      - evaluate-qwen-3b
       - evaluate-phi3
       - evaluate-gemma
       - evaluate-medgemma
       - evaluate-medgemma-1-5
-      - evaluate-llama-3-1-8b
-      - evaluate-gemma-270m
       - evaluate-gpt-oss-120b
       - evaluate-gpt-oss-20b
       - evaluate-llama-3-3-70b
+      - evaluate-qwen3-32b
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -909,19 +599,14 @@ jobs:
           from datetime import datetime
 
           models = [
-              ('llama-3.2-1b', 'results-llama-3.2-1b', 'Llama 3.2 1B'),
-              ('llama-3.2-3b', 'results-llama-3.2-3b', 'Llama 3.2 3B'),
-              ('qwen-2.5-1.5b', 'results-qwen-2.5-1.5b', 'Qwen 2.5 1.5B'),
-              ('qwen-2.5-3b', 'results-qwen-2.5-3b', 'Qwen 2.5 3B'),
               ('phi-3-mini', 'results-phi-3-mini', 'Phi-3 Mini'),
               ('gemma-3-4b', 'results-gemma-3-4b', 'Gemma 3 4B'),
               ('medgemma-4b', 'results-medgemma-4b', 'MedGemma 4B'),
               ('medgemma-1.5-4b', 'results-medgemma-1.5-4b', 'MedGemma 1.5 4B'),
-              ('llama-3.1-8b', 'results-llama-3.1-8b', 'Llama 3.1 8B'),
-              ('gemma-3-270m', 'results-gemma-3-270m', 'Gemma 3 270M'),
               ('gpt-oss-120b', 'results-gpt-oss-120b', 'GPT OSS 120B'),
               ('gpt-oss-20b', 'results-gpt-oss-20b', 'GPT OSS 20B'),
               ('llama-3.3-70b', 'results-llama-3.3-70b', 'Llama 3.3 70B'),
+              ('qwen3-32b', 'results-qwen3-32b', 'Qwen 3 32B'),
           ]
 
           results = []
@@ -1087,11 +772,23 @@ jobs:
               lines.append("### Per-File Results\n")
               active_models = [r['model'] for r in results if r['status'] == 'available']
 
+              # Short name mapping for all models
+              short_names = {
+                  'phi-3-mini': 'Pmini',
+                  'gemma-3-4b': 'G4b',
+                  'medgemma-4b': 'MG4b',
+                  'medgemma-1.5-4b': 'MG1.5',
+                  'gpt-oss-120b': 'GPT120',
+                  'gpt-oss-20b': 'GPT20',
+                  'llama-3.3-70b': 'L70b',
+                  'qwen3-32b': 'Q32b',
+              }
+
               if active_models:
                   header = "| File |"
                   divider = "|------|"
-                  for m in active_models[:5]:
-                      short = m.replace('llama-3.2-', 'L').replace('qwen-2.5-', 'Q').replace('phi-3-', 'P').replace('gemma-3-', 'G').replace('medgemma-', 'M')
+                  for m in active_models:
+                      short = short_names.get(m, m[:6])
                       header += f" {short} |"
                       divider += "-----|"
 
@@ -1100,7 +797,7 @@ jobs:
 
                   for file_name, file_results in sorted(all_per_file.items())[:15]:
                       row = f"| {file_name[:25]} |"
-                      for m in active_models[:5]:
+                      for m in active_models:
                           if m in file_results:
                               valid = file_results[m]['valid']
                               icon = "Y" if valid else "N"
