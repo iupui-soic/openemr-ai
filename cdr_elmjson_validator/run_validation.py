@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-ELM Validation Runner for CI/CD (v2.0)
-Runs ELM JSON validation against specified LLM model using Modal subprocess.
-Validates ELM implementations against Clinical Practice Guidelines (CPG).
-Compares results against ground truth annotations for accuracy measurement.
+ELM Validation Runner for CI/CD
+
+Runs ELM JSON validation against specified LLM model using Modal.
+Uses batch processing - each model loads once and processes all files efficiently.
 
 Usage:
     python run_validation.py --model llama-3.2-1b --output results.csv
@@ -127,8 +127,8 @@ def validate_batch_with_modal(items: list, model_id: str) -> list:
     """
     Validate multiple ELM files using Modal batch processing.
 
-    This is much more efficient than calling Modal for each file individually
-    because the model is loaded once and reused for all files.
+    This loads the model once and processes all files - much more efficient
+    than calling Modal for each file individually.
     """
     import subprocess
 
@@ -145,44 +145,21 @@ def validate_batch_with_modal(items: list, model_id: str) -> list:
         items_file = f.name
 
     try:
-        # Use modal run with Python to call the batch function directly
-        batch_script = f'''
-import json
-import sys
-sys.path.insert(0, "{script_dir}")
-from modal_app import get_batch_validator
-
-with open("{items_file}", "r") as f:
-    items = json.load(f)
-
-validator = get_batch_validator("{model_id}")
-results = validator.remote(items)
-
-# Output results as JSON
-print("BATCH_RESULTS_START")
-print(json.dumps(results))
-print("BATCH_RESULTS_END")
-'''
-
-        cmd = ["modal", "run", str(script_dir / "modal_app.py") + "::main"]
-
-        # Actually, we need a different approach - let's add a batch entrypoint to modal_app.py
-        # For now, use a simpler approach: run modal_app.py with batch mode
+        # Run Modal with batch processing
         cmd = [
             "python", "-c", f'''
 import json
 import modal
 
-# Import the app and batch function
 import sys
 sys.path.insert(0, "{script_dir}")
-from modal_app import app, get_batch_validator
+from modal_app import app, get_validator
 
 with open("{items_file}", "r") as f:
     items = json.load(f)
 
 with app.run():
-    validator = get_batch_validator("{model_id}")
+    validator = get_validator("{model_id}")
     results = validator.remote(items)
 
     print("BATCH_RESULTS_START")
@@ -197,7 +174,7 @@ with app.run():
             cmd,
             capture_output=True,
             text=True,
-            timeout=3600,  # 60 minute timeout for batch (matches Modal timeout)
+            timeout=3600,  # 60 minute timeout for batch
             cwd=str(script_dir)
         )
 
@@ -206,7 +183,6 @@ with app.run():
         if result_proc.returncode != 0:
             print(f"  Batch Modal command failed (exit {result_proc.returncode})")
             print(f"  STDERR: {result_proc.stderr[:1000]}")
-            # Return error results for all items
             return [{
                 "file": item["file_name"],
                 "library": item["library_name"],
@@ -303,142 +279,10 @@ with app.run():
 
     finally:
         # Clean up temp file
-        import os
         try:
             os.unlink(items_file)
         except:
             pass
-
-
-def validate_with_modal(elm_file: Path, model_id: str, cpg_content: str = None, cpg_file_path: Path = None) -> dict:
-    """Validate ELM file using Modal via subprocess (single file, for backwards compatibility)."""
-    import subprocess
-
-    with open(elm_file, 'r') as f:
-        elm_json = json.load(f)
-
-    library_name = get_library_name(elm_json, elm_file.stem)
-    start_time = time.time()
-
-    try:
-        # Build modal run command
-        script_dir = Path(__file__).parent
-        cmd = [
-            "modal", "run",
-            str(script_dir / "modal_app.py"),
-            "--elm-file", str(elm_file),
-            "--model", model_id
-        ]
-
-        # Add CPG file if provided
-        if cpg_file_path and cpg_file_path.exists():
-            cmd.extend(["--cpg-file", str(cpg_file_path)])
-
-        print(f"  Running: {' '.join(cmd)}")
-
-        # Run modal command and capture output
-        result_proc = subprocess.run(
-            cmd,
-            capture_output=True,
-            text=True,
-            timeout=600,  # 10 minute timeout
-            cwd=str(script_dir)
-        )
-
-        elapsed = time.time() - start_time
-
-        # Parse the output to extract results
-        stdout = result_proc.stdout
-        stderr = result_proc.stderr
-
-        if result_proc.returncode != 0:
-            print(f"  Modal command failed (exit {result_proc.returncode})")
-            print(f"  STDERR: {stderr[:500]}")
-            return {
-                "file": elm_file.name,
-                "library": library_name,
-                "model": model_id,
-                "valid": False,
-                "errors": [f"Modal exit code {result_proc.returncode}: {stderr[:200]}"],
-                "warnings": [],
-                "time_seconds": elapsed,
-                "source": "error",
-                "has_cpg": cpg_content is not None
-            }
-
-        # Parse output for validation result
-        # Look for "Result: VALID" or "Result: INVALID" in output
-        valid = False
-        errors = []
-        warnings = []
-
-        for line in stdout.split('\n'):
-            line_lower = line.lower().strip()
-            if 'result: valid' in line_lower:
-                valid = True
-            elif 'result: invalid' in line_lower:
-                valid = False
-            elif 'errors:' in line_lower and '[' in line:
-                # Try to extract errors list
-                try:
-                    err_part = line.split('Errors:', 1)[1].strip()
-                    if err_part and err_part != '[]':
-                        errors.append(err_part)
-                except:
-                    pass
-            elif 'warnings:' in line_lower and '[' in line:
-                try:
-                    warn_part = line.split('Warnings:', 1)[1].strip()
-                    if warn_part and warn_part != '[]':
-                        warnings.append(warn_part)
-                except:
-                    pass
-
-        print(f"  Completed in {elapsed:.2f}s: valid={valid}")
-
-        return {
-            "file": elm_file.name,
-            "library": library_name,
-            "model": model_id,
-            "valid": valid,
-            "errors": errors,
-            "warnings": warnings,
-            "time_seconds": elapsed,
-            "source": "modal",
-            "has_cpg": cpg_content is not None
-        }
-
-    except subprocess.TimeoutExpired:
-        elapsed = time.time() - start_time
-        print(f"  Modal command timed out after {elapsed:.2f}s")
-        return {
-            "file": elm_file.name,
-            "library": library_name,
-            "model": model_id,
-            "valid": False,
-            "errors": ["Modal command timed out after 10 minutes"],
-            "warnings": [],
-            "time_seconds": elapsed,
-            "source": "error",
-            "has_cpg": cpg_content is not None
-        }
-    except Exception as e:
-        import traceback
-        elapsed = time.time() - start_time
-        error_msg = str(e)
-        print(f"  ERROR: {error_msg}")
-        traceback.print_exc()
-        return {
-            "file": elm_file.name,
-            "library": library_name,
-            "model": model_id,
-            "valid": False,
-            "errors": [f"Error: {error_msg}"],
-            "warnings": [],
-            "time_seconds": elapsed,
-            "source": "error",
-            "has_cpg": cpg_content is not None
-        }
 
 
 def compare_with_ground_truth(result: dict, test_case: dict) -> dict:
@@ -506,15 +350,8 @@ def compare_with_ground_truth(result: dict, test_case: dict) -> dict:
     }
 
 
-def run_validation(model_id: str, data_dir: Path, output_file: Path, use_batch: bool = True) -> dict:
-    """Run validation for all ELM files with specified model.
-
-    Args:
-        model_id: Model identifier
-        data_dir: Directory containing ELM JSON files
-        output_file: Output CSV file path
-        use_batch: If True, process all files in a single Modal invocation (more efficient)
-    """
+def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
+    """Run validation for all ELM files with specified model using batch processing."""
     elm_files = get_elm_files(data_dir)
     ground_truth = load_ground_truth(data_dir)
     test_cases = ground_truth.get("test_cases", {})
@@ -529,78 +366,45 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path, use_batch: 
     print(f"Data Directory: {data_dir}")
     print(f"Files: {len(elm_files)}")
     print(f"Test Cases with Ground Truth: {len(test_cases)}")
-    print(f"Mode: {'Batch (efficient)' if use_batch else 'Individual (legacy)'}")
+    print(f"Mode: Batch (model loads once, processes all files)")
     print()
 
+    # Prepare batch items
+    print("Preparing batch validation...")
+    items = prepare_batch_items(elm_files, data_dir, test_cases)
+
+    # Run batch validation
+    batch_results = validate_batch_with_modal(items, model_id)
+
+    # Process results and compare with ground truth
     results = []
     total_time = 0
 
-    if use_batch and len(elm_files) > 1:
-        # BATCH MODE: Process all files in a single Modal invocation
-        # This is much more efficient because the model is loaded only once
-        print("Preparing batch validation...")
-        items = prepare_batch_items(elm_files, data_dir, test_cases)
+    for result in batch_results:
+        file_name = result.get("file", "unknown")
+        test_case = test_cases.get(file_name, {})
 
-        batch_results = validate_batch_with_modal(items, model_id)
+        # Compare with ground truth
+        comparison = compare_with_ground_truth(result, test_case)
+        result.update(comparison)
 
-        # Process results and compare with ground truth
-        for result in batch_results:
-            file_name = result.get("file", "unknown")
-            test_case = test_cases.get(file_name, {})
+        # Add CPG file info
+        for item in items:
+            if item["file_name"] == file_name:
+                result["cpg_file"] = item.get("cpg_file")
+                break
 
-            # Compare with ground truth
-            comparison = compare_with_ground_truth(result, test_case)
-            result.update(comparison)
+        results.append(result)
 
-            # Add CPG file info
-            for item in items:
-                if item["file_name"] == file_name:
-                    result["cpg_file"] = item.get("cpg_file")
-                    break
+        status = "VALID" if result.get("valid") else "INVALID"
+        time_taken = result.get("time_seconds", 0)
+        total_time += time_taken
 
-            results.append(result)
-
-            status = "VALID" if result.get("valid") else "INVALID"
-            time_taken = result.get("time_seconds", 0)
-            total_time += time_taken
-
-            if comparison["has_ground_truth"]:
-                correct = "✓" if comparison["correct"] else "✗"
-                print(f"  {file_name}: {status} ({time_taken:.2f}s) [{correct} vs ground truth]")
-            else:
-                print(f"  {file_name}: {status} ({time_taken:.2f}s) [no ground truth]")
-    else:
-        # INDIVIDUAL MODE: Process files one at a time (legacy behavior)
-        for i, elm_file in enumerate(elm_files, 1):
-            file_name = elm_file.name
-            test_case = test_cases.get(file_name, {})
-
-            # Load CPG if specified in ground truth
-            cpg_file = test_case.get("cpg_file")
-            cpg_file_path = data_dir / cpg_file if cpg_file else None
-            cpg_content = load_cpg_content(data_dir, cpg_file) if cpg_file else None
-
-            cpg_indicator = f" [CPG: {cpg_file}]" if cpg_file else ""
-            print(f"[{i}/{len(elm_files)}] Validating {file_name}{cpg_indicator}...")
-
-            result = validate_with_modal(elm_file, model_id, cpg_content, cpg_file_path)
-
-            # Compare with ground truth
-            comparison = compare_with_ground_truth(result, test_case)
-            result.update(comparison)
-            result["cpg_file"] = cpg_file
-
-            results.append(result)
-
-            status = "VALID" if result.get("valid") else "INVALID"
-            time_taken = result.get("time_seconds", 0)
-            total_time += time_taken
-
-            if comparison["has_ground_truth"]:
-                correct = "✓" if comparison["correct"] else "✗"
-                print(f"  -> {status} ({time_taken:.2f}s) [{correct} vs ground truth]")
-            else:
-                print(f"  -> {status} ({time_taken:.2f}s) [no ground truth]")
+        if comparison["has_ground_truth"]:
+            correct = "+" if comparison["correct"] else "x"
+            print(f"  {file_name}: {status} ({time_taken:.2f}s) [{correct} vs ground truth]")
+        else:
+            print(f"  {file_name}: {status} ({time_taken:.2f}s) [no ground truth]")
 
     # Calculate summary statistics
     with_gt = [r for r in results if r.get("has_ground_truth")]
@@ -672,7 +476,7 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path, use_batch: 
     return {"results": results, "summary": summary}
 
 
-def run_all_models(data_dir: Path, output_dir: Path, use_batch: bool = True) -> list:
+def run_all_models(data_dir: Path, output_dir: Path) -> list:
     """Run validation with all models."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -680,7 +484,7 @@ def run_all_models(data_dir: Path, output_dir: Path, use_batch: bool = True) -> 
 
     for model_id in MODELS:
         output_file = output_dir / f"results-{model_id}.csv"
-        result = run_validation(model_id, data_dir, output_file, use_batch=use_batch)
+        result = run_validation(model_id, data_dir, output_file)
         all_summaries.append(result["summary"])
 
     # Save combined summary
@@ -711,7 +515,7 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
         lines.append("|-------|----------|---------------|-------------|----------|--------|")
     else:
         lines.append("### Model Comparison\n")
-        lines.append("⚠️ **No ground truth annotations found.** Add annotations to `test_data/ground_truth.json` to measure accuracy.\n")
+        lines.append("No ground truth annotations found. Add annotations to `test_data/ground_truth.json` to measure accuracy.\n")
         lines.append("| Model | Valid/Total | Avg Time | Status |")
         lines.append("|-------|-------------|----------|--------|")
 
@@ -737,15 +541,15 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
         # Status icons based on accuracy
         if accuracy is not None:
             if accuracy >= 0.95:
-                status = "🥇 Excellent"
+                status = "Excellent"
             elif accuracy >= 0.90:
-                status = "🥈 Very Good"
+                status = "Very Good"
             elif accuracy >= 0.80:
-                status = "🥉 Good"
+                status = "Good"
             elif accuracy >= 0.70:
-                status = "🟡 Fair"
+                status = "Fair"
             else:
-                status = "🔴 Needs Work"
+                status = "Needs Work"
 
             error_str = f"{error_match:.0%}" if error_match is not None else "N/A"
             lines.append(
@@ -753,7 +557,7 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
                 f"{error_str} | {avg_time:.2f}s | {status} |"
             )
         else:
-            lines.append(f"| {model} | {total} files | {avg_time:.2f}s | ⚪ No ground truth |")
+            lines.append(f"| {model} | {total} files | {avg_time:.2f}s | No ground truth |")
 
     if has_accuracy:
         lines.append("\n### Accuracy Comparison\n")
@@ -766,10 +570,10 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
             accuracy = s.get("accuracy")
             if accuracy is not None:
                 bar_len = int(accuracy * max_bar_len)
-                bar = "█" * bar_len + "░" * (max_bar_len - bar_len)
+                bar = "#" * bar_len + "." * (max_bar_len - bar_len)
                 lines.append(f"{model} {bar} {accuracy:.1%}")
             else:
-                lines.append(f"{model} {'░' * max_bar_len} N/A")
+                lines.append(f"{model} {'.' * max_bar_len} N/A")
 
         lines.append("```\n")
 
@@ -783,18 +587,17 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
         model = s.get("model", "unknown")[:15].ljust(15)
         avg_time = s.get("avg_time_seconds", 0)
         bar_len = int((avg_time / max_time) * max_bar_len) if max_time > 0 else 0
-        bar = "█" * bar_len + "░" * (max_bar_len - bar_len)
+        bar = "#" * bar_len + "." * (max_bar_len - bar_len)
         lines.append(f"{model} {bar} {avg_time:.2f}s")
 
     lines.append("```\n")
 
     lines.append("### Legend")
-    lines.append("- 🥇 Excellent (≥95% accuracy)")
-    lines.append("- 🥈 Very Good (≥90% accuracy)")
-    lines.append("- 🥉 Good (≥80% accuracy)")
-    lines.append("- 🟡 Fair (≥70% accuracy)")
-    lines.append("- 🔴 Needs Work (<70% accuracy)")
-    lines.append("- ⚪ No ground truth available")
+    lines.append("- Excellent: >=95% accuracy")
+    lines.append("- Very Good: >=90% accuracy")
+    lines.append("- Good: >=80% accuracy")
+    lines.append("- Fair: >=70% accuracy")
+    lines.append("- Needs Work: <70% accuracy")
 
     if not has_accuracy:
         lines.append("\n### How to Add Ground Truth")
@@ -828,7 +631,7 @@ def generate_markdown_summary(summaries: list, output_file: Path = None) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="ELM Validation Runner")
+    parser = argparse.ArgumentParser(description="ELM Validation Runner (Batch Mode)")
     parser.add_argument("--model", default=DEFAULT_MODEL,
                        help=f"Model to use for validation (default: {DEFAULT_MODEL})")
     parser.add_argument("--all-models", action="store_true",
@@ -842,12 +645,8 @@ def main():
                        help="Output directory (for all models)")
     parser.add_argument("--list-models", action="store_true",
                        help="List available models and exit")
-    parser.add_argument("--no-batch", action="store_true",
-                       help="Disable batch processing (validate files one at a time)")
 
     args = parser.parse_args()
-
-    use_batch = not args.no_batch
 
     if args.list_models:
         print("Available models:")
@@ -857,7 +656,7 @@ def main():
         return
 
     if args.all_models:
-        summaries = run_all_models(args.data_dir, args.output_dir, use_batch=use_batch)
+        summaries = run_all_models(args.data_dir, args.output_dir)
         summary_md = generate_markdown_summary(summaries, args.output_dir / "summary.md")
         print("\n" + summary_md)
     else:
@@ -866,7 +665,7 @@ def main():
             print(f"Available models: {', '.join(MODELS)}")
             sys.exit(1)
 
-        result = run_validation(args.model, args.data_dir, args.output, use_batch=use_batch)
+        result = run_validation(args.model, args.data_dir, args.output)
         summaries = [result["summary"]]
         summary_md = generate_markdown_summary(summaries)
         print("\n" + summary_md)
