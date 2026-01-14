@@ -12,7 +12,7 @@ app = modal.App("elm-validator")
 
 # Shared image with ML dependencies
 image = modal.Image.debian_slim().pip_install(
-    "transformers", "torch", "accelerate", "sentencepiece"
+    "transformers", "torch", "accelerate", "sentencepiece", "bitsandbytes"
 )
 
 # Groq image for API-based inference (no GPU/volume needed)
@@ -305,38 +305,36 @@ def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
     elm_simplified = simplify_elm_for_prompt(elm_json)
 
     if cpg_content:
-        prompt = f"""Compare this ELM implementation against the CPG requirements.
+        prompt = f"""Check if the ELM code matches the CPG requirements exactly.
 
-## CPG Requirements (Source of Truth):
+CPG (requirements):
 {cpg_content}
 
-## ELM Implementation (To Validate):
+ELM (implementation):
 {elm_simplified}
 
-## Instructions:
-Step 1: Find the age requirement in CPG and ELM. Do they match exactly?
-Step 2: Find the time interval/lookback period in CPG and ELM. Do they match exactly?
-Step 3: If ALL values match exactly, answer VALID: YES. If ANY value differs, answer VALID: NO.
+TASK: Match each value by its concept, then compare.
+- Ages must match ages (e.g., CPG age vs ELM age)
+- Time intervals must match time intervals
+- Thresholds must match thresholds (e.g., HbA1c, LDL)
+- Do NOT compare age with interval or different concepts
 
-Example: CPG says "18 years", ELM says "25 years" → VALID: NO, ERROR: age mismatch 25 vs 18
+For each concept in CPG, find the same concept in ELM and check if values match exactly.
 
-## Your Answer:
+If ALL matching concepts have equal values → VALID: YES
+If ANY value differs for the same concept → VALID: NO
+
 VALID: YES or NO
-ERRORS: None, or list each mismatch
-WARNINGS: None"""
+ERRORS: None, or list each mismatch with concept name"""
     else:
         prompt = f"""Analyze this clinical logic implementation.
 
 {elm_simplified}
 
-Check:
-1. Are age thresholds clinically reasonable?
-2. Are time intervals appropriate?
+Are the values clinically reasonable?
 
-## Your Answer:
 VALID: YES or NO
-ERRORS: None, or list issues
-WARNINGS: None"""
+ERRORS: None, or list issues"""
 
     return prompt
 
@@ -503,7 +501,7 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
     return result
 
 
-def run_batch_validation(items: list, model_name: str, model_id: str) -> list:
+def run_batch_validation(items: list, model_name: str, model_id: str, use_4bit: bool = False) -> list:
     """
     Validate multiple ELM files with a single model load.
 
@@ -511,12 +509,13 @@ def run_batch_validation(items: list, model_name: str, model_id: str) -> list:
         items: List of dicts with keys: elm_json, library_name, cpg_content, file_name
         model_name: HuggingFace model name
         model_id: Short model identifier
+        use_4bit: Use 4-bit quantization for large models (8B+)
 
     Returns:
         List of validation results
     """
     import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
     if not items:
         return []
@@ -526,12 +525,29 @@ def run_batch_validation(items: list, model_name: str, model_id: str) -> list:
     load_start = time.time()
 
     tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir="/cache")
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype=torch.float16,
-        device_map="auto",
-        cache_dir="/cache"
-    )
+
+    if use_4bit:
+        # 4-bit quantization for large models (8B+) to fit on T4
+        print("  Using 4-bit quantization...")
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4"
+        )
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            quantization_config=quantization_config,
+            device_map="auto",
+            cache_dir="/cache"
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            torch_dtype=torch.float16,
+            device_map="auto",
+            cache_dir="/cache"
+        )
 
     load_time = time.time() - load_start
     print(f"Model loaded in {load_time:.2f}s")
@@ -794,15 +810,15 @@ def validate_medgemma_1_5(items: list) -> list:
 @app.function(
     image=image,
     gpu="T4",
-    timeout=3600,
+    timeout=1800,
     volumes={"/cache": volume},
     secrets=[modal.Secret.from_name("huggingface")]
 )
 def validate_llama_3_1_8b(items: list) -> list:
-    """Batch validate with Llama 3.1 8B."""
+    """Batch validate with Llama 3.1 8B (4-bit quantized to fit on T4)."""
     import os
     os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-    return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b")
+    return run_batch_validation(items, "meta-llama/Llama-3.1-8B-Instruct", "llama-3.1-8b", use_4bit=True)
 
 
 @app.function(
