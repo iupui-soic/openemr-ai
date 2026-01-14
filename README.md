@@ -89,6 +89,7 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
 | Granite Speech 3.3 8B | IBM | Multimodal speech-to-text model |
 | Phi-4 Multimodal | Microsoft | Multimodal instruct model |
 | Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
+| MedASR | Google | A model based on the Conformer architecture pre-trained for medical dictation and transcription |
 
 ### Latest Results
 
@@ -101,6 +102,7 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
 | groq-whisper-large-v3-turbo | 9.60% | Run evaluation |
 | whisper-large-v3 | 13.26% | Run evaluation |
 | whisper-large-v3-turbo | 14.02% | Run evaluation |
+| medasr | 44.01% | Run evaluation |
 | phi4-multimodal | 64.60% | Run evaluation |
 | granite-speech-3.3-8b | 74.10% | Run evaluation |
 
@@ -114,6 +116,7 @@ This repository includes comprehensive evaluation of Automatic Speech Recognitio
 | granite | 17.70% | Run evaluation |
 | whisper-v3 | 19.35% | Run evaluation |
 | whisper-turbo | 23.92% | Run evaluation |
+| medasr | 39.25% | Run evaluation |
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
 
