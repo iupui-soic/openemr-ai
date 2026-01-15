@@ -51,7 +51,10 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 | Model | Accuracy | Correct/Total | Avg Time | Status |
 |-------|----------|---------------|----------|--------|
+| GPT OSS 120B | 100% | 10/10 | 1.66s | Excellent |
+| Qwen 3 32B | 100% | 10/10 | 3.47s | Excellent |
 | GPT OSS 20B | 90% | 9/10 | 23.75s | Very Good |
+| Gemma 3 4B | 70% | 7/10 | 40.64s | Fair |
 | Llama 3.2 1B | 70% | 7/10 | 17.86s | Fair |
 | Qwen 2.5 3B | 70% | 7/10 | 39.90s | Fair |
 | Gemma 3 4B | 70% | 7/10 | 40.64s | Fair |
@@ -62,22 +65,21 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 | Llama 3.2 3B | 60% | 6/10 | 44.21s | Needs Work |
 | Qwen 2.5 1.5B | 60% | 6/10 | 21.57s | Needs Work |
 | Phi-3 Mini | 50% | 5/10 | 32.05s | Needs Work |
-| GPT OSS 120B | 50% | 5/10 | 23.84s | Needs Work |
+| Llama 3.3 70B | 40% | 4/10 | 0.14s | Needs Work |
 | Llama 3.1 8B | 30% | 3/10 | 124.80s | Needs Work |
 
 **Key Findings:**
-- **Gemini 3 Flash** achieved perfect 100% accuracy - best overall performer
+- **Gemini 3 Flash, GPT OSS 120B and Qwen 3 32B** achieved perfect 100% accuracy - best overall performer
 - **GPT OSS 20B** (via Groq) matches Gemini 2.0 Flash at 90% accuracy - best cost-effective option
 - Small models (1-4B) achieve 60-70% accuracy with proper prompting - competitive with Claude Sonnet/Opus
 - **Gemma 3 270M** achieves 70% accuracy despite having only 270M parameters - remarkably efficient
-- Model size doesn't always correlate with accuracy (GPT OSS 120B: 50% vs GPT OSS 20B: 90%)
 - The ELM simplification approach works well across model sizes
 
 View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
 
 ## RAG Medical Summarization (SOAP Note Generation)
 
-This repository includes evaluation of LLM models for generating medical discharge summaries in SOAP format using Retrieval-Augmented Generation (RAG). We test multiple models on their ability to create structured clinical summaries from doctor-patient transcripts and electronic health records.
+This repository includes an evaluation of LLM models for generating medical discharge summaries in SOAP format using Retrieval-Augmented Generation (RAG). We test multiple models on their ability to create structured clinical summaries from doctor-patient transcripts and electronic health records.
 
 **What is RAG?** Retrieval-Augmented Generation combines language models with a vector database to retrieve relevant context (SOAP note schemas from MIMIC Clinical Notes) before generating summaries. This ensures outputs follow proper clinical documentation structure.
 
