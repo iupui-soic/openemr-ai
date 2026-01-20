@@ -1,11 +1,8 @@
 /**
  * SMART FHIR Console Viewer
- * Fetch and display Conditions, Procedures, Observations, Medications, and Allergies with SNOMED lookup
+ * Fetch and display Conditions, Procedures, Observations, Medications, Allergies, and Encounters
  */
 console.log("=== CONSOLEVIEWER.JS FILE LOADED ===");
-
-// SNOMED International Browser API (CORS enabled)
-const SNOMED_API_URL = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/concepts';
 
 function logToUI(...args) {
     const outputDiv = document.getElementById('console-output');
@@ -20,28 +17,6 @@ function logToUI(...args) {
 
     outputDiv.textContent += text;
     console.log('[consoleViewer]', ...args);
-}
-
-async function lookupSnomedCode(code) {
-    try {
-        const response = await fetch(`${SNOMED_API_URL}/${code}`, {
-            headers: {
-                'Accept': 'application/json',
-                'Accept-Language': 'en'
-            }
-        });
-
-        if (!response.ok) {
-            return null;
-        }
-
-        const data = await response.json();
-        // pt = preferred term, fsn = fully specified name
-        return data.pt?.term || data.fsn?.term || null;
-    } catch (e) {
-        console.log('SNOMED lookup error for code', code, ':', e.message);
-        return null;
-    }
 }
 
 async function initConsoleViewer() {
@@ -73,9 +48,11 @@ async function initConsoleViewer() {
         // Get SMART client
         const smartClient = await FHIR.oauth2.ready();
 
+        // Get patient ID
+        const patientId = smartClient.patient.id;
+        logToUI('Patient ID:', patientId);
+
         // ==================== FETCH CONDITIONS ====================
-        logToUI('');
-        logToUI('Fetching conditions...');
         let conditionData = null;
         let conditions = [];
 
@@ -87,42 +64,14 @@ async function initConsoleViewer() {
             } else if (Array.isArray(conditionData)) {
                 conditions = conditionData;
             }
-
-            logToUI('Conditions fetched:', conditions.length);
         } catch (e) {
             logToUI('Error fetching conditions:', e.message);
         }
 
-        // Test SNOMED lookup if we have conditions
-        let activeConditions = [];
-        let inactiveConditions = [];
-
-        if (conditions.length > 0) {
-            logToUI('');
-            logToUI('Testing SNOMED International API lookup...');
-            const firstCode = conditions[0]?.code?.coding?.[0]?.code;
-            if (firstCode) {
-                logToUI('Testing lookup for code:', firstCode);
-                const testResult = await lookupSnomedCode(firstCode);
-                if (testResult) {
-                    logToUI('Lookup SUCCESS! Display name:', testResult);
-                } else {
-                    logToUI('Lookup failed for test code');
-                }
-            }
-
-            // Parse conditions with SNOMED lookup
-            logToUI('');
-            logToUI('Looking up all SNOMED codes (this may take a moment)...');
-            const parsedConditions = await parseConditions(conditions);
-            activeConditions = parsedConditions.active;
-            inactiveConditions = parsedConditions.inactive;
-        }
+        // Parse conditions
+        const { activeConditions, inactiveConditions } = parseConditions(conditions);
 
         // ==================== FETCH PROCEDURES ====================
-        logToUI('');
-        logToUI('');
-        logToUI('Fetching procedures...');
         let procedureData = null;
         let procedures = [];
 
@@ -134,71 +83,90 @@ async function initConsoleViewer() {
             } else if (Array.isArray(procedureData)) {
                 procedures = procedureData;
             }
-
-            logToUI('Procedures fetched:', procedures.length);
         } catch (e) {
             logToUI('Error fetching procedures:', e.message);
         }
 
-        // ==================== FETCH OBSERVATIONS (by category) ====================
-        logToUI('');
-        logToUI('');
-        logToUI('Fetching observations...');
-        let observationData = null;
-        let observations = [];
+        // ==================== FETCH CURRENT ENCOUNTER ====================
+        let encounterData = null;
+        let currentEncounter = null;
 
-        // Try laboratory observations first
         try {
-            logToUI('Trying laboratory observations...');
-            observationData = await smartClient.patient.request("Observation?category=laboratory");
+            if (smartClient.encounter?.id) {
+                currentEncounter = await smartClient.request(`Encounter/${smartClient.encounter.id}`);
+            } else {
+                encounterData = await smartClient.patient.request("Encounter?_sort=-date&_count=1");
 
-            if (observationData && observationData.resourceType === 'Bundle') {
-                observations = observationData.entry?.map(e => e.resource) || [];
-            } else if (Array.isArray(observationData)) {
-                observations = observationData;
-            }
-
-            logToUI('Laboratory observations fetched:', observations.length);
-        } catch (e) {
-            logToUI('Error fetching laboratory observations:', e.message);
-        }
-
-        // Try vital-signs observations
-        try {
-            logToUI('Trying vital-signs observations...');
-            const vitalData = await smartClient.patient.request("Observation?category=vital-signs");
-
-            let vitals = [];
-            if (vitalData && vitalData.resourceType === 'Bundle') {
-                vitals = vitalData.entry?.map(e => e.resource) || [];
-            } else if (Array.isArray(vitalData)) {
-                vitals = vitalData;
-            }
-
-            logToUI('Vital-signs observations fetched:', vitals.length);
-
-            // Combine with laboratory observations
-            observations = [...observations, ...vitals];
-
-            // Combine raw data for display
-            if (observationData && vitalData) {
-                observationData = {
-                    laboratory: observationData,
-                    vitalSigns: vitalData
-                };
-            } else if (vitalData) {
-                observationData = vitalData;
+                if (encounterData && encounterData.resourceType === 'Bundle' && encounterData.entry?.length > 0) {
+                    currentEncounter = encounterData.entry[0].resource;
+                }
             }
         } catch (e) {
-            logToUI('Error fetching vital-signs observations:', e.message);
+            logToUI('Error fetching encounter:', e.message);
         }
 
-        logToUI('Total observations fetched:', observations.length);
+        // ==================== FETCH ALL OBSERVATIONS FOR PATIENT ====================
+        let allObservationData = null;
+        let allObservations = [];
+
+        try {
+            allObservationData = await smartClient.patient.request("Observation");
+
+            if (allObservationData && allObservationData.resourceType === 'Bundle') {
+                allObservations = allObservationData.entry?.map(e => e.resource) || [];
+            } else if (Array.isArray(allObservationData)) {
+                allObservations = allObservationData;
+            }
+        } catch (e) {
+            logToUI('Error fetching all observations:', e.message);
+            allObservationData = { error: e.message };
+        }
+
+        // ==================== CATEGORIZE OBSERVATIONS FOR CURRENT ENCOUNTER ====================
+        let vitals = [];
+        let laboratoryTests = [];
+        let imagingTests = [];
+        let procedureTests = [];
+        let examTests = [];
+        let otherObservations = [];
+
+        if (currentEncounter && allObservations.length > 0) {
+            const encounterStart = currentEncounter.period?.start;
+
+            if (encounterStart) {
+                const encounterStartDate = new Date(encounterStart);
+
+                const encounterObservations = allObservations.filter(obs => {
+                    const obsDate = obs.effectiveDateTime || obs.issued;
+                    if (!obsDate) return false;
+
+                    const obsDateTime = new Date(obsDate);
+                    return obsDateTime >= encounterStartDate;
+                });
+
+                for (const obs of encounterObservations) {
+                    const category = obs.category?.[0]?.coding?.[0]?.code || '';
+
+                    if (category === 'vital-signs') {
+                        vitals.push(obs);
+                    } else if (category === 'social-history') {
+                        continue;
+                    } else if (category === 'laboratory') {
+                        laboratoryTests.push(obs);
+                    } else if (category === 'imaging') {
+                        imagingTests.push(obs);
+                    } else if (category === 'procedure') {
+                        procedureTests.push(obs);
+                    } else if (category === 'exam') {
+                        examTests.push(obs);
+                    } else {
+                        otherObservations.push(obs);
+                    }
+                }
+            }
+        }
 
         // ==================== FETCH MEDICATIONS ====================
-        logToUI('');
-        logToUI('');
-        logToUI('Fetching medications...');
         let medicationData = null;
         let medications = [];
 
@@ -210,21 +178,14 @@ async function initConsoleViewer() {
             } else if (Array.isArray(medicationData)) {
                 medications = medicationData;
             }
-
-            logToUI('Medications fetched:', medications.length);
         } catch (e) {
             logToUI('Error fetching medications:', e.message);
-            logToUI('Note: This may be a server issue or the patient has no medications.');
-            medicationData = { error: e.message, note: 'Server returned error - possibly no medications for this patient' };
+            medicationData = { error: e.message };
         }
 
-        // Parse medications
         const { activeMeds, inactiveMeds } = parseMedications(medications);
 
         // ==================== FETCH ALLERGIES ====================
-        logToUI('');
-        logToUI('');
-        logToUI('Fetching allergies...');
         let allergyData = null;
         let allergies = [];
 
@@ -236,152 +197,349 @@ async function initConsoleViewer() {
             } else if (Array.isArray(allergyData)) {
                 allergies = allergyData;
             }
-
-            logToUI('Allergies fetched:', allergies.length);
         } catch (e) {
             logToUI('Error fetching allergies:', e.message);
-            logToUI('Note: This may be a server issue or the patient has no allergies.');
-            allergyData = { error: e.message, note: 'Server returned error - possibly no allergies for this patient' };
+            allergyData = { error: e.message };
         }
 
-        // Parse allergies
         const { activeAllergies, inactiveAllergies } = parseAllergies(allergies);
 
         // ==================== DISPLAY FORMATTED OUTPUT ====================
         logToUI('');
+        logToUI('========================================');
+        logToUI('CURRENT ENCOUNTER');
+        logToUI('========================================');
+        if (currentEncounter) {
+            logToUI('Encounter ID:', currentEncounter.id);
+            logToUI('Date:', currentEncounter.period?.start || currentEncounter.meta?.lastUpdated || 'Unknown');
+            logToUI('Type:', currentEncounter.type?.[0]?.coding?.[0]?.display ||
+                currentEncounter.type?.[0]?.text ||
+                currentEncounter.class?.display ||
+                currentEncounter.class?.code ||
+                'Unknown');
+            logToUI('Status:', currentEncounter.status || 'Unknown');
+        } else {
+            logToUI('No current encounter found');
+        }
+
+        // ==================== VITALS FOR CURRENT ENCOUNTER ====================
+        logToUI('');
+        logToUI('========================================');
+        logToUI('VITAL SIGNS (Current Encounter)');
+        logToUI('========================================');
+        if (vitals.length > 0) {
+            const groupedVitals = groupObservationsByPanel(vitals);
+            displayGroupedObservations(groupedVitals);
+        } else {
+            logToUI('No vital signs recorded for current encounter');
+        }
+
+        // ==================== OTHER OBSERVATIONS FOR CURRENT ENCOUNTER ====================
+        logToUI('');
+        logToUI('========================================');
+        logToUI('OTHER OBSERVATIONS (Current Encounter)');
+        logToUI('========================================');
+
+        // Combine all non-vital observations for current encounter
+        const allOtherCurrentEncounter = [
+            ...laboratoryTests,
+            ...imagingTests,
+            ...procedureTests,
+            ...examTests,
+            ...otherObservations
+        ];
+
+        if (allOtherCurrentEncounter.length > 0) {
+            const groupedOther = groupObservationsByPanel(allOtherCurrentEncounter);
+            displayGroupedObservations(groupedOther);
+        } else {
+            logToUI('No other observations recorded for current encounter');
+        }
+
+        // ==================== PAST MEDICAL HISTORY ====================
         logToUI('');
         logToUI('========================================');
         logToUI('PAST MEDICAL HISTORY');
         logToUI('========================================');
         logToUI('');
-        logToUI('Active Conditions: ' + (activeConditions.length > 0 ? activeConditions.join(', ') : 'None'));
+        logToUI('Active Conditions:');
+        if (activeConditions.length > 0) {
+            for (const condition of activeConditions) {
+                logToUI('  - ' + condition);
+            }
+        } else {
+            logToUI('  None');
+        }
         logToUI('');
-        logToUI('Inactive Conditions: ' + (inactiveConditions.length > 0 ? inactiveConditions.join(', ') : 'None'));
-        logToUI('');
-        logToUI('========================================');
-        logToUI('Total Conditions: ' + conditions.length + ' (Active: ' + activeConditions.length + ', Inactive: ' + inactiveConditions.length + ')');
+        logToUI('Inactive Conditions:');
+        if (inactiveConditions.length > 0) {
+            for (const condition of inactiveConditions) {
+                logToUI('  - ' + condition);
+            }
+        } else {
+            logToUI('  None');
+        }
 
-        logToUI('');
+        // ==================== MEDICATIONS ====================
         logToUI('');
         logToUI('========================================');
         logToUI('MEDICATIONS');
         logToUI('========================================');
         logToUI('');
-        logToUI('Active Medications: ' + (activeMeds.length > 0 ? activeMeds.join(', ') : 'None'));
+        logToUI('Active Medications:');
+        if (activeMeds.length > 0) {
+            for (const med of activeMeds) {
+                logToUI('  - ' + med);
+            }
+        } else {
+            logToUI('  None');
+        }
         logToUI('');
-        logToUI('Inactive Medications: ' + (inactiveMeds.length > 0 ? inactiveMeds.join(', ') : 'None'));
-        logToUI('');
-        logToUI('========================================');
-        logToUI('Total Medications: ' + medications.length + ' (Active: ' + activeMeds.length + ', Inactive: ' + inactiveMeds.length + ')');
+        logToUI('Inactive Medications:');
+        if (inactiveMeds.length > 0) {
+            for (const med of inactiveMeds) {
+                logToUI('  - ' + med);
+            }
+        } else {
+            logToUI('  None');
+        }
 
-        logToUI('');
+        // ==================== ALLERGIES ====================
         logToUI('');
         logToUI('========================================');
         logToUI('ALLERGIES');
         logToUI('========================================');
         logToUI('');
-        logToUI('Active Allergies: ' + (activeAllergies.length > 0 ? activeAllergies.join(', ') : 'None'));
+        logToUI('Active Allergies:');
+        if (activeAllergies.length > 0) {
+            for (const allergy of activeAllergies) {
+                logToUI('  - ' + allergy);
+            }
+        } else {
+            logToUI('  None');
+        }
         logToUI('');
-        logToUI('Inactive Allergies: ' + (inactiveAllergies.length > 0 ? inactiveAllergies.join(', ') : 'None'));
-        logToUI('');
-        logToUI('========================================');
-        logToUI('Total Allergies: ' + allergies.length + ' (Active: ' + activeAllergies.length + ', Inactive: ' + inactiveAllergies.length + ')');
+        logToUI('Inactive Allergies:');
+        if (inactiveAllergies.length > 0) {
+            for (const allergy of inactiveAllergies) {
+                logToUI('  - ' + allergy);
+            }
+        } else {
+            logToUI('  None');
+        }
 
-        // ==================== RAW DATA OUTPUT ====================
-        logToUI('');
+        // ==================== PAST OBSERVATIONS (Historical - Excluding Vitals) ====================
         logToUI('');
         logToUI('========================================');
-        logToUI('RAW CONDITION DATA FROM FHIR SERVER');
-        logToUI('(Note: "display" field is empty - resolved via SNOMED International API)');
+        logToUI('PAST OBSERVATIONS');
         logToUI('========================================');
-        logToUI('');
-        logToUI(conditionData);
 
-        logToUI('');
-        logToUI('');
-        logToUI('========================================');
-        logToUI('RAW PROCEDURE DATA FROM FHIR SERVER');
-        logToUI('========================================');
-        logToUI('');
-        logToUI(procedureData);
+        // Filter out vital-signs from historical observations
+        const nonVitalObservations = allObservations.filter(obs => {
+            const category = obs.category?.[0]?.coding?.[0]?.code || '';
+            return category !== 'vital-signs';
+        });
 
-        logToUI('');
-        logToUI('');
-        logToUI('========================================');
-        logToUI('RAW OBSERVATION DATA FROM FHIR SERVER');
-        logToUI('========================================');
-        logToUI('');
-        logToUI(observationData);
-
-        logToUI('');
-        logToUI('');
-        logToUI('========================================');
-        logToUI('RAW MEDICATION DATA FROM FHIR SERVER');
-        logToUI('========================================');
-        logToUI('');
-        logToUI(medicationData);
-
-        logToUI('');
-        logToUI('');
-        logToUI('========================================');
-        logToUI('RAW ALLERGY DATA FROM FHIR SERVER');
-        logToUI('========================================');
-        logToUI('');
-        logToUI(allergyData);
+        if (nonVitalObservations.length > 0) {
+            const groupedAll = groupObservationsByPanel(nonVitalObservations);
+            displayGroupedObservations(groupedAll);
+        } else {
+            logToUI('No observations found for this patient');
+        }
 
     } catch (err) {
         logToUI('An error occurred:', err.stack || err.message);
     }
 }
 
-async function parseConditions(conditions) {
-    const active = [];
-    const inactive = [];
+/**
+ * Group observations by their panel/test name
+ * Panels have hasMember references, individual tests don't
+ */
+function groupObservationsByPanel(observations) {
+    const groups = {};
+    const standaloneTests = [];
+    const processedIds = new Set();
 
-    // Get unique SNOMED codes first
-    const uniqueCodes = [...new Set(
-        conditions
-            .map(c => c.code?.coding?.[0]?.code)
-            .filter(Boolean)
-    )];
+    // First, identify panels (observations with hasMember)
+    const panels = observations.filter(obs => obs.hasMember && obs.hasMember.length > 0);
 
-    logToUI('Unique SNOMED codes to lookup:', uniqueCodes.length);
+    for (const panel of panels) {
+        const panelName = panel.code?.text ||
+            panel.code?.coding?.[0]?.display ||
+            'Unknown Panel';
 
-    // Lookup all codes and cache results
-    const codeDisplayMap = {};
-    let successCount = 0;
+        const panelDate = panel.effectiveDateTime || panel.issued || '';
 
-    for (const code of uniqueCodes) {
-        const displayName = await lookupSnomedCode(code);
-        if (displayName) {
-            codeDisplayMap[code] = displayName;
-            successCount++;
-        } else {
-            codeDisplayMap[code] = `SNOMED: ${code}`;
+        // Get member observation IDs
+        const memberIds = panel.hasMember.map(member => {
+            const ref = member.reference || '';
+            return ref.replace('Observation/', '');
+        });
+
+        // Find member observations
+        const members = observations.filter(obs => memberIds.includes(obs.id));
+
+        if (members.length > 0) {
+            const groupKey = `${panelName}|||${panelDate}`;
+            groups[groupKey] = {
+                name: panelName,
+                date: panelDate,
+                tests: []
+            };
+
+            for (const member of members) {
+                processedIds.add(member.id);
+                const testInfo = extractTestValue(member);
+                if (testInfo) {
+                    groups[groupKey].tests.push(testInfo);
+                }
+            }
         }
-        // Small delay to avoid rate limiting
-        await new Promise(r => setTimeout(r, 150));
+
+        processedIds.add(panel.id);
     }
 
-    logToUI('Lookup complete. Resolved', successCount, 'of', uniqueCodes.length, 'codes.');
+    // Process remaining observations (not part of any panel)
+    for (const obs of observations) {
+        if (processedIds.has(obs.id)) continue;
+        if (obs.hasMember && obs.hasMember.length > 0) continue; // Skip panels without members
+        if (obs.dataAbsentReason) continue; // Skip absent values
 
-    // Now parse conditions using the cached lookups
+        const testInfo = extractTestValue(obs);
+        if (testInfo) {
+            standaloneTests.push(testInfo);
+        }
+    }
+
+    // Group standalone tests by name (for repeated measurements like vitals)
+    const standaloneGroups = {};
+    for (const test of standaloneTests) {
+        const key = test.name;
+        if (!standaloneGroups[key]) {
+            standaloneGroups[key] = {
+                name: test.name,
+                date: test.date,
+                tests: []
+            };
+        }
+        standaloneGroups[key].tests.push(test);
+    }
+
+    // Merge panel groups and standalone groups
+    return { ...groups, ...standaloneGroups };
+}
+
+/**
+ * Extract test name and value from an observation
+ */
+function extractTestValue(obs) {
+    if (obs.dataAbsentReason) return null;
+
+    const testName = obs.code?.text ||
+        obs.code?.coding?.[0]?.display ||
+        'Unknown Test';
+
+    let value = '';
+
+    // Check for component values (like blood pressure)
+    if (obs.component && obs.component.length > 0) {
+        const componentValues = [];
+        for (const component of obs.component) {
+            if (component.dataAbsentReason) continue;
+
+            const componentName = component.code?.text ||
+                component.code?.coding?.[0]?.display ||
+                'Unknown';
+
+            if (component.valueQuantity) {
+                const unit = component.valueQuantity.unit || '';
+                componentValues.push(`${componentName}: ${component.valueQuantity.value} ${unit}`.trim());
+            }
+        }
+
+        if (componentValues.length > 0) {
+            value = componentValues.join(', ');
+        }
+    }
+    // Check for direct value
+    else if (obs.valueQuantity) {
+        const unit = obs.valueQuantity.unit || '';
+        value = `${obs.valueQuantity.value} ${unit}`.trim();
+    } else if (obs.valueString) {
+        value = obs.valueString;
+    } else if (obs.valueCodeableConcept) {
+        value = obs.valueCodeableConcept.text ||
+            obs.valueCodeableConcept.coding?.[0]?.display ||
+            '';
+    }
+
+    if (!value) return null;
+
+    const date = obs.effectiveDateTime || obs.issued || '';
+
+    return {
+        name: testName,
+        value: value,
+        date: date
+    };
+}
+
+/**
+ * Display grouped observations in a clean format
+ */
+function displayGroupedObservations(groups) {
+    const sortedKeys = Object.keys(groups).sort();
+
+    for (const key of sortedKeys) {
+        const group = groups[key];
+        logToUI('');
+        logToUI(group.name + (group.date ? ` (${formatDate(group.date)})` : '') + ':');
+
+        for (const test of group.tests) {
+            if (group.tests.length === 1 && test.name === group.name) {
+                // Single test with same name as group - just show value
+                logToUI('  ' + test.value);
+            } else {
+                // Multiple tests or different name - show name: value
+                logToUI('  ' + test.name + ': ' + test.value);
+            }
+        }
+    }
+}
+
+/**
+ * Format ISO date to readable format
+ */
+function formatDate(isoDate) {
+    if (!isoDate) return '';
+    try {
+        const date = new Date(isoDate);
+        return date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    } catch {
+        return isoDate;
+    }
+}
+
+function parseConditions(conditions) {
+    const activeConditions = [];
+    const inactiveConditions = [];
+
     for (const cond of conditions) {
         const status = cond.clinicalStatus?.coding?.[0]?.code || 'unknown';
-        const coding = cond.code?.coding?.[0];
-        const code = coding?.code;
 
-        // Use display if available, otherwise use lookup result
-        const conditionName = coding?.display || codeDisplayMap[code] || `SNOMED: ${code}`;
+        const conditionName = cond.code?.text ||
+            cond.code?.coding?.[0]?.display ||
+            'Unknown condition';
 
         if (status === 'active') {
-            active.push(conditionName);
+            activeConditions.push(conditionName);
         } else {
-            inactive.push(conditionName);
+            inactiveConditions.push(conditionName);
         }
     }
 
-    return { active, inactive };
+    return { activeConditions, inactiveConditions };
 }
 
 function parseMedications(medications) {
@@ -389,16 +547,13 @@ function parseMedications(medications) {
     const inactiveMeds = [];
 
     for (const med of medications) {
-        // Get medication status
         const status = med.status || 'unknown';
 
-        // Get medication name - try display from coding first, then text
         const medicationConcept = med.medicationCodeableConcept;
         let medName = medicationConcept?.coding?.[0]?.display ||
             medicationConcept?.text ||
             'Unknown medication';
 
-        // Add dosage instruction if available
         const dosage = med.dosageInstruction?.[0]?.text;
         if (dosage) {
             medName += ` (${dosage.trim()})`;
@@ -419,26 +574,32 @@ function parseAllergies(allergies) {
     const inactiveAllergies = [];
 
     for (const allergy of allergies) {
-        // Get clinical status (active, inactive, resolved)
         const status = allergy.clinicalStatus?.coding?.[0]?.code || 'unknown';
 
-        // Get allergy name - try code display first, then text
         const allergyCode = allergy.code;
         let allergyName = allergyCode?.coding?.[0]?.display ||
             allergyCode?.text ||
             'Unknown allergy';
 
-        // Add reaction if available
+        const category = allergy.category?.[0];
+        if (category) {
+            allergyName += ` [${category}]`;
+        }
+
+        const criticality = allergy.criticality;
+        if (criticality) {
+            allergyName += ` (Criticality: ${criticality})`;
+        }
+
         const reaction = allergy.reaction?.[0]?.manifestation?.[0]?.coding?.[0]?.display ||
             allergy.reaction?.[0]?.manifestation?.[0]?.text;
         if (reaction) {
-            allergyName += ` (Reaction: ${reaction})`;
+            allergyName += ` - Reaction: ${reaction}`;
         }
 
-        // Add severity if available
         const severity = allergy.reaction?.[0]?.severity;
         if (severity) {
-            allergyName += ` [${severity}]`;
+            allergyName += ` (${severity})`;
         }
 
         if (status === 'active') {
