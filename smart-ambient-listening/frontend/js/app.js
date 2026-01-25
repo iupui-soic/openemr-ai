@@ -10,12 +10,14 @@
 document.addEventListener('DOMContentLoaded', async () => {
     // State
     let smartClient = null;
+    let openemrApi = null;
     let patient = null;
     let recorder = null;
     let transcriptionHistory = [];
     let modalDeployed = false;
     let warmupInterval = null;
     let deployPromise = null;
+    let userSettings = null;
 
     // Configuration
     const config = window.SMART_CONFIG || {
@@ -128,10 +130,75 @@ document.addEventListener('DOMContentLoaded', async () => {
             patient = await smartClient.patient.read();
             displayPatientBanner(patient);
             elements.btnAmbient.disabled = false;
+
+            openemrApi = new OpenEMRApi(smartClient);
+            await loadCustomUserSettings();
         } catch (error) {
             console.error('EHR connection error:', error);
             updateConnectionStatus(false, 'Failed to load patient data');
         }
+    }
+
+    /**
+     * Load custom user settings from OpenEMR
+     * These settings can be used for app preferences
+     */
+    async function loadCustomUserSettings() {
+        if (!openemrApi) {
+            console.log('OpenEMR API not initialized, skipping custom settings');
+            return;
+        }
+
+        try {
+            const result = await openemrApi.getCustomUserSettings();
+            userSettings = {};
+
+            if (result.data && Array.isArray(result.data)) {
+                result.data.forEach(setting => {
+                    userSettings[setting.field_id] = setting.field_value;
+                });
+            }
+
+            console.log('Loaded custom user settings:', userSettings);
+
+            // Apply settings if available
+            applyUserSettings();
+        } catch (error) {
+            // This is non-fatal - app can work without custom settings
+            console.warn('Could not load custom user settings:', error.message);
+            console.log('The api:oemr scope may need to be granted, or no USR layout fields are configured.');
+        }
+    }
+
+    /**
+     * Save a custom user setting
+     * @param {string} fieldId - The field identifier
+     * @param {string} value - The value to save
+     */
+    async function saveUserSetting(fieldId, value) {
+        if (!openemrApi) {
+            console.warn('OpenEMR API not initialized, cannot save setting');
+            return false;
+        }
+
+        try {
+            await openemrApi.updateCustomUserSetting(fieldId, value);
+            userSettings[fieldId] = value;
+            console.log(`Saved user setting: ${fieldId} = ${value}`);
+            return true;
+        } catch (error) {
+            console.error(`Failed to save user setting ${fieldId}:`, error);
+            return false;
+        }
+    }
+
+    /**
+     * Get a custom user setting value
+     * @param {string} fieldId - The field identifier
+     * @param {*} defaultValue - Default value if not set
+     */
+    function getUserSetting(fieldId, defaultValue = null) {
+        return userSettings?.[fieldId] ?? defaultValue;
     }
 
     /**

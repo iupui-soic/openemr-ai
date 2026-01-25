@@ -20,6 +20,7 @@ frontend/
 │   └── styles.css      # Application styles
 └── js/
     ├── fhirclient.min.js   # SMART-on-FHIR client library (download required)
+    ├── openemr-api.js      # OpenEMR REST API client (custom user settings, etc.)
     ├── ambient-recorder.js  # MediaStream Recording wrapper
     └── app.js              # Main application logic
 ```
@@ -111,3 +112,53 @@ The app can run without SMART context for testing:
 1. Serve the frontend on localhost
 2. Open `index.html` directly (not via `launch.html`)
 3. The app will show "Not connected to EHR" but recording will work
+
+## OpenEMR REST API Client
+
+The app includes `openemr-api.js` which provides access to OpenEMR's standard REST API
+endpoints using the SMART on FHIR access token. This enables features like custom user
+settings (for app preferences).
+
+### Custom User Settings
+
+Custom user settings are stored per-user in OpenEMR and can be used for app preferences:
+
+```javascript
+// The API client is automatically initialized when connecting to OpenEMR
+// Access it via the global openemrApi variable in app.js
+
+// Get all custom settings
+const settings = await openemrApi.getCustomUserSettings();
+
+// Get available field definitions (from Admin > Layouts > USR)
+const fields = await openemrApi.getCustomUserSettingsFields();
+
+// Get a specific setting
+const setting = await openemrApi.getCustomUserSetting('preferred_language');
+
+// Update a setting
+await openemrApi.updateCustomUserSetting('preferred_language', 'es');
+
+// Delete/reset a setting to default
+await openemrApi.deleteCustomUserSetting('preferred_language');
+```
+
+### Setting Up Custom Fields
+
+To use custom user settings, configure USR layout fields in OpenEMR:
+
+1. Go to **Administration > Layouts**
+2. Select **USR (User Settings)** form
+3. Add custom fields like:
+   - `transcription_service_url` - Override transcription service URL
+   - `preferred_language` - Preferred transcription language
+   - `auto_summarize` - Auto-generate SOAP notes after recording
+
+### Required Scope
+
+The `api:oemr` scope is required for REST API access. This is already included in the
+app's scope configuration:
+
+```javascript
+scope: 'launch patient/*.read openid fhirUser api:oemr'
+```
