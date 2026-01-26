@@ -1,5 +1,6 @@
 """
-Modal-based SOAP summarization using MedGemma 4B-IT with RAG
+Modal-based SOAP summarization using GPT-OSS-20B with RAG
+Accepts Groq API key from request (no environment secrets)
 Uses disease-specific schemas from ChromaDB to guide extraction
 """
 
@@ -7,19 +8,29 @@ import modal
 import json
 import time
 from typing import Dict, Any
+
 from pydantic import BaseModel
+
+# ============================================================================
+# Request Model
+# ============================================================================
+
+class SummarizeRequest(BaseModel):
+    text: str
+    openemr_text: str = ""
+    groq_api_key: str
 
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("soap-summarization-medgemma-4b-test")
+app = modal.App("soap-summarization-gpt-oss-20b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "google/medgemma-4b-it"
+MODEL_NAME = "openai/gpt-oss-20b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
@@ -29,152 +40,17 @@ CHROMA_PATH = "/vectordb/chroma_schema_improved"
 summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
-        "fastapi",
+        "fastapi[standard]>=0.104.0",
+        "groq>=0.4.0",
         "langchain>=0.1.0",
         "langchain-community>=0.0.20",
         "langchain-huggingface>=0.0.1",
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
-        "transformers>=4.45.0",
-        "torch>=2.1.0",
-        "accelerate>=0.25.0",
-        "bitsandbytes>=0.41.0",
-        "huggingface-hub>=0.20.0",
+        "tiktoken>=0.5.0",
     )
 )
-
-# ============================================================================
-# Request Model for HTTP endpoint
-# ============================================================================
-
-class SummarizeRequest(BaseModel):
-    transcript_text: str
-    openemr_text: str = ""
-    patient_name: str = "Patient"
-
-
-# ============================================================================
-# Helper: Convert JSON schema to prose instructions
-# ============================================================================
-
-def schema_to_prose(schema_json: str, disease: str) -> str:
-    """
-    Convert JSON schema to natural language extraction guide.
-    This prevents MedGemma from mimicking JSON format in output.
-    """
-    try:
-        schema = json.loads(schema_json)
-    except:
-        return f"For {disease}, extract standard clinical information."
-
-    parts = [f"For {disease}, look for the following relevant information:"]
-
-    # Extract lab analytes
-    labs = schema.get("objective", {}).get("labs", {})
-    if labs:
-        panels = labs.get("panels", [])
-        analytes = []
-        for panel in panels:
-            analytes.extend(panel.get("analytes", []))
-        if analytes:
-            analyte_list = ", ".join(analytes[:20])
-            if len(analytes) > 20:
-                analyte_list += f" (and {len(analytes) - 20} more)"
-            parts.append(f"- Relevant lab tests: {analyte_list}")
-
-    # Extract imaging types
-    imaging = schema.get("objective", {}).get("imaging", [])
-    study_types = [img.get("study_type") for img in imaging if img.get("study_type")]
-    if study_types:
-        parts.append(f"- Relevant imaging: {', '.join(study_types)}")
-
-    # Vital signs
-    vitals = schema.get("objective", {}).get("vital_signs", {})
-    if vitals:
-        vital_keys = [k.upper() for k in vitals.keys()]
-        if vital_keys:
-            parts.append(f"- Vital signs to note: {', '.join(vital_keys)}")
-
-    # Microbiology
-    micro = labs.get("microbiology", [])
-    if micro:
-        parts.append("- Check for any microbiology/culture results")
-
-    return "\n".join(parts)
-
-
-# ============================================================================
-# Helper: Format FHIR data as readable text
-# ============================================================================
-
-def format_fhir_as_text(fhir_json: str) -> str:
-    """
-    Convert FHIR JSON data to readable clinical text for the prompt.
-    """
-    if not fhir_json or fhir_json.strip() == "":
-        return "No EHR data available."
-
-    try:
-        data = json.loads(fhir_json)
-    except:
-        return "No EHR data available."
-
-    sections = []
-
-    # Patient info
-    patient = data.get("patient", {})
-    if patient:
-        sections.append(f"Patient: {patient.get('name', 'Unknown')}, DOB: {patient.get('dob', 'Unknown')}, Gender: {patient.get('gender', 'Unknown')}")
-
-    # Vitals
-    vitals = data.get("vitals", [])
-    if vitals:
-        vital_strs = [f"{v.get('type', '')}: {v.get('value', '')}" for v in vitals[:10]]
-        sections.append("VITAL SIGNS:\n" + "\n".join(vital_strs))
-
-    # Labs
-    labs = data.get("labs", [])
-    if labs:
-        lab_strs = []
-        for lab in labs[:15]:
-            lab_str = f"{lab.get('test', '')}: {lab.get('value', '')}"
-            if lab.get('refRange'):
-                lab_str += f" (ref: {lab.get('refRange')})"
-            if lab.get('interpretation'):
-                lab_str += f" [{lab.get('interpretation')}]"
-            lab_strs.append(lab_str)
-        sections.append("LABORATORY RESULTS:\n" + "\n".join(lab_strs))
-
-    # Conditions
-    conditions = data.get("conditions", [])
-    if conditions:
-        cond_strs = [f"- {c.get('name', '')} ({c.get('status', '')})" for c in conditions]
-        sections.append("ACTIVE CONDITIONS:\n" + "\n".join(cond_strs))
-
-    # Allergies
-    allergies = data.get("allergies", [])
-    if allergies:
-        allergy_strs = [f"- {a.get('substance', '')}: {a.get('reaction', '')} ({a.get('severity', '')})" for a in allergies]
-        sections.append("ALLERGIES:\n" + "\n".join(allergy_strs))
-
-    # Medications
-    medications = data.get("medications", [])
-    if medications:
-        med_strs = [f"- {m.get('name', '')}: {m.get('dosage', '')}" for m in medications]
-        sections.append("CURRENT MEDICATIONS:\n" + "\n".join(med_strs))
-
-    # Imaging
-    imaging = data.get("imaging", [])
-    if imaging:
-        img_strs = [f"- {i.get('type', '')}: {i.get('conclusion', '')}" for i in imaging]
-        sections.append("IMAGING RESULTS:\n" + "\n".join(img_strs))
-
-    if not sections:
-        return "No EHR data available."
-
-    return "\n\n".join(sections)
-
 
 # ============================================================================
 # SOAP Summarizer Class
@@ -182,113 +58,137 @@ def format_fhir_as_text(fhir_json: str) -> str:
 
 @app.cls(
     image=summarizer_image,
-    gpu="A10G",
     timeout=3600,
-    volumes={"/vectordb": vectordb_volume},
-    secrets=[modal.Secret.from_name("huggingface-secret")],
+    # Vector database volume is optional - commented out for testing
+    # volumes={"/vectordb": vectordb_volume},
 )
 class SOAPSummarizer:
     """
-    RAG-based medical summarizer using MedGemma 4B-IT.
+    RAG-based medical summarizer using Groq API with GPT-OSS-20B.
     Models are loaded once in @modal.enter() and reused across all calls.
+    Groq API key is passed per-request from user settings.
     """
 
     @modal.enter()
     def load_models(self):
         """Load all models once when container starts."""
-        import torch
-        from transformers import pipeline
         from langchain_huggingface import HuggingFaceEmbeddings
         from langchain_chroma import Chroma
         from sentence_transformers import SentenceTransformer
+        import tiktoken
 
         print("🔄 Loading models (one-time initialization)...")
         print(f"   Model: {MODEL_NAME}")
 
-        # Load MedGemma 4B-IT pipeline
-        print("  → Loading MedGemma 4B-IT pipeline...")
-        start_load = time.time()
+        # Note: Groq client will be initialized per-request with user's API key
 
-        self.pipe = pipeline(
-            "text-generation",
-            model=MODEL_NAME,
-            torch_dtype=torch.bfloat16,
-            device_map="auto",
-        )
+        # Try to load vector database (optional for testing)
+        self.vector_store = None
+        self.all_metadatas = []
+        self.all_docs = []
+        self.metadata_diseases = []
+        self.candidate_embs = None
+        self.sbert_model = None  # Initialize to None
 
-        load_time = time.time() - start_load
-        print(f"  → MedGemma loaded in {load_time:.2f}s")
+        try:
+            print("  → Attempting to load BioBERT embeddings...")
+            self.embeddings = HuggingFaceEmbeddings(
+                model_name="pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb"
+            )
 
-        # Load BioBERT embeddings for ChromaDB
-        print("  → Loading BioBERT embeddings...")
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name="pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb"
-        )
+            print(f"  → Attempting to load Vector Store from: {CHROMA_PATH}")
+            self.vector_store = Chroma(
+                persist_directory=CHROMA_PATH,
+                embedding_function=self.embeddings
+            )
 
-        # Load vector store
-        print(f"  → Loading Vector Store from: {CHROMA_PATH}")
-        self.vector_store = Chroma(
-            persist_directory=CHROMA_PATH,
-            embedding_function=self.embeddings
-        )
+            # Pre-fetch collection data
+            print("  → Pre-fetching collection data...")
+            collection_data = self.vector_store.get(include=["metadatas", "documents"])
+            self.all_metadatas = collection_data["metadatas"]
+            self.all_docs = collection_data["documents"]
+            self.metadata_diseases = [m.get("diseases", "Unspecified") for m in self.all_metadatas]
 
-        # Pre-fetch collection data
-        print("  → Pre-fetching collection data...")
-        collection_data = self.vector_store.get(include=["metadatas", "documents"])
-        self.all_metadatas = collection_data["metadatas"]
-        self.all_docs = collection_data["documents"]
-        self.metadata_diseases = [m.get("diseases", "Unspecified") for m in self.all_metadatas]
+            # Check if database is empty
+            if not self.metadata_diseases or len(self.metadata_diseases) == 0:
+                print("⚠️  Vector database is empty - no documents found")
+                print("   Continuing WITHOUT RAG - will use direct summarization")
+                self.vector_store = None
+                self.candidate_embs = None
+                self.sbert_model = None
+            else:
+                # Load SBERT for semantic matching
+                print("  → Loading SBERT model...")
+                self.sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-        # Load SBERT for semantic matching
-        print("  → Loading SBERT model...")
-        self.sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+                # Pre-encode all disease metadata
+                print("  → Pre-encoding disease embeddings...")
+                self.candidate_embs = self.sbert_model.encode(self.metadata_diseases, convert_to_tensor=True)
 
-        # Pre-encode all disease metadata
-        print("  → Pre-encoding disease embeddings...")
-        self.candidate_embs = self.sbert_model.encode(self.metadata_diseases, convert_to_tensor=True)
+                print(f"✅ Vector database loaded successfully with {len(self.metadata_diseases)} documents!")
+
+        except Exception as e:
+            print(f"⚠️  Vector database not available: {e}")
+            print("   Continuing WITHOUT RAG - will use direct summarization")
+            self.vector_store = None
+            self.candidate_embs = None
+            self.sbert_model = None
+
+        # Initialize tokenizer for token counting
+        print("  → Initializing tokenizer...")
+        try:
+            self.encoding = tiktoken.encoding_for_model("gpt-4")
+        except:
+            self.encoding = None
 
         print("✅ All models loaded successfully!")
-
-    def _generate_text(self, messages: list, max_new_tokens: int = 2048, temperature: float = 0.3) -> str:
-        """Generate text using the pipeline."""
-        output = self.pipe(messages, max_new_tokens=max_new_tokens, temperature=temperature)
-        return output[0]["generated_text"][-1]["content"]
 
     @modal.method()
     def generate_summary(
             self,
             transcript_text: str,
-            openemr_text: str = "",
-            patient_name: str = "Patient",
+            openemr_text: str,
+            groq_api_key: str,
     ) -> Dict[str, Any]:
         """
-        Generate medical summary from transcript + FHIR data using RAG.
+        Generate SOAP-format medical summary from transcript using RAG + Groq.
+
+        Args:
+            transcript_text: Doctor-patient conversation transcript
+            openemr_text: OpenEMR FHIR data (formatted text)
+            groq_api_key: Groq API key from OpenEMR user settings
+
+        Returns:
+            dict with soap_note, detected_disease, timing metrics, token counts
         """
+        from groq import Groq
         from sentence_transformers import util
 
         print(f"\n{'='*60}")
-        print(f"🔹 Generating summary for: {patient_name}")
-        print(f"🔹 Transcript length: {len(transcript_text)} chars")
-        print(f"🔹 FHIR data length: {len(openemr_text)} chars")
+        print(f"🔹 Generating SOAP summary")
+        print(f"🔹 Model: {MODEL_NAME}")
         print(f"{'='*60}")
         start_total = time.time()
 
+        # Initialize Groq client with user's API key
+        client = Groq(api_key=groq_api_key)
+
         # ==============================
-        # 1. EXTRACT DISEASE USING MEDGEMMA
+        # 1. EXTRACT DISEASE USING GROQ
         # ==============================
         print("🔹 Extracting disease from transcript...")
         start_retrieval = time.time()
 
-        disease_messages = [
+        disease_prompt = [
             {
                 "role": "system",
-                "content": "You are a medical expert. Identify the primary medical condition from clinical conversations. Respond with ONLY the disease name, nothing else."
+                "content": "You are a medical expert. Identify the primary disease from clinical conversations. Respond with ONLY the disease name."
             },
             {
                 "role": "user",
-                "content": f"""Read this transcript and identify the PRIMARY medical condition being discussed.
+                "content": f"""Read this transcript and identify the PRIMARY medical condition.
 
-Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension", "Asthma", "Heart Failure").
+Return ONLY the disease name (e.g., "COPD", "Diabetes", "Hypertension").
 If no specific disease is mentioned, return "General".
 
 Transcript:
@@ -298,124 +198,145 @@ Primary Disease:"""
             }
         ]
 
-        detected_disease = self._generate_text(disease_messages, max_new_tokens=20).strip()
+        disease_response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=disease_prompt,
+            temperature=0.3,
+            max_tokens=20,
+        )
 
-        # Clean up
-        if not detected_disease:
-            detected_disease = "General"
-        detected_disease = detected_disease.split('\n')[0].split(',')[0].strip()
-
+        raw_disease = disease_response.choices[0].message.content
+        detected_disease = raw_disease.strip() if raw_disease else "General"
         print(f"✅ Detected Disease: {detected_disease}")
 
         # ==============================
-        # 2. RETRIEVE SCHEMAS FROM VECTOR DB
+        # 2. RETRIEVE SCHEMAS FROM VECTOR DB (Optional - skip if not available)
         # ==============================
-        print("🔹 Retrieving relevant schemas from vector DB...")
+        schema_context = ""
 
-        target_emb = self.sbert_model.encode(detected_disease, convert_to_tensor=True)
-        cosine_scores = util.cos_sim(target_emb, self.candidate_embs)[0]
+        if self.vector_store and self.candidate_embs is not None and self.sbert_model is not None:
+            print("🔹 Retrieving relevant schemas from vector DB...")
 
-        # Get top 2 schemas
-        k = min(2, len(cosine_scores))
-        top_k_result = cosine_scores.topk(k)
-        top_indices = top_k_result.indices.tolist()
+            target_emb = self.sbert_model.encode(detected_disease, convert_to_tensor=True)
+            cosine_scores = util.cos_sim(target_emb, self.candidate_embs)[0]
 
-        # Convert schemas to PROSE (not JSON!)
-        schema_guidance = ""
-        for rank, idx in enumerate(top_indices):
-            doc_content = self.all_docs[idx]
-            disease_meta = self.metadata_diseases[idx]
-            prose_guide = schema_to_prose(doc_content, disease_meta)
-            schema_guidance += f"\n{prose_guide}\n"
+            # Get top 2 schemas
+            k = min(2, len(cosine_scores))
+            top_k_result = cosine_scores.topk(k)
+            top_indices = top_k_result.indices.tolist()
+
+            for rank, idx in enumerate(top_indices):
+                doc_content = self.all_docs[idx]
+                disease_meta = self.metadata_diseases[idx]
+                schema_context += f"\n\n=== SCHEMA {rank+1} ({disease_meta}) ===\n{doc_content}"
+        else:
+            print("⚠️  Vector database not available - skipping RAG retrieval")
+            schema_context = "\n\n(No disease-specific schemas available - generating summary without RAG guidance)"
 
         retrieval_time = time.time() - start_retrieval
         print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
         # ==============================
-        # 3. FORMAT FHIR DATA AS TEXT
+        # 3. GENERATE SUMMARY WITH GROQ
         # ==============================
-        ehr_text = format_fhir_as_text(openemr_text)
-        print(f"🔹 EHR data formatted: {len(ehr_text)} chars")
-
-        # ==============================
-        # 4. GENERATE SUMMARY WITH MEDGEMMA
-        # ==============================
-        print("🔹 Generating medical summary with MedGemma 4B-IT...")
+        print("🔹 Generating SOAP summary with Groq (GPT-OSS-20B)...")
         start_gen = time.time()
 
         summary_messages = [
             {
                 "role": "system",
-                "content": "You are an expert medical scribe specialized in clinical documentation. Generate comprehensive medical summaries in narrative prose format."
+                "content": "You are an expert medical scribe specialized in clinical documentation. Generate comprehensive SOAP-format medical summaries."
             },
             {
                 "role": "user",
-                "content": f"""Generate a comprehensive medical summary from the following data:
+                "content": f"""Generate a comprehensive medical summary in SOAP format from the following data:
 
-### TRANSCRIPT (Doctor-patient conversation):
+TRANSCRIPT (Doctor-patient conversation):
 {transcript_text}
 
-### ELECTRONIC HEALTH RECORD DATA:
-{ehr_text}
+OPENEMR EXTRACT (Electronic health record):
+{openemr_text if openemr_text else "No OpenEMR data available."}
 
-### SCHEMA GUIDE (Reference for relevant sections):
-{schema_guidance}
+SCHEMA GUIDE (Reference sections to include):
+{schema_context}
 
-### OUTPUT FORMAT REQUIREMENTS
+OUTPUT FORMAT REQUIREMENTS:
 - Generate a NARRATIVE TEXT document, NOT JSON or structured data
-- Use clear section headers (Patient Information, Chief Complaint, History of Present Illness, Past Medical History, Medications, Allergies, Review of Systems, Physical Exam, Labs, Imaging, Assessment, Plan)
+- Use clear section headers (e.g., "Subjective", "Objective", "Assessment", "Plan")
 - Write in complete sentences and paragraphs
 - Use professional medical documentation prose style
+- Do NOT use markdown formatting (no #, ##, **, *, -, ```, etc.)
 
-### INSTRUCTIONS
-1. Extract relevant information from the TRANSCRIPT and EHR DATA
-2. Write in narrative prose with proper paragraphs
-3. If information for a section is missing, write "No information available."
-4. Do NOT output JSON, XML, bullet points, or any structured data format
-5. Do NOT hallucinate or invent information not present in the inputs
+INSTRUCTIONS:
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
+5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
+6. Do NOT output JSON, XML, or any structured data format
+7. Do NOT hallucinate or invent information not present in the inputs
+8. Do NOT use any markdown syntax - plain text only
 
-Generate the medical summary now:
-
-Patient Information:
-{patient_name}
-
-Chief Complaint:"""
+Generate the medical summary now in narrative prose format:"""
             }
         ]
 
-        try:
-            generated_text = self._generate_text(summary_messages, max_new_tokens=2048)
+        # Calculate input tokens
+        prompt_text = summary_messages[0]["content"] + summary_messages[1]["content"]
+        if self.encoding:
+            input_tokens = len(self.encoding.encode(prompt_text))
+        else:
+            input_tokens = int(len(prompt_text.split()) * 1.3)
 
-            # Prepend the patient info and chief complaint header
-            generated_text = f"Patient Information:\n{patient_name}\n\nChief Complaint:\n" + generated_text
+        print(f"📊 Input tokens: {input_tokens:,}")
+
+        # Generate with Groq
+        try:
+            response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=summary_messages,
+                temperature=0.3,
+                max_tokens=4098,
+            )
+            generated_text = response.choices[0].message.content.strip()
+
+            if self.encoding:
+                output_tokens = len(self.encoding.encode(generated_text))
+            else:
+                output_tokens = int(len(generated_text.split()) * 1.3)
 
         except Exception as e:
-            print(f"❌ MedGemma generation failed: {e}")
+            print(f"❌ Groq generation failed: {e}")
             generated_text = f"Error generating summary: {str(e)}"
+            output_tokens = 0
 
         generation_time = time.time() - start_gen
         total_time = time.time() - start_total
 
+        print(f"📊 Tokens: {input_tokens:,} in / {output_tokens:,} out")
         print(f"⏱️ Generation: {generation_time:.2f}s | Total: {total_time:.2f}s")
         print(f"📝 Output preview: {generated_text[:200]}...")
 
         return {
             "success": True,
             "soap_note": generated_text,
-            "summary": generated_text,
             "detected_disease": detected_disease,
-            "patient_name": patient_name,
             "retrieval_time": retrieval_time,
             "generation_time": generation_time,
             "total_time": total_time,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
             "model": MODEL_NAME,
         }
 
     @modal.web_endpoint(method="POST")
     def summarize(self, request: SummarizeRequest) -> Dict[str, Any]:
-        """HTTP endpoint for SOAP note generation."""
+        """
+        HTTP endpoint for SOAP note generation.
+        Called by the SMART app's frontend when user clicks "Summarize"
+        """
         return self.generate_summary(
-            transcript_text=request.transcript_text,
+            transcript_text=request.text,
             openemr_text=request.openemr_text,
-            patient_name=request.patient_name,
+            groq_api_key=request.groq_api_key,
         )

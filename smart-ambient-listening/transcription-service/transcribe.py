@@ -4,6 +4,8 @@ Transcription Service API
 FastAPI service that receives audio from the frontend and calls
 the Modal-hosted Parakeet ASR model for transcription.
 
+NOW SUPPORTS: Modal credentials from OpenEMR user settings!
+
 Endpoints:
 - POST /deploy-and-warmup: Deploy Modal app (first time) and warm up container
 - POST /warmup: Keep-alive ping to prevent container scale-down
@@ -24,10 +26,12 @@ import os
 import logging
 import subprocess
 from datetime import datetime
+from typing import Optional
 
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -46,8 +50,8 @@ MODAL_CLASS_NAME = "ParakeetTranscriber"
 
 app = FastAPI(
     title="Transcription Service",
-    description="API gateway for Modal-deployed Parakeet ASR with container reuse",
-    version="2.0.0"
+    description="API gateway for Modal-deployed Parakeet ASR with container reuse. Supports OpenEMR user settings for Modal credentials.",
+    version="3.0.0"
 )
 
 # CORS - allow frontend to call this service
@@ -63,28 +67,57 @@ app.add_middleware(
 is_deployed = False
 
 
-def get_modal_env():
-    """Get environment with Modal credentials."""
-    modal_token_id = os.getenv("MODAL_TOKEN_ID")
-    modal_token_secret = os.getenv("MODAL_TOKEN_SECRET")
+# ============================================================================
+# Request Models
+# ============================================================================
 
+class DeployRequest(BaseModel):
+    """Request body for deploy-and-warmup endpoint"""
+    modal_token_id: str
+    modal_token_secret: str
+
+
+class WarmupRequest(BaseModel):
+    """Request body for warmup endpoint (credentials not needed - just ping)"""
+    pass
+
+
+# ============================================================================
+# Helper Functions
+# ============================================================================
+
+def get_modal_env(modal_token_id, modal_token_secret):
+    """
+    Get environment with Modal credentials from user.
+
+    Args:
+        modal_token_id: Modal token ID (REQUIRED - from OpenEMR user settings)
+        modal_token_secret: Modal token secret (REQUIRED - from OpenEMR user settings)
+
+    No fallback to environment variables - credentials must come from OpenEMR.
+    """
     if not modal_token_id or not modal_token_secret:
         raise HTTPException(
-            status_code=500,
-            detail="Modal API credentials (MODAL_TOKEN_ID, MODAL_TOKEN_SECRET) not set in environment."
+            status_code=400,
+            detail="Modal API credentials are required. Please configure your Modal API keys in OpenEMR user settings."
         )
 
     modal_env = os.environ.copy()
     modal_env["MODAL_TOKEN_ID"] = modal_token_id
     modal_env["MODAL_TOKEN_SECRET"] = modal_token_secret
+
+    logger.info(f"Using Modal credentials from OpenEMR user settings: token_id={modal_token_id[:10]}...")
     return modal_env
 
 
-def deploy_modal_app():
-    """Deploy the Modal app using subprocess."""
+def deploy_modal_app(modal_token_id, modal_token_secret):
+    """
+    Deploy the Modal app using subprocess with user's credentials.
+    Credentials are required - must come from OpenEMR user settings.
+    """
     logger.info("🚀 Deploying Modal app...")
 
-    modal_env = get_modal_env()
+    modal_env = get_modal_env(modal_token_id, modal_token_secret)
     script_path = os.path.join(os.path.dirname(__file__), "modal_asr.py")
     command = ["modal", "deploy", script_path]
 
@@ -127,24 +160,37 @@ def get_transcriber():
         )
 
 
+# ============================================================================
+# API Endpoints
+# ============================================================================
+
 @app.post("/deploy-and-warmup")
-async def deploy_and_warmup():
+async def deploy_and_warmup(request: DeployRequest):
     """
-    Deploy Modal app (if needed) and warm up the container.
+    Deploy Modal app and warm up the container.
     Call this when user starts recording so model is ready when they stop.
+
+    Request body (REQUIRED):
+        modal_token_id: Modal API token ID (from OpenEMR user settings)
+        modal_token_secret: Modal API token secret (from OpenEMR user settings)
     """
     global is_deployed
 
     logger.info("📥 Deploy and warmup request received")
 
+    if not request.modal_token_id or not request.modal_token_secret:
+        raise HTTPException(
+            status_code=400,
+            detail="Modal credentials are required. Please configure your Modal API keys in OpenEMR user settings."
+        )
+
     try:
-        # Always deploy first (Modal handles "already deployed" gracefully)
-        # This ensures the app exists before we try to look it up
-        logger.info("🚀 Deploying Modal app...")
-        deploy_modal_app()
+        # Deploy with user's credentials
+        logger.info("🚀 Deploying Modal app with user credentials...")
+        deploy_modal_app(request.modal_token_id, request.modal_token_secret)
         is_deployed = True
 
-        # Now warm up the container (this loads the model via @modal.enter)
+        # Warm up the container
         logger.info("🔥 Warming up container...")
         transcriber = get_transcriber()
         result = transcriber.wakeup.remote()
@@ -172,6 +218,8 @@ async def warmup_only():
     """
     Send a keep-alive ping to the container.
     Called periodically during recording to prevent scale-down.
+
+    No credentials needed - just pings existing container.
     """
     global is_deployed
 
@@ -197,11 +245,19 @@ async def warmup_only():
 @app.post("/transcribe")
 async def transcribe_audio(
         audio: UploadFile = File(...),
-        patient_id: str = Form(None)
+        patient_id: str = Form(None),
+        modal_token_id: str = Form(...),
+        modal_token_secret: str = Form(...)
 ):
     """
     Transcribe audio using the deployed Modal container.
     Container should already be warm from /deploy-and-warmup call.
+
+    Form fields:
+        audio: Audio file (REQUIRED)
+        patient_id: Patient identifier (optional)
+        modal_token_id: Modal API token ID (REQUIRED - from OpenEMR)
+        modal_token_secret: Modal API token secret (REQUIRED - from OpenEMR)
     """
     global is_deployed
 
@@ -220,7 +276,7 @@ async def transcribe_audio(
         except HTTPException:
             # App might not be deployed, try to deploy first
             logger.warning("App not available, attempting to deploy...")
-            deploy_modal_app()
+            deploy_modal_app(modal_token_id, modal_token_secret)
             is_deployed = True
             transcriber = get_transcriber()
 
@@ -257,6 +313,7 @@ async def health_check():
         "service": "transcription-gateway-deployed",
         "modal_deployed": is_deployed,
         "timestamp": datetime.utcnow().isoformat(),
+        "supports_openemr_credentials": True,
     }
 
 
@@ -265,13 +322,14 @@ async def root():
     """Root endpoint with service info."""
     return {
         "service": "Transcription Service",
-        "description": "API gateway for Modal-deployed Parakeet ASR with container reuse",
-        "version": "2.0.0",
+        "description": "API gateway for Modal-deployed Parakeet ASR with container reuse. Supports OpenEMR user settings for Modal credentials.",
+        "version": "3.0.0",
         "modal_deployed": is_deployed,
+        "supports_openemr_credentials": True,
         "endpoints": {
-            "/deploy-and-warmup": "POST - Deploy Modal app (first time) and warm up container",
-            "/warmup": "POST - Keep-alive ping during recording",
-            "/transcribe": "POST - Transcribe audio (requires deploy first)",
+            "/deploy-and-warmup": "POST - Deploy Modal app and warm up (accepts modal_token_id/modal_token_secret in body)",
+            "/warmup": "POST - Keep-alive ping during recording (accepts modal_token_id/modal_token_secret in body)",
+            "/transcribe": "POST - Transcribe audio (accepts modal_token_id/modal_token_secret in form data)",
             "/health": "GET - Health check",
         }
     }
@@ -280,4 +338,5 @@ async def root():
 if __name__ == "__main__":
     import uvicorn
     logger.info(f"Starting transcription service on {HOST}:{PORT}")
+    logger.info("Supports Modal credentials from OpenEMR user settings!")
     uvicorn.run(app, host=HOST, port=PORT)

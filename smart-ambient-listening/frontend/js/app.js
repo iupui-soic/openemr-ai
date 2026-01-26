@@ -51,11 +51,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function deployAndWarmup() {
         console.log('Deploying Modal app and warming up container...');
         try {
+            // Get Modal credentials from user settings
+            const modalTokenId = getUserSetting('2');  // Field ID 2: Modal token ID
+            const modalTokenSecret = getUserSetting('3');  // Field ID 3: Modal token secret
+
+            if (!modalTokenId || !modalTokenSecret) {
+                throw new Error('Modal credentials not found in user settings. Please configure your Modal API keys in OpenEMR.');
+            }
+
+            const requestBody = {
+                modal_token_id: modalTokenId,
+                modal_token_secret: modalTokenSecret
+            };
+
+            console.log('Using Modal credentials from OpenEMR user settings');
+
             const response = await fetch(`${config.transcriptionServiceUrl}/deploy-and-warmup`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: '{}'
+                body: JSON.stringify(requestBody)  // ✅ FIXED: Send the actual credentials!
             });
+
             if (!response.ok) {
                 const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
                 throw new Error(error.detail || `Server error: ${response.status}`);
@@ -66,9 +82,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             return true;
         } catch (error) {
             console.error('Failed to deploy/warmup:', error);
+            showError(error.message);  // Show error to user
             return false;
         }
     }
+
+
 
     // DOM Elements
     const elements = {
@@ -168,6 +187,26 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.warn('Could not load custom user settings:', error.message);
             console.log('The api:oemr scope may need to be granted, or no USR layout fields are configured.');
         }
+    }
+
+    /**
+     * Apply user settings to the application
+     * Placeholder for future customization features
+     */
+    function applyUserSettings() {
+        if (!userSettings) {
+            console.log('No user settings to apply');
+            return;
+        }
+
+        // TODO: Apply user preferences here
+        // Example uses:
+        // - Set theme/UI preferences
+        // - Configure default recording settings
+        // - Set preferred language
+        // - Configure Modal API keys (if stored in OpenEMR)
+
+        console.log('User settings loaded and ready to apply:', userSettings);
     }
 
     /**
@@ -308,6 +347,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Handle recording start
+     * Only deploys transcription service now (summarization doesn't need deployment)
      */
     function handleRecordingStart() {
         console.log('handleRecordingStart called');
@@ -316,32 +356,40 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.btnAmbient.querySelector('.btn-text').textContent = 'Stop Listening';
         elements.recordingStatus.classList.remove('hidden');
         elements.transcriptionResults.innerHTML = `
-            <p class="placeholder-text">
-                🚀 Setting up transcription service (first time may take 1-2 minutes)...
-            </p>
-        `;
+        <p class="placeholder-text">
+            🚀 Setting up transcription service (first time may take 1-2 minutes)...
+        </p>
+    `;
 
-        // Start deployment - store promise so handleRecordingStop can wait for it
+        // Deploy ONLY transcription service
         deployPromise = deployAndWarmup();
 
-        deployPromise.then(success => {
-            if (success) {
+        deployPromise.then((transSuccess) => {
+            if (transSuccess) {
                 elements.transcriptionResults.innerHTML = `
-                    <p class="placeholder-text">
-                        ✅ Transcription service ready. Recording...
-                    </p>
-                `;
-
-                // Start sending warmup pings every 60 seconds to keep container alive
-                warmupInterval = setInterval(sendWarmupPing, 60000);
-                console.log('Warmup interval started');
+                <p class="placeholder-text">
+                    ✅ Transcription ready. Recording...
+                </p>
+            `;
             } else {
                 elements.transcriptionResults.innerHTML = `
-                    <p class="placeholder-text">
-                        ⚠️ Service setup in progress... Recording will be transcribed when ready.
-                    </p>
-                `;
+                <p class="placeholder-text">
+                    ⚠️ Transcription setup incomplete. Please try again.
+                </p>
+            `;
             }
+
+            // Start sending warmup pings every 60 seconds
+            warmupInterval = setInterval(sendWarmupPing, 60000);
+            console.log('Warmup interval started');
+        }).catch(error => {
+            console.error('Deployment error:', error);
+            elements.transcriptionResults.innerHTML = `
+            <p class="placeholder-text">
+                ⚠️ Service setup in progress... Recording will be transcribed when ready.
+            </p>
+        `;
+            warmupInterval = setInterval(sendWarmupPing, 60000);
         });
     }
 
@@ -428,6 +476,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             formData.append('patient_id', patient.id);
         }
 
+        // ADD THESE LINES HERE ️
+        const modalTokenId = getUserSetting('2');
+        const modalTokenSecret = getUserSetting('3');
+        if (modalTokenId && modalTokenSecret) {
+            formData.append('modal_token_id', modalTokenId);
+            formData.append('modal_token_secret', modalTokenSecret);
+        }
+        // END OF NEW LINES
+
         const response = await fetch(`${config.transcriptionServiceUrl}/transcribe`, {
             method: 'POST',
             body: formData
@@ -500,27 +557,55 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Generate SOAP note from transcription
+     * No deployment needed - summarization service is always ready
      */
     async function generateSOAPNote() {
-        const text = transcriptionHistory.map(h => h.text).join('\n\n');
-        if (!text.trim()) {
+        const transcript = transcriptionHistory.map(h => h.text).join('\n\n');
+
+        if (!transcript.trim()) {
             showError('No transcription available to summarize');
             return;
         }
+
+        const fhirData = window.patientFhirDataSummary || '';
+        const groqApiKey = getUserSetting('1');  // Only need Groq key now!
+
+        if (!groqApiKey) {
+            showError('Missing Groq API key in user settings');
+            return;
+        }
+
         elements.soapSection.classList.remove('hidden');
         elements.soapLoading.classList.remove('hidden');
         elements.soapResults.innerHTML = '';
+
         try {
-            const response = await fetch('/summarize', {
+            console.log('🔄 Generating SOAP note...');
+
+            const response = await fetch(`${config.transcriptionServiceUrl}/summarize`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ text: text })
+                body: JSON.stringify({
+                    transcript_text: transcript,
+                    openemr_text: fhirData,
+                    groq_api_key: groqApiKey  // Only send Groq key
+                })
             });
+
             if (!response.ok) {
-                throw new Error(`Server error: ${response.status}`);
+                const error = await response.json().catch(() => ({ error: 'Unknown error' }));
+                throw new Error(error.error || `Server error: ${response.status}`);
             }
+
             const result = await response.json();
+
+            if (!result.success) {
+                throw new Error(result.error || 'Summarization failed');
+            }
+
+            console.log('✅ SOAP note generated successfully');
             displaySOAPNote(result);
+
         } catch (error) {
             console.error('SOAP generation error:', error);
             showError('Failed to generate SOAP note: ' + error.message);
@@ -531,59 +616,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     /**
-     * Display SOAP note
+     * Display SOAP note (simplified - no parsing)
      */
     function displaySOAPNote(result) {
-        const sections = parseSOAPSections(result.soap_note || result.summary || '');
         elements.soapResults.innerHTML = `
-            <div class="soap-note">
-                <div class="soap-section">
-                    <h4>Subjective</h4>
-                    <p>${escapeHtml(sections.subjective)}</p>
-                </div>
-                <div class="soap-section">
-                    <h4>Objective</h4>
-                    <p>${escapeHtml(sections.objective)}</p>
-                </div>
-                <div class="soap-section">
-                    <h4>Assessment</h4>
-                    <p>${escapeHtml(sections.assessment)}</p>
-                </div>
-                <div class="soap-section">
-                    <h4>Plan</h4>
-                    <p>${escapeHtml(sections.plan)}</p>
-                </div>
-                <button class="btn btn-secondary" onclick="copySOAPNote()">Copy SOAP Note</button>
-            </div>
-        `;
-    }
-
-    /**
-     * Parse SOAP sections from text
-     */
-    function parseSOAPSections(text) {
-        const sections = {
-            subjective: '',
-            objective: '',
-            assessment: '',
-            plan: ''
-        };
-        const patterns = {
-            subjective: /(?:subjective|S)[:.]?\s*([\s\S]*?)(?=(?:objective|O)[:.]|$)/i,
-            objective: /(?:objective|O)[:.]?\s*([\s\S]*?)(?=(?:assessment|A)[:.]|$)/i,
-            assessment: /(?:assessment|A)[:.]?\s*([\s\S]*?)(?=(?:plan|P)[:.]|$)/i,
-            plan: /(?:plan|P)[:.]?\s*([\s\S]*?)$/i
-        };
-        for (const [key, pattern] of Object.entries(patterns)) {
-            const match = text.match(pattern);
-            if (match && match[1]) {
-                sections[key] = match[1].trim();
-            }
-        }
-        if (!sections.subjective && !sections.objective) {
-            sections.subjective = text;
-        }
-        return sections;
+        <div class="soap-note">
+            <pre style="white-space: pre-wrap; font-family: inherit;">${escapeHtml(result.soap_note || 'No summary available')}</pre>
+            <button class="btn btn-secondary" onclick="copySOAPNote()">Copy SOAP Note</button>
+        </div>
+    `;
     }
 
     /**

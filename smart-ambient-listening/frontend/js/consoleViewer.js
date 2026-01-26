@@ -1,6 +1,7 @@
 /**
  * SMART FHIR Console Viewer
  * Fetch and display Conditions, Procedures, Observations, Medications, Allergies, and Encounters
+ * Includes patient demographics (age, sex)
  */
 console.log("=== CONSOLEVIEWER.JS FILE LOADED ===");
 
@@ -21,6 +22,13 @@ function logToUI(...args) {
 
 async function initConsoleViewer() {
     logToUI('Console viewer initializing...');
+
+    // Create string variable to hold all FHIR data
+    let fhirDataSummary = '';
+
+    fhirDataSummary += '========================================\n';
+    fhirDataSummary += 'OPENEMR DATA OF THE PATIENT\n';
+    fhirDataSummary += '========================================\n\n';
 
     try {
         // Wait for app.js to populate the patient banner (confirms SMART context is ready)
@@ -48,9 +56,39 @@ async function initConsoleViewer() {
         // Get SMART client
         const smartClient = await FHIR.oauth2.ready();
 
-        // Get patient ID
-        const patientId = smartClient.patient.id;
-        logToUI('Patient ID:', patientId);
+        // Get patient resource
+        const patient = await smartClient.patient.read();
+        const patientId = patient.id;
+
+        // ==================== EXTRACT PATIENT DEMOGRAPHICS ====================
+        logToUI('');
+        logToUI('========================================');
+        logToUI('PATIENT DEMOGRAPHICS');
+        logToUI('========================================');
+        fhirDataSummary += '========================================\n';
+        fhirDataSummary += 'PATIENT DEMOGRAPHICS\n';
+        fhirDataSummary += '========================================\n';
+
+        // Extract age from birthDate
+        let age = 'Unknown';
+        if (patient.birthDate) {
+            const birthDate = new Date(patient.birthDate);
+            const today = new Date();
+            let calculatedAge = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                calculatedAge--;
+            }
+            age = calculatedAge;
+        }
+
+        // Extract sex/gender
+        const sex = patient.gender || 'Unknown';
+
+        logToUI(`Age: ${age} years`);
+        logToUI(`Sex: ${sex}`);
+        fhirDataSummary += `Age: ${age} years\n`;
+        fhirDataSummary += `Sex: ${sex}\n`;
 
         // ==================== FETCH CONDITIONS ====================
         let conditionData = null;
@@ -204,34 +242,21 @@ async function initConsoleViewer() {
 
         const { activeAllergies, inactiveAllergies } = parseAllergies(allergies);
 
-        // ==================== DISPLAY FORMATTED OUTPUT ====================
-        logToUI('');
-        logToUI('========================================');
-        logToUI('CURRENT ENCOUNTER');
-        logToUI('========================================');
-        if (currentEncounter) {
-            logToUI('Encounter ID:', currentEncounter.id);
-            logToUI('Date:', currentEncounter.period?.start || currentEncounter.meta?.lastUpdated || 'Unknown');
-            logToUI('Type:', currentEncounter.type?.[0]?.coding?.[0]?.display ||
-                currentEncounter.type?.[0]?.text ||
-                currentEncounter.class?.display ||
-                currentEncounter.class?.code ||
-                'Unknown');
-            logToUI('Status:', currentEncounter.status || 'Unknown');
-        } else {
-            logToUI('No current encounter found');
-        }
-
         // ==================== VITALS FOR CURRENT ENCOUNTER ====================
         logToUI('');
         logToUI('========================================');
         logToUI('VITAL SIGNS (Current Encounter)');
         logToUI('========================================');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'VITAL SIGNS (Current Encounter)\n';
+        fhirDataSummary += '========================================\n';
+
         if (vitals.length > 0) {
             const groupedVitals = groupObservationsByPanel(vitals);
-            displayGroupedObservations(groupedVitals);
+            fhirDataSummary = displayGroupedObservations(groupedVitals, fhirDataSummary);
         } else {
             logToUI('No vital signs recorded for current encounter');
+            fhirDataSummary += 'No vital signs recorded for current encounter\n';
         }
 
         // ==================== OTHER OBSERVATIONS FOR CURRENT ENCOUNTER ====================
@@ -239,6 +264,9 @@ async function initConsoleViewer() {
         logToUI('========================================');
         logToUI('OTHER OBSERVATIONS (Current Encounter)');
         logToUI('========================================');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'OTHER OBSERVATIONS (Current Encounter)\n';
+        fhirDataSummary += '========================================\n';
 
         // Combine all non-vital observations for current encounter
         const allOtherCurrentEncounter = [
@@ -251,9 +279,10 @@ async function initConsoleViewer() {
 
         if (allOtherCurrentEncounter.length > 0) {
             const groupedOther = groupObservationsByPanel(allOtherCurrentEncounter);
-            displayGroupedObservations(groupedOther);
+            fhirDataSummary = displayGroupedObservations(groupedOther, fhirDataSummary);
         } else {
             logToUI('No other observations recorded for current encounter');
+            fhirDataSummary += 'No other observations recorded for current encounter\n';
         }
 
         // ==================== PAST MEDICAL HISTORY ====================
@@ -263,21 +292,33 @@ async function initConsoleViewer() {
         logToUI('========================================');
         logToUI('');
         logToUI('Active Conditions:');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'PAST MEDICAL HISTORY\n';
+        fhirDataSummary += '========================================\n\n';
+        fhirDataSummary += 'Active Conditions:\n';
+
         if (activeConditions.length > 0) {
             for (const condition of activeConditions) {
                 logToUI('  - ' + condition);
+                fhirDataSummary += `  - ${condition}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
+
         logToUI('');
         logToUI('Inactive Conditions:');
+        fhirDataSummary += '\nInactive Conditions:\n';
+
         if (inactiveConditions.length > 0) {
             for (const condition of inactiveConditions) {
                 logToUI('  - ' + condition);
+                fhirDataSummary += `  - ${condition}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
 
         // ==================== MEDICATIONS ====================
@@ -287,21 +328,33 @@ async function initConsoleViewer() {
         logToUI('========================================');
         logToUI('');
         logToUI('Active Medications:');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'MEDICATIONS\n';
+        fhirDataSummary += '========================================\n\n';
+        fhirDataSummary += 'Active Medications:\n';
+
         if (activeMeds.length > 0) {
             for (const med of activeMeds) {
                 logToUI('  - ' + med);
+                fhirDataSummary += `  - ${med}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
+
         logToUI('');
         logToUI('Inactive Medications:');
+        fhirDataSummary += '\nInactive Medications:\n';
+
         if (inactiveMeds.length > 0) {
             for (const med of inactiveMeds) {
                 logToUI('  - ' + med);
+                fhirDataSummary += `  - ${med}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
 
         // ==================== ALLERGIES ====================
@@ -311,21 +364,33 @@ async function initConsoleViewer() {
         logToUI('========================================');
         logToUI('');
         logToUI('Active Allergies:');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'ALLERGIES\n';
+        fhirDataSummary += '========================================\n\n';
+        fhirDataSummary += 'Active Allergies:\n';
+
         if (activeAllergies.length > 0) {
             for (const allergy of activeAllergies) {
                 logToUI('  - ' + allergy);
+                fhirDataSummary += `  - ${allergy}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
+
         logToUI('');
         logToUI('Inactive Allergies:');
+        fhirDataSummary += '\nInactive Allergies:\n';
+
         if (inactiveAllergies.length > 0) {
             for (const allergy of inactiveAllergies) {
                 logToUI('  - ' + allergy);
+                fhirDataSummary += `  - ${allergy}\n`;
             }
         } else {
             logToUI('  None');
+            fhirDataSummary += '  None\n';
         }
 
         // ==================== PAST OBSERVATIONS (Historical - Excluding Vitals) ====================
@@ -333,6 +398,9 @@ async function initConsoleViewer() {
         logToUI('========================================');
         logToUI('PAST OBSERVATIONS');
         logToUI('========================================');
+        fhirDataSummary += '\n========================================\n';
+        fhirDataSummary += 'PAST OBSERVATIONS\n';
+        fhirDataSummary += '========================================\n';
 
         // Filter out vital-signs from historical observations
         const nonVitalObservations = allObservations.filter(obs => {
@@ -342,10 +410,16 @@ async function initConsoleViewer() {
 
         if (nonVitalObservations.length > 0) {
             const groupedAll = groupObservationsByPanel(nonVitalObservations);
-            displayGroupedObservations(groupedAll);
+            fhirDataSummary = displayGroupedObservations(groupedAll, fhirDataSummary);
         } else {
             logToUI('No observations found for this patient');
+            fhirDataSummary += 'No observations found for this patient\n';
         }
+
+        // Export globally for app.js
+        window.patientFhirDataSummary = fhirDataSummary;
+        console.log('[consoleViewer] ✅ FHIR data exported globally');
+        console.log('[consoleViewer] FHIR data length:', fhirDataSummary.length, 'characters');
 
     } catch (err) {
         logToUI('An error occurred:', err.stack || err.message);
@@ -487,25 +561,34 @@ function extractTestValue(obs) {
 
 /**
  * Display grouped observations in a clean format
+ * Modified to also build fhirDataSummary string
  */
-function displayGroupedObservations(groups) {
+function displayGroupedObservations(groups, summaryString = '') {
     const sortedKeys = Object.keys(groups).sort();
 
     for (const key of sortedKeys) {
         const group = groups[key];
+        const groupHeader = group.name + (group.date ? ` (${formatDate(group.date)})` : '') + ':';
+
         logToUI('');
-        logToUI(group.name + (group.date ? ` (${formatDate(group.date)})` : '') + ':');
+        logToUI(groupHeader);
+        summaryString += '\n' + groupHeader + '\n';
 
         for (const test of group.tests) {
+            let testLine = '';
             if (group.tests.length === 1 && test.name === group.name) {
                 // Single test with same name as group - just show value
-                logToUI('  ' + test.value);
+                testLine = '  ' + test.value;
             } else {
                 // Multiple tests or different name - show name: value
-                logToUI('  ' + test.name + ': ' + test.value);
+                testLine = '  ' + test.name + ': ' + test.value;
             }
+            logToUI(testLine);
+            summaryString += testLine + '\n';
         }
     }
+
+    return summaryString;
 }
 
 /**
