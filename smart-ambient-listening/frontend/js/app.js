@@ -6,7 +6,6 @@
  * 2. User speaks...
  * 3. User clicks "Stop Recording" → Transcribe (fast, container already warm)
  */
-
 document.addEventListener('DOMContentLoaded', async () => {
     // State
     let smartClient = null;
@@ -18,11 +17,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     let warmupInterval = null;
     let deployPromise = null;
     let userSettings = null;
+    let currentSoapNote = null;       // Store the raw SOAP note text for saving
+    let currentSoapResult = null;     // Store the full result object
 
-    // Configuration
+    // Configuration - CRITICAL: Must point to transcription service
     const config = window.SMART_CONFIG || {
-        transcriptionServiceUrl: 'http://localhost:8001'
+        // If running on same server with Nginx reverse proxy:
+        transcriptionServiceUrl: window.location.origin + '/api/transcribe',
+        summarizationServiceUrl: window.location.origin + '/api/summarize'
     };
+
+    console.log('🔧 Service URLs:', config);
+
+    /**
+     * Get the SMART access token for backend authentication
+     * @returns {Promise<string>} The access token
+     */
+    async function getAccessToken() {
+        if (!smartClient) {
+            throw new Error('SMART client not initialized');
+        }
+
+        const state = smartClient.state;
+        if (state && state.tokenResponse && state.tokenResponse.access_token) {
+            return state.tokenResponse.access_token;
+        }
+
+        throw new Error('No access token available');
+    }
 
     /**
      * Send a warmup ping to keep the container alive.
@@ -30,11 +52,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function sendWarmupPing() {
         console.log('Sending warmup ping to keep container alive...');
         try {
+            const token = await getAccessToken();
+
             const response = await fetch(`${config.transcriptionServiceUrl}/warmup`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
                 body: '{}'
             });
+
             if (!response.ok) {
                 console.warn('Warmup ping failed, container may scale down');
             } else {
@@ -46,48 +74,85 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     /**
+     * Parse error from response properly
+     */
+    async function parseError(response) {
+        let errorMessage = `Server error: ${response.status} ${response.statusText}`;
+
+        try {
+            const contentType = response.headers.get('content-type');
+
+            if (contentType && contentType.includes('application/json')) {
+                const errorData = await response.json();
+
+                // Handle FastAPI error format
+                if (errorData.detail) {
+                    if (typeof errorData.detail === 'string') {
+                        errorMessage = errorData.detail;
+                    } else if (Array.isArray(errorData.detail)) {
+                        errorMessage = errorData.detail
+                            .map(e => `${e.loc ? e.loc.join('.') + ': ' : ''}${e.msg || JSON.stringify(e)}`)
+                            .join('; ');
+                    } else if (typeof errorData.detail === 'object') {
+                        errorMessage = JSON.stringify(errorData.detail);
+                    }
+                } else if (errorData.message) {
+                    errorMessage = errorData.message;
+                } else {
+                    errorMessage = JSON.stringify(errorData);
+                }
+            } else {
+                const errorText = await response.text();
+                if (errorText && errorText.trim()) {
+                    errorMessage = errorText;
+                }
+            }
+        } catch (e) {
+            console.error('Error parsing error response:', e);
+        }
+
+        return errorMessage;
+    }
+
+    /**
      * Deploy Modal app and warm up the container.
+     * BYOK version - credentials retrieved server-side from OpenEMR
      */
     async function deployAndWarmup() {
-        console.log('Deploying Modal app and warming up container...');
+        console.log('🚀 Deploying Modal app and warming up container...');
+        console.log('   URL:', `${config.transcriptionServiceUrl}/deploy-and-warmup`);
+
         try {
-            // Get Modal credentials from user settings
-            const modalTokenId = getUserSetting('2');  // Field ID 2: Modal token ID
-            const modalTokenSecret = getUserSetting('3');  // Field ID 3: Modal token secret
-
-            if (!modalTokenId || !modalTokenSecret) {
-                throw new Error('Modal credentials not found in user settings. Please configure your Modal API keys in OpenEMR.');
-            }
-
-            const requestBody = {
-                modal_token_id: modalTokenId,
-                modal_token_secret: modalTokenSecret
-            };
-
-            console.log('Using Modal credentials from OpenEMR user settings');
+            const token = await getAccessToken();
+            console.log('   Token acquired:', token ? '✅' : '❌');
 
             const response = await fetch(`${config.transcriptionServiceUrl}/deploy-and-warmup`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(requestBody)  // ✅ FIXED: Send the actual credentials!
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: '{}'
             });
 
+            console.log('   Response status:', response.status);
+
             if (!response.ok) {
-                const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
-                throw new Error(error.detail || `Server error: ${response.status}`);
+                const errorMessage = await parseError(response);
+                console.error('   Deploy failed:', errorMessage);
+                throw new Error(errorMessage);
             }
+
             const result = await response.json();
-            console.log('Modal app deployed and warmed up:', result);
+            console.log('✅ Modal app deployed and warmed up:', result);
             modalDeployed = true;
             return true;
         } catch (error) {
-            console.error('Failed to deploy/warmup:', error);
-            showError(error.message);  // Show error to user
+            console.error('❌ Failed to deploy/warmup:', error);
+            showError(error.message || 'Failed to deploy transcription service. Check console for details.');
             return false;
         }
     }
-
-
 
     // DOM Elements
     const elements = {
@@ -115,7 +180,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         btnCloseError: document.getElementById('btn-close-error'),
         permissionModal: document.getElementById('permission-modal'),
         btnRequestPermission: document.getElementById('btn-request-permission'),
-        visualizer: document.getElementById('visualizer')
+        visualizer: document.getElementById('visualizer'),
+        // Encounter selection modal elements
+        encounterModal: document.getElementById('encounter-modal'),
+        encounterList: document.getElementById('encounter-list'),
+        encounterLoading: document.getElementById('encounter-loading'),
+        btnCloseEncounter: document.getElementById('btn-close-encounter')
     };
 
     /**
@@ -160,7 +230,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Load custom user settings from OpenEMR
-     * These settings can be used for app preferences
      */
     async function loadCustomUserSettings() {
         if (!openemrApi) {
@@ -180,10 +249,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             console.log('Loaded custom user settings:', userSettings);
 
-            // Apply settings if available
+            const hasGroq = userSettings['1'] || userSettings['GROQ API Token'];
+            const hasModal = userSettings['2'] || userSettings['MODAL API Token'];
+            const hasModalSecret = userSettings['3'] || userSettings['MODAL API secret'];
+
+            if (!hasGroq || !hasModal || !hasModalSecret) {
+                console.warn('⚠️ API keys not fully configured!');
+                console.warn('   Groq:', hasGroq ? '✅' : '❌');
+                console.warn('   Modal Token:', hasModal ? '✅' : '❌');
+                console.warn('   Modal Secret:', hasModalSecret ? '✅' : '❌');
+            }
+
             applyUserSettings();
         } catch (error) {
-            // This is non-fatal - app can work without custom settings
             console.warn('Could not load custom user settings:', error.message);
             console.log('The api:oemr scope may need to be granted, or no USR layout fields are configured.');
         }
@@ -191,28 +269,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Apply user settings to the application
-     * Placeholder for future customization features
      */
     function applyUserSettings() {
         if (!userSettings) {
             console.log('No user settings to apply');
             return;
         }
-
-        // TODO: Apply user preferences here
-        // Example uses:
-        // - Set theme/UI preferences
-        // - Configure default recording settings
-        // - Set preferred language
-        // - Configure Modal API keys (if stored in OpenEMR)
-
         console.log('User settings loaded and ready to apply:', userSettings);
     }
 
     /**
      * Save a custom user setting
-     * @param {string} fieldId - The field identifier
-     * @param {string} value - The value to save
      */
     async function saveUserSetting(fieldId, value) {
         if (!openemrApi) {
@@ -233,8 +300,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Get a custom user setting value
-     * @param {string} fieldId - The field identifier
-     * @param {*} defaultValue - Default value if not set
      */
     function getUserSetting(fieldId, defaultValue = null) {
         return userSettings?.[fieldId] ?? defaultValue;
@@ -319,6 +384,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 showError('Microphone permission denied.');
             }
         });
+
+        // Encounter modal close button
+        if (elements.btnCloseEncounter) {
+            elements.btnCloseEncounter.addEventListener('click', () => {
+                elements.encounterModal.classList.add('hidden');
+            });
+        }
     }
 
     /**
@@ -347,7 +419,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Handle recording start
-     * Only deploys transcription service now (summarization doesn't need deployment)
      */
     function handleRecordingStart() {
         console.log('handleRecordingStart called');
@@ -356,39 +427,37 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.btnAmbient.querySelector('.btn-text').textContent = 'Stop Listening';
         elements.recordingStatus.classList.remove('hidden');
         elements.transcriptionResults.innerHTML = `
-        <p class="placeholder-text">
-            🚀 Setting up transcription service (first time may take 1-2 minutes)...
-        </p>
-    `;
+            <p class="placeholder-text">
+                🚀 Setting up transcription service (first time may take 1-2 minutes)...
+            </p>
+        `;
 
-        // Deploy ONLY transcription service
         deployPromise = deployAndWarmup();
 
         deployPromise.then((transSuccess) => {
             if (transSuccess) {
                 elements.transcriptionResults.innerHTML = `
-                <p class="placeholder-text">
-                    ✅ Transcription ready. Recording...
-                </p>
-            `;
+                    <p class="placeholder-text">
+                        ✅ Transcription ready. Recording...
+                    </p>
+                `;
             } else {
                 elements.transcriptionResults.innerHTML = `
-                <p class="placeholder-text">
-                    ⚠️ Transcription setup incomplete. Please try again.
-                </p>
-            `;
+                    <p class="placeholder-text">
+                        ⚠️ Transcription setup incomplete. Please try again.
+                    </p>
+                `;
             }
 
-            // Start sending warmup pings every 60 seconds
             warmupInterval = setInterval(sendWarmupPing, 60000);
             console.log('Warmup interval started');
         }).catch(error => {
             console.error('Deployment error:', error);
             elements.transcriptionResults.innerHTML = `
-            <p class="placeholder-text">
-                ⚠️ Service setup in progress... Recording will be transcribed when ready.
-            </p>
-        `;
+                <p class="placeholder-text">
+                    ⚠️ Service setup in progress... Recording will be transcribed when ready.
+                </p>
+            `;
             warmupInterval = setInterval(sendWarmupPing, 60000);
         });
     }
@@ -399,14 +468,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function handleRecordingStop(blob) {
         console.log('handleRecordingStop called');
 
-        // Stop warmup pings IMMEDIATELY
         if (warmupInterval) {
             console.log('Clearing warmup interval...');
             clearInterval(warmupInterval);
             warmupInterval = null;
             console.log('Warmup interval cleared');
-        } else {
-            console.log('No warmup interval to clear');
         }
 
         elements.btnAmbient.classList.remove('recording');
@@ -415,7 +481,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.transcriptionLoading.classList.remove('hidden');
 
         try {
-            // Wait for deployment to complete if it's still in progress
             if (deployPromise) {
                 elements.transcriptionResults.innerHTML = `
                     <p class="placeholder-text">
@@ -452,7 +517,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     function handleRecordingError(error) {
         console.log('handleRecordingError called');
 
-        // Stop warmup pings on error too
         if (warmupInterval) {
             console.log('Clearing warmup interval due to error...');
             clearInterval(warmupInterval);
@@ -469,33 +533,41 @@ document.addEventListener('DOMContentLoaded', async () => {
      * Send audio to transcription service
      */
     async function transcribeAudio(blob) {
-        const formData = new FormData();
-        formData.append('audio', blob, 'recording.webm');
+        console.log('🎤 Transcribing audio...');
 
-        if (patient) {
-            formData.append('patient_id', patient.id);
+        try {
+            const token = await getAccessToken();
+
+            const formData = new FormData();
+            formData.append('audio', blob, 'recording.webm');
+
+            if (patient) {
+                formData.append('patient_id', patient.id);
+            }
+
+            console.log('   URL:', `${config.transcriptionServiceUrl}/transcribe`);
+            console.log('   Token:', token ? '✅' : '❌');
+
+            const response = await fetch(`${config.transcriptionServiceUrl}/transcribe`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                body: formData
+            });
+
+            console.log('   Response status:', response.status);
+
+            if (!response.ok) {
+                const errorMessage = await parseError(response);
+                throw new Error(errorMessage);
+            }
+
+            return response.json();
+        } catch (error) {
+            console.error('❌ Transcription failed:', error);
+            throw error;
         }
-
-        // ADD THESE LINES HERE ️
-        const modalTokenId = getUserSetting('2');
-        const modalTokenSecret = getUserSetting('3');
-        if (modalTokenId && modalTokenSecret) {
-            formData.append('modal_token_id', modalTokenId);
-            formData.append('modal_token_secret', modalTokenSecret);
-        }
-        // END OF NEW LINES
-
-        const response = await fetch(`${config.transcriptionServiceUrl}/transcribe`, {
-            method: 'POST',
-            body: formData
-        });
-
-        if (!response.ok) {
-            const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
-            throw new Error(error.detail || 'Transcription failed');
-        }
-
-        return response.json();
     }
 
     /**
@@ -556,22 +628,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     /**
+     * Get patient EHR data for summarization context
+     */
+    async function getPatientEHRData() {
+        if (!smartClient || !patient) {
+            return '';
+        }
+
+        try {
+            const conditions = await smartClient.request(`Condition?patient=${patient.id}`).catch(() => null);
+            const medications = await smartClient.request(`MedicationStatement?patient=${patient.id}`).catch(() => null);
+
+            const ehrData = {
+                conditions: conditions?.entry?.map(e => e.resource.code?.text || 'Unknown') || [],
+                medications: medications?.entry?.map(e => e.resource.medicationCodeableConcept?.text || 'Unknown') || []
+            };
+
+            return JSON.stringify(ehrData);
+        } catch (error) {
+            console.warn('Failed to fetch EHR data:', error);
+            return '';
+        }
+    }
+
+    /**
      * Generate SOAP note from transcription
-     * No deployment needed - summarization service is always ready
      */
     async function generateSOAPNote() {
         const transcript = transcriptionHistory.map(h => h.text).join('\n\n');
 
         if (!transcript.trim()) {
             showError('No transcription available to summarize');
-            return;
-        }
-
-        const fhirData = window.patientFhirDataSummary || '';
-        const groqApiKey = getUserSetting('1');  // Only need Groq key now!
-
-        if (!groqApiKey) {
-            showError('Missing Groq API key in user settings');
             return;
         }
 
@@ -582,19 +669,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         try {
             console.log('🔄 Generating SOAP note...');
 
-            const response = await fetch(`${config.transcriptionServiceUrl}/summarize`, {
+            const token = await getAccessToken();
+            const ehrData = await getPatientEHRData();
+            const patientName = patient ? getPatientName(patient) : 'Patient';
+
+            console.log('   URL:', `${config.summarizationServiceUrl}/summarize`);
+            console.log('   Token:', token ? '✅' : '❌');
+
+            const response = await fetch(`${config.summarizationServiceUrl}/summarize`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
                 body: JSON.stringify({
                     transcript_text: transcript,
-                    openemr_text: fhirData,
-                    groq_api_key: groqApiKey  // Only send Groq key
+                    openemr_text: ehrData,
+                    patient_name: patientName
                 })
             });
 
+            console.log('   Response status:', response.status);
+
             if (!response.ok) {
-                const error = await response.json().catch(() => ({ error: 'Unknown error' }));
-                throw new Error(error.error || `Server error: ${response.status}`);
+                const errorMessage = await parseError(response);
+                throw new Error(errorMessage);
             }
 
             const result = await response.json();
@@ -604,6 +703,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             console.log('✅ SOAP note generated successfully');
+
+            // Store the SOAP note for saving
+            currentSoapNote = result.soap_note || '';
+            currentSoapResult = result;
+
             displaySOAPNote(result);
 
         } catch (error) {
@@ -616,22 +720,301 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     /**
-     * Display SOAP note (simplified - no parsing)
+     * Display SOAP note with Save button
      */
     function displaySOAPNote(result) {
         elements.soapResults.innerHTML = `
-        <div class="soap-note">
-            <pre style="white-space: pre-wrap; font-family: inherit;">${escapeHtml(result.soap_note || 'No summary available')}</pre>
-            <button class="btn btn-secondary" onclick="copySOAPNote()">Copy SOAP Note</button>
-        </div>
-    `;
+            <div class="soap-note">
+                <pre style="white-space: pre-wrap; font-family: inherit;">${escapeHtml(result.soap_note || 'No summary available')}</pre>
+                <div class="soap-actions">
+                    <button class="btn btn-primary" id="btn-save-soap" onclick="window.saveSOAPNote()">
+                        💾 Save SOAP Note
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.copySOAPNote()">
+                        📋 Copy SOAP Note
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+
+    // =========================================================================
+    // SOAP Note Parsing — splits raw text into S/O/A/P sections
+    // =========================================================================
+
+    /**
+     * Parse a SOAP note string into its four sections.
+     * Handles various header formats: "Subjective:", "SUBJECTIVE:", "S:", etc.
+     *
+     * @param {string} soapText - Full SOAP note text
+     * @returns {{ subjective: string, objective: string, assessment: string, plan: string }}
+     */
+    function parseSOAPSections(soapText) {
+        const sections = {
+            subjective: '',
+            objective: '',
+            assessment: '',
+            plan: ''
+        };
+
+        if (!soapText || !soapText.trim()) {
+            return sections;
+        }
+
+        // Regex to match common SOAP section headers
+        // Matches: "Subjective", "SUBJECTIVE", "S:", "Subjective:", etc.
+        const sectionRegex = /(?:^|\n)\s*(?:#{0,3}\s*)?(Subjective|Objective|Assessment|Plan|S|O|A|P)\s*[:\-—]?\s*\n?/gi;
+
+        const markers = [];
+        let match;
+
+        while ((match = sectionRegex.exec(soapText)) !== null) {
+            const label = match[1].toLowerCase();
+            let sectionKey;
+
+            switch (label) {
+                case 'subjective': case 's': sectionKey = 'subjective'; break;
+                case 'objective':  case 'o': sectionKey = 'objective';  break;
+                case 'assessment': case 'a': sectionKey = 'assessment'; break;
+                case 'plan':       case 'p': sectionKey = 'plan';       break;
+                default: continue;
+            }
+
+            markers.push({
+                key: sectionKey,
+                // Content starts right after the header match
+                startIndex: match.index + match[0].length
+            });
+        }
+
+        if (markers.length === 0) {
+            // No recognizable headers — put everything in subjective as fallback
+            sections.subjective = soapText.trim();
+            return sections;
+        }
+
+        // Extract text between consecutive markers
+        for (let i = 0; i < markers.length; i++) {
+            const start = markers[i].startIndex;
+            const end = i + 1 < markers.length
+                ? soapText.lastIndexOf('\n', markers[i + 1].startIndex - 1) || markers[i + 1].startIndex
+                : soapText.length;
+
+            // Use the regex match start of next marker as the boundary
+            const endIndex = i + 1 < markers.length
+                ? soapText.indexOf('\n', markers[i + 1].startIndex - markers[i + 1].startIndex) !== -1
+                    ? markers[i + 1].startIndex - (soapText.substring(0, markers[i + 1].startIndex).match(/\n\s*(?:#{0,3}\s*)?(?:Subjective|Objective|Assessment|Plan|S|O|A|P)\s*[:\-—]?\s*\n?$/i)?.[0]?.length || 0)
+                    : markers[i + 1].startIndex
+                : soapText.length;
+
+            sections[markers[i].key] = soapText.substring(start, endIndex).trim();
+        }
+
+        // Simpler, more reliable extraction
+        // Re-do with a cleaner approach
+        const cleanSections = { subjective: '', objective: '', assessment: '', plan: '' };
+        const headerPattern = /(?:^|\n)\s*(?:#{0,3}\s*)?(Subjective|Objective|Assessment|Plan|S|O|A|P)\s*[:\-—]?\s*\n/gi;
+        const splits = soapText.split(headerPattern);
+
+        // splits will alternate: [textBefore, headerLabel, textAfter, headerLabel, textAfter, ...]
+        for (let i = 1; i < splits.length; i += 2) {
+            const label = splits[i].toLowerCase();
+            const content = (splits[i + 1] || '').trim();
+            let key;
+
+            switch (label) {
+                case 'subjective': case 's': key = 'subjective'; break;
+                case 'objective':  case 'o': key = 'objective';  break;
+                case 'assessment': case 'a': key = 'assessment'; break;
+                case 'plan':       case 'p': key = 'plan';       break;
+                default: continue;
+            }
+
+            // If the same section appears multiple times, append
+            if (cleanSections[key]) {
+                cleanSections[key] += '\n' + content;
+            } else {
+                cleanSections[key] = content;
+            }
+        }
+
+        // If the cleaner approach found content, use it; otherwise fall back
+        const hasCleanContent = Object.values(cleanSections).some(v => v.length > 0);
+        return hasCleanContent ? cleanSections : sections;
+    }
+
+    // =========================================================================
+    // Save SOAP Note to OpenEMR Encounter
+    // =========================================================================
+
+    /**
+     * Main entry point for saving the SOAP note.
+     * Determines the encounter and saves.
+     */
+    window.saveSOAPNote = async function () {
+        if (!currentSoapNote) {
+            showError('No SOAP note available to save.');
+            return;
+        }
+
+        if (!openemrApi || !patient) {
+            showError('Not connected to OpenEMR. Please launch the app from a patient dashboard.');
+            return;
+        }
+
+        // Update button to show loading
+        const saveBtn = document.getElementById('btn-save-soap');
+        if (saveBtn) {
+            saveBtn.disabled = true;
+            saveBtn.textContent = '⏳ Loading encounters...';
+        }
+
+        try {
+            // Step 1: Check for encounter in SMART launch context
+            const contextEncounterId = await openemrApi.getEncounterFromContext();
+
+            if (contextEncounterId) {
+                console.log('📋 Found encounter in SMART context:', contextEncounterId);
+                await doSaveSoapNote(patient.id, contextEncounterId);
+                return;
+            }
+
+            // Step 2: Fetch patient encounters and let user pick
+            console.log('📋 No encounter in context, fetching patient encounters...');
+            const encounters = await openemrApi.getPatientEncounters(patient.id);
+
+            if (!encounters || encounters.length === 0) {
+                showError('No encounters found for this patient. Please create an encounter in OpenEMR first.');
+                resetSaveButton();
+                return;
+            }
+
+            // Show encounter selection modal
+            showEncounterSelectionModal(encounters);
+
+        } catch (error) {
+            console.error('Error preparing to save SOAP note:', error);
+            showError('Failed to load encounters: ' + error.message);
+            resetSaveButton();
+        }
+    };
+
+    /**
+     * Show a modal for the user to select which encounter to save to.
+     */
+    function showEncounterSelectionModal(encounters) {
+        resetSaveButton();
+
+        if (!elements.encounterModal) {
+            console.error('Encounter modal element not found in DOM');
+            showError('UI error: encounter selection modal not found.');
+            return;
+        }
+
+        // Build encounter list HTML
+        const listHtml = encounters.map(enc => {
+            const id = enc.uuid || enc.id || enc.eid;
+            const date = enc.date ? new Date(enc.date).toLocaleDateString() : 'Unknown date';
+            const reason = enc.reason || enc.pc_catname || enc.encounter_reason || '';
+            const facility = enc.facility || enc.facility_name || '';
+            const eid = enc.eid || enc.id || '';
+
+            return `
+                <div class="encounter-item" data-encounter-uuid="${escapeHtml(String(id))}">
+                    <div class="encounter-info">
+                        <strong>${escapeHtml(date)}</strong>
+                        ${eid ? `<span class="encounter-eid">#${escapeHtml(String(eid))}</span>` : ''}
+                        ${reason ? `<div class="encounter-reason">${escapeHtml(reason)}</div>` : ''}
+                        ${facility ? `<div class="encounter-facility">${escapeHtml(facility)}</div>` : ''}
+                    </div>
+                    <button class="btn btn-primary btn-small btn-select-encounter"
+                            onclick="window.selectEncounterAndSave('${escapeHtml(String(id))}')">
+                        Select
+                    </button>
+                </div>
+            `;
+        }).join('');
+
+        elements.encounterList.innerHTML = listHtml;
+        if (elements.encounterLoading) {
+            elements.encounterLoading.classList.add('hidden');
+        }
+        elements.encounterModal.classList.remove('hidden');
     }
 
     /**
-     * Copy SOAP note to clipboard
+     * Called when user selects an encounter from the modal.
      */
-    window.copySOAPNote = async function() {
-        const soapText = elements.soapResults.innerText;
+    window.selectEncounterAndSave = async function (encounterUuid) {
+        // Close the modal
+        elements.encounterModal.classList.add('hidden');
+
+        await doSaveSoapNote(patient.id, encounterUuid);
+    };
+
+    /**
+     * Perform the actual save of the SOAP note to OpenEMR.
+     */
+    async function doSaveSoapNote(patientId, encounterUuid) {
+        const saveBtn = document.getElementById('btn-save-soap');
+        if (saveBtn) {
+            saveBtn.disabled = true;
+            saveBtn.textContent = '⏳ Saving...';
+        }
+
+        try {
+            // Parse the SOAP note into sections
+            const soapSections = parseSOAPSections(currentSoapNote);
+
+            console.log('💾 Saving SOAP note to encounter:', encounterUuid);
+            console.log('   Parsed sections:', {
+                subjective: soapSections.subjective.substring(0, 50) + '...',
+                objective: soapSections.objective.substring(0, 50) + '...',
+                assessment: soapSections.assessment.substring(0, 50) + '...',
+                plan: soapSections.plan.substring(0, 50) + '...'
+            });
+
+            const result = await openemrApi.saveSoapNote(patientId, encounterUuid, soapSections);
+
+            console.log('✅ SOAP note saved successfully:', result);
+
+            // Update button to show success
+            if (saveBtn) {
+                saveBtn.disabled = false;
+                saveBtn.textContent = '✅ Saved to Encounter!';
+                saveBtn.classList.remove('btn-primary');
+                saveBtn.classList.add('btn-success');
+
+                setTimeout(() => {
+                    saveBtn.textContent = '💾 Save SOAP Note';
+                    saveBtn.classList.remove('btn-success');
+                    saveBtn.classList.add('btn-primary');
+                }, 3000);
+            }
+
+        } catch (error) {
+            console.error('❌ Failed to save SOAP note:', error);
+            showError('Failed to save SOAP note: ' + error.message);
+            resetSaveButton();
+        }
+    }
+
+    /**
+     * Reset the save button to its default state
+     */
+    function resetSaveButton() {
+        const saveBtn = document.getElementById('btn-save-soap');
+        if (saveBtn) {
+            saveBtn.disabled = false;
+            saveBtn.textContent = '💾 Save SOAP Note';
+        }
+    }
+
+    /**
+     * Copy SOAP note to clipboard (kept as secondary action)
+     */
+    window.copySOAPNote = async function () {
+        const soapText = currentSoapNote || elements.soapResults.innerText;
         try {
             await navigator.clipboard.writeText(soapText);
             alert('SOAP note copied to clipboard!');
@@ -645,6 +1028,9 @@ document.addEventListener('DOMContentLoaded', async () => {
      */
     function clearSession() {
         transcriptionHistory = [];
+        currentSoapNote = null;
+        currentSoapResult = null;
+
         elements.transcriptionResults.innerHTML = `
             <p class="placeholder-text">
                 Click "Start Ambient Listening" to begin capturing audio.
@@ -662,6 +1048,7 @@ document.addEventListener('DOMContentLoaded', async () => {
      * Show error modal
      */
     function showError(message) {
+        console.error('💥 Error shown to user:', message);
         elements.errorMessage.textContent = message;
         elements.errorModal.classList.remove('hidden');
     }

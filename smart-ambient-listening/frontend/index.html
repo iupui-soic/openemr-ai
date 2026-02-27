@@ -86,7 +86,6 @@
             <pre id="console-output" style="background:#f0f0f0; padding:10px; border:1px solid #ccc; max-height:300px; overflow:auto;"></pre>
         </section>
 
-
         <!-- SOAP Note Section -->
         <section class="soap-section hidden" id="soap-section">
             <h2>SOAP Note</h2>
@@ -124,13 +123,28 @@
     </div>
 </div>
 
+<!-- Encounter Selection Modal -->
+<div id="encounter-modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Select Encounter</h3>
+        <p>Choose which encounter to save the SOAP note to:</p>
+        <div id="encounter-loading" class="loading">
+            <div class="spinner"></div>
+            <span>Loading encounters...</span>
+        </div>
+        <div id="encounter-list" class="encounter-list"></div>
+        <button id="btn-close-encounter" class="btn btn-secondary" style="margin-top: 0.75rem;">Cancel</button>
+    </div>
+</div>
+
 <!-- Configuration (set by deployment) -->
 <script>
     window.SMART_CONFIG = {
         clientId: 'smart-ambient-listening',
         scope: 'launch patient/Patient.read patient/Condition.read patient/Procedure.read patient/Observation.read patient/MedicationRequest.read patient/AllergyIntolerance.read patient/Encounter.read openid fhirUser api:oemr user/custom.read user/custom.write',
         // Set this to your transcription service URL
-        transcriptionServiceUrl: 'https://vishnu.b691.us'
+        transcriptionServiceUrl: window.location.origin + '/transcription',
+        summarizationServiceUrl: window.location.origin + '/api/summarize'
     };
 </script>
 

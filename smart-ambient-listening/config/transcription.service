@@ -1,0 +1,12 @@
+[Unit]
+Description=Transcription Gateway Service
+After=network.target
+
+[Service]
+User=<YOUR_USER>
+WorkingDirectory=<PATH_TO>/smart-ambient-listening/transcription-service
+ExecStart=/usr/bin/python3 transcribe.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

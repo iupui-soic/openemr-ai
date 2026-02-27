@@ -1,0 +1,12 @@
+[Unit]
+Description=Summarization Service
+After=network.target
+
+[Service]
+User=<YOUR_USER>
+WorkingDirectory=<PATH_TO>/smart-ambient-listening/rag-text-summarization
+ExecStart=/usr/bin/python3 summarize.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -3,35 +3,55 @@ Modal App for Parakeet ASR
 
 Runs NVIDIA Parakeet TDT 1.1B on Modal's GPU infrastructure.
 The model is loaded once when the container starts and reused for all requests.
+
+UPDATED: Supports dynamic app names for per-user isolation.
 """
 
 import modal
 import sys
+import os
 
-app = modal.App("parakeet-asr")
+
+# Support dynamic app names from environment variable
+APP_NAME = os.getenv("MODAL_APP_NAME", "parakeet-asr")
+app = modal.App(APP_NAME)
 
 MODEL_ID = "nvidia/parakeet-tdt-1.1b"
 
 # Container image with all dependencies
+
 parakeet_image = (
-    modal.Image.debian_slim(python_version="3.10")
-    .apt_install("git", "libsndfile1", "ffmpeg", "build-essential")
+    modal.Image.from_registry(
+        "nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04",
+        add_python="3.10"
+    )
+    .apt_install(
+        "git",
+        "libsndfile1",
+        "ffmpeg",
+        "build-essential"
+    )
     .pip_install(
-        "cython",
         "packaging",
-        "torch",
-        "torchaudio",
-        "nemo_toolkit[asr]",
+        "cython",
+        "soundfile",
         "scipy",
-        "fastapi"
+        "fastapi",
+        "torch==2.2.2",
+        "torchaudio==2.2.2",
+        "numpy==1.26.4",
+        "nemo_toolkit[asr]==2.0.0"
     )
 )
+
+
+
 
 
 @app.cls(
     image=parakeet_image,
     gpu="A10G",
-    timeout=300,
+    timeout=900,
     scaledown_window=120,  # Scale down after 2 min idle (warmup pings keep it alive)
 )
 class ParakeetTranscriber:
@@ -67,6 +87,7 @@ class ParakeetTranscriber:
         import os
         import subprocess
         import soundfile as sf
+        import traceback
 
         suffix = self._detect_format(audio_bytes)
 
@@ -74,13 +95,17 @@ class ParakeetTranscriber:
             f.write(audio_bytes)
             input_path = f.name
 
-        output_path = input_path.rsplit('.', 1)[0] + ".wav"
+        output_path = input_path.rsplit(".", 1)[0] + ".wav"
 
         try:
-            subprocess.run([
-                "ffmpeg", "-y", "-i", input_path,
-                "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
-            ], check=True, capture_output=True)
+            subprocess.run(
+                [
+                    "ffmpeg", "-y", "-i", input_path,
+                    "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", output_path
+                ],
+                check=True,
+                capture_output=True
+            )
 
             audio_data, sample_rate = sf.read(output_path)
             duration = len(audio_data) / sample_rate
@@ -90,7 +115,7 @@ class ParakeetTranscriber:
             text = ""
             if result and len(result) > 0:
                 text = result[0]
-                if hasattr(text, 'text'):
+                if hasattr(text, "text"):
                     text = text.text
                 text = str(text).strip()
 
@@ -107,16 +132,19 @@ class ParakeetTranscriber:
                 "error": f"Audio conversion failed: {e.stderr.decode() if e.stderr else str(e)}",
                 "success": False
             }
-        except Exception as e:
+
+        except Exception:
             return {
                 "text": "",
-                "error": str(e),
+                "error": traceback.format_exc(),
                 "success": False
             }
+
         finally:
             for path in [input_path, output_path]:
                 if os.path.exists(path):
                     os.unlink(path)
+
 
     def _detect_format(self, audio_bytes: bytes) -> str:
         """Detect audio format from magic bytes."""

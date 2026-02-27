@@ -1,0 +1,12 @@
+[Unit]
+Description=ChromaDB Vector Database
+After=network.target
+
+[Service]
+User=<YOUR_USER>
+WorkingDirectory=<PATH_TO>/smart-ambient-listening/chromadb
+ExecStart=/home/<YOUR_USER>/.local/bin/chroma run --host localhost --port 8000 --path ./chroma_data
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

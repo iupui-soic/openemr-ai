@@ -365,3 +365,116 @@ footer {
     .actions-section { flex-direction: column; }
     .actions-section .btn { width: 100%; }
 }
+
+/* ==========================================================================
+   NEW STYLES — Save SOAP Note + Encounter Selection Modal
+   ========================================================================== */
+
+/* SOAP action buttons row (Save + Copy side by side) */
+.soap-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.soap-actions .btn {
+    flex: 0 0 auto;
+}
+
+/* Save button success state (green after successful save) */
+.btn-success {
+    background: #28a745 !important;
+    color: #fff !important;
+    border: none;
+}
+
+.btn-success:hover:not(:disabled) {
+    background: #218838 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Encounter selection modal — wider than default modals */
+#encounter-modal .modal-content {
+    max-width: 520px;
+    text-align: left;
+}
+
+#encounter-modal .modal-content h3 {
+    text-align: center;
+}
+
+#encounter-modal .modal-content > p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Scrollable encounter list */
+.encounter-list {
+    max-height: 350px;
+    overflow-y: auto;
+    margin: 1rem 0;
+}
+
+/* Individual encounter row */
+.encounter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    background: #fafafa;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.encounter-item:hover {
+    background: #f0f4ff;
+    border-color: #667eea;
+}
+
+.encounter-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.encounter-info strong {
+    font-size: 0.95rem;
+    color: #1a1a2e;
+}
+
+.encounter-eid {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-left: 0.5rem;
+}
+
+.encounter-reason,
+.encounter-facility {
+    font-size: 0.82rem;
+    color: #555;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Small button variant for encounter Select buttons */
+.btn-small {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.82rem;
+    border-radius: 6px;
+}
+
+.btn-select-encounter {
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+/* Cancel button at bottom of encounter modal */
+#btn-close-encounter {
+    display: block;
+    margin: 0.75rem auto 0;
+}

@@ -26,22 +26,20 @@
 
 <script src="js/fhirclient.min.js"></script>
 <script>
-    /**
-     * SMART-on-FHIR Launch Handler
-     * Uses the official fhirclient.js library for authorization
-     */
     FHIR.oauth2.authorize({
         clientId: window.SMART_CONFIG.clientId,
         scope: window.SMART_CONFIG.scope,
-        redirectUri: window.SMART_CONFIG.redirectUri
+        redirectUri: window.SMART_CONFIG.redirectUri,
+        completeInTarget: true
     }).catch(error => {
         console.error('Authorization error:', error);
         document.querySelector('.launch-content').innerHTML = `
-                <h2>Launch Failed</h2>
-                <p class="error">${error.message}</p>
-                <p>Please close this window and try again from OpenEMR.</p>
-            `;
+      <h2>Launch Failed</h2>
+      <p class="error">${error.message}</p>
+      <p>Please close this window and try again from OpenEMR.</p>
+    `;
     });
 </script>
+
 </body>
 </html>

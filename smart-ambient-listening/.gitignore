@@ -1,0 +1,21 @@
+# Virtual environments
+**/venv/
+**/__pycache__/
+
+# Environment files (secrets)
+**/.env
+
+# Logs
+**/nohup.out
+**/*.log
+**/summarize.out
+**/summarize_nohup.out
+
+# ChromaDB data (too large for git)
+chromadb/chroma_data/
+chromadb/chroma.log
+
+# Node modules
+frontend/node_modules/
+frontend/package-lock.json
+frontend/package.json
