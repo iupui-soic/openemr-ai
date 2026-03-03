@@ -37,7 +37,7 @@ HOST = os.getenv("HOST", "0.0.0.0")
 PORT = int(os.getenv("PORT", "8002"))
 CHROMA_HOST = "localhost"
 CHROMA_PORT = 8000
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = "openai/gpt-oss-20b"
 
 # OpenEMR server configuration (for token validation and API key retrieval)
 OPENEMR_SERVER_URL = os.getenv("OPENEMR_SERVER_URL", "https://localhost:9300")
@@ -247,7 +247,7 @@ async def get_user_groq_model(user_token: str) -> str:
         verify=False
     )
     if response.status_code != 200:
-        return os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+        return "openai/gpt-oss-20b"
 
     settings_data = response.json()
     settings = {}
@@ -259,7 +259,7 @@ async def get_user_groq_model(user_token: str) -> str:
             settings.get("groq_model") or
             settings.get("GROQ Model") or
             settings.get("groqModel") or
-            os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+            "openai/gpt-oss-20b"
     )
     return model.strip()
 
