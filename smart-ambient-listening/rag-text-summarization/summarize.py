@@ -359,77 +359,43 @@ def generate_soap_note(
         summary_messages = [
             {
                 "role": "system",
-                "content": (
-                    "You are an expert medical scribe specialized in clinical documentation. "
-                    "You generate SOAP notes by following a disease-specific SCHEMA TEMPLATE "
-                    "and filling it with data extracted from the doctor-patient conversation "
-                    "and the patient's electronic health record (EHR). "
-                    "You write in professional medical prose — never JSON, markdown, or bullet points."
-                )
+                "content": "You are an expert medical scribe specialized in clinical documentation. Generate comprehensive SOAP-format medical summaries."
             },
             {
                 "role": "user",
-                "content": f"""Generate a SOAP note for the following patient encounter.
+                "content": f"""Generate a comprehensive medical summary in SOAP format from the following data:
 
 PATIENT: {patient_name}
 
-=== DATA SOURCE 1: TRANSCRIPT (Doctor-patient conversation) ===
+TRANSCRIPT (Doctor-patient conversation):
 {transcript}
 
-=== DATA SOURCE 2: OPENEMR EHR EXTRACT (Existing medical record) ===
+OPENEMR EXTRACT (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-=== SCHEMA TEMPLATE (Disease-specific clinical note structure) ===
-The following schema defines the STRUCTURE and FIELDS your SOAP note must cover.
-Treat each field in the schema as a checklist item. For every field present in the schema,
-look for matching data in the TRANSCRIPT and EHR EXTRACT and include it in the appropriate
-SOAP section. The schema tells you WHAT to cover; the data sources tell you WHAT TO WRITE.
+SCHEMA GUIDE (Reference clinical note structure):
 {schemas}
 
-=== INSTRUCTIONS ===
+OUTPUT FORMAT REQUIREMENTS:
+- Generate a NARRATIVE TEXT document, NOT JSON or structured data
+- Use clear section headers: "Subjective", "Objective", "Assessment", "Plan"
+- Write in complete sentences and paragraphs
+- Use professional medical documentation prose style
+- Format similar to a hospital discharge summary
+- Do NOT use markdown formatting (no #, ##, **, *, -, ```, etc.)
 
-STEP 1 — MAP SCHEMA FIELDS TO DATA:
-For each section and field in the SCHEMA TEMPLATE above:
-  a) First check the TRANSCRIPT for relevant information (current visit data)
-  b) Then check the OPENEMR EHR EXTRACT for relevant information (historical data)
-  c) Include the information in the appropriate SOAP section below
+INSTRUCTIONS:
+1. Use the SCHEMA GUIDE as a reference for which sections to include
+2. Extract relevant information from the TRANSCRIPT and OPENEMR EXTRACT
+3. Write in narrative prose with proper paragraphs
+4. If information for a section is missing, write "No information available."
+5. If TRANSCRIPT and OPENEMR conflict, trust the TRANSCRIPT for current status
+6. Do NOT include any meta-commentary, explanations, or references to this prompt
+7. Do NOT output JSON, XML, or any structured data format
+8. Do NOT hallucinate or invent information not present in the inputs
+9. Do NOT use any markdown syntax - plain text only
 
-STEP 2 — WRITE THE SOAP NOTE with these exact four section headers:
-
-Subjective:
-  Fill using schema fields: chief_complaint, hpi (symptom_clusters, timeline_events,
-  associated_symptoms), review_of_systems, allergies, past_medical_history,
-  surgical_history, social_history, family_history, current_medications.
-  Source: TRANSCRIPT for current complaints and symptoms. EHR for medical history,
-  medications, allergies, and surgical history.
-
-Objective:
-  Fill using schema fields: vital_signs, physical_exam, labs, imaging, procedures.
-  Source: TRANSCRIPT for exam findings discussed during the visit. EHR for vitals,
-  lab results, and imaging data.
-
-Assessment:
-  Synthesize findings into clinical assessment. List diagnoses or differential diagnoses
-  with reasoning. Reference schema disease context for condition-specific considerations.
-  Source: Combine TRANSCRIPT clinical impression with EHR condition history.
-
-Plan:
-  Fill using schema fields: medications (new/changed), follow_up, referrals,
-  patient_education, disposition.
-  Source: TRANSCRIPT for treatment decisions made during the visit. EHR for
-  ongoing medication management and follow-up needs.
-
-STEP 3 — FORMATTING RULES:
-- Write in narrative prose with complete sentences and paragraphs
-- Use plain text only — NO markdown (no #, **, *, -, ```, etc.)
-- Do NOT output JSON, XML, or structured data
-- If a schema field has no matching data in either source, skip it silently (do NOT write "no information available" for every missing field — only mention notable gaps)
-- If TRANSCRIPT and EHR conflict on current status, trust the TRANSCRIPT
-- Do NOT hallucinate or invent information not present in the data sources
-- Do NOT include meta-commentary, explanations, or references to this prompt
-- Write as if this will be placed directly into the patient's medical chart
-
-Generate the SOAP note now:"""
+Generate the medical summary now in narrative prose format:"""
             }
         ]
 
