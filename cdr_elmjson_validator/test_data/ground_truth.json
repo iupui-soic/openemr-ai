@@ -89,4 +89,18 @@
       "notes": "INVALID CASE: Code uses HbA1c >= 9.0 g% (Severe), but Guideline requires >= 6.5% (Standard Diagnosis)."
     }
   }
+},
+"Depression-Screening-Observation.json": {
+  "valid": true,
+  "cpg_file": "Depression-Screening_CPG.md",
+  "expected_errors": [],
+  "expected_warnings": [],
+  "notes": "Depression screening CDS based on CMS2/USPSTF. Checks patients age 12+ without existing bipolar or depression diagnosis, excludes those with adult or adolescent depression screening (VS 2.16.840.1.113883.3.600.564, 2.16.840.1.113883.3.600.559) performed in the past 1 year."
+},
+"Osteoporosis-Screening-Observation.json": {
+  "valid": true,
+  "cpg_file": "Osteoporosis-Screening_CPG.md",
+  "expected_errors": [],
+  "expected_warnings": [],
+  "notes": "Osteoporosis screening CDS based on USPSTF 2025/CMS249. Validates that females 65+ without existing osteoporosis (VS 2.16.840.1.113883.3.464.1003.113.12.1038), osteopenia (VS ...113.12.1049), or osteoporotic fractures (VS ...113.12.1050) receive DEXA scan if none performed in past 2 years."
 }
