@@ -37,6 +37,8 @@ When screening is needed (InPopulation = true):
 - **Indicator**: "warning"
 - **Source**: USPSTF 2025 Osteoporosis Screening Recommendation / CMS249
 
+<!-- Note: ELM JSON checks females 65+, excludes existing osteoporosis/osteopenia/fracture diagnoses, and requires no DEXA scan in past 2 years. -->
+
 When screening is not needed (InPopulation = false):
 - **Recommendation**: null
 - **Rationale**: null
