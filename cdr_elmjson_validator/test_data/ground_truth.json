@@ -58,6 +58,20 @@
       "expected_warnings": [],
       "notes": "Validates Prostate Screening for Males 50+ who have not had PSA, DRE, or Biopsy in the last 1 month."
     },
+    "Depression_screening.json": {
+      "valid": true,
+      "cpg_file": "Depression_screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Depression screening CDS based on CMS2/USPSTF. Checks patients age 12+ without existing bipolar or depression diagnosis, excludes those with adult or adolescent depression screening (VS 2.16.840.1.113883.3.600.564, 2.16.840.1.113883.3.600.559) performed in the past 1 year."
+    },
+    "Osteoporosis screening.json": {
+      "valid": true,
+      "cpg_file": "Osteoporosis-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Osteoporosis screening CDS based on USPSTF 2025/CMS249. Validates that females 65+ without existing osteoporosis (VS 2.16.840.1.113883.3.464.1003.113.12.1038), osteopenia (VS ...113.12.1049), or osteoporotic fractures (VS ...113.12.1050) receive DEXA scan if none performed in past 2 years."
+    },
     "Hypertension-Screening.json": {
       "valid": false,
       "cpg_file": "Hypertension-Screening_CPG.md",
@@ -87,20 +101,94 @@
       ],
       "expected_warnings": ["unit mismatch g%"],
       "notes": "INVALID CASE: Code uses HbA1c >= 9.0 g% (Severe), but Guideline requires >= 6.5% (Standard Diagnosis)."
+    },
+    "Cervical-Cancer-Screening.json": {
+      "valid": true,
+      "cpg_file": "Cervical-Cancer-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Cervical cancer screening CDS based on USPSTF 2018. Checks females age 21-65 with no cervical cytology (Pap smear) in the past 3 years."
+    },
+    "Lung-Cancer-Screening.json": {
+      "valid": true,
+      "cpg_file": "Lung-Cancer-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Lung cancer screening CDS based on USPSTF 2021. Checks adults age 50-80 with active smoking history and no LDCT scan in the past 1 year."
+    },
+    "AAA-Screening.json": {
+      "valid": true,
+      "cpg_file": "AAA-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Abdominal aortic aneurysm screening CDS based on USPSTF 2019. Checks males age 65-75 with smoking history who have never had a prior AAA ultrasound screening."
+    },
+    "Alcohol-Misuse-Screening.json": {
+      "valid": true,
+      "cpg_file": "Alcohol-Misuse-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Alcohol misuse screening CDS based on USPSTF 2018. Checks adults 18+ with no AUDIT-C or equivalent alcohol screening in the past 1 year."
+    },
+    "Falls-Prevention-Screening.json": {
+      "valid": true,
+      "cpg_file": "Falls-Prevention-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Falls prevention screening CDS based on USPSTF 2018. Checks adults 65+ with no falls risk assessment performed in the past 1 year."
+    },
+    "Tobacco-Use-Screening.json": {
+      "valid": true,
+      "cpg_file": "Tobacco-Use-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "Tobacco use screening CDS based on USPSTF 2021. Checks adults 18+ with no tobacco use screening performed in the past 1 year."
+    },
+    "Colorectal-Cancer-Average-Risk-Screening.json": {
+      "valid": false,
+      "cpg_file": "Colorectal-Cancer-Average-Risk-Screening_CPG.md",
+      "expected_errors": [
+        "wrong age",
+        "age 60",
+        "frequency mismatch",
+        "2 years"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code uses age >= 60 (Guideline requires 45+) and 2-year lookback (Guideline requires 1 year for annual FOBT-based screening)."
+    },
+    "Anxiety-Screening.json": {
+      "valid": false,
+      "cpg_file": "Anxiety-Screening_CPG.md",
+      "expected_errors": [
+        "frequency mismatch",
+        "6 months"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code uses 6-month lookback for anxiety screening (Guideline requires 1 year per USPSTF 2023 recommendation)."
+    },
+    "HIV-Screening.json": {
+      "valid": false,
+      "cpg_file": "HIV-Screening_CPG.md",
+      "expected_errors": [
+        "wrong age",
+        "age 30",
+        "missing upper age limit",
+        "age 65"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code uses age >= 30 (Guideline requires 15+) and has no upper age limit of 65, missing adolescents and younger adults from the screening population."
+    },
+    "Prediabetes-Obesity-Screening.json": {
+      "valid": false,
+      "cpg_file": "Prediabetes-Obesity-Screening_CPG.md",
+      "expected_errors": [
+        "threshold mismatch",
+        "BMI 35 vs 25",
+        "lookback mismatch",
+        "1 year vs 3 years"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE: Code uses BMI >= 35 kg/m2 (obese-only threshold; Guideline requires >= 25 kg/m2 overweight+obese) and 1-year lookback for glucose testing (Guideline requires 3 years)."
     }
   }
-},
-"Depression_screening.json": {
-      "valid": true,
-      "cpg_file": "Depression_screening_CPG.md",
-      "expected_errors": [],
-      "expected_warnings": [],
-      "notes": "Depression screening CDS based on CMS2/USPSTF. Checks patients age 12+ without existing bipolar or depression diagnosis, excludes those with adult or adolescent depression screening (VS 2.16.840.1.113883.3.600.564, 2.16.840.1.113883.3.600.559) performed in the past 1 year."
-    },
-    "Osteoporosis screening.json": {
-      "valid": true,
-      "cpg_file": "Osteoporosis-Screening_CPG.md",
-      "expected_errors": [],
-      "expected_warnings": [],
-      "notes": "Osteoporosis screening CDS based on USPSTF 2025/CMS249. Validates that females 65+ without existing osteoporosis (VS 2.16.840.1.113883.3.464.1003.113.12.1038), osteopenia (VS ...113.12.1049), or osteoporotic fractures (VS ...113.12.1050) receive DEXA scan if none performed in past 2 years."
-    }
+}
