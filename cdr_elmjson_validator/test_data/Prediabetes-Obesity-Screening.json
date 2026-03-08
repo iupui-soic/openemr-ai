@@ -1,0 +1,222 @@
+{
+  "library": {
+    "identifier": {
+      "id": "Prediabetes_Obesity_Screening_CDS",
+      "version": "1"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [ {
+        "localIdentifier": "System",
+        "uri": "urn:hl7-org:elm-types:r1"
+      }, {
+        "localIdentifier": "FHIR",
+        "uri": "http://hl7.org/fhir",
+        "version": "4.0.1"
+      } ]
+    },
+    "valueSets": {
+      "def": [ {
+        "name": "BMI Measurement",
+        "id": "2.16.840.1.113883.3.600.1579",
+        "accessLevel": "Public"
+      }, {
+        "name": "Blood Glucose or HbA1c Test",
+        "id": "2.16.840.1.113883.3.464.1003.198.12.1073",
+        "accessLevel": "Public"
+      } ]
+    },
+    "statements": {
+      "def": [ {
+        "name": "Patient",
+        "context": "Patient",
+        "expression": {
+          "type": "SingletonFrom",
+          "operand": {
+            "dataType": "{http://hl7.org/fhir}Patient",
+            "templateId": "http://hl7.org/fhir/StructureDefinition/Patient",
+            "type": "Retrieve"
+          }
+        }
+      }, {
+        "name": "In Demographic",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "And",
+          "operand": [ {
+            "type": "GreaterOrEqual",
+            "operand": [ {
+              "precision": "Year",
+              "type": "CalculateAge",
+              "operand": {
+                "path": "birthDate",
+                "type": "Property",
+                "source": { "name": "Patient", "type": "ExpressionRef" }
+              }
+            }, {
+              "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+              "value": "35",
+              "type": "Literal"
+            } ]
+          }, {
+            "type": "LessOrEqual",
+            "operand": [ {
+              "precision": "Year",
+              "type": "CalculateAge",
+              "operand": {
+                "path": "birthDate",
+                "type": "Property",
+                "source": { "name": "Patient", "type": "ExpressionRef" }
+              }
+            }, {
+              "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+              "value": "70",
+              "type": "Literal"
+            } ]
+          } ]
+        }
+      }, {
+        "name": "Is Obese",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "Exists",
+          "operand": {
+            "type": "Query",
+            "source": [ {
+              "alias": "B",
+              "expression": {
+                "dataType": "{http://hl7.org/fhir}Observation",
+                "templateId": "http://hl7.org/fhir/StructureDefinition/Observation",
+                "codeProperty": "code",
+                "type": "Retrieve",
+                "codes": { "name": "BMI Measurement", "type": "ValueSetRef" }
+              }
+            } ],
+            "relationship": [],
+            "where": {
+              "type": "GreaterOrEqual",
+              "operand": [ {
+                "path": "value.value",
+                "scope": "B",
+                "type": "Property"
+              }, {
+                "value": 35,
+                "unit": "kg/m2",
+                "type": "Quantity"
+              } ]
+            }
+          }
+        }
+      }, {
+        "name": "Has Recent Glucose Test",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "Exists",
+          "operand": {
+            "type": "Query",
+            "source": [ {
+              "alias": "S",
+              "expression": {
+                "dataType": "{http://hl7.org/fhir}Observation",
+                "templateId": "http://hl7.org/fhir/StructureDefinition/Observation",
+                "codeProperty": "code",
+                "type": "Retrieve",
+                "codes": { "name": "Blood Glucose or HbA1c Test", "type": "ValueSetRef" }
+              }
+            } ],
+            "relationship": [],
+            "where": {
+              "type": "In",
+              "operand": [ {
+                "path": "issued",
+                "scope": "S",
+                "type": "Property"
+              }, {
+                "lowClosed": true,
+                "highClosed": true,
+                "type": "Interval",
+                "low": {
+                  "type": "Subtract",
+                  "operand": [ {
+                    "type": "Today"
+                  }, {
+                    "value": 1,
+                    "unit": "years",
+                    "type": "Quantity"
+                  } ]
+                },
+                "high": { "type": "Today" }
+              } ]
+            }
+          }
+        }
+      }, {
+        "name": "Needs Prediabetes Screening",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "And",
+          "operand": [ {
+            "type": "And",
+            "operand": [ {
+              "name": "In Demographic",
+              "type": "ExpressionRef"
+            }, {
+              "name": "Is Obese",
+              "type": "ExpressionRef"
+            } ]
+          }, {
+            "type": "Not",
+            "operand": {
+              "name": "Has Recent Glucose Test",
+              "type": "ExpressionRef"
+            }
+          } ]
+        }
+      }, {
+        "name": "InPopulation",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "name": "Needs Prediabetes Screening",
+          "type": "ExpressionRef"
+        }
+      }, {
+        "name": "Recommendation",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "If",
+          "condition": { "name": "InPopulation", "type": "ExpressionRef" },
+          "then": {
+            "valueType": "{urn:hl7-org:elm-types:r1}String",
+            "value": "Screen for prediabetes and type 2 diabetes with fasting blood glucose or HbA1c test",
+            "type": "Literal"
+          },
+          "else": { "type": "Null" }
+        }
+      }, {
+        "name": "Rationale",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": {
+          "type": "If",
+          "condition": { "name": "InPopulation", "type": "ExpressionRef" },
+          "then": { "type": "Null" },
+          "else": { "type": "Null" }
+        }
+      }, {
+        "name": "Errors",
+        "context": "Patient",
+        "accessLevel": "Public",
+        "expression": { "type": "Null" }
+      } ]
+    }
+  }
+}
