@@ -13,7 +13,7 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 - **Step-by-step prompts**: Models compare extracted values against CPG requirements with explicit decision criteria
 - **Batch processing**: Each model loads once and processes all test files efficiently
 
-**Test Dataset**: 10 ground-truth annotated test cases (7 valid, 3 invalid) with ELM JSON and CPG markdown files.
+**Test Dataset**: 22 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines, including correct implementations and artifacts with intentionally introduced defects (incorrect age thresholds, missing exclusion criteria, wrong FHIR code bindings, logically contradictory conditions).
 
 ### Models Evaluated
 
@@ -34,46 +34,25 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 | MedGemma 4B/1.5-4B | Google | 4B | Modal T4 GPU |
 | GPT-OSS 20B/120B | OpenAI | 20-120B | Groq API |
 
-### Latest Results
+### Latest Results (22 Test Cases)
 
-#### Frontier Models (via API)
-
-| Model | Accuracy | Correct/Total | Avg Time | Status |
-|-------|----------|---------------|----------|--------|
-| Gemini 3 Flash | **100%** | 10/10 | 3.0s | Excellent |
-| Gemini 2.0 Flash | 90% | 9/10 | 2.9s | Very Good |
-| Gemma 3 27B | 80% | 8/10 | 4.1s | Good |
-| Claude 3.5 Haiku | 80% | 8/10 | 4.5s | Good |
-| Claude Sonnet 4 | 70% | 7/10 | 5.2s | Fair |
-| Claude Opus 4 | 60% | 6/10 | 5.3s | Needs Work |
-
-#### Small/Medium Models (via Modal/Groq)
-
-| Model | Accuracy | Correct/Total | Avg Time | Status |
-|-------|----------|---------------|----------|--------|
-| GPT OSS 120B | 100% | 10/10 | 1.66s | Excellent |
-| Qwen 3 32B | 100% | 10/10 | 3.47s | Excellent |
-| GPT OSS 20B | 90% | 9/10 | 23.75s | Very Good |
-| Gemma 3 4B | 70% | 7/10 | 40.64s | Fair |
-| Llama 3.2 1B | 70% | 7/10 | 17.86s | Fair |
-| Qwen 2.5 3B | 70% | 7/10 | 39.90s | Fair |
-| Gemma 3 4B | 70% | 7/10 | 40.64s | Fair |
-| MedGemma 4B | 70% | 7/10 | 38.06s | Fair |
-| MedGemma 1.5 4B | 70% | 7/10 | 37.13s | Fair |
-| Gemma 3 270M | 70% | 7/10 | 25.97s | Fair |
-| Llama 3.3 70B | 70% | 7/10 | 8.47s | Fair |
-| Llama 3.2 3B | 60% | 6/10 | 44.21s | Needs Work |
-| Qwen 2.5 1.5B | 60% | 6/10 | 21.57s | Needs Work |
-| Phi-3 Mini | 50% | 5/10 | 32.05s | Needs Work |
-| Llama 3.3 70B | 40% | 4/10 | 0.14s | Needs Work |
-| Llama 3.1 8B | 30% | 3/10 | 124.80s | Needs Work |
+| Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |
+|-------|----------|---------------|-------------|----------|--------|
+| GPT OSS 20B | **100.0%** | 22/22 | 73% | 3.67s | Excellent |
+| GPT OSS 120B | 95.5% | 21/22 | 65% | 3.89s | Excellent |
+| Llama 3.3 70B | 95.5% | 21/22 | 66% | 1.00s | Excellent |
+| Qwen3 32B | 95.5% | 21/22 | 68% | 6.83s | Excellent |
+| Phi-3 Mini | 68.2% | 15/22 | 55% | 21.35s | Needs Work |
+| Gemma 3 4B | 68.2% | 15/22 | 68% | 34.94s | Needs Work |
+| MedGemma 4B | 68.2% | 15/22 | 68% | 35.00s | Needs Work |
+| MedGemma 1.5 4B | 68.2% | 15/22 | 68% | 37.14s | Needs Work |
 
 **Key Findings:**
-- **Gemini 3 Flash, GPT OSS 120B and Qwen 3 32B** achieved perfect 100% accuracy - best overall performer
-- **GPT OSS 20B** (via Groq) matches Gemini 2.0 Flash at 90% accuracy - best cost-effective option
-- Small models (1-4B) achieve 60-70% accuracy with proper prompting - competitive with Claude Sonnet/Opus
-- **Gemma 3 270M** achieves 70% accuracy despite having only 270M parameters - remarkably efficient
-- The ELM simplification approach works well across model sizes
+- **GPT OSS 20B** achieved perfect 100% accuracy (22/22) with the highest error-match rate (73%)
+- **GPT OSS 120B, Llama 3.3 70B, and Qwen3 32B** all achieved 95.5% accuracy — a single misclassification separates them from perfect; interpret cautiously given the small benchmark size (~4.5 pp per case)
+- **Llama 3.3 70B** improved from 40% (10-case pilot) to 95.5% on the full 22-case set, suggesting earlier poor performance reflected dataset size limitations rather than a capability gap
+- Domain-specific **MedGemma** variants did not outperform general-purpose models of comparable scale (68.2%), consistent with prior observations that clinical fine-tuning alone is insufficient for structured logic validation tasks
+- **GPT OSS 120B** (via Groq, 3.89s/artifact) offers a practical balance of accuracy and latency for deployment
 
 View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
 
