@@ -1,0 +1,62 @@
+Model: google/medgemma-4b-it
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-03-25 05:42:39
+Time: 53.55s
+Tokens: 6,673 in / 915 out
+============================================================
+
+Patient Information:
+
+The patient is Abbey Shala Kunde, DOB 03/02/1986, and her OpenEMR patient ID is 109. She is a female residing at 774 Gleichner Harbor, Boston, Massachusetts 02109.
+
+Chief Complaint:
+
+The patient presents today with a cough, headache, and muscle aches.
+
+History of Present Illness:
+
+The patient reports that her cough started three days ago. She also started experiencing headaches and general muscle aches around the same time. The cough is dry. She denies any sputum or blood production. The muscle aches are generalized and all over. She denies any recent strenuous activity, lifting, or injuries. The headaches are located at the front of her forehead, on both sides, and feel like a band squeezing her head. The headaches are intermittent, coming and going. She describes the headache pain as pressure-like. She reports having occasional headaches, but not frequently. She has tried Tylenol and Advil for her pain, but the headaches come and go. She has also tried Tylenol for her cough, but it hasn't been very effective. She denies any fever or chills. She has felt a little feverish recently. She has not been able to get a temperature reading. She denies any sore throat or chest pain. She denies any shortness of breath. She denies any recent travel or contact with someone who has been ill. She denies any nausea or vomiting or loss of taste or smell. She denies night sweats or fatigue. She reports having loose stools for the past day. She denies any changes in color or blood in her stool. She denies any recent food changes or eating outside. She denies any changes in appetite or weight. She denies any exposure to fumes or dust or animals. She denies any medical conditions. She takes a multivitamin and vitamin D. She has no allergies. She has an allergy to peanuts and carries an EpiPen. She denies any hospitalizations or surgeries. Her father has high blood pressure, and her grandfather had lung cancer. She works as a pharmacy technician. She has been working in the office sometimes to help prepare. She has not noticed anyone sick at work, but others have been there. She wears a mask at work and follows cleaning protocols. She has been off work for the past couple of days due to her symptoms. She lives with her wife in a townhouse in the city. Her wife is feeling well. She is not a smoker. She occasionally uses CBD oils. She drinks alcohol a few times a week, about 3 or 4 beers.
+
+Physical Exam:
+
+The physical exam is not provided in the transcript.
+
+Laboratory Findings:
+
+The following laboratory findings are available:
+*   PHQ-2 total score: 2
+*   GAD-7 total score: 7
+*   WBC: 5.800515894584851 10*3/uL
+*   Hgb: 16.306678285729756 g/dL
+*   Hct: 42.46165908932016 %
+*   MCV: 81.61547944941351 fL
+*   MCH: 28.493173286247554 pg
+*   MCHC: 34.13256433216941 g/dL
+*   RDW: 39.5351323747906 fL
+*   Plt: 197.3226168936892 10*3/uL
+*   Glucose: N/A
+*   UreaN: N/A
+*   Creat: N/A
+*   Na: N/A
+*   K: N/A
+*   Cl: N/A
+*   HCO3: N/A
+*   AnGap: N/A
+*   ALT: N/A
+*   AST: N/A
+*   AlkPhos: N/A
+*   TotBili: N/A
+*   Lipase: N/A
+*   Albumin: N/A
+*   Calcium: N/A
+*   Phos: N/A
+*   Mg: N/A
+
+Assessment:
+
+The patient presents with symptoms suggestive of an upper respiratory infection. The possibility of COVID-19 should be considered.
+
+Plan:
+
+The patient is instructed to isolate for two weeks until symptoms resolve. A swab will be performed to rule out COVID-19. Public health will provide further instructions regarding repeat testing and return to work.

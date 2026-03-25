@@ -1,0 +1,86 @@
+Model: openai/gpt-oss-20b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-03-25 04:53:11
+Time: 3.12s
+Tokens: 6,674 in / 1,153 out
+============================================================
+
+Patient Information  
+Abbey Shala Kunde, a 38‑year‑old female, presents for evaluation of a three‑day history of dry cough, frontal tension‑type headaches, generalized muscle aches, mild feverish sensations, and a single day of loose stool. She resides in a Boston townhouse with her wife and works for a pharmacy company, currently on medical leave.
+
+Chief Complaint  
+"Dry cough, headaches, muscle aches, and feeling feverish."
+
+History of Present Illness  
+The patient reports that the dry cough began three days ago and has persisted without sputum or hemoptysis. She has also experienced intermittent frontal headaches described as a band‑like pressure around the forehead, occurring each day and relieved temporarily by acetaminophen or ibuprofen. Generalized muscle aches are present, with no specific sites of tenderness. She has felt "hot" and slightly feverish, but has not taken a temperature. She denies chills, dyspnea, chest pain, sore throat, or nasal congestion. She has had a single episode of loose, watery stool over the past day with no blood or mucus. No nausea, vomiting, loss of taste or smell, night sweats, or weight changes are reported.
+
+Review of Systems  
+Constitutional: mild subjective fever, no chills, no night sweats, no weight change.  
+Respiratory: dry cough, no sputum, no chest pain, no shortness of breath.  
+Cardiovascular: no chest pain, no palpitations.  
+Gastrointestinal: one episode of loose stool, no nausea or vomiting.  
+Neurologic: frontal headache, pressure‑type.  
+ENT: no sore throat, no nasal discharge.  
+Musculoskeletal: diffuse muscle aches.  
+Dermatologic: no rash.  
+Allergic: known peanut allergy; carries epinephrine auto‑injector.  
+
+Past Medical History  
+- Essential hypertension (diagnosed prior to this visit).  
+- Recurrent urinary tract infection.  
+- Obesity (BMI >30).  
+- Prior ACL repair surgery approximately ten years ago.  
+
+Past Surgical History  
+- Anterior cruciate ligament repair, 10 years ago.  
+
+Allergies  
+- Peanut allergy; no known drug allergies.  
+
+Social History  
+- Non‑smoker.  
+- Occasional use of CBD oils.  
+- Moderate alcohol consumption (about 3–4 beers per week).  
+- No recreational drug use.  
+- No recent travel.  
+- Works in a pharmacy setting; currently on medical leave.  
+- Lives with wife; wife is asymptomatic.  
+
+Family History  
+- Father with hypertension.  
+- Grandfather died of lung cancer in his 80s, a lifelong smoker.  
+
+Current Medications  
+- Multivitamin.  
+- Vitamin D supplement.  
+
+Physical Examination  
+No vital signs or physical exam findings were recorded during this encounter; therefore, no information is available regarding vital parameters or physical examination.  
+
+Laboratory Findings  
+CBC: WBC 5.8 k/µL, Hgb 16.3 g/dL, Hct 42.5 %, MCV 81.6 fL, MCH 28.5 pg, MCHC 34.1 g/dL, RDW 39.5 %, Platelets 197 k/µL.  
+Lipid panel: HDL 61 mg/dL, Triglycerides 106 mg/dL.  
+Mental health screening: GAD‑7 score 7, PHQ‑2 score 2.  
+
+Imaging  
+No imaging studies performed or ordered.  
+
+Assessment  
+1. Viral upper respiratory infection (likely influenza‑like illness or COVID‑19).  
+2. Mild viral gastroenteritis (single episode of loose stool).  
+The patient’s symptom profile overlaps with COVID‑19, and no other etiology has been identified; SARS‑CoV‑2 testing is warranted.
+
+Plan  
+- Perform a SARS‑CoV‑2 PCR nasal swab today.  
+- Instruct the patient to isolate at home for the duration of her symptoms and until the test result is returned (approximately 24–48 hours).  
+- Symptomatic treatment: acetaminophen 500–1000 mg q4–6 hrs PRN for fever and headache; adequate hydration; rest.  
+- Encourage continuation of multivitamin and vitamin D supplementation.  
+- No antibiotics are indicated.  
+- Advise use of masks and hand hygiene when in contact with others.  
+- Return to work only after symptom resolution and clearance from public health guidance.  
+- Follow‑up: Call or return to clinic if symptoms worsen, new chest pain, shortness of breath, persistent fever, or if the COVID‑19 test is positive.  
+- Education: Discuss signs of secondary bacterial infection (increasing cough, purulent sputum, worsening dyspnea, high fever) and advise prompt medical attention if they develop.  
+
+Discharge Instructions  
+The patient has been advised to remain home, avoid contact with others, and monitor symptoms. She is to seek medical care if any of the following occur: new or worsening shortness of breath, chest pain, persistent high fever (>101 °F), or if the COVID‑19 test returns positive. She should resume work only after she has been symptom‑free for 24 hours and has followed public health isolation guidelines.

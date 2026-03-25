@@ -1,0 +1,126 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-03-25 04:57:07
+Time: 6.33s
+Tokens: 10,581 in / 1,928 out
+============================================================
+
+Patient Information  
+Name: Adrianna Camelia Wuckert  
+Date of Birth: 1919‑02‑25 (Age 107 years)  
+Sex: Female  
+Address: 609 Bartell Gate, Marshfield, Massachusetts 02050  
+
+Chief Complaint  
+The patient presents with progressive shortness of breath and a productive cough of six days’ duration.
+
+History of Present Illness  
+Six days ago the patient noted a sudden onset of breathlessness that has been constant and progressively worsening. She reports having to stop frequently while walking short distances, including from her car to her home. Simultaneously she developed a cough that produces a “weird rusty‑colored” sputum on a couple of occasions each day. The cough and dyspnea are now both constant. She describes associated chills and a feeling of being cold, though she has not taken an objective temperature. There is mild wheezing on examination according to the patient’s description. She also reports a sharp, pleuritic chest pain that is provoked by coughing, rating it 7/10 in intensity; the pain gradually resolves when coughing subsides. Tylenol (acetaminophen) provides some relief of the subjective feverish feeling. No hemoptysis has been observed, and there is no known aggravation by cold air, pollen, or specific times of day. The patient denies any prior similar episodes.  
+
+Review of Systems  
+
+- Constitutional: Positive for chills, subjective fever, fatigue secondary to dyspnea; no documented fever, weight loss, or night sweats.  
+- Respiratory: Positive for dyspnea on exertion, productive cough with rusty sputum, wheezing, and pleuritic chest pain. No reported dyspnea at rest, no known history of asthma.  
+- Cardiovascular: Denies chest pressure, palpitations, orthopnea, or peripheral edema.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Neurologic: No headache, dizziness, or syncope.  
+- Psychiatric: No anxiety or depression reported at this visit.  
+- Musculoskeletal: No joint pain or weakness.  
+- Skin: No rashes or lesions.  
+
+Past Medical History  
+- Chronic sinusitis (ongoing)  
+- Essential hypertension (ongoing)  
+- Ischemic heart disease (ongoing)  
+- Obesity (BMI > 30)  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (ongoing)  
+- Chronic kidney disease stages 1‑4 (ongoing)  
+- Hyperlipidemia (ongoing)  
+‑ Anemia (ongoing)  
+‑ Prior stroke (1990)  
+‑ Renal transplant (history; ongoing immunosuppression)  
+‑ No prior hospitalizations for respiratory illness  
+
+Surgical History  
+The patient reports no prior surgeries.
+
+Social History  
+The patient works in a crowded indoor environment with a malfunctioning air‑conditioning system; the workspace is humid, poorly maintained, and may contain mold, dust, and possible asbestos. She lives in a small, poorly maintained apartment with possible mold exposure. She keeps pet birds (≈3 years). She smokes approximately 10 cigarettes per day, having started at age 20. She uses cannabis occasionally (≈5 mg weekly). Alcohol consumption is modest, roughly five drinks per week. She reports minimal exercise and a diet high in fast food and junk food. She denies known drug allergies.
+
+Family History  
+No known family history of cancer, coronary artery disease, pulmonary disease, or other major medical conditions.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+The patient reports taking no medications at this time. (Historical medication list in the record includes antihypertensives, statin, diuretic, immunosuppressants, and others, but none are reported as current by the patient.)
+
+Vital Signs  
+No current vital signs documented at this encounter.
+
+Physical Examination  
+No physical examination findings recorded in the current encounter.
+
+Laboratory Data (most recent values available in the record)  
+- Serum creatinine: 2.72 mg/dL (elevated, consistent with CKD)  
+- Blood urea nitrogen: 11.8 mg/dL  
+- Potassium: 4.7 mmol/L  
+- Sodium: 143 mmol/L  
+- Chloride: 107 mmol/L  
+- Calcium: 9.33 mg/dL  
+- Albumin: 4.49 g/dL  
+- ALT: 34 U/L  
+- Total bilirubin: 0.45 mg/dL  
+- Lipid panel: Total cholesterol 151 mg/dL, HDL 49 mg/dL, LDL 76 mg/dL, Triglycerides 129 mg/dL  
+- Estimated GFR (MDRD): 74 mL/min/1.73 m²  
+
+No complete blood count, arterial blood gas, or inflammatory markers are available in the current extract.
+
+Imaging  
+No imaging studies have been performed or documented at this visit.
+
+Assessment  
+1. **Community‑acquired pneumonia** – presentation with acute dyspnea, productive cough with rusty sputum, feverish feeling, pleuritic chest pain, and wheezing in a smoker with multiple comorbidities.  
+2. **Chronic obstructive pulmonary disease (COPD) exacerbation** – possible underlying COPD given long‑term tobacco use and wheezing; exacerbated by the acute infection.  
+3. **Chronic kidney disease, stage 3‑4** – baseline renal impairment; will influence antibiotic selection and dosing.  
+4. **Hypertension, ischemic heart disease, diabetes mellitus, hyperlipidemia** – chronic comorbidities requiring ongoing management.  
+
+Plan  
+
+**Diagnostic Studies**  
+- Obtain a chest radiograph (posterior‑anterior and lateral) to confirm infiltrate and assess for complications.  
+- Order a complete blood count with differential, basic metabolic panel, and C‑reactive protein or procalcitonin to gauge infection severity.  
+- Collect sputum for Gram stain and culture, and send blood cultures given the possibility of bacteremia.  
+
+**Therapeutic Interventions**  
+- Initiate empiric antibiotic therapy covering typical and atypical community pathogens, adjusted for renal function:  
+  * Amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7‑10 days (dose reduced if creatinine clearance <30 mL/min).  
+  * Consider addition of a macrolide (e.g., azithromycin 500 mg PO daily for 5 days) if atypical coverage is desired.  
+- Provide a short course of oral corticosteroids (e.g., prednisone 40 mg PO daily for 5 days) if COPD exacerbation is clinically significant.  
+- Prescribe a short‑acting bronchodilator (e.g., albuterol inhaler 2 puffs every 4–6 hours as needed).  
+- Continue Tylenol for fever or discomfort, not exceeding 3 g per day.  
+- Encourage adequate hydration and rest.  
+
+**Supportive Care**  
+- Assess oxygen saturation; provide supplemental oxygen to maintain SpO₂ ≥ 92 % if needed.  
+- Counsel on smoking cessation; offer nicotine replacement therapy and referral to cessation program.  
+- Discuss avoidance of further exposure to indoor pollutants, mold, and potential asbestos; recommend environmental remediation if feasible.  
+
+**Follow‑Up**  
+- Arrange follow‑up with primary care provider within 48‑72 hours to review chest X‑ray results, laboratory data, and clinical response.  
+- Advise the patient to return to the emergency department urgently if she experiences worsening dyspnea, fever > 101 °F, increasing chest pain, new hemoptysis, confusion, or any signs of sepsis.  
+
+**Discharge Instructions**  
+- Complete the full course of prescribed antibiotics even if symptoms improve.  
+- Use the albuterol inhaler as needed for wheezing or shortness of breath; limit use to ≤ 8 puffs per day.  
+- Continue acetaminophen for fever or pain; do not exceed recommended dosing.  
+- Maintain a humidified environment; avoid exposure to smoke, dust, or bird droppings as much as possible.  
+- Keep a daily log of temperature, respiratory symptoms, and sputum characteristics.  
+
+**Preventive Care**  
+- Update influenza and pneumococcal vaccinations according to current guidelines, given her age and comorbidities.  
+
+The above plan addresses the acute infectious process, the likely COPD component, and the patient’s chronic medical conditions while emphasizing safety, medication appropriateness for renal dysfunction, and preventive health measures.

@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-03-25 04:57:07
+Time: 5.36s
+Tokens: 20,039 in / 1,707 out
+============================================================
+
+Patient Information  
+Name: Amado Baumbach  
+Date of Birth: June 9, 1942 (Age 83)  
+Sex: Male  
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000  
+Medical Record Number: 7355  
+
+Chief Complaint  
+The patient presents with persistent nausea and occasional vomiting for approximately nine days, accompanied by increased urinary frequency.
+
+History of Present Illness  
+Mr. Baumbach reports that the nausea began roughly nine days ago and has been present most of the time, with a tendency to worsen in the morning and when exposed to unpleasant odors. He estimates vomiting occurs once or twice per day on many days. He also notes a sensation of mild abdominal cramping that he initially thought might be menstrual‑related, though he is male and does not have a menstrual cycle. He has not experienced fever, chills, headache, cough, muscle aches, or other flu‑like symptoms. He denies any blood in the stool or dysuria.  
+
+He reports a recent increase in urinary frequency, describing voiding every one to two hours during the day. He does not awaken specifically to urinate, but occasionally gets up for other reasons and then chooses to void. He maintains complete control over bladder emptying and denies any urgency, incontinence, or dysuria. He feels the need to drink more water because of the vomiting, which he attributes to a feeling of dehydration.  
+
+He denies use of any prescription or over‑the‑counter medications for his current symptoms, other than chewing ginger supplements, which have not provided relief. He reports no recent travel, sick contacts, or dietary changes.  
+
+Review of Systems  
+Constitutional: Persistent nausea, occasional vomiting; no fever, chills, weight loss, or night sweats.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations, chest pain, or known arrhythmia.  
+Gastrointestinal: Nausea, vomiting, mild epigastric cramping; no diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: Increased urinary frequency; no dysuria, hematuria, or incontinence.  
+Neurologic: No headaches, dizziness, or syncope.  
+Musculoskeletal: No myalgias or arthralgias.  
+Skin: No rash or lesions noted presently.  
+Psychiatric: No anxiety or depression reported.  
+
+Allergies  
+Nickel – causes contact dermatitis (rash) when exposed to non‑precious jewelry. No known drug or food allergies.
+
+Past Medical History  
+- Essential hypertension (diagnosed 1973)  
+- Prediabetes (diagnosed 1973)  
+- Anemia (diagnosed 1973)  
+- Chronic kidney disease, stages 1–3 with diabetic nephropathy, microalbuminuria, and proteinuria (onset 1976)  
+- Chronic sinusitis (intermittent)  
+- Ischemic heart disease (diagnosed 2018) with prior coronary artery bypass grafting (performed July 2018)  
+- History of suspected prostate carcinoma (diagnosed 2016) – carcinoma in situ, currently under observation  
+- History of sepsis, acute respiratory distress syndrome, and related critical illness in early 2021 (historical)  
+- Multiple episodes of gingivitis and dental caries over the past decade (historical)  
+
+Surgical History  
+No surgical procedures directly related to the current presentation are documented.
+
+Social History  
+The patient lives with one roommate. He is a former smoker (history of daily tobacco use; currently not smoking). He consumes alcohol rarely, approximately once a month, and reports headaches when he does. He denies any illicit drug use. He is sexually active with a male partner and uses condoms consistently; he previously used hormonal birth control but discontinued it due to nausea.  
+
+Family History  
+Father with hypertension. No other significant hereditary conditions reported.
+
+Current Medications  
+Home medications: None reported.  
+Inpatient medications (as recorded in the electronic record for a prior admission) include vancomycin, piperacillin‑tazobactam, norepinephrine, vasopressin, enoxaparin, acetaminophen, ondansetron, midazolam, propofol, rocuronium, isoflurane, alfentanil, regular insulin, cefazolin, and heparin. No active home medication list is available for the current encounter.
+
+Objective  
+Vital Signs – No current vital signs recorded; the most recent documented vitals are from 2011 and are not applicable to this visit.  
+
+Physical Examination – No examination findings documented for this encounter.  
+
+Laboratory Data (most recent panel dated December 24, 2020)  
+- White blood cell count: 3.78 ×10³/µL (low)  
+- Neutrophils: 26.2 % (absolute 3.41 ×10³/µL)  
+- Lymphocytes: 13.6 % (absolute 0.42 ×10³/µL)  
+- Monocytes: 10.4 % (absolute 0.96 ×10³/µL)  
+- Eosinophils: 3.47 % (absolute 0.31 ×10³/µL)  
+- Basophils: 3.69 % (absolute 0.35 ×10³/µL)  
+- Hemoglobin: 12.28 g/dL  
+- Hematocrit: 43.4 %  
+- Mean corpuscular volume: 86.8 fL  
+- Platelet count: 105.6 ×10³/µL (thrombocytopenia)  
+- Electrolytes, renal function, and liver enzymes were not listed in the extract.  
+
+Imaging – No imaging studies performed or reported for the current complaint.
+
+Assessment  
+1. Persistent nausea and intermittent vomiting of 9‑day duration, likely multifactorial. Differential includes medication‑induced nausea (though none reported), gastroparesis secondary to diabetes, early viral gastroenteritis, and functional dyspepsia.  
+2. Increased urinary frequency, possibly secondary to increased oral fluid intake in response to vomiting and mild dehydration; no evidence of infection or lower urinary tract pathology.  
+3. Chronic comorbidities: hypertension, prediabetes, chronic kidney disease stage 3, ischemic heart disease.  
+4. Allergic contact dermatitis to nickel.  
+
+Plan  
+- Symptomatic management of nausea: prescribe ondansetron 4 mg PO every 8 hours as needed for nausea/vomiting; consider adding metoclopramide 10 mg PO q6h PRN if symptoms persist.  
+- Encourage small, frequent meals and avoid strong odors; trial of clear liquids progressing to bland diet as tolerated.  
+- Hydration: advise oral rehydration with electrolyte solutions; monitor for signs of dehydration.  
+- Urinary frequency: counsel that increased fluid intake may be contributing; if frequency persists or is bothersome, obtain urinalysis and consider bladder ultrasound to rule out overflow or obstruction.  
+- Review and adjust diabetic control; obtain fasting glucose or HbA1c at next visit.  
+- Continue current antihypertensive regimen (unspecified) and monitor blood pressure at home.  
+- Schedule follow‑up in 5‑7 days or sooner if vomiting worsens, develops blood, fever, or signs of dehydration.  
+- Educate the patient on signs that warrant emergent care (persistent vomiting, inability to retain fluids, severe abdominal pain, hematuria, or urinary retention).  
+- Document nickel allergy in the medical record and advise avoidance of nickel‑containing jewelry.  
+
+Disposition  
+The patient will be discharged home with the above treatment plan and follow‑up instructions. No further inpatient interventions are required at this time.

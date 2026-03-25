@@ -113,7 +113,31 @@ Results are aggregated across 3 independent runs using `rag_models/RAG_To_See_Me
 - **BERTScore F1**: Local semantic accuracy for clinical details
 - **SciSpaCy/MedCAT Entity Recall**: Medical entity extraction coverage
 
-> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/rag-summarization.yml)
+### Fareez OSCE Experiment (40 Conversations x 4 Models = 160 Summaries)
+
+**Dataset**: 40 conversations from [Fareez et al.](https://springernature.figshare.com/collections/5545842) balanced across 5 medical specialties (20 RES, 10 MSK, 5 GAS, 4 CAR, 1 DER). Each conversation paired with condition-matched EHR data from OpenEMR (11,030 synthetic patients).
+
+**Design**: All models use the same pre-detected conditions (via Llama 3.3 70B) for ChromaDB schema retrieval, isolating summary generation quality as the only variable.
+
+| Model | Size | Infrastructure | Summaries | Avg Time | Avg Chars |
+|-------|------|----------------|-----------|----------|-----------|
+| GPT-OSS 120B | 120B | Groq (reasoning API) | 40/40 | 5.3s | 7,072 |
+| Qwen3 32B | 32B | Groq API | 40/40 | 4.2s | 5,568 |
+| GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.8s | 5,275 |
+| MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 42.3s | 2,741 |
+
+**Clinician Evaluation**: 3 physician fellows (GI, IR, ER) will independently rate all 160 summaries on 6 dimensions (Accuracy, Completeness, Organization, Conciseness, Clinical Utility, Overall Quality) using 5-point Likert scales adapted from PDQI-9 and QNOTE. Inter-rater reliability via Krippendorff's alpha, model comparison via Friedman test with Bonferroni-corrected pairwise Wilcoxon.
+
+```bash
+# Run Groq models locally
+python run_fareez_local.py --output-dir results/fareez
+
+# Run MedGemma on Modal
+HF_TOKEN=your_token modal run run_fareez_summaries.py --output-dir results/fareez
+
+# Generate randomized rating packets for clinician evaluation
+python generate_rating_packets.py --output-dir rating_packets
+```
 
 ## ASR Model Evaluation (Word Error Rate)
 

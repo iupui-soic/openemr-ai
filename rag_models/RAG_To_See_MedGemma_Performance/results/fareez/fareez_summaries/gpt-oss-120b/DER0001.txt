@@ -1,0 +1,132 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-03-25 04:57:07
+Time: 5.80s
+Tokens: 9,174 in / 2,290 out
+============================================================
+
+Patient Information  
+Adan Crona is a 45‑year‑old male presenting to the clinic for evaluation of a new rash on his right ankle. He reports a history of type 2 diabetes mellitus, essential hypertension, hyperlipidemia, and chronic kidney disease. He has a known allergy to penicillin, which in childhood caused facial swelling and respiratory difficulty. He also reports allergies to grass pollen and lisinopril.  
+
+Chief Complaint  
+“Rash on my right ankle that has become swollen, red, and painful.”
+
+History of Present Illness  
+The patient notes that approximately one week ago he observed a small, unusual lesion on his right ankle. Over the past 24 hours the area has become increasingly swollen, erythematous, and tender, with the development of a central scab that has now opened, exuding a whitish fluid. He describes the lesion as “bigger than it was before” and “meaner,” and reports that the surrounding skin has become more red. He rates the pain as moderate; it is exacerbated by walking and flexing the ankle but is less uncomfortable on light touch. He also reports a sensation of warmth localized to the affected leg compared with the contralateral side. He denies fever, chills, shortness of breath, chest pain, or systemic malaise beyond a general feeling of being “crummy” for the past two weeks, with increased hunger, weight gain, and fatigue, which he attributes to suboptimal diabetes control. He has not measured his blood glucose recently; his last known hemoglobin A1c was in the 9‑range. He denies any similar lesions in the past.  
+
+Review of Systems  
+Constitutional: Positive for fatigue, increased appetite, and recent weight gain; denies fever, chills, or night sweats.  
+Skin: Positive for right ankle swelling, erythema, pain, warmth, and purulent drainage from an ulcerated lesion; no other rashes noted.  
+Respiratory: Denies dyspnea, cough, or wheezing.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Gastrointestinal: Denies nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or hematuria.  
+Neurologic: Reports a chronic dull decreased sensation in the feet consistent with peripheral neuropathy; no new weakness or numbness.  
+Musculoskeletal: Reports chronic low‑back pain managed with over‑the‑counter analgesics; no recent trauma to the right ankle other than the current lesion.  
+Psychiatric: Reports increased stress related to work and family responsibilities.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (poorly controlled; last A1c ≈9%).  
+- Essential hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 2–4 documented historically, currently with serum creatinine 2.98 mg/dL and eGFR ≈79 mL/min/1.73 m²).  
+- History of myocardial infarction (1997) with ongoing cardiac medication regimen.  
+- Peripheral neuropathy (diabetic).  
+- Chronic low‑back pain.  
+
+Surgical History  
+- Functional endoscopic sinus surgery in adolescence for chronic sinusitis. No other surgeries reported.  
+
+Allergies  
+- Penicillin – causes facial swelling and respiratory difficulty.  
+- Grass pollen – mild seasonal symptoms.  
+- Lisinopril – unspecified reaction.  
+
+Social History  
+The patient lives in an urban setting and sees his children every two weeks. He is currently unemployed but operates his own accounting‑related business on a part‑time basis. He reports occasional tobacco use, increasing to approximately two packs per week over the past two weeks when stressed. Alcohol consumption is primarily on weekends, averaging two to four drinks per occasion. He does not use recreational drugs. Exercise is minimal.  
+
+Family History  
+Maternal relatives have a high prevalence of diabetes, hypertension, and hyperlipidemia. Paternal side is reportedly healthier. One maternal aunt had lung cancer and was a smoker.  
+
+Current Medications (home)  
+- Rosuvastatin (dose not specified).  
+- Metformin (dose not specified).  
+- Two additional oral diabetic agents (patient unable to recall exact names; one presumed to be a sulfonylurea).  
+- No insulin therapy at this time.  
+- Aspirin 325 mg daily (historical record).  
+- Losartan 25 mg daily (historical record).  
+- Diphenhydramine 25 mg PRN (historical record).  
+
+Vital Signs (most recent documented)  
+Blood pressure: not recorded at this visit.  
+Heart rate: 83 beats/min (historical).  
+Respiratory rate: 15 breaths/min (historical).  
+Temperature: not measured; patient reports feeling “hot” locally on the right leg.  
+Weight: not recorded.  
+Height: 173.5 cm (historical).  
+BMI: 28.1 kg/m² (historical).  
+
+Physical Examination  
+General: Alert, cooperative male in no acute distress.  
+Skin: Right ankle shows a 3‑cm area of erythema with well‑demarcated borders, marked swelling, and warmth compared with the left side. Central ulceration with surrounding scab formation is noted; the base exudes a thin, whitish purulent material. No overt necrosis or bullae observed. Tenderness present on palpation; pain increases with passive dorsiflexion. No crepitus. No lymphangitic streaking noted.  
+Cardiovascular: Regular rate and rhythm; no murmurs.  
+Respiratory: Clear breath sounds bilaterally.  
+Abdomen: Soft, nondistended, nontender.  
+Extremities: Peripheral pulses palpable bilaterally. Diminished sensation to light touch noted in both feet consistent with diabetic neuropathy. No edema.  
+
+Laboratory Data (most recent)  
+- Serum creatinine: 2.98 mg/dL (elevated).  
+- Estimated GFR: 79 mL/min/1.73 m².  
+- Blood glucose: 94 mg/dL (random).  
+- Hemoglobin A1c: previously reported in the 9 % range (no current value).  
+- Lipid panel: Total cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 32 mg/dL, triglycerides 177 mg/dL.  
+- Electrolytes: Sodium 139.8 mmol/L, Potassium 4.5 mmol/L, Chloride not listed, CO₂ 22 mmol/L.  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, Alk Phos 123.7 U/L, Bilirubin 0.77 mg/dL.  
+- Albumin 3.88 g/dL, total protein 6.52 g/dL, globulin 2.16 g/L.  
+
+Assessment  
+1. Acute cellulitis of the right ankle with secondary ulceration and purulent drainage, likely bacterial infection superimposed on diabetic skin breakdown.  
+2. Type 2 diabetes mellitus, poorly controlled (last A1c ≈9%).  
+3. Chronic kidney disease, stage 3–4, with elevated creatinine.  
+4. Peripheral neuropathy secondary to diabetes.  
+5. Hypertension, hyperlipidemia, and history of myocardial infarction – stable on current regimen.  
+6. Tobacco use disorder, increased recent consumption.  
+7. Alcohol use, moderate weekend intake.  
+
+Plan  
+Medical Management  
+- Initiate oral antibiotic therapy targeting typical cellulitis pathogens and covering potential methicillin‑resistant Staphylococcus aureus (MRSA) given diabetic status: Cephalexin 500 mg PO four times daily for 7 days, with the option to switch to clindamycin 300 mg PO three times daily if MRSA risk is high or if beta‑lactam allergy emerges.  
+- If significant purulence persists after 48 hours, consider culture of wound drainage and possible escalation to broader‑spectrum agents (e.g., doxycycline or TMP‑SMX).  
+- Provide wound care instructions: clean the ulcer daily with saline, apply sterile non‑adherent dressing, and keep the area covered.  
+- Counsel on off‑loading the affected foot/ankle and avoiding further trauma.  
+
+Diabetes Management  
+- Reinforce the importance of regular glucose monitoring; advise checking fasting glucose at least twice daily and obtaining a repeat hemoglobin A1c within the next 4–6 weeks.  
+- Review current oral regimen; consider adding a GLP‑1 receptor agonist or SGLT2 inhibitor if renal function permits, and discuss the possibility of basal insulin initiation if glycemic targets remain unmet.  
+
+Renal and Cardiovascular Care  
+- Continue rosuvastatin and antihypertensive therapy; monitor blood pressure at home.  
+- Arrange follow‑up with nephrology given chronic kidney disease and elevated creatinine.  
+
+Lifestyle Interventions  
+- Strongly advise smoking cessation; offer referral to tobacco cessation program and discuss nicotine replacement therapy.  
+- Limit alcohol intake to ≤2 drinks per day; provide brief counseling on safe use.  
+- Encourage gradual increase in physical activity as tolerated, focusing on low‑impact exercises to improve glycemic control and cardiovascular health.  
+
+Follow‑Up  
+- Return to clinic in 48‑72 hours for reassessment of the ankle, wound progression, and response to antibiotics.  
+- Follow‑up with primary care provider within one week to review diabetes control, medication adjustments, and lab work.  
+- Urgent return precautions: increased pain, spreading redness, fever >100.4 °F, swelling of the entire leg, or any signs of systemic infection.  
+
+Patient Education  
+The patient was educated on the signs of worsening infection, proper wound care techniques, the importance of glycemic control in infection healing, and the risks associated with smoking and excessive alcohol use. He verbalized understanding and agreed to the plan.  
+
+Discharge Instructions  
+- Take prescribed antibiotics exactly as directed; complete the full course even if symptoms improve.  
+- Perform daily wound cleaning and dressing changes.  
+- Monitor blood glucose and keep a log for the next two weeks.  
+- Maintain adequate hydration and nutrition.  
+- Contact the clinic promptly if any of the urgent return precautions develop.  
+
+Prepared by: _______________________   Date: ____________   (Electronic medical record)

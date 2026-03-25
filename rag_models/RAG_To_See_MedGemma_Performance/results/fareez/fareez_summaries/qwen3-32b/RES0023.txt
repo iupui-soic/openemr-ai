@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-03-25 04:50:59
+Time: 3.73s
+Tokens: 13,533 in / 1,045 out
+============================================================
+
+Patient Information  
+The patient is a 109-year-old male with a complex medical history, including hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4, end-stage renal disease, and a history of coronary artery bypass grafting. He currently resides with his wife and two children and works at a local grocery store. His home medications include Ramipril and Metformin, with no reported allergies. He denies the use of tobacco, cannabis, or other recreational drugs, and consumes alcohol occasionally, approximately 3 to 4 beers per week.
+
+Chief Complaint  
+The patient presents with a 5-day history of a progressively worsening dry cough, associated with fatigue, fever, and night sweats. The cough is persistent throughout the day and has begun to interfere with sleep. He also reports a sore throat, decreased sense of smell, and a recent episode of night sweats. He denies chest pain, nausea, vomiting, chills, or weight loss, but has gained approximately 5 to 10 pounds recently.
+
+History of Present Illness  
+The patient first noted a dry cough five days ago, which has progressively worsened over the course of the illness. He reports that the cough is persistent and has started to cause throat pain and mild chest discomfort. He has also experienced subjective fevers, fatigue, and night sweats. The sense of smell was noted to be diminished starting the day before the visit. The patient has not measured his temperature at home but feels "sweaty" and has been experiencing fatigue. He denies any recent travel, but works in a public setting and has had potential exposure to others in the community.
+
+Review of Systems  
+Constitutional: The patient reports fatigue, subjective fevers, and night sweats.  
+Respiratory: Persistent dry cough, throat pain, and mild chest discomfort after coughing. No hemoptysis or shortness of breath.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: No headache, dizziness, or changes in mental status.  
+Musculoskeletal: No joint pain or muscle aches.  
+Integumentary: No rash or skin changes reported.  
+Endocrine: No new-onset polyuria, polydipsia, or weight changes beyond the reported gain.  
+Hematologic: No bleeding or bruising.  
+Psychiatric: No new-onset anxiety or depression.  
+Allergic/Immunologic: No new-onset allergic symptoms.  
+Other: No recent injuries or falls.
+
+Past Medical History  
+The patient has a long-standing history of hypertension, type 2 diabetes mellitus, chronic kidney disease (stage 4), and end-stage renal disease. He has a history of coronary artery bypass grafting and is currently awaiting a kidney transplant. His medical history also includes atrial fibrillation, hyperlipidemia, metabolic syndrome, and a history of gallbladder removal. He has a documented history of chronic dental issues, including gingivitis, gingival disease, and dental caries.
+
+Past Surgical History  
+The patient underwent cholecystectomy approximately 10 years ago.
+
+Social History  
+The patient works full-time at a grocery store and resides with his wife and two children. He consumes alcohol occasionally, approximately 3 to 4 beers per week. He denies the use of tobacco or recreational drugs. He reports living with family and has limited social contact.
+
+Family History  
+The patient reports a family history of asthma, with both his mother and a sibling affected.
+
+Current Medications  
+The patient is currently taking Ramipril and Metformin for hypertension and diabetes, respectively. He also takes vitamin D as a supplement.
+
+Allergies  
+No known drug allergies. The patient reports environmental allergies, such as pollen.
+
+Objective  
+Vital signs were not available in the electronic health record. Physical examination findings were not provided. Laboratory results included normal sodium, potassium, and glucose levels. Creatinine was within normal limits, and there were no acute abnormalities in the complete metabolic panel. No imaging studies were performed at the time of this visit.
+
+Assessment  
+The patient presents with a clinical picture consistent with an acute upper respiratory infection, potentially viral in nature. Given the persistent cough, fever, and night sweats, a viral etiology is suspected. The patient’s history of chronic medical conditions places him at higher risk for complications from respiratory infections. A concern for COVID-19 was raised due to the timing of symptoms and the current public health context.
+
+Plan  
+A nasopharyngeal swab for SARS-CoV-2 was obtained. The patient and his household have been advised to self-isolate for 14 days pending the results. Symptomatic treatment for cough and fever was discussed, and the patient was advised to monitor for worsening symptoms, including shortness of breath, persistent chest pain, or new neurological symptoms. He was instructed to follow up with his primary care provider for further evaluation and management. No new medications were prescribed at this time.

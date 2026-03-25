@@ -1,0 +1,73 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-03-25 04:53:11
+Time: 3.00s
+Tokens: 13,675 in / 1,083 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male who presents with his mother for evaluation of acute abdominal symptoms.
+
+Chief Complaint  
+The mother reports that her son has been experiencing abdominal pain, vomiting, watery diarrhea, and fever for the past few days.
+
+History of Present Illness  
+The abdominal pain began approximately three days ago and has been described as diffuse and non‑localized. Two days ago, the child started vomiting; he has vomited six times in total, with the first episode containing food contents and subsequent episodes consisting of yellowish material. Diarrhea has been watery and frequent, with about six to seven loose stools in the last 24 hours. Fever developed yesterday with a recorded temperature of 38.3 °C and was accompanied by chills. The mother reports that the child has been irritable, quiet, and sleeping most of the day, but has not exhibited any additional symptoms such as headache, ear pain, eye redness, sore throat, cough, shortness of breath, chest pain, urinary complaints, rash, or muscle aches.
+
+Review of Systems  
+Constitutional: Fever (38.3 °C) and chills.  
+Respiratory: No cough, no shortness of breath, no runny nose.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Abdominal pain, vomiting, watery diarrhea.  
+Genitourinary: No dysuria, no increased frequency.  
+Musculoskeletal: No joint or muscle pain.  
+Dermatologic: No rash or skin changes.  
+Neurologic: No headaches.  
+ENT: No ear pain, no sore throat.  
+Psychosocial: No behavioral changes beyond irritability.
+
+Past Medical History  
+The child has no known medical conditions, no prior hospitalizations, and has not taken any regular medications.
+
+Family History  
+No family history of inflammatory bowel disease, celiac disease, or other gastrointestinal disorders. No known history of heart or lung disease in the immediate family.
+
+Social History  
+The child lives at home with his mother, father, and two older siblings. The household reports no smoking, no pets, and no recent travel. There have been no recent illnesses in the household, though the child returned to school last week. The mother reports no recent dietary changes and that meals have been home‑prepared.
+
+Current Medications  
+None. The child is not on any chronic or acute medications.
+
+Physical Examination  
+Vital signs were not documented during the encounter. No physical examination was performed at the time of this visit. The mother reports that the child appears lethargic and is not eating or drinking well. No abdominal tenderness was noted by the mother on palpation, and no guarding or rebound pain was reported.
+
+Laboratory Studies  
+No laboratory studies have been obtained for the child at this time. The provider plans to obtain a COVID‑19 test and basic metabolic panel to assess for dehydration and electrolyte disturbances.
+
+Assessment  
+The presentation is most consistent with viral gastroenteritis, likely due to a common enteric virus. COVID‑19 infection is a possible etiology given the gastrointestinal manifestations and the mother’s concern, and a rapid test has been ordered. No red flag features such as blood in vomitus or stool, severe pain, or significant dehydration are present at this time.
+
+Plan  
+1. **Diagnostic Testing**  
+   - Perform rapid antigen test for SARS‑CoV‑2.  
+   - Order a complete blood count and basic metabolic panel to evaluate for leukocytosis, anemia, and electrolyte status.  
+   - Consider stool studies if symptoms persist beyond 48–72 hours or if there is any blood or mucus.
+
+2. **Therapeutic Management**  
+   - Initiate oral rehydration therapy with age‑appropriate electrolyte solution.  
+   - Encourage small, frequent feeds; if the child tolerates, offer bland foods such as bananas, rice, applesauce, and toast (BRAT diet).  
+   - Use anti‑emetic medication (e.g., oral ondansetron) if vomiting persists and interferes with hydration.  
+   - Provide acetaminophen for fever or discomfort; avoid NSAIDs if possible.
+
+3. **Discharge Instructions**  
+   - Continue to monitor for worsening abdominal pain, persistent vomiting (≥ 2 episodes per day), or fever > 38.0 °C.  
+   - Observe for signs of dehydration: decreased urine output, dry mucous membranes, sunken eyes, or lethargy.  
+   - Maintain oral hydration; if the child refuses fluids, consider IV fluids in an urgent care setting.  
+   - Avoid dairy and high‑fat foods until symptoms improve.
+
+4. **Follow‑up**  
+   - Return to the clinic or urgent care if symptoms worsen or if the child exhibits signs of dehydration or persistent vomiting.  
+   - A telehealth follow‑up is scheduled for 48 hours to review symptom progression and test results.
+
+The patient and mother were educated on the expected course of viral gastroenteritis, the importance of hydration, and red‑flag symptoms that warrant immediate medical attention. The mother was advised to contact the clinic with any concerns or if the child’s condition deteriorates.

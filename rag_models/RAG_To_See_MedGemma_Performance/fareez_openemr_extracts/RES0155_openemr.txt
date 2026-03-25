@@ -1,0 +1,261 @@
+OpenEMR Patient Extract for RES0155
+Matched Condition: Pneumonia
+Patient ID: 982
+============================================================
+
+Demographics
+Name: Adela Tapia
+DOB: 1914-01-07
+Sex: Female
+Unit Number: 982
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180
+
+Social History
+Coffee: None
+Tobacco: ||0000-00-00
+Alcohol: ||0000-00-00
+Recreational Drugs: None
+Exercise: None
+Sleep: None
+
+Family History
+Mother: None
+Father: None
+Siblings: None
+Cancer: None
+Diabetes: None
+Heart Problems: None
+Stroke: None
+
+Vitals
+Date: 2011-03-23 23:17:27
+Temperature: N/A C
+Blood Pressure: N/A/N/A mmHg
+Heart Rate: 92.00 bpm
+Respiration Rate: 12.00 breaths/min
+SpO2: N/A %
+Weight: N/A kg
+Height: 162.70 cm
+BMI: 27.43
+
+Encounter Info
+Encounter: 73704
+Admission: 2021-03-17 23:17:27 -> Discharge: 2021-03-17 23:32:27
+Chief Complaint: Death Certification
+Attending: Dr. External Provider (None)
+
+Past Medical History
+- Risk activity involvement (finding) (SNOMED-CT:160968000, Onset: 1931-02-25 22:28:46, End: Ongoing)
+- Received higher education (finding) (SNOMED-CT:224299000, Onset: 1932-03-02 22:11:23, End: Ongoing)
+- Essential hypertension (disorder) (SNOMED-CT:59621000, Onset: 1948-03-24 21:17:27, End: Ongoing)
+- Body mass index 30+ - obesity (finding) (SNOMED-CT:162864005, Onset: 1950-04-05 21:17:27, End: Ongoing)
+- Metabolic syndrome X (disorder) (SNOMED-CT:237602007, Onset: 1953-04-22 21:17:27, End: Ongoing)
+- Prediabetes (SNOMED-CT:15777000, Onset: 1953-04-22 21:17:27, End: Ongoing)
+- Past pregnancy history of miscarriage (situation) (SNOMED-CT:161744009, Onset: 1954-03-08 21:17:27, End: Ongoing)
+- Refugee (person) (SNOMED-CT:446654005, Onset: 1958-01-01 22:05:19, End: Ongoing)
+- Hyperlipidemia (SNOMED-CT:55822004, Onset: 1979-09-19 22:17:27, End: Ongoing)
+- Loss of teeth (disorder) (SNOMED-CT:37320007, Onset: 1982-10-27 22:17:27, End: Ongoing)
+- Preinfarction syndrome (disorder) (SNOMED-CT:4557003, Onset: 1987-08-12 23:12:48, End: Ongoing)
+- History of myocardial infarction (situation) (SNOMED-CT:399211009, Onset: 1987-08-13 06:34:03, End: Ongoing)
+- Ischemic heart disease (disorder) (SNOMED-CT:414545008, Onset: 1993-12-08 22:17:27, End: Ongoing)
+- Abnormal findings diagnostic imaging heart+coronary circulat (finding) (SNOMED-CT:274531002, Onset: 1993-12-18 21:58:15, End: Ongoing)
+- History of coronary artery bypass grafting (situation) (SNOMED-CT:399261000, Onset: 1993-12-25 01:21:56, End: Ongoing)
+- Chronic kidney disease stage 1 (disorder) (SNOMED-CT:431855005, Onset: 1999-12-08 22:17:27, End: 2013-06-06 01:28:19)
+- Disorder of kidney due to diabetes mellitus (disorder) (SNOMED-CT:127013003, Onset: 1999-12-08 22:17:27, End: Ongoing)
+- Chronic kidney disease stage 2 (disorder) (SNOMED-CT:431856006, Onset: 2000-05-03 22:17:27, End: 2013-06-06 01:28:19)
+- Microalbuminuria due to type 2 diabetes mellitus (disorder) (SNOMED-CT:90781000119102, Onset: 2000-05-03 22:17:27, End: Ongoing)
+- Chronic kidney disease stage 3 (disorder) (SNOMED-CT:433144002, Onset: 2001-09-26 22:17:27, End: 2013-06-06 01:28:19)
+- Proteinuria due to type 2 diabetes mellitus (disorder) (SNOMED-CT:157141000119108, Onset: 2001-09-26 22:17:27, End: Ongoing)
+- Alzheimer's disease (disorder) (SNOMED-CT:26929004, Onset: 2003-04-16 22:17:27, End: Ongoing)
+- Has a criminal record (finding) (SNOMED-CT:266948004, Onset: 2006-11-01 22:51:16, End: Ongoing)
+- Chronic kidney disease stage 4 (disorder) (SNOMED-CT:431857002, Onset: 2008-09-10 23:17:27, End: 2013-06-06 01:28:19)
+- Awaiting transplantation of kidney (situation) (SNOMED-CT:698306007, Onset: 2008-10-10 23:17:27, End: 2013-06-06 01:28:19)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2011-01-26 23:14:34, End: 2011-03-23 23:48:18)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2011-01-26 23:14:34, End: 2011-06-09 00:02:24)
+- Reports of violence in the environment (finding) (SNOMED-CT:424393004, Onset: 2011-02-16 22:58:58, End: 2011-03-23 23:48:18)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-02-23 22:17:27, End: 2011-04-13 23:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2011-03-23 23:48:18, End: 2011-06-09 00:02:24)
+- Limited social contact (finding) (SNOMED-CT:423315002, Onset: 2011-03-23 23:48:18, End: 2011-04-13 23:55:18)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-04-20 23:17:27, End: 2011-04-20 23:17:27)
+- Primary dental caries (disorder) (SNOMED-CT:109570002, Onset: 2011-04-28 01:24:44, End: 2011-04-28 01:59:33)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-05-25 23:17:27, End: 2011-05-25 23:17:27)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2011-05-26 00:06:00, End: 2011-06-09 00:02:24)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-06-01 23:17:27, End: 2011-08-10 23:17:27)
+- Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2011-06-09 00:02:24, End: 2011-07-07 00:16:04)
+- Social isolation (finding) (SNOMED-CT:422650009, Onset: 2011-06-09 00:02:24, End: 2011-07-07 00:16:04)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2011-06-09 02:13:38, End: 2011-07-21 01:46:33)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2011-07-07 00:16:04, End: 2011-11-30 23:08:46)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2011-07-07 00:16:04, End: 2011-08-10 23:53:52)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2011-08-10 23:53:52, End: 2011-08-25 00:05:10)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-08-17 23:17:27, End: 2011-08-17 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-08-24 23:17:27, End: 2011-09-14 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2011-08-25 00:05:10, End: 2011-10-19 23:56:46)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2011-09-15 01:36:35, End: 2012-02-29 22:58:00)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2011-09-15 02:47:27, End: 2011-09-29 02:23:57)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-09-21 23:17:27, End: 2011-09-21 23:17:27)
+- Primary dental caries (disorder) (SNOMED-CT:109570002, Onset: 2011-09-29 02:23:57, End: 2011-09-29 02:49:22)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-10-19 23:17:27, End: 2011-10-26 23:17:27)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2011-10-20 00:32:59, End: 2011-11-10 00:39:57)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-11-02 23:17:27, End: 2011-11-02 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2011-11-02 23:54:10, End: 2012-01-11 23:14:57)
+- Leaking dental filling (finding) (SNOMED-CT:278598003, Onset: 2011-11-10 00:39:57, End: 2011-11-10 01:00:42)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-11-30 22:17:27, End: 2012-01-18 22:17:27)
+- Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2011-11-30 23:08:46, End: 2012-01-11 23:14:57)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2012-01-11 23:14:57, End: 2012-02-15 23:06:10)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2012-01-12 01:30:06, End: 2012-01-26 01:12:03)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-02-15 22:17:27, End: 2012-02-22 22:17:27)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2012-02-15 23:06:10, End: 2012-02-29 22:58:00)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2012-02-15 23:06:10, End: 2012-02-29 22:58:00)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2012-02-16 00:44:20, End: 2012-03-15 04:13:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-02-29 22:17:27, End: 2012-02-29 22:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2012-02-29 22:58:00, End: 2012-05-17 00:08:16)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-03-07 22:17:27, End: 2012-04-04 23:17:27)
+- Gingival disease (disorder) (SNOMED-CT:18718003, Onset: 2012-03-15 02:03:59, End: 2012-03-15 03:36:35)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2012-04-05 01:45:18, End: 2012-04-26 02:16:01)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-04-11 23:17:27, End: 2012-04-11 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-04-18 23:17:27, End: 2012-05-23 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2012-04-18 23:57:18, End: 2012-05-17 00:08:16)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2012-04-19 01:02:51, End: 2012-09-20 00:16:32)
+- Unemployed (finding) (SNOMED-CT:73438004, Onset: 2012-05-17 00:08:16, End: 2012-10-31 23:58:17)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-05-30 23:17:27, End: 2012-05-30 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-06-06 23:17:27, End: 2012-06-06 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-06-27 23:17:27, End: 2012-06-27 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-07-04 23:17:27, End: 2012-07-04 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-08-01 23:17:27, End: 2012-08-01 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2012-08-02 00:14:09, End: 2012-09-06 00:15:33)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-08-22 23:17:27, End: 2012-08-22 23:17:27)
+- Social isolation (finding) (SNOMED-CT:422650009, Onset: 2012-08-23 00:15:16, End: 2012-09-06 00:15:33)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-08-29 23:17:27, End: 2012-09-05 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-09-12 23:17:27, End: 2012-09-26 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2012-09-20 00:16:32, End: 2012-11-28 23:09:14)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-10-03 23:17:27, End: 2012-10-03 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-10-10 23:17:27, End: 2012-10-24 23:17:27)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2012-10-18 01:22:17, End: 2013-05-23 01:18:41)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-10-31 23:17:27, End: 2012-11-28 22:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2012-10-31 23:58:17, End: 2012-11-28 23:09:14)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2012-11-28 23:09:14, End: 2012-12-26 23:00:56)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-12-05 22:17:27, End: 2012-12-19 22:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2012-12-12 22:55:05, End: 2012-12-26 23:00:56)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2012-12-26 22:17:27, End: 2013-01-09 22:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2012-12-26 23:00:56, End: 2013-01-09 23:17:21)
+- Limited social contact (finding) (SNOMED-CT:423315002, Onset: 2012-12-26 23:00:56, End: 2013-01-09 23:17:21)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2013-01-09 23:17:21, End: 2013-02-06 23:08:46)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2013-01-09 23:17:21, End: 2013-02-20 23:06:32)
+- Reports of violence in the environment (finding) (SNOMED-CT:424393004, Onset: 2013-01-09 23:17:21, End: 2013-01-23 23:07:41)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-01-16 22:17:27, End: 2013-01-30 22:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-02-06 22:17:27, End: 2013-02-06 22:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2013-02-06 23:08:46, End: 2013-02-20 23:06:32)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-02-13 22:17:27, End: 2013-03-06 22:17:27)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2013-02-20 23:06:32, End: 2013-03-06 22:53:18)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2013-03-06 22:53:18, End: 2013-06-20 00:01:10)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-03-13 23:17:27, End: 2013-03-13 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-03-20 23:17:27, End: 2013-03-20 23:17:27)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2013-03-20 23:56:06, End: 2015-03-04 23:05:28)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2013-03-21 00:51:10, End: 2014-04-30 23:59:43)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-03-27 23:17:27, End: 2013-05-15 23:17:27)
+- Acute bronchitis (disorder) (SNOMED-CT:10509002, Onset: 2013-05-22 23:17:27, End: 2013-05-29 23:17:27)
+- History of renal transplant (situation) (SNOMED-CT:161665007, Onset: 2013-06-06 01:28:19, End: Ongoing)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2013-06-12 23:17:27, End: 2013-07-03 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-06-19 23:17:27, End: 2014-03-26 23:17:27)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2013-06-20 00:01:10, End: 2013-09-18 23:48:12)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2013-06-20 00:52:51, End: 2013-07-18 02:36:10)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2013-09-18 23:48:12, End: 2015-04-02 00:14:31)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2014-04-30 23:17:27, End: 2014-04-30 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2014-10-01 23:17:27, End: 2014-10-01 23:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2015-03-04 22:17:27, End: 2015-04-01 23:17:27)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2015-03-05 01:07:49, End: 2015-03-19 02:30:59)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2015-04-02 00:14:31, End: 2015-04-15 23:58:04)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2015-04-02 00:14:31, End: 2015-05-14 00:16:03)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2015-04-08 23:17:27, End: 2018-08-29 23:17:27)
+- Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2015-04-15 23:58:04, End: 2015-05-14 00:16:03)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2015-04-16 00:39:43, End: 2015-04-30 02:00:11)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2015-05-06 23:17:27, End: 2015-05-22 23:17:27)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2015-05-14 00:16:03, End: 2019-06-05 23:54:52)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2015-05-14 01:57:40, End: 2015-05-28 01:40:33)
+- Reports of violence in the environment (finding) (SNOMED-CT:424393004, Onset: 2016-05-19 00:06:34, End: 2017-05-25 00:00:49)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2017-05-25 00:00:49, End: 2019-06-05 23:54:52)
+- Reports of violence in the environment (finding) (SNOMED-CT:424393004, Onset: 2018-08-30 00:05:17, End: 2018-09-12 23:56:33)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2018-09-05 23:17:27, End: 2019-06-05 23:17:27)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2018-09-13 01:37:44, End: 2018-10-04 01:04:57)
+- Acute bronchitis (disorder) (SNOMED-CT:10509002, Onset: 2018-09-26 23:17:27, End: 2018-10-10 23:37:58)
+- Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2019-06-05 23:54:52, End: 2020-06-11 00:07:00)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2019-06-06 01:03:29, End: 2019-06-20 01:58:02)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2020-06-10 23:17:27, End: 2020-06-10 23:17:27)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2020-06-11 00:07:00, End: 2021-01-06 22:59:59)
+- Social isolation (finding) (SNOMED-CT:422650009, Onset: 2020-06-11 00:07:00, End: Ongoing)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2020-06-11 01:04:51, End: 2020-06-25 02:08:15)
+- Acute viral pharyngitis (disorder) (SNOMED-CT:195662009, Onset: 2020-12-27 22:17:27, End: 2021-01-09 10:17:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2021-01-06 22:17:27, End: Ongoing)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2021-01-06 22:59:59, End: Ongoing)
+- Limited social contact (finding) (SNOMED-CT:423315002, Onset: 2021-01-06 22:59:59, End: Ongoing)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2021-01-07 01:24:25, End: 2021-01-21 01:23:52)
+- Pneumonia (SNOMED-CT:233604007, Onset: 2021-03-01 22:17:27, End: Ongoing)
+
+Lab Results
+- Cause of Death [US Standard Certificate of Death] (LOINC: 69453-9): {entry.value} UNK (Range: )
+- Total score [AUDIT-C] (LOINC: 75626-2): 0 {score} (Range: )
+- Total score [HARK] (LOINC: 76504-0): 0 {score} (Range: )
+- Patient Health Questionnaire 2 item (PHQ-2) total score [Reported] (LOINC: 55758-7): 2 {score} (Range: )
+- Carbon dioxide, total [Moles/volume] in Blood (LOINC: 20565-8): 26.88 mmol/L (Range: )
+- Potassium [Moles/volume] in Blood (LOINC: 6298-4): 4.85 mmol/L (Range: )
+- Calcium [Mass/volume] in Blood (LOINC: 49765-1): 9.48 mg/dL (Range: )
+- Urea nitrogen [Mass/volume] in Blood (LOINC: 6299-2): 10.35 mg/dL (Range: )
+- Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ] (LOINC: 70274-6): 0 {score} (Range: )
+- Chloride [Moles/volume] in Blood (LOINC: 2069-3): 106.74 mmol/L (Range: )
+- Sodium [Moles/volume] in Blood (LOINC: 2947-0): 138.42 mmol/L (Range: )
+- Creatinine [Mass/volume] in Blood (LOINC: 38483-4): 0.42 mg/dL (Range: )
+- Glucose [Mass/volume] in Blood (LOINC: 2339-0): 96.65 mg/dL (Range: )
+- Cholesterol [Mass/volume] in Serum or Plasma (LOINC: 2093-3): 204.41352136087303 mg/dL (Range: )
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (LOINC: 1742-6): 51.97560089166912 U/L (Range: )
+- Bilirubin.total [Mass/volume] in Serum or Plasma (LOINC: 1975-2): 0.6911159158829362 mg/dL (Range: )
+- Albumin [Mass/volume] in Serum or Plasma (LOINC: 1751-7): 3.731954980634911 g/dL (Range: )
+- Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD) (LOINC: 33914-3): 88.50485011625659 mL/min (Range: )
+- Chloride [Moles/volume] in Blood (LOINC: 2069-3): 105 mmol/L (Range: )
+- Sodium [Moles/volume] in Blood (LOINC: 2947-0): 139.4 mmol/L (Range: )
+
+Medications
+- 24 HR Donepezil hydrochloride 10 MG / Memantine hydrochloride 28 MG Extended Release Oral Capsule (RxNorm: 1599803)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- 24 HR tacrolimus 1 MG Extended Release Oral Tablet (RxNorm: 1664463)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2013-06-19 (Active)
+- 1 ML tacrolimus 5 MG/ML Injection (RxNorm: 108515)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2013-06-06 (Active)
+- Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution (RxNorm: 1043400)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2013-05-29 (Active)
+- sodium fluoride 0.0272 MG/MG Oral Gel (RxNorm: 1535362)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2011-07-21 (Active)
+- 1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen] (RxNorm: 205923)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2011-03-31 (Active)
+- insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin] (RxNorm: 106892)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2011-03-23 (Active)
+- amLODIPine 2.5 MG Oral Tablet (RxNorm: 308136)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2011-03-23 (Active)
+- Galantamine 4 MG Oral Tablet (RxNorm: 310436)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2016-01-05 (Active)
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- aspirin 81 MG Oral Tablet (RxNorm: 243670)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- 24 HR metoprolol succinate 100 MG Extended Release Oral Tablet (RxNorm: 866412)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- atorvastatin 40 MG Oral Tablet (RxNorm: 617311)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- valsartan 320 MG Oral Tablet (RxNorm: 349200)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)

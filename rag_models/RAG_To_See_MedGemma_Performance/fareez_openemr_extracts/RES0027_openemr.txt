@@ -1,0 +1,132 @@
+OpenEMR Patient Extract for RES0027
+Matched Condition: Acute Bronchitis
+Patient ID: 103
+============================================================
+
+Demographics
+Name: Abbey Eliza Schmitt
+DOB: 1965-09-27
+Sex: Female
+Unit Number: 103
+Address: 291 Franecki Union, Hudson, Massachusetts 01749
+
+Social History
+Coffee: None
+Tobacco: ||0000-00-00
+Alcohol: ||0000-00-00
+Recreational Drugs: None
+Exercise: None
+Sleep: None
+
+Family History
+Mother: None
+Father: None
+Siblings: None
+Cancer: None
+Diabetes: None
+Heart Problems: None
+Stroke: None
+
+Vitals
+Date: 2012-02-20 20:36:01
+Temperature: N/A C
+Blood Pressure: N/A/N/A mmHg
+Heart Rate: 98.00 bpm
+Respiration Rate: 15.00 breaths/min
+SpO2: N/A %
+Weight: N/A kg
+Height: 162.80 cm
+BMI: 30.06
+
+Encounter Info
+Encounter: 6425
+Admission: 2021-07-26 21:36:01 -> Discharge: 2021-07-26 21:51:01
+Chief Complaint: Death Certification
+Attending: Dr. External Provider (None)
+
+Past Medical History
+- Received higher education (finding) (SNOMED-CT:224299000, Onset: 1983-11-21 21:35:52, End: Ongoing)
+- Past pregnancy history of miscarriage (situation) (SNOMED-CT:161744009, Onset: 1993-10-31 21:54:41, End: Ongoing)
+- Essential hypertension (disorder) (SNOMED-CT:59621000, Onset: 1999-12-13 20:36:01, End: Ongoing)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2001-12-24 21:07:57, End: 2014-03-03 21:33:14)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2004-08-09 22:22:31, End: Ongoing)
+- Reports of violence in the environment (finding) (SNOMED-CT:424393004, Onset: 2010-02-08 21:19:42, End: 2012-02-20 21:11:30)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-02-14 20:36:01, End: 2012-02-20 20:36:01)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2011-02-14 21:27:46, End: 2013-02-25 21:34:53)
+- Body mass index 30+ - obesity (finding) (SNOMED-CT:162864005, Onset: 2012-02-20 20:36:01, End: Ongoing)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2013-02-25 20:36:01, End: 2015-03-09 21:36:01)
+- Limited social contact (finding) (SNOMED-CT:423315002, Onset: 2013-02-25 21:34:53, End: 2014-03-03 21:33:14)
+- Chronic pain (finding) (SNOMED-CT:82423001, Onset: 2014-02-05 20:36:01, End: Ongoing)
+- Chronic low back pain (finding) (SNOMED-CT:278860009, Onset: 2014-02-05 20:36:01, End: Ongoing)
+- Chronic neck pain (finding) (SNOMED-CT:1121000119107, Onset: 2014-02-05 20:36:01, End: Ongoing)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2014-03-03 21:33:14, End: 2016-03-14 22:15:39)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2014-09-22 19:36:01, End: 2014-10-15 19:36:01)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2015-01-21 07:36:01, End: 2015-01-31 07:36:01)
+- Osteoarthritis of knee (SNOMED-CT:239873007, Onset: 2015-01-28 20:36:01, End: Ongoing)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2015-03-09 22:13:36, End: 2016-03-14 22:15:39)
+- Gingival disease (disorder) (SNOMED-CT:18718003, Onset: 2015-03-24 00:20:09, End: 2015-03-24 01:51:33)
+- Acute bronchitis (disorder) (SNOMED-CT:10509002, Onset: 2015-08-19 18:36:01, End: 2015-08-29 18:52:27)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2016-03-14 21:36:01, End: 2016-03-14 21:36:01)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2016-03-14 22:15:39, End: 2017-03-20 22:06:21)
+- Gingival disease (disorder) (SNOMED-CT:18718003, Onset: 2016-03-29 00:27:56, End: 2016-03-29 02:40:02)
+- Chronic congestive heart failure (disorder) (SNOMED-CT:88805009, Onset: 2016-11-10 20:36:01, End: Ongoing)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2017-01-29 19:36:01, End: 2017-02-10 19:36:01)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2017-03-20 21:36:01, End: 2017-03-20 21:36:01)
+- Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2017-03-20 22:06:21, End: 2018-03-26 22:34:54)
+- Misuses drugs (finding) (SNOMED-CT:361055000, Onset: 2017-03-20 22:44:46, End: 2018-03-27 00:17:43)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2017-05-20 08:36:01, End: 2017-06-04 08:36:01)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2018-03-26 21:36:01, End: 2020-04-06 21:36:01)
+- Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2018-03-26 22:34:54, End: 2019-04-01 22:27:02)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2018-03-27 00:17:43, End: 2018-04-10 00:37:32)
+- Acute viral pharyngitis (disorder) (SNOMED-CT:195662009, Onset: 2018-09-25 11:36:01, End: 2018-10-08 03:36:01)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2019-04-01 22:27:02, End: Ongoing)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2020-04-06 22:21:34, End: 2021-04-12 22:17:03)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2021-04-12 21:36:01, End: Ongoing)
+- Chronic kidney disease stage 2 (disorder) (SNOMED-CT:431856006, Onset: 2021-04-12 21:36:01, End: Ongoing)
+- Disorder of kidney due to diabetes mellitus (disorder) (SNOMED-CT:127013003, Onset: 2021-04-12 21:36:01, End: Ongoing)
+- Microalbuminuria due to type 2 diabetes mellitus (disorder) (SNOMED-CT:90781000119102, Onset: 2021-04-12 21:36:01, End: Ongoing)
+
+Lab Results
+- Cause of Death [US Standard Certificate of Death] (LOINC: 69453-9): {entry.value} UNK (Range: )
+- Total score [AUDIT-C] (LOINC: 75626-2): 2 {score} (Range: )
+- Protein [Mass/volume] in Urine by Test strip (LOINC: 5804-0): 234.99537993129246 mg/dL (Range: )
+- Sodium [Moles/volume] in Serum or Plasma (LOINC: 2951-2): 139.9 mmol/L (Range: )
+- Specific gravity of Urine by Test strip (LOINC: 5811-5): 1.011869488516899 {nominal} (Range: )
+- Creatinine [Mass/volume] in Serum or Plasma (LOINC: 2160-0): 1.9888666057395625 mg/dL (Range: )
+- Ketones [Mass/volume] in Urine by Test strip (LOINC: 5797-6): 2.293702311363286 mg/dL (Range: )
+- Glucose [Mass/volume] in Serum or Plasma (LOINC: 2345-7): 67.3 mg/dL (Range: )
+- Bilirubin.total [Mass/volume] in Urine by Test strip (LOINC: 20505-4): 1.340788290796721 mg/dL (Range: )
+- Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ] (LOINC: 70274-6): 3 {score} (Range: )
+- Glucose [Mass/volume] in Urine by Test strip (LOINC: 5792-7): 2.013697756879104 mg/dL (Range: )
+- Low Density Lipoprotein Cholesterol (LOINC: 18262-6): 101.51 mg/dL (Range: )
+- Clarity of Urine (LOINC: 32167-9): {entry.value} UNK (Range: )
+- Cholesterol [Mass/volume] in Serum or Plasma (LOINC: 2093-3): 175.76 mg/dL (Range: )
+- Appearance of Urine (LOINC: 5767-9): {entry.value} UNK (Range: )
+- Hemoglobin [Presence] in Urine by Test strip (LOINC: 5794-3): {entry.value} UNK (Range: )
+- Carbon dioxide, total [Moles/volume] in Serum or Plasma (LOINC: 2028-9): 20.98 mmol/L (Range: )
+- Protein [Presence] in Urine by Test strip (LOINC: 20454-5): {entry.value} UNK (Range: )
+- Potassium [Moles/volume] in Serum or Plasma (LOINC: 2823-3): 4.41 mmol/L (Range: )
+- pH of Urine by Test strip (LOINC: 5803-2): 5.656779544653906 pH (Range: )
+
+Medications
+- 10 ML Furosemide 10 MG/ML Injection (RxNorm: 1719286)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2020-05-12 (Active)
+- Furosemide 40 MG Oral Tablet (RxNorm: 313988)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2017-03-20 (Active)
+- Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution (RxNorm: 1043400)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2015-08-29 (Active)
+- Camila 28 Day Pack (RxNorm: 748962)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2016-06-14 (Active)
+- sodium fluoride 0.0272 MG/MG Oral Gel (RxNorm: 1535362)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2015-03-24 (Active)
+- Naproxen sodium 220 MG Oral Tablet (RxNorm: 849574)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- amLODIPine 2.5 MG Oral Tablet (RxNorm: 308136)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2012-02-20 (Active)

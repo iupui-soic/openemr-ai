@@ -1,0 +1,63 @@
+Model: qwen/qwen3-32b
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-03-25 04:50:59
+Time: 5.66s
+Tokens: 10,296 in / 1,293 out
+============================================================
+
+Patient Information  
+The patient is a 82-year-old male, Adalberto Gerlach, residing in Andover, Massachusetts. He is married with a daughter and lives in a townhouse. He is retired due to a history of significant cardiovascular events and is not currently employed. The patient has a history of multiple chronic conditions, including osteoarthritis of the knees and hips, hypertension, heart attack, heart failure, chronic kidney disease, and metabolic syndrome. His BMI is 29.28, indicating obesity. He has a documented penicillin allergy, though the nature of the allergic reaction is not well recalled. He has a history of smoking one to two packs of cigarettes per day for over 30 years, but has been abstinent since his heart attack. He consumes three to four beers per night and has no history of recreational drug use. His family history is notable for heart disease, with both his father and brother having experienced heart attacks.
+
+Chief Complaint  
+The patient presents with a five-day history of right knee pain, swelling, redness, and warmth, which has been progressively worsening. He reports that the symptoms are distinct from his usual osteoarthritis symptoms and are associated with significant discomfort and functional limitation.
+
+History of Present Illness  
+The patient first noticed right knee pain and swelling five days ago. The pain is described as sharp and stabbing, worsening with movement. He notes that the knee is warm to the touch, red, and swollen compared to the contralateral side. The pain is intermittent in severity and is relieved somewhat with rest and over-the-counter pain medication (Advil). He denies any trauma or injury to the knee. He mentions that he had a steroid injection in the same knee one week prior to the onset of symptoms. He does not report fever, chills, or systemic symptoms such as cough, shortness of breath, chest pain, dizziness, nausea, vomiting, or changes in bowel or urinary habits. He denies night sweats, unintentional weight loss, or confusion. The patient has a known history of osteoarthritis but states this episode is more severe and atypical compared to his usual symptoms.
+
+Review of Systems  
+Constitutional: No fever, chills, or unintentional weight loss.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Neurological: No numbness, tingling, or weakness.  
+Musculoskeletal: Pain and swelling in the right knee only; no other joint or muscle pain.  
+Integumentary: No rashes or skin changes.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Endocrine: No changes in vision, hearing, or sense of smell/taste.  
+Psychiatric: No memory changes or confusion.  
+Hematologic: No easy bruising or bleeding.  
+
+Allergies  
+The patient has a documented allergy to penicillin, though the nature of the reaction is not well recalled.
+
+Past Medical History  
+The patient has a complex medical history including osteoarthritis of the knees and hips, hypertension, a history of myocardial infarction four years ago, heart failure, chronic kidney disease (now in remission), metabolic syndrome, hyperlipidemia, and a history of coronary artery disease with stent placement. He has also undergone appendectomy and has a history of osteoporosis.
+
+Surgical History  
+The patient has a history of appendectomy and coronary stent placement.
+
+Social History  
+The patient is a former smoker who quit after his heart attack. He consumes three to four beers per night and has no history of illicit drug use. He is retired due to health reasons and lives with his wife and daughter. He is able to perform most activities of daily living independently, though his wife manages most household tasks.
+
+Family History  
+The patient reports a strong family history of heart disease, with both his father and brother having experienced heart attacks. His maternal side is reportedly free of significant medical issues.
+
+Current Medications  
+The patient is currently taking Furosemide and Ramipril for hypertension and heart failure. He also takes over-the-counter pain medications for his osteoarthritis symptoms. He reports taking aspirin for cardiovascular prophylaxis.
+
+Objective  
+Vital Signs: No recent vital signs were recorded in the OpenEMR extract.  
+Physical Examination: The right knee is red, swollen, and warm to the touch. There is no evidence of instability with varus or valgus stress or ligament testing. The patient has a limp and avoids bearing weight on the affected knee. No numbness, tingling, or burning sensations are reported. The physical examination is otherwise unremarkable.
+
+Laboratory Results  
+Recent lab results include a creatinine level of 2.51 mg/dL, indicating mild renal impairment. Other notable findings include elevated triglycerides (165.66 mg/dL), low-density lipoprotein cholesterol (86.37 mg/dL), and a glomerular filtration rate of 87.48 mL/min. No acute inflammatory markers or infection indicators are provided in the extract. Further testing is pending.
+
+Imaging  
+No recent imaging studies were noted in the OpenEMR extract. A knee aspiration is planned to differentiate between gout/pseudogout and septic arthritis.
+
+Assessment  
+The differential diagnosis includes gout or pseudogout, given the patient’s risk factors for these conditions, including diuretic use, alcohol consumption, and obesity. A recent corticosteroid injection may also contribute to an increased risk of septic arthritis. The presence of localized redness, warmth, and swelling supports an inflammatory or infectious etiology. Further evaluation with synovial fluid analysis is warranted to confirm the diagnosis.
+
+Plan  
+The patient will undergo a knee aspiration to obtain synovial fluid for analysis, including Gram stain, culture, and crystal examination. Based on the results, appropriate treatment will be initiated. The patient will be advised to avoid weight-bearing on the affected knee and to continue using over-the-counter pain medications as needed. He will be scheduled for a follow-up appointment to review the results and determine further management. The patient should be monitored for any signs of systemic infection or worsening symptoms.

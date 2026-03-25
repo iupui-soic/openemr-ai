@@ -1,0 +1,140 @@
+OpenEMR Patient Extract for RES0060
+Matched Condition: Acute Bronchitis
+Patient ID: 123
+============================================================
+
+Demographics
+Name: Abbie Stamm
+DOB: 2001-11-16
+Sex: Female
+Unit Number: 123
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000
+
+Social History
+Coffee: None
+Tobacco: ||0000-00-00
+Alcohol: ||0000-00-00
+Recreational Drugs: None
+Exercise: None
+Sleep: None
+
+Family History
+Mother: None
+Father: None
+Siblings: None
+Cancer: None
+Diabetes: None
+Heart Problems: None
+Stroke: None
+
+Allergies
+- Allergy to substance (finding) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Bee venom (substance) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Mold (organism) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- House dust mite (organism) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Animal dander (substance) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Tree pollen (substance) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Cow's milk (substance) (Severity: 1, Noted: 2002-11-15 00:00:00)
+- Peanut (substance) (Severity: 1, Noted: 2002-11-15 00:00:00)
+
+Vitals
+Date: 2014-12-12 20:09:56
+Temperature: N/A C
+Blood Pressure: N/A/N/A mmHg
+Heart Rate: 68.00 bpm
+Respiration Rate: 14.00 breaths/min
+SpO2: N/A %
+Weight: N/A kg
+Height: 157.90 cm
+BMI: 23.31
+
+Encounter Info
+Encounter: 7365
+Admission: 2024-02-10 20:09:56 -> Discharge: 2024-02-10 21:45:10
+Chief Complaint: Encounter for symptom
+Attending: Dr. External Provider (None)
+
+Past Medical History
+- Childhood asthma (SNOMED-CT:233678006, Onset: 2006-08-24 21:09:56, End: 2021-01-15 20:09:56)
+- Perennial allergic rhinitis (SNOMED-CT:446096008, Onset: 2006-12-22 20:09:56, End: 2020-11-20 20:09:56)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2011-11-25 20:09:56, End: 2020-01-10 20:09:56)
+- Mitral valve regurgitation (disorder) (SNOMED-CT:48724000, Onset: 2016-06-20 21:09:56, End: Ongoing)
+- Acute bronchitis (disorder) (SNOMED-CT:10509002, Onset: 2016-12-14 09:32:41, End: 2017-01-01 09:55:40)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2016-12-23 21:39:53, End: 2017-01-20 22:38:34)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2017-12-29 21:17:26, End: 2018-01-12 22:50:21)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2019-01-04 21:50:32, End: 2019-01-19 01:16:31)
+- Gingival disease (disorder) (SNOMED-CT:18718003, Onset: 2019-01-18 22:26:12, End: 2019-01-19 00:33:42)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2019-03-22 22:55:23, End: 2019-04-06 00:08:05)
+- Viral sinusitis (disorder) (SNOMED-CT:444814009, Onset: 2019-03-24 18:09:56, End: 2019-04-07 18:09:56)
+- Received certificate of high school equivalency (finding) (SNOMED-CT:5251000175109, Onset: 2020-01-10 20:49:51, End: Ongoing)
+- Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2020-01-10 20:49:51, End: Ongoing)
+- Social isolation (finding) (SNOMED-CT:422650009, Onset: 2020-01-10 20:49:51, End: Ongoing)
+- Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2020-01-10 22:29:13, End: 2020-01-25 01:49:35)
+- Gingival disease (disorder) (SNOMED-CT:18718003, Onset: 2020-01-24 23:04:09, End: 2020-01-25 00:38:39)
+- Medication review due (situation) (SNOMED-CT:314529007, Onset: 2021-01-15 20:09:56, End: 2024-01-19 20:09:56)
+- Limited social contact (finding) (SNOMED-CT:423315002, Onset: 2021-01-15 20:58:50, End: 2024-01-19 20:53:28)
+- Stress (finding) (SNOMED-CT:73595000, Onset: 2021-01-15 20:58:50, End: Ongoing)
+- Streptococcal sore throat (disorder) (SNOMED-CT:43878008, Onset: 2022-01-05 03:09:56, End: 2022-01-18 08:09:56)
+- Acute viral pharyngitis (disorder) (SNOMED-CT:195662009, Onset: 2023-09-12 12:09:56, End: 2023-09-23 21:09:56)
+- Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2024-01-19 20:53:28, End: Ongoing)
+- Acute infective cystitis (disorder) (SNOMED-CT:307426000, Onset: 2024-02-10 20:09:56, End: 2024-02-11 17:45:10)
+
+Lab Results
+- Ketones [Presence] in Urine by Test strip (LOINC: 2514-8): {entry.value} UNK (Range: )
+- Mucus Threads (LOINC: 8247-9): {entry.value} UNK (Range: )
+- Epithelial Cells (LOINC: 5787-7): 3.1424642545575425 /[HPF] (Range: )
+- WBCs (LOINC: 5821-4): 13.057646319178664 /[HPF] (Range: )
+- Hemoglobin [Presence] in Urine by Test strip (LOINC: 5794-3): {entry.value} UNK (Range: )
+- Protein [Mass/volume] in Urine by Test strip (LOINC: 5804-0): 4.402154190177683 mg/dL (Range: )
+- Specific gravity of Urine by Test strip (LOINC: 5811-5): 1.0171359217526537 {nominal} (Range: )
+- Glucose [Mass/volume] in Urine by Test strip (LOINC: 5792-7): 12.57623424284664 mg/dL (Range: )
+- Bacteria (LOINC: 5769-5): {entry.value} UNK (Range: )
+- Casts (LOINC: 24124-0): {entry.value} UNK (Range: )
+- RBCs (LOINC: 13945-1): 1.9629453894006192 /[HPF] (Range: )
+- Leukocyte esterase [Presence] in Urine by Test strip (LOINC: 5799-2): {entry.value} UNK (Range: )
+- Nitrite [Presence] in Urine by Test strip (LOINC: 5802-4): {entry.value} UNK (Range: )
+- pH of Urine by Test strip (LOINC: 5803-2): 5.210948040706877 pH (Range: )
+- Total score [AUDIT-C] (LOINC: 75626-2): 1 {score} (Range: )
+- Total score [HARK] (LOINC: 76504-0): 3 {score} (Range: )
+- Platelet mean volume [Entitic volume] in Blood by Automated count (LOINC: 32623-1): 12.069022739057361 fL (Range: )
+- Platelets [#/volume] in Blood by Automated count (LOINC: 777-3): 285.5451172717775 10*3/uL (Range: )
+- MCHC [Mass/volume] by Automated count (LOINC: 786-4): 33.65080550198494 g/dL (Range: )
+- MCV [Entitic volume] by Automated count (LOINC: 787-2): 87.00643299160296 fL (Range: )
+
+Medications
+- nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule (RxNorm: 1648755)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2024-02-11 (Active)
+- Trinessa 28 Day Pack (RxNorm: 751905)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- Penicillin V Potassium 500 MG Oral Tablet (RxNorm: 834102)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2022-01-18 (Active)
+- 168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System (RxNorm: 1534809)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2022-10-10 (Active)
+- Camila 28 Day Pack (RxNorm: 748962)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2019-10-26 (Active)
+- sodium fluoride 0.0272 MG/MG Oral Gel (RxNorm: 1535362)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2018-01-12 (Active)
+- Etonogestrel 68 MG Drug Implant (RxNorm: 389221)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2018-10-31 (Active)
+- Acetaminophen 325 MG Oral Tablet (RxNorm: 313782)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2017-01-01 (Active)
+- Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler [Qvar] (RxNorm: 1998774)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2021-01-15 (Active)
+- albuterol 0.83 MG/ML Inhalation Solution (RxNorm: 630208)
+  Dosage: 1 | Route: 16
+  Start: None -> End: 2021-01-15 (Active)
+- Loratadine 5 MG Chewable Tablet (RxNorm: 665078)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)
+- NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector (RxNorm: 1870230)
+  Dosage: 1 | Route: 16
+  Start: None -> End: None (Active)

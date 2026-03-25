@@ -1,0 +1,84 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-03-25 04:53:11
+Time: 2.83s
+Tokens: 12,183 in / 1,390 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914‑01‑07  
+Sex: Female  
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+Current Contact: Resides with daughter in a private apartment; works as a grocery store cashier.  
+
+Chief Complaint  
+Patient presents with worsening shortness of breath, productive cough with yellow‑green sputum, chest discomfort, and subjective fever lasting five days.  
+
+History of Present Illness  
+The patient reports that over the last five days she has experienced progressive dyspnea that is more pronounced with exertion and has been constant throughout the day. She describes a cough that produces small amounts of yellowish‑green sputum, approximately the volume of the inside of her palm each time she coughs. She denies hemoptysis, chest pain, orthopnea, paroxysmal nocturnal dyspnea, or positional changes in symptoms. The chest discomfort is mild, non‑painful, described as a feeling of congestion, and has persisted for several days. She reports feeling feverish over the past two days but has not taken a temperature. She denies nasal congestion, sore throat, rhinorrhea, headache, dizziness, palpitations, nausea, vomiting, diarrhea, or constipation. She has not experienced night sweats, significant weight loss, or changes in appetite.  
+
+The patient has a known history of chronic obstructive pulmonary disease (diagnosed three years ago), essential hypertension, and gastro‑esophageal reflux disease. She reports using a rescue inhaler (Ventolin) 3–4 puffs in the morning and a maintenance inhaler (Symbicort) daily, as well as an ACE inhibitor for blood pressure and Tums for reflux. She has not taken a fever‑reduction medication. The patient reports that her symptoms have worsened despite usual inhaler use.  
+
+Review of Systems  
+Constitutional: Reports subjective fever and feeling of being feverish; denies chills, night sweats, weight change, or fatigue.  
+Respiratory: Productive cough with yellow‑green sputum; dyspnea on exertion; no orthopnea, no hemoptysis.  
+Cardiovascular: Denies chest pain, palpitations, or chest discomfort that radiates; reports no known arrhythmia.  
+Gastrointestinal: GERD symptoms controlled with Tums; denies nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurological/Other: No headaches, dizziness, vision changes, or neurological deficits reported.  
+
+Past Medical History  
+Chronic obstructive pulmonary disease (COPD) diagnosed approximately three years prior.  
+Essential hypertension.  
+Gastro‑esophageal reflux disease.  
+
+Surgical History  
+No surgeries reported.  
+
+Family History  
+No known family history of lung disease, heart disease, or cancer.  
+
+Social History  
+Current smoker, approximately one pack per day, with a 30–40 year history. No recreational drug use. Alcohol consumption is occasional; reports wine on weekends. Lives with daughter in an apartment. Works full‑time as a grocery store cashier. No recent travel or known exposure to sick contacts.  
+
+Current Medications (as reported by patient)  
+- Ventolin (albuterol) inhaler – rescue, used 3–4 puffs in the morning and occasionally at night.  
+- Symbicort – maintenance inhaler, taken daily.  
+- ACE inhibitor – taken daily for hypertension.  
+- Tums – taken as needed for GERD.  
+
+Allergies  
+No known drug or food allergies.  
+
+Physical Examination  
+Vital signs were not recorded at the time of this encounter; the patient was alert, oriented, and in no acute distress at rest.  
+General: Appears mildly uncomfortable due to dyspnea when exerting.  
+Respiratory: No use of accessory muscles at rest. Chest expansion symmetrical. Auscultation: decreased breath sounds bilaterally with scattered crackles, particularly in lower lung fields. No wheezing noted.  
+Cardiovascular: Regular rate and rhythm, no murmurs or gallops.  
+Extremities: No clubbing, cyanosis, or edema.  
+Skin: Warm, dry, no rashes or lesions.  
+
+Laboratory Findings  
+The most recent laboratory panel (from prior year) includes normal electrolytes, mild hypercholesterolemia, and a glomerular filtration rate within normal limits. No current laboratory studies were obtained during this visit; pending workup includes CBC with differential, basic metabolic panel, and inflammatory markers.  
+
+Imaging  
+Chest radiograph is pending as part of the evaluation to rule out pneumonia and assess for other pulmonary pathology.  
+
+Assessment  
+The presentation is most consistent with an acute exacerbation of chronic obstructive pulmonary disease, likely triggered by a lower respiratory tract infection as evidenced by productive cough, feverish sensation, yellow‑green sputum, and worsening dyspnea on exertion. Differential diagnosis includes bacterial pneumonia and COVID‑19 infection; these are being ruled out with imaging, laboratory studies, and a COVID swab.  
+
+Plan  
+1. Obtain vital signs, including temperature, pulse oximetry, blood pressure, heart rate, and respiratory rate.  
+2. Order chest X‑ray to evaluate for infiltrates or consolidation.  
+3. Perform nasopharyngeal swab for SARS‑CoV‑2.  
+4. Draw complete blood count with differential and basic metabolic panel to assess for leukocytosis, renal function, and electrolyte balance.  
+5. Administer nebulized bronchodilator therapy and consider systemic corticosteroids if indicated for exacerbation.  
+6. Initiate empiric antibiotics pending culture results, given clinical suspicion for bacterial infection.  
+7. Encourage continued use of rescue inhaler as needed and maintenance inhaler as prescribed.  
+8. Counsel patient on smoking cessation resources; provide written materials and referrals to cessation programs.  
+9. Instruct patient to monitor for worsening symptoms such as increased dyspnea, chest pain, hemoptysis, or fever >101.3°F; advise to seek immediate care if these occur.  
+10. Schedule follow‑up with pulmonology or primary care within 7–10 days to reassess symptom resolution and adjust therapy.  
+11. Provide discharge instructions: continue current medications, maintain hydration, use humidifier if available, and avoid known respiratory irritants.  
+
+The patient was advised of the potential need for hospitalization if her symptoms do not improve or if she develops significant hypoxia or respiratory distress. She was instructed to return to the emergency department if she experiences sudden worsening of breathing, chest pain, or any new concerning symptoms.

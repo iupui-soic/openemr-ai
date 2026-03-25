@@ -1,0 +1,64 @@
+Model: qwen/qwen3-32b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-03-25 04:50:59
+Time: 3.85s
+Tokens: 6,678 in / 1,134 out
+============================================================
+
+Patient Information  
+The patient is a 38-year-old female, Abbey Shala Kunde, presenting for evaluation of a three-day history of cough, headache, generalized body aches, and subjective fever. She resides in a townhouse in Boston, Massachusetts, with her wife and reports no recent travel or sick contacts. She works in a pharmacy company and has been working from home due to her symptoms. She has a BMI of 35.84 and a past medical history of obesity, essential hypertension, recurrent urinary tract infections, and a history of intimate partner abuse. She has a surgical history of an ACL repair 10 years ago. She is not currently on any prescription medications but takes a multivitamin and vitamin D. She has a peanut allergy and carries an EpiPen. She uses CBD oils occasionally and consumes alcohol on weekends. She is a non-smoker and wears masks at work.
+
+Chief Complaint  
+The patient presents with a three-day history of dry cough, generalized body aches, frontal headache, and subjective fever.
+
+History of Present Illness  
+The patient reports that her symptoms began three days ago with a dry cough, which was the initial symptom. She subsequently developed generalized body aches and headaches. The headache is described as a band-like pressure in the frontal region, occurring daily, and is partially relieved by acetaminophen and ibuprofen. She feels feverish but has not measured her temperature. She also reports one day of loose stools without blood or color changes. She denies chest pain, sore throat, runny nose, chills, night sweats, fatigue, nausea, vomiting, shortness of breath, loss of taste or smell, or other constitutional symptoms. She has not taken any specific treatment for the cough. She has been isolating at home and has not gone to work. She is concerned about the possibility of COVID-19.
+
+Review of Systems  
+Constitutional: Reports subjective fever, fatigue, and decreased appetite. No weight loss or night sweats.  
+Respiratory: Dry cough without sputum or blood. No chest pain, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: One day of loose stools without blood or color changes. No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: Headache described as band-like pressure in the frontal region. No visual changes, dizziness, or focal neurological deficits.  
+Musculoskeletal: Generalized body aches without localized pain or injury.  
+Integumentary: No rash, itching, or skin changes.  
+Psychiatric: No depression, anxiety, or mood changes reported.  
+Endocrine: No changes in menstrual cycle or other endocrine symptoms.  
+Hematologic: No bruising, bleeding, or anemia symptoms.  
+Allergic/Immunologic: Peanut allergy with EpiPen. No other allergies.  
+Other: No recent exposure to fumes, dust, or animals.
+
+Allergies  
+The patient has a documented allergy to peanuts and carries an EpiPen. No known drug allergies.
+
+Past Medical History  
+Recurrent urinary tract infections, obesity, essential hypertension, history of intimate partner abuse, and a history of miscarriage. She has a surgical history of ACL repair. She has also had prior episodes of viral sinusitis, acute bronchitis, and acute viral pharyngitis.
+
+Surgical History  
+The patient underwent ACL repair surgery approximately 10 years ago.
+
+Social History  
+The patient is employed full-time in a pharmacy company and works in an environment with mask and cleaning protocols. She lives with her wife in a townhouse in Boston. She consumes alcohol on weekends, occasionally uses CBD oils, and is a non-smoker. She has not recently consumed any new foods or traveled.
+
+Family History  
+The patient's father has a history of hypertension, and her grandfather had a history of lung cancer and was a lifelong smoker.
+
+Current Medications  
+The patient is not currently taking any prescription medications. She takes a multivitamin and vitamin D as supplements.
+
+Objective  
+Vital signs were not recorded in the OpenEMR extract. On physical examination, the patient was alert and oriented, in no acute distress. No acute findings were noted on physical examination. No abnormalities were observed in the respiratory, cardiovascular, or gastrointestinal systems. No rash or other skin lesions were present. No neurological deficits were detected.
+
+Labs  
+No specific laboratory results were obtained during this encounter. Previous lab results included normal hemoglobin, hematocrit, white blood cell count, and other routine blood parameters. No recent infectious or inflammatory markers were available.
+
+Imaging  
+No imaging studies were performed during this visit.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory tract infection. Given the constellation of symptoms, including dry cough, headache, body aches, and subjective fever, and the current public health context, concern for possible COVID-19 is warranted. No other acute or life-threatening conditions were identified on physical examination.
+
+Plan  
+The patient was offered a rapid antigen test for SARS-CoV-2. She was advised to isolate for 14 days until symptoms resolve and to follow up with public health for further instructions. She was also advised to rest, stay hydrated, and continue over-the-counter analgesics for symptom relief. She was instructed to return for further evaluation if symptoms worsen or if new symptoms develop. No prescription medications were dispensed at this time.

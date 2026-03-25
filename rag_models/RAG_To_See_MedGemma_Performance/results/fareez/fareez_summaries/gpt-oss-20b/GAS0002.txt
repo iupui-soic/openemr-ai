@@ -1,0 +1,114 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-03-25 04:53:11
+Time: 2.26s
+Tokens: 8,409 in / 1,372 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Date of Birth: April 16, 1965  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+Patient ID: 2046  
+
+Chief Complaint  
+The patient presented to the Emergency Department with a chief complaint of right upper quadrant abdominal pain.  
+
+History of Present Illness  
+The patient reports a three‑day history of progressively worsening sharp pain located in the right upper quadrant, just below the lung margin. The pain intensified over the past few hours, reaching an intensity of 8/10 at the time of presentation. The onset of pain appeared approximately half an hour after lunch, with no associated radiation. The patient has experienced nausea for several days but has not vomited, nor has there been any blood in the stool or urine. Appetite has been reduced, particularly today. No changes in bowel or urinary habits, skin, or weight were reported. The patient denied recent travel, new exposures, or similar episodes outside the past few years, when a similar episode resolved spontaneously.
+
+Review of Systems  
+Constitutional: Denies fever, chills, or weight change.  
+Respiratory: No cough, chest pain, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, decreased appetite; denies vomiting, diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Neurologic: No dizziness, syncope, or focal deficits.  
+Psychiatric: Reports no anxiety or depression symptoms at this time.  
+
+Allergies  
+No known drug allergies.  
+
+Past Medical History  
+- Chronic kidney disease, stage 4 (onset 2016, ongoing).  
+- Diabetes mellitus type 2 with microalbuminuria and proteinuria.  
+- Hypertension (since 1996).  
+- Gastroesophageal reflux disease.  
+- Cerebral palsy, spasticity, intellectual disability.  
+- Osteoporosis.  
+- Chronic kidney disease stage 3 (2015–2020).  
+- Chronic kidney disease stage 2 (2011–2020).  
+- Chronic kidney disease stage 1 (2001–2020).  
+- History of renal transplant (2019).  
+- Past kidney transplant rejection (2020).  
+- Multiple prior infections and conditions noted in chart, including pneumonia, bronchitis, viral pharyngitis, and burn injury.  
+
+Surgical History  
+No documented abdominal or biliary surgeries.  
+
+Social History  
+The patient works as a bank consultant. He drinks alcohol socially, about one to two glasses of wine nightly, and denies cigarette or recreational drug use. He lives with his partner and two children. No recent travel or exposure to illness.  
+
+Family History  
+Father died of stroke in his sixties. Mother has gallstones. No documented history of gallbladder disease or cardiovascular disease beyond the father’s stroke.  
+
+Current Medications  
+- Tacrolimus 5 mg extended‑release orally daily (maintenance).  
+- Tacrolimus 1 mg extended‑release orally daily (maintenance).  
+- Tacrolimus injection 5 mg/mL (as needed).  
+- Glycopyrrolate 1.5 mg orally daily.  
+- Hydrochlorothiazide 25 mg orally daily.  
+- Amlodipine 2.5 mg orally daily.  
+- Antacids (as needed for heartburn).  
+- No other prescription or over‑the‑counter medications reported recently.  
+
+Vital Signs  
+No vital sign data recorded during the encounter.  
+
+Physical Examination  
+No examination findings were documented during this encounter.  
+
+Laboratory Data  
+- White blood cell count 7.58 × 10³/µL  
+- Hemoglobin 13.58 g/dL  
+- Hematocrit 40.1 %  
+- Mean corpuscular volume 94.5 fL  
+- Mean corpuscular hemoglobin 28.4 pg  
+- Mean corpuscular hemoglobin concentration 34.2 g/dL  
+- Red cell distribution width 39.9 %  
+- Platelets 351.7 × 10³/µL  
+- Platelet distribution width 155.4 fL  
+- Platelet mean volume 10.43 fL  
+- Total cholesterol 252.4 mg/dL  
+- Low density lipoprotein 168.2 mg/dL  
+- High density lipoprotein 58.2 mg/dL  
+- Triglycerides 130.1 mg/dL  
+- Glucose not obtained.  
+
+Imaging  
+No imaging studies were performed or documented at this time.  
+
+Assessment  
+1. Right upper quadrant abdominal pain of likely biliary origin (acute cholecystitis or gallstone disease).  
+2. Chronic kidney disease, stage 4, on immunosuppression (tacrolimus).  
+3. Hypertension, GERD, and diabetes mellitus type 2, currently stable.  
+
+Plan  
+- Obtain abdominal ultrasound to evaluate gallbladder, bile ducts, and hepatic structures.  
+- Repeat complete metabolic panel and liver function tests, including lipase, to assess for biliary or pancreatic inflammation.  
+- Continue current antihypertensive and immunosuppressive therapy; monitor tacrolimus trough levels.  
+- Prescribe acetaminophen 650 mg every 6–8 hours as needed for pain, with careful monitoring for hepatotoxicity in the setting of chronic liver risk factors.  
+- Consider proton pump inhibitor therapy for GERD if not already on it.  
+- Encourage oral hydration and a bland diet; advise to avoid fatty, spicy, or alcohol‑containing foods until evaluation is complete.  
+- Discharge instructions: follow up with primary care and gastroenterology within 48–72 hours; notify provider if pain worsens, fever develops, vomiting, or stool changes occur.  
+- Arrange for laboratory follow‑up in 24 hours to re‑check tacrolimus levels and liver enzymes.  
+- Provide patient education on signs of gallbladder perforation or worsening pain, and instruct to seek immediate care if symptoms exacerbate.  
+
+Follow‑up  
+- Gastroenterology appointment scheduled for next week.  
+- Primary care review in 2 weeks to assess kidney function and overall stability.  
+
+Disposition  
+The patient was admitted for observation and diagnostic workup of abdominal pain and will be discharged once definitive imaging and laboratory results are reviewed. No immediate surgical intervention is indicated at this time.
