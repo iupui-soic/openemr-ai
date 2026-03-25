@@ -1,3 +1,12 @@
 /.idea/
 modal.toml
 __pycache__/
+.env
+.venv/
+
+# Large datasets (downloaded at runtime)
+openemr_whisper_wer/data/primock57/
+openemr_whisper_wer/data/fareez_osce/
+
+# Manuscript (not tracked in git)
+manuscript/

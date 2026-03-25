@@ -1,0 +1,23 @@
+file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid,error_match,warning_match
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,medgemma-4b,True,44.30442452430725,,,llm,Falls-Prevention-Screening_CPG.md,True,True,True,True,1.0,1.0
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,medgemma-4b,True,39.932992458343506,,,llm,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False,0.0,0.0
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,medgemma-4b,True,41.356602907180786,,,llm,Chlamydia_Screening_CPG.md,True,True,True,True,1.0,1.0
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,medgemma-4b,True,40.9064667224884,,,llm,Tobacco-Use-Screening_CPG.md,True,True,True,True,1.0,1.0
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,medgemma-4b,True,45.5312819480896,,,llm,Cervical-Cancer-Screening_CPG.md,True,True,True,True,1.0,1.0
+AAA-Screening.json,AAA_Screening_CDS,medgemma-4b,True,43.29391431808472,,,llm,AAA-Screening_CPG.md,True,True,True,True,1.0,1.0
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,medgemma-4b,True,40.00043511390686,,,llm,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,1.0,1.0
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,medgemma-4b,True,39.50904679298401,,,llm,Osteoporosis-Screening_CPG.md,True,True,True,True,1.0,1.0
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,medgemma-4b,True,40.58673644065857,,,llm,Condition_Medication_Count_CPG.md,True,True,True,True,1.0,1.0
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,medgemma-4b,True,40.26446318626404,,,llm,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True,1.0,1.0
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,medgemma-4b,True,38.99012017250061,,,llm,Alcohol-Misuse-Screening_CPG.md,True,True,True,True,1.0,1.0
+Hypertension-Screening.json,Hypertension-Screening,medgemma-4b,True,38.56443238258362,,,llm,Hypertension-Screening_CPG.md,True,True,False,False,0.0,1.0
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,medgemma-4b,True,37.791664600372314,,,llm,Lung-Cancer-Screening_CPG.md,True,True,True,True,1.0,1.0
+Depression_screening.json,DepressionScreening_CDS,medgemma-4b,True,37.3861198425293,,,llm,Depression_screening_CPG.md,True,True,True,True,1.0,1.0
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,medgemma-4b,True,38.609347343444824,,,llm,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,1.0,1.0
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,medgemma-4b,True,37.72377586364746,,,llm,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False,0.0,1.0
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,medgemma-4b,True,38.158159255981445,,,llm,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False,0.0,1.0
+Anxiety-Screening.json,Anxiety_Screening_CDS,medgemma-4b,True,37.7424156665802,,,llm,Anxiety-Screening_CPG.md,True,True,False,False,0.0,1.0
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,medgemma-4b,True,38.693459272384644,,,llm,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False,0.0,1.0
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,medgemma-4b,True,38.39965295791626,,,llm,USPSTF_Statin_Use_CPG.md,True,True,True,True,1.0,1.0
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,medgemma-4b,True,39.4001886844635,,,llm,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,1.0,1.0
+HIV-Screening.json,HIV_Screening_CDS,medgemma-4b,True,39.32995128631592,,,llm,HIV-Screening_CPG.md,True,True,False,False,0.0,1.0
