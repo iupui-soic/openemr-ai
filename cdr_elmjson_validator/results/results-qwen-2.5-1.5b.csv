@@ -1,0 +1,89 @@
+file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid,error_match,warning_match
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Falls-Prevention-Screening_CPG.md,True,True,False,True,0.0,1.0
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False,0.0,0.0
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Chlamydia_Screening_CPG.md,True,True,False,True,0.0,1.0
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Tobacco-Use-Screening_CPG.md,True,True,False,True,0.0,1.0
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Cervical-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
+AAA-Screening.json,AAA_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,AAA-Screening_CPG.md,True,True,False,True,0.0,1.0
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Osteoporosis-Screening_CPG.md,True,True,False,True,0.0,1.0
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Condition_Medication_Count_CPG.md,True,True,False,True,0.0,1.0
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Alcohol-Misuse-Screening_CPG.md,True,True,False,True,0.0,1.0
+Hypertension-Screening.json,Hypertension-Screening,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Hypertension-Screening_CPG.md,True,True,True,False,0.0,1.0
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Lung-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
+Depression_screening.json,DepressionScreening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Depression_screening_CPG.md,True,True,False,True,0.0,1.0
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False,0.0,1.0
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False,0.0,1.0
+Anxiety-Screening.json,Anxiety_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Anxiety-Screening_CPG.md,True,True,True,False,0.0,1.0
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False,0.0,1.0
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,USPSTF_Statin_Use_CPG.md,True,True,False,True,0.0,1.0
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
+HIV-Screening.json,HIV_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
+  File ""<string>"", line 13, in <module>
+  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
+    raise ValueError(f""Unkn",,error,HIV-Screening_CPG.md,True,True,True,False,0.0,1.0

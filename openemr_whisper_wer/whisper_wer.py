@@ -9,6 +9,8 @@ Usage:
     python whisper_wer.py --output results.csv --use-large-v3  # More accurate, slower
     python whisper_wer.py --kaggle  # Evaluate on Kaggle medical speech dataset
     python whisper_wer.py --kaggle --split validate --output-dir ./results
+    python whisper_wer.py --local-dataset primock57 --output results/primock57-whisper-turbo.csv
+    python whisper_wer.py --local-dataset fareez --output results/fareez-whisper-v3.csv --use-large-v3
 
 Requirements:
     pip install modal jiwer pandas requests notion-client httpx
@@ -51,7 +53,7 @@ whisper_image = (
 )
 
 
-@app.cls(image=whisper_image, gpu="A10G", timeout=600)
+@app.cls(image=whisper_image, gpu="A100", timeout=1800)
 class WhisperTranscriber:
     # Use modal.parameter() instead of __init__ (Modal deprecation fix)
     model_id: str = modal.parameter(default="openai/whisper-large-v3-turbo")
@@ -74,13 +76,15 @@ class WhisperTranscriber:
         model.to(self.device)
 
         processor = AutoProcessor.from_pretrained(self.model_id)
+        # Use batch_size=4 for large-v3 (full) to be safe on long audio
+        batch = 4 if "large-v3" in self.model_id and "turbo" not in self.model_id else 16
         self.pipe = pipeline(
             "automatic-speech-recognition",
             model=model,
             tokenizer=processor.tokenizer,
             feature_extractor=processor.feature_extractor,
             chunk_length_s=30,
-            batch_size=16,
+            batch_size=batch,
             torch_dtype=self.torch_dtype,
             device=self.device,
         )
@@ -119,7 +123,7 @@ class WhisperTranscriber:
             f.write(audio_bytes)
             input_path = f.name
 
-        output_path = input_path.rsplit('.', 1)[0] + ".wav"
+        output_path = input_path.rsplit('.', 1)[0] + "_converted.wav"
 
         try:
             # Convert to 16kHz mono WAV for optimal Whisper performance
@@ -327,6 +331,103 @@ def run_pipeline(
 
 
 # ============================================================================
+# Local Dataset Pipeline (PriMock57 / Fareez OSCE)
+# ============================================================================
+
+def run_local_pipeline(
+        dataset_name: str,
+        output_csv: str = "results.csv",
+        use_large_v3: bool = False,
+):
+    """
+    Run Whisper WER evaluation on a local dataset (PriMock57 or Fareez OSCE).
+
+    Args:
+        dataset_name: 'primock57' or 'fareez'
+        output_csv: Path for results CSV
+        use_large_v3: Use whisper-large-v3 instead of turbo
+    """
+    import pandas as pd
+    from pathlib import Path
+
+    model_id = "openai/whisper-large-v3" if use_large_v3 else "openai/whisper-large-v3-turbo"
+    model_name = "whisper-v3" if use_large_v3 else "whisper-turbo"
+
+    # Load dataset
+    if dataset_name == "primock57":
+        from primock57_utils import load_primock57_dataset
+        entries = load_primock57_dataset("data/primock57")
+    else:
+        from fareez_utils import load_fareez_dataset
+        entries = load_fareez_dataset("data/fareez_osce")
+
+    print("=" * 60)
+    print(f"Whisper Local Dataset WER Evaluation ({dataset_name})")
+    print("=" * 60)
+    print(f"Model: {model_id}")
+    print(f"Entries: {len(entries)}")
+    print()
+
+    wer_calc = WERCalculator()
+    results = []
+
+    with app.run():
+        transcriber = WhisperTranscriber(model_id=model_id)
+
+        for i, entry in enumerate(entries):
+            print(f"\n  [{i+1}/{len(entries)}] {entry['file_name']}")
+            try:
+                audio_bytes = Path(entry["path"]).read_bytes()
+                print(f"    Read {len(audio_bytes):,} bytes")
+
+                transcript = transcriber.transcribe.remote(audio_bytes)
+
+                metrics = wer_calc.calculate(entry["transcript"], transcript)
+                print(f"    WER: {metrics['wer']:.4f} ({metrics['wer']*100:.2f}%)")
+
+                results.append({
+                    "name": entry["file_name"],
+                    "ground_truth": entry["transcript"],
+                    "transcript": transcript,
+                    **metrics
+                })
+            except Exception as e:
+                print(f"    ERROR: {e}")
+                results.append({
+                    "name": entry["file_name"],
+                    "ground_truth": entry.get("transcript", ""),
+                    "transcript": "",
+                    "wer": 1.0,
+                    "error": str(e)
+                })
+
+    # Save results
+    Path(output_csv).parent.mkdir(parents=True, exist_ok=True)
+    df = pd.DataFrame(results)
+    df.to_csv(output_csv, index=False)
+
+    valid = [r for r in results if "error" not in r or not r.get("error")]
+    avg_wer = sum(r["wer"] for r in valid) / len(valid) if valid else 1.0
+
+    print(f"\n{'=' * 60}")
+    print(f"RESULTS SUMMARY - {model_name} on {dataset_name}")
+    print(f"{'=' * 60}")
+    print(f"Entries: {len(results)} total, {len(valid)} successful")
+    print(f"Average WER: {avg_wer:.4f} ({avg_wer*100:.2f}%)")
+    print(f"Results saved to: {output_csv}")
+
+    return {
+        "model": model_name,
+        "model_id": model_id,
+        "dataset": dataset_name,
+        "avg_wer": avg_wer,
+        "samples": len(valid),
+        "total": len(results),
+        "output_csv": output_csv,
+    }
+
+
+# ============================================================================
 # Kaggle Pipeline
 # ============================================================================
 
@@ -435,10 +536,22 @@ def main():
         default=".",
         help="Output directory for Kaggle results CSV",
     )
+    # Local dataset mode
+    parser.add_argument(
+        "--local-dataset",
+        choices=["primock57", "fareez"],
+        help="Use a local dataset (PriMock57 or Fareez OSCE)",
+    )
 
     args = parser.parse_args()
 
-    if args.kaggle:
+    if args.local_dataset:
+        run_local_pipeline(
+            dataset_name=args.local_dataset,
+            output_csv=args.output,
+            use_large_v3=args.use_large_v3,
+        )
+    elif args.kaggle:
         run_kaggle_pipeline(
             split=args.split,
             output_dir=args.output_dir,

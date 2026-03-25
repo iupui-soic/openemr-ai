@@ -8,6 +8,8 @@ Usage:
     python wlv3t_on_groq.py --output results.csv
     python wlv3t_on_groq.py --kaggle  # Evaluate on Kaggle medical speech dataset
     python wlv3t_on_groq.py --kaggle --split validate --output-dir ./results
+    python wlv3t_on_groq.py --local-dataset primock57 --output results/primock57-groq.csv
+    python wlv3t_on_groq.py --local-dataset fareez --output results/fareez-groq.csv
 
 Requirements:
     pip install groq jiwer pandas requests notion-client httpx python-dotenv modal
@@ -53,7 +55,8 @@ class GroqTranscriber:
 
     def transcribe(self, audio_bytes: bytes) -> str:
         """
-        Transcribe audio bytes to text.
+        Transcribe audio bytes to text. Converts large WAV files to FLAC
+        (lossless compression) to stay under Groq's 25MB upload limit.
 
         Args:
             audio_bytes: Raw audio file bytes (m4a, mp3, wav, etc.)
@@ -61,6 +64,8 @@ class GroqTranscriber:
         Returns:
             Transcribed text
         """
+        import subprocess
+
         # Detect format from magic bytes for proper file extension
         if audio_bytes[:12].find(b'ftyp') >= 0:
             suffix = ".m4a"
@@ -80,10 +85,21 @@ class GroqTranscriber:
             f.write(audio_bytes)
             temp_path = f.name
 
+        flac_path = None
         try:
-            with open(temp_path, "rb") as audio_file:
+            upload_path = temp_path
+
+            # If file is too large for Groq (>24MB), convert to FLAC (lossless)
+            if len(audio_bytes) > 24 * 1024 * 1024:
+                flac_path = temp_path.rsplit('.', 1)[0] + "_compressed.flac"
+                subprocess.run([
+                    "ffmpeg", "-y", "-i", temp_path, "-c:a", "flac", flac_path
+                ], capture_output=True, check=True)
+                upload_path = flac_path
+
+            with open(upload_path, "rb") as audio_file:
                 transcription = self.client.audio.transcriptions.create(
-                    file=(os.path.basename(temp_path), audio_file.read()),
+                    file=(os.path.basename(upload_path), audio_file.read()),
                     model=MODEL_ID,
                     temperature=0,
                     response_format="verbose_json",
@@ -92,6 +108,8 @@ class GroqTranscriber:
         finally:
             if os.path.exists(temp_path):
                 os.unlink(temp_path)
+            if flac_path and os.path.exists(flac_path):
+                os.unlink(flac_path)
 
 
 # ============================================================================
@@ -285,6 +303,104 @@ def run_pipeline(
 
 
 # ============================================================================
+# Local Dataset Pipeline (PriMock57 / Fareez OSCE)
+# ============================================================================
+
+def run_local_pipeline(
+        dataset_name: str,
+        output_csv: str = "groq_results.csv",
+):
+    """
+    Run Groq Whisper WER evaluation on a local dataset (PriMock57 or Fareez OSCE).
+
+    Args:
+        dataset_name: 'primock57' or 'fareez'
+        output_csv: Path for results CSV
+    """
+    import pandas as pd
+    import time
+    from pathlib import Path
+
+    model_name = "groq"
+
+    # Load dataset
+    if dataset_name == "primock57":
+        from primock57_utils import load_primock57_dataset
+        entries = load_primock57_dataset("data/primock57")
+    else:
+        from fareez_utils import load_fareez_dataset
+        entries = load_fareez_dataset("data/fareez_osce")
+
+    print("=" * 60)
+    print(f"Groq Whisper Local Dataset WER Evaluation ({dataset_name})")
+    print("=" * 60)
+    print(f"Model: groq/{MODEL_ID}")
+    print(f"Entries: {len(entries)}")
+    print()
+
+    transcriber = GroqTranscriber()
+    wer_calc = WERCalculator()
+    results = []
+
+    for i, entry in enumerate(entries):
+        print(f"\n  [{i+1}/{len(entries)}] {entry['file_name']}")
+        try:
+            audio_bytes = Path(entry["path"]).read_bytes()
+            print(f"    Read {len(audio_bytes):,} bytes")
+
+            transcript = transcriber.transcribe(audio_bytes)
+
+            metrics = wer_calc.calculate(entry["transcript"], transcript)
+            print(f"    WER: {metrics['wer']:.4f} ({metrics['wer']*100:.2f}%)")
+
+            results.append({
+                "name": entry["file_name"],
+                "ground_truth": entry["transcript"],
+                "transcript": transcript,
+                **metrics
+            })
+
+            # Small delay to avoid rate limiting
+            if i < len(entries) - 1:
+                time.sleep(0.2)
+
+        except Exception as e:
+            print(f"    ERROR: {e}")
+            results.append({
+                "name": entry["file_name"],
+                "ground_truth": entry.get("transcript", ""),
+                "transcript": "",
+                "wer": 1.0,
+                "error": str(e)
+            })
+
+    # Save results
+    Path(output_csv).parent.mkdir(parents=True, exist_ok=True)
+    df = pd.DataFrame(results)
+    df.to_csv(output_csv, index=False)
+
+    valid = [r for r in results if "error" not in r or not r.get("error")]
+    avg_wer = sum(r["wer"] for r in valid) / len(valid) if valid else 1.0
+
+    print(f"\n{'=' * 60}")
+    print(f"RESULTS SUMMARY - {model_name} on {dataset_name}")
+    print(f"{'=' * 60}")
+    print(f"Entries: {len(results)} total, {len(valid)} successful")
+    print(f"Average WER: {avg_wer:.4f} ({avg_wer*100:.2f}%)")
+    print(f"Results saved to: {output_csv}")
+
+    return {
+        "model": model_name,
+        "model_id": f"groq/{MODEL_ID}",
+        "dataset": dataset_name,
+        "avg_wer": avg_wer,
+        "samples": len(valid),
+        "total": len(results),
+        "output_csv": output_csv,
+    }
+
+
+# ============================================================================
 # Kaggle Pipeline
 # ============================================================================
 
@@ -383,10 +499,21 @@ def main():
         default=".",
         help="Output directory for Kaggle results CSV",
     )
+    # Local dataset mode
+    parser.add_argument(
+        "--local-dataset",
+        choices=["primock57", "fareez"],
+        help="Use a local dataset (PriMock57 or Fareez OSCE)",
+    )
 
     args = parser.parse_args()
 
-    if args.kaggle:
+    if args.local_dataset:
+        run_local_pipeline(
+            dataset_name=args.local_dataset,
+            output_csv=args.output,
+        )
+    elif args.kaggle:
         run_kaggle_pipeline(
             split=args.split,
             output_dir=args.output_dir,
