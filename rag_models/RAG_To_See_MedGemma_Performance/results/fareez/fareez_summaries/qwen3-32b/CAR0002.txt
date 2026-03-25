@@ -1,0 +1,47 @@
+Model: qwen/qwen3-32b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-03-25 04:50:59
+Time: 4.16s
+Tokens: 9,118 in / 1,247 out
+============================================================
+
+Patient Information:  
+The patient is a 90-year-old male, Amos Crona, who lives in a house with his parents in Wayland, Massachusetts. He is employed as a city bus driver and reports a sedentary lifestyle outside of his job. He has a history of long-term tobacco use, with a 20-year history of smoking approximately half a pack to a full pack per day. He denies alcohol consumption but admits to recreational use of crystal meth, with the last use occurring six days prior to this encounter and a frequency of two to three times per month over the past seven years. He denies use of marijuana or other recreational drugs. The patient has a past medical history of high cholesterol and hypertension, for which he takes Rosuvastatin and Lisinopril, respectively. He also takes a multivitamin. No allergies to medications are reported.
+
+Chief Complaint:  
+The patient presents with acute onset of chest pain, localized to the left side, which began 30 minutes prior to arrival. The pain is described as dull with a sensation of pressure and is rated as a 7 out of 10 on the pain scale. The pain has remained constant since onset and has not resolved. He reports that the pain worsens with movement and is more pronounced when lying down. He also notes associated dyspnea, which began the same time as the chest pain, and a low-grade fever (38°C), measured at home.
+
+History of Present Illness:  
+The patient's chest pain began suddenly while he was shoveling snow from his driveway. The pain has persisted since that time and has not improved with rest or activity modification. It is localized to the left side of the chest and does not radiate to other areas. The patient denies any prior episodes of chest pain. He reports that the pain is exacerbated by movement and is more severe in the supine position. He also notes a sensation of increased heart rate, which he describes as similar to when he is engaged in physical activity. There is no history of trauma to the chest, though he does play rugby and was tackled the previous day without immediate chest symptoms. No cough, sore throat, or other upper respiratory symptoms are reported. The patient denies dizziness, syncope, nausea, vomiting, or diaphoresis. No swelling in the lower extremities is noted.
+
+Review of Systems:  
+Constitutional: The patient denies fatigue or unintentional weight loss. He reports feeling a bit warm, with a measured temperature of 38°C.  
+Respiratory: He reports dyspnea, which began at the same time as the chest pain. No cough or sputum production is noted.  
+Cardiovascular: No palpitations or syncope are reported, aside from the increased heart rate he notes.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain is reported.  
+Other: No rashes, changes in skin appearance, or neurological symptoms are described.
+
+Allergies:  
+No known drug allergies.
+
+Past Medical History:  
+The patient has a complex medical history, including hypertension, hyperlipidemia, prediabetes, chronic kidney disease (now resolved), ischemic heart disease, sleep apnea, and a history of end-stage renal disease with subsequent kidney transplantation. He also has a history of chronic low back and neck pain, chronic pain, and chronic gingival disease. There is no family history of heart attacks or cancers.
+
+Social History:  
+The patient is a long-term smoker with a 20-year history of smoking 0.5 to 1 pack per day. He denies alcohol use but has a history of recreational crystal meth use, with the last use occurring six days prior to this visit and a frequency of two to three times per month over the past seven years. He denies marijuana use. The patient is employed as a city bus driver and reports a balanced diet, though he acknowledges eating out frequently. He exercises on Sundays with light running.
+
+Family History:  
+No significant family history of heart disease, cancer, or diabetes is reported.
+
+Current Medications:  
+The patient is currently taking Rosuvastatin for hyperlipidemia, Lisinopril for hypertension, and a multivitamin. No changes in medications have been noted recently.
+
+Objective:  
+Vital signs at the time of this visit are not available in the provided records. The patient’s height is 168 cm, and his BMI is 30.97, indicating obesity. No recent laboratory or imaging studies are included in the provided data. The patient's current medications and past medical history suggest a high risk for cardiovascular events, particularly given his age, smoking history, and recreational drug use.
+
+Assessment:  
+The patient presents with acute onset of left-sided chest pain, described as dull and pressure-like, with associated dyspnea and fever. The pain is not relieved by rest and is exacerbated by movement and lying down. Given his age, history of hypertension, hyperlipidemia, and recreational drug use, the differential diagnosis includes acute coronary syndrome, musculoskeletal chest pain, and possibly drug-induced chest discomfort. The presence of dyspnea and fever raises the possibility of an infectious or inflammatory etiology, though the acute onset and physical activity trigger are more consistent with a cardiac or musculoskeletal cause. Further evaluation, including an electrocardiogram and serial cardiac biomarkers, is warranted to rule out acute myocardial infarction.
+
+Plan:  
+The patient should be evaluated in the emergency department for a comprehensive assessment, including an ECG, cardiac enzymes, and a chest X-ray. A focused physical examination should be performed to assess for signs of heart failure or pericarditis. Given his complex medical history and recent recreational drug use, a toxicology screen may also be considered. The patient should be advised to avoid strenuous activity and to monitor for any worsening symptoms, including chest pain, shortness of breath, or dizziness. He should be followed up with his primary care provider for further management and optimization of his chronic conditions, including hypertension and hyperlipidemia. Smoking cessation counseling and a discussion regarding the risks of recreational drug use should also be initiated.

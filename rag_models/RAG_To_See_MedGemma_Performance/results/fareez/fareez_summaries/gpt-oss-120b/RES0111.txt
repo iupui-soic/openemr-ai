@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-03-25 04:57:07
+Time: 4.82s
+Tokens: 9,783 in / 1,551 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek  
+Sex: Male  
+Date of Birth: Not provided (patient reports being in 10th grade, approximately 15‑16 years old)  
+Residence: Lives with parents and two siblings at 318 Fay Ferry, Boston, Massachusetts 02116  
+Primary Care Provider: Dr. External Provider  
+
+Chief Complaint  
+“Sore throat for the past four days with a feeling of fever.”
+
+History of Present Illness  
+The patient is a teenage male who presents with a four‑day history of an “awful” sore throat that has not improved. He reports feeling “really hot,” although he has not taken a temperature. He denies difficulty swallowing liquids but notes significant pain with solid foods, describing it as “hard to eat solid foods right now.” He reports mild hoarseness, which he attributes to speaking less because of throat pain. He denies nasal discharge, cough, shortness of breath, chest pain, headache, confusion, visual or auditory changes, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or unintentional weight loss. He has no known chronic medical conditions and is not taking any prescription or over‑the‑counter medications other than a multivitamin. He has no known drug allergies.  
+
+Review of Systems  
+Constitutional: Fever (subjective), no chills, no weight loss, no fatigue.  
+ENT: Sore throat, pain with solids, mild hoarseness, no rhinorrhea, no sinus congestion, no ear pain, no visual changes.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations, no chest discomfort.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, no urinary frequency.  
+Neurologic: No headache, no confusion, no focal deficits.  
+Psychiatric: No anxiety or depression reported.  
+Social History: The patient is a 10th‑grade student, attending school part in‑person and part virtually. He lives at home with his parents and two siblings, reports a safe home environment, and denies tobacco, alcohol, or recreational drug use. He is not sexually active and does not anticipate sexual activity before graduating high school. No recent travel; school exposures are limited to classmates, with mask use reported most of the time. No known recent contact with individuals diagnosed with COVID‑19.  
+
+Past Medical History  
+The patient reports no chronic medical conditions. No history of asthma, allergies, diabetes, hypertension, or other illnesses.  
+
+Surgical History  
+Appendectomy performed at age 13. No other surgeries reported.  
+
+Family History  
+The patient reports no known family history of hypertension, diabetes, or other chronic illnesses.  
+
+Social History (expanded)  
+Education: Currently enrolled in grade 10.  
+Living Situation: Resides with parents and siblings; feels safe at home.  
+Substance Use: Denies tobacco, alcohol, marijuana, or other recreational drugs.  
+Sexual Activity: Not currently sexually active; no plans for activity before high school graduation.  
+
+Medications  
+Multivitamin (over‑the‑counter). No prescription medications.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Vital Signs  
+No vital signs were documented during this encounter. The patient’s temperature was not measured; he reports feeling hot.  
+
+Physical Examination  
+General: Alert, cooperative teenage male in no acute distress.  
+Head, Eyes, Ears, Nose, Throat: Oropharynx shows marked erythema and swelling of the tonsillar tissue; no exudates noted. No cervical lymphadenopathy palpated. No nasal discharge or sinus tenderness.  
+Neck: No rigidity, no meningismus.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Respiratory: Clear to auscultation bilaterally, no wheezes or rales.  
+Abdomen: Soft, non‑tender, no masses.  
+Extremities: No edema.  
+Neurologic: Grossly intact, no focal deficits.  
+
+Laboratory Data (from most recent available records)  
+- Serum potassium: 5.02 mmol/L (within laboratory reference).  
+- HDL cholesterol: 31.88 mg/dL (low).  
+- Triglycerides: 102.14 mg/dL (within reference).  
+- Serum calcium: 9.82 mg/dL (normal).  
+- Blood urea nitrogen: 8.27 mg/dL (normal).  
+- CO₂ total: 24.05 mmol/L (normal).  
+- Platelet count: 435 ×10³/µL (elevated).  
+- MCV: 82.8 fL (normocytic).  
+- MCHC: 35.5 g/dL (normal).  
+- PH of urine: 6.43 (within expected range).  
+- PHQ‑2 score: 1 (negative screen for depression).  
+- Fall risk (Morse Scale): 108 (high risk; not directly applicable to current visit).  
+
+Assessment  
+1. Acute pharyngitis, likely viral in etiology, pending rapid streptococcal antigen test.  
+2. Possible early COVID‑19 infection given fever and sore throat; SARS‑CoV‑2 rapid antigen test ordered.  
+3. Low HDL cholesterol (risk factor for dyslipidemia).  
+
+Plan  
+Diagnostics:  
+- Perform a rapid streptococcal antigen test in office today.  
+- Obtain a rapid SARS‑CoV‑2 antigen test; results to be communicated as soon as available.  
+
+Therapeutic:  
+- Symptomatic care: Recommend acetaminophen 500 mg PO q6‑8 hours as needed for fever or throat pain, not to exceed 3 g per day.  
+- Encourage adequate hydration, soft diet, and rest.  
+- If rapid strep test is positive, prescribe amoxicillin‑clavulanate as per standard pediatric dosing.  
+- If COVID‑19 test is positive, advise self‑isolation for at least 10 days from symptom onset, monitor for worsening respiratory symptoms, and follow CDC guidelines.  
+
+Vaccinations:  
+- Discussed importance of annual influenza vaccination; patient has not received this year’s flu shot. Offer administration today.  
+- Reviewed HPV vaccine series; patient is older than the typical target age but was counseled about potential benefit and insurance coverage limitations. No immediate plan for HPV vaccination at this visit.  
+
+Follow‑up:  
+- Return in 48–72 hours for test results and reassessment of symptoms.  
+- If symptoms worsen (increasing fever, difficulty breathing, new cough, or inability to tolerate oral intake), seek urgent care or go to the emergency department.  
+- Routine follow‑up with primary care provider in 1‑2 weeks for lipid panel review and counseling on diet/exercise.  
+
+Patient Education:  
+- Reviewed signs of bacterial superinfection and when to seek immediate care.  
+- Provided written instructions on home isolation, medication dosing, and signs of dehydration.  
+
+Disposition:  
+Patient discharged home after evaluation with instructions as above. No further inpatient care required at this time.

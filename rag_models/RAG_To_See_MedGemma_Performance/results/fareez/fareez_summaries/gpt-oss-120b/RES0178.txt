@@ -1,0 +1,94 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-03-25 04:57:07
+Time: 3.75s
+Tokens: 6,607 in / 1,159 out
+============================================================
+
+Patient Information  
+Name: Not documented (parent presenting on behalf of son)  
+Age: Approximately 1 year old (male)  
+Date of Encounter: Not documented  
+
+Chief Complaint  
+Fever, dry cough, and runny nose of two days duration.
+
+History of Present Illness  
+The mother reports that her son began with a dry cough and clear, watery rhinorrhea one day ago, followed by the onset of fever and chills last night. The fever measured at home was 38.8°C (101.8°F). The child’s cough remains non‑productive, and he has had no wheezing, shortness of breath, or chest pain. He denies any sputum production or hemoptysis. The nasal discharge is clear without purulence. He has a mild sore throat that is not causing significant discomfort, and his appetite is modestly decreased, though he continues to take solid foods in smaller portions. He reports generalized aches (“aches all over”) and a low‑grade malaise but no gastrointestinal symptoms such as vomiting or diarrhea. He has had no eye, ear, or visual changes, and there is no nasal congestion, rash, dizziness, syncope, numbness, or joint pain. No recent sick contacts, travel, or exposure to tobacco smoke are reported. The mother states that the child is otherwise healthy, meeting developmental milestones, and up‑to‑date on immunizations.
+
+Review of Systems  
+
+Constitutional: Fever 38.8°C, chills, mild malaise, generalized muscle aches, decreased appetite. No weight loss, no fatigue beyond usual.  
+
+Respiratory: Dry cough, clear rhinorrhea, no sputum, no dyspnea, no wheezing, no chest pain.  
+
+ENT: Mild sore throat, no ear pain or discharge, normal hearing, clear eyes, no visual changes, no sinus pressure or congestion.  
+
+Cardiovascular: No chest pain, palpitations, or edema.  
+
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+
+Genitourinary: No dysuria or change in urine output.  
+
+Neurologic: No headache, dizziness, syncope, focal weakness, or seizures.  
+
+Dermatologic: No rash or skin lesions.  
+
+Psychiatric: No behavioral changes noted.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+The child is described as “pretty healthy,” with occasional colds in winter. No chronic medical conditions, hospitalizations, or surgeries are reported.
+
+Surgical History  
+None reported.
+
+Social History  
+The child lives with mother, father, a younger brother, and a younger sister in a home without indoor smoking. No recent travel. The family reports online and occasional in‑person schooling. No known exposure to mold, dust, or other environmental irritants. No recreational drug use.  
+
+Family History  
+Maternal grandfather has hypertension and hyperlipidemia. No known family history of pulmonary or cardiac disease.
+
+Current Medications  
+None.
+
+Physical Examination / Vital Signs  
+Temperature (home): 38.8°C (101.8°F). No additional vital signs recorded at the visit. General appearance: alert, no acute distress noted in conversation. Respiratory exam: no reported wheezing or dyspnea. ENT: clear nasal discharge, mild sore throat, no erythema or exudate noted. No other findings documented.
+
+Laboratory / Diagnostic Studies  
+A nasopharyngeal swab for SARS‑CoV‑2 (COVID‑19) was ordered with results expected in 24‑48 hours. No other laboratory tests performed at this encounter.
+
+Assessment  
+1. Upper respiratory infection – likely viral (differential includes COVID‑19, influenza, RSV, or other seasonal viruses).  
+2. Fever, dry cough, clear rhinorrhea, sore throat, myalgias consistent with a mild viral syndrome.  
+
+Plan  
+
+Diagnostics  
+- Perform COVID‑19 PCR testing; results anticipated within 24‑48 hours.  
+- Consider rapid influenza testing if symptoms worsen or if influenza season is high, pending clinical judgment.  
+
+Therapeutic  
+- Supportive care: encourage adequate fluid intake, maintain a comfortable environment, and ensure rest.  
+- Antipyretic: acetaminophen dosed appropriately for weight to control fever and provide analgesia for myalgias and sore throat.  
+- No antibiotics indicated at this time given the lack of bacterial signs (no purulent discharge, no focal findings).  
+
+Education & Safety  
+- Counsel caregivers on signs that require urgent evaluation: persistent high fever > 39°C, worsening respiratory distress, difficulty breathing, cyanosis, inability to maintain hydration, lethargy, seizures, or new neurologic deficits.  
+- Advise to monitor temperature q4‑6 hours and maintain hydration with oral fluids or age‑appropriate electrolyte solutions.  
+- Continue normal feeding as tolerated; offer smaller, frequent meals if appetite remains low.  
+
+Follow‑up  
+- Telephone or telehealth follow‑up in 48‑72 hours, or sooner if the child’s condition deteriorates.  
+- If COVID‑19 test returns positive, provide appropriate public health guidance and reinforce isolation measures for the household.  
+- If fever persists beyond 72 hours or new concerning symptoms develop, arrange in‑person evaluation.  
+
+Disposition  
+The child will be managed as an outpatient with supportive care and close monitoring. No immediate need for emergency department referral unless warning signs develop.  
+
+Signature  
+[Physician’s name], MD  
+[Date]

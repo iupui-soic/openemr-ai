@@ -1,0 +1,140 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-03-25 04:57:07
+Time: 5.85s
+Tokens: 9,114 in / 2,141 out
+============================================================
+
+Patient Information  
+Name: Amos Crona Date of Birth: 20 January 1934 Age: 92 years Sex: Male Residence: 201 O’Conner Glen, Wayland, Massachusetts Living Situation: Lives in a house with his parents Occupation: City bus driver  
+
+Chief Complaint  
+Sudden onset of left‑sided chest pressure that began approximately 30 minutes ago while shoveling snow.  
+
+History of Present Illness  
+Mr Crona reports that the chest discomfort started abruptly about half an hour ago during moderate physical exertion (shoveling his driveway). He describes the sensation as a dull, pressure‑like pain localized to the left anterior chest wall. He rates the pain as 7/10 on a numeric scale. The pain has been continuous since onset and feels slightly worse with movement, ambulation, and when lying supine; there is no clear alleviating factor. He notes associated shortness of breath that began shortly after the pain started and a sensation of his heart beating faster, which he usually experiences only during sports. He denies radiation of the pain to the arm, jaw, or back. He reports no cough, wheezing, pleuritic pain, nausea, vomiting, diaphoresis, or leg swelling. He feels “a little hot” and measured a temperature of 38 °C at home. He denies recent travel, sick contacts, or recent chest trauma. This is his first episode of chest pain.  
+
+Review of Systems  
+Constitutional: Fever 38 °C reported; no chills, fatigue, or recent weight change.  
+Respiratory: Mild shortness of breath since the onset of chest pain; no cough, wheeze, or sputum production.  
+Cardiovascular: Palpitations described as a faster heartbeat; no known arrhythmias, syncope, or peripheral edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or dyspepsia.  
+Genitourinary: No dysuria or urinary changes.  
+Musculoskeletal: No recent falls; no localized musculoskeletal injury noted other than the activity of shoveling.  
+Neurologic: No dizziness, headache, or focal deficits.  
+Skin: No rashes or lesions.  
+Psychiatric: No anxiety or depression noted; PHQ‑2 score of 2 documented.  
+
+Past Medical History  
+- Ischemic heart disease (CAD) – ongoing  
+- Essential hypertension – ongoing, treated with lisinopril  
+- Hyperlipidemia – ongoing, treated with rosuvastatin  
+- Type 2 diabetes mellitus with microalbuminuria – ongoing, on insulin therapy (historical)  
+- Chronic kidney disease (stage 4) – ongoing, status post renal transplant (history)  
+- Metabolic syndrome  
+- Obesity (BMI ≈ 31)  
+- Sleep apnea and sleep disorder  
+- Chronic low back pain, chronic neck pain, chronic pain syndrome  
+- Seizure disorder (single seizure history)  
+- History of anemia and other longstanding chronic conditions noted in the record  
+
+Surgical History  
+No documented surgical procedures.  
+
+Social History  
+Tobacco: Smokes approximately 0.5–1 pack of cigarettes per day for the past 20 years.  
+Alcohol: Denies any alcohol use.  
+Illicit drugs: History of crystal methamphetamine use approximately twice per month for the past seven years; most recent use was six days ago. No current marijuana use.  
+Exercise: Typically runs on Sundays; recent activity included shoveling snow.  
+Diet: Reports a generally balanced diet with occasional meals out; attempts to include vegetables.  
+Other: No known medication allergies.  
+
+Family History  
+No reported family history of premature myocardial infarction, coronary artery disease, or cancers.  
+
+Current Medications (as reported by patient)  
+- Lisinopril (ACE inhibitor) – for hypertension  
+- Rosuvastatin – for hyperlipidemia  
+- Multivitamin supplement  
+(Additional chronic medications noted in the electronic record include metoprolol succinate, nitroglycerin spray, hydrochlorothiazide, and various transplant‑related agents; however, the patient did not mention active use of these at this visit.)  
+
+Allergies  
+No known drug allergies.  
+
+Vital Signs (most recent)  
+- Temperature: 38 °C (self‑reported)  
+- Blood Pressure: Not recorded at this encounter (last recorded value not available)  
+- Heart Rate: 91 beats/min (from prior record)  
+- Respiratory Rate: 14 breaths/min (from prior record)  
+- SpO₂: Not measured  
+- Height: 168 cm; Weight: Not documented; BMI: 30.97 (obese)  
+
+Physical Examination  
+General: Alert, appears mildly uncomfortable due to chest pain; no acute distress.  
+Cardiovascular: Regular rate and rhythm; no murmurs, rubs, or gallops appreciated on limited exam; peripheral pulses palpable.  
+Respiratory: Breath sounds clear bilaterally; no wheezes, rales, or pleural rubs.  
+Chest Wall: No visible deformities or tenderness noted on inspection; patient reports increased discomfort with movement.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No edema, cyanosis, or calf tenderness.  
+Neurologic: Alert and oriented; no focal deficits.  
+
+Laboratory Data (most recent)  
+- Serum Creatinine: 0.72 mg/dL (within normal limits)  
+- Blood Urea Nitrogen: 17–19 mg/dL (slightly elevated normal range)  
+- Electrolytes: Na 141.5 mmol/L, K 4.3–5.0 mmol/L, Cl 101.2 mmol/L, CO₂ 20.7–28.4 mmol/L (within acceptable limits)  
+- Glucose: 84.5 mg/dL (fasting)  
+- Lipid Panel: Total cholesterol 185 mg/dL, LDL 141 mg/dL, HDL not listed, triglycerides not listed  
+- Liver enzymes: ALT 21.8 U/L (normal)  
+- Hemoglobin A1c not provided; PHQ‑2 score 2 (screening positive for mild depressive symptoms)  
+- No cardiac biomarkers (troponin, CK‑MB) were drawn at this time.  
+
+Imaging  
+No imaging studies have been performed during this encounter.  
+
+Assessment  
+1. Acute chest pain with pressure‑type characteristics in a 92‑year‑old male with known ischemic heart disease, hypertension, hyperlipidemia, active tobacco use, and recent exertion – concerning for possible acute coronary syndrome (unstable angina vs. NSTEMI).  
+2. Shortness of breath, low‑grade fever, and tachycardia further raise concern for cardiac ischemia or pulmonary etiology.  
+3. Chronic comorbidities: hypertension, hyperlipidemia, chronic kidney disease (stage 4), diabetes mellitus, obstructive sleep apnea, chronic musculoskeletal pain, seizure disorder.  
+4. Substance use: ongoing tobacco use; recent intermittent crystal‑methamphetamine exposure.  
+
+Plan  
+Diagnostics  
+- Obtain a 12‑lead electrocardiogram immediately and repeat as indicated.  
+- Draw cardiac enzymes (troponin I/T) at presentation and repeat in 3–6 hours.  
+- Perform a bedside chest radiograph to assess for pulmonary causes and evaluate heart size.  
+- Basic metabolic panel and repeat CBC if clinically indicated.  
+
+Medical Management  
+- Administer aspirin 325 mg chewable now, followed by daily low‑dose aspirin.  
+- Initiate sublingual nitroglycerin 0.4 mg q5 min PRN for persistent chest discomfort, monitoring blood pressure.  
+- Consider intravenous morphine for severe pain if nitroglycerin inadequate and blood pressure permits.  
+- Start a beta‑blocker (metoprolol succinate) if no contraindications and blood pressure allows, given underlying CAD and hypertension.  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 94 % if desaturation occurs.  
+- Continue current antihypertensive (lisinopril) and statin therapy; ensure adherence.  
+
+Monitoring  
+- Admit to telemetry unit for continuous cardiac monitoring, serial ECGs, and repeat troponins.  
+- Monitor vital signs q15 minutes initially, then q30 minutes once stable.  
+- Observe for signs of heart failure, arrhythmia, or hemodynamic instability.  
+
+Disposition  
+- Patient to be admitted for further cardiac evaluation and risk stratification.  
+- Cardiology consult for possible early invasive strategy versus conservative management based on serial biomarkers and ECG evolution.  
+
+Patient Education & Discharge Planning (post‑hospital)  
+- Counsel on smoking cessation; offer nicotine replacement therapy and referral to cessation program.  
+- Discuss importance of adhering to antihypertensive and lipid‑lowering regimens.  
+- Advise avoidance of strenuous exertion until cardiac cause is ruled out; gradual return to activity as directed by cardiology.  
+- Reinforce signs and symptoms that require immediate emergency care (e.g., worsening chest pain, diaphoresis, syncope).  
+- Schedule follow‑up with primary care physician within 1 week and cardiology within 2 weeks after discharge.  
+
+Follow‑up Instructions  
+- Primary Care: within 7 days.  
+- Cardiology: as soon as possible, preferably within 14 days.  
+- Smoking cessation resources provided; referral to counseling.  
+
+Disposition Status  
+Patient remains in the emergency department awaiting ECG and laboratory results; plan to admit pending initial work‑up.  
+
+No information available for sections not addressed above.
