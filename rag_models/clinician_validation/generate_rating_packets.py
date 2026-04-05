@@ -30,12 +30,12 @@ import argparse
 from pathlib import Path
 
 
-BASE_DIR = os.path.dirname(__file__)
-SELECTION_FILE = os.path.join(BASE_DIR, "fareez_selected_40.json")
-EXTRACTS_DIR = os.path.join(BASE_DIR, "fareez_openemr_extracts")
-SUMMARIES_DIR = os.path.join(BASE_DIR, "results", "fareez", "fareez_summaries")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SELECTION_FILE = os.path.join(RAG_ROOT, "data", "fareez_selected_40.json")
+EXTRACTS_DIR = os.path.join(RAG_ROOT, "data", "fareez_openemr_extracts")
+SUMMARIES_DIR = os.path.join(RAG_ROOT, "results", "fareez", "fareez_summaries")
 TRANSCRIPT_DIR = os.path.normpath(os.path.join(
-    BASE_DIR, "..", "..", "openemr_whisper_wer", "data",
+    RAG_ROOT, "..", "openemr_whisper_wer", "data",
     "fareez_osce", "Data", "Clean Transcripts"
 ))
 
@@ -127,7 +127,7 @@ def main():
     parser.add_argument("--output-dir", default="rating_packets")
     args = parser.parse_args()
 
-    output_dir = os.path.join(BASE_DIR, args.output_dir)
+    output_dir = os.path.join(RAG_ROOT, args.output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
     # Load selection

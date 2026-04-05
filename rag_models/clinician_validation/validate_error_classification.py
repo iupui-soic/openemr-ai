@@ -6,14 +6,13 @@ import time
 from dotenv import load_dotenv
 from groq import Groq
 
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".env"))
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(RAG_ROOT, "..", ".env"))
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-key = pd.read_csv(os.path.join(BASE_DIR, "rating_packets/ANSWER_KEY_DO_NOT_SHARE.csv"))
+key = pd.read_csv(os.path.join(RAG_ROOT, "rating_packets", "ANSWER_KEY_DO_NOT_SHARE.csv"))
 frames = []
 for r in ["rater_1", "rater_2", "rater_3"]:
-    df = pd.read_csv(os.path.join(BASE_DIR, f"rating_packets/ratings_{r}.csv"))
+    df = pd.read_csv(os.path.join(RAG_ROOT, "rating_packets", f"ratings_{r}.csv"))
     df["rater"] = r
     frames.append(df)
 merged = pd.concat(frames, ignore_index=True)

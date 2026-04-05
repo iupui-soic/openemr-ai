@@ -35,12 +35,12 @@ class FareezLoader:
 
     def __init__(self, base_dir=None):
         if base_dir is None:
-            base_dir = os.path.dirname(__file__)
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.base_dir = base_dir
-        self.selection_file = os.path.join(base_dir, "fareez_selected_40.json")
-        self.extracts_dir = os.path.join(base_dir, "fareez_openemr_extracts")
+        self.selection_file = os.path.join(base_dir, "data", "fareez_selected_40.json")
+        self.extracts_dir = os.path.join(base_dir, "data", "fareez_openemr_extracts")
         self.transcript_dir = os.path.normpath(os.path.join(
-            base_dir, "..", "..", "openemr_whisper_wer", "data",
+            base_dir, "..", "openemr_whisper_wer", "data",
             "fareez_osce", "Data", "Clean Transcripts"
         ))
 

@@ -21,6 +21,7 @@ Requirements (local):
 
 import modal
 import os
+import sys
 from typing import Dict, List, Any
 
 # ============================================================================
@@ -495,6 +496,7 @@ def main(output_dir: str = "results"):
     import time
 
     # Import here - this runs LOCALLY only, not on Modal containers
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'pipeline'))
     from summary_utils import NotionFetcher
 
     print("=" * 80)

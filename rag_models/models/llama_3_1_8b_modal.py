@@ -1,16 +1,16 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses MedGemma 27B-Text-IT (Unsloth 4-bit pre-quantized) for inference
+Uses HuggingFace Inference API with Llama-3.1-8B-Instruct for inference
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + MedGemma 27B (4-bit)
+2. Generates summaries for each patient using RAG + Llama 3.1 8B (HF Inference)
 3. Evaluates summaries against manual references (via shared evaluator service)
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_medgemma_27b_4bit_pipeline.py
-    modal run rag_medgemma_27b_4bit_pipeline.py --output-dir results/medgemma-27b-4bit
+    modal run rag_llama_8b_pipeline.py
+    modal run rag_llama_8b_pipeline.py --output-dir results/llama-8b
 
 Prerequisites:
     Deploy shared evaluator first: modal deploy shared_evaluator_service.py
@@ -21,41 +21,38 @@ Requirements (local):
 
 import modal
 import os
+import sys
 from typing import Dict, List, Any
 
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-medgemma-27b-4bit")
+app = modal.App("medical-summarization-rag-llama-8b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
-# Model configuration - Using Unsloth pre-quantized 4-bit version
-MODEL_NAME = "unsloth/medgemma-27b-text-it-unsloth-bnb-4bit"
-MODEL_SHORT_NAME = "medgemma-27b-4bit"
+# Model configuration
+MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+MODEL_SHORT_NAME =  "llama-3.1-8b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
 # Modal Images
 # ============================================================================
 
-# Image for summarization (MedGemma + RAG)
+# Image for summarization (HF Inference API + RAG)
 summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
+        "huggingface-hub>=0.20.0",
         "langchain>=0.1.0",
         "langchain-community>=0.0.20",
         "langchain-huggingface>=0.0.1",
         "langchain-chroma>=0.1.0",
         "sentence-transformers>=2.2.2",
         "chromadb>=0.4.22",
-        "transformers>=4.45.0",
-        "torch>=2.1.0",
-        "accelerate>=0.25.0",
-        "bitsandbytes>=0.41.0",
-        "huggingface-hub>=0.20.0",
         "tiktoken>=0.5.0",
     )
 )
@@ -67,26 +64,22 @@ summarizer_image = (
 
 @app.cls(
     image=summarizer_image,
-    gpu="A100",
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
     secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using MedGemma 27B-Text-IT (4-bit).
+    RAG-based medical summarizer using HuggingFace Inference API with Llama 3.1 8B.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
-
-    This significantly reduces costs since MedGemma 27B takes ~60-90s to load.
     """
 
     @modal.enter()
     def load_models(self):
         """Load all models once when container starts."""
-        import torch
-        from transformers import pipeline
+        from huggingface_hub import InferenceClient
         from langchain_huggingface import HuggingFaceEmbeddings
         from langchain_chroma import Chroma
         from sentence_transformers import SentenceTransformer
@@ -95,26 +88,10 @@ class MedicalSummarizer:
         print("🔄 Loading models (one-time initialization)...")
         print(f"   Model: {MODEL_NAME}")
 
-        # ==============================
-        # LOAD MEDGEMMA 27B (4-BIT) PIPELINE
-        # ==============================
-        print("  → Loading MedGemma 27B-Text-IT (4-bit) pipeline...")
-        import time
-        start_load = time.time()
+        # Initialize HuggingFace Inference Client
+        print("  → Initializing HuggingFace Inference client...")
+        self.client = InferenceClient(api_key=os.environ.get("HF_TOKEN"))
 
-        self.pipe = pipeline(
-            "text-generation",
-            model=MODEL_NAME,
-            torch_dtype=torch.bfloat16,
-            device_map="auto",
-        )
-
-        load_time = time.time() - start_load
-        print(f"  → MedGemma loaded in {load_time:.2f}s")
-
-        # ==============================
-        # LOAD RAG COMPONENTS
-        # ==============================
         # Load BioBERT embeddings for ChromaDB
         print("  → Loading BioBERT embeddings...")
         self.embeddings = HuggingFaceEmbeddings(
@@ -152,11 +129,6 @@ class MedicalSummarizer:
 
         print("✅ All models loaded successfully!")
 
-    def _generate_text(self, messages: list, max_new_tokens: int = 500, temperature: float = 0.3) -> str:
-        """Generate text using the pipeline."""
-        output = self.pipe(messages, max_new_tokens=max_new_tokens, temperature=temperature)
-        return output[0]["generated_text"][-1]["content"]
-
     @modal.method()
     def generate_summary(
             self,
@@ -165,7 +137,7 @@ class MedicalSummarizer:
             patient_name: str = "Patient",
     ) -> Dict[str, Any]:
         """
-        Generate SOAP-format medical summary from transcript using RAG + MedGemma.
+        Generate SOAP-format medical summary from transcript using RAG + HF Inference.
 
         Args:
             transcript_text: Doctor-patient conversation transcript
@@ -185,7 +157,7 @@ class MedicalSummarizer:
         start_total = time.time()
 
         # ==============================
-        # 1. EXTRACT DISEASE USING MEDGEMMA
+        # 1. EXTRACT DISEASE USING HF INFERENCE
         # ==============================
         print("🔹 Extracting disease from transcript...")
         start_retrieval = time.time()
@@ -217,13 +189,15 @@ Primary Disease:
             },
         ]
 
-        detected_disease = self._generate_text(disease_messages, max_new_tokens=20).strip()
+        disease_response = self.client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=disease_messages,
+            temperature=0.3,
+            max_tokens=20,
+        )
 
-        # Clean up
-        if not detected_disease:
-            detected_disease = "General"
-        detected_disease = detected_disease.split('\n')[0].split(',')[0].strip()
-
+        raw_disease = disease_response.choices[0].message.content
+        detected_disease = raw_disease.strip() if raw_disease else "General"
         print(f"✅ Detected Disease: {detected_disease}")
 
         # ==============================
@@ -250,9 +224,9 @@ Primary Disease:
         print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
         # ==============================
-        # 3. GENERATE SUMMARY WITH MEDGEMMA
+        # 3. GENERATE SUMMARY WITH HF INFERENCE
         # ==============================
-        print("🔹 Generating summary with MedGemma 27B...")
+        print("🔹 Generating summary with HF Inference (Llama 3.1 8B)...")
         start_gen = time.time()
 
         summary_messages = [
@@ -305,9 +279,15 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
 
         print(f"📊 Input tokens: {input_tokens:,}")
 
-        # Generate with MedGemma
+        # Generate with HF Inference API
         try:
-            generated_text = self._generate_text(summary_messages, max_new_tokens=2048)
+            response = self.client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=summary_messages,
+                temperature=0.3,
+                max_tokens=2048,
+            )
+            generated_text = response.choices[0].message.content.strip()
 
             if self.encoding:
                 output_tokens = len(self.encoding.encode(generated_text))
@@ -315,7 +295,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
                 output_tokens = int(len(generated_text.split()) * 1.3)
 
         except Exception as e:
-            print(f"❌ MedGemma generation failed: {e}")
+            print(f"❌ HF Inference generation failed: {e}")
             generated_text = f"Error generating summary: {str(e)}"
             output_tokens = 0
 
@@ -505,6 +485,7 @@ def main(output_dir: str = "results"):
     import time
 
     # Import here - this runs LOCALLY only, not on Modal containers
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'pipeline'))
     from summary_utils import NotionFetcher
 
     print("=" * 80)

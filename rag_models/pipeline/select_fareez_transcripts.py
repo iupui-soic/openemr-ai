@@ -113,7 +113,8 @@ def main():
             "matched_openemr_pid": None,  # Filled in step 4.9.3
         })
 
-    output_path = os.path.join(os.path.dirname(__file__), "fareez_selected_40.json")
+    rag_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_path = os.path.join(rag_root, "data", "fareez_selected_40.json")
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
     print(f"\nSaved selection to: {output_path}")

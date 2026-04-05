@@ -1,16 +1,16 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses HuggingFace Inference API with Llama-3.1-8B-Instruct for inference
+Uses Groq API with GPT-OSS-120B for inference, Modal for vector database storage
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + Llama 3.1 8B (HF Inference)
+2. Generates summaries for each patient using RAG + GPT-OSS-120B (Groq)
 3. Evaluates summaries against manual references (via shared evaluator service)
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_llama_8b_pipeline.py
-    modal run rag_llama_8b_pipeline.py --output-dir results/llama-8b
+    modal run rag_gpt_oss_120b_pipeline.py
+    modal run rag_gpt_oss_120b_pipeline.py --output-dir results/gpt-oss-120b
 
 Prerequisites:
     Deploy shared evaluator first: modal deploy shared_evaluator_service.py
@@ -21,31 +21,32 @@ Requirements (local):
 
 import modal
 import os
+import sys
 from typing import Dict, List, Any
 
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-llama-8b")
+app = modal.App("medical-summarization-rag-gpt-oss-120b")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
-MODEL_SHORT_NAME =  "llama-3.1-8b"
+MODEL_NAME = "openai/gpt-oss-120b"
+MODEL_SHORT_NAME = "gpt-oss-120b"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
 # Modal Images
 # ============================================================================
 
-# Image for summarization (HF Inference API + RAG)
+# Image for summarization (Groq + RAG)
 summarizer_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
-        "huggingface-hub>=0.20.0",
+        "groq>=0.4.0",
         "langchain>=0.1.0",
         "langchain-community>=0.0.20",
         "langchain-huggingface>=0.0.1",
@@ -65,11 +66,11 @@ summarizer_image = (
     image=summarizer_image,
     timeout=3600,
     volumes={"/vectordb": vectordb_volume},
-    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
+    secrets=[modal.Secret.from_dict({"GROQ_API_KEY": os.environ.get("GROQ_API_KEY", "")})],
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using HuggingFace Inference API with Llama 3.1 8B.
+    RAG-based medical summarizer using Groq API with GPT-OSS-120B.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
@@ -78,7 +79,7 @@ class MedicalSummarizer:
     @modal.enter()
     def load_models(self):
         """Load all models once when container starts."""
-        from huggingface_hub import InferenceClient
+        from groq import Groq
         from langchain_huggingface import HuggingFaceEmbeddings
         from langchain_chroma import Chroma
         from sentence_transformers import SentenceTransformer
@@ -87,9 +88,9 @@ class MedicalSummarizer:
         print("🔄 Loading models (one-time initialization)...")
         print(f"   Model: {MODEL_NAME}")
 
-        # Initialize HuggingFace Inference Client
-        print("  → Initializing HuggingFace Inference client...")
-        self.client = InferenceClient(api_key=os.environ.get("HF_TOKEN"))
+        # Initialize Groq client
+        print("  → Initializing Groq client...")
+        self.client = Groq()
 
         # Load BioBERT embeddings for ChromaDB
         print("  → Loading BioBERT embeddings...")
@@ -136,7 +137,7 @@ class MedicalSummarizer:
             patient_name: str = "Patient",
     ) -> Dict[str, Any]:
         """
-        Generate SOAP-format medical summary from transcript using RAG + HF Inference.
+        Generate SOAP-format medical summary from transcript using RAG + Groq.
 
         Args:
             transcript_text: Doctor-patient conversation transcript
@@ -156,12 +157,12 @@ class MedicalSummarizer:
         start_total = time.time()
 
         # ==============================
-        # 1. EXTRACT DISEASE USING HF INFERENCE
+        # 1. EXTRACT DISEASE USING GROQ
         # ==============================
         print("🔹 Extracting disease from transcript...")
         start_retrieval = time.time()
 
-        disease_messages = [
+        disease_prompt = [
             {
                 "role": "system",
                 "content": (
@@ -190,7 +191,7 @@ Primary Disease:
 
         disease_response = self.client.chat.completions.create(
             model=MODEL_NAME,
-            messages=disease_messages,
+            messages= disease_prompt,
             temperature=0.3,
             max_tokens=20,
         )
@@ -223,9 +224,9 @@ Primary Disease:
         print(f"⏱️ Disease extraction + retrieval: {retrieval_time:.2f}s")
 
         # ==============================
-        # 3. GENERATE SUMMARY WITH HF INFERENCE
+        # 3. GENERATE SUMMARY WITH GROQ
         # ==============================
-        print("🔹 Generating summary with HF Inference (Llama 3.1 8B)...")
+        print("🔹 Generating summary with Groq (GPT-OSS-120B)...")
         start_gen = time.time()
 
         summary_messages = [
@@ -243,7 +244,7 @@ TRANSCRIPT (Doctor-patient conversation):
 OPENEMR EXTRACT (Electronic health record):
 {openemr_text if openemr_text else "No OpenEMR data available."}
 
-SCHEMA GUIDE (Required sections and structure):
+SCHEMA GUIDE (Reference sections to include):
 {schema_context}
 
 OUTPUT FORMAT REQUIREMENTS:
@@ -278,7 +279,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
 
         print(f"📊 Input tokens: {input_tokens:,}")
 
-        # Generate with HF Inference API
+        # Generate with Groq
         try:
             response = self.client.chat.completions.create(
                 model=MODEL_NAME,
@@ -294,7 +295,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
                 output_tokens = int(len(generated_text.split()) * 1.3)
 
         except Exception as e:
-            print(f"❌ HF Inference generation failed: {e}")
+            print(f"❌ Groq generation failed: {e}")
             generated_text = f"Error generating summary: {str(e)}"
             output_tokens = 0
 
@@ -484,6 +485,7 @@ def main(output_dir: str = "results"):
     import time
 
     # Import here - this runs LOCALLY only, not on Modal containers
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'pipeline'))
     from summary_utils import NotionFetcher
 
     print("=" * 80)

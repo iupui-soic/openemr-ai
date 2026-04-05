@@ -1,16 +1,16 @@
 """
 Modal-based RAG system for medical transcript summarization
-Uses Groq API with GPT-OSS-120B for inference, Modal for vector database storage
+Uses Groq API with Llama-4-Scout-17B-16E-Instruct for inference, Modal for vector database storage
 
 Complete pipeline that:
 1. Fetches all patients from Notion database (via summary_utils.NotionFetcher)
-2. Generates summaries for each patient using RAG + GPT-OSS-120B (Groq)
+2. Generates summaries for each patient using RAG + Llama-4-Scout-17B (Groq)
 3. Evaluates summaries against manual references (via shared evaluator service)
 4. Outputs: evaluation_results.csv + individual summary files
 
 Usage:
-    modal run rag_gpt_oss_120b_pipeline.py
-    modal run rag_gpt_oss_120b_pipeline.py --output-dir results/gpt-oss-120b
+    modal run rag_llama4_scout_pipeline.py
+    modal run rag_llama4_scout_pipeline.py --output-dir results/llama4-scout
 
 Prerequisites:
     Deploy shared evaluator first: modal deploy shared_evaluator_service.py
@@ -21,20 +21,21 @@ Requirements (local):
 
 import modal
 import os
+import sys
 from typing import Dict, List, Any
 
 # ============================================================================
 # Modal App Configuration
 # ============================================================================
 
-app = modal.App("medical-summarization-rag-gpt-oss-120b")
+app = modal.App("medical-summarization-rag-llama4-scout")
 
 # Persistent volume for vector database
 vectordb_volume = modal.Volume.from_name("medical-vectordb")
 
 # Model configuration
-MODEL_NAME = "openai/gpt-oss-120b"
-MODEL_SHORT_NAME = "gpt-oss-120b"
+MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"
+MODEL_SHORT_NAME = "llama4-scout"
 CHROMA_PATH = "/vectordb/chroma_schema_improved"
 
 # ============================================================================
@@ -69,7 +70,7 @@ summarizer_image = (
 )
 class MedicalSummarizer:
     """
-    RAG-based medical summarizer using Groq API with GPT-OSS-120B.
+    RAG-based medical summarizer using Groq API with Llama-4-Scout-17B.
 
     Models are loaded once in @modal.enter() and reused across all
     generate_summary() calls for efficient batch processing.
@@ -190,7 +191,7 @@ Primary Disease:
 
         disease_response = self.client.chat.completions.create(
             model=MODEL_NAME,
-            messages= disease_prompt,
+            messages=disease_prompt,
             temperature=0.3,
             max_tokens=20,
         )
@@ -225,7 +226,7 @@ Primary Disease:
         # ==============================
         # 3. GENERATE SUMMARY WITH GROQ
         # ==============================
-        print("🔹 Generating summary with Groq (GPT-OSS-120B)...")
+        print("🔹 Generating summary with Groq (Llama-4-Scout-17B)...")
         start_gen = time.time()
 
         summary_messages = [
@@ -282,7 +283,7 @@ Generate the medical summary now in narrative prose format, beginning with "Pati
         try:
             response = self.client.chat.completions.create(
                 model=MODEL_NAME,
-                messages=summary_messages,
+                messages= summary_messages,
                 temperature=0.3,
                 max_tokens=2048,
             )
@@ -484,6 +485,7 @@ def main(output_dir: str = "results"):
     import time
 
     # Import here - this runs LOCALLY only, not on Modal containers
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'pipeline'))
     from summary_utils import NotionFetcher
 
     print("=" * 80)

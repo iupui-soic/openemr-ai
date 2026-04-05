@@ -105,7 +105,7 @@ This repository includes an evaluation of LLM models for generating medical disc
 
 ### Results
 
-Results are aggregated across 3 independent runs using `rag_models/RAG_To_See_MedGemma_Performance/aggregate_results.py`.
+Results are aggregated across 3 independent runs using `rag_models/evaluation/aggregate_results.py`.
 
 **Evaluation Metrics:**
 - **BLEU & ROUGE-L**: Lexical overlap and structural recall
@@ -126,17 +126,59 @@ Results are aggregated across 3 independent runs using `rag_models/RAG_To_See_Me
 | GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.8s | 5,275 |
 | MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 42.3s | 2,741 |
 
-**Clinician Evaluation**: 3 physician fellows (GI, IR, ER) will independently rate all 160 summaries on 6 dimensions (Accuracy, Completeness, Organization, Conciseness, Clinical Utility, Overall Quality) using 5-point Likert scales adapted from PDQI-9 and QNOTE. Inter-rater reliability via Krippendorff's alpha, model comparison via Friedman test with Bonferroni-corrected pairwise Wilcoxon.
+**Clinician Evaluation**: 3 physician fellows (GI, IR, ER) independently rated all 160 summaries on 6 dimensions using 5-point Likert scales adapted from PDQI-9 and QNOTE. Inter-rater reliability via Gwet's AC2 (ordinal weights), model comparison via Friedman test with Bonferroni-corrected pairwise Wilcoxon signed-rank tests.
+
+#### Clinician Rating Results (Mean(SD), 5-point Likert)
+
+| Model | Accuracy | Completeness | Organization | Conciseness | Clinical Utility | Overall Quality | Composite |
+|-------|----------|--------------|--------------|-------------|------------------|-----------------|-----------|
+| GPT-OSS 120B | 2.70(0.90) | **4.14(0.57)** | **5.00(0.00)** | 3.64(0.99) | **3.54(0.88)** | **3.44(0.86)** | **3.74** |
+| GPT-OSS 20B | 2.63(0.92) | 3.93(0.64) | **5.00(0.00)** | **3.92(0.78)** | 3.47(0.85) | 3.35(0.86) | 3.72 |
+| Qwen3 32B | 2.50(0.90) | 3.83(0.62) | 4.94(0.27) | 3.70(0.71) | 3.42(0.91) | 3.29(0.90) | 3.61 |
+| MedGemma 4B | 2.38(0.81) | 2.97(0.74) | 3.91(1.11) | 3.35(1.23) | 2.62(0.84) | 2.51(0.92) | 2.96 |
+
+**Inter-Rater Reliability (Gwet's AC2, ordinal weights):**
+
+| Dimension | AC2 | 95% CI | Interpretation |
+|-----------|-----|--------|----------------|
+| Organization | 0.971 | [0.960, 0.982] | Good |
+| Completeness | 0.874 | [0.851, 0.898] | Good |
+| Overall Quality | 0.770 | [0.729, 0.810] | Acceptable |
+| Clinical Utility | 0.758 | [0.720, 0.795] | Acceptable |
+| Accuracy | 0.708 | [0.663, 0.752] | Acceptable |
+| Conciseness | 0.654 | [0.612, 0.695] | Low |
+
+**Friedman Test** (significant dimensions): Organization (p<0.001, W=0.95), Completeness (p<0.001, W=0.74), Clinical Utility (p<0.001, W=0.43), Overall Quality (p<0.001, W=0.40)
+
+#### Automated Metrics (40 Conversations)
+
+| Model | BLEU | ROUGE-L | SBERT Coherence | BERTScore F1 | Avg Chars |
+|-------|------|---------|-----------------|--------------|-----------|
+| GPT-OSS 120B | 0.011 | 0.115 | 0.511 | 0.800 | 7,072 |
+| GPT-OSS 20B | 0.009 | 0.118 | 0.529 | 0.800 | 5,275 |
+| Qwen3 32B | 0.015 | 0.129 | 0.491 | 0.803 | 5,568 |
+| MedGemma 4B | 0.011 | 0.145 | 0.506 | 0.803 | 3,729 |
+
+**Key Findings:**
+- **GPT-OSS 120B** achieved the highest composite clinician rating (3.74/5), with perfect organization scores and strongest completeness
+- **Organization** showed near-perfect agreement across raters (AC2=0.971) and strongest model differentiation (W=0.95), with all three large models achieving near-perfect scores vs. MedGemma's 3.91
+- **MedGemma 4B** scored significantly lower on completeness (2.97 vs 3.83-4.14) and clinical utility (2.62 vs 3.42-3.54), despite comparable BERTScore F1 (0.803) — automated metrics do not capture clinical completeness
+- Automated text overlap metrics (BLEU, ROUGE-L) showed minimal variation across models, confirming clinician evaluation captures quality differences that automated metrics miss
 
 ```bash
+cd rag_models
+
 # Run Groq models locally
-python run_fareez_local.py --output-dir results/fareez
+python models/run_fareez_local.py --output-dir results/fareez
 
 # Run MedGemma on Modal
-HF_TOKEN=your_token modal run run_fareez_summaries.py --output-dir results/fareez
+HF_TOKEN=your_token modal run pipeline/run_fareez_summaries.py --output-dir results/fareez
 
 # Generate randomized rating packets for clinician evaluation
-python generate_rating_packets.py --output-dir rating_packets
+python clinician_validation/generate_rating_packets.py --output-dir rating_packets
+
+# Run clinician rating analysis
+python clinician_validation/analyze_ratings.py
 ```
 
 ## ASR Model Evaluation (Word Error Rate)
@@ -254,16 +296,16 @@ python run_validation.py --all-models --output-dir results/
 ### RAG Medical Summarization
 
 ```bash
-cd rag_models/RAG_To_See_MedGemma_Performance
+cd rag_models
 
 # Deploy evaluation services (one-time)
-modal deploy shared_evaluator_service.py
+modal deploy evaluation/shared_evaluator_service.py
 
 # Run a model
-modal run main_medgemma_4b_modal.py --output-dir results/run1
+modal run models/main_medgemma_4b_modal.py --output-dir results/run1
 
 # Aggregate results across 3 runs
-python aggregate_results.py results/
+python evaluation/aggregate_results.py results/
 ```
 
 ### ASR Model Evaluation
@@ -351,17 +393,27 @@ openemr_whisper_wer/
 ├── results/                # WER result CSVs per model per dataset
 └── requirements.txt        # Python dependencies
 
-rag_models/RAG_To_See_MedGemma_Performance/
-├── main_medgemma_4b_modal.py    # MedGemma 4B-IT RAG pipeline
-├── medgemma_27b_4bit_modal.py   # MedGemma 27B quantized
-├── llama_3_1_8b_modal.py        # Llama 3.1 8B Instruct
-├── qwen_32b_modal.py            # Qwen 3 32B
-├── gpt_oss_20b_modal.py         # GPT-OSS 20B via Groq
-├── gpt_120b_modal.py            # GPT-OSS 120B via Groq
-├── groq_llama_4_scout_modal.py  # Llama 4 Scout via Groq
-├── shared_evaluator_service.py  # Modal evaluation service
-├── aggregate_results.py         # Result aggregation (mean +/- SD)
-└── vectorDB/                    # ChromaDB vector database
+rag_models/
+├── models/                          # Per-model inference scripts
+│   ├── gpt_120b_modal.py            # GPT-OSS 120B via Groq
+│   ├── gpt_oss_20b_modal.py         # GPT-OSS 20B via Groq
+│   ├── main_medgemma_4b_modal.py    # MedGemma 4B-IT RAG pipeline
+│   └── ...                          # Qwen, Llama, MedGemma 27B, etc.
+├── pipeline/                        # Orchestration + RAG infrastructure
+│   ├── run_fareez_summaries.py      # Main summarization pipeline
+│   ├── fareez_rag_loader.py         # Data loader for Fareez transcripts
+│   └── ...                          # Vector DB, condition detection, etc.
+├── evaluation/                      # Automated metrics + evaluator services
+│   ├── compute_fareez_metrics.py    # BLEU, ROUGE-L, SBERT, BERTScore
+│   ├── shared_evaluator_service.py  # Modal evaluation service
+│   └── aggregate_results.py         # Result aggregation (mean +/- SD)
+├── clinician_validation/            # Clinician rating analysis
+│   ├── analyze_ratings.py           # Gwet AC2, Friedman, Wilcoxon
+│   └── clinician_rating_analysis.ipynb
+├── data/                            # Static data (Fareez selections, OpenEMR extracts)
+├── results/                         # Output CSVs + generated summaries
+├── rating_packets/                  # Clinician evaluation packets
+└── vectorDB/                        # ChromaDB vector database
 
 scripts/
 └── generate_tables.py      # Generate publication tables from all results

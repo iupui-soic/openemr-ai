@@ -28,14 +28,14 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-BASE_DIR = os.path.dirname(__file__)
-SELECTION_FILE = os.path.join(BASE_DIR, "fareez_selected_40.json")
-SUMMARIES_DIR = os.path.join(BASE_DIR, "results", "fareez", "fareez_summaries")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SELECTION_FILE = os.path.join(RAG_ROOT, "data", "fareez_selected_40.json")
+SUMMARIES_DIR = os.path.join(RAG_ROOT, "results", "fareez", "fareez_summaries")
 TRANSCRIPT_DIR = os.path.normpath(os.path.join(
-    BASE_DIR, "..", "..", "openemr_whisper_wer", "data",
+    RAG_ROOT, "..", "openemr_whisper_wer", "data",
     "fareez_osce", "Data", "Clean Transcripts"
 ))
-OUTPUT_DIR = os.path.join(BASE_DIR, "results", "fareez")
+OUTPUT_DIR = os.path.join(RAG_ROOT, "results", "fareez")
 
 MODELS = ["gpt-oss-120b", "gpt-oss-20b", "qwen3-32b", "medgemma-4b"]
 

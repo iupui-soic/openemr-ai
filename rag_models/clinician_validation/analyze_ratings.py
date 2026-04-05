@@ -2,7 +2,7 @@
 Statistical analysis of clinician ratings for Fareez RAG summarization experiment.
 
 Computes:
-1. Inter-rater reliability (Krippendorff's alpha, ordinal)
+1. Inter-rater reliability (Gwet's AC2, ordinal weights)
 2. Intraclass Correlation Coefficient (ICC, two-way random)
 3. Model comparison (Friedman test)
 4. Pairwise comparison (Wilcoxon signed-rank, Bonferroni-corrected)
@@ -19,12 +19,12 @@ import csv
 import numpy as np
 import pandas as pd
 from scipy import stats
-import krippendorff
+from irrCAC.raw import CAC
 import pingouin as pg
 from itertools import combinations
 
-BASE_DIR = os.path.dirname(__file__)
-PACKETS_DIR = os.path.join(BASE_DIR, "rating_packets")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PACKETS_DIR = os.path.join(RAG_ROOT, "rating_packets")
 ANSWER_KEY = os.path.join(PACKETS_DIR, "ANSWER_KEY_DO_NOT_SHARE.csv")
 
 DIMENSIONS = ["accuracy", "completeness", "organization", "conciseness",
@@ -62,10 +62,10 @@ def load_data():
     return merged
 
 
-def compute_krippendorff_alpha(merged):
-    """Compute Krippendorff's alpha for each dimension (ordinal scale)."""
+def compute_gwet_ac2(merged):
+    """Compute Gwet's AC2 for each dimension (ordinal weights)."""
     print("\n" + "=" * 70)
-    print("1. INTER-RATER RELIABILITY: Krippendorff's Alpha (ordinal)")
+    print("1. INTER-RATER RELIABILITY: Gwet's AC2 (ordinal weights)")
     print("=" * 70)
     print(f"   Target: >= 0.667 (acceptable), >= 0.80 (good)\n")
 
@@ -73,17 +73,20 @@ def compute_krippendorff_alpha(merged):
     # Create a unique item key per (conversation, model) pair
     merged["item"] = merged["conversation"] + "_" + merged["model"]
     for dim in DIMENSIONS:
-        # Build rater x item matrix using (conversation, model) as unit
+        # Build item x rater matrix (irrCAC expects subjects as rows, raters as columns)
         pivot = merged.pivot_table(index="item", columns="rater", values=dim, aggfunc="first")
-        # krippendorff expects coders as rows, items as columns
-        reliability_data = pivot.values.T
-        alpha = krippendorff.alpha(reliability_data, level_of_measurement="ordinal")
-        results[dim] = alpha
-        status = "GOOD" if alpha >= 0.80 else "ACCEPTABLE" if alpha >= 0.667 else "LOW"
-        print(f"   {dim:<20s}  alpha = {alpha:.4f}  [{status}]")
+        pivot = pivot.dropna()
+        cac = CAC(pivot, weights="ordinal")
+        gwet_result = cac.gwet()
+        coeff = gwet_result["est"]["coefficient_value"]
+        ci_low = gwet_result["est"]["confidence_interval"][0]
+        ci_high = gwet_result["est"]["confidence_interval"][1]
+        results[dim] = {"ac2": coeff, "ci_low": ci_low, "ci_high": ci_high}
+        status = "GOOD" if coeff >= 0.80 else "ACCEPTABLE" if coeff >= 0.667 else "LOW"
+        print(f"   {dim:<20s}  AC2 = {coeff:.4f}  95% CI [{ci_low:.4f}, {ci_high:.4f}]  [{status}]")
 
-    avg_alpha = np.mean(list(results.values()))
-    print(f"\n   {'AVERAGE':<20s}  alpha = {avg_alpha:.4f}")
+    avg_ac2 = np.mean([r["ac2"] for r in results.values()])
+    print(f"\n   {'AVERAGE':<20s}  AC2 = {avg_ac2:.4f}")
     return results
 
 
@@ -269,7 +272,7 @@ def compute_specialty_subanalysis(merged):
             print(f"   {dim:<20s}  chi2={stat:7.3f}  p={p:.6f}  W={w:.4f}  {sig}")
 
 
-def generate_summary_table(merged, model_stats, alpha_results, friedman_results):
+def generate_summary_table(merged, model_stats, ac2_results, friedman_results):
     """Generate a publication-ready summary table."""
     print("\n" + "=" * 70)
     print("7. PUBLICATION TABLE: Model Comparison Summary")
@@ -306,27 +309,30 @@ def generate_summary_table(merged, model_stats, alpha_results, friedman_results)
             print(f"  {'N/A':>10s}", end="")
     print()
 
-    # Krippendorff alpha row
-    print(f"   {'Kripp. alpha':<20s}", end="")
+    # Gwet AC2 row
+    print(f"   {'Gwet AC2':<20s}", end="")
     for dim in DIMENSIONS:
-        if dim in alpha_results:
-            a = alpha_results[dim]
+        if dim in ac2_results:
+            a = ac2_results[dim]["ac2"]
             print(f"  {a:10.4f}", end="")
         else:
             print(f"  {'N/A':>10s}", end="")
     print()
 
 
-def save_results(merged, model_stats, alpha_results, icc_results, friedman_results):
+def save_results(merged, model_stats, ac2_results, icc_results, friedman_results):
     """Save analysis results to CSV."""
-    output_dir = os.path.join(BASE_DIR, "results", "fareez")
+    output_dir = os.path.join(RAG_ROOT, "results", "fareez")
     os.makedirs(output_dir, exist_ok=True)
 
     # 1. IRR results
     irr_rows = []
     for dim in DIMENSIONS:
         row = {"dimension": dim}
-        row["krippendorff_alpha"] = alpha_results.get(dim, None)
+        ac2_data = ac2_results.get(dim, {})
+        row["gwet_ac2"] = ac2_data.get("ac2", None)
+        row["ac2_ci_low"] = ac2_data.get("ci_low", None)
+        row["ac2_ci_high"] = ac2_data.get("ci_high", None)
         if dim in icc_results:
             row["icc"] = icc_results[dim]["icc"]
             row["icc_ci_low"] = icc_results[dim]["ci_low"]
@@ -379,14 +385,14 @@ def main():
         if missing > 0:
             print(f"  Warning: {missing} missing values in {dim}")
 
-    alpha_results = compute_krippendorff_alpha(merged)
+    ac2_results = compute_gwet_ac2(merged)
     icc_results = compute_icc(merged)
     model_stats = compute_descriptive_stats(merged)
     friedman_results = compute_friedman_test(merged)
     pairwise_results = compute_pairwise_wilcoxon(merged)
     compute_specialty_subanalysis(merged)
-    generate_summary_table(merged, model_stats, alpha_results, friedman_results)
-    save_results(merged, model_stats, alpha_results, icc_results, friedman_results)
+    generate_summary_table(merged, model_stats, ac2_results, friedman_results)
+    save_results(merged, model_stats, ac2_results, icc_results, friedman_results)
 
     print("\nAnalysis complete.")
 

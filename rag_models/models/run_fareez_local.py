@@ -33,8 +33,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 # Configuration
 # ============================================================================
 
-BASE_DIR = os.path.dirname(__file__)
-CHROMA_PATH = os.path.join(BASE_DIR, "vectorDB", "chroma_schema_improved")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CHROMA_PATH = os.path.join(RAG_ROOT, "vectorDB", "chroma_schema_improved")
 
 MODELS = {
     "gpt-oss-120b": {
@@ -275,6 +275,7 @@ def main():
     args = parser.parse_args()
 
     from groq import Groq
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'pipeline'))
     from fareez_rag_loader import FareezLoader
 
     print("=" * 80)

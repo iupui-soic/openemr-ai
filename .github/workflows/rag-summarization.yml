@@ -33,12 +33,12 @@ on:
         default: true
   push:
     paths:
-      - 'rag_models/RAG_To_See_MedGemma_Performance/**'
+      - 'rag_models/**'
       - '.github/workflows/rag-summarization.yml'
 
 env:
   PYTHON_VERSION: '3.11'
-  WORK_DIR: 'rag_models/RAG_To_See_MedGemma_Performance'
+  WORK_DIR: 'rag_models'
 
 jobs:
   # ============================================
@@ -86,14 +86,14 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🔥 Warming up text evaluator..."
-          modal run text_evaluator_service.py
+          modal run evaluation/text_evaluator_service.py
           echo "✅ Text evaluator ready"
 
       - name: Warm up Entity Evaluator
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🔥 Warming up entity evaluator (this may take 5-10 min)..."
-          modal run entity_evaluator_service.py
+          modal run evaluation/entity_evaluator_service.py
           echo "✅ Entity evaluator ready"
 
   # ============================================
@@ -134,7 +134,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running Llama 3.1 8B summarization for ALL patients from Notion"
-          modal run llama_3_1_8b_modal.py --output-dir results/llama-3.1-8b
+          modal run models/llama_3_1_8b_modal.py --output-dir results/llama-3.1-8b
 
       - name: Display Results Summary
         run: |
@@ -197,7 +197,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running MedGemma 4B-IT summarization for ALL patients from Notion"
-          modal run main_medgemma_4b_modal.py --output-dir results/medgemma-4b
+          modal run models/main_medgemma_4b_modal.py --output-dir results/medgemma-4b
 
       - name: Display Results Summary
         run: |
@@ -260,7 +260,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running MedGemma 27B (4-bit) summarization for ALL patients from Notion"
-          modal run medgemma_27b_4bit_modal.py --output-dir results/medgemma-27b-4bit
+          modal run models/medgemma_27b_4bit_modal.py --output-dir results/medgemma-27b-4bit
 
       - name: Display Results Summary
         run: |
@@ -323,7 +323,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq GPT-OSS-20B summarization for ALL patients from Notion"
-          modal run gpt_oss_20b_modal.py --output-dir results/gpt-oss-20b
+          modal run models/gpt_oss_20b_modal.py --output-dir results/gpt-oss-20b
 
       - name: Display Results Summary
         run: |
@@ -386,7 +386,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq GPT-OSS-120B summarization for ALL patients from Notion"
-          modal run gpt_120b_modal.py --output-dir results/gpt-oss-120b
+          modal run models/gpt_120b_modal.py --output-dir results/gpt-oss-120b
 
       - name: Display Results Summary
         run: |
@@ -449,7 +449,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq Qwen3-32B summarization for ALL patients from Notion"
-          modal run qwen_32b_modal.py --output-dir results/qwen3-32b
+          modal run models/qwen_32b_modal.py --output-dir results/qwen3-32b
 
       - name: Display Results Summary
         run: |
@@ -512,7 +512,7 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Running Groq Llama-4-Scout-17B summarization for ALL patients from Notion"
-          modal run groq_llama_4_scout_modal.py --output-dir results/llama4-scout
+          modal run models/groq_llama_4_scout_modal.py --output-dir results/llama4-scout
 
       - name: Display Results Summary
         run: |

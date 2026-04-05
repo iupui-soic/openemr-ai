@@ -21,7 +21,8 @@ TRANSCRIPT_DIR = os.path.normpath(os.path.join(
     "..", "..", "openemr_whisper_wer", "data", "fareez_osce", "Data", "Clean Transcripts"
 ))
 
-SELECTION_FILE = os.path.join(os.path.dirname(__file__), "fareez_selected_40.json")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SELECTION_FILE = os.path.join(RAG_ROOT, "data", "fareez_selected_40.json")
 MODEL = "llama-3.3-70b-versatile"
 
 

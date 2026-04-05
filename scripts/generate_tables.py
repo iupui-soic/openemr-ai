@@ -77,7 +77,7 @@ def table1_asr():
 
 def table2_rag():
     """Table 2: RAG summarization -- delegates to aggregated results."""
-    rag_dir = Path("rag_models/RAG_To_See_MedGemma_Performance/results")
+    rag_dir = Path("rag_models/results")
     agg_file = rag_dir / "aggregated_results.csv"
 
     if agg_file.exists():
@@ -88,7 +88,7 @@ def table2_rag():
         print(df.to_string())
     else:
         print("\n  TABLE 2: Run aggregate_results.py first")
-        print(f"    cd rag_models/RAG_To_See_MedGemma_Performance && python aggregate_results.py")
+        print(f"    cd rag_models && python evaluation/aggregate_results.py")
 
 
 def table3_elm():

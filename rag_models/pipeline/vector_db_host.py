@@ -117,7 +117,7 @@ def clear_volume():
 
 
 @app.local_entrypoint()
-def main(local_path: str = "rag_models/RAG_To_See_MedGemma_Performance/vectorDB", clear: bool = False):
+def main(local_path: str = "rag_models/vectorDB", clear: bool = False):
     """
     Upload local vector database to Modal volume.
 

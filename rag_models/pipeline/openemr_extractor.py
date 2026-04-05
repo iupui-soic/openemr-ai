@@ -14,8 +14,9 @@ import os
 import json
 import mysql.connector
 
-SELECTION_FILE = os.path.join(os.path.dirname(__file__), "fareez_selected_40.json")
-EXTRACTS_DIR = os.path.join(os.path.dirname(__file__), "fareez_openemr_extracts")
+RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SELECTION_FILE = os.path.join(RAG_ROOT, "data", "fareez_selected_40.json")
+EXTRACTS_DIR = os.path.join(RAG_ROOT, "data", "fareez_openemr_extracts")
 
 # Mapping from detected conditions to OpenEMR search terms
 CONDITION_SEARCH_MAP = {
