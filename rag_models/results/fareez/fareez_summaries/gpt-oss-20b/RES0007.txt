@@ -1,0 +1,113 @@
+Model: openai/gpt-oss-20b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-03-25 04:53:11
+Time: 3.36s
+Tokens: 7,698 in / 1,607 out
+============================================================
+
+Patient Information  
+Abby Ondricka, female, 21 years old (DOB 2003‑01‑16), resident of 564 Breitenberg View, Westfield, Massachusetts. She is a high‑school senior in 11th grade, living with her parents and younger brother. She reports no chronic pain or recent injuries.  
+
+Chief Complaint  
+The patient presents for a routine check‑up and to discuss her persistent asthma symptoms, inhaler usage, and career plans related to her asthma.  
+
+History of Present Illness  
+The patient reports that she was diagnosed with asthma a few months ago after a pulmonary function test in the office. She notes that she had childhood asthma, which she thought resolved, but it appears to have recurred. The primary trigger for her symptoms is exercise, particularly during gym class when she attempts to run at a faster pace. She describes feeling short of breath, wheezing, and chest tightness that resolves within a couple of minutes after she slows or stops. She also experiences symptoms when exposed to cold outdoor air (e.g., during snow activities) and when in the presence of cats; in the latter scenario, her breathing difficulties lasted longer and prompted her to leave the environment. She denies cough, nocturnal dyspnea, wheezing at rest, or chest pain. She reports no nighttime symptoms, fever, chills, night sweats, vomiting, or diarrhea. She uses an inhaler (presumably albuterol) during gym and has been prescribed a daily controller inhaler (likely fluticasone) and an epinephrine auto‑injector for severe allergic reactions. She is uncertain about the proper use of her inhalers and has expressed confusion regarding dosing frequency.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight changes, or fatigue.  
+Respiratory: Shortness of breath on exertion; wheeze when exposed to cats; no cough; no nighttime symptoms; no stridor.  
+Cardiovascular: Denies chest pain, palpitations, orthopnea, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic/Other: No headaches, dizziness, rash, or skin itching (aside from childhood atopic dermatitis).  
+
+Past Medical History  
+- Childhood asthma (resolved in 2007, re‑diagnosed 2024).  
+- Atopic dermatitis (resolved 2021).  
+- Perennial allergic rhinitis (diagnosed 2008, ongoing).  
+
+Surgical History  
+- Wisdom teeth extraction.  
+- Broken leg (history only, no recent surgery).  
+
+Social History  
+The patient lives with her parents and brother. She attends high school. She reports occasional alcohol consumption at social events but denies tobacco or recreational drug use. She maintains a regular diet of sandwiches, cereal, and family‑prepared meals. She is sexually active with a girlfriend; she uses condoms consistently. She is not currently pregnant.  
+
+Family History  
+Father had childhood asthma and seasonal allergic rhinitis; mother and siblings are otherwise healthy. No family history of chronic lung disease beyond asthma.  
+
+Allergies  
+- Animal dander (cats), mold, house dust mite, tree pollen, grass pollen, wheat, tree nuts.  
+- Sensitivity to seasonal allergens.  
+
+Current Medications  
+- Salmeterol (if “s” inhaler) – usage unclear; presumed twice daily.  
+- Fluticasone propionate (controller inhaler) – prescribed, daily use recommended.  
+- Albuterol sulfate (rescue inhaler) – PRN for acute symptoms.  
+- Fexofenadine (antihistamine) – daily.  
+- Epinephrine auto‑injector – as needed for anaphylaxis.  
+- Yaz (combined oral contraceptive) – ongoing.  
+
+Physical Examination  
+No physical examination was performed during this visit; therefore, no data are available.  
+
+Laboratory Results  
+Recent complete blood count and basic metabolic panel were within normal limits:  
+- Hemoglobin 13.7 g/dL, Hematocrit 45.2%, RBC 4.44 ×10^6/µL, WBC 5.63 ×10^3/µL, Platelets 186.9 ×10^3/µL.  
+- Mean corpuscular volume 83.8 fL, mean corpuscular hemoglobin 31.1 pg, MCHC 35.6 g/dL.  
+- Electrolytes, creatinine, liver enzymes, and glucose were all within normal ranges.  
+
+Imaging  
+No chest imaging or other studies were performed during this encounter.  
+
+Assessment  
+Primary Diagnosis:  
+- Persistent moderate‑to‑severe asthma with exercise‑induced bronchospasm and environmental triggers (cold air, animal dander).  
+
+Secondary Diagnoses:  
+- Perennial allergic rhinitis.  
+- Atopic dermatitis (history only).  
+
+The patient remains symptomatic despite intermittent use of rescue inhaler and uncertain adherence to controller therapy.  
+
+Plan  
+1. **Medication Clarification and Education**  
+   - Re‑educate on inhaler technique.  
+   - Confirm that fluticasone (or equivalent) is the daily controller to be taken twice daily regardless of symptoms.  
+   - Clarify that albuterol is rescue only, used PRN.  
+   - Discuss proper use of salmeterol (if applicable) and potential step‑up to a higher‑dose controller or addition of a leukotriene antagonist if symptoms persist.  
+
+2. **Asthma Action Plan**  
+   - Provide a written action plan outlining daily controller use, rescue inhaler indications, and steps for worsening symptoms (e.g., when to seek urgent care).  
+
+3. **Trigger Management**  
+   - Advise avoidance of cold air exposure when possible; use a scarf or mask over nose/mouth.  
+   - Counsel on minimizing exposure to cats and other known allergens.  
+   - Discuss the use of antihistamines (fexofenadine) as adjunct therapy for allergic rhinitis.  
+
+4. **Lifestyle and Safety**  
+   - Encourage regular, graded exercise with pre‑exercise inhaler use if indicated.  
+   - Discuss safety and medical fitness for potential marine enlistment, referencing occupational health guidelines.  
+
+5. **Follow‑up**  
+   - Schedule follow‑up appointment in 4–6 weeks to reassess symptom control and inhaler technique.  
+   - Consider earlier visit if symptoms worsen (e.g., increased frequency of rescue inhaler use, nighttime symptoms).  
+
+6. **Vaccinations and Preventive Care**  
+   - Confirm up‑to‑date immunizations, including influenza vaccine.  
+
+7. **Mental Health Screening**  
+   - Re‑screen for anxiety and depression given GAD‑7 score of 2; offer counseling resources if needed.  
+
+The patient was educated on all aspects of her care, including inhaler use, trigger avoidance, and the importance of adherence to controller therapy. She was instructed to contact the office promptly if she experiences increased frequency of symptoms, new nighttime dyspnea, or anaphylactic reactions.  
+
+Discharge Instructions  
+- Take fluticasone inhaler twice daily as prescribed.  
+- Use albuterol inhaler PRN for acute symptoms.  
+- Follow the asthma action plan provided.  
+- Maintain regular follow‑up and report any changes in symptom pattern.  
+
+Follow‑up Instructions  
+- Return for evaluation in 4–6 weeks or sooner if symptoms worsen.  
+- Contact the clinic for urgent concerns or emergency care if severe breathing difficulty occurs.

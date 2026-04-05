@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-03-25 04:53:11
+Time: 3.33s
+Tokens: 9,174 in / 1,510 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Patient ID: 820  
+Date of Birth: April 7, 1943 (Age reported in encounter: 45 years)  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint  
+The patient presents with a new, painful, red, swollen rash on the right lower leg that has worsened over the past week and is now draining a white fluid.  
+
+History of Present Illness  
+Mr. Crona reports that a rash appeared on the right leg about one week ago. The lesion has progressively become larger, more red, and increasingly painful, with the pain intensifying after the patient began flexing the ankle and walking. He describes the area as swollen and notes that a previously formed scab has opened, now leaking a clear, white discharge. The patient feels hot and reports an overall sense of malaise, although he has not measured his temperature. He denies shortness of breath, chest pain, or other systemic complaints. He has diabetes mellitus type II but admits to poor glycemic control, citing a last known A1c of 9% and a cessation of routine glucose monitoring. He also has a chronic ulcer on the left heel that appears stable. No fever or chills have been reported.  
+
+Review of Systems  
+Constitutional: Reports feeling hot, mild fatigue, increased hunger, and an overall sense of being unwell for the past few weeks.  
+Respiratory: Denies shortness of breath, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or known cardiac symptoms reported.  
+Gastrointestinal: Denies nausea, vomiting, diarrhea, or abdominal pain.  
+Skin: Presents with the described right lower leg rash; otherwise no additional lesions reported.  
+Neurologic: Mentions decreased sensation in feet, consistent with peripheral neuropathy; no new numbness or loss of sensation in the right leg.  
+Other systems: No urinary, musculoskeletal, or other complaints reported.  
+
+Past Medical History  
+- Diabetes mellitus type II, poorly controlled  
+- Hypertension (essential)  
+- Hyperlipidemia  
+- Chronic kidney disease (stage not specified; history of CKD stage 4 and renal transplant)  
+- History of myocardial infarction (1997)  
+- Chronic back pain  
+- Asthma (childhood)  
+- Chronic foot ulcers (left heel)  
+
+Surgical History  
+- Sinus surgery for chronic sinusitis (teenage years)  
+
+Social History  
+The patient is currently unemployed and operates a small personal business. He lives in the town of Waltham and sees his children every two weeks. He reports smoking approximately two packs per week, primarily when stressed. Alcohol consumption averages about two to four drinks per week, mostly over the weekend. He denies recreational drug use.  
+
+Family History  
+Mother’s side of the family has a high prevalence of diabetes, hypertension, and hyperlipidemia. Father’s side is relatively healthy. An aunt had lung cancer and was a heavy smoker.  
+
+Allergies  
+- Penicillin – anaphylaxis with facial swelling and breathing difficulty  
+- Grass pollen (unspecified reaction severity)  
+
+Medications  
+Current home medications include:  
+- Rosuvastatin 10 mg orally once daily (for hyperlipidemia)  
+- Metformin (dose unspecified) orally for diabetes  
+- One additional oral diabetes medication (patient could not recall the exact name, likely a sulfonylurea or DPP-4 inhibitor)  
+
+Past medications noted in the electronic record are largely historical and likely discontinued; no active insulin therapy is reported.  
+
+Physical Examination  
+Vital signs were not documented during this encounter.  
+Inspection of the right lower leg revealed a well-demarcated, erythematous area approximately 4 cm in diameter with surrounding swelling. An open wound at the center was noted, with purulent white discharge and a surrounding scab. The area was warm to touch and tender on palpation, especially upon ankle flexion. No fluctuance or purulent drainage elsewhere was noted. Peripheral pulses were not assessed in the transcript. No erythema or edema was reported in the left leg.  
+Neurologic assessment: Mild decreased sensation in the feet, consistent with chronic peripheral neuropathy; no new deficits in the right leg.  
+
+Laboratory Data (most recent available)  
+- Glucose: 94 mg/dL (likely fasting)  
+- Creatinine: 2.98 mg/dL  
+- Blood Urea Nitrogen: 13.7 mg/dL  
+- Estimated GFR: 79.2 mL/min/1.73 m²  
+- Serum electrolytes: Sodium 139.8 mmol/L, Potassium 4.5 mmol/L, Calcium 8.53 mg/dL, Chloride not specified, Total CO₂ 21.99 mmol/L  
+- Lipid profile: Total cholesterol 177 mg/dL, LDL 120.7 mg/dL, HDL 31.6 mg/dL, Triglycerides 177.4 mg/dL  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, Alkaline phosphatase 123.7 U/L  
+- Complete blood count and differential not provided.  
+
+Assessment  
+1. Cellulitis of the right lower leg – acute, likely bacterial skin infection requiring prompt antibiotic therapy.  
+2. Diabetes mellitus type II, poorly controlled – high risk for infection and impaired wound healing.  
+3. Chronic kidney disease – ongoing renal impairment with potential impact on medication clearance.  
+4. Peripheral neuropathy – chronic, contributing to foot ulcer risk.  
+
+Plan  
+Antibiotic Therapy: Initiate oral cefdinir 300 mg twice daily for 7–10 days, or alternatively oral clindamycin 300 mg four times daily if cephalosporin allergy is a concern. Consider adding trimethoprim-sulfamethoxazole if MRSA coverage is needed after culture results.  
+Wound Care: Clean the open wound with sterile saline; apply non-adherent dressing. Educate patient on proper foot hygiene and avoid scratching.  
+Glycemic Control: Reinforce the importance of regular glucose monitoring; consider referral to an endocrinologist for medication adjustment.  
+Pain Management: Continue acetaminophen for mild pain; avoid NSAIDs due to renal function.  
+Smoking Cessation: Counsel on cessation strategies; refer to cessation resources.  
+Alcohol Moderation: Discuss limiting alcohol intake, especially given hepatic and renal considerations.  
+Follow‑up: Schedule a clinic visit within 48–72 hours to assess response to antibiotics, or sooner if worsening signs develop.  
+Monitoring: Repeat CBC, CMP, and culture if the patient does not improve within 48–72 hours.  
+Patient Education: Explain signs of worsening infection (increased pain, warmth, spreading redness, fever) that warrant immediate medical attention. Review foot care to prevent future ulcers.  
+Disposition: The patient will be discharged home with instructions to monitor the wound, maintain foot hygiene, adhere to prescribed antibiotics, and keep follow‑up appointments.  
+
+No additional imaging or microbiology studies were ordered during this encounter.

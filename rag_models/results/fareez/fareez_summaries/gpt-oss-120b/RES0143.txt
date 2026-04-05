@@ -1,0 +1,66 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-03-25 04:57:07
+Time: 3.79s
+Tokens: 6,426 in / 1,123 out
+============================================================
+
+Patient Information  
+Name: Aaron McClure (as listed in the electronic record)  
+Date of Birth: 1934‑04‑26 (age 91 years) – however, the patient described in the encounter is a university‑age student living in a dorm and currently staying with parents. The clinical details provided pertain to this younger individual, and the older demographic data are considered outdated and not reflective of the current presentation.  
+Sex: Male  
+
+Chief Complaint  
+Dry cough persisting for approximately two weeks, accompanied by a clear‑runny nose that began about one week ago.
+
+History of Present Illness  
+The patient reports the onset of a dry, non‑productive cough two weeks prior to the visit. Initially the cough was more severe during the first week but has improved modestly; however, it continues to be present beyond the patient’s usual experience with respiratory symptoms. About one week into the cough, the patient noted the development of a clear, watery nasal discharge that has become more noticeable this week. He denies any blood in the sputum. The patient experienced mild chills on two separate nights last week but has not had a measured fever. He reports occasional nasal congestion that temporarily reduced his sense of smell, though taste remains normal. There are no associated sore throat, headache, shortness of breath, chest pain, palpitations, gastrointestinal upset, muscle aches, or neurologic deficits. He has not noticed any changes in vision, eye tearing, or skin rashes.
+
+Review of Systems  
+Constitutional: No documented fever, chills limited to two nights, no weight loss, no night sweats.  
+Respiratory: Dry cough for two weeks, clear nasal discharge for one week, mild congestion; no dyspnea, wheezing, or chest pain.  
+Cardiovascular: No palpitations, no chest discomfort.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+Genitourinary: No dysuria or urinary symptoms reported.  
+Neurologic: No headache, dizziness, numbness, or tingling.  
+ENT: Decreased sense of smell when congested, normal taste, no sore throat, no ear pain, no visual changes.  
+Skin: No rashes.  
+Psychiatric: No anxiety or mood concerns expressed.
+
+Past Medical History  
+The patient states he has been “completely healthy” and reports no chronic medical diagnoses. No prior surgeries are mentioned.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Current Medications  
+The patient is not taking any prescription, over‑the‑counter, herbal, or vitamin supplements.
+
+Social History  
+The patient is a university student who normally resides in a dormitory but is currently living at his parents’ home while attending classes virtually. He lives with his mother and father. He reports occasional experimental tobacco use (a few tries, not regular) and occasional marijuana use (approximately four to five times total). He drinks alcohol socially on weekends but reports limited current consumption. He denies use of other recreational drugs. No recent travel outside the province. No exposure to known COVID‑19 cases, although his mother had “sniffles” last week and was not tested.
+
+Family History  
+Father has a history of high cholesterol. No other familial medical conditions reported.
+
+Vital Signs  
+No current vital signs were recorded during this encounter. The most recent documented vitals in the electronic record are dated 1990 and are not applicable to the present visit.
+
+Physical Examination  
+A complete physical examination was planned but not yet performed at the time of documentation. The provider indicated intent to assess temperature, auscultate the lungs, and examine the oropharynx.
+
+Assessment / Impression  
+1. Viral upper respiratory infection – most consistent with the common cold.  
+2. Rule‑out SARS‑CoV‑2 infection given recent household exposure and overlapping symptoms.
+
+Plan  
+- Order a nasopharyngeal swab for SARS‑CoV‑2 PCR testing; results expected within 24‑48 hours.  
+- Advise the patient to self‑isolate at home until test results are available and to limit close contact with household members, especially his parents.  
+- Provide symptomatic treatment: encourage increased fluid intake, rest, and use of over‑the‑counter antipyretics/analgesics such as acetaminophen as needed for discomfort or low‑grade fever.  
+- Counsel that antibiotics are not indicated for viral upper respiratory infections and will be prescribed only if bacterial infection becomes evident on examination or if the clinical course worsens.  
+- Perform a focused physical examination (vital signs, lung auscultation, throat inspection) during this visit to confirm the absence of pneumonia or other complications.  
+- Educate the patient on red‑flag symptoms that would warrant immediate medical attention: high fever (>38.5 °C), worsening shortness of breath, chest pain, persistent vomiting, or new neurological findings.  
+- Arrange follow‑up: If COVID‑19 test is positive, the patient will receive public health guidance and appropriate isolation instructions. If symptoms persist beyond 10 days, worsen, or new concerning features develop, the patient should return for re‑evaluation.  
+- No prescriptions written at this time; over‑the‑counter cough suppressant or expectorant may be used if cough becomes bothersome.  
+
+The patient verbalized understanding of the plan and agreed to the testing and isolation recommendations.

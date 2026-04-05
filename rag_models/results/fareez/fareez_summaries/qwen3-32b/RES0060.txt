@@ -1,0 +1,69 @@
+Model: qwen/qwen3-32b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-03-25 04:50:59
+Time: 4.91s
+Tokens: 6,512 in / 1,497 out
+============================================================
+
+Patient Information  
+The patient is a 22-year-old female named Abbie Stamm. She resides in a duplex in Amherst, Massachusetts, and lives with her girlfriend. She is employed full-time and has a history of high cholesterol managed with Rosuvastatin. She is also pre-diabetic with an A1C of 6.2% noted six months ago. The patient has a history of childhood asthma, which resolved in 2021, and has been diagnosed with acute bronchitis in the past. She has a history of mitral valve regurgitation and has experienced multiple episodes of gingivitis. She has a documented allergy to penicillin, which causes hives. She is up to date with her flu shots and has no history of smoking or recreational drug use beyond occasional beer consumption on weekends. She denies any history of cancer in her immediate family and has no known exposure to mold, asbestos, or other environmental hazards in her living environment.
+
+Chief Complaint  
+The patient presents with a four-day history of fever, cough, fatigue, and mild nausea. She reports that her symptoms began on Monday and have progressively worsened. She measured a temperature of 38.5°C this morning and has been experiencing a dry cough without sputum or blood. She also reports intermittent headache, body aches, and decreased appetite. She is concerned about the possibility of COVID-19.
+
+History of Present Illness  
+The patient first noticed symptoms on Monday, which included a dry cough and feelings of fatigue. By Friday, she measured a fever of 38.5°C and reported that her symptoms have been worsening over the past four days. She has experienced increasing fatigue, intermittent nausea without vomiting, and mild chills at night. Her headaches, which she attributes to tension-type headaches, have been present for several days and are described as a pressure or vice grip sensation on her head. She denies chest pain, wheezing, or shortness of breath except for mild shortness of breath following coughing fits. She has no history of night sweats, weight loss, or significant body aches. She denies any recent travel or close contact with individuals who are ill, though she did visit a mall last weekend where everyone was masked. She has no known recent antibiotic use and is currently taking Rosuvastatin and a multivitamin.
+
+Review of Systems  
+Constitutional: The patient reports fever, fatigue, and decreased appetite. She denies weight loss, night sweats, or chills beyond mild chills at night.  
+Respiratory: She has a dry cough without sputum or blood. She denies chest pain, wheezing, or shortness of breath except for mild dyspnea after coughing fits. She denies congestion, sore throat, or difficulty swallowing.  
+Cardiovascular: No chest pain, palpitations, or syncope reported.  
+Gastrointestinal: She reports mild nausea without vomiting or diarrhea. Bowel movements have been normal.  
+Genitourinary: No changes in urinary frequency, urgency, or appearance. No dysuria or hematuria.  
+Neurological: No dizziness, syncope, or confusion. Headaches are described as tension-type and are not the worst she has ever experienced.  
+Musculoskeletal: She reports mild body aches but no joint pain or swelling.  
+Integumentary: No rash or skin changes.  
+Psychiatric: No depression, anxiety, or mood changes reported.  
+Endocrine: No changes in sweating or heat intolerance.  
+Hematologic: No easy bruising or bleeding.  
+Allergic: No new or recent allergic reactions.  
+Immunologic: No recent illnesses or immunizations beyond the annual flu shot.  
+Other: No changes in vision, hearing, or smell. No nasal congestion or discharge.
+
+Allergies  
+The patient is allergic to penicillin, which causes hives. No other drug allergies are reported. She has multiple environmental allergies including bee venom, mold, house dust mites, tree pollen, animal dander, cow's milk, and peanuts.
+
+Past Medical History  
+The patient has a history of childhood asthma, which resolved in 2021. She has had episodes of acute bronchitis, perennial allergic rhinitis, and multiple episodes of gingivitis. She has a history of mitral valve regurgitation and was diagnosed with streptococcal sore throat and acute viral pharyngitis in recent years. She has also had an inguinal hernia repair five years ago. She is currently managing high cholesterol with Rosuvastatin and is pre-diabetic.
+
+Surgical History  
+The patient underwent an inguinal hernia repair five years ago.
+
+Social History  
+The patient does not smoke or use recreational drugs. She consumes two to three beers on weekends. She lives with her girlfriend in a duplex and reports no exposure to mold or asbestos in their unit. She is employed full-time and has limited social contact due to social isolation, which has been ongoing since 2020.
+
+Family History  
+The patient is unaware of any family history of lung or heart conditions. She reports that her grandfather had bladder cancer but is unsure of other family members' medical histories.
+
+Current Medications  
+The patient is currently taking Rosuvastatin and a multivitamin. She has a history of using albuterol and beclomethasone for asthma, which has since resolved. She is also on a hormonal contraceptive (Trinessa 28 Day Pack) and has used other hormonal methods in the past. She has a history of using penicillin V potassium, which was discontinued in 2022.
+
+Objective  
+Vital Signs: No current vital signs recorded during this visit.  
+Physical Examination: No physical examination findings were documented in the provided records.  
+Labs: Recent urinalysis showed no significant findings. Other lab results were not available for this visit.  
+Imaging: No imaging studies were performed or documented for this encounter.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory viral illness. Given the current clinical context and the possibility of COVID-19, a nasal swab for SARS-CoV-2 was ordered. The patient has no signs of bacterial infection at this time. She has a history of acute bronchitis and may be experiencing a recurrence. Her symptoms are consistent with a viral etiology, and she is advised to isolate for 14 days regardless of test results. Her pre-diabetic status and high cholesterol are being managed appropriately with lifestyle modifications and medication.
+
+Plan  
+1. Order a SARS-CoV-2 nasal swab for testing.  
+2. Advise the patient to isolate for 14 days, including from her girlfriend, to prevent potential spread.  
+3. Monitor symptoms for progression or change. If symptoms worsen or new symptoms develop, reassessment will be necessary to rule out bacterial infection or pneumonia.  
+4. Continue current medications and monitor for any adverse effects.  
+5. Schedule a follow-up appointment in one week if symptoms persist or worsen.  
+6. Encourage hydration, rest, and over-the-counter remedies for symptom relief.  
+7. Provide education on the importance of isolation and public health reporting if the test is positive.  
+8. Reinforce the need for continued lifestyle modifications to manage pre-diabetic status and high cholesterol.

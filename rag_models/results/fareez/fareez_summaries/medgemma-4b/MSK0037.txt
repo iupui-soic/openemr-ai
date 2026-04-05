@@ -1,0 +1,9 @@
+Model: google/medgemma-4b-it
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-03-25 05:42:39
+Time: 18.81s
+Tokens: 33,851 in / 0 out
+============================================================
+
+Error generating summary: CUDA out of memory. Tried to allocate 356.00 MiB. GPU 0 has a total capacity of 22.06 GiB of which 227.44 MiB is free. Process 1 has 21.83 GiB memory in use. Of the allocated memory 20.36 GiB is allocated by PyTorch, and 1.19 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

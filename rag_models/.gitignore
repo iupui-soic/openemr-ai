@@ -1,0 +1,108 @@
+# ============================================
+# 🧠 OpenEMR-AI / MedGemma RAG Project .gitignore
+# ============================================
+
+# ---- Core Python ----
+__pycache__/
+*.py[cod]
+*.pkl
+*.npy
+*.npz
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ---- Virtual Environments ----
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# ---- Environment / Config ----
+.env
+.env.*
+.python-version
+*.DS_Store
+*.cache/
+*.lock
+*.pid
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ---- OS-specific ----
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ---- Notebooks ----
+.ipynb_checkpoints/
+*.ipynb_save
+*.ipynb_checkpoint
+
+# ---- Data & Vector Stores ----
+vectorDB/
+chroma/
+chroma.sqlite3
+*.sqlite3
+*.faiss
+*.index
+*.parquet
+*.h5
+*.jsonl
+*.json
+*.csv
+*.tsv
+*.xlsx
+
+# ---- Large Text & Result Files ----
+*.txt
+results/
+outputs/
+logs/
+
+# ---- Model / Weight Files ----
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.tar.gz
+*.zip
+*.7z
+
+# ---- Specific Project Folders ----
+rag_models/**
+openEMR_Data_Extraction/__pycache__/
+medgemma_on_colab/__pycache__/
+
+# ---- Cloud / Colab Mounts ----
+drive/
+content/
+mounted_drives/
+*.gdrive
+*.google-drive
+.colab*
+.colab-data/
+
+# ---- Hugging Face / Tokens ----
+hf_cache/
+huggingface/
+tokenizers/
+*token*
+*credentials*
+
+# ---- Node / Web Assets (if UI present) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
