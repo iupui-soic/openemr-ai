@@ -1,161 +1,161 @@
 summary_id,accuracy,completeness,organization,conciseness,clinical_utility,overall_quality,comments
-S161,,,,,,,
-S162,,,,,,,
-S163,,,,,,,
-S164,,,,,,,
-S165,,,,,,,
-S166,,,,,,,
-S167,,,,,,,
-S168,,,,,,,
-S169,,,,,,,
-S170,,,,,,,
-S171,,,,,,,
-S172,,,,,,,
-S173,,,,,,,
-S174,,,,,,,
-S175,,,,,,,
-S176,,,,,,,
-S177,,,,,,,
-S178,,,,,,,
-S179,,,,,,,
-S180,,,,,,,
-S181,,,,,,,
-S182,,,,,,,
-S183,,,,,,,
-S184,,,,,,,
-S185,,,,,,,
-S186,,,,,,,
-S187,,,,,,,
-S188,,,,,,,
-S189,,,,,,,
-S190,,,,,,,
-S191,,,,,,,
-S192,,,,,,,
-S193,,,,,,,
-S194,,,,,,,
-S195,,,,,,,
-S196,,,,,,,
-S197,,,,,,,
-S198,,,,,,,
-S199,,,,,,,
-S200,,,,,,,
-S201,,,,,,,
-S202,,,,,,,
-S203,,,,,,,
-S204,,,,,,,
-S205,,,,,,,
-S206,,,,,,,
-S207,,,,,,,
-S208,,,,,,,
-S209,,,,,,,
-S210,,,,,,,
-S211,,,,,,,
-S212,,,,,,,
-S213,,,,,,,
-S214,,,,,,,
-S215,,,,,,,
-S216,,,,,,,
-S217,,,,,,,
-S218,,,,,,,
-S219,,,,,,,
-S220,,,,,,,
-S221,,,,,,,
-S222,,,,,,,
-S223,,,,,,,
-S224,,,,,,,
-S225,,,,,,,
-S226,,,,,,,
-S227,,,,,,,
-S228,,,,,,,
-S229,,,,,,,
-S230,,,,,,,
-S231,,,,,,,
-S232,,,,,,,
-S233,,,,,,,
-S234,,,,,,,
-S235,,,,,,,
-S236,,,,,,,
-S237,,,,,,,
-S238,,,,,,,
-S239,,,,,,,
-S240,,,,,,,
-S241,,,,,,,
-S242,,,,,,,
-S243,,,,,,,
-S244,,,,,,,
-S245,,,,,,,
-S246,,,,,,,
-S247,,,,,,,
-S248,,,,,,,
-S249,,,,,,,
-S250,,,,,,,
-S251,,,,,,,
-S252,,,,,,,
-S253,,,,,,,
-S254,,,,,,,
-S255,,,,,,,
-S256,,,,,,,
-S257,,,,,,,
-S258,,,,,,,
-S259,,,,,,,
-S260,,,,,,,
-S261,,,,,,,
-S262,,,,,,,
-S263,,,,,,,
-S264,,,,,,,
-S265,,,,,,,
-S266,,,,,,,
-S267,,,,,,,
-S268,,,,,,,
-S269,,,,,,,
-S270,,,,,,,
-S271,,,,,,,
-S272,,,,,,,
-S273,,,,,,,
-S274,,,,,,,
-S275,,,,,,,
-S276,,,,,,,
-S277,,,,,,,
-S278,,,,,,,
-S279,,,,,,,
-S280,,,,,,,
-S281,,,,,,,
-S282,,,,,,,
-S283,,,,,,,
-S284,,,,,,,
-S285,,,,,,,
-S286,,,,,,,
-S287,,,,,,,
-S288,,,,,,,
-S289,,,,,,,
-S290,,,,,,,
-S291,,,,,,,
-S292,,,,,,,
-S293,,,,,,,
-S294,,,,,,,
-S295,,,,,,,
-S296,,,,,,,
-S297,,,,,,,
-S298,,,,,,,
-S299,,,,,,,
-S300,,,,,,,
-S301,,,,,,,
-S302,,,,,,,
-S303,,,,,,,
-S304,,,,,,,
-S305,,,,,,,
-S306,,,,,,,
-S307,,,,,,,
-S308,,,,,,,
-S309,,,,,,,
-S310,,,,,,,
-S311,,,,,,,
-S312,,,,,,,
-S313,,,,,,,
-S314,,,,,,,
-S315,,,,,,,
-S316,,,,,,,
-S317,,,,,,,
-S318,,,,,,,
-S319,,,,,,,
-S320,,,,,,,
+S161,4,5,5,5,5,5,Excellent summary capturing all relevant data; minor fatigue discrepancy
+S162,5,5,5,5,5,5,Correctly excluded entirely unrelated EHR data
+S163,2,4,5,4,3,3,"Excellent, clinically sound, and accurately reflects encounter"
+S164,3,4,5,4,3,3,Contains factual errors by ignoring patient's provided history
+S165,2,4,5,4,2,2,Factual errors regarding age; conflates current status with acute EHR data
+S166,5,5,5,5,5,5,"Misleadingly conflates current presentation with outdated, resolved EHR data"
+S167,4,4,5,5,4,4,Correctly identified and noted mismatched EHR data; highly accurate
+S168,4,5,5,5,5,5,Accurate and well-structured; minor error on smoking status
+S169,3,4,5,5,4,4,Excellent; correctly ignored irrelevant EHR data
+S170,3,4,5,5,4,4,"Conflates transcript with complex, outdated EHR medications"
+S171,3,4,5,5,4,4,Factual inconsistencies from failing to reconcile reported meds with EHR
+S172,4,5,5,5,5,5,"Accurate to transcript but missed critical, contradictory EHR history"
+S173,4,5,5,5,5,5,Excellent and highly professional; minor medication discrepancy
+S174,2,4,5,4,3,3,Accurate and logical; minor age calculation discrepancy
+S175,2,3,5,5,2,2,Correctly ignored EHR but hallucinated fabricated exam and lab findings
+S176,2,4,5,4,3,3,"Dangerously ignored extensive EHR history, creating unreliable clinical picture"
+S177,2,3,5,4,2,2,Major age error; conflated current status with historical archived EHR entries
+S178,4,4,5,5,5,5,Dangerously ignored extensive EHR history in favor of subjective claim
+S179,5,5,5,5,5,5,Excellent judgment; correctly ignored irrelevant complex EHR data
+S180,4,5,5,5,5,5,Exceptionally comprehensive; minor hallucination of physical exam
+S181,4,5,5,5,5,5,Exceptionally well-organized; minor inference of unmentioned medication details
+S182,1,4,5,4,2,2,Catastrophically conflated young student with elderly EHR patient
+S183,1,4,5,4,2,2,Catastrophic hallucination conflating student with deceased elderly patient
+S184,2,3,5,4,2,2,Major factual error ignoring extensive EHR history
+S185,2,4,5,4,3,3,Major demographic and historical errors due to hallucinating EHR details
+S186,1,3,5,4,2,2,"Catastrophically ignored EHR, hallucinating a college student profile"
+S187,2,4,5,5,3,3,"Major age error and inclusion of irrelevant, incorrect EHR history"
+S188,2,4,5,4,3,3,Failed to incorporate significant EHR history and active medications
+S189,1,1,1,1,1,1,Failed to generate summary; returned technical error
+S190,1,4,5,4,2,2,Dangerously hallucinated pediatric summary for elderly EHR patient
+S191,4,4,5,5,5,5,Excellent synthesis; correctly identified missing back pain history
+S192,2,4,5,4,3,3,Major age error; confusingly conflated current narrative with unrelated EHR
+S193,1,4,5,5,2,2,"Catastrophically ignored elderly EHR, hallucinating summary for different patient"
+S194,4,4,2,1,2,2,"Accurate HPI but catastrophically disorganized, repetitive past medical history"
+S195,2,4,5,4,3,3,Dangerously conflated young graduate student with elderly ESRD patient
+S196,2,4,5,5,3,2,Failed to reconcile discrepancy between student transcript and 103-year-old EHR
+S197,2,4,5,5,3,3,Significant omissions and contradictions regarding complex EHR medical history
+S198,4,5,5,5,5,5,Excellent synthesis; minor age calculation error
+S199,1,3,5,4,1,1,Catastrophically conflated female transcript patient with elderly male EHR
+S200,1,2,5,5,1,1,"Critically hallucinated identity, ignoring elderly EHR for high school profile"
+S201,2,4,5,4,3,3,"Failed to reconcile ""healthy"" subjective status with severe EHR history"
+S202,4,5,5,5,5,5,Exceptionally well-structured; high-level observation with minor eGFR error
+S203,4,5,5,4,5,5,Excellent and highly professional; minor CKD stage inconsistency
+S204,1,4,5,5,2,2,"Catastrophically hallucinated identity, ignoring complex elderly EHR"
+S205,4,5,5,5,5,5,Exceptionally comprehensive; minor age calculation discrepancy
+S206,3,4,5,4,4,4,Factual inaccuracies regarding age and active insulin medication
+S207,3,4,5,5,4,4,"Relied entirely on subjective history, missing critical EHR transplant data"
+S208,4,4,5,5,5,5,Well-structured; minor age and social history discrepancies
+S209,4,4,5,5,5,5,Excellent; correctly integrated complex EHR transplant history
+S210,3,4,5,5,4,4,"Social history errors and conflated hypothyroidism from EHR, but excellent plan"
+S211,2,4,5,4,3,3,Significant errors regarding age and active medication status
+S212,2,4,5,4,3,3,"Severely compromised by conflating transcript with massive, unrelated EHR history"
+S213,2,4,5,4,3,3,"Incorrectly stated no chronic conditions, ignoring critical EHR data"
+S214,4,5,5,5,5,5,Excellent and highly professional; handled location discrepancy and complex labs well
+S215,1,4,5,5,2,2,"Catastrophically ignored critical EHR data, reporting subjective denial as fact"
+S216,4,5,5,5,5,5,Excellent synthesis; appropriately prioritized transcript over messy EHR data
+S217,1,2,5,5,2,1,"Dangerously hallucinated young male summary, ignoring complex female EHR"
+S218,2,4,5,5,3,3,Significantly failed by ignoring clinically critical EHR history
+S219,4,4,5,5,5,5,Excellent; accurately reflects transcript but missed EHR hypertension/obesity
+S220,2,3,4,4,2,2,Major hallucination conflating student transcript with elderly chronic EHR
+S221,4,5,5,5,5,5,Excellent and highly professional; included critical EHR transplant context
+S222,3,4,5,4,4,4,Incorrectly listed outdated EHR medications as currently active
+S223,2,4,2,1,2,1,Catastrophic repetitive history dump; conflated student with complex EHR
+S224,3,4,5,4,4,4,"Relied on incomplete self-report, missing extensive relevant EHR history"
+S225,2,4,5,5,3,3,"Ignored high-risk EHR history, dangerously relying on subjective report"
+S226,3,4,5,5,4,4,Ignored active EHR medications and conflated subjective history with unrelated EHR
+S227,4,5,5,5,5,5,Exceptionally well-structured; correctly integrated complex comorbidities into plan
+S228,2,4,5,5,3,3,Identified EHR mismatch but erroneously incorporated mismatched lab data
+S229,2,4,5,4,3,3,Major age error; conflated reported history with unrelated EHR medication data
+S230,2,4,5,5,3,3,Major safety risk; ignored complex EHR history for unreliable self-report
+S231,1,4,5,5,2,2,"Catastrophically ignored elderly male EHR, identifying patient as young female"
+S232,1,2,5,4,1,1,"Dangerously relied solely on self-report, entirely ignoring high-risk EHR"
+S233,1,4,5,5,4,2,"Catastrophic identity failure; hallucinated 6-year-old profile, ignoring female EHR"
+S234,3,3,5,4,3,3,Conflated current encounter with historical EHR admission details
+S235,2,4,5,4,3,3,Major surgical and age errors; overly aggressive clinical plan
+S236,2,4,5,4,3,3,Dangerously conflated female transcript with elderly male EHR
+S237,2,4,5,4,3,3,"Dangerously ignored actual EHR history, fabricating medical history instead"
+S238,4,4,5,4,4,4,Accurate summary but listed inactive historical conditions as current
+S239,4,5,5,5,5,5,Exceptionally high-quality synthesis; minor appropriate medication inclusion
+S240,1,4,5,4,2,2,Major hallucination conflating 10th-grade student with elderly chronic EHR patient
+S241,2,4,5,4,3,3,Fundamental demographic and medication errors severely impact utility
+S242,3,4,5,4,4,4,Factual inaccuracies regarding unmentioned vitals and lab interpretations
+S243,3,4,5,4,4,4,Hallucinated detailed physical exam and specific lab values not in data
+S244,3,4,5,4,4,4,Medication errors and incorrectly conflated reported meds with EHR age profile
+S245,2,4,5,3,3,3,"Major age calculation error and cluttered, confusing past medical history"
+S246,2,4,5,4,2,2,Conflated current presentation with deceased patient's historical EHR data
+S247,2,3,5,5,2,2,"Dangerously presented patient as healthy, ignoring complex cardiovascular EHR"
+S248,3,4,5,4,3,3,Listed inactive meds as current and poorly formatted clinical management plan
+S249,2,4,5,4,3,3,Major factual error conflating graduate student with ESRD EHR patient
+S250,4,4,5,5,4,4,Highly useful; missed minor transcript details but included irrelevant EHR data
+S251,4,5,5,5,5,5,Excellent reasoning; correctly distinguished data sources with minor age error
+S252,4,5,5,5,5,5,Correctly identified incongruent EHR data and appropriately prioritized transcript
+S253,4,5,5,5,5,5,Exceptionally well-structured and professional; minor current medication error
+S254,2,4,5,5,3,3,"Incorrectly listed reported meds while ignoring complex, contradictory EHR"
+S255,4,4,5,5,5,5,Excellent synthesis; missed minor active prescription from EHR
+S256,2,4,5,5,3,3,Major age error; failed to integrate high-acuity EHR data for safe decision-making
+S257,3,4,5,5,4,4,Factual inaccuracies regarding medication list and interpreted social history
+S258,4,5,5,5,5,5,"Excellent, comprehensive plan; minor age calculation inaccuracy"
+S259,2,4,5,5,4,3,Major factual error conflating 6-year-old with adult female EHR data
+S260,4,5,5,5,5,5,Excellent and highly professional; minor discrepancy regarding chronic medications
+S261,5,5,5,5,5,5,Exceptional synthesis of current symptoms with complex past medical history
+S262,2,4,5,5,3,3,"Ignored EHR entirely, failing to reconcile contradictory high-risk history"
+S263,5,5,5,5,5,5,"Excellent, highly professional synthesis providing clear actionable plan"
+S264,1,4,5,5,1,1,"Dangerously hallucinated identity, conflating pediatric transcript with adult EHR"
+S265,3,4,5,4,3,3,Failed to reconcile meds; inconsistently included administrative codes as history
+S266,4,5,5,5,5,5,Excellent and well-structured; minor inaccuracy regarding surgical history
+S267,2,4,5,4,3,3,Major hallucination conflating 16-year-old student with elderly transplant EHR
+S268,3,4,5,5,4,4,Temperature unit error and failed to integrate extensive EHR age data
+S269,3,4,5,5,4,4,"Failed to distinguish current encounter from outdated, contradictory EHR data"
+S270,1,2,4,3,1,1,Catastrophically conflated young female with critically ill elderly male
+S271,4,5,5,5,5,5,Excellent synthesis; correctly incorporated complex medication regimen
+S272,2,4,5,5,3,3,Dangerously ignored clinically vital EHR history and surgical data
+S273,2,2,5,5,2,2,"Ignored extensive contradictory EHR data, failing to reconcile medical record"
+S274,2,4,5,4,3,3,"Major age error; conflated current history with outdated, unmentioned EHR meds"
+S275,2,4,5,5,3,3,"Omitted relevant EHR history, significantly impacting differential diagnosis utility"
+S276,2,4,5,5,4,3,"Failed to highlight discrepancy, accepting subjective report over chronic EHR"
+S277,2,4,5,4,3,3,Major factual error conflating 6-year-old with completely irrelevant adult female
+S278,3,3,5,5,4,4,Failed to reconcile subjective report with extensive complex EHR history
+S279,4,5,5,5,5,5,Excellent and highly professional; minor past medication discrepancy
+S280,1,2,2,1,1,1,Catastrophic repetitive history dump and utilized completely wrong patient data
+S281,2,4,5,4,3,3,Major factual error conflating reported history with completely different EHR patient
+S282,1,3,5,4,2,1,"Dangerously ignored 103-year-old EHR, relying on self-report of 25-year-old"
+S283,2,3,5,4,3,3,Age and medication errors due to prioritizing outdated EHR over current report
+S284,4,4,5,5,5,5,Highly accurate; missed surgical history and misplaced minor HPI detail
+S285,1,4,5,4,2,2,Critically conflated mother's EHR data with 6-year-old patient
+S286,4,5,5,5,5,5,Exceptionally well-organized integration; minor EHR age artifact
+S287,1,4,5,5,2,2,"Catastrophically hallucinated identity, conflating student with deceased patient"
+S288,4,5,5,5,5,5,Exceptionally well-structured integration; minor historical age context error
+S289,1,4,5,5,2,2,"Dangerously hallucinated healthy profile, completely ignoring complex EHR"
+S290,3,4,5,4,3,3,Factual errors regarding reported treatment and failed to reconcile medications
+S291,4,4,5,5,4,4,Well-structured and accurate summary but missed complex EHR history
+S292,3,4,5,4,3,3,Listed expired medications as current and missed relevant transcript context
+S293,1,4,5,4,2,2,Catastrophically conflated critical male EHR with young female pregnancy symptoms
+S294,1,2,5,4,2,2,"Dangerously ignored complex female EHR, relying on wrong transcript"
+S295,2,3,5,4,3,3,Conflated recent denial of falls with historic EHR fracture data
+S296,2,4,5,5,3,3,"Dangerously accepted ""healthy"" report despite highly complex cardiovascular EHR"
+S297,1,1,4,4,1,1,Medically nonsensical conflation of young female transcript with elderly male EHR
+S298,3,3,5,5,3,3,Failed to incorporate chronic EHR history and missed transcript marijuana mention
+S299,2,4,5,5,3,3,Age error and confusing conflation of patient-reported meds with EHR
+S300,4,5,5,5,5,5,Exceptionally comprehensive synthesis; minor ongoing medication error
+S301,2,4,5,5,3,3,Major factual error conflating 6-year-old with adult female EHR allergies/history
+S302,4,5,5,5,5,5,Exceptionally high-quality synthesis; minor age context error
+S303,2,4,5,4,2,2,Major age error; confusingly conflated clinical presentation with deceased EHR
+S304,1,4,5,5,2,2,"Dangerously hallucinated 1-year-old history, ignoring complex adult male EHR"
+S305,3,4,1,1,2,1,Unusable due to catastrophic technical failure looping HPI repeatedly
+S306,3,4,5,4,4,4,Failed to integrate contradictory EHR and hallucinated unmentioned treatment plan
+S307,2,4,5,4,3,3,Dangerously conflated young person transcript with elderly ESRD EHR
+S308,2,4,5,4,3,3,Major age error significantly undermining reliability for clinical decision-making
+S309,4,4,2,1,3,2,Catastrophically disorganized past medical history due to unreadable looping data
+S310,4,4,5,4,4,4,Minor treatment history error and included unnecessarily precise lab values
+S311,2,4,5,4,3,3,Major factual error conflating 16-year-old student with elderly chronic EHR
+S312,2,2,5,5,2,2,Failed to reconcile healthy status with high-risk EHR and missed reported meds
+S313,2,4,5,4,3,3,Major age error; conflated reported history with deceased EHR profile
+S314,3,4,5,4,4,4,"Age error, hallucinated physical exam findings, and unmentioned medication dosages"
+S315,1,4,5,4,2,2,Critically conflated student with elderly EHR and hallucinated exam findings
+S316,1,2,5,5,2,2,Major hallucination conflating female student transcript with complex male EHR
+S317,3,4,5,4,4,4,Inconsistently listed unmentioned EHR conditions as current reported history
+S318,3,4,5,4,4,4,"Historical timeline and medication errors, but highly relevant clinical plan"
+S319,5,5,5,5,5,5,Excellent summary; appropriately excluded entirely irrelevant adult EHR data
+S320,2,4,2,1,1,1,Catastrophically looped mother's EHR data in an infinite nonsensical loop

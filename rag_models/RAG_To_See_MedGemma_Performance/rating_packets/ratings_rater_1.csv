@@ -1,161 +1,161 @@
 summary_id,accuracy,completeness,organization,conciseness,clinical_utility,overall_quality,comments
-S001,,,,,,,
-S002,,,,,,,
-S003,,,,,,,
-S004,,,,,,,
-S005,,,,,,,
-S006,,,,,,,
-S007,,,,,,,
-S008,,,,,,,
-S009,,,,,,,
-S010,,,,,,,
-S011,,,,,,,
-S012,,,,,,,
-S013,,,,,,,
-S014,,,,,,,
-S015,,,,,,,
-S016,,,,,,,
-S017,,,,,,,
-S018,,,,,,,
-S019,,,,,,,
-S020,,,,,,,
-S021,,,,,,,
-S022,,,,,,,
-S023,,,,,,,
-S024,,,,,,,
-S025,,,,,,,
-S026,,,,,,,
-S027,,,,,,,
-S028,,,,,,,
-S029,,,,,,,
-S030,,,,,,,
-S031,,,,,,,
-S032,,,,,,,
-S033,,,,,,,
-S034,,,,,,,
-S035,,,,,,,
-S036,,,,,,,
-S037,,,,,,,
-S038,,,,,,,
-S039,,,,,,,
-S040,,,,,,,
-S041,,,,,,,
-S042,,,,,,,
-S043,,,,,,,
-S044,,,,,,,
-S045,,,,,,,
-S046,,,,,,,
-S047,,,,,,,
-S048,,,,,,,
-S049,,,,,,,
-S050,,,,,,,
-S051,,,,,,,
-S052,,,,,,,
-S053,,,,,,,
-S054,,,,,,,
-S055,,,,,,,
-S056,,,,,,,
-S057,,,,,,,
-S058,,,,,,,
-S059,,,,,,,
-S060,,,,,,,
-S061,,,,,,,
-S062,,,,,,,
-S063,,,,,,,
-S064,,,,,,,
-S065,,,,,,,
-S066,,,,,,,
-S067,,,,,,,
-S068,,,,,,,
-S069,,,,,,,
-S070,,,,,,,
-S071,,,,,,,
-S072,,,,,,,
-S073,,,,,,,
-S074,,,,,,,
-S075,,,,,,,
-S076,,,,,,,
-S077,,,,,,,
-S078,,,,,,,
-S079,,,,,,,
-S080,,,,,,,
-S081,,,,,,,
-S082,,,,,,,
-S083,,,,,,,
-S084,,,,,,,
-S085,,,,,,,
-S086,,,,,,,
-S087,,,,,,,
-S088,,,,,,,
-S089,,,,,,,
-S090,,,,,,,
-S091,,,,,,,
-S092,,,,,,,
-S093,,,,,,,
-S094,,,,,,,
-S095,,,,,,,
-S096,,,,,,,
-S097,,,,,,,
-S098,,,,,,,
-S099,,,,,,,
-S100,,,,,,,
-S101,,,,,,,
-S102,,,,,,,
-S103,,,,,,,
-S104,,,,,,,
-S105,,,,,,,
-S106,,,,,,,
-S107,,,,,,,
-S108,,,,,,,
-S109,,,,,,,
-S110,,,,,,,
-S111,,,,,,,
-S112,,,,,,,
-S113,,,,,,,
-S114,,,,,,,
-S115,,,,,,,
-S116,,,,,,,
-S117,,,,,,,
-S118,,,,,,,
-S119,,,,,,,
-S120,,,,,,,
-S121,,,,,,,
-S122,,,,,,,
-S123,,,,,,,
-S124,,,,,,,
-S125,,,,,,,
-S126,,,,,,,
-S127,,,,,,,
-S128,,,,,,,
-S129,,,,,,,
-S130,,,,,,,
-S131,,,,,,,
-S132,,,,,,,
-S133,,,,,,,
-S134,,,,,,,
-S135,,,,,,,
-S136,,,,,,,
-S137,,,,,,,
-S138,,,,,,,
-S139,,,,,,,
-S140,,,,,,,
-S141,,,,,,,
-S142,,,,,,,
-S143,,,,,,,
-S144,,,,,,,
-S145,,,,,,,
-S146,,,,,,,
-S147,,,,,,,
-S148,,,,,,,
-S149,,,,,,,
-S150,,,,,,,
-S151,,,,,,,
-S152,,,,,,,
-S153,,,,,,,
-S154,,,,,,,
-S155,,,,,,,
-S156,,,,,,,
-S157,,,,,,,
-S158,,,,,,,
-S159,,,,,,,
-S160,,,,,,,
+S001,2,3,5,3,3,3,"Mismatched patient profiles, fabricated plan, omits EHR data."
+S002,4,4,5,4,4,4,"Accurate symptoms, misses prior appendectomy, unmentioned plan additions."
+S003,3,3,4,3,3,3,"Gender mismatch, omits complex EHR history, inaccurate social history."
+S004,2,3,4,2,2,2,"Dangerous EHR comorbidity inclusion for adolescent, fabricated physical exam."
+S005,3,4,5,3,4,3,"Wrong medications, unconfirmed HF, wrong AST/ALT, added IV antibiotics."
+S006,2,3,4,4,3,3,Well-organized but adds unsupported clinical details.
+S007,3,3,2,1,2,1,"Gender/EHR factual errors, omits key pain specifics and NSAIDs."
+S008,4,4,5,3,4,4,"HPI contradictions, repetitive verbose PMH, lacks Assessment/Plan."
+S009,2,2,4,3,2,2,"Accurate transcript capture, verbose ROS, correctly ignores mismatched EHR."
+S010,3,4,5,3,4,3,"Factual errors on symptoms/meds, omits anosmia and complex EHR."
+S011,4,5,5,3,4,4,"Gender/surgery errors, expired meds listed as current, verbose ROS."
+S012,1,3,5,3,1,1,"Comprehensive timeline, verbose redundant sections, mischaracterizes smell reduction."
+S013,3,4,5,3,4,4,"Dangerous mismatched EHR inclusion for healthy patient, incorrect smoking status."
+S014,3,4,5,3,4,4,"Omits complex PMH, wrong current meds, adds unmentioned plan, mislabels BMI."
+S015,3,4,5,3,4,4,"Inconsistently incorporates denied EHR data, verbose with unmentioned plan items."
+S016,3,4,5,3,4,4,"Age miscalculation, incorrect active meds, verbose unmentioned PMH."
+S017,4,5,5,3,5,4,"Gender consistency but transcript mismatch, incorrect fatigue report, fabricated exam."
+S018,3,3,3,3,3,3,"Highly accurate, verbose unmentioned additions, correctly ignores mismatched EHR."
+S019,4,4,5,4,4,4,"Symptom/cannabis errors, unspecific statin, fragmented, includes irrelevant EHR."
+S020,4,4,5,3,4,4,"Minor radiation error, omits key clinical details and EHR conditions."
+S021,3,4,5,3,4,4,"Accurate transcript use, ignores mismatched EHR, verbose ROS, minor symptom errors."
+S022,3,3,4,3,3,3,"Relationship/gender ambiguity, incorporates unmentioned EHR data, verbose ROS."
+S023,3,4,5,3,4,4,"Contradicts neck swelling, mismatched EHR demographics, redundant generic plan."
+S024,3,4,5,3,4,3,"HPI contradictions, denies palpitations, ignores mismatched EHR, verbose generic discharge."
+S025,4,5,5,3,4,4,"Implausible age, understates meth use, overly elaborate unmentioned plan."
+S026,3,3,4,4,3,3,"Highly organized, accurately captures transcript, mislabeled telephonic, verbose elaborated plan."
+S027,3,5,5,3,4,4,"Contradicts marijuana denial, unmentioned EHR PMH, misses COVID symptoms, speculative exam."
+S028,2,3,5,2,3,3,"Well-organized but uncritically merges completely mismatched patient records, verbose interventions."
+S029,3,3,3,2,3,3,"Gender error, incorporates mismatched EHR, misrepresents fatigue/fever, excessively verbose ROS."
+S030,3,4,5,3,4,4,"Inaccuracies on pop sound/PMH/meds, repetitive HPI, wrongly labeled follow-up."
+S031,3,4,5,3,4,4,"Implausible age, incorrectly lists active meds, verbose ROS."
+S032,3,3,5,3,3,3,"Age conflict, unverified differing medications, verbose repetitive HPI/ROS."
+S033,3,4,5,3,4,4,"Accurately captures transcript, omits extensive cardiac EHR data, adds speculative plan."
+S034,3,3,5,3,4,3,"Incorporates denied EHR comorbidities, wrong active meds, verbose repetition."
+S035,3,4,5,3,4,3,"Contradictory wheezing, misrepresents Tylenol, implausible age, incorrect meds, fabricated exam."
+S036,3,4,5,2,3,3,"Mismatched age/EHR, unmentioned strep test, verbose ROS/discharge."
+S037,3,4,5,3,4,4,"Fabricated treatments, ignores mismatched EHR, excessively verbose patient education."
+S038,3,4,5,3,4,4,"Age error, contradictory alcohol notes, historical meds listed active, unmentioned ROS."
+S039,3,4,5,3,4,4,"Advil vs naproxen error, unclarified chronic back pain, unmentioned plan details, verbose ROS."
+S040,3,4,5,3,4,4,"Incorporates mismatched EHR data, unmentioned plan recommendations, verbose ROS."
+S041,2,3,4,3,3,3,"Incorporates mismatched EHR for healthy student, significantly undermines accuracy."
+S042,4,5,5,3,4,4,"Incorrect smoking status, historical meds active, omits differential, misses pain timeline."
+S043,2,3,5,2,2,2,"Accurate and comprehensive, notably verbose with unmentioned clinical additions."
+S044,3,4,5,3,4,4,"DOB error, fabricated exam/meds/follow-up, includes irrelevant mismatched labs."
+S045,3,4,5,3,4,4,"Gender discrepancy, silently merges denied EHR data, irrelevant labs, unmentioned plan elements."
+S046,2,3,3,3,2,2,"Implausible age, unconfirmed surgical history, unmentioned plan interventions, verbose plan."
+S047,4,4,5,3,4,4,"Applies adult EHR to pediatric patient, fabricates hospital course, wrong family situation."
+S048,3,5,5,3,4,4,"Accurate capture, adds unmentioned details, misses EHR discrepancy, minor ROS redundancy."
+S049,2,2,2,1,1,1,"Relationship error, wrong med dose, substantial fabricated recommendations, verbose plan."
+S050,3,3,5,4,4,3,"Massive copy-paste repetition, internal contradictions, lacks Assessment/Plan/EHR integration."
+S051,3,4,5,3,4,4,"Incorrectly denies cardiac history/allergies, fabricates hypoxia, inconsistent CKD staging."
+S052,2,3,5,2,3,2,"Incorporates mismatched EHR lab data, unmentioned plan steps, omits family history."
+S053,4,5,5,3,4,4,"Conflates mismatched complex EHR, incorrectly denies surgeries, verbose repetition."
+S054,3,4,5,3,4,4,"Comprehensive capture, verbose with extensive unmentioned plan/discharge additions."
+S055,3,4,5,3,4,4,"Misidentifies parent, ignores mismatched EHR, adds unmentioned clinical details."
+S056,4,4,4,3,4,4,"Timeline/address errors, contradictory discharge, undisclosed EHR inclusion, unmentioned ENT plan."
+S057,3,3,4,3,3,3,"Largely accurate, verbose HPI, misses significant cardiac EHR history/meds."
+S058,3,4,5,3,4,3,"Temperature unit error, misstates smoking status, incomplete EHR capture, vague plan."
+S059,2,3,4,3,3,2,"Unflagged gender discrepancy, incorporates denied EHR data, unmentioned brace, irrelevant labs."
+S060,2,2,2,1,1,1,"TB exposure error, historical meds active, fails to reconcile mismatched elderly EHR."
+S061,3,5,5,2,4,3,"Attributes adult EHR to 6-year-old, catastrophically repetitive PMH loop."
+S062,3,4,5,3,4,4,"Mislabels BMI, includes potentially irrelevant EHR, excessively verbose management plans."
+S063,2,3,4,3,3,2,"Diagnosis errors, unmentioned inhaler, wrong quit smoking timeline, verbose plan."
+S064,2,3,5,3,3,3,"Gender/radiation errors, wrong fracture type, includes irrelevant unmentioned EHR conditions."
+S065,3,5,5,4,4,4,"Attributes complex EHR to healthy patient, fabricates hemoglobin, wrong family history."
+S066,3,4,5,3,3,3,"Medication list discrepancies, unreconciled unmentioned EHR history, unmentioned plan recommendations."
+S067,2,4,5,2,3,3,"Fails to flag mismatched EHR when denying conditions, adds unmentioned dosing/relief, verbose."
+S068,3,4,5,3,4,4,"Incorporates mismatched EHR, wrong antibiotic, fabricated management details, undermines utility."
+S069,2,2,5,3,2,2,"Gender error, incorporates mismatched EHR, unmentioned plan items, slightly misrepresents isolation."
+S070,4,4,5,3,4,4,"Incorrectly denies diabetes/surgeries, includes denied EHR data, overly expanded ROS."
+S071,3,4,5,3,4,3,"Gender error, omits multiple allergies, ignores active EHR conditions, incomplete reconciliation."
+S072,2,2,2,1,1,1,"Applies mismatched male EHR to female, catastrophically verbose/repetitive PMH."
+S073,3,4,5,3,4,3,"Misrepresents Tylenol efficacy, completely ignores complex EHR, verbose instructions."
+S074,2,4,5,3,3,3,"Conflates mismatched EHR for young student, misattributes appendectomy, undermines utility."
+S075,3,4,5,3,4,4,"Lists unmentioned EHR meds as current, uncritically merges mismatched EHR, verbose plan."
+S076,3,2,2,1,2,1,"Catastrophic repetition ruins PMH, fails to synthesize EHR comorbidities, omits plan."
+S077,4,4,5,3,4,4,"Largely accurate, repetitive, dismisses EHR mismatch without flagging it explicitly."
+S078,3,4,5,2,4,3,"Implausible age, fabricated exam, excessively verbose with overly detailed unmentioned plans."
+S079,4,5,5,3,4,4,"Comprehensive capture, verbose ROS, appropriately ignores mismatched EHR data."
+S080,3,4,5,3,3,3,"Incorporates mismatched adult EHR vitals/labs for pediatric patient, unmentioned plan, fabricated exam."
+S081,3,4,5,3,4,4,"Medication conflicts, inconsistently handles denied EHR comorbidities, verbose/speculative ROS."
+S082,2,3,5,3,3,3,"Gender/medication inaccuracies, lists inactive EHR meds, falsely states no recent vitals."
+S083,3,3,4,3,3,3,"Incorrectly states no meds helped, omits key pain details and extensive EHR PMH."
+S084,2,3,3,2,2,2,"Repetitive assessment, gender error, lists inactive meds, includes mismatched EHR conditions."
+S085,4,4,5,3,4,4,"Accurate capture, notes mismatched EHR, verbose with extensive unmentioned plan/discharge."
+S086,2,4,5,3,3,3,"Fabricates exam findings, misrepresents alcohol use, merges mismatched EHR, unmentioned antibiotic dosing."
+S087,3,4,5,3,4,3,"Contradictions on grade/gender/asthma, fabricates labs, misidentifies inhaler, verbose plan."
+S088,3,4,5,3,4,3,"Fabricates medication dosing, contradicts reported fever, overly elaborated plan."
+S089,3,4,5,3,4,4,"Implausible age from mismatched EHR, contradicts reported marijuana use, verbose repetition."
+S090,3,5,5,2,4,3,"Conflates mismatched EHR with young student, unmentioned recommendations, incorrect relief measures."
+S091,3,3,5,3,3,3,"Inaccuracies on fall mechanics/gender/prior falls, fabricates meds, includes irrelevant labs."
+S092,2,3,5,2,2,2,"Uncritically applies mismatched elderly EHR to young female, misses pregnancy differential, verbose plan."
+S093,3,4,5,3,4,3,"Gender inaccuracy, includes unmentioned EHR meds as current, verbose speculative ROS."
+S094,3,4,5,3,4,4,"Implausible age, misquotes sputum size, misplaced anosmia symptom, verbose/repetitive."
+S095,3,4,5,3,4,4,"Accurate HPI, inappropriately incorporates mismatched EHR lab/vital data, verbose plan."
+S096,3,3,4,3,3,3,"Inaccuracies on insulin/allergies/family history/smoking, irrelevant EHR data, misses critical leg infection."
+S097,1,2,3,2,1,1,"Critically misses pregnancy diagnosis by applying mismatched elderly EHR, inappropriate plan."
+S098,4,4,5,3,4,4,"Clinically sound, notes mismatched EHR, verbose plan, misses pericarditis differential."
+S099,2,2,3,3,2,2,"Applies mismatched elderly EHR to young female, omits critical pregnancy symptoms, vague plan."
+S100,4,5,5,3,4,4,"Comprehensive HPI and appropriate plan, ignores mismatched EHR data, minor verbosity."
+S101,3,4,5,3,4,4,"Fabricates exam, incorrectly denies prior surgeries, prioritizes transcript over mismatched EHR, verbose."
+S102,3,4,5,3,4,4,"Gender discrepancy, uses mismatched EHR lab/PMH data, adds significant unmentioned clinical content."
+S103,2,4,5,2,3,3,"Excessively verbose, fabricated plan details, major inaccuracies from mismatched EHR data."
+S104,3,5,5,3,4,4,"Thorough but incorporates unmentioned mismatched EHR conditions, lists discontinued meds as current."
+S105,3,4,5,3,4,4,"Incorrectly states abdominal pain present, inappropriately incorporates mismatched EHR data, verbose plan."
+S106,3,4,5,3,4,4,"Accurate HPI, fabricates plan elements, inappropriately presents mismatched EHR lab values."
+S107,3,4,5,3,4,4,"Incorporates mismatched EHR data, adds unmentioned plan details and specific follow-up recommendations."
+S108,2,3,5,2,3,3,"Conflating mismatched EHR creates dangerous inaccuracies, lists unmentioned surgeries despite denial."
+S109,3,4,5,3,4,4,"Incorrectly applies mismatched EHR demographics to a younger patient, verbose with repetition."
+S110,3,3,3,2,3,3,"Fever contradictions, wrong cough med, excessively verbose HPI, useless N/A labs, ignores PMH mismatch."
+S111,3,4,5,3,4,4,"Incorporates mismatched EHR history despite denial, incorrectly denies drug use, extensively fabricated plan."
+S112,2,2,4,3,2,2,"Incorrectly denies similar past pain and Tylenol use, misses biliary pathology, vague plan."
+S113,4,5,5,3,5,4,"Highly comprehensive, verbose with unmentioned plan additions, slight age misrepresentation."
+S114,3,3,4,3,3,3,"Inaccurate dyspnea timeline, incorrect ROS, inappropriately includes unmentioned EHR data, misses clinical details."
+S115,2,3,4,3,2,2,"Substance use errors, irrelevant mismatched EHR conditions, incorrectly denies surgeries, fabricated discharge."
+S116,3,4,5,3,4,3,"Incorporates extensive mismatched EHR data, includes AI-generated unmentioned plan items."
+S117,3,4,5,2,3,3,"Significant fabrications in plan, incorrect incorporation of unmentioned mismatched EHR data, verbose."
+S118,3,4,5,3,4,3,"Inaccuracies on chest pain and allergies, adds fabricated specific medication doses and clinical details."
+S119,3,3,3,3,2,3,"Incorrectly denies alcohol use, uncritically incorporates mismatched EHR data, vague/fabricated plan."
+S120,4,4,5,3,4,4,"Accurate HPI, fabricates exam, adds unmentioned plan items, underemphasizes prior flu etiology."
+S121,3,5,5,2,3,3,"Inaccuracies on symptom recall, mismatched PMH, excessively verbose with fabricated prescriptions/exam."
+S122,3,3,4,3,3,3,"Wrong age, lists inactive EHR meds denied by patient, mismatched EHR PMH, incomplete physical exam."
+S123,2,3,4,3,3,2,"Attributes adult female EHR to 6-year-old boy's mother, incorrectly frames mother as patient, suggests discussed med."
+S124,2,3,5,2,3,3,"Fabricates exam findings, includes mismatched EHR data, verbose plan includes unmentioned steps."
+S125,3,4,5,2,4,3,"Dyspnea timeline inaccuracies, ROS contradictions, overly detailed plan incorporating mismatched deceased EHR data."
+S126,4,4,5,4,4,4,"Accurate symptoms/plan, misidentifies accompanying parent, adds reasonable unmentioned medication recommendations."
+S127,3,3,4,3,3,3,"Lists inactive meds as current, omits EpiPen/allergies, incorrectly recommends already-performed PFTs."
+S128,1,1,1,1,1,1,CUDA out-of-memory error. no clinical content.
+S129,2,3,5,4,3,3,"Attributes female medical history to mismatched male EHR patient, fabricates conditions, gender inference error."
+S130,2,4,5,2,3,3,"Gender inaccuracy, lists inactive meds as active, fabricates exam findings, verbose discharge instructions."
+S131,3,4,5,2,3,3,"Verbose with hallucinated exam, fabricated medication dosing, incorrect murmur documentation."
+S132,4,5,5,3,4,4,"Well-organized and comprehensive, verbose with unmentioned additions, EHR data irrelevant to pediatric encounter."
+S133,3,3,5,3,2,2,"Critically misses primary pregnancy diagnosis, incorrect gastroenteritis assessment, omits father's hypertension."
+S134,2,4,5,3,3,3,"Fabricates vital signs, mischaracterizes prior injury, blends unverified EHR data with contradictory self-report."
+S135,3,3,4,3,3,3,"Incorrectly states pain radiates to chest, omits key details, vague plan, incorrectly denies palpitations."
+S136,3,3,4,4,3,3,"Unflagged demographic mismatch, partially omits differential, ignores EHR comorbidities."
+S137,2,4,5,3,3,3,"Gender inconsistency, fabricated lab values, incorrectly denies complex EHR history, adds unmentioned plan items."
+S138,2,3,5,3,3,3,"Applies female history to mismatched male EHR record, presents comorbidities without noting patient denial."
+S139,3,4,5,3,3,3,"Minor smoking inaccuracy, fabricates clinical decisions, ignores or fails to reconcile mismatched EHR data."
+S140,4,4,5,4,4,4,"Accurate HPI, misidentifies accompanying parent, appropriately ignores mismatched EHR data."
+S141,3,4,5,2,3,3,"Inaccuracies on history/meds/BMI, excessively verbose with fabricated plan details."
+S142,3,3,2,1,2,1,"Stool consistency error, catastrophically verbose PMH dump, uncritically includes mismatched EHR data."
+S143,3,4,5,3,4,3,"Implausible age, contradicts patient fever denial, includes unmentioned inconsistent EHR meds, verbose ROS."
+S144,3,4,5,3,4,3,"Unconfirmed older age, unmentioned ROS symptoms, fabricated chest tightness, incorrectly denies drug use."
+S145,3,5,5,2,4,3,"Mismatched EHR data, conflicting allergy lists, fabricated physical exam, overly elaborate verbose plan."
+S146,4,5,5,3,4,4,"Well-organized and comprehensive, verbose with fabricated plan elements not discussed in encounter."
+S147,4,5,5,4,5,5,"Highly accurate, minor impact on smell inaccuracy, appropriately ignores mismatched EHR data."
+S148,2,3,4,4,3,3,"Gender discrepancy, omits key clinical details, slightly misquotes isolation instruction, mismatched EHR demographics."
+S149,3,3,4,3,3,3,"Uses mismatched EHR demographics for a university student, omits key details including chills and timeline."
+S150,3,3,4,3,3,3,"Minor repetition, slight plan misrepresentation, omits complex EHR history and COVID swab/prior antibiotics."
+S151,4,5,5,3,5,4,"Highly accurate and comprehensive, verbose with redundant sections, includes irrelevant unmentioned EHR data."
+S152,3,4,5,3,4,4,"Fails to reconcile gender discrepancy, verbose with unmentioned plan elements and extensive ROS."
+S153,3,3,3,3,3,3,"Incorrectly denies symptoms/surgeries, uses mismatched elderly EHR demographics, lacks SOAP, incorrect med advice."
+S154,3,4,5,3,4,3,"Misleadingly incorporates mismatched elderly EHR data, contradictory physical exam, undermines utility."
+S155,3,4,5,3,4,3,"Incorporates mismatched EHR lab values, omits key family history, verbose plan with fabricated medication dosing."
+S156,4,5,5,3,4,4,"Well-organized and comprehensive, verbose with unmentioned additions and fabricated follow-up timeframe."
+S157,3,4,5,3,4,4,"Allergy/age inaccuracies, includes unmentioned mismatched EHR history, generic plan lacks specific antibiotic recommendations."
+S158,4,5,5,3,4,4,"Comprehensive and well-organized, minor CKD status inaccuracy, verbose due to redundancy."
+S159,3,3,4,3,3,3,"Contradicts itself on Tylenol efficacy, appropriately ignores mismatched EHR, misses pericarditis differential."
+S160,3,4,5,3,4,3,"Discrepancy ignoring extensive EHR medical history, verbose plan with speculative fabricated clinical decisions."

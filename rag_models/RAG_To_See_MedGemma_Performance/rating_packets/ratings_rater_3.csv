@@ -1,161 +1,161 @@
 summary_id,accuracy,completeness,organization,conciseness,clinical_utility,overall_quality,comments
-S321,,,,,,,
-S322,,,,,,,
-S323,,,,,,,
-S324,,,,,,,
-S325,,,,,,,
-S326,,,,,,,
-S327,,,,,,,
-S328,,,,,,,
-S329,,,,,,,
-S330,,,,,,,
-S331,,,,,,,
-S332,,,,,,,
-S333,,,,,,,
-S334,,,,,,,
-S335,,,,,,,
-S336,,,,,,,
-S337,,,,,,,
-S338,,,,,,,
-S339,,,,,,,
-S340,,,,,,,
-S341,,,,,,,
-S342,,,,,,,
-S343,,,,,,,
-S344,,,,,,,
-S345,,,,,,,
-S346,,,,,,,
-S347,,,,,,,
-S348,,,,,,,
-S349,,,,,,,
-S350,,,,,,,
-S351,,,,,,,
-S352,,,,,,,
-S353,,,,,,,
-S354,,,,,,,
-S355,,,,,,,
-S356,,,,,,,
-S357,,,,,,,
-S358,,,,,,,
-S359,,,,,,,
-S360,,,,,,,
-S361,,,,,,,
-S362,,,,,,,
-S363,,,,,,,
-S364,,,,,,,
-S365,,,,,,,
-S366,,,,,,,
-S367,,,,,,,
-S368,,,,,,,
-S369,,,,,,,
-S370,,,,,,,
-S371,,,,,,,
-S372,,,,,,,
-S373,,,,,,,
-S374,,,,,,,
-S375,,,,,,,
-S376,,,,,,,
-S377,,,,,,,
-S378,,,,,,,
-S379,,,,,,,
-S380,,,,,,,
-S381,,,,,,,
-S382,,,,,,,
-S383,,,,,,,
-S384,,,,,,,
-S385,,,,,,,
-S386,,,,,,,
-S387,,,,,,,
-S388,,,,,,,
-S389,,,,,,,
-S390,,,,,,,
-S391,,,,,,,
-S392,,,,,,,
-S393,,,,,,,
-S394,,,,,,,
-S395,,,,,,,
-S396,,,,,,,
-S397,,,,,,,
-S398,,,,,,,
-S399,,,,,,,
-S400,,,,,,,
-S401,,,,,,,
-S402,,,,,,,
-S403,,,,,,,
-S404,,,,,,,
-S405,,,,,,,
-S406,,,,,,,
-S407,,,,,,,
-S408,,,,,,,
-S409,,,,,,,
-S410,,,,,,,
-S411,,,,,,,
-S412,,,,,,,
-S413,,,,,,,
-S414,,,,,,,
-S415,,,,,,,
-S416,,,,,,,
-S417,,,,,,,
-S418,,,,,,,
-S419,,,,,,,
-S420,,,,,,,
-S421,,,,,,,
-S422,,,,,,,
-S423,,,,,,,
-S424,,,,,,,
-S425,,,,,,,
-S426,,,,,,,
-S427,,,,,,,
-S428,,,,,,,
-S429,,,,,,,
-S430,,,,,,,
-S431,,,,,,,
-S432,,,,,,,
-S433,,,,,,,
-S434,,,,,,,
-S435,,,,,,,
-S436,,,,,,,
-S437,,,,,,,
-S438,,,,,,,
-S439,,,,,,,
-S440,,,,,,,
-S441,,,,,,,
-S442,,,,,,,
-S443,,,,,,,
-S444,,,,,,,
-S445,,,,,,,
-S446,,,,,,,
-S447,,,,,,,
-S448,,,,,,,
-S449,,,,,,,
-S450,,,,,,,
-S451,,,,,,,
-S452,,,,,,,
-S453,,,,,,,
-S454,,,,,,,
-S455,,,,,,,
-S456,,,,,,,
-S457,,,,,,,
-S458,,,,,,,
-S459,,,,,,,
-S460,,,,,,,
-S461,,,,,,,
-S462,,,,,,,
-S463,,,,,,,
-S464,,,,,,,
-S465,,,,,,,
-S466,,,,,,,
-S467,,,,,,,
-S468,,,,,,,
-S469,,,,,,,
-S470,,,,,,,
-S471,,,,,,,
-S472,,,,,,,
-S473,,,,,,,
-S474,,,,,,,
-S475,,,,,,,
-S476,,,,,,,
-S477,,,,,,,
-S478,,,,,,,
-S479,,,,,,,
-S480,,,,,,,
+S321,2,4,5,4,3,3,"Structured but contains EHR inaccuracies and unstated management details, reducing trustworthiness"
+S322,3,4,5,4,4,4,Clinically useful but includes fabricated exam findings and rapid antigen test error
+S323,2,4,5,4,3,3,Structured but merges mismatched elderly EHR and adds unsupported details
+S324,2,3,4,4,3,3,Captures main problem but contains factual errors and omits relevant reaction/symptom details
+S325,2,3,4,4,3,3,Captures main complaint but contains factual errors and omits relevant exposure details
+S326,2,4,5,4,4,3,Clinically useful but imports conflicting EHR problems and adds unstated ROS items
+S327,2,3,5,4,3,3,Structured but introduces unsupported details and omits/downplays symptom uncertainty
+S328,2,3,5,4,3,3,Moderately useful but imports conflicting EHR comorbidities and states unsupported ROS negatives
+S329,2,3,5,4,3,3,"Moderately useful but contains demographic mismatch, fabricated strep test, and added conditions"
+S330,3,4,5,4,4,4,Organized but introduces unsupported diagnosis/labs and misses sick contact details
+S331,2,3,5,4,3,3,Captures main symptoms but contains major inaccuracies and misses key EHR comorbidities
+S332,2,3,5,4,3,3,Clinically usable but ignores conflicting EHR data and adds unsupported ROS negatives
+S333,3,3,4,4,3,3,Captures presentation but contains age inaccuracies and omits relevant injection/ROS details
+S334,2,3,5,4,3,3,Clinically usable as history recap but ignores conflicting female EHR data
+S335,2,3,5,3,3,3,Captures complaint but mixes transcript with mismatched EHR data and misses symptom nuance
+S336,2,4,5,4,3,3,Clinically readable but includes unsupported EHR details and invented management
+S337,3,4,5,4,4,4,Clinically useful overall despite overinterpreting prior records and suggesting bacterial sinusitis prematurely
+S338,2,3,5,4,3,3,Usable for hand complaint but includes major 109yo EHR mismatch and unstated plan elements
+S339,2,4,5,4,3,3,"Useful overall but contains age error, diabetes EHR mismatch, and speculative plan"
+S340,2,4,5,3,3,3,Very organized but introduces unsupported transplant/CABG history reducing trustworthiness
+S341,2,3,4,4,3,3,"Captures main complaint but denies marijuana use, omits EHR comorbidities, and assumes normal exam"
+S342,1,2,5,4,2,2,Structured but imports incorrect 41yo male EHR and misstates isolation guidance
+S343,3,4,5,4,4,4,"Clinically useful but adopts denied PMH, mischaracterizes diarrhea, and alters isolation guidance"
+S344,1,3,5,4,2,2,Captures core history but imports conflicting EHR history and invents exam/plan details
+S345,2,4,5,4,4,3,Clinically useful but mixes transcript with mismatched EHR data and unstated plan elements
+S346,2,4,5,3,3,3,Structured but incorporates conflicting EHR data and adds unstated management details
+S347,2,4,5,4,3,3,"Structured but includes fabricated physical exam findings, prescribed medications, and inaccurate alcohol history"
+S348,2,3,3,1,2,2,Captures key details but contains factual inconsistencies and highly repetitive EHR PMH copy
+S349,2,3,4,4,3,3,Captures main concern but imports conflicting EHR history and misses pain severity/tenderness details
+S350,2,4,5,3,3,3,"Clinically readable but contains invented exam findings, trauma denial, and incorrect PMH"
+S351,3,4,5,3,4,4,Clinically useful but includes unsupported ROS/plan additions and omits conflicting EHR comorbidities
+S352,2,4,5,4,3,3,Organized but incorporates major mismatched 84yo EHR details and unsupported statements
+S353,2,3,5,4,3,3,"Organized but contains factual inaccuracies like age, chronic history, and unsupported ROS"
+S354,2,3,5,4,3,3,"Moderately useful but contains errors regarding identity, allergies, surgical history, and follow-up"
+S355,2,3,4,4,2,2,"Organized but imports conflicting EHR history, fabricates discharge plan, and omits relevant negatives"
+S356,2,3,5,4,3,3,"Structured but includes conflicting EHR PMH/medications, overstates shoulder exam, and omits pain severity"
+S357,2,3,4,4,3,2,Captures chest trauma history but contains incorrect alcohol history and fabricated plan
+S358,3,3,4,4,4,3,Organized but misses family/exam details and omits conflicting EHR comorbidities
+S359,3,3,4,4,3,3,Captures chest pain history but contains radiation inaccuracies and omits neck swelling
+S360,2,4,5,4,3,3,"Clinically readable but includes unsupported inferences like metoprolol, albuterol, and unstated plans"
+S361,4,4,5,4,4,4,Organized but has minor issues with unsupported ROS additions and conflicting pediatric EHR allergy/history
+S362,2,4,5,4,3,3,"Organized but includes unsupported active conditions, current meds, and unstated orders"
+S363,3,4,5,4,4,4,"Organized but adds unsupported elements like rash screening, specific treatment, and PCR test characterization"
+S364,2,3,5,4,3,3,"Captures sore throat history but contains invented exam findings, allergies, and unstated discharge details"
+S365,2,4,5,4,3,3,"Assessment reasonable but contains inaccuracies like wheezing denial, invented exam findings, and medication errors"
+S366,2,4,5,4,3,3,"Useful overall but includes unsupported details like active hypertension/CKD, residence, and fabricated exam/plan"
+S367,2,4,5,4,3,3,"Organized but includes unsupported details like allergy denial, CKD staging, and invented management"
+S368,2,4,5,3,3,3,"Structured but includes fabricated orders, referrals, and unstated living environment concerns"
+S369,2,4,5,4,3,3,"Assessment/plan reasonable but contains inaccuracies from EHR including age, CAD/CKD, meds, and drug use"
+S370,2,4,4,4,4,3,Clinically useful overall despite mixing transcript with incorrect EHR demographics
+S371,2,4,5,3,3,3,Useful as narrative overview but imports conflicting EHR comorbidities and invents exam/discharge details
+S372,3,4,5,4,4,4,Clinically useful overall though somewhat embellished beyond source material
+S373,3,3,5,4,3,3,"Organized but uses conflicting EHR demographics, misstates family history, and omits relevant symptoms"
+S374,3,4,5,4,4,4,Organized but contains factual issues like stating CKD in remission and adding unsupported ROS/synovial studies
+S375,2,2,4,4,2,2,Organized but imports mismatched EHR demographics and misses key transcript details like missed period
+S376,2,4,5,4,3,3,Organized but assigns male EHR identity to female transcript and adds unconfirmed exam/orders
+S377,2,2,4,4,2,2,"Organized but contains inaccuracies like incorrect age, unsupported EHR details, and night sweats denial"
+S378,3,4,5,4,4,4,Clinically useful but contains unsupported additions like mother accompanying child and unstated management items
+S379,2,4,5,4,3,3,"Organized but ignores major EHR comorbidities, misses ordered COVID swab, and invents medication doses"
+S380,2,4,5,4,3,3,"Structured but contains conflicting EHR details, undiscussed symptoms, and unstated management recommendations"
+S381,2,4,5,3,2,2,"Structured but introduces inaccuracies like renal transplant, depression management, and specific antibiotic plans"
+S382,2,3,5,4,3,3,"Organized but contains inaccuracies like smoking status, fever units, and unsupported EHR current-history conflation"
+S383,2,4,5,4,3,3,"Clinically readable but includes fabricated details like poor intake, specific tests, treatment, and telehealth follow-up"
+S384,3,3,5,4,3,3,"Organized but includes inaccuracies like added cardiovascular denials, outdated current meds, and omits relevant details"
+S385,2,3,5,4,3,3,"Structured but includes unsupported additions like normal exam, troponin ordering, and misses recent illness/Tylenol efficacy"
+S386,2,3,4,4,3,3,"Organized but contains factual errors like smoking status, listing inactive EHR meds as current, and omits relevant details"
+S387,1,2,5,4,2,2,"Structured but contains major factual errors, incorrect diagnosis, and distorts key details like head strike denial"
+S388,2,4,5,4,3,3,"Organized but introduces inaccuracies like CKD/transplant history, osteoarthritis, and unstated antibiotic dosing"
+S389,2,3,5,4,2,2,"Structured but introduces unsupported assessment/plan, misses pregnancy concern, and inaccurately summarizes family history"
+S390,1,2,5,4,2,2,Captures sore throat presentation but factually inconsistent by merging adolescent transcript with 73yo male EHR
+S391,2,3,5,4,3,3,Organized but imports extensive conflicting EHR PMH/medications and misses useful exam details
+S392,2,3,5,4,3,3,"Clinically useful as history overview but contains inaccuracies like positional relief, added anxiety/depression, and omitting EHR contradictions"
+S393,2,4,5,3,3,3,"Clinically useful as overview but includes unsupported additions like palpitations, dizziness, CBC/BMP, and unstated follow-up"
+S394,2,4,5,4,3,3,"Useful as an overview but contains invented exam findings, ROS items, medication details, and unstated IV antibiotics plan"
+S395,2,4,5,4,3,3,"Organized but contains inaccuracies like incorrect PMH/social details, alcohol amount, and unstated treatment recommendations"
+S396,3,3,4,4,3,3,Captures presenting symptoms but omits relevant negatives/details and contains minor inaccuracies like home nebulizer assumption
+S397,1,3,4,4,2,2,Captures chest pain presentation but severely inaccurate by merging young female transcript with 91yo male EHR
+S398,2,4,5,4,2,3,Clinically misleading because proposed next steps are converted into definitive treatment/disposition decisions
+S399,2,4,5,4,4,3,"Clinically useful for presenting problem but incorporates major conflicting EHR details regarding sex, PMH, and medications"
+S400,3,3,5,4,3,3,Organized but contains inaccuracies like denying fever/chills and omits relevant EHR history like hypertension/obesity
+S401,2,3,5,4,3,3,Organized but contains inaccuracies like denying prior postprandial episodes and omits key symptom details like RUQ location
+S402,3,4,5,4,4,4,Structured but adds unsupported management details and minor inaccuracies like runny nose timing and undiscussed symptoms
+S403,2,4,5,3,3,3,"Structured but includes unsupported speculative details like fatigue, normal labs, and mixes transcript with EHR history"
+S404,2,4,5,4,2,2,"Organized but contains major unsupported additions like fabricated physical exam, unstated treatment plan, and uncertain allergy details"
+S405,1,2,2,1,1,1,Contains major factual errors conflating mother's adult EHR with 6yo child and is extremely repetitive
+S406,1,1,1,3,1,1,"Summary is only an error message, contains no clinical content, and is unusable for patient care"
+S407,2,3,5,4,3,3,"Useful overview but contains factual problems like unsupported ROS, incorrect hospitalization history, and speculative plan"
+S408,2,4,5,4,4,3,Organized but contains factual inconsistencies by mixing transcript with conflicting EHR profile and adds unstated ROS/tests
+S409,2,4,5,3,3,3,"Useful overall but includes fabricated physical exam, treatment plan, inaccurate alcohol intake, and overstated EHR diagnoses"
+S410,1,1,2,1,1,1,"Dominated by incorrect mismatched EHR data, omits key details like dyspnea/hysterectomy, and is extremely verbose"
+S411,1,3,5,4,2,2,Captures some symptoms but contains major factual errors treating young pregnant female as 83yo male and hallucinating EHR integration
+S412,2,4,5,4,4,3,Organized but contains factual inconsistencies by mixing transcript with male EHR and incorrectly stating no recent labs
+S413,2,4,5,4,3,3,"Clinically readable but contains inaccuracies like overstated smoking amount, unstated ROS items, and detailed fabricated plan"
+S414,2,4,5,4,3,3,"Clinically usable as structured overview but includes unsupported/fabricated elements in ROS, assessment/plan, and DOB interpretation"
+S415,3,4,5,4,4,4,Structured but inappropriately incorporates mismatched EHR laboratory data and adds specific unstated management steps
+S416,2,4,5,3,3,3,"Useful overall but contains inaccuracies like incorrect allergy characterization, unsupported meds, and conflicting surgical history"
+S417,2,2,2,1,2,1,"Contains multiple factual inconsistencies, contradictory statements, omission of important EHR context, and is extremely repetitive"
+S418,2,4,5,4,3,3,"Useful as an overview but contains inaccuracies like sex/pregnancy mismatch, medication assumptions, and invented normal lab results"
+S419,2,4,5,4,3,3,Clinically usable as structured overview but contains inaccuracies like stating mother reported history and adds speculative details
+S420,2,4,5,4,3,3,Structured but contains factual inaccuracies like adding chronic history and unstated management details/follow-up instructions
+S421,2,4,5,4,4,3,"Useful overall but includes clinically important inaccuracies from EHR like CKD4/ESRD, renal transplant, and misstated objective data"
+S422,2,2,3,1,2,2,"Captures HPI details but includes factual inconsistencies, imports irrelevant EHR history, and omits clinically relevant details"
+S423,3,4,5,4,4,4,Still clinically useful but contains inaccuracies like identifying accompanying parent as mother and adding unstated management details
+S424,2,3,5,4,3,3,Useful overall but inappropriately imports extensive EHR comorbidities contradicting healthy transcript and adds unstated details
+S425,3,4,5,4,4,4,"Organized but contains minor inaccuracies like overstating absence of chills, adding unstated negatives, and misstating why vitals weren't obtained"
+S426,2,4,5,3,3,3,"Structured but introduces fabricated details like renal transplant as current therapy, added exam findings, and unstated plan"
+S427,2,3,4,4,3,3,"Structured but contains inaccuracies by importing incorrect EHR demographics, stating patient denies drug use, and omits relevant negatives"
+S428,1,3,5,3,2,2,Captures elbow complaint reasonably well but contains major factual problems importing extensive conflicting EHR history
+S429,3,4,5,4,4,4,Organized but adds unsupported elements like rheumatology referral and has minor inaccuracies like substituting naproxen for Advil
+S430,2,3,4,4,3,3,"Moderately complete but contains factual inconsistencies like denying neck swelling, adding unstated bacterial concern, and demographic mismatch"
+S431,2,4,5,4,3,3,"Structured but introduces unsupported details and overstates EHR comorbidities, unstated ROS negatives, and specific treatments"
+S432,2,3,5,4,3,3,Organized but includes unsupported conflicting EHR problems like CKD/transplant and added unstated treatment advice
+S433,2,4,5,3,3,3,Clinically readable but includes unsupported/incorrect additions from EHR and invented management details like ESRD wait-list
+S434,2,3,4,4,3,3,"Organized but inaccurately applies mother's EHR history to child, misstates family asthma history, and omits clinically relevant details"
+S435,2,3,4,4,3,3,Captures main URI symptoms but contains factual errors conflating child transcript with adult EHR and omits counseling details
+S436,2,2,2,1,2,1,Captures some sinus symptoms but omits major details and is severely degraded by excessively long copied past medical history
+S437,2,3,4,4,3,3,Organized but contains factual inconsistencies importing conflicting EHR problems and omits relevant details like nasal discharge/sick contacts
+S438,2,4,5,3,3,3,Useful as readable note but contains inaccuracies importing extensive conflicting EHR comorbidities and adding unstated exam/ROS/plan
+S439,2,4,5,4,3,3,"Fairly complete for presenting problem but introduces clinically important inaccuracies like incorrect social history, unsupported exam, and unstated recommendations"
+S440,2,4,5,4,3,3,"Clinically usable as overview but includes unsupported/incorrect details like fabricated vitals, exam findings, and unstated treatment plan"
+S441,2,3,4,4,3,3,"Organized but contains factual errors like incorrect dyspnea timing, age, inappropriate inclusion of unrelated EHR history, and omits relevant symptoms"
+S442,2,4,5,4,3,3,"Clinically usable as synthesized note but contains inaccuracies like unstated ROS items, inconsistently pulled EHR history, and fabricated plan/disposition"
+S443,2,4,5,4,3,3,"Clinically usable as overview but includes unsupported additions in plan like imaging, specific follow-up, and misses planned blood work"
+S444,1,3,5,3,2,2,Captures chest pain history but contains major factual inaccuracies portraying healthy patient as 108yo with extensive chronic disease from EHR
+S445,2,3,4,4,3,3,"Organized but contains factual errors like contradictory symptom reporting, missed appendectomy, incorrect medication instructions, and mismatched demographics"
+S446,2,4,5,4,3,3,Clinically usable for presenting illness but contains factual inconsistencies blending transcript and EHR data from different patients
+S447,3,4,5,4,4,4,"Structured but adds unsupported details like NKDA, active tacrolimus context, and unstated advice while slightly overstating family history"
+S448,2,3,5,4,2,2,"Clinically misleading mixing transcript details with unrelated chart data, fabricated ROS/management elements, and substantial conflicting EHR info"
+S449,2,4,5,4,3,3,"Organized but introduces unsupported details and unstated plan elements like anti-CCP testing, MRI, and rheumatology referral"
+S450,2,4,5,4,3,3,Very organized but contains inaccuracies importing extensive conflicting EHR comorbidities and adding unstated exam/management details
+S451,2,4,5,4,4,3,Organized and clinically useful but contains factual inconsistencies mixing transcript details with mismatched 90yo EHR demographics and adding unsupported negatives
+S452,2,4,5,4,3,3,"Useful overall but includes unsupported details like denying sick contacts, adding unconfirmed chronic history, and unstated tests/follow-up"
+S453,2,4,5,3,3,3,Structured but includes major unsupported conflicting EHR details and incorrectly states patient denies fever/chills
+S454,3,4,5,4,4,4,"Clinically useful overall but adds unsupported details like rapid COVID test, specific treatments, and unstated ROS items"
+S455,2,3,5,4,3,3,"Moderately complete but contains inaccuracies like omitting prior appendectomy, stating no surgeries, and fabricating exam/management details"
+S456,3,4,5,4,4,4,"Organized but includes unsupported/inaccurate details like denying alcohol use despite report, added negative ROS, and implying Yaz usage"
+S457,3,4,5,4,4,4,"Structured but adds unsupported specifics like CKD stage, colchicine taper, and misses relevant EHR CAD/MI and transplant history"
+S458,2,3,5,4,3,3,"Clinically usable as general overview but includes unsupported/conflicting details like age, CKD/ESRD/CABG history, and multiple unstated ROS negatives"
+S459,3,4,5,4,4,4,"Clinically useful but includes unsupported conflicting EHR problems like CKD/transplant, substance use, and part-time employment"
+S460,2,3,5,4,3,3,"Captures main URI presentation but contains inaccuracies like incorrect accompanying parent, misstating PMH, adding unstated meds/tests, and missing contextual details"
+S461,2,4,5,4,3,3,"Organized but contains inaccuracies like mismatched EHR demographics, unstated ice use, and invented exam/plan details"
+S462,2,4,5,3,3,3,"Useful overall but includes multiple fabricated elements like detailed physical exam, specific treatments, and conflicting EHR problems"
+S463,2,4,5,4,3,3,"Structured but contains inaccuracies like incorrect PMH, diabetes denial, and invented management details"
+S464,2,4,5,4,3,3,Clinically usable for hand issue but includes major inaccuracies importing extensive chronic diseases from mismatched chart and adding unsupported exam/plan
+S465,2,3,5,3,2,2,"Captures HPI/social history but contains multiple fabricated details like made-up physical exam, allergies, tests, and unstated follow-up plans"
+S466,1,2,4,3,2,2,"Dominated by irrelevant conflicting 79yo male EHR details, omits key amenorrhea implication, and introduces inappropriate assessments"
+S467,2,3,4,4,3,3,"Organized but contains inaccuracies like incorrect social history, conflicting PMH inclusion, and omits several relevant negatives and exam details"
+S468,2,3,5,4,3,3,Useful as a rough overview but contains inaccuracies importing conflicting EHR comorbidities/demographics and omitting relevant symptoms/negatives
+S469,2,4,5,3,3,3,"Clinically readable but includes multiple fabricated details like embellished physical exam, specific orders, and conflicting chronic disease interpretations"
+S470,2,4,5,4,3,3,"Clinically readable but includes multiple fabricated details like unperformed physical exam, added labs, and unstated treatment plans"
+S471,2,4,5,3,3,3,"Useful as general overview but contains inaccuracies like incorrect sex/living context, unsupported ROS/exam findings, and unsupported medication status"
+S472,2,3,4,4,3,3,"Structured but contains inaccuracies like misgendering, contradicting Tylenol efficacy, unsupported cardiac assessment, and omits relevant negatives"
+S473,2,3,5,4,3,3,Clinically readable but includes multiple unsupported details in physical exam/management and ignores conflicting EHR history
+S474,2,4,5,4,3,3,"Clinically readable but contains factual inconsistencies like incorrect social history, added unstated ROS items, and unsupported medication/plan specifics"
+S475,2,4,5,3,3,3,"Useful overall but includes multiple unsupported/incorrect details like fabricated medication doses, age, and extensive undocumented plan"
+S476,2,3,5,4,2,2,"Captures chest pain history but contains multiple fabricated elements like unstated ROS details, living alone, and detailed unstated management plan"
+S477,2,4,5,3,3,3,"Useful as readable note but contains inaccuracies mixing transcript/EHR data like incorrect demographics, added unstated chronic conditions, and invented counseling"
+S478,2,3,4,4,3,3,Captures sore throat history but contains factual inconsistencies presenting adolescent patient as older adult and omits relevant details
+S479,3,3,4,4,3,3,Organized but contains inaccuracies stating she took no medications despite reporting trial of Tylenol/Advil/Tums and omits clinically relevant details
+S480,3,4,5,4,4,4,"Organized but contains inaccuracies stating no shortness of breath and no allergies despite contradictory reports, adding unstated plan details"
