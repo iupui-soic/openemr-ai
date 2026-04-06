@@ -1,89 +1,32 @@
 file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid,error_match,warning_match
-Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Falls-Prevention-Screening_CPG.md,True,True,False,True,0.0,1.0
-Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False,0.0,0.0
-Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Chlamydia_Screening_CPG.md,True,True,False,True,0.0,1.0
-Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Tobacco-Use-Screening_CPG.md,True,True,False,True,0.0,1.0
-Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Cervical-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
-AAA-Screening.json,AAA_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,AAA-Screening_CPG.md,True,True,False,True,0.0,1.0
-Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Osteoporosis-Screening_CPG.md,True,True,False,True,0.0,1.0
-Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Condition_Medication_Count_CPG.md,True,True,False,True,0.0,1.0
-Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Alcohol-Misuse-Screening_CPG.md,True,True,False,True,0.0,1.0
-Hypertension-Screening.json,Hypertension-Screening,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Hypertension-Screening_CPG.md,True,True,True,False,0.0,1.0
-Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Lung-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
-Depression_screening.json,DepressionScreening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Depression_screening_CPG.md,True,True,False,True,0.0,1.0
-Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False,0.0,1.0
-Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False,0.0,1.0
-Anxiety-Screening.json,Anxiety_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Anxiety-Screening_CPG.md,True,True,True,False,0.0,1.0
-Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False,0.0,1.0
-USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,USPSTF_Statin_Use_CPG.md,True,True,False,True,0.0,1.0
-Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-HIV-Screening.json,HIV_Screening_CDS,qwen-2.5-1.5b,False,0.05093836784362793,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,HIV-Screening_CPG.md,True,True,True,False,0.0,1.0
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen-2.5-1.5b,False,9.960998296737671,"; ; The age threshold for the population is set to "">= 40 years"" but the CPG specifies ""40 to 75 years"".; The lookback period for the most recent valid LDL test is set to ""6 years"" but the CPG specifies ""6 years"".; The lookback period for the most recent valid HDL test is set to ""6 years"" but the CPG specifies ""6 years"".; The lookback period for the most recent valid smoking status is set to ""6 years"" but the CPG specifies ""6 years"".; The lookback period for the most recent valid CVD risk assessment is set to ""6 years"" but the CPG specifies ""6 years"".; The lookback period for the most recent pregnancy observation is set to ""1 year"" but the CPG specifies ""42 weeks"".; The lookback period for the most recent breastfeeding observation is set to ""1 year"" but the CPG specifies ""1 year"".; The lookback period for the most recent end-stage renal disease encounter is set to ""2 years"" but the CPG specifies ""2 years"".; The lookback period for the most recent statin medication statements is set to ""2 years"" but the CPG specifies ""2 years"".; The lookback period for the most recent statin medication requests is set to ""2 years"" but the CPG specifies ""2 years"".; The lookback period for the most recent statin medication dispensed is set to ""2 years"" but the CPG specifies ""2 years"".; The lookback period for the most recent high-density lipoprotein laboratory test is set to ""130 mg/dL"" but the CPG specifies ""40 mg/dL"".; The lookback period for the most recent myocardial infarction is set to ""Myocardial Infarction"" but the CPG specifies ""Acute Myocardial Infarction"".; The lookback period for the most recent coronary artery bypass graft surgery is set to ""CABG Surgeries"" but the CPG specifies ""Coronary Artery Bypass Graft"".; The lookback period for the most recent percutaneous coronary intervention is set to ""Perc",,llm,USPSTF_Statin_Use_CPG.md,True,True,False,True,,
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen-2.5-1.5b,True,7.886804819107056,,,llm,Condition_Medication_Count_CPG.md,True,True,True,True,,
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen-2.5-1.5b,False,2.9677183628082275,; --; **Age Threshold**: `>= 15`; **Time Interval**: `1 year`; **Age Threshold**: `>= 16`; **Time Interval**: `1 year`; ; ,,llm,Chlamydia_Screening_CPG.md,True,True,False,True,,
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen-2.5-1.5b,True,6.862585544586182,,,llm,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True,,
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,True,1.433424949645996,,,llm,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.8406472206115723,; ; ,,llm,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,,
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,0.8383278846740723,; ; ,,llm,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,,
+Depression_screening.json,DepressionScreening_CDS,qwen-2.5-1.5b,True,0.39074063301086426,,,llm,Depression_screening_CPG.md,True,True,True,True,,
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,True,9.980284452438354,,,llm,Osteoporosis-Screening_CPG.md,True,True,True,True,,
+Hypertension-Screening.json,Hypertension-Screening,qwen-2.5-1.5b,True,0.3822178840637207,,,llm,Hypertension-Screening_CPG.md,True,True,False,False,,
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen-2.5-1.5b,False,0.839951753616333,; ; ,,llm,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False,,
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen-2.5-1.5b,False,0.8394691944122314,; ; ,,llm,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False,,
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,True,1.8549995422363281,,,llm,Cervical-Cancer-Screening_CPG.md,True,True,True,True,,
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,False,0.8614189624786377,; ,,llm,Lung-Cancer-Screening_CPG.md,True,True,False,True,,
+AAA-Screening.json,AAA_Screening_CDS,qwen-2.5-1.5b,False,1.758864402770996,"; The age thresholds do not match exactly as per the CPG requirements. Specifically, the age range should be inclusive rather than exclusive. Additionally, the lookback period for the AAA Screening Ultrasound should be considered when determining eligibility for screening.; ",,llm,AAA-Screening_CPG.md,True,True,False,True,,
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,True,1.434417963027954,,,llm,Alcohol-Misuse-Screening_CPG.md,True,True,True,True,,
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,False,0.26262474060058594,,,llm,Falls-Prevention-Screening_CPG.md,True,True,False,True,,
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,False,0.85794997215271,; ,,llm,Tobacco-Use-Screening_CPG.md,True,True,False,True,,
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen-2.5-1.5b,False,2.292203426361084,; ,,llm,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False,,
+Anxiety-Screening.json,Anxiety_Screening_CDS,qwen-2.5-1.5b,True,1.3978164196014404,,,llm,Anxiety-Screening_CPG.md,True,True,False,False,,
+HIV-Screening.json,HIV_Screening_CDS,qwen-2.5-1.5b,False,0.8602344989776611,; ,,llm,HIV-Screening_CPG.md,True,True,True,False,,
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen-2.5-1.5b,True,0.3847174644470215,,,llm,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False,,
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,False,2.2333827018737793,; ; The age threshold for inclusion criteria should be exactly 21 to 65 years inclusive.; The lookback period for the Pap test should be exactly 3 years.; ; The age threshold for inclusion criteria should be exactly 21 to 65 years inclusive.; The lookback period for the Pap test should be exactly 3 years.,,llm,Cervical-Cancer-Screening_CPG.md,True,True,True,False,,
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,qwen-2.5-1.5b,True,0.3896796703338623,,,llm,Depression_screening_CPG.md,True,True,False,False,,
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,False,9.94851541519165,; **Age Thresholds:** The age threshold is set to 75 years.; **Time Intervals (Lookback Periods):** The lookback period is set to 1 year.; **Value Set:** The value set used for falls risk assessment is `2.16.840.1.113883.3.464.1003.118.12.1028`.; **Age Thresholds:** The age threshold is set to 65 years.; **Time Intervals (Lookback Periods):** There is no mention of a lookback period in the CPG.; **Value Set:** The value set used for falls risk assessment is `2.16.840.1.113883.3.464.1003.118.12.1028`.; **ELM:** 75 years; **CPG:** 65 years; **ERRORS:** Mismatch found.; **ELM:** 1 year; **CPG:** Not mentioned; **ERRORS:** Mismatch found.; **ELM:** `2.16.840.1.113883.3.464.1003.118.12.1028`; **CPG:** `2.16.840.1.113883.3.464.1003.118.12.1028`; **ERRORS:** Mismatch found.,,llm,Falls-Prevention-Screening_CPG.md,True,True,True,False,,
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,True,1.7716898918151855,,,llm,Alcohol-Misuse-Screening_CPG.md,True,True,False,False,,
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,True,9.949831247329712,,,llm,Osteoporosis-Screening_CPG.md,True,True,False,False,,
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,qwen-2.5-1.5b,True,1.2174768447875977,,,llm,AAA-Screening_CPG.md,True,True,False,False,,
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,False,2.650890827178955,"; The age threshold for the inclusion criteria should be exactly 40 years old, but it appears to be set as an inclusive range from 40 to infinity due to the use of "">="" instead of ""<"". This discrepancy could lead to patients being incorrectly classified based on their age. Additionally, the lookback period for the mammogram check is specified as 1 year, which seems correct, but further verification would be necessary to ensure consistency across other relevant value sets and logic components. ```",,llm,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,False,,
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,False,1.3543858528137207,"; [Mismatch found at age threshold; ELM uses 18 years, while CPG specifies 18 years or older]",,llm,Tobacco-Use-Screening_CPG.md,True,True,True,False,,
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,False,2.3725028038024902,"; The age thresholds do not match exactly as specified in the CPG. The ELM implementation uses an inclusive range (`>= 50 years`), while the CPG specifies an exclusive range (`> 50 years`). Additionally, the lookback period for the LDCT scan does not match exactly; the ELM implementation uses a lookback period of `1 years`, whereas the CPG requires a lookback period of `1 year`.",,llm,Lung-Cancer-Screening_CPG.md,True,True,True,False,,

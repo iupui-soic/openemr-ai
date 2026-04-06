@@ -1,0 +1,330 @@
+{
+  "library": {
+    "identifier": {
+      "id": "AAA_Screening_CDS",
+      "version": "1"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [
+        {
+          "localIdentifier": "System",
+          "uri": "urn:hl7-org:elm-types:r1"
+        },
+        {
+          "localIdentifier": "FHIR",
+          "uri": "http://hl7.org/fhir",
+          "version": "4.0.1"
+        }
+      ]
+    },
+    "valueSets": {
+      "def": [
+        {
+          "name": "Tobacco User",
+          "id": "2.16.840.1.113883.3.526.3.1170",
+          "accessLevel": "Public"
+        },
+        {
+          "name": "AAA Screening Ultrasound",
+          "id": "2.16.840.1.113762.1.4.1047.93",
+          "accessLevel": "Public"
+        }
+      ]
+    },
+    "statements": {
+      "def": [
+        {
+          "name": "Patient",
+          "context": "Patient",
+          "expression": {
+            "type": "SingletonFrom",
+            "operand": {
+              "dataType": "{http://hl7.org/fhir}Patient",
+              "templateId": "http://hl7.org/fhir/StructureDefinition/Patient",
+              "type": "Retrieve"
+            }
+          }
+        },
+        {
+          "name": "In Demographic",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "And",
+            "operand": [
+              {
+                "type": "GreaterOrEqual",
+                "operand": [
+                  {
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "operand": {
+                      "path": "birthDate",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "55",
+                    "type": "Literal"
+                  }
+                ]
+              },
+              {
+                "type": "LessOrEqual",
+                "operand": [
+                  {
+                    "precision": "Year",
+                    "type": "CalculateAge",
+                    "operand": {
+                      "path": "birthDate",
+                      "type": "Property",
+                      "source": {
+                        "name": "Patient",
+                        "type": "ExpressionRef"
+                      }
+                    }
+                  },
+                  {
+                    "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                    "value": "75",
+                    "type": "Literal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Is Male",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "Equal",
+            "operand": [
+              {
+                "path": "gender.value",
+                "type": "Property",
+                "source": {
+                  "name": "Patient",
+                  "type": "ExpressionRef"
+                }
+              },
+              {
+                "valueType": "{urn:hl7-org:elm-types:r1}String",
+                "value": "male",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Has Smoking History",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "Exists",
+            "operand": {
+              "type": "Query",
+              "source": [
+                {
+                  "alias": "C",
+                  "expression": {
+                    "dataType": "{http://hl7.org/fhir}Condition",
+                    "templateId": "http://hl7.org/fhir/StructureDefinition/Condition",
+                    "codeProperty": "code",
+                    "type": "Retrieve",
+                    "codes": {
+                      "name": "Tobacco User",
+                      "type": "ValueSetRef"
+                    }
+                  }
+                }
+              ],
+              "relationship": [],
+              "where": {
+                "type": "In",
+                "operand": [
+                  {
+                    "path": "clinicalStatus.coding[0].code",
+                    "scope": "C",
+                    "type": "Property"
+                  },
+                  {
+                    "type": "List",
+                    "element": [
+                      {
+                        "valueType": "{urn:hl7-org:elm-types:r1}String",
+                        "value": "active",
+                        "type": "Literal"
+                      },
+                      {
+                        "valueType": "{urn:hl7-org:elm-types:r1}String",
+                        "value": "resolved",
+                        "type": "Literal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "Has Prior AAA Screening",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "Exists",
+            "operand": {
+              "type": "Query",
+              "source": [
+                {
+                  "alias": "S",
+                  "expression": {
+                    "dataType": "{http://hl7.org/fhir}Observation",
+                    "templateId": "http://hl7.org/fhir/StructureDefinition/Observation",
+                    "codeProperty": "code",
+                    "type": "Retrieve",
+                    "codes": {
+                      "name": "AAA Screening Ultrasound",
+                      "type": "ValueSetRef"
+                    }
+                  }
+                }
+              ],
+              "relationship": [],
+              "where": {
+                "type": "Not",
+                "operand": {
+                  "type": "IsNull",
+                  "operand": {
+                    "path": "value",
+                    "scope": "S",
+                    "type": "Property"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Needs AAA Screening",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "And",
+            "operand": [
+              {
+                "type": "And",
+                "operand": [
+                  {
+                    "type": "And",
+                    "operand": [
+                      {
+                        "name": "In Demographic",
+                        "type": "ExpressionRef"
+                      },
+                      {
+                        "name": "Is Male",
+                        "type": "ExpressionRef"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Has Smoking History",
+                    "type": "ExpressionRef"
+                  }
+                ]
+              },
+              {
+                "type": "Not",
+                "operand": {
+                  "name": "Has Prior AAA Screening",
+                  "type": "ExpressionRef"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "InPopulation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "name": "Needs AAA Screening",
+            "type": "ExpressionRef"
+          }
+        },
+        {
+          "name": "Recommendation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "If",
+            "condition": {
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "Perform one-time abdominal ultrasound for abdominal aortic aneurysm screening",
+              "type": "Literal"
+            },
+            "else": {
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "name": "Rationale",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "If",
+            "condition": {
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "USPSTF recommends one-time AAA screening with ultrasonography in men aged 65-75 years who have ever smoked.",
+              "type": "Literal"
+            },
+            "else": {
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "name": "Indicator",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "type": "If",
+            "condition": {
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "warning",
+              "type": "Literal"
+            },
+            "else": {
+              "type": "Null"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

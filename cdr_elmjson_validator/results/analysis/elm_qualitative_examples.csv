@@ -1,0 +1,5 @@
+type,model,file,expected,predicted,errors
+TP,gpt-oss-120b,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,Valid,Valid,(none)
+FN,gpt-oss-120b,Osteoporosis screening.json,Valid,Invalid,"[The CPG requires that a DEXA scan performed within the past 2 years must have a result present. The ELM summary only checks “No DEXA scan performed in the past 2 years” and does not specify that a result must be present, so the implementation may incorrectly consider a prior DEXA without a document"
+TN,gpt-oss-120b,Hypertension-Screening.json,Invalid,Invalid,"; Age threshold mismatch: CPG requires minimum age ≥ 18 years, but the ELM implementation uses an age threshold of ≥ 25 years.; Look‑back period mismatch: CPG specifies that a blood‑pressure screening encounter within the past 12 months (1 year) negates the need for screening, whereas the ELM implem"
+FP,gpt-oss-120b,Breast-Cancer-WrongOperator.json,Invalid,Valid,(none)
