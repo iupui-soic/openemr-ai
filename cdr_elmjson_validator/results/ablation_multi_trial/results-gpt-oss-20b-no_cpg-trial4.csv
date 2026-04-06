@@ -1,0 +1,32 @@
+file,library,model,trial,ablation,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,gpt-oss-20b,4,no_cpg,True,0.7081954479217529,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,gpt-oss-20b,4,no_cpg,True,0.6365251541137695,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,gpt-oss-20b,4,no_cpg,True,0.5865390300750732,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,gpt-oss-20b,4,no_cpg,True,0.26259636878967285,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,4,no_cpg,True,0.21625471115112305,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,gpt-oss-20b,4,no_cpg,True,0.6190760135650635,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,gpt-oss-20b,4,no_cpg,False,0.3025984764099121,"Assessment interval mismatch – the ELM specifies a 1‑month lookback period, whereas clinical guidelines for prostate cancer screening typically recommend a 1‑year (or longer) interval between assessments.",,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True
+Depression_screening.json,DepressionScreening_CDS,gpt-oss-20b,4,no_cpg,True,0.36569905281066895,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.5349936485290527,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,gpt-oss-20b,4,no_cpg,True,0.3381187915802002,,,groq,Hypertension-Screening_CPG.md,True,True,False,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,gpt-oss-20b,4,no_cpg,False,0.5705404281616211,[Time Intervals (Lookback Periods) contains a cholesterol value (190 mg/dL) instead of a time interval.],,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,gpt-oss-20b,4,no_cpg,True,0.6118080615997314,,,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.2839934825897217,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.27182435989379883,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.4489870071411133,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.18207621574401855,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.24938464164733887,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.37201428413391113,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,gpt-oss-20b,4,no_cpg,False,0.5771996974945068,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.3147411346435547,,,groq,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.6173954010009766,,,groq,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,gpt-oss-20b,4,no_cpg,False,0.4837379455566406,"The entry labeled as a time interval “35 kg/m² (in: Is Obese)” is not a time period but a BMI threshold. It should be classified as a BMI value threshold, not a time interval. All other values (age limits, 1‑year lookback for glucose testing, and the two value set identifiers) are clinically reasonable.",,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.325639009475708,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,False,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,gpt-oss-20b,4,no_cpg,True,0.5449795722961426,,,groq,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.3112335205078125,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,4,no_cpg,False,0.4464111328125,"The age threshold in the ELM (Age ≥ 25 years) is higher than the typical clinical guideline recommendation for alcohol misuse screening, which generally applies to adults aged 18 years and older. The 1‑year lookback interval and the Alcohol Use Screening value set (2.16.840.1.113883.3.600.1542) are clinically reasonable.",,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.3443257808685303,,,groq,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.43422555923461914,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,4,no_cpg,True,0.2605109214782715,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.278566837310791,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,4,no_cpg,True,0.7361483573913574,,,groq,Lung-Cancer-Screening_CPG.md,True,True,False,False
