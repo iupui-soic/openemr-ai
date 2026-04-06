@@ -36,34 +36,36 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 ### Latest Results (31 Test Cases, 15 Valid / 16 Invalid)
 
-| Model | Params | Accuracy | 95% CI | Sens. | Spec. | F1 |
-|-------|--------|----------|--------|-------|-------|-----|
-| **GPT-OSS 20B** | 20B (MoE) | **93.5%** | [.79, .98] | 1.00 | 0.88 | 0.94 |
-| **Qwen3 32B** | 32B | 90.3% | [.75, .97] | 0.93 | 0.88 | 0.90 |
-| **GPT-OSS 120B** | 120B (MoE) | 87.1% | [.71, .95] | 0.87 | 0.88 | 0.87 |
-| **Llama 3.3 70B** | 70B | 87.1% | [.71, .95] | 0.93 | 0.81 | 0.88 |
-| Qwen-2.5-3B | 3B | 61.3% | [.44, .76] | 1.00 | 0.25 | 0.71 |
-| Llama-3.2-1B | 1B | 58.1% | [.41, .74] | 0.93 | 0.25 | 0.68 |
-| Phi-3 Mini | 3.8B | 54.8% | [.38, .71] | 0.93 | 0.19 | 0.67 |
-| Qwen-2.5-1.5B | 1.5B | 51.6% | [.35, .68] | 0.47 | 0.56 | 0.48 |
-| MedGemma 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
-| MedGemma 1.5 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
-| Gemma 3 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
-| Llama-3.2-3B | 3B | 45.2% | [.29, .62] | 0.87 | 0.06 | 0.60 |
+Frontier model results are means over 5 independent trials at temperature 0.1.
+
+| Model | Params | Accuracy | ±SD | Sens. | Spec. | F1 |
+|-------|--------|----------|-----|-------|-------|-----|
+| **Llama 3.3 70B** | 70B | **89.0%** | 1.6 | 0.92 | 0.86 | 0.89 |
+| **GPT-OSS 20B** | 20B (MoE) | 88.4% | 1.6 | 0.93 | 0.84 | 0.89 |
+| **GPT-OSS 120B** | 120B (MoE) | 88.4% | 1.6 | 0.89 | 0.88 | 0.88 |
+| **Qwen3 32B** | 32B | 85.8% | 1.6 | 0.99 | 0.74 | 0.87 |
+| Qwen-2.5-3B | 3B | 61.3% | --- | 1.00 | 0.25 | 0.71 |
+| Llama-3.2-1B | 1B | 58.1% | --- | 0.93 | 0.25 | 0.68 |
+| Phi-3 Mini | 3.8B | 54.8% | --- | 0.93 | 0.19 | 0.67 |
+| Qwen-2.5-1.5B | 1.5B | 51.6% | --- | 0.47 | 0.56 | 0.48 |
+| MedGemma 4B | 4B | 48.4% | --- | 1.00 | 0.00 | 0.65 |
+| MedGemma 1.5 4B | 4B | 48.4% | --- | 1.00 | 0.00 | 0.65 |
+| Gemma 3 4B | 4B | 48.4% | --- | 1.00 | 0.00 | 0.65 |
+| Llama-3.2-3B | 3B | 45.2% | --- | 0.87 | 0.06 | 0.60 |
 
 Base rate: 48.4%. Fisher's exact test frontier vs small: p<0.001, OR=8.54.
 
-### Ablation Study (4 Frontier Models x 4 Conditions)
+### Ablation Study (4 Frontier Models × 4 Conditions, mean ± SD over 5 trials)
 
 | Condition | GPT-OSS-20B | GPT-OSS-120B | Qwen3-32B | Llama 70B |
 |-----------|-------------|--------------|-----------|-----------|
 | | *3.6B active* | *5.1B active* | *32B* | *70B* |
-| Full (simplified+CPG) | 90.3% | 87.1% | 83.9% | 90.3% |
-| No CPG | 61.3% (-29) | 71.0% (-16) | 45.2% (-39) | 58.1% (-32) |
-| No simplify (raw+CPG) | 48.4% (-42) | 77.4% (-10) | 83.9% (0) | **96.8%** (+7) |
-| Neither | 71.0% (-19) | 67.7% (-19) | 54.8% (-29) | 58.1% (-32) |
+| Full (simplified+CPG) | 88.4±1.6 | 89.7±1.3 | 87.1±4.6 | 89.0±1.6 |
+| No CPG | 62.6 (Δ-26) | 67.7 (Δ-22) | 51.0 (Δ-36) | 57.4 (Δ-32) |
+| No simplify (raw+CPG) | 57.4 (Δ-31) | 81.9 (Δ-8) | 83.2 (Δ-4) | **96.8±0.0** (Δ+8) |
+| Neither | 67.7 (Δ-21) | 72.9 (Δ-17) | 57.4 (Δ-30) | 58.1±0.0 (Δ-31) |
 
-### Prompt Engineering (3 Models x 5 Strategies)
+### Prompt Engineering (3 Models × 5 Strategies, single runs)
 
 | Strategy | GPT-OSS-20B | GPT-OSS-120B | Llama 70B |
 |----------|-------------|--------------|-----------|
@@ -73,13 +75,15 @@ Base rate: 48.4%. Fisher's exact test frontier vs small: p<0.001, OR=8.54.
 | Minimal | 48.4% | 48.4% | 87.1% |
 | Structured | 54.8% | 48.4% | 48.4% |
 
+Note: Multi-trial analysis showed that few-shot vs standard converge to identical mean accuracy (88.4% ± 1.6%) for GPT-OSS-20B, indicating that single-run differences reflect stochastic variance.
+
 **Key Findings:**
-- **GPT-OSS 20B** achieved the highest accuracy (93.5%) with perfect sensitivity and F1=0.94
-- All frontier models (>=20B) achieved 87-94% accuracy; all sub-4B models fell below the 48.4% base rate
-- **MedGemma** variants performed identically to general-purpose Gemma 3 4B (all 48.4%), confirming that medical fine-tuning does not help with structured comparison tasks
-- **ELM simplification benefit scales inversely with active parameters**: essential for MoE models (3.6-5.1B active), unnecessary for Llama 70B which achieved 96.8% with raw JSON
-- **CPG reference is universally essential**: removing it reduced accuracy by 16-39 pp across all models
-- **Few-shot prompting** outperformed standard for MoE models; **chain-of-thought hurts** MoE models by introducing over-analysis
+- All frontier models (≥20B) achieved **85.8–89.0% mean accuracy** across 5 trials (±1.6% SD); all sub-4B models fell below the 48.4% base rate
+- **ELM Simplifier as compute equalizer**: Without simplification, only Llama 70B (96.8%) achieves high accuracy. With simplification, GPT-OSS-20B (3.6B active params) matches the 70B model's performance — a 20× compute reduction
+- **Llama 70B raw JSON = 96.8%** is fully deterministic (0% variance across 5 trials), confirming that sufficiently large dense models can bypass preprocessing
+- **MedGemma** variants performed identically to general-purpose Gemma 3 4B (all 48.4%), confirming medical fine-tuning does not help with structured comparison tasks
+- **CPG reference is universally essential**: removing it reduced accuracy by 22–36 pp across all models
+- **Chain-of-thought hurts** MoE models by introducing over-analysis (61.3% vs 88.4% for GPT-OSS-20B)
 
 Detailed analysis available in the [Jupyter notebooks](cdr_elmjson_validator/notebooks/).
 

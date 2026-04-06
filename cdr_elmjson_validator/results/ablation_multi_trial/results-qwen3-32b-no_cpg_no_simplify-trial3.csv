@@ -1,0 +1,32 @@
+file,library,model,trial,ablation,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen3-32b,3,no_cpg_no_simplify,True,1.3751859664916992,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen3-32b,3,no_cpg_no_simplify,True,1.4274652004241943,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen3-32b,3,no_cpg_no_simplify,True,1.5252318382263184,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen3-32b,3,no_cpg_no_simplify,True,1.5676453113555908,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen3-32b,3,no_cpg_no_simplify,True,1.5348501205444336,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen3-32b,3,no_cpg_no_simplify,True,1.4972553253173828,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen3-32b,3,no_cpg_no_simplify,True,1.7487061023712158,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.1633729934692383,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.170290470123291,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,qwen3-32b,3,no_cpg_no_simplify,True,1.4036893844604492,,,groq,Hypertension-Screening_CPG.md,True,True,False,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen3-32b,3,no_cpg_no_simplify,True,1.5101184844970703,,,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen3-32b,3,no_cpg_no_simplify,True,1.4302880764007568,,,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,0.9979932308197021,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.2675096988677979,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.0708656311035156,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.3637101650238037,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.1765961647033691,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.3451337814331055,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,False,1.2380006313323975,"[Minimum Age is set to 60-75 years (should start at 45-50 years for average-risk colorectal screening), Recent Screening interval is 2 years (standard intervals are 5-10 years depending on modality)]",,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.301548719406128,,,groq,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.4092955589294434,,,groq,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.4104492664337158,,,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,False,1.1106290817260742,"[""In Demographic"" checks for age >=30 instead of the USPSTF-recommended 21 years. The rationale mentions 21-65 years, but the logic only applies to 30-65, creating a discrepancy. ""Has Recent Pap Smear"" correctly uses 3-year interval but demographic criteria are incorrect.]",,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.6021971702575684,,,groq,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.3564786911010742,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,False,1.3597724437713623,"[""In Demographic"" condition checks for age >=25, but USPSTF guidelines recommend screening for unhealthy alcohol use in adults 1",,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.7695021629333496,,,groq,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.3121228218078613,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,qwen3-32b,3,no_cpg_no_simplify,True,1.3798277378082275,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.3015928268432617,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,qwen3-32b,3,no_cpg_no_simplify,True,1.2762033939361572,,,groq,Lung-Cancer-Screening_CPG.md,True,True,False,False

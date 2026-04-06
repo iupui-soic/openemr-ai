@@ -1,0 +1,32 @@
+file,library,model,trial,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,gpt-oss-20b,1,True,0.7186336517333984,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,gpt-oss-20b,1,True,0.13304400444030762,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,gpt-oss-20b,1,True,0.34638285636901855,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,gpt-oss-20b,1,True,0.15491652488708496,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,1,True,0.14099669456481934,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,gpt-oss-20b,1,True,0.14406490325927734,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,gpt-oss-20b,1,True,0.17734766006469727,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,gpt-oss-20b,1,True,0.3125293254852295,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,gpt-oss-20b,1,True,0.1913890838623047,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,gpt-oss-20b,1,False,0.37728190422058105,"Age threshold mismatch (ELM: 25, CPG: 18); Time interval mismatch (ELM: 6 months, CPG: 12 months)",,groq,Hypertension-Screening_CPG.md,True,True,True,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,gpt-oss-20b,1,True,0.5876045227050781,,,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,gpt-oss-20b,1,False,0.44029664993286133,"Time interval mismatch – the ELM specifies a lookback period of “9 g%” for the HbA1c laboratory test, whereas the CPG does not define any lookback period.",,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,1,True,0.17493152618408203,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,1,True,0.15001845359802246,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,gpt-oss-20b,1,True,0.25308823585510254,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,1,True,0.14864754676818848,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,1,True,0.1550588607788086,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,1,True,0.1795940399169922,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,gpt-oss-20b,1,True,0.6029391288757324,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,gpt-oss-20b,1,False,0.514592170715332,"Time interval mismatch (ELM: 6 months, CPG: 1 year)",,groq,Anxiety-Screening_CPG.md,True,True,True,False
+HIV-Screening.json,HIV_Screening_CDS,gpt-oss-20b,1,False,0.33478689193725586,"Age threshold mismatch (ELM: Age >= 30 years, CPG: Age >= 15 and <= 65 years). The ELM implementation does not enforce the upper age limit of 65 years specified in the CPG.",,groq,HIV-Screening_CPG.md,True,True,True,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,gpt-oss-20b,1,False,0.3929717540740967,"BMI threshold mismatch (ELM: 35 kg/m², CPG: ≥ 25 kg/m²); lookback period mismatch for glucose/HbA1c test (ELM: 1 year, CPG: 3 years)",,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,1,False,0.38296937942504883,"Age threshold mismatch (ELM: 30 years, CPG: 21 years)",,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,gpt-oss-20b,1,False,0.4540524482727051,"Time interval mismatch (ELM: 3 months, CPG: 1 year)",,groq,Depression_screening_CPG.md,True,True,True,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,1,False,0.2535707950592041,"Age threshold mismatch (ELM: 75 years, CPG: 65 years)",,groq,Falls-Prevention-Screening_CPG.md,True,True,True,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,1,False,0.22770452499389648,"Age threshold mismatch (ELM: 25, CPG: 18)",,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,gpt-oss-20b,1,False,0.42075109481811523,"Time interval mismatch (ELM: 6 months, CPG: 2 years)",,groq,Osteoporosis-Screening_CPG.md,True,True,True,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,gpt-oss-20b,1,False,0.21858477592468262,"Age threshold mismatch (ELM: 55, CPG: 65)",,groq,AAA-Screening_CPG.md,True,True,True,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,1,True,0.14923691749572754,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,1,True,0.15314531326293945,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,1,False,0.41321444511413574,"; Age threshold mismatch: ELM specifies **Age ≥ 50 years** only, whereas the CPG requires **Age ≥ 50 and ≤ 80 years**.; Smoking history criteria mismatch: ELM includes only the “Tobacco User” value set, but the CPG requires a **≥ 20 pack‑year history** and that the individual **quit within the past 15 years**.; Pack‑year and quit‑period requirements are missing in the ELM implementation.",,groq,Lung-Cancer-Screening_CPG.md,True,True,True,False

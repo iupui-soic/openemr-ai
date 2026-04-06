@@ -1,0 +1,32 @@
+file,library,model,trial,ablation,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,gpt-oss-20b,5,no_simplify,False,0.9189097881317139,"The ELM implementation provided does not contain explicit numeric values for the age range (40–75 years) or the cardiovascular risk thresholds (10% and 7.5%–<10%). Without these values present in the ELM, it is impossible to confirm that they match the CPG requirements exactly.",,groq,USPSTF_Statin_Use_CPG.md,True,True,False,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,gpt-oss-20b,5,no_simplify,True,0.7350366115570068,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,gpt-oss-20b,5,no_simplify,True,1.1460938453674316,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,gpt-oss-20b,5,no_simplify,True,0.7358829975128174,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,5,no_simplify,True,0.589730978012085,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,gpt-oss-20b,5,no_simplify,True,1.3402233123779297,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,gpt-oss-20b,5,no_simplify,True,0.25061821937561035,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,gpt-oss-20b,5,no_simplify,True,1.2284274101257324,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.8294346332550049,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,gpt-oss-20b,5,no_simplify,True,0.8435096740722656,,,groq,Hypertension-Screening_CPG.md,True,True,False,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,gpt-oss-20b,5,no_simplify,True,0.6671559810638428,,,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,gpt-oss-20b,5,no_simplify,False,0.6301779747009277,[HbA1c threshold mismatch: ELM uses 9 g% instead of the required 6.5 %],,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.8598382472991943,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,5,no_simplify,False,0.8133821487426758,"The ELM implementation does not enforce the 20 pack‑year smoking history requirement, the 15‑year quit window",,groq,Lung-Cancer-Screening_CPG.md,True,True,False,True
+AAA-Screening.json,AAA_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.6612639427185059,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.7248671054840088,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.7359538078308105,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.5989990234375,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.6851410865783691,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,gpt-oss-20b,5,no_simplify,False,0.5087294578552246,"The ELM implementation checks for a recent anxiety screening within the past **6 months**, whereas the CPG requires that no screening has been performed within the past **1 year**.",,groq,Anxiety-Screening_CPG.md,True,True,True,False
+HIV-Screening.json,HIV_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.7241544723510742,,,groq,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.7178502082824707,,,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,gpt-oss-20b,5,no_simplify,False,0.6363649368286133,"The ELM implementation uses an age lower bound of 30 years in the “In Demographic” expression, whereas the CPG requires a lower bound of 21 years.",,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,gpt-oss-20b,5,no_simplify,True,0.6206367015838623,,,groq,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.844097375869751,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.6002311706542969,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,gpt-oss-20b,5,no_simplify,False,0.7004299163818359,"DEXA scan interval mismatch – the ELM implementation checks for a recent DEXA scan within the past 6 months, whereas the CPG requires no DEXA scan performed within the past 2 years.",,groq,Osteoporosis-Screening_CPG.md,True,True,True,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.7783362865447998,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,gpt-oss-20b,5,no_simplify,True,0.6563005447387695,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,gpt-oss-20b,5,no_simplify,True,0.5747547149658203,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,gpt-oss-20b,5,no_simplify,False,0.6471364498138428,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,False

@@ -1,0 +1,2 @@
+model,n_trials,temperature,mean_accuracy,std_accuracy,min_accuracy,max_accuracy,per_trial_correct,per_trial_accuracy
+gpt-oss-20b,5,0.1,0.8838709677419354,0.0158031596308592,0.8709677419354839,0.9032258064516129,"[27, 28, 27, 27, 28]","[0.871, 0.9032, 0.871, 0.871, 0.9032]"
