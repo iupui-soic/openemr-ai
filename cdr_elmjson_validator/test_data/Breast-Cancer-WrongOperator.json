@@ -1,0 +1,692 @@
+{
+  "library": {
+    "annotation": [
+      {
+        "translatorVersion": "3.3.2",
+        "translatorOptions": "EnableDateRangeOptimization,EnableResultTypes,DisableListDemotion,DisableListPromotion,DisableMethodInvocation",
+        "signatureLevel": "None",
+        "type": "CqlToElmInfo"
+      }
+    ],
+    "identifier": {
+      "id": "Breast-Cancer-Screening-OpenEMR",
+      "version": "1.0.0"
+    },
+    "schemaIdentifier": {
+      "id": "urn:hl7-org:elm",
+      "version": "r1"
+    },
+    "usings": {
+      "def": [
+        {
+          "localIdentifier": "System",
+          "uri": "urn:hl7-org:elm-types:r1"
+        },
+        {
+          "localIdentifier": "FHIR",
+          "uri": "http://hl7.org/fhir",
+          "version": "4.0.0"
+        }
+      ]
+    },
+    "includes": {
+      "def": [
+        {
+          "localIdentifier": "FHIRHelpers",
+          "path": "FHIRHelpers",
+          "version": "4.0.0"
+        }
+      ]
+    },
+    "valueSets": {
+      "def": [
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+          "name": "Mammogram VS",
+          "id": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1182.380",
+          "accessLevel": "Public"
+        }
+      ]
+    },
+    "contexts": {
+      "def": [
+        {
+          "name": "Patient"
+        }
+      ]
+    },
+    "statements": {
+      "def": [
+        {
+          "name": "Patient",
+          "context": "Patient",
+          "expression": {
+            "type": "SingletonFrom",
+            "operand": {
+              "dataType": "{http://hl7.org/fhir}Patient",
+              "type": "Retrieve"
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Screening Age",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "GreaterOrEqual",
+            "operand": [
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                "precision": "Year",
+                "type": "CalculateAge",
+                "operand": {
+                  "path": "birthDate.value",
+                  "type": "Property",
+                  "source": {
+                    "name": "Patient",
+                    "type": "ExpressionRef"
+                  }
+                }
+              },
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Integer",
+                "valueType": "{urn:hl7-org:elm-types:r1}Integer",
+                "value": "40",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Gender",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "Equal",
+            "operand": [
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "resultTypeName": "{http://hl7.org/fhir}AdministrativeGender",
+                  "path": "gender",
+                  "type": "Property",
+                  "source": {
+                    "resultTypeName": "{http://hl7.org/fhir}Patient",
+                    "name": "Patient",
+                    "type": "ExpressionRef"
+                  }
+                }
+              },
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+                "valueType": "{urn:hl7-org:elm-types:r1}String",
+                "value": "female",
+                "type": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ProcedureLookBack",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "resultTypeSpecifier": {
+            "type": "ListTypeSpecifier",
+            "elementType": {
+              "name": "{http://hl7.org/fhir}Procedure",
+              "type": "NamedTypeSpecifier"
+            }
+          },
+          "expression": {
+            "type": "Query",
+            "resultTypeSpecifier": {
+              "type": "ListTypeSpecifier",
+              "elementType": {
+                "name": "{http://hl7.org/fhir}Procedure",
+                "type": "NamedTypeSpecifier"
+              }
+            },
+            "source": [
+              {
+                "alias": "P",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "expression": {
+                  "name": "ProcList",
+                  "type": "OperandRef",
+                  "resultTypeSpecifier": {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  }
+                }
+              }
+            ],
+            "let": [
+              {
+                "identifier": "LookBackInterval",
+                "resultTypeSpecifier": {
+                  "type": "IntervalTypeSpecifier",
+                  "pointType": {
+                    "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "expression": {
+                  "lowClosed": true,
+                  "highClosed": true,
+                  "type": "Interval",
+                  "resultTypeSpecifier": {
+                    "type": "IntervalTypeSpecifier",
+                    "pointType": {
+                      "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  "low": {
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "Subtract",
+                    "operand": [
+                      {
+                        "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type": "Now"
+                      },
+                      {
+                        "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                        "name": "LookBack",
+                        "type": "OperandRef"
+                      }
+                    ]
+                  },
+                  "high": {
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                    "type": "Now"
+                  }
+                }
+              }
+            ],
+            "relationship": [],
+            "where": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "Or",
+              "operand": [
+                {
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "In",
+                  "operand": [
+                    {
+                      "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                      "path": "value",
+                      "type": "Property",
+                      "source": {
+                        "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                        "strict": false,
+                        "type": "As",
+                        "operand": {
+                          "path": "performed",
+                          "scope": "P",
+                          "type": "Property",
+                          "resultTypeSpecifier": {
+                            "type": "ChoiceTypeSpecifier",
+                            "choice": [
+                              {
+                                "name": "{http://hl7.org/fhir}dateTime",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Period",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}string",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Age",
+                                "type": "NamedTypeSpecifier"
+                              },
+                              {
+                                "name": "{http://hl7.org/fhir}Range",
+                                "type": "NamedTypeSpecifier"
+                              }
+                            ]
+                          }
+                        },
+                        "asTypeSpecifier": {
+                          "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                          "name": "{http://hl7.org/fhir}dateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    },
+                    {
+                      "name": "LookBackInterval",
+                      "type": "QueryLetRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type": "Overlaps",
+                  "operand": [
+                    {
+                      "name": "PeriodToInterval",
+                      "type": "FunctionRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      },
+                      "operand": [
+                        {
+                          "resultTypeName": "{http://hl7.org/fhir}Period",
+                          "strict": false,
+                          "type": "As",
+                          "operand": {
+                            "path": "performed",
+                            "scope": "P",
+                            "type": "Property",
+                            "resultTypeSpecifier": {
+                              "type": "ChoiceTypeSpecifier",
+                              "choice": [
+                                {
+                                  "name": "{http://hl7.org/fhir}dateTime",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Period",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}string",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Age",
+                                  "type": "NamedTypeSpecifier"
+                                },
+                                {
+                                  "name": "{http://hl7.org/fhir}Range",
+                                  "type": "NamedTypeSpecifier"
+                                }
+                              ]
+                            }
+                          },
+                          "asTypeSpecifier": {
+                            "resultTypeName": "{http://hl7.org/fhir}Period",
+                            "name": "{http://hl7.org/fhir}Period",
+                            "type": "NamedTypeSpecifier"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "LookBackInterval",
+                      "type": "QueryLetRef",
+                      "resultTypeSpecifier": {
+                        "type": "IntervalTypeSpecifier",
+                        "pointType": {
+                          "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                          "type": "NamedTypeSpecifier"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "operand": [
+            {
+              "name": "ProcList",
+              "operandTypeSpecifier": {
+                "type": "ListTypeSpecifier",
+                "resultTypeSpecifier": {
+                  "type": "ListTypeSpecifier",
+                  "elementType": {
+                    "name": "{http://hl7.org/fhir}Procedure",
+                    "type": "NamedTypeSpecifier"
+                  }
+                },
+                "elementType": {
+                  "resultTypeName": "{http://hl7.org/fhir}Procedure",
+                  "name": "{http://hl7.org/fhir}Procedure",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            },
+            {
+              "name": "LookBack",
+              "operandTypeSpecifier": {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                "name": "{urn:hl7-org:elm-types:r1}Quantity",
+                "type": "NamedTypeSpecifier"
+              }
+            }
+          ]
+        },
+        {
+          "name": "PeriodToInterval",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "type": "FunctionDef",
+          "resultTypeSpecifier": {
+            "type": "IntervalTypeSpecifier",
+            "pointType": {
+              "name": "{urn:hl7-org:elm-types:r1}DateTime",
+              "type": "NamedTypeSpecifier"
+            }
+          },
+          "expression": {
+            "type": "If",
+            "resultTypeSpecifier": {
+              "type": "IntervalTypeSpecifier",
+              "pointType": {
+                "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                "type": "NamedTypeSpecifier"
+              }
+            },
+            "condition": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "type": "IsNull",
+              "operand": {
+                "resultTypeName": "{http://hl7.org/fhir}Period",
+                "name": "period",
+                "type": "OperandRef"
+              }
+            },
+            "then": {
+              "type": "As",
+              "operand": {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              },
+              "asTypeSpecifier": {
+                "type": "IntervalTypeSpecifier",
+                "pointType": {
+                  "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type": "NamedTypeSpecifier"
+                }
+              }
+            },
+            "else": {
+              "lowClosed": true,
+              "highClosed": true,
+              "type": "Interval",
+              "resultTypeSpecifier": {
+                "type": "IntervalTypeSpecifier",
+                "pointType": {
+                  "name": "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              "low": {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                  "path": "start",
+                  "type": "Property",
+                  "source": {
+                    "resultTypeName": "{http://hl7.org/fhir}Period",
+                    "name": "period",
+                    "type": "OperandRef"
+                  }
+                }
+              },
+              "high": {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}DateTime",
+                "path": "value",
+                "type": "Property",
+                "source": {
+                  "resultTypeName": "{http://hl7.org/fhir}dateTime",
+                  "path": "end",
+                  "type": "Property",
+                  "source": {
+                    "resultTypeName": "{http://hl7.org/fhir}Period",
+                    "name": "period",
+                    "type": "OperandRef"
+                  }
+                }
+              }
+            }
+          },
+          "operand": [
+            {
+              "name": "period",
+              "operandTypeSpecifier": {
+                "resultTypeName": "{http://hl7.org/fhir}Period",
+                "name": "{http://hl7.org/fhir}Period",
+                "type": "NamedTypeSpecifier"
+              }
+            }
+          ]
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "Mammogram",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "IsNull",
+            "operand": {
+              "name": "ProcedureLookBack",
+              "type": "FunctionRef",
+              "resultTypeSpecifier": {
+                "type": "ListTypeSpecifier",
+                "elementType": {
+                  "name": "{http://hl7.org/fhir}Procedure",
+                  "type": "NamedTypeSpecifier"
+                }
+              },
+              "operand": [
+                {
+                  "dataType": "{http://hl7.org/fhir}Procedure",
+                  "codeProperty": "code",
+                  "codeComparator": "in",
+                  "type": "Retrieve",
+                  "resultTypeSpecifier": {
+                    "type": "ListTypeSpecifier",
+                    "elementType": {
+                      "name": "{http://hl7.org/fhir}Procedure",
+                      "type": "NamedTypeSpecifier"
+                    }
+                  },
+                  "codes": {
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}ValueSet",
+                    "name": "Mammogram VS",
+                    "preserve": true,
+                    "type": "ValueSetRef"
+                  }
+                },
+                {
+                  "resultTypeName": "{urn:hl7-org:elm-types:r1}Quantity",
+                  "value": 1,
+                  "unit": "year",
+                  "type": "Quantity"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "MeetsInclusionCriteria",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "type": "And",
+            "operand": [
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "type": "Or",
+                "operand": [
+                  {
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "name": "Screening Age",
+                    "type": "ExpressionRef"
+                  },
+                  {
+                    "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                    "name": "Gender",
+                    "type": "ExpressionRef"
+                  }
+                ]
+              },
+              {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+                "name": "Mammogram",
+                "type": "ExpressionRef"
+              }
+            ]
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+          "name": "InPopulation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+            "name": "MeetsInclusionCriteria",
+            "type": "ExpressionRef"
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+          "name": "Recommendation",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+            "type": "If",
+            "condition": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}String",
+              "valueType": "{urn:hl7-org:elm-types:r1}String",
+              "value": "Perform mammogram screening",
+              "type": "Literal"
+            },
+            "else": {
+              "asType": "{urn:hl7-org:elm-types:r1}String",
+              "type": "As",
+              "operand": {
+                "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+                "type": "Null"
+              }
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Rationale",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Links",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Suggestions",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "If",
+            "condition": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Boolean",
+              "name": "InPopulation",
+              "type": "ExpressionRef"
+            },
+            "then": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            },
+            "else": {
+              "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+              "type": "Null"
+            }
+          }
+        },
+        {
+          "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+          "name": "Errors",
+          "context": "Patient",
+          "accessLevel": "Public",
+          "expression": {
+            "resultTypeName": "{urn:hl7-org:elm-types:r1}Any",
+            "type": "Null"
+          }
+        }
+      ]
+    }
+  }
+}

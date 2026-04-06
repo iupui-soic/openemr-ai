@@ -104,11 +104,13 @@ def get_library_name(elm_json: dict, fallback: str = "Unknown") -> str:
     return identifier.get("id", fallback)
 
 
-def prepare_batch_items(elm_files: list, data_dir: Path, test_cases: dict) -> list:
+def prepare_batch_items(elm_files: list, data_dir: Path, test_cases: dict,
+                        ablation_mode: str = "full", prompt_mode: str = "standard") -> list:
     """
     Prepare batch items for Modal processing.
 
-    Returns list of dicts with: elm_json, library_name, cpg_content, file_name
+    Returns list of dicts with: elm_json, library_name, cpg_content, file_name,
+    ablation_mode, prompt_mode
     """
     items = []
     for elm_file in elm_files:
@@ -130,7 +132,9 @@ def prepare_batch_items(elm_files: list, data_dir: Path, test_cases: dict) -> li
             "library_name": library_name,
             "cpg_content": cpg_content,
             "file_name": file_name,
-            "cpg_file": cpg_file
+            "cpg_file": cpg_file,
+            "ablation_mode": ablation_mode,
+            "prompt_mode": prompt_mode,
         })
 
     return items
@@ -376,7 +380,9 @@ def validate_with_anthropic(items: list, model_id: str) -> list:
         cpg_content = item.get("cpg_content")
 
         # Build prompt (reuse the same format)
-        prompt = build_gemini_prompt(elm_json, library_name, cpg_content)
+        prompt = build_gemini_prompt(elm_json, library_name, cpg_content,
+                                     ablation_mode=item.get("ablation_mode", "full"),
+                                     prompt_mode=item.get("prompt_mode", "standard"))
 
         try:
             message = client.messages.create(
@@ -485,7 +491,9 @@ def validate_with_gemini(items: list, model_id: str) -> list:
         cpg_content = item.get("cpg_content")
 
         # Build prompt using the same format as modal_app.py
-        prompt = build_gemini_prompt(elm_json, library_name, cpg_content)
+        prompt = build_gemini_prompt(elm_json, library_name, cpg_content,
+                                     ablation_mode=item.get("ablation_mode", "full"),
+                                     prompt_mode=item.get("prompt_mode", "standard"))
 
         try:
             response = client.models.generate_content(
@@ -540,40 +548,75 @@ def validate_with_gemini(items: list, model_id: str) -> list:
     return results
 
 
-def build_gemini_prompt(elm_json: dict, library_name: str, cpg_content: str = None) -> str:
-    """Build validation prompt for Gemini with simplified ELM format."""
-    elm_simplified = simplify_elm_for_gemini(elm_json)
+def build_gemini_prompt(elm_json: dict, library_name: str, cpg_content: str = None,
+                        ablation_mode: str = "full", prompt_mode: str = "standard") -> str:
+    """Build validation prompt for Gemini/Anthropic with simplified ELM format.
 
-    if cpg_content:
+    Supports ablation_mode (full/no_cpg/no_simplify/no_cpg_no_simplify)
+    and prompt_mode (standard/cot/structured/minimal).
+    """
+    use_simplified = ablation_mode in ("full", "no_cpg")
+    use_cpg = ablation_mode in ("full", "no_simplify") and cpg_content
+
+    if use_simplified:
+        elm_text = simplify_elm_for_gemini(elm_json)
+        elm_label = "ELM Implementation Summary"
+    else:
+        elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)[:6000]
+        elm_label = "ELM JSON (truncated)"
+
+    # Response format by prompt_mode
+    if prompt_mode == "cot":
+        response_fmt = ("## Response Format:\n"
+                        "First, list each numeric value from the ELM and its corresponding CPG requirement.\n"
+                        "Then state whether each pair matches.\nFinally, give your verdict:\n\n"
+                        "REASONING: [your step-by-step comparison]\nVALID: YES or NO\n"
+                        "ERRORS: None, or list specific mismatches")
+    elif prompt_mode == "structured":
+        response_fmt = ("## Response Format:\nFor each category below, check the ELM values against the CPG:\n\n"
+                        "1. AGE THRESHOLDS: [list each, state match/mismatch]\n"
+                        "2. TIME INTERVALS: [list each, state match/mismatch]\n"
+                        "3. VALUE SETS: [list each, state match/mismatch]\n\n"
+                        "Then provide your verdict:\nVALID: YES or NO\nERRORS: None, or list specific mismatches")
+    elif prompt_mode == "minimal":
+        response_fmt = "Respond with:\nVALID: YES or NO\nERRORS: None, or list issues"
+    else:
+        response_fmt = ("## Response Format (use EXACTLY this format):\nVALID: YES\nERRORS: None\n\n"
+                        "OR if there are mismatches:\nVALID: NO\n"
+                        "ERRORS: [describe specific value mismatches between ELM and CPG]")
+
+    if use_cpg:
+        task_text = ("Compare the ELM implementation against the CPG requirements.\n"
+                     "Check that all numeric values (ages, time intervals) match EXACTLY.")
+        if prompt_mode == "cot":
+            task_text += ("\nThink step by step: list each numeric value, find its "
+                          "CPG counterpart, and check if they match.")
         prompt = f"""You are validating a clinical decision support (CDS) implementation.
 
 ## Clinical Practice Guideline (CPG) Requirements:
 {cpg_content}
 
-## ELM Implementation Summary:
-{elm_simplified}
+## {elm_label}:
+{elm_text}
 
 ## Task:
-Compare the ELM implementation against the CPG requirements.
-Check that all numeric values (ages, time intervals) match EXACTLY.
+{task_text}
 
-## Response Format (use EXACTLY this format):
-VALID: YES
-ERRORS: None
-
-OR if there are mismatches:
-VALID: NO
-ERRORS: [describe specific value mismatches between ELM and CPG]
+{response_fmt}
 """
     else:
-        prompt = f"""Analyze this clinical logic implementation.
+        task_text = "Check if the values are clinically reasonable."
+        if prompt_mode == "cot":
+            task_text += " Think step by step about each value."
+        prompt = f"""You are analyzing a clinical decision support implementation.
 
-{elm_simplified}
+## {elm_label}:
+{elm_text}
 
-Are the values clinically reasonable?
+## Task:
+{task_text}
 
-VALID: YES or NO
-ERRORS: None, or list issues"""
+{response_fmt}"""
 
     return prompt
 
@@ -772,7 +815,8 @@ def compare_with_ground_truth(result: dict, test_case: dict) -> dict:
     }
 
 
-def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
+def run_validation(model_id: str, data_dir: Path, output_file: Path,
+                    ablation_mode: str = "full", prompt_mode: str = "standard") -> dict:
     """Run validation for all ELM files with specified model using batch processing."""
     elm_files = get_elm_files(data_dir)
     ground_truth = load_ground_truth(data_dir)
@@ -782,8 +826,16 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
         print(f"No ELM JSON files found in {data_dir}")
         return {"results": [], "summary": {}}
 
+    mode_info = ""
+    if ablation_mode != "full":
+        mode_info += f"  Ablation: {ablation_mode}"
+    if prompt_mode != "standard":
+        mode_info += f"  Prompt: {prompt_mode}"
+
     print(f"\n{'='*70}")
     print(f"ELM Validation with {model_id}")
+    if mode_info:
+        print(mode_info)
     print(f"{'='*70}")
     print(f"Data Directory: {data_dir}")
     print(f"Files: {len(elm_files)}")
@@ -793,7 +845,8 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
 
     # Prepare batch items
     print("Preparing batch validation...")
-    items = prepare_batch_items(elm_files, data_dir, test_cases)
+    items = prepare_batch_items(elm_files, data_dir, test_cases,
+                                ablation_mode=ablation_mode, prompt_mode=prompt_mode)
 
     # Run batch validation - use local API for supported models
     if model_id in LOCAL_API_MODELS:
@@ -902,15 +955,23 @@ def run_validation(model_id: str, data_dir: Path, output_file: Path) -> dict:
     return {"results": results, "summary": summary}
 
 
-def run_all_models(data_dir: Path, output_dir: Path) -> list:
+def run_all_models(data_dir: Path, output_dir: Path,
+                    ablation_mode: str = "full", prompt_mode: str = "standard") -> list:
     """Run validation with all models."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
     all_summaries = []
 
     for model_id in MODELS:
-        output_file = output_dir / f"results-{model_id}.csv"
-        result = run_validation(model_id, data_dir, output_file)
+        # Include mode in filename if non-default
+        suffix = ""
+        if ablation_mode != "full":
+            suffix += f"-{ablation_mode}"
+        if prompt_mode != "standard":
+            suffix += f"-{prompt_mode}"
+        output_file = output_dir / f"results-{model_id}{suffix}.csv"
+        result = run_validation(model_id, data_dir, output_file,
+                                ablation_mode=ablation_mode, prompt_mode=prompt_mode)
         all_summaries.append(result["summary"])
 
     # Save combined summary
@@ -1071,6 +1132,12 @@ def main():
                        help="Output directory (for all models)")
     parser.add_argument("--list-models", action="store_true",
                        help="List available models and exit")
+    parser.add_argument("--ablation-mode", default="full",
+                       choices=["full", "no_cpg", "no_simplify", "no_cpg_no_simplify"],
+                       help="Ablation mode: full (default), no_cpg, no_simplify, no_cpg_no_simplify")
+    parser.add_argument("--prompt-mode", default="standard",
+                       choices=["standard", "cot", "structured", "minimal", "few-shot"],
+                       help="Prompt mode: standard (default), cot, structured, minimal, few-shot")
 
     args = parser.parse_args()
 
@@ -1079,10 +1146,14 @@ def main():
         for model in MODELS:
             default = " (default)" if model == DEFAULT_MODEL else ""
             print(f"  {model}{default}")
+        print("\nAblation modes: full, no_cpg, no_simplify, no_cpg_no_simplify")
+        print("Prompt modes: standard, cot, structured, minimal")
         return
 
     if args.all_models:
-        summaries = run_all_models(args.data_dir, args.output_dir)
+        summaries = run_all_models(args.data_dir, args.output_dir,
+                                    ablation_mode=args.ablation_mode,
+                                    prompt_mode=args.prompt_mode)
         summary_md = generate_markdown_summary(summaries, args.output_dir / "summary.md")
         print("\n" + summary_md)
     else:
@@ -1091,7 +1162,20 @@ def main():
             print(f"Available models: {', '.join(MODELS)}")
             sys.exit(1)
 
-        result = run_validation(args.model, args.data_dir, args.output)
+        # Include mode in output filename if non-default
+        output = args.output
+        if args.ablation_mode != "full" or args.prompt_mode != "standard":
+            stem = output.stem
+            suffix = ""
+            if args.ablation_mode != "full":
+                suffix += f"-{args.ablation_mode}"
+            if args.prompt_mode != "standard":
+                suffix += f"-{args.prompt_mode}"
+            output = output.with_stem(stem + suffix)
+
+        result = run_validation(args.model, args.data_dir, output,
+                                ablation_mode=args.ablation_mode,
+                                prompt_mode=args.prompt_mode)
         summaries = [result["summary"]]
         summary_md = generate_markdown_summary(summaries)
         print("\n" + summary_md)

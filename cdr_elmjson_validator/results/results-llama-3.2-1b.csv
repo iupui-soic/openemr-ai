@@ -1,89 +1,32 @@
 file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid,error_match,warning_match
-Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Falls-Prevention-Screening_CPG.md,True,True,False,True,0.0,1.0
-Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False,0.0,0.0
-Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Chlamydia_Screening_CPG.md,True,True,False,True,0.0,1.0
-Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Tobacco-Use-Screening_CPG.md,True,True,False,True,0.0,1.0
-Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Cervical-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
-AAA-Screening.json,AAA_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,AAA-Screening_CPG.md,True,True,False,True,0.0,1.0
-Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Osteoporosis screening.json,Osteoporosis_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Osteoporosis-Screening_CPG.md,True,True,False,True,0.0,1.0
-Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Condition_Medication_Count_CPG.md,True,True,False,True,0.0,1.0
-Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Alcohol-Misuse-Screening_CPG.md,True,True,False,True,0.0,1.0
-Hypertension-Screening.json,Hypertension-Screening,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Hypertension-Screening_CPG.md,True,True,True,False,0.0,1.0
-Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Lung-Cancer-Screening_CPG.md,True,True,False,True,0.0,1.0
-Depression_screening.json,DepressionScreening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Depression_screening_CPG.md,True,True,False,True,0.0,1.0
-Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False,0.0,1.0
-Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False,0.0,1.0
-Anxiety-Screening.json,Anxiety_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Anxiety-Screening_CPG.md,True,True,True,False,0.0,1.0
-Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False,0.0,1.0
-USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,USPSTF_Statin_Use_CPG.md,True,True,False,True,0.0,1.0
-Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True,0.0,1.0
-HIV-Screening.json,HIV_Screening_CDS,llama-3.2-1b,False,3.849253871224143,"Modal exit code 1: Traceback (most recent call last):
-  File ""<string>"", line 13, in <module>
-  File ""/home/saptpurk/openemr-ai/cdr_elmjson_validator/modal_app.py"", line 783, in get_validator
-    raise ValueError(f""Unkn",,error,HIV-Screening_CPG.md,True,True,True,False,0.0,1.0
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,llama-3.2-1b,True,6.025826454162598,,,llm,USPSTF_Statin_Use_CPG.md,True,True,True,True,,
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,llama-3.2-1b,True,2.6691813468933105,,,llm,Condition_Medication_Count_CPG.md,True,True,True,True,,
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,llama-3.2-1b,True,2.9526453018188477,,,llm,Chlamydia_Screening_CPG.md,True,True,True,True,,
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,llama-3.2-1b,True,0.9721279144287109,,,llm,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True,,
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,llama-3.2-1b,True,1.2335586547851562,,,llm,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,llama-3.2-1b,True,1.0808062553405762,,,llm,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,llama-3.2-1b,True,5.986620664596558,,,llm,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
+Depression_screening.json,DepressionScreening_CDS,llama-3.2-1b,True,5.955670118331909,,,llm,Depression_screening_CPG.md,True,True,True,True,,
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,llama-3.2-1b,True,5.97958779335022,,,llm,Osteoporosis-Screening_CPG.md,True,True,True,True,,
+Hypertension-Screening.json,Hypertension-Screening,llama-3.2-1b,True,5.973516941070557,,,llm,Hypertension-Screening_CPG.md,True,True,False,False,,
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,llama-3.2-1b,True,2.3434178829193115,,,llm,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False,,
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,llama-3.2-1b,False,1.5559382438659668,[Mismatch between Age Thresholds: 18 years vs 18 years],,llm,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False,,
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,llama-3.2-1b,True,0.7940716743469238,,,llm,Cervical-Cancer-Screening_CPG.md,True,True,True,True,,
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,llama-3.2-1b,False,2.1906557083129883,[list specific mismatches between ELM and CPG],,llm,Lung-Cancer-Screening_CPG.md,True,True,False,True,,
+AAA-Screening.json,AAA_Screening_CDS,llama-3.2-1b,True,5.971068620681763,,,llm,AAA-Screening_CPG.md,True,True,True,True,,
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,llama-3.2-1b,True,1.077383041381836,,,llm,Alcohol-Misuse-Screening_CPG.md,True,True,True,True,,
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,llama-3.2-1b,True,1.9261960983276367,,,llm,Falls-Prevention-Screening_CPG.md,True,True,True,True,,
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,llama-3.2-1b,True,5.9698121547698975,,,llm,Tobacco-Use-Screening_CPG.md,True,True,True,True,,
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,llama-3.2-1b,True,0.9360547065734863,,,llm,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False,,
+Anxiety-Screening.json,Anxiety_Screening_CDS,llama-3.2-1b,True,1.1099798679351807,,,llm,Anxiety-Screening_CPG.md,True,True,False,False,,
+HIV-Screening.json,HIV_Screening_CDS,llama-3.2-1b,False,2.293344020843506,"[age_threshold, time_interval]",,llm,HIV-Screening_CPG.md,True,True,True,False,,
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,llama-3.2-1b,False,6.005041122436523,[Mismatch found: ELM value,,llm,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False,,
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,llama-3.2-1b,True,0.7971758842468262,,,llm,Cervical-Cancer-Screening_CPG.md,True,True,False,False,,
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,llama-3.2-1b,True,6.013255596160889,,,llm,Depression_screening_CPG.md,True,True,False,False,,
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,llama-3.2-1b,True,0.9052789211273193,,,llm,Falls-Prevention-Screening_CPG.md,True,True,False,False,,
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,llama-3.2-1b,True,6.006681203842163,,,llm,Alcohol-Misuse-Screening_CPG.md,True,True,False,False,,
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,llama-3.2-1b,False,0.6341047286987305,"[ELM_value = 65, CPG_value = 66]",,llm,Osteoporosis-Screening_CPG.md,True,True,True,False,,
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,llama-3.2-1b,True,4.817375421524048,,,llm,AAA-Screening_CPG.md,True,True,False,False,,
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,llama-3.2-1b,True,6.00055193901062,,,llm,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False,,
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,llama-3.2-1b,True,1.0846469402313232,,,llm,Tobacco-Use-Screening_CPG.md,True,True,False,False,,
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,llama-3.2-1b,True,2.9954171180725098,,,llm,Lung-Cancer-Screening_CPG.md,True,True,False,False,,

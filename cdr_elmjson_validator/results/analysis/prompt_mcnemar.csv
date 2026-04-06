@@ -1,0 +1,10 @@
+model,prompt_mode,b_std_only,c_mode_only,p_value
+gpt-oss-120b,cot,13,2,0.00738525390625
+gpt-oss-120b,structured,14,2,0.004180908203125
+gpt-oss-120b,minimal,14,2,0.004180908203125
+gpt-oss-20b,cot,10,2,0.03857421875
+gpt-oss-20b,structured,12,2,0.012939453125
+gpt-oss-20b,minimal,13,1,0.0018310546875
+llama-3.3-70b,cot,1,1,1.0
+llama-3.3-70b,structured,14,1,0.0009765625
+llama-3.3-70b,minimal,1,0,1.0

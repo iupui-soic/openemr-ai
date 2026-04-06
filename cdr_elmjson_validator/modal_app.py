@@ -263,56 +263,160 @@ def simplify_elm_for_prompt(elm_json: dict) -> str:
     return "\n".join(lines)
 
 
-def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None):
-    """Build validation prompt for LLM with simplified ELM format."""
-
-    # Use simplified ELM format for easier comparison
-    elm_simplified = simplify_elm_for_prompt(elm_json)
-
-    if cpg_content:
-        prompt = f"""You are validating a clinical decision support (CDS) implementation.
-
-## Clinical Practice Guideline (CPG) Requirements:
-{cpg_content}
-
-## ELM Implementation Summary:
-{elm_simplified}
-
-## Task:
-Compare the ELM implementation against the CPG requirements.
-Check that all numeric values (ages, time intervals) match EXACTLY.
-
-## Response Format (use EXACTLY this format):
+RESPONSE_FORMAT_STANDARD = """## Response Format (use EXACTLY this format):
 VALID: YES
 ERRORS: None
 
 OR if there are mismatches:
 VALID: NO
-ERRORS: [describe specific value mismatches between ELM and CPG]
-"""
-    else:
-        prompt = f"""You are analyzing a clinical decision support implementation.
+ERRORS: [describe specific value mismatches between ELM and CPG]"""
 
-## ELM Implementation:
-{elm_simplified}
+RESPONSE_FORMAT_COT = """## Response Format:
+First, list each numeric value from the ELM and its corresponding CPG requirement.
+Then state whether each pair matches.
+Finally, give your verdict:
+
+REASONING: [your step-by-step comparison]
+VALID: YES or NO
+ERRORS: None, or list specific mismatches"""
+
+RESPONSE_FORMAT_STRUCTURED = """## Response Format:
+For each category below, check the ELM values against the CPG:
+
+1. AGE THRESHOLDS: [list each, state match/mismatch]
+2. TIME INTERVALS: [list each, state match/mismatch]
+3. VALUE SETS: [list each, state match/mismatch]
+
+Then provide your verdict:
+VALID: YES or NO
+ERRORS: None, or list specific mismatches"""
+
+RESPONSE_FORMAT_MINIMAL = """Respond with:
+VALID: YES or NO
+ERRORS: None, or list issues"""
+
+# Few-shot exemplars (compact, <300 tokens total)
+FEW_SHOT_EXEMPLARS = """## Examples:
+
+Example 1 (Valid):
+ELM: Falls_Prevention_Screening — Age >= 65 years, lookback 1 year for falls risk assessment.
+CPG: Adults 65+ should be screened annually for fall risk.
+VALID: YES
+ERRORS: None
+
+Example 2 (Invalid):
+ELM: Hypertension_Screening — Age >= 25 years, lookback 6 months for BP screening.
+CPG: Adults 18+ should be screened every 12 months.
+VALID: NO
+ERRORS: Age threshold mismatch (ELM: 25, CPG: 18); time interval mismatch (ELM: 6 months, CPG: 12 months)
+
+Now evaluate the following case:
+"""
+
+# Ablation modes:
+#   full            - simplified ELM + CPG comparison (default)
+#   no_cpg          - simplified ELM only, no CPG reference
+#   no_simplify     - raw truncated ELM JSON + CPG comparison
+#   no_cpg_no_simplify - raw truncated ELM JSON only
+ABLATION_MODES = ("full", "no_cpg", "no_simplify", "no_cpg_no_simplify")
+
+# Prompt modes:
+#   standard   - direct comparison (default)
+#   cot        - chain-of-thought reasoning before verdict
+#   structured - checklist by value category
+#   minimal    - bare minimum instructions
+#   few-shot   - 2 exemplars (1 valid, 1 invalid) prepended
+PROMPT_MODES = ("standard", "cot", "structured", "minimal", "few-shot")
+
+
+def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None,
+                 ablation_mode="full", prompt_mode="standard"):
+    """Build validation prompt for LLM.
+
+    Args:
+        ablation_mode: Which input components to include
+            full (default) - simplified ELM + CPG
+            no_cpg - simplified ELM, skip CPG even if available
+            no_simplify - raw truncated JSON + CPG
+            no_cpg_no_simplify - raw truncated JSON only
+        prompt_mode: Which prompt template to use
+            standard (default) - direct comparison
+            cot - chain-of-thought reasoning
+            structured - checklist by category
+            minimal - bare minimum instructions
+            few-shot - 2 exemplars prepended
+    """
+    # Select response format based on prompt_mode
+    response_formats = {
+        "standard": RESPONSE_FORMAT_STANDARD,
+        "cot": RESPONSE_FORMAT_COT,
+        "structured": RESPONSE_FORMAT_STRUCTURED,
+        "minimal": RESPONSE_FORMAT_MINIMAL,
+        "few-shot": RESPONSE_FORMAT_STANDARD,  # few-shot uses standard format
+    }
+    response_fmt = response_formats.get(prompt_mode, RESPONSE_FORMAT_STANDARD)
+
+    # Few-shot prefix
+    few_shot_prefix = FEW_SHOT_EXEMPLARS if prompt_mode == "few-shot" else ""
+
+    # Select ELM representation based on ablation_mode
+    use_simplified = ablation_mode in ("full", "no_cpg")
+    use_cpg = ablation_mode in ("full", "no_simplify") and cpg_content
+
+    if use_simplified:
+        elm_text = simplify_elm_for_prompt(elm_json)
+        elm_label = "ELM Implementation Summary"
+    else:
+        # Raw truncated JSON
+        chars = max_chars or MAX_PROMPT_CHARS_LOCAL
+        truncated = truncate_elm_json(elm_json, chars)
+        elm_text = json.dumps(truncated, indent=2)
+        elm_label = "ELM JSON (truncated)"
+
+    if use_cpg:
+        task_text = ("Compare the ELM implementation against the CPG requirements.\n"
+                     "Check that all numeric values (ages, time intervals) match EXACTLY.")
+        if prompt_mode == "cot":
+            task_text += ("\nThink step by step: list each numeric value, find its "
+                          "CPG counterpart, and check if they match.")
+        prompt = f"""{few_shot_prefix}You are validating a clinical decision support (CDS) implementation.
+
+## Clinical Practice Guideline (CPG) Requirements:
+{cpg_content}
+
+## {elm_label}:
+{elm_text}
 
 ## Task:
-Check if the values are clinically reasonable.
+{task_text}
 
-## Response Format:
-VALID: YES or NO
-ERRORS: None, or list specific issues"""
+{response_fmt}
+"""
+    else:
+        task_text = "Check if the values are clinically reasonable."
+        if prompt_mode == "cot":
+            task_text += " Think step by step about each value."
+        prompt = f"""{few_shot_prefix}You are analyzing a clinical decision support implementation.
+
+## {elm_label}:
+{elm_text}
+
+## Task:
+{task_text}
+
+{response_fmt}"""
 
     return prompt
 
 
 def parse_response(response):
-    """Parse LLM's structured response."""
+    """Parse LLM's structured response, including optional REASONING from CoT."""
     lines = [l.strip() for l in response.split('\n') if l.strip()]
 
     valid = True
     errors = []
     warnings = []
+    reasoning = []
     section = None
 
     for line in lines:
@@ -320,6 +424,7 @@ def parse_response(response):
 
         if upper.startswith('VALID:'):
             valid = 'YES' in upper
+            section = None
         elif upper.startswith('ERRORS:'):
             section = 'errors'
             content = line.split(':', 1)[1].strip()
@@ -330,6 +435,11 @@ def parse_response(response):
             content = line.split(':', 1)[1].strip()
             if content.lower() != 'none':
                 warnings.append(content)
+        elif upper.startswith('REASONING:'):
+            section = 'reasoning'
+            content = line.split(':', 1)[1].strip()
+            if content:
+                reasoning.append(content)
         elif line.startswith('-') or line.startswith('*'):
             item = line[1:].strip()
             if item.lower() != 'none':
@@ -337,15 +447,23 @@ def parse_response(response):
                     warnings.append(item)
                 elif section == 'errors':
                     errors.append(item)
+                elif section == 'reasoning':
+                    reasoning.append(item)
+        elif section == 'reasoning':
+            reasoning.append(line)
 
-    return {
+    result = {
         "valid": valid and len(errors) == 0,
         "errors": errors,
         "warnings": warnings,
     }
+    if reasoning:
+        result["reasoning"] = " ".join(reasoning)
+    return result
 
 
-def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, model_id, model_name, max_chars=None):
+def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, model_id, model_name,
+                         max_chars=None, ablation_mode="full", prompt_mode="standard"):
     """Run inference for a single ELM file using pre-loaded model."""
     import torch
 
@@ -366,7 +484,8 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
         }
 
     # Build validation prompt with optional truncation
-    prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=max_chars)
+    prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=max_chars,
+                          ablation_mode=ablation_mode, prompt_mode=prompt_mode)
 
     if cpg_content:
         print(f"  Validating {library_name} against CPG...")
@@ -406,7 +525,8 @@ def run_single_inference(elm_json, library_name, cpg_content, model, tokenizer, 
             print(f"  OOM error, retrying with truncated input...")
 
             # Retry with more aggressive truncation
-            truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_LOCAL // 2)
+            truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_LOCAL // 2,
+                                            ablation_mode=ablation_mode, prompt_mode=prompt_mode)
             try:
                 inputs = tokenizer(truncated_prompt, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
 
@@ -531,7 +651,9 @@ def run_batch_validation(items: list, model_name: str, model_id: str, use_4bit: 
             model=model,
             tokenizer=tokenizer,
             model_id=model_id,
-            model_name=model_name
+            model_name=model_name,
+            ablation_mode=item.get("ablation_mode", "full"),
+            prompt_mode=item.get("prompt_mode", "standard"),
         )
         result["file_name"] = item.get("file_name")
         result["load_time_seconds"] = load_time if i == 1 else 0
@@ -583,7 +705,10 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
             continue
 
         # Use truncation for Groq API (strict token limits)
-        prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ)
+        ablation_mode = item.get("ablation_mode", "full")
+        prompt_mode = item.get("prompt_mode", "standard")
+        prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ,
+                              ablation_mode=ablation_mode, prompt_mode=prompt_mode)
 
         inference_start = time.time()
         try:
@@ -602,7 +727,8 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
                 print(f"  Token limit exceeded, retrying with more truncation...")
                 try:
                     # Retry with even more aggressive truncation
-                    truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ // 2)
+                    truncated_prompt = build_prompt(elm_json, library_name, cpg_content, max_chars=MAX_PROMPT_CHARS_GROQ // 2,
+                                                    ablation_mode=ablation_mode, prompt_mode=prompt_mode)
                     response = client.chat.completions.create(
                         model=model_name,
                         messages=[{"role": "user", "content": truncated_prompt}],
