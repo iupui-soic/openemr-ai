@@ -13,7 +13,7 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 - **Step-by-step prompts**: Models compare extracted values against CPG requirements with explicit decision criteria
 - **Batch processing**: Each model loads once and processes all test files efficiently
 
-**Test Dataset**: 22 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines, including correct implementations and artifacts with intentionally introduced defects (incorrect age thresholds, missing exclusion criteria, wrong FHIR code bindings, logically contradictory conditions).
+**Test Dataset**: 31 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines (15 valid, 16 invalid). Invalid cases include 13 parametric errors (wrong age thresholds, lookback intervals, clinical values) and 3 semantic logic errors (Boolean operator swap, missing exclusion check, missing sub-population bound). See [`test_data/BENCHMARK.md`](cdr_elmjson_validator/test_data/BENCHMARK.md) for full methodology.
 
 ### Models Evaluated
 
@@ -34,52 +34,54 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 | Llama 3.3 70B | Meta | 70B | Groq API |
 | Qwen 3 32B | Alibaba | 32B | Groq API |
 
-### Latest Results (22 Test Cases)
+### Latest Results (31 Test Cases, 15 Valid / 16 Invalid)
 
-#### Frontier Models (via API)
+| Model | Params | Accuracy | 95% CI | Sens. | Spec. | F1 |
+|-------|--------|----------|--------|-------|-------|-----|
+| **GPT-OSS 20B** | 20B (MoE) | **93.5%** | [.79, .98] | 1.00 | 0.88 | 0.94 |
+| **Qwen3 32B** | 32B | 90.3% | [.75, .97] | 0.93 | 0.88 | 0.90 |
+| **GPT-OSS 120B** | 120B (MoE) | 87.1% | [.71, .95] | 0.87 | 0.88 | 0.87 |
+| **Llama 3.3 70B** | 70B | 87.1% | [.71, .95] | 0.93 | 0.81 | 0.88 |
+| Qwen-2.5-3B | 3B | 61.3% | [.44, .76] | 1.00 | 0.25 | 0.71 |
+| Llama-3.2-1B | 1B | 58.1% | [.41, .74] | 0.93 | 0.25 | 0.68 |
+| Phi-3 Mini | 3.8B | 54.8% | [.38, .71] | 0.93 | 0.19 | 0.67 |
+| Qwen-2.5-1.5B | 1.5B | 51.6% | [.35, .68] | 0.47 | 0.56 | 0.48 |
+| MedGemma 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
+| MedGemma 1.5 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
+| Gemma 3 4B | 4B | 48.4% | [.32, .65] | 1.00 | 0.00 | 0.65 |
+| Llama-3.2-3B | 3B | 45.2% | [.29, .62] | 0.87 | 0.06 | 0.60 |
 
-These models require API keys (`GOOGLE_API_KEY` or `ANTHROPIC_API_KEY`) and can be run without Modal:
+Base rate: 48.4%. Fisher's exact test frontier vs small: p<0.001, OR=8.54.
 
-| Model | Accuracy | Correct/Total | Avg Time | Status |
-|-------|----------|---------------|----------|--------|
-| Gemini 3 Flash | - | -/22 | - | Requires `GOOGLE_API_KEY` |
-| Gemini 2.0 Flash | - | -/22 | - | Requires `GOOGLE_API_KEY` |
-| Gemma 3 27B | - | -/22 | - | Requires `GOOGLE_API_KEY` |
-| Claude Haiku 4 | - | -/22 | - | Requires `ANTHROPIC_API_KEY` |
-| Claude Sonnet 4 | - | -/22 | - | Requires `ANTHROPIC_API_KEY` |
-| Claude Opus 4 | - | -/22 | - | Requires `ANTHROPIC_API_KEY` |
+### Ablation Study (4 Frontier Models x 4 Conditions)
 
-To run frontier models:
-```bash
-# Google models (requires GOOGLE_API_KEY from https://aistudio.google.com/app/apikey)
-GOOGLE_API_KEY=your_key python run_validation.py --model gemini-3-flash --output results/results-gemini-3-flash.csv
+| Condition | GPT-OSS-20B | GPT-OSS-120B | Qwen3-32B | Llama 70B |
+|-----------|-------------|--------------|-----------|-----------|
+| | *3.6B active* | *5.1B active* | *32B* | *70B* |
+| Full (simplified+CPG) | 90.3% | 87.1% | 83.9% | 90.3% |
+| No CPG | 61.3% (-29) | 71.0% (-16) | 45.2% (-39) | 58.1% (-32) |
+| No simplify (raw+CPG) | 48.4% (-42) | 77.4% (-10) | 83.9% (0) | **96.8%** (+7) |
+| Neither | 71.0% (-19) | 67.7% (-19) | 54.8% (-29) | 58.1% (-32) |
 
-# Anthropic models (requires ANTHROPIC_API_KEY from https://console.anthropic.com)
-ANTHROPIC_API_KEY=your_key python run_validation.py --model claude-haiku --output results/results-claude-haiku.csv
-```
+### Prompt Engineering (3 Models x 5 Strategies)
 
-#### Small/Medium Models (via Modal/Groq)
-
-| Model | Accuracy | Correct/Total | Error Match | Avg Time | Status |
-|-------|----------|---------------|-------------|----------|--------|
-| GPT OSS 20B | **100.0%** | 22/22 | 73% | 3.67s | Excellent |
-| GPT OSS 120B | 95.5% | 21/22 | 65% | 3.89s | Excellent |
-| Llama 3.3 70B | 95.5% | 21/22 | 66% | 1.00s | Excellent |
-| Qwen3 32B | 95.5% | 21/22 | 68% | 6.83s | Excellent |
-| Phi-3 Mini | 68.2% | 15/22 | 55% | 21.35s | Needs Work |
-| Gemma 3 4B | 68.2% | 15/22 | 68% | 34.94s | Needs Work |
-| MedGemma 4B | 68.2% | 15/22 | 68% | 35.00s | Needs Work |
-| MedGemma 1.5 4B | 68.2% | 15/22 | 68% | 37.14s | Needs Work |
+| Strategy | GPT-OSS-20B | GPT-OSS-120B | Llama 70B |
+|----------|-------------|--------------|-----------|
+| Few-shot | **93.5%** | **90.3%** | 87.1% |
+| Standard | 87.1% | 87.1% | **90.3%** |
+| Chain-of-thought | 61.3% | 51.6% | **90.3%** |
+| Minimal | 48.4% | 48.4% | 87.1% |
+| Structured | 54.8% | 48.4% | 48.4% |
 
 **Key Findings:**
-- **GPT OSS 20B** achieved perfect 100% accuracy (22/22) with the highest error-match rate (73%)
-- **GPT OSS 120B, Llama 3.3 70B, and Qwen3 32B** all achieved 95.5% accuracy — a single misclassification separates them from perfect; interpret cautiously given the small benchmark size (~4.5 pp per case)
-- **Llama 3.3 70B** improved from 40% (10-case pilot) to 95.5% on the full 22-case set, suggesting earlier poor performance reflected dataset size limitations rather than a capability gap
-- Domain-specific **MedGemma** variants did not outperform general-purpose models of comparable scale (68.2%), consistent with prior observations that clinical fine-tuning alone is insufficient for structured logic validation tasks
-- **GPT OSS 120B** (via Groq, 3.89s/artifact) offers a practical balance of accuracy and latency for deployment
-- Frontier models (Gemini, Claude) can be evaluated with the appropriate API keys
+- **GPT-OSS 20B** achieved the highest accuracy (93.5%) with perfect sensitivity and F1=0.94
+- All frontier models (>=20B) achieved 87-94% accuracy; all sub-4B models fell below the 48.4% base rate
+- **MedGemma** variants performed identically to general-purpose Gemma 3 4B (all 48.4%), confirming that medical fine-tuning does not help with structured comparison tasks
+- **ELM simplification benefit scales inversely with active parameters**: essential for MoE models (3.6-5.1B active), unnecessary for Llama 70B which achieved 96.8% with raw JSON
+- **CPG reference is universally essential**: removing it reduced accuracy by 16-39 pp across all models
+- **Few-shot prompting** outperformed standard for MoE models; **chain-of-thought hurts** MoE models by introducing over-analysis
 
-View detailed results in the [workflow runs](../../actions/workflows/elm-validation.yml).
+Detailed analysis available in the [Jupyter notebooks](cdr_elmjson_validator/notebooks/).
 
 ## RAG Medical Summarization (SOAP Note Generation)
 
@@ -277,20 +279,30 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 
 ```bash
 cd cdr_elmjson_validator
-pip install -r requirements.txt
 
-# List available models
+# List available models and experiment modes
 python run_validation.py --list-models
 
-# Run a single model (Modal-based)
+# Run a single model
 python run_validation.py --model qwen3-32b --output results/results-qwen3-32b.csv
 
-# Run frontier models (no Modal required, uses API keys)
-GOOGLE_API_KEY=your_key python run_validation.py --model gemini-3-flash --output results/results-gemini-3-flash.csv
-ANTHROPIC_API_KEY=your_key python run_validation.py --model claude-haiku --output results/results-claude-haiku.csv
+# Run with ablation mode (no CPG, no simplification, etc.)
+python run_validation.py --model gpt-oss-20b --ablation-mode no_cpg
 
-# Run all models
-python run_validation.py --all-models --output-dir results/
+# Run with prompt mode (cot, few-shot, structured, minimal)
+python run_validation.py --model gpt-oss-20b --prompt-mode few-shot
+
+# Run ablation study across models
+python run_ablation.py --model gpt-oss-20b
+
+# Run prompt engineering experiments
+python run_prompt_experiments.py --model gpt-oss-20b
+
+# Run statistical analysis on existing results
+python analyze_elm_results.py
+
+# Run all models via Groq API (direct, no Modal)
+GROQ_API_KEY=your_key python run_experiments_direct.py --model gpt-oss-20b
 ```
 
 ### RAG Medical Summarization
@@ -374,11 +386,26 @@ The evaluation workflows run automatically on:
 
 ```
 cdr_elmjson_validator/
-├── modal_app.py            # Modal functions for LLM validation
-├── run_validation.py       # CLI runner for validation
+├── modal_app.py            # Modal/Groq inference with ablation_mode + prompt_mode
+├── run_validation.py       # CLI runner (--ablation-mode, --prompt-mode flags)
 ├── elm_simplifier.py       # ELM JSON to simplified format converter
-├── test_data/              # 22 ELM JSON files, CPG markdown, ground_truth.json
-└── results/                # Validation result CSVs per model
+├── analyze_elm_results.py  # Statistical analysis (Wilson CI, McNemar, Fisher, heatmap)
+├── run_ablation.py         # Ablation experiment runner + analysis
+├── run_prompt_experiments.py # Prompt engineering experiment runner + analysis
+├── run_experiments_direct.py # Direct Groq API experiment runner
+├── run_all_expanded.py     # Run all 12 models on expanded benchmark
+├── create_expanded_cases.py # Script that generated the 9 new test cases
+├── test_data/              # 31 ELM JSON files, CPG markdown, ground_truth.json, BENCHMARK.md
+├── notebooks/              # 4 Jupyter notebooks with pre-rendered analysis
+│   ├── 01_elm_validation_results.ipynb
+│   ├── 02_error_analysis.ipynb
+│   ├── 03_ablation_study.ipynb
+│   └── 04_prompt_engineering.ipynb
+└── results/
+    ├── results-*.csv       # 12 model result CSVs (31 cases each)
+    ├── ablation/           # 4 models x 4 conditions = 16 CSVs
+    ├── prompts/            # 3 models x 5 strategies = 15 CSVs
+    └── analysis/           # Statistical outputs, heatmap PNG, CSVs
 
 openemr_whisper_wer/
 ├── whisper_wer.py          # OpenAI Whisper evaluation
