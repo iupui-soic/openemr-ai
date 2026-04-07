@@ -430,6 +430,68 @@ Generate the medical summary now in narrative prose format:"""
         }
 
 
+def _resolve_pid_from_uuid(patient_uuid: str) -> int:
+    """
+    Read-only DB query: resolve patient UUID to integer pid.
+    Used to supply the correct integer pid to the OpenEMR REST API,
+    which expects integers not UUIDs in the URL path.
+    """
+    import pymysql
+    DB_HOST = os.getenv("OPENEMR_DB_HOST", "localhost")
+    DB_PORT = int(os.getenv("OPENEMR_DB_PORT", "3306"))
+    DB_USER = os.getenv("OPENEMR_DB_USER", "openemr")
+    DB_PASS = os.getenv("OPENEMR_DB_PASS", "openemr")
+    DB_NAME = os.getenv("OPENEMR_DB_NAME", "openemr")
+    conn = pymysql.connect(
+        host=DB_HOST, port=DB_PORT, user=DB_USER, password=DB_PASS,
+        database=DB_NAME, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor
+    )
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute(
+                "SELECT pid, fname, lname FROM patient_data WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
+                (patient_uuid,)
+            )
+            row = cursor.fetchone()
+            if not row:
+                raise ValueError(f"Patient UUID not found: {patient_uuid}")
+            logger.info(f"   Resolved patient: {row.get('fname','')} {row.get('lname','')} (pid={row['pid']})")
+            return row["pid"]
+    finally:
+        conn.close()
+
+
+def _resolve_eid_from_uuid(encounter_uuid: str) -> int:
+    """
+    Read-only DB query: resolve encounter UUID to integer encounter id (eid).
+    Used to supply the correct integer eid to the OpenEMR REST API,
+    which expects integers not UUIDs in the URL path.
+    """
+    import pymysql
+    DB_HOST = os.getenv("OPENEMR_DB_HOST", "localhost")
+    DB_PORT = int(os.getenv("OPENEMR_DB_PORT", "3306"))
+    DB_USER = os.getenv("OPENEMR_DB_USER", "openemr")
+    DB_PASS = os.getenv("OPENEMR_DB_PASS", "openemr")
+    DB_NAME = os.getenv("OPENEMR_DB_NAME", "openemr")
+    conn = pymysql.connect(
+        host=DB_HOST, port=DB_PORT, user=DB_USER, password=DB_PASS,
+        database=DB_NAME, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor
+    )
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute(
+                "SELECT encounter, date FROM form_encounter WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
+                (encounter_uuid,)
+            )
+            row = cursor.fetchone()
+            if not row:
+                raise ValueError(f"Encounter UUID not found: {encounter_uuid}")
+            logger.info(f"   Resolved encounter: {row['encounter']} (date={row['date']})")
+            return row["encounter"]
+    finally:
+        conn.close()
+
+
 def save_soap_note_to_openemr(
         patient_uuid: str,
         encounter_uuid: str,
@@ -440,159 +502,72 @@ def save_soap_note_to_openemr(
         user_token: str
 ) -> dict:
     """
-    Save a SOAP note to an OpenEMR encounter via direct database insert.
+    Save a SOAP note to OpenEMR via the REST API using correct integer pid/eid.
 
-    The REST API has a bug in OpenEMR 8.0.1-dev where it stores incorrect
-    pid and encounter values. This function bypasses the API and inserts
-    directly into the MySQL database with correct values.
+    Root cause of previous failure: the OpenEMR REST API route expects integer
+    pid and eid in the URL, not UUIDs. Sending a UUID like '9d037284-...' caused
+    PHP/MySQL to cast it to integer 9 (reads digits until first non-digit 'd'),
+    saving the note under the wrong patient entirely.
+
+    Fix: resolve UUID -> integer via read-only DB queries first, then call the
+    API with the correct integers.
+
+    NOTE: The old direct DB INSERT implementation is commented out below.
+    Re-enable it by commenting out this API block if this approach fails.
     """
-    import pymysql
-
-    # Database connection settings (same as OpenEMR's sqlconf.php)
-    DB_HOST = os.getenv("OPENEMR_DB_HOST", "localhost")
-    DB_PORT = int(os.getenv("OPENEMR_DB_PORT", "3306"))
-    DB_USER = os.getenv("OPENEMR_DB_USER", "openemr")
-    DB_PASS = os.getenv("OPENEMR_DB_PASS", "openemr")
-    DB_NAME = os.getenv("OPENEMR_DB_NAME", "openemr")
-
-    logger.info(f"💾 Saving SOAP note via direct DB insert")
+    logger.info(f"💾 Saving SOAP note via OpenEMR REST API (with resolved integer pid/eid)")
     logger.info(f"   Patient UUID: {patient_uuid}")
     logger.info(f"   Encounter UUID: {encounter_uuid}")
 
-    conn = None
     try:
-        conn = pymysql.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            user=DB_USER,
-            password=DB_PASS,
-            database=DB_NAME,
-            charset='utf8mb4',
-            cursorclass=pymysql.cursors.DictCursor
+        # Step 1: Resolve UUIDs to integers via read-only DB queries
+        pid = _resolve_pid_from_uuid(patient_uuid)
+        eid = _resolve_eid_from_uuid(encounter_uuid)
+
+        # Step 2: Call REST API with correct integer pid and eid
+        url = f"{OPENEMR_REST_BASE}/patient/{pid}/encounter/{eid}/soap_note"
+        payload = {
+            "subjective": subjective,
+            "objective": objective,
+            "assessment": assessment,
+            "plan": plan,
+        }
+        logger.info(f"   URL: {url}")
+
+        resp = requests.post(
+            url,
+            json=payload,
+            headers={"Authorization": f"Bearer {user_token}"},
+            timeout=15,
+            verify=False,
         )
 
-        with conn.cursor() as cursor:
-            # Step 1: Resolve patient UUID to pid
-            cursor.execute(
-                "SELECT pid, fname, lname FROM patient_data WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
-                (patient_uuid,)
-            )
-            patient_row = cursor.fetchone()
-            if not patient_row:
-                return {"success": False, "error": f"Patient UUID not found: {patient_uuid}"}
+        if resp.status_code in (200, 201):
+            data = resp.json()
+            soap_id = str(data.get("sid", ""))
+            forms_id = str(data.get("fid", ""))
+            logger.info(f"✅ SOAP note saved via API (sid={soap_id}, fid={forms_id})")
+            return {
+                "success": True,
+                "message": "SOAP note saved successfully",
+                "soap_note_id": soap_id,
+            }
+        else:
+            logger.error(f"❌ OpenEMR API error {resp.status_code}: {resp.text}")
+            return {
+                "success": False,
+                "error": f"OpenEMR API returned {resp.status_code}: {resp.text}",
+            }
 
-            pid = patient_row["pid"]
-            patient_name = f"{patient_row.get('fname', '')} {patient_row.get('lname', '')}".strip()
-            logger.info(f"   Resolved patient: {patient_name} (pid={pid})")
-
-            # Step 2: Resolve encounter UUID to encounter number
-            cursor.execute(
-                "SELECT encounter, date FROM form_encounter WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
-                (encounter_uuid,)
-            )
-            encounter_row = cursor.fetchone()
-            if not encounter_row:
-                return {"success": False, "error": f"Encounter UUID not found: {encounter_uuid}"}
-
-            encounter_id = encounter_row["encounter"]
-            logger.info(f"   Resolved encounter: {encounter_id} (date={encounter_row['date']})")
-
-            # Step 3: Resolve the username from the JWT token
-            username = _resolve_username_from_token(user_token, cursor)
-            logger.info(f"   Resolved user: {username}")
-
-            # Step 4: Insert into form_soap
-            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            cursor.execute(
-                """INSERT INTO form_soap
-                   (date, pid, user, groupname, authorized, activity, subjective, objective, assessment, plan)
-                   VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
-                (now, pid, username, "Default", 0, 1, subjective, objective, assessment, plan)
-            )
-            soap_id = cursor.lastrowid
-            logger.info(f"   Inserted form_soap id={soap_id}")
-
-            # Step 5: Register in forms table (links soap note to encounter)
-            cursor.execute(
-                """INSERT INTO forms
-                   (date, encounter, form_name, form_id, pid, user, groupname, authorized, deleted, formdir)
-                   VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
-                (now, encounter_id, "SOAP", soap_id, pid, username, "Default", 1, 0, "soap")
-            )
-            forms_id = cursor.lastrowid
-            logger.info(f"   Inserted forms id={forms_id}")
-
-        conn.commit()
-        logger.info(f"✅ SOAP note saved successfully (soap_id={soap_id}, forms_id={forms_id})")
-
-        return {
-            "success": True,
-            "message": f"SOAP note saved to encounter {encounter_id} for {patient_name}",
-            "soap_note_id": str(soap_id),
-        }
-
-    except pymysql.Error as e:
-        logger.error(f"❌ Database error saving SOAP note: {e}")
-        if conn:
-            conn.rollback()
-        return {
-            "success": False,
-            "error": f"Database error: {str(e)}",
-        }
+    except ValueError as e:
+        logger.error(f"❌ UUID resolution failed: {e}")
+        return {"success": False, "error": str(e)}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"❌ Failed to call OpenEMR API: {e}")
+        return {"success": False, "error": f"Failed to reach OpenEMR API: {str(e)}"}
     except Exception as e:
         logger.error(f"❌ Error saving SOAP note: {e}")
-        if conn:
-            conn.rollback()
-        return {
-            "success": False,
-            "error": f"Failed to save SOAP note: {str(e)}",
-        }
-    finally:
-        if conn:
-            conn.close()
-
-
-def _resolve_username_from_token(token: str, cursor) -> str:
-    """
-    Resolve the OpenEMR username from the JWT token.
-    Falls back to 'admin' if resolution fails.
-    """
-    try:
-        # Decode JWT to get user identity
-        parts = token.split(".")
-        if len(parts) == 3:
-            payload_b64 = parts[1]
-            padding = "=" * (-len(payload_b64) % 4)
-            payload_json = base64.urlsafe_b64decode(payload_b64 + padding).decode("utf-8")
-            payload = json.loads(payload_json)
-
-            # Try fhirUser first (e.g., "Practitioner/9d033ade-...")
-            fhir_user = payload.get("fhirUser", "")
-            if fhir_user and "/" in fhir_user:
-                user_uuid = fhir_user.split("/")[-1]
-                cursor.execute(
-                    "SELECT username FROM users_secure WHERE id = (SELECT id FROM users WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1) LIMIT 1",
-                    (user_uuid,)
-                )
-                row = cursor.fetchone()
-                if row and row.get("username"):
-                    return row["username"]
-
-            # Try sub claim
-            sub = payload.get("sub")
-            if sub:
-                cursor.execute(
-                    "SELECT username FROM users_secure WHERE id = (SELECT id FROM users WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1) LIMIT 1",
-                    (sub,)
-                )
-                row = cursor.fetchone()
-                if row and row.get("username"):
-                    return row["username"]
-
-    except Exception as e:
-        logger.warning(f"Could not resolve username from token: {e}")
-
-    return "admin"
+        return {"success": False, "error": f"Failed to save SOAP note: {str(e)}"}
 
 # ============================================================================
 # API Endpoints
