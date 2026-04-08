@@ -303,6 +303,25 @@
       ],
       "expected_warnings": [],
       "notes": "INVALID CASE (semantic): Removed upper age bound of 80 from demographic check \u2014 screens all smokers age 50+ with no upper limit, contrary to USPSTF 2021 range of 50-80."
+    },
+    "IPF-Screening.json": {
+      "valid": true,
+      "cpg_file": "IPF-Screening_CPG.md",
+      "expected_errors": [],
+      "expected_warnings": [],
+      "notes": "IPF evaluation CDS based on ATS/ERS/JRS/ALAT 2022 guideline. Checks patients age 60+ with interstitial pulmonary fibrosis (unspecified cause) and ILD diagnosis, excluding those with connective tissue disorders (VS 2.16.840.1.113762.1.4.1146.3135) or active amiodarone therapy."
+    },
+    "IPF-Screening-WrongCT.json": {
+      "valid": false,
+      "cpg_file": "IPF-Screening_CPG.md",
+      "expected_errors": [
+        "inverted exclusion logic",
+        "not exists instead of exists",
+        "connective tissue disorder",
+        "wrong exclusion"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic): Connective Tissue Disorders exclusion uses 'not exists' instead of 'exists' \u2014 the logic is inverted, so patients WITH CTD are included and patients WITHOUT CTD are excluded, contrary to the ATS/ERS/JRS/ALAT 2022 guideline which excludes CTD-ILD as a secondary cause."
     }
   }
 }
