@@ -7,6 +7,7 @@ Consolidated batch processing - each model loads once and processes all files.
 import modal
 import json
 import time
+from elm_simplifier import compare_format
 
 app = modal.App("elm-validator")
 
@@ -364,18 +365,18 @@ def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None,
     use_cpg = ablation_mode in ("full", "no_simplify") and cpg_content
 
     if use_simplified:
-        elm_text = simplify_elm_for_prompt(elm_json)
+        elm_text = compare_format(elm_json)
         elm_label = "ELM Implementation Summary"
     else:
-        # Raw truncated JSON
-        chars = max_chars or MAX_PROMPT_CHARS_LOCAL
-        truncated = truncate_elm_json(elm_json, chars)
-        elm_text = json.dumps(truncated, indent=2)
-        elm_label = "ELM JSON (truncated)"
+        # Raw JSON (full ELM for no_simplify ablation modes)
+        elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)
+        elm_label = "ELM JSON"
 
     if use_cpg:
         task_text = ("Compare the ELM implementation against the CPG requirements.\n"
-                     "Check that all numeric values (ages, time intervals) match EXACTLY.")
+                     "Check that all numeric values (ages, time intervals) match EXACTLY.\n"
+                     "Also verify that the logical structure (AND/OR/NOT operators, inclusion/exclusion criteria, "
+                     "value set references) correctly implements the CPG decision logic.")
         if prompt_mode == "cot":
             task_text += ("\nThink step by step: list each numeric value, find its "
                           "CPG counterpart, and check if they match.")

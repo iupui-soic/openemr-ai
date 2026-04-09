@@ -118,15 +118,27 @@ def parse_expression(expr: dict, depth: int = 0) -> str:
             op = op_map.get(expr_type, "?")
             return f"{left} {op} {right}"
 
-    # Boolean operators
+    # Boolean operators (with parentheses for nested mixed operators)
     if expr_type == "And":
         operands = expr.get("operand", [])
-        parts = [parse_expression(op, depth) for op in operands]
+        parts = []
+        for op in operands:
+            inner = parse_expression(op, depth)
+            # Wrap OR operands in parentheses to preserve precedence
+            if isinstance(op, dict) and op.get("type") == "Or":
+                inner = f"({inner})"
+            parts.append(inner)
         return " AND ".join(parts)
 
     if expr_type == "Or":
         operands = expr.get("operand", [])
-        parts = [parse_expression(op, depth) for op in operands]
+        parts = []
+        for op in operands:
+            inner = parse_expression(op, depth)
+            # Wrap AND operands in parentheses to preserve precedence
+            if isinstance(op, dict) and op.get("type") == "And":
+                inner = f"({inner})"
+            parts.append(inner)
         return " OR ".join(parts)
 
     if expr_type == "Not":
@@ -156,6 +168,20 @@ def parse_expression(expr: dict, depth: int = 0) -> str:
     if expr_type == "ValueSetRef":
         name = expr.get("name", "?")
         return f'ValueSet "{name}"'
+
+    # Code/concept references
+    if expr_type == "CodeRef":
+        name = expr.get("name", "?")
+        return f'Code "{name}"'
+
+    if expr_type == "ConceptRef":
+        name = expr.get("name", "?")
+        return f'Concept "{name}"'
+
+    # Alias references (query variables)
+    if expr_type == "AliasRef":
+        name = expr.get("name", "?")
+        return name
 
     # Data retrieval (FHIR queries)
     if expr_type == "Retrieve":
@@ -202,6 +228,51 @@ def parse_expression(expr: dict, depth: int = 0) -> str:
 
     if expr_type == "Now":
         return "Now"
+
+    if expr_type == "Today":
+        return "Today"
+
+    # Temporal comparisons
+    if expr_type == "SameOrAfter":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} SAME_OR_AFTER {right}"
+
+    if expr_type == "SameOrBefore":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} SAME_OR_BEFORE {right}"
+
+    # Arithmetic
+    if expr_type == "Add":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} + {right}"
+
+    # Set operations
+    if expr_type == "Union":
+        operands = expr.get("operand", [])
+        parts = [parse_expression(op, depth) for op in operands]
+        return " UNION ".join(parts)
+
+    # Tuple/record creation
+    if expr_type == "Tuple":
+        elements = expr.get("element", [])
+        parts = [f"{e.get('name', '?')}={parse_expression(e.get('value', {}), depth)}"
+                 for e in elements]
+        return "{" + ", ".join(parts) + "}"
+
+    # List literal
+    if expr_type == "List":
+        elements = expr.get("element", [])
+        parts = [parse_expression(e, depth) for e in elements]
+        return "[" + ", ".join(parts) + "]"
 
     # Operand references (function parameters)
     if expr_type == "OperandRef":
@@ -261,6 +332,103 @@ def parse_expression(expr: dict, depth: int = 0) -> str:
 
     # Singleton extraction
     if expr_type == "SingletonFrom":
+        operand = expr.get("operand", {})
+        return parse_expression(operand, depth)
+
+    # Null checks
+    if expr_type == "IsNull":
+        operand = expr.get("operand", {})
+        return f"IsNull({parse_expression(operand, depth)})"
+
+    if expr_type == "IsTrue":
+        operand = expr.get("operand", {})
+        return f"IsTrue({parse_expression(operand, depth)})"
+
+    if expr_type == "IsFalse":
+        operand = expr.get("operand", {})
+        return f"IsFalse({parse_expression(operand, depth)})"
+
+    # Membership / interval tests
+    if expr_type == "In":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} IN {right}"
+
+    if expr_type == "InValueSet":
+        code = expr.get("code", {})
+        valueset = expr.get("valueset", {})
+        code_str = parse_expression(code, depth)
+        vs_name = valueset.get("name", "?")
+        return f'{code_str} IN ValueSet "{vs_name}"'
+
+    if expr_type == "Contains":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} CONTAINS {right}"
+
+    # Equivalence (~ operator, used for code/status comparisons)
+    if expr_type == "Equivalent":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} ~ {right}"
+
+    # Temporal operators
+    if expr_type == "After":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} AFTER {right}"
+
+    if expr_type == "Before":
+        operands = expr.get("operand", [])
+        if len(operands) >= 2:
+            left = parse_expression(operands[0], depth)
+            right = parse_expression(operands[1], depth)
+            return f"{left} BEFORE {right}"
+
+    # Aggregate functions
+    if expr_type == "Last":
+        source = expr.get("source", {})
+        return f"LAST({parse_expression(source, depth)})"
+
+    if expr_type == "First":
+        source = expr.get("source", {})
+        return f"FIRST({parse_expression(source, depth)})"
+
+    # List/type conversion
+    if expr_type == "ToList":
+        operand = expr.get("operand", {})
+        return parse_expression(operand, depth)
+
+    if expr_type == "Coalesce":
+        operands = expr.get("operand", [])
+        parts = [parse_expression(op, depth) for op in operands]
+        return f"COALESCE({', '.join(parts)})"
+
+    # Negate
+    if expr_type == "Negate":
+        operand = expr.get("operand", {})
+        return f"-{parse_expression(operand, depth)}"
+
+    # Start/End of interval
+    if expr_type == "Start":
+        operand = expr.get("operand", {})
+        return f"START({parse_expression(operand, depth)})"
+
+    if expr_type == "End":
+        operand = expr.get("operand", {})
+        return f"END({parse_expression(operand, depth)})"
+
+    # Type conversions (pass through)
+    if expr_type in ("ToString", "ToDateTime", "ToDate", "ToInteger",
+                     "ToDecimal", "ToConcept", "ToQuantity"):
         operand = expr.get("operand", {})
         return parse_expression(operand, depth)
 

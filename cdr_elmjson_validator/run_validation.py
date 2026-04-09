@@ -558,12 +558,13 @@ def build_gemini_prompt(elm_json: dict, library_name: str, cpg_content: str = No
     use_simplified = ablation_mode in ("full", "no_cpg")
     use_cpg = ablation_mode in ("full", "no_simplify") and cpg_content
 
+    from elm_simplifier import compare_format
     if use_simplified:
-        elm_text = simplify_elm_for_gemini(elm_json)
+        elm_text = compare_format(elm_json)
         elm_label = "ELM Implementation Summary"
     else:
-        elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)[:6000]
-        elm_label = "ELM JSON (truncated)"
+        elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)
+        elm_label = "ELM JSON"
 
     # Response format by prompt_mode
     if prompt_mode == "cot":
