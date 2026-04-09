@@ -322,6 +322,101 @@
       ],
       "expected_warnings": [],
       "notes": "INVALID CASE (semantic): Connective Tissue Disorders exclusion uses 'not exists' instead of 'exists' \u2014 the logic is inverted, so patients WITH CTD are included and patients WITHOUT CTD are excluded, contrary to the ATS/ERS/JRS/ALAT 2022 guideline which excludes CTD-ILD as a secondary cause."
+    },
+    "AAA-Missing-SexRestriction.json": {
+      "valid": false,
+      "cpg_file": "AAA-Screening_CPG.md",
+      "expected_errors": [
+        "male",
+        "sex",
+        "gender"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: missing condition): Male sex restriction removed from AAA screening. Screens females, contrary to USPSTF guideline which targets males aged 65-75 with smoking history."
+    },
+    "Depression-Missing-BipolarExclusion.json": {
+      "valid": false,
+      "cpg_file": "Depression_screening_CPG.md",
+      "expected_errors": [
+        "bipolar",
+        "exclusion",
+        "missing"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: missing condition): Bipolar diagnosis exclusion removed from depression screening. Patients with bipolar disorder would be incorrectly included, contrary to USPSTF guideline."
+    },
+    "Colon-Cancer-Inverted-Procedure.json": {
+      "valid": false,
+      "cpg_file": "Colon-Cancer-Screening-OpenEMR_CPG.md",
+      "expected_errors": [
+        "inverted",
+        "colonoscopy",
+        "logic",
+        "already"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: inverted logic): Colonoscopy count check changed from Equal(0) to Greater(0). CDS recommends screening only for patients who ALREADY had a colonoscopy, inverting the intent."
+    },
+    "Falls-Inverted-Assessment.json": {
+      "valid": false,
+      "cpg_file": "Falls-Prevention-Screening_CPG.md",
+      "expected_errors": [
+        "inverted",
+        "assessment",
+        "already",
+        "negation"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: inverted logic): NOT removed from NOT(Has Recent Falls Assessment). CDS screens only patients who ALREADY had a falls assessment, inverting the screening intent."
+    },
+    "Depression-WrongNesting.json": {
+      "valid": false,
+      "cpg_file": "Depression_screening_CPG.md",
+      "expected_errors": [
+        "nesting",
+        "bipolar",
+        "depression",
+        "both"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: wrong nesting): NOT(Bipolar) AND NOT(Depression) changed to NOT(Bipolar AND Depression). Only excludes patients with BOTH conditions instead of EITHER, a De Morgan's law violation."
+    },
+    "IPF-WrongExclusionNesting.json": {
+      "valid": false,
+      "cpg_file": "IPF-Screening_CPG.md",
+      "expected_errors": [
+        "exclusion",
+        "OR",
+        "AND",
+        "connective tissue",
+        "amiodarone"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: wrong nesting): Exclusion criteria changed from OR to AND. Patient must have BOTH connective tissue disorder AND amiodarone use to be excluded, instead of EITHER. Patients with only one contraindication would be incorrectly included."
+    },
+    "Falls-SwappedValueSet.json": {
+      "valid": false,
+      "cpg_file": "Falls-Prevention-Screening_CPG.md",
+      "expected_errors": [
+        "value set",
+        "wrong",
+        "depression",
+        "fall risk"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: swapped reference): Fall Risk Assessment value set OID replaced with Adult Depression Screening OID. CDS checks for depression screenings instead of fall risk assessments."
+    },
+    "Alcohol-SwappedValueSet.json": {
+      "valid": false,
+      "cpg_file": "Alcohol-Misuse-Screening_CPG.md",
+      "expected_errors": [
+        "value set",
+        "wrong",
+        "tobacco",
+        "alcohol"
+      ],
+      "expected_warnings": [],
+      "notes": "INVALID CASE (semantic: swapped reference): Alcohol Use Screening value set OID replaced with Tobacco Use Screening OID. CDS checks for tobacco screenings instead of alcohol misuse screenings."
     }
   }
 }
