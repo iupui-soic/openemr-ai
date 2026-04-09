@@ -571,10 +571,25 @@ def compare_format(elm_json: dict) -> str:
             lines.append(f"- {name}: {oid}")
     lines.append("")
 
-    # Full logic summary
-    lines.append("## Full Logic Summary")
+    # Logic definitions (without duplicate header/value sets from simplify_elm)
+    lines.append("## Logic Definitions")
     lines.append("")
-    lines.append(simplify_elm(elm_json))
+
+    statements = library.get("statements", {}).get("def", [])
+    for stmt in statements:
+        name = stmt.get("name", "Unknown")
+        if name == "Patient" and stmt.get("expression", {}).get("type") == "SingletonFrom":
+            continue
+        expr = stmt.get("expression", {})
+        expr_summary = parse_expression(expr, depth=0)
+        if stmt.get("type") == "FunctionDef":
+            operands = stmt.get("operand", [])
+            params = ", ".join(op.get("name", "?") for op in operands)
+            lines.append(f"### {name}({params})")
+        else:
+            lines.append(f"### {name}")
+        lines.append(f"{expr_summary}")
+        lines.append("")
 
     return "\n".join(lines)
 

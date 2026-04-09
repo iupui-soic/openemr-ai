@@ -82,7 +82,7 @@ def run_single_trial(client, model_id, groq_model, items, trial_num,
                 resp = client.chat.completions.create(
                     model=groq_model,
                     messages=[{"role": "user", "content": prompt}],
-                    temperature=TEMPERATURE, max_tokens=500)
+                    temperature=TEMPERATURE, max_tokens=4096)
                 answer = resp.choices[0].message.content.strip()
                 parsed = parse_response(answer)
                 r = {"file": item["file_name"], "library": item["library_name"],

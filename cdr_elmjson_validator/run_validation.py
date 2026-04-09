@@ -387,7 +387,7 @@ def validate_with_anthropic(items: list, model_id: str) -> list:
         try:
             message = client.messages.create(
                 model=api_model,
-                max_tokens=500,
+                max_tokens=4096,
                 temperature=0.1,
                 messages=[
                     {"role": "user", "content": prompt}

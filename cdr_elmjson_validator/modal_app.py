@@ -717,7 +717,7 @@ def run_batch_groq_validation(items: list, model_name: str, model_id: str) -> li
                 model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
-                max_tokens=500,
+                max_tokens=4096,
             )
             answer = response.choices[0].message.content.strip()
 
