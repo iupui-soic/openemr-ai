@@ -368,8 +368,19 @@ def build_prompt(elm_json, library_name, cpg_content=None, max_chars=None,
         elm_text = compare_format(elm_json)
         elm_label = "ELM Implementation Summary"
     else:
-        # Raw JSON (full ELM for no_simplify ablation modes)
-        elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)
+        # Raw JSON (full ELM for no_simplify ablation modes).
+        # Apply truncate_elm_json when max_chars is supplied so the raw JSON
+        # path respects the caller's prompt budget. Without this, large ELM
+        # files (e.g. USPSTFStatin at ~100 KB → 42K+ tokens) blow past any
+        # downstream model's context window. Groq API callers always pass
+        # MAX_PROMPT_CHARS_GROQ; local/Modal callers pass MAX_PROMPT_CHARS_LOCAL.
+        # A conservative 0.8× buffer is applied inside truncate_elm_json to
+        # leave room for the CPG text + task + response format suffix.
+        if max_chars:
+            truncated = truncate_elm_json(elm_json, max_chars=max_chars)
+            elm_text = json.dumps(truncated, indent=2)
+        else:
+            elm_text = json.dumps({"library": elm_json.get("library", {})}, indent=2)
         elm_label = "ELM JSON"
 
     if use_cpg:
