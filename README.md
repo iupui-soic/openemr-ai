@@ -13,19 +13,20 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 - **Step-by-step prompts**: Models compare extracted values against CPG requirements with explicit decision criteria
 - **Batch processing**: Each model loads once and processes all test files efficiently
 
-**Test Dataset**: 31 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines (15 valid, 16 invalid). Invalid cases include 13 parametric errors (wrong age thresholds, lookback intervals, clinical values) and 3 semantic logic errors (Boolean operator swap, missing exclusion check, missing sub-population bound). See [`test_data/BENCHMARK.md`](cdr_elmjson_validator/test_data/BENCHMARK.md) for full methodology.
+**Test Dataset**: 41 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines (16 valid, 25 invalid). Invalid cases include 13 parametric errors (wrong age thresholds, lookback intervals, clinical values) and 12 semantic logic errors spanning 4 categories: missing condition, inverted logic, wrong nesting, and swapped references. See [`test_data/BENCHMARK.md`](cdr_elmjson_validator/test_data/BENCHMARK.md) for full methodology.
 
 ### Models Evaluated (16 open-weight models + 1 proprietary reference)
 
 | Model | Provider | Params / Active | Infrastructure |
 |-------|----------|-----------------|----------------|
-| **Gemma 4 31B** | Google | 31B dense | Local RTX 6000 (4-bit) |
-| **Gemma 4 26B A4B** | Google | 26B / 4B active MoE | Local RTX 6000 (4-bit) |
-| **Qwen3.5 35B A3B** | Alibaba | 35B / 3B active MoE | OpenRouter API |
 | **Qwen 3 32B** | Alibaba | 32B dense | Groq API |
-| **GPT-OSS 20B/120B** | OpenAI | 20-120B / 3.6-5.1B active MoE | Groq API |
+| **GPT-OSS 120B** | OpenAI | 120B / 5.1B active MoE | Groq API |
+| **Qwen3.5 35B A3B** | Alibaba | 35B / 3B active MoE | OpenRouter API |
 | **Llama 3.3 70B** | Meta | 70B dense | Groq API |
+| **Gemma 4 26B A4B** | Google | 26B / 4B active MoE | Modal L40S (Unsloth GGUF Q4\_K\_M via llama.cpp) |
 | **GPT-5.4-mini** (proprietary reference) | OpenAI | — | OpenAI API |
+| **Gemma 4 31B** | Google | 31B dense | Modal A100 80GB (Unsloth GGUF Q4\_K\_M via llama.cpp) |
+| **GPT-OSS 20B** | OpenAI | 20B / 3.6B active MoE | Groq API |
 | MedGemma 4B / 1.5 4B | Google | 4B | Local RTX 6000 (bfloat16) |
 | Gemma 3 4B | Google | 4B | OpenRouter API |
 | Phi-3 Mini | Microsoft | 3.8B | Local RTX 6000 |
@@ -34,17 +35,17 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 ### Latest Results (41 Test Cases, 16 Valid / 25 Invalid: 13 parametric, 12 semantic)
 
-All results are means over 5 independent trials at temperature 0.1. Base rate: 39.0%.
+All results are means over 5 independent trials at temperature 0.1 (T=0.1 sampling for most models; greedy decoding for Gemma 4 GGUF which is deterministic across trials). Base rate: 39.0%. Each model is measured at its ecosystem-standard deployment precision: GPT-OSS at MXFP4 (native release via Groq LPU), Qwen3/Llama/Qwen3.5 at fp16 (Groq/OpenRouter default), Gemma 4 at Unsloth GGUF Q4\_K\_M via llama.cpp on Modal GPUs (the dominant 4-bit deployment format for edge inference), GPT-5.4-mini via OpenAI API, and mid/small models locally at bf16.
 
 | Model | Params | Accuracy | ±SD | Sens. | Spec. | F1 | Param | Semantic |
 |-------|--------|----------|-----|-------|-------|-----|-------|----------|
-| **Gemma 4 26B A4B** | 26B (4B active MoE) | **92.7%** | 0.0 | 0.88 | 0.96 | **0.90** | 100% | 92% |
-| **Gemma 4 31B** | 31B | **92.7%** | 0.0 | 0.81 | **1.00** | **0.90** | 100% | 100% |
-| **Qwen3 32B** | 32B | 90.7% | 2.0 | 0.88 | 0.93 | 0.88 | 100% | 85% |
+| **Qwen3 32B** | 32B | **90.7%** | 2.0 | 0.88 | 0.93 | **0.88** | 100% | 85% |
 | **GPT-OSS 120B** | 120B (5.1B active MoE) | 85.9% | 2.0 | 0.64 | 1.00 | 0.78 | 100% | 100% |
 | **Qwen3.5 35B A3B** | 35B (3B active MoE) | 85.4% | 3.4 | 0.69 | 0.96 | 0.78 | 100% | 92% |
 | **Llama 3.3 70B** | 70B | 83.4% | 1.1 | 0.88 | 0.81 | 0.80 | 100% | 60% |
+| **Gemma 4 31B** | 31B | 82.9% | 0.0 | 0.69 | 0.92 | 0.76 | 85% | **100%** |
 | GPT-5.4-mini (proprietary) | — | 81.0% | 3.2 | 0.51 | 1.00 | 0.67 | 100% | 100% |
+| **Gemma 4 26B A4B** | 26B (4B active MoE) | 80.5% | 0.0 | 0.62 | 0.92 | 0.71 | 100% | 83% |
 | **GPT-OSS 20B** | 20B (3.6B active MoE) | 79.5% | 4.1 | 0.60 | 0.92 | 0.70 | 92% | 92% |
 | MedGemma 1.5 4B | 4B | 70.2% | 6.1 | 0.64 | 0.74 | 0.62 | 83% | 65% |
 | Phi-3 Mini | 3.8B | 50.7% | 2.7 | 0.99 | 0.20 | 0.61 | 37% | 2% |
@@ -59,23 +60,25 @@ Benchmark expanded from 31 to 41 cases (added 2 IPF cases + 8 new semantic error
 
 ### Ablation Study (8 Frontier Models × 4 Conditions × 5 trials)
 
-| Condition | Gemma 4 26B A4B | Gemma 4 31B | Qwen3-32B | Qwen3.5-35B-A3B | GPT-OSS-120B | Llama 70B | GPT-OSS-20B | GPT-5.4-mini |
+| Condition | Qwen3-32B | Llama 70B | Qwen3.5-35B-A3B | GPT-OSS-120B | Gemma 4 31B | GPT-5.4-mini | Gemma 4 26B A4B | GPT-OSS-20B |
 |-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| | *4B active* | *31B dense* | *32B dense* | *3B active* | *5.1B active* | *70B dense* | *3.6B active* | *proprietary* |
-| Full (simplified+CPG) | **90.2±0.0** | **92.7±0.0** | **88.3±2.7** | **83.9±3.3** | **83.9±2.8** | **84.9±1.1** | **80.0±2.0** | **82.9±2.4** |
-| No CPG | 56.1 (Δ-34) | 70.7 (Δ-22) | 60.0 (Δ-28) | 51.7 (Δ-32) | 62.4 (Δ-22) | 51.7 (Δ-33) | 62.4 (Δ-18) | 69.3 (Δ-14) |
-| No Simplification | 61.0 (Δ-29) | 61.0 (Δ-32) | 83.9 (Δ-4) | 77.1 (Δ-7) | 80.5 (Δ-3) | 82.9 (Δ-2) | 70.7 (Δ-9) | 75.1 (Δ-8) |
-| Neither | 61.5 (Δ-29) | 65.9 (Δ-27) | 62.4 (Δ-26) | 40.0 (Δ-44) | 68.8 (Δ-15) | 45.9 (Δ-39) | 58.0 (Δ-22) | 71.2 (Δ-12) |
+| | *32B dense* | *70B dense* | *3B active* | *5.1B active* | *31B dense Q4* | *proprietary* | *4B active Q4* | *3.6B active* |
+| Full (simplified+CPG) | **88.3±2.7** | **84.9±1.1** | **83.9±3.3** | **83.9±2.8** | **82.9±0.0** | **82.9±2.4** | **80.5±0.0** | **80.0±2.0** |
+| No CPG | 60.0 (Δ-28) | 51.7 (Δ-33) | 51.7 (Δ-32) | 62.4 (Δ-22) | 61.0 (Δ-22) | 69.3 (Δ-14) | 53.7 (Δ-27) | 62.4 (Δ-18) |
+| No Simplification | 83.9 (Δ-4) | 82.9 (Δ-2) | 77.1 (Δ-7) | 80.5 (Δ-3) | **68.3 (Δ-15)** | 75.1 (Δ-8) | **82.4 (Δ+2)** | 70.7 (Δ-9) |
+| Neither | 62.4 (Δ-26) | 45.9 (Δ-39) | 40.0 (Δ-44) | 68.8 (Δ-15) | 68.3 (Δ-15) | 71.2 (Δ-12) | 53.7 (Δ-27) | 58.0 (Δ-22) |
 
 **Key Findings:**
 
-- **Gemma 4 26B A4B and 31B tied for top accuracy (92.7%)** — both fully deterministic (±0.0% SD). The MoE variant with only 4B active parameters matches the 31B dense model.
-- **ELM Simplifier as compute equalizer**: Models with small active parameter counts benefit most from simplification. Gemma 4 26B A4B drops from 90.2% → 61.0% (Δ=-29pp) without it, while Llama 70B drops only 2pp. The gradient tracks active parameters precisely.
-- **CPG reference is universally essential**: removing it reduces accuracy by 14–34 pp across all frontier models.
-- **Every frontier model achieves 100% on parametric errors** with the full pipeline — the simplifier's Phase 1 (numeric extraction) ceiling-caps numeric comparison.
-- **Semantic error detection varies**: Gemma 4 31B, GPT-OSS-120B, Qwen3.5 and GPT-5.4-mini achieve 100% on semantic errors; Llama 70B lags at 60%. The simplifier's Phase 2 (full logic tree) enables semantic detection.
-- **Sensitivity–specificity tradeoff**: High-specificity models (GPT-OSS-120B, GPT-5.4-mini) miss 36–49% of valid cases, while balanced models (Gemma 4 26B A4B, Qwen3-32B, Llama 70B) achieve sensitivity ≥0.88 and specificity ≥0.81.
-- **Medical pretraining (MedGemma)** shows no consistent advantage: MedGemma 4B matches Gemma 3 4B at base rate (39.0%), while MedGemma 1.5 4B reaches 70.2% — the only medical model showing benefit, though still below frontier tier.
+- **Qwen3 32B leads overall (90.7% multi-trial, 88.3% full-ablation)** — dense 32B architecture with balanced sensitivity (0.88) and specificity (0.93), the highest F1 (0.88) of any model tested.
+- **CPG reference is the dominant contributor**: removing it reduces accuracy by 14–33 pp across frontier models, larger than the effect of removing simplification in every case.
+- **The ELM Simplifier acts as a quantization-compensation mechanism for dense architectures at deployment precision.** Gemma 4 31B (dense, Q4\_K\_M) drops 14.6 pp without simplification (82.9% → 68.3%), while Gemma 4 26B A4B (4B active MoE, same Q4\_K\_M) actually *gains* 2.0 pp (80.5% → 82.4%). The architecture-specific effect is striking: at 4-bit precision, sparse MoE experts are inherently more robust to quantization noise and can parse raw ELM JSON without assistance; dense layers lose attention-pattern fidelity and require the simplifier's structured output to recover accuracy.
+- **Without the simplifier at Q4, 26B A4B beats 31B dense by 14 pp** (82.4% vs 68.3%) despite having only 4B active parameters. With the simplifier, the dense model recovers to roughly match the MoE (82.9% vs 80.5%). The simplifier is the compensating mechanism that closes the dense-vs-MoE gap at deployment precision.
+- **Joint ablation is non-additive**: Qwen3.5-35B-A3B drops 44 pp with both scaffolds removed (vs. 32+7 = 39 pp additive), and Llama 70B drops 39 pp (vs. 33+2 = 35 pp). CPG and simplification interact.
+- **Every frontier model except Gemma 4 31B at Q4 achieves 100% on parametric errors** with the full pipeline — the simplifier's Phase 1 (numeric extraction) ceiling-caps numeric comparison. Gemma 4 31B at Q4 drops to 85% on parametric errors, showing that dense quantization affects even the simplest comparison task.
+- **Semantic error detection varies**: GPT-OSS-120B, GPT-5.4-mini, and Gemma 4 31B achieve 100% on semantic errors; Llama 70B lags at 60%. The simplifier's Phase 2 (full logic tree) enables semantic detection.
+- **Sensitivity–specificity tradeoff**: specificity-heavy models (GPT-OSS-120B, GPT-5.4-mini) miss 36–49% of valid cases; Qwen3-32B and Llama 70B achieve balanced sensitivity ≥0.88 and specificity ≥0.81. The two Gemma 4 variants sit in the middle at ~0.62–0.69 sensitivity / ~0.92 specificity.
+- **Medical pretraining (MedGemma)** shows no consistent advantage: MedGemma 4B matches the base rate (39.0%), while MedGemma 1.5 4B reaches 70.2% — the only medical model above mid-range, though still below frontier tier.
 - All 4B-and-below models fall below the 48.4% naive baseline on the expanded 41-case benchmark, confirming a capability threshold around 20B total / 4B active parameters.
 
 Detailed analysis available in the [Jupyter notebooks](cdr_elmjson_validator/notebooks/).
@@ -391,18 +394,26 @@ cdr_elmjson_validator/
 ├── run_prompt_experiments.py # Prompt engineering experiment runner + analysis
 ├── run_experiments_direct.py # Direct Groq API experiment runner
 ├── run_all_expanded.py     # Run all 12 models on expanded benchmark
-├── create_expanded_cases.py # Script that generated the 9 new test cases
-├── test_data/              # 31 ELM JSON files, CPG markdown, ground_truth.json, BENCHMARK.md
+├── run_multi_trial.py      # Multi-trial runner for Groq models (5 trials, T=0.1)
+├── run_new_models_multi_trial.py  # Multi-trial for OpenRouter + OpenAI models
+├── run_ablation_multi_trial.py    # Ablation multi-trial for Groq models
+├── run_new_ablation_multi_trial.py # Ablation multi-trial for OpenRouter + OpenAI
+├── create_expanded_cases.py # Script that generated 6 parametric variants
+├── create_semantic_cases.py # Script that generated 8 semantic error cases
+├── generate_figure3_heatmap.py   # Per-case heatmap (Figure 3 in paper)
+├── test_data/              # 41 ELM JSON files, CPG markdown, ground_truth.json, BENCHMARK.md
 ├── notebooks/              # 4 Jupyter notebooks with pre-rendered analysis
 │   ├── 01_elm_validation_results.ipynb
 │   ├── 02_error_analysis.ipynb
 │   ├── 03_ablation_study.ipynb
 │   └── 04_prompt_engineering.ipynb
 └── results/
-    ├── results-*.csv       # 12 model result CSVs (31 cases each)
-    ├── ablation/           # 4 models x 4 conditions = 16 CSVs
+    ├── results-*.csv       # Legacy single-run results (31 cases)
+    ├── multi_trial/        # 16 models x 5 trials x 41 cases
+    ├── ablation_multi_trial/ # 8 frontier models x 4 conditions x 5 trials x 41 cases
+    ├── ablation/           # Single-run ablation (legacy)
     ├── prompts/            # 3 models x 5 strategies = 15 CSVs
-    └── analysis/           # Statistical outputs, heatmap PNG, CSVs
+    └── analysis/           # Statistical outputs, Figure 3 heatmap PNG/PDF
 
 openemr_whisper_wer/
 ├── whisper_wer.py          # OpenAI Whisper evaluation

@@ -137,8 +137,8 @@ CASE_LABELS = {
 # ── Model tier ordering (matches Table I) ────────────────────────────────────
 # Frontier ordered by accuracy on 41-case benchmark (descending)
 TIER_FRONTIER = [
-    "gemma-4-26b-a4b", "gemma-4-31b", "qwen3-32b",
-    "gpt-oss-120b", "qwen3.5-35b-a3b", "llama-3.3-70b",
+    "qwen3-32b", "gpt-oss-120b", "qwen3.5-35b-a3b",
+    "llama-3.3-70b", "gemma-4-26b-a4b", "gemma-4-31b",
     "gpt-oss-20b",
 ]
 TIER_PROPRIETARY = ["gpt-5.4-mini"]
