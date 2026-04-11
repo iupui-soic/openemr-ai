@@ -6,34 +6,39 @@ This benchmark evaluates whether LLMs can verify that clinical decision support
 (CDS) implementations in HL7 ELM JSON format correctly match their corresponding
 Clinical Practice Guidelines (CPGs).
 
-- **31 test cases** (15 valid, 16 invalid)
-- **15 USPSTF screening interventions** spanning preventive care domains
+- **41 test cases** (16 valid, 25 invalid)
+- **16 clinical domains** spanning USPSTF preventive screening plus ATS/ERS IPF
 - Each test case pairs an ELM JSON file with a CPG reference document
 - Ground truth labels in `ground_truth.json`
-- Near-balanced class distribution (48.4% valid / 51.6% invalid)
+- Class distribution: 39.0% valid (16/41) / 61.0% invalid (25/41)
+- Invalid cases split: **13 parametric errors** + **12 semantic logic errors**
+  across 4 categories
 
 ## Test Case Construction
 
-### Valid Cases (15)
+### Valid Cases (16)
 
 Each valid ELM file was sourced from real CDS implementations (OpenEMR or
-CDS Connect repositories) that correctly implement USPSTF screening
+CDS Connect repositories) that correctly implement clinical screening
 recommendations. The CPG markdown documents were extracted from the
-corresponding USPSTF recommendation statements.
+corresponding USPSTF statements or (for IPF) the ATS/ERS/JRS/ALAT 2022 guideline.
 
-**Screening domains covered:**
-- Cancer screening: breast, cervical, colorectal (OpenEMR), lung, prostate
-- Infectious disease: chlamydia, HIV (used as invalid case base)
-- Metabolic: diabetes (used as invalid case base), obesity/prediabetes (invalid)
-- Cardiovascular: hypertension (invalid), statin therapy (invalid), AAA
-- Mental health: depression, anxiety (invalid)
+**Clinical domains covered:**
+
+- Cancer screening: breast, cervical, colon (OpenEMR), lung, prostate
+- Infectious disease: chlamydia
+- Cardiovascular: AAA
+- Mental health: depression
 - Substance use: alcohol, tobacco
 - Musculoskeletal: osteoporosis
-- Other: falls prevention, weight screening, USPSTF statin shared logic
+- Fall risk: falls prevention
+- Weight: adult weight screening and follow-up
+- Multi-library CQL: USPSTF statin shared logic, condition/medication count
+- Pulmonary: idiopathic pulmonary fibrosis (IPF)
 
-### Invalid Cases (16)
+### Invalid Cases (25)
 
-Invalid cases comprise two error categories:
+Invalid cases comprise two error categories that test distinct capabilities:
 
 #### Parametric Errors (13 cases)
 
@@ -47,7 +52,7 @@ compiler itself.
 |---|---|---|
 | Hypertension-Screening | Age + time | Age >= 25 (should be 18); 6-month lookback (should be 1 year) |
 | Statin-Therapy-for-CVD-Prevention | Age | Upper age 80 (should be 85) |
-| Type-2-Diabetes-Diagnosis | Value | HbA1c >= 9.0 g% (should be >= 6.5%) |
+| Type-2-Diabetes-Diagnosis | Value | HbA1c >= 9.0% (should be >= 6.5%) |
 | Colorectal-Cancer-Average-Risk | Age + time | Age >= 60 (should be 45); 2-year lookback (should be 1 year) |
 | Anxiety-Screening | Time | 6-month lookback (should be 1 year) |
 | HIV-Screening | Age | Age >= 30 (should be 15-65) |
@@ -59,17 +64,44 @@ compiler itself.
 | Depression-Screening-WrongLookback | Time | 3-month lookback (should be 1 year) |
 | Osteoporosis-WrongLookback | Time | 6-month lookback (should be 2 years) |
 
-#### Semantic Logic Errors (3 cases)
+#### Semantic Logic Errors (12 cases, 4 categories)
 
 Structural/logical modifications that compile correctly but implement the
 wrong clinical logic. These test whether models can detect errors beyond
-simple numeric mismatches.
+simple numeric mismatches, requiring understanding of Boolean operator
+semantics, expression tree structure, and value set references.
 
-| Invalid Case | Error Type | Specific Mismatch |
-|---|---|---|
-| Breast-Cancer-WrongOperator | Operator swap | AND changed to OR in inclusion criteria (female OR age>=40, instead of female AND age>=40) |
-| Tobacco-Missing-Exclusion | Missing check | Prior screening lookback removed entirely (all 18+ flagged regardless of prior screening) |
-| Lung-Cancer-Missing-SubPopulation | Missing bound | Upper age limit removed (>=50 with no cap, should be 50-80) |
+**Category 1: Missing condition** — expression branch deleted from an AND chain
+
+| Invalid Case | Specific Mismatch |
+|---|---|
+| AAA-Missing-SexRestriction | Male-sex restriction removed (female patients falsely qualify) |
+| Depression-Missing-BipolarExclusion | NOT(bipolar diagnosis) exclusion removed |
+| Tobacco-Missing-Exclusion | Prior-screening lookback removed entirely |
+| Lung-Cancer-Missing-SubPopulation | Upper age limit removed (>=50 with no cap) |
+
+**Category 2: Inverted logic** — NOT operator added or removed
+
+| Invalid Case | Specific Mismatch |
+|---|---|
+| Colon-Cancer-Inverted-Procedure | Count==0 changed to Count>0 (screens patients who ALREADY had colonoscopy) |
+| Falls-Inverted-Assessment | NOT removed from NOT(HasRecentAssessment) |
+| IPF-Screening-WrongCT | Not-exists changed to exists for Connective Tissue Disorder exclusion |
+
+**Category 3: Wrong nesting** — Boolean operators restructured
+
+| Invalid Case | Specific Mismatch |
+|---|---|
+| Breast-Cancer-WrongOperator | AND changed to OR in inclusion criteria (female OR age>=40) |
+| Depression-WrongNesting | NOT(A) AND NOT(B) changed to NOT(A AND B) (De Morgan's law violation) |
+| IPF-WrongExclusionNesting | OR changed to AND in exclusion criteria (both CTD and amiodarone required to exclude) |
+
+**Category 4: Swapped reference** — value set OID points to wrong clinical concept
+
+| Invalid Case | Specific Mismatch |
+|---|---|
+| Falls-SwappedValueSet | Fall Risk Assessment VS replaced with Adult Depression Screening VS |
+| Alcohol-SwappedValueSet | Alcohol Use Screening VS replaced with Tobacco Use Screening VS |
 
 ### Error Injection Methodology
 
@@ -77,34 +109,41 @@ simple numeric mismatches.
   clinical thresholds). Each modification creates a clinically meaningful
   difference. Logical structure and expression nesting preserved.
 - **Semantic errors**: Expression tree structure modified (Boolean operators
-  swapped, expression branches deleted, comparison operands removed). These
-  are valid ELM that the CQL compiler accepts but that implement incorrect
-  clinical logic.
+  swapped, expression branches deleted, NOT operators added/removed, value
+  set OIDs replaced). These are valid ELM that the CQL compiler accepts but
+  that implement incorrect clinical logic.
 - Each invalid case uses the **same CPG file** as its source valid case —
   the error is in the ELM implementation, not the CPG reference.
-- New cases were generated programmatically via `create_expanded_cases.py`
-  and verified manually.
+- Parametric cases were generated via `create_expanded_cases.py` and verified
+  manually.
+- Semantic cases were generated via `create_semantic_cases.py` and verified
+  manually. IPF-Screening-WrongCT was authored directly against the ATS/ERS
+  guideline source.
 
 ### Class Distribution
 
-- 48.4% positive (valid) / 51.6% negative (invalid)
-- Near-balanced distribution eliminates the class imbalance concern present
-  in earlier versions (68.2% base rate)
-- A naive "always valid" classifier now achieves only 48.4% accuracy
-- Models must substantially exceed 50% to demonstrate validation capability
+- 39.0% positive (valid: 16/41) / 61.0% negative (invalid: 25/41)
+- A naive "always valid" classifier achieves 39.0% accuracy
+- A naive "always invalid" classifier achieves 61.0% accuracy
+- Frontier models must substantially exceed both baselines to demonstrate
+  genuine validation capability with balanced sensitivity and specificity
 
 ## File Structure
 
 ```
 test_data/
-├── ground_truth.json              # Labels, CPG mappings, expected errors (31 cases)
+├── ground_truth.json              # Labels, CPG mappings, expected errors (41 cases)
 ├── BENCHMARK.md                   # This file
-├── AAA-Screening.json             # Valid ELM files (15)
-├── AAA-Screening_CPG.md           # Corresponding CPG documents (15)
+├── AAA-Screening.json             # Valid ELM files (16)
+├── AAA-Screening_CPG.md           # Corresponding CPG documents
 ├── AAA-Screening-WrongAge.json    # Parametric variant (reuses same CPG)
-├── Breast-Cancer-WrongOperator.json # Semantic logic error (reuses same CPG)
+├── AAA-Missing-SexRestriction.json # Semantic variant (reuses same CPG)
+├── Breast-Cancer-WrongOperator.json # Semantic logic error
+├── IPF-Screening.json             # IPF valid case
+├── IPF-Screening-WrongCT.json     # IPF semantic error
+├── IPF-Screening_CPG.md           # IPF CPG from ATS/ERS guideline
 ├── ...
-└── Tobacco-Missing-Exclusion.json
+└── Alcohol-SwappedValueSet.json
 ```
 
 ## Ground Truth Schema
@@ -129,17 +168,24 @@ test_data/
 - `cpg_file`: Reference CPG document for comparison
 - `expected_errors`: Keywords that should appear in error explanations
   (for invalid cases). Used for error_match scoring.
-- `notes`: Human-readable description of the test case and any
-  intentional errors
+- `notes`: Human-readable description. For semantic errors, includes
+  the substring "semantic" for programmatic categorization.
 
 ## Evaluation Protocol
 
-1. **Input**: ELM JSON is simplified into a structured format extracting
-   age thresholds, time intervals, and value sets (via `simplify_elm_for_prompt`)
+1. **Input**: ELM JSON is processed by the two-phase ELM Simplifier:
+   - Phase 1: Extract age thresholds, time intervals, value set references
+     as structured key-value pairs
+   - Phase 2: Translate the full expression tree into human-readable logic
+     summary preserving AND/OR/NOT operators, expression references, IsNull,
+     Equivalent, In, temporal operators, and Query structure
+   (implemented in `elm_simplifier.py::compare_format`)
 2. **Prompt**: Simplified ELM + CPG presented to model with structured
    output instructions (VALID: YES/NO, ERRORS: list)
-3. **Parsing**: Response parsed for VALID/ERRORS fields
-4. **Scoring**: Binary accuracy (correct valid/invalid prediction)
+3. **Parsing**: Response parsed for VALID/ERRORS fields (supports both
+   bare responses and responses wrapped in `<think>...</think>` tags)
+4. **Scoring**: Binary accuracy (correct valid/invalid prediction) plus
+   per-category disaggregation (parametric, semantic, valid)
 
 ### Metrics
 
@@ -148,125 +194,134 @@ test_data/
 | Accuracy | (TP + TN) / N |
 | Sensitivity | TP / (TP + FN) — correctly identifies valid ELM |
 | Specificity | TN / (TN + FP) — correctly identifies invalid ELM |
-| PPV | TP / (TP + FP) |
-| NPV | TN / (TN + FN) |
 | F1 | 2·TP / (2·TP + FP + FN) |
-| Wilson CI | 95% confidence interval for accuracy proportion |
+| Parametric accuracy | Correct / 13 parametric cases |
+| Semantic accuracy | Correct / 12 semantic cases |
+| Valid accuracy | Correct / 16 valid cases |
 
 ### Statistical Tests
 
 | Test | Purpose |
 |---|---|
-| Wilson score interval | CIs for per-model accuracy (handles small n) |
-| McNemar's exact test | Pairwise model comparison on matched cases |
-| Fisher's exact test | Group comparison (frontier vs small models) |
-| Cohen's w / chi-square | Effect size vs base rate |
-| Post-hoc power analysis | Detectable effect at n=31 |
+| Fisher's exact test | Group comparison (frontier vs mid-range, frontier vs small) |
+| McNemar's exact test | Pairwise model comparison on matched cases (Bonferroni corrected) |
+| Multi-trial variance | Mean ± SD over 5 independent trials at T=0.1 |
+
+## Models Evaluated
+
+### Open-Weight Frontier (7 models)
+
+| Model | Params / Active | Infrastructure |
+|---|---|---|
+| Gemma 4 31B | 31B dense | Local RTX 6000 (4-bit quantization) |
+| Gemma 4 26B A4B | 26B / 4B active MoE | Local RTX 6000 (4-bit) |
+| Qwen3 32B | 32B dense | Groq API |
+| GPT-OSS 120B | 120B / 5.1B active MoE | Groq API |
+| Qwen3.5 35B A3B | 35B / 3B active MoE | OpenRouter API |
+| Llama 3.3 70B | 70B dense | Groq API |
+| GPT-OSS 20B | 20B / 3.6B active MoE | Groq API |
+
+### Proprietary Reference (1 model)
+
+| Model | Infrastructure |
+|---|---|
+| GPT-5.4 mini | OpenAI API (reasoning_effort=low) |
+
+### Mid-Range (4 models, 3.8–4B)
+
+| Model | Infrastructure |
+|---|---|
+| MedGemma 1.5 4B | Local RTX 6000 (bfloat16) |
+| Phi-3 Mini | Local RTX 6000 |
+| Gemma 3 4B | OpenRouter API |
+| MedGemma 4B | Local RTX 6000 (bfloat16) |
+
+### Small (4 models, 1–3B)
+
+| Model | Infrastructure |
+|---|---|
+| Llama-3.2-1B | Local RTX 6000 |
+| Qwen-2.5-3B | Local RTX 6000 |
+| Llama-3.2-3B | Local RTX 6000 |
+| Qwen-2.5-1.5B | Local RTX 6000 |
 
 ## Ablation Study Design
 
-Four conditions tested across 4 frontier models (GPT-OSS-20B, GPT-OSS-120B,
-Qwen3-32B, Llama 3.3 70B):
+Four conditions tested across 8 frontier-class models (7 open-weight + 1
+proprietary reference) with 5 trials per condition per model at temperature 0.1:
 
 | Condition | ELM Input | CPG Reference |
-|-----------|-----------|---------------|
-| Full (baseline) | Simplified | Yes |
-| No CPG | Simplified | No |
-| No Simplification | Raw JSON | Yes |
-| Neither | Raw JSON | No |
+|---|---|---|
+| Full (baseline) | Simplified (both phases) | Yes |
+| No CPG | Simplified (both phases) | No |
+| No Simplification | Raw ELM JSON | Yes |
+| Neither | Raw ELM JSON | No |
 
-Results in `results/ablation/` (single run) and `results/ablation_multi_trial/`
-(5-trial means).
-
-## Prompt Engineering Design
-
-Five strategies tested across 3 frontier models:
-
-| Strategy | Description |
-|----------|-------------|
-| Standard | Direct comparison instruction |
-| Chain-of-thought | Step-by-step reasoning before verdict |
-| Few-shot | 2 exemplars (1 valid, 1 invalid) prepended |
-| Structured | Category-by-category checklist |
-| Minimal | Bare minimum instruction |
-
-Results in `results/prompts/`.
+Results in `results/ablation_multi_trial/`.
 
 ## Limitations
 
-1. **Sample size**: n=31 provides 80% power at Cohen's w>=0.50 (large
-   effect). The primary finding (frontier vs small gap, Fisher p<0.001,
-   OR=8.54) is robust. Fine-grained pairwise ranking needs n>=88.
-2. **Error types**: Primarily parametric errors (numeric mismatches) with
-   3 semantic logic errors. Does not test terminology binding errors or
-   complex multi-library interactions.
-3. **Single domain**: All cases are USPSTF preventive screening; other
-   CDS domains (treatment protocols, drug interactions) may differ.
-4. **Deterministic simplification**: The ELM simplifier extracts a fixed
-   set of features; errors in unextracted features would not be detected.
+1. **Sample size**: n=41 provides improved discriminative power over the
+   earlier 31-case version, but fine-grained pairwise ranking of top-tier
+   models (all >85% accuracy) still benefits from larger benchmarks. The
+   primary finding (frontier vs mid-range gap, Fisher p<0.001) is robust.
+2. **Error type coverage**: 13 parametric + 12 semantic errors across 4
+   semantic categories (missing condition, inverted logic, wrong nesting,
+   swapped reference). Does not exhaustively test terminology binding
+   errors or complex multi-library interactions.
+3. **Clinical domain**: Primarily USPSTF preventive screening plus IPF;
+   other CDS domains (treatment protocols, drug-drug interactions,
+   dosing logic) may show different performance characteristics.
+4. **Deterministic simplification**: The ELM Simplifier's two-phase
+   extraction is comprehensive for standard HL7 ELM constructs but may
+   miss clinical logic expressed through unusual or custom ELM extensions.
 
 ## Reproducibility
 
-Frontier model results are reported as means over 5 independent trials at
-temperature 0.1 to quantify stochastic variance inherent in LLM inference.
+All frontier, proprietary, and mid-range model results are means over
+**5 independent trials at temperature 0.1** to quantify stochastic variance.
+Multi-trial protocol (see `run_multi_trial.py` and `run_new_models_multi_trial.py`)
+was applied uniformly across all 16 open-weight models and the GPT-5.4 mini
+proprietary reference.
 
-| Model | Mean Accuracy | ±SD | Range |
-|-------|---------------|-----|-------|
-| Llama 3.3 70B | 89.0% | 1.6 | 87.1–90.3% |
-| GPT-OSS 20B | 88.4% | 1.6 | 87.1–90.3% |
-| GPT-OSS 120B | 88.4% | 1.6 | 87.1–90.3% |
-| Qwen3 32B | 85.8% | 1.6 | 80.6–93.5% |
+Scripts:
 
-- Single-run results (87.1–93.5%) fall within the multi-trial confidence
-  band, confirming that apparent rank differences among frontier models
-  reflect stochastic variance rather than genuine capability gaps.
-- Per-case stability analysis (`results/multi_trial/per_case_stability.csv`)
-  shows 27/31 cases are deterministic (same result across all 5 trials);
-  4 cases exhibit stochastic behavior.
-- Few-shot and standard prompts converge to identical mean accuracy
-  (88.4 ± 1.6%) for GPT-OSS-20B, indicating single-run prompt strategy
-  differences also reflect variance.
+- `run_multi_trial.py` — 5-trial multi-trial for the 4 Groq-hosted frontier
+  models (GPT-OSS 20B/120B, Llama 3.3 70B, Qwen3-32B)
+- `run_ablation_multi_trial.py` — 4-condition × 5-trial ablation for the
+  same 4 Groq models
+- `run_new_models_multi_trial.py` — 5-trial multi-trial for Gemma 4 models,
+  Qwen3.5, GPT-5.4 mini, MedGemma, and local small models
+- `run_new_ablation_multi_trial.py` — 4-condition × 5-trial ablation for
+  Gemma 4, Qwen3.5, and GPT-5.4 mini
+- `create_expanded_cases.py` — regenerate parametric error cases
+- `create_semantic_cases.py` — regenerate semantic error cases (categories
+  1-4 excluding the original 3 and IPF-WrongCT)
 
-Ablation results are similarly reported as 5-trial means:
+Raw per-trial CSVs and summaries:
 
-| Model | Full | No Simplify (raw+CPG) |
-|-------|------|-----------------------|
-| Llama 3.3 70B | 89.0±1.6 | **96.8±0.0** (deterministic) |
-| GPT-OSS 20B | 88.4±1.6 | 57.4±3.8 (Δ=-31pp) |
-
-Scripts: `run_multi_trial.py` (standard prompt), `run_ablation_multi_trial.py`
-(4 ablation conditions). Raw per-trial CSVs and summaries in
-`results/multi_trial/` and `results/ablation_multi_trial/`.
+- `results/multi_trial/` — multi-trial results for all models
+- `results/ablation_multi_trial/` — ablation results for 8 models
+- `results/multi_trial/multi_trial_summary.csv` — aggregate statistics
+- `results/multi_trial/per_case_stability.csv` — per-case stability across trials
 
 ## Reproducing Results
 
 ```bash
-# Run a single model (single run)
-python run_validation.py --model gpt-oss-20b --output results/results-gpt-oss-20b.csv
-
-# Run all models (Groq API)
-GROQ_API_KEY=xxx python run_experiments_direct.py --model gpt-oss-20b
-
-# Run small models locally (requires GPU)
-HF_TOKEN=xxx python run_small_models_local.py
-
-# Run all models (Groq + local)
-python run_all_expanded.py
-
-# Run ablation study (single run)
-python run_ablation.py --model gpt-oss-20b
-
-# Run prompt experiments
-python run_prompt_experiments.py --model gpt-oss-20b
-
-# Run 5-trial reproducibility (frontier models)
+# Multi-trial for Groq frontier models (5 trials x 4 models x 41 cases)
 GROQ_API_KEY=xxx python run_multi_trial.py
 
-# Run 5-trial ablation reproducibility
+# Ablation for Groq frontier models (5 trials x 4 cond x 4 models x 41 cases)
 GROQ_API_KEY=xxx python run_ablation_multi_trial.py
 
-# Run statistical analysis
-python analyze_elm_results.py
+# Multi-trial for Gemma 4, Qwen3.5, GPT-5.4 mini, mid-range, small
+HF_TOKEN=xxx OPENROUTER_API_KEY=xxx OPENAI_API_KEY=xxx \
+    python run_new_models_multi_trial.py --model gemma-4-26b-a4b
+#   ...repeat --model for each model, or omit --model to run all
+
+# Ablation for new frontier models
+HF_TOKEN=xxx OPENROUTER_API_KEY=xxx OPENAI_API_KEY=xxx \
+    python run_new_ablation_multi_trial.py --model gemma-4-26b-a4b
 ```
 
 ## Analysis Notebooks
@@ -274,8 +329,8 @@ python analyze_elm_results.py
 Pre-rendered Jupyter notebooks with all analysis outputs:
 
 | Notebook | Contents |
-|----------|----------|
-| [`01_elm_validation_results.ipynb`](../notebooks/01_elm_validation_results.ipynb) | Main results, Wilson CIs, Fisher test, McNemar pairwise |
+|---|---|
+| [`01_elm_validation_results.ipynb`](../notebooks/01_elm_validation_results.ipynb) | Main results across 16 models with per-category disaggregation, Fisher test, McNemar pairwise |
 | [`02_error_analysis.ipynb`](../notebooks/02_error_analysis.ipynb) | Heatmap, case difficulty, error disaggregation, qualitative examples |
-| [`03_ablation_study.ipynb`](../notebooks/03_ablation_study.ipynb) | Component contribution analysis across 4 models |
-| [`04_prompt_engineering.ipynb`](../notebooks/04_prompt_engineering.ipynb) | 5 strategies x 3 models comparison |
+| [`03_ablation_study.ipynb`](../notebooks/03_ablation_study.ipynb) | Component contribution analysis across 8 frontier models |
+| [`04_prompt_engineering.ipynb`](../notebooks/04_prompt_engineering.ipynb) | 5 strategies × 3 models comparison |

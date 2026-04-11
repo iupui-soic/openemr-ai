@@ -1,0 +1,42 @@
+file,library,model,trial,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen-2.5-1.5b,4,True,58.94190192222595,,,local,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen-2.5-1.5b,4,False,1.3557300567626953,; The ELM implementation does not include any age thresholds or time intervals as required by the CPG.; The ELM implementation incorrectly calculates the number of confirmed conditions using a COUNT function instead of filtering based on the condition's status.; The ELM implementation uses an incorrect AND operator in the HasCount check.; The ELM implementation does not provide a summary output according to the CPG specifications.,,local,Condition_Medication_Count_CPG.md,True,True,False,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen-2.5-1.5b,4,False,2.5252254009246826,"; The ELM implementation specifies an age threshold of 16 years, but the CPG requires ages 16-23. This mismatch affects the eligibility criteria for patients.; The ELM implementation uses a lookback period of 1 year, which aligns with the CPG requirement. However, the CPG does not specify a particular time interval beyond just ""within the past 1 year.""; The ELM implementation includes a condition for ""Reason for not performing Chlamydia Screening,"" but the CPG does not mention any such conditions.; The ELM implementation has a clear AND/OR/NOT structure that matches the CPG's decision logic.; All other aspects of the ELM implementation (value sets, demographic checks, etc.) appear to follow the CPG guidelines closely.",,local,Chlamydia_Screening_CPG.md,True,True,False,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen-2.5-1.5b,4,True,0.6675598621368408,,,local,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,4,True,0.13620781898498535,,,local,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,4,True,0.1360466480255127,,,local,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,4,True,1.0210213661193848,,,local,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,qwen-2.5-1.5b,4,True,0.8056509494781494,,,local,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,4,True,0.8775577545166016,,,local,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,qwen-2.5-1.5b,4,True,0.1384446620941162,,,local,Hypertension-Screening_CPG.md,True,True,False,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen-2.5-1.5b,4,True,0.13703417778015137,,,local,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen-2.5-1.5b,4,True,0.20867228507995605,,,local,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,4,True,0.6756703853607178,,,local,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,4,True,0.7793054580688477,,,local,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,qwen-2.5-1.5b,4,True,0.7801587581634521,,,local,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,4,True,0.754673957824707,,,local,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,4,True,0.7576904296875,,,local,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,4,True,0.6277661323547363,,,local,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen-2.5-1.5b,4,True,0.13990163803100586,,,local,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,qwen-2.5-1.5b,4,True,0.8742022514343262,,,local,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,qwen-2.5-1.5b,4,True,0.9803938865661621,,,local,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen-2.5-1.5b,4,True,0.14474034309387207,,,local,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,qwen-2.5-1.5b,4,True,0.6712706089019775,,,local,Cervical-Cancer-Screening_CPG.md,True,True,False,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,qwen-2.5-1.5b,4,True,0.7239894866943359,,,local,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,4,True,0.6429870128631592,,,local,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,4,True,0.7854361534118652,,,local,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,qwen-2.5-1.5b,4,True,0.9236698150634766,,,local,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,qwen-2.5-1.5b,4,True,0.7799956798553467,,,local,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,4,True,0.7974343299865723,,,local,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,qwen-2.5-1.5b,4,True,0.693289041519165,,,local,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,qwen-2.5-1.5b,4,True,0.7718331813812256,,,local,Lung-Cancer-Screening_CPG.md,True,True,False,False
+IPF-Screening.json,IPF-ScreeningIE,qwen-2.5-1.5b,4,True,0.15640044212341309,,,local,IPF-Screening_CPG.md,True,True,True,True
+IPF-Screening-WrongCT.json,IPF-Screening,qwen-2.5-1.5b,4,True,0.15738201141357422,,,local,IPF-Screening_CPG.md,True,True,False,False
+AAA-Missing-SexRestriction.json,AAA_Screening_CDS,qwen-2.5-1.5b,4,True,0.14614391326904297,,,local,AAA-Screening_CPG.md,True,True,False,False
+Depression-Missing-BipolarExclusion.json,DepressionScreening_CDS,qwen-2.5-1.5b,4,True,0.7031526565551758,,,local,Depression_screening_CPG.md,True,True,False,False
+Colon-Cancer-Inverted-Procedure.json,Colon-Cancer-Screening-OpenEMR,qwen-2.5-1.5b,4,True,0.13717269897460938,,,local,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Falls-Inverted-Assessment.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,4,True,0.6840953826904297,,,local,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Depression-WrongNesting.json,DepressionScreening_CDS,qwen-2.5-1.5b,4,True,0.8057780265808105,,,local,Depression_screening_CPG.md,True,True,False,False
+IPF-WrongExclusionNesting.json,IPF-ScreeningIE,qwen-2.5-1.5b,4,True,0.1580193042755127,,,local,IPF-Screening_CPG.md,True,True,False,False
+Falls-SwappedValueSet.json,Falls_Prevention_Screening_CDS,qwen-2.5-1.5b,4,True,0.6246311664581299,,,local,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-SwappedValueSet.json,Alcohol_Misuse_Screening_CDS,qwen-2.5-1.5b,4,True,0.8553473949432373,,,local,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
