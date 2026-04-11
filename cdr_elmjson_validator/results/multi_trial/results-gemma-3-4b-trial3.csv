@@ -1,0 +1,42 @@
+file,library,model,trial,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,gemma-3-4b,3,True,1.648526668548584,,,openrouter,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,gemma-3-4b,3,True,0.3473634719848633,,,openrouter,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,gemma-3-4b,3,True,0.34081172943115234,,,openrouter,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,gemma-3-4b,3,True,0.341505765914917,,,openrouter,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,gemma-3-4b,3,True,0.32085633277893066,,,openrouter,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,gemma-3-4b,3,True,0.3480067253112793,,,openrouter,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,gemma-3-4b,3,True,0.30091118812561035,,,openrouter,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,gemma-3-4b,3,True,0.29898786544799805,,,openrouter,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,gemma-3-4b,3,True,0.37426066398620605,,,openrouter,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,gemma-3-4b,3,False,5.206273555755615,The ELM implementation has several discrepancies with the CPG requirements.,,openrouter,Hypertension-Screening_CPG.md,True,True,True,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,gemma-3-4b,3,True,0.3128852844238281,,,openrouter,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,gemma-3-4b,3,True,0.349170446395874,,,openrouter,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,gemma-3-4b,3,True,0.3637387752532959,,,openrouter,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,gemma-3-4b,3,True,0.3509635925292969,,,openrouter,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,gemma-3-4b,3,True,0.3637259006500244,,,openrouter,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,gemma-3-4b,3,True,0.35386037826538086,,,openrouter,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,gemma-3-4b,3,True,0.3266725540161133,,,openrouter,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,gemma-3-4b,3,True,0.3160228729248047,,,openrouter,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,gemma-3-4b,3,False,5.710108280181885,The ELM implementation has several mismatches with the CPG requirements.,,openrouter,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,gemma-3-4b,3,True,0.5691814422607422,,,openrouter,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,gemma-3-4b,3,False,3.2917418479919434,"The ELM implementation has a mismatch in the age threshold. The CPG requires Age >= 15 years AND Age <= 65 years, while the ELM implementation uses Age >= 30 years. This is a significant difference in the inclusion criteria and will lead to incorrect screening recommendations. The time interval also needs to be verified to ensure it aligns with the CPG's 1 year lookback period.",,openrouter,HIV-Screening_CPG.md,True,True,True,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,gemma-3-4b,3,True,0.3892784118652344,,,openrouter,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,gemma-3-4b,3,True,0.4030740261077881,,,openrouter,Cervical-Cancer-Screening_CPG.md,True,True,False,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,gemma-3-4b,3,True,0.7554426193237305,,,openrouter,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,gemma-3-4b,3,True,0.37423253059387207,,,openrouter,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,gemma-3-4b,3,False,2.649749755859375,"The ELM implementation has a mismatch in the age threshold. The CPG states “Age >= 18 years”, while the ELM implementation specifies “Age >= 25 years”. This violates the inclusion criteria. Additionally, the “Has Recent Alcohol Screening” logic is overly restrictive. The CPG states “No screening needed if… a screening has been performed within the past 1 year with a result present”, implying that a screening *with a present result* should not trigger a new screening. The ELM logic simply checks if *any* screening exists within the past year, regardless of the result.",,openrouter,Alcohol-Misuse-Screening_CPG.md,True,True,True,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,gemma-3-4b,3,True,0.3674888610839844,,,openrouter,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,gemma-3-4b,3,True,0.3910377025604248,,,openrouter,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,gemma-3-4b,3,True,0.34847283363342285,,,openrouter,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,gemma-3-4b,3,True,0.3554539680480957,,,openrouter,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,gemma-3-4b,3,True,0.35288381576538086,,,openrouter,Lung-Cancer-Screening_CPG.md,True,True,False,False
+IPF-Screening.json,IPF-ScreeningIE,gemma-3-4b,3,True,0.33254408836364746,,,openrouter,IPF-Screening_CPG.md,True,True,True,True
+IPF-Screening-WrongCT.json,IPF-Screening,gemma-3-4b,3,True,0.3585658073425293,,,openrouter,IPF-Screening_CPG.md,True,True,False,False
+AAA-Missing-SexRestriction.json,AAA_Screening_CDS,gemma-3-4b,3,True,0.33877134323120117,,,openrouter,AAA-Screening_CPG.md,True,True,False,False
+Depression-Missing-BipolarExclusion.json,DepressionScreening_CDS,gemma-3-4b,3,True,0.3279428482055664,,,openrouter,Depression_screening_CPG.md,True,True,False,False
+Colon-Cancer-Inverted-Procedure.json,Colon-Cancer-Screening-OpenEMR,gemma-3-4b,3,True,0.3788011074066162,,,openrouter,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Falls-Inverted-Assessment.json,Falls_Prevention_Screening_CDS,gemma-3-4b,3,True,0.35515570640563965,,,openrouter,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Depression-WrongNesting.json,DepressionScreening_CDS,gemma-3-4b,3,True,0.3052527904510498,,,openrouter,Depression_screening_CPG.md,True,True,False,False
+IPF-WrongExclusionNesting.json,IPF-ScreeningIE,gemma-3-4b,3,True,0.2986595630645752,,,openrouter,IPF-Screening_CPG.md,True,True,False,False
+Falls-SwappedValueSet.json,Falls_Prevention_Screening_CDS,gemma-3-4b,3,True,0.31353282928466797,,,openrouter,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-SwappedValueSet.json,Alcohol_Misuse_Screening_CDS,gemma-3-4b,3,True,0.2696092128753662,,,openrouter,Alcohol-Misuse-Screening_CPG.md,True,True,False,False

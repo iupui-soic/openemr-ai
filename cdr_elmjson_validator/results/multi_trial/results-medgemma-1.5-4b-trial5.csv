@@ -1,0 +1,42 @@
+file,library,model,trial,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,medgemma-1.5-4b,5,True,133.79037189483643,,,local,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,medgemma-1.5-4b,5,False,32.30407643318176,"The ELM implementation for the `Summary` logic is incomplete. It uses `[Concatenate]` as a placeholder, whereas the CPG requires a specific string format including the patient's first name and the calculated counts (N and M). The CPG specifies the exact format: `{PatientFirstName} has {N} confirmed conditions and {M} MedicationRequests.`.",,local,Condition_Medication_Count_CPG.md,True,True,False,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,medgemma-1.5-4b,5,True,0.42343735694885254,,,local,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,medgemma-1.5-4b,5,True,36.42278528213501,,,local,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,medgemma-1.5-4b,5,True,42.855884075164795,,,local,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,medgemma-1.5-4b,5,False,37.09332633018494,None<unused95>VALID: YES,,local,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,medgemma-1.5-4b,5,True,35.392513036727905,,,local,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,medgemma-1.5-4b,5,True,70.61314249038696,,,local,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,medgemma-1.5-4b,5,True,49.71206307411194,,,local,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,medgemma-1.5-4b,5,False,66.28674459457397,,,local,Hypertension-Screening_CPG.md,True,True,True,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,medgemma-1.5-4b,5,False,44.04865074157715,"The ELM implementation uses `Patient's age <= 80` for the age range, while the CPG requires `Patient's age <= 85`. Also, the definition of `Age range` in the ELM uses `Patient's age <= 80`, while the CPG requires `Patient's age <= 85`.<unused95>VALID: NO; The ELM implementation uses `Patient's age <= 80` for the age range, while the CPG requires `Patient's age <= 85`. Also, the definition of `Age range` in the ELM uses `Patient's age <= 80`, while the CPG requires `Patient's age <= 85`.",,local,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,medgemma-1.5-4b,5,False,42.79218244552612,"The HbA1c Laboratory Test threshold in the ELM implementation is ""9 g%"" instead of the required ""6.5%"".<unused95>VALID: NO; The HbA1c Laboratory Test threshold in the ELM implementation is ""9 g%"" instead of the required ""6.5%"".",,local,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,medgemma-1.5-4b,5,False,52.23698830604553,None<unused95>VALID: YES,,local,Cervical-Cancer-Screening_CPG.md,True,True,False,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,medgemma-1.5-4b,5,False,66.74596548080444,,,local,Lung-Cancer-Screening_CPG.md,True,True,False,True
+AAA-Screening.json,AAA_Screening_CDS,medgemma-1.5-4b,5,False,53.391520738601685,None<unused95>VALID: YES,,local,AAA-Screening_CPG.md,True,True,False,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,medgemma-1.5-4b,5,True,33.05816149711609,,,local,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,medgemma-1.5-4b,5,True,33.21437740325928,,,local,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,medgemma-1.5-4b,5,True,28.473114013671875,,,local,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,medgemma-1.5-4b,5,False,53.415823459625244,,,local,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,True,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,medgemma-1.5-4b,5,True,133.1375753879547,,,local,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,medgemma-1.5-4b,5,False,47.06403470039368,,,local,HIV-Screening_CPG.md,True,True,True,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,medgemma-1.5-4b,5,False,42.55900454521179,None<unused95>VALID: YES,,local,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,medgemma-1.5-4b,5,False,92.53916335105896,,,local,Cervical-Cancer-Screening_CPG.md,True,True,True,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,medgemma-1.5-4b,5,True,59.53768730163574,,,local,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,medgemma-1.5-4b,5,False,47.00328707695007,,,local,Falls-Prevention-Screening_CPG.md,True,True,True,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,medgemma-1.5-4b,5,False,41.84634804725647,,,local,Alcohol-Misuse-Screening_CPG.md,True,True,True,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,medgemma-1.5-4b,5,False,66.79975700378418,None<unused95>VALID: YES,,local,Osteoporosis-Screening_CPG.md,True,True,True,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,medgemma-1.5-4b,5,False,63.320295095443726,"The ELM implementation uses `>= 55 years` for age, while the CPG requires `>= 65 years`.<unused95>VALID: NO; The ELM implementation uses `>= 55 years` for age, while the CPG requires `>= 65 years`.",,local,AAA-Screening_CPG.md,True,True,True,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,medgemma-1.5-4b,5,True,37.98108959197998,,,local,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,medgemma-1.5-4b,5,False,38.068196296691895,None<unused95>VALID: YES,,local,Tobacco-Use-Screening_CPG.md,True,True,True,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,medgemma-1.5-4b,5,False,36.491787910461426,,,local,Lung-Cancer-Screening_CPG.md,True,True,True,False
+IPF-Screening.json,IPF-ScreeningIE,medgemma-1.5-4b,5,True,53.748841285705566,,,local,IPF-Screening_CPG.md,True,True,True,True
+IPF-Screening-WrongCT.json,IPF-Screening,medgemma-1.5-4b,5,True,50.87664747238159,,,local,IPF-Screening_CPG.md,True,True,False,False
+AAA-Missing-SexRestriction.json,AAA_Screening_CDS,medgemma-1.5-4b,5,False,48.31107568740845,None<unused95>VALID: YES,,local,AAA-Screening_CPG.md,True,True,True,False
+Depression-Missing-BipolarExclusion.json,DepressionScreening_CDS,medgemma-1.5-4b,5,True,52.68901968002319,,,local,Depression_screening_CPG.md,True,True,False,False
+Colon-Cancer-Inverted-Procedure.json,Colon-Cancer-Screening-OpenEMR,medgemma-1.5-4b,5,False,31.677412271499634,None<unused95>VALID: YES,,local,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,False
+Falls-Inverted-Assessment.json,Falls_Prevention_Screening_CDS,medgemma-1.5-4b,5,False,38.79203772544861,None<unused95>VALID: YES,,local,Falls-Prevention-Screening_CPG.md,True,True,True,False
+Depression-WrongNesting.json,DepressionScreening_CDS,medgemma-1.5-4b,5,False,66.23374533653259,None<unused95>VALID: YES,,local,Depression_screening_CPG.md,True,True,True,False
+IPF-WrongExclusionNesting.json,IPF-ScreeningIE,medgemma-1.5-4b,5,False,68.9604115486145,,,local,IPF-Screening_CPG.md,True,True,True,False
+Falls-SwappedValueSet.json,Falls_Prevention_Screening_CDS,medgemma-1.5-4b,5,False,31.892526865005493,None<unused95>VALID: YES,,local,Falls-Prevention-Screening_CPG.md,True,True,True,False
+Alcohol-SwappedValueSet.json,Alcohol_Misuse_Screening_CDS,medgemma-1.5-4b,5,False,36.712273597717285,None<unused95>VALID: YES,,local,Alcohol-Misuse-Screening_CPG.md,True,True,True,False

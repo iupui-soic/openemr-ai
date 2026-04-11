@@ -44,6 +44,7 @@ VALID_CASES = [
     "USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401",
     "Condition_and_Medication_Count_FHIRv401",
     "Chlamydia_Screening_Common_CQL",
+    "IPF-Screening",
 ]
 
 PARAMETRIC_CASES = [
@@ -63,15 +64,30 @@ PARAMETRIC_CASES = [
 ]
 
 SEMANTIC_CASES = [
+    # Original 3
     "Breast-Cancer-WrongOperator",
     "Tobacco-Missing-Exclusion",
     "Lung-Cancer-Missing-SubPopulation",
+    # IPF (committed later)
+    "IPF-Screening-WrongCT",
+    # New: Missing condition
+    "AAA-Missing-SexRestriction",
+    "Depression-Missing-BipolarExclusion",
+    # New: Inverted logic
+    "Colon-Cancer-Inverted-Procedure",
+    "Falls-Inverted-Assessment",
+    # New: Wrong nesting
+    "Depression-WrongNesting",
+    "IPF-WrongExclusionNesting",
+    # New: Swapped reference
+    "Falls-SwappedValueSet",
+    "Alcohol-SwappedValueSet",
 ]
 
 # ── Display names: all ≤25 characters, consistent hyphen style ──────────────
 
 CASE_LABELS = {
-    # Valid (15)
+    # Valid (16)
     "Adult-Weight-Screening-and-Follow-Up-OpenEMR": "Weight Screening",
     "Breast-Cancer-Screening-OpenEMR":              "Breast Cancer",
     "Colon-Cancer-Screening-OpenEMR":               "Colon Cancer",
@@ -88,6 +104,7 @@ CASE_LABELS = {
                                                      "Statin-SharedLogic",
     "Condition_and_Medication_Count_FHIRv401":        "Condition-MedCount",
     "Chlamydia_Screening_Common_CQL":                "Chlamydia",
+    "IPF-Screening":                                 "IPF",
     # Parametric Invalid (13) – show the injected error
     "Hypertension-Screening":                        "Hypertension",
     "Statin-Therapy-for-CVD-Prevention":             "Statin-CVD",
@@ -102,31 +119,49 @@ CASE_LABELS = {
     "AAA-Screening-WrongAge":                        "AAA-WrongAge",
     "Depression-Screening-WrongLookback":             "Depression-WrongLkbk",
     "Osteoporosis-WrongLookback":                    "Osteoporosis-WrongLkbk",
-    # Semantic Invalid (3)
+    # Semantic Invalid (12)
     "Breast-Cancer-WrongOperator":                   "Breast-WrongOp",
     "Tobacco-Missing-Exclusion":                     "Tobacco-MissingExcl",
     "Lung-Cancer-Missing-SubPopulation":              "Lung-MissingSubPop",
+    "IPF-Screening-WrongCT":                         "IPF-WrongCT",
+    "AAA-Missing-SexRestriction":                    "AAA-MissingSex",
+    "Depression-Missing-BipolarExclusion":           "Depression-MissBip",
+    "Colon-Cancer-Inverted-Procedure":               "Colon-InvertedProc",
+    "Falls-Inverted-Assessment":                     "Falls-InvertedAssess",
+    "Depression-WrongNesting":                       "Depression-WrongNest",
+    "IPF-WrongExclusionNesting":                     "IPF-WrongExclNest",
+    "Falls-SwappedValueSet":                         "Falls-SwappedVS",
+    "Alcohol-SwappedValueSet":                       "Alcohol-SwappedVS",
 }
 
 # ── Model tier ordering (matches Table I) ────────────────────────────────────
-
-TIER_FRONTIER = ["gpt-oss-20b", "qwen3-32b", "gpt-oss-120b", "llama-3.3-70b"]
-TIER_MIDRANGE = ["phi-3-mini", "medgemma-4b", "medgemma-1.5-4b", "gemma-3-4b"]
-TIER_SMALL    = ["qwen-2.5-3b", "llama-3.2-3b", "qwen-2.5-1.5b", "llama-3.2-1b"]
+# Frontier ordered by accuracy on 41-case benchmark (descending)
+TIER_FRONTIER = [
+    "gemma-4-26b-a4b", "gemma-4-31b", "qwen3-32b",
+    "gpt-oss-120b", "qwen3.5-35b-a3b", "llama-3.3-70b",
+    "gpt-oss-20b",
+]
+TIER_PROPRIETARY = ["gpt-5.4-mini"]
+TIER_MIDRANGE = ["medgemma-1.5-4b", "phi-3-mini", "gemma-3-4b", "medgemma-4b"]
+TIER_SMALL    = ["llama-3.2-1b", "qwen-2.5-3b", "llama-3.2-3b", "qwen-2.5-1.5b"]
 
 MODEL_DISPLAY = {
-    "gpt-oss-20b":    "GPT-OSS-20B",
-    "qwen3-32b":      "Qwen3-32B",
-    "gpt-oss-120b":   "GPT-OSS-120B",
-    "llama-3.3-70b":  "Llama-3.3-70B",
-    "phi-3-mini":     "Phi-3-Mini",
-    "medgemma-4b":    "MedGemma-4B",
-    "medgemma-1.5-4b":"MedGemma1.5-4B",
-    "gemma-3-4b":     "Gemma-3-4B",
-    "qwen-2.5-3b":    "Qwen-2.5-3B",
-    "llama-3.2-3b":   "Llama-3.2-3B",
-    "qwen-2.5-1.5b":  "Qwen-2.5-1.5B",
-    "llama-3.2-1b":   "Llama-3.2-1B",
+    "gemma-4-26b-a4b":  "Gemma-4-26B-A4B",
+    "gemma-4-31b":      "Gemma-4-31B",
+    "qwen3-32b":        "Qwen3-32B",
+    "gpt-oss-120b":     "GPT-OSS-120B",
+    "qwen3.5-35b-a3b":  "Qwen3.5-35B-A3B",
+    "llama-3.3-70b":    "Llama-3.3-70B",
+    "gpt-oss-20b":      "GPT-OSS-20B",
+    "gpt-5.4-mini":     "GPT-5.4-mini",
+    "medgemma-1.5-4b":  "MedGemma1.5-4B",
+    "phi-3-mini":       "Phi-3-Mini",
+    "gemma-3-4b":       "Gemma-3-4B",
+    "medgemma-4b":      "MedGemma-4B",
+    "llama-3.2-1b":     "Llama-3.2-1B",
+    "qwen-2.5-3b":      "Qwen-2.5-3B",
+    "llama-3.2-3b":     "Llama-3.2-3B",
+    "qwen-2.5-1.5b":    "Qwen-2.5-1.5B",
 }
 
 # ── Colorblind-safe palette ──────────────────────────────────────────────────
@@ -139,11 +174,30 @@ CLR_BG_SEMAN  = "#fef0f0"   # faint red tint for Semantic band
 
 
 def load_all_results():
+    """Load multi-trial results, averaging across 5 trials per model/case.
+    For each (model, case) pair, the cell is 'correct' if the model was
+    correct in a majority of trials (>=3/5)."""
+    mt_dir = os.path.join(RESULTS_DIR, "multi_trial")
     frames = []
-    for fname in os.listdir(RESULTS_DIR):
+    for fname in sorted(os.listdir(mt_dir)):
         if fname.startswith("results-") and fname.endswith(".csv"):
-            frames.append(pd.read_csv(os.path.join(RESULTS_DIR, fname)))
-    return pd.concat(frames, ignore_index=True)
+            # Skip few-shot variants
+            if "few-shot" in fname:
+                continue
+            path = os.path.join(mt_dir, fname)
+            df = pd.read_csv(path)
+            # Skip error files (all-error)
+            if (df["source"] == "error").all():
+                continue
+            frames.append(df)
+    combined = pd.concat(frames, ignore_index=True)
+    # For cases with errors, treat as incorrect (conservative)
+    combined.loc[combined["source"] == "error", "correct"] = False
+    # Aggregate: majority vote per (model, file) across trials
+    agg = combined.groupby(["model", "file"])["correct"].mean().reset_index()
+    # correct >= 0.5 means majority correct
+    agg["correct"] = (agg["correct"] >= 0.5).astype(float)
+    return agg
 
 
 def generate_figure3():
@@ -154,8 +208,9 @@ def generate_figure3():
     model_acc = df.groupby("model")["correct"].mean()
 
     # Fixed tier-based model order
-    model_order = TIER_FRONTIER + TIER_MIDRANGE + TIER_SMALL
+    model_order = TIER_FRONTIER + TIER_PROPRIETARY + TIER_MIDRANGE + TIER_SMALL
     n_frontier = len(TIER_FRONTIER)
+    n_proprietary = len(TIER_PROPRIETARY)
     n_midrange = len(TIER_MIDRANGE)
 
     # Within each case group, sort by difficulty (easiest at bottom, hardest at top)
@@ -223,20 +278,25 @@ def generate_figure3():
 
     # ── Vertical tier separators ─────────────────────────────────────────────
 
-    vsep1 = n_frontier
-    vsep2 = n_frontier + n_midrange
+    vsep1 = n_frontier                                # Frontier | Proprietary
+    vsep2 = n_frontier + n_proprietary                # Proprietary | Mid-range
+    vsep3 = n_frontier + n_proprietary + n_midrange   # Mid-range | Small
     ax.axvline(x=vsep1, color="black", linewidth=1.8, zorder=5)
     ax.axvline(x=vsep2, color="black", linewidth=1.8, zorder=5)
+    ax.axvline(x=vsep3, color="black", linewidth=1.8, zorder=5)
 
     # Tier labels above the heatmap
     tier_label_y = n_cases + 0.25
-    ax.text(vsep1 / 2, tier_label_y, "Frontier",
+    ax.text(vsep1 / 2, tier_label_y, "Open-weight Frontier",
             ha="center", va="bottom", fontsize=8, fontstyle="italic",
             clip_on=False)
-    ax.text(vsep1 + n_midrange / 2, tier_label_y, "Mid-range",
+    ax.text(vsep1 + n_proprietary / 2, tier_label_y, "Prop.",
             ha="center", va="bottom", fontsize=8, fontstyle="italic",
             clip_on=False)
-    ax.text(vsep2 + len(TIER_SMALL) / 2, tier_label_y, "Small",
+    ax.text(vsep2 + n_midrange / 2, tier_label_y, "Mid-range",
+            ha="center", va="bottom", fontsize=8, fontstyle="italic",
+            clip_on=False)
+    ax.text(vsep3 + len(TIER_SMALL) / 2, tier_label_y, "Small",
             ha="center", va="bottom", fontsize=8, fontstyle="italic",
             clip_on=False)
 
