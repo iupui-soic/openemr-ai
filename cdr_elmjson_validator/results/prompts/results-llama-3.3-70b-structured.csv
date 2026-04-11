@@ -1,32 +1,42 @@
-file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid,error_match,warning_match
-USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,llama-3.3-70b,True,2.12660551071167,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True,,
-Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,llama-3.3-70b,True,1.392002820968628,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True,,
-Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,llama-3.3-70b,True,1.1827936172485352,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True,,
-Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,llama-3.3-70b,True,0.9977622032165527,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True,,
-Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.881575584411621,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
-Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,llama-3.3-70b,True,2.6977555751800537,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
-Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.3908367156982422,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True,,
-Depression_screening.json,DepressionScreening_CDS,llama-3.3-70b,True,0.9670498371124268,,,groq,Depression_screening_CPG.md,True,True,True,True,,
-Osteoporosis screening.json,Osteoporosis_Screening_CDS,llama-3.3-70b,True,0.7309770584106445,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True,,
-Hypertension-Screening.json,Hypertension-Screening,llama-3.3-70b,True,0.8879084587097168,,,groq,Hypertension-Screening_CPG.md,True,True,False,False,,
-Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,llama-3.3-70b,True,1.5400052070617676,,,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,False,False,,
-Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,llama-3.3-70b,True,1.977062702178955,,,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False,,
-Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,llama-3.3-70b,False,0.5784363746643066,**None**,,groq,Cervical-Cancer-Screening_CPG.md,True,True,False,True,,
-Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,llama-3.3-70b,True,1.2174146175384521,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True,,
-AAA-Screening.json,AAA_Screening_CDS,llama-3.3-70b,True,0.8658676147460938,,,groq,AAA-Screening_CPG.md,True,True,True,True,,
-Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,llama-3.3-70b,True,1.0722596645355225,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True,,
-Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,True,1.0396430492401123,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True,,
-Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,llama-3.3-70b,True,1.310166835784912,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True,,
-Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,llama-3.3-70b,True,0.8212149143218994,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False,,
-Anxiety-Screening.json,Anxiety_Screening_CDS,llama-3.3-70b,True,0.7573933601379395,,,groq,Anxiety-Screening_CPG.md,True,True,False,False,,
-HIV-Screening.json,HIV_Screening_CDS,llama-3.3-70b,True,1.0123329162597656,,,groq,HIV-Screening_CPG.md,True,True,False,False,,
-Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,llama-3.3-70b,True,1.6943700313568115,,,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False,,
-Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,llama-3.3-70b,True,1.1558153629302979,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,False,False,,
-Depression-Screening-WrongLookback.json,DepressionScreening_CDS,llama-3.3-70b,False,1.2794520854949951,Time intervals do not match (1 year vs. 3 months),,groq,Depression_screening_CPG.md,True,True,True,False,,
-Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,True,1.1474401950836182,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False,,
-Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,llama-3.3-70b,True,0.9118843078613281,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,False,False,,
-Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,llama-3.3-70b,True,1.1391785144805908,,,groq,Osteoporosis-Screening_CPG.md,True,True,False,False,,
-AAA-Screening-WrongAge.json,AAA_Screening_CDS,llama-3.3-70b,True,1.251746654510498,,,groq,AAA-Screening_CPG.md,True,True,False,False,,
-Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.3500032424926758,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False,,
-Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,llama-3.3-70b,True,0.9842565059661865,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False,,
-Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,llama-3.3-70b,True,1.3036141395568848,,,groq,Lung-Cancer-Screening_CPG.md,True,True,False,False,,
+file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,llama-3.3-70b,True,2.2879929542541504,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,llama-3.3-70b,True,1.1203088760375977,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,llama-3.3-70b,False,1.0695292949676514,"""Reason for not performing Chlamydia Screening"" value set is not defined in the ELM implementation.",,groq,Chlamydia_Screening_CPG.md,True,True,False,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,llama-3.3-70b,True,1.3251338005065918,,,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,True,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.0567762851715088,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,llama-3.3-70b,True,0.8953039646148682,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.0610108375549316,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,llama-3.3-70b,True,0.9458696842193604,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,llama-3.3-70b,True,1.183936595916748,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,llama-3.3-70b,False,1.437328815460205,; Age threshold mismatch (18 years in CPG vs 25 years in ELM); Time interval mismatch (1 year in CPG vs 6 months in ELM),,groq,Hypertension-Screening_CPG.md,True,True,True,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,llama-3.3-70b,False,1.7200744152069092,Age threshold mismatch (85 years in CPG vs. 80 years in ELM),,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,llama-3.3-70b,False,1.6562952995300293,; The HbA1c value in the ELM implementation (9 g%) does not match the CPG requirement (>= 6.5%).,,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,True,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,llama-3.3-70b,True,1.2743885517120361,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,llama-3.3-70b,True,1.2396163940429688,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,llama-3.3-70b,True,1.0787971019744873,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,llama-3.3-70b,True,1.0154387950897217,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,True,0.9840202331542969,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,llama-3.3-70b,True,1.0753490924835205,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,llama-3.3-70b,True,0.9510047435760498,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,llama-3.3-70b,False,0.9842138290405273,Time interval mismatch (6 months in ELM vs 1 year in CPG),,groq,Anxiety-Screening_CPG.md,True,True,True,False
+HIV-Screening.json,HIV_Screening_CDS,llama-3.3-70b,True,0.9834983348846436,,,groq,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,llama-3.3-70b,False,1.4993503093719482,; Time interval mismatch (3 years in CPG vs. 1 year in ELM); Incorrect application of BMI threshold (35 kg/m2 in ELM vs. BMI >= 25 kg/m2 in CPG),,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,True,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,llama-3.3-70b,True,0.9804251194000244,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,False,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,llama-3.3-70b,True,0.9980573654174805,,,groq,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,True,1.5262641906738281,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,llama-3.3-70b,True,1.1313583850860596,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,llama-3.3-70b,True,0.7646198272705078,,,groq,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,llama-3.3-70b,True,1.1239864826202393,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.4444448947906494,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,llama-3.3-70b,True,1.240865707397461,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,llama-3.3-70b,True,0.9032902717590332,,,groq,Lung-Cancer-Screening_CPG.md,True,True,False,False
+IPF-Screening.json,IPF-ScreeningIE,llama-3.3-70b,True,0.8962852954864502,,,groq,IPF-Screening_CPG.md,True,True,True,True
+IPF-Screening-WrongCT.json,IPF-Screening,llama-3.3-70b,True,1.0156712532043457,,,groq,IPF-Screening_CPG.md,True,True,False,False
+AAA-Missing-SexRestriction.json,AAA_Screening_CDS,llama-3.3-70b,True,0.9179477691650391,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Depression-Missing-BipolarExclusion.json,DepressionScreening_CDS,llama-3.3-70b,True,0.9345078468322754,,,groq,Depression_screening_CPG.md,True,True,False,False
+Colon-Cancer-Inverted-Procedure.json,Colon-Cancer-Screening-OpenEMR,llama-3.3-70b,True,1.3501842021942139,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,False,False
+Falls-Inverted-Assessment.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,True,1.0720505714416504,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Depression-WrongNesting.json,DepressionScreening_CDS,llama-3.3-70b,True,0.9154436588287354,,,groq,Depression_screening_CPG.md,True,True,False,False
+IPF-WrongExclusionNesting.json,IPF-ScreeningIE,llama-3.3-70b,True,1.1351487636566162,,,groq,IPF-Screening_CPG.md,True,True,False,False
+Falls-SwappedValueSet.json,Falls_Prevention_Screening_CDS,llama-3.3-70b,False,1.003187894821167,"Value set OID mismatch for ""Fall Risk Assessment""",,groq,Falls-Prevention-Screening_CPG.md,True,True,True,False
+Alcohol-SwappedValueSet.json,Alcohol_Misuse_Screening_CDS,llama-3.3-70b,False,1.0743749141693115,"; VALUE SETS: The ELM implementation uses a different OID (`2.16.840.1.113883.3.526.3.1278`) for the ""Alcohol Use Screening"" value set than specified in the CPG (`2.16.840.1.113883.3.600.1542`).",,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,False

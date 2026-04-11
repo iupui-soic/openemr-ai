@@ -1,0 +1,42 @@
+file,library,model,valid,time_seconds,errors,warnings,source,cpg_file,has_cpg,has_ground_truth,correct,expected_valid
+USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401.json,USPSTFStatinUseForPrimaryPreventionOfCVDInAdultsSharedLogicFHIRv401,qwen3-32b,True,7.111846208572388,,,groq,USPSTF_Statin_Use_CPG.md,True,True,True,True
+Condition_and_Medication_Count_FHIRv401.json,Condition_and_Medication_Count_FHIRv401,qwen3-32b,True,2.101897716522217,,,groq,Condition_Medication_Count_CPG.md,True,True,True,True
+Chlamydia_Screening_Common_CQL.json,ChlamydiaScreening_CDS_UsingCommon,qwen3-32b,True,1.5171658992767334,,,groq,Chlamydia_Screening_CPG.md,True,True,True,True
+Adult-Weight-Screening-and-Follow-Up-OpenEMR.json,Adult-Weight-Screening-and-Follow-Up-OpenEMR,qwen3-32b,False,1.2237203121185303,"Age threshold (18 years) is implemented as specified; Time interval (1 month lookback) aligns with the CPG; Value set reference for Body Weight is exact; Logical structure uses AND to combine inclusion criteria; Decision logic correctly implements the ""no screening needed if weight exists in past 1 month"" rule; Recommendation and error messages match the CPG's requirements",,groq,Adult-Weight-Screening-and-Follow-Up-OpenEMR_CPG.md,True,True,False,True
+Breast-Cancer-Screening-OpenEMR.json,Breast-Cancer-Screening-OpenEMR,qwen3-32b,True,1.2752368450164795,,,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Colon-Cancer-Screening-OpenEMR.json,Colon-Cancer-Screening-OpenEMR,qwen3-32b,True,1.1951382160186768,,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Prostate-Cancer-Screening-OpenEMR.json,Prostate-Cancer-Screening-OpenEMR,qwen3-32b,True,1.5767762660980225,,,groq,Prostate-Cancer-Screening-OpenEMR_CPG.md,True,True,True,True
+Depression_screening.json,DepressionScreening_CDS,qwen3-32b,True,2.6490283012390137,,,groq,Depression_screening_CPG.md,True,True,True,True
+Osteoporosis screening.json,Osteoporosis_Screening_CDS,qwen3-32b,True,2.2989585399627686,,,groq,Osteoporosis-Screening_CPG.md,True,True,True,True
+Hypertension-Screening.json,Hypertension-Screening,qwen3-32b,True,1.3834476470947266,,,groq,Hypertension-Screening_CPG.md,True,True,False,False
+Statin-Therapy-for-CVD-Prevention.json,Statin-Therapy-for-CVD-Prevention,qwen3-32b,False,1.198369026184082,"; **Age upper limit mismatch**: ELM specifies Age <= 80 years, but CPG requires Age <= 85 years.; All other numeric values and logical structure (AND operators, value set references) match the CPG requirements.",,groq,Statin-Therapy-for-CVD-Prevention_CPG.md,True,True,True,False
+Type-2-Diabetes-Diagnosis.json,Type-2-Diabetes-Diagnosis,qwen3-32b,True,1.7594304084777832,,,groq,Type-2-Diabetes-Diagnosis_CPG.md,True,True,False,False
+Cervical-Cancer-Screening.json,Cervical_Cancer_Screening_CDS,qwen3-32b,True,1.441263198852539,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,True,True
+Lung-Cancer-Screening.json,Lung_Cancer_Screening_CDS,qwen3-32b,True,2.1510977745056152,,,groq,Lung-Cancer-Screening_CPG.md,True,True,True,True
+AAA-Screening.json,AAA_Screening_CDS,qwen3-32b,True,1.6528658866882324,,,groq,AAA-Screening_CPG.md,True,True,True,True
+Alcohol-Misuse-Screening.json,Alcohol_Misuse_Screening_CDS,qwen3-32b,True,1.2774684429168701,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,True,True
+Falls-Prevention-Screening.json,Falls_Prevention_Screening_CDS,qwen3-32b,True,1.24222731590271,,,groq,Falls-Prevention-Screening_CPG.md,True,True,True,True
+Tobacco-Use-Screening.json,Tobacco_Use_Screening_CDS,qwen3-32b,True,1.1927499771118164,,,groq,Tobacco-Use-Screening_CPG.md,True,True,True,True
+Colorectal-Cancer-Average-Risk-Screening.json,Colorectal_Cancer_AverageRisk_Screening_CDS,qwen3-32b,True,1.4309861660003662,,,groq,Colorectal-Cancer-Average-Risk-Screening_CPG.md,True,True,False,False
+Anxiety-Screening.json,Anxiety_Screening_CDS,qwen3-32b,True,1.5319840908050537,,,groq,Anxiety-Screening_CPG.md,True,True,False,False
+HIV-Screening.json,HIV_Screening_CDS,qwen3-32b,True,1.8255620002746582,,,groq,HIV-Screening_CPG.md,True,True,False,False
+Prediabetes-Obesity-Screening.json,Prediabetes_Obesity_Screening_CDS,qwen3-32b,True,1.4731898307800293,,,groq,Prediabetes-Obesity-Screening_CPG.md,True,True,False,False
+Cervical-Cancer-Screening-WrongAge.json,Cervical_Cancer_Screening_CDS,qwen3-32b,True,1.9715042114257812,,,groq,Cervical-Cancer-Screening_CPG.md,True,True,False,False
+Depression-Screening-WrongLookback.json,DepressionScreening_CDS,qwen3-32b,True,2.284809112548828,,,groq,Depression_screening_CPG.md,True,True,False,False
+Falls-Prevention-WrongAge.json,Falls_Prevention_Screening_CDS,qwen3-32b,True,1.2688863277435303,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-Misuse-WrongAge.json,Alcohol_Misuse_Screening_CDS,qwen3-32b,True,1.7237906455993652,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
+Osteoporosis-WrongLookback.json,Osteoporosis_Screening_CDS,qwen3-32b,True,2.0546727180480957,,,groq,Osteoporosis-Screening_CPG.md,True,True,False,False
+AAA-Screening-WrongAge.json,AAA_Screening_CDS,qwen3-32b,True,1.4777123928070068,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Breast-Cancer-WrongOperator.json,Breast-Cancer-Screening-OpenEMR,qwen3-32b,False,1.3380839824676514,"Logical structure mismatch in MeetsInclusionCriteria. The CPG requires (Screening Age AND Gender AND Mammogram), but the ELM incorrectly implements (Screening Age OR Gender) AND Mammogram. This creates an incorrect inclusion criteria that would include patients who are either age 40+ OR female (instead of requiring both age and gender) while also requiring no recent mammogram.",,groq,Breast-Cancer-Screening-OpenEMR_CPG.md,True,True,True,False
+Tobacco-Missing-Exclusion.json,Tobacco_Use_Screening_CDS,qwen3-32b,True,2.1832680702209473,,,groq,Tobacco-Use-Screening_CPG.md,True,True,False,False
+Lung-Cancer-Missing-SubPopulation.json,Lung_Cancer_Screening_CDS,qwen3-32b,True,2.0068559646606445,,,groq,Lung-Cancer-Screening_CPG.md,True,True,False,False
+IPF-Screening.json,IPF-ScreeningIE,qwen3-32b,True,1.8808386325836182,,,groq,IPF-Screening_CPG.md,True,True,True,True
+IPF-Screening-WrongCT.json,IPF-Screening,qwen3-32b,True,2.238386869430542,,,groq,IPF-Screening_CPG.md,True,True,False,False
+AAA-Missing-SexRestriction.json,AAA_Screening_CDS,qwen3-32b,True,1.4629459381103516,,,groq,AAA-Screening_CPG.md,True,True,False,False
+Depression-Missing-BipolarExclusion.json,DepressionScreening_CDS,qwen3-32b,True,2.403287887573242,,,groq,Depression_screening_CPG.md,True,True,False,False
+Colon-Cancer-Inverted-Procedure.json,Colon-Cancer-Screening-OpenEMR,qwen3-32b,False,1.1966753005981445,Age threshold (50 years) is implemented exactly as specified; Time interval (1 month lookback) for colonoscopy procedures is correctly implemented; Value set for colonoscopy procedures uses the exact OID specified in the CPG; Logical structure correctly implements the AND relationship between age requirement and absence of recent colonoscopy; Decision logic accurately reflects the inclusion criteria and screening recommendation as defined in the CPG,,groq,Colon-Cancer-Screening-OpenEMR_CPG.md,True,True,True,False
+Falls-Inverted-Assessment.json,Falls_Prevention_Screening_CDS,qwen3-32b,True,1.9518113136291504,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Depression-WrongNesting.json,DepressionScreening_CDS,qwen3-32b,True,3.2172882556915283,,,groq,Depression_screening_CPG.md,True,True,False,False
+IPF-WrongExclusionNesting.json,IPF-ScreeningIE,qwen3-32b,True,3.208350896835327,,,groq,IPF-Screening_CPG.md,True,True,False,False
+Falls-SwappedValueSet.json,Falls_Prevention_Screening_CDS,qwen3-32b,True,1.4021046161651611,,,groq,Falls-Prevention-Screening_CPG.md,True,True,False,False
+Alcohol-SwappedValueSet.json,Alcohol_Misuse_Screening_CDS,qwen3-32b,True,1.3101704120635986,,,groq,Alcohol-Misuse-Screening_CPG.md,True,True,False,False
