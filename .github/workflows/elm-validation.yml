@@ -11,10 +11,14 @@ on:
         description: 'Models to run (comma-separated, or "all")'
         type: string
         default: 'all'
-  push:
-    paths:
-      - 'cdr_elmjson_validator/**'
-      - '.github/workflows/elm-validation.yml'
+  # Push auto-trigger disabled — the workflow still references the old
+  # Modal-only runner registry and several model configs no longer match
+  # the current modal_app.py / run_multi_trial.py pipeline. Run manually
+  # via workflow_dispatch when needed. Re-enable by uncommenting below.
+  # push:
+  #   paths:
+  #     - 'cdr_elmjson_validator/**'
+  #     - '.github/workflows/elm-validation.yml'
 
 jobs:
   detect-changes:
