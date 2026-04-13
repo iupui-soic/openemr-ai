@@ -15,7 +15,7 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 
 **Test Dataset**: 41 hand-curated, ground-truth annotated ELM JSON artifacts derived from published clinical practice guidelines (16 valid, 25 invalid). Invalid cases include 13 parametric errors (wrong age thresholds, lookback intervals, clinical values) and 12 semantic logic errors spanning 4 categories: missing condition, inverted logic, wrong nesting, and swapped references. See [`test_data/BENCHMARK.md`](cdr_elmjson_validator/test_data/BENCHMARK.md) for full methodology.
 
-### Models Evaluated (16 open-weight models + 1 proprietary reference)
+### Models Evaluated (15 open-weight models + 1 proprietary reference)
 
 | Model | Provider | Params / Active | Infrastructure |
 |-------|----------|-----------------|----------------|
