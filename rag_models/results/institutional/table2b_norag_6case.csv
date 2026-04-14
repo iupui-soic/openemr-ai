@@ -1,0 +1,8 @@
+model,bleu,rouge_l,sbert_coherence,bert_f1,scispacy_entity_recall,medcat_entity_recall,inference_time_s,n_cases,n_trials,rag_enabled,retrieval_k,embedding_model
+medgemma-27b-4bit,0.081,0.311,0.797,0.811,0.510,0.556,151.0,6,3,False,0,none
+gpt-oss-120b,0.069,0.280,0.798,0.822,0.541,0.564,9.6,6,3,False,0,none
+gpt-oss-20b,0.101,0.314,0.804,0.842,0.516,0.541,7.8,6,3,False,0,none
+llama-4-scout,0.068,0.264,0.781,0.846,0.412,0.408,2.8,6,3,False,0,none
+medgemma-4b,0.071,0.281,0.693,0.808,0.401,0.425,51.0,6,3,False,0,none
+llama-3.1-8b,0.067,0.219,0.653,0.801,0.312,0.357,13.0,6,3,False,0,none
+qwen3-32b,0.065,0.213,0.416,0.781,0.496,0.501,14.0,6,3,False,0,none
