@@ -1,0 +1,8 @@
+model,bleu,rouge_l,sbert_coherence,bert_f1,scispacy_entity_recall,medcat_entity_recall,inference_time_s,n_cases,n_trials,rag_enabled,retrieval_k,embedding_model
+medgemma-27b-4bit,0.101,0.353,0.807,0.871,0.610,0.616,153.2,6,3,True,2,all-MiniLM-L6-v2
+gpt-oss-120b,0.071,0.285,0.808,0.851,0.588,0.614,9.7,6,3,True,2,all-MiniLM-L6-v2
+gpt-oss-20b,0.112,0.326,0.820,0.862,0.546,0.561,7.8,6,3,True,2,all-MiniLM-L6-v2
+llama-4-scout,0.074,0.286,0.812,0.876,0.447,0.460,2.6,6,3,True,2,all-MiniLM-L6-v2
+medgemma-4b,0.092,0.320,0.773,0.868,0.434,0.467,52.0,6,3,True,2,all-MiniLM-L6-v2
+llama-3.1-8b,0.077,0.269,0.780,0.860,0.379,0.397,12.0,6,3,True,2,all-MiniLM-L6-v2
+qwen3-32b,0.075,0.223,0.507,0.819,0.576,0.561,14.0,6,3,True,2,all-MiniLM-L6-v2

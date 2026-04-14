@@ -142,10 +142,10 @@ Results are aggregated across 3 independent runs using `rag_models/evaluation/ag
 
 | Model | Size | Infrastructure | Summaries | Avg Time | Avg Chars |
 |-------|------|----------------|-----------|----------|-----------|
-| GPT-OSS 120B | 120B | Groq (reasoning API) | 40/40 | 5.3s | 7,072 |
-| Qwen3 32B | 32B | Groq API | 40/40 | 4.2s | 5,568 |
-| GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.8s | 5,275 |
-| MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 42.3s | 2,741 |
+| GPT-OSS 120B | 120B | Groq (reasoning API) | 40/40 | 5.4s | 7,072 |
+| Qwen3 32B | 32B | Groq API | 40/40 | 4.3s | 5,568 |
+| GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.9s | 5,275 |
+| MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 44.5s | 2,741 |
 
 **Clinician Evaluation**: 3 physician fellows (GI, IR, ER) independently rated all 160 summaries on 6 dimensions using 5-point Likert scales adapted from PDQI-9 and QNOTE. Inter-rater reliability via Gwet's AC2 (ordinal weights), model comparison via Friedman test with Bonferroni-corrected pairwise Wilcoxon signed-rank tests.
 
@@ -154,9 +154,9 @@ Results are aggregated across 3 independent runs using `rag_models/evaluation/ag
 | Model | Accuracy | Completeness | Organization | Conciseness | Clinical Utility | Overall Quality | Composite |
 |-------|----------|--------------|--------------|-------------|------------------|-----------------|-----------|
 | GPT-OSS 120B | 2.70(0.90) | **4.14(0.57)** | **5.00(0.00)** | 3.64(0.99) | **3.54(0.88)** | **3.44(0.86)** | **3.74** |
-| GPT-OSS 20B | 2.63(0.92) | 3.93(0.64) | **5.00(0.00)** | **3.92(0.78)** | 3.47(0.85) | 3.35(0.86) | 3.72 |
+| GPT-OSS 20B | 2.62(0.92) | 3.92(0.64) | **5.00(0.00)** | **3.92(0.78)** | 3.47(0.85) | 3.35(0.86) | 3.71 |
 | Qwen3 32B | 2.50(0.90) | 3.83(0.62) | 4.94(0.27) | 3.70(0.71) | 3.42(0.91) | 3.29(0.90) | 3.61 |
-| MedGemma 4B | 2.38(0.81) | 2.97(0.74) | 3.91(1.11) | 3.35(1.23) | 2.62(0.84) | 2.51(0.92) | 2.96 |
+| MedGemma 4B | 2.38(0.81) | 2.97(0.74) | 3.91(1.11) | 3.35(1.23) | 2.62(0.84) | 2.51(0.92) | 2.95 |
 
 **Inter-Rater Reliability (Gwet's AC2, ordinal weights):**
 
@@ -186,6 +186,22 @@ Results are aggregated across 3 independent runs using `rag_models/evaluation/ag
 - **MedGemma 4B** scored significantly lower on completeness (2.97 vs 3.83-4.14) and clinical utility (2.62 vs 3.42-3.54), despite comparable BERTScore F1 (0.803) — automated metrics do not capture clinical completeness
 - Automated text overlap metrics (BLEU, ROUGE-L) showed minimal variation across models, confirming clinician evaluation captures quality differences that automated metrics miss
 
+### RAG Ablation (Institutional 6-Case)
+
+Three ablations on the same six institutional conversations, 3 runs per LLM (7 LLMs × 2 conditions = 42 runs for the no-RAG baseline alone):
+
+1. **No-RAG baseline** — schema retrieval disabled.
+2. **Retrieval-depth sweep** — k ∈ {1, 2, 3, 5}.
+3. **Embedding-model substitution** — all-MiniLM-L6-v2 vs. ClinicalBERT vs. PubMedBERT.
+
+Canonical numeric outputs and a reproducibility notebook:
+
+- [`rag_models/results/institutional/table2_rag_6case.csv`](rag_models/results/institutional/table2_rag_6case.csv) — RAG on (k=2).
+- [`rag_models/results/institutional/table2b_norag_6case.csv`](rag_models/results/institutional/table2b_norag_6case.csv) — no-RAG baseline.
+- [`rag_models/results/institutional/ablation_analysis.ipynb`](rag_models/results/institutional/ablation_analysis.ipynb) — loads both CSVs, reports deltas, and verifies every quantitative claim made in the paper's ablation paragraphs.
+
+Findings: disabling retrieval degrades every metric for every model (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060). k=3 and k=5 substantially degraded quality vs. k=2. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
+
 ```bash
 cd rag_models
 
@@ -206,7 +222,7 @@ python clinician_validation/analyze_ratings.py
 
 Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medical transcription across four datasets:
 
-1. **Notion Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
+1. **Institutional Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
 2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (~380 utterances)
 3. **PriMock57**: 57 primary care mock consultations from [PriMock57](https://github.com/babylonhealth/primock57) (~9 hours, real clinicians, utterance-level TextGrid transcripts)
 4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (~55 hours, 5 medical specialties)
@@ -224,7 +240,7 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 
 ### Latest Results
 
-#### Notion Dataset (6 Custom Medical Recordings)
+#### Institutional Dataset (6 Custom Medical Recordings)
 
 | Model | Avg WER | Status |
 |-------|---------|--------|

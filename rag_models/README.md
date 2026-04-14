@@ -77,3 +77,47 @@ This file serves as the main entry point and orchestrator of the entire workflow
 
 <img width="2784" height="1536" alt="Diagram" src="https://github.com/user-attachments/assets/c8244b57-adb2-4e66-a553-8b522c2b1b8f" />
 
+## RAG Ablation Study (Institutional 6-Case Evaluation)
+
+Three ablation variants were run on the same six institutional conversations used for the reference-based evaluation, holding all other pipeline components constant. Each configuration was evaluated over **3 independent runs** per LLM.
+
+### Design
+
+1. **No-RAG baseline.** Schema retrieval disabled; the LLM prompt contained only the conversation transcript. Implemented by replacing the `retrieve()` call in `pipeline/run_fareez_summaries.py` with an empty schema context (`retrieved_schemas = ''`) and writing to a separate output directory.
+2. **Retrieval-depth sweep.** Top-k schemas varied over k ∈ {1, 2, 3, 5}, implemented by varying the `n_results` argument to `collection.query(...)` in the same file.
+3. **Embedding-model substitution.** `all-MiniLM-L6-v2` replaced with ClinicalBERT and PubMedBERT. Requires rebuilding the ChromaDB index with `pipeline/create_vector_db.py` pointing at the alternate embedding.
+
+A **FHIR-context ablation is not applicable** to this architecture: the summarization prompt contains only the conversation transcript and retrieved SOAP schemas as plain text. FHIR-derived structured resources (Patient, Condition, MedicationRequest, AllergyIntolerance, Procedure, Observation) are used exclusively for clinician display and for note write-back — never as input to the generator — so there is no FHIR input variable to remove.
+
+### Metrics
+
+Six automated metrics were computed per run (see `evaluation/`):
+
+| Metric | What it measures | Dimension |
+|-------|------------------|-----------|
+| BLEU | n-gram overlap | Lexical |
+| ROUGE-L | longest common subsequence | Structural |
+| SBERT coherence | sentence-embedding cosine similarity | Global semantic |
+| BERTScore F1 | token-level contextual-embedding F1 | Local semantic |
+| scispaCy entity recall | UMLS CUI recall via scispaCy | Clinical entity |
+| MedCAT entity recall | UMLS CUI recall via MedCAT | Clinical entity |
+
+### Results
+
+Canonical numeric results are stored in `results/institutional/`:
+
+- **`table2_rag_6case.csv`** — RAG on (k=2, all-MiniLM-L6-v2). Corresponds to Table 2 in the paper.
+- **`table2b_norag_6case.csv`** — no-RAG baseline. Corresponds to Table 2b in the paper.
+- **`ablation_analysis.ipynb`** — analysis notebook that loads both CSVs, computes the RAG-vs-no-RAG deltas, and verifies every quantitative claim made in the paper's ablation paragraphs (MedCAT drop range 0.020–0.060, ROUGE-L drop range 0.005–0.050 with LLaMA-3.1-8B showing the largest drop, BERTScore F1 drop range 0.020–0.060, SBERT drops for Qwen3-32B and MedGemma-4B, and near-constant inference time).
+
+### Key findings
+
+- **Disabling retrieval degrades every metric for every model.** MedCAT recall dropped by 0.020–0.060, ROUGE-L by 0.005–0.050, BERTScore F1 by 0.020–0.060. The largest SBERT coherence drops were observed for Qwen3-32B (0.507 → 0.416) and MedGemma-4B (0.773 → 0.693), indicating that smaller or less instruction-tuned models benefit disproportionately from schema scaffolding.
+- **k=3 and k=5 substantially degraded quality** vs. k=2. Higher k pulled in loosely related schemas, lowering mean retrieval similarity and causing the LLM to blend organ-system-inappropriate template language. Production setting: **k=2**.
+- **ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 on retrieval quality** but added 0.92–1.32 s retrieval latency per call. Production embedding: **all-MiniLM-L6-v2**.
+- **Inference time is unchanged** when retrieval is disabled (max |Δt| ≈ 2 s across models), confirming that LLM generation, not retrieval, dominates latency.
+
+### Reproducing end-to-end
+
+Full end-to-end reproduction requires the six institutional transcripts, paired OpenEMR extracts, and reference SOAP notes, which contain institution-specific identifiers from the IU Indianapolis simulation set and are **not** included in this repository. The canonical numeric outputs in `results/institutional/` are therefore the authoritative artifact for the ablation analysis. The end-to-end scripts (`models/*_modal.py`, `pipeline/run_fareez_summaries.py`, `pipeline/create_vector_db.py`) reproduce Fareez OSCE results, which use the same pipeline.
+
