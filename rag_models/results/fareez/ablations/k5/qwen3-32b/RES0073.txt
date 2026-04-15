@@ -1,0 +1,53 @@
+Model: qwen/qwen3-32b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:44:27
+Time: 3.98s
+Tokens: 13,887 in / 961 out
+============================================================
+
+Patient Information  
+The patient is a 41-year-old male with a past medical history of dyslipidemia, managed with a statin medication, and a multivitamin supplement. He resides in an apartment just outside of London and works at a local grocery store. He reports no known allergies to medications or environmental factors. The patient has a history of tobacco use, having quit a few years ago, and consumes red wine a couple of times weekly. He also reports occasional cannabis use. There is no family history of heart or lung conditions or cancer.  
+
+Chief Complaint  
+The patient presents with a five-day history of nasal congestion, rhinorrhea, facial pressure, and pain over the cheeks and jaw. He also reports a loss of smell for the past three days and postnasal drip.  
+
+History of Present Illness  
+The patient initially experienced a runny nose approximately eight days ago, which resolved briefly before worsening five days ago. Over the last two days, he has developed significant facial pressure and pain localized to the cheeks, jaw, and area above the teeth. He notes that one nostril is more obstructed than the other, particularly at night, and that he frequently switches sides to breathe more easily. The nasal discharge is clear or white, with no green or yellow discoloration. He also reports postnasal drip, especially upon waking.  
+
+He has experienced mild chills but no fever, chest pain, shortness of breath, wheezing, cough, or sore throat. There is no associated fatigue, weight loss, nausea, vomiting, abdominal pain, diarrhea, or urinary symptoms. He denies muscle aches, joint pain, or muscle weakness. The patient also notes some redness and itchiness in his eyes but no discharge.  
+
+The patient has no known sick contacts and has not traveled outside of his local area. He has not sought medical attention for similar symptoms in the past, though he recalls a similar episode two years ago that resolved spontaneously.  
+
+Review of Systems  
+- **Constitutional**: No fever, weight loss, or fatigue.  
+- **Respiratory**: No cough, wheezing, or shortness of breath.  
+- **Cardiovascular**: No chest pain or palpitations.  
+- **Gastrointestinal**: No nausea, vomiting, or abdominal pain.  
+- **Genitourinary**: No dysuria or frequency.  
+- **Neurological**: No dizziness or lightheadedness.  
+- **Musculoskeletal**: No joint or muscle pain.  
+- **Dermatological**: No rashes or skin changes.  
+- **Ophthalmic**: Mild eye redness and itchiness.  
+- **Otolaryngologic**: Loss of smell, nasal congestion, and facial pain.  
+
+Past Medical History  
+The patient has a long-standing history of dyslipidemia, managed with a statin. His past medical history also includes chronic kidney disease (stage 5), end-stage renal disease, and a history of renal transplant. He has a history of chronic pain, chronic intractable migraines, essential hypertension, and a history of drug misuse.  
+
+Medications  
+The patient currently takes a statin for dyslipidemia and a multivitamin. His OpenEMR record also lists several other medications, including tacrolimus, hydrochlorothiazide, and amLODIPine, likely related to his renal transplant and hypertension.  
+
+Social History  
+The patient resides alone and works part-time at a grocery store. He has quit smoking and consumes alcohol in moderation. He reports occasional cannabis use.  
+
+Family History  
+No family history of heart, lung, or cancer conditions is reported.  
+
+Objective  
+Vital signs were not available in the OpenEMR record. Physical examination findings were not provided in the transcript.  
+
+Assessment  
+The patient presents with symptoms consistent with acute rhinosinusitis, including nasal congestion, rhinorrhea, postnasal drip, facial pressure, and pain. The presence of a recent improvement followed by a recurrence of symptoms, along with loss of smell, supports the possibility of a bacterial etiology. The absence of fever, cough, or systemic symptoms makes a viral cause more likely at this time.  
+
+Plan  
+The patient should monitor for the development of a fever, which would increase the likelihood of bacterial sinusitis and may warrant antibiotic therapy. Symptomatic relief with saline nasal irrigation and over-the-counter decongestants may be considered. If symptoms persist or worsen, or if a fever develops, a follow-up visit for further evaluation and potential initiation of antibiotics is recommended. The patient should also be advised to monitor for any new or worsening symptoms and to seek medical attention if needed.

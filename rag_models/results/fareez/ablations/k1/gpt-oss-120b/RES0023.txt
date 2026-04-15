@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:21:17
+Time: 4.77s
+Tokens: 13,112 in / 1,604 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: 1915-12-05 (Age ≈ 108 years)  
+Sex: Male  
+Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+Medical Record Number: 48  
+
+Chief Complaint  
+Cough of five‑day duration associated with feverish sensation, fatigue, night sweats, sore throat, and recent loss of smell.
+
+History of Present Illness  
+Aaron Feeney presents to the emergency department with a dry cough that began approximately five days ago. He reports that the cough has progressively worsened, is present throughout the day, and now interferes with his sleep. The cough is non‑productive. He describes a sore throat that developed as the cough persisted and notes mild throat pain that intensifies after coughing. He also reports feeling “really hot,” describing a subjective fever with associated sweating, although he has not taken an oral temperature. He experienced a single episode of profuse night sweating the previous night, waking his shirt soaked. He reports profound exhaustion and a general feeling of being unwell. This morning he noticed an acute change in his sense of smell (anosmia), although his sense of taste remains intact. He denies nausea, vomiting, chills, or recent weight loss. He has not traveled recently and cannot identify any specific sick contacts, although he works in a grocery store where he interacts with many customers. He has no known exposure to confirmed COVID‑19 cases.  
+
+Review of Systems  
+Constitutional: Positive for feverish sensation, fatigue, night sweats; negative for chills, weight loss, recent change in appetite.  
+Respiratory: Positive for dry cough, sore throat, throat discomfort after coughing; negative for shortness of breath, wheezing, hemoptysis, chest pain (apart from throat discomfort).  
+Cardiovascular: No chest pain reported apart from throat discomfort; no palpitations noted.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+ENT: New loss of smell, intact taste.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Psychiatric: PHQ‑2 score 1 (minimal depressive symptoms); GAD‑7 score 2 (minimal anxiety).  
+Musculoskeletal, Dermatologic, Hematologic, Endocrine: No specific complaints reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus (on metformin)  
+- Obesity (BMI 31.5)  
+- Metabolic syndrome  
+- Hyperlipidemia  
+- Ischemic heart disease with prior coronary artery bypass graft  
+- Atrial fibrillation  
+- Chronic kidney disease (stages 1‑4) progressing to end‑stage renal disease; awaiting kidney transplantation  
+- Anemia  
+- Osteoporosis  
+- Prostate neoplasm (carcinoma in situ)  
+- Prior gallbladder removal (≈10 years ago)  
+- History of acute bronchitis (previous episodes in 2017 and 2022‑2023)  
+
+Surgical History  
+- Laparoscopic cholecystectomy (≈10 years prior)  
+
+Medications (as reported by patient)  
+- Ramipril (dose not specified) – for hypertension  
+- Metformin (dose not specified) – for diabetes mellitus  
+- Vitamin D supplement (dose not specified)  
+
+Allergies  
+- Environmental pollen (seasonal)  
+- No known drug allergies  
+
+Family History  
+- Mother with asthma  
+- Brother with asthma  
+
+Social History  
+- Occupation: Grocery store employee, full‑time  
+- Living situation: Resides with wife and two children; wife currently home, children are high‑school students attending school remotely  
+- Tobacco: Never smoked  
+- Alcohol: Consumes approximately three to four beers per weekend  
+- Illicit substances: Denies use of cannabis or other drugs  
+- No recent travel; no known exposure to confirmed infectious illness  
+
+Physical Examination  
+No physical examination findings documented in the encounter.  
+
+Vital Signs  
+No vital signs recorded at the time of this visit.  
+
+Laboratory Data (most recent)  
+- Sodium: 143.9 mmol/L (within normal limits)  
+- Potassium: 4.74 mmol/L (within normal limits)  
+- Chloride: 103.8 mmol/L (within normal limits)  
+- Carbon dioxide (total): 25.7 mmol/L (within normal limits)  
+- Blood urea nitrogen: 17.3 mg/dL (within normal limits)  
+- Creatinine: 0.39 mg/dL (low; may reflect laboratory method)  
+- Glucose: 70.6 mg/dL (fasting range)  
+- Calcium: 9.98 mg/dL (within normal limits)  
+- AST: 36.8 U/L (within normal limits)  
+- Alkaline phosphatase: 79.5 U/L (within normal limits)  
+- Urine protein: 280 mg/dL (elevated)  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+
+Assessment  
+1. Acute bronchitis – clinical picture of a five‑day dry cough with worsening severity, sore throat, low‑grade febrile symptoms, night sweats, and recent anosmia.  
+2. Rule out SARS‑CoV‑2 infection – recent loss of smell raises concern for COVID‑19 despite the absence of a documented positive test.  
+3. Influenza versus other viral upper respiratory infection – presentation is compatible with a viral etiology.  
+4. Stable chronic conditions (hypertension, type 2 diabetes, chronic kidney disease, ischemic heart disease) – currently unchanged and well‑controlled on home medications.  
+
+Plan  
+- Diagnostic Testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. Consider rapid influenza antigen testing if clinically indicated.  
+- Isolation: Instruct patient to self‑isolate at home with all household members for a minimum of 14 days from the onset of symptoms, pending test results. Emphasize strict mask use, hand hygiene, and avoidance of contact with vulnerable individuals.  
+- Symptomatic Treatment: Recommend acetaminophen 325 mg orally every 6 hours as needed for fever or discomfort, not to exceed 3 g per day. Encourage adequate oral fluid intake and rest.  
+- Continue Home Medications: Continue ramipril, metformin, and vitamin D as prescribed. No changes to chronic disease regimens at this time.  
+- Warning Signs: Advise patient to seek immediate medical attention if he develops shortness of breath, chest pain, wheezing, high‑grade fever (> 38.5 °C), confusion, or any worsening of his chronic kidney disease symptoms.  
+- Follow‑Up: Results of the COVID‑19 test will be communicated promptly. He should contact his primary care provider within 3‑5 days for reassessment or sooner if symptoms deteriorate. A follow‑up appointment with his nephrology team is already scheduled per his chronic kidney disease management.  
+- Discharge Instructions: Provide written instructions on self‑isolation, symptom monitoring, medication adherence, and when to return to the emergency department.  
+
+The patient verbalized understanding of the plan and agreed to proceed with testing and self‑isolation.

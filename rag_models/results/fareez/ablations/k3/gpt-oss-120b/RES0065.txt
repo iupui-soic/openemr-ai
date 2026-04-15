@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:25:41
+Time: 5.93s
+Tokens: 11,202 in / 1,931 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: 26 October 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Sore throat of three days’ duration with recent onset fever and associated fatigue.
+
+History of Present Illness  
+Abbey reports the gradual onset of a sore throat three days ago. The pain has been constant and is worsened by swallowing, especially solid foods; liquids cause mild discomfort, particularly when cold. One day ago she began to feel feverish with chills, although she has not taken a temperature measurement. She describes the fever as intermittent but overall worsening. She notes generalized fatigue and has felt “really tired.” She denies a cough, shortness of breath, nasal congestion, rhinorrhea, headache, nausea, vomiting, abdominal pain, diarrhea, constipation, rash, night sweats, or chest pain. She has felt swollen “lumps” in the neck, which she interprets as lymphadenopathy. She reports no known sick contacts and no recent travel. Over‑the‑counter lozenges provide only temporary relief. She has never experienced a similar episode. She is concerned that the illness might be COVID‑19.
+
+Review of Systems  
+Constitutional: Positive for fever, chills, fatigue; negative for weight loss, night sweats.  
+HEENT: Positive for sore throat, odynophagia, cervical lymph node swelling; negative for cough, rhinorrhea, nasal congestion, ear pain, visual changes.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or dysuria.  
+Genitourinary: No changes in urination.  
+Neurologic: No headache or focal deficits.  
+Dermatologic: No rash or skin lesions.  
+Psychiatric: No depression or anxiety reported.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+- Crohn’s disease, diagnosed in 2022, currently managed with sulfasalazine.  
+- End‑stage renal disease with prior renal transplant (history of transplant noted in record).  
+- Chronic kidney disease stage 4 (historical).  
+- Hypertension.  
+- Prediabetes / type 2 diabetes with microalbuminuria.  
+- Anemia.  
+- Metabolic syndrome.  
+- Ischemic heart disease.  
+- Other historical conditions include prior episodes of gingivitis, dental caries, and various social/psychological findings documented in the record.  
+
+Surgical History  
+- Colonoscopy with brief hospitalization in 2022.  
+- Renal transplant (date not specified in current encounter).  
+
+Social History  
+The patient lives in an apartment with her parents and younger brother. She does not smoke, does not use recreational drugs, and drinks alcohol only rarely (has avoided it because it worsens her Crohn’s disease). She reports regular swimming as exercise. No occupational exposures reported.  
+
+Family History  
+Both parents have a history of inflammatory bowel disease (Crohn’s disease and ulcerative colitis). Additional family history includes asthma and eczema. No known hereditary cardiac, endocrine, or oncologic conditions reported.  
+
+Current Medications (home)  
+- Sulfasalazine (dose not specified) for Crohn’s disease.  
+- Tacrolimus 1 mg extended‑release daily (post‑transplant immunosuppression).  
+- Tacrolimus injection 5 mg/ mL as needed (post‑transplant).  
+- Acetaminophen/Hydrocodone 7.5 mg/325 mg oral tablet as needed for pain.  
+- Naproxen sodium 220 mg oral tablet as needed.  
+- Epoetin alfa injection (dose not specified).  
+- Sodium fluoride gel (oral dental use).  
+- Medroxyprogesterone acetate injection (historical).  
+- Insulin isophane/regular (human) for diabetes.  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg daily.  
+- Metoprolol succinate 100 mg extended‑release daily.  
+- Nitroglycerin spray PRN.  
+
+Objective  
+
+Vital Signs  
+- Heart Rate: 89 beats per minute (recorded in prior encounter).  
+- Respiratory Rate: 13 breaths per minute.  
+- Temperature: Not measured during this visit.  
+- Blood Pressure: Not recorded during this visit.  
+- Oxygen Saturation: Not recorded.  
+- Height: 169.3 cm; Weight: Not recorded; BMI: 27.6 (from prior data).  
+
+Physical Examination  
+No physical examination details were documented in the encounter transcript. The patient reports palpable cervical lymph nodes (“lumps” in the neck). No other abnormalities reported.  
+
+Laboratory Data (most recent values on file)  
+- Hemoglobin 15.9 g/dL, Hematocrit within normal limits.  
+- White blood cell count 4.7 ×10³/µL (low‑normal).  
+- Creatinine 0.95 mg/dL, BUN 9.3 mg/dL (stable renal function).  
+- Electrolytes: Na 137 mmol/L, K 4.6 mmol/L, Cl 110 mmol/L, CO₂ 28 mmol/L.  
+- Glucose 64.6 mg/dL.  
+- Calcium 8.76 mg/dL.  
+- PHQ‑2 score 2, DAST‑10 score 2 (screening results).  
+Urinalysis negative for leukocyte esterase, nitrite, ketones; pH 5.2.  
+
+No rapid streptococcal test, COVID‑19 PCR, or EBV serology has been performed at this visit.
+
+Assessment  
+1. Acute pharyngitis – most likely viral given the absence of cough, normal white blood cell count, and recent onset; however, bacterial etiology (Group A Streptococcus) cannot be excluded.  
+2. Fever of unknown origin, likely related to the pharyngeal infection.  
+3. Cervical lymphadenopathy consistent with viral upper respiratory infection or infectious mononucleosis.  
+4. Immunocompromised state secondary to Crohn’s disease therapy and post‑transplant immunosuppression, increasing risk for atypical infections.  
+5. Rule‑out COVID‑19 infection.  
+6. Rule‑out Epstein‑Barr virus (infectious mononucleosis).  
+
+Plan  
+
+Diagnostics  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR (results expected within 24‑48 hours).  
+- Perform rapid antigen detection test for Group A Streptococcus (or throat culture if rapid test unavailable).  
+- Order EBV serology (VCA IgM, VCA IgG, EBNA) to assess for acute infectious mononucleosis.  
+
+Therapeutic  
+- Continue current home medications, including sulfasalazine and immunosuppressive regimen, without interruption.  
+- Provide symptomatic relief: acetaminophen 650 mg PO q6‑8 h PRN for fever or throat pain, provided renal function remains stable.  
+- Encourage adequate hydration, soft diet, and continued use of lozenges for throat comfort.  
+- Advise patient to maintain isolation until COVID‑19 test results are negative and to wear a mask when in contact with household members.  
+
+Patient Education & Disposition  
+- Discussed that most sore throats are viral and self‑limited; however, bacterial infection will be treated with antibiotics if the rapid strep test is positive.  
+- Instructed to monitor temperature; if fever exceeds 101 °F (38.3 °C) or worsens, or if she develops new symptoms such as shortness of breath, severe neck swelling, or difficulty breathing, she should seek urgent care.  
+- Emphasized hand hygiene, avoidance of sharing utensils, and staying home from work or school while symptomatic.  
+- Provided guidance on when to seek follow‑up: earlier if test results are positive for COVID‑19, if throat pain becomes severe, or if there is any concern for worsening lymphadenopathy.  
+
+Follow‑up  
+- Telephone follow‑up in 48‑72 hours to review COVID‑19 and EBV results.  
+- In‑person visit or telehealth follow‑up within 5‑7 days for reassessment of throat symptoms and to determine need for antibiotics.  
+
+Disposition  
+The patient was discharged home in stable condition with the above plan and instructions. No further immediate interventions were required.

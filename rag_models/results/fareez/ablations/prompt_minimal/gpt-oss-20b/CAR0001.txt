@@ -1,0 +1,123 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:29:24
+Time: 2.77s
+Tokens: 9,395 in / 1,684 out
+============================================================
+
+**Patient Information**  
+- **Name**: Not provided in transcript  
+- **Age**: 39 years  
+- **Gender**: Male  
+- **Occupation**: Accountant  
+- **Living Situation**: Lives alone in an apartment  
+
+---
+
+## SOAP Note
+
+### S – Subjective  
+**Chief Complaint**: “Chest pain”  
+
+**History of Present Illness (HPI)**  
+- Onset: 1 day ago (previous night), progressive and now sharp, left‑sided chest pain, constant for ~8 hours.  
+- Character: Sharp, 7‑8/10 severity.  
+- Aggravating factors: Lying down, deep inspiration.  
+- Relieving factors: Upright position (lying down makes it worse).  
+- Associated symptoms: Lightheadedness, shortness of breath, mild tachycardia (“racing heart”), mild diaphoresis from breathing difficulty. No cough, wheeze, or hemoptysis. No nausea, vomiting, abdominal pain, urinary symptoms, fever, chills, or night sweats. No chest wall pain or neck pain.  
+- No prior similar episodes.
+
+**Review of Systems (ROS)**  
+- **General**: No fever, chills, weight changes, or night sweats.  
+- **Cardiovascular**: Chest pain (present), palpitations (present), no syncope.  
+- **Respiratory**: Dyspnea (present), no cough or wheeze.  
+- **Gastrointestinal**: No nausea, vomiting, abdominal pain.  
+- **Neurologic**: No headaches, dizziness beyond lightheadedness.  
+- **Integumentary**: No rash or skin changes.  
+- **Musculoskeletal**: No back or neck pain.  
+- **Psychiatric**: Not reported.  
+
+**Allergies**: No known drug or food allergies reported.  
+
+**Past Medical History**: None reported.  
+
+**Past Surgical History**: None reported.  
+
+**Medications**: No current prescription or over‑the‑counter medications.  
+
+**Social History**:  
+- **Tobacco**: 1 pack/day for 10–15 years.  
+- **Alcohol**: 1–2 drinks/day (~10 drinks/week).  
+- **Illicit Drugs**: Occasional cannabis (5 mg/week).  
+- **Exercise**: Runs ~30 min every other day.  
+- **Diet**: Generally healthy dinners, lunches eaten out.  
+
+**Family History**:  
+- Father had a myocardial infarction at age 45 and hypercholesterolemia.  
+- No known history of stroke, other cancers, or cardiac disease in other relatives.  
+
+---
+
+### O – Objective  
+*No vital signs, physical exam, or laboratory data were provided in the transcript. Vital signs and basic labs are pending.*
+
+**Vital Signs** (pending):  
+- BP, HR, RR, SpO₂, Temperature, Weight  
+
+**Physical Examination** (pending):  
+- Cardiovascular, respiratory, abdominal, musculoskeletal, neurologic, skin  
+
+**Laboratory Tests** (pending):  
+- CBC, CMP, cardiac enzymes (troponin I/T), D‑dimer (if PE suspected), ECG  
+
+**Imaging** (pending):  
+- 12‑lead ECG (urgent), chest X‑ray (if indicated).  
+
+---
+
+### A – Assessment  
+
+**Primary Differential Diagnosis**  
+| # | Possible Condition | Rationale | Key Features |
+|---|-------------------|-----------|--------------|
+| 1 | **Acute Coronary Syndrome (unstable angina / NSTEMI)** | Sharp, constant chest pain, risk factors (age, smoking, family MI), dyspnea, palpitations, worsening with lying down and deep inspiration. | 7–8/10 pain, left‑sided, associated with diaphoresis and lightheadedness. |
+| 2 | **Pulmonary Embolism** | Dyspnea, tachycardia, chest pain worse with inspiration, but no pleuritic features or risk factors for DVT. | Requires low probability. |
+| 3 | **Aortic Dissection** | Sudden severe chest pain radiating, but pain is progressive over hours, not tearing. | Unlikely. |
+| 4 | **Esophageal Spasm / GERD** | Pain can be sharp, but usually relieved by antacids, not associated with dyspnea or tachycardia. | Less likely. |
+| 5 | **Panic Attack / Anxiety** | Chest tightness, tachycardia, but pain is sharp, persistent, and linked to physical triggers. | Possible but secondary. |
+
+**Most Likely Diagnosis**: **Acute Coronary Syndrome (Unstable Angina / NSTEMI)**  
+
+**Additional Considerations**:  
+- High‑risk profile: 39 y/o male, heavy smoking, positive family history.  
+- No other comorbidities; therefore, high index of suspicion for coronary ischemia.
+
+---
+
+### P – Plan  
+
+| Category | Action |
+|----------|--------|
+| **Immediate Care** | 1. **12‑lead ECG** within 10 min. <br>2. **Cardiac enzymes** (troponin I/T) at baseline, then 3 h & 6 h. <br>3. **Oxygen** if SpO₂ < 94 %. <br>4. **Nitroglycerin** 0.4 mg sublingual if pain persists, repeat every 5 min up to 3 doses if no BP < 90 mmHg systolic. <br>5. **Aspirin** 325 mg PO chewable immediately. <br>6. **Morphine** 2 mg IV for pain if not relieved by nitro (monitor vitals). <br>7. **Cardiologist consult** (urgent). |
+| **Monitoring** | Continuous cardiac telemetry, hourly vitals, bedside pulse oximetry. |
+| **Risk Stratification** | Calculate HEART score; likely high‑risk. |
+| **Disposition** | Admit to Cardiac Care Unit for further monitoring and possible invasive evaluation (e.g., cardiac catheterization). |
+| **Patient Education** | 1. Rest and remain upright; avoid lying flat. <br>2. Refrain from smoking, alcohol, and illicit drugs while hospitalized. <br>3. Explain the importance of serial troponins and ECG. <br>4. Discuss lifestyle modifications (smoking cessation, diet, exercise). |
+| **Follow‑Up** | Cardiology follow‑up in 1–2 weeks if discharged; otherwise, inpatient care. |
+| **Documentation** | Update EMR with HPI, ROS, plan, and orders. |
+| **Safety Net** | If chest pain worsens or new symptoms (syncope, severe dyspnea) arise, call 911. |
+
+---
+
+**Disposition Note**:  
+- **Admit** to Cardiac Care Unit pending ECG and troponin results.  
+- **Order**: Immediate 12‑lead ECG, troponin I, CBC, BMP, lipid panel, D‑dimer (if PE suspected), chest X‑ray.  
+- **Medication orders**: Aspirin 325 mg PO, sublingual nitroglycerin 0.4 mg as needed, morphine 2 mg IV if pain not controlled, oxygen 2–4 L/min by nasal cannula if SpO₂ < 94 %.  
+
+**Follow‑up**: Cardiovascular evaluation within 24 hrs; arrange for cardiac catheterization if indicated.
+
+**Prepared By**: [Scribe Name], EMR Clinical Documentation Specialist  
+**Date/Time**: 2026‑04‑14 10:15 AM
+
+---

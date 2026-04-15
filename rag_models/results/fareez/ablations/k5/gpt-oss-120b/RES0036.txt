@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:28:59
+Time: 5.31s
+Tokens: 11,960 in / 1,871 out
+============================================================
+
+Patient Information  
+Name: Adrianna Camelia Wuckert  
+Date of Birth: 02/25/1919 (Age 107)  
+Sex: Female  
+Address: 609 Bartell Gate, Marshfield, Massachusetts 02050  
+
+Chief Complaint  
+Shortness of breath and productive cough of six days’ duration.
+
+History of Present Illness  
+The patient reports a sudden onset of dyspnea six days ago that has been persistent and progressively worsening. The shortness of breath is present at rest and is aggravated by exertion, such that she must stop frequently while walking. Concurrently she developed a cough that is productive of a “rusty‑colored” sputum occurring several times per day. She describes the cough and dyspnea as constant and notes associated wheezing on auscultation. The patient also reports a sharp, pleuritic chest pain that is precipitated by coughing; she rates the pain as 7/10 and notes that it gradually resolves when coughing subsides. She feels “feverish” and chilly but has not measured a temperature. There is no reported hemoptysis, orthopnea, nocturnal dyspnea, or positional variation of symptoms. She denies exposure to known sick contacts, recent travel, or a clear precipitating event.  
+
+Review of Systems  
+
+- Constitutional: Feels cold/feverish, no documented fever, no weight loss, no night sweats.  
+- Respiratory: Dyspnea at rest and on exertion, productive cough with rust‑colored sputum, wheezes noted, no known exposure to pollen or cold air triggers.  
+- Cardiovascular: Sharp chest pain associated with cough, no radiation, no palpitations, no known pressure sensation.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria or urinary frequency changes.  
+- Neurologic: No headaches, dizziness, or syncope.  
+- Musculoskeletal: No myalgias.  
+- Skin: No rashes.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+- Hypertension (essential) – ongoing.  
+- Ischemic heart disease – ongoing.  
+- Obesity (BMI >30) – ongoing.  
+- Chronic kidney disease (stages 1‑4) – ongoing.  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria – ongoing.  
+- Hyperlipidemia – ongoing.  
+- Anemia – ongoing.  
+- Chronic sinusitis – ongoing.  
+- History of stroke (1990) – ongoing sequelae not detailed.  
+
+Surgical History  
+No prior surgical procedures reported.
+
+Social History  
+The patient smokes approximately 10 cigarettes per day and has done so since age 20. She uses cannabis intermittently (approx. 5 mg per week). Alcohol consumption is modest, about five drinks per week. She works in a crowded environment with a malfunctioning air‑conditioning system, high humidity, and possible dust/mold exposure. She lives in a poorly maintained apartment with potential mold and dust exposure. She keeps pet birds (approximately three years). She reports limited exercise and a diet high in fast food and junk food. No current prescription or over‑the‑counter medications are being taken.
+
+Family History  
+No known family history of cardiac, pulmonary, or neoplastic disease reported.
+
+Current Medications  
+The patient reports taking no medications at this time.
+
+Objective  
+
+Vital Signs  
+No vital sign data available at this encounter.
+
+Physical Examination  
+General: No specific observations recorded.  
+Respiratory: Patient reports wheezing; no documented auscultation findings beyond wheeze. No description of crackles, use of accessory muscles, or percussion findings.  
+Cardiovascular: No murmurs, rubs, or gallops reported; chest pain is pleuritic and cough‑related.  
+Other systems: No abnormal findings reported.
+
+Laboratory Data (most recent values on file)  
+- Potassium: 4.7 mmol/L (within normal limits)  
+- Calcium: 9.33 mg/dL (within normal limits)  
+- Chloride: 107.38 mmol/L (within normal limits)  
+- Sodium: 142.95 mmol/L (within normal limits)  
+- BUN: 11.83 mg/dL (within normal limits)  
+- Creatinine: 2.72 mg/dL (elevated, consistent with chronic kidney disease)  
+- eGFR: 74 mL/min/1.73 m² (reduced)  
+- Lipid panel: Total cholesterol 150–186 mg/dL, HDL 46–49 mg/dL, LDL ~75–85 mg/dL, Triglycerides 128 mg/dL (all within therapeutic range for her comorbidities)  
+- ALT: 34 U/L (normal)  
+- Total bilirubin: 0.45 mg/dL (normal)  
+- Albumin: 4.49 g/dL (normal)  
+
+No complete blood count, inflammatory markers, or microbiology results are available.
+
+Imaging  
+No imaging studies have been performed or documented to date.
+
+Assessment  
+
+1. Community‑acquired pneumonia – probable bacterial etiology given acute onset, rust‑colored sputum, feverish symptoms, and pleuritic chest pain.  
+2. Possible acute exacerbation of chronic obstructive pulmonary disease (COPD) – patient has a significant smoking history and wheezing.  
+3. Hypertension, ischemic heart disease, chronic kidney disease, type 2 diabetes, hyperlipidemia, obesity, and anemia – chronic conditions currently stable per available data.  
+4. Tobacco use disorder – 10 cigarettes/day for >60 years.  
+5. Environmental exposure risk – humid, poorly ventilated workplace; possible mold and dust exposure at home; bird exposure.
+
+Plan  
+
+Diagnostics  
+- Obtain a chest radiograph (PA and lateral) to confirm infiltrate and assess for complications.  
+- Order a complete blood count with differential, C‑reactive protein, and procalcitonin to gauge infection severity.  
+- Perform basic metabolic panel and repeat renal function to monitor kidney status.  
+- Collect sputum for Gram stain and culture, including assessment for atypical organisms.  
+- Consider viral PCR panel for respiratory viruses given the recent upper‑respiratory symptoms.  
+
+Therapeutic Interventions  
+- Empiric antibiotic therapy for community‑acquired pneumonia: start amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7‑10 days, pending culture results and renal dosing adjustments as needed.  
+- If concern for COPD exacerbation, initiate a short course of oral corticosteroid (e.g., prednisone 40 mg PO daily for 5 days) and provide a short‑acting bronchodilator (e.g., albuterol inhaler 2 puffs every 4‑6 hours as needed).  
+- Continue antipyretic therapy with acetaminophen as needed for fever or discomfort.  
+- Reinforce smoking cessation: offer counseling, nicotine replacement therapy, and referral to a cessation program.  
+- Counsel on avoiding further exposure to dust, mold, and bird droppings; recommend improving ventilation at home and workplace if possible.  
+
+Supportive Care  
+- Encourage adequate oral fluid intake and rest.  
+- Advise gradual return to activity as symptoms improve; avoid strenuous exertion until dyspnea resolves.  
+
+Follow‑up  
+- Re‑evaluate in 48‑72 hours either in clinic or via telehealth to assess clinical response, review laboratory results, and determine need for therapy adjustment.  
+- Arrange outpatient primary care follow‑up within one week for chronic disease management, particularly hypertension, diabetes, and CKD.  
+- Schedule a follow‑up chest radiograph in 2‑3 weeks to confirm resolution of infiltrate.  
+
+Discharge Instructions (if applicable)  
+- Take prescribed antibiotics exactly as directed; complete the full course even if feeling better.  
+- Use the albuterol inhaler for wheezing or shortness of breath; do not exceed prescribed doses.  
+- Monitor temperature; seek urgent care if fever exceeds 101 °F, if dyspnea worsens, if you cough up bright red blood, or if chest pain becomes severe or radiates.  
+- Maintain hydration, eat a balanced diet, and limit fast‑food intake.  
+- Continue to abstain from smoking; consider nicotine patches or gum.  
+- Keep the living environment as dry and clean as possible; consider professional cleaning for mold if suspected.  
+
+No further information is available at this time.

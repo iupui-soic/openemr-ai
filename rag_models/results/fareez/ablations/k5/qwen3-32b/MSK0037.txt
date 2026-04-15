@@ -1,0 +1,68 @@
+Model: qwen/qwen3-32b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 03:45:33
+Time: 5.70s
+Tokens: 35,016 in / 1,250 out
+============================================================
+
+Patient Information  
+The patient is a 105-year-old male with a complex medical history, including diabetes mellitus type 2, chronic kidney disease stage 4, essential hypertension, hypertriglyceridemia, metabolic syndrome, localized and chronic kidney disease, and a history of prostate carcinoma in situ. He resides in a small apartment with his wife and is currently employed full-time in construction. The patient has a history of tobacco use (1 pack per day for 10 years), occasional marijuana use, and alcohol consumption (1-3 drinks daily). His social history includes prior criminal activity, reports of violence in the environment, and episodes of stress and social isolation. He has a history of multiple medication reviews and has been under continuous monitoring for various chronic conditions.  
+
+Chief Complaint  
+The patient presents with a two-month history of discomfort and limited extension in the right hand, specifically involving the 4th and 5th digits. He reports the presence of nodules at the base of these fingers, with no associated redness, swelling, or pain upon palpation. The discomfort worsens with attempts to extend the fingers and is described as aching in nature. The patient also notes a sensation of catching or locking when trying to extend the affected digits. There is no history of trauma, fever, or systemic symptoms.  
+
+History of Present Illness  
+The patient first noticed the symptoms approximately two months ago. The discomfort is localized to the right hand, affecting the 4th and 5th digits. He describes the presence of palpable nodules at the base of these fingers, which become more prominent with extension. The patient reports that the discomfort is not severe but is functionally limiting, interfering with his ability to perform tasks related to his construction work. There is no history of trauma or direct injury to the hand. The patient denies any numbness, tingling, or weakness in the affected hand. He also denies any systemic symptoms such as fever, chills, or unintentional weight loss.  
+
+Review of Systems  
+Constitutional: No fever, chills, or unintentional weight loss.  
+Respiratory: No cough, congestion, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: No numbness, tingling, or weakness.  
+Musculoskeletal: No pain or swelling in other joints.  
+Psychiatric: No depression or anxiety reported.  
+Dermatological: No rashes or changes in skin integrity.  
+Endocrine: No changes in appetite or weight.  
+
+Allergies  
+No known drug or environmental allergies.  
+
+Past Medical History  
+The patient has a long-standing history of diabetes mellitus type 2, chronic kidney disease stage 4, essential hypertension, hypertriglyceridemia, and metabolic syndrome. He has also been diagnosed with localized prostate carcinoma in situ. His medical history includes multiple medication reviews, chronic pain, and episodes of stress and social isolation.  
+
+Surgical History  
+The patient has a history of anterior cruciate ligament (ACL) repair at age 18.  
+
+Social History  
+The patient is currently employed full-time in construction. He has a history of tobacco use (1 pack per day for 10 years), occasional marijuana use, and alcohol consumption (1-3 drinks per day). His social history includes prior criminal activity, reports of violence in the environment, and episodes of stress and social isolation.  
+
+Family History  
+No specific family history of musculoskeletal or neurological conditions was reported.  
+
+Current Medications  
+The patient is currently taking clopidogrel, alteplase, epoetin alfa, acetaminophen/dextromethorphan/doxylamine, sodium fluoride, insulin isophane/regular, hydrochlorothiazide, lisinopril, amlodipine, tacrine, and nitroglycerin.  
+
+Objective  
+Vital Signs: No recent vital signs were recorded in the OpenEMR extract.  
+Physical Exam: The patient demonstrated nodules at the base of the 4th and 5th digits on the right hand. There was no redness, swelling, or warmth. Passive extension of the affected fingers was limited and associated with mild discomfort. No crepitus or significant pain was elicited upon palpation. No neurological deficits were observed.  
+
+Laboratory Results  
+Recent lab results include a creatinine level of 2.22 mg/dL, indicating chronic kidney disease. Glucose was within normal limits at 120.41 mg/dL. Electrolytes were stable, with sodium at 137.22 mmol/L and potassium at 4.42 mmol/L. Estimated glomerular filtration rate (eGFR) was 24.41 mL/min/1.73 m², consistent with stage 4 chronic kidney disease.  
+
+Imaging  
+No recent imaging was reported in the OpenEMR extract.  
+
+Assessment  
+The patient's symptoms are most consistent with Dupuytren's contracture, a condition characterized by the formation of nodules and cords in the palmar fascia, leading to limited extension of the fingers. The absence of redness, swelling, or systemic symptoms supports this diagnosis and makes flexor tenosynovitis or other inflammatory conditions less likely. Given the patient’s age and occupational history, a chronic, progressive condition is more likely.  
+
+Plan  
+1. Referral to a hand specialist for further evaluation and possible surgical intervention.  
+2. Initiation of conservative management, including physical therapy and activity modification to reduce strain on the affected hand.  
+3. Continue current medications with close monitoring for side effects.  
+4. Follow-up in 2 weeks to reassess symptoms and response to therapy.  
+5. Recommend temporary modification of work activities to avoid exacerbation of symptoms.  
+6. Schedule a repeat renal function assessment given the stage 4 chronic kidney disease.  
+7. Continue monitoring for complications related to diabetes and hypertension.

@@ -1,0 +1,45 @@
+Model: google/medgemma-4b-it
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 05:59:27
+Time: 26.01s
+Tokens: 6,365 in / 485 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Name: Aaron McClure
+DOB: 1934-04-26
+Sex: Male
+Unit Number: 77
+
+Chief Complaint: Cough for the past two weeks.
+
+History of Present Illness:
+
+The patient presents today with a cough that began approximately two weeks ago. The cough is described as dry and non-productive, without any blood. The patient reports a runny nose that started last week. The cough has improved somewhat over the past two weeks, but it persists. The patient denies any headache, vision changes, or changes in smell or taste. He denies sore throat, difficulty breathing, or chest pain. He denies palpitations or abdominal pain, nausea, vomiting, or diarrhea. He denies muscle aches or numbness/tingling. The patient reports no fevers or chills, but did experience some chills two nights last week. He denies night sweats or unintentional weight loss.
+
+Past Medical History:
+
+The patient reports being completely healthy otherwise. He denies any medical conditions. He denies any medications, including over-the-counter medications, herbal supplements, or vitamins. He denies any allergies, including food, environmental, or medication allergies. He reports that his father has high cholesterol.
+
+Social History:
+
+The patient currently lives in a dorm at university, but is home with his parents doing virtual learning. There are no other individuals living in the home with him. The patient reports that his mom had the sniffles last week, but has since recovered. The patient denies traveling outside of the province. He reports occasional, casual smoking and marijuana use, but denies regular use. He reports occasional alcohol use, primarily on weekends.
+
+Family History:
+
+The patient reports that his father has high cholesterol.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided information.
+
+Assessment:
+
+The patient presents with a cough of two weeks duration, with a runny nose that began last week. The cough is dry and non-productive. The patient denies fever, chills, headache, vision changes, or other concerning symptoms.
+
+Plan:
+
+The patient is instructed to isolate at home and avoid contact with his parents. A COVID swab will be performed to rule out COVID-19. The patient will be monitored for fever. Antibiotics are not indicated at this time, as the patient denies sore throat. The patient should follow up with a healthcare provider if symptoms worsen or do not improve.

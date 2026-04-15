@@ -1,0 +1,173 @@
+Model: openai/gpt-oss-20b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:27:54
+Time: 2.60s
+Tokens: 6,182 in / 1,924 out
+============================================================
+
+**Patient Information**  
+Name: Abbey Eliza Schmitt  
+DOB: 27 Sep 1965 (58 years old)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Insurance: (Information not provided)  
+Primary Care Provider: (Information not provided)
+
+---
+
+## SOAP Summary
+
+### Subjective
+
+**Chief Complaint**  
+- “I’ve been coughing for the past three days and it I can’t seem to stop.”
+
+**History of Present Illness**  
+Mrs Schmitt reports a 3‑day history of a persistent, dry cough that has progressively worsened. She notes that the cough is present all day and interrupts her sleep. She has experienced subjective fevers (“feel hot”) beginning today, but she has not yet taken a temperature. She denies sputum production, hemoptysis, chest pain, wheezing, shortness of breath, or dyspnea. She has had mild night‑time chills followed by night‑sweats, a mild headache, general fatigue, mild body aches, and a low‑grade fever. No sore throat, nasal congestion, runny nose, or ear discharge was reported.
+
+**Associated Symptoms (Positive)**
+- Dry cough (persistent, worsening)
+- Subjective fever / feeling hot
+- Night‑time chills with sweating
+- Fatigue, mild body aches, headache
+- Sleep disturbance (cough at night)
+
+**Associated Symptoms (Negative)**
+- No sputum, no hemoptysis
+- No chest pain, no dyspnea, no wheezing
+- No sore throat, nasal congestion, or ear pain
+- No nausea, vomiting, diarrhea
+- No loss of taste/smell
+- No rash, no dysuria or urinary frequency
+- No significant weight loss
+
+**Review of Systems**  
+- **Constitutional:** Feverish, fatigue, mild body aches.  
+- **Respiratory:** Dry cough, no sputum, no dyspnea, no wheeze.  
+- **Cardiovascular:** No chest pain, no palpitations, no syncope.  
+- **GI:** No nausea/vomiting, no diarrhea, appetite preserved.  
+- **GU:** No dysuria, no frequency.  
+- **ENT:** No sore throat, no ear or eye discharge.  
+- **Skin:** No rash.  
+- **Psychological:** Mild anxiety (GAD‑7 score 3).  
+
+**Past Medical History**  
+- Hypothyroidism (on Synthroid).  
+- Obesity (BMI 30.06).  
+- Chronic kidney disease stage 2 (labs pending).  
+- Chronic low back and neck pain.  
+- Osteoarthritis of knee.  
+- History of hypertension, chronic congestive heart failure (present in the OpenEMR data but not discussed in encounter).  
+- Previous viral sinusitis episodes.  
+
+**Surgical History**  
+- Appendectomy during adolescence.
+
+**Medications**  
+- Synthroid (levothyroxine) – ongoing.  
+- Daily multivitamin (brand unspecified).  
+- No current use of antihypertensives or diuretics in the visit.  
+- No recent use of cough medications beyond over‑the‑counter syrup.
+
+**Allergies**  
+- None reported.
+
+**Social History**  
+- Lives with husband and two teenage children in a recently moved townhouse.  
+- Works from home in marketing; husband works at an IT company (mostly isolated cubicles).  
+- No tobacco use.  
+- Occasional alcohol (1–2 glasses of wine 3–4 days per week).  
+- Occasional marijuana use, not regular.  
+- No recreational drug use.  
+- No regular exercise (self‑reported).  
+
+**Family History**  
+- Sister (15 yrs older) had a recent myocardial infarction.  
+- Parents deceased of natural causes, no hereditary heart disease reported.  
+- No known cancers in first‑degree relatives.
+
+**Pertinent Exposure**  
+- Husband has been vomiting for the past two days with subjective fever; has not sought care.  
+- No known sick contacts at work or in the household besides husband.  
+- No recent travel or animal exposure.
+
+**Chief Concerns**  
+- Patient is curious whether her symptoms are COVID‑19 related.
+
+---
+
+### Objective
+
+**Vital Signs** – *Pending*: The encounter did not document vitals; the plan includes obtaining a temperature, pulse oximetry, blood pressure, heart rate, and respiratory rate at the next visit.
+
+**Physical Examination** – *Pending*: No examination findings recorded during this visit. The clinician plans to perform a focused respiratory exam, checking for crackles, wheezes, and auscultation for bronchial breathing. Cardiovascular, abdominal, and neuro‑physical exams will be conducted as indicated.
+
+**Laboratory Studies** – Pending order:  
+- CBC with differential (to evaluate for leukocytosis or eosinophilia).  
+- CMP (electrolytes, renal function, liver enzymes).  
+- COVID‑19 PCR nasal swab (high‑priority due to current epidemiology).  
+
+**Imaging** – Pending order:  
+- Chest X‑ray (CXR) to rule out infiltrate or pneumonia.  
+
+**Other** – No current abnormal lab data provided in the encounter; baseline kidney function shows creatinine ≈ 1.99 mg/dL (CKD stage 2).  
+
+---
+
+### Assessment
+
+1. **Acute bronchitis (viral)** – Most likely diagnosis based on dry cough, lack of sputum, mild fever, and recent onset.  
+2. **COVID‑19 infection – rule out** – High suspicion due to cough, subjective fever, and household contact; will be evaluated by PCR.  
+3. **Differential** – Pneumonia, early COVID‑19 pneumonia, atypical infection, or bacterial bronchitis.  
+4. **Chronic comorbidities** – Hypothyroidism, CKD 2, obesity, and mild chronic back/neck pain.  
+5. **Social stressors** – Recent move, husband's illness may contribute to anxiety.
+
+---
+
+### Plan
+
+**Diagnostic Work‑up**  
+- Order COVID‑19 PCR nasopharyngeal swab (high priority).  
+- Order chest X‑ray (CXR) to exclude infiltrates or consolidation.  
+- Order CBC with differential and CMP to assess infection markers and baseline renal/hepatic status.  
+- Consider repeat CBC or CXR if symptoms worsen or fever persists.
+
+**Medications**  
+- Continue Synthroid and multivitamin.  
+- Initiate symptomatic therapy:  
+  - Acetaminophen 500 mg PRN for fever/fatigue.  
+  - Over‑the‑counter cough suppressant (e.g., dextromethorphan) if cough continues to disrupt sleep.  
+- No antibiotics indicated at this time; if CXR suggests bacterial pneumonia or if WBC count > 15 × 10⁹/L, consider empiric antibiotics (e.g., amoxicillin‑clavulanate).
+
+**Supportive Care**  
+- Hydration: Encourage fluids > 1.5 L/day.  
+- Rest: Advise sleep hygiene; consider scheduled naps if fatigue is severe.  
+- Humidifier: Suggest use in bedroom to relieve cough at night.  
+- Smoking cessation counseling (though non‑smoker) and moderation of alcohol intake.
+
+**Follow‑Up**  
+- Return for follow‑up in 48–72 h if symptoms worsen, or sooner if new chest pain, shortness of breath, or persistent high fever (> 100.4 °F).  
+- Telephone check‑in on day 3 to review test results and symptom trajectory.
+
+**Patient Education**  
+- Explained that a dry cough is usually viral and self‑limited; antibiotics are not needed unless bacterial infection is proven.  
+- Reviewed signs of worsening: chest pain, increasing dyspnea, high fever, or inability to keep fluids.  
+- Discussed importance of isolation if COVID‑19 is positive; advise staying home, limiting contact, wearing mask, and hand hygiene.  
+- Provided educational material on COVID‑19 precautions and signs of severe disease.  
+- Encouraged use of over‑the‑counter cough suppressants and staying hydrated.  
+
+**Safety Netting**  
+- If symptoms suddenly worsen (e.g., new chest pain, shortness of breath, confusion), seek emergent care (call 911).  
+- If husband’s condition deteriorates or he develops persistent vomiting or fever, encourage him to seek care.
+
+**Disposition**  
+- Patient to stay home, monitor temperature, and follow up with primary provider or urgent care with pending test results.  
+
+--- 
+
+**Signature**  
+(Clinician name and credentials)  
+(Clinic name, address, phone)  
+(Clinic email)  
+Date: 14 Apr 2026

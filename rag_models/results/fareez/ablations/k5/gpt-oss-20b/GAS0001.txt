@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:37:07
+Time: 3.71s
+Tokens: 21,273 in / 1,473 out
+============================================================
+
+Patient Information  
+The patient is a 81‑year‑old male, Amado Baumbach, residing at 374 Wyman Station, Wrentham, Massachusetts. He presents to the clinic for evaluation of ongoing nausea and vomiting.
+
+Chief Complaint  
+The patient reports a primary complaint of persistent nausea and occasional vomiting that has persisted for approximately nine days.
+
+History of Present Illness  
+The patient began experiencing nausea about nine days ago, describing it as a constant sensation that is worse in the morning and when exposed to strong odors. He notes that he has vomited on several occasions, typically once or twice per day, over the past week. In addition, he has experienced increased urinary frequency, estimating that he voids roughly every two hours, although he maintains control over his bladder. He denies dysuria, hematuria, or urinary urgency. He reports increased fluid intake to compensate for dehydration from vomiting. He denies abdominal pain beyond mild cramping, and he does not currently experience diarrhea, constipation, or changes in bowel habits. He denies fever, chills, headache, muscle aches, cough, shortness of breath, chest pain, palpitations, or any other constitutional symptoms. He also reports no recent changes in appetite or weight. He believes his cramping might be related to his menstrual cycle, but his last menstrual period occurred approximately six weeks ago, and he does not have a regular menstrual history.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight loss, or fatigue reported.  
+Respiratory: No cough, wheeze, dyspnea, or chest tightness.  
+Cardiovascular: No palpitations, chest pain, orthopnea, or edema.  
+Gastrointestinal: Positive for nausea, intermittent vomiting, mild abdominal cramping, increased urinary frequency. Negative for abdominal pain, bloating, diarrhea, constipation, melena, hematochezia, or dysphagia.  
+Genitourinary: Increased frequency of urination; no dysuria, hematuria, or incontinence.  
+Neurologic: No headaches, dizziness, syncope, or seizure activity.  
+Dermatologic: No skin lesions or rashes, except occasional nickel‑related dermatitis.  
+Psychiatric: No anxiety, depression, or suicidal ideation reported.  
+Endocrine: Denies polyuria, polydipsia, or polyphagia.  
+
+Allergies  
+The patient reports a known allergy to nickel, which can produce a rash when exposed to non‑real jewelry. He has no known drug or food allergies.
+
+Past Medical History  
+According to the electronic health record, the patient has a complex medical history that includes essential hypertension, pre‑diabetes, chronic anemia, chronic kidney disease stages 1 through 3 with associated proteinuria and microalbuminuria, a history of sinusitis, chronic kidney disease related to diabetes mellitus, and a history of coronary artery disease including a bypass graft. He has also had documented episodes of acute kidney injury, and he carries a diagnosis of chronic kidney disease stage 3. His past medical conditions also include chronic anemia, chronic sinusitis, and a history of smoking. There are no documented surgical procedures recorded in the current encounter.
+
+Surgical History  
+No surgical history is available for this patient at this time.
+
+Social History  
+The patient lives with one roommate. He denies tobacco use in the present, though a past history of smoking is documented. He reports rare alcohol consumption, with the last drink occurring about a month prior to the visit, and he notes that alcohol typically causes headaches for him. He is sexually active with a boyfriend and uses condoms for protection. He is not currently on any form of hormonal birth control due to associated nausea. He does not use illicit drugs. He does not exercise regularly and reports minimal social activity beyond his living situation.
+
+Family History  
+The patient’s father has a history of hypertension. No other family history of significant medical conditions is documented.
+
+Current Medications  
+The patient reports no prescription medications at present. He has been using ginger chews for nausea but notes they are ineffective.
+
+Physical Examination  
+Vital signs were not recorded during this visit. No physical examination findings are documented.  
+
+Labs  
+Recent laboratory results reveal a leukocyte count of 3.78 ×10³/µL (low), hemoglobin 12.28 g/dL, hematocrit 43.4 %, MCV 86.8 fL, and platelet count 105.6 ×10³/µL (low). Differential shows neutrophils 3.41 ×10³/µL (low), lymphocytes 0.418 ×10³/µL (low), and monocytes 0.958 ×10³/µL (low). Other analytes are within reference ranges. These values suggest mild leukopenia, anemia, and thrombocytopenia, consistent with chronic disease states documented in the patient’s history.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient’s primary concerns are persistent nausea and vomiting, increased urinary frequency, and mild abdominal cramping. The differential diagnosis includes gastroenteritis, medication side effects (unlikely due to no current drugs), electrolyte imbalance from dehydration, and possible early signs of urinary tract infection. The chronic medical conditions of hypertension, diabetes mellitus, chronic kidney disease stage 3, anemia, and previous smoking history are relevant comorbidities that may complicate his clinical picture.
+
+Plan  
+
+1. **Symptom Management**  
+   - Prescribe ondansetron 4 mg orally every 8 hours for nausea; monitor response.  
+   - Encourage adequate oral hydration with clear fluids, and consider electrolyte replacement if signs of dehydration persist.  
+   - Counsel on avoidance of strong odors and potential triggers for nausea.  
+
+2. **Monitoring**  
+   - Advise the patient to keep a diary of nausea episodes, vomiting, urinary frequency, and fluid intake.  
+   - Order a repeat CBC and basic metabolic panel in 48 hours to evaluate for evolving leukopenia, anemia, or electrolyte disturbances.  
+
+3. **Urinary Evaluation**  
+   - Recommend a urinalysis to rule out urinary tract infection or hematuria, given increased frequency.  
+
+4. **Follow‑Up**  
+   - Schedule a follow‑up visit or telehealth consultation within 3 days to reassess symptom resolution and laboratory trends.  
+
+5. **Education**  
+   - Instruct the patient on signs of worsening condition that warrant immediate care, including persistent vomiting, inability to retain fluids, fever, chest pain, or difficulty breathing.  
+   - Discuss the importance of adhering to prescribed antihypertensive and diabetic medications, and advise against abrupt cessation of any current chronic therapy.  
+
+6. **Referral**  
+   - If nausea persists beyond one week or if laboratory abnormalities worsen, consider referral to gastroenterology for further evaluation.  
+
+The plan is to address the acute gastrointestinal symptoms while closely monitoring for any progression or complications related to the patient’s underlying chronic conditions.

@@ -1,0 +1,50 @@
+Model: google/medgemma-4b-it
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:59:27
+Time: 34.93s
+Tokens: 8,907 in / 614 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Name: Amos Crona
+DOB: 1934-01-20
+Sex: Male
+Unit Number: 7863
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+
+The patient presented with chest pain that began approximately 30 minutes prior to the encounter. The pain is located on the left side of the chest. The patient reports that the pain came on suddenly while shoveling the driveway. The pain has been present since the onset and has been getting worse. The patient describes the pain as dull and a pressure sensation. The pain is rated as a 7/10. The patient denies similar episodes in the past. The pain is localized to the left chest area. The patient reports that the pain is exacerbated by movement and when laying down. The patient denies any alleviating factors. The patient reports shortness of breath since the onset of the pain. The patient denies any recent injury to the chest.
+
+Past Medical History:
+
+The patient has a history of prediabetes, only received primary school education, anemia, obesity, sleep disorder, sleep apnea, essential hypertension, metabolic syndrome X, chronic kidney disease stage 1, disorder of kidney due to diabetes mellitus, ischemic heart disease, chronic kidney disease stage 2, microalbuminuria due to type 2 diabetes mellitus, chronic kidney disease stage 3, proteinuria due to type 2 diabetes mellitus, medication review due, not in labor force, full-time employment, victim of intimate partner abuse, gingivitis, sleep apnea, and medication review due.
+
+Medications:
+
+The patient is taking Rosuvastatin, Lisinopril, a multi vitamin, and medications for blood pressure and cholesterol. The patient has no allergies.
+
+Social History:
+
+The patient is a 20-year smoker, smoking approximately half a pack to a pack per day. The patient denies alcohol use and recreational drug use. The patient reports being at home. The patient works as a bus driver. The patient reports getting regular exercise, usually on Sundays. The patient reports a fairly balanced diet, but admits to eating out too often. The patient lives with his parents.
+
+Family History:
+
+The patient denies any family history of heart attack or cancer.
+
+Physical Exam:
+
+The patient's vital signs were: temperature N/A, blood pressure N/A/N/A, heart rate 91 bpm, respiration rate 14 breaths/min, and SpO2 N/A. The patient reported feeling a little hot.
+
+Assessment:
+
+The patient presents with chest pain, likely related to exertion. The patient's history of hypertension, diabetes, and ischemic heart disease increases the risk of cardiac etiology. Further evaluation is warranted to rule out cardiac causes.
+
+Plan:
+
+The patient was instructed to monitor his symptoms closely. If the chest pain worsens or new symptoms develop, he should seek immediate medical attention. The patient was advised to follow up with his primary care physician.

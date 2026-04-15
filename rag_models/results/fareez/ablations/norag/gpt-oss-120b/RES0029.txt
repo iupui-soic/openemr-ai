@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-120b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:13:30
+Time: 3.89s
+Tokens: 9,352 in / 1,308 out
+============================================================
+
+Patient Information  
+Name: Alyson Laila Leuschke  
+Date of Birth: February 28, 1921  
+Sex: Female  
+Address: 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890  
+Unit Number: 7303  
+
+Chief Complaint  
+The patient presents to the Emergency Department with acute left‑sided chest pain that began approximately two hours ago after a fall from a bicycle.
+
+History of Present Illness  
+The patient reports that while riding her bicycle she slipped and fell directly onto her left chest. Since the impact she has experienced a severe, stabbing quality pain localized to the entire left side of the chest. The pain is exacerbated by deep inspiration; she can only tolerate very shallow, slow breaths. Over the past two hours the discomfort has progressively worsened. She denies any loss of consciousness, head injury, or external bleeding. She notes a sensation of being unable to catch her breath, which she attributes to the shallow breathing required to limit pain. She reports a mild increase in heart rate during the last hour but denies palpitations, dizziness, nausea, vomiting, cough, fever, chills, or syncope. She has a few superficial scrapes on her hands from the fall and no other injuries. She was wearing a helmet at the time of the incident and reports no headache.
+
+Past Medical History  
+- Essential hypertension (ongoing)  
+- Chronic kidney disease, stages 1‑4 (progressed to end‑stage renal disease)  
+- History of renal transplantation (ongoing immunosuppression)  
+- Osteoarthritis of the knee (ongoing)  
+- Hay fever with multiple drug allergies (see Allergies)  
+
+Past Surgical History  
+- Renal transplant (date not specified)  
+
+Hospitalizations  
+- None reported in the current interview  
+
+Medications (active)  
+- Tacrolimus 1 mg extended‑release, oral, daily  
+- Tacrolimus 5 mg/ML injection, as prescribed  
+- Naproxen sodium 220 mg, oral, as needed for pain  
+- Amlodipine 2.5 mg, oral, daily  
+- Additional agents listed in the record (e.g., epoetin alfa, mestranol/norethynodrel) are noted but dosing details are unclear; continue per prior orders.  
+
+Allergies  
+The patient reports allergic reactions to certain nasal spray steroids and to some antihistamines (specific agents not identified). No known drug allergies otherwise.
+
+Social History  
+The patient is employed as a mechanic in the city and supports herself financially. She lives alone in an apartment. She smokes heavily, approximately 2½–3 packs of cigarettes per day, a habit begun at age 18. She denies any use of marijuana or illicit drugs. Alcohol consumption is occasional, limited to one or two beers on weekends while watching television. She reports no regular caffeine intake. She engages in no structured exercise program.
+
+Family History  
+Father has type 2 diabetes mellitus. No other family illnesses reported.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or recent illness.  
+Cardiovascular: Reports mild increase in heart rate over the past hour; denies chest pressure, palpitations, or known heart disease.  
+Respiratory: Sharp left‑sided chest pain worsened by deep breathing; reports shortness of breath when attempting full breaths; denies cough, wheezing, or sputum production.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Musculoskeletal: Pain localized to left chest wall; no other joint pain besides known knee osteoarthritis.  
+Neurologic: No headache, dizziness, weakness, numbness, or tingling.  
+Dermatologic: Small superficial scrapes on both hands; no rashes.  
+Psychiatric: Denies anxiety or depression; recent PHQ‑2 score 1 and GAD‑7 score 4 indicate minimal symptoms.  
+
+Physical Examination  
+No physical exam findings were documented in the source material.  
+
+Assessment  
+1. Acute left‑sided chest wall trauma secondary to bicycle fall with probable rib contusion or fracture.  
+2. Pain exacerbated by deep inspiration, suggesting possible pleuritic component.  
+3. Shortness of breath likely secondary to pain‑limited ventilation; cardiac involvement cannot be excluded.  
+4. Chronic kidney disease stage 4/end‑stage renal disease with renal transplant on immunosuppression – important for medication and imaging considerations.  
+5. Hypertension, well‑controlled on amlodipine.  
+6. Heavy tobacco use, contributing to cardiovascular risk.  
+
+Plan  
+- Obtain immediate chest radiograph to evaluate for rib fractures, pneumothorax, or pulmonary contusion.  
+- If radiograph is inconclusive and clinical suspicion remains high, consider a CT scan of the chest.  
+- Perform 12‑lead electrocardiogram to rule out cardiac ischemia or contusion.  
+- Initiate supplemental oxygen if oxygen saturation falls below 94 % (monitor continuously).  
+- Provide analgesia: continue naproxen as ordered; consider low‑dose oral opioids if pain remains uncontrolled, taking into account renal function.  
+- Encourage incentive spirometry and shallow breathing exercises to maintain adequate ventilation while minimizing pain.  
+- Monitor vital signs, especially heart rate, blood pressure, respiratory rate, and SpO₂, given the patient’s hypertension, smoking history, and transplant status.  
+- Review tacrolimus levels and adjust dosing as needed; ensure renal function is closely followed.  
+- Counsel on smoking cessation and arrange referral to a cessation program.  
+- Provide discharge instructions regarding return precautions: worsening pain, increasing shortness of breath, fever, chest swelling, or new neurological symptoms.  
+- Follow‑up with primary care physician within 48‑72 hours and with transplant nephrology as per routine schedule.  
+
+Disposition  
+Patient to remain in the Emergency Department for observation pending imaging results and initial response to analgesia. If imaging is negative and pain is controlled, consider discharge with close outpatient follow‑up; otherwise admit for further monitoring and pain management.

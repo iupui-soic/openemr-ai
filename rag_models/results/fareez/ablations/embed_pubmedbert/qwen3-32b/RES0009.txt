@@ -1,0 +1,74 @@
+Model: qwen/qwen3-32b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:00:57
+Time: 5.53s
+Tokens: 15,122 in / 1,718 out
+============================================================
+
+Patient Information  
+The patient is a 91-year-old male with a complex past medical history. He has a long-standing history of essential hypertension, type 2 diabetes mellitus with associated complications including chronic kidney disease (CKD) stages 1 through 4, and a history of renal transplant, which was complicated by transplant failure and rejection. He also has a history of ischemic heart disease, chronic sinusitis, and a neoplasm of the prostate. The patient has a documented history of opioid abuse and has undergone a hysterectomy, though this likely pertains to a different patient due to the discrepancy in gender. He has a history of chronic kidney disease, and is currently on multiple medications including tacrolimus, furosemide, lisinopril, amLODIPine, sertraline, clopidogrel, simvastatin, and metoprolol. His social history includes a history of tobacco use and limited social contact. He is currently employed full-time and resides with his spouse and two teenagers. No information is available regarding his current immunization status.
+
+Chief Complaint  
+The patient presents with a 5-day history of persistent left-sided chest pain described as sharp and lingering. The pain is exacerbated with deep breathing and physical activity, such as walking to retrieve the mail. He also reports dyspnea, particularly with exertion, and has self-medicated with over-the-counter analgesics including acetaminophen and ibuprofen with minimal relief.
+
+History of Present Illness  
+The patient initially experienced the onset of left-sided chest pain while sitting on the couch and has since noted worsening symptoms with physical activity. The pain is localized to the left side of the chest and is not radiating. It is described as sharp and is exacerbated by deep breathing. The patient reports that the pain is constant and not relieved by rest. He also experiences dyspnea, particularly when walking short distances. There is no associated fever, chills, nausea, vomiting, cough, wheezing, or syncope. He denies any recent travel, trauma, or other significant symptoms. The patient recently underwent a hysterectomy approximately one month ago, but this has not been associated with his current symptoms. The patient is a current smoker, averaging about five cigarettes per day, and is actively attempting to reduce his tobacco use.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or significant fatigue, though he notes reduced activity due to dyspnea.  
+Respiratory: The patient reports dyspnea, particularly with exertion, but denies cough, wheezing, or sputum production.  
+Cardiovascular: The patient reports left-sided chest pain, which is sharp and worsens with deep breathing. He denies palpitations, syncope, or orthostatic symptoms.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain is reported.  
+Genitourinary: The patient has no current urinary complaints and reports that he has recovered well from his recent hysterectomy.  
+Musculoskeletal: No joint pain, muscle pain, or leg pain is reported.  
+Neurological: No headaches or dizziness are reported.  
+Hematologic: No bruising or bleeding is reported.  
+Endocrine: No recent changes in weight or appetite are noted.  
+Psychiatric: No depressive symptoms or anxiety are reported.  
+Dermatologic: No rashes or skin changes are reported.  
+Allergic: No allergies are reported.
+
+Past Medical History  
+The patient has a complex medical history including essential hypertension, type 2 diabetes mellitus, chronic kidney disease (CKD) stages 1 through 4, ischemic heart disease, chronic sinusitis, and a history of prostate neoplasm. He has also undergone a renal transplant, which was complicated by rejection and failure. The patient has a history of opioid abuse and has had a hysterectomy. No information is available regarding the exact timeline of these events.
+
+Past Surgical History  
+The patient has a history of a hysterectomy performed approximately one month ago. He also has a history of wisdom teeth extraction in his teenage years. No information is available regarding the details of the hysterectomy or its immediate postoperative course.
+
+Social History  
+The patient resides with his spouse and two teenagers. He is employed full-time as an professional accountant. He reports minimal alcohol consumption, limited to a glass of wine on weekends. He is a current smoker, averaging about five cigarettes per day, and is actively working to reduce his tobacco use. The patient denies the use of recreational drugs, though he acknowledges past marijuana use in his younger years.
+
+Family History  
+The patient reports a family history of heart disease, specifically a myocardial infarction in his mother during her 70s. No other significant family history of cancer, bleeding disorders, or thrombosis is reported.
+
+Current Medications  
+The patient is currently prescribed multiple medications including tacrolimus, furosemide, lisinopril, amLODIPine, sertraline, clopidogrel, simvastatin, and metoprolol. These medications are primarily for the management of hypertension, diabetes, chronic kidney disease, and post-transplant care. The patient also reports using over-the-counter analgesics, including acetaminophen and ibuprofen, for symptom relief.
+
+Allergies  
+No allergies are reported.
+
+Objective  
+Vital Signs:  
+Blood Pressure: Not available  
+Heart Rate: 79 bpm  
+Respiratory Rate: 15 breaths/min  
+Oxygen Saturation: Not available  
+Temperature: Not available  
+Weight: Not available  
+Height: 182.6 cm  
+BMI: 33.29 (obese)  
+
+Physical Examination:  
+No physical examination findings are available in the provided documentation.  
+
+Laboratory Results:  
+The patient's laboratory results include a complete blood count (CBC) with leukocytes at 9.49 × 10^3/μL, erythrocytes at 3.80 × 10^6/μL, hemoglobin at 16.92 g/dL, hematocrit at 47.49%, MCV at 80.65 fL, MCH at 27.14 pg, MCHC at 33.36 g/dL, RDW at 14.47%, and platelets at 296.7 × 10^3/μL. Metabolic panel results include glucose at 82.8 mg/dL, urea nitrogen at 10.46 mg/dL, creatinine at 0.88 mg/dL, calcium at 8.79 mg/dL, sodium at 142.93 mmol/L, potassium at 3.73 mmol/L, chloride at 102.28 mmol/L, and total CO2 at 23.22 mmol/L. Estimated glomerular filtration rate (eGFR) is 158.08 mL/min.  
+
+Imaging:  
+No imaging studies are available in the provided documentation.
+
+Assessment  
+The patient presents with a 5-day history of left-sided chest pain and dyspnea. Given the nature of the pain, its exacerbation with deep breathing, and the presence of dyspnea, a high index of suspicion for pulmonary embolism is warranted. The patient's history of recent surgery, obesity, and tobacco use further support this concern. Other potential diagnoses include musculoskeletal pain, pleuritic chest pain, and possibly cardiac causes such as angina or myocardial infarction. However, the absence of radiation, associated symptoms such as nausea or diaphoresis, and the sharp, localized nature of the pain make pulmonary embolism a primary concern.
+
+Plan  
+The patient will undergo further diagnostic workup to evaluate for pulmonary embolism. This will include appropriate imaging studies such as a chest X-ray, CT pulmonary angiogram, and possibly a D-dimer test. Laboratory investigations will be repeated as needed to monitor for any changes in the patient's condition. The patient will be advised to avoid any strenuous activity and to remain under observation for any worsening symptoms. Follow-up with a cardiologist or pulmonologist may be necessary depending on the results of the initial investigations. The patient will be advised to continue his current medications unless contraindicated by the diagnostic findings. Discharge instructions will be provided upon completion of the diagnostic workup and confirmation of a stable condition.

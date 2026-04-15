@@ -1,0 +1,96 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:13:12
+Time: 4.71s
+Tokens: 14,321 in / 1,537 out
+============================================================
+
+Patient Information  
+The patient is a female adult who presents to the clinic today with acute onset chest discomfort and shortness of breath. Specific demographic data such as age, weight, and height are not documented in the encounter note. No known allergies were reported. The patient is not currently taking any chronic prescription medications; she has used over‑the‑counter acetaminophen and ibuprofen for recent pain relief.
+
+Chief Complaint  
+Chest pain and dyspnea of five days’ duration.
+
+History of Present Illness  
+The patient reports a five‑day history of a persistent, sharp, localized pain on the left side of the chest. She describes the pain as “tiny” and “lingering,” present at rest and exacerbated by deep inspiration and ambulation. The discomfort began while she was seated on her couch and has not radiated to other locations. Physical exertion, such as walking to retrieve the mail, worsens both the chest pain and her ability to catch her breath. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide only modest relief. She denies associated fever, chills, cough, sputum production, wheezing, nausea, vomiting, palpitations, light‑headedness, syncope, or recent head or neck pain. She notes a mild increase in fatigue secondary to dyspnea but otherwise felt well prior to the onset of symptoms.  
+
+Recent surgical history is significant for a hysterectomy performed approximately one month ago for symptomatic heavy menstrual bleeding. Recovery from the procedure was described as uncomplicated, with only a brief period of reduced fluid intake and urinary frequency that has since resolved.
+
+Review of Systems  
+- Constitutional: No fever, chills, night sweats, or recent weight change.  
+- Cardiovascular: No palpitations, chest pressure radiating elsewhere, or known heart disease.  
+- Respiratory: Shortness of breath on exertion; pain worsens with deep breaths. No cough, hemoptysis, wheeze, or sputum.  
+- Gastrointestinal: No abdominal pain, nausea, vomiting, or changes in bowel habits.  
+- Genitourinary: No dysuria, hematuria, or recent urinary symptoms beyond the brief postoperative period.  
+- Musculoskeletal: No joint, limb, or muscle pain reported.  
+- Neurologic: No headache, dizziness, or syncope.  
+- Psychiatric: No reported anxiety or depression.  
+- Dermatologic: No rashes or skin changes.  
+
+Past Medical History  
+- Recent total abdominal hysterectomy (≈1 month ago) performed for heavy menstrual bleeding.  
+- No chronic medical diagnoses reported by the patient (denies hypertension, diabetes, cardiac disease, lung disease, kidney disease, or prior thromboembolic events).  
+
+Past Surgical History  
+- Total abdominal hysterectomy (≈1 month ago).  
+- Wisdom tooth extraction during adolescence.  
+
+Medications  
+- No chronic prescription medications.  
+- Over‑the‑counter acetaminophen and ibuprofen taken intermittently for chest pain.  
+
+Allergies  
+- No known drug, food, or environmental allergies.  
+
+Social History  
+The patient lives with her husband and two teenage children in a private residence. She is employed full‑time as an accountant. She consumes approximately one glass of wine on weekends and denies other regular alcohol use. She currently smokes about five cigarettes per day and is actively attempting to reduce her tobacco use. Past recreational drug use includes occasional marijuana during younger years; she reports no recent use. She has not taken any recent long trips.  
+
+Family History  
+- Mother experienced a myocardial infarction in her 70s.  
+- No reported family history of cancer, bleeding disorders, or thrombophilia.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Objective Data – Laboratory Results  
+- Leukocyte count: 9.5 ×10³/µL (within normal limits)  
+- Hemoglobin: 16.9 g/dL (normal)  
+- Hematocrit: 47.5 % (normal)  
+- Platelet count: 297 ×10³/µL (normal)  
+- Serum glucose: 82.8 mg/dL (normal)  
+- Blood urea nitrogen: 10.5 mg/dL (normal)  
+- Creatinine: 0.88 mg/dL with an estimated GFR of 158 mL/min/1.73 m² (normal renal function)  
+- Electrolytes, calcium, and carbon dioxide are within expected ranges.  
+These laboratory values are unremarkable and do not point toward infection, anemia, or significant electrolyte disturbance.
+
+Assessment  
+1. Suspected acute pulmonary embolism (PE) – the presentation of unilateral pleuritic chest pain, dyspnea on exertion, recent major surgery (hysterectomy), and ongoing tobacco use raises moderate to high clinical suspicion.  
+2. Pleuritic musculoskeletal chest pain – the pain is localized and sharp, could be related to postoperative positioning or strain.  
+3. Acute coronary syndrome – less likely given the atypical pain description, but cannot be excluded without cardiac evaluation.  
+4. Post‑operative complication (e.g., postoperative atelectasis or pleural irritation) – possible given recent abdominal surgery.  
+
+Plan  
+Diagnostic Work‑up  
+- Obtain a 12‑lead electrocardiogram to assess for ischemic changes or right‑heart strain.  
+- Send cardiac enzymes (troponin I/T) to rule out myocardial injury.  
+- Order a D‑dimer assay; if elevated, proceed with computed tomography pulmonary angiography (CTPA) or ventilation‑perfusion scan, based on renal function and contrast considerations.  
+- Perform a bedside chest radiograph to evaluate for pneumothorax, pleural effusion, or other pulmonary pathology.  
+- Consider arterial blood gas if hypoxemia is suspected during further evaluation.  
+
+Therapeutic Measures  
+- Until definitive imaging is obtained, initiate anticoagulation with low‑molecular‑weight heparin (e.g., enoxaparin) if the pre‑test probability (Wells score) is moderate to high and there are no contraindications.  
+- Provide supplemental oxygen if SpO₂ falls below 94 % on room air.  
+- Continue symptomatic relief with acetaminophen as needed; avoid NSAIDs if anticoagulation is started.  
+
+Patient Education & Counseling  
+- Discuss the signs and symptoms of worsening PE (increasing shortness of breath, chest pain, coughing up blood) and instruct the patient to seek emergency care if they occur.  
+- Reinforce smoking cessation strategies, including referral to a tobacco cessation program and consideration of nicotine replacement therapy.  
+- Advise gradual return to activity; avoid strenuous exertion until PE is ruled out or appropriately managed.  
+
+Follow‑up  
+- The patient will be contacted with pending test results within 24–48 hours.  
+- If imaging confirms PE, arrange for outpatient anticoagulation management or admission based on severity.  
+- Schedule a follow‑up visit within one week to reassess symptoms, review test results, and adjust the treatment plan accordingly.  
+
+The plan will be revisited and modified as new information becomes available.

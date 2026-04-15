@@ -1,0 +1,133 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:12:59
+Time: 5.50s
+Tokens: 7,121 in / 1,874 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 24 March 1995 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Primary Care Provider: Dr. External Provider  
+
+Chief Complaint  
+“Back pain and stiffness, especially in the morning, ongoing for the past several months.”
+
+History of Present Illness  
+Mr. Steuber reports a dull, achy pain that involves the middle to lower thoracic and lumbar regions of his back. The discomfort has been present for approximately five to six months and has been slowly progressive. He describes the pain as a 4–5/10 on a numeric rating scale, with some days better than others. Morning stiffness is prominent; it typically improves after 30 to 60 minutes of activity, and the pain lessens as the day progresses. He denies any specific inciting injury or trauma. The pain does not radiate to the extremities, and he has not noted any numbness, tingling, or weakness. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide modest relief, but symptoms return the following morning. He also reports increased fatigue and a general sense of malaise over the same time frame. He denies fever, chills, night sweats, weight loss, changes in appetite, bowel or urinary disturbances, shortness of breath, visual changes, skin rashes, or nail abnormalities.
+
+Review of Systems  
+Constitutional: Positive for back pain, morning stiffness, fatigue, and malaise. Negative for fever, chills, night sweats, weight loss, or change in appetite.  
+Musculoskeletal: Positive for chronic low back pain; occasional right knee and hand pain that are intermittent. No joint swelling, redness, or warmth. No radiation of pain, no numbness, tingling, or weakness.  
+Respiratory: Positive for intermittent asthma; uses albuterol inhaler as needed. No dyspnea at rest.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: History of an episode of diarrhea several months ago, presumed food‑borne; no current nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, syncope, or focal deficits.  
+Dermatologic: No rashes, lesions, or nail changes.  
+Allergic/Immunologic: Environmental allergies (likely pollen/ragweed). No known drug allergies except an unspecified substance noted in the record.  
+Psychiatric: PHQ‑2 score 2 (minimal depressive symptoms); GAD‑7 score 2 (minimal anxiety).  
+
+Past Medical History  
+- Asthma, intermittent, uses albuterol inhaler PRN.  
+- Chronic low back pain (symptoms noted for the past 5–6 months, with prior documentation of low back pain dating back several years).  
+- Obesity, BMI 42.0 (severely obese).  
+- Occasional episodic right knee pain and hand pain (onset ~6 months ago).  
+- Prior gastrointestinal upset (diarrhea/food‑borne illness several months ago).  
+
+Surgical History  
+No prior surgeries reported.
+
+Family History  
+Mother has psoriasis, treated with topical agents. No known family history of rheumatologic or autoimmune disease beyond maternal psoriasis.
+
+Allergies  
+- Environmental allergens (pollen/ragweed).  
+- Unspecified substance allergy recorded in the chart (severity noted as mild).  
+
+Current Medications (as reported by patient)  
+- Acetaminophen 325 mg PO PRN for back pain.  
+- Ibuprofen (Advil) 200‑400 mg PO PRN for back pain.  
+- Albuterol inhalation solution (rescue inhaler) PRN for asthma.  
+- Fexofenadine 60 mg PO daily for environmental allergies.  
+- Budesonide inhalation suspension (as needed for asthma).  
+
+Social History  
+- Occupation: Full‑time bank employee.  
+- Living situation: Resides with girlfriend in a city condo.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes 1–2 beers or a cocktail on weekends.  
+- Recreational drugs: Occasionally smokes marijuana 1‑2 times per week.  
+- Exercise: No regular exercise reported.  
+- No history of intimate partner violence or other social risk factors noted in the current encounter.  
+
+Vital Signs (most recent documented)  
+- Heart Rate: 86 beats/min  
+- Respiratory Rate: 15 breaths/min  
+- Temperature: Not recorded  
+- Blood Pressure: Not recorded  
+- SpO₂: Not recorded  
+- Height: 169.7 cm  
+- Weight: Not recorded (BMI 42.0 based on prior data)  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent)  
+Complete blood count:  
+- Hematocrit 39.1 % (within normal limits)  
+- Erythrocytes 5.23 ×10⁶/µL (within normal limits)  
+- Platelets 287 ×10³/µL (within normal limits)  
+- Mean corpuscular hemoglobin 30.1 pg (within normal limits)  
+- Red cell distribution width 42.4 fL (value noted; clinical significance not commented)  
+
+Psychometric screening:  
+- PHQ‑2 total score 2 (negative screen for major depressive disorder)  
+- GAD‑7 total score 2 (negative screen for generalized anxiety disorder)  
+
+Imaging  
+No imaging studies have been performed to date.
+
+Assessment  
+1. Chronic low back pain – dull, mechanical‑type pain with prominent morning stiffness; differential includes inflammatory spondyloarthropathy (ankylosing spondylitis, psoriatic arthritis, reactive arthritis) versus mechanical/degenerative etiology.  
+2. Obesity (BMI > 40) – contributing factor to musculoskeletal strain.  
+3. Intermittent asthma, well‑controlled with rescue inhaler.  
+4. Environmental allergic rhinitis.  
+5. Family history of psoriasis – raises consideration for psoriatic arthritis but no cutaneous lesions noted.  
+
+Plan  
+Diagnostics  
+- Order laboratory inflammatory markers: ESR, CRP.  
+- Autoimmune serology: Rheumatoid factor, anti‑CCP, ANA, HLA‑B27.  
+- Complete metabolic panel to assess baseline organ function.  
+- Obtain plain radiographs of the lumbar spine and sacroiliac joints.  
+- Obtain X‑rays of the hands and knees given intermittent joint pain.  
+
+Therapeutic  
+- Continue acetaminophen 325 mg PO q6‑8 h PRN for pain, not exceeding 3 g/day.  
+- Continue ibuprofen 400 mg PO q6‑8 h with food PRN, provided no contraindications (monitor for GI upset).  
+- Encourage initiation of a structured physical therapy program focused on core strengthening and flexibility, beginning within the next two weeks.  
+- Counsel on weight reduction: referral to nutrition counseling and consider a supervised weight‑loss program.  
+- Asthma: Continue albuterol inhaler PRN; ensure rescue inhaler is available at work. Review inhaled controller therapy at next primary‑care visit.  
+- Allergic rhinitis: Continue fexofenadine daily; consider intranasal corticosteroid if symptoms persist.  
+
+Education & Lifestyle  
+- Advise regular low‑impact aerobic activity (e.g., walking, swimming) as tolerated, aiming for at least 150 minutes per week.  
+- Discuss ergonomic modifications at work (proper seating, lumbar support).  
+- Limit alcohol intake to moderate levels; advise abstaining from marijuana use while evaluating back pain, as it may affect pain perception and compliance with therapy.  
+- Emphasize importance of adequate sleep and posture changes throughout the day.  
+
+Follow‑Up  
+- Schedule follow‑up with primary care in 2‑3 weeks to review laboratory results and imaging.  
+- Refer to rheumatology for further evaluation of possible inflammatory spondyloarthropathy.  
+- Arrange physical therapy evaluation within the next week.  
+- Return sooner if pain worsens, new neurological symptoms develop (numbness, weakness), fever, or urinary/bowel changes occur.  
+
+Disposition  
+Patient was educated on the plan, medication use, and lifestyle modifications. He verbalized understanding and agreement with the proposed work‑up and management strategy. No immediate red‑flag features were identified that would necessitate urgent referral.  
+
+Prepared by: Dr. External Provider  
+Date of Documentation: 19 July 2024

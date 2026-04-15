@@ -1,0 +1,98 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:21:42
+Time: 4.89s
+Tokens: 7,840 in / 1,467 out
+============================================================
+
+Patient Information
+Name: Aaron Russel  
+Date of Birth: 14 November 1952 (Age 73)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint
+Loss of taste and recent onset dry cough.
+
+History of Present Illness
+The patient presents with a two‑day history of a diminished sense of taste, describing food as “plain” and “like cardboard.” He first noticed the change while eating pizza and reports that the loss of flavor is affecting most foods. He also reports a concurrent dry cough that began three to four days ago, without sputum production or hemoptysis. The cough is non‑productive and not associated with wheezing. He notes occasional shortness of breath after coughing spells and increased fatigue over the past several days, describing himself as “more tired” and sleeping more during the day. He denies fever, though he feels “a bit hot” and suspects a low‑grade fever. He has had a single episode of mild diarrhea this morning (two loose stools) without blood or abdominal pain. He denies sore throat, nasal congestion, runny or blocked nose, rash, urinary symptoms, dizziness (aside from a brief episode upon standing), weight loss, night sweats, or chest pain. He reports that a classmate was recently ill with cough and fever, raising concern for a contagious respiratory infection.
+
+Review of Systems
+Constitutional: No documented fever, but reports feeling hot; mild fatigue; no weight change; no night sweats.  
+Respiratory: Dry cough for 3‑4 days, no sputum, no hemoptysis, no wheeze, brief dyspnea after cough. No shortness of breath at rest.  
+ENT: Loss of taste; possible reduced smell; mild itchy throat; no sore throat, nasal congestion, or rhinorrhea.  
+Cardiovascular: No chest pain, palpitations, or known heart rhythm disturbances.  
+Gastrointestinal: One episode of non‑bloody diarrhea this morning; no abdominal pain, nausea, or vomiting; appetite remains intact.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: Brief dizziness on standing, resolved with rest; no confusion or focal deficits.  
+Musculoskeletal: No myalgias or arthralgias.  
+Skin: No rashes.  
+Psychiatric: No reported anxiety or depression; PHQ‑2 score 1, GAD‑7 score 0.
+
+Allergies
+Patient reports a possible cat allergy but no current exposure to cats. No drug or food allergies reported.
+
+Past Medical History
+The patient reports no known chronic medical conditions. (Note: Historical record in the electronic health system lists obesity, pre‑diabetes, hypertension, chronic kidney disease, and a prior renal transplant; however, the patient denies any current diagnoses, and the transcript is considered definitive for present status.)
+
+Surgical History
+Appendectomy performed approximately four years ago. No other surgical procedures reported.
+
+Social History
+The patient is a student attending high school in person. He lives in a townhouse with his mother, step‑father, and younger sister. He does not smoke cigarettes or use marijuana. He reports occasional use of flavored vaping products several times per day, with uncertain nicotine content. He does not consume alcohol. He denies exposure to mold, pets (other than the possible cat allergy), or other environmental hazards. He reports being up‑to‑date on immunizations.
+
+Family History
+Maternal and paternal histories are not provided. The patient recalls that his grandfather had lung cancer and diabetes; no known family history of heart disease.
+
+Current Medications
+The patient states he is not taking any medications at this time. (Historical medication list includes antihypertensives, immunosuppressants, and antibiotics, but these are not reported by the patient as current.)
+
+Objective Data
+Vital Signs (most recent recorded): Temperature 37.7 °C, Heart Rate 62 beats/min, Respiratory Rate 12 breaths/min, Body Mass Index 31.03 kg/m². Blood pressure not documented at this visit.  
+Physical Examination: No documented examination findings for this encounter. No abnormal lung sounds, cardiac findings, or ENT findings were recorded in the transcript.
+
+Laboratory Data
+Recent laboratory values from the electronic record (historical) are provided:  
+- Sodium: 137–141 mmol/L  
+- Potassium: 4.8 mmol/L  
+- Chloride: 105–108 mmol/L  
+- Creatinine: 0.97–0.99 mg/dL  
+- Glucose: 94–100 mg/dL  
+- Blood urea nitrogen: 14 mg/dL  
+- Calcium: 9.48 mg/dL  
+- CO₂ (bicarbonate): 20.21 mmol/L  
+
+No acute infectious labs (e.g., CBC, viral PCR) are available from this visit.
+
+Assessment
+1. Upper respiratory infection, most likely viral in etiology (concern for SARS‑CoV‑2 infection given loss of taste, dry cough, and recent exposure to a symptomatic classmate).  
+2. Anosmia/ageusia associated with viral URI.  
+3. Mild, self‑limited diarrhea, likely viral gastroenteritis component.  
+4. Fatigue secondary to acute viral illness.  
+
+Plan
+Diagnostics  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 testing).  
+- Consider rapid influenza testing if clinically indicated during influenza season.  
+
+Therapeutic  
+- Symptomatic management: encourage adequate oral hydration, rest, and antipyretics (acetaminophen) for fever or discomfort as needed.  
+- No antibiotics prescribed at this time pending test results, as clinical picture is consistent with a viral process.  
+
+Education and Counseling  
+- Instruct the patient to self‑isolate for at least 14 days from symptom onset, regardless of test result, to reduce transmission risk.  
+- Advise on proper hand hygiene, mask use when around others, and avoiding close contact with vulnerable individuals.  
+- Counsel regarding vaping: discuss potential respiratory irritation and advise reduction or cessation, especially during an active respiratory illness.  
+
+Follow‑up  
+- If COVID‑19 test returns positive, patient will be instructed to follow public health guidance and monitor for worsening symptoms (e.g., increasing dyspnea, high fever).  
+- If symptoms worsen (high fever, chest pain, increasing shortness of breath, persistent diarrhea, or dehydration), seek immediate medical attention.  
+- Routine follow‑up in primary care in 7‑10 days or sooner if new concerning symptoms develop.  
+
+Disposition  
+The patient was advised to remain at home, isolate, and follow the outlined plan. No immediate admission was deemed necessary.  
+
+Signature
+[Physician’s Name], MD  
+Date: 14 April 2026

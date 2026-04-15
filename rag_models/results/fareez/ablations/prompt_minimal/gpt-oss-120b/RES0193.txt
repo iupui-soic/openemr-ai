@@ -1,0 +1,129 @@
+Model: openai/gpt-oss-120b
+Patient: RES0193
+Detected Disease: Asthma
+Generated: 2026-04-14 04:22:35
+Time: 6.28s
+Tokens: 6,361 in / 1,452 out
+============================================================
+
+**Patient Information**  
+- **Name:** (Mother’s report – name not provided)  
+- **Age:** 6 years  
+- **Sex:** Male  
+- **Date of Encounter:** 2024‑03‑02  
+- **Provider:** Dr. External Provider  
+
+---
+
+## S – Subjective  
+
+### Chief Complaint  
+“Cough and wheezing, especially at night and after activity.”
+
+### History of Present Illness (HPI)  
+- **Symptom cluster:** Intermittent dry cough with high‑pitched wheeze on expiration.  
+- **Onset & Timeline:** Began several months ago; episodes occur 2‑3 times per week.  
+- **Pattern:**  
+  - **Nocturnal:** Cough/wheeze awakens him at night.  
+  - **Exertional:** Symptoms worsen after playing, school activity, or vigorous exercise.  
+  - **Environmental triggers:** Occasionally after visiting a friend’s house with a cat; mild seasonal worsening (fall) with itchy eyes and runny nose.  
+- **Duration of each episode:** Typically 30–60 minutes before resolving.  
+- **Severity:** Sufficient to cause missed school days (≈2 days in the past month) due to poor sleep and daytime fatigue.  
+
+### Associated Positive Symptoms  
+- Wheeze (high‑pitched whistling on exhalation)  
+- Nighttime cough  
+- Shortness of breath after exertion  
+
+### Associated Negative Symptoms  
+- No fever, chills, or recent upper‑respiratory infection (no sore throat, runny nose, or congestion).  
+- No productive cough, hemoptysis, or purulent sputum.  
+- No chest pain, dizziness, syncope, nausea, vomiting, or diarrhea.  
+- No recent weight loss; growth and appetite are appropriate.  
+- No irritability or fatigue beyond what is explained by nocturnal symptoms.  
+
+### Past Medical History  
+- **Bronchiolitis** at age 2 (viral infection, resolved).  
+- No chronic illnesses diagnosed to date.  
+
+### Surgical History  
+- None.
+
+### Medications  
+- None on a regular basis.  
+
+### Allergies (per EMR, adult record – may be relevant for family)  
+- Environmental: mold, house dust mite, animal dander, grass & tree pollen.  
+- Drug: sulfamethoxazole/trimethoprim, aspirin.  
+- Food: tree nut.  
+- No known personal allergies reported for the child.
+
+### Social History  
+- Lives with mother, father, and sibling‑free household.  
+- No tobacco smoke exposure.  
+- No pets at home; occasional exposure to a cat at a friend’s house.  
+- Home environment includes a carpeted basement playroom.  
+- No recent travel, sick contacts, or exposure to fumes/dust.  
+
+### Family History  
+- Mother has **asthma**, diagnosed in childhood, uses daily inhaler.  
+- No other reported pulmonary or cardiac diseases.  
+
+### Review of Systems (pertinent negatives)  
+- **Constitutional:** No fever, chills, weight loss.  
+- **Respiratory:** No recent infections, sputum production, or chest pain.  
+- **Cardiovascular, GI, Neurologic, Dermatologic:** Unremarkable.  
+
+---
+
+## O – Objective  
+
+| Parameter | Finding |
+|-----------|---------|
+| **Vital Signs** | Not recorded during this office visit (patient appears well‑appearing, afebrile). |
+| **Physical Exam** | *Not yet performed* – provider indicated a full examination will be done during the visit (anticipated findings: possible wheezing on auscultation, otherwise normal). |
+| **Laboratory / Imaging** | None obtained yet. Prior adult labs (CBC, metabolic panel) are not applicable to the child. |
+
+---
+
+## A – Assessment  
+
+1. **Suspected Pediatric Asthma** – intermittent dry cough, exercise‑induced wheeze, nocturnal symptoms, positive family history, and seasonal/allergic triggers are classic.  
+2. **Possible Allergic Rhinitis / Environmental Allergy** – seasonal itchy eyes/runny nose and exposure to cat dander suggest atopy.  
+3. **Rule out Other Causes** – bronchiolitis history, but current presentation is not consistent with acute infection; no evidence of GERD, foreign body, or cardiac cause at this time.
+
+---
+
+## P – Plan  
+
+### Diagnostic Work‑up  
+1. **Pulmonary Function Testing (Spirometry with bronchodilator response)** – feasible in a 6‑year‑old; will assess reversible airway obstruction.  
+2. **Peak Expiratory Flow (PEF) Diary** – patient/family to record morning and evening values for 2 weeks.  
+3. **Allergy Testing** – skin prick or specific IgE panel for dust mite, cat dander, pollens, molds given reported seasonal symptoms and environmental exposure.  
+4. **Complete Physical Examination** – auscultation for wheeze, assessment of nasal mucosa, growth parameters.  
+
+### Pharmacologic Management (to be initiated after objective data, but a rescue plan is provided now)  
+- **Albuterol Inhaler (Rescue):** 2 puffs (90 µg per puff) via a spacer as needed for wheeze or shortness of breath; repeat in 5 minutes if symptoms persist.  
+- **Consider Inhaled Corticosteroid (ICS)** (e.g., low‑dose fluticasone) if spirometry confirms persistent asthma or symptoms remain uncontrolled after rescue therapy.  
+
+### Environmental/Non‑pharmacologic Recommendations  
+- **Allergen avoidance:** Keep cat away from the child’s bedroom; use HEPA filter in bedroom; wash bedding weekly in hot water.  
+- **Dust control:** Vacuum carpeted basement weekly; consider replacing carpet with hard flooring if symptoms persist.  
+- **Cold‑air/Exercise precautions:** Warm‑up before vigorous activity; carry rescue inhaler at school and during sports.  
+
+### Education & Counseling  
+- Review proper inhaler technique with spacer.  
+- Discuss the importance of daily symptom monitoring and PEF diary.  
+- Provide an Asthma Action Plan (green, yellow, red zones) to the family.  
+
+### Follow‑up  
+- **Return Visit:** 2 weeks after spirometry and allergy testing results to review findings and adjust therapy.  
+- **Urgent Care Instructions:** If wheeze persists despite 2 rescue inhaler doses, or if he develops respiratory distress, fever, or worsening cough, go to the nearest emergency department.  
+
+### Documentation  
+- Note entered under **Note ID 487** (SOAP format for asthma evaluation).  
+
+---  
+
+*Prepared by:* Dr. External Provider, MD  
+*Date:* 2024‑03‑02

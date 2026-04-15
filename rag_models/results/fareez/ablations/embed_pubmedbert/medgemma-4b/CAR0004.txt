@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 06:28:26
+Time: 24.89s
+Tokens: 9,035 in / 424 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aileen Vi Rempel
+Date of Birth: 1917-07-25
+Patient ID: 2502
+
+Chief Complaint: Sharp chest pain.
+
+History of Present Illness:
+
+The patient presents today complaining of sharp chest pain that began approximately three days ago. The pain is located primarily in the center of her chest, over the heart. The pain is described as sharp and lasts for a few seconds before subsiding. It is exacerbated by coughing and lying down, but improves when she leans forward. The patient denies any previous similar episodes. The pain is rated as a 6 out of 10. She denies any associated symptoms such as shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or weakness. She has taken Tylenol, which provided some relief. She denies any recent injuries. She reports a recent flu, but denies any current symptoms. She denies any medications that have helped the pain.
+
+Past Medical History:
+
+The patient denies any prior medical conditions, including diabetes, high blood pressure, or heart problems. She is a 25-year-old female. She denies any allergies. She denies any prior surgeries.
+
+Family History:
+
+The patient reports a family history of heart problems in her father, who had a heart attack two weeks prior to her presentation and subsequently passed away.
+
+Social History:
+
+The patient is a student and works part-time as a postman. She lives with her mother. She drinks occasionally, about one or two drinks on weekends. She denies any recreational drug use or smoking.
+
+Medications:
+
+The patient reports taking Tylenol occasionally.
+
+Physical Exam:
+
+No information available.
+
+Assessment:
+
+The patient presents with sharp chest pain, likely cardiac in origin, given her family history. Further evaluation is needed to rule out acute coronary syndrome.
+
+Plan:
+
+The patient will undergo an ECG to assess her cardiac function. Blood work will be ordered to evaluate her cardiac enzymes and rule out other causes of chest pain. The patient is advised to avoid activities that exacerbate her pain until further evaluation is complete.

@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:14:22
+Time: 5.35s
+Tokens: 13,675 in / 1,371 out
+============================================================
+
+Patient Information  
+Name: (not provided)  
+Age: 6 years  
+Sex: Male  
+Guardian: Mother (presenting with the patient)  
+
+Chief Complaint  
+Acute onset abdominal pain associated with vomiting, watery diarrhea, and fever over the past three days.  
+
+History of Present Illness  
+The patient’s mother reports that three days ago the child began complaining of a vague, central abdominal discomfort and appeared more irritable than usual. Two days ago he experienced his first episode of vomiting, initially after lunch and consisting of recently ingested food. Since that time he has vomited a total of six times, with the most recent episodes described as yellow‑tinged material without visible bile or blood. Yesterday he developed a fever measured at 38.3 °C, accompanied by chills that required additional blankets. He has been markedly quieter and has spent most of the day sleeping. Over the past 24 hours he has had six to seven watery, non‑bloody bowel movements. He denies any associated headache, ear or eye pain, sore throat, cough, shortness of breath, chest pain, urinary symptoms, rash, joint or muscle aches, or changes in taste or smell. No apparent triggers for the vomiting have been identified beyond the initial post‑lunch episode; subsequent episodes have occurred at random times. There has been no recent change in diet, no travel, and no known sick contacts, although he returned to school last week.  
+
+Review of Systems  
+
+Constitutional: Fever (38.3 °C), chills, fatigue, irritability.  
+Respiratory: No cough, dyspnea, wheezing, or nasal congestion.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Abdominal pain (central), vomiting (6 episodes, yellowish, no blood), watery diarrhea (≈6‑7 episodes/day, no blood). No nausea reported separately, no dysphagia.  
+Genitourinary: No dysuria, polyuria, or changes in urine output noted.  
+Dermatologic: No rash or skin changes.  
+Neurologic: No headache, no focal deficits.  
+ENT/Eyes: No ear pain, eye pain, redness, or visual changes.  
+Other: No muscle or joint pain.  
+
+Past Medical History  
+The child has no known chronic medical conditions. No prior hospitalizations or surgeries reported.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Medications  
+No current prescription or over‑the‑counter medications.  
+
+Social History  
+The patient lives with his mother, father, and two older siblings (ages 7 and 10). He attends school and was back in class last week. There is no tobacco use in the household, no pets, and no recent travel. The home environment is reported as safe with no concerns for physical or verbal abuse. Immunizations are up to date.  
+
+Family History  
+No family history of heart disease, lung disease, celiac disease, Crohn’s disease, or other gastrointestinal disorders reported.  
+
+Physical Examination (as reported)  
+Vital Signs: Temperature recorded yesterday at 38.3 °C; current temperature not documented. No blood pressure, heart rate, respiratory rate, or oxygen saturation recorded at this encounter.  
+General: Appears mildly ill, irritable, and fatigued; increased sleepiness noted.  
+HEENT: No conjunctival injection, no nasal discharge, no oropharyngeal erythema.  
+Cardiovascular: No murmurs or abnormal findings reported.  
+Respiratory: Breath sounds not described; patient denies dyspnea.  
+Abdomen: Mother reports diffuse central tenderness when the child points to his belly; on examination the abdomen was non‑tender to palpation by the caregiver, and no guarding or rebound was noted. No masses appreciated.  
+Extremities: No edema.  
+Skin: No rash.  
+
+Laboratory and Diagnostic Studies  
+No laboratory results are available at the time of this visit. The provider ordered a SARS‑CoV‑2 (COVID‑19) PCR test and a basic metabolic panel (including electrolytes, BUN, creatinine, and CBC) to assess for dehydration and possible infection.  
+
+Assessment  
+1. Acute viral gastroenteritis – most likely infectious etiology given the abrupt onset of vomiting, watery diarrhea, fever, and abdominal discomfort.  
+2. Dehydration – mild to moderate risk secondary to ongoing fluid losses.  
+3. Rule‑out COVID‑19 infection – compatible gastrointestinal presentation; testing pending.  
+
+Plan  
+
+Diagnostic  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Order basic metabolic panel, CBC, and serum electrolytes to evaluate hydration status and screen for bacterial infection.  
+- Consider stool studies (culture, ova and parasites) only if diarrhea persists beyond 72 hours or if blood appears.  
+
+Therapeutic  
+- Initiate oral rehydration therapy (ORS) with age‑appropriate solution; encourage small, frequent sips of clear fluids (water, diluted juice, ORS).  
+- If oral intake remains inadequate, discuss the possibility of ondansetron (0.15 mg/kg orally) for breakthrough vomiting.  
+- Provide acetaminophen 15 mg/kg PO q6‑8 h PRN for fever or discomfort, not to exceed 5 doses in 24 hours.  
+- Continue normal diet as tolerated; advance to bland foods (e.g., bananas, rice, applesauce, toast) when vomiting subsides.  
+
+Education & Discharge Instructions  
+- Explain signs of worsening dehydration: decreased urine output, dry mouth, sunken eyes, lethargy, or persistent vomiting.  
+- Advise caregiver to seek immediate medical attention if vomiting exceeds 8 episodes in 24 hours, if the child cannot retain fluids, develops blood in stool or vomit, has a fever >39 °C persisting >24 hours, or shows any new concerning symptoms.  
+- Emphasize hand hygiene and infection control measures at home and school to prevent spread.  
+
+Follow‑up  
+- Telephone follow‑up with the clinic in 24 hours to review test results and clinical status.  
+- In‑person follow‑up or return to the emergency department if the child’s condition worsens or fails to improve within 48 hours.  
+
+The plan will be adjusted based on pending COVID‑19 test results and laboratory findings.

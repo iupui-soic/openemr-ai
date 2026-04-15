@@ -1,0 +1,78 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:48:15
+Time: 3.34s
+Tokens: 6,484 in / 1,154 out
+============================================================
+
+Patient Information  
+Name: Not documented (minor patient)  
+Date of Birth / Age: Age not specified in the encounter (referred to as “my ___‑year‑old son”)  
+Sex: Male  
+Guardian: Mother present for interview  
+Medical Record Number: Not provided  
+
+Chief Complaint  
+Fever, dry cough, runny nose, sore throat, decreased appetite, and generalized muscle aches of two‑day duration.
+
+History of Present Illness  
+The patient’s mother reports that his symptoms began two days ago. The runny nose and dry cough started first, followed by the onset of fever and chills last night. She measured the temperature at approximately 38.8 °C (101.8 °F). The cough is non‑productive, and there is no reported sputum, blood, wheezing, shortness of breath, or chest pain. The nasal discharge is described as clear, without congestion or sinus pressure. He has a mild sore throat that is not severely painful and has not interfered with oral intake, although his appetite is reduced and he is eating smaller portions than usual. He complains of diffuse muscle aches (“feels a bit achy all over”). He denies dizziness, fainting, numbness, tingling, joint pain, diarrhea, vomiting, nausea, rash, eye, ear, or visual changes, and there are no changes in urinary output. He continues to tolerate solid foods, albeit in reduced quantity, and remains hydrated.
+
+Review of Systems  
+Constitutional: Fever 38.8 °C, chills, decreased appetite, mild fatigue, diffuse myalgias.  
+Respiratory: Dry cough, clear rhinorrhea, no shortness of breath, wheeze, or chest pain.  
+Ear/Nose/Throat: Clear nasal discharge, mild sore throat, no ear pain or discharge, normal hearing and vision.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.  
+Genitourinary: No dysuria or change in urine.  
+Musculoskeletal: Diffuse muscle aches, no joint pain or swelling.  
+Neurologic: No dizziness, syncope, focal weakness, or seizures.  
+Skin: No rash or lesions.  
+Psychiatric: No reported anxiety, depression, or behavioral changes.  
+
+Past Medical History  
+The child is described as “pretty healthy” with no chronic medical conditions. He has a history of occasional viral upper respiratory infections during winter but no hospitalizations, surgeries, or known chronic diseases.  
+
+Surgical History  
+None reported.  
+
+Social History  
+The patient lives at home with his mother, father, and two younger siblings. No tobacco use in the household, no exposure to second‑hand smoke, and no recent travel. He attends school partially in person and partially online. No known exposure to sick contacts. No mention of pets, mold, or other environmental irritants.  
+
+Family History  
+Maternal and paternal histories are unremarkable for pediatric illness. The only noted adult family history is a grandfather with hypertension and hypercholesterolemia. No known hereditary lung or cardiac disease.  
+
+Allergies  
+No medication, food, or environmental allergies reported.  
+
+Current Medications  
+None.  
+
+Vital Signs  
+No vital sign measurements documented during this encounter.  
+
+Physical Examination  
+No physical examination findings documented in the transcript.  
+
+Laboratory and Diagnostic Studies  
+The provider ordered a nasopharyngeal swab for SARS‑CoV‑2 PCR testing with results anticipated in 24–48 hours. No other laboratory studies were performed at this visit.  
+
+Assessment  
+1. Acute viral upper respiratory infection – most consistent with a common cold, with consideration of COVID‑19 or influenza given fever, cough, rhinorrhea, myalgias, and sore throat.  
+2. Low‑grade fever, decreased appetite, and mild malaise – likely secondary to the viral syndrome.  
+
+Plan  
+- Diagnostic testing: Obtain a COVID‑19 PCR nasopharyngeal swab today; instruct family to isolate the child pending results and to follow local public health guidance.  
+- Symptomatic treatment: Encourage adequate oral fluid intake and rest. Use age‑appropriate antipyretics (e.g., acetaminophen) for fever and discomfort, dosing per weight.  
+- Nutrition: Offer small, frequent meals and nutrient‑dense foods; monitor for worsening appetite or signs of dehydration.  
+- Monitoring: Advise parents to watch for escalation of symptoms, including persistent high fever (>39 °C), worsening cough, difficulty breathing, chest pain, new wheezing, severe sore throat impeding oral intake, vomiting, diarrhea, or any neurological changes (e.g., confusion, seizures).  
+- Return precautions: Seek immediate emergency care if the child develops respiratory distress, cyanosis, inability to maintain hydration, seizures, or any focal neurological deficits.  
+- Follow‑up: Telephone or telemedicine follow‑up in 48 hours to review COVID‑19 test result and symptom progression, or sooner if concerning signs develop.  
+- Education: Reviewed hand hygiene, respiratory etiquette, and cleaning of commonly touched surfaces. Reinforced that viral infections are self‑limited and that antibiotics are not indicated unless a bacterial complication arises.  
+
+Disposition  
+The patient was discharged home with supportive care instructions and pending COVID‑19 test results. No prescription medications were required at this time.  
+
+Prepared by: [Physician’s Name], MD  
+Date of Encounter: [Date of Visit]

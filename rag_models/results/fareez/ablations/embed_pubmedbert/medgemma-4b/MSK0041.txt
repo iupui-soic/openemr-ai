@@ -1,0 +1,49 @@
+Model: google/medgemma-4b-it
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 06:28:26
+Time: 35.93s
+Tokens: 8,587 in / 649 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Name: Abel Fritsch
+DOB: 1945-02-24
+Sex: Male
+Unit Number: 342
+
+Chief Complaint: Intense pain in the right foot.
+
+History of Present Illness:
+
+The patient presents with intense pain in his right foot that began six hours prior to the encounter. The pain has been constant since its onset. The patient denies any recent trauma to the foot. The pain is localized to the medial side of the foot, below the big toe. The patient denies any radiation of the pain. The pain is described as sharp and intense. The patient has not tried any specific interventions to alleviate the pain, but he is trying to keep the foot still and stationary. He took an ibuprofen, but it did not provide any relief. The patient reports that any movement of the foot exacerbates the pain. He also reports that his shoes and clothing touching the foot worsen the pain. The patient is able to walk on the foot, but it is very painful, and he cannot fully flex or extend the big toe. The pain is rated as an 8 out of 10. The patient denies any prior history of similar pain in his toes or other joints. He also denies any neurological symptoms such as numbness, tingling, or sensory loss. He denies any muscle weakness. He denies any headaches. He denies any memory loss or confusion. He denies any fevers or chills. He denies any unexpected weight loss. He denies any night sweats. He denies any sensory changes in his vision, hearing, sense of smell, or sense of taste. He denies any sore throat or runny nose. He denies any cough or shortness of breath. He denies any chest pain. He denies any heart palpitations or feeling like his heart is racing. He denies any lightheadedness or dizziness. He denies any nausea or vomiting. He denies any abdominal pain. He denies any changes to his bowel habits. He denies any changes to urinary patterns. He denies any skin changes. He denies any fatigue or malaise. He denies any muscle aches or body pains or joint pains elsewhere.
+
+Past Medical History:
+
+The patient reports a history of high blood pressure, diabetes, and being overweight. He was recently hospitalized for kidney stones, which have since resolved.
+
+Medications:
+
+The patient is currently taking ramipril for high blood pressure and insulin for diabetes.
+
+Social History:
+
+The patient drinks approximately 2 glasses of wine a day and recently started drinking a beer every day. He does not smoke, use marijuana, or use other recreational drugs.
+
+Family History:
+
+The patient's father had arthritis and high blood pressure and diabetes. His mother had arthritis and gout.
+
+Physical Exam:
+
+The patient reports redness and swelling in the affected area, with the right foot being warmer than the left.
+
+Assessment:
+
+Based on the patient's presentation, the most likely diagnosis is a gout flare in the big toe (podagra).
+
+Plan:
+
+The plan includes starting colchicine to treat the gout flare and recommending dietary changes to reduce red meat and alcohol intake, weight loss, and improved diabetes management. A joint aspiration will be performed to rule out infection.

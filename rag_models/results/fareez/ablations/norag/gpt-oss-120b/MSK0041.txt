@@ -1,0 +1,70 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 03:15:17
+Time: 5.56s
+Tokens: 7,900 in / 1,710 out
+============================================================
+
+Patient Information  
+Abel Fritsch is a 79‑year‑old male (DOB 24 February 1945) residing at 183 Bechtelar Stravenue, Brockton, Massachusetts. He lives with his son. He has a past medical history significant for essential hypertension, type 2 diabetes mellitus with chronic kidney disease (stages 1‑4) and a renal transplant, coronary artery disease with a prior myocardial infarction and coronary artery bypass grafting, anemia, and a recent episode of kidney‑stone lithotripsy. He reports no known drug allergies.
+
+Chief Complaint  
+“Intense pain in my right foot for the past six hours.”
+
+History of Present Illness  
+The patient reports the abrupt onset of a sharp, severe pain localized to the medial aspect just below his right great toe approximately six hours prior to presentation. The pain has remained constant, rated 8/10, and is aggravated by any movement of the toe, including wearing shoes. He notes associated swelling, erythema, and warmth over the area, and he is unable to actively flex or extend the great toe. Ibuprofen taken earlier provided no relief. He can ambulate but uses an antalgic gait to avoid weight bearing on the affected toe. He denies any recent trauma, prior similar episodes, fever, chills, night sweats, or systemic symptoms. He has not tried any other modalities for relief. He has a history of hypertension treated with ramipril (as reported), and insulin for diabetes. He also consumes approximately two glasses of wine and one beer daily and eats a diet high in red meat.
+
+Review of Systems  
+Positive for right foot pain, swelling, erythema, and warmth localized to the first metatarsophalangeal region. Negative for fever, chills, recent weight loss, night sweats, headaches, visual or auditory changes, respiratory symptoms (cough, shortness of breath), chest pain, palpitations, dizziness, nausea, vomiting, abdominal pain, bowel habit changes, urinary symptoms, skin rashes, nail or hair changes, generalized fatigue, myalgias, or other joint pain. No neurologic symptoms such as numbness, tingling, or weakness. No recent travel, sick contacts, or exposure to infectious sources.
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus with microalbuminuria, proteinuria, and chronic kidney disease (stages 1‑4) now post‑renal transplant (2021)  
+- Coronary artery disease with prior non‑ST elevation myocardial infarction (2012) and coronary artery bypass grafting  
+- Anemia (chronically documented)  
+- Recent kidney‑stone lithotripsy (hospitalised, now resolved)  
+
+Family History  
+Father had severe arthritis, hypertension, and diabetes. Maternal relatives have a history of arthritis, gout, and kidney stones.
+
+Social History  
+The patient does not use tobacco, marijuana, or other recreational drugs. Alcohol consumption is approximately two glasses of wine and one beer per day, unchanged recently. He reports a diet high in red meat and low in seafood. He lives at home with his son. He reports no recent travel and no known exposure to ill individuals.
+
+Medications (active)  
+- Insulin (dose not specified) for diabetes  
+- Ramipril (reported by patient) for hypertension (EMR lists lisinopril, amlodipine, valsartan, and metoprolol succinate)  
+- Clopidogrel 75 mg daily  
+- Aspirin 81 mg daily  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Simvastatin 20 mg daily (plus pravastatin 40 mg daily)  
+- Nitroglycerin spray as needed  
+- Additional cardiac and transplant medications listed in the EMR (e.g., tacrolifen, epoetin alfa) are noted as active but not directly relevant to the current problem.  
+
+Allergies  
+No drug allergies reported.
+
+Physical Examination (Objective)  
+Vital signs: Not documented at this encounter.  
+General: Alert, in mild distress due to foot pain.  
+Right foot: Marked erythema, swelling, and increased temperature over the first metatarsophalangeal joint. The joint is exquisitely tender to palpation. Range of motion of the great toe is severely limited; the patient is unable to flex or extend the toe actively. No deformity other than swelling; no ulceration or open wound noted. The remainder of the toes, midfoot, and ankle are non‑tender with full range of motion. No calf tenderness. Gait is mildly antalgic, favoring the right foot. No other skin lesions, lymphadenopathy, or systemic findings.
+
+Laboratory Data  
+Recent laboratory values (from prior visits) show hemoglobin 13.9 g/dL, hematocrit 44.4 %, leukocytes 5.4 ×10³/µL, LDL 55 mg/dL, HDL 33 mg/dL, total cholesterol 111 mg/dL. No acute labs drawn during this visit. Serum uric acid level not available; renal function parameters not documented currently.
+
+Assessment  
+1. Acute right first metatarsophalangeal joint inflammation – most consistent with a gout flare (podagra) given the classic presentation, risk factors (diabetes, obesity, high purine diet, alcohol use, family history of gout), and absence of trauma.  
+2. Septic arthritis cannot be excluded at this time; the joint is warm, erythematous, and markedly tender, and the patient is immunocompromised (post‑renal transplant, diabetes, chronic kidney disease).  
+3. Chronic conditions: hypertension, type 2 diabetes mellitus, coronary artery disease, chronic kidney disease, renal transplant status.  
+
+Plan  
+- **Joint Aspiration**: Perform urgent arthrocentesis of the right first MTP joint for synovial fluid analysis, crystal identification, Gram stain, and culture to rule out septic arthritis.  
+- **Pharmacologic Therapy**: Initiate colchicine 0.6 mg orally twice daily, adjusted for renal function, to address the presumed gout flare. If colchicine is contraindicated or not tolerated, consider a short course of low‑dose oral steroids (e.g., prednisone 20 mg daily for 5 days) with close monitoring; NSAIDs are avoided given CKD and transplant status.  
+- **Pain Management**: Prescribe acetaminophen 650 mg orally every 6 hours as needed, not to exceed 3 g per day. Continue ibuprofen only if renal function permits and under supervision.  
+- **Laboratory Monitoring**: Order serum uric acid, basic metabolic panel, and renal function tests prior to initiating colchicine. Repeat as clinically indicated.  
+- **Education**: Counsel the patient on dietary modifications (reduce red meat, shellfish, and alcohol intake), encourage weight loss, and stress the importance of optimal glycemic control to decrease future gout attacks.  
+- **Follow‑up**: Review synovial fluid results within 48 hours. If infection is confirmed, begin targeted intravenous antibiotics and consider orthopedic referral. If gout is confirmed, arrange outpatient rheumatology follow‑up for long‑term urate‑lowering therapy (e.g., allopurinol or febuxostat) after acute episode resolves.  
+- **Cardiovascular/Renal Management**: Ensure blood pressure and glycemic targets are met; review current antihypertensive regimen in light of renal function. Continue current cardiac medications.  
+- **Return Precautions**: Advise the patient to seek immediate care if fever develops, the foot becomes increasingly swollen, drainage occurs, or pain worsens despite therapy.
+
+The above plan addresses the acute presentation while safeguarding against a potentially serious septic process and incorporates long‑term strategies to prevent recurrence of gout attacks.

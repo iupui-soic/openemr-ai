@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:10:16
+Time: 4.63s
+Tokens: 8,409 in / 1,494 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn DOB: 16 April 1965 Sex: Male MRN: 2046 Address: 266 Heller Park Apt 46, Hingham, MA 02043  
+
+Chief Complaint  
+Right upper quadrant abdominal pain.
+
+History of Present Illness  
+Mr. McGlynn presents to the Emergency Department with a three‑day history of severe pain localized to the right upper quadrant, just inferior to the costal margin. The pain began approximately one hour after lunch three days ago and has been progressively worsening, reaching a peak of intensity three to four hours prior to arrival. He rates the pain as 8/10 on a numeric scale and describes it as sharp. The discomfort is non‑radiating. He reports associated nausea over the past several days but denies any vomiting, hematemesis, melena, or hematochezia. He has not observed changes in bowel habits, stool color, or urinary frequency or appearance. Appetite has markedly decreased today, and he feels unusually fatigued and “drained” because of the pain. He has attempted over‑the‑counter analgesia with ibuprofen and acetaminophen without significant relief. He denies recent travel, sick contacts, skin changes, rashes, or recent infections. He reports a prior similar episode several years ago that resolved spontaneously without medical evaluation.
+
+Review of Systems  
+Constitutional: Denies fever, chills, weight loss, or recent night sweats. Reports decreased energy today due to pain.  
+Respiratory: No cough, dyspnea, or recent infections.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Positive for right upper quadrant pain and nausea; negative for vomiting, hematemesis, melena, hematochezia, diarrhea, constipation, dysphagia, or heartburn (except occasional antacid use).  
+Genitourinary: No dysuria, hematuria, or changes in urine color.  
+Musculoskeletal: No recent trauma or musculoskeletal pain.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Psychiatric: No anxiety or depression reported.  
+Social History: Works as a bank consultant. Consumes one to two glasses of wine nightly; does not feel a need to cut down and has never experienced cravings for alcohol in the morning. No tobacco or illicit drug use. Lives with partner and two children; home environment described as stable and supportive.  
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient reports no chronic medical conditions. (He states his physician has only advised weight loss.)  
+
+Surgical History  
+No prior surgeries reported.
+
+Family History  
+Mother has a history of gallstones. Father died of a cerebrovascular accident (stroke) in his 60s. No other significant familial illnesses reported.
+
+Current Medications  
+Occasional antacid use for heartburn (taken a few times per month after dinner). No regular prescription or over‑the‑counter medications reported.
+
+Vital Signs (recorded on 30 May 2024)  
+Heart Rate: 94 beats/min  
+Respiratory Rate: 13 breaths/min  
+Blood Pressure: Not recorded  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Height: 177.7 cm (5 ft 10 in)  
+Weight: Not recorded  
+BMI: 27.27 kg/m²  
+
+Physical Examination  
+No physical examination findings documented in the encounter note.  
+
+Laboratory Data (most recent)  
+- White blood cell count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL (normal)  
+- Hematocrit: 40.1 % (normal)  
+- Platelets: 351.7 ×10³/µL (normal)  
+- MCV: 94.5 fL, MCH: 28.4 pg, MCHC: 34.2 g/dL, RDW: 39.9 fL (all within reference ranges)  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL 168 mg/dL, HDL 58 mg/dL, Triglycerides 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- Fall risk (Morse): 105 (moderate risk)  
+
+Imaging  
+No imaging studies performed or documented during this encounter.
+
+Assessment  
+1. Acute right upper quadrant pain, likely biliary colic or early acute cholecystitis given the post‑prandial onset, location, and associated nausea.  
+2. Hyperlipidemia (elevated LDL and total cholesterol).  
+3. Obesity (BMI 27.3).  
+4. No evidence of infection, gastrointestinal bleeding, or renal dysfunction based on available labs.  
+
+Plan  
+Diagnostic Studies:  
+- Obtain right upper quadrant abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, pericholecystic fluid, and common bile duct dilation.  
+- Consider complete metabolic panel and liver function tests if ultrasound suggests biliary pathology.  
+
+Therapeutic Interventions:  
+- Initiate intravenous analgesia with acetaminophen 1 g q6h; consider short‑acting opioid (e.g., morphine 2–4 mg IV) if pain remains uncontrolled.  
+- Offer antiemetic therapy (ondansetron 4 mg IV q8h PRN for nausea).  
+- Keep patient NPO until further evaluation; advance diet as tolerated after imaging results.  
+
+Disposition:  
+- Admit for observation and further work‑up if ultrasound confirms acute cholecystitis or if the patient’s pain worsens or develops fever/leukocytosis.  
+- If imaging shows uncomplicated biliary colic without signs of infection, discharge with outpatient surgical referral for elective cholecystectomy, strict low‑fat diet, and analgesic plan.  
+
+Patient Education & Discharge Instructions (if discharged):  
+- Counsel on signs of worsening condition: fever, increasing pain, vomiting, jaundice, or dark urine, and advise immediate return to the ED if these occur.  
+- Recommend low‑fat diet and avoidance of large, fatty meals until surgical evaluation.  
+- Encourage weight loss through diet modification and regular physical activity as tolerated.  
+- Discuss moderation of alcohol intake; although current consumption is modest, advise limiting to ≤1 drink per day.  
+
+Follow‑up:  
+- Schedule outpatient follow‑up with primary care provider within 3–5 days.  
+- Arrange surgical consultation for gallbladder evaluation within 1–2 weeks, pending imaging results.  
+
+Signature: ___________________________  
+Date: 30 May 2024

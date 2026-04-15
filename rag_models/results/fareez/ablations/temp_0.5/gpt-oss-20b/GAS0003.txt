@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:18:17
+Time: 3.83s
+Tokens: 18,494 in / 1,188 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with right upper quadrant abdominal pain that began approximately eight hours ago.  
+
+History of Present Illness  
+The patient reports an aching pain localized to the right upper quadrant of the abdomen. The pain initially was intermittent but has become constant over the past six hours. She rates the pain as 8 out of 10. The discomfort worsens after eating, particularly with fatty foods such as burgers or fries, and has prompted her to reduce her food intake. She has experienced mild nausea but has not vomited. She denies fever, chills, sweating, changes in bowel habits (no constipation or diarrhea), or urinary symptoms. She has not noticed any blood in her stool or urine. She reports that acetaminophen (Tylenol) has not provided relief.  
+
+Review of Systems  
+Constitutional: Mild fatigue, no fever, no recent weight loss.  
+Respiratory: No cough, no shortness of breath.  
+Cardiovascular: No chest pain, no palpitations.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, no vomiting, no diarrhea or constipation, no melena or hematochezia.  
+Genitourinary: No dysuria, no hematuria.  
+Skin: No rash, no jaundice.  
+Neurologic: No headaches or dizziness.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with metformin.  
+Chronic kidney disease stage 3 (estimated GFR 36.9 mL/min/1.73 m²).  
+Hypertension, managed with lisinopril (historical).  
+Gastroesophageal reflux disease.  
+Obesity (BMI 27.9).  
+Metabolic syndrome.  
+Chronic pain and chronic migraine.  
+Chronic obstructive bronchitis.  
+
+Surgical History  
+Wisdom teeth extraction during adolescence.  
+
+Social History  
+The patient lives alone in an apartment. She is currently unemployed due to layoffs related to COVID-19. She engages in occasional running when the weather is mild. She consumes one to two glasses of wine per night. She does not smoke cigarettes and denies recreational drug use.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other significant illnesses.  
+
+Medications  
+Current medication: Metformin.  
+Past medications (no longer active): Acetaminophen/dextromethorphan/doxylamine oral solution, fluticasone/salmeterol inhaler, albuterol inhalation solution, sodium fluoride gel, insulin isophane/regular, lisinopril.  
+
+Allergies  
+No known drug or environmental allergies.  
+
+Physical Examination  
+No information available.  
+
+Laboratory Results  
+Serum creatinine: 1.97 mg/dL (elevated).  
+Estimated GFR (MDRD): 36.9 mL/min/1.73 m².  
+Serum sodium: 136 mmol/L.  
+Serum chloride: 104 mmol/L.  
+Serum calcium: 9.27 mg/dL.  
+Urine protein: 214.8 mg/dL (significant proteinuria).  
+Urine specific gravity: 1.038.  
+Urine ketones: 0.93 mg/dL.  
+Urine glucose: 1.53 mg/dL.  
+Urine bilirubin: 0.44 mg/dL.  
+Urine nitrite and leukocyte esterase: not detected.  
+Blood glucose: 66.6 mg/dL.  
+
+Assessment  
+The patient’s presentation of right upper quadrant pain that worsens after fatty meals, accompanied by nausea and no systemic signs of infection, is most consistent with biliary colic due to gallstone disease. The absence of fever, leukocytosis, or leukocyte esterase in the urine makes acute cholecystitis less likely at this time. Differential diagnoses include peptic ulcer disease and pancreatitis; however, the lack of epigastric pain, vomiting, and normal serum glucose argue against these conditions. Chronic kidney disease and diabetes are significant comorbidities that may influence management decisions.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate the gallbladder, bile ducts, and liver for gallstones, wall thickening, or pericholecystic fluid.  
+2. If ultrasound is inconclusive or suggests acute cholecystitis, consider a HIDA scan.  
+3. Advise the patient to follow a low‑fat diet and avoid fatty or greasy foods.  
+4. Continue metformin for diabetes control; monitor renal function before initiating any new nephrotoxic medications.  
+5. For pain management, recommend acetaminophen as needed, avoiding NSAIDs due to her chronic kidney disease.  
+6. Encourage adequate hydration and monitor for worsening symptoms such as fever, worsening pain, vomiting, or signs of jaundice.  
+7. Schedule a follow‑up appointment in 48–72 hours to review imaging results and reassess symptoms.  
+8. Provide written instructions on when to seek urgent care (e.g., sudden increase in pain, fever, vomiting, or jaundice).  
+
+The patient was educated on her condition, the importance of dietary modifications, medication adherence, and red‑flag symptoms that warrant immediate medical attention. She verbalized understanding of the plan and agreed to the recommended follow‑up.

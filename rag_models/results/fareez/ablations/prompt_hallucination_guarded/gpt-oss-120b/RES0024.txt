@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 04:25:12
+Time: 3.17s
+Tokens: 11,874 in / 974 out
+============================================================
+
+Patient Information:
+Name: Aaron Bartoletti  
+Date of Birth: August 3, 1981 (Age 44)  
+Sex: Male  
+
+Chief Complaint:
+Acute loss of smell and taste for the past two days.
+
+History of Present Illness:
+Aaron reports that for the last two days he has been unable to smell or taste any foods. He describes the loss as “super weird” and notes that he could not taste an onion when his boyfriend offered him a bite. He denies feeling ill otherwise. He mentions a mild sense of fatigue and a vague feeling of being “a little dry,” but reports no cough, shortness of breath, chest pain, palpitations, nausea, vomiting, diarrhea, constipation, urinary changes, headaches, fever, chills, night sweats, sore throat, rhinorrhea, nasal congestion, eye or ear pain, or new skin rash. He has a known history of eczema and a peanut allergy for which he carries an EpiPen. He is currently taking combined oral contraceptive pills and uses a topical steroid cream for eczema flares as needed. He denies any recent exposures to sick contacts; his boyfriend is asymptomatic and he has limited contact with others due to online classes. He does not smoke cigarettes, does not smoke marijuana (uses occasional edibles), and drinks alcohol only a few beers on weekends. He is sexually active with his boyfriend and reports no prior sexually transmitted infections. Family history is notable for an uncle with prostate cancer; otherwise, no known hereditary conditions.
+
+Review of Systems:
+- Constitutional: Mild fatigue; no fever, chills, night sweats, weight change.  
+- ENT: Anosmia and ageusia for 2 days; no sore throat, nasal discharge, or congestion.  
+- Respiratory: No cough, dyspnea, or chest pain.  
+- Cardiovascular: No palpitations or chest discomfort.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or constipation.  
+- Genitourinary: No dysuria or frequency changes.  
+- Neurologic: No headache.  
+- Dermatologic: Chronic eczema; no new rash.  
+- Psychiatric: No anxiety or mood concerns expressed.  
+- Allergic/Immunologic: Peanut allergy (EpiPen available); no medication allergies.
+
+Past Medical History:
+- Eczema  
+- Peanut allergy  
+
+Past Surgical History:
+- None reported.  
+
+Hospitalizations:
+- Emergency department visit for anaphylactic reaction to peanuts in childhood.
+
+Medications:
+- Combined oral contraceptive pill (duration >3 years).  
+- Topical steroid cream for eczema flares (used intermittently).  
+
+Allergies:
+- Peanut (causes anaphylaxis).  
+
+Social History:
+- Lives with boyfriend; no other household members.  
+- No tobacco use.  
+- Occasional marijuana edibles.  
+- Alcohol use: a few beers on weekends.  
+- Employed (status not discussed).  
+
+Family History:
+- Uncle with prostate cancer.  
+- No known family history of loss of smell, cardiac, or pulmonary disease.
+
+Objective:
+Vital signs: Not assessed during this encounter.  
+Physical examination: Not performed or documented during this encounter.  
+Laboratory studies: No labs drawn; COVID-19 nasal swab test ordered as described below.
+
+Assessment:
+1. Acute loss of smell and taste (anosmia/ageusia) – most likely viral etiology, pending COVID-19 testing.  
+2. Peanut allergy, well-controlled with EpiPen on hand.  
+3. Chronic eczema – stable.
+
+Plan:
+- Diagnostic testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. Results are expected within 48 hours.  
+- Infection control: Advise patient to self‑isolate for up to 14 days after symptom resolution or per public health guidelines while awaiting test results.  
+- Symptomatic care: Reassure that loss of smell and taste is a known manifestation of viral upper respiratory infections, including COVID‑19. Encourage hydration and continue usual oral intake; monitor for development of fever, cough, shortness of breath, or other concerning symptoms.  
+- Allergy safety: Reinforce continued carrying of EpiPen and avoidance of peanuts.  
+- Follow‑up: Patient to contact the office for COVID‑19 test results. If symptoms worsen or new symptoms (fever, respiratory difficulty, persistent loss of smell beyond two weeks) develop, advise prompt return or urgent evaluation.  
+- No changes to current medications were indicated.  
+
+Disposition:
+Patient was counseled and discharged with the above plan. No immediate interventions were required during the visit.

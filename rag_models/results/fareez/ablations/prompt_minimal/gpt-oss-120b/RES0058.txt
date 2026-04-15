@@ -1,0 +1,194 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:21:33
+Time: 6.43s
+Tokens: 8,034 in / 2,413 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Russel  
+- **DOB:** 1952‑11‑14 (71 years old)  
+- **Sex:** Male  
+- **MRN:** 92  
+- **Address:** 278 McCullough Center Apt 99, Upton, MA 01568  
+
+---
+
+### SUBJECTIVE  
+
+**Chief Complaint:**  
+“Loss of taste for the past two days” (reported by the patient during the visit).
+
+**History of Present Illness (HPI):**  
+The patient reports a sudden, diffuse loss of taste that began **approximately 48 hours ago**. Food now tastes “plain” or “like cardboard,” and the patient suspects a concurrent reduction in smell. He also notes a **dry cough** that started **3–4 days ago**, accompanied by **fatigue** and a sensation of shortness of breath after coughing episodes. He denies fever, but states he “feels a little hot” and suspects a low‑grade fever. He experienced **one episode of watery diarrhea** this morning (2–3 loose stools) with no blood or melena. No abdominal pain, nausea, or vomiting. Appetite remains intact.
+
+**Associated Symptoms (positive):**  
+- Dry, non‑productive cough  
+- Mild fatigue / increased sleepiness  
+- Transient shortness of breath after coughing  
+- Single episode of watery diarrhea  
+- Subjective sensation of being “a bit hot” (possible low‑grade fever)  
+
+**Associated Symptoms (negative):**  
+- No fever reported (subjective only)  
+- No sputum production, hemoptysis, or wheezing  
+- No chest pain, palpitations, or tachycardia  
+- No myalgias, arthralgias, or headache  
+- No sore throat (only mild throat itchiness)  
+- No nasal congestion or rhinorrhea  
+- No rash, urinary changes, dizziness (except a brief episode on rising), or syncope  
+- No recent trauma to face, mouth, or nose  
+- No weight loss, night sweats, or chills  
+
+**Review of Systems (pertinent positives/negatives):**  
+- **Constitutional:** fatigue, feeling warm; denies true fever, chills, weight loss.  
+- **ENT:** loss of taste, possible reduced smell, mild itchy throat, no sore throat.  
+- **Respiratory:** dry cough, brief post‑cough dyspnea, no wheeze, no chest pain.  
+- **Gastrointestinal:** one episode of diarrhea, no abdominal pain, no blood/melena.  
+- **Cardiovascular:** no chest pain, palpitations, or known heart racing.  
+- **Genitourinary:** urination normal.  
+- **Neurologic:** brief orthostatic dizziness on waking, resolved with rest.  
+- **Dermatologic:** no rash.  
+
+**Past Medical History (from EHR):**  
+- Obesity (BMI 31 kg/m²)  
+- Prediabetes / Type 2 diabetes‑related kidney disease (CKD Stages 1‑4, now ESRD with prior transplant, currently on immunosuppression)  
+- Anemia  
+- Essential hypertension  
+- Metabolic syndrome  
+- History of renal transplant (failed/rejected 2016) – currently on tacrolimus (extended‑release) regimen (last documented dose 5 mg daily).  
+- No documented chronic lung disease.  
+
+**Past Surgical History:**  
+- Appendectomy (≈4 years ago)  
+- Renal transplant (2016)  
+
+**Medications (current as per EHR):**  
+- Tacrolimus (extended‑release) – 5 mg PO daily (active)  
+- Hydrochlorothiazide 25 mg PO daily  
+- Lisinopril 10 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Insulin (human) – regimen not fully detailed in extract  
+- (Other historic agents such as ciprofloxacin, epoetin alfa are listed but marked as ended)  
+
+**Allergies:**  
+- Possible cat allergy (patient reports possible sensitivity, no current exposure).  
+
+**Social History:**  
+- Lives in a clean townhouse with mother, step‑dad, and younger sister.  
+- No tobacco use.  
+- Occasional vape use (flavored, uncertain nicotine content) – “a few times a day.”  
+- No alcohol use.  
+- No recent travel; returned to in‑person high‑school attendance.  
+- No known exposure to pets.  
+
+**Family History:**  
+- Grandfather: lung cancer (smoker) and diabetes.  
+- No known familial heart disease reported.  
+
+**Patient Concerns / Expectations:**  
+The patient is primarily worried that his presentation may represent **COVID‑19** infection. He is receptive to testing and isolation instructions.
+
+---
+
+### OBJECTIVE  
+
+| Parameter | Value / Findings |
+|-----------|------------------|
+| **Temperature** | 37.71 °C (recorded on 2010‑05‑09) – mild elevation, but within normal limits |
+| **Heart Rate** | 62 bpm |
+| **Respiratory Rate** | 12 breaths/min |
+| **Blood Pressure** | Not recorded in current encounter (previously hypertensive) |
+| **SpO₂** | Not documented |
+| **Height** | 176.7 cm |
+| **Weight** | Not recorded (BMI previously 31 kg/m²) |
+| **General** | Alert, cooperative; appears mildly fatigued |
+| **HEENT** | No obvious nasal congestion; oropharynx mildly erythematous with a scratchy sensation, no tonsillar exudate |
+| **Lungs** | Breath sounds clear bilaterally; no wheezes, rales, or rhonchi noted |
+| **Cardiovascular** | Regular rate and rhythm; no murmurs reported |
+| **Abdomen** | Soft, non‑tender; no masses; bowel sounds present |
+| **Extremities** | No edema |
+| **Neurologic** | Oriented ×3; no focal deficits |
+| **Skin** | No rash |
+
+**Laboratory Data (most recent, from prior visits):**  
+- Sodium: 137–141 mmol/L (within normal)  
+- Potassium: 4.8 mmol/L (normal)  
+- Chloride: 105–108 mmol/L (normal)  
+- CO₂: 20.2 mmol/L (slightly low)  
+- Creatinine: ~0.97–0.99 mg/dL (stable for CKD‑3/4 baseline)  
+- Glucose: 95–100 mg/dL (acceptable for pre‑diabetic status)  
+- Calcium: 9.48 mg/dL (normal)  
+- No acute inflammatory markers (WBC, CRP) available in this extract.  
+
+**Imaging:** None performed during this encounter.
+
+---
+
+### ASSESSMENT  
+
+1. **Acute Upper Respiratory Infection (viral) – probable COVID‑19**  
+   - New onset anosmia/ageusia, dry cough, mild fever‑type sensation, fatigue, and recent exposure to a classmate with cough/fever are classic for SARS‑CoV‑2 infection.  
+   - The patient’s immunocompromised status (post‑transplant on tacrolimus) places him at higher risk for complications.
+
+2. **Mild Gastroenteritis (presumptive viral)**  
+   - Single episode of watery diarrhea, no blood, no abdominal pain; likely related to the same viral etiology.
+
+3. **Chronic Conditions (baseline)**  
+   - CKD (stage 3‑4, post‑transplant failure), hypertension, pre‑diabetes, anemia – currently stable per most recent labs.  
+   - Immunosuppression (tacrolimus) continues.
+
+4. **Risk Factors / Considerations**  
+   - Immunosuppressed host → lower threshold for testing, monitoring, and early treatment if COVID‑19 confirmed.  
+   - Vaping (possible nicotine exposure) may irritate airway and contribute to cough.  
+
+---
+
+### PLAN  
+
+**Diagnostics**  
+- **SARS‑CoV‑2 RT‑PCR (nasopharyngeal swab)** – sent today.  
+- Consider **Rapid Antigen test** if turnaround is prolonged.  
+- If COVID‑19 test is negative and symptoms persist >7 days or worsen, obtain **CBC with differential** and **C‑reactive protein** to evaluate for secondary bacterial infection.  
+
+**Therapeutic Interventions**  
+- **Supportive care:**  
+  - Increase oral fluid intake (≥2 L/day) to address possible dehydration from cough and diarrhea.  
+  - Acetaminophen 650 mg PO q6h PRN for fever or myalgias (ensure total ≤3 g/day).  
+  - Saline nasal spray or humidified air for throat irritation.  
+- **Vaccination status:** Verify up‑to‑date COVID‑19 vaccination (including booster). Offer booster if overdue.  
+- **Immunosuppression:** No immediate change to tacrolimus dose; monitor tacrolimus trough levels if clinically indicated (e.g., if concomitant medications that affect metabolism are added).  
+
+**Isolation / Public Health**  
+- Instruct patient to **self‑isolate for at least 14 days** from symptom onset regardless of test result, per local health authority guidelines.  
+- Advise to **wear a well‑fitting mask** when around household members, especially given immunosuppression.  
+
+**Monitoring & Red Flags**  
+- Seek immediate care if any of the following develop:  
+  - Fever >38.5 °C persisting >48 h  
+  - Increased dyspnea, oxygen saturation <94 % on room air  
+  - New chest pain or palpitations  
+  - Persistent vomiting/diarrhea leading to dehydration  
+  - Confusion, altered mental status  
+
+**Follow‑up**  
+- **Telehealth check‑in** in 48 hours to review test result and symptom progression.  
+- **In‑person visit** or urgent care if respiratory status worsens.  
+- **Nephrology follow‑up** as per routine schedule; inform team if renal function changes or if new medications are added.  
+
+**Patient Education**  
+- Discuss the natural course of viral URIs and typical duration of anosmia/ageusia (often 1–3 weeks).  
+- Counsel on safe vaping practices; encourage reduction or cessation, especially during respiratory illness.  
+- Reinforce hand hygiene, surface disinfection, and avoiding close contact with others while symptomatic.  
+
+**Documentation**  
+- Note that the encounter was conducted via **telephone/video** (if applicable) and that the patient consented to the plan outlined above.  
+
+---  
+
+*Prepared by:*  
+[Physician’s Name], MD  
+[Date: 2026‑04‑14]  
+
+*Signature:* _____________________________   (Electronic)

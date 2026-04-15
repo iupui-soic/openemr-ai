@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:07:41
+Time: 7.41s
+Tokens: 15,271 in / 1,519 out
+============================================================
+
+Patient Information  
+Name: Not provided  
+Date of Birth: Not provided  
+Sex: Female (as indicated by patient’s description)  
+Medical Record Number: 388  
+
+Chief Complaint  
+The patient presents with a five‑day history of left‑sided chest pain accompanied by shortness of breath.
+
+History of Present Illness  
+The patient reports a “tiny, lingering sharp” pain located on the left side of the chest that began five days ago while she was seated on the couch. The pain is constant, does not radiate, and is exacerbated by deep inspiration and by mild exertion such as walking to retrieve the mail. She notes that the pain is modestly relieved by over‑the‑counter analgesics (acetaminophen and ibuprofen), but never fully resolves. Over the past several days she has experienced increasing difficulty catching her breath during activity, which has caused her to limit her usual walking distance (previously about 5 km per day). She denies fever, chills, cough, sputum production, wheezing, nausea, vomiting, palpitations, light‑headedness, syncope, abdominal pain, urinary symptoms, rash, or joint/muscle pain. She reports mild fatigue secondary to dyspnea. She has no prior history of similar chest discomfort.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or weight change.  
+Respiratory: Positive for dyspnea on exertion and pleuritic chest pain; negative for cough, sputum, wheeze, or hemoptysis.  
+Cardiovascular: Positive for chest pain; negative for palpitations, orthopnea, paroxysmal nocturnal dyspnea, or peripheral edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or recent change in urinary frequency beyond the postoperative period.  
+Neurologic: No headache, dizziness, or syncope.  
+Musculoskeletal: No joint or muscle pain.  
+Skin: No rash or lesions.  
+
+Past Medical History  
+- Recent total abdominal hysterectomy performed approximately one month ago for symptomatic heavy menstrual bleeding.  
+- No chronic medical diagnoses reported by the patient.  
+
+Surgical History  
+- Total abdominal hysterectomy (≈ 1 month ago).  
+- Wisdom teeth extraction during adolescence.  
+
+Social History  
+The patient lives with her husband and two teenage children. She works as an accountant. She reports smoking about five cigarettes per day and is attempting to quit. Alcohol consumption is limited to approximately one glass of wine on weekends. She used marijuana occasionally in the past but not currently. She has not traveled recently.  
+
+Family History  
+Mother experienced a myocardial infarction in her 70s. No other known cardiac disease, cancer, or bleeding disorders in first‑degree relatives.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Current Medications  
+- Acetaminophen 325 mg as needed for pain (OTC).  
+- Ibuprofen 200 mg as needed for pain (OTC).  
+No prescription or chronic over‑the‑counter medications reported.  
+
+Vital Signs  
+No vital sign measurements documented at this encounter.  
+
+Physical Examination  
+No physical examination findings recorded.  
+
+Laboratory Data (most recent)  
+- White blood cell count: 9.5 × 10³/µL (within normal limits).  
+- Red blood cell count: 3.8 × 10⁶/µL.  
+- Hemoglobin: 16.9 g/dL.  
+- Hematocrit: 47.5 %.  
+- Mean corpuscular volume: 80.6 fL.  
+- Mean corpuscular hemoglobin: 27.1 pg.  
+- Mean corpuscular hemoglobin concentration: 33.4 g/dL.  
+- Red cell distribution width: 14.5 %.  
+- Platelet count: 297 × 10³/µL.  
+- Glucose: 82.8 mg/dL.  
+- Blood urea nitrogen: 10.5 mg/dL.  
+- Creatinine: 0.88 mg/dL (estimated GFR 158 mL/min/1.73 m²).  
+- Electrolytes: Na 142.9 mmol/L, K 3.73 mmol/L, Cl 102.3 mmol/L, CO₂ 23.2 mmol/L.  
+- Calcium: 8.79 mg/dL.  
+- Total protein: 6.86 g/dL.  
+
+Imaging  
+No imaging studies have been performed at this visit.  
+
+Assessment  
+1. Acute chest pain with exertional dyspnea of uncertain etiology. The presentation is concerning for a possible pulmonary embolism, especially in the context of recent major abdominal surgery (hysterectomy) and a modest smoking history.  
+2. Musculoskeletal or pleuritic chest pain secondary to postoperative deconditioning remains a consideration.  
+3. Low‑risk for acute coronary syndrome based on the patient’s description of pain (sharp, pleuritic, no radiation, no associated palpitations or diaphoresis) and lack of cardiac risk factors reported, though the family history of myocardial infarction warrants evaluation.  
+
+Plan  
+Diagnostics  
+- Obtain a D‑dimer assay; if elevated, proceed with computed tomography pulmonary angiography (CTPA) to evaluate for pulmonary embolism.  
+- Perform a 12‑lead electrocardiogram and obtain cardiac enzymes (troponin I/T) to rule out acute coronary syndrome.  
+- Order a chest radiograph to assess for pneumothorax, pneumonia, or other pulmonary pathology.  
+
+Therapeutic  
+- Continue acetaminophen or ibuprofen for pain as needed, ensuring no contraindications.  
+- Encourage the patient to limit physical exertion until the work‑up is completed.  
+- Advise smoking cessation; offer referral to a tobacco‑cessation program.  
+
+Disposition  
+- The patient will remain in the outpatient setting pending test results. If the D‑dimer is positive or if there is clinical deterioration (worsening dyspnea, hypoxia, chest pain, or hemodynamic instability), she will be instructed to seek immediate emergency care.  
+
+Follow‑up  
+- Review laboratory and imaging results within 24–48 hours.  
+- Schedule a follow‑up visit with primary care or the surgical team in 3–5 days to reassess symptoms and discuss results.  
+- Provide education on warning signs that would necessitate urgent evaluation (e.g., sudden worsening shortness of breath, chest pain becoming pressure‑like, syncope, hemoptysis).  
+
+Disposition Instructions  
+- Rest, avoid strenuous activity, maintain adequate hydration.  
+- Continue OTC analgesics as needed, not exceeding recommended daily doses.  
+- Maintain smoking reduction efforts; consider nicotine replacement therapy if appropriate.  
+
+No additional information available.

@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 03:17:08
+Time: 3.04s
+Tokens: 11,076 in / 1,311 out
+============================================================
+
+Patient Information  
+Name: Abe Huels  
+Date of Birth: 09 September 1961 (62 years old)  
+Sex: Male  
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000  
+Insurance: Not specified  
+
+Chief Complaint  
+The patient presents with numbness, tingling, and burning sensation in the left hand, particularly involving the thumb, index, and ring fingers.
+
+History of Present Illness  
+The patient reports a 4–5 month history of intermittent numbness and tingling in the left hand, which has progressively worsened over the last few weeks. Initially, symptoms lasted only a few minutes and were relieved by moving the wrist, but more recently, the patient experiences symptoms at night, occasionally waking them from sleep. The patient describes the discomfort as burning and occasionally painful, with a worst pain rating of 6 on a 0–10 scale. The symptoms are not constant but are frequent enough to interfere with daily activities such as opening jars and car doors. The patient denies weakness, clumsiness beyond occasional dropping of objects, and has no difficulty using the arm.
+
+The patient has not tried topical creams, cold compresses, or splinting. Over-the-counter NSAIDs (Advil, Tylenol) provide minimal relief, primarily by reducing activity rather than pain. There is no history of similar symptoms in other limbs.
+
+Past Medical History  
+The only chronic condition reported by the patient is hypothyroidism, for which they take Synthroid (thyroxine). No history of diabetes, hypertension, chronic kidney disease, or previous surgeries was mentioned in this encounter. The patient is classified as overweight (obesity class I).
+
+Past Surgical History  
+None reported during this encounter.
+
+Medications  
+Synthroid (thyroxine) for hypothyroidism. No other medications were reported by the patient at this time.
+
+Allergies  
+No known drug allergies reported.
+
+Family History  
+Father has high cholesterol. Grandfather suffered a stroke in his 70s. No known family history of autoimmune disease, cancer, or other neurological disorders.
+
+Social History  
+The patient is a current smoker, using 5–10 cigarettes per day for the past 10 years, with occasional attempts to reduce consumption. He consumes wine occasionally on weekends (approximately one drink per week). The patient lives with his husband and two daughters in a house. He is sedentary and has no regular exercise routine. No recreational drug use or marijuana consumption. No recent exposure to illness, travel, or contact with sick individuals.
+
+Review of Systems  
+- Constitutional: No fever, chills, weight loss, or night sweats.  
+- Neurologic: Left hand numbness/tingling; no weakness, clumsiness, or gait disturbances. Negative for headache, dizziness, or visual changes.  
+- Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+- Respiratory: No cough, wheezing, or dyspnea.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or bleeding.  
+- Genitourinary: No urinary symptoms.  
+- Musculoskeletal: No joint pain or swelling other than left hand.  
+- Skin: No rash, lesions, or skin changes.  
+- Psychiatric: PHQ‑2 score of 2; GAD‑7 score of 4 indicating mild anxiety. No reported depression or mood changes.  
+- Endocrine: No symptoms of hyperthyroidism or hypoglycemia.  
+
+Physical Examination  
+General: Alert, oriented, no acute distress.  
+Vital signs: Not recorded in this encounter.  
+Head, Eyes, Ears, Nose, Throat: Normal.  
+Neck: Full range of motion, no tenderness.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Respiratory: Clear to auscultation bilaterally.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities:  
+- Left hand: Slight reduction in muscle bulk near the thumb; no erythema, swelling, or warmth.  
+- Palpation of shoulder, elbow, and wrist: No tenderness or deformity.  
+- No pain elicited with shoulder flexion/extension, elbow flexion/extension, wrist flexion/extension.  
+Neurologic:  
+- Strength: Preserved, patient reports no weakness.  
+- Sensation: Reports numbness and tingling in thumb, index, and ring fingers.  
+- Reflexes: Not documented.  
+Special Tests:  
+- Tinel sign: Positive with tingling in left hand upon tapping the wrist.  
+- Phalen sign: Positive with numbness and tingling after 60 seconds of wrist flexion.  
+
+Assessment  
+Carpal Tunnel Syndrome, left hand, likely secondary to repetitive wrist activity at work, obesity, hypothyroidism, and smoking. The presentation, history, and positive Tinel and Phalen signs are consistent with a median nerve compression. No red flags for acute or emergent pathology.  
+
+Plan  
+1. Conservative Management  
+   - Initiate wrist splint for nighttime use to reduce nocturnal symptoms.  
+   - Recommend ergonomic work modifications: frequent breaks, wrist rest, and avoidance of prolonged wrist flexion.  
+   - Continue current Synthroid therapy; monitor thyroid function as needed.  
+   - Advise use of NSAIDs (e.g., ibuprofen) for pain control if needed.  
+2. Follow‑up  
+   - Return in 4–6 weeks for reassessment of symptom progression and splint efficacy.  
+3. Referrals  
+   - Consider referral to hand specialist if symptoms persist or worsen after conservative measures.  
+4. Lifestyle Counseling  
+   - Provide smoking cessation resources and discuss benefits of reducing tobacco use.  
+   - Encourage gradual increase in physical activity within pain tolerance.  
+5. Screening  
+   - Evaluate fasting glucose and HbA1c at next primary care visit given risk factors (overweight, smoking).  
+   - Reassess blood pressure and lipid profile as routine preventive care.  
+
+Disposition  
+Patient was advised on the plan, expressed understanding, and consented to the proposed management strategy. The patient is scheduled for a follow‑up appointment in approximately one month. No immediate changes to medication or urgent referrals were made.

@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:56:08
+Time: 2.92s
+Tokens: 11,063 in / 1,164 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a 3‑day history of worsening cough, dyspnea, and right‑sided chest pain, accompanied by fever.
+
+History of Present Illness  
+Mr. Schneider reports that approximately three days ago (Monday), he began experiencing a new, productive cough that has increased in frequency and sputum production over the course of the week. He describes the sputum as dark greenish‑yellow. The cough occurs roughly two to three times per hour. Alongside the cough, he has developed a sharp, localized pain on the right side of the chest that worsens with coughing or taking a deep breath. He denies any chest pain during activity. The patient noted that the pain started shortly after the onset of the cough and has not been present in the past. He has been experiencing fever; his temperature was recorded at 38.6 °C (101.5 °F) today. The patient has taken acetaminophen and ibuprofen for mild pain relief, with only transient improvement. He reports no recent travel, no known sick contacts, and no changes in his routine. He has a long history of chronic cough associated with smoking, but notes that this episode is more frequent and productive.
+
+Review of Systems  
+Constitutional: Fever, malaise.  
+Respiratory: Productive cough, dyspnea, sputum production, chest pain with coughing, no wheezing reported by patient.  
+Cardiovascular: No chest pain aside from the right‑sided pain; denies palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Other: No urinary symptoms, no recent weight change, no neurological deficits.
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with metformin, an SGLT2 inhibitor, and insulin. Chronic kidney disease (stage 4) secondary to diabetes, with a history of renal transplant. Hypertension, treated with amlodipine. Ischemic heart disease with prior coronary artery bypass grafting. Chronic bronchitis related to long‑term smoking. No other chronic conditions reported in the transcript.
+
+Surgical History  
+Coronary artery bypass grafting (date not specified). No other surgical procedures reported.
+
+Social History  
+Mr. Schneider is a lifelong smoker, approximately one pack per day for 30 years. He denies alcohol or recreational drug use. He lives with his wife in a town setting and works as a volunteer at a homeless shelter several times per week. He is currently retired and does not engage in regular exercise.
+
+Family History  
+Father had a myocardial infarction in his seventies. Mother had hypertension. No reported family history of lung disease, asthma, or other significant medical conditions.
+
+Current Medications  
+Amlodipine 2.5 mg orally daily. Metformin (dose unspecified). SGLT2 inhibitor (dose unspecified). Insulin (type and dose unspecified). Multivitamin. (Additional medications listed in the electronic record such as albuterol and tacrolimus are not currently reported in the transcript and are therefore not considered part of the active regimen at this time.)
+
+Vital Signs  
+No recent vital sign measurements were documented in the encounter. Temperature was noted as 38.6 °C at the time of assessment. Blood pressure, heart rate, respiratory rate, oxygen saturation, and weight were not recorded.
+
+Physical Examination  
+No physical examination findings were documented for this encounter.
+
+Laboratory Data  
+No laboratory studies were performed or reported during this visit. The most recent laboratory values in the electronic record date to 2011 and are not relevant to the current presentation.
+
+Imaging  
+No imaging studies were obtained during the current encounter.
+
+Assessment  
+The clinical presentation of acute, productive cough with purulent sputum, fever, dyspnea, and right‑sided chest pain that worsens with coughing is most consistent with a diagnosis of community‑acquired pneumonia. The patient’s advanced age, chronic smoking history, diabetes, and chronic kidney disease place him at increased risk for respiratory infection and complications.
+
+Plan  
+- Initiate empiric antibiotic therapy appropriate for community‑acquired pneumonia (e.g., azithromycin 500 mg once daily for 5 days or a respiratory fluoroquinolone, considering renal function).  
+- Begin supplemental oxygen to maintain SpO₂ ≥ 94 %.  
+- Continue current antihypertensive (amlodipine) and antidiabetic (metformin, SGLT2 inhibitor, insulin) regimens, monitoring blood glucose closely.  
+- Pain management with acetaminophen 500 mg every 6 hours as needed, avoiding NSAIDs due to renal impairment.  
+- Counsel on smoking cessation; refer to cessation program.  
+- Monitor temperature, respiratory rate, and oxygen saturation twice daily; obtain repeat chest X‑ray within 48 hours to assess resolution or progression.  
+- Educate the patient on signs of clinical deterioration (increasing shortness of breath, new chest pain, worsening fever) and advise immediate return to care.  
+- Schedule follow‑up in 48–72 hours to reassess clinical status and laboratory parameters, and to review imaging results.  
+
+No additional procedures or specialist referrals are indicated at this time.

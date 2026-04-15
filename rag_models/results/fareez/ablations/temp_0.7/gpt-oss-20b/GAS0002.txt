@@ -1,0 +1,74 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:20:02
+Time: 2.63s
+Tokens: 8,409 in / 1,322 out
+============================================================
+
+Patient Information  
+Agustin McGlynn, 58 years old, male, resident of 266 Heller Park Apt 46, Hingham, Massachusetts 02043.  
+
+Chief Complaint  
+The patient presented to the Emergency Department with a chief complaint of severe, sharp abdominal pain localized to the right upper quadrant.  
+
+History of Present Illness  
+The patient reports that the pain began three days ago shortly after a meal, approximately half an hour to an hour after lunch. The pain has progressively worsened, becoming most intense about three to four hours before arrival. He describes the pain as sharp, localized to the right upper quadrant just below the lung margin, with no radiation. He rates the pain as 8 out of 10 on the pain scale. The pain has been constant and has not improved with over‑the‑counter analgesics such as acetaminophen or ibuprofen. The patient has experienced nausea for several days but has not vomited, and there is no blood in the vomitus, stool, or urine. He denies fever, chills, chest pain, shortness of breath, urinary symptoms, or changes in bowel habits. No skin rashes or discolorations have been noted. Appetite has decreased since the pain began, and the patient has felt drained of energy, especially today.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight changes reported.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest discomfort, palpitations, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea without vomiting, decreased appetite. No diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Skin: No rashes or skin changes.  
+Psychiatric: No anxiety or depression symptoms noted during interview.  
+
+Past Medical History (as per EMR, current status)  
+Chronic kidney disease stage 4, history of kidney transplant with recent graft failure, chronic kidney disease stage 3, chronic kidney disease stage 2, chronic kidney disease stage 1, essential hypertension, diabetes mellitus type 2 (with microalbuminuria and proteinuria), gastroesophageal reflux disease, osteoporosis, spasticity, cerebral palsy, intellectual disability, anemia, and a history of pneumonia. The patient also has a history of excessive salivation and urinary retention.  
+
+Surgical History  
+No prior surgeries reported by the patient; EMR lists no surgical procedures except for childbirth of his children.  
+
+Social History  
+The patient lives with his partner and two children. He reports occasional alcohol consumption, approximately one to two glasses of wine nightly, with no morning drinking and no desire to reduce intake. He denies tobacco use and recreational drug use. He is a consultant at a bank. He has no exercise routine and reports adequate sleep.  
+
+Family History  
+Father deceased from stroke in his 60s. Mother has a history of gallstones. No other significant family history of cardiovascular or gastrointestinal disease noted.  
+
+Medications  
+The patient reports no regular prescription medications. He occasionally uses antacids for heartburn about two times per month, typically after dinner or at night. No known drug allergies.  
+
+Allergies  
+None reported.  
+
+Vital Signs (available)  
+Heart rate 94 beats per minute, respiratory rate 13 breaths per minute. Temperature, blood pressure, oxygen saturation, weight, and height not recorded in the ED encounter.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Results  
+White blood cell count: 7.58 ×10^3/µL (within normal limits).  
+Hemoglobin: 13.58 g/dL; hematocrit: 40.1%; MCV: 94.5 fL; MCH: 28.4 pg; MCHC: 34.2 g/dL; platelet count: 351.7 ×10^3/µL.  
+Serum lipids: total cholesterol 252.4 mg/dL, LDL 168.2 mg/dL, HDL 58.2 mg/dL, triglycerides 130.1 mg/dL.  
+Other labs: GAD‑7 score 2 (minimal anxiety), PHQ‑2 score 0 (no depressive symptoms). No liver function tests, amylase, lipase, or bilirubin values are available from this encounter.  
+
+Imaging  
+No imaging studies were performed during this visit.  
+
+Assessment  
+The patient’s presentation is most consistent with acute right upper quadrant abdominal pain of biliary origin. Differential diagnoses include acute cholecystitis, biliary colic due to gallstones, acute pancreatitis, hepatic abscess, or other hepatobiliary pathology. The absence of fever, leukocytosis, or peritoneal signs makes acute cholecystitis less likely but still possible given the pain characteristics and nausea.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, or pericholecystic fluid.  
+2. Obtain a comprehensive metabolic panel, liver function tests, amylase, and lipase to assess for pancreatitis or hepatic dysfunction.  
+3. Initiate pain control with acetaminophen or a short course of NSAIDs, monitoring for gastrointestinal tolerance.  
+4. Administer an antiemetic (e.g., ondansetron) to address nausea.  
+5. Counsel the patient on dietary modifications: low‑fat, bland diet while pain persists.  
+6. Encourage adequate hydration and rest.  
+7. Arrange follow‑up with gastroenterology or surgery within 24–48 hours depending on imaging and laboratory results.  
+8. Monitor vital signs and pain level closely; if pain worsens, fever develops, or signs of peritonitis appear, consider admission for further evaluation and possible surgical intervention.  
+9. Discuss with the patient the importance of routine monitoring of his chronic kidney disease and transplant status, and ensure continuity of his immunosuppressive therapy as prescribed by his nephrology team.  
+
+The patient was advised to seek immediate medical attention if he develops fever, worsening pain, vomiting, or any new symptoms. He was discharged with instructions to follow up with his primary care provider and specialists as indicated.

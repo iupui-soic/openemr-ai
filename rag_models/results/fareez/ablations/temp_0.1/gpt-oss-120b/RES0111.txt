@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:04:55
+Time: 4.46s
+Tokens: 9,783 in / 1,476 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek  
+Date of Birth: 1950-09-14 (age per EMR) – however, the patient reports being a Grade 10 student, indicating an adolescent age.  
+Sex: Male  
+Address: 318 Fay Ferry, Boston, Massachusetts 02116  
+
+Chief Complaint  
+“Sore throat for the past four days with a feeling of fever.”
+
+History of Present Illness  
+The patient is a teenage male who presents with a four‑day history of a sore throat that has not improved. He reports feeling “really hot” and believes he is developing a fever, although he has not taken his temperature. He can drink liquids without difficulty but finds it painful to eat solid foods. He notes mild hoarseness, which he attributes to speaking less because of throat pain. He denies any sensation of food getting stuck, dysphagia, or odynophagia beyond the pain. He denies cough, runny nose, nasal congestion, sinus pressure, headache, visual or auditory changes, chest pain, shortness of breath, palpitations, abdominal pain, nausea, vomiting, diarrhea, fatigue, or unintentional weight loss. He has not experienced confusion, dizziness, or altered mental status. He reports that his throat appears “pretty swollen and red” on visual inspection. He has not taken any medications other than a daily multivitamin. He has not received the seasonal influenza vaccine this year and has not completed the HPV vaccine series.
+
+Review of Systems  
+Constitutional: Subjective fever, no chills, no night sweats, no weight loss.  
+ENT: Sore throat, mild hoarseness, no cough, no rhinorrhea, no nasal congestion, no ear pain, no sinus pain.  
+Respiratory: No dyspnea, no cough, no wheezing.  
+Cardiovascular: No chest pain, no palpitations, heart rate noted as 97 bpm.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, no hematuria.  
+Neurologic: No headache, no dizziness, no confusion.  
+Psychiatric: No depression or anxiety reported.  
+Skin: No rash.  
+
+Allergies  
+No information available.
+
+Past Medical History  
+The patient reports no chronic medical conditions. He does recall an appendectomy performed at age 13.  
+
+Surgical History  
+Appendectomy – age 13 (reported by patient).  
+
+Social History  
+The patient lives with his parents and two siblings and feels safe at home. He is currently a Grade 10 student, attending school part in‑person and part virtually. He reports adherence to mask‑wearing and social distancing at school, with occasional removal for drinking water. He denies tobacco, alcohol, or recreational drug use. He is not currently sexually active and does not anticipate sexual activity before completing high school. He reports no bullying, no concerns for depression or anxiety, and no recent travel.  
+
+Family History  
+The patient reports no known family history of medical illness, although he mentions a possible family history of high blood pressure.  
+
+Current Medications  
+Multivitamin – daily. No prescription or over‑the‑counter medications reported.  
+
+Immunizations  
+Up‑to‑date except for HPV vaccine (not yet received) and seasonal influenza vaccine (not received this year).  
+
+Vital Signs (recorded at the encounter)  
+Heart Rate: 97 beats/minute  
+Respiratory Rate: 15 breaths/minute  
+Temperature: Not recorded (patient reports feeling hot)  
+Blood Pressure: Not recorded  
+SpO₂: Not recorded  
+Weight/Height: Not recorded  
+
+Physical Examination  
+General: Appears mildly ill, in no acute distress.  
+HEENT: Oropharynx shows marked erythema and swelling of the tonsillar tissue; no exudates noted. No cervical lymphadenopathy reported. Nasal mucosa clear, no rhinorrhea. No ear abnormalities.  
+Neck: No tracheal deviation, no palpable lymphadenopathy noted.  
+Lungs: Clear to auscultation bilaterally, no wheezes or crackles.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No edema.  
+Neurologic: Alert and oriented, cranial nerves grossly intact.  
+
+Laboratory and Diagnostic Studies  
+- Rapid streptococcal antigen test: pending.  
+- SARS‑CoV‑2 rapid antigen test: pending.  
+- No other laboratory studies performed during this visit.  
+(Recent chronic laboratory values from the EMR are listed but are not pertinent to the current acute presentation.)
+
+Assessment  
+1. Acute pharyngitis – likely viral etiology, but bacterial (Group A Streptococcus) cannot be excluded pending rapid strep result.  
+2. Possible COVID‑19 infection – symptoms overlap; test pending.  
+3. Incomplete immunization status – HPV vaccine pending, influenza vaccine not received this season.  
+
+Plan  
+Diagnostics  
+- Perform rapid streptococcal antigen test now; if positive, initiate appropriate antibiotic therapy.  
+- Perform rapid SARS‑CoV‑2 antigen test; advise patient to self‑isolate until results are available and symptoms improve.  
+
+Therapeutic  
+- Symptomatic care: Acetaminophen 500 mg PO q6‑8 hours as needed for fever or throat pain, not to exceed 3 g per day.  
+- Encourage adequate hydration and soft, cool foods; advise against irritants such as hot, spicy, or acidic foods.  
+- If rapid strep test is positive, prescribe Penicillin V 500 mg PO twice daily for 10 days (or appropriate macrolide if penicillin allergic).  
+- If COVID‑19 test is positive, follow local public health guidelines for isolation and monitor for worsening respiratory symptoms.  
+
+Immunizations  
+- Counsel patient and parents on the importance of completing the HPV vaccine series; schedule HPV vaccination at the earliest opportunity.  
+- Offer seasonal influenza vaccine today; administer if patient consents.  
+
+Education and Disposition  
+- Discuss signs of worsening infection (increasing fever, difficulty breathing, inability to swallow fluids, rash, or severe neck swelling) and advise immediate medical attention if they develop.  
+- Instruct patient to remain home and avoid school or public places until COVID‑19 test results are negative and fever has resolved for at least 24 hours without antipyretics.  
+- Provide written instructions on medication dosing, hydration, and activity restrictions.  
+
+Follow‑up  
+- Telephone follow‑up in 48 hours to review rapid test results and symptom progression.  
+- In‑person follow‑up in 5‑7 days or sooner if symptoms worsen.  
+
+Disposition  
+Patient was discharged home in stable condition after counseling and pending test orders. No further inpatient care required.

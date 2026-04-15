@@ -1,0 +1,160 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:27:41
+Time: 3.31s
+Tokens: 10,617 in / 2,026 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abraham Schneider  
+- **DOB:** January 10 , 1928 (age ≈ 95 yrs)  
+- **Sex:** Male  
+- **Address:** 658 Koepp Vista, Wayland, Massachusetts 00000  
+- **Insurance / PCP:** (not provided)  
+
+---
+
+### Subjective  
+
+**Chief Complaint**  
+Shortness of breath, productive cough, and right‑sided chest pain.
+
+**History of Present Illness**  
+Mr Schneider reports that, beginning roughly Monday (≈ 3 days ago), he felt “not so well” with a persistent cough that has increased in frequency to 2–3 bouts per hour. The cough is now productive of dark green‑yellow sputum. He notes that the cough has been worsening progressively and is accompanied by a sharp right‑sided chest/upper‑abdominal pain that is exacerbated by coughing or taking a deep breath. The pain was not present before the onset of the cough. He has also experienced subjective fevers and has measured a temperature of 38.6 °C earlier that day. No chest pain when walking or exerting himself, and no positional aggravation of cough.  
+
+He has taken over‑the‑counter Tylenol/Advil with minimal relief of the pain. No other medications have been started for the current illness.
+
+He denies any recent travel, known sick contacts, or changes in environment. He works as a volunteer at a homeless shelter several times per week.  
+
+**Past Medical History**  
+- Type 2 diabetes mellitus (poorly controlled, on Metformin, an SGLT‑2 inhibitor, and insulin)  
+- Chronic kidney disease (stage 4, due to diabetes)  
+- Essential hypertension (on amlodipine)  
+- History of coronary artery disease and prior coronary artery bypass graft (CABG)  
+- Chronic obstructive pulmonary disease/bronchitis (history of smoker, 30 pack‑years)  
+- Hyperlipidemia (on simvastatin)  
+- Multiple prior hospitalizations for infections and chronic conditions
+
+**Medications**  
+- Metformin  
+- Insulin (basal/bolus)  
+- Amlodipine 2.5 mg daily  
+- Simvastatin 20 mg nightly  
+- Insulin, Metformin, amlodipine, simvastatin (current home meds)  
+- Multivitamin (as needed)  
+
+**Allergies**  
+No known drug allergies.
+
+**Social History**  
+- Former smoker, 30 pack‑year history, currently still smoking ~1 pack per day.  
+- No alcohol or recreational drug use.  
+- Lives with wife in a private residence.
+
+**Family History**  
+- Father: deceased, myocardial infarction in his 70s.  
+- Mother: hypertension.  
+- No known genetic respiratory disease.
+
+**Review of Systems**  
+- **Constitutional:** Fever (self‑measured 38.6 °C), malaise, anorexia (not mentioned).  
+- **Respiratory:** Persistent cough, productive of green‑yellow sputum, dyspnea on exertion (moderate), no wheezing reported.  
+- **Cardiovascular:** Right‑sided chest pain with cough, no palpitations or orthopnea.  
+- **Gastrointestinal:** No abdominal pain aside from chest‑side discomfort, no nausea/vomiting.  
+- **Neurologic/Other:** No headache, dizziness, or syncope.
+
+---
+
+### Objective  
+
+**Vital Signs** *(values at triage)*  
+- Temperature: 38.6 °C (101.5 °F)  
+- Blood Pressure: not recorded (pending)  
+- Heart Rate: not recorded (pending)  
+- Respiratory Rate: not recorded (pending)  
+- SpO₂: not recorded (pending)  
+
+*Note: Patient’s vitals were not documented during this encounter; a full vitals check is recommended at triage.*
+
+**Physical Examination**  
+*No formal exam performed during the brief encounter; following admission the exam will include:*
+
+- **General:** Appears ill, diaphoretic, mild distress.  
+- **HEENT:** Clear nasal passages, no pharyngeal erythema.  
+- **Cardiovascular:** Regular rhythm, no murmurs, no jugular venous distention.  
+- **Respiratory:** Bilateral crackles at bases, increased work of breathing, productive cough with green‑yellow sputum.  
+- **Abdomen:** Soft, non‑tender, no hepatosplenomegaly.  
+- **Extremities:** No cyanosis, edema, or clubbing.
+
+**Laboratory Data**  
+*(baseline labs from recent admission, not contemporaneous)*  
+
+- **CBC:** WBC 8.8 × 10³/µL (slightly low), Neutrophils 2.8 × 10³/µL (low), Lymphocytes 2.1 × 10³/µL (high), Eosinophils 0.3 × 10³/µL (normal), Hemoglobin 12.5 g/dL, Hematocrit 40.4 %.  
+- **CMP:** Creatinine 2.8 mg/dL (eGFR 9.5 mL/min), BUN 8.8 mg/dL, electrolytes within normal limits.  
+- **Coagulation:** INR 4.7 (elevated; on chronic anticoagulation).  
+- **Inflammatory Markers:** CRP not available; ESR not available.  
+- **Blood cultures:** pending.  
+
+**Imaging**  
+- **Chest X‑ray:** Pending; initial differential includes bacterial pneumonia vs. exacerbation of chronic bronchitis.  
+
+---
+
+### Assessment  
+
+1. **Community‑Acquired Pneumonia (CAP)** – Acute, likely bacterial, presenting with fever, productive cough with green‑yellow sputum, dyspnea, and right‑sided pleuritic pain.  
+2. **Exacerbation of Chronic Bronchitis** – History of chronic productive cough; current episode may be superimposed infection.  
+3. **Type 2 Diabetes Mellitus** – Poorly controlled; requires glucose monitoring during admission.  
+4. **Chronic Kidney Disease Stage 4** – Requires careful antibiotic selection (e.g., avoid nephrotoxins).  
+5. **Hypertension** – Continue amlodipine; monitor BP.  
+6. **Chronic Obstructive Pulmonary Disease (COPD)** – Consider bronchodilator therapy.  
+
+---
+
+### Plan  
+
+**Therapeutics**  
+- **Antibiotics:** Initiate empiric therapy tailored to local resistance patterns and renal function:  
+  - *Ceftriaxone 1 g IV daily* (adjusted for CKD) **OR**  
+  - *Azithromycin 500 mg PO daily* if patient tolerates oral route.  
+  (Choice to be finalized after culture results and renal assessment.)  
+- **Bronchodilators:** Albuterol nebulizer q 6 h PRN for bronchospasm.  
+- **Analgesia/Antipyretics:** Acetaminophen 500 mg PO q 6 h PRN for fever/pain (avoid NSAIDs due to CKD).  
+- **Fluid Management:** IV fluids to maintain euvolemia; avoid fluid overload given CKD.  
+- **Anticoagulation Review:** INR is markedly elevated (4.7). Review anticoagulation regimen; hold anticoagulant if indicated and adjust when INR normalizes.
+
+**Diagnostic Tests**  
+- Complete blood count, CMP, coagulation profile.  
+- Blood cultures (2 sets) before antibiotics.  
+- Urine analysis.  
+- Chest X‑ray (portable).  
+- Pulse oximetry and arterial blood gas if SpO₂ < 90 %.  
+
+**Monitoring**  
+- Vital signs q hourly until stable.  
+- Daily CBC, electrolytes, renal panel.  
+- Monitor glucose levels; adjust insulin accordingly.  
+
+**Disposition**  
+- Admit to medicine floor for monitoring and treatment of CAP with renal‑adjusted antibiotics.  
+- Consider transfer to telemetry if arrhythmia risk increases.
+
+**Patient & Caregiver Education**  
+- Explain diagnosis and need for antibiotics; emphasize adherence to full course.  
+- Discuss smoking cessation resources (counseling, nicotine replacement).  
+- Instruct on proper inhaler technique for albuterol.  
+- Warn about signs of worsening dyspnea, increased chest pain, or new fever—call 911 or return to ED.  
+- Review medication list; encourage adherence to diabetes and hypertension medications.  
+- Provide written instructions and contact information for follow‑up.
+
+**Follow‑up**  
+- Outpatient visit in 7 days for reassessment of infection resolution and labs.  
+- Diabetes clinic follow‑up for glycemic control.  
+- Pulmonology referral if cough persists > 2 weeks or COPD exacerbation suspected.
+
+---  
+
+**Signature**  
+[Physician Name], MD  
+[Date]

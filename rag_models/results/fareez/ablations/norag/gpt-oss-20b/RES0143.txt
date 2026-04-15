@@ -1,0 +1,58 @@
+Model: openai/gpt-oss-20b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 03:16:48
+Time: 2.04s
+Tokens: 5,545 in / 709 out
+============================================================
+
+Patient Information  
+Name: Not disclosed in the encounter record.  
+Date of Birth: No information available.  
+Sex: Male.  
+Address: No information available.
+
+Chief Complaint  
+The patient presents with a dry cough lasting two weeks and a clear, nasal discharge that began one week ago.
+
+History of Present Illness  
+The patient reports the onset of a dry cough two weeks prior to presentation. The cough was most severe the previous week but has somewhat improved, though it persists. One week into the illness, the patient developed a clear, watery nasal discharge. The patient has experienced mild chills on two nights during the first week but denies fever, chills, night sweats, chest pain, shortness of breath, or respiratory distress. There have been no episodes of blood in sputum, sore throat, headache, visual changes, or taste disturbances. The patient reports feeling congested occasionally. No associated systemic symptoms such as nausea, vomiting, abdominal pain, diarrhea, constipation, or significant weight loss have been reported.
+
+Past Medical History  
+The patient reports no chronic medical conditions, past surgeries, or significant illnesses. No known drug allergies.
+
+Social History  
+The patient is a university student, usually residing in a dormitory but currently staying at home with parents for virtual learning. He has experimented with smoking cigarettes a few times but does not use tobacco regularly. The patient has also tried marijuana a handful of times. He consumes alcohol socially on weekends. No use of recreational drugs is reported. The patient denies regular medication use and does not take any over‑the‑counter drugs or supplements.
+
+Family History  
+Father has a history of high cholesterol.
+
+Review of Systems  
+General: No fever, chills (except for two nights), night sweats, weight change.  
+HEENT: Clear nasal discharge, congestion, no sore throat, no ear pain, no visual changes, no olfactory impairment.  
+Cardiovascular: No chest pain, palpitations, or tachycardia.  
+Respiratory: Dry cough, no dyspnea or wheeze.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea, or constipation.  
+Musculoskeletal: No muscle aches or weakness.  
+Neurologic: No numbness, tingling, or neurological deficits.  
+Skin: No rash or itching.  
+Psychiatric: No mood changes reported.
+
+Physical Examination  
+No physical examination findings were documented in this encounter. The provider indicated that a future examination would be performed.
+
+Assessment  
+Acute viral upper respiratory infection, likely a common cold, with no evidence of bacterial superinfection. Potential COVID‑19 infection cannot be excluded; a SARS‑CoV‑2 test is indicated to rule out viral transmission.
+
+Plan  
+1. Obtain a SARS‑CoV‑2 nucleic acid amplification test (swab).  
+2. Advise strict self‑isolation at home, avoiding contact with family members until test results are received.  
+3. Monitor symptoms; if cough worsens, fever develops, or new respiratory symptoms appear, seek urgent medical care.  
+4. Symptomatic treatment: recommend over‑the‑counter antitussives and saline nasal irrigation for congestion.  
+5. No antibiotics indicated at this time.  
+6. Follow up with primary care provider if symptoms persist beyond 10 days or worsen.  
+7. No laboratory studies or imaging are currently ordered.
+
+No medication prescription was made during this encounter.
+
+End of summary.

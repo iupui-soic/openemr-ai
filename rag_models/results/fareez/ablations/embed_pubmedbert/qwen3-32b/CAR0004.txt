@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:03:18
+Time: 3.19s
+Tokens: 9,040 in / 907 out
+============================================================
+
+Patient Information  
+A 25-year-old female, Aileen Vi Rempel, presents to the clinic with a chief complaint of sharp chest pain. She is a student at Western University studying engineering and works part-time as a postman. She resides with her mother in a house. She denies any tobacco, alcohol, or recreational drug use. Her father recently passed away from a heart attack two weeks ago, which has caused her significant concern about her own cardiac health.
+
+Chief Complaint  
+The patient reports experiencing sharp chest pain over the past three days. The pain is localized over the heart and is described as sharp, lasting only a few seconds before resolving. The pain is exacerbated by coughing and lying down but improves when she leans forward. She rates the pain as a 6 out of 10 in intensity. She occasionally experiences radiation of the pain to her neck but denies any other associated symptoms such as shortness of breath, dizziness, palpitations, weakness, or numbness.
+
+History of Present Illness  
+The patient first noticed the chest pain three days ago. It occurs in brief episodes and is not constant. It is not associated with physical activity, but is worsened by coughing and lying down. The pain is relieved by leaning forward. She has taken Tylenol once for the pain, which provided some relief. She denies any recent injuries to the chest area. She had a recent viral illness with symptoms of fever, runny nose, and cough, but is now feeling better. She has no other symptoms at this time.
+
+Review of Systems  
+Constitutional: No fever, chills, or unintentional weight loss.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Cardiovascular: No chest pressure, syncope, or palpitations.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No dizziness or headaches.  
+Musculoskeletal: No joint pain or muscle aches.  
+Other: No rash, visual changes, or other new symptoms.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient reports no prior medical conditions and considers herself to be in good health. She has no history of diabetes, hypertension, or other chronic illnesses.
+
+Surgical History  
+No prior surgeries.
+
+Social History  
+The patient is a non-smoker, non-drinker, and does not use recreational drugs. She is currently a student and works part-time as a postman.
+
+Family History  
+The patient reports a family history of heart disease, as her father passed away from a heart attack two weeks ago. There is no known family history of cancer or other significant medical conditions.
+
+Current Medications  
+The patient occasionally uses acetaminophen (Tylenol) for pain relief.
+
+Objective  
+Vital signs were not available in the electronic health record. Physical examination findings were not documented in the provided data. No specific physical findings were reported during the visit.
+
+Labs  
+No recent laboratory results were provided for this encounter.
+
+Imaging  
+No imaging studies were performed or documented at this time.
+
+Assessment  
+Given the patient's concern for a possible heart attack, especially in the context of a recent family history of cardiac events, the sharp, positional nature of the chest pain, and the absence of typical cardiac symptoms such as pressure or radiation to the arm, a cardiac cause is considered less likely. The pain pattern is more consistent with a musculoskeletal or pleuritic origin. The patient's recent viral illness may also be a contributing factor, as pleuritis or pericarditis can follow viral infections. However, given the patient's age, lack of risk factors, and the absence of red flags for acute coronary syndrome, the concern for a heart attack is low. Nevertheless, the patient's anxiety and family history warrant further evaluation to rule out any life-threatening conditions.
+
+Plan  
+The patient will undergo an electrocardiogram (ECG) to assess for any cardiac abnormalities. Blood work will be obtained to evaluate for signs of infection or inflammation. She will be advised to avoid activities that exacerbate the pain and to continue using acetaminophen as needed for pain relief. The patient will be reassured that while her symptoms are concerning, they are likely not life-threatening. Follow-up will be arranged to review test results and provide further guidance. The patient will be advised to return immediately if she experiences worsening symptoms, chest pain at rest, or any new symptoms.

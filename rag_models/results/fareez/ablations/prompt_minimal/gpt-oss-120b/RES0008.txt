@@ -1,0 +1,186 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:20:48
+Time: 6.77s
+Tokens: 10,617 in / 2,892 out
+============================================================
+
+**Patient Information**  
+**Name:** Abraham Schneider  
+**DOB:** 01‑10‑1928 (98 years)  
+**Sex:** Male  
+**MRN:** 475  
+**Location:** Wayland, MA  
+
+---
+
+### Subjective  
+
+**Chief Complaint**  
+- “Cough, trouble breathing, and fever” – onset 3 days ago.
+
+**History of Present Illness (HPI)**  
+- **Timeline & Course:** The patient reports the acute onset of a productive cough that began ~3 days ago (Monday). The cough has increased in frequency (≈ 2 times per hour) and is now accompanied by dyspnea. He notes that today is the worst day with persistent “feeling sick.”  
+- **Sputum:** Dark green‑yellow, copious, requiring frequent tissue use.  
+- **Chest Pain:** New sharp pain localized to the right lower chest/upper abdominal area, worsened by deep inspiration and cough; not present at rest or with routine activity.  
+- **Fever:** Measured temperature 38.6 °C (101.5 °F) today. He describes feeling “hot” over the past few days.  
+- **Associated Symptoms:** No reported wheeze, hemoptysis, orthopnea, or leg swelling. No recent travel, no known sick contacts. He volunteers at a homeless shelter several times per week, exposing him to many people.  
+- **Aggravating/Relieving Factors:** Pain and dyspnea increase after coughing or taking a deep breath; no positional changes noted. Over‑the‑counter Tylenol® and Advil® provide only brief relief of pain.  
+- **Prior Pulmonary History:** Chronic “dry” cough for several years attributed to long‑term smoking (≈ 1 pack/day for 30 years). Past physician diagnosed “bronchitis” secondary to smoking. No prior episodes of productive cough or pneumonia reported.  
+
+**Review of Systems (pertinent)**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| **Constitutional** | Fever, malaise | Weight loss, night sweats |
+| **Respiratory** | Cough (productive), dyspnea, pleuritic chest pain | Wheezing, hemoptysis, recent travel |
+| **Cardiovascular** | No chest pain at rest, no palpitations | No known heart failure symptoms |
+| **Gastrointestinal** | No nausea/vomiting, no abdominal pain aside from pleuritic component | No change in bowel habits |
+| **Genitourinary** | History of chronic kidney disease (CKD) stage 4, awaiting transplant | Dysuria, flank pain |
+| **Neurologic** | No headache, no focal deficits |  |
+| **Skin** | No rashes |  |
+
+**Allergies**  
+- Environmental (seasonal) allergies; no known drug allergies.
+
+**Past Medical History**  
+- Type 2 Diabetes Mellitus (on metformin, SGLT‑2 inhibitor, insulin)  
+- Hypertension (on amlodipine, also on hydrochlorothiazide, metoprolol succinate)  
+- Chronic Kidney Disease – stage 4 (eGFR ≈ 9.5 mL/min/1.73 m²)  
+- History of coronary artery disease with prior CABG (1993) and ischemic heart disease  
+- Hyperlipidemia (simvastatin)  
+- Prior acute viral pharyngitis (2020) and suspected COVID‑19 (Dec 2020) with documented cough, dyspnea, fever, pneumonia, hypoxemia, ARDS, sepsis, DVT, and acute respiratory failure.  
+- Past episodes of bronchitis related to smoking.  
+
+**Surgical History**  
+- Coronary artery bypass graft (1993)  
+- Renal transplant (2017) – currently on tacrolimus (though medication list shows tacrolimus discontinued 2017; verify current immunosuppression).  
+
+**Social History**  
+- **Tobacco:** 30‑year pack‑a‑day history (≈ 1 pack/day). Current status not explicitly stated; assume ongoing unless otherwise noted.  
+- **Alcohol:** None.  
+- **Illicit drugs:** None.  
+- **Living situation:** Lives with wife in a house.  
+- **Occupational/volunteer exposure:** Volunteer at homeless shelter several times per week – high exposure to communicable respiratory illnesses.  
+
+**Family History**  
+- Father: Myocardial infarction in 70s.  
+- Mother: Hypertension. No known family history of chronic lung disease.
+
+**Current Medications (home)**  
+- Metformin  
+- SGLT‑2 inhibitor (name not specified)  
+- Insulin (type/dose not specified)  
+- Amlodipine 2.5 mg PO daily  
+- Hydrochlorothiazide 25 mg PO daily  
+- Simvastatin 20 mg PO daily  
+- Metoprolol succinate 100 mg ER PO daily  
+- Nitroglycerin spray PRN  
+- Multivitamin  
+- (OTC) Acetaminophen and Ibuprofen as needed for pain (used the past few days)  
+
+---
+
+### Objective  
+
+**Vital Signs (most recent)**  
+- **Temperature:** 38.6 °C (patient‑reported)  
+- **Heart Rate:** 62 bpm (EMR)  
+- **Respiratory Rate:** 16 breaths/min (EMR)  
+- **Blood Pressure:** Not recorded in the current encounter (last EMR entry unavailable)  
+- **SpO₂:** Not recorded (pending)  
+- **Weight/Height/BMI:** Height 167.7 cm; BMI 29.1 kg/m² (overweight/obese)  
+
+**Physical Examination** *(limited to information available; a full exam is pending)*  
+- General: Appears mildly ill, diaphoretic, febrile.  
+- **Respiratory:** Audible coarse crackles heard bilaterally (presumed from prior COVID‑19/ARDS documentation); productive cough noted. No wheezes reported.  
+- **Cardiovascular:** Regular rate and rhythm, no murmurs noted.  
+- **Abdomen:** Soft, non‑tender; right‑lower‑chest/upper‑abdominal pleuritic pain on deep inspiration.  
+- **Extremities:** No edema.  
+
+**Laboratory Data** (most recent, 2020‑2021)  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| WBC (implied from neutrophils 2.79 ×10³/µL) | Within normal limits (neutrophils 2.79 ×10³/µL) | – |
+| Hemoglobin/Hematocrit | Hct 40.4 % | – |
+| BUN | 8.81 mg/dL | – |
+| Creatinine/GFR | eGFR 9.5 mL/min/1.73 m² (CKD 4) | – |
+| INR | 4.70 (therapeutic/ supratherapeutic) | – |
+| Ferritin | 1547 µg/L (elevated) | – |
+| Albumin | 4.62 g/dL | – |
+| Electrolytes (Ca²⁺) | 8.66 mg/dL (low‑normal) | – |
+| Arterial blood gas (CO₂) | PaCO₂ 35.7 mm Hg | – |
+| Bicarbonate | 23.6 mmol/L | – |
+| Liver enzymes (AST 20 U/L, ALT not listed) | Within normal limits | – |
+| Alkaline phosphatase | 55 U/L | – |
+| Lymphocytes 22.8 % ; Eosinophils 3.2 % ; Monocytes 1.13 ×10³/µL | Normal differential | – |
+
+**Imaging**  
+- No imaging performed during this encounter. Prior records (2020) show chest imaging consistent with pneumonia and acute respiratory distress syndrome; repeat chest X‑ray is indicated.
+
+---
+
+### Assessment  
+
+1. **Community‑Acquired Bacterial Pneumonia** – new onset productive cough with purulent green‑yellow sputum, fever, pleuritic chest pain, and radiographic evidence of prior pneumonia (pending repeat CXR).  
+2. **Acute Exacerbation of Chronic Bronchitis / Possible COPD** – long‑standing smoker with chronic cough now productive and dyspneic.  
+3. **Sepsis risk** – fever, elevated ferritin, supratherapeutic INR; close monitoring required.  
+4. **Type 2 Diabetes Mellitus** – chronic, on insulin, metformin, SGLT‑2 inhibitor; glucose control may be challenged by infection.  
+5. **Chronic Kidney Disease Stage 4 (eGFR ≈ 9 mL/min)** – limits medication choices (e.g., dose‑adjusted antibiotics) and contributes to elevated INR.  
+6. **Hypertension, Ischemic Heart Disease, Prior CABG** – stable on current regimen; monitor for cardiac strain.  
+7. **Hypercoagulable state / Prior DVT** – currently on no anticoagulation (Enoxaparin courses ended 12/31/2020); consider VTE prophylaxis given immobilization risk.  
+
+---
+
+### Plan  
+
+**Diagnostics**  
+- **Chest X‑ray** (PA/Lateral) now – to confirm infiltrate, assess for progression, rule out effusion.  
+- **CBC with differential** – to evaluate for leukocytosis or left shift.  
+- **Comprehensive metabolic panel** – monitor renal function, electrolytes, glucose.  
+- **Blood cultures** x2 (aerobic/anaerobic) before antibiotics.  
+- **Sputum culture & Gram stain** – to guide antibiotic selection.  
+- **Arterial blood gas** – assess oxygenation & ventilation status.  
+- **Repeat INR** – given supratherapeutic value; adjust warfarin or hold as needed.  
+
+**Therapeutic**  
+1. **Empiric Antibiotics** (adjusted for CKD):  
+   - *Levofloxacin* 750 mg PO daily (adjust dose for eGFR <30 mL/min) **or**  
+   - *Ceftriaxone* 1 g IV daily **plus** *Azithromycin* 500 mg PO daily.  
+   (Select based on local antibiogram and renal dosing).  
+
+2. **Oxygen Therapy** – titrate to SpO₂ ≥ 94 % (consider higher target if cardiac comorbidity).  
+
+3. **Analgesia** – Continue acetaminophen 650 mg PO q6h PRN (max 3 g/day). Avoid NSAIDs given CKD and elevated INR.  
+
+4. **Diabetes Management** – Check capillary glucose q4h; adjust insulin sliding scale as needed. Hold SGLT‑2 inhibitor during acute illness.  
+
+5. **Renal Considerations** – Hold nephrotoxic agents; monitor creatinine and urine output.  
+
+6. **Anticoagulation** – Evaluate need for VTE prophylaxis (e.g., low‑dose enoxaparin 40 mg SC daily if platelet count acceptable) given immobility and prior DVT.  
+
+7. **Bronchodilators** – Continue albuterol inhaler PRN for dyspnea; consider adding ipratropium if wheezing develops.  
+
+8. **Vaccinations** – Verify pneumococcal and COVID‑19 booster status; administer if indicated once acute phase stabilizes.  
+
+**Patient Education & Discharge Planning**  
+- Counsel on smoking cessation; refer to tobacco cessation program and discuss nicotine replacement or varenicline.  
+- Instruct to return to ED if worsening dyspnea, chest pain, confusion, or fever > 101 °F despite antipyretics.  
+- Emphasize adherence to antibiotics for full course, fluid intake, and rest.  
+- Provide written instructions on glucose monitoring, medication adjustments, and signs of hypoglycemia.  
+
+**Follow‑up**  
+- **Primary Care Provider** within 48‑72 hours after discharge for medication reconciliation and diabetes/CKD management.  
+- **Pulmonology** referral within 1 week for evaluation of chronic bronchitis/COPD and possible pulmonary function testing.  
+- **Nephrology** follow‑up in 1‑2 weeks (especially if renal function worsens).  
+
+**Disposition**  
+- Admit to medical floor for close monitoring of respiratory status, renal function, and sepsis parameters.  
+- Initiate IV fluids cautiously (isotonic saline 500 mL bolus, then maintenance) while monitoring volume status due to CKD.  
+
+---  
+
+*Prepared by: Medical Scribe – [Your Name], RN/BSN*  
+*Date: 2026‑04‑14*

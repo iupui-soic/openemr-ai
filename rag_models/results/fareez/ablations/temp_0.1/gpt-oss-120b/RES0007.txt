@@ -1,0 +1,115 @@
+Model: openai/gpt-oss-120b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 04:03:43
+Time: 6.08s
+Tokens: 7,698 in / 1,879 out
+============================================================
+
+Patient Information  
+Name: Abby Ondricka  
+Date of Birth: 2003-01-16 (Age 23)  
+Sex: Female  
+Address: 564 Breitenberg View, Westfield, Massachusetts 01086  
+Medical Record Number: 145  
+
+Chief Complaint  
+Follow‑up visit for asthma management, clarification of inhaler regimen, and discussion of fitness for military service.
+
+History of Present Illness  
+Abby reports that a few months ago she was informed during a routine office visit that her childhood asthma had returned. Since that time she has experienced shortness of breath and a sensation of “can’t breathe” when she attempts to run fast during gym class. The dyspnea resolves within a few minutes after she stops activity. She also notes chest tightness and difficulty breathing when she is outside in very cold weather and when she is exposed to cats; at a friend’s house with multiple cats she heard a wheezy sound and required a longer period to recover after leaving the environment. She denies a cough, nighttime symptoms, or any recent infections. She uses an inhaler prescribed at the prior visit, but is uncertain about the dosing schedule. She believes she should use the inhaler that begins with the letter “s” (fluticasone) twice daily, but sometimes only takes one dose if she forgets. She also has a rescue inhaler (albuterol) that she uses during gym class. She has no other chronic medications aside from a daily vitamin and an antihistamine (fexofenadine) listed in her record. She is concerned whether her asthma will preclude her from joining the Marine Corps.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight loss, or fatigue reported.  
+Respiratory: Positive for exertional dyspnea, cold‑induced chest tightness, and wheeze with cat exposure. No cough, sputum production, or nocturnal symptoms.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel changes.  
+Genitourinary: No dysuria, frequency, or incontinence.  
+Allergic/Immunologic: Seasonal allergic rhinitis in spring (runny, itchy eyes); possible cat allergy; no current skin rash.  
+Neurologic: No headaches, dizziness, or weakness.  
+Psychiatric: No depression, anxiety, or suicidal ideation (PHQ‑2 score 0–2, GAD‑7 score 1–2).  
+Social: Occasional beer consumption at weekend parties; denies tobacco, e‑cigarettes, or illicit drug use.  
+
+Allergies  
+Environmental: Mold, house dust mite, animal dander, grass pollen, tree pollen, wheat, tree nut (all listed as mild severity).  
+Medication: No known drug allergies.  
+Reported possible cat allergy based on recent wheezing episode.  
+
+Past Medical History  
+- Childhood asthma (re‑emergent as of 2024)  
+- Atopic dermatitis (resolved 2021)  
+- Perennial allergic rhinitis (resolved 2022)  
+- Multiple episodes of acute bronchitis (2016, 2021)  
+- Viral sinusitis (2019, 2023)  
+- Acute viral pharyngitis (2016)  
+- Acute infective cystitis (2018)  
+- Broken left leg (remote, years ago)  
+- Wisdom teeth extraction (date not specified)  
+
+Surgical History  
+- Extraction of wisdom teeth  
+
+Social History  
+Residence: Lives with mother, father, and younger brother.  
+Education: Currently a high‑school junior (Grade 11) at a local high school.  
+Exercise: Participates in school gym class; symptoms precipitated by vigorous running.  
+Diet: Typical meals consisting of cereal for breakfast, sandwich with ham and cheese for lunch, and a balanced dinner of meat, potatoes, and vegetables.  
+Sexual Activity: Sexually active with one girlfriend; reports consistent condom use.  
+Substance Use: No tobacco or recreational drug use; occasional alcohol (beer) at social events.  
+
+Family History  
+Father: History of asthma in childhood (now resolved) and seasonal allergic rhinitis in spring.  
+Mother, siblings: No reported chronic illnesses.  
+
+Current Medications (home)  
+- Fluticasone propionate inhaler (120 ACTUAT, Flovent) – intended twice daily, patient reports variable use.  
+- Albuterol inhalation solution (rescue) – used as needed, especially before exercise.  
+- Fexofenadine hydrochloride 30 mg tablet – daily antihistamine.  
+- Epinephrine auto‑injector (0.3 mg/0.3 mL) – for anaphylaxis.  
+- Multivitamin (unspecified).  
+
+Vital Signs (most recent documented)  
+Heart Rate: 99 beats/min  
+Respiratory Rate: 13 breaths/min  
+Height: 162 cm  
+Weight: Not recorded  
+Body Mass Index: 17.95 (underweight)  
+Blood Pressure: Not recorded  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+
+Physical Examination  
+No information available.  
+
+Laboratory Data  
+Complete blood count performed on 2024‑04‑05 shows:  
+- Hemoglobin 13.66 g/dL (within normal limits)  
+- Hematocrit 45.2 % (normal)  
+- White blood cell count 5.63 ×10³/µL (normal)  
+- Platelet count 186.9 ×10³/µL (normal)  
+- Mean corpuscular volume 83.8 fL (normal)  
+- Mean corpuscular hemoglobin 31.1 pg (normal)  
+- Mean corpuscular hemoglobin concentration 35.6 g/dL (normal)  
+- Red cell distribution width 45.6 fL (within laboratory reference)  
+
+Mental health screening: PHQ‑2 total score 0–2 (negative), GAD‑7 total score 1–2 (minimal anxiety), AUDIT‑C score 1–2 (low risk alcohol use).  
+
+Assessment  
+1. Asthma – intermittent to mild persistent, currently symptomatic with exercise, cold air, and cat exposure; patient demonstrates uncertainty regarding inhaled corticosteroid dosing and suboptimal adherence.  
+2. Allergic rhinitis – seasonal (spring) with intermittent ocular and nasal symptoms.  
+3. Possible cat allergy – wheeze noted with cat exposure.  
+4. Underweight (BMI 17.95) – nutritional counseling may be indicated.  
+5. Fitness for military service – requires further evaluation of asthma control and pulmonary function.  
+
+Plan  
+- **Medication Education:** Review and reinforce proper inhaler technique. Prescribe fluticasone propionate 44 µg inhaled twice daily (morning and evening) with a written schedule. Instruct use of albuterol 90 µg inhalation 2 puffs 15 minutes before anticipated exertion and as needed for breakthrough symptoms. Provide a printed asthma action plan outlining green, yellow, and red zones.  
+- **Trigger Management:** Advise avoidance of known triggers when possible (cold air – use a scarf over mouth, cat exposure – limit time in environments with cats, consider antihistamine pre‑exposure).  
+- **Allergy Management:** Continue daily fexofenadine 30 mg; consider referral to allergy/immunology for possible cat allergen testing and immunotherapy.  
+- **Pulmonary Function Testing:** Order spirometry with bronchodilator responsiveness to objectively assess control and to determine eligibility for Marine Corps enlistment. Results to be reviewed at next visit.  
+- **Nutrition:** Counsel on a balanced diet to achieve a healthy weight; consider referral to a dietitian if BMI remains below 18.5.  
+- **Vaccinations:** Verify that routine immunizations are up to date; administer any missing vaccines per schedule.  
+- **Follow‑up:** Return visit in 4–6 weeks to reassess asthma control, review spirometry results, and adjust therapy as needed. Earlier return if symptoms worsen or if she experiences nighttime awakenings, increased rescue inhaler use, or any acute exacerbation.  
+- **Safety Measures:** Ensure epinephrine auto‑injector is readily accessible; educate patient and family on its use.  
+- **Documentation:** Update medication list in the electronic health record to reflect clarified dosing schedule.  
+
+The patient verbalized understanding of the plan, agreed to adhere to the inhaled corticosteroid regimen, and expressed relief at having a clear action plan. No further questions at this time.

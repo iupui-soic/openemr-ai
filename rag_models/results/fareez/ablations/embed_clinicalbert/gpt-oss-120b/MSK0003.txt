@@ -1,0 +1,125 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:48:29
+Time: 5.53s
+Tokens: 7,077 in / 1,961 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber DOB: 03/24/1995 Age: 26 Sex: Male Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000 Unit #: 311  
+
+Chief Complaint  
+The patient presents with chronic back pain and morning stiffness of several months’ duration.
+
+History of Present Illness  
+Abe reports a dull, diffuse aching pain involving the mid‑ to lower thoracic and lumbar regions of his back. The discomfort has been present for approximately five to six months and has gradually worsened. He describes the pain as a 4–5/10 on a numeric rating scale, with variability from day to day. The pain is most pronounced in the morning, accompanied by stiffness that improves after 30–60 minutes of ambulation and activity. He denies any specific inciting trauma or injury. The pain does not radiate to the extremities, and he reports no aggravating maneuvers such as bending, lifting, or prolonged standing. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide modest relief, but symptoms return after sleep. He also notes intermittent pain in his right knee and hands that began a similar time frame, described as episodic and not continuously present. He reports increasing fatigue and a sense of malaise over the same period. He denies fevers, chills, night sweats, weight loss, bowel or urinary changes, skin rashes, nail changes, visual disturbances, numbness, tingling, or muscle weakness. He had an episode of gastroenteritis with diarrhea several months ago, treated with antibiotics, but no ongoing gastrointestinal complaints.
+
+Review of Systems  
+Constitutional: Positive for fatigue, malaise; negative for fever, chills, night sweats, weight change.  
+Musculoskeletal: Positive for chronic back pain, morning stiffness, intermittent right knee and hand pain; negative for joint swelling, erythema, warmth, or limited range of motion. No reported muscle weakness.  
+Respiratory: No dyspnea, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea, constipation, or dysuria.  
+Dermatologic: No rashes, lesions, or nail changes.  
+Neurologic: No numbness, tingling, or gait disturbances.  
+Psychiatric: Reports increased fatigue; PHQ‑2 score 2, GAD‑7 score 2 (mild symptoms).  
+Genitourinary: No urinary frequency, urgency, or incontinence.  
+Eyes: No visual changes.  
+
+Past Medical History  
+- Asthma, intermittent, uses short‑acting bronchodilator (albuterol) and inhaled corticosteroid (budesonide) as needed.  
+- Environmental allergies (pollen/ragweed suspected).  
+- Chronic low back pain documented in prior records.  
+- No prior hospitalizations or surgeries.  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+Employed full‑time as a bank employee. Lives with his girlfriend in a city condo. Denies tobacco use. Consumes alcohol socially (one to two beers or a cocktail on weekends). Uses marijuana approximately once to twice per week. No illicit drug use aside from occasional cannabis. Engages in minimal regular exercise.  
+
+Family History  
+Mother diagnosed with psoriasis; no reported psoriatic arthritis or other autoimmune disease. No known family history of rheumatologic or musculoskeletal disorders.  
+
+Allergies  
+Reported allergy to an unspecified substance (severity noted as mild). Environmental allergies to pollen/ragweed. No known drug allergies.
+
+Current Medications (as reported and from medication list)  
+- Acetaminophen 325 mg oral tablet, PRN for pain.  
+- Ibuprofen 400 mg oral tablet, PRN for pain.  
+- Fexofenadine 60 mg oral tablet, daily for environmental allergies.  
+- Albuterol 0.83 mg/mL inhalation solution, as needed for asthma.  
+- Budesonide 0.25 mg/mL inhalation suspension, as needed for asthma.  
+
+Objective  
+
+Vital Signs (most recent recorded on 02/13/2015)  
+- Heart Rate: 86 beats/min  
+- Respiratory Rate: 15 breaths/min  
+- SpO₂: Not recorded  
+- Temperature: Not recorded  
+- Height: 169.7 cm  
+- Weight: Not recorded  
+- Body Mass Index: 42.0 kg/m² (severely obese)  
+
+Physical Examination  
+General: Alert, cooperative male in no acute distress.  
+Back: Noted mild tenderness to palpation over the mid‑thoracic and lumbar regions; no visible swelling, erythema, or deformity. Range of motion limited by stiffness, improves after several minutes of movement. No neurological deficits detected in lower extremities.  
+Extremities: Right knee without effusion, mild occasional discomfort reported; hands without swelling, deformity, or tenderness at the time of exam. No peripheral edema.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Respiratory: Clear to auscultation bilaterally, no wheezes.  
+Skin: No rashes, lesions, or nail changes.  
+
+Laboratory Data (most recent)  
+- Hematocrit 39.1 % (within normal limits).  
+- Erythrocytes 5.23 ×10⁶/µL (within normal limits).  
+- Platelets 287 ×10³/µL (within normal limits).  
+- Mean Platelet Volume 12.1 fL.  
+- Mean Corpuscular Hemoglobin 30.1 pg.  
+- Red Cell Distribution Width 42.4 fL.  
+- Other values (CBC differentials, CRP, ESR) not yet obtained.  
+
+Imaging  
+No imaging studies have been performed to date.
+
+Assessment  
+1. Chronic inflammatory‑type back pain with prominent morning stiffness, likely axial spondyloarthropathy (differential includes ankylosing spondylitis, early psoriatic arthritis, and reactive arthritis).  
+2. Intermittent right knee and hand arthralgias, possibly related to the same inflammatory process.  
+3. Asthma, intermittent, well controlled with as‑needed inhalers.  
+4. Obesity (BMI 42 kg/m²), a contributing factor to musculoskeletal strain.  
+5. Environmental allergic rhinitis.  
+
+Plan  
+
+Diagnostic Studies  
+- Order CBC with differential, ESR, CRP to assess inflammatory activity.  
+- Serum rheumatologic panel: rheumatoid factor (RF), anti‑CCP, antinuclear antibody (ANA), HLA‑B27 typing.  
+- X‑ray of the lumbar spine and sacroiliac joints to evaluate for sacroiliitis or syndesmophytes.  
+- X‑ray of the right knee and both hands to assess for erosive changes.  
+- Consider MRI of the sacroiliac region if plain films are inconclusive and suspicion for early spondyloarthritis remains high.  
+
+Medications  
+- Continue acetaminophen 325 mg q6‑8 h PRN for pain not exceeding 3 g/day.  
+- Continue ibuprofen 400 mg q6‑8 h PRN with meals, monitor for gastrointestinal tolerance; consider a scheduled NSAID regimen if pain persists.  
+- Initiate a trial of a low‑dose disease‑modifying antirheumatic drug (DMARD) such as sulfasalazine pending rheumatology evaluation, if inflammatory markers are elevated.  
+- Continue current asthma inhalers as needed.  
+- Encourage weight‑loss interventions (dietary counseling, referral to nutritionist) given severe obesity.  
+
+Non‑pharmacologic Therapy  
+- Referral to physical therapy for core strengthening, stretching, and postural education.  
+- Advise regular low‑impact aerobic activity (e.g., walking, swimming) as tolerated.  
+- Counsel on ergonomic modifications at work and during daily activities.  
+
+Follow‑Up  
+- Schedule rheumatology appointment within 2 weeks for further evaluation and possible initiation of targeted therapy.  
+- Return to primary care clinic in 4 weeks to review laboratory results, assess response to NSAIDs, and discuss imaging findings.  
+- Encourage the patient to seek urgent care if he develops new neurological symptoms (e.g., numbness, weakness), unexplained fever, or worsening pain despite current measures.  
+
+Patient Education  
+Discussed the likely inflammatory nature of his back pain, the importance of early diagnosis and treatment to prevent structural damage, and the role of lifestyle modifications, especially weight loss and regular exercise. Reviewed proper use of NSAIDs and potential gastrointestinal side effects. Provided written instructions on home exercises and when to seek urgent care.
+
+Disposition  
+The patient will remain outpatient; no acute interventions required at this time. All orders placed and referrals initiated.  
+
+Prepared by: _______________________   Date: 07/19/2024   (Electronic medical record)

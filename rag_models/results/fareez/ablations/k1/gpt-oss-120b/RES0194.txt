@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:22:35
+Time: 4.57s
+Tokens: 6,250 in / 1,349 out
+============================================================
+
+Patient Information  
+Name: Abbey Shala Kunde  
+Date of Birth: 02 March 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+
+Chief Complaint  
+Dry cough for three days associated with frontal pressure‑type headache, generalized body aches, low‑grade feverish sensation, one episode of loose stool, and decreased appetite.
+
+History of Present Illness  
+The patient reports that the cough began three days ago and was the first symptom to appear. It is dry, without sputum or blood production. Approximately the same time, she developed intermittent frontal headaches described as a band‑like pressure across both sides of the forehead. The headaches have been present each day, partially relieved by acetaminophen (Tylenol) and ibuprofen (Advil), but recur when the medication effect wanes. She also notes diffuse muscle aches (“feeling achy all over”) without any recent exertion, injury, or heavy lifting. She feels “a little bit feverish” for the past two days but has not measured a temperature. She denies chills, sore throat, chest pain, shortness of breath, runny nose, loss of taste or smell, nausea, vomiting, night sweats, or fatigue. She reports one episode of loose, non‑bloody diarrhea lasting one day and a reduced appetite; her weight has remained stable. She has not tried any over‑the‑counter remedies for the cough. There is no recent travel, and she is unaware of any sick contacts at home or work. She has been off work for the past two days and is working from home.
+
+Review of Systems  
+- Constitutional: Feverish sensation, decreased appetite, stable weight.  
+- Respiratory: Dry cough, no sputum, no dyspnea, no chest pain.  
+- ENT: No sore throat, no nasal congestion or rhinorrhea, no loss of smell or taste.  
+- Neurologic: Frontal pressure‑type headache, intermittent, partially responsive to analgesics. No focal deficits.  
+- Musculoskeletal: Generalized myalgias, no recent trauma or exertion.  
+- Gastrointestinal: One day of loose, non‑bloody diarrhea, no abdominal pain. No nausea or vomiting.  
+- Dermatologic: No rashes.  
+- Psychiatric: No anxiety or depression reported at this visit.  
+- Hematologic/Lymphatic: No bruising or bleeding.  
+- Endocrine: No polyuria, polydipsia, or heat intolerance beyond the feverish feeling.  
+
+Past Medical History  
+The patient states she has been healthy with no chronic medical conditions. (The electronic record lists historical diagnoses such as essential hypertension, obesity, prior viral sinusitis, acute bronchitis, and recurrent urinary tract infection; however, the patient currently reports no active medical problems and is not taking prescription medications for these conditions.)
+
+Surgical History  
+- Right knee anterior cruciate ligament reconstruction performed approximately ten years ago. No other surgical procedures reported.
+
+Medications  
+- Multivitamin (daily)  
+- Vitamin D supplement (daily)  
+The patient is not taking any prescription or over‑the‑counter medications on a regular schedule aside from occasional acetaminophen or ibuprofen for symptom relief.
+
+Allergies  
+- Peanut allergy (carries epinephrine auto‑injector).  
+- No known drug allergies.
+
+Family History  
+- Father: Hypertension.  
+- Grandfather (maternal): Lung cancer diagnosed in his 80s, with a history of smoking.
+
+Social History  
+- Employment: Works for a pharmacy company; duties sometimes require on‑site presence. She has been working from home since symptom onset.  
+- Living situation: Resides in a townhouse in Boston with her wife, who is asymptomatic.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes approximately 3–4 beers per week.  
+- Illicit substances: Denies use; occasional use of CBD oil.  
+- Occupational exposure: No known exposure to fumes, dust, or animals.  
+- Preventive measures: Uses masks and follows cleaning/distancing protocols at work.
+
+Objective  
+Vital signs: Not documented at this encounter.  
+Physical examination: No physical exam findings recorded.  
+Laboratory data: No laboratory or imaging studies performed during this visit.
+
+Assessment  
+1. Acute viral upper respiratory infection, likely community‑acquired, pending COVID‑19 testing.  
+2. Rule out SARS‑CoV‑2 infection given overlapping symptomatology (dry cough, feverish sensation, headache, myalgias).  
+3. Mild self‑limited diarrhea, likely viral gastroenteritis component.  
+
+Plan  
+- Diagnostic testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR today. Instruct patient to self‑isolate for up to 14 days or until symptom resolution and until test results are received (expected within 24–48 hours). Follow public health guidance for any additional testing or isolation modifications.  
+- Symptomatic care: Encourage ample rest, increased fluid intake, and use of acetaminophen or ibuprofen for feverish sensation, headache, and myalgias as needed, respecting dosing limits.  
+- Gastrointestinal symptoms: Advise a bland diet, continued hydration, and use of over‑the‑counter anti‑diarrheal agents only if stools become frequent or watery; monitor for blood or persistent vomiting.  
+- Return precautions: Advise the patient to seek urgent care if she develops high fever (>38.5 °C), worsening cough with sputum production, shortness of breath, chest pain, persistent vomiting, bloody diarrhea, or any new neurologic deficits.  
+- Follow‑up: Telephone or telehealth check‑in in 48–72 hours to review COVID‑19 test result and clinical status. If the test is positive, provide guidance on isolation duration, monitoring, and when to seek further care. If negative and symptoms persist beyond 7–10 days, consider evaluation for secondary bacterial infection.  
+- Preventive counseling: Reinforce hand hygiene, mask use when around others, and avoidance of public places while symptomatic. Continue to avoid close contact with household members until fully recovered.  
+
+Disposition  
+The patient was counseled, the COVID‑19 swab was collected, and she was discharged home with the above plan and instructions. No additional interventions were performed during this encounter.

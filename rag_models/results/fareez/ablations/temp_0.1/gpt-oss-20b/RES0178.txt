@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-20b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:15:42
+Time: 2.62s
+Tokens: 6,607 in / 834 out
+============================================================
+
+Patient Information  
+The patient is a 1‑year‑old male, presented by his mother for evaluation of a recent upper respiratory illness. No name is provided in the encounter documentation.
+
+Chief Complaint  
+The mother reports that the child has had a fever, dry cough, and runny nose for the past two days.
+
+History of Present Illness  
+The cough and clear nasal discharge began approximately two days ago. Fever and chills developed last night, with a recorded temperature of 38.8 °C. The cough is dry, with no sputum or hemoptysis. The child has not experienced shortness of breath, wheezing, chest pain, or ear pain. He has a mild sore throat but reports it is not bothersome. He has had mild generalized muscle aches and a decreased appetite, though he continues to eat solid foods in smaller portions. No vomiting, diarrhea, rash, or changes in urine output have been noted. The mother denies recent travel, sick contacts, or exposure to environmental irritants. The child is up to date on immunizations and has no known allergies or chronic medical conditions. He is not on any medications.
+
+Review of Systems  
+Constitutional: Fever (38.8 °C), chills, mild muscle aches, decreased appetite.  
+Respiratory: Dry cough, clear nasal discharge, no wheeze, no shortness of breath.  
+ENT: Mild sore throat, no ear pain, no eye symptoms.  
+Cardiovascular: No chest pain.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Genitourinary: No changes.  
+Skin: No rash.  
+Neurologic: No dizziness, fainting, numbness, or tingling.  
+Musculoskeletal: Mild generalized muscle aches.  
+Psychiatric: No anxiety or depression noted.
+
+Past Medical History  
+No chronic illnesses, surgeries, or hospitalizations. No immunodeficiency or other significant medical conditions.
+
+Social History  
+The child lives with his mother, father, a younger brother, and a younger sister. There is no smoking in the household. No alcohol or recreational drug use reported. No recent travel. No known exposure to mold, dust, or other environmental allergens.
+
+Family History  
+No family history of lung or heart disease. Grandfather had hypertension and hypercholesterolemia.
+
+Allergies  
+No known drug or environmental allergies.
+
+Medications  
+The child is not taking any medications.
+
+Objective  
+Vital Signs: Temperature 38.8 °C. No other vital signs documented.  
+Physical Examination: No abnormal findings reported. No documented examination of the respiratory, cardiovascular, or other systems.
+
+Labs  
+No laboratory studies were performed during this encounter.
+
+Imaging  
+No imaging studies were ordered or performed.
+
+Assessment  
+Acute viral upper respiratory infection, likely a common cold or influenza. Differential diagnosis includes COVID‑19; no bacterial pneumonia is suspected given the absence of productive cough, wheezing, or focal findings.
+
+Plan  
+1. Order a COVID‑19 PCR swab to rule out SARS‑CoV‑2 infection. Results expected within 24–48 hours.  
+2. Provide supportive care: encourage adequate fluid intake, balanced nutrition, and rest.  
+3. Use acetaminophen or ibuprofen as needed for fever or discomfort, following age‑appropriate dosing guidelines.  
+4. Monitor for worsening symptoms such as increased fever (>39 °C), persistent cough >7 days, new onset of shortness of breath, or signs of dehydration. If any of these occur, seek urgent care or return to the clinic.  
+5. No antibiotics are indicated at this time.  
+6. Follow‑up: The mother will receive test results by phone and should contact the clinic if symptoms worsen or new concerns arise.  
+7. Discharge instructions: Keep the child away from other children to prevent spread, maintain hand hygiene, and avoid exposure to tobacco smoke. No smoking in the home.  
+
+No additional medications or referrals are recommended at this time.

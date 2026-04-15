@@ -1,0 +1,53 @@
+Model: qwen/qwen3-32b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:20:34
+Time: 3.56s
+Tokens: 8,243 in / 1,110 out
+============================================================
+
+Patient Information:  
+The patient is a 25-year-old female student currently living with her mother in Quincy, Massachusetts. She is employed part-time as a postman and is studying engineering at Western University. The patient is a non-smoker, with occasional alcohol consumption (1-2 drinks on weekends), and no history of recreational drug use. She reports no allergies and has not taken any medications regularly except for occasional use of acetaminophen (Tylenol). The patient has a family history of heart disease, including a recent myocardial infarction and subsequent death of her father two weeks ago, which has caused her significant concern for a similar event.
+
+Chief Complaint:  
+The patient presents with sharp, intermittent chest pain that began three days ago. The pain is localized over the heart area, described as sharp, lasting only a few seconds, and is associated with coughing or lying down. The pain improves when she leans forward. She rates the pain as 6 out of 10 in intensity and notes that it occasionally radiates to her neck. She denies any associated symptoms such as shortness of breath, dizziness, palpitations, or other systemic symptoms. The patient has no prior history of chest pain and is otherwise healthy.
+
+History of Present Illness:  
+The patient reports experiencing sharp chest pain for the past three days. The pain is intermittent, lasting only a few seconds, and is exacerbated by coughing or lying down. Leaning forward provides relief. The pain is localized over the heart and occasionally radiates to the neck. She has not experienced any associated symptoms such as shortness of breath, dizziness, or palpitations. The patient took acetaminophen once yesterday, which provided some relief. She denies any recent trauma or injury to the chest. The patient had a recent viral illness with fever, runny nose, and cough one week ago, but is now asymptomatic. She is currently worried about having a heart attack, especially given her father's recent death from a myocardial infarction.
+
+Past Medical History:  
+The patient has no known chronic medical conditions and reports being generally healthy. She has no history of diabetes, hypertension, or other significant medical conditions. She has no history of surgeries or hospitalizations. She has no known allergies and does not take any regular medications beyond occasional acetaminophen for pain relief.
+
+Family History:  
+The patient has a significant family history of cardiovascular disease. Her father had a myocardial infarction and passed away two weeks ago. There is no reported history of cancer, diabetes, or stroke in the family.
+
+Social History:  
+The patient lives with her mother in a house. She is a full-time student and works part-time as a postman. She consumes alcohol occasionally (1-2 drinks per weekend) and has no history of tobacco or recreational drug use. She reports no significant stressors or recent life changes other than her academic and part-time work responsibilities.
+
+Review of Systems:  
+- Constitutional: Denies fever, chills, weight loss, or fatigue.
+- Cardiovascular: Chest pain as described, no palpitations, syncope, or edema.
+- Respiratory: No shortness of breath, cough, or sputum production.
+- Gastrointestinal: No nausea, vomiting, or abdominal pain.
+- Neurological: No dizziness, headache, or numbness.
+- Musculoskeletal: No joint pain or muscle aches.
+- Dermatological: No rashes or skin changes.
+- Psychiatric: No anxiety or depressive symptoms reported.
+- Hematologic: No easy bruising or bleeding.
+- Endocrine: No changes in appetite, thirst, or urination.
+- Genitourinary: No dysuria or changes in urinary habits.
+- Allergic/Immunologic: No allergies or immune-related symptoms.
+
+Physical Examination:  
+Physical examination findings are not provided in the available documentation. However, based on the patient's description, no immediate life-threatening signs or symptoms were observed during the clinical encounter.
+
+Assessment:  
+The patient presents with intermittent, sharp chest pain that is positional and improves with leaning forward. The pain is associated with coughing and lying down, which suggests a possible musculoskeletal or pleuritic etiology. The patient has no other symptoms of acute coronary syndrome, such as diaphoresis, shortness of breath, or radiation to the arm. Given the patient's young age, lack of risk factors for coronary artery disease, and the nature of the pain, the likelihood of an acute myocardial infarction is low. However, due to the recent history of her father's myocardial infarction and her concern, further evaluation is warranted to rule out any cardiac pathology.
+
+Plan:  
+1. Perform an electrocardiogram (ECG) to assess for any acute cardiac changes.
+2. Order a complete blood count, comprehensive metabolic panel, and cardiac biomarkers (troponin) to evaluate for any signs of myocardial injury or other systemic abnormalities.
+3. Consider a chest X-ray to evaluate for any pulmonary or pleural pathology.
+4. Provide reassurance and address the patient's anxiety regarding her father's recent myocardial infarction.
+5. Schedule a follow-up appointment to review test results and determine further management.
+6. Advise the patient to seek immediate medical attention if the chest pain becomes persistent, severe, or is associated with other concerning symptoms such as shortness of breath, dizziness, or syncope.

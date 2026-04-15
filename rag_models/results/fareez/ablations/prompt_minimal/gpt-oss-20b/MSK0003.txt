@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:28:39
+Time: 2.40s
+Tokens: 6,891 in / 1,338 out
+============================================================
+
+**Patient Information**  
+Name: Abe Steuber  
+DOB: 24 Mar 1995 (26 yrs old)  
+Gender: Male  
+Address: 339 Kerluke Crossing, Rockland, MA 00000  
+Phone: (555) 555‑1234  
+
+**Chief Complaint**  
+“My back hurts. I feel really stiff in the morning and it’s been going on for a few months.”
+
+---
+
+### SOAP Summary
+
+**Subjective**
+
+**History of Present Illness (HPI)**  
+Mr Steuber reports a 4–6‑month history of dull, diffuse lower‑back pain that worsens in the morning, with stiffness lasting approximately 30–60 minutes after awakening. Pain intensity is variable, rating 4–5/10 most days, improving with movement and NSAIDs (acetaminophen/ibuprofen). The pain is non‑radiating, not worsened by specific motions, and is not associated with neurologic deficits. There is no history of trauma, recent infections, or acute exacerbation. He notes intermittent pain in the right knee and hands that similarly waxes and wanes over the past 6 months. He denies fevers, chills, night sweats, rash, or skin changes.
+
+**Review of Systems**  
+- **Constitutional:** Fatigue, malaise; no fever, night sweats.  
+- **Musculoskeletal:** Back pain, knee and hand pain; no weakness, numbness, or tingling.  
+- **Neurologic:** No focal deficits, no radiculopathy.  
+- **Cardiovascular/Respiratory:** No chest pain, shortness of breath; mild asthma, well‑controlled with occasional use of a blue inhaler.  
+- **Gastrointestinal:** No changes in appetite, weight, bowel or urinary habits.  
+- **Genitourinary:** No dysuria or frequency.  
+- **Skin:** No rashes, lesions, or nail changes.  
+- **Infectious/STD:** No known STI history; sexually active with one partner; no symptoms.
+
+**Past Medical History**  
+- Asthma (intermittent), treated with rescue inhaler.  
+- Environmental allergies (pollen, ragweed).  
+- History of gastrointestinal upset (diarrhea with food poisoning) several months ago, treated with antibiotics.  
+- No prior surgeries, hospitalizations, or significant injuries.  
+
+**Medications**  
+- OTC: acetaminophen 325 mg, ibuprofen 400 mg as needed for pain.  
+- Rescue asthma inhaler (albuterol) PRN.  
+- No chronic prescription medications.  
+
+**Allergies**  
+- One unspecified environmental allergen (severity 1).  
+
+**Social History**  
+- Lives with girlfriend in an urban condo.  
+- Full‑time employment at a bank.  
+- Recreational marijuana use (once–twice weekly).  
+- Social alcohol consumption (beer/cocktail on weekends).  
+- Non‑smoker, no tobacco.  
+
+**Family History**  
+- Mother with psoriasis (no joint disease).  
+- No other known autoimmune or musculoskeletal disorders in first‑degree relatives.  
+
+**Objective**  
+(Clinical examination not performed during this visit; patient was seen in tele‑health format.)  
+
+- Vital signs not recorded during encounter.  
+- Physical exam pending: plan for in‑person spine assessment, including range of motion, gait, reflexes, and neuro‑vascular status.  
+
+**Laboratory & Imaging**  
+- No labs drawn at this visit.  
+- Imaging not obtained yet; plan for lumbar spine and sacroiliac joint radiographs.  
+
+**Assessment**
+
+1. **Chronic low back pain, mechanical/structural origin** – primary consideration given duration, morning stiffness, improvement with activity, and lack of systemic features.  
+2. **Possible inflammatory back pain** – differential includes ankylosing spondylitis, psoriatic arthritis, reactive arthritis (post‑gastrointestinal infection).  
+3. **Rheumatologic evaluation indicated** given chronicity, progressive nature, and family history of psoriasis.  
+4. **Other considerations** – fibromyalgia, metabolic osteoarthritis (less likely given age and presentation).  
+
+**Plan**
+
+1. **Referral** – Schedule a rheumatology appointment for comprehensive evaluation.  
+2. **Imaging** – Order standing lumbar spine X‑ray and sacroiliac joint films; consider MRI if radiographs are inconclusive or if neurological symptoms develop.  
+3. **Laboratory work‑up** – CBC with differential, ESR, CRP, rheumatoid factor (RF), anti‑cyclic citrullinated peptide (anti‑CCP), ANA panel, HLA‑B27 testing.  
+4. **Pain management** – Continue OTC NSAIDs (ibuprofen 400 mg PO q6–8 h PRN) and acetaminophen 325 mg PO q6–8 h PRN; consider low‑dose tramadol if inadequate relief.  
+5. **Physical therapy** – Initiate a structured exercise program focusing on core strengthening and flexibility; refer to PT after rheumatology assessment.  
+6. **Lifestyle** – Encourage regular moderate exercise, weight‑management strategies, and smoking cessation counseling (none reported).  
+7. **Follow‑up** – Return in 2–4 weeks after rheumatology consultation or sooner if symptoms worsen or new neurologic signs appear.  
+8. **Patient education** – Discuss potential rheumatologic etiologies, importance of early diagnosis, and the role of inflammatory markers. Reviewed safety of NSAIDs, potential GI irritation, and advised taking with food.  
+9. **Safety** – Counsel regarding red‑flag symptoms (fever, weight loss, bowel or urinary changes, severe pain radiating to legs, neurological deficits) that warrant immediate evaluation.  
+
+**Disposition**  
+Patient was advised to follow the above plan and to contact the office with any worsening or new symptoms. He was reminded to keep a pain diary and to bring it to his rheumatology visit. The patient expressed understanding and satisfaction with the plan.  
+
+**Signature**  
+Dr. [Name], MD  
+[Date]

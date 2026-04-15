@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:51:42
+Time: 4.60s
+Tokens: 9,870 in / 1,624 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek  
+Date of Birth: 1950-09-14 (Age per record 73 years) – however, the patient reports being a 10th‑grade student living at home with parents and two siblings, indicating a younger age. For the purpose of this encounter, the patient’s self‑reported demographic information (adolescent, living with family) is considered current.  
+Sex: Male  
+Address: 318 Fay Ferry, Boston, Massachusetts 02116  
+
+Chief Complaint  
+“The sore throat has been getting worse over the past four days and I think I am developing a fever.”  
+
+History of Present Illness  
+The patient is a teenager who presents with a four‑day history of a sore throat. He describes the throat pain as severe enough to make solid foods difficult to tolerate, although he is able to drink liquids. He reports feeling “really hot” but has not measured his temperature. There is no reported difficulty swallowing liquids, no sensation of food getting stuck, and no significant voice changes other than a mild hoarseness that he attributes to speaking less. He denies rhinorrhea, cough, shortness of breath, chest pain, headache, dizziness, visual or auditory changes, palpitations, gastrointestinal symptoms, fatigue, weight loss, or confusion. He has not noted any recent travel, known sick contacts, or exposure to COVID‑19. He has not taken any medications other than a daily multivitamin. He has not received this year’s influenza vaccine and has not completed the HPV vaccine series. Past surgical history includes an appendectomy performed at age 13.  
+
+Review of Systems  
+Constitutional: Subjective fever (patient feels hot); no measured temperature, no chills, no weight loss, no fatigue.  
+HEENT: Sore throat, mild hoarseness; no cough, rhinorrhea, nasal congestion, sinus pressure, ear pain, vision changes, or hearing changes.  
+Respiratory: No dyspnea, cough, wheeze, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or known heart disease.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Neurologic: No headache, dizziness, confusion, or focal deficits.  
+Psychiatric: No anxiety, depression, or suicidal ideation.  
+Social History: The patient lives at home with parents and two siblings. He reports feeling safe at home. He is a full‑time student in grade 10, attending a hybrid schedule (half in‑person, half virtual). He denies tobacco, alcohol, or illicit drug use. He is not currently sexually active and does not anticipate becoming active before finishing high school. He reports no bullying or school‑related stress.  
+
+Past Medical History  
+The patient reports no chronic medical conditions.  
+
+Surgical History  
+Appendectomy performed at age 13.  
+
+Family History  
+The patient denies any known family history of hypertension, diabetes, heart disease, or other major illnesses.  
+
+Allergies  
+No allergies reported.  
+
+Current Medications  
+Multivitamin daily; no prescription or over‑the‑counter medications otherwise.  
+
+Vital Signs (recorded at encounter)  
+Heart Rate: 97 beats per minute  
+Respiratory Rate: 15 breaths per minute  
+Blood Pressure: Not documented  
+Temperature: Not measured (patient reports feeling hot)  
+SpO₂: Not documented  
+Weight: Not documented  
+Height: 177.7 cm (from record)  
+Body Mass Index: 30.15 kg/m² (recorded)  
+
+Physical Examination  
+General: Alert, oriented, appears mildly uncomfortable due to throat pain.  
+HEENT: Oral cavity shows a markedly erythematous and swollen pharynx; tonsillar enlargement not specifically noted; no exudates described. No nasal discharge, no sinus tenderness. No cervical lymphadenopathy appreciated.  
+Neck: No tracheal deviation, no rigidity.  
+Respiratory: Lungs clear to auscultation bilaterally; no wheezes, rales, or rhonchi.  
+Cardiovascular: Regular rate and rhythm; no murmurs, rubs, or gallops.  
+Abdomen: Soft, non‑tender, no distension, normal bowel sounds.  
+Extremities: No edema, cyanosis, or deformities.  
+Neurologic: Grossly intact; no focal deficits.  
+
+Laboratory and Ancillary Studies  
+Rapid strep antigen test: pending.  
+SARS‑CoV‑2 rapid antigen test: pending.  
+Routine blood work performed on the same day (values from the most recent laboratory panel):  
+- Serum potassium: 5.02 mmol/L (reference range not provided)  
+- HDL cholesterol: 31.9 mg/dL  
+- Triglycerides: 102.1 mg/dL  
+- Serum calcium: 9.82 mg/dL  
+- CO₂ total: 24.05 mmol/L  
+- Blood urea nitrogen: 8.27 mg/dL  
+- Platelet count: 435 ×10³/µL  
+- MCV: 82.8 fL; MCHC: 35.5 g/dL  
+- PH of urine: 6.43  
+- PHQ‑2 score: 1 (negative screen for depression)  
+- Morse Fall Scale: 108 (moderate fall risk)  
+
+No imaging studies were performed during this visit.  
+
+Assessment  
+1. Acute pharyngitis – likely viral but bacterial etiology (Group A Streptococcus) cannot be excluded without testing.  
+2. Rule‑out COVID‑19 infection – given overlapping symptoms and community exposure risk.  
+3. Incomplete immunization status – influenza vaccine not received this season; HPV vaccine series not initiated.  
+
+Plan  
+- Obtain a rapid streptococcal antigen test and a rapid SARS‑CoV‑2 antigen test now; results expected within the visit.  
+- Advise the patient to self‑quarantine for 14 days pending COVID‑19 test results and until fever resolves.  
+- Symptomatic treatment: Acetaminophen 500 mg PO every 6 hours as needed for fever or throat pain, not to exceed 3 g per day. Encourage warm fluids, throat lozenges, and soft foods.  
+- If rapid strep test returns positive, prescribe amoxicillin 500 mg PO twice daily for 10 days (or appropriate penicillin allergy‑adjusted regimen). If negative and symptoms persist beyond 7 days, reassess.  
+- Counsel on completing the annual influenza vaccination as soon as feasible and initiate the HPV vaccine series (three‑dose schedule) given age and eligibility.  
+- Educate the patient and family on infection control measures: mask use when in public indoor settings, hand hygiene, and avoiding close contact with symptomatic individuals.  
+- Follow‑up: Telephone or telehealth check‑in in 48 hours to review test results and symptom progression. In‑person follow‑up in 5–7 days or sooner if worsening dysphagia, high fever, new respiratory symptoms, or inability to maintain hydration.  
+- No additional laboratory monitoring is required at this time.  
+
+Disposition  
+Patient was evaluated, counseling provided, and discharged home with clear return precautions. The rapid tests were performed, and pending results will guide any further antibiotic therapy. The patient and caregiver verbalized understanding of the plan and agreed to adhere to quarantine and symptom‑monitoring instructions.

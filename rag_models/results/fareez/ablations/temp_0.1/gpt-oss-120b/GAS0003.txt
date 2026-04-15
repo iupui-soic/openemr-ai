@@ -1,0 +1,118 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:06:38
+Time: 4.69s
+Tokens: 18,494 in / 1,620 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with acute right‑sided abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ali Hayes reports an aching pain localized to the right side of the abdomen. The pain started about eight hours prior to the visit while she was preparing to go to sleep. Initially the discomfort was intermittent, but over the past five to six hours it has become constant and is now rated as an 8 out of 10 in intensity. She describes the pain as “aching” and notes that it is worsened by eating, particularly fatty foods such as burgers or fries. She has a prior history of similar post‑prandial right‑upper‑quadrant discomfort that she previously attributed to indigestion. Over‑the‑counter acetaminophen (Tylenol) taken for the current episode has provided no relief. She reports mild nausea but no vomiting, no fever, chills, sweats, or changes in bowel habits. She denies dysuria, hematuria, jaundice, or recent travel. She feels slightly fatigued due to the pain but otherwise is alert.  
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss. Mild fatigue reported.  
+Respiratory: No cough, dyspnea, or recent infections.  
+Cardiovascular: No chest pain, palpitations, or known heart disease beyond a paternal history of myocardial infarction in his 60s.  
+Gastrointestinal: Right‑sided abdominal aching pain, worsened by fatty meals; mild nausea, no vomiting, no diarrhea or constipation, no hematochezia, no melena, no change in appetite other than reduced intake due to pain. No reported jaundice.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Musculoskeletal: No recent trauma.  
+Skin: No rashes or yellowing.  
+
+Past Medical History  
+- Prediabetes (ongoing)  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (managed with metformin)  
+- Chronic kidney disease stage 3 (estimated GFR 36.9 mL/min/1.73 m²)  
+- Essential hypertension  
+- Gastroesophageal reflux disease  
+- Metabolic syndrome / obesity (BMI 27.9)  
+- Chronic intractable migraine without aura  
+- Chronic pain (unspecified)  
+- Chronic obstructive bronchitis (ongoing)  
+
+Surgical History  
+- Wisdom teeth extraction (adolescent)  
+
+Social History  
+The patient lives alone in an apartment. She is currently unemployed after being laid off due to the COVID‑19 pandemic. She reports occasional alcohol use, averaging one to two glasses of wine per day, and denies tobacco or recreational drug use. She usually walks or runs outdoors when weather permits.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other significant hereditary conditions.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Current Medications  
+- Metformin (dose not specified) for diabetes  
+- Lisinopril 10 mg daily for hypertension (recorded in EMR)  
+- Inhaled fluticasone/salmeterol and albuterol as needed for chronic bronchitis (recorded in EMR)  
+
+Vital Signs (most recent recorded)  
+Heart Rate: 92 beats/min  
+Respiratory Rate: 13 breaths/min  
+Blood Pressure: Not recorded at this visit  
+Temperature: Not recorded at this visit  
+Weight: Not recorded  
+Body Mass Index: 27.9 kg/m²  
+
+Physical Examination  
+No physical examination findings were documented in the encounter transcript.  
+
+Laboratory Data (most recent)  
+- Serum calcium: 9.27 mg/dL (within normal limits)  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL (consistent with CKD stage 3)  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L; serum chloride: 103.96 mmol/L  
+- Serum glucose: 66.6 mg/dL (fasting range)  
+- Urine protein: 214.8 mg/dL (elevated)  
+- Urine glucose: 1.5 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+- Urine specific gravity: 1.038  
+
+Assessment  
+1. Acute right‑upper‑quadrant abdominal pain, likely biliary colic progressing toward acute cholecystitis. The pain pattern (post‑fatty‑meal exacerbation, constant severe pain, mild nausea, absence of fever) is classic for gallbladder pathology.  
+2. Chronic kidney disease stage 3 with reduced GFR; limits use of nephrotoxic analgesics.  
+3. Type 2 diabetes mellitus with microalbuminuria/proteinuria, currently on metformin.  
+4. Hypertension, controlled on lisinopril.  
+5. Chronic obstructive bronchitis.  
+
+Plan  
+Diagnostics  
+- Obtain right‑upper‑quadrant abdominal ultrasound urgently to evaluate for gallstones, gallbladder wall thickening, pericholecystic fluid, and biliary duct dilation.  
+- Order basic metabolic panel, liver function tests (AST, ALT, ALP, total bilirubin), and complete blood count to assess for leukocytosis or hepatic involvement.  
+
+Therapeutic Interventions  
+- Begin intravenous hydration with isotonic saline, mindful of fluid status given CKD.  
+- Provide analgesia with acetaminophen 650 mg PO q6h as needed; avoid NSAIDs due to renal impairment.  
+- If ultrasound confirms acute cholecystitis, initiate broad‑spectrum IV antibiotics (e.g., ceftriaxone plus metronidazole) pending culture results.  
+- Keep the patient NPO (nothing by mouth) until surgical evaluation.  
+
+Medication Adjustments  
+- Continue metformin and lisinopril; monitor renal function and adjust doses if needed.  
+- Hold any nephrotoxic agents.  
+
+Disposition  
+- Admit to the medical floor for observation, fluid resuscitation, pain control, and pending imaging.  
+- Surgical consult for possible cholecystectomy if acute cholecystitis is confirmed.  
+
+Follow‑up  
+- Re‑evaluate pain, vitals, and laboratory results in 4–6 hours.  
+- If discharged, arrange outpatient follow‑up with gastroenterology or general surgery within 7 days, and primary care for diabetes and CKD management.  
+
+Patient Education  
+- Discuss the likely gallbladder etiology of her pain and the importance of avoiding fatty meals until the diagnosis is clarified.  
+- Review signs of worsening condition (fever, increasing pain, vomiting, jaundice) and instruct her to seek immediate care if they develop.  
+
+Signature  
+[Physician’s name], MD  
+Date: April 14, 2026

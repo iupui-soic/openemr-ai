@@ -1,0 +1,49 @@
+Model: google/medgemma-4b-it
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:59:42
+Time: 109.05s
+Tokens: 8,163 in / 1,649 out
+Cell: norag
+============================================================
+
+Patient Information:
+
+Name: Amos Crona
+DOB: 1934-01-20
+Sex: Male
+Unit Number: 7863
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+
+The patient presented with chest pain that began approximately 30 minutes prior to the encounter. The pain is located on the left side of the chest. The patient reports that the pain came on suddenly while shoveling the driveway. The pain has been present since the onset and has been getting worse over the last half hour. The patient describes the pain as dull and feels like there is a lot of pressure on his chest. The pain is rated as a seven on a scale of zero to ten. The patient denies similar episodes in the past. The pain is localized to the left chest area and is not traveling to other parts of the body. The patient reports that the pain is worse when moving around or when walking in here. The pain is also worse when lying down. The patient denies any other symptoms such as cough, difficulty breathing, or pain when breathing in or out. The patient reports feeling short of breath since the onset of the pain. The patient denies any recent injury to the chest. The patient plays rugby and was tackled yesterday, but denies any chest pain after the tackle. The patient denies recent travel. The patient denies any recent illness among family members. The patient denies nausea, vomiting, or fevers. The patient's temperature was 38 degrees Celsius. The patient denies swelling in the legs. The patient denies feeling tired. The patient denies palpitations. The patient denies any skin changes. The patient denies cough or runny nose or sore throat in the past month. The patient has a history of high cholesterol and high blood pressure. The patient takes Rosuvastatin and Lisinopril, as well as a multivitamin. The patient denies any allergies. The patient denies any hospitalizations or previous surgeries. The patient denies any family history of heart attack or cancer. The patient currently lives with his parents. The patient works as a bus driver. The patient reports getting enough exercise, usually running on Sundays. The patient reports a fairly balanced diet, although he eats out frequently. The patient smokes approximately half a pack to a pack of cigarettes per day. The patient denies alcohol use. The patient denies recreational drug use, specifically crystal meth, and reports using it six days ago, with use occurring a couple of times a month for the past seven years.
+
+Past Medical History:
+
+Prediabetes (SNOMED-CT:15777000, Onset: 1952-03-15 06:11:43, End: Ongoing)
+Only received primary school education (finding) (SNOMED-CT:224295006, Onset: 1952-03-15 06:44:11, End: Ongoing)
+Anemia (disorder) (SNOMED-CT:271737000, Onset: 1953-03-21 06:11:43, End: Ongoing)
+Body mass index 30+ - obesity (finding) (SNOMED-CT:162864005, Onset: 1956-03-24 07:11:43, End: Ongoing)
+Sleep disorder (disorder) (SNOMED-CT:39898005, Onset: 1982-01-08 07:11:43, End: Ongoing)
+Sleep apnea (disorder) (SNOMED-CT:73430006, Onset: 1982-02-03 15:14:23, End: Ongoing)
+Essential hypertension (disorder) (SNOMED-CT:59621000, Onset: 1984-01-21 07:11:43, End: Ongoing)
+Metabolic syndrome X (disorder) (SNOMED-CT:237602007, Onset: 1984-01-21 07:11:43, End: Ongoing)
+Chronic kidney disease stage 1 (disorder) (SNOMED-CT:431855005, Onset: 1987-02-07 07:11:43, End: 2013-02-23 09:31:19)
+Disorder of kidney due to diabetes mellitus (disorder) (SNOMED-CT:127013003, Onset: 1987-02-07 07:11:43, End: Ongoing)
+Ischemic heart disease (disorder) (SNOMED-CT:414545008, Onset: 1992-03-07 07:11:43, End: Ongoing)
+Abnormal findings diagnostic imaging heart+coronary circulat (finding) (SNOMED-CT:274531002, Onset: 1992-03-18 10:37:01, End: Ongoing)
+Chronic kidney disease stage 2 (disorder) (SNOMED-CT:431856006, Onset: 1996-10-26 07:11:43, End: 2013-02-23 09:31:19)
+Microalbuminuria due to type 2 diabetes mellitus (disorder) (SNOMED-CT:90781000119102, Onset: 1996-10-26 07:11:43, End: Ongoing)
+Chronic kidney disease stage 3 (disorder) (SNOMED-CT:433144002, Onset: 2004-01-17 07:11:43, End: 2013-02-23 09:31:19)
+Proteinuria due to type 2 diabetes mellitus (disorder) (SNOMED-CT:157141000119108, Onset: 2004-01-17 07:11:43, End: Ongoing)
+Medication review due (situation) (SNOMED-CT:314529007, Onset: 2004-12-11 07:11:43, End: 2005-05-14 07:11:43)
+Not in labor force (finding) (SNOMED-CT:741062008, Onset: 2004-12-11 07:58:41, End: 2005-05-14 07:49:34)
+Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2005-05-14 07:49:34, End: 2005-05-28 08:07:07)
+Medication review due (situation) (SNOMED-CT:314529007, Onset: 2005-05-28 07:11:43, End: 2005-06-11 07:11:43)
+Part-time employment (finding) (SNOMED-CT:160904001, Onset: 2005-05-28 08:07:07, End: 2005-06-11 07:47:56)
+Full-time employment (finding) (SNOMED-CT:160903007, Onset: 2005-06-11 07:47:56, End: 2005-08-13 08:11:06)
+Victim of intimate partner abuse (finding) (SNOMED-CT:706893006, Onset: 2005-06-11 07:47:56, End: 2005-08-13 08:11:06)
+Gingivitis (disorder) (SNOMED-CT:66383009, Onset: 2005-06-11 09:49:38, End: 2005-06-25 

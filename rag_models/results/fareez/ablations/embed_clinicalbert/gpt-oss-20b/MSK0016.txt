@@ -1,0 +1,100 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 03:55:04
+Time: 3.37s
+Tokens: 11,884 in / 1,617 out
+============================================================
+
+Patient Information  
+Abe Huels, a 62‑year‑old male, resident of 294 Yundt Well Suite 80, Stoughton, Massachusetts, presents for evaluation of left hand symptoms. He is 175 cm tall, weighs 80 kg, and has a body mass index of 27.5 kg/m².  
+
+Chief Complaint  
+The patient reports numbness, tingling, and a burning sensation in the left hand, primarily affecting the thumb, index, and middle fingers, with occasional involvement of the ring finger.  
+
+History of Present Illness  
+The patient states that symptoms began approximately four to five months ago. Initially, the discomfort was brief, lasting only a few minutes, and could be relieved by flicking or stretching the wrist. Over the past several weeks, the frequency and severity have increased, with nighttime symptoms that now awaken him on two to three occasions nightly. Pain intensity peaks at a 6 on a 0–10 scale. The patient has tried over‑the‑counter analgesics (Advil, Tylenol) with limited relief, and notes that reducing hand use offers the most benefit. No prior episodes of similar symptoms have been reported.  
+
+Review of Systems  
+Constitutional: No weight loss, fever, chills, or night sweats.  
+Neurologic: No weakness, clumsiness beyond difficulty with fine motor tasks, no paresthesias elsewhere.  
+Musculoskeletal: No joint swelling or redness; mild muscle atrophy noted over the thumb region.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Respiratory: No cough, wheezing, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Genitourinary: No dysuria or urinary frequency.  
+Psychiatric: No confusion or memory loss.  
+No skin rashes, visual, hearing, or taste changes were reported.  
+
+Past Medical History  
+- Hypothyroidism, managed with Synthroid.  
+- Obesity, class I (BMI 27–30).  
+- Chronic kidney disease, stage 1–4 with eventual end‑stage renal disease and subsequent renal transplant (history of transplant and tacrolimus therapy).  
+- Hyperlipidemia.  
+- Coronary artery disease with prior coronary artery bypass grafting.  
+- Hypertension (treated in the past).  
+- Osteoarthritis (family history).  
+No history of malignancy.  
+
+Surgical History  
+- Coronary artery bypass grafting (date not specified).  
+- Appendectomy (2010).  
+- Multiple minor dental procedures.  
+- No recent upper extremity or cervical spine surgeries.  
+
+Social History  
+The patient is a current smoker, consuming 5–10 cigarettes daily for the past 10 years. He has attempted to reduce consumption but continues to smoke at work. Alcohol use is limited to one wine per weekend. He is physically active but has difficulty with exercise due to hand discomfort. He resides with his spouse and two daughters. He works in a warehouse setting that involves repetitive wrist motions and use of vibrating tools.  
+
+Family History  
+- Paternal hypertension and hyperlipidemia.  
+- Paternal high cholesterol.  
+- Maternal and paternal histories of stroke (grandfather in 70s).  
+
+Medications  
+- Synthroid (levothyroxine) for hypothyroidism.  
+- Tacrolimus 1 mg extended‑release daily (immunosuppressant post‑renal transplant).  
+- Clopidogrel 75 mg daily.  
+- Metoprolol 100 mg daily.  
+- Nitroglycerin spray as needed.  
+- Ferrous sulfate 325 mg daily for iron deficiency anemia.  
+- Simvastatin 10 mg daily (statin for hyperlipidemia).  
+- Naproxen sodium 220 mg daily (historical use, discontinued in 2019).  
+- No known drug allergies.  
+
+Physical Examination  
+Vital signs were not recorded in the transcript; no abnormality was reported during the encounter.  
+Inspection of the left upper extremity revealed mild muscle atrophy over the thenar eminence; no swelling, erythema, or warmth noted. Palpation of the wrist and forearm was non‑tender. The patient demonstrated no gross motor weakness in the left arm or hand.  
+Neurologic testing:  
+- Tinel’s sign was positive over the median nerve distribution at the wrist, eliciting tingling in the thumb, index, and middle fingers.  
+- Phalen’s test was positive; the patient experienced numbness and tingling after 60 seconds of wrist flexion with palms together.  
+- Sensory examination confirmed decreased sensation in the median nerve territory of the left hand.  
+- Motor strength was normal in the upper extremity; no pronator or supinator weakness noted.  
+
+Laboratory Results  
+Recent laboratory studies were within normal limits for electrolytes, renal function (creatinine 1 mg/dL), and blood counts. The PHQ‑2 score of 2 and GAD‑7 score of 4 suggest mild depressive and anxiety symptoms but no major psychiatric disorder. No laboratory abnormalities pertinent to the current complaint were identified.  
+
+Assessment  
+The clinical presentation, positive Tinel’s and Phalen’s signs, and absence of other neurologic deficits are consistent with Carpal Tunnel Syndrome affecting the left median nerve. No imaging has yet been performed; given the clear clinical picture, imaging is not immediately required. Differential considerations include cervical radiculopathy and diabetic neuropathy, but these are less likely given the focal distribution and lack of systemic neuropathic symptoms.  
+
+Plan  
+1. **Non‑operative management**  
+   - Recommend workplace ergonomic modifications: reduce repetitive wrist flexion, take frequent breaks, and avoid prolonged vibration exposure.  
+   - Use a neutral‑position wrist splint while sleeping to alleviate nocturnal symptoms.  
+   - Apply cold packs to the wrist for symptomatic relief.  
+   - Continue current NSAID therapy (e.g., naproxen or ibuprofen) as needed for pain; consider short course of oral corticosteroids if symptoms persist despite conservative measures.  
+2. **Monitoring**  
+   - Schedule a follow‑up in 4–6 weeks to reassess symptom progression and response to therapy.  
+   - If symptoms worsen or fail to improve, consider referral for an ultrasound evaluation of the median nerve and possible corticosteroid injection or surgical consultation (carpal tunnel release).  
+3. **Lifestyle**  
+   - Encourage smoking cessation; provide resources and referral to smoking cessation program.  
+   - Discuss weight‑loss strategies, including dietary counseling and safe exercise modifications given hand discomfort.  
+4. **Medication review**  
+   - Continue Synthroid, tacrolimus, clopidogrel, metoprolol, nitroglycerin, ferrous sulfate, and simvastatin as indicated.  
+   - No changes to current medication list at this time.  
+5. **Education**  
+   - Patient educated on the nature of carpal tunnel syndrome, risk factors, and importance of early intervention.  
+   - Instructed on proper wrist positioning during activities and on signs that warrant earlier re‑evaluation (e.g., progressive weakness or loss of hand dexterity).  
+
+Follow‑up instructions: Return to clinic or urgent care if the patient experiences new weakness, significant pain escalation, or inability to use the hand for daily tasks.  
+
+Discharge instructions: Patient is discharged with the above plan and encouraged to adhere to ergonomic recommendations, medication regimen, and follow‑up schedule. No additional imaging or procedures are scheduled at this time.

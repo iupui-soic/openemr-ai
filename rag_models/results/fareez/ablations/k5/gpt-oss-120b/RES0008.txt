@@ -1,0 +1,156 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:28:30
+Time: 8.00s
+Tokens: 12,226 in / 2,405 out
+============================================================
+
+Patient Information  
+Abraham Schneider is a 98‑year‑old male (DOB 01‑10‑1928) residing at 658 Koepp Vista, Wayland, Massachusetts. He lives with his wife and volunteers several times per week at a local homeless shelter. He has a 30‑year history of tobacco use (approximately one pack per day). He denies alcohol or illicit drug use.
+
+Chief Complaint  
+Shortness of breath, productive cough, fever, and right‑sided chest pain of three days’ duration.
+
+History of Present Illness  
+Three days ago (approximately Monday) the patient noted the sudden onset of a worsening cough accompanied by increased dyspnea. He reports coughing “a couple of times per hour” and expectorating dark green‑yellow sputum that requires frequent use of tissues. The cough is more frequent and productive than his usual chronic smoker’s cough, which he has had for several years and for which he was previously diagnosed with bronchitis. Today he describes the symptoms as the worst they have been since onset.
+
+He also developed a sharp, localized pain on the right side of his chest/upper abdomen that began shortly after the cough started. The pain is exacerbated by coughing and by taking a deep breath immediately after a coughing episode but is not provoked by routine activity or positional changes. Over‑the‑counter analgesics (acetaminophen and ibuprofen) have provided only modest, temporary relief.
+
+He reports feeling “hot” for the past few days and measured a temperature of 38.6 °C (101.5 °F) at home, prompting his visit. He denies any recent travel, known sick contacts, or identifiable environmental triggers. He continues his regular volunteer work at a homeless shelter. No recent changes in daily routine have been identified.
+
+Review of Systems  
+Constitutional: Fever (38.6 °C); no weight loss reported.  
+Respiratory: Cough with productive green‑yellow sputum, increased frequency, dyspnea on exertion; no wheezing noted by patient.  
+Cardiovascular: Right‑sided chest pain worsened by cough/deep breath; denies palpitations, orthopnea, or peripheral edema.  
+Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain aside from the right‑sided chest discomfort described.  
+Genitourinary: No dysuria or hematuria.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Musculoskeletal: No myalgias or arthralgias.  
+Skin: No rashes.  
+Allergic/Immunologic: Reports environmental allergies only; no known drug allergies.
+
+Allergies  
+Environmental allergens (specifics not delineated). No medication allergies reported.
+
+Past Medical History  
+- Type 2 diabetes mellitus, on metformin, an SGLT‑2 inhibitor, and insulin.  
+- Essential hypertension, treated with amlodipine (and likely additional antihypertensives per medication list).  
+- Chronic kidney disease, progressed to stage 4, with a recent estimated GFR of 9.5 mL/min/1.73 m².  
+- History of renal transplantation (ongoing).  
+- Ischemic heart disease with prior coronary artery bypass grafting.  
+- Heart failure (documented in historic record).  
+- Prior diagnosis of chronic bronchitis related to long‑term smoking.  
+- Hyperlipidemia (on simvastatin).  
+- Other historic conditions include severe anxiety/panic disorder and prior episodes of drug overdose (historical, not active).
+
+Surgical History  
+- Coronary artery bypass grafting (date not specified).  
+- Renal transplantation (ongoing status).  
+No other surgeries reported.
+
+Social History  
+- Tobacco: 30‑year pack‑year history, approximately 1 pack/day, continues to smoke.  
+- Alcohol: None.  
+- Illicit drugs: None.  
+- Occupation: Retired; currently volunteers at a homeless shelter several times per week.  
+- Living situation: Lives at home with wife.
+
+Family History  
+- Father: Myocardial infarction in his 70s.  
+- Mother: Hypertension.  
+No other significant hereditary conditions reported.
+
+Current Medications (home)  
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (specific agent not specified)  
+- Insulin (type/dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Simvastatin 20 mg daily  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Hydrochlorothiazide 25 mg daily  
+- Nitroglycerin spray as needed  
+- Multivitamin daily  
+- Albuterol inhalation solution (5 mg/mL) – active prescription  
+- Other chronic prescriptions listed in the record (e.g., tacrolimus, naproxen) are noted but appear unrelated to the current presentation.
+
+Objective  
+
+Vital Signs (available)  
+- Temperature: 38.6 °C (patient‑reported).  
+- Heart Rate: 62 bpm (recorded in historic vitals).  
+- Respiratory Rate: 16 breaths/min (historic).  
+- Blood Pressure: Not documented at this encounter.  
+- SpO₂: Not documented.  
+- Weight: Not documented.
+
+Physical Examination  
+No physical examination details were provided in the transcript. No abnormalities can be documented at this time.
+
+Laboratory Data (most recent values on record)  
+- Ferritin: 1547 µg/L (markedly elevated).  
+- Calcium: 8.66 mg/dL (low‑normal).  
+- Bicarbonate: 23.6 mmol/L.  
+- Blood urea nitrogen: 8.81 mg/dL.  
+- CO₂ (partial pressure): 35.7 mm Hg.  
+- Hematocrit: 40.4 %.  
+- Hemoglobin (implied from Hct) within normal range.  
+- RBC count: 4.74 ×10⁶/µL.  
+- White blood cell differential: Neutrophils 2.79 ×10³/µL, Lymphocytes 22.8 %, Monocytes 1.13 ×10³/µL, Eosinophils 3.24 %, Basophils 0.22 ×10³/µL.  
+- Platelet count not listed.  
+- Albumin: 4.62 g/dL.  
+- Alkaline phosphatase: 55.5 U/L.  
+- AST: 20.3 U/L.  
+- INR: 4.70 (significantly elevated, indicating coagulopathy).  
+- Estimated GFR: 9.5 mL/min/1.73 m² (severe renal impairment).  
+
+Imaging  
+No imaging studies (e.g., chest radiograph or CT) were performed or documented during this encounter.
+
+Assessment  
+1. **Pneumonia, likely bacterial** – New onset of productive cough with purulent green‑yellow sputum, fever, and pleuritic‑type chest pain in an elderly smoker with chronic lung disease.  
+2. **Acute febrile illness** – Consistent with the infectious process.  
+3. **Chronic obstructive pulmonary disease/bronchitis exacerbation** – Baseline chronic cough now changed in character and quantity.  
+4. **Type 2 diabetes mellitus** – Chronic, on insulin, metformin, and SGLT‑2 inhibitor.  
+5. **Chronic kidney disease, stage 4 with renal transplant** – GFR 9.5 mL/min; requires dose adjustment of renally cleared medications.  
+6. **Hypertension** – On amlodipine (and likely additional agents).  
+7. **Ischemic heart disease with prior CABG and heart failure** – Baseline cardiac comorbidities.  
+8. **Coagulopathy (INR 4.7)** – Possibly related to chronic disease or recent medication use; warrants correction.  
+9. **Active tobacco use** – Contributing risk factor for respiratory infection.
+
+Plan  
+
+Medical Management  
+- Initiate empiric intravenous antibiotic therapy for community‑acquired pneumonia, such as ceftriaxone 1 g daily plus azithromycin 500 mg IV daily, with dosing adjusted for severe renal impairment as needed.  
+- Obtain a chest radiograph promptly to confirm infiltrates and assess for possible complications (e.g., effusion, abscess).  
+- Collect sputum for Gram stain and culture, and consider respiratory viral panel given recent exposure in a shelter setting.  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 94 % if hypoxic; monitor respiratory status closely.  
+- Administer antipyretics (acetaminophen) for fever control.  
+- Continue home inhaled bronchodilator (albuterol) as needed for bronchospasm.  
+- Review and hold any non‑essential anticoagulant or antiplatelet agents given the markedly elevated INR; consider vitamin K reversal if bleeding risk rises.  
+- Adjust insulin regimen to account for infection‑related hyperglycemia; monitor capillary blood glucose every 4–6 hours.  
+- Maintain current antihypertensive regimen; monitor blood pressure.  
+
+Supportive Care  
+- Encourage adequate hydration, unless contraindicated by cardiac status.  
+- Counsel on smoking cessation and offer referral to cessation resources.  
+- Educate patient and family on signs of worsening respiratory distress, bleeding, or hyperglycemia that would require immediate medical attention.  
+
+Disposition  
+- Admit to the medical floor for close monitoring of respiratory status, renal function, and glycemic control.  
+- Daily reassessment of vital signs, oxygen requirement, and laboratory trends (CBC, BMP, INR).  
+
+Follow‑Up  
+- Repeat chest X‑ray in 48 hours or sooner if clinical status changes.  
+- Follow up with primary care provider within 1‑2 weeks after discharge for chronic disease management, including diabetes, hypertension, and renal transplant care.  
+- Arrange outpatient pulmonary follow‑up within 4 weeks.  
+
+Patient Education & Discharge Instructions (to be provided at discharge)  
+- Complete the full course of prescribed antibiotics.  
+- Take acetaminophen for fever as directed; avoid NSAIDs if renal function deteriorates further.  
+- Continue insulin and monitor blood sugars; seek care for readings > 250 mg/dL or < 70 mg/dL.  
+- Use albuterol inhaler for wheezing or shortness of breath; note any increase in usage.  
+- Stop smoking; accept nicotine‑replacement therapy if needed.  
+- Return to the emergency department if he develops increased shortness of breath, chest pain radiating to the left arm or jaw, new palpitations, hemoptysis, or any signs of bleeding.  
+
+No further information was available regarding physical examination findings or imaging results at the time of this note.

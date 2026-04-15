@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-120b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 03:13:02
+Time: 5.51s
+Tokens: 6,798 in / 1,927 out
+============================================================
+
+Patient Information  
+Name: Abby Ondricka Date of Birth: 16 January 2003 (Age 23) Sex: Female Address: 564 Breitenberg View, Westfield, Massachusetts 01086 Unit/Patient ID: 145  
+
+Chief Complaint  
+Follow‑up for newly recurrent asthma symptoms and clarification of inhaler regimen; patient also inquires about eligibility for military service (Marines) with asthma.  
+
+History of Present Illness  
+Abby reports that approximately two months ago she was evaluated in the clinic and informed that her childhood asthma had returned. Since that visit she has experienced intermittent dyspnea primarily during vigorous exertion in school gym class. She describes an inability to maintain a fast run, feeling “can’t breathe,” and having to stop or slow down. The shortness of breath resolves within a few minutes after cessation of activity. She also notes episodes of chest tightness and difficulty breathing when exposed to cold outdoor temperatures (e.g., while building a snowman) and when in a friend’s home with multiple cats, at which time she heard wheezing. The cat‑related episode required her to leave the environment to relieve symptoms, and the relief took longer than with exercise‑related symptoms. She denies any cough, nocturnal symptoms, or daytime wheezing outside of these triggers. She reports occasional seasonal allergic rhinitis in the spring (runny, itchy eyes) and mild allergic reactions to cats.  
+
+Abby is currently using two inhalers prescribed at the prior visit: a daily inhaled corticosteroid (fluticasone propionate) and a short‑acting beta‑agonist (albuterol) rescue inhaler. She is confused about the dosing schedule. She states she attempts to use the corticosteroid inhaler twice daily but sometimes only once due to forgetfulness, and she uses the albuterol inhaler “when needed,” typically during gym class. She has not experienced nighttime symptoms, chest pain, fever, gastrointestinal upset, urinary or bowel changes, rashes, or systemic signs of infection.  
+
+She expresses concern regarding her desire to enlist in the United States Marine Corps and wants clarification on whether her asthma will be a disqualifying condition. She also requests a review of her pulmonary function testing, which was performed at the previous visit and indicated return of obstructive changes consistent with asthma.  
+
+Past Medical History  
+- Childhood asthma (diagnosed 2007, previously well controlled, now recurrent as of 2024)  
+- Atopic dermatitis (resolved 2021)  
+- Perennial allergic rhinitis (historically present, now intermittent)  
+- Multiple episodes of acute bronchitis (2016, 2021)  
+- Acute viral pharyngitis (2016)  
+- Acute infective cystitis (2018)  
+- Dental caries and gingivitis (multiple episodes)  
+- Orthopedic injury: right leg fracture (year not specified)  
+- Wisdom teeth extraction (year not specified)  
+
+Allergies  
+Documented environmental allergies include mold, house dust mite, animal dander, grass pollen, tree pollen, wheat, and tree nuts (all severity noted as mild). The patient reports possible cat allergy with wheezing on exposure. No known drug allergies.  
+
+Medications (active)  
+- Fluticasone propionate metered‑dose inhaler 44 µg (1 actuation) – prescribed for daily use, intended twice daily.  
+- Albuterol inhalation solution 0.083 mg/ML – prescribed as rescue inhaler, “as needed.”  
+- Fexofenadine hydrochloride 30 mg tablet – daily antihistamine for allergic rhinitis.  
+- Epinephrine auto‑injector 0.3 mL (1 mg/mL) – for emergency anaphylaxis.  
+(Other medications listed in the record such as oral contraceptive packs, acetaminophen, ciprofloxacin, etc., are not currently active for this visit.)  
+
+Family History  
+Father: History suggestive of childhood asthma that has resolved; seasonal allergic rhinitis in spring. Mother and siblings: No reported chronic medical conditions. No known hereditary cardiac, diabetic, or oncologic diseases.  
+
+Social History  
+The patient lives with both parents and a younger brother. She is a high‑school junior (Grade 11) attending a local high school. She reports no tobacco, nicotine, or illicit drug use. Alcohol consumption is occasional (beer at weekend social gatherings). Regular exercise is reported as “none,” although she participates in required gym class. Diet consists of typical home‑prepared meals (cereal breakfast, sandwich lunch, meat/vegetable dinner). She is sexually active with one girlfriend, reports consistent condom use, and has no prior sexually transmitted infections. No suicidal ideation or self‑harm thoughts.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or weight change reported.  
+HEENT: Seasonal allergic rhinitis with itchy, watery eyes in spring; no chronic sinus congestion.  
+Respiratory: Exercise‑induced dyspnea, cold‑induced chest tightness, cat‑related wheezing; no cough, no nocturnal dyspnea, no sputum production.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel habit changes.  
+Genitourinary: No dysuria, frequency, or incontinence.  
+Musculoskeletal: History of healed leg fracture; no current pain or limitation.  
+Skin: No current rash or pruritus; prior atopic dermatitis resolved.  
+Neurologic: No headaches, dizziness, or syncope.  
+Psychiatric: PHQ‑2 score low (0‑2), GAD‑7 score low (1‑2); denies depressive or anxiety symptoms.  
+Endocrine, Hematologic, Allergic/Immunologic: Known environmental allergies; no new allergic reactions noted.  
+
+Physical Examination  
+No objective findings documented in the encounter. Vitals recorded on 5 February 2015 (historical) show heart rate 99 bpm, respiratory rate 13 /min, BMI 17.95 kg/m²; blood pressure and temperature not documented for the current visit. No physical exam details available; therefore: No information available.  
+
+Assessment  
+1. Recurrent asthma, now symptomatic with exercise, cold air, and cat exposure; likely mixed‑type (exercise‑induced and allergen‑triggered).  
+2. Seasonal allergic rhinitis, intermittent, likely contributing to lower airway hyperreactivity.  
+3. Mild environmental allergies (dust mite, mold, pollens, animal dander).  
+4. Concern regarding military enlistment eligibility due to asthma.  
+5. Underweight (BMI 17.9) – nutritional status to monitor.  
+
+Plan  
+- Asthma Management:  
+  • Reinforce daily use of inhaled corticosteroid (fluticasone) twice daily; provide written dosing schedule and set reminders.  
+  • Continue albuterol as rescue inhaler, limit to ≤2 puffs per exacerbation; instruct patient to use albuterol before anticipated exertion (e.g., 15 minutes prior to gym) if symptoms are predictable.  
+  • Arrange for repeat spirometry with bronchodilator response within the next 4–6 weeks to objectively assess control and severity.  
+  • Consider adding a leukotriene receptor antagonist (e.g., montelukast) if symptoms persist despite optimized inhaled therapy.  
+- Allergic Rhinitis:  
+  • Continue daily fexofenadine; advise intranasal corticosteroid spray (e.g., fluticasone nasal spray) during peak pollen season.  
+  • Counsel on environmental control measures: reduce indoor dust, use HEPA filters, avoid cat exposure when possible.  
+- Education:  
+  • Review proper inhaler technique for both metered‑dose and rescue inhalers.  
+  • Provide an Asthma Action Plan outlining green, yellow, and red zones, medication steps, and when to seek urgent care.  
+- Military Eligibility:  
+  • Explain that the U.S. Marine Corps generally disqualifies individuals with active asthma requiring medication; however, a thorough pulmonary evaluation and documentation of well‑controlled status may be required for a possible waiver. Offer referral to a pulmonology specialist for formal assessment and possible clearance documentation.  
+- Nutrition:  
+  • Advise balanced diet with adequate caloric intake to address low BMI; consider referral to a dietitian if weight does not improve.  
+- Follow‑up:  
+  • Return visit in 6 weeks to review spirometry results, medication adherence, and reassess control.  
+  • Earlier return if increased frequency of rescue inhaler use, nighttime symptoms, or exacerbations occur.  
+
+The patient voiced understanding of the plan and agreed to the outlined steps. All questions regarding medication regimen and military service eligibility were addressed.

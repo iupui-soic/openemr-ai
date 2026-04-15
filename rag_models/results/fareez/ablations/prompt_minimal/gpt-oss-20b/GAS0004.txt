@@ -1,0 +1,141 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 04:29:18
+Time: 3.04s
+Tokens: 11,364 in / 1,641 out
+============================================================
+
+**Patient Information**  
+Name: *Not provided in transcript*  
+Age/Date of Birth: *Not specified in transcript* (transcript patient appears to be a college‑aged student)  
+Sex: Female  
+Location: College dormitory with two roommates  
+
+**Chief Complaint**  
+Three to four days of frequent, loose, watery diarrhea with associated mild cramping, nausea, and intermittent vomiting.  
+
+---
+
+### SOAP Note
+
+**S – Subjective**
+
+- **History of Present Illness (HPI):**  
+  The patient reports the onset of diarrhea approximately 3–4 days ago. She describes the stools as “loose” and “all brown.” She has been experiencing an episode every hour, leading to multiple bowel movements per day. No blood or mucus noted. Mild crampy abdominal pain began yesterday, intermittent and associated with the urge to defecate.  
+  She reports intermittent nausea and has vomited twice over the past 24 hrs; the vomitus was non‑bloody and watery. No fever, chills, or rigors reported. She denies changes in urinary habits or dysuria. No recent travel.  
+  She ate at a new Chinese restaurant 5 days ago (rice with chicken Manchurian) before symptoms began. No other dietary changes.  
+  She has not taken any over‑the‑counter anti‑diarrheal or anti‑nausea medications. She has been drinking water to compensate for fluid loss.  
+  She reports decreased appetite since onset of cramps; however, she has not lost weight or had significant caloric restriction.  
+
+- **Past Medical History:**  
+  - Asthma; uses rescue inhaler as needed.  
+  - No previous gastrointestinal illnesses or chronic GI disease.  
+
+- **Medications:**  
+  - Short‑acting β₂‑agonist inhaler (as needed).  
+  - No other regular medications.  
+
+- **Allergies:**  
+  - None reported.  
+
+- **Social History:**  
+  - Lives in a shared dorm with two roommates.  
+  - Occasionally drinks alcohol on weekends (1–2 drinks).  
+  - Does not smoke or use illicit substances.  
+
+- **Family History:**  
+  - No known family history of gastrointestinal disease, inflammatory bowel disease, or significant abdominal surgeries.  
+
+- **Review of Systems (ROS):**  
+  - **Constitutional:** No fever, chills, night sweats, or weight loss.  
+  - **Gastrointestinal:** Frequent loose stools, mild abdominal cramping, nausea, vomiting (2 episodes, non‑bloody, watery), no melena or hematochezia. No changes in appetite, no constipation.  
+  - **Genitourinary:** No dysuria, no hematuria.  
+  - **Respiratory:** Intermittent wheezing (asthma), no cough or sputum.  
+  - **Cardiovascular/Neurologic/ENT/Other:** Unremarkable.  
+
+---
+
+**O – Objective**
+
+- **Vital Signs** (at encounter):  
+  - Temperature: Not measured (patient denies fever).  
+  - Blood Pressure: Not obtained.  
+  - Heart Rate: Not obtained.  
+  - Respiratory Rate: Not obtained.  
+  - Oxygen Saturation: Not obtained.  
+
+- **Physical Examination:**  
+  - **General:** Alert, cooperative, mildly distressed from abdominal discomfort.  
+  - **Abdomen:** Soft, non‑distended. Mild diffuse tenderness to palpation, especially in the lower abdomen. No rebound or guarding. No palpable organomegaly.  
+  - **Rectal Exam:** Not performed.  
+  - **Skin:** No rashes or petechiae.  
+  - **HEENT, Cardiovascular, Pulmonary:** Normal.  
+
+- **Laboratory / Imaging Findings:**  
+  No labs or imaging performed during this visit. (Patient is advised to obtain stool studies if symptoms persist.)  
+
+---
+
+**A – Assessment**
+
+1. **Acute infectious diarrhea** – most likely viral or bacterial in origin, given the recent dining at an unfamiliar restaurant and the acute onset.  
+2. **Nausea/vomiting** secondary to gastrointestinal irritation.  
+3. **Asthma** – stable, no exacerbation noted.  
+
+**Differential Diagnosis:**
+- Food‑borne bacterial gastroenteritis (e.g., Salmonella, Shigella, Campylobacter).
+- Viral gastroenteritis (e.g., norovirus, adenovirus).
+- Clostridioides difficile infection (unlikely given no recent antibiotic use, but should be considered if symptoms persist or worsen).
+- Irritable bowel syndrome (unlikely given acute onset and precipitating event).
+- Inflammatory bowel disease flare (unlikely acute presentation).
+- Medication‑induced diarrhea (none reported).
+
+---
+
+**P – Plan**
+
+1. **Rehydration & Electrolyte Management**  
+   - Encourage oral rehydration solutions (e.g., Pedialyte or an oral rehydration solution with 3–5 % glucose) – 2–4 cups every hour, as tolerated.  
+   - If unable to tolerate oral fluids due to persistent vomiting, consider intravenous fluids (e.g., 0.9% normal saline, 250 mL IV over 1 hr) and electrolyte monitoring.
+
+2. **Symptomatic Therapy**  
+   - Loperamide 2 mg PO after first loose stool; may repeat every 4 hrs as needed, maximum 8 mg/24 hrs.  
+   - Metoclopramide 10 mg PO 3–4 hrs before meals if nausea remains.  
+   - Avoid NSAIDs; acetaminophen for pain if necessary.
+
+3. **Dietary Modifications**  
+   - Bland, low‑fiber diet (BRAT: bananas, rice, applesauce, toast).  
+   - Avoid dairy, high‑fat, spicy, and carbonated foods until resolution.  
+   - Resume regular diet gradually as symptoms improve.
+
+4. **Stool & Diagnostic Work‑up**  
+   - If symptoms persist >48 hrs, or if stool is bloody or accompanied by high fever >38.3 °C, send stool culture, ova & parasite, and C. difficile toxin assay.  
+   - Consider stool leukocytes if dysentery suspected.
+
+5. **Monitoring & Follow‑up**  
+   - Monitor for signs of dehydration: decreased urine output, dizziness, tachycardia.  
+   - Follow‑up in clinic or urgent care in 48–72 hrs if symptoms persist or worsen.  
+   - If vomiting >6 hrs or signs of severe dehydration, seek emergency care immediately.
+
+6. **Patient Education & Safety**  
+   - Explain that most viral gastroenteritis resolves in 3–5 days.  
+   - Emphasize hand hygiene and safe food handling.  
+   - Advise to stay away from school/work until symptoms subside (at least 24 hrs after last bowel movement).  
+   - Encourage hydration and rest.
+
+7. **Asthma Management**  
+   - No changes to inhaler regimen.  
+   - Reinforce proper inhaler technique.
+
+8. **Documentation & Coding**  
+   - ICD‑10: A09.9 Acute gastroenteritis and colitis, unspecified.  
+   - CPT: 99213 (Established patient visit, moderate complexity).  
+
+---
+
+**Disposition**  
+Patient discharged home with instructions to monitor hydration and symptom progression, with clear red‑flag instructions (fever, bloody stool, persistent vomiting, severe abdominal pain).  
+
+**Signature**  
+[Provider Name, Credentials]   (Date: __)

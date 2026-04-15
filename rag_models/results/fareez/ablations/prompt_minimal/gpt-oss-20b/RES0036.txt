@@ -1,0 +1,125 @@
+Model: openai/gpt-oss-20b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:28:00
+Time: 2.96s
+Tokens: 10,351 in / 1,913 out
+============================================================
+
+**Patient Information**  
+- **Name:** [Patient’s name not provided]  
+- **Sex:** Female  
+- **Age:** Not disclosed (history suggests adult >30 years)  
+- **Occupation:** Works in a crowded office with poor ventilation and high humidity; no formal employment details beyond a one‑year tenure.  
+- **Social History:** Smokes 10 cigarettes/day (since age 20); occasional cannabis use (≈5 mg/week); drinks ~5 alcoholic beverages/week; sedentary lifestyle; diet heavy in fast food and junk food; lives in a poorly maintained small apartment with possible mold and dust exposure; owns birds (3‑year ownership); no known drug allergies.
+
+---
+
+### Subjective
+
+**Chief Complaint:**  
+“Breathlessness and coughing that have worsened over the past six days.”
+
+**History of Present Illness (HPI):**  
+- Onset: 6 days ago, sudden onset of shortness of breath (SOB) and productive cough.  
+- Cough: Persistent, with rusty‑colored sputum noted 2–3 times daily. No frank hemoptysis; the sputum color is described as “rusty” but not confirmed to be blood.  
+- SOB: Constant, worsens with exertion (walking), no variation with temperature or allergens, and unchanged by position or time of day.  
+- Chest pain: Sharp, pleuritic, associated with coughing, rating 7/10, improves as cough subsides.  
+- Constitutional symptoms: Feels “feeling chilly” and has “feeling feverish” (no temperature taken); no chills described; denies night sweats.  
+- Associated symptoms: Mild runny nose a few days before symptom onset; no sore throat, no ear pain. No headaches, nausea, vomiting, dizziness, syncope, chest pressure, palpitations, or abdominal pain. No weight loss, altered bowel or urinary habits, or appetite changes.  
+- Symptom course: Symptoms have been progressively worsening; no periods of improvement.
+
+**Review of Systems (ROS):**  
+
+| System | Findings |
+|--------|----------|
+| Constitutional | Mild subjective fever; no chills or night sweats; no weight loss. |
+| Respiratory | Persistent SOB, productive cough with rusty sputum, mild wheezing; no orthopnea or paroxysmal nocturnal dyspnea; no dyspnea at rest. |
+| Cardiovascular | Denies chest pressure, palpitations, or edema. |
+| Gastrointestinal | No nausea/vomiting, no abdominal pain, no diarrhea/constipation. |
+| Genitourinary | No dysuria, frequency, hematuria. |
+| Musculoskeletal | No myalgias, arthralgias. |
+| Neurologic | No dizziness, syncope, headaches. |
+| Endocrine | Denies polyuria, polydipsia. |
+| Skin | No rash. |
+
+**Past Medical History (PMH):**  
+Not disclosed; the patient reports no chronic illnesses, surgeries, or hospitalizations.
+
+**Past Surgical History:**  
+None reported.
+
+**Allergies:**  
+None known.
+
+**Family History:**  
+No family history of lung disease, cardiovascular disease, or malignancy reported.
+
+**Current Medications:**  
+None currently taken.
+
+**Social History:**  
+- **Smoking:** 10 cigarettes/day, since age 20.  
+- **Alcohol:** ~5 drinks/week.  
+- **Cannabis:** Occasional use; approximately 5 mg per week.  
+- **Exercise:** Minimal; patient believes she does not get enough daily activity.  
+- **Occupation:** Works in a crowded office with high humidity and a likely defective air conditioning unit; no protective equipment reported.  
+- **Housing:** Small apartment, poorly maintained, potential mold/dust, old building with possible asbestos exposure.  
+- **Pets:** Birds for 3 years; no prior respiratory issues from them.
+
+**Medications/ Supplements:**  
+None.
+
+---
+
+### Objective
+
+**Vitals:**  
+No vitals were recorded during this encounter; prior EMR data is from 1983 and is not clinically relevant.
+
+**Physical Examination:**  
+No bedside exam was documented in this transcript. A formal exam is recommended.
+
+**Laboratory Findings:**  
+No labs obtained during this visit. Prior laboratory data is obsolete and does not reflect current status.
+
+**Imaging:**  
+No imaging was obtained yet. A chest X‑ray is indicated.
+
+---
+
+### Assessment
+
+The patient presents with a 6‑day history of acute, progressive shortness of breath, productive cough with rusty sputum, pleuritic chest pain, mild subjective fever, and wheezing. Given the sudden onset, productive sputum, and pleuritic pain, **community‑acquired pneumonia (CAP)** is the leading diagnosis. **COPD exacerbation** is also high on the differential due to significant smoking history. Other considerations include acute bronchitis, aspiration pneumonia, or congestive heart failure, but the lack of orthopnea, edema, or known cardiac disease makes them less likely.
+
+**Differential Diagnosis:**
+
+| # | Diagnosis | Supporting Features | Contradictory Features |
+|---|-----------|---------------------|------------------------|
+| 1 | Community‑acquired pneumonia | Sudden onset, productive cough with rusty sputum, pleuritic pain, subjective fever, wheezing, smoking history | No objective fever, no leukocytosis yet |
+| 2 | COPD exacerbation | Smoking history, wheezing, cough, SOB | No prior COPD diagnosis; sputum less typical |
+| 3 | Acute bronchitis | Cough and wheeze | Usually no pleuritic pain, sputum not rusty |
+| 4 | Congestive heart failure | SOB | No orthopnea, edema, or known cardiac disease |
+| 5 | Aspiration pneumonia | Exposure to dusty environment | No vomiting or aspiration events reported |
+
+**Primary Diagnosis:** Community‑acquired pneumonia (CAP)
+
+**Secondary Diagnosis:** Smoking‑related pulmonary disease (possible COPD) – to be confirmed.
+
+---
+
+### Plan
+
+| Category | Action | Rationale |
+|----------|--------|-----------|
+| **Diagnostics** | 1. **Chest X‑ray (CXR)** – to confirm infiltrate. <br>2. **CBC with differential** – to assess for leukocytosis. <br>3. **Basic Metabolic Panel (BMP)** – baseline electrolytes, renal function. <br>4. **Sputum Gram stain & culture** – if available. | Confirm pneumonia, evaluate severity, guide antibiotic choice. |
+| **Medications** | 1. **Empiric antibiotics**: <br>• *Azithromycin* 500 mg PO daily for 5 days OR <br>• *Amoxicillin‑clavulanate* 875/125 mg PO BID for 10 days. <br>2. **Bronchodilator**: SABA (albuterol) inhaler PRN for wheeze. <br>3. **Corticosteroid**: Low‑dose oral prednisone 40 mg daily for 5 days if marked wheezing or COPD suspected. | Treat CAP; cover typical & atypical organisms. Address potential COPD exacerbation. |
+| **Lifestyle/Behavioral** | • Counsel on smoking cessation; discuss nicotine replacement or varenicline. <br>• Discuss alcohol moderation. <br>• Advise on regular exercise; refer to pulmonary rehab if indicated. <br>• Recommend evaluation of housing conditions (mold, dust, asbestos) and occupational exposure (air quality). | Reduce future respiratory risk. |
+| **Monitoring** | • Observe for worsening SOB, tachycardia, or hypoxia. <br>• Check SpO₂ if available. | Early detection of deterioration. |
+| **Follow‑up** | • Re‑evaluate in 48–72 h with repeat vitals, symptom review, and possibly repeat CXR if clinically warranted. <br>• If symptoms persist >5 days or worsen, consider hospitalization and advanced imaging (CT chest). | Ensure resolution and adjust therapy. |
+| **Patient Education** | • Explain the likely diagnosis of pneumonia and expected course. <br>• Instruct on medication adherence and inhaler technique. <br>• Warn of red‑flag symptoms (worsening dyspnea, chest pain, fever >102 °F, confusion). | Empower patient and improve compliance. |
+| **Documentation** | • Document all findings and plan. <br>• Update EMR with new PMH details if any changes. | Maintain continuity of care. |
+
+---
+
+**Disposition:** The patient will be discharged home with instructions and a follow‑up appointment in 3 days. All necessary prescriptions will be written and handed to the patient. The patient is advised to call the clinic or emergency services if symptoms deteriorate.

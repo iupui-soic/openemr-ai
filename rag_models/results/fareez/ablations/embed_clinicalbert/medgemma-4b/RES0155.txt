@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:59:27
+Time: 32.08s
+Tokens: 12,398 in / 533 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Adela Tapia, DOB 1914-01-07, is a 98-year-old female residing at 517 Hills Trace, Stoneham, Massachusetts 02180. She is currently employed at a grocery store.
+
+Chief Complaint:
+
+The patient presents with shortness of breath and chest discomfort, which have been worsening over the past five days.
+
+History of Present Illness:
+
+The patient reports experiencing worsening shortness of breath and chest discomfort over the past five days. She also has a cough that has been getting worse. The cough produces yellowish or greenish sputum. She denies any blood in her sputum. The shortness of breath is exacerbated by exertion, but she is currently asymptomatic at rest. The chest discomfort is constant and described as congestion. She denies any pain or sharp stabbing or pressure-like pain. The symptoms are worse when lying flat. She denies gasping for air at night. She denies fever or chills. She denies sore throat, runny nose, or other associated symptoms. She has not tried any medications to alleviate her symptoms. She uses an inhaler, but it has not been effective. She denies headaches or changes in vision. She denies nausea, vomiting, or increased fatigue. She denies palpitations. She denies diarrhea or constipation. She denies issues with urination. She denies changes in sleep or appetite. She denies night sweats. She denies significant weight change. She denies exposure to anyone sick. She has had similar symptoms before.
+
+Past Medical History:
+
+The patient has a history of COPD, hypertension, and GERD. She was diagnosed with COPD three years ago. She takes Ventolin, Symbicort, and an ACE inhibitor for her conditions. She has no known allergies.
+
+Medications:
+
+The patient takes Ventolin, Symbicort, and an ACE inhibitor.
+
+Social History:
+
+The patient is a smoker, smoking approximately one pack per day for 30-40 years. She has no other substance use.
+
+Family History:
+
+The patient denies any significant family history of medical conditions.
+
+Physical Exam:
+
+(Information from the OpenEMR extract is not available, so this section is left blank.)
+
+Assessment:
+
+The patient's symptoms and history are suggestive of an exacerbation of her COPD, possibly triggered by a viral or bacterial infection.
+
+Plan:
+
+The patient is being evaluated at the emergency department. They will perform a physical examination, obtain vital signs, and order blood work and a chest X-ray to rule out pneumonia. They will also provide nebulized medications for her home use. The patient will be monitored for response to treatment.

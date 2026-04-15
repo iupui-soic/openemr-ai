@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:41:00
+Time: 3.51s
+Tokens: 10,823 in / 1,074 out
+============================================================
+
+Patient Information  
+The patient is a 28-year-old female who presented to the emergency department with a chief complaint of left-sided chest pain. She is employed as a mechanic and lives independently in an apartment. She has a history of hay fever and multiple allergies to nasal sprays and antihistamines. She is a heavy smoker, averaging 2.5 to 3 packs per day, and occasionally consumes alcohol on weekends. She denies any recreational drug use. Her father has type 2 diabetes, and there is no known family history of heart problems or cancer.
+
+Chief Complaint  
+The patient reports left-sided chest pain that began approximately 2 hours prior to arrival. She was riding her bicycle when she fell and struck her left chest. Since the fall, the pain has progressively worsened and is described as sharp and stabbing. The pain is exacerbated by deep breathing, prompting her to take shallow breaths to minimize discomfort. She denies any loss of consciousness, head injury, or other injuries at the time of the fall.
+
+History of Present Illness  
+The patient fell off her bicycle and struck her left chest. The pain is localized to the left side and has been progressively worsening over the past 2 hours. She describes the pain as sharp and stabbing. The pain is exacerbated by deep breathing, and she feels short of breath. She denies any prior episodes of chest pain, fever, chills, nausea, vomiting, cough, dizziness, or syncope. She denies any numbness, tingling, or weakness. She was wearing a helmet at the time of the fall and denies any head injury. She reports no other injuries beyond minor scrapes on her hands. She denies any recent infections or other systemic symptoms.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight loss.  
+Respiratory: No cough or shortness of breath beyond what is described in the HPI.  
+Cardiovascular: No palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No headache, dizziness, or neurological deficits.  
+Musculoskeletal: No other injuries beyond the chest trauma.  
+Other: No rash, changes in vision, or other systemic symptoms.
+
+Allergies  
+The patient has allergies to nasal sprays containing steroids and some antihistamines. No known drug allergies have been documented in the electronic health record.
+
+Past Medical History  
+The patient has a history of hay fever and has experienced a prior miscarriage. She has a long-standing history of essential hypertension and chronic kidney disease, progressing through multiple stages. She has a history of sepsis, septic shock, and has undergone a renal transplant. She has a history of dental issues including gingivitis and problems with dental fillings. She has also experienced anxiety and stress in the past.
+
+Surgical History  
+No surgical history is documented.
+
+Social History  
+The patient is a current smoker, averaging 2.5 to 3 packs per day. She occasionally consumes alcohol on weekends but denies regular use. She does not use recreational drugs. She works as a mechanic and lives independently.
+
+Family History  
+The patient’s father has type 2 diabetes. No other significant family history is noted.
+
+Current Medications  
+The patient is currently taking tacrolimus (oral and injectable forms), naproxen sodium, and amLODIPine. Other medications include epoetin alfa, mestranol/norethynodrel, and sodium fluoride oral gel. These medications are related to her history of renal transplant, hypertension, and other chronic conditions.
+
+Objective  
+Vital Signs: No current vital signs are available in the electronic health record.  
+Physical Exam: No physical exam findings are documented in the provided data.  
+Labs: Laboratory results include normal glucose levels, normal potassium, and normal creatinine. No significant abnormalities in the complete blood count or metabolic panel are noted. Urinalysis is normal with no evidence of hematuria or proteinuria.  
+Imaging: No imaging studies are reported in the provided data.
+
+Assessment  
+The patient presents with left-sided chest pain following a traumatic fall. The pain is sharp, stabbing, and worsens with deep breathing. Given the mechanism of injury and the absence of other systemic symptoms, the most likely diagnosis is musculoskeletal chest wall injury, possibly including rib fracture or contusion. The absence of fever, cough, or other signs of infection makes pneumonia or pleuritis less likely. The absence of cardiac risk factors and lack of typical anginal symptoms make acute coronary syndrome unlikely. Further imaging or physical examination may be necessary to confirm the diagnosis.
+
+Plan  
+The patient should undergo a thorough physical examination, including assessment of the chest wall for tenderness, deformity, or crepitus. A chest X-ray is recommended to rule out rib fractures or other bony injuries. Pain management with acetaminophen or NSAIDs may be considered. The patient should be advised to avoid strenuous activity and to follow up with a primary care provider or orthopedic specialist if symptoms persist or worsen. She should be instructed to seek immediate medical attention if she experiences worsening pain, shortness of breath, or other concerning symptoms. Smoking cessation counseling is recommended. No specific medications are prescribed at this time.

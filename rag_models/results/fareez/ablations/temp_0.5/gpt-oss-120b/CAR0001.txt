@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:10:35
+Time: 4.21s
+Tokens: 9,625 in / 1,364 out
+============================================================
+
+Patient Information  
+Name: Not provided  
+Age: 39 years  
+Sex: Male  
+Date of Encounter: 2024‑06‑04  
+
+Chief Complaint  
+The patient presented with acute left‑sided chest pain that began the previous night and has persisted for approximately eight hours.
+
+History of Present Illness  
+The patient reports that the chest pain started last night while he was moving furniture. He describes the pain as sharp, located on the left side of the chest, and constant in nature. The intensity is rated 7‑8/10. Lying down worsens the pain, while assuming a supine position provides some relief. Deep breathing may exacerbate the discomfort. He denies any specific injury or trauma at the time of onset. Associated symptoms include light‑headedness, shortness of breath, and a sensation of a racing heart. He has not experienced loss of consciousness, nausea, vomiting, fever, chills, cough, wheezing, or hemoptysis. He denies prior episodes of similar pain. The patient notes mild swelling of his neck but no neck pain or recent neck trauma.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Cardiovascular: Chest pain (sharp, left‑sided, 7‑8/10), light‑headedness, palpitations. No known history of syncope.  
+Respiratory: Shortness of breath, mild dyspnea on exertion; no cough, wheeze, or hemoptysis.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Neurologic: No headache, dizziness beyond light‑headedness, or focal deficits.  
+Musculoskeletal: No recent trauma; pain worsens with deep inspiration.  
+Skin: No rashes; mild neck swelling reported.  
+
+Past Medical History  
+The patient reports no known chronic medical conditions.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+The patient lives alone in an apartment and works as an accountant. He smokes approximately one pack of cigarettes per day and has done so for the past 10‑15 years. He uses cannabis occasionally (≈5 mg per week) and drinks alcohol roughly 1‑2 drinks per day (≈10 drinks per week). He exercises by running for about 30 minutes every other day and attempts to eat a healthy dinner while often eating lunch out.  
+
+Family History  
+Father experienced a myocardial infarction at age 45 and has a history of hypercholesterolemia. No other family history of heart disease, stroke, or cancer reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+The patient reports taking no prescription or over‑the‑counter medications.  
+
+Vital Signs  
+No vital sign data were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented.  
+
+Laboratory Data (most recent values)  
+- Sodium: 142.9 mmol/L  
+- Potassium: 3.79 mmol/L  
+- Chloride: 106.0 mmol/L  
+- Carbon dioxide (total): 27.3 mmol/L  
+- Blood urea nitrogen: 9.2 mg/dL  
+- Creatinine: 0.88 mg/dL (serum) / 0.71 mg/dL (repeat)  
+- Glucose: 78.6 mg/dL (both measurements)  
+- Calcium: 8.75 mg/dL  
+- Hemoglobin/Hematocrit: 49.1 % hematocrit, RBC 4.43 ×10⁶/µL (values suggest high normal hematocrit)  
+- Platelet distribution width: 451.3 fL (out of reference range)  
+- No protein, glucose, or hemoglobin detected in urine.  
+- AUDIT‑C score: 2 (low risk alcohol use)  
+- GAD‑7 score: 1 (minimal anxiety)  
+
+Imaging  
+No imaging studies were performed during this visit.  
+
+Assessment  
+1. Acute left‑sided chest pain, sharp, constant, associated with dyspnea and light‑headedness – rule out acute coronary syndrome (ACS) given family history of premature myocardial infarction and significant tobacco use.  
+2. Possible musculoskeletal or pleuritic component given pain worsens with deep breathing and lack of radiation.  
+3. Tobacco use disorder, 1 pack per day for >10 years.  
+4. Mild neck soft‑tissue swelling of uncertain etiology.  
+
+Plan  
+- Immediate 12‑lead electrocardiogram (ECG) to assess for ischemic changes.  
+- Obtain cardiac biomarkers (troponin I/T) at presentation and repeat in 3–6 hours.  
+- Chest radiograph to evaluate for pulmonary pathology (pneumothorax, infiltrate).  
+- Continuous cardiac monitoring while in the emergency department.  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 94 % if needed.  
+- Administer sublingual nitroglycerin 0.4 mg if ECG shows ischemic changes or if pain persists and blood pressure allows (target SBP > 100 mmHg).  
+- Offer low‑dose aspirin 325 mg PO unless contraindicated.  
+- Consider short‑acting beta‑blocker (metoprolol) if tachycardia is present and no contraindications.  
+- Order basic metabolic panel and complete blood count if not already obtained.  
+- Counsel patient on smoking cessation; provide referral to tobacco cessation program and discuss nicotine replacement therapy.  
+- Advise avoidance of heavy exertion until cardiac causes are excluded.  
+- Schedule follow‑up with primary care physician within 48 hours and cardiology within 1 week, or sooner if symptoms worsen.  
+- Provide education on red‑flag symptoms (increasing chest pain, diaphoresis, syncope, new palpitations) and instruct the patient to seek emergency care if they occur.  
+
+Disposition  
+The patient was placed under observation pending results of ECG, cardiac enzymes, and chest X‑ray. Discharge instructions will be given once acute causes are ruled out or appropriately managed.

@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 04:11:38
+Time: 5.62s
+Tokens: 11,831 in / 1,637 out
+============================================================
+
+Patient Information  
+Aaron Bartoletti, Male, DOB 03‑Aug‑1981, age 44, residing at 409 Veum Drive, Spencer, Massachusetts 01562. He is employed part‑time and lives with his boyfriend. He presents for evaluation of recent loss of smell.
+
+Chief Complaint  
+Acute loss of smell (anosmia) for the past two days.
+
+History of Present Illness  
+The patient reports that for the last two days he has been unable to detect odors or taste his food. He describes biting into an onion and noticing no flavor. He denies any associated fever, chills, night sweats, cough, shortness of breath, sore throat, nasal congestion, rhinorrhea, or ear or eye pain. He notes mild fatigue and a vague feeling of being “a little dry,” but no other systemic symptoms. He has not measured his temperature, though he feels “a little hot” at times. He has not experienced headache, nausea, vomiting, diarrhea, abdominal pain, urinary symptoms, or chest pain. He denies recent exposure to anyone known to be ill; his boyfriend has been asymptomatic, and his classes are conducted online. He has a known peanut allergy and carries an epinephrine autoinjector at all times. He uses a topical steroid cream intermittently for eczema flares and has been on combined oral contraceptive pills for approximately three years. He reports occasional use of marijuana edibles and drinks a few beers on weekends. He is sexually active with his boyfriend and has no history of sexually transmitted infections.
+
+Review of Systems  
+Constitutional: Mild fatigue; no fever, chills, night sweats, weight change.  
+HEENT: Acute loss of smell and taste; no sore throat, nasal discharge, congestion, ear pain, or eye pain.  
+Respiratory: No cough, dyspnea, sputum production, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Musculoskeletal: No joint pain or muscle aches.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Skin: Chronic eczema; no new rash.  
+Psychiatric: Screening questionnaires indicate severe depressive symptoms (PHQ‑9 score 24) and mild anxiety (GAD‑7 score 3). No suicidal ideation reported.  
+
+Allergies  
+Peanut allergy – anaphylaxis (carries epinephrine autoinjector). No known drug allergies.
+
+Past Medical History  
+- Essential hypertension.  
+- Chronic kidney disease progressing to end‑stage renal disease; status post renal transplant (ongoing immunosuppression).  
+- Eczema (atopic dermatitis).  
+- Peanut allergy.  
+- Chronic migraine without aura.  
+- History of severe anxiety/panic disorder (documented).  
+- Depression (PHQ‑9 score 24).  
+
+Surgical History  
+No surgeries reported.
+
+Social History  
+Lives with boyfriend; no tobacco use; occasional marijuana edibles; drinks alcohol (a few beers) on weekends; sexually active with boyfriend; no illicit drug use; no recent travel; adheres to immunosuppressive regimen post‑transplant.
+
+Family History  
+Father and mother without reported chronic illnesses. One uncle had prostate cancer. No known familial cardiac, pulmonary, or metabolic diseases.
+
+Current Medications (home regimen)  
+- Hydrochlorothiazide 25 mg PO daily (hypertension).  
+- Amlodipine 2.5 mg PO daily (hypertension).  
+- Tacrolimus (extended‑release) 1 mg PO daily (immunosuppression).  
+- Topical steroid cream for eczema (used as needed, approximately twice weekly in winter).  
+- Combined oral contraceptive pills (daily).  
+- Epinephrine autoinjector (as needed for peanut exposure).  
+
+Objective  
+Vital Signs (most recent recorded): Heart rate 85 beats/min, respiratory rate 14 breaths/min, height 179.8 cm, BMI 28.8 kg/m². Temperature, blood pressure, and SpO₂ not documented at this encounter.  
+Physical Examination: No examination findings documented; patient appears well‑appearing and in no acute distress.
+
+Laboratory Data (most recent)  
+- Complete blood count: Hemoglobin 16.4 g/dL, Hematocrit within normal limits, WBC 3.5 ×10³/µL (low‑normal), Platelets 209 ×10³/µL.  
+- Metabolic panel: Not provided.  
+- Lipid panel: Total cholesterol 186.6 mg/dL, HDL 62.3 mg/dL, LDL 98.1 mg/dL, Triglycerides 130.7 mg/dL.  
+- Mental health screens: PHQ‑9 = 24 (severe depression), PHQ‑2 = 4, GAD‑7 = 3 (mild anxiety).  
+
+Imaging  
+No imaging studies performed during this visit.
+
+Assessment  
+1. Acute loss of smell and taste (anosmia) – most likely secondary to acute SARS‑CoV‑2 infection given the current pandemic context and the isolated nature of the symptom.  
+2. Hypertension, well‑controlled on hydrochlorothiazide and amlodipine.  
+3. Post‑renal transplant status on tacrolimus; immunosuppressed.  
+4. Chronic eczema, managed with topical steroids as needed.  
+5. Peanut allergy – carries epinephrine autoinjector.  
+6. Severe depressive symptoms (PHQ‑9 = 24) – warrants further evaluation and possible psychiatric referral.  
+
+Plan  
+- Order a nasopharyngeal SARS‑CoV‑2 PCR test today; results expected within 48 hours.  
+- Instruct patient to self‑isolate immediately and remain in isolation for at least 14 days from symptom onset or until cleared per public health guidelines.  
+- Advise supportive care: maintain hydration, adequate nutrition, and monitor for new symptoms such as fever, cough, dyspnea, or worsening fatigue.  
+- Continue all current chronic medications, including antihypertensives and tacrolimus, without interruption.  
+- Reinforce the importance of carrying the epinephrine autoinjector at all times and reviewing proper administration technique.  
+- Counsel regarding safe use of occasional marijuana edibles and moderate alcohol intake; no contraindication noted with current regimen.  
+- Arrange follow‑up with primary care provider within 3‑5 days to review COVID‑19 test result and reassess symptoms.  
+- Given the severe PHQ‑9 score, provide the patient with a referral to behavioral health for depression management and consider initiating a brief antidepressant trial after discussion with his primary physician.  
+- Provide written instructions on red‑flag symptoms that require urgent care (e.g., high fever >38 °C, difficulty breathing, chest pain, new neurologic deficits).  
+
+Follow‑up  
+- Primary care visit in 3‑5 days or sooner if test results return positive or symptoms evolve.  
+- Telehealth or in‑person visit with infectious disease specialist if COVID‑19 confirmed and patient experiences worsening respiratory symptoms.  
+- Behavioral health appointment within the next week for depression evaluation.  
+
+Disposition  
+Patient discharged home with self‑isolation instructions, pending COVID‑19 test results, and a clear plan for follow‑up and symptom monitoring. No immediate emergency interventions required.

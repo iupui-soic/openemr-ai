@@ -1,0 +1,59 @@
+Model: qwen/qwen3-32b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:40:19
+Time: 4.28s
+Tokens: 6,872 in / 1,347 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old female, Amee Reva Goyette, residing at 668 Quigley Mill Apt 10, Beverly, Massachusetts. She is a non-Hispanic white female with a height of 166.4 cm and a BMI of 29.65, indicating obesity. She has a complex past medical history including a history of myocardial infarction, ischemic heart disease, chronic kidney disease progressing to end-stage renal disease, and a renal transplant. She is currently on multiple medications, including lisinopril, metoprolol, simvastatin, and aspirin, among others. She has a history of hypertension, hyperlipidemia, and diabetes-related complications. She has a history of smoking, currently smoking half a pack to a pack per day, and consumes alcohol occasionally. She has a family history of heart disease, with her father having suffered a heart attack at age 60.
+
+Chief Complaint  
+The patient presents with a two-week history of intermittent chest pain. The pain is localized to the left side of the chest, sharp in character, and lasts approximately 20 to 30 minutes per episode. The episodes occur two to three times per week and are not associated with exertion or physical activity. The pain is not relieved by over-the-counter medications such as Advil, Tylenol, or Tums. There is no associated dyspnea, nausea, vomiting, or fever.
+
+History of Present Illness  
+The patient has experienced intermittent episodes of sharp, localized left-sided chest pain over the past two weeks. The pain is described as sharp and occurs in episodes lasting approximately 20 to 30 minutes, with no specific trigger identified. The episodes are not associated with physical exertion and occur primarily while the patient is at work or driving. The patient has not noticed any change in the frequency or intensity of the pain over the two-week period. The pain is not relieved by over-the-counter analgesics or antacids. The patient reports that the episodes resolve spontaneously without residual symptoms. There is no associated dyspnea, nausea, vomiting, or fever. The patient has a history of significant personal stress due to a recent separation from her husband two years ago.
+
+Review of Systems  
+Constitutional: No recent weight loss, fever, or chills reported.  
+Respiratory: No dyspnea, cough, or sputum production.  
+Cardiovascular: No palpitations or syncope.  
+Gastrointestinal: No heartburn, dysphagia, or gastrointestinal symptoms.  
+Other: No neurological deficits, extremity pain, or other systemic symptoms.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a history of myocardial infarction, ischemic heart disease, and chronic kidney disease progressing to end-stage renal disease requiring a renal transplant. She has a history of hypertension, hyperlipidemia, diabetes mellitus with complications including microalbuminuria and proteinuria, and a history of breast cancer. She has also experienced chronic kidney disease in multiple stages, with associated metabolic syndrome and anemia. She has undergone multiple medication reviews and has a history of dental caries and gingivitis.
+
+Surgical History  
+The patient has a history of renal transplant surgery.
+
+Social History  
+The patient is a current smoker, consuming half a pack to a pack of cigarettes daily, and has been attempting to reduce her intake. She consumes alcohol occasionally, with one or two glasses of wine on the weekend. She exercises regularly, engaging in running or cycling three to four times per week. She reports significant personal stress due to a recent separation from her husband two years ago.
+
+Family History  
+The patient has a family history of heart disease, with her father having suffered a heart attack at age 60. There is no known family history of cancer, diabetes, or stroke.
+
+Current Medications  
+The patient is currently taking lisinopril, metoprolol, simvastatin, aspirin, and other medications for chronic conditions. She is not on any new medications for the current chest pain.
+
+Objective  
+Vital signs were not available in the OpenEMR extract. However, the patient is known to have a resting heart rate of 62 bpm and a respiration rate of 12 breaths per minute. She has a history of hypertension and elevated cholesterol levels, though current values are not available. Laboratory results show normal glucose levels, with a recent glucose reading of 77.72 mg/dL. Other laboratory values include normal sodium, potassium, and creatinine levels. There is no evidence of acute myocardial infarction in the available lab results.
+
+Physical Exam  
+No physical examination findings were available in the OpenEMR extract. The patient was assessed in the transcript, and no physical findings were reported during the initial evaluation.
+
+Labs  
+Recent laboratory results include normal glucose levels, electrolytes, and creatinine. There is no evidence of acute myocardial infarction or significant acute changes in the available lab data. The patient has a history of elevated cholesterol and hypertension, but current lipid panel results are not available.
+
+Imaging  
+No imaging studies were reported in the OpenEMR extract.
+
+Assessment  
+The patient presents with intermittent, sharp, left-sided chest pain of two weeks' duration. The pain is not associated with exertion, is not relieved by over-the-counter medications, and is not accompanied by other typical cardiac symptoms such as dyspnea or nausea. Given the patient's age, family history of heart disease, and history of myocardial infarction, the differential diagnosis includes atypical chest pain, musculoskeletal pain, and possible cardiac etiology. The absence of associated symptoms and lack of response to antacids suggests a non-gastroesophageal cause. The patient's current symptoms are not consistent with an acute myocardial infarction based on the available data.
+
+Plan  
+The patient will be referred to her primary care physician for further evaluation, including a comprehensive cardiovascular assessment. An electrocardiogram and possibly additional cardiac testing may be indicated to rule out acute coronary syndrome. The patient will be advised to avoid over-the-counter medications for pain relief until further evaluation is completed. She will be encouraged to continue her current exercise regimen unless advised otherwise by her physician. The patient will be scheduled for a follow-up appointment to discuss further diagnostic and treatment plans. Smoking cessation counseling will be offered, and the patient will be advised to manage stress through appropriate means. The patient will be instructed to seek immediate medical attention if chest pain becomes more frequent, severe, or is accompanied by other concerning symptoms.

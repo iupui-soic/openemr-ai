@@ -1,0 +1,69 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:07:00
+Time: 4.05s
+Tokens: 9,189 in / 929 out
+============================================================
+
+Patient Information  
+The patient is a 25‑year‑old individual presenting for evaluation of new chest pain. No name, date of birth, or gender is documented in the encounter note. The patient reports being generally healthy and is currently a student.
+
+Chief Complaint  
+Sharp chest pain with concern for possible myocardial infarction.
+
+History of Present Illness  
+Three days ago the patient began experiencing intermittent, sharp pain localized over the area of the heart. Each episode lasts only a few seconds and then resolves spontaneously. The pain is rated 6/10 in intensity. It is provoked by coughing and by lying down, and it improves when the patient leans forward. The patient notes occasional radiation of the discomfort to the neck. There are no associated shortness of breath, dizziness, palpitations, syncope, nausea, vomiting, fever, chills, or cough at the time of the visit. The patient took a single dose of acetaminophen (Tylenol) yesterday, which provided some relief. There is no prior history of similar chest pain. The patient recently recovered from an influenza‑like illness one week ago that included fever, rhinorrhea, cough, and fatigue, but those symptoms have resolved.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue reported.  
+Cardiovascular: Positive for intermittent sharp chest pain; negative for palpitations, orthopnea, dyspnea on exertion, edema, or syncope.  
+Respiratory: No current cough, dyspnea, or wheezing. Recent resolved cough associated with a flu‑like illness.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+Neurologic: No headache, dizziness, or focal weakness.  
+Psychiatric: No anxiety or depression reported.  
+Musculoskeletal: No joint pain or recent trauma.  
+Skin: No rashes.  
+
+Past Medical History  
+The patient reports no chronic medical conditions, surgeries, or hospitalizations.
+
+Surgical History  
+No prior surgeries.
+
+Social History  
+The patient is a full‑time engineering student at Western University and works part‑time as a postman. He/she lives in a house with his/her mother. Alcohol use is occasional (one to two drinks on weekends). The patient does not smoke, use tobacco, or use recreational drugs. No regular exercise is reported.
+
+Family History  
+Father suffered a myocardial infarction two weeks ago and subsequently died. No other family history of cardiac disease, cancer, diabetes, or stroke is noted.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+Occasional acetaminophen (Tylenol) as needed for pain. No other prescription or over‑the‑counter medications reported.
+
+Vital Signs  
+No vital signs were recorded during this encounter.
+
+Physical Examination  
+No physical examination findings were documented.
+
+Laboratory and Imaging Studies  
+No laboratory tests were obtained at this visit. The provider plans to order a 12‑lead electrocardiogram (ECG) and, if indicated, cardiac biomarkers (troponin). Additional imaging such as chest radiography may be considered based on initial results.
+
+Assessment  
+1. Intermittent sharp chest pain, likely pleuritic or musculoskeletal in nature given positional relief with leaning forward, but with a concerning family history of recent myocardial infarction.  
+2. Recent viral upper respiratory infection, now resolved.  
+3. Anxiety related to fear of heart attack.
+
+Plan  
+- Obtain a 12‑lead ECG during this visit to assess for ischemic changes, pericarditis, or other cardiac pathology.  
+- Order cardiac troponin I/T to evaluate for myocardial injury.  
+- If ECG or troponin are abnormal, consider further work‑up including chest X‑ray, echocardiography, and possible referral to cardiology.  
+- Continue acetaminophen as needed for pain, but advise the patient to seek immediate emergency care if pain becomes prolonged, intensifies, is associated with shortness of breath, diaphoresis, palpitations, or syncope.  
+- Provide education on red‑flag symptoms and reassurance while emphasizing the importance of timely evaluation given the family history.  
+- Schedule a follow‑up appointment in 1–2 days to review test results, or sooner if symptoms worsen.  
+- Document that no new medications are prescribed at this time.  
+
+The patient verbalized understanding of the plan and agreed to follow the recommendations.

@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:36:37
+Time: 3.31s
+Tokens: 8,315 in / 1,343 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: March 24, 1995 (26 years old)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Social Security Number: 311 (unit number)  
+
+Chief Complaint  
+The patient presents with a 4 to 5 month history of dull, diffuse back pain that worsens with morning stiffness.  
+
+History of Present Illness  
+Mr. Steuber reports that his back pain has been progressive for approximately six months. He describes the pain as diffuse across the mid‑to‑lower back, dull in character, and rated at a pain intensity of 4 to 5 out of 10, with variability. The pain is most severe in the morning and improves after 30 to 60 minutes of movement. There is no radiation to the legs or other areas. He has not experienced any precipitating trauma. Over the past several months he has also noted intermittent knee pain and hand pain, although these are less frequent and resolve on their own. He has tried over‑the‑counter acetaminophen (Tylenol) and ibuprofen (Advil), with only modest temporary relief. He denies any worsening with specific movements, positional changes, or other aggravating factors. No night pain or nocturnal exacerbations were reported.  
+
+Review of Systems  
+Constitutional: Mild fatigue and malaise reported, with no fever, night sweats, or unexplained weight change.  
+Musculoskeletal: Diffuse back pain, occasional knee pain, no swelling, redness, or deformity noted. No tingling, numbness, or weakness.  
+Respiratory: Asthma present; uses a blue inhaler (albuterol) as needed; no recent exacerbations.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Gastrointestinal: No abdominal pain, change in bowel habits, or urinary symptoms.  
+Skin: No rashes or nail changes.  
+Neurologic: No dizziness, vision changes, or focal deficits.  
+Genitourinary: No dysuria or frequency.  
+Psychiatric: PHQ‑2 score of 2, GAD‑7 score of 2, indicating mild symptoms of anxiety and depression.  
+
+Past Medical History  
+Asthma.  
+Environmental allergies (pollen/ragweed suspected).  
+Prior knee injury with meniscal tear (2015).  
+Chronic low back pain documented in prior records, consistent with current complaint.  
+
+Surgical History  
+None reported.  
+
+Social History  
+The patient works as a bank teller. He lives with his girlfriend in a city condominium. He denies tobacco use and uses marijuana occasionally (once or twice per week). Alcohol consumption is occasional (beer or cocktails on weekends). He does not engage in regular exercise.  
+
+Family History  
+Mother diagnosed with psoriasis; no known history of joint disease.  
+
+Medications  
+Current home medications: Acetaminophen 325 mg (OTC, taken as needed).  
+No prescription NSAIDs or other analgesics are actively prescribed.  
+Allergy medications: Fexofenadine 60 mg (OTC).  
+Asthma inhaler: Albuterol 0.83 mg/ML inhalation solution (used as needed).  
+No other current prescriptions noted.  
+
+Allergies  
+Allergy to an unspecified substance (severity level 1).  
+
+Objective Findings  
+Vital signs: No information available.  
+Physical examination: No information available.  
+
+Labs  
+Complete Blood Count:  
+• White blood cells: 5.23 × 10⁶/µL (within normal limits).  
+• Hematocrit: 39.1 % (within normal limits).  
+• Platelets: 287 × 10³/µL (within normal limits).  
+• Mean corpuscular hemoglobin: 30.1 pg (within normal limits).  
+• Red cell distribution width: 42.4 % (elevated).  
+Other CBC parameters (MCV, MCHC, RDW, etc.) were within or slightly above normal ranges.  
+
+Imaging  
+No imaging studies documented at this encounter.  
+
+Assessment  
+Primary diagnosis: Chronic low back pain (painful, diffuse, dull, morning stiffness).  
+Differential diagnoses include:  
+1. Ankylosing spondylitis – chronic, male patient, morning stiffness, back pain.  
+2. Psoriatic arthritis – family history of psoriasis, but no current skin findings; consider.  
+3. Reactive arthritis – history of recent gastroenteritis; consider.  
+4. Mechanical low back pain – progressive over months, no trauma.  
+
+Secondary diagnoses: Asthma; mild anxiety and depression (PHQ‑2/GAD‑7 scores).  
+
+Plan  
+Investigations:  
+- Order inflammatory markers: C‑reactive protein (CRP) and erythrocyte sedimentation rate (ESR).  
+- Autoimmune serologies: rheumatoid factor (RF), antinuclear antibodies (ANA), and HLA‑B27 typing.  
+- Imaging: Plain radiographs of the lumbar spine and sacroiliac joints; consider MRI if clinical suspicion remains high.  
+
+Management:  
+- Continue acetaminophen 325 mg PRN for pain.  
+- Discuss NSAID therapy (e.g., naproxen or ibuprofen) if tolerable, considering his asthma and potential gastrointestinal side effects.  
+- Encourage gentle aerobic activity and stretching exercises as tolerated; refer to physiotherapy for a structured back‑strengthening program.  
+- Address fatigue and malaise with sleep hygiene counseling and potential evaluation for anemia (given elevated RDW).  
+
+Follow‑up:  
+- Rheumatology referral for further evaluation and possible early intervention.  
+- Return to primary care in 2–4 weeks for reassessment of pain severity and review of laboratory results.  
+- Educate patient on red‑flag symptoms that warrant immediate evaluation (e.g., new neurologic deficits, fever, weight loss).  
+
+Discharge instructions:  
+Patient instructed to monitor pain intensity daily, continue OTC analgesics as needed, and contact clinic if pain worsens, new symptoms develop, or if he experiences side effects from medications. He was advised to keep a pain diary and bring results of any home blood pressure or weight measurements to follow‑up visits.

@@ -1,0 +1,70 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:15:45
+Time: 3.57s
+Tokens: 8,675 in / 940 out
+============================================================
+
+Patient Information:
+The patient is a 39‑year‑old male who presents to the clinic for evaluation of new onset chest pain. He lives alone in an apartment and works as an accountant.
+
+Chief Complaint:
+Chest pain.
+
+Subjective:
+
+History of Present Illness:
+The patient reports that the chest pain began last night, approximately eight hours ago, and has been fairly constant since its onset. He describes the pain as sharp and localized to the left side of the chest. The discomfort is aggravated by lying down and by taking deep breaths, and is partially relieved when he lies flat. He rates the severity as 7‑8 out of 10. Associated symptoms include lightheadedness, shortness of breath, and a sensation of a racing heart. He denies syncope, nausea, vomiting, fever, chills, cough, wheezing, abdominal pain, urinary or bowel changes, and any recent trauma. He has never experienced a similar episode before. He reports mild diaphoresis that he attributes to difficulty breathing.
+
+Review of Systems:
+- Constitutional: No fever, chills, or recent weight change.
+- Cardiovascular: Sharp left‑sided chest pain, palpitations, lightheadedness; denies syncope.
+- Respiratory: Shortness of breath, worsened with deep inspiration; denies cough or wheeze.
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.
+- Genitourinary: No dysuria, urgency, or hematuria.
+- Musculoskeletal: No recent injury; pain does not radiate.
+- Neurological: No headaches, dizziness beyond lightheadedness, or focal deficits.
+- Dermatologic: No rashes; notes mild swelling of the neck but no pain.
+- Psychiatric: No anxiety or panic symptoms reported at this time.
+
+Past Medical History:
+The patient reports no known chronic medical conditions. He has never been hospitalized or undergone surgery. He does not take any prescription or over‑the‑counter medications.
+
+Allergies:
+No known drug allergies.
+
+Social History:
+The patient smokes approximately one pack of cigarettes per day and has done so for the past 10‑15 years. He uses cannabis occasionally (≈5 mg per week) and denies use of cocaine, methamphetamine, opioids, or intravenous drugs. Alcohol consumption is moderate, averaging one to two drinks per day (≈10 drinks per week). He reports exercising by running about 30 minutes every other day and attempts to eat a healthy dinner, though lunches are often restaurant meals.
+
+Family History:
+His father suffered a myocardial infarction at age 45 and has a history of hypercholesterolemia. No other family members have known cardiac disease, stroke, or cancer.
+
+Objective:
+
+Vital Signs:
+No vital sign data were recorded at the time of this encounter.
+
+Physical Examination:
+No physical examination findings were documented.
+
+Laboratory and Imaging Data:
+No laboratory or imaging results are available for this visit.
+
+Assessment:
+1. Acute chest pain, sharp, left‑sided, onset within the past 8 hours, with associated dyspnea, lightheadedness, and palpitations. The presentation raises concern for possible acute coronary syndrome, especially given a significant family history of premature coronary disease and the patient’s tobacco use. Musculoskeletal and pleuritic etiologies are also possible given pain worsening with deep inspiration and relief when supine.
+2. Tobacco use disorder.
+3. Moderate alcohol use.
+
+Plan:
+- Immediate emergency department referral for urgent evaluation, including 12‑lead electrocardiogram, cardiac biomarkers (troponin I/T), complete blood count, basic metabolic panel, and chest radiograph.
+- Initiate cardiac monitoring and consider administration of aspirin 325 mg chewed, sublingual nitroglycerin for chest pain, and oxygen if saturations are low.
+- Obtain a focused cardiac ultrasound if indicated.
+- Counsel patient on smoking cessation; offer referral to cessation program and discuss nicotine replacement therapy.
+- Discuss moderation of alcohol intake and safe cannabis use.
+- Advise avoidance of strenuous activity until cardiac causes are ruled out.
+- Provide education on warning signs that require immediate medical attention (e.g., worsening pain, syncope, new diaphoresis).
+- Schedule follow‑up after emergency department evaluation to review results and adjust long‑term management plan.
+
+Disposition:
+Patient was advised to seek immediate care at the nearest emergency department for definitive evaluation and management. He verbalized understanding of the plan and agreed to follow the recommendations.

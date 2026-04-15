@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 04:21:07
+Time: 6.42s
+Tokens: 11,601 in / 2,197 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Bartoletti  
+- **DOB:** 08/03/1981 (44 y)  
+- **Sex:** Male  
+- **MRN:** 2  
+- **Address:** 409 Veum Drive, Spencer, MA 01562  
+
+---
+
+## S – Subjective  
+
+### Chief Complaint  
+“Loss of smell and taste for the past 2 days.”  
+
+### History of Present Illness  
+Aaron reports an acute onset (~48 h ago) of complete anosmia and ageusia. He noticed the problem when his boyfriend offered him an onion slice and he could not taste it. He denies any associated nasal congestion, rhinorrhea, sore throat, cough, dyspnea, chest pain, fever (no thermometer available, only a vague feeling of being “a little hot”), chills, night sweats, headache, eye or ear pain, or skin rash. He mentions mild fatigue and a subjective sense of being a bit “dry.” No vomiting, diarrhea, abdominal pain, dysuria, or urinary frequency. He is otherwise well‑appearing and feels “totally fine” aside from the sensory loss. He is concerned because he has heard loss of smell/taste can be a manifestation of COVID‑19 and wants to be evaluated.
+
+### Review of Systems (pertinent negatives noted)  
+- **Constitutional:** No fever, chills, night sweats, weight change.  
+- **HEENT:** No sore throat, rhinorrhea, congestion, sinus pain, eye or ear pain.  
+- **Respiratory:** No cough, dyspnea, wheeze, sputum, hemoptysis.  
+- **Cardiovascular:** No chest pain, palpitations, orthostatic symptoms.  
+- **GI:** No nausea, vomiting, abdominal pain, diarrhea, constipation.  
+- **GU:** No dysuria, frequency, urgency.  
+- **Neurologic:** New anosmia/ageusia; no headache, dizziness, weakness.  
+- **Skin:** Baseline eczema; no new rash.  
+- **Psychiatric:** Denies anxiety or panic during this visit; baseline PHQ‑9 score from recent labs indicates severe depressive symptoms (score 24) and mild anxiety (GAD‑7 3).  
+
+### Past Medical History  
+- Essential hypertension (diagnosed 2003)  
+- Type 2 diabetes mellitus with microalbuminuria/proteinuria (ongoing)  
+- Chronic kidney disease progressing to end‑stage renal disease; renal transplant performed 9/17/2018 (currently post‑transplant)  
+- Chronic migraine without aura  
+- Atopic eczema (intermittent flares, treated with topical steroid)  
+- Peanut allergy (carries epinephrine auto‑injector)  
+- History of severe anxiety/panic (2022 PHQ‑9 24, PHQ‑2 4)  
+- Prior intimate‑partner violence (historical)  
+
+### Past Surgical History  
+- No documented surgeries (patient reports none).  
+
+### Medications (active)  
+- **Tacrolimus** (extended‑release oral tablet, 1 mg daily) – immunosuppression post‑transplant  
+- **Hydrochlorothiazide** 25 mg PO daily – hypertension  
+- **Amlodipine** 2.5 mg PO daily – hypertension  
+- **Combined oral contraceptive** (started ≈ 3 yr ago)  
+- **Topical steroid cream** for eczema (used intermittently, ~2 ×/wk during flares)  
+- **Epinephrine auto‑injector** (peanut allergy) – kept on person  
+
+### Allergies  
+- **Peanut** – anaphylaxis (carries EpiPen)  
+- No known drug allergies  
+
+### Social History  
+- Lives with boyfriend (cohabitating); boyfriend currently asymptomatic.  
+- No tobacco use; occasional marijuana edibles (no smoking).  
+- Alcohol: “a couple of beers on the weekend.”  
+- Sexually active with boyfriend; no prior STIs.  
+- Employment: part‑time (current status per EMR).  
+- No recent travel; classes are fully online, limiting exposure.  
+
+### Family History  
+- Uncle with prostate cancer.  
+- No known hereditary heart, lung, or other cancers.  
+
+### Patient Concerns / Goals  
+- Determine if anosmia/ageusia is due to COVID‑19 or another etiology.  
+- Receive guidance on isolation and when it is safe to resume normal activities.  
+
+---
+
+## O – Objective  
+
+| Parameter | Value / Comment |
+|-----------|-----------------|
+| **Vitals** (most recent available from EMR, 2012) | HR 85 bpm, RR 14/min, BMI 28.8 kg/m², Temp N/A, BP N/A, SpO₂ N/A |
+| **General** | Alert, cooperative, appears well‑nourished. No acute distress. |
+| **HEENT** | No nasal discharge, no congestion, no erythema or edema of nasal mucosa reported. No oropharyngeal erythema or exudates. No conjunctival injection. |
+| **Cardiovascular** | No chest pain, normal rate/rhythm (HR 85). |
+| **Respiratory** | Breath sounds not documented; patient denies dyspnea or cough. |
+| **GI** | Abdomen not examined; patient denies GI symptoms. |
+| **Skin** | Known eczema; no new lesions. |
+| **Neurologic** | Anosmia and ageusia confirmed; otherwise grossly intact. |
+| **Psychiatric** | PHQ‑9 24 (severe depression), PHQ‑2 4, GAD‑7 3 (mild anxiety). |
+| **Labs** (most recent) | CBC: WBC 3.5 ×10³/µL (slightly low), Hgb 16.4 g/dL, Plt 209 ×10³/µL. Lipid panel within normal limits. No acute metabolic derangements noted. |
+| **Imaging / Microbiology** | None performed during this encounter. |
+
+*Note: Physical exam details are limited because the visit was conducted via tele‑medicine; vital signs were not re‑taken at the time of the call.*
+
+---
+
+## A – Assessment  
+
+1. **Acute loss of smell and taste (anosmia/ageusia) – presumed viral etiology**  
+   - Most likely early COVID‑19 given current pandemic context, though other viral upper‑respiratory infections, allergic rhinitis, or post‑viral inflammatory changes are possible.  
+2. **Post‑renal‑transplant status (stable)** – on tacrolimus, no reported graft dysfunction.  
+3. **Essential hypertension, controlled on HCTZ + amlodipine.**  
+4. **Type 2 diabetes mellitus with chronic kidney disease (stage 4‑5, post‑transplant).**  
+5. **Atopic eczema, intermittent flares.**  
+6. **Peanut allergy – carries epinephrine auto‑injector.**  
+7. **Severe depressive symptoms (PHQ‑9 24) – needs ongoing mental‑health follow‑up.**  
+
+---
+
+## P – Plan  
+
+| Item | Details |
+|------|---------|
+| **Diagnostics** | • Obtain a nasopharyngeal SARS‑CoV‑2 PCR (COVID‑19) test today (specimen collected by local lab or home kit). <br>• If COVID‑19 test negative and anosmia persists > 10 days, consider referral to ENT for olfactory testing and possible sinus imaging. |
+| **Infection Control** | • Advise self‑isolation for **14 days** from symptom onset *or* until a negative COVID‑19 test and complete resolution of anosmia, whichever is longer. <br>• Use mask around household members, maintain hand hygiene, and avoid sharing utensils. |
+| **Symptomatic Management** | • No specific therapy required for isolated anosmia. <br>• Encourage adequate hydration, humidified air, and gentle nasal saline irrigation if mild congestion develops. |
+| **Medications** | • Continue current immunosuppressive regimen (tacrolimus) and antihypertensives (hydrochlorothiazide, amlodipine). <br>• No new prescriptions at this time. |
+| **Allergy/Epinephrine** | • Reinforce carrying the epinephrine auto‑injector at all times; verify expiration date (patient reports it is up‑to‑date). |
+| **Mental Health** | • Acknowledge severe depressive symptoms; arrange referral to behavioral health (psychology/psychiatry) for evaluation and possible medication adjustment. <br>• Provide crisis line information (988) if suicidal thoughts emerge. |
+| **Follow‑up** | • Phone call within **48 hours** to discuss COVID‑19 test result. <br>• If positive: continue isolation, monitor for new symptoms (fever, dyspnea, chest pain). If worsening or any red‑flag symptom develops, seek urgent care. <br>• If negative and symptoms persist > 2 weeks, schedule in‑person ENT evaluation. |
+| **Patient Education** | • Explained that loss of smell/taste is a common early sign of COVID‑19 and can occur without other symptoms. <br>• Reviewed proper mask use, hand hygiene, and household cleaning. <br>• Discussed signs that warrant immediate medical attention (fever > 38°C, shortness of breath, chest pain, new cough, confusion). |
+| **Documentation** | • Encounter logged as telehealth visit. <br>• Updated problem list to include “Acute anosmia/ageusia – rule out COVID‑19.” |
+
+---  
+
+**Signature:**  
+Dr. [Attending Physician Name], MD – Telemedicine Visit – 04/14/2026   (Electronic Signature)

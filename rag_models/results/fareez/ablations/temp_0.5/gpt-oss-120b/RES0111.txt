@@ -1,0 +1,106 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:08:40
+Time: 6.14s
+Tokens: 9,783 in / 1,412 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek  
+Date of Birth: Not provided (patient appears to be a high‑school student, grade 10)  
+Sex: Male  
+Residence: Lives with parents and two siblings at 318 Fay Ferry, Boston, Massachusetts 02116  
+
+Chief Complaint  
+The patient presents with a sore throat of four days’ duration that has not improved and reports feeling “really hot,” suggesting a developing fever.
+
+History of Present Illness  
+Aaron reports a sore throat that began four days ago. He describes the pain as severe enough that solid foods are difficult to tolerate, although he is able to drink liquids. He denies any sensation of food or liquids getting “stuck” in his throat. He notes a mild hoarseness, which he attributes to speaking less because of the pain. He has not measured his temperature but feels “really hot,” indicating a possible fever. He denies nasal congestion, rhinorrhea, cough, shortness of breath, chest pain, headache, confusion, visual or auditory changes, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or unintentional weight loss. He has not observed any swelling or redness of the throat beyond what he can see on self‑inspection, but he confirms that the throat appears “pretty swollen and red” on examination by the clinician.
+
+Review of Systems  
+Constitutional: Fever (subjective); no chills, weight loss, or fatigue.  
+ENT: Sore throat, mild hoarseness; no nasal congestion, rhinorrhea, or ear symptoms.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations or chest discomfort.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Neurologic: No headache, confusion, or altered mental status.  
+Psychiatric: No depression or anxiety reported.  
+Skin: No rash.  
+
+Past Medical History  
+The patient reports no chronic medical conditions.  
+
+Surgical History  
+Appendectomy performed at age 13.  
+
+Social History  
+Aaron is a 10th‑grade student who attends school part‑time in person and part‑time virtually. He lives at home with his parents and two siblings and reports feeling safe at home. He denies tobacco, alcohol, and recreational drug use. He is not currently sexually active and does not anticipate sexual activity before completing high school. He reports no recent travel and no known exposure to individuals with COVID‑19. He has received routine immunizations except for HPV and has not received the current year’s influenza vaccine.  
+
+Family History  
+No known family history of hypertension, diabetes, or other major illnesses reported.  
+
+Allergies  
+No medication or environmental allergies reported.  
+
+Current Medications  
+The patient takes only a multivitamin supplement. No prescription or over‑the‑counter medications are being used.  
+
+Vital Signs (recorded at the visit)  
+Temperature: Not measured (patient reports feeling hot)  
+Heart Rate: 97 beats per minute  
+Respiratory Rate: 15 breaths per minute  
+Blood Pressure: Not recorded  
+SpO₂: Not recorded  
+Height: 177.7 cm (from prior record)  
+Weight: Not recorded  
+Body Mass Index: 30.15 kg/m² (from prior record)  
+
+Physical Examination  
+General: Appears mildly uncomfortable due to throat pain; no acute distress.  
+HEENT: Oropharynx shows marked erythema and swelling of the tonsillar tissue; no exudates noted. No cervical lymphadenopathy reported. Nasal mucosa clear, no rhinorrhea. No sinus tenderness.  
+Neck: No tracheal deviation, no palpable lymphadenopathy.  
+Lungs: Clear to auscultation bilaterally; no wheezes, rales, or rhonchi.  
+Cardiovascular: Regular rate and rhythm; no murmurs.  
+Abdomen: Soft, non‑tender, non‑distended; no organomegaly.  
+Extremities: No edema.  
+Neurologic: Alert and oriented; cranial nerves II‑XII intact.  
+
+Laboratory and Diagnostic Testing  
+A rapid antigen detection test for Group A Streptococcus (rapid strep) and a rapid SARS‑CoV‑2 antigen test were ordered during the visit. No other laboratory studies were performed at this encounter.  
+
+Assessment  
+1. Acute pharyngitis – etiology uncertain (viral vs. bacterial).  
+2. Possible early fever associated with pharyngitis.  
+3. Pending rapid strep test and COVID‑19 test to clarify infectious cause.  
+
+Plan  
+Diagnostics:  
+- Perform rapid strep test on throat swab.  
+- Perform rapid COVID‑19 antigen test.  
+
+Therapeutic:  
+- Symptomatic treatment with acetaminophen 500 mg PO every 6 hours as needed for fever or throat pain, not to exceed 3 g per day.  
+- Encourage adequate hydration and soft, cool foods.  
+- Saltwater gargles (½ teaspoon of salt in 8 oz warm water) three times daily.  
+
+Infection Control:  
+- Advise the patient to self‑isolate for 14 days or until COVID‑19 test results are negative and symptoms improve.  
+- Maintain good hand hygiene and wear a mask when around others during the isolation period.  
+
+Follow‑up:  
+- If the rapid strep test returns positive, prescribe a 10‑day course of oral penicillin V 500 mg PO twice daily (or amoxicillin 500 mg PO three times daily) and provide counseling on adherence.  
+- If the COVID‑19 test is positive, follow local public health guidelines for isolation and monitor for worsening respiratory symptoms; seek urgent care if shortness of breath, chest pain, or high fever develop.  
+- Re‑evaluate in 48–72 hours either in person or via telehealth if symptoms do not improve or worsen.  
+
+Preventive Care:  
+- Recommend administration of the seasonal influenza vaccine at the earliest opportunity.  
+- Discuss completion of the HPV vaccination series, ideally before age 26, and arrange for vaccination during a future visit.  
+
+Patient Education:  
+- Reviewed signs of bacterial infection (persistent fever, worsening pain, development of pus or exudate) that would warrant prompt medical attention.  
+- Discussed the importance of completing the full course of antibiotics if prescribed.  
+- Provided written instructions on home care measures and contact information for urgent concerns.  
+
+Disposition  
+The patient was discharged home after the evaluation with instructions to self‑monitor, isolate pending test results, and follow up as outlined above. No immediate complications were identified.

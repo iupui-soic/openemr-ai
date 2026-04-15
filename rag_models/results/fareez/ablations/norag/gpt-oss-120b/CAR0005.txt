@@ -1,0 +1,88 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:15:57
+Time: 3.53s
+Tokens: 6,417 in / 1,169 out
+============================================================
+
+Patient Information  
+Name: Amee Reva Goyette  
+Medical Record Number: 7671  
+Date of Birth: 1916-07-09 (age not specified in the encounter)  
+Sex: Female  
+
+Chief Complaint  
+The patient presents with intermittent left‑sided chest discomfort of two‑week duration.
+
+History of Present Illness  
+The patient reports the onset of sharp, localized chest pain on the left side approximately two weeks ago. The episodes last 20 to 30 minutes and occur two to three times per week, most often while she is at work or driving. The pain is described as sharp, rated 4/10 in intensity, and does not radiate. It is intermittent, with no clear exacerbating or relieving factors; over‑the‑counter analgesics (acetaminophen, ibuprofen) and antacids (Tums) have not provided relief. She denies associated nausea, vomiting, dyspnea, fever, or recent sick contacts. There are no prior similar episodes. She reports increased psychosocial stress related to a recent separation and ongoing personal issues. She denies any recent travel outside Canada.
+
+Review of Systems  
+- Constitutional: No fever, weight loss, or night sweats.  
+- Cardiovascular: Chest pain as described; no palpitations, syncope, or orthopnea.  
+- Respiratory: No shortness of breath or cough.  
+- Gastrointestinal: No heartburn, dyspepsia, nausea, or vomiting.  
+- Musculoskeletal: No recent trauma or musculoskeletal pain other than the described chest discomfort.  
+- Neurologic: No headaches, dizziness, or focal deficits.  
+- Psychiatric: Reports increased stress; PHQ‑2 score documented as 2 (mild depressive symptoms).  
+
+Past Medical History  
+The patient states she is previously healthy and has no chronic medical conditions. She reports no history of hypertension, hyperlipidemia, diabetes, or renal disease.  
+
+Medications  
+Currently, the patient is not taking any prescribed medications. She has used over‑the‑counter acetaminophen, ibuprofen, and antacids for the chest pain without benefit.  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+- Tobacco: Smokes approximately half a pack to one pack of cigarettes daily; attempts to reduce intake have been made.  
+- Alcohol: Consumes one to two glasses of wine on weekends.  
+- Illicit drugs: Denies use.  
+- Exercise: Engages in running or cycling 3–4 times per week without chest pain during activity.  
+- Occupational: Works full‑time; chest pain often occurs while driving or at work.  
+
+Family History  
+- Father: Myocardial infarction at age 60 (one year ago).  
+- No other significant familial cardiac, cerebrovascular, or metabolic diseases reported.  
+
+Objective  
+Vital Signs: Not recorded during this encounter.  
+Physical Examination: No physical exam findings documented; therefore, no objective data available.  
+Laboratory Data: No recent laboratory results pertinent to this visit.  
+
+Assessment  
+1. New onset intermittent left‑sided chest pain, sharp in quality, non‑exertional, with low‑to‑moderate intensity.  
+   - Differential includes:  
+     • Non‑cardiac chest pain secondary to musculoskeletal strain or costochondritis.  
+     • Esophageal or gastroesophageal reflux disease (although heartburn is denied).  
+     • Stress‑related or anxiety‑related chest discomfort.  
+     • Atypical angina/ischemic heart disease, given family history of early myocardial infarction and the patient’s smoking status.  
+
+Plan  
+- Diagnostic Evaluation:  
+  • Obtain a 12‑lead electrocardiogram (ECG) today to assess for acute ischemic changes.  
+  • Order cardiac biomarkers (troponin I/T) to rule out myocardial injury.  
+  • Consider chest radiograph to evaluate for pulmonary or mediastinal pathology.  
+  • If initial cardiac work‑up is negative but symptoms persist, arrange for a stress test (exercise treadmill test or pharmacologic stress imaging).  
+
+- Symptom Management:  
+  • Advise the patient to avoid heavy lifting or repetitive upper‑body movements that may exacerbate musculoskeletal strain.  
+  • Recommend trial of a short course of a non‑steroidal anti‑inflammatory drug (NSAID) if no contraindications, with monitoring for gastrointestinal side effects.  
+
+- Lifestyle and Risk‑Factor Modification:  
+  • Provide counseling on smoking cessation; offer referral to a tobacco‑cessation program and discuss nicotine replacement therapy or pharmacotherapy as appropriate.  
+  • Encourage continuation of regular aerobic exercise, noting that activity has not provoked symptoms.  
+  • Discuss stress‑reduction techniques, including mindfulness, counseling, or referral to a mental‑health professional given ongoing psychosocial stress.  
+
+- Follow‑Up:  
+  • Review ECG and laboratory results within 24–48 hours.  
+  • Schedule a follow‑up appointment with the patient’s primary care physician within one week to discuss test results and further management.  
+  • Advise the patient to seek emergent care (go to the emergency department) if chest pain becomes severe, persistent, associated with shortness of breath, diaphoresis, syncope, or any new concerning symptoms.  
+
+- Education:  
+  • Educated the patient on red‑flag symptoms that warrant immediate evaluation.  
+  • Reviewed proper use of over‑the‑counter analgesics and the importance of not exceeding recommended dosages.  
+
+No additional information available.

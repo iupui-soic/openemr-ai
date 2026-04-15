@@ -1,0 +1,140 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 04:28:53
+Time: 2.11s
+Tokens: 10,192 in / 1,690 out
+============================================================
+
+**Patient Information**  
+Name: Albert Turner DOB: 09/28/1931 Age: 93 Sex: Male  
+Location: 370 B‑Bins Trailer Suite 9, Barnstable, MA 02673  
+Primary Contact: Spouse (husband)  
+Chief Complaint: Acute right hip pain and inability to bear weight after a fall.  
+
+---
+
+### SOAP Summary
+
+#### S – Subjective  
+**History of Present Illness (HPI)**  
+Mr. Turner presents to the emergency department after a fall from the last few steps of his stairs at home, occurring approximately two hours prior to arrival. He reports missing a step, falling onto the right side and right side of the head, and immediately feeling unable to bear weight on his right hip. The pain is described as “excruciating” and “sharp” when any weight is placed on the joint; otherwise “achy” and constant. On a 0–10 pain scale he rates it as 10/10, the worst pain he has ever experienced. He denies any preceding dizziness, fainting, headache, confusion, or other neurologic symptoms. He has had no prior history of hip pain or falls.
+
+**Associated Symptoms**  
+- Swelling and mild redness over the right hip and groin area.  
+- Warmth to the right side compared to left.  
+- Slight outward (external) rotation of the right leg.  
+- Inability to flex, extend, abduct, or adduct the right hip; pain prevents any movement.  
+- No numbness, tingling, or weakness in either lower extremity.  
+
+**Review of Systems (ROS)**  
+- **Constitutional:** No fever, chills, weight loss, or night sweats.  
+- **Neurologic:** No dizziness (except transient after the fall), no headaches, no confusion, no loss of consciousness.  
+- **Musculoskeletal:** Right hip pain only; no other joint pain.  
+- **Cardiovascular:** Denies chest pain or palpitations.  
+- **Respiratory:** No cough, wheezing, or shortness of breath.  
+- **GI/GU:** No changes in bowel or bladder function.  
+
+**Past Medical History (PMH)**  
+- Osteoarthritis (general).  
+- Essential hypertension, controlled with ramipril (no current dosage provided).  
+- No known diabetes or renal disease in the acute setting.  
+
+**Medications**  
+- Ramipril 10 mg oral daily (for hypertension).  
+- Vitamin D, calcium, and multivitamins as supplements.  
+
+**Allergies**  
+- No known drug allergies.  
+
+**Social History**  
+- Lives with spouse in a small apartment.  
+- Non‑smoker, occasional wine (1 glass every other day).  
+- No recreational drug use.  
+
+**Family History**  
+- Father deceased of myocardial infarction at age 60.  
+- Mother had skin cancer (treated).  
+
+#### O – Objective  
+**Vital Signs** (obtained at triage)  
+- Blood Pressure: 140/80 mmHg  
+- Heart Rate: 78 bpm  
+- Respiratory Rate: 16 breaths/min  
+- Temperature: 36.8 °C (98.2 °F)  
+- SpO₂: 98 % on room air  
+
+**Physical Examination**  
+- **General:** Alert, oriented, in distress due to pain.  
+- **Head/Neck:** No scalp lacerations or skull fractures noted.  
+- **Chest:** Clear to auscultation bilaterally; no jugular venous distention.  
+- **Cardiovascular:** Regular rhythm, no murmurs.  
+- **Abdomen:** Soft, non‑tender.  
+- **Extremities:**  
+  - **Right Hip:** Swollen, mildly erythematous; warmth to touch.  
+  - No visible deformity beyond slight external rotation.  
+  - Tenderness on palpation over the lateral aspect of the right hip and groin.  
+  - No bruising beyond mild discoloration.  
+  - **Range of Motion:** Passive and active ROM severely limited; pain with any movement.  
+  - **Weight Bearing:** Unable to bear weight on right leg; can only bear weight on left.  
+  - **Neurologic:** Full strength (5/5) and sensation in both lower extremities.  
+  - **Left Hip:** Intact, no swelling or pain.  
+
+**Imaging**  
+- **Radiographs of the right hip** (anteroposterior pelvis and lateral hip): Fracture of the right femoral neck with displacement and possible involvement of the acetabular rim—consistent with a displaced femoral neck fracture.  
+
+**Laboratory Data**  
+- CBC, BMP, coagulation panel: Within normal limits.  
+- No evidence of infection or metabolic derangement.  
+
+#### A – Assessment  
+1. **Displaced right femoral neck fracture** (primary diagnosis).  
+2. **Osteoarthritis** (secondary; contributing to baseline hip pain).  
+3. **Hypertension** (well‑controlled).  
+
+**Differential Considerations**  
+- Pathologic fracture due to osteoporosis (common in elderly).  
+- Other potential injuries (head trauma) ruled out by exam and absence of neurologic deficits.  
+
+**Risk Assessment**  
+- Age > 80, osteoporosis, recent fall → high surgical risk but benefit of early operative fixation outweighs non‑operative management due to risk of avascular necrosis, non‑union, and prolonged immobility.
+
+#### P – Plan  
+1. **Surgical Management**  
+   - Immediate orthopedic consult.  
+   - Discuss surgical options: internal fixation (screws) vs. hemiarthroplasty/total hip replacement (decision based on bone quality, activity level, and surgical risk).  
+   - Pre‑operative labs: CBC, coagulation profile, CMP, type & screen.  
+
+2. **Pain Control**  
+   - Continue current analgesics: Ibuprofen 400 mg PO q6h PRN (if not contraindicated) or Acetaminophen 650 mg PO q6h PRN.  
+   - Consider short‑term opioid (e.g., Oxycodone 5 mg PO q6h PRN) if pain uncontrolled.  
+
+3. **Immobilization & Mobility**  
+   - Apply hip‑protective brace or immobilizer.  
+   - Non‑weight‑bearing status on right leg until surgical decision.  
+   - Physical therapy referral for bed‑side exercises to maintain ROM and prevent contractures.  
+
+4. **Monitoring & Follow‑up**  
+   - Admit for observation and surgical evaluation.  
+   - Post‑op: wound care, DVT prophylaxis (low‑molecular‑weight heparin or mechanical compression), early mobilization.  
+   - Follow‑up: Orthopedic surgeon at 2 weeks post‑op; primary care at 1 month; PT as indicated.  
+
+5. **Education & Discharge Planning**  
+   - Discuss fall prevention strategies (home safety assessment, removal of loose rugs, installation of grab bars).  
+   - Review medication adherence and potential drug interactions (e.g., NSAIDs with ramipril).  
+   - Provide written instructions: activity restrictions, signs of infection or DVT, emergency contact.  
+
+6. **Other Orders**  
+   - DVT prophylaxis (Enoxaparin 40 mg SC daily).  
+   - Encourage ambulation with assistive device as tolerated post‑op.  
+
+**Disposition**  
+Admit to surgical service for orthopedic evaluation and planned operative fixation of the displaced right femoral neck fracture.  
+
+---  
+
+**Prepared by:**  
+[Physician Name], MD  
+Emergency Medicine  
+
+**Date:** 2026‑04‑14

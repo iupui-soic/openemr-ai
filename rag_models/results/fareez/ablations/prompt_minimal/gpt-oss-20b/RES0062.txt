@@ -1,0 +1,124 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:28:10
+Time: 3.82s
+Tokens: 14,740 in / 1,743 out
+============================================================
+
+**Patient Information**  
+Name: Abel Cummerata (ID 334)  
+Date of Birth: 1917‑03‑25 (note: the EHR shows an old DOB; clinical encounter details reflect a senior patient with chronic medical conditions)  
+Gender: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts  
+Primary Care Provider: Dr. External Provider  
+
+---
+
+## SOAP Note – Clinical Summary  
+
+### Subjective  
+**Chief Complaint:**  
+The patient reports a **3‑day history of a productive cough** (yellow‑green sputum) accompanied by **shortness of breath** that began approximately 1 day after the cough started.  
+
+**History of Present Illness (HPI):**  
+- **Onset & Progression:** Cough began 3 days ago; SOB began about 1 day after onset.  
+- **Characteristics of Cough:** Wet, hacking‑type with yellow‑green sputum about the size of a thumb tip; no hemoptysis or purulent froth noted.  
+- **Dyspnea:** Rated 7/10 in severity; worsens with exertion and at night, leading to sleep disruption. Wheezing noted only during severe episodes of SOB.  
+- **Associated Symptoms:**  
+  - Constitutional: mild feverish feeling, fatigue, generalized weakness, mild abdominal ache, anosmia (inability to smell a candle).  
+  - No chest pain, palpitations, dizziness, syncope, confusion, or memory loss.  
+  - No nasal congestion, sore throat, or ear pain.  
+  - No changes in bowel or urinary habits.  
+- **Triggers:** No specific triggers; symptoms present throughout the day.  
+- **Exposure History:** Visited a long‑term care facility (LTC) one week ago; LTC has reported COVID‑19 outbreaks.  
+- **Past Medical History:**  
+  - **Atrial fibrillation (AFib)** diagnosed 4 years ago; on metoprolol for 3 years.  
+  - **Hypertension, dyslipidemia (statin), chronic kidney disease (CKD) stage 4–5 (per EHR)**.  
+  - **Other:** No prior history of pneumonia, no recent surgeries except a hernia repair 15 years ago.  
+- **Medications (home):** Metoprolol, statin, low‑dose aspirin (cardiovascular prophylaxis).  
+- **Allergies:** Sulfa drug allergy (rash).  
+- **Social History:** Former smoker (quit 5 years ago), no current alcohol use, occasional low‑dose CBD edibles for sleep. Lives with wife, no known exposure to mold or environmental toxins.  
+- **Family History:** Aunt had lung cancer (smoker). No known inherited cardiac or pulmonary disease.  
+
+**Review of Systems (selected):**  
+- **Constitutional:** Positive – fatigue, weakness, mild feverishness, anosmia; negative – weight loss, night sweats, chills.  
+- **Respiratory:** Positive – productive cough, dyspnea, mild wheezing; negative – chest pain, orthopnea.  
+- **Cardiovascular:** Negative – palpitations, chest discomfort, edema.  
+- **Gastrointestinal:** Positive – mild abdominal discomfort; negative – nausea, vomiting, diarrhea, constipation, hematochezia.  
+- **Neurologic:** Negative – dizziness, syncope, confusion.  
+- **Other:** Negative – vision/hearing changes, rash, joint pain.  
+
+### Objective  
+**Vital Signs:**  
+- Temperature: Not recorded (will be measured today).  
+- Pulse: 80 bpm (stable; last ECG a few months ago).  
+- Blood Pressure: Not recorded today.  
+- Respiratory Rate: Not recorded today.  
+- SpO₂: Not recorded today.  
+
+**Physical Examination:**  
+- **General:** Alert, oriented, appears older, in mild distress due to SOB.  
+- **HEENT:** Anosmia noted; oral mucosa moist; no pharyngeal erythema or tonsillar exudate.  
+- **Chest/Lungs:** Not documented in the transcript; will perform auscultation to assess for crackles, bronchial breath sounds, wheezes.  
+- **Heart:** Regular rhythm, no murmurs (AFib).  
+- **Abdomen:** Mild diffuse tenderness, no rebound or guarding.  
+- **Extremities:** No edema.  
+
+**Labs (pending):**  
+- CBC, BMP, CRP, procalcitonin, influenza rapid test, COVID‑19 PCR.  
+
+**Imaging (pending):**  
+- Chest X‑ray to evaluate for infiltrates, consolidation, or other pathology.  
+
+### Assessment  
+1. **Pneumonia – likely viral** (most consistent with upper respiratory viral illness, recent contact with LTC, anosmia, feverish feeling).  
+2. **Possible secondary bacterial pneumonia** (yellow‑green sputum, high-grade dyspnea) – to be ruled out.  
+3. **COVID‑19** – differential includes; to be confirmed with PCR.  
+4. **COPD/bronchitis** unlikely given lack of smoking history and wheezing only when SOB.  
+5. **Atrial fibrillation, hypertension, CKD** – stable; monitor for complications.  
+
+### Plan  
+**Diagnostic Tests:**  
+- **COVID‑19 PCR** (nasopharyngeal swab) – results in 1–2 days.  
+- **Chest X‑ray** – to identify infiltrates, consolidation, or alternative diagnosis.  
+- **CBC with differential, BMP, CRP, procalcitonin, influenza rapid test** – to assess for bacterial infection and organ function.  
+
+**Therapies:**  
+- **Supportive Care:**  
+  - Hydration (oral or IV if needed).  
+  - Oxygen therapy if SpO₂ < 92 %.  
+  - Analgesics/antipyretics (acetaminophen 500 mg q6h PRN).  
+- **Bronchodilator:**  
+  - Albuterol inhaler PRN for wheezing or dyspnea.  
+- **Antibiotics:**  
+  - Consider empiric antibiotic therapy (e.g., amoxicillin‑clavulanate or doxycycline) if bacterial pneumonia is suspected based on clinical course or imaging/labs.  
+  - Note renal dosing adjustments due to CKD.  
+- **COVID‑19 Management:**  
+  - Continue isolation for 14 days from symptom onset.  
+  - Advise patient and spouse to monitor for worsening symptoms (e.g., increasing SOB, chest pain, hypoxia).  
+  - If COVID‑19 positive, consider outpatient follow‑up or hospitalization if hypoxia or hemodynamic instability occurs.  
+
+**Medication Review:**  
+- Continue metoprolol, statin, low‑dose aspirin.  
+- Review dosing of any new antibiotics for renal clearance.  
+
+**Patient Education & Discharge Instructions:**  
+- Explain that symptoms may resolve in 5–7 days if viral.  
+- If fever > 100.4 °F, or if dyspnea increases, or if cough becomes productive with purulent sputum, return for evaluation.  
+- Educate on signs of severe infection (chest pain, rapid breathing, confusion) and when to seek emergency care.  
+- Advise hand hygiene, mask use, and avoid contact with high‑risk individuals.  
+- Discuss sleep hygiene; review use of CBD edibles and consider alternative sleep aids if needed.  
+
+**Follow‑up:**  
+- Telemedicine or in‑person visit in 3 days if symptoms persist or worsen.  
+- Return sooner if new symptoms develop or if COVID‑19 test is positive.  
+
+**Public Health:**  
+- Notify local health department of potential COVID‑19 exposure and isolation requirement.  
+
+**Signature:**  
+[Physician’s Name], MD  
+Date: 2026‑04‑14  
+
+---

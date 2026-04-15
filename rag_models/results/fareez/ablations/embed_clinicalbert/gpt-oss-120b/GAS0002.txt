@@ -1,0 +1,109 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:49:32
+Time: 4.97s
+Tokens: 8,325 in / 1,534 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Medical Record Number: 2046  
+Date of Birth: 16 April 1965 (Age 61)  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+The patient presented to the Emergency Department with acute right upper‑quadrant (RUQ) abdominal pain.
+
+History of Present Illness  
+Agustin reports a several‑day history of dull to sharp pain localized to the right upper abdomen, just inferior to the lower margin of the right lung field. The pain began approximately three days ago, roughly 30 minutes to one hour after eating lunch. He describes the quality as “sharp” and rates it as an 8/10 at the time of evaluation. The discomfort was relatively mild for the first two days but intensified dramatically about three to four hours prior to arrival, at which point it became the worst pain he has experienced in this episode. The pain has remained fixed to the RUQ without radiation. He notes associated nausea over the past few days but denies any vomiting, hematemesis, hematochezia, melena, dysuria, dysphagia, or change in bowel habits. He has not noted fever, chills, jaundice, or recent weight loss. He has attempted self‑treatment with ibuprofen and acetaminophen, which provided minimal relief. He reports that a similar, self‑limited episode occurred several years ago, but he did not seek emergency care at that time.
+
+Review of Systems  
+Constitutional: Positive for nausea; no fever, chills, or recent weight change.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest discomfort, palpitations, or edema.  
+Gastrointestinal: RUQ abdominal pain, nausea; no vomiting, no hematemesis, no melena or hematochezia, normal stool frequency and color, no change in appetite except decreased today.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Musculoskeletal: No recent trauma.  
+Skin: No rashes or lesions.  
+Neurologic: No headaches or focal deficits.  
+Psychiatric: No anxiety or depression noted on screening (PHQ‑2 = 0, GAD‑7 = 2).  
+
+Past Medical History  
+The patient reports no chronic medical conditions. He has not been diagnosed with hypertension, diabetes, kidney disease, or other systemic illnesses.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+Employment: Consultant for a bank.  
+Living situation: Resides with his partner and two children; supportive home environment.  
+Tobacco: Never smoked.  
+Alcohol: Consumes one to two glasses of wine nightly; does not feel a need to reduce intake.  
+Illicit drugs: Denies use.  
+Exercise: Not reported.  
+Caffeine: None.  
+
+Family History  
+Father: Deceased from stroke in his 60s.  
+Mother: Known to have gallstones. No other significant family history reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+Occasional over‑the‑counter antacid (used a few times per month for heartburn). No prescription medications reported at this visit.  
+
+Vital Signs (recorded on 30 May 2024)  
+Heart Rate: 94 beats/min  
+Respiratory Rate: 13 breaths/min  
+Blood Pressure: Not documented  
+Temperature: Not documented  
+SpO₂: Not documented  
+Height: 177.7 cm  
+Weight: Not documented  
+Body Mass Index: 27.27 kg/m²  
+
+Physical Examination  
+No physical examination details are available in the record.  
+
+Laboratory Data (most recent)  
+Complete blood count:  
+‑ White blood cells 7.58 ×10³/µL (within normal limits)  
+‑ Red blood cells 4.34 ×10⁶/µL  
+‑ Hemoglobin 13.58 g/dL  
+‑ Hematocrit 40.1 %  
+‑ Mean corpuscular volume 94.5 fL  
+‑ Mean corpuscular hemoglobin 28.4 pg  
+‑ Mean corpuscular hemoglobin concentration 34.2 g/dL  
+‑ Red cell distribution width 39.9 fL (elevated)  
+‑ Platelets 351.7 ×10³/µL  
+
+Lipid panel:  
+‑ Total cholesterol 252 mg/dL  
+‑ LDL‑C 168 mg/dL  
+‑ HDL‑C 58 mg/dL  
+‑ Triglycerides 130 mg/dL  
+
+Mental health screen: PHQ‑2 = 0 (no depressive symptoms), GAD‑7 = 2 (minimal anxiety).  
+
+Fall risk assessment (Morse Scale): Score 105 (high risk).  
+
+Assessment  
+1. Acute right upper‑quadrant abdominal pain, most consistent with biliary colic secondary to possible gallstone disease (family history of gallstones, pain precipitated by a fatty meal, associated nausea).  
+2. Nausea, likely secondary to the abdominal pain.  
+3. Elevated fall risk (Morse score 105).  
+4. Dyslipidemia (elevated total cholesterol and LDL).  
+
+Plan  
+• Diagnostic work‑up: Arrange right upper‑quadrant abdominal ultrasound within the next 24‑48 hours to evaluate for cholelithiasis or cholecystitis. If ultrasound is equivocal and clinical suspicion remains high, consider hepatobiliary iminodiacetic acid (HIDA) scan.  
+• Symptomatic management: Continue acetaminophen 650 mg PO q6 hr PRN for pain; add ibuprofen 400‑600 mg PO q6‑8 hr as needed unless contraindicated. Counsel the patient to avoid heavy, fatty meals until the underlying cause is clarified.  
+• Nausea: Offer ondansetron 4 mg PO q8 hr PRN if nausea worsens.  
+• Fall risk: Advise the patient to use a stable chair or assistance when mobilizing; arrange home safety evaluation if discharge to home is planned.  
+• Dyslipidemia: Discuss dietary modifications (reduce saturated fat, increase fiber) and arrange follow‑up with primary care for lipid‑lowering therapy evaluation.  
+• Follow‑up: Patient to see his primary care physician within 5‑7 days for review of imaging results and further management. If ultrasound confirms gallstones with signs of inflammation, referral to general surgery for possible cholecystectomy will be arranged.  
+• Discharge instructions: Return to the ED for any new fever, worsening pain, vomiting, jaundice, or inability to tolerate oral intake. Maintain adequate hydration, limit alcohol intake, and continue antacids only as needed for heartburn.  
+
+Disposition  
+Patient evaluated, work‑up initiated, and discharged with above plan and instructions. No admission required at this time.

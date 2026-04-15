@@ -1,0 +1,104 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:27:32
+Time: 5.41s
+Tokens: 18,946 in / 1,671 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: 05 November 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with acute right‑sided abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ms. Hayes reports an aching pain localized to the right upper quadrant of the abdomen. The discomfort started about eight hours prior to presentation while she was preparing to go to sleep. Initially the pain was intermittent, occurring in brief episodes, but over the past five to six hours it has become constant and severe, now rating it an 8 on a 0‑10 pain scale. She describes the quality of the pain as “aching” and denies any radiation to other areas. The pain is aggravated by eating, especially fatty foods such as burgers or fries, and she notes that similar episodes have occurred in the past after consuming such meals. She attempted acetaminophen (Tylenol) without relief. Associated symptoms include mild nausea; she has not vomited. She denies fever, chills, sweats, constipation, diarrhea, urinary changes, hematuria, jaundice, or recent weight loss. She feels somewhat fatigued secondary to the pain but otherwise reports no recent travel, infections, or sick contacts.
+
+Review of Systems  
+Constitutional: No fever, chills, or unexplained weight loss. Mild fatigue noted.  
+Respiratory: No cough, dyspnea, or recent respiratory infections.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Right‑upper‑quadrant aching pain, worse after fatty meals; mild nausea; no vomiting, no change in bowel habits, no hematochezia or melena.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Neurologic: No headaches other than her known chronic migraines.  
+Musculoskeletal: No new joint pain.  
+Skin: No rashes, no jaundice.  
+Psychiatric: No new anxiety or depressive symptoms reported.
+
+Past Medical History  
+- Type 2 diabetes mellitus (on metformin)  
+- Essential hypertension (on lisinopril)  
+- Chronic kidney disease, stages 2‑3 (eGFR ≈ 37 mL/min/1.73 m²)  
+- Metabolic syndrome / obesity (BMI ≈ 28)  
+- Gastroesophageal reflux disease  
+- Chronic obstructive bronchitis  
+- Chronic migraine without aura  
+- Chronic pain syndrome  
+
+Surgical History  
+- Extraction of wisdom teeth (adolescent)  
+
+Social History  
+The patient lives alone in an apartment. She is currently unemployed after being laid off due to the COVID‑19 pandemic. She walks or runs outdoors when weather permits. Alcohol use consists of one to two glasses of wine nightly; she does not smoke or use recreational drugs. No current tobacco use.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other major illnesses.  
+
+Allergies  
+No known drug or environmental allergies reported.  
+
+Current Medications (home)  
+- Metformin (dose not specified) for diabetes  
+- Lisinopril 10 mg daily for hypertension  
+- Insulin (human regular and NPH) – regimen not detailed  
+- Albuterol inhaler as needed for bronchitis  
+- Fluticasone/salmeterol inhaler as needed for bronchitis  
+
+Vital Signs (most recent)  
+Heart rate: 92 beats/min  
+Respiratory rate: 13 breaths/min  
+Blood pressure: Not recorded at this visit  
+Temperature: Not recorded  
+Weight: Not recorded  
+BMI: 27.9 (from historical data)  
+
+Physical Examination  
+No physical exam findings were documented in the encounter note.  
+
+Laboratory Results (most recent)  
+- Serum calcium: 9.27 mg/dL (within normal limits)  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL (consistent with chronic kidney disease)  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L; serum chloride: 103.96 mmol/L  
+- Serum glucose: 66.6 mg/dL (fasting)  
+- Urine protein: 214.8 mg/dL (proteinuria)  
+- Urine glucose: 1.53 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+- Urine bilirubin: 0.44 mg/dL (trace)  
+
+Other laboratory panels (CBC, liver enzymes, lipase) were not provided.  
+
+Assessment  
+1. **Right‑upper‑quadrant abdominal pain likely secondary to biliary colic** – the pain is typical for gallbladder irritation after fatty meals, now constant for several hours, with associated nausea.  
+2. **Chronic kidney disease, stage 3** – eGFR ≈ 37 mL/min/1.73 m²; requires medication dosing considerations.  
+3. **Type 2 diabetes mellitus, controlled on metformin and insulin** – recent serum glucose 66 mg/dL, no hypoglycemia reported.  
+4. **Essential hypertension** – on lisinopril, blood pressure not measured today.  
+5. **Chronic obstructive bronchitis** – on inhaled therapy, stable.  
+
+Plan  
+- **Imaging:** Order right‑upper‑quadrant abdominal ultrasound urgently to assess for gallstones, gallbladder wall thickening, or signs of acute cholecystitis. If ultrasound is nondiagnostic and suspicion remains high, consider a HIDA scan.  
+- **Laboratory work‑up:** Obtain complete metabolic panel, liver function tests (AST, ALT, ALP, total bilirubin), lipase, and a complete blood count to evaluate for possible infection or biliary obstruction.  
+- **Pain management:** Initiate oral ibuprofen 600 mg every 6 hours with meals, provided renal function tolerates NSAIDs; otherwise consider acetaminophen 1 g every 6 hours. Monitor pain level and reassess.  
+- **Nausea:** If nausea worsens, prescribe ondansetron 4 mg orally every 8 hours as needed.  
+- **Dietary advice:** Advise a low‑fat diet and avoidance of fried or greasy foods until imaging results are available. Encourage adequate hydration.  
+- **Medication review:** Continue metformin, insulin, lisinopril, and inhaled bronchodilators. Hold any nephrotoxic agents; adjust NSAID use based on renal function.  
+- **Monitoring:** Instruct the patient to seek immediate care if she develops fever, vomiting, increasing abdominal tenderness, jaundice, or any signs of worsening condition.  
+- **Follow‑up:** Schedule a follow‑up visit with her primary care provider within 3‑5 days to review imaging and laboratory results. If ultrasound confirms cholelithiasis with or without cholecystitis, refer to general surgery for possible cholecystectomy.  
+
+Disposition  
+The patient is discharged home with the above plan, analgesics, anti‑emetic prescription as needed, and clear return precautions. No admission is indicated at this time pending further diagnostic evaluation.

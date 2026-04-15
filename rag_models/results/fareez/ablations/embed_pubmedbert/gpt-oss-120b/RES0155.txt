@@ -1,0 +1,139 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:51:51
+Time: 5.30s
+Tokens: 12,399 in / 1,846 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914‑01‑07 (Age 112)  
+Sex: Female  
+Medical Record #: 982  
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+
+Chief Complaint  
+The patient presents with worsening shortness of breath, chest discomfort, and a productive cough of five days’ duration.
+
+History of Present Illness  
+Ms. Tapia reports that over the past five days she has experienced progressive dyspnea that is most pronounced with exertion such as routine activities around her apartment. At rest she feels relatively comfortable, but she notes a constant sense of “congestion” and mild chest discomfort that has been present throughout the episode. She describes her cough as productive, producing small amounts of yellow‑green sputum roughly the size of the inside of her palm with each episode. She denies hemoptysis. Over the last two days she has felt “feverish,” although she has not taken an oral temperature. She denies chills, night sweats, or nocturnal dyspnea. There is no recent travel, and she reports no known exposure to sick contacts. She has used her rescue inhaler (albuterol) this morning with three to four puffs and also used it last night; normally she uses a rescue inhaler only two to three times per week. She has not taken any other over‑the‑counter remedies for the current symptoms. She denies headache, visual changes, nausea, vomiting, gastrointestinal upset, palpitations, dizziness, or changes in bowel or urinary habits. Appetite and sleep remain unchanged.
+
+Review of Systems  
+
+Constitutional: Feels feverish; no documented temperature, no chills, no weight loss, no night sweats.  
+
+Respiratory: Progressive shortness of breath on exertion, productive cough with yellow‑green sputum, chest “congestion” without pleuritic pain; no hemoptysis, no orthopnea, no paroxysmal nocturnal dyspnea, no recent wheezing reported.  
+
+Cardiovascular: No chest pain described as sharp or pressure; no palpitations, no known heart rhythm changes.  
+
+Gastrointestinal: Known GERD; no current nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+
+Genitourinary: No dysuria, frequency, or urinary urgency.  
+
+Neurologic: No headache, visual changes, or altered mental status.  
+
+Musculoskeletal: No new joint or muscle pain.  
+
+Psychiatric: No anxiety, depression, or sleep disturbances beyond the usual.  
+
+Allergies  
+The patient reports no known drug allergies.
+
+Past Medical History  
+
+- Chronic Obstructive Pulmonary Disease (diagnosed 3 years ago)  
+- Hypertension (essential)  
+- Gastroesophageal reflux disease (GERD)  
+- Obesity (BMI ≈ 27.4)  
+- Metabolic syndrome, pre‑diabetes, and chronic kidney disease stage 3 (historical)  
+- Alzheimer’s disease  
+- History of myocardial infarction and coronary artery disease with prior coronary artery bypass grafting  
+- Hyperlipidemia  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+
+- Tobacco: Current smoker, approximately 1 pack per day for the past 30–40 years.  
+- Alcohol: Occasional wine with dinner on weekends.  
+- Illicit drugs: Denies use.  
+- Living situation: Resides in an apartment with her daughter.  
+- Employment: Works part‑time at a grocery store.  
+
+Family History  
+No known family history of lung, cardiac, or malignant disease.
+
+Current Medications (home)  
+
+- Albuterol (Ventolin) rescue inhaler, used PRN (3–4 puffs this morning).  
+- Symbicort (budesonide/formoterol) inhaled steroid/long‑acting bronchodilator, taken daily.  
+- ACE inhibitor (specific agent not specified) for hypertension.  
+- Calcium carbonate (Tums) PRN for GERD.  
+
+Objective  
+
+Vital Signs (most recent documented)  
+- Heart Rate: 92 beats/minute  
+- Respiratory Rate: 12 breaths/minute  
+- Blood Pressure: Not recorded in the current encounter  
+- Temperature: Not recorded; patient reports feeling feverish  
+- SpO₂: Not recorded  
+- Weight: Not recorded  
+
+Physical Examination  
+No physical examination findings were documented in the encounter transcript.  
+
+Laboratory Data (most recent)  
+- Sodium: 138–139 mmol/L (within normal limits)  
+- Potassium: 4.85 mmol/L (within normal limits)  
+- Chloride: 105–106.7 mmol/L (within normal limits)  
+- BUN: 10.35 mg/dL (normal)  
+- Creatinine: 0.42 mg/dL (normal)  
+- eGFR: 88 mL/min/1.73 m² (adequate)  
+- Glucose: 96.6 mg/dL (normal)  
+- Calcium: 9.48 mg/dL (normal)  
+- ALT: 52 U/L (mildly elevated)  
+- Total bilirubin: 0.69 mg/dL (normal)  
+- Albumin: 3.73 g/dL (slightly low)  
+- Carbon dioxide (total): 26.9 mmol/L (normal)  
+
+No complete blood count or inflammatory markers were available in the extract.  
+
+Imaging  
+No imaging studies have been performed at this visit; a chest radiograph is planned.
+
+Assessment  
+
+1. **Pneumonia – probable** – The patient with chronic obstructive pulmonary disease presents with acute worsening dyspnea, productive yellow‑green sputum, and subjective fever, raising concern for a bacterial lower‑respiratory‑tract infection.  
+2. **COPD exacerbation** – Likely precipitated by an infectious process; current symptoms exceed her baseline and her rescue inhaler use has increased.  
+3. **Hypertension, GERD, and chronic cardiac disease** – Stable chronic conditions.  
+4. **Current tobacco use** – Contributing risk factor for respiratory infection and COPD progression.  
+
+Plan  
+
+- **Immediate ED evaluation** – The patient will be escorted to the emergency department for full vital sign assessment, pulse oximetry, and urgent investigations.  
+- **Diagnostics**  
+  - Obtain bedside pulse oximetry and arterial blood gas if indicated.  
+  - Order a chest X‑ray to evaluate for infiltrates consistent with pneumonia.  
+  - Perform a nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+  - Complete blood count with differential and basic metabolic panel to assess for leukocytosis and electrolyte status.  
+- **Therapeutic interventions**  
+  - Initiate nebulized bronchodilator therapy (e.g., albuterol/ipratropium) in the ED.  
+  - Begin systemic corticosteroids (e.g., prednisone 40 mg daily) for COPD exacerbation per standard protocol.  
+  - Empiric antibiotic therapy targeting typical community‑acquired pneumonia pathogens (e.g., amoxicillin‑clavulanate or a macrolide) pending culture results.  
+  - Continue home inhaled therapies (Symbicort) and ACE inhibitor unless contraindicated.  
+- **Smoking cessation** – Offer counseling and referral to smoking cessation resources; discuss nicotine replacement or pharmacotherapy.  
+- **Disposition** – Based on vital signs, oxygenation, radiographic findings, and response to initial treatment, the ED team will determine need for hospital admission versus discharge with oral antibiotics and close follow‑up.  
+- **Discharge instructions (if applicable)**  
+  - Complete prescribed antibiotic course.  
+  - Use rescue inhaler q4‑6 hours as needed; do not exceed prescribed limits.  
+  - Monitor temperature; seek care if fever > 101 °F, worsening dyspnea, chest pain, or new confusion.  
+  - Maintain adequate hydration and rest.  
+  - Follow up with primary care provider within 48‑72 hours after ED visit.  
+- **Follow‑up**  
+  - Schedule primary care visit within 2 days for reassessment of respiratory status and review of test results.  
+  - Arrange pulmonology follow‑up within 1‑2 weeks for COPD management optimization.  
+
+All plans discussed with the patient, who verbalized understanding and agreed to proceed to the emergency department for further evaluation and treatment.

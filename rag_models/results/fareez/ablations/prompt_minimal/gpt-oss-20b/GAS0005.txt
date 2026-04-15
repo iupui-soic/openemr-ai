@@ -1,0 +1,109 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:29:21
+Time: 2.98s
+Tokens: 13,445 in / 1,364 out
+============================================================
+
+**Patient Information**  
+- **Age/Sex:** 6‑year‑old male  
+- **Reason for visit:** Acute abdominal pain, vomiting, watery diarrhea, and fever noted by mother.  
+- **Accompanying adult:** Mother (present)  
+
+---
+
+## Subjective  
+
+### History of Present Illness  
+The mother reports that the child has had **diffuse abdominal pain** for the past **3 days**. Vomiting began **2 days ago**, initially after lunch, and has continued **6 times** total, most recently described as a “yellowish material” without bile or blood. Diarrhea is **watery**, occurring approximately **6–7 times** in the last 24 hours. Fever was first noted yesterday with a recorded temperature of **38.3 °C (100.9 °F)**; the child also experienced chills and has been mostly quiet, sleeping most of the day. No aggravating or relieving factors were identified; no food or medication changes. No blood, mucus, or red currant jelly stools reported.  
+
+### Review of Systems  
+
+| System | Findings | Comments |
+|--------|----------|----------|
+| Constitutional | Fever, chills, malaise | Temperature 38.3 °C |
+| Respiratory | No cough, no shortness of breath | |
+| Cardiovascular | No chest pain, no palpitations | |
+| Gastrointestinal | Abdominal pain (diffuse, non‑localized), vomiting (yellowish, 6 episodes), watery diarrhea (6–7 episodes) | |
+| Genitourinary | No dysuria, no increased frequency | |
+| Skin/Mucous | No rash, no eye redness | |
+| Musculoskeletal | No pain or swelling | |
+| Neurologic | No headache, no altered mental status | |
+
+### Past Medical History  
+- **No chronic illnesses** or previous hospitalizations.  
+- **Immunizations:** Up to date.  
+
+### Medications  
+- None (no current prescriptions, over‑the‑counter medications, or recent supplements).  
+
+### Allergies  
+- **No known drug allergies.**  
+
+### Family History  
+- No family history of inflammatory bowel disease, celiac disease, or significant gastrointestinal conditions.  
+- No history of asthma, heart disease, or genetic disorders noted.  
+
+### Social History  
+- Lives with mother, father, and two older siblings.  
+- No smokers in the household, no pets, no alcohol use.  
+- No recent travel; all family members are otherwise well.  
+
+---
+
+## Objective  
+
+### Vital Signs (at triage)  
+- Temperature: 38.3 °C (100.9 °F)  
+- Heart rate: **[pending—should be recorded]**  
+- Respiratory rate: **[pending]**  
+- Blood pressure: **[pending]**  
+- SpO₂: **[pending]**  
+
+### Physical Examination  
+
+| Body System | Findings |
+|-------------|----------|
+| General | Appears tired, quiet, in mild distress. |
+| HEENT | No conjunctival injection; oral mucosa moist. |
+| Respiratory | Clear to auscultation bilaterally, no wheezes or crackles. |
+| Cardiovascular | Regular rhythm, no murmurs. |
+| Abdomen | Soft, non‑tender to palpation, no guarding or rebound; no palpable masses. Central abdominal point of tenderness reported by child when prompted. No hepatosplenomegaly. |
+| Skin | No rash, no petechiae, normal turgor. |
+| Extremities | No edema, pulses intact. |
+| Neurologic | Alert, oriented to person. |
+
+---
+
+## Assessment  
+
+1. **Acute Viral Gastroenteritis** – Likely a viral etiology (e.g., norovirus, adenovirus, or SARS‑CoV‑2), given the presentation of abdominal pain, vomiting, watery diarrhea, fever, and chills.  
+2. **Moderate Dehydration** – Evidence of decreased oral intake, increased vomiting, and diarrhea; vital signs suggest mild hypovolemia.  
+3. **Rule Out COVID‑19** – Mother expressed concern; COVID test ordered.  
+4. **Consider Bacterial Enteritis** – Unlikely given lack of blood/mucus, but to be ruled out if the patient deteriorates or if laboratory data suggest.  
+
+---
+
+## Plan  
+
+| Intervention | Details |
+|--------------|---------|
+| **Rehydration** | Initiate oral rehydration therapy (e.g., Pedialyte) with small frequent sips. If vomiting persists, consider IV fluids (normal saline 20 mL/kg bolus) in a controlled setting. |
+| **Antiemetic** | If vomiting continues, consider ondansetron 0.1 mg/kg IV or oral as appropriate. |
+| **Antipyretic** | Acetaminophen 10 mg/kg PO every 6 h PRN for fever or discomfort. |
+| **Diet** | Clear liquids until vomiting improves; then advance to bland, low‑fat foods. Avoid dairy and fatty foods for 24 h. |
+| **Monitor** | Check vital signs and input/output hourly in the acute setting. Repeat CBC, electrolytes, and renal panel to assess dehydration severity. |
+| **COVID‑19 Testing** | Rapid antigen or PCR test performed today. |
+| **Infection Control** | Counsel family on isolation precautions if COVID‑19 positive; advise mask wearing and hand hygiene. |
+| **Follow‑up** | Return to clinic or ED if: (1) vomiting >6 h, (2) diarrhea >24 h, (3) signs of severe dehydration (dry mucous membranes, poor skin turgor, decreased urine output), (4) persistent fever >38.5 °C for >48 h, or (5) any new symptoms (e.g., blood in stool, abdominal rigidity). |
+| **Parental Education** | Discuss signs of dehydration, when to seek care, proper hydration techniques, and importance of completing the COVID test. |
+| **Documentation** | Note the plan in the electronic record and update the child's health maintenance chart. |
+
+**Disposition** – The child will remain in the clinic for observation and re‑assessment in 4 hours; parents are advised to monitor for worsening signs at home.
+
+--- 
+
+**Prepared by:**  
+[Provider Name], MD  
+[Date]

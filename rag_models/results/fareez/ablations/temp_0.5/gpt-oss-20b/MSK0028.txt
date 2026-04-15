@@ -1,0 +1,105 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:17:52
+Time: 2.86s
+Tokens: 9,996 in / 1,414 out
+============================================================
+
+Patient Information  
+Name: Abdul Gorczany  
+DOB: March 9, 1971  
+Sex: Male  
+Address: 404 Effertz Crossroad, Springfield, Massachusetts 01020  
+
+Chief Complaint  
+Right upper extremity pain, sharp and stabbing, localized to the front of the right shoulder and elbow, present for one day.  
+
+History of Present Illness  
+The patient reports that the pain began yesterday after a weight‑training session focused on the biceps. He was flexing his elbows on a machine without using external weights, performing biceps curls. He notes a sudden sharp pain that started within about half an hour of the activity. He is uncertain whether he heard a pop at the time but believes he may have. The pain is described as sharp, stabbing, and has not improved with rest, ice, or over‑the‑counter Advil. The patient reports a swelling and bruising over the mid‑arm where the biceps muscle lies, and a noticeable mass that makes the biceps appear enlarged. He reports difficulty flexing the elbow, limited supination, and pain with shoulder abduction. The pain intensity is 8–9/10. No radiation of pain, no associated numbness or tingling, and no systemic symptoms such as fever, chills, weight loss, or appetite changes. The patient denies any recent trauma, falls, or other injuries.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or appetite changes.  
+Neurologic: No numbness, tingling, weakness beyond the right upper arm, or dizziness.  
+Musculoskeletal: Pain limited to right shoulder and elbow; swelling and bruising present; no pain in other joints.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea, or constipation.  
+Genitourinary: No urinary symptoms.  
+Dermatologic: No rashes or skin changes.  
+Psychiatric: No depression or anxiety reported.  
+
+Past Medical History  
+- Hypertension (diagnosed 1993)  
+- Chronic kidney disease stage 4 (diagnosed 2021)  
+- Pre‑diabetes (not on medication)  
+- Chronic kidney disease stage 1 and 3 previously documented  
+- Major depression disorder (ongoing)  
+- Alcoholism (history)  
+- Chronic kidney disease related proteinuria and microalbuminuria  
+- Other past medical conditions include multiple dental issues, stress, and a history of intimate partner abuse.  
+
+Surgical History  
+- Tonsillectomy at age 10.  
+
+Medication History  
+Current medications:  
+- Simvastatin 10 mg daily (active until September 9, 2024)  
+- No other regular medications reported by the patient; he has not taken any prescription drugs in the past month.  
+
+Social History  
+- Non‑smoker, no tobacco use.  
+- No alcohol or recreational drug use.  
+- Lives with wife and daughter in a condominium in the city.  
+- Works as an accountant from home; may need to take a few days off for recovery.  
+- Engages in weight training approximately once per week, recently resumed after a hiatus.  
+
+Family History  
+No known family history of musculoskeletal or autoimmune disease.  
+
+Physical Examination  
+Vital signs: No information available.  
+Right upper extremity:  
+- Inspection shows swelling and bruising over the mid‑arm; a palpable mass in the biceps region.  
+- Palpation: Tenderness over the biceps tendon insertion and proximal arm.  
+- Range of motion: Limited elbow flexion; pain with flexion and supination; shoulder abduction is painful but less limited.  
+- No warmth noted; no redness beyond bruising.  
+- No neurovascular deficits noted.  
+
+Labs  
+Serum creatinine 2.86 mg/dL (elevated), eGFR 85 mL/min/1.73 m² (within normal for CKD stage 4).  
+Albumin 5.10 g/dL, total protein 7.06 g/dL.  
+Lipid profile: LDL 133.6 mg/dL, HDL 36.3 mg/dL, triglycerides 161 mg/dL.  
+Glucose 79.5 mg/dL.  
+Other electrolytes within normal limits.  
+
+Imaging  
+No imaging performed at this time; ultrasound of the right shoulder and biceps tendon is planned.  
+
+Assessment  
+The presentation is most consistent with an acute biceps tendon injury, likely a partial or complete tear of the long head of the biceps tendon, given the sudden onset after eccentric loading, localized swelling, bruising, and functional deficits in elbow flexion and supination. Differential diagnoses include subacromial impingement syndrome and rotator cuff pathology, but these are less likely given the specific elbow involvement and lack of shoulder impingement signs.  
+
+Plan  
+1. Order a focused ultrasound of the right shoulder and biceps tendon to assess for tendon tear or tendinopathy.  
+2. If ultrasound is inconclusive or suggests significant injury, obtain an MRI of the shoulder for detailed evaluation.  
+3. Initiate conservative management:  
+   - Rest and avoid aggravating activities for 2–4 weeks.  
+   - Ice packs to the affected area, 15–20 minutes every 2–3 hours.  
+   - NSAIDs (e.g., ibuprofen 400 mg every 6–8 hours) unless contraindicated by kidney function.  
+   - Physical therapy referral for strengthening and range‑of‑motion exercises once acute pain subsides.  
+4. Monitor renal function; avoid NSAIDs if serum creatinine rises or eGFR falls.  
+5. Follow up in clinic in 1–2 weeks for reassessment and review imaging results.  
+6. Educate patient on signs of worsening (increased pain, inability to flex elbow, increasing swelling) and advise immediate return to care if these occur.  
+
+Discharge Instructions  
+- Rest the right arm; avoid heavy lifting or repetitive elbow flexion for at least 2–4 weeks.  
+- Apply ice to the affected area 15–20 minutes every 2–3 hours.  
+- Take prescribed NSAIDs as directed, monitoring for gastrointestinal or renal side effects.  
+- Keep the arm elevated when possible to reduce swelling.  
+- Follow up with the orthopedic or sports medicine clinic for imaging and further management.  
+
+Follow‑up Instructions  
+- Return to clinic in 1–2 weeks for clinical reassessment and imaging review.  
+- If pain worsens or new symptoms develop, contact the office immediately.  
+
+No additional information available.

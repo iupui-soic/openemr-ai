@@ -1,0 +1,80 @@
+Model: qwen/qwen3-32b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:01:18
+Time: 4.42s
+Tokens: 10,801 in / 1,392 out
+============================================================
+
+Patient Information  
+The patient is a 104-year-old female, Adrianna Camelia Wuckert, residing in Marshfield, Massachusetts. Her medical history is extensive and includes chronic sinusitis, essential hypertension, ischemic heart disease, obesity, chronic kidney disease (stages 1–4), type 2 diabetes mellitus with complications, hyperlipidemia, anemia, and a history of renal transplantation. She has a long-standing social history of smoking (10 cigarettes/day since age 20), occasional cannabis use (approximately 5 milligrams per week), and minimal alcohol consumption. She reports a diet high in fast and junk food and lacks regular physical activity. She resides in an apartment with potential mold and dust exposure and works in a crowded environment with a possibly malfunctioning air conditioning system and poor ventilation. She has no known allergies and no family history of significant medical conditions.
+
+Chief Complaint  
+The patient presents with a six-day history of acute-onset dyspnea, which has progressively worsened. She reports that she had to stop multiple times while walking from her car to the clinic due to breathlessness. She also experiences a productive cough with rusty-colored sputum, occurring several times per day. She denies a prior history of similar symptoms.
+
+History of Present Illness  
+The patient describes the onset of dyspnea as sudden and not associated with any specific activity. The dyspnea is constant and worsens with exertion. She also reports a concurrent cough with rusty-colored sputum, which began at the same time as the dyspnea. The symptoms have been progressively worsening over the past six days. She notes associated chest pain that is sharp, worsens with coughing, and is rated as a 7 on a 10-point pain scale. The pain subsides gradually when coughing stops. She also reports intermittent chills and a subjective feeling of fever, though no temperature was measured. She denies wheezing, dizziness, syncope, nausea, vomiting, headaches, night sweats, weight loss, or changes in bowel or urinary habits. She denies any recent travel, contact with ill individuals, or known exposure to tuberculosis. She has had a runny nose in the days preceding the onset of her current symptoms.
+
+Review of Systems  
+Constitutional: The patient reports intermittent chills and subjective feverishness. No weight loss or appetite changes are noted.  
+Respiratory: Dyspnea, cough with rusty-colored sputum, and mild wheezing are present.  
+Cardiovascular: No chest pressure or palpitations reported.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No changes in urinary patterns.  
+Neurological: No headaches or dizziness.  
+Musculoskeletal: No joint or muscle pain.  
+Hematologic: No bleeding or bruising.  
+Psychiatric: No mood changes or anxiety reported.  
+Dermatologic: No rashes or skin changes.  
+Endocrine: No changes in sleep or energy levels.  
+Other: No new or worsening symptoms in other systems.
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+The patient has a long-standing medical history that includes chronic sinusitis, essential hypertension, ischemic heart disease, chronic kidney disease (stages 1–4), type 2 diabetes mellitus with microalbuminuria and proteinuria, hyperlipidemia, anemia, and a history of renal transplantation. She has also had a miscarriage in the past and reports a history of chronic dental issues, including gingivitis and dental caries. She has a documented history of social isolation and stress.
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+The patient is a current smoker with a 10-cigarette-per-day habit since age 20. She uses cannabis occasionally (approximately 5 milligrams per week) and consumes alcohol in small quantities (about five drinks per week). She resides in a poorly maintained apartment and works in a crowded environment with potential exposure to mold, dust, and poor air quality. She reports a diet high in fast and processed foods and lacks regular physical activity.
+
+Family History  
+No significant family history of cancer, heart disease, or lung disease reported.
+
+Current Medications  
+No medications are currently listed as being taken by the patient at the time of this visit.
+
+Objective  
+Vital Signs  
+No vital signs were recorded during this visit.  
+Physical Examination  
+No physical examination findings were documented in the electronic health record for this visit.  
+
+Labs  
+Recent laboratory results include the following:  
+- Cholesterol: 185.75 mg/dL  
+- HDL cholesterol: 46.65 mg/dL  
+- LDL cholesterol: 85.03 mg/dL  
+- Triglycerides: 128.84 mg/dL  
+- Urea nitrogen: 11.83 mg/dL  
+- Creatinine: 2.72 mg/dL  
+- Potassium: 4.7 mmol/L  
+- Sodium: 142.95 mmol/L  
+- Chloride: 107.38 mmol/L  
+- Calcium: 9.33 mg/dL  
+- Glomerular filtration rate (MDRD): 74.15 mL/min  
+- Alanine aminotransferase (ALT): 34.24 U/L  
+- Total bilirubin: 0.45 mg/dL  
+- Albumin: 4.49 g/dL  
+
+Imaging  
+No imaging studies were performed at this visit.
+
+Assessment  
+The patient presents with acute dyspnea, cough with rusty-colored sputum, and pleuritic chest pain. These symptoms are consistent with a lower respiratory tract infection, and the differential diagnosis includes community-acquired pneumonia and possible COPD exacerbation, given her smoking history. The presence of pleuritic chest pain and rusty-colored sputum raises concern for a more severe infection or atypical presentation. The patient’s chronic medical conditions, including diabetes and renal disease, place her at higher risk for complications. Further diagnostic workup, including a chest X-ray and sputum culture, is warranted to confirm the diagnosis and guide treatment.
+
+Plan  
+The patient will undergo a chest X-ray to evaluate for infiltrates or other abnormalities consistent with pneumonia. Sputum culture and sensitivity testing will be obtained to guide potential antibiotic therapy. Blood tests, including a complete blood count, C-reactive protein, and inflammatory markers, will be ordered. The patient will be started on empiric antibiotic therapy pending culture results, and her symptoms will be managed with supportive care. She will be advised to monitor her symptoms closely and return for follow-up if there is no improvement or if symptoms worsen. Smoking cessation counseling will also be offered as part of her long-term management plan.

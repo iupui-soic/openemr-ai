@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:34:54
+Time: 3.38s
+Tokens: 10,745 in / 1,504 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: September 28, 1931 (age 94)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+Contact: lives with spouse; no additional contact information provided.  
+
+Chief Complaint  
+Severe right hip pain following a fall.  
+
+History of Present Illness  
+Mr. Turner reports that two hours ago he fell while descending the stairs in his apartment. He missed one of the last few steps and landed on his right side and right hip. Immediately after the fall he experienced excruciating pain described as a 10/10 on a scale of 0 to 10, which is the worst pain he has ever had. The pain is sharp when weight is applied to the right hip and becomes achy when no weight is placed on it. Mr. Turner is unable to stand or bear weight on the right lower extremity. He describes swelling and mild redness around the right hip area and notes that the right leg appears to be slightly outwardly turned compared to the left. He has been unable to fully flex, extend, abduct, or adduct the right hip. The pain is constant and does not improve with rest. No preceding dizziness, loss of balance beyond the step slip, or other precipitating events were noted. He denies any head injury or loss of consciousness. He reports feeling slightly dizzy when leaving the ambulance but attributes it to pain rather than a syncopal event.  
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Respiratory: No cough, wheeze, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, constipation, or diarrhea.  
+Genitourinary: No dysuria, hematuria, or frequency changes.  
+Musculoskeletal: Right hip pain as described; no other joint pain or muscle aches.  
+Neurologic: No numbness, tingling, or weakness.  
+Psychiatric: No confusion or memory loss.  
+Integumentary: Swelling, mild redness, and possible bruising over the right hip; no rash.  
+
+Past Medical History  
+- Osteoarthritis (hand and hip)  
+- Hypertension, currently treated with Ramipril  
+- Chronic kidney disease, stage 3 (baseline creatinine 1.01 mg/dL)  
+- Mild anemia (historical)  
+- No history of seizures, malignancy, or autoimmune disease  
+
+Medication List (current)  
+- Ramipril 10 mg orally daily (for hypertension)  
+- Vitamin D  
+- Calcium supplement  
+- Multivitamin  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+- Lives with spouse in a small apartment.  
+- Non‑smoker, never smoked.  
+- Occasional wine consumption (approximately one glass every other day).  
+- No recreational drug use (marijuana or other).  
+- No recent travel; no exposure to sick contacts.  
+
+Family History  
+- Father deceased from myocardial infarction in his 60s.  
+- Mother had skin cancer (no surgery required).  
+
+Physical Examination  
+Vital Signs: No current vitals recorded; presumed stable.  
+General: Alert, oriented, in acute distress due to pain.  
+HEENT: No head trauma, no conjunctival injection.  
+Cardiovascular: No murmurs, regular rate.  
+Respiratory: Clear breath sounds bilaterally.  
+Abdomen: Soft, non‑tender.  
+Extremities: Right hip and thigh swollen, mildly erythematous, warm to touch.  The right lower limb appears slightly externally rotated.  No deformity or obvious fracture lines noted on inspection.  No bruising beyond mild discoloration.  Right hip range of motion limited by pain; patient cannot bear weight on the right limb.  
+Neurologic: Intact sensation to light touch in lower extremities; no focal deficits reported.  
+Skin: Mild bruising over the right hip area; no open wounds or rashes.  
+
+Laboratory Data (most recent available)  
+- Hemoglobin: 16.7 g/dL (within normal limits)  
+- Hematocrit: 50.4% (not provided but calculated)  
+- WBC: 10,148 /µL (slightly elevated)  
+- Platelets: 199,503 /µL (within normal limits)  
+- Creatinine: 1.01 mg/dL (baseline)  
+- BUN not provided; creatinine clearance estimated normal for CKD stage 3.  
+- Electrolytes: Sodium 138.2 mmol/L, Chloride 110.8 mmol/L, Potassium not listed.  
+- Urinalysis: No leukocytes, nitrites, or ketones; urine pH 7.87.  
+
+Imaging  
+No imaging has been performed to date; a radiographic study of the pelvis/hip is indicated to confirm the fracture and to delineate the fracture pattern.  
+
+Assessment  
+1. Right hip fracture secondary to a fall (high‑risk mechanism).  
+2. Osteoarthritis of the hip and hand.  
+3. Hypertension, well‑controlled with Ramipril.  
+4. Chronic kidney disease, stage 3.  
+
+Plan  
+- Obtain urgent plain radiographs of the pelvis and right hip to confirm the fracture type and location.  
+- Consult Orthopaedic Surgery for evaluation and definitive management.  Options include internal fixation with screws for a femoral neck or intertrochanteric fracture or consideration for total or partial hip arthroplasty depending on fracture pattern and patient factors.  
+- Initiate pain control with non‑steroidal anti‑inflammatory medication (e.g., Ibuprofen 400–600 mg PO q6h PRN) and consider opioid therapy (e.g., hydrocodone/acetaminophen 5/325 mg q6h PRN) if pain remains uncontrolled; monitor for renal function and gastrointestinal tolerance.  
+- Continue Ramipril for hypertension; monitor blood pressure and renal function post‑surgery.  
+- Initiate prophylaxis for venous thromboembolism (e.g., low‑dose heparin or low‑dose aspirin) per orthopaedic protocol.  
+- Arrange for physical therapy and occupational therapy referral for early mobilization and gait training after surgical stabilization.  
+- Provide discharge instructions upon stabilization: keep weight‑bearing restrictions as advised by orthopaedics; maintain pain medication schedule; monitor for signs of infection (fever, increased pain, drainage) or neurovascular compromise (numbness, tingling).  
+- Follow‑up: Orthopaedic surgery consult within 24–48 hours; primary care follow‑up in 1 week post‑discharge to review healing and manage chronic conditions.  
+- Educate patient and spouse on fall prevention strategies, home safety modifications, and medication review.  
+
+This summary reflects the current clinical presentation and preliminary management plan for Mr. Turner’s right hip fracture, pending definitive imaging and orthopedic evaluation.

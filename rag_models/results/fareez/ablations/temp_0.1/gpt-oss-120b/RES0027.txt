@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:04:12
+Time: 6.28s
+Tokens: 6,412 in / 1,649 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt DOB: 27 September 1965 Sex: Female Height: 162.8 cm Weight: Not documented BMI: 30.06 (obese) Heart Rate: 98 bpm Respiratory Rate: 15 breaths/min Blood Pressure: Not documented Temperature: Not documented SpO₂: Not documented  
+
+Chief Complaint  
+Dry cough for three days associated with feverish sensation, chills, night sweats, and fatigue, interfering with sleep.
+
+History of Present Illness  
+Ms. Schmitt reports the onset of a persistent, non‑productive cough three days ago. The cough has been continuous throughout the day, has worsened over time, and now is accompanied by a subjective feeling of being hot, which began today. She has not measured her temperature. She describes associated chills and mild night sweats last night, generalized fatigue, mild headache, and diffuse muscle and body aches. She denies sputum production, hemoptysis, shortness of breath, wheezing, chest pain, or dyspnea at rest. She has tried an over‑the‑counter cough syrup without relief. She denies recent upper‑respiratory symptoms such as rhinorrhea, sore throat, or sinus congestion. Appetite is unchanged, although coughing makes eating uncomfortable. She denies nausea, vomiting, diarrhea, dysuria, urinary frequency, visual or auditory discharge, or skin rash. No recent weight loss is noted.
+
+Review of Systems  
+Constitutional: Feverish sensation, chills, night sweats, fatigue, mild headache, muscle aches.  
+Respiratory: Dry cough, worsening, no sputum, no hemoptysis, no dyspnea, no wheezing, no chest pain.  
+ENT: No sore throat, no nasal discharge, no ear or eye discharge, no pain.  
+Cardiovascular: No palpitations, no syncope, no orthostatic symptoms.  
+Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain; appetite stable.  
+Genitourinary: No dysuria, no frequency.  
+Neurologic: No dizziness, no weakness, no loss of consciousness.  
+Skin: No rash or lesions.  
+Other: No loss of taste or smell.
+
+Past Medical History  
+- Hypothyroidism (on levothyroxine)  
+- Essential hypertension  
+- Chronic congestive heart failure  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus  
+- Type 2 diabetes mellitus with microalbuminuria  
+- Obesity (BMI > 30)  
+- Osteoarthritis of the knee  
+- Chronic low‑back and neck pain  
+- Prior acute bronchitis (2015)  
+
+Surgical History  
+- Appendectomy performed in adolescence, uncomplicated.
+
+Social History  
+Ms. Schmitt lives in a townhouse with her husband and two teenage children. The family recently moved. She works from home in marketing. She does not smoke cigarettes. She consumes alcohol occasionally (approximately one glass of wine every three to four days). She reports occasional marijuana use but no regular use and no other recreational drugs. Exercise is not reported. No recent travel or known sick contacts aside from her husband, who has been vomiting and feeling febrile for the past two days.
+
+Family History  
+- Sister: recent myocardial infarction.  
+- Parents: no known heart disease; deceased of age‑related causes.  
+- No known family history of cancer, diabetes, or chronic lung disease.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+- Levothyroxine (Synthroid) – dose not specified  
+- Multivitamin – daily  
+- Amlodipine 2.5 mg daily (hypertension)  
+- Naproxen sodium 220 mg as needed for pain  
+- Furosemide (historical; last active 2020) – not confirmed as current  
+- No other prescription or over‑the‑counter medications reported.
+
+Objective Findings  
+Vital signs: Heart rate 98 bpm, respiratory rate 15 breaths/min, BMI 30.06; blood pressure, temperature, and oxygen saturation not recorded at this visit.  
+Physical examination: No information available.
+
+Laboratory Data (most recent)  
+- Serum sodium 139.9 mmol/L (within normal limits)  
+- Serum potassium 4.41 mmol/L (within normal limits)  
+- Serum CO₂ 20.98 mmol/L (low‑normal)  
+- Serum glucose 67.3 mg/dL (low‑normal)  
+- Serum creatinine 1.99 mg/dL (elevated, consistent with CKD 2)  
+- LDL cholesterol 101.5 mg/dL, total cholesterol 175.8 mg/dL (acceptable)  
+- Urine dipstick: protein 235 mg/dL, ketones 2.3 mg/dL, glucose 2 mg/dL, bilirubin 1.34 mg/dL, specific gravity 1.012, pH 5.66.  
+No complete blood count or acute‑phase reactants are available at this time.
+
+Imaging  
+No imaging performed during this encounter. The provider ordered a chest radiograph and a nasopharyngeal SARS‑CoV‑2 PCR test to be completed.
+
+Assessment  
+1. Acute bronchitis – most likely viral in etiology, presenting with dry cough, low‑grade fever, and constitutional symptoms.  
+2. Rule‑out COVID‑19 infection given recent exposure to a symptomatic household member and overlapping symptoms.  
+3. Chronic conditions: hypothyroidism, hypertension, chronic heart failure, CKD stage 2 secondary to type 2 diabetes, obesity, osteoarthritis, chronic musculoskeletal pain.  
+
+Plan  
+Diagnostics  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Perform chest X‑ray to evaluate for possible pneumonia or other pulmonary pathology.  
+- Order a basic metabolic panel and a complete blood count with differential to assess for infection and renal function trends.  
+
+Therapeutic  
+- Continue current chronic medications (levothyroxine, amlodipine, naproxen as needed).  
+- Recommend supportive care for acute bronchitis: increased fluid intake, humidified air, and rest.  
+- If fever develops or persists, advise acetaminophen 650 mg PO q6‑8 h as needed, not to exceed 3 g per day.  
+- Consider a short course of an over‑the‑counter antitussive (e.g., dextromethorphan) if cough remains distressing.  
+- Advise against further use of the previously tried cough syrup if ineffective.  
+
+Education & Disposition  
+- Counsel the patient on signs that warrant urgent evaluation: worsening shortness of breath, chest pain, high fever (> 38.5 °C), hemoptysis, or inability to maintain oral intake.  
+- Instruct on proper isolation precautions pending COVID‑19 test results, including mask use, hand hygiene, and limiting contact with household members.  
+- Encourage continued monitoring of temperature at home.  
+
+Follow‑up  
+- Telephone or telehealth follow‑up in 48–72 hours to review test results and clinical status.  
+- Earlier evaluation if symptoms progress or new concerning features develop.  
+- Routine follow‑up for chronic conditions as previously scheduled.  
+
+The above plan will be communicated to the patient, and orders for the laboratory and imaging studies will be placed immediately.

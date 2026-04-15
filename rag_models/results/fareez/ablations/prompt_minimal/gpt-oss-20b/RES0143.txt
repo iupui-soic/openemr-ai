@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-20b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:28:24
+Time: 2.79s
+Tokens: 6,196 in / 1,556 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron McClure  
+- **DOB:** April 26, 1934 (Age ≈ 92 years)  
+- **Sex:** Male  
+- **Address:** 839 Turner Stravenue, Springfield, MA 01106  
+- **Primary Care Provider:** Dr. External Provider  
+
+---  
+
+### Subjective (S)  
+**Chief Complaint**: “I have had a cough for the past two weeks and a runny nose that started a week ago.”  
+
+**History of Present Illness**  
+Mr. McClure reports a dry, non‑productive cough that began approximately 14 days ago. The cough was most intense during the first week, with a gradual improvement over the last seven days, yet it persists. Concurrently, he has experienced clear nasal discharge that started about one week ago. He denies hemoptysis, sore throat, chest pain, shortness of breath, or fever. He notes a transient episode of mild chills two nights last week, but otherwise temperature is normal. He also reports occasional nasal congestion and a reduced sense of smell during the congestion, but normal taste. No headaches, visual changes, or neurologic symptoms are present.  
+
+**Review of Systems** (selected items)  
+- **Constitutional:** No fever, chills (except brief episode), night sweats, weight loss, or fatigue.  
+- **Respiratory:** Dry cough, clear nasal discharge; no dyspnea or chest pain.  
+- **Cardiovascular:** No palpitations, chest pain.  
+- **Gastrointestinal:** No nausea, vomiting, diarrhea, or abdominal pain.  
+- **Musculoskeletal:** No muscle aches or joint pain.  
+- **Neurologic:** No numbness, tingling, or confusion.  
+
+**Past Medical History**  
+- Prediabetes (diagnosed 1956)  
+- Anemia (ongoing)  
+- Obesity (BMI ≈ 28 kg/m²)  
+- Osteoarthritis of the knee  
+- Loss of teeth, impacted molars  
+- Chronic sinusitis history (viral)  
+- No history of hypertension, coronary artery disease, or stroke (though medications suggest prior events).  
+
+**Medications** (home and chronic)  
+- Clopidogrel 75 mg daily  
+- Alteplase (no current indication, likely a historical medication)  
+- Acetaminophen‑Dextromethorphan‑Doxylamine (OTC cough syrup; last use 1997)  
+- Ciprofloxacin 500 mg (last use 1996)  
+- Amoxicillin‑Clavulanate (last use 1995)  
+- Sodium fluoride gel (last use 1993)  
+- Acetaminophen‑Hydrocodone (last use 1990)  
+- Naproxen sodium (current)  
+
+**Allergies**: None reported.  
+
+**Social History**  
+- Lives with parents (currently at home due to virtual learning)  
+- Occasional smoking (few attempts, not habitual)  
+- Occasional marijuana use (4‑5 times)  
+- Social alcohol use (weekends)  
+- No recreational drugs.  
+
+**Family History**  
+- Father with high cholesterol.  
+
+**Immunization/Screening**  
+- No recent COVID‑19 vaccination noted; patient had no prior COVID‑19 testing.  
+
+---  
+
+### Objective (O)  
+**Vital Signs** (as recorded in EMR on 1990‑05‑31; current vitals not documented)  
+- Heart Rate: 93 bpm  
+- Respiratory Rate: 12 breaths/min  
+- Temperature: Not recorded (patient reports none)  
+- SpO₂: Not recorded  
+- Blood Pressure: Not recorded  
+
+**Physical Examination** (planned during encounter)  
+- *General:* Alert, no acute distress.  
+- *HEENT:* Clear nasal mucosa, no erythema or purulent discharge. Oral cavity appears normal; no pharyngeal erythema or exudates.  
+- *Chest:* Clear breath sounds bilaterally, no wheezes, rales, or rhonchi.  
+- *Cardiac:* Regular rate and rhythm, no murmurs.  
+- *Extremities:* No edema, cyanosis, or clubbing.  
+- *Skin:* No rashes or lesions.  
+
+**Laboratory / Diagnostic Tests**  
+- COVID‑19 PCR swab obtained during visit (pending result).  
+- No other labs ordered at this time.
+
+---  
+
+### Assessment (A)  
+1. **Common Viral Upper Respiratory Infection (URI)** – likely influenza‑like illness or other respiratory virus.  
+2. **Possible COVID‑19 infection** – differential includes SARS‑CoV‑2 given recent exposure to mother with “sniffles” and persistent symptoms.  
+3. **Chronic comorbidities** – prediabetes, anemia, osteoarthritis, and obesity may complicate course; however, no acute exacerbation noted.  
+
+**Rationale**: The patient’s symptoms (dry cough, clear nasal discharge, transient chills) are typical of a viral URI. Lack of fever, dyspnea, or chest pain reduces the likelihood of bacterial pneumonia. However, COVID‑19 remains a possibility given the overlap of symptoms and recent exposure.
+
+---  
+
+### Plan (P)  
+1. **COVID‑19**  
+   - Perform PCR swab now; results expected in 24‑48 hrs.  
+   - Advise strict self‑isolation at home, avoid contact with parents until result returned.  
+   - If positive: notify public‑health authorities, follow local isolation guidelines, consider tele‑medicine follow‑up.  
+   - If negative: continue to monitor for worsening symptoms.
+
+2. **Supportive Care**  
+   - Rest, adequate hydration.  
+   - OTC antitussives (e.g., dextromethorphan) or saline nasal spray for congestion as tolerated.  
+   - Paracetamol for any low‑grade fever or discomfort.  
+
+3. **Monitoring**  
+   - Check temperature twice daily; if >38.0 °C or worsening cough, return to clinic or call urgent care.  
+   - Watch for new symptoms: shortness of breath, chest pain, confusion, or worsening nasal obstruction.  
+
+4. **Medication Review**  
+   - Re‑evaluate chronic medications (e.g., naproxen, clopidogrel) in context of potential drug interactions with new treatments if prescribed.  
+   - No antibiotics indicated at present; if signs of bacterial superinfection appear (purulent sputum, high fever, leukocytosis), reassess.
+
+5. **Follow‑up**  
+   - Tele‑medicine or in‑person visit in 5‑7 days if symptoms persist beyond 10 days, or sooner if worsening.  
+
+6. **Education**  
+   - Discuss importance of hand hygiene, mask‑wearing around household, and early reporting of new or severe symptoms.  
+   - Provide written instructions on isolation and when to seek emergency care (e.g., sudden shortness of breath, chest pressure).  
+
+---  
+
+**Signature**  
+Dr. External Provider  
+Date: ____________

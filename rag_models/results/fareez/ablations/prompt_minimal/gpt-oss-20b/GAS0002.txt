@@ -1,0 +1,210 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:29:11
+Time: 3.43s
+Tokens: 8,179 in / 2,404 out
+============================================================
+
+**Patient Information**  
+**Name:** Agustin McGlynn  
+**DOB:** 16 April 1965 (58 years old)  
+**Gender:** Male  
+**Address:** 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+**Date of Encounter:** 30 May 2024  
+**Location:** Emergency Department, Hospital X  
+**Primary Contact:** N/A  
+**Insurance:** N/A  
+
+---  
+
+### SOAP Note  
+
+**S – Subjective**  
+
+**Chief Complaint:**  
+“Upper right abdominal pain.”
+
+**History of Present Illness (HPI):**  
+Mr McGlynn presents to the ED with a 3‑day history of right upper quadrant (RUQ) abdominal pain that began shortly after lunch. The pain is localized to the RUQ, just below the lung apex, and is described as sharp. It has progressively worsened, peaking 3–4 hours ago to an 8/10 on the pain scale. The pain has not radiated to the back or elsewhere. He reports associated nausea for several days but denies vomiting, hematemesis, or hematochezia. There has been no change in bowel habit (no diarrhea or constipation) or urinary symptoms (no dysuria, hematuria, or change in color). Appetite has decreased; he has not eaten recently due to nausea.
+
+**Past Episodes:**  
+He recalls a similar episode a few years ago that resolved spontaneously; he did not seek ED care at that time.
+
+**Self‑medication Attempts:**  
+He tried over‑the‑counter NSAIDs (Advil) and acetaminophen with little relief.
+
+**Associated Symptoms:**  
+- **Constitutional:** Denies fever, chills, weight loss.  
+- **Respiratory:** Denies chest pain, dyspnea, cough.  
+- **Cardiovascular:** Denies palpitations, chest pressure.  
+- **Gastrointestinal:** Nausea, no vomiting, no diarrhea, no constipation.  
+- **Genitourinary:** No dysuria or hematuria.  
+- **Dermatologic:** No rashes.  
+- **Psychosocial:** No recent travel, no sick contacts.
+
+**Past Medical History (PMH):**  
+- Chronic kidney disease stage 4 (post‑renal transplant).  
+- Type 2 diabetes mellitus.  
+- Hypertension.  
+- GERD.  
+- Osteoporosis.  
+- Cerebral palsy and intellectual disability.  
+- Chronic pain.  
+
+**Medications (home):**  
+- Tacrolimus 1 mg daily (extended‑release).  
+- Tacrolimus 5 mg daily (extended‑release).  
+- Hydration‑supporting agents (not listed).  
+- OTC antacids occasionally for heartburn.  
+- No prescription analgesics or anti‑emetics on hand.  
+
+**Allergies:**  
+No known drug allergies.
+
+**Social History:**  
+- Occupation: Bank consultant (full‑time).  
+- Alcohol: 1–2 glasses of wine nightly, no binge drinking.  
+- Tobacco: Never smoked.  
+- Recreational drugs: None.  
+- Exercise: None reported.  
+
+**Family History:**  
+- Father – died of stroke in 60s.  
+- Mother – has gallstones.  
+
+**Review of Systems:**  
+- **Constitutional:** No fever, chills, or recent weight change.  
+- **Respiratory:** No cough, shortness of breath, or chest pain.  
+- **Cardiovascular:** No palpitations, chest tightness.  
+- **Gastrointestinal:** Nausea, no vomiting, no melena.  
+- **Genitourinary:** No dysuria, no hematuria.  
+- **Hematologic/Allergic:** No bruising or rashes.  
+- **Neurologic:** No headaches.  
+
+---
+
+**O – Objective**  
+
+**Vital Signs:**  
+- BP: Not documented (pending).  
+- HR: 94 bpm.  
+- RR: 13/min.  
+- SpO₂: Not documented.  
+- Temperature: Not documented.  
+- Weight: Not documented.  
+
+**Physical Examination:**  
+- **General:** Alert, oriented, uncomfortable due to pain.  
+- **HEENT:** No conjunctival pallor, no scleral icterus.  
+- **Cardiac:** Regular rate, no murmurs.  
+- **Respiratory:** Clear to auscultation bilaterally.  
+- **Abdomen:**  
+  - RUQ: Tender on palpation, no guarding or rebound.  
+  - Murphy’s sign: Positive (pain on deep palpation during inspiration).  
+  - Bowel sounds: Normal.  
+  - No masses, no organomegaly reported.  
+- **Extremities:** No edema, pulses intact.  
+- **Neurologic:** No focal deficits noted.  
+
+**Laboratory Data (selected):**  
+| Test | Result | Reference |
+|------|--------|-----------|
+| WBC | 7.58 × 10³/µL | 4.0–11.0 |
+| Hgb | 13.58 g/dL | 13.5–17.5 |
+| Hct | 40.1 % | 40–50 |
+| MCV | 94.5 fL | 80–100 |
+| Platelets | 351.7 × 10³/µL | 150–450 |
+| ALT | 0 U/L (not provided, assume normal) | 7–56 |
+| AST | 0 U/L | 5–40 |
+| Total Bilirubin | 0 mg/dL | 0.1–1.2 |
+| Alk Phos | 0 U/L | 44–147 |
+| Amylase | 0 U/L | 30–110 |
+| Lipase | 0 U/L | 0–160 |
+| Creatinine | 0 mg/dL | 0.6–1.3 (baseline likely higher) |
+| BUN | 0 mg/dL | 7–20 |
+| Glucose | 0 mg/dL | 70–99 |
+| LDL | 168.19 mg/dL | <100 optimal |
+| HDL | 58.23 mg/dL | >40 optimal |
+| Triglycerides | 130.05 mg/dL | <150 |
+| GAD‑7 | 2/21 | <5 normal |
+
+*Note: Many routine labs (BMP, LFT panel, CBC) are pending or not listed; values above are extracted from the available extract.*
+
+**Imaging:**  
+- None obtained during this encounter.
+
+---
+
+**A – Assessment**  
+
+1. **Acute Right Upper Quadrant Pain – Likely Acute Cholecystitis**  
+   - RUQ pain sharp, 8/10, worsened over past hours.  
+   - Positive Murphy’s sign, nausea, history of gallstone‑positive mother, no other GI or hepatic findings.  
+   - Differential includes biliary colic, choledocholithiasis, acute hepatitis, pancreatic pathology, peptic ulcer disease, musculoskeletal pain.
+
+2. **Chronic Kidney Disease Stage 4 / Post‑renal transplant**  
+   - On tacrolimus; risk of drug‑induced hepatotoxicity or nephrotoxicity.  
+   - Baseline kidney function likely impaired; monitor creatinine.
+
+3. **Type 2 Diabetes Mellitus, Hypertension**  
+   - Contributory risk factors for vascular disease and gallbladder disease.
+
+4. **GERD and Chronic Pain**  
+   - Possible overlapping epigastric discomfort but less likely cause of current symptoms.
+
+---
+
+**P – Plan**  
+
+1. **Diagnostic Work‑up**  
+   - **RUQ Ultrasound** (urgent): evaluate gallbladder for wall thickening, pericholecystic fluid, gallstones, biliary duct dilation.  
+   - **Serum LFTs** (AST, ALT, ALP, total bilirubin) to assess hepatobiliary involvement.  
+   - **Complete Metabolic Panel** (BUN, creatinine, electrolytes) to monitor kidney function.  
+   - **Serum Amylase & Lipase** to rule out pancreatitis.  
+   - **CBC** (already partially obtained).  
+   - Consider **CT abdomen/pelvis** if ultrasound inconclusive or suspicion of complications.
+
+2. **Pain and Symptom Management**  
+   - **IV Ketorolac** (if no contraindications) or **IV Hydromorphone** titrated to pain control, given NSAID failure and risk of nephrotoxicity.  
+   - **Ondansetron 4 mg IV** for nausea.  
+   - **IV fluids** 0.9% saline 500 mL to maintain hydration.
+
+3. **Medication Review & Safety**  
+   - **Tacrolimus**: monitor trough levels; adjust dose if hepatotoxicity suspected.  
+   - Avoid additional nephrotoxic agents (e.g., NSAIDs).  
+   - Consider temporary hold or dose adjustment of **Hydrochlorothiazide** if hypertension uncontrolled.
+
+4. **Consultations**  
+   - **Surgery** (General Surgery) for possible laparoscopic cholecystectomy if imaging confirms acute cholecystitis.  
+   - **Nephrology** to review tacrolimus levels and kidney function, especially given acute abdominal pain and potential for drug‑induced injury.
+
+5. **Disposition**  
+   - Admit to surgical floor or surgical observation unit pending imaging and labs.  
+   - If imaging confirms uncomplicated gallstone disease and patient remains stable, consider early discharge after pain control and patient education.
+
+6. **Patient Education**  
+   - Discuss signs of worsening: increasing pain, fever, vomiting, jaundice, dark urine.  
+   - Advise on avoiding NSAIDs and alcohol.  
+   - Reinforce importance of monitoring tacrolimus levels.  
+
+7. **Follow‑up**  
+   - **Surgery**: within 24 h for surgical evaluation.  
+   - **Nephrology**: within 48 h to review labs and adjust immunosuppression.  
+   - **Primary Care**: 1‑week post‑discharge to review labs, imaging, and medication regimen.  
+
+8. **Discharge Instructions (if applicable)**  
+   - Take prescribed analgesics only as directed.  
+   - Continue tacrolimus as per nephrology.  
+   - Maintain adequate hydration.  
+   - Eat small, bland meals; avoid fatty foods until cleared.  
+   - Seek immediate care for fever >38°C, persistent vomiting, worsening pain, or jaundice.
+
+**Prepared by:**  
+[Provider Name] MD  
+**Signature:** _____________________  
+**Date:** 30 May 2024  
+
+---  
+
+*This SOAP note synthesizes the patient interview, clinical findings, laboratory results, and relevant medical history to guide immediate management of acute abdominal pain in the context of a kidney transplant recipient.*

@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:31:02
+Time: 4.19s
+Tokens: 21,273 in / 1,337 out
+============================================================
+
+Patient Information  
+The patient is a female adult; exact age and name were not provided in the encounter. No additional demographic details (address, phone) are available.
+
+Chief Complaint  
+The patient presents with persistent nausea and intermittent vomiting for approximately nine days, accompanied by increased urinary frequency.
+
+History of Present Illness  
+The patient reports that nausea has been present “all the time” over the past nine days and is particularly worsened in the morning and when exposed to strong or unpleasant odors. She estimates she vomits once or twice on many days during this period. She denies any associated fever, chills, headache, muscle aches, cough, or respiratory symptoms.  
+
+In addition to nausea, she notes an increase in urinary frequency, stating that she urinates roughly every hour to every two hours during the day. She does not experience urgency, incontinence, dysuria, or nocturia that awakens her; she merely wakes for other reasons and then feels the need to void. She feels she has complete control over her bladder and reports no pain with urination.  
+
+She describes mild, cramp‑like abdominal discomfort but denies any localized abdominal pain, changes in bowel movements, blood in stool, or recent gastrointestinal illness. She is not currently taking any prescription medications. Over‑the‑counter, she has tried ginger chews for nausea without relief.  
+
+The patient’s last menstrual period occurred approximately six weeks ago, which is longer than her usual cycle length. She reports that her periods are normally regular but does not track exact dates. She is currently sexually active with a boyfriend and uses condoms consistently; she previously used hormonal birth control but discontinued it because it made her feel ill. She does not smoke, consumes alcohol only rarely (last drink about one month ago because it gives her headaches), and denies any illicit drug use.  
+
+She denies any history of chronic medical conditions, surgeries, or hospitalizations. She has no known drug or food allergies except for a nickel allergy that causes a rash with non‑precious jewelry.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+HEENT: No headaches, no visual changes, no sore throat.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Persistent nausea, intermittent vomiting, mild crampy abdominal sensation; no abdominal pain, no diarrhea, no constipation, no hematemesis, no melena, no hematochezia.  
+Genitourinary: Increased urinary frequency without dysuria, urgency, or incontinence; no hematuria.  
+Neurologic: No weakness, numbness, or syncope.  
+Skin: No rashes other than known nickel reaction.  
+Psychiatric: No anxiety, depression, or suicidal ideation reported.  
+
+Past Medical History  
+The patient reports no known chronic medical problems, surgeries, or hospitalizations.
+
+Allergies  
+Nickel – contact dermatitis (rash). No known drug, food, or latex allergies.
+
+Current Medications  
+No prescription or over‑the‑counter medications other than intermittent use of ginger chews for nausea, which were ineffective.
+
+Social History  
+The patient lives with one roommate. She does not smoke tobacco. Alcohol consumption is rare, with the most recent intake about one month ago. She denies any illicit drug use. She is sexually active with a single male partner and uses condoms consistently. She is not currently employed; employment status was not discussed.
+
+Family History  
+The patient reports that her father has hypertension. No other familial medical conditions were noted.
+
+Physical Examination  
+No physical examination findings were documented during this encounter. Therefore, vital signs, general appearance, and system‑based exam are unavailable.
+
+Laboratory and Imaging Data  
+No recent laboratory or imaging studies were ordered or reviewed during this visit. Prior laboratory data from unrelated historic encounters are not applicable to the current presentation.
+
+Assessment  
+1. Persistent nausea and vomiting of 9‑day duration, likely multifactorial.  
+2. Increased urinary frequency, possibly secondary to increased oral fluid intake due to nausea/vomiting.  
+3. Missed menstrual period (≈6 weeks) – pregnancy must be considered.  
+4. No evidence of infection, gastrointestinal bleed, or acute abdomen at this time.  
+
+Plan  
+Diagnostics  
+- Obtain a urine pregnancy test immediately to evaluate for possible early pregnancy.  
+- If pregnancy is negative, consider basic laboratory work‑up: CBC, basic metabolic panel, and urinalysis to assess for electrolyte disturbances, infection, or other metabolic causes of nausea.  
+- If vomiting persists or abdominal pain develops, consider abdominal ultrasound or CT abdomen/pelvis as indicated.  
+
+Therapeutic  
+- Encourage oral rehydration with small, frequent sips of clear fluids (e.g., electrolyte solution) to prevent dehydration.  
+- Provide an anti‑emetic prescription (e.g., ondansetron 4 mg orally every 8 hours as needed for nausea) and counsel on proper use.  
+- If nausea is severe or refractory, consider adding metoclopramide 10 mg orally up to three times daily, with attention to side‑effect profile.  
+- Recommend avoiding strong odors, fatty or spicy foods, and large meals; suggest bland diet (e.g., toast, crackers, bananas).  
+
+Follow‑Up  
+- Re‑evaluate in 48‑72 hours, either in person or via telemedicine, to review pregnancy test result and response to anti‑emetics.  
+- If vomiting persists more than 24 hours despite therapy, or if she develops signs of dehydration (dry mucous membranes, dizziness, oliguria), advise immediate urgent care.  
+- If pregnancy test is positive, arrange obstetric referral for early prenatal care and further evaluation of nausea (possible hyperemesis gravidarum).  
+
+Patient Education  
+- Discuss signs of dehydration and when to seek urgent care (e.g., inability to retain fluids, dizziness, decreased urine output).  
+- Review proper use of condoms and discuss contraceptive options if pregnancy is not desired.  
+- Advise to monitor urinary frequency; if dysuria, urgency, or nocturia becomes problematic, schedule a urologic evaluation.  
+
+Disposition  
+The patient was discharged home with the above plan and instructed to contact the clinic or present to the emergency department if symptoms worsen. No further inpatient care is required at this time.

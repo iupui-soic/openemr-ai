@@ -1,0 +1,65 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:16:37
+Time: 2.24s
+Tokens: 7,367 in / 841 out
+============================================================
+
+Patient Information  
+Name: Amee Reva Goyette  
+Date of Birth: 1916‑07‑09 (as recorded in the electronic health record)  
+Sex: Female  
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915  
+
+Chief Complaint  
+The patient presents with chest pain.  
+
+History of Present Illness  
+The patient reports a two‑week history of episodic chest discomfort localized to the left side of the chest. The pain is sharp in character, lasts approximately 20–30 minutes per episode, and has occurred two to three times during the past two weeks. The patient rates the pain as a 4 out of 10 on a pain scale. The episodes are not associated with exertion, are not relieved by over‑the‑counter medications (acetaminophen, ibuprofen, or antacids), and have not changed in intensity or frequency over time. The pain occurs most often while at work or driving and is not accompanied by nausea, vomiting, shortness of breath, fever, or diaphoresis. The patient denies any prior episodes of similar chest pain.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight changes reported.  
+Cardiovascular: Chest pain as described; denies palpitations, syncope, or edema.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Gastrointestinal: No nausea, vomiting, heartburn, or abdominal pain.  
+Neurologic: No dizziness, headache, or focal deficits.  
+Psychiatric: Reports increased stress related to recent personal life changes.  
+
+Past Medical History  
+No chronic medical conditions reported. No prior surgeries or hospitalizations. No regular medications.  
+
+Social History  
+The patient smokes approximately half a pack to one pack per day and is attempting to quit. She consumes one to two glasses of wine on weekends. She does not use recreational drugs. She engages in regular aerobic exercise, running or cycling, three to four days per week.  
+
+Family History  
+Father had a myocardial infarction at age 60 last year. No other significant family history of cardiovascular disease, diabetes, or malignancy reported.  
+
+Medications  
+None prescribed. Over‑the‑counter use of acetaminophen, ibuprofen, and antacids for pain relief.  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Studies  
+No laboratory studies were performed or documented at this time.  
+
+Imaging  
+No imaging studies were ordered or documented during this encounter.  
+
+Assessment  
+The patient’s presentation is consistent with atypical chest pain of uncertain etiology. Differential diagnoses include musculoskeletal chest wall pain, anxiety‑related chest discomfort, gastroesophageal reflux disease, and, less likely given the absence of exertional precipitating factors and normal symptom profile, acute coronary syndrome. The patient’s smoking history and family history of premature coronary artery disease warrant a thorough cardiac evaluation to exclude ischemic heart disease.  
+
+Plan  
+1. Arrange for an electrocardiogram (ECG) and cardiac enzyme panel (troponin) to rule out acute coronary syndrome.  
+2. Consider a chest radiograph to evaluate for pulmonary or musculoskeletal causes.  
+3. Refer the patient to her primary care provider for comprehensive cardiovascular risk assessment, including lipid profile, blood pressure monitoring, and diabetes screening.  
+4. Discuss smoking cessation strategies and provide resources for cessation support.  
+5. Encourage continued regular aerobic exercise and moderation of alcohol intake.  
+6. Schedule a follow‑up appointment in two weeks to review diagnostic results and reassess symptoms.  
+7. Educate the patient on red‑flag symptoms (e.g., worsening chest pain, dyspnea, diaphoresis, syncope) that would warrant immediate medical attention.  
+
+The patient was advised to seek urgent care if symptoms worsen or new concerning symptoms develop. She was thanked for her visit and reassured that further evaluation will be undertaken to determine the cause of her chest pain.

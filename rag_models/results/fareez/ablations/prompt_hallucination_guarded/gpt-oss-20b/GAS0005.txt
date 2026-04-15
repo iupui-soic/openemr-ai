@@ -1,0 +1,52 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:31:10
+Time: 2.07s
+Tokens: 13,718 in / 658 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male presented by his mother. No other identifying details are provided in the encounter transcript or the open‑EMR extract.
+
+Chief Complaint  
+The mother reports that her son has been “not himself” over the past few days with abdominal pain and vomiting, and recently developed a fever.
+
+History of Present Illness  
+The child first experienced abdominal discomfort approximately three days ago. Vomiting began two days ago, totaling six episodes, initially containing food and later appearing yellowish and non‑bile‑colored. He has had watery diarrhea, approximately six or seven bowel movements in the past day. Yesterday, the mother measured a temperature of 38.3 °C (100.94 °F) and observed chills, prompting the child to remain largely quiet and sleep. No ear, eye, nasal, or sore‑throat symptoms were reported. No headache, chest pain, or urinary complaints were noted. No blood or bile was observed in the vomitus or stool. The mother denies recent dietary changes or exposure to sick individuals at home, and the child had not been ill in the household.
+
+Review of Systems  
+Constitutional: fever, chills, irritability, decreased activity.  
+Respiratory: no cough, wheezing, or shortness of breath.  
+Cardiovascular: no chest pain.  
+Gastrointestinal: abdominal pain (central, diffuse), vomiting (yellowish, non‑bilious), watery diarrhea, no blood.  
+Genitourinary: no dysuria, no frequency.  
+Neurologic: no headache, no neurological symptoms.  
+Musculoskeletal: no muscle or joint pain.  
+Skin: no rash or skin changes.  
+Allergies: mother reports no known allergies for the child.
+
+Past Medical History  
+No chronic medical conditions, surgeries, or medications were reported by the mother. The open‑EMR extract contains extensive adult medical history, but none of those conditions pertain to the child and were not discussed in the encounter.
+
+Family History  
+No family history of gastrointestinal or other relevant diseases was mentioned.
+
+Social History  
+The child lives with his mother, father, and two older siblings. No smoking, pets, or other environmental hazards are present. No recent travel or school exposure to illness was noted.
+
+Current Medications  
+None reported.
+
+Objective  
+Vitals – not assessed during this encounter.  
+Physical Examination – not performed or documented.  
+Laboratory Studies – not ordered or discussed.
+
+Assessment  
+Primary Diagnosis: Viral gastroenteritis (acute).  
+Secondary Consideration: COVID‑19 infection, given overlapping gastrointestinal symptoms and fever.  
+No other diagnoses were identified.
+
+Plan  
+The provider will order a COVID‑19 test. Supportive care instructions were given: increased oral hydration, monitoring for dehydration, and observation of symptom progression. No new medications were prescribed. The mother was advised to monitor the child’s temperature, hydration status, and stool frequency, and to seek further medical attention if vomiting becomes more frequent, diarrhea persists beyond 48 hours, or the child develops worsening symptoms. Follow‑up was not scheduled during this visit; the mother was told to return or contact the office if concerns arise.

@@ -1,0 +1,137 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:04:39
+Time: 6.64s
+Tokens: 14,970 in / 1,825 out
+============================================================
+
+Patient Information  
+Abel Cummerata, male, born March 25, 1917 (age 109 years). Unit Number 334. Home address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts.  
+
+Chief Complaint  
+Cough and progressive shortness of breath.  
+
+History of Present Illness  
+Mr. Cummerata reports the onset of a cough three days ago. The cough is productive, yielding yellow‑green sputum approximately the size of a thumb tip. He denies hemoptysis. One day ago he began experiencing shortness of breath that he rates as 7/10 in severity. The dyspnea is present at rest and is not clearly related to exertion or body position. He notes occasional wheezing when the shortness of breath is most severe. The cough and dyspnea have disrupted his sleep, although he is uncertain which symptom is the primary cause. He also feels generally fatigued, weak, and has mild abdominal discomfort. He reports a recent loss of smell (unable to detect a candle’s odor) but denies loss of taste, sore throat, nasal congestion, runny nose, or ear, eye, or visual changes. He has not experienced fever, chills, night sweats, dizziness, syncope, confusion, or weight loss. He has no chest pain, palpitations, or known triggers such as pollen, pets, or specific times of day. He has never had a similar respiratory illness in the past.  
+
+Review of Systems  
+
+Constitutional: Fatigue, mild weakness; no fever, chills, night sweats, or recent weight loss.  
+Respiratory: Productive cough with yellow‑green sputum for three days, new onset dyspnea (7/10), occasional wheezing with severe dyspnea; no chest pain.  
+Cardiovascular: Known atrial fibrillation, currently stable; no palpitations, no chest pain, no edema.  
+Gastrointestinal: Mild abdominal ache; normal bowel movements, no diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Neurologic: No dizziness, syncope, confusion, or memory loss.  
+ENT: No sore throat, nasal congestion, or rhinorrhea; loss of smell noted.  
+Musculoskeletal: Mild generalized aches; no focal joint pain.  
+Skin: No rash currently.  
+Psychiatric: No anxiety or depression reported.  
+
+Allergies  
+Sulfa drugs – causes rash. No known drug allergies other than sulfa.  
+
+Past Medical History  
+
+- Atrial fibrillation (diagnosed 1993, stable on metoprolol)  
+- Essential hypertension  
+- Chronic kidney disease stage 4 progressing to end‑stage renal disease (on dialysis awaiting transplant)  
+- Anemia (chronic)  
+- Metabolic syndrome / pre‑diabetes  
+- History of inguinal hernia repair (approximately 15 years ago)  
+- No prior episodes of pneumonia or bronchitis  
+
+Surgical History  
+Inguinal hernia repair, performed about 15 years ago. No complications reported.  
+
+Social History  
+Former cigarette smoker: previously smoked one pack per day, quit five years ago. No current tobacco use. Occasional use of low‑dose CBD edibles (≈2.5 mg) for sleep; no other recreational drug use. No alcohol consumption for several years. Lives in a house with his wife; home has been renovated, no known mold or asbestos exposure. Recent exposure to a long‑term care facility where a COVID‑19 outbreak was reported (visited mother ~1 week ago). No recent travel.  
+
+Family History  
+Aunt with lung cancer (smoked throughout life). No other known familial cardiac, pulmonary, or oncologic diseases.  
+
+Current Medications (home)  
+
+- Metoprolol (beta‑blocker for atrial fibrillation)  
+- Statin (lipid‑lowering therapy)  
+- Low‑dose aspirin (cardiovascular prophylaxis)  
+
+No recent antibiotic use.  
+
+Objective  
+
+Vital Signs  
+No current vital signs documented at this encounter.  
+
+Physical Examination  
+No physical examination findings documented in the encounter note.  
+
+Laboratory Data (most recent values available)  
+
+- Hematocrit: 43.3 % (within normal limits)  
+- Erythrocytes: 4.24 ×10⁶/µL  
+- Neutrophils: 13.66 % (relative neutrophilia)  
+- Lymphocytes: not reported  
+- Monocytes: 9.46 %  
+- Basophils: 3.05 %  
+- Ferritin: 1853 µg/L (markedly elevated)  
+- Potassium: 4.04 mmol/L  
+- Carbon dioxide (total): 24.89 mmol/L  
+- Bicarbonate (arterial): 24.3 mmol/L  
+- Arterial pCO₂: 41.9 mmHg  
+- Calcium: 9.75 mg/dL  
+- Serum protein: 5.59 g/dL  
+- Urea nitrogen: 17.9 mg/dL  
+- Prothrombin time: 11.9 seconds  
+
+No complete blood count, creatinine, or liver panel values were provided.  
+
+Imaging  
+No imaging studies (e.g., chest radiograph) were performed or documented at this visit.  
+
+Assessment  
+
+1. Community‑acquired pneumonia – probable bacterial or viral etiology, presenting with productive cough, dyspnea, and wheezing.  
+2. Suspected COVID‑19 infection – recent exposure to a known outbreak and overlapping symptoms (cough, dyspnea, altered smell).  
+3. Atrial fibrillation – stable on metoprolol, recent ECG normal.  
+4. Chronic kidney disease stage 4 / end‑stage renal disease – ongoing, awaiting transplant.  
+5. Anemia – chronic, likely secondary to renal disease.  
+
+Plan  
+
+Diagnostics  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Arrange a chest radiograph to evaluate for infiltrates consistent with pneumonia.  
+- Consider basic metabolic panel and repeat CBC if symptoms worsen.  
+
+Therapeutic  
+- Continue current home medications (metoprolol, statin, aspirin).  
+- Initiate symptomatic treatment: albuterol inhaler as needed for wheezing (prescribe if not already available).  
+- Recommend acetaminophen 500 mg PO q6h PRN for fever or discomfort, provided renal function permits.  
+- No immediate antibiotics prescribed; will reassess after test results and radiographic findings. If bacterial pneumonia is confirmed or clinical status deteriorates, initiate empiric oral antibiotics (e.g., amoxicillin‑clavulanate) with dose adjustment for renal function.  
+
+Supportive Care  
+- Encourage adequate oral hydration and rest.  
+- Advise use of a humidifier and saline nasal rinses if nasal irritation develops.  
+- Counsel on proper inhaler technique if albuterol is prescribed.  
+
+Infection Control  
+- Advise strict home isolation for at least 14 days from symptom onset, regardless of test results, to prevent potential COVID‑19 transmission to household members.  
+- Household members, including his wife, should monitor for symptoms and consider testing if they develop any.  
+
+Monitoring & Follow‑up  
+- Instruct the patient to monitor temperature, respiratory rate, and oxygen saturation (if a pulse oximeter is available). Seek urgent care if SpO₂ falls below 92 %, if dyspnea worsens, if chest pain develops, or if fever exceeds 38.5 °C (101.3 °F).  
+- Follow‑up with primary care physician in 48–72 hours, or sooner if symptoms deteriorate.  
+- If COVID‑19 test returns positive, coordinate with public health for contact tracing and discuss eligibility for monoclonal antibody therapy if within the appropriate window and if risk factors warrant.  
+
+Lifestyle & Education  
+- Reinforce smoking cessation (already achieved).  
+- Discuss alternative sleep aids (e.g., melatonin) as an option to replace CBD edibles if desired.  
+- Review low‑sodium diet and fluid restrictions appropriate for his renal disease.  
+
+Disposition  
+Patient is being discharged home with the above plan. No admission is required at this time.  
+
+Signature  
+[Physician’s Name], MD  
+Date: [Current Date]

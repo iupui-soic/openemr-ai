@@ -1,0 +1,74 @@
+Model: qwen/qwen3-32b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:41:29
+Time: 4.32s
+Tokens: 10,321 in / 1,366 out
+============================================================
+
+Patient Information:  
+The patient is a 73-year-old male with a complex medical history, including essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, ischemic heart disease, chronic kidney disease stage 2, and a history of chronic pain conditions such as low back and neck pain. He resides in Boston, Massachusetts, and is currently employed full-time. The patient has a history of multiple dental conditions, including gingivitis and a leaking dental filling, and has a documented history of social isolation and stress. He has a long-standing BMI in the obese range and has been on multiple chronic medications, including metformin, lisinopril, amLODIPine, and simvastatin, among others.
+
+Chief Complaint:  
+The patient presented with a four-day history of worsening sore throat and subjective fever. He reported difficulty swallowing solid foods, with no improvement in symptoms over the course of the illness. He denied any runny nose, cough, chest pain, or difficulty breathing.
+
+History of Present Illness:  
+The patient described the onset of a severe sore throat four days prior to the visit, which has not improved. He also reports feeling hot, though he has not measured his temperature. He notes that swallowing solid food is painful, though liquids are tolerated. There is no hoarseness or difficulty breathing. He denies any other associated symptoms such as headache, fatigue, nausea, vomiting, diarrhea, or chest pain. The patient has not had any recent travel and reports no known exposure to someone with an infectious illness. He lives with his parents and two siblings and reports that he is currently in grade 10, attending a combination of in-person and virtual school. He denies any use of tobacco, alcohol, or recreational drugs and is not sexually active.
+
+Review of Systems:  
+Constitutional: The patient reports subjective fever but denies weight loss, fever, chills, or night sweats.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Genitourinary: No dysuria or hematuria.  
+Neurological: No headaches, dizziness, or confusion.  
+Musculoskeletal: No joint or muscle pain.  
+Integumentary: No rash or skin changes.  
+Psychiatric: No depression or anxiety.  
+Endocrine: No changes in appetite or weight.  
+Hematologic: No bruising or bleeding.  
+Allergic/Immunologic: No known allergies.  
+Other: No changes in vision or hearing.
+
+Past Medical History:  
+The patient has a long-standing history of essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, ischemic heart disease, and chronic kidney disease stage 2. He has a history of chronic pain conditions, including low back and neck pain, and has experienced episodes of social isolation and stress. He has a documented history of chronic dental issues, including gingivitis and a leaking dental filling. He has a history of a prior appendectomy at age 13.
+
+Social History:  
+The patient lives with his parents and two siblings. He is not currently using tobacco, alcohol, or recreational drugs. He is not sexually active and is not planning to become sexually active before finishing high school. He is currently in grade 10 and reports that school is going well. He maintains social distancing and mask-wearing at school, except when necessary to remove the mask, such as for drinking water. He has not received the HPV vaccine and has not had the flu shot this year.
+
+Family History:  
+The patient reports no known family history of significant medical conditions, though he mentions high blood pressure in the family.
+
+Current Medications:  
+The patient is currently taking a multivitamin as his only medication. He has a long list of past and active medications, including metformin, lisinopril, amLODIPine, simvastatin, and others, but reports no current use of these medications.
+
+Allergies:  
+No known drug or food allergies.
+
+Objective:  
+Vital Signs:  
+Temperature: Not measured in the current visit.  
+Blood Pressure: Not recorded during the current visit.  
+Heart Rate: Not recorded during the current visit.  
+Respiratory Rate: Not recorded during the current visit.  
+Oxygen Saturation: Not recorded during the current visit.  
+
+Physical Examination:  
+The patient was alert and oriented. General appearance was appropriate for age. Head, eyes, ears, nose, and throat (HEENT) examination revealed a red and swollen oropharynx. No exudate or tonsillar hypertrophy was noted. No lymphadenopathy was palpable. No signs of respiratory distress were observed. Cardiovascular, respiratory, abdominal, and neurological exams were unremarkable. Skin examination showed no rashes or lesions. Extremities were warm and well-perfused. No signs of acute distress.
+
+Labs:  
+A rapid strep test and a rapid antigen detection test for SARS-CoV-2 were ordered. No other laboratory results were available at the time of the visit.
+
+Assessment:  
+The patient presents with a four-day history of sore throat and subjective fever, with no improvement in symptoms. The differential diagnosis includes viral pharyngitis, streptococcal pharyngitis, and other infectious causes of sore throat. Given the patient's symptoms and the current public health context, a rapid strep test and a rapid antigen test for SARS-CoV-2 were performed to rule out bacterial and viral causes. The patient's past medical history is extensive, but no acute findings were noted on physical examination that would suggest a more severe illness at this time.
+
+Plan:  
+1. Perform rapid strep test and rapid antigen test for SARS-CoV-2.  
+2. Advise the patient to self-quarantine for 14 days or until test results are available and symptoms improve.  
+3. If the strep test is positive, initiate appropriate antibiotic therapy.  
+4. If the SARS-CoV-2 test is positive, provide guidance on isolation and management.  
+5. Provide symptomatic relief with acetaminophen as needed.  
+6. Advise the patient to maintain hydration and rest.  
+7. Recommend the patient receive the HPV vaccine at an appropriate time and to consider the flu shot.  
+8. Schedule a follow-up appointment if symptoms persist or worsen.  
+9. Encourage the patient to maintain good hygiene practices and continue mask-wearing and social distancing at school.

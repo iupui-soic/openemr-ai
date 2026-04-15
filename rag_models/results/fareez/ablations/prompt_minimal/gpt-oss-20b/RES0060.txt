@@ -1,0 +1,109 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:28:06
+Time: 2.57s
+Tokens: 6,278 in / 1,253 out
+============================================================
+
+**Patient Information**  
+Name: Abbie Stamm DOB: 16 Nov 2001 Age: 22 yrs Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, MA 00000  
+Residence: Duplex, basement unit, lives with girlfriend.  
+
+**Subjective**
+
+*Chief Complaint*: “I’ve had a fever and a cough that’s been getting worse.”  
+
+*History of Present Illness*:  
+- The patient reports a dry cough that began on Monday of this week and has progressively worsened.  
+- She also notes a fever that started four days ago, with a measured temperature of 38.5 °C this morning.  
+- Associated symptoms: increasing fatigue, mild body aches, worsening cough, occasional shortness of breath after coughing fits, mild nocturnal chills, and episodic tension‑type headaches.  
+- No sore throat, no sputum production, no hemoptysis, no chest pain, no wheezing.  
+- Mild runny nose but no nasal congestion.  
+- No dysphagia, no loss of taste or smell.  
+- Nausea reported (self‑limited, no vomiting).  
+- No significant weight loss aside from a few pounds in the past week due to decreased appetite.  
+
+*Past Medical History*:  
+- Childhood asthma (remitted), perennial allergic rhinitis (remitted), mitral valve regurgitation (ongoing), acute bronchitis (2016), inguinal hernia repair (5 yrs ago).  
+- **Metabolic**: Hypercholesterolemia on rosuvastatin; pre‑diabetes with last A1C 6.2 % (6 months ago).  
+
+*Medications*:  
+- Rosuvastatin 5 mg daily.  
+- Multivitamin (daily).  
+
+*Allergies*: Penicillin (hives).  
+
+*Social History*:  
+- Non‑smoker; occasional alcohol (2–3 beers on weekends).  
+- No recreational drug use.  
+- Lives in a duplex; no known mold or asbestos exposure.  
+- Works full‑time.  
+
+*Family History*:  
+- No known heart disease, lung disease, or cancer in immediate family (grandfather had bladder cancer).  
+
+*Review of Systems (selected)*  
+- **Constitutional**: Fever, chills, fatigue, mild weight loss.  
+- **Respiratory**: Dry cough, mild dyspnea after coughing, no wheezing, mild nasal discharge.  
+- **Cardiovascular**: No palpitations, no chest pain.  
+- **GI**: Nausea, no vomiting, normal bowel movements.  
+- **Neurologic**: Tension headaches, no dizziness or confusion.  
+
+**Objective**
+
+Vital signs (at bedside):  
+- Temperature: 38.5 °C (measured this morning).  
+- Blood pressure: Not recorded during this encounter (previous data unavailable).  
+- Heart rate: 68 bpm (from prior chart).  
+- Respiratory rate: 14 breaths/min (from prior chart).  
+- SpO₂: Not documented (likely ≥ 94 %).  
+- Weight/height: Not measured during this visit.  
+
+Physical exam: Not documented in transcript; provider indicated a focus on symptom review and plan rather than full exam.  
+
+Laboratory/Diagnostic:  
+- COVID‑19 PCR swab ordered; result pending.  
+- No other labs drawn in this encounter.  
+
+**Assessment**
+
+1. **Acute bronchitis** (likely viral etiology) – most consistent with the dry cough, fever, and constitutional symptoms.  
+2. **COVID‑19 infection** – considered given overlap of symptoms and current epidemiologic context.  
+3. **Influenza** – possible differential given timing of year and respiratory symptoms.  
+4. **Other upper‑respiratory viral illness** – broad differential including common cold viruses.  
+
+No evidence of bacterial pneumonia, asthma exacerbation, or other serious respiratory pathology at this time.
+
+**Plan**
+
+*Diagnostic*  
+- Await COVID‑19 PCR result; advise patient to isolate for 14 days regardless of result due to potential false negatives.  
+
+*Therapeutic*  
+- Symptomatic treatment: acetaminophen 325 mg q6‑8h PRN for fever and aches.  
+- Continue rosuvastatin and multivitamin.  
+- Counsel on maintaining hydration, rest, and gradual return to normal diet as appetite improves.  
+
+*Lifestyle / Preventive*  
+- Discuss lifestyle modifications for pre‑diabetes: regular aerobic exercise (dog walking, etc.), dietary changes, weight management.  
+- Encourage adherence to annual flu vaccination (patient reports yearly influenza shots).  
+
+*Follow‑up*  
+- Return to clinic or call provider if symptoms worsen (fever > 38.9 °C, new chest pain, worsening dyspnea, or persistent cough > 10 days).  
+- Plan a follow‑up visit in 7–10 days or sooner if COVID‑19 positive or clinical status changes.  
+
+*Patient Education*  
+- Reinforce isolation precautions and mask use for both patient and co‑habitants.  
+- Educated on signs of bacterial superinfection (increased sputum, worsening dyspnea, chest pain).  
+- Reviewed penicillin allergy; advised to avoid penicillin‑containing medications.  
+
+**Disposition**  
+Patient will remain in home isolation pending COVID‑19 result, with instructions to seek care if condition deteriorates. No immediate imaging or additional labs ordered.  
+
+---  
+**Signature**  
+Dr. External Provider (or name of attending)  
+Date: 2024‑02‑10  
+(Note: All details extracted from patient interview and electronic health record.)

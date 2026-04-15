@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:52:08
+Time: 4.74s
+Tokens: 6,771 in / 1,544 out
+============================================================
+
+Patient Information  
+Name: Abbey Shala Kunde  
+Date of Birth: March 2, 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+Occupation: Employee of a pharmacy company, occasional on‑site work  
+
+Chief Complaint  
+Dry cough associated with frontal pressure‑type headache, generalized body aches, a feeling of fever, and one episode of loose stools.
+
+History of Present Illness  
+The patient reports that three days ago she developed a dry, non‑productive cough. Two days after the cough began, she started to experience intermittent frontal headaches described as a pressure band encircling the forehead. The headaches have been present each day but wax and wane. She also notes generalized muscle aches throughout the body without any inciting activity or recent injury. Over the past two days she has felt “feverish,” although she has not measured a temperature and has had no chills. She denies shortness of breath, chest pain, sore throat, nasal congestion, or rhinorrhea. One day ago she had a single episode of watery diarrhea without blood or change in color; there is no associated nausea or vomiting. She reports decreased appetite but no weight loss. She has not taken any medication for the cough; for the headache and myalgias she has tried acetaminophen (Tylenol) and ibuprofen (Advil) with partial relief. She has not been in contact with anyone known to be ill, has not traveled recently, and lives with her wife who is asymptomatic. She has been working from home for the past two days and has not attended the workplace.
+
+Review of Systems  
+
+Constitutional: Feels feverish, decreased appetite, no documented fever, no chills, no night sweats, no significant fatigue.  
+Head, Eyes, Ears, Nose, Throat: Frontal pressure‑type headache; no visual changes, no loss of taste or smell, no sore throat, no nasal discharge.  
+Respiratory: Dry cough, no sputum, no hemoptysis, no dyspnea, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema reported.  
+Gastrointestinal: One episode of loose, non‑bloody diarrhea; no nausea, vomiting, abdominal pain, or recent dietary changes. No weight loss.  
+Genitourinary: No dysuria or urinary frequency reported.  
+Musculoskeletal: Generalized myalgias/aches, no recent trauma or heavy exertion.  
+Skin: No rash or lesions reported.  
+Neurological: No focal deficits; headaches described as pressure, intermittent.  
+Psychiatric: No anxiety, depression, or sleep disturbances reported.  
+Allergies: Peanut allergy; patient carries an epinephrine autoinjector. No drug allergies reported.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 2011)  
+- Obesity (BMI 35.8)  
+- Recurrent urinary tract infections (historical)  
+- Prior ACL reconstruction of the knee (approximately 10 years ago)  
+
+Past Surgical History  
+- Right knee anterior cruciate ligament repair (≈10 years ago)  
+
+Social History  
+The patient works part‑time for a pharmacy company and occasionally goes to an office where masking, cleaning, and distancing protocols are observed. She does not smoke tobacco and denies illicit drug use. She uses cannabidiol oil occasionally. Alcohol consumption is limited to 3–4 beers per week. She lives with her wife in a townhouse in Boston. No recent travel.  
+
+Family History  
+Father with hypertension. Maternal grandfather died of lung cancer in his 80s after a lifelong smoking history. No known hereditary cardiac or metabolic disorders reported.  
+
+Medications  
+- Multivitamin (daily)  
+- Vitamin D supplement (daily)  
+
+Allergies  
+- Peanut – causes anaphylaxis; patient carries an EpiPen.  
+- No known drug allergies.  
+
+Vital Signs (most recent)  
+Heart Rate: 98 beats/min  
+Respiratory Rate: 15 breaths/min  
+Blood Pressure: Not recorded during this visit  
+Temperature: Not measured (patient reports feeling feverish)  
+SpO₂: Not recorded  
+Weight: Not recorded (BMI from prior record 35.84)  
+
+Physical Examination  
+No physical exam findings documented in this encounter.  
+
+Laboratory and Diagnostic Studies  
+No point‑of‑care labs or imaging were obtained at this visit. A nasopharyngeal swab for SARS‑CoV‑2 PCR was ordered per provider plan.  
+
+Assessment / Diagnoses  
+1. Acute viral upper respiratory infection, likely viral etiology (differential includes SARS‑CoV‑2, influenza, other respiratory viruses).  
+2. Possible COVID‑19 infection – test pending.  
+3. Viral gastroenteritis presenting with a single episode of loose stool.  
+4. Hypertension, well‑controlled (baseline).  
+5. Obesity (BMI ≈ 35.8).  
+
+Plan  
+
+1. SARS‑CoV‑2 Testing  
+   - Obtain nasopharyngeal PCR swab today.  
+   - Instruct patient to self‑isolate for 14 days from symptom onset or until a negative result is received, following local public health guidance.  
+
+2. Symptomatic Management  
+   - Continue acetaminophen for feverish feelings and headache; limit to ≤ 3 g per day.  
+   - Ibuprofen may be used for additional headache or myalgia relief if not contraindicated.  
+   - Encourage increased fluid intake, especially water and oral rehydration solutions, to address mild dehydration from diarrhea.  
+   - Advise a bland diet while gastrointestinal symptoms persist; resume normal diet as tolerated.  
+
+3. Monitoring and Red Flags  
+   - Advise patient to seek urgent care if fever > 38.5 °C, worsening cough, shortness of breath, chest pain, new confusion, persistent vomiting, bloody diarrhea, or any symptom that rapidly deteriorates.  
+
+4. Return Precautions / Follow‑up  
+   - Call the office or return for evaluation if symptoms do not improve within 5‑7 days, or earlier if red‑flag symptoms develop.  
+   - Follow‑up by telephone in 48 hours to discuss COVID test result and symptom progression.  
+
+5. Chronic Conditions  
+   - Continue current antihypertensive regimen (lisinopril 10 mg daily) as per existing prescription; no changes required at this time.  
+   - Counsel on weight management strategies given obesity, including diet and moderate exercise as tolerated once acute illness resolves.  
+
+6. Preventive Health  
+   - Reinforce routine hand hygiene, mask use, and avoidance of close contact with others while symptomatic.  
+   - Review peanut allergy action plan and ensure the epinephrine autoinjector is up to date.  
+
+Patient Education  
+Discussed the likely viral nature of her illness, the importance of isolation pending COVID‑19 test results, and measures to alleviate symptoms. Provided written instructions on medication dosing, hydration, and warning signs that warrant immediate medical attention.  
+
+Disposition  
+Patient was discharged home with the above plan and instructions. No further in‑person evaluation is required at this time unless her condition changes.

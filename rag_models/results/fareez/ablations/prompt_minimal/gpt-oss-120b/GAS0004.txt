@@ -1,0 +1,132 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 04:24:08
+Time: 5.93s
+Tokens: 11,364 in / 2,042 out
+============================================================
+
+**Patient Information**  
+**Name:** Alane Ling Muller **DOB:** 1920‑09‑24 **Age:** 105 y **Sex:** Female **MRN:** 2871  
+**Encounter Date:** 2026‑04‑14 (office visit)  
+**Chief Complaint (CC):** “Diarrhea for the past 3‑4 days.”
+
+---
+
+## S – Subjective
+
+**History of Present Illness (HPI)**  
+- **Onset & Duration:** Diarrhea began ~3‑4 days ago.  
+- **Frequency:** Approximately 1 episode per hour (patient has “lost count”).  
+- **Stool Characteristics:** Loose, brown, watery; no reported change in color. No visible blood.  
+- **Associated Symptoms:**  
+  - Crampy lower‑abdominal pain beginning yesterday, intermittent, “comes and goes.”  
+  - Nausea – on‑and‑off; vomited twice yesterday, non‑bloody, watery.  
+  - Decreased oral intake since onset of cramps; patient is trying to drink “lots of water.”  
+  - No fever, chills, rash, urinary symptoms, or dysuria.  
+- **Alleviating/Aggravating Factors:** No specific triggers identified; patient reports a “warning” before each bowel movement and is able to reach the toilet quickly. No foods or activities worsen symptoms.  
+- **Recent Exposures:** Ate rice with chicken Manchurian at a new Chinese restaurant 5 days ago (alone; friend not symptomatic). No recent travel, no known sick contacts.  
+- **Past Episodes:** Denies prior similar episodes.  
+
+**Past Medical History (PMH)**  
+- Asthma (uses inhaler “puffers”).  
+- Essential hypertension.  
+- Prediabetes.  
+- Anemia.  
+- Chronic kidney disease (stage 4) with prior renal transplant (history of ESRD).  
+- Other remote historical entries (e.g., migraine, past surgeries) are noted in the chart but are not currently active problems.
+
+**Past Surgical History (PSHx)**  
+- Wisdom‑tooth extraction (no hospitalization).  
+
+**Medications (current as per EMR)**  
+- Tacrolimus (extended‑release) – immunosuppression for renal transplant.  
+- Metoprolol succinate 100 mg ER – hypertension.  
+- Simvastatin 20 mg – hyperlipidemia.  
+- Nitroglycerin spray PRN – angina/ischemic heart disease.  
+- Asthma inhaler (short‑acting β2‑agonist).  
+*No over‑the‑counter anti‑diarrheal or anti‑emetic agents reported.*
+
+**Allergies**  
+- No known drug allergies reported.
+
+**Social History**  
+- Student, lives with two roommates.  
+- Alcohol: occasional (1–2 glasses on weekends).  
+- Tobacco: none.  
+- Illicit drugs: none.  
+- Diet: oatmeal breakfast, quick salad lunch, eats out (often burgers/fries) for dinner.  
+- No regular exercise reported.
+
+**Family History**  
+- Brother: appendicitis (childhood).  
+- Mother: hysterectomy (no other GI disease noted).  
+- No family history of inflammatory bowel disease, colorectal cancer, or hereditary GI disorders.
+
+**Review of Systems (pertinent negative findings)**  
+- Constitutional: No fever, chills, weight loss (patient has not weighed herself).  
+- Gastrointestinal: No melena, hematochezia, hematemesis, dysphagia, or change in urine.  
+- Cardiovascular/Respiratory: No chest pain, dyspnea; asthma stable.  
+- Neurologic: No headache, dizziness.  
+
+---
+
+## O – Objective
+
+**Vital Signs (most recent in chart)**  
+- HR 95 bpm, RR 15 breaths/min, BMI 27.7 kg/m², SpO₂ not recorded, Temperature not recorded at this visit.  
+
+**Physical Examination** – *Not documented in the transcript; no abnormal findings reported.*  
+
+**Laboratory Data (latest values in EMR)**  
+| Test | Result | Reference |
+|------|--------|-----------|
+| Hemoglobin | 15.7 g/dL | – |
+| Hematocrit | 39.3 % | – |
+| WBC | 3.96 ×10³/µL | Mild leukopenia |
+| RBC | 4.29 ×10⁶/µL | – |
+| Platelet distribution width | 311 fL | – |
+| Sodium | 143 mmol/L | – |
+| Potassium | (not listed) | – |
+| Chloride | 108 mmol/L | – |
+| CO₂ (bicarbonate) | 22.4 mmol/L | – |
+| Creatinine | 0.68 mg/dL | (low for CKD stage 4, likely outdated) |
+| Glucose (serum) | 92 mg/dL | – |
+| Urine dipstick: pH 4.9, no leukocyte esterase, nitrites, ketones, protein, glucose, or blood. | – | – |
+
+**Stool Studies** – Not ordered yet.
+
+---
+
+## A – Assessment
+
+1. **Acute infectious diarrhea (likely food‑borne gastroenteritis)** – 3‑4 days of watery, brown stools with hourly frequency, mild abdominal cramping, nausea/vomiting, and recent exposure to a new restaurant. No alarm features (blood, high fever, severe dehydration) at this time.
+
+2. **Risk of dehydration** – Frequent stools and decreased oral intake; patient is actively drinking water but may benefit from oral rehydration solution.
+
+3. **Chronic kidney disease (stage 4) with renal transplant** – Requires careful fluid and electrolyte management; avoid nephrotoxic agents (e.g., NSAIDs, aggressive osmotic laxatives).
+
+4. **Asthma, hypertension, prediabetes, anemia** – Stable, continue current regimen.
+
+5. **Low WBC (3.96 ×10³/µL)** – Slight leukopenia, likely chronic baseline; no evidence of systemic infection.
+
+---
+
+## P – Plan
+
+| Category | Details |
+|----------|---------|
+| **Rehydration** | • Oral rehydration solution (ORS) – ≈ ½ L after each loose stool; aim for ≥ 2 L/day of clear fluids. <br>• Encourage electrolyte‑rich fluids (e.g., sports drinks) if tolerable. |
+| **Dietary** | • BRAT diet (bananas, rice, applesauce, toast) for the next 24‑48 h, then advance to a bland, low‑fat diet. <br>• Avoid dairy, caffeine, spicy or fatty foods until symptoms improve. |
+| **Medications** | • **Ondansetron 4 mg PO q8h PRN** for nausea/vomiting if persistent. <br>• **Loperamide 2 mg PO after first loose stool, then 2 mg after each subsequent stool** (max 8 mg/day) *only if no blood and patient is not febrile*. <br>• Continue all chronic medications (tacrolimus, metoprolol, simvastatin, nitroglycerin, asthma inhaler). <br>• **Avoid NSAIDs** (risk to CKD). |
+| **Diagnostics** | • No stool culture at this moment; if diarrhea persists > 72 h or worsens, obtain stool for bacterial culture, ova/parasites, and C. difficile toxin PCR (low pre‑test probability but can be considered if antibiotics are later given). |
+| **Monitoring / Red‑flag education** | • Watch for: <br> – Fever > 38 °C (100.4 °F) <br> – Bloody stools or persistent vomiting <br> – Signs of dehydration (dizziness, oliguria, dry mucosa, tachycardia) <br> – Increased abdominal pain or rigidity. <br>• If any develop, return or go to urgent care/emergency department. |
+| **Follow‑up** | • Telephone check‑in in 48 h to assess hydration status and stool frequency. <br>• In‑person or telehealth visit in 3–5 days if symptoms have not improved or worsen. |
+| **Patient Education** | • Hand hygiene and safe food handling. <br>• Explain that most acute diarrheas are self‑limited; goal is to prevent dehydration and monitor for complications. <br>• Review proper inhaler technique for asthma. |
+| **Preventive Care** | • Review immunizations (influenza, COVID‑19, pneumococcal) at next routine visit. <br>• Discuss renal transplant medication adherence and need for routine labs (creatinine, tacrolimus level) – arrange as per transplant clinic schedule. |
+
+**Signature:**  
+*Dr. [Attending Name], MD* – Primary Care/Family Medicine  
+Date: 2026‑04‑14  
+
+---

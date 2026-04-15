@@ -1,0 +1,100 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:16:32
+Time: 3.07s
+Tokens: 9,114 in / 1,338 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (92 years old)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Occupation: City bus driver  
+
+Chief Complaint  
+The patient presents with acute chest pain that began approximately 30 minutes prior to presentation.  
+
+History of Present Illness  
+Mr. Crona reports a sudden onset of dull, pressure‑like pain localized to the left side of the chest. The pain started while shoveling the driveway and has progressively worsened since onset. He rates the pain 7 out of 10 on the pain scale. The discomfort is more pronounced with movement and when lying down, and has not improved with rest. He denies radiation of the pain to other areas. He has experienced shortness of breath since the previous day, which has persisted since the chest pain began. He also reports feeling slightly hot and has measured a temperature of 38.0°C. Mr. Crona denies cough, sputum production, fever spikes, chills, nausea, vomiting, or abdominal pain. He reports no recent chest trauma, except a rugby tackle yesterday that did not produce chest pain at that time. He denies dizziness, syncope, or palpitations except for a sensation of a racing heart during physical activity.  
+
+Review of Systems  
+Constitutional: Fever 38.0°C, no weight loss, no fatigue.  
+Respiratory: Shortness of breath since yesterday, no cough, no wheezing, no chest tightness beyond the described pain.  
+Cardiovascular: Chest pain localized to left chest, no known palpitations except during exercise, no known arrhythmias.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No leg swelling, no urinary symptoms.  
+Neurologic: No dizziness, no syncope.  
+Skin: No rashes, no lesions.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Hypertension (essential)  
+- Hyperlipidemia (high cholesterol)  
+- Ischemic heart disease (history of coronary artery disease)  
+- Chronic kidney disease (stage 1–4, with history of end‑stage renal disease and transplant)  
+- Metabolic syndrome  
+- Sleep apnea  
+- Anemia  
+- Prediabetes  
+- Chronic low back pain  
+- Chronic neck pain  
+- Chronic pain (general)  
+
+Past Surgical History  
+No surgical procedures reported.  
+
+Allergies  
+No known drug allergies.  
+
+Medications  
+- Rosuvastatin (dose not specified)  
+- Lisinopril (dose not specified)  
+- Multivitamin (dose not specified)  
+
+Social History  
+- Tobacco: Smokes approximately half a pack to one pack per day for the past 20 years.  
+- Alcohol: Denies alcohol use.  
+- Illicit drugs: Uses crystal methamphetamine a few times per month, most recent use six days ago, for a period of seven years.  
+- Occupation: Bus driver, requiring prolonged periods of standing and driving.  
+- Exercise: Runs on Sundays, otherwise moderate activity.  
+- Living situation: Lives with parents in a house.  
+
+Family History  
+No known family history of heart attack, stroke, or cancer.  
+
+Physical Examination  
+Vital signs: Temperature 38.0°C; blood pressure, heart rate, respiratory rate, and oxygen saturation not recorded at this time.  
+General: Alert, oriented, in mild distress due to chest discomfort.  
+Cardiovascular: Heart rate appears elevated; rhythm regular; no murmurs or gallops noted.  
+Respiratory: Breath sounds clear bilaterally; no wheezes, crackles, or rhonchi.  
+Chest: Tenderness to palpation over left chest wall; no crepitus or bruising.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No edema, pulses intact.  
+Neurologic: Alert, no focal deficits.  
+
+Laboratory Data  
+No laboratory results available at the time of presentation.  
+
+Assessment  
+1. Acute chest pain of uncertain etiology; high suspicion for acute coronary syndrome (unstable angina or non‑ST‑segment elevation myocardial infarction) given the patient’s significant cardiovascular risk factors (age, hypertension, hyperlipidemia, smoking, chronic kidney disease, prior ischemic heart disease).  
+2. Fever and shortness of breath raise concern for possible infectious process, but absence of cough or sputum makes pneumonia less likely; however, evaluation for pulmonary embolism or other causes remains prudent.  
+3. Chronic conditions: Hypertension, hyperlipidemia, chronic kidney disease, metabolic syndrome, sleep apnea, chronic pain.  
+
+Plan  
+- Immediate cardiac work‑up: Obtain an electrocardiogram (ECG) and serial cardiac troponin measurements.  
+- Initiate cardiac monitoring (telemetry).  
+- Administer aspirin 325 mg chewable and consider sublingual nitroglycerin for chest pain relief, monitoring for hypotension.  
+- Begin a beta‑blocker (e.g., metoprolol) if no contraindications, to reduce myocardial oxygen demand.  
+- Continue current antihypertensive (lisinopril) and lipid‑lowering (rosuvastatin) therapy.  
+- Provide supplemental oxygen if SpO₂ falls below 94%.  
+- Consult cardiology for possible urgent coronary angiography or further imaging.  
+- Evaluate for infection: Order CBC with differential, basic metabolic panel, and chest radiograph to rule out pneumonia or other pulmonary pathology.  
+- Monitor vital signs closely, especially blood pressure, heart rate, and oxygen saturation.  
+- Counsel on smoking cessation and discuss risks of continued methamphetamine use; refer to substance abuse counseling.  
+- Discuss the importance of adherence to cardiovascular medications and lifestyle modifications (diet, exercise, weight control).  
+- Arrange follow‑up with primary care and cardiology within 24–48 hours or sooner if symptoms worsen.  
+- Provide discharge instructions: If chest pain recurs or worsens, seek emergency care immediately; keep a record of pain episodes, associated symptoms, and medication adherence.  
+
+This summary reflects the information available from the patient interview and the electronic health record. Further diagnostic data will refine the assessment and guide definitive management.

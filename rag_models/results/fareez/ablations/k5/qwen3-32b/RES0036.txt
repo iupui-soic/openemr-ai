@@ -1,0 +1,56 @@
+Model: qwen/qwen3-32b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:44:06
+Time: 4.61s
+Tokens: 11,964 in / 1,188 out
+============================================================
+
+Patient Information  
+The patient is a 104-year-old female, Adrianna Camelia Wuckert, residing at 609 Bartell Gate, Marshfield, Massachusetts 02050. She is currently under the care of OpenEMR with a documented medical history that includes chronic sinusitis, essential hypertension, ischemic heart disease, obesity, chronic kidney disease, hyperlipidemia, anemia, and a history of renal transplantation. The patient is not currently taking any medications at home and has no known allergies. She has a significant social history of tobacco use (10 cigarettes/day since age 20), occasional cannabis use (5 mg/week), and alcohol consumption (approximately 5 drinks/week). She resides in a poorly maintained apartment and works in a crowded environment with potential exposure to mold and dust. She has a history of dental issues and reports social isolation.
+
+Chief Complaint  
+The patient presents with a 6-day history of sudden-onset dyspnea, which has progressively worsened over the course of the week. She reports that the dyspnea is constant, exacerbated by exertion, and accompanied by a productive cough with rusty-colored sputum. She also notes sharp chest pain with coughing, rated at 7/10 in severity, and intermittent chills without fever confirmation. She denies any prior similar episodes.
+
+History of Present Illness  
+The patient first noticed shortness of breath six days ago, which began suddenly and without any preceding activity or illness. The dyspnea is constant and worsens with physical activity such as walking. She has also experienced a productive cough with rusty-colored sputum, occurring several times daily. The cough began simultaneously with the dyspnea and has not improved. She describes mild wheezing but no significant improvement with over-the-counter medications such as Tylenol. The patient also reports sharp chest pain that occurs with coughing, which subsides when the coughing stops. She denies any wheezing, dizziness, syncope, hemoptysis, night sweats, weight loss, or changes in bowel or urinary habits. She denies any recent travel or known exposure to tuberculosis. She has had a recent upper respiratory tract infection with a runny nose a few days prior to symptom onset.
+
+Review of Systems  
+Constitutional: The patient reports intermittent chills and fatigue but denies fever, weight loss, or night sweats.  
+Respiratory: She has dyspnea on exertion, a productive cough with rusty-colored sputum, and mild wheezing.  
+Cardiovascular: No chest pain at rest, no palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Neurological: No headaches or dizziness.  
+Musculoskeletal: No joint pain or muscle aches.  
+Genitourinary: No changes in urinary frequency or urgency.  
+Endocrine: No changes in appetite or sleep.  
+Hematologic: No easy bruising or bleeding.  
+Psychiatric: No mood changes or anxiety reported.  
+Dermatologic: No rashes or skin changes.  
+Allergic: No known allergies.  
+Other: No history of trauma or recent injuries.
+
+Past Medical History  
+The patient has a long-standing history of chronic sinusitis, essential hypertension, ischemic heart disease, obesity, chronic kidney disease, hyperlipidemia, anemia, and a history of renal transplantation. She also has a history of social isolation and stress. There is no documented history of asthma, diabetes, or COPD. She has undergone no surgeries and has no history of hospitalizations for respiratory issues.
+
+Social History  
+The patient is a current smoker with a 10-cigarette-per-day habit for over 90 years. She occasionally uses cannabis (5 mg/week) and consumes alcohol (5 drinks/week). She resides in a poorly maintained apartment and works in a crowded environment with potential exposure to mold and dust. She reports a sedentary lifestyle and a diet high in fast food and junk food.
+
+Family History  
+No known family history of cancer, heart disease, or lung disease.
+
+Current Medications  
+The patient is not currently taking any medications at home.
+
+Objective  
+Vital Signs: No recent vital signs were available in the OpenEMR record.  
+Physical Examination: Not performed during this initial visit.  
+Labs: Recent laboratory results show elevated creatinine (2.72 mg/dL), normal potassium (4.7 mmol/L), and normal sodium (142.95 mmol/L). Other labs include normal cholesterol levels, normal liver enzymes, and a glomerular filtration rate of 74 mL/min.  
+Imaging: No imaging studies were performed at this time.  
+Other: No additional objective findings were available.
+
+Assessment  
+The patient presents with acute dyspnea, productive cough with rusty-colored sputum, and pleuritic chest pain. Given her smoking history and recent exposure to potential environmental irritants, the differential diagnosis includes community-acquired pneumonia, COPD exacerbation, and possible aspiration. The presence of pleuritic chest pain and rusty-colored sputum raises concern for a bacterial etiology. The patient’s chronic medical conditions, including chronic kidney disease and ischemic heart disease, may complicate her clinical course and response to treatment.
+
+Plan  
+The patient will undergo further evaluation, including a chest X-ray and sputum culture, to confirm the presence of pneumonia. Blood work, including a complete blood count and inflammatory markers, will be obtained. She will be started on empiric antibiotic therapy pending culture results. Additional supportive care, including oxygen therapy if indicated, will be provided. The patient will be advised to avoid further exposure to environmental irritants and to follow up for reassessment. Referral to a pulmonologist may be considered for further evaluation of her respiratory symptoms and smoking history.

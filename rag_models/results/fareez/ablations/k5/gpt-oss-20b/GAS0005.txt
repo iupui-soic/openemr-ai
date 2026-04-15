@@ -1,0 +1,68 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:37:18
+Time: 2.71s
+Tokens: 15,021 in / 1,002 out
+============================================================
+
+Patient Information:  
+A 6‑year‑old male presents with acute abdominal pain, vomiting, diarrhea, and fever. The patient lives at home with his mother, father, and two older siblings. He is otherwise healthy, with no known allergies, prior medical conditions, or regular medications. Immunizations are up to date. No pets in the household and no tobacco exposure.
+
+Chief Complaint:  
+The patient was brought in by his mother for abdominal pain, vomiting, and fever that began approximately three days ago.
+
+History of Present Illness:  
+Three days prior to presentation, the patient began experiencing abdominal discomfort. Two days ago, he started vomiting six times over the course of two days and developed watery diarrhea, with about six to seven episodes in the last 24 hours. The vomitus was initially the food he had eaten but later became yellowish and non‑bilious; no blood or bile was noted. Yesterday, the mother measured a fever of 38.3 °C and observed chills; the child remained quiet and slept most of the day. No changes in diet, recent travel, or exposure to sick individuals were reported. The child has been otherwise normal and has no history of similar episodes.
+
+Review of Systems:  
+Constitutional: fever 38.3 °C, chills, irritability, decreased activity.  
+Gastrointestinal: abdominal pain (central, diffuse, non‑localized), vomiting (yellow, non‑bilious), watery diarrhea (frequent).  
+Respiratory: no cough, shortness of breath, or chest pain.  
+Cardiovascular: no chest pain or palpitations.  
+Urinary: no dysuria or increased frequency.  
+Skin: no rash or lesions.  
+Neurologic: normal behavior aside from irritability.  
+ENT: no sore throat, ear pain, or nasal congestion.  
+All other systems are negative.
+
+Past Medical History:  
+No prior illnesses, hospitalizations, or surgeries. No chronic medical conditions. No medications. No known drug or food allergies.
+
+Social History:  
+Lives in a non‑smoking household with parents and siblings. No pets. No recent travel outside the home. The child attends school, and the family reports no recent illness among classmates.
+
+Family History:  
+No known gastrointestinal diseases (celiac, Crohn’s), no family history of chronic infections or significant chronic illnesses. No genetic or congenital conditions reported.
+
+Current Medications:  
+None.
+
+Physical Examination:  
+Vital signs (as recorded): Temperature 38.3 °C. Other vital signs (BP, HR, RR, SpO₂, weight) were not documented at presentation.  
+General: The child appeared irritable and quiet, spending most of the day sleeping.  
+HEENT: No throat erythema, no nasal discharge.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Respiratory: Clear lung fields, no wheeze or stridor.  
+Abdominal: Soft, diffusely tender to palpation, no rebound tenderness or guarding, no organomegaly noted.  
+Extremities: No edema, normal range of motion.  
+Skin: No rashes or lesions.  
+Neurologic: Awake, responsive, normal tone and reflexes.
+
+Labs:  
+No laboratory results were obtained at the time of presentation. The plan is to order a COVID‑19 PCR test, basic metabolic panel (electrolytes, BUN, creatinine), complete blood count, and urinalysis to evaluate for possible dehydration, electrolyte imbalance, and to rule out bacterial infection.
+
+Assessment:  
+Primary diagnosis: Viral gastroenteritis, likely due to a viral pathogen such as SARS‑CoV‑2 or another enteric virus.  
+Differential diagnoses include bacterial gastroenteritis (e.g., Salmonella, Shigella), food‑borne illness, or parasitic infection; however, lack of risk factors and the self‑limited course favor a viral etiology.
+
+Plan:  
+1. Provide supportive care: encourage oral rehydration with clear fluids and electrolyte solutions; monitor intake and output.  
+2. Administer acetaminophen as needed for fever or discomfort.  
+3. Consider temporary NPO status if vomiting persists or worsens; reintroduce clear liquids once vomiting has resolved.  
+4. Counsel parents on signs of dehydration (decreased urine output, dry mucous membranes, lethargy) and when to seek urgent care.  
+5. Repeat vital signs and review symptom progression at follow‑up.  
+6. Arrange a follow‑up visit in 48 hours or sooner if symptoms worsen.  
+7. Await results of COVID‑19 PCR and laboratory tests; adjust management accordingly.  
+
+The patient will remain under observation for the remainder of the visit and will be discharged home with instructions for home care and follow‑up.

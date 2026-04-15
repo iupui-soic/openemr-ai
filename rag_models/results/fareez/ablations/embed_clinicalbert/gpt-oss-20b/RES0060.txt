@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:54:31
+Time: 2.70s
+Tokens: 6,502 in / 1,444 out
+============================================================
+
+Patient Information  
+Abbie Stamm, 22‑year‑old female, born November 16, 2001. Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000. Resident of a duplex, currently sharing the living space with her girlfriend. She reports no known drug allergies except for penicillin, for which she develops hives.
+
+Chief Complaint  
+The patient presents with a 4‑day history of fever and a worsening dry cough. She reports a temperature of 38.5 °C measured this morning.
+
+History of Present Illness  
+Four days ago (Monday), the patient first noted a fever and a dry cough. Over the past four days the symptoms have progressively worsened. She feels increasingly fatigued, tired, and reports mild shortness of breath only after coughing fits. There is no chest pain, no wheezing, and no sputum production. No hemoptysis has been observed. She has experienced mild chills at night but no night sweats. She denies sore throat, difficulty swallowing, ear or eye pain, or visual changes. She notes a mild runny nose but no significant congestion. Mild nausea has occurred, but she has not vomited and there is no abdominal pain. A tension‑type headache has been present intermittently for several days and is relieved with over‑the‑counter NSAIDs. She reports overall fatigue and mild body aches. She denies fever spikes, chills beyond mild night chills, or significant weight loss beyond a few pounds due to decreased appetite. She denies recent travel, new exposures to sick contacts, or environmental irritants. She has worn a mask during recent mall visits, and no other sick contacts are recalled.
+
+Review of Systems  
+Constitutional: Fever (38.5 °C), chills, fatigue, mild weight loss, nausea, headache.  
+Respiratory: Dry cough, mild runny nose, no sputum, no wheeze, shortness of breath only after coughing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain.  
+Gastrointestinal: Nausea without vomiting, normal bowel movements.  
+Genitourinary: No dysuria, no hematuria, normal urinary frequency.  
+Neurologic: No dizziness, no confusion, no memory loss.  
+Psychiatric: None reported.  
+Endocrine: Pre‑diabetes, on rosuvastatin.  
+Musculoskeletal: Mild body aches.  
+Skin: No rash beyond known penicillin allergy.  
+Hematologic/Immune: No recent infections aside from current illness.
+
+Past Medical History  
+- Childhood asthma (resolved 2021).  
+- Perennial allergic rhinitis (resolved 2020).  
+- Mitral valve regurgitation (ongoing).  
+- Acute bronchitis (2016).  
+- Gingivitis and gingival disease (multiple episodes).  
+- Acute viral pharyngitis (Sept 2023).  
+- Streptococcal sore throat (Jan 2022).  
+- Acute infective cystitis (Feb 2024).  
+- High cholesterol, controlled with rosuvastatin.  
+- Prediabetes (A1C 6.2% six months ago).  
+- Inguinal hernia repair (5 years ago).
+
+Surgical History  
+- Inguinal hernia repair, approximately five years prior.
+
+Social History  
+- Non‑smoker; denies tobacco or recreational drug use.  
+- Consumes 2–3 beers on weekends.  
+- Lives with a female partner.  
+- Works full‑time; reports no significant occupational exposures.  
+- No alcohol abuse.  
+- No exercise routine recorded aside from walking a dog.
+
+Family History  
+No documented family history of cardiovascular disease, diabetes, or cancer. Grandfather had bladder cancer, but no other relevant family illnesses reported.
+
+Allergies  
+- Penicillin (hives).  
+- No other known drug or environmental allergies listed.
+
+Medications  
+- Rosuvastatin (current dose per prescription).  
+- Multivitamin (current use).  
+No other medications are currently taken; past medications such as Loratadine, beclomethasone inhaler, and albuterol have been discontinued per the provider’s note.
+
+Physical Examination  
+No physical examination data are available at this time. No vital signs beyond the recorded temperature of 38.5 °C are documented. No findings are noted regarding chest auscultation, lung expansion, or abdominal examination.
+
+Laboratory Data  
+No laboratory studies were obtained during this encounter. The most recent laboratory values are from a urine dipstick showing mild proteinuria and glucose, but these are not pertinent to the current illness.
+
+Assessment  
+The presentation is most consistent with an acute viral upper respiratory tract infection, likely acute bronchitis or influenza‑like illness. Differential diagnosis includes COVID‑19, given the overlapping symptomatology; influenza and other common respiratory viruses are also considered. Bacterial pneumonia is less likely but remains in the differential should symptoms worsen or fail to improve within 7 days.
+
+Plan  
+1. COVID‑19 testing: A nasopharyngeal swab will be performed; results expected within 24–48 hours.  
+2. Isolation: The patient and her partner are advised to isolate for 14 days pending test results, with continued precautionary measures even if the test is negative, given the potential for false negatives.  
+3. Symptom management:  
+   - Acetaminophen or ibuprofen as needed for fever and headache.  
+   - Adequate hydration and rest.  
+   - OTC decongestant if nasal congestion becomes bothersome.  
+4. Monitoring:  
+   - Re‑evaluate in clinic or via telemedicine in 7 days, or sooner if symptoms worsen (fever >38.9 °C, increasing shortness of breath, chest pain, or inability to keep fluids down).  
+5. Antibiotic stewardship: No antibiotics are currently indicated. If the patient develops new productive cough, worsening hypoxia, or radiographic evidence of bacterial pneumonia, a course of appropriate antibiotics will be considered.  
+6. Chronic disease review: Continue rosuvastatin for hyperlipidemia. Discuss dietary modifications and weight management strategies for pre‑diabetes; schedule a follow‑up with primary care in 3 months for repeat A1C.  
+7. Education: Reinforce mask usage, hand hygiene, and symptom monitoring. Counsel on early presentation if symptoms of respiratory distress develop.  
+8. Follow‑up: The patient is advised to contact the clinic sooner if new symptoms arise, such as worsening cough, persistent fever >5 days, or difficulty breathing.
+
+Disposition  
+The patient is discharged home with the above plan. No immediate disposition to a higher level of care is necessary. All instructions have been reviewed with the patient, and she understands her care plan.

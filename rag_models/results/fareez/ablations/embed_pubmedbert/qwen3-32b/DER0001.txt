@@ -1,0 +1,65 @@
+Model: qwen/qwen3-32b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 04:03:26
+Time: 4.58s
+Tokens: 9,064 in / 1,473 out
+============================================================
+
+Patient Information  
+The patient is a 45-year-old male with a known history of diabetes mellitus type 2, hyperlipidemia, and chronic kidney disease. He is currently unemployed and lives in Waltham, Massachusetts. The patient reports a family history of diabetes and hypertension on his mother's side. He has a significant past medical history, including essential hypertension, chronic kidney disease, and a history of myocardial infarction. He is currently taking rosuvastatin for hyperlipidemia and multiple oral hypoglycemic agents for diabetes management. The patient is allergic to penicillin, with a history of anaphylaxis as a child. He has a history of sinus surgery for chronic sinusitis. Social history includes occasional tobacco use and alcohol consumption, averaging 2 to 4 drinks per week, with increased use on weekends. He reports limited social contact and lives alone, seeing his children every two weeks.
+
+Chief Complaint  
+The patient presents with a concerning rash on his right ankle that has been present for about a week but has worsened in the past 24 hours. He reports increasing pain, swelling, redness, and the development of an open wound with purulent drainage. He also notes a low-grade fever and generalized fatigue for the past 12 hours.
+
+History of Present Illness  
+The patient first noticed a rash on his right ankle approximately one week ago. Initially asymptomatic, the lesion began to swell, become more painful, and develop scabs. Over the past 24 hours, the rash has become increasingly red, swollen, and painful, with the formation of an open wound that is now draining a white, purulent exudate. The affected area feels warmer than the contralateral side. The patient reports that the pain is exacerbated with movement and weight-bearing but is not present at rest. He also reports feeling generally unwell, with increased fatigue, hunger, and weight gain over the past few weeks. He has not measured his blood glucose levels recently but acknowledges poor glycemic control, with an estimated A1C of 9%. He has not taken his temperature at home but feels warm to the touch. No other new symptoms, such as difficulty breathing, chest pain, or gastrointestinal issues, are reported.
+
+Review of Systems  
+Constitutional: Reports fatigue, generalized malaise, and subjective fever for the past 12 hours.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: No new neurological deficits. However, he has a history of peripheral neuropathy, with decreased sensation in the feet.  
+Musculoskeletal: No joint pain or swelling other than the affected ankle.  
+Dermatological: No other rashes or skin lesions.  
+Hematologic: No bruising or bleeding.  
+Endocrine: Reports increased hunger and weight gain, consistent with poor glycemic control.  
+Psychiatric: No new mood changes or depressive symptoms.  
+Allergic/Immunologic: No new allergic reactions.  
+Ophthalmologic: No visual changes.  
+Otolaryngologic: No ear pain or hearing changes.  
+
+Allergies  
+The patient is allergic to penicillin, with a history of anaphylaxis as a child. No other drug allergies are reported.
+
+Past Medical History  
+The patient has a history of type 2 diabetes mellitus, hyperlipidemia, chronic kidney disease, and a myocardial infarction. He has also had a renal transplant and a history of sinus surgery. He has experienced occasional ulcers on the feet and has a history of gingivitis and dental caries.
+
+Surgical History  
+The patient has had sinus surgery for chronic sinusitis in his teens.
+
+Social History  
+The patient is unemployed and reports stress related to job searching and family responsibilities. He occasionally uses tobacco, approximately 2 packs per week during stressful periods. Alcohol consumption averages 2 to 4 drinks per week, with increased use on weekends. He reports limited social contact and lives alone.
+
+Family History  
+The patient has a strong family history of diabetes and hypertension on his mother's side. His father's side is reported to be healthier, though one aunt has a history of lung cancer, likely related to smoking.
+
+Current Medications  
+The patient is currently taking rosuvastatin for hyperlipidemia and three oral hypoglycemic agents for diabetes management. Specific names include metformin and sitagliptin, though the exact regimen is not fully detailed. No insulin use is reported. He also takes acetaminophen and ibuprofen for chronic back pain. No new medications have been introduced recently.
+
+Objective  
+Vital signs were not available from the electronic health record. On physical examination, the right ankle was erythematous, swollen, and tender to palpation. The affected area was warm and showed signs of purulent drainage from a previously scabbed wound. No systemic signs of sepsis were noted, such as tachycardia or hypotension. No other rashes or skin lesions were observed. The patient's gait was antalgic, and he reported pain with weight-bearing. No neurological deficits were noted in the lower extremities.
+
+Labs  
+Recent laboratory results included a creatinine level of 2.98 mg/dL, indicating impaired renal function. Glucose was 94 mg/dL, but this may not reflect current glycemic control. Other notable labs included a sodium level of 139.84 mmol/L, potassium of 4.5 mmol/L, and a low-density lipoprotein cholesterol of 120.66 mg/dL. No complete blood count or inflammatory markers were available at the time of this visit.
+
+Imaging  
+No imaging studies were performed at the time of this visit.
+
+Assessment  
+Based on the clinical presentation and physical findings, the primary diagnosis is cellulitis of the right ankle. The presence of erythema, warmth, swelling, and purulent drainage is consistent with a bacterial skin infection. Given the patient's history of diabetes and peripheral neuropathy, there is an increased risk of delayed healing and complications. The patient also reports a low-grade fever and generalized fatigue, suggesting a possible systemic infection.
+
+Plan  
+The patient will be prescribed a broad-spectrum antibiotic to cover common pathogens associated with cellulitis, with consideration for coverage of methicillin-resistant Staphylococcus aureus (MRSA). He will be advised to keep the affected area elevated and clean, avoid weight-bearing as tolerated, and monitor for signs of worsening infection such as increased swelling, fever, or spreading erythema. He will be instructed to follow up with his primary care provider for further evaluation of his diabetes and to ensure optimal glycemic control. Additionally, he should schedule a follow-up visit in 48 to 72 hours to reassess the infection and response to treatment. The patient will also be advised to monitor his blood glucose levels and to seek further management for his hyperlipidemia and chronic kidney disease.

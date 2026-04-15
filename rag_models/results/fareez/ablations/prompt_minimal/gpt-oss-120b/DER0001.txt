@@ -1,0 +1,184 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 04:24:42
+Time: 6.76s
+Tokens: 8,944 in / 2,570 out
+============================================================
+
+**Patient Information**  
+**Name:** Adan Crona **DOB:** 04/07/1943 **Age:** 45 years (as reported by patient) **Sex:** Male **MRN:** 820  
+
+---
+
+## S – Subjective  
+
+### Chief Complaint  
+“Rash on my right ankle that’s become swollen, red, painful and is leaking white fluid.”
+
+### History of Present Illness  
+Mr. Crona is a 45‑year‑old man with long‑standing type 2 diabetes mellitus who presents with a 1‑week history of a progressively enlarging, erythematous lesion on the lateral aspect of his right ankle.  
+* **Onset & Course:** The lesion was first noticed a week ago as a small “weird‑looking” patch. Yesterday the area became painful, swollen, and began to ooze a thin white discharge from a former scab.  
+* **Location:** Right ankle (lower leg).  
+* **Quality/Severity:** Describes the pain as a dull ache that worsens with walking and flexion; it is not markedly tender to light touch.  
+* **Associated Symptoms:** Increased warmth of the right leg compared with the left, feeling “a little hot” over the past 12 hours, generalized fatigue, increased hunger, recent weight gain, and a sense of being “crummy” over the last two weeks. Denies fever (no thermometer available), chills, dyspnea, chest pain, or dysuria.  
+* **Pertinent Negatives:** No prior similar lesions, no recent trauma other than occasional minor foot injuries, no known insect bites, no new medications, no recent sick contacts.  
+
+### Review of Systems (pertinent)  
+- **Constitutional:** Fatigue, feeling “hot”; denies fever, chills, night sweats.  
+- **Skin:** Erythema, swelling, warmth, purulent/white drainage from right ankle lesion.  
+- **Neurologic:** Reports chronic decreased sensation in both feet (diabetic peripheral neuropathy); no new numbness or loss of motor function in the affected leg.  
+- **Cardiovascular/Respiratory:** No chest pain, palpitations, dyspnea, cough.  
+- **Gastrointestinal:** No nausea, vomiting, abdominal pain, or change in bowel habits.  
+- **Endocrine/Metabolic:** Polyphagia, recent weight gain, subjective hyperglycemia.  
+
+### Past Medical History  
+- Type 2 diabetes mellitus (poor control, most recent A1c ≈ 9 %).  
+- Hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 2–3 documented historically).  
+- History of diabetic foot ulcers (left heel ulcer noted, currently stable).  
+- Asthma (childhood, minimal current issues).  
+- Chronic low‑back pain (managed with OTC NSAIDs/acetaminophen).  
+
+### Surgical History  
+- Functional endoscopic sinus surgery (teen years). No other surgeries.
+
+### Allergies  
+- Penicillin – causes facial swelling and difficulty breathing (type I reaction).  
+
+### Medications (home)  
+- Rosuvastatin 10 mg daily (hyperlipidemia).  
+- Metformin (dose not recalled).  
+- Two additional oral antidiabetic agents (patient unable to recall names; “Sidas…something”).  
+- Occasional OTC acetaminophen/ibuprofen for back pain.  
+
+### Social History  
+- **Tobacco:** Occasional use; recent increase to ~2 packs/week.  
+- **Alcohol:** 2–4 drinks per day on weekends, higher intake on weekends.  
+- **Illicit drugs:** None.  
+- **Employment:** Currently unemployed/part‑time accounting business.  
+- **Living situation:** Resides in town; sees children every two weeks.  
+- **Lifestyle:** Reports high stress, limited exercise, poor diabetes self‑monitoring (has not checked sugars recently).  
+
+### Family History  
+- Mother’s side: Multiple relatives with diabetes, hypertension, hyperlipidemia.  
+- Father’s side: Generally healthy; one aunt with lung cancer (heavy smoker).  
+
+---
+
+## O – Objective  
+
+### Vital Signs  
+*Not documented during this visit.*  
+
+### Physical Examination (pertinent findings)  
+- **General:** Alert, NAD, appears mildly uncomfortable due to leg pain.  
+- **Right Ankle/Lower Leg:**  
+  * Skin: Erythematous, warm, and edematous area measuring approx. 5 cm in greatest dimension.  
+  * Lesion: Central ulcerated/scabbed area with thin white purulent exudate; margins irregular, surrounding skin shows spreading erythema.  
+  * Tenderness: Mild to moderate tenderness on palpation; pain increases with dorsiflexion/plantarflexion.  
+  * Sensation: Decreased light touch and pinprick distal to the lesion (consistent with chronic diabetic neuropathy).  
+- **Left Lower Extremity:** Healed‑appearing ulcer on left heel, no active drainage.  
+- **Cardiovascular:** Regular rate/rhythm, no murmurs.  
+- **Respiratory:** Clear breath sounds bilaterally.  
+- **Abdomen:** Soft, non‑tender, no organomegaly.  
+
+### Laboratory Data (most recent)  
+| Test | Result | Reference |
+|------|--------|-----------|
+| Creatinine | 2.98 mg/dL | ↑ (renal impairment) |
+| eGFR (MDRD) | 79 mL/min/1.73 m² | ↓ (borderline) |
+| Glucose (random) | 94 mg/dL | Normal (but may not reflect fasting) |
+| Sodium | 139.8 mmol/L | Normal |
+| Potassium | 4.5 mmol/L | Normal |
+| BUN | 13.7 mg/dL | Normal |
+| ALT | 43.9 U/L | Mildly elevated |
+| AST | 24.7 U/L | Normal |
+| Alk Phos | 123.7 U/L | Slightly ↑ |
+| Total Protein/Albumin | 6.52 g/dL / 3.88 g/dL | Normal |
+| Lipid Panel: Total Cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 31.6 mg/dL, Triglycerides 177 mg/dL | Dyslipidemia (low HDL) |
+| Hemoglobin A1c (historical) | ~9 % | Poor control |
+
+*Complete blood count and inflammatory markers (WBC, CRP) were not available at this visit.*  
+
+### Imaging  
+No imaging performed at this encounter.
+
+---
+
+## A – Assessment  
+
+1. **Cellulitis of right ankle** – acute, likely bacterial infection with purulent drainage; risk factors include uncontrolled diabetes, peripheral neuropathy, and chronic foot ulceration.  
+2. **Type 2 diabetes mellitus, poorly controlled** – A1c ≈ 9 %; recent non‑adherence to glucose monitoring.  
+3. **Chronic kidney disease (stage 2–3)** – evidenced by elevated creatinine; requires dose adjustment for certain antibiotics.  
+4. **Hyperlipidemia** – currently on rosuvastatin.  
+5. **Hypertension** – on losartan (per medication list).  
+6. **Peripheral neuropathy** – diabetic, contributing to reduced sensation.  
+7. **Tobacco use disorder** – intermittent, increased recently.  
+8. **Alcohol use** – moderate‑to‑heavy weekend consumption.  
+
+*Differential considerations*: diabetic foot ulcer infection, MRSA‑related skin infection, gouty arthritis (less likely), necrotizing soft‑tissue infection (no systemic toxicity at present).
+
+---
+
+## P – Plan  
+
+### 1. Antibiotic Therapy  
+- **First‑line (penicillin allergy):** Clindamycin 600 mg PO q8h for 10 days **OR** Doxycycline 100 mg PO bid for 10 days if MRSA coverage is desired and renal function permits.  
+- **If concern for Gram‑negative organisms or renal insufficiency:** Consider **Trimethoprim‑Sulfamethoxazole** 800/160 mg PO bid (adjust for creatinine).  
+- Document penicillin allergy and avoid β‑lactams.
+
+### 2. Wound Care  
+- Clean the lesion with normal saline; apply sterile non‑adherent dressing.  
+- Encourage daily dressing changes; refer to wound‑care nurse for debridement if necrotic tissue appears.  
+- Keep the area elevated to reduce edema.
+
+### 3. Diabetes Management  
+- Reinforce self‑monitoring of blood glucose (target fasting 80‑130 mg/dL).  
+- Review current antidiabetic regimen; consider adding a basal insulin (e.g., insulin glargine) given A1c > 9 % and recent infection.  
+- Arrange urgent follow‑up with primary‑care physician/endocrinology within 1 week.
+
+### 4. Renal Function Monitoring  
+- Repeat serum creatinine and eGFR in 1‑2 weeks; adjust medication doses accordingly.  
+- Avoid nephrotoxic agents (NSAIDs) until renal function stabilizes.
+
+### 5. Pain & Symptom Control  
+- Acetaminophen 500‑650 mg PO q6h PRN for pain (max 3 g/day).  
+- Avoid additional NSAIDs unless renal function improves.
+
+### 6. Lifestyle & Preventive Counseling  
+- **Smoking cessation:** Offer nicotine replacement therapy and referral to cessation program.  
+- **Alcohol moderation:** Counsel to limit intake to ≤ 14 drinks/week; consider brief intervention.  
+- **Foot care education:** Daily inspection, keep nails trimmed, avoid walking barefoot; schedule podiatry visit.  
+- **Nutrition & Exercise:** Encourage low‑glycemic diet, gradual increase in physical activity as tolerated.
+
+### 7. Follow‑Up & Return Precautions  
+- **Clinic follow‑up:** Return in 48‑72 hours for reassessment of the cellulitis (or sooner if worsening).  
+- **Urgent return if:** increasing pain, spreading erythema, fever > 38 °C, purulent drainage worsening, new drainage, or systemic symptoms (e.g., chills, malaise).  
+
+### 8. Labs & Imaging (to be ordered)  
+- CBC with differential (to assess leukocytosis).  
+- CRP/ESR (baseline inflammatory markers).  
+- Repeat fasting glucose and HbA1c within 2 weeks.  
+- Consider lower‑extremity duplex ultrasound if there is concern for underlying deep‑vein thrombosis.  
+
+### 9. Medications Prescribed at Discharge  
+| Medication | Dose & Route | Duration |
+|------------|--------------|----------|
+| Clindamycin 600 mg PO q8h | 10 days |
+| Acetaminophen 500 mg PO q6h PRN | As needed |
+| Continue rosuvastatin 10 mg PO daily | Ongoing |
+| Continue metformin (review dose) | Ongoing |
+| Consider addition of basal insulin (pending endocrine consult) | – |
+
+### 10. Documentation  
+- Document penicillin allergy, current renal function, and need for dose adjustments.  
+- Ensure that the patient’s primary care provider receives a copy of this encounter note and the plan for coordinated care.
+
+---  
+
+**Prepared by:** [Clinician’s Name], MD  
+**Date:** 04/14/2026  
+
+*End of SOAP note.*

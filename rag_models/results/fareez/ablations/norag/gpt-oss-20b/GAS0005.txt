@@ -1,0 +1,54 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:17:39
+Time: 1.78s
+Tokens: 12,907 in / 819 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male child brought to the clinic by his mother. No additional demographic information is provided in the transcript.  
+
+Chief Complaint  
+The mother reports that her son has been experiencing abdominal pain, vomiting, and fever for the past few days.  
+
+History of Present Illness  
+The child began to have intermittent abdominal pain approximately three days ago. Vomiting started two days ago and has occurred six times in total, with the most recent episodes consisting of yellowish material. He also developed a fever yesterday, measured at 38.3 °C, accompanied by chills. The mother notes that he has been more irritable initially but became quiet and slept most of the day during the fever. The child has had watery diarrhea, approximately six to seven episodes in the last day, with no blood or color changes noted. He has denied headaches, ear pain, eye pain, sore throat, loss of taste or smell, cough, shortness of breath, wheezing, chest pain, urinary symptoms, rashes, skin changes, or musculoskeletal pain. The child’s diet has remained consistent with home food, and there have been no recent changes in diet or exposure to illness at home or school. Family history is negative for gastrointestinal disease, asthma, or genetic conditions.  
+
+Past Medical History  
+No previous medical conditions or hospitalizations are reported for the child. He is otherwise healthy and meeting developmental milestones.  
+
+Social History  
+The child lives with his mother, father, and two siblings. There is no smoking, pets, or recent travel. No household illness has been reported.  
+
+Review of Systems  
+* General: Fever with chills, irritability, increased sleep, no weight loss.  
+* HEENT: No sore throat, no ear pain, no nasal congestion.  
+* Respiratory: No cough, no wheezing, no shortness of breath.  
+* Cardiovascular: No chest pain, no palpitations.  
+* Gastrointestinal: Abdominal pain (diffuse), vomiting (yellowish, no bile or blood), watery diarrhea (no blood).  
+* Genitourinary: No dysuria, no frequency.  
+* Musculoskeletal: No joint or muscle pain.  
+* Skin: No rashes or lesions.  
+
+Physical Examination  
+No physical examination findings are documented in the transcript.  
+
+Assessment  
+The presentation is consistent with acute viral gastroenteritis, likely due to a common enteric virus or, less commonly, COVID‑19 infection given the pandemic context. The child exhibits diffuse abdominal pain, vomiting, watery diarrhea, fever, and chills. No red‑flag signs (blood in stool or vomit, persistent vomiting, dehydration, lethargy beyond sleep, or focal abdominal tenderness) are noted.  
+
+Plan  
+1. Diagnostic testing: A rapid SARS‑CoV‑2 antigen or PCR test will be performed to rule out COVID‑19.  
+2. Laboratory evaluation: Basic metabolic panel including electrolytes, CBC, and urine analysis to assess for dehydration and electrolyte disturbances.  
+3. Fluid management: Encourage oral hydration with electrolyte solutions. If the child is unable to keep fluids down or shows signs of dehydration (dry mucous membranes, decreased urine output), consider intravenous hydration.  
+4. Symptom control: Acetaminophen may be administered for fever and discomfort as needed.  
+5. Monitoring: Observe the child for progression of symptoms; if vomiting persists, diarrhea becomes bloody, or the child develops significant lethargy or signs of dehydration, return to the clinic or seek urgent care.  
+6. Follow‑up: Reassess in 24–48 hours or sooner if symptoms worsen.  
+
+Lab Results  
+No laboratory data are available for this encounter.  
+
+Medications  
+No current medications are reported for the child.  
+
+The plan focuses on supportive care, fluid replacement, and diagnostic testing for COVID‑19 while monitoring for any signs of complication.

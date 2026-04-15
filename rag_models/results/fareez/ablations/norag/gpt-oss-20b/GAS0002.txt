@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:17:32
+Time: 2.87s
+Tokens: 7,528 in / 1,335 out
+============================================================
+
+Patient Information  
+Agustin McGlynn, male, born April 16, 1965 (59 years old), presents to the emergency department for acute right upper quadrant abdominal pain. He is currently residing in Hingham, Massachusetts, and is employed as a bank consultant. No identifiable ID or insurance details are provided in the documentation.  
+
+Chief Complaint  
+The patient reports a severe, sharp pain localized to the right upper quadrant of the abdomen, described as an 8 out of 10 on the pain scale. The pain began three days ago after a meal and has progressively worsened, reaching its peak intensity a few hours prior to arrival.  
+
+History of Present Illness  
+Mr. McGlynn states that the pain started approximately three days ago, shortly after lunch, and has increased in intensity over the past 48 hours. He describes the pain as sharp, localized to the area just below the lung border in the upper right abdomen, with no radiation. The pain has not changed in location, but it has escalated in severity. He has experienced nausea for the past few days but has not vomited. There is no reported blood in vomitus, stool, or urine. He denies any changes in bowel habits, urinary frequency, or dysuria. His appetite has diminished, particularly today, and he feels generally drained of energy due to the pain. No skin rashes or visible changes have been noted. The patient reports no recent travel, no new food exposures, and no exposure to sick contacts. He denies fever, chills, or diaphoresis.  
+
+Past Medical History (from EMR)  
+The patient has a complex medical history that includes cerebral palsy, intellectual disability, gastroesophageal reflux disease, pneumonia, essential hypertension, chronic kidney disease stages 1–4, type 2 diabetes mellitus with associated microalbuminuria and proteinuria, and a history of renal transplant (status post transplant with rejection episodes). Additional chronic conditions include spasticity, osteoporosis, dysphagia, and recurrent urinary retention. He has also had multiple dental issues, including gingivitis and dental caries.  
+
+Social History  
+Mr. McGlynn lives with his partner and two children. He reports moderate alcohol consumption, approximately one to two glasses of wine nightly, and denies tobacco use or recreational drug use. He has not reported any recent changes to his social or work environment and is satisfied with his current living situation.  
+
+Medications  
+Current medication list (as per EMR) includes:  
+- Tacrolimus 5 mg extended‑release oral capsule (daily)  
+- Tacrolimus 1 mg extended‑release oral tablet (daily)  
+- Tacrolimus 5 mg/ML injection (as needed)  
+- Acetaminophen 325 mg oral tablet (historical; no current use)  
+- Epoetin alfa 4000 IU/ML injection (historical; no current use)  
+- Sodium fluoride 0.0272 mg/mL oral gel (historical)  
+- Hydrochlorothiazide 25 mg oral tablet (historical)  
+- Amlodipine 2.5 mg oral tablet (historical)  
+- Glycopyrrolate 1.5 mg oral tablet (current; dosage unspecified)  
+The medication list indicates several agents with end dates in 2020 or earlier, suggesting they may no longer be actively prescribed; however, tacrolimus remains listed as active, consistent with his transplant status.  
+
+Allergies  
+No drug or food allergies have been documented.  
+
+Review of Systems  
+General: Reports decreased energy due to pain; otherwise no systemic complaints.  
+Cardiovascular: Denies chest pain or palpitations.  
+Respiratory: Denies shortness of breath, cough, or wheezing.  
+Gastrointestinal: Right upper quadrant pain, nausea, decreased appetite; denies vomiting, diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: No dysuria, hematuria, or frequency changes.  
+Neurologic: Denies headaches, dizziness, or syncope.  
+Psychiatric: No depressive or anxiety symptoms reported during this visit.  
+
+Physical Exam  
+No physical exam findings are documented in the provided transcript or EMR extract.  
+
+Assessment  
+Acute right upper quadrant abdominal pain of unknown etiology. Differential diagnoses include acute cholecystitis, gallstone pancreatitis, hepatic colic, or musculoskeletal strain. The patient’s history of chronic kidney disease, diabetes, and transplant status increases the need for careful evaluation to exclude biliary pathology and to assess for potential complications related to immunosuppression.  
+
+Plan  
+1. Obtain an abdominal ultrasound to evaluate the gallbladder, bile ducts, and liver for stones, wall thickening, or other abnormalities.  
+2. Order a complete metabolic panel, liver function tests, amylase/lipase, and coagulation profile to assess for hepatic or pancreatic injury and to evaluate baseline renal function.  
+3. Initiate intravenous analgesia with a short‑acting opioid (e.g., hydromorphone) or a non‑opioid alternative (e.g., acetaminophen) as appropriate, titrating to pain relief while monitoring for respiratory depression and potential drug interactions with tacrolimus.  
+4. Continue tacrolimus therapy with therapeutic drug monitoring to maintain appropriate immunosuppressive levels.  
+5. Encourage oral hydration and a bland diet as tolerated; consider antiemetic therapy (e.g., ondansetron) if nausea persists.  
+6. Monitor vital signs and reassess pain intensity hourly.  
+7. If imaging confirms gallstone disease or other acute pathology, consider surgical consultation for cholecystectomy or endoscopic retrograde cholangiopancreatography (ERCP) as indicated.  
+8. Counsel the patient on alcohol moderation, particularly in the context of liver and renal disease, and discuss potential benefits of a reduced intake.  
+9. Schedule a follow‑up appointment with the primary care provider or transplant hepatology clinic within 48 hours to review laboratory results and imaging.  
+
+Disposition  
+The patient was admitted to the emergency department for observation and further diagnostic workup. He was educated about potential complications of acute abdominal pain and instructed to return immediately if symptoms worsen or new symptoms (e.g., fever, vomiting, jaundice) develop.

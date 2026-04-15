@@ -1,0 +1,61 @@
+Model: google/medgemma-4b-it
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:33:44
+Time: 35.04s
+Tokens: 7,738 in / 646 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+*   **Name:** Abbey Eliza Schmitt
+*   **Date of Birth:** 1965-09-27
+*   **Unit Number:** 103
+*   **Address:** 291 Franecki Union, Hudson, Massachusetts 01749
+
+Chief Complaint:
+
+The patient presents with a three-day history of cough, which she describes as dry and persistent, affecting her sleep. She also reports feeling hot and fatigued.
+
+History of Present Illness:
+
+The patient reports a dry cough for the past three days, which is interfering with her sleep. She denies any sputum production or blood-tinged sputum. She also reports feeling hot and fatigued. She denies any triggers for the cough, such as cold air, smoke, or dust. She has tried over-the-counter cough syrup without relief. She denies any known allergies. She reports a slight headache, possibly related to the cough. She denies any discharge from the eyes or ears, or any pain in the eyes or ears. She denies a runny nose. She has not taken her temperature. She denies any recent cold-like symptoms. She denies any sore throat. Her appetite is okay, but she finds it difficult to eat due to the cough. She denies any swallowing difficulties. She denies any weight loss. She reports feeling a little chilly and sweaty last night. She denies any chest pain or shortness of breath. She denies wheezing or palpitations. She denies dizziness. She denies any loss of taste or smell. She denies diarrhea or nausea/vomiting. She reports a little muscle aches and fatigue. She has hypothyroidism and is taking Synthroid. She had her appendix removed as a teenager and denies any complications. She lives with her husband and two teenagers. Her husband has been vomiting for the past two days and also reports feeling hot. She has not had her TSH checked in six months, and it was normal at that time. She takes a multivitamin. She has no known drug allergies. She has had her appendix removed.
+
+Past Medical History:
+
+*   Hypothyroidism (treated with Synthroid)
+*   History of appendectomy
+
+Medications:
+
+*   Synthroid
+*   Multivitamin
+
+Allergies:
+
+*   No known drug allergies
+
+Social History:
+
+*   Lives with husband and two teenagers.
+*   Drinks wine occasionally (a couple of times per week).
+*   Smokes marijuana occasionally.
+*   No smoking or recreational drug use.
+
+Family History:
+
+*   Sister with a history of heart attack.
+*   Parents deceased from old age.
+
+Assessment:
+
+The patient presents with a three-day history of dry cough, fatigue, and mild headache. The differential diagnosis includes acute bronchitis, viral upper respiratory infection, or possibly COVID-19. Further investigation is warranted.
+
+Plan:
+
+*   Order a PCR nasal swab to test for COVID-19.
+*   Order a chest X-ray.
+*   Monitor the patient's symptoms and vital signs.
+*   Advise the patient to rest and stay hydrated.
+*   Advise the patient to follow up with her primary care physician.

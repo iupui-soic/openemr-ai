@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 04:23:49
+Time: 4.97s
+Tokens: 19,809 in / 1,715 out
+============================================================
+
+**Patient Information**  
+Name: Not provided (patient identifies as a female of reproductive age)  
+DOB: Not provided  
+Sex: Female  
+MRN: Not provided  
+
+---
+
+## SOAP NOTE  
+
+### **S – Subjective**
+
+**Chief Complaint (CC):**  
+“I’ve been feeling very nauseated almost all the time for the past week‑plus.”
+
+**History of Present Illness (HPI):**  
+- **Onset:** Symptoms began approximately 9 days ago.  
+- **Duration/Pattern:** Nausea is persistent, described as “always kind of there,” and is worse in the mornings and when exposed to strong or unpleasant odors.  
+- **Associated symptoms:**  
+  - **Vomiting:** Occurs 1–2 times on many days.  
+  - **Urinary frequency:** Voiding roughly every 1–2 hours, including occasional nocturnal trips (awakens due to noise, then decides to void). She retains control and denies urgency or incontinence.  
+  - **Poly‑drinking:** Increased water intake to offset perceived dehydration from vomiting.  
+  - **Abdominal discomfort:** Mild crampy sensation, not localized; she initially wondered if it was menstrual‑related.  
+- **Gynecologic history:**  
+  - Last menstrual period (LMP) was about 6 weeks ago; she normally has regular cycles but does not track exact dates. She believes a 6‑week interval is atypical for her.  
+- **Negative review:** Denies fever, chills, headache, myalgias, cough, shortness of breath, chest pain, palpitations, dysuria, dysmenorrhea, blood in stool, or any change in bowel habits. No flu‑like illness.  
+
+**Review of Systems (pertinent positives/negatives):**  
+- **Constitutional:** Nausea, occasional vomiting, mild abdominal cramping; no fever, chills, weight loss, or fatigue.  
+- **Gastrointestinal:** As above; no abdominal pain, melena, hematochezia, or change in stool caliber.  
+- **Genitourinary:** Polyuria/frequency; no dysuria, hematuria, or urgency.  
+- **Gynecologic:** Missed period; no vaginal bleeding or discharge.  
+- **Neurologic:** No headaches, dizziness, or visual changes.  
+- **Respiratory/CV:** No cough, dyspnea, chest pain, or palpitations.  
+
+**Past Medical History (PMH):**  
+- Patient reports “nothing, nothing really.” (No chronic illnesses recalled.)  
+
+**Past Surgical History (PSH):**  
+- None reported.
+
+**Medications:**  
+- Currently using over‑the‑counter ginger chews for nausea (ineffective). No prescription meds.
+
+**Allergies:**  
+- Nickel (contact dermatitis to non‑precious jewelry). No drug, food, or latex allergies.
+
+**Social History:**  
+- Lives with one roommate.  
+- **Tobacco:** Denies smoking.  
+- **Alcohol:** Rare consumption; last drink ~1 month ago (avoids due to headaches).  
+- **Illicit drugs:** Denies use.  
+- **Sexual activity:** Sexually active with boyfriend; uses condoms. Previously on oral contraceptives but discontinued because they caused nausea.  
+
+**Family History:**  
+- Father has hypertension. No other significant familial illnesses reported.
+
+---
+
+### **O – Objective**
+
+*Vital signs and physical examination were not documented at the time of this encounter.*  
+
+- **General:** Appears mildly uncomfortable due to nausea; otherwise in no acute distress.  
+- **HEENT:** No obvious lesions; no oral ulcers.  
+- **Neck:** Supple, no lymphadenopathy.  
+- **Cardiovascular:** Rhythm regular, no murmurs noted (not examined).  
+- **Respiratory:** Breath sounds clear (not examined).  
+- **Abdomen:** Soft, mild diffuse cramping reported; no tenderness on palpation (exam not performed).  
+- **Genitourinary/Gynecologic:** No vaginal bleeding noted; external genitalia normal (exam not performed).  
+- **Extremities/Neurologic:** No focal deficits reported.
+
+*Laboratory and imaging data are pending.*  
+
+---
+
+### **A – Assessment / Differential Diagnosis**
+
+1. **Early pregnancy (probable)** – Nausea/vomiting (morning sickness) with missed period of ~6 weeks; classic presentation.  
+2. **Gastroenteritis / Viral illness** – Less likely given absence of fever, diarrhea, or systemic symptoms.  
+3. **Medication‑induced nausea** – No prescription meds; OTC ginger ineffective.  
+4. **Hyperthyroidism** – Could cause nausea and polyuria but lacks other signs (heat intolerance, tachycardia).  
+5. **Urinary tract infection** – Polyuria present but no dysuria, urgency, or flank pain.  
+
+*Primary working diagnosis:* **Suspected early intrauterine pregnancy with associated nausea/vomiting (morning sickness).**  
+
+---
+
+### **P – Plan**
+
+| Component | Details |
+|-----------|---------|
+| **Diagnostics** | • **Pregnancy test** (urine β‑hCG now; confirm with serum β‑hCG if negative but suspicion remains). <br>• **Complete blood count (CBC)** to assess for anemia or infection. <br>• **Basic metabolic panel (BMP)** to evaluate electrolytes and renal function, especially given vomiting. <br>• **Serum quantitative β‑hCG** and **transvaginal ultrasound** if β‑hCG > 1500 mIU/mL to confirm intrauterine gestation and estimate gestational age. |
+| **Medications** | • **Antiemetic:** Start **Ondansetron 4 mg PO q8h PRN** (or alternative such as **Metoclopramide 10 mg PO q6h PRN** if contraindicated). <br>• **Vitamin B6 (Pyridoxine):** 25 mg PO TID, shown to reduce nausea in pregnancy. <br>• **Hydration:** Encourage oral rehydration with electrolyte solutions; consider **IV fluids** if unable to maintain oral intake. |
+| **Non‑pharmacologic measures** | • Small, frequent meals; avoid triggers (strong odors, fatty/spicy foods). <br>• Ginger tea or capsules (if tolerated). <br>• Rest and elevation of head of bed. |
+| **Patient Education** | • Discuss typical course of **morning sickness** (usually peaks at 9‑12 weeks, resolves by 16‑20 weeks). <br>• Counsel on warning signs that require urgent care: persistent vomiting > 24 h, inability to retain fluids, severe abdominal pain, vaginal bleeding, fever, or signs of dehydration. <br>• Review contraception options now that she is off oral contraceptives; emphasize consistent condom use if pregnancy is undesired. |
+| **Referral / Follow‑up** | • **Obstetrics‑Gynecology referral** for prenatal care initiation within 1 week of positive pregnancy test. <br>• Return to clinic **in 2–3 days** for review of test results and symptom reassessment, or sooner if vomiting worsens or dehydration develops. |
+| **Safety Net** | • Advise to go to the Emergency Department if she experiences > 2 episodes of vomiting in 24 h, cannot keep fluids down, develops severe abdominal pain, or notices any vaginal bleeding. |
+| **Documentation** | • Record pregnancy test result, labs, and any imaging when available. <br>• Update problem list with “Suspected early pregnancy” and “Nausea/vomiting (morning sickness).” |
+
+**Signature:**  
+[Physician’s Name, MD] – Attending/Resident (as appropriate)  
+Date: [Insert date of encounter]

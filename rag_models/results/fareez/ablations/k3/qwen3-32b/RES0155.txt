@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:41:36
+Time: 4.66s
+Tokens: 12,666 in / 1,379 out
+============================================================
+
+Patient Information  
+The patient is a 107-year-old female, Adela Tapia, residing at 517 Hills Trace, Stoneham, Massachusetts. She is currently employed full-time at a grocery store and lives with her daughter. The patient has a significant past medical history including chronic obstructive pulmonary disease (COPD), essential hypertension, gastroesophageal reflux disease (GERD), chronic kidney disease stage 5 with a history of renal transplant, ischemic heart disease, and a history of myocardial infarction with coronary artery bypass grafting. She also has a long-standing history of hyperlipidemia, diabetes mellitus, and metabolic syndrome. The patient has a complex social history, including a long-term tobacco use history of approximately 40 years, currently smoking one pack per day, and occasional alcohol consumption, primarily wine on weekends. No recreational drug use is reported.
+
+Chief Complaint  
+The patient presents with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough with yellowish to greenish sputum. She reports that her symptoms have progressively worsened over the past week, with dyspnea on exertion and persistent chest discomfort at rest. She denies any hemoptysis, orthopnea, paroxysmal nocturnal dyspnea, or febrile episodes with chills. The patient has used her inhalers (Ventolin and Symbicort) without significant improvement.
+
+History of Present Illness  
+The patient has experienced worsening dyspnea over the past five days, which is now exacerbated with minimal exertion. She describes a nonproductive cough that has become productive with yellowish to greenish sputum, approximately the size of a palmful with each episode. The chest discomfort is described as a sensation of congestion, not sharp or pressure-like, and is present continuously. She denies any positional worsening of symptoms and reports no nocturnal dyspnea or awakening with gasping for air. The patient has noticed a subjective feeling of feverishness over the past few days but has not measured her temperature. She denies any sore throat, nasal congestion, or other upper respiratory symptoms. There is no recent travel or known exposure to sick contacts. The patient has a history of similar symptoms in the past, requiring antibiotic treatment, and she was last treated for a chest infection approximately four months ago.
+
+Past Medical History  
+The patient has a long-standing history of COPD, diagnosed three years ago, for which she uses Ventolin and Symbicort. She has a history of hypertension managed with an ACE inhibitor and GERD managed with over-the-counter antacids. She has a complex medical history including ischemic heart disease, coronary artery bypass grafting, chronic kidney disease stage 5 with a successful renal transplant, and a history of diabetes mellitus with associated complications. She has a history of hyperlipidemia and metabolic syndrome. The patient has a history of multiple hospitalizations for various conditions, including acute bronchitis, viral sinusitis, and acute pharyngitis.
+
+Medications  
+The patient is currently taking a variety of medications, including metoprolol succinate, valsartan, atorvastatin, aspirin, and nitroglycerin for cardiovascular management. She also takes simvastatin for hyperlipidemia, and she uses Ventolin and Symbicort for COPD. Other medications include donepezil, memantine, and tacrolimus for post-transplant management, as well as insulin for diabetes control.
+
+Allergies  
+The patient has no known drug allergies.
+
+Social History  
+The patient has a long history of tobacco use, currently smoking one pack per day for approximately 40 years. She has not reduced her smoking recently but acknowledges the need to quit. She consumes alcohol occasionally, primarily wine on weekends. She is employed full-time at a grocery store and resides with her daughter.
+
+Family History  
+No significant family history of lung or heart disease is reported. There is no family history of cancer or diabetes.
+
+Review of Systems  
+Constitutional: The patient reports subjective feverishness but no measured fever, chills, or weight loss.  
+Respiratory: Productive cough with yellowish to greenish sputum, worsening dyspnea on exertion, and persistent chest discomfort.  
+Cardiovascular: No palpitations, chest pain, or syncope reported.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel or bladder habits.  
+Neurological: No headaches or visual changes.  
+Musculoskeletal: No joint or muscle pain.  
+Integumentary: No rashes or skin changes.  
+Endocrine: No changes in appetite or sleep.  
+Hematologic: No easy bruising or bleeding.  
+Psychiatric: No mood changes or depression.  
+Genitourinary: No dysuria or changes in urination.  
+Other: No night sweats or changes in sexual function.
+
+Objective  
+Vital Signs: No recent vital signs were recorded in the electronic health record. The patient is currently being evaluated in the emergency department.  
+Physical Examination: Not yet performed in the current encounter.  
+Laboratory Results: Recent lab results include a creatinine level of 0.42 mg/dL, sodium of 138.42 mmol/L, potassium of 4.85 mmol/L, glucose of 96.65 mg/dL, and normal renal function with an estimated glomerular filtration rate of 88.5 mL/min.  
+Imaging: A chest X-ray and possibly a CT scan are planned to evaluate for pneumonia or other pulmonary pathology.  
+Microbiology: A sputum culture and a rapid antigen test for SARS-CoV-2 are planned to rule out infectious causes.
+
+Assessment  
+The patient is presenting with symptoms consistent with an exacerbation of COPD complicated by a possible bacterial infection or pneumonia. The presence of productive yellowish to greenish sputum, feverishness, and worsening dyspnea on exertion supports this assessment. Given her complex medical history and the potential for severe complications, further diagnostic evaluation is warranted.
+
+Plan  
+The patient is being evaluated in the emergency department. The plan includes obtaining a chest X-ray, sputum culture, and a rapid antigen test for SARS-CoV-2. Blood work, including a complete blood count, metabolic panel, and inflammatory markers, will be obtained. The patient will be started on nebulized bronchodilators and possibly antibiotics if an infectious etiology is confirmed. Oxygen therapy and close monitoring of respiratory status are planned. The patient will be admitted for observation and further management if her condition does not improve with initial interventions. Follow-up with a pulmonologist is recommended for continued management of COPD and evaluation of potential pneumonia.

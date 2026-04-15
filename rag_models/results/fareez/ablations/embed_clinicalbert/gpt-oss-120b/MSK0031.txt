@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:49:00
+Time: 5.36s
+Tokens: 10,381 in / 1,938 out
+============================================================
+
+Patient Information  
+Name: Albert Turner DOB: 28 September 1931 Age: 94 years Sex: Male MRN: 3055 Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+
+Chief Complaint  
+Right hip pain after a fall on the stairs, two hours ago.  
+
+History of Present Illness  
+The patient was brought to the emergency department after falling down the last few steps of a staircase approximately two hours prior to presentation. He reports missing a step and slipping, landing on his right side with direct impact to the right hip and groin region. He denied any loss of consciousness, dizziness prior to the fall, or a head strike. Immediately after the fall he was unable to stand or bear weight on the right lower extremity. He describes the pain as severe, rating it a 10/10, with a sharp quality when weight is placed on the hip and a constant achy sensation at rest. He notes swelling, mild redness, warmth, and bruising over the right hip and groin, as well as an apparent outward rotation (external rotation) of the right lower extremity. He is unable to perform active hip flexion, extension, abduction, or adduction due to pain. He felt slightly dizzy after the ambulance arrival, which he attributes to the intensity of the pain. He denies numbness, tingling, headache, confusion, memory loss, fever, chills, cough, shortness of breath, chest pain, palpitations, changes in bowel or urinary habits, or any recent infections. This is his first fall.  
+
+Review of Systems  
+Constitutional: Denies fever, chills, recent weight loss.  
+Neurologic: No numbness, tingling, or weakness reported. Slight post‑incident dizziness noted.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or bowel habit changes.  
+Genitourinary: No dysuria, hematuria, or urinary frequency changes.  
+Musculoskeletal: Severe right hip pain with swelling; no other joint pain.  
+Skin: Mild redness and bruising over right hip; no rashes.  
+Psychiatric: No reported anxiety, depression, or suicidal ideation.  
+
+Past Medical History  
+- Essential hypertension (treated)  
+- Osteoarthritis (hand)  
+- Chronic kidney disease (stage 3) and history of renal transplant (status unknown)  
+- History of coronary artery disease with prior coronary artery bypass grafting  
+- Ischemic heart disease  
+- Anemia (chronic)  
+- Prior seizure disorder (historical)  
+
+Surgical History  
+- Coronary artery bypass grafting (date not specified)  
+- Renal transplant (historical)  
+
+Allergies  
+No known drug allergies reported.  
+
+Medications (per patient report and current medication list)  
+- Ramipril (angiotensin‑converting enzyme inhibitor) – dose not specified  
+- Vitamin D, calcium supplement, multivitamin – over‑the‑counter  
+- Lisinopril, amlodipine, hydrochlorothiazide, metoprolol succinate, nitroglycerin spray (listed in the record)  
+- Ibuprofen 200 mg oral tablet (historical)  
+- Naproxen sodium 220 mg oral tablet (active)  
+- Acetaminophen/oxycodone tablets (historical)  
+- Other chronic medications (tacrolimus, epoetin alfa) listed in the record but no current dosing details.  
+
+Family History  
+Father died of myocardial infarction in his 60s. Mother had non‑melanoma skin cancers treated with topical therapy. No other significant familial illnesses reported.  
+
+Social History  
+Lives with husband in a small apartment. No tobacco use, never smoked. Consumes approximately one glass of wine every other day. No recreational drug use. No recent travel. No known sick contacts.  
+
+Physical Examination  
+General: Alert, cooperative, in acute distress due to right hip pain.  
+Vital Signs: No current vital signs recorded; prior vitals unavailable.  
+Extremities: Right hip demonstrates swelling, mild erythema, increased warmth compared to the left, and visible bruising. The right lower extremity appears externally rotated. The patient is unable to stand from a seated position without severe pain and requires support on the left side. Active range of motion of the right hip is markedly limited by pain; passive movements are also severely limited. No gross deformity noted beyond external rotation. No calf tenderness or signs of distal neurovascular compromise.  
+Neurovascular: Distal pulses palpable; sensation intact to light touch in the right lower extremity.  
+Cardiovascular, Respiratory, Abdomen, Skin (other sites), Neurologic (cranial) – No abnormal findings reported.  
+
+Laboratory Data (most recent values on record)  
+- Hemoglobin: 16.7 g/dL  
+- Hematocrit/Red cell indices within normal limits (MCV 93 fL, MCHC 33 g/dL)  
+- White blood cell count: 10.1 ×10³/µL  
+- Platelets: 199 ×10³/µL  
+- Electrolytes: Sodium 138 mmol/L, Chloride 111 mmol/L, Glucose 74 mg/dL, Creatinine 1.01 mg/dL (reflecting baseline renal function)  
+- Urinalysis: Negative for leukocyte esterase, nitrite, ketones, glucose; pH 7.9  
+
+Imaging  
+No imaging performed at the time of this documentation. Standard of care will include an anteroposterior and lateral radiograph of the pelvis and right hip to confirm fracture type and displacement.  
+
+Assessment  
+1. Acute right hip fracture (most likely intertrochanteric or femoral neck) secondary to a mechanical fall, with inability to weight‑bear and severe pain.  
+2. Osteoarthritis of the hand – stable.  
+3. Hypertension, currently on ACE‑inhibitor therapy.  
+4. Chronic kidney disease stage 3, renal transplant history – requires careful medication selection.  
+5. Ischemic heart disease with prior CABG – cardiac risk assessment pending.  
+6. Anemia, chronic, stable.  
+
+Plan  
+**Immediate Management**  
+- Provide analgesia: Initiate intravenous acetaminophen 1 g every 6 hours; consider low‑dose IV morphine titrated to effect given severe pain, monitoring for respiratory depression. NSAIDs (e.g., ibuprofen) should be used cautiously because of CKD.  
+- Apply cold packs to the right hip intermittently for swelling.  
+- Maintain non‑weight‑bearing status on the right lower extremity; use a walker or assistive device as tolerated for brief transfers.  
+
+**Diagnostic Work‑up**  
+- Obtain urgent plain radiographs of the pelvis and right hip (AP and lateral views).  
+- If radiographs are inconclusive, proceed with CT of the hip to delineate fracture pattern.  
+- Basic metabolic panel and complete blood count already available; repeat if surgical planning warrants.  
+
+**Consultations**  
+- Orthopedic surgery: urgent evaluation for possible surgical fixation versus hemi‑ or total hip arthroplasty based on fracture pattern, bone quality, and functional status.  
+- Anesthesia pre‑operative assessment given cardiac history.  
+- Physical therapy: early bedside mobility and postoperative rehabilitation planning.  
+
+**Medical Management**  
+- Continue antihypertensive regimen; hold ACE‑inhibitor on the day of surgery per anesthesia protocol.  
+- Review renal function prior to any nephrotoxic medication.  
+- Continue vitamin D, calcium, and multivitamin supplementation.  
+- DVT prophylaxis: initiate low‑molecular‑weight heparin subcutaneously once postoperative bleeding risk is assessed.  
+
+**Disposition**  
+- Admit to orthopedic floor for pain control, further evaluation, and surgical planning.  
+
+**Patient Education & Discharge Planning**  
+- Discuss the nature of the fracture, need for surgery, and expected postoperative course.  
+- Emphasize strict non‑weight‑bearing precautions until orthopedic clearance.  
+- Counsel on fall‑prevention strategies at home (removing loose rugs, adequate lighting, assistive devices).  
+- Provide contact information for orthopedic follow‑up and instructions to return to the emergency department for any worsening pain, new numbness, swelling, fever, or shortness of breath.  
+
+**Follow‑up**  
+- Orthopedic surgery clinic within 48 hours post‑admission or earlier if surgery is scheduled.  
+- Primary care follow‑up within 1–2 weeks after discharge to reassess blood pressure, renal function, and overall recovery.  
+
+No information available for any additional imaging studies, operative reports, or discharge instructions at this time.

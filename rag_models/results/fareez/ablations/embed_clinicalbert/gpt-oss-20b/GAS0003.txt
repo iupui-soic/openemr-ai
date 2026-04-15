@@ -1,0 +1,70 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:55:34
+Time: 3.13s
+Tokens: 18,410 in / 1,057 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: 1946‑11‑05  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with right upper quadrant abdominal pain that has been present for the past eight hours.  
+
+History of Present Illness  
+Ali reports a sudden onset of aching pain located in the right upper portion of the abdomen. The pain began approximately eight hours ago while he was preparing to go to sleep. Initially the discomfort was intermittent and resolved after a short period, but for the last five to six hours it has become constant and persistent. The patient rates the pain at an 8 out of 10 on a pain scale. He notes that eating, particularly fatty foods such as burgers or fries, tends to aggravate the discomfort, although it is not completely relieved by food intake. There is no radiation of the pain to other areas. He has not experienced vomiting, though he reports mild nausea. He denies fever, chills, sweating, changes in bowel movements (no constipation or diarrhea), blood in the stool, or urinary symptoms. He has not lost weight, and his appetite has decreased due to the pain.  
+
+Review of Systems  
+Constitutional: mild fatigue, no fever, chills, or night sweats.  
+Respiratory: denies cough, wheezing, or shortness of breath.  
+Cardiovascular: denies chest pain or palpitations.  
+Gastrointestinal: right upper abdominal pain, nausea, no vomiting, no diarrhea or constipation, no melena or hematochezia, no changes in appetite.  
+Genitourinary: denies dysuria, hematuria, or frequency changes.  
+Skin and Mucous Membranes: no rash, jaundice, or other skin changes.  
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with metformin; chronic kidney disease stage 3; essential hypertension; gastroesophageal reflux disease; chronic pain; metabolic syndrome; chronic migraine without aura; obesity (BMI 27.9).  
+
+Past Surgical History  
+Wisdom teeth removal in adolescence. No abdominal or other relevant surgeries.  
+
+Medications  
+Metformin (dose not specified), lisinopril 10 mg daily. No other current prescriptions noted.  
+
+Allergies  
+No known drug allergies reported.  
+
+Social History  
+The patient lives alone in an apartment. He exercises regularly, typically running outdoors during mild weather. He drinks wine socially, averaging one to two glasses per day. He does not smoke cigarettes and denies recreational drug use. He is currently unemployed following job loss due to COVID‑19.  
+
+Family History  
+Father had a myocardial infarction in his sixties. No known family history of cancer, inflammatory bowel disease, or other significant illnesses.  
+
+Physical Examination  
+No vital signs or physical exam findings were documented in the encounter.  
+
+Laboratory Results  
+Creatinine: 1.97 mg/dL (elevated).  
+Glomerular filtration rate: 36.9 mL/min/1.73 m² (reduced).  
+Urine protein: 214.8 mg/dL (significant proteinuria).  
+Urine specific gravity: 1.038.  
+Other laboratory values (calcium, chloride, sodium, etc.) were within laboratory reference ranges or not clinically relevant to the current presentation.  
+
+Assessment  
+The primary concern is acute right upper quadrant abdominal pain of uncertain etiology, with possible gallbladder pathology (cholelithiasis, cholecystitis) or pancreatitis, particularly given the history of post‑prandial pain after fatty meals. Differential diagnoses include hepatic or biliary disease, peptic ulcer disease, and less likely abdominal aortic aneurysm given the localized nature of the pain. The patient’s comorbidities of diabetes and chronic kidney disease may increase the risk of gallstone formation and complicate potential interventions.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, or other biliary abnormalities.  
+2. Obtain serum lipase and amylase to assess for pancreatitis.  
+3. Repeat complete metabolic panel to monitor renal function and electrolytes given the patient’s chronic kidney disease.  
+4. Provide analgesia with acetaminophen, avoiding NSAIDs due to potential nephrotoxicity.  
+5. Advise the patient to avoid fatty foods, maintain adequate hydration, and monitor for worsening symptoms such as fever, vomiting, or increasing pain.  
+6. If the ultrasound or labs suggest gallbladder disease, refer to a gastroenterologist or general surgeon for further evaluation and possible cholecystectomy.  
+7. Follow up in clinic within 48–72 hours or sooner if symptoms worsen or if new signs develop.  
+8. Educate the patient on warning signs that warrant immediate medical attention: severe abdominal pain, persistent vomiting, fever, or changes in mental status.  
+
+Discharge instructions and follow‑up recommendations are as outlined above.

@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:51:01
+Time: 4.73s
+Tokens: 6,516 in / 1,207 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt  
+Date of Birth: September 27, 1965 (Age 60)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Medical Record Number: 103  
+
+Chief Complaint  
+Dry cough of three days’ duration associated with feverish sensations, chills, night sweats, and sleep disruption.
+
+History of Present Illness  
+The patient reports the onset of a persistent, non‑productive cough three days ago. The cough has been constant throughout the day and has progressively worsened, now accompanied by a sensation of heat or fever that began today. She has not measured her temperature. She denies any sputum production, hemoptysis, shortness of breath, wheezing, chest pain, or recent exposure to cold air, smoke, dust, or pets. Over‑the‑counter cough syrup has provided no relief. The cough interferes with sleep, leaving her feeling fatigued and slightly headache‑prone. She also notes mild body and muscle aches, a few chills last night, and a brief episode of night sweats. She has no nasal congestion, sore throat, dysphagia, or loss of taste or smell. There are no gastrointestinal symptoms such as nausea, vomiting, diarrhea, or abdominal pain. She denies any recent weight loss.
+
+Review of Systems  
+Constitutional: Feverish sensation, chills, night sweats, fatigue, mild headache, body aches.  
+Respiratory: Dry cough, no sputum, no hemoptysis, no dyspnea, no wheezes, no chest pain.  
+Cardiovascular: No palpitations, no orthostatic symptoms, no syncope.  
+Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain, or changes in appetite other than difficulty eating due to cough.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No dizziness, fainting, or focal deficits.  
+ENT: No nasal discharge, sore throat, ear or eye pain, or visual changes.  
+Skin: No rashes or lesions.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Hypothyroidism (treated with levothyroxine)  
+- Essential hypertension  
+- Chronic congestive heart failure  
+- Chronic kidney disease stage 2 (diabetic kidney disease)  
+- Type 2 diabetes mellitus with microalbuminuria  
+- Obesity (BMI 30.1)  
+- Chronic low back and neck pain  
+
+Surgical History  
+- Appendectomy performed during teenage years, without complications.  
+
+Social History  
+The patient lives in a townhouse with her husband and two teenage children. She works from home as a marketing professional. She reports no tobacco use. Alcohol consumption is limited to approximately one glass of wine every three to four days. She occasionally uses marijuana but not on a regular basis; no other recreational drug use. Exercise is reported as none. She reports recent relocation to the current residence. No known drug allergies.
+
+Family History  
+- Sister: recent myocardial infarction.  
+- Parents: deceased of old age, no known cardiac disease.  
+- No family history of cancer, diabetes, or chronic lung disease reported.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+- Levothyroxine (Synthroid) – dose not specified  
+- Amlodipine 2.5 mg daily for hypertension  
+- Naproxen sodium 220 mg as needed for pain  
+- Multivitamin daily  
+
+Vital Signs  
+No current vital signs documented for this encounter.
+
+Physical Examination  
+No physical examination findings recorded at the time of this visit.
+
+Laboratory and Imaging Studies  
+No laboratory or imaging results are currently available. The provider indicated intent to obtain a nasopharyngeal PCR test for SARS‑CoV‑2 and a chest radiograph, as well as routine blood work.
+
+Assessment  
+1. Acute bronchitis, likely viral in etiology.  
+2. Rule‑out COVID‑19 infection (given cough, feverish sensation, and exposure to a potentially ill household contact).  
+3. Chronic medical conditions: hypothyroidism, hypertension, chronic heart failure, chronic kidney disease stage 2, type 2 diabetes mellitus, obesity.  
+
+Plan  
+- Diagnostic testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR, a chest X‑ray, and a complete blood count with differential, basic metabolic panel, and C‑reactive protein to assess for bacterial superinfection.  
+- Symptomatic management: Advise increased fluid intake, humidified air, and use of an over‑the‑counter antitussive (e.g., dextromethorphan) as needed. Acetaminophen may be used for fever or headache, provided liver function is acceptable.  
+- Continue current chronic medications, including levothyroxine and amlodipine. Hold naproxen if renal function worsens or if there is concern for gastrointestinal irritation.  
+- Education: Counsel on self‑isolation pending COVID‑19 test results, hand hygiene, and mask use around household members, especially the husband who is symptomatic with vomiting. Instruct the patient to monitor temperature at home and to seek urgent care if she develops shortness of breath, high‑grade fever, chest pain, or worsening fatigue.  
+- Follow‑up: Telephone follow‑up in 48–72 hours to review test results and clinical status, or sooner if symptoms deteriorate. Arrange in‑person evaluation if chest X‑ray shows concerning findings or if bacterial infection is suspected.  
+
+The patient verbalized understanding of the plan and agreed to proceed with the recommended testing and supportive care.

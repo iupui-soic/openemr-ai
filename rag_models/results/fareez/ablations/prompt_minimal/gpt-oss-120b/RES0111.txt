@@ -1,0 +1,181 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:22:08
+Time: 7.03s
+Tokens: 9,553 in / 2,391 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Paucek  
+- **Medical Record #:** 84  
+- **DOB:** 09‑14‑1950 (Age 73)  
+- **Sex:** Male  
+- **Address:** 318 Fay Ferry, Boston, MA 02116  
+- **Encounter Date/Time:** 2024‑07‑25 06:19 – 06:49 (Office visit)  
+- **Attending Provider:** Dr. External Provider  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+- “Sore throat for the past 4 days, now feeling feverish.”
+
+### History of Present Illness (HPI)  
+- **Onset & Duration:** Sore throat began ≈ 4 days ago; worsening over time.  
+- **Location/Quality:** Throat appears “red and swollen” on visual inspection; pain described as “awful” and limits ingestion of solid foods (can still swallow liquids).  
+- **Associated Symptoms (positive):** Subjective feeling of fever (“really hot”). Mild hoarseness reported (likely secondary to reduced voice use).  
+- **Associated Symptoms (negative):** No cough, rhinorrhea, nasal congestion, sinus pressure, headache, neck stiffness, dysphagia with liquids, sensation of food “stuck,” shortness of breath, chest pain, abdominal pain, nausea/vomiting, diarrhea, constipation, fatigue, weight loss, confusion, visual or auditory changes, palpitations, dizziness, or myalgias.  
+- **Recent Exposures:** No known recent travel; hybrid in‑person/virtual school attendance; occasional mask removal for water. Denies known contact with a COVID‑19 case.  
+- **Self‑Monitoring:** No temperature taken; patient reports feeling “hot.”  
+
+### Review of Systems (pertinent negatives)  
+- **Constitutional:** No chills, rigors, night sweats, or weight change.  
+- **ENT:** No nasal discharge, sinus pain, ear pain, or hearing loss.  
+- **Respiratory:** No cough, dyspnea, wheeze.  
+- **Cardiovascular:** No chest pain, palpitations, or edema.  
+- **Gastrointestinal:** No nausea, vomiting, abdominal pain, diarrhea, constipation.  
+- **Genitourinary:** No dysuria or urinary frequency.  
+- **Neurologic:** No headache, dizziness, confusion, or focal deficits.  
+- **Psychiatric:** No anxiety, depression, or suicidal ideation.  
+
+### Past Medical History (from EMR)  
+- Essential hypertension  
+- Type 2 diabetes mellitus  
+- Hypertriglyceridemia & metabolic syndrome  
+- Obesity (BMI ≈ 30)  
+- Chronic kidney disease (stage 2) with diabetic nephropathy  
+- Ischemic heart disease (stable)  
+- Anemia (chronic)  
+- History of intimate‑partner abuse (resolved)  
+
+### Surgical History  
+- Appendectomy (age 13)  
+
+### Medications (home)  
+- Lisinopril 10 mg PO daily  
+- Metoprolol succinate 100 mg ER PO daily  
+- Metformin 500 mg ER PO daily  
+- Insulin (human NPH 70 U + regular 30 U) as prescribed  
+- Simvastatin 20 mg PO nightly  
+- Amlodipine 2.5 mg PO daily  
+- Clopidogrel 75 mg PO daily  
+- Nitroglycerin 0.4 mg SL spray PRN  
+- Multivitamin (OTC)  
+
+### Allergies  
+- No drug allergies reported.
+
+### Social History  
+- Lives with parents and two siblings; feels safe at home.  
+- Non‑smoker, no alcohol use, no recreational drug use.  
+- No sexual activity currently; no plans for near‑future activity.  
+- Not currently employed; retired.  
+- Up‑to‑date on most vaccines except:  
+  - No recent influenza vaccine (2024 season)  
+  - Not yet received HPV vaccine (age‑appropriate counseling provided).  
+
+### Family History  
+- No known hereditary conditions; father possibly with hypertension; otherwise non‑contributory.
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (documented at visit)  
+- **Heart Rate:** 97 bpm  
+- **Respiratory Rate:** 15 /min  
+- **Temperature:** Not recorded (patient felt “hot”; oral temp pending)  
+- **Blood Pressure:** Not recorded in this encounter (last EMR entry unavailable)  
+- **SpO₂:** Not recorded  
+- **Weight/Height:** Height 177.7 cm; weight not documented; BMI from chart 30.15 (obese).  
+
+### Physical Examination  
+
+| System | Findings |
+|--------|----------|
+| **General** | Alert, oriented, appears mildly uncomfortable due to throat pain. |
+| **HEENT** | Oropharynx: erythematous, edematous posterior pharynx with visible swelling; no exudates noted on inspection (documented by provider). Tonsils not markedly enlarged; no uvular deviation. No nasal discharge, no sinus tenderness. |
+| **Neck** | supple, no lymphadenopathy, no meningeal signs. |
+| **Respiratory** | Clear to auscultation bilaterally; no wheezes or rales. |
+| **Cardiovascular** | Regular rate and rhythm; no murmurs, rubs, or gallops. |
+| **Abdomen** | Soft, non‑tender, no organomegaly. |
+| **Extremities** | No edema; peripheral pulses intact. |
+| **Skin** | No rashes or lesions. |
+| **Neurologic** | Cranial nerves II‑XII grossly intact; no focal deficits. |
+
+### Point‑of‑Care Testing (performed)  
+- Rapid antigen detection test for Group A Streptococcus (sample collected – pending).  
+- Rapid SARS‑CoV‑2 antigen test (sample collected – pending).  
+
+### Laboratory Data (most recent, unrelated to current visit)  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| Potassium (serum) | 5.02 mmol/L | – |
+| Calcium (serum) | 9.82 mg/dL | – |
+| HDL‑cholesterol | 31.9 mg/dL | – |
+| Triglycerides | 102 mg/dL | – |
+| BUN | 8.27 mg/dL | – |
+| CO₂ (total) | 24.05 mmol/L | – |
+| Platelet count | 435 ×10³/µL | – |
+| MCV | 82.8 fL | – |
+| PHQ‑2 score | 1/6 (negative screen) | – |
+| Morse Fall Scale | 108 (moderate risk) | – |
+
+*All values are stable and consistent with chronic disease management.*
+
+---
+
+## ASSESSMENT  
+
+1. **Acute Pharyngitis – likely viral (primary)**  
+   - 4‑day history of sore throat with erythema, no exudate, absence of cough or nasal symptoms, and low‑grade systemic signs.  
+2. **Rule‑out Group A Streptococcal Pharyngitis** – pending rapid strep result.  
+3. **Rule‑out SARS‑CoV‑2 infection** – pending rapid COVID‑19 test; symptom overlap warrants testing.  
+4. **Chronic Conditions (stable)**  
+   - Hypertension, Type 2 diabetes, CKD‑2, ischemic heart disease, hypertriglyceridemia, obesity, anemia.  
+5. **Preventive Care Gaps**  
+   - No influenza vaccine this season; HPV vaccine not initiated (age 73 – counseling on limited benefit).  
+
+---
+
+## PLAN  
+
+### Diagnostic  
+- **Rapid Strep Test:** Perform now; if positive, initiate antibiotics per CDC guidelines.  
+- **Rapid COVID‑19 Antigen Test:** Perform now; if positive, initiate isolation per local public‑health protocol and consider treatment eligibility (e.g., nirmatrelvir‑ritonavir if high‑risk).  
+
+### Therapeutic  
+- **If Rapid Strep Positive:**  
+  - *Penicillin V 500 mg PO QID for 10 days* **or** *Amoxicillin‑Clavulanate 875/125 mg PO BID for 10 days* (patient already has a historical prescription for amoxicillin‑clavulanate; verify allergy status).  
+- **If Strep Negative (presumed viral):**  
+  - Symptomatic care:  
+    - Acetaminophen 500 mg PO q6h PRN for fever/pain (max 3 g/day).  
+    - Warm saline gargles, honey‑lemon tea (if no honey allergy).  
+    - Adequate hydration and soft diet.  
+- **COVID‑19 Positive:**  
+  - Counsel on 5‑day isolation, monitor symptoms, and consider antiviral therapy (nirmatrelvir‑ritonavir) given age > 65 and comorbidities (HTN, diabetes, CKD).  
+- **Vaccination Recommendations:**  
+  - Offer in‑clinic influenza vaccine (2024‑2025 formulation).  
+  - Discuss limited utility of HPV vaccine at this age; document patient decision.  
+
+### Chronic Disease Management  
+- Review home BP and glucose logs at next visit; adjust antihypertensive or diabetic therapy if needed.  
+- Continue current regimen of lisinopril, metoprolol, metformin, insulin, simvastatin, amlodipine, clopidogrel.  
+- Encourage weight‑management measures (dietary counseling, low‑impact exercise) consistent with CKD stage 2.  
+
+### Follow‑up & Return Precautions  
+- **Result Review:** Call patient within 24 hours with rapid test results.  
+- **In‑Person Follow‑up:** If symptoms persist >7 days, develop new cough, dyspnea, rash, or worsening fever → return sooner.  
+- **Routine Follow‑up:** Schedule primary‑care visit in 4–6 weeks for chronic disease review and influenza vaccination.  
+
+### Patient Education  
+- Reviewed signs of bacterial pharyngitis (high fever, exudates, tender cervical nodes) and when to seek care.  
+- Instructed on proper hand hygiene, mask use when around others, and self‑isolation until COVID test result is known and fever resolves ≥24 h.  
+- Provided written handout on “Managing a Sore Throat at Home.”  
+
+---  
+
+**Provider Signature:** _______________________  **Date:** 2024‑07‑25   (Electronic)

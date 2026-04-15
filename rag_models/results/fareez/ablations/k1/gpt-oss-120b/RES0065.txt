@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:21:58
+Time: 5.38s
+Tokens: 10,315 in / 1,662 out
+============================================================
+
+Patient Information:  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint:  
+Sore throat for three days with recent onset of feverish feeling.
+
+History of Present Illness:  
+Ms. Schroeder reports the development of a sore throat three days ago. The throat discomfort has been constant and is described as painful, especially with swallowing solid foods and, at times, with cold liquids. She notes that the sore throat has been worsening rather than improving. Approximately one day ago she began to feel feverish, accompanied by chills, although she has not taken an objective temperature measurement. She reports associated fatigue and a sensation of being “really tired.” She denies cough, shortness of breath, chest pain, palpitations, headache, nausea, vomiting, diarrhea, constipation, urinary changes, night sweats, or skin rash. She has felt some palpable lymph nodes in the neck but denies generalized swelling. Over-the-counter lozenges have provided only temporary relief. She has not been exposed to anyone known to be ill and has not traveled recently. She is concerned about the possibility of COVID‑19 infection.
+
+Review of Systems:  
+- Constitutional: Feverish feeling, chills, fatigue; no weight loss reported.  
+- ENT: Sore throat, odynophagia, cervical lymphadenopathy; no rhinorrhea.  
+- Respiratory: No cough, dyspnea, or wheezing.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria or change in urinary frequency.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Dermatologic: No rash or skin changes.  
+- Hematologic/Lymphatic: Palpable cervical lymph nodes; no other lymphadenopathy.  
+
+Allergies:  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History:  
+- Crohn’s disease, diagnosed last year, currently on sulfasalazine (patient reports).  
+- End‑stage renal disease with prior kidney transplant (history of transplant noted).  
+- Chronic kidney disease stages 1‑4 (historical).  
+- Essential hypertension.  
+- Prediabetes.  
+- Anemia.  
+- Ischemic heart disease with coronary artery disease findings.  
+- Metabolic syndrome.  
+- Prior colonoscopy with day‑hospitalization last year.  
+
+Surgical History:  
+- Colonoscopy with brief hospitalization (last year).  
+- No other surgical procedures documented.
+
+Social History:  
+- Lives in an apartment with parents and a younger brother.  
+- No current tobacco use.  
+- No regular alcohol consumption; occasional past use but discontinued due to Crohn’s disease.  
+- No illicit drug use.  
+- Engages in swimming for exercise; otherwise reports no structured exercise program.  
+- No occupational exposures noted.
+
+Family History:  
+- Positive for inflammatory bowel disease (both Crohn’s disease and ulcerative colitis) in family members.  
+- Positive for asthma and eczema.  
+- No documented family history of cardiovascular disease, diabetes, or malignancy.
+
+Current Medications (as documented in the electronic record and supplemented by patient report):  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression for renal transplant).  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate extended‑release 100 mg daily.  
+- Nitroglycerin spray as needed.  
+- Sulfasalazine (dose not specified) for Crohn’s disease.  
+- Other chronic medications listed in the EMR (including insulin, epogen, etc.) are continued per existing regimen.
+
+Objective:  
+Vital Signs – No current measurements recorded in this encounter.  
+Physical Examination – No examination findings documented; therefore, “No information available.”  
+Laboratory Data (most recent):  
+- Hemoglobin 15.94 g/dL (within normal limits).  
+- Leukocyte count 4.7 ×10³/µL (low‑normal).  
+- Creatinine 0.95 mg/dL (stable for transplant recipient).  
+- BUN 9.27 mg/dL, Sodium 137 mmol/L, Potassium 4.63 mmol/L, Chloride 109.8 mmol/L, CO₂ 28 mmol/L.  
+- Glucose 64.6 mg/dL.  
+- No urine leukocyte esterase, nitrites, or ketones detected.  
+- PH of urine 5.2.  
+No acute infectious panels have been performed yet.
+
+Assessment:  
+1. Acute pharyngitis – most likely viral in etiology given absence of cough, absence of marked leukocytosis, and presence of cervical lymphadenopathy.  
+2. Rule‑out COVID‑19 infection – given current pandemic context and patient’s constitutional symptoms.  
+3. Consider infectious mononucleosis (EBV) – cervical lymphadenopathy and prolonged sore throat warrant serologic testing.  
+4. Immunocompromised host – renal transplant recipient on tacrolimus; infection risk is heightened, so prompt testing is appropriate.  
+5. Chronic conditions – stable Crohn’s disease, hypertension, ischemic heart disease, post‑transplant renal function, prediabetes; all currently managed.
+
+Plan:  
+Diagnostics:  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR (results anticipated within 24‑48 hours).  
+- Order EBV serology (VCA IgM, IgG and EBNA) to evaluate for acute infectious mononucleosis.  
+- Consider rapid streptococcal antigen test or throat culture if symptoms persist beyond 7 days or if bacterial pharyngitis becomes more likely.  
+
+Therapeutic:  
+- Symptomatic treatment with acetaminophen 650 mg PO q6‑8 h PRN for fever or discomfort, not exceeding 3 g per day.  
+- Continue current immunosuppressive regimen (tacrolimus) and Crohn’s therapy (sulfasalazine) unless future test results dictate modification.  
+- Encourage adequate oral hydration and soft, non‑irritating foods; advise use of lozenges or honey‑based throat soothing agents as needed.  
+
+Patient Education & Disposition:  
+- Instruct patient to self‑isolate until COVID‑19 test results are available and to wear a mask when around household members.  
+- Counsel on signs of worsening infection (high fever >38.5 °C, increasing throat pain, difficulty breathing, new rash, or neck swelling) that would prompt immediate medical attention.  
+- Advise to monitor temperature at home, if possible, and keep a log of symptoms.  
+- Discuss the importance of hand hygiene and avoiding sharing utensils or drinks.  
+
+Follow‑up:  
+- Telephone or tele‑medicine follow‑up in 48 hours to review COVID‑19 and EBV test results.  
+- In‑person visit sooner if symptoms significantly worsen or if new concerning signs develop.  
+- Routine follow‑up for chronic conditions to continue as scheduled with transplant and gastroenterology services.  
+
+Disposition:  
+Patient was discharged home with the above plan, provided verbal and written instructions, and understood the need for isolation and follow‑up. No immediate red‑flag findings were identified at this visit.

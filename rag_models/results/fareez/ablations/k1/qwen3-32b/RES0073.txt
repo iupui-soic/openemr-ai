@@ -1,0 +1,61 @@
+Model: qwen/qwen3-32b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:38:33
+Time: 4.85s
+Tokens: 11,941 in / 1,263 out
+============================================================
+
+Patient Information  
+The patient is a 40-year-old male with a history of dyslipidemia, managed with a statin medication. He is employed part-time at a grocery store and resides alone in an apartment just outside of London. He denies any known allergies to medications or environmental allergens. The patient has a history of tobacco use but reports that he quit several years ago. He consumes alcohol in moderation, approximately a glass of red wine a couple of times per week, and admits to occasional recreational cannabis use. There is no family history of cancer, heart disease, or lung disease. The patient has no known chronic conditions affecting his eyes, ears, nose, or throat, and no prior surgeries or hospitalizations are reported.
+
+Chief Complaint  
+The patient presents with a five-day history of nasal congestion, facial pressure, and nasal discharge, with associated symptoms of postnasal drip and diminished sense of smell. He reports that these symptoms began with a runny nose approximately eight days ago, improved briefly, and then worsened over the past five days. He also describes bilateral nasal obstruction, with alternating nostril patency, and facial pain localized to the cheeks and jaw area. He denies fever, chest pain, wheezing, or shortness of breath.
+
+History of Present Illness  
+The patient reports that his symptoms began approximately eight days ago with a runny nose, which has since progressed to significant nasal congestion and facial pressure. Over the past five days, he has experienced increased nasal discharge, described as clear or slightly white, and postnasal drip. He notes that the congestion is severe enough to cause him to breathe through his mouth at night. He has also experienced a diminished sense of smell for the past three days. The patient reports facial pain localized to the cheeks and jaw, but denies pain within the mouth or dental involvement. He denies fever, chills, cough, sore throat, wheezing, shortness of breath, chest pain, lightheadedness, nausea, vomiting, abdominal pain, diarrhea, or any systemic symptoms such as fatigue or weight loss. The patient also notes mild eye redness and itchiness, but no discharge from the eyes. He reports that a similar episode occurred two years ago, which resolved spontaneously, but this current episode is more severe. The patient has not been in contact with anyone who is ill and has not traveled outside of his local area.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+Genitourinary: No urinary symptoms.  
+Neurological: No headaches, dizziness, or syncope.  
+Musculoskeletal: No muscle aches, joint pain, or weakness.  
+Dermatological: No rashes or skin changes.  
+Psychiatric: No depression or anxiety symptoms reported.  
+Endocrine: No changes in appetite or weight.  
+Hematologic: No bruising or bleeding.  
+Immunologic: No recent infections or immune-related symptoms.  
+Ophthalmologic: Mild eye redness and itchiness reported.  
+Otolaryngologic: Nasal congestion, postnasal drip, facial pressure, and diminished sense of smell. No sore throat.  
+Dermatologic: No skin changes.  
+Other: No additional symptoms reported.
+
+Allergies  
+No known drug or environmental allergies.
+
+Past Medical History  
+The patient has a history of dyslipidemia, managed with a statin medication. No other chronic medical conditions are reported. The patient has a history of impacted molars and chronic intractable migraines. He has a history of essential hypertension, chronic kidney disease, and a history of renal transplant. He has also had multiple episodes of gingivitis and reports a history of chronic pain and stress. There is no history of sinusitis or other upper respiratory tract infections.
+
+Surgical History  
+No surgeries reported.
+
+Social History  
+The patient is a former smoker, having quit several years ago. He consumes alcohol in moderation and reports occasional recreational cannabis use. He is employed part-time and resides alone in an apartment. The patient lives a sedentary lifestyle and reports no regular exercise.
+
+Family History  
+No family history of cancer, heart disease, or lung disease.
+
+Current Medications  
+The patient is currently taking a statin for dyslipidemia and a multivitamin. No other medications are reported.
+
+Objective  
+Vital signs were not available in the electronic health record. Physical examination findings were not provided in the transcript or OpenEMR extract. Laboratory results included a normal complete blood count with no evidence of infection or anemia. Lipid panel showed elevated total cholesterol and low-density lipoprotein (LDL) levels, consistent with the patient's history of dyslipidemia. No acute abnormalities were noted in the renal or hepatic function tests. No specific imaging studies were performed related to the current presentation.
+
+Assessment  
+The patient presents with symptoms consistent with acute sinusitis, including nasal congestion, postnasal drip, facial pressure, and diminished sense of smell. The presence of a prior improvement followed by a recurrence of symptoms is concerning for a secondary bacterial infection. The patient’s symptoms are localized to the upper respiratory tract, with no evidence of systemic illness or complications. The absence of fever, cough, or wheezing supports a diagnosis of viral or bacterial sinusitis rather than a more severe respiratory infection.
+
+Plan  
+The patient should be monitored for the development of fever or worsening symptoms. If fever develops or symptoms persist beyond 10 days, a trial of antibiotic therapy may be warranted. The patient should be advised to use saline nasal irrigation and over-the-counter decongestants as needed for symptom relief. He should be instructed to monitor his temperature and to follow up if symptoms do not improve or worsen. The patient should also be advised to maintain hydration and rest. No imaging studies or additional laboratory testing are indicated at this time unless symptoms progress. The patient should be advised to avoid exposure to allergens or irritants that may exacerbate symptoms.

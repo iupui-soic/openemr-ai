@@ -1,0 +1,53 @@
+Model: google/medgemma-4b-it
+Patient: RES0193
+Detected Disease: Asthma
+Generated: 2026-04-14 06:28:26
+Time: 26.92s
+Tokens: 6,347 in / 480 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abby Stroman
+DOB: 2001-10-18
+Sex: Female
+Unit Number: 148
+
+Chief Complaint: Consultation for treatment of cough and wheezing.
+
+History of Present Illness:
+
+The patient presents today with a history of cough and wheezing in her son, who has been experiencing these symptoms for several months. The cough is sometimes worse at night, and the patient reports that her son also experiences wheezing and difficulty breathing during the day, sometimes at school or when visiting friends. The symptoms appear to be triggered by activity, such as exercise or being very active. The patient reports that the cough is dry. She also notes that her son has a history of bronchiolitis as a child. She denies any recent fever, chills, sore throat, runny nose, or other cold-like symptoms. She has not tried any treatments for the symptoms. The patient reports that her son has missed a couple of days of school due to the symptoms. She also mentions that her mother has asthma and uses an inhaler daily. The symptoms are more frequent in the fall. The patient reports that her son sometimes experiences symptoms at his friends' houses, where there is a cat.
+
+Past Medical History:
+
+The patient reports that her son had a history of bronchiolitis as a child. He has no other significant past medical conditions.
+
+Medications:
+
+The patient reports that her son is not currently taking any regular medications.
+
+Allergies:
+
+The patient reports no known allergies.
+
+Family History:
+
+The patient's mother has a history of asthma.
+
+Social History:
+
+The patient reports that there are no smokers in the household.
+
+Physical Exam:
+
+No information available.
+
+Assessment:
+
+The patient is concerned about her son's cough and wheezing, which she attributes to asthma, given his family history.
+
+Plan:
+
+The physician will perform a physical examination, including auscultation of the lungs, to assess for wheezing and other signs of respiratory distress. The physician will also order pulmonary function testing to evaluate lung function. Depending on the results of the physical examination and pulmonary function testing, the physician may consider allergy testing or initiate treatment with a bronchodilator (e.g., albuterol) and/or an inhaled corticosteroid (e.g., budesonide) to manage the symptoms.

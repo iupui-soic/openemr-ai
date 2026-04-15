@@ -1,0 +1,56 @@
+Model: google/medgemma-4b-it
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:59:27
+Time: 40.77s
+Tokens: 15,185 in / 646 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+The patient is Abel Cummerata, a 83-year-old male. His date of birth is March 25, 1917. He is currently residing at 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000.
+
+Chief Complaint:
+
+The patient presents with a cough and shortness of breath.
+
+History of Present Illness:
+
+The patient reports a cough that started approximately three days ago. He also reports shortness of breath, which began within the last day or so, following the onset of the cough. The cough is described as a wet cough, producing yellowish-green phlegm, and he has not noticed any blood in the sputum. He describes the cough sound as hacking. He denies wheezing, but does report some wheezing when he is short of breath. The shortness of breath is described as a severity of 7 out of 10. He reports that the shortness of breath is interfering with his sleep. He denies triggers for his coughing, such as pollen or pets. He denies any chest pain. He denies any heart racing. He denies any issues with bowel movements or stool. He reports abdominal pain. He denies sore throat. He denies loss of taste, but reports a funny smell. He denies a runny nose or blocked nose. He denies any changes in vision or hearing. He denies any discharge or pain in his eyes or ears. He denies any changes in his urine. He states he is otherwise healthy.
+
+Past Medical History:
+
+The patient has a history of atrial fibrillation, which began four years ago. He is currently taking Metoprolol for this condition. He had an inguinal hernia repair 15 years ago and has no complications from that surgery. He is also on a statin and baby aspirin.
+
+Medications:
+
+The patient is currently taking Metoprolol, a statin, and baby aspirin.
+
+Allergies:
+
+The patient reports a sulfa allergy, resulting from an antibiotic reaction years ago.
+
+Immunizations:
+
+The patient is up-to-date on his immunizations, including the Zoster vaccine and the pneumonia vaccine.
+
+Family History:
+
+The patient denies any family history of lung conditions or heart conditions. His aunt had lung cancer, and he states that he does not know of any other cancers in the family.
+
+Social History:
+
+The patient used to smoke a pack of cigarettes a day, but quit five years ago. He occasionally uses CBD edibles.
+
+Physical Exam:
+
+No information available.
+
+Assessment:
+
+The patient presents with a cough and shortness of breath, possibly related to an upper respiratory infection or other respiratory illness. The patient's history of atrial fibrillation and medications should be reviewed.
+
+Plan:
+
+The patient will undergo a swab for PCR testing to rule out COVID-19. The patient is instructed to isolate for 14 days, including his husband, until symptoms resolve. If the PCR test is positive, public health will be notified for contact tracing. If the PCR test is negative, the patient will be followed up with, and antibiotics may be prescribed if symptoms do not improve. The patient's medications will be reviewed and adjusted as needed.

@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:29:30
+Time: 5.13s
+Tokens: 11,124 in / 1,469 out
+============================================================
+
+Patient Information
+Name: Aaron Paucek  
+Date of Birth: 1950-09-14 (recorded in the electronic health record)  
+Sex: Male  
+Address: 318 Fay Ferry, Boston, Massachusetts 02116  
+
+Chief Complaint
+Sore throat lasting four days with associated feeling of fever.
+
+History of Present Illness
+Aaron is a 10th‑grade student who presents with a four‑day history of a sore throat. He reports that the throat pain has not improved and that he feels “really hot,” although he has not measured his temperature. The pain makes it difficult to eat solid foods, but he is able to drink liquids without difficulty. He denies any sensation of food sticking or obstructed swallowing. He notes a mild hoarseness, which he attributes to speaking less because of throat discomfort. He denies a runny nose, cough, shortness of breath, chest pain, headache, confusion, visual or auditory changes, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or recent weight loss. He has not traveled recently and is not aware of any close contact with individuals known to be ill with COVID‑19. He reports that his throat appears markedly swollen and erythematous on visual inspection.
+
+Review of Systems
+Constitutional: Positive for subjective fever, sore throat; negative for chills, weight loss, fatigue.  
+ENT: Positive for sore throat, mild hoarseness, difficulty eating solids; negative for nasal congestion, rhinorrhea, ear pain, sinus pressure.  
+Respiratory: Negative for cough, dyspnea, chest pain.  
+Cardiovascular: Negative for palpitations, chest discomfort.  
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea, constipation.  
+Neurologic: Negative for headache, dizziness, confusion.  
+Psychiatric: Negative for anxiety or depression.  
+Dermatologic: No skin findings reported.  
+Musculoskeletal: No joint or muscle pain reported.  
+Immunologic/Allergic: No known drug or environmental allergies reported.
+
+Past Medical History
+The patient reports no chronic medical conditions. He does not recall any previous diagnoses of hypertension, diabetes, or other illnesses.
+
+Surgical History
+Appendectomy performed at age 13.
+
+Medications
+Only a daily multivitamin supplement. No prescription or over‑the‑counter medications reported.
+
+Allergies
+No known drug or environmental allergies reported.
+
+Family History
+Patient reports no known family history of significant illness; he mentions a possible family history of hypertension but is uncertain.
+
+Social History
+The patient lives with his parents and two siblings. He is a full‑time high‑school student in grade 10. He denies tobacco, alcohol, and recreational drug use. He is not currently sexually active and does not anticipate sexual activity before completing high school. He reports compliance with mask use at school when feasible. No recent travel. No known exposure to COVID‑19. He feels safe at home.
+
+Physical Examination
+General: Alert, cooperative, appears mildly ill‑looking due to throat discomfort.  
+Vital Signs: No temperature recorded; heart rate 97 beats/min (recorded in prior visit), respiratory rate 15/min, blood pressure not documented at this encounter, SpO₂ not documented, weight not documented.  
+HEENT: Oral cavity shows marked erythema and swelling of the oropharynx and tonsillar region; no exudate noted, no uvular deviation. No cervical lymphadenopathy reported. Nasal mucosa clear, no rhinorrhea. No ear abnormalities.  
+Neck: No tracheal deviation, no palpable lymph nodes noted.  
+Lungs: Breath sounds clear bilaterally; no wheezes, rales, or rhonchi.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Abdomen: Soft, non‑tender, no masses.  
+Extremities: No edema.  
+Neurologic: Alert and oriented; cranial nerves intact.  
+
+Laboratory and Diagnostic Tests
+No laboratory results are available at this time. The provider ordered a rapid streptococcal antigen test and a rapid COVID‑19 antigen test to differentiate bacterial from viral etiology and to assess for SARS‑CoV‑2 infection.
+
+Assessment
+1. Acute pharyngitis – most likely viral (e.g., viral upper respiratory infection) versus streptococcal pharyngitis.  
+2. Possible COVID‑19 infection pending test results.  
+3. Rule‑out: infectious mononucleosis, bacterial tonsillitis.  
+
+Plan
+Diagnostics
+- Perform a rapid strep antigen test (throat swab).  
+- Perform a rapid COVID‑19 antigen test (nasopharyngeal swab).  
+
+Medications
+- Acetaminophen 500 mg orally every 6 hours as needed for fever or throat pain, not to exceed 3 g per day.  
+- Encourage adequate hydration and consumption of soft, non‑irritating foods (e.g., soups, yogurt, ice chips).  
+
+Non‑pharmacologic
+- Advise the patient to rest, limit speaking, and avoid irritants such as smoking or vaping (none reported).  
+- Recommend gargling with warm saline solution several times daily if tolerated.  
+
+Infection Control
+- Instruct the patient to self‑isolate at home for 14 days or until COVID‑19 test results return negative and symptoms improve, whichever is longer.  
+- Emphasize hand hygiene, mask use when around others, and cleaning of shared household surfaces.  
+
+Vaccinations
+- Discussed the importance of receiving the seasonal influenza vaccine; patient has not received it this year. Offer vaccination at the next available opportunity.  
+- Discussed HPV vaccination; patient is currently age‑eligible and has not yet received the series. Provide counseling on benefits and arrange referral for vaccination.  
+
+Follow‑up
+- Review rapid test results within 24–48 hours. If the rapid strep test is positive, prescribe a 10‑day course of penicillin V or amoxicillin, unless a contraindication exists.  
+- If COVID‑19 test is positive, follow local public health guidelines for isolation and symptom monitoring; arrange telehealth follow‑up in 3 days.  
+- If both tests are negative and symptoms persist beyond 7 days or worsen (e.g., development of fever >38.5 °C, new cough, dyspnea, or cervical adenopathy), schedule an in‑person evaluation for possible further work‑up (e.g., CBC, monospot test).  
+
+Patient Education
+- Reviewed signs of worsening infection that would necessitate urgent care (e.g., difficulty breathing, inability to swallow fluids, high fever, severe neck swelling).  
+- Provided printed hand‑out on home care for sore throat and importance of completing any prescribed antibiotic course if indicated.  
+
+Signature
+Dr. External Provider, MD  
+Date of Service: 2024‑07‑25

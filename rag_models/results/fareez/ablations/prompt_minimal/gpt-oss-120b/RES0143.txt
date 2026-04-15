@@ -1,0 +1,124 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:22:13
+Time: 5.44s
+Tokens: 6,196 in / 1,722 out
+============================================================
+
+**Patient Information**  
+**Name:** Aaron McClure **DOB:** 1934‑04‑26 (Age 92) **Sex:** Male **MRN:** 77 **Location:** Springfield, MA  
+
+---
+
+### Subjective  
+
+**Chief Complaint:**  
+“Cough and runny nose for the past two weeks.”
+
+**History of Present Illness (HPI):**  
+Aaron reports a **dry, non‑productive cough** that began **≈ 2 weeks ago**. The cough was most severe during the first week but has modestly improved; however, it persists beyond what he has experienced with previous colds. Approximately **one week ago** he developed a **clear, watery rhinorrhea** that has been increasing over the last few days. He denies any sputum production, hemoptysis, or purulent nasal discharge.  
+
+He notes **occasional congestion** with a transient reduction in his sense of smell while congested, but **taste remains normal**. He has **not** experienced headache, sore throat, dysphagia, fever > 38 °C, chills (aside from two brief chilly nights last week), night sweats, weight loss, chest pain, dyspnea, palpitations, abdominal pain, nausea/vomiting, diarrhea, constipation, myalgias, or neurologic symptoms (numbness/tingling).  
+
+He reports **no recent travel**, no known sick contacts except his mother, who had “sniffles” last week but was not tested for COVID‑19. He lives with his parents while completing virtual university coursework.
+
+**Review of Systems (pertinent positives/negatives):**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | – | Fever, chills (except brief episodes), night sweats, weight loss |
+| ENT | Dry cough, clear rhinorrhea, congestion, temporary hyposmia | Sore throat, ear pain, sinus pain, nasal congestion with purulent discharge |
+| Respiratory | – | Dyspnea, wheezing, chest pain |
+| Cardiovascular | – | Palpitations, edema |
+| Gastrointestinal | – | Nausea, vomiting, diarrhea, abdominal pain |
+| Neurologic | – | Headache, dizziness, focal neuro deficits |
+| Skin | – | Rashes |
+| Psychiatric | – | Anxiety, depression (PHQ‑2 score = 2, mild) |
+
+**Past Medical History (per EHR):**  
+- Prediabetes  
+- Obesity (BMI ≈ 28 kg/m²)  
+- Anemia  
+- Osteoarthritis of the knee  
+- History of viral sinusitis, acute bronchitis, and multiple drug overdoses (remote)  
+- Stroke (2000) – resolved  
+
+**Surgical History:** None reported in the current encounter.
+
+**Medications (home):** The patient reports **no current prescription, OTC, vitamin, or herbal medications**. (EHR lists historic medications that are no longer active.)
+
+**Allergies:** No known drug, food, or environmental allergies.
+
+**Social History:**  
+- Tobacco: Tried a few times, not a regular smoker.  
+- Marijuana: Experimented 4‑5 times, not regular.  
+- Alcohol: Social drinking on weekends while at school; currently limited.  
+- Occupation/Student Status: University student (virtual learning).  
+- Living Situation: Currently residing with parents; parents also present in the home.  
+
+**Family History:** Father with **hypercholesterolemia**; otherwise non‑contributory.
+
+---
+
+### Objective  
+
+- **Vital Signs:** Not recorded at the time of this tele‑visit.  
+- **Physical Examination:** Deferred pending in‑person assessment; provider plans to perform a focused exam (inspection of oral cavity, otoscopic exam, auscultation of lungs, measurement of temperature).  
+- **Laboratory / Imaging:** No labs drawn yet. A **COVID‑19 PCR (nasopharyngeal swab)** is ordered. No chest X‑ray indicated at this stage.  
+
+---
+
+### Assessment  
+
+1. **Acute viral upper respiratory infection (common cold) – probable**  
+   - Dry cough, clear rhinorrhea, mild congestion, low‑grade/absent fever, temporal association with a household contact who had similar symptoms.  
+2. **Rule‑out COVID‑19 infection** – pending PCR result.  
+3. **Prediabetes and obesity** – chronic conditions that may predispose to more severe viral illness; continue routine monitoring.  
+
+*Differential considerations* (less likely given current data):  
+- Acute viral bronchitis  
+- Influenza (seasonal testing not performed; low suspicion without fever or myalgias)  
+- Bacterial sinusitis or pneumonia (no purulent discharge, no fever, normal respiratory exam pending)  
+
+---
+
+### Plan  
+
+**Diagnostics / Tests**  
+- Obtain **COVID‑19 PCR nasopharyngeal swab** today; results expected within 24‑48 hours.  
+- If fever ≥ 38 °C or respiratory status worsens, consider rapid influenza antigen test and a CBC with differential.
+
+**Medications / Symptomatic Care**  
+- **Acetaminophen 500 mg PO q6‑8 h PRN** for any fever or discomfort, not to exceed 3 g/day.  
+- **Dextromethorphan‑containing cough suppressant** (e.g., 10‑20 mg q4‑6 h PRN) if cough is distressing and interferes with sleep.  
+- **Saline nasal spray or irrigation** for rhinorrhea and congestion.  
+- Encourage **adequate hydration**, rest, and a balanced diet.
+
+**Non‑Pharmacologic Recommendations**  
+- **Self‑isolation** at home until COVID‑19 result is negative and symptoms improve; avoid close contact with parents and other household members.  
+- Wear a **surgical mask** when around others, especially during coughing episodes.  
+- **Hand hygiene** (soap and water ≥ 20 seconds or alcohol‑based sanitizer).  
+- **Monitor temperature** twice daily; seek care if > 38 °C persists > 48 h.  
+- **Watch for red‑flag symptoms**: worsening dyspnea, chest pain, hemoptysis, new wheezing, confusion, or inability to maintain oral intake.
+
+**Follow‑up**  
+- **Tele‑visit** in 48‑72 hours or sooner if COVID‑19 test returns positive, or if any red‑flag symptoms develop.  
+- If COVID‑19 test is positive: follow provincial public‑health isolation guidelines, consider antiviral therapy (e.g., nirmatrelvir‑ritonavir) if criteria met (age ≥ 65, comorbidities).  
+- Routine follow‑up for prediabetes and obesity in primary‑care clinic per usual schedule.
+
+**Patient Education**  
+- Explained that most common colds are viral and self‑limited; antibiotics are **not** indicated unless bacterial infection is confirmed.  
+- Reviewed proper use of over‑the‑counter cough and cold preparations, emphasizing the risk of excess acetaminophen if combined products are used.  
+- Provided written hand‑out on COVID‑19 isolation and symptom monitoring.
+
+**Disposition**  
+- No immediate need for in‑person evaluation; patient to remain at home with self‑monitoring.  
+- If any concerning symptoms arise, instructed to present to urgent care or call 911 for emergencies.
+
+---  
+
+*Prepared by:* Dr. [Provider Name], MD  
+*Date:* 2026‑04‑14  
+
+*Note: This note follows the SOAP format and integrates the patient‑reported history, the limited objective data available, and the clinical reasoning for a presumed viral upper respiratory infection with COVID‑19 testing pending.*

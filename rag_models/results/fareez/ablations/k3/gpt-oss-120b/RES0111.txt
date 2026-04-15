@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:25:51
+Time: 4.77s
+Tokens: 10,317 in / 1,697 out
+============================================================
+
+Patient Information  
+Aaron Paucek is a teenage male currently in the 10th grade. He lives at home with his parents and two siblings. He reports no current chronic medical conditions, no regular prescription medications other than a multivitamin, and no known drug or food allergies. He is up‑to‑date on vaccinations except for the human papillomavirus (HPV) series and this year’s influenza vaccine, which he has not yet received. He denies tobacco, alcohol, or illicit drug use. He is not sexually active and does not anticipate becoming active before completing high school. He reports a supportive home environment and feels safe at home. There is no known family history of significant illness aside from a possible relative with hypertension.
+
+Chief Complaint  
+“Sore throat for four days and feeling feverish.”
+
+History of Present Illness  
+The patient reports a four‑day history of an “awful” sore throat that has not improved. He notes that he feels hot but has not measured his temperature. Swallowing solids is painful, though he is able to drink liquids without difficulty. He denies any sensation of food getting stuck. He mentions a mild hoarseness, which he attributes to reduced speaking due to throat pain. He denies nasal congestion, rhinorrhea, cough, shortness of breath, chest pain, headache, confusion, visual or auditory changes, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or unintentional weight loss. He has not traveled recently, has had mixed in‑person and virtual schooling, and does not recall any known exposure to individuals with COVID‑19. He reports that his throat appears visibly swollen and red on inspection.
+
+Review of Systems  
+Constitutional: Subjective fever, no chills, no weight change.  
+HEENT: Sore throat, mild hoarseness, no nasal discharge, no sinus congestion, no ear pain.  
+Respiratory: No cough, dyspnea, or chest discomfort.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria or urinary symptoms.  
+Neurologic: No headache, dizziness, or altered mental status.  
+Psychiatric: No anxiety or depression reported.  
+Musculoskeletal: No myalgias or arthralgias.  
+Skin: No rash.  
+Social: Lives with parents and siblings, attends school (grade 10), no bullying, no substance use.
+
+Past Medical History  
+The patient reports no chronic illnesses. He indicates a prior appendectomy at age 13. No other surgeries or hospitalizations are noted.
+
+Medications  
+Only a daily multivitamin is taken. No prescription or over‑the‑counter medications reported.
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Family History  
+No significant family history reported; the patient is unsure but mentions a possible relative with hypertension.
+
+Social History (expanded)  
+The patient is a student in good academic standing. He denies use of tobacco, alcohol, marijuana, or other recreational drugs. He reports no recent travel, no known sick contacts, and adheres to school mask policies except when drinking water.
+
+Objective Data  
+
+Vital Signs  
+- Heart rate: 97 beats/min (recorded in the EMR; no current temperature, blood pressure, respiratory rate, or SpO₂ documented).  
+
+Physical Examination (performed during the encounter)  
+- General: Appears mildly ill but in no acute distress.  
+- HEENT: Oral cavity shows marked erythema and swelling of the oropharynx; tonsils not specifically described. No exudate noted. No cervical lymphadenopathy documented. Nasal mucosa normal, no rhinorrhea. No ocular or ear abnormalities reported.  
+- Neck: No noted rigidity or limited range of motion.  
+- Respiratory: Breath sounds clear bilaterally; no wheezes, rales, or use of accessory muscles.  
+- Cardiovascular: Regular rate and rhythm; no murmurs audible.  
+- Abdomen: Soft, non‑tender; no masses.  
+- Extremities: No edema.  
+- Neurologic: Alert and oriented; cranial nerves grossly intact.  
+
+Laboratory and Microbiology Data  
+Recent laboratory panel (date not specified) shows:  
+- Serum potassium 5.02 mmol/L (within reference range).  
+- HDL‑C 31.9 mg/dL (low).  
+- Triglycerides 102 mg/dL (normal).  
+- Serum calcium 9.8 mg/dL (normal).  
+- BUN 8.3 mg/dL, CO₂ 24 mmol/L (both within normal limits).  
+- Platelet count 435 ×10³/µL (elevated).  
+- CBC indices (MCV 82.8 fL, MCHC 35.5 g/dL) are within normal limits.  
+- PHQ‑2 score 1 (negative screen for depression).  
+- Fall risk score 108 (moderate‑high risk).  
+No current rapid strep, COVID‑19, or other infectious studies have been performed; these are pending per the plan.
+
+Assessment  
+1. Acute pharyngitis – most likely viral, but bacterial etiology (group A Streptococcus) cannot be excluded.  
+2. Possible COVID‑19 infection – symptoms overlap with viral pharyngitis; exposure risk unclear.  
+3. Incomplete immunization status – lacking current influenza vaccine and HPV series.  
+4. Low HDL cholesterol – identified on recent labs.  
+
+Plan  
+
+Diagnostic Testing  
+- Perform a rapid antigen detection test (RADT) for Group A Streptococcus on the oropharyngeal swab.  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 rapid antigen test.  
+
+Therapeutic Interventions  
+- Symptomatic care: Acetaminophen 500 mg PO every 6 hours as needed for fever or throat pain, not to exceed 3 g per day.  
+- Encourage increased fluid intake and soft diet until swallowing improves.  
+- Advise throat lozenges or honey‑lemon tea for soothing effect, if age‑appropriate.  
+- No antibiotics prescribed at this time; will initiate if rapid strep test returns positive.  
+
+Infection Control  
+- Instruct patient to self‑isolate for 14 days from the onset of symptoms or until COVID‑19 test results are negative and fever resolves.  
+- Emphasize hand hygiene, mask use when in public areas, and avoidance of close contact with household members, especially those at higher risk.  
+
+Vaccination Recommendations  
+- Offer the seasonal influenza vaccine today or schedule at the earliest convenience.  
+- Discuss initiating the HPV vaccine series; provide counseling on age‑appropriate timing and benefits.  
+
+Follow‑Up  
+- Review rapid strep and COVID‑19 test results within 24–48 hours.  
+- If the rapid strep test is positive, prescribe amoxicillin‑clavulanate per standard dosing for streptococcal pharyngitis.  
+- If COVID‑19 test is positive, follow local public health guidelines for isolation and monitoring; provide guidance on red‑flag symptoms (shortness of breath, chest pain, worsening fever).  
+- Re‑evaluate in 3–5 days either in‑person or via telemedicine for symptom progression, especially if difficulty breathing, inability to maintain hydration, or new systemic signs develop.  
+
+Preventive Health  
+- Counsel on the importance of completing the HPV vaccine series before age 26.  
+- Discuss lifestyle measures to improve HDL cholesterol, including regular aerobic activity and dietary modifications.  
+
+Disposition  
+The patient was discharged home with the above plan, pending diagnostic test results. He and his parents verbalized understanding of the instructions and agreed to follow up as directed. No immediate red‑flag concerns were identified at the time of discharge.

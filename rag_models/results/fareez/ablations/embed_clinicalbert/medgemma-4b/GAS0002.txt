@@ -1,0 +1,45 @@
+Model: google/medgemma-4b-it
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 05:59:27
+Time: 36.41s
+Tokens: 8,324 in / 665 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Agustin McGlynn
+Date of Birth: 1965-04-16
+Unit Number: 2046
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043
+
+Chief Complaint: Abdominal pain
+
+History of Present Illness:
+
+The patient presents to the Emergency Department with abdominal pain, located in the upper right quadrant. The pain has been present for the past few days, with a worsening of symptoms occurring approximately three to four hours prior to arrival. The pain is described as sharp in quality. The patient rates the pain as an 8 out of 10 on a pain scale. The pain does not radiate. The pain started after lunch, approximately 3 days ago. The patient has tried taking Advil and Tylenol, but these medications have not provided significant relief. The patient reports some nausea over the past few days, but no vomiting. The patient denies any blood in the emesis or stool. The patient has not traveled recently. The patient reports that energy levels are decreased due to the pain. The patient denies any skin changes or urinary/bowel habit changes. The patient denies any prior episodes of similar pain.
+
+Past Medical History:
+
+The patient has a history of cerebral palsy, spasticity, osteoporosis, intellectual disability, gastroesophageal reflux disease, pneumonia, excessive salivation, retention of urine, essential hypertension, chronic kidney disease stage 1, and disorder of kidney due to diabetes mellitus. The patient also has a family history of stroke in the father and gallstones in the mother.
+
+Medications:
+
+The patient is currently taking 24 HR tacrolimus 5 MG Extended Release Oral Capsule, 24 HR tacrolimus 1 MG Extended Release Oral Tablet, 1 ML tacrolimus 5 MG/ML Injection, Acetaminophen 325 MG Oral Tablet, 1 ML Epoetin Alfa 4000 UNT/ML Injection, sodium fluoride 0.0272 MG/MG Oral Gel, Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution, Hydrochlorothiazide 25 MG Oral Tablet, and amLODIPine 2.5 MG Oral Tablet.
+
+Social History:
+
+The patient is a consultant at the bank. The patient drinks alcohol occasionally, approximately one or two glasses of wine every night. The patient denies the need to cut down on their drinking. The patient denies feeling annoyed by people criticizing their drinking. The patient denies feeling guilty about their drinking. The patient denies drinking alcohol in the morning. The patient denies using recreational drugs. The patient does not smoke cigarettes. The patient lives at home with his two children and partner. The home situation is described as fine.
+
+Family History:
+
+The patient's father died of a stroke, and his mother has gallstones.
+
+Assessment:
+
+The patient presents with acute abdominal pain, likely related to a possible gallbladder issue given the family history. Further evaluation is needed to determine the exact cause of the pain.
+
+Plan:
+
+The patient will undergo further evaluation to determine the cause of the abdominal pain.

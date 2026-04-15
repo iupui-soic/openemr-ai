@@ -1,0 +1,59 @@
+Model: qwen/qwen3-32b
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-04-14 03:59:18
+Time: 4.46s
+Tokens: 10,296 in / 1,420 out
+============================================================
+
+Patient Information  
+The patient is a 82-year-old male, Adalberto Gerlach, with a known history of osteoarthritis of the knees and hips, hypertension, ischemic heart disease, a prior myocardial infarction, heart failure, and chronic kidney disease. He resides in a townhouse in Andover, Massachusetts, with his wife and daughter. He is retired due to his medical conditions and reports that he manages most activities of daily living independently, though his wife assists with cooking and shopping. The patient has a history of smoking, having smoked one to two packs per day for over 30 years, but quit after his heart attack. He currently consumes three to four beers nightly. His family history includes heart disease on the paternal side, with both his father and brother having experienced myocardial infarctions. He has a documented penicillin allergy, though the nature of the reaction is unclear.
+
+Chief Complaint  
+The patient presents with a five-day history of right knee pain, swelling, redness, and warmth. He reports that the symptoms are more severe than his usual osteoarthritis and have progressively worsened, though he notes some fluctuation in severity. He denies any trauma or injury to the knee and mentions that he had a steroid injection in the same knee one week prior to the onset of symptoms.
+
+History of Present Illness  
+The patient initially attributed the symptoms to his chronic osteoarthritis, but the intensity and character of the pain have changed. The pain is described as sharp and stabbing, particularly with movement, and is localized to the right knee without radiation. The knee is visibly red, swollen, and warm to the touch compared to the contralateral side. The patient reports morning stiffness, but the pain persists throughout the day. He notes that rest and immobilization provide some relief. Over-the-counter naproxen has offered minimal improvement. He denies fever, chills, or other systemic symptoms. The patient has no history of gout or pseudogout, but he does have risk factors including obesity, alcohol use, and diuretic therapy. He denies any recent travel, insect bites, or other potential sources of infection.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or unintentional weight loss.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel or bladder habits.  
+Musculoskeletal: Osteoarthritis of the knees and hips with occasional pain, but no other joint involvement.  
+Neurological: No numbness, tingling, or weakness.  
+Integumentary: No rashes or skin changes.  
+Other: No vision, hearing, or taste changes. No recent upper respiratory symptoms.
+
+Allergies  
+The patient has a documented allergy to penicillin, though the exact nature of the reaction is unknown.
+
+Past Medical History  
+The patient has a long-standing history of osteoarthritis involving the knees and hips, hypertension, ischemic heart disease with a prior myocardial infarction and stent placement, heart failure, and chronic kidney disease. He has a history of an appendectomy in his youth and hospitalization following his heart attack. He also has a history of anemia, hyperlipidemia, metabolic syndrome, and osteoporosis. He has undergone a renal transplant and is currently under post-transplant management.
+
+Surgical History  
+The patient has undergone an appendectomy and stent placement for coronary artery disease. He is currently under post-transplant care following a kidney transplant.
+
+Social History  
+The patient is a former smoker who quit after his heart attack. He consumes alcohol regularly, drinking three to four beers per night. He is retired and resides with his wife and daughter. He is able to perform most activities of daily living independently, with his wife assisting with cooking and shopping.
+
+Family History  
+Heart disease is present on the paternal side of the family, with both his father and brother having experienced myocardial infarctions. His maternal side is reportedly healthy.
+
+Current Medications  
+The patient is currently taking Furosemide and Ramipril for hypertension and heart failure. He also takes aspirin for secondary prevention of cardiovascular events. He uses over-the-counter naproxen for pain relief. Other medications include tacrolimus for immunosuppression following a kidney transplant, insulin for diabetes, and simvastatin for hyperlipidemia.
+
+Objective  
+Vital signs were not available in the electronic health record. On physical examination, the right knee is red, swollen, and warm compared to the left. There is localized pain with movement, and the patient exhibits a limp. No instability is noted with varus or valgus stress or with anterior/posterior drawer tests. No numbness, tingling, or weakness is present. No other musculoskeletal abnormalities are noted.
+
+Labs  
+Recent laboratory results include a creatinine level of 2.51 mg/dL, indicating chronic kidney disease. His glomerular filtration rate is 87.48 mL/min, suggesting stage 2 chronic kidney disease. His electrolytes are within normal limits, with a sodium level of 138.23 mmol/L, potassium of 4.89 mmol/L, and chloride of 110.41 mmol/L. His glucose is 79.22 mg/dL, and his lipid panel shows a total cholesterol of 158.23 mg/dL, with an LDL of 86.37 mg/dL and HDL of 55.33 mg/dL. His triglycerides are 165.66 mg/dL. His hemoglobin and hematocrit are not provided in the extract.
+
+Imaging  
+No recent imaging studies are noted in the electronic health record.
+
+Assessment  
+The differential diagnosis includes gout or pseudogout, given the patient’s risk factors including obesity, alcohol use, and diuretic therapy. Septic arthritis is also a concern due to the recent steroid injection in the affected knee. The presence of redness, warmth, swelling, and pain with movement supports an inflammatory or infectious process. The patient’s history of osteoarthritis and lack of trauma or injury further supports a non-traumatic etiology.
+
+Plan  
+A knee aspiration is planned to obtain synovial fluid for analysis, including cell count, crystal identification, and culture. This will help differentiate between gout, pseudogout, and septic arthritis. The patient will be advised to continue rest and immobilization of the affected knee and to avoid weight-bearing as tolerated. Over-the-counter naproxen may be continued for pain relief, but caution is warranted due to his chronic kidney disease. The patient will be followed up in the clinic after the aspiration results are available to determine the appropriate treatment course. He will be instructed to return immediately if symptoms worsen or if new symptoms develop.

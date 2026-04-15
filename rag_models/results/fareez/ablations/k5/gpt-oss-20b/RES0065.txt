@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:36:15
+Time: 2.79s
+Tokens: 12,009 in / 1,221 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951  
+Sex: Female  
+Age: 74 years  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+The patient presents with a sore throat that has been present for three days, accompanied by a subjective feeling of fever and chills.
+
+History of Present Illness  
+The sore throat began three days ago and has become constant and worsening over time. The patient reports a low-grade fever that started one day after the onset of the sore throat. She has felt hot and experienced chills but did not record a temperature. The sore throat is worse when swallowing solids and occasionally liquids that are cold. There is no cough, sputum, or respiratory distress. The patient notes tender lymph node “lumps” in the neck but no generalized swelling or rash. No headache, nausea, vomiting, chest pain, shortness of breath, abdominal pain, or changes in bowel or urinary habits. She reports significant fatigue and decreased appetite due to difficulty swallowing. No night sweats. She denies recent travel, known sick contacts, or exposure to known infectious illnesses.
+
+Review of Systems  
+Constitutional: Feverish, chills, fatigue, decreased appetite.  
+Respiratory: No cough, no dyspnea, no wheezing.  
+Cardiovascular: No chest pain, palpitations, or tachycardia.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, frequency, or urgency.  
+Musculoskeletal: No pain or swelling beyond cervical lymph nodes.  
+Skin: No rash or lesions.  
+Neurologic: No headache or dizziness.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+Crohn’s disease diagnosed last year, managed with sulfasalazine.  
+Hypertension.  
+Chronic kidney disease stage 2 (based on prior data).  
+Chronic metabolic syndrome.  
+No history of asthma, eczema, or other allergic conditions.  
+No history of prior infections such as influenza or COVID-19.  
+
+Medication List (current, per transcript)  
+- Sulfasalazine (dose unspecified) for Crohn’s disease.  
+No other chronic medications reported by the patient at this time.
+
+Allergies  
+No known drug or environmental allergies reported.  
+
+Social History  
+The patient lives in an apartment with her parents and younger brother. She does not smoke, does not use alcohol, and does not use recreational drugs. She engages in swimming as an exercise but reports no contact sports.  
+
+Family History  
+First‑degree relatives with Crohn’s disease and ulcerative colitis. Other relatives have asthma and eczema. No known family history of cardiac, renal, or oncologic disease.  
+
+Physical Examination  
+Vitals: Temperature not recorded; patient reports subjective fever. Heart rate, blood pressure, respiratory rate, oxygen saturation, and weight not measured during this visit.  
+General: Alert, oriented, appears slightly fatigued.  
+Head, Eyes, Ears, Nose, Throat (HEENT): Oral mucosa erythematous with mild pharyngeal erythema; cervical lymphadenopathy present in the anterior chain. No tonsillar exudate.  
+Neck: No thyromegaly.  
+Cardiovascular: No murmurs, rubs, or gallops noted.  
+Respiratory: Clear to auscultation bilaterally.  
+Abdomen: Soft, non‑tender, non‑distended.  
+Extremities: No edema.  
+Skin: No rash or lesions.  
+
+Laboratory and Imaging  
+No laboratory studies performed during this encounter. Prior laboratory data (from patient’s historical records) show normal complete blood count, electrolytes, and renal function. The patient will undergo a nasopharyngeal swab for COVID‑19 testing and serologic testing for Epstein‑Barr virus (EBV) to evaluate for infectious mononucleosis. No imaging studies were ordered at this time.  
+
+Assessment  
+The presentation is most consistent with an acute viral pharyngitis (likely viral etiology). Differential diagnosis includes:  
+1. Acute viral pharyngitis (common cold, influenza, COVID‑19).  
+2. Infectious mononucleosis (EBV).  
+3. Streptococcal pharyngitis (unlikely given lack of fever spikes, rash, or significant cervical lymphadenopathy but still a consideration).  
+4. Other viral etiologies (e.g., adenovirus, parainfluenza).  
+
+Plan  
+1. COVID‑19: Obtain nasopharyngeal swab. Advise self‑isolation until results are available.  
+2. EBV serology: Order complete panel to evaluate for infectious mononucleosis.  
+3. Symptomatic treatment: Continue over‑the‑counter throat lozenges for temporary relief. Recommend warm fluids, saltwater gargles, adequate hydration, and rest.  
+4. Antipyretic: Acetaminophen 500 mg every 6‑8 hours as needed for fever or discomfort.  
+5. Follow‑up: Return to clinic or call provider if symptoms worsen (e.g., increased fever, difficulty breathing, inability to swallow liquids, or development of rash). If COVID‑19 test is positive, follow isolation guidelines. If EBV serology is positive, advise supportive care and monitor for complications.  
+6. Chronic disease management: Continue sulfasalazine as prescribed. No changes to other chronic medications at this time.  
+7. Education: Discuss importance of hand hygiene, avoiding contact with sick individuals, and monitoring for worsening symptoms.  
+8. Documentation: Record results of COVID and EBV testing upon receipt, and adjust management accordingly.

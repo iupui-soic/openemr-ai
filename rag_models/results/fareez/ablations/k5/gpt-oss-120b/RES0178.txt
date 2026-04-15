@@ -1,0 +1,88 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:29:48
+Time: 3.87s
+Tokens: 8,134 in / 1,373 out
+============================================================
+
+Patient Information
+Name: Not provided (patient is a minor, son of the parent speaking)
+Date of Birth: Not provided (approximately 1‑year old based on parent’s description)
+Sex: Male
+Guardian: Mother (present during interview)
+Address: Not provided
+Contact: Not provided
+
+Chief Complaint
+Fever, cough, and runny nose of two days duration.
+
+History of Present Illness
+The patient is a 1‑year‑old male who was brought to the clinic by his mother because of a fever, dry cough, and clear rhinorrhea that began approximately two days ago. The cough was initially dry without sputum or blood. The mother reports that the fever and chills started last night, with a measured temperature of 38.8 °C (101.8 °F). The child has been complaining of a mild sore throat but continues to eat, although his appetite is reduced and he is taking smaller portions. He also reports generalized body aches (“a little bit all over”). There is no shortness of breath, wheezing, chest pain, nasal congestion, or sinus pressure. The runny nose is clear in color and there are no associated eye or ear symptoms. He has had no nausea, vomiting, diarrhea, urinary changes, rash, dizziness, fainting, numbness, or tingling. The mother denies any recent sick contacts, travel, or exposure to smoke at home. The child’s developmental milestones are appropriate for age, and he is up‑to‑date on immunizations. He has no known drug allergies and is not taking any medications.
+
+Review of Systems
+Constitutional: Fever 38.8 °C, chills, decreased appetite, generalized myalgias. No weight loss, no fatigue beyond that expected with an acute viral illness.  
+Respiratory: Dry cough, clear rhinorrhea. No shortness of breath, wheezing, chest pain, or sputum production.  
+Ear/Nose/Throat: Clear nasal discharge, mild sore throat. No ear pain, discharge, hearing loss, or visual changes. No sinus fullness or facial pain.  
+Cardiovascular: No palpitations, edema, or chest discomfort.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+Genitourinary: No dysuria, hematuria, or change in urine output.  
+Skin: No rash, lesions, or itching.  
+Neurologic: No dizziness, syncope, weakness, or focal deficits.  
+Psychiatric: No behavioral changes noted.  
+
+Past Medical History
+The child is described as “pretty healthy” with occasional colds during winter. No chronic medical conditions reported. No prior hospitalizations or surgeries. No complications noted with the pregnancy; delivery was via scheduled C‑section at term without emergency.
+
+Surgical History
+None.
+
+Allergies
+No known drug, food, or environmental allergies.
+
+Medications
+No current medications.
+
+Family History
+Maternal grandfather with hypertension and hypercholesterolemia. No other significant family history reported.
+
+Social History
+The patient lives with both parents, a younger brother, and a younger sister. No tobacco use in the household, no pets reported, and no known exposure to mold, dust, or other environmental irritants. The family is engaged in a mix of online and in‑person schooling; no recent travel.
+
+Physical Examination (Objective)
+Vital Signs: Temperature measured by mother at 38.8 °C (101.8 °F). No other vital signs recorded.
+General: Appears mildly ill but alert and interactive for age.
+HEENT: Clear nasal discharge, oropharynx mildly erythematous, no tonsillar exudate. Tympanic membranes normal, no ear discharge. Pupils equal, reactive; extra‑ocular movements intact. No conjunctival injection.
+Neck: Supple, no lymphadenopathy noted.
+Respiratory: Breath sounds clear bilaterally, no wheezes, rales, or rhonchi. No increased work of breathing.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Abdomen: Soft, non‑tender, no organomegaly.
+Extremities: No edema, normal perfusion.
+Neurologic: Alert, moves all extremities spontaneously, normal tone for age.
+
+Assessment
+1. Upper respiratory infection – likely viral (possible influenza or COVID‑19) presenting with fever, dry cough, clear rhinorrhea, sore throat, and myalgias in a 1‑year‑old.
+2. Dehydration risk – reduced oral intake due to decreased appetite.
+3. No evidence of bacterial pneumonia, asthma exacerbation, or ear infection at this time.
+
+Plan
+Diagnostics
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 test) with results expected within 24–48 hours.
+- Consider rapid influenza testing if symptoms worsen or if influenza season is high; not performed at this visit.
+
+Therapeutic
+- Supportive care: encourage frequent small sips of oral rehydration solution or clear fluids to maintain hydration.
+- Antipyretic: Acetaminophen 10‑15 mg/kg per dose PO every 4–6 hours as needed for fever or discomfort, not to exceed 5 doses in 24 hours.
+- No antibiotics indicated at this time given lack of bacterial signs.
+- Continue normal feeding as tolerated; offer nutrient‑dense foods in small portions.
+
+Education & Discharge Instructions
+- Monitor temperature; treat fever with acetaminophen as above.
+- Observe for worsening respiratory distress (increased work of breathing, persistent wheeze, cyanosis), inability to maintain oral hydration, persistent high fever (> 39.5 °C / 103 °F) for more than 48 hours, or new onset vomiting/diarrhea.
+- Seek urgent medical care or go to the emergency department if any of the above occur, or if the child develops lethargy, seizures, or focal neurologic signs.
+- Maintain isolation precautions until COVID‑19 test results are known; limit contact with high‑risk individuals.
+- Follow up with primary care provider in 48‑72 hours or sooner if symptoms worsen.
+
+Follow‑up
+- Phone or in‑person follow‑up with pediatrician within 2‑3 days to review COVID‑19 test results and clinical status.
+- If COVID‑19 test returns positive, discuss appropriate home isolation measures and monitoring per public health guidelines.

@@ -1,0 +1,289 @@
+Model: google/medgemma-4b-it
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:59:42
+Time: 109.95s
+Tokens: 6,416 in / 2,046 out
+Cell: norag
+============================================================
+
+Patient Information:
+
+Name: Amee Reva Goyette
+DOB: 1916-07-09
+Sex: Female
+Unit Number: 7671
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+
+The patient presents with a two-week history of chest pain. The pain started approximately two weeks ago and is described as chest discomfort, localized to the left side. The pain is described as sharp in nature. The pain comes and goes, lasting approximately 20-30 minutes at a time, and then subsides. The patient reports that the pain has remained about the same in intensity over the two-week period. The patient denies any worsening of the pain or increased frequency of episodes. The patient denies any relief with medications such as Advil, Tylenol, and Tums. The pain is most noticeable when the patient is at work or driving. The patient denies any associated symptoms such as nausea, vomiting, or difficulty breathing. The patient denies any fevers. The patient denies any recent contact with sick individuals. The patient denies any recent travel outside of Canada. The patient reports a family history of heart problems, specifically a heart attack in her father at age 60. The patient denies any chronic medical conditions. The patient reports that she has been experiencing increased stress in her personal life due to separation from her husband two years ago. The patient denies any changes in her health or lifestyle recently.
+
+Medications:
+
+The patient is currently taking Tylenol and Advil for pain relief. She also takes Tums. She is also taking Tacrolimus, Sodium Fluoride, Epoetin Alfa, Insulin Isophane, Hydrochlorothiazide, Metoprolol Succinate, Nitroglycerin, Aspirin, and Carvedilol.
+
+Family History:
+
+The patient reports a family history of heart problems in her father, who had a heart attack at age 60.
+
+Social History:
+
+The patient is a smoker, reporting to smoke approximately half a pack to a pack per day. She is trying to quit. She drinks alcohol occasionally, having one or two glasses of wine on the weekend. She denies using any other substances.
+
+Past Medical History:
+
+The patient has a history of:
+- Higher education
+- Past pregnancy history of miscarriage
+- Disorder of kidney due to diabetes mellitus
+- Essential hypertension
+- Microalbuminuria due to type 2 diabetes mellitus
+- Proteinuria due to type 2 diabetes mellitus
+- Body mass index 30+ - obesity
+- Has a criminal record
+- Metabolic syndrome X
+- Prediabetes
+- Anemia
+- History of renal transplant
+- Chronic kidney disease stage 1
+- Malignant neoplasm of breast
+- Chronic kidney disease stage 2
+- Acute ST segment elevation myocardial infarction
+- History of myocardial infarction
+- Ischemic heart disease
+- Abnormal findings diagnostic imaging heart+coronary circulat
+- Polyp of colon
+- Stress
+- Social isolation
+- Recurrent rectal polyp
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 3
+- Full-time employment
+- Social isolation
+- Stress
+- Full-time employment
+- Social isolation
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- Awaiting transplantation of kidney
+- Chronic kidney disease stage 4
+- Stress
+- Medication review due
+- Part-time employment
+- Reports of violence in the environment
+- A

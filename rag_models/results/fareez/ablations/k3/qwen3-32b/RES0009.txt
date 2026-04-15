@@ -1,0 +1,59 @@
+Model: qwen/qwen3-32b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:40:45
+Time: 4.19s
+Tokens: 15,792 in / 954 out
+============================================================
+
+Patient Information  
+The patient is a 91-year-old male with a complex medical history, including essential hypertension, obesity, chronic kidney disease, ischemic heart disease, and a history of prostate carcinoma in situ. He resides with his husband and two teenage children in Salisbury, Massachusetts. The patient is an accountant by profession and has a history of tobacco use, currently smoking approximately five cigarettes per day. He reports minimal alcohol consumption, limited to a glass of wine on weekends. His social history is notable for limited social contact and a history of social isolation. His family history includes a maternal history of heart attack in her 70s.  
+
+Chief Complaint  
+The patient presents with a five-day history of persistent left-sided chest pain, described as sharp and lingering, which is exacerbated by deep breathing and physical activity. He also reports dyspnea on exertion, particularly when walking short distances.  
+
+History of Present Illness  
+The patient initially noticed the chest pain while sitting on the couch and has since observed that it worsens with activity. The pain is localized to the left side of the chest and is not radiating. He reports that over-the-counter analgesics such as acetaminophen and ibuprofen provide minimal relief. The dyspnea is not associated with cough, sputum production, or wheezing. There is no history of fever, chills, nausea, vomiting, syncope, or palpitations. The patient denies any recent travel or recreational drug use. He recently underwent a hysterectomy approximately one month ago, which he reports was uncomplicated.  
+
+The patient is concerned about the possibility of a pulmonary embolism and is seeking evaluation for further diagnostic testing.  
+
+Review of Systems  
+Constitutional: The patient reports fatigue secondary to dyspnea but denies weight loss, fever, or chills.  
+Respiratory: Dyspnea on exertion is present; no cough, sputum, or wheezing.  
+Cardiovascular: Chest pain is present; no palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria or changes in urinary habits since his recent hysterectomy.  
+Neurological: No headaches, dizziness, or syncope.  
+Musculoskeletal: No joint or muscle pain.  
+Dermatological: No rashes or skin changes.  
+Psychiatric: No recent changes in mood or cognition.  
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, obesity, chronic kidney disease (now with a history of renal transplant), ischemic heart disease, and chronic sinusitis. He also has a history of opioid abuse and prostate carcinoma in situ.  
+
+Surgical History  
+The patient has undergone a hysterectomy, wisdom tooth extraction, and a renal transplant.  
+
+Medications  
+The patient is currently taking tacrolimus, furosemide, lisinopril, amLODIPine, and several other medications for chronic conditions. He is also using over-the-counter analgesics for pain relief.  
+
+Allergies  
+No known drug or food allergies.  
+
+Social History  
+The patient has a history of tobacco use, currently smoking approximately five cigarettes per day. He consumes alcohol minimally, with occasional wine on weekends. He reports limited social contact and has a history of social isolation.  
+
+Family History  
+The patient's mother had a history of heart attack in her 70s. No family history of cancer, bleeding disorders, or thromboembolic disease is reported.  
+
+Objective  
+Vital signs at the time of this visit were not available in the OpenEMR record. The patient is noted to have a body mass index consistent with obesity. Laboratory results show normal hemoglobin, hematocrit, and white blood cell count. Renal function appears stable with a creatinine level of 0.88 mg/dL and an estimated glomerular filtration rate of 158 mL/min. Electrolytes are within normal limits.  
+
+Physical Examination  
+No physical examination findings were provided in the OpenEMR record.  
+
+Assessment  
+The patient presents with a new onset of left-sided chest pain and dyspnea on exertion. Given the risk factors for deep vein thrombosis and pulmonary embolism, including recent surgery and limited mobility post-hysterectomy, a high index of suspicion for pulmonary embolism is warranted.  
+
+Plan  
+The patient will undergo further diagnostic evaluation, including imaging and laboratory tests, to rule out pulmonary embolism. He will be monitored for any changes in symptoms and provided appropriate treatment based on the results of the investigations. Follow-up is recommended to ensure timely management and resolution of symptoms.

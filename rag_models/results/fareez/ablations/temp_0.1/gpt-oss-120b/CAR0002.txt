@@ -1,0 +1,134 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:06:56
+Time: 5.65s
+Tokens: 9,114 in / 1,956 out
+============================================================
+
+Patient Information  
+Name: Amos Crona Date of Birth: January 20, 1934 Age: 92 years Sex: Male Address: 201 O'Conner Glen, Wayland, Massachusetts 00000 Living Situation: Resides in a house with his parents Occupation: City bus driver  
+
+Chief Complaint  
+The patient presents with acute left‑sided chest pain that began approximately 30 minutes ago while shoveling snow.  
+
+History of Present Illness  
+Amos reports a sudden onset of a dull, pressure‑like sensation localized to the left side of his chest. He rates the pain as 7/10. The discomfort has persisted since its onset and feels slightly worse with movement, ambulation, and when lying down. He denies radiation of the pain to the arm, jaw, or back. He notes associated shortness of breath that started shortly after the pain began. He has not experienced similar episodes in the past. He reports a low‑grade fever measured at 38 °C (100.4 °F) today. He denies nausea, vomiting, cough, sputum production, recent trauma, or recent travel. He feels his heart beating faster than usual, a sensation he normally notices only during sports activity.  
+
+Review of Systems  
+Constitutional: Low‑grade fever (38 °C); no chills, weight loss, or fatigue.  
+Respiratory: Mild dyspnea since onset of chest pain; no cough, wheezing, or sputum.  
+Cardiovascular: Chest pressure as described; palpitations noted; no known history of syncope or orthostatic dizziness.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or edema of the lower extremities.  
+Musculoskeletal: No recent falls or injuries; pain localized to chest, no musculoskeletal strain reported.  
+Neurologic: No headache, visual changes, or focal deficits.  
+Skin: No rashes or lesions.  
+Psychiatric: No anxiety or depression reported; PHQ‑2 score of 2 (minimal depressive symptoms).  
+
+Past Medical History  
+- Ischemic heart disease (CAD) – ongoing  
+- Essential hypertension – ongoing  
+- Hyperlipidemia – ongoing  
+- Chronic kidney disease (stage 1‑4 history, currently post‑renal transplant) – ongoing  
+- Diabetes mellitus (prediabetes) – ongoing  
+- Metabolic syndrome  
+- Obesity (BMI 30.97)  
+- Sleep apnea and sleep disorder  
+- Chronic low back pain, chronic neck pain, chronic pain syndrome  
+- Seizure disorder (single seizure history)  
+- History of renal transplant (2023)  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+- Tobacco: Smokes half a pack to one pack of cigarettes daily for the past 20 years.  
+- Alcohol: Denies alcohol use.  
+- Illicit drugs: History of crystal methamphetamine use, approximately twice per month for the past seven years; last use six days ago.  
+- Exercise: Occasionally runs on Sundays; otherwise limited activity.  
+- Diet: Describes a fairly balanced diet with frequent eating out; attempts to include vegetables.  
+- Living environment: Lives at home with parents; no recent travel.  
+
+Family History  
+No known family history of premature heart disease, myocardial infarction, or cancer.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications (as reported by patient)  
+- Rosuvastatin (dose not specified) for hyperlipidemia  
+- Lisinopril (dose not specified) for hypertension  
+- Multivitamin daily  
+
+Objective Findings  
+
+Vital Signs (most recent)  
+- Temperature: 38 °C (100.4 °F)  
+- Heart Rate: 91 beats/minute  
+- Respiratory Rate: 14 breaths/minute  
+- Blood Pressure: Not recorded at this encounter  
+- SpO₂: Not recorded  
+- Height: 168 cm; Weight: Not recorded; BMI: 30.97 (obese)  
+
+Physical Examination  
+General: Elderly male, appears mildly uncomfortable due to chest pain, alert and oriented.  
+Cardiovascular: Regular rate and rhythm; no murmurs, rubs, or gallops appreciated on limited exam; peripheral pulses palpable.  
+Respiratory: Breath sounds clear bilaterally; no wheezes, rales, or pleural rubs.  
+Chest Wall: No visible deformity or ecchymosis; tenderness not specifically elicited.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No edema, cyanosis, or clubbing.  
+Neurologic: Grossly intact; no focal deficits.  
+
+Laboratory Data (most recent)  
+- Glucose: 84.5 mg/dL (normal)  
+- Blood Urea Nitrogen: 19.2 mg/dL  
+- Creatinine: 0.72 mg/dL (within normal limits for transplant recipient)  
+- Sodium: 141.6 mmol/L; Potassium: 5.0 mmol/L (first value) and 4.3 mmol/L (second value); Chloride: 101.2 mmol/L; CO₂ total: 20.7 mmol/L and 28.4 mmol/L (two measurements)  
+- Calcium: 9.5 mg/dL and 10.1 mg/dL (two measurements)  
+- LDL Cholesterol: 140.6 mg/dL (elevated)  
+- Total Cholesterol: 185.3 mg/dL  
+- ALT: 21.8 U/L (normal)  
+- PHQ‑2 score: 2 (minimal depressive symptoms)  
+- AUDIT‑C total score: 1 (low risk alcohol use)  
+
+Imaging  
+No imaging studies have been performed during this encounter.  
+
+Assessment  
+1. Acute chest pain, likely ischemic in nature (possible unstable angina) given risk factors of known CAD, hypertension, hyperlipidemia, active smoking, and exertional onset.  
+2. Shortness of breath associated with chest discomfort.  
+3. Low‑grade fever, possibly related to exertional stress or early infectious process; however, infection appears less likely.  
+4. Hypertension, hyperlipidemia, and coronary artery disease – chronic conditions requiring ongoing management.  
+5. Active tobacco use – significant modifiable risk factor.  
+6. Recent crystal methamphetamine use – contributes to cardiovascular stress.  
+
+Plan  
+Diagnostic Work‑up  
+- Obtain a 12‑lead electrocardiogram immediately to assess for ischemic changes.  
+- Draw cardiac biomarkers (troponin I/T, CK‑MB) at presentation and repeat in 3–6 hours.  
+- Order a chest radiograph to evaluate for pulmonary causes and mediastinal silhouette.  
+- Basic metabolic panel and repeat electrolytes to monitor renal function and electrolyte status.  
+- Consider bedside echocardiography if hemodynamic instability develops.  
+
+Therapeutic Interventions  
+- Initiate aspirin 325 mg chewable now, followed by 81 mg daily.  
+- Administer sublingual nitroglycerin 0.4 mg every 5 minutes as needed for persistent chest pressure, monitoring blood pressure.  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 94 % if desaturation occurs.  
+- Offer short‑acting beta‑blocker (e.g., metoprolol IV) only after confirming no contraindications (e.g., severe asthma, bradycardia).  
+- Continue home antihypertensive (lisinopril) unless contraindicated by acute hemodynamics.  
+- Reinforce smoking cessation; offer nicotine replacement therapy and referral to cessation counseling.  
+- Counsel regarding crystal methamphetamine use; arrange referral to substance‑use counseling and consider psychosocial support.  
+
+Disposition  
+- Admit to the telemetry unit for cardiac monitoring, serial ECGs, and repeat troponins.  
+- Cardiology consult for further risk stratification and possible stress testing or coronary angiography based on serial findings.  
+
+Patient Education and Follow‑up  
+- Educate patient on the importance of reporting any worsening chest pain, new shortness of breath, diaphoresis, or syncope immediately.  
+- Discuss lifestyle modifications: smoking cessation, limiting strenuous activity until cleared, balanced diet low in saturated fats, and regular moderate exercise as tolerated.  
+- Schedule follow‑up with primary care physician within 1 week after discharge and with cardiology within 2 weeks.  
+- Provide written instructions on medication adherence, especially aspirin and nitroglycerin use, and advise against non‑prescribed stimulant use.  
+
+Disposition Summary  
+The patient will be admitted for observation and comprehensive cardiac evaluation. All orders have been placed, and the care team has been briefed on the plan. No further information is available at this time.

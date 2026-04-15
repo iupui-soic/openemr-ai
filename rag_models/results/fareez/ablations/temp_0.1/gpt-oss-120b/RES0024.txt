@@ -1,0 +1,116 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 04:04:05
+Time: 5.65s
+Tokens: 11,831 in / 1,768 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti  
+Date of Birth: August 3, 1981 (Age 44)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+Unit Number: 2  
+
+Chief Complaint  
+Acute loss of smell (anosmia) and loss of taste for the past two days.
+
+History of Present Illness  
+Aaron reports that for the last two days he has been unable to detect any odors and cannot taste his food. He describes the loss as “super weird,” noting that when his boyfriend offered him an onion he could not taste it at all. He denies feeling ill otherwise. He mentions a mild sense of fatigue and a dry sensation in his mouth but no cough, shortness of breath, chest pain, fever, chills, night sweats, sore throat, nasal congestion, rhinorrhea, headache, nausea, vomiting, diarrhea, constipation, dysuria, or urinary frequency. He has not measured his temperature but feels he may have been “a little hot.” He has no known recent exposures to sick individuals; his boyfriend has been asymptomatic, and his classes are conducted online. He lives only with his boyfriend. He has a known peanut allergy and carries an epinephrine auto‑injector at all times. He uses a topical steroid cream for eczema flares a few times per week during winter and is on combined oral contraceptive pills for the past three years. He denies tobacco use, does not smoke marijuana, and only occasionally consumes edible marijuana products. Alcohol intake is limited to a couple of beers on weekends. He is sexually active with his boyfriend and reports no history of sexually transmitted infections.
+
+Review of Systems  
+Constitutional: Positive for anosmia, ageusia, mild fatigue; negative for fever, chills, night sweats, weight change.  
+Respiratory: No cough, dyspnea, wheezing, or sputum production.  
+Cardiovascular: No chest pain, palpitations, or known heart disease.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, or focal deficits.  
+ENT: No sore throat, rhinorrhea, nasal congestion, ear pain, or eye pain.  
+Dermatologic: Chronic eczema; no new rash.  
+Psychiatric: No reported anxiety or panic during this visit; however, prior screening indicates elevated depressive symptoms (PHQ‑9 score 24).  
+Allergies: Peanut allergy (uses epinephrine auto‑injector). No known drug allergies.
+
+Past Medical History  
+- Essential hypertension (diagnosed 2003)  
+- End‑stage renal disease with prior renal transplant (transplant performed 2018; currently on immunosuppression)  
+- Chronic kidney disease (historical stages 1‑4, now superseded by transplant status)  
+- Eczema (atopic dermatitis)  
+- Peanut allergy  
+- Chronic migraine without aura (historical)  
+- Depression (PHQ‑9 score 24 on recent screening)  
+- Anxiety (low GAD‑7 scores)  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+Lives with boyfriend; no children. No tobacco use. Occasional use of edible marijuana; no smoking. Alcohol consumption limited to a few beers on weekends. Employed part‑time (current status not specified). Sexually active with one partner; uses barrier protection inconsistently (not specified). No recent travel or known exposure to COVID‑19 cases.
+
+Family History  
+Father and mother without reported medical conditions. One uncle with prostate cancer. No known family history of cardiac, pulmonary, or other cancers.
+
+Allergies  
+- Peanut (type I hypersensitivity; carries epinephrine auto‑injector)  
+- No medication allergies reported.
+
+Current Medications  
+- Combined oral contraceptive pill (unspecified formulation, taken daily)  
+- Topical corticosteroid cream for eczema (used as needed, approximately twice weekly)  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression post‑transplant)  
+- Tacrolimus injection 1 mL of 5 mg/mL (as prescribed)  
+- Hydrochlorothiazide 25 mg daily (antihypertensive)  
+- Amlodipine 2.5 mg daily (antihypertensive)  
+- Amoxicillin‑clavulanate 250/125 mg (last dose completed 2018; listed as active in record but not currently taken)  
+
+Vital Signs (most recent)  
+Heart Rate: 85 beats per minute  
+Respiratory Rate: 14 breaths per minute  
+Blood Pressure: Not recorded at this visit  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Height: 179.8 cm  
+Weight: Not recorded  
+Body Mass Index: 28.8 kg/m²  
+
+Physical Examination  
+No physical examination findings documented during this encounter.  
+No information available.
+
+Laboratory Data (most recent)  
+- Hemoglobin: 16.36 g/dL (within normal limits)  
+- Hematocrit: Not provided  
+- White blood cell count: 3.54 × 10³/µL (low normal)  
+- Platelets: 208 × 10³/µL (within normal limits)  
+- Mean corpuscular volume: 88.7 fL (normal)  
+- Mean corpuscular hemoglobin concentration: 35.7 g/dL (normal)  
+- Lipid panel: Total cholesterol 186.6 mg/dL, HDL 62.3 mg/dL, LDL 98.1 mg/dL, Triglycerides 130.7 mg/dL  
+- PHQ‑9: 24 (severe depressive symptoms)  
+- PHQ‑2: Scores ranging 1‑4 (positive screen)  
+- GAD‑7: Scores ranging 1‑3 (minimal anxiety)  
+
+Imaging  
+No imaging studies performed during this visit.  
+
+Assessment  
+1. Acute loss of smell and taste (anosmia/ageusia) – most likely viral etiology; COVID‑19 infection must be ruled out given current pandemic context.  
+2. Essential hypertension, currently managed with hydrochlorothiazide and amlodipine.  
+3. Renal transplant status on chronic tacrolimus therapy; immunosuppressed.  
+4. Atopic dermatitis (eczema) – intermittent topical steroid use.  
+5. Peanut allergy – epinephrine auto‑injector available.  
+6. Severe depressive symptoms (PHQ‑9 = 24) – warrants further psychiatric evaluation and possible treatment.  
+
+Plan  
+- Order a nasopharyngeal SARS‑CoV‑2 PCR test today; results expected within 48 hours.  
+- Advise patient to self‑isolate for 14 days from onset of symptoms or until a negative COVID‑19 test is obtained, whichever is longer.  
+- Counsel on supportive care: maintain hydration, monitor for new symptoms (fever, cough, dyspnea), and seek urgent care if respiratory distress or other concerning signs develop.  
+- Continue current immunosuppressive regimen (tacrolimus) and antihypertensive medications; no changes at this time.  
+- Reinforce the importance of carrying the epinephrine auto‑injector and avoiding known peanut exposure.  
+- Provide education on eczema skin care and appropriate use of topical steroids; schedule dermatology follow‑up if flares become frequent.  
+- Given the severe PHQ‑9 score, arrange a referral to mental health services for evaluation of depression and discuss possible initiation of antidepressant therapy. Provide crisis resources.  
+- Recommend routine follow‑up with primary care in 1 week to review COVID‑19 test result and reassess anosmia; earlier follow‑up if symptoms worsen.  
+- Encourage continued safe sexual practices and discuss contraception continuation.  
+- No new prescriptions at this visit; maintain current medication list.  
+
+Disposition  
+Patient discharged home with instructions as above. Follow‑up appointment scheduled with primary care provider in one week or sooner based on test results.

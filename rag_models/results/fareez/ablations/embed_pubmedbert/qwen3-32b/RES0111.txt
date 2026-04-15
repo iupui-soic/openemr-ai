@@ -1,0 +1,81 @@
+Model: qwen/qwen3-32b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:01:43
+Time: 4.57s
+Tokens: 9,874 in / 1,453 out
+============================================================
+
+Patient Information  
+The patient is a 73-year-old male, Aaron Paucek, residing in Boston, Massachusetts. He is currently employed full-time. His past medical history is significant for essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, obesity, ischemic heart disease, chronic kidney disease stage 2, chronic low back and neck pain, chronic pain, and a history of chronic sinusitis and gingivitis. He has a history of appendectomy at age 13. His current medications include lisinopril, metoprolol, metformin, simvastatin, clopidogrel, and others for management of chronic conditions. He has a documented history of prior hospitalization for suspected and confirmed COVID-19 in 2020 with associated pneumonia and acute respiratory failure. His most recent lab results include elevated potassium and normal calcium levels.
+
+Chief Complaint  
+The patient presents with a four-day history of worsening sore throat and subjective fever. He reports difficulty swallowing solid foods due to pain, but denies difficulty with liquids or dysphagia with food impaction. He also notes mild hoarseness, likely secondary to decreased voice use due to throat discomfort.
+
+History of Present Illness  
+The patient first noticed a sore throat four days ago, which has not improved. He reports feeling hot and suspects he has developed a fever, though he has not measured it. He is experiencing pain with swallowing, particularly with solid foods, but can tolerate liquids. He denies associated symptoms such as runny nose, cough, chest pain, shortness of breath, headache, confusion, changes in hearing or vision, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, weight loss, or any recent travel. He lives with his parents and two siblings and reports feeling safe at home. He is not currently sexually active and denies use of alcohol, tobacco, or recreational drugs. He is in 10th grade and reports no bullying or concerns about depression or anxiety. He has not been in contact with anyone known to have COVID-19. He reports that his throat appears red and swollen.
+
+Review of Systems  
+Constitutional: Reports fever, fatigue.  
+Respiratory: Denies cough, shortness of breath, or chest pain.  
+Cardiovascular: No palpitations or chest pain.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria or changes in urinary habits.  
+Musculoskeletal: No joint or muscle pain.  
+Neurological: No headaches, dizziness, or changes in vision or hearing.  
+Psychiatric: No depression or anxiety.  
+Endocrine: No new weight loss or changes in appetite.  
+Hematologic: No bleeding or bruising.  
+Integumentary: No rash or skin changes.  
+Allergic/Immunologic: No new allergies or symptoms of hypersensitivity.  
+Other: No additional symptoms reported.
+
+Allergies  
+No known drug or food allergies reported.
+
+Past Medical History  
+The patient has a complex medical history including essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, obesity, ischemic heart disease, chronic kidney disease stage 2, chronic low back and neck pain, chronic pain, and a history of chronic sinusitis and gingivitis. He has a history of appendectomy at age 13 and prior hospitalization for suspected and confirmed COVID-19 with associated pneumonia and acute respiratory failure in 2020.
+
+Surgical History  
+Appendectomy at age 13.
+
+Social History  
+The patient lives with his parents and two siblings. He is not currently using tobacco, alcohol, or recreational drugs. He is in 10th grade and reports no concerns about bullying or academic stress. He is not sexually active and has no history of substance use. He reports attending school in a hybrid in-person and virtual format and adheres to mask-wearing and social distancing protocols.
+
+Family History  
+No significant family history of chronic diseases reported by the patient. The patient mentions that high blood pressure may be present in the family.
+
+Current Medications  
+The patient is currently taking lisinopril, metoprolol, metformin, simvastatin, clopidogrel, and other medications for the management of hypertension, diabetes, hyperlipidemia, and ischemic heart disease. No over-the-counter medications or supplements are currently being used aside from multivitamins.
+
+Vital Signs  
+Temperature: Not measured.  
+Blood Pressure: 97 bpm (heart rate).  
+Respiratory Rate: 15 breaths per minute.  
+SpO2: Not measured.  
+Weight: Not measured.  
+Height: 177.70 cm.  
+BMI: 30.15 (obese).  
+
+Physical Examination  
+The patient is alert and oriented. No acute distress is noted. General appearance is within normal limits. Head, eyes, ears, nose, and throat examination reveals a red and swollen pharynx without exudate. No tonsillar hypertrophy or exudate is observed. No lymphadenopathy is palpable. Cardiovascular examination is unremarkable. Respiratory examination reveals clear lungs bilaterally. Abdominal examination is soft, non-tender, and non-distended. No masses or organomegaly is noted. Neurological examination is within normal limits. Skin examination is unremarkable.
+
+Labs  
+Recent laboratory results include elevated potassium (5.02 mmol/L), normal calcium (9.82 mg/dL), and normal triglycerides (102.14 mg/dL). Other results are consistent with chronic disease management and do not suggest acute infection at this time.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with a four-day history of sore throat and subjective fever. The differential diagnosis includes viral pharyngitis, bacterial pharyngitis (e.g., streptococcal), and possibly mononucleosis. Given the patient’s symptoms and the current public health context, a rapid strep test and a COVID-19 test are indicated to rule out bacterial and viral causes of pharyngitis. The patient’s history of chronic conditions and prior hospitalization for COVID-19 further supports the need for testing and monitoring.
+
+Plan  
+1. Perform rapid streptococcal antigen test.  
+2. Order a point-of-care or laboratory-based SARS-CoV-2 test to rule out COVID-19.  
+3. Advise the patient to self-isolate for 14 days or until test results are available and symptoms improve.  
+4. Provide symptomatic relief with hydration and rest.  
+5. If strep throat is confirmed, prescribe appropriate antibiotic therapy.  
+6. If symptoms persist or worsen, schedule a follow-up visit.  
+7. Educate the patient on the importance of completing the HPV vaccine series and receiving the influenza vaccine.  
+8. Reinforce adherence to school mask and social distancing protocols.  
+9. Encourage the patient to maintain good hydration and monitor for any new or worsening symptoms.

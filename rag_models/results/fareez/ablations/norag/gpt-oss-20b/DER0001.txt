@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:17:51
+Time: 2.38s
+Tokens: 8,354 in / 1,223 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Date of Birth: 1943-04-07 (note: transcript indicates a 45‑year‑old male; the date of birth from the EMR suggests the patient is older; trust the transcript for current presentation)  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+Insurance: No information available  
+
+Chief Complaint  
+The patient reports a painful, swollen, red rash on his right lower leg that has been worsening over the past week. He describes the lesion as a “swollen, red area with scabs and a white discharge,” and notes increased heat over the affected leg.
+
+History of Present Illness  
+The patient first noticed the rash approximately one week ago. Pain began the previous day, accompanied by swelling, redness, and a white discharge from what had been a scab. He has not had a similar lesion before, although he has chronic diabetic foot ulcers that are currently stable. He has diabetes mellitus type 2 but has stopped regular glucose monitoring; his last known A1C was approximately 9.0. He reports increased hunger, fatigue, and weight gain in recent weeks. He denies fever, shortness of breath, chest pain, or other systemic symptoms. He reports occasional feeling of heat in the affected leg, especially after changing socks. The patient denies difficulty breathing, chest pain, or any new complaints aside from the leg lesion.
+
+Past Medical History  
+Diabetes mellitus type 2, poorly controlled, with a history of chronic kidney disease (stage 1–2 per EMR, but current creatinine 2.98 mg/dL suggests at least stage 3).  
+Chronic kidney disease stage 1–2 (per EMR).  
+Chronic kidney disease stage 3 (estimated GFR 79 mL/min per MDRD, but creatinine 2.98 mg/dL).  
+Chronic foot ulcers, currently stable.  
+Hypertension (essential).  
+Hyperlipidemia.  
+Asthma (history, minimal current activity).  
+Chronic back pain.  
+No prior surgeries except sinus surgery in adolescence.  
+
+Medications  
+The patient reports taking four pills daily: one for cholesterol (rosuvastatin) and three diabetes medications including metformin and an unknown sulfonylurea. He reports not using insulin. He has not listed additional medications; the EMR lists a wide array of past medications (tacrolimus, aspirin, nitroglycerin, morphine, acetaminophen, fluoride gel, insulin, losartan, simvastatin, diphenhydramine) but these appear to be historical or no longer active. Current active medications as per transcript: rosuvastatin, metformin, and two other oral hypoglycemics (exact agents unknown).  
+
+Allergies  
+Penicillin – allergic reaction with facial swelling and difficulty breathing in childhood.  
+
+Social History  
+The patient is unemployed and seeks employment; he has his own business and previously worked as an accountant. He lives in town and sees his children every two weeks. He smokes occasionally, averaging about two packs per week in the last two weeks. He drinks alcohol socially, averaging 2–4 drinks per week, primarily on weekends. No information available regarding exercise, diet, or other substance use.  
+
+Family History  
+Mother’s side: several relatives with diabetes, hypertension, and hyperlipidemia. Father’s side: relatively healthy, no notable chronic conditions reported. An aunt had lung cancer and was a smoker.  
+
+Review of Systems (selected)  
+Skin: Rash on right lower leg; chronic ulcers on feet.  
+Integumentary: No new lesions elsewhere.  
+General: Feeling hot, fatigue, increased hunger, weight gain.  
+Cardiovascular: No chest pain, no dyspnea.  
+Respiratory: No shortness of breath.  
+Gastrointestinal: No abdominal pain, nausea, vomiting.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: Chronic back pain.  
+Neurologic: No loss of sensation noted in the leg; mild numbness reported in feet.  
+
+Assessment  
+The presentation is most consistent with cellulitis of the right lower leg, likely secondary to an ulcerated, infected diabetic foot lesion. The patient’s uncontrolled diabetes, chronic kidney disease, and history of foot ulcers place him at high risk for complications.  
+
+Plan  
+1. Initiate empiric broad‑spectrum antibiotic therapy targeting common skin flora (e.g., cephalexin 500 mg PO qid for 7–10 days).  
+2. Arrange wound care evaluation for the right lower leg lesion; consider debridement if necrotic tissue present.  
+3. Reinforce strict glucose monitoring; recheck A1C within 4 weeks and consider intensifying diabetes management (add a second oral agent or insulin if indicated).  
+4. Refer to endocrinology for comprehensive diabetes review and potential adjustment of therapy.  
+5. Encourage smoking cessation counseling and provide resources; consider nicotine replacement therapy.  
+6. Discuss alcohol moderation; recommend limiting to no more than 2 drinks per day.  
+7. Advise adequate hydration and regular foot inspection; schedule routine foot care visits.  
+8. Provide patient education on signs of worsening infection (increased pain, spreading redness, fever) and when to seek urgent care.  
+9. Follow up in 7 days or sooner if symptoms worsen; consider repeat labs (CBC, BMP, CRP) to monitor infection and renal function.  
+
+Disposition  
+The patient was advised of the plan and will follow up in the clinic or seek emergency care if symptoms deteriorate. He was provided education materials regarding foot care, diabetes management, and smoking cessation. He expressed understanding and agreement with the plan.

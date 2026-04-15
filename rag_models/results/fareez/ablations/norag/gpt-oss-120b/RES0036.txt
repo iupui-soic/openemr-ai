@@ -1,0 +1,141 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:13:35
+Time: 5.75s
+Tokens: 9,849 in / 2,255 out
+============================================================
+
+Patient Information  
+Name: Adrianna Camelia Wuckert DOB: 1919‑02‑25 (Age 107) Sex: Female MRN: 1637 Address: 609 Bartell Gate, Marshfield, Massachusetts 02050  
+
+Chief Complaint  
+Shortness of breath and productive cough for the past six days.  
+
+History of Present Illness  
+Ms. Wuckert reports the abrupt onset of dyspnea six days ago, which has persisted and progressively worsened. She describes the shortness of breath as constant, becoming more pronounced with minimal exertion such as walking from her car. Associated with the dyspnea is a productive cough that began at the same time; she notes “rusty‑colored” sputum occurring a few times daily. The cough is also continuous and worsening. She denies any sudden episodes of hemoptysis, although she is uncertain whether the rusty hue represents blood. She reports mild wheezing on auscultation and a sharp pleuritic chest pain that scores approximately 7/10, triggered by coughing and improving when the coughing subsides. She feels “cold” and has taken acetaminophen for subjective fever/chills, but she has not measured a temperature. She denies dyspnea at rest, orthopnea, paroxysmal nocturnal dyspnea, or positional variation of symptoms. There are no known triggers such as pollen, cold air, or environmental irritants beyond her usual work environment. She has not traveled internationally, and there is no known recent exposure to tuberculosis. A brief prodrome of a runny nose preceded the current illness by a few days.  
+
+Past Medical History  
+- Chronic sinusitis (ongoing)  
+- Essential hypertension (ongoing)  
+- Ischemic heart disease (ongoing)  
+- Chronic kidney disease stage 3 (ongoing) with prior stages 1‑4 documented; current estimated GFR 74 mL/min/1.73 m², creatinine 2.72 mg/dL  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (ongoing)  
+- Hyperlipidemia (ongoing)  
+- Obesity (BMI > 30)  
+- Anemia (ongoing)  
+- Prior stroke (1990)  
+- History of renal transplantation (ongoing)  
+- Pneumonia documented in 1993 (ongoing)  
+
+Past Surgical History  
+- No surgical procedures reported.  
+
+Medications  
+Current medication list in the record includes:  
+- Alteplase (active)  
+- Amoxicillin/clavulanate (active until 1989‑04‑25)  
+- Tacrolimus (oral and injectable forms, active until 1987‑01‑06)  
+- Sodium fluoride gel (active until 1983‑06‑07)  
+- Epoetin alfa (active until 1983‑05‑10)  
+- Hydrochlorothiazide 25 mg daily (active until 1983‑04‑26)  
+- Lisinopril 10 mg daily (active until 1983‑04‑26)  
+- Simvastatin 10 mg daily (active until 1992‑06‑18)  
+- Nitroglycerin 0.4 mg spray (active)  
+
+The patient reports taking no medications at present and is not on any chronic therapy for her chronic conditions according to the interview.  
+
+Allergies  
+No drug, food, or environmental allergies reported.  
+
+Social History  
+- Tobacco: Smokes approximately 10 cigarettes per day; started at age 20 (≈87 years of smoking).  
+- Cannabis: Occasional use, roughly 5 mg per week.  
+- Alcohol: Approximately five standard drinks per week.  
+- Occupational exposure: Works in a crowded environment with a malfunctioning air‑conditioning system, high humidity, and likely poor ventilation; possible exposure to mold, dust, and asbestos due to the age of the building.  
+- Home environment: Resides in a poorly maintained apartment with possible mold/dust exposure.  
+- Pets: Keeps birds for the past three years with no prior respiratory issues.  
+- Exercise: Minimal physical activity.  
+- Diet: Predominantly fast food and junk food.  
+
+Family History  
+No reported family history of cancer, cardiovascular disease, or pulmonary disorders.  
+
+Review of Systems  
+Constitutional: Subjective chills and low‑grade fever; no documented temperature, weight loss, or night sweats.  
+HEENT: Recent runny nose; no sore throat or sinus pain presently.  
+Respiratory: Persistent dyspnea, productive cough with rusty sputum, mild wheezing, and pleuritic chest pain with cough. No hemoptysis.  
+Cardiovascular: No chest pressure, palpitations, or known heart failure symptoms.  
+GI: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No headache, dizziness, or syncope.  
+Musculoskeletal: No joint pain.  
+Psychiatric: No depression or anxiety reported during interview.  
+
+Physical Examination (Objective)  
+Vital signs: Not documented at this encounter.  
+General: Elderly female, appears mildly uncomfortable due to cough.  
+HEENT: Nasal mucosa mildly congested; oropharynx without exudates.  
+Neck: No jugular venous distention.  
+Chest/Lungs: Scattered wheezes heard bilaterally; no obvious crackles documented; use of accessory muscles with exertion.  
+Cardiovascular: Regular rate and rhythm; no murmurs noted.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No edema.  
+Neurologic: Alert and oriented ×3.  
+
+Laboratory Data (most recent)  
+- Creatinine: 2.72 mg/dL (elevated)  
+- eGFR: 74 mL/min/1.73 m²  
+- Electrolytes: Na 142.9 mmol/L, K 4.7 mmol/L, Cl 107.4 mmol/L, Ca 9.33 mg/dL  
+- Lipid panel: Total cholesterol 150.7 mg/dL, HDL 49.2 mg/dL, LDL 75.7 mg/dL, Triglycerides 128.8 mg/dL  
+- Liver enzymes: ALT 34 U/L, Bilirubin 0.45 mg/dL, Albumin 4.49 g/dL  
+- Hematology: Anemia noted (specific values not provided).  
+- PHQ‑2 score: 2 (positive screen)  
+- DAST‑10 score: 1 (low risk for substance misuse)  
+
+Assessment  
+1. Acute community‑acquired pneumonia versus COPD exacerbation – presentation of abrupt dyspnea, productive cough with rusty sputum, wheezing, and pleuritic chest pain in a long‑term smoker with multiple comorbidities.  
+2. Chronic obstructive pulmonary disease (probable) – long smoking history, wheezing, exertional dyspnea.  
+3. Hypertension, ischemic heart disease, type 2 diabetes mellitus, chronic kidney disease stage 3, hyperlipidemia – chronic conditions noted in the record, currently without documented control parameters.  
+4. Anemia – ongoing, etiology unclear.  
+5. Nutritional risk – poor diet, obesity.  
+6. Positive PHQ‑2 screen – possible depressive symptoms.  
+
+Plan  
+Diagnostic Studies  
+- Obtain chest radiograph (PA and lateral) to assess for infiltrates, consolidation, or cavitation.  
+- CBC with differential to evaluate leukocytosis and quantify anemia.  
+- Sputum Gram stain and culture, including acid‑fast bacilli smear given rusty sputum.  
+- Blood cultures given fever/chills.  
+- Pulse oximetry and arterial blood gas if SpO₂ < 92% or respiratory distress worsens.  
+- Consider spirometry after acute phase to quantify COPD severity.  
+
+Therapeutic Interventions  
+- Initiate empiric antibiotic therapy for community‑acquired pneumonia (e.g., oral amoxicillin‑clavulanate 875 mg/125 mg BID) pending cultures, unless contraindicated.  
+- Begin short‑acting bronchodilator (albuterol inhaler, 2 puffs every 4‑6 hours as needed) for wheezing and dyspnea.  
+- Consider systemic corticosteroid (prednisone 40 mg daily for 5 days) if clinical picture favors COPD exacerbation.  
+- Continue acetaminophen for fever and comfort; advise measuring temperature.  
+- Encourage smoking cessation; offer nicotine replacement therapy or varenicline, with counseling.  
+- Counsel regarding avoidance of indoor pollutants (mold, dust, bird droppings) and improvement of home ventilation.  
+
+Chronic Disease Management  
+- Review antihypertensive regimen; consider restarting lisinopril or other agents once renal function stable.  
+- Reinstate diabetes management; schedule fasting glucose/HbA1c.  
+- Optimize lipid management; consider statin therapy (e.g., continue simvastatin if still indicated).  
+- Monitor renal function closely given elevated creatinine and CKD.  
+
+Psychosocial/Follow‑up  
+- Address positive PHQ‑2 with brief counseling; arrange follow‑up with primary care or behavioral health for full PHQ‑9 evaluation.  
+- Discuss nutrition; refer to dietitian for heart‑healthy, low‑sodium, low‑sugar meal planning.  
+- Schedule return visit in 48‑72 hours to reassess respiratory status, review test results, and adjust therapy.  
+- Advise patient to seek emergent care if experiencing worsening shortness of breath, chest pain radiating, syncope, or new hemoptysis.  
+
+Patient Education  
+- Reviewed signs of worsening infection and when to seek urgent care.  
+- Provided instruction on proper inhaler technique.  
+- Discussed importance of medication adherence for chronic conditions.  
+
+Disposition  
+Patient to remain at home with close outpatient follow‑up, pending diagnostic results and clinical response to empiric therapy.  
+
+Signature: _______________________   Date: ____________   Provider: _______________________   (Physician)

@@ -1,0 +1,72 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:35:16
+Time: 2.31s
+Tokens: 11,991 in / 1,088 out
+============================================================
+
+Patient Information:
+Name: Unknown. Age: Not specified in the encounter. Sex: Female. Occupation: Student. Living Situation: Lives with two roommates in a shared residence. This summary is based on the current presentation and the physician-patient conversation; historical data from a prior OpenEMR record (dated 1920) is disregarded as it does not reflect the present patient.
+
+Chief Complaint:
+Acute onset of watery diarrhea, abdominal cramping, nausea, and vomiting.
+
+History of Present Illness:
+The patient reports a 3–4‑day history of frequent loose bowel movements, occurring approximately hourly, with no visible blood and brown stool color. She notes intermittent abdominal cramping that began roughly one day ago, described as “a bit of a cramp” that comes and goes. Nausea is present intermittently, and she has vomited twice over the past two days; the vomitus is watery with no blood. She denies any fever, chills, or systemic symptoms. She has not taken any over‑the‑counter medications for her symptoms but has increased oral fluid intake to prevent dehydration. She reports eating less since the onset of cramping. The onset of symptoms followed a meal at a new Chinese restaurant five days ago, where she consumed rice with chicken Manchurian. No other recent dietary changes or exposures are noted. She has no history of prior similar episodes and denies recent travel. No sick contacts have been reported. She denies any history of chronic gastrointestinal disorders and has no known food intolerances.
+
+Past Medical History:
+Asthma – controlled with inhaled rescue medication as needed. No other chronic medical conditions reported by the patient. No history of surgeries or invasive procedures.
+
+Surgical History:
+None reported.
+
+Medications:
+- Asthma inhaler (puffer) – used as needed. No other medications reported at this time.
+
+Allergies:
+None reported.
+
+Family History:
+- Brother had appendicitis as a child. Mother underwent a hysterectomy. No other known family gastrointestinal or systemic conditions.
+
+Social History:
+- Student, living with roommates.
+- Occasional alcohol consumption (one to two drinks on weekends).
+- Denies tobacco use or illicit drug use.
+- No significant occupational exposures.
+
+Review of Systems:
+General: Denies fever, chills, weight loss, or fatigue beyond feeling tired.  
+Cardiovascular: No chest pain, palpitations, or dyspnea.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Gastrointestinal: Frequent watery diarrhea, intermittent abdominal cramps, nausea, and vomiting; no blood in stool or vomitus; no constipation.  
+Genitourinary: No dysuria or hematuria.  
+Skin: No rashes or lesions.  
+Neurologic: No headaches or dizziness.  
+Psychiatric: No reported mood changes or anxiety.
+
+Physical Examination:
+Vital signs: No information available.  
+General appearance: Alert, oriented, in mild distress due to abdominal discomfort.  
+Abdominal: Soft, non‑tender, no guarding or rebound tenderness reported by the patient; no masses noted. No reported abdominal distension.  
+Extremities: No edema.  
+Skin: No rashes or lesions.  
+Other systems: Unremarkable.
+
+Laboratory Results:
+No laboratory studies were performed during this encounter.
+
+Assessment:
+The presentation is consistent with an acute infectious gastroenteritis, most likely foodborne, given the temporal relationship with a recent meal at a new restaurant and the absence of chronic gastrointestinal disease or systemic infection. The absence of fever, blood in stool, or significant abdominal pain reduces concern for severe bacterial pathogens such as Shigella, Campylobacter, or invasive Salmonella. The patient’s symptoms are self‑limited, with no signs of dehydration beyond mild fluid intake increase. Differential includes viral gastroenteritis (norovirus, rotavirus) or a mild bacterial colitis.
+
+Plan:
+1. Rehydration: Encourage oral fluid intake with oral rehydration solution; consider electrolyte‑balanced drinks if nausea persists.  
+2. Symptom control: If abdominal cramping worsens, consider a short course of antispasmodic (e.g., hyoscine butylbromide) after evaluation.  
+3. Dietary advice: Soft diet, avoid irritants (spicy, fatty foods) until symptoms resolve.  
+4. Stool sample: Offer a stool specimen for culture, ova/parasites, and Clostridioides difficile toxin if symptoms persist or worsen, to rule out bacterial or toxin‑mediated causes.  
+5. Monitor for dehydration: If the patient develops dizziness, decreased urine output, or persistent vomiting, advise immediate medical attention.  
+6. Follow‑up: Return to the clinic or urgent care within 48–72 hours if symptoms do not improve, or sooner if vomiting becomes frequent, diarrhea persists beyond 7 days, or signs of systemic illness develop.  
+7. Education: Discuss the importance of hand hygiene, safe food handling, and avoiding potential foodborne exposures in the future.  
+
+No additional imaging or advanced diagnostics are indicated at this time. The patient was instructed to seek care promptly if she experiences worsening abdominal pain, persistent vomiting, signs of dehydration, or any new concerning symptoms.

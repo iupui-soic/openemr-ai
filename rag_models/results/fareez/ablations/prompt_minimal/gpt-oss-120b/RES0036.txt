@@ -1,0 +1,172 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:21:26
+Time: 6.93s
+Tokens: 10,351 in / 2,595 out
+============================================================
+
+**Patient Information**  
+**Name:** Adrianna Camelia Wuckert **DOB:** 02/25/1919 **Age:** 107 years **Sex:** Female **MRN:** 1637 **Address:** 609 Bartell Gate, Marshfield, MA 02050  
+
+---
+
+## Subjective  
+
+**Chief Complaint**  
+“Shortness of breath and cough for the past six days.”
+
+**History of Present Illness (HPI)**  
+Ms. Wuckert reports a **6‑day** history of progressively worsening dyspnea that began **suddenly** while at home. She now has to stop frequently while walking short distances (e.g., from her car to the house). The dyspnea is **constant** and worsens with exertion; it is not clearly related to time of day, temperature, or allergens.  
+
+She also notes a **productive cough** that started at the same time as the dyspnea. The sputum is described as **rust‑colored** and occurs “a couple of times a day.” She denies gross hemoptysis.  
+
+Associated symptoms include:  
+
+- Subjective fever/chills (“feeling cold,” “a little feverish”) – no measured temperature.  
+- **Wheezing** on exertion (patient reports “some wheezing”).  
+- Sharp, pleuritic chest pain that is **exacerbated by coughing** (pain score ≈ 7/10), which gradually improves when coughing subsides.  
+- No night‑time worsening, no orthopnea, no paroxysmal nocturnal dyspnea.  
+- No recent travel, no known sick contacts, and no prior similar episodes.  
+
+She reports a **recent runny nose** a few days before the onset of respiratory symptoms.  
+
+**Past Medical History** (selected, most relevant)  
+- Essential hypertension  
+- Ischemic heart disease  
+- Chronic kidney disease (stage 4) with prior renal transplant (ongoing)  
+- Type 2 diabetes mellitus with microalbuminuria/proteinuria  
+- Hyperlipidemia  
+- Obesity (BMI > 30)  
+- Anemia  
+- Chronic sinusitis  
+
+**Past Surgical History** – None reported.  
+
+**Medications** (as listed in the electronic record; patient reports currently not taking any new meds)  
+- Lisinopril 10 mg PO daily  
+- Hydrochlorothiazide 25 mg PO daily  
+- Simvastatin 10 mg PO nightly  
+- Nitroglycerin 0.4 mg spray PRN for chest pain  
+- Tacrolimus (post‑transplant immunosuppression) – dosing not specified in interview  
+- Other chronic medications (e.g., epoetin alfa) noted in chart  
+
+**Allergies** – No known drug allergies reported.  
+
+**Social History**  
+- **Smoking:** 10 cigarettes/day for ~87 years (started at age 20).  
+- **Alcohol:** Approximately 5 drinks per week.  
+- **Cannabis:** Occasional, ~5 mg THC per week.  
+- **Illicit drugs:** None.  
+- **Occupation:** Works in a crowded environment with a broken air‑conditioning unit; the workplace is humid, poorly maintained, and likely has mold/dust exposure.  
+- **Housing:** Small, poorly maintained apartment with possible mold/dust; keeps pet birds (≈ 3 years).  
+- **Exercise & Diet:** Minimal exercise; diet high in fast food/junk food.  
+
+**Family History** – No known family history of lung disease, cancer, cardiac disease, or other significant conditions.  
+
+**Review of Systems (pertinent positives/negatives)**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | Feverish feeling, chills, fatigue (implied) | No documented weight loss, no night sweats |
+| Respiratory | Dyspnea, productive cough with rusty sputum, wheezing, pleuritic chest pain | No hemoptysis, no orthopnea, no PND |
+| Cardiovascular | Chest pain (pleuritic) | No palpitations, no known arrhythmias |
+| Gastrointestinal | None reported | No nausea/vomiting, no abdominal pain, no bowel changes |
+| Neurologic | None reported | No headache, dizziness, syncope |
+| Dermatologic | None reported | No rash |
+| Psychiatric | None reported | No anxiety/depression noted in interview (though historic anxiety in chart) |
+
+---
+
+## Objective  
+
+**Vital Signs** – Not recorded at this encounter (vitals unavailable in the extracted record).  
+
+**Physical Examination** – Not documented in the transcript; assume bedside exam pending.  
+
+**Laboratory Data (most recent)**  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| Creatinine | 2.72 mg/dL | Elevated (baseline CKD) |
+| eGFR (MDRD) | 74 mL/min/1.73 m² | Consistent with CKD stage 3‑4 |
+| Electrolytes – Na⁺ 142.9 mmol/L, K⁺ 4.7 mmol/L, Cl⁻ 107.4 mmol/L | Within normal limits |
+| BUN 11.8 mg/dL | Normal |
+| Liver panel – ALT 34 U/L, Total bilirubin 0.45 mg/dL, Albumin 4.49 g/dL, Calcium 9.33 mg/dL | Within normal limits |
+| Lipids – Total cholesterol 150–186 mg/dL, HDL 46–49 mg/dL, LDL 75–85 mg/dL, Triglycerides 129 mg/dL | Acceptable |
+| PHQ‑2 score 2 (positive screen) | Suggests possible depression, but not the focus today |
+| DAST‑10 score 1 (low risk for substance use) | |
+
+**Microbiology / Imaging** – No results available; pending chest radiograph and sputum studies as ordered below.  
+
+---
+
+## Assessment  
+
+1. **Community‑Acquired Pneumonia (CAP)** – Acute onset of dyspnea, productive cough with rusty sputum, pleuritic chest pain, low‑grade fever/chills, wheezing, and risk factors (smoking, poor housing, bird exposure).  
+2. **Chronic Obstructive Pulmonary Disease (COPD) Exacerbation** – Long‑standing heavy smoking, wheezing, and increased dyspnea suggest underlying COPD contributing to the clinical picture.  
+3. **Heart Disease – Stable Ischemic Heart Disease** – Known coronary disease; chest pain appears pleuritic rather than ischemic but requires monitoring.  
+4. **Chronic Kidney Disease, Stage 4 (post‑transplant)** – Baseline creatinine elevation; dosing of renally cleared antibiotics will need adjustment.  
+5. **Potential Atypical Pathogen Exposure** – Bird ownership raises concern for *Chlamydia psittaci* (psittacosis); occupational exposure to mold/dust raises possibility of atypical bacterial or fungal pathogens.  
+
+---
+
+## Plan  
+
+### Diagnostic Studies  
+- **Chest X‑ray (PA & lateral)** – To confirm infiltrate, assess extent, and look for complications (e.g., effusion).  
+- **CBC with differential** – To evaluate leukocytosis, anemia, and baseline hematology.  
+- **Comprehensive metabolic panel (BMP)** – Repeat to monitor renal function and electrolytes.  
+- **Sputum Gram stain and culture** – Including atypical panel (Mycoplasma, Chlamydia, Legionella).  
+- **Blood cultures** – Two sets before antibiotics if febrile.  
+- **Urine antigen for Legionella pneumophila** – Given recent exposure to humid, poorly maintained environment.  
+- **Consider viral PCR (influenza, RSV)** if flu season or high suspicion.  
+
+### Therapeutic Interventions  
+
+**Empiric Antibiotic Therapy** (adjusted for CKD):  
+- **Levofloxacin 500 mg PO daily** (or 750 mg if renal function permits) **for 5–7 days** – Provides coverage for typical and atypical pathogens and is appropriate for COPD exacerbation.  
+  *If levofloxacin is contraindicated, consider **azithromycin 500 mg PO daily** for 3 days plus **amoxicillin‑clavulanate 875/125 mg PO BID** (dose reduced for creatinine >2 mg/dL).*
+
+**COPD Management**  
+- **Short‑acting bronchodilator** (e.g., albuterol inhaler 2 puffs every 4–6 h PRN).  
+- **Systemic corticosteroid** – Prednisone 40 mg PO daily for 5 days (if wheezing or significant airflow limitation is confirmed on exam).  
+
+**Supportive Care**  
+- **Antipyretic** – Acetaminophen 650 mg PO q6h PRN for fever/chills (patient already using Tylenol).  
+- **Hydration** – Encourage oral fluids; consider IV fluids if oral intake limited.  
+
+**Medication Review & Adjustments**  
+- Hold **hydrochlorothiazide** if volume status uncertain and renal function is borderline.  
+- Verify dosing of **tacrolimus** and ensure therapeutic trough; avoid nephrotoxic agents.  
+- Continue **lisinopril**, **simvastatin**, **nitroglycerin** as per home regimen, unless contraindicated after labs.  
+
+### Patient Education & Counseling  
+
+- **Smoking cessation** – Offer nicotine replacement therapy, referral to cessation program, and discuss benefits even at advanced age.  
+- **Vaccinations** – Recommend pneumococcal vaccine (PCV20) and annual influenza vaccine if not up to date.  
+- **Environmental control** – Advise improving ventilation at home/work, addressing mold, and minimizing bird exposure; consider cleaning or relocating birds if symptoms persist.  
+- **Medication adherence** – Emphasize completing full antibiotic course.  
+
+### Follow‑Up  
+
+- **Re‑evaluation in 48‑72 hours** (in‑person or telehealth) to assess response to antibiotics, symptom progression, and side effects.  
+- **Chest radiograph repeat** if no clinical improvement or if worsening.  
+- **Pulmonary function testing** after acute phase to quantify COPD severity.  
+- **Nephrology follow‑up** within 1 week to reassess renal function and tacrolimus levels.  
+- **Cardiology follow‑up** as routine for known ischemic disease; urgent if chest pain changes character or becomes pressure‑like.  
+
+### Discharge Instructions (if appropriate)  
+
+1. Take prescribed antibiotics exactly as directed; complete the entire course.  
+2. Use albuterol inhaler as needed for wheezing; do not exceed 4 doses in 24 h without contacting the clinic.  
+3. Monitor temperature twice daily; seek care if > 101.5 °F, if dyspnea worsens, or if you develop new chest pain.  
+4. Continue home medications (lisinopril, simvastatin, nitroglycerin) unless instructed otherwise.  
+5. Avoid smoking and exposure to bird droppings, dust, and mold; keep living area well‑ventilated.  
+6. Stay hydrated and rest; maintain a balanced diet.  
+7. Follow up with primary care in 5‑7 days and with the pulmonology clinic within 2 weeks.  
+
+---
+
+**Signature:**  
+Dr. _______________________ Date: 04/14/2026 (Electronic)

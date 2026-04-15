@@ -1,0 +1,112 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:14:11
+Time: 5.14s
+Tokens: 11,451 in / 1,941 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914-01-07 (Age: 112 years)  
+Sex: Female  
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+Medical Record Number: 982  
+
+Chief Complaint  
+Shortness of breath, chest discomfort, and productive cough of five days duration.  
+
+History of Present Illness  
+The patient reports a five‑day history of worsening shortness of breath and a cough that has become progressively more troublesome. She describes the cough as productive, expectorating a small amount of yellow‑green sputum that fills approximately the interior of her palm with each episode. She denies hemoptysis. The dyspnea is exertional; she feels unable to catch her breath with ordinary household activities that she previously tolerated, although she is comfortable at rest while seated. She notes a constant sense of chest “discomfort” or congestion without sharp, stabbing, or pressure‑type pain. The discomfort is present at rest and does not change with position or when lying flat. She denies nocturnal dyspnea, orthopnea, or paroxysmal nocturnal dyspnea. She reports feeling “feverish” over the past two days but has not measured a temperature. She denies sore throat, rhinorrhea, nausea, vomiting, diarrhea, constipation, urinary symptoms, headaches, visual changes, palpitations, or recent weight loss. She has a known history of chronic obstructive pulmonary disease (COPD) diagnosed three years ago, hypertension, and gastroesophageal reflux disease (GERD). She previously used an inhaler (Ventolin) with occasional relief but this episode has required three to four puffs of her rescue inhaler this morning and similar use last night, which is more frequent than her usual 2–3 uses per week. She wonders whether the current problem represents an infection or a COPD exacerbation.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed 3 years ago)  
+- Hypertension (essential)  
+- Gastroesophageal reflux disease  
+- Alzheimer’s disease  
+- Ischemic heart disease with prior myocardial infarction and coronary artery bypass grafting  
+- Hyperlipidemia  
+- Metabolic syndrome, prediabetes, and obesity (BMI ≈ 27.4)  
+- Chronic kidney disease (stage 1–4 historical, currently not on dialysis)  
+- History of renal transplant (ongoing)  
+
+Past Surgical History  
+- Coronary artery bypass grafting (date not specified)  
+
+Allergies  
+No known drug allergies reported.  
+
+Medications (active)  
+- Symbicort (inhaled corticosteroid/long‑acting β2‑agonist) – daily  
+- Ventolin (albuterol) – rescue inhaler as needed  
+- ACE inhibitor for hypertension (specific agent not named)  
+- Tums (calcium carbonate) – PRN for reflux  
+- Donepezil/Hydromethyl (24 hr) – for Alzheimer’s disease  
+- Tacrolimus (extended‑release) – for renal transplant (dose unspecified)  
+- Metoprolol succinate 100 mg ER – for cardiovascular disease  
+- Valsartan 320 mg – for hypertension  
+- Atorvastatin 40 mg – lipid control  
+- Simvastatin 20 mg – lipid control  
+- Aspirin 81 mg – antiplatelet therapy  
+- AmLODIPine 2.5 mg – antihypertensive  
+- Nitroglycerin spray – PRN for chest discomfort  
+- Additional over‑the‑counter cough/URI preparation (acetaminophen/dextromethorphan/doxylamine) – as needed  
+
+Social History  
+The patient lives in an apartment with her adult daughter. She is currently employed part‑time at a grocery store. She has a 30‑ to 40‑year smoking history, presently smoking approximately one pack per day. She denies use of marijuana or other illicit substances. Alcohol consumption is limited to wine with dinner on weekends.  
+
+Family History  
+No reported family history of lung, cardiac, or oncologic disease.  
+
+Review of Systems  
+Constitutional: Reports feeling feverish; no measured temperature, no chills, night sweats, or recent weight change.  
+Respiratory: Progressive dyspnea on exertion, productive cough with yellow‑green sputum, no hemoptysis, no wheezing reported, no orthopnea or PND.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or change in appetite.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headaches, visual changes, or focal deficits.  
+Musculoskeletal: No new joint pain or weakness.  
+Psychiatric: No depressive symptoms beyond a PHQ‑2 score of 2; no anxiety (GAD‑7 score 0).  
+
+Physical Examination  
+No physical examination data recorded in the transcript. Vital signs at the time of encounter were not documented (temperature, blood pressure, respiratory rate, SpO₂).  
+
+Objective Findings  
+Laboratory data available from the most recent panel show:  
+- Serum sodium 138–139 mmol/L, potassium 4.85 mmol/L, chloride 105–106.7 mmol/L.  
+- Blood urea nitrogen 10.35 mg/dL, creatinine 0.42 mg/dL, estimated GFR 88.5 mL/min/1.73 m².  
+- Glucose 96.7 mg/dL.  
+- Calcium 9.48 mg/dL, albumin 3.73 g/dL.  
+- Liver enzymes: ALT 52 U/L, total bilirubin 0.69 mg/dL, cholesterol 204 mg/dL.  
+- Arterial blood gas not provided; CO₂ total 26.9 mmol/L.  
+- PHQ‑2 score of 2 (positive screen for possible depression), GAD‑7 score of 0.  
+
+Assessment  
+1. Acute COPD exacerbation with possible bacterial infection. The presence of feverish sensation, purulent sputum, and worsening dyspnea suggests a superimposed lower respiratory tract infection.  
+2. Community‑acquired pneumonia cannot be excluded pending chest imaging; the working diagnosis is “pneumonia” per the OpenEMR problem list.  
+3. Hypertension, currently on ACE inhibitor, amlodipine, valsartan, and metoprolol succinate.  
+4. Chronic kidney disease (stage 1–4 historical) with stable renal function.  
+5. Alzheimer’s disease, on donepezil/memantine.  
+6. GERD, well‑controlled with antacids.  
+7. Active tobacco use, 1 pack per day.  
+
+Plan  
+- Immediate administration of nebulized short‑acting bronchodilator (albuterol) and ipratropium in the emergency department.  
+- Initiate systemic corticosteroid therapy (e.g., prednisone 40 mg PO daily for 5 days) to treat COPD exacerbation.  
+- Obtain a chest radiograph to evaluate for infiltrates consistent with pneumonia.  
+- Perform a nasopharyngeal swab for SARS‑CoV‑2 PCR and a sputum culture to guide antimicrobial therapy.  
+- Begin empiric antibiotic coverage for community‑acquired pneumonia (e.g., oral amoxicillin‑clavulanate or a macrolide, adjusted for renal function and local resistance patterns).  
+- Continue regular inhaled maintenance therapy (Symbicort) and rescue inhaler as needed; consider adding a long‑acting muscarinic antagonist if indicated.  
+- Monitor vital signs, oxygen saturation, and respiratory status closely; supplemental oxygen to maintain SpO₂ ≥ 90 % if needed.  
+- Counsel on smoking cessation; offer referral to tobacco cessation program, nicotine replacement, and behavioral support.  
+- Review and reinforce adherence to antihypertensive regimen; obtain blood pressure measurement on follow‑up.  
+- Arrange follow‑up with primary care within 48–72 hours after discharge to reassess respiratory status, review culture results, and adjust antibiotics as needed.  
+- Provide education on signs of worsening dyspnea, chest pain, hemoptysis, or fever that would require immediate return to the emergency department.  
+- Continue current GERD management; advise taking antacids after meals if symptoms recur.  
+- No changes to Alzheimer’s disease regimen at this time.  
+
+Disposition  
+The patient will be evaluated in the emergency department, receive the above acute interventions, and be observed for clinical response. Admission will be considered based on oxygen requirements, response to therapy, and radiographic findings.  
+
+Signature  
+Physician: ______________________   Date: ______________________   (Electronic Signature)

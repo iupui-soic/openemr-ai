@@ -1,0 +1,29 @@
+Model: google/medgemma-4b-it
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:33:44
+Time: 36.28s
+Tokens: 7,834 in / 663 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Name: Abbie Stamm
+DOB: 2001-11-16
+Sex: Female
+Unit Number: 123
+
+Chief Complaint: Patient presents with fever and cough.
+
+History of Present Illness:
+
+The patient reports a fever that started four days ago, along with a cough that began four days ago. The patient notes that the cough has been getting worse, and they are feeling fatigued and tired. The patient denies any prior similar episodes. She denies a sore throat, difficulty swallowing, or changes in taste or smell. She reports a runny nose, but not severe congestion. She denies any hearing or vision changes, ear or eye pain, or sputum production. She denies wheezing or shortness of breath. She denies chest pain, palpitations, or night sweats. The patient denies weight loss. She reports that the cough is dry. She denies any blood associated with the cough. She denies any changes in bowel movements or abdominal pain. She denies nausea, vomiting, or changes in taste. She reports feeling a little chilly at night, but no night sweats. She denies any changes in urinary habits or urine color. She denies any pain or discharge from the ears or eyes. The patient reports feeling better after some coughing fits, but she is still a little short of breath. She denies any chest pain. She denies any heart racing. She denies any changes in appetite. She reports that the cough is not affected by anything specific. She reports feeling a little body aches. She reports that she has been feeling tired. She reports that her headache has been on and off these last several days. She denies any memory loss or confusion. She denies any dizziness or fainting spells. The patient reports being otherwise healthy, except for a history of high cholesterol, which she is being treated for with Rosuvastatin. She also reports being pre-diabetic, with an A1C of 6.2%. She reports making lifestyle changes to control her blood glucose, including walking the dog more and eating out less. She denies any recent surgeries or hospitalizations. She reports being up to date on immunizations. She denies any family history of lung or heart conditions. She denies any cancers in the family. She denies any changes in urinary habits or urine color. She denies any smoking or marijuana use. She reports occasional alcohol use (2-3 beers on Saturday and Sunday). She lives in a duplex and rents the basement. She lives with her girlfriend. She denies any concerns about old carpets or mold in the duplex.
+
+Assessment:
+
+The patient presents with symptoms suggestive of an upper respiratory infection, possibly viral in nature. Given the recent onset of symptoms and the patient's history of being pre-diabetic, COVID-19 is also a consideration.
+
+Plan:
+
+The patient is advised to isolate for 14 days, including her girlfriend, even if the COVID swab comes back negative. The patient will receive a COVID swab. The patient will be notified if the swab comes back positive. The patient will be instructed to follow up with the provider if symptoms persist or worsen. The patient will be reviewed for lifestyle changes to control her blood glucose. The patient will be discharged with Rosuvastatin and a multi-vitamin.

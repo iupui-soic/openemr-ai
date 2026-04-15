@@ -1,0 +1,96 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:16:58
+Time: 3.00s
+Tokens: 15,271 in / 1,319 out
+============================================================
+
+Patient Information  
+Name: Not provided in the encounter transcript.  
+Sex: Female (patient identifies as having undergone a hysterectomy).  
+Date of Birth: Not provided.  
+Address: Not provided.  
+
+Chief Complaint  
+The patient reports a persistent, sharp left-sided chest pain that has been present for five days, accompanied by shortness of breath, especially on exertion.
+
+History of Present Illness  
+The patient began experiencing a lingering, sharp pain localized to the left side of the chest five days ago. The pain is constant, does not radiate, and is exacerbated by deep inspiration and walking. She has taken acetaminophen and ibuprofen with only minimal relief. The pain has not improved, worsened, or changed in character over time. The patient denies fever, chills, cough, sputum, wheezing, nausea, vomiting, or syncope. She reports mild fatigue secondary to decreased activity because of dyspnea. She has no known history of cardiac or pulmonary disease and had no prior episodes of chest pain.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or significant weight change. Mild fatigue related to decreased activity.  
+Respiratory: Persistent left-sided chest pain worsened by deep breathing; dyspnea on exertion; no cough, wheeze, or sputum.  
+Cardiovascular: No palpitations, chest pain radiating to arm or jaw, or episodes of syncope.  
+Gastrointestinal: No abdominal pain, nausea, or vomiting.  
+Genitourinary: No urinary complaints; recent hysterectomy one month ago with normal recovery.  
+Musculoskeletal: No joint or muscle pain.  
+Skin: No rashes or skin changes.  
+
+Past Medical History  
+- Hysterectomy (performed approximately one month prior to presentation).  
+No other chronic medical conditions or prior surgeries reported by the patient.  
+
+Surgical History  
+- Hysterectomy (one month ago).  
+
+Social History  
+The patient lives with her husband and two teenage children. She works as an accountant. She consumes a glass of wine on weekends and smokes approximately five cigarettes per day, attempting to quit. She reports no recreational drug use. No regular exercise routine.  
+
+Family History  
+- Mother suffered a myocardial infarction in her 70s.  
+No other known family history of cardiovascular disease, cancer, or bleeding disorders.  
+
+Medications  
+The patient is not taking any regular prescription or over‑the‑counter medications. She has used acetaminophen and ibuprofen for pain relief during this episode.  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No physical examination data were documented during this encounter.  
+
+Laboratory Results  
+- White blood cell count: 9.49 ×10^3/µL (normal).  
+- Red blood cell count: 3.80 ×10^6/µL (low‑normal).  
+- Hemoglobin: 16.9 g/dL (normal).  
+- Hematocrit: 47.5% (normal).  
+- Mean corpuscular volume: 80.6 fL (normal).  
+- Mean corpuscular hemoglobin: 27.1 pg (normal).  
+- Mean corpuscular hemoglobin concentration: 33.4 g/dL (normal).  
+- Red cell distribution width: 14.5% (normal).  
+- Platelets: 296.7 ×10^3/µL (normal).  
+- Glucose: 82.8 mg/dL (normal).  
+- Blood urea nitrogen: 10.5 mg/dL (normal).  
+- Creatinine: 0.88 mg/dL (normal).  
+- Calcium: 8.79 mg/dL (normal).  
+- Sodium: 142.9 mmol/L (normal).  
+- Potassium: 3.73 mmol/L (normal).  
+- Chloride: 102.3 mmol/L (normal).  
+- Bicarbonate: 23.2 mmol/L (normal).  
+- Estimated glomerular filtration rate: 158 mL/min/1.73 m² (normal).  
+- Serum protein: 6.86 g/dL (normal).  
+
+Imaging  
+No imaging studies have been performed at this time. The provider plans to evaluate for pulmonary embolism with appropriate laboratory and imaging workup.  
+
+Assessment  
+The patient presents with acute, non‑radiating left‑sided chest pain and dyspnea on exertion. Differential diagnosis includes pulmonary embolism, musculoskeletal chest wall pain, and less likely acute coronary syndrome. The patient’s risk factors for venous thromboembolism are limited; however, recent abdominal surgery (hysterectomy) and smoking history raise concern. The absence of fever, cough, or respiratory infection reduces the likelihood of pneumonia or pulmonary embolism secondary to infection. The normal laboratory values and lack of cardiac enzyme elevation make acute coronary syndrome less likely, but cannot be excluded without further testing.
+
+Plan  
+1. Order a D‑dimer assay to screen for pulmonary embolism.  
+2. If D‑dimer is elevated or clinical suspicion remains high, obtain a computed tomography pulmonary angiography (CTPA).  
+3. Monitor vital signs, oxygen saturation, and symptom progression.  
+4. Encourage rest and avoid strenuous activity until evaluation is complete.  
+5. Advise the patient to seek immediate medical attention if chest pain becomes more severe, if she experiences palpitations, syncope, or worsening shortness of breath.  
+6. Discuss smoking cessation strategies and provide resources for cessation support.  
+7. Schedule a follow‑up appointment within 48–72 hours to review imaging results and adjust management accordingly.  
+
+Discharge Instructions  
+- Rest and avoid heavy lifting or strenuous exercise until cleared by the provider.  
+- Take acetaminophen or ibuprofen as needed for pain, but do not exceed recommended doses.  
+- Keep a symptom diary noting pain intensity, location, and any associated symptoms such as shortness of breath or dizziness.  
+- Continue to monitor for any new symptoms such as fever, cough, or worsening chest pain.  
+
+Follow‑up Instructions  
+Return to the clinic or urgent care if symptoms worsen or new symptoms develop. Follow up with the primary care provider within one week of imaging results to discuss further management.

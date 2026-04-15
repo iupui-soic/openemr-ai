@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:35:30
+Time: 3.26s
+Tokens: 9,622 in / 1,289 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Date of Birth: April 7, 1943 (approximately 45 years old per patient report)  
+Gender: Male  
+Clinic ID: 820  
+
+Chief Complaint  
+The patient presents with a painful, red, and swollen rash on his right lower leg that has been evolving over the past week and became more tender yesterday.  
+
+History of Present Illness  
+Mr. Crona reports that a small rash appeared on the right ankle about a week ago. Over the past several days the area has become increasingly swollen, red, and tender. He describes the pain as more intense when he flexes the ankle or walks, though it is less pronounced on light touch. Yesterday the lesion began to leak a white discharge, and he has noticed a developing open wound with scabs. He has a known history of type II diabetes mellitus but has not measured his blood glucose for some time; he recalls an A1C of approximately 9.0 % on his last check. He also has an ulcer on his left heel that is healing but he does not feel it is currently problematic. The patient reports feeling warm and somewhat feverish for the past 12 hours but does not have a recorded temperature. He denies shortness of breath, chest pain, or other systemic complaints.  
+
+Review of Systems  
+Constitutional: Reports general fatigue, increased hunger, slight weight gain, and feeling “crummy” over the last few weeks.  
+Respiratory: Denies shortness of breath, cough, or wheeze.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel habits.  
+Dermatologic: Rash on right lower leg with swelling, redness, scab, and white discharge.  
+Neurologic: Mild numbness in feet noted over the past years, but no new deficits.  
+
+Past Medical History  
+- Type II diabetes mellitus, poorly controlled.  
+- Hypertension, long-standing.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage I‑III per laboratory values).  
+- Chronic low back pain.  
+- Childhood asthma, currently not active.  
+
+Surgical History  
+- Sinus surgery in adolescence for severe sinusitis.  
+
+Social History  
+The patient is currently unemployed and seeking employment, with intermittent self‑employment as an accountant. He lives in an urban setting and visits his children bi‑weekly. He reports smoking approximately two packs per week and consuming alcohol mainly on weekends, averaging two to four drinks per day on those occasions. He denies recreational drug use.  
+
+Family History  
+Mother’s side of the family has a high prevalence of diabetes, hypertension, and hyperlipidemia. Father’s side is generally healthy; an aunt on that side had lung cancer.  
+
+Medications  
+Current home medications include:  
+- Rosuvastatin (dose not specified) for hyperlipidemia.  
+- Metformin (dose not specified) for diabetes.  
+- Acetaminophen as needed for back pain.  
+
+The patient did not recall additional diabetes medications or insulin use.  
+
+Allergies  
+- Penicillin (causes facial swelling and breathing difficulty).  
+
+Physical Examination (not documented in the transcript)  
+The patient’s right lower leg was noted to be swollen, erythematous, warm to the touch, and tender over the area of the rash. The lesion had begun to exude a white, serous discharge and had an open, partially scabbed surface. No systemic signs of infection (e.g., tachycardia, hypotension) were reported.  
+
+Laboratory Data (OpenEMR extract)  
+- Serum creatinine 2.98 mg/dL; estimated GFR 79 mL/min/1.73 m².  
+- Glucose 94 mg/dL (fasting).  
+- Total cholesterol 176.99 mg/dL; LDL 120.66 mg/dL; triglycerides 177.43 mg/dL.  
+- ALT 43.9 U/L; AST 24.7 U/L; alkaline phosphatase 123.7 U/L.  
+- Sodium 139.8 mmol/L; potassium 4.5 mmol/L.  
+
+Assessment  
+1. Cellulitis of the right lower leg – likely secondary to an open wound on a diabetic patient.  
+2. Type II diabetes mellitus, poorly controlled.  
+3. Hypertension, hyperlipidemia, chronic kidney disease stage I‑III.  
+
+Plan  
+- Initiate empiric antibiotic therapy for cellulitis (e.g., oral cephalexin 500 mg BID for 10 days) unless contraindicated by penicillin allergy; alternative clindamycin or doxycycline may be considered.  
+- Prescribe analgesia with acetaminophen or ibuprofen as needed for pain.  
+- Provide wound care instructions: keep the area clean, apply non‑adherent dressing, and monitor for increasing redness or discharge.  
+- Educate on strict glycemic control: advise regular finger‑stick glucose monitoring and schedule an appointment with primary care or endocrinology for HbA1c reassessment within 2 weeks.  
+- Counsel on smoking cessation resources and moderate alcohol intake.  
+- Arrange follow‑up visit within 48–72 hours or sooner if symptoms worsen (increased pain, spreading erythema, fever, or systemic signs).  
+- Consider referral for foot ulcer evaluation of the left heel.  
+- Continue current statin therapy; review lipid panel in 3–6 months.  
+- Reinforce hypertension management and routine monitoring of kidney function.  
+
+The patient was informed of the plan, the importance of completing the antibiotic course, and the need for prompt follow‑up if symptoms deteriorate. He was also advised to seek immediate care if he experiences new symptoms such as chest pain, difficulty breathing, or a rapid increase in leg swelling.

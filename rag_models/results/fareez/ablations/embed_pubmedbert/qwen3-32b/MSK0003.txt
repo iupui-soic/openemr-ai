@@ -1,0 +1,65 @@
+Model: qwen/qwen3-32b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:02:09
+Time: 4.68s
+Tokens: 7,045 in / 1,478 out
+============================================================
+
+Patient Information  
+The patient is a 26-year-old male, Mr. Abe Steuber, presenting for evaluation of progressive back pain. He resides in a condo in Rockland, Massachusetts, and is employed full-time at a bank. He is in a relationship and reports recreational marijuana use approximately once or twice per week. He denies cigarette smoking and consumes alcohol occasionally, primarily on weekends. He has a known history of asthma, managed with a blue albuterol inhaler as needed, and environmental allergies. He has no known drug allergies. His mother has a history of psoriasis, but no family history of joint pain or autoimmune conditions is reported.
+
+Chief Complaint  
+The patient presents with a chief complaint of progressive back pain, primarily in the middle to lower back, which has been present for approximately five to six months. He describes the pain as dull and non-localized, with significant morning stiffness that improves gradually over 30 to 60 minutes after waking. The pain is rated as a 4 to 5 on a 10-point scale and is not associated with radiation, numbness, or tingling. He reports that over-the-counter medications such as Advil provide some relief, but symptoms return by the next morning.
+
+History of Present Illness  
+The patient notes that the back pain began gradually about five to six months ago, starting as mild discomfort and progressively worsening. He denies any specific injury or trauma as a precipitating factor. The pain is described as a dull ache, without sharp or stabbing characteristics. It is localized primarily to the middle and lower back, with no involvement of the neck. The pain is worse in the morning and improves as the day progresses. He also reports experiencing stiffness, which resolves after about an hour of activity. He denies any redness, swelling, or focal joint involvement. 
+
+In addition to back pain, he has intermittent pain in his right knee and hands, which he describes as transient and not significantly impacting his daily activities. He reports fatigue and malaise, which have been progressively worsening over the same time frame. He denies fever, chills, night sweats, or unintentional weight loss. There is no history of recent infections, and he denies any numbness, tingling, or muscle weakness. He also denies changes in bowel or urinary habits, vision, or appetite. 
+
+He had a prior episode of gastroenteritis several months ago, treated with antibiotics, and reports no recent illnesses or sexually transmitted infection symptoms. He is sexually active and uses condoms regularly. He has a history of a previous knee injury with meniscus tear, treated medically and resolved. He has no history of hospitalizations or surgeries.
+
+Review of Systems  
+Constitutional: The patient reports increased fatigue and malaise but denies fever, chills, or unintentional weight loss.  
+Respiratory: No shortness of breath or changes in respiratory status.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: No headaches, dizziness, numbness, or tingling.  
+Musculoskeletal: Back pain as described, with intermittent pain in the right knee and hands.  
+Integumentary: No rashes, skin changes, or nail abnormalities.  
+Endocrine: No changes in appetite or weight.  
+Hematologic: No bruising or bleeding.  
+Psychiatric: No mood changes or depressive symptoms reported.  
+Allergic/Immunologic: Environmental allergies, no recent flare-ups.  
+Ophthalmic: No changes in vision.  
+Otolaryngologic: No ear, nose, or throat symptoms.  
+Dermatologic: No new skin lesions or rashes.  
+Musculoskeletal: No joint swelling or redness.
+
+Allergies  
+The patient has a documented allergy to an unspecified substance. He has environmental allergies, likely to pollen or ragweed, but no specific allergens were identified. No known drug allergies.
+
+Past Medical History  
+The patient has a history of asthma, managed with albuterol inhaler as needed. He also has a history of a meniscus tear in the right knee, treated medically and resolved. He has a prior history of gastroenteritis, likely foodborne, treated with antibiotics. He has a history of chronic low back pain and chronic pain, with no prior diagnosis of inflammatory arthritis. He has a history of gingivitis and contact dermatitis. He has a documented body mass index in the severely obese range.
+
+Social History  
+The patient is employed full-time and lives with his girlfriend. He reports limited social contact and occasional recreational marijuana use. He denies tobacco or alcohol abuse. He has a history of social isolation and stress, which have been intermittently documented in the past.
+
+Family History  
+The patient’s mother has a history of psoriasis, with no reported joint involvement. No other family history of autoimmune or musculoskeletal conditions is reported.
+
+Current Medications  
+The patient is currently using acetaminophen and naproxen for pain relief. He uses albuterol as needed for asthma. He is also on fexofenadine for environmental allergies. Other medications include hydrocortisone cream for dermatitis and an epinephrine auto-injector for an unspecified allergy.
+
+Objective  
+Vital Signs: No recent vital signs were recorded in the OpenEMR extract. The patient’s height is 169.7 cm, and his BMI is 42.03, indicating severe obesity.  
+Physical Examination: Not performed during this encounter.  
+Labs: No recent labs were performed. Previous labs include a complete blood count with normal erythrocyte and platelet parameters. No inflammatory markers or rheumatological panels were available at the time of this visit.  
+Imaging: No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with a chronic, progressive back pain of five to six months’ duration, associated with morning stiffness and intermittent joint pain in the hands and knee. The differential diagnosis includes ankylosing spondylitis, psoriatic arthritis, and reactive arthritis. Given his age, male sex, and family history of psoriasis, inflammatory arthritis is a key consideration. The absence of skin changes or joint swelling does not rule out psoriatic arthritis. The history of gastroenteritis several months prior raises the possibility of reactive arthritis. The progressive nature of the pain and the presence of fatigue and malaise further support an inflammatory etiology.
+
+Plan  
+A comprehensive physical examination will be performed to assess for joint involvement, spinal mobility, and signs of inflammation. Laboratory evaluation will include inflammatory markers (CRP, ESR), complete blood count, rheumatoid factor, and antinuclear antibody testing. Imaging will include X-rays of the lumbar spine and sacroiliac joints, as well as X-rays of the hands and knees. The patient will be referred to a rheumatologist for further evaluation and management. He will be advised to continue using naproxen for pain relief and to monitor for any new symptoms. Follow-up will be arranged to review test results and initiate appropriate treatment if an inflammatory condition is confirmed.

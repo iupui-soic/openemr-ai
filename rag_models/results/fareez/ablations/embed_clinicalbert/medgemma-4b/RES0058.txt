@@ -1,0 +1,28 @@
+Model: google/medgemma-4b-it
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 05:59:27
+Time: 25.42s
+Tokens: 8,140 in / 466 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Russel
+Date of Birth: 1952-11-14
+Unit Number: 92
+
+Chief Complaint: Loss of taste.
+
+History of Present Illness:
+
+The patient presents today complaining of a loss of taste, which began approximately two days ago. He reports that he can't taste anything, and that the food he's eating tastes like cardboard. He also reports a dry cough that started about three or four days ago. He denies any trauma to the mouth or nose. He denies fever, chills, or shortness of breath. He reports feeling more tired than usual and has been sleeping more. He also mentions a hard time catching his breath after coughing. He reports some diarrhea this morning, but no other bowel changes. He denies chest pain, heart racing, or changes in bowel movements. He denies any abdominal pain, swallowing difficulties, or throat soreness. He denies a runny nose or blocked nose. He denies any rashes. He denies dizziness or fainting spells. He reports feeling a little dizzy this morning, but it resolved after sitting down. He denies any weakness or confusion. He mentions that he hasn't noticed any weight loss. He reports feeling hot but not sweaty. He denies muscle aches. He reports being around someone in his class who had a cough and fever last week. He denies recent travel. He is up to date on his immunizations. He has a history of appendectomy. He is not currently taking any medications. He uses a vape occasionally, but he is unsure if it contains tobacco or nicotine. He drinks alcohol occasionally. He lives with his mom, step dad, and younger sister in a townhouse. He reports that his living situation is generally clean.
+
+Assessment:
+
+The patient presents with a loss of taste, dry cough, fatigue, and diarrhea. The differential diagnosis includes upper respiratory infection, COVID-19, and other viral illnesses.
+
+Plan:
+
+The patient is advised to isolate for 14 days, regardless of the COVID-19 swab results. If the swab comes back positive, public health will be notified, and contact tracing will be performed. If the swab comes back negative, a workup for bacterial infections will be considered. The patient is instructed to follow up with their primary care physician.

@@ -1,0 +1,64 @@
+Model: qwen/qwen3-32b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:41:13
+Time: 4.77s
+Tokens: 6,955 in / 1,341 out
+============================================================
+
+Patient Information:  
+The patient is a 22-year-old female, Abbie Stamm, who presents with a four-day history of fever, cough, fatigue, and headache. She is currently residing in a duplex in Amherst, Massachusetts, and lives with her girlfriend. She has a past medical history of childhood asthma, now resolved, and mitral valve regurgitation, which is ongoing. She has a history of recurrent episodes of gingivitis, allergic rhinitis, and has been diagnosed with pre-diabetes and high cholesterol. She is currently taking Rosuvastatin for hypercholesterolemia and a multivitamin. She has an allergy to penicillin and reports no recent antibiotic use. She is up to date with her vaccinations, including an annual influenza vaccine. She consumes alcohol occasionally, about two to three beers on weekends, and denies the use of tobacco, marijuana, or other recreational drugs. She has no known exposure to mold, asbestos, or other environmental hazards in her living space.
+
+Chief Complaint:  
+The patient reports a four-day history of fever, cough, fatigue, and headache. She also notes mild nausea and decreased appetite.
+
+History of Present Illness:  
+The patient first noticed symptoms on Monday, with a dry cough that has progressively worsened. On Friday, she measured a fever of 38.5°C. She reports feeling increasingly fatigued and has experienced intermittent headaches consistent with her known tension headaches. The cough is dry, with no sputum or blood. She denies chest pain, wheezing, or dyspnea except for mild shortness of breath following coughing fits. She has not experienced night sweats but has noted chills at night. She reports no recent travel or known exposure to sick individuals, though she visited a mall last weekend where everyone was masked. She denies any recent weight loss, body aches, dizziness, or confusion. She has no changes in vision, hearing, or urinary habits. She has been less active due to fatigue and has not had any changes in bowel movements.
+
+Review of Systems:  
+Constitutional: Fever, fatigue, and decreased appetite.  
+Respiratory: Dry cough, no sputum, no hemoptysis, no chest pain or wheezing.  
+Cardiovascular: No palpitations, syncope, or chest pain.  
+Gastrointestinal: Mild nausea without vomiting, no abdominal pain, normal bowel movements.  
+Genitourinary: No dysuria, frequency, urgency, or hematuria.  
+Neurological: Headache, no dizziness, no memory loss or confusion.  
+Musculoskeletal: Mild body aches, no joint pain or swelling.  
+Integumentary: No rash or skin changes.  
+Endocrine/Metabolic: No recent weight loss or changes in appetite.  
+Hematologic: No easy bruising or bleeding.  
+Psychiatric: No mood changes or depression.  
+Allergic/Immunologic: No new allergies or worsening of known allergies.  
+Other: No changes in smell or taste.
+
+Allergies:  
+The patient has a documented allergy to penicillin, with a history of hives. She also has a long-standing history of multiple environmental allergies including bee venom, mold, house dust mites, tree pollen, and animal dander.
+
+Past Medical History:  
+The patient has a history of childhood asthma, resolved by age 21, and mitral valve regurgitation, ongoing. She has also had multiple episodes of gingivitis, allergic rhinitis, and viral upper respiratory infections. She was previously diagnosed with pre-diabetes (A1C 6.2%) and hypercholesterolemia, managed with Rosuvastatin. She has a history of an inguinal hernia repair five years ago.
+
+Surgical History:  
+Inguinal hernia repair five years ago.
+
+Social History:  
+The patient is a full-time employee and lives with her girlfriend. She reports limited social contact and ongoing stress. She does not smoke, use recreational drugs, or consume alcohol excessively. She has no known exposure to secondhand smoke or occupational hazards.
+
+Family History:  
+No known family history of lung or heart disease. The patient reports that her grandfather had bladder cancer, though no other significant family medical history is noted.
+
+Current Medications:  
+The patient is currently taking Rosuvastatin for hypercholesterolemia and a multivitamin. She has no other active prescriptions at this time.
+
+Objective:  
+Vital signs at the time of the visit are not documented. The physical examination is not detailed in the provided transcript. The patient's temperature was reported as 38.5°C on self-measurement. No significant findings are noted in the physical exam. A urinalysis was performed, showing elevated glucose and protein in the urine, with no hematuria or leukocyte esterase. Other findings include a specific gravity of 1.017 and a pH of 5.2. No significant abnormalities are noted in the blood work provided.
+
+Labs:  
+Urinalysis reveals glucose (12.58 mg/dL), protein (4.40 mg/dL), and specific gravity (1.017). No hematuria or leukocyte esterase is noted. No recent blood work is available in the provided data.
+
+Imaging:  
+No imaging studies are referenced in the provided information.
+
+Assessment:  
+The patient presents with symptoms consistent with an upper respiratory viral illness. Given the ongoing global health concerns and the constellation of symptoms, including fever, cough, and fatigue, a differential diagnosis of COVID-19 is considered. Additional considerations include influenza or other viral etiologies. The patient has no signs of bacterial infection at this time, and no evidence of pneumonia or other serious complications is present. The patient is advised to isolate for 14 days regardless of test results and to monitor for worsening symptoms.
+
+Plan:  
+A COVID-19 nasal swab has been ordered and will be processed for results. The patient is instructed to self-isolate for 14 days and to avoid contact with her girlfriend during this period. If symptoms persist or worsen, she is advised to return for re-evaluation. She is to monitor her temperature and symptoms daily and contact public health authorities if the test is positive. No antibiotics are prescribed at this time due to the lack of evidence for bacterial infection. The patient is encouraged to maintain hydration, rest, and take acetaminophen as needed for fever or headache. She is also advised to follow up in one week or sooner if symptoms change.

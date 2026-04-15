@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 04:14:16
+Time: 3.66s
+Tokens: 11,594 in / 1,213 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Date of Birth: 1920‑09‑24 (age appears inconsistent with clinical presentation; patient reports being a student)  
+Sex: Female  
+Address: 1056 Reichert Spur Suite 87, Chelsea, Massachusetts 02151  
+
+Chief Complaint  
+Diarrhea for the past three to four days.
+
+History of Present Illness  
+Alane reports the abrupt onset of watery, brown‑colored diarrhea approximately three to four days ago. She describes the stools as loose and notes a frequency of about one bowel movement per hour, to the point that she has lost count. She initially did not have abdominal pain, but since yesterday she has experienced intermittent crampy abdominal discomfort. She also reports nausea with two episodes of vomiting yesterday; the vomitus was described as watery without blood. She has been able to recognize the urge to defecate and reaches the bathroom quickly, but the urgency is marked. She has decreased her oral intake because of the cramps and nausea, though she has been drinking large amounts of water to prevent dehydration. She denies any visible blood in the stool, changes in stool color other than brown, fever, chills, rash, urinary symptoms, or recent travel. She has not taken any over‑the‑counter antidiarrheal or anti‑emetic agents. She does not recall a similar episode in the past. She notes that five days prior to symptom onset she ate rice with chicken Manchurian at a new Chinese restaurant; she was not aware of any other diners becoming ill.
+
+Review of Systems  
+Constitutional: Fatigue; denies fever or chills.  
+Gastrointestinal: Frequent watery diarrhea, crampy abdominal pain, nausea, two episodes of non‑bloody vomiting, decreased appetite; no hematochezia, no melena.  
+Genitourinary: No dysuria, frequency, or changes in urine color.  
+Respiratory: History of asthma, no current wheezing or shortness of breath reported.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Dermatologic: No rash or skin changes.  
+Neurologic: No headache or neurologic deficits.  
+Psychiatric: No anxiety or depression reported.
+
+Past Medical History  
+- Asthma (managed with inhaler).  
+No other chronic illnesses reported by the patient.
+
+Surgical History  
+- Wisdom teeth extraction (outpatient, no hospitalization).
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Current Medications  
+- Albuterol inhaler (as needed for asthma).  
+No other prescription or over‑the‑counter medications reported.
+
+Social History  
+The patient is a full‑time student living with two roommates. She drinks alcohol occasionally (approximately one to two glasses on weekends) and does not use tobacco or illicit substances. She reports a typical diet of oatmeal for breakfast, a quick salad for lunch, and eating out (often burgers or fries) for dinner. No recent travel. No known sick contacts.
+
+Family History  
+- Brother: Appendicitis in childhood.  
+- Mother: History of hysterectomy.  
+No other significant family medical history reported.
+
+Objective  
+Vital Signs: Not documented at this encounter.  
+Physical Examination: Not performed or not documented.  
+Laboratory Data: No acute laboratory studies were obtained during this visit. Existing laboratory values in the electronic record (e.g., hemoglobin 15.7 g/dL, glucose 92 mg/dL) reflect chronic baseline data and are not pertinent to the current acute gastrointestinal complaint.
+
+Assessment  
+1. Acute infectious diarrhea, likely food‑borne given recent consumption of a Chinese restaurant meal.  
+2. Dehydration risk secondary to high stool output and decreased oral intake.  
+3. Asthma, stable.
+
+Plan  
+
+General Measures  
+- Encourage continued oral rehydration with electrolyte solutions (e.g., oral rehydration salts or sports drinks) in addition to water.  
+- Advise a bland diet (BRAT: bananas, rice, applesauce, toast) while symptoms persist; avoid dairy, caffeine, fatty, and spicy foods.  
+- Monitor for signs of worsening dehydration (dizziness, decreased urine output, dry mucous membranes) and for the appearance of blood in stool or persistent high‑grade fever.
+
+Medications  
+- No anti‑diarrheal agents prescribed at this time; if diarrhea persists beyond 48‑72 hours and there are no red‑flag features, a short course of loperamide may be considered.  
+- Ondansetron 4 mg PO as needed for nausea/vomiting, up to three doses per day, if symptoms become bothersome.  
+- Continue albuterol inhaler as needed for asthma; ensure rescue inhaler is readily available.
+
+Diagnostic Considerations  
+- No stool studies ordered presently; if diarrhea continues for more than 7 days, is severe, or is accompanied by blood, fever, or significant abdominal pain, obtain stool culture, ova and parasite examination, and Clostridioides difficile toxin assay.  
+
+Follow‑Up  
+- Return to clinic or seek urgent care if she develops fever >38.0 °C, blood in stool, worsening abdominal pain, signs of severe dehydration, or if vomiting becomes persistent.  
+- Routine follow‑up in 48‑72 hours (via telephone or in‑person) to assess symptom progression and hydration status.  
+
+Patient Education  
+- Reviewed the importance of fluid replacement and signs of dehydration.  
+- Discussed food safety and the possibility of a viral or bacterial gastroenteritis related to the recent restaurant meal.  
+- Instructed to avoid anti‑diarrheal medications if she develops high fever or bloody stools.  
+
+The patient verbalized understanding of the plan and agreed to the above recommendations.

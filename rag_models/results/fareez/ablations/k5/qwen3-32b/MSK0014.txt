@@ -1,0 +1,65 @@
+Model: qwen/qwen3-32b
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-04-14 03:45:03
+Time: 3.87s
+Tokens: 11,507 in / 1,073 out
+============================================================
+
+Patient Information  
+The patient is a 82-year-old male, Adalberto Gerlach, residing in Andover, Massachusetts. He is married and lives with his wife and daughter in a townhouse. He is retired due to a history of heart attack and heart failure. His past medical history includes osteoarthritis of the knees and hips, hypertension, heart attack four years ago, heart failure, and chronic kidney disease. He is currently taking Furosemide and Ramipril for hypertension, and occasionally uses over-the-counter painkillers such as Advil. He has a penicillin allergy with an unspecified reaction. He consumes three to four beers daily and has a history of smoking one to two packs per day for over 30 years, which he quit after his heart attack.
+
+Chief Complaint  
+The patient presents with a five-day history of right knee pain, swelling, and redness. He reports that the symptoms are worse than his usual osteoarthritis symptoms and are accompanied by warmth and localized redness. The pain is described as sharp and stabbing, particularly with movement, and has been fluctuating in severity. He denies any trauma or injury to the knee but mentions a steroid injection to the same knee one week prior to symptom onset.
+
+History of Present Illness  
+The patient initially attributed the symptoms to his known osteoarthritis, but the pain and swelling have progressively worsened over the past five days. The pain is localized to the right knee, with no radiation. It is described as sharp and stabbing, and he notes that movement exacerbates the discomfort. He has not experienced any fevers, chills, or systemic symptoms. The pain is not relieved by rest, but he has found some temporary relief with Advil. He reports morning stiffness, but the pain is present throughout the day. He has not experienced any numbness, tingling, or burning sensations. The patient denies chest pain, shortness of breath, dizziness, lightheadedness, nausea, vomiting, or changes in bowel or urinary habits. He also denies any other joint pain or rashes.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight loss.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Neurological: No numbness, tingling, or weakness.  
+Musculoskeletal: No other joint pain or muscle aches.  
+Dermatological: No rashes or skin changes.  
+Other: No vision, hearing, or sensory changes.
+
+Allergies  
+The patient has a documented allergy to penicillin, though the specific reaction is not recalled.
+
+Past Medical History  
+The patient has a history of osteoarthritis in both knees and hips, hypertension, heart attack four years ago, heart failure, and chronic kidney disease. He has also undergone stent placement for coronary artery disease. He has a history of appendectomy and hospitalization following his heart attack.
+
+Surgical History  
+The patient has had an appendectomy and stent placement for coronary artery disease.
+
+Social History  
+The patient is a former smoker, having quit after his heart attack. He consumes three to four beers daily and is currently retired due to his medical history. He lives with his wife and daughter and is able to perform most activities of daily living independently, though his wife assists with shopping and cooking.
+
+Family History  
+The patient has a family history of heart disease, with both his father and brother having experienced heart attacks.
+
+Current Medications  
+The patient is currently taking Furosemide and Ramipril for hypertension. He occasionally uses over-the-counter painkillers such as Advil for pain relief.
+
+Objective Findings  
+On physical examination, the right knee is swollen, red, and warm to the touch compared to the left knee. The patient has a limp and avoids putting weight on the affected knee. There is no evidence of joint instability or varus/valgus laxity. No numbness, tingling, or muscle weakness is noted.
+
+Vital Signs  
+No recent vital signs were recorded in the OpenEMR extract.
+
+Physical Examination  
+The patient exhibits localized redness, swelling, and warmth in the right knee. There is pain with movement, and no evidence of joint instability. No neurological deficits or muscle weakness is observed.
+
+Laboratory Results  
+No recent laboratory results are available for this encounter. Historical results indicate chronic kidney disease, elevated cholesterol, and metabolic syndrome.
+
+Imaging  
+No recent imaging studies are available for this encounter.
+
+Assessment  
+The differential diagnosis includes gout, pseudogout, and septic arthritis. The patient's risk factors for gout include diuretic use, alcohol consumption, and obesity. The recent steroid injection to the knee raises concern for a potential infection. A knee aspiration is planned to aid in diagnosis.
+
+Plan  
+The patient will undergo a knee aspiration to evaluate for gout or septic arthritis. Based on the results, appropriate treatment will be initiated. The patient will be advised to avoid weight-bearing on the affected knee and to continue using over-the-counter pain relievers as needed. Follow-up is recommended for further evaluation and management.

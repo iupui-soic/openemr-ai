@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:26:51
+Time: 5.19s
+Tokens: 10,745 in / 2,031 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: September 28, 1931 (Age 94)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+Medical Record Number: 3055  
+
+Chief Complaint  
+Right hip pain secondary to a fall on the stairs approximately two hours prior to presentation.  
+
+History of Present Illness  
+The patient reports that while descending the last few steps of a staircase this morning, he missed a step and slipped, falling onto his right side and directly onto his right hip. He did not experience a loss of consciousness, dizziness, or head trauma at the time of the fall. Since the event, he has been unable to bear weight on the right lower extremity and describes the pain as “excruciating,” rating it a 10/10. He characterizes the pain as sharp when weight is applied and achy when the hip is at rest. The discomfort is localized to the right groin and lateral hip region, with associated swelling and mild bruising. The patient notes that the right hip feels slightly warmer than the left and appears to be turned outward. He is unable to perform hip flexion, extension, abduction, or adduction without severe pain. He reports mild dizziness after the fall, which he attributes to pain. He denies headache, confusion, memory loss, numbness, tingling, fever, chills, cough, shortness of breath, chest pain, palpitations, changes in bowel or urinary habits, rash, or visual/hearing changes. This is his first fall and first episode of hip pain of this severity.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue reported.  
+Skin: Mild swelling, warmth, and bruising noted over the right hip; no rashes.  
+HEENT: No headache, vision, hearing, or smell/taste changes.  
+Cardiovascular: No chest pain or palpitations.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel movements.  
+Genitourinary: No dysuria, hematuria, or change in urine output.  
+Musculoskeletal: Acute right hip pain with inability to weight‑bear; no prior joint pain other than chronic hand osteoarthritis. No other joint or muscle pain.  
+Neurologic: No numbness, tingling, or weakness reported.  
+Psychiatric: No anxiety, depression, or other mood symptoms reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Osteoarthritis of the hand (localized, chronic)  
+- Chronic kidney disease (stage 3/4 historical) and end‑stage renal disease with prior renal transplant (history)  
+- History of coronary artery bypass grafting and ischemic heart disease  
+- Diabetes mellitus with microalbuminuria and proteinuria (historical)  
+- Anemia (chronic)  
+- Prior seizure disorder (single seizure history)  
+
+Surgical History  
+- Coronary artery bypass graft surgery (date not specified)  
+
+Social History  
+The patient lives with his husband in a small apartment. He does not smoke, does not use recreational drugs, and drinks alcohol occasionally (approximately one glass of wine every other day). He reports limited physical activity and no regular exercise routine.  
+
+Family History  
+Father died of a myocardial infarction in his 60s. Mother had a history of non‑melanoma skin cancers treated with local therapy. No other significant family history reported.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications (home)  
+- Lisinopril 10 mg PO daily (for hypertension)  
+- Amlodipine 2.5 mg PO daily  
+- Hydrochlorothiazide 25 mg PO daily  
+- Metoprolol succinate 100 mg extended‑release PO daily  
+- Nitroglycerin 0.4 mg spray PRN (for angina)  
+- Naproxen sodium 220 mg PO as needed (over‑the‑counter)  
+- Vitamin D, calcium, and multivitamin supplements (dosages not specified)  
+
+The medication list in the EMR also includes tacrolimus, epoetin alfa, acetaminophen/oxycodone, and ibuprofen, but the patient’s verbal report did not mention these; therefore, they are not confirmed as current active agents for this encounter.  
+
+Vital Signs  
+Heart rate: 74 beats per minute (recorded on 1997‑09‑08)  
+Respiratory rate: 14 breaths per minute (recorded on 1997‑09‑08)  
+Blood pressure: No information available  
+Temperature: No information available  
+SpO₂: No information available  
+Weight: No information available  
+Height: 173.7 cm (recorded)  
+Body mass index: 28.44 kg/m² (recorded)  
+
+Physical Examination  
+General: Alert, in acute distress due to right hip pain.  
+Right Hip: Swelling with mild erythema and warmth compared with the left side. Small areas of bruising noted. The right lower extremity appears slightly externally rotated. The patient is unable to actively move the right hip in any plane (flexion, extension, abduction, adduction) due to severe pain. Weight bearing on the right lower extremity is not possible; the patient can only support himself partially with the left side. No obvious deformity beyond external rotation. No palpable crepitus. No open wound.  
+Left Hip/Lower Extremities: No swelling, erythema, or deformity. Full range of motion without pain.  
+Neurovascular: Distal pulses intact; sensation intact in both lower extremities (patient reports no numbness or tingling).  
+Skin: No rashes.  
+Cardiovascular, respiratory, abdominal, and other systems: No abnormal findings reported during the encounter.  
+
+Laboratory Results (most recent values available)  
+- Hemoglobin: 16.7 g/dL  
+- White blood cell count: 10.1 × 10³/µL  
+- Platelets: 199.5 × 10³/µL  
+- Mean corpuscular volume: 93.4 fL  
+- Mean corpuscular hemoglobin concentration: 33.3 g/dL  
+- Sodium: 138 mmol/L  
+- Chloride: 111 mmol/L  
+- Glucose: 74 mg/dL (serum) – urine glucose negative  
+- Creatinine: 1.01 mg/dL  
+- Urinalysis: No leukocyte esterase, nitrite, or ketones; pH 7.9; no leukocytes.  
+
+Imaging  
+No imaging studies have been performed or documented at the time of this encounter. The clinical picture is highly suggestive of a right hip fracture; definitive diagnosis will require radiographic evaluation (plain X‑ray of the pelvis and possibly CT if indicated).  
+
+Assessment  
+- Right hip fracture (suspected, pending radiographic confirmation) – acute traumatic injury.  
+- Severe acute pain secondary to suspected fracture.  
+- Chronic conditions: hypertension, coronary artery disease, chronic kidney disease, diabetes with microalbuminuria, anemia, hand osteoarthritis.  
+
+Plan  
+1. Analgesia: Initiate scheduled acetaminophen 650 mg PO every 6 hours as needed for pain, and ibuprofen 400 mg PO every 6 hours with food, provided renal function remains stable. If pain is not controlled, consider low‑dose oral opioids (e.g., oxycodone/acetaminophen) with careful monitoring given age and renal status.  
+2. Weight‑bearing precautions: Keep the right lower extremity non‑weight bearing. Use a wheelchair or assisted device for ambulation.  
+3. Orthopedic referral: Arrange urgent consultation with orthopedics for definitive imaging (pelvic X‑ray, possible CT) and surgical planning. Discuss options including internal fixation versus partial or total hip arthroplasty based on fracture pattern and bone quality.  
+4. Imaging: Order AP and lateral radiographs of the pelvis and right hip immediately.  
+5. VTE prophylaxis: Initiate low‑dose subcutaneous heparin or low‑molecular‑weight heparin as per hospital protocol, considering the patient’s renal function.  
+6. Monitoring: Reassess vital signs, pain level, and neurovascular status of the right extremity every 4 hours while in the emergency department or observation unit.  
+7. Laboratory follow‑up: Repeat basic metabolic panel and CBC in 24 hours to monitor renal function and hemoglobin.  
+8. Physical therapy: Once cleared by orthopedics, begin gentle passive range‑of‑motion exercises and educate the patient on hip precautions.  
+9. Disposition: Admit to orthopedics service for further evaluation and possible surgical intervention.  
+10. Patient education: Discuss the nature of hip fractures in elderly patients, the importance of prompt surgical fixation to reduce complications, and pain management strategies. Provided written instructions on keeping the right side non‑weight bearing and using assistive devices.  
+11. Follow‑up: Orthopedic surgery follow‑up within 24 hours; primary care follow‑up within 1‑2 weeks after discharge for chronic disease management.  
+
+The patient verbalized understanding of the plan and agreed to the recommended interventions. No further questions were raised.

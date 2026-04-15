@@ -1,0 +1,157 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:27:45
+Time: 4.09s
+Tokens: 15,041 in / 2,288 out
+============================================================
+
+**Patient Information**  
+Name: Abel Wunsch DOB: 06 Jun 1932 Age: 93 yrs Sex: Male Address: 214 Rippin Mews, Salisbury, MA 01952  
+
+---
+
+### Subjective  
+
+**Chief Complaint:**  
+“Chest pain for 5 days—sharp, left‑sided, worsens with exertion and deep breaths; associated shortness of breath.”
+
+**History of Present Illness (HPI):**  
+- Onset: 5 days ago while seated; pain initially mild but has progressively become constant.  
+- Location: Left mid‑sternum/left chest wall, no radiation.  
+- Quality: Sharp, lingering.  
+- Timing: Worse with walking or deep inspiration; improves slightly with acetaminophen/ibuprofen.  
+- Aggravating factors: Physical exertion (e.g., walking to mail), deep breathing.  
+- Relieving factors: NSAIDs, rest.  
+- Associated symptoms: Shortness of breath on exertion; mild fatigue; no cough, wheeze, palpitations, fever, chills, night sweats, nausea, vomiting, abdominal pain, or leg swelling.  
+
+**Review of Systems (ROS):**  
+- **Constitutional:** No fever, chills, weight loss; mild fatigue due to limited activity.  
+- **Respiratory:** Dyspnea on exertion; no cough, wheeze, hemoptysis.  
+- **Cardiovascular:** Chest pain as described; no palpitations, presyncope, syncope.  
+- **Gastrointestinal:** Denies nausea, vomiting, abdominal pain, melena.  
+- **Genitourinary:** No dysuria or hematuria.  
+- **Neurologic/Other:** No headaches, dizziness, or rash.  
+
+**Allergies:** None reported.  
+
+**Past Medical History:**  
+- Chronic kidney disease (stages 1–3 per prior records).  
+- Hypertension (on lisinopril).  
+- Ischemic heart disease (prior abnormal cardiac imaging).  
+- Hyperlipidemia (on simvastatin).  
+- Diabetes mellitus type 2 (history of micro‑albuminuria).  
+- Chronic sinusitis (history).  
+- Prior renal transplant (status uncertain).  
+
+**Surgical History:**  
+- Hysterectomy (approx. 1 month ago—reported by patient; likely an error given male sex).  
+- Wisdom teeth extraction (teenage years).  
+
+**Social History:**  
+- Current smoker: 5 cigarettes/day; attempting cessation.  
+- Alcohol: Occasional wine on weekends.  
+- No illicit drug use.  
+- Occupation: Accountant; works full‑time.  
+- Living with spouse and two teenage children.  
+
+**Family History:**  
+- Mother had a myocardial infarction in her 70s.  
+- No known family history of thromboembolic disease.  
+
+**Current Medications (home meds):**  
+- Tacrolimus 5 mg q24 h (ongoing, likely for transplant).  
+- Furosemide 40 mg PO daily.  
+- Lisinopril 10 mg PO daily.  
+- Amlodipine 2.5 mg PO daily.  
+- Metoprolol succinate 100 mg PO daily.  
+- Simvastatin 20 mg PO nightly.  
+- Clopidogrel 75 mg PO daily.  
+- Sertraline 100 mg PO daily.  
+- Acetaminophen 325 mg PO as needed.  
+- Ibuprofen 200 mg PO as needed.  
+
+---
+
+### Objective  
+
+**Vital Signs** (most recent):  
+- HR: 79 bpm  
+- RR: 15 breaths/min  
+- Temperature: Not recorded  
+- SpO₂: Not recorded  
+- BP: Not recorded  
+- Weight: Not recorded  
+- BMI: 33.3 kg/m²  
+
+**Physical Examination:**  
+- **General:** Alert, in mild respiratory distress at rest.  
+- **Cardiovascular:** Regular rate & rhythm; no murmurs; normal S1, S2.  
+- **Respiratory:** Clear breath sounds bilaterally; no wheezes or crackles; chest wall tenderness at left mid‑sternum.  
+- **Abdominal:** Soft, non‑tender, no organomegaly.  
+- **Extremities:** No edema; pulses intact.  
+- **Other:** No skin rash or signs of infection.  
+
+**Laboratory Results (most recent):**  
+| Parameter | Value | Reference |
+|-----------|-------|-----------|
+| WBC | 9.49 × 10³/µL | 4.5–11.0 |
+| RBC | 3.80 × 10⁶/µL | 4.5–5.9 (male) |
+| Hgb | 16.92 g/dL | 13.5–17.5 |
+| Hct | 47.5 % | 41–53 |
+| MCV | 80.6 fL | 80–100 |
+| MCH | 27.1 pg | 27–31 |
+| MCHC | 33.4 g/dL | 32–36 |
+| RDW | 14.5 % | 11.5–14.5 |
+| Platelets | 296 × 10³/µL | 150–400 |
+| Glucose | 82.8 mg/dL | 70–99 |
+| BUN | 10.5 mg/dL | 7–20 |
+| Creatinine | 0.88 mg/dL | 0.74–1.35 |
+| Calcium | 8.79 mg/dL | 8.5–10.5 |
+| Sodium | 142.9 mmol/L | 135–145 |
+| Potassium | 3.73 mmol/L | 3.5–5.0 |
+| Chloride | 102.3 mmol/L | 98–107 |
+| CO₂ | 23.2 mmol/L | 22–29 |
+| GFR (MDRD) | 158.1 mL/min | >60 = normal |
+| Protein | 6.86 g/dL | 6.0–8.0 |
+
+*(No troponin or CK‑MB results available; none reported)*  
+
+**Imaging:**  
+- Pending. Physician plans to obtain a CT pulmonary angiogram to evaluate for pulmonary embolism (PE).  
+- Chest X‑ray not yet performed; will be ordered concurrently.  
+
+---
+
+### Assessment  
+
+1. **Acute chest pain with dyspnea in a 93‑year‑old male** – Differential includes pulmonary embolism, acute coronary syndrome (ACS), musculoskeletal chest wall pain, pleuritis.  
+2. **Pulmonary embolism** – Highest probability given:  
+   - Recent pelvic surgery (hysterectomy, albeit likely an error, but any surgery in the last month is a risk).  
+   - Smoking history.  
+   - Age > 65.  
+   - Symptoms aggravated by exertion and deep breathing.  
+   - No focal neuro deficits or leg swelling; but DVT may still be occult.  
+3. **Acute coronary syndrome** – Possible given ischemic heart disease history; however pain is sharp, not pressure‑like, no radiation to arm/jaw, no diaphoresis.  
+4. **Other considerations** – Musculoskeletal pain from chest wall strain; ruled out by persistence over 5 days and dyspnea.
+
+Given the high pre‑test probability of PE and potential for rapid deterioration, the plan is to obtain urgent imaging and initiate anticoagulation if PE is confirmed.  
+
+---
+
+### Plan  
+
+| Category | Action |
+|----------|--------|
+| **Diagnostics** | • Order D‑dimer (if not elevated, still proceed to imaging due to high risk).  <br>• Perform CT pulmonary angiography (CT‑PA).  <br>• Order chest X‑ray to rule out other acute processes.  <br>• Consider ECG and troponin to evaluate for ACS. |
+| **Medications** | • If PE confirmed: Initiate therapeutic anticoagulation (e.g., low‑molecular‑weight heparin bridging to warfarin or direct oral anticoagulant).  <br>• Continue current home medications (tacrolimus, lisinopril, amlodipine, metoprolol, simvastatin, clopidogrel, sertraline).  <br>• Adjust antihypertensives if BP rises > 140/90 during treatment.  <br>• Pain control: Acetaminophen or ibuprofen PRN; avoid NSAIDs if renal function declines. |
+| **Monitoring** | • Cardiac monitoring for arrhythmias.  <br>• Daily vitals; monitor for signs of bleeding (hematuria, melena, bruising).  <br>• Renal function monitoring (creatinine, BUN) given anticoagulation and existing CKD. |
+| **Lifestyle/Support** | • Encourage smoking cessation; provide resources (counseling, nicotine replacement).  <br>• Discuss alcohol use; recommend limiting to no more than 1‑2 drinks/week.  <br>• Provide education on DVT/PE signs and when to seek immediate care. |
+| **Follow‑up** | • Follow up in cardiology or internal medicine clinic in 1 week after imaging.  <br>• If anticoagulation initiated, schedule INR checks (if warfarin) or routine monitoring (if DOAC).  <br>• Re‑assess pain and dyspnea at each visit. |
+| **Disposition** | • Admit for monitoring and imaging if PE suspected; if imaging negative and low suspicion for ACS, consider outpatient management with close follow‑up. |
+
+*All recommendations will be discussed with the patient, ensuring understanding and shared decision‑making.*  
+
+--- 
+
+**Note:** The patient’s reported hysterectomy appears inconsistent with male sex; clarification with surgical records is warranted. Additionally, given the presence of tacrolimus and other transplant‑related medications, further coordination with transplant nephrology is advised for anticoagulation management and monitoring of drug levels.

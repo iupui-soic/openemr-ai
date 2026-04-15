@@ -1,0 +1,112 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:26:00
+Time: 5.42s
+Tokens: 12,662 in / 1,836 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia DOB: 1914‑01‑07 Sex: Female MRN: 982 Address: 517 Hills Trace, Stoneham, MA 02180  
+
+Chief Complaint  
+Worsening shortness of breath, chest discomfort, and productive cough for the past five days.
+
+History of Present Illness  
+Ms. Tapia reports that over the last five days she has experienced increasing dyspnea that is most noticeable with minimal exertion around the apartment. At rest she feels able to sit comfortably, but any activity precipitates a sensation of not being able to “catch her breath.” She also describes a constant feeling of chest “congestion” rather than sharp or pressure‑type pain; the discomfort has been present throughout the five‑day period and is not related to position, lying flat, or nighttime awakening.  
+
+Her cough has become more pronounced during the same interval. She coughs up small amounts of yellow‑green sputum, roughly the volume that would fill the palm of her hand with each episode. She denies hemoptysis. She now feels “feverish” for the past two days but has not taken an oral temperature. She denies sore throat, rhinorrhea, nausea, vomiting, abdominal pain, diarrhea, constipation, headache, visual changes, palpitations, dizziness, or syncope. She has not experienced orthopnea, paroxysmal nocturnal dyspnea, night sweats, or recent weight loss.  
+
+Ms. Tapia has a known diagnosis of chronic obstructive pulmonary disease (COPD) for three years and normally uses a rescue inhaler (albuterol) and a daily inhaled corticosteroid/long‑acting beta‑agonist (Symbicort). She reports using three to four puffs of albuterol this morning and a similar dose last night, which is more frequent than her usual 2–3 times per week and provided little relief this time. She also takes an ACE‑inhibitor for hypertension and antacids for gastroesophageal reflux disease (GERD). She has not taken any other over‑the‑counter or prescription medications for the current episode.
+
+Review of Systems  
+Constitutional: Subjective feverish feeling; no measured temperature, chills, or night sweats.  
+Respiratory: Productive cough with yellow‑green sputum, dyspnea on exertion, chest “congestion,” no hemoptysis, no wheezing reported, no orthopnea or PND.  
+Cardiovascular: No chest pain described as pressure or stabbing, no palpitations, no known edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or change in appetite.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No headache, dizziness, or visual changes.  
+Psychiatric: No anxiety, depression, or sleep disturbance reported.  
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed 3 years ago)  
+- Hypertension  
+- Gastroesophageal reflux disease  
+- Alzheimer’s disease (diagnosed 2003)  
+- Ischemic heart disease with prior myocardial infarction (history of coronary artery bypass graft)  
+- Chronic kidney disease (stage 1–4, historical)  
+- Metabolic syndrome, pre‑diabetes, hyperlipidemia  
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+Ms. Tapia lives in an apartment with her daughter. She is employed part‑time at a grocery store. She has a 30–40‑year history of cigarette smoking, currently about one pack per day. She reports occasional wine with dinner on weekends and denies use of marijuana or other illicit substances.
+
+Family History  
+No known family history of lung, heart disease, or cancer.
+
+Current Medications (home)  
+- Ventolin (albuterol) inhaler – as needed  
+- Symbicort (budesonide/formoterol) – daily  
+- ACE‑inhibitor (unspecified) – daily for hypertension  
+- Calcium carbonate (Tums) – as needed for GERD  
+- Donepezil + Memantine (24 hr extended‑release) – for Alzheimer’s disease  
+- Metoprolol succinate 100 mg ER – for cardiovascular disease  
+- Simvastatin 20 mg – lipid control  
+- Atorvastatin 40 mg – lipid control  
+- Valsartan 320 mg – hypertension (if separate from ACE‑inhibitor)  
+
+Objective  
+Vital Signs (most recent from EMR)  
+- Heart Rate: 92 beats/min  
+- Respiratory Rate: 12 breaths/min  
+- Blood Pressure: not recorded at this visit  
+- Temperature: not recorded (patient reports feeling feverish)  
+- SpO₂: not recorded  
+- Height: 162.7 cm Weight: not recorded BMI: 27.43  
+
+Physical Examination  
+No physical exam findings were documented during this encounter.  
+
+Laboratory Data (most recent)  
+- Sodium: 138–139 mmol/L (within normal limits)  
+- Potassium: 4.85 mmol/L (normal)  
+- Chloride: 106–105 mmol/L (normal)  
+- BUN: 10.35 mg/dL (normal)  
+- Creatinine: 0.42 mg/dL (low normal, consistent with chronic kidney disease monitoring)  
+- Glucose: 96.6 mg/dL (normal)  
+- Calcium: 9.48 mg/dL (normal)  
+- Albumin: 3.73 g/dL (slightly low)  
+- ALT: 52 U/L (mildly elevated)  
+- Total bilirubin: 0.69 mg/dL (normal)  
+- Total cholesterol: 204 mg/dL (borderline high)  
+- GFR (MDRD): 88 mL/min/1.73 m² (estimated)  
+- Arterial CO₂ (if drawn): 26.9 mmol/L (within expected range)  
+
+Imaging  
+No imaging studies have been performed at this time. A chest radiograph is pending per the treatment plan.
+
+Assessment  
+1. Community‑acquired pneumonia – likely bacterial given productive purulent sputum and feverish sensation in a patient with COPD.  
+2. Acute COPD exacerbation secondary to infection.  
+3. Hypertension, well‑controlled on home regimen.  
+4. GERD, stable.  
+5. Alzheimer’s disease and chronic cardiac/kidney comorbidities – stable.  
+
+Plan  
+- Admit to the emergency department for immediate evaluation, including full vital sign assessment, pulse‑oximetry, and auscultation.  
+- Obtain a chest X‑ray and COVID‑19 PCR test promptly.  
+- Draw a complete blood count with differential and basic metabolic panel to assess for leukocytosis, electrolyte disturbances, and renal function.  
+- Initiate nebulized short‑acting bronchodilator therapy (albuterol/ipratropium) and consider systemic corticosteroids (e.g., prednisone 40 mg daily) for COPD flare.  
+- Start empiric antibiotic therapy for community‑acquired pneumonia (e.g., oral amoxicillin‑clavulanate or a macrolide, adjusted per local resistance patterns and renal function).  
+- Continue home inhaled corticosteroid/long‑acting beta‑agonist (Symbicort) and rescue albuterol inhaler as needed.  
+- Encourage smoking cessation; provide referral to tobacco‑cessation counseling and nicotine‑replacement resources.  
+- Provide education on warning signs that warrant immediate return: worsening shortness of breath, chest pain, fever > 101 °F, inability to maintain oral intake, or new confusion.  
+- Arrange follow‑up with primary care provider within 48–72 hours after discharge, and with pulmonology within one week if symptoms persist.  
+- Discharge instructions will include continuation of current antihypertensive and GERD therapy, adherence to the prescribed antibiotic course, proper inhaler technique, and avoidance of respiratory irritants.  
+
+The patient verbalized understanding of the plan and agreed to proceed to the emergency department for further evaluation and treatment.

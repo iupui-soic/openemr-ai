@@ -1,0 +1,66 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:55:42
+Time: 3.22s
+Tokens: 9,419 in / 985 out
+============================================================
+
+Patient Information  
+The patient is a 39‑year‑old male accountant who presents to the clinic with new onset chest pain. He lives alone in an apartment and reports a stressful work schedule. No identifying name or address is provided in the clinical record.
+
+Chief Complaint  
+The patient reports a sharp, left-sided chest pain that began last night and has progressively worsened over the past eight hours.
+
+History of Present Illness  
+The pain started during the night, is constant, sharp, and rated approximately 7–8 on a 10‑point pain scale. It is localized to the left chest, does not radiate, and is exacerbated by lying down and taking deep breaths. The patient has experienced lightheadedness, shortness of breath, palpitations, and mild sweating. He denies any chest trauma, recent exertion, or pain with movement. No nausea, vomiting, fever, chills, cough, wheezing, abdominal pain, urinary symptoms, or recent infections are reported. The pain began at rest, not during activity, and has not relieved by rest or any over‑the‑counter measures. He has never experienced similar chest pain in the past.
+
+Past Medical History  
+The patient reports no prior medical conditions, surgeries, or hospitalizations. He takes no regular medications and has no known drug allergies.
+
+Medications  
+None reported.
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Social History  
+The patient smokes approximately one pack of cigarettes per day for the past 10–15 years. He uses cannabis occasionally, roughly 5 milligrams per week. He consumes alcohol at a rate of about one to two drinks per day, totaling approximately ten drinks per week. He exercises by running for about 30 minutes every other day and maintains a reasonably healthy diet, though he typically eats out for lunch. He reports significant work‑related stress.
+
+Family History  
+The patient’s father suffered a myocardial infarction at age 45 and has a history of hypercholesterolemia. There is no known family history of stroke, cancer, or other significant medical conditions.
+
+Review of Systems  
+- Constitutional: No fever, chills, night sweats, weight loss, or fatigue reported.  
+- Cardiovascular: Chest pain, palpitations, and lightheadedness. No syncope.  
+- Respiratory: Shortness of breath; no cough, wheeze, or sputum.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+- Genitourinary: No dysuria or hematuria.  
+- Skin: No rashes, itching, or lesions.  
+- Neurologic: No dizziness apart from lightheadedness associated with chest pain.  
+
+Physical Examination  
+No information available.
+
+Laboratory Studies  
+No laboratory data were provided in this encounter.
+
+Imaging Studies  
+No imaging studies were ordered or documented at this time.
+
+Assessment  
+The patient presents with acute, sharp, left‑sided chest pain accompanied by dyspnea, palpitations, lightheadedness, and diaphoresis, with no history of trauma or prior episodes. Risk factors include significant tobacco use and a strong family history of early myocardial infarction. Differential diagnoses include acute coronary syndrome (most likely), musculoskeletal chest wall pain, pulmonary embolism, aortic dissection, and gastrointestinal reflux. Given the symptom profile and risk factors, acute coronary syndrome is the leading consideration and warrants urgent evaluation.
+
+Plan  
+1. Immediate 12‑lead electrocardiogram (EKG) and serial cardiac troponin measurements to assess for myocardial ischemia or infarction.  
+2. Baseline laboratory panel: complete blood count, comprehensive metabolic panel, coagulation profile, and arterial blood gas if indicated.  
+3. Chest radiograph to evaluate for pulmonary pathology and aortic size.  
+4. Consider CT pulmonary angiography or aortic CT if pulmonary embolism or aortic dissection is suspected.  
+5. Initiate antiplatelet therapy with 325 mg aspirin PO and consider sublingual nitroglycerin for pain relief, monitoring for hypotension.  
+6. Provide analgesia with IV morphine as needed, with careful monitoring of respiratory status.  
+7. Admit to the cardiac telemetry unit for continuous monitoring and reassessment.  
+8. Arrange cardiology consultation for further management and possible invasive evaluation.  
+9. Counsel the patient on smoking cessation, alcohol moderation, and cardiovascular risk reduction, including diet and regular exercise.  
+10. Follow‑up appointment with primary care and cardiology within 48–72 hours or sooner if symptoms worsen.
+
+This plan addresses the immediate diagnostic and therapeutic needs while setting the stage for comprehensive cardiovascular risk management.

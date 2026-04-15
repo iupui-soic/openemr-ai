@@ -1,0 +1,118 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:30:33
+Time: 5.10s
+Tokens: 11,555 in / 1,835 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: 28 September 1931 (age 95)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+Living Situation: Resides in a small apartment with his husband.  
+
+Chief Complaint  
+Right hip pain after a fall on stairs approximately two hours prior to presentation.  
+
+History of Present Illness  
+Mr. Turner was brought to the emergency department after slipping on the last few steps of a staircase. He reports missing a step and falling forward, landing directly onto his right side and right hip. He did not experience loss of consciousness, dizziness preceding the fall, or a head injury. Since the fall, he has been unable to bear weight on the right lower extremity due to severe pain. He describes the pain as sharp when any weight is placed on the hip and achy when the hip is at rest. The pain is localized to the right groin and lateral hip region and is associated with swelling, mild redness, warmth, and visible bruising. He rates the pain as 10/10. He denies numbness, tingling, weakness, headache, visual changes, or memory loss. He felt slightly dizzy after arrival in the ambulance, which he attributes to the intensity of the pain. He has never experienced a similar injury or hip pain previously.  
+
+Review of Systems  
+Constitutional: No fever, chills, recent weight loss, or night sweats.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+Neurologic: No headache, dizziness (except transient post‑fall discomfort), numbness, or weakness.  
+Musculoskeletal: Severe right hip pain with inability to weight‑bear; no other joint pain or muscle aches.  
+Skin: Mild redness, warmth, bruising over the right hip; no rashes.  
+Psychiatric: No depression, anxiety, or suicidal ideation reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Osteoarthritis (hand) – patient reports general osteoarthritis  
+- Chronic kidney disease (historical, stage 2–4) and end‑stage renal disease with prior kidney transplant (historical)  
+- History of coronary artery disease with prior coronary artery bypass grafting  
+- Diabetes mellitus type 2 with microalbuminuria and proteinuria (historical)  
+- Anemia (historical)  
+- Prior fracture of bone (historical) – details not specified  
+- Other chronic conditions listed in the record (e.g., ischemic heart disease, prior seizures) are historical and not noted as active problems today.  
+
+Surgical History  
+No recent surgeries reported. Historical remote procedures include coronary artery bypass grafting and kidney transplant.  
+
+Social History  
+- Tobacco: Never smoked.  
+- Alcohol: Occasionally consumes a glass of wine every other day.  
+- Illicit drugs: Denies use of marijuana or other substances.  
+- Exercise: No regular exercise reported.  
+- Occupational status: Retired; currently unemployed.  
+- Social support: Lives with husband; denies recent exposure to sick contacts or travel.  
+
+Family History  
+- Father: Died of myocardial infarction in his 60s.  
+- Mother: History of non‑melanoma skin cancer treated with topical therapy.  
+- No known family history of musculoskeletal or autoimmune diseases.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Current Medications (as reported by patient and confirmed in the record)  
+- Ramipril (ACE inhibitor) for hypertension (patient’s preferred name; EMR lists lisinopril).  
+- Amlodipine 2.5 mg daily.  
+- Metoprolol succinate 100 mg extended‑release daily.  
+- Hydrochlorothiazide 25 mg daily.  
+- Nitroglycerin spray as needed for chest discomfort.  
+- Vitamin D, calcium supplement, multivitamin.  
+- Occasional over‑the‑counter ibuprofen (patient mentioned using ibuprofen for pain control).  
+
+Vital Signs  
+No vital signs were recorded at the time of this encounter.  
+
+Physical Examination  
+General: Alert, oriented, in acute distress due to right hip pain.  
+Extremities: Right hip demonstrates swelling, mild erythema, warmth, and bruising compared with the left side. The right lower extremity appears slightly externally rotated. The patient is unable to stand or bear weight on the right side. Active and passive range of motion at the right hip is severely limited by pain; hip flexion, extension, abduction, and adduction are all markedly restricted. No obvious deformity noted. No other joint swelling or tenderness.  
+Neurovascular: Distal pulses palpable; no sensory deficits reported.  
+Skin: Mild redness and bruising over the right greater trochanteric region; no open wounds.  
+
+Laboratory Data (most recent values available)  
+- Hemoglobin: 16.7 g/dL  
+- Hematocrit: (not provided)  
+- White blood cell count: 10.1 × 10³/µL  
+- Platelets: 199 × 10³/µL  
+- Electrolytes: Sodium 138 mmol/L, Chloride 111 mmol/L, Glucose 74 mg/dL, Creatinine 1.01 mg/dL  
+- Urinalysis: No leukocyte esterase, nitrites, or ketones; pH 7.9  
+- No acute metabolic abnormalities identified.  
+
+Imaging  
+No imaging studies have been performed yet. A plain radiograph of the pelvis/hip is pending to evaluate for fracture.  
+
+Assessment  
+1. Right hip fracture – high suspicion based on mechanism of injury, inability to weight‑bear, localized pain, swelling, and deformity.  
+2. Osteoarthritis – chronic background condition.  
+3. Hypertension, managed on ACE inhibitor (ramipril/lisinopril) and other antihypertensives.  
+4. Chronic kidney disease (historical) – monitor renal function with any nephrotoxic medications.  
+
+Plan  
+- Immediate orthopaedic consultation for definitive management (possible internal fixation or arthroplasty depending on fracture pattern).  
+- Obtain urgent AP pelvis and lateral hip radiographs; consider CT of the hip if radiographs are inconclusive.  
+- Pain control: Initiate scheduled acetaminophen 650 mg PO q6h PRN, and ibuprofen 600 mg PO q8h if renal function remains stable and no contraindication. If pain remains severe, consider short‑term opioid analgesia (e.g., oxycodone/acetaminophen) with careful monitoring.  
+- Mobility: Enforce non‑weight‑bearing status on the right lower extremity. Provide a bedside commode and arrange for a walker or crutches once cleared by orthopaedics.  
+- VTE prophylaxis: Initiate low‑dose low‑molecular‑weight heparin (e.g., enoxaparin 40 mg SC daily) unless contraindicated, given age and anticipated immobility.  
+- Continue home antihypertensive regimen; monitor blood pressure closely.  
+- Monitor renal function and electrolytes daily while on NSAIDs.  
+- Education: Discuss signs of worsening pain, neurovascular compromise, or infection; advise immediate return to the emergency department if any develop.  
+- Follow‑up: Orthopaedic surgery appointment within 24 hours; primary care follow‑up in 1‑2 weeks after discharge to reassess blood pressure, renal function, and overall recovery.  
+
+Discharge Instructions  
+- Remain non‑weight‑bearing on the right side until cleared by orthopaedic surgery.  
+- Use ice packs to the hip for 15‑20 minutes every 2 hours while awake to reduce swelling.  
+- Keep the right hip elevated when sitting.  
+- Take prescribed analgesics as directed; avoid exceeding recommended NSAID dosing.  
+- Watch for signs of infection (fever, increased redness, drainage) and call the clinic or present to the emergency department if they occur.  
+- Maintain adequate hydration, especially while on NSAIDs.  
+- Do not drive or operate heavy machinery while taking opioid medication.  
+
+The plan will be updated after imaging results and orthopaedic evaluation.

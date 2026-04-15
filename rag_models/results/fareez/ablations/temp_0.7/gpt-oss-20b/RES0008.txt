@@ -1,0 +1,98 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:18:50
+Time: 2.07s
+Tokens: 10,847 in / 1,233 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient reports a three‑day history of worsening cough, dyspnea, and fever, accompanied by right chest and abdominal pain that intensifies with coughing or deep inspiration.  
+
+History of Present Illness  
+Mr. Schneider states that the symptoms began approximately three days ago, with an initial mild cough that progressed to frequent coughing episodes—about two per hour—producing dark greenish‑yellow sputum. He notes that the cough has increased in frequency and sputum volume over the past 72 hours. He has experienced a sharp right‑sided chest and upper abdominal pain that is exacerbated by coughing and deep breathing but is not present with routine activity. The pain is described as sharp and occurs primarily during coughing episodes. Mr. Schneider reports fever, having measured a temperature of 38.6 °C (101.5 °F) at home. He has taken acetaminophen and ibuprofen with only transient relief of the pain. No changes in routine or exposure to known irritants have been identified. He denies recent travel.  
+
+Review of Systems  
+Constitutional: fever (38.6 °C), malaise.  
+Respiratory: productive cough (green‑yellow sputum), dyspnea, wheezing noted in prior history, chest pain with cough.  
+Cardiovascular: no chest pain aside from right‑sided pain during cough; denies palpitations.  
+Gastrointestinal: no nausea, vomiting, abdominal pain outside of cough‑related right‑sided discomfort.  
+Neurologic: no headache or dizziness.  
+Psychiatric: no anxiety or depression reported during encounter.  
+
+Past Medical History  
+Type 2 diabetes mellitus (on insulin, metformin, SGLT‑2 inhibitor).  
+Hypertension (on amlodipine).  
+Chronic kidney disease stage 4 secondary to diabetes; prior kidney transplant.  
+History of coronary artery disease with prior bypass surgery (1993).  
+Chronic obstructive pulmonary disease / chronic bronchitis secondary to long‑term smoking (30 pack‑years).  
+History of pneumonia (2020).  
+History of COVID‑19 infection (December 2020).  
+
+Surgical History  
+Coronary artery bypass grafting, 1993.  
+Kidney transplant, 2017.  
+
+Social History  
+Smoker: 30 years, approximately one pack per day.  
+No alcohol use.  
+No recreational drug use.  
+Lives with wife in a private residence.  
+Volunteer work at a homeless shelter several times per week.  
+
+Family History  
+Father deceased (heart attack in 70s).  
+Mother deceased (hypertension).  
+No known family history of respiratory disease.  
+
+Current Medications  
+- Amlodipine 2.5 mg orally daily  
+- Metformin (dose unspecified) orally daily  
+- Insulin (type and dosage unspecified) administered as needed  
+- SGLT‑2 inhibitor (specific agent unspecified) orally daily  
+- Multivitamin daily  
+- Albuterol 5 mg/3 mL inhalation solution (as needed)  
+- Enoxaparin 1 mL (150 mg/mL) (as prescribed)  
+- Tacrolimus 1 mg extended‑release (as prescribed)  
+
+Allergies  
+No known drug allergies reported.  
+
+Physical Examination  
+No examination findings were documented during the encounter.  
+
+Laboratory Studies  
+No laboratory results were obtained during this visit.  
+
+Imaging  
+No imaging studies were performed during this encounter.  
+
+Assessment  
+1. Community‑acquired pneumonia – acute presentation with fever, productive cough, dyspnea, and right‑sided chest pain.  
+2. Exacerbation of chronic bronchitis/COPD secondary to smoking.  
+3. Type 2 diabetes mellitus – uncontrolled (recent hyperglycemia implied).  
+4. Hypertension – ongoing management.  
+5. Chronic kidney disease stage 4 secondary to diabetes, post‑transplant status.  
+
+Plan  
+- Obtain a chest radiograph to confirm pulmonary infiltrate and assess extent of disease.  
+- Initiate empiric antibiotic therapy appropriate for community‑acquired pneumonia in an elderly patient with comorbidities (e.g., amoxicillin‑clavulanate or a respiratory‑gram‑sensitive agent).  
+- Continue current antihypertensive and antidiabetic regimen; consider temporary adjustment of insulin to account for potential hyperglycemia secondary to infection.  
+- Continue albuterol inhaler as needed for bronchospasm.  
+- Reassess fever and vital signs; obtain repeat temperature and pulse oximetry.  
+- Provide patient education on adherence to medication regimen, signs of worsening respiratory distress, and when to seek urgent care.  
+- Arrange follow‑up with primary care physician or pulmonology within 48–72 hours, or sooner if symptoms worsen.  
+- Counsel on smoking cessation resources and refer to a cessation program.  
+- Review and update immunization status, particularly influenza and pneumococcal vaccines, given age and comorbidities.  
+
+Discharge Instructions  
+Patient is to be monitored for resolution of fever and improvement in cough and dyspnea. If shortness of breath worsens, chest pain increases, or new confusion or hypotension develops, the patient should seek emergency care immediately.  
+
+Follow‑up Instructions  
+The patient will return for a follow‑up visit in 48–72 hours to review chest X‑ray results, laboratory data, and response to antibiotic therapy. If symptoms persist beyond one week, further evaluation for complications such as pleural effusion or sepsis will be pursued.

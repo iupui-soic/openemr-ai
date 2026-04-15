@@ -1,0 +1,131 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:21:07
+Time: 6.50s
+Tokens: 10,529 in / 2,083 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Medical Record Number: 475  
+Address: 658 Koepp Vista, Wayland, Massachusetts  
+
+Chief Complaint  
+Cough with productive sputum, dyspnea, fever, and right‑sided chest discomfort of three days’ duration.
+
+History of Present Illness  
+Mr. Schneider reports that three days ago (approximately Monday) he began to feel “not well,” noting the sudden onset of a cough that is more frequent than his usual chronic smoker’s cough. He estimates coughing “a couple of times per hour” and describes the production of dark green‑yellow sputum that requires frequent use of tissues. The cough is now present throughout the day and is accompanied by shortness of breath. On the second day he noted a sharp, pleuritic pain localized to the right side of his chest and upper abdominal area that intensifies with deep inspiration and after coughing episodes. The pain is described as sharp rather than dull and is not related to exertion or activity. He also reports feeling “hot” and measured a temperature of 38.6 °C (101.5 °F) today, prompting his visit. He denies any recent travel, known sick contacts, or obvious environmental triggers. He has not taken any prescription antibiotics; he has used acetaminophen (Tylenol) and ibuprofen (Advil) over the past few days with minimal relief of pain.
+
+Review of Systems  
+- Constitutional: Fever 38.6 °C reported; no weight loss noted.  
+- Respiratory: Productive cough with green‑yellow sputum, dyspnea on exertion and at rest, no wheezing reported.  
+- Cardiovascular: Sharp right‑sided chest pain that is pleuritic in nature; denies palpitations, orthopnea, or peripheral edema.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain other than the described right‑sided chest/upper abdominal discomfort.  
+- Genitourinary: History of chronic kidney disease; no dysuria or flank pain today.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Musculoskeletal: No myalgias or joint pain.  
+- Dermatologic: No new rash.  
+- Psychiatric: No anxiety or depression reported at this encounter.  
+
+Allergies  
+Environmental allergens only; no known drug allergies.
+
+Past Medical History  
+- Type 2 diabetes mellitus (on insulin, metformin, and an SGLT‑2 inhibitor)  
+- Chronic kidney disease, stage 4 (post‑renal transplant)  
+- Hypertension  
+- Ischemic heart disease with prior coronary artery bypass grafting (1993)  
+- History of bronchitis related to long‑term smoking  
+- Severe anxiety/panic disorder (historical)  
+
+Surgical History  
+- Renal transplantation (date not specified, ongoing status)  
+- No recent surgeries reported.
+
+Social History  
+Mr. Schneider lives with his wife in a house in Wayland, MA. He has a 30‑year history of smoking approximately one pack of cigarettes per day. He denies alcohol use and illicit drug use. He volunteers several times per week at a local homeless shelter, placing him in frequent contact with other individuals. He reports no regular exercise regimen.
+
+Family History  
+- Father: myocardial infarction in his 70s  
+- Mother: hypertension  
+- No known family history of pulmonary disease or other hereditary conditions.
+
+Current Medications (home regimen)  
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (specific agent not specified)  
+- Insulin (type and dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Hydrochlorothiazide 25 mg daily (recorded in EMR)  
+- Simvastatin 20 mg nightly (recorded in EMR)  
+- Metoprolol succinate 100 mg extended‑release daily (recorded in EMR)  
+- Nitroglycerin spray PRN (recorded in EMR)  
+- Multivitamin daily  
+- Acetaminophen 500 mg as needed (used for pain)  
+- Ibuprofen as needed (used for pain)  
+- Albuterol inhaler (recorded in EMR)  
+
+Vital Signs  
+- Temperature: 38.6 °C (measured today)  
+- Blood Pressure: Not recorded in this encounter  
+- Heart Rate: Not recorded  
+- Respiratory Rate: Not recorded  
+- SpO₂: Not recorded  
+- Weight: Not recorded  
+
+Physical Examination  
+No physical examination findings were documented in the transcript; therefore, no objective exam data are available.
+
+Laboratory Data (most recent)  
+- Hemoglobin 12.3 g/dL (derived from Hct 40.4 %)  
+- Hematocrit 40.4 %  
+- White blood cell count: 5.6 × 10³/µL (Neutrophils 2.79 × 10³/µL, Lymphocytes 22.8 %, Monocytes 1.13 × 10³/µL, Eosinophils 3.24 %)  
+- Platelets: Not listed  
+- Serum creatinine not provided; however, estimated GFR 9.5 mL/min/1.73 m² indicating severe renal impairment.  
+- BUN 8.8 mg/dL  
+- Sodium ? (not listed)  
+- Potassium ? (not listed)  
+- Chloride ? (not listed)  
+- Bicarbonate 23.6 mmol/L  
+- Calcium 8.66 mg/dL  
+- Albumin 4.62 g/dL  
+- AST 20 U/L, ALT ? (not listed), Alkaline phosphatase 55 U/L  
+- Ferritin 1547 µg/L (elevated)  
+- INR 4.70 (significantly elevated)  
+- Arterial blood gas CO₂ 35.7 mm Hg (partial pressure)  
+
+Imaging  
+No imaging studies were documented during this encounter.
+
+Assessment  
+1. Community‑acquired pneumonia, likely bacterial given productive purulent sputum, fever, and pleuritic chest pain.  
+2. Acute exacerbation of chronic obstructive pulmonary disease (history of long‑term smoking) cannot be excluded.  
+3. Severe chronic kidney disease (stage 4) with markedly reduced GFR.  
+4. Elevated INR suggesting over‑anticoagulation (patient currently on enoxaparin per EMR).  
+5. Type 2 diabetes mellitus, reasonably controlled on current regimen.  
+6. Hypertension, ischemic heart disease with prior CABG.  
+
+Plan  
+- **Antibiotics:** Initiate empiric broad‑spectrum therapy for community‑acquired pneumonia (e.g., ceftriaxone plus azithromycin) pending sputum culture results; adjust based on sensitivities.  
+- **Supportive care:** Encourage adequate oral hydration, antipyretics (acetaminophen) for fever, and analgesia for pleuritic pain (consider low‑dose NSAID if renal function permits).  
+- **Respiratory support:** Monitor oxygen saturation; provide supplemental oxygen to maintain SpO₂ ≥ 92 % if needed. Continue albuterol inhaler PRN for bronchospasm.  
+- **Renal management:** Nephrology consult to review dosing of renally cleared medications and to address the markedly low GFR. Hold nephrotoxic agents.  
+- **Coagulation:** Review anticoagulation regimen; reverse or hold enoxaparin given INR 4.7, obtain repeat INR in 12 hours, consider vitamin K if clinically indicated.  
+- **Diabetes:** Continue insulin regimen; monitor capillary glucose every 4–6 hours while inpatient.  
+- **Cardiac monitoring:** Telemetry for possible arrhythmia given underlying ischemic heart disease and current tachyarrhythmic risk.  
+- **Diagnostics:** Obtain chest radiograph to confirm infiltrate pattern; send sputum for Gram stain, culture, and sensitivity; consider viral PCR panel given recent COVID‑19 history.  
+- **Disposition:** Admit to the medical floor for close monitoring of respiratory status, renal function, and anticoagulation.  
+- **Patient education:** Counsel regarding smoking cessation resources; emphasize importance of completing the full course of antibiotics; advise on signs of worsening respiratory distress or bleeding.  
+- **Follow‑up:** Arrange outpatient follow‑up with primary care physician within 7 days of discharge, and with nephrology within 2 weeks.  
+
+Discharge Instructions (to be provided at eventual discharge)  
+- Complete the prescribed antibiotic regimen.  
+- Take acetaminophen 500 mg every 6 hours PRN for fever or pain; avoid NSAIDs unless renal function improves.  
+- Continue home diabetes and antihypertensive medications as directed, unless adjustments are made by the inpatient team.  
+- Monitor temperature; seek care if temperature exceeds 38.9 °C or if shortness of breath worsens.  
+- Avoid tobacco use; consider enrollment in a cessation program.  
+
+Prepared by: [Physician’s Name], MD  
+Date: April 14, 2026

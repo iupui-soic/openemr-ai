@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:15:50
+Time: 4.46s
+Tokens: 8,164 in / 1,411 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: 20 January 1934 (Age 92)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+“Chest pain.”  
+
+History of Present Illness  
+Mr. Crona presents with the sudden onset of left‑sided chest pressure that began approximately 30 minutes ago while shoveling snow. He describes the sensation as a dull, heavy pressure localized to the left chest wall, rating it a 7 on a 0–10 pain scale. The discomfort has remained constant and has become more intense since its onset. He notes that the pain worsens with movement, ambulation, and when lying down, and there is no specific factor that provides relief. He reports associated shortness of breath that started shortly after the pain began, a feeling of his heart beating faster, and a mild subjective sense of being “hot.” He measured his temperature at home as 38 °C. He denies radiation of the pain, cough, sputum production, nausea, vomiting, diaphoresis, leg swelling, dizziness, syncope, or recent trauma to the chest. He has never experienced a similar episode before.  
+
+Review of Systems  
+Constitutional: Low‑grade fever (38 °C); denies chills, fatigue, weight loss.  
+Cardiovascular: Chest pressure, palpitations, shortness of breath; denies orthopnea, paroxysmal nocturnal dyspnea, edema, or known arrhythmias.  
+Respiratory: Dyspnea on exertion since pain onset; no cough, wheeze, or hemoptysis.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Musculoskeletal: Pain localized to left chest; no joint swelling or recent injury.  
+Neurologic: No headache, dizziness, or loss of consciousness.  
+Skin: No rashes or lesions.  
+Psychiatric: No anxiety or depression noted; PHQ‑2 score recorded as 2 (borderline).  
+
+Past Medical History  
+- Ischemic heart disease (chronic)  
+- Essential hypertension  
+- Hyperlipidemia / high cholesterol  
+- Metabolic syndrome  
+- Prediabetes / type 2 diabetes with microalbuminuria and proteinuria  
+- Chronic kidney disease (stage 1‑4 progressing to end‑stage renal disease; history of renal transplant)  
+- Anemia  
+- Sleep apnea and other sleep disorder  
+- Chronic low‑back, neck, and generalized pain  
+- Seizure disorder (single seizure history)  
+- History of intimate partner abuse (historical)  
+
+Medications (current per patient interview and record)  
+- Rosuvastatin (lipid‑lowering)  
+- Lisinopril (ACE‑inhibitor for hypertension)  
+- Multivitamin  
+- Simvastatin 10 mg and 20 mg (lipid management)  
+- Metoprolol succinate 100 mg extended‑release (beta‑blocker)  
+- Nitroglycerin 0.4 mg/actuat mucosal spray (as needed for chest discomfort)  
+- Hydrochlorothiazide 25 mg (diuretic)  
+- Additional chronic medications listed in the record (e.g., tacrolimus, epoetin alfa, insulin, diazepam) are noted but not directly related to the acute presentation.  
+
+Allergies  
+No known drug allergies reported.  
+
+Social History  
+Mr. Crona lives in a house with his parents. He is employed as a city bus driver. He reports smoking half a pack to one pack of cigarettes daily for approximately 20 years. He does not consume alcohol. He denies current marijuana use but admits to crystal‑methamphetamine use a few times per month for the past seven years; his most recent use was six days ago. He reports modest exercise, typically a run on Sundays, and describes his diet as “fairly balanced” with occasional dining out. No regular coffee use.  
+
+Family History  
+No reported family history of myocardial infarction, coronary artery disease, or cancer.  
+
+Vital Signs (as reported by patient)  
+- Temperature: 38 °C (measured at home)  
+- Heart rate, blood pressure, respiratory rate, SpO₂: Not documented at this encounter.  
+
+Physical Examination  
+No information available.  
+
+Assessment  
+1. Acute left‑sided chest pressure with associated dyspnea in a 92‑year‑old man with known ischemic heart disease, hypertension, hyperlipidemia, and chronic kidney disease – high clinical suspicion for acute coronary syndrome (unstable angina vs non‑ST‑segment elevation myocardial infarction).  
+2. Low‑grade fever – possible concurrent infection but less likely to account for the acute chest pain.  
+3. Tobacco use and recent stimulant (methamphetamine) exposure increase cardiovascular risk.  
+
+Plan  
+- Immediate 12‑lead electrocardiogram and continuous cardiac telemetry.  
+- Obtain cardiac biomarkers (troponin I/T) and basic metabolic panel, CBC, and repeat serum electrolytes given chronic kidney disease.  
+- Administer aspirin 325 mg chewable now, followed by 81 mg daily.  
+- Offer sublingual nitroglycerin per protocol for ongoing chest discomfort, monitoring blood pressure closely.  
+- Provide supplemental oxygen to keep SpO₂ ≥ 94 % if needed.  
+- Initiate intravenous access, draw labs, and consider early beta‑blocker (metoprolol) if no contraindications.  
+- Order chest radiograph to evaluate for pulmonary causes.  
+- Consult cardiology urgently for possible early invasive strategy.  
+- Admit to telemetry unit for observation, further risk stratification, and management of potential acute coronary syndrome.  
+- Counsel on smoking cessation and arrange referral to cessation program.  
+- Discuss risks of continued methamphetamine use and offer substance‑use counseling.  
+- Review home medications; ensure nitroglycerin and aspirin are accessible on discharge.  
+- Follow‑up labs for kidney function and adjust renal‑dose medications as needed.  
+- Re‑evaluate fever; if persists or other infectious signs develop, obtain cultures and consider empiric antibiotics.  
+
+Disposition  
+Patient to be monitored in the emergency department while awaiting initial test results, then admitted to the cardiac telemetry unit pending cardiology assessment.  
+
+Signature  
+[Physician’s name], MD  
+Date: 14 April 2026

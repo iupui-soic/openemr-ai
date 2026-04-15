@@ -1,0 +1,66 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:26:01
+Time: 3.07s
+Tokens: 6,650 in / 940 out
+============================================================
+
+Patient Information:  
+The patient is a young male child brought to the clinic by his parent. The exact age is not specified in the encounter documentation. The patient is otherwise healthy with no chronic medical conditions reported.
+
+Chief Complaint:  
+Fever, dry cough, and runny nose of two days’ duration.
+
+History of Present Illness:  
+The child’s symptoms began approximately two days ago. The runny nose and dry cough started first, followed by a fever and chills that began last night. The parent measured the fever at 38.8 °C (101.8 °F). The cough is non‑productive, with no sputum or blood. The child’s breathing has been normal without shortness of breath, wheezing, or chest pain. The nasal discharge is clear, and there is no reported nasal congestion. He has a mild sore throat that is not severely bothersome. The child reports generalized muscle aches (“aches all over”). Appetite is decreased, though he continues to eat solid foods in smaller portions. There have been no episodes of vomiting, diarrhea, dizziness, fainting, numbness, tingling, rash, eye or ear symptoms, changes in smell or taste, weight loss, or urinary changes.
+
+Review of Systems:  
+
+- Constitutional: Fever (38.8 °C), chills, malaise, decreased appetite, mild myalgias. No weight loss.  
+- Respiratory: Dry cough, clear rhinorrhea, no shortness of breath, wheeze, or chest pain.  
+- ENT: Mild sore throat, no nasal congestion, no ear pain or discharge, normal hearing and vision, no changes in smell or taste.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.  
+- Neurologic: No dizziness, fainting, weakness, or sensory changes.  
+- Dermatologic: No rash.  
+- Other: No recent sick contacts, travel, or known environmental exposures (e.g., mold, dust).  
+
+Past Medical History:  
+The child has been healthy overall, with occasional colds during winter months. No chronic illnesses, hospitalizations, or surgeries have been reported.
+
+Allergies:  
+No known drug, food, or environmental allergies reported.
+
+Medications:  
+The child is not taking any medications at this time.
+
+Family History:  
+Maternal grandfather has hypertension and hypercholesterolemia. No family history of lung or heart disease reported.
+
+Social History:  
+The child lives with his mother, father, and two younger siblings. No tobacco use in the household. No recent travel. No known exposure to sick individuals. The home environment is not reported to have mold, dust, or other irritants.
+
+Physical Examination:  
+Not assessed during this encounter.
+
+Vital Signs:  
+Not assessed during this encounter.
+
+Assessment:  
+The presentation is most consistent with an acute viral upper respiratory infection. Differential considerations include COVID‑19, influenza, and other common respiratory viruses. No concerning features such as respiratory distress, high‑grade fever, or focal neurologic deficits are present at this time.
+
+Plan:  
+
+1. **Testing:** Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 test). Results are expected within 24–48 hours.  
+2. **Supportive Care:**  
+   - Encourage adequate fluid intake to maintain hydration.  
+   - Offer age‑appropriate nutrition; small, frequent meals may be better tolerated given reduced appetite.  
+   - Use antipyretics (e.g., acetaminophen) as needed for fever or discomfort, per standard dosing for age and weight.  
+3. **Monitoring & Return Precautions:**  
+   - Seek immediate medical attention if the child develops difficulty breathing, persistent high fever (> 39 °C), worsening cough with wheezing, chest pain, altered mental status, seizures, or any focal neurologic changes.  
+   - Contact the clinic if symptoms do not improve within 5–7 days or if new concerning symptoms arise.  
+4. **Follow‑up:**  
+   - The parent was advised to await the COVID‑19 test result and to follow up by telephone or in‑person if there is any clinical deterioration or if the test returns positive.  
+   - Routine follow‑up in 3–5 days if symptoms persist or earlier if worsening occurs.  
+
+No new prescriptions were ordered during this visit. The care plan emphasizes observation, symptomatic relief, and timely reassessment based on clinical course.

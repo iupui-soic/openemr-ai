@@ -1,0 +1,109 @@
+Model: openai/gpt-oss-120b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:28:54
+Time: 4.45s
+Tokens: 11,519 in / 1,419 out
+============================================================
+
+Patient Information  
+Name: Not documented  
+Age: Not documented (patient appears to be an adult)  
+Sex: Male (inferred from occupational description)  
+Residence: Lives alone in an apartment; employed as a mechanic in the city.  
+
+Chief Complaint  
+Left‑sided chest pain of acute onset.
+
+History of Present Illness  
+The patient presented to the emergency department after a fall from his bicycle approximately two hours prior to arrival. He reports that he slipped and landed directly on his left chest, sustaining a blunt impact. Since the fall, he has experienced a sharp, “stabbing” pain that involves the entire left side of his chest. The pain began shortly after the fall and has progressively worsened over the past two hours. He describes the pain as exacerbated by deep inspiration; taking slow, shallow breaths provides some relief, whereas deep breaths are markedly painful. He also reports a sensation of being unable to catch his breath and a subjective feeling that his heart is “racing” more than usual during the past hour. He denies any loss of consciousness, head injury, or helmet removal at the time of the fall. He has not experienced fever, chills, nausea, vomiting, cough, dizziness, weakness, numbness, or tingling. He reports only minor superficial scrapes on his hands from the fall. There are no other associated injuries.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight change.  
+Respiratory: Chest pain worsened by deep breathing; shortness of breath sensation without cough. No wheezing or sputum production.  
+Cardiovascular: Reports feeling of a faster heartbeat; no chest pressure radiating to arm or jaw, no palpitations noted on exam. No known history of hypertension or heart disease.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Neurologic: No headache, dizziness, syncope, or focal neurologic deficits.  
+Dermatologic: Minor scrapes on both hands; no rashes or bruising noted elsewhere.  
+Psychiatric: No anxiety, depression, or suicidal ideation reported.  
+Endocrine/Metabolic: No polyuria, polydipsia, or recent changes in glucose control.  
+
+Allergies  
+The patient reports a possible allergy to nasal spray steroids and to certain antihistamines, manifesting as allergic-type reactions when these medications are used. No known drug or food allergies otherwise.
+
+Past Medical History  
+- Seasonal allergic rhinitis (hay fever).  
+- No prior cardiac, pulmonary, or renal disease documented.  
+- No history of prior chest trauma or surgeries.  
+
+Surgical History  
+No prior surgical procedures.
+
+Social History  
+- Occupation: Mechanic, employed full‑time.  
+- Living situation: Lives alone in an apartment.  
+- Tobacco use: Smokes approximately 2½–3 packs of cigarettes per day; smoking history began at age 18.  
+- Alcohol use: Consumes beer occasionally on weekends (1–2 beers).  
+- Illicit drug use: Denies marijuana, other recreational drugs, or recent alcohol misuse.  
+- Caffeine: No coffee consumption reported.  
+
+Family History  
+- Father: Type 2 diabetes mellitus.  
+- No other family members with known cardiac, pulmonary, or renal disease reported.
+
+Current Medications  
+The patient did not report any home medications during the interview. No medication list is available in the current encounter documentation.
+
+Objective  
+
+Vital Signs  
+No vital sign measurements were recorded in the encounter documentation.
+
+Physical Examination  
+No physical exam findings were documented in the transcript. A complete exam, including inspection of the chest wall, auscultation of lung fields, cardiac assessment, and neuro‑vascular evaluation of the extremities, is recommended.
+
+Laboratory Studies  
+No laboratory tests were ordered or reported during this encounter.
+
+Imaging  
+No imaging studies (e.g., chest radiograph, CT scan) have been performed or documented at this time.
+
+Assessment  
+
+1. Acute blunt chest wall trauma with left‑sided pleuritic‑type chest pain, likely musculoskeletal contusion or rib injury pending imaging.  
+2. Possible traumatic pneumothorax or pulmonary contusion cannot be excluded without radiographic evaluation.  
+3. Tobacco use disorder, heavy (≈30 cigarettes per day).  
+4. Seasonal allergic rhinitis with reported sensitivity to nasal steroid sprays and certain antihistamines.  
+
+Plan  
+
+Diagnostic Work‑up  
+- Obtain a portable chest radiograph to evaluate for rib fractures, pneumothorax, pulmonary contusion, or other thoracic injury.  
+- Consider focused bedside ultrasound of the thorax if the chest X‑ray is equivocal or if clinical suspicion for pneumothorax remains high.  
+- If imaging reveals significant injury, follow institutional protocols for further imaging (e.g., CT chest) as indicated.
+
+Therapeutic Measures  
+- Provide analgesia with oral or IV NSAID (e.g., naproxen) as tolerated, titrating to pain control while monitoring for gastrointestinal side effects.  
+- If pain is severe and limits respiration, consider a short course of low‑dose opioid analgesic with clear discharge instructions and a taper plan.  
+- Encourage incentive spirometry and deep‑breathing exercises to prevent atelectasis, emphasizing that shallow breathing may worsen pain but adequate ventilation is essential.  
+
+Disposition / Discharge Instructions  
+- Advise the patient to avoid heavy lifting, strenuous activity, and any further impact to the chest for at least 1–2 weeks or until pain significantly improves.  
+- Instruct the patient to seek immediate medical care if he develops worsening shortness of breath, new onset cough, fever, chest pain that spreads to the arm/jaw, dizziness, or any signs of swelling or bruising of the chest wall.  
+- Provide education on smoking cessation resources, including referral to a tobacco‑cessation program and discussion of nicotine replacement therapy or pharmacologic aids.  
+- Counsel regarding alcohol moderation; occasional weekend beer use is acceptable but should not be combined with medications that may increase bleeding risk.  
+
+Follow‑Up  
+- Arrange follow‑up with primary care physician within 3–5 days for reassessment of pain, wound care of hand scrapes, and review of imaging results.  
+- If imaging demonstrates a rib fracture or other significant thoracic injury, refer to orthopedics or trauma surgery as per institutional pathway.  
+- Recommend follow‑up with an allergist if nasal spray or antihistamine reactions persist.  
+
+Patient Education Provided  
+- Explanation of likely musculoskeletal nature of chest pain and the importance of breathing exercises.  
+- Hand hygiene and wound care instructions for superficial hand scrapes.  
+- Smoking cessation benefits and available support services.  
+
+Signature  
+[Physician’s Name], MD  
+Emergency Medicine Department  
+Date: [Current Date]

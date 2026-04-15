@@ -1,0 +1,140 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:07:34
+Time: 6.11s
+Tokens: 10,847 in / 1,999 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+Medical Record Number: 475  
+
+Chief Complaint  
+Cough with dyspnea, production of purulent sputum, right‑sided chest pain, and fever for the past three days.
+
+History of Present Illness  
+Mr. Schneider reports that three days ago (approximately Monday) he began to feel unwell with a new cough that is more frequent than his usual chronic smoker’s cough. The cough is productive of dark green‑yellow sputum and occurs roughly two to three times per hour, often requiring him to use tissues. He notes increasing shortness of breath, especially after coughing episodes, and a sharp, pleuritic pain localized to the right side of his chest and upper abdomen that is worsened by deep inspiration and coughing. He measured his temperature earlier today at 38.6 °C (101.5 °F) and has felt “hot” for the past several days. He has taken acetaminophen (Tylenol) and ibuprofen (Advil) with modest relief of the pain but the symptoms have persisted and worsened, prompting this visit. He denies any recent travel, known sick contacts, or obvious environmental triggers. He continues his usual routine, including volunteer work at a homeless shelter several times per week.  
+
+Review of Systems  
+
+- Constitutional: Fever (38.6 °C); no weight loss reported.  
+- Respiratory: New productive cough with dark green‑yellow sputum, dyspnea on exertion, no wheezing reported, no hemoptysis.  
+- Cardiovascular: Sharp right‑sided chest/upper‑abdominal pain that is pleuritic in nature; no palpitations, orthopnea, or peripheral edema.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain aside from the described chest discomfort.  
+- Genitourinary: No dysuria or flank pain.  
+- Musculoskeletal: No myalgias.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Dermatologic: No rash.  
+- Psychiatric: No anxiety or depression reported at this visit.  
+
+Allergies  
+Patient reports environmental allergies only; no known medication allergies.
+
+Past Medical History  
+
+- Type 2 diabetes mellitus (on metformin, an SGLT‑2 inhibitor, and insulin).  
+- Hypertension (on amlodipine).  
+- Chronic kidney disease (stage 4) with prior renal transplant.  
+- Ischemic heart disease with prior coronary artery bypass grafting.  
+- Hyperlipidemia (on simvastatin).  
+- History of chronic bronchitis/bronchitis diagnosed in the past, attributed to long‑term smoking.  
+- No prior history of heart failure, arrhythmias, or prior pneumonia.  
+
+Surgical History  
+- Coronary artery bypass grafting (date not specified).  
+- Renal transplant (date not specified).  
+
+Social History  
+
+- Tobacco use: 1 pack per day for approximately 30 years; continues to smoke.  
+- Alcohol: None.  
+- Illicit drugs: None.  
+- Living situation: Resides with his wife in a house in Wayland, MA.  
+- Occupation/Volunteer work: Volunteers at a homeless shelter several times per week.  
+- Exercise: None reported.  
+
+Family History  
+
+- Father: Myocardial infarction in his 70s.  
+- Mother: Hypertension.  
+- No known family history of chronic lung disease.  
+
+Current Medications (home)  
+
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (dose not specified)  
+- Insulin (type and dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Multivitamin daily  
+- Occasional acetaminophen and ibuprofen for pain (self‑medicated)  
+
+Objective Findings  
+
+Vital Signs  
+- Temperature: 38.6 °C (patient‑reported)  
+- Blood pressure: Not documented  
+- Heart rate: Not documented  
+- Respiratory rate: Not documented  
+- SpO₂: Not documented  
+- Weight: Not documented  
+
+Physical Examination  
+No physical examination details were documented during this encounter.
+
+Laboratory Data (most recent)  
+
+- Erythrocyte distribution width: 13.5 %  
+- Ferritin: 1547 µg/L (elevated)  
+- Calcium: 8.66 mg/dL (low‑normal)  
+- MCH: 31.37 pg  
+- Bicarbonate (arterial): 23.6 mmol/L  
+- BUN: 8.81 mg/dL  
+- CO₂ (arterial): 35.7 mm Hg  
+- Hematocrit: 40.4 %  
+- Basophils: 0.22 ×10³/µL  
+- AST: 20.3 U/L  
+- RBC count: 4.74 ×10⁶/µL  
+- Monocytes: 1.13 ×10³/µL  
+- Alkaline phosphatase: 55.5 U/L  
+- Neutrophils: 2.79 ×10³/µL (relative neutropenia)  
+- Albumin: 4.62 g/dL  
+- Eosinophils: 3.24 %  
+- GFR (MDRD): 9.5 mL/min/1.73 m² (severe renal impairment)  
+- INR: 4.70 (significantly elevated)  
+- Lymphocytes: 22.8 %  
+
+Imaging  
+No imaging studies (e.g., chest radiograph) were performed or documented at this visit.
+
+Assessment  
+
+1. **Community‑acquired pneumonia** – New onset productive cough with purulent sputum, fever, pleuritic chest pain, and risk factors (advanced age, smoking, diabetes, chronic kidney disease).  
+2. **Acute exacerbation of chronic bronchitis** – Chronic smoker with baseline cough now worsened.  
+3. **Uncontrolled type 2 diabetes mellitus** – On multiple agents; renal function markedly reduced.  
+4. **Hypertension** – Controlled on amlodipine.  
+5. **Chronic kidney disease, stage 4 with renal transplant** – GFR 9.5 mL/min, INR markedly elevated, requiring careful medication selection.  
+6. **Tobacco use disorder** – Ongoing 1‑pack‑per‑day smoking.  
+
+Plan  
+
+- **Antibiotic therapy**: Initiate empiric oral antibiotics for presumed bacterial pneumonia, such as amoxicillin‑clavulanate 875/125 mg twice daily for 7 days, or azithromycin 500 mg daily for 5 days if β‑lactam allergy is suspected. Adjust based on culture results if obtained.  
+- **Chest imaging**: Obtain a portable chest radiograph today to confirm infiltrate and assess for complications.  
+- **Oxygenation**: Check pulse oximetry; if SpO₂ < 94 % on room air, start supplemental oxygen to maintain ≥94 %.  
+- **Pain control**: Continue acetaminophen 650 mg q6h PRN; avoid NSAIDs given elevated INR and renal impairment. Consider low‑dose opioids only if pain remains uncontrolled.  
+- **Laboratory monitoring**: Repeat CBC, BMP, and INR in 24–48 hours to monitor for worsening infection, renal function, and coagulopathy.  
+- **Diabetes management**: Review insulin dosing in the context of infection and possible reduced oral intake; monitor capillary glucose q4–6 hours while ill.  
+- **Hypertension**: Continue amlodipine; monitor blood pressure at home.  
+- **Renal considerations**: Hold nephrotoxic agents; adjust doses of renally cleared drugs as needed.  
+- **Smoking cessation**: Offer counseling, nicotine replacement therapy, and referral to a cessation program.  
+- **Vaccinations**: Verify pneumococcal and influenza immunization status; administer if indicated.  
+- **Follow‑up**: Return to the clinic in 48 hours or sooner if worsening dyspnea, chest pain, fever > 101 °F, or new confusion. Arrange outpatient chest X‑ray review and possible pulmonary specialist referral if no improvement.  
+- **Education**: Instruct patient to maintain adequate hydration, complete the full course of antibiotics, monitor temperature, and seek emergency care if he develops severe shortness of breath, chest pain radiating to the arm or jaw, or signs of sepsis (e.g., hypotension, altered mental status).  
+
+Disposition  
+Patient is being managed as an outpatient with close follow‑up; no immediate admission criteria met at this time.  
+
+Prepared by: _______________________   Date: ____________   (Medical Scribe)   Reviewed and signed by: _______________________   (Attending Physician)

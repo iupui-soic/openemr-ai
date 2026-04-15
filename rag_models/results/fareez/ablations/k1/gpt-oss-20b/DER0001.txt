@@ -1,0 +1,103 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:33:39
+Time: 2.50s
+Tokens: 8,741 in / 1,375 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Age: 45 years  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint  
+The patient presents with a rapidly enlarging, painful rash on the right ankle that has been worsening over the past week. He reports increased redness, swelling, and a white discharge from an area that previously had a scab.
+
+History of Present Illness  
+Mr. Crona first noticed the rash on the right ankle approximately one week ago. The lesion began as a small, red, swollen area that has since increased in size, becoming markedly erythematous with a noticeable swelling that extends beyond the initial site. Yesterday morning, the patient experienced sudden pain and noted the appearance of a white discharge, suggesting an open wound. He has been scratching the area, which has likely contributed to worsening symptoms. The pain is moderate, worsens with movement of the ankle, and is less intense on direct pressure. The patient reports feeling slightly warm in the right leg and describes a feeling of “hotness” that began about 12 hours ago. He denies fever, shortness of breath, chest pain, or other systemic symptoms.
+
+Review of Systems  
+Constitutional: Mild fatigue, increased hunger, no documented fever.  
+Dermatologic: Rash on right ankle as described; no other rashes noted.  
+Musculoskeletal: Pain with ankle flexion; no history of recent trauma.  
+Neurologic: Reports decreased sensation in feet due to long‑standing diabetic neuropathy.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Respiratory: No shortness of breath or cough.  
+Genitourinary: No dysuria or hematuria.  
+
+Allergies  
+Penicillin (anaphylaxis with facial swelling and respiratory distress).  
+
+Past Medical History  
+- Type 2 diabetes mellitus, poorly controlled, with occasional ulcers on the feet.  
+- Hyperlipidemia.  
+- Hypertension.  
+- Chronic kidney disease stage 2 (eGFR ~79 mL/min).  
+- Peripheral neuropathy related to diabetes.  
+- History of back pain managed with OTC analgesics.  
+
+Surgical History  
+- Sinus surgery (adenoidectomy) in adolescence; no other surgeries reported.  
+
+Social History  
+- Lives in the community, visits children every two weeks.  
+- Currently unemployed; previously worked as an accountant.  
+- Tobacco use: Occasional smoking, roughly 2 packs per week over the past two weeks.  
+- Alcohol use: Regular consumption, averaging 2–4 drinks per day on weekends.  
+- No recreational drug use.  
+- No formal exercise routine.  
+
+Family History  
+- Maternal side: Multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+- Paternal side: Relatively healthy with no significant chronic illnesses reported.  
+
+Current Medications  
+- Metformin (dose unspecified).  
+- Rosuvastatin (dose unspecified).  
+- Two other diabetic medications (identities unknown; patient will provide a list later).  
+- No insulin therapy.  
+
+Objective  
+Vital Signs – No vitals recorded during this encounter.  
+Physical Examination – The right ankle shows marked erythema, swelling, and warmth. A shallow open wound with white purulent exudate is present. The lesion is tender to palpation, and pain increases with ankle flexion. No erythema or tenderness noted on the left leg. Peripheral pulses are present but not specifically documented. No signs of lymphangitis or cellulitic spread noted.  
+Laboratory Findings –  
+- Serum creatinine 2.98 mg/dL (eGFR 79 mL/min).  
+- Total cholesterol 177 mg/dL.  
+- LDL cholesterol 120 mg/dL.  
+- Serum glucose 94 mg/dL (likely a prior value).  
+- Liver enzymes within normal limits.  
+No cultures or imaging studies have been performed at this time.  
+
+Assessment  
+1. Cellulitis of the right lower extremity, likely secondary to a recent skin breakdown and poor glycemic control.  
+2. Uncontrolled type 2 diabetes mellitus with peripheral neuropathy.  
+3. Chronic kidney disease stage 2.  
+4. Smoking and alcohol use contributing to overall vascular risk.  
+
+Plan  
+- Initiate empiric antibiotic therapy with oral dicloxacillin 500 mg four times daily for 10 days, or alternatively, cefazolin 1 g IV q6h until culture results or improvement.  
+- Advise the patient to keep the affected limb elevated and avoid scratching or pressure.  
+- Prescribe topical mupirocin 2% ointment applied to the wound twice daily for 7 days.  
+- Continue current diabetes regimen; encourage regular self-monitoring of blood glucose and prompt follow-up with primary care.  
+- Arrange for wound care follow-up in 48–72 hours or sooner if symptoms worsen.  
+- Provide education on proper foot care and the importance of controlling blood glucose to prevent further ulceration.  
+- Counsel on smoking cessation resources and moderate alcohol consumption.  
+- Refer to endocrinology for optimization of glycemic control and review of diabetic medications.  
+- Schedule laboratory reassessment (CBC, CMP, and wound cultures if necessary) in 5–7 days.  
+- Encourage patient to monitor for systemic signs (fever, increased pain, spreading redness) and to seek immediate care if these occur.  
+
+Follow‑Up Instructions  
+The patient is advised to return to the clinic in 5–7 days for re-evaluation of the wound and adjustment of antibiotics as needed. Should he develop fever, worsening pain, or other concerning symptoms, he should seek urgent medical attention at the emergency department.  
+
+Discharge Instructions  
+- Keep the right leg elevated as much as possible.  
+- Use warm compresses for 10 minutes, twice daily, to reduce swelling.  
+- Apply prescribed topical ointment as directed.  
+- Complete the full course of antibiotics.  
+- Avoid self-medication with over‑the‑counter analgesics beyond acetaminophen for pain.  
+- Monitor blood glucose and document values; report any readings above 250 mg/dL or persistent hypoglycemia to his primary care provider.  
+
+The patient was educated on all aspects of his condition and the importance of adherence to the treatment plan. He has verbalized understanding and agrees to follow the outlined instructions.

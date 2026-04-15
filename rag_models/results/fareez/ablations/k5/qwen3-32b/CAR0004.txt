@@ -1,0 +1,47 @@
+Model: qwen/qwen3-32b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:46:17
+Time: 3.41s
+Tokens: 10,410 in / 973 out
+============================================================
+
+Patient Information  
+A 25-year-old female, Aileen Vi Rempel, presents to the clinic with a chief complaint of sharp chest pain. She is a student studying engineering and works part-time as a postman. She resides with her mother in Quincy, Massachusetts. The patient denies any allergies, tobacco, alcohol, or recreational drug use. She reports no significant social history other than occasional alcohol consumption on weekends.  
+
+Chief Complaint  
+The patient reports experiencing sharp chest pain localized over the cardiac area, which began three days prior to presentation. The pain is described as sharp, lasting only a few seconds, and is exacerbated by coughing or lying down. It improves with leaning forward. The patient notes that the pain occasionally radiates to her neck. She rates the pain as 6 out of 10 in intensity.  
+
+History of Present Illness  
+The patient describes intermittent episodes of sharp chest pain that began three days ago. The pain is localized over the cardiac area and is associated with coughing and lying down. It is relieved by leaning forward. The episodes last only a few seconds and are not constant. The patient denies any associated symptoms such as shortness of breath, dizziness, palpitations, numbness, or weakness. She reports no fever, chills, or cough at the time of presentation, though she mentions having had a recent viral illness with fever, runny nose, and cough approximately one week prior. She denies any recent trauma or injury to the chest. The patient is particularly concerned due to a recent history of her father passing away from a heart attack two weeks ago. She has self-medicated with Tylenol, which provided some relief.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue.  
+Respiratory: No shortness of breath, cough, or sputum production.  
+Cardiovascular: No palpitations, syncope, or peripheral edema.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No headaches, dizziness, or visual changes.  
+Musculoskeletal: No joint pain or muscle aches.  
+Psychiatric: No depression or anxiety symptoms reported at this time.  
+Other: No rash, itching, or other unusual symptoms.  
+
+Past Medical History  
+The patient has a complex and extensive medical history, including essential hypertension, ischemic heart disease, acute ST-segment elevation myocardial infarction, end-stage renal disease, chronic kidney disease (stages 1–4), history of renal transplant, osteoporosis, stroke, and a history of myocardial infarction. She also has a history of prediabetes, metabolic syndrome, and multiple dental issues including gingivitis and dental caries.  
+
+Family History  
+The patient reports a family history of heart disease, specifically noting that her father had a heart attack and passed away two weeks prior to her presentation. No other significant family history is provided.  
+
+Social History  
+The patient is a non-smoker, non-drug user, and consumes alcohol occasionally. She is a student and works part-time as a postman. She lives with her mother.  
+
+Current Medications  
+The patient is on multiple medications, including atorvastatin, losartan potassium, metoprolol succinate, clopidogrel, prasugrel, and others related to her chronic conditions. She occasionally takes Tylenol for pain relief.  
+
+Objective  
+Vital signs were not recorded during this visit. Physical examination was not detailed in the transcript. Laboratory results from the OpenEMR record include creatinine 0.35 mg/dL, sodium 141.33 mmol/L, potassium 4.25 mmol/L, and other routine electrolytes within normal ranges.  
+
+Assessment  
+Given the patient’s description of chest pain, which is positional and improves with leaning forward, and her recent viral illness, pericarditis is a strong consideration. The absence of associated symptoms such as shortness of breath, palpitations, or syncope, along with the positional nature of the pain, supports this differential. The patient’s history of myocardial infarction and family history of heart disease necessitate further evaluation to rule out cardiac causes.  
+
+Plan  
+The patient will undergo an electrocardiogram (ECG) to assess for any cardiac abnormalities. Blood work, including cardiac enzymes, will be ordered to evaluate for myocardial injury. A thorough physical examination will be performed to assess for signs of pericarditis or other cardiac pathology. The patient will be reassured and monitored closely. If findings are inconclusive, further imaging or cardiology referral may be considered. The patient will be advised to follow up in 24–48 hours or sooner if symptoms worsen.

@@ -1,0 +1,34 @@
+Model: qwen/qwen3-32b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:18:11
+Time: 3.80s
+Tokens: 14,325 in / 912 out
+============================================================
+
+Patient Information  
+The patient is a 91-year-old male with a long-standing medical history including essential hypertension, chronic kidney disease, ischemic heart disease, and a history of kidney transplant. He resides in Salisbury, Massachusetts, and is married with two teenagers at home. His occupation is listed as an accountant, though there are extensive records of employment status changes over the years, including periods of full-time, part-time, and not in the labor force. His social history includes a history of tobacco use, currently smoking approximately 5 cigarettes per day, and occasional alcohol consumption. He has no known allergies and reports that his immunizations are up to date. His family history includes a maternal history of heart attack in her 70s.  
+
+Chief Complaint  
+The patient presents with a 5-day history of left-sided chest pain described as sharp and persistent, which is exacerbated with deep breathing and physical exertion such as walking. He also reports dyspnea, particularly with exertion, and has been self-medicating with over-the-counter analgesics (Tylenol and Advil), which provide minimal relief. He denies any associated symptoms such as fever, chills, cough, sputum production, nausea, vomiting, syncope, or lightheadedness.  
+
+History of Present Illness  
+The patient first noticed the chest pain while sitting on the couch and has since experienced worsening symptoms with physical activity. The pain is localized to the left side of the chest and is described as a sharp, lingering discomfort. It is not radiating and is exacerbated by deep breathing. The patient notes that the pain is not relieved by rest but is somewhat mitigated by over-the-counter analgesics. He also reports shortness of breath, which has led to reduced physical activity and a sense of fatigue. The patient denies any recent travel, trauma, or other precipitating factors. He recently underwent a hysterectomy approximately one month ago and reports that his recovery was uneventful.  
+
+Past Medical History  
+The patient has a complex medical history, including essential hypertension, chronic kidney disease (now with a history of renal transplant), ischemic heart disease, and a history of prostate carcinoma in situ. He has also experienced chronic sinusitis, chronic bronchitis, and multiple dental issues, including gingivitis and dental caries. His medications include tacrolimus for immunosuppression, furosemide, lisinopril, metoprolol, simvastatin, clopidogrel, and sertraline. He has a history of opioid abuse and has undergone multiple medication reviews.  
+
+Social History  
+The patient has a history of tobacco use and currently smokes approximately 5 cigarettes per day. He reports occasional alcohol consumption, primarily on weekends. He has a history of social isolation and limited social contact, with multiple documented periods of stress and reports of violence in the environment.  
+
+Family History  
+The patient's mother had a history of heart attack in her 70s. There is no known family history of cancer, bleeding disorders, or thrombosis in immediate family members.  
+
+Physical Examination  
+No physical examination findings are available from the provided data.  
+
+Assessment  
+The patient presents with a constellation of symptoms concerning for a pulmonary embolism, given the acute onset of left-sided chest pain, dyspnea, and exacerbation with exertion. His history of recent surgery (hysterectomy) and immobility post-procedure increases his risk for venous thromboembolism. Other considerations include musculoskeletal chest pain, pleuritis, or pericarditis. Given the absence of fever, cough, or sputum, infectious etiologies such as pneumonia are less likely. The patient's complex medical history, including chronic kidney disease and a history of renal transplant, further supports the need for prompt evaluation and imaging.  
+
+Plan  
+The patient will undergo immediate diagnostic evaluation to rule out pulmonary embolism. This will include a chest X-ray, computed tomography pulmonary angiogram (CTPA), and possibly a D-dimer test. Additional laboratory investigations will be performed to assess for any underlying coagulopathy or other contributing factors. The patient will be monitored for any changes in symptoms and will be advised to avoid any strenuous activity until a definitive diagnosis is made. If a pulmonary embolism is confirmed, appropriate anticoagulation therapy will be initiated. The patient will be followed up for further management based on the results of the imaging and laboratory studies.

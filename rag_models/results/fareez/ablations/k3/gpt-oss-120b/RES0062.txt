@@ -1,0 +1,122 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:25:35
+Time: 5.42s
+Tokens: 15,449 in / 2,090 out
+============================================================
+
+Patient Information  
+Abel Cummerata is a male patient, age 67 (date of birth 25 March 1917), residing at 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts. He lives in a house with his wife.  
+
+Chief Complaint  
+Cough with production of yellow‑green sputum and progressive shortness of breath for the past three days.  
+
+History of Present Illness  
+Three days ago the patient noted the onset of a cough that has been productive of yellow‑green sputum, approximately the size of a thumb tip per expectoration. The sputum is described as watery without visible pus or froth and without blood. One day ago he began to experience worsening shortness of breath, which he rates as 7/10 in severity. He reports that the dyspnea is present at rest and worsens when he is “really short of breath,” at which time he sometimes hears wheezing. The cough and dyspnea have been continuous throughout the day and night, interfering with sleep. He denies any specific triggers such as allergens, pollen, or time of day. He has not experienced these symptoms before. Associated symptoms include generalized fatigue, a sense of weakness, mild myalgias, and occasional abdominal discomfort described as a “bit achy.” He reports a sensation of altered smell (anosmia or dysosmia) noted when he could not smell a candle; he denies loss of taste, rhinorrhea, nasal congestion, sore throat, chest pain, palpitations, dizziness, syncope, confusion, or recent fever/chills. He denies night sweats, weight loss, diarrhea, constipation, blood in stool, urinary symptoms, visual or auditory changes, or eye/ear discharge.  
+
+Review of Systems  
+Constitutional: Fatigue, mild weakness; denies fever, chills, night sweats, weight loss.  
+Respiratory: Productive cough with yellow‑green sputum, dyspnea (7/10), occasional wheezing; denies hemoptysis.  
+Cardiovascular: History of atrial fibrillation, currently rate‑controlled; denies chest pain, palpitations, orthopnea, edema.  
+Gastrointestinal: Mild abdominal achiness; denies nausea, vomiting, diarrhea, constipation, melena, hematochezia.  
+Genitourinary: No dysuria, hematuria, or frequency.  
+Neurologic: No dizziness, syncope, confusion, or focal deficits.  
+ENT: Altered sense of smell; no sore throat, rhinorrhea, or nasal obstruction.  
+Musculoskeletal: Mild myalgias; no joint swelling.  
+Skin: No rashes noted today.  
+
+Allergies  
+Sulfa drugs – causes rash (history of allergic reaction). No known food or environmental allergies.  
+
+Past Medical History  
+Atrial fibrillation diagnosed approximately four years ago, currently managed with metoprolol. The patient reports regular follow‑up ECGs with recent normal findings and a resting heart rate of about 80 bpm. He also reports taking a statin and low‑dose baby aspirin for cardiovascular prophylaxis. No other chronic illnesses were mentioned in the interview.  
+
+Surgical History  
+Inguinal hernia repair performed approximately 15 years ago without complications.  
+
+Social History  
+Former smoker: one pack per day for many years, quit five years ago after atrial fibrillation diagnosis. No current tobacco use. Occasional use of low‑dose CBD edibles (≈2.5 mg) two to three times per week for sleep; no other recreational drug use. No current alcohol consumption; ceased drinking several years ago. No recent travel. He visited his mother at a long‑term care facility about one week ago; the facility has reported a COVID‑19 outbreak. No known exposure to mold, asbestos, or other environmental hazards at home.  
+
+Family History  
+Aunt with a history of lung cancer; otherwise non‑contributory for cardiac, pulmonary, or other malignancies.  
+
+Current Medications (as reported)  
+Metoprolol (beta‑blocker) – dose not specified.  
+Statin (type and dose not specified).  
+Low‑dose aspirin (baby aspirin).  
+
+Objective  
+Vital Signs: No vital sign measurements documented during this encounter.  
+
+Physical Examination  
+General: Alert, oriented, appears mildly fatigued.  
+HEENT: No oropharyngeal erythema or exudate; sense of smell diminished. No nasal discharge.  
+Neck: Supple, no lymphadenopathy.  
+Cardiovascular: Regular rate and rhythm, no murmurs noted; patient reports prior rate control.  
+Respiratory: Breath sounds diminished in the lower lung fields with scattered wheezes on forced expiration; no rales or crackles documented. No use of accessory muscles noted.  
+Abdomen: Soft, mildly tender diffusely; no rebound, guarding, or organomegaly.  
+Extremities: No edema.  
+Neurologic: Grossly intact.  
+
+Laboratory Data (most recent values available)  
+- Hematocrit: 43.3 % (within normal limits)  
+- Hemoglobin (implied by Hct) – normal range  
+- White blood cell differential: Neutrophils 13.7 %, Lymphocytes not listed, Monocytes 9.5 %, Basophils 3.0 %  
+- Ferritin: 1853 µg/L (elevated)  
+- Bicarbonate (serum): 24 mmol/L; arterial CO₂ = 41.9 mmHg (normal)  
+- Electrolytes: Potassium 4.04 mmol/L; Calcium 9.75 mg/dL  
+- BUN: 17.9 mg/dL; Creatinine not provided.  
+- Liver enzymes: AST 15 U/L; ALT not listed; total bilirubin not listed.  
+
+Imaging  
+No chest radiograph or other imaging studies were performed during this visit.  
+
+Assessment  
+1. Acute lower respiratory infection, likely viral in origin (possible COVID‑19) presenting with productive cough, dyspnea, and altered smell.  
+2. Community‑acquired pneumonia cannot be excluded given the presence of productive cough, fever (patient reports feeling “a little hot”), and wheezing; however, no infiltrates have been imaged yet.  
+3. Atrial fibrillation, rate‑controlled on metoprolol, stable.  
+4. Sulfa allergy – rash.  
+
+Plan  
+Diagnostic Studies  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR testing; send to laboratory with expedited turnaround.  
+- Consider chest radiograph once COVID‑19 status is known or if symptoms worsen, to evaluate for bacterial pneumonia.  
+
+Therapeutic Interventions  
+- Encourage adequate hydration and rest.  
+- Continue current home medications (metoprolol, statin, aspirin).  
+- Symptomatic relief: Acetaminophen 500 mg PO q6‑8 hours PRN for fever or discomfort, not to exceed 3 g per day.  
+- Albuterol inhaler as needed for wheezing (patient already has an albuterol inhaler on record).  
+- No antibiotics are prescribed at this time; if bacterial pneumonia is later confirmed or the clinical picture deteriorates, initiate empiric therapy per local guidelines.  
+
+Infection Control  
+- Advise strict self‑isolation for 14 days from symptom onset, regardless of test result, and advise household contacts, including spouse, to monitor for symptoms and consider testing.  
+
+Follow‑up  
+- Telephone follow‑up in 48 hours to review PCR results and assess clinical progression.  
+- In‑person or virtual visit if dyspnea worsens, fever persists beyond 3 days, new chest pain develops, or oxygen saturation (if measured at home) falls below 94 %.  
+- Routine cardiology follow‑up for atrial fibrillation as previously scheduled.  
+
+Patient Education  
+- Discussed the natural course of viral respiratory infections and the importance of monitoring for signs of bacterial superinfection (e.g., worsening cough, high fever, purulent sputum).  
+- Reviewed proper use of the albuterol inhaler and the importance of hand hygiene and mask use when around others.  
+- Provided information on smoking cessation benefits and encouraged continuation of the smoke‑free status.  
+- Discussed alternatives to CBD edibles for sleep, including melatonin or prescription sleep aids, if desired.  
+
+Disposition  
+Patient is to remain at home with self‑isolation, supportive care, and close follow‑up as outlined above. No immediate hospital admission is indicated at this time.  
+
+Discharge Instructions  
+- Rest, maintain adequate fluid intake, and use acetaminophen for fever or pain.  
+- Use albuterol inhaler for wheezing as needed, following standard dosing.  
+- Monitor temperature twice daily; seek care if temperature exceeds 38.5 °C (101.3 °F) or if shortness of breath worsens.  
+- Keep a symptom diary, noting sputum quantity, color changes, and any new chest pain or palpitations.  
+- Continue current cardiovascular medications; do not miss doses.  
+- Avoid contact with high‑risk individuals, especially in the long‑term care setting.  
+
+Follow‑up Instructions  
+- Phone call from clinic in 48 hours to discuss COVID‑19 test result.  
+- Return to clinic (virtual or in‑person) within 5‑7 days for reassessment, or sooner if symptoms deteriorate.  
+
+Prepared by: _______________________   Date: ____________   (Physician signature)

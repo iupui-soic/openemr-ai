@@ -1,0 +1,62 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:55:47
+Time: 2.00s
+Tokens: 8,983 in / 843 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel (note: transcript identifies the patient as a 25‑year‑old male student; however, the EMR record lists a female with a different history—trusting the transcript for the current encounter).  
+Age: 25 years  
+Sex: Male  
+Occupation: Engineering student and part‑time postman  
+Residence: Lives with parents in a house  
+
+Chief Complaint  
+The patient presents with sharp chest pain localized over the heart that began approximately three days ago.  
+
+History of Present Illness  
+Three days prior to presentation, the patient began experiencing intermittent, sharp pain over the area directly over his heart. The episodes last only a few seconds and recur sporadically. Pain intensity is rated 6 out of 10. The pain is exacerbated by coughing or lying flat, and is relieved when he leans forward. There is occasional radiation to the neck. The patient reports no associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or recent trauma. He has taken acetaminophen (Tylenol) once yesterday, which provided some relief. He denies any previous episodes of chest pain and reports no known medical conditions or current medications other than occasional acetaminophen.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight change.  
+Respiratory: No current cough or shortness of breath. (He did experience a flu‑like illness last week.)  
+Cardiovascular: No palpitations, syncope, or prior heart disease.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurologic: No dizziness or weakness.  
+All other systems were negative.  
+
+Past Medical History  
+No prior medical diagnoses or surgeries are reported.  
+
+Social History  
+The patient does not smoke, uses alcohol occasionally (one or two drinks on weekends), and denies recreational drug use. He is a full‑time engineering student and works part‑time as a postman.  
+
+Family History  
+Father recently suffered a myocardial infarction two weeks ago and passed away. No other family history of heart disease or cancer is noted.  
+
+Medications  
+The patient reports taking acetaminophen (Tylenol) occasionally for pain. No other medications are listed.  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No examination was documented during this encounter.  
+
+Assessment  
+Acute chest pain of unclear etiology, with a significant family history of coronary artery disease. Differential diagnosis includes acute coronary syndrome, musculoskeletal chest wall pain (e.g., costochondritis), and less likely pulmonary or esophageal causes. Given the patient's age, symptom characteristics, and family history, evaluation for acute coronary syndrome is warranted.  
+
+Plan  
+1. Immediate evaluation with a 12‑lead electrocardiogram (ECG) to assess for ischemic changes.  
+2. Order cardiac enzyme panel (troponin I/T, CK‑MB) and complete blood count to rule out other causes of chest pain.  
+3. Monitor vital signs and reassess pain after initial workup.  
+4. If ECG or laboratory results are abnormal, transfer to emergency department for further management and possible cardiac catheterization.  
+5. Advise the patient to avoid lying flat; maintain an upright position and lean forward as needed to relieve pain.  
+6. Educate the patient on recognizing worsening symptoms such as increased chest pain, shortness of breath, palpitations, or syncope, and to seek immediate medical attention if they occur.  
+7. Follow up in the primary care clinic within 48–72 hours after initial evaluation or sooner if symptoms worsen.  
+8. Continue acetaminophen for analgesia as needed, but refrain from using NSAIDs until cardiac workup is complete.  
+
+Disposition  
+The patient is advised to remain at home while awaiting test results, with instructions to seek emergent care if symptoms deteriorate. He is scheduled for an ECG and laboratory studies as part of the next clinic visit. No discharge medications were prescribed at this time.

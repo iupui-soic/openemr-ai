@@ -1,0 +1,62 @@
+Model: google/medgemma-4b-it
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:33:44
+Time: 41.51s
+Tokens: 16,348 in / 621 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Name: Abel Cummerata
+DOB: 1917-03-25
+Sex: Male
+Unit Number: 334
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000
+
+Chief Complaint: Cough and shortness of breath.
+
+History of Present Illness:
+
+The patient presents with a cough that started approximately three days ago, accompanied by shortness of breath that began within the last day or so. The cough is described as a wet cough, producing yellowish-green phlegm. The patient denies any blood in the sputum. The shortness of breath is rated as a 7 out of 10, and it is interfering with sleep. The patient denies any triggers for the cough, such as pollen or pets. The cough has been ongoing throughout the day. The patient denies chest pain. He denies any dizziness or fainting spells. He denies confusion or memory loss. He reports some muscle aches and weakness. He denies any specific positions that worsen his shortness of breath. He has no prior history of similar episodes.
+
+Past Medical History:
+
+The patient has a history of atrial fibrillation, diagnosed four years ago, and is currently taking Metoprolol. He last had an ECG approximately two months ago, which was normal. He has a history of inguinal hernia repair 15 years ago. He is also on a statin and baby aspirin for cardiovascular issues.
+
+Medications:
+
+The patient is currently taking Metoprolol, a statin, and baby aspirin.
+
+Allergies:
+
+The patient reports a sulfa allergy, resulting in a rash after taking an antibiotic years ago.
+
+Social History:
+
+The patient used to smoke a pack of cigarettes a day, but quit five years ago. He uses CBD edibles a couple of times per week.
+
+Family History:
+
+The patient's aunt had lung cancer, who smoked her entire life.
+
+Review of Systems:
+
+Constitutional: Patient reports feeling tired and weak.
+Respiratory: Cough, shortness of breath, wheezing (possibly).
+Cardiovascular: No chest pain, no racing heart.
+Gastrointestinal: No abdominal pain, normal bowel movements.
+Other: No dizziness, no fainting spells, no confusion, no memory loss, no muscle aches.
+
+Physical Exam:
+
+The physical exam findings are not provided in the transcript.
+
+Assessment:
+
+The patient is presenting with symptoms suggestive of an upper respiratory viral illness, potentially including COVID-19. Given the symptoms and the current public health situation, the patient is advised to isolate for 14 days. Further evaluation is needed to rule out bacterial infection or pneumonia.
+
+Plan:
+
+A swab will be obtained for PCR testing to rule out COVID-19. The patient will be advised to isolate for 14 days. If the test is positive, public health will be contacted for contact tracing. If the test is negative, further evaluation will be considered if symptoms do not improve. Antibiotics may be prescribed if bacterial infection or pneumonia is suspected.

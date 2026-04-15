@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:00:17
+Time: 3.85s
+Tokens: 9,423 in / 1,221 out
+============================================================
+
+Patient Information  
+The patient is a 39-year-old male presenting with acute onset of chest pain. The patient is otherwise healthy with no known prior medical conditions. He is employed as an accountant and resides in an apartment by himself. The patient has a history of tobacco use, including approximately one pack of cigarettes per day for the past 10 to 15 years, and occasional cannabis use, approximately 5 milligrams per week. The patient consumes alcohol, averaging about 10 drinks per week. The patient reports no known allergies to medications and states that his immunizations are up to date. Family history is significant for a father who had a heart attack at age 45 and a history of cholesterol problems.
+
+Chief Complaint  
+The patient presents with a chief complaint of chest pain that began the previous night and has become sharper over the course of the day. The pain is located on the left side of the chest and is described as sharp and constant. The patient reports that the pain worsens when lying down and with deep breathing. The pain is rated as a 7 or 8 out of 10 in severity. The patient also reports associated symptoms, including lightheadedness, trouble breathing, and a sensation of a racing heart. There is no reported history of similar episodes.
+
+History of Present Illness  
+The patient reports that the chest pain began the previous night and has persisted for approximately 8 hours. The pain is localized to the left side of the chest and is described as sharp. The patient notes that the pain is exacerbated by lying down and deep breathing but is not relieved by any specific activity. The patient denies radiation of the pain. The patient also reports experiencing lightheadedness and some difficulty breathing. There is no reported history of trauma, recent illness, or other associated symptoms such as fever, chills, nausea, vomiting, abdominal pain, or urinary or bowel changes. The patient denies cough, wheezing, or blood-tinged secretions. The patient has no prior history of chest pain or similar symptoms.
+
+Review of Systems  
+Constitutional: The patient reports lightheadedness but denies fever, chills, or night sweats.  
+Respiratory: The patient reports difficulty breathing but denies wheezing, cough, or hemoptysis.  
+Cardiovascular: The patient reports chest pain and a sensation of a racing heart but denies palpitations, syncope, or edema.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain reported.  
+Genitourinary: No urinary symptoms reported.  
+Musculoskeletal: No joint or muscle pain reported.  
+Neurological: No headaches, dizziness, or neurological deficits reported.  
+Psychiatric: No mood changes or anxiety reported.  
+Dermatological: No rashes or skin changes reported, though the patient notes some swelling in the neck without associated pain or trauma.  
+Hematologic: No bruising or bleeding reported.  
+Endocrine: No changes in weight or appetite reported.  
+Allergic: No new or recent allergic reactions reported.  
+Other: The patient denies any recent travel or exposure to sick contacts.
+
+Past Medical History  
+The patient reports no prior medical conditions, surgeries, or hospitalizations. The patient states that he is otherwise healthy and has no chronic medical conditions.
+
+Social History  
+The patient is a current smoker, with a 10 to 15-year history of smoking approximately one pack of cigarettes per day. The patient reports occasional cannabis use, approximately 5 milligrams per week. The patient consumes alcohol, averaging about 10 drinks per week. The patient reports eating out for lunch and attempting to eat healthy dinners. The patient exercises every other day, typically running for about 30 minutes. The patient lives alone in an apartment and works as an accountant. The patient reports no history of illicit drug use or intravenous drug use.
+
+Family History  
+The patient reports a family history of heart problems, specifically a father who had a heart attack at age 45 and a history of cholesterol problems. There is no reported family history of stroke, cancer, or other significant medical conditions.
+
+Current Medications  
+The patient reports no current medications and denies the use of any prescribed or over-the-counter medications.
+
+Allergies  
+The patient denies any known drug allergies.
+
+Objective  
+Vital signs were not recorded during the encounter. Physical examination findings are not included in this summary. Laboratory results from the OpenEMR record include normal glucose levels, creatinine, electrolytes, and other routine blood work. The patient is currently on several medications, including tacrolimus, alendronic acid, clopidogrel, simvastatin, and metoprolol, among others. These medications are primarily related to chronic conditions such as end-stage renal disease and osteoporosis.
+
+Assessment  
+Based on the history provided, the patient presents with acute chest pain of possible cardiac or musculoskeletal origin. The pain is localized to the left side of the chest, sharp in nature, and worsened by deep breathing and lying down. The associated symptoms of lightheadedness and dyspnea raise concern for a cardiac etiology. Given the patient's age and risk factors, including family history of heart disease and tobacco use, further evaluation for acute coronary syndrome or other cardiac causes is warranted. The possibility of musculoskeletal or pleuritic causes should also be considered.
+
+Plan  
+The patient requires immediate evaluation with an electrocardiogram (ECG) and cardiac biomarkers to rule out acute myocardial infarction. A chest X-ray may also be indicated to assess for other potential causes of chest pain. The patient should be monitored for any changes in symptoms, including worsening pain, shortness of breath, or signs of hemodynamic instability. Additional testing, including blood work and imaging, should be considered based on initial findings. The patient should be advised to avoid activities that exacerbate the pain and to seek immediate medical attention if symptoms worsen. Follow-up with a cardiologist is recommended for further evaluation and management.

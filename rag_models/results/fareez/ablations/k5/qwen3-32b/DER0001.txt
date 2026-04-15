@@ -1,0 +1,60 @@
+Model: qwen/qwen3-32b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:46:26
+Time: 4.98s
+Tokens: 10,535 in / 1,461 out
+============================================================
+
+Patient Information  
+The patient is a 45-year-old male with a history of type 2 diabetes mellitus, hyperlipidemia, and essential hypertension. He resides in Waltham, Massachusetts, and reports living in town, with limited contact with his children, whom he sees every two weeks. He is unemployed but partially employed in self-employment as an accountant. His social history includes occasional tobacco use, primarily during times of stress, and alcohol consumption averaging 2–4 drinks per week, with increased consumption on weekends. He denies recreational drug use. His family history is significant for diabetes and cardiovascular disease on his mother’s side. He has a documented allergy to penicillin, with a history of anaphylactic reaction in childhood.
+
+Chief Complaint  
+The patient presents with a painful, swollen, and erythematous lesion on his right ankle that has been present for approximately one week, with worsening over the past 24 hours. He reports that the area has become more painful with movement, is warm to touch, and has developed an open wound with purulent drainage. He also notes a low-grade fever for the past 12 hours and generalized fatigue.
+
+History of Present Illness  
+The patient first noticed a rash on his right ankle approximately one week ago, but it became painful and visibly worse yesterday. The lesion is described as swollen, red, and tender, with surrounding erythema and scabbing. He reports that the area has become increasingly warm and has developed a draining wound. The pain is exacerbated with movement and weight-bearing, though it is not painful at rest. He denies any history of trauma to the area. The patient has a history of diabetic foot ulcers and reports currently having an ulcer on his left heel, which he describes as stable. He also notes a diminished sensation in his feet, consistent with peripheral neuropathy. He has not applied any topical treatments or taken over-the-counter medications for the lesion. He has not measured his blood glucose levels recently and estimates his last A1C was approximately 9%. He reports increased fatigue, polyphagia, and polydipsia over the past few weeks, which he attributes to stress and lifestyle factors. He denies any chest pain, shortness of breath, or other systemic symptoms.
+
+Past Medical History  
+The patient has a long-standing history of type 2 diabetes mellitus, hyperlipidemia, and essential hypertension. He has also been diagnosed with chronic kidney disease, likely secondary to diabetes. He has a history of sinus surgery in his teens for chronic sinusitis. He has no history of skin cancer or other dermatologic conditions. He has a documented history of myocardial infarction and subsequent coronary artery disease, as well as a history of renal transplantation, which is now remote. He has a history of dental issues, including gingivitis and dental caries.
+
+Current Medications  
+The patient is currently taking metformin, a sulfonylurea (name unspecified), and a DPP-4 inhibitor (name unspecified) for diabetes. He is also prescribed rosuvastatin for hyperlipidemia. He denies using insulin. He takes acetaminophen and ibuprofen as needed for chronic back pain. No recent changes in medication have been made.
+
+Allergies  
+The patient has a documented allergy to penicillin, with a history of anaphylaxis.
+
+Social History  
+The patient reports occasional tobacco use, primarily during periods of stress, and consumes alcohol on a weekly basis, with increased consumption on weekends. He reports no regular exercise and has a sedentary lifestyle due to unemployment and health limitations. He reports poor adherence to diabetes management, citing work and family stress as contributing factors.
+
+Family History  
+The patient’s mother has a history of diabetes, hypertension, and hyperlipidemia. His father is described as generally healthy. One of his maternal aunts has a history of lung cancer, though she is also a long-term smoker.
+
+Review of Systems  
+Constitutional: The patient reports fatigue, weight gain, and polyphagia. He denies fever, chills, or night sweats.  
+Respiratory: No cough, sputum production, or dyspnea.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Neurological: The patient reports peripheral neuropathy in his feet, with diminished sensation. No new neurological deficits.  
+Musculoskeletal: Chronic back pain managed with over-the-counter analgesics.  
+Dermatological: The primary concern is the right ankle lesion. No other skin lesions or rashes.  
+Genitourinary: No dysuria, hematuria, or frequency.  
+Hematologic: No bruising, bleeding, or anemia symptoms.  
+Endocrine: Symptoms consistent with poor glycemic control, including fatigue and polyphagia.  
+Psychiatric: No depression or anxiety symptoms reported at this time.  
+Other: No new symptoms or concerns.
+
+Objective  
+Vital signs were not available in the electronic health record. On physical examination, the right ankle is erythematous, warm, and tender to palpation. There is localized swelling and a small open wound with purulent drainage. No lymphadenopathy or systemic signs of infection are noted. The left leg is unremarkable. Neurological examination of the lower extremities reveals decreased sensation in the feet, consistent with peripheral neuropathy. No other abnormalities are noted on general examination.
+
+Labs  
+Recent laboratory results include a creatinine level of 2.98 mg/dL, consistent with chronic kidney disease. Sodium is within normal limits at 139.8 mmol/L, potassium at 4.5 mmol/L, and glucose at 94 mg/dL. Other notable findings include elevated triglycerides (177.4 mg/dL) and low HDL cholesterol (31.6 mg/dL). Liver enzymes are within normal limits.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with a right ankle lesion that is consistent with cellulitis, likely complicated by an open wound and purulent drainage. Given his history of diabetes and peripheral neuropathy, the risk of infection and delayed healing is increased. The patient also exhibits signs of poor glycemic control, with an estimated A1C of 9%. His symptoms of fatigue, polyphagia, and weight gain are consistent with uncontrolled diabetes.
+
+Plan  
+The patient will be evaluated further for possible cellulitis with secondary infection. A wound culture may be obtained if the lesion continues to drain. He will be advised to keep the wound clean and dry, avoid weight-bearing on the affected ankle, and monitor for worsening symptoms such as increased pain, fever, or spreading erythema. He will be referred for follow-up with his primary care provider for diabetes management, including A1C testing and medication adjustment. He should also be evaluated for possible wound care or podiatric follow-up. The patient will be prescribed an appropriate antibiotic for cellulitis, avoiding penicillin due to allergy. He will be advised to return for reevaluation if symptoms persist or worsen.

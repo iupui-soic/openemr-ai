@@ -1,0 +1,76 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:25:16
+Time: 3.67s
+Tokens: 6,455 in / 1,099 out
+============================================================
+
+Patient Information:
+Name: Abbey Eliza Schmitt  
+Date of Birth: 27 September 1965  
+Sex: Female  
+
+Chief Complaint:
+Dry, non‑productive cough of three days’ duration that is worsening, interfering with sleep, and accompanied by subjective fever, fatigue, mild headache, chills, night sweats, and generalized aches.
+
+History of Present Illness:
+The patient reports the onset of a dry cough three days ago. The cough has been continuous throughout the day and has progressively worsened. She notes feeling “hot” today, which she interprets as a fever, although she has not taken her temperature. The cough is disturbing her sleep, leading to marked fatigue. She also describes mild headache, chills and night sweats last night, and a general sense of body aches and fatigue. She denies any sputum production, hemoptysis, shortness of breath, wheezing, chest pain, palpitations, dizziness, syncope, loss of taste or smell, nausea, vomiting, diarrhea, abdominal pain, dysphagia, or urinary symptoms. She reports no recent upper‑respiratory symptoms such as runny nose or sore throat. She has tried over‑the‑counter cough syrup without relief. The patient mentions that her husband has been vomiting for the past two days and feels “hot” as well, but he has not sought medical care. No other sick contacts are identified.
+
+Review of Systems:
+- Constitutional: Feverish sensation today, chills and night sweats last night, fatigue, mild headache, generalized body aches. No weight loss.
+- Respiratory: Dry cough, no sputum, no hemoptysis, no dyspnea, no wheezing, no chest pain.
+- Cardiovascular: No chest pain, palpitations, or syncope.
+- Gastrointestinal: No nausea, vomiting (patient herself), diarrhea, abdominal pain, or dysphagia. Husband is vomiting but patient is not.
+- Genitourinary: No dysuria or urinary frequency.
+- Neurologic: No dizziness, no focal deficits.
+- ENT: No sore throat, no nasal congestion or discharge, no ocular or ear discharge or pain.
+- Dermatologic: No rash or skin changes.
+- Psychiatric: No anxiety or depression reported.
+- Other: No recent travel or known COVID‑19 exposure beyond household member.
+
+Past Medical History:
+- Hypothyroidism, currently treated with levothyroxine (Synthroid). The most recent TSH level six months ago was reported as normal.
+- No history of hypertension, diabetes, chronic lung disease, or other chronic illnesses mentioned during this encounter.
+
+Surgical History:
+- Appendectomy performed during teenage years without complications.
+
+Social History:
+- Lives in a townhouse with husband and two teenage children; recently relocated.
+- Husband is currently ill with vomiting and fever‑like symptoms.
+- Works from home in marketing; no occupational exposures.
+- No tobacco use.
+- Consumes a glass of wine with dinner approximately every three to four days (a few drinks per week).
+- Occasionally uses marijuana; no regular use.
+- No other recreational drug use.
+- No recent sick contacts outside the household.
+
+Family History:
+- Sister had a recent myocardial infarction.
+- Parents were healthy and died of old age; no known hereditary cardiac, pulmonary, or oncologic disease reported.
+
+Medications:
+- Levothyroxine (Synthroid) for hypothyroidism.
+- Daily multivitamin (unspecified formulation).
+- Patient reports having used an over‑the‑counter cough syrup during the current illness.
+
+Allergies:
+- No known drug allergies reported.
+
+Objective:
+Vital signs: Not assessed during this encounter.  
+Physical examination: Not assessed during this encounter.
+
+Assessment:
+1. Acute respiratory illness – probable acute viral bronchitis versus early COVID‑19 infection.  
+2. Hypothyroidism, stable on levothyroxine.  
+
+Plan:
+- Diagnostic testing: Obtain a nasopharyngeal SARS‑CoV‑2 PCR test to evaluate for COVID‑19. Order a chest radiograph to assess for possible pneumonia or other pulmonary pathology. Basic laboratory panel (complete blood count, metabolic panel) as deemed appropriate by the ordering clinician.
+- Symptomatic management: Continue use of over‑the‑counter cough syrup as needed. Encourage adequate hydration, rest, and use of antipyretics (e.g., acetaminophen) for fever or discomfort, following standard dosing guidelines.
+- Home care instructions: Monitor temperature; if fever ≥38 °C (100.4 °F) or symptoms worsen (increased shortness of breath, chest pain, new sputum production, or persistent vomiting) seek medical attention promptly. Maintain isolation from household members as feasible until COVID‑19 test results are available.
+- Follow‑up: Telephone or telehealth follow‑up in 48‑72 hours, or sooner if test results return positive or symptoms exacerbate. Arrange in‑person evaluation if concerning findings develop.
+- Education: Reviewed infection control measures, including hand hygiene, mask use around the ill husband, and cleaning of shared surfaces. Discussed the importance of completing the COVID‑19 testing and chest X‑ray as ordered.
+
+No new prescription medications were initiated during this visit.

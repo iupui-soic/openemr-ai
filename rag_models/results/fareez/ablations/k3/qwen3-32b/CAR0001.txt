@@ -1,0 +1,54 @@
+Model: qwen/qwen3-32b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:43:06
+Time: 4.24s
+Tokens: 10,146 in / 1,058 out
+============================================================
+
+Patient Information  
+The patient is a 39-year-old male presenting with acute onset of chest pain. He is otherwise healthy with no prior medical history. He lives alone in an apartment and works as an accountant. He has a family history of heart attack in his father at age 45 and a history of cholesterol problems in his father. He is a 10 to 15-year history of cigarette smoking at one pack per day. He occasionally uses cannabis, approximately 5 milligrams per week. He consumes alcohol, averaging one to two drinks per day, totaling about 10 drinks per week. He exercises every other day with 30 minutes of running and reports eating healthy dinners, though his lunches are typically eaten out.
+
+Chief Complaint  
+The patient presents with chest pain, described as sharp and located on the left side. The pain began last night, has become sharper over time, and is currently rated as a 7 or 8 out of 10 in severity. The pain is constant and worsens with deep breathing and when lying down. He denies any radiation of the pain. He also reports associated symptoms of lightheadedness, shortness of breath, and a slight racing heart. He denies fever, chills, nausea, vomiting, abdominal pain, urinary or bowel symptoms, cough, or hemoptysis. He denies night sweats, rashes, or prior similar episodes. He notes mild swelling of the neck but no neck pain or trauma.
+
+History of Present Illness  
+The chest pain started approximately 8 hours ago and has been persistent. The patient was moving furniture at the time of onset but denies any injury or trauma. The pain is sharp and localized to the left side of the chest. It is exacerbated by deep breathing and lying down. He reports that sitting up provides some relief. He denies any prior history of chest pain or cardiac symptoms. The associated symptoms include dyspnea, lightheadedness, and palpitations. There is no history of syncope. He denies any recent immobility or prolonged inactivity.
+
+Review of Systems  
+Constitutional: The patient reports lightheadedness but denies fever, chills, weight loss, or fatigue.  
+Respiratory: He reports shortness of breath but denies wheezing, cough, or hemoptysis.  
+Cardiovascular: Chest pain is present, but no palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria, hematuria, or changes in urinary habits.  
+Neurological: No headache, dizziness, or visual changes.  
+Musculoskeletal: No joint pain or myalgias.  
+Psychiatric: No depression or anxiety reported.  
+Dermatological: No rashes or skin changes.  
+Endocrine: No changes in appetite or weight.  
+Hematologic: No bruising or bleeding.  
+Allergic/Immunologic: No recent allergic reactions or symptoms.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+No prior medical conditions. No recent hospitalizations or surgeries. No prior hospitalizations for chest pain or cardiac symptoms.
+
+Social History  
+The patient is a current smoker with a 10 to 15-year history of one pack per day. He uses cannabis occasionally, approximately 5 milligrams per week. He consumes alcohol, averaging one to two drinks per day. He exercises every other day with 30 minutes of running and reports eating healthy dinners, though his lunches are typically eaten out.
+
+Family History  
+His father had a heart attack at age 45 and a history of cholesterol problems. No family history of stroke or cancer.
+
+Current Medications  
+No medications reported at the time of the visit.
+
+Objective  
+Vital signs were not recorded during this visit. Physical examination findings were not documented in the provided data. Laboratory results from the OpenEMR record include normal glucose, creatinine, sodium, potassium, and other electrolytes. However, these results pertain to a different patient and are not relevant to the current presentation.
+
+Assessment  
+The patient presents with acute onset of left-sided chest pain, worsened by deep breathing and lying down. The pain is sharp, constant, and rated as moderate to severe. Associated symptoms include dyspnea, lightheadedness, and palpitations. The differential diagnosis includes musculoskeletal chest pain, costochondritis, and possible cardiac etiologies such as myocardial infarction or pericarditis. Given the patient’s age and lack of prior cardiac history, further evaluation is warranted to rule out acute coronary syndrome.
+
+Plan  
+The patient should undergo a thorough physical examination, including cardiovascular and respiratory assessment. Electrocardiogram (ECG) and cardiac enzymes should be obtained to evaluate for acute myocardial infarction. Chest X-ray may be considered to assess for other pulmonary or musculoskeletal causes. Additional laboratory testing, including complete blood count, metabolic panel, and inflammatory markers, may be indicated. The patient should be monitored for any changes in symptoms and advised to seek immediate medical attention if symptoms worsen or new symptoms develop. Follow-up with a primary care provider or cardiologist is recommended for further evaluation and management.

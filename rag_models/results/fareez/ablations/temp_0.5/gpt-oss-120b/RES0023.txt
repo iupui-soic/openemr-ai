@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:07:46
+Time: 4.68s
+Tokens: 13,529 in / 1,488 out
+============================================================
+
+Patient Information  
+Aaron Feeney, male, born 05 December 1915, Unit 48, 656 Murphy Stravenue, Walpole, Massachusetts 02081. He presented to the Emergency Department on 8 September 2024 for evaluation of a new cough.
+
+Chief Complaint  
+“Cough for the past five days that is getting worse and keeping me up at night.”
+
+History of Present Illness  
+Aaron reports that five days ago he began experiencing a dry, non‑productive cough that has progressively worsened. The cough is present throughout the day and interferes with sleep. He notes associated sore throat pain that began after coughing intensified. He also feels “pretty hot,” describing a sensation of fever and sweating, although he has not taken a temperature measurement. He reports night sweats, with his shirt soaked through on the most recent night. He denies nausea, vomiting, chills, or recent weight loss; in fact, he believes he has gained 5–10 lb recently. He first noticed an altered sense of smell this morning, while taste remains normal. He has not traveled recently and cannot identify any specific exposure to sick individuals, though he works in a grocery store with frequent customer contact. He has no known medication allergies and only environmental pollen sensitivity.
+
+Review of Systems  
+Constitutional: Subjective fever, night sweats, fatigue, no reported chills or weight loss.  
+Respiratory: Dry cough, sore throat, no chest pain except mild throat discomfort after coughing; denies dyspnea.  
+Cardiovascular: No chest pain, palpitations, or edema reported.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or urinary symptoms reported.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Other: No recent travel, no known sick contacts, no tobacco, alcohol use limited to 3–4 beers per weekend, no illicit drug use.
+
+Allergies  
+Environmental pollen – causes seasonal symptoms. No known drug allergies.
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus (patient reports taking Metformin)  
+- Obesity (BMI 31.5)  
+- Chronic kidney disease stage 4 and end‑stage renal disease (awaiting transplantation)  
+- Metabolic syndrome  
+- Hyperlipidemia  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Atrial fibrillation  
+- Osteoarthritis of the hand  
+- Osteoporosis  
+- History of anemia, proteinuria, and microalbuminuria secondary to diabetes  
+- Prostate neoplasm (carcinoma in situ)  
+- Prior gallbladder removal (≈10 years ago)  
+
+Surgical History  
+Cholecystectomy performed approximately ten years ago.
+
+Social History  
+Employed full‑time as a grocery store employee. Lives with his wife and two school‑aged children. Denies tobacco use, recreational drug use, and regular alcohol consumption beyond 3–4 beers on weekends. No recent travel. Reports occasional exposure to customers in the store but states cleaning protocols are in place.
+
+Family History  
+Mother and brother have a history of asthma. No other significant familial illnesses reported.
+
+Current Medications (as reported by patient)  
+- Ramipril (ACE inhibitor) for hypertension  
+- Metformin for diabetes mellitus  
+- Vitamin D supplement  
+
+(Other chronic medications listed in the electronic record were not confirmed by the patient at this visit.)
+
+Vital Signs (recorded at the time of encounter)  
+Heart rate: 88 beats per minute  
+Respiratory rate: 13 breaths per minute  
+Blood pressure: not recorded  
+Temperature: not recorded  
+SpO₂: not recorded  
+Weight: not recorded  
+Height: 166.3 cm (BMI 31.5)
+
+Physical Examination  
+No detailed physical exam findings were documented in the transcript. “No information available.”
+
+Laboratory Results (obtained during this visit)  
+- Sodium: 143.9 mmol/L  
+- Potassium: 4.74 mmol/L  
+- Chloride: 103.8 mmol/L  
+- Carbon dioxide (total): 25.7 mmol/L  
+- Blood urea nitrogen: 17.3 mg/dL  
+- Creatinine: 0.39 mg/dL (note: patient has chronic kidney disease; this value may reflect recent dialysis)  
+- Glucose: 70.6 mg/dL (fasting) and 85.8 mg/dL (random)  
+- Calcium: 9.98 mg/dL  
+- Alkaline phosphatase: 79.5 U/L  
+- AST: 36.8 U/L  
+- Protein in urine (dipstick): 280 mg/dL (positive)  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- AUDIT‑C score: 1 (low‑risk alcohol use)  
+
+Imaging  
+No imaging studies were performed during this encounter. “No information available.”
+
+Assessment  
+1. Acute bronchitis, likely viral in etiology, presenting with a 5‑day dry cough, sore throat, subjective fever, and new loss of smell.  
+2. Rule‑out COVID‑19 infection pending SARS‑CoV‑2 PCR testing.  
+3. Chronic comorbidities (hypertension, type 2 diabetes, chronic kidney disease stage 4/end‑stage renal disease) remain stable per patient report.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR; results to be communicated as soon as available.  
+- Advise self‑isolation for 14 days for the patient and household contacts pending test results, per public health guidelines.  
+- Symptomatic treatment: Continue acetaminophen as needed for fever or discomfort, respecting renal dosing considerations.  
+- Encourage adequate hydration, rest, and use of a humidifier if tolerated.  
+- Counsel on signs that would warrant urgent re‑evaluation: worsening dyspnea, high‑grade fever, chest pain, hemoptysis, or new confusion.  
+- No antibiotics prescribed at this time given the likely viral nature of the illness and absence of bacterial infection indicators.  
+- Follow‑up: Telephone check‑in in 48 hours to review test results and symptom progression; in‑person follow‑up with primary care provider within 7 days or sooner if symptoms worsen.  
+- Continue current chronic medications (Ramipril, Metformin, Vitamin D) and monitor blood glucose and blood pressure as usual.  
+- Reinforce influenza and COVID‑19 vaccination status; administer vaccines if indicated and not contraindicated.  
+
+The patient verbalized understanding of the plan and agreed to the proposed testing and isolation measures.

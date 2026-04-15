@@ -1,0 +1,135 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 04:29:08
+Time: 3.23s
+Tokens: 19,809 in / 1,453 out
+============================================================
+
+**Patient Information**  
+Name: Unspecified (female)  
+Age: Not stated (likely adult)  
+Sex: Female  
+Date of Encounter: [Insert Date]  
+
+---
+
+### Subjective  
+
+**Chief Complaint**  
+The patient presents with persistent nausea, intermittent vomiting, and increased urinary frequency.
+
+**History of Present Illness (HPI)**  
+The patient reports a 9–14‑day history of constant nausea that is worse in the morning and when exposed to strong odors. She notes that she has vomited one to two times per day, primarily on days she has been nauseated. She also reports increased urinary frequency—approximately every one to two hours—yet denies urge incontinence, pain on voiding, or hematuria. No other abdominal pain besides mild cramping has been reported. The patient denies fever, chills, headache, muscle aches, cough, or shortness of breath. She has not noticed any changes in bowel movements or stool color. She has not used any new medications except ginger chewable tablets, which did not relieve her symptoms.
+
+**Review of Systems**  
+- **Constitutional**: No fever, chills, or weight loss.  
+- **Respiratory**: No cough, wheeze, or dyspnea.  
+- **Cardiovascular**: No chest pain, palpitations, or dizziness.  
+- **Gastrointestinal**: Nausea, vomiting (1–2 episodes/day), mild abdominal cramping; no diarrhea, constipation, dysphagia, or reflux.  
+- **Genitourinary**: Increased urinary frequency; no dysuria, urgency, or hematuria.  
+- **Neurologic**: No headaches.  
+- **Psychiatric**: No anxiety or depression noted.  
+
+**Allergies**  
+Nickel – rash; no drug, food, or latex allergies reported.
+
+**Past Medical History**  
+The patient reports no significant prior illnesses, surgeries, or chronic conditions. No known drug allergies beyond nickel.
+
+**Surgical History**  
+None reported.
+
+**Social History**  
+- Lives with one roommate.  
+- Non‑smoker.  
+- Rare alcohol use (last drink about a month ago, consumes only in moderation).  
+- No illicit drug use.  
+- Sexually active with boyfriend; uses condoms. Previously used hormonal birth control but discontinued due to nausea.  
+
+**Family History**  
+Father has hypertension. No other significant family medical history reported.
+
+**Current Medications**  
+None, aside from occasional ginger chewable tablets for nausea.
+
+---
+
+### Objective  
+
+**Vital Signs**  
+Not documented at this time.  
+(Plan: obtain vitals on arrival.)
+
+**Physical Examination**  
+*General*: Alert, oriented, no acute distress.  
+*Head/Neck*: No jugular venous distention, no thyromegaly.  
+*Chest*: Clear to auscultation bilaterally, no wheezes or rales.  
+*Cardiovascular*: Regular rhythm, no murmurs.  
+*Abdomen*: Soft, mild cramping noted, no guarding, rebound, or tenderness. No organomegaly.  
+*Extremities*: No edema, pulses 2+ bilaterally.  
+*Neurologic*: Normal cranial nerves, gait, and coordination.  
+*Genitourinary*: No costovertebral angle tenderness, bladder palpable only in normal position.  
+
+**Laboratory Results**  
+None available at this time.  
+
+**Imaging**  
+None ordered at this time.
+
+---
+
+### Assessment  
+
+**Primary Differential Diagnoses**  
+1. **Acute viral gastroenteritis** – common cause of nausea/vomiting without fever or diarrhea.  
+2. **Early pregnancy (morning sickness)** – patient reports irregular menses, no contraceptive use; nausea in the first trimester is common.  
+3. **Gastro‑esophageal reflux disease (GERD)** – morning nausea, triggered by food or smell.  
+4. **Medication side effect** – ginger is unlikely; no other drugs noted.  
+
+**Secondary Considerations**  
+- Urinary frequency without dysuria or hematuria → likely benign; could be functional or due to mild dehydration.  
+- Anxiety‑related gastrointestinal upset.  
+- Less likely: urinary tract infection, pancreatitis, biliary colic, or other GI pathology given lack of pain and normal exam.
+
+**Risk Stratification**  
+The patient is hemodynamically stable, no signs of severe dehydration, no alarm features (severe abdominal pain, fever, blood in vomitus/stool, or urinary tract symptoms). Low risk for serious illness but requires evaluation to exclude pregnancy and identify potential electrolyte disturbances.
+
+---
+
+### Plan  
+
+1. **Diagnostic Work‑up**  
+   - **Urine Pregnancy Test** – rule out early pregnancy.  
+   - **Basic Metabolic Panel** – electrolytes, BUN/Cr to assess hydration and renal function.  
+   - **Complete Blood Count** – screen for infection or anemia.  
+   - **Urinalysis** – evaluate for UTI or hematuria.  
+   - **Vitals** – temperature, heart rate, blood pressure, respiratory rate, SpO₂, weight.
+
+2. **Symptom Management**  
+   - **Antiemetic**: Ondansetron 4 mg PO/IV q8h as needed for nausea/vomiting.  
+   - **Hydration**: Encourage oral fluids (water, electrolyte solutions); consider oral rehydration if vomiting persists.  
+   - **Dietary Advice**: Small, bland, low‑fat meals; avoid strong odors and trigger foods.  
+   - **Medications**: No new medications unless pregnancy test is positive; if positive, adjust contraceptive plan and counsel on pregnancy options.  
+
+3. **Patient Education**  
+   - Discuss potential causes and reassure about benign nature if tests are negative.  
+   - Instruct on signs that warrant urgent return (fever >100.4°F, worsening abdominal pain, blood in vomitus or stool, persistent inability to keep fluids down, dizziness, or signs of dehydration).  
+   - Review safety of over‑the‑counter antiemetics and importance of avoiding self‑medication without guidance.
+
+4. **Follow‑up**  
+   - **In‑clinic**: 48–72 hours post‑visit to review laboratory results, symptom progression, and reassess.  
+   - **Telehealth**: If symptoms worsen or new symptoms emerge, call clinic immediately.  
+
+5. **Additional Referrals** (if indicated)  
+   - **OB‑GYN**: If pregnancy test is positive, schedule prenatal care.  
+   - **Gastroenterology**: If vomiting persists >5 days or abnormal lab findings.
+
+6. **Documentation**  
+   - Note the discrepancy between patient’s self‑reported sex and the demographic data in the openEMR extract; recommend verifying patient identity and correcting the record.  
+
+---
+
+**Prepared by:**  
+[Your Name], MD  
+[Date]

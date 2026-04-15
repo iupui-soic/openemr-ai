@@ -1,0 +1,129 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 04:28:48
+Time: 2.69s
+Tokens: 8,940 in / 1,556 out
+============================================================
+
+**Patient Information**  
+Name: Aida Vanesa Reichert DOB: 1968‑10‑20 Sex: Female Age: 57 years Clinic: Plymouth, MA  
+
+**Chief Complaint**  
+Right elbow pain.  
+
+---
+
+### S – Subjective  
+
+**History of Present Illness**  
+Ms. Reichert reports a 3‑day history of pain over the lateral aspect of her right elbow.  Pain began insidiously and has progressively worsened, particularly with gripping, lifting, or extending the wrist.  She describes the pain as “achy” when the wrist is flexed and sharp when the wrist is extended.  On a pain scale of 0–10, she rates the current intensity as 6‑7.  The pain is constant during activity, improves with rest, and is relieved only briefly by over‑the‑counter ibuprofen.  No prior episodes of similar elbow pain have occurred.
+
+**Associated Symptoms** – None.  She reports no numbness, tingling, muscle weakness, headache, dizziness, fever, chills, rash, cough, dyspnea, chest pain, palpitations, abdominal pain, nausea/vomiting, bowel or voiding changes, or weight loss.
+
+**Past Medical History**  
+- Essential hypertension (diagnosed 1990)  
+- Chronic kidney disease (stage 4) secondary to type 2 diabetes mellitus (diagnosed 2005)  
+- Type 2 diabetes mellitus (diagnosed 2005)  
+- Chronic kidney disease stage 1 (current)  
+- History of tubal ligation, pregnancy loss, and multiple periods of stress/anxiety  
+- Long‑term tacrolimus therapy (immunosuppressant) following kidney transplant (current)  
+- No prior musculoskeletal injuries to the right elbow.  
+
+**Medications (current)**
+- 24‑hour tacrolimus 1 mg extended‑release oral tablet (active)  
+- 1 mL tacrolimus 5 mg/mL injection (active)  
+- Acetaminophen 325 mg oral tablet (no longer used, discontinued 2018)  
+- 1 mL epoetin alfa 4000 U/mL injection (active)  
+- Sodium fluoride 0.0272 mg/mL oral gel (inactive)  
+- Hydrochlorothiazide 25 mg oral tablet (inactive)  
+
+**Allergies**  
+No known drug allergies.
+
+**Social History**  
+- Lives with wife and 4‑year‑old daughter.  
+- Non‑smoker; occasional wine or beer (≈1–2 drinks per couple of days).  
+- No recreational drugs.  
+- No regular exercise.  
+- Works full‑time in a job that requires frequent use of hand tools (e.g., screwdriver, drill).  
+
+**Family History**  
+Father (60 yrs) has knee and hip pain; no known musculoskeletal disorders in other relatives.  
+
+**Review of Systems**  
+- Constitutional: Negative for fever, chills, weight loss, night sweats.  
+- Neurologic: Negative for numbness, tingling, weakness.  
+- Musculoskeletal: Positive only for right elbow pain; no other joint pain.  
+- Cardiovascular, Respiratory, GI, Genitourinary, Dermatologic: Negative.  
+
+---
+
+### O – Objective  
+
+**Vital Signs** – Not documented at this visit (no vitals recorded).  
+
+**Physical Examination**  
+- **Inspection**: No redness, swelling, deformity, or skin changes over the right elbow; left elbow appears similar.  
+- **Palpation**: Tenderness over the lateral epicondyle. No tenderness over the medial epicondyle, biceps, triceps, or forearm flexor group. Tenderness noted over the extensor compartment just distal to the lateral epicondyle.  
+- **Range of Motion**: Full active elbow flexion/extension; pain increases with wrist extension, minimal pain with wrist flexion.  
+- **Grip Strength**: No subjective weakness; grip with pencil produced mild pain during wrist extension but no objective loss.  
+- **Neurovascular**: No sensory deficits; radial pulse intact; no distal paresthesias.  
+- **Special Tests**: None performed; findings consistent with lateral epicondylitis (positive tenderness at lateral epicondyle).  
+
+**Labs** – None obtained during this visit.  
+
+**Imaging** – No imaging studies performed at this encounter.  
+
+---
+
+### A – Assessment  
+
+**Primary Diagnosis**  
+- Lateral epicondylitis (tennis elbow) – acute onset, 3 days, activity‑related pain, 6‑7/10 intensity.  
+
+**Secondary/Rule‑Out Diagnoses**  
+- Radial tunnel syndrome – unlikely due to lack of sensory deficits or pain with forearm supination.  
+- Referred pain from cervical spine – unlikely given localized tenderness and activity correlation.  
+- Degenerative elbow arthropathy – unlikely given acute onset.  
+
+**Comorbidities**  
+- Hypertension, CKD stage 4, type 2 diabetes mellitus, chronic immunosuppression (tacrolimus).  
+
+**Red Flags** – None identified (no neuro deficits, systemic signs, or constitutional symptoms).  
+
+---
+
+### P – Plan  
+
+1. **Conservative Management**  
+   - **Activity modification**: Reduce repetitive wrist extension and gripping; use ergonomic tools, take frequent breaks, avoid heavy lifting for 4–6 weeks.  
+   - **NSAID therapy**: Ibuprofen 400 mg PO q6h PRN for pain (if tolerated; monitor GI symptoms and renal function).  
+   - **Ice application**: 15–20 min every 2–3 h during activity.  
+   - **Support**: Consider a lateral epicondyle strap or elastic brace to reduce load on extensor tendons.  
+
+2. **Physical Therapy**  
+   - Refer to outpatient PT for eccentric strengthening, stretching of forearm extensors, and proprioceptive exercises.  
+
+3. **Monitoring of Comorbidities**  
+   - Counsel on renal safety with NSAID use; monitor serum creatinine and potassium if clinically indicated.  
+   - Ensure blood pressure remains controlled (target <140/90 mm Hg).  
+
+4. **Follow‑Up**  
+   - Return in 4–6 weeks for reassessment of pain and function.  
+   - If pain persists beyond 12 weeks or worsens, consider imaging (ultrasound or MRI) and review for possible corticosteroid injection or surgical options.  
+
+5. **Patient Education**  
+   - Discuss the natural course of tennis elbow (often resolves with time and conservative therapy).  
+   - Explain signs that warrant earlier return (worsening pain, numbness, weakness, or new systemic symptoms).  
+
+6. **Documentation & Coordination**  
+   - Note current medications and renal status.  
+   - Ensure coordination with her transplant nephrologist regarding NSAID safety.  
+
+**Disposition**  
+- Discharged home with the above plan.  
+
+**Signature**  
+[Provider Name], MD  
+[Date]

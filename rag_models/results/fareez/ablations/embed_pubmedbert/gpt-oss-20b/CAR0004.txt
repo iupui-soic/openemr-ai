@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:57:39
+Time: 2.29s
+Tokens: 9,036 in / 853 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel  
+Age: 25 years old (per clinical interview)  
+Sex: Female  
+Occupation: Engineering student and part‑time postman  
+Residence: Lives with parents in a single family home  
+
+Chief Complaint  
+The patient presents with sharp, episodic chest pain described as a “sharp pain” located over the heart region, radiating occasionally to the neck. She reports the pain has been occurring for approximately three days.
+
+History of Present Illness  
+The patient first noticed the chest discomfort three days ago. The pain is brief, lasting only a few seconds, and is most pronounced when she coughs or lies down. She notes that leaning forward improves the discomfort. The pain intensity is rated as 6 out of 10. She denies any associated shortness of breath, dizziness, palpitations, weakness, numbness, or any other systemic symptoms. She has taken acetaminophen (Tylenol) once yesterday with some relief. No prior episodes of similar chest pain have been reported.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue.  
+Respiratory: No current cough, sputum, or wheezing; history of flu last week with fever and runny nose, now resolved.  
+Cardiovascular: No palpitations, syncope, or prior chest pain episodes.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic: No dizziness, weakness, or numbness.  
+Psychiatric: Patient reports anxiety about a family history of cardiac disease (father died of a heart attack two weeks ago).  
+
+Past Medical History  
+No chronic medical conditions reported. The patient identifies as healthy.  
+
+Surgical History  
+No surgeries reported.  
+
+Social History  
+The patient is a college student studying engineering. She works part‑time as a postal worker. She lives with her parents. She consumes alcohol occasionally, approximately one to two drinks on weekends. She denies tobacco use, recreational drug use, or illicit substances. She engages in no regular exercise.  
+
+Family History  
+Father suffered a myocardial infarction and died two weeks prior. No other known heart disease or cancers in the immediate family.  
+
+Current Medications  
+The patient reports occasional use of acetaminophen (Tylenol). No prescription or over‑the‑counter medications other than that.  
+
+Allergies  
+No known drug or environmental allergies reported.  
+
+Physical Examination  
+No physical examination was documented in the encounter.  
+
+Vital Signs  
+No vital signs were recorded during this visit.  
+
+Laboratory and Imaging  
+No laboratory tests or imaging studies were performed at the time of the visit. The plan includes obtaining an electrocardiogram and appropriate cardiac biomarkers to evaluate for ischemic heart disease.  
+
+Assessment  
+1. Unstable angina or acute coronary syndrome – given the chest pain characteristics, family history of premature coronary artery disease, and recent onset.  
+2. Musculoskeletal chest wall pain – differential consideration due to brief, positional pain relief and lack of systemic symptoms.  
+
+Plan  
+1. Order a 12‑lead electrocardiogram (ECG) immediately to assess for ischemic changes.  
+2. Obtain cardiac biomarkers (troponin I/T, CK‑MB) to rule out myocardial injury.  
+3. If ECG or biomarkers are abnormal, refer urgently to cardiology for further evaluation and management.  
+4. Reassure the patient; advise against self‑medication with other analgesics beyond acetaminophen.  
+5. Discuss lifestyle modifications: maintain hydration, limit alcohol, avoid smoking, and encourage stress‑reduction strategies.  
+6. Schedule a follow‑up appointment within 24–48 hours to review test results and reassess symptoms.  
+7. Educate the patient on red‑flag symptoms (worsening chest pain, dyspnea, syncope, palpitations) that warrant immediate emergency care.  
+
+Follow‑up  
+The patient is instructed to return for follow‑up in the clinic or call the office if symptoms worsen or new symptoms develop.

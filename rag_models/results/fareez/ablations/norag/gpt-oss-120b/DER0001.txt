@@ -1,0 +1,84 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:16:02
+Time: 4.80s
+Tokens: 8,354 in / 1,504 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Date of Birth: 1943-04-07 (recorded) – however, the patient reports being a 45‑year‑old male.  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint  
+The patient presents with a painful, swollen, erythematous lesion on the right ankle that has been present for approximately one week and became increasingly painful and tender over the past 24 hours.
+
+History of Present Illness  
+The patient first noticed an unusual area on his right ankle about one week ago. Initially the lesion was described as “weird looking” but was not painful. Over the last 24 hours the area has become more swollen, red, and tender. He reports a sensation of heat localized to the right leg, with the skin feeling warmer than the left. The lesion now has an open wound with white discharge emerging from a former scab. The patient denies any recent trauma other than occasional minor foot injuries related to his diabetes. He denies shortness of breath, chest pain, or systemic fever, although he feels “a little hot” and generally fatigued. He reports increased hunger, recent weight gain, and overall tiredness over the past few weeks, which he attributes to poor glycemic control. He has a long‑standing history of type 2 diabetes mellitus with an estimated recent A1c in the 9‑range, though he has not been regularly checking his sugars. He also has a chronic ulcer on his left heel that he feels is “doing alright.” He denies any prior similar lesions on the right ankle.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (poorly controlled, recent A1c ≈ 9%).  
+- Hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 2–3 historically, most recent creatinine 2.98 mg/dL, eGFR ≈ 79 mL/min/1.73 m²).  
+- History of myocardial infarction (remote).  
+- Prior sinus surgery in adolescence.  
+
+Medications (as reported by the patient)  
+- Rosuvastatin (for hyperlipidemia).  
+- Metformin (for diabetes).  
+- Two additional diabetes agents (names not recalled by the patient).  
+The patient reports he is not currently using insulin. No other current medications were confirmed during the interview.
+
+Allergies  
+- Penicillin – causes facial swelling and difficulty breathing (anaphylactic‑type reaction).  
+
+Family History  
+- Maternal side: multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+- Paternal side: generally healthy.  
+- One maternal aunt with lung cancer and a significant smoking history.  
+
+Social History  
+- Tobacco use: occasional, approximately 2 packs per week over the past several weeks, typically when stressed.  
+- Alcohol: drinks socially, averaging about 2–4 drinks per week, with higher consumption on weekends (approximately 3 drinks per day on those days).  
+- Employment: currently unemployed and seeking work; runs his own accounting business when he is able to work.  
+- Living situation: resides in town; sees his children every two weeks.  
+- No recreational drug use reported.  
+
+Review of Systems  
+- Constitutional: Reports fatigue, increased hunger, and perceived weight gain. Denies measured fever, chills, or night sweats.  
+- Skin: Right ankle lesion with redness, swelling, warmth, pain, and purulent (white) discharge. No other rashes noted.  
+- Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+- Respiratory: No dyspnea, cough, or wheezing.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+- Genitourinary: No dysuria or urinary symptoms.  
+- Neurologic: No loss of sensation in the affected ankle; reports longstanding reduced sensation in the feet consistent with diabetic peripheral neuropathy.  
+- Musculoskeletal: Pain worsens with walking and ankle flexion; otherwise the leg is at rest without significant pain.  
+- Endocrine: Poor glycemic control as described above.  
+
+Physical Examination  
+No physical examination findings are documented in the source material.  
+
+Assessment  
+1. Cellulitis of the right ankle with associated open wound and purulent discharge in a patient with poorly controlled type 2 diabetes mellitus and peripheral neuropathy.  
+2. Chronic diabetic foot ulcer on the left heel (stable per patient report).  
+3. Uncontrolled type 2 diabetes mellitus (estimated recent A1c ≈ 9%).  
+4. Chronic kidney disease (stage 2–3) with recent creatinine 2.98 mg/dL and eGFR ≈ 79 mL/min/1.73 m².  
+5. Hyperlipidemia.  
+6. Hypertension.  
+
+Plan  
+- **Wound care:** Clean the right ankle lesion with normal saline, apply sterile dressings, and obtain a wound culture to guide antimicrobial therapy.  
+- **Antibiotic therapy:** Initiate empiric oral antibiotics covering typical cellulitis organisms and MRSA, taking into account the penicillin allergy. Options include clindamycin 300 mg PO q6h or trimethoprim‑sulfamethoxazole 800/160 mg PO BID, pending culture results.  
+- **Laboratory studies:** Order CBC with differential, BMP, fasting lipid panel, repeat serum creatinine, and a point‑of‑care glucose. Obtain HbA1c to document current glycemic control.  
+- **Diabetes management:** Reinforce the importance of regular glucose monitoring; consider referral to diabetes education. Evaluate need for intensification of oral agents or addition of basal insulin, given poor control.  
+- **Renal function:** Review current nephrology follow‑up; adjust any renally cleared medications as needed.  
+- **Follow‑up:** Return visit in 48‑72 hours for reassessment of the ankle, wound culture results, and response to antibiotics. Earlier return if worsening redness, increasing pain, fever, or drainage.  
+- **Referral:** Podiatry consult for assessment of diabetic foot health and guidance on ulcer prevention.  
+- **Lifestyle counseling:** Advise smoking cessation; provide resources for nicotine replacement or counseling. Counsel on limiting alcohol intake to ≤ 2 drinks per day and discuss strategies for stress management.  
+- **Medication reconciliation:** Obtain a complete medication list from the patient (including the two unspecified diabetes agents) and update the electronic record. Ensure that penicillin is documented as a contraindication.  
+- **Vaccinations:** Verify immunizations appropriate for a diabetic adult (influenza, pneumococcal, COVID‑19, tetanus).  
+
+The patient verbalized understanding of the plan, agreed to the proposed wound care and antibiotic regimen, and was instructed to seek immediate care if systemic signs of infection develop. No further questions were raised.

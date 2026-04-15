@@ -1,0 +1,56 @@
+Model: qwen/qwen3-32b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:01:46
+Time: 2.81s
+Tokens: 6,462 in / 835 out
+============================================================
+
+Patient Information  
+The patient is a 19-year-old male student who presented for evaluation of a persistent dry cough and runny nose. The patient is currently residing with his parents and is engaged in virtual learning due to the ongoing pandemic. He reports no significant past medical history and denies any known allergies to food, medications, or environmental factors. His family history is notable only for his father's diagnosis of high cholesterol. The patient has experimented with tobacco and marijuana in the past but does not use them regularly. He consumes alcohol occasionally, primarily on weekends when attending school.
+
+Chief Complaint  
+The patient reports a dry cough for the past two weeks and a runny nose for the past week. He also experienced two nights of chills last week.
+
+History of Present Illness  
+The patient has had a persistent, non-productive cough for two weeks. The cough was more severe last week and has since improved slightly, though it continues to persist. He developed a runny nose approximately one week ago, with clear nasal discharge. The patient denies fever, chest pain, shortness of breath, sore throat, or other constitutional symptoms. He notes occasional nasal congestion but no significant change in vision, taste, or smell. The patient denies any muscle aches, fatigue, or weight loss. He mentions that his mother had mild upper respiratory symptoms the week prior, but she did not seek medical evaluation or testing.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight loss.  
+Respiratory: Dry cough for two weeks, no dyspnea or chest pain.  
+Cardiovascular: No palpitations or chest discomfort.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Neurological: No numbness, tingling, or headaches.  
+Musculoskeletal: No joint or muscle pain.  
+Other: No skin rashes, changes in vision, or hearing loss.
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Past Medical History  
+The patient reports no prior medical conditions or hospitalizations. He has no history of chronic illnesses or surgeries.
+
+Social History  
+The patient is a university student currently living with his parents. He has experimented with tobacco and marijuana in the past but does not use them regularly. He consumes alcohol occasionally. He reports no recreational drug use.
+
+Family History  
+The patient's father has a history of high cholesterol. No other significant family medical history is reported.
+
+Current Medications  
+The patient is not currently taking any medications, including over-the-counter or herbal supplements.
+
+Objective  
+Vital signs were not available in the electronic health record. The patient's height is 170.8 cm and his BMI is 28.11, indicating overweight status. A physical examination was planned to assess for signs of upper respiratory infection or other pathology. The patient was scheduled for a COVID-19 swab test to rule out infection. No significant abnormalities were noted in the labs reviewed, though the data appears to belong to a different patient with a long-standing medical history unrelated to the current presentation.
+
+Assessment  
+Based on the history and physical findings, the working diagnosis is a common cold. The patient’s symptoms are consistent with a viral upper respiratory infection. Given the ongoing pandemic, a COVID-19 test was ordered to rule out infection. The patient was advised to self-isolate and avoid close contact with family members until test results are available.
+
+Plan  
+1. Order a rapid antigen test for SARS-CoV-2 to rule out COVID-19.  
+2. Advise the patient to self-isolate at home and avoid contact with others until test results are available.  
+3. Recommend rest, hydration, and over-the-counter symptomatic relief for cough and nasal congestion as needed.  
+4. Reassure the patient that antibiotics are not indicated for viral infections and that symptoms should resolve with time.  
+5. Follow up in 48 hours for test results and to reassess symptoms.  
+6. If symptoms worsen or new symptoms develop, return for further evaluation.  
+
+The patient was advised to contact public health for further instructions if the test result is positive.

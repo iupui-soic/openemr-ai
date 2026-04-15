@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:11:43
+Time: 4.91s
+Tokens: 6,412 in / 1,606 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt  
+Date of Birth: 27 September 1965 (Age 60)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Medical Record Number: 103  
+
+Chief Complaint  
+Dry cough of three days’ duration associated with feverish sensation, chills, night sweats, fatigue, mild headache, and generalized body aches.
+
+History of Present Illness  
+Ms. Schmitt reports the abrupt onset of a dry, non‑productive cough three days ago. She notes that the cough has progressively worsened and is present throughout the day, interrupting her sleep. On the day of presentation she began to feel “hot” and suspects she may have a fever, although she has not measured her temperature. She also experienced mild chills and night sweats last night, as well as increased fatigue, which she attributes to sleep disruption from the cough. A slight headache and diffuse myalgias are present. She denies any sputum production, hemoptysis, dyspnea, wheezing, chest pain, shortness of breath, sore throat, rhinorrhea, nasal congestion, ear or eye discharge, dysphagia, nausea, vomiting, diarrhea, abdominal pain, dysuria, or recent weight loss. Over‑the‑counter cough syrup has been tried without relief. She has not identified any environmental triggers such as cold air, smoke, dust, or pet exposure. She reports that her husband has been vomiting for two days and feels “hot,” but he has not been evaluated by a physician. No other household members are ill.
+
+Review of Systems  
+Constitutional: Positive for feverish sensation, chills, night sweats, fatigue, mild headache, and myalgias. Negative for documented fever, weight loss, or recent change in appetite (appetite reported as “OK” but limited by cough).  
+Respiratory: Positive for dry cough, worse at night, disrupting sleep. Negative for sputum, hemoptysis, dyspnea, wheezing, chest pain, or shortness of breath.  
+Cardiovascular: Negative for chest pain, palpitations, orthopnea, or syncope.  
+Gastrointestinal: Negative for nausea, vomiting (patient), diarrhea, abdominal pain, dysphagia, or change in bowel habits.  
+Genitourinary: Negative for dysuria or urinary frequency.  
+Neurologic: Negative for dizziness, syncope, focal deficits.  
+ENT: Negative for sore throat, rhinorrhea, nasal congestion, ear or eye discharge, or facial pain.  
+Skin: Negative for rashes or lesions.  
+Psychiatric: No reported anxiety or depression beyond mild stress noted in past records.
+
+Past Medical History  
+- Hypothyroidism, treated with levothyroxine (Synthroid).  
+- Essential hypertension.  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus.  
+- Type 2 diabetes mellitus with microalbuminuria.  
+- Chronic congestive heart failure.  
+- Obesity (BMI ≈ 30 kg/m²).  
+- Osteoarthritis of the knee.  
+- Chronic low‑back and neck pain.  
+- Prior episode of acute bronchitis (2015).  
+
+Surgical History  
+- Appendectomy performed in teenage years, without complications.
+
+Social History  
+Ms. Schmitt lives in a townhouse with her husband and two teenage children. The family recently moved. She works from home in marketing and does not have occupational exposure to respiratory irritants. She does not smoke cigarettes. Alcohol intake is occasional, approximately one glass of wine every three to four days. She reports occasional marijuana use but no regular recreational drug use. She reports no regular exercise.  
+
+Family History  
+- Sister (15 years older) experienced a recent myocardial infarction.  
+- Parents deceased of age‑related causes; no known cardiovascular or oncologic disease reported in parents. No family history of lung disease, diabetes, or cancer.
+
+Allergies  
+No known drug allergies.
+
+Current Medications (as reported)  
+- Levothyroxine (Synthroid) – dose not specified.  
+- Multivitamin – daily.  
+- Amlodipine 2.5 mg daily (hypertension).  
+- Furosemide (dose and formulation not confirmed; listed as active in record).  
+- Naproxen sodium 220 mg as needed for pain.  
+
+Objective Data  
+
+Vital Signs  
+No vital signs were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented.  
+
+Laboratory and Imaging Studies  
+No laboratory results are available at this time. The provider ordered a nasopharyngeal PCR test for SARS‑CoV‑2 and a chest radiograph to evaluate for possible pneumonia or other acute pulmonary pathology.  
+
+Assessment  
+1. Acute dry cough with systemic symptoms – probable viral upper respiratory infection, COVID‑19 pending testing.  
+2. Chronic comorbidities: hypothyroidism, hypertension, type 2 diabetes mellitus with CKD stage 2, chronic heart failure, obesity, osteoarthritis, chronic musculoskeletal pain.  
+3. Household exposure to ill spouse with vomiting and feverish symptoms.  
+
+Plan  
+
+Diagnostic Studies  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Perform chest X‑ray to assess for infiltrates suggestive of bacterial pneumonia or COVID‑19‑related changes.  
+- Consider basic metabolic panel, complete blood count, and inflammatory markers (CRP, ESR) if clinical status does not improve or worsens.  
+
+Therapeutic Interventions  
+- Continue current chronic medications (levothyroxine, amlodipine, furosemide, naproxen as needed).  
+- Recommend antipyretic/analgesic therapy with acetaminophen 500 mg–1 g every 6 hours as needed for fever, headache, or myalgias, provided no contraindications.  
+- Encourage adequate oral hydration, humidified air, and rest.  
+- Advise use of honey‑lemon tea or lozenges for throat comfort if desired.  
+- Counsel against further use of over‑the‑counter cough syrup that has proven ineffective; consider a short trial of a low‑dose dextromethorphan if cough remains severe.  
+
+Infection Control and Education  
+- Instruct patient to self‑isolate pending COVID‑19 test results, maintaining distance from household members, especially the ill husband.  
+- Emphasize hand hygiene, mask use when around others, and frequent cleaning of high‑touch surfaces.  
+- Advise monitoring of temperature at home; if fever > 38.3 °C (101 °F), persistent dyspnea, chest pain, or worsening cough, seek immediate medical attention.  
+
+Follow‑Up  
+- Review PCR and chest X‑ray results within 48–72 hours.  
+- Schedule telehealth or in‑person follow‑up in 3 days, or sooner if symptoms progress.  
+- If COVID‑19 is confirmed, provide guidance per current public health recommendations and consider antiviral therapy eligibility based on age and comorbidities.  
+
+Disposition  
+Patient was educated on the likely viral nature of her illness, the importance of isolation, and red‑flag symptoms that would warrant urgent care. She agreed with the plan and will await test results.  
+
+Prepared by: ___________________________   Date: 14 April 2026   (Electronic medical record)

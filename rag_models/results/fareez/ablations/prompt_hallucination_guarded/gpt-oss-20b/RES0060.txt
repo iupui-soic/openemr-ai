@@ -1,0 +1,64 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:30:09
+Time: 2.11s
+Tokens: 6,551 in / 909 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a four‑day history of fever (first measured temperature 38.5 °C) and a progressively worsening dry cough.  
+
+History of Present Illness  
+The patient reports that symptoms began on Monday with a dry cough and fever, both of which have been getting worse over the past four days. She has felt increasingly fatigued and has experienced mild shortness of breath after coughing fits, though she denies chest pain, wheezing, or dyspnea at rest. The cough is dry, non‑productive, and not associated with sputum, blood, or any change in sound. She has had a mild, intermittent headache described as pressure or a vice‑grip, which she has attributed to tension headaches she has experienced previously. She also reports mild nausea without vomiting and decreased appetite, likely due to fatigue. No sore throat, dysphagia, or significant nasal congestion has been reported; a slight runny nose was noted but is minimal. She denies feverish chills, night sweats, weight loss, or any new onset of cough‑related pain.  
+
+Review of Systems  
+- Constitutional: Fever (38.5 °C), fatigue, decreased appetite, mild nausea.  
+- Respiratory: Dry cough, shortness of breath only after coughing fits, no sputum, no wheeze.  
+- Cardiovascular: No palpitations, no chest pain.  
+- Gastrointestinal: Mild nausea, normal bowel movements, no abdominal pain.  
+- Neurologic: Tension‑type headache, no dizziness, no confusion.  
+- Other: No ear or eye pain, no vision or hearing changes, no dermatologic symptoms besides a history of hives with penicillin.  
+
+Past Medical History  
+The patient is known to have hypercholesterolemia, for which she has been taking rosuvastatin for several years, and is pre‑diabetic with an A1C of 6.2 % noted six months ago. No acute medical conditions were reported during this encounter.  
+
+Social History  
+The patient does not smoke, does not use recreational drugs, and consumes alcohol occasionally (a few beers on the weekend). She lives in a duplex, renting the basement unit, and resides with her girlfriend. She works full time and reports walking her dog more frequently and limiting eating out in an effort to manage blood glucose.  
+
+Allergies  
+- Penicillin (causes hives).  
+
+Current Medications  
+- Rosuvastatin (dose not specified).  
+- Multivitamin.  
+
+Family History  
+The patient reports no known family history of heart disease, lung disease, or other significant illnesses.  
+
+Physical Examination  
+Not assessed during this encounter.  
+
+Labs  
+Not assessed during this encounter.  
+
+Imaging  
+Not assessed during this encounter.  
+
+Assessment  
+The patient’s presentation is consistent with an acute viral respiratory illness, most likely acute bronchitis. COVID‑19 infection remains a differential given the timing, symptom profile, and recent public health guidance; a nasopharyngeal swab will be obtained for SARS‑CoV‑2 testing.  
+
+Plan  
+1. **Diagnostic Testing** – Order a SARS‑CoV‑2 PCR test; results expected within 24 hours.  
+2. **Isolation** – Advise the patient and her girlfriend to isolate for 14 days pending test result; if positive, continue isolation per public health guidance.  
+3. **Symptom Management** – Continue supportive care: adequate rest, hydration, and over‑the‑counter analgesics as needed for headache and fever.  
+4. **Pre‑diabetes & Lipid Management** – Continue rosuvastatin; encourage ongoing dietary modifications and increased physical activity. Discuss further lifestyle counseling at next visit.  
+5. **Follow‑up** – If symptoms worsen, develop new respiratory or cardiovascular symptoms, or if COVID‑19 test is positive, return for re‑evaluation. Otherwise, schedule routine follow‑up for lipid and glucose monitoring as per primary care schedule.  
+
+No new prescriptions were issued during this visit.

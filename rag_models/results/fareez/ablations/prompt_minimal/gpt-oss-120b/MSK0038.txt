@@ -1,0 +1,160 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 04:23:39
+Time: 5.91s
+Tokens: 11,767 in / 2,285 out
+============================================================
+
+**Patient Information**  
+**Name:** Abraham Lowe **DOB:** 31 May 1962 **Age:** 63 y/o **Sex:** Male **MRN:** 450 **Address:** 173 Renner Run, Bridgewater, MA 02324  
+
+---
+
+## SUBJECTIVE  
+
+**Chief Complaint:**  
+Left knee pain of 3–4 months’ duration, now present at rest.
+
+**History of Present Illness (HPI):**  
+Mr. Lowe reports a progressive left‑knee pain that began several months ago while running. Initially the discomfort was limited to activity (especially ascending/descending stairs and running) but over the past 2 weeks it has begun to persist at rest and is now noticeable with everyday walking. He describes the pain as “sharp, stabbing” at the moment his foot strikes the ground during activity and a more “dull” ache when at rest. Current intensity is 6/10. He rates the pain as “worse with activity, better with rest,” and notes that prolonged standing, sitting‑to‑standing, and sitting down also provoke a sharp sensation. Flexion of the knee to the heel (knee‑to‑butt) and full knee extension are painless while seated. Lateral hip abduction (ceiling‑touch) produces a sensation of tightness but no sharp pain.
+
+He has a remote history of similar knee discomfort during collegiate rowing that resolved with stretching and strengthening, but he never sought formal care. He is not currently participating in any sport other than running and has not altered his training regimen.
+
+**Review of Systems (pertinent positives/negatives):**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| **Constitutional** | None (no fever, chills, weight loss) | |
+| **Musculoskeletal** | Sharp left knee pain with activity, dull pain at rest; pain on weight‑bearing transitions; lateral hip tightness. | No swelling, erythema, bruising, deformity, skin changes, temperature asymmetry, numbness/tingling, muscle weakness, or pain elsewhere. |
+| **Cardiovascular** | None | No chest pain, palpitations. |
+| **Respiratory** | None | No cough, dyspnea, wheeze. |
+| **GI** | None | No nausea, vomiting, abdominal pain, diarrhea, constipation. |
+| **GU** | None | No dysuria, hematuria. |
+| **Neurologic** | None | No headache, dizziness, memory change. |
+| **Skin** | None | No rashes. |
+| **Psychiatric** | None | No depression/anxiety reported (PHQ‑2 score = 2, below screening threshold). |
+
+**Past Medical History**  
+- Essential hypertension (diagnosed 1987) – on hydrochlorothiazide.  
+- Type 2 diabetes mellitus (prediabetes noted 2003, currently on insulin isophane/regular).  
+- Metabolic syndrome, obesity (BMI ≈ 28 kg/m²).  
+- Chronic kidney disease, stage 4 / end‑stage renal disease (on dialysis evaluation).  
+- Chronic low‑back, neck, and generalized pain syndromes.  
+- No prior knee surgery; prior “injury of medial collateral ligament” documented in 2012, resolved.
+
+**Past Surgical History**  
+- None reported.
+
+**Medications (home)**  
+- Hydrochlorothiazide 25 mg PO daily.  
+- Amlodipine 2.5 mg PO daily.  
+- Insulin (human) mixture (isophane 70 U/mL + regular 30 U/mL) SC as prescribed.  
+- Multivitamin daily.  
+- No current NSAIDs or analgesics (patient reports occasional use of ibuprofen in the past).  
+
+**Allergies**  
+- No known drug, food, or environmental allergies.
+
+**Social History**  
+- Lives alone in a small apartment while completing a master’s thesis.  
+- No tobacco use.  
+- No current alcohol consumption.  
+- No recreational drug use; tried marijuana once, discontinued.  
+- Exercise: Primarily running; no structured cross‑training.  
+- Up‑to‑date on annual influenza vaccination.
+
+**Family History**  
+- Father: Hypertension, hyperlipidemia; no known cardiac events, cancer, or musculoskeletal disease.  
+- Mother: No reported illnesses.
+
+**Patient Concerns/Goals**  
+Wants relief of knee pain to return to regular running and daily activities without discomfort.
+
+---
+
+## OBJECTIVE  
+
+**Vital Signs (most recent EMR entry, 24 Sep 2009)**  
+- Heart Rate: 94 bpm  
+- Respiratory Rate: 13 breaths/min  
+- Temperature: N/A  
+- Blood Pressure: N/A (not recorded)  
+- SpO₂: N/A  
+- Height: 179.6 cm; Weight: N/A → BMI ≈ 28.4 kg/m²  
+
+**Physical Examination**  
+
+| Region | Findings |
+|--------|----------|
+| **General** | Alert, oriented, well‑appearing male. |
+| **Left Knee Inspection** | No visible swelling, erythema, bruising, deformity, or skin changes. |
+| **Palpation** | No tenderness over patella, medial collateral structures, or patellar tendon. Tenderness noted along the lateral joint line just above the joint line. No warmth or temperature asymmetry compared to right knee. |
+| **Range of Motion** | Active flexion to heel‑to‑buttock and full extension pain‑free while seated. |
+| **Functional Tests** | • Sit‑to‑stand: sharp pain reproduced.  • Standing to sitting: sharp pain reproduced.  • Hip abduction (Ober test) – positive: lateral hip remains in abduction with a “stuck” sensation, indicating tight iliotibial band. |
+| **Neurovascular** | Intact distal sensation, pulses normal. No tibial nerve symptoms. |
+| **Other Musculoskeletal** | Quadriceps and hamstrings non‑tender, normal bulk. No other joint involvement. |
+
+**Laboratory Data** (most recent, 2020‑2021) – within normal limits for electrolytes, glucose, renal function stable on current regimen (creatinine ≈ 1.06 mg/dL, BUN ≈ 15–19 mg/dL). PHQ‑2 = 2 (screen negative). No acute infection markers.
+
+**Imaging** – None performed during this visit.
+
+---
+
+## ASSESSMENT  
+
+1. **Left iliotibial band (ITB) syndrome** – supported by lateral knee pain with activity, positive Ober test, and pain on weight‑bearing transitions.  
+2. **Chronic left knee pain, activity‑related** – likely secondary to ITB friction over lateral femoral epicondyle.  
+3. **Comorbidities influencing management** – hypertension, type 2 diabetes, stage 4 CKD/ESRD (requires cautious NSAID use), obesity.  
+4. **Functional impact** – mild limitation in daily ambulation and inability to continue running at desired intensity.  
+
+**Differential Diagnoses (considered and deemed less likely)**  
+- Patellofemoral pain syndrome – no patellar tenderness or crepitus.  
+- Meniscal tear – no joint line locking, no effusion.  
+- Lateral collateral ligament sprain – no instability.  
+- Early osteoarthritis – age appropriate but exam lacks crepitus or joint space narrowing signs.
+
+---
+
+## PLAN  
+
+**1. Conservative Management**  
+- **Activity modification**: Reduce running distance/frequency for 2–3 weeks; substitute low‑impact cross‑training (e.g., swimming, stationary cycling).  
+- **Therapeutic stretching**: Daily ITB stretching program (e.g., standing cross‑body stretch, foam‑roller mobilization of lateral thigh).  
+- **Strengthening**: Initiate hip abductor and gluteus medius strengthening (clamshells, side‑lying leg raises) to improve dynamic knee stability.  
+- **Ice therapy**: Apply ice to lateral knee 15–20 min, 2–3 times daily after activity.  
+- **NSAID trial**: Short course of ibuprofen 400 mg PO q6h with food for pain control, **only if renal function permits** (monitor serum creatinine; consider acetaminophen 650 mg q6h as alternative given CKD).  
+- **Compression/ taping**: Consider kinesiology taping of the lateral knee to reduce friction during activity.  
+
+**2. Physical Therapy Referral**  
+- Order PT evaluation within the next week for a structured program focusing on ITB flexibility, hip musculature strengthening, and gait analysis.  
+
+**3. Education**  
+- Discuss proper running mechanics (increased cadence, shorter stride) and footwear assessment.  
+- Reinforce weight‑management strategies given BMI > 28 kg/m² and metabolic syndrome.  
+
+**4. Medication Review**  
+- Verify that current antihypertensive and insulin regimens are continued; no new prescriptions needed at this visit.  
+- Advise against chronic NSAID use given CKD; use the lowest effective dose for the shortest duration.  
+
+**5. Follow‑up**  
+- Return visit in 4–6 weeks to assess response to conservative measures and PT progress.  
+- Earlier return if pain worsens, swelling develops, or new symptoms (e.g., locking, instability).  
+
+**6. Considerations for Future Care**  
+- If symptoms persist despite 8–12 weeks of optimized conservative therapy, discuss further imaging (MRI of left knee) to rule out intra‑articular pathology.  
+- Options for refractory cases: ultrasound‑guided corticosteroid injection, shock‑wave therapy, or, rarely, surgical ITB release.  
+
+**7. Documentation & Coding**  
+- ICD‑10‑CM: M76.41 (Iliotibial band syndrome, left knee).  
+- CPT: 99213 (Office/outpatient visit, established patient).  
+
+**8. Patient Questions**  
+- Patient expressed understanding and agreement with the plan; all questions were answered.  
+
+---  
+
+*Prepared by:* [Physician’s Name], MD  
+*Date:* 14 April 2026  
+
+---

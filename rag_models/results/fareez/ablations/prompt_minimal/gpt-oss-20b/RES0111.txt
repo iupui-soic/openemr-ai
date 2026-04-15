@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-20b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:28:21
+Time: 2.93s
+Tokens: 9,553 in / 1,172 out
+============================================================
+
+**Patient Information**  
+- **Age/Sex:** 13‑year‑old male (grade 10)  
+- **Chief Complaint:** “Sore throat for four days” with a feeling of fever.  
+- **Immunization Status:** Up‑to‑date except HPV; no recent influenza vaccine.  
+
+---
+
+### SOAP Note
+
+**S – Subjective**
+
+- **History of Present Illness:**  
+  - 4‑day history of sore throat, painful swallowing of solids (difficulty chewing/solid foods), mild hoarseness.  
+  - Patient reports feeling hot; temperature not yet measured in clinic.  
+  - No cough, runny nose, congestion, headache, chest pain, shortness of breath, abdominal pain, nausea/vomiting, diarrhea/constipation, fatigue, or weight loss.  
+  - No dysphagia or odynophagia beyond “painful” swallowing.  
+  - No recent travel or known exposure to sick individuals.  
+
+- **Past Medical History:** No chronic illnesses or prior surgeries (only appendectomy at age 13).  
+- **Medications:** Multivitamin; no prescription or OTC drugs reported.  
+- **Allergies:** None reported.  
+- **Social History:** Lives with parents and two siblings. No tobacco, alcohol, or recreational drug use. Not sexually active; no plan for sexual activity before finishing high school. No bullying, depression, or anxiety concerns.  
+- **Review of Systems:**  
+  - **Constitutional:** Fever (subjective), no chills, weight changes, or fatigue.  
+  - **ENT:** Sore throat, mild hoarseness; no ear pain, nasal congestion, or facial swelling.  
+  - **Respiratory:** No cough, dyspnea, wheeze, or chest pain.  
+  - **Cardiovascular:** No palpitations, chest discomfort.  
+  - **Gastrointestinal:** No nausea, vomiting, abdominal pain, diarrhea, constipation.  
+  - **Neurological:** No confusion, headache, vision changes.  
+  - **Psychiatric:** No depression, anxiety, or mood disturbance.  
+
+**O – Objective**
+
+- **Vital Signs (pending):** Temperature to be taken; heart rate, BP, RR, SpO₂ will be documented once measured.  
+- **Physical Examination:**  
+  - *General:* Alert, cooperative, no distress.  
+  - *Head/Neck:* Erythematous oropharynx with swollen tonsils, no exudate reported; no cervical lymphadenopathy noted.  
+  - *Respiratory:* Clear to auscultation bilaterally; no wheezes.  
+  - *Cardiovascular:* Regular rate and rhythm, no murmurs.  
+  - *Abdomen:* Soft, non‑tender, no hepatosplenomegaly.  
+- **Laboratory Data (current):** None yet obtained; rapid strep test and COVID‑19 PCR to be performed today.  
+
+**A – Assessment**
+
+1. **Acute viral pharyngitis** – most likely given the duration, absence of exudate, and lack of systemic symptoms.  
+2. **Differential Diagnoses:**  
+   - Group A β‑hemolytic streptococcal (GAS) pharyngitis – to be ruled out with rapid strep test.  
+   - Infectious mononucleosis – less likely without constitutional symptoms; may consider if fever persists > 7 days.  
+   - COVID‑19 – overlapping features; will be assessed by PCR.  
+
+**P – Plan**
+
+- **Diagnostics:**  
+  - Perform rapid antigen detection test for GAS.  
+  - Conduct SARS‑CoV‑2 PCR (nasopharyngeal swab).  
+
+- **Medication:**  
+  - If GAS positive → prescribe Amoxicillin 50 mg/kg/day PO q12 h for 10 days (or alternative if allergic).  
+  - If GAS negative → symptomatic care: Acetaminophen 15 mg/kg PO q6‑8 h PRN for fever/ache; stay hydrated; warm salt‑water gargles.  
+
+- **Infection Control:**  
+  - Advise 14‑day home isolation pending COVID‑19 result; keep distance from classmates and family until negative or symptom resolution.  
+
+- **Vaccinations:**  
+  - Discuss and schedule influenza vaccine for current season.  
+  - Encourage HPV vaccination before age 26 (or earlier) – discuss benefits and insurance coverage.  
+
+- **Lifestyle & Safety:**  
+  - Continue multivitamin; maintain balanced diet and adequate fluids.  
+  - No tobacco, alcohol, or recreational drugs.  
+  - Reassure safety at home; maintain mask usage and social distancing at school.  
+
+- **Follow‑Up:**  
+  - Return in 48 hrs if symptoms worsen (high fever, difficulty breathing, rash, or persistent pain).  
+  - If strep treatment initiated, follow up in 7 days to ensure resolution.  
+
+- **Education Provided:**  
+  - Discuss typical course of viral pharyngitis (10–14 days).  
+  - Explain importance of completing antibiotics if prescribed.  
+  - Symptoms warrant immediate return: high fever > 38.9 °C, swelling of throat, drooling, difficulty breathing, or signs of systemic illness.  
+
+**Disposition:** Outpatient care with instructions to complete isolation and follow up as indicated.  
+
+---

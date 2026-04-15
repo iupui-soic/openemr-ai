@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:16:22
+Time: 2.82s
+Tokens: 18,494 in / 1,207 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with right upper quadrant abdominal pain that began approximately eight hours ago.  
+
+History of Present Illness  
+The patient reports an aching pain localized to the right upper abdomen. The pain initially came and went but has become constant over the past five to six hours. She rates the pain as 8 out of 10. The pain is not relieved by Tylenol and is worsened by eating, particularly fatty foods such as burgers or fries. She has experienced mild nausea but has not vomited. She denies fever, chills, sweating, changes in bowel habits, urinary symptoms, or blood in stool. She has not lost weight recently and has been eating less due to the pain. The pain began while she was about to go to sleep and has persisted since.  
+
+Review of Systems  
+Constitutional: Mild fatigue, no fever, no chills, no weight loss.  
+Respiratory: No cough, wheeze, or shortness of breath.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, no vomiting, no diarrhea or constipation, no change in stool color or presence of blood.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: No headaches, dizziness, or seizures.  
+Psychiatric: No anxiety or depression reported during this visit.  
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with metformin.  
+Chronic kidney disease stage 2/3 secondary to diabetes.  
+Hypertension, managed with lisinopril (historical medication).  
+Gastroesophageal reflux disease.  
+Obesity (BMI 27.9).  
+Metabolic syndrome.  
+Chronic pain and migraine without aura.  
+History of cerebral palsy and spasticity.  
+
+Surgical History  
+Wisdom teeth extraction in adolescence. No abdominal or other major surgeries.  
+
+Social History  
+The patient lives alone in an apartment. She engages in regular running when weather permits. She consumes one to two alcoholic drinks per day, typically a glass of wine at night. She does not smoke cigarettes and denies recreational drug use. She is currently unemployed due to COVID-related layoffs.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other significant illnesses.  
+
+Medications  
+Current home medication: Metformin.  
+Past medications noted in the electronic record include lisinopril, insulin, and inhalers, but these are not listed as current.  
+
+Allergies  
+No known drug or environmental allergies.  
+
+Physical Examination  
+Vital signs: No vital sign data recorded during this encounter.  
+General: Patient appears in mild distress due to abdominal pain.  
+Abdomen: Tenderness localized to the right upper quadrant; no guarding or rebound tenderness reported. No palpable masses. Bowel sounds present.  
+Other systems: No abnormalities noted.  
+
+Laboratory Results  
+- Serum creatinine: 1.97 mg/dL (elevated, consistent with chronic kidney disease).  
+- Estimated glomerular filtration rate: 36.9 mL/min/1.73 m² (reduced).  
+- Serum calcium: 9.27 mg/dL (within normal limits).  
+- Serum sodium: 136 mmol/L (normal).  
+- Serum chloride: 104 mmol/L (normal).  
+- Serum potassium: Not reported.  
+- Serum glucose: 66.6 mg/dL (normal).  
+- Urine protein: 214.8 mg/dL (elevated).  
+- Urine specific gravity: 1.038 (slightly high).  
+- Urine ketones: 0.93 mg/dL (low).  
+- Urine glucose: 1.53 mg/dL (low).  
+- Urine bilirubin: 0.44 mg/dL (low).  
+- Urine leukocyte esterase and nitrites: Not reported.  
+- Other routine labs (CBC, liver enzymes, lipase) not available in this extract.  
+
+Assessment  
+The patient presents with acute right upper quadrant abdominal pain of eight hours duration, associated with nausea and worsened by food intake. Differential diagnosis includes acute appendicitis (though atypical location), acute cholecystitis, biliary colic, pancreatitis, peptic ulcer disease, or mesenteric ischemia. Chronic kidney disease and diabetes may complicate presentation and management.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, or appendiceal inflammation.  
+2. Obtain a comprehensive metabolic panel, complete blood count, liver function tests, and serum lipase to assess for pancreatitis or hepatic pathology.  
+3. Continue current metformin therapy; monitor renal function closely.  
+4. Initiate analgesia with acetaminophen as needed, avoiding NSAIDs due to renal impairment.  
+5. Encourage small, bland meals and monitor for worsening pain or development of vomiting, fever, or rebound tenderness.  
+6. Advise the patient to seek immediate care if symptoms worsen or new symptoms such as fever, chills, or vomiting occur.  
+7. Schedule a follow‑up appointment in 48–72 hours or sooner if clinical status changes.  
+8. Consider surgical consultation if imaging or clinical findings suggest appendicitis, cholecystitis, or other surgical abdomen.  
+
+Follow‑up instructions and discharge instructions will be provided verbally and documented in the patient’s chart.

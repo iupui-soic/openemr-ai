@@ -1,0 +1,66 @@
+Model: qwen/qwen3-32b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:46:06
+Time: 4.46s
+Tokens: 15,025 in / 1,260 out
+============================================================
+
+Patient Information  
+The patient is a 6-year-old male who presented with a 3-day history of abdominal pain, vomiting, and a 2-day history of diarrhea. He also developed a fever on the third day, with a recorded temperature of 38.3°C. The patient is accompanied by his mother, who reports that he has been increasingly irritable and lethargic, with a notable decrease in activity levels, especially on the day of the fever. The patient is otherwise healthy, with no known chronic medical conditions, allergies, or prior hospitalizations. He is up to date on all immunizations and has no history of significant medical or surgical issues. The patient lives with his parents and two older siblings, and there is no recent travel or known exposure to sick contacts. The mother notes that the patient recently returned to school, raising concern for possible exposure to a viral illness.
+
+Chief Complaint  
+The patient presents with a 3-day history of abdominal pain, vomiting, and diarrhea, with the development of fever on day 3.
+
+History of Present Illness  
+The patient initially began experiencing intermittent abdominal pain approximately 3 days prior to presentation. The pain was generalized and not localized to a specific area. Two days prior, he developed vomiting, which occurred six times over the course of two days. The initial vomiting was related to food intake, but subsequent episodes were unprovoked and consisted of yellowish material without blood or bile. The patient also developed diarrhea on day 2, with watery stools occurring approximately six to seven times per day and no evidence of blood or mucus. On day 3, he developed a fever, with associated chills and increased sleepiness. The patient has been increasingly irritable and lethargic, with a decreased appetite and no improvement in symptoms despite home management. There is no history of chest pain, headache, cough, shortness of breath, or other systemic symptoms. The patient has not experienced any recent trauma or changes in diet, and there is no known family history of gastrointestinal disorders.
+
+Review of Systems  
+Constitutional: The patient has experienced fever, chills, and fatigue.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Abdominal pain, vomiting, and diarrhea.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Musculoskeletal: No joint pain or muscle aches.  
+Neurological: No headache, dizziness, or altered mental status.  
+Integumentary: No rashes or skin changes.  
+Allergic: No known allergies.  
+Psychiatric: No changes in behavior or mood beyond irritability and lethargy.  
+Endocrine: No signs of weight loss or polyuria.  
+Hematologic: No pallor or bruising.  
+Immunologic: No recent infections or immunosuppressive conditions.  
+Ophthalmic: No eye pain or redness.  
+Otolaryngologic: No sore throat, ear pain, or nasal congestion.  
+Dermatologic: No skin lesions or rashes.  
+
+Past Medical History  
+The patient has no known chronic medical conditions, no prior hospitalizations, and no history of surgeries. He is up to date on all vaccinations. There is no history of allergies or adverse reactions to medications. The patient was born at term via normal vaginal delivery, with no complications. He has met all developmental milestones and is performing well in school.  
+
+Family History  
+There is no known family history of gastrointestinal disorders, celiac disease, Crohn's disease, or other chronic medical conditions. One of the patient’s older siblings is being evaluated for possible asthma, but no diagnosis has been confirmed.  
+
+Social History  
+The patient lives with both parents and two older siblings. There are no pets in the household, and no tobacco, alcohol, or recreational drug use is present in the home. The patient recently returned to school, and there is no known recent travel or exposure to ill individuals.  
+
+Current Medications  
+The patient is not currently taking any medications.  
+
+Objective  
+Vital Signs: No vital signs were recorded in the OpenEMR extract.  
+Physical Examination: No physical examination findings were recorded in the OpenEMR extract. The patient was not examined in this visit, as the documentation is based on the parent’s verbal history.  
+
+Laboratory Results  
+No laboratory results were obtained during this visit. The provider indicated that a COVID-19 test and blood work would be performed to evaluate for possible viral gastroenteritis or other infectious causes.  
+
+Assessment  
+The patient is presenting with symptoms consistent with acute gastroenteritis, likely of viral etiology. The symptoms include abdominal pain, vomiting, diarrhea, and fever, which are typical of a self-limiting viral illness. Other potential considerations include food intolerance, bacterial gastroenteritis, or, less likely, a systemic viral illness such as COVID-19. Given the recent return to school and the nonspecific nature of the symptoms, the provider has elected to perform a COVID-19 test and additional blood work to rule out other causes. The patient is also at risk for dehydration due to the frequency of vomiting and diarrhea, and hydration status will be closely monitored.
+
+Plan  
+1. Perform a COVID-19 test and blood work, including a complete blood count, electrolytes, and renal function tests, to evaluate for infection or electrolyte imbalance.  
+2. Initiate oral or intravenous hydration as needed based on the results of the physical examination and laboratory findings.  
+3. Provide symptomatic relief with antiemetics or antipyretics as appropriate.  
+4. Advise the parent to monitor for signs of worsening symptoms, including persistent vomiting, inability to tolerate fluids, or signs of dehydration.  
+5. Follow up in 24–48 hours or sooner if symptoms worsen.  
+6. Educate the parent on fluid and dietary management for acute gastroenteritis, including the use of oral rehydration solutions and avoidance of solid foods until symptoms improve.  
+
+The patient is advised to remain home from school until symptoms resolve to prevent potential spread of illness.

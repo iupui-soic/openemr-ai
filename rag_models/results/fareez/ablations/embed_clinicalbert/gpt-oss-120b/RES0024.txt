@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 03:47:06
+Time: 6.42s
+Tokens: 12,002 in / 1,901 out
+============================================================
+
+Patient Information  
+Aaron Bartoletti, Male, born 03 August 1981. Current address: 409 Veum Drive, Spencer, Massachusetts 01562. He is a 44‑year‑old man who presents for evaluation of a recent loss of smell.
+
+Chief Complaint  
+Acute loss of smell (anosmia) for the past two days.
+
+History of Present Illness  
+The patient reports that two days ago he noticed that he could neither smell nor taste anything. He describes the inability to detect the flavor of an onion that his boyfriend offered, and he confirms that all foods taste bland. He denies any associated nausea, vomiting, abdominal pain, or changes in bowel habits. He mentions feeling slightly fatigued and a vague sensation of dryness in his mouth, but he has not experienced cough, shortness of breath, chest pain, palpitations, fever, chills, or night sweats. He has not measured his temperature and is uncertain whether he has been febrile. He denies sore throat, rhinorrhea, nasal congestion, eye or ear pain, and new skin rashes. He reports no recent sick contacts; his boyfriend is asymptomatic, and he has been attending classes exclusively online. He lives only with his boyfriend. He has a known peanut allergy for which he carries an epinephrine auto‑injector. He uses combined oral contraceptive pills and applies a topical steroid cream for eczema flares a few times per week during the winter months. He reports occasional use of marijuana edibles and consumes a couple of beers on weekends. He is sexually active with his boyfriend and has no history of sexually transmitted infections.
+
+Review of Systems  
+- Constitutional: Positive for recent loss of smell and taste, mild fatigue; negative for fever, chills, night sweats, weight loss or gain.  
+- Respiratory: No cough, dyspnea, wheeze, sputum production, or hemoptysis.  
+- Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Neurologic: No headache, dizziness, focal weakness, or sensory changes other than anosmia.  
+- ENT: No sore throat, rhinorrhea, nasal congestion, ear pain, or visual changes.  
+- Dermatologic: Chronic eczema, no new rash.  
+- Psychiatric: No reported anxiety or mood changes at this visit.  
+- Allergic/Immunologic: Peanut allergy; no new drug allergies reported.
+
+Past Medical History  
+- Essential hypertension.  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria.  
+- Chronic kidney disease (stage 1–4 historically) with a history of renal transplantation; currently listed as “History of renal transplant.”  
+- Eczema (atopic dermatitis).  
+- Peanut allergy with prior anaphylactic reaction in childhood.  
+- Chronic migraine without aura.  
+- Anxiety and stress disorders documented in the past record.  
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+The patient does not use tobacco products. He occasionally consumes marijuana in the form of edibles and drinks alcohol (approximately two beers on weekends). He is currently employed part‑time. He lives with his boyfriend and has no other household members. He reports no illicit drug use. He is sexually active with his boyfriend and reports no history of sexually transmitted infections.
+
+Family History  
+- Father and mother: No known chronic illnesses reported.  
+- Siblings: No known illnesses.  
+- Uncle: Prostate cancer.  
+No known family history of cardiac, pulmonary, or other malignancies.
+
+Allergies  
+- Peanut (anaphylactic reaction).  
+No known drug allergies.
+
+Current Medications  
+- Combined oral contraceptive pill (started approximately three years ago).  
+- Topical corticosteroid cream for eczema, used intermittently.  
+- Epinephrine auto‑injector (EpiPen), carried at all times.  
+- Hydrochlorothiazide 25 mg daily (hypertension).  
+- Amlodipine 2.5 mg daily (hypertension).  
+- Tacrolimus (extended‑release 1 mg daily and 1 mL injection 5 mg/mL as previously prescribed for transplant immunosuppression).  
+- No current antibiotics or other systemic medications reported in the encounter.
+
+Vital Signs (most recent recorded)  
+- Heart rate: 85 beats per minute.  
+- Respiratory rate: 14 breaths per minute.  
+- Blood pressure: Not recorded at this visit.  
+- Temperature: Not recorded.  
+- SpO₂: Not recorded.  
+- Height: 179.8 cm (5 ft 11 in).  
+- Weight: Not recorded; body mass index calculated as 28.83 kg/m².
+
+Physical Examination  
+No physical examination findings were documented during this encounter.
+
+Laboratory and Diagnostic Data  
+- No COVID‑19 testing has been performed yet; a nasopharyngeal PCR swab was ordered during the visit.  
+- Recent lipid panel: HDL‑C 62.31 mg/dL, LDL‑C 98.12 mg/dL, total cholesterol 186.58 mg/dL, triglycerides 130.73 mg/dL.  
+- Complete blood count: Hemoglobin 16.36 g/dL, Hematocrit 45.4 % (derived), RBC 5.46 ×10⁶/µL, WBC 3.54 ×10³/µL (mild leukopenia), platelets 208 ×10³/µL, MCV 88.7 fL, MCHC 35.7 g/dL.  
+- PHQ‑9 score: 24 (severe depressive symptoms) and PHQ‑2 scores ranging from 1‑4 on separate entries.  
+- GAD‑7 scores of 1 and 3 (minimal anxiety).  
+- No other laboratory panels or imaging studies are available in the record.
+
+Assessment  
+1. Acute loss of smell (anosmia) and taste (ageusia) – most likely viral in etiology, pending SARS‑CoV‑2 PCR result. Given the current pandemic, COVID‑19 is the leading consideration.  
+2. Essential hypertension, stable on hydrochlorothiazide and amlodipine.  
+3. Type 2 diabetes mellitus with ongoing renal involvement; patient is a renal transplant recipient and is maintained on tacrolimus.  
+4. Atopic dermatitis (eczema), managed with intermittent topical steroids.  
+5. Peanut allergy with epinephrine autoinjector on hand.  
+6. Mild fatigue, possibly related to the acute viral process.  
+
+Plan  
+- Diagnostic: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing today. Results expected within 48 hours.  
+- Infection control: Instruct the patient to self‑isolate at home for up to 14 days from symptom onset, remaining isolated until a negative test result is obtained and symptoms have resolved. Advise strict hand hygiene, mask use when in shared spaces, and avoidance of close contact with non‑household members.  
+- Symptomatic care: Reassure that isolated loss of smell and taste is a recognized manifestation of COVID‑19 and often resolves spontaneously. Encourage adequate hydration and a balanced diet despite taste changes.  
+- Monitoring: Advise the patient to monitor for fever, worsening fatigue, shortness of breath, chest pain, or any new neurologic symptoms. Instruct him to seek immediate care if he develops difficulty breathing, persistent high fever, or any signs of dehydration.  
+- Medications: Continue current antihypertensive regimen (hydrochlorothiazide, amlodipine) and tacrolimus as prescribed; ensure tacrolimus trough levels are checked per transplant protocol. Continue oral contraceptive and topical steroid cream as needed. Keep epinephrine auto‑injector readily accessible.  
+- Follow‑up: Schedule a telemedicine follow‑up in 48–72 hours to review COVID‑19 test results and reassess symptoms. If the test is positive, provide guidance on the outpatient management of mild COVID‑19 and arrange appropriate monitoring. If negative and symptoms persist, consider further evaluation for other causes of anosmia (e.g., sinus imaging, ENT referral).  
+- Preventive health: Review vaccination status (influenza, COVID‑19 booster) and recommend updates as appropriate given immunosuppressed status. Encourage continuation of regular exercise as tolerated and maintain a healthy diet to support glycemic control.  
+- Documentation: Document the encounter, orders, and patient education in the medical record.  
+
+No further information is available at this time.

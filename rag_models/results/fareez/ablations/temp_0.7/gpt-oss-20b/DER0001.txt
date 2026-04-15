@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 04:20:23
+Time: 2.88s
+Tokens: 9,174 in / 1,327 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Date of Birth: 1943‑04‑07 (age 45 as reported by the patient)  
+Gender: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+Unit Number: 820  
+
+Chief Complaint  
+The patient presents with a red, swollen, painful rash on the right leg that has been present for approximately one week and has worsened over the last 24 hours with increased pain, warmth, and a white discharge from a superficial ulcer.
+
+History of Present Illness  
+Mr. Crona reports that the lesion began as a small, swollen area that has since enlarged, become more erythematous, and developed a painful, open wound with white discharge. He notes that the area feels hot and that the pain is exacerbated by movement and flexion of the ankle. He has been scratching the area, which he attributes to his difficulty controlling his diabetes. He denies fever, chills, shortness of breath, chest pain, or other systemic symptoms, although he reports feeling “hot” for the last 12 hours. He has an ulcer on his left heel that is not currently problematic. He stopped monitoring his blood glucose, citing difficulty with his routine, and reports an A1c of approximately 9% from the last measurement. He has been experiencing increased hunger, fatigue, and weight gain over the past few weeks.
+
+Review of Systems  
+Constitutional: Reports increased hunger, fatigue, and recent weight gain; no fever or chills reported.  
+Respiratory: Denies shortness of breath, cough, or wheezing.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Dermatologic: Rash on right leg described as red, swollen, painful, with white discharge.  
+Neurologic: No numbness or tingling reported, although he notes decreased sensation in his feet over time.  
+Musculoskeletal: Reports chronic back pain managed with over‑the‑counter analgesics.  
+
+Past Medical History  
+- Diabetes mellitus type II (poorly controlled, A1c ~9%)  
+- Hyperlipidemia (on rosuvastatin)  
+- Essential hypertension  
+- Chronic kidney disease stage 1 (historical)  
+- Chronic back pain  
+- Asthma (as a child)  
+- History of sinusitis requiring surgical intervention in adolescence  
+
+Surgical History  
+- Sinus surgery in teenage years for chronic sinusitis. No other surgeries reported.  
+
+Social History  
+- Lives in town; sees his children every two weeks.  
+- Unemployed; currently seeking work and running his own business.  
+- Smokes occasionally, approximately two packs per week, especially when stressed.  
+- Alcohol consumption: 2–4 drinks per weekend, with heavier intake on weekends.  
+- Poor adherence to diabetes self‑management, including glucose monitoring and medication adherence.  
+
+Family History  
+- Maternal side: multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+- Paternal side: generally healthy.  
+- Aunt with lung cancer (smoker).  
+
+Allergies  
+- Penicillin (history of facial swelling and difficulty breathing)  
+- Grass pollen (mild reaction)  
+- Lisinopril (mild reaction)  
+
+Current Medications  
+- Rosuvastatin (dose unspecified)  
+- Metformin (dose unspecified)  
+- One additional unspecified diabetes medication (patient could not recall the name)  
+- No insulin therapy currently.  
+
+Physical Examination  
+No information available.  
+
+Laboratory Results  
+- Sodium: 139.84 mmol/L  
+- Creatinine: 2.98 mg/dL  
+- Glucose: 94.04 mg/dL (fasting)  
+- Hemoglobin A1c (historical): ~9%  
+- Total cholesterol: 177 mg/dL (LDL 121 mg/dL, HDL 32 mg/dL)  
+- Triglycerides: 177 mg/dL  
+- Estimated GFR: 79 mL/min/1.73 m²  
+- Other routine labs within normal limits (AST 25 U/L, ALT 44 U/L, ALP 124 U/L, bilirubin 0.77 mg/dL).  
+
+Assessment  
+1. Cellulitis of the right lower leg (suspected).  
+2. Uncontrolled type II diabetes mellitus.  
+3. Chronic hyperlipidemia.  
+4. Chronic hypertension.  
+5. Chronic kidney disease stage 1 (historical).  
+
+Plan  
+Medications Prescribed  
+- Initiate oral cephalexin 500 mg twice daily for 10 days (or alternative antibiotic if penicillin allergy confirmed).  
+- Continue rosuvastatin and metformin; reinforce adherence.  
+- Prescribe topical mupirocin 2% ointment to be applied to the ulcer twice daily.  
+- Acetaminophen 325 mg every 4–6 hours as needed for pain (avoid NSAIDs due to renal function).  
+
+Discharge Instructions  
+- Keep the affected leg elevated and clean the ulcer with mild soap and water daily.  
+- Change dressings with sterile gauze and apply mupirocin.  
+- Monitor for increasing redness, warmth, swelling, or new pain; seek immediate care if symptoms worsen.  
+- Avoid scratching or picking at the ulcer.  
+- Continue regular blood glucose monitoring; target fasting glucose 80–130 mg/dL.  
+- Recheck A1c in 3 months.  
+- Encourage smoking cessation; refer to cessation resources.  
+- Limit alcohol to no more than one standard drink per day; discuss with primary care provider.  
+
+Follow‑up Instructions  
+- Return to the clinic in 3–5 days for wound reassessment and to review antibiotic response.  
+- Schedule appointment with primary care provider for comprehensive diabetes and hypertension management.  
+- Consider referral to wound care specialist if ulcer does not improve within 1 week.  
+
+This summary reflects the information obtained during the patient encounter and the most recent laboratory data. No additional imaging was performed during this visit.

@@ -1,0 +1,82 @@
+Model: qwen/qwen3-32b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:45:52
+Time: 4.43s
+Tokens: 9,561 in / 1,330 out
+============================================================
+
+Patient Information:  
+Agustin McGlynn, a 59-year-old male, presented to the Emergency Department with a chief complaint of severe upper right abdominal pain. The patient resides at 266 Heller Park Apt 46, Hingham, Massachusetts 02043. His height is 177.70 cm, and his BMI is 27.27. He is employed as a bank consultant and lives with his two children and partner. His past medical history includes cerebral palsy, spasticity, osteoporosis, intellectual disability, gastroesophageal reflux disease, essential hypertension, chronic kidney disease, and a history of kidney transplantation. His family history includes maternal gallstones and paternal stroke. He denies any allergies and reports occasional alcohol consumption (one to two glasses of wine per night) and no use of tobacco, recreational drugs, or cigarettes.
+
+Chief Complaint:  
+Severe upper right abdominal pain for the past few days, worsening over the last three to four hours.
+
+History of Present Illness:  
+The patient reports experiencing sharp, severe pain localized to the upper right quadrant of the abdomen, below the right costal margin, for the past three days. The pain began approximately one hour after a meal and has progressively worsened, reaching its peak intensity three to four hours prior to arrival. The pain is described as constant and non-radiating. He has attempted to manage the pain with over-the-counter medications such as Advil and Tylenol, but these have provided minimal relief. He has experienced nausea over the past few days but denies vomiting, emesis with blood, or any gastrointestinal bleeding. Appetite has been significantly reduced, particularly on the day of presentation. There are no associated symptoms such as fever, chills, changes in urinary habits, bowel patterns, or skin changes. The patient denies recent travel, weight loss, or recent infections.
+
+Review of Systems:  
+Constitutional: Fatigue and decreased energy noted on days of increased pain.  
+Respiratory: No dyspnea, cough, or chest pain reported.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: Nausea without vomiting or diarrhea. No changes in bowel habits or stool appearance.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Dermatologic: No rashes or skin changes reported.  
+Neurologic: No new-onset headaches, dizziness, or neurological deficits.  
+Musculoskeletal: No joint pain or swelling.  
+Hematologic: No bruising or bleeding episodes.  
+Endocrine: No polyuria, polydipsia, or weight changes.  
+Psychiatric: No new-onset anxiety or depressive symptoms.  
+Other: No recent trauma or injury.
+
+Allergies:  
+No known drug allergies.
+
+Past Medical History:  
+Cerebral palsy, spasticity, osteoporosis, intellectual disability, gastroesophageal reflux disease, essential hypertension, chronic kidney disease (stages 1-4), history of kidney transplantation, and a history of pneumonia. The patient is currently on tacrolimus, hydrochlorothiazide, amLODIPine, and acetaminophen for chronic management.
+
+Surgical History:  
+No prior surgeries reported.
+
+Social History:  
+The patient consumes one to two glasses of wine nightly but does not drink in the morning and does not feel the need to cut down. No tobacco or recreational drug use. Lives with partner and two children in a stable home environment.
+
+Family History:  
+Mother has gallstones; father had a stroke in his 60s.
+
+Current Medications:  
+Home medications include tacrolimus (24 HR 5 MG Extended Release Oral Capsule), hydrochlorothiazide, amLODIPine, and acetaminophen. The patient occasionally uses antacids for heartburn.
+
+Objective:  
+Vital Signs:  
+Heart rate: 94 bpm  
+Respiration rate: 13 breaths/min  
+Blood pressure, temperature, SpO2, and weight were not available at the time of documentation.  
+
+Physical Examination:  
+No physical examination findings were documented in the provided data.  
+
+Labs:  
+White blood cell count: 7.58 x 10^3/uL  
+Hemoglobin: 13.58 g/dL  
+Hematocrit: 40.10%  
+Mean corpuscular volume (MCV): 94.48 fL  
+Mean corpuscular hemoglobin (MCH): 28.35 pg  
+Mean corpuscular hemoglobin concentration (MCHC): 34.20 g/dL  
+Red cell distribution width (RDW): 39.89 fL  
+Platelet count: 351.65 x 10^3/uL  
+Platelet distribution width: 155.38 fL  
+Mean platelet volume: 10.43 fL  
+Cholesterol: 252.43 mg/dL  
+Low-density lipoprotein (LDL): 168.19 mg/dL  
+High-density lipoprotein (HDL): 58.23 mg/dL  
+Triglycerides: 130.05 mg/dL  
+
+Imaging:  
+No imaging studies were performed or documented in the provided data.
+
+Assessment:  
+The patient presents with acute upper right quadrant abdominal pain, which is severe and non-radiating, with a history of prior similar episodes. The pain is associated with nausea and reduced appetite, but no vomiting or gastrointestinal bleeding. Given the location and character of the pain, along with the absence of radiating symptoms, a differential diagnosis including cholecystitis, cholelithiasis, or biliary colic is considered. The patient’s history of gallstones in the family and his obesity (BMI 27.27) further support this possibility. No other significant findings on review of systems or laboratory data suggest alternative diagnoses such as pancreatitis or peptic ulcer disease at this time.
+
+Plan:  
+Further evaluation with abdominal ultrasound or CT scan is recommended to assess for gallbladder pathology. Additional laboratory tests, including liver function tests, lipase, and amylase, should be obtained to rule out other causes of upper abdominal pain. The patient should be monitored for signs of worsening pain, fever, or vomiting. Pain management with appropriate analgesia is to be considered. Follow-up with a gastroenterologist is recommended for further evaluation and management. The patient should be advised to avoid heavy meals and to continue monitoring for any new or worsening symptoms.

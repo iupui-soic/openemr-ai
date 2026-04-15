@@ -1,0 +1,94 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:46:54
+Time: 5.48s
+Tokens: 15,065 in / 1,484 out
+============================================================
+
+Patient Information  
+Name: Abel Wunsch (recorded name)  
+Date of Birth: June 7, 1932  
+Sex: Female (as reported by the patient)  
+
+Chief Complaint  
+The patient presents with a five‑day history of left‑sided chest pain accompanied by shortness of breath.
+
+History of Present Illness  
+Five days ago the patient began to notice a sharp, lingering pain localized to the left side of her chest. She describes the discomfort as “tiny” and constantly present, with mild improvement after taking acetaminophen or ibuprofen. The pain is exacerbated by deep inspiration and by walking short distances, such as retrieving the mail, at which point she also experiences difficulty catching her breath. She denies any radiation of the pain to other areas. There is no associated cough, fever, chills, nausea, vomiting, diaphoresis, palpitations, light‑headedness, or syncope. She reports that prior to the onset of these symptoms she was asymptomatic and physically active, routinely walking up to five kilometers per day. She attributes the recent dyspnea to the chest discomfort and notes a slight increase in fatigue due to reduced activity.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or weight change.  
+Respiratory: Positive for dyspnea on exertion and pleuritic chest pain; negative for cough, sputum production, wheezing, or hemoptysis.  
+Cardiovascular: No palpitations, chest pressure radiating to arm or jaw, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: No headaches or focal deficits.  
+Musculoskeletal: No joint or muscle pain aside from the chest discomfort.  
+Skin: No rashes or lesions.  
+
+Past Medical History  
+The patient reports no chronic medical conditions. She underwent a total hysterectomy approximately one month ago for symptomatic heavy menstrual bleeding. She denies a history of hypertension, diabetes, coronary artery disease, or other cardiac or pulmonary disorders.  
+
+Surgical History  
+- Total abdominal hysterectomy performed ~1 month ago.  
+- Extraction of wisdom teeth during adolescence.  
+
+Social History  
+The patient lives with her husband and two teenage children. She is employed as an accountant. Alcohol use is limited to approximately one glass of wine on weekends. She currently smokes about five cigarettes per day and is actively attempting to reduce or quit tobacco use. She denies any current recreational drug use and has not traveled recently.  
+
+Family History  
+Her mother suffered a myocardial infarction in her seventies. No known family history of cancer, bleeding disorders, or thrombotic conditions.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+The patient reports taking only over‑the‑counter acetaminophen and ibuprofen as needed for pain. No prescription or chronic medications are taken regularly.  
+
+Objective  
+
+Vital Signs  
+No current vital signs were recorded at this encounter. The most recent vitals on file (from a prior visit) show a heart rate of 79 beats/min and a respiratory rate of 15 breaths/min; blood pressure, temperature, and oxygen saturation were not documented.  
+
+Physical Examination  
+No physical exam findings were documented during this visit.  
+
+Laboratory Data  
+A comprehensive metabolic panel and complete blood count were obtained. Results are as follows:  
+- White blood cell count: 9.5 ×10³/µL (within normal limits)  
+- Red blood cell count: 3.8 ×10⁶/µL (within normal limits)  
+- Hemoglobin: 16.9 g/dL (normal)  
+- Hematocrit: 47.5 % (normal)  
+- Mean corpuscular volume: 80.6 fL (normocytic)  
+- Mean corpuscular hemoglobin: 27.1 pg (normal)  
+- Mean corpuscular hemoglobin concentration: 33.4 g/dL (normal)  
+- Platelet count: 296 ×10³/µL (normal)  
+- Serum glucose: 82.8 mg/dL (normal)  
+- Blood urea nitrogen: 10.5 mg/dL (normal)  
+- Creatinine: 0.88 mg/dL (normal)  
+- Electrolytes: Sodium 142.9 mmol/L, Potassium 3.73 mmol/L, Chloride 102.3 mmol/L, Bicarbonate 23.2 mmol/L (all within reference ranges)  
+- Calcium: 8.79 mg/dL (normal)  
+- Estimated GFR (MDRD): 158 mL/min/1.73 m² (high normal)  
+- Total protein: 6.86 g/dL (normal)  
+
+Imaging  
+No imaging studies have been performed at this time. The provider expressed concern for a possible pulmonary embolism and indicated that appropriate imaging will be ordered.  
+
+Assessment  
+1. Suspected acute pulmonary embolism – the patient’s recent major surgery (hysterectomy), active smoking, obesity, and acute pleuritic chest pain with exertional dyspnea raise the pre‑test probability.  
+2. Pleuritic chest wall pain – possibly musculoskeletal or postoperative in nature, but cannot be excluded without further work‑up.  
+3. Recent total hysterectomy – postoperative status may contribute to thrombogenic risk.  
+
+Plan  
+- Diagnostic work‑up: Obtain a D‑dimer assay and, if elevated or if clinical suspicion remains high, proceed with a CT pulmonary angiogram. Order a 12‑lead electrocardiogram and cardiac troponins to evaluate for concomitant cardiac ischemia.  
+- Continue symptomatic relief with acetaminophen or ibuprofen as needed, ensuring doses do not exceed recommended limits.  
+- Anticoagulation: Hold initiation of therapeutic anticoagulation until imaging confirms or excludes pulmonary embolism. If PE is confirmed, start low‑molecular‑weight heparin or a direct oral anticoagulant per standard protocols, taking into account recent surgery.  
+- Smoking cessation: Reinforce counseling and offer nicotine replacement therapy or referral to a cessation program.  
+- Activity: Advise the patient to limit strenuous activity and avoid prolonged ambulation until the diagnostic evaluation is completed.  
+- Follow‑up: Review imaging and laboratory results within 24 hours. The patient will be contacted promptly with results and further management instructions. If her symptoms worsen (e.g., increasing dyspnea, syncope, hemoptysis), she is instructed to seek emergency care immediately.  
+
+Disposition  
+The patient will remain under outpatient observation pending completion of the diagnostic work‑up. No discharge medications are added at this time beyond as‑needed analgesics.  
+
+No further information is available at this encounter.

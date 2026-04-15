@@ -27,8 +27,12 @@ RAG_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PACKETS_DIR = os.path.join(RAG_ROOT, "rating_packets")
 ANSWER_KEY = os.path.join(PACKETS_DIR, "ANSWER_KEY_DO_NOT_SHARE.csv")
 
-DIMENSIONS = ["accuracy", "completeness", "organization", "conciseness",
-              "clinical_utility", "overall_quality"]
+# Full set of clinician dimensions
+ALL_DIMENSIONS = ["accuracy", "completeness", "organization", "conciseness",
+                  "clinical_utility", "overall_quality"]
+
+# Active dimension set; can be reduced via --exclude-organization (critique 4)
+DIMENSIONS = list(ALL_DIMENSIONS)
 
 RATER_FILES = {
     "rater_1": os.path.join(PACKETS_DIR, "ratings_rater_1.csv"),
@@ -326,6 +330,7 @@ def save_results(merged, model_stats, ac2_results, icc_results, friedman_results
     os.makedirs(output_dir, exist_ok=True)
 
     # 1. IRR results
+    suffix = "_no_org" if "organization" not in DIMENSIONS else ""
     irr_rows = []
     for dim in DIMENSIONS:
         row = {"dimension": dim}
@@ -344,7 +349,7 @@ def save_results(merged, model_stats, ac2_results, icc_results, friedman_results
         irr_rows.append(row)
 
     irr_df = pd.DataFrame(irr_rows)
-    irr_path = os.path.join(output_dir, "fareez_irr_analysis.csv")
+    irr_path = os.path.join(output_dir, f"fareez_irr_analysis{suffix}.csv")
     irr_df.to_csv(irr_path, index=False)
     print(f"\n   Saved: {irr_path}")
 
@@ -358,20 +363,41 @@ def save_results(merged, model_stats, ac2_results, icc_results, friedman_results
         rows.append(row)
 
     comp_df = pd.DataFrame(rows)
-    comp_path = os.path.join(output_dir, "fareez_model_comparison.csv")
+    comp_path = os.path.join(output_dir, f"fareez_model_comparison{suffix}.csv")
     comp_df.to_csv(comp_path, index=False)
     print(f"   Saved: {comp_path}")
 
-    # 3. Full merged ratings
-    ratings_path = os.path.join(output_dir, "fareez_clinician_ratings.csv")
-    merged.to_csv(ratings_path, index=False)
-    print(f"   Saved: {ratings_path}")
+    # 3. Full merged ratings (only on baseline run, not the sensitivity)
+    if not suffix:
+        ratings_path = os.path.join(output_dir, "fareez_clinician_ratings.csv")
+        merged.to_csv(ratings_path, index=False)
+        print(f"   Saved: {ratings_path}")
 
 
 def main():
-    print("=" * 70)
-    print("CLINICIAN RATING ANALYSIS — Fareez RAG Summarization")
-    print("=" * 70)
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--exclude-organization",
+        action="store_true",
+        help=("Drop the 'organization' dimension before all analyses. Sensitivity "
+              "check for the ceiling effect (240/480 ratings at 5.00 from two models) "
+              "that inflates Kendall's W and Gwet AC2 on that dimension. Output CSVs "
+              "are suffixed with _no_org."),
+    )
+    args = ap.parse_args()
+
+    if args.exclude_organization:
+        global DIMENSIONS
+        DIMENSIONS = [d for d in DIMENSIONS if d != "organization"]
+        print("=" * 70)
+        print("CLINICIAN RATING ANALYSIS — sensitivity (organization EXCLUDED)")
+        print(f"Active dimensions: {DIMENSIONS}")
+        print("=" * 70)
+    else:
+        print("=" * 70)
+        print("CLINICIAN RATING ANALYSIS — Fareez RAG Summarization")
+        print("=" * 70)
 
     merged = load_data()
     print(f"\nLoaded {len(merged)} ratings from {merged['rater'].nunique()} raters")

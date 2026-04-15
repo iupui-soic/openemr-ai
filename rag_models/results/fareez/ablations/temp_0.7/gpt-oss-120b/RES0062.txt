@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:12:11
+Time: 5.86s
+Tokens: 14,970 in / 1,811 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 25 March 1917 (Age 109)  
+Sex: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+Primary Care Provider: Not specified  
+
+Chief Complaint  
+The patient presents with a three‑day history of a productive cough and a one‑day history of worsening shortness of breath that is now rated 7/10 in severity and is interrupting sleep.
+
+History of Present Illness  
+Three days ago the patient noted the onset of a cough that has been productive of yellow‑green sputum, approximately the size of a thumb tip per expectoration. There is no reported hemoptysis, foul odor, or frothy appearance to the sputum. The cough has been continuous throughout the day and night and has not been associated with a specific trigger. About one day ago the patient began to feel increasingly short of breath, describing it as a 7 on a 0‑10 scale. The dyspnea is associated with occasional wheezing when the shortness of breath is at its worst, but there is no chest pain, palpitations, or orthopnea. The patient also reports generalized fatigue, weakness, mild muscle aches, and a vague abdominal ache. He notes a recent loss of smell (anosmia) after exposure to a candle, but no sore throat, nasal congestion, or rhinorrhea. He feels “a little hot” but has not measured a temperature, and denies night sweats, chills, or recent weight loss. He has not experienced dizziness, syncope, confusion, or memory changes. The patient has not taken any antibiotics recently and has no known recent exposure to sulfa drugs.
+
+Review of Systems  
+
+- Constitutional: Fatigue, weakness; no fever documented, no night sweats, no weight loss.  
+- Respiratory: Productive cough with yellow‑green sputum, dyspnea (7/10), occasional wheeze; no chest pain, no hemoptysis.  
+- Cardiovascular: History of atrial fibrillation, currently asymptomatic; no palpitations, no chest pain, no peripheral edema.  
+- Gastrointestinal: Mild abdominal discomfort; normal bowel movements, no diarrhea, constipation, melena, or hematochezia.  
+- ENT/Head: New onset loss of smell; no sore throat, nasal congestion, rhinorrhea, vision or hearing changes, or eye/ear discharge.  
+- Neurologic: No dizziness, syncope, confusion, or focal deficits.  
+- Musculoskeletal: Mild muscle aches; no joint swelling or pain.  
+- Psychiatric/Other: No anxiety or depression reported.
+
+Allergies  
+Sulfa drugs – causes rash (patient reports childhood reaction). No other drug, food, or environmental allergies reported.
+
+Past Medical History  
+- Atrial fibrillation, diagnosed approximately four years ago; currently managed with metoprolol.  
+- Inguinal hernia repair performed approximately fifteen years ago.  
+No other chronic illnesses reported by the patient during this encounter.
+
+Surgical History  
+- Inguinal hernia repair (≈15 years ago).  
+
+Social History  
+The patient is a former cigarette smoker; previously smoked one pack per day and quit five years ago. He does not currently use tobacco, marijuana, or other recreational drugs. He consumes no alcohol; he stopped drinking several years ago. He lives in a house with his wife; the home has been renovated and he reports no known mold, carpet, or asbestos issues. He uses over‑the‑counter CBD edibles (low dose, approximately 2.5 mg) a few times per week to aid sleep. He visited his mother at a long‑term care facility about one week ago, where a COVID‑19 outbreak has been reported. He is up to date on immunizations, including pneumococcal and zoster vaccines.
+
+Family History  
+Aunt with a history of lung cancer (smoked throughout life). No other known cardiac, pulmonary, or cancer histories reported.
+
+Current Medications (home)  
+- Metoprolol (beta‑blocker) – dose not specified.  
+- Statin (type and dose not specified).  
+- Low‑dose baby aspirin (for atrial fibrillation).  
+- Occasional low‑dose CBD edibles for sleep (non‑prescription).  
+
+Objective  
+
+Vital Signs  
+No vital signs were documented during this encounter.
+
+Physical Examination  
+No physical examination findings were recorded.
+
+Laboratory Data (most recent available)  
+- Basophils: 3.05 % (absolute 0.25 ×10³/µL)  
+- Neutrophils: 13.66 %  
+- Monocytes: 9.46 % (absolute 0.54 ×10³/µL)  
+- Hematocrit: 43.34 %  
+- Erythrocytes: 4.24 ×10⁶/µL  
+- Ferritin: 1853 µg/L (elevated)  
+- Potassium: 4.04 mmol/L  
+- Calcium: 9.75 mg/dL  
+- Bicarbonate (serum): 24.89 mmol/L  
+- Bicarbonate (arterial): 24.31 mmol/L; pCO₂ 41.9 mm Hg  
+- Urea nitrogen: 17.9 mg/dL  
+- AST: 15 U/L  
+Other analytes not reported.
+
+Imaging  
+No imaging studies were performed or documented at this visit.
+
+Assessment  
+
+1. **Community‑acquired pneumonia, likely viral in etiology** – presentation with productive cough, dyspnea, low‑grade fever sensation, and recent exposure to a COVID‑19 outbreak.  
+2. **Suspected COVID‑19 infection** – pending PCR testing; clinical picture overlaps with SARS‑CoV‑2 infection.  
+3. **Atrial fibrillation, rate‑controlled** – stable on metoprolol, no recent symptoms.  
+4. **Loss of smell (anosmia)** – likely related to the acute viral process.  
+
+Plan  
+
+- **Diagnostic testing**: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. Consider a chest radiograph if symptoms worsen or fail to improve in 48‑72 hours.  
+- **Isolation**: Advise strict home isolation for a minimum of 14 days from symptom onset, including separation from household members as feasible. Encourage use of masks and hand hygiene.  
+- **Symptomatic treatment**:  
+  * Continue metoprolol, statin, and low‑dose aspirin as prescribed.  
+  * Use acetaminophen for fever or discomfort as needed (dose per label).  
+  * Albuterol inhaler (if previously prescribed) may be used for wheezing; ensure patient has an up‑to‑date rescue inhaler.  
+  * Encourage adequate oral hydration and rest.  
+- **Antibiotic stewardship**: No antibiotics are prescribed at this time; if bacterial superinfection is suspected (e.g., increasing sputum purulence, fever >38.5 °C, or clinical deterioration), consider empiric coverage with a macrolide or doxycycline, taking into account the sulfa allergy.  
+- **Sleep support**: Discuss alternatives to CBD edibles for insomnia, such as melatonin or low‑dose short‑acting sleep aids, pending patient preference.  
+- **Monitoring and red‑flag education**: Instruct the patient to seek urgent care if he experiences:  
+  * Worsening shortness of breath or new chest pain  
+  * High fever (>38.5 °C) or persistent fever beyond 3 days  
+  * Hemoptysis or increasing sputum volume/changed color to brown or blood‑stained  
+  * Confusion, dizziness, or syncope  
+- **Follow‑up**: Telephone or video follow‑up in 48 hours to review COVID‑19 test results and clinical status. If the test is positive, arrange notification of public health authorities for contact tracing. If symptoms do not improve within 5‑7 days, schedule an in‑person evaluation, including repeat vitals, pulse oximetry, and possible chest imaging.  
+
+The patient verbalized understanding of the plan and agreed to the proposed testing and isolation measures. No further questions were raised.

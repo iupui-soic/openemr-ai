@@ -1,0 +1,54 @@
+Model: google/medgemma-4b-it
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 05:33:44
+Time: 41.32s
+Tokens: 19,641 in / 515 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Name: Ali Hayes
+DOB: 1946-11-05
+Sex: Female
+Unit Number: 5194
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086
+
+Chief Complaint: Abdominal pain
+
+History of Present Illness:
+
+The patient presents with abdominal pain that started approximately 8 hours ago. The pain is described as an aching pain, primarily located on the right side. The patient reports that the pain initially came and went, but has now become constant. The pain is rated as an 8 out of 10, with a potential for 10. The patient denies any associated nausea or vomiting. She denies fever or chills. The pain is exacerbated by eating, but she denies anything that makes it better. She has tried Tylenol, but it did not alleviate the pain.
+
+Past Medical History:
+
+The patient has a history of cerebral palsy, spasticity, gastroesophageal reflux disease, prediabetes, chronic kidney disease stage 2, disorder of kidney due to diabetes mellitus, microalbuminuria due to type 2 diabetes mellitus, essential hypertension, loss of teeth, body mass index 30+ - obesity, metabolic syndrome X, history of tubal ligation, chronic intractable migraine without aura, chronic pain, dependent drug abuse, has a criminal record, chronic kidney disease stage 3, proteinuria due to type 2 diabetes mellitus, and full-time employment.
+
+Medications:
+
+The patient is taking metformin for diabetes.
+
+Social History:
+
+The patient is laid off due to COVID. She drinks alcohol occasionally, consuming one to two drinks per day. She does not smoke or use recreational drugs. She goes for a run when the weather is warmer.
+
+Family History:
+
+The patient's father had a heart attack in his 60s.
+
+Review of Systems:
+
+*   Constitutional: No information available.
+*   Respiratory: No information available.
+*   Cardiovascular: No information available.
+*   Gastrointestinal: The patient reports abdominal pain.
+*   Other: No information available.
+
+Assessment:
+
+The patient presents with abdominal pain, likely related to a possible gastrointestinal issue, possibly related to her history of diabetes and medication use. Further investigation is warranted to determine the underlying cause of the pain.
+
+Plan:
+
+Further investigation is needed to determine the cause of the abdominal pain. This may include further laboratory testing and/or imaging studies. The patient should follow up with her primary care physician for further evaluation and management.

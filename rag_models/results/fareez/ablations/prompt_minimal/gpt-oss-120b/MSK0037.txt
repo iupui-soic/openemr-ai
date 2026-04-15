@@ -1,0 +1,178 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 04:23:33
+Time: 7.88s
+Tokens: 33,622 in / 2,701 out
+============================================================
+
+**Patient Information**  
+- **Name:** Adan Wehner  
+- **DOB:** 07‑Feb‑1923 (Age ≈ 103 y)  
+- **Sex:** Male  
+- **MRN:** 887  
+- **Address:** 738 Lehner Avenue Apt 69, Groton, MA 01450  
+- **Occupation:** Construction worker (≈ 10 years)  
+- **Living Situation:** Lives with his wife in a small apartment  
+
+---
+
+### SUBJECTIVE  
+
+**Chief Complaint (CC):**  
+“Difficulty extending the fourth and fifth fingers of my right hand; I’ve noticed small bumps at the bases of those fingers for the last couple of months.”
+
+**History of Present Illness (HPI):**  
+- **Onset:** Approximately 2 months ago.  
+- **Location:** Right hand, ulnar‑side; palpable nodules at the volar bases of the 4th and 5th digits.  
+- **Duration/Progression:** Progressive worsening over the past several weeks; the patient now experiences a sensation of “catching” when trying to actively or passively extend the involved fingers.  
+- **Quality of Discomfort:** Described as a mild, aching discomfort that is aggravated by finger extension. Pressing the nodules produces only minimal discomfort; there is no sharp or burning pain.  
+- **Associated Symptoms:** No numbness, tingling, sensory changes, or weakness in the hand or forearm. No swelling, erythema, or warmth. No systemic symptoms (fever, chills, night sweats, weight loss, headache, visual/hearing changes, respiratory or cardiac complaints).  
+- **Functional Impact:** The patient reports difficulty performing his construction work, especially tasks requiring full finger extension (e.g., tool handling). He denies any recent hand trauma but notes chronic vibration and repetitive gripping from his job.  
+- **Prior Interventions:** No prior splinting, therapy, medications, or injections for this problem. He has not stopped exercising for fear of progression.  
+
+**Review of Systems (pertinent positives/negatives):**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| **Constitutional** | None | No fever, chills, night sweats, weight loss, fatigue |
+| **Musculoskeletal** | Right‑hand pain/aching, limited extension, palpable nodules, catching sensation | No weakness, no other joint pain, no swelling, no redness |
+| **Neurologic** | None | No numbness, tingling, paresthesias |
+| **Cardiovascular** | None | No chest pain, palpitations, dyspnea |
+| **Respiratory** | None | No cough, wheeze, dyspnea |
+| **Gastrointestinal** | None | No abdominal pain, nausea, vomiting, constipation/diarrhea |
+| **Skin** | Nodules noted | No rashes, nail changes |
+| **ENT** | None | No sore throat, congestion, visual/hearing changes |
+| **Psychiatric** | None | No confusion, memory loss |
+
+**Allergies:** No known drug allergies reported.  
+
+**Past Medical History (relevant):**  
+- Hypertension, type 2 diabetes mellitus, metabolic syndrome, hypertriglyceridemia  
+- Chronic kidney disease (Stage 4, eGFR ≈ 24 mL/min/1.73 m²)  
+- Ischemic heart disease, prior coronary imaging abnormalities  
+- Localized primary osteoarthritis of the hand  
+- Anemia, pre‑diabetes, obesity (BMI ≈ 27.6)  
+- History of ACL reconstruction (age ≈ 18)  
+- Alzheimer’s disease, chronic migraine, prostate carcinoma (in‑situ)  
+
+**Surgical History:** ACL repair (≈ age 18).  
+
+**Social History:**  
+- **Tobacco:** ~1 pack/day for ~10 years (current smoker)  
+- **Alcohol:** 1–3 drinks daily (≈ 2 drinks/day)  
+- **Marijuana:** Occasional (a few times per month)  
+- **Illicit drugs:** Denies use  
+- **Exercise:** None reported currently (limited by hand discomfort)  
+- **Immunizations:** Up‑to‑date  
+
+**Family History:** No known hereditary musculoskeletal or autoimmune diseases (including Dupuytren’s contracture).  
+
+---
+
+### OBJECTIVE  
+
+**Vital Signs (most recent documented on 25‑Apr‑2012; no current vitals captured during this visit):**  
+- HR 74 bpm, RR 14 /min, BP not recorded, Temp N/A, SpO₂ N/A, Weight N/A, Height 180 cm, BMI 27.6  
+
+**General:** Alert, cooperative, appears his stated age.  
+
+**Extremities – Right Hand:**  
+- Visible firm, sub‑cutaneous nodules at the palmar bases of the 4th and 5th digits.  
+- No erythema, warmth, or overt swelling.  
+- Passive extension of the involved fingers is limited by a “catching” sensation; modest discomfort noted, but no sharp pain.  
+- No crepitus or crackling on palpation.  
+- No motor weakness; sensation intact to light touch and pinprick.  
+- No deformity of the wrist or other fingers.  
+
+**Other Systems:** Unremarkable (no abnormalities noted on focused exam).  
+
+**Laboratory Data (most recent, 2022‑2022):**  
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| Glucose (serum) | 120 mg/dL | Mild hyperglycemia (consistent with diabetes) |
+| BUN | 8.2 mg/dL | Low‑normal |
+| Creatinine | 2.22 mg/dL | Elevated, consistent with CKD Stage 4 |
+| eGFR (MDRD) | 24 mL/min/1.73 m² | CKD Stage 4 |
+| Electrolytes (Na 137, K 4.4, Cl 104, CO₂ 21.9) | Within normal limits | — |
+| Calcium | 9.8 mg/dL | Normal |
+| Urine glucose | 1.6 mg/dL (trace) | Not clinically significant |
+| Urine ketones | 16 mg/dL (trace) | No ketoacidosis |
+| Urine bilirubin | 0.54 mg/dL (trace) | No hematuria or bilirubinuria concerns |
+
+**Medications (active):**  
+- Clopidogrel 75 mg PO daily  
+- Alteplase 100 mg IV (active but likely part of an acute protocol)  
+- Epoetin alfa (ongoing)  
+- Acetaminophen/Dextromethorphan/Doxylamine oral solution (as needed)  
+- Hydrochlorothiazide 25 mg PO daily  
+- Lisinopril 10 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Tacrine 10 mg PO daily (cognitive enhancer)  
+- Nitroglycerin spray PRN (angina)  
+
+*(Patient reports also taking a statin for hyperlipidemia, though not listed in the extracted medication list.)*  
+
+---
+
+### ASSESSMENT  
+
+1. **Dupuytren’s Contracture – Right hand, early stage**  
+   - Classic painless palmar nodules at the 4th/5th digit bases with limited extension and “catching.”  
+   - No overt contracture yet (extension still possible, though painful).  
+
+2. **Chronic Kidney Disease – Stage 4 (eGFR ≈ 24 mL/min/1.73 m²)**  
+   - Requires ongoing nephrology follow‑up and medication dose adjustments.  
+
+3. **Type 2 Diabetes Mellitus** – Controlled with current regimen (serum glucose 120 mg/dL).  
+
+4. **Hypertension** – On three antihypertensives (HCTZ, lisinopril, amlodipine); BP not recorded today, continue current regimen.  
+
+5. **Ischemic Heart Disease** – On antiplatelet (clopidogrel) and nitrates; stable.  
+
+6. **Other chronic issues** – Alzheimer’s disease, chronic migraine, prostate carcinoma (in‑situ), obesity, anemia, metabolic syndrome.  
+
+**Differential considerations** (brief):  
+- Flexor tenosynovitis (less likely: no pain along tendon sheath, no swelling, no systemic signs).  
+- Trigger finger (A1 pulley stenosis) – usually involves painful locking; not consistent with nodules in the palm.  
+- Early localized hand osteoarthritis – present but does not explain the palpable palmar cords.  
+
+Overall, the clinical picture most strongly supports early Dupuytren’s contracture.
+
+---
+
+### PLAN  
+
+**1. Hand‑Specific Management**  
+- **Referral:** Schedule outpatient hand surgery consultation within 2 weeks for evaluation of progression and discussion of definitive therapy (e.g., collagenase clostridium histolyticum injection, percutaneous needle fasciotomy, or limited fasciectomy).  
+- **Physical Therapy:** Initiate hand‑stretching and splinting program focused on gentle passive extension of the 4th/5th digits, 3 times/week, to maintain range of motion and delay contracture progression.  
+- **Activity Modification:** Advise the patient to limit prolonged gripping/vibration exposure when possible; use padded gloves during construction work.  
+
+**2. Medical Optimization**  
+- **CKD:** Continue current nephrology follow‑up; ensure medication dosing (especially ACE‑I/ARBs and diuretics) remains appropriate for eGFR < 30.  
+- **Diabetes:** Reinforce dietary counseling; consider A1c check at next primary‑care visit.  
+- **Hypertension:** Obtain blood pressure measurement at the visit; if > 140/90 mmHg, consider titrating lisinopril or adding a low‑dose beta‑blocker (with caution given CKD).  
+- **Statin Therapy:** Confirm statin (e.g., atorvastatin) is active and adjust dose if needed for CKD.  
+
+**3. Lifestyle Counseling**  
+- **Smoking Cessation:** Offer nicotine‑replacement therapy and referral to tobacco‑cessation program; discuss increased risk of vascular disease and possible impact on hand healing.  
+- **Alcohol Use:** Counsel on limiting intake to ≤ 1 standard drink per day to reduce cardiovascular and renal stress.  
+- **Exercise:** Encourage low‑impact hand‑friendly exercises (e.g., grip‑strengthening with therapy putty) as tolerated.  
+
+**4. Follow‑Up & Monitoring**  
+- **Hand Surgery Clinic:** Appointment within 2 weeks; bring recent hand photos if possible.  
+- **Primary Care:** Return in 4 weeks for blood pressure check, medication reconciliation, and review of hand‑therapy progress.  
+- **Nephrology:** Continue quarterly labs (creatinine, eGFR, electrolytes) and adjust medications as needed.  
+- **Laboratory:** Order HbA1c, lipid panel, and repeat basic metabolic panel in 6 weeks to monitor CKD progression and diabetes control.  
+
+**5. Patient Education**  
+- Explain the natural history of Dupuytren’s contracture, emphasizing that early intervention can preserve finger extension and function.  
+- Discuss signs of progression (increasing contracture, pain, functional loss) that should prompt earlier re‑evaluation.  
+
+**6. Documentation & Safety**  
+- Document current medication list, allergies, and all counseling points in the chart.  
+- Ensure that any future procedures (e.g., collagenase injection) take into account anticoagulation status (clopidogrel).  
+
+**Signature:**  
+Dr. [Name], MD – Hand/Upper‑Extremity Medicine – Date 2024‑04‑14 (entered into EMR).

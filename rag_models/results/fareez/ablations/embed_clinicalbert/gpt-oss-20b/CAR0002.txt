@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:55:45
+Time: 2.80s
+Tokens: 8,908 in / 1,389 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Date of encounter: [Date of visit]  
+
+Chief Complaint  
+The patient presented to the clinic with a complaint of sudden onset chest pain located over the left side of the chest.
+
+History of Present Illness  
+The patient reports that the chest pain began approximately thirty minutes ago while shoveling the driveway. He describes the pain as dull with a feeling of pressure, rating it 7 out of 10 in severity. The pain has persisted and worsened since onset. The patient notes that the pain is localized to the left chest and does not radiate to other areas. Movement, particularly walking or turning, aggravates the pain, and lying down seems to make it slightly worse. No relieving factors have been identified. The patient has been experiencing mild shortness of breath and a sensation of being slightly hot since yesterday. He also reports palpitations that are typical during physical activity, but they appear more pronounced today. He denies cough, wheezing, chest trauma (aside from a rugby tackle yesterday that was not associated with chest discomfort), nausea, vomiting, chest swelling, leg swelling, dizziness, or fainting. He has a measured temperature of 38°C.  
+
+Past Medical History  
+The patient has a long-standing history of hypertension, hyperlipidemia, ischemic heart disease, chronic kidney disease (stage 3), metabolic syndrome, obesity, sleep apnea, prediabetes, and anemia. He has a history of chronic kidney disease stages 1–3 and has undergone medication review for renal transplantation. No prior surgeries or hospitalizations are reported.  
+
+Medications (current as reported by the patient)  
+- Lisinopril (dosage unspecified)  
+- Rosuvastatin (dosage unspecified)  
+- Multivitamin  
+
+The patient also reports ongoing use of tobacco (0.5 to 1 pack per day for 20 years) and intermittent recreational drug use, specifically crystal methamphetamine (last use six days ago, a few times per month for seven years). He does not drink alcohol.  
+
+Allergies  
+No known drug allergies.  
+
+Family History  
+No family history of heart attack, cancer, or other significant hereditary disease reported.  
+
+Social History  
+The patient lives with his parents in a house. He is employed as a city bus driver. He reports regular exercise, typically running once a week. His diet is described as fairly balanced, though he admits to eating out frequently. He smokes daily and has a history of crystal meth use. He denies alcohol use.  
+
+Review of Systems  
+Constitutional: Fever 38°C, mild shortness of breath, no chills or night sweats.  
+Cardiovascular: Chest pain as described; palpitations.  
+Respiratory: Mild shortness of breath, no cough, sputum, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel changes.  
+Musculoskeletal: Chest pain localized to left side; aggravated by movement.  
+Neurologic: No dizziness or syncope.  
+Integumentary: No rashes or skin changes.  
+Extremities: No swelling or edema.  
+
+Vital Signs (from encounter)  
+Temperature: 38°C  
+Other vital signs were not recorded during this visit.  
+
+Physical Examination  
+No physical examination findings were documented in the encounter notes.  
+
+Laboratory Results  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.5 mg/dL  
+- Total cholesterol: 185.3 mg/dL  
+- Low density lipoprotein cholesterol: 140.6 mg/dL  
+- Alanine aminotransferase: 21.8 U/L  
+- Potassium: 5.03 mmol/L  
+- Sodium: 141.6 mmol/L  
+- Chloride: 101.2 mmol/L  
+- Carbon dioxide: 20.7 mmol/L (initial value)  
+- Urea nitrogen: 19.2 mg/dL  
+- Other laboratory values include PHQ‑2 score of 2 and AUDIT‑C score of 1.  
+
+Assessment  
+1. Acute chest pain of unclear etiology, likely ischemic given the patient’s significant cardiovascular risk profile (history of ischemic heart disease, hypertension, hyperlipidemia, diabetes, obesity).  
+2. Differential diagnoses include acute coronary syndrome (unstable angina or myocardial infarction), musculoskeletal strain from shoveling, pulmonary embolism, or pleuritic process.  
+
+Plan  
+1. Immediate cardiac workup:  
+   - Obtain an electrocardiogram (ECG) as soon as possible.  
+   - Order cardiac biomarkers (troponin I/T) serially.  
+   - Perform a chest radiograph to rule out other thoracic pathology.  
+2. Initiate symptomatic therapy:  
+   - Nitroglycerin 0.4 mg sublingually as needed for chest discomfort.  
+   - Acetaminophen for pain control, avoiding codeine due to potential respiratory depression.  
+3. Monitor vital signs, especially heart rate and blood pressure, at frequent intervals.  
+4. Consider urgent cardiology consultation for further evaluation and possible admission.  
+5. Continue current antihypertensive (lisinopril) and lipid-lowering therapy (rosuvastatin).  
+6. Address lifestyle modifications: reinforce smoking cessation counseling, reduce alcohol (none currently), and discuss substance use treatment for methamphetamine.  
+7. Patient education: explain the seriousness of chest pain, signs of worsening condition (increased pain, pressure, diaphoresis, syncope), and instructions to seek emergency care immediately if symptoms exacerbate.  
+8. Follow‑up: schedule a cardiology appointment within 48 hours and arrange a primary care review within one week to reassess cardiovascular risk factors, medication adherence, and lifestyle changes.  
+
+Discharge Instructions  
+- Avoid strenuous physical activity until further evaluation.  
+- Continue current medications as prescribed.  
+- Monitor for any new or worsening symptoms and seek urgent care if chest pain worsens, becomes crushing, or is accompanied by shortness of breath, diaphoresis, or dizziness.  
+- Call the clinic or emergency services if you experience any of the above.  
+- Schedule follow‑up appointments as outlined.  
+
+This summary is prepared based on the patient's presentation, medical history, laboratory findings, and current medication list. The patient’s ongoing cardiac risk profile necessitates prompt evaluation and potential admission for definitive diagnosis and management.

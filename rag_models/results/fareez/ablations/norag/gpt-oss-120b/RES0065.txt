@@ -1,0 +1,78 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:13:54
+Time: 4.47s
+Tokens: 9,946 in / 1,319 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Sore throat for three days with associated fever and fatigue.  
+
+History of Present Illness  
+Abbey Arie Schroeder presents with a three‑day history of a sore throat that has remained constant and is progressively worsening. She reports dysphagia, particularly with solid foods, and occasional pain with very cold liquids. One day ago she began to feel feverish, describing sensations of heat and chills, though she has not taken a measured temperature. She notes generalized fatigue and has observed several palpable “lumps” in the neck, consistent with cervical lymphadenopathy. She denies cough, rhinorrhea, headache, nausea, vomiting, night sweats, chest pain, palpitations, rash, or recent travel. She has not been in contact with anyone she knows who is ill. Over‑the‑counter lozenges provide only temporary relief. She has no prior episodes of similar throat pain.  
+
+Past Medical History  
+- Crohn’s disease, diagnosed in 2022, currently treated with sulfasalazine (patient reports this medication).  
+- Prediabetes, anemia, essential hypertension, metabolic syndrome, ischemic heart disease, and chronic kidney disease (historical stages 1‑4 progressing to end‑stage renal disease with a prior renal transplant – documented in the electronic record).  
+- No history of recent upper respiratory infection.  
+
+Medications (as documented in the electronic record and confirmed by patient)  
+- Sulfasalazine (for Crohn’s disease) – dose not specified.  
+- Tacrolimus 1 mg extended‑release (24 hr) – active.  
+- Hydrochlorothiazide 25 mg PO daily.  
+- Lisinopril 10 mg PO daily.  
+- Amlodipine 2.5 mg PO daily.  
+- Simvastatin 20 mg PO daily.  
+- Metoprolol succinate 100 mg extended‑release PO daily.  
+- Nitroglycerin 0.4 mg mucosal spray PRN.  
+- Additional chronic medications listed in the record (e.g., insulin, epoetin alfa) are continued per prior orders.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Social History  
+The patient resides in an apartment with her parents and younger brother. She does not smoke, does not use recreational drugs, and consumes alcohol only rarely (previously tried once or twice and discontinued because it worsens her Crohn’s disease). She engages in swimming for exercise. No occupational exposure or recent travel reported.  
+
+Family History  
+Positive for inflammatory bowel disease (both Crohn’s disease and ulcerative colitis) in family members. Additional family history includes asthma and eczema. No documented family history of cardiovascular disease, diabetes, or malignancy.  
+
+Review of Systems  
+- Constitutional: Positive for feverish sensation, chills, fatigue; negative for weight loss, night sweats.  
+- ENT: Positive for sore throat, dysphagia, cervical lymphadenopathy; negative for cough, nasal congestion, ear pain.  
+- Respiratory: No cough, dyspnea, or wheezing.  
+- Cardiovascular: No chest pain or palpitations.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+- Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+- Dermatologic: No rash or skin changes.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Psychiatric: No reported anxiety or depression.  
+
+Objective  
+Vital signs at this encounter were not recorded in the chart. Physical examination findings are not documented; therefore, “No information available.” Recent laboratory values (electrolytes, renal function, complete blood count) are within normal limits for this patient’s baseline, and a PHQ‑2 score of 2 and DAST‑10 score of 2 were noted, indicating low-level depressive symptoms and low risk for substance use, respectively.  
+
+Assessment  
+1. Acute pharyngitis – likely viral in etiology given the absence of purulent exudate, cough, or sinus symptoms.  
+2. Fever of unknown origin, short duration, likely infectious.  
+3. Cervical lymphadenopathy consistent with viral upper respiratory infection or infectious mononucleosis.  
+4. Chronic Crohn’s disease, well‑controlled on sulfasalazine.  
+5. Multiple chronic comorbidities (hypertension, metabolic syndrome, chronic kidney disease, post‑renal transplant) requiring ongoing immunosuppression.  
+
+Given the patient’s immunosuppressed state, COVID‑19 infection must be excluded, and infectious mononucleosis (EBV) is a reasonable differential.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR; advise patient to self‑isolate pending results.  
+- Order EBV serology (VCA IgM, VCA IgG, EBNA) to evaluate for acute mononucleosis.  
+- Provide symptomatic therapy: continue lozenges, consider acetaminophen 650 mg PO q6h PRN for fever or throat pain, ensure adequate hydration and soft diet.  
+- Counsel on signs of bacterial superinfection (e.g., new onset of purulent sputum, high‑grade fever > 101 °F, worsening throat pain) and advise to return promptly if these develop.  
+- Review current immunosuppressive regimen with transplant team to ensure no dose adjustments are needed during acute infection.  
+- Follow‑up: Telephone or telehealth visit in 48‑72 hours to review COVID test result and EBV serology; earlier in‑person evaluation if symptoms worsen.  
+- Reinforce routine preventive measures: hand hygiene, mask use, avoidance of close contact with ill individuals.  
+
+The patient verbalized understanding of the plan, agreed to self‑isolation, and has no further questions at this time.

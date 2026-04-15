@@ -1,0 +1,94 @@
+Model: openai/gpt-oss-120b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:13:59
+Time: 4.40s
+Tokens: 11,440 in / 1,559 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti  
+Date of Birth: 08/03/1981 (Age 44)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+Primary Care Provider: Not specified  
+
+Chief Complaint  
+“Runny nose, nasal congestion, facial pressure and pain for the past 5‑7 days; loss of smell.”
+
+History of Present Illness  
+Aaron Bartoletti is a 44‑year‑old man who presents with an acute upper respiratory illness that began approximately eight days ago with a brief episode of clear rhinorrhea that resolved, followed by a recurrence of symptoms five days ago. Over the past five days he has experienced persistent clear to white nasal discharge, marked nasal congestion, and post‑nasal drip especially noticeable on waking. He reports unilateral nasal obstruction that alternates between nostrils, causing nocturnal mouth‑breathing and difficulty sleeping. In the last three days he has noted progressive loss of olfaction while taste remains intact. He denies cough, sore throat, wheezing, shortness of breath, chest pain, or gastrointestinal symptoms. He describes facial pressure and pain localized to the maxillary regions, cheeks, and the area just inferior to the nose extending to the anterior teeth. The pain is not associated with dental pathology, grinding, or temporomandibular joint dysfunction. He reports brief episodes of chills but no measured fever. He has experienced mild ocular redness and itching, without discharge. He denies any recent sick contacts, travel, or exposure to known allergens. He recalls a similar self‑limited episode of sinus symptoms approximately two years ago that resolved without medical intervention. He is concerned whether he requires medication or testing.
+
+Review of Systems  
+- Constitutional: No documented fever, weight loss, or fatigue; brief chills reported.  
+- ENT: Clear/white nasal discharge, congestion, post‑nasal drip, alternating unilateral obstruction, loss of smell; no sore throat, cough, or wheeze.  
+- Ocular: Mild redness and itching; no discharge.  
+- Respiratory: No dyspnea, chest pain, or wheezing.  
+- Cardiovascular: No chest pain, palpitations.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+- Genitourinary: No dysuria or urinary changes.  
+- Musculoskeletal: No myalgias, arthralgias, or weakness.  
+- Neurologic: No headache, dizziness, or light‑headedness.  
+- Dermatologic: No rash.  
+- Psychiatric: No depression or anxiety noted during this visit.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 2003)  
+- Dyslipidemia, currently on a statin medication  
+- Chronic kidney disease (historical stages 1‑4, now status post renal transplant; transplant ongoing)  
+- History of viral sinusitis (multiple prior episodes)  
+- Chronic migraine without aura  
+- Prior episodes of gingivitis and dental infections (historical)  
+- No known history of asthma or chronic obstructive pulmonary disease  
+
+Past Surgical History  
+- No surgeries reported in the current encounter.  
+
+Medications  
+- Statin medication for dyslipidemia (specific agent not specified)  
+- Multivitamin (over‑the‑counter)  
+- No current antibiotics, antihistamines, or nasal steroids reported.  
+
+Allergies  
+- No known drug or environmental allergies reported.  
+
+Family History  
+- No known family history of lung, heart disease, or cancer.  
+
+Social History  
+- Lives alone in an apartment near London, MA.  
+- Employment: Grocery store associate (full‑time).  
+- Tobacco: Quit smoking a few years ago; no current use.  
+- Alcohol: Consumes red wine occasionally, a few times per week.  
+- Illicit drugs: Occasionally smokes a cannabis joint once or twice per month.  
+- No recent travel outside the city or province.  
+- No known sick contacts at work or home.  
+
+Physical Exam / Objective Findings  
+- Vital signs: Temperature not measured at this visit; Heart rate 85 beats/min; Respiratory rate 14 breaths/min; BMI 28.83 kg/m²; Blood pressure not documented; SpO₂ not documented.  
+- General: Alert, NAD, in no acute distress.  
+- HEENT: Nasal mucosa edematous with clear/white discharge; bilateral nasal obstruction noted, alternating side dominance. No purulent drainage observed. Olfactory testing not performed; patient reports subjective loss of smell. Ocular exam: mild conjunctival redness and mild itching, no discharge. No oropharyngeal erythema, no tonsillar exudate. No dental tenderness.  
+- Lungs: Clear to auscultation bilaterally, no wheezes or crackles.  
+- Cardiovascular: Regular rate and rhythm, no murmurs.  
+- Abdomen: Soft, non‑tender, no masses.  
+- Extremities: No edema.  
+- Neurologic: Grossly intact.  
+
+Assessment  
+1. Acute rhinosinusitis, likely viral in origin but with features raising concern for possible bacterial superinfection (persistent facial pain/pressure, worsening congestion, loss of smell, and a “biphasic” course).  
+2. Hypertension, controlled on current regimen (details not provided).  
+3. Dyslipidemia, on statin therapy.  
+4. History of renal transplant with chronic kidney disease – renal function not assessed during this visit.  
+
+Plan  
+- Obtain a measured oral temperature at home; advise the patient to report if fever ≥38 °C (100.4 °F) develops.  
+- Recommend a 7‑day trial of symptomatic therapy: saline nasal irrigation twice daily, intranasal corticosteroid spray (e.g., fluticasone 50 µg spray, 2 sprays per nostril daily) if not contraindicated, and oral decongestant (pseudoephedrine 60 mg every 6 hours as needed, provided no hypertension contraindication).  
+- If fever develops, symptoms worsen after 48‑72 hours of supportive care, or facial pain intensifies, consider a course of antibiotics targeting typical sinus pathogens (e.g., amoxicillin‑clavulanate 875 mg/125 mg twice daily for 5‑7 days).  
+- Encourage adequate hydration, rest, and use of analgesics such as acetaminophen or ibuprofen for facial pain as needed.  
+- Educate on signs of complications (high fever, severe headache, periorbital swelling, visual changes) and advise prompt return if these occur.  
+- Follow‑up: Telephone check‑in in 48 hours to assess symptom progression; in‑person visit if fever or worsening pain develops.  
+- Continue current antihypertensive and lipid‑lowering therapy; schedule routine labs to monitor renal function and lipid panel as per standard post‑transplant care.  
+- No changes to current medication list at this time.  
+
+Disposition  
+Patient was counseled on the expected course of acute sinusitis, instructed on home care measures, and advised to monitor for fever or worsening symptoms. No immediate prescription was given pending further assessment of fever and symptom progression.

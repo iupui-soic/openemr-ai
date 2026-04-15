@@ -1,0 +1,53 @@
+Model: google/medgemma-4b-it
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 06:28:26
+Time: 37.79s
+Tokens: 13,632 in / 626 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Feeney
+DOB: 1915-12-05
+Unit Number: 48
+Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081
+
+Chief Complaint: Cough
+
+History of Present Illness:
+
+The patient presents today with a cough that has been ongoing for approximately five days. He reports feeling hot and fatigued. He has no prior history of similar symptoms. The cough started five days ago and has been progressively worsening, disrupting his sleep. He denies chest pain, and the pain he experiences is primarily in his throat with coughing. He denies any associated symptoms such as shortness of breath or wheezing. He denies any change in his sense of smell or taste. He denies nausea or vomiting. He reports a temperature of 100.4 degrees Fahrenheit, prompting him to seek medical attention. He denies any recent weight loss. He denies chills or night sweats. He denies any recent travel. He works at a grocery store and has been in contact with customers, but he believes the store is frequently cleaned. He lives with his wife and two children, who are in high school and doing coursework online. His wife is also at home.
+
+Past Medical History:
+
+The patient has a history of hypertension, type 2 diabetes, anemia, hyperlipidemia, essential hypertension, metabolic syndrome X, neoplasm of prostate, carcinoma in situ of prostate, ischemic heart disease, abnormal findings diagnostic imaging heart+coronary circulat, history of coronary artery bypass grafting, localized, primary osteoarthritis of the hand, disorder of kidney due to diabetes mellitus, microalbuminuria due to type 2 diabetes mellitus, proteinuria due to type 2 diabetes mellitus, history of renal transplant, atrial fibrillation, chronic kidney disease stage 1, chronic kidney disease stage 2, osteoporosis, has a criminal record, chronic kidney disease stage 3. He takes Ramipril, Metformin, vitamin D, and warfarin. He had a gallbladder removal approximately 10 years ago. He has a family history of asthma in his brother and his mother.
+
+Social History:
+
+The patient drinks alcohol 3-4 beers on the weekend. He does not smoke or use recreational drugs.
+
+Family History:
+
+The patient's mother and brother have a history of asthma.
+
+Medications:
+
+The patient is currently taking Ramipril, Metformin, vitamin D, warfarin, and Acetaminophen 325 MG Oral Tablet.
+
+Allergies:
+
+The patient denies any allergies to medications.
+
+Physical Exam:
+
+Vitals: Temperature 100.4 degrees Fahrenheit.
+
+Assessment:
+
+The patient presents with a cough of five days duration, accompanied by fever and fatigue. The differential diagnosis includes an infectious process, such as a viral infection.
+
+Plan:
+
+The patient is instructed to self-isolate for 14 days with his family. A swab will be obtained for testing. The results will be used to determine if the patient has COVID-19.

@@ -1,0 +1,86 @@
+Model: openai/gpt-oss-120b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 04:05:11
+Time: 4.50s
+Tokens: 11,776 in / 1,370 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti  
+Date of Birth: August 3, 1981 (Age 44)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+
+Chief Complaint  
+The patient presents with symptoms consistent with an acute sinus infection that has persisted for several weeks despite conservative measures.
+
+History of Present Illness  
+Aaron reports a history of recurrent sinus infections over the past several years. Over the last few weeks he has experienced increasing nasal congestion, thick greenish nasal discharge, facial pressure localized to the frontal region, and a sinus‑type headache that is most prominent across the forehead and occasionally radiates. He notes post‑nasal drip that causes a stinging sensation in his throat, although he denies a classic sore throat. He measured his temperature last night at approximately 99.7 °F, which he considers mildly febrile. He has not had a cough, shortness of breath, wheezing, chest pain, dizziness, or syncope. He denies loss of taste or smell, although he reports that his sense of smell is temporarily diminished while his nasal passages are congested. He has not experienced weight loss, chills, or gastrointestinal symptoms. He has previously managed sinus symptoms with saline nasal rinses and short courses of nasal decongestants, and he used a nasal steroid spray in the past with good effect; however, he stopped the steroid spray several weeks ago because his symptoms recurred. He has taken occasional ibuprofen for knee discomfort and uses a small amount of cannabis oil roughly once per month for recreational purposes and occasional knee pain relief. He reports that his symptoms have not improved with the current home measures and therefore sought medical evaluation.
+
+Review of Systems  
+Constitutional: Mildly elevated temperature (99.7 °F); no chills, night sweats, or weight loss.  
+HEENT: Nasal congestion, thick green nasal discharge, frontal facial pressure/pain, sinus headache, post‑nasal drip with throat sting; no cough, no wheeze, no sore throat typical of pharyngitis, no loss of smell or taste (temporarily reduced due to congestion).  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: Normal bowel movements, no abdominal pain, nausea, or vomiting.  
+Genitourinary: No dysuria or urinary changes.  
+Neurologic: No dizziness or fainting.  
+Musculoskeletal: Occasional knee pain, managed with ibuprofen; history of ACL repair surgery.  
+Skin: No rashes.  
+Psychiatric: No reported anxiety or depression.  
+Social History: The patient does not smoke. He consumes five to six beers on weekends. He uses cannabis oil approximately once per month. He lives in a newer home with his wife, teenage son, and a three‑year‑old Labradoodle; no known mold, asbestos, or smoke exposure. He works from home and has had no recent travel or known sick contacts.  
+
+Allergies  
+Reported mild allergy to cats. No drug allergies documented.
+
+Past Medical History  
+- Recurrent sinus infections (viral and bacterial)  
+- Prior ACL repair surgery (date not specified)  
+- History of an emergency department visit for a severe sinus infection (no admission)  
+
+The extensive problem list in the electronic record includes chronic kidney disease, hypertension, and a renal transplant; however, the patient did not mention these conditions during the interview and they are not relevant to the current acute presentation. No other chronic illnesses were reported by the patient.
+
+Surgical History  
+- Anterior cruciate ligament (ACL) repair (date not provided)  
+
+Social History (expanded)  
+- Tobacco: None  
+- Alcohol: 5–6 beers on weekends  
+- Recreational drugs: Occasional cannabis oil capsule (≈ once/month)  
+- Occupation: Works from home; no recent travel  
+- Household: Lives with wife, teenage son, and a dog; no cats  
+
+Family History  
+The patient is unaware of any family history of lung, heart, or other significant medical conditions.
+
+Current Medications  
+- Saline nasal rinse (as needed)  
+- Occasional ibuprofen (Advil) for knee pain  
+- No regular prescription medications reported at this visit  
+
+Objective  
+Vital Signs: No current vital sign measurements documented.  
+Physical Examination: No physical exam findings documented in the encounter note.  
+
+Assessment  
+1. Acute bacterial rhinosinusitis – presentation of >7 days of purulent nasal discharge, facial pain/pressure, and low‑grade fever, not responding to saline irrigation alone.  
+2. Rule out COVID‑19 infection – testing ordered per clinic protocol.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR; results to be communicated within 24–48 hours.  
+- Prescribe amoxicillin‑clavulanate 875 mg/125 mg orally twice daily for 7 days (or amoxicillin 500 mg three times daily if clavulanate is unavailable).  
+- Initiate an intranasal corticosteroid spray (e.g., fluticasone propionate 2 sprays per nostril daily) for 7–10 days to reduce mucosal inflammation.  
+- Continue saline nasal irrigation twice daily.  
+- Use a topical nasal decongestant (oxymetazoline) for no more than three consecutive days if needed for breakthrough congestion.  
+- Advise the patient to avoid alcohol excess while on antibiotics and to monitor for any allergic reaction or worsening symptoms.  
+- Recommend over‑the‑counter analgesics (acetaminophen or ibuprofen) for headache and facial pain as needed, respecting his occasional knee use of ibuprofen.  
+- Educate on signs that warrant urgent care: high fever (>101 °F), worsening facial swelling, vision changes, severe headache, or development of purulent drainage from the ear.  
+- Follow‑up appointment scheduled in one week to reassess symptom resolution and review COVID‑19 test result. If symptoms persist or worsen after the antibiotic course, consider imaging (CT sinuses) or referral to otolaryngology.  
+
+Disposition  
+The patient was counseled, prescriptions were transmitted electronically, and a COVID‑19 test was ordered. No immediate emergency intervention was required.  
+
+Signature  
+[Physician’s Name], MD  
+Date: 2024‑04‑14

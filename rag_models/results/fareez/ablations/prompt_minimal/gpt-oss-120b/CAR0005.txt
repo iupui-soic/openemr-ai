@@ -1,0 +1,125 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:24:35
+Time: 4.78s
+Tokens: 7,137 in / 1,755 out
+============================================================
+
+**Patient Information**  
+- **Name:** Amee Reva Goyette  
+- **DOB:** 1916‑07‑09 (age ≈ 109 y) – note that the conversational data suggest a much younger adult; the date of birth appears to be a placeholder in the legacy EMR.  
+- **Sex:** Female  
+- **MRN:** 7671  
+- **Contact:** 668 Quigley Mill Apt 10, Beverly, MA 01915  
+
+---
+
+## Subjective  
+
+### Chief Complaint  
+- “Chest pain” – intermittent, sharp discomfort on the left side of the chest for the past **2 weeks**.
+
+### History of Present Illness (HPI)  
+- **Onset & Duration:** First noted ~2 weeks ago; each episode lasts **20–30 minutes** and resolves spontaneously.  
+- **Frequency:** 2–3 episodes total during this period; no increase in frequency.  
+- **Location:** Localized to the **left** side of the chest; does not radiate.  
+- **Quality:** Described as **sharp** rather than dull/achy.  
+- **Timing/Pattern:** Episodes are **intermittent** (comes and goes). No clear precipitating activity, but the patient reports they most often occur while **at work or driving**.  
+- **Severity:** Rates pain as **4/10** on a numeric scale.  
+- **Associated Symptoms:** Denies nausea, vomiting, dyspnea, diaphoresis, syncope, fever, or recent illness. No palpitations reported.  
+- **Alleviating/Aggravating Factors:** Tried **Advil (ibuprofen), Tylenol (acetaminophen), and Tums** – none provided relief. No clear relationship to exertion or position.  
+- **Modifiers:** Reports **increased psychosocial stress** over the past two years after separation from husband. No recent changes in diet, sleep, or other health behaviors.  
+
+### Review of Systems (pertinent negatives)  
+- **Constitutional:** No fever, chills, weight loss, or fatigue.  
+- **Cardiovascular:** No palpitations, orthopnea, PND, or peripheral edema.  
+- **Respiratory:** No cough, wheeze, dyspnea at rest or on exertion.  
+- **Gastrointestinal:** No heartburn, dyspepsia, reflux, or abdominal pain.  
+- **Musculoskeletal:** No recent trauma or heavy lifting.  
+- **Psychiatric:** Reports stress; PHQ‑2 score in EMR is 2 (borderline mild depressive symptoms).  
+
+### Past Medical History  
+- The patient states she is **previously healthy** and denies any chronic medical conditions.  
+- No prior surgeries reported.  
+
+### Medications  
+- No prescribed home medications.  
+- OTC use: occasional **acetaminophen, ibuprofen, and antacids (Tums)** for pain (ineffective).  
+
+### Allergies  
+- **No known drug allergies** reported.  
+
+### Social History  
+- **Tobacco:** Smokes **½–1 pack per day**, attempting to quit.  
+- **Alcohol:** 1–2 glasses of wine on weekends only.  
+- **Illicit drugs:** Denies use.  
+- **Exercise:** Runs or cycles **3–4 days/week** without chest discomfort during exercise.  
+- **Occupation:** Works (details not specified); episodes often occur while at work or driving.  
+
+### Family History  
+- **Father:** Myocardial infarction at age 60 (last year).  
+- No other known cardiac disease, hypertension, diabetes, or dyslipidemia reported in family.  
+
+---
+
+## Objective  
+
+- **Vital Signs:** Not documented during this encounter.  
+- **Physical Examination:** Not performed/documented in the transcript.  
+- **Laboratory Data:** No labs ordered or available at this time.  
+- **Imaging:** None available.  
+
+---
+
+## Assessment  
+
+1. **Intermittent, non‑exertional left‑sided chest pain – likely non‑cardiac (atypical chest pain).**  
+   - Characteristics (sharp, brief, unchanged with exertion, no associated dyspnea or diaphoresis) make acute coronary syndrome (ACS) less likely but **cannot be excluded** given family history of early MI and the patient’s smoking status.  
+2. **Possible contributors / differential diagnoses**  
+   - **Musculoskeletal chest wall strain** (e.g., costochondritis) – pain is localized, sharp, and not exercise‑induced.  
+   - **Esophageal spasm or functional chest pain** – often sharp, unrelated to exertion, may be stress‑related.  
+   - **Anxiety / stress‑related somatic symptom** – heightened psychosocial stress, PHQ‑2 score borderline.  
+   - **Early ischemic chest pain (unstable angina)** – cannot be ruled out without objective testing; smoking and paternal MI are risk factors.  
+3. **Risk factor summary** – Current smoker, family history of premature coronary disease, stress, and sedentary periods (driving) increase cardiac risk.  
+
+---
+
+## Plan  
+
+### Immediate Diagnostic Work‑up  
+1. **Electrocardiogram (12‑lead)** – obtain during an episode if possible, or as soon as feasible, to assess for ischemic changes.  
+2. **Cardiac enzymes (high‑sensitivity troponin)** – baseline and repeat in 3 h if initial test is negative and clinical suspicion persists.  
+3. **Basic metabolic panel** – to evaluate electrolytes, renal function (baseline given past renal history in legacy EMR).  
+4. **Chest X‑ray** – to rule out pulmonary pathology if indicated by future respiratory symptoms.  
+
+### Disposition / Follow‑up  
+- **If ECG and troponin are normal** and the patient is hemodynamically stable, arrange **outpatient cardiology evaluation** (stress test or coronary CT angiography) within the next 1–2 weeks.  
+- **If any concerning findings** (e.g., new ST changes, elevated troponin), **activate emergency protocol**: immediate cardiology consult, consider admission for ACS work‑up.  
+
+### Symptom Management  
+- **Trial of a short course of NSAID** (e.g., ibuprofen 400 mg TID with food) for possible musculoskeletal pain, provided no contraindication (renal disease, GI bleed risk).  
+- **Consider low‑dose proton pump inhibitor** (e.g., omeprazole 20 mg daily) empirically if reflux is later suspected.  
+- **Stress reduction:** Referral to counseling or stress‑management program; encourage regular physical activity (already active).  
+
+### Lifestyle Counseling  
+- **Smoking cessation:** Offer nicotine replacement therapy (patch/gum) or prescription varenicline; reinforce benefits.  
+- **Alcohol:** Current intake is low risk; no change needed.  
+- **Diet:** Emphasize a heart‑healthy diet (high in fruits/vegetables, low in saturated fats, sodium).  
+
+### Preventive Care (based on legacy EMR)  
+- Review and **update chronic disease list** (e.g., hypertension, hyperlipidemia, diabetes) – many entries appear outdated.  
+- **Vaccinations:** Ensure influenza and COVID‑19 vaccines are up‑to‑date.  
+
+### Education & Instructions  
+- Instruct the patient to **seek emergency care** if chest pain becomes crushing, lasts >15 minutes, is associated with shortness of breath, diaphoresis, nausea, or radiates to the arm/jaw.  
+- Advise keeping a **symptom diary** (time, duration, activity, triggers, relief measures).  
+
+### Follow‑up Appointments  
+- **Primary care physician** within 3‑5 days to review test results and coordinate cardiology referral.  
+- **Cardiology** appointment (stress test or CT angiography) within 1–2 weeks, pending initial work‑up.  
+
+---  
+
+*Prepared by: [Clinician’s Name], MD*  
+*Date: 2026‑04‑14*

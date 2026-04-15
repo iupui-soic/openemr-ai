@@ -1,0 +1,160 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:28:51
+Time: 2.67s
+Tokens: 9,766 in / 1,977 out
+============================================================
+
+**Patient Information**  
+**Name:** Abdul Gorczany  
+**DOB:** 03 Mar 1971 (52 y old)  
+**Sex:** Male  
+**Address:** 404 Effertz Crossroad, Springfield, MA 01020  
+
+---
+
+### **S – Subjective**
+
+**Chief Complaint:**  
+“Right shoulder and elbow pain that started yesterday after a workout.”
+
+**History of Present Illness:**  
+Mr. Gorczany reports a sudden onset of a stabbing, sharp pain in the front of his right shoulder and elbow the evening before the visit. The pain began shortly after performing biceps weight‑training on a machine that required elbow flexion; he does not recall a distinct pop but suspects a possible one. The pain is localized to the anterior elbow and the proximal humerus, does not radiate, and has remained unchanged in severity—rated 8–9/10. Over the last 24 h he has experienced swelling, bruising over the biceps, and a visible “mass” that makes the biceps appear enlarged. He cannot flex his elbow fully, supinate, or rotate his forearm without significant pain. Shoulder motion is limited only when the arm is moved; he can lift his arm in front but it causes discomfort. He has tried NSAIDs (Advil) with no relief.
+
+The pain is constant, sharp, and aggravated by arm movement. He has not tried other modalities besides rest and ice. No improvement has been noted. No associated systemic symptoms (fever, chills, weight change, GI upset, neurological deficits) are present. He denies any recent trauma beyond the workout.
+
+**Past Medical History:**  
+- Pre‑diabetes (not on medication)  
+- Essential hypertension  
+- Chronic kidney disease stage 3 (eGFR ~ 85 mL/min)  
+- Major depressive disorder  
+- Alcoholism history  
+- Chronic kidney disease stage 4 (ongoing transplant work‑up)  
+- Anemia (ongoing)  
+- Multiple prior dental issues (not clinically relevant here)
+
+**Past Surgical History:**  
+- Tonsillectomy (age 10)  
+- No orthopedic surgeries
+
+**Medications:**  
+- Acetaminophen 325 mg/ Hydrocodone 7.5 mg (as needed) – discontinued 2022  
+- Acetaminophen 325 mg (as needed) – discontinued 2022  
+- Epoetin Alfa (inactive)  
+- Vitamin B12 injectable (inactive)  
+- Simvastatin 10 mg daily (active)  
+- Naproxen 220 mg (inactive)  
+- Hydrochlorothiazide 25 mg (inactive)  
+- Lisinopril 10 mg (inactive)  
+- Amlodipine 2.5 mg (inactive)  
+
+**Allergies:**  
+None reported.
+
+**Social History:**  
+- Lives with wife and daughter in a condominium.  
+- Works as an accountant, currently working from home; may need to take time off.  
+- Former smoker (never regular), no cannabis or recreational drug use.  
+- Exercise: resumed weight‑lifting 1 year ago, moderate activity.
+
+**Family History:**  
+No known musculoskeletal or autoimmune diseases.
+
+**Review of Systems (selected):**  
+- **Constitutional:** No fever, chills, weight change, or appetite loss.  
+- **Musculoskeletal:** Pain, swelling, limited motion in right shoulder/elbow; no other joint pain.  
+- **Neurologic:** No numbness, tingling, or weakness beyond the affected arm.  
+- **Cardiovascular:** No palpitations, chest pain, or dyspnea.  
+- **Respiratory/GI:** No cough, shortness of breath, abdominal pain, nausea, vomiting, or bowel changes.  
+- **Skin/Hair/Nails:** No rash or changes.  
+- **Other:** No headaches, vision changes, or sensory deficits.
+
+---
+
+### **O – Objective**
+
+**Vital Signs** *(as of visit)*  
+- BP: Not recorded (patient’s routine BP medication discontinued)  
+- HR: 93 bpm (baseline from prior records)  
+- RR: 16/min  
+- SpO₂: 97 % (room air)  
+- Temp: Not recorded (no fever)  
+- Weight: Not recorded (BMI 27.3 per 2015 data)
+
+**Physical Examination**
+
+| System | Findings |
+|--------|----------|
+| **General** | Alert, oriented, in mild distress due to pain. |
+| **Skin** | Mild erythema and bruising over the right biceps; no warmth noted. |
+| **Neck** | No lymphadenopathy. |
+| **Shoulder** | Full passive range of motion; active flexion painful > 30°. No crepitus or clicking. |
+| **Elbow** | Limited flexion; passive flexion possible with pain. Supination severely limited. No tenderness to palpation along the medial/lateral epicondyles. |
+| **Upper Extremity** | Reduced biceps strength (4/5) due to pain; no distal motor or sensory deficits. |
+| **Cardiovascular** | Regular rhythm, no murmurs. |
+| **Respiratory** | Clear to auscultation bilaterally. |
+| **Abdominal** | Soft, non‑tender. |
+| **Extremities** | No distal swelling, pulses intact. |
+
+**Laboratory Results** (most recent)  
+- **Renal:** Creatinine 2.86 mg/dL, eGFR 85 mL/min (CKD stage 3).  
+- **Lipid profile:** LDL 133 mg/dL, HDL 36 mg/dL, Triglycerides 161 mg/dL.  
+- **Hemoglobin/hematocrit:** Not shown (anemia documented).  
+- **Inflammatory markers:** Not obtained.  
+
+*No acute laboratory abnormalities pertinent to the acute complaint.*
+
+**Imaging:**  
+None performed at this visit. Ultrasound of the right biceps tendon planned; MRI may follow based on ultrasound findings.
+
+---
+
+### **A – Assessment**
+
+| Category | Diagnosis | Comments |
+|----------|-----------|----------|
+| **Primary** | **Biceps tendonitis / partial tear (right upper arm)** | Acute onset post‑exercise, pain, swelling, limited flexion/supination, and mass consistent with tendon injury. |
+| **Secondary** | Chronic kidney disease (stage 3) | Current eGFR 85 mL/min; monitor renal function. |
+| **Secondary** | Prediabetes | No medication; lifestyle counseling needed. |
+| **Secondary** | Major depressive disorder | Ongoing psychiatric support. |
+| **Rule‑out** | Rotator cuff tear, subacromial impingement | Clinical presentation favors biceps injury; imaging will confirm. |
+
+---
+
+### **P – Plan**
+
+1. **Imaging**
+   - Order **ultrasound** of the right shoulder and biceps tendon to assess tear size and tendon integrity.
+   - If ultrasound is inconclusive or shows a complete tear, proceed with **MRI** of the shoulder.
+
+2. **Medications**
+   - **NSAID:** Ibuprofen 400 mg PO every 6 h PRN (if tolerated; monitor renal function).
+   - **Acetaminophen:** 650 mg PO every 6 h PRN for pain control (max 4 g/day).
+   - **Pain control:** If pain remains > 6/10, consider a short course of oral corticosteroid or a stronger analgesic (e.g., tramadol) with caution in CKD.
+
+3. **Activity Modification**
+   - Rest the right arm; avoid heavy lifting or activities that aggravate pain.
+   - Ice 20 min every 4–6 h for the first 48 h.
+   - Gentle pendulum and passive range‑of‑motion exercises as tolerated.
+
+4. **Physical Therapy**
+   - Refer to orthopedic PT for supervised rehabilitation after imaging results (focus on isometric biceps strengthening, gradual progression).
+
+5. **Follow‑Up**
+   - **In 7 days** for review of imaging and pain assessment; adjust treatment plan accordingly.
+   - **If MRI shows full‑thickness tear** and patient is a candidate for surgery, refer to orthopedic surgeon for operative evaluation.
+   - Continue monitoring renal function (serum creatinine and eGFR) at each visit.
+
+6. **Patient Education**
+   - Discuss signs of worsening (increased pain, swelling, fever, redness) that warrant immediate evaluation.
+   - Emphasize the importance of medication adherence and activity restrictions.
+   - Review the potential renal side effects of NSAIDs and advise to report any decreased urine output or fluid retention.
+
+7. **Coordination of Care**
+   - Notify primary care physician of acute biceps injury and plan for ongoing CKD management.
+   - Ensure psychiatric support for depression remains active.
+
+**Disposition:** Patient instructed to follow up in clinic as scheduled and to seek emergent care if symptoms worsen.
+
+---

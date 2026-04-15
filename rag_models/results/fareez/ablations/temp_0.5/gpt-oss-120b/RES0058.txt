@@ -1,0 +1,114 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:08:13
+Time: 5.41s
+Tokens: 8,264 in / 1,748 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: November 14, 1952 (Age 73)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint  
+Loss of taste and recent dry cough of 2–4 days duration, accompanied by fatigue, mild shortness of breath after coughing, and a single episode of diarrhea this morning.
+
+History of Present Illness  
+Aaron reports that over the past two days he has noticed a marked reduction in his ability to taste foods, describing the sensation as “plain” or “like cardboard.” He first observed this while eating pizza, but the loss of flavor has been present with other foods as well. He also feels that his sense of smell may be diminished. There is no history of recent trauma to the face, mouth, or nose. He denies fever, although he feels “a little hot” and describes himself as “a bit warm” today. He reports a dry cough that began three to four days ago, without sputum production or hemoptysis. He denies wheezing. After bouts of coughing he experiences brief difficulty catching his breath but no persistent dyspnea at rest. He notes increased fatigue over the past several days, sleeping more during the day, and feeling “lazy,” but his appetite remains intact. He denies muscle aches, chest pain, palpitations, or syncope. This morning he had one to two loose stools; he has not noticed blood, melena, or abdominal pain. He reports a mild, scratchy throat but no dysphagia. He denies nasal congestion, rhinorrhea, rash, urinary changes, dizziness (except a brief light‑headed episode on rising this morning, which resolved with brief rest), or recent weight loss. He feels slightly weak but no confusion. He is concerned that his symptoms may represent COVID‑19 infection.
+
+Review of Systems  
+Constitutional: Fatigue, mild subjective fever, no chills, no night sweats, no weight change.  
+HEENT: Loss of taste, possible reduced smell, dry cough, scratchy throat, no sore throat, no nasal congestion or discharge, no ear pain.  
+Respiratory: Dry cough, brief post‑cough dyspnea, no wheezing, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: One episode of diarrhea this morning, no abdominal pain, no nausea, no vomiting, no blood in stool, normal appetite.  
+Genitourinary: No dysuria, hematuria, or changes in urine output.  
+Neurologic: No headache, dizziness resolved with rest, no confusion.  
+Skin: No rash.  
+Psychiatric: No anxiety or depression noted; PHQ‑2 score 1, GAD‑7 score 0 (from recent labs).  
+
+Allergies  
+Patient reports possible allergy to cats; no known drug allergies.
+
+Past Medical History  
+The patient states he has never been diagnosed with any chronic medical conditions. (The electronic record lists longstanding hypertension, pre‑diabetes, obesity, metabolic syndrome, chronic kidney disease with prior transplant and current end‑stage renal disease, anemia, and other renal‑related disorders. The patient, however, denies any current diagnoses.)
+
+Surgical History  
+Appendectomy performed approximately four years ago (age 19). No other surgeries reported.
+
+Social History  
+The patient lives in a townhouse with his mother, step‑father, and younger sister. He does not smoke cigarettes or use marijuana. He uses a flavored vape device several times per day; he is uncertain whether it contains nicotine. He does not consume alcohol. He is a high‑school student (per transcript) and is currently attending in‑person classes. No recent travel. No known exposure to mold or other environmental hazards.  
+
+Family History  
+Maternal grandfather had lung cancer and diabetes; no known hereditary heart disease reported.
+
+Current Medications  
+The patient reports that he is not taking any medications at this time. (The electronic record lists multiple agents including tacrolimus, antihypertensives, insulin, and antibiotics, but the patient denies current use.)
+
+Vital Signs (most recent recorded)  
+Temperature: 37.7 °C (99.9 °F)  
+Heart Rate: 62 beats/min  
+Respiratory Rate: 12 breaths/min  
+Blood Pressure: Not recorded at this visit  
+SpO₂: Not recorded  
+Height: 176.7 cm  
+Weight: Not recorded  
+BMI: 31.0 kg/m² (obese)
+
+Physical Examination  
+General: Alert, oriented, appears mildly fatigued.  
+HEENT: No oral lesions; throat mildly scratchy, no erythema or exudate. No nasal congestion noted.  
+Lungs: Clear to auscultation bilaterally; no wheezes, rales, or rhonchi.  
+Cardiovascular: Regular rate and rhythm; no murmurs.  
+Abdomen: Soft, non‑tender, no masses; normal bowel sounds.  
+Extremities: No edema.  
+Neurologic: Grossly intact.  
+
+Laboratory Data (most recent)  
+- Sodium: 137 mmol/L (first set) and 141 mmol/L (second set)  
+- Potassium: 4.8 mmol/L  
+- Chloride: 105 mmol/L and 108 mmol/L (two measurements)  
+- BUN: 14 mg/dL  
+- Creatinine: 0.99 mg/dL and 0.97 mg/dL  
+- Glucose: 100 mg/dL and 95 mg/dL  
+- Calcium: 9.5 mg/dL  
+- CO₂ (total): 20.2 mmol/L  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 0 (no anxiety)  
+
+Assessment  
+1. Upper respiratory infection, likely viral (probable COVID‑19 given recent exposure to a classmate with cough and fever).  
+2. Anosmia/ageusia associated with viral URI.  
+3. Dry cough with brief post‑cough dyspnea, likely reactive.  
+4. Single episode of acute diarrhea, likely viral gastroenteritis secondary to the same pathogen.  
+5. Fatigue and mild subjective fever consistent with viral illness.  
+6. Current vaping use – potential irritant to airway and contributor to cough.  
+
+Plan  
+Diagnostics:  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing today.  
+- Consider rapid influenza testing if influenza is circulating in the community.  
+
+Therapeutic:  
+- Symptomatic treatment with acetaminophen 500 mg PO q6‑8 h PRN for fever or discomfort, not to exceed 3 g per day.  
+- Encourage adequate oral hydration, especially given mild diarrhea and possible dehydration contributing to dizziness.  
+- Advise use of lozenges or honey (if not diabetic) for throat comfort.  
+- Counsel patient to limit or discontinue vaping; discuss nicotine content and potential respiratory irritation.  
+
+Isolation and Public Health:  
+- Instruct patient to self‑isolate at home for at least 14 days from symptom onset, regardless of test result, per current public‑health guidelines.  
+- If COVID‑19 test is positive, notify local health department for contact tracing.  
+
+Follow‑up:  
+- Telephone or tele‑medicine follow‑up in 48 hours to review test results and symptom progression.  
+- Advise patient to seek immediate care if he develops high fever (>38.5 °C), worsening shortness of breath, chest pain, persistent vomiting, or inability to maintain hydration.  
+
+Education:  
+- Reviewed signs of worsening illness and when to seek urgent care.  
+- Discussed proper hand hygiene, mask use when around others, and cleaning of shared surfaces.  
+- Provided resources on vaping cessation and offered referral to counseling if desired.  
+
+Disposition  
+Patient was discharged home with the above plan and instructions. No further in‑person visits are scheduled at this time.

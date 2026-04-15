@@ -1,0 +1,136 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:28:06
+Time: 7.18s
+Tokens: 9,622 in / 1,894 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Date of Birth: 1943‑04‑07 (approximately 45 years old per patient report)  
+Sex: Male  
+
+Chief Complaint  
+Rash on the right ankle/leg that has become swollen, red, painful, and is now draining a white material.
+
+History of Present Illness  
+Mr. Crona reports that approximately one week ago he noticed a “weird” lesion on his right ankle. At that time the lesion was not painful, but over the past 24 hours it began to hurt, became increasingly swollen, and the surrounding skin turned more erythematous. He now observes a whitish discharge emanating from what was previously a scab, and the area feels hotter than the contralateral leg. He denies having measured a temperature at home because he does not own a thermometer. He has not experienced shortness of breath or chest pain. He feels generally “crummy,” reports increased hunger, some weight gain, and fatigue over the past few weeks, which he attributes in part to poor diabetes control and life stressors. He has a longstanding history of type 2 diabetes mellitus with an estimated recent A1c in the 9 % range, and he admits he has not been regularly checking his glucose. He also has a known ulcer on his left heel that he believes is currently stable. He has never had a similar skin problem on his legs before.  
+
+Associated Symptoms – Positive  
+- Local warmth, swelling, erythema, pain on ambulation, drainage of whitish material  
+- Generalized feeling of being hot, fatigue, increased appetite  
+
+Associated Symptoms – Negative  
+- No fever reported (temperature not measured)  
+- No dyspnea, cough, or chest discomfort  
+- No abdominal pain, nausea, vomiting, or diarrhea  
+- No new joint pains or other skin lesions  
+
+Review of Systems  
+Constitutional: Fatigue, feeling warm, recent weight gain.  
+Skin: Right ankle erythema, swelling, drainage; chronic left heel ulcer (stable).  
+Neurologic: Decreased sensation in the feet over several years, consistent with diabetic peripheral neuropathy.  
+Cardiovascular: No chest pain, palpitations, or known heart disease reported today.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria or urinary symptoms.  
+Musculoskeletal: Pain with walking on the right ankle.  
+Psychiatric: Stress related to work and family responsibilities.  
+
+Allergies  
+Penicillin – causes facial swelling and difficulty breathing (type I hypersensitivity).  
+
+Past Medical History  
+- Type 2 diabetes mellitus, poorly controlled (recent A1c ≈ 9 %).  
+- Hyperlipidemia.  
+- Childhood asthma, currently quiescent.  
+- Chronic low‑back pain, managed with occasional acetaminophen or ibuprofen.  
+- Occasional foot ulcers (left heel ulcer noted).  
+
+Surgical History  
+- Endoscopic sinus surgery performed in adolescence for chronic sinusitis.  
+
+Social History  
+- Lives in town; sees his children every two weeks.  
+- Currently unemployed but runs a small accounting‑related business.  
+- Tobacco use: occasional smoker, recently increased to approximately two packs per week.  
+- Alcohol use: drinks primarily on weekends, averaging 2–4 drinks per weekend (approximately up to three drinks per day on those days).  
+- No illicit drug use.  
+- No regular exercise routine.  
+
+Family History  
+- Maternal side: multiple relatives with diabetes mellitus, hypertension, and hypercholesterolemia.  
+- Paternal side: generally healthy.  
+- One maternal aunt with lung cancer (heavy smoker).  
+
+Current Medications (as reported by the patient)  
+- Rosuvastatin (dose unspecified) for hyperlipidemia.  
+- Metformin (dose unspecified) for diabetes.  
+- Two additional oral diabetes agents (exact names and dosages not recalled).  
+- No insulin therapy.  
+
+Objective Findings  
+Vital Signs: Not recorded during this encounter.  
+Physical Examination (pertinent findings reported by the patient)  
+- Right ankle: marked erythema, swelling, warmth, and an open area with whitish drainage replacing a prior scab.  
+- No mention of fluctuance or obvious necrosis.  
+- No tenderness reported with light touch; pain worsens with ambulation and ankle flexion.  
+- No reported loss of motor function; sensation in the foot is reduced compared with prior baseline.  
+- No respiratory or cardiac abnormalities noted.  
+
+Laboratory Data (most recent values available in the electronic record)  
+- Glucose: 94 mg/dL (within normal range, likely fasting).  
+- Creatinine: 2.98 mg/dL (elevated).  
+- eGFR (MDRD): 79 mL/min/1.73 m².  
+- Sodium: 139.8 mmol/L; Potassium: 4.5 mmol/L; CO₂ total: 22 mmol/L.  
+- Lipid panel: Total cholesterol 177 mg/dL, HDL 31.6 mg/dL, LDL 121 mg/dL, Triglycerides 177 mg/dL.  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, Alk‑Phos 123.7 U/L, Total bilirubin 0.77 mg/dL.  
+- No complete blood count or inflammatory markers are available in the current extract.  
+
+Assessment  
+1. **Cellulitis of the right ankle** – acute, likely bacterial infection given erythema, warmth, swelling, and purulent drainage.  
+2. **Type 2 diabetes mellitus, uncontrolled** – recent A1c estimated > 9 %; contributes to impaired wound healing.  
+3. **Hyperlipidemia** – on rosuvastatin.  
+4. **Tobacco use disorder** – increased consumption to ~2 packs/week.  
+5. **Alcohol use** – weekend binge pattern.  
+6. **Diabetic peripheral neuropathy** – decreased sensation in feet.  
+
+Plan  
+
+Medical Management  
+- Initiate oral antibiotic therapy appropriate for cellulitis in a patient with a penicillin allergy: clindamycin 300 mg PO three times daily for 10 days, or doxycycline 100 mg PO twice daily for 10 days if clindamycin is contraindicated.  
+- Advise completion of the full antibiotic course even if symptoms improve.  
+
+Wound Care  
+- Clean the affected area gently with saline solution twice daily.  
+- Apply a sterile non‑adhesive dressing after each cleaning; change dressings daily or sooner if saturated.  
+- Keep the leg elevated above heart level when resting to reduce edema.  
+- Limit weight‑bearing on the right ankle as much as possible; consider using a crutch or cane if ambulation is painful.  
+
+Diabetes Management  
+- Reinforce the importance of regular glucose monitoring; recommend obtaining a home glucometer if not already owned.  
+- Encourage follow‑up with his primary care physician for medication adjustment; consider adding or optimizing insulin therapy given poor control.  
+- Discuss dietary counseling and carbohydrate consistency.  
+
+Chronic Disease Follow‑up  
+- Continue rosuvastatin; obtain a lipid panel in 3‑6 months.  
+- Review renal function at next primary care visit; discuss nephrology referral if creatinine remains elevated.  
+
+Lifestyle Counseling  
+- Offer referral to smoking cessation program; discuss nicotine replacement therapy or pharmacologic aids.  
+- Counsel on limiting alcohol intake to ≤ 1 drink per day and avoiding binge drinking.  
+- Encourage gradual increase in physical activity as tolerated, emphasizing foot protection.  
+
+Referral and Follow‑up  
+- Schedule a podiatry appointment within the next week to evaluate the left heel ulcer and overall foot health.  
+- Return to the clinic or urgent care within 48 hours if the redness spreads rapidly, pain worsens, fever develops (> 38 °C), or drainage becomes purulent or foul‑smelling.  
+- Routine follow‑up with primary care in 1 week to reassess the cellulitis and diabetes control.  
+
+Patient Education and Discharge Instructions  
+- Explain signs of worsening infection (increasing redness, swelling, pain, fever, red streaks, foul drainage).  
+- Demonstrate proper wound cleaning and dressing technique.  
+- Emphasize adherence to antibiotic regimen and importance of glucose monitoring.  
+- Provide written instructions on smoking cessation resources and safe alcohol consumption.  
+
+The patient verbalized understanding of the plan and agreed to the outlined follow‑up and treatment measures.

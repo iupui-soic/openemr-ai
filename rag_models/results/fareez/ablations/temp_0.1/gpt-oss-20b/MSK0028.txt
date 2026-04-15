@@ -1,0 +1,102 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:16:00
+Time: 3.02s
+Tokens: 9,996 in / 1,489 out
+============================================================
+
+Patient Information  
+Name: Abdul Gorczany  
+Date of Birth: March 9, 1971  
+Sex: Male  
+Address: 404 Effertz Crossroad, Springfield, Massachusetts 01020  
+
+Chief Complaint  
+The patient presents with sudden onset of sharp, stabbing pain in the front of his right shoulder and elbow that began yesterday after a weight‑training session.  
+
+History of Present Illness  
+Mr. Gorczany reports that the pain started shortly after performing biceps‑focused weight training. He describes the pain as a sharp, stabbing sensation localized to the anterior aspect of the right shoulder and elbow. He notes swelling, bruising, and a noticeable mass in the biceps region. The pain has not improved with over‑the‑counter NSAIDs and is rated 8–9 out of 10. He has been unable to flex his right elbow fully, supinate his forearm, or lift his arm above shoulder level without significant discomfort. The pain has persisted for one day and has not improved with rest, ice, or analgesics. He denies any fever, chills, weight loss, appetite changes, headaches, visual or auditory changes, nasal congestion, cough, shortness of breath, chest pain, palpitations, dizziness, abdominal pain, nausea, vomiting, bowel or urinary changes, skin rashes, or neurological symptoms such as numbness or tingling.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or appetite changes.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or dizziness.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea, or constipation.  
+Genitourinary: No urinary frequency, dysuria, or hematuria.  
+Musculoskeletal: Pain localized to right shoulder and elbow; swelling and bruising present; limited elbow flexion and supination; shoulder movement possible but painful.  
+Neurologic: No numbness, tingling, or weakness beyond the affected arm.  
+Skin/Hair/Nails: No rashes or changes.  
+
+Past Medical History  
+- Hypertension (diagnosed 1993)  
+- Chronic kidney disease, stage 4 (diagnosed 2021)  
+- Prediabetes (not on medication)  
+- Major depressive disorder (diagnosed 1990)  
+- Alcoholism (diagnosed 1997)  
+- Chronic kidney disease stage 3 (diagnosed 2012)  
+- Chronic kidney disease stage 1 (diagnosed 2006)  
+- Other historical conditions include depression, alcoholism, and multiple dental issues; no recent surgeries except a tonsillectomy in childhood.  
+
+Surgical History  
+- Tonsillectomy in childhood.  
+
+Family History  
+No information available.  
+
+Social History  
+The patient lives with his wife and daughter in a condominium in Springfield. He works as an accountant from home. He denies tobacco use, alcohol consumption, recreational drug use, or cannabis use. He is physically active, having recently resumed weight training after a period of inactivity.  
+
+Current Medications  
+The patient reports that he is not taking any medications at present.  
+
+Physical Examination  
+Vital signs were not recorded during this encounter.  
+Inspection of the right upper extremity revealed swelling and bruising over the anterior biceps region. A palpable mass was noted in the mid‑arm.  
+Palpation elicited tenderness over the biceps tendon insertion and the proximal humerus.  
+Range of motion:  
+- Elbow flexion limited; patient could not fully flex the elbow without pain.  
+- Supination severely limited.  
+- Shoulder flexion and abduction possible but painful; no significant limitation noted.  
+No warmth was reported over the affected area.  
+
+Laboratory Results  
+- Serum creatinine: 2.86 mg/dL (elevated)  
+- Estimated GFR (MDRD): 85 mL/min (within normal range for age)  
+- Serum albumin: 5.10 g/dL (normal)  
+- Total protein: 7.06 g/dL (normal)  
+- Calcium: 9.3 mg/dL (normal)  
+- Potassium: 4.8 mmol/L (normal)  
+- Sodium: 137.5 mmol/L (normal)  
+- Lipid profile: LDL 133.6 mg/dL, HDL 36.3 mg/dL, total cholesterol 168.7 mg/dL, triglycerides 161.1 mg/dL (all within or near normal limits)  
+- Liver enzymes: ALT 33 U/L, AST 19 U/L, ALP 75 U/L (all within normal limits)  
+- Complete metabolic panel otherwise unremarkable.  
+
+Imaging  
+No imaging studies have been performed at this time.  
+
+Assessment  
+The clinical presentation is most consistent with an acute biceps tendon injury, likely a partial tear of the long head of the biceps tendon, given the sudden onset of sharp pain, swelling, bruising, limited elbow flexion and supination, and the presence of a palpable mass. Differential diagnoses include rotator cuff strain, subacromial impingement, or a more complete biceps tendon rupture, but the absence of a “Popeye” deformity and the ability to flex the shoulder somewhat argue against a complete rupture.  
+
+Plan  
+1. Order an ultrasound of the right biceps tendon to evaluate for tendon discontinuity, tendon thickening, or fluid collection.  
+2. If ultrasound findings are inconclusive or suggest a significant tear, proceed with MRI of the right shoulder and elbow.  
+3. Initiate conservative management pending imaging results:  
+   - Rest the affected arm, avoid heavy lifting and overhead activities.  
+   - Apply ice packs to the affected area for 15–20 minutes every 2–3 hours.  
+   - Continue NSAIDs (e.g., naproxen 220 mg PO twice daily) unless contraindicated by renal function; monitor renal parameters.  
+   - Consider short‑term use of a supportive brace or sling to limit elbow flexion.  
+4. Refer to orthopedic surgery for evaluation if imaging confirms a significant tendon tear or if symptoms do not improve within 2–3 weeks.  
+5. Schedule a follow‑up appointment in 1–2 weeks to review imaging results and reassess pain and functional status.  
+6. Educate the patient on activity modification, proper warm‑up techniques, and gradual return to weight training.  
+7. Monitor renal function and adjust NSAID use accordingly.  
+
+Follow‑up Instructions  
+The patient should return to the clinic in 1–2 weeks for imaging review and to discuss further management. If pain worsens, swelling increases, or if he experiences loss of elbow flexion or forearm supination, he should seek urgent care.  
+
+Discharge Instructions  
+- Rest the right arm and avoid strenuous activity.  
+- Use ice and NSAIDs as prescribed.  
+- Keep the arm elevated when possible.  
+- Monitor for signs of infection or worsening pain.  
+- Contact the clinic if new symptoms develop.

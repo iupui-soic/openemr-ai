@@ -1,0 +1,112 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:31:13
+Time: 5.74s
+Tokens: 19,642 in / 1,734 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes Date of Birth: 05‑Nov‑1946 Age: 79 years Sex: Female Address: 623 Purdy Branch Suite 62, Westfield, MA 01086 Unit Number: 5194  
+
+Chief Complaint  
+The patient presents with acute right‑sided abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ms Hayes reports an “aching” pain located in the right side of her abdomen. The pain started suddenly while she was about to go to sleep and was initially intermittent for the first two hours. Over the past five to six hours the discomfort has become constant and is now rated 8/10 in intensity. She describes the pain as non‑radiating and notes that it is worsened by eating, especially fatty foods such as burgers or fries. She has not identified any maneuvers or positions that relieve the pain. Over‑the‑counter acetaminophen (Tylenol) provided no relief. She feels a mild degree of nausea but has not vomited. She denies fever, chills, sweats, diarrhea, constipation, changes in urinary frequency or color, hematochezia, melena, or recent travel. She reports a decreased appetite because eating precipitates the pain, but she does not note any recent weight loss. Fatigue is present, attributed to the persistent pain. No prior similar episodes were reported beyond occasional post‑prandial discomfort after fatty meals.
+
+Review of Systems  
+
+- Constitutional: Denies fever, chills, or recent weight loss. Reports mild fatigue.  
+- Gastrointestinal: Right‑sided abdominal aching, worsened by fatty meals; nausea present; no vomiting, diarrhea, constipation, hematochezia, melena, or change in stool color.  
+- Genitourinary: No dysuria, frequency, urgency, or hematuria; urine color unchanged.  
+- Cardiovascular: No chest pain, palpitations, or syncope.  
+- Respiratory: No cough, dyspnea, or wheezing.  
+- Neurologic: No headache, visual changes, or focal deficits.  
+- Dermatologic: No rash, jaundice, or skin changes.  
+- Musculoskeletal: No recent trauma or musculoskeletal pain beyond chronic pain history.  
+
+Past Medical History  
+
+- Type 2 diabetes mellitus, treated with metformin (patient reports this medication).  
+- Essential hypertension.  
+- Chronic kidney disease, stage 3 (eGFR ≈ 37 mL/min/1.73 m²).  
+- Metabolic syndrome.  
+- Obesity (BMI ≈ 28 kg/m²).  
+- Gastroesophageal reflux disease.  
+- Chronic obstructive bronchitis.  
+- Chronic migraine without aura.  
+- Chronic pain (unspecified etiology).  
+
+Surgical History  
+- Extraction of wisdom teeth in teenage years.  
+
+Social History  
+Ms Hayes lives alone in an apartment. She is currently unemployed after being laid off due to the COVID‑19 pandemic. She reports occasional alcohol consumption (1–2 glasses of wine per day) and does not smoke cigarettes, use recreational drugs, or consume coffee. She walks or runs outdoors when the weather permits. No known drug or environmental allergies.  
+
+Family History  
+Father suffered a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other hereditary conditions.  
+
+Current Medications  
+- Metformin (dose not specified).  
+No other home medications were reported during the encounter.  
+
+Allergies  
+The patient reports no drug, food, or environmental allergies.  
+
+Objective  
+
+Vital Signs  
+- Heart Rate: 92 beats/min (recorded in prior chart).  
+- Respiratory Rate: 13 breaths/min.  
+- Blood Pressure: Not recorded at this visit.  
+- Temperature: Not recorded.  
+- SpO₂: Not recorded.  
+- Weight/Height: Height 167.5 cm; weight not recorded (BMI previously noted as 27.9).  
+
+Physical Examination  
+No physical examination findings were documented in the transcript.  
+
+Laboratory Results (most recent)  
+
+- Serum Calcium: 9.27 mg/dL.  
+- Blood Urea Nitrogen: 7.05 mg/dL.  
+- Serum Creatinine: 1.97 mg/dL (eGFR ≈ 36.9 mL/min/1.73 m²).  
+- Serum Sodium: 136 mmol/L.  
+- Serum Chloride: 103.96 mmol/L.  
+- Serum Glucose: 66.6 mg/dL.  
+- Urine Protein: 215 mg/dL (elevated).  
+- Urine Glucose: 1.5 mg/dL (trace).  
+- Urine Ketones: 0.93 mg/dL (trace).  
+- Urine Specific Gravity: 1.038.  
+- Urine Bilirubin: 0.44 mg/dL (trace).  
+
+No complete blood count or liver function panel was available at the time of this encounter.  
+
+Assessment  
+
+1. **Right‑sided abdominal pain, likely biliary colic** – The character of the pain (right‑upper quadrant, worsened after fatty meals, aching quality) is classic for gallstone‑related biliary colic. Absence of fever, leukocytosis, or peritoneal signs makes acute cholecystitis less likely at this stage.  
+2. **Type 2 diabetes mellitus, on metformin** – Chronic condition, currently stable.  
+3. **Hypertension** – Long‑standing, medication not confirmed at this visit.  
+4. **Chronic kidney disease, stage 3** – Baseline eGFR ≈ 37 mL/min/1.73 m²; recent labs show stable creatinine.  
+5. **Metabolic syndrome/obesity** – Contributing risk factors for gallstone disease.  
+
+Plan  
+
+- **Imaging**: Obtain a right‑upper‑quadrant abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, and biliary ductal dilatation. If ultrasound is inconclusive and suspicion for biliary obstruction remains, consider a HIDA scan.  
+- **Laboratory work‑up**: Order a complete metabolic panel including liver transaminases (AST, ALT), alkaline phosphatase, total and direct bilirubin, and a complete blood count to assess for leukocytosis.  
+- **Symptom management**:  
+  * Provide prescription for oral analgesia (e.g., ibuprofen 600 mg PO q6h with meals, unless contraindicated by renal function) or acetaminophen up to 3 g daily.  
+  * Offer an antiemetic such as ondansetron 4 mg PO q8h PRN for nausea.  
+- **Dietary advice**: Advise a low‑fat diet and avoidance of large, greasy meals until further evaluation is completed.  
+- **Diabetes and CKD management**: Continue metformin as prescribed; monitor renal function and adjust dosing if needed. Reinforce blood glucose monitoring.  
+- **Follow‑up**:  
+  * Schedule an outpatient gastroenterology or general surgery appointment within 1 week to review imaging and laboratory results.  
+  * Return to the emergency department or urgent care if she develops fever, increasing pain, vomiting, jaundice, or signs of peritonitis.  
+- **Patient education**: Discuss the typical course of biliary colic, warning signs for acute cholecystitis, and the importance of adherence to follow‑up appointments.  
+
+Disposition  
+The patient was evaluated in the clinic and discharged home with the above plan. No immediate admission was indicated based on the current assessment.  
+
+Prepared by: [Physician’s Name], MD  
+Date of Documentation: 14‑Apr‑2026

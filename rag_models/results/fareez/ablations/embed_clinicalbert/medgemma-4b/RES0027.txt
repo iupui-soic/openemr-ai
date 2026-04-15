@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:59:27
+Time: 27.54s
+Tokens: 6,405 in / 520 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abbey Eliza Schmitt
+Date of Birth: 1965-09-27
+Unit Number: 103
+
+Chief Complaint: Cough
+
+History of Present Illness:
+
+The patient presents today complaining of a cough that has been present for the past three days. She reports that the cough is persistent and is interfering with her sleep. She denies any sputum production or blood-tinged sputum. She also denies any chest pain, shortness of breath, wheezing, or palpitations. The cough started three days ago and has been progressively worsening, with the addition of feeling hot and having a fever-like sensation today. She denies any known triggers for the cough, such as cold air, smoke, or dust. She has tried over-the-counter cough syrup, but it has not provided relief. The cough is constant throughout the day. She denies any sore throat. Her appetite is somewhat affected by the cough. She denies any difficulty swallowing. She denies any weight loss. She reports feeling a little chilly last night, followed by some sweating late last night. She denies chest pain or shortness of breath.
+
+Past Medical History:
+
+The patient reports a diagnosis of hypothyroidism, which is currently managed with Synthroid. She denies any other significant past medical history. She reports having her appendix removed as a teenager, and denies any complications from that surgery.
+
+Medications:
+
+The patient is currently taking Synthroid for her hypothyroidism. She also takes a multivitamin, but she is unsure of the specific name. She denies any allergies to medications.
+
+Social History:
+
+The patient lives with her husband and two teenagers. She reports that her husband has been experiencing vomiting for the past two days and has also been feeling hot. She denies any recent travel or exposure to sick individuals at work. She works from home as a marketing professional. She drinks alcohol occasionally, having a glass of wine with dinner a few times per week. She denies smoking or recreational drug use.
+
+Family History:
+
+The patient's sister has a history of heart problems. Her parents are deceased, having passed away from old age.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided information.
+
+Assessment:
+
+The patient presents with a cough of three days duration, progressively worsening, and associated with a fever-like sensation. The cough is interfering with sleep.
+
+Plan:
+
+The physician will order a PCR nasal swab to test for COVID-19 and a chest X-ray. The results of these tests will be used to determine the appropriate course of treatment.

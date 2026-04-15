@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:23:14
+Time: 5.28s
+Tokens: 10,107 in / 1,831 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: September 28, 1931 (Age 94)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+
+Chief Complaint  
+Right hip pain after a fall down a flight of stairs two hours ago.  
+
+History of Present Illness  
+Mr. Turner was brought to the emergency department after slipping on the last few steps of a staircase earlier today. He reports that he missed a step, fell forward onto his right side, and struck his right hip. He did not lose consciousness, experience dizziness prior to the fall, or hit his head. Immediately after the incident he was unable to bear weight on the right lower extremity. He describes the pain as “excruciating,” rating it a 10/10. The pain is described as sharp when weight is applied and achy when the joint is at rest. He notes swelling, mild erythema, bruising, and a sense that the right leg is turned slightly outward. He reports warmth over the right hip compared with the left. He is unable to perform hip flexion, extension, abduction, or adduction without severe pain and can barely stand, supporting himself primarily on the left side. He denies any numbness, tingling, headache, confusion, or memory loss. He felt slightly dizzy after the fall, which he attributes to pain. There is no history of prior falls or similar hip pain.  
+
+Review of Systems  
+Constitutional: No fever, chills, recent weight loss, or night sweats.  
+Neurologic: No numbness, tingling, weakness, or loss of sensation in the extremities.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel habit changes.  
+Genitourinary: No dysuria, hematuria, or urinary frequency changes.  
+Musculoskeletal: Acute right hip pain with swelling, bruising, and limited range of motion. No other joint pain.  
+Skin: Mild erythema over the right hip; no rashes.  
+ENT/Neuro: No vision, hearing, smell, or taste changes.  
+Psychiatric: No reported anxiety, depression, or recent mood changes.  
+
+Past Medical History  
+- Osteoarthritis (unspecified joints)  
+- Essential hypertension  
+- History of renal transplant with chronic kidney disease (stage 2–3) (historical)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Anemia (historical)  
+- Other chronic conditions listed in the electronic record (e.g., past seizure disorder, prior fractures) are not reported as active problems by the patient at this visit.  
+
+Surgical History  
+No surgical procedures reported by the patient during this encounter.  
+
+Social History  
+Lives in a small apartment with his husband. No tobacco use. Consumes a glass of wine approximately every other day. No recreational drug use. No recent travel or known exposure to ill contacts.  
+
+Family History  
+Father died of a myocardial infarction in his 60s. Mother had non‑melanoma skin cancers treated with topical therapy. No known hereditary musculoskeletal or renal disease.  
+
+Allergies  
+No known drug or environmental allergies reported.  
+
+Current Medications (as reported by the patient)  
+- Ramipril (dose unspecified) for hypertension  
+- Vitamin D supplement  
+- Calcium supplement  
+- Multivitamin  
+
+(Other chronic medications listed in the electronic record such as lisinopril, amlodipine, metoprolol, and various renal transplant agents were not confirmed by the patient during this visit and are therefore not included in the active home medication list for this encounter.)  
+
+Vital Signs  
+No current vital signs were documented in the encounter note.  
+
+Physical Examination  
+General: Alert, in acute distress secondary to right hip pain.  
+HEENT: No head trauma, no facial bruising, pupils equal and reactive.  
+Neck: No tenderness.  
+Cardiovascular: Regular rate and rhythm; no murmurs noted.  
+Respiratory: Clear to auscultation bilaterally; no distress.  
+Abdomen: Soft, non‑tender, no distension.  
+Extremities: Right hip demonstrates swelling, mild erythema, and visible bruising. The overlying skin is warm compared with the left side. The right lower extremity appears slightly externally rotated. The patient is unable to bear weight on the right leg and demonstrates marked pain with passive and active range of motion at the hip (flexion, extension, abduction, adduction). No gross deformity is appreciated, but alignment is abnormal due to external rotation. No distal neurovascular deficits noted. Left lower extremity normal.  
+Skin: No additional rashes or lesions.  
+
+Laboratory Data (most recent values on record)  
+- Hemoglobin: 16.7 g/dL  
+- Hematocrit: not listed  
+- White blood cell count: 10.1 ×10³/µL  
+- Platelets: 199 ×10³/µL  
+- Electrolytes: Sodium 138 mmol/L, Chloride 111 mmol/L, Glucose 74 mg/dL, Creatinine 1.01 mg/dL  
+- Urinalysis: Negative for leukocyte esterase, nitrite, ketones, and glucose; pH 7.9  
+
+(These labs are historical and were not repeated during the current visit.)  
+
+Imaging  
+No imaging has been performed yet. A stat radiograph of the pelvis and right hip is indicated to confirm fracture type and displacement.  
+
+Assessment  
+1. Right hip fracture (likely intertrochanteric or femoral neck) secondary to mechanical fall, presenting with severe pain, swelling, and inability to weight‑bear.  
+2. Acute pain, uncontrolled (pain score 10/10).  
+3. Osteoarthritis, contributing to baseline joint degeneration.  
+4. Essential hypertension, currently managed with ramipril.  
+5. Past medical history of chronic kidney disease and cardiac disease (stable).  
+
+Plan  
+- **Imaging**: Obtain immediate anteroposterior pelvis and lateral hip X‑rays. If radiographs are inconclusive, proceed to CT of the hip for fracture characterization.  
+- **Orthopedic Consultation**: Prompt referral to orthopedic surgery for definitive management. Discuss operative options (internal fixation with screws/hip nail versus hemi‑ or total hip arthroplasty) based on fracture pattern, bone quality, and patient functional status.  
+- **Pain Management**: Initiate scheduled acetaminophen 650 mg PO q6h PRN for pain, and ibuprofen 400 mg PO q6h PRN if renal function permits (monitor creatinine). Consider short‑term opioid analgesia (e.g., oxycodone/acetaminophen) if pain remains uncontrolled.  
+- **Weight‑Bearing Precautions**: Enforce strict non‑weight‑bearing on the right lower extremity. Provide assistive device (walker or crutches) and arrange for safe transfer assistance.  
+- **DVT Prophylaxis**: Initiate low‑dose low‑molecular‑weight heparin (e.g., enoxaparin 40 mg SC daily) unless contraindicated, given immobility and advanced age.  
+- **Fall Risk Mitigation**: Evaluate home environment for hazards; arrange occupational therapy for fall‑prevention education.  
+- **Medical Optimization**: Review antihypertensive regimen; ensure blood pressure is controlled peri‑operatively. Verify renal function prior to NSAID use and adjust dosing as needed.  
+- **Laboratory Follow‑up**: Repeat basic metabolic panel and CBC prior to surgery to assess renal status and baseline hematology.  
+- **Disposition**: Admit to orthopedic service for observation, pain control, and definitive surgical planning.  
+- **Patient Education**: Discuss nature of hip fractures in elderly patients, the need for surgical repair, expected postoperative rehabilitation, and the importance of early mobilization once cleared. Reassure patient regarding pain control measures and support services.  
+- **Follow‑up**: Post‑operative follow‑up with orthopedic surgeon within 1–2 weeks after discharge, and primary care follow‑up within 4 weeks to reassess blood pressure, renal function, and overall recovery.  
+
+The above plan will be reviewed with the patient and his husband, and consent will be obtained for imaging and any subsequent interventions.

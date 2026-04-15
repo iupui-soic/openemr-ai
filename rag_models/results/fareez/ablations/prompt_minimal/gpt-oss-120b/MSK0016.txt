@@ -1,0 +1,182 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 04:23:01
+Time: 7.23s
+Tokens: 11,684 in / 2,835 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abe Huels  
+- **DOB:** 02 Sep 1961 (Age 62)  
+- **Sex:** Male  
+- **MRN:** 275  
+- **Location:** Stoughton, MA  
+
+---
+
+## S – Subjective
+
+### Chief Complaint
+“Numbness, tingling and a burning sensation in my left hand that’s been getting worse over the last few months.”
+
+### History of Present Illness (HPI)  
+- **Onset:** Approximately 4–5 months ago.  
+- **Location:** Left hand, primarily the thumb, index, and middle fingers; mild involvement of the ring finger.  
+- **Duration/Pattern:** Intermittent episodes lasting a few minutes initially; now occurs several times per day and occasionally awakens the patient at night (2–3 nights/week).  
+- **Quality:** Described as numbness/tingling “like a foot falls asleep” with a burning component; pain rated up to **6/10** at worst.  
+- **Severity:** Moderate; interferes with fine‑motor tasks (dropping objects, difficulty opening jars or car doors).  
+- **Aggravating Factors:** Repetitive wrist/finger motion at work (warehouse assembly), prolonged wrist flexion, use of the hand.  
+- **Relieving Factors:** Resting the hand, avoiding repetitive motion; over‑the‑counter analgesics (Advil®, Tylenol®) provide minimal relief. No benefit from cold compresses or topical agents (not tried).  
+- **Associated Symptoms:** No weakness noted on examination, but patient reports being “a bit clumsier.” No systemic symptoms (fever, weight loss, rash, visual/hearing changes, cough, dyspnea, chest pain, palpitations, GI upset, urinary changes). No similar prior episodes.  
+
+### Review of Systems (pertinent positives/negatives)  
+- **Constitutional:** No fever, chills, night sweats, recent weight loss.  
+- **Neurologic:** Positive for left‑hand numbness/tingling; negative for weakness, gait disturbance, dizziness, headache, memory change.  
+- **Musculoskeletal:** No swelling, erythema, or joint pain elsewhere.  
+- **Cardiovascular/Respiratory:** No chest pain, palpitations, dyspnea, cough, wheeze.  
+- **Gastrointestinal:** No nausea, vomiting, diarrhea, constipation, or GI bleed.  
+- **Genitourinary:** No dysuria or change in voiding.  
+- **Psychiatric:** PHQ‑2 = 2 (below threshold for major depression); GAD‑7 = 4 (minimal anxiety).  
+
+### Past Medical History  
+- **Hypothyroidism** – on Synthroid (levothyroxine).  
+- **Obesity (Class I)** – BMI 27.5.  
+- **Essential Hypertension** – on Lisinopril, Hydrochlorothiazide.  
+- **Hyperlipidemia** – on Simvastatin.  
+- **Coronary artery disease** – on Metoprolol succinate, Nitroglycerin PRN, Clopidogrel.  
+- **Type 2 diabetes/prediabetes** – on insulin (Humulin) and oral agents; microalbuminuria noted.  
+- **Chronic kidney disease / End‑stage renal disease** – status post renal transplant (Sept 2023); on tacrolimus, epoetin alfa.  
+- **Obstructive sleep apnea** – on CPAP (not documented here).  
+- **Other chronic issues:** chronic sinusitis, anemia, GERD‑type symptoms (not currently active).  
+
+### Surgical History  
+- Renal transplant (Sept 2023).  
+- No prior hand or wrist surgeries.  
+
+### Medications (home)  
+- Synthroid (levothyroxine) – dose not specified.  
+- Lisinopril 10 mg PO daily.  
+- Hydrochlorothiazide 25 mg PO daily.  
+- Metoprolol succinate ER 100 mg PO daily.  
+- Simvastatin 10 mg PO nightly (also 20 mg listed).  
+- Clopidogrel 75 mg PO daily.  
+- Nitroglycerin spray PRN.  
+- Tacrolimus (extended‑release) 1 mg PO daily.  
+- Epoetin alfa (injectable) as per transplant protocol.  
+- Insulin (Humulin) – dosing per glucose log.  
+- Naproxen sodium 220 mg PO as needed (used intermittently for pain).  
+- Ferrous sulfate 325 mg PO daily.  
+
+### Allergies  
+- No known drug, food, or environmental allergies reported.  
+
+### Family History  
+- **Father:** Hypercholesterolemia.  
+- **Grandfather:** Stroke in his 70s.  
+- No known hereditary neurological or autoimmune diseases.  
+
+### Social History  
+- **Tobacco:** 5–10 cigarettes/day for ~10 years; interested in quitting, has attempted reduction.  
+- **Alcohol:** One glass of wine on weekends (≈1 drink/week).  
+- **Illicit drugs:** None.  
+- **Living situation:** Married, lives with husband and two daughters in a house.  
+- **Occupation:** Warehouse employee (repetitive wrist/hand motions).  
+- **Exercise:** Minimal; limited by hand symptoms.  
+
+---
+
+## O – Objective
+
+### Vital Signs (most recent)  
+- **HR:** 76 bpm  
+- **RR:** 14 breaths/min  
+- **BP:** Not recorded in this encounter (last known within normal limits for hypertensive range).  
+- **Temp:** N/A  
+- **SpO₂:** N/A  
+- **Height:** 175 cm  
+- **Weight:** Not recorded; BMI 27.5 (obesity class I).  
+
+### Physical Examination  
+
+| System | Findings |
+|--------|----------|
+| **General** | Alert, cooperative, no acute distress. |
+| **Upper Extremities** | – **Left hand:** No erythema, swelling, or increased temperature. Mild decreased bulk over the thenar eminence. <br>– **Range of Motion (ROM):** Full at shoulder, elbow, wrist, and finger joints bilaterally. <br>– **Strength:** 5/5 in all muscle groups; patient reports occasional clumsiness but no objective weakness. |
+| **Neurologic (Focused)** | – **Sensory:** Decreased light‑touch sensation to the thumb, index, middle, and radial half of the ring finger on the left; normal on the right. <br>– **Special Tests:** Positive **Tinel’s sign** over the median nerve at the volar wrist (elicits tingling). Positive **Phalen’s maneuver** (60 s) reproduces numbness/tingling. |
+| **Cardiovascular, Respiratory, Abdomen, Skin, etc.** | No abnormal findings noted during brief focused exam (no murmurs, lung crackles, abdominal tenderness, rashes). |
+| **Extremities** | No edema, cyanosis, or clubbing. Pulses 2+ bilaterally. |
+
+### Laboratory Data (most recent)  
+
+| Test | Result | Comment |
+|------|--------|----------|
+| Glucose | 94.3 mg/dL | Within normal fasting range. |
+| Creatinine | 1.0 mg/dL | Stable for post‑transplant patient. |
+| BUN | 7.9 mg/dL | Normal. |
+| Electrolytes (Na 142.6, K 4.6, Cl 101.7, CO₂ 21.5) | Within normal limits. |
+| Calcium (serum) | 8.74 mg/dL (total) / 9.96 mg/dL (repeat) | Low‑normal. |
+| CBC – Hemoglobin 16.5 g/dL, Platelets 284 ×10³/µL, MCV 89 fL | Unremarkable. |
+| PHQ‑2 = 2, GAD‑7 = 4 | Low‑grade depressive/anxiety symptoms. |
+| Urinalysis – No leukocyte esterase, no bilirubin, no protein (consistent with stable renal function). |
+
+---
+
+## A – Assessment
+
+1. **Left Carpal Tunnel Syndrome (median nerve compression)** – supported by classic distribution (thumb, index, middle, radial half of ring), nocturnal symptoms, and positive Tinel’s and Phalen’s tests.  
+2. **Hypothyroidism**, well‑controlled on levothyroxine (no current symptoms).  
+3. **Obesity (BMI 27.5)** – contributing risk factor for CTS.  
+4. **Essential Hypertension** – controlled on Lisinopril/HCTZ.  
+5. **Hyperlipidemia** – on Simvastatin.  
+6. **Coronary Artery Disease** – on standard medical therapy.  
+7. **Type 2 Diabetes / Prediabetes** – on insulin regimen; glycemic control acceptable.  
+8. **Post‑Renal Transplant (ESRD history)** – stable graft function, on tacrolimus and epoetin.  
+9. **Obstructive Sleep Apnea** – on CPAP (not addressed today).  
+10. **Tobacco Use Disorder** – 5–10 cigarettes/day, motivated to reduce.  
+
+*Overall impression:* The patient’s symptom constellation and examination are most consistent with mild‑to‑moderate carpal tunnel syndrome, likely multifactorial (repetitive occupational use, obesity, hypothyroidism). No red‑flag neurologic findings (e.g., motor deficit, thenar atrophy beyond mild bulk loss) are present.
+
+---
+
+## P – Plan
+
+### 1. Carpal Tunnel Syndrome – Conservative Management  
+- **Activity modification:** Counsel patient to take frequent micro‑breaks during repetitive tasks; avoid prolonged wrist flexion; consider ergonomic adjustments (e.g., cushioned wrist rests, neutral‑wrist positioning).  
+- **Splinting:** Night‑time **wrist cock-up splint** to maintain neutral position; trial for 4–6 weeks.  
+- **Pharmacologic:** Continue **naproxen 220 mg PO q8h PRN** for pain if needed (ensure no GI contraindication).  
+- **Hand therapy:** Referral to occupational therapy for nerve gliding exercises and ergonomic education.  
+- **Follow‑up:** Re‑evaluate in **4–6 weeks**; if symptoms persist or worsen, discuss **corticosteroid injection** of the carpal tunnel or consider electrophysiologic studies (nerve conduction) prior to any surgical referral.  
+
+### 2. Risk Factor Optimization  
+- **Weight management:** Offer dietary counseling (calorie‑controlled diet) and low‑impact exercise program (e.g., stationary bike) compatible with hand symptoms.  
+- **Smoking cessation:** Provide nicotine‑replacement therapy options, counseling, and referral to the state tobacco‑quitline.  
+- **Hypothyroidism:** Verify TSH in 6 months; adjust levothyroxine dose if labs suggest sub‑ or hyper‑replacement.  
+
+### 3. Chronic Disease Management (review of current regimen)  
+- **Hypertension:** Continue Lisinopril/HCTZ; check BP at home, target <130/80 mmHg.  
+- **Hyperlipidemia:** Continue Simvastatin; obtain lipid panel in 3 months.  
+- **Diabetes/Insulin:** Review glucose logs; consider endocrinology follow‑up if glycemic variability noted.  
+- **Post‑transplant meds:** Continue tacrolimus and epoetin per transplant protocol; monitor trough levels per transplant clinic.  
+
+### 4. Preventive Health  
+- **Vaccinations:** Up‑to‑date (annual influenza confirmed).  
+- **Screenings:** Continue age‑appropriate cancer screenings (colonoscopy, prostate, etc.).  
+- **Bone health:** Given long‑term steroid exposure (if any) and renal disease, consider DEXA scan in next year.  
+
+### 5. Patient Education & Resources  
+- Provided written hand‑care instructions, splint use, and ergonomic tips.  
+- Discussed signs that would warrant earlier return: increasing weakness, worsening night pain, new numbness in other digits, or loss of grip strength.  
+
+### 6. Follow‑up Appointments  
+- **Primary care:** Return visit in 4–6 weeks for CTS reassessment and medication review.  
+- **Occupational therapy:** Schedule within next week.  
+- **Transplant clinic:** As per established schedule (typically every 1–3 months).  
+
+---
+
+**Signature:**  
+Dr. External Provider, MD  
+Date: 20 Apr 2024  
+
+---

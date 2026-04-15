@@ -1,0 +1,99 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:20:05
+Time: 3.05s
+Tokens: 18,494 in / 1,392 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+Right upper quadrant abdominal pain of eight hours duration.  
+
+History of Present Illness  
+The patient reports that she first noticed an aching pain in the right upper portion of her abdomen approximately eight hours ago. The pain began as intermittent and has since become constant for the past five to six hours, with a severity rating of 8 out of 10. She describes the pain as an aching quality, not sharp or dull, and reports that it does not radiate to other areas. The pain is aggravated by eating, particularly after consuming fatty foods such as burgers or fries, and she has had similar, though less intense, episodes in the past that were relieved by avoidance of fatty meals. No medication other than Tylenol, which provided no relief, has been tried. She denies vomiting, fever, chills, diarrhea, constipation, or changes in urinary habits. She reports mild nausea but no vomiting. She is not feeling febrile and has not measured her temperature. She reports a slight sense of fatigue related to the pain but otherwise denies constitutional symptoms such as weight loss or night sweats.  
+
+Review of Systems  
+Constitutional: mild fatigue, no fever, no weight loss.  
+Respiratory: no cough, wheeze, or shortness of breath.  
+Cardiovascular: denies chest pain, palpitations, or edema.  
+Gastrointestinal: right upper quadrant abdominal pain, mild nausea, no vomiting, no diarrhea, no constipation, no melena, no changes in appetite.  
+Genitourinary: no dysuria, no hematuria, no change in urine color.  
+Skin: no rash, no jaundice.  
+Other: denies headaches, dizziness, or neurological deficits.  
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with metformin.  
+Chronic kidney disease stage 3 (estimated GFR 36.9 mL/min/1.73 m²).  
+Hypertension, treated with lisinopril.  
+Gastroesophageal reflux disease.  
+Obesity (BMI 27.9).  
+Metabolic syndrome.  
+Chronic pain and chronic intractable migraine without aura.  
+Chronic obstructive bronchitis.  
+
+Surgical History  
+Removal of wisdom teeth in adolescence. No other surgeries.  
+
+Social History  
+Lives alone in an apartment. Currently unemployed due to COVID-related layoff. Engages in regular exercise, running when weather permits. Consumes 1–2 glasses of wine per night, no tobacco use, no recreational drug use.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other significant hereditary conditions.  
+
+Allergies  
+No known drug allergies.  
+
+Medications  
+- Metformin (dose not specified).  
+- Insulin glargine/regular (Humulin) – dosage not specified.  
+- Lisinopril 10 mg daily.  
+- Albuterol inhaler (5 mg/ML solution).  
+- Fluticasone/salmeterol inhaler (0.25 mg/actuat / 0.05 mg/actuat).  
+- Sodium fluoride oral gel.  
+- Acetaminophen/dextromethorphan/doxylamine oral solution (dose 1 unit).  
+- No other current medications reported.  
+
+Physical Examination  
+No information available.  
+
+Laboratory Results  
+- Estimated glomerular filtration rate: 36.9 mL/min/1.73 m².  
+- Serum creatinine: 1.97 mg/dL.  
+- Serum urea nitrogen: 7.05 mg/dL.  
+- Serum sodium: 136 mmol/L.  
+- Serum chloride: 104 mmol/L.  
+- Urine specific gravity: 1.038.  
+- Urine protein: 214.8 mg/dL.  
+- Urine ketones: 0.93 mg/dL.  
+- Urine glucose: 1.53 mg/dL.  
+- Urine protein/creatinine ratio not reported.  
+- Serum glucose: 66.6 mg/dL.  
+- Calcium: 9.27 mg/dL.  
+
+Assessment  
+The patient presents with acute right upper quadrant abdominal pain that has worsened over the past six hours, is aggravated by fatty foods, and is associated with mild nausea. In the absence of fever, leukocytosis, or significant laboratory abnormalities, the most likely diagnosis is biliary colic due to gallstones, with the possibility of acute cholecystitis. Differential diagnoses include peptic ulcer disease, pancreatitis, hepatic pathology, or musculoskeletal pain. Her chronic kidney disease and diabetes increase the risk for complications and influence analgesic choice.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, or pericholecystic fluid.  
+2. Continue acetaminophen for pain control; avoid NSAIDs because of reduced renal function.  
+3. Encourage oral hydration and a low-fat diet while pain persists.  
+4. Monitor vital signs and repeat laboratory studies (CBC, CMP, amylase/lipase) if symptoms worsen or if fever develops.  
+5. Refer to gastroenterology for further evaluation if ultrasound findings are suggestive of gallstones or cholecystitis.  
+6. Educate patient on signs of worsening condition (fever, increasing pain, vomiting, jaundice) that warrant immediate medical attention.  
+7. Schedule a follow-up appointment within 48–72 hours to review imaging results and reassess pain management.  
+
+Discharge Instructions  
+- Take acetaminophen as needed for pain, not exceeding the recommended daily limit.  
+- Avoid high-fat meals; opt for small, frequent, low-fat meals.  
+- Maintain adequate hydration.  
+- If pain becomes severe, fever develops, or vomiting occurs, seek urgent care.  
+- Continue current medications for diabetes, hypertension, and COPD as prescribed.  
+
+Follow‑up Instructions  
+Return to the clinic or urgent care within 48–72 hours for review of ultrasound findings and to discuss further management. If symptoms worsen before the scheduled visit, contact the clinic or seek emergency care.

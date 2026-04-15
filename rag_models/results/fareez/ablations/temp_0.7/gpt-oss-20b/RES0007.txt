@@ -1,0 +1,105 @@
+Model: openai/gpt-oss-20b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 04:18:48
+Time: 2.62s
+Tokens: 7,698 in / 1,539 out
+============================================================
+
+Patient Information  
+Name: Abby Ondricka  
+Date of Birth: January 16, 2003 (21 years old)  
+Sex: Female  
+Address: 564 Breitenberg View, Westfield, Massachusetts 01086  
+Date of Encounter: April 18, 2024  
+
+Chief Complaint  
+Abby presents for a routine evaluation of her asthma, which she reports has been intermittently symptomatic for several months. She reports difficulty breathing during physical activity, especially during gym class, as well as in cold weather and when exposed to cats.
+
+History of Present Illness  
+Abby was diagnosed with asthma as a child and believed she had outgrown it. Recently, she has experienced shortness of breath during exertion, particularly in gym class when attempting to run fast. She reports that the breathing difficulty resolves within a few minutes after she stops or slows down. She has also noted episodes of chest tightness and wheeze when outdoors in cold weather and when she was around cats at a friend’s house. These episodes are not associated with cough, fever, night sweats, or other systemic symptoms. She has used an inhaler during gym class, although she is unsure whether she is using a rescue inhaler or a maintenance inhaler and how often. She has not had nighttime symptoms or nocturnal cough. She denies recent infections, gastrointestinal symptoms, or urinary complaints. She reports no fever or chills. She has not experienced any rashes or significant itching except for occasional seasonal allergic symptoms in spring.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight loss, or fatigue reported.  
+Respiratory: Reports exertional dyspnea, chest tightness, wheeze in cold air and around cats. No cough, sputum, hemoptysis, or nocturnal symptoms.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel changes.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Psychiatric: No suicidal ideation.  
+Sexual: Currently sexually active with one partner; uses condoms consistently.  
+Social: Lives with parents and younger brother; attends high school, 11th grade. Recreational alcohol use is occasional; no tobacco or recreational drug use.  
+
+Allergies  
+Patient reports allergic reactions to cats. OpenEMR records multiple environmental allergens, including mold, house dust mite, animal dander, grass pollen, tree pollen, wheat, and tree nuts.  
+
+Past Medical History  
+- Asthma (childhood onset, currently active)  
+- Atopic dermatitis (resolved 2021)  
+- Perennial allergic rhinitis (resolved 2022)  
+- Seasonal allergic rhinitis (current)  
+- No other significant chronic medical conditions.  
+
+Surgical History  
+- Wisdom teeth extraction (date unspecified).  
+
+Family History  
+- Father had childhood asthma; no current respiratory disease.  
+- Mother has seasonal allergic rhinitis.  
+- No known familial cardiac, metabolic, or oncologic disease.  
+
+Social History  
+- Non‑smoker.  
+- Occasional alcohol consumption (beer at parties).  
+- No recreational drug use.  
+- Lives with parents and brother.  
+- Student in 11th grade.  
+
+Current Medications  
+- Yaz 28‑Day Pack (oral contraceptive)  
+- Fexofenadine 30 mg oral tablet (antihistamine)  
+- Epinephrine auto‑injector (for anaphylaxis)  
+- (Patient reports using an inhaler, but exact product and dosing unclear; likely albuterol rescue inhaler and possibly fluticasone maintenance inhaler per prior prescriptions, though these were discontinued in 2015 in the record).  
+
+Objective Findings  
+Vital Signs  
+- Heart rate: 99 bpm (recorded 2015; no recent vitals available).  
+- Respiratory rate: 13 breaths/min (recorded 2015).  
+- Temperature, blood pressure, SpO₂, weight, and height not available at this encounter.  
+
+Physical Examination  
+No physical examination data were recorded during this encounter.  
+
+Laboratory Results  
+Recent laboratory panel shows the following values:  
+- Hemoglobin: 13.66 g/dL (normal)  
+- Hematocrit: 45.2 % (normal)  
+- White blood cell count: 5.63 ×10³/µL (normal)  
+- Platelets: 186.95 ×10³/µL (normal)  
+- Mean corpuscular volume: 83.8 fL (normal)  
+- Mean corpuscular hemoglobin: 31.1 pg (normal)  
+- Mean corpuscular hemoglobin concentration: 35.6 g/dL (normal)  
+- Red cell distribution width: 45.6 % (slightly elevated but within acceptable limits).  
+- Platelet distribution width: 182.4 fL (within normal).  
+- Comprehensive metabolic panel values not provided.  
+
+Imaging  
+No imaging studies were performed during this encounter.  
+
+Assessment  
+Primary Diagnosis: Asthma, likely moderate persistent with exercise‑induced bronchospasm, cold‑induced bronchospasm, and allergen‑triggered episodes.  
+Secondary Diagnoses: Seasonal allergic rhinitis, history of atopic dermatitis, and potential exercise‑induced asthma.  
+The patient’s asthma remains symptomatic with intermittent use of a rescue inhaler and unclear adherence to a maintenance regimen. No nocturnal symptoms or severe exacerbations have been reported.  
+
+Plan  
+1. Clarify inhaler therapy: Confirm the specific inhaler(s) the patient is using (rescue vs. maintenance), the dosing schedule, and the correct usage technique.  
+2. Initiate or resume a daily inhaled corticosteroid (e.g., fluticasone 100 µg twice daily) as maintenance therapy, with a short‑acting β₂‑agonist (albuterol) as needed for acute symptoms.  
+3. Educate patient on inhaler technique, importance of adherence, and trigger avoidance (cold air, pets, exercise).  
+4. Schedule spirometry with bronchodilator response testing within 2 weeks to assess lung function and guide medication titration.  
+5. Discuss potential impact of asthma on military enlistment; refer to a pulmonologist or military medical liaison for eligibility counseling.  
+6. Reinforce asthma action plan: identify early warning signs, use of rescue inhaler, when to seek urgent care, and when to call emergency services.  
+7. Review allergy management: consider allergen avoidance strategies, possible nasal corticosteroids for seasonal rhinitis, and evaluation for allergy testing if symptoms persist.  
+8. Follow‑up appointment in 4 weeks to review spirometry results, medication adherence, and symptom control.  
+9. Provide written instructions and educational materials regarding asthma management and trigger avoidance.  
+
+Disposition  
+The patient was advised to continue current oral medications (Yaz, fexofenadine, epinephrine auto‑injector) and to follow up with the clinic as scheduled. No discharge instructions were required as the patient is not admitted.

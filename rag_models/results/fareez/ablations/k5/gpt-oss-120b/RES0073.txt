@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-120b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:29:25
+Time: 4.87s
+Tokens: 13,883 in / 1,599 out
+============================================================
+
+Patient Information  
+Aaron Bartoletti, a 44‑year‑old male (DOB 08‑03‑1981) residing at 409 Veum Drive, Spencer, MA 01562. He is employed full‑time at a grocery store and lives alone in an apartment just outside of London, MA.
+
+Chief Complaint  
+Congestion, facial pressure/pain, and nasal discharge of five days’ duration.
+
+History of Present Illness  
+The patient reports that his symptoms began approximately five days ago with a clear, watery nasal discharge that progressed to marked nasal congestion involving both nostrils. Over the past two days he has developed increasing pressure and pain localized to the cheeks, maxillary region, and the area just superior to his upper teeth, radiating toward the jaw. He describes the pain as pressure‑type rather than sharp and notes that it worsens when he lies down. He also experiences post‑nasal drip, especially on awakening, and intermittent obstruction that forces him to turn his head to breathe through the less congested nostril during the night. Approximately three days into the illness he noted a reduction in his sense of smell, though taste remains intact. He denies cough, sore throat, wheezing, shortness of breath, chest pain, fever, chills (aside from brief episodes of chills), weight loss, nausea, vomiting, abdominal pain, diarrhea, urinary symptoms, rash, joint or muscle aches, or generalized fatigue. He mentions mild eye redness and itching. He has had a similar self‑limited episode about two years ago that resolved without medical intervention. He is concerned about the need for medication or testing.
+
+Review of Systems  
+Constitutional: No documented fever, chills brief, no weight loss, no fatigue.  
+HEENT: Nasal congestion, clear to whitish nasal discharge, post‑nasal drip, facial pressure/pain over maxillary sinuses, decreased sense of smell, eye redness and mild itching, no sore throat, no cough.  
+Respiratory: No wheezing, no shortness of breath at rest.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+Genitourinary: No dysuria or urinary changes.  
+Musculoskeletal: No joint or muscle pain, no weakness.  
+Neurologic: No dizziness or headache reported.  
+Dermatologic: No rash.  
+Psychiatric: No mood changes reported; PHQ‑9 score recorded previously at 24 indicating severe depressive symptoms, but not addressed in this encounter.
+
+Past Medical History  
+- Essential hypertension  
+- Dyslipidemia (patient reports use of a statin)  
+- Chronic migraine without aura  
+- History of chronic kidney disease (stage 1‑4) and renal transplant (status post) – currently not detailed for active management  
+- Prior viral sinusitis episodes (2017, 2021)  
+
+Surgical History  
+No surgical procedures reported in the current encounter. Historical dental procedures and gingival disease are noted in the record but are not pertinent to the present visit.
+
+Medications (current per medication list)  
+- Statin medication for dyslipidemia (specific agent not listed)  
+- Hydrochlorothiazide 25 mg daily (antihypertensive)  
+- Amlodipine 2.5 mg daily (antihypertensive)  
+- Multivitamin supplement  
+- Historical immunosuppressants (tacrolimus) and amoxicillin/clavulanate are listed as active until 2018 and therefore not considered current therapy.
+
+Allergies  
+No known medication or environmental allergies reported.
+
+Family History  
+No known family history of lung disease, heart disease, or cancer.
+
+Social History  
+The patient lives alone. He quit smoking several years ago and does not use tobacco currently. He consumes red wine a few times per week and occasionally smokes a cannabis joint (once or twice per month). He reports no illicit drug use beyond occasional cannabis. He has no recent travel and reports no sick contacts at work or home. He follows workplace COVID‑19 precautions.
+
+Physical Examination  
+No physical exam findings documented in this encounter.
+
+Vital Signs  
+Heart rate: 85 beats per minute  
+Respiratory rate: 14 breaths per minute  
+Temperature: Not measured at this visit  
+Blood pressure, SpO₂, weight, and height not recorded during the encounter.
+
+Laboratory Data (most recent)  
+- Lipid panel: HDL 62 mg/dL, LDL 98 mg/dL, total cholesterol 186 mg/dL, triglycerides 131 mg/dL  
+- CBC: Hemoglobin 16.4 g/dL, WBC 3.5 ×10³/µL (low‑normal), platelets 209 ×10³/µL  
+- Chemistry: Within normal limits for electrolytes and renal parameters (historical values)  
+- Mental health screening: PHQ‑9 24 (severe depression), PHQ‑2 4, GAD‑7 3 (mild anxiety) – noted but not addressed in this visit.
+
+Assessment  
+1. Acute sinusitis – most likely bacterial given the progression from a clear rhinorrhea to marked nasal obstruction, facial pressure/pain, and hyposmia over several days, with a brief period of relative improvement followed by worsening.  
+2. Hypertension, well‑controlled on hydrochlorothiazide and amlodipine.  
+3. Dyslipidemia, on statin therapy.  
+4. Chronic migraine without aura.  
+5. History of renal transplantation and chronic kidney disease (stable, no acute concerns noted).  
+6. Mood disorder – severe depressive symptoms per PHQ‑9 (plan to address at a future visit).
+
+Plan  
+- Obtain a measured oral temperature at home; advise patient to return for re‑evaluation if temperature exceeds 38 °C (100.4 °F) or if symptoms markedly worsen.  
+- If fever or signs of bacterial infection are present, initiate empiric therapy with amoxicillin‑clavulanate (dose per standard adult sinusitis guidelines) or an appropriate alternative based on allergy status.  
+- Symptomatic treatment: Saline nasal irrigation three times daily, intranasal corticosteroid spray (e.g., fluticasone) if not already used, and oral decongestant (pseudoephedrine) as needed, provided no contraindications.  
+- Advise continued adequate hydration and use of analgesics such as acetaminophen or ibuprofen for facial pain, unless contraindicated.  
+- Encourage sleep in a semi‑upright position to reduce post‑nasal drip and nasal congestion.  
+- Follow‑up in 48–72 hours either via telehealth or in‑person to reassess symptom trajectory and determine need for antibiotics.  
+- Continue current antihypertensive regimen and statin; ensure medication adherence.  
+- Arrange mental health follow‑up given PHQ‑9 score; consider referral to counseling or psychiatry.  
+- Reinforce smoking abstinence, limit alcohol intake, and continue occasional cannabis use with awareness of potential airway irritation.  
+- No further laboratory or imaging studies are indicated at this time unless clinical status changes.  
+
+Patient was instructed on how to monitor his temperature, use saline irrigation, and when to seek urgent care (e.g., high fever, worsening facial swelling, vision changes). He verbalized understanding and agreed with the plan.

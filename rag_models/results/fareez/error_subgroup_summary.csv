@@ -1,0 +1,7 @@
+group,n,mean_acc,mean_overall
+EHR INCLUDED (overreach),110,2.764,3.273
+EHR correctly IGNORED,7,3.143,3.286
+Fabrication,101,2.277,2.901
+Pairing artefact (gender mismatch),3,2.333,3.0
+No EHR-overreach AND no fabrication,291,2.567,3.179
+ALL ratings,480,2.55,3.148

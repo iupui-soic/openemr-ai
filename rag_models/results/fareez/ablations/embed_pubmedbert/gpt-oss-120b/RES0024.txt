@@ -1,0 +1,105 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 03:50:56
+Time: 5.25s
+Tokens: 11,865 in / 1,546 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti  
+Date of Birth: 03 August 1981 (Age 44)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+
+Chief Complaint  
+Sudden loss of smell (anosmia) for the past two days, accompanied by loss of taste.
+
+History of Present Illness  
+Aaron reports that two days ago he first noticed an inability to smell anything. He tested his sense of smell by biting an onion and could not detect any odor, and he also could not taste his food. He denies feeling ill otherwise. He mentions a mild sense of fatigue and a vague feeling of being “a little hot,” but he does not have an objective fever. He has not experienced cough, shortness of breath, chest pain, sore throat, nasal congestion, rhinorrhea, headache, nausea, vomiting, diarrhea, abdominal pain, urinary symptoms, or any skin changes beyond his chronic eczema. He has not been exposed to anyone known to be ill; his boyfriend and other contacts are asymptomatic. He has no recent travel or known COVID‑19 exposure. He is concerned because loss of smell and taste are reported symptoms of COVID‑19 infection.
+
+Review of Systems  
+- Constitutional: Mild fatigue, no documented fever, no chills, no night sweats, no recent weight change.  
+- ENT: Anosmia and ageusia present; no sore throat, rhinorrhea, nasal congestion, ear pain, or eye pain.  
+- Respiratory: No cough, dyspnea, or wheezing.  
+- Cardiovascular: No chest pain, palpitations, or known heart disease.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, frequency, or urgency.  
+- Musculoskeletal: No joint pain or muscle aches.  
+- Neurological: No headache, dizziness, or focal deficits.  
+- Dermatologic: Chronic eczema, no new rash.  
+- Psychiatric: No reported anxiety or depression symptoms during this encounter.  
+
+Past Medical History  
+- Atopic dermatitis (eczema) – chronic, intermittent flares treated with topical steroid cream.  
+- Peanut allergy – known IgE‑mediated allergy; carries an epinephrine autoinjector.  
+
+Surgical History  
+- No prior surgeries reported.
+
+Medications  
+- Combined oral contraceptive pill (started approximately three years ago).  
+- Topical corticosteroid cream for eczema flares (used intermittently, about twice weekly during winter).  
+
+Allergies  
+- Peanut – anaphylactic reaction in childhood; carries epinephrine autoinjector.  
+- No known drug allergies.
+
+Family History  
+- Paternal uncle with prostate cancer.  
+- No reported family history of cardiovascular, pulmonary, or other malignancies.
+
+Social History  
+- Lives with boyfriend; no other household members.  
+- No tobacco use.  
+- Occasionally consumes marijuana in edible form; does not smoke.  
+- Drinks alcohol socially, approximately two beers on weekends.  
+- Sexually active with boyfriend; no history of sexually transmitted infections.  
+- No illicit drug use.  
+
+Vital Signs (most recent documented)  
+- Heart Rate: 85 beats per minute  
+- Respiratory Rate: 14 breaths per minute  
+- Height: 179.8 cm  
+- Body Mass Index: 28.8 kg/m² (overweight)  
+- Blood Pressure, Temperature, SpO₂, and Weight: Not available at this visit.
+
+Physical Examination  
+No physical examination findings were recorded during this encounter.  
+**No information available.**
+
+Laboratory and Imaging Data  
+- Recent laboratory panel (date not specified) showed:  
+  • CBC within normal limits except a low normal white blood cell count (3.5 ×10³/µL).  
+  • Lipid profile: HDL 62 mg/dL, LDL 98 mg/dL, total cholesterol 187 mg/dL, triglycerides 131 mg/dL.  
+  • PHQ‑9 score 24 (severe depressive symptoms) and PHQ‑2 scores ranging from 1‑4, indicating possible major depressive disorder.  
+  • GAD‑7 scores of 1‑3, indicating minimal anxiety.  
+- No imaging studies performed during this visit.  
+
+Assessment  
+1. **Acute loss of smell and taste (anosmia, ageusia) – probable viral etiology**  
+   - The most likely cause is acute SARS‑CoV‑2 infection given the characteristic presentation and current community prevalence.  
+   - Differential diagnosis includes other viral upper respiratory infections, allergic rhinitis, or early sinusitis, though no accompanying nasal symptoms are present.  
+
+2. **Peanut allergy** – stable, patient carries epinephrine autoinjector.  
+
+3. **Atopic dermatitis** – chronic, currently managed with intermittent topical steroids.  
+
+4. **Severe depressive symptoms (PHQ‑9 = 24)** – incidental finding; warrants further evaluation and possible psychiatric referral.  
+
+Plan  
+- **Diagnostic testing:** Order a nasopharyngeal PCR test for SARS‑CoV‑2 today. Results are expected within 48 hours.  
+- **Isolation precautions:** Instruct patient to self‑isolate at home for a minimum of 14 days from the onset of symptoms, or until meeting CDC criteria for discontinuation of isolation (symptom‑based strategy). Emphasize the importance of mask use, hand hygiene, and limiting contact with others, especially the boyfriend, until test results are known.  
+- **Symptomatic care:** Encourage adequate hydration, soft bland foods, and use of saline nasal rinses if mild nasal irritation develops. No specific pharmacologic therapy is indicated for isolated anosmia.  
+- **Red‑flag monitoring:** Advise patient to seek immediate medical attention if fever >38 °C, worsening dyspnea, chest pain, new cough, persistent vomiting, or neurologic changes develop.  
+- **Allergy management:** Continue to carry epinephrine autoinjector; review emergency action plan for peanut exposure.  
+- **Dermatology:** Continue current eczema regimen; apply topical steroid as needed for flares.  
+- **Mental health:** Given the PHQ‑9 score indicating severe depression, arrange a follow‑up appointment with primary care or a mental health provider within the next week for formal assessment and possible initiation of therapy. Provide crisis line information.  
+- **Medications:** No new prescriptions at this time. Continue oral contraceptive and topical steroid as currently used.  
+- **Follow‑up:**  
+  • Call back with SARS‑CoV‑2 test result within 48 hours.  
+  • If test is positive, reinforce isolation guidance and discuss eligibility for antiviral therapy if criteria are met (e.g., high‑risk comorbidities – which the patient currently denies).  
+  • If test is negative and symptoms persist beyond 10 days or worsen, consider evaluation for other causes (e.g., sinus imaging, ENT referral).  
+  • Schedule mental health follow‑up within one week.  
+
+Patient was given verbal education regarding COVID‑19 testing, isolation, and red‑flag symptoms, and all questions were answered to his satisfaction.

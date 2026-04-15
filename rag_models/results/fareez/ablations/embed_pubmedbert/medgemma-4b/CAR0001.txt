@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 06:28:26
+Time: 37.03s
+Tokens: 9,471 in / 654 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+The patient is a 39-year-old male presenting with chest pain.
+
+Chief Complaint:
+
+The patient's chief complaint is chest pain.
+
+History of Present Illness:
+
+The patient reports experiencing chest pain that started last night and has been becoming sharper. The pain is located on the left side of the chest and has been constant for the past couple of hours. The patient describes the pain as sharp. He has not tried any specific interventions to alleviate the pain, but found that laying down makes the pain worse. The pain is not radiating. He denies any other factors that worsen the pain, such as deep breaths or taking a deep breath. The pain started when he was moving furniture around. He denies any injury or trauma to the chest or back. The pain is rated as a 7 or 8 on a scale of 1 to 10, representing moderate to severe pain. Associated symptoms include lightheadedness and some difficulty breathing. He denies loss of consciousness, racing heart, or sweating. He reports the difficulty breathing started with the chest pain. He denies any recent immobilization. He denies any infectious symptoms, such as fever or chills. He denies nausea or vomiting. He denies abdominal pain, urinary problems, or bowel problems. He denies a cough and denies any blood in his sputum. He denies a wheeze with his difficulty breathing. He denies any changes to the breath sounds. He denies any prior episodes of similar chest pain. He denies night sweats. He denies any rashes or skin changes. He denies neck pain. He denies any trauma to the neck. The patient denies any prior medical conditions, hospitalizations, or surgeries. He takes no medications and has no known allergies. He is up to date on his immunizations. He lives in an apartment by himself and supports himself financially as an accountant. He smokes a pack of cigarettes per day and occasionally uses marijuana (5 milligrams per week). He denies the use of other recreational drugs or intravenous drugs. He drinks alcohol, approximately 10 drinks per week. He has tried to eat healthy for dinner at least, but most of his lunches are eaten out. He exercises every other day, running for about half an hour. The patient's father had a heart attack at age 45.
+
+Past Medical History:
+
+The patient denies any prior medical conditions, hospitalizations, or surgeries.
+
+Medications:
+
+The patient denies taking any regular medications.
+
+Allergies:
+
+The patient denies any known drug allergies.
+
+Family History:
+
+The patient's father had a heart attack at age 45.
+
+Social History:
+
+The patient is a 39-year-old male who is a smoker (1 pack per day for 10-15 years) and occasional marijuana user (5 milligrams per week). He drinks alcohol approximately 10 drinks per week. He is an accountant.
+
+Physical Exam:
+
+No information available.
+
+Assessment:
+
+The patient is presenting with chest pain, possibly cardiac in origin, and associated symptoms of lightheadedness and difficulty breathing. Further evaluation is warranted.
+
+Plan:
+
+The patient needs further evaluation for the cause of his chest pain. This may include an electrocardiogram (ECG), chest X-ray, and cardiac enzymes.

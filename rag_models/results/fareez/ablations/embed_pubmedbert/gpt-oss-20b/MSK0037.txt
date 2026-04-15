@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 03:57:12
+Time: 4.36s
+Tokens: 33,841 in / 1,343 out
+============================================================
+
+Patient Information  
+Name: Adan Wehner  
+Date of Birth: February 7, 1923 (Age 103)  
+Sex: Male  
+Address: 738 Lehner Avenue, Apt 69, Groton, Massachusetts 01450  
+
+Chief Complaint  
+Difficulty extending the right fourth and fifth digits, accompanied by mild aching pain and nodules at the bases of those fingers.  
+
+History of Present Illness  
+Mr. Wehner reports that the difficulty began approximately two months ago and has been steadily worsening. He describes an aching type of pain that becomes more pronounced when attempting to extend the fourth and fifth fingers. He has noticed small nodules at the bases of these digits, which he describes as whitish when the fingers are extended. The nodules are not tender to touch, and there is no associated redness, swelling, or warmth. He denies radiation of pain to the hand or forearm, numbness, tingling, or weakness. Mr. Wehner has not experienced any recent trauma or acute injury to the hand. He notes a catching sensation during extension of the fingers, but no overt clicking or locking. The discomfort interferes with his ability to work as a construction worker and causes frustration, though the pain intensity is minimal.  
+
+Review of Systems  
+Constitutional: No fevers, chills, night sweats, weight loss, or fatigue.  
+Neurologic: No numbness, tingling, or weakness in the hand or upper extremity.  
+Cardiovascular: Denies chest pain, palpitations, dizziness, or lightheadedness.  
+Respiratory: No shortness of breath, wheezing, cough, or sore throat.  
+Gastrointestinal: No abdominal pain, diarrhea, constipation, or nausea.  
+Urinary: No dysuria, frequency, or hematuria.  
+Dermatologic: No rashes, redness, or skin changes.  
+Musculoskeletal: No pain in other joints or muscles.  
+
+Past Medical History (from electronic health record)  
+Hypertension, diabetes mellitus type 2, chronic kidney disease stage 4, hyperlipidemia, obesity (BMI 27.6), osteoarthritis of the hand, coronary artery disease, ischemic heart disease, chronic pain, and other chronic conditions documented over many years.  
+
+Surgical History  
+Anterior cruciate ligament (ACL) repair at approximately 18 years of age.  
+
+Social History  
+Mr. Wehner is a 103‑year‑old construction worker employed full‑time for the past decade. He lives with his wife in a small apartment. He smokes one pack of cigarettes daily for the past 10 years, uses marijuana a few times per month, and consumes one to three alcoholic beverages daily. He denies illicit intravenous drug use or other recreational substances. He has no recent travel or known exposure to infectious illness.  
+
+Family History  
+No known family history of musculoskeletal, autoimmune, or neurologic disease.  
+
+Current Medications  
+- Atorvastatin (statin) – only home medication reported by the patient.  
+
+Physical Examination  
+Vital signs were not documented during this visit.  
+Inspection of the right hand revealed no swelling, erythema, or skin changes. Nodular, whitish masses were noted at the bases of the right fourth and fifth digits. No muscle wasting or joint deformity was observed.  
+Palpation of the nodules elicited mild discomfort but no significant pain.  
+Range of motion testing showed limited active extension of the fourth and fifth digits. Passive extension elicited more pain than active movement, but no sharp or burning sensations. There was a mild catching sensation during extension.  
+No crepitus, crackling, or other abnormal joint sounds were noted. The wrist and elbow were normal, with no tenderness or swelling.  
+Neurologic exam of the upper extremity was normal with intact sensation and strength.  
+
+Laboratory Results  
+Serum creatinine: 2.22 mg/dL (elevated, indicative of reduced renal function).  
+Estimated glomerular filtration rate (MDRD): 24.4 mL/min/1.73 m² (CKD stage 4).  
+Serum glucose: 120.41 mg/dL (borderline elevated).  
+Serum urea nitrogen: 8.18 mg/dL (normal).  
+Serum calcium: 9.82 mg/dL (normal).  
+Serum sodium: 137.22 mmol/L (normal).  
+Serum potassium: 4.42 mmol/L (normal).  
+Serum chloride: 104.51 mmol/L (normal).  
+Serum bicarbonate: 21.86 mmol/L (slightly low).  
+Urinalysis: glucose 1.6 mg/dL (trace), ketones 16.2 mg/dL (positive), bilirubin 0.54 mg/dL (trace). Other parameters were within normal limits.  
+
+Imaging  
+No imaging studies were obtained or documented during this encounter.  
+
+Assessment  
+The clinical presentation, physical examination findings, and the presence of nodules at the bases of the fourth and fifth digits are most consistent with Dupuytren's contracture affecting the right hand. Differential considerations include trigger finger and flexor tenosynovitis; however, the absence of significant pain, swelling, redness, or acute inflammation makes these less likely. The patient's occupational exposure and chronic use of vibrating tools are risk factors for this condition.  
+
+Plan  
+1. Conservative management with hand physiotherapy focusing on stretching and mobilization of the affected digits.  
+2. Activity modification to reduce repetitive gripping and vibration exposure at work.  
+3. Continue current statin therapy for hyperlipidemia.  
+4. Monitor renal function: repeat serum creatinine and eGFR in 3 months; consider nephrology consultation if further decline.  
+5. If conservative measures fail or contracture progresses, referral to a hand surgeon for possible intralesional collagenase injection or surgical fasciectomy will be discussed.  
+6. Patient education on signs of infection or worsening contracture (e.g., increased pain, redness, swelling) that would warrant immediate evaluation.  
+7. Follow‑up appointment in 4 to 6 weeks with hand therapy and primary care to assess symptom progression and review labs.  
+
+No additional imaging or laboratory work is required at this time beyond routine monitoring of renal function and glycemic control.  
+
+---

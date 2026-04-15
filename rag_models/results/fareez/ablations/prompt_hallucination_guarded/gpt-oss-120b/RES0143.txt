@@ -1,0 +1,64 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:25:51
+Time: 3.53s
+Tokens: 6,469 in / 915 out
+============================================================
+
+Patient Information  
+Aaron McClure.  The patient is a university student currently residing at his parents’ home while attending virtual classes. No other demographic details were provided during the encounter.
+
+Chief Complaint  
+Dry cough lasting approximately two weeks, with the addition of a clear, watery nasal discharge that began about one week ago.
+
+History of Present Illness  
+The patient reports a dry, non‑productive cough that started two weeks prior. He notes that the cough was most severe during the first week but has improved somewhat, although it remains persistent. Approximately one week after the onset of the cough, he developed a runny nose characterized by clear, light‑colored discharge. He denies any blood in the sputum. He reports occasional nasal congestion, which has occasionally reduced his sense of smell, although taste remains normal. He has not experienced sore throat, shortness of breath, chest pain, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, muscle aches, numbness, tingling, headache, visual changes, eye redness, or tearing. He denied fever for the majority of the illness; however, he recalls feeling chilly on two separate nights last week. He has not had night sweats or unintentional weight loss.
+
+Review of Systems  
+- Constitutional: No fever (except brief chills on two nights), no night sweats, weight stable.  
+- Respiratory: Dry cough for two weeks, clear nasal discharge for one week, mild congestion, no dyspnea, chest pain, or wheezing.  
+- ENT: No sore throat, no dysphonia, reduced sense of smell when congested, taste intact.  
+- Cardiovascular: No palpitations, no chest pain.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or constipation.  
+- Neurologic: No headache, no numbness or tingling.  
+- Other: No visual changes, eye symptoms, or rash.
+
+Past Medical History  
+The patient reports no chronic medical conditions and states he has been “completely healthy otherwise.” No prior surgeries were mentioned.
+
+Allergies  
+The patient denied any known drug, food, or environmental allergies.
+
+Medications  
+The patient is not currently taking any prescription, over‑the‑counter, herbal, or vitamin medications.
+
+Family History  
+Father has a history of high cholesterol. No other family medical history was reported.
+
+Social History  
+- Living situation: Currently living at home with both parents; normally resides in a dormitory.  
+- Tobacco: Tried smoking a few times recreationally; not a regular user.  
+- Marijuana: Experimented a few times (approximately four or five occasions); not a regular user.  
+- Alcohol: Consumes alcohol socially on weekends while at school; currently limited intake.  
+- Illicit drugs: Denies use.  
+- Recent exposure: Mother experienced “sniffles” last week but was not tested for COVID‑19.
+
+Objective  
+Physical examination, vital signs, and laboratory data were not performed or documented during this encounter.  
+*Not assessed during this encounter.*
+
+Assessment  
+1. Acute upper respiratory infection – most consistent with a common viral cold.  
+2. Rule‑out COVID‑19 infection given recent household exposure and overlapping symptoms.
+
+Plan  
+- Obtain a nasopharyngeal COVID‑19 swab to exclude SARS‑CoV‑2 infection.  
+- Advise the patient to self‑isolate at home pending test results and to limit close contact with household members, especially his parents.  
+- Perform a focused physical examination (including oral cavity, throat, and lung auscultation) during the visit to assess for signs of bacterial infection or complications.  
+- Explain that the current presentation is most likely viral; therefore, antibiotics are not indicated at this time.  
+- Provide supportive care recommendations: adequate hydration, humidified air, use of over‑the‑counter antitussive or decongestant agents as needed, and rest.  
+- Instruct the patient to monitor for any new or worsening symptoms such as fever >38 °C, shortness of breath, chest pain, or persistent high‑grade fever, and to seek medical attention promptly if these develop.  
+- Follow‑up: Patient to contact the clinic for COVID‑19 test results (expected within 24–48 hours) and to arrange a follow‑up visit if symptoms persist beyond 10 days or if any concerning features arise.  
+
+No new medications were prescribed during this encounter.

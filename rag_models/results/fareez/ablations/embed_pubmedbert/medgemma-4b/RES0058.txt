@@ -1,0 +1,44 @@
+Model: google/medgemma-4b-it
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 06:28:26
+Time: 30.97s
+Tokens: 8,360 in / 561 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Russel
+Date of Birth: 1952-11-14
+Medical Record Number: 92
+
+Chief Complaint: Loss of taste.
+
+History of Present Illness:
+
+The patient presents today complaining of a loss of taste, which began approximately two days ago. He reports that he can't taste anything, and that the food tastes like cardboard. He also mentions a dry cough that started about three or four days ago. He denies any trauma to the mouth or nose. He reports feeling tired and has been sleeping more. He also mentions some diarrhea this morning. He denies chest pain, wheezing, or shortness of breath. He feels a little dizzy when he gets out of bed, but it resolves quickly. He also mentions a hard time catching his breath after coughing.
+
+Past Medical History:
+
+The patient has a history of chronic kidney disease stage 1, chronic kidney disease stage 2, and microalbuminuria due to type 2 diabetes mellitus. He also has a history of essential hypertension and metabolic syndrome X. He had his appendix removed four years ago. He is up-to-date on his immunizations. He has a family history of lung cancer in his grandfather, who smoked his entire life, and diabetes. He is not currently taking any medications. He uses a vape every once in a while, and he is unsure if it contains tobacco or nicotine. He lives with his mom, step dad, and younger sister in a townhouse. He denies any issues with the living arrangements.
+
+Social History:
+
+The patient reports being around someone in his class who had a cough and fever last week. He has not traveled recently. He is otherwise healthy and denies any allergies. He has no pets at home. He denies any hospitalizations or surgeries in the past.
+
+Medications:
+
+The patient is not currently taking any medications.
+
+Family History:
+
+The patient's mother and father are not listed. He has no siblings. His grandfather had lung cancer.
+
+Assessment:
+
+The patient's symptoms suggest a possible upper respiratory infection, potentially complicated by his underlying chronic kidney disease. The loss of taste could be related to the infection or medication side effects. The diarrhea could be a symptom of the infection or a side effect of his medications.
+
+Plan:
+
+The physician recommends a COVID swab for the patient, regardless of whether the swab comes back positive or negative. The patient is instructed to isolate for 14 days. If the swab comes back positive, public health will be notified, and he will be traced to determine the source of the infection. If the swab comes back negative, the physician will work up for any bacterial infections that could be treated with antibiotics. The physician will continue to monitor the patient's symptoms and adjust the plan as needed.

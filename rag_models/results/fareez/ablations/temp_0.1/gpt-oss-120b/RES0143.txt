@@ -1,0 +1,72 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:04:59
+Time: 3.86s
+Tokens: 6,426 in / 1,153 out
+============================================================
+
+Patient Information  
+Name: Aaron McClure  
+Date of Birth: 1934-04-26 (age 91 years) – however, the patient describes himself as a university student currently living at home with his parents, indicating a likely error in the demographic record. For the purpose of this encounter, the patient is treated as an otherwise healthy young adult.  
+Sex: Male  
+Address: 839 Turner Stravenue, Springfield, Massachusetts 01106  
+
+Chief Complaint  
+Dry cough lasting two weeks with recent onset of clear rhinorrhea.
+
+History of Present Illness  
+The patient reports a dry, non‑productive cough that began approximately two weeks ago. He notes that the cough was most severe during the first week but has improved somewhat, although it persists. About one week after the cough started, he developed a clear, watery nasal discharge that has become more noticeable this week. He denies any hemoptysis, sore throat, dysphagia, or difficulty breathing. He has not experienced chest pain, palpitations, or gastrointestinal symptoms such as nausea, vomiting, diarrhea, or abdominal pain. He reports occasional mild chills on two nights last week but no sustained fever, night sweats, or unintentional weight loss. He notes mild nasal congestion that temporarily reduced his sense of smell, although taste remains normal. He denies headache, visual changes, eye redness, or tearing. He has not noticed any muscle aches, joint pain, or neurologic symptoms such as numbness or tingling. Overall, the symptom complex is consistent with an upper respiratory viral syndrome.
+
+Review of Systems  
+Constitutional: No fever, chills (except two brief episodes), night sweats, or weight loss.  
+Respiratory: Dry cough for two weeks, clear rhinorrhea for one week, mild nasal congestion; no dyspnea, wheezing, chest pain, or hemoptysis.  
+Cardiovascular: No palpitations, chest pain, or syncope.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+ENT: Clear nasal discharge, mild congestion, reduced sense of smell during congestion; no sore throat, dysphagia, or ear pain.  
+Neurologic: No headache, dizziness, weakness, numbness, or tingling.  
+Dermatologic: No rash.  
+Psychiatric: No anxiety or depression reported.  
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Past Medical History  
+The patient states he has been “completely healthy otherwise” and does not report any chronic medical conditions.
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+The patient is a university student currently residing at his parents’ home while attending virtual classes. He lives with his mother and father. He reports occasional experimentation with cigarettes (a few times) and marijuana (four to five times total) but no regular use. He drinks alcohol socially on weekends while at school. He denies use of other recreational drugs. No current medications, vitamins, or supplements are taken. No tobacco dependence. No recent travel outside the province.  
+
+Family History  
+Father has a history of high cholesterol. No other significant family medical history reported.
+
+Current Medications  
+The patient reports taking no prescription, over‑the‑counter, herbal, or vitamin medications.
+
+Vital Signs  
+No vital sign measurements were recorded during this encounter.
+
+Physical Examination  
+A focused physical examination was planned but not yet performed. Findings pending.
+
+Laboratory and Imaging Studies  
+No laboratory tests or imaging studies have been obtained at this time. A nasopharyngeal swab for SARS‑CoV‑2 PCR is ordered.
+
+Assessment  
+1. Common cold (viral upper respiratory infection) – presenting with a two‑week dry cough and recent clear rhinorrhea.  
+2. Rule out COVID‑19 infection – pending PCR result.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR to exclude COVID‑19; results expected within 24–48 hours.  
+- Advise self‑isolation at home until COVID‑19 results are available and the patient is afebrile for at least 24 hours. He should limit close contact with household members, especially his mother who recently had similar symptoms.  
+- Symptomatic treatment: Encourage adequate hydration, humidified air, and use of over‑the‑counter antitussive (e.g., dextromethorphan) or lozenges as needed for cough relief. Saline nasal spray or topical decongestants may be used for nasal congestion. Acetaminophen may be taken for any fever or discomfort.  
+- No antibiotics are indicated at this time, as the presentation is consistent with a viral process.  
+- Educate the patient on warning signs that would warrant earlier re‑evaluation: development of fever >38 °C, worsening cough with sputum production, shortness of breath, chest pain, hemoptysis, or new neurologic symptoms.  
+- Follow‑up: The patient should contact the clinic within 48 hours for COVID‑19 test results or sooner if symptoms worsen. If the test is negative and symptoms persist beyond three weeks, a repeat evaluation will be arranged.  
+- Documentation: Record the encounter, test order, and patient education in the medical record.  
+
+Disposition  
+The patient will remain at home under self‑isolation pending COVID‑19 test results and will be managed conservatively for a presumed viral upper respiratory infection. No immediate referral or hospital admission is required.

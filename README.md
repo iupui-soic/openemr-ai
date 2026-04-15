@@ -158,16 +158,16 @@ Results are aggregated across 3 independent runs using `rag_models/evaluation/ag
 | Qwen3 32B | 2.50(0.90) | 3.83(0.62) | 4.94(0.27) | 3.70(0.71) | 3.42(0.91) | 3.29(0.90) | 3.61 |
 | MedGemma 4B | 2.38(0.81) | 2.97(0.74) | 3.91(1.11) | 3.35(1.23) | 2.62(0.84) | 2.51(0.92) | 2.95 |
 
-**Inter-Rater Reliability (Gwet's AC2, ordinal weights):**
+**Inter-Rater Reliability (Gwet's AC2, ordinal weights). Interpretation labels follow Landis & Koch (1977):**
 
 | Dimension | AC2 | 95% CI | Interpretation |
 |-----------|-----|--------|----------------|
-| Organization | 0.971 | [0.960, 0.982] | Good |
-| Completeness | 0.874 | [0.851, 0.898] | Good |
-| Overall Quality | 0.770 | [0.729, 0.810] | Acceptable |
-| Clinical Utility | 0.758 | [0.720, 0.795] | Acceptable |
-| Accuracy | 0.708 | [0.663, 0.752] | Acceptable |
-| Conciseness | 0.654 | [0.612, 0.695] | Low |
+| Organization | 0.971 | [0.960, 0.982] | Almost perfect (note: ceiling effect — 240/480 ratings at 5.00) |
+| Completeness | 0.874 | [0.851, 0.898] | Almost perfect |
+| Overall Quality | 0.770 | [0.729, 0.810] | Substantial |
+| Clinical Utility | 0.758 | [0.720, 0.795] | Substantial |
+| Accuracy | 0.708 | [0.663, 0.752] | Substantial |
+| Conciseness | 0.654 | [0.612, 0.695] | Substantial (lowest of six dimensions; IR fellow rated 4.39 vs ER fellow 2.84 — a 1.55-pt systematic offset that suggests the construct lacks reliable anchoring on the 5-pt scale) |
 
 **Friedman Test** (significant dimensions): Organization (p<0.001, W=0.95), Completeness (p<0.001, W=0.74), Clinical Utility (p<0.001, W=0.43), Overall Quality (p<0.001, W=0.40)
 
@@ -202,6 +202,23 @@ Canonical numeric outputs and a reproducibility notebook:
 
 Findings: disabling retrieval degrades every metric for every model (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060). k=3 and k=5 substantially degraded quality vs. k=2. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
 
+### RAG Ablation Replication on Fareez n=40 (Table 2c)
+
+The n=6 ablation above was replicated on the 40 Fareez OSCE conversations used for clinician evaluation, with the four clinician-evaluated models (GPT-OSS-120B/20B, Qwen3-32B, MedGemma-4B) plus temperature/prompt sweeps on the top-2 models. **1,354 summaries across 12 cells × 4 models** (32 ablation cells in total).
+
+Canonical artefacts in [`rag_models/results/fareez/ablations/`](rag_models/results/fareez/ablations/):
+
+- `fareez_ablation_metrics.csv` — per-summary text + entity metrics (1,354 rows)
+- `table2c_means.csv` — per-(cell, model) means
+- `table2c_deltas.csv` — production-minus-cell deltas
+- `table2c_bootstrap_ci.csv` — paired bootstrap 95% CIs (B=5000)
+- `table2c_wilcoxon.csv` — Wilcoxon signed-rank p-values
+- `ablation_analysis_n40.ipynb` — reproducibility notebook
+
+**Headline result:** Of 136 production-vs-cell comparisons across 4 metrics, **only 26 (19%) had bootstrap CIs that excluded zero**, almost all in the prompt-variant cells (`prompt_minimal` 8/4, `prompt_hallucination_guarded` 6/4). The no-RAG, k-sweep, and embedding-substitution cells produced effects within run-to-run noise on the transcript-as-reference metric set. This is consistent with — and methodologically reinforces — the paper's central finding that automated metrics fail to discriminate the model-quality differences clinicians clearly identified (composite 2.95–3.74 on the same 40 conversations).
+
+The n=6 institutional ablation results (Table 2b, evaluated against gold-standard SOAP references) remain the more sensitive indicator of the RAG pipeline's contribution; the n=40 replication is a sensitivity check rather than a replacement.
+
 ```bash
 cd rag_models
 
@@ -235,6 +252,8 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 | Whisper Large v3 | OpenAI | Higher accuracy, slower than turbo |
 | Canary-1B-v2 | NVIDIA | Multi-task ASR from NeMo toolkit |
 | Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
+| **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); Fareez OOM on RNN-T decoder, CPU-mode pending |
+| **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); **best Fareez WER 14.50%** |
 | Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
 | MedASR | Google | Conformer architecture pre-trained for medical dictation |
 
@@ -267,29 +286,47 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 | Model | Success Rate | Avg WER |
 |-------|-------------|---------|
 | Parakeet TDT 1.1B | 57/57 | **17.06%** |
+| Parakeet TDT 0.6B v2 | 57/57 | 18.16% |
 | Groq Whisper | 57/57 | **18.87%** |
 | Whisper Large v3 Turbo | 57/57 | 21.00% |
 | Canary 1B v2 | 57/57 | 21.54% |
 | Whisper Large v3 | 57/57 | 22.28% |
+| Voxtral Mini 3B | 57/57 | 25.15% |
 | MedASR | 57/57 | 64.59% |
+
+#### Institutional Dataset — Voxtral added (6 Custom Medical Recordings)
+
+| Model | Avg WER |
+|-------|---------|
+| **Voxtral Mini 3B** | **5.71%** (best of any model on institutional) |
+| Parakeet TDT 1.1B | 8.30% |
+| Canary 1B v2 | 8.58% |
+| Groq Whisper v3 Turbo | 9.60% |
+| Whisper Edge | 9.93% |
+| Whisper Large v3 | 13.26% |
+| Whisper Large v3 Turbo | 14.02% |
+| MedASR | 44.01% |
 
 #### Fareez OSCE (272 Multi-Specialty Interviews, ~55 hours)
 
 | Model | Success Rate | Avg WER | Notes |
 |-------|-------------|---------|-------|
-| Groq Whisper | 272/272 | **19.54%** | FLAC compression for files >24MB |
+| **Voxtral Mini 3B** | **272/272** | **14.50%** | best Fareez WER; ~25 s/file inference on RTX 6000 |
+| Parakeet TDT 0.6B v2 | 251/272 | 18.63% | beats 1.1B parent at half the params; same OOM on longest 21 files (Modal A100) |
+| Groq Whisper | 272/272 | 19.54% | FLAC compression for files >24MB |
 | Parakeet TDT 1.1B | 251/272 | 20.17% | OOM on longest conversations (A100) |
 | Canary 1B v2 | 272/272 | 21.29% | |
 | Whisper Large v3 | 84/272 | 23.33% | Modal billing limit after 84 files |
 | Whisper Large v3 Turbo | 272/272 | 24.27% | |
 | MedASR | 272/272 | 47.53% | |
 
-**Key Findings:**
-- **Parakeet** and **Groq Whisper** are the top performers across both new datasets (17-20% WER)
-- **Canary** delivers consistent ~21% WER across all datasets with zero failures
-- **Whisper-turbo** and **Whisper-v3** perform similarly (21-24% WER) on medical conversations
-- **MedASR** has significantly higher WER on conversational speech (47-65%) vs shorter medical dictation
-- All models show higher WER on full conversations vs short utterances, as expected
+**Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
+- **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
+- **Parakeet TDT 1.1B** remains best on PriMock57 (17.06%) and is the recommended fallback for high-throughput / low-latency deployments (~1–3 s/file).
+- **Parakeet TDT 0.6B v2** beats its 1.1B parent on Fareez (18.63% vs 20.17%) at half the parameter count — recommended ASR if Voxtral's per-file latency is prohibitive.
+- **Canary** delivers consistent ~21% WER across all datasets with zero failures.
+- **MedASR** has significantly higher WER on conversational speech (47-65%) vs shorter medical dictation.
+- All models show higher WER on full conversations vs short utterances, as expected.
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
 

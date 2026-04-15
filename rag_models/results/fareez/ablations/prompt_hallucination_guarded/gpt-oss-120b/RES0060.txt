@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:25:30
+Time: 4.05s
+Tokens: 6,551 in / 1,327 out
+============================================================
+
+Patient Information:  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (age 24)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts  
+
+Chief Complaint:  
+Fever and cough of several days duration.
+
+History of Present Illness:  
+The patient reports that her cough began four days ago (Monday) and has progressively worsened. She measured a temperature of 38.5 °C (101.3 °F) this morning, noting that she has felt “hot” throughout the week. Fatigue and generalized tiredness have increased concomitantly with the cough. She denies a sore throat, dysphagia, or loss of appetite, although she notes she has been eating less because she is not hungry. Taste and smell are unchanged. She describes a mild rhinorrhea but no significant nasal congestion. The cough is dry, non‑productive, and has not been associated with hemoptysis, wheezing, or chest pain. She occasionally feels short of breath after coughing fits but otherwise denies dyspnea. Nighttime chills have occurred without night sweats. She has experienced mild nausea and a few episodes of feeling like she might vomit, but no vomiting has occurred. Headaches have been present intermittently over the past several days; they are described as a pressure‑type “vice‑grip” sensation, similar to her usual tension‑type headaches, and are relieved with ibuprofen (Advil). She reports mild body aches accompanying her fatigue. She has not identified any specific triggers that alleviate or worsen the cough.  
+
+The patient is concerned about the possibility of COVID‑19 infection. She reports recent exposure to public places (shopping at a mall) where masks were worn by most individuals, but she does not recall any known close contact with a person known to be ill. She has not traveled recently.
+
+Review of Systems:  
+- Constitutional: Fever (38.5 °C), chills, fatigue, mild body aches; no night sweats, no recent weight loss except a few pounds possibly related to decreased intake.  
+- Respiratory: Dry cough, worsening over four days, mild shortness of breath after coughing fits; no sputum, hemoptysis, wheezing, or chest pain. Mild rhinorrhea, no nasal obstruction.  
+- ENT: No sore throat, no dysphagia, no ear or eye pain/discharge, no vision or hearing changes.  
+- Gastrointestinal: Decreased appetite, nausea without vomiting, normal bowel movements, no abdominal pain.  
+- Neurologic: Tension‑type headaches, pressure‑like, intermittent; no dizziness, syncope, or confusion.  
+- Cardiovascular: No palpitations, chest pain, or edema.  
+- Dermatologic: No rash; known penicillin allergy causing hives.  
+- Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+
+Past Medical History:  
+- Hyperlipidemia, currently managed with rosuvastatin.  
+- Prediabetes (most recent A1C ≈ 6.2 % six months ago).  
+- Inguinal hernia repair performed approximately five years ago.  
+- Occasional tension‑type headaches, self‑treated with ibuprofen.  
+
+Surgical History:  
+- Inguinal hernia repair, ~5 years ago.  
+
+Medications (as reported):  
+- Rosuvastatin (dose not specified).  
+- Multivitamin.  
+- Ibuprofen as needed for headache.  
+
+Allergies:  
+- Penicillin – causes hives.  
+
+Social History:  
+- No tobacco use.  
+- No marijuana or other recreational drug use.  
+- Alcohol consumption: 2–3 beers on Saturdays and Sundays.  
+- Lives in a rented basement unit of a duplex with a girlfriend; no known mold or asbestos concerns in her unit.  
+- Works full‑time (as noted in background data, but not discussed during encounter).  
+
+Family History:  
+- Grandfather possibly had bladder cancer; otherwise no known family history of lung, cardiac, or other cancers.  
+
+Objective:  
+Vital Signs: Not assessed during this encounter.  
+Physical Examination: Not assessed during this encounter.  
+Laboratory/Imaging Data: No laboratory results or imaging studies were reviewed or obtained during this visit.  
+
+Assessment:  
+1. Acute bronchitis – likely viral in etiology, presenting with fever, dry cough, rhinorrhea, fatigue, and mild upper‑respiratory symptoms.  
+2. Rule out COVID‑19 infection – patient’s symptoms are compatible, and she expresses concern.  
+3. Prediabetes – stable, currently monitored.  
+4. Hyperlipidemia – controlled on rosuvastatin.  
+
+Plan:  
+- Obtain a nasopharyngeal COVID‑19 PCR swab today; advise patient that results will be available within 24 hours.  
+- Recommend self‑isolation for 14 days from symptom onset, including separation from household contacts, pending test results. Counsel that a negative test does not entirely exclude infection, but isolation remains prudent given symptomatology.  
+- Supportive care for acute bronchitis: increase fluid intake, rest, and use antipyretics/analgesics such as acetaminophen or ibuprofen for fever or headache as needed (patient already uses ibuprofen for headache).  
+- Advise patient to monitor for worsening respiratory symptoms (increasing shortness of breath, chest pain, new wheezing, or high‑grade fever) and to seek urgent medical attention if such signs develop.  
+- Continue current rosuvastatin and multivitamin; no changes to chronic medications at this time.  
+- Discuss lifestyle modifications for prediabetes at a later visit, including diet, exercise, and weight management.  
+- Follow‑up: Patient to contact clinic with COVID‑19 test result. If the test is positive, public health notification and contact tracing will be initiated. If negative and symptoms persist beyond 10 days or worsen, schedule a return visit for further evaluation, which may include consideration of bacterial superinfection and possible antibiotic therapy.  
+
+No further orders or prescriptions were made during this encounter.

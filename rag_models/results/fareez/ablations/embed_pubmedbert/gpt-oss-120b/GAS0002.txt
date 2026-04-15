@@ -1,0 +1,137 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:53:16
+Time: 4.89s
+Tokens: 8,378 in / 2,066 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Medical Record Number: 2046  
+Date of Birth: 16 April 1965 (Age 61)  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+Right‑upper quadrant (RUQ) abdominal pain of several days’ duration, acutely worsened over the past 3–4 hours, presenting to the Emergency Department.
+
+History of Present Illness  
+Mr. McGlynn reports a sharp, severe pain localized to the right upper quadrant, just inferior to the lower ribs. The discomfort began approximately three days ago, about 30–60 minutes after a midday meal. The pain was mild to moderate initially but has progressively intensified, reaching a current severity of 8/10. The pain has not radiated and is unchanged by position. He notes associated nausea over the past few days but denies any vomiting, hematemesis, or melena. Appetite has markedly decreased today, and he feels unusually fatigued and “drained” because of the pain. He has attempted over‑the‑counter analgesics (ibuprofen and acetaminophen) with minimal relief. He denies any recent travel, sick contacts, changes in urinary or bowel habits, hematochezia, rash, or skin changes. He has no prior similar episodes except a self‑limited episode several years ago that resolved without medical evaluation.
+
+Review of Systems  
+Constitutional: Positive for nausea, fatigue, decreased appetite; no fever, chills, or weight loss reported.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or edema.  
+Gastrointestinal: Positive for RUQ pain and nausea; negative for vomiting, dysphagia, heartburn, diarrhea, constipation, hematemesis, melena, hematochezia, or change in stool color.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Musculoskeletal/Neurologic: No weakness, paresthesias, or focal deficits.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depressive symptoms noted during this visit.  
+
+Past Medical History  
+- Cerebral palsy (persistent)  
+- Chronic pain (persistent)  
+- Spasticity (persistent)  
+- Osteoporosis  
+- Intellectual disability  
+- Gastroesophageal reflux disease (GERD)  
+- History of pneumonia (recurrent)  
+- Essential hypertension (treated)  
+- Chronic kidney disease (stages 1–4 historically, currently status unknown)  
+- Diabetes mellitus type 2 with microalbuminuria  
+- Prior renal transplant (2020) with subsequent graft failure and rejection (2020)  
+- Anemia (chronic)  
+- Severe anxiety/panic disorder (historical)  
+- Various dental and gingival conditions  
+
+Surgical History  
+- Vaginal deliveries (related to children) – no operative complications noted.  
+- No prior abdominal surgeries.  
+
+Social History  
+- Occupation: Bank consultant (full‑time).  
+- Living situation: Resides with partner and two children; supportive home environment.  
+- Tobacco: No current use.  
+- Alcohol: Consumes 1–2 glasses of wine nightly; does not feel a need to cut down and reports no cravings or morning use.  
+- Illicit drugs: None.  
+- Exercise: Not reported.  
+
+Family History  
+- Father: Died of stroke in his 60s.  
+- Mother: Known history of gallstones.  
+- No reported familial cardiovascular disease beyond the above.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications (home)  
+- Hydrochlorothiazide 25 mg PO daily (antihypertensive)  
+- Amlodipine 2.5 mg PO daily (antihypertensive)  
+- Glycopyrrolate 1.5 mg PO daily (sialorrhea control)  
+- Tacrolimus (extended‑release) 5 mg and 1 mg formulations, dosing schedule unspecified (immunosuppression)  
+- Acetaminophen 325 mg PO as needed (analgesic)  
+- Over‑the‑counter antacids as needed for heartburn (frequency: occasional, post‑dinner)  
+
+Vital Signs (recorded on 30 May 2024)  
+- Heart Rate: 94 beats/minute  
+- Respiratory Rate: 13 breaths/minute  
+- Blood Pressure: Not documented  
+- Temperature: Not documented  
+- SpO₂: Not documented  
+- Height: 177.7 cm (5 ft 10 in)  
+- Weight: Not documented (BMI previously recorded as 27.27)  
+
+Physical Examination  
+No detailed physical exam findings were documented in the transcript. Therefore: No information available.
+
+Laboratory Data (most recent values in the electronic record)  
+- White blood cells: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL (normal)  
+- Hematocrit: 40.1 % (normal)  
+- RBC count: 4.34 ×10⁶/µL (normal)  
+- Mean corpuscular volume: 94.5 fL (normocytic)  
+- Mean corpuscular hemoglobin: 28.35 pg (normal)  
+- MCHC: 34.2 g/dL (normal)  
+- Red cell distribution width: 39.9 fL (elevated, but reference range not provided)  
+- Platelets: 351 ×10³/µL (normal)  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL 168 mg/dL, HDL 58 mg/dL, triglycerides 130 mg/dL – indicating hyperlipidemia.  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+
+Imaging  
+No imaging studies were performed or documented during this encounter.  
+
+Assessment  
+1. Acute right‑upper quadrant abdominal pain – differential includes biliary colic/cholecystitis, gallstone pancreatitis, peptic ulcer disease, hepatic pathology, and musculoskeletal pain. The recent meal‑related onset and family history of gallstones raise suspicion for gallbladder disease.  
+2. Chronic kidney disease with prior renal transplant and ongoing immunosuppression (tacrolimus).  
+3. Hypertension, well‑controlled on current regimen.  
+4. Type 2 diabetes mellitus with microalbuminuria.  
+5. Hyperlipidemia.  
+6. Gastroesophageal reflux disease.  
+7. Chronic anemia.  
+
+Plan  
+- **Diagnostic Work‑up**: Obtain right upper quadrant abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, and biliary ductal dilation. If ultrasound is nondiagnostic and suspicion for pancreatitis remains, order serum lipase and consider abdominal CT if clinically indicated.  
+- **Laboratory Tests**: CBC with differential, CMP (including liver function tests and renal panel), serum lipase, and repeat inflammatory markers (CRP, ESR) to assess for possible cholecystitis.  
+- **Pain Management**: Continue acetaminophen 650 mg PO q6h as needed for pain; consider adding a short course of intravenous ketorolac if renal function permits and pain remains uncontrolled. Avoid NSAIDs if renal function is compromised.  
+- **Nausea**: Offer ondansetron 4 mg PO/IV q8h PRN.  
+- **Hydration**: Initiate IV normal saline bolus 1 L, then reassess hydration status.  
+- **Medication Review**: Verify tacrolimus trough level and adjust dosing as needed given potential interactions with new medications and renal function. Review antihypertensive regimen in the context of current volume status.  
+- **Dietary Advice**: Encourage a low‑fat diet pending definitive diagnosis; advance diet as tolerated.  
+- **Disposition**: Admit for observation and further evaluation if imaging confirms acute cholecystitis or if the patient cannot maintain adequate oral intake, has worsening pain, or shows laboratory evidence of infection. If imaging is negative and pain is manageable, consider discharge with close outpatient follow‑up.  
+- **Follow‑up**:  
+  * Outpatient gastroenterology or general surgery appointment within 1 week if discharged.  
+  * Nephrology follow‑up to monitor renal function and immunosuppression.  
+  * Primary care follow‑up for chronic disease management within 2 weeks.  
+
+Patient was educated on signs of worsening condition (increasing pain, fever, vomiting, jaundice) and instructed to return to the Emergency Department if any develop. All questions were answered to the patient’s satisfaction.  
+
+Discharge Instructions (if applicable)  
+- Continue current home medications as listed, except hold any non‑essential NSAIDs.  
+- Take acetaminophen for pain; use ondansetron for nausea as needed.  
+- Maintain adequate oral hydration; resume a bland, low‑fat diet as tolerated.  
+- Follow up with the scheduled appointments above.  
+
+Prepared by: ___________________________ (Emergency Medicine Provider)  
+Date: 30 May 2024

@@ -1,0 +1,141 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:46:49
+Time: 5.81s
+Tokens: 11,063 in / 2,107 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts  
+
+Chief Complaint  
+The patient presents with a three‑day history of worsening cough productive of dark green‑yellow sputum, shortness of breath, right‑sided chest pain, and fever.
+
+History of Present Illness  
+Three days ago (approximately Monday) the patient began to feel unwell, noting a new cough that is more frequent than his longstanding smoker’s cough. He reports coughing a “couple of times per hour,” producing sputum that is dark greenish‑yellow in color. The cough is associated with shortness of breath and a sharp, localized pain on the right side of the chest/upper abdomen that is aggravated by coughing and by taking a deep breath after a coughing episode. The pain is not present at rest and is not related to exertion. Over the past three days the symptoms have progressively worsened, with today being the worst. He measured a temperature of 38.6 °C (101.5 °F) at home. He denies any recent travel, known sick contacts, or identifiable triggers. He has taken acetaminophen (Tylenol) and ibuprofen (Advil) with modest relief of the pain but the respiratory symptoms persist. He has not taken any antibiotics or bronchodilators prior to this visit.
+
+Review of Systems  
+Constitutional: Fever reported (38.6 °C); no weight loss noted.  
+Respiratory: New productive cough with green‑yellow sputum, dyspnea on exertion and at rest, no wheezing reported by patient.  
+Cardiovascular: Sharp right‑sided chest pain associated with coughing; denies chest pain at rest or with exertion, no palpitations.  
+Gastrointestinal: No nausea, vomiting, abdominal pain aside from the described right‑sided discomfort.  
+Genitourinary: No dysuria or urinary frequency reported.  
+Neurologic: No headache, dizziness, or altered mental status.  
+Musculoskeletal: No joint pain reported.  
+Skin: No rashes.  
+Other: No recent changes in routine, no known allergies to medications.
+
+Past Medical History  
+- Type 2 diabetes mellitus, on metformin, an SGLT‑2 inhibitor, and insulin.  
+- Essential hypertension, treated with amlodipine (and likely other antihypertensives per record).  
+- Chronic kidney disease (stage 4) with prior renal transplant.  
+- Ischemic heart disease with prior coronary artery bypass graft.  
+- Heart failure.  
+- Severe anxiety/panic disorder.  
+- History of recurrent urinary tract infections.  
+- Prior bronchitis associated with long‑term smoking.  
+
+Surgical History  
+- Coronary artery bypass graft surgery (date not specified).  
+- Renal transplant (date not specified).  
+
+Social History  
+- Tobacco: 30‑pack‑year smoking history, currently smoking approximately one pack per day for the past 30 years.  
+- Alcohol: Denies alcohol use.  
+- Illicit drugs: Denies use.  
+- Occupation: Volunteer work at a homeless shelter several times per week, exposing him to many individuals.  
+- Living situation: Resides at home with his wife.  
+
+Family History  
+- Father: Myocardial infarction in his 70s.  
+- Mother: Hypertension.  
+- No known family history of chronic lung disease.  
+
+Allergies  
+Patient reports environmental allergies; no known drug allergies.
+
+Current Medications (home)  
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (dose not specified)  
+- Insulin (dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Hydrochlorothiazide 25 mg daily  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Simvastatin 20 mg daily  
+- Nitroglycerin 0.4 mg spray as needed  
+- Multivitamin daily  
+- Occasionally acetaminophen and ibuprofen for pain (self‑medicated)  
+
+Objective  
+
+Vital Signs (recorded at the time of the encounter)  
+- Temperature: 38.6 °C (patient‑reported)  
+- Heart Rate: 62 beats/min (from prior EMR record; no current measurement)  
+- Respiratory Rate: 16 breaths/min (from prior EMR record; no current measurement)  
+- Blood Pressure: Not documented in this encounter  
+- SpO₂: Not documented  
+- Weight: Not documented  
+
+Physical Examination  
+No physical examination findings were documented in the transcript. No bedside examination data are available.  
+
+Laboratory Results (most recent values available in the record)  
+- White blood cell count (derived from neutrophils and lymphocytes): low‑normal neutrophils 2.79 ×10³/µL, lymphocytes 22.8 % (absolute lymphocyte count not calculated).  
+- Hemoglobin 13.5 g/dL, Hematocrit 40.4 %, RBC 4.74 ×10⁶/µL.  
+- Platelet count not provided.  
+- Ferritin markedly elevated at 1547 µg/L.  
+- Serum creatinine not directly listed; estimated GFR 9.5 mL/min/1.73 m² indicating severe renal impairment.  
+- Bicarbonate 23.6 mmol/L, CO₂ pressure 35.7 mm Hg.  
+- Electrolytes: Calcium 8.66 mg/dL; other electrolytes not listed.  
+- Liver enzymes: AST 20 U/L, ALP 55 U/L, Albumin 4.62 g/dL.  
+- INR markedly elevated at 4.70.  
+- No microbiology results are available from this encounter.
+
+Imaging  
+No imaging studies (e.g., chest radiograph) were performed or documented at the time of this visit.
+
+Assessment  
+The patient is an elderly male with multiple comorbidities (diabetes, chronic kidney disease stage 4, heart disease, and a long‑term smoking history) who presents with an acute three‑day history of productive cough, fever, dyspnea, and pleuritic‑type right‑sided chest pain. The clinical picture is most consistent with community‑acquired pneumonia, likely bacterial given the purulent green‑yellow sputum and fever. The presence of hypoxemia, acute respiratory distress, and a markedly elevated INR suggest a higher risk for complications. His severe renal dysfunction and elevated INR require careful selection of antimicrobial therapy and monitoring.
+
+Plan  
+
+Medications  
+- Initiate empiric broad‑spectrum antibiotics appropriate for community‑acquired pneumonia in a patient with advanced renal impairment (e.g., ceftriaxone 1 g IV daily with dose adjustment, plus azithromycin 500 mg IV daily). Specific agents to be selected by the attending physician based on local resistance patterns and renal dosing guidelines.  
+- Continue home antihypertensive regimen (amlodipine, metoprolol, hydrochlorothiazide) and heart failure therapy as tolerated.  
+- Hold agents that may further increase INR until coagulation status is re‑evaluated; consider reversal of anticoagulation if clinically indicated.  
+- Provide acetaminophen 650 mg PO q6h PRN for pain/fever, avoiding NSAIDs given renal disease.  
+- Continue insulin and metformin as per diabetes protocol, with frequent glucose monitoring.  
+
+Diagnostics and Monitoring  
+- Obtain a chest radiograph urgently to confirm infiltrate and assess extent of pneumonia.  
+- Order a complete blood count with differential, basic metabolic panel, liver function panel, and repeat INR.  
+- Perform arterial blood gas if respiratory status worsens.  
+- Consider sputum culture and Gram stain if feasible.  
+- Monitor vital signs q4h, including temperature, heart rate, respiratory rate, blood pressure, and pulse oximetry.  
+
+Supportive Care  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 92 % (adjust flow as needed).  
+- Encourage fluid intake as tolerated, mindful of cardiac and renal status.  
+- Educate patient on deep‑breathing exercises and incentive spirometry if available.  
+
+Disposition  
+Given the patient’s advanced age, comorbidities, and elevated INR, admission for close monitoring, intravenous antibiotics, and possible correction of coagulopathy is recommended. If the patient remains hemodynamically stable, with improving respiratory parameters and manageable pain, discharge with close outpatient follow‑up can be considered after a minimum of 48 hours of observation.
+
+Follow‑Up Instructions  
+- Follow up with primary care provider within 48 hours of discharge.  
+- Return to the emergency department immediately if fever recurs, shortness of breath worsens, chest pain becomes more severe, or if there is any new confusion or dizziness.  
+- Arrange a follow‑up chest radiograph in 7‑10 days to document resolution.  
+
+Discharge Instructions  
+- Complete the full course of prescribed antibiotics.  
+- Continue home antihypertensive and heart failure medications unless instructed otherwise.  
+- Monitor blood glucose closely; adjust insulin as directed by diabetes team.  
+- Avoid smoking; consider referral to smoking cessation resources.  
+- Maintain adequate hydration; limit fluid overload if shortness of breath increases.  
+- Keep all follow‑up appointments and bring a list of current medications to each visit.  
+
+No information available for: detailed physical exam findings, current blood pressure, pulse oximetry, weight, and imaging results.

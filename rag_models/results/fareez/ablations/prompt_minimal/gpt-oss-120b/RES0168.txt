@@ -1,0 +1,110 @@
+Model: openai/gpt-oss-120b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 04:22:25
+Time: 5.12s
+Tokens: 11,546 in / 1,770 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Bartoletti  
+- **DOB:** 08‑03‑1981 (Age 44)  
+- **Sex:** Male  
+- **MRN:** 28  
+- **Address:** 409 Veum Drive, Spencer, MA 01562  
+
+---
+
+### Subjective  
+
+**Chief Complaint:** “It feels like I have a sinus infection again.”  
+
+**History of Present Illness (HPI):**  
+Aaron reports a several‑week history of progressive nasal congestion, purulent (green‑ish) nasal discharge, facial pressure over the frontal sinuses, and a frontal “sinusy” headache that sometimes radiates across the face. He denies cough, wheezing, shortness of breath, chest pain, or fever higher than a low‑grade temperature of **99.7 °F** measured at home last night. He notes post‑nasal drip that makes his throat feel “stingy” but no classic sore‑throat symptoms. He has tried his usual home measures—saline nasal rinses and a short course of over‑the‑counter nasal decongestant (≤3 days per label) – with little relief. He previously used a nasal steroid spray with good effect but stopped because he had been infection‑free for a period. He takes occasional ibuprofen for knee pain and uses a cannabis oil capsule roughly once a month for recreational purposes and occasional knee discomfort. No new sick contacts, recent travel, or environmental exposures (new carpet, mold, smoke).  
+
+**Review of Systems (pertinent positives / negatives):**  
+
+| System | Positive Findings | Negative Findings |
+|--------|-------------------|-------------------|
+| **Constitutional** | Low‑grade fever (99.7 °F) | No weight loss, no chills |
+| **ENT** | Nasal obstruction, purulent discharge, frontal facial pressure/pain, post‑nasal drip, decreased sense of smell while congested | No epistaxis, no ear pain, no vision changes, no hearing loss |
+| **Respiratory** | Congestion | No cough, no dyspnea, no wheeze |
+| **GI** | Normal bowel movements | No nausea, vomiting, abdominal pain |
+| **Genitourinary** | Normal urination | No dysuria |
+| **Neurologic** | Frontal headache | No dizziness, no syncope |
+| **Cardiovascular** | None | No chest pain, no palpitations |
+| **Skin** | None | No rash |
+
+**Past Medical History** (selected, relevant):  
+- Essential hypertension (diagnosed 2003)  
+- End‑stage renal disease with successful kidney transplant (2018) – currently on immunosuppression (tacrolimus)  
+- Chronic migraine without aura  
+- Prior ACL reconstruction (right knee)  
+
+**Past Surgical History:**  
+- ACL repair (date unspecified)  
+- Kidney transplant (2018)  
+
+**Allergies:**  
+- Mild cat dander sensitivity (no anaphylaxis)  
+
+**Medications (current per chart):**  
+- Hydrochlorothiazide 25 mg PO daily (HTN)  
+- Amlodipine 2.5 mg PO daily (HTN)  
+- Tacrolimus 1 mg extended‑release PO daily (post‑transplant immunosuppression)  
+- Occasional ibuprofen (Adv​il) PRN for knee pain  
+- Saline nasal irrigation (home)  
+
+**Social History:**  
+- Non‑smoker, no illicit drug use (aside from occasional cannabis oil capsule).  
+- Alcohol: 5–6 beers on weekends.  
+- Lives with wife and teenage son; dog (labradoodle) in home; no recent sick contacts; works from home.  
+
+**Family History:**  
+- No known family history of cardiac, pulmonary, or renal disease.  
+
+---
+
+### Objective  
+
+| Parameter | Finding |
+|-----------|---------|
+| **Vital Signs (most recent in chart)** | HR 85 bpm; RR 14 /min; BMI 28.8 kg/m²; Temperature not recorded in clinic (patient‑reported 99.7 °F). |
+| **General** | Alert, oriented, appears mildly uncomfortable due to facial pressure. |
+| **HEENT** | External nose: no deformity. Nasal mucosa: congested with purulent (green) discharge noted on irrigation. No septal perforation. Oropharynx: mild erythema from post‑nasal drip, no exudate. No tonsillar enlargement. No cervical lymphadenopathy. |
+| **Lungs** | Clear to auscultation bilaterally, no wheezes or rales. |
+| **Cardiovascular** | Regular rate and rhythm, no murmurs. |
+| **Abdomen** | Soft, non‑tender, no organomegaly. |
+| **Extremities** | No edema. Knee incision well healed. |
+| **Neuro** | Cranial nerves II‑XII grossly intact; no focal deficits. |
+| **Skin** | No rashes or lesions. |
+
+*No laboratory studies or imaging were performed during this encounter.*  
+
+---
+
+### Assessment  
+
+1. **Acute Bacterial Rhinosinusitis (ABRS)** – frontal sinus predominance, >7 days of purulent nasal discharge, facial pain/pressure, low‑grade fever, and failure of conservative therapy (saline rinses, short‑course decongestant).  
+2. **Essential Hypertension**, controlled on hydrochlorothiazide and amlodipine.  
+3. **Kidney Transplant – Stable**, on tacrolimus; renal function currently stable (no labs drawn today).  
+4. **Cat Allergy (mild)** – environmental trigger, not presently active.  
+
+---
+
+### Plan  
+
+| Item | Details |
+|------|---------|
+| **Diagnostics** | • Nasopharyngeal SARS‑CoV‑2 PCR swab performed today (results expected in 24‑48 h). |
+| **Pharmacologic Therapy** | • **Amoxicillin‑Clavulanate 875 mg/125 mg PO** twice daily for **7 days** (or if penicillin‑allergic, consider doxycycline 100 mg BID). <br>• **Fluticasone propionate nasal spray** 2 sprays each nostril once daily for 14 days (restart after antibiotics are initiated). <br>• Continue **saline nasal irrigation** 2–3 times daily. <br>• **Ibuprofen 400 mg PO** q6‑8 h PRN for sinus headache (max 1200 mg/day) if needed, provided renal function remains stable. |
+| **Non‑pharmacologic** | • Maintain adequate hydration; elevate head of bed; avoid exposure to known cat allergens. <br>• Limit use of topical decongestants to ≤3 days to prevent rebound congestion. |
+| **Monitoring** | • Watch for worsening fever (>101 °F), increasing facial swelling, purulent drainage that becomes foul‑smelling, or new ocular symptoms – seek urgent care. <br>• Review tacrolimus trough level at next transplant follow‑up (not altered by current sinus treatment). |
+| **Follow‑up** | • Return visit in **7 days** (or sooner if symptoms worsen) to assess response to antibiotics and consider imaging (CT sinuses) if no improvement. <br>• COVID‑19 test results will be communicated electronically. |
+| **Education** | • Discuss the typical natural course of ABRS vs. viral sinusitis. <br>• Reinforce proper technique for saline irrigation and nasal spray administration. |
+| **Immunizations** | • Verify up‑to‑date status for influenza, COVID‑19 booster, and pneumococcal vaccines at next primary‑care visit. |
+| **Referrals** | • None at this time; ENT referral only if symptoms persist beyond 10 days or complications develop. |
+
+**Signature:**  
+Dr. [Provider Name], MD  
+Date: 2024‑04‑14 (documented)

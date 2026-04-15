@@ -1,0 +1,54 @@
+Model: qwen/qwen3-32b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:44:40
+Time: 4.51s
+Tokens: 13,566 in / 1,238 out
+============================================================
+
+Patient Information  
+The patient is a 107-year-old female, Adela Tapia, residing at 517 Hills Trace, Stoneham, Massachusetts 02180. She is accompanied by her daughter and works part-time at a grocery store. She has a significant history of chronic obstructive pulmonary disease (COPD), essential hypertension, and gastroesophageal reflux disease (GERD). She is a long-term smoker, currently smoking one pack per day for approximately 30 to 40 years. She has a history of multiple hospitalizations for chest colds, for which she has previously received antibiotic treatment. She denies any recent travel or known exposure to sick individuals.
+
+Chief Complaint  
+The patient presents with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough with yellowish-green sputum. She reports that her symptoms have progressively worsened over the past few days and that her usual inhaler has not provided significant relief. She also notes a subjective feeling of feverishness over the past couple of days.
+
+History of Present Illness  
+The patient reports the onset of symptoms five days ago, with progressive worsening of shortness of breath and chest discomfort. The shortness of breath is exertional and is not present at rest. She describes the chest discomfort as a sensation of congestion rather than sharp or stabbing pain. The cough is productive, with sputum production approximately equal to the size of a palm with each episode. The sputum is yellowish-green in color and not bloody. She denies hemoptysis, orthopnea, paroxysmal nocturnal dyspnea, or any nocturnal gasping for air. She has not experienced any wheezing, dizziness, syncope, or palpitations. She denies any nausea, vomiting, diarrhea, or changes in appetite or sleep. She has not experienced any recent weight loss or gain. She has not had any recent dental or oral symptoms. She denies any recent trauma or injury. She reports a subjective feeling of feverishness but has not measured her temperature. She denies any recent sore throat, rhinorrhea, or other upper respiratory symptoms.
+
+Past Medical History  
+The patient has a long-standing history of COPD, diagnosed approximately three years ago. She is currently managed with Ventolin and Symbicort. She also has a history of essential hypertension, managed with an ACE inhibitor. She has a history of GERD, for which she occasionally uses over-the-counter antacids such as Tums. She has a complex medical history, including a history of myocardial infarction, coronary artery bypass grafting, chronic kidney disease, and a renal transplant. She has a history of multiple dental issues, including gingivitis and dental caries. She also has a history of social and domestic stressors, including reports of intimate partner abuse and social isolation.
+
+Medications  
+The patient is currently taking the following medications: Ventolin, Symbicort, an ACE inhibitor for hypertension, and Tums for GERD. She also has several long-term medications, including donepezil, memantine, tacrolimus, simvastatin, valsartan, and metoprolol, among others.
+
+Allergies  
+The patient reports no known drug allergies.
+
+Social History  
+The patient is a long-term smoker, currently smoking one pack per day for approximately 30 to 40 years. She consumes alcohol occasionally, primarily wine with dinner on weekends. She lives with her daughter and is employed part-time at a grocery store. She reports a history of social isolation and limited social contact.
+
+Family History  
+The patient denies any family history of lung or heart disease, cancer, or diabetes.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, night sweats, or unintentional weight loss.  
+Respiratory: The patient reports shortness of breath on exertion, productive cough with yellowish-green sputum, and chest discomfort. She denies hemoptysis, wheezing, or orthopnea.  
+Cardiovascular: The patient denies chest pain, palpitations, syncope, or edema.  
+Gastrointestinal: The patient denies nausea, vomiting, diarrhea, or changes in appetite.  
+Genitourinary: The patient denies dysuria, hematuria, or changes in urination.  
+Neurological: The patient denies headaches, dizziness, or changes in vision.  
+Musculoskeletal: The patient denies joint pain or muscle aches.  
+Dermatological: The patient denies rashes or skin changes.  
+Hematologic: The patient denies easy bruising or bleeding.  
+Endocrine: The patient denies changes in appetite or weight.  
+Psychiatric: The patient denies depression, anxiety, or mood changes.  
+Other: The patient denies any recent trauma or injury.
+
+Objective  
+Vital signs were not recorded in the OpenEMR extract. Physical examination findings were not provided in the transcript. Laboratory results included normal electrolytes, glucose, creatinine, and liver enzymes. Imaging was not performed in the current encounter.
+
+Assessment  
+The patient is presenting with symptoms consistent with an exacerbation of COPD, possibly complicated by a concurrent respiratory infection. The presence of productive cough with yellowish-green sputum, feverishness, and worsening shortness of breath suggests a possible bacterial exacerbation. Given her history of COPD and the recent worsening of symptoms, a workup for pneumonia, including chest imaging and sputum cultures, is warranted. A COVID-19 test is also indicated given the overlap in symptoms.
+
+Plan  
+The patient will be evaluated in the emergency department for further assessment, including a chest X-ray, complete blood count, and sputum culture. She will receive nebulized bronchodilators and possibly antibiotics if infection is suspected. She will be monitored for response to treatment and for the need for hospital admission. Discharge instructions will include follow-up with her primary care provider and adherence to prescribed medications. She will be advised to continue smoking cessation efforts and to monitor her symptoms for any further deterioration.

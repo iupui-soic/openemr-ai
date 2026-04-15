@@ -1,0 +1,50 @@
+Model: qwen/qwen3-32b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:38:45
+Time: 4.04s
+Tokens: 11,869 in / 1,069 out
+============================================================
+
+Patient Information  
+The patient is a 109-year-old female, Adela Tapia, residing at 517 Hills Trace, Stoneham, Massachusetts. She is accompanied by her daughter. The patient has a significant past medical history including chronic obstructive pulmonary disease (COPD), hypertension, gastroesophageal reflux disease (GERD), ischemic heart disease, history of coronary artery bypass grafting, chronic kidney disease (stage 4), history of renal transplant, and a long-standing history of diabetes mellitus with associated complications. She is currently employed full-time at a grocery store and has a long-standing history of tobacco use, currently smoking one pack per day for approximately 30 to 40 years. She denies any allergies to medications.
+
+Chief Complaint  
+The patient presents with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough with yellowish to greenish sputum. She reports that her symptoms are exacerbated with exertion and that she has noticed a sensation of feeling feverish over the past few days.
+
+History of Present Illness  
+The patient describes the onset of symptoms five days ago, with progressive dyspnea and a worsening cough. The cough is productive, yielding approximately the volume of a small palmful of sputum each time, without hemoptysis. The dyspnea is more pronounced with exertion, though she remains comfortable at rest. She also notes a constant sensation of chest discomfort, which she characterizes as non-painful and more like a feeling of congestion. She denies orthopnea, paroxysmal nocturnal dyspnea, or coughing up sputum when lying flat. The patient has not experienced any nocturnal gasping for air or palpitations. She reports a subjective feeling of fever but has not measured her temperature. She denies sore throat, rhinorrhea, nausea, vomiting, diarrhea, constipation, changes in appetite or sleep, night sweats, or weight changes. The patient has used her rescue inhaler (Ventolin) with minimal relief and has a history of similar symptoms in the past, which resolved with antibiotics.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: She has a productive cough with yellowish to greenish sputum and reports worsening dyspnea with exertion.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Other: No headaches, visual changes, or genitourinary symptoms.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a long-standing history of COPD, hypertension, GERD, ischemic heart disease with a history of coronary artery bypass grafting, chronic kidney disease (stage 4), and a history of renal transplant. She also has a history of diabetes mellitus with complications including diabetic nephropathy and microalbuminuria. She has a history of multiple episodes of chest colds requiring antibiotics in the past year.
+
+Surgical History  
+No surgical history reported.
+
+Social History  
+The patient is a lifelong smoker, currently smoking one pack per day. She has a history of alcohol use, with occasional wine consumption on weekends. She lives with her daughter and is employed full-time at a grocery store.
+
+Family History  
+No family history of lung or heart disease or cancer reported.
+
+Current Medications  
+The patient is currently taking Ventolin as needed for respiratory symptoms and Symbicort daily for COPD. She also takes an ACE inhibitor for hypertension and uses antacids such as Tums for GERD symptoms. No recent changes in medications have been reported.
+
+Objective  
+Vital signs at the time of this visit were not available in the electronic health record. However, the patient was alert and oriented, with no acute distress. Physical examination findings were not included in the provided data. Laboratory results available in the record include normal electrolytes, creatinine, and glucose levels. Imaging studies were not included in the provided data.
+
+Assessment  
+Based on the patient's clinical presentation, history of COPD, and the presence of fever, productive cough, and worsening dyspnea, the working diagnosis is an exacerbation of COPD with concern for a possible bacterial infection or pneumonia. Given her age, smoking history, and comorbid conditions, the risk of complications is elevated. The presence of fever and sputum production supports the need for further evaluation, including a chest X-ray and possibly a sputum culture. A COVID-19 test is also warranted given the overlap in symptoms.
+
+Plan  
+The patient is advised to proceed to the emergency department for a full evaluation, including a chest X-ray, sputum culture, and blood work to assess for infection. She will receive nebulized bronchodilators and may require hospital admission depending on her response to treatment. A course of antibiotics will be initiated if a bacterial infection is suspected. The patient should be monitored for response to treatment and for any signs of respiratory compromise. Follow-up with a primary care provider or pulmonologist is recommended after resolution of the acute episode. Smoking cessation counseling and support should be discussed as part of her long-term management plan.

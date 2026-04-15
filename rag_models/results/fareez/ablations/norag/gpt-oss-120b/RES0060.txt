@@ -1,0 +1,113 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:13:45
+Time: 4.16s
+Tokens: 5,670 in / 1,529 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 22)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+Primary Care Provider: Dr. External Provider  
+
+Chief Complaint  
+Fever and worsening dry cough of four days duration.
+
+History of Present Illness  
+The patient reports the onset of a dry cough four days ago (Monday) that has progressively worsened. She notes feeling “hot” throughout the week and measured a temperature of 38.5 °C (101.3 °F) this morning, representing her first recorded fever. Associated symptoms include increasing fatigue, generalized body aches, and occasional shortness of breath following coughing fits. She denies sore throat, dysphagia, loss of appetite (although she reports decreased hunger), and changes in taste or smell. Rhinorrhea is described as mild and non‑purulent. She has no sputum production, hemoptysis, wheezing, chest pain, palpitations, night sweats, or recent weight loss beyond a few pounds attributable to reduced intake. She experiences occasional nausea without emesis and intermittent tension‑type headaches described as pressure‑like, similar to prior episodes, responsive to over‑the‑counter analgesics. She denies recent sick contacts, travel, or known exposures, though she visited a crowded mall the weekend prior. The patient expresses concern about possible COVID‑19 infection.
+
+Review of Systems  
+Constitutional: Fever (38.5 °C), fatigue, mild chills at night, slight weight loss (~few pounds) due to decreased intake.  
+HEENT: Dry cough, mild runny nose, no sore throat, no dysphagia, no odynophagia, normal taste and smell, no ear or eye pain/discharge.  
+Respiratory: Dry, non‑productive cough; shortness of breath only after coughing bouts; no wheezing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, heart rate normal.  
+Gastrointestinal: Decreased appetite, mild nausea without vomiting, normal bowel movements, no abdominal pain.  
+Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+Neurologic: Tension‑type headache, no photophobia, no confusion, no dizziness, no syncope.  
+Musculoskeletal: Mild body aches, no joint swelling.  
+Skin: No rash, no new lesions.  
+Psychiatric: No depression or anxiety reported.  
+
+Past Medical History  
+- Childhood asthma (resolved 2021)  
+- Perennial allergic rhinitis (resolved 2020)  
+- Mitral valve regurgitation (ongoing)  
+- Acute infective cystitis (treated 10 Feb 2024)  
+- Pre‑diabetes (A1c ~6.2 % six months ago)  
+- Hyperlipidemia, on rosuvastatin  
+
+Past Surgical History  
+- Inguinal hernia repair, 5 years ago  
+
+Medications  
+- Rosuvastatin (dose not specified) – for hyperlipidemia  
+- Multivitamin – over‑the‑counter  
+- Occasional acetaminophen for tension headaches (patient reports taking “Advil,” i.e., ibuprofen)  
+
+Allergies  
+- Penicillin – hives (type I hypersensitivity)  
+
+Social History  
+- Tobacco: None  
+- Alcohol: Occasional weekend use (2–3 beers on Saturday and Sunday)  
+- Recreational drugs: None  
+- Living situation: Rents basement unit of a duplex; lives with girlfriend; no known mold or asbestos in her unit.  
+- Occupation: Full‑time employment (details not provided)  
+
+Family History  
+No known family history of lung, cardiac disease, or diabetes. Grandfather possibly had bladder cancer.
+
+Physical Examination (Objective)  
+- Temperature (patient‑reported): 38.5 °C  
+- Heart Rate: 68 bpm (from most recent vitals)  
+- Respiratory Rate: 14 breaths/min (from most recent vitals)  
+- Blood Pressure: Not recorded during this encounter  
+- Oxygen Saturation: Not recorded  
+- General: Appears mildly ill, in no acute distress.  
+- HEENT: Nares mildly congested with thin clear discharge; oropharynx without erythema or exudate.  
+- Lungs: Auscultation not documented; patient reports dry cough without wheeze.  
+- Cardiovascular: Regular rate and rhythm, no murmurs noted (prior mitral regurgitation known).  
+- Abdomen: No tenderness, normal bowel sounds.  
+- Extremities: No edema.  
+
+Assessment  
+1. Acute viral bronchitis (likely COVID‑19 or other respiratory virus) – presentation of fever, dry cough, fatigue, mild rhinorrhea, and headache.  
+2. Pre‑diabetes – A1c 6.2 % six months ago, lifestyle modifications ongoing.  
+3. Hyperlipidemia – controlled on rosuvastatin.  
+4. History of childhood asthma (resolved) and allergic rhinitis (resolved).  
+5. Penicillin allergy (hives).  
+
+Plan  
+Diagnostics  
+- Nasopharyngeal swab for SARS‑CoV‑2 PCR; results expected within 24‑48 hours.  
+- Consider rapid influenza antigen testing if symptoms persist beyond 5 days or if COVID‑19 test is negative.  
+
+Therapeutic  
+- Symptomatic treatment: Acetaminophen 500 mg PO q6h PRN for fever or headache, not to exceed 3 g per day.  
+- Encourage adequate oral hydration and rest.  
+- No antibiotics prescribed at this time pending viral testing results.  
+
+Isolation & Public Health  
+- Instruct patient to self‑isolate at home for at least 14 days from symptom onset, regardless of test result, given high clinical suspicion.  
+- Advise use of a mask around household members, especially the girlfriend, and maintain physical distancing.  
+- Notify local public health authority of positive COVID‑19 result for contact tracing.  
+
+Follow‑up  
+- Telephone follow‑up in 48 hours to review COVID test result and symptom progression.  
+- Return to clinic sooner if she develops worsening dyspnea, chest pain, high‑grade fever >39 °C, new sputum production, or signs of bacterial superinfection.  
+
+Preventive Health  
+- Reinforce annual influenza vaccination (already up to date).  
+- Discuss continued lifestyle measures for pre‑diabetes: regular aerobic exercise, weight management, low‑glycemic diet.  
+- Review lipid panel at next routine visit; continue rosuvastatin as prescribed.  
+
+Patient Education  
+- Reviewed signs that would warrant urgent care (e.g., trouble breathing, persistent high fever, confusion).  
+- Provided written instructions on home isolation, hydration, use of antipyretics, and when to seek emergency care.  
+
+Signature  
+Dr. External Provider  
+Date: 10 February 2024

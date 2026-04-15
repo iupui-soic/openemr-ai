@@ -1,0 +1,82 @@
+Model: qwen/qwen3-32b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:02:55
+Time: 4.23s
+Tokens: 8,382 in / 1,372 out
+============================================================
+
+Patient Information  
+The patient is a 59-year-old male, Agustin McGlynn, who presented to the Emergency Department with a chief complaint of severe upper right abdominal pain. He resides in Hingham, Massachusetts, and is accompanied by his partner and two children. He works as a bank consultant. His past medical history is significant for cerebral palsy, spasticity, osteoporosis, intellectual disability, essential hypertension, chronic kidney disease (currently post-renal transplant), anemia, and a history of chronic kidney disease stages 1 through 4. He also has a family history of gallstones in his mother and a history of stroke in his father. He is currently taking tacrolimus, acetaminophen, hydrochlorothiazide, and amlodipine. He denies any known drug allergies. His social history includes occasional alcohol consumption (one to two glasses of wine nightly), no tobacco or recreational drug use, and no recent travel.
+
+Chief Complaint  
+The patient reports severe upper right abdominal pain, localized to the right upper quadrant, which has progressively worsened over the past three days and intensified significantly within the last three to four hours prior to arrival.
+
+History of Present Illness  
+The patient describes the pain as sharp and severe, rated as an 8 out of 10. It began approximately three days ago, shortly after a meal, and has progressively worsened, reaching its peak intensity within the last few hours. The pain is localized and does not radiate. He reports associated nausea over the past few days, though no vomiting or emesis with blood has occurred. He has attempted to manage the pain with over-the-counter medications such as Advil and Tylenol, but with no significant relief. He denies any changes in urinary habits, bowel patterns, or skin changes. He also denies fever, chills, or any recent infections. His appetite has been poor, particularly on the day of presentation. He has no prior history of similar episodes in the Emergency Department, though he recalls a previous episode of similar pain several years ago that resolved spontaneously.
+
+Review of Systems  
+Constitutional: The patient reports fatigue and decreased energy levels, particularly on the day of presentation.  
+Respiratory: No shortness of breath or cough.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Nausea without vomiting; no diarrhea, constipation, or blood in stool.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Musculoskeletal: No joint pain or swelling.  
+Neurological: No new-onset headaches or dizziness.  
+Psychiatric: No recent mood changes or anxiety.  
+Other: No rash, rash changes, or other systemic symptoms.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a complex past medical history, including cerebral palsy, spasticity, osteoporosis, intellectual disability, essential hypertension, chronic kidney disease (stages 1 through 4), anemia, and a history of chronic kidney disease. He has undergone a renal transplant and has a history of kidney transplant failure and rejection. He also has a history of viral sinusitis, gingivitis, and dental issues, including a loose dental filling and gingival disease. He has a history of intimate partner abuse and reports of violence in the environment in the past. He has also had a burn injury to the skin and has experienced episodes of stress and anxiety.
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+The patient consumes alcohol occasionally (one to two glasses of wine nightly), but does not report any concerns about alcohol use. He does not use tobacco or recreational drugs. He lives with his partner and two children, and reports a supportive home environment.
+
+Family History  
+The patient's mother has a history of gallstones, and his father had a stroke in his 60s.
+
+Current Medications  
+The patient is currently prescribed tacrolimus (for post-transplant immunosuppression), acetaminophen, hydrochlorothiazide, and amlodipine. He occasionally uses over-the-counter antacids for heartburn.
+
+Objective  
+Vital Signs:  
+- Heart Rate: 94 bpm  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not recorded  
+- Temperature: Not recorded  
+- Oxygen Saturation: Not recorded  
+- Weight: Not recorded  
+- Height: 177.7 cm  
+- BMI: 27.27  
+
+Physical Examination:  
+The patient was alert and oriented. He was in mild distress due to abdominal pain. No acute distress was noted. The abdomen was tender to palpation in the right upper quadrant without guarding or rebound tenderness. No masses or organomegaly were noted. Bowel sounds were present. No jaundice, rash, or other skin changes were observed. No signs of dehydration or systemic illness were present.
+
+Laboratory Results:  
+- Leukocytes: 7.58 × 10³/uL  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.10%  
+- MCV: 94.48 fL  
+- MCH: 28.35 pg  
+- MCHC: 34.20 g/dL  
+- RDW: 39.89 fL  
+- Platelets: 351.65 × 10³/uL  
+- Cholesterol: 252.43 mg/dL  
+- LDL Cholesterol: 168.19 mg/dL  
+- HDL Cholesterol: 58.23 mg/dL  
+- Triglycerides: 130.05 mg/dL  
+
+Imaging:  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with acute right upper quadrant abdominal pain, likely secondary to a gastrointestinal etiology. Given the location, character, and associated nausea, cholecystitis or biliary colic is a strong consideration. The absence of fever, vomiting, or systemic signs of infection makes acute cholecystitis less likely at this time, but further evaluation is warranted. No evidence of acute pancreatitis or appendicitis was noted in the history or physical examination.
+
+Plan  
+The patient will be evaluated further with imaging, including an abdominal ultrasound, and laboratory testing for liver enzymes, amylase, and lipase to rule out cholecystitis or pancreatitis. Pain management will be provided as needed. The patient will be advised to follow up with his primary care provider or a gastroenterologist for further evaluation and management. Discharge instructions will include monitoring for worsening symptoms, such as fever, vomiting, or increased pain, and seeking immediate medical attention if these occur.

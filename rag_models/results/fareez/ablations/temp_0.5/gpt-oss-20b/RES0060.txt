@@ -1,0 +1,104 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:17:17
+Time: 2.85s
+Tokens: 6,508 in / 1,642 out
+============================================================
+
+Patient Information  
+Abbie Stamm, a 22‑year‑old female, presents for evaluation of a recent onset of fever and cough. She resides at 635 Eichmann Neck Apt 65, Amherst, Massachusetts, and lives with her girlfriend. She is a non‑smoker, does not use recreational drugs, and consumes alcohol occasionally (one to two beers on weekends). She reports no coffee consumption and no exercise routine.
+
+Chief Complaint  
+The patient reports a fever (first measured at 38.5 °C this morning) and a dry cough that began four days ago on Monday. She notes that her symptoms have progressively worsened, with increasing fatigue, mild chills at night, and a worsening dry cough.
+
+History of Present Illness  
+The cough started on Monday and has been dry with no sputum production. The patient has not experienced any chest pain, shortness of breath, wheezing, or hemoptysis. She reports mild fatigue and a feeling of being “hot” during the week. The fever was first documented at 38.5 °C this morning; she has not had a temperature check prior to this visit. The cough has worsened over the past few days, and she feels more tired and has lost appetite, losing a few pounds over the last week. She also reports a tension‑type headache that has been intermittent for several days, along with occasional nausea that has resolved spontaneously. No vomiting, diarrhea, or abdominal pain has been noted. She denies sore throat, ear pain, vision changes, or hearing loss. She has no shortness of breath except a brief sensation of breathlessness after coughing fits. She has not experienced night sweats, chills beyond mild, or significant weight loss beyond the recent loss due to decreased appetite.
+
+Review of Systems  
+Constitutional: fever (38.5 °C), fatigue, mild chills, mild weight loss (few pounds).  
+Respiratory: dry cough, no sputum, no chest pain, no wheezing, mild shortness of breath after coughing.  
+Cardiovascular: no palpitations, no chest pain.  
+Gastrointestinal: nausea, no vomiting, normal bowel movements, no abdominal pain.  
+Genitourinary: no urinary frequency, no dysuria, no hematuria.  
+Neurologic: no dizziness, no confusion, no headaches beyond tension type.  
+Psychiatric: no depression or anxiety reported.  
+Skin: no rash, no hives (except known penicillin allergy).  
+Allergy: known penicillin allergy (hives).  
+No other positive or negative findings were reported.
+
+Past Medical History  
+- Childhood asthma (resolved 2021).  
+- Perennial allergic rhinitis (resolved 2020).  
+- Mitral valve regurgitation (ongoing).  
+- Acute bronchitis (2016–2017).  
+- Gingivitis and gingival disease (multiple episodes).  
+- Viral sinusitis (2019).  
+- High cholesterol (on rosuvastatin).  
+- Prediabetes (A1C 6.2% six months ago).  
+- Inguinal hernia repair (five years ago).  
+- No history of tuberculosis, HIV, or other chronic infections.
+
+Surgical History  
+- Inguinal hernia repair (five years prior). No other surgeries.
+
+Social History  
+- Non‑smoker, no recreational drug use, occasional alcohol use.  
+- Lives in a duplex with a girlfriend.  
+- No recent travel.  
+- No known sick contacts; last weekend spent in a mall but wore a mask.  
+- No occupational exposure to respiratory irritants.  
+- No exercise routine; walks dog occasionally.
+
+Family History  
+- No known family history of lung disease, heart disease, or cancer.  
+- Grandfather had bladder cancer (uncertain relevance).  
+- No family history of diabetes.
+
+Allergies  
+- Penicillin (hives).  
+- Bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, peanut (history of allergy).  
+
+Current Medications  
+- Rosuvastatin 20 mg daily for hyperlipidemia.  
+- Multivitamin daily.  
+- No other prescription or over‑the‑counter medications reported at this time.
+
+Physical Examination  
+Vital signs: Temperature not recorded during this visit; patient reports 38.5 °C. Blood pressure, heart rate, respiratory rate, oxygen saturation, and weight were not documented during this encounter.  
+General: Alert, oriented, appears mildly ill.  
+HEENT: No sore throat, no tonsillar erythema, no nasal congestion beyond mild runny nose.  
+Respiratory: Clear breath sounds bilaterally, no wheezes, no crackles, no rhonchi. Dry cough present.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Abdominal: Soft, non‑tender, no organomegaly.  
+Extremities: No edema.  
+Skin: No rashes or lesions.  
+
+Laboratory Results  
+No laboratory work was ordered during this visit. The most recent lab data available (from six months prior) indicated a prediabetic A1C of 6.2 %. No imaging studies were performed.
+
+Assessment  
+The patient’s presentation is most consistent with an acute viral upper respiratory tract infection, likely acute bronchitis. Differential diagnoses include COVID‑19 infection, influenza, and other viral respiratory pathogens. The presence of fever, dry cough, fatigue, and mild chills supports a viral etiology. No evidence of bacterial pneumonia (absence of productive cough, chest pain, or significant hypoxia). The patient’s history of asthma and allergic rhinitis is noted but currently not active. The prediabetes and hyperlipidemia are chronic conditions managed with rosuvastatin and lifestyle modifications.
+
+Plan  
+1. COVID‑19 testing: A nasopharyngeal swab will be obtained today; results expected within 24–48 hours. The patient and her girlfriend are advised to isolate for 14 days regardless of test result, given the symptomatology.  
+2. Symptomatic treatment:  
+   - Acetaminophen 650 mg PO every 6–8 hours as needed for fever and headache.  
+   - Adequate hydration, rest, and throat lozenges if irritation occurs.  
+   - Cough suppressants (e.g., dextromethorphan) if cough becomes disruptive.  
+3. Monitoring:  
+   - If symptoms worsen (increased shortness of breath, new chest pain, high fever >39 °C, or persistent cough >10 days), the patient should seek urgent care.  
+   - If the COVID‑19 test is positive, continue isolation and consider antiviral therapy per local guidelines.  
+4. Chronic disease management:  
+   - Continue rosuvastatin as prescribed.  
+   - Encourage dietary modifications and increased physical activity to address prediabetes and weight goals.  
+   - Schedule a follow‑up appointment in 5 days or sooner if symptoms deteriorate.  
+5. Education:  
+   - Discuss the importance of hand hygiene, mask use, and avoiding crowded indoor spaces while symptomatic.  
+   - Reinforce that the cough is likely viral and antibiotics are not indicated unless bacterial infection is suspected.  
+   - Review penicillin allergy and advise avoidance of all penicillin‑derived antibiotics.  
+6. Follow‑up:  
+   - Return to clinic or contact provider if any new or worsening symptoms develop.  
+   - Routine follow‑up for prediabetes and hyperlipidemia will continue as per primary care schedule.  
+
+The patient was advised on the plan and asked if she had any questions. She expressed understanding and acceptance of the recommendations. No additional concerns were raised.

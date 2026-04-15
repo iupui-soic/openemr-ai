@@ -1,0 +1,164 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:21:39
+Time: 6.09s
+Tokens: 6,278 in / 2,238 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abbie Stamm  
+- **DOB:** 16 Nov 2001 (Age 22)  
+- **Sex:** Female  
+- **MRN:** 123  
+- **Location:** 635 Eichmann Neck Apt 65, Amherst, MA  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+“Fever and cough for the past few days.”  
+
+### History of Present Illness (HPI)  
+- **Onset & Course:** Symptoms began ≈ Monday (4 days ago).  
+- **Fever:** Subjective feeling of being “hot” all week; measured 38.5 °C (101.3 °F) this morning – first documented reading.  
+- **Cough:** Dry, non‑productive cough that has progressively worsened; no sputum, no hemoptysis, no wheeze.  
+- **Associated Constitutional Symptoms:** Fatigue, mild body aches, chills at night (no night sweats), mild nausea (no vomiting), intermittent tension‑type headaches (pressure‑like, “vice‑grip”) for several days, mild weight loss (a few pounds) due to reduced appetite.  
+- **Upper‑Respiratory Symptoms:** Scratchy throat when coughing, mild rhinorrhea, no sore throat, no dysphagia, normal taste and smell. No shortness of breath at rest; occasional brief dyspnea after coughing fits. No chest pain, palpitations, or orthopnea.  
+- **Gastrointestinal:** Normal bowel movements, no abdominal pain, occasional nausea as above.  
+- **Genitourinary:** No dysuria, hematuria, or change in urinary frequency.  
+- **Negatives:** No wheezing, no sputum production, no blood in sputum, no ear or eye discharge, no visual or auditory changes, no dizziness/fainting, no confusion or memory loss.  
+
+### Review of Systems (pertinent positives/negatives)  
+
+| System | Positive Findings | Negative Findings |
+|--------|-------------------|-------------------|
+| **Constitutional** | Fever, fatigue, chills, mild weight loss, headache, body aches | No night sweats, no prolonged chills |
+| **Respiratory** | Dry cough, mild rhinorrhea, occasional dyspnea after cough | No sputum, no hemoptysis, no wheeze, no chest pain |
+| **Cardiovascular** | None | No palpitations, no chest pain |
+| **Gastrointestinal** | Nausea (brief), decreased appetite | No vomiting, normal bowel movements, no abdominal pain |
+| **ENT** | Scratchy throat with cough | No sore throat, no dysphagia, normal taste & smell |
+| **Neurologic** | Tension‑type headache | No dizziness, syncope, confusion |
+| **Dermatologic** | None | No rash |
+| **Psychiatric** | None | No anxiety or depression reported |
+| **Genitourinary** | None | No dysuria, hematuria, flank pain |
+
+### Past Medical History  
+- **Childhood asthma** (resolved 2021)  
+- **Perennial allergic rhinitis** (resolved 2020)  
+- **Mitral valve regurgitation** (stable)  
+- **Hyperlipidemia** – on rosuvastatin, well‑controlled  
+- **Pre‑diabetes** (A1c ≈ 6.2 % six months ago) – lifestyle modifications ongoing  
+- **Inguinal hernia repair** (≈ 5 years ago)  
+- **Acute infective cystitis** (treated 02/10/2024 with nitrofurantoin)  
+
+### Medications (current)  
+- Rosuvastatin 10 mg PO daily  
+- Multivitamin PO daily  
+- Loratadine 5 mg PRN for allergy symptoms (active in medication list)  
+
+### Allergies  
+- **Penicillin** – hives (type I)  
+
+### Social History  
+- **Tobacco:** Never smoker  
+- **Alcohol:** 2–3 beers on weekends  
+- **Recreational drugs:** None  
+- **Living situation:** Rents basement unit of a duplex; lives with girlfriend; no known mold or asbestos in unit.  
+- **Occupation:** Full‑time employment (as per prior record)  
+- **Exercise:** Walking dog more frequently; otherwise limited formal exercise  
+
+### Family History  
+- No known family history of lung, cardiac, or metabolic disease.  
+- Grandfather possibly had bladder cancer (uncertain).  
+
+### Patient Concerns  
+- Primary worry is COVID‑19 infection; patient requests testing and guidance on isolation.
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (most recent documented)  
+- **Temperature:** 38.5 °C (self‑reported)  
+- **Heart Rate:** 68 bpm (last recorded)  
+- **Respiratory Rate:** 14 breaths/min (last recorded)  
+- **Blood Pressure:** Not recorded during this visit  
+- **SpO₂:** Not measured today  
+- **Weight/Height:** Height 157.9 cm; weight not recorded; BMI prior 23.3 (normal)  
+
+### Physical Examination  
+*Limited documentation; no new exam performed during tele‑visit.*  
+- General: Appears mildly ill, alert, oriented.  
+- HEENT: Scratchy throat with cough; no erythema, no tonsillar exudate.  
+- Lungs: No reported wheezes or crackles; patient denies dyspnea at rest.  
+- Cardiovascular: No chest pain, no palpitations reported.  
+- Abdomen: No pain, normal bowel sounds reported.  
+- Skin: No rash.  
+
+### Laboratory / Point‑of‑Care Testing  
+- **Urinalysis (from prior visit for cystitis):**  
+  - WBC ≈ 13 /HPF (mild pyuria)  
+  - RBC ≈ 2 /HPF (trace)  
+  - Protein 4.4 mg/dL (trace)  
+  - Glucose 12.6 mg/dL (trace)  
+  - pH 5.2 (acidic)  
+  - No nitrites, leukocyte esterase not reported.  
+- No CBC, CMP, or COVID‑19 rapid test results available at the time of note.  
+
+---
+
+## ASSESSMENT  
+
+1. **Acute viral bronchitis (likely COVID‑19 vs other viral URI)** – 4‑day history of fever, dry cough, malaise, mild rhinorrhea, and headache; physical exam not suggestive of bacterial pneumonia.  
+2. **Pre‑diabetes** – A1c 6.2 % six months ago; currently on lifestyle modifications.  
+3. **Hyperlipidemia, controlled on rosuvastatin** – stable.  
+4. **Mitral valve regurgitation (stable)** – no new cardiac symptoms.  
+5. **Allergy to penicillin (hives)** – documented.  
+
+*Differential considerations:* COVID‑19, influenza, other community‑acquired viral upper‑respiratory infection, atypical bacterial pneumonia (less likely without sputum or focal findings).  
+
+---
+
+## PLAN  
+
+### Diagnostic  
+- **COVID‑19 PCR (nasopharyngeal swab)** – obtained today; results expected within 24 h.  
+- **Influenza rapid antigen test** – consider if COVID result negative and flu season is high.  
+- **If fever persists >5 days or respiratory status worsens:** obtain CBC with differential, BMP, and chest radiograph to rule out secondary bacterial pneumonia.  
+
+### Therapeutic / Symptomatic Management  
+- **Antipyretic:** Acetaminophen 500 mg PO q6‑8 h PRN for temperature > 38 °C, not to exceed 3 g/day.  
+- **Cough:** Dextromethorphan 10‑20 mg PO q4‑6 h PRN if cough is bothersome; encourage hydration and humidified air.  
+- **Hydration & Nutrition:** Increase oral fluid intake; small, frequent meals to improve appetite.  
+- **Headache:** Continue OTC ibuprofen or acetaminophen as needed; monitor for worsening pattern.  
+- **Nausea:** If persists, consider ondansetron 4 mg PO q8 h PRN.  
+
+### Isolation & Public Health  
+- **Self‑isolation:** Begin 14‑day isolation immediately pending COVID result; remain separate from household members as feasible.  
+- **Contact tracing:** Provider will notify local public health department once test result is available.  
+
+### Chronic Condition Management  
+- **Pre‑diabetes:** Reinforce diet low in simple sugars, continue daily walking; consider repeat A1c in 3 months.  
+- **Hyperlipidemia:** Continue rosuvastatin; review lipid panel at next primary‑care visit.  
+
+### Follow‑up & Return Precautions  
+- **Tele‑visit follow‑up** in 48 hours (or sooner if:**  
+  - Fever > 101 °F for > 3 days  
+  - New dyspnea, chest pain, or wheezing  
+  - Persistent or worsening cough > 10 days  
+  - Hemoptysis, severe headache, or confusion)  
+
+- **In‑person visit** if COVID test returns positive and patient requires additional monitoring, or if signs of bacterial superinfection develop (e.g., productive purulent sputum, focal lung findings).  
+
+### Patient Education  
+- Reviewed typical course of viral bronchitis and COVID‑19; emphasized importance of rest, hydration, and fever control.  
+- Discussed proper mask use and hand hygiene while isolating.  
+- Provided guidance on when to seek emergent care (e.g., trouble breathing, O₂ saturation < 94 % on room air, chest pain).  
+- Encouraged continuation of current cholesterol medication and lifestyle measures for pre‑diabetes.  
+
+**Signature:** Dr. External Provider (virtual visit)  
+**Date:** 10 Feb 2024  
+
+---

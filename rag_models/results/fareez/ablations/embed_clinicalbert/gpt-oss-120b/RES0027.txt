@@ -1,0 +1,96 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:47:11
+Time: 5.16s
+Tokens: 6,406 in / 1,460 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt  
+Date of Birth: September 27, 1965 (Age 60)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Medical Record Number: 103  
+
+Chief Complaint  
+Dry cough for the past three days associated with feverish sensation, chills, night sweats, fatigue, and mild headache, interfering with sleep.
+
+History of Present Illness  
+Ms. Schmitt reports the onset of a persistent, dry cough three days ago. The cough has progressively worsened and is present throughout the day, with no identifiable triggers such as cold air, smoke, dust, or pets. She denies production of sputum or blood. Earlier today she began to feel hot, describing a fever‑like sensation, and recalls experiencing mild chills and night sweats last night. She has not taken her temperature. The cough has disrupted her sleep, leading to marked fatigue and a mild headache, which she attributes in part to coughing strain. She denies shortness of breath, wheezing, chest pain, palpitations, dizziness, syncope, or loss of taste or smell. Over‑the‑counter cough syrup has not provided relief. She reports a decreased appetite secondary to coughing but no difficulty swallowing. She also notes mild generalized muscle aches. No recent upper respiratory symptoms such as sore throat, rhinorrhea, or conjunctival discharge. Her husband has been vomiting for two days and feels “hot” as well, but he has not sought medical evaluation. No other household members are ill.
+
+Review of Systems  
+Constitutional: Feverish sensation today, chills and night sweats last night, fatigue, mild headache, generalized myalgias.  
+Respiratory: Dry, non‑productive cough, worsens throughout the day; no sputum, hemoptysis, dyspnea, wheezing, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.  
+Genitourinary: No dysuria, urinary frequency, or flank pain.  
+Neurologic: No dizziness, weakness, or altered mental status.  
+HEENT: No sore throat, rhinorrhea, nasal congestion, eye or ear discharge, or facial pain.  
+Skin: No rash or lesions.  
+
+Past Medical History  
+- Hypothyroidism, currently treated with levothyroxine (Synthroid).  
+- Essential hypertension.  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus.  
+- Type 2 diabetes mellitus (managed medically).  
+- Congestive heart failure, chronic.  
+- Obesity, BMI ≈ 30 kg/m².  
+- Chronic low‑back pain and chronic neck pain.  
+- Osteoarthritis of the knee.  
+- Prior acute bronchitis (2015).  
+- Recurrent viral sinusitis (multiple episodes).  
+- Acute viral pharyngitis (2018).  
+- History of intimate partner abuse and chronic stress (psychosocial).  
+
+Surgical History  
+- Appendectomy performed during adolescence; no complications reported.  
+
+Social History  
+Ms. Schmitt lives in a townhouse with her husband and two teenage children. She works from home as a marketing professional and has recently moved. She does not smoke cigarettes. She consumes alcohol occasionally, approximately one glass of wine every three to four days. She reports occasional marijuana use but not on a regular basis. No other recreational drug use. She does not engage in regular exercise.  
+
+Family History  
+- Sister (15 years older) experienced a recent myocardial infarction.  
+- Parents deceased of age‑related causes, with no known cardiac disease.  
+- No known family history of cancer, diabetes, or pulmonary disease.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications  
+- Levothyroxine (Synthroid) – dose not specified.  
+- Multivitamin – name not specified.  
+- Amlodipine 2.5 mg daily for hypertension (listed in medication record).  
+- Naproxen sodium 220 mg as needed for pain (listed in medication record).  
+- No current use of diuretics or other chronic heart‑failure therapies documented for this visit.  
+
+Vital Signs  
+No vital signs were recorded during this encounter. The most recent documented vitals (from an older visit) showed a heart rate of 98 bpm, respiratory rate of 15 breaths/min, and BMI of 30.06 kg/m². Temperature, blood pressure, and SpO₂ are not available for the current visit.  
+
+Physical Examination  
+No physical examination findings were documented at the time of this encounter.  
+
+Laboratory and Imaging Studies  
+No laboratory or imaging results are presently available. The provider indicated plans to obtain the following investigations:  
+- SARS‑CoV‑2 PCR nasopharyngeal swab.  
+- Complete blood count with differential.  
+- Basic metabolic panel.  
+- Chest radiograph (CXR).  
+
+Assessment  
+1. Acute bronchitis, likely viral in etiology.  
+2. Rule‑out COVID‑19 infection given recent cough, feverish sensation, and household exposure.  
+3. Chronic conditions: hypothyroidism, hypertension, type 2 diabetes mellitus with stage 2 chronic kidney disease, congestive heart failure, obesity, chronic musculoskeletal pain.  
+
+Plan  
+- Order SARS‑CoV‑2 PCR test and chest X‑ray to evaluate for COVID‑19 and possible bacterial superinfection.  
+- Obtain CBC and basic metabolic panel to assess for leukocytosis, electrolyte disturbances, and renal function.  
+- Symptomatic management: advise increased fluid intake, rest, and use of antipyretics such as acetaminophen for fever and discomfort. Continue current levothyroxine, amlodipine, and naproxen as needed for pain.  
+- Counsel on cough hygiene: cover mouth when coughing, frequent hand washing, and use of a humidifier if tolerated.  
+- Instruct the patient to self‑isolate until COVID‑19 test results are known and to monitor temperature at home. Seek urgent care if she develops shortness of breath, chest pain, hemoptysis, or worsening fever.  
+- Advise follow‑up telephone or telemedicine visit within 48–72 hours, or sooner if symptoms deteriorate.  
+- Reinforce chronic disease management: continue thyroid hormone replacement, blood pressure medication, and diabetes care; schedule routine labs for renal function and glycemic control as per usual care.  
+- No changes to current chronic medication regimen at this time.  
+
+Disposition  
+Patient was educated on the plan, instructed on isolation precautions, and advised to return for follow‑up based on test results and clinical progression. No immediate admission indicated.

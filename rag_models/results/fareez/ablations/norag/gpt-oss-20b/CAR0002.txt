@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:17:44
+Time: 2.64s
+Tokens: 8,164 in / 1,172 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (92 years old)  
+Gender: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Occupation: City bus driver  
+
+Chief Complaint  
+The patient presents with acute left-sided chest pain that began approximately 30 minutes prior to the encounter.  
+
+History of Present Illness  
+The patient reports sudden onset of dull, pressure-like discomfort localized to the left side of the chest. The pain began while shoveling the driveway and has progressively worsened since onset. On a pain scale of 0 to 10, the patient rates the discomfort as a 7. The pain is constant, does not radiate to other areas, and is exacerbated by movement and lying down, with minimal relief from positional changes. The patient has experienced shortness of breath and a mild fever (38.0 °C) since yesterday. He denies cough, wheeze, chest trauma, or recent exertional events beyond routine shoveling. There is no history of previous episodes of chest pain. Palpitations are noted, described as a faster heart rate, but the patient attributes this sensation to physical activity. No associated nausea, vomiting, diaphoresis, or syncope. He reports no leg swelling, dizziness, or visual changes.  
+
+Past Medical History (from OpenEMR, current)  
+- Hypertension (essential)  
+- Hyperlipidemia  
+- Ischemic heart disease (diagnosed 1992)  
+- Chronic kidney disease stage 3 (ongoing)  
+- Obesity (BMI 30.97)  
+- Sleep apnea  
+- Chronic low back pain  
+- Chronic neck pain  
+- Chronic pain (general)  
+- Prediabetes  
+- Anemia  
+- Metabolic syndrome  
+- Chronic kidney disease stage 2 and 4 (historical)  
+- End‑stage renal disease (historical)  
+- Seizure disorder (historical)  
+- Multiple dental issues (historical)  
+
+Current Medications (as reported by patient)  
+- Rosuvastatin (dosage not specified)  
+- Lisinopril (dosage not specified)  
+- Multivitamin  
+
+Past Medications (OpenEMR) include various statins, antihypertensives, immunosuppressants, and pain medications. The patient has discontinued many of these medications per the most recent prescription record, and only rosuvastatin and lisinopril are currently taken.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Social History  
+- Tobacco: Current smoker, approximately half a pack to a full pack per day for the last 20 years.  
+- Alcohol: Denies alcohol consumption.  
+- Recreational Drugs: Recent use of crystal methamphetamine, last use 6 days ago, approximately a few times per month over the last 7 years.  
+- Exercise: Engages in moderate exercise, running once a week.  
+- Diet: Describes a fairly balanced diet but occasionally consumes food out of the house.  
+- Living situation: Resides with parents in a house.  
+
+Family History  
+No information available regarding family history of cardiovascular disease, cancers, or other significant illnesses.  
+
+Review of Systems  
+General: Fever 38 °C, no weight loss, no fatigue.  
+Cardiovascular: Chest pain, palpitations, no syncope or dizziness.  
+Respiratory: Shortness of breath, no cough, wheeze, or hemoptysis.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No leg edema, no urinary symptoms.  
+Musculoskeletal: Pain localized to chest only, no joint swelling.  
+Neurologic: No headaches, dizziness, or seizures.  
+Skin: No rashes or lesions.  
+Psychiatric: No depression, anxiety noted.  
+
+Physical Examination  
+No objective data available at this time.  
+
+Assessment  
+Acute left‑sided chest pain of 30‑minute duration, described as dull pressure, accompanied by shortness of breath, mild fever, and palpitations. Differential diagnosis includes acute coronary syndrome, musculoskeletal strain, pulmonary embolism, and less likely pericarditis or pneumothorax. The patient's significant cardiovascular risk factors (age, hypertension, hyperlipidemia, smoking, chronic kidney disease) elevate concern for ischemic etiology.  
+
+Plan  
+1. Immediate electrocardiogram and cardiac enzyme (troponin) assessment to evaluate for acute myocardial infarction.  
+2. Obtain vital signs, including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation.  
+3. Consider chest radiograph to rule out pneumothorax or other pulmonary pathology.  
+4. If ischemia is confirmed, initiate guideline‑directed medical therapy (antiplatelet, nitrates, beta‑blocker, statin).  
+5. Continue current antihypertensive (lisinopril) and lipid‑lowering (rosuvastatin) therapy.  
+6. Counsel patient on smoking cessation resources and review of recreational drug use.  
+7. Arrange urgent cardiology consult for further management.  
+8. Monitor for changes in pain intensity, radiation, associated symptoms.  
+9. Schedule follow‑up in 24–48 hours or sooner if symptoms worsen.  
+
+Disposition  
+The patient was advised to seek urgent medical attention if chest pain worsens or new symptoms such as chest pressure radiating to arm/neck, severe shortness of breath, or syncope occur.  
+
+No additional information available.

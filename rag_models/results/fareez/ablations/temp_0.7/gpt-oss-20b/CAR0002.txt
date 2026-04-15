@@ -1,0 +1,110 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:20:16
+Time: 3.77s
+Tokens: 9,114 in / 1,487 out
+============================================================
+
+Patient Information  
+Name: Amos Crona; Date of Birth: January 20, 1934; Sex: Male; Age: 92 years; Address: 201 O'Conner Glen, Wayland, Massachusetts 00000; Occupation: City bus driver; Living situation: Resides with parents in a house.
+
+Chief Complaint  
+The patient presents with acute chest pain.
+
+History of Present Illness  
+Mr. Crona reports that he began experiencing chest pain approximately thirty minutes ago while shovelling the driveway. The pain is localized to the left side of his chest, described as a dull pressure or heaviness. He rates the pain 7 out of 10 on the pain scale. The pain has been constant and has worsened since onset. He notes associated shortness of breath that has been present since the previous day, and he reports a mild fever of 38°C. The pain does not radiate to other areas and is slightly exacerbated by movement and lying down. There is no relief with rest or position changes. No associated cough, wheeze, or chest tightness. He denies recent chest trauma aside from a rugby tackle yesterday, which did not produce chest pain at that time.
+
+Review of Systems  
+Constitutional: Fever 38°C; no weight loss, no fatigue.  
+Respiratory: Shortness of breath since yesterday; no cough, wheeze, sputum, or hemoptysis.  
+Cardiovascular: Chest pain as described; palpitations noted, feeling of a faster heart rate; no known arrhythmia history.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No leg swelling.  
+Musculoskeletal: No recent injuries; chronic low back pain reported.  
+Neurologic: No dizziness or syncope.  
+Skin: No rashes or lesions.  
+Psychiatric: No depression or anxiety reported.  
+
+Past Medical History  
+- Hypertension (diagnosed 1984, on lisinopril).  
+- Hyperlipidemia (diagnosed 2010, on rosuvastatin).  
+- Ischemic heart disease (diagnosed 1992).  
+- Chronic kidney disease, stage 3 (diagnosed 2004).  
+- Metabolic syndrome (diagnosed 1984).  
+- Obesity, BMI 30.97.  
+- Anemia (ongoing).  
+- Prediabetes (ongoing).  
+- Sleep apnea (ongoing).  
+- Chronic low back pain (ongoing).  
+- Chronic neck pain (ongoing).  
+- Chronic pain (ongoing).  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+- Tobacco: Current smoker, approximately half a pack to one pack per day, 20 years of use.  
+- Alcohol: Denies alcohol use.  
+- Recreational Drugs: Past use of crystal methamphetamine, last use six days ago, occasional use (couple times per month) over the past seven years.  
+- Exercise: Regular physical activity; runs on Sundays.  
+- Diet: Generally balanced, though frequent eating out.  
+- Living arrangement: Lives with parents; no social isolation reported.  
+
+Family History  
+No family history of heart attack, stroke, or cancer.  
+
+Medications  
+Current home medications: Rosuvastatin, Lisinopril, multivitamin.  
+Past medications (not currently taken): Oxycodone, codeine, acetaminophen, diazepam, tacrolimus, metoprolol succinate, nitroglycerin spray, among others.
+
+Allergies  
+No known drug allergies.
+
+Physical Examination – Vital Signs  
+- Temperature: 38.0°C.  
+- Heart rate: 91 beats per minute (recorded).  
+- Respiratory rate: 14 breaths per minute.  
+- Blood pressure: Not recorded at this encounter.  
+- SpO₂: Not recorded.  
+- Weight: No information available.
+
+Physical Examination – General  
+- The patient appears in mild distress due to chest pain and shortness of breath.  
+- Cardiac: Regular rate and rhythm; no murmurs reported.  
+- Pulmonary: Breath sounds clear bilaterally; no wheezes or crackles.  
+- Extremities: No edema.  
+- Abdomen: Soft, non-tender.  
+- Musculoskeletal: No acute tenderness noted; chronic low back pain noted but not acute.  
+
+Laboratory Results (most recent available)  
+- Creatinine: 0.72 mg/dL.  
+- Glucose: 84.5 mg/dL.  
+- Low Density Lipoprotein Cholesterol: 140.6 mg/dL.  
+- Total Cholesterol: 185.3 mg/dL.  
+- Alanine Aminotransferase: 21.8 U/L.  
+- Other electrolytes within normal limits.  
+- No troponin or cardiac enzyme results currently available.
+
+Assessment  
+The patient’s acute onset of left-sided chest pressure, associated shortness of breath, fever, and tachycardia in the setting of multiple cardiovascular risk factors (hypertension, hyperlipidemia, smoking, prior ischemic heart disease, and chronic kidney disease) is highly concerning for an acute coronary syndrome. Differential considerations include acute myocardial infarction, unstable angina, pulmonary embolism, or musculoskeletal pain. The presence of fever and shortness of breath may also suggest a concurrent infectious process such as pneumonia, though the absence of cough or pulmonary findings makes this less likely. Immediate cardiologic evaluation is warranted.
+
+Plan  
+1. Obtain an urgent 12‑lead electrocardiogram and serial cardiac troponin measurements to evaluate for myocardial injury.  
+2. Initiate aspirin 325 mg orally (if no contraindication) and consider heparin anticoagulation per protocol for suspected acute coronary syndrome.  
+3. Administer sublingual nitroglycerin 0.4 mg as needed for chest pain, monitoring for hypotension.  
+4. Continue current antihypertensive (lisinopril) and lipid-lowering therapy (rosuvastatin).  
+5. Admit to the cardiac care unit for continuous cardiac monitoring, hemodynamic assessment, and further management.  
+6. Order a chest radiograph to evaluate for pulmonary pathology.  
+7. Assess for potential drug interactions with ongoing medications and the patient’s renal function.  
+8. Provide patient education regarding the seriousness of chest pain and the importance of adherence to cardiac medications.  
+9. Schedule a follow‑up appointment with cardiology within 48 hours post‑discharge and with primary care physician for ongoing management of hypertension, hyperlipidemia, and chronic kidney disease.  
+10. Counsel on smoking cessation, safe use of recreational substances, and potential risks of continued crystal meth use.  
+
+Follow‑up  
+- Cardiology evaluation within 48 hours.  
+- Primary care follow‑up within one week of discharge.  
+- Monitor for recurrence of chest pain, dyspnea, or new symptoms.  
+
+Disposition  
+Admit to cardiac care unit for acute evaluation and management of suspected acute coronary syndrome.

@@ -1,0 +1,100 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:04:45
+Time: 5.22s
+Tokens: 10,668 in / 1,586 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+Medical Record Number: 100  
+
+Chief Complaint  
+Sore throat for three days accompanied by a low‑grade fever and fatigue.  
+
+History of Present Illness  
+Abbey reports the onset of a sore throat three days ago. The pain has been constant, worsens with swallowing, especially solid foods, and is only minimally relieved by over‑the‑counter lozenges. One day ago she began to feel feverish, describing chills and a sensation of heat, although she has not taken a temperature measurement. She notes that the fever appears intermittent but has not resolved. Over the past 24–48 hours she has become increasingly fatigued and has noticed several tender lymph nodes (“lumps”) in the neck. She denies any cough, rhinorrhea, dyspnea, chest pain, palpitations, headache, nausea, vomiting, rash, night sweats, or changes in bowel or urinary habits. She has not been exposed to anyone known to be ill and has not traveled recently. She reports that the sore throat is present at all times and that liquids cause discomfort only when they are very cold. She has not experienced any recent upper‑respiratory infections.  
+
+Review of Systems  
+Constitutional: Positive for sore throat, feverish feeling, chills, fatigue; negative for weight loss, night sweats, recent fever spikes documented, or malaise beyond fatigue.  
+HEENT: Positive for sore throat and cervical lymphadenopathy; negative for cough, nasal congestion, sinus pain, ear pain, visual changes, or recent dental pain.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+Musculoskeletal: No joint pain or muscle aches.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Crohn’s disease, diagnosed in 2023, currently managed with sulfasalazine.  
+- Hypertension (essential), longstanding.  
+- Prediabetes.  
+- Anemia (chronic).  
+- Metabolic syndrome.  
+- Ischemic heart disease.  
+- Chronic kidney disease (stage 4) progressing to end‑stage renal disease; status post renal transplantation (transplant performed in 2010).  
+- History of renal transplant with ongoing immunosuppression.  
+- Other historic conditions (stress, prior dental disease, etc.) are noted but not currently active.  
+
+Surgical History  
+- Colonoscopy with brief hospitalization in 2023.  
+- Renal transplant surgery in 2010.  
+
+Social History  
+Abbey lives in an apartment with her parents and younger brother. She does not smoke cigarettes, does not use recreational drugs, and consumes alcohol only rarely (once or twice in the past, now abstinent because it worsens her Crohn’s disease). She reports regular swimming for exercise but no participation in contact sports. Occupational status is not specified.  
+
+Family History  
+- First‑degree relatives with Crohn’s disease and ulcerative colitis.  
+- Additional family members with asthma and eczema.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Current Medications (home)  
+- Sulfasalazine (dose not specified) for Crohn’s disease.  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression).  
+- Tacrolimus injection 5 mg/ML as needed (immunosuppression).  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate 100 mg extended‑release daily.  
+- Nitroglycerin 0.4 mg spray as needed for chest discomfort.  
+- Acetaminophen/Hydrocodone 325 mg/7.5 mg as needed for pain.  
+- Naproxen sodium 220 mg as needed for pain/inflammation.  
+- Additional agents listed in the record (e.g., insulin, epoetin alfa) are continued per prior orders.  
+
+Objective  
+Vital Signs: No vital signs were recorded during this encounter.  
+Physical Examination: The transcript does not include a documented physical exam. No objective findings (e.g., oropharyngeal erythema, exudates, tonsillar swelling, or detailed lymph node assessment) are available.  
+
+Laboratory and Diagnostic Studies  
+No laboratory tests were obtained at the time of this visit. The provider ordered the following for this encounter:  
+- SARS‑CoV‑2 PCR (nasopharyngeal swab) with results expected within 24–48 hours.  
+- Epstein‑Barr virus (EBV) antibody panel to evaluate for infectious mononucleosis.  
+
+Assessment  
+1. Acute pharyngitis – likely viral in etiology given the absence of cough, lack of exudates, and presence of cervical lymphadenopathy; however, bacterial causes (including Group A Streptococcus) cannot be excluded without testing.  
+2. Possible COVID‑19 infection – pending PCR result; appropriate isolation precautions advised.  
+3. Possible infectious mononucleosis – EBV serology ordered given lymphadenopathy and fatigue.  
+4. Immunocompromised state secondary to renal transplant and chronic immunosuppressive therapy, which raises concern for atypical or more severe infections.  
+
+Plan  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR; advise patient to self‑isolate until results are available.  
+- Perform EBV antibody testing to assess for acute mononucleosis.  
+- If COVID‑19 test is negative and symptoms persist or worsen, consider rapid antigen detection test or throat culture for Group A Streptococcus; treat accordingly.  
+- Symptomatic management: continue use of lozenges for throat comfort, encourage adequate hydration, and consider acetaminophen for fever or pain as needed.  
+- Advise soft, lukewarm foods and avoidance of very hot or very cold liquids that exacerbate pain.  
+- Monitor for new or worsening symptoms such as difficulty breathing, high‑grade fever, rash, or increased neck swelling; seek urgent care if these develop.  
+- Continue all chronic medications, including immunosuppressants, without interruption unless directed otherwise by transplant team.  
+- Follow‑up: Telephone or telehealth check‑in in 48 hours to review COVID‑19 result and symptom progression; in‑person visit if bacterial pharyngitis is suspected or if the patient’s condition deteriorates.  
+- Education: Reviewed signs of worsening infection, importance of isolation while awaiting COVID‑19 results, and when to seek emergent care.  
+
+Disposition  
+Patient was counseled, testing ordered, and discharged home with the above plan. No immediate further in‑person evaluation is required at this time.

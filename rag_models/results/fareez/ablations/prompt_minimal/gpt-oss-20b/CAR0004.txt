@@ -1,0 +1,115 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:29:30
+Time: 2.38s
+Tokens: 8,959 in / 1,350 out
+============================================================
+
+**Patient Information**  
+- **Name:** Unspecified (patient self‑identified as a 25‑year‑old male)  
+- **Age:** 25 years  
+- **Sex:** Male  
+- **Date of Visit:** 2024‑04‑14  
+- **Chief Complaint:** Sharp chest pain
+
+---
+
+### S – Subjective
+
+**Chief Complaint**  
+The patient reports “really sharp pain in my chest” that has been present for the past three days.
+
+**History of Present Illness**  
+- **Onset & Duration:** Started approximately 3 days ago, with brief episodes lasting only a few seconds each time.  
+- **Character:** Sharp, localized directly over the heart region; radiates to the neck during some episodes.  
+- **Intensity:** 6/10 on the pain scale.  
+- **Aggravating Factors:** Coughing, lying down.  
+- **Alleviating Factors:** Leaning forward improves symptoms.  
+- **Associated Symptoms:** Denies shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, cough, or runny nose at present. No recent injury, fever, or weight changes.  
+- **Prior Episodes:** None.  
+- **Medications Tried:** Took Tylenol (acetaminophen) once yesterday, which provided some relief.  
+- **Past Medical History:** No known medical conditions, no previous surgeries.  
+- **Medication List:** Occasional acetaminophen; no chronic medications.  
+- **Allergies:** None known.  
+
+**Social History**  
+- Occupation: Student (engineering at Western University) and part‑time postal worker.  
+- Living situation: Resides with parents in a house.  
+- Alcohol: Occasional use, 1–2 drinks on weekends.  
+- Tobacco: Never smoked.  
+- Illicit drugs: Denies recreational drug use.  
+- Exercise: No regular exercise reported.  
+
+**Family History**  
+- Father: Died from a heart attack two weeks ago (cardiac death).  
+
+**Review of Systems**  
+
+| System | Findings |
+|--------|----------|
+| Constitutional | No fever, chills, weight change, or night sweats. |
+| Respiratory | No cough, dyspnea, wheeze, or sputum. |
+| Cardiovascular | Chest pain (described above). No palpitations or edema. |
+| Gastrointestinal | No nausea, vomiting, dysphagia, or reflux. |
+| Neurologic | No dizziness, syncope, or focal weakness. |
+| Musculoskeletal | No recent injury or muscle pain. |
+| Other | No headaches, rash, or urinary symptoms. |
+
+---
+
+### O – Objective
+
+*(No objective data were collected during this brief encounter; the following plan includes the necessary diagnostics.)*  
+
+**Vital Signs** – Not recorded in the visit; will obtain upon arrival to the ED.  
+
+**Physical Examination** – None performed at this time; the patient was not evaluated for vital signs or a focused exam.  
+
+**Laboratory/Imaging Planned**  
+- **ECG** – Immediate 12‑lead electrocardiogram.  
+- **Cardiac biomarkers** – Troponin I/T, CK‑MB.  
+- **Basic metabolic panel** – Sodium, potassium, chloride, bicarbonate, BUN, creatinine, glucose.  
+- **CBC** – Complete blood count.  
+- **Chest X‑ray** – If indicated by clinical findings or ECG.  
+- **D‑dimer** – If suspicion for pulmonary embolism remains.
+
+---
+
+### A – Assessment
+
+**Primary Diagnosis (Differential)**  
+1. **Acute coronary syndrome (unstable angina/early STEMI)** – Strongly considered given sharp chest pain, radiation to neck, worsening with exertion/lying, family history of early MI, and age.  
+2. **Non‑cardiac chest pain** – Musculoskeletal or costochondritis; less likely given positional variation and family history.  
+3. **Other** – Pulmonary embolism, aortic dissection, esophageal spasm, GERD (unlikely given pain characteristics).
+
+**Secondary Concerns**  
+- Anxiety / Panic disorder (history of stress, recent loss of father, high perceived risk).  
+- Possible alcohol misuse (though low frequency).
+
+---
+
+### P – Plan
+
+| Action | Details | Timing |
+|--------|---------|--------|
+| **Urgent ECG** | 12‑lead ECG to evaluate for ischemic changes. | Immediately |
+| **Cardiac enzymes** | Troponin I/T; repeat if initial values abnormal or clinical picture worsens. | Within 3 h; repeat at 6 h if needed |
+| **Basic labs** | CBC, BMP, lipid profile (for baseline). | Within 24 h |
+| **Chest X‑ray** | If ECG abnormal or patient develops dyspnea. | As indicated |
+| **Medications** | • Aspirin 325 mg chewable (unless contraindicated). <br>• Sublingual nitroglycerin 0.4 mg q5 min PRN for chest discomfort. | As above |
+| **Disposition** | Admit to cardiac telemetry unit if ECG abnormal, elevated troponin, or ongoing pain. If all tests normal and pain resolves, consider observation and cardiology consultation. | As indicated |
+| **Follow‑up** | Cardiology assessment within 48 h post‑evaluation. | Within 48 h |
+| **Patient education** | • Reassure regarding evaluation steps. <br>• Explain possible outcomes and the importance of monitoring for worsening symptoms (sudden chest pain, breathlessness, syncope). <br>• Encourage rest, avoidance of strenuous activity, and limiting alcohol. <br>• Discuss coping strategies for anxiety; consider referral to counseling if symptoms persist. | During visit |
+| **Safety net** | If chest pain recurs or new symptoms develop, call 911 or go to nearest emergency department immediately. | Immediate |
+
+---
+
+**Disposition**  
+The patient will be transported to the emergency department for ECG and laboratory evaluation. He was advised to avoid exertion until further assessment.  
+
+**Signature**  
+[Physician/Provider Name] – EMR ID: CAR0004  
+Date: 2024‑04‑14  
+
+---

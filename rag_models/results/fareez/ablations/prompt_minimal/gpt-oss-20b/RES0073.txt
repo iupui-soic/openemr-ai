@@ -1,0 +1,151 @@
+Model: openai/gpt-oss-20b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 04:28:18
+Time: 3.53s
+Tokens: 12,291 in / 1,921 out
+============================================================
+
+**Patient Information**  
+**Name:** Aaron Bartoletti  
+**DOB:** 08 Aug 1981 (42 years)  
+**Sex:** Male  
+**Address:** 409 Veum Drive, Spencer, MA 01562  
+**Occupation:** Grocery store employee (full‑time)  
+**Social History:** Former smoker (quit ~2 yrs ago), occasional wine (2‑3 times/​week), uses cannabis ~1–2 times/month. Lives alone. No recent travel or sick contacts.  
+
+---
+
+## SOAP Summary
+
+### Subjective
+
+**Chief Complaint:**  
+“Feeling runny nose and congestion that has become painful and pressure‑like around the nose and cheeks.”
+
+**History of Present Illness (HPI):**  
+Mr. Bartoletti reports a 7‑day progression of upper‑respiratory symptoms.  
+- **5 days ago:** Clear nasal discharge began, followed by nasal congestion and throat irritation.  
+- **Last 2 days:** Significant facial/cheek pressure and pain, predominantly over the maxillary sinuses. Pain radiates to the front teeth but does not involve the mouth.  
+- **Anosmia:** Loss of smell began after 3 days of worsening congestion.  
+- **Other symptoms:** Mild, brief chills; no fever noted; no cough, sore throat, wheezing, shortness of breath, chest pain, dizziness, nausea, vomiting, abdominal pain, diarrhea, urinary complaints, rashes, or skin changes.  
+- **Sleep disturbance:** Difficulty breathing through nose at night, resulting in mouth‑breathing.  
+
+**Associated Symptoms (Positive):**  
+- Clear nasal discharge (sometimes whitish).  
+- Bilateral nasal obstruction, alternating sides.  
+- Facial pressure/pain in cheeks, maxillary region.  
+- Mild eye redness/itchiness.  
+
+**Associated Symptoms (Negative):**  
+- Fever, cough, sore throat, wheeze, dyspnea, chest pain, syncope, palpitations, rash, weight loss, GI or GU symptoms.  
+
+**Review of Systems:**  
+- **Constitutional:** No fever, chills brief, no weight loss, adequate energy except sleep difficulty.  
+- **Respiratory:** Congestion, nasal obstruction, anosmia; no cough, wheeze, dyspnea.  
+- **ENT:** Clear rhinorrhea, facial pain, mild eye irritation.  
+- **Cardiovascular:** No chest pain, palpitations.  
+- **GI/GU:** No nausea/vomiting, abdominal pain, diarrhea, urinary changes.  
+- **Dermatologic:** No rash, itching (aside from mild ocular itch).  
+- **Musculoskeletal:** No joint or muscle aches.  
+- **Psychiatric:** No anxiety, depression symptoms reported (PHQ‑9 score 24 indicates moderate‑severe depression—addressed separately).
+
+**Past Medical History (PMH):**  
+- Essential hypertension (on amlodipine, hydrochlorothiazide).  
+- Dyslipidemia (statin).  
+- Chronic kidney disease (stage 3) with history of kidney transplant (currently on tacrolimus—medication status may need updating).  
+- Chronic pain, migraine without aura, chronic gingivitis.  
+- Prior viral sinusitis (2017‑2021).  
+- Past tobacco use (quit 2 yrs ago).  
+
+**Medications:**  
+- **Statin** (type unspecified).  
+- **Amlodipine 2.5 mg PO QD.**  
+- **Hydrochlorothiazide 25 mg PO QD.**  
+- **Multivitamin** daily.  
+- (Note: EMR lists historical amoxicillin/clavulanate and tacrolimus, likely discontinued; current immunosuppressive status to confirm.)
+
+**Allergies:** No known drug or environmental allergies reported.  
+
+**Family History:** No known cardiac, renal, or cancer history.  
+
+**Social History:** Non‑smoker, moderate alcohol, occasional cannabis; works full‑time in grocery; lives alone.  
+
+---
+
+### Objective
+
+**Vitals:** (Not recorded in encounter; assume within normal limits)  
+
+**Physical Examination:**
+- **ENT:** Nasal mucosa erythematous; clear to slightly whitish discharge. No purulent purpura. Bilateral maxillary sinus tenderness to palpation. Anterior nares patent but with congestion.  
+- **Eyes:** Mild conjunctival redness, mild itching; no discharge.  
+- **Throat:** No erythema or exudate.  
+- **Lungs:** Clear to auscultation bilaterally.  
+- **Cardiac:** Regular rate and rhythm, no murmurs.  
+- **General:** Alert, oriented; no acute distress.  
+
+**Laboratory Findings:**  
+- **Complete Blood Count:** WBC 3.5 × 10³/µL (low normal), Hgb 16.4 g/dL, Hct 48 %, platelets 209 k/µL.  
+- **Basic Metabolic Panel (incomplete):** Not available.  
+- **Lipid Panel:** HDL 62 mg/dL, LDL 98 mg/dL, Triglycerides 131 mg/dL, Total Cholesterol 187 mg/dL.  
+- **Psychiatric Screens:** PHQ‑9 score 24 (moderate‑severe depression), PHQ‑2 4.  
+
+(Additional labs such as electrolytes, creatinine, CBC with differential, and inflammatory markers were not obtained during this visit.)
+
+---
+
+### Assessment
+
+1. **Acute sinusitis – probable bacterial**  
+   - Rationale: ≥5 days of symptoms, clear discharge that became more purulent, facial pain, loss of smell, worsening after initial improvement, and persistent obstruction.  No fever but risk of bacterial conversion remains.  
+2. **Essential hypertension** – well‑controlled (meds listed).  
+3. **Dyslipidemia** – controlled on statin.  
+4. **Chronic kidney disease (stage 3)** – monitor renal function and tacrolimus levels if applicable.  
+5. **Moderate‑severe depressive symptoms** – PHQ‑9 24; recommend follow‑up with psychiatry/primary care.  
+
+**Differential diagnoses**: Viral sinusitis, allergic rhinitis, dental abscess (unlikely), orbital cellulitis (no ocular pain or vision changes).  
+
+---
+
+### Plan
+
+**Medical Management:**  
+- **Antibiotics (considering bacterial sinusitis):**  
+  - If temperature >38°C, or if symptoms worsen or persist >10 days, initiate **Amoxicillin‑clavulanate 875/125 mg PO BID** for 7 days.  
+  - If penicillin allergy, consider doxycycline 100 mg PO BID or clarithromycin 500 mg BID.  
+- **Supportive care:**  
+  - Saline nasal irrigation 3–4 times/day.  
+  - Oral NSAIDs (ibuprofen 400–600 mg PO PRN) for facial pain.  
+  - Oral decongestant (pseudoephedrine 30 mg PO BID) for short‑term relief if tolerated; avoid with hypertension.  
+  - Warm compresses over maxillary sinuses.  
+- **Hypertension & Lipid Management:**  
+  - Continue amlodipine & hydrochlorothiazide.  
+  - Continue statin.  
+  - Counsel on diet, exercise, weight control (BMI 28.8).  
+- **Kidney & Immunosuppressive Monitoring:**  
+  - Verify current tacrolimus levels (if transplanted) and adjust immunosuppression accordingly.  
+  - Monitor serum creatinine and electrolytes in next visit.  
+- **Mental Health:**  
+  - Initiate psychotherapy referral; consider SSRIs (e.g., sertraline 25 mg PO daily).  
+  - Encourage regular sleep hygiene.  
+
+**Follow‑up:**  
+- Return in 7–10 days for symptom review.  
+- If fever >38°C, facial swelling, visual changes, or worsening pain before then, re‑evaluate sooner.  
+
+**Patient Education:**  
+- Discuss criteria for bacterial sinusitis and when to seek urgent care.  
+- Explain importance of completing antibiotic course if prescribed.  
+- Advise on avoiding NSAIDs with hypertension, and limiting alcohol.  
+- Provide information on healthy lifestyle for hypertension and depression.  
+
+**Disposition:**  
+- Discharged with oral antibiotics (if prescribed), supportive measures, and follow‑up plan.  
+
+---  
+
+**Signature:** _______________________  
+**Date:** 14 Apr 2026  
+**Provider:** Dr. ___ (name withheld)  
+**Practice:** ___ (name withheld)

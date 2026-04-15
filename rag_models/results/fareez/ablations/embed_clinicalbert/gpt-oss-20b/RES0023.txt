@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:54:14
+Time: 2.24s
+Tokens: 13,523 in / 1,302 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: December 5, 1915 (patient's birth year appears unusually early; likely a data entry error)  
+Gender: Male  
+Address: 656 Murphy Street, Walpole, Massachusetts 02081  
+Date of Encounter: September 8, 2024  
+
+Chief Complaint  
+The patient presents with a five‑day history of a dry cough that has progressively worsened, accompanied by sore throat, decreased sense of smell, feeling feverish, and recent night sweats.  
+
+History of Present Illness  
+Aaron reports that the cough began approximately five days ago and has been worsening. It is dry, persists throughout the day, and has begun to interrupt his sleep. He notes a sore throat that developed concurrently with the cough. The patient has experienced a feeling of being "hot," although he has not measured a temperature. He reports night sweats that soaked his shirt last night, and a recent loss of taste sensation has not occurred; however, his sense of smell is decreased. He denies nausea, vomiting, chills, chest pain (except for throat discomfort), weight loss, or recent travel. He reports no exposure to known sick contacts beyond the usual grocery store clientele.  
+
+Past Medical History (per transcript)  
+- Hypertension, currently managed with Ramipril.  
+- Type 2 Diabetes Mellitus, managed with Metformin.  
+- Gallbladder removal (cholecystectomy) approximately ten years ago.  
+
+Past Surgical History (per transcript)  
+- Cholecystectomy.  
+
+Medications (current, per transcript)  
+- Ramipril 10 mg orally daily.  
+- Metformin 500 mg orally twice daily.  
+- Vitamin D (dose not specified).  
+
+Allergies  
+Environmental allergens, notably pollen. No known drug allergies reported.  
+
+Social History  
+- Non‑smoker.  
+- Occasional alcohol use: about three to four beers on weekends.  
+- Works as a cashier/assistant in a grocery store.  
+- Lives with wife and two children; no recent household exposures to illness reported.  
+
+Family History  
+- Maternal and paternal relatives with asthma. No other significant family history documented.  
+
+Review of Systems  
+Constitutional: Reports feeling hot and fatigued; no fever measured; night sweats noted.  
+Respiratory: Dry cough lasting five days, worsening; sore throat; decreased smell; no shortness of breath, wheezing, or chest pain aside from throat discomfort.  
+Cardiovascular: No chest pain, palpitations, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.  
+Genitourinary: No dysuria or hematuria.  
+Musculoskeletal: No new pain.  
+Neurologic: No dizziness or syncope.  
+Psychiatric: No anxiety or depression symptoms reported during encounter.  
+
+Physical Examination  
+No examination findings were documented during the encounter; therefore, "No information available."  
+
+Vital Signs  
+Vital signs were not recorded during this encounter; therefore, "No information available."  
+
+Laboratory Results  
+- Sodium 143.9 mmol/L (normal).  
+- Chloride 103.8 mmol/L (normal).  
+- Potassium 4.74 mmol/L (normal).  
+- Bicarbonate 25.7 mmol/L (normal).  
+- Creatinine 0.39 mg/dL (low, likely reflecting laboratory reference or chronic kidney disease status).  
+- Glucose 70.6 mg/dL (normal).  
+- Aspartate aminotransferase 36.8 U/L (slightly elevated).  
+- Alkaline phosphatase 79.5 U/L (normal).  
+- Urinalysis protein 280 mg/dL (significantly elevated).  
+- Urinalysis leukocyte esterase and nitrite: values not specified.  
+- PHQ‑2 score 1; GAD‑7 score 2, indicating minimal depression and anxiety symptoms.  
+
+Assessment  
+Primary diagnosis: Acute bronchitis (viral etiology).  
+Secondary considerations: Possible COVID‑19 infection pending PCR test.  
+The patient’s chronic comorbidities include hypertension, type 2 diabetes mellitus, and chronic kidney disease (stage 1–2 per earlier records).  
+
+Plan  
+1. **Diagnostic Testing**: Obtain a nasopharyngeal SARS‑CoV‑2 PCR swab immediately; results pending.  
+2. **Isolation**: Instruct patient to self‑isolate at home with his family for 14 days pending test results.  
+3. **Symptomatic Management**:  
+   - Continue current antihypertensive (Ramipril) and antidiabetic (Metformin) therapy.  
+   - Encourage adequate hydration, rest, and use of OTC antitussives (e.g., dextromethorphan) if cough is troublesome.  
+   - Use saline nasal spray to alleviate sore throat and support olfactory function.  
+   - Consider acetaminophen for fever or discomfort if needed.  
+4. **Monitoring**: Patient should monitor for development of fever, worsening shortness of breath, or new chest pain; if such symptoms appear, seek immediate medical attention.  
+5. **Follow‑up**:  
+   - Call the clinic 48–72 hours after the swab to review results and assess clinical status.  
+   - If COVID‑19 PCR is positive, follow local public health guidelines for treatment and isolation; consider antiviral therapy if indicated.  
+   - If negative and symptoms persist beyond one week, arrange for repeat evaluation.  
+6. **Discharge Instructions**:  
+   - Keep the patient’s medications as prescribed.  
+   - Educate on the importance of adherence to isolation and monitoring of symptoms.  
+   - Provide written instructions on hand hygiene, mask use, and when to seek urgent care.  
+   - Encourage rest and adequate fluid intake.  
+   - Advise avoiding contact with vulnerable individuals during the isolation period.  
+
+No further imaging was performed during this encounter. No additional laboratory workup was ordered beyond the baseline values recorded. The patient was reassured, informed of the plan, and expressed understanding of the isolation period and follow‑up.

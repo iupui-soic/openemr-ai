@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:54:10
+Time: 2.33s
+Tokens: 11,063 in / 1,114 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+Insurance: Not specified  
+
+Chief Complaint  
+The patient presents with a three‑day history of worsening cough, dyspnea, and right‑sided chest discomfort, accompanied by fever.
+
+History of Present Illness  
+Mr. Schneider reports that approximately three days ago, he began experiencing increased frequency of cough and shortness of breath. The cough has become productive, yielding dark green‑yellow sputum. He estimates coughing roughly two times per hour and notes that the sputum volume has increased compared to his baseline chronic cough. The chest discomfort is sharp, localized to the right chest and upper abdomen, and is exacerbated by coughing and deep inspiration. He denies chest pain on exertion. A self‑measured temperature of 38.6 °C (101.5 °F) was recorded, and he reports feeling febrile for the past few days. Mr. Schneider denies any recent travel, sick contacts, or occupational exposures beyond routine volunteer work at a homeless shelter. He has not taken any new medications or supplements beyond occasional acetaminophen and ibuprofen for mild pain.  
+
+Review of Systems  
+Constitutional: fever, chills, malaise.  
+Respiratory: productive cough with green‑yellow sputum, dyspnea, chest pain on inspiration.  
+Cardiovascular: no chest pain on exertion, no palpitations, denies shortness of breath at rest.  
+Gastrointestinal: no nausea, vomiting, abdominal pain beyond described chest discomfort.  
+Other systems: No mention of dermatologic, neurologic, or musculoskeletal complaints.  
+
+Past Medical History (from transcript and EMR)  
+- Type 2 diabetes mellitus (insulin, metformin, SGLT‑2 inhibitor)  
+- Hypertension (amlodipine)  
+- Chronic kidney disease (stage 3‑4, likely due to diabetes)  
+- Chronic tobacco use (30 pack‑years)  
+- History of bronchitis / chronic productive cough  
+- Diabetes‑related kidney disease and microalbuminuria  
+- Coronary artery disease with prior bypass grafting (1993)  
+- Ischemic heart disease history  
+
+Surgical History  
+- Coronary artery bypass grafting (1993)  
+
+Social History  
+- Lives with wife in a private residence.  
+- Current smoker (approximately one pack per day for 30 years).  
+- No alcohol or recreational drug use.  
+- Works as a volunteer at a homeless shelter several times per week.  
+
+Family History  
+- Father: deceased in his 70s following a heart attack.  
+- Mother: hypertension.  
+
+Current Medications (per transcript)  
+- Amlodipine 2.5 mg daily  
+- Insulin (type unspecified) as per diabetes regimen  
+- Metformin (dose unspecified)  
+- SGLT‑2 inhibitor (dose unspecified)  
+- Multivitamin daily  
+
+Allergies  
+No medication allergies reported; environmental allergies noted but unspecified.  
+
+Physical Examination  
+No exam findings were documented during this encounter.  
+
+Vital Signs  
+No current vital signs were recorded in the transcript or EMR.  
+
+Laboratory Results  
+No recent laboratory data were available at the time of this encounter.  
+
+Imaging  
+No imaging studies were performed or documented during this visit.  
+
+Assessment  
+The presentation is most consistent with an acute bacterial pneumonia superimposed on chronic bronchitis, complicated by systemic fever and right‑sided pleuritic chest pain. The patient’s advanced age, smoking history, diabetes, and chronic kidney disease place him at increased risk for severe infection and poor outcomes.  
+
+Plan  
+1. Initiate empiric antibiotic therapy for community‑acquired pneumonia: Amoxicillin‑clavulanate 875/125 mg orally twice daily for 10 days, or an alternative β‑lactam if penicillin allergy.  
+2. Continue current home medications (amlodipine, insulin, metformin, SGLT‑2 inhibitor).  
+3. Encourage adequate hydration, rest, and monitoring of respiratory status.  
+4. Advise cessation of smoking; provide counseling resources and consider nicotine replacement therapy.  
+5. Arrange for repeat vital signs and temperature monitoring at home; seek emergency care if shortness of breath worsens, oxygen saturation falls below 90 %, or he experiences severe chest pain or persistent fever.  
+6. Follow‑up with primary care or pulmonology in 48–72 hours to assess response to therapy.  
+7. Educate patient on recognizing red‑flag symptoms (increased dyspnea, new wheezing, chest pain with exertion).  
+8. Consider outpatient pulse oximetry if available.  
+
+Disposition  
+The patient was advised to adhere to the antibiotic regimen and to contact the clinic if symptoms do not improve or worsen. No discharge medication was prescribed beyond the antibiotic course.  
+
+Follow‑up  
+Scheduled return visit in 48–72 hours for re‑assessment; patient will also have routine diabetes and hypertension follow‑up as per primary care schedule.  
+
+Prepared by:  
+[Physician / Scribe Name]  
+[Date]

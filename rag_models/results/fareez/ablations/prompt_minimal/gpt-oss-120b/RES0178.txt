@@ -1,0 +1,132 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:22:29
+Time: 3.90s
+Tokens: 6,377 in / 1,545 out
+============================================================
+
+**Patient Information**  
+- **Name / Identifier:** (Father’s son – pediatric patient)  
+- **Age:** Approximately X years old (school‑age child)  
+- **Sex:** Male  
+- **Date of Visit:** 2026‑04‑14  
+
+---
+
+## SOAP NOTE  
+
+### **S – Subjective**  
+
+**Chief Complaint:**  
+- Fever, dry cough, clear rhinorrhea, sore throat, mild myalgias, and decreased appetite for 2 days.
+
+**History of Present Illness (HPI):**  
+- **Onset & Duration:** Symptoms began 2 days ago. The runny nose and dry cough started first, followed by fever with chills last night.  
+- **Fever:** Measured at 38.8 °C (101.8 °F) by the mother.  
+- **Cough:** Dry, non‑productive; no sputum, no blood. No wheezing or shortness of breath reported.  
+- **Nasal Discharge:** Clear, watery; no congestion reported.  
+- **Sore Throat:** Mild, not significantly bothersome; child continues to eat, though portions are smaller than usual.  
+- **Myalgias:** Generalized “aches all over.”  
+- **GI:** No nausea, vomiting, or diarrhea.  
+- **Other Review of Systems (negative):** No chest pain, shortness of breath, wheeze, ear pain or discharge, visual or hearing changes, loss of taste/smell, rash, dizziness, fainting, numbness/tingling, joint pain, urinary changes, weight loss (weight gain noted), or recent sick contacts.  
+
+**Past Medical History:**  
+- No chronic illnesses; previously healthy.  
+- No prior hospitalizations or surgeries.  
+- Birth: Full‑term C‑section after a prolonged labor; uncomplicated.  
+
+**Medications:**  
+- None.
+
+**Allergies:**  
+- No known drug, food, or environmental allergies.
+
+**Immunizations:**  
+- Up‑to‑date per schedule.
+
+**Family History:**  
+- Grandfather with hypertension and hyperlipidemia; otherwise non‑contributory.
+
+**Social History:**  
+- Lives with parents and two younger siblings.  
+- No tobacco exposure at home.  
+- No recent travel; primarily at home and attending school (mixed in‑person/online).  
+- No known environmental irritants (mold, dust, carpet, asbestos).  
+
+**Development:**  
+- Age‑appropriate milestones for motor, speech, and social domains.
+
+**Review of Systems (pertinent positives/negatives)** – summarized above in HPI.
+
+---
+
+### **O – Objective**  
+
+- **Vital Signs:**  
+  - Temperature (home): 38.8 °C (101.8 °F) (recorded by parent).  
+  - No office vitals documented at this encounter.
+
+- **General:** Alert, appears mildly ill but not in distress.  
+
+- **HEENT:**  
+  - Nasal mucosa: clear watery discharge, no erythema or crusting.  
+  - Throat: mild erythema, no exudate, no tonsillar swelling noted by caregiver.  
+  - Eyes, ears: normal appearance, no discharge.  
+
+- **Neck:** Supple, no lymphadenopathy reported.  
+
+- **Respiratory:**  
+  - Breath sounds: Clear bilaterally, no wheezes, rales, or rhonchi reported.  
+  - No increased work of breathing.  
+
+- **Cardiovascular:** Regular rate and rhythm (parent did not note any abnormalities).  
+
+- **Abdomen:** Soft, non‑tender; normal bowel sounds.  
+
+- **Extremities / Musculoskeletal:** No swelling, deformity, or joint pain reported.  
+
+- **Skin:** No rash or lesions.  
+
+- **Neurologic:** Alert, oriented; no focal deficits reported.
+
+*No physical examination was performed in‑person; findings are based on caregiver report.*
+
+---
+
+### **A – Assessment**  
+
+1. **Upper Respiratory Infection (URI) – likely viral**  
+   - Classic presentation with fever, dry cough, clear rhinorrhea, sore throat, and myalgias.  
+   - No signs of bacterial superinfection (no purulent sputum, no focal otitis, sinusitis, or tonsillar exudates).  
+
+2. **Rule‑out SARS‑CoV‑2 infection**  
+   - Overlapping symptoms with COVID‑19; testing indicated by clinician.  
+
+3. **Dehydration risk / Decreased oral intake**  
+   - Mild reduction in appetite; monitor fluid intake.  
+
+4. **Differential (brief):**  
+   - Influenza (seasonal), COVID‑19, atypical bacterial pneumonia (less likely given lack of respiratory distress or abnormal exam), allergic rhinitis (clear discharge but fever and myalgias argue against).  
+
+---
+
+### **P – Plan**  
+
+| Item | Details |
+|------|---------|
+| **Diagnostics** | • Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (results expected within 24‑48 h). <br>• If fever persists > 3 days or respiratory status worsens, consider rapid influenza testing. |
+| **Medications** | • Acetaminophen 15 mg/kg PO q4‑6 h PRN for fever or discomfort (max 5 days). <br>• No antibiotics indicated at this time. |
+| **Supportive Care** | • Encourage adequate oral hydration (water, electrolyte solutions). <br>• Offer soft, easy‑to‑swallow foods; small frequent meals if appetite remains low. <br>• Maintain a comfortable environment; use a cool‑mist humidifier if nasal symptoms are bothersome. |
+| **Education / Return Precautions** | • Seek urgent care/ER if: <br> – Fever > 39.5 °C (103 °F) persisting > 48 h <br> – New/worsening cough with shortness of breath, wheezing, or chest pain <br> – Signs of dehydration (dry mucous membranes, decreased urine output, lethargy) <br> – Persistent vomiting, inability to retain fluids <br> – New onset ear pain, severe sore throat, or neck stiffness <br> – Any focal neurological changes (weakness, seizures). |
+| **Follow‑up** | • Telephone follow‑up in 48 h to review COVID test result and symptom trajectory. <br>• In‑person visit or telehealth if symptoms worsen or do not improve within 5 days. |
+| **Immunizations** | • Verify influenza vaccine status (if seasonally appropriate) and administer if due. |
+| **Documentation** | • Record today’s encounter as “Upper Respiratory Infection – viral etiology, pending COVID‑19 test.” |
+
+**Signature:**  
+[Physician’s Name, MD]  
+Date: 2026‑04‑14  
+
+---  
+
+*Prepared by: Medical Scribe (ChatGPT, MD‑level clinical documentation)*

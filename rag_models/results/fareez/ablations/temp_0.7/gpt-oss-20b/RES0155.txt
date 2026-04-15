@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:19:22
+Time: 2.66s
+Tokens: 12,183 in / 936 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914‑01‑07  
+Sex: Female  
+
+Chief Complaint  
+The patient presents with a five‑day history of worsening shortness of breath, chest discomfort, and a productive cough producing yellow‑green sputum, accompanied by a subjective feverish feeling.  
+
+History of Present Illness  
+The patient reports that for the past five days she has experienced progressively worsening dyspnea, especially with exertion, and has had a persistent cough that is productive of yellowish or greenish sputum. She denies hemoptysis, orthopnea, paroxysmal nocturnal dyspnea, or chest pain. She has felt feverish over the last few days but has not measured her temperature. There are no reports of night sweats, weight loss, or significant fatigue beyond the limitations imposed by her respiratory symptoms. She has been using her rescue inhaler (Ventolin) more frequently than usual (three or four puffs in the morning and additional use at night) but has not experienced relief.  
+
+Review of Systems  
+Constitutional: reports feeling feverish; denies chills, night sweats, weight change, or significant fatigue.  
+Respiratory: shortness of breath on exertion, productive cough with yellow/green sputum; denies hemoptysis, wheezing, or chest pain.  
+Cardiovascular: denies palpitations, chest pain, or dizziness.  
+Gastrointestinal: denies sore throat, nausea, vomiting, diarrhea, or constipation.  
+Genitourinary: denies dysuria or frequency.  
+Neurologic: denies headaches, vision changes, or dizziness.  
+Psychiatric: no anxiety or depression reported.  
+Skin: no rashes or lesions reported.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed 3 years ago)  
+- Hypertension  
+- Gastroesophageal reflux disease (GERD)  
+
+Surgical History  
+No surgeries reported.  
+
+Social History  
+The patient is a current smoker, using approximately one pack of cigarettes per day for 30–40 years. She works at a grocery store and lives with her daughter in an apartment. She consumes alcohol socially, drinking wine on weekends. She denies use of recreational drugs.  
+
+Family History  
+No family history of pulmonary or cardiovascular disease reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+- Ventolin (albuterol) inhaler, used as needed (approximately 2–4 puffs daily)  
+- Symbicort (budesonide/formoterol) daily  
+- ACE inhibitor (specific agent not stated)  
+- Tums (calcium carbonate) for GERD symptoms as needed  
+
+Physical Examination  
+No vital sign or physical examination data were recorded in the encounter.  
+
+Laboratory Results  
+No laboratory studies were documented in the current encounter.  
+
+Imaging  
+No imaging studies were performed at the time of this visit; a chest radiograph is planned.  
+
+Assessment  
+1. Exacerbation of chronic obstructive pulmonary disease, likely secondary to a lower respiratory tract infection (bacterial or viral).  
+2. Possible pneumonia, pending imaging and laboratory evaluation.  
+3. Differential includes COVID‑19 infection; a nasopharyngeal swab will be obtained.  
+
+Plan  
+- Immediate evaluation in the emergency department.  
+- Obtain vital signs, complete physical examination, and chest radiograph.  
+- Order complete blood count, basic metabolic panel, and inflammatory markers (e.g., CRP, procalcitonin) to assess for bacterial infection.  
+- Perform SARS‑CoV‑2 PCR testing.  
+- Initiate nebulized bronchodilator therapy and consider systemic corticosteroids if indicated.  
+- Begin empiric antibiotic therapy (e.g., a macrolide or beta‑lactam) if bacterial pneumonia is confirmed or highly suspected.  
+- Continue rescue albuterol inhaler and maintenance Symbicort.  
+- Monitor oxygen saturation; consider supplemental oxygen if SpO₂ falls below 90% on room air.  
+- Provide discharge instructions regarding medication adherence, smoking cessation resources, and when to seek urgent care.  
+- Schedule follow‑up with primary care or pulmonology within 7–10 days after discharge or sooner if symptoms worsen.  
+
+Disposition  
+The patient was advised to proceed to the emergency department for further evaluation and treatment. The emergency department will determine the need for admission or outpatient management based on clinical findings and test results.

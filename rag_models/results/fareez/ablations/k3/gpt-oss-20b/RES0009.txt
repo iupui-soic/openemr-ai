@@ -1,0 +1,99 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:33:57
+Time: 2.96s
+Tokens: 15,788 in / 1,371 out
+============================================================
+
+Patient Information  
+Name: Patient unspecified (transcript indicates female, age 94 years, DOB 1932‑06‑07)  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+Date of Encounter: 2024‑04‑14  
+
+Chief Complaint  
+The patient presents with a five‑day history of left‑sided chest pain described as a lingering sharp ache that worsens with deep inspiration and walking. The pain is constant, non‑radiating, and not associated with any other discomfort.  
+
+History of Present Illness  
+The patient reports that the chest pain began five days ago while she was sitting on her couch. Since onset, the pain has progressively worsened, especially during exertion such as walking to the mailbox, and is more pronounced with deep breaths. She has taken acetaminophen and ibuprofen intermittently for pain relief, with only partial symptom attenuation. No associated fever, chills, cough, wheeze, nausea, vomiting, or abdominal pain has been noted. The patient denies chest pain radiation, palpitations, syncope, or night sweats. She has experienced mild fatigue, likely secondary to the dyspnea and pain limiting her activity.
+
+Review of Systems  
+Constitutional: Denies fever, chills, night sweats, or significant weight change. Reports mild fatigue.  
+Respiratory: Reports left‑sided chest pain with deep inspiration; denies cough, wheezing, or hemoptysis.  
+Cardiovascular: Denies palpitations, chest pressure, or shortness of breath at rest.  
+Gastrointestinal: Denies abdominal pain, nausea, or vomiting.  
+Genitourinary: No urinary complaints.  
+Musculoskeletal: No joint or back pain.  
+Neurologic: Denies headaches, dizziness, or light‑headedness.  
+Skin: No rash or lesions noted.  
+
+Past Medical History  
+The patient reports no chronic medical conditions such as hypertension, diabetes, or cardiac disease. She does not take any regular prescription medications. She had a hysterectomy approximately one month prior to presentation, after which she experienced temporary reduced urinary frequency but is now back to normal. No history of recent infections or other illnesses.  
+
+Surgical History  
+- Hysterectomy (one month ago)  
+- Wisdom teeth extraction (teenage years)
+
+Social History  
+The patient resides with her husband and two teenage children. She works as an accountant. She consumes a glass of wine on weekends and currently smokes approximately five cigarettes per day, attempting to reduce her consumption. Past recreational drug use includes occasional marijuana in youth, with no recent use. No recent travel or long trips.  
+
+Family History  
+Mother had a myocardial infarction in her seventies. No known family history of cancers, clotting disorders, or other significant illnesses.  
+
+Allergies  
+No known drug allergies.  
+
+Medications  
+No chronic prescription medications. The patient reports use of acetaminophen and ibuprofen for pain relief.  
+
+Physical Examination  
+Vital signs and physical exam details were not documented in the transcript or electronic record; therefore, no information is available.  
+
+Laboratory Results  
+- White blood cell count: 9.5 ×10^3/µL (within normal limits)  
+- Hemoglobin: 16.9 g/dL  
+- Hematocrit: 47.5 %  
+- Platelets: 297 ×10^3/µL  
+- Serum creatinine: 0.88 mg/dL, estimated GFR 158 mL/min (normal)  
+- Serum sodium: 142.9 mmol/L; potassium: 3.73 mmol/L; chloride: 102.3 mmol/L; bicarbonate: 23.2 mmol/L  
+- Glucose: 82.8 mg/dL  
+- Calcium: 8.79 mg/dL  
+- Protein: 6.86 g/dL  
+
+No cardiac biomarkers (troponin, CK‑MB), D‑dimer, or imaging studies were obtained at this time.  
+
+Imaging  
+No imaging has been performed to date.  
+
+Assessment  
+The patient’s presentation of acute, sharp, left‑sided chest pain that worsens with inspiration and exertion raises concern for a pleuritic process. Differential diagnoses include pulmonary embolism, costochondritis, musculoskeletal strain, and less likely myocardial ischemia given absence of radiation, pressure, or cardiac risk factors. Recent hysterectomy and current smoking habit, combined with advanced age, increase the risk of venous thromboembolism. The physician expressed concern for pulmonary embolism and intends to pursue laboratory and imaging evaluation.  
+
+Plan  
+
+1. Diagnostic Workup  
+   - Order a D‑dimer level.  
+   - If D‑dimer is elevated, proceed with a computed tomography pulmonary angiography (CTPA) to rule out pulmonary embolism.  
+   - Consider a chest radiograph to assess for other pulmonary pathology.  
+
+2. Pharmacologic Management  
+   - Continue over‑the‑counter acetaminophen and ibuprofen as needed for pain.  
+   - If imaging confirms pulmonary embolism, initiate anticoagulation therapy per institutional protocol (e.g., low‑molecular‑weight heparin bridging to warfarin or direct oral anticoagulant).  
+
+3. Symptom Control  
+   - Encourage rest and avoid prolonged walking until evaluation is complete.  
+   - Provide instructions on safe coughing techniques and deep‑breathing exercises if appropriate.  
+
+4. Lifestyle Modifications  
+   - Strongly advise smoking cessation; offer referral to cessation counseling and nicotine replacement therapy.  
+   - Limit alcohol to occasional wine only.  
+
+5. Follow‑up  
+   - Arrange follow‑up appointment within 48–72 hours after diagnostic results are available.  
+   - If anticoagulation is started, schedule INR monitoring or appropriate oral anticoagulant follow‑up.  
+
+6. Discharge Instructions  
+   - Patient should seek immediate medical attention if she experiences worsening chest pain, shortness of breath, fainting, or new onset cough.  
+   - Keep a medication log and bring it to all follow‑up visits.  
+   - Maintain regular communication with primary care provider regarding smoking cessation progress.  
+
+The patient was advised of the potential seriousness of her symptoms, instructed on the steps to be taken, and encouraged to return promptly if her condition deteriorates. No further immediate interventions were performed during this encounter.

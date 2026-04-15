@@ -1,0 +1,94 @@
+Model: qwen/qwen3-32b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:58:08
+Time: 4.50s
+Tokens: 15,069 in / 1,420 out
+============================================================
+
+Patient Information  
+The patient is a 91-year-old male with a complex medical history including essential hypertension, chronic kidney disease (stages 1-4), ischemic heart disease, chronic sinusitis, chronic bronchitis, chronic kidney disease stage 4, chronic congestive heart failure, and a history of renal transplant. He also has a history of prostate carcinoma in situ, opioid abuse, and social challenges including social isolation and reports of violence in the environment. He is currently taking several medications, including tacrolimus, furosemide, lisinopril, amLODIPine, sertraline, clopidogrel, simvastatin, and metoprolol succinate.  
+
+Chief Complaint  
+The patient presents with a 5-day history of left-sided chest pain described as sharp and persistent, with exacerbation on deep breathing and physical activity. He also reports dyspnea, particularly with exertion, and has been self-medicating with over-the-counter analgesics (Tylenol and Advil) with partial relief.  
+
+History of Present Illness  
+The patient reports the onset of left-sided chest pain while sitting on his couch 5 days ago. The pain is localized to the left side of the chest and is described as sharp and persistent. It worsens with deep breathing and physical activity, such as walking to get the mail. The patient denies radiation of the pain to other areas. He reports dyspnea on exertion and a mild sense of fatigue, but denies fever, chills, cough, wheezing, nausea, vomiting, syncope, or palpitations. The patient recently underwent a hysterectomy approximately 1 month ago and reports no significant postoperative complications. He denies any recent travel or long trips.  
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or night sweats.  
+Respiratory: The patient reports dyspnea with exertion but denies cough, sputum production, or wheezing.  
+Cardiovascular: The patient denies chest pressure, palpitations, syncope, or orthopnea.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain reported.  
+Neurological: No headaches or dizziness reported.  
+Musculoskeletal: No joint or muscle pain reported.  
+Integumentary: No rashes or skin changes reported.  
+Genitourinary: No urinary symptoms reported.  
+Psychiatric: No recent changes in mood or mental status.  
+
+Allergies  
+No known allergies.  
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, chronic kidney disease (stages 1-4), ischemic heart disease, chronic sinusitis, chronic bronchitis, chronic congestive heart failure, and a history of renal transplant. He also has a history of prostate carcinoma in situ and opioid abuse.  
+
+Surgical History  
+The patient has undergone a hysterectomy approximately 1 month ago and has had previous surgeries including a wisdom tooth extraction.  
+
+Social History  
+The patient is a non-smoker, with a history of tobacco use, and is currently trying to reduce his intake. He consumes alcohol occasionally, typically a glass of wine on weekends. He lives with his husband and two teenagers and works as an full-time accountant. The patient has a history of social isolation and limited social contact.  
+
+Family History  
+The patient reports his mother had a heart attack in her 70s. No other family history of cancers, bleeding disorders, or thrombosis is reported.  
+
+Current Medications  
+The patient is currently taking tacrolimus, furosemide, lisinopril, amLODIPine, sertralline, clopidogrel, simvastatin, and metoprolol succinate. He has also been using over-the-counter analgesics (Tylenol and Advil) for pain relief.  
+
+Objective  
+Vital Signs  
+Blood pressure: N/A  
+Heart rate: 79 bpm  
+Respiratory rate: 15 breaths/min  
+SpO2: N/A  
+Temperature: N/A  
+Weight: N/A  
+Height: 182.6 cm  
+BMI: 33.29  
+
+Physical Exam  
+No physical examination findings are available in the provided data.  
+
+Labs  
+Leukocytes: 9.49 × 10^3/µL  
+Erythrocytes: 3.80 × 10^6/µL  
+Hemoglobin: 16.92 g/dL  
+Hematocrit: 47.49%  
+MCV: 80.65 fL  
+MCH: 27.14 pg  
+MCHC: 33.36 g/dL  
+RDW: 14.47%  
+Platelets: 296.7 × 10^3/µL  
+Glucose: 82.8 mg/dL  
+Urea nitrogen: 10.46 mg/dL  
+Creatinine: 0.88 mg/dL  
+Calcium: 8.79 mg/dL  
+Sodium: 142.93 mmol/L  
+Potassium: 3.73 mmol/L  
+Chloride: 102.28 mmol/L  
+Carbon dioxide: 23.22 mmol/L  
+Estimated glomerular filtration rate: 158.08 mL/min  
+
+Imaging  
+No imaging findings are available in the provided data.  
+
+Assessment  
+The patient presents with left-sided chest pain and dyspnea on exertion, raising concern for a pulmonary embolism. Given the recent surgery (hysterectomy), immobility, and risk factors, a pulmonary embolism is a primary concern. Other potential differentials include pleuritis, musculoskeletal pain, or pericarditis. The absence of fever, cough, and other systemic symptoms makes infection less likely.  
+
+Plan  
+The patient will undergo further investigations including a D-dimer test, chest X-ray, and possibly a CT pulmonary angiogram to evaluate for pulmonary embolism. If a pulmonary embolism is confirmed, anticoagulation therapy will be initiated. The patient will be monitored for any changes in symptoms and will be advised to avoid prolonged immobility. Follow-up with a cardiologist and pulmonologist is recommended. The patient should be advised to continue prescribed medications and to avoid NSAIDs unless directed by a physician.  
+
+Discharge Instructions  
+The patient is advised to monitor for any worsening symptoms, including increased shortness of breath, chest pain, or syncope. He should remain in contact with his primary care provider for follow-up and to report any new or worsening symptoms. No specific discharge medications are prescribed at this time.  
+
+Follow-up Instructions  
+The patient should follow up with his primary care provider within 7 days for a reassessment and to review the results of the investigations. A referral to a cardiologist and pulmonologist is recommended for further evaluation and management.

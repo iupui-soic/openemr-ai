@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:27:27
+Time: 4.99s
+Tokens: 8,861 in / 1,436 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn Date of Birth: 16 April 1965 Sex: Male Medical Record #: 2046  
+
+Chief Complaint  
+The patient presented to the Emergency Department with severe right‑upper‑quadrant (RUQ) abdominal pain.
+
+History of Present Illness  
+Agustin reports that three days ago, shortly after a lunch meal, he began to experience a sharp, localized pain in the right upper abdomen, just inferior to the lower ribs. The discomfort was initially mild but progressively worsened, reaching its peak intensity approximately three to four hours prior to arrival. At the time of evaluation he rates the pain as 8/10. The pain has remained confined to the RUQ without radiation. He describes the quality of the pain as sharp. He notes associated nausea over the past several days but denies any vomiting, hematemesis, or melena. Appetite has markedly decreased, especially on the day of presentation, and he feels unusually fatigued and “drained” because of the pain. He denies changes in bowel movements, urine color or frequency, skin rashes, or recent fevers. He has not sought medical care for this episode previously, although he recalls a similar, self‑limited episode of abdominal pain a few years ago that resolved without medical attention. Over‑the‑counter analgesics (ibuprofen and acetaminophen) have provided little relief.
+
+Review of Systems  
+Constitutional: Positive for fatigue and decreased energy; no fever, chills, or weight loss.  
+Gastrointestinal: Positive for RUQ abdominal pain and nausea; negative for vomiting, hematemesis, melena, hematochezia, diarrhea, constipation, change in stool color, or dysphagia.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Cardiovascular: No chest pain, palpitations, or dyspnea.  
+Respiratory: No cough or shortness of breath.  
+Skin: No rash, lesions, or jaundice.  
+Neurologic: No headache or focal deficits.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+The patient reports no chronic medical conditions other than a prior recommendation from his primary care physician to lose weight. He denies a history of hypertension, diabetes, renal disease, or any other diagnosed illness.
+
+Surgical History  
+The patient reports no prior surgeries.
+
+Social History  
+Agustin is employed as a consultant at a bank. He consumes alcohol socially, typically one to two glasses of wine each evening, and reports no desire to reduce his intake. He does not smoke cigarettes, use recreational drugs, or drink coffee. He lives with his partner and two children in a stable home environment; the family situation is described as supportive. He has no recent travel history and no known exposure to ill individuals.
+
+Family History  
+His father died of a cerebrovascular accident (stroke) in his 60s. His mother has a known history of gallstones. No other familial illnesses are reported.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Current Medications  
+The patient does not take any prescription medications on a regular basis. He occasionally uses over‑the‑counter antacids for heartburn, typically a few times per month after dinner.
+
+Vital Signs (at time of encounter)  
+Heart rate: 94 beats/minute  
+Respiratory rate: 13 breaths/minute  
+Blood pressure: Not recorded  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Weight/Height: Height 177.7 cm; weight not documented (BMI calculated from prior data as 27.27).
+
+Physical Examination  
+No physical examination findings were documented during this encounter.
+
+Laboratory Data (most recent values available in the chart)  
+- White blood cell count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.1 %  
+- Platelet count: 351.7 ×10³/µL  
+- Mean corpuscular volume: 94.5 fL  
+- Mean corpuscular hemoglobin: 28.35 pg  
+- Mean corpuscular hemoglobin concentration: 34.2 g/dL  
+- Red blood cell count: 4.34 ×10⁶/µL  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL 168 mg/dL, HDL 58 mg/dL, Triglycerides 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+
+Imaging  
+No imaging studies were performed during this visit.
+
+Assessment  
+1. Acute right‑upper‑quadrant abdominal pain, likely biliary colic or early cholecystitis given post‑prandial onset, location, and family history of gallstones.  
+2. Nausea associated with abdominal pain.  
+3. Dehydration/energy depletion secondary to pain and reduced oral intake.  
+
+Plan  
+- Diagnostic work‑up: Obtain stat complete blood count, comprehensive metabolic panel, liver function tests, and serum lipase. Order right‑upper‑quadrant abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, and biliary ductal dilation.  
+- Symptomatic management: Provide intravenous fluid hydration (0.9% normal saline) and administer analgesia (IV acetaminophen or opioid as needed). Offer an antiemetic such as ondansetron for nausea.  
+- NPO status until imaging results are available.  
+- If ultrasound confirms cholelithiasis with signs of acute cholecystitis, initiate surgical consultation for possible cholecystectomy.  
+- Education: Advise the patient to avoid fatty meals until a definitive diagnosis is made, encourage adequate hydration, and instruct him to return to the Emergency Department if he develops fever, vomiting, jaundice, or worsening pain.  
+- Discharge instructions: If discharged after negative imaging and symptom control, schedule outpatient follow‑up with primary care provider within 3–5 days and with a gastroenterology or surgery clinic for further evaluation of biliary disease. Provide prescription for oral analgesics (e.g., acetaminophen‑codeine) and an antiemetic (ondansetron) to use at home as needed.  
+- Follow‑up: Primary care visit in 3 days; earlier return to ED if any new or worsening symptoms occur.  
+
+The patient verbalized understanding of the plan and agreed to the proposed investigations and follow‑up. No further questions were raised.

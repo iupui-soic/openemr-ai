@@ -1,0 +1,29 @@
+Model: google/medgemma-4b-it
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:30:19
+Time: 24.85s
+Tokens: 7,839 in / 452 out
+Cell: k1
+============================================================
+
+Patient Information:
+
+Name: Aaron Russel
+DOB: 1952-11-14
+Sex: Male
+Unit Number: 92
+
+Chief Complaint: Loss of taste.
+
+History of Present Illness:
+
+The patient presents today with a chief complaint of loss of taste, which he describes as a "cardboard" taste. He reports that this loss of taste has been present for the past two days, starting yesterday and continuing today. He notes that it affects not only pizza but also other foods. He also reports a dry cough that started approximately three or four days ago. He denies any trauma to the mouth or nose. He denies fever, chills, or shortness of breath. He reports feeling fatigued and has been sleeping more. He also reports some diarrhea this morning. He denies chest pain, abdominal pain, or difficulty swallowing. He denies any rashes or changes in urine. He reports some dizziness upon standing this morning, which resolved with rest. He denies any confusion or memory loss. He reports no muscle aches. He reports being around someone who was sick in class last week. He denies recent travel. He denies any allergies. He reports having had his appendix removed four years ago. He denies any hospitalizations or surgeries. He is up to date on his immunizations. He reports a family history of lung cancer in his grandfather, who smoked heavily, and diabetes in his family. He is not currently taking any medications. He reports using a vape occasionally with flavored liquids, but he is unsure if it contains tobacco or nicotine. He denies alcohol use. He lives with his mom, step dad, and younger sister in a townhouse. He denies any concerns with the living arrangements.
+
+Assessment:
+
+The patient's symptoms are most consistent with an upper respiratory infection, possibly COVID-19.
+
+Plan:
+
+The patient is instructed to isolate for 14 days, regardless of the COVID-19 swab result. If the swab comes back positive, he will be notified, and public health will attempt to trace the source of the infection. If the swab comes back negative, he will be worked up for any bacterial infections that may be causing his symptoms. The patient is instructed to follow up with his primary care physician.

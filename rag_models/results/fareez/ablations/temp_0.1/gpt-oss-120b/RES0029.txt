@@ -1,0 +1,122 @@
+Model: openai/gpt-oss-120b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:04:17
+Time: 4.83s
+Tokens: 10,302 in / 1,786 out
+============================================================
+
+Patient Information  
+Name: Alyson Laila Leuschke  
+Date of Birth: February 28, 1921 (Age ≈ 105 years)  
+Sex: Female  
+Address: 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890  
+Primary Language: Not documented  
+
+Chief Complaint  
+The patient presented to the Emergency Department with acute left‑sided chest pain that began approximately two hours prior to arrival.
+
+History of Present Illness  
+The patient reports that the pain started after she fell from a bicycle and impacted the left side of her chest. She describes the sensation as a “stabbing” pain that involves the entire left hemithorax. The pain has progressively worsened over the past two hours. Deep inspiration markedly increases the discomfort, whereas shallow, slow breaths are better tolerated. She denies any loss of consciousness, head injury, or external bleeding. She reports a sensation of being unable to catch her breath, which she attributes to the need for shallow breathing. She notes a mild increase in heart rate over the last hour but denies palpitations, fever, chills, nausea, vomiting, cough, dizziness, or syncope. She has a few superficial scrapes on her hands from the fall but no other injuries. She denies alcohol or drug use at the time of the incident and reports she was sober. She reports no prior episodes of chest pain.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss.  
+Respiratory: Chest pain worsened by deep inspiration; no cough, wheeze, or dyspnea at rest.  
+Cardiovascular: Mild tachycardia reported; no known palpitations, edema, or orthopnea.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurologic: No headache, dizziness, weakness, numbness, or tingling.  
+Dermatologic: Superficial scrapes on hands; no rashes or skin changes elsewhere.  
+Psychiatric: No anxiety or panic reported at this time.  
+
+Allergies  
+The patient reports possible allergic reactions to nasal steroid sprays and occasionally to antihistamines. No known drug allergies documented.
+
+Past Medical History  
+- Essential hypertension (diagnosed 1952)  
+- Chronic kidney disease, stages 1‑4 progressing to end‑stage renal disease (diagnosed 1953)  
+- Diabetes mellitus type 2 with microalbuminuria and proteinuria (diagnosed 1954)  
+- History of renal transplant (post‑2007) and ongoing immunosuppression  
+- Osteoarthritis of the knee (ongoing)  
+- Severe anxiety/panic disorder (historical)  
+- History of viral sinusitis (multiple episodes)  
+- No prior cardiac disease documented.  
+
+Surgical History  
+- Renal transplant (date not specified)  
+- No other surgeries reported.
+
+Social History  
+The patient works as a mechanic and lives alone in an apartment. She is a current heavy smoker, consuming approximately 2½–3 packs of cigarettes per day since age 18. She drinks alcohol socially on weekends (typically one to two beers). She denies marijuana or other recreational drug use. She reports no recent travel.  
+
+Family History  
+Father has type 2 diabetes mellitus. No other family medical conditions reported.
+
+Current Medications (home)  
+- Tacrolimus 1 mg extended‑release, daily (immunosuppression)  
+- Tacrolimus injection 5 mg/mL as needed (active)  
+- Naproxen sodium 220 mg oral tablet, as needed for pain  
+- Amlodipine 2.5 mg oral tablet, daily (hypertension)  
+- Additional agents listed in the record (mestranol/norethynodrel, sodium fluoride gel) are likely historical and not currently active for this encounter.  
+
+Vital Signs (recorded on 04‑August‑1958)  
+Heart Rate: 80 beats/minute  
+Respiratory Rate: 12 breaths/minute  
+Blood Pressure: Not recorded for this visit  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Height: 159.9 cm  
+Weight: Not recorded  
+Body Mass Index: 29.35 kg/m²  
+
+Physical Examination  
+General: Alert, oriented, in mild distress due to chest pain.  
+Cardiovascular: Regular rate and rhythm; no murmurs, rubs, or gallops noted.  
+Respiratory: Decreased chest wall expansion on the left; tenderness to palpation over the left anterior chest wall; breath sounds present bilaterally without wheezes or crackles; pain reproduced with deep inspiration.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: No deformities; superficial scrapes on both hands; peripheral pulses intact.  
+Neurologic: Grossly intact; no focal deficits.  
+Skin: No rashes or bruising aside from hand scrapes.  
+
+Laboratory Data (most recent)  
+- Glucose: 95.8 mg/dL (within normal limits)  
+- Hemoglobin: 13.5 g/dL (derived from Hct 38.2 %)  
+- Hematocrit: 38.2 %  
+- RBC count: 4.79 ×10⁶/µL  
+- MCH: 27.4 pg  
+- RDW: 43.0 fL (elevated)  
+- Potassium: 3.89 mmol/L (low‑normal)  
+- Carbon Dioxide (bicarbonate): 26.6 mmol/L  
+- Calcium: 8.87 mg/dL (low‑normal)  
+- BUN (Urea Nitrogen): 16.9 mg/dL  
+- Urine dipstick: No protein, hemoglobin, or bilirubin detected; specific gravity 1.016.  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 4 (mild anxiety)  
+- DAST‑10 score: 1 (low‑risk substance use)  
+
+Imaging  
+No imaging studies have been performed at the time of this documentation.  
+
+Assessment  
+1. Traumatic left‑sided chest wall pain likely secondary to rib contusion or fracture following a bicycle fall.  
+2. Possible underlying pulmonary contusion or pneumothorax cannot be excluded without imaging.  
+3. Chronic kidney disease stage 4 / end‑stage renal disease with renal transplant on tacrolimus therapy.  
+4. Essential hypertension, well‑controlled on amlodipine.  
+5. Heavy tobacco use (2½–3 packs/day).  
+6. Mild anxiety symptoms (GAD‑7 = 4).  
+
+Plan  
+- Obtain a portable chest radiograph immediately to evaluate for rib fractures, pneumothorax, or pulmonary contusion.  
+- If radiograph is inconclusive and clinical suspicion remains high, consider a CT scan of the chest.  
+- Provide analgesia with acetaminophen 650 mg PO q6h PRN; continue naproxen sodium 220 mg PO q8h PRN if renal function permits, monitoring for nephrotoxicity given CKD.  
+- Encourage incentive spirometry and shallow breathing exercises to prevent atelectasis while avoiding deep painful breaths.  
+- Monitor vital signs, oxygen saturation, and cardiac rhythm every 2 hours while in the ED.  
+- Counsel on smoking cessation; offer nicotine replacement therapy and referral to a cessation program.  
+- Review immunosuppressive regimen with transplant team; ensure tacroline levels are within therapeutic range.  
+- Arrange follow‑up with primary care physician within 48 hours and with transplant nephrology within one week.  
+- Discharge instructions: Return to the ED for worsening dyspnea, increasing chest pain, new cough, fever, or any signs of infection.  
+- Provide written education on wound care for hand scrapes and signs of infection.  
+
+Disposition  
+Patient will remain for observation pending imaging results and pain control. If imaging is negative and pain is manageable, discharge with the above plan and close outpatient follow‑up.  
+
+Prepared by: _______________________   Date: _______________________   (Emergency Department)

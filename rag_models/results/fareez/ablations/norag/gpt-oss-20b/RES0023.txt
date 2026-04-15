@@ -1,0 +1,77 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:16:21
+Time: 2.67s
+Tokens: 12,691 in / 1,045 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Age: Adult (exact age not documented)  
+Sex: Male  
+Address: 656 Murphy Street, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+The patient presents with a 5‑day history of a worsening dry cough that has become disruptive to sleep and is associated with a sore throat, subjective fever, and night sweats.  
+
+History of Present Illness  
+Mr. Feeney reports that the cough began approximately five days ago and has steadily worsened. It is a dry cough that persists throughout the day and has recently begun to interfere with his sleep. He describes a sore throat that appears to be linked to the cough. He has been feeling hot, sweaty, and generally exhausted. His sense of smell has been altered since this morning, although taste remains unchanged. He denies nausea, vomiting, chest pain beyond mild throat discomfort, chills, or weight loss. He reports one episode of night sweats the previous night that soaked his shirt. No fever or chills have been recorded, and he has not measured his temperature. The patient denies any known recent travel and has been in contact with many people at his grocery store job but has not knowingly been exposed to a sick individual.  
+
+Past Medical History  
+* Hypertension, managed with Ramipril  
+* Type 2 diabetes mellitus, managed with Metformin  
+No other acute medical conditions were reported during this encounter.  
+
+Medications  
+* Ramipril 10 mg orally daily  
+* Metformin (dose not specified) orally daily  
+* Vitamin D supplement (dose not specified)  
+
+Social History  
+The patient works at a grocery store. He lives with his wife and two children. He reports consuming approximately three to four beers each weekend. He does not smoke cigarettes or use recreational drugs, including cannabis. He has no history of illicit drug use.  
+
+Family History  
+The patient notes that his brother and mother have a history of asthma. No other relevant family medical history was provided.  
+
+Review of Systems  
+
+General: Reports fatigue, subjective fever, night sweats; no weight loss.  
+ENT: Dry cough, sore throat, anosmia, normal taste.  
+Cardiovascular: No chest pain other than throat discomfort; denies palpitations.  
+Respiratory: Dry cough, no wheezing or dyspnea.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria or hematuria reported.  
+Musculoskeletal: No pain or swelling.  
+Neurological: No headaches, dizziness, or focal deficits.  
+Psychiatric: No mood changes or anxiety reported at this time.  
+
+Physical Examination  
+No physical examination findings were documented in the encounter.  
+
+Assessment  
+Acute bronchitis of likely viral etiology, possibly COVID‑19 infection given the current epidemiologic context. Symptoms are consistent with a lower respiratory tract viral infection. The patient’s chronic conditions (hypertension, type 2 diabetes) place him at moderate risk for complications from a respiratory viral illness.  
+
+Plan  
+
+1. Diagnostic testing: Perform a SARS‑CoV‑2 PCR swab to evaluate for COVID‑19 infection.  
+2. Isolation: Instruct the patient and his household to self‑isolate for 14 days pending test results.  
+3. Symptomatic treatment: Recommend over‑the‑counter antitussive medication (e.g., dextromethorphan) for cough relief, and advise adequate hydration and rest.  
+4. Fever management: Acetaminophen 325 mg every 4–6 hours as needed for subjective fever or discomfort.  
+5. Monitoring: Advise the patient to monitor for worsening symptoms such as increased shortness of breath, chest pain, persistent fever >38.3°C, or new onset confusion. If any of these occur, seek immediate medical care.  
+6. Follow‑up: Arrange a telehealth or in‑office follow‑up in 3–5 days to review test results and symptom progression.  
+7. Medication review: Continue current antihypertensive and antidiabetic regimens. No changes recommended at this time.  
+8. Education: Discuss the importance of hand hygiene, wearing a mask around others if symptomatic, and avoiding contact with high‑risk individuals.  
+9. Vaccination: Verify that the patient is up to date with influenza and COVID‑19 vaccinations; encourage completion of any pending vaccine series.  
+
+Disposition  
+The patient was advised to return to the emergency department if symptoms worsen or new symptoms develop. He was discharged with a plan for home isolation pending SARS‑CoV‑2 results.  
+
+Laboratory Studies  
+No laboratory results were obtained during this encounter; pending COVID‑19 testing results.  
+
+Follow‑up and Instructions  
+The patient should self‑monitor for any escalation in symptoms and adhere to isolation guidelines until test results are available. He should seek immediate care if he experiences severe shortness of breath, persistent high fever, or chest pain.  
+
+Signature: ______________________  
+Date: ______________________

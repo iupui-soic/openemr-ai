@@ -1,0 +1,74 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 03:33:05
+Time: 2.83s
+Tokens: 15,564 in / 1,042 out
+============================================================
+
+Patient Information  
+Name: Abel Daugherty  
+Date of Birth: 19 August 1940 (per OpenEMR record, though the current encounter reflects a younger, otherwise healthy individual)  
+Gender: Male  
+
+Chief Complaint  
+The patient presents with acute right wrist pain and swelling following a fall while skiing on the previous day.
+
+History of Present Illness  
+The patient reports falling on his right arm during a skiing activity. He used his hand to brace the fall, extending his wrist in a backward position. Pain was felt immediately at the time of the fall, described as sharp and localized to the area just below the thumb and on the volar aspect of the wrist. The pain is constant, rated 5–6 out of 10, and worsens with movement, especially flexion, extension, and side‑to‑side deviation of the wrist. He has been taking ibuprofen with modest relief. There is bruising and mild swelling over the distal radius area, but no obvious deformity. No numbness, tingling, weakness, or other neurological symptoms were reported. There was no pain radiating into the hand or arm, and the patient denies pain at the base of the thumb or in the dorsal snuffbox. He reports no other musculoskeletal injuries.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight loss, or fatigue.  
+Respiratory: No cough, shortness of breath, wheezing, or congestion.  
+Cardiovascular: No chest pain, palpitations, or dizziness.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea, constipation, or changes in bowel habits.  
+Genitourinary: No urinary pain, frequency, or hematuria.  
+Neurologic: No numbness, tingling, or weakness.  
+Musculoskeletal: Right wrist pain and swelling only.  
+No other symptoms reported in remaining systems.
+
+Past Medical History  
+No chronic medical conditions, surgeries, or prior injuries reported by the patient.  
+The transcript indicates no previous wrist injuries and no regular medications.
+
+Surgical History  
+None reported.
+
+Social History  
+The patient lives alone in an apartment in downtown Boston. He is a student. He denies tobacco use. He consumes alcohol socially, approximately one beer occasionally, roughly two drinks every other week. He uses cannabis edibles about once per month. He has no other recreational drug use. He has no recent travel and denies exposure to sick individuals.
+
+Family History  
+No family history of neurological or musculoskeletal disorders reported.
+
+Current Medications  
+None reported by the patient.  
+(Note: OpenEMR lists numerous historical medications, but these are not current.)
+
+Physical Examination  
+Vital signs: Not available at the time of examination.  
+Right wrist: Mild swelling and bruising over the distal radius; no erythema, heat, or deformity. Tenderness to palpation over the distal radius, especially on the volar side. Pain noted with flexion, extension, and radial/ulnar deviation of the wrist. Full range of motion achieved, though pain is limiting. No tenderness to the base of the thumb or dorsal snuffbox. No swelling or warmth in the left wrist.  
+Elbow: Normal flexion and extension with no pain.  
+Neck, spine, and contralateral upper extremities: Normal.  
+Other systems: Unremarkable.
+
+Laboratory Studies  
+No laboratory studies were performed as part of this visit.
+
+Imaging  
+No imaging has yet been obtained. The provider plans to obtain an X‑ray of the right wrist and forearm to evaluate for a distal radius fracture and rule out a scaphoid fracture.
+
+Assessment  
+Primary diagnosis: Right distal radius fracture suspected based on mechanism of injury, pain localization, and physical exam findings.  
+Secondary considerations: Possible sprain of wrist ligaments; scaphoid fracture is less likely due to lack of dorsal snuffbox pain, but will be excluded by imaging.
+
+Plan  
+1. Order plain radiographs of the right wrist and forearm (anteroposterior, lateral, and oblique views).  
+2. Initiate pain control with over‑the‑counter ibuprofen as needed, monitoring for gastrointestinal tolerance.  
+3. Recommend wrist immobilization with a soft splint or supportive wrap for 48–72 hours or until pain improves.  
+4. Advise avoidance of strenuous activity and heavy lifting of the right arm for at least 1–2 weeks.  
+5. Provide patient education on signs of worsening condition (increasing pain, loss of function, numbness, tingling, or swelling) and instructions to seek urgent care if these occur.  
+6. Schedule follow‑up appointment in 5–7 days to review X‑ray results and reassess pain and function.  
+7. If imaging confirms a displaced distal radius fracture, refer for orthopedic evaluation and possible casting or surgical intervention.  
+
+Follow‑up  
+Patient advised to return for a follow‑up visit in 5–7 days or sooner if symptoms worsen.

@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:34:00
+Time: 2.36s
+Tokens: 13,972 in / 903 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+DOB: December 5, 1915  
+Sex: Male  
+Address: 656 Murphy Street, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+The patient reports a 5‑day history of a dry cough that has progressively worsened and is now disrupting his sleep.  
+
+History of Present Illness  
+Mr. Feeney first noticed the dry cough five days ago. Over the course of that time the cough has intensified, occurring throughout the day and night, and it interferes with his ability to sleep. He describes the cough as dry, without production of sputum or mucus. He has experienced a subjective feverish feeling, reports sweating and has had a single episode of night sweats, which he notes as his shirt becoming soaked after waking last night. Mr. Feeney denies chest pain, except for throat discomfort that accompanies coughing. He reports a sore throat, a diminished sense of smell, but no change in taste. He denies nausea, vomiting, chills, or chills and rigors. He reports feeling generally exhausted. No known exposure to sick contacts has been identified beyond his work at a grocery store where he interacts with many customers.  
+
+Review of Systems  
+Constitutional: fever‑like symptoms, night sweats, generalized fatigue.  
+Respiratory: dry cough, sore throat, no sputum, no chest pain beyond throat irritation.  
+Cardiovascular: no reported chest pain or palpitations.  
+Gastrointestinal: no nausea, vomiting, abdominal pain.  
+Other: no reported weight loss, no dermatologic or neurologic complaints.  
+
+Allergies  
+No drug allergies reported. Environmental allergies to pollen.  
+
+Past Medical History  
+Chronic hypertension and type 2 diabetes mellitus.  No other comorbidities are reported as current.  
+
+Surgical History  
+Cholecystectomy performed approximately ten years prior.  
+
+Social History  
+Mr. Feeney resides with his wife and two children. He works as a grocery store employee. He drinks alcohol socially, approximately three to four beers each weekend. He does not smoke tobacco and denies use of cannabis or other recreational substances.  
+
+Family History  
+Mother and brother have a history of asthma.  
+
+Current Medications  
+Ramipril 10 mg daily, Metformin 850 mg twice daily, and oral vitamin D supplementation.  
+
+Objective  
+Vital signs: No vital sign measurements were recorded during this encounter.  
+Physical exam: No documented examination findings are available.  
+Labs: No laboratory results were obtained during this visit.  
+
+Assessment  
+1. Acute bronchitis, presumed viral etiology.  
+2. Hypertension, well‑controlled with ramipril.  
+3. Type 2 diabetes mellitus, currently on metformin.  
+
+Plan  
+- Order a SARS‑CoV‑2 PCR swab to rule out COVID‑19.  
+- Instruct patient and household to self‑isolate for 14 days pending test results.  
+- Advise symptomatic treatment: stay well‑hydrated, rest, use over‑the‑counter antipyretics (acetaminophen) as needed for fever or discomfort, and consider cough suppressants if cough is disruptive.  
+- Monitor for worsening symptoms such as increased shortness of breath, new chest pain, or high fever.  
+- If symptoms worsen or fail to improve within 7 days, arrange follow‑up evaluation or consider outpatient respiratory assessment.  
+- Reinforce routine management of hypertension and diabetes; encourage adherence to medication regimen and regular monitoring of blood pressure and blood glucose.  
+- No new prescriptions were issued at this time.  
+
+Follow‑up instructions: Patient should return for follow‑up in the outpatient clinic if symptoms persist beyond one week, if he develops new respiratory distress, or if the COVID‑19 test returns positive. He is advised to contact the clinic or call emergency services if he experiences severe chest pain, shortness of breath, or any other concerning symptoms.  
+
+Discharge instructions: Patient is advised to remain in isolation until COVID‑19 test results are available, to rest, maintain adequate fluid intake, and use over‑the‑counter medications for symptom relief as needed. He should continue his current medications for hypertension and diabetes without interruption. He is instructed to monitor his temperature and oxygen saturation at home if possible and to seek medical care if symptoms deteriorate.

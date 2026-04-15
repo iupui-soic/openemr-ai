@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:12:28
+Time: 4.95s
+Tokens: 9,783 in / 1,598 out
+============================================================
+
+Patient Information:
+Aaron Paucek is a male adolescent, approximately 15‑16 years old, currently enrolled in grade 10. He resides with his parents and two siblings. No known drug allergies were reported. The patient denies any chronic medical conditions and reports only a prior appendectomy performed at age 13. He is not taking any prescription medications; his only supplement is a multivitamin.
+
+Chief Complaint:
+Sore throat of four days duration associated with a sensation of fever.
+
+History of Present Illness:
+The patient reports a sore throat that began four days ago and has not improved. He describes the throat pain as severe enough to make solid foods difficult to tolerate, although he is able to drink liquids. He notes that the throat appears “pretty swollen and red” on visual inspection. He feels “really hot” but has not measured his temperature. He denies difficulty swallowing liquids, feeling of food getting stuck, or odynophagia with solids only. He reports a mild hoarseness, which he attributes to speaking less. He denies nasal congestion, rhinorrhea, cough, shortness of breath, chest pain, headache, confusion, visual or auditory changes, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or unintentional weight loss. He has not noticed any recent exposures to ill individuals and reports no recent travel. He has not received a flu vaccine this season and has not completed the HPV vaccine series.
+
+Review of Systems:
+Constitutional – reports feeling hot; no documented fever measurement, no chills, no weight loss.  
+Respiratory – no cough, shortness of breath, or wheezing.  
+Cardiovascular – no chest pain, palpitations, or edema.  
+Gastrointestinal – no nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+ENT – sore throat with erythema and swelling; mild hoarseness; no rhinorrhea, nasal congestion, or sinus pain.  
+Neurologic – no headache, dizziness, or altered mental status.  
+Psychiatric – denies anxiety or depression.  
+Musculoskeletal – no joint or muscle pain.  
+Skin – no rashes.  
+Genitourinary – no dysuria or urinary symptoms.  
+Endocrine – no polyuria, polydipsia.  
+
+Past Medical History:
+The patient reports no chronic medical problems. He has a remote surgical history of appendectomy at age 13. No other surgeries or hospitalizations were mentioned.
+
+Surgical History:
+Appendectomy – age 13.
+
+Social History:
+The patient lives with his parents and two siblings in a stable home environment. He reports feeling safe at home. He is a full‑time student attending school part in person and part virtually. He does not use tobacco, alcohol, or recreational drugs. He is not currently sexually active and does not anticipate sexual activity before completing high school. He reports no bullying or psychosocial stressors. He has not received the seasonal influenza vaccine this year and has not completed the HPV vaccine series. He has not traveled recently and has no known exposure to COVID‑19.
+
+Family History:
+The patient is unaware of any significant family medical conditions, although he mentions a possible family history of high blood pressure.
+
+Allergies:
+No known drug allergies.
+
+Current Medications:
+Multivitamin supplement only.
+
+Vital Signs:
+No objective vital signs were recorded during this encounter. Temperature, blood pressure, heart rate, respiratory rate, and oxygen saturation were not documented.
+
+Physical Examination:
+General – The patient appears in no acute distress.  
+HEENT – Oral cavity inspection reveals a markedly erythematous and swollen oropharynx. No exudates were described. No cervical lymphadenopathy was noted. Nasal mucosa clear, no rhinorrhea. No ear pain or discharge.  
+Neck – No tracheal deviation, no rigidity.  
+Respiratory – Breath sounds clear bilaterally, no wheezes or crackles.  
+Cardiovascular – Regular rate and rhythm, no murmurs.  
+Abdomen – Soft, non‑tender, no masses.  
+Extremities – No edema.  
+Neurologic – Alert and oriented, cranial nerves intact.  
+
+Laboratory Data (most recent values available in the record):
+- Serum potassium: 5.02 mmol/L  
+- HDL cholesterol: 31.88 mg/dL  
+- PHQ‑2 total score: 1 (negative screen)  
+- Urine pH: 6.43  
+- Triglycerides: 102.14 mg/dL  
+- Serum calcium: 9.82 mg/dL  
+- Morse Fall Scale total: 108 (moderate fall risk)  
+- Serum CO₂ (total): 24.05 mmol/L  
+- Blood urea nitrogen: 8.27 mg/dL  
+- Platelet mean volume: 12.28 fL  
+- Platelet count: 435 ×10³/µL (elevated)  
+- MCHC: 35.54 g/dL  
+- MCV: 82.8 fL  
+
+No microbiology results are currently available. Rapid strep and SARS‑CoV‑2 testing were ordered during the visit.
+
+Assessment:
+1. Acute pharyngitis – most likely viral etiology, but bacterial (Group A Streptococcus) cannot be excluded pending rapid antigen detection testing.  
+2. Possible early febrile illness – patient reports feeling hot; temperature not yet measured.  
+3. Incomplete immunizations – influenza vaccine not received this season; HPV series not initiated.  
+4. No acute complications identified (no airway compromise, no peritonsillar abscess).
+
+Plan:
+Diagnostics:
+- Perform rapid antigen detection test for Group A Streptococcus (rapid strep).  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (rapid COVID‑19 test).  
+
+Therapeutic:
+- If rapid strep is positive, prescribe amoxicillin 500 mg orally three times daily for 10 days (or appropriate penicillin allergy alternative).  
+- If COVID‑19 test is positive, advise self‑isolation per current public health guidelines and provide symptomatic care.  
+- Provide supportive care for symptomatic relief: acetaminophen 500 mg PO q6h PRN for fever or pain, adequate hydration, throat lozenges, and warm saline gargles.  
+- Counsel patient to avoid irritants (smoke, strong odors) and to rest the voice.  
+
+Immunizations:
+- Offer influenza vaccination today or schedule at the earliest convenience.  
+- Discuss initiation of the HPV vaccine series; schedule first dose if patient consents.  
+
+Patient Education:
+- Instruct the patient to monitor temperature at home; if temperature exceeds 38.0 °C (100.4 °F) or symptoms worsen (increasing pain, difficulty breathing, inability to swallow liquids), seek medical attention promptly.  
+- Advise maintaining hydration and soft diet until throat pain improves.  
+- Explain the importance of completing the COVID‑19 test and adhering to isolation until results are known.  
+
+Follow‑up:
+- Telephone follow‑up in 48‑72 hours to review rapid strep and COVID‑19 results.  
+- Return visit or telehealth evaluation in 5‑7 days if symptoms persist or worsen.  
+- Schedule routine preventive care visit for immunizations and health maintenance.  
+
+Disposition:
+The patient was discharged home with the above plan, pending test results. No immediate red‑flag features were identified.

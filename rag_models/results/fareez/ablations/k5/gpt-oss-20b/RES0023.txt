@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:35:52
+Time: 2.35s
+Tokens: 14,856 in / 1,078 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+DOB: December 5, 1915  
+Sex: Male  
+Address: 656 Murphy Street, Walpole, Massachusetts 02081  
+Patient ID: 48  
+
+Chief Complaint  
+Patient reports a five‑day history of a dry cough that has progressively worsened and is interfering with sleep. He also describes a sore throat, feeling hot and sweaty, and a recent loss of sense of smell.  
+
+History of Present Illness  
+Mr. Feeney states that the cough began approximately five days ago and has been steadily increasing in severity, occurring throughout the day and disrupting sleep. The cough is dry, not productive, and there is no noted change in the cough with position or activity. He notes a sore throat associated with the cough and reports a subjective feeling of heat, which he has not measured with a thermometer. He reports night sweats that occurred last night, with his shirt soaked. No nausea, vomiting, chills, or rigors were reported. He denies chest pain; he describes a throat ache that has worsened after coughing. He reports that his sense of taste is intact, but his sense of smell has been altered since this morning. He denies shortness of breath or wheezing.  
+
+Review of Systems  
+Constitutional: Positive for feverish sensation, night sweats, and fatigue; negative for weight loss, night chills, or unintentional weight change.  
+Respiratory: Positive for dry cough, sore throat, and altered smell; negative for productive sputum, wheeze, dyspnea, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic: No headaches, dizziness, or neurological deficits.  
+Psychiatric: No anxiety or depression noted beyond mild stress.  
+
+Past Medical History  
+Hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4, history of gallbladder removal (cholecystectomy) approximately ten years ago, coronary artery disease with prior bypass surgery, and history of coronary artery disease.  
+
+Surgical History  
+Cholecystectomy.  
+
+Social History  
+Mr. Feeney works at a grocery store and lives with his wife and two children. He drinks approximately three to four beers per week on the weekend. He does not smoke cigarettes and reports no use of cannabis or other recreational substances. He has a history of environmental allergy to pollen.  
+
+Family History  
+No known family history of respiratory disease noted in the record; the open EMR indicates a brother and mother with asthma, but this was not mentioned during the encounter.  
+
+Allergies  
+No drug allergies reported.  
+
+Medications  
+- Ramipril 10 mg orally daily  
+- Metformin 850 mg orally twice daily  
+- Vitamin D (dose unspecified) orally  
+
+Current lab results (most recent) include normal electrolytes with sodium 143.9 mEq/L, potassium 4.74 mEq/L, chloride 103.8 mEq/L, bicarbonate 25.7 mEq/L, normal creatinine 0.39 mg/dL and BUN 17.3 mg/dL. Blood glucose is within normal range at 70.6 mg/dL. Liver enzymes are mildly elevated with AST 36.8 U/L and alkaline phosphatase 79.5 U/L. Urinalysis shows protein 280 mg/dL and leukocyte esterase positive.  
+
+Objective  
+Vital signs were not recorded during this encounter; the patient reports feeling febrile and sweaty.  
+
+Physical Examination  
+No examination findings are documented in this encounter.  
+
+Assessment  
+The presentation is most consistent with acute viral bronchitis, likely caused by a respiratory virus. Differential diagnosis includes influenza, COVID‑19, and other acute viral upper respiratory infections. The altered sense of smell raises concern for a possible SARS‑CoV‑2 infection. No evidence of bacterial superinfection is present.  
+
+Plan  
+1. Perform a SARS‑CoV‑2 PCR swab immediately and instruct the patient and his household to self‑isolate for 14 days pending results.  
+2. Symptomatic treatment: Acetaminophen for fever and discomfort, and use of a humidifier as needed for cough relief.  
+3. Counsel on good hand hygiene, mask use, and avoidance of crowded indoor settings until test results return.  
+4. Monitor for worsening symptoms such as increased shortness of breath, chest pain, or persistent high fever; if these occur, return to urgent care or seek emergent care.  
+5. Follow up with primary care or pulmonology in 7–10 days or sooner if symptoms worsen.  
+6. Continue chronic disease management: maintain antihypertensive therapy, continue metformin for diabetes, and monitor renal function given chronic kidney disease stage 4.  
+
+No additional imaging or laboratory testing was ordered at this time.  
+
+The patient was instructed on the importance of isolation and advised to seek care promptly if any new or worsening respiratory symptoms develop. He was given a copy of the discharge instructions and a plan for follow‑up.

@@ -1,0 +1,299 @@
+Model: google/medgemma-4b-it
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:59:42
+Time: 112.83s
+Tokens: 10,114 in / 1,997 out
+Cell: norag
+============================================================
+
+Patient Information:
+
+Patient Name: Abraham Schneider
+Date of Birth: 1928-01-10
+Unit Number: 475
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000
+
+Chief Complaint: Difficulty breathing and cough.
+
+History of Present Illness:
+
+The patient reports experiencing difficulty breathing and a cough for the past few days, starting approximately 3 days ago. He describes the cough as being different from his usual cough, which he attributes to smoking. This cough is occurring more frequently throughout the day and producing more mucus. He reports that the symptoms have worsened over the three days, with today being the worst day. He denies any recent changes in his routine or any specific triggers for the cough. He denies any medications that have helped alleviate the symptoms. He describes the pain as a sharp pain over the right side of his chest and belly area, which he notes is more prominent when he coughs or takes a deep breath. He denies any prior history of similar pain. He denies any fever. He denies any recent travel. He reports no recent illnesses in his household. He is taking amlodipine, insulin, metformin, and an SGLT2 inhibitor. He also takes an insulin for diabetes. He has a history of type 2 diabetes, hypertension, and ischemic heart disease. He denies any history of heart problems.
+
+Past Medical History:
+
+The patient has a history of:
+*   Risk activity involvement
+*   Higher education
+*   Obesity
+*   Criminal record
+*   Ischemic heart disease
+*   Abnormal findings diagnostic imaging heart+coronary circulat
+*   History of coronary artery bypass grafting
+*   Essential hypertension
+*   Recurrent urinary tract infection
+*   Chronic kidney disease stage 1
+*   Disorder of kidney due to diabetes mellitus
+*   Dependent drug abuse
+*   Chronic kidney disease stage 2
+*   Microalbuminuria due to type 2 diabetes mellitus
+*   Full-time employment
+*   Stress
+*   Severe anxiety (panic)
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Viral sinusitis
+*   Gingivitis
+*   Dental filling lost
+*   Drug overdose
+*   Chronic kidney disease stage 3
+*   Proteinuria due to type 2 diabetes mellitus
+*   Full-time employment
+*   Stress
+*   Limited social contact
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Victim of intimate partner abuse
+*   Awaiting transplantation of kidney
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Gingivitis
+*   Gingival disease
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Gingivitis
+*   Primary dental caries
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Victim of intimate partner abuse
+*   Awaiting transplantation of kidney
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Gingivitis
+*   Gingival disease
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Laceration - injury
+*   Laceration of hand
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Victim of intimate partner abuse
+*   Awaiting transplantation of kidney
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Gingivitis
+*   Gingival disease
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Drug overdose
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Victim of intimate partner abuse
+*   Awaiting transplantation of kidney
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Gingivitis
+*   Gingival disease
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Not in labor force
+*   Gingivitis

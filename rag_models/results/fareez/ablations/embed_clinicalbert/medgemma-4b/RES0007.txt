@@ -1,0 +1,72 @@
+Model: google/medgemma-4b-it
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 05:59:27
+Time: 52.40s
+Tokens: 7,631 in / 868 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abby Ondricka
+Date of Birth: 2003-01-16
+Medical Record Number: 145
+
+Chief Complaint: Shortness of breath, difficulty breathing, and chest tightness, especially during exercise and in cold weather.
+
+History of Present Illness:
+
+Abby Ondricka presented to the clinic today reporting a history of asthma that she had as a child. She states that she thought she had outgrown it, but it has returned. She denies any current symptoms, but reports experiencing shortness of breath and difficulty breathing during gym class at school. She states that her teacher has noticed she is not running as fast as she should be. She also reports experiencing similar symptoms in cold weather, such as chest tightness and difficulty breathing, which makes it hard to do activities like building snowmen or snow angels. She has been using an inhaler prescribed by her doctor, but she is unsure about the correct dosage. She has also noticed wheezing sounds, mostly when around cats. She denies any cough.
+
+Past Medical History:
+
+Abby reports having been diagnosed with childhood asthma and perennial allergic rhinitis. She also has a history of atopic dermatitis, which she had as a child. She has no known allergies to medications, food, or environmental factors. She had a broken leg years ago.
+
+Medications:
+
+Abby is currently taking the following medications:
+*   Fexofenadine hydrochloride 30 MG Oral Tablet
+*   120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler
+*   Albuterol 0.83 MG/ML Inhalation Solution
+*   Yaz 28 Day Pack
+*   Acetaminophen 325 MG Oral Tablet
+*   Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+*   Sodium fluoride 0.0272 MG/MG Oral Gel
+
+Allergies:
+
+Abby reports allergies to mold, house dust mites, animal dander, grass pollen, tree pollen, wheat, and tree nuts.
+
+Family History:
+
+Abby's father has a history of allergies.
+
+Social History:
+
+Abby lives with her parents and younger brother. She is interested in joining the Marines, but is concerned about her asthma. She drinks beer occasionally with friends on the weekends. She is sexually active and uses a condom every time. She has not had any other partners.
+
+Review of Systems:
+
+*   Constitutional: Denies fevers or chills.
+*   Respiratory: Reports shortness of breath, difficulty breathing, and chest tightness.
+*   Cardiovascular: Denies chest pain or palpitations.
+*   Gastrointestinal: Denies nausea, vomiting, or abdominal pain.
+*   Other: Denies rashes, skin itching, or urinary problems.
+
+Assessment:
+
+Abby Ondricka presents with a history of asthma that has returned. She reports experiencing shortness of breath and difficulty breathing during exercise and in cold weather, as well as around cats. She is unsure about the correct dosage of her inhaler.
+
+Plan:
+
+1.  Clarify medication regimen with the patient, emphasizing the importance of using both inhalers daily for optimal asthma control.
+2.  Discuss the potential impact of asthma on her interest in joining the Marines, providing information about asthma management strategies and potential limitations.
+3.  Educate the patient on proper inhaler technique.
+4.  Advise the patient to avoid exposure to allergens, such as cats, when possible.
+5.  Schedule a follow-up appointment to reassess her asthma symptoms and adjust her treatment plan as needed.
+6.  Discuss the possibility of pulmonary function testing to further evaluate her lung function.
+7.  Refer to a pulmonologist for further evaluation and management of her asthma.
+8.  Advise the patient to seek immediate medical attention if she experiences severe shortness of breath or wheezing.
+9.  Review her current medications and address any concerns she may have.
+10. Discuss the importance of staying up-to-date on immunizations.

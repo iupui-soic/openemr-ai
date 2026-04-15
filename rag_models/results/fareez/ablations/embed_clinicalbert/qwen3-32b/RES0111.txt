@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:58:49
+Time: 3.98s
+Tokens: 9,728 in / 1,235 out
+============================================================
+
+Patient Information:  
+The patient is a 73-year-old male with a known history of essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, anemia, obesity, ischemic heart disease, chronic kidney disease stage 2, chronic low back and neck pain, and a history of prior hospitalization for suspected and confirmed COVID-19 in 2020. He is currently employed full-time and resides with family. The patient is not up to date on all vaccinations, including the HPV vaccine and the annual flu shot. He denies current alcohol use, tobacco use, or recreational drug use. He is not sexually active and reports no recent travel or known exposure to sick individuals.
+
+Chief Complaint:  
+The patient presents with a four-day history of worsening sore throat and subjective fever. He reports difficulty swallowing solid foods due to pain but is able to tolerate liquids.
+
+History of Present Illness:  
+The patient reports the onset of a progressively worsening sore throat four days prior to presentation. He describes the throat as visibly swollen and red. He denies having checked his temperature but feels hot and suspects a fever. He has not experienced difficulty breathing, chest pain, cough, runny nose, or nasal congestion. There is no hoarseness or difficulty breathing, and no headache, confusion, or visual or auditory changes. He denies fatigue, weight loss, abdominal pain, nausea, vomiting, or diarrhea. The patient is not experiencing any new or unusual symptoms outside of the sore throat and subjective fever.
+
+Review of Systems:  
+Constitutional: Reports subjective fever; denies chills, weight loss, or fatigue.  
+Respiratory: No cough, shortness of breath, or chest pain.  
+Cardiovascular: No palpitations or chest discomfort.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria or changes in urinary habits.  
+Neurological: No headaches or dizziness.  
+Musculoskeletal: No joint pain or muscle aches.  
+Skin: No rash or lesions.  
+Psychiatric: No depression or anxiety.  
+Endocrine: No new symptoms related to diabetes.  
+Hematologic: No bruising or bleeding.  
+Allergic: No known allergies.  
+Other: No new or unusual symptoms.
+
+Past Medical History:  
+The patient has a long-standing history of essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome, anemia, obesity, ischemic heart disease, chronic kidney disease stage 2, and chronic low back and neck pain. He has a history of prior hospitalization for suspected and confirmed COVID-19 in 2020, which was complicated by pneumonia, hypoxemia, and acute respiratory failure. He has undergone appendectomy in the past and has a history of chronic gingivitis and dental issues.
+
+Social History:  
+The patient lives with his parents and two siblings. He is not currently using tobacco, alcohol, or recreational drugs. He is in the 10th grade and reports that school is going well with no bullying or social concerns. He is not sexually active and does not plan to become so before finishing high school. He is not up to date on all recommended vaccinations, including the HPV vaccine and the annual flu shot.
+
+Family History:  
+The patient reports no significant family history of chronic medical conditions, though he mentions that high blood pressure may be present in his family.
+
+Current Medications:  
+The patient is currently taking lisinopril for hypertension, metformin for diabetes, amLODIPine for blood pressure control, and simvastatin for hyperlipidemia. He is also on lisinopril, clopidogrel, and metoprolol for cardiovascular management. Additional medications include insulin and other chronic disease management agents. He reports taking only a multivitamin as over-the-counter medication.
+
+Objective:  
+Vital signs were not fully documented in the electronic health record, but the patient was noted to have a resting heart rate of 97 bpm and a respiratory rate of 15 breaths per minute. Physical examination findings were not fully detailed in the provided documentation, but the patient was described as being in no acute distress. The throat was noted to be red and swollen. No other physical exam findings were provided in the extract.
+
+Labs:  
+Recent laboratory results include a potassium level of 5.02 mmol/L, calcium level of 9.82 mg/dL, urea nitrogen of 8.27 mg/dL, and triglycerides of 102.14 mg/dL. No recent complete blood count or rapid strep test results were available at the time of the visit.
+
+Assessment:  
+The patient presents with an acute sore throat and subjective fever, consistent with pharyngitis. Given the clinical presentation and absence of other upper respiratory symptoms, possible etiologies include viral pharyngitis or bacterial causes such as streptococcal pharyngitis. The differential diagnosis includes mononucleosis and other viral infections. The patient's history of diabetes and chronic kidney disease places him at higher risk for complications from infections. Given the ongoing pandemic, a rapid strep test and a point-of-care rapid antigen test for SARS-CoV-2 were recommended to rule out strep throat and COVID-19.
+
+Plan:  
+The patient will undergo a rapid strep test and a rapid antigen test for SARS-CoV-2. He will be advised to self-isolate for 14 days or until test results are available and symptoms improve. If the strep test is positive, a course of appropriate antibiotics will be prescribed. If the test is negative, supportive care will be recommended, including hydration, rest, and over-the-counter pain relief as needed. The patient will be advised to follow up if symptoms worsen or do not improve within a few days. The patient will also be counseled on the importance of completing his vaccinations, including the HPV vaccine and the annual flu shot. No immediate imaging or additional laboratory testing is planned at this time.

@@ -1,0 +1,94 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:53:35
+Time: 4.82s
+Tokens: 9,472 in / 1,467 out
+============================================================
+
+Patient Information  
+Name: Not documented  
+Age: 39 years  
+Sex: Male  
+
+Chief Complaint  
+The patient presented with acute left-sided chest pain.  
+
+History of Present Illness  
+The patient reports that the chest pain began last night and has persisted for approximately eight hours. He describes the pain as sharp, constant, and rated it 7‑8/10 in severity. The discomfort is localized to the left side of the chest and is worsened by lying down and, to a lesser extent, by taking deep breaths. Lying supine provides some relief. He denies any radiation of the pain. The onset was not associated with any obvious injury; the patient was moving furniture earlier in the evening but does not recall any trauma. Since the pain began, he has experienced light‑headedness, shortness of breath, and a sensation of a “racing” heart. He has not had loss of consciousness, nausea, vomiting, fever, chills, cough, wheezing, or hemoptysis. He denies any recent immobilization, recent infections, abdominal pain, urinary or bowel complaints, and night sweats. He also notes mild swelling of his neck but no neck pain or recent neck trauma. This is the first episode of chest pain he has experienced.  
+
+Review of Systems  
+Constitutional: Light‑headedness; no fever, chills, or night sweats.  
+Respiratory: Shortness of breath, mild difficulty breathing on exertion; no cough, wheeze, or noisy breathing except when severely dyspneic.  
+Cardiovascular: Chest pain as described, sensation of rapid heart rate; no palpitations beyond the described “racing” feeling, no known syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, dysphagia, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Musculoskeletal/Neck: Swelling of neck noted; no neck pain or recent trauma.  
+Dermatologic: No rash or skin changes.  
+Neurologic: No focal deficits; no headache.  
+
+Past Medical History  
+The patient reports no known chronic medical conditions.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+The patient lives alone in an apartment and works as an accountant. He smokes approximately one pack of cigarettes per day and has done so for the past 10‑15 years. He occasionally uses cannabis (≈5 mg per week). He denies use of other recreational drugs, intravenous drug use, or a history of substance abuse. Alcohol intake is moderate, approximately one to two drinks per day (≈10 drinks per week). He reports attempting to maintain a healthy diet for dinner, eating most lunches out, and exercising every other day by running for about 30 minutes.  
+
+Family History  
+Father suffered a myocardial infarction at age 45 and has a history of hypercholesterolemia. No known family history of stroke, cancer, or other cardiovascular disease.  
+
+Allergies  
+The patient reports no known drug allergies.  
+
+Current Medications  
+The patient is not taking any prescription or over‑the‑counter medications.  
+
+Vital Signs  
+No vital sign measurements documented during this encounter.  
+
+Physical Examination  
+No physical examination findings were recorded in the encounter note.  
+
+Laboratory and Imaging Studies  
+No laboratory tests or imaging studies were obtained or documented during this visit.  
+
+Assessment  
+1. Acute non‑traumatic left‑sided chest pain, sharp, constant, associated with dyspnea and light‑headedness.  
+   • Differential diagnosis includes acute coronary syndrome (unstable angina or myocardial infarction), pericarditis, pleuritic pain, musculoskeletal strain from recent furniture moving, and anxiety‑related chest discomfort.  
+2. Significant cardiovascular risk factors: active tobacco use (≈1 pack/day for >10 years) and a strong family history of premature coronary artery disease.  
+3. Light‑headedness and shortness of breath suggest possible hemodynamic compromise or early cardiac ischemia.  
+
+Plan  
+Diagnostic Evaluation  
+- Obtain a 12‑lead electrocardiogram (ECG) immediately to assess for ischemic changes, arrhythmia, or other acute cardiac pathology.  
+- Draw cardiac biomarkers (troponin I or T) at presentation and repeat at 3–6 hours per protocol.  
+- Order a chest radiograph to evaluate for pulmonary causes (e.g., pneumothorax, pneumonia) and assess cardiac silhouette.  
+- Consider bedside echocardiography if ECG or biomarkers suggest cardiac involvement or if hemodynamic instability develops.  
+- Basic metabolic panel and complete blood count to assess for electrolyte abnormalities, anemia, or infection.  
+
+Therapeutic Interventions  
+- Initiate cardiac monitoring (telemetry) while work‑up is pending.  
+- Administer supplemental oxygen to maintain SpO₂ > 94 % if oxygen saturation is low.  
+- Provide nitroglycerin sublingual 0.4 mg PRN for chest pain if systolic blood pressure remains > 90 mmHg and no contraindications exist.  
+- Offer low‑dose aspirin 325 mg PO loading dose unless contraindicated.  
+- Consider short‑acting β‑blocker (e.g., metoprolol) if tachycardia persists and no signs of heart failure or bronchospasm.  
+- Give analgesia (e.g., acetaminophen or low‑dose opioids) if pain remains severe after initial cardiac measures.  
+
+Disposition  
+- Admit to the hospital for observation, continuous cardiac monitoring, and further evaluation if ECG or troponin results are abnormal, or if the patient remains hemodynamically unstable.  
+- If initial work‑up is negative and the patient stabilizes, consider discharge with close outpatient cardiology follow‑up within 48–72 hours, instructions to seek immediate care for worsening pain, dyspnea, syncope, or new symptoms.  
+
+Preventive Counseling  
+- Strongly advise smoking cessation; provide resources for nicotine replacement therapy and counseling.  
+- Discuss moderation of alcohol intake and safe cannabis use.  
+- Encourage regular aerobic exercise as tolerated, with a gradual increase in intensity.  
+- Educate on recognizing symptoms of myocardial ischemia and the importance of seeking urgent care.  
+
+Follow‑up  
+- If discharged, schedule an outpatient follow‑up appointment with primary care and cardiology within the next 3 days.  
+- Provide instructions to obtain an urgent repeat ECG if chest pain recurs or worsens.  
+
+Disposition Summary  
+The patient was evaluated for acute chest pain. Immediate ECG and cardiac enzymes were ordered, and he was placed on cardiac telemetry. Initial management with nitroglycerin and aspirin was initiated pending test results. The care team will reassess after diagnostic data return and determine need for continued inpatient management versus safe discharge with close outpatient follow‑up.

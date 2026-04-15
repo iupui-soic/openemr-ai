@@ -1,0 +1,151 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 04:23:44
+Time: 4.88s
+Tokens: 8,355 in / 2,022 out
+============================================================
+
+**Patient Information**  
+**Name:** Abel Fritsch **DOB:** 02‑24‑1945 **Age:** 78 **Sex:** Male **MRN:** 342  
+**Location:** Outpatient foot‑clinic visit – 2024‑04‑06  
+
+---
+
+## S – SUBJECTIVE  
+
+**Chief Complaint:**  
+“Intense sharp pain in the right big toe that started about six hours ago.”
+
+**History of Present Illness (HPI)**  
+- **Onset / Duration:** Sudden onset ~6 h ago; pain has remained constant.  
+- **Location:** Medial aspect just distal to the hallux (first MTP joint).  
+- **Quality:** Described as “intense” and “sharp.”  
+- **Severity:** 8/10 on numeric rating scale.  
+- **Radiation:** No radiation.  
+- **Aggravating factors:** Any movement of the toe, weight‑bearing, shoes touching the area.  
+- **Alleviating factors:** None reported; ibuprofen taken with no relief.  
+- **Associated symptoms:** Redness, swelling, warmth over the affected joint; limited range of motion (cannot flex/extend the hallux). No fever, chills, night sweats, malaise, nausea/vomiting, gastrointestinal or genitourinary symptoms. No numbness, tingling, or weakness.  
+- **Functional impact:** Able to ambulate but with an antalgic gait; avoids placing weight on the right hallux.  
+
+**Past Medical History**  
+- Essential hypertension  
+- Type 2 diabetes mellitus (on insulin)  
+- Obesity (BMI ≈ 28)  
+- Chronic kidney disease (post‑renal transplant; currently status post kidney transplant, stable)  
+- Ischemic heart disease with prior MI and CABG (2012)  
+- History of gout in family (father, maternal side)  
+- No prior episodes of joint pain or gout documented for the patient.  
+
+**Past Surgical History**  
+- Lithotripsy for kidney stone (recent hospitalization)  
+- No foot/ankle surgeries.  
+
+**Medications (home)**  
+- Ramipril (ACE‑I) – for hypertension  
+- Insulin (type 2 diabetes)  
+- Other chronic cardiac meds (clopidogrel, aspirin, metoprolol, statins, valsartan, amlodipine) as listed in the record.  
+- No recent changes in medication regimen.  
+
+**Allergies**  
+None reported.
+
+**Social History**  
+- Lives with son in a house.  
+- No tobacco, marijuana, or illicit drug use.  
+- Alcohol: ~2 glasses of wine daily + one beer per day (stable).  
+- Diet: High intake of red meat; limited seafood.  
+- Physical activity: None reported.  
+
+**Family History**  
+- Father: Severe arthritis, hypertension, diabetes.  
+- Maternal relatives: Arthritis, gout, kidney stones.  
+
+**Review of Systems (pertinent negatives)**  
+- Constitutional: No fever, chills, weight loss, night sweats.  
+- Neurologic: No numbness/tingling, no weakness.  
+- Cardiovascular/Respiratory/Gastrointestinal/Genitourinary: All negative.  
+
+---
+
+## O – OBJECTIVE  
+
+**Vital Signs (most recent in chart)**  
+- HR 98 bpm, RR 13/min, SpO₂ N/A, Temp N/A (patient afebrile on exam).  
+
+**Physical Examination**  
+
+| System | Findings |
+|--------|----------|
+| **General** | Alert, well‑appearing, in mild distress due to foot pain. |
+| **Extremities – Right Foot** | • Localized erythema, swelling, and a palpable “bump” over the first MTP joint. <br>• Warmth compared with left foot. <br>• Extreme tenderness to palpation of the joint. <br>• No crepitus, no ulceration, no drainage. <br>• Range of motion: unable to actively flex or extend the hallux; passive motion limited by pain. |
+| **Left Foot** | Normal appearance, no swelling, erythema, or tenderness. |
+| **Ankle/Other Toes** | No pain, normal ROM, no swelling. |
+| **Neurovascular** | Sensation intact in all toes, pulses palpable bilaterally. |
+| **Gait** | Antalgic gait, avoiding weight on right hallux. |
+| **Other Systems** | Unremarkable (cardiac, pulmonary, abdominal, skin). |
+
+**Point‑of‑Care Labs / Imaging**  
+- No laboratory studies drawn during this encounter.  
+- No imaging performed yet; plan for bedside joint aspiration and possible ultrasound of the first MTP joint.
+
+---
+
+## A – ASSESSMENT  
+
+1. **Acute right first MTP joint arthritis – probable gout flare (podagra).**  
+   - Classic presentation: sudden, severe, sharp pain, erythema, swelling, warmth, limited motion, occurring in a diabetic, obese, hypertensive male with a diet high in purines and alcohol.  
+   - Family history of gout increases pre‑test probability.  
+
+2. **Rule‑out septic arthritis of the first MTP joint.**  
+   - Risk factors present (diabetes, chronic kidney disease, recent hospitalization).  
+   - Absence of systemic signs (fever, leukocytosis) but cannot be excluded without synovial fluid analysis.  
+
+3. **Chronic comorbidities** – HTN, DM2, CKD post‑transplant, ischemic heart disease.  
+   - Important when selecting anti‑inflammatory therapy (NSAIDs contraindicated/limited by CKD).  
+
+4. **Lifestyle contributors** – high red‑meat intake, daily alcohol, overweight.  
+
+---
+
+## P – PLAN  
+
+### Diagnostic  
+1. **Joint aspiration of right first MTP** (point‑of‑care) → send synovial fluid for:  
+   - Gram stain & culture (to rule out septic arthritis).  
+   - Polarized light microscopy for monosodium urate crystals.  
+   - Cell count with differential.  
+2. **Baseline labs** (if not recent): CBC, CMP, ESR, CRP, uric acid level.  
+3. **Consider bedside ultrasound** of the joint to guide aspiration and assess for effusion.
+
+### Therapeutic  
+1. **Colchicine** – start **0.6 mg orally** then **0.6 mg 12 h later** (adjust dose if eGFR <30 mL/min; monitor for GI upset).  
+2. **NSAID alternative** – given CKD stage 4 and transplant status, avoid high‑dose NSAIDs; if pain persists after colchicine and fluid analysis is negative for infection, consider a short course of **low‑dose oral prednisone** (e.g., 10 mg daily for 5 days) with gastro‑protection.  
+3. **Continue ibuprofen** only if tolerated and renal function permits (re‑evaluate labs).  
+4. **Analgesia** – acetaminophen 500 mg PO q6h PRN (max 3 g/day).  
+
+### Education & Lifestyle  
+- **Dietary modifications:** limit red meat, organ meats, shellfish; increase low‑purine foods (dairy, vegetables, fruits); stay well‑hydrated (≥2 L water/day).  
+- **Alcohol reduction:** aim to limit to ≤1 drink/week; avoid beer and wine during acute flares.  
+- **Weight management:** referral to dietitian for caloric‑controlled plan; goal BMI < 25.  
+- **Gout prophylaxis:** once acute episode resolved and if serum urate remains >6 mg/dL, consider **allopurinol** (dose adjusted for renal function) or **febuxostat** after discussion with nephrology.  
+
+### Follow‑up & Monitoring  
+- **Urgent follow‑up** in 48 h (or sooner if synovial fluid culture grows organisms) to review aspiration results and adjust therapy.  
+- **Nephrology review** before initiating any urate‑lowering therapy given transplant status.  
+- **Primary care** visit in 2 weeks for reassessment of pain, medication tolerance, and review of labs.  
+
+### Referrals  
+- **Rheumatology** – for confirmation of gout diagnosis and long‑term management.  
+- **Podiatry** – if persistent mechanical issues or need for foot orthoses.  
+
+### Discharge Instructions (written for patient)  
+- Keep foot elevated; apply intermittent cold packs (15 min on/off).  
+- Avoid weight‑bearing on the right toe as much as possible; use a stiff shoe or a post‑op shoe if needed.  
+- Take colchicine as prescribed; report any severe diarrhea, vomiting, or abdominal pain.  
+- Monitor for fever, increasing redness, swelling, or drainage – seek care immediately.  
+- Continue prescribed antihypertensive and diabetic medications; do not miss insulin doses.  
+
+**Signature:**  
+Dr. __________, MD – Primary Care / Musculoskeletal Clinic  
+Date: 2024‑04‑06

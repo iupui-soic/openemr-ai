@@ -1,0 +1,39 @@
+Model: google/medgemma-4b-it
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 05:59:27
+Time: 25.30s
+Tokens: 6,483 in / 456 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Dooley
+Date of Birth: 1957-06-30
+Sex: Male
+Unit Number: 45
+
+Chief Complaint:
+The patient is presenting with a fever, cough, and runny nose, which have been ongoing for the past two days.
+
+History of Present Illness:
+The patient's son, Aaron Dooley, is being brought in today with symptoms of fever, cough, and runny nose. These symptoms started two days ago. The cough is dry, and there is no sputum or blood. The patient denies shortness of breath, wheezing, chest pain, or any eye symptoms. He denies any stuffiness. The patient has a sore throat, but it is not severe enough to interfere with eating. He has no nausea or vomiting. The patient denies any changes in bowel movements or urination. He denies any dizziness or fainting spells, numbness, or tingling. He reports some muscle aches. The patient denies any changes in smell or taste. He denies any weight loss. The patient's temperature was measured at 38.8 degrees Celsius.
+
+Past Medical History:
+The patient's son has been generally healthy, with occasional colds in the winter. He has no significant past medical history, hospitalizations, or surgeries. He has no known allergies.
+
+Family History:
+The patient's family history is unremarkable, with no reported lung or heart conditions. His grandfather has a history of high blood pressure and high cholesterol.
+
+Social History:
+The patient's son is up to date on his immunizations. He lives with himself, his mother, and two younger siblings. He has been attending school both online and in person. There is no smoking in the home.
+
+Medications:
+The patient's son is not currently taking any medications.
+
+Assessment:
+The patient's son is presenting with symptoms consistent with an upper respiratory infection. The differential diagnosis includes a viral infection, such as the common cold or influenza.
+
+Plan:
+The physician recommends obtaining a COVID-19 swab to rule out COVID-19. Supportive care, including hydration, nutrition, and monitoring of symptoms, is recommended. The patient should be seen again if symptoms worsen or if focal neurological deficits develop.

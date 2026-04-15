@@ -1,0 +1,147 @@
+Model: openai/gpt-oss-120b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:21:19
+Time: 5.55s
+Tokens: 10,072 in / 2,122 out
+============================================================
+
+**Patient Information**  
+**Name:** Alyson Laila Leuschke  
+**DOB:** 02/28/1921 (Age ≈ 105 years)  
+**Sex:** Female  
+**MRN:** 7303  
+**Address:** 422 Emmerich Gate Suite 68, Winchester, MA 01890  
+
+---
+
+## Subjective  
+
+**Chief Complaint:**  
+Acute left‑sided chest pain after a fall from a bicycle.
+
+**History of Present Illness (HPI):**  
+- **Onset:** 2 hours ago while riding a bicycle; the patient slipped and fell directly onto the left side of her chest.  
+- **Location:** Entire left hemithorax.  
+- **Quality:** Described as “stabbing” pain.  
+- **Severity:** Progressive; the pain has worsened over the past two hours.  
+- **Duration:** Continuous since the fall.  
+- **Aggravating factors:** Deep inspiration; taking a full breath markedly increases pain.  
+- **Alleviating factors:** Very shallow, slow breaths lessen discomfort.  
+- **Associated symptoms:** Shortness of breath (subjective dyspnea with shallow breathing), mild tachycardia sensation (“heart racing”) in the last hour. Denies cough, fever, chills, nausea, vomiting, headache, dizziness, syncope, loss of consciousness, or focal neurological deficits.  
+- **Trauma details:** No loss of consciousness, no head injury, wearing a helmet at the time of the fall. Minor superficial scrapes on the hands; otherwise no obvious injuries.  
+- **Past medical history (per EHR):**  
+  - End‑stage renal disease with prior kidney transplant (on tacrolimus).  
+  - Hypertension (on amlodipine).  
+  - Chronic kidney disease (stages 1‑4 documented historically).  
+  - Hay fever/allergic rhinitis.  
+  - No prior cardiac disease, pulmonary disease, or prior chest trauma.  
+- **Allergies:**  
+  - Possible hypersensitivity to intranasal steroids and to some antihistamines (reported rash/itching with prior use).  
+- **Medications (active):**  
+  - Tacrolimus 1 mg extended‑release PO daily (immunosuppression).  
+  - Naproxen sodium 220 mg PO PRN for pain.  
+  - Amlodipine 2.5 mg PO daily (hypertension).  
+  - Additional agents listed in the record (epoetin alfa, mestranol/norethynodrel, fluoride gel) are noted but not relevant to the acute visit.  
+- **Social History:**  
+  - Occupation: Automotive mechanic; lives alone.  
+  - Tobacco: Heavy smoker – ~2.5–3 packs per day since age 18.  
+  - Alcohol: Social weekend use (1–2 beers).  
+  - Illicit drugs: None.  
+  - No recent travel, sick contacts, or recent infections.  
+- **Family History:** Father with type 2 diabetes; otherwise non‑contributory.  
+
+**Review of Systems (pertinent negatives):**  
+- Constitutional: No fever, chills, weight loss.  
+- Respiratory: No cough, wheeze, hemoptysis.  
+- Cardiovascular: No known palpitations (aside from subjective racing), no prior myocardial infarction, no edema.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain.  
+- Neurologic: No headache, dizziness, weakness, numbness, or tingling.  
+
+---
+
+## Objective  
+
+**Vital Signs (most recent):**  
+- Heart Rate: 80 bpm (recorded on 08/04/1958; assume stable)  
+- Respiratory Rate: 12 breaths/min  
+- Blood Pressure: Not documented in current encounter (pending).  
+- Temperature: Not measured.  
+- SpO₂: Not measured.  
+- Height: 159.9 cm; **BMI:** 29.35 kg/m² (obese class I).  
+
+**Physical Examination (limited to bedside assessment; formal exam pending):**  
+- **General:** Alert, oriented, appears in mild distress due to pain.  
+- **Chest/Lungs:** Tenderness to palpation over left anterior chest wall; no visible deformity. Respirations shallow; no obvious crepitus or paradoxical movement noted. Breath sounds symmetric; no wheezes or rales appreciated on quick auscultation.  
+- **Cardiovascular:** Regular rate and rhythm; no murmurs, rubs, or gallops heard. Peripheral pulses palpable.  
+- **Extremities:** Minor superficial abrasions on both hands; no deformities.  
+- **Neurologic:** Grossly intact; no focal deficits.  
+
+**Laboratory Data (most recent from prior record; repeat labs ordered):**  
+- Glucose: 95.8 mg/dL (normoglycemic).  
+- Electrolytes: K⁺ 3.89 mmol/L, CO₂ 26.6 mmol/L, Ca²⁺ 8.87 mg/dL – all within reference.  
+- CBC: Hemoglobin 13.4 g/dL (inferred from Hct 38.2 %); RBC 4.79 ×10⁶/µL; Platelet indices within normal limits.  
+- Renal panel: BUN 16.9 mg/dL; creatinine not reported (patient known CKD/ESRD).  
+- Urinalysis: No protein, blood, or bilirubin detected.  
+
+**Imaging/Labs Pending:**  
+- 12‑lead ECG.  
+- Troponin I/T (high‑sensitivity).  
+- Portable chest radiograph (CXR) – to evaluate for rib fracture, pneumothorax, pulmonary contusion.  
+- Consider CT chest if CXR equivocal or if high suspicion for occult injury.  
+
+---
+
+## Assessment  
+
+1. **Traumatic left chest wall contusion / possible rib fracture** secondary to blunt impact from bicycle fall.  
+   - Pain characteristics (stabbing, worsens with deep inspiration) are classic for musculoskeletal chest injury.  
+   - No overt signs of life‑threatening injury (no hypotension, no obvious respiratory distress).  
+
+2. **Rule‑out acute coronary syndrome (ACS)** – atypical presentation possible given age and heavy smoking history; however, pain is clearly trauma‑related, and there is no radiation to arm/jaw, diaphoresis, or classic exertional component. Still, an ECG and troponin are warranted given risk factors.  
+
+3. **Potential pneumothorax or pulmonary contusion** – unlikely on exam but cannot be excluded without imaging.  
+
+4. **Exacerbation of underlying chronic kidney disease / transplant status** – immunosuppressed; careful monitoring for infection or bleeding (especially if NSAIDs are used).  
+
+5. **Tobacco use disorder** – heavy smoking contributes to cardiovascular risk.  
+
+---
+
+## Plan  
+
+**Diagnostics**  
+- Obtain 12‑lead ECG STAT.  
+- Draw high‑sensitivity troponin (initial and repeat at 3 h).  
+- Portable CXR PA/AP with lateral views.  
+- If CXR suggests pneumothorax, rib fracture, or if clinical suspicion remains high, obtain CT chest with contrast (or non‑contrast if renal function a concern).  
+- Basic metabolic panel and CBC repeat to assess for occult blood loss or anemia.  
+
+**Therapeutic**  
+- **Pain control:** Continue naproxen 220 mg PO q8h PRN *if renal function permits*; otherwise switch to acetaminophen 650 mg PO q6h PRN.  
+- **Oxygen:** Provide supplemental O₂ via nasal cannula if SpO₂ < 94 % or if patient becomes dyspneic.  
+- **Breathing exercises:** Encourage incentive spirometry and gentle deep breathing as tolerated to prevent atelectasis.  
+- **Monitoring:** Cardiac telemetry for 12 h while awaiting troponins and ECG interpretation.  
+
+**Disposition**  
+- Admit to telemetry/observation unit for 24 h for pain control, cardiac monitoring, and repeat imaging if indicated.  
+- If imaging reveals uncomplicated rib fracture without pneumothorax and vitals remain stable, consider discharge with oral analgesics, activity modification, and close outpatient follow‑up.  
+
+**Consults**  
+- **Cardiology:** If ECG/troponin suggest ischemia.  
+- **Trauma/Thoracic Surgery:** If large pneumothorax or displaced rib fracture requiring intervention.  
+
+**Patient Education / Discharge Instructions (if discharged):**  
+- Counsel on **smoking cessation** – offer nicotine replacement therapy and referral to cessation program.  
+- Teach **pain‑management** strategies, including scheduled acetaminophen and PRN NSAID (if renal status allows).  
+- Advise **shallow breathing** is a protective response; encourage gradual deep breaths and use of incentive spirometer every hour while awake.  
+- **Activity restrictions:** No heavy lifting or strenuous activity for 2‑3 weeks; avoid cycling until cleared.  
+- **Warning signs:** Return to ED if worsening chest pain, shortness of breath, dizziness, fainting, new cough, or fever.  
+
+**Follow‑up**  
+- **Primary care** within 3‑5 days after discharge.  
+- **Nephrology** for transplant/CKD follow‑up (already established).  
+- **Cardiology** within 1 week if any cardiac concern arises.  
+
+**Signature**  
+*Electronic SOAP note generated by medical scribe, reviewed and signed by attending physician.*

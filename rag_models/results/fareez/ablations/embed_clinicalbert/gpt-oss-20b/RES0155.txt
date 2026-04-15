@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:54:46
+Time: 3.39s
+Tokens: 12,399 in / 1,413 out
+============================================================
+
+Patient Information  
+The patient is a female, identified as patient ID 982, residing at 517 Hills Trace, Stoneham, Massachusetts. She lives with her daughter and works in a grocery store. She is a long‑time cigarette smoker (approximately one pack per day, 30–40 years of smoking history) and consumes wine on weekends. She denies recreational drug use.
+
+Chief Complaint  
+The patient presents with worsening shortness of breath, a productive cough with yellow/green sputum, and chest discomfort that has progressed over the past five days.
+
+History of Present Illness  
+The patient reports that for the last five days she has experienced increasing shortness of breath that worsens with exertion but is otherwise tolerable at rest. She also has a cough that produces small amounts of yellowish or greenish sputum; she estimates the amount to be roughly the size of a palm each time she coughs. She denies hemoptysis, chest pain, or palpitations. She describes her chest discomfort as a persistent, non‑painful congestion. The patient also reports feeling feverish and has noted subjective chills, although she has not taken a temperature. No episodes of nocturnal dyspnea or night sweats have been reported. She denies recent travel, sick contacts, or new exposures. She has a history of chronic obstructive pulmonary disease (diagnosed three years ago), hypertension, and gastroesophageal reflux disease. She has used her albuterol inhaler (Ventolin) and Symbicort daily as part of her COPD management; however, she has recently required increased use, with three to four puffs in the morning and additional use at night, which has been insufficient in controlling her symptoms. She also takes an ACE inhibitor for hypertension and antacids for GERD. The patient has no known drug allergies.
+
+Review of Systems  
+Constitutional: Subjective feverish feeling, no chills, no night sweats, no weight change.  
+Respiratory: Productive cough with yellow/green sputum, shortness of breath on exertion, no wheezing, no orthopnea.  
+Cardiovascular: No chest pain, palpitations, or dizziness.  
+Gastrointestinal: GERD symptoms, no nausea or vomiting.  
+Neurologic: No headache, vision changes, or focal deficits.  
+Psychiatric: No anxiety or depression noted.  
+Genitourinary: No dysuria or urinary frequency.  
+Dermatologic: No rashes or skin changes.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease, diagnosed three years ago.  
+- Essential hypertension.  
+- Gastroesophageal reflux disease.  
+
+Surgical History  
+No surgical procedures reported.
+
+Medications  
+- Albuterol inhaler (Ventolin) – rescue bronchodilator.  
+- Symbicort (budesonide/formoterol) – maintenance inhaler.  
+- ACE inhibitor – for hypertension (specific agent not disclosed).  
+- Tums (antacid) – as needed for GERD.  
+
+Allergies  
+No known drug or food allergies.
+
+Social History  
+- Smokes approximately one pack of cigarettes daily (30–40 years).  
+- Occasional wine on weekends.  
+- Lives with daughter in an apartment.  
+- Works at a grocery store.  
+- No recent travel or known exposure to sick individuals.  
+
+Family History  
+No family history of lung or cardiovascular disease reported.  
+
+Physical Examination  
+No examination was performed in the transcript; the patient reports that she is fine at rest but experiences exertional dyspnea. Vital signs were pending at the time of documentation.
+
+Labs  
+Key laboratory values obtained prior to presentation include:
+- BUN: 10.35 mg/dL  
+- Creatinine: 0.42 mg/dL (estimated GFR 88.5 mL/min)  
+- Sodium: 138–139 mmol/L  
+- Potassium: 4.85 mmol/L  
+- Chloride: 106–105 mmol/L  
+- CO₂: 26.9 mmol/L  
+- Calcium: 9.48 mg/dL  
+- Glucose: 96.65 mg/dL  
+- Hemoglobin A1c: Not provided  
+- Liver enzymes: ALT 51.98 U/L, ALP within normal limits  
+- Lipid profile: Cholesterol 204 mg/dL (borderline high)  
+
+No complete blood count or inflammatory markers (e.g., WBC, CRP) were documented in this extract.
+
+Imaging  
+A chest radiograph (CXR) has been ordered but results are pending. A COVID‑19 nasopharyngeal swab has also been requested.
+
+Assessment  
+The clinical picture is most consistent with a COPD exacerbation likely precipitated by a lower respiratory tract infection, given the productive cough with purulent sputum, subjective fever, and recent increase in symptom severity. Differential includes bacterial pneumonia, viral upper respiratory infection, and COVID‑19 infection. The absence of pleuritic pain, orthopnea, or significant cardiovascular symptoms makes heart failure less likely. The patient’s baseline COPD and smoking history increase her susceptibility to infectious pulmonary exacerbations.
+
+Plan  
+1. Immediate transfer to the emergency department for full evaluation.  
+2. Obtain vital signs (temperature, heart rate, blood pressure, respiratory rate, oxygen saturation).  
+3. Perform chest X‑ray to assess for infiltrates consistent with pneumonia.  
+4. Conduct a COVID‑19 PCR test.  
+5. Order a complete blood count with differential to evaluate for leukocytosis.  
+6. Initiate nebulized bronchodilator therapy (albuterol and ipratropium) and consider systemic steroids (e.g., prednisone 30 mg daily for 5–7 days) pending severity.  
+7. If imaging or labs suggest bacterial pneumonia, commence empiric antibiotics (e.g., amoxicillin‑clavulanate or doxycycline) appropriate for COPD exacerbation.  
+8. Continue maintenance inhaler therapy (Symbicort) and rescue albuterol as needed.  
+9. Provide supplemental oxygen to maintain SpO₂ ≥ 90%.  
+10. Offer smoking cessation resources and counseling.  
+11. Educate the patient on inhaler technique and adherence to maintenance therapy.  
+12. Arrange follow‑up with pulmonology within 7 days of discharge or sooner if symptoms worsen.  
+13. Consider home health services for respiratory therapy if outpatient management is insufficient.  
+
+The patient was advised to seek immediate care if she experiences increased shortness of breath, chest pain, or any new symptoms. She is instructed to monitor her temperature and report any fever above 100.4°F. All medications are to be continued as prescribed unless otherwise directed by the treating provider.

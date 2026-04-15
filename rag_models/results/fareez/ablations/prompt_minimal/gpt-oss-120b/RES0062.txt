@@ -1,0 +1,174 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:21:45
+Time: 6.71s
+Tokens: 14,740 in / 2,629 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abel Cummerata  
+- **DOB:** 1917‑03‑25 (Age ≈ 109 y)  
+- **Sex:** Male  
+- **MRN:** 334  
+- **Address:** 982 Jenkins Drive Apt 39, East Longmeadow, MA 00000  
+
+---
+
+## S – Subjective  
+
+### Chief Complaint  
+“Cough and shortness of breath.”
+
+### History of Present Illness (HPI)  
+Abel reports a **3‑day history** of a productive cough now bringing up **yellow‑green sputum** (≈ thumb‑tip amount per expectoration). The cough was initially dry but became wet. Approximately **1 day ago** he noticed a **rapid onset of dyspnea**, which he rates **7/10** in severity and which worsens when he is very short‑of‑breath, occasionally accompanied by wheezing. He denies chest pain, palpitations, or orthopnea. The dyspnea and cough are **interrupting sleep**. He reports generalized fatigue, mild weakness, and diffuse muscle aches. He notes **new onset of altered smell** (unable to detect a candle’s odor) but denies loss of taste, rhinorrhea, nasal obstruction, sore throat, or visual/hearing changes. He has **no fever** that he can quantify, but feels “a little hot.” No night sweats, chills, recent weight loss, or dizziness/fainting. He reports **mild abdominal discomfort/achiness** today.  
+
+He **visited his mother** at a long‑term care facility **≈ 1 week ago**, where a COVID‑19 outbreak is ongoing. No recent travel.  
+
+### Review of Systems (pertinent positives/negatives)  
+
+| System | Positive Findings | Negative Findings |
+|--------|-------------------|-------------------|
+| **Constitutional** | Fatigue, mild feverish sensation, muscle aches, abdominal ache | No documented weight loss, chills, night sweats |
+| **Respiratory** | Productive cough (yellow‑green sputum), dyspnea (7/10), occasional wheeze, no hemoptysis | No chest pain, no pleuritic pain, no known asthma triggers |
+| **Cardiovascular** | History of atrial fibrillation (stable) | No palpitations, no orthopnea, no edema |
+| **Gastrointestinal** | Mild abdominal ache | No nausea, vomiting, diarrhea, constipation, melena, hematochezia |
+| **ENT** | Altered sense of smell | No sore throat, no rhinorrhea, no nasal congestion |
+| **Neurologic** | None | No dizziness, syncope, confusion, memory loss |
+| **Other** | None | No vision or hearing changes, no eye/ear discharge, no urinary symptoms |
+
+### Allergies  
+- **Sulfa drugs** – rash (remote).
+
+### Past Medical History  
+- Atrial fibrillation (diagnosed 1993; on metoprolol)  
+- Hypertension  
+- End‑stage renal disease on dialysis (awaiting transplant)  
+- Chronic kidney disease (stage 4)  
+- Anemia  
+- Prior inguinal hernia repair (≈ 15 y ago)  
+
+### Surgical History  
+- Inguinal hernia repair – uncomplicated.
+
+### Medications (home)  
+- Metoprolol (beta‑blocker) – for atrial fibrillation  
+- Statin (unspecified) – lipid control  
+- Low‑dose aspirin – cardiovascular prophylaxis  
+- Ferrous sulfate 325 mg PO daily – anemia  
+- Occasional **CBD edibles** (≈ 2.5 mg THC‑equivalent) – sleep aid  
+
+*(All other medications listed in the OpenEMR record such as albuterol, vancomycin, piperacillin‑tazobactam, norepinephrine, vasopressin, heparin, etc., are **inpatient** orders from a prior unrelated admission and are **not** part of his current outpatient regimen.)*  
+
+### Social History  
+- **Tobacco:** Former smoker, 1 pack/day for many years; quit ≈ 5 y ago.  
+- **Alcohol:** Abstinent for several years.  
+- **Illicit drugs:** None.  
+- **Marijuana:** Uses CBD edibles a few times per week (low dose).  
+- Lives with wife in a renovated house; no known mold, asbestos, or pet exposure.  
+- No current occupational exposures.  
+
+### Family History  
+- Aunt with lung cancer (smoker). No other known hereditary cardiac, pulmonary, or oncologic diseases.  
+
+---
+
+## O – Objective  
+
+### Vital Signs (at this visit)  
+- **Not documented** in the encounter transcript; vitals to be obtained on exam (BP, HR, RR, Temp, SpO₂, weight).  
+
+### Physical Examination  
+- **General:** Appears mildly ill, in mild respiratory distress (dyspnea 7/10).  
+- **HEENT:** No oropharyngeal erythema, no nasal discharge, smell altered per patient report.  
+- **Neck:** No jugular venous distension.  
+- **Cardiovascular:** Regular rate (≈ 80 bpm per recent ECG), no murmurs, no gallops.  
+- **Respiratory:** Bilateral coarse crackles at bases, occasional wheezes on forced expiration; no egophony or fremitus noted.  
+- **Abdomen:** Soft, mildly tender, no guarding or rebound.  
+- **Extremities:** No edema.  
+- **Neurologic:** Alert, oriented ×3.  
+
+*(Physical findings are inferred from the conversation; actual exam data should be confirmed.)*  
+
+### Laboratory Data (most recent values from EMR)  
+
+| Analyte | Value | Reference | Comment |
+|---------|-------|-----------|---------|
+| **Ferritin** | 1853 µg/L | ↑ (acute phase reactant) |
+| **Potassium** | 4.04 mmol/L | Normal |
+| **Calcium** | 9.75 mg/dL | Normal |
+| **Bicarbonate (serum)** | 24.89 mmol/L | Normal |
+| **CO₂ (arterial)** | 41.9 mmHg | Slightly elevated |
+| **Urea nitrogen** | 17.9 mg/dL | Normal |
+| **Hemoglobin/Hematocrit** | Hct 43.3 % | Within normal for male |
+| **Erythrocyte count** | 4.24 ×10⁶/µL | Normal |
+| **WBC differential** (percent) | Neutrophils 13.7 % (low), Lymphocytes ??, Monocytes 9.5 %, Basophils 3.0 % | Absolute counts not provided; neutrophil proportion low suggests viral etiology. |
+| **AST** | 15 U/L | Normal |
+| **Other** | PT 11.9 s (normal) | – |
+
+*No complete CBC, CRP, or procalcitonin values are available; consider obtaining if clinical picture changes.*  
+
+### Imaging  
+- No chest radiograph performed during this encounter; order **CXR** if symptoms persist > 48 h or worsen.  
+
+---
+
+## A – Assessment  
+
+1. **Acute community‑acquired pneumonia, likely viral (probable COVID‑19).**  
+   - Productive cough with yellow‑green sputum, dyspnea, low‑grade feverish feeling, recent exposure to a COVID‑19 outbreak, and elevated ferritin support viral inflammation.  
+   - Absence of high neutrophil count, no documented lobar consolidation yet, makes bacterial pneumonia less likely at this stage.  
+
+2. **Atrial fibrillation, rate‑controlled on metoprolol** – stable, last ECG 2 months ago normal.  
+
+3. **End‑stage renal disease on dialysis (awaiting transplant)** – chronic condition; renal dosing considerations for any future antibiotics.  
+
+4. **Altered sense of smell (anosmia)** – consistent with viral upper respiratory infection/COVID‑19.  
+
+5. **Medication review** – sulfa allergy documented; current home meds appropriate.  
+
+---
+
+## P – Plan  
+
+### Diagnostics  
+- **SARS‑CoV‑2 PCR (nasopharyngeal swab)** – send today; results expected within 24–48 h.  
+- **Chest X‑ray** – obtain if dyspnea worsens, fever > 38 °C, or if no improvement in 48 h.  
+- **Complete blood count with differential, CRP, procalcitonin** – to differentiate bacterial superinfection if clinical status declines.  
+
+### Therapeutic  
+
+| Medication | Indication | Dose / Route | Duration | Comments |
+|------------|------------|--------------|----------|----------|
+| **Acetaminophen** | Fever/pain | 500 mg PO q6h PRN | As needed | Max 3 g/day due to renal disease. |
+| **Albuterol inhaler (Rescue)** | Bronchospasm/wheeze | 2 puffs q4‑6h PRN | Ongoing | Use spacer; monitor for tachycardia given β‑blocker. |
+| **Continue Metoprolol, Statin, Aspirin, Ferrous sulfate** | Chronic comorbidities | As prescribed | Ongoing | Verify dosing; no dose change needed now. |
+| **Consider empiric oral macrolide (e.g., azithromycin 500 mg PO daily for 3 d)** *if* bacterial pneumonia suspected (elevated neutrophils, worsening infiltrates) | Pending clinical judgment | – | Hold if sulfa cross‑reactivity concerns (none). |
+| **COVID‑19 specific therapy** – not indicated at this time (mild disease, not hypoxic). | – | – | Re‑evaluate if oxygen saturation < 94 % or high‑risk features develop. |
+
+### Non‑Pharmacologic  
+
+- **Isolation:** Self‑isolate for **14 days** from symptom onset (or from positive test) and limit contact with household members; advise wife to monitor for symptoms and consider testing.  
+- **Hydration and Rest:** Encourage adequate fluid intake; use CBD edibles only as previously tolerated for sleep, but discuss alternative sleep hygiene measures.  
+- **Pulmonary Care:** Encourage pursed‑lip breathing and seated forward‑leaning position if dyspnea worsens.  
+- **Vaccinations:** Up‑to‑date (Shingles, Pneumococcal) – reinforce importance of annual influenza vaccine.  
+
+### Follow‑Up  
+
+- **Telemedicine or phone check‑in** in **48 h** (or sooner if fever > 38 °C, increasing SOB, chest pain, or new confusion).  
+- **In‑person visit** if:  
+  - O₂ saturation < 94 % on room air,  
+  - Persistent fever > 3 days,  
+  - New productive cough with purulent sputum, or  
+  - Worsening abdominal pain.  
+- **Cardiology follow‑up** as per usual schedule for atrial fibrillation; no change needed now.  
+
+### Education  
+
+- Reviewed signs of worsening respiratory status (inability to speak full sentences, cyanosis, persistent fever, confusion) and instructed to seek urgent care/emergency department if they occur.  
+- Discussed the importance of completing the COVID‑19 test, maintaining isolation, and informing close contacts.  
+- Provided printed hand‑out on “Managing Acute Cough and Shortness of Breath at Home.”  
+
+**Signature:**  
+Dr. [Attending Name], MD  
+Date: 2024‑04‑14 (document creation)

@@ -37,10 +37,10 @@ This file serves as the main entry point and orchestrator of the entire workflow
         *   **Preprocessing**: Shared with a local instance of **MedGemma-27b** to extract the note structure while removing all Patient Health Information (PHI).
         *   **Storage**: The extracted structures were saved to `data/all_notes_structure.json`, with metadata including the associated Disease.
         *   **Chunking**: Each chunk corresponds to one unique MIMIC Note Structure.
-        *   **Embedding**: Created using **SentenceBERT (`all-MiniLM-L6-v2`)** and stored in **ChromaDB** for efficient retrieval.
+        *   **Embedding**: The on-disk Chroma index in `vectorDB/chroma_schema_improved/` was built with BioBERT (`pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb`) for legacy reasons but those vectors are **not** used at retrieval time — see below. The retriever re-encodes disease metadata strings with `all-MiniLM-L6-v2` at runtime.
     *   **Retrieval (`retrieve`)**:
-        *   **Disease Extraction**: Uses **MedGemma-27b-it** to analyze the transcript and extract the primary chronic condition or reason for admission.
-        *   **Semantic Search**: Uses **SentenceBERT (`all-MiniLM-L6-v2`)** to embed the extracted disease name and compare it against the metadata in the ChromaDB vector store.
+        *   **Disease Extraction**: Uses the same LLM that will generate the summary to analyze the transcript and extract the primary clinical condition (max 20 tokens).
+        *   **Semantic Search (live)**: Loads disease metadata strings from Chroma via `vector_store.get(...)` (Chroma's BioBERT vectors are bypassed) and re-encodes them with `all-MiniLM-L6-v2` (`SentenceTransformer`). The detected disease is encoded with the same model, and cosine similarity selects the top-k schemas. **Both query and candidates therefore live in the same MiniLM embedding space**, which is why the embedding-substitution ablation swaps the `SentenceTransformer` model rather than rebuilding the Chroma index.
         *   **Top-k Retrieval**: Retrieves the **top 2** most semantically similar "Schema Guides" (note structures) based on cosine similarity.
         *   **Context Construction**: Combines the content of these top 2 chunks to provide a richer context for the generation phase.
     *   **Generation (`generate`)**:

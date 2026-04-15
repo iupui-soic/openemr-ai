@@ -1,0 +1,44 @@
+Model: google/medgemma-4b-it
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 05:59:27
+Time: 27.33s
+Tokens: 10,380 in / 465 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+The patient is Albert Turner, born on September 28, 1931, and is a male. He resides at 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673.
+
+Chief Complaint:
+
+The patient presented to the emergency department reporting a fall while waking up and coming down the stairs. He fell off the last few stairs and fell onto the right side and on, right onto his head. He was unable to stand and put any weight on his right hip.
+
+History of Present Illness:
+
+The patient reports a fall two hours prior to arrival. He states he missed one of the steps and slipped down the stairs. He denies any dizziness or loss of consciousness. He reports extreme pain in his right hip, which is exacerbated by weight-bearing and radiates to the groin. He is unable to weight bear on his right leg. The pain is described as sharp, and he reports swelling in the right groin area. He denies any numbness or tingling. He reports feeling dizzy after the fall, but attributes this to the pain.
+
+Past Medical History:
+
+The patient has a history of osteoarthritis and hypertension. He is taking Ramipril for his blood pressure, along with vitamins D, calcium, and multivitamins. He denies any other significant medical history.
+
+Family History:
+
+The patient reports a family history of heart attack in his father in his 60s. He also reports his mother had skin cancer, which was treated with surgery.
+
+Social History:
+
+The patient lives with his husband. He denies smoking, alcohol use (occasional wine), and marijuana use.
+
+Physical Exam:
+
+The physical exam revealed right hip pain with swelling and tenderness. The patient was unable to weight bear on his right leg. The right hip appeared to be slightly outward turned. The patient was able to stand with assistance.
+
+Assessment:
+
+Based on the history and physical exam, the patient is diagnosed with a hip fracture.
+
+Plan:
+
+The patient will be referred to an orthopaedic surgeon for evaluation and possible surgical intervention. Options include internal repair with screws, total hip replacement, or partial hip replacement. Physical therapy will be recommended for rehabilitation and pain management with ibuprofen. The patient will be discharged with instructions to follow up with the orthopaedic surgeon and physical therapist.

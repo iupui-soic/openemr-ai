@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:29:08
+Time: 4.69s
+Tokens: 7,835 in / 1,533 out
+============================================================
+
+Patient Information
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 24)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+Medical Record Number: 123  
+
+Chief Complaint
+Fever and cough of four days duration.
+
+History of Present Illness
+Ms. Stamm reports the onset of a dry cough approximately four days ago, beginning on Monday. She noted feeling “hot” throughout the week and measured a temperature of 38.5 °C (101.3 °F) this morning, which she describes as her first documented fever. The cough has progressively worsened and is now associated with increasing fatigue, mild body aches, and occasional shortness of breath after coughing fits. She denies sputum production, hemoptysis, wheezing, or chest pain. She has experienced mild nighttime chills but no night sweats. Appetite has decreased, resulting in a small weight loss over the past week. She reports a scratchy sensation in the throat with coughing but no sore throat, dysphagia, or change in taste or smell. Mild rhinorrhea is present without significant nasal congestion. She describes intermittent, tension‑type headaches over the past several days, which she usually manages with over‑the‑counter analgesics. She has felt nauseated a few times but has not vomited. There is no history of recent sick contacts; she was in a mall over the weekend, wearing a mask, and reports that others were masked as well. She has not traveled recently. The patient is concerned about the possibility of COVID‑19 infection.
+
+Review of Systems
+Constitutional: Fever (38.5 °C), fatigue, mild chills, slight weight loss, occasional headache, mild body aches.  
+Respiratory: Dry cough, worsening over four days, mild shortness of breath after coughing fits, no sputum, no wheezing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, no reported edema.  
+Gastrointestinal: Decreased appetite, mild nausea, no vomiting, normal bowel movements, no abdominal pain.  
+ENT: Scratchy throat with cough, mild rhinorrhea, no sore throat, no dysphagia, no change in taste or smell.  
+Neurologic: Tension‑type headache, no dizziness, no syncope, no confusion.  
+Musculoskeletal: Mild body aches.  
+Dermatologic: No rash, no new skin changes.  
+Genitourinary: No dysuria, no hematuria, no change in urinary frequency.  
+Psychiatric: No mood changes reported.  
+
+Allergies
+Penicillin – causes hives.  
+Environmental allergies noted in the record include bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, and peanut (all severity 1).  
+
+Past Medical History
+- Mitral valve regurgitation (ongoing)  
+- Hypercholesterolemia, treated with rosuvastatin  
+- Pre‑diabetes (A1C 6.2 % six months ago)  
+- Childhood asthma (resolved January 2021)  
+- Perennial allergic rhinitis (resolved November 2020)  
+- Inguinal hernia repair (approximately five years ago)  
+- Recent acute infective cystitis (treated; resolved)  
+
+Surgical History
+Inguinal hernia repair, performed approximately five years prior.  
+
+Social History
+The patient does not smoke cigarettes or use marijuana. She consumes alcohol socially, averaging two to three beers on weekends. No illicit drug use. She lives in a rented basement unit of a duplex with her girlfriend; no known mold or asbestos exposure in her unit. She works full‑time and reports limited social contact due to the pandemic. She receives an annual influenza vaccine and reports being up to date on other immunizations.  
+
+Family History
+No known family history of lung, cardiac, or metabolic disease. The patient recalls that her grandfather may have had bladder cancer, but details are uncertain.  
+
+Current Medications
+- Rosuvastatin (dose not specified) – for hypercholesterolemia  
+- Multivitamin – over‑the‑counter  
+No other prescription or over‑the‑counter medications reported as currently active.  
+
+Vital Signs
+No vital signs were recorded during this encounter.  
+
+Physical Examination
+No physical exam findings were documented for this visit.  
+
+Laboratory and Imaging Studies
+No laboratory tests or imaging studies were ordered or available at the time of this encounter. The patient will have a nasopharyngeal swab for SARS‑CoV‑2 PCR performed.  
+
+Assessment
+1. Acute bronchitis, likely viral in etiology.  
+2. Rule‑out COVID‑19 infection (pending PCR test).  
+3. Pre‑diabetes, hypercholesterolemia – stable on current therapy.  
+4. Mitral valve regurgitation – stable.  
+
+Plan
+1. **COVID‑19 Testing** – Obtain nasopharyngeal swab today; results expected within 24 hours. Instruct the patient to self‑isolate for 14 days from the date of specimen collection, regardless of result, and to limit contact with household members. Notify public health authorities if the test is positive.  
+2. **Symptomatic Management of Acute Bronchitis**  
+   - Acetaminophen 325 mg PO q6‑8 h PRN for fever or discomfort, not to exceed 3 g per day.  
+   - Increase oral fluid intake; maintain adequate hydration.  
+   - Rest and avoid strenuous activity until symptoms improve.  
+   - Use a humidifier or warm saline gargles for throat discomfort as needed.  
+   - Monitor for worsening symptoms: fever > 39 °C, persistent dyspnea, chest pain, new wheezing, or production of purulent sputum.  
+   - If bacterial superinfection is suspected, the patient will be instructed to return for re‑evaluation and possible antibiotic therapy.  
+3. **Follow‑Up**  
+   - Telephone follow‑up in 48 hours to review COVID‑19 test result and symptom progression.  
+   - In‑person follow‑up or urgent care evaluation if respiratory status deteriorates or new concerning signs develop.  
+4. **Preventive Health**  
+   - Continue rosuvastatin as prescribed.  
+   - Reinforce lifestyle measures for pre‑diabetes: regular aerobic exercise (≥150 min/week), balanced diet with reduced simple sugars, weight monitoring.  
+   - Encourage annual influenza vaccination (already up to date).  
+5. **Patient Education**  
+   - Reviewed signs of COVID‑19, indications for emergency care (e.g., severe shortness of breath, chest pain, cyanosis).  
+   - Discussed the natural course of viral bronchitis and the limited role of antibiotics.  
+   - Provided written instructions on isolation, symptom monitoring, and when to seek urgent care.  
+
+The patient verbalized understanding of the plan, agreed to isolate pending test results, and expressed satisfaction with the information provided. No further questions were raised.

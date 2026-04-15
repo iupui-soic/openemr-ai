@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:33:19
+Time: 2.61s
+Tokens: 7,935 in / 1,427 out
+============================================================
+
+Patient Information  
+Agustin McGlynn, 58‑year‑old male, presented to the Emergency Department on 30 May 2024. He was admitted for evaluation of acute right upper quadrant abdominal pain.
+
+Chief Complaint  
+The patient reports sudden onset of sharp, localized pain in the right upper quadrant of the abdomen, rating the discomfort as 8 out of 10. The pain began approximately three days prior after a meal and has progressively worsened, becoming most intense about three to four hours before arrival. He has experienced accompanying nausea but denies vomiting, blood in vomitus, or changes in bowel or urinary habits. No skin changes or rashes were noted. He has not traveled recently and is not currently taking any prescription medications beyond over‑the‑counter antacids for heartburn. He drinks one to two glasses of wine nightly and reports no tobacco or recreational drug use.
+
+History of Present Illness  
+The pain started three days ago after lunch and has gradually intensified. The patient describes the pain as sharp and fixed in the right upper quadrant with no radiation. The pain has been progressively worse, with the most severe episode occurring three to four hours prior to arrival, rated at 8/10. The patient has tried ibuprofen and acetaminophen without relief. Nausea has been present for several days, but he has not vomited. There is no history of similar episodes requiring medical attention; he reports a prior episode a few years ago that resolved spontaneously.
+
+Review of Systems  
+Constitutional: Denies fever, chills, weight loss, or night sweats.  
+Respiratory: Denies cough, shortness of breath, or chest pain.  
+Cardiovascular: Denies palpitations, chest discomfort, or edema.  
+Gastrointestinal: Positive for right upper quadrant abdominal pain and nausea. Negative for vomiting, hematochezia, melena, diarrhea, constipation, or changes in stool color.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Skin and Mucous Membranes: No rashes, lesions, or changes.  
+Neurological: No headaches, dizziness, or focal deficits reported.  
+Psychiatric: No anxiety or depressive symptoms reported during interview.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a long history of chronic conditions, including cerebral palsy, intellectual disability, osteopenia, gastroesophageal reflux disease, chronic kidney disease stages 2–4 (most recent stage 4), type 2 diabetes mellitus, and a history of pneumonia. He is currently on immunosuppressive therapy following a kidney transplant in 2020, taking tacrolimus and glycopyrrolate. He also has a history of hypertension and chronic anemia. No prior surgeries except for deliveries of his children. The patient has a family history of gallstones in his mother and a paternal history of stroke in his 60s.
+
+Surgical History  
+No significant surgical history beyond obstetric deliveries.
+
+Social History  
+The patient is a consultant at a bank and lives with his partner and two children. He drinks 1–2 glasses of wine nightly and does not smoke or use recreational drugs. He reports no recent travel and no exposure to sick contacts. He is physically inactive and has not engaged in regular exercise.
+
+Family History  
+Mother with gallstones; father deceased from stroke in his 60s. No other notable familial conditions reported.
+
+Current Medications  
+Active medications include:
+- Tacrolimus 5 mg extended‑release oral capsule (daily)
+- Tacrolimus 1 mg extended‑release oral tablet (daily)
+- Glycopyrrolate 1.5 mg oral tablet (daily)
+
+Over‑the‑counter medications: occasional antacids for heartburn. No other prescription medications are currently taken.
+
+Objective Findings  
+Vital Signs – No current vital signs recorded in the transcript. The most recent available vital signs are from a 2014 encounter: heart rate 94 bpm, respiratory rate 13 breaths per minute. Temperature, blood pressure, oxygen saturation, and weight are not documented.  
+Physical Examination – Not documented in the transcript.  
+Laboratory Results – The following laboratory values were retrieved from the recent laboratory panel:
+- White blood cell count 7.58 × 10^3/µL
+- Hemoglobin 13.58 g/dL
+- Hematocrit 40.1%
+- Mean corpuscular volume 94.5 fL
+- Mean corpuscular hemoglobin 28.4 pg
+- Mean corpuscular hemoglobin concentration 34.2 g/dL
+- Red cell distribution width 39.9%
+- Platelets 351.7 × 10^3/µL
+- Platelet distribution width 155.4 fL
+- Albumin, liver function tests, and renal panel are not provided.  
+Imaging – No imaging studies have yet been performed.  
+
+Assessment  
+Primary diagnosis: Acute right upper quadrant abdominal pain, most consistent with biliary colic or cholelithiasis.  
+Secondary diagnoses: Chronic kidney disease stage 4, type 2 diabetes mellitus, gastroesophageal reflux disease, hypertension, ongoing immunosuppression post‑kidney transplant, chronic anemia, osteopenia, cerebral palsy, and intellectual disability.
+
+Plan  
+Investigations:
+- Obtain abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, or other biliary pathology.
+- Order a comprehensive metabolic panel, liver function tests (ALT, AST, ALP, bilirubin), serum amylase and lipase, and coagulation profile.
+- CBC with differential to monitor for infection or anemia.
+- Consider urine analysis to rule out urinary tract infection or hematuria.
+
+Medical Management:
+- Initiate intravenous hydration with normal saline.
+- Provide analgesia with intravenous acetaminophen or opioid as needed, considering renal function and immunosuppression.
+- Continue tacrolimus dosage with close monitoring of trough levels.
+- Encourage anti‑emetic therapy (e.g., ondansetron) if nausea persists.
+- Advise patient to remain nil per oral until abdominal pain improves or imaging is obtained.
+
+Disposition:
+- Admit to the medical floor for observation and further evaluation.
+- Monitor vital signs, pain level, and laboratory values.
+- Consult general surgery regarding possible cholecystectomy if imaging confirms gallstones and the patient remains symptomatic.
+
+Follow‑up:
+- Post‑discharge follow‑up with primary care and transplant service in 1–2 weeks or sooner if symptoms worsen.
+- Schedule a repeat abdominal ultrasound in 4–6 weeks if initial study is inconclusive.
+- Reinforce dietary modifications: low‑fat diet to reduce biliary colic risk.
+
+Discharge Instructions – No discharge instructions are available at this time as the patient is currently admitted.

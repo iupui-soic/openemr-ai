@@ -1,0 +1,119 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:51:21
+Time: 4.27s
+Tokens: 6,612 in / 1,682 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 24)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+Medical Record #: 123  
+
+Chief Complaint  
+Fever and cough of several days duration.  
+
+History of Present Illness  
+Ms. Stamm reports the onset of a dry, non‑productive cough approximately four days ago (Monday). She measured her temperature this morning at 38.5 °C, noting that she had felt “hot” throughout the week but had not taken a reading previously. She describes progressive worsening of both the cough and generalized fatigue over the past several days. She denies sore throat, dysphagia, loss of appetite (although she reports decreased intake), changes in taste or smell, nasal congestion beyond a mild rhinorrhea, wheezing, or chest pain. Shortness of breath is only noted after bouts of coughing. She reports mild chills at night but no night sweats. She denies hemoptysis, sputum production, or recent weight loss, although she estimates a slight weight decrease of a few pounds over the past week secondary to reduced eating. She has experienced intermittent nausea without vomiting and occasional tension‑type headaches described as a pressure or vice‑grip sensation, similar to prior episodes she manages with acetaminophen or ibuprofen. She denies any recent sick contacts; the only potential exposure she recalls is shopping at a mall last weekend where mask use was common. She has not traveled recently.  
+
+Review of Systems  
+Constitutional: Fever (38.5 °C), fatigue, chills, mild weight loss, tension‑type headaches, nausea without vomiting.  
+Respiratory: Dry cough, mild shortness of breath after coughing fits, no sputum, no wheezing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, no edema.  
+Gastrointestinal: Decreased appetite, occasional nausea, normal bowel movements, no abdominal pain, no vomiting.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency or appearance.  
+ENT: Mild rhinorrhea, no sore throat, no dysphagia, normal taste and smell.  
+Neurologic: No dizziness, syncope, confusion, or focal deficits.  
+Musculoskeletal: Mild body aches associated with fatigue.  
+Dermatologic: No rash; reports penicillin allergy manifesting as hives.  
+Psychiatric: No mood changes reported.  
+
+Allergies  
+Penicillin – Hives (type I hypersensitivity).  
+
+Past Medical History  
+- Childhood asthma (resolved as of January 2021)  
+- Perennial allergic rhinitis (resolved 2020)  
+- Mitral valve regurgitation (ongoing)  
+- Prior episode of acute bronchitis (2016‑2017)  
+- Gingivitis (multiple episodes 2016‑2020)  
+- Viral sinusitis (2019)  
+- Pre‑diabetes (A1c ~6.2 % six months ago)  
+- Hypercholesterolemia (on rosuvastatin)  
+- Victim of intimate partner abuse (ongoing)  
+
+Surgical History  
+- Inguinal hernia repair, approximately five years ago.  
+
+Social History  
+- Tobacco: None  
+- Alcohol: Occasional; 2–3 beers on weekends  
+- Recreational drugs: None (including marijuana)  
+- Living situation: Rents basement unit of a duplex; lives with girlfriend; no known mold or asbestos exposure in her unit.  
+- Occupation: Full‑time employment (as noted in prior records)  
+
+Family History  
+No known family history of lung, cardiac, or diabetic disease. Grandfather possibly had bladder cancer (uncertain).  
+
+Current Medications  
+- Rosuvastatin (dose not specified) – for hypercholesterolemia  
+- Multivitamin – over‑the‑counter  
+- Occasional acetaminophen or ibuprofen for tension headaches (patient‑reported)  
+
+Objective  
+
+Vital Signs (documented in prior visit)  
+- Heart Rate: 68 bpm  
+- Respiratory Rate: 14 breaths/min  
+- Temperature: Not recorded at visit (home measurement 38.5 °C)  
+- Blood Pressure: Not recorded  
+- SpO₂: Not recorded  
+- Height: 157.9 cm; BMI: 23.3  
+
+Physical Examination  
+No physical exam findings were documented during this encounter.  
+
+Laboratory Data (from most recent encounter on 10 February 2024)  
+Urinalysis:  
+- Protein 4.4 mg/dL, Glucose 12.6 mg/dL, Specific gravity 1.017, pH 5.2, RBCs 1.96 /HPF, WBCs 13.06 /HPF, epithelial cells present.  
+Blood count (partial):  
+- Platelet count 285 ×10³/µL, MCV 87.0 fL, MCHC 33.7 g/dL, MPV 12.1 fL.  
+Other panels (e.g., complete metabolic profile) were not provided.  
+
+Assessment  
+1. Acute bronchitis – likely viral etiology given dry cough, low‑grade fever, absence of sputum, and lack of focal pulmonary findings.  
+2. Rule‑out COVID‑19 infection – patient expresses concern; exposure risk is low but community transmission is possible.  
+3. Pre‑diabetes – A1c 6.2 % six months ago; lifestyle modifications ongoing.  
+4. Hypercholesterolemia – well‑controlled on rosuvastatin.  
+5. Mitral valve regurgitation – stable, no current cardiac symptoms.  
+
+Plan  
+
+Diagnostics  
+- Obtain a nasopharyngeal SARS‑CoV‑2 PCR swab today; results expected within 24 hours.  
+- If symptoms persist or worsen, consider chest radiography to evaluate for bacterial pneumonia.  
+
+Therapeutic  
+- Symptomatic treatment: Acetaminophen 650 mg PO q6‑8 h PRN for fever or headache, not to exceed 3 g/day.  
+- Encourage increased fluid intake, humidified air, and rest.  
+- No antibiotics prescribed at this time given high suspicion for viral process.  
+
+Isolation & Public Health  
+- Advise strict home isolation for 14 days from symptom onset, including separation from household members, especially the girlfriend.  
+- If SARS‑CoV‑2 test is positive, the clinic will notify public health authorities for contact tracing.  
+
+Follow‑up  
+- Telephone follow‑up in 48 hours to review COVID test result and clinical status.  
+- In‑person or telehealth visit in 7–10 days if symptoms have not improved or if new concerning features develop (e.g., high‑grade fever, worsening dyspnea, chest pain).  
+- Follow‑up with primary care provider in 3 months to reassess pre‑diabetes status and discuss further lifestyle or pharmacologic interventions.  
+
+Patient Education  
+- Reviewed the typical course of acute viral bronchitis and signs that would warrant earlier re‑evaluation (e.g., difficulty breathing, persistent high fever, productive cough with purulent sputum, hemoptysis).  
+- Discussed proper use of antipyretics, importance of hydration, and safe over‑the‑counter cough suppressants if needed.  
+- Reinforced hand hygiene, mask use when leaving home, and avoiding close contact with vulnerable individuals while symptomatic.  
+
+Disposition  
+Patient discharged home with above plan and instructions. No further inpatient care required at this time.

@@ -1,0 +1,119 @@
+Model: openai/gpt-oss-120b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 03:25:03
+Time: 5.18s
+Tokens: 12,221 in / 1,754 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti DOB: 03‑August‑1981 Age: 44 Sex: Male Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+Primary Care Provider: Not specified  
+Encounter Date: Not provided (telehealth visit)  
+
+Chief Complaint  
+Loss of smell (anosmia) and loss of taste for the past two days.  
+
+History of Present Illness  
+Aaron reports that for approximately the last 48 hours he has been unable to detect odors or taste foods. He describes the loss as complete; even a bite of an onion did not produce any flavor. He denies any associated nasal congestion, rhinorrhea, sore throat, or ear pain. He feels generally well apart from a mild sense of fatigue and a subjective feeling of being “a little dry.” He has not experienced cough, shortness of breath, chest pain, palpitations, fever, chills, night sweats, nausea, vomiting, diarrhea, constipation, urinary symptoms, or headache. He has not noted any recent exposure to individuals known to be ill; his boyfriend, with whom he lives, reports no symptoms. He has no recent travel or known COVID‑19 contacts. He is concerned that his anosmia may represent a COVID‑19 infection and seeks evaluation.
+
+Review of Systems  
+Constitutional: Mild fatigue; no fever, chills, night sweats, weight change.  
+HEENT: Anosmia and ageusia present; no sore throat, nasal discharge, congestion, eye or ear pain.  
+Respiratory: No cough, dyspnea, wheezing, or sputum production.  
+Cardiovascular: No chest pain, palpitations, or orthostatic symptoms.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Musculoskeletal: No myalgias or joint pain.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Dermatologic: Chronic eczema, no new rash.  
+Psychiatric: No reported anxiety or panic symptoms during this visit; however, prior PHQ‑9 score of 24 indicates severe depressive symptoms.  
+Allergies: Peanut allergy (known, carries epinephrine auto‑injector). No known medication allergies.  
+
+Past Medical History  
+- Essential hypertension (ongoing).  
+- Chronic migraines without aura (ongoing).  
+- End‑stage renal disease with successful renal transplant (post‑transplant status, on tacrolimus).  
+- Chronic eczema (active).  
+- Peanut allergy (anaphylaxis in childhood).  
+- History of viral sinusitis (multiple episodes, most recent 2021).  
+- Depression (PHQ‑9 score 24 on recent screen).  
+
+Surgical History  
+No surgeries reported.  
+
+Social History  
+Lives with boyfriend; no other household members. No tobacco use. Occasionally consumes marijuana edibles; does not smoke. Drinks alcohol socially, typically a couple of beers on weekends. Sexually active with boyfriend; no history of sexually transmitted infections. No illicit drug use. Employed part‑time (current employment status not further detailed).  
+
+Family History  
+Father: No known medical conditions.  
+Mother: No known medical conditions.  
+Siblings: No known medical conditions.  
+Extended family: Uncle with prostate cancer; otherwise negative for heart, lung, or other cancers.  
+
+Current Medications (home regimen)  
+- Tacrolimus 1 mg extended‑release oral tablet, daily (immunosuppression post‑transplant).  
+- Hydrochlorothiazide 25 mg oral tablet, daily (hypertension).  
+- Amlodipine 2.5 mg oral tablet, daily (hypertension).  
+- Intermittent topical steroid cream for eczema flares (frequency: several times per week during winter).  
+- Combined oral contraceptive pill, taken daily for the past three years.  
+
+Allergies  
+- Peanut – causes anaphylaxis; patient carries epinephrine auto‑injector and keeps it readily available.  
+
+Objective  
+
+Vital Signs  
+- Heart Rate: 85 beats/minute  
+- Respiratory Rate: 14 breaths/minute  
+- Height: 179.8 cm  
+- Weight: Not recorded (BMI calculated from prior data 28.83 kg/m²)  
+- Blood Pressure: Not recorded during this encounter  
+- Temperature: Not recorded (patient reports feeling “a little hot” but no measured fever)  
+- Oxygen Saturation: Not recorded  
+
+Physical Examination  
+No physical examination documented during this telehealth visit.  
+
+Laboratory Data (most recent)  
+- Complete blood count: Hemoglobin 16.4 g/dL, Hematocrit within normal range, WBC 3.5 × 10³/µL (slightly low), Platelets 209 × 10³/µL.  
+- Lipid panel: Total cholesterol 186.6 mg/dL, HDL‑C 62.3 mg/dL, LDL‑C 98.1 mg/dL, Triglycerides 130.7 mg/dL.  
+- Mental health screening: PHQ‑9 = 24 (severe depression), PHQ‑2 = 4, GAD‑7 = 3 (minimal anxiety).  
+
+Assessment  
+1. Acute loss of smell and taste (anosmia/ageusia) – most likely viral etiology, pending SARS‑CoV‑2 testing.  
+2. Essential hypertension, well‑controlled on hydrochlorothiazide and amlodipine.  
+3. Post‑renal transplant status on tacrolimus, with no current signs of rejection.  
+4. Chronic eczema, intermittent flares.  
+5. Peanut allergy with epinephrine auto‑injector in place.  
+6. Severe depressive symptoms (PHQ‑9 = 24); requires follow‑up.  
+
+Plan  
+
+Diagnostic  
+- Obtain a nasopharyngeal SARS‑CoV‑2 PCR test today; results expected within 48 hours.  
+- Consider rapid antigen testing if clinically indicated while awaiting PCR results.  
+
+Therapeutic  
+- No specific pharmacologic therapy for isolated anosmia/ageusia at this time.  
+- Continue current antihypertensive regimen (hydrochlorothiazide, amlodipine) and tacrolimus as prescribed.  
+- Continue topical steroid cream for eczema as needed; advise use of moisturizer to reduce skin dryness.  
+- Maintain use of oral contraceptive pill.  
+
+Patient Education & Self‑Care  
+- Advise strict self‑isolation for 14 days from symptom onset or until a negative COVID‑19 test and resolution of anosmia, whichever is longer.  
+- Monitor for development of fever, cough, shortness of breath, chest pain, new headache, or neurologic changes; seek urgent care if any develop.  
+- Encourage adequate hydration and a balanced diet despite loss of taste; consider using strong aromas (e.g., citrus, mint) to enhance flavor perception.  
+- Reinforce the importance of carrying the epinephrine auto‑injector at all times; review proper administration technique.  
+
+Mental Health  
+- Discuss the recent PHQ‑9 score indicating severe depression; arrange a follow‑up appointment with primary care or behavioral health within the next week.  
+- Offer resources for counseling and consider initiating an antidepressant if not already prescribed, after reviewing medication interactions with tacrolimus.  
+
+Follow‑Up  
+- Review SARS‑CoV‑2 test results within 48 hours; if positive, follow local public health guidelines for isolation and notify transplant team.  
+- Telephone or video follow‑up in 3 days to reassess anosmia, overall symptom progression, and mental health status.  
+- In-person visit with primary care physician in 1 week for comprehensive evaluation of hypertension, transplant medication levels, and depressive symptoms.  
+
+Disposition  
+Patient instructed to remain at home, self‑isolate, and monitor symptoms. No immediate emergency care required at this time.

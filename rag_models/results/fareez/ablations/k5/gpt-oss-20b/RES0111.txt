@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-20b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:36:20
+Time: 2.81s
+Tokens: 11,124 in / 1,263 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek (per EMR record)  
+Age: 16 years (10th‑grade high school student)  
+Gender: Male  
+Residence: Lives with parents and two siblings in the same household  
+Date of Visit: 2024‑07‑25  
+
+Chief Complaint  
+Patient presents with a sore throat that has persisted for four days, accompanied by an increasing sensation of fever.
+
+History of Present Illness  
+Aaron reports a progressively worsening sore throat over the past four days, describing it as painful when swallowing solid foods, though he notes he can still drink fluids with relative ease. He also reports feeling “really hot” and believes he is developing a fever, although he has not yet taken his temperature. He denies difficulty swallowing liquids, throat pain that leads to food sticking, or any chest pain. The pain does not radiate to the ears or cause facial swelling. There is no associated nasal congestion, runny nose, cough, shortness of breath, headache, dizziness, altered mental status, vision or hearing changes, or abdominal discomfort. Aaron denies fatigue, weight loss, nausea, vomiting, diarrhea, or constipation. He reports no chest pain or palpitations and denies any shortness of breath. He has been able to maintain his usual school attendance and does not report any bullying or mental health concerns.
+
+Review of Systems  
+- Constitutional: no reported weight loss, no fatigue, reports feeling “hot” but no documented fever.  
+- Respiratory: no cough, no nasal congestion, no shortness of breath, no chest pain.  
+- Cardiovascular: no palpitations, no chest discomfort.  
+- Gastrointestinal: no nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Neurologic: no dizziness, headaches, or confusion.  
+- Genitourinary: no urinary symptoms reported.  
+- Musculoskeletal: no joint or muscle pain.  
+- Skin: no rash or skin changes.  
+- Psychiatric: denies depression or anxiety.  
+
+Past Medical History  
+According to the patient, there are no known medical conditions or prior surgeries (aside from an appendectomy at age 13). He reports no chronic illnesses, allergies, or regular medications aside from daily multivitamins. EMR data indicate a history of hypertension, diabetes mellitus type 2, hyperlipidemia, chronic kidney disease stage 1, and other comorbidities; however, given the conflict with the patient’s current self‑report and the instruction to trust the transcript for current status, these conditions are considered not active or present in the current clinical context.
+
+Surgical History  
+Appendectomy at age 13. No other surgical procedures reported.
+
+Social History  
+- Living Situation: Resides with parents and siblings.  
+- Substance Use: Denies alcohol, tobacco, or recreational drug use.  
+- Sexual Activity: Currently not sexually active and does not anticipate becoming active before completing high school.  
+- Education: Enrolled in 10th grade; attends a blend of in‑person and virtual classes.  
+- Protective Measures: Wears a mask at school when required, follows social distancing guidelines; reports occasional removal of mask for hydration.  
+- Other: No history of bullying, no psychiatric medication, no significant stressors reported.  
+
+Family History  
+The patient reports no known family history of chronic diseases, including cardiovascular, metabolic, or autoimmune conditions. He did not provide specific names or diagnoses; EMR lists no family history for the patient.  
+
+Medications  
+- Multivitamin (daily).  
+No other prescribed or over‑the‑counter medications reported at this time.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Physical Examination  
+Vital signs are pending; the patient has not yet had temperature or other vitals taken during the encounter. On inspection, the oropharynx appears markedly erythematous and swollen, with prominent tonsillar exudate noted. No lymphadenopathy was described during the history. No other significant findings were noted during the brief exam.
+
+Laboratory/Diagnostic Studies  
+No laboratory or imaging studies have been performed at this visit. The plan includes a rapid strep test and a COVID‑19 swab to rule out streptococcal pharyngitis and SARS‑CoV‑2 infection, respectively.
+
+Assessment  
+1. Acute viral or bacterial pharyngitis (likely viral given absence of fever measurement and other bacterial signs)  
+2. COVID‑19 infection (possible, pending test results)  
+
+Plan  
+- Order rapid antigen test for Group A Streptococcus (RAPD) and SARS‑CoV‑2 nasopharyngeal swab.  
+- Instruct patient to monitor temperature and use an oral thermometer; repeat measurement if fever >38 °C.  
+- Advise symptomatic relief: acetaminophen 650 mg orally every 4–6 hours as needed for pain and fever (if confirmed).  
+- Encourage oral hydration, soft diet, and use of throat lozenges or saline gargles.  
+- Recommend home isolation for 14 days pending COVID‑19 test results; if rapid strep positive, initiate a 10‑day course of amoxicillin 500 mg orally twice daily.  
+- Provide education regarding signs of worsening condition: escalating pain, difficulty breathing, high fever >39 °C, or inability to swallow fluids.  
+- Encourage completion of recommended influenza vaccination and HPV vaccination as soon as possible.  
+- Schedule follow‑up in 48–72 hours if symptoms worsen or if rapid strep/COVID‑19 tests return positive.  
+
+Follow‑up  
+Patient advised to return to the clinic or urgent care if any of the following occur: development of severe shortness of breath, persistent high fever, inability to take fluids, or other concerning symptoms. Telehealth check‑in to be arranged within 48 hours if rapid strep test is negative and patient’s symptoms persist.  
+
+This summary reflects the current patient encounter and is consistent with the information obtained during the visit.

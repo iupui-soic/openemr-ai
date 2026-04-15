@@ -1,0 +1,140 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 04:29:37
+Time: 3.42s
+Tokens: 8,944 in / 1,766 out
+============================================================
+
+**Patient Information**  
+Name: Adan Crona  
+DOB: 1943‑04‑07 (Note: The clinical encounter occurred with a 45‑year‑old male; demographic details are based on the EHR record for continuity of care.)  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, MA 02451  
+
+---
+
+**S – Subjective**  
+
+**Chief Complaint**  
+“Rash on my right leg that’s been getting bigger, red, swollen, and it’s been hurting.”  
+
+**History of Present Illness**  
+The patient reports a new, erythematous, swollen lesion on the right lower leg that has progressed over the past week. Pain began yesterday, is more pronounced with movement and weight‑bearing, and the patient notes a “white fluid” leaking from an area that was previously a scab, now an open wound. He describes the area as “hot” to the touch, but he has not taken his temperature. The lesion has become larger and more inflamed, with surrounding redness extending to the ankle region. He has a history of diabetes mellitus type II with poor glycemic control (last A1C ~9 % and intermittent self‑monitoring). He admits to scratching the area and that he is not diligent with foot care. No previous similar lesions have been noted. He denies fever, chills, shortness of breath, chest pain, or other systemic symptoms, though he reports a general feeling of fatigue, increased hunger, and recent weight gain.  
+
+**Review of Systems**  
+
+* Constitutional: Positive – feeling “hot”, mild fatigue, increased hunger, weight gain; Negative – no fever, no chills, no night sweats.  
+* Skin: Rash on right lower leg as described. No other rashes or lesions.  
+* Cardiovascular: No chest pain, palpitations.  
+* Respiratory: No cough, wheeze, or dyspnea.  
+* Gastrointestinal: No abdominal pain, nausea, vomiting.  
+* Neurologic: Reports mild numbness in feet with decreased sensation compared to prior years.  
+
+**Past Medical History**  
+- Type II diabetes mellitus, poorly controlled  
+- Chronic kidney disease (stage 2–3, based on prior creatinine)  
+- Hypertension  
+- Hyperlipidemia  
+- Peripheral neuropathy (history of decreased foot sensation)  
+- Chronic foot ulcer on left heel (stable)  
+- Chronic sinusitis (surgical intervention in adolescence)  
+
+**Surgical History**  
+- Sinus surgery during teenage years; no other surgeries.  
+
+**Medications (Home)**  
+- Metformin (dose unknown)  
+- Rosuvastatin (10 mg daily)  
+- Two additional oral antidiabetic agents (exact names not recalled; patient will provide a medication list)  
+- No insulin use.  
+
+**Allergies**  
+- Penicillin (caused facial swelling and respiratory difficulty as a child).  
+
+**Social History**  
+- Unemployed, previously accountant; currently looking for work.  
+- Lives alone; visits children bi‑weekly.  
+- Tobacco use: 2 packs/week intermittently (primarily during stress).  
+- Alcohol: 2–4 drinks per day on weekends (approximately 3–4 drinks per week).  
+- No recreational drug use.  
+
+**Family History**  
+- Maternal side: high prevalence of diabetes mellitus, hypertension, hyperlipidemia.  
+- Paternal side: relatively healthy.  
+- One aunt with lung cancer (heavy smoker).  
+
+---
+
+**O – Objective**  
+
+*Vital Signs* (not recorded during this visit) – patient denies fever; temperature not measured.  
+*Physical Examination*  
+- **Right lower extremity:**  
+  - Erythema, warmth, edema of the medial shin and ankle.  
+  - A 2‑3 cm open wound with pale to yellow-white discharge and surrounding crusting.  
+  - Tenderness to palpation, increased pain on dorsiflexion and weight‑bearing.  
+  - No sign of purulent drainage beyond the described white exudate.  
+  - No visible lymphangitic streaks.  
+- **Left lower extremity:**  
+  - Chronic heel ulcer present but stable, no signs of acute infection.  
+- **Neurologic:**  
+  - Decreased light touch sensation in the feet; no motor deficits.  
+
+*Laboratory Data* (from prior EHR record, not current)  
+- Serum creatinine: 2.98 mg/dL (CKD stage 2–3).  
+- HbA1c: Not available (patient reports last test ~9 %).  
+- Basic metabolic panel: Na 139 mmol/L, K 4.5 mmol/L, BUN 13.7 mg/dL, eGFR ≈ 79 mL/min.  
+- Lipid profile: Total cholesterol 176 mg/dL, LDL 120 mg/dL, HDL 32 mg/dL, triglycerides 177 mg/dL.  
+
+*Imaging* – none performed at this time; evaluation is clinical.  
+
+---
+
+**A – Assessment**  
+
+1. **Cellulitis, right lower leg** – acute inflammatory infection of skin and subcutaneous tissues.  
+2. **Type II diabetes mellitus** – poorly controlled (last A1C ~9 %); contributes to susceptibility to infection and impaired wound healing.  
+3. **Chronic kidney disease (stage 2–3)** – may complicate antibiotic selection and dosing.  
+4. **Peripheral neuropathy** – may mask early signs of infection; requires diligent foot care.  
+5. **Smoking and alcohol use** – exacerbate vascular insufficiency and infection risk.  
+
+*Differential diagnoses*  
+- Venous stasis dermatitis  
+- Deep venous thrombosis (unlikely given lack of calf pain, swelling confined to superficial tissues)  
+- Necrotizing fasciitis (low suspicion; no severe pain out of proportion, systemic toxicity)  
+
+---
+
+**P – Plan**  
+
+*Therapeutics*  
+- **Antibiotics:**  
+  - Cephalexin 500 mg PO q6h for 7 days (adjust for CKD; consider dose reduction if eGFR < 45 mL/min).  
+  - Alternatively, clindamycin 300 mg PO q6h for 7 days if beta‑lactam allergy or to cover anaerobes.  
+- **Pain Management:** Acetaminophen 500 mg PO q6h PRN.  
+- **Topical Care:** Clean wound with saline; apply non‑adherent dressing; instruct to keep leg elevated.  
+
+*Monitoring*  
+- **Vitals:** Check temperature and vital signs at each visit.  
+- **Laboratory:** Order CBC with differential, CMP, and serum creatinine on day of visit.  
+- **Glucose Control:** Provide glucometer; instruct to test fasting and post‑prandial glucose daily.  
+- **Follow‑up:**  
+  - Re‑evaluate in 48–72 hours to assess response to antibiotics and wound progression.  
+  - PCP appointment within 7 days for diabetes management and CKD review.  
+
+*Education*  
+- Importance of strict glycemic control.  
+- Foot care: daily inspection, proper hygiene, avoid scratching, use moisturizers.  
+- Smoking cessation resources (counseling, nicotine replacement).  
+- Alcohol moderation; limit to no more than 2 drinks/day.  
+- Recognize red flags: increasing redness, swelling, fever, chills, systemic symptoms – call provider immediately.  
+
+*Other*  
+- Tetanus booster if last dose > 5 years.  
+- Consider referral to podiatry for chronic foot ulcer care.  
+- Counsel on safe wound handling; advise not to share personal hygiene items.  
+
+**Disposition** – The patient will receive oral antibiotics and wound care instructions, with follow‑up within 48–72 hours. He is advised to contact the clinic promptly if symptoms worsen or new systemic signs develop.  
+
+---

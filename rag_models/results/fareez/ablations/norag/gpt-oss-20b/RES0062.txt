@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:16:38
+Time: 2.94s
+Tokens: 14,238 in / 1,316 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: March 25, 1917 (age 103 years)  
+Sex: Male  
+Address: 982 Jenkins Drive, Apt 39, East Longmeadow, Massachusetts 00000  
+Living Situation: Resident of a house with his wife; no known environmental hazards such as mold or asbestos.
+
+Chief Complaint  
+The patient presents with a 3‑day history of productive cough and a recent onset of shortness of breath that has been interfering with his sleep.
+
+History of Present Illness  
+Mr. Cummerata reports that a cough began approximately three days ago. The cough is described as hacking and productive of yellowish‑green sputum, roughly the size of a thumb tip per cough, without blood or frothy purulent material. On the first day after the cough onset, he experienced a sudden shortness of breath that has persisted since then. He rates the severity of the dyspnea as 7 out of 10. The shortness of breath is not worsened by exertion or positional changes and is accompanied by fatigue, generalized weakness, and mild abdominal discomfort. He has not experienced chest pain, palpitations, dizziness, fainting, confusion, or memory loss. No nasal congestion, runny nose, sore throat, loss of taste, or visual/hearing changes have been reported. He notes a reduced sense of smell, having been unable to detect a candle scent earlier that day. He denies fever, chills, night sweats, weight loss, altered bowel movements, or urinary symptoms. He reports that his symptoms began after a visit to his mother at a long‑term care facility one week ago, where a COVID‑19 outbreak has been noted.
+
+Past Medical History  
+- Atrial fibrillation diagnosed approximately four years ago; currently treated with metoprolol.  
+- Statin therapy for dyslipidemia.  
+- Low‑dose aspirin (baby aspirin) for cardiovascular prophylaxis.  
+- Chronic kidney disease (stage 4 per prior records).  
+- History of hypertension, osteoarthritis, and chronic heart conditions.  
+- No known history of asthma or chronic obstructive pulmonary disease.
+
+Medications  
+- Metoprolol (dose not specified).  
+- Statin (generic unspecified).  
+- Aspirin (baby aspirin).  
+- CBD edible preparations, low dose (≈2.5 mg), used for sleep.
+
+Allergies  
+- Sulfa drug allergy – rash reaction.
+
+Social History  
+- Former smoker: one pack per day for many years, quit approximately five years ago.  
+- No alcohol use currently; previously drank but stopped years ago.  
+- No recreational drug use other than occasional CBD edibles.  
+- Lives with wife, no significant exposure to environmental allergens.  
+- No recent travel.
+
+Review of Systems (selected items from interview)  
+General: Fatigue, weakness, mild abdominal ache.  
+Respiratory: Productive cough with yellowish‑green sputum, shortness of breath, occasional wheezing with severe dyspnea, decreased sense of smell.  
+Cardiovascular: No chest pain, no palpitations, stable atrial fibrillation on medication.  
+Neurologic: No dizziness, fainting, or memory changes.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Skin: No rash, no recent dermatologic changes.
+
+Physical Examination  
+No examination findings are available from the current encounter.
+
+Laboratory Data  
+No laboratory studies were documented during this visit. (No information available.)
+
+Imaging  
+No imaging studies were discussed or documented in this encounter.
+
+Assessment  
+The presentation is most consistent with an acute viral upper respiratory tract infection, with a potential for COVID‑19 given the epidemiologic context and overlap of symptoms. The presence of productive yellowish‑green sputum, shortness of breath, and recent contact with a long‑term care facility raises the possibility of bacterial pneumonia. The differential also includes exacerbation of chronic heart failure, but the patient reports no chest pain or orthopnea, and there is no documented evidence of fluid overload. The patient’s advanced age and comorbidities (atrial fibrillation, chronic kidney disease stage 4) increase his vulnerability to severe respiratory infections.
+
+Plan  
+1. Diagnostic Testing  
+   - Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing and submit for rapid results.  
+   - Consider chest radiography if clinical status worsens or if there is suspicion of bacterial pneumonia.
+
+2. Infection Control  
+   - Advise the patient to self‑isolate at home for 14 days or until all symptoms resolve, whichever occurs last, and to notify public health authorities if the test returns positive.  
+   - Counsel the wife and household contacts to practice mask wearing and hand hygiene.
+
+3. Symptom Management  
+   - Continue metoprolol, statin, and aspirin as prescribed.  
+   - Encourage adequate hydration and rest.  
+   - Provide acetaminophen 500 mg as needed for fever or discomfort.  
+   - Discuss sleep‑aid alternatives, such as melatonin or non‑pharmacologic strategies, to reduce reliance on CBD edibles.
+
+4. Monitoring  
+   - Schedule a telehealth or in‑person follow‑up in 48 hours to review PCR result and symptom progression.  
+   - If symptoms worsen (increasing dyspnea, new chest pain, hypoxia, or fever), advise immediate evaluation at the nearest emergency department.
+
+5. Medication Review  
+   - Review current medication list for potential interactions with any new treatment (e.g., antibiotics).  
+   - Re‑evaluate renal function if antibiotics are initiated, given chronic kidney disease.
+
+6. Education  
+   - Reinforce the importance of completing the isolation period even after symptom resolution.  
+   - Educate on early signs of deterioration (e.g., increasing shortness of breath, cyanosis, confusion) and when to seek emergency care.  
+
+Disposition  
+Patient is scheduled for COVID‑19 testing and advised to self‑isolate. Follow‑up will occur within 48 hours to discuss test results and further management. No immediate emergency interventions are required at this time.

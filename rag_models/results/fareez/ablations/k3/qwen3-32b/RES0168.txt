@@ -1,0 +1,61 @@
+Model: qwen/qwen3-32b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 03:41:41
+Time: 4.96s
+Tokens: 12,191 in / 1,189 out
+============================================================
+
+Patient Information:  
+The patient is a 40-year-old male, Aaron Bartoletti, residing in Spencer, Massachusetts. He presents with a chief complaint of sinus symptoms consistent with acute bacterial rhinosinusitis. He is married with a teenage son and works from home. He has a history of anterior cruciate ligament (ACL) repair surgery and has previously been treated for sinus infections. The patient denies any known allergies except for mild sensitivity to cats. He consumes alcohol occasionally, approximately five to six beers per weekend, and uses cannabis capsules once monthly for recreational and knee pain relief. He does not smoke tobacco or use other recreational drugs. The patient lives in a new home with a labradoodle dog and no known environmental irritants.
+
+Chief Complaint:  
+The patient reports symptoms consistent with acute bacterial rhinosinusitis, including nasal congestion, greenish mucus discharge, facial pressure and pain, headache, and mild fever. He has been self-treating with saline nasal rinses and nasal decongestants for several weeks without significant improvement. He notes that the symptoms have persisted for more than a week and are now affecting his quality of life.
+
+History of Present Illness:  
+The patient has a history of recurrent sinus infections and has previously used saline rinses and nasal steroids with some success. Currently, he is experiencing persistent nasal congestion, purulent green discharge, frontal headache, and facial pressure. He also reports a low-grade fever (99.7°F) and postnasal drip with a stinging sensation in the throat. The patient denies cough, wheezing, shortness of breath, chest pain, or loss of taste or smell. He has no recent travel, sick contacts, or exposure to sick individuals. The symptoms have been present for several weeks and are not improving with conservative measures.
+
+Review of Systems:  
+Constitutional: Low-grade fever reported.  
+Respiratory: No cough or wheezing.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Normal bowel movements.  
+Genitourinary: No changes in urination.  
+Neurological: No dizziness or fainting.  
+Musculoskeletal: History of ACL injury and repair surgery.  
+Integumentary: No rash or skin changes.  
+Psychiatric: No depression or anxiety symptoms reported.  
+Endocrine: No weight loss or changes in appetite.  
+Hematologic: No bleeding or bruising.  
+Immunologic: No recent infections or immune symptoms.  
+Other: No changes in vision or hearing.
+
+Allergies:  
+The patient reports a mild allergy to cats and no other known drug or food allergies.
+
+Past Medical History:  
+The patient has a significant past medical history including essential hypertension, chronic kidney disease (now post-renal transplant), chronic pain, chronic intractable migraine, and a history of substance use disorder. He has undergone ACL repair surgery and has a history of sinus infections. He also has a history of dental issues including impacted molars, gingivitis, and tooth infections. The patient has a history of drug overdose and reports a criminal record. He has experienced episodes of stress and social isolation, and has a history of intimate partner abuse. The patient has a history of full-time and part-time employment, with periods of unemployment.
+
+Social History:  
+The patient lives with his wife and teenage son. He works from home and occasionally consumes alcohol (five to six beers per weekend). He uses cannabis capsules once monthly for knee pain relief. He does not smoke tobacco or use other recreational drugs. He lives in a new home with a labradoodle dog and no known environmental irritants. He reports limited social contact and has a history of social isolation.
+
+Family History:  
+No significant family history of lung or heart conditions is reported.
+
+Current Medications:  
+The patient is not currently on any prescribed medications. He uses over-the-counter ibuprofen occasionally for knee pain and has previously used nasal steroids and saline rinses for sinus symptoms. He has no active prescriptions in the OpenEMR record, though historical medications include antihypertensives, immunosuppressants, and diuretics.
+
+Objective:  
+Vital signs were not recorded during this visit. Physical examination was not detailed in the transcript, but the patient reported symptoms consistent with acute bacterial rhinosinusitis. The patient’s BMI is 28.83, indicating overweight status. No acute distress was noted during the visit.
+
+Labs:  
+No laboratory results were available at the time of the visit. The provider ordered a rapid antigen test for SARS-CoV-2 to rule out concurrent infection with COVID-19.
+
+Imaging:  
+No imaging studies were performed during this visit.
+
+Assessment:  
+The patient is being assessed for acute bacterial rhinosinusitis. The symptoms include nasal congestion, purulent discharge, facial pressure and pain, headache, and mild fever. The duration of symptoms exceeds one week, and conservative measures have not provided relief. The patient has a history of recurrent sinus infections and is currently experiencing a flare-up. No other acute or chronic conditions were noted to be contributing to the current presentation.
+
+Plan:  
+The patient was prescribed a course of amoxicillin-clavulanate for 5 to 7 days to treat the suspected bacterial component of the sinus infection. In addition, an inhaled corticosteroid was prescribed to help reduce nasal inflammation. The patient was advised to continue saline nasal rinses and to monitor for improvement in symptoms. A follow-up appointment was scheduled for one week to reassess symptoms and determine the need for further intervention. A rapid antigen test for SARS-CoV-2 was ordered to rule out concurrent infection. The patient was instructed to return for further evaluation if symptoms worsen or do not improve after the prescribed treatment. No additional imaging or laboratory tests were ordered at this time.

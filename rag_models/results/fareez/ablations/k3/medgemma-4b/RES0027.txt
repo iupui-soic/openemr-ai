@@ -1,0 +1,59 @@
+Model: google/medgemma-4b-it
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:03:06
+Time: 67.40s
+Tokens: 6,854 in / 1,115 out
+Cell: k3
+============================================================
+
+Patient Information:
+
+Name: Abbey Eliza Schmitt
+DOB: 1965-09-27
+Sex: Female
+Unit Number: 103
+
+Chief Complaint: Cough
+
+History of Present Illness:
+
+The patient presents with a three-day history of cough, which is interfering with her sleep. She reports that the cough is dry and has been progressively worsening, now accompanied by a feeling of being hot, possibly with a fever. She denies any associated triggers, such as cold air, smoke, or dust. She has tried over-the-counter cough syrup without relief. The cough is constant throughout the day. She denies any blood-tinged sputum. She has not taken her temperature. She also reports fatigue. She denies headaches, eye/ear discharge, or pain. She denies a runny nose. She denies recent cold-like symptoms. She denies sore throat. Her appetite is OK, but she finds it difficult to eat due to the cough. She denies swallowing difficulties. She denies weight loss. She reports chills last night and feeling hot today. She denies chest pain, shortness of breath, or wheezing. She denies palpitations or syncope. She denies dizziness. She denies loss of taste or smell. She denies diarrhea or nausea/vomiting. She denies muscle aches. She has hypothyroidism, managed with Synthroid, and last TSH check was six months ago, with normal results. She takes a multi-vitamin daily. She had her appendix removed as a teenager and denies complications. She lives with her husband and two teenagers. Her husband has been throwing up for the past two days and feels hot. She has not had her husband assessed by a physician. She works from home and denies any recent exposures to sick individuals. She denies smoking or recreational drug use. Her sister has a heart condition. Her parents are deceased.
+
+Physical Exam:
+
+No information available.
+
+Labs:
+
+*   Total score [AUDIT-C] (LOINC: 75626-2): 2 {score} (Range: )
+*   Protein [Mass/volume] in Urine by Test strip (LOINC: 5804-0): 234.99537993129246 mg/dL (Range: )
+*   Sodium [Moles/volume] in Serum or Plasma (LOINC: 2951-2): 139.9 mmol/L (Range: )
+*   Specific gravity of Urine by Test strip (LOINC: 5811-5): 1.011869488516899 {nominal} (Range: )
+*   Creatinine [Mass/volume] in Serum or Plasma (LOINC: 2160-0): 1.9888666057395625 mg/dL (Range: )
+*   Ketones [Mass/volume] in Urine by Test strip (LOINC: 5797-6): 2.293702311363286 mg/dL (Range: )
+*   Glucose [Mass/volume] in Serum or Plasma (LOINC: 2345-7): 67.3 mg/dL (Range: )
+*   Bilirubin.total [Mass/volume] in Urine by Test strip (LOINC: 20505-4): 1.340788290796721 mg/dL (Range: )
+*   Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ] (LOINC: 70274-6): 3 {score} (Range: )
+*   Glucose [Mass/volume] in Urine by Test strip (LOINC: 5792-7): 2.013697756879104 mg/dL (Range: )
+*   Low Density Lipoprotein Cholesterol (LOINC: 18262-6): 101.51 mg/dL (Range: )
+*   Clarity of Urine (LOINC: 32167-9): {entry.value} UNK (Range: )
+*   Cholesterol [Mass/volume] in Serum or Plasma (LOINC: 2093-3): 175.76 mg/dL (Range: )
+*   Appearance of Urine (LOINC: 5767-9): {entry.value} UNK (Range: )
+*   Hemoglobin [Presence] in Urine by Test strip (LOINC: 5794-3): {entry.value} UNK (Range: )
+*   Carbon dioxide, total [Moles/volume] in Serum or Plasma (LOINC: 2028-9): 20.98 mmol/L (Range: )
+*   Protein [Presence] in Urine by Test strip (LOINC: 20454-5): {entry.value} UNK (Range: )
+*   Potassium [Moles/volume] in Serum or Plasma (LOINC: 2823-3): 4.41 mmol/L (Range: )
+*   pH of Urine by Test strip (LOINC: 5803-2): 5.656779544653906 pH (Range: )
+
+Assessment:
+
+The patient presents with a three-day history of cough, possibly associated with a viral illness or bacterial infection. The patient's husband is also ill.
+
+Plan:
+
+Order PCR nasal swab for COVID-19 testing. Order chest X-ray.
+
+Discharge Instructions:
+
+Follow up with primary care physician as needed.

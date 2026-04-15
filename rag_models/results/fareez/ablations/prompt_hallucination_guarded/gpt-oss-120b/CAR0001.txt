@@ -1,0 +1,81 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:27:09
+Time: 3.17s
+Tokens: 9,668 in / 1,057 out
+============================================================
+
+Patient Information  
+Name: (not provided)  
+Age: 39 years  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with acute left‑sided chest pain that began last night and has been present for approximately 8 hours.
+
+History of Present Illness  
+The patient reports a sharp, constant chest pain localized to the left side of the chest. The pain began spontaneously last night while he was moving furniture; he does not recall any specific injury. He rates the pain as 7–8/10 in intensity. Lying down worsens the discomfort, while resting in a supine position provides some relief. Deep breathing appears to aggravate the pain slightly. The pain has not radiated to other areas. He denies any recent immobilization, trauma, or vigorous exertion preceding the onset.  
+
+Associated symptoms include mild light‑headedness, shortness of breath, and a sensation of a racing heart. He denies loss of consciousness, nausea, vomiting, fever, chills, cough, wheezing, sputum production, abdominal pain, urinary or bowel complaints, and any recent infections. He has not noticed any swelling, redness, or bruising of the chest or neck, although he mentions mild neck swelling without pain. He has never experienced similar chest pain in the past.
+
+Review of Systems  
+- Constitutional: No fever, chills, or recent weight change.  
+- Cardiovascular: Chest pain (sharp, left‑sided, constant, 7–8/10), light‑headedness, palpitations. No known prior cardiac disease. No reported syncope.  
+- Respiratory: Shortness of breath, mild dyspnea on exertion of the pain; no cough, wheeze, or hemoptysis.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+- Neurologic: No headache, visual changes, or focal deficits.  
+- Musculoskeletal: No recent trauma, no joint pain.  
+- Dermatologic: No rash; mild neck swelling noted but no pain.  
+- Psychiatric: No anxiety or panic reported beyond the current discomfort.  
+
+Past Medical History  
+The patient reports no known chronic medical conditions. He denies prior hospitalizations, surgeries, or previous cardiac events.
+
+Surgical History  
+No prior surgeries.
+
+Medications  
+The patient reports that he is not taking any prescription or over‑the‑counter medications regularly.
+
+Allergies  
+No known drug allergies.
+
+Social History  
+- Tobacco: Smokes approximately one pack of cigarettes per day; duration 10–15 years.  
+- Alcohol: Consumes roughly one to two drinks per day (≈10 drinks per week).  
+- Cannabis: Uses occasionally, estimating about 5 mg per week.  
+- Illicit drugs: Denies use of cocaine, methamphetamine, heroin, or other recreational substances. No history of intravenous drug use.  
+- Occupation: Accountant, lives alone in an apartment.  
+- Exercise: Attempts to run for about 30 minutes every other day.  
+- Diet: Tries to eat a healthy dinner; lunches are frequently obtained from restaurants.  
+
+Family History  
+- Father had a myocardial infarction at age 45 and a history of hypercholesterolemia.  
+- No known family history of stroke, cancer, or other cardiovascular disease beyond the father’s events.
+
+Physical Examination  
+Not assessed during this encounter.
+
+Vital Signs  
+Not assessed during this encounter.
+
+Laboratory Data  
+No laboratory results were obtained or reviewed during this encounter.
+
+Assessment  
+1. Acute left‑sided chest pain, sharp, constant, associated with dyspnea, light‑headedness, and palpitations.  
+   – Differential includes acute coronary syndrome (especially given strong family history of premature myocardial infarction and personal smoking history), pericarditis, pneumothorax, pleuritic process, musculoskeletal strain, and less likely anxiety‑related chest pain.  
+2. Tobacco use disorder.  
+3. Alcohol use (moderate).  
+
+Plan  
+- Immediate emergency department evaluation is recommended given the possibility of a cardiac etiology. Arrange for rapid transport or advise the patient to go to the nearest emergency department.  
+- In the emergency setting: obtain a 12‑lead electrocardiogram, cardiac biomarkers (troponin), chest radiograph, and basic metabolic panel.  
+- Monitor cardiac rhythm and oxygen saturation; provide supplemental oxygen if hypoxic.  
+- Consider analgesia as needed while avoiding masking of cardiac symptoms.  
+- Initiate standard acute coronary syndrome protocol if indicated (aspirin, nitroglycerin, oxygen, morphine) per emergency department guidelines.  
+- Counsel patient on smoking cessation; provide resources and referral to cessation program after acute issue is addressed.  
+- Follow‑up with primary care within 1–2 weeks after emergency evaluation to review results, discuss risk factor modification, and coordinate ongoing care.  
+
+Patient was advised of the seriousness of his symptoms and the need for prompt medical attention. He verbalized understanding and agreed with the plan. No further questions were raised.

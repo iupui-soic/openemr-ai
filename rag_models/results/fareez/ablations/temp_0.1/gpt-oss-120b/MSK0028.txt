@@ -1,0 +1,99 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:05:55
+Time: 6.49s
+Tokens: 9,996 in / 1,968 out
+============================================================
+
+Patient Information  
+Abdul Gorczany, male, born 09 March 1971. Current address: 404 Effertz Crossroad, Springfield, Massachusetts 01020. He is employed as an accountant and works from home. He lives with his wife and daughter in a condominium.  
+
+Chief Complaint  
+Sudden onset of sharp, stabbing pain in the right shoulder and anterior right elbow that began yesterday after a weight‑training session.  
+
+History of Present Illness  
+The patient reports that while using a biceps‑focused weight‑training machine (no free weights or curls) he felt a sudden, sharp pain in the right shoulder and anterior elbow. He is uncertain whether an audible “pop” occurred. The pain began within approximately 30 minutes of the activity and has persisted without significant improvement. He describes the pain as a constant, stabbing sensation rated 8–9/10. Over the past several hours he has noted swelling, bruising‑appearing discoloration, and a palpable “mass” in the mid‑upper arm that makes the biceps appear enlarged. Elbow flexion is markedly limited and painful; supination is also reduced. Shoulder elevation in the plane of forward flexion is possible but produces discomfort. He has attempted self‑care with rest, ice, and over‑the‑counter ibuprofen (Advil) without relief. He denies any fever, chills, weight loss, appetite changes, headache, visual or auditory changes, respiratory symptoms, chest pain, palpitations, dizziness, gastrointestinal upset, urinary symptoms, skin rash, or neurologic deficits such as numbness or tingling. He reports mild weakness limited to the affected arm, specifically an inability to fully flex the elbow or supinate the forearm.  
+
+Review of Systems  
+Constitutional: No fever, chills, recent weight loss, or appetite changes.  
+Eyes/Ears/Nose/Throat: No visual, auditory, olfactory, or gustatory changes; no sore throat, nasal congestion, or cough.  
+Respiratory: No shortness of breath, wheezing, or cough.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Musculoskeletal: Acute sharp pain localized to the right anterior shoulder and elbow with swelling, bruising, and a palpable mass; limited elbow flexion and supination; mild shoulder discomfort with movement; no pain in other joints.  
+Neurologic: No headache, dizziness, syncope, or focal neurologic deficits; no numbness or tingling.  
+Skin: Localized redness and bruising over the right upper arm; no rash elsewhere.  
+Psychiatric: No new anxiety or depression symptoms reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Major depressive disorder  
+- Alcohol use disorder (historical)  
+- Type 2 diabetes mellitus with diabetic kidney disease (microalbuminuria, proteinuria)  
+- Chronic kidney disease, stage 4 (most recent creatinine 2.86 mg/dL, eGFR ≈85 mL/min/1.73 m²)  
+- Hyperlipidemia  
+- Anemia (unspecified type)  
+- Awaiting kidney transplantation  
+- Prior right shoulder discomfort several years ago, managed with physiotherapy (no imaging performed)  
+- Prior knee injury with patellar tendon rupture (2022)  
+
+Surgical History  
+- Tonsillectomy performed in childhood.  
+
+Social History  
+The patient does not currently smoke cigarettes and has only experimented with smoking in high school and university. He does not use cannabis or other recreational drugs. He reports occasional alcohol consumption in the past but does not describe current use. He engages in weight‑training intermittently, having resumed regular activity this year after a hiatus.  
+
+Family History  
+No known family history of musculoskeletal, autoimmune, or chronic systemic diseases reported.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Current Medications (home)  
+- Lisinopril 10 mg PO daily  
+- Hydrochlorothiazide 25 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Simvastatin 10 mg PO nightly  
+- Vitamin B12 5 mg/ML injectable (as needed)  
+
+Vital Signs (most recent)  
+Height: 180 cm; BMI: 27.3 kg/m².  
+Heart rate: 93 beats/min; Respiratory rate: 16 breaths/min.  
+Blood pressure, temperature, and SpO₂ not recorded at this encounter.  
+
+Physical Examination  
+General: Alert, oriented, in mild distress due to right upper‑extremity pain.  
+Upper Extremities: Right anterior shoulder and elbow exhibit localized swelling with overlying erythema and bruising. A palpable, tender bulge is noted in the mid‑biceps region (“Popeye” appearance). Active elbow flexion is severely limited by pain; supination is markedly reduced. Shoulder forward flexion to at least 90° is possible but elicits discomfort; full overhead elevation is limited by pain. No gross deformity of the shoulder joint. No distal neurovascular deficits; radial pulse palpable, sensation intact in the hand.  
+Cardiovascular, Respiratory, Abdomen, Neurologic, Skin (other areas): No abnormal findings reported.  
+
+Laboratory Data (most recent)  
+- Creatinine: 2.86 mg/dL (elevated, consistent with CKD)  
+- eGFR (MDRD): 85 mL/min/1.73 m²  
+- Potassium: 4.8 mmol/L  
+- Sodium: 137 mmol/L; Chloride: 108.7 mmol/L; CO₂: 27.6 mmol/L  
+- Calcium: 9.3 mg/dL; Albumin: 5.10 g/dL; Total protein: 7.06 g/dL  
+- Lipid panel: LDL 133 mg/dL, HDL 36 mg/dL, Triglycerides 161 mg/dL, Total cholesterol 169 mg/dL  
+- Liver enzymes: AST 19 U/L, ALT 33 U/L, Alk Phos 75 U/L, Bilirubin total 0.52 mg/dL  
+- Glucose: 79 mg/dL  
+
+Imaging  
+No imaging has been performed to date. The provider plans to obtain a right shoulder and elbow ultrasound, with MRI of the proximal humerus/biceps region if ultrasound findings are inconclusive or suggest a complete tear.  
+
+Assessment  
+1. Probable proximal biceps tendon rupture (Popeye sign) with associated soft‑tissue swelling and bruising.  
+2. Acute right shoulder and elbow pain secondary to recent weight‑training injury.  
+3. Chronic kidney disease, stage 4.  
+4. Hypertension, hyperlipidemia, type 2 diabetes mellitus with diabetic kidney disease, and anemia – stable chronic conditions.  
+
+Plan  
+- Imaging: Order right shoulder and elbow ultrasound within the next 48 hours. If the ultrasound demonstrates a complete tendon rupture or is nondiagnostic, arrange MRI of the proximal humerus/biceps tendon.  
+- Medication: Continue current antihypertensive and lipid‑lowering regimen. Initiate acetaminophen 500 mg PO q6h PRN for pain, provided renal function remains stable. NSAIDs (e.g., naproxen) are contraindicated given CKD; avoid further ibuprofen use.  
+- Activity: Advise strict immobilization of the right arm with a sling for the next 7–10 days. Limit all resisted elbow flexion and supination activities. Apply intermittent ice (15 minutes, 3–4 times daily) for swelling.  
+- Referral: If imaging confirms a complete proximal biceps tendon rupture, refer to orthopedic surgery for possible operative repair. If a partial tear or tendinopathy is identified, initiate a supervised physical‑therapy program focusing on gradual range‑of‑motion and strengthening after the acute inflammation subsides.  
+- Follow‑up: Return to clinic in 1 week for review of imaging results and reassessment of pain and function. Earlier return if pain worsens, new neurovascular symptoms develop, or swelling markedly increases.  
+- Education: Discuss the nature of biceps tendon injuries, the importance of avoiding heavy lifting or repetitive elbow flexion until cleared, and signs that would warrant urgent evaluation (e.g., increasing swelling, loss of pulse, numbness). Emphasize adherence to renal‑friendly analgesic use and monitoring of blood pressure and blood glucose.  
+
+Disposition  
+The patient was discharged home with instructions to rest, ice, and use acetaminophen for pain. Imaging studies have been ordered, and a follow‑up appointment has been scheduled. No immediate red‑flag findings were identified that would necessitate emergent care.

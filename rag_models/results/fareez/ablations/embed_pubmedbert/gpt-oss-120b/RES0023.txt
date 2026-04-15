@@ -1,0 +1,105 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:50:51
+Time: 5.68s
+Tokens: 13,633 in / 1,540 out
+============================================================
+
+Patient Information
+Aaron Feeney, male, Date of Birth: 1915‑12‑05. Residential address: 656 Murphy Stravenue, Walpole, Massachusetts 02081. Unit Number: 48. He is a full‑time employee at a grocery store and lives with his wife and two school‑age children.  
+
+Chief Complaint
+Cough of five days’ duration, described as dry and progressively worsening, accompanied by feverish sensations, night sweats, sore throat, and recent loss of smell.
+
+History of Present Illness
+The patient reports the onset of a dry cough approximately five days ago. The cough has been constant throughout the day, has intensified over time, and is now disrupting his sleep. He denies producing any sputum. He notes a sore throat that has become more painful after coughing and describes mild chest discomfort localized to the throat region. He feels “pretty hot,” has experienced excessive sweating, and reports a night‑time episode in which his shirt was soaked with sweat. He also reports a sudden loss of sense of smell that began this morning; taste remains normal. He denies nausea, vomiting, chills, or recent weight loss (in fact, he believes he has gained 5–10 lb). He has not taken a temperature at home. He has not traveled recently and cannot identify any known sick contacts, although he works in a grocery store where he encounters many customers. He has a history of similar upper‑respiratory illness when he was younger, possibly associated with influenza.  
+
+Review of Systems
+Constitutional: Positive for feverish feeling, night sweats, fatigue; negative for chills, weight loss, recent weight gain reported.  
+Respiratory: Positive for dry cough, sore throat, throat‑localized chest discomfort; negative for dyspnea, wheezing, sputum production, hemoptysis.  
+ENT: Positive for loss of smell; taste intact.  
+Cardiovascular: No chest pain other than throat discomfort, no palpitations reported.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, frequency, or flank pain.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Psychiatric: No anxiety or depression reported at this visit.  
+Skin: No rashes.  
+
+Past Medical History
+- Essential hypertension  
+- Type 2 diabetes mellitus (on metformin)  
+- Obesity (BMI ≈ 31.5)  
+- Metabolic syndrome, hyperlipidemia, pre‑diabetes  
+- Chronic kidney disease stage 4 and end‑stage renal disease (awaiting transplantation)  
+- Atrial fibrillation  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Osteoarthritis of the hand  
+- Anemia, osteoporosis, and prior prostate carcinoma in situ  
+- History of renal transplant evaluation (awaiting)  
+- Prior cholecystectomy (≈10 years ago)  
+
+Surgical History
+- Laparoscopic cholecystectomy performed approximately ten years prior.  
+
+Family History
+- Mother with asthma.  
+- Brother with asthma.  
+No other significant familial illnesses documented.  
+
+Allergies
+- Environmental pollen (seasonal).  
+- No known drug allergies.  
+
+Social History
+- Occupation: Grocery store employee, full‑time.  
+- Living situation: Resides with wife and two children.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes three to four beers on weekends.  
+- Illicit substances: Denies use of cannabis or other drugs.  
+
+Current Medications
+- Ramipril (ACE inhibitor) – dosage not specified.  
+- Metformin – dosage not specified.  
+- Vitamin D supplement – dosage not specified.  
+
+Vital Signs
+No vital sign measurements were recorded during this encounter.  
+
+Physical Examination
+No physical examination findings were documented.  
+
+Laboratory Results
+- Sodium: 143.9 mmol/L (within normal limits)  
+- Potassium: 4.74 mmol/L (within normal limits)  
+- Chloride: 103.8 mmol/L (within normal limits)  
+- Bicarbonate (CO₂): 25.7 mmol/L (within normal limits)  
+- Blood urea nitrogen: 17.3 mg/dL (within normal limits)  
+- Creatinine: 0.39 mg/dL (low, likely reflective of laboratory reporting; chronic kidney disease noted in history)  
+- Glucose: 70.6 mg/dL (fasting range) and repeat glucose 85.8 mg/dL.  
+- Calcium: 9.98 mg/dL (normal)  
+- Potassium: 4.74 mmol/L (normal)  
+- Albumin/Globulin (globulin): 2.91 g/L (within reference)  
+- Alkaline phosphatase: 79.5 U/L (normal)  
+- AST: 36.8 U/L (within normal limits)  
+- Urine protein: 280 mg/dL (elevated, consistent with known renal disease).  
+- PHQ‑2 score: 1 (negative screen).  
+- GAD‑7 score: 2 (negative screen).  
+- AUDIT‑C score: 1 (low‑risk alcohol use).  
+
+Assessment
+1. Acute bronchitis – clinical picture of a dry, worsening cough of five days’ duration with low‑grade systemic symptoms, consistent with a viral lower respiratory tract infection.  
+2. Possible COVID‑19 infection – loss of smell, feverish feeling, cough, and night sweats raise concern for SARS‑CoV‑2 infection, especially during ongoing community transmission.  
+3. Chronic comorbidities (hypertension, type 2 diabetes, chronic kidney disease stage 4/ESRD) – stable on current regimen, but warrant close monitoring given the acute illness.  
+
+Plan
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing immediately.  
+- Instruct patient to self‑isolate at home with all household members for 14 days pending test results, following CDC guidelines.  
+- Symptomatic management: Advise acetaminophen 325 mg as needed for fever or discomfort, not exceeding 3 g per day. Encourage increased fluid intake and rest.  
+- Continue current chronic medications (Ramipril, Metformin, Vitamin D) unless advised otherwise by his primary care provider.  
+- Educate patient on warning signs that require urgent reassessment: worsening dyspnea, high‑grade fever > 38.5 °C, new chest pain, hemoptysis, confusion, or any deterioration in urine output.  
+- Arrange follow‑up with primary care provider within 3‑5 days or sooner if symptoms worsen.  
+- Document that no additional antibiotics are prescribed at this time, as the presentation is most consistent with a viral process.  
+
+Disposition
+Patient was evaluated in the emergency department, swabbed for COVID‑19, provided with discharge instructions, and discharged home in stable condition. No further inpatient interventions were required.

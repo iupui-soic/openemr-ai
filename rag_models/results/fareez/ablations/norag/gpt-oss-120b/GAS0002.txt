@@ -1,0 +1,135 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:15:28
+Time: 5.45s
+Tokens: 7,528 in / 1,993 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn DOB: 1965-04-16 Sex: Male Medical Record #: 2046 Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+Right upper abdominal (right upper quadrant) pain.  
+
+History of Present Illness  
+Mr. McGlynn presents to the Emergency Department with a three‑day history of progressive right upper quadrant (RUQ) abdominal pain. The pain began approximately one hour after lunch three days ago and has been constant since, worsening markedly about three to four hours prior to arrival. He characterizes the pain as sharp, localized to the RUQ just inferior to the right lower rib cage, without radiation. On a 0–10 pain scale he rates the current intensity as an 8. He reports associated nausea over the past several days but no vomiting, hematemesis, or change in bowel habits. Appetite has markedly decreased today, and he feels unusually fatigued and low‑energy, although he was able to function relatively well during the prior two days. He denies fever, chills, dysuria, hematuria, urinary frequency, skin changes, rashes, or recent travel. He has taken over‑the‑counter ibuprofen (Advil) and acetaminophen (Tylenol) without significant relief. He recalls a similar, self‑limited episode of abdominal pain several years ago that resolved without medical evaluation.  
+
+Past Medical History  
+- Kidney transplant (2020) with current tacrolimus therapy  
+- Chronic kidney disease (stage 3–4 history)  
+- Hypertension (essential)  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria  
+- Gastroesophageal reflux disease (GERD)  
+- Anemia  
+- Osteoporosis  
+- Cerebral palsy with associated spasticity  
+- History of pneumonia, acute viral pharyngitis, viral sinusitis, gingivitis, and dental caries  
+- History of intimate partner abuse (documented)  
+
+Surgical History  
+- No operative procedures aside from obstetric deliveries (patient’s children). No prior abdominal surgeries.  
+
+Medications (Active)  
+- Tacrolimus extended‑release (5 mg capsule) – immunosuppression for renal transplant  
+- Tacrolimus 1 mg extended‑release tablet (dose unspecified)  
+- Tacrolimus 5 mg/ML injection (as needed)  
+- Hydrochlorothiazide 25 mg oral tablet – antihypertensive  
+- Amlodipine 2.5 mg oral tablet – antihypertensive  
+- Glycopyrrolate 1.5 mg oral tablet – anticholinergic (indication not specified)  
+- Acetaminophen 325 mg oral tablet – PRN analgesic  
+- Over‑the‑counter antacids as needed for heartburn (patient‑reported)  
+
+Allergies  
+No known drug allergies reported.  
+
+Social History  
+- Occupation: Consultant at a bank  
+- Living situation: Resides with partner and two children; reports supportive home environment  
+- Alcohol: Consumes one to two glasses of wine nightly; does not desire to cut down, no reported guilt or early‑morning drinking  
+- Tobacco: None  
+- Illicit drugs: None  
+- Exercise: Not documented  
+
+Family History  
+- Mother: History of gallstones  
+- Father: Died of stroke in his 60s  
+- No documented family history of diabetes, hypertension, or other gastrointestinal disease  
+
+Review of Systems  
+Constitutional: Reports fatigue and decreased energy today; denies fever, chills, weight loss, or recent infections.  
+Gastrointestinal: Positive for sharp RUQ pain of 3‑day duration, worsening today; associated nausea, decreased appetite; denies vomiting, hematemesis, melena, hematochezia, diarrhea, constipation, or change in stool color.  
+Genitourinary: Denies dysuria, hematuria, polyuria, or urinary frequency.  
+Cardiovascular: No chest pain or palpitations reported.  
+Respiratory: No dyspnea or cough.  
+Dermatologic: No rash or skin changes noted.  
+Neurologic: No headache, dizziness, or focal deficits reported.  
+Psychiatric: No anxiety, depression, or substance‑use concerns beyond described alcohol intake.  
+
+Objective  
+Vital Signs (as recorded on 2024‑05‑30):  
+- Heart Rate: 94 bpm  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not available  
+- Temperature: Not recorded  
+- SpO₂: Not recorded  
+- Height: 177.7 cm (BMI 27.3)  
+
+Physical Examination: No information available.  
+
+Laboratory Data (most recent values):  
+- Leukocyte count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.1 %  
+- RBC count: 4.34 ×10⁶/µL  
+- MCV: 94.5 fL, MCH: 28.4 pg, MCHC: 34.2 g/dL (normocytic, normochromic)  
+- Platelets: 351 ×10³/µL  
+- Cholesterol: 252 mg/dL (elevated)  
+- LDL: 168 mg/dL (elevated)  
+- HDL: 58 mg/dL  
+- Triglycerides: 130 mg/dL  
+- PHQ‑2: 0 (no depressive symptoms)  
+- GAD‑7: 2 (minimal anxiety)  
+- Morse Fall Scale: 105 (moderate fall risk)  
+
+No liver function tests, pancreatic enzymes, or imaging results are available at this time.  
+
+Assessment  
+1. Acute right upper quadrant pain – clinical picture concerning for biliary colic or early acute calculous cholecystitis given location, sharp quality, recent worsening, and family history of gallstones.  
+2. Nausea secondary to abdominal pain.  
+3. Chronic medical comorbidities: renal transplant on tacrolimus, hypertension, type 2 diabetes mellitus, chronic kidney disease, anemia, GERD.  
+4. Elevated cholesterol profile.  
+5. Moderate fall risk (Morse Scale 105).  
+
+Plan  
+Diagnostic Studies:  
+- Obtain complete metabolic panel, liver function tests (AST, ALT, ALP, GGT, bilirubin) and pancreatic enzymes (amylase, lipase).  
+- Order right upper quadrant abdominal ultrasound promptly to evaluate for gallstones, gallbladder wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- Consider HIDA scan if ultrasound equivocal and clinical suspicion for acute cholecystitis remains high.  
+
+Therapeutic Interventions:  
+- Initiate intravenous fluid hydration with isotonic crystalloid (e.g., 0.9% NaCl) to maintain euvolemia, mindful of renal transplant status and baseline kidney function.  
+- Provide analgesia: start IV ketorolac 15 mg q6h PRN (if no contraindication) or IV morphine sulfate 2–4 mg q4h PRN for breakthrough pain.  
+- Administer antiemetic (e.g., ondansetron 4 mg IV q8h PRN) for nausea.  
+- Keep patient NPO pending imaging and surgical evaluation.  
+
+Medication Review:  
+- Continue tacrolimus, hydrochlorothiazide, amlodipine, glycopyrrolate as per transplant and hypertension protocols.  
+- Hold any nephrotoxic NSAIDs; ibuprofen was ineffective and not continued.  
+- Encourage continuation of acetaminophen for mild pain as needed, respecting maximum daily dosing.  
+
+Consultations:  
+- Surgical consult for possible cholecystectomy after imaging confirmation.  
+- Transplant nephrology to review tacrolimus levels and renal function in the context of acute illness and IV fluids.  
+
+Disposition:  
+- Admit to the observation unit for monitoring, serial abdominal examinations, labs, and imaging.  
+- If ultrasound confirms uncomplicated biliary colic without signs of infection, consider discharge with outpatient surgical follow‑up, clear liquid diet, and pain control plan.  
+- If acute cholecystitis is diagnosed, proceed with surgical intervention per standard care (early laparoscopic cholecystectomy) after appropriate pre‑operative optimization.  
+
+Education & Follow‑Up:  
+- Counsel patient on signs of worsening condition (fever, increasing pain, vomiting, jaundice) and advise immediate return to the ED if these develop.  
+- Discuss lifestyle modifications for hyperlipidemia and encourage follow‑up with primary care for lipid management.  
+- Review alcohol intake; while current consumption is modest, reinforce moderation given liver and transplant considerations.  
+
+Overall, the immediate focus is to elucidate the etiology of the RUQ pain through imaging and laboratory evaluation, provide adequate analgesia and anti‑emesis, and involve surgery and transplant services as indicated. No further information is available at this time.

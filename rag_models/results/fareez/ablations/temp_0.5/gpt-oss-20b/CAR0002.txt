@@ -1,0 +1,93 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:18:28
+Time: 2.85s
+Tokens: 9,114 in / 1,202 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (Age 92)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Insurance: Not provided  
+
+Chief Complaint  
+The patient presents with a sudden onset of left-sided chest pain that began approximately 30 minutes ago while shoveling the driveway.  
+
+History of Present Illness  
+The patient reports that the pain started abruptly and has been constant and worsening since onset. He describes the pain as dull with a sensation of pressure over the left chest. On a pain scale of 0 to 10, he rates it as a 7. The pain is localized to the left side of the chest and does not radiate to other areas. It is slightly aggravated by movement and lying down, and it is not relieved by rest. The patient reports associated shortness of breath that has been present since yesterday, and he notes a mild fever of 38°C. He denies cough, wheezing, chest trauma, recent travel, or recent infections. He has no history of prior chest pain. He reports a recent rugby tackle the day before but did not feel any chest injury at that time.  
+
+Review of Systems  
+Constitutional: Fever 38 °C, mild shortness of breath, no weight loss, no fatigue.  
+Respiratory: Shortness of breath, no cough, no wheeze, no chest tightness.  
+Cardiovascular: Chest pain, palpitations described as a racing sensation, no known arrhythmias.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurologic: No dizziness, no syncope.  
+Skin: No rashes.  
+Musculoskeletal: No swelling of extremities.  
+
+Past Medical History (from electronic record)  
+- Prediabetes, type 2 diabetes mellitus (ongoing)  
+- Anemia (ongoing)  
+- Obesity (BMI 30.97)  
+- Sleep apnea (ongoing)  
+- Essential hypertension (ongoing)  
+- Metabolic syndrome (ongoing)  
+- Chronic kidney disease (stage 1–3, ongoing)  
+- Ischemic heart disease (ongoing)  
+- Hyperlipidemia (ongoing)  
+- Chronic low back pain (ongoing)  
+- Chronic neck pain (ongoing)  
+- Chronic kidney disease stage 4 (historical)  
+- End-stage renal disease (historical)  
+- Seizure disorder (historical)  
+
+Social History  
+The patient is a bus driver for the city and lives with his parents in a house. He reports regular exercise, running on Sundays, and a balanced diet with occasional dining out. He is a current smoker, averaging half a pack to a full pack per day for the past 20 years. He denies alcohol use. He has a history of recreational drug use, specifically crystal methamphetamine, with the last use six days ago and an average of a couple times per month over the past seven years. He denies current marijuana use.  
+
+Family History  
+No known family history of heart attack, cancer, or other significant hereditary diseases.  
+
+Medications (current)  
+- Rosuvastatin (dose not specified)  
+- Lisinopril (dose not specified)  
+- Multivitamin  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No information available.  
+
+Vitals  
+No current vital signs available.  
+
+Laboratory Results (most recent available)  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.52 mg/dL  
+- Low Density Lipoprotein Cholesterol: 140.58 mg/dL  
+- Total Cholesterol: 185.27 mg/dL  
+- Alanine aminotransferase: 21.83 U/L  
+- Other electrolytes within normal limits.  
+
+Imaging  
+No imaging studies performed at this time.  
+
+Assessment  
+Acute chest pain of uncertain etiology in a patient with significant cardiovascular risk factors, including hypertension, hyperlipidemia, smoking, and a documented history of ischemic heart disease. Differential diagnosis includes acute coronary syndrome, musculoskeletal pain, pulmonary embolism, and other cardiac or non‑cardiac causes.  
+
+Plan  
+1. Immediate cardiac evaluation: obtain an electrocardiogram (ECG) and cardiac biomarkers (troponin I/T, CK‑MB).  
+2. Initiate standard acute chest pain protocol: administer aspirin 325 mg chewable, consider nitroglycerin spray if pain persists and no contraindications.  
+3. Monitor vital signs and oxygen saturation continuously.  
+4. Arrange for cardiology consultation for possible further management, including possible coronary angiography.  
+5. Continue current antihypertensive (lisinopril) and lipid‑lowering (rosuvastatin) therapy; reassess dosing after acute evaluation.  
+6. Counsel on smoking cessation and discuss referral to a cessation program.  
+7. Discuss safe medication use and potential interactions with methamphetamine; consider counseling for substance use disorder.  
+8. Provide discharge instructions: rest, avoid strenuous activity, take prescribed medications as directed, seek immediate medical attention if chest pain worsens, shortness of breath increases, or new symptoms develop.  
+9. Schedule follow‑up appointment with primary care physician within 48–72 hours and with cardiology as indicated.  
+
+Follow‑up  
+The patient will be seen in the clinic within 48–72 hours or sooner if symptoms worsen. He is advised to call the emergency department if chest pain recurs, worsens, or if he experiences palpitations, dizziness, or fainting.

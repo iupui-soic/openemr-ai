@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:15:24
+Time: 3.11s
+Tokens: 14,970 in / 1,364 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: March 25, 1917  
+Sex: Male  
+Address: 982 Jenkins Drive, Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of a productive cough and progressive shortness of breath.  
+
+History of Present Illness  
+Mr. Cummerata reports that the cough began approximately three days ago and is characterized by the expectoration of yellow‑green sputum, roughly the size of a thumb tip, without frank hemoptysis. The cough is described as hacking. Shortness of breath developed within the last day, rated at a severity of 7 out of 10, and has worsened over the past few days. The dyspnea is intermittent, with mild wheezing noted when the patient is severely short of breath. The symptoms have interfered with sleep, and the patient reports associated fatigue, generalized weakness, mild abdominal ache, and anosmia. He denies chest pain, palpitations, dizziness, syncope, confusion, fever, chills, night sweats, weight loss, or changes in bowel or urinary habits. He has no nasal congestion or rhinorrhea.  
+
+Review of Systems  
+Constitutional: Positive for fatigue, weakness, mild abdominal ache, anosmia; negative for fever, chills, night sweats, weight loss.  
+Respiratory: Positive for productive cough with yellow‑green sputum, shortness of breath, mild wheezing; negative for chest pain, hemoptysis, cough at rest.  
+Cardiovascular: No chest pain, palpitations, or syncope; known atrial fibrillation, well‑controlled on metoprolol.  
+Gastrointestinal: Mild abdominal ache, no nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Neurologic: No dizziness, syncope, confusion, or memory loss.  
+Dermatologic: No rash or skin changes.  
+Hematologic: No bleeding or bruising.  
+Endocrine: No polyuria, polydipsia, or polyphagia.  
+Psychiatric: No depression or anxiety reported.  
+
+Past Medical History  
+Atrial fibrillation (diagnosed 4 years ago, on metoprolol).  
+Hypertension (essential).  
+Chronic kidney disease stage 4 progressing to end‑stage renal disease.  
+Chronic obstructive pulmonary disease not documented.  
+History of inguinal hernia repair (15 years ago).  
+Other chronic conditions include obesity, osteoarthritis of the knee, and a history of opioid abuse.  
+
+Surgical History  
+Inguinal hernia repair (15 years ago).  
+
+Social History  
+The patient is retired and lives with his wife in a renovated house. He is a former smoker, having quit a pack per day five years ago. He does not consume alcohol. He uses cannabidiol (CBD) edibles occasionally for sleep, typically the lowest available dose (~2.5 mg). He has no recreational drug use. He has recently visited a long‑term care facility where a COVID‑19 outbreak has been reported.  
+
+Family History  
+No known family history of cardiovascular disease. Aunt had lung cancer and was a lifelong smoker. No other cancers reported.  
+
+Allergies  
+Sulfa drug allergy (rash).  
+
+Current Medications  
+Metoprolol (beta‑blocker) for atrial fibrillation.  
+Statin (type unspecified).  
+Baby aspirin (antiplatelet).  
+CBD edible (low dose).  
+
+Objective  
+Vital signs: No current vital sign data available.  
+Physical examination: No physical exam findings documented.  
+
+Labs  
+White blood cell differential: Neutrophils 13.66 %, Monocytes 9.46 %, Basophils 3.05 %.  
+Hemoglobin/hematocrit: Hematocrit 43.34 %.  
+Platelets: 4.24 × 10⁶/µL.  
+Serum electrolytes: Potassium 4.04 mmol/L, Calcium 9.75 mg/dL.  
+Renal function: Urea nitrogen 17.88 mg/dL.  
+Liver enzymes: AST 15.30 U/L.  
+Coagulation: Prothrombin time 11.90 s.  
+Ferritin: 1853 µg/L (markedly elevated).  
+Other metabolic parameters within reference ranges.  
+
+Imaging  
+No imaging studies performed or reported at this time.  
+
+Assessment  
+Primary diagnosis: Community‑acquired pneumonia, likely viral in etiology with possible COVID‑19 infection.  
+Secondary diagnoses: Atrial fibrillation, chronic kidney disease stage 4 progressing to end‑stage renal disease, hypertension, obesity, osteoarthritis of the knee, history of opioid abuse, and chronic obstructive pulmonary disease (not explicitly documented but likely given age and smoking history).  
+
+Plan  
+1. COVID‑19 testing: A nasopharyngeal swab will be obtained for PCR testing; results expected within 1–2 days.  
+2. Isolation: The patient will be advised to self‑isolate for 14 days or until symptom resolution, whichever is longer, and to limit contact with household members.  
+3. Symptom monitoring: The patient will monitor temperature, oxygen saturation, and symptom progression. If oxygen saturation falls below 94 % or symptoms worsen, he should seek urgent care.  
+4. Antibiotic therapy: If bacterial pneumonia is suspected (e.g., persistent fever, worsening infiltrate on imaging, or lack of improvement after 48–72 h), empiric antibiotics will be considered.  
+5. Continue home medications: Metoprolol, statin, and aspirin will be continued as prescribed.  
+6. Sleep aid: Discuss alternative sleep aids (e.g., melatonin, prescription sleep medications) to reduce reliance on CBD edibles.  
+7. Follow‑up: The patient will return for a follow‑up visit or telehealth assessment in 3–5 days to review test results and clinical status.  
+8. Vaccinations: Confirm that the patient is up to date with influenza and pneumococcal vaccines; reinforce the importance of annual influenza vaccination.  
+9. Education: The patient was educated on the importance of hand hygiene, mask use, and symptom monitoring.  
+
+The plan will be adjusted based on COVID‑19 test results and clinical evolution.

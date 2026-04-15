@@ -1,0 +1,78 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:36:51
+Time: 2.23s
+Tokens: 11,555 in / 1,306 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+DOB: September 28, 1931 (Age 94)  
+Gender: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+
+Chief Complaint  
+The patient presents with severe right hip pain following a fall from the stairs.  
+
+History of Present Illness  
+Mr. Turner fell approximately two hours ago while descending the last few steps of his staircase. He describes the fall as a slip that resulted in impact on his right side and head, though no loss of consciousness or head injury was reported. Immediately after the fall he experienced intense pain localized to the right hip, described as sharp when weight is applied and aching when the limb is unloaded. The pain intensity is 10/10, the maximum recorded. He is unable to bear weight on the right hip and is in extreme discomfort. He reports no prior history of similar hip pain or previous falls. The episode has been constant since the fall, with no fluctuation in severity. He denies associated numbness, tingling, or neurological symptoms. He reports feeling slightly dizzy upon exiting the ambulance, which he attributes to pain and the fall rather than a primary vestibular event. No headache, chest pain, shortness of breath, or gastrointestinal complaints are noted. He has not had fever or chills.  
+
+Review of Systems  
+General: No fever, chills, weight loss, or night sweats.  
+Neurologic: No dizziness besides transient post‑fall, no numbness or tingling.  
+Cardiovascular: No chest pain or palpitations.  
+Respiratory: No shortness of breath, cough, or wheeze.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or altered bowel habits.  
+Genitourinary: No dysuria or frequency changes.  
+Musculoskeletal: Right hip pain, swelling, bruising; no other joint pain.  
+Skin: Localized bruising and mild erythema over right hip area.  
+No other abnormal findings reported.  
+
+Past Medical History  
+- Osteoarthritis (general)  
+- Essential hypertension – on ramipril  
+- No history of diabetes, renal disease, or prior fractures.  
+- No known malignancies.  
+
+Social History  
+The patient lives with his husband in a small apartment. He does not smoke and consumes alcohol socially (one glass of wine every other day). He denies use of recreational drugs or marijuana.  
+
+Family History  
+Father deceased from heart attack in his 60s. Mother had skin cancer managed with local treatment. No other significant family history of cardiovascular, musculoskeletal, or oncologic disease reported.  
+
+Medications (current)  
+- Ramipril 10 mg orally daily  
+- Vitamin D, calcium, multivitamins as needed  
+- Ibuprofen 200 mg (currently inactive per EMR record but prescribed as needed for pain)  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Physical Examination  
+Vital signs are not available at this time.  
+Inspection of right hip region reveals swelling, mild erythema, and bruising. The right hip appears slightly warmer than the left. There is limited range of motion due to pain; the patient cannot perform hip flexion, extension, abduction, or adduction. The right lower limb demonstrates outward rotation with slight shortening noted on observation. No obvious deformity of the leg. The patient is unable to stand from a seated position without significant pain and requires assistance to stand.  
+
+Laboratory Data  
+No acute laboratory studies were performed during this encounter. Historical lab values from the EMR include normal hemoglobin (16.7 g/dL), normal platelets (199.5 ×10^3/µL), and normal renal function (creatinine 1.01 mg/dL). These values are considered stable and non‑contributory to the current presentation.  
+
+Imaging  
+No imaging has yet been obtained; however, given the mechanism of injury and clinical findings, a right hip fracture is highly suspected. Radiographic evaluation (plain pelvis and right hip X‑ray) is recommended promptly.  
+
+Assessment  
+Primary diagnosis: Suspected right hip fracture (likely intertrochanteric or femoral neck) secondary to a fall from the stairs.  
+Secondary considerations: Osteoarthritis of the hip may exacerbate pain but is not the primary pathology. No evidence of infection, neurological deficit, or systemic illness.  
+
+Plan  
+1. **Orthopedic Consultation** – Immediate referral to orthopedics for evaluation and surgical planning (internal fixation with screws or possible total hip replacement, as appropriate).  
+2. **Imaging** – Obtain right hip plain radiographs to confirm fracture type and extent.  
+3. **Pain Management** – Initiate non‑steroidal anti‑inflammatory therapy (ibuprofen 400–800 mg orally every 6–8 hours as needed) with consideration for acetaminophen if NSAIDs are contraindicated. Monitor for gastrointestinal or renal side effects, especially in the context of hypertension.  
+4. **Mobility and Safety** – Provide assistive devices (walker or cane) pending orthopedic decision; advise against weight bearing on the right leg until clearance.  
+5. **Rehabilitation** – Once surgical repair is complete and medically cleared, arrange for physiotherapy focusing on range‑of‑motion exercises, strengthening of surrounding musculature, and gait training.  
+6. **Monitoring** – Reassess pain intensity, neurovascular status of the right lower limb, and vital signs at regular intervals.  
+7. **Follow‑up** – Schedule orthopedic follow‑up within 48–72 hours post‑consult or sooner if deterioration occurs.  
+8. **Patient Education** – Explain the likely need for surgery, the importance of adhering to weight‑bearing restrictions, and potential complications (infection, DVT, hardware failure). Discuss signs of worsening pain or neurovascular compromise that warrant immediate medical attention.  
+
+No additional laboratory or imaging studies are indicated at this time beyond the planned X‑ray. The patient is advised to continue his antihypertensive therapy and routine vitamin supplementation. No new allergies or adverse drug reactions are anticipated.  
+
+This summary serves as a preliminary discharge plan pending definitive imaging and orthopedic management.

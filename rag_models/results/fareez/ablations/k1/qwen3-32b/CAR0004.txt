@@ -1,0 +1,67 @@
+Model: qwen/qwen3-32b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:40:15
+Time: 3.36s
+Tokens: 8,694 in / 858 out
+============================================================
+
+Patient Information:
+
+A 25-year-old female, Aileen Vi Rempel, presented to the clinic with a chief complaint of sharp chest pain. The patient is a student studying engineering at Western and works part-time as a postman. She resides with her mother in a house in Quincy, Massachusetts. The patient denies any tobacco, alcohol, or recreational drug use. She has no known allergies and does not report any current medications aside from occasional use of acetaminophen (Tylenol).
+
+Chief Complaint:
+
+The patient reports experiencing sharp chest pain for the past three days. She is concerned about the possibility of a heart attack, especially given her father's recent history of a fatal heart attack two weeks ago.
+
+History of Present Illness:
+
+The patient describes the chest pain as sharp, localized over the area of the heart, and lasting for only a few seconds before resolving. The pain is reported to be a 6 out of 10 in intensity on a pain scale. It is exacerbated by coughing and lying down but improves when she leans forward. The pain occasionally radiates to her neck. The patient denies any associated symptoms such as shortness of breath, dizziness, palpitations, numbness, weakness, or fever. She also denies any recent injuries to the chest area. The patient mentions that she had a recent bout of the flu with fever, runny nose, and cough, but is now asymptomatic. She has taken acetaminophen once in the past 24 hours, which provided some relief.
+
+Review of Systems:
+
+Constitutional: No fever, chills, or unintentional weight loss reported.
+Respiratory: No shortness of breath or cough reported currently.
+Cardiovascular: No chest pressure, palpitations, or syncope reported.
+Gastrointestinal: No nausea, vomiting, or abdominal pain reported.
+Other: No headaches, visual changes, or neurological symptoms reported.
+
+Allergies:
+
+No known drug, food, or environmental allergies reported.
+
+Past Medical History:
+
+The patient reports no prior medical conditions and considers herself healthy. She has no history of diabetes, hypertension, or other chronic illnesses. She has no prior surgeries.
+
+Family History:
+
+The patient's father had a heart attack two weeks ago and passed away. There is no reported family history of cancer or other significant medical conditions.
+
+Social History:
+
+The patient is a non-smoker, non-drinker, and does not use recreational drugs. She is currently a student with part-time employment.
+
+Current Medications:
+
+The patient occasionally uses acetaminophen (Tylenol) for pain relief.
+
+Objective:
+
+Vital signs were not available in the electronic health record. Physical examination findings were not provided in the transcript or OpenEMR extract.
+
+Labs:
+
+No recent laboratory results were available in the provided extract. Historical lab data included creatinine levels, electrolyte levels, and glucose, but these were not relevant to the current presentation.
+
+Imaging:
+
+No imaging studies were performed or documented in the provided data.
+
+Assessment:
+
+The patient's chest pain is described as sharp, transient, and positional, with improvement when leaning forward. These characteristics are more consistent with musculoskeletal or pleuritic pain rather than acute coronary syndrome. The absence of associated symptoms such as shortness of breath, dizziness, or palpitations further supports this assessment. The patient's young age and lack of significant medical history also reduce the likelihood of a cardiac cause. However, given the patient's recent flu and the concern for a heart attack due to her father's recent death, further evaluation is warranted.
+
+Plan:
+
+The patient will undergo an electrocardiogram (ECG) to assess for any cardiac abnormalities. If the ECG is normal and there are no other concerning findings, the patient will be reassured and advised to follow up if symptoms persist or worsen. The patient will be instructed to avoid activities that exacerbate the pain and to continue using acetaminophen as needed for pain relief. The patient will also be advised to monitor for any new or worsening symptoms and to seek immediate medical attention if she experiences chest pain that is prolonged, associated with shortness of breath, or if she feels unwell. Follow-up with a primary care provider is recommended for further evaluation and management.

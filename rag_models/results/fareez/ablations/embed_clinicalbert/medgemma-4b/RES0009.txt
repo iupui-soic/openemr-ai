@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:59:27
+Time: 36.14s
+Tokens: 15,064 in / 561 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+The patient is Abel Wunsch, DOB 1932-06-07, residing at 214 Rippin Mews, Salisbury, Massachusetts 01952. He is a male, and his unit number is 388.
+
+Chief Complaint:
+
+The patient presents with chest pain for five days, accompanied by shortness of breath.
+
+History of Present Illness:
+
+The patient reports experiencing chest pain for five days, which he describes as a "tiny, lingering sharp pain" on the left side of his chest. He denies radiating pain to other locations. The pain is worse when taking a deep breath. He states that the pain started when he was sitting on the couch and has been progressively worsening with walking, particularly down the street to get the mail. He has taken Tylenol and Advil, which provide some relief, but the pain persists. He has not experienced any fever or chills. He denies nausea or vomiting. His energy level has decreased due to the difficulty breathing. He denies night sweats and unusual headaches. He denies palpitations. He denies lightheadedness or syncope. He denies cough or wheezing. He denies abdominal pain. He reports a hysterectomy performed a month ago. He denies urinary problems. He reports that the pain is worse when walking and when taking a deep breath.
+
+Past Medical History:
+
+The patient has a history of essential hypertension, chronic kidney disease stage 1, chronic kidney disease stage 2, microalbuminuria due to type 2 diabetes mellitus, chronic kidney disease stage 3, proteinuria due to type 2 diabetes mellitus, ischemic heart disease, and opioid abuse. He also has a criminal record, loss of teeth, chronic sinusitis, neoplasm of prostate, carcinoma in situ of prostate, and a history of a heart attack in his mother. He has had a hysterectomy.
+
+Medications:
+
+The patient is currently taking 24 HR tacrolimus, 24 HR metoprolol succinate, furosemide, acetaminophen, ibuprofen, clopidogrel, and simvastatin.
+
+Social History:
+
+The patient is a retired accountant. He drinks alcohol occasionally (a glass of wine on weekends) and smokes cigarettes, trying to quit. He denies using other recreational drugs.
+
+Family History:
+
+The patient's mother had a heart attack.
+
+Allergies:
+
+The patient has no known allergies.
+
+Immunizations:
+
+The patient's immunizations are up to date.
+
+Assessment:
+
+The patient presents with chest pain and shortness of breath, concerning for a possible pulmonary embolism. Further investigation is warranted.
+
+Plan:
+
+The physician is concerned about a possible pulmonary embolism and will order lab work and imaging to investigate.

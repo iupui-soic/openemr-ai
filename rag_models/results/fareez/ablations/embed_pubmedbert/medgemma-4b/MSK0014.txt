@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-04-14 06:28:26
+Time: 32.04s
+Tokens: 10,381 in / 570 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Adalberto Gerlach, a 72-year-old male, presented to the clinic today. He has a history of osteoarthritis, hypertension, heart attack, and heart failure, and is currently overweight. He is taking furosemide and ramipril for his blood pressure, as well as occasional Advil for pain. He has a penicillin allergy. He lives with his wife and daughter in Andover, Massachusetts. He is retired due to his medical history. He drinks alcohol occasionally.
+
+Chief Complaint:
+
+The patient's chief complaint is pain and swelling in his right knee that started five days ago.
+
+History of Present Illness:
+
+The patient reports that he initially thought the pain and swelling in his right knee were just arthritis acting up. However, the swelling and pain have become more pronounced than usual. The pain is described as stabbing, and it is most intense when he moves his knee. The pain radiates to the knee and is exacerbated by movement. He reports that rest helps alleviate the pain. He has been taking Advil, which provides some relief. He denies any trauma or injury to the knee. He did have a steroid injection to the same knee a week ago. He denies fevers or chills. He denies any changes to his senses. He denies a runny nose or sore throat, cough, or shortness of breath. He denies chest pain, lightheadedness, or dizziness. He denies nausea or vomiting, loss of appetite, or abdominal pain. He denies changes to his bowel movements or urinary problems. He denies skin changes. He reports pain in other joints, specifically his hips, which he attributes to osteoarthritis. He denies any memory changes or confusion. He denies unexpected weight loss. He denies night sweats.
+
+Past Medical History:
+
+The patient has a history of osteoarthritis in both knees and hips, hypertension, a heart attack four years ago, and heart failure. He is also overweight.
+
+Medications:
+
+The patient is currently taking furosemide and ramipril for his blood pressure, and occasional Advil for pain. He has a penicillin allergy.
+
+Allergies:
+
+The patient has a penicillin allergy.
+
+Family History:
+
+The patient's family history includes heart disease in his brother and father, and osteoarthritis in his mother.
+
+Physical Exam:
+
+The physical exam revealed that the patient's right knee is red, swollen, and warm to the touch, compared to his left knee. He has a limp when standing.
+
+Assessment:
+
+The patient's presentation is concerning for possible gout or septic arthritis.
+
+Plan:
+
+The plan is to perform a knee aspiration and send the fluid for analysis to rule out gout and septic arthritis. The results of the aspiration will guide further treatment.

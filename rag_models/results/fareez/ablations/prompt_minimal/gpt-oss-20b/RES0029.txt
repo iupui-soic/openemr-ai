@@ -1,0 +1,166 @@
+Model: openai/gpt-oss-20b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:27:57
+Time: 2.81s
+Tokens: 10,072 in / 2,015 out
+============================================================
+
+**Patient Information**  
+Name: Alyson Laila Leuschke | DOB: 1921‑02‑28 (age 105 yr, though the clinical context suggests a younger adult) | Sex: Female | Address: 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890  
+Chief Complaint: “Chest pain”  
+Reason for visit: Acute onset left‑sided chest pain after a bicycle fall.  
+
+---  
+
+## SOAP Summary  
+
+### S – Subjective  
+
+**History of Present Illness**  
+- 2‑hour history of sharp, stabbing pain localized to the left half of the chest immediately after falling off a bicycle.  
+- Pain intensified with deep, diaphragmatic breaths; shallow breaths provide temporary relief.  
+- Pain has worsened progressively over the last two hours.  
+- No radiation to arm, jaw, or back.  
+- Associated shortness of breath (“cannot catch my breath”), mild tachycardia (subjective “heart racing” in last hour).  
+- No dizziness, syncope, nausea, vomiting, chest pressure, diaphoresis, or fever.  
+- No loss of consciousness at fall, no head injury, no other visible injuries except minor scrapes on hands.  
+
+**Review of Systems**  
+
+| System | Findings |
+|--------|----------|
+| Constitutional | No fever, chills, weight loss, or night sweats. |
+| Respiratory | Shortness of breath, no cough, no wheeze. |
+| Cardiovascular | Mild tachycardia, no chest pressure or palpitations. |
+| Gastrointestinal | No nausea, vomiting, dyspepsia. |
+| Neurologic | No dizziness, weakness, numbness. |
+| Skin | No rash; minor hand scrapes. |
+| Other | No recent infections, no headaches. |
+
+**Past Medical History**  
+- Hypertension (diagnosed 1952)  
+- Type 2 diabetes mellitus (diagnosed 1953) – chronic kidney disease stage 1–4, on tacrolimus and epoetin alfa.  
+- Chronic kidney disease stage 1–4, end‑stage renal disease (on transplant, tacrolimus)  
+- Osteoarthritis of the knee (2011)  
+- History of viral sinusitis (2018‑2024)  
+- Multiple dental issues (gingivitis, lost fillings)  
+- No prior cardiac events, no known coronary artery disease.  
+
+**Past Surgical History**  
+- None reported.  
+
+**Family History**  
+- Father: Type 2 diabetes; no other significant illnesses noted.  
+
+**Social History**  
+- Works as a mechanic; lives alone.  
+- Smokes 2.5–3 packs/day; long‑time smoker (since age 18).  
+- Occasional weekend alcohol (beer).  
+- No recreational drug use.  
+- Uses nasal steroid spray (reports possible allergy).  
+
+**Allergies**  
+- Reports possible allergy to nasal spray steroids and some antihistamines; no known drug allergies listed.  
+
+**Current Medications**  
+- Tacrolimus (oral and injectable)  
+- Naproxen sodium 220 mg (oral)  
+- Epoetin alfa (injectable)  
+- Amlodipine 2.5 mg (oral)  
+- Sodium fluoride gel (topical)  
+- Mestranol/norethynodrel (historical oral contraceptive)  
+
+**Functional Status**  
+- Independent in ADLs, but currently experiencing discomfort that limits activity.
+
+### O – Objective  
+
+**Vital Signs**  
+- HR: 80 bpm (from EHR)  
+- RR: 12 breaths/min (from EHR)  
+- SpO₂: Not recorded  
+- BP: Not recorded  
+- Temperature: Not recorded  
+
+**Physical Examination** – *Not documented; assume focused exam pending*  
+- Chest: Tenderness over left lateral chest; possible crepitus?  
+- Respiratory: Decreased breath sounds on left? (to be assessed)  
+- Cardiovascular: Regular rhythm; no murmurs.  
+- Extremities: No obvious fractures.  
+
+**Laboratory Results** (selected)  
+- Glucose: 95.8 mg/dL  
+- BUN: 16.9 mg/dL  
+- Creatinine: (not listed; likely normal for CKD stage 1‑4)  
+- Potassium: 3.9 mmol/L  
+- Calcium: 8.9 mg/dL  
+- Hemoglobin/hematocrit: 13.5 g/dL / 38%  
+- Troponin/TnT: Not obtained yet  
+- Complete metabolic panel: (normal ranges except for mild anemia)  
+
+**Imaging** – *Not yet ordered*  
+
+### A – Assessment  
+
+1. **Acute traumatic left-sided chest pain with pleuritic component** – likely rib fracture or intercostal contusion secondary to bicycle fall.  
+2. **Risk of pneumothorax** – given pleuritic pain, dyspnea, and mechanism of injury.  
+3. **Potential for cardiac contusion or myocardial ischemia** – due to smoking, diabetes, and chest trauma; troponin to be obtained.  
+4. **Secondary considerations** – acute pulmonary contusion, pleural effusion, or underlying chronic obstructive pulmonary disease (COPD) exacerbation (history of smoking).  
+
+**Differential Diagnosis**  
+- Rib fracture (left side)  
+- Intercostal muscle strain / contusion  
+- Pneumothorax (spontaneous or traumatic)  
+- Pulmonary contusion / hematoma  
+- Acute pericarditis (unlikely but rule out with ECG)  
+- Acute coronary syndrome (rule out with ECG & troponin)  
+
+### P – Plan  
+
+1. **Diagnostic Work‑Up**  
+   - **Chest X‑ray** (anteroposterior/lateral) to identify rib fractures, pneumothorax, or pulmonary contusion.  
+   - **Chest CT angiography** if chest X‑ray inconclusive or if high suspicion of pneumothorax or pulmonary embolism (unlikely but consider).  
+   - **12‑lead ECG** to evaluate for arrhythmia or ischemia.  
+   - **Cardiac troponin (TnT or TnI)** to rule out myocardial injury.  
+   - **Complete blood count** (CBC) if not recent, to assess for anemia or infection.  
+
+2. **Pain Management**  
+   - Continue **Naproxen 220 mg PO** (if no contraindication to NSAID use with current renal status).  
+   - Consider **short‑acting opioid** (e.g., oral oxycodone 5 mg q4–6 h PRN) if pain remains severe; monitor for respiratory depression.  
+   - **Non‑pharmacologic**: Ice packs to the chest, elevation of head of bed, shallow breathing exercises, incentive spirometry.  
+
+3. **Respiratory Support**  
+   - Encourage **shallow, controlled breaths** and **avoid deep coughing**.  
+   - **Monitor respiratory rate, SpO₂** at bedside; consider supplemental oxygen if SpO₂ < 94 %.  
+
+4. **Monitoring and Safety**  
+   - **Vital signs q4 h** for first 24 h; assess for tachycardia, tachypnea, hypoxia.  
+   - **Serial ECGs** if troponin elevated or clinically indicated.  
+   - **Observation for signs of respiratory distress** (use of accessory muscles, cyanosis).  
+
+5. **Medication Review**  
+   - Re‑evaluate **tacrolimus levels**; avoid nephrotoxic agents.  
+   - Continue **amlodipine** for hypertension; monitor blood pressure.  
+   - Re‑check **elevated potassium** if renal function worsens.  
+
+6. **Patient Education**  
+   - Explain that chest pain after a fall is often due to rib fracture or contusion; pain usually resolves over 7–10 days with rest and analgesia.  
+   - Teach **deep breathing techniques** that are tolerable (shallow breaths) to prevent atelectasis.  
+   - Warn about signs that require immediate return: increasing chest pain, shortness of breath that worsens, fainting, or new fever.  
+   - Discuss smoking cessation resources (counseling, nicotine replacement) to reduce future cardiovascular risk.  
+
+7. **Disposition**  
+   - Admit for observation if imaging shows significant fracture or pneumothorax, or if vitals unstable.  
+   - If chest X‑ray normal and patient stable, consider discharge with pain medication, scheduled follow‑up in 48 h for repeat imaging if pain persists.  
+
+8. **Follow‑Up**  
+   - **Primary care / cardiology** within 48 h after discharge to review imaging and labs.  
+   - **Pulmonology** if COPD suspected or if pulmonary contusion confirmed.  
+   - **Nephrology** to monitor tacrolimus levels and renal function.  
+
+---  
+
+**Signature**  
+[Provider Name], MD  
+[Date]

@@ -1,0 +1,61 @@
+Model: openai/gpt-oss-20b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:16:33
+Time: 1.92s
+Tokens: 7,426 in / 857 out
+============================================================
+
+Patient Information  
+Name: Aaron (last name not provided)  
+Age: Approximately adolescent (exact age not documented)  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with a two‑day history of diminished taste (ageusia) and a dry cough.  
+
+History of Present Illness  
+Aaron reports that for the past two days he has noticed a loss of taste, describing food as “cardboard” and lacking normal flavor. He also reports a dry cough that began about three to four days ago. The cough is non‑productive, with no sputum or blood, and is accompanied by occasional shortness of breath after coughing. He has experienced mild fatigue and has slept more during the day. Aaron had a brief episode of mild dizziness upon standing in the morning, which resolved after sitting for a few minutes. He also had two episodes of non‑bloody diarrhea this morning but no abdominal pain. No fever, chills, or night sweats have been noted; the patient only felt a general sense of heat. There are no chest pain, wheezing, or significant respiratory distress reported. No recent trauma to the face or head. The patient denies fever, weight loss, night sweats, or other systemic symptoms.  
+
+Review of Systems  
+Constitutional: mild fatigue; no fever, weight loss, or night sweats.  
+ENT: loss of taste, mild sore/itchy throat; no nasal congestion, no runny nose.  
+Respiratory: dry cough, mild shortness of breath after coughing, no wheezing, no sputum, no chest pain.  
+Gastrointestinal: two episodes of mild diarrhea, no abdominal pain, no constipation, no blood in stool.  
+Cardiovascular: no chest pain, no palpitations, no known heart conditions.  
+Neurologic: mild dizziness upon standing, no confusion or memory loss.  
+Skin: no rash.  
+Genitourinary: urine normal.  
+Psychiatric: PHQ‑2 score 1 (minimal depressive symptoms); GAD‑7 score 0 (no anxiety).  
+
+Past Medical History  
+No documented chronic medical conditions. No prior surgeries except a routine appendectomy in high school, which was uncomplicated. No known medication allergies.  
+
+Social History  
+The patient is a high‑school student. Lives with mother, step‑father, and younger sister in a townhouse in the city. No recent travel. No tobacco use. The patient occasionally vapes flavored products; it is unclear whether these contain nicotine or marijuana. No alcohol use. No recreational drug use other than vaping.  
+
+Family History  
+Grandfather had lung cancer and diabetes; no known heart disease.  
+
+Medications  
+None reported at this time.  
+
+Assessment  
+Acute upper respiratory infection, most likely viral etiology (COVID‑19 or other common respiratory virus). Ageusia and dry cough are classic for COVID‑19. The brief episode of diarrhea and mild dizziness may represent systemic viral involvement or mild dehydration. No evidence of bacterial infection.  
+
+Plan  
+1. Order a rapid antigen or PCR test for SARS‑CoV‑2.  
+2. Advise patient to isolate for 14 days regardless of test result.  
+3. Provide symptomatic treatment: adequate hydration, over‑the‑counter analgesics or antipyretics if fever develops.  
+4. Monitor for worsening respiratory symptoms (increased cough, wheezing, dyspnea) and seek care if these occur.  
+5. Counsel on vaping: discuss potential respiratory irritant effects and encourage cessation or reduction, especially if respiratory symptoms persist.  
+6. Follow up in clinic or telehealth if symptoms worsen or do not improve within 5–7 days.  
+7. If test positive for COVID‑19, notify public health authorities per local protocol and consider isolation guidelines.  
+8. If test negative, reassess for alternative diagnoses (e.g., influenza, other viral URI) and consider further evaluation if symptoms persist.  
+
+Disposition  
+Patient instructed to remain at home and practice isolation. Contact clinic if symptoms worsen. No immediate emergency care required.  
+
+Signature  
+[Provider Name]  
+[Date]

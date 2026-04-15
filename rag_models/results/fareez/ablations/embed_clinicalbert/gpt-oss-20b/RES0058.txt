@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-20b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:54:28
+Time: 2.62s
+Tokens: 8,141 in / 1,276 out
+============================================================
+
+Patient Information  
+The patient is a young adult who presented to the office for evaluation of new-onset loss of taste and associated respiratory symptoms. Demographic details such as age, gender, and medical record number were not documented in the encounter notes.
+
+Chief Complaint  
+Loss of taste (ageusia) that began approximately two days ago, accompanied by a dry cough, mild fever, fatigue, and intermittent diarrhea.
+
+History of Present Illness  
+The patient reports that for the past two days he has noticed a significant reduction in flavor when eating, describing the taste as “cardboard-like.” He also reports a dry cough that began about three to four days ago. The cough is nonproductive and has been associated with shortness of breath after coughing episodes. He denies wheezing, chest pain, or sputum production. He has experienced mild fatigue, has slept more during the day, and feels generally “lazy.” He had one or two episodes of diarrhea this morning but no abdominal pain and no constipation. He also reports feeling a little dizzy upon standing in the morning, which resolved after a few minutes of rest; he suspects possible dehydration. There is no loss of appetite; he has been eating normally. The patient denies fever but reports feeling “hot.” He reports an itchy, scratchy throat that may be related to his cough. No nasal congestion or runny nose was noted. No rash, no recent travel, and no contact with pets. He has not had any recent trauma to the mouth or nasal area.
+
+Review of Systems  
+Constitutional: positive for fatigue, mild dizziness, subjective fever; negative for weight loss, night sweats, chills, or myalgias.  
+Respiratory: cough (dry, nonproductive), shortness of breath after coughing, no wheeze; negative for chest pain.  
+Cardiovascular: no chest pain, palpitations, or heart racing; denies hypertension.  
+Gastrointestinal: diarrhea (two episodes this morning), no abdominal pain, no nausea, no vomiting.  
+Neurologic: mild dizziness on standing, no confusion, no loss of consciousness.  
+Skin: no rash.  
+Urogenital: no urinary symptoms.  
+Psychological: no anxiety or depression noted; PHQ-2 score of 1 (from EHR) suggesting mild depressive symptoms.
+
+Past Medical History  
+No known chronic medical conditions were reported during this encounter. The patient has no history of hypertension, diabetes, kidney disease, or other significant illnesses. He has never undergone any surgeries except a routine appendectomy noted in his family medical record; however, no surgical history was confirmed for the patient in this visit.
+
+Surgical History  
+No operative procedures reported by the patient.
+
+Social History  
+The patient does not smoke cigarettes, does not use alcohol, and does not use recreational drugs. He occasionally uses flavored vape products a few times per day; the composition of these products is unclear but likely contains nicotine. He lives in a townhouse in an urban setting with his mother, stepfather, and younger sister. He reports no exposure to mold, old carpeting, or other environmental irritants. He attends high school in person.
+
+Family History  
+Grandfather had lung cancer and diabetes. No other family history of heart disease or respiratory disorders was reported.
+
+Medications  
+The patient reports no current prescription or over-the-counter medications. He has no known drug allergies. He does have a potential allergy to cats, but he does not have any pets at home and has not been exposed recently.
+
+Physical Examination  
+No vital signs or physical examination findings were recorded in the encounter documentation. Therefore, no information is available regarding blood pressure, heart rate, temperature, respiratory rate, oxygen saturation, or weight.
+
+Laboratory Studies  
+No laboratory studies were obtained during this encounter. Therefore, no lab results are available.
+
+Assessment  
+The presenting symptoms of sudden onset anosmia/dysgeusia, dry cough, low‑grade subjective fever, mild dyspnea after coughing, fatigue, mild dizziness, and brief diarrhea are most consistent with a viral upper respiratory tract infection. The constellation of sensory changes (loss of taste and possible decreased smell) strongly suggests COVID‑19 infection, which is currently prevalent in the community. Influenza or other viral etiologies are also possible but less likely given the sensory deficits. Bacterial sinusitis or other bacterial infections are less likely due to the absence of purulent nasal discharge, fever, or localized pain.
+
+Plan  
+
+1. **Diagnostic Testing**  
+   - Order a rapid antigen SARS‑CoV‑2 test (COVID‑19 swab) to confirm or exclude COVID‑19 infection.  
+
+2. **Isolation and Precautions**  
+   - Instruct the patient to self‑isolate at home for 14 days regardless of test result.  
+   - Emphasize hand hygiene, mask use when in close contact with others, and proper cough etiquette.  
+
+3. **Symptomatic Management**  
+   - Recommend acetaminophen or ibuprofen as needed for fever or malaise.  
+   - Encourage adequate hydration and rest.  
+   - Suggest nasal saline irrigation if nasal congestion develops.  
+
+4. **Monitoring**  
+   - Advise the patient to monitor for worsening dyspnea, chest pain, persistent fever, or new onset confusion.  
+   - If symptoms worsen or new symptoms such as severe shortness of breath, persistent high fever, or chest pain develop, the patient should seek urgent medical care or call emergency services.  
+
+5. **Follow‑up**  
+   - Schedule a telehealth or office follow‑up in 5–7 days to reassess symptoms and discuss test results.  
+
+6. **Education**  
+   - Explain the importance of completing the isolation period even if asymptomatic after testing negative.  
+   - Discuss that if the COVID‑19 test returns positive, public health authorities will be notified for contact tracing.  
+   - If the test is negative but symptoms persist or worsen, consider evaluation for bacterial infection and potential antibiotic therapy.  
+
+Disposition  
+The patient was advised to isolate, monitor symptoms, and follow up as outlined. He was provided written instructions regarding isolation and symptom monitoring. He left the office in stable condition.

@@ -1,0 +1,56 @@
+Model: qwen/qwen3-32b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:45:22
+Time: 4.75s
+Tokens: 11,559 in / 1,081 out
+============================================================
+
+Patient Information  
+The patient is a 92-year-old male, Albert Turner, residing in Barnstable, Massachusetts. He is married and lives in a small apartment. The patient has a history of essential hypertension, osteoarthritis, and chronic kidney disease. He is currently taking Ramipril for hypertension, along with vitamin D, calcium, and multivitamins. He denies any known allergies. His father had a history of heart attack in his 60s, and his mother had a history of non-melanoma skin cancer. The patient is not a smoker and consumes alcohol occasionally, approximately one glass of wine every other day. He has no history of illicit drug use.
+
+Chief Complaint  
+The patient presents with severe right hip pain following a fall that occurred approximately two hours prior to arrival. He fell down the stairs and landed on the right side of his body, including his head and hip. He is unable to bear weight on the affected leg and reports excruciating pain, rating it as 10/10.
+
+History of Present Illness  
+The patient fell while descending the stairs, missing a step and slipping. He landed on the right side of his body and immediately experienced severe pain in the right hip. The pain is sharp with movement and described as aching when at rest. He has not experienced any prior falls or similar pain. The pain is localized to the right hip and groin area, with associated swelling and redness noted. He denies any numbness, tingling, or radiating pain. There is no history of dizziness or fainting prior to the fall, though he reported feeling slightly dizzy in the ambulance, which he attributes to the pain. There are no associated symptoms such as headache, confusion, fever, or shortness of breath. The patient is unable to stand or move the affected leg without significant pain and notes that the right leg appears to be slightly externally rotated.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No changes in bowel or bladder habits.  
+Neurological: No headaches, dizziness, or memory changes.  
+Musculoskeletal: Pain and immobility in the right hip. No other joint pain.  
+Integumentary: No rashes.  
+Hematologic: No bruising or bleeding noted beyond the hip area.  
+Endocrine: No changes in vision, hearing, smell, or taste.  
+Psychiatric: No changes in mood or mental status.  
+
+Past Medical History  
+The patient has a complex medical history including essential hypertension, osteoarthritis, chronic kidney disease, ischemic heart disease, history of coronary artery bypass grafting, and a history of renal transplant. He also has a history of seizure disorder, social isolation, and limited social contact. He has undergone multiple medication reviews and has a history of dental issues, including gingivitis and dental caries.
+
+Past Surgical History  
+The patient has a history of coronary artery bypass grafting and a renal transplant.
+
+Social History  
+The patient does not smoke and consumes alcohol occasionally. He lives with his husband in a small apartment and reports limited social contact. He has no recent travel or exposure to ill individuals.
+
+Family History  
+His father had a history of heart attack in his 60s, and his mother had non-melanoma skin cancer. No known family history of musculoskeletal disorders or autoimmune conditions.
+
+Current Medications  
+The patient is currently taking Ramipril for hypertension, along with vitamin D, calcium, and multivitamins. No other medications are listed in the current encounter.
+
+Objective  
+Vital Signs: No recent vital signs were recorded in the OpenEMR extract.  
+Physical Examination: The patient is unable to bear weight on the right leg. There is localized swelling and redness in the right hip area. The right leg appears externally rotated compared to the left. The patient is unable to perform any hip movements due to pain. No deformities or bruises are noted, but there is a slight temperature increase on the right side.  
+
+Labs: No recent lab results are available for this encounter.  
+Imaging: No imaging results are included in the provided data.
+
+Assessment  
+Based on the history and physical examination, the patient is suspected to have a right hip fracture. Given his age, fall mechanism, and inability to bear weight, this is a high suspicion for a hip fracture, likely requiring surgical intervention. The patient also has a history of osteoarthritis and chronic kidney disease, which may impact surgical planning and postoperative recovery.
+
+Plan  
+The patient will be referred for orthopedic consultation to confirm the diagnosis with imaging and to determine the appropriate surgical approach, which may include internal fixation or hip replacement. Pain management will include ibuprofen or other over-the-counter analgesics as tolerated. The patient will be advised to remain non-weight bearing on the right leg. Following surgical intervention, a referral to physical therapy will be arranged to facilitate recovery and improve mobility. The patient will be monitored for complications such as deep vein thrombosis and postoperative infections. Discharge planning will include home health services and follow-up with the orthopedic surgeon.

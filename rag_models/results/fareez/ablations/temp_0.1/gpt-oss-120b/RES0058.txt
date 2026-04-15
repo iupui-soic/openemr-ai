@@ -1,0 +1,88 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:04:28
+Time: 5.21s
+Tokens: 8,264 in / 1,394 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: November 14, 1952 (Age 73)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint  
+Loss of taste and associated dry cough of 2–3 days duration.
+
+History of Present Illness  
+Aaron Russel is a 73‑year‑old male who presents with a sudden change in taste perception that began two days ago. He describes his food as “plain” and “like cardboard,” noting that even his favorite pizza lacks flavor. He also reports a concurrent dry cough that started three to four days ago, without sputum production or hemoptysis. The cough is non‑productive and does not cause wheezing. He mentions mild shortness of breath after coughing episodes and increased fatigue over the past several days, leading to more daytime sleep. Appetite remains intact, and he has not experienced significant weight loss. He had a brief episode of watery diarrhea this morning (one to two loose stools) but denies abdominal pain, constipation, or blood in the stool. He reports a mild, scratchy sensation in his throat but no sore throat. He denies fever, chills, night sweats, chest pain, palpitations, dizziness (except a brief light‑headedness on rising this morning, likely related to dehydration), muscle aches, rash, or urinary symptoms. He has not experienced any recent trauma to the face or nose. He is concerned that his symptoms may represent COVID‑19 infection.
+
+Review of Systems  
+Constitutional: No fever, chills, or night sweats; reports fatigue and brief dizziness on standing.  
+HEENT: Loss of taste, mild scratchy throat, no sore throat, no nasal congestion or rhinorrhea.  
+Respiratory: Dry cough for 3–4 days, no sputum, no hemoptysis, no wheezing, mild shortness of breath after coughing.  
+Cardiovascular: No chest pain, palpitations, or known heart racing.  
+Gastrointestinal: One episode of diarrhea this morning, no abdominal pain, no nausea, no vomiting, no blood or melena in stool, normal appetite, no recent weight change.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Musculoskeletal: No muscle aches or joint pain.  
+Neurologic: No confusion, memory loss, or focal deficits.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No anxiety or depression reported; PHQ‑2 score 1, GAD‑7 score 0 (from prior labs).  
+
+Allergies  
+Patient reports possible cat allergy but no current exposure to cats. No known drug allergies.
+
+Past Medical History  
+The patient states he has never been diagnosed with any chronic medical conditions. No prior surgeries reported by the patient. (Note: Historical EMR data lists numerous chronic conditions, but the patient’s current report indicates no known past medical problems; therefore the patient’s statement is documented as the current source.)
+
+Surgical History  
+No surgeries reported by the patient.
+
+Social History  
+The patient lives in a townhouse with his mother, step‑father, and younger sister. He does not smoke cigarettes or use marijuana. He uses a flavored vape “a few times a day,” uncertain whether it contains nicotine. He does not consume alcohol. He is a high‑school student attending in‑person classes. No recent travel. No known exposure to mold or environmental hazards.  
+
+Family History  
+Maternal and paternal histories are not provided. The patient reports that his grandfather had lung cancer and diabetes. No known hereditary heart disease.
+
+Current Medications  
+The patient reports that he is not taking any medications at this time.
+
+Objective  
+Vital Signs (most recent recorded in the EMR):  
+- Temperature: 37.7 °C (99.9 °F)  
+- Heart Rate: 62 beats/minute  
+- Respiratory Rate: 12 breaths/minute  
+- Blood Pressure: Not recorded  
+- SpO₂: Not recorded  
+- Height: 176.7 cm (5 ft 9 in)  
+- Weight: Not recorded; BMI documented as 31.03 (obese)  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data  
+No laboratory studies were obtained during this visit. Prior laboratory panels (electrolytes, renal function, glucose) are within normal limits and are not directly relevant to the current acute presentation.
+
+Assessment  
+1. Upper respiratory infection, likely viral (COVID‑19 pending).  
+2. New‑onset ageusia (loss of taste) and dysgeusia, consistent with viral etiology.  
+3. Dry cough with mild exertional dyspnea.  
+4. Acute, self‑limited diarrhea, likely viral gastroenteritis.  
+5. Dehydration contributing to brief orthostatic dizziness.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing today.  
+- Advise the patient to self‑isolate for 14 days regardless of test result, following local public‑health guidelines.  
+- Encourage adequate oral hydration, especially in light of recent diarrhea and mild dizziness.  
+- Symptomatic treatment: Use over‑the‑counter acetaminophen for any fever or discomfort; consider a cough suppressant (e.g., dextromethorphan) if cough becomes bothersome.  
+- Monitor for worsening symptoms: fever >38 °C, increasing shortness of breath, chest pain, new wheezing, or inability to maintain hydration. Seek urgent care if any of these develop.  
+- Counsel on vaping: Discuss the potential for nicotine or other irritants to exacerbate cough and advise reduction or cessation; provide resources for nicotine‑replacement therapy if desired.  
+- Follow‑up: Telephone or telehealth check‑in in 48–72 hours to review COVID‑19 test result and symptom progression. If the test returns positive, arrange appropriate public‑health reporting and discuss eligibility for monoclonal antibody therapy if within the therapeutic window. If symptoms persist beyond 10 days or worsen, schedule an in‑person evaluation.  
+
+Patient Education  
+The patient was educated on the typical course of viral upper respiratory infections, the importance of isolation to prevent spread, signs that warrant immediate medical attention, and strategies to maintain hydration and nutrition despite altered taste. He verbalized understanding and agreed with the plan.  
+
+Signature  
+[Physician’s Name], MD  
+Date: 2024‑04‑14

@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 05:59:27
+Time: 28.11s
+Tokens: 12,008 in / 435 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abraham Lowe
+Date of Birth: 1962-05-31
+Unit Number: 450
+
+Chief Complaint: Left knee pain.
+
+History of Present Illness:
+
+The patient presents with left knee pain that began approximately three to four months ago. The pain initially limited activity, but has since progressed to include pain at rest. The patient reports that the pain is sharp and stabbing, particularly when bearing weight, and described as dull while at rest. The pain is exacerbated by activities such as walking upstairs or downstairs, and running. The patient has a history of similar knee pain in the past, which resolved with rest and stretching. He denies any recent changes in the severity of the pain. The pain is currently rated as a 6/10.
+
+Past Medical History:
+
+The patient has a history of essential hypertension, chronic kidney disease stage 1, and obesity. He also has a history of a criminal record, refugee status, and a history of being a victim of intimate partner abuse. He reports no hospitalizations or surgeries.
+
+Medications:
+
+The patient is currently taking acetaminophen, meperidine hydrochloride, ibuprofen, sodium fluoride, and insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML.
+
+Social History:
+
+The patient is currently single and living alone. He is finishing his Masters degree. He denies smoking or recreational drug use.
+
+Physical Exam:
+
+The physical exam revealed no visible swelling or bruising. The patient reported pain with knee flexion and extension. The Ober test was positive.
+
+Assessment:
+
+The patient's symptoms and physical exam findings are consistent with iliotibial band syndrome.
+
+Plan:
+
+The patient is advised to modify his activity to avoid aggravating the knee. He is also instructed to apply ice or heat to the affected area. He will be referred for physical therapy to strengthen the muscles around the knee and improve range of motion. If conservative measures fail, further treatment options such as ultrasound therapy or shockwave therapy may be considered.
+
+Discharge Instructions:
+
+The patient is instructed to follow up with his primary care physician as needed.

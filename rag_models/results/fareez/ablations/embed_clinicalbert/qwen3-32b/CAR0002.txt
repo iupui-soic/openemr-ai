@@ -1,0 +1,60 @@
+Model: qwen/qwen3-32b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:00:21
+Time: 4.10s
+Tokens: 8,912 in / 1,326 out
+============================================================
+
+Patient Information  
+Amos Crona, a 90-year-old male, presents to the clinic with a chief complaint of chest pain. He resides at 201 O'Conner Glen, Wayland, Massachusetts. The patient is currently living with his parents in a house. He works as a bus driver for the city and reports that he typically exercises on Sundays by going for a run. His diet is described as fairly balanced, though he admits to eating out frequently. The patient has a long history of tobacco use, with a current consumption of half a pack to a full pack per day. He denies alcohol use but admits to recreational use of crystal meth in the past, with the last use occurring six days prior to the visit. He has a history of high cholesterol and high blood pressure, for which he is currently taking Rosuvastatin and Lisinopril. He also takes a multivitamin. He has no known drug allergies.
+
+Chief Complaint  
+The patient reports sudden onset of left-sided chest pain that began 30 minutes prior to the visit. The pain is described as dull with a sensation of pressure, and he rates it as a 7 on a scale of 0 to 10. The pain has remained constant and has not improved with rest or activity. It is exacerbated by movement and is worse when lying down. The patient denies any prior episodes of chest pain.
+
+History of Present Illness  
+The patient attributes the onset of chest pain to physical exertion while shoveling snow. The pain has persisted since then and is localized to the left side of the chest without radiation to other areas. He reports associated symptoms of shortness of breath and a sensation of increased heart rate. He denies cough, fever, nausea, vomiting, dizziness, syncope, or any recent injuries to the chest. He mentions a mild fever of 38 degrees Celsius but no other systemic symptoms. The patient denies any recent travel or exposure to sick contacts.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: He reports mild shortness of breath but denies cough, sputum production, or wheezing.  
+Cardiovascular: Chest pain is the primary concern. The patient notes a sensation of increased heart rate.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No dizziness or syncope.  
+Musculoskeletal: No joint pain or muscle aches.  
+Other: No rash, swelling, or changes in skin appearance.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a long-standing history of prediabetes, anemia, obesity, sleep apnea, essential hypertension, metabolic syndrome, chronic kidney disease (stages 1 through 4), ischemic heart disease, chronic low back and neck pain, and a history of renal transplant. He has also been diagnosed with chronic pain, gingival disease, and a seizure disorder. The patient has a history of sleep apnea, chronic kidney disease, and has undergone a renal transplant.
+
+Surgical History  
+No surgical history reported.
+
+Social History  
+The patient has a history of tobacco use for approximately 20 years, with current consumption of half a pack to a full pack per day. He denies alcohol use but admits to recreational use of crystal meth, with the last use occurring six days prior to the visit. He has used crystal meth approximately twice a month over the past seven years. The patient reports a fairly balanced diet, though he acknowledges eating out frequently.
+
+Family History  
+No family history of heart attacks or cancers reported.
+
+Current Medications  
+The patient is currently taking Rosuvastatin and Lisinopril for high cholesterol and high blood pressure, respectively. He also takes a multivitamin. His medication history includes a variety of prescriptions for chronic conditions, including hypertension, hyperlipidemia, renal transplant management, and chronic pain. Notably, he has a history of long-term use of opioids and benzodiazepines.
+
+Objective  
+Vital signs at the time of the visit were not recorded in the OpenEMR extract. The patient's height is 168 cm, and his weight is not available. His BMI is listed as 30.97, indicating obesity. His heart rate is recorded as 91 bpm, and his respiratory rate is 14 breaths per minute. No temperature, blood pressure, or oxygen saturation data were available at the time of the visit.  
+
+Physical examination findings are not detailed in the OpenEMR extract. The patient's current symptoms are primarily based on self-reporting from the clinical interview.
+
+Laboratory Results  
+Recent lab results include creatinine of 0.72 mg/dL, glucose of 84.52 mg/dL, urea nitrogen of 17.43 mg/dL, potassium of 4.31 mmol/L, sodium of 141.55 mmol/L, and cholesterol of 185.27 mg/dL. Additional results are available but not relevant to the current presentation.
+
+Imaging  
+No imaging studies are reported in the OpenEMR extract.
+
+Assessment  
+The patient presents with acute onset of left-sided chest pain following physical exertion. The pain is described as dull and pressure-like, with a rating of 7/10. It is not relieved by rest and is exacerbated by movement and lying down. The patient also reports associated symptoms of shortness of breath and increased heart rate. Given his history of ischemic heart disease, hypertension, and hyperlipidemia, the differential diagnosis includes acute coronary syndrome, musculoskeletal chest pain, and possibly pulmonary causes such as pleuritis or pulmonary embolism. The patient's recreational use of crystal meth may also contribute to his symptoms, as stimulant use can increase cardiac workload and precipitate chest pain.
+
+Plan  
+The patient requires immediate evaluation for potential acute coronary syndrome. An electrocardiogram (ECG) should be performed to assess for signs of myocardial ischemia. Cardiac enzymes should be obtained to rule out myocardial infarction. A chest X-ray may be considered to evaluate for pulmonary causes of chest pain. The patient should be monitored for any changes in symptoms, including worsening chest pain, dyspnea, or syncope. Further evaluation by a cardiologist is recommended. The patient should be advised to avoid strenuous activity and to seek immediate medical attention if symptoms worsen. Follow-up with his primary care physician is also indicated to review his current medications and management plan for chronic conditions.

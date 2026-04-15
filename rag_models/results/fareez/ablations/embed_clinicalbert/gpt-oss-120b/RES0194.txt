@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:48:24
+Time: 4.50s
+Tokens: 6,551 in / 1,553 out
+============================================================
+
+Patient Information  
+Name: Abbey Shala Kunde  
+Date of Birth: 02 March 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+Identifier: Patient ID 109  
+
+Chief Complaint  
+The patient presents with a three‑day history of dry cough accompanied by diffuse body aches, frontal pressure‑type headaches, and a sensation of being feverish. She also reports a single episode of watery diarrhea on the previous day and decreased appetite.
+
+History of Present Illness  
+Abbey reports that the dry cough began three days ago and was the first symptom to appear. The cough is non‑productive; she denies sputum, blood, or wheezing. Two days after the cough started, she developed generalized muscle aches (“feeling achy all over”) without any recent exertion, injury, or heavy lifting. The aches have been continuous and mild. Concurrently, she has experienced daily frontal headaches described as a band‑like pressure around the forehead. The headaches are intermittent, lasting several hours, and are partially relieved by acetaminophen (Tylenol) and ibuprofen (Advil), though they tend to recur as the medication wears off. She reports feeling “a little bit feverish” for the past couple of days but has not measured a temperature and has had no chills. She denies sore throat, nasal congestion, rhinorrhea, chest pain, shortness of breath, nausea, vomiting, loss of taste or smell, night sweats, or fatigue. She had one episode of loose, non‑bloody stool yesterday and notes a decreased appetite, though her weight has remained stable. No recent travel, known sick contacts, or exposure to animals, dust, or fumes was reported. She has been working from home for the past two days and has not attended her office.
+
+Review of Systems  
+Constitutional: Feverish feeling, diffuse myalgias, decreased appetite; no documented weight loss, chills, night sweats.  
+Head/Eyes/Ears/Nose/Throat: Frontal pressure‑type headache; no sore throat, nasal discharge, or loss of taste/smell.  
+Respiratory: Dry cough; no shortness of breath, wheeze, or chest pain.  
+Cardiovascular: No chest discomfort, palpitations, or edema.  
+Gastrointestinal: One day of watery diarrhea, no blood, no abdominal pain, no nausea/vomiting.  
+Genitourinary: No dysuria or urinary frequency reported.  
+Neurologic: Headache as described; no focal deficits.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depressive symptoms reported at this visit.  
+
+Past Medical History  
+The patient reports she has been generally healthy and denies any chronic medical conditions. (No documented history of hypertension, obesity, or prior infections per patient report.)  
+
+Surgical History  
+She reports a left ACL reconstruction performed approximately ten years ago; otherwise, no surgeries.  
+
+Social History  
+Employment: Full‑time employee of a pharmacy company; occasionally works on‑site but has been remote for the last two days due to illness.  
+Living Situation: Resides in a townhouse in Boston with her wife; spouse is asymptomatic.  
+Tobacco: Never smoker.  
+Alcohol: Consumes 3–4 beers per week.  
+Recreational Substances: Occasionally uses CBD oil; denies other recreational drug use.  
+Protective Measures: Uses masks and follows workplace cleaning and distancing protocols.  
+
+Family History  
+Father: Hypertension.  
+Paternal Grandfather: Lung cancer (smoker). No other family medical problems reported.  
+
+Allergies  
+Food: Peanut allergy (carries epinephrine auto‑injector).  
+Medications: No known drug allergies.  
+
+Current Medications  
+Multivitamin (daily).  
+Vitamin D supplement (daily).  
+No prescription medications reported.  
+
+Vital Signs (most recent documented)  
+Heart Rate: 98 beats per minute  
+Respiratory Rate: 15 breaths per minute  
+Body Mass Index: 35.84 kg/m² (obesity category) – recorded in prior EMR entry.  
+Blood Pressure, Temperature, and SpO₂: Not recorded at this encounter.  
+
+Physical Examination  
+No physical examination findings documented in the encounter note.  
+
+Laboratory and Diagnostic Data  
+No point‑of‑care laboratory studies were obtained during this visit. Historical laboratory values from prior records show a normal complete blood count (WBC 5.8 ×10³/µL, Hemoglobin 16.3 g/dL, Hematocrit 42.5 %). Lipid panel shows HDL 61 mg/dL and triglycerides 106 mg/dL. Recent PHQ‑2 and GAD‑7 scores are low, indicating minimal depressive or anxiety symptoms. No microbiology or imaging studies performed today.  
+
+Assessment  
+1. Upper respiratory infection, likely viral, presenting with dry cough, frontal pressure headache, myalgias, low‑grade feverish sensation, and brief diarrhea.  
+2. COVID‑19 infection to be excluded.  
+3. Peanut allergy – stable, epinephrine auto‑injector on hand.  
+
+Plan  
+Diagnostic Testing  
+- Obtain a nasopharyngeal SARS‑CoV‑2 PCR swab today. Results anticipated within 24–48 hours.  
+- No additional laboratory testing required at this time.  
+
+Therapeutic Recommendations  
+- Symptomatic management: Continue acetaminophen 650 mg every 4–6 hours as needed for fever or headache, not to exceed 3 g per day.  
+- Ibuprofen 200 mg every 6–8 hours may be used if acetaminophen alone is insufficient, provided no contraindications.  
+- Increase fluid intake, maintain adequate hydration, and rest.  
+- Monitor temperature at home; if temperature exceeds 38.5 °C (101.3 °F) or if symptoms worsen (increasing dyspnea, persistent high fever, chest pain, new confusion), seek medical attention.  
+
+Infection Control / Public Health  
+- Advise self‑isolation for at least 14 days from symptom onset or until cleared by public health authorities based on test results and symptom resolution.  
+- Follow any additional instructions from local health department regarding repeat testing or release to work.  
+
+Follow‑Up  
+- Telehealth follow‑up in 48 hours to discuss COVID‑19 test result and reassess symptoms.  
+- If test returns positive, reinforce isolation guidelines and provide resources for monitoring.  
+- If symptoms persist beyond 10 days or worsen at any time, schedule an in‑person evaluation.  
+
+Patient Education  
+- Reviewed signs of worsening infection (shortness of breath, chest pain, high fever, confusion).  
+- Reinforced proper use of epinephrine auto‑injector for accidental peanut exposure.  
+- Discussed the expected course of viral upper respiratory infections (typically 7–10 days).  
+
+Disposition  
+The patient was discharged home with instructions as above, a prescription for acetaminophen if needed, and a COVID‑19 test kit. No immediate further interventions are required at this time.  
+
+Signature  
+Dr. External Provider, MD  
+Date: 04 August 2024

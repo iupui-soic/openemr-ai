@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:13:26
+Time: 5.41s
+Tokens: 5,574 in / 1,520 out
+============================================================
+
+Patient Information:
+Abbey Eliza Schmitt, female, date of birth September 27, 1965 (age 60). Address: 291 Franecki Union, Hudson, Massachusetts 01749. Medical record number: 103.
+
+Chief Complaint:
+Dry cough of three days’ duration with associated feverish sensation, fatigue, and sleep disturbance.
+
+History of Present Illness:
+The patient reports the onset of a persistent, dry cough three days ago that has progressively worsened and is now present throughout the day. The cough is non‑productive; she has not noticed any sputum, blood, or other respiratory secretions. Today she began to feel hot, describing a fever‑like sensation, although she has not taken a temperature measurement. She also reports chills and night sweats last night, generalized fatigue, mild headache, and diffuse muscle aches. The cough interferes with sleep, leading to poor rest. She denies shortness of breath, wheezing, chest pain, palpitations, dizziness, syncope, nausea, vomiting, diarrhea, dysuria, or changes in taste or smell. There are no known triggers such as cold air, smoke, dust, or pet exposure. Over‑the‑counter cough syrup has been tried without relief. She notes that her husband has been vomiting for the past two days and feels “hot”; he has not been evaluated by a physician. No other household members are ill.
+
+Past Medical History:
+- Hypothyroidism, treated with levothyroxine (Synthroid).  
+- Essential hypertension.  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus, with documented microalbuminuria.  
+- Chronic congestive heart failure.  
+- Osteoarthritis of the knee.  
+- Chronic low back pain and chronic neck pain.  
+- Prior acute bronchitis (2015).  
+- Recurrent viral sinusitis (multiple episodes 2014‑2017).  
+- Acute viral pharyngitis (2018).  
+- History of intimate partner abuse and chronic stress.  
+- Obesity (BMI 30.06).  
+- Appendectomy in adolescence, uncomplicated.
+
+Medications:
+- Levothyroxine (Synthroid) – dose not specified.  
+- Amlodipine 2.5 mg daily.  
+- Naproxen sodium 220 mg as needed for pain.  
+- Furosemide (dose unspecified).  
+- Multivitamin daily.  
+- Previously prescribed cough syrup containing acetaminophen, dextromethorphan, and doxylamine (no longer effective).  
+
+Allergies:
+No known medication allergies.
+
+Social History:
+The patient lives in a townhouse with her husband and two teenage children. She works from home performing marketing duties and does not have occupational exposures. She does not smoke cigarettes, reports occasional alcohol consumption (approximately one glass of wine every three to four days), and uses marijuana on an irregular basis. No regular recreational drug use. Exercise is not reported. She recently moved to the current residence. Her husband is currently ill with vomiting and feverish symptoms; children are well.
+
+Family History:
+- Sister experienced a recent myocardial infarction.  
+- Parents were alive until recently and had no known cardiac disease.  
+- No known family history of cancer, diabetes, or chronic pulmonary disease.
+
+Review of Systems:
+Constitutional: Feverish sensation today, chills and night sweats last night, fatigue, mild headache, muscle aches.  
+HEENT: No sore throat, no nasal discharge, no ear or eye discharge, no pain around eyes or ears.  
+Respiratory: Persistent dry cough, no sputum, no hemoptysis, no shortness of breath, no wheezing, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting (patient), no diarrhea, normal appetite though coughing makes eating difficult.  
+Genitourinary: No dysuria, no urinary frequency.  
+Musculoskeletal: Muscle aches, chronic low back and neck pain.  
+Neurologic: Mild headache, no dizziness or loss of consciousness.  
+Skin: No rash or skin changes.  
+Psychiatric: No reported anxiety beyond mild GAD‑7 score of 3.  
+ENT: No loss of taste or smell.
+
+Objective Findings:
+Vital signs recorded in the EMR (date 2012) show a heart rate of 98 beats/min and respiratory rate of 15 breaths/min; blood pressure and temperature were not documented at the current visit. Body mass index is 30.06 (obese). Laboratory data available from recent testing include: Sodium 139.9 mmol/L, Potassium 4.41 mmol/L, Carbon dioxide 20.98 mmol/L, Serum glucose 67.3 mg/dL, Creatinine 1.99 mg/dL, LDL cholesterol 101.5 mg/dL, Total cholesterol 175.8 mg/dL, and urine dipstick abnormalities (protein, ketones, bilirubin). No complete blood count or inflammatory markers are presently available.
+
+Assessment:
+1. Acute bronchitis – likely viral in etiology, presenting with a dry cough, low‑grade fever, and systemic symptoms.  
+2. Rule‑out COVID‑19 infection given recent exposure to a household member with gastrointestinal symptoms and fever, and the patient’s compatible respiratory symptoms.  
+3. Chronic conditions (hypothyroidism, hypertension, CKD stage 2, type 2 diabetes, congestive heart failure, obesity) are stable based on prior records, but will be monitored.
+
+Plan:
+- Diagnostic testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR, and a rapid influenza test. Order a chest radiograph to evaluate for possible pneumonia. Consider a basic metabolic panel and CBC with differential to assess for infection or electrolyte abnormalities.  
+- Symptomatic management: Encourage increased fluid intake, humidified air, and rest. Prescribe an antitussive (e.g., dextromethorphan) if cough remains distressing. Recommend acetaminophen 500 mg every 6 hours as needed for fever or discomfort, provided renal function remains stable. Continue current chronic medications.  
+- Education: Advise patient on infection control measures, including hand hygiene, mask use around the ill husband, and isolation until COVID test results return. Discuss the limited benefit of antibiotics for uncomplicated viral bronchitis and the importance of follow‑up if symptoms worsen (e.g., development of dyspnea, chest pain, high fever, or purulent sputum).  
+- Follow‑up: Schedule a telehealth or in‑person visit within 48‑72 hours to review test results and clinical progression. Advise immediate return to the emergency department if she experiences worsening shortness of breath, high fever, or any new concerning symptoms.  
+- Chronic disease management: Review thyroid function and blood pressure at the next routine visit; ensure renal function remains stable given furosemide use.  
+
+The patient verbalized understanding of the plan and consented to the recommended testing and treatment.

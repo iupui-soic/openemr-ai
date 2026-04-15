@@ -1,0 +1,60 @@
+Model: openai/gpt-oss-20b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:56:45
+Time: 1.57s
+Tokens: 6,704 in / 707 out
+============================================================
+
+Patient Information  
+The patient is a 1‑year‑old male child brought in by his mother. No other identifying details such as date of birth or address are provided in the encounter documentation.  
+
+Chief Complaint  
+The mother presents with a 2‑day history of fever, dry cough, and clear runny nose in her son.  
+
+History of Present Illness  
+The mother reports that the child began with a dry cough and clear rhinorrhea about two days ago. Fever with chills developed last night; the home thermometer read 38.8 °C (101.8 °F). The cough remains dry, without sputum or hemoptysis. No dyspnea, wheeze, or chest pain is reported. The child has a mild sore throat, but it is not severely painful and has not interfered with eating. Appetite is slightly decreased; the child is still eating solids, albeit in smaller portions. There have been no vomiting, diarrhea, or abdominal pain. The child has no ear pain or discharge, and no eye symptoms. The mother notes no changes in hearing, vision, or sense of taste and smell. No rash, dizziness, fainting, or neurological changes are reported.  
+
+Review of Systems  
+Constitutional: fever (38.8 °C), chills, mild malaise, decreased appetite.  
+Respiratory: dry cough, clear rhinorrhea, no wheeze, no dyspnea, no chest pain.  
+ENT: mild sore throat, no ear pain, no nasal congestion, clear nasal discharge.  
+Cardiovascular: no chest pain or palpitations.  
+Gastrointestinal: adequate appetite for solids, no vomiting or diarrhea.  
+Neurologic: no dizziness, fainting, or tingling.  
+Skin: no rash.  
+
+Social History  
+The child lives with his mother, father, and two younger siblings. No household smokers. No alcohol, recreational drugs, or tobacco exposure reported.  
+
+Past Medical History  
+No chronic illnesses, surgeries, or hospitalizations reported.  
+
+Family History  
+No family history of lung or heart disease reported. The mother notes a paternal grandfather with hypertension and hypercholesterolemia.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Current Medications  
+No current medications.  
+
+Objective  
+Vital Signs: The child’s temperature is 38.8 °C. Heart rate, respiratory rate, blood pressure, SpO₂, and weight were not measured in this visit.  
+
+Physical Examination  
+No physical examination findings are documented in the transcript.  
+
+Assessment  
+Upper respiratory viral illness, likely common cold or influenza. COVID‑19 infection is possible given overlapping symptoms.  
+
+Plan  
+1. Obtain a SARS‑CoV‑2 PCR test and wait for results.  
+2. Provide supportive care: encourage fluid intake, offer nutrient‑rich foods, and use age‑appropriate antipyretics if needed (acetaminophen) for fever or discomfort.  
+3. Monitor symptoms closely; if the child develops worsening cough, difficulty breathing, high fever (>39 °C), persistent vomiting, or new neurological symptoms, seek emergency care immediately.  
+4. Follow up with the primary care provider or return for test results in 24–48 hours.  
+5. No medications prescribed at this time.  
+
+No additional laboratory or imaging studies are ordered.  
+
+End of summary.

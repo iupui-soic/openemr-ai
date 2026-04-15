@@ -1,0 +1,91 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:09:07
+Time: 3.82s
+Tokens: 6,674 in / 1,381 out
+============================================================
+
+Patient Information  
+Name: Abbey Shala Kunde  
+Date of Birth: March 2, 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+Unit Number: 109  
+
+Chief Complaint  
+The patient presents with a three‑day history of dry cough, diffuse body aches, and frontal pressure‑type headaches. She also reports feeling feverish and having one episode of loose, non‑bloody diarrhea.
+
+History of Present Illness  
+Abbey reports that the cough began three days ago and was the first symptom to appear. The cough is dry, without sputum production or hemoptysis. Two days after the onset of cough she began to experience generalized muscle aches and a pressure‑type headache located across the forehead, described as a “band” of squeezing. The headache is intermittent, occurring daily and partially relieved by acetaminophen (Tylenol) and ibuprofen (Advil), but returns as the medication effect wanes. She feels mildly febrile, describing a sensation of being “hot,” although she has not measured a temperature. She denies chills, sore throat, rhinorrhea, chest pain, shortness of breath, nausea, vomiting, loss of taste or smell, night sweats, or fatigue. She reports one day of watery diarrhea without blood or mucus and notes a decreased appetite but stable weight. She has not tried any therapy for the cough. She is concerned that her illness could be COVID‑19.
+
+Review of Systems  
+Constitutional: Feverish feeling, diffuse myalgias, decreased appetite; no documented weight loss, chills, or night sweats.  
+Respiratory: Dry cough, no sputum, no hemoptysis, no shortness of breath, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: One episode of loose, non‑bloody diarrhea; no nausea, vomiting, or abdominal pain.  
+Neurologic: Frontal pressure‑type headache, intermittent; no visual changes, dizziness, or syncope.  
+ENT: No sore throat, no rhinorrhea, no loss of taste or smell.  
+Dermatologic: No rash.  
+Psychiatric: No anxiety or depression reported at this visit.  
+
+Allergies  
+Medication: No known drug allergies.  
+Environmental/Food: Allergic to peanuts; carries an epinephrine auto‑injector.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 2011, ongoing)  
+- Obesity (BMI >30, ongoing)  
+- Recurrent urinary tract infections (ongoing)  
+- Prior viral sinusitis (2019, 2022) and acute bronchitis (2020)  
+- History of intimate partner violence (documented 2020‑2022)  
+- Chronic stress (documented intermittently)  
+- Past miscarriage and other obstetric history (not currently relevant)  
+
+Surgical History  
+- Anterior cruciate ligament repair of the knee approximately 10 years ago.  
+
+Social History  
+The patient works part‑time for a pharmacy company and occasionally attends the office, where mask use and cleaning protocols are in place. She has been working from home for the past two days due to illness. She lives in a townhouse with her wife, who is asymptomatic. She does not smoke cigarettes, uses occasional CBD oil, and drinks 3‑4 beers per week. No illicit drug use reported.  
+
+Family History  
+Father has hypertension. Maternal grandfather died of lung cancer in his 80s; he was a lifelong smoker. No other significant hereditary conditions reported.  
+
+Current Medications  
+- Multivitamin (daily)  
+- Vitamin D supplement (daily)  
+No prescription medications reported at this visit.  
+
+Vital Signs  
+No vital signs were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript.  
+
+Laboratory Data  
+Recent laboratory panels (dates not specified) show:  
+- Hemoglobin 16.3 g/dL, Hematocrit 42.5 % (within normal limits)  
+- White blood cell count 5.8 ×10³/µL (normal)  
+- Platelet count 197 ×10³/µL (normal)  
+- Normal red cell indices (MCV 81.6 fL, MCH 28.5 pg, MCHC 34.1 g/dL)  
+- Lipid panel: HDL 61 mg/dL, Triglycerides 106 mg/dL (within normal limits)  
+- PHQ‑2 score 2, GAD‑7 score 7 (mild anxiety)  
+
+Assessment and Diagnosis  
+1. Upper respiratory infection, likely viral in etiology.  
+2. Rule‑out SARS‑CoV‑2 infection (COVID‑19) given overlapping symptoms.  
+3. Mild dehydration secondary to recent diarrhea.  
+4. Chronic hypertension, obesity, and recurrent UTIs – stable, no acute issues noted today.  
+
+Plan  
+Testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR during this visit. Instruct the patient to self‑isolate for at least two weeks or until symptom resolution and until test results are available (expected within 24‑48 hours). Advise to follow any additional public‑health guidance regarding repeat testing or clearance to return to work.  
+
+Symptomatic Treatment: Continue acetaminophen or ibuprofen for headache and myalgias as needed, not exceeding recommended dosing. Encourage increased oral fluid intake to address dehydration from diarrhea. Recommend a bland diet while appetite is reduced.  
+
+Monitoring: Advise the patient to monitor temperature (use a thermometer) and seek urgent care if fever >38.5 °C, worsening cough, dyspnea, chest pain, persistent vomiting, blood in stool, or new neurologic symptoms.  
+
+Follow‑up: If COVID‑19 test is positive, follow local public‑health isolation protocols and contact primary care for further management. If test is negative and symptoms persist beyond 10 days or worsen, schedule a follow‑up visit or consider further evaluation (e.g., chest radiograph).  
+
+Patient Education: Reviewed signs of worsening illness and the importance of isolation to protect household contacts. Discussed supportive care measures, proper hand hygiene, and mask use when around others.  
+
+Disposition: The patient was discharged home with instructions as above. No prescriptions were written at this time.

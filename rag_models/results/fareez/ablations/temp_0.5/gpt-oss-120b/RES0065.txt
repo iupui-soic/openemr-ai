@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:08:29
+Time: 4.48s
+Tokens: 10,668 in / 1,348 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: 1951‑10‑26 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Sore throat of three days’ duration with associated fever and fatigue.  
+
+History of Present Illness  
+Abbey reports the onset of a sore throat three days ago. The pain has been constant and is worsened by swallowing, especially solid foods, and occasionally by very cold liquids. She notes that the throat discomfort has been progressively worsening. One day ago she began to feel feverish, describing sensations of heat and chills, although she has not taken a measured temperature. She reports associated fatigue and generalized tiredness but denies headache, nausea, vomiting, night sweats, or weight loss. She has not noticed a specific pattern to the symptoms; they are present throughout the day and night. She denies cough, shortness of breath, chest pain, palpitations, or any gastrointestinal symptoms such as diarrhea or constipation. She has observed palpable “lumps” in the neck, which she interprets as swollen lymph nodes, but reports no swelling elsewhere on the body or any skin rash. She has not been in contact with anyone known to be ill, has not traveled recently, and has not had a recent upper‑respiratory infection. She rates her sleep as adequate (7–8 hours per night) and reports that her appetite is unchanged, although solid food intake is limited by throat pain. She denies use of tobacco, alcohol (only occasional past use, discontinued because it worsens her Crohn’s disease), and recreational drugs. She swims regularly for exercise and does not participate in contact sports.
+
+Review of Systems  
+Constitutional: Feverish feeling with chills, fatigue; no weight loss, no night sweats.  
+HEENT: Sore throat constant, pain on swallowing; no cough, no nasal congestion, no ear pain, no visual changes.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or known heart disease reported.  
+Gastrointestinal: Normal bowel movements, no nausea, vomiting, abdominal pain.  
+Genitourinary: No dysuria or urinary changes.  
+Musculoskeletal: No joint pain; reports swimming as regular activity.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Dermatologic: No rash or skin lesions.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Crohn’s disease, diagnosed in 2023; currently managed with sulfasalazine (patient reports “something like sulfasalazine”).  
+
+Surgical History  
+- Colonoscopy with brief observation stay in 2023; no other surgeries reported.  
+
+Social History  
+- Lives in an apartment with parents and younger brother.  
+- No current tobacco, alcohol, or illicit drug use.  
+- Engages in swimming for recreation; no contact sports.  
+
+Family History  
+- First‑degree relatives with Crohn’s disease and ulcerative colitis.  
+- Additional family history of asthma and eczema.  
+
+Allergies  
+- No known drug, food, or environmental allergies reported.  
+
+Current Medications  
+- Sulfasalazine (dose not specified). No other home medications reported.  
+
+Objective  
+Vital Signs: Heart rate 89 beats/min; respiratory rate 13 breaths/min; temperature not measured; blood pressure not recorded; SpO₂ not recorded; weight not recorded.  
+Physical Examination: No physical exam findings documented in the encounter.  
+
+Laboratory and Diagnostic Data  
+No point‑of‑care laboratory results were obtained during this visit. The provider ordered a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 test) and serologic testing for Epstein‑Barr virus (EBV) antibodies to evaluate for infectious mononucleosis. Results are pending and expected within 24–48 hours.  
+
+Assessment  
+1. Acute pharyngitis – likely viral in etiology (COVID‑19 and EBV pending).  
+2. Fever, likely secondary to the acute infection.  
+3. Cervical lymphadenopathy associated with the pharyngeal infection.  
+4. Crohn’s disease – stable on sulfasalazine, no current flare reported.  
+
+Plan  
+Diagnostics:  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Order EBV viral capsid antigen (VCA) IgM and IgG, and EBNA antibodies to assess for acute infectious mononucleosis.  
+
+Therapeutic:  
+- Recommend symptomatic treatment with acetaminophen for fever and throat discomfort as needed, respecting any contraindications.  
+- Continue current Crohn’s disease therapy (sulfasalazine) without interruption.  
+- Encourage adequate hydration and a soft‑diet as tolerated; use throat lozenges or warm saline gargles for temporary relief.  
+
+Infection Control:  
+- Advise patient to self‑isolate at home pending COVID‑19 test results and to wear a mask when around others.  
+
+Follow‑up:  
+- Review test results by telephone or telehealth within 48 hours.  
+- If COVID‑19 test is positive, provide guidance on isolation duration, monitoring of symptoms, and when to seek urgent care (e.g., worsening dyspnea, high fever).  
+- If EBV serology indicates acute infection, advise rest, hydration, and avoidance of contact sports for at least 1 week due to splenic enlargement risk.  
+- Return to clinic sooner if fever persists beyond 3 days, throat pain worsens, new respiratory symptoms develop, or if she experiences difficulty breathing or swallowing.  
+
+Patient Education:  
+- Discuss signs of worsening infection (high fever > 101 °F, shortness of breath, inability to swallow fluids).  
+- Reinforce the importance of completing the COVID‑19 test and adhering to isolation recommendations.  
+- Reviewed proper use of acetaminophen and lozenges, and the need to maintain her Crohn’s disease medication schedule.  
+
+Disposition:  
+The patient was discharged home with the above plan and instructions. No immediate need for emergency care was identified.  
+
+Signature: ___________________________  
+Date: 2026‑04‑14   (Encounter documented)

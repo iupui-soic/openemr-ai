@@ -1,0 +1,122 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 04:18:35
+Time: 3.49s
+Tokens: 9,174 in / 1,650 out
+============================================================
+
+Patient Information  
+Adan Crona, 45‑year‑old male, residing at 584 Waelchi Course, Waltham, Massachusetts 02451.  
+
+Chief Complaint  
+The patient presents with a painful, red, swollen rash on the right lower leg that has been present for approximately one week and has worsened over the past 24 hours.  
+
+History of Present Illness  
+Mr. Crona reports that the lesion began as a small, painless area that became red and swollen about a week ago. Pain started yesterday and has increased with movement, especially flexion of the ankle. He describes the area as “swollen, bigger, and meaner” with a noticeable white exudate leaking from an open wound that was previously a scab. He has been scratching the area and notes that the redness has spread to the surrounding skin. He feels a mild warmth over the right leg but has not measured his temperature. He denies shortness of breath, chest pain, or other systemic symptoms. He has a history of type 2 diabetes mellitus, poorly controlled with an A1C of approximately 9.0, and reports that he has stopped routine glucose monitoring. He has a left heel ulcer that is stable. He denies fever, chills, or recent travel.  
+
+Review of Systems  
+Constitutional: Reports feeling “hot” over the right leg, mild fatigue, increased hunger, and weight gain over the past few weeks. No fever or chills reported.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Dermatologic: Rash on right leg as described; no other rashes.  
+Neurologic: No numbness or tingling in the affected leg.  
+Musculoskeletal: Chronic low back pain, managed with OTC analgesics.  
+
+Past Medical History  
+- Type 2 diabetes mellitus, poorly controlled.  
+- Hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease, estimated GFR 79 mL/min (stage 2).  
+- Chronic low back pain.  
+- Childhood asthma (now inactive).  
+- Left heel ulcer (stable).  
+- History of sinus surgery (sinusitis).  
+
+Surgical History  
+- Endoscopic sinus surgery for chronic sinusitis in adolescence.  
+
+Social History  
+- Tobacco use: approximately 2 packs per week, primarily during periods of stress.  
+- Alcohol use: 2–4 drinks on weekends, roughly 3 per day on those days.  
+- Employment: Currently unemployed, previously operated a small accounting business.  
+- Living situation: Lives in town, visits children biweekly.  
+- Diet and exercise: No regular exercise routine; diet not well controlled.  
+
+Family History  
+- Maternal side: Multiple relatives with diabetes mellitus, hypertension, and hyperlipidemia.  
+- Paternal side: Generally healthy; one aunt with lung cancer (heavy smoker).  
+
+Allergies  
+- Penicillin (anaphylaxis with facial swelling and breathing difficulty).  
+- Grass pollen (urticaria).  
+- Lisinopril (rash).  
+
+Current Medications  
+- Rosuvastatin 10 mg daily.  
+- Metformin (dose unspecified).  
+- Two other oral hypoglycemic agents (names not recalled).  
+- No insulin.  
+- No other prescription medications reported.  
+
+Objective Findings  
+Vital Signs – No measurements documented during this encounter.  
+Physical Examination – No formal exam documented; patient describes the lesion as red, swollen, warm, tender to touch, with a white exudate and an open wound.  
+
+Laboratory Results (most recent)  
+- Sodium 139.8 mmol/L (normal).  
+- Potassium 4.5 mmol/L (normal).  
+- Chloride not reported.  
+- Bicarbonate 21.99 mmol/L (slightly low).  
+- Creatinine 2.98 mg/dL (elevated).  
+- eGFR 79 mL/min (stage 2 CKD).  
+- Glucose 94 mg/dL (single reading).  
+- BUN 13.7 mg/dL (normal).  
+- Total protein 6.52 g/dL (normal).  
+- Albumin 3.88 g/dL (normal).  
+- Total bilirubin 0.77 mg/dL (normal).  
+- AST 24.7 U/L (normal).  
+- ALT 43.9 U/L (slightly elevated).  
+- Alkaline phosphatase 123.7 U/L (normal).  
+- Triglycerides 177.4 mg/dL (borderline high).  
+- Total cholesterol 177 mg/dL.  
+- LDL 120.7 mg/dL (high).  
+- HDL 31.6 mg/dL (low).  
+
+Assessment  
+Primary diagnosis: Cellulitis of the right lower leg.  
+Secondary diagnoses:  
+- Type 2 diabetes mellitus, poorly controlled.  
+- Chronic kidney disease, stage 2.  
+- Hypertension.  
+- Hyperlipidemia.  
+- Chronic low back pain.  
+- Tobacco use disorder.  
+- Alcohol use disorder.  
+
+Plan  
+1. Initiate empiric antibiotic therapy for cellulitis: Cefazolin 1 g IV q12h (or alternative oral agent if IV not available) for 7–10 days, adjusting based on culture results if obtained.  
+2. Provide wound care instructions: keep the area clean, apply sterile dressing, avoid scratching, and monitor for increasing redness, warmth, or drainage.  
+3. Pain management: Acetaminophen 500 mg q6h PRN, with consideration of NSAIDs if renal function permits.  
+4. Diabetes management: Reinforce daily glucose monitoring, review diet, and schedule follow‑up with primary care provider to adjust oral hypoglycemics or consider insulin initiation.  
+5. Renal function: Repeat serum creatinine and eGFR in 2 weeks; consider nephrology referral if worsening.  
+6. Cardiovascular risk: Continue rosuvastatin; review lipid panel in 3 months; counsel on diet and exercise.  
+7. Smoking cessation: Offer nicotine replacement therapy or prescription counseling; provide resources for cessation programs.  
+8. Alcohol moderation: Discuss safe limits and consider referral to a substance use counselor if needed.  
+9. Follow‑up: Return to clinic in 48–72 hours for reassessment of the leg and review of antibiotic response; if no improvement or worsening, consider imaging or surgical evaluation.  
+10. Education: Instruct patient on foot care, signs of infection, importance of glucose monitoring, and when to seek urgent care (fever, increasing pain, spreading redness, or systemic symptoms).  
+
+Discharge Instructions  
+- Take prescribed antibiotics exactly as directed.  
+- Keep the wound covered and change dressing as instructed.  
+- Monitor for worsening symptoms; seek emergency care if fever, chills, increased pain, or spreading redness occurs.  
+- Continue current medications; do not stop any without consulting provider.  
+- Follow up with primary care within one week for diabetes and renal evaluation.  
+
+Follow‑up Instructions  
+- Return to the outpatient clinic in 48–72 hours for wound reassessment.  
+- Schedule a follow‑up appointment with the primary care physician within 7 days to review glucose control and adjust medications.  
+- Consider referral to a podiatrist for ongoing foot ulcer care.  
+
+No additional imaging or laboratory studies are ordered at this time.

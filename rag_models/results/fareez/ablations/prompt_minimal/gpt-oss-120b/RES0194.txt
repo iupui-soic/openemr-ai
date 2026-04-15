@@ -1,0 +1,139 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:22:40
+Time: 5.35s
+Tokens: 6,444 in / 2,099 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abbey Shala Kunde  
+- **DOB:** 02 Mar 1986 (38 y/o)  
+- **Sex:** Female  
+- **MRN:** 109  
+- **Address:** 774 Gleichner Harbor, Boston, MA 02109  
+- **Occupation:** Pharmacy‑company employee (office work, masks and distancing in place)  
+- **Living Situation:** Lives with spouse in a townhouse; spouse currently asymptomatic  
+
+---
+
+## S – Subjective  
+
+**Chief Complaint:**  
+“Cough, headache and body aches for the past three days.”
+
+**History of Present Illness (HPI):**  
+- **Onset & Course:** Cough began **3 days ago**, dry, non‑productive, no sputum or hemoptysis.  
+- **Associated symptoms:**  
+  - **Headache** – frontal, bilateral “band‑like” pressure, intermittent, present most days since onset.  
+  - **Myalgias** – diffuse, generalized achiness, no recent exertion or trauma.  
+  - **Subjective fever** – feels “hot” for the last 2 days, no measured temperature recorded.  
+  - **Diarrhea** – loose stools for the past 1 day, no blood, no change in color, no recent dietary changes.  
+  - **Decreased appetite** – reports less hunger but stable weight.  
+- **Denies:** Sore throat, nasal congestion/rhinorrhea, chest pain, shortness of breath, chills, nausea/vomiting, loss of taste or smell, night sweats, dysuria, urinary symptoms, recent travel, known sick contacts, exposure to animals, dust/fumes, or recent injuries.  
+
+**Review of Systems (pertinent positives/negatives)**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | Feverish feeling, fatigue (subjective) | Measured fever, chills, weight loss |
+| Respiratory | Dry cough | Sputum, hemoptysis, dyspnea, chest pain |
+| ENT | – | Sore throat, rhinorrhea, nasal congestion, anosmia/ageusia |
+| Cardiovascular | – | Palpitations, chest discomfort |
+| Gastrointestinal | Diarrhea, decreased appetite | Nausea, vomiting, abdominal pain, blood in stool |
+| Neurologic | Frontal pressure‑type headache | Vision changes, dizziness, focal neuro deficits |
+| Musculoskeletal | Diffuse myalgias | Joint swelling, recent trauma |
+| Dermatologic | – | Rash, lesions |
+| Psychiatric | – | Depression, anxiety (screened GAD‑7 = 1, PHQ‑2 = 2) |
+
+**Past Medical History**  
+- Essential hypertension (on lisinopril 10 mg daily)  
+- Obesity (BMI ≈ 35.8)  
+- Recurrent urinary tract infections (historical)  
+- Prior ACL reconstruction (≈ 10 y ago)  
+- No chronic respiratory disease (asthma, COPD) documented  
+
+**Past Surgical History**  
+- Right knee ACL repair (≈ 10 y ago)  
+
+**Medications (home)**  
+- Lisinopril 10 mg PO daily  
+- Multivitamin + Vitamin D (OTC)  
+- Occasionally uses over‑the‑counter acetaminophen or ibuprofen for pain (patient reported taking both today)  
+
+**Allergies**  
+- Peanut – EpiPen available; no drug allergies reported  
+
+**Family History**  
+- Father: hypertension  
+- Grandfather: lung cancer (smoker)  
+
+**Social History**  
+- Tobacco: never smoker  
+- Alcohol: 3–4 beers/week  
+- Recreational drugs: occasional CBD oil, no other substances  
+- Exercise: none reported  
+- Workplace: office environment with mask use, cleaning and distancing protocols; currently off work due to symptoms  
+
+---
+
+## O – Objective  
+
+| Parameter | Value / Finding |
+|-----------|-----------------|
+| **Vitals (recorded at encounter)** | HR 98 bpm, RR 15 /min, Temp not taken, BP not recorded, SpO₂ not recorded, Weight not recorded |
+| **General** | Alert, oriented, appears mildly ill, no acute distress |
+| **HEENT** | No pharyngeal erythema, no tonsillar exudate, nasal mucosa normal, no sinus tenderness |
+| **Neck** | Supple, no lymphadenopathy |
+| **Respiratory** | Clear to auscultation bilaterally, no wheezes, rales, or rhonchi |
+| **Cardiovascular** | Regular rate and rhythm, no murmurs |
+| **Abdomen** | Soft, non‑tender, normal bowel sounds |
+| **Extremities** | No edema, gait normal |
+| **Skin** | No rash or lesions |
+| **Neurologic** | Cranial nerves II–XII grossly intact, no focal deficits |
+
+**Laboratory data (from most recent panel, not acute):**  
+- CBC: WBC 5.8 ×10³/µL (within normal), Hb 16.3 g/dL, Hct 42.5 %, Plt 197 ×10³/µL – all unremarkable.  
+- Metabolic panel: not available for this visit.  
+- Screening questionnaires: PHQ‑2 = 2 (low risk), GAD‑7 = 1 (low anxiety).  
+
+No imaging or acute labs obtained during this encounter.
+
+---
+
+## A – Assessment  
+
+1. **Acute viral upper respiratory infection (URI) – probable COVID‑19 vs. other viral etiology**  
+   - Symptoms (dry cough, frontal pressure headache, myalgias, low‑grade fever, diarrhea) are compatible with SARS‑CoV‑2 infection.  
+   - Absence of rhinorrhea, sore throat, loss of taste/smell does not exclude COVID‑19.  
+   - Patient’s occupational exposure is modest; community transmission is ongoing.  
+
+2. **Hypertension, well‑controlled on lisinopril** – continue current regimen.  
+
+3. **Obesity (BMI ≈ 35.8)** – counseling on weight management discussed.  
+
+4. **Dehydration risk secondary to diarrhea** – mild, but advise fluid replacement.  
+
+5. **Headache secondary to viral illness** – likely tension‑type/pressure from systemic infection.
+
+---
+
+## P – Plan  
+
+| Component | Details |
+|-----------|---------|
+| **Diagnostic Testing** | • Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (performed today). <br>• Consider rapid antigen test if results needed sooner (patient informed). |
+| **Isolation** | • Self‑isolate at home for **at least 10 days** from symptom onset **and** until afebrile ≥ 24 h without antipyretics and symptoms improving, per CDC guidance. <br>• Notify close contacts if test becomes positive. |
+| **Symptomatic Management** | • **Antipyretic/analgesic:** Acetaminophen 650 mg PO q6 h PRN for fever or headache (max 3 g/24 h). <br>• **NSAID:** Ibuprofen 200–400 mg PO q6–8 h PRN if not contraindicated (continue current lisinopril). <br>• **Hydration:** Encourage oral rehydration solutions or clear fluids; aim for ≥ 2 L/day. <br>• **Diarrhea:** Dietary BRAT (bananas, rice, applesauce, toast) and maintain fluids; consider loperamide 2 mg PO after first loose stool if severe or persistent, provided no dysentery. |
+| **Medication Review** | • Continue lisinopril 10 mg daily. <br>• No need for antibiotics at this time (no bacterial pneumonia signs). |
+| **Patient Education** | • Discuss red‑flag symptoms requiring urgent care: > 38.5 °C fever persisting > 48 h, worsening shortness of breath, chest pain, new confusion, oxygen saturation < 94 % (if pulse oximeter available). <br>• Reinforce hand hygiene, mask use when around others, and surface cleaning. |
+| **Follow‑Up** | • **Results call:** Patient to be contacted with PCR result within 24–48 h. <br>• **Routine follow‑up:** Telephone visit in 48 h to assess symptom progression. <br>• **In‑person visit** if dyspnea, hypoxia, high fever, or worsening headache develops. |
+| **Preventive Health** | • Verify COVID‑19 vaccination status (if not up‑to‑date, offer booster). <br>• Counsel on weight loss strategies (dietary modification, gradual exercise as tolerated). |
+| **Documentation** | • Encounter coded as **Upper Respiratory Infection (J06.9)** with **rule‑out COVID‑19**. <br>• Note of “viral illness – no antibiotics indicated”. |
+
+**Signature:**  
+Dr. [External Provider] – MD, Tele‑Visit, 04 Apr 2026  
+
+---  
+
+*Prepared by the medical scribe for inclusion in the electronic health record.*

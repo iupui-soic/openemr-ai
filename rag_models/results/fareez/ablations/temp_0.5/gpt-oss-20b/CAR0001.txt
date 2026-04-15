@@ -1,0 +1,66 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:18:25
+Time: 3.01s
+Tokens: 9,625 in / 974 out
+============================================================
+
+Patient Information  
+A 39‑year‑old male accountant who lives alone in an apartment. He reports no prior medical conditions, surgeries, or medications. He is a current smoker (approximately one pack per day for the past 10‑15 years) and occasionally uses cannabis (about 5 mg per week). He consumes alcohol at a moderate level (10 drinks per week). He exercises regularly, running about half an hour every other day, and attempts to eat a healthy dinner each night.
+
+Chief Complaint  
+The patient presents with acute chest pain.
+
+History of Present Illness  
+The patient reports that the chest pain began last night and has been constant for roughly eight hours. The pain is sharp, located on the left side of the chest, and is rated 7–8 out of 10 in severity. It worsens when he lies down and when he takes a deep breath. The pain does not radiate to other areas. He has experienced lightheadedness, shortness of breath, and a racing heart. He denies any loss of consciousness, nausea, vomiting, fever, chills, cough, wheeze, abdominal pain, urinary symptoms, or rash. He has not had any recent trauma or immobilization. He reports no prior episodes of similar chest pain.
+
+Review of Systems  
+Constitutional: lightheadedness, shortness of breath, racing heart, mild diaphoresis.  
+Respiratory: shortness of breath, no cough, no wheeze, no noisy breathing.  
+Cardiovascular: chest pain, sharp, constant, left-sided, worsened by lying down and deep inspiration; no palpitations beyond a racing sensation, no syncope.  
+Gastrointestinal: no nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: no urinary symptoms.  
+Neurologic: no headaches, dizziness, or focal deficits.  
+Skin: no rash; neck appears slightly swollen but no pain or trauma.  
+All systems otherwise unremarkable.
+
+Past Medical History  
+No known medical conditions, surgeries, or hospitalizations.
+
+Social History  
+Smokes one pack of cigarettes daily for 10–15 years. Uses cannabis occasionally (≈5 mg/week). Drinks alcohol moderately (≈10 drinks/week). Works as an accountant, lives alone, exercises regularly.
+
+Family History  
+Father had a myocardial infarction at age 45 and has a history of hyperlipidemia. No other family history of heart disease, stroke, or cancer reported.
+
+Medications  
+None.
+
+Allergies  
+No known drug allergies.
+
+Physical Examination  
+No examination data were provided during the encounter.
+
+Laboratory Data  
+No laboratory results were obtained during this visit.
+
+Assessment  
+1. Acute chest pain of likely cardiac origin (unstable angina or non‑ST‑segment elevation myocardial infarction).  
+2. Differential diagnoses include musculoskeletal chest pain, pulmonary embolism, and pneumothorax, though the absence of cough, fever, or trauma makes these less likely.  
+3. Risk factors: male sex, age 39, heavy smoking, strong family history of premature coronary artery disease, and a racing heart.
+
+Plan  
+1. Immediate cardiac work‑up: obtain an electrocardiogram (ECG) and serial cardiac troponin measurements.  
+2. Initiate antiplatelet therapy with aspirin 325 mg PO and consider a P2Y12 inhibitor if indicated.  
+3. Administer sublingual nitroglycerin 0.4 mg as needed for chest discomfort.  
+4. Provide supplemental oxygen if oxygen saturation falls below 94 %.  
+5. Arrange for cardiology consultation and possible early invasive evaluation (angiography) based on ECG and troponin results.  
+6. Counsel on smoking cessation resources and provide referral to a smoking cessation program.  
+7. Discuss lifestyle modifications: maintain regular exercise, balanced diet, and moderate alcohol consumption.  
+8. Educate the patient on warning signs of worsening cardiac ischemia (increased pain, diaphoresis, syncope) and advise immediate return to the emergency department if these occur.  
+9. Schedule a follow‑up appointment with primary care or cardiology within 48–72 hours after discharge or sooner if symptoms worsen.  
+
+Follow‑up Instructions  
+The patient should monitor his chest pain, breathing, and overall well‑being. If the pain increases, becomes more frequent, or is accompanied by new symptoms such as dizziness, fainting, or severe shortness of breath, he should seek emergency care immediately. He should keep a log of his smoking and alcohol use to discuss with his healthcare provider during follow‑up.

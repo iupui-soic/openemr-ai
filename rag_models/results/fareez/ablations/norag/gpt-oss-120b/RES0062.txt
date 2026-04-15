@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:13:50
+Time: 5.04s
+Tokens: 14,238 in / 1,649 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 25 March 1917 (Age: 109 years)  
+Sex: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of productive cough and worsening shortness of breath over the past 24 hours.
+
+History of Present Illness  
+Three days ago the patient noted the onset of a cough that produces yellow‑green sputum, approximately the size of a thumb tip per expectoration. He reports that the sputum is non‑bloody, without noticeable pus or froth. The cough is described as “hacking” and occurs throughout the day and night, interrupting his sleep. Within the last day he has developed progressive dyspnea, which he rates as 7/10 in severity. He notes occasional wheezing when the shortness of breath is most intense. He denies chest pain, palpitations, or orthopnea. Associated symptoms include generalized fatigue, a sense of weakness, and mild myalgias. He has not experienced dizziness, syncope, confusion, fever, chills, night sweats, or recent weight loss. He reports a recent loss of smell (anosmia) but denies nasal congestion, rhinorrhea, sore throat, or ocular or auditory complaints. He also mentions mild abdominal discomfort. He visited his mother’s long‑term care facility about a week ago, where a COVID‑19 outbreak has been reported.
+
+Past Medical History  
+- Atrial fibrillation (diagnosed 4 years ago; currently managed with metoprolol)  
+- Hypertension (historical)  
+- Chronic kidney disease (stage 4) and end‑stage renal disease (awaiting transplant) – documented in prior records  
+- Diabetes mellitus (prediabetes and microalbuminuria noted historically)  
+- Osteoarthritis of the knee  
+- History of inguinal hernia repair (≈15 years ago)  
+
+Surgical History  
+- Inguinal hernia repair, 15 years prior.  
+
+Medication History (current, as reported)  
+- Metoprolol (beta‑blocker for atrial fibrillation)  
+- Statin (unspecified)  
+- Low‑dose baby aspirin (for atrial fibrillation prophylaxis)  
+- Over‑the‑counter cannabidiol (CBD) edibles, low dose, taken a few times weekly for sleep  
+
+Allergies  
+- Sulfa drugs – causes rash.  
+
+Family History  
+- Aunt with lung cancer (smoked entire life). No other known cardiac or oncologic conditions.  
+
+Social History  
+- Former smoker, 1 pack per day, quit 5 years ago.  
+- No current alcohol use; ceased several years ago.  
+- No illicit drug use.  
+- Lives in a house with his wife; home recently renovated, no known mold or asbestos.  
+- Uses low‑dose CBD edibles for sleep.  
+
+Review of Systems (pertinent positives)  
+- Respiratory: productive cough with yellow‑green sputum, dyspnea, occasional wheeze, anosmia.  
+- Constitutional: fatigue, mild weakness.  
+- Gastrointestinal: mild abdominal ache, no nausea, vomiting, diarrhea, or constipation.  
+- Neurologic: no dizziness, fainting, or confusion.  
+- Cardiovascular: no chest pain, palpitations, or known heart failure symptoms.  
+
+Review of Systems (pertinent negatives)  
+- No hemoptysis, chest pain, palpitations, syncope, fever, chills, night sweats, weight loss, dysphagia, dysgeusia, nasal congestion, rhinorrhea, sore throat, visual or hearing changes, urinary symptoms, or edema.  
+
+Objective  
+Vital Signs: Not documented at this encounter.  
+Physical Examination: Not performed/documented in transcript.  
+Laboratory Data (most recent, from prior record dated 2020):  
+- Ferritin markedly elevated at 1853 µg/L.  
+- Complete blood count showed neutrophils 13.66 %, lymphocytes not reported; monocytes 9.46 %, basophils 3.05 %.  
+- Metabolic panel within normal limits for potassium, calcium, bicarbonate, CO₂.  
+- Prothrombin time 11.9 seconds (normal).  
+- No arterial blood gas values or pulse oximetry recorded.  
+Imaging: None performed during this visit.  
+
+Assessment  
+1. Acute upper respiratory infection, likely viral in nature, with productive cough and dyspnea.  
+2. Suspected COVID‑19 infection (recent exposure at long‑term care facility, new anosmia, fever reported by patient).  
+3. Possible community‑acquired bacterial pneumonia (cannot be excluded given productive cough and wheeze).  
+4. Atrial fibrillation, stable on metoprolol, no recent rate or rhythm changes reported.  
+5. Chronic kidney disease stage 4 / end‑stage renal disease – baseline, currently not acutely decompensated.  
+6. Sulfa allergy – relevant for future antibiotic selection.  
+
+Plan  
+Diagnostic Studies  
+- Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR; results anticipated within 24–48 hours.  
+- Consider rapid antigen testing if available.  
+- Order a chest radiograph to evaluate for infiltrates suggestive of bacterial pneumonia, especially if dyspnea worsens or fails to improve.  
+- Obtain basic metabolic panel, complete blood count, and inflammatory markers (CRP, ESR) to assess for bacterial superinfection.  
+
+Therapeutic Interventions  
+- Symptomatic treatment: Encourage adequate hydration, antipyretics (acetaminophen 500 mg PO q6h PRN for fever or discomfort).  
+- Initiate short‑acting bronchodilator therapy with albuterol inhaler as needed for wheeze or dyspnea.  
+- Continue current cardiac medications (metoprolol, statin, aspirin) and chronic renal management.  
+- Advise temporary discontinuation of CBD edibles if they appear to interfere with sleep when ill; discuss alternative sleep aids (e.g., melatonin) if needed.  
+
+Infection Control  
+- Instruct patient to self‑isolate for a minimum of 14 days from symptom onset, adhering to public health guidance, and to limit contact with household members, especially his wife.  
+- If PCR test returns positive, notify local public health authorities for contact tracing.  
+
+Monitoring & Follow‑up  
+- Reassess in 48‑72 hours via telehealth or phone for symptom progression, especially worsening dyspnea, fever >38.5 °C, chest pain, or new hypoxia.  
+- If clinical status declines (increased work of breathing, SpO₂ < 94 % on room air, confusion), instruct patient to seek urgent care or present to the emergency department.  
+- Schedule an in‑person follow‑up appointment in one week to review test results and determine need for antibiotics (e.g., macrolide or doxycycline) if bacterial pneumonia is suspected and sulfa allergy precludes certain agents.  
+
+Patient Education  
+- Reviewed signs of worsening respiratory illness and when to seek emergent care.  
+- Discussed the importance of hand hygiene, mask use, and surface cleaning while ill.  
+- Provided counseling on smoking cessation benefits and affirmed continued abstinence.  
+
+Disposition  
+The patient was discharged home with the above plan, instructions, and a prescription for albuterol inhaler to be filled as needed. All questions were answered, and the patient expressed understanding and agreement with the management strategy.

@@ -1,0 +1,63 @@
+Model: qwen/qwen3-32b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 04:00:10
+Time: 4.17s
+Tokens: 11,598 in / 1,248 out
+============================================================
+
+Patient Information  
+The patient is a 93-year-old female with a complex medical history, including end-stage renal disease post-renal transplant, ischemic heart disease, type 2 diabetes mellitus with microalbuminuria and proteinuria, essential hypertension, chronic kidney disease, breast and colon malignancies, and a history of multiple employment-related and social challenges. She resides in Chelsea, Massachusetts, and is currently employed full-time. The patient is being evaluated for acute gastrointestinal symptoms.
+
+Chief Complaint  
+The patient presents with acute onset of severe diarrhea over the past three to four days, associated with nausea, vomiting, and abdominal cramping.
+
+History of Present Illness  
+The patient reports experiencing frequent, loose stools approximately every hour for the past three to four days. The diarrhea has been persistent and severe enough to prevent her from attending classes. She denies any prior episodes of similar symptoms. The stools have been consistently loose and brown in color, with no reported blood. She began experiencing intermittent abdominal cramping starting approximately one day after the onset of diarrhea. She also reports nausea and vomiting, with two episodes of vomiting noted the previous day. The vomiting has been watery and not bloody. The patient has not used any over-the-counter medications for symptom relief but has been drinking water to prevent dehydration. She has experienced a decrease in appetite since the onset of abdominal cramps. The patient denies any fever, chills, or rashes. She reports feeling fatigued but has not measured her temperature. The patient notes that she dined at a Chinese restaurant five days ago, consuming chicken Manchurian with rice, but is unsure if this is related to her current symptoms. No other individuals with whom she dined have reported similar symptoms. There is no reported contact with sick individuals, and no recent travel.
+
+Review of Systems  
+- **Constitutional**: Reports fatigue and decreased appetite.  
+- **Respiratory**: No cough, shortness of breath, or chest pain.  
+- **Cardiovascular**: No palpitations or syncope.  
+- **Gastrointestinal**: Frequent, loose stools; abdominal cramping; nausea; vomiting.  
+- **Genitourinary**: No changes in urination or dysuria.  
+- **Neurological**: No headaches or dizziness.  
+- **Musculoskeletal**: No joint or muscle pain.  
+- **Dermatological**: No rashes or skin changes.  
+- **Hematologic**: No bruising or bleeding.  
+- **Endocrine**: No changes in weight or menstrual history.  
+- **Psychiatric**: No mood changes or anxiety.  
+- **Other**: No ear, nose, or throat symptoms.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a long-standing medical history including end-stage renal disease with renal transplant, ischemic heart disease, type 2 diabetes mellitus with complications (microalbuminuria, proteinuria), essential hypertension, chronic kidney disease, breast and colon malignancies, asthma, and a history of multiple non-renal and non-cardiac conditions. She has undergone multiple medication reviews and has a history of social and employment-related challenges.
+
+Surgical History  
+The patient has a history of impacted molars and a hysterectomy. No recent surgical interventions.
+
+Social History  
+The patient is a student living with two roommates. She consumes alcohol occasionally, approximately one to two glasses per week on weekends. She does not use tobacco or recreational drugs. Her typical diet includes oatmeal for breakfast, salads or quick meals for lunch, and often eats out for dinner, including fast food.
+
+Family History  
+The patient’s brother had appendicitis in childhood, and her mother had a hysterectomy. No other family history of digestive disorders or abdominal surgeries.
+
+Current Medications  
+The patient is currently on several medications including tacrolimus, simvastatin, metoprolol succinate, nitroglycerin, and acetaminophen. These medications are related to her renal transplant, cardiovascular conditions, and pain management. She also has a history of opioid use and medication reviews.
+
+Objective  
+Vital signs were not available in the OpenEMR extract. Physical examination findings were not provided in the transcript or OpenEMR extract. However, the patient is reported to have a BMI of 27.72, indicating overweight status.
+
+Laboratory Results  
+Recent lab results include hemoglobin of 15.7 g/dL, normal leukocyte count of 3.96 × 10^3/uL, normal sodium and chloride levels, and a creatinine level of 0.68 mg/dL. Urinalysis showed no presence of blood, protein, or glucose. Glucose levels were within normal limits at 92.2 mg/dL. No specific infectious markers or stool studies were provided in the OpenEMR extract.
+
+Imaging  
+No imaging studies were referenced in the provided data.
+
+Assessment  
+The patient presents with acute onset of severe diarrhea, nausea, vomiting, and abdominal cramping. The symptoms began approximately five days after dining at a new restaurant, suggesting a possible foodborne illness. The absence of blood in the stool and the presence of cramping are consistent with acute gastroenteritis. The patient denies fever, which is atypical for some bacterial causes, but the frequency and severity of symptoms suggest a viral or bacterial etiology. Given the recent dietary change and absence of prior similar episodes, acute gastroenteritis is the most likely diagnosis. No evidence of Clostridium difficile infection or appendicitis was noted in the provided data.
+
+Plan  
+The patient should be advised to continue hydration with oral fluids and consider oral rehydration solutions. A trial of loperamide may be considered for symptom control if not contraindicated. The patient should be monitored for signs of dehydration, including dizziness, decreased urine output, or persistent vomiting. A follow-up visit is recommended if symptoms persist beyond 48 hours or if new symptoms develop. The patient should be advised to avoid non-steroidal anti-inflammatory drugs and to maintain a bland diet until symptoms resolve. No immediate imaging or laboratory studies were indicated based on the current presentation.

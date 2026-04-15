@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-120b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 04:08:56
+Time: 5.05s
+Tokens: 11,776 in / 1,476 out
+============================================================
+
+Patient Information  
+Name: Aaron Bartoletti  
+Date of Birth: August 3, 1981 (Age 44)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+
+Chief Complaint  
+Patient presents with a several‑week history of sinus congestion, purulent nasal discharge, facial pressure, and frontal headache consistent with an acute sinus infection.
+
+History of Present Illness  
+Aaron reports that he has a longstanding history of intermittent sinus infections. Over the past few weeks he has noticed a worsening of nasal congestion accompanied by thick greenish mucus that drains with saline rinses. He describes a pressure sensation over the front of his face and a frontal “sinus” headache that sometimes radiates across the forehead. He also experiences post‑nasal drip that causes a mild, stingy throat irritation but denies a classic sore throat, cough, wheezing, shortness of breath, chest pain, dizziness, or fainting. He measured his temperature at home last night at approximately 99.7 °F, which he considers slightly elevated. He has not experienced fever, chills, weight loss, visual or auditory changes, or loss of smell (though he notes temporary difficulty smelling while the nose is blocked). He denies any recent sick contacts, travel, or exposure to mold or other environmental irritants.  
+
+He has tried conservative measures including frequent saline nasal rinses and short courses of over‑the‑counter nasal decongestants (used only for a few days as instructed). He previously used a nasal steroid spray with good effect but has discontinued it because he had been symptom‑free for a period. He occasionally takes ibuprofen for knee discomfort related to a prior ACL injury.  
+
+Review of Systems  
+Constitutional: Low‑grade temperature (99.7 °F); no chills, night sweats, or weight loss.  
+ENT: Purulent green nasal discharge, nasal congestion, frontal facial pressure, post‑nasal drip with mild throat irritation; no cough, no sore throat typical of streptococcal infection, no loss of smell (temporary difficulty due to blockage).  
+Respiratory: No shortness of breath, wheezing, or cough.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Bowel movements normal; no nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria, frequency, or changes in urine.  
+Neurologic: Frontal headache described as “sinusy”; no dizziness, syncope, or focal deficits.  
+Musculoskeletal: History of ACL repair; occasional knee pain treated with ibuprofen.  
+Skin: No rashes.  
+Psychiatric: No anxiety, depression, or mood changes reported.  
+
+Past Medical History  
+- Prior episodes of viral and bacterial sinusitis.  
+- Anterior cruciate ligament (ACL) repair surgery (date not specified).  
+- No chronic medical conditions reported by the patient at this visit.  
+
+Surgical History  
+- ACL repair (orthopedic procedure).  
+- One prior emergency department visit for a severe sinus infection (no admission).  
+
+Social History  
+- Tobacco: Never smoked.  
+- Alcohol: Consumes 5–6 beers on weekends.  
+- Recreational drugs: Occasionally uses a cannabis oil capsule (approximately once per month) for relaxation and occasional knee pain relief.  
+- Occupation: Not specified; currently working from home.  
+- Living situation: Resides with wife, teenage son, and a 3‑year‑old Labradoodle. No known mold, asbestos, or recent renovations.  
+- Pets: Dog; mild cat allergy noted.  
+
+Family History  
+Denies known family history of heart, lung, or other serious illnesses.  
+
+Allergies  
+Mild allergy to cats; no drug allergies reported.  
+
+Current Medications  
+- Saline nasal rinse (as needed).  
+- Occasional ibuprofen (Advil) for knee pain.  
+- No prescription medications currently being taken.  
+
+Objective  
+
+Vital Signs  
+- Temperature: 99.7 °F (patient‑reported).  
+- Heart Rate: 85 beats/min (last recorded in EMR, 2012).  
+- Respiratory Rate: 14 breaths/min (last recorded in EMR, 2012).  
+- Blood Pressure: Not obtained at this visit.  
+- SpO₂: Not obtained.  
+- Height: 179.8 cm; Weight: Not recorded; BMI: 28.8 kg/m² (from prior EMR data).  
+
+Physical Examination  
+No physical examination findings documented in the encounter transcript.  
+**Assessment**  
+1. Acute bacterial rhinosinusitis – likely bacterial given purulent green discharge, facial pressure, and symptom duration >7 days without improvement from saline irrigation alone.  
+2. Post‑nasal drip with mild throat irritation.  
+3. Mild cat allergy (environmental).  
+
+**Plan**  
+
+Diagnostics  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR to rule out COVID‑19; results to be communicated within 24–48 hours.  
+
+Pharmacologic Therapy  
+- Amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7 days (standard adult regimen for acute bacterial sinusitis).  
+- Intranasal corticosteroid spray (e.g., fluticasone propionate 50 µg spray, 2 sprays each nostril once daily) to be resumed for 7–10 days to reduce mucosal inflammation.  
+- Continue saline nasal irrigation twice daily.  
+- Ibuprofen 400 mg PO every 6–8 hours as needed for headache or facial pain, not to exceed 1200 mg per day.  
+
+Non‑Pharmacologic Recommendations  
+- Limit use of over‑the‑counter nasal decongestant sprays to no more than 3 consecutive days.  
+- Maintain adequate hydration and use a humidifier in the bedroom if air is dry.  
+- Elevate the head of the bed to promote sinus drainage.  
+
+Follow‑Up  
+- Return visit in 7 days (or sooner if symptoms worsen, fever >101 °F, new facial swelling, or visual changes).  
+- If COVID‑19 test returns positive, manage according to current infectious disease guidelines and reassess need for antibiotics.  
+
+Patient Education  
+- Discussed the typical course of acute bacterial sinusitis and the importance of completing the full antibiotic course.  
+- Reviewed proper technique for saline irrigation and intranasal steroid administration.  
+- Advised to monitor temperature; seek urgent care if high fever, severe facial swelling, or worsening headache develops.  
+
+Disposition  
+- Patient was provided with prescriptions for amoxicillin‑clavulanate and intranasal steroid spray, along with written instructions. No immediate referral required.  
+
+Signature: ___________________________  Date: 2024‑04‑14   (Electronic)

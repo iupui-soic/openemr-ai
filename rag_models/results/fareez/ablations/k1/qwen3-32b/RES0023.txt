@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:37:56
+Time: 4.11s
+Tokens: 13,116 in / 1,072 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old male with a complex past medical history including hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4, end-stage renal disease, and a history of coronary artery bypass grafting. He also has a history of prostate cancer, atrial fibrillation, and chronic kidney disease. He is currently employed full-time and resides with his wife and two children. He reports no tobacco or cannabis use, but consumes alcohol occasionally, approximately 3-4 beers per week. He has no known drug allergies.
+
+Chief Complaint  
+The patient presents with a 5-day history of worsening cough, subjective fever, fatigue, and night sweats. The cough is dry and persistent, occurring throughout the day and disrupting sleep. He reports a sore throat and a recent change in his sense of smell, but no change in taste. He denies nausea, vomiting, chills, weight loss, or chest pain unrelated to coughing.
+
+History of Present Illness  
+The patient's symptoms began approximately 5 days ago with the onset of a dry cough. Over the course of the week, the cough has progressively worsened and is now persistent, significantly affecting his sleep. He reports feeling "pretty hot" and experiencing night sweats, including an episode where his shirt was soaked through. He also describes feeling fatigued and unwell overall. The cough is associated with throat pain, and he denies any productive symptoms such as sputum or chest pain unrelated to coughing. He has not measured his temperature, but feels feverish and sweaty. He denies any recent travel, but works at a grocery store and has been in contact with the general public. He has no known recent exposure to sick individuals.
+
+Review of Systems  
+Constitutional: The patient reports fatigue, fever, and night sweats.  
+Respiratory: He has a persistent dry cough and sore throat.  
+Cardiovascular: No chest pain or palpitations reported.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria or changes in urinary habits.  
+Musculoskeletal: No joint pain or muscle aches.  
+Neurological: No headaches or dizziness.  
+Psychiatric: No changes in mood or cognition.  
+Endocrine: No changes in appetite or weight.  
+Hematologic: No bruising or bleeding.  
+Dermatologic: No rashes or skin changes.  
+Allergic/Immunologic: No new allergies or symptoms.  
+Other: No changes in vision or hearing.
+
+Past Medical History  
+The patient has a long-standing history of hypertension, type 2 diabetes mellitus, chronic kidney disease, end-stage renal disease, coronary artery bypass grafting, atrial fibrillation, and prostate cancer. He is currently on Ramipril and Metformin for his hypertension and diabetes, respectively, and takes Vitamin D as a supplement. He has a history of gallbladder removal and has been on multiple medications for chronic conditions.
+
+Past Surgical History  
+The patient underwent gallbladder removal approximately 10 years ago.
+
+Family History  
+The patient reports a family history of asthma in both his mother and brother.
+
+Social History  
+The patient is employed full-time at a grocery store and resides with his wife and two children. He consumes alcohol occasionally, approximately 3-4 beers per week, and has no history of tobacco or cannabis use. He reports no recreational drug use.
+
+Current Medications  
+The patient is currently taking Ramipril and Metformin for hypertension and type 2 diabetes, respectively. He also takes Vitamin D as a supplement.
+
+Allergies  
+The patient has no known drug allergies but reports environmental allergies to pollen.
+
+Objective  
+Vital signs were not fully documented in the electronic health record, but the patient's height is 166.3 cm, and his BMI is 31.53, indicating obesity. No recent weight changes were reported. Physical examination findings were not provided in the transcript or OpenEMR extract. Laboratory results include a creatinine level of 0.39 mg/dL, glucose of 70.64 mg/dL, and normal electrolytes. No imaging studies were performed at this time.
+
+Assessment  
+The patient presents with a 5-day history of worsening dry cough, subjective fever, fatigue, and night sweats. Given the duration and progression of symptoms, along with the presence of night sweats and a recent change in smell, a viral upper respiratory infection is suspected. Given the current public health context, a potential concern for a viral illness such as influenza or SARS-CoV-2 (COVID-19) is also considered. The patient's complex medical history and immunocompromised state due to chronic kidney disease and diabetes increase his risk for complications from any infectious illness.
+
+Plan  
+The patient will undergo a rapid diagnostic test for SARS-CoV-2. He will be advised to self-isolate for 14 days and monitor his symptoms. He will be instructed to follow up with his primary care provider for further evaluation and management. The patient will also be advised to continue his current medications and to monitor for any worsening symptoms, including difficulty breathing, persistent chest pain, or high fever. If symptoms worsen, he should seek immediate medical attention.

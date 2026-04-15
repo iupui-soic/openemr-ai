@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 04:29:02
+Time: 2.31s
+Tokens: 11,767 in / 1,272 out
+============================================================
+
+**Patient Information**  
+**Name:** Abraham Lowe  
+**DOB:** 05/31/1962  
+**Sex:** Male  
+**Address:** 173 Renner Run, Bridgewater, Massachusetts 02324  
+
+---
+
+### SOAP Note
+
+**S – Subjective**  
+- **Chief Complaint:** Left knee pain.  
+- **History of Present Illness:** Mr. Lowe reports a 3‑4 month history of left knee pain that has progressively worsened. Pain was initially activity‑related but has now begun to occur at rest. He describes the pain as sharp when the foot strikes the ground during running, and dull when at rest. The pain intensity is 6/10 on the numeric rating scale. The pain increases with stair climbing, running, and prolonged standing. No relief with rest; pain is persistent even during light walking. There is no night pain or swelling. No previous episodes of similar pain aside from a distant rowing injury that resolved with self‑management.  
+- **Review of Systems:**  
+  - **Constitutional:** No fever, chills, weight loss, or night sweats.  
+  - **Cardiovascular:** No chest pain, palpitations, or shortness of breath.  
+  - **Respiratory:** No cough or wheezing.  
+  - **Gastrointestinal:** No abdominal pain, nausea, vomiting, diarrhea, or constipation.  
+  - **Genitourinary:** No dysuria or hematuria.  
+  - **Neurologic:** No dizziness, headaches, numbness, or tingling in the lower extremities.  
+  - **Musculoskeletal:** Pain isolated to the left knee; no swelling, erythema, or deformity elsewhere.  
+- **Allergies:** None reported.  
+- **Past Medical History:** No chronic illnesses or surgeries reported by the patient during this visit. (Note: EMR indicates a history of hypertension, chronic kidney disease, and metabolic syndrome, but the patient denies current use of any medications or ongoing treatment for these conditions.)  
+- **Social History:** Lives alone; currently a graduate student completing a master’s thesis. Non‑smoker, no alcohol, no recreational drug use. Active lifestyle, primarily running.  
+- **Family History:** Denies family history of osteoarthritis or other musculoskeletal disorders.  
+- **Current Medications:** None; only occasional multivitamin.  
+
+**O – Objective**  
+- **Vital Signs:** Not documented in the encounter (vitals not recorded).  
+- **Physical Examination – Knee:**  
+  - **Inspection:** No visible swelling, erythema, bruising, deformity, or skin changes.  
+  - **Palpation:** No tenderness over the patellar surface. Tenderness localized to the lateral proximal tibial region, just above the joint line. No tenderness over medial collateral ligament. No pain over the patellar tendon or proximal tibial tuberosity.  
+  - **Range of Motion:** Full active range; pain only noted during flexion‑extension in the standing position when rising from seated.  
+  - **Special Tests:** Positive Ober test on the left (patient cannot adduct the thigh; leg remains abducted and slightly elevated).  
+  - **Other Findings:** No temperature change between left and right knees, no joint effusion, no ligamentous instability, no muscle atrophy.  
+
+**A – Assessment**  
+- **Primary Diagnosis:** Iliotibial Band Syndrome (ITBS) – left knee.  
+- **Differential Diagnoses Considered:** Patellofemoral pain syndrome, meniscal injury, lateral collateral ligament strain, early osteoarthritis (unlikely given age and presentation), overuse injury related to running.  
+- **Contributing Factors:** Repetitive running, no recent changes in activity intensity, no recent injury.  
+
+**P – Plan**  
+1. **Activity Modification:**  
+   - Temporarily reduce or replace running with low‑impact cardio (e.g., swimming, stationary cycling) to decrease lateral knee loading.  
+   - Encourage gradual return to running when pain subsides, with a structured taper plan.  
+
+2. **Therapeutic Measures:**  
+   - **Ice/Heat:** Ice packs applied to the lateral proximal tibia for 15–20 min after activity, 2–3 times/day.  
+   - **NSAID Use:** If no contraindication (e.g., renal insufficiency), prescribe ibuprofen 400 mg PO TID for 7–10 days for pain control; monitor renal function if chronic kidney disease is present.  
+   - **Stretching & Strengthening:**  
+     - IT band stretch (standing or supine) 3 sets of 30 sec each side.  
+     - Hip abductors & external rotator strengthening (clamshells, side‑lying leg raises).  
+     - Quadriceps and hamstring strengthening.  
+
+3. **Referrals:**  
+   - Physical therapy referral for a structured rehab program focusing on hip strength, gait mechanics, and progressive loading.  
+
+4. **Patient Education:**  
+   - Discuss signs of worsening (increasing pain, swelling, instability).  
+   - Importance of adherence to stretching and strengthening program.  
+   - Avoid prolonged stair climbing and high‑impact activities until pain improves.  
+
+5. **Follow‑up:**  
+   - Return visit in 2 weeks to reassess pain severity, range of motion, and response to therapy.  
+   - If pain persists >4 weeks or worsens, consider imaging (X‑ray or MRI) to rule out other pathologies.  
+
+6. **Documentation & Safety:**  
+   - Counsel regarding potential NSAID renal risks due to reported chronic kidney disease; advise to maintain adequate hydration and avoid NSAIDs if renal function declines.  
+   - Encourage routine monitoring of blood pressure and kidney function as per his chronic disease management plan.  
+
+--- 
+
+**Signature:**  
+[Provider Name], MD  
+[Date: 14 Apr 2026]

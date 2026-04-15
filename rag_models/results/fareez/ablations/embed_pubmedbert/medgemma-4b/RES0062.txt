@@ -1,0 +1,28 @@
+Model: google/medgemma-4b-it
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 06:28:26
+Time: 47.56s
+Tokens: 15,185 in / 749 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+The patient is Abel Cummerata, a 83-year-old male residing at 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000. He was admitted to the hospital on 2020-11-22 and discharged on the same day.
+
+Chief Complaint:
+
+The patient's primary reason for seeking medical attention was shortness of breath.
+
+History of Present Illness:
+
+The patient reports a cough that started approximately three days prior to the encounter. He also notes significant shortness of breath, which he describes as coming on within the last day or so, following the onset of the cough. The cough is described as a wet cough, producing yellowish-green phlegm, and he brings up approximately the size of a thumb tip. He denies any blood in the sputum. The patient reports a hacking cough sound. He denies any wheezing. The shortness of breath is described as a severity of 7 out of 10. He reports that the shortness of breath is interfering with his sleep. He denies any triggers for his coughing, such as pollen or pets. The cough has been ongoing throughout the day, and he reports it worsening in recent days. He denies any positional exacerbation of his shortness of breath. He has no prior history of similar episodes. He reports feeling tired and weak. He denies dizziness or fainting spells. He denies confusion or memory loss. He reports some muscle aches and weakness. He denies chest pain. He denies heart racing. He denies changes to bowel movements or stool. He denies abdominal pain. He denies sore throat. He denies loss of taste. He reports a funny smell. He denies a runny nose or blocked nose. He denies changes to vision or hearing. He denies discharge or pain in his eyes or ears. He denies changes to his urine. He states he is otherwise healthy. He has a known history of atrial fibrillation, which he has had for four years, and is currently taking Metoprolol. He last had an ECG approximately two months ago, which was normal. He denies any hospitalizations or surgeries. He is also taking a statin and baby aspirin for cardiovascular issues. He reports no allergies to sulfa drugs. He is up-to-date on his immunizations, including the Zoster and pneumonia vaccines. He reports a family history of lung cancer in his aunt, who smoked heavily. He denies any other significant family history. He reports having visited his mother at a long-term care facility approximately one week prior to the encounter. He reports that the facility has had COVID outbreaks. He denies any recent travel. He quit smoking five years ago. He uses CBD edibles occasionally. He denies any other recreational drug use. He stopped drinking alcohol a few years ago. He lives with his wife. He denies any concerns for old carpets, mold, or asbestos in his home. He reports that his medications are current and at the correct dose, and he is willing to have them reviewed.
+
+Assessment:
+
+The patient's presentation is concerning for an upper respiratory infection, possibly COVID-19, given his cough, shortness of breath, and fatigue. The yellowish-green sputum suggests a possible bacterial component.
+
+Plan:
+
+The patient will undergo a COVID-19 swab test. He is instructed to isolate for 14 days, including his husband, until symptoms resolve, even if they are gone. If the COVID-19 test is positive, public health will be notified for contact tracing. If the test is negative, the physician will consider other potential causes of his symptoms, such as bacterial pneumonia, and may prescribe antibiotics if indicated. The patient's medications will be reviewed.

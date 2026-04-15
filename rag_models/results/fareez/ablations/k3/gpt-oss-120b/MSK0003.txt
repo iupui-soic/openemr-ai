@@ -1,0 +1,127 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:26:23
+Time: 5.55s
+Tokens: 7,479 in / 1,927 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 1995-03-24 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Height: 169.7 cm (5 ft 7 in)  
+Weight: Not documented in the current encounter (BMI recorded in the record as 42.03, indicating class III obesity)  
+
+Chief Complaint  
+The patient presents with a several‑month history of diffuse dull back pain and morning stiffness that improves after 30–60 minutes of activity.  
+
+History of Present Illness  
+Abe reports that his back pain began approximately five months ago without any identifiable precipitating injury. The discomfort is described as a dull, aching pain located mainly in the middle to lower back. He rates the intensity as 4–5/10, noting that it fluctuates from day to day. The pain is most pronounced in the early morning, accompanied by stiffness that resolves after about half an hour of walking or moving around. The pain does not radiate to the extremities, and he has not observed swelling, redness, or warmth over the spine. Over the past few months he has also experienced intermittent pain in his right knee and hands, which he describes as episodic and unrelated to the back pain. He denies any recent trauma, fever, chills, night sweats, weight loss, changes in appetite, bowel or urinary abnormalities, visual disturbances, numbness, tingling, or muscle weakness. He notes increased fatigue and a general sense of malaise, which he attributes partly to the chronic pain. Over‑the‑counter analgesics such as acetaminophen and ibuprofen have provided only modest relief; the stiffness and pain recur each morning.  
+
+Review of Systems  
+Constitutional: Positive for fatigue and malaise; denies fever, chills, night sweats, weight change.  
+Musculoskeletal: Positive for diffuse low‑back dull ache, morning stiffness lasting 30–60 minutes, intermittent right knee and hand pain; denies joint swelling, erythema, or limitation of range of motion.  
+Neurologic: Denies numbness, tingling, or weakness in the lower extremities.  
+Respiratory: No shortness of breath; known intermittent asthma, uses rescue inhaler as needed.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea (except a self‑limited episode several months ago).  
+Genitourinary: No dysuria, frequency, or incontinence.  
+Skin: No rashes, nail changes, or new lesions.  
+Psychiatric: Reports increased fatigue and low mood; PHQ‑2 score 2 (borderline); GAD‑7 score 2 (minimal anxiety).  
+Allergies: Environmental allergy (likely pollen or ragweed); unspecified substance allergy recorded in the chart (severity 1).  
+
+Past Medical History  
+- Asthma, intermittent, uses rescue inhaler (albuterol) and occasional budesonide inhalation suspension.  
+- Chronic low back pain documented in the record (onset 2014).  
+- Obesity (BMI >40).  
+- Prior viral gastroenteritis with brief antibiotic course several months ago.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+Employed full‑time as a bank teller.  
+Lives with girlfriend in a city condominium.  
+Denies tobacco use.  
+Consumes alcohol socially (1–2 beers or a cocktail on weekends).  
+Uses marijuana approximately once or twice per week.  
+No illicit drug use reported.  
+
+Family History  
+Mother has psoriasis; no reported joint disease in mother. No other significant family medical history documented.  
+
+Allergies  
+- Environmental allergens (pollen/ragweed suspected).  
+- Unspecified substance allergy (severity noted as 1).  
+
+Current Medications (home)  
+- Fexofenadine hydrochloride 60 mg oral tablet – as needed for allergies.  
+- Epinephrine auto‑injector 0.3 mL (1 mg/mL) – for emergency allergic reactions.  
+- Hydrocortisone 10 mg/mL topical cream – for occasional skin irritation.  
+- Albuterol inhalation solution – rescue inhaler as needed for asthma.  
+- Budesonide inhalation suspension – intermittent use for asthma.  
+The patient reports occasional use of over‑the‑counter acetaminophen and ibuprofen for back pain, but these are not listed as prescribed home medications.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Vital Signs  
+No vital sign measurements were recorded at this visit.  
+
+Laboratory Data (most recent)  
+- Hematocrit: 39.05 %  
+- Hemoglobin: Not explicitly listed (derived from Hct).  
+- Red blood cell count: 5.23 ×10⁶/µL  
+- Platelet count: 287 ×10³/µL  
+- Mean platelet volume: 12.14 fL  
+- Mean corpuscular hemoglobin: 30.12 pg  
+- Red cell distribution width: 42.39 fL  
+- PHQ‑2 score: 2 (borderline for depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+No inflammatory markers (ESR, CRP) or rheumatologic serologies have been obtained to date.  
+
+Imaging  
+No imaging studies have been performed for the current complaint.  
+
+Assessment  
+1. Chronic low back pain with predominant morning stiffness, likely inflammatory in nature. Differential diagnosis includes:  
+   • Ankylosing spondylitis (axial spondyloarthropathy) – given age, male gender, morning stiffness, and progressive dull back pain.  
+   • Reactive arthritis – possible post‑infectious etiology following recent gastrointestinal illness.  
+   • Psoriatic arthritis – family history of psoriasis, though patient lacks cutaneous manifestations.  
+   • Mechanical low back pain – less likely given the pattern of stiffness and lack of positional aggravation.  
+2. Obesity (BMI ≈ 42) – contributing factor to musculoskeletal strain.  
+3. Intermittent asthma, well controlled with rescue inhaler.  
+4. Mild depressive symptoms (PHQ‑2 borderline) and minimal anxiety (GAD‑7).  
+5. Environmental allergic rhinitis.  
+
+Plan  
+Diagnostics  
+- Order basic laboratory panel: CBC with differential, comprehensive metabolic panel, ESR, CRP.  
+- Rheumatologic serologies: Rheumatoid factor, anti‑CCP, antinuclear antibody (ANA), HLA‑B27.  
+- Obtain plain radiographs of the lumbar spine and sacroiliac joints. If radiographs are inconclusive and suspicion for axial spondyloarthropathy remains high, arrange magnetic resonance imaging of the sacroiliac joints and lumbar spine.  
+- Consider knee and hand X‑rays given intermittent joint symptoms.  
+
+Therapeutic  
+- Continue as needed acetaminophen 500 mg q6‑8 h not exceeding 3 g/day for breakthrough pain.  
+- Begin a trial of non‑steroidal anti‑inflammatory drug (NSAID), such as ibuprofen 600 mg three times daily with food, for 2 weeks, pending renal function and gastrointestinal tolerance.  
+- Encourage regular low‑impact aerobic activity (e.g., walking, swimming) and core‑strengthening exercises; refer to physical therapy for a structured back‑strengthening program.  
+- Initiate weight‑loss counseling and referral to a dietitian to address class III obesity.  
+- Continue asthma rescue inhaler as needed; ensure adherence to inhaled budesonide if symptoms increase.  
+- Provide education on proper posture, ergonomics at work, and activity pacing to reduce stiffness.  
+
+Psychosocial  
+- Screen for depression with PHQ‑9 at the next visit; consider counseling or pharmacotherapy if symptoms progress.  
+- Discuss responsible use of marijuana and alcohol, emphasizing moderation.  
+
+Follow‑up  
+- Return to primary care in 2 weeks to review laboratory results, imaging, and response to NSAID trial.  
+- If inflammatory markers are elevated or imaging suggests sacroiliitis, expedite referral to rheumatology for further evaluation and possible disease‑modifying therapy.  
+- Schedule physical therapy appointment within the next week.  
+
+Patient Education  
+The patient was educated on the likely causes of his back pain, the importance of early diagnosis of inflammatory spinal disorders, and the role of exercise, weight management, and medication adherence in symptom control. He was advised to seek medical attention if he develops new neurological symptoms (e.g., leg weakness, numbness), worsening pain unresponsive to NSAIDs, fever, or swelling of joints.  
+
+Disposition  
+The patient was not admitted; this summary reflects an outpatient evaluation with plans for diagnostic work‑up, symptomatic management, and specialist referral.

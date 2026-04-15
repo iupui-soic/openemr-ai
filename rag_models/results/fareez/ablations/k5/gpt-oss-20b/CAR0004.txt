@@ -1,0 +1,68 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:37:25
+Time: 2.33s
+Tokens: 10,406 in / 950 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel  
+Age: 25 years (reported by patient)  
+Gender: Female  
+Address: 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171  
+
+Chief Complaint  
+The patient presents with a sharp, localized chest pain that began approximately three days ago.
+
+History of Present Illness  
+The patient reports a sudden onset of sharp chest pain localized directly over the heart, which radiates occasionally to the neck. The pain episodes last only a few seconds and then resolve, giving the impression of brief sharp attacks. The pain is worsened by coughing and lying down, whereas leaning forward provides some relief. The patient rates the pain as a 6 out of 10 on the pain scale. There are no accompanying symptoms such as shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, headache, or weakness. The patient has taken Tylenol once, which provided some relief. There is no history of prior similar episodes, no recent injuries, and no associated symptoms.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight changes, or fatigue reported.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: Chest pain described as sharp, localized, transient; no palpitations or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic: No dizziness, weakness, or numbness.  
+Psychiatric: No anxiety or depression reported, although the patient expresses significant worry about the possibility of a heart attack due to the recent death of her father.  
+
+Past Medical History  
+The patient reports no chronic medical conditions, no prior surgeries, and no current medications aside from occasional over‑the‑counter Tylenol. No known allergies.  
+
+Surgical History  
+None.  
+
+Family History  
+Father had a heart attack two weeks prior to the patient’s visit and subsequently died. No other family history of cardiac disease, cancer, or significant chronic illnesses reported.  
+
+Social History  
+The patient is a 25‑year‑old engineering student at Western. She works part‑time as a postal worker. She lives with her parents. She drinks alcohol occasionally, usually one or two drinks on weekends. She denies tobacco use and recreational drug use. She reports adequate sleep and no known exercise routine.  
+
+Medications  
+- Acetaminophen (Tylenol) – used once for pain relief. No other prescribed or over‑the‑counter medications reported.  
+
+Physical Examination  
+Vital signs and detailed physical examination were not documented during this encounter.  
+
+Laboratory Studies  
+No laboratory data were obtained during this visit.  
+
+Imaging Studies  
+No imaging studies were performed at the time of the encounter; an electrocardiogram (ECG) was planned.  
+
+Assessment  
+Acute, sharp, transient chest pain of unclear etiology. Differential diagnosis includes musculoskeletal pain, pericarditis, early acute coronary syndrome, and other causes of chest discomfort. The patient’s age, lack of risk factors, and absence of associated symptoms are reassuring but the recent death of her father from a heart attack warrants careful evaluation.  
+
+Plan  
+1. Order an ECG to assess for ischemic changes or arrhythmias.  
+2. Obtain cardiac biomarkers (troponin, CK‑MB) pending ECG results.  
+3. If ECG or biomarkers are abnormal, proceed with cardiology referral and consider further imaging (e.g., echocardiography, cardiac MRI).  
+4. Counsel the patient on recognizing red‑flag symptoms (persistent chest pain, worsening intensity, associated dyspnea, diaphoresis, nausea) and advise immediate presentation to the emergency department if these occur.  
+5. Discuss the low likelihood of a life‑threatening event given the brief, sharp nature of the pain, but reinforce the need for evaluation due to familial risk.  
+6. Follow up in clinic within 48–72 hours to review diagnostic results and adjust management accordingly.  
+
+Follow‑up Instructions  
+The patient should return promptly if the chest pain becomes more frequent, lasts longer, or is accompanied by shortness of breath, dizziness, or palpitations. She should also seek emergency care if she experiences any of these symptoms.  
+
+Discharge Instructions  
+No medications were prescribed at this time. The patient was instructed to avoid strenuous activity until evaluation results are available. She was advised to monitor her symptoms and to seek urgent care if they worsen. The patient was also reminded to stay hydrated and to maintain a balanced diet.

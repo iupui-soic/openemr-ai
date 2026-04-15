@@ -1,0 +1,157 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:24:02
+Time: 5.97s
+Tokens: 18,264 in / 2,051 out
+============================================================
+
+**Patient Information**  
+**Name:** Ali Hayes **DOB:** 05‑Nov‑1946 (79 y/o) **Sex:** Female **MRN:** 5194  
+
+---
+
+### Subjective  
+
+**Chief Complaint:**  
+“Right‑upper abdominal pain that started about 8 hours ago.”
+
+**History of Present Illness (HPI):**  
+Ms. Hayes reports an aching pain localized to the right side of her abdomen. The discomfort began ~8 hours ago while she was preparing for sleep. Initially intermittent for the first 2 hours, it has become constant for the past 5–6 hours. She rates the pain as 8/10. The pain does **not** radiate. She notes that similar episodes have occurred in the past, usually **after eating fatty foods** (e.g., burgers, fries). Those prior episodes were intermittent and she attributed them to indigestion. This time the pain persists despite not having eaten.  
+
+- **Associated symptoms:** Mild nausea, no vomiting, no fever, chills, diaphoresis, or rigors. No changes in bowel habits (no constipation, diarrhea, melena, or hematochezia). No urinary symptoms (no dysuria, frequency, hematuria, or color change). No jaundice or pruritus. Slight fatigue related to the pain.  
+- **Alleviating/Aggravating factors:** Eating seems to worsen the pain; nothing provides relief. She tried acetaminophen (Tylenol) with no benefit.  
+
+**Review of Systems (pertinent positives/negatives):**  
+- **Constitutional:** Nausea (+); fatigue (+); no fever, weight loss, or night sweats.  
+- **Gastrointestinal:** RUQ/right‑upper abdominal pain (+); no vomiting, dysphagia, heartburn, melena, hematochezia.  
+- **Genitourinary:** No dysuria, hematuria, polyuria, or change in urine color.  
+- **Cardiovascular/Respiratory:** No chest pain, palpitations, dyspnea, cough.  
+- **Neurologic:** No headaches beyond chronic migraine history.  
+
+**Past Medical History (PMH):**  
+- Type 2 diabetes mellitus (on metformin; also on basal‑bolus insulin per medication list)  
+- Essential hypertension (lisinopril)  
+- Chronic kidney disease Stage 2–3 (eGFR ≈ 37 mL/min/1.73 m²)  
+- Metabolic syndrome/obesity (BMI ≈ 27.9)  
+- Chronic gastroesophageal reflux disease  
+- Chronic migraine (no current abortive meds mentioned)  
+- Chronic pain (unspecified)  
+- Chronic obstructive bronchitis / COPD (uses fluticasone‑salmeterol and albuterol inhalers)  
+
+**Past Surgical History:**  
+- Wisdom teeth extraction (adolescent)  
+
+**Medications (home):**  
+- Metformin (dose not specified)  
+- Insulin (human mixed‑dose)  
+- Lisinopril 10 mg daily  
+- Fluticasone propionate/salmeterol DPI (dose not specified)  
+- Albuterol inhalation solution (as needed)  
+
+**Allergies:** No known drug, food, or environmental allergies.
+
+**Social History:**  
+- Lives alone in an apartment.  
+- Unemployed (laid off due to COVID‑19).  
+- Former smoker (none currently).  
+- Alcohol: 1–2 drinks per day (usually a glass of wine).  
+- No recreational drug use.  
+- Engages in occasional outdoor runs when weather permits.  
+
+**Family History:**  
+- Father had a myocardial infarction in his 60s.  
+- No known family history of gastrointestinal cancers, IBD, or other hereditary diseases.  
+
+---
+
+### Objective  
+
+**Vital Signs (recorded on 12‑Mar‑2002; recent vitals unavailable):**  
+- HR 92 bpm, RR 13 breaths/min, Temp N/A, BP N/A, SpO₂ N/A, Weight N/A, BMI 27.9  
+
+**Physical Examination:**  
+*No exam details were documented in the encounter.*  
+(For completeness, a focused abdominal exam is recommended: assess for RUQ tenderness, guarding, Murphy’s sign, and peritoneal signs.)
+
+**Laboratory Data (most recent):**  
+
+| Test | Result | Comment |
+|------|--------|---------|
+| Serum Calcium | 9.27 mg/dL | Normal |
+| BUN | 7.05 mg/dL | Low‑normal |
+| Creatinine | 1.97 mg/dL | Consistent with CKD |
+| eGFR (MDRD) | 36.9 mL/min/1.73 m² | Stage 3 CKD |
+| Sodium | 136 mmol/L | Normal |
+| Chloride | 103.96 mmol/L | Normal |
+| Serum Glucose | 66.6 mg/dL | Slightly low (fasting) |
+| Urine Protein | 214 mg/dL | Significant proteinuria |
+| Urine Glucose | 1.53 mg/dL | Low |
+| Urine Ketones | 0.93 mg/dL | Minimal |
+| Urine Specific Gravity | 1.038 | Concentrated urine |
+| Bilirubin (urine) | 0.44 mg/dL | Trace |
+| Other urine dipstick components – leukocyte esterase, nitrite, etc.: not reported (UNK) |
+
+**Imaging:** None performed during this visit.
+
+---
+
+### Assessment  
+
+1. **Acute right‑upper quadrant (RUQ) abdominal pain – probable biliary colic / early acute cholecystitis**  
+   - Classic post‑prandial, fatty‑food‑triggered pain.  
+   - Risk factors: female, age > 40, obesity, metabolic syndrome.  
+   - No fever or leukocytosis documented yet, but the pain is now constant and severe.  
+
+2. **Type 2 Diabetes Mellitus, well‑controlled (current glucose 66 mg/dL, but proteinuria present).**  
+
+3. **Chronic Kidney Disease Stage 3 (eGFR ≈ 37 mL/min/1.73 m²).**  
+
+4. **Essential Hypertension.**  
+
+5. **COPD – stable on inhaled therapy.**  
+
+6. **Metabolic syndrome / obesity.**  
+
+7. **Chronic gastroesophageal reflux disease.**  
+
+---
+
+### Plan  
+
+**Diagnostic Work‑up**  
+- **Abdominal ultrasound** (right‑upper quadrant) – to evaluate gallbladder for stones, wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- **CBC with differential** – assess for leukocytosis.  
+- **Comprehensive metabolic panel** – repeat renal function, electrolytes, and liver enzymes (AST, ALT, ALP, total bilirubin).  
+- **Serum amylase/lipase** – rule out pancreatitis.  
+- **Urinalysis with microscopy** – confirm proteinuria etiology, screen for infection.  
+
+**Therapeutic Interventions**  
+- **Analgesia:** Initiate IV **hydromorphone** 0.5 mg q 2‑4 h PRN for severe pain (monitor respiratory status given COPD).  
+- **Antiemetic:** **Ondansetron 4 mg IV** q 6 h PRN nausea.  
+- **IV Fluids:** 0.9% NaCl, 1 L bolus, then maintenance (adjust for CKD).  
+- **NPO** until imaging and surgical evaluation are completed.  
+
+**Medication Adjustments**  
+- Hold **metformin** pending imaging/contrast considerations and given reduced renal clearance.  
+- Continue **insulin** with careful glucose monitoring (target 100‑180 mg/dL).  
+- Continue **lisinopril** unless blood pressure falls < 100/60 mmHg or renal function worsens.  
+- Maintain inhaler regimen for COPD; ensure rescue albuterol is available.  
+
+**Consultations**  
+- **General Surgery** – for possible cholecystectomy evaluation (laparoscopic).  
+
+**Patient Education & Discharge Planning**  
+- Explain likely gallstone‑related process and the need for imaging and possible surgery.  
+- Advise a **low‑fat diet** until definitive management.  
+- Review signs of complications (fever, increasing pain, jaundice, vomiting) and instruct to seek urgent care if they develop.  
+- Discuss importance of **glycemic control** and medication adherence.  
+- Provide a **follow‑up appointment** with primary care within 3‑5 days after discharge, or sooner if symptoms worsen.  
+
+**Disposition**  
+- Admit to the observation unit for monitoring, imaging, and surgical assessment (given severity of pain and underlying comorbidities).  
+
+--- 
+
+*Prepared by: [Provider’s Name], MD*  
+*Date: 14‑Apr‑2026*

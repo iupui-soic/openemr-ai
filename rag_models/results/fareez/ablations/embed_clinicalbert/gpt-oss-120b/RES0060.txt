@@ -1,0 +1,136 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:47:30
+Time: 5.15s
+Tokens: 6,502 in / 1,724 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 24)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+Medical Record Number: 123  
+
+Chief Complaint  
+Fever and cough of four days duration.  
+
+History of Present Illness  
+Ms. Stamm reports the onset of a dry, non‑productive cough beginning on Monday, approximately four days ago. She noted feeling “hot” throughout the week and measured a temperature of 38.5 °C (101.3 °F) this morning, which she describes as her first recorded fever. The cough has progressively worsened and is now associated with increasing fatigue, a feeling of being “tired” at work, and mild body aches. She denies sore throat, dysphagia, or changes in taste or smell. She reports a mild, intermittent runny nose but no significant nasal congestion. She has not noticed wheezing, shortness of breath except briefly after coughing fits, or chest pain. She experiences occasional nighttime chills but no night sweats. She has had a few episodes of nausea without vomiting and has not had any episodes of vomiting. Headache has been present on and off for the past several days; she characterizes it as a pressure‑type “vice‑grip” headache similar to her usual tension‑type headaches, which she self‑treats with ibuprofen as needed. She denies weight loss beyond a few pounds likely related to decreased appetite. She has not identified any specific exacerbating or relieving factors for the cough. She has not had recent known exposure to individuals with confirmed illness, although she visited a mall over the past weekend and reports that most patrons were masked. She denies recent travel.  
+
+Review of Systems  
+
+Constitutional: Fever 38.5 °C, fatigue, chills at night, mild weight loss (a few pounds), no night sweats.  
+
+HEENT: Dry cough, mild rhinorrhea, no sore throat, no dysphagia, normal taste and smell, no ear or eye discharge, no visual changes.  
+
+Respiratory: Dry cough, no sputum production, no hemoptysis, no wheezing, shortness of breath only briefly after coughing fits, no chest pain.  
+
+Cardiovascular: No palpitations, no chest pain, denies racing heart.  
+
+Gastrointestinal: Decreased appetite, occasional nausea, no vomiting, normal bowel movements, no abdominal pain.  
+
+Genitourinary: No dysuria, hematuria, frequency, or change in urine appearance.  
+
+Musculoskeletal: Mild body aches, no joint swelling.  
+
+Neurologic: Tension‑type headache, no dizziness, syncope, or confusion.  
+
+Skin: No rash, no hives aside from known penicillin allergy.  
+
+Psychiatric: No anxiety or depression reported.  
+
+Social History  
+Tobacco: Never smoker.  
+Alcohol: Consumes two to three beers on weekends.  
+Illicit drugs: Denies marijuana and other recreational drug use.  
+Living situation: Rents the basement unit of a duplex; lives with girlfriend. Reports no known mold or asbestos in her unit.  
+Exercise: Recently walks the dog more frequently.  
+
+Family History  
+No known family history of lung or cardiac disease. Grandfather possibly had bladder cancer (uncertain). No known familial diabetes, hypertension, or malignancies.  
+
+Allergies  
+Penicillin – hives.  
+Additional documented sensitivities in the record include bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, and peanut (all severity 1).  
+
+Past Medical History  
+- High cholesterol, on rosuvastatin (controlled).  
+- Pre‑diabetes (A1c 6.2 % six months ago).  
+- Childhood asthma, resolved in early 2021.  
+- Perennial allergic rhinitis, resolved in 2020.  
+- Mitral valve regurgitation, ongoing.  
+- Prior inguinal hernia repair (approximately five years ago).  
+- Recent acute infective cystitis (treated).  
+
+Surgical History  
+Inguinal hernia repair, 5 years prior.  
+
+Medications  
+- Rosuvastatin (dose not specified).  
+- Multivitamin (over‑the‑counter).  
+- Occasional ibuprofen for tension‑type headaches (patient‑reported, not listed as chronic medication).  
+
+Physical Examination (at time of encounter)  
+Vital Signs:  
+- Heart Rate: 68 beats/minute  
+- Respiratory Rate: 14 breaths/minute  
+- Temperature: 38.5 °C (patient‑reported)  
+- Blood Pressure: Not documented  
+- SpO₂: Not documented  
+- Height: 157.9 cm; BMI: 23.3 kg/m² (from record)  
+
+General: Appears mildly ill, in no acute distress.  
+
+HEENT: Normocephalic, atraumatic; oropharynx without erythema or exudate; nasal mucosa mildly edematous with slight rhinorrhea; no cervical lymphadenopathy.  
+
+Lungs: Clear to auscultation bilaterally, no wheezes, rales, or rhonchi. No use of accessory muscles.  
+
+Cardiovascular: Regular rate and rhythm, no murmurs noted (baseline mitral regurgitation not reassessed).  
+
+Abdomen: Soft, non‑tender, non‑distended; normal bowel sounds.  
+
+Extremities: No edema.  
+
+Neurologic: Alert and oriented ×3, cranial nerves intact.  
+
+Skin: No rash; no urticaria.  
+
+Laboratory Data  
+No acute laboratory studies were performed during this visit. Recent urinalysis related to a prior cystitis episode shows mild leukocyturia and trace protein; glucose 12.6 mg/dL, specific gravity 1.017. No other pertinent labs available.  
+
+Assessment  
+1. Acute viral bronchitis (likely COVID‑19 vs other respiratory viral infection).  
+2. Fever, dry cough, fatigue, headache, mild nausea – consistent with an upper respiratory viral syndrome.  
+3. Pre‑diabetes, hyperlipidemia – stable on current therapy.  
+4. Known penicillin allergy – hives.  
+
+Plan  
+
+Diagnostic Testing  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. Results expected within 24‑48 hours.  
+
+Therapeutic Measures  
+- Symptomatic care: Acetaminophen 500 mg PO q6‑8 h PRN for fever or headache, not to exceed 3 g per day.  
+- Encourage adequate hydration and rest.  
+- Continue current rosuvastatin; no changes to chronic medications.  
+
+Isolation Precautions  
+- Advise patient to self‑isolate for 14 days from symptom onset, including separation from household members.  
+- Use a separate bedroom and bathroom if feasible; wear a mask when interaction is unavoidable.  
+- Notify local public health authorities as per clinic protocol for a positive COVID‑19 result.  
+
+Follow‑up  
+- If COVID‑19 test returns positive, continue isolation and monitor for worsening respiratory symptoms (increasing dyspnea, chest pain, hypoxia).  
+- If fever persists >3 days, cough worsens, or new shortness of breath develops, return for evaluation; consider chest radiograph to assess for bacterial pneumonia.  
+- Routine follow‑up with primary care in 7‑10 days to reassess symptoms and discuss diabetes and lipid management.  
+
+Patient Education  
+- Reviewed signs of clinical deterioration that warrant urgent medical attention (e.g., difficulty breathing, persistent high fever >39 °C, chest pain, confusion).  
+- Discussed proper use of antipyretics and importance of maintaining fluid intake.  
+- Reinforced hand hygiene, mask use, and environmental cleaning to reduce transmission.  
+
+Signature  
+Dr. External Provider, MD  
+Date: 10 February 2024

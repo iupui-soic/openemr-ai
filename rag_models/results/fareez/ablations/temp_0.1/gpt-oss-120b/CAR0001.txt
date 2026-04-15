@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:06:50
+Time: 3.62s
+Tokens: 9,625 in / 1,084 out
+============================================================
+
+Patient Information  
+Name: Not provided  
+Age: 39 years  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with acute left‑sided chest pain that began last night and has persisted for approximately eight hours.
+
+History of Present Illness  
+The patient reports a sharp, constant chest pain localized to the left side of the chest. The pain began spontaneously last night while he was moving furniture, although he does not recall any specific injury. He rates the pain as 7–8/10 in intensity. Lying down worsens the discomfort, while assuming a more upright position provides some relief. Deep inspiration may exacerbate the pain. He denies radiation of the pain to the neck, jaw, arm, or back. Associated symptoms include light‑headedness, shortness of breath, and a sensation of a racing heart. He denies syncope, nausea, vomiting, fever, chills, cough, wheezing, hemoptysis, abdominal pain, urinary or bowel changes, and recent immobilization. He has never experienced similar chest pain in the past.
+
+Review of Systems  
+Constitutional: Light‑headedness present; no fever, chills, or weight loss.  
+Respiratory: Shortness of breath present; no cough, wheeze, or sputum production.  
+Cardiovascular: Palpitations described as a “racing” heart; no known history of arrhythmia, no prior cardiac events. No edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, dysphagia, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Musculoskeletal: No recent trauma; pain is not clearly musculoskeletal in nature.  
+Neurologic: No headache, dizziness beyond light‑headedness, or focal deficits.  
+Dermatologic: No rashes; patient notes mild swelling of the neck but no pain.  
+
+Past Medical History  
+The patient reports no known chronic medical conditions.
+
+Surgical History  
+No prior surgeries.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Social History  
+The patient lives alone in an apartment and works as an accountant. He smokes approximately one pack of cigarettes per day and has done so for the past 10–15 years. He uses cannabis occasionally (approximately 5 mg per week). He consumes alcohol moderately, averaging one to two drinks per day (≈10 drinks per week). He reports a generally healthy diet for dinner but eats out for most lunches. He exercises every other day, typically running for about 30 minutes. He denies use of illicit drugs other than occasional cannabis and has never used intravenous drugs.
+
+Family History  
+Father experienced a myocardial infarction at age 45 and has a history of hypercholesterolemia. No other family members with known cardiac disease, stroke, or cancer.
+
+Current Medications  
+The patient is not taking any prescription or over‑the‑counter medications.
+
+Vital Signs  
+No vital sign data available at the time of this encounter.
+
+Physical Examination  
+No physical examination findings documented.
+
+Laboratory and Diagnostic Data  
+No laboratory or imaging results are available for this visit.
+
+Assessment  
+1. Acute chest pain, sharp and left‑sided, of 8‑hour duration, associated with dyspnea, light‑headedness, and palpitations. Differential diagnosis includes acute coronary syndrome (especially given family history of early myocardial infarction and significant tobacco use), pulmonary embolism, pericarditis, and musculoskeletal strain.  
+2. Tobacco use disorder – 1 pack per day for >10 years.  
+3. Moderate alcohol use.  
+4. Occasional cannabis use.
+
+Plan  
+- Immediate: Obtain a 12‑lead electrocardiogram and cardiac biomarkers (troponin) to evaluate for acute coronary syndrome.  
+- Obtain chest radiograph to assess for pulmonary pathology.  
+- Initiate cardiac monitoring and continuous pulse oximetry.  
+- Provide supplemental oxygen if SpO₂ falls below 94 %.  
+- Administer aspirin 325 mg chewable now, unless contraindicated.  
+- Consider sublingual nitroglycerin for chest pain relief if blood pressure permits.  
+- If ECG or biomarkers suggest ischemia, activate appropriate cardiac pathway (e.g., cardiology consult, possible anticoagulation).  
+- If pulmonary embolism is suspected, order D‑dimer and consider CT pulmonary angiography.  
+- Counsel patient on smoking cessation; offer referral to tobacco cessation program and discuss nicotine replacement therapy.  
+- Discuss moderation of alcohol intake and safe cannabis use.  
+- Arrange follow‑up: If discharged, schedule cardiology outpatient visit within 3–5 days and primary care follow‑up within 1 week. Instruct patient to return to the emergency department immediately for worsening chest pain, new syncope, diaphoresis, or shortness of breath.  
+
+Disposition  
+Patient to remain under observation pending initial diagnostic results. If work‑up is negative and pain resolves, consider discharge with clear return precautions and outpatient follow‑up as outlined.  
+
+Signature: __________________________  
+Date: __________________________

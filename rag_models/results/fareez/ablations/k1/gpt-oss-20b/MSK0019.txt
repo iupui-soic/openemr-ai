@@ -1,0 +1,96 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 03:32:57
+Time: 2.04s
+Tokens: 8,807 in / 1,092 out
+============================================================
+
+Patient Information  
+Name: Aida Vanesa Reichert  
+Date of Birth: October 20, 1968 (age 55)  
+Sex: Female  
+Address: 995 Breitenberg Branch, Plymouth, Massachusetts 02360  
+
+Chief Complaint  
+Right elbow pain worsening over the past three days, especially with gripping and wrist extension.  
+
+History of Present Illness  
+The patient reports a three‑day history of pain localized to the right elbow. She describes the pain as achy when the wrist is not extended and sharp when the wrist is extended. The pain is rated at 6–7 out of 10 in intensity. She notes that the pain increases with gripping, lifting, and activities that require wrist extension, such as using a screwdriver at work. She has attempted rest of the elbow and has taken over‑the‑counter ibuprofen with only transient relief. There is no history of prior elbow pain, and the symptom is new. No numbness, tingling, weakness, or systemic symptoms such as fever, chills, weight loss, or headache are reported.  
+
+Review of Systems (selected)  
+- Musculoskeletal: Pain in right elbow, no other joint pain, no muscle weakness.  
+- Neurologic: No numbness or tingling.  
+- Constitutional: Denies fever, chills, weight loss.  
+- Cardiovascular: No chest pain, palpitations.  
+- Respiratory: No cough, shortness of breath, or wheezing.  
+- Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+- Genitourinary: No urinary changes.  
+
+Past Medical History (as extracted from openEMR)  
+- Essential hypertension (diagnosed 1990)  
+- Chronic kidney disease stage 1 (since 2004)  
+- History of kidney transplant (received 2019)  
+- Chronic kidney disease stage 2/3 and stage 4 previously, now stage 1  
+- Anemia (diagnosed 2014)  
+
+Past Surgical History  
+Not documented in the transcript.  
+
+Medications  
+- 24‑hour extended‑release tacrolimus 1 mg (continued)  
+- 1 mL tacrolimus injection 5 mg/mL (continued)  
+- Acetaminophen 325 mg (inactive, discontinued 2018)  
+- No current use of NSAIDs, except intermittent ibuprofen for pain.  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+- Non‑smoker, no recreational drug use.  
+- Occasional alcohol consumption (wine or beer every couple of days).  
+- Lives with wife and a 4‑year‑old daughter.  
+- Occupation: Full‑time employment (details not specified).  
+
+Family History  
+- Father (age 60) has knee and hip pain.  
+- No other family history of musculoskeletal disease or significant systemic illnesses reported.  
+
+Physical Examination  
+Inspection: No erythema, swelling, or deformity noted in either arm or hand.  
+Palpation: Tenderness over the lateral epicondyle and the extensor muscle group of the forearm; minimal tenderness medially.  
+Range of Motion: Full passive and active motion, but pain increases with wrist extension and forearm supination.  
+Grip Strength: Normal.  
+Neurovascular: No sensory deficits or motor weakness in the right upper extremity.  
+
+Vital Signs  
+No information available.  
+
+Laboratory Data  
+No pertinent laboratory studies were performed during this encounter. (OpenEMR lab results are not contemporaneous with the visit and are not specifically relevant to the acute elbow pain.)  
+
+Assessment  
+Lateral epicondylitis (tennis elbow) of the right elbow, acute onset, likely secondary to repetitive gripping and wrist extension at work.  
+
+Plan  
+1. Conservative Management  
+   - Continue activity modification: avoid repetitive wrist extension and heavy gripping; take frequent breaks during work.  
+   - NSAID therapy: prescribe ibuprofen 400 mg orally every 6–8 hours as needed for pain, not exceeding 2400 mg per day.  
+   - Ice application to the lateral elbow for 15–20 minutes, 3–4 times daily.  
+
+2. Physical Therapy  
+   - Referral to a physical therapist for strengthening and stretching of the forearm extensor muscles and a possible bracing strategy.  
+
+3. Follow‑up  
+   - Re‑evaluate in 6–8 weeks. If pain persists or worsens, consider corticosteroid injection or orthopedic referral for possible surgical intervention.  
+
+4. Medication Management  
+   - No changes to current tacrolimus therapy.  
+   - Continue to monitor renal function and tacrolimus levels as per transplant follow‑up protocol.  
+
+5. Patient Education  
+   - Discussed the nature of lateral epicondylitis, expected course, and importance of adherence to activity modification and physiotherapy.  
+   - Advised on safe use of NSAIDs and signs of potential adverse effects (e.g., gastrointestinal discomfort, renal impairment).  
+
+Disposition  
+The patient is discharged home with instructions to follow the outlined plan and to return sooner if symptoms worsen or new neurological symptoms develop.

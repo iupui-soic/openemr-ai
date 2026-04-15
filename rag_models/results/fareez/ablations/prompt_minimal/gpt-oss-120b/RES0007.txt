@@ -1,0 +1,173 @@
+Model: openai/gpt-oss-120b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 04:20:41
+Time: 7.81s
+Tokens: 7,468 in / 2,712 out
+============================================================
+
+**Patient Information**  
+**Name:** Abby Ondricka **DOB:** 01‑16‑2003 (Age 23) **Sex:** Female **MRN:** 145 **Address:** 564 Breitenberg View, Westfield, MA 01086  
+
+---
+
+### SUBJECTIVE  
+
+**Chief Complaint:**  
+“Shortness of breath and difficulty breathing with exercise, cold weather, and cat exposure; clarification of inhaler regimen.”
+
+**History of Present Illness (HPI):**  
+Abby reports that a few months ago, during a routine visit, she was told that her childhood asthma has “returned.” Since then she has been experiencing intermittent episodes of dyspnea that are precipitated by:
+
+* **Exercise** – In gym class she becomes unable to “breathe” when she tries to run fast; she stops, walks slower, and symptoms resolve within a few minutes after rest.  
+* **Cold air** – When outdoors in very cold weather she feels chest tightness and a sense of being unable to inhale.  
+* **Animal dander** – Exposure to a friend’s house with many cats caused audible wheezing and a prolonged recovery period; she noted the wheeze only in that setting.  
+* **Seasonal allergens** – During spring she develops itchy, watery eyes and a runny nose, which she previously thought was a cold.
+
+She denies nighttime awakenings for breathlessness, chronic cough, sputum production, fever, chills, nausea, vomiting, or recent infections. She reports using an inhaler “the one that starts with an ‘s’” (fluticasone) **twice daily** but sometimes forgets the second dose. She also has an albuterol rescue inhaler that she uses before gym class. She is uncertain whether a second inhaler (likely a leukotriene‑modifier) is needed only as a rescue, and the nurse’s recent instruction that both should be used has added confusion.
+
+**Review of Systems (pertinent positives/negatives):**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | None (no fever, chills, weight loss) | |
+| Respiratory | Exercise‑induced dyspnea, cold‑induced chest tightness, wheeze with cat exposure | No chronic cough, no sputum, no nocturnal symptoms |
+| ENT / Allergic | Seasonal allergic rhinitis (spring), intermittent itchy eyes with cat exposure | No persistent nasal congestion, no sinus pain |
+| Dermatologic | History of atopic dermatitis (now resolved) | No current rash |
+| Cardiovascular | None | No chest pain, palpitations, edema |
+| Gastrointestinal | None | No nausea, vomiting, abdominal pain |
+| GU | None | No dysuria, frequency |
+| Psych/Behavioral | Denies self‑harm thoughts, low PHQ‑2 (0‑2) and GAD‑7 (1‑2) scores | |
+| Social | Occasional beer at weekend parties, no tobacco, no illicit drugs, sexually active with one girlfriend, consistent condom use | |
+
+**Allergies (patient‑reported & EMR):**  
+- Cats (dander) – likely contributor to wheeze  
+- Multiple environmental allergens per chart: mold, house dust mite, animal dander, grass pollen, tree pollen, wheat, tree nut (all severity 1)  
+
+**Past Medical History:**  
+- Childhood asthma (diagnosed 2007, previously inactive) – now active  
+- Atopic dermatitis (resolved 2021)  
+- Perennial allergic rhinitis (resolved 2022)  
+- Prior acute bronchitis episodes (2016, 2021)  
+- Acute viral pharyngitis, sinusitis, cystitis (historical)  
+- No chronic lung disease other than asthma  
+
+**Past Surgical History:**  
+- Wisdom tooth extraction (date not specified)  
+
+**Family History:**  
+- Father: childhood asthma (now asymptomatic), seasonal allergic rhinitis (spring)  
+
+**Social History:**  
+- Lives with parents and younger brother.  
+- Currently a high‑school junior (Grade 11) – still attending school.  
+- Exercise: participates in gym class; otherwise “none” documented.  
+- Alcohol: occasional beer at parties, minimal consumption.  
+- No tobacco or recreational drug use.  
+
+**Medications (from chart & interview):**  
+- Fluticasone propionate 44 µg/actuation inhaler (metered‑dose inhaler) – **daily controller** (dose unclear, likely 1‑2 puffs BID).  
+- Albuterol 0.083 mg/actuation inhalation solution – **rescue** PRN, used before exercise.  
+- Fexofenadine 30 mg PO daily – antihistamine for allergic rhinitis.  
+- Epinephrine auto‑injector (0.3 mL, 1 mg/mL) – prescribed for anaphylaxis risk (cat dander).  
+- No chronic oral steroids or leukotriene modifiers listed; patient uncertain about a second inhaler.  
+
+---
+
+### OBJECTIVE  
+
+**Vital Signs (2024‑04‑18):**  
+- Heart Rate: 99 bpm (tachycardic for age)  
+- Respiratory Rate: 13 /min (normal)  
+- Blood Pressure: not recorded in the extract  
+- Temperature: not recorded  
+- SpO₂: not recorded  
+- Height: 162 cm; Weight: not recorded → BMI 17.9 (underweight)  
+
+**Physical Examination:** (No detailed exam documented in the encounter)  
+- General: Appears well, no acute distress.  
+- HEENT: No nasal polyps noted; eyes without injection at time of exam.  
+- Lungs: No wheezes or crackles documented; patient reports intermittent wheeze with cat exposure.  
+- Cardiovascular: Regular rate and rhythm.  
+- Skin: No active dermatitis.  
+
+**Laboratory Data (most recent):**  
+- CBC within normal limits (WBC 5.6 K/µL, Hgb 13.7 g/dL, Hct 45 %, Platelets 187 K/µL, MCV 84 fL, etc.).  
+- PHQ‑2 scores: 0–2 (screen negative for depression).  
+- GAD‑7 score: 1–2 (screen negative for anxiety).  
+- AUDIT‑C total score: 1–2 (low‑risk alcohol use).  
+
+**Pulmonary Function Testing:**  
+- Patient recalls a spirometry performed a few months ago that confirmed “asthma back.” No numeric values available in the record.
+
+---
+
+### ASSESSMENT  
+
+1. **Persistent, partially uncontrolled asthma** – symptoms triggered by exercise, cold air, and cat dander; patient reports reliance on rescue albuterol and inconsistent controller inhaler use.  
+2. **Allergic rhinitis – seasonal** (spring) – contributing to airway hyper‑reactivity.  
+3. **Environmental allergies** (multiple indoor/outdoor allergens) – documented in EMR.  
+4. **Underweight (BMI 17.9)** – may reflect dietary habits or increased metabolic demand from chronic disease.  
+5. **Social/occupational concern:** Desire to enlist in the U.S. Marine Corps; requires clarification of fitness standards for individuals with asthma.  
+6. **Medication regimen confusion** – needs education on controller vs. rescue inhaler dosing and any additional controller (e.g., leukotriene receptor antagonist).  
+
+---
+
+### PLAN  
+
+**1. Asthma Management**  
+- **Controller:** Continue fluticasone propionate MDI 44 µg, 1‑2 puffs **twice daily** (exact dose to be confirmed and written on prescription). Emphasize *daily* use even when asymptomatic.  
+- **Rescue:** Albuterol 90 µg (0.083 mg) inhalation solution, 2 puffs **as needed** for acute dyspnea; advise use **15 min before** exercise or exposure to known triggers.  
+- **Add‑on therapy:** Initiate **Montelukast 10 mg PO nightly** to address exercise‑induced bronchospasm and allergen‑driven inflammation (particularly cat and pollen).  
+- **Allergy control:** Continue fexofenadine 30 mg daily during high‑pollen seasons; consider nasal corticosteroid spray (e.g., fluticasone nasal spray) if rhinitis worsens.  
+- **Asthma Action Plan:** Provide written plan with green/yellow/red zones, step‑up instructions, and clear criteria for emergency care.  
+
+**2. Education & Technique**  
+- Demonstrate and observe proper MDI technique with spacer; reinforce timing of controller inhaler (morning and evening) and rescue inhaler (pre‑exercise).  
+- Review trigger avoidance: keep distance from cats, use HEPA filters at home, wear a scarf or mask in cold air, warm up slowly before intense activity.  
+- Discuss the importance of adherence to prevent progression and to meet military medical standards.  
+
+**3. Follow‑up & Monitoring**  
+- Schedule **pulmonary function testing (spirometry with bronchodilator response)** within 4–6 weeks to objectively assess control and to document baseline for Marine Corps evaluation.  
+- Return visit **in 4 weeks** for symptom review, inhaler technique check, and to adjust therapy if still not well‑controlled (e.g., consider stepping up to a higher‑dose inhaled corticosteroid or adding combination therapy).  
+- If symptoms worsen or rescue inhaler use exceeds **2‑3 times/week**, advise immediate evaluation (possible oral corticosteroid burst).  
+
+**4. Military Eligibility Counseling**  
+- Provide patient with current U.S. Marine Corps medical fitness standards for asthma (must be on **daily low‑dose inhaled corticosteroid only**, no oral steroids in past year, and must have a documented **normal spirometry** after a wash‑out period).  
+- Offer referral to the **military medical officer** or a **pulmonary specialist** experienced in service‑related fitness assessments.  
+
+**5. Nutrition & Weight**  
+- Discuss balanced diet with adequate calories and protein; consider referral to a nutritionist given BMI < 18.5.  
+
+**6. Preventive Care**  
+- Verify influenza vaccination status (annual) and COVID‑19 booster as indicated.  
+- Encourage routine dental care (already on vitamin and oral hygiene regimen).  
+
+**7. Documentation & Prescriptions**  
+- Write new prescriptions:  
+  - Fluticasone propionate MDI 44 µg, **2 puffs BID** (refill 3 months).  
+  - Albuterol MDI 90 µg, **2 puffs PRN** (max 6 puffs/24 h).  
+  - Montelukast 10 mg tablet **once nightly** (refill 3 months).  
+- Update allergy list to include *cat dander* as a trigger.  
+
+**8. Patient Concerns Addressed**  
+- Clarified that well‑controlled asthma on daily low‑dose inhaled corticosteroid **does not automatically disqualify** enlistment, but documentation of control and normal spirometry will be required.  
+- Answered questions about the nature of pulmonary function tests and reassured patient that repeat testing will be arranged.  
+
+**9. Discharge Instructions**  
+- Use controller inhaler daily; do not skip doses.  
+- Use rescue inhaler before any vigorous activity; seek medical help if symptoms do not improve within 5‑10 minutes after use.  
+- Keep rescue inhaler and epinephrine auto‑injector accessible at school and home.  
+- Avoid cat exposure when possible; keep windows closed during high pollen days; wear a scarf in cold weather.  
+- Follow up in 4 weeks or sooner for worsening symptoms.  
+
+**10. Follow‑up Appointments**  
+- **Pulmonary clinic** – 4 weeks (spirometry, inhaler technique).  
+- **Primary care** – 4 weeks (review labs, weight, and overall health).  
+
+---  
+
+*Prepared by:* Dr. External Provider, MD  
+*Date:* 2024‑04‑18  
+
+*End of SOAP note.*

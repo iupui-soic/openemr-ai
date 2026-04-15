@@ -1,0 +1,66 @@
+Model: google/medgemma-4b-it
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 05:59:27
+Time: 31.28s
+Tokens: 7,076 in / 577 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Name: Abe Steuber
+DOB: 1995-03-24
+Sex: Male
+Unit Number: 311
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000
+
+Chief Complaint: My back, it just really hurts. I feel really stiff in the morning and um yeah, it's just been going on for a few months now.
+
+History of Present Illness:
+
+The patient presents with chronic back pain that has been ongoing for approximately six months. The patient reports stiffness in the morning, which improves throughout the day. The pain is described as a dull ache, and the patient rates it as a 4 or 5 out of 10, with some days being worse than others. The pain is located all over the back, extending from the middle to the lower back, and the patient does not pinpoint any specific location as being the most painful. The pain does not radiate to other areas of the body.
+
+Associated Symptoms:
+
+The patient reports fatigue and malaise. He also mentions experiencing diarrhea a few months ago, possibly related to food poisoning.
+
+Past Medical History:
+
+The patient has a history of asthma, for which he uses an inhaler as needed. He also has a history of knee and hand pain, which are not as severe as the back pain and are not as frequent.
+
+Medications:
+
+The patient is currently taking Acetaminophen 325 MG Oral Tablet, Naproxen sodium 220 MG Oral Tablet, Fexofenadine hydrochloride 60 MG Oral Tablet, and Epinephrine 1 MG/ML Auto-Injector. He also uses hydrocortisone 10 MG/ML Topical Cream and Ibuprofen 400 MG Oral Tablet.
+
+Allergies:
+
+The patient reports environmental allergies.
+
+Family History:
+
+The patient's mother has psoriasis.
+
+Social History:
+
+The patient is sexually active and reports occasional marijuana use. He also drinks alcohol occasionally.
+
+Review of Systems:
+
+The patient denies any recent trauma or injuries. He denies fevers, chills, or night sweats. He denies any shortness of breath or changes in bowel or urinary patterns. He denies any changes in appetite or weight. He denies any vision changes or numbness/tingling. He denies muscle weakness. He denies recent illness with viral or bacterial infections.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided transcript.
+
+Assessment:
+
+The patient presents with chronic low back pain. The differential diagnosis includes psoriatic arthritis, reactive arthritis, and ankylosing spondylitis.
+
+Plan:
+
+The plan includes a physical examination, lab work (CBC, CRP, ESR, rheumatoid factor, antinuclear antibodies), and X-rays of the spine and sacroiliac joints.
+
+Discharge Instructions:
+
+No discharge instructions are provided in the transcript.

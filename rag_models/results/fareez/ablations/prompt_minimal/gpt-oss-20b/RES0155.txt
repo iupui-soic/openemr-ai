@@ -1,0 +1,158 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:28:27
+Time: 3.19s
+Tokens: 11,953 in / 1,913 out
+============================================================
+
+**Patient Information**  
+**Name:** Unknown (presenting patient in the transcript)  
+**Age:** Not specified in the encounter transcript  
+**Gender:** Not specified  
+**Date of Encounter:** 2024‑04‑14 (presenting to the emergency department)
+
+---
+
+### S – Subjective  
+
+**Chief Complaint:**  
+Worsening shortness of breath, productive cough, and chest discomfort for the past 5 days.
+
+**History of Present Illness (HPI):**  
+The patient reports a 5‑day history of progressive dyspnea and cough. The cough is productive of yellowish‑green sputum; the amount described as “the size of the inside of a palm” per cough. No hemoptysis is reported. Dyspnea is exertional and improves when at rest; the patient can sit comfortably in the clinic but cannot perform usual activities such as walking around the apartment without feeling short of breath. Chest discomfort is described as a vague, congestive feeling that is constant and not associated with chest pain, pressure, or sharp stabbing sensations. The patient notes feeling “feverish” for a couple of days, but no measured temperature is available. He denies orthopnea, paroxysmal nocturnal dyspnea, nocturnal chest pain, palpitations, headaches, visual changes, nausea/vomiting, abdominal pain, diarrhea or constipation, urinary symptoms, night sweats, or significant weight loss.
+
+**Associated Symptoms (Positive):**  
+- Yellow/green sputum  
+- Exertional dyspnea  
+- Chest “congestion”  
+- Feverish sensation  
+
+**Associated Symptoms (Negative):**  
+- No chest pain, pressure, or sharp discomfort  
+- No hemoptysis  
+- No orthopnea or nocturnal dyspnea  
+- No palpitations, syncope, or chest trauma  
+- No systemic symptoms such as night sweats, weight loss, or rash  
+
+**Review of Systems:**  
+
+| System | Findings |
+|--------|----------|
+| Constitutional | Feeling feverish; denies chills, night sweats, weight change |
+| Respiratory | Productive cough (yellow/green sputum), exertional SOB, no wheezing or stridor, no chest pain |
+| Cardiovascular | No palpitations, no chest pain, no edema |
+| Gastrointestinal | No nausea, vomiting, abdominal pain, or changes in stool |
+| Genitourinary | No dysuria, frequency, or hematuria |
+| Neurologic | No headache, dizziness, vision changes |
+| Musculoskeletal | No joint pain or swelling |
+| Skin | No rash or itching |
+| Endocrine | Denies polyuria, polydipsia |
+| Psychiatric | No depression or anxiety reported |
+| Allergies | None reported |
+
+**Past Medical History (PMH):**  
+- Chronic Obstructive Pulmonary Disease (diagnosed ~3 years ago)  
+- Hypertension  
+- Gastroesophageal Reflux Disease (GERD)
+
+**Past Surgical History:**  
+None reported.
+
+**Medications (Home):**  
+- **Ventolin** (albuterol) – rescue inhaler, used 3–4 puffs morning, 2–3 puffs nightly; used ~2–3 times per week normally.  
+- **Symbicort** – daily maintenance inhaler (budesonide/formoterol).  
+- **ACE inhibitor** (type unspecified).  
+- **Tums** (or similar antacid) as needed for GERD.
+
+**Allergies:** None known.
+
+**Social History:**  
+- **Tobacco:** Smokes ~1 pack/day; smoking history ~30–40 years.  
+- **Alcohol:** Occasional wine on weekends.  
+- **Illicit Drugs:** None.  
+- **Occupation:** Works at a grocery store.  
+- **Living Situation:** Lives with daughter in an apartment.  
+- **Exercise:** None reported.  
+- **Sleep:** Not reported as disturbed.
+
+**Family History:**  
+No known heart or lung disease reported in first‑degree relatives.
+
+---
+
+### O – Objective  
+
+(Clinical examination findings and laboratory results are not available in the transcript; however, the provider plans the following work‑up.)
+
+| Parameter | Expected/Planned |
+|-----------|------------------|
+| **Vital Signs** | Temperature (to document fever), BP, HR, RR, SpO₂, weight |
+| **Physical Exam** | General appearance, respiratory effort, lung auscultation (wheezes, crackles), cardiac auscultation, peripheral edema |
+| **Laboratory** | CBC with differential (looking for leukocytosis), BMP, CRP or pro‑calcitonin (infection marker), arterial blood gases if hypoxia |
+| **Imaging** | Chest X‑ray (CXR) to evaluate for infiltrates, consolidation, hyperinflation, and to rule out pneumothorax |
+
+---
+
+### A – Assessment  
+
+1. **Chronic Obstructive Pulmonary Disease (COPD) Exacerbation** – acute worsening of dyspnea, productive cough, and chest congestion consistent with an infectious trigger.  
+2. **Possible Community‑Acquired Pneumonia** – feverish feeling and productive sputum raise concern for lower respiratory infection.  
+3. **Unstable Hypertension** – baseline BP not documented; patient on ACE inhibitor.  
+4. **GERD** – ongoing symptom control with antacid.  
+5. **Risk Factors** – chronic smoking, age (not specified but likely older adult), occupational exposure (grocery store) could contribute to respiratory symptoms.
+
+**Differential Diagnoses to Consider:**
+- Acute bacterial pneumonia
+- Acute bronchitis
+- COPD flare (viral or bacterial)
+- Asthma exacerbation (less likely but possible)
+- Pulmonary embolism (unlikely but ruled out if hypoxia, chest pain absent)
+
+---
+
+### P – Plan  
+
+**Acute Management (ED):**  
+1. **Administer nebulized bronchodilator (albuterol)** and consider nebulized ipratropium.  
+2. **Add systemic corticosteroid** (e.g., prednisone 30 mg PO daily for 5 days) to reduce airway inflammation.  
+3. **Begin empiric antibiotics** (e.g., azithromycin 500 mg PO on day 1 then 250 mg daily for 4 days) targeting typical respiratory pathogens, given suspected bacterial component.  
+4. **Supplemental oxygen** to keep SpO₂ ≥ 94% if hypoxic.  
+5. **Monitor vitals hourly** in ED; repeat CBC and BMP as per protocol.  
+6. **Order CXR** to assess for infiltrates, consolidation, or other pulmonary pathology.  
+7. **Obtain a COVID‑19 PCR test** due to overlapping symptoms.  
+8. **Consider admission** if hypoxia persists, if respiratory distress escalates, or if patient fails outpatient therapy.
+
+**Discharge or Home Care (if stable):**  
+- Continue **Symbicort** as prescribed.  
+- Use **Ventolin** rescue inhaler as needed (limit to no more than 12 puffs/day).  
+- **Prednisone taper** if started.  
+- **Azithromycin** completed as a 5‑day course.  
+- **Maintain ACE inhibitor** for BP control.  
+- **Tums** as needed for GERD.  
+- **Encourage smoking cessation**; refer to smoking cessation program and provide nicotine replacement counseling.  
+- **Instruct on early signs of worsening**: increased SOB, new chest pain, fever >38°C, or cough producing bright red sputum.  
+- **Schedule follow‑up** with pulmonology within 3–5 days, and primary care within 1 week.  
+- **Reinforce hand hygiene and COVID‑19 precautions** until test results are negative.
+
+**Patient Education:**  
+- Explain that the symptoms are likely due to a COPD flare triggered by infection.  
+- Discuss the role of antibiotics and steroids in reducing inflammation and bacterial load.  
+- Review inhaler technique and adherence.  
+- Counsel on smoking cessation resources (counseling, nicotine patch/lozenge).  
+- Encourage hydration and rest.  
+
+**Follow‑Up:**  
+- Outpatient visit with pulmonologist within 3–5 days.  
+- Primary care follow‑up in 1 week to reassess BP, medication adherence, and symptom resolution.  
+- Return to ED immediately if breathing worsens, chest pain develops, or fever persists >3 days.
+
+**Disposition:**  
+- **Discharge** if stable after initial evaluation and treatment, with instructions as above.  
+- **Admit** if any of the following: SpO₂ < 90% on room air, respiratory distress, hemodynamic instability, inability to complete outpatient therapy, or significant comorbidities requiring inpatient monitoring.  
+
+---  
+
+**Prepared by:**  
+[Provider Name], MD  
+[Date]

@@ -1,0 +1,144 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:28:41
+Time: 6.10s
+Tokens: 14,856 in / 1,902 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: December 5, 1915 (Age ≈ 108 years)  
+Sex: Male  
+Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+Unit Number: 48  
+
+Chief Complaint  
+The patient presented to the emergency department complaining of a persistent dry cough of five days’ duration that has worsened and is now interfering with sleep. He also reports feeling “hot,” excessive sweating, night‑time chills, sore throat, and an acute loss of smell that began this morning.
+
+History of Present Illness  
+Aaron reports that the cough began approximately five days ago. Initially mild, the cough has progressively become more severe, occurring throughout the day and now waking him at night. He describes the cough as dry, without sputum production. The coughing episodes have begun to cause discomfort in his throat, which he characterizes as a sore throat. He denies any specific aggravating or relieving factors; the cough is constant. He notes associated systemic symptoms including subjective fever (“feeling hot” and “sweaty”), fatigue, and exhaustion. He has experienced a single episode of night sweats last night that soaked his shirt. He reports a new loss of smell this morning but maintains normal taste. He denies nausea, vomiting, chills, or rigors. There is no recent travel and no known sick contacts, although he works in a grocery store where he encounters many customers. He has not taken a temperature at home.
+
+Past Medical History  
+- Hypertension (essential) – on Ramipril  
+- Type 2 diabetes mellitus – on Metformin  
+- Obesity (BMI ≈ 31.5)  
+- Chronic kidney disease (stages 1–4 noted in record, most recent stage 4)  
+- End‑stage renal disease (currently awaiting kidney transplantation)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Atrial fibrillation  
+- Hyperlipidemia, metabolic syndrome, anemia, osteoporosis, prostate neoplasm (carcinoma in situ)  
+- History of gallbladder removal (cholecystectomy) approximately 10 years ago  
+
+Surgical History  
+- Cholecystectomy (≈ 10 years ago)  
+
+Medications (home)  
+- Ramipril 10 mg daily (reported in transcript)  
+- Metformin (dose not specified)  
+- Vitamin D supplement (dose not specified)  
+
+Allergies  
+- Environmental pollen (seasonal)  
+- No known drug allergies  
+
+Family History  
+- Mother has asthma  
+- Brother has asthma  
+
+Social History  
+- Employed full‑time as a grocery store employee  
+- Lives with wife and two school‑age children; wife is currently home‑based  
+- No tobacco use  
+- No alcohol misuse; reports 3–4 beers per weekend  
+- No illicit drug use or cannabis use  
+
+Review of Systems  
+
+Constitutional: Positive for feverish feeling, fatigue, night sweats, weight gain of 5–10 lb (self‑reported). No recent weight loss.  
+
+Respiratory: Positive for dry cough, worsening over 5 days, sore throat, and new loss of smell. Denies sputum production, dyspnea, wheezing, or chest pain aside from throat discomfort after coughing. No known shortness of breath.  
+
+Cardiovascular: Denies chest pain at rest, palpitations, or orthopnea.  
+
+Gastrointestinal: Denies nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+
+Genitourinary: No dysuria or urinary frequency reported.  
+
+Neurologic: No headaches, dizziness, or focal deficits.  
+
+Skin: Reports night‑time sweating that soaked clothing; no rashes.  
+
+Psychiatric: No anxiety, depression, or suicidal ideation reported.  
+
+All: No new medication allergies.  
+
+Objective  
+
+Vital Signs (recorded at triage, 2024‑09‑08)  
+- Heart Rate: 88 beats/min  
+- Respiratory Rate: 13 breaths/min  
+- Temperature: Not measured (patient reports feeling febrile)  
+- Blood Pressure: Not recorded in the extract  
+- SpO₂: Not recorded  
+- Height: 166.3 cm (5 ft 5 in)  
+- Weight: Not recorded (BMI from record = 31.53)  
+
+Physical Examination  
+No physical examination details were documented in the transcript or EMR for this encounter.  
+
+Laboratory Results (most recent panel)  
+- Sodium: 143.9 mmol/L (within normal limits)  
+- Potassium: 4.74 mmol/L (within normal limits)  
+- Chloride: 103.8 mmol/L (within normal limits)  
+- Carbon dioxide (total): 25.7 mmol/L (within normal limits)  
+- Blood Urea Nitrogen: 17.3 mg/dL (within normal limits)  
+- Creatinine: 0.39 mg/dL (lower than expected for chronic kidney disease; may reflect laboratory error or recent dialysis)  
+- Glucose: 70.6 mg/dL (fasting range) and 85.8 mg/dL on repeat (within target)  
+- Calcium: 9.98 mg/dL (normal)  
+- AST: 36.8 U/L (slightly elevated)  
+- Alkaline phosphatase: 79.5 U/L (normal)  
+- Protein in urine (dipstick): 280 mg/dL (suggestive of proteinuria)  
+- PHQ‑2 score: 1 (negative for major depression)  
+- GAD‑7 score: 2 (negative for moderate anxiety)  
+- AUDIT‑C total score: 1 (low risk alcohol use)  
+- HARK score: 0 (no intimate partner violence reported at this visit)  
+
+Imaging  
+No imaging studies were performed during this encounter.  
+
+Assessment  
+1. Acute bronchitis, likely viral in etiology.  
+2. Suspected COVID‑19 infection pending testing (patient meets isolation criteria based on symptoms of cough, feverish sensation, loss of smell, and night sweats).  
+3. Chronic medical conditions: hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4/end‑stage renal disease, ischemic heart disease with prior CABG, atrial fibrillation, obesity, hyperlipidemia, prostate carcinoma in situ.  
+
+Plan  
+
+Diagnostic Testing  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 test).  
+- Consider rapid influenza testing given seasonality, though priority is COVID‑19.  
+
+Therapeutic Interventions  
+- Symptomatic treatment: Advise use of over‑the‑counter acetaminophen 325 mg every 4–6 hours as needed for fever or discomfort, not to exceed 3 g per day.  
+- Recommend a cough suppressant (dextromethorphan‑containing preparation) if cough remains distressing and interferes with sleep.  
+- Encourage adequate hydration, humidified air, and rest.  
+- Continue current home medications (Ramipril, Metformin, Vitamin D) unless contraindicated by new laboratory findings; no adjustments made at this visit.  
+
+Infection Control / Disposition  
+- The patient was placed in isolation pending COVID‑19 test results.  
+- He and his household members were instructed to self‑isolate for 14 days from the date of testing, adhering to CDC guidelines (mask use, separate bedroom if possible, frequent hand hygiene).  
+
+Patient Education  
+- Reviewed signs that would warrant immediate return to the emergency department: difficulty breathing, chest pain unrelieved by rest, persistent high fever (> 101.5 °F), confusion, or worsening cough with production of colored sputum.  
+- Discussed the natural course of acute bronchitis and the limited role of antibiotics in viral infections.  
+
+Follow‑up  
+- Results of the COVID‑19 PCR will be communicated within 24–48 hours.  
+- If the test is positive, the patient will be managed according to current COVID‑19 outpatient protocols, with consideration of monoclonal antibody therapy given his age and comorbidities.  
+- If negative, continue supportive care and reassess in 3–5 days if symptoms do not improve.  
+- Follow‑up with his primary care physician within one week for reassessment of chronic conditions and to ensure resolution of the acute respiratory illness.  
+
+Disposition  
+The patient was discharged home in stable condition after a brief observation period, with instructions to self‑isolate, monitor symptoms, and seek urgent care if worsening.  
+
+No further information available.

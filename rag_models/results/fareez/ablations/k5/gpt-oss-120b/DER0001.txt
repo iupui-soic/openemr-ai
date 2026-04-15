@@ -1,0 +1,116 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:31:47
+Time: 5.90s
+Tokens: 10,531 in / 1,786 out
+============================================================
+
+Patient Information:
+Name: Adan Crona  
+Age: 45 years (per patient report)  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint:
+“Rash on my right ankle that has become swollen, red, painful, and is now draining white fluid.”
+
+History of Present Illness:
+The patient is a 45‑year‑old man with a history of type 2 diabetes mellitus who presents with a one‑week history of a lesion on the right ankle. Initially the area appeared “weird” and was not painful. Over the past 24 hours the lesion has become increasingly swollen, erythematous, and tender, with the development of purulent, white drainage from a former scab. The patient reports a sensation of heat over the affected area for the last 12 hours and notes that the right ankle feels hotter than the left. He denies any recent trauma aside from occasional minor foot injuries related to his diabetes. He also reports generalized fatigue, increased hunger, and recent weight gain, which he attributes to poorly controlled diabetes (last reported A1c in the 9 % range). He has not measured his glucose levels consistently. There is no dyspnea, chest pain, or systemic signs such as fever (the patient does not have a home thermometer). He describes the pain as worsened by walking and flexing the ankle, but less so with light touch.
+
+Review of Systems:
+Constitutional – Fatigue, feeling “hot,” recent weight gain; denies fever, chills.  
+Skin – Swelling, redness, warmth, and purulent drainage from right ankle lesion; no other rashes.  
+Respiratory – No shortness of breath or cough.  
+Cardiovascular – No chest pain, palpitations, or edema.  
+Gastrointestinal – No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Neurologic – No numbness or loss of sensation in the affected ankle; chronic reduced sensation in the feet noted.  
+Endocrine – History of type 2 diabetes with poor recent control; no recent hypoglycemia.  
+Psychiatric – Stress related to work and family responsibilities.  
+
+Allergies:
+Penicillin – Causes facial swelling and respiratory difficulty (likely anaphylaxis).  
+Grass pollen – Seasonal allergic rhinitis.  
+Lisinopril – Unknown reaction (listed in record).  
+
+Past Medical History:
+- Type 2 diabetes mellitus (poorly controlled, recent A1c ≈9 %).  
+- Essential hypertension.  
+- Hyperlipidemia.  
+- Asthma in childhood (remote, no current therapy).  
+- Chronic kidney disease stage 2 (based on historic records; most recent eGFR 79 mL/min/1.73 m²).  
+
+Surgical History:
+- Functional sinus surgery performed in adolescence for chronic sinusitis.  
+
+Social History:
+- Unemployed, currently seeking work; previously employed as an accountant.  
+- Lives in town; sees his children every two weeks.  
+- Tobacco use: occasional, approximately 2 packs per week over the past several weeks.  
+- Alcohol use: 2–4 drinks per week, primarily on weekends.  
+- No regular exercise.  
+- Reports significant life stress related to employment and family responsibilities.  
+
+Family History:
+- Maternal side: multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+- Paternal side: generally healthy.  
+- Aunt on maternal side with lung cancer (significant smoking history).  
+
+Current Medications (home):
+- Rosuvastatin (dose not specified).  
+- Metformin (dose not specified).  
+- Two additional oral diabetes agents (patient unable to recall exact names; described as “Sidas…something”).  
+- No insulin therapy.  
+
+Vital Signs:
+No current vital sign measurements documented in this encounter.
+
+Physical Examination:
+(The examination was limited to the information obtained from the patient; a full in‑person exam was not recorded.)
+- General: Alert, oriented, appears mildly uncomfortable due to leg pain.  
+- Right ankle/leg: Marked swelling with erythema extending beyond the visible lesion. The skin is warm to touch and there is an open area with purulent, white drainage emerging from a former scab. Tenderness is present on palpation; pain worsens with ambulation and ankle flexion. No overt crepitus noted.  
+- Neurovascular: Distal pulses palpable; patient reports chronic decreased sensation in both feet but no new loss of sensation in the right ankle.  
+- Remaining systems: No abnormal findings reported.  
+
+Laboratory Data (most recent):
+- Serum creatinine: 2.98 mg/dL (elevated).  
+- Estimated GFR: 79 mL/min/1.73 m².  
+- Serum glucose: 94 mg/dL (random).  
+- HbA1c: Not drawn at this visit; prior value ≈9 %.  
+- Lipid panel: Total cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 31.6 mg/dL, triglycerides 177 mg/dL.  
+- Electrolytes: Sodium 139.8 mmol/L, Potassium 4.5 mmol/L, CO₂ 22 mmol/L, Calcium 8.53 mg/dL.  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, ALP 123.7 U/L, total bilirubin 0.77 mg/dL.  
+- Albumin 3.88 g/dL, total protein 6.52 g/dL.  
+
+Assessment:
+1. Cellulitis of the right ankle with purulent drainage – likely secondary to a diabetic skin breakdown/ulcer.  
+2. Uncontrolled type 2 diabetes mellitus (A1c in the 9 % range, intermittent self‑monitoring).  
+3. Hypertension, currently on an unspecified antihypertensive regimen (historical losartan).  
+4. Hyperlipidemia on rosuvastatin.  
+5. Chronic kidney disease stage 2 (eGFR ≈ 79 mL/min) with elevated serum creatinine.  
+
+Plan:
+Medical Management  
+- Initiate oral antibiotic therapy targeting typical skin flora and accounting for penicillin allergy: clindamycin 300 mg PO Q6H for 10 days, or, if MRSA risk is high, trimethoprim‑sulfamethoxazole 160/800 mg PO BID for 10 days.  
+- Provide wound care instructions: keep the area clean, apply sterile dressings daily, and monitor for increasing drainage, expanding erythema, or fever.  
+- Recommend referral to wound‑care clinic for possible debridement and advanced dressing if drainage persists.  
+
+Diabetes Management  
+- Reinforce the importance of regular blood glucose monitoring (target fasting glucose 80‑130 mg/dL).  
+- Schedule urgent follow‑up with primary care or endocrinology to reassess diabetes regimen; consider adding a basal insulin if glycemic control remains suboptimal.  
+- Counsel on foot care, avoidance of scratching, and daily inspection of feet and lower extremities.  
+
+Hypertension & Hyperlipidemia  
+- Continue current antihypertensive therapy (review medication list at next visit).  
+- Continue rosuvastatin; obtain lipid panel in 3 months.  
+
+Renal Function  
+- Monitor renal function in 4–6 weeks; avoid nephrotoxic agents.  
+
+Patient Education & Follow‑up  
+- Educate patient on signs of worsening infection (increased pain, spreading redness, fever, foul odor) and advise immediate return to the clinic or emergency department if these develop.  
+- Schedule follow‑up visit in 48–72 hours to assess response to antibiotics and wound status.  
+- Arrange appointment with primary care physician within the next week for comprehensive diabetes and cardiovascular risk management.  
+
+Disposition:  
+Patient was advised to start the prescribed antibiotic, keep the wound clean, and monitor closely. He verbalized understanding of the treatment plan and agreed to follow up as directed. No immediate emergency interventions were required at this time.

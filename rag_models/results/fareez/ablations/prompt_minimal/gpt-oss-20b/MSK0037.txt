@@ -1,0 +1,124 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 04:28:59
+Time: 3.89s
+Tokens: 33,622 in / 1,411 out
+============================================================
+
+**Patient Information**  
+Male, construction worker, active smoker (1 pack/day for 10 years), occasional marijuana, 1–2 alcoholic drinks daily. Current home medication: statin for hypercholesterolemia. No known drug allergies.
+
+---
+
+### SOAP Note  
+
+**S – Subjective**  
+
+**Chief Complaint:**  
+Difficulty extending the 4th and 5th fingers of the right hand; associated aching pain and nodules at the bases of those digits.  
+
+**History of Present Illness:**  
+The patient reports progressive pain and functional limitation over the past ~2 months. Pain is described as aching, worsens with active or passive extension of the 4th and 5th fingers, but is not severe. He also notes a catching sensation when trying to extend these fingers. No redness, swelling, warmth, or significant tenderness. No radiation into the forearm or hand. No previous trauma or falls; he attributes his symptoms to the repetitive, vibration‑heavy nature of his work (drilling, lifting).  
+
+**Associated Symptoms:**  
+- No numbness, tingling, or weakness.  
+- No night pain or sleep disturbance.  
+- No systemic symptoms (fever, chills, weight loss).  
+- No vision, hearing, or other neurological complaints.  
+
+**Review of Systems (selected):**  
+
+- *Constitutional:* No fever, chills, weight change, or fatigue.  
+- *Neurologic:* No numbness, tingling, or weakness.  
+- *Cardiovascular:* No chest pain, palpitations.  
+- *Respiratory:* No shortness of breath, wheezing.  
+- *GI/GU:* No abdominal pain, nausea, vomiting, or urinary complaints.  
+- *Musculoskeletal:* Pain localized to right hand only.  
+
+**Past Medical History:**  
+- Hypercholesterolemia (on statin).  
+- No history of diabetes mellitus, hypertension, or other chronic disease reported at visit.  
+
+**Surgical History:**  
+- Anterior cruciate ligament (ACL) reconstruction at age ~18.  
+
+**Medications:**  
+- Statin (dose not specified).  
+- No other prescription, over‑the‑counter, or herbal supplements.  
+
+**Allergies:**  
+- None reported.  
+
+**Social History:**  
+- Smokes ~1 pack/day for 10 years.  
+- Drinks 1–2 alcoholic beverages daily.  
+- Uses marijuana a couple of times per month.  
+- Works as a construction worker; no recent travel or sick contacts.  
+- Lives with wife in a small apartment.  
+
+**Family History:**  
+- No known musculoskeletal, neurological, or autoimmune disorders.  
+
+---
+
+**O – Objective**  
+
+*Vitals* – Not recorded during the encounter.  
+
+*Physical Examination – Right Hand*  
+- **Inspection:** No visible swelling, erythema, or deformity. Nodular, firm “bumps” at the bases of the 4th and 5th digits. Mild pallor/whiteness noted when fingers extended.  
+- **Palpation:** Mild discomfort over the nodules; no significant tenderness.  
+- **Range of Motion:** Active extension limited in the 4th and 5th digits. Passive extension elicits more pronounced pain and catching.  
+- **Tendon Assessment:** No crepitus or grinding; no obvious trigger “catching” at the pulley.  
+- **Other Findings:** No muscle atrophy, no deformities elsewhere in the hand or wrist.  
+
+*Laboratory/Imaging* – None ordered or performed at this visit.  
+
+---
+
+**A – Assessment**  
+
+1. **Dupuytren’s contracture (right hand, 4th–5th digits)** – Clinical picture of nodules and limited extension with minimal pain strongly suggests early Dupuytren’s disease.  
+2. **Differential diagnoses** –  
+   - **Trigger finger (stenosing tenosynovitis)** – catching noted, but lack of swelling, tenderness, or pain along tendon sheaths makes it less likely.  
+   - **Flexor tenosynovitis** – absent fever, redness, or marked pain.  
+   - **Other causes of hand nodules** (e.g., lipoma, ganglion cyst) – unlikely given location and pain profile.  
+
+*Risk factors:* Repetitive, vibration‑heavy work, male sex, and possible genetic predisposition (no family history noted).  
+
+---
+
+**P – Plan**  
+
+1. **Non‑operative Management**  
+   - **Hand therapy referral** for stretching exercises and manual therapy to try to improve extension and reduce contracture progression.  
+   - **Activity modification**: Encourage ergonomic adjustments at work (e.g., use vibration‑attenuating gloves, limit prolonged drilling).  
+   - **Pain control**: NSAIDs (e.g., ibuprofen 400 mg PO q6 h PRN) for pain; monitor for GI or renal side effects given his age and potential kidney disease history.  
+
+2. **Monitoring & Follow‑up**  
+   - Re‑evaluate hand function in **4 weeks**; assess progression of contracture and pain.  
+   - If no improvement or worsening, consider referral to hand surgery for possible percutaneous needle fasciotomy or fasciectomy.  
+
+3. **Diagnostic Work‑up**  
+   - **Baseline labs**: CBC, ESR, CRP to rule out inflammatory process; basic metabolic panel if kidney function not well documented.  
+   - **Ultrasound of the affected fingers** (optional) to delineate the extent of fibrous cords and differentiate from other soft‑tissue masses.  
+
+4. **Lifestyle & Risk Factor Modification**  
+   - **Smoking cessation counseling** – discuss resources (e.g., quitline, nicotine replacement).  
+   - **Alcohol moderation** – limit to ≤1 drink per day.  
+
+5. **Patient Education**  
+   - Explain natural history of Dupuytren’s contracture (slow progression, often self‑limited).  
+   - Emphasize importance of hand therapy exercises; provide handout or video resources.  
+   - Discuss warning signs that warrant earlier re‑evaluation: sudden worsening pain, rapid contracture, signs of infection (redness, warmth, fever).  
+
+6. **Documentation**  
+   - Record patient’s understanding of the diagnosis and plan.  
+   - Document all counseling and education provided.  
+
+*Follow‑up*: Schedule a follow‑up visit in 4 weeks or sooner if symptoms worsen.  
+
+---  
+
+**Disposition** – Patient tolerated exam well. No acute concerns identified. Plan as above and will monitor progression of hand symptoms.

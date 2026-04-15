@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:56:13
+Time: 2.42s
+Tokens: 13,633 in / 1,024 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: December 5, 1915  
+Sex: Male  
+Address: 656 Murphy Street, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+The patient presented to the emergency department reporting a five‑day history of a worsening dry cough that is now interfering with sleep.
+
+History of Present Illness  
+Mr. Feeney states that the cough began five days ago and has progressively worsened. It is a dry, non‑productive cough that occurs throughout the day. He reports associated sore throat pain that intensifies with coughing, and notes that the pain is more localized to the throat than the chest. He has experienced fever‑like symptoms, feeling hot and sweaty, and had one episode of night sweats that left his shirt soaked. The patient also reports a loss of smell that began this morning; taste remains normal. He denies nausea, vomiting, chest pain, chills, or recent weight loss. He has not measured his temperature but believes he has a fever.
+
+Review of Systems  
+Constitutional: reports feeling hot, sweaty, and having one night of night sweats. No significant weight loss.  
+Respiratory: dry cough, sore throat, loss of smell, no chest pain, no shortness of breath.  
+Cardiovascular: denies chest pain or palpitations.  
+Gastrointestinal: denies nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic: no headaches or dizziness.  
+Psychosocial: reports mild anxiety (PHQ‑2 score 1, GAD‑7 score 2). No substance abuse.  
+
+Past Medical History (select relevant items)  
+- Hypertension, managed with ramipril.  
+- Type 2 diabetes mellitus, managed with metformin.  
+- Chronic kidney disease stage 4; end‑stage renal disease with ongoing dialysis.  
+- Hyperlipidemia.  
+- History of gallbladder removal.  
+- No history of asthma or COPD.  
+
+Medications  
+Current home medications include ramipril, metformin, and vitamin D supplementation.  
+
+Allergies  
+Pollen (environmental). No known drug allergies.
+
+Social History  
+The patient lives with his wife and two children. He works in a grocery store. He reports consuming 3–4 beers on the weekend. He is a non‑smoker and denies cannabis or other recreational drug use. No recent travel. He has had occasional contact with coworkers in a public setting but does not recall any known sick contacts.
+
+Family History  
+Mother and brother have a history of asthma. No other significant familial disease reported.
+
+Physical Examination  
+No examination findings were documented in the transcript; therefore no information is available.
+
+Laboratory Results (selected)  
+- Sodium 143.9 mmol/L (reference range: 135–145).  
+- Chloride 103.8 mmol/L (reference range: 98–107).  
+- Potassium 4.74 mmol/L (reference: 3.5–5.0).  
+- Creatinine 0.39 mg/dL (reference range: 0.6–1.3; likely a lab error given chronic kidney disease).  
+- Glucose 70.6 mg/dL.  
+- AST 36.8 U/L (slightly elevated).  
+- ALP 79.5 U/L.  
+- Urine protein 280 mg/dL (significantly elevated).  
+- PHQ‑2 score 1; GAD‑7 score 2.
+
+Assessment  
+1. Acute bronchitis, presumed viral etiology.  
+2. Possible COVID‑19 infection pending PCR result.  
+3. Chronic conditions: hypertension, type 2 diabetes, chronic kidney disease stage 4/5, end‑stage renal disease.  
+4. Mild anxiety and depression screening scores in the minimal range.
+
+Plan  
+1. Order SARS‑CoV‑2 PCR nasal swab.  
+2. Advise self‑isolation for 14 days and instruct family to quarantine.  
+3. Symptomatic treatment: acetaminophen 325 mg q6–8 h PRN for fever and aches; nasal saline rinses; humidified air.  
+4. Continue current antihypertensive and antidiabetic therapy.  
+5. Monitor temperature daily; if fever >38.3 °C or cough worsens, return to ED.  
+6. Follow up with primary care provider after test results and once symptoms resolve.  
+7. Reinforce hand hygiene, mask use when interacting with others, and avoidance of crowded indoor settings.  
+8. No imaging or further laboratory work is indicated at this time given the clinical picture.  
+
+The patient was given education regarding isolation, symptom monitoring, and when to seek urgent care. He expressed understanding and agreement with the plan.

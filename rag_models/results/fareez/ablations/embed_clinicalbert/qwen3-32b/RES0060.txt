@@ -1,0 +1,87 @@
+Model: qwen/qwen3-32b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:58:34
+Time: 4.06s
+Tokens: 6,506 in / 1,262 out
+============================================================
+
+Patient Information:
+
+Abbie Stamm is a 22-year-old female who presents to the clinic with a four-day history of fever, cough, fatigue, and mild nausea. She resides in a duplex in Amherst, Massachusetts, and lives with her girlfriend. She reports no known exposure to sick individuals except for a recent trip to the mall, where she and others were wearing masks. She has a past medical history of high cholesterol managed with Rosuvastatin, pre-diabetes, and a history of an inguinal hernia repair five years ago. She denies any tobacco or recreational drug use and consumes alcohol occasionally on weekends. She has a documented allergy to penicillin, presenting with hives. Her family history is non-contributory for lung or heart conditions, though her grandfather had bladder cancer.
+
+Chief Complaint:
+
+The patient's chief complaints are fever, cough, fatigue, and mild nausea. She reports that her symptoms began four days ago, with the fever first noted on the morning of the visit at 38.5°C. The cough started five days ago and has progressively worsened. She also reports intermittent nausea without vomiting and a headache consistent with her history of tension headaches. She is concerned about the possibility of COVID-19.
+
+History of Present Illness:
+
+The patient reports the onset of symptoms five days ago, beginning with a dry cough that has progressively worsened. She first measured her temperature on the day of the visit and noted a fever of 38.5°C. She has been experiencing fatigue and tiredness, which has affected her ability to work. She reports a headache consistent with her history of tension headaches and mild nausea without vomiting. She denies chest pain, wheezing, or shortness of breath except for brief episodes after coughing fits. She also denies body aches, night sweats, or chills, though she reports feeling chilly at night. She has not noticed any changes in her appetite, taste, or smell. She denies any recent travel or recent antibiotic use.
+
+Review of Systems:
+
+Constitutional: The patient reports fatigue and mild fatigue-related body aches but denies weight loss or fever beyond the measured 38.5°C. She has not experienced dizziness, fainting, or confusion.
+
+Respiratory: She has a dry cough that has worsened over the past four days. She denies sputum production, blood in sputum, wheezing, or chest pain. She reports mild shortness of breath after coughing fits but no baseline dyspnea.
+
+Cardiovascular: No chest pain or palpitations reported. She denies a history of heart problems except for a past diagnosis of mitral valve regurgitation, which is currently ongoing.
+
+Gastrointestinal: She reports mild nausea without vomiting or abdominal pain. Bowel movements have been normal.
+
+Genitourinary: No changes in urinary habits, frequency, or appearance. No pain or blood in urine.
+
+Neurological: No changes in vision, hearing, or mental status. No new headaches beyond her known tension headaches.
+
+Musculoskeletal: No joint or muscle pain reported.
+
+Allergies:
+
+The patient has a documented allergy to penicillin, presenting with hives. No other drug allergies are reported.
+
+Past Medical History:
+
+The patient has a history of high cholesterol managed with Rosuvastatin, pre-diabetes, and a history of an inguinal hernia repair. She has a past diagnosis of childhood asthma, which resolved in 2021. She also has a history of perennial allergic rhinitis, resolved in 2020. She has had multiple episodes of gingivitis and viral sinusitis in the past. She has also had a recent diagnosis of acute infective cystitis, treated with nitrofurantoin.
+
+Surgical History:
+
+The patient underwent an inguinal hernia repair five years ago.
+
+Social History:
+
+The patient does not use tobacco or recreational drugs. She consumes alcohol occasionally on weekends, typically two to three beers. She works full-time and lives with her girlfriend in a duplex. She reports no exposure to mold, asbestos, or other environmental hazards in her home.
+
+Family History:
+
+No family history of lung or heart conditions. The patient reports her grandfather had bladder cancer, though details are limited.
+
+Current Medications:
+
+The patient is currently taking Rosuvastatin for high cholesterol. She also takes a multivitamin. She has no other medications or supplements.
+
+Objective:
+
+Vital Signs: Temperature was not measured in the OpenEMR record. Blood pressure, heart rate, respiratory rate, and oxygen saturation were not provided in the transcript. Weight and height are recorded as 157.9 cm and BMI of 23.31.
+
+Physical Exam: No physical examination findings were provided in the transcript. The OpenEMR record does not include a recent physical exam.
+
+Labs:
+
+Urinalysis results show elevated glucose and protein levels, with a high white blood cell count. These findings are consistent with a recent diagnosis of acute infective cystitis. Other lab results are not provided in the transcript.
+
+Imaging:
+
+No imaging studies were performed or referenced in the transcript.
+
+Assessment:
+
+The patient presents with symptoms consistent with an upper respiratory viral illness. Given the current public health context, a concern for COVID-19 is raised. The patient has been ordered a COVID-19 swab, and isolation precautions are advised for 14 days regardless of test results. The possibility of bacterial infection remains low at this time, but if symptoms worsen or change, further evaluation for bacterial pneumonia or other complications may be warranted.
+
+Plan:
+
+1. Order a COVID-19 nasal swab test.
+2. Advise the patient to isolate for 14 days and avoid contact with her girlfriend.
+3. Monitor symptoms for progression or change. If symptoms worsen or new symptoms develop, reassess for possible bacterial infection and consider antibiotic therapy.
+4. Continue current medications and monitor for side effects.
+5. Schedule a follow-up appointment in 7-10 days or sooner if symptoms worsen.
+6. Provide public health notification if the test is positive for contact tracing.
+7. Encourage hydration, rest, and over-the-counter remedies for symptom relief. Advise to seek immediate care if severe symptoms develop.

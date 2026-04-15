@@ -1,0 +1,47 @@
+Model: qwen/qwen3-32b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:40:08
+Time: 3.94s
+Tokens: 9,130 in / 1,013 out
+============================================================
+
+Patient Information  
+The patient is a 39-year-old male who presented with acute onset of chest pain. The patient is otherwise healthy with no prior medical history. He is employed as an accountant and resides in an apartment by himself. He is a pack-a-day smoker for 10 to 15 years and uses cannabis occasionally, approximately 5 milligrams per week. He consumes alcohol, averaging about 10 drinks per week. The patient exercises regularly, running 30 minutes every other day. His father had a heart attack at age 45 and has a history of cholesterol problems. There is no family history of stroke or cancer.
+
+Chief Complaint  
+The patient presents with a chief complaint of chest pain, which began the previous night and has since become sharper. The pain is localized to the left side of the chest and is described as sharp. The pain is constant, with a severity rating of 7 to 8 out of 10. Lying down exacerbates the pain, and deep breathing also worsens it. The patient reports associated symptoms of lightheadedness, trouble breathing, and a slight increase in heart rate. There is no radiation of the pain, no cough, no blood, and no wheezing. The patient denies fever, chills, nausea, vomiting, abdominal pain, urinary or bowel issues, or night sweats.
+
+History of Present Illness  
+The patient reports that the chest pain began the previous night and has progressively worsened. The pain is localized to the left side of the chest and is described as sharp. It is constant and has lasted for approximately 8 hours. The patient notes that lying down increases the discomfort, as does deep breathing. He denies any trauma to the chest or back and does not recall any specific activity that precipitated the pain, although he was moving furniture earlier in the evening. He denies any prior episodes of chest pain. The patient also reports experiencing lightheadedness and some difficulty breathing. He denies syncope, fever, chills, nausea, vomiting, or other systemic symptoms. He is not on any medications and has no known drug allergies.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, weight loss, or fatigue.  
+Respiratory: The patient reports difficulty breathing but denies wheezing, cough, or expectoration of blood.  
+Cardiovascular: The patient reports chest pain and a sensation of increased heart rate but denies palpitations, syncope, or syncope-like symptoms.  
+Gastrointestinal: The patient denies nausea, vomiting, or abdominal pain.  
+Other: The patient denies rash, neck pain, or other significant symptoms.
+
+Allergies  
+The patient has no known drug allergies.
+
+Past Medical History  
+The patient has no prior medical conditions. He has no history of hospitalizations or surgeries.
+
+Social History  
+The patient is a pack-a-day smoker for 10 to 15 years. He uses cannabis occasionally, approximately 5 milligrams per week. He consumes alcohol, averaging about 10 drinks per week. He exercises regularly, running 30 minutes every other day. He eats out for lunch but tries to maintain a healthy diet for dinner. He lives alone in an apartment and works as an accountant.
+
+Family History  
+The patient’s father had a heart attack at age 45 and a history of cholesterol problems. There is no family history of stroke or cancer.
+
+Current Medications  
+The patient is not on any medications.
+
+Objective  
+Vital signs were not available from the OpenEMR record. Physical examination findings were not provided in the transcript. The patient’s BMI is not listed in the OpenEMR extract, but height is 166 cm and weight is not available. No recent imaging or laboratory results were provided in the transcript, though OpenEMR lists several active medications and lab results from prior encounters.
+
+Assessment  
+The patient presents with acute chest pain of 8-hour duration, localized to the left side, described as sharp and constant. The pain is exacerbated by lying down and deep breathing. Associated symptoms include lightheadedness and dyspnea. Given the patient’s age, the absence of a prior medical history, and the presence of a family history of heart disease, the differential diagnosis includes atypical chest pain, musculoskeletal pain, and possible cardiac etiology. The patient’s smoking history and family history of heart disease further support the need for a thorough cardiac evaluation.
+
+Plan  
+The patient should undergo a comprehensive cardiac evaluation including an electrocardiogram (ECG), cardiac enzymes, and chest X-ray. A chest CT or echocardiogram may be considered if initial tests are inconclusive. The patient should be advised to avoid lying down and to monitor for any worsening symptoms. Follow-up with a cardiologist is recommended. The patient should also be counseled on smoking cessation and cannabis use. A follow-up appointment in 1 to 2 days is advised to reassess symptoms and review test results. If symptoms worsen, immediate medical attention is necessary.

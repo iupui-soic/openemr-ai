@@ -1,0 +1,81 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:17:20
+Time: 3.39s
+Tokens: 14,970 in / 1,243 out
+============================================================
+
+Patient Information  
+Abel Cummerata, male, born March 25, 1917 (age 106). Resident of 982 Jenkins Drive, Apt 39, East Longmeadow, Massachusetts. Lives with wife.  
+
+Chief Complaint  
+The patient presents with a three‑day history of a wet cough producing yellow‑green sputum and progressive shortness of breath.  
+
+History of Present Illness  
+The cough began approximately three days ago and has been persistent throughout the day and night. The sputum is described as yellow‑green, roughly the size of a thumb tip, and the patient reports no hemoptysis or purulent froth. Shortness of breath developed within the last 24 hours, rated at a severity of 7 out of 10. The patient reports mild wheezing when breathing deeply, but denies chest pain, palpitations, or exertional limitation. He notes fatigue, generalized weakness, mild abdominal discomfort, and anosmia (inability to smell a candle). He denies fever, chills, night sweats, dizziness, syncope, confusion, or memory loss. No recent weight loss, altered bowel habits, or urinary symptoms.  
+
+Review of Systems  
+Constitutional: fatigue, weakness, mild abdominal ache, anosmia; denies fever, chills, night sweats, weight loss.  
+Respiratory: cough with yellow‑green sputum, dyspnea (7/10), mild wheezing; no chest pain, no hemoptysis.  
+Cardiovascular: no palpitations, no chest pain; known atrial fibrillation, well controlled on metoprolol.  
+Gastrointestinal: mild abdominal discomfort, no nausea, vomiting, diarrhea, constipation, or rectal bleeding.  
+Genitourinary: no dysuria, frequency, or hematuria.  
+Neurologic: no dizziness, syncope, confusion, or focal deficits.  
+ENT: no sore throat, nasal congestion, or discharge; anosmia noted.  
+Musculoskeletal: mild body aches, no focal pain.  
+Skin: no rash or lesions.  
+Psychiatric: no depression or anxiety reported.  
+
+Past Medical History  
+Atrial fibrillation diagnosed approximately four years ago; on metoprolol. Chronic kidney disease stage 4. Hypertension, hyperlipidemia. History of inguinal hernia repair 15 years ago. No history of diabetes mellitus or heart failure.  
+
+Surgical History  
+Inguinal hernia repair (15 years ago).  
+
+Social History  
+Retired, lives with spouse. Former smoker (one pack per day) quit five years ago. No current tobacco use. No alcohol consumption. No recreational drugs. Uses occasional cannabidiol (CBD) edibles for sleep, low dose (~2.5 mg). No recent travel. Recent contact with a long‑term care facility one week ago.  
+
+Family History  
+Aunt with lung cancer (smoker). No other known cancers or cardiovascular disease in immediate family.  
+
+Medications (home)  
+Metoprolol (beta‑blocker).  
+Statin (type unspecified).  
+Baby aspirin (antiplatelet).  
+Cannabidiol edibles (low dose) for sleep.  
+
+Allergies  
+Sulfa drug allergy – rash with prior antibiotic exposure.  
+
+Physical Examination  
+No information available.  
+
+Laboratory Results (selected)  
+White blood cell differential: neutrophils 13.66 %, monocytes 9.46 %, basophils 3.05 %.  
+Hemoglobin/hematocrit: hematocrit 43.3 %.  
+Platelets: 4.24 × 10⁶ /µL.  
+Renal function: urea nitrogen 17.9 mg/dL; creatinine not provided.  
+Electrolytes: potassium 4.04 mmol/L; calcium 9.75 mg/dL.  
+Metabolic panel: bicarbonate 24.3 mmol/L; CO₂ 24.9 mmol/L.  
+Coagulation: prothrombin time 11.9 s.  
+Ferritin: 1853 µg/L (markedly elevated).  
+
+Imaging  
+No imaging studies performed or reported.  
+
+Assessment  
+Primary diagnosis: Pneumonia (suspected viral etiology; differential includes COVID‑19, bacterial pneumonia, heart failure exacerbation).  
+Secondary diagnoses: Atrial fibrillation, chronic kidney disease stage 4, hypertension, hyperlipidemia.  
+
+Plan  
+1. Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing; results expected within 1–2 days.  
+2. Advise strict isolation for 14 days, including spouse, pending test results.  
+3. Continue home medications (metoprolol, statin, aspirin).  
+4. Counsel on sleep hygiene; consider non‑benzodiazepine hypnotics or melatonin if CBD edibles are insufficient.  
+5. Monitor symptoms: if dyspnea worsens, chest pain develops, or fever >38 °C, seek urgent care.  
+6. If no clinical improvement within 48–72 hours or if bacterial infection suspected, consider empirical antibiotic therapy (e.g., amoxicillin‑clavulanate or azithromycin).  
+7. Follow‑up: schedule telehealth or in‑person visit in 2 days to review test results and symptom trajectory; sooner if condition deteriorates.  
+8. Educate patient on signs of respiratory distress (increased work of breathing, cyanosis, altered mental status) and instruct to call emergency services if they occur.  
+
+This summary reflects the current clinical encounter and is based on the patient interview and available electronic health record data. No additional structured data or markdown formatting has been included.

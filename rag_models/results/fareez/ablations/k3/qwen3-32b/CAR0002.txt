@@ -1,0 +1,86 @@
+Model: qwen/qwen3-32b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:43:10
+Time: 4.87s
+Tokens: 9,635 in / 1,342 out
+============================================================
+
+Patient Information  
+The patient is a 90-year-old male with a complex medical history, including essential hypertension, metabolic syndrome, ischemic heart disease, chronic kidney disease (now resolved with renal transplant), hyperlipidemia, anemia, sleep apnea, and chronic low back and neck pain. He resides with his parents in a house in Wayland, Massachusetts. His occupation is a bus driver, and he reports engaging in physical activity on a weekly basis, including running on Sundays. His social history includes a 20-year history of smoking, with a current consumption of half to one pack per day. He denies alcohol use but has a history of recreational drug use, specifically crystal methamphetamine, used approximately two times per month, with the last use occurring six days prior to this visit.
+
+Chief Complaint  
+The patient presents with a 30-minute history of left-sided chest pain, described as a dull, pressure-like sensation with associated shortness of breath and a sensation of tachycardia. He reports that the pain began while shoveling snow and has progressively worsened since onset. The pain is exacerbated by movement and when lying down, and he denies any relief with rest or position changes. He also reports a low-grade fever of 38°C and denies any prior episodes of chest pain.
+
+History of Present Illness  
+The patient is a 90-year-old male who experienced sudden-onset chest pain localized to the left side of his chest 30 minutes prior to arrival. The pain began while he was engaged in physical activity (shoveling snow) and has since remained constant and progressively worsened. He describes the pain as dull and pressure-like, with no radiation to other areas. The pain is exacerbated by movement and when lying down, and he reports that it is partially relieved when sitting. He also notes associated dyspnea, which he states began the day prior to the onset of chest pain. He denies any cough, nausea, vomiting, syncope, or diaphoresis. He reports a sensation of tachycardia, similar to when he is physically active. He denies any recent trauma to the chest, though he does play rugby and was tackled the previous day, with no immediate chest discomfort noted at that time. He also denies any rashes, dizziness, or palpitations unrelated to physical exertion.
+
+Review of Systems  
+Constitutional: The patient reports a low-grade fever of 38°C.  
+Respiratory: He reports mild shortness of breath, which he attributes to the chest pain.  
+Cardiovascular: No history of prior chest pain, syncope, or palpitations unrelated to physical activity.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No dizziness, syncope, or headaches.  
+Musculoskeletal: No joint pain or swelling.  
+Endocrine: No recent weight changes or polyuria.  
+Hematologic: No recent bleeding or bruising.  
+Psychiatric: No depression or anxiety reported.  
+Integumentary: No rashes or skin changes.  
+Genitourinary: No dysuria or hematuria.  
+Allergic: No known drug or food allergies.  
+
+Allergies  
+No known drug or food allergies.  
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, hyperlipidemia, ischemic heart disease, chronic kidney disease (now resolved with renal transplant), chronic low back and neck pain, sleep apnea, anemia, and prediabetes. He has a history of renal transplant and is currently on immunosuppressive therapy with tacrolimus. He has also been treated for gingivitis and has a history of substance use, including crystal methamphetamine.  
+
+Surgical History  
+No surgical history reported.  
+
+Family History  
+No family history of heart attack, stroke, or cancer reported.  
+
+Current Medications  
+The patient is currently taking lisinopril for hypertension, rosuvastatin for hyperlipidemia, and a multivitamin. He also has a long-standing regimen of tacrolimus for immunosuppression following a renal transplant. Other medications include metoprolol, nitroglycerin, and simvastatin.  
+
+Objective  
+Vital Signs:  
+Blood Pressure: Not recorded in the OpenEMR extract.  
+Heart Rate: 91 bpm.  
+Respiratory Rate: 14 breaths per minute.  
+Temperature: 38°C.  
+SpO2: Not recorded.  
+Weight: Not recorded.  
+Height: 168 cm.  
+BMI: 30.97 (obese).  
+
+Physical Examination:  
+Not performed in this visit.  
+
+Laboratory Results:  
+Creatinine: 0.72 mg/dL.  
+Glucose: 84.52 mg/dL.  
+Potassium: 5.03 mmol/L.  
+Sodium: 141.55 mmol/L.  
+Calcium: 9.47 mg/dL.  
+Urea nitrogen: 19.21 mg/dL.  
+Cholesterol: 185.27 mg/dL.  
+LDL: 140.58 mg/dL.  
+
+Imaging:  
+No imaging performed in this visit.  
+
+Assessment  
+The patient presents with acute onset of left-sided chest pain, likely secondary to exertional cardiac ischemia, given the context of physical activity and associated dyspnea. The presence of tachycardia and a history of ischemic heart disease further support this concern. The pain is non-radiating, constant, and worsens with movement and lying down. The associated dyspnea and fever may be related to an underlying infection or exacerbation of a pre-existing condition. Given the patient’s age, comorbidities, and the acute nature of the symptoms, a thorough cardiac evaluation is warranted to rule out acute coronary syndrome.  
+
+Plan  
+1. Immediate cardiac evaluation, including ECG and cardiac enzyme panel.  
+2. Chest X-ray to evaluate for pulmonary causes of chest pain or signs of infection.  
+3. Continuous cardiac monitoring and vital sign tracking.  
+4. Oxygen saturation and pulse monitoring.  
+5. Consideration of a stress test or coronary angiography if symptoms persist or worsen.  
+6. Initiation of supplemental oxygen if hypoxia is present.  
+7. Referral to cardiology for further evaluation and management.  
+8. Follow-up in 24–48 hours or sooner if symptoms change.  
+9. Patient advised to avoid strenuous activity and to seek immediate medical attention if chest pain recurs or worsens.

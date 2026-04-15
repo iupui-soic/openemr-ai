@@ -1,0 +1,7 @@
+case,duration_s,der,false_alarm_s,missed_detection_s,confusion_s,total_speech_s,n_hyp_speakers,transcript_used,compute_s,note
+anemia,371.26,,,,,288.97,2,anemia_edge.txt,10.58,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=252.1s; SPEAKER_01=36.9s
+arthritis,360.21,,,,,267.62,2,arthritis_edge.txt,3.33,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=171.4s; SPEAKER_01=96.2s
+copd,372.33,,,,,306.62,2,copd_edge.txt,3.36,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=103.9s; SPEAKER_01=202.7s
+dka,333.33,,,,,256.03,2,dka_edge.txt,2.98,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=54.1s; SPEAKER_01=201.9s
+gallstones,370.71,,,,,293.17,2,gallstones_edge.txt,3.35,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=80.6s; SPEAKER_01=212.6s
+gerd,347.43,,,,,299.14,2,gerd_edge.txt,3.11,transcript has no D:/P: speaker labels -> diarization-only stats reported; DER not computable. Speaker durations: SPEAKER_00=190.1s; SPEAKER_01=109.0s

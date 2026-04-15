@@ -1,0 +1,160 @@
+Model: openai/gpt-oss-120b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 04:22:01
+Time: 7.31s
+Tokens: 12,291 in / 2,281 out
+============================================================
+
+**Patient Information**  
+**Name:** Aaron Bartoletti **DOB:** 08/03/1981 **Age:** 44 y **Sex:** Male **MRN:** 17 **Address:** 409 Veum Drive, Spencer, MA 01562 **Primary Care Provider:** Not listed  
+
+---
+
+## Subjective  
+
+### Chief Complaint  
+“Congestion, facial pressure and pain for the past 5 days.”
+
+### History of Present Illness (HPI)  
+Aaron reports a 5‑day course of upper‑respiratory symptoms that began with a clear, watery rhinorrhea ≈ 5 days ago. The rhinorrhea progressed to marked nasal congestion affecting both nostrils, with nighttime unilateral obstruction that alternates sides. He now experiences post‑nasal drip, especially on awakening, and a sensation of pressure/pain localized to the cheeks, maxillary region, and the area just inferior to the nose extending to the anterior teeth. The pain is described as dull‑pressure rather than sharp dental pain.  
+
+Three days ago he noted a new loss of smell (anosmia) while taste remains intact. He reports intermittent brief chills but denies a measured fever. He has mild eye redness and itching, without discharge. He denies cough, sore throat, wheezing, shortness of breath, chest pain, dizziness, headache, nausea/vomiting, abdominal pain, diarrhea, urinary symptoms, rash, myalgias, arthralgias, or generalized weakness.  
+
+He describes a prior similar episode about two years ago that resolved spontaneously without medical treatment. No known sick contacts, recent travel, or environmental allergen changes. He works at a grocery store, lives alone in an apartment outside London, and follows pandemic precautions.
+
+### Review of Systems (pertinent positives & negatives)  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| **ENT** | Clear nasal discharge, nasal obstruction, post‑nasal drip, facial pressure/pain (maxillary/cheek), loss of smell, mild eye redness & itching | No sore throat, no cough, no ear pain, no hearing loss |
+| **Constitutional** | Brief chills | No fever, no weight loss, no fatigue, no night sweats |
+| **Respiratory** | Mouth breathing when congested | No wheezing, no dyspnea, no chest pain |
+| **GI** | None | No nausea, vomiting, abdominal pain, diarrhea |
+| **Genitourinary** | None | No dysuria, frequency |
+| **Skin** | Mild eye redness/itching | No rash |
+| **Musculoskeletal** | None | No myalgias, arthralgias, weakness |
+
+### Past Medical History  
+- **Essential hypertension** (diagnosed 2003) – on hydrochlorothiazide 25 mg daily.  
+- **Dyslipidemia** – on a statin (unspecified).  
+- **Chronic kidney disease** (stage 4, now with a renal transplant – “History of renal transplant”).  
+- **Immunosuppression** – tacrolimus (dose not specified).  
+- **Chronic migraine** (without aura).  
+- **Prior viral sinusitis** (multiple documented episodes).  
+
+### Surgical / Procedural History  
+- No surgeries reported in this encounter. Historical dental extractions/fillings noted in record but not relevant to current complaint.
+
+### Medications (current home regimen)  
+- Hydrochlorothiazide 25 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Statin (type/dose not specified)  
+- Multivitamin daily  
+- Tacrolimus (extended‑release, dose not specified)  
+
+### Allergies  
+No known drug or environmental allergies reported.
+
+### Social History  
+- **Tobacco:** Quit ≈ 2 years ago.  
+- **Alcohol:** Red wine ≈ 2–3 times/week.  
+- **Recreational drugs:** Occasional cannabis (1–2 times/month).  
+- **Occupation:** Grocery store associate (full‑time).  
+- **Living situation:** Lives alone in an apartment.  
+- **Travel:** No recent travel outside the city/province.  
+
+### Family History  
+Negative for lung, heart disease, or cancer per patient report.
+
+---
+
+## Objective  
+
+| Parameter | Value |
+|-----------|-------|
+| **Vital Signs** (most recent in chart) | HR 85 bpm, RR 14 /min, BMI 28.8 kg/m². Temperature not recorded at this visit. |
+| **General** | Alert, oriented, appears mildly uncomfortable due to sinus pressure. |
+| **HEENT** | Nasal mucosa not examined (no physical exam documented). Patient reports clear/white nasal discharge, congestion, post‑nasal drip, loss of smell, mild bilateral eye redness and itching. No oral lesions, no dental pain. |
+| **Lungs** | No wheezes or rales reported; patient denies dyspnea. |
+| **Cardiovascular** | No chest pain, palpitations, or murmur reported. |
+| **Skin** | No rash noted. |
+| **Neurologic** | No focal deficits reported. |
+
+### Laboratory Data (most recent)  
+
+- **CBC:** WBC 3.5 ×10³/µL (low‑normal), RBC 5.46 ×10⁶/µL, Hgb 16.4 g/dL, Platelets 209 ×10³/µL – otherwise unremarkable.  
+- **Lipid panel:** HDL 62 mg/dL, LDL 98 mg/dL, Triglycerides 131 mg/dL, Total Cholesterol 186 mg/dL.  
+- **Psychiatric screens:** PHQ‑9 24 (severe depression), PHQ‑2 4, GAD‑7 3 (mild anxiety). (These scores are historic; no acute mental health complaint today.)  
+
+No imaging performed during this visit.
+
+---
+
+## Assessment  
+
+1. **Acute sinusitis (right‑/left‑sided maxillary involvement) – probable bacterial**  
+   - Symptoms > 5 days, worsening after an initial mild improvement, facial pain/pressure, nasal obstruction, purulent‑appearing (though clear/white) discharge, loss of smell, and intermittent chills increase suspicion for bacterial superinfection.  
+   - Prior history of viral sinusitis and a similar self‑limited episode suggests a propensity for sinus inflammation.  
+
+2. **Hypertension – controlled on HCTZ/amlodipine** (no acute issue noted).  
+
+3. **Dyslipidemia – on statin, lipid panel within guideline‑recommended range.**  
+
+4. **Renal transplant recipient on tacrolimus** – immunosuppressed, which raises the threshold for bacterial infection and may blunt fever response.  
+
+5. **Depressive symptoms (PHQ‑9 24)** – chronic; not the focus of today’s visit but warrants follow‑up.
+
+---
+
+## Plan  
+
+### Diagnostic  
+
+1. **Measure oral temperature** at this visit (or instruct patient to check at home) to assess for fever ≥ 38.3 °C (101 °F) – a key criterion for bacterial sinusitis.  
+2. **Consider sinus plain radiographs or CT of the sinuses** only if symptoms worsen, complications suspected (e.g., orbital cellulitis, intracranial extension), or no response to empiric therapy.  
+
+### Therapeutic  
+
+1. **Empiric antibiotic therapy** (if fever documented or if symptoms persist/worsen after 48 h of supportive care):  
+   - **Amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7 days** – first‑line for acute bacterial sinusitis in an immunocompromised adult.  
+   - Document renal function before prescribing; adjust dose if eGFR < 30 mL/min (patient’s transplant history suggests close monitoring).  
+
+2. **Symptomatic relief**  
+   - **Nasal saline irrigation** (2–3 times daily).  
+   - **Intranasal corticosteroid spray** (e.g., fluticasone propionate 2 sprays each nostril daily) for edema reduction.  
+   - **Oral decongestant** (pseudoephedrine 60 mg PO every 4–6 h PRN, avoid if hypertension poorly controlled).  
+   - **Analgesia** – acetaminophen 650 mg PO q6h PRN for facial pain; consider ibuprofen 400 mg PO q6h if no contraindications (monitor renal function).  
+
+3. **Eye symptoms** – cool compresses and artificial tears; avoid topical antihistamines unless itching becomes bothersome.  
+
+4. **Hydration and sleep hygiene** – encourage adequate fluid intake and elevation of the head of the bed to reduce congestion.  
+
+### Education  
+
+- Explain the difference between viral and bacterial sinusitis; stress the importance of completing the full antibiotic course if started.  
+- Instruct to return sooner if he develops high fever, worsening facial swelling, visual changes, severe headache, or any signs of orbital/neurologic involvement.  
+- Discuss proper use of nasal saline and intranasal steroids.  
+
+### Follow‑up  
+
+- **Phone or tele‑visit in 48–72 hours** to reassess symptoms and temperature.  
+- **In‑person visit** in 5–7 days if no improvement or earlier if concerning signs develop.  
+- **Nephrology/Transplant clinic** follow‑up as per routine schedule; ensure tacrolimus levels are within target range after any new medication (especially antibiotics).  
+
+### Referrals  
+
+- None at this time; consider ENT referral only if symptoms persist > 10 days despite appropriate therapy or if complications arise.  
+
+### Documentation  
+
+- Record temperature at the time of this visit (pending).  
+- Update medication list to include the prescribed course of amoxicillin‑clavulanate, noting interaction monitoring with tacrolimus.  
+
+---  
+
+**Signature:**  
+Dr. [Attending Name], MD  
+Date: 2024‑04‑14  
+
+*Prepared by medical scribe per provider dictation.*

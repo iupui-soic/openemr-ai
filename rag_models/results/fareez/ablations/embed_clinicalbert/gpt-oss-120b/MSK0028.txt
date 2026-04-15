@@ -1,0 +1,123 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 03:48:54
+Time: 7.50s
+Tokens: 9,996 in / 2,032 out
+============================================================
+
+Patient Information:
+Name: Abdul Gorczany  
+Date of Birth: March 9, 1971 (Age 53)  
+Sex: Male  
+Address: 404 Effertz Crossroad, Springfield, Massachusetts 01020  
+
+Chief Complaint:
+Acute right anterior shoulder and elbow pain, described as sharp, stabbing pain with associated swelling and bruising.
+
+History of Present Illness:
+The patient reports that yesterday evening, while performing weight‑training on a biceps machine (flexing the elbows without external weights), he experienced a sudden, sharp, stabbing pain localized to the front of his right shoulder and elbow. He did not clearly hear a pop, although he is uncertain whether a pop occurred. The pain began within approximately 30 minutes of the activity and has persisted without significant relief. He rates the pain as 8–9/10 in intensity. He has attempted over‑the‑counter ibuprofen, ice, and rest without improvement. The pain is unchanged or slightly worse this morning. He notes a visible swelling and bruising over the anterior aspect of the right upper arm, which gives the appearance of a “mass” that makes his biceps look larger. The swelling is tender, and there is limited range of motion at the elbow; he cannot fully flex the elbow or supinate the forearm due to pain. He is able to lift the shoulder forward, but any movement of the upper arm is painful. He denies fever, chills, weight loss, appetite changes, headache, visual or auditory changes, cough, shortness of breath, chest pain, palpitations, dizziness, nausea, vomiting, abdominal pain, changes in bowel or urinary habits, skin rashes, or any neurological symptoms such as numbness or tingling. He reports weakness only in the affected right arm.
+
+Review of Systems:
+- Constitutional: No fever, chills, weight loss, or fatigue.  
+- HEENT: No headache, visual, auditory, olfactory, or gustatory changes; no sore throat, nasal congestion, or cough.  
+- Respiratory: No shortness of breath, wheezing, or cough.  
+- Cardiovascular: No chest pain, palpitations, or syncope.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, frequency, or urgency.  
+- Musculoskeletal: Sharp, localized pain in right anterior shoulder and elbow with swelling, bruising, limited elbow flexion and supination, and weakness in the right arm. No pain in other joints.  
+- Neurologic: No numbness, tingling, or focal weakness beyond the right upper extremity.  
+- Skin: Swelling and ecchymosis over the right anterior upper arm; no rash elsewhere.  
+- Psychiatric: No new mood or anxiety symptoms reported.
+
+Past Medical History:
+- Essential hypertension  
+- Type 2 diabetes mellitus with microalbuminuria, proteinuria, and chronic kidney disease (stage 4)  
+- Hyperlipidemia  
+- Major depressive disorder  
+- Alcohol use disorder (history of alcoholism)  
+- Prior shoulder discomfort several years ago treated with physiotherapy (no imaging performed)  
+- Prior knee injury with patellar tendon rupture (2022)  
+- Tonsillectomy (childhood)  
+
+Surgical History:
+- Tonsillectomy at approximately age 10  
+- Surgical repair of patellar tendon rupture in 2022 (details not specified)  
+
+Medications (current):
+- Simvastatin 10 mg oral daily  
+- Hydrochlorothiazide 25 mg oral daily  
+- Lisinopril 10 mg oral daily  
+- Amlodipine 2.5 mg oral daily  
+- Vitamin B12 injection (dose and frequency not specified)  
+- Epoetin alfa injection (dose and frequency not specified)  
+
+Allergies:
+No known drug allergies reported.
+
+Social History:
+The patient lives with his wife and daughter in a condominium. He works as an accountant from home. He previously used tobacco in high school and university but does not currently smoke. He does not use cannabis or other recreational drugs. He drinks alcohol socially, though he has a documented history of alcoholism. He has been regularly weight‑training for the past year after a period of inactivity.
+
+Family History:
+No known family history of musculoskeletal, autoimmune, or other hereditary diseases.
+
+Vital Signs (most recent available):
+- Heart rate: 93 beats/min  
+- Respiratory rate: 16 breaths/min  
+- Blood pressure: Not documented for this visit  
+- Temperature: Not documented  
+- SpO₂: Not documented  
+- Height: 180 cm (BMI 27.3)  
+- Weight: Not documented  
+
+Physical Examination:
+General: Alert, oriented, in mild distress due to right arm pain.  
+Upper Extremities: Right anterior upper arm exhibits swelling and ecchymosis over the biceps region with a palpable, tender “mass” that appears to increase the bulk of the biceps. Pain is elicited with active elbow flexion and forearm supination; range of motion at the elbow is markedly limited. Supination is markedly reduced. Shoulder range of motion is near normal in forward elevation, but any movement of the upper arm provokes pain. No obvious warmth noted. No neurovascular deficits distal to the elbow. The left upper extremity is normal.  
+Cardiovascular, Respiratory, Abdomen, Neurologic (other than noted), Skin (other than described), and other systems: No abnormal findings reported.
+
+Laboratory Data (most recent):
+- Creatinine: 2.86 mg/dL (elevated)  
+- Estimated GFR: 85 mL/min/1.73 m² (note: discrepancy with CKD stage)  
+- BUN: 12.9 mg/dL  
+- Sodium: 137.5 mmol/L  
+- Potassium: 4.8 mmol/L  
+- Chloride: 108.7 mmol/L  
+- CO₂ (total): 27.6 mmol/L  
+- Calcium: 9.3 mg/dL  
+- Albumin: 5.10 g/dL  
+- Total protein: 7.06 g/dL  
+- Globulin: 2.07 g/L  
+- ALT: 33 U/L  
+- AST: 19 U/L  
+- Alkaline phosphatase: 75 U/L  
+- Total bilirubin: 0.52 mg/dL  
+- Glucose: 79.5 mg/dL  
+- Total cholesterol: 168.7 mg/dL  
+- LDL: 133.6 mg/dL  
+- HDL: 36.3 mg/dL  
+- Triglycerides: 161.0 mg/dL  
+
+Imaging:
+No imaging performed during this encounter. The provider plans to obtain an ultrasound of the right biceps tendon, with possible MRI if further delineation is required.
+
+Assessment:
+1. Suspected acute biceps brachii tendon injury – likely partial or complete tear of the long head, given acute onset after eccentric loading, sharp pain, swelling, bruising, and marked loss of elbow flexion and supination.  
+2. Hypertension, well‑controlled on current regimen.  
+3. Type 2 diabetes mellitus with chronic kidney disease (stage 4).  
+4. Hyperlipidemia.  
+5. Major depressive disorder, stable.  
+6. History of alcohol use disorder.
+
+Plan:
+- Imaging: Order right shoulder and elbow musculoskeletal ultrasound to evaluate the biceps tendon integrity. If ultrasound is inconclusive or suggests a complete tear, schedule an MRI of the right shoulder/arm.  
+- Pharmacologic management: Continue acetaminophen for pain as needed, avoiding NSAIDs given advanced CKD. If pain remains severe (≥8/10) despite acetaminophen, consider a short course of low‑dose tramadol with careful monitoring of renal function.  
+- Immobilization: Advise use of a comfortable arm sling or pillow support to limit elbow flexion and supination for the next 48–72 hours. Apply ice for 15‑20 minutes every 2–3 hours while awake.  
+- Physical therapy: Refer to orthopaedic physical therapy for gentle passive range‑of‑motion exercises after the acute pain subsides (generally after 5–7 days), focusing on gradual restoration of elbow flexion and supination.  
+- Orthopaedic referral: Schedule an urgent orthopaedic surgery consultation to discuss the need for possible surgical repair versus continued conservative management, especially if imaging confirms a complete tear.  
+- Activity modification: Instruct the patient to avoid weight‑bearing or resisted elbow flexion and overhead activities until cleared by orthopaedics.  
+- Renal considerations: Monitor renal function (creatinine, GFR) closely if any NSAIDs or other nephrotoxic agents are prescribed.  
+- Follow‑up: Return visit in 1 week to review imaging results and reassess pain and function. Earlier return if pain worsens, new swelling, numbness, or fever develops.  
+- Patient education: Discuss signs of infection, worsening neurovascular compromise, and the importance of adhering to activity restrictions. Provided written instructions on home care, medication use, and when to seek urgent care.  
+
+Disposition:
+Patient was discharged home with instructions, pending imaging and orthopaedic follow‑up. No immediate emergency interventions were required.

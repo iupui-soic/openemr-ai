@@ -1,0 +1,113 @@
+Model: openai/gpt-oss-20b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:37:30
+Time: 2.90s
+Tokens: 10,531 in / 1,171 out
+============================================================
+
+Patient Information  
+Name: Adan Crona  
+Age: 45 years  
+Gender: Male  
+Date of Visit: [Date not provided]  
+
+Chief Complaint  
+The patient presents with a red, swollen, painful rash on the right lower leg that has been present for approximately one week.
+
+History of Present Illness  
+The patient reports that the lesion began as an area of swelling and redness that progressed to a painful, open wound with white discharge. He notes increased warmth and pain in the area, particularly with movement, and reports feeling generally “hot” over the past 12 hours. The rash is localized to the right leg, specifically around the ankle region. The patient denies any recent trauma other than occasional scratching due to discomfort. He has a history of intermittent foot ulcers, but this is the first lesion of this nature that he has not previously encountered. The patient reports that he has not measured his blood glucose recently, though he has a prior hemoglobin A1c of 9.0%.
+
+Review of Systems  
+Constitutional: Reports feeling “hot” and generally tired; notes increased hunger and weight gain over recent weeks.  
+Respiratory: Denies shortness of breath or cough.  
+Cardiovascular: Denies chest pain or palpitations.  
+Gastrointestinal: Denies nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic/Other: Reports some diminished sensation in the feet; no numbness in the affected leg.  
+Psychosocial: Reports smoking approximately two packs per week and consuming alcohol roughly 2–4 drinks per weekend.  
+
+Past Medical History  
+Type 2 diabetes mellitus, poorly controlled with recent A1c of 9.0%.  
+Hypertension (essential).  
+Chronic kidney disease (stage 2/3 per lab results).  
+Hyperlipidemia.  
+Chronic lower back pain.  
+Asthma (resolved in childhood).  
+
+Surgical History  
+Sinus surgery (sinusitis related) during adolescence. No other surgeries noted.  
+
+Social History  
+Unemployed, currently seeking employment. Lives alone, visits children bi‑weekly. Occasional tobacco use (≈2 packs per week). Occasional alcohol use (≈2–4 drinks per weekend). No recreational drug use. No regular exercise.  
+
+Family History  
+Mother’s side: multiple relatives with diabetes mellitus, hypertension, and hyperlipidemia.  
+Father’s side: generally healthy.  
+Paternal aunt: history of lung cancer (smoking history).  
+
+Allergies  
+Penicillin – anaphylactic reaction with facial swelling and breathing difficulty.  
+
+Current Medications  
+Rosuvastatin 10 mg daily (lipid control).  
+Metformin (dose unspecified).  
+Two additional unspecified oral hypoglycemic agents.  
+No insulin therapy.  
+
+Objective  
+Vital Signs  
+No information available.  
+
+Physical Examination  
+No information available.  
+
+Laboratory Results  
+Creatinine: 2.98 mg/dL (elevated).  
+BUN: 13.72 mg/dL.  
+Glucose (fasting): 94.04 mg/dL.  
+Sodium: 139.84 mmol/L.  
+Potassium: 4.5 mmol/L.  
+Calcium: 8.53 mg/dL.  
+Total Protein: 6.52 g/dL.  
+Albumin: 3.88 g/dL.  
+Lactate dehydrogenase (LDH) not reported.  
+AST: 43.91 U/L.  
+ALT: 43.91 U/L.  
+Alkaline phosphatase: 123.68 U/L.  
+Total bilirubin: 0.77 mg/dL.  
+LDL cholesterol: 120.66 mg/dL.  
+HDL cholesterol: 31.61 mg/dL.  
+Triglycerides: 177.43 mg/dL.  
+Estimated GFR (MDRD): 79.20 mL/min.  
+
+Imaging  
+No imaging studies performed during this visit.  
+
+Assessment  
+Primary Diagnosis: Cellulitis of the right lower leg.  
+Secondary Diagnoses:  
+- Type 2 diabetes mellitus, poorly controlled.  
+- Hypertension, likely uncontrolled.  
+- Chronic kidney disease, stage 2/3.  
+- Hyperlipidemia.  
+- Chronic lower back pain.  
+
+Plan  
+Medications:  
+- Initiate empiric antibiotic therapy for cellulitis (e.g., dicloxacillin or cephalexin, adjusted for renal function).  
+- Continue rosuvastatin for dyslipidemia.  
+- Continue metformin and other oral hypoglycemics; review dosing and adherence.  
+
+Instructions:  
+- Educate the patient on proper wound care for the leg lesion, including gentle cleansing, dressing changes, and signs of worsening infection (increased redness, warmth, drainage, fever).  
+- Counsel on diabetes self‑management: regular glucose monitoring, diet, exercise, and medication adherence.  
+- Emphasize importance of blood pressure control; advise home blood pressure monitoring if possible.  
+- Discuss smoking cessation resources and alcohol moderation.  
+
+Follow‑up:  
+- Return for wound reassessment in 48–72 hours or sooner if symptoms worsen.  
+- Schedule follow‑up with primary care provider for diabetes and hypertension management.  
+- Consider referral to podiatry for foot ulcer evaluation and management.  
+- Discuss potential adjustment of chronic kidney disease management.  
+
+This summary consolidates the clinical encounter, integrating patient‑reported history with laboratory data, and outlines a focused plan for acute and chronic care management.

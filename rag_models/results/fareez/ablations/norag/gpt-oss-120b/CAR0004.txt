@@ -1,0 +1,73 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:15:54
+Time: 3.79s
+Tokens: 8,239 in / 983 out
+============================================================
+
+Patient Information
+The patient is a 25‑year‑old individual who presents for evaluation of chest pain. The patient is currently a full‑time engineering student at Western and works part‑time as a postman. He lives in a house with his mother. No specific name, date of birth, or gender is documented in the encounter note.
+
+Chief Complaint
+Sharp chest pain that began three days ago.
+
+History of Present Illness
+Three days ago the patient noticed the sudden onset of a sharp, localized pain over the area of the heart. The episodes last only a few seconds and then resolve spontaneously. The pain is rated 6/10 in intensity. The discomfort is exacerbated by coughing and by lying down, and it is partially relieved when the patient leans forward. The pain occasionally radiates to the neck. The patient denies associated shortness of breath, dizziness, palpitations, syncope, nausea, vomiting, fever, chills, or other systemic symptoms. He has not experienced similar pain in the past. One dose of acetaminophen (Tylenol) taken yesterday provided some relief. He reports a recent viral illness (influenza) one week ago that included fever, runny nose, cough, and fatigue, but these symptoms have resolved. No recent trauma or falls are reported.
+
+Past Medical History
+The patient reports no chronic medical conditions. He describes himself as a “pretty healthy 25‑year‑old” and denies any prior diagnoses such as hypertension, diabetes, cardiac disease, or renal disease.
+
+Medications
+Occasional acetaminophen (Tylenol) as needed for pain.
+
+Allergies
+No known drug allergies.
+
+Family History
+Father suffered a myocardial infarction two weeks ago and subsequently passed away. No other family history of cardiac disease, cancer, diabetes, or stroke is documented.
+
+Social History
+- Occupation: Engineering student; part‑time postman.
+- Living situation: Resides with mother in a house.
+- Alcohol use: Occasionally, 1–2 drinks on weekends.
+- Tobacco: None.
+- Illicit drugs: None.
+- Smoking: None.
+
+Review of Systems
+- Constitutional: No fever, chills, weight loss, or fatigue reported at present.
+- Cardiovascular: Positive for brief, sharp chest pain; negative for palpitations, dyspnea, orthopnea, or edema.
+- Respiratory: No current cough, dyspnea, or wheezing; recent resolved flu‑like illness.
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.
+- Neurologic: No headache, dizziness, syncope, weakness, or numbness.
+- Musculoskeletal: No joint pain or recent injury.
+- Psychiatric: No anxiety or panic reported beyond concern for heart attack.
+
+Physical Examination
+No physical exam findings are documented in the transcript.
+
+Assessment
+1. Acute episodic sharp chest pain, likely pleuritic or pericardial in nature given positional relief with leaning forward and radiation to the neck.  
+2. Cardiac ischemia cannot be excluded given strong family history of recent myocardial infarction.  
+3. Recent viral upper respiratory infection, which may be contributing to musculoskeletal or pericardial irritation.
+
+Plan
+- Diagnostic Testing:
+  * Immediate 12‑lead electrocardiogram (ECG) to assess for ischemic changes or pericarditis patterns.
+  * Cardiac biomarkers (troponin I/T) to evaluate for myocardial injury.
+  * Chest radiograph to rule out pulmonary pathology.
+  * Consider transthoracic echocardiogram if ECG or biomarkers suggest pericardial involvement.
+- Medications:
+  * Continue acetaminophen as needed for pain.
+  * If pericarditis is confirmed and no contraindications exist, initiate an NSAID (e.g., ibuprofen 600 mg three times daily) and consider colchicine per current guidelines.
+- Activity:
+  * Advise avoidance of strenuous activity and heavy lifting until cardiac evaluation is complete.
+- Education:
+  * Instruct the patient to seek emergency care if pain becomes persistent, worsens, is associated with shortness of breath, diaphoresis, palpitations, or syncope.
+  * Discuss the importance of follow‑up after test results are available.
+- Follow‑up:
+  * Schedule a follow‑up visit within 48–72 hours to review diagnostic results and adjust management accordingly.
+  * Provide contact information for urgent concerns.
+
+The above plan addresses immediate diagnostic clarification, symptom control, and safety precautions while considering the patient’s anxiety about a possible cardiac event. No further information is available regarding vital signs, physical examination, or prior imaging at this visit.

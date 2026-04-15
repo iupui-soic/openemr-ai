@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:54:34
+Time: 3.29s
+Tokens: 15,186 in / 1,735 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 25 March 1917  
+Sex: Male  
+Patient ID: 334  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of a productive cough and shortness of breath that has been progressively worsening.  
+
+History of Present Illness  
+The cough began approximately three days prior to presentation and is described as a hacking, wet cough producing yellowish‑green sputum of roughly thumb‑tip volume each expectoration. The patient reports that the cough has persisted throughout the day and night, worsening toward the end of the week. Shortness of breath first appeared about one day after the onset of cough. The patient rates the dyspnea at a severity of 7 out of 10 and notes that it has been interfering with sleep, though it is unclear whether sleep disturbance is due to cough, dyspnea, or both. He denies wheezing at rest, chest pain, palpitations, or syncope. He reports fatigue, generalized weakness, and mild body aches, along with mild abdominal discomfort. He also reports anosmia (reduced sense of smell) but denies sore throat, nasal congestion, or rhinorrhea. No fever, chills, night sweats, or weight loss are reported; he has, however, felt slightly warm.  
+
+Review of Systems  
+Constitutional: fatigue, weakness, mild body aches, no fever, chills, night sweats, or weight change.  
+Respiratory: productive cough with yellow‑green sputum, shortness of breath (7/10), mild wheezing with severe dyspnea, no chest pain or hemoptysis.  
+Cardiovascular: no chest pain, palpitations, dizziness, or syncope; history of atrial fibrillation treated with metoprolol, no current cardiac symptoms.  
+Gastrointestinal: mild abdominal discomfort, no nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Neurologic: no dizziness, fainting, or memory issues.  
+Skin: no rash or dermatologic complaints.  
+Genitourinary: no urinary symptoms.  
+Musculoskeletal: mild muscle aches.  
+Psychiatric/Behavioral: no depression or anxiety noted.  
+
+Past Medical History  
+The patient has a longstanding history of atrial fibrillation diagnosed approximately four years ago, treated with a beta‑blocker (metoprolol) for three years. He also has essential hypertension, hyperlipidemia (on statin therapy), chronic kidney disease stage 4 progressing to end‑stage renal disease, and a history of myocardial infarction and heart failure. Diabetes mellitus type 2 is present, with associated microalbuminuria and proteinuria. He has a history of osteoarthritis of the knee and a past inguinal hernia repair performed 15 years ago. He had a prior diagnosis of anemia and is receiving ongoing care for kidney disease.  
+
+Surgical History  
+Inguinal hernia repair (15 years ago).  
+
+Social History  
+The patient is retired and lives with his wife in a renovated house. He is a former smoker, having quit approximately five years ago after a one‑pack‑per‑day habit. He reports occasional use of cannabidiol (CBD) edibles, the lowest available dose, for sleep support; no other recreational drug use or alcohol consumption. He has recently visited his mother in a long‑term care facility with a known COVID‑19 outbreak.  
+
+Family History  
+No known family history of heart or lung disease. A maternal aunt had lung cancer but was a lifelong smoker.  
+
+Allergies  
+The patient reports a sulfa allergy manifested by a rash after taking a sulfa‑containing antibiotic many years ago. No other allergies were reported.  
+
+Current Medications (home)  
+Metoprolol (beta‑blocker) for atrial fibrillation, statin therapy for hyperlipidemia, low‑dose aspirin for cardiovascular prophylaxis, and routine medications for chronic kidney disease and diabetes (not enumerated in the transcript but known from EMR). The patient did not mention inhaled bronchodilators or other acute respiratory medications at the time of presentation.  
+
+Objective Findings  
+Vital signs and physical examination findings are not available in the transcript or the EMR snapshot; therefore, no objective data are documented.  
+
+Laboratory Results  
+The available laboratory panel includes the following analytes:  
+• White blood cell differential – neutrophils 13.7 %, lymphocytes not listed, monocytes 9.5 %, basophils 3.0 %  
+• Hematology – hemoglobin not provided, hematocrit 43.3 %, red blood cell count 4.24 × 10⁶/µL, mean cell hemoglobin 31.4 pg, mean cell hemoglobin concentration not provided, red cell distribution width 14.6 %  
+• Serum chemistry – albumin not listed, total protein 5.59 g/dL, calcium 9.75 mg/dL, potassium 4.04 mmol/L, sodium not listed, chloride not listed, bicarbonate 24.3 mmol/L, carbon dioxide 24.9 mmol/L, urea nitrogen 17.9 mg/dL, creatinine not listed, ferritin 1853 µg/L, AST 15.3 U/L, ALT not listed, alkaline phosphatase not listed, bilirubin not listed, lactate not listed, prothrombin time 11.9 s.  
+These results suggest a mild inflammatory response with elevated ferritin and a normal coagulation profile.  
+
+Imaging  
+No imaging studies were performed during this encounter; therefore, chest radiography findings are not available.  
+
+Assessment  
+The patient most likely has a viral upper respiratory tract infection, with the clinical picture compatible with COVID‑19 or another seasonal respiratory virus. His cough is productive and sputum is yellow‑green; however, the lack of fever, chills, or radiographic findings makes bacterial pneumonia less likely at present. The presence of anosmia, shortness of breath, and exposure to a long‑term care facility during an outbreak supports the possibility of COVID‑19. Given the patient’s age, chronic kidney disease, and cardiovascular comorbidities, close monitoring for progression to pneumonia or respiratory failure is warranted.  
+
+Plan  
+1. Order a SARS‑CoV‑2 PCR test via nasopharyngeal swab and send to the laboratory; results expected within 1–2 days.  
+2. Advise the patient to isolate for 14 days from the onset of symptoms, and to notify close contacts, including his wife, of potential exposure.  
+3. Provide symptomatic treatment: acetaminophen 500 mg orally as needed for fever or discomfort; advise use of supplemental oxygen if saturation falls below 94 % (not measured here).  
+4. Encourage increased fluid intake and rest.  
+5. Recommend monitoring of oxygen saturation at home; if saturation falls <90 %, seek emergency care.  
+6. Follow up with the primary care provider or a telehealth visit within 48 hours to review PCR results and reassess symptoms.  
+7. If symptoms worsen (increasing dyspnea, chest pain, or development of fever), the patient should seek urgent care or present to the emergency department.  
+8. Consider initiation of antibiotics (e.g., ceftriaxone or amoxicillin‑clavulanate) only if clinical deterioration suggests bacterial superinfection or if chest imaging reveals infiltrates.  
+9. Review home medications, particularly the beta‑blocker, to ensure dose appropriateness given the patient’s current renal function and potential fluid shifts.  
+10. Counsel on sleep hygiene alternatives to CBD edibles; discuss potential use of melatonin or prescription sleep aids if needed.  
+
+The patient was informed of the plan and has no questions at this time. He is scheduled for a follow‑up appointment to discuss test results and to determine whether further evaluation or treatment is required.
