@@ -259,66 +259,31 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 
 ### Latest Results
 
-#### Institutional Dataset (6 Custom Medical Recordings)
+#### Average WER (%) across all 4 datasets
 
-| Model | Avg WER | Status |
-|-------|---------|--------|
-| parakeet-tdt-1.1b | 8.30% | Run evaluation |
-| canary-1b-v2 | 8.58% | Run evaluation |
-| groq-whisper-large-v3-turbo | 9.60% | Run evaluation |
-| whisper-large-v3 | 13.26% | Run evaluation |
-| whisper-large-v3-turbo | 14.02% | Run evaluation |
-| medasr | 44.01% | Run evaluation |
+Rows sorted by mean rank across datasets. Bold = best in that column.
 
-#### Kaggle Medical Speech Dataset (~380 utterances)
+| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=272) |
+|-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
+| **Voxtral Mini 3B**       | **5.71**  | 15.33      | 25.15          | **14.50**           |
+| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 20.17 †             |
+| Parakeet TDT 0.6B v2      | —         | **14.57**  | 18.16          | 18.63 †             |
+| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 21.29               |
+| Groq Whisper v3 Turbo     | 9.60      | **14.91**  | 18.87          | 19.54               |
+| Whisper Edge              | 9.93      | 35.01      | —              | —                   |
+| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 24.27               |
+| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 23.33 *             |
+| MedASR                    | 44.01     | 39.25      | 64.59          | 47.53               |
 
-| Model | Avg WER | Status |
-|-------|---------|--------|
-| groq | 14.91% | Run evaluation |
-| canary | 15.05% | Run evaluation |
-| parakeet | 16.28% | Run evaluation |
-| whisper-v3 | 19.35% | Run evaluation |
-| whisper-turbo | 23.92% | Run evaluation |
-| medasr | 39.25% | Run evaluation |
+† 251/272 files processed (21 exceeded A100 80GB memory on RNN-T decoder).
+* 84/272 files (Modal billing limit).
+"—" = not evaluated on that dataset.
 
-#### PriMock57 (57 Primary Care Consultations, ~9 hours)
-
-| Model | Success Rate | Avg WER |
-|-------|-------------|---------|
-| Parakeet TDT 1.1B | 57/57 | **17.06%** |
-| Parakeet TDT 0.6B v2 | 57/57 | 18.16% |
-| Groq Whisper | 57/57 | **18.87%** |
-| Whisper Large v3 Turbo | 57/57 | 21.00% |
-| Canary 1B v2 | 57/57 | 21.54% |
-| Whisper Large v3 | 57/57 | 22.28% |
-| Voxtral Mini 3B | 57/57 | 25.15% |
-| MedASR | 57/57 | 64.59% |
-
-#### Institutional Dataset — Voxtral added (6 Custom Medical Recordings)
-
-| Model | Avg WER |
-|-------|---------|
-| **Voxtral Mini 3B** | **5.71%** (best of any model on institutional) |
-| Parakeet TDT 1.1B | 8.30% |
-| Canary 1B v2 | 8.58% |
-| Groq Whisper v3 Turbo | 9.60% |
-| Whisper Edge | 9.93% |
-| Whisper Large v3 | 13.26% |
-| Whisper Large v3 Turbo | 14.02% |
-| MedASR | 44.01% |
-
-#### Fareez OSCE (272 Multi-Specialty Interviews, ~55 hours)
-
-| Model | Success Rate | Avg WER | Notes |
-|-------|-------------|---------|-------|
-| **Voxtral Mini 3B** | **272/272** | **14.50%** | best Fareez WER; ~25 s/file inference on RTX 6000 |
-| Parakeet TDT 0.6B v2 | 251/272 | 18.63% | beats 1.1B parent at half the params; same OOM on longest 21 files (Modal A100) |
-| Groq Whisper | 272/272 | 19.54% | FLAC compression for files >24MB |
-| Parakeet TDT 1.1B | 251/272 | 20.17% | OOM on longest conversations (A100) |
-| Canary 1B v2 | 272/272 | 21.29% | |
-| Whisper Large v3 | 84/272 | 23.33% | Modal billing limit after 84 files |
-| Whisper Large v3 Turbo | 272/272 | 24.27% | |
-| MedASR | 272/272 | 47.53% | |
+**Dataset-level headline numbers:**
+- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
+- Kaggle (~385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
+- PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
+- Fareez OSCE (272 multi-specialty interviews, ~55h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
 
 **Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
 - **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
