@@ -1,0 +1,115 @@
+Model: openai/gpt-oss-120b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:51:37
+Time: 5.20s
+Tokens: 12,146 in / 1,775 out
+============================================================
+
+Patient Information  
+Aaron Bartoletti, Male, DOB 03‑Aug‑1981, age 44. Current address: 409 Veum Drive, Spencer, Massachusetts 01562. Lives alone in an apartment just outside of London and is employed full‑time at a grocery store.
+
+Chief Complaint  
+Congestive nasal symptoms with facial pressure and pain of 5 days duration.
+
+History of Present Illness  
+The patient reports that approximately eight days ago he experienced an intermittent runny nose which then resolved briefly. Five days ago the symptoms recurred and have progressively worsened. He describes a clear to slightly white nasal discharge that is present throughout the day and worsens with post‑nasal drip, especially on awakening. Nasal obstruction is noted, with alternating unilateral blockage that forces him to change sleeping position. Over the past three days he has noted a loss of smell, while taste remains intact. He denies cough, sore throat, wheezing, or shortness of breath, but does report brief episodes of chills without a documented fever. He also reports mild eye redness and itchiness. 
+
+Facial pressure is localized to the cheeks, upper jaw, and the area just inferior to the nose, radiating to the front teeth. The pain is described as pressure rather than dental pain, and there is no history of bruxism, temporomandibular joint disorder, or intra‑oral pathology. He has had one similar episode roughly two years ago that resolved without medical intervention. He is concerned that the current episode may be bacterial and is requesting guidance regarding testing and medication.
+
+Review of Systems  
+
+- Constitutional: No fever documented, brief chills reported, no weight loss, no fatigue affecting daily activities.  
+- ENT: Clear/white nasal discharge, nasal congestion with obstructive symptoms, post‑nasal drip, loss of smell (anosmia) for three days, mild eye redness and itchiness, no sore throat, cough, or wheezing.  
+- Respiratory: No shortness of breath, no chest pain, no wheezing.  
+- Cardiovascular: No chest pain, palpitations, or light‑headedness.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+- Genitourinary: No dysuria or urinary symptoms.  
+- Dermatologic: No rash or skin changes.  
+- Musculoskeletal: No joint or muscle aches, no weakness.  
+- Psychiatric: No reported depression or anxiety in this encounter; prior PHQ‑9 scores indicate severe depressive symptoms but not addressed today.
+
+Past Medical History  
+- Dyslipidemia (on statin therapy)  
+- Essential hypertension  
+- End‑stage renal disease with prior transplant (history of renal transplant, currently status unknown)  
+- Prior episodes of viral sinusitis (most recent documented 2021‑12‑27)  
+- Chronic kidney disease (stage 1–4 historical entries)  
+
+Surgical History  
+No surgeries reported.
+
+Social History  
+- Tobacco: Former smoker, quit several years ago.  
+- Alcohol: Consumes red wine a few times per week.  
+- Recreational drugs: Occasionally smokes cannabis (approximately 1–2 times per month).  
+- Occupation: Grocery store employee, full‑time.  
+- Living situation: Lives alone in an apartment.  
+- No recent travel; no known sick contacts.
+
+Family History  
+No known family history of lung disease, heart disease, or cancer.
+
+Allergies  
+No medication or environmental allergies reported.
+
+Current Medications (home)  
+- Statin medication for dyslipidemia (specific agent not specified)  
+- Multivitamin supplement  
+- Hydrochlorothiazide 25 mg daily (hypertension)  
+- Amlodipine 2.5 mg daily (hypertension)  
+- Immunosuppressive agents (tacrolimus formulations) listed in the record but with termination dates in 2018; current use unclear, thus not included as active per available data.
+
+Vital Signs  
+- Heart Rate: 85 beats/min (recorded)  
+- Respiratory Rate: 14 breaths/min (recorded)  
+- Temperature: Not recorded at this visit  
+- Blood Pressure: Not recorded  
+- SpO₂: Not recorded  
+- Height: 179.8 cm; BMI: 28.8 kg/m² (obese category)  
+- Weight: Not recorded  
+
+Physical Examination  
+No physical examination findings documented in the encounter note.
+
+Laboratory Data (most recent)  
+- Hemoglobin 16.36 g/dL, Hematocrit within normal range, RBC 5.46 ×10⁶/µL  
+- Leukocyte count 3.54 ×10³/µL (mild leukopenia)  
+- Platelets 208 ×10³/µL  
+- Lipid panel: HDL‑C 62.3 mg/dL, LDL‑C 98.1 mg/dL, total cholesterol 186.6 mg/dL, triglycerides 130.7 mg/dL  
+- PHQ‑9 score 24 (indicative of severe depressive symptoms) – not addressed in this visit but noted for follow‑up.  
+
+Assessment  
+1. Acute rhinosinusitis – likely viral in origin given clear nasal discharge, absence of purulent (yellow/green) mucus, and lack of documented fever. However, the presence of facial pressure, unilateral nasal obstruction, loss of smell, and a biphasic course raises concern for possible bacterial superinfection.  
+2. Hypertension, well‑controlled on hydrochlorothiazide and amlodipine.  
+3. Dyslipidemia, managed with a statin.  
+4. History of renal transplantation with chronic kidney disease; renal function not assessed at this visit.  
+5. Severe depressive symptoms per prior PHQ‑9 (score 24); not the focus of today’s visit but warrants follow‑up.  
+
+Plan  
+
+Medical Management  
+- Instruct the patient to obtain a temperature measurement at home. If fever ≥ 38.3 °C (101 °F) or worsening facial pain develops, the likelihood of bacterial sinusitis increases.  
+- Initiate symptomatic therapy for presumed viral sinusitis:  
+  • Saline nasal irrigation 2–3 times daily.  
+  • Intranasal corticosteroid spray (e.g., fluticasone propionate 1–2 sprays per nostril daily) for edema reduction.  
+  • Oral decongestant (pseudoephedrine 60 mg every 4–6 hours as needed, contraindicated if uncontrolled hypertension).  
+  • Analgesia with acetaminophen 650 mg q6h PRN for facial pain, or ibuprofen 400 mg q6h if no contraindications.  
+- If fever is documented or symptoms worsen after 48–72 hours of optimal supportive care, prescribe amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7–10 days.  
+
+Diagnostic Considerations  
+- No imaging ordered at this time; consider sinus CT only if symptoms persist > 10 days or severe complications arise (orbital or intracranial extension).  
+
+Follow‑up  
+- Re‑evaluate in 48–72 hours either by telephone or in clinic, especially if fever develops, pain intensifies, or there is no improvement.  
+- Counsel on adequate hydration, head‑elevated sleep, and avoidance of irritants (smoke, strong odors).  
+- Encourage continuation of antihypertensive regimen and statin therapy.  
+- Recommend psychiatric follow‑up for depressive symptoms given the elevated PHQ‑9 score, with possible referral to mental health services.  
+
+Patient Education  
+- Reviewed the typical course of viral sinusitis and signs that suggest bacterial infection.  
+- Demonstrated saline irrigation technique and discussed appropriate use of intranasal steroids and decongestants.  
+- Advised to monitor temperature and seek care promptly if fever, worsening facial pain, or new purulent nasal discharge occurs.  
+
+Disposition  
+The patient was advised to implement supportive measures, monitor for fever, and return for follow‑up as outlined. No immediate prescription was written pending further assessment of fever status.

@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 04:23:25
+Time: 5.58s
+Tokens: 15,657 in / 2,034 out
+============================================================
+
+**Patient Information**  
+**Name:** Abel Daugherty **DOB:** 08/19/1940 **Age:** 86 y ♂ **MRN:** 336  
+**Address:** 849 Miller Rapid, Boston, MA 02110  
+
+---
+
+### S – Subjective  
+
+**Chief Complaint:**  
+“Painful, swollen right wrist after a fall while skiing yesterday.”
+
+**History of Present Illness (HPI):**  
+- **Onset:** Yesterday, after a fall onto an out‑stretched right arm while skiing.  
+- **Location:** Volar (palmar) aspect of the right wrist, just distal to the thumb (distal radius region).  
+- **Quality:** Sharp, constant pain rated 5‑6/10.  
+- **Radiation:** No radiation to hand or forearm.  
+- **Severity:** Moderate; worsens with wrist movement, improves slightly with rest, ice, and ibuprofen.  
+- **Associated Findings:** Visible bruising, mild swelling, warmth to touch; no obvious deformity.  
+- **Negatives:** No pain in the anatomical snuffbox, no numbness/tingling, no weakness, no fever, chills, headache, vision/hearing changes, cough, dyspnea, chest pain, palpitations, dizziness, syncope, nausea/vomiting, abdominal pain, bowel or urinary changes, night sweats, weight loss.  
+- **Prior Trauma:** No previous wrist/hand injuries.  
+
+**Review of Systems (pertinent negatives shown; other systems reviewed per standard interview):**  
+- Constitutional: No fever, chills, night sweats, weight loss.  
+- Musculoskeletal: No other joint pain, no prior fractures.  
+- Neurologic: No numbness, tingling, or weakness.  
+- Cardiovascular/Respiratory/Gastrointestinal: No chest pain, palpitations, dyspnea, cough, sore throat, GI upset.  
+
+**Past Medical History (selected, relevant to current visit):**  
+- Type 2 diabetes mellitus (prediabetes noted, currently on insulin).  
+- Essential hypertension (on metoprolol).  
+- Chronic kidney disease – stage 4 (creatinine ≈ 2.9 mg/dL, eGFR ≈ 13 mL/min).  
+- End‑stage renal disease with prior kidney transplant (ongoing).  
+- Ischemic heart disease (on clopidogrel, simvastatin, nitroglycerin).  
+- Seizure disorder/epilepsy.  
+
+**Surgical History:** None reported for this visit.  
+
+**Medications (home):**  
+- Clopidogrel 75 mg PO daily  
+- Simvastatin 20 mg PO nightly  
+- Metoprolol succinate 100 mg ER PO daily  
+- Nitroglycerin 0.4 mg SL spray PRN  
+- Insulin (regular) as prescribed  
+- Ibuprofen 200 mg PO as needed (taken for current wrist pain) – note CKD contraindication.  
+
+**Allergies:** No known drug allergies.  
+
+**Social History:**  
+- Lives alone in a downtown Boston apartment.  
+- Currently a full‑time student.  
+- No tobacco use.  
+- Alcohol: ~2 beers every other week.  
+- Cannabis: occasional edible (~once/month).  
+- No illicit drug use.  
+- No recent travel or known sick contacts.  
+
+**Family History:** No reported neurologic, musculoskeletal, or autoimmune disorders.  
+
+**Immunizations:** Patient believes immunizations are up‑to‑date; has not yet received the first dose of Gardasil (HPV vaccine), which is not routinely indicated at his age.
+
+---
+
+### O – Objective  
+
+**Vital Signs:** Not recorded during this encounter (patient presented for urgent evaluation only).  
+
+**Physical Examination (right wrist):**  
+- **Inspection:** Mild swelling and ecchymosis over the volar distal radius; no gross deformity.  
+- **Palpation:** Warmness noted; tenderness localized to the distal radius (volar side). No tenderness over the anatomical snuffbox or scaphoid tubercle.  
+- **Range of Motion (active):** Full flexion, extension, radial and ulnar deviation possible but limited by pain.  
+- **Strength:** Able to make a fist; grip strength reduced by pain.  
+- **Neurovascular:** Sensation intact to light touch over all digit distributions; radial pulse palpable, capillary refill <2 seconds.  
+- **Other joints (elbow, shoulder):** Normal range of motion, no pain.  
+
+**Laboratory Data (most recent, 02/2022):**  
+- Hemoglobin 16.1 g/dL, Hematocrit 48.6 % (within normal limits).  
+- Creatinine 2.89 mg/dL, eGFR ≈ 13 mL/min/1.73 m² (advanced CKD).  
+- Electrolytes: Na 136 mmol/L, K 4.6 mmol/L, Cl 101 mmol/L, CO₂ 23 mmol/L.  
+- Platelets 433 ×10³/µL.  
+- Glucose 119 mg/dL (fasting).  
+
+**Imaging:** None obtained yet; imaging is planned (see Plan).  
+
+---
+
+### A – Assessment  
+
+1. **Right distal radius injury – rule out fracture vs soft‑tissue sprain**  
+   - Mechanism (fall on outstretched hand) and localized volar tenderness are classic for a distal radius fracture.  
+   - Absence of snuffbox tenderness makes scaphoid fracture less likely but does not exclude it.  
+   - Mild swelling and warmth may reflect soft‑tissue inflammation.  
+
+2. **Chronic kidney disease, stage 4 (eGFR ≈ 13 mL/min)** – important when selecting analgesics and anti‑platelet therapy.  
+
+3. **Ischemic heart disease, hypertension, diabetes mellitus, post‑renal transplant** – stable, but warrant caution with NSAIDs and potential need for peri‑procedural anticoagulation management (patient on clopidogrel).  
+
+4. **Medication‑related concern:** Current use of ibuprofen in the setting of advanced CKD increases risk for further renal injury and should be avoided if possible.  
+
+---
+
+### P – Plan  
+
+| Item | Details |
+|------|---------|
+| **Imaging** | • Obtain **plain radiographs** of the right wrist (PA, lateral, and oblique) today to evaluate for distal radius fracture and scaphoid fracture.<br>• If radiographs are equivocal and clinical suspicion remains high, consider **CT** or **MRI** of the wrist. |
+| **Immobilization** | • Apply a **volar splint** or removable **short arm cast** after imaging, pending results, to limit motion and provide analgesia. |
+| **Analgesia** | • Discontinue ibuprofen; prescribe **acetaminophen 650 mg PO q6h PRN** (max 3 g/day) – safe for CKD.<br>• If pain uncontrolled, consider a short course of **tramadol 50 mg PO q6‑8h PRN** (monitor for seizures given epilepsy history). |
+| **Medication Review** | • Counsel patient on the renal risks of NSAIDs.<br>• Review clopidogrel timing if surgical intervention becomes necessary (coordinate with cardiology). |
+| **Follow‑up** | • **Orthopedic follow‑up** within **2‑3 days** (or sooner if X‑ray shows a fracture).<br>• Return to primary care **in 1 week** for wound check and reassessment of pain/ swelling. |
+| **Patient Education** | • Discuss RICE measures: Rest, Ice (20 min every 2‑3 h while awake), Compression (soft elastic bandage if tolerated), Elevation.<br>• Emphasize gentle wrist motion only within pain‑free range; avoid weight‑bearing or sports (skiing, snowboarding, tennis, volleyball) until cleared.<br>• Advise to monitor for increased swelling, numbness, or worsening pain and to seek urgent care if these occur. |
+| **Vaccinations** | • Gardasil (HPV) not indicated for an 86‑year‑old male; document discussion. |
+| **Chronic Disease Management** | • Continue current cardiac and diabetic regimen.<br>• Ensure regular **nephrology follow‑up** for CKD/ transplant care.<br>• Review blood pressure at next primary‑care visit; goal <130/80 mmHg. |
+| **Safety/Fall Prevention** | • Recommend evaluating home environment for fall hazards; consider physical therapy for balance if appropriate. |
+| **Documentation** | • Record encounter in the EMR; attach radiology orders and splinting instructions. |
+
+**Signature:**  
+Dr. [Attending Physician, MD] – Orthopedic/Primary Care Provider  
+Date: 04/14/2026  
+
+--- 
+
+*Prepared by the medical scribe using the SOAP format.*

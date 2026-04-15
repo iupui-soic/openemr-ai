@@ -1,0 +1,32 @@
+Model: google/medgemma-4b-it
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 06:28:26
+Time: 30.01s
+Tokens: 9,125 in / 534 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aida Vanesa Reichert
+Date of Birth: 1968-10-20
+Medical Record Number: 2418
+
+Chief Complaint: Right elbow pain, worsening over the past three days.
+
+History of Present Illness:
+
+The patient presents with right elbow pain that began approximately three days ago. The pain has been progressively worsening, exacerbated by gripping motions and activities. The patient reports that the pain is relieved by rest. She has tried taking Advil, which provided some temporary relief, but the pain recurs. The pain is described as achy, but sharp when extending the wrist. The patient rates the pain as a 6 or 7 out of 10. She denies any prior history of similar pain. The patient denies numbness or tingling. She denies any other pain elsewhere on her body. She denies muscle weakness, headaches, dizziness, weight loss, fevers, chills, rashes, changes in vision, hearing, smell, or taste. She denies coughing, shortness of breath, or wheezing. She denies chest pain or heart palpitations. She denies changes in bowel movements, nausea, or vomiting. She denies changes in voiding. The patient reports being generally healthy with no other significant medical conditions. She is not currently taking any medications, except for Advil for the pain. She is up-to-date on immunizations and has no known allergies. Her family history includes knee and hip pain in her father, who is 60 years old. She denies any lung or heart conditions. She denies autoimmune conditions. She denies a history of cancer. She denies smoking. She consumes alcohol occasionally, about wine and beer every couple of days. She lives with her wife and four-year-old daughter.
+
+Physical Exam:
+
+The physical exam revealed no obvious redness or swelling in the right arm compared to the left arm. No deformities, atrophy, or skin changes were noted. The patient reported pain on palpation of the lateral aspect of the elbow. Pain was also elicited with palpation of the forearm extensor muscle group close to the elbow. Range of motion testing revealed no pain with elbow extension, but some soreness with wrist extension.
+
+Assessment:
+
+Based on the patient's history and physical exam findings, a diagnosis of tennis elbow (lateral epicondylitis) is suspected.
+
+Plan:
+
+The patient was advised to modify activities to reduce gripping motions and take frequent breaks. She was prescribed ibuprofen for pain relief. She was referred to physical therapy for strengthening exercises. If conservative measures fail, surgical intervention may be considered in 6 to 12 months.

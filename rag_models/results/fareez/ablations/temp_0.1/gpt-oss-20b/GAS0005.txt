@@ -1,0 +1,63 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:16:27
+Time: 2.51s
+Tokens: 13,675 in / 915 out
+============================================================
+
+Patient Information  
+A 6‑year‑old male presents with a 3‑day history of abdominal pain, vomiting, and watery diarrhea, accompanied by fever and chills. The child is accompanied by his mother and has no known chronic medical conditions or medications.
+
+Chief Complaint  
+Abdominal pain, vomiting, watery diarrhea, fever, and chills.
+
+History of Present Illness  
+The patient began experiencing diffuse abdominal discomfort approximately three days ago. Two days after onset, he started vomiting, with a total of six episodes over the past two days. The vomiting was initially of ingested food and later became predominantly yellowish material; no bile or blood was noted. Concurrently, he developed watery diarrhea, with about six to seven loose stools in the last 24 hours. Yesterday, the mother noted a fever of 38.3 °C and chills, prompting a temperature measurement. The child has been irritable at first, then quiet and sleeping most of the day. No other symptoms such as headache, ear pain, eye redness, sore throat, cough, shortness of breath, chest pain, urinary complaints, rash, or muscle/joint pain have been reported.
+
+Review of Systems  
+Constitutional: fever (38.3 °C), chills, irritability, decreased activity.  
+Gastrointestinal: diffuse abdominal pain, vomiting (yellowish, no bile or blood), watery diarrhea (6–7 episodes).  
+Respiratory: no cough, no nasal congestion, no sore throat.  
+Cardiovascular: no chest pain.  
+Neurologic: no headache.  
+ENT: no ear pain, no eye redness.  
+Skin: no rash.  
+Urinary: no dysuria or frequency.  
+Musculoskeletal: no pain.  
+Psychosocial: no concerns reported.
+
+Past Medical History  
+No prior medical diagnoses, surgeries, or hospitalizations. No chronic illnesses. No known drug allergies. No current medications.
+
+Social History  
+The child lives with his mother, father, and two older siblings (ages 7 and 10). The household does not smoke, has no pets, and has not traveled recently. No household members have been ill with similar symptoms. The child attends school; no mention of recent absences.
+
+Family History  
+No known gastrointestinal diseases (celiac, Crohn’s), no heart or lung disease in the family. No genetic disorders reported.
+
+Immunizations  
+Up to date with all recommended childhood vaccines.
+
+Physical Examination  
+No examination findings were documented during this encounter; therefore, no information is available.
+
+Laboratory Studies  
+No laboratory tests were performed at this time. A COVID‑19 test will be obtained during the visit.
+
+Assessment  
+1. Viral gastroenteritis (most likely etiologic agent unknown; differential includes COVID‑19).  
+2. Mild to moderate dehydration secondary to vomiting and diarrhea.  
+3. Fever and chills likely related to the infectious process.
+
+Plan  
+- Perform a rapid SARS‑CoV‑2 antigen test; if positive, follow isolation and public health guidelines.  
+- Initiate oral rehydration therapy with an appropriate pediatric oral rehydration solution; advise the mother to give small, frequent sips.  
+- Consider an antiemetic (e.g., ondansetron) if vomiting persists and interferes with hydration.  
+- Monitor vital signs (temperature, heart rate, respiratory rate) and hydration status at home; advise the mother to seek immediate care if the child becomes lethargic, shows signs of severe dehydration (dry mucous membranes, decreased urine output), or if vomiting/diarrhea continues beyond 48 hours.  
+- Encourage rest and a bland diet once vomiting has ceased.  
+- Follow up with the pediatrician within 24–48 hours or sooner if symptoms worsen.  
+- Educate the mother on hand hygiene, symptom monitoring, and when to seek emergency care (e.g., persistent high fever >39 °C, blood in stool or vomit, inability to keep fluids down, signs of dehydration).  
+
+Discharge Instructions  
+The child is to remain home from school until fever resolves and vomiting/diarrhea have improved for at least 24 hours. Continue oral rehydration and monitor for worsening symptoms. If the child develops new symptoms such as rash, persistent vomiting, or signs of dehydration, contact the pediatric office immediately. The mother should keep a symptom diary and bring it to the next appointment.

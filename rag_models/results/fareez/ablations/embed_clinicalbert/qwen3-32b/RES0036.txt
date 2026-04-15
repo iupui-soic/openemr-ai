@@ -1,0 +1,56 @@
+Model: qwen/qwen3-32b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:58:26
+Time: 4.40s
+Tokens: 10,801 in / 1,382 out
+============================================================
+
+Patient Information  
+The patient is a 104-year-old female, Adrianna Camelia Wuckert, residing in Marshfield, Massachusetts. She presents with a history of multiple chronic conditions, including essential hypertension, ischemic heart disease, chronic kidney disease (stage 4), anemia, and a history of renal transplantation. She has a long-standing history of social isolation and reports a criminal background. The patient is currently unemployed and resides in a small apartment with suboptimal living conditions. She has a history of tobacco use, smoking 10 cigarettes per day since the age of 20, and occasional cannabis use. She consumes alcohol in small amounts and reports a diet high in fast food and junk food. She has no known allergies and no prior hospitalizations or surgeries listed in the electronic health record.
+
+Chief Complaint  
+The patient presents with a six-day history of sudden-onset dyspnea, which has progressively worsened. She reports experiencing shortness of breath with exertion, requiring frequent stops during physical activity. She also notes a productive cough with rusty-colored sputum, occurring several times daily. She has associated symptoms of chest pain, described as sharp and localized, which worsens with coughing. She reports intermittent chills and subjective fever, though no temperature was measured. She denies wheezing, dizziness, syncope, nausea, vomiting, or changes in bowel or urinary habits. No recent travel or known exposure to ill individuals is reported.
+
+History of Present Illness  
+The patient's symptoms began suddenly six days ago without a clear precipitating event. She initially experienced dyspnea, which has since become constant and worsens with exertion. She developed a cough with rusty-colored sputum on the same timeline. The cough is productive and persistent. She reports sharp chest pain that occurs with coughing, rated as a 7/10 in intensity. The pain subsides when coughing ceases. She has not noted any hemoptysis but is unsure if the sputum contains blood. She denies any wheezing or other abnormal respiratory sounds beyond mild wheezing. She has not experienced any night sweats, weight loss, or changes in appetite or sleep. She denies any recent upper respiratory infections, though she recalls a runny nose a few days prior. She denies any known exposure to tuberculosis or occupational fumes, though she notes that her workplace and apartment are in poor condition with potential mold and dust exposure.
+
+Review of Systems  
+Constitutional: The patient reports intermittent chills and subjective fever. No weight loss, fever, or night sweats are noted.  
+Respiratory: She has dyspnea on exertion, a productive cough with rusty-colored sputum, and mild wheezing. No hemoptysis or pleuritic chest pain is reported.  
+Cardiovascular: No chest pain at rest, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No changes in urinary frequency, urgency, or dysuria.  
+Neurological: No dizziness or syncope.  
+Musculoskeletal: No joint pain or muscle weakness.  
+Other: No rash, headache, or visual changes.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a complex medical history, including essential hypertension, ischemic heart disease, chronic kidney disease (stage 4), anemia, and a history of renal transplantation. She has a history of chronic sinusitis, hyperlipidemia, and multiple dental issues, including gingivitis and dental caries. She has a documented history of social isolation and reports a criminal record. She has undergone multiple medication reviews in the past, though no current medications are listed in the electronic health record.
+
+Surgical History  
+No prior surgeries are listed in the electronic health record.
+
+Social History  
+The patient is a current smoker, smoking 10 cigarettes daily since age 20. She uses cannabis occasionally, approximately 5 milligrams per week. She consumes alcohol in small amounts, about five drinks per week. She reports a sedentary lifestyle and a diet high in fast food and junk food. She resides in a small apartment with poor environmental conditions, including potential mold and dust exposure. She works in a crowded environment with a malfunctioning air conditioning system and poor ventilation.
+
+Family History  
+No significant family history of cancer, heart disease, or lung disease is reported.
+
+Current Medications  
+No current medications are listed in the electronic health record. The patient reports not taking any medications at this time.
+
+Objective  
+Vital Signs: No recent vital signs were available in the electronic health record. The patient's height is 162.5 cm, and no weight or BMI is listed.  
+Physical Exam: No physical examination findings are available in the electronic health record.  
+Labs: The patient has a history of elevated cholesterol, with total cholesterol at 185.75 mg/dL and low-density lipoprotein (LDL) at 85.03 mg/dL. High-density lipoprotein (HDL) is 46.65 mg/dL. Triglycerides are 128.84 mg/dL. Creatinine is elevated at 2.72 mg/dL, consistent with chronic kidney disease. Other laboratory values include normal potassium (4.7 mmol/L), sodium (142.95 mmol/L), and chloride (107.38 mmol/L).  
+Imaging: No recent imaging studies are listed in the electronic health record.
+
+Assessment  
+The patient presents with acute-onset dyspnea, productive cough with rusty-colored sputum, and associated chest pain. These findings are concerning for a lower respiratory tract infection, such as pneumonia. Her history of chronic kidney disease and immunosuppressive status due to renal transplantation may increase her risk for severe infections. Other considerations include an exacerbation of chronic obstructive pulmonary disease (COPD), given her long-term smoking history, or a pulmonary embolism, though no risk factors for thromboembolism are reported. The presence of chest pain with coughing raises concern for pleuritis or musculoskeletal pain.
+
+Plan  
+The patient will undergo further evaluation, including a chest X-ray and sputum culture, to confirm or rule out pneumonia. Blood work, including a complete blood count, inflammatory markers, and renal function tests, will be obtained. She will be started on broad-spectrum antibiotics pending culture results, and her symptoms will be managed with supportive care. Given her complex medical history, including chronic kidney disease and immunosuppression, close monitoring for complications is warranted. The patient will be advised to avoid exposure to environmental irritants and to follow up with a primary care provider for ongoing management. Smoking cessation counseling will also be offered.

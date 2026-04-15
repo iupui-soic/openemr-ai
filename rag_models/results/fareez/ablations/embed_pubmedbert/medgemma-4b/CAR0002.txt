@@ -1,0 +1,54 @@
+Model: google/medgemma-4b-it
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 06:28:26
+Time: 35.08s
+Tokens: 8,960 in / 622 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Name: Amos Crona
+DOB: 1934-01-20
+Sex: Male
+Unit Number: 7863
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+
+The patient presents with chest pain that began approximately 30 minutes prior to the encounter. The pain is located on the left side of the chest. The patient reports that the pain came on suddenly while shoveling the driveway. The pain has been constant since its onset and has been getting worse. The patient describes the pain as dull, with a feeling of pressure on the chest. The patient rates the pain as a 7/10. The patient denies similar episodes in the past. The pain is localized to the left chest area and is not radiating to other areas of the body. The patient reports that the pain is exacerbated by movement and walking. The pain is slightly worse when lying down. The patient denies any alleviating factors.
+
+Past Medical History:
+
+The patient has a history of high cholesterol, high blood pressure, prediabetes, anemia, obesity, sleep disorder, sleep apnea, essential hypertension, metabolic syndrome X, chronic kidney disease stage 1, disorder of kidney due to diabetes mellitus, ischemic heart disease, chronic kidney disease stage 2, proteinuria due to type 2 diabetes mellitus, chronic kidney disease stage 3, and medication review due. The patient has no previous hospitalizations or surgeries.
+
+Family History:
+
+The patient denies any family history of heart attack or cancer.
+
+Social History:
+
+The patient is a smoker, having smoked for the last 20 years, smoking approximately half a pack to a pack per day. The patient denies alcohol use and recreational drug use (except for crystal meth, which he used for the last seven years, using it a couple of times a month). The patient lives with his parents. He is currently employed as a bus driver. The patient reports getting adequate exercise, usually running on Sundays. His diet is fairly balanced, but he admits to eating out frequently.
+
+Medications:
+
+The patient is taking Rosuvastatin, Lisinopril, and a multivitamin for high cholesterol and high blood pressure.
+
+Allergies:
+
+The patient denies any allergies to medications.
+
+Physical Exam:
+
+Vitals: Temperature 38 degrees. Heart rate 91 bpm. No other vital sign information is available.
+
+Assessment:
+
+The patient presents with chest pain, likely related to exertion. Given the patient's history of cardiovascular disease, the chest pain warrants further investigation to rule out acute coronary syndrome.
+
+Plan:
+
+The patient will undergo further evaluation to determine the cause of the chest pain. This may include an electrocardiogram (ECG), cardiac enzymes, and possibly a chest X-ray. The patient should be monitored closely for any worsening of symptoms. If the patient's symptoms do not improve, further cardiac testing may be necessary. The patient should be advised to avoid strenuous activity until the cause of the chest pain is determined.

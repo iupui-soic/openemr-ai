@@ -1,0 +1,181 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 04:23:20
+Time: 6.30s
+Tokens: 10,192 in / 2,504 out
+============================================================
+
+**Patient Information**  
+- **Name:** Albert Turner  
+- **DOB:** 28 Sep 1931 (94 y/o male)  
+- **MRN:** 3055  
+- **Address:** 370 B Ins Trailer Suite 9, Barnstable, MA 02673  
+
+---
+
+## Subjective  
+
+### Chief Complaint  
+“Severe right‑hip pain after a fall down the stairs two hours ago; unable to bear weight.”
+
+### History of Present Illness  
+Albert Turner was brought to the emergency department after slipping on the last few steps of a staircase approximately 2 hours prior to arrival. He reports landing on his right side and immediately experiencing excruciating pain localized to the right hip/groin region. He denies hitting his head, loss of consciousness, dizziness prior to the fall, or any preceding vertigo. Since the fall the pain has been **continuous, sharp when weight‑bearing and achy at rest**, rating **10/10** on the numeric pain scale. He is unable to stand or walk without severe pain and can only “support himself with his left leg” while attempting to rise from a seated position. He notes swelling, mild erythema, bruising, and a sensation of warmth over the right hip. The right lower extremity appears slightly outwardly rotated compared with the left. He denies numbness, tingling, weakness, headache, visual changes, chest pain, shortness of breath, nausea, vomiting, fever, chills, urinary or bowel changes. He feels “a little dizzy” after the ambulance ride, which he attributes to pain.
+
+### Review of Systems (pertinent positives/negatives)  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| **Constitutional** | Severe localized pain, mild dizziness after transport | No fever, chills, weight loss, fatigue |
+| **Musculoskeletal** | Right hip pain, swelling, bruising, limited ROM, inability to weight‑bear | No prior hip pain, no other joint pain |
+| **Neurologic** | No numbness/tingling, no weakness, no loss of consciousness | – |
+| **Cardiovascular** | No chest pain, palpitations | – |
+| **Respiratory** | No dyspnea, cough, wheeze | – |
+| **Gastrointestinal** | No nausea, vomiting, abdominal pain | – |
+| **Genitourinary** | No dysuria, hematuria, urinary frequency | – |
+| **Skin** | Mild erythema, bruising over right hip | No rashes elsewhere |
+| **HEENT** | No headache, visual changes, hearing changes | – |
+
+### Past Medical History  
+- **Essential hypertension** (on ACE‑inhibitor)  
+- **Osteoarthritis** (hand)  
+- **Chronic kidney disease, stage 3** (history of renal transplant, currently stable)  
+- **Ischemic heart disease** (prior CABG)  
+- **Anemia** (baseline)  
+- **Other historical conditions** (seizure disorder, prior hip fracture 1999, etc.) – stable, not currently symptomatic.
+
+### Surgical History  
+- Prior coronary artery bypass graft (≈1978)  
+- Prior renal transplant (≈2002)  
+- No recent orthopedic procedures.
+
+### Medications (home)  
+- **Ramipril** (ACE‑inhibitor) – reported by patient (EMR lists lisinopril 10 mg)  
+- **Hydrochlorothiazide 25 mg PO daily**  
+- **Amlodipine 2.5 mg PO daily**  
+- **Metoprolol succinate 100 mg ER PO daily**  
+- **Nitroglycerin spray PRN**  
+- **Vitamin D, calcium, multivitamin** (OTC)  
+- **Ibuprofen 200 mg PRN** (active in EMR)  
+- **Acetaminophen 325 mg PRN** (active in EMR)  
+- No current opioid prescriptions listed.
+
+### Allergies  
+- No known drug, food, or environmental allergies reported.
+
+### Family History  
+- Father died of myocardial infarction in his 60s.  
+- Mother had non‑melanoma skin cancers (treated with electrodessication).  
+- No known familial musculoskeletal or renal disease.
+
+### Social History  
+- Lives with husband in a small apartment.  
+- Never smoker.  
+- Alcohol: ~1 glass of wine every other day.  
+- No recreational drug use.  
+- Limited recent travel; no known sick contacts.  
+
+---
+
+## Objective  
+
+### Vital Signs  
+*Not documented at the time of this encounter.*  
+
+### Physical Examination  
+
+| Area | Findings |
+|------|----------|
+| **General** | Alert, in severe distress due to right hip pain. |
+| **HEENT** | No head trauma, pupils equal/reactive, no facial asymmetry. |
+| **Neck** | Supple, no meningismus. |
+| **Cardiovascular** | Regular rate & rhythm (HR ≈ 74 bpm on prior record), no murmurs. |
+| **Respiratory** | Clear bilaterally, no wheezes or rales. |
+| **Abdomen** | Soft, non‑tender, no organomegaly. |
+| **Extremities – Right Hip** | Marked swelling, mild erythema, visible bruising; warmth compared with left side. Limb appears slightly externally rotated. Passive and active hip flexion/extension, abduction/adduction limited by pain; patient unable to bear weight. No obvious deformity noted. |
+| **Neurovascular (right lower extremity)** | Distal pulses palpable, capillary refill <2 sec, sensation intact to light touch, motor strength 5/5 when tested without weight‑bearing. |
+| **Skin** | No additional rashes or lesions. |
+
+### Imaging  
+- No radiographs obtained yet; imaging pending (right hip AP & lateral X‑ray, possible CT if fracture pattern unclear).
+
+### Laboratory Results (most recent, not emergent)  
+
+| Test | Result | Comment |
+|------|--------|---------|
+| Hemoglobin | 16.7 g/dL | Within normal limits for age. |
+| Hematocrit | (not listed) | — |
+| WBC | 10.1 ×10³/µL | Normal. |
+| Platelets | 199 ×10³/µL | Normal. |
+| Electrolytes (Na 138 mmol/L, Cl 111 mmol/L) | Normal. |
+| Creatinine | 1.01 mg/dL | Consistent with CKD stage 3 baseline. |
+| Glucose (fasting) | 74 mg/dL | Normal. |
+| Urinalysis | No leukocyte esterase, nitrites, ketones, glucose; pH 7.9 | Unremarkable. |
+
+---
+
+## Assessment  
+
+1. **Acute right hip fracture** (most likely intertrochanteric or femoral neck) secondary to low‑energy fall – clinical picture of severe pain, inability to weight‑bear, swelling, and outward rotation is highly suggestive. Imaging required for definitive classification.  
+2. **Severe acute pain** (VAS 10/10) – requires prompt analgesia.  
+3. **Chronic comorbidities** that influence peri‑operative planning:  
+   - Hypertension (well‑controlled on ACE‑inhibitor/CCB/β‑blocker)  
+   - Chronic kidney disease stage 3 (limits NSAID dosing)  
+   - Prior coronary artery bypass graft (↑ peri‑operative cardiac risk)  
+   - Osteoarthritis (baseline joint pain)  
+4. **Risk of delirium/orthostatic hypotension** given age, pain, possible anemia, and recent dizziness.  
+5. **Falls risk** – underlying balance or environmental factors need assessment after acute injury.
+
+---
+
+## Plan  
+
+### Diagnostic  
+- **Right hip plain radiographs** (AP, lateral, and frog‑leg lateral).  
+- If radiographs are inconclusive or suggest a displaced intra‑capsular fracture, obtain **CT of the right hip** for surgical planning.  
+- Baseline **ECG** and **pre‑operative labs** (CBC, BMP, coagulation profile) given cardiac history.  
+
+### Therapeutic  
+
+1. **Pain Management**  
+   - **Acetaminophen 650 mg PO q6h PRN** (max 3 g/day).  
+   - **Low‑dose oral oxycodone 5 mg PO q4‑6h PRN** for breakthrough pain, **only if renal function permits** (monitor for constipation).  
+   - **Avoid high‑dose NSAIDs** (e.g., ibuprofen) because of CKD; if needed, limit to **200 mg PO q8h PRN** with close monitoring of renal labs.  
+   - **Apply ice pack** to the right hip for 20 minutes every 2 hours while awake to reduce swelling.  
+
+2. **Orthopedic Referral**  
+   - Immediate consult to orthopaedic trauma service for **surgical evaluation** (possible internal fixation vs. hemi‑arthroplasty vs. total hip arthroplasty depending on fracture pattern and bone quality).  
+   - Admit to orthopaedic floor; keep **non‑weight‑bearing** status on the right side.  
+
+3. **DVT Prophylaxis**  
+   - **Mechanical prophylaxis** (sequential compression devices) while in bed.  
+   - Pharmacologic prophylaxis (e.g., low‑molecular‑weight heparin) **after orthopedic clearance** and once bleeding risk is assessed.  
+
+4. **Medical Management of Comorbidities**  
+   - Continue **ACE‑inhibitor (Ramipril 5 mg PO daily)** and other antihypertensives unless contraindicated peri‑operatively.  
+   - Hold **hydrochlorothiazide** on the day of surgery if fluid restriction required.  
+   - Maintain **baseline calcium/vitamin D** supplementation.  
+
+5. **Falls Prevention**  
+   - Initiate **physical therapy** assessment for gait and balance once medically stable.  
+   - Home safety evaluation (remove loose rugs, install handrails) before discharge.  
+
+### Disposition  
+- **Admit** to orthopedic service for further work‑up and definitive management.  
+- Pain control and monitoring in the ED while awaiting imaging and ortho team arrival.  
+
+### Follow‑up & Education  
+
+- **Orthopedic surgery**: see within 24 hours; discuss operative options and consent.  
+- **Primary care**: follow up in 1‑2 weeks post‑operatively for chronic disease review and medication reconciliation.  
+- **Patient/caregiver education**:  
+  - Explain signs of worsening pain, increasing swelling, fever, or new numbness that should prompt immediate return to the ED.  
+  - Emphasize strict non‑weight‑bearing on the right leg until cleared.  
+  - Review medication side‑effects, especially opioid safety and constipation prophylaxis (stool softeners).  
+
+---
+
+**Prepared by:** [Physician’s Name], MD  
+**Date:** 14 Apr 2026  
+
+*This SOAP note reflects the information available at the time of the encounter and will be updated as imaging and specialist evaluation become available.*

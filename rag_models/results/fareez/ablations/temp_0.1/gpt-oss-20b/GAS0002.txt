@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:16:19
+Time: 3.08s
+Tokens: 8,409 in / 1,345 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Date of Birth: April 16, 1965  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+The patient presents to the Emergency Department with a chief complaint of acute right upper quadrant abdominal pain.
+
+History of Present Illness  
+The patient reports a sharp, localized pain in the right upper quadrant of the abdomen, just below the lung margin. The pain began approximately three days ago after a meal, and has progressively worsened, reaching its peak intensity three to four hours prior to arrival. The patient rates the pain as an 8 out of 10 on the pain scale. The pain is constant, does not radiate, and has not improved with over‑the‑counter acetaminophen or ibuprofen. The patient has experienced nausea for several days but has not vomited. No changes in bowel habits, urinary symptoms, skin changes, or weight loss have been noted. The patient denies fever, chills, or recent travel. The pain has been present for several days, with a gradual increase in severity, and is now at its worst.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight loss.  
+Respiratory: No cough, shortness of breath, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, no vomiting, no diarrhea, no constipation, no changes in stool color or consistency.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Psychiatric: No anxiety or depression symptoms reported.  
+Allergic: No known drug allergies.  
+
+Past Medical History  
+The patient has a complex medical history including cerebral palsy, spasticity, intellectual disability, osteoporosis, gastroesophageal reflux disease, chronic kidney disease (stage 4), type 2 diabetes mellitus, hypertension, chronic kidney disease secondary to diabetes, proteinuria, microalbuminuria, and a history of kidney transplant. He also has a history of pneumonia, excessive salivation, and urinary retention.  
+
+Surgical History  
+No prior abdominal or other surgeries reported. The only surgical event noted in the record is the delivery of his children, which occurred many years ago.  
+
+Social History  
+The patient is a bank consultant by occupation. He lives with his partner and two children. He reports occasional alcohol use, approximately one to two glasses of wine nightly, and denies tobacco or recreational drug use. He does not smoke cigarettes. He reports no recent travel or exposure to sick contacts.  
+
+Family History  
+Father died of a stroke in his 60s. Mother has a history of gallstones. No other significant family history of cardiovascular or gastrointestinal disease is noted.  
+
+Medications  
+Home medications: Occasional over‑the‑counter antacids for heartburn.  
+No current prescription medications are listed as active in the electronic record.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Physical Examination  
+Vital Signs: Heart rate 94 beats per minute, respiratory rate 13 breaths per minute, temperature not recorded, blood pressure not recorded, SpO₂ not recorded, weight not recorded.  
+General: Alert and oriented, in mild distress due to abdominal pain.  
+Abdomen: Tenderness localized to the right upper quadrant; no guarding or rebound tenderness noted. Bowel sounds present and normal. No hepatosplenomegaly or palpable masses.  
+Other systems: No abnormalities noted on cardiac, pulmonary, or neurologic examination.  
+
+Laboratory Results  
+Complete blood count: White blood cells 7.58 × 10³/µL, hemoglobin 13.58 g/dL, hematocrit 40.1 %, mean corpuscular volume 94.5 fL, mean corpuscular hemoglobin 28.4 pg, mean corpuscular hemoglobin concentration 34.2 g/dL, red cell distribution width 39.9 %, platelets 351.7 × 10³/µL.  
+Basic metabolic panel: Not available.  
+Lipid panel: Total cholesterol 252.4 mg/dL, LDL 168.2 mg/dL, HDL 58.2 mg/dL, triglycerides 130.1 mg/dL.  
+Psychiatric screening: PHQ‑2 score 0, GAD‑7 score 2.  
+
+Imaging  
+No imaging studies have been performed at this time.  
+
+Assessment  
+The patient’s presentation is most consistent with acute right upper quadrant abdominal pain, likely due to biliary pathology such as acute cholecystitis or gallstone pancreatitis, given the localization of pain, nausea, and the family history of gallstones. Differential diagnoses include peptic ulcer disease, hepatic pathology, or musculoskeletal pain. The patient’s chronic kidney disease and diabetes increase the risk for gallstone disease and complicate management.  
+
+Plan  
+1. Order an abdominal ultrasound to evaluate the gallbladder, bile ducts, and pancreas.  
+2. Obtain a comprehensive metabolic panel, liver function tests, serum amylase and lipase, and a complete blood count with differential to assess for infection or inflammation.  
+3. Initiate pain control with acetaminophen 650 mg every 6 hours as needed, and consider a non‑steroidal anti‑inflammatory agent if tolerated.  
+4. Administer ondansetron 4 mg IV for nausea.  
+5. Continue over‑the‑counter antacids for heartburn.  
+6. Monitor vital signs and reassess pain level every 4 hours.  
+7. If imaging or labs suggest acute cholecystitis, arrange for surgical consultation and possible laparoscopic cholecystectomy.  
+8. Educate the patient on signs of worsening pain, fever, vomiting, or jaundice, and advise immediate return to the ED if these occur.  
+9. Schedule a follow‑up appointment with his primary care provider within 48 hours to review imaging results and plan definitive management.  
+10. Document all findings and plan in the electronic health record.  
+
+This plan addresses the patient’s acute presentation while considering his complex chronic medical conditions.

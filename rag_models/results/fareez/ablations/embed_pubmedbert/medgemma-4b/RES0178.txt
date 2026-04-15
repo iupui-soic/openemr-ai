@@ -1,0 +1,49 @@
+Model: google/medgemma-4b-it
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 06:28:26
+Time: 24.04s
+Tokens: 6,703 in / 440 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Dooley
+Date of Birth: 1957-06-30
+Sex: Male
+Unit Number: 45
+
+Chief Complaint: Fever, cough, runny nose, sore throat.
+
+History of Present Illness:
+
+The patient, Aaron Dooley, presented to the clinic today with complaints of fever, cough, runny nose, and sore throat. These symptoms began two days prior and have been ongoing. The cough is dry, and there is no sputum or blood production. He denies shortness of breath, wheezing, chest pain, or any eye symptoms. The patient reports a temperature of 38.8 degrees Celsius, measured at home. The runny nose is clear, with no color change. He denies a stuffy nose. He denies any ear pain or discharge. He denies any changes in smell or taste. He reports a mild sore throat, but it is not significantly impacting his ability to eat. He denies dizziness, fainting spells, numbness, or tingling. He reports some muscle aches. He denies any changes in bowel movements or vomiting. He reports a decreased appetite. He denies any changes in urine.
+
+Past Medical History:
+
+The patient reports being generally healthy, with occasional colds in the winter. He has no past hospitalizations or surgeries. He denies any complications during his mother's pregnancy. He is not currently taking any medications.
+
+Developmental History:
+
+The patient has met all of his developmental milestones.
+
+Allergies:
+
+The patient denies any known allergies.
+
+Family History:
+
+The patient's family history is significant for high blood pressure and high cholesterol in his grandfather.
+
+Social History:
+
+The patient lives at home with himself, his mother, and two younger siblings. He denies smoking at home. He reports being at home for schooling, both online and in person.
+
+Assessment:
+
+The patient presents with symptoms consistent with an upper respiratory infection.
+
+Plan:
+
+The physician recommended a Covid swab to rule out Covid. The patient should be monitored for worsening symptoms or the development of focal neurological deficits, in which case he should seek immediate emergency care. Supportive care, including hydration and nutrition, is recommended.

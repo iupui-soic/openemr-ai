@@ -1,0 +1,52 @@
+Model: qwen/qwen3-32b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:00:28
+Time: 3.82s
+Tokens: 7,165 in / 1,225 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old female, Amee Reva Goyette, residing at 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915. She is a previously healthy individual with a complex past medical history, including a history of myocardial infarction, ischemic heart disease, chronic kidney disease, end-stage renal disease, and multiple other chronic conditions. She has a significant family history of heart problems, including a father who experienced a heart attack at age 60. The patient is a current smoker, consuming half a pack to one pack of cigarettes daily, and occasionally consumes alcohol, typically one or two glasses of wine on the weekend. She denies any allergies and does not report any recent travel outside of Canada.
+
+Chief Complaint  
+The patient presents with a two-week history of intermittent chest pain localized to the left side. The pain is described as sharp, with episodes lasting approximately 20 to 30 minutes and occurring two to three times over the past two weeks. The pain is not associated with radiation, nausea, vomiting, shortness of breath, or fever. It is not exacerbated by physical exertion and has not responded to over-the-counter medications such as ibuprofen, acetaminophen, or antacids. The patient rates the pain as a 4 out of 10 in intensity and reports that it has remained stable in frequency and severity.
+
+History of Present Illness  
+The patient reports that the chest pain began approximately two weeks ago and is localized to the left side of her chest. The pain is sharp in character and does not radiate to other areas. It occurs intermittently, with each episode lasting 20 to 30 minutes, and has not increased in frequency or intensity over the two-week period. The episodes are not associated with exertion and are not relieved by over-the-counter analgesics or antacids. The patient denies any associated symptoms such as nausea, vomiting, shortness of breath, or fever. She also denies any recent illnesses or contact with sick individuals. The patient notes that she has experienced significant personal stress due to a separation from her husband two years ago and feels that this may have contributed to her symptoms.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: No dyspnea, cough, or sputum production is reported.  
+Cardiovascular: No palpitations, syncope, or peripheral edema.  
+Gastrointestinal: No heartburn, dysphagia, or gastrointestinal bleeding.  
+Neurological: No dizziness, syncope, or changes in mental status.  
+Musculoskeletal: No joint pain or muscle aches.  
+Other: No rash, visual changes, or genitourinary symptoms.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a complex medical history including a history of myocardial infarction, ischemic heart disease, chronic kidney disease (stages 1 through 4), end-stage renal disease, diabetes mellitus, hypertension, metabolic syndrome, and a history of renal transplantation. She has also been diagnosed with breast cancer and has a history of chronic gastrointestinal issues, including rectal polyps. The patient has undergone multiple medication reviews and has been on various chronic medications, including antihypertensives, statins, and immunosuppressants.
+
+Surgical History  
+No information available.
+
+Social History  
+The patient is a current smoker, consuming half a pack to one pack of cigarettes daily, and has been actively working on reducing her tobacco use. She occasionally consumes alcohol, typically one or two glasses of wine on the weekend. She is physically active, engaging in running or cycling three to four times per week. She reports a history of significant personal stress due to a separation from her husband two years ago.
+
+Family History  
+The patient has a family history of heart problems, specifically a father who experienced a heart attack at age 60. No other significant family history is reported.
+
+Current Medications  
+The patient is currently on multiple medications, including lisinopril, metoprolol, simvastatin, pravastatin, aspirin, and others. She is also on long-term immunosuppressants and antihypertensives due to her renal transplant and chronic kidney disease.
+
+Objective  
+Vital signs were not available in the OpenEMR record. Physical examination findings were not provided in the transcript. Laboratory results included normal potassium, sodium, glucose, creatinine, and urea nitrogen levels. Hematologic parameters were within normal limits. No recent imaging studies were reported.
+
+Assessment  
+The patient presents with intermittent, sharp, left-sided chest pain of two weeks’ duration. The pain is not associated with exertion, radiation, or other classic signs of acute coronary syndrome. However, given her age, history of myocardial infarction, and family history of heart disease, it is important to rule out cardiac etiologies. The pain does not respond to over-the-counter analgesics or antacids, and the patient denies gastrointestinal or respiratory symptoms. The differential diagnosis includes musculoskeletal chest pain, costochondritis, and possibly cardiac causes. Given the patient’s complex medical history and family history of heart disease, a thorough cardiac evaluation is warranted.
+
+Plan  
+The patient will be referred to her family physician for further evaluation. The plan includes obtaining an electrocardiogram (ECG), cardiac enzymes, and possibly a stress test to rule out cardiac causes. If no cardiac pathology is identified, further evaluation for musculoskeletal or other non-cardiac causes of chest pain will be pursued. The patient will be advised to avoid over-the-counter medications that may mask symptoms and to monitor for any changes in the nature or frequency of the chest pain. Follow-up with her primary care provider is recommended within one week. The patient will also be encouraged to continue her smoking cessation efforts and to maintain her current level of physical activity unless otherwise advised.

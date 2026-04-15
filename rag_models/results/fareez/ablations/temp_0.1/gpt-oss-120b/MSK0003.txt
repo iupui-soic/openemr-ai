@@ -1,0 +1,129 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:05:28
+Time: 6.35s
+Tokens: 7,121 in / 1,998 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 24 March 1995 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Primary Care Provider: Dr. External Provider  
+
+Chief Complaint  
+“Back pain and stiffness, especially in the mornings, for the past several months.”  
+
+History of Present Illness  
+Abe reports a dull, aching pain that involves the mid‑to‑lower thoracic and lumbar spine. The discomfort is diffuse rather than localized to a single point. He rates the pain as 4–5 out of 10 on average, noting that it can fluctuate day to day. The symptoms began approximately five to six months ago without any identifiable inciting event or trauma. Initially the pain was barely perceptible (0–1/10) but has progressively worsened. Morning stiffness is prominent; it lasts about 30 to 60 minutes after awakening before the pain begins to improve with movement. By mid‑morning his pain is at its lowest intensity. He denies any radiation of pain to the extremities, no numbness, tingling, or weakness. He has not identified specific activities that exacerbate the pain, and bending, standing, or lying down do not markedly change his symptoms. Over‑the‑counter analgesics (acetaminophen and ibuprofen/Advil) provide modest relief, but stiffness returns the following morning.  
+
+In addition to back pain, Abe mentions intermittent pain in his right knee and hands that started around the same time (approximately six months ago). He describes these joint pains as occasional and self‑limited. He also reports increased fatigue and a general sense of malaise over the past few months, but denies fever, chills, night sweats, weight loss, or changes in appetite. He has not experienced any skin rashes, nail changes, or ocular symptoms.  
+
+Review of Systems  
+Constitutional: Positive for fatigue and malaise; negative for fever, chills, night sweats, weight change.  
+Musculoskeletal: Positive for chronic dull back pain with morning stiffness; intermittent right knee and hand pain; negative for swelling, redness, erythema, or joint deformity. No reported muscle weakness.  
+Neurologic: Negative for numbness, tingling, or radicular symptoms.  
+Respiratory: No shortness of breath; known intermittent asthma, uses rescue inhaler as needed.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, diarrhea (except a self‑limited episode of food‑borne gastroenteritis several months ago).  
+Genitourinary: No dysuria, frequency, or incontinence.  
+Dermatologic: No rashes, skin lesions, or nail changes.  
+Psychiatric: PHQ‑2 score 2, GAD‑7 score 2 (minimal depressive and anxiety symptoms).  
+Endocrine/Metabolic: No polyuria, polydipsia, or heat/cold intolerance.  
+
+Past Medical History  
+- Asthma, intermittent, uses rescue inhaler (albuterol) as needed.  
+- Environmental allergies (pollen/ragweed suspected).  
+- Prior self‑limited food‑borne gastroenteritis with brief course of antibiotics several months ago.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+Employed full‑time as a bank employee. Lives with his girlfriend in a city condo. Denies tobacco use. Consumes alcohol socially (one to two beers or a cocktail on weekends). Uses marijuana occasionally (approximately once or twice per week). Sexually active with one female partner; uses condoms consistently; no known history of sexually transmitted infections.  
+
+Family History  
+Mother has psoriasis (skin disease only, no reported joint involvement). No known family history of rheumatologic or autoimmune disease otherwise.  
+
+Allergies  
+Environmental allergens (pollen/ragweed).  
+One unspecified substance allergy noted in the record (severity 1).  
+
+Current Medications (home)  
+- Albuterol inhalation solution, as needed for asthma.  
+- Fexofenadine 60 mg daily for environmental allergies.  
+- Over‑the‑counter acetaminophen and ibuprofen/Advil taken intermittently for back pain.  
+
+Objective  
+Vital Signs (most recent documented values)  
+- Heart Rate: 86 beats/min  
+- Respiratory Rate: 15 breaths/min  
+- Temperature: Not recorded at this visit  
+- Blood Pressure: Not recorded at this visit  
+- Height: 169.7 cm (5 ft 7 in)  
+- Weight: Not recorded; prior BMI documented as 42.03 (severely obese).  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+Back: No visible deformity, swelling, or erythema. Patient reports stiffness but demonstrates full range of motion with mild discomfort on forward flexion; no focal tenderness noted on palpation. No tenderness over sacroiliac joints reported.  
+Extremities: No swelling, erythema, or deformity of knees, hands, or other joints. No tenderness to palpation.  
+Neurologic: Strength 5/5 in all extremities, sensation intact, reflexes symmetric. No gait abnormality observed.  
+Respiratory: Clear to auscultation bilaterally; no wheezes at rest.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+
+Laboratory Data (most recent)  
+- Complete blood count: Hematocrit 39 %, RBC 5.23 ×10⁶/µL, Platelets 287 ×10³/µL, MCH 30.1 pg.  
+- No inflammatory markers (ESR, CRP) or auto‑antibody panels obtained at this visit.  
+- PHQ‑2 score 2; GAD‑7 score 2 (minimal symptoms).  
+
+Imaging  
+No imaging studies have been performed to date.  
+
+Assessment  
+1. Chronic inflammatory‑type low back pain, mid‑to‑lower thoracic/lumbar region, with morning stiffness >30 minutes, progressive over 5–6 months.  
+2. Differential diagnosis includes:  
+   - Ankylosing spondylitis / axial spondyloarthropathy (male, age <30, inflammatory back pain pattern).  
+   - Reactive arthritis following recent gastroenteritis.  
+   - Psoriatic arthritis (family history of psoriasis, though patient lacks cutaneous lesions).  
+   - Mechanical low back pain (less likely given inflammatory features).  
+3. Intermittent right knee and hand arthralgias, possibly related to an underlying spondyloarthropathy.  
+4. Obesity (BMI >40) – contributes to musculoskeletal strain.  
+5. Asthma, intermittent, well controlled with rescue inhaler.  
+
+Plan  
+Diagnostics  
+- Order laboratory inflammatory markers: ESR and CRP.  
+- Autoimmune serology: Rheumatoid factor, anti‑CCP, ANA, and HLA‑B27 typing.  
+- Basic metabolic panel and repeat CBC to establish baseline.  
+- Obtain plain radiographs of the lumbar spine and sacroiliac joints. If radiographs are inconclusive and suspicion for axial spondyloarthropathy remains high, schedule MRI of the sacroiliac region.  
+- Consider ultrasound of the right knee and hands if joint effusions develop.  
+
+Therapeutic  
+- Continue NSAID therapy (ibuprofen 400 mg PO q6‑8 h with food) as needed for pain, provided no contraindications.  
+- Encourage regular low‑impact stretching and core‑strengthening exercises; refer to physical therapy for a structured program aimed at improving spinal flexibility and reducing stiffness.  
+- Counsel on weight reduction strategies: referral to nutrition counseling and consider a structured weight‑loss program given BMI >40.  
+- Asthma: Continue albuterol rescue inhaler; ensure patient has an up‑to‑date asthma action plan.  
+- Allergies: Continue daily fexofenadine.  
+
+Referrals  
+- Rheumatology: urgent referral for evaluation of possible axial spondyloarthropathy.  
+- Physical therapy: outpatient PT for back mobility and conditioning.  
+- Nutrition/Dietitian: for obesity management.  
+
+Patient Education  
+- Discussed the characteristic features of inflammatory back pain and the importance of early rheumatologic evaluation.  
+- Reviewed proper use of NSAIDs and potential gastrointestinal side effects; advised taking with food and to report any abdominal pain or bleeding.  
+- Emphasized the role of regular exercise, posture, and weight loss in alleviating back strain.  
+- Instructed patient to monitor for new symptoms such as swelling, redness, or decreased range of motion in any joints, and to seek care promptly if they occur.  
+
+Follow‑up  
+- Schedule follow‑up visit in 2 weeks to review laboratory results and imaging findings.  
+- If rheumatology appointment is scheduled sooner, patient may be seen earlier based on specialist availability.  
+
+Disposition  
+Patient was provided with written instructions, medication list, and referral contacts. He verbalized understanding of the plan and agreed to proceed with the outlined work‑up and interventions.  
+
+Prepared by: Dr. External Provider  
+Date: 19 July 2024

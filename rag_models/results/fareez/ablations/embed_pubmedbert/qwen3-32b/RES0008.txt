@@ -1,0 +1,53 @@
+Model: qwen/qwen3-32b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:00:51
+Time: 3.76s
+Tokens: 11,067 in / 1,072 out
+============================================================
+
+Patient Information  
+The patient is a 93-year-old male, Abraham Schneider, with a complex medical history including type 2 diabetes mellitus, chronic kidney disease stage 4, essential hypertension, ischemic heart disease with a history of coronary artery bypass grafting, and a renal transplant. He is currently managed with metformin, an SGLT2 inhibitor, insulin, and amlodipine for hypertension. The patient resides in Wayland, Massachusetts, and lives with his wife. He has a long-standing history of tobacco use, approximately one pack per day for 30 years, and no history of alcohol or recreational drug use. He volunteers at a homeless shelter and reports no recent travel.
+
+Chief Complaint  
+The patient presents with a three-day history of worsening cough, dyspnea, and right-sided chest and abdominal pain. He also reports a fever with a temperature of 38.6°C recorded earlier in the day.
+
+History of Present Illness  
+The patient initially noticed a change in his chronic cough approximately three days ago, with increased frequency and production of dark greenish-yellow sputum. The cough has become more persistent, occurring several times per hour, and is associated with the production of sputum. He also reports sharp, right-sided chest and abdominal pain that worsens with coughing or deep breathing but is not exacerbated by physical activity. The pain is new and has not been previously experienced. The patient has also experienced a fever, which prompted him to seek medical attention. He has taken over-the-counter medications such as Tylenol and Advil for pain relief, which provided only temporary relief. The patient denies any known recent illness exposure, but due to his volunteer work, he is in frequent contact with the general public.
+
+Review of Systems  
+Constitutional: The patient reports fever, fatigue, and weight loss.  
+Respiratory: The patient has a chronic dry cough, which has now become productive with dark greenish-yellow sputum. He reports dyspnea and a sensation of chest tightness.  
+Cardiovascular: The patient denies chest pain on the left side or any new palpitations.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits reported.  
+Other: No neurological deficits, genitourinary symptoms, or skin changes reported.
+
+Allergies  
+No known drug allergies. Environmental allergies are suspected but not confirmed.
+
+Past Medical History  
+The patient has a long-standing history of type 2 diabetes mellitus, chronic kidney disease stage 4, essential hypertension, ischemic heart disease with a history of coronary artery bypass grafting, and a renal transplant. He also has a history of coronary artery disease, chronic kidney disease, and a history of drug overdose. Additionally, he has a history of gingivitis and dental caries. The patient has a family history of heart disease, with his father having experienced a heart attack in his 70s.
+
+Surgical History  
+The patient has a history of coronary artery bypass grafting and a renal transplant.
+
+Social History  
+The patient is a long-term tobacco user, approximately one pack per day for 30 years. He does not use alcohol or recreational drugs. He is employed full-time and resides with his wife. He volunteers at a homeless shelter, which involves frequent contact with the public.
+
+Family History  
+The patient's father had a history of heart attack in his 70s. His mother had essential hypertension, but no other significant family history of respiratory or heart problems is noted.
+
+Current Medications  
+The patient is currently taking metformin, an SGLT2 inhibitor, insulin, and amlodipine for hypertension. He also takes a multivitamin. The patient has a history of using albuterol inhalation solution, enoxaparin sodium, and other medications for various conditions, including respiratory and cardiovascular support.
+
+Objective  
+Vital Signs: No recent vital signs recorded in the OpenEMR extract.  
+Physical Exam: No recent physical examination findings available.  
+Labs: Recent laboratory results include elevated ferritin levels, abnormal coagulation profile with INR of 4.69, and evidence of chronic kidney disease with low glomerular filtration rate. Other findings include elevated urea nitrogen and creatinine levels.  
+Imaging: No recent imaging studies available.
+
+Assessment  
+The patient presents with symptoms consistent with a respiratory infection, potentially complicated by underlying chronic conditions. Given the presence of fever, productive cough with purulent sputum, and localized chest pain, a diagnosis of pneumonia is suspected. The patient's chronic conditions, including diabetes and chronic kidney disease, place him at higher risk for severe complications from respiratory infections.
+
+Plan  
+The patient requires further diagnostic evaluation, including a chest X-ray and sputum culture, to confirm the diagnosis and guide appropriate antimicrobial therapy. Given his renal status, medication dosing must be carefully adjusted. The patient should be monitored for signs of respiratory distress, and oxygen therapy may be necessary. The patient should be advised to remain on his current medications for diabetes and hypertension unless contraindicated. A follow-up appointment is recommended with his primary care physician for continued management and monitoring of his chronic conditions. The patient should also be educated on the importance of smoking cessation and the risks associated with continued tobacco use.

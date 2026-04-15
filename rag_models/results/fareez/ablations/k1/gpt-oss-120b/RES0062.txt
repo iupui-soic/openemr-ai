@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:21:52
+Time: 5.42s
+Tokens: 14,652 in / 1,996 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 1917‑03‑25 (Age ≈ 109 years)  
+Sex: Male  
+Medical Record Number: 334  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of productive cough and a one‑day history of worsening shortness of breath that is now interfering with sleep.
+
+History of Present Illness  
+Three days ago the patient began coughing up yellow‑green sputum. The sputum volume is described as approximately the size of a thumb tip per expectoration, without visible blood, pus, or frothy material. The cough is characterized as “hacking.” Within the past 24 hours the patient noted a rapid increase in dyspnea, rating it a 7 on a scale of 0‑10. The shortness of breath is associated with occasional wheezing when the dyspnea is most severe, but it is not clearly related to exertion or positional changes. The patient reports generalized fatigue, weakness, and mild diffuse body aches. He denies chest pain, palpitations, fever measured at the office, chills, night sweats, weight loss, dizziness, syncope, confusion, or memory changes. He also denies rhinorrhea, nasal congestion, sore throat, dysgeusia, or any change in vision or hearing. He reports a new onset of anosmia, noting that he could not smell a candle in the clinic. He mentions mild abdominal discomfort described as “achy.” The symptoms began after a visit to his mother’s long‑term care facility approximately one week ago, where there is a known COVID‑19 outbreak.
+
+Review of Systems  
+
+- Constitutional: No documented fever, chills, night sweats, or recent weight loss. Reports feeling “hot” but no measured temperature.  
+- Respiratory: Productive cough with yellow‑green sputum, wheezing on severe dyspnea, shortness of breath rated 7/10, no hemoptysis.  
+- Cardiovascular: History of atrial fibrillation; currently denies chest pain, palpitations, or orthopnea.  
+- Gastrointestinal: Mild abdominal ache, normal bowel habits, no nausea, vomiting, diarrhea, constipation, or melena.  
+- Neurologic: No dizziness, syncope, headache, or altered mental status.  
+- ENT: No sore throat, rhinorrhea, or nasal obstruction; noted new loss of smell.  
+- Musculoskeletal: Generalized body aches and weakness.  
+- Dermatologic: No rashes noted during this visit.  
+- Psychiatric: No anxiety, depression, or confusion reported.  
+
+Allergies  
+Sulfa drugs – causes rash. No known drug allergies other than sulfa.
+
+Past Medical History  
+
+- Atrial fibrillation (diagnosed ≈ 4 years ago, currently rate‑controlled on metoprolol)  
+- Hypertension  
+- Chronic kidney disease (stage 4) and end‑stage renal disease awaiting transplant  
+- Diabetes mellitus type 2 with prediabetes and microalbuminuria (historical)  
+- Metabolic syndrome, obesity (BMI ≈ 28)  
+- Prior inguinal hernia repair (≈ 15 years ago)  
+
+Surgical History  
+
+- Inguinal hernia repair, 15 years prior. No reported complications.
+
+Social History  
+
+- Former tobacco smoker: 1 pack/day for many years, quit ≈ 5 years ago.  
+- No current alcohol use; discontinued several years ago.  
+- Uses low‑dose CBD edibles (≈ 2.5 mg) a few times weekly for sleep.  
+- No illicit drug use.  
+- Lives in a renovated house with his wife; no known environmental mold or asbestos exposure.  
+- Recent exposure to a long‑term care facility with a COVID‑19 outbreak.
+
+Family History  
+
+- No known family history of cardiovascular disease.  
+- One aunt with lung cancer (smoker). No other malignancies reported.
+
+Current Medications (home)  
+
+- Metoprolol (beta‑blocker for atrial fibrillation) – dose not specified.  
+- Statin (type and dose not specified).  
+- Low‑dose aspirin (cardioprotective).  
+- Ferrous sulfate 325 mg PO daily.  
+- Other chronic medications listed in the record (e.g., verapamil, digoxin, insulin, etc.) are noted but doses and current status were not clarified during this encounter.
+
+Vital Signs  
+No vital signs were recorded at the time of this visit. The most recent documented heart rate in the chart was 80 bpm; blood pressure, temperature, respiratory rate, and SpO₂ were not available.
+
+Physical Examination  
+General: Patient appears mildly ill, in no acute distress.  
+HEENT: No oropharyngeal erythema; normal dentition; no nasal discharge; anosmia reported.  
+Neck: No jugular venous distention.  
+Cardiovascular: Regular rate and rhythm; no murmurs noted.  
+Respiratory: Bilateral wheezes audible on forced expiration when dyspnea is severe; otherwise clear breath sounds; no rales or rhonchi documented.  
+Abdomen: Mild diffuse tenderness, no guarding or rebound.  
+Extremities: No edema.  
+Neurologic: Alert and oriented; no focal deficits.  
+
+Laboratory Data (most recent)  
+
+- Hematocrit 43.3 % (within normal limits)  
+- Erythrocytes 4.24 ×10⁶/µL (normal)  
+- Ferritin 1853 µg/L (elevated)  
+- Potassium 4.04 mmol/L (normal)  
+- Calcium 9.75 mg/dL (normal)  
+- Bicarbonate (serum) 24.89 mmol/L; arterial CO₂ 41.9 mmHg (normal)  
+- PT 11.9 seconds (normal)  
+- White blood cell differential: Neutrophils 13.7 % (low), Lymphocytes not reported, Monocytes 9.5 %, Basophils 3.0 % (both within expected ranges).  
+- No complete WBC count provided.  
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+
+1. **Community‑acquired pneumonia, likely viral** – presentation of productive cough with yellow‑green sputum, dyspnea, low‑grade fever reported subjectively, and recent exposure to a COVID‑19 outbreak.  
+2. **Suspected COVID‑19 infection** – anosmia and exposure history raise concern; PCR testing ordered.  
+3. **Atrial fibrillation, rate‑controlled** – stable on metoprolol, recent ECG normal.  
+4. **Chronic kidney disease stage 4 / end‑stage renal disease** – ongoing, awaiting transplant.  
+5. **Hypertension** – controlled per prior records.  
+6. **Obesity (BMI ≈ 28)** – chronic condition.  
+
+Plan  
+
+- **Diagnostic testing:** Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR; send for routine respiratory viral panel. Consider chest radiograph if symptoms worsen or fail to improve in 48‑72 hours.  
+- **Isolation:** Advise strict home isolation for at least 14 days from symptom onset, including separation from household members when possible.  
+- **Symptomatic treatment:** Continue current home medications. Encourage adequate hydration and use of over‑the‑counter acetaminophen for fever or discomfort as needed.  
+- **Antibiotic stewardship:** Hold empiric antibiotics at this time; if bacterial pneumonia is later suspected (e.g., worsening fever, increasing sputum purulence, or radiographic infiltrate), initiate appropriate oral antibiotics (e.g., amoxicillin‑clavulanate) pending culture results.  
+- **Respiratory support:** Instruct the patient to use his albuterol inhaler (if prescribed) for episodic wheezing; monitor for increasing dyspnea, hypoxia, or chest pain. Seek emergency care if oxygen saturation falls below 92 % or if he develops severe chest discomfort.  
+- **Follow‑up:** Telephone follow‑up in 48 hours to review test results and clinical status. In‑person visit or urgent care referral if symptoms progress.  
+- **Sleep hygiene:** Discuss alternative sleep aids (e.g., melatonin) as an option to replace CBD edibles; arrange referral to primary care for medication review.  
+- **Vaccinations:** Confirm up‑to‑date status for influenza, pneumococcal, and COVID‑19 boosters; reinforce importance given age and comorbidities.  
+- **Education:** Reviewed signs of clinical deterioration (high fever, worsening shortness of breath, chest pain, confusion) and when to call emergency services. Provided written instructions on isolation, medication adherence, and when to seek further care.  
+
+The patient verbalized understanding of the plan and agreed to proceed with testing and isolation measures. No additional questions were raised.

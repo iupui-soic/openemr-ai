@@ -1,0 +1,99 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:52:12
+Time: 4.51s
+Tokens: 7,041 in / 1,666 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 03/24/1995 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Primary Care Provider: Not specified  
+
+Chief Complaint  
+The patient presents with chronic low back pain that is worse in the mornings and associated with stiffness lasting 30‑60 minutes after awakening.
+
+History of Present Illness  
+Abe reports a dull, diffuse ache involving the middle and lower portions of his back that has been present for approximately five to six months. The pain began insidiously without any known injury or trauma and has progressively worsened. He rates the severity as 4–5/10 on a numeric scale, with some days better than others. Morning stiffness is prominent; the discomfort improves after about 30 to 60 minutes of activity and the patient feels his best about an hour into the day. The pain does not radiate to the extremities, and there is no associated numbness, tingling, weakness, swelling, or erythema. Over‑the‑counter analgesics such as acetaminophen and ibuprofen provide partial relief, but stiffness recurs each morning. He denies any aggravating maneuvers such as bending, standing, or lying flat. Systemic symptoms include increased fatigue and a general sense of malaise for the duration of the illness. He reports no fevers, chills, night sweats, weight loss, changes in appetite, bowel or urinary disturbances, shortness of breath, visual changes, or skin lesions. He had an episode of gastroenteritis with diarrhea several months ago that was treated with antibiotics.  
+
+Review of Systems  
+Constitutional: Positive for fatigue and malaise; negative for fever, chills, night sweats, weight loss.  
+Musculoskeletal: Positive for chronic low back pain with morning stiffness; occasional right knee and hand pain reported but not currently symptomatic; negative for joint swelling, redness, warmth, or limited range of motion. No reported muscle weakness, tingling, or numbness.  
+Respiratory: No dyspnea, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: History of a self‑limited diarrheal illness several months ago; no current abdominal pain, nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria, frequency, urgency, or incontinence.  
+Neurologic: No headache, dizziness, or focal neurologic deficits.  
+Dermatologic: No rashes, nail changes, or skin lesions.  
+Psychiatric: No depression or anxiety noted beyond mild fatigue; PHQ‑2 scores of 1‑2 and GAD‑7 scores of 1‑3 recorded in the EMR.  
+
+Allergies  
+Environmental allergies (likely pollen or ragweed) documented; specific allergen not confirmed. No known drug allergies reported.  
+
+Past Medical History  
+- Asthma, intermittent, uses albuterol inhaler as needed.  
+- Chronic low back pain (documented in EMR since 2014) now active.  
+- Obesity (BMI 42.0 per EMR).  
+- Prior episodes of viral sinusitis, acute bronchitis, and gastroenteritis.  
+- No history of major surgeries.  
+
+Surgical History  
+No prior surgical procedures reported.  
+
+Social History  
+Employment: Works full‑time at a bank.  
+Living Situation: Resides with girlfriend in a city condo.  
+Tobacco: Never smoker.  
+Alcohol: Consumes beer or cocktails occasionally on weekends.  
+Recreational Drugs: Uses marijuana approximately once or twice per week.  
+Exercise: Reports no regular exercise program.  
+Sexual Activity: Sexually active with girlfriend; uses condoms; no known sexually transmitted infections.  
+
+Family History  
+Mother has psoriasis treated with topical creams; no known associated arthritis. No other significant family history of autoimmune or rheumatologic disease reported.  
+
+Medications (Current, Home)  
+- Acetaminophen 325 mg as needed for pain.  
+- Ibuprofen (Advil) as needed for pain.  
+- Albuterol inhaler as needed for asthma.  
+- Fexofenadine 60 mg daily for environmental allergies.  
+Other listed medications in the EMR (e.g., naproxen, hydrocodone/acetaminophen) are not currently being used per patient report.  
+
+Physical Examination  
+No vital signs were taken during this encounter; prior EMR vitals show heart rate 86 bpm, respiratory rate 15 breaths/min, and BMI 42.0.  
+General: Alert, oriented, in no acute distress.  
+Back: Mild tenderness to palpation over the mid‑lumbar region; no visible deformity, swelling, or erythema. Range of motion limited by stiffness on initial attempts, improves after a few minutes of movement. No spinal tenderness on percussion.  
+Extremities: No swelling, erythema, or deformities of the knees or hands. No tenderness over the right knee or hands at the time of exam.  
+Neurologic: Strength 5/5 throughout; sensation intact; reflexes normal.  
+Cardiopulmonary: Heart regular rate and rhythm; lungs clear to auscultation.  
+Skin: No rashes, lesions, or nail changes observed.  
+
+Laboratory Data  
+Recent laboratory values in the EMR include complete blood count parameters (hemoglobin 39 % hematocrit, erythrocyte count 5.2 million/µL, platelets 287 ×10³/µL) and inflammatory markers are not available. No current ESR, CRP, HLA‑B27, rheumatoid factor, or ANA results are documented.  
+
+Imaging  
+No imaging studies have been performed for this episode.  
+
+Assessment  
+1. Chronic inflammatory‑type low back pain, likely axial spondyloarthropathy pending further work‑up. Differential includes ankylosing spondylitis, psoriatic arthritis (family history of psoriasis), and reactive arthritis secondary to recent gastrointestinal infection.  
+2. Obesity (BMI > 40) contributing to musculoskeletal strain.  
+3. Intermittent asthma, well controlled.  
+4. Environmental allergic rhinitis.  
+
+Plan  
+- Refer to rheumatology for comprehensive evaluation, including detailed musculoskeletal examination and disease activity assessment.  
+- Order laboratory studies: CBC with differential, ESR, CRP, HLA‑B27 typing, rheumatoid factor, anti‑CCP, and ANA panel.  
+- Obtain imaging: Plain radiographs of the lumbar spine and sacroiliac joints; consider MRI of the sacroiliac region if radiographs are inconclusive.  
+- Order X‑ray of the hands and knees to evaluate for peripheral arthritis given reported intermittent joint pain.  
+- Continue as‑needed NSAID therapy (ibuprofen) for pain control; advise to take with food to minimize gastrointestinal irritation.  
+- Encourage a graduated home exercise program focusing on gentle stretching and core strengthening; refer to physical therapy for supervised back mobility and posture training.  
+- Initiate counseling on weight reduction strategies, including nutrition referral and low‑impact aerobic activity as tolerated.  
+- Review asthma action plan; ensure rescue inhaler is available and educate on proper use.  
+- Discuss safe use of marijuana and advise moderation; counsel on potential drug interactions with NSAIDs.  
+- Follow‑up in primary care in 2–3 weeks to review pending test results and assess response to NSAID therapy. Urgent return if pain becomes severe, new neurological deficits develop, or systemic symptoms such as fever arise.  
+
+Disposition  
+Patient advised to schedule rheumatology appointment promptly and to obtain the ordered labs and imaging. Discharge instructions provided verbally and in written form. No immediate emergency intervention required.

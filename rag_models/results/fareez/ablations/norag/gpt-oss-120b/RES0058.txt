@@ -1,0 +1,85 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:13:40
+Time: 4.95s
+Tokens: 7,426 in / 1,374 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: 1952‑11‑14 (71 years old)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint  
+Loss of taste and associated upper respiratory symptoms for the past two days.
+
+History of Present Illness  
+Aaron reports that over the last two days (yesterday and today) he has experienced a marked reduction in his ability to taste foods. He describes the flavor of his usual pizza lunch as “plain” and comparable to “cardboard,” and notes that other foods similarly lack flavor. He also believes his sense of smell may be diminished. The loss of taste began concurrently with the onset of a dry cough that started three to four days ago. He denies sputum production, hemoptysis, or wheezing. He reports mild shortness of breath after coughing episodes and increased fatigue, describing himself as “more tired” and sleeping more during the day. Appetite remains intact, and he feels hungry. He denies muscle aches, chest pain, palpitations, or significant shortness of breath at rest. This morning he experienced a brief episode of dizziness upon standing, which resolved after sitting. He had a single episode of watery diarrhea (two stools) this morning; there was no blood or melena, and no abdominal pain. He reports a mild sensation of being “hot” but no true fever, although his measured temperature was 37.7 °C. He denies nasal congestion, rhinorrhea, sore throat, or rash. He has not been exposed to trauma to the face or nasal passages. He is aware of a classmate who recently had a cough and fever.
+
+Review of Systems  
+- Constitutional: Fatigue, mild dizziness on standing, feeling warm; no documented fever, weight loss, or night sweats.  
+- ENT: Loss of taste, possible reduced smell, mild itchy throat, no sore throat, no nasal congestion or discharge.  
+- Respiratory: Dry cough for 3‑4 days, no sputum, no hemoptysis, no wheezing, mild dyspnea after coughing, no chest pain.  
+- Gastrointestinal: One episode of non‑bloody diarrhea this morning; no abdominal pain, nausea, or vomiting. Appetite unchanged.  
+- Cardiovascular: No palpitations, chest pain, or orthostatic symptoms beyond brief dizziness.  
+- Musculoskeletal: No myalgias or arthralgias.  
+- Dermatologic: No rash.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Neurologic: No headache, confusion, or focal deficits.  
+- Psychiatric: No anxiety or depression reported; PHQ‑2 score 1, GAD‑7 score 0 (from recent labs).  
+
+Past Medical History  
+The patient reports no known chronic medical conditions. (He denies any prior diagnoses.)  
+
+Medications  
+The patient reports that he is not taking any medications at this time.  
+
+Allergies  
+Possible allergy to cats (patient uncertain); no known medication allergies.  
+
+Social History  
+- Tobacco: No cigarette smoking.  
+- Recreational drug use: Occasional use of flavored vape devices several times per day; uncertain if nicotine is present.  
+- Alcohol: Denies use.  
+- Living situation: Resides in a townhouse with mother, step‑father, and younger sister; home described as clean, no known mold or environmental hazards.  
+- Occupational/educational status: High‑school student, recently returned to in‑person classes.  
+
+Family History  
+- Grandfather: Lung cancer (history of smoking) and diabetes.  
+- No other reported hereditary heart, lung, or metabolic diseases.  
+
+Vital Signs (most recent)  
+- Temperature: 37.7 °C (99.9 °F)  
+- Heart Rate: 62 beats/minute  
+- Respiratory Rate: 12 breaths/minute  
+- SpO₂: Not recorded  
+- Height: 176.7 cm  
+- Weight: Not recorded (BMI previously documented as 31.03, indicating obesity)  
+
+Laboratory Data (most recent)  
+- Basic metabolic panel within normal limits (Na ≈ 138 mmol/L, K ≈ 4.8 mmol/L, Cl ≈ 106‑108 mmol/L, CO₂ ≈ 20 mmol/L, Creatinine ≈ 0.98 mg/dL, Glucose ≈ 95‑100 mg/dL).  
+- PHQ‑2 score: 1 (minimal depressive symptoms).  
+- GAD‑7 score: 0 (minimal anxiety).  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Assessment  
+1. Acute upper respiratory infection, likely viral in etiology.  
+2. New‑onset anosmia/ageusia consistent with possible SARS‑CoV‑2 infection.  
+3. Mild dehydration secondary to decreased oral intake and brief diarrhea.  
+4. Vaping use – possible nicotine exposure; counseling indicated.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing.  
+- Instruct patient to self‑isolate for 14 days from symptom onset, regardless of test result, and to follow local public‑health guidance if the test is positive.  
+- Symptomatic care: Encourage adequate hydration, rest, and use of over‑the‑counter antipyretics (e.g., acetaminophen) for fever or discomfort as needed.  
+- Advise monitoring for worsening respiratory symptoms (increased shortness of breath, chest pain, persistent high fever) and to seek urgent care if these develop.  
+- Counsel on vaping cessation; discuss potential nicotine content and offer resources for quitting.  
+- Educate on signs of dehydration and advise oral rehydration solutions if diarrhea recurs.  
+- Follow‑up via telehealth or office visit in 48‑72 hours, or sooner if symptoms progress.  
+- Document the encounter as an acute viral upper respiratory infection (ICD‑10 J06.9) with associated loss of taste/smell (ICD‑10 R43.2).  
+
+The patient verbalized understanding of the plan and agreed to isolate and undergo COVID‑19 testing. No further questions were raised.

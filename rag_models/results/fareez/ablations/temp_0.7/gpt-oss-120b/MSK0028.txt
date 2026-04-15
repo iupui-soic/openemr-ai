@@ -1,0 +1,153 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:13:26
+Time: 5.93s
+Tokens: 9,996 in / 2,298 out
+============================================================
+
+Patient Information  
+Name: Abdul Gorczany  
+Date of Birth: 03/09/1971 (Age 53)  
+Sex: Male  
+Medical Record #: 179  
+Address: 404 Effertz Crossroad, Springfield, Massachusetts 01020  
+
+Chief Complaint  
+Right shoulder and elbow pain of sudden onset after weight‑training, first noted yesterday.  
+
+History of Present Illness  
+Mr. Gorczany reports that approximately 12–14 hours ago, while performing a biceps‑focused weight‑training exercise on a machine (flexing elbows without external weights), he experienced a sudden, sharp, stabbing pain localized to the anterior aspect of his right elbow and proximal shoulder. He does not recall hearing an audible pop, although he considered the possibility. The pain began within about 30 minutes of the activity and has persisted without significant relief. He rates the pain as 8–9/10 in intensity. The discomfort is described as constant, sharp, and does not radiate. He has noted swelling, erythema, and a palpable “mass” over the biceps region that makes the arm appear enlarged. The swelling is tender, and there is limited active elbow flexion and supination due to pain; shoulder range of motion is relatively preserved but painful with movement. He has tried over‑the‑counter ibuprofen (Advil) and ice with no improvement. He denies fever, chills, weight loss, appetite changes, headaches, visual or auditory changes, respiratory symptoms, gastrointestinal complaints, urinary symptoms, skin rashes, or neurologic deficits such as numbness or tingling. He reports mild weakness in the right upper arm, specifically difficulty flexing the elbow.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or appetite changes.  
+Eyes/Ears/Nose/Throat: No visual, auditory, olfactory, or gustatory disturbances; no sore throat, rhinorrhea, or cough.  
+Respiratory: No dyspnea, wheezing, or cough.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Musculoskeletal: Positive for acute right shoulder and elbow pain with swelling, bruising, and limited range of motion; no other joint involvement.  
+Neurologic: No numbness, tingling, or gait disturbance.  
+Psychiatric: History of major depressive disorder, currently stable; no current mood symptoms reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus (pre‑diabetes noted previously; currently on medication for diabetes)  
+- Chronic kidney disease, stage 4 (most recent creatinine 2.86 mg/dL, eGFR 85 mL/min/1.73 m²)  
+- Hyperlipidemia  
+- Major depressive disorder  
+- Alcohol use disorder (history of alcoholism)  
+
+Surgical History  
+- Tonsillectomy at age ~10  
+
+Social History  
+- Occupation: Accountant, working from home; may require a few days off for recovery.  
+- Living situation: Resides in a condominium with wife and daughter.  
+- Exercise: Recently resumed weight‑training after a long hiatus; this incident occurred during a biceps exercise.  
+- Tobacco: No current use; occasional experimentation in high school and university.  
+- Alcohol: History of alcoholism, currently not drinking.  
+- Illicit drugs: Denies use.  
+
+Family History  
+No known family history of musculoskeletal, autoimmune, or other significant medical conditions.  
+
+Allergies  
+No known drug or environmental allergies.  
+
+Current Medications (home)  
+- Lisinopril 10 mg PO daily (hypertension)  
+- Amlodipine 2.5 mg PO daily (hypertension)  
+- Hydrochlorothiazide 25 mg PO daily (hypertension)  
+- Simvastatin 10 mg PO nightly (hyperlipidemia)  
+- Vitamin B12 injectable (as needed)  
+- Epoetin alfa (as needed for anemia)  
+- Acetaminophen 325 mg PO as needed (pain)  
+- Acetaminophen/Hydrocodeine 325 mg/7.5 mg PO as needed (pain)  
+- Naproxen sodium 220 mg PO as needed (pain, last active 2018)  
+
+Vital Signs (most recent)  
+Heart Rate: 93 beats/min  
+Respiratory Rate: 16 breaths/min  
+Blood Pressure: Not recorded at this encounter  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Weight: Not recorded  
+Height: 180 cm (BMI 27.3)  
+
+Physical Examination  
+General: Alert, oriented, in mild distress due to right arm pain.  
+
+Right Upper Extremity  
+- Inspection: Visible swelling and ecchymosis over the anterior mid‑arm (biceps region); the arm appears enlarged compared with the left side.  
+- Palpation: Tenderness over the biceps tendon proximal to the elbow; a firm, palpable “mass” noted in the same region. No obvious fluctuance.  
+- Range of Motion:  
+   • Shoulder: Active forward flexion to near full, mild discomfort; abduction and external rotation limited by pain but not grossly restricted.  
+   • Elbow: Active flexion limited to approximately 70 degrees due to pain; supination markedly limited. Extension full but painful.  
+- Strength: 3/5 elbow flexion and supination on the right side due to pain; other muscle groups 5/5.  
+- Neurovascular: Distal pulses intact, sensation intact to light touch.  
+
+Left Upper Extremity: Normal.  
+
+Other Systems: No abnormalities noted on brief exam.  
+
+Laboratory Data (most recent)  
+- Creatinine: 2.86 mg/dL (elevated, consistent with CKD)  
+- eGFR (MDRD): 85 mL/min/1.73 m² (note discrepancy with CKD stage)  
+- Potassium: 4.8 mmol/L (normal)  
+- Sodium: 137.5 mmol/L (normal)  
+- Chloride: 108.7 mmol/L (normal)  
+- BUN: 12.9 mg/dL (normal)  
+- Calcium: 9.3 mg/dL (normal)  
+- Albumin: 5.10 g/dL (normal)  
+- Total Protein: 7.06 g/dL (normal)  
+- AST: 19 U/L, ALT: 33 U/L (within normal limits)  
+- Alkaline Phosphatase: 75 U/L (normal)  
+- Lipid panel: Total cholesterol 168 mg/dL, LDL 133 mg/dL, HDL 36 mg/dL, Triglycerides 161 mg/dL.  
+
+Imaging  
+No imaging performed during this encounter. The provider plans to obtain an ultrasound of the right biceps tendon, with possible MRI if ultrasound is inconclusive or suggests a full‑thickness tear.  
+
+Assessment  
+1. Right biceps tendon injury – probable partial‑to‑complete tear of the long head of the biceps tendon (clinical picture of acute pain, swelling, palpable mass, and loss of elbow flexion/supination).  
+2. Hypertension, controlled on lisinopril, amlodipine, and hydrochlorothiazide.  
+3. Chronic kidney disease, stage 4 (requires ongoing nephrology follow‑up).  
+4. Type 2 diabetes mellitus, currently managed with oral agents (specific agents not listed).  
+5. Hyperlipidemia, on simvastatin.  
+6. Major depressive disorder, stable.  
+
+Plan  
+Diagnostic Studies  
+- Right shoulder and elbow ultrasound to evaluate the biceps tendon integrity.  
+- If ultrasound suggests a full‑thickness tear or is nondiagnostic, obtain a magnetic resonance imaging (MRI) of the right shoulder/arm for detailed assessment.  
+
+Therapeutic Interventions  
+- Rest the right upper extremity; avoid weight‑bearing and resisted elbow flexion or supination for at least 2 weeks.  
+- Apply ice to the affected area for 20 minutes, 3–4 times daily for the first 48 hours, then as needed for pain control.  
+- Continue acetaminophen 325 mg PO q6h PRN for pain; avoid NSAIDs (e.g., ibuprofen, naproxen) given underlying CKD.  
+- Consider a short course of a low‑dose oral corticosteroid (e.g., prednisone 10 mg daily for 5 days) if pain remains severe and no contraindication, after weighing risks with CKD.  
+- Initiate referral to orthopaedic surgery for possible surgical consultation if imaging confirms a complete tear or if functional deficit does not improve with conservative measures.  
+- Refer to physical therapy once acute pain subsides (approximately 1–2 weeks) for a structured program focusing on gradual range‑of‑motion, strengthening, and scar tissue remodeling.  
+
+Medication Review  
+- Continue antihypertensive regimen (lisinopril, amlodipine, hydrochlorothiazide).  
+- Continue simvastatin.  
+- Hold naproxen and other NSAIDs while CKD is present.  
+- Maintain current diabetes regimen; monitor blood glucose as usual.  
+
+Patient Education & Discharge Instructions  
+- Educated patient on the nature of a biceps tendon injury, expected course, and the importance of activity modification.  
+- Instructed to monitor for increasing swelling, worsening pain, fever, or any change in skin color; seek urgent care if these occur.  
+- Advised on proper ice application and gentle passive range of motion within pain tolerance.  
+- Discussed the need for imaging and potential orthopaedic referral; patient verbalized understanding and agreement.  
+
+Follow‑up  
+- Schedule ultrasound within the next 3–5 business days; results to be reviewed promptly.  
+- Follow up in orthopaedic clinic within 1 week of imaging results.  
+- Return to primary care or nephrology if blood pressure becomes uncontrolled, renal function worsens, or new systemic symptoms develop.  
+
+Disposition  
+Patient discharged home with instructions as above. No immediate red‑flag findings requiring emergency department referral.  
+
+Prepared by: Dr. External Provider  
+Date: 09/09/2024

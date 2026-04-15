@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:15:33
+Time: 5.78s
+Tokens: 17,613 in / 1,734 out
+============================================================
+
+Patient Information:
+Name: Ali Hayes  
+Date of Birth: 1946-11-05 (female)  
+Age: 79 years  
+Unit/Patient ID: 5194  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint:
+Right‑upper abdominal (right‑side) pain of 8‑hour duration.
+
+History of Present Illness:
+The patient reports the sudden onset of an aching pain localized to the right side of her abdomen approximately eight hours ago while she was preparing to go to sleep. Initially the pain was intermittent, occurring for the first two hours, but for the past five to six hours it has become continuous and severe, currently rating it an 8 on a 0‑10 pain scale. She describes the quality as “aching” and notes that eating, especially fatty foods such as burgers or fries, has historically precipitated similar, less severe episodes that resolved on their own. This time the pain persists regardless of food intake. She has attempted acetaminophen (Tylenol) without relief. Associated symptoms include mild nausea; she denies vomiting, fever, chills, diaphoresis, changes in bowel movements, urinary symptoms, jaundice, or visible blood in the stool. She feels somewhat fatigued due to the pain but reports no recent weight loss. No recent travel, sick contacts, or infections were reported.
+
+Review of Systems:
+- Constitutional: Denies fever, chills, recent weight loss; reports mild fatigue.
+- Gastrointestinal: Right‑side abdominal aching, worsened after fatty meals; mild nausea; no vomiting, no hematemesis, no melena or hematochezia; normal bowel habits; decreased appetite due to pain.
+- Genitourinary: No dysuria, frequency, urgency, hematuria, or change in urine color.
+- Hepatobiliary: No reported jaundice or scleral icterus.
+- Cardiovascular: No chest pain, palpitations, or dyspnea.
+- Respiratory: No cough, shortness of breath; chronic obstructive bronchitis noted in past history.
+- Neurologic: No headaches, dizziness, or focal deficits.
+- Musculoskeletal: No recent trauma.
+- Dermatologic: No rashes or skin changes.
+- Psychiatric: No new anxiety or depression reported; baseline chronic pain and migraine history.
+
+Past Medical History:
+- Cerebral palsy (ongoing)  
+- Gastroesophageal reflux disease (GERD)  
+- Prediabetes (patient reports established diabetes and uses metformin)  
+- Chronic kidney disease, stages 2‑3 with proteinuria and microalbuminuria secondary to diabetes  
+- Essential hypertension  
+- Obesity (BMI ≈ 27.9)  
+- Metabolic syndrome  
+- Chronic intractable migraine without aura  
+- Chronic pain (unspecified)  
+- Chronic obstructive bronchitis (ongoing)  
+- History of tubal ligation  
+- Prior wisdom‑teeth extraction (adolescent)  
+
+Medications (as listed and reported):
+- Metformin (for diabetes) – patient reports current use.  
+- Lisinopril 10 mg PO daily (hypertension) – active per record.  
+- Acetaminophen/Dextromethorphan/Doxylamine oral solution (used recently without relief).  
+- Fluticasone propionate/salmeterol inhaler (maintenance for obstructive airway disease).  
+- Albuterol inhalation solution (rescue bronchodilator).  
+- Insulin isophane and regular (historical; not confirmed as current).  
+
+Allergies:
+No known drug, food, or environmental allergies reported.
+
+Social History:
+The patient lives alone in an apartment. She is currently unemployed (laid off due to COVID‑19). She reports regular outdoor runs when weather permits, indicating some exercise. Alcohol use consists of one to two glasses of wine nightly; she denies tobacco and illicit drug use. No recent travel.
+
+Family History:
+Father suffered a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other hereditary conditions.
+
+Vital Signs (most recent):
+Heart Rate: 92 beats per minute  
+Respiratory Rate: 13 breaths per minute  
+Blood Pressure: not recorded during this encounter  
+Temperature: not recorded  
+SpO₂: not recorded  
+Height: 167.5 cm  
+Weight: not recorded (BMI recorded as 27.87)  
+
+Physical Examination:
+No objective physical exam findings were documented in the encounter transcript. Vital sign data are limited to heart rate and respiratory rate.
+
+Laboratory Data (most recent):
+- Serum Calcium: 9.27 mg/dL (within normal limits)  
+- Blood Urea Nitrogen: 7.05 mg/dL (low‑normal)  
+- Serum Creatinine: 1.97 mg/dL (elevated)  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m² (stage 3 CKD)  
+- Serum Sodium: 136 mmol/L (normal)  
+- Serum Chloride: 103.96 mmol/L (normal)  
+- Urine Protein: 214.8 mg/dL (elevated)  
+- Urine Specific Gravity: 1.038 (concentrated)  
+- Urine Ketones: 0.93 mg/dL (low)  
+- Urine Glucose: 1.53 mg/dL (trace)  
+
+No complete blood count, liver function tests, amylase, lipase, or imaging studies were available at the time of this visit.
+
+Assessment:
+1. Acute right‑upper abdominal pain, likely biliary colic secondary to cholelithiasis, given the classic post‑prandial, fatty‑food precipitated pattern and right‑side location.  
+2. Chronic kidney disease stage 3 with proteinuria; current renal function modestly reduced.  
+3. Type 2 diabetes mellitus (patient reports taking metformin).  
+4. Hypertension, currently on lisinopril.  
+5. Chronic obstructive bronchitis.  
+6. GERD, migraines, chronic pain syndromes.
+
+Plan:
+- Diagnostic Work‑up:
+  * Obtain complete blood count, comprehensive metabolic panel, liver function tests, and pancreatic enzymes (amylase, lipase) to evaluate for hepatobiliary or pancreatic involvement.
+  * Order right‑upper quadrant abdominal ultrasound to assess for gallstones, gallbladder wall thickening, or signs of acute cholecystitis.
+  * Consider HIDA scan if ultrasound is inconclusive and suspicion for biliary obstruction remains high.
+- Symptomatic Management:
+  * Initiate analgesia with intravenous acetaminophen 1 g q6h as needed; if pain remains uncontrolled, consider short‑course of opioid analgesic with careful monitoring given CKD.
+  * Offer antiemetic (e.g., ondansetron 4 mg PO q8h PRN) for nausea.
+  * Encourage NPO status until imaging is completed; if vomiting develops, reassess.
+- Chronic Disease Management:
+  * Review diabetic regimen; check recent HbA1c and consider adjusting metformin dose in the context of reduced renal function.
+  * Continue lisinopril; monitor blood pressure at home and follow up for renal labs.
+  * Optimize COPD therapy; ensure patient has rescue inhaler and appropriate inhaled steroids.
+- Follow‑up:
+  * Return to clinic within 48‑72 hours for review of imaging and lab results.
+  * Advise patient to seek emergent care if she develops fever, worsening pain, vomiting, jaundice, or any signs of gastrointestinal bleeding.
+- Education:
+  * Counsel on low‑fat diet to reduce biliary colic episodes.
+  * Reinforce adherence to diabetes and hypertension medications, and importance of regular renal function monitoring.
+  * Discuss safe alcohol consumption given liver and renal considerations.
+
+Disposition:
+Patient was discharged home with the above plan and instructions. No immediate emergency intervention was required at this time.

@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 05:59:27
+Time: 24.97s
+Tokens: 9,053 in / 430 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+The patient is a 45-year-old male presenting with a concern regarding a rash on his leg.
+
+Chief Complaint:
+
+The patient's chief complaint is a rash on his leg that he is concerned about.
+
+History of Present Illness:
+
+The patient reports having a rash on his leg for approximately one week. He describes the rash as being swollen, red, and scaly. He states that the pain started yesterday and the rash has become more noticeable. He has diabetes and admits to not being diligent with his foot care, leading to the development of the rash. He notes that he has occasional ulcers and has had a toe injury in the past. He denies any previous similar occurrences. He reports feeling hot and leaking white stuff from the area of the rash.
+
+Past Medical History:
+
+The patient has a history of diabetes, occasional ulcers, and toe injuries. He also has a history of cholesterol, asthma (childhood), and back pain (chronic). He is currently unemployed.
+
+Medications:
+
+The patient is taking medications for cholesterol, diabetes, and back pain. He lists medications as rosuvastatin, metformin, and Sidas (he will provide a list later). He is not on insulin.
+
+Allergies:
+
+The patient has a penicillin allergy.
+
+Social History:
+
+The patient lives in town and sees his children every two weeks. He works as an accountant. He smokes occasionally when stressed, smoking approximately 2 packs per week. He drinks alcohol occasionally, averaging 2-4 drinks per day, primarily on weekends.
+
+Family History:
+
+The patient's mother and father have a history of diabetes, high blood pressure, and cholesterol. His father's side of the family is reportedly healthy. His aunt had lung cancer.
+
+Physical Exam:
+
+The physical exam revealed a swollen, red, and scaly rash on the patient's right ankle. The patient reported feeling hot in the area.
+
+Assessment:
+
+The patient's presentation is concerning for cellulitis.
+
+Plan:
+
+The doctor will examine the leg further and discuss the findings with the attending physician. The patient is advised to follow up with his primary care physician.

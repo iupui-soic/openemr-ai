@@ -1,0 +1,60 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:33:24
+Time: 2.21s
+Tokens: 11,184 in / 821 out
+============================================================
+
+Patient Information  
+The patient is a female student with a history of asthma. No formal name is provided in the encounter documentation.
+
+Chief Complaint  
+The patient reports experiencing diarrhea for the past three to four days.
+
+History of Present Illness  
+The patient states that she has been experiencing frequent, loose stools approximately every hour over the past few days. She notes that the stools remain brown in color and she has not observed any blood. The patient reports mild abdominal cramps that began yesterday and are intermittent. She also describes episodes of nausea and vomiting, approximately two episodes on the most recent day; the vomitus is non‑bloody and watery. She denies fever, chills, or changes in urine output. No recent travel, and she reports no sick contacts. The onset of symptoms appears temporally associated with a meal at a new Chinese restaurant five days ago, where she consumed rice with chicken Manchurian. No other dietary or medication changes have been identified. She reports decreased appetite since the onset of symptoms.
+
+Review of Systems  
+- Constitutional: No fever or chills reported; patient describes general fatigue but has not measured temperature. No significant weight change reported.  
+- Gastrointestinal: Diarrhea (loose stools, frequent), abdominal cramps, nausea, vomiting (two episodes), no hematochezia or melena.  
+- Respiratory: Asthma; uses inhaler as needed.  
+- Cardiovascular: No chest pain, palpitations, or syncope reported.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Skin: No rashes or skin changes.  
+- Neurologic: No headaches or dizziness reported.  
+
+Past Medical History  
+Asthma. No prior history of gastrointestinal disorders or surgeries. No known allergies.
+
+Social History  
+The patient lives with two roommates. She consumes alcohol occasionally, approximately one or two drinks on weekends. She denies tobacco use and illicit drug use.
+
+Family History  
+No family history of gastrointestinal disease reported. The patient’s brother experienced appendicitis in youth; no other relevant familial conditions.
+
+Current Medications  
+- Asthma puffer inhaler (as needed).  
+No other medications were reported at this encounter.
+
+Physical Examination  
+No physical examination findings were documented during this encounter. No information available.
+
+Laboratory and Imaging Results  
+No laboratory or imaging studies were obtained or recorded in this encounter. No results available.
+
+Assessment  
+Acute infectious diarrhea, likely food‑borne etiology secondary to recent dining at a new restaurant. No evidence of hemolysis, dehydration, or systemic infection at this time. C. difficile infection is less likely given the absence of recent antibiotic use, but remains within the differential for acute, frequent diarrhea.
+
+Plan  
+1. Encourage oral rehydration with clear fluids; consider oral rehydration solution if fluid intake is inadequate.  
+2. Symptomatic management of nausea with a non‑prescription antiemetic (e.g., ondansetron) if nausea persists.  
+3. Consider over‑the‑counter loperamide for diarrhea control if symptoms worsen and no contraindications are present.  
+4. Counsel on hand hygiene and cautious food selection pending improvement.  
+5. If the patient develops fever, blood in stool, persistent vomiting, signs of dehydration (dry mucous membranes, decreased urine output), or no improvement within 48 hours, return to the clinic or seek urgent care.  
+6. Follow‑up in 2 days for reassessment of symptom resolution and hydration status.  
+7. Order baseline laboratory studies: complete blood count, basic metabolic panel, and stool studies (including C. difficile toxin) if symptoms persist beyond 48 hours or if the patient develops alarm features.  
+8. Reinforce the importance of asthma control and to use her inhaler as prescribed.  
+
+Disposition  
+The patient was advised to monitor her symptoms and seek further care if she experiences worsening or new symptoms. She was instructed to follow up as outlined above. No disposition to home or observation was required.

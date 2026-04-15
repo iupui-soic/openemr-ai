@@ -1,0 +1,109 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:32:06
+Time: 3.12s
+Tokens: 14,772 in / 1,573 out
+============================================================
+
+Patient Information  
+Name: Abel Wunsch  
+Date of Birth: June 7, 1932 (Age 93)  
+Sex: Male  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+
+Chief Complaint  
+The patient reports a left-sided, sharp chest pain that has persisted for five days. He describes the pain as a constant, lingering discomfort that intensifies with deep breathing and physical exertion, such as walking to the mailbox. He has taken acetaminophen and ibuprofen for partial relief but notes the pain remains present. He denies any radiation of pain to other regions.  
+
+History of Present Illness  
+Abel states that the pain began five days ago while he was sitting on his couch. Initially mild, the discomfort has worsened with activity; walking even a short distance now causes dyspnea and pain flare‑ups. He reports that the pain is not alleviated by position change and does not radiate to the arm, back, or jaw. He has not experienced any associated symptoms such as fever, chills, cough, sputum production, wheezing, nausea, vomiting, abdominal pain, or urinary changes. He notes that his energy level has declined slightly because of the dyspnea, but otherwise he has had no significant fatigue or night sweats.  
+
+Review of Systems  
+Constitutional: Denies fever, chills, night sweats, weight change, or fatigue beyond mild.  
+Respiratory: Reports dyspnea on exertion; denies cough, sputum, wheezing, or shortness of breath at rest.  
+Cardiovascular: Denies palpitations, chest tightness (other than described pain), syncope, or lightheadedness.  
+Gastrointestinal: Denies abdominal pain, nausea, vomiting, or altered bowel habits.  
+Genitourinary: Denies urinary frequency, urgency, dysuria, or hematuria.  
+Musculoskeletal: No joint or leg pain.  
+Skin: No rash or skin changes.  
+Psychological: No depression or anxiety reported.  
+
+Past Medical History  
+- Essential hypertension.  
+- Chronic kidney disease stages 1–3, with a history of diabetic nephropathy.  
+- Kidney transplant (failure noted in 2011, ongoing immunosuppression).  
+- Chronic congestive heart failure (diagnosed in 2009).  
+- Ischemic heart disease with abnormal cardiac imaging findings noted in 2000.  
+- Chronic sinusitis (1985).  
+- Acute bronchitis and viral infections on multiple occasions.  
+- History of opioid abuse (discontinued).  
+
+Surgical History  
+- Hysterectomy (note: patient is male; likely a clerical error; no further details).  
+- Wisdom tooth extraction during adolescence.  
+- Kidney transplant (year unspecified; ongoing).  
+
+Social History  
+The patient works as an accountant. He drinks wine socially on weekends, approximately one glass per occasion. He smokes cigarettes, currently about five cigarettes per day, and is attempting to reduce his consumption. He lives with his two teenage children and husband. There is no indication of recreational drug use beyond past occasional marijuana use.  
+
+Family History  
+Mother had a myocardial infarction in her seventies. No other reported family history of cardiovascular disease, cancers, or coagulation disorders.  
+
+Current Medications  
+- Tacrolimus (extended‑release 5 mg daily; 1 mg tablet and 5 mg/ml injection equivalents).  
+- Furosemide (40 mg oral daily).  
+- Acetaminophen (325 mg oral).  
+- Ibuprofen (200 mg oral).  
+- Sodium fluoride oral gel.  
+- Lisinopril (10 mg oral).  
+- Amlodipine (2.5 mg oral).  
+- Sertraline (100 mg oral).  
+- Clopidogrel (75 mg oral).  
+- Simvastatin (20 mg oral).  
+- Metoprolol succinate (100 mg extended‑release oral).  
+
+Objective  
+
+Vital Signs  
+No recent vital sign data available; past records from 2003 show a normal blood pressure and heart rate but are not reflective of current status.  
+
+Physical Examination  
+No examination findings documented during the encounter.  
+
+Laboratory Results  
+- White blood cells: 9.49 × 10³/µL (within normal limits).  
+- Red blood cells: 3.80 × 10⁶/µL.  
+- Hemoglobin: 16.92 g/dL.  
+- Hematocrit: 47.49 %.  
+- MCV: 80.65 fL.  
+- MCH: 27.14 pg.  
+- MCHC: 33.36 g/dL.  
+- RDW: 14.47 %.  
+- Platelets: 296.70 × 10³/µL.  
+- Glucose: 82.8 mg/dL.  
+- BUN: 10.46 mg/dL.  
+- Creatinine: 0.88 mg/dL.  
+- Calcium: 8.79 mg/dL.  
+- Sodium: 142.93 mmol/L.  
+- Potassium: 3.73 mmol/L.  
+- Chloride: 102.28 mmol/L.  
+- Total CO₂: 23.22 mmol/L.  
+- Estimated glomerular filtration rate (MDRD): 158.08 mL/min/1.73 m².  
+- Serum protein: 6.86 g/dL.  
+
+Imaging  
+No imaging studies were obtained or reported during this visit.  
+
+Assessment  
+The patient presents with acute, left‑sided chest pain that is pleuritic in nature, worsened by deep inspiration and exertion. Differential diagnoses include pulmonary embolism, acute coronary syndrome (though atypical presentation), musculoskeletal chest wall pain, and pleuritis. The patient's significant risk factors for thromboembolism (advanced age, smoking, immobility from recent surgery, history of kidney disease, and chronic heart failure) raise concern for pulmonary embolism. The doctor expressed this concern and planned laboratory and imaging investigations accordingly.  
+
+Plan  
+1. Obtain a D‑dimer level to assess for pulmonary embolism.  
+2. Schedule a computed tomography pulmonary angiography (CTPA) to evaluate for emboli.  
+3. Continue current antihypertensive, lipid‑lowering, antiplatelet, and immunosuppressive therapy.  
+4. Monitor for any new symptoms such as worsening dyspnea, chest pain, palpitations, or syncope.  
+5. Counsel the patient on smoking cessation resources and reinforce the importance of adherence to immunosuppressive regimen.  
+6. Arrange follow‑up in the cardiology or pulmonology clinic within one week, or sooner if symptoms worsen.  
+7. Provide patient instructions on recognizing red‑flag symptoms (sudden severe chest pain, shortness of breath, hemoptysis) and to seek emergency care if these develop.  
+
+No additional information was available for the physical exam, imaging, or further laboratory panels at the time of documentation. The plan will be updated once diagnostic studies are completed.

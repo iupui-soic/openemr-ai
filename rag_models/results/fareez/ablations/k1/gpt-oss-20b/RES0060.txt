@@ -1,0 +1,93 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:32:23
+Time: 3.22s
+Tokens: 6,091 in / 1,665 out
+============================================================
+
+Patient Information  
+Abbie Stamm, female, born November 16, 2001, residing at 635 Eichmann Neck Apt 65, Amherst, Massachusetts. The patient presents to the clinic for evaluation of a recent onset of fever and cough.
+
+Chief Complaint  
+The patient reports a fever measured at 38.5°C this morning, a dry cough that began approximately four days ago on Monday, and progressive fatigue. She also notes intermittent chills at night, a mild runny nose, and episodic nausea.
+
+History of Present Illness  
+Abbie states that the fever and cough started concurrently four days ago. The cough is dry, non‑productive, and has worsened over the past days. She has not produced sputum, experienced hemoptysis, or noted wheezing. There is no chest pain or shortness of breath except transient shortness after coughing fits. She denies sore throat, difficulty swallowing, or changes in taste or smell. She reports a mild runny nose and no significant nasal congestion. She experiences tension‑type headaches on and off for several days, which have been relieved by over‑the‑counter analgesics. The patient notes increased fatigue and decreased appetite, but denies weight loss, night sweats, or significant nausea beyond a few episodes. She has not vomited. She denies any recent exposure to known sick contacts and reports no recent travel. She has no history of similar illness in the past aside from a childhood flu‑like illness. She is currently taking rosuvastatin for hypercholesterolemia and has a history of pre‑diabetes. She reports walking her dog more often and eating out less frequently as recent lifestyle adjustments. She drinks 2–3 beers on weekend evenings.
+
+Review of Systems  
+Constitutional: Fever 38.5°C, chills at night, fatigue, decreased appetite, no weight loss.  
+Respiratory: Dry cough, no sputum, no wheeze, mild runny nose, no shortness of breath except after coughing fits.  
+Cardiovascular: No chest pain, no palpitations.  
+Gastrointestinal: Nausea without vomiting, normal bowel movements, no abdominal pain.  
+Neurologic: Tension‑type headaches, no dizziness, no confusion.  
+Genitourinary: No urinary urgency, frequency, color change, or pain.  
+Psychiatric: No depression or anxiety reported.  
+Dermatologic: No skin rash or hives noted except history of penicillin allergy.  
+Musculoskeletal: No muscle or joint pain reported.  
+Allergic/Immunologic: History of penicillin allergy with hives; allergic to bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, peanut per medical record.  
+Social: Lives with girlfriend, non‑smoker, non‑marijuana user, occasional alcohol use, no recreational drugs, no exercise reported beyond walking dog.
+
+Allergies  
+- Penicillin (hives)  
+- Bee venom  
+- Mold  
+- House dust mite  
+- Animal dander  
+- Tree pollen  
+- Cow’s milk  
+- Peanut  
+
+Past Medical History  
+- Hypercholesterolemia, controlled with rosuvastatin  
+- Prediabetes (most recent A1c 6.2% six months ago)  
+- Childhood asthma (diagnosed 2006, resolved 2021)  
+- Perennial allergic rhinitis (resolved 2020)  
+- Mitral valve regurgitation, ongoing  
+- Acute bronchitis (past episode 2016)  
+- Viral sinusitis (2019)  
+- Streptococcal sore throat (2022)  
+- Acute viral pharyngitis (2023)  
+- Gingivitis episodes (multiple years)  
+- Acute infective cystitis (Feb 2024)  
+- Victim of intimate partner abuse (Jan 2024)  
+
+Surgical History  
+- Inguinal hernia repair, approximately five years ago.  
+
+Social History  
+Abbie is a non‑smoker, drinks alcohol socially (2–3 beers on weekends), does not use recreational drugs, and does not consume coffee. She engages in some physical activity by walking her dog. Sleep patterns and exercise routines are not formally documented. She lives with her girlfriend in a duplex. She reports no exposure to mold, asbestos, or other environmental irritants in her living environment.  
+
+Family History  
+No known family history of lung disease, heart disease, or diabetes. Grandfather had bladder cancer. No other cancers reported in the family.  
+
+Current Medications  
+- Rosuvastatin (dose not specified)  
+- Multivitamin (dose not specified)  
+- Loratadine, 5 mg chewable tablet (ongoing)  
+- Trinessa nasal steroid (ongoing)  
+- Epinephrine auto‑injector (NDA020800) (ongoing)  
+- Other historical medications (penicillin V, hormonal contraceptives, inhaled steroids, albuterol) have been discontinued.  
+
+Objective Findings  
+Vital signs: Temperature recorded at 38.5°C during the visit. No other vital sign measurements were taken at this encounter.  
+Physical exam: Not documented; patient reports no chest pain, wheeze, or other notable findings. Examination likely normal except for a dry cough.  
+Laboratory results: Urine analysis shows WBC 13.06 /HPF, RBC 1.96 /HPF, protein 4.4 mg/dL, glucose 12.6 mg/dL, and a pH of 5.21. No ketones, hemoglobin, or nitrites detected. These results are not directly related to the current respiratory presentation but are recorded from a recent urine study.  
+
+Assessment  
+Primary diagnosis: Acute bronchitis, likely of viral etiology, presenting with fever, dry cough, mild nasal congestion, and fatigue.  
+Differential diagnoses: COVID‑19 infection (pending PCR test), influenza, other viral upper respiratory infections, bacterial pneumonia (unlikely given lack of sputum, pleuritic pain, or elevated white count).  
+Comorbid conditions: Prediabetes, hypercholesterolemia, mitral valve regurgitation, history of childhood asthma and allergic rhinitis.  
+
+Plan  
+1. Diagnostic testing: SARS‑CoV‑2 PCR test performed today with anticipated results in approximately one day.  
+2. Isolation: Patient advised to isolate for 14 days if test is positive, and to have close contacts, including girlfriend, also isolate and monitor for symptoms.  
+3. Symptomatic treatment: Encourage rest, adequate hydration, use of antipyretics such as acetaminophen for fever and headache as needed. No specific cough suppressant prescribed.  
+4. Monitor for complications: Advise immediate return or telemedicine visit if there is onset of shortness of breath, chest pain, persistent high fever >72 hours, or new productive cough.  
+5. Follow‑up: Schedule a follow‑up in 10 days or sooner if symptoms worsen. Discuss results of COVID test and, if negative, consider supportive care for a viral upper respiratory infection.  
+6. Chronic disease management: Continue rosuvastatin and multivitamin. Reinforce lifestyle modifications for pre‑diabetes: increased physical activity (e.g., walking dog), dietary changes (reduce processed foods, increase vegetables and whole grains), weight management, and regular monitoring of blood glucose.  
+7. Patient education: Reviewed importance of hand hygiene, mask wearing in public settings, and avoidance of sick contacts. Discussed potential for false‑negative COVID test and rationale for isolation despite a negative result.  
+8. Additional counseling: Address history of intimate partner abuse; safety planning resources to be offered.  
+9. Documentation: All relevant findings and plan are recorded in the electronic health record.  
+
+The patient verbally confirmed understanding of the plan and has no further questions at this time.

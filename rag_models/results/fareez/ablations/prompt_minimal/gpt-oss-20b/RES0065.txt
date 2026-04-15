@@ -1,0 +1,145 @@
+Model: openai/gpt-oss-20b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:28:14
+Time: 4.30s
+Tokens: 10,438 in / 2,020 out
+============================================================
+
+**Patient Information**  
+Abbey Arie Schroeder, female, 71 years old (DOB 10 Oct 1951), presents to the family clinic for a 3‑day history of sore throat and low‑grade fever. She resides in a shared apartment with her parents and younger brother, reports no recent travel, and has a complex medical history that includes Crohn’s disease (diagnosed last year), a kidney transplant (on tacrolimus and other immunosuppressants), chronic kidney disease, hypertension, and a family history of inflammatory bowel disease, asthma, and eczema. She is a former light drinker, never smoked, and exercises by swimming.
+
+---
+
+### SOAP Note
+
+**Subjective**
+
+**Chief Complaint**  
+Sore throat for 3 days.
+
+**History of Present Illness**  
+The patient reports a persistent sore throat beginning three days ago, which has progressively worsened. A low‑grade fever was noticed a day after the sore throat started; she has felt hot with chills and notes the fever is intermittent but now more constant. She denies cough, dyspnea, chest pain, headache, nausea, vomiting, abdominal pain, or urinary symptoms. She describes pain when swallowing solids and, to a lesser extent, liquids that are very cold. She has been unable to eat large amounts but can manage small meals. She denies any rash, night sweats, or recent exposure to sick individuals. She notes “lumps” in the neck that she feels as swelling in the cervical area, but no obvious visible lymphadenopathy was documented during the visit. She reports feeling fatigued and generally more tired than usual, though she sleeps 7–8 hours nightly.
+
+**Review of Systems**  
+- Constitutional: feverish, chills, fatigue, no weight loss.  
+- Respiratory: no cough, no shortness of breath, no chest pain.  
+- Cardiovascular: no palpitations, no chest discomfort.  
+- Gastrointestinal: normal appetite aside from throat discomfort; no nausea or vomiting; bowel movements normal.  
+- Genitourinary: normal urinary habits.  
+- Neurologic: none reported.  
+- Skin: no rash or lesions.  
+- Musculoskeletal: no joint pain.  
+- Psychiatric: none reported.  
+- Endocrine: none reported.  
+
+**Past Medical History**  
+- Crohn’s disease (active, managed with sulfasalazine).  
+- Kidney transplant (post‑operative immunosuppressive regimen includes tacrolimus).  
+- Chronic kidney disease (stage 2–4, depending on most recent labs).  
+- Hypertension, well‑controlled.  
+- Type 2 diabetes mellitus (controlled, no recent complications).  
+- Osteoarthritis, mild.  
+
+**Allergies**  
+No known drug allergies reported.
+
+**Social History**  
+- Tobacco: never.  
+- Alcohol: occasional, minimal.  
+- Recreational drugs: none.  
+- Exercise: swimming regularly.  
+- Living situation: shared apartment with family.  
+
+**Family History**  
+- Crohn’s disease and ulcerative colitis (both present in relatives).  
+- Asthma and eczema in parents.  
+- No family history of malignancy or cardiovascular disease.
+
+**Medications**  
+- Sulfasalazine (for Crohn’s).  
+- Tacrolimus (maintenance immunosuppressant for kidney transplant).  
+- Lisinopril, amlodipine, metoprolol (for hypertension).  
+- Simvastatin (lipid control).  
+- Hydrochlorothiazide (hypertension).  
+- Nitroglycerin spray (for chest pain history, not currently used).  
+- No over‑the‑counter medications aside from occasional acetaminophen.
+
+**Objective**
+
+**Vital Signs**  
+- Temperature: not recorded during visit (patient reported feeling feverish).  
+- Blood pressure: not measured at this encounter.  
+- Heart rate: 89 bpm (from prior record).  
+- Respiratory rate: 13 breaths/min (from prior record).  
+- SpO₂: not documented.  
+- Weight/Height: not measured; prior height 169.3 cm, weight not available.
+
+**Physical Examination**  
+- General: Alert, oriented, mild distress from sore throat.  
+- HEENT: Pharynx erythematous with posterior pharyngeal congestion; no exudate noted. Oropharyngeal lymphoid tissue mildly enlarged. No tonsillar swelling or bulging. No cervical lymphadenopathy visibly enlarged, but patient reports feeling “lumps.”  
+- Neck: supple, no obvious masses.  
+- Cardiovascular: regular rate and rhythm, no murmurs.  
+- Respiratory: clear to auscultation bilaterally, no wheezes or crackles.  
+- Abdomen: soft, non‑tender, no organomegaly.  
+- Extremities: no edema.  
+- Neurologic: no focal deficits.
+
+**Labs** (from most recent outpatient lab panel)  
+- CBC: WBC 4.7 × 10³/µL (within normal limits).  
+- Hemoglobin 15.9 g/dL (normal).  
+- Platelets not provided.  
+- Electrolytes: Na 137.3, Cl 109.8, K 4.6, BUN 9.3 mg/dL, Creatinine 0.95 mg/dL (baseline normal for this patient).  
+- Basic metabolic panel otherwise within normal limits.  
+- No evidence of infection or organ dysfunction on routine labs.
+
+**Assessment**
+
+The presentation is most consistent with a viral pharyngitis, most likely infectious mononucleosis (EBV) or a non‑streptococcal viral upper respiratory infection. The patient’s immunosuppressed state due to kidney transplant therapy raises the concern for atypical or opportunistic infections. Differential diagnoses include:
+
+1. **Infectious mononucleosis (EBV)** – compatible with sore throat, fever, cervical lymphadenopathy (subjective), fatigue.  
+2. **Streptococcal pharyngitis** – possible but less likely given lack of rapid exudate, pain disproportionate to swallowing, and normal WBC.  
+3. **COVID‑19** – possible given overlapping symptoms; requires testing to rule out.  
+4. **Other viral pharyngitis** (influenza, adenovirus).  
+5. **Opportunistic infection** (e.g., cytomegalovirus, herpes simplex) – considered due to immunosuppression; clinical features would be more severe.
+
+Given the patient’s immunosuppressive therapy, prompt testing is warranted to guide therapy and prevent complications.
+
+**Plan**
+
+1. **Diagnostic Testing**  
+   - **COVID‑19 PCR nasopharyngeal swab** (results within 24–48 h).  
+   - **Monospot (heterophile antibody) test** or EBV serology (IgM, IgG).  
+   - **Rapid strep antigen test** (to rule out streptococcal pharyngitis).  
+   - Consider throat culture if indicated.  
+   - CBC with differential if WBC rises or clinical status worsens.
+
+2. **Isolation Precautions**  
+   - Advise strict self‑isolation until COVID‑19 results are negative and symptoms improve.  
+   - Use mask at home and minimize contact with household members, especially the immunosuppressed kidney transplant status.
+
+3. **Symptom‑Based Management**  
+   - Acetaminophen or ibuprofen (acetaminophen 500 mg q6–8 h as needed, ibuprofen 400 mg q6–8 h if tolerated).  
+   - Throat lozenges and warm salt‑water gargles for pain relief.  
+   - Adequate hydration and soft diet to facilitate swallowing.  
+   - Encourage rest; avoid strenuous activity.
+
+4. **Medication Review**  
+   - Continue sulfasalazine and tacrolimus; no dose adjustment necessary for viral infection.  
+   - Monitor tacrolimus levels if prolonged illness or medication interactions arise.
+
+5. **Follow‑Up**  
+   - Telehealth or in‑person follow‑up in 3–5 days to review test results and symptom evolution.  
+   - If symptoms worsen (e.g., severe pain, high fever >38.5 °C, breathing difficulty, or persistent vomiting), advise immediate presentation to urgent care or ED.  
+   - If EBV positive, recommend supportive care and discuss possible complications (splenomegaly, anemia) with follow‑up labs.
+
+6. **Patient Education**  
+   - Explain that most viral pharyngitis resolves spontaneously.  
+   - Emphasize the importance of isolation and hand hygiene.  
+   - Discuss red‑flag symptoms requiring urgent evaluation: sudden high fever, severe dysphagia, neck swelling, difficulty breathing, or signs of septicemia.  
+   - Counsel on safe medication use, avoiding NSAIDs that may affect renal function, and monitoring for signs of transplant rejection (e.g., changes in urine output, abdominal pain).
+
+**Disposition**  
+Patient is advised to remain home, self‑isolate, and contact clinic if symptoms worsen. Return for test results and follow‑up. No immediate discharge medication changes are required beyond supportive care recommendations.
+
+---

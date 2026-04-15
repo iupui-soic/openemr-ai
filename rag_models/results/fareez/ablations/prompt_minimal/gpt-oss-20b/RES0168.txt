@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-20b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 04:28:30
+Time: 2.99s
+Tokens: 11,546 in / 1,070 out
+============================================================
+
+**Patient Information**  
+Name: Aaron Bartoletti DOB: 08/03/1981 Age: 41 y Gender: Male Address: 409 Veum Drive, Spencer, MA 01562  
+
+---  
+
+### Subjective  
+**Chief Complaint:** “I feel like I have a sinus infection again; the saline rinses aren’t helping.”  
+
+**History of Present Illness:** Mr. Bartoletti reports a 3‑week history of persistent nasal congestion, purulent greenish discharge, facial pressure (maxillary), and sinus‑related headaches. He denies cough, dyspnea, wheeze, sore throat (other than post‑nasal drip‑induced throat irritation), vision or hearing changes, weight loss, chills, chest pain, or changes in bowel/urine habits. His temperature last night was 99.7 °F (38.1 °C). He has tried saline rinses, occasional nasal decongestant (not used for >3 days), and a nasal steroid spray (not used recently). He has no cough or fever currently. Past sinus infections have been treated similarly with limited relief. No recent travel, sick contacts, or exposure to mold/asbestos.  
+
+**Review of Systems**  
+- **Constitutional:** No fever (except isolated 99.7 °F), no chills, no weight loss.  
+- **Respiratory:** Congestion, post‑nasal drip; denies cough, wheeze, dyspnea.  
+- **ENT:** Facial pressure/ pain (maxillary), green purulent discharge, no anosmia, no sore throat.  
+- **Cardiovascular, GI, GU, Musculoskeletal:** No chest pain, no abdominal pain, no urinary changes.  
+- **Neurologic:** No headaches beyond sinus‑related, no dizziness, no vision changes.  
+
+**Past Medical History:**  
+- Acute lymphocytic leukemia? (None reported in current visit; no mention of chronic illnesses).  
+- ACL repair surgery (orthopedic).  
+- No other chronic medical conditions noted today.  
+
+**Medications (home):**  
+- Saline nasal rinses (used frequently).  
+- Nasal steroid spray (not used recently).  
+- Occasionally acetaminophen/ibuprofen (for knee pain).  
+- Occasional cannabis capsule (≈1/month for recreational/ knee pain).  
+
+**Allergies:**  
+- Cats (minimal reaction).  
+
+**Social History:**  
+- Non‑smoker.  
+- Drinks 5–6 beers on weekends.  
+- Works from home; no recent travel or sick contacts.  
+- Lives with wife and teenage son; dog (labradoodle).  
+
+**Family History:**  
+- Unremarkable for respiratory, cardiac, or systemic disease.  
+
+**Immunizations:**  
+- Up‑to‑date (unspecified).  
+
+### Objective  
+- **Vital signs:** Temperature 99.7 °F (38.1 °C). Other vitals not documented during visit.  
+- **Physical exam:** Not documented; patient reports facial fullness, purulent nasal discharge, no erythema noted.  
+- **Labs:** None ordered at this visit.  
+- **Imaging:** None performed.  
+
+### Assessment  
+1. **Acute bacterial sinusitis** – likely maxillary sinus involvement given facial pressure, purulent discharge, and headache lasting >10 days with no improvement on saline rinses.  
+2. **Consider differential:** viral sinusitis (unlikely given duration >2 weeks and purulent discharge), allergic rhinitis (no seasonal triggers), or dental source (no dental complaints).  
+
+### Plan  
+- **Diagnostics:** COVID‑19 PCR swab (to rule out viral overlap); routine sinus imaging not indicated at this time.  
+- **Medications:**  
+  - Prescribe Amoxicillin (500 mg) PO q8h for 5‑7 days **or** Amoxicillin‑Clavulanate 500/125 mg PO q12h for 5‑7 days, per provider’s choice.  
+  - Initiate inhaled corticosteroid (fluticasone nasal spray) BID for 4 weeks to reduce mucosal inflammation.  
+- **Non‑pharmacologic:** Continue saline rinses twice daily; avoid topical decongestants >3 days.  
+- **Follow‑up:** Return in 1 week for reassessment of symptom resolution; sooner if fever >100.4 °F, worsening pain, or new symptoms.  
+- **Patient education:** Discuss importance of completing full antibiotic course; advise on signs of complications (severe facial swelling, vision changes, high fever).  
+- **Safety net:** If symptoms worsen or new symptoms develop, call clinic or seek urgent care.  
+
+---  
+
+*Prepared by: [Scribe’s Name]*  
+*Date: 2026‑04‑14*

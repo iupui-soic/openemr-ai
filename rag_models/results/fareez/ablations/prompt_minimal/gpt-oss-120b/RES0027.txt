@@ -1,0 +1,167 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:21:14
+Time: 6.30s
+Tokens: 6,182 in / 2,317 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abbey Eliza Schmitt  
+- **DOB:** 27 Sep 1965 (Age 60)  
+- **Sex:** Female  
+- **Address:** 291 Franecki Union, Hudson, MA 01749  
+- **Primary Care Provider:** Dr. External Provider (record)  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+“Dry cough for the past three days that is getting worse and keeping me up at night. I feel hot today and have had a low‑grade fever‑like sensation.”
+
+### History of Present Illness  
+Abbey reports the onset of a **dry, non‑productive cough** three days ago. The cough has been **continuous throughout the day**, **worsening** rather than improving, and is **disturbing her sleep**. Today she noticed a sensation of being “hot” and suspects a fever; she has not taken her temperature. She describes **mild chills and night sweats** last night, **fatigue**, and **generalized muscle aches**. She denies any sputum production, hemoptysis, wheezing, dyspnea, chest pain, or shortness of breath. She has tried an over‑the‑counter cough syrup without relief. No clear environmental triggers (cold air, smoke, dust, pets) are identified.  
+
+Associated symptoms:  
+- **Positive:** Low‑grade fever sensation, chills, night sweats, fatigue, mild myalgias, slight headache.  
+- **Negative:** Sore throat, rhinorrhea/runny nose, nasal congestion, ear or eye discharge, dysphagia, nausea/vomiting, diarrhea, abdominal pain, urinary symptoms, dizziness, palpitations, syncope, loss of taste or smell, rash.
+
+### Review of Systems (pertinent)  
+
+| System | Positive Findings | Negative Findings |
+|--------|-------------------|-------------------|
+| **Constitutional** | Feverish feeling, chills, night sweats, fatigue, myalgias, mild headache | Weight loss, recent trauma |
+| **Respiratory** | Dry cough, worse at night, no sputum, no dyspnea, no wheeze, no chest pain | Hemoptysis, shortness of breath, wheezing |
+| **ENT** | None | Sore throat, rhinorrhea, nasal congestion, ear pain, eye discharge |
+| **Cardiovascular** | None | Chest pain, palpitations, orthostatic symptoms |
+| **Gastrointestinal** | None | Nausea, vomiting, diarrhea, abdominal pain |
+| **Genitourinary** | None | Dysuria, frequency, flank pain |
+| **Neurologic** | Mild headache | Dizziness, syncope, focal deficits |
+| **Psychiatric** | None | Anxiety, depression |
+| **Musculoskeletal** | Myalgias | Joint swelling, severe back pain |
+| **Skin** | None | Rash, lesions |
+
+### Past Medical History  
+- **Hypothyroidism** – on levothyroxine (Synthroid)  
+- **Essential Hypertension** – on amlodipine  
+- **Chronic Kidney Disease, Stage 2** (secondary to diabetes)  
+- **Type 2 Diabetes Mellitus** (microalbuminuria)  
+- **Chronic Congestive Heart Failure** (ongoing)  
+- **Osteoarthritis, knee**  
+- **Chronic low‑back and neck pain**  
+- Prior episodes of **acute bronchitis** (2015) and **viral sinusitis** (multiple)  
+
+### Surgical History  
+- Appendectomy (teenage years), uncomplicated.
+
+### Medications (home)  
+- Levothyroxine (Synthroid) – dose unspecified  
+- Amlodipine 2.5 mg PO daily  
+- Furosemide 40 mg PO daily (active)  
+- Naproxen sodium 220 mg PO PRN for pain  
+- Multivitamin (generic) daily  
+- (Historical) Cough‑cold syrup (dextromethorphan‑based) – used recently without effect  
+
+### Allergies  
+- No known drug allergies (NKDA).
+
+### Social History  
+- **Tobacco:** Never smoked.  
+- **Alcohol:** One glass of wine every 3–4 days (~2 drinks/week).  
+- **Marijuana:** Occasional use, not regular.  
+- **Illicit drugs:** Denies.  
+- **Living situation:** Lives in a townhouse with husband and two teenage children; recent move.  
+- **Occupational exposure:** Works from home (marketing), no known occupational inhalant exposure.  
+- **Family exposure:** Husband has been vomiting and feels “hot” for the past two days; he has not yet sought medical care. Children are well.
+
+### Family History  
+- Sister (≈ 15 years older) had a recent myocardial infarction.  
+- No known parental heart disease, hypertension, diabetes, or cancer.
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (most recent in record)  
+- Heart Rate: **98 bpm** (tachycardic borderline)  
+- Respiratory Rate: **15 breaths/min** (within normal limits)  
+- Blood Pressure: **Not recorded** in current visit  
+- Temperature: **Not measured** (patient reports feeling hot)  
+- SpO₂: **Not recorded**  
+- Height: **162.8 cm**; Weight: **Not recorded**; BMI: **30.1 kg/m²** (obesity)
+
+### Physical Examination  
+*No detailed exam documented during this encounter.*  
+Given the acute nature of the complaint, a focused exam would be expected to include: clear lungs to auscultation, no wheezes or crackles; oropharynx without erythema or exudate; cardiovascular exam regular rate and rhythm; no peripheral edema noted in conversation.
+
+### Laboratory Data (most recent)  
+| Test | Result | Reference |
+|------|--------|-----------|
+| Serum Sodium | 139.9 mmol/L | Normal |
+| Serum Potassium | 4.41 mmol/L | Normal |
+| Serum Creatinine | 1.99 mg/dL | Elevated (CKD) |
+| Serum Glucose (fasting) | 67.3 mg/dL | Low‑normal |
+| LDL Cholesterol | 101.5 mg/dL | Near goal |
+| Total Cholesterol | 175.8 mg/dL | Normal |
+| CO₂ (total) | 20.98 mmol/L | Slightly low |
+| Urine specific gravity | 1.012 | Normal |
+| Urine ketones, protein, bilirubin, glucose – trace/positive on dipstick | **Not clinically significant** |
+| GAD‑7 score | 3 | Minimal anxiety |
+
+*No CBC, CRP, or SARS‑CoV‑2 testing performed yet.*
+
+### Imaging  
+- None performed at this visit; a chest radiograph has been ordered (see Plan).
+
+---
+
+## ASSESSMENT  
+
+1. **Acute bronchitis (likely viral)** – 3‑day dry cough, low‑grade fever‑like symptoms, no sputum, no focal pulmonary findings.  
+2. **Rule‑out COVID‑19 infection** – Exposure to a household member with gastrointestinal symptoms and fever; community prevalence warrants testing.  
+3. **Chronic comorbidities** – Hypothyroidism, hypertension, CKD‑2, type‑2 diabetes, chronic heart failure – currently stable.  
+4. **Obesity (BMI ≈ 30)** – contributes to risk for respiratory complications.  
+
+The presentation is consistent with an uncomplicated acute viral bronchitis, but given the household exposure, COVID‑19 testing is indicated. No red‑flag features (hemoptysis, dyspnea, chest pain, hypoxia) are present at this time.
+
+---
+
+## PLAN  
+
+### Diagnostic Studies  
+- **SARS‑CoV‑2 PCR** (nasopharyngeal swab) – to confirm or exclude COVID‑19.  
+- **Chest X‑ray** (PA) – to evaluate for pneumonia or other infiltrates.  
+- **Complete blood count (CBC) with differential** – to assess for leukocytosis or atypical lymphocytosis.  
+- **C‑reactive protein (CRP) or ESR** – to help differentiate bacterial from viral etiology if needed.  
+
+### Therapeutic Interventions  
+1. **Symptomatic care**  
+   - Continue **over‑the‑counter cough suppressant** (dextromethorphan‑based) as needed.  
+   - **Acetaminophen 500‑650 mg PO q6 h PRN** for fever or discomfort (monitor total daily dose ≤ 3 g).  
+   - Encourage **increased oral fluid intake** and **humidified air**.  
+   - **Rest** and sleep hygiene; elevate head of bed if cough worsens at night.  
+
+2. **Medication review**  
+   - Verify levothyroxine dose and timing (take on empty stomach, separate from calcium/iron).  
+   - Continue current antihypertensive and heart‑failure regimen (amlodipine, furosemide).  
+   - Hold naproxen if fever persists > 38 °C or if renal function declines further.  
+
+3. **Education & Counseling**  
+   - Discuss signs that would warrant urgent evaluation: high fever > 38.5 °C, shortness of breath, chest pain, new wheezing, hemoptysis, worsening fatigue, or inability to maintain hydration.  
+   - Emphasize infection control: wear a mask at home, frequent hand washing, and separate bedroom/bathroom from husband if feasible.  
+   - Advise husband to seek medical evaluation promptly for his vomiting and fever.  
+
+### Follow‑up  
+- **Telehealth visit** in **48‑72 hours** to review test results and symptom progression.  
+- If PCR positive: follow local COVID‑19 management protocols; consider monoclonal antibody eligibility based on risk profile (age > 60, CKD, heart failure).  
+- If cough persists > 2 weeks, develops purulent sputum, or chest X‑ray shows infiltrate → consider **antibiotic therapy** (e.g., amoxicillin‑clavulanate) pending culture results.  
+
+### Referrals  
+- None at this time; pulmonology referral only if symptoms fail to improve or imaging suggests complications.  
+
+**Signature:**  
+[Electronic signature – Provider]  
+Date: 14 Apr 2026  
+
+---

@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:24:52
+Time: 5.98s
+Tokens: 15,788 in / 1,949 out
+============================================================
+
+Patient Information  
+Name: Abel Wunsch (as recorded in the electronic record)  
+Sex: Female (based on patient’s self‑report)  
+Age: Not provided in the interview; date of birth in the record is 07 June 1932, which would make the patient 93 years old, but the patient’s narrative suggests a younger, active adult. The clinician will verify age at the next encounter.  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+
+Chief Complaint  
+The patient presents with a five‑day history of left‑sided chest pain and associated shortness of breath.
+
+History of Present Illness  
+The patient reports that five days ago she began to feel a “tiny, lingering sharp” pain localized to the left side of the chest. The pain has been continuous since onset and is not radiating. She notes that the discomfort worsens with deep inspiration and with mild exertion, such as walking to retrieve the mail. At rest the pain is present but less severe. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide only minimal relief. She denies any previous episodes of similar pain. The shortness of breath is described as an inability to “catch my breath” during activity; she can walk several kilometers on a good day but now feels limited by dyspnea. She reports no fever, chills, cough, sputum production, wheezing, nausea, vomiting, palpitations, light‑headedness, syncope, abdominal pain, urinary symptoms, bowel changes, skin rash, or musculoskeletal pain elsewhere. She states that she has felt well until the onset of these symptoms.  
+
+Review of Systems  
+
+- Constitutional: No fever, chills, night sweats, or unintended weight loss.  
+- Respiratory: Dyspnea on exertion; no cough, sputum, hemoptysis, wheezing, or chest tightness.  
+- Cardiovascular: Left‑sided chest pain, sharp, pleuritic quality; no radiation, palpitations, or known heart rhythm abnormalities. No history of syncope.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, dysphagia, or change in bowel habits.  
+- Genitourinary: No dysuria, hematuria, or frequency; recent hysterectomy noted.  
+- Musculoskeletal: No joint or muscle pain.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Dermatologic: No rash or skin changes.  
+- Psychiatric: No anxiety or depression reported beyond stress related to recent surgery.  
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Past Medical History  
+According to the patient, she has no chronic medical diagnoses. She denies hypertension, diabetes, heart disease, lung disease, kidney disease, or any prior thromboembolic events. (The historic electronic record lists many chronic conditions, but the current interview overrides those entries for present status.)
+
+Surgical History  
+- Recent total abdominal hysterectomy performed approximately one month ago for symptomatic heavy menstrual bleeding.  
+- Wisdom tooth extraction performed during adolescence.  
+
+Social History  
+The patient lives with her husband and two teenage children. She is employed as an accountant. She smokes cigarettes, estimating about five cigarettes per day and is actively trying to reduce use. She drinks alcohol occasionally, typically one glass of wine on weekends. She denies current recreational drug use; occasional marijuana use was reported in the distant past but not recently. No recent long trips or immobilization.  
+
+Family History  
+Maternal history of myocardial infarction in her 70s. No known family history of clotting disorders, cancers, or other cardiovascular disease reported.
+
+Current Medications  
+- Acetaminophen 325 mg as needed for pain (OTC)  
+- Ibuprofen 200 mg as needed for pain (OTC)  
+No prescription medications reported by the patient.
+
+Vital Signs (most recent from electronic record)  
+Heart rate: 79 beats/minute  
+Respiratory rate: 15 breaths/minute  
+Blood pressure: Not documented in the current visit  
+Temperature: Not documented  
+SpO₂: Not documented  
+Weight/Height: Height 182.6 cm; weight not recorded; calculated BMI 33.3 (obesity) from prior data.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent laboratory panel)  
+- White blood cell count: 9.5 × 10³/µL (within normal limits)  
+- Red blood cell count: 3.8 × 10⁶/µL (slightly low normal)  
+- Hemoglobin: 16.9 g/dL (normal)  
+- Hematocrit: 47.5 % (normal)  
+- MCV: 80.6 fL (normocytic)  
+- MCH: 27.1 pg (normal)  
+- MCHC: 33.4 g/dL (normal)  
+- RDW: 14.5 % (normal)  
+- Platelets: 297 × 10³/µL (normal)  
+- Glucose: 82.8 mg/dL (normal)  
+- BUN: 10.5 mg/dL (normal)  
+- Creatinine: 0.88 mg/dL (normal)  
+- Electrolytes: Na 142.9 mmol/L, K 3.73 mmol/L, Cl 102.3 mmol/L, CO₂ 23.2 mmol/L (all within reference)  
+- Calcium: 8.79 mg/dL (low‑normal)  
+- Estimated GFR (MDRD): 158 mL/min/1.73 m² (high, likely reflecting recent kidney transplantation status)  
+- Total protein: 6.86 g/dL (normal)  
+
+Imaging  
+No imaging studies have been performed or documented at this visit.
+
+Assessment  
+1. Acute pleuritic‑type chest pain with exertional dyspnea, onset 5 days ago.  
+2. Concern for pulmonary embolism (PE) given recent major abdominal surgery (hysterectomy), smoking history, and the pleuritic nature of the pain.  
+3. Rule‑out differential includes:  
+   - Musculoskeletal chest wall pain (post‑surgical deconditioning)  
+   - Pericarditis  
+   - Acute coronary syndrome (atypical presentation)  
+   - Pulmonary infection (unlikely – no fever, cough, or infiltrates)  
+
+Plan  
+
+Diagnostic Studies  
+- Obtain a STAT D‑dimer assay.  
+- If D‑dimer is elevated, proceed with CT pulmonary angiography (CTPA) to evaluate for PE.  
+- Order a 12‑lead electrocardiogram (ECG) to assess for ischemic changes or pericarditis.  
+- Obtain a chest radiograph to evaluate for pneumonia, pneumothorax, or other pulmonary pathology.  
+- Send cardiac biomarkers (high‑sensitivity troponin) to exclude acute coronary syndrome.  
+
+Therapeutic Measures  
+- Continue acetaminophen and ibuprofen as needed for pain, but advise that NSAIDs should be used cautiously if renal function becomes compromised.  
+- Encourage gentle ambulation as tolerated to improve cardiopulmonary conditioning, while awaiting diagnostic results.  
+- Reinforce smoking cessation efforts; offer referral to a tobacco cessation program and discuss nicotine replacement options.  
+- Counsel regarding safe limits of alcohol intake (no more than one standard drink per day).  
+
+Disposition and Follow‑up  
+- The patient will remain in the outpatient setting pending test results.  
+- If imaging confirms PE, initiate anticoagulation per current guidelines (e.g., low‑molecular‑weight heparin bridging to an oral anticoagulant).  
+- If cardiac work‑up is positive, arrange cardiology consultation.  
+- Follow‑up visit in the primary care clinic within 48‑72 hours, or sooner if symptoms worsen (e.g., increasing chest pain, new cough, hemoptysis, syncope).  
+- Provide education on red‑flag symptoms that require immediate emergency department evaluation: sudden worsening chest pain, severe shortness of breath, palpitations, fainting, or hemoptysis.  
+
+Discharge Instructions  
+- Take acetaminophen 650 mg every 6 hours as needed for pain; limit ibuprofen to a maximum of 1,200 mg per day.  
+- Continue smoking reduction efforts; avoid all tobacco products if possible.  
+- Maintain adequate hydration and gentle activity as tolerated.  
+- Monitor for any new symptoms and seek urgent care if they occur.  
+
+Follow‑up Instructions  
+- Primary care appointment in 2 days for review of test results.  
+- Cardiology appointment to be scheduled if troponin or ECG suggests myocardial involvement.  
+- Pulmonology referral if CT confirms PE or other pulmonary pathology.  
+
+No additional information available.

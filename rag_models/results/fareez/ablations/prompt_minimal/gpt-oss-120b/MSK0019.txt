@@ -1,0 +1,172 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 04:23:07
+Time: 6.06s
+Tokens: 8,940 in / 2,410 out
+============================================================
+
+**Patient Information**  
+**Name:** Aida Vanesa Reichert **DOB:** 20 Oct 1968 (Age 57) **Sex:** Female **MRN:** 2418  
+**Address:** 995 Breitenberg Branch, Plymouth, MA 02360  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+“Pain in my right elbow that has been getting worse over the past three days.”
+
+### History of Present Illness (HPI)  
+- **Onset & Duration:** Symptoms began **≈ 3 days ago** while performing routine work tasks that involve gripping and wrist extension (e.g., using a screwdriver).  
+- **Location:** Lateral (outer) aspect of the right elbow; pain may radiate to the proximal forearm.  
+- **Quality:** Described as **achy** at rest, becoming **sharp** when the wrist is extended or the elbow is subjected to gripping/pulling forces.  
+- **Severity:** Patient rates current pain **6‑7/10**.  
+- **Timing/Pattern:** Pain is **persistent** throughout the day, but markedly **worsens with activity** (gripping, lifting, wrist extension) and **improves with rest**. No nocturnal pain reported.  
+- **Aggravating Factors:** Repetitive wrist extension, gripping, lifting tools, especially at work.  
+- **Alleviating Factors:** Rest, occasional over‑the‑counter ibuprofen (Advil) – provides modest, transient relief.  
+- **Associated Symptoms:** No numbness, tingling, weakness, swelling, erythema, fever, chills, weight loss, rash, or systemic complaints. No pain elsewhere.  
+- **Prior Episodes:** Patient denies any previous similar elbow pain.  
+
+### Review of Systems (pertinent)  
+- **Constitutional:** No fever, chills, weight loss.  
+- **Musculoskeletal:** Right lateral elbow pain as above; no other joint pain, swelling, or muscle weakness.  
+- **Neurologic:** No paresthesias or loss of sensation.  
+- **Cardiovascular / Respiratory / GI / GU / Dermatologic / ENT / Psychiatric:** All negative per interview.  
+
+### Past Medical History (PMH)  
+- **Essential hypertension** (diagnosed 1990) – controlled.  
+- **Obesity** (BMI ≈ 30).  
+- **Chronic kidney disease** (stages 1‑4 historically, progressed to **end‑stage renal disease**; status post renal transplant 2019).  
+- **Type 2 diabetes mellitus** with microalbuminuria and proteinuria (ongoing).  
+- **Anemia** (chronic).  
+- **History of tubal ligation** (2004).  
+- **Previous rotator‑cuff tendon sprain** (2020).  
+
+### Current Medications (per EMR)  
+- **Tacrolimus** (extended‑release) – immunosuppression for renal transplant.  
+- **Hydrochlorothiazide 25 mg PO daily** – antihypertensive.  
+- **Acetaminophen 325 mg PRN** (historical).  
+- **Other immunosuppressive agents** (e.g., epoetin alfa) listed in record but not actively taken for elbow complaint.  
+
+*Patient reports using only ibuprofen for the elbow pain today.*
+
+### Allergies  
+No known drug, food, or environmental allergies.
+
+### Family History  
+- **Father (age 60):** Knee and hip osteoarthritis.  
+- **Maternal aunt:** Uterine cancer.  
+- No other hereditary musculoskeletal or systemic diseases reported.
+
+### Social History  
+- **Living situation:** Resides with husband and 4‑year‑old daughter.  
+- **Occupation:** Not specified in visit; EMR indicates ongoing full‑time employment (likely involving manual tasks).  
+- **Tobacco:** Never smoker.  
+- **Alcohol:** Social; occasional wine/beer every few days.  
+- **Illicit drugs:** Denies marijuana or other recreational drug use.  
+- **Exercise:** No regular exercise reported.  
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (most recent recorded)  
+- **Heart Rate:** 80 bpm  
+- **Respiratory Rate:** 14 breaths/min  
+- **Blood Pressure:** Not recorded at this visit (historically managed).  
+- **Weight/Height:** Height 164.1 cm; BMI ≈ 30.0 (obese).  
+
+### Physical Examination  
+
+**General:** Alert, well‑appearing, in no acute distress.  
+
+**Right Upper Extremity – Inspection:**  
+- No visible erythema, swelling, deformity, atrophy, or skin changes compared with left side.  
+
+**Palpation:**  
+- **Lateral elbow (origin of extensor carpi radialis brevis):** Tenderness to deep pressure; reproduces the patient’s described sharp pain.  
+- **Medial elbow:** Minimal tenderness.  
+- **Biceps/triceps tendons:** No tenderness.  
+- **Forearm extensors (lateral forearm):** Tenderness proximal to the lateral epicondyle.  
+- **Forearm flexors (medial forearm):** Nontender.  
+
+**Range of Motion & Strength:**  
+- **Elbow extension:** Full, painless.  
+- **Wrist extension (full stretch):** Mild soreness, sharp pain at lateral elbow; pain increases with resisted wrist extension.  
+- **Wrist flexion:** Slight discomfort, less than extension.  
+- **Grip strength:** Patient reports no true weakness but experiences pain when gripping a pencil tightly and lifting the wrist.  
+
+**Neurovascular:** Sensation intact to light touch; radial, ulnar, and median nerve distributions normal. Pulses palpable and symmetric.  
+
+### Laboratory Data (most recent)  
+- **Serum potassium:** 3.77 mmol/L (low‑normal).  
+- **Serum CO₂ (bicarbonate):** 27.49 mmol/L (within reference).  
+- **Serum calcium:** 8.71 mg/dL (low‑normal).  
+- **Complete blood count:** Hgb ≈ 38.6 % Hct, RBC ≈ 3.96 ×10⁶/µL, platelets normal.  
+- **Urine studies:** No hematuria, protein, glucose, ketones, or bilirubin detected.  
+- **PHQ‑2:** Score 0 (no depressive symptoms).  
+
+*These labs reflect the patient’s chronic renal disease/transplant status and are not directly related to the current elbow complaint.*
+
+---
+
+## ASSESSMENT  
+
+1. **Lateral epicondylitis (tennis elbow) – right elbow**  
+   - Classic presentation: lateral elbow pain exacerbated by wrist extension and gripping, tenderness over the extensor tendon origin, no systemic signs.  
+2. **Chronic kidney disease – post‑renal transplant** (stable on tacrolimus).  
+3. **Essential hypertension** – controlled on hydrochlorothiazide.  
+4. **Type 2 diabetes mellitus** – ongoing management.  
+5. **Obesity (BMI ≈ 30).**  
+
+*The elbow problem is the primary acute issue; chronic comorbidities are stable.*
+
+---
+
+## PLAN  
+
+### 1. **Conservative Management of Lateral Epicondylitis**  
+- **Activity Modification:**  
+  - Limit repetitive wrist‑extension and gripping activities at work; take frequent short breaks.  
+  - Use ergonomic tools (e.g., padded screwdriver handles) when possible.  
+- **Pharmacologic Therapy:**  
+  - Continue **ibuprofen 400‑600 mg PO q6‑8 h PRN** with food, provided renal function permits (monitor serum creatinine if dose escalated).  
+  - If NSAIDs are contraindicated or insufficient, consider **acetaminophen 500‑1000 mg PO q6 h PRN**.  
+- **Physical Therapy:**  
+  - Refer to outpatient PT for a **4‑6 week program** focusing on eccentric strengthening of the wrist extensors, stretching of the forearm extensors, and gradual return to activity.  
+- **Bracing/Support:**  
+  - Trial of a **counter‑force elbow strap** worn during activities that provoke pain.  
+- **Adjunctive Measures:**  
+  - Apply **ice** to the lateral elbow for 15 min, 3‑4 times daily during acute exacerbations.  
+  - Consider **topical NSAID** (diclofenac gel) if oral NSAIDs are limited by renal status.  
+
+### 2. **Follow‑up & Monitoring**  
+- **Return Visit:** In **2 weeks** to assess pain control, functional improvement, and tolerance of NSAIDs.  
+- **If no improvement or worsening** after 6‑8 weeks of conservative therapy, discuss **corticosteroid injection** or **platelet‑rich plasma** therapy, and consider imaging (ultrasound or MRI) to rule out alternative pathology (e.g., partial tendon tear).  
+- **Surgical Consultation:** Reserved for refractory cases persisting > 6 months despite exhaustive non‑operative measures.  
+
+### 3. **Management of Chronic Conditions**  
+- **Renal transplant & CKD:** Continue tacrolimus as prescribed; monitor tacrolimus trough levels and renal function per transplant protocol.  
+- **Hypertension:** Verify blood pressure at next primary‑care visit; adjust hydrochlorothiazide if needed.  
+- **Diabetes:** Review HbA1c at upcoming endocrine follow‑up; maintain current regimen.  
+- **Obesity:** Counsel on weight‑loss strategies (dietary counseling, low‑impact exercise) as part of overall health maintenance.  
+
+### 4. **Patient Education**  
+- Discuss the nature of lateral epicondylitis, expected timeline (most improve within 6‑12 weeks with therapy), and the importance of **avoiding aggravating motions**.  
+- Provide written handouts on **home stretching exercises** and **proper ergonomics** for tool use.  
+- Emphasize adherence to **immunosuppressive regimen** and routine lab monitoring for transplant health.  
+
+### 5. **Prescriptions & Orders**  
+- **Ibuprofen 600 mg PO tablet** – dispense #30, PRN, with instructions to take with food.  
+- **Physical therapy referral** – “Upper extremity – lateral epicondylitis protocol.”  
+- **Elastic counter‑force brace** – order for right elbow, size appropriate.  
+
+### 6. **Safety Net**  
+- Instruct patient to call the clinic if she experiences **increasing swelling, redness, fever, night pain, numbness/tingling, or sudden loss of strength**.  
+
+---
+
+**Signature:**  
+Dr. ______________________, MD  
+Date: ______________________   (Encounter documented 25 July 2021)

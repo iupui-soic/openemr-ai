@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:14:37
+Time: 4.01s
+Tokens: 9,189 in / 1,126 out
+============================================================
+
+Patient Information  
+The patient is a 25‑year‑old individual who is currently a full‑time engineering student at Western University and works part‑time as a post‑man. The patient resides in a house with her mother. No date of birth, gender, or specific contact information was provided.
+
+Chief Complaint  
+Sharp, intermittent chest pain that began three days ago, with the patient expressing concern for a possible heart attack.
+
+History of Present Illness  
+The patient reports the onset of a sharp, localized pain over the central chest region (“right over my heart”) three days prior to the visit. The pain is described as sharp, lasts only a few seconds per episode, and then resolves spontaneously. Episodes occur intermittently and are not constant. The pain is aggravated by coughing and by lying down, and is partially relieved when the patient leans forward. The patient notes occasional radiation of the discomfort to the neck. On a numeric pain scale, the severity is rated as 6 out of 10. No associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or recent injuries were reported. The patient tried acetaminophen (Tylenol) once yesterday, which provided some relief. The patient experienced a flu‑like illness one week ago, characterized by fever, runny nose, cough, and fatigue, but these symptoms have resolved. The patient’s father suffered a myocardial infarction and died two weeks ago, which heightens her anxiety about a cardiac cause.
+
+Review of Systems  
+- Constitutional: No fever, chills, weight loss, or night sweats.  
+- Cardiovascular: Chest pain present; denies palpitations, orthopnea, or edema.  
+- Respiratory: No current cough, dyspnea, or wheezing; recent resolved upper respiratory infection.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+- Neurologic: No dizziness, syncope, weakness, or numbness.  
+- Musculoskeletal: No recent trauma or musculoskeletal injury.  
+- Psychiatric: Reports anxiety related to recent family loss; no depressive symptoms noted.  
+- Others: No headaches, visual changes, or urinary symptoms.
+
+Past Medical History  
+The patient reports being “pretty healthy” with no known chronic medical conditions. No history of hypertension, diabetes, coronary artery disease, or other illnesses was disclosed.
+
+Surgical History  
+The patient reports no prior surgeries.
+
+Social History  
+- Occupation: Engineering student; part‑time employment as a post‑man.  
+- Living situation: Resides with mother in a house.  
+- Alcohol: Consumes alcohol occasionally, typically one to two drinks on weekends.  
+- Tobacco: Denies any use.  
+- Illicit drugs: Denies use of marijuana, cocaine, or other recreational substances.  
+- Smoking: Denies current or past smoking.  
+
+Family History  
+- Father: Experienced an acute myocardial infarction two weeks ago and subsequently died.  
+- Mother, siblings, and other relatives: No reported cardiac disease, cancer, diabetes, or other significant conditions.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Current Medications  
+- Acetaminophen (Tylenol) – taken intermittently for pain relief; last dose taken yesterday.
+
+Vital Signs  
+No vital signs were documented during this encounter.
+
+Physical Examination  
+No physical examination findings were recorded in the transcript.
+
+Laboratory and Imaging Studies  
+No laboratory results or imaging studies have been obtained at the time of this visit. The provider indicated plans to order an electrocardiogram (ECG) and appropriate cardiac biomarkers.
+
+Assessment  
+1. Acute, intermittent, sharp chest pain – etiology unclear; differential includes musculoskeletal (costochondritis or pleuritic), pericarditis, and cardiac ischemia given strong family history.  
+2. Recent upper respiratory infection – may be contributing to pleuritic or cough‑related chest discomfort.  
+3. Anxiety related to recent familial loss and concern for myocardial infarction.
+
+Plan  
+- Diagnostic testing: Obtain a 12‑lead ECG immediately; send cardiac enzymes (troponin I/T) and consider a basic metabolic panel, CBC, and inflammatory markers as indicated.  
+- Imaging: Consider a chest radiograph if respiratory findings emerge or if the ECG is nondiagnostic.  
+- Medications: Continue acetaminophen as needed for pain; advise against NSAIDs until cardiac status is clarified. If pericarditis is suspected, low‑dose NSAIDs may be initiated after cardiac evaluation.  
+- Activity: Advise the patient to avoid strenuous activity and heavy lifting until cardiac causes are excluded. Encourage gentle ambulation as tolerated.  
+- Education: Discuss warning signs that require urgent care, including worsening chest pain, shortness of breath, diaphoresis, syncope, or new palpitations. Reinforce the importance of seeking emergency care if symptoms become severe or prolonged.  
+- Follow‑up: Schedule a follow‑up visit within 48‑72 hours to review test results and reassess symptoms. If the ECG or troponin results are abnormal, arrange prompt cardiology referral.  
+- Psychosocial support: Acknowledge the patient’s anxiety related to her father’s recent death; offer resources for bereavement counseling and consider a brief screening for anxiety if symptoms persist.  
+
+No additional information is available at this time.

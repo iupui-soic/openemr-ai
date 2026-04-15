@@ -1,0 +1,133 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:21:01
+Time: 5.98s
+Tokens: 13,299 in / 2,366 out
+============================================================
+
+**Patient Information**  
+**Name:** Aaron Feeney **DOB:** 12 May 1915 (Age ≈ 108 y) **Sex:** Male **MRN:** 48 **Address:** 656 Murphy Stravenue, Walpole, MA 02081 **Visit Date/Time:** 08 Sep 2024, 07:39 – 07:54 ED  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+“Cough that’s been bothering me for the past five days.”
+
+### History of Present Illness  
+Mr. Feeney reports a **5‑day history of a dry, non‑productive cough** that has progressively worsened and is now **disturbing his sleep**. He describes associated **feverish sensations, excessive sweating, and a single episode of night‑sweating that soaked his shirt**. He notes **sore throat pain that began after coughing** and **new‑onset loss of smell** (starting this morning), although his taste remains intact. He denies any nausea, vomiting, chills, or weight loss (in fact, he feels he has gained 5–10 lb). He has not measured his temperature.  
+
+He denies any clear triggers that make the cough better or worse; the cough is **persistent throughout the day**. He reports **mild chest discomfort localized to the throat** after coughing bouts. He has not traveled recently and is uncertain about potential exposures at the grocery store where he works.  
+
+### Review of Systems  
+
+| System | Positive Findings | Negative Findings |
+|--------|-------------------|-------------------|
+| **Constitutional** | Fever‑ish feeling, night sweats, fatigue, feeling “hot”, recent weight gain | No chills, no documented fever, no recent weight loss |
+| **Respiratory** | Dry cough 5 days, sore throat, new anosmia | No dyspnea, no wheezing, no sputum production, no chest pain other than throat discomfort |
+| **Cardiovascular** | None reported | No chest pain, palpitations, or edema |
+| **Gastrointestinal** | None reported | No nausea, vomiting, abdominal pain, diarrhea |
+| **ENT** | Anosmia (loss of smell) | Taste normal |
+| **Neurologic** | None reported | No headache, dizziness, focal deficits |
+| **Dermatologic** | Night‑sweat soaked shirt | No rashes |
+| **Psychiatric** | None reported | No anxiety or depression complaints (PHQ‑2 = 1, GAD‑7 = 2) |
+| **Other** | None |
+
+### Allergies  
+- Environmental: pollen (seasonal).  
+- No known drug allergies.
+
+### Past Medical History  
+- **Essential hypertension** (on ramipril).  
+- **Type 2 diabetes mellitus** (on metformin).  
+- **Chronic kidney disease – stage 4** (ongoing).  
+- **End‑stage renal disease** (awaiting transplant).  
+- **Metabolic syndrome, obesity (BMI ≈ 31.5)**.  
+- **Hyperlipidemia**.  
+- **Atrial fibrillation**.  
+- **Ischemic heart disease, prior CABG**.  
+- **Prostate neoplasm (carcinoma in situ)**.  
+- **Osteoporosis**, **hand osteoarthritis**.  
+- **Anemia**, **micro‑/proteinuria** secondary to diabetic nephropathy.  
+
+### Surgical History  
+- **Cholecystectomy** (≈ 10 years ago).  
+
+### Social History  
+- **Occupation:** Grocery‑store employee (full‑time).  
+- **Living situation:** Lives with wife and two school‑aged children (both currently home‑schooling).  
+- **Tobacco:** Never smoker.  
+- **Alcohol:** 3–4 beers on weekends (≈ 3–4 drinks/week).  
+- **Illicit drugs:** Denies use.  
+- **Exercise:** Not reported.  
+
+### Family History  
+- **Brother:** Asthma.  
+- **Mother:** Asthma.  
+- No other significant respiratory or cardiac disease reported.
+
+### Current Medications (per patient report & EMR)  
+- **Ramipril 10 mg PO daily** (HTN) – documented as lisinopril in EMR, assumed equivalent.  
+- **Metformin 500 mg PO BID** (type 2 DM).  
+- **Vitamin D supplement** (dose not specified).  
+- **Chronic‑disease regimen (per EMR):** insulin (isophane/regular), tacrolimus, simvastatin, amlodipine, alendronate, hydrochlorothiazide, digoxin, verapamil, warfarin, and others related to CKD/ESRD. (All listed as “active” in the record.)  
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (ED triage)  
+- **Heart Rate:** 88 bpm  
+- **Respiratory Rate:** 13 breaths/min  
+- **SpO₂:** Not documented  
+- **Temperature:** Not measured (patient reports feeling “hot”)  
+- **Weight:** Not recorded (BMI from prior data = 31.53 kg/m²)  
+
+### Physical Examination  
+No detailed physical exam documented in the encounter note.  
+
+### Laboratory Data (obtained during this visit)  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| **CBC‑derived values** – not listed (no WBC, Hgb, etc.) | – | – |
+| **Electrolytes** | Na = 143.9 mmol/L; K = 4.74 mmol/L; Cl = 103.8 mmol/L; CO₂ = 25.7 mmol/L | – |
+| **Renal panel** | Creatinine = 0.39 mg/dL (likely reflects dialysis‑adjusted value); BUN = 17.3 mg/dL; eGFR not provided | – |
+| **Glucose** | 70.6 mg/dL (fasting) and 85.8 mg/dL (random) | – |
+| **Liver enzymes** | AST = 36.8 U/L; ALP = 79.5 U/L | – |
+| **Calcium** | 9.98 mg/dL | – |
+| **Urinalysis (strip)** | Protein = 280 mg/dL (elevated); other parameters not recorded | – |
+| **Mental health screens** | PHQ‑2 = 1 (low risk); GAD‑7 = 2 (low anxiety) | – |
+| **AUDIT‑C** | 1 (low‑risk alcohol use) | – |
+| **HARK** | 0 (no intimate partner violence disclosed) | – |
+
+No imaging (CXR/CT) or microbiology (viral panel, COVID‑19 PCR) results are available in the record at this time.
+
+---
+
+## ASSESSMENT  
+
+1. **Acute bronchitis (viral‑like upper respiratory infection)** – 5‑day history of dry cough, sore throat, feverish sensations, anosmia, and night sweats. The presentation is consistent with an infectious etiology, most likely viral; COVID‑19 is a differential given anosmia and recent community exposure.  
+2. **Possible COVID‑19 infection – pending test** – The loss of smell and recent symptom onset warrant SARS‑CoV‑2 testing.  
+3. **Chronic comorbidities** – Hypertension, type 2 diabetes, CKD stage 4/ESRD, atrial fibrillation, ischemic heart disease, hyperlipidemia, obesity. These increase risk for complications from respiratory infections.  
+4. **Night‑sweats** – Likely related to the acute infection; no evidence of malignancy or other systemic process at this time.  
+5. **Environmental pollen allergy** – May contribute to throat irritation but does not explain the acute systemic symptoms.  
+
+---
+
+## PLAN  
+
+| Domain | Details |
+|--------|---------|
+| **Diagnostics** | • Obtain **nasopharyngeal swab for SARS‑CoV‑2 PCR** (and optional multiplex respiratory viral panel). <br>• No immediate chest radiograph ordered given low suspicion for bacterial pneumonia and lack of dyspnea or focal findings. |
+| **Therapeutic** | • **Symptomatic management**: Acetaminophen 650 mg PO q6h PRN for fever/aches (patient already has OTC acetaminophen). <br>• **Cough suppression**: Dextromethorphan‑containing OTC cough syrup if needed (ensure no drug interactions with current meds). <br>• **Hydration and rest**. |
+| **Isolation/Precautions** | • Instruct patient and household members to **self‑isolate for 14 days** from symptom onset pending COVID test result. <br>• Advise use of masks at home, frequent hand hygiene, and avoidance of close contact with vulnerable individuals. |
+| **Monitoring** | • Advise to **monitor temperature** (use home thermometer) and seek care if temperature > 38.5 °C, worsening dyspnea, chest pain, confusion, or inability to maintain hydration. |
+| **Chronic Disease Management** | • Continue **ramipril, metformin, vitamin D**, and all chronic‑disease medications as prescribed. <br>• Ensure **dialysis schedule** is maintained; no medication changes are needed now. |
+| **Follow‑up** | • **Tele‑medicine or phone follow‑up** in 48‑72 hours to review COVID test result and symptom trajectory. <br>• If test positive, follow local public‑health guidance; if negative and symptoms persist > 10 days or worsen, consider repeat evaluation and possible chest imaging. |
+| **Patient Education** | • Discuss typical course of viral bronchitis (7‑10 days). <br>• Reinforce signs that require urgent care (high fever, worsening shortness of breath, chest pain, altered mental status). <br>• Review proper inhaler technique if any bronchodilator is prescribed in the future. |
+| **Disposition** | • Discharged home after swab obtained. No admission required at this time. |
+
+**Signature:** Dr. External Provider (Attending) – Emergency Department, 08 Sep 2024.

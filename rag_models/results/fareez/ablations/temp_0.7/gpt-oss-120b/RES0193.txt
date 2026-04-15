@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-120b
+Patient: RES0193
+Detected Disease: Asthma
+Generated: 2026-04-14 04:12:49
+Time: 4.04s
+Tokens: 6,591 in / 1,320 out
+============================================================
+
+Patient Information  
+Name: Not provided  
+Medical Record Number: Not provided  
+Date of Birth / Age: Approximately 6 years old (based on parent’s statement)  
+Sex: Male  
+Encounter Date: 2024‑03‑02 (consultation)  
+Attending Provider: Dr. External Provider  
+
+Chief Complaint  
+The patient’s mother presents on behalf of her 6‑year‑old son with a several‑month history of intermittent dry cough, wheezing, and shortness of breath, particularly at night and after exertion.
+
+History of Present Illness  
+The mother reports that the child’s symptoms began several months ago and occur two to three times per week. The episodes typically start with a dry, non‑productive cough that is most noticeable at night. Following physical activity, such as play at school or at a friend’s house, the child frequently develops a high‑pitched whistling wheeze on expiration and feels short of breath. The cough and wheeze may persist for 30–60 minutes after exposure and then resolve. He has not experienced associated fever, chills, sore throat, nasal congestion, rhinorrhea, or recent upper‑respiratory infection. No dizziness, fatigue, irritability, or changes in behavior have been noted. He has not required any medication for these episodes and has not tried any home remedies. The mother denies recent travel, sick contacts, nausea, vomiting, diarrhea, constipation, or changes in appetite or weight; growth has been appropriate. The child has missed a few days of school in the past month due to nighttime symptoms and poor sleep. Seasonal variation is suggested, with the mother noting that the child occasionally has itchy eyes and a runny nose in the fall, suggestive of environmental allergies. Exposure to a cat at a friend’s house has been associated with transient worsening of symptoms.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue.  
+Respiratory: Intermittent dry cough, wheezing, shortness of breath, especially nocturnal and post‑exercise; no sputum production, hemoptysis, or recent infections.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+ENT/Allergic: Occasional itchy eyes and runny nose in the fall; no chronic sinusitis or allergic rhinitis diagnosed.  
+Neurologic: No dizziness or headaches.  
+Dermatologic: No rashes.  
+Psychiatric: No anxiety or mood changes reported.  
+
+Allergies  
+The mother reports no known drug, food, or environmental allergies for the child.  
+
+Past Medical History  
+- Bronchiolitis at age 2, described as a viral infection with cough and wheeze.  
+- No chronic illnesses diagnosed to date.  
+
+Surgical History  
+No prior surgeries.  
+
+Social History  
+The child lives with his mother, father (implied by “my wife”), and mother’s partner in a house. No tobacco, alcohol, or illicit drug use in the household. No pets at home; occasional exposure to a cat at a friend’s house. The family reports a carpeted basement used as a playroom. No recent travel.  
+
+Family History  
+- Mother has a longstanding diagnosis of asthma, managed with daily inhaler therapy.  
+- No other significant pulmonary, cardiac, or systemic illnesses reported in immediate family.  
+
+Current Medications  
+The child is not currently taking any prescription or over‑the‑counter medications.  
+
+Objective  
+
+Vital Signs  
+No vital signs documented during this encounter.  
+
+Physical Examination  
+A complete physical examination has not yet been performed; the provider plans to assess respiratory effort, auscultate lung fields, and evaluate for signs of allergic disease during the visit.  
+
+Laboratory Data  
+No laboratory studies have been ordered or resulted at this time.  
+
+Imaging  
+No imaging studies have been performed.  
+
+Assessment  
+The clinical picture is most consistent with intermittent asthma, likely triggered by exercise, nocturnal airway hyper‑reactivity, and possible environmental allergens (cat dander, seasonal pollen). The family history of maternal asthma further supports this impression. Differential considerations include viral‑induced reactive airway disease and early‑onset allergic rhinitis with associated bronchospasm.  
+
+Plan  
+
+1. Physical Examination – Perform a focused respiratory exam, including auscultation for wheezes, assessment of work of breathing, and evaluation of nasal mucosa and conjunctiva.  
+
+2. Pulmonary Function Testing – Arrange age‑appropriate spirometry with bronchodilator responsiveness testing, recognizing that cooperation may be variable in a 6‑year‑old.  
+
+3. Allergy Evaluation – Consider referral for allergy skin testing or specific IgE testing to common aeroallergens (cat dander, dust mites, pollens) given seasonal symptoms and cat exposure.  
+
+4. Pharmacologic Trial  
+   a. Rescue Medication – Prescribe an albuterol inhaler (short‑acting β2‑agonist) with spacer for use at the onset of wheeze or exercise‑induced symptoms.  
+   b. Controller Therapy – If symptoms persist or spirometry confirms reversible airway obstruction, initiate a low‑dose inhaled corticosteroid (e.g., budesonide) with a spacer, and provide education on daily use.  
+
+5. Environmental Control – Advise minimizing exposure to known triggers: keep cat exposure brief, use high‑efficiency particulate air (HEPA) filters, maintain regular cleaning of carpeted areas, and consider dust‑mite–impermeable bedding.  
+
+6. Education – Counsel the mother on asthma action plan, proper inhaler technique, and recognition of worsening symptoms that would warrant urgent medical attention.  
+
+7. Follow‑up – Schedule a follow‑up visit in 2–3 weeks to review spirometry results, response to rescue inhaler, and to determine need for controller therapy. Earlier return if symptoms become more frequent, severe, or if nocturnal awakenings increase.  
+
+8. Documentation – Document all findings, orders, and patient education in the medical record.  
+
+The plan will be revisited after objective testing and response to initial therapy to confirm the diagnosis and tailor long‑term management.

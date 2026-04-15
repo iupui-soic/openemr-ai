@@ -1,0 +1,106 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:06:34
+Time: 5.04s
+Tokens: 8,409 in / 1,646 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn DOB: 16 April 1965 Sex: Male Medical Record #: 2046 Address: 266 Heller Park Apt 46, Hingham, MA 02043  
+
+Chief Complaint  
+Right‑upper‑quadrant abdominal pain.
+
+History of Present Illness  
+Mr. McGlynn presents to the Emergency Department with a three‑day history of sharp pain localized to the right upper quadrant (RUQ) of the abdomen, just inferior to the lower ribs. The pain began approximately one hour after a midday meal three days ago and has been progressively worsening. He reports that the discomfort intensified markedly about three to four hours prior to arrival, describing the current intensity as 8/10 on a numeric rating scale. The pain is constant, non‑radiating, and is described as “sharp.” He denies any alleviating factors. Over the past few days he has experienced mild nausea but has not vomited. He notes decreased appetite today and feels unusually fatigued, reporting that the pain limits his mobility. He has not noticed any skin changes, rashes, fever, chills, dysuria, hematuria, changes in bowel habits, diarrhea, constipation, or hematochezia. He has not traveled recently and has not been exposed to anyone who is ill.
+
+Review of Systems  
+Constitutional: Positive for RUQ pain, nausea, decreased appetite, fatigue; negative for fever, chills, weight loss.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or edema.  
+Gastrointestinal: Positive for RUQ pain and nausea; negative for vomiting, hematemesis, melena, hematochezia, diarrhea, constipation, dyspepsia, or change in stool color.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Skin: No rashes or lesions.  
+Neurologic: No headache, dizziness, or syncope.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+The patient reports no chronic medical problems. The electronic health record, however, documents a history of essential hypertension, chronic kidney disease (stages 1‑4), a prior kidney transplant with subsequent failure and rejection, type 2 diabetes mellitus with microalbuminuria, osteoporosis, gastroesophageal reflux disease, and anemia. He also has a longstanding diagnosis of cerebral palsy with associated spasticity and intellectual disability.  
+
+Surgical History  
+No prior abdominal surgeries. The only surgeries recorded are obstetric procedures related to the births of his children.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications (home)  
+- Tacrolimus (extended‑release) 5 mg daily (immunosuppression)  
+- Tacrolimus 1 mg daily (extended‑release)  
+- Acetaminophen 325 mg as needed for pain  
+- Hydrochlorothiazide 25 mg daily  
+- Amlodipine 2.5 mg daily  
+- Glycopyrrolate 1.5 mg daily  
+- Over‑the‑counter antacids as needed for heartburn (used a few times per month)  
+
+Social History  
+Employed as a bank consultant. Lives with his partner and two children; home environment is stable and supportive. Consumes 1–2 glasses of wine each evening; does not feel a need to cut down, does not experience cravings or guilt related to alcohol use. Denies tobacco use and recreational drug use. No recent travel.  
+
+Family History  
+Mother has a history of gallstones. Father died of a stroke in his 60s. No other significant familial cardiac or gastrointestinal disease reported.  
+
+Vital Signs (recorded on 30 May 2024)  
+Heart rate: 94 beats/minute  
+Respiratory rate: 13 breaths/minute  
+Blood pressure: Not recorded  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Height: 177.7 cm (5 ft 10 in)  
+Weight: Not recorded  
+Body mass index: 27.27 kg/m²  
+
+Physical Examination  
+No information available.  
+
+Laboratory Data (most recent values on record)  
+- White blood cell count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL; Hematocrit: 40.1 % (normocytic, normochromic)  
+- Platelets: 351 ×10³/µL (normal)  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL 168 mg/dL, HDL 58 mg/dL, Triglycerides 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- Fall risk (Morse): 105 (moderate risk)  
+
+Imaging  
+No imaging studies performed during this encounter.  
+
+Assessment  
+1. Acute right‑upper‑quadrant abdominal pain – most likely biliary colic or early acute cholecystitis given the location, post‑prandial onset, and associated nausea.  
+2. Known chronic medical conditions (essential hypertension, CKD, prior kidney transplant, type 2 diabetes) that may influence diagnostic and therapeutic decisions.  
+3. Moderate alcohol use (1–2 glasses wine nightly).  
+
+Plan  
+Diagnostic Work‑up  
+- Obtain stat abdominal ultrasound to evaluate gallbladder for stones, wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- Order basic metabolic panel, liver function tests (AST, ALT, ALP, total bilirubin), and serum lipase to assess for hepatobiliary or pancreatic pathology.  
+- Repeat CBC if clinically indicated.  
+
+Therapeutic Measures  
+- Initiate intravenous analgesia with morphine 2 mg IV push, repeat q30 min PRN for pain not controlled by oral acetaminophen.  
+- Offer antiemetic therapy (ondansetron 4 mg IV) for nausea.  
+- Keep patient NPO until ultrasound results are available.  
+- Continue home antihypertensive regimen; monitor blood pressure when feasible.  
+
+Disposition  
+- If ultrasound confirms uncomplicated biliary colic without evidence of acute cholecystitis, discharge with outpatient follow‑up to primary care or gastroenterology within 7 days for further evaluation and possible surgical referral.  
+- Provide discharge instructions: low‑fat diet, avoid large meals, use acetaminophen for pain as needed, seek immediate care if fever, worsening pain, vomiting, jaundice, or dark urine develop.  
+- Educate regarding signs of complications (e.g., fever > 38 °C, persistent vomiting, scleral icterus).  
+
+Follow‑up  
+- Primary care physician within 5‑7 days.  
+- Gastroenterology or surgery referral for definitive management of suspected gallstone disease.  
+
+Disposition Summary  
+The patient was evaluated in the Emergency Department, received analgesia and antiemetic medication, and was discharged home with a clear plan for outpatient imaging and specialist follow‑up. No immediate surgical intervention was indicated at this time.  
+
+Prepared by: _______________________   Date: 30 May 2024   Attending: Dr. External Provider (None)   Note ID: 381.

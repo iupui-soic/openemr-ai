@@ -1,0 +1,129 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 03:52:31
+Time: 5.39s
+Tokens: 9,126 in / 1,784 out
+============================================================
+
+Patient Information:  
+Name: Aida Vanesa Reichert  
+Date of Birth: October 20, 1968 (Age 57)  
+Sex: Female  
+Address: 995 Breitenberg Branch, Plymouth, Massachusetts 02360  
+
+Chief Complaint:  
+Right elbow pain of three days’ duration.
+
+History of Present Illness:  
+The patient reports the onset of right elbow discomfort three days ago. The pain has been progressively worsening and is described as achy at rest, becoming sharp when the wrist is extended. The discomfort is localized to the lateral (outside) aspect of the elbow and is reproduced on palpation of the lateral epicondylar region and the forearm extensor musculature. Activities that involve gripping, lifting, or using a screwdriver markedly increase the pain, while rest provides partial relief. Over-the-counter ibuprofen (Advil) provided modest improvement but the pain recurred. The patient rates the pain as 6‑7 out of 10. She denies any prior episodes of similar pain, numbness, tingling, weakness, or systemic symptoms such as fever, chills, weight loss, or gastrointestinal upset.
+
+Review of Systems:  
+Constitutional – No fever, chills, weight loss, or fatigue.  
+Musculoskeletal – Positive for right lateral elbow pain; no pain elsewhere, no swelling, no deformity, no joint instability.  
+Neurologic – No numbness, tingling, or weakness reported.  
+Cardiovascular – No chest pain, palpitations, or dyspnea.  
+Respiratory – No cough, shortness of breath, or wheezing.  
+Gastrointestinal – No nausea, vomiting, or bowel habit changes.  
+Genitourinary – No dysuria, hematuria, or voiding changes.  
+Dermatologic – No rashes or skin changes.  
+Psychiatric – No reported anxiety or depression at this visit.  
+
+Past Medical History:  
+- Essential hypertension (diagnosed 1990, ongoing)  
+- Obesity (BMI 30.02)  
+- Chronic kidney disease (historical stages 1‑4, currently stage 1)  
+- History of renal transplant (transplanted December 2019, ongoing)  
+- Microalbuminuria and proteinuria secondary to type 2 diabetes mellitus (ongoing)  
+- Anemia (ongoing)  
+- Prior history of tubal ligation  
+- History of severe anxiety/panic (historical)  
+
+Surgical History:  
+- Tubal ligation (2004)  
+- Renal transplant (December 2019)  
+
+Social History:  
+The patient lives with her wife and a four‑year‑old daughter. She does not smoke tobacco or use recreational drugs, including marijuana. Alcohol consumption is occasional, limited to wine or beer every few days. She reports no regular exercise.  
+
+Family History:  
+Father, age 60, experiences knee and hip pain.  
+Maternal aunt had uterine cancer.  
+
+Allergies:  
+No known drug, food, or environmental allergies.  
+
+Current Medications (as recorded in the electronic health record):  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression)  
+- Tacrolimus injection 5 mg/mL (as needed)  
+- Hydrochlorothiazide 25 mg daily (for hypertension)  
+- Acetaminophen 325 mg as needed (occasional)  
+- Epoetin alfa (dose not specified)  
+- Sodium fluoride oral gel (dental use)  
+
+The patient reported using ibuprofen for the elbow pain but did not list any other home medications during the interview.
+
+Vital Signs (most recent recorded values):  
+Heart Rate: 80 beats per minute  
+Respiratory Rate: 14 breaths per minute  
+Height: 164.1 cm (5 ft 4½ in)  
+Weight: Not documented  
+Body Mass Index: 30.02 (obese)  
+Blood Pressure: Not documented at this visit  
+Temperature: Not documented  
+SpO₂: Not documented  
+
+Physical Examination:  
+General – No acute distress.  
+Inspection of the right upper extremity revealed no erythema, swelling, or obvious deformity compared with the left side.  
+Palpation – Tenderness over the lateral epicondyle of the right elbow and the distal forearm extensor muscle mass; mild discomfort on deep pressure of the lateral elbow. The medial elbow was relatively non‑tender.  
+Range of Motion – Full elbow flexion and extension. Wrist extension provoked a sharp, localized pain on the lateral side; wrist flexion produced only mild discomfort. Grip strength was intact, though the patient reported pain with maximal effort.  
+Neurovascular – No sensory deficits, no motor weakness, distal pulses present and symmetric.  
+
+Laboratory Data (most recent values):  
+- Carbon dioxide, total: 27.49 mmol/L (reference range not provided)  
+- Potassium: 3.77 mmol/L  
+- Calcium: 8.71 mg/dL  
+- Urea nitrogen: 10.96 mg/dL  
+- Hematocrit: 38.58 %  
+- Erythrocytes: 3.96 ×10⁶/µL  
+- Platelet distribution width: 438.83 fL  
+- Red cell distribution width: 41.42 fL  
+- Mean corpuscular hemoglobin: 30.75 pg  
+- PH of urine: 5.02  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+
+All other laboratory parameters were either not reported or marked as unknown.
+
+Assessment:  
+1. Lateral epicondylitis (tennis elbow) of the right elbow – acute, activity‑related overuse injury of the forearm extensors.  
+2. Essential hypertension, controlled on hydrochlorothiazide.  
+3. Chronic kidney disease, stage 1, post‑renal transplant, maintained on tacrolimus.  
+4. Obesity (BMI 30.02).  
+5. Type 2 diabetes mellitus with microalbuminuria/proteinuria (ongoing).  
+
+Plan:  
+- Conservative management of lateral epicondylitis:  
+  • Activity modification – limit repetitive gripping and wrist extension; incorporate frequent breaks at work when using tools.  
+  • NSAID therapy – continue ibuprofen as needed, respecting renal function; consider acetaminophen if NSAIDs are contraindicated.  
+  • Apply a counter‑force brace or elbow strap during activities that provoke symptoms.  
+  • Refer to physical therapy for a program focusing on eccentric strengthening of the wrist extensors, stretching, and modality use (ice, ultrasound).  
+  • Educate the patient on proper ergonomics and technique when using hand tools.  
+- Follow‑up in 4‑6 weeks to assess symptom progression. If pain remains >5/10 or functional limitation persists, consider corticosteroid injection into the common extensor tendon origin or platelet‑rich plasma therapy.  
+- Continue current immunosuppressive regimen and antihypertensive therapy; monitor renal function and serum tacrolimus levels per transplant protocol.  
+- Lifestyle counseling: initiate a low‑impact exercise program aimed at weight reduction, and maintain moderate alcohol consumption.  
+- No additional imaging is required at this time given classic clinical presentation; obtain plain radiographs only if there is concern for alternative pathology (e.g., fracture, osteoarthritis).  
+- Patient instructed to return sooner if she develops new numbness, swelling, fever, or worsening pain unresponsive to the above measures.  
+
+Follow‑up Instructions:  
+- Return to the clinic in 4–6 weeks for reassessment of elbow symptoms.  
+- Contact the transplant clinic as scheduled for routine immunosuppression monitoring.  
+
+Discharge Instructions:  
+- Rest the affected arm and avoid heavy lifting.  
+- Apply ice to the lateral elbow for 15‑20 minutes, three times daily, as needed for pain.  
+- Use over‑the‑counter ibuprofen (200‑400 mg) every 6‑8 hours with food, not exceeding 1200 mg per day, unless contraindicated.  
+- Begin the prescribed physical therapy program within the next week.  
+- Maintain blood pressure medication adherence and monitor home blood pressure readings.  
+
+No further questions were reported by the patient at the time of discharge.

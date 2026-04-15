@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:22:40
+Time: 5.06s
+Tokens: 6,687 in / 1,773 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber Date of Birth: 03/24/1995 (Age 26) Sex: Male Unit #: 311 Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a several‑month history of diffuse back pain associated with morning stiffness.
+
+History of Present Illness  
+Abe reports that for the past four to six months he has experienced a dull, aching pain that involves the middle and lower portions of his back. The pain is described as moderate in intensity, typically rating 4–5 out of 10, and is worst on waking in the morning. Stiffness and discomfort improve after about 30–60 minutes of activity, and the patient feels his best approximately one hour after arising. He denies any specific inciting trauma, and the pain has gradually worsened over time rather than having an abrupt onset. The pain does not radiate to the extremities, and he does not note any associated numbness, tingling, weakness, swelling, or skin changes in the back. Over the same time period he has had intermittent pain in his right knee and hands, which he describes as episodic and unrelated to the back pain. He has tried over‑the‑counter acetaminophen and ibuprofen (Advil) with partial relief; the stiffness returns each morning. He reports that the pain is not clearly worsened by particular positions such as bending, standing, or lying down. He also notes increased fatigue and a general sense of malaise over the past several months.
+
+Review of Systems  
+Constitutional: Positive for fatigue and malaise; no fever, chills, night sweats, or weight change.  
+Musculoskeletal: Diffuse dull back pain with morning stiffness; episodic right knee and hand pain; no joint swelling, redness, or warmth; no reported limitation of range of motion.  
+Neurologic: No numbness, tingling, or weakness in the back or lower extremities.  
+Respiratory: No shortness of breath.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No recent diarrhea, constipation, or abdominal pain; remote episode of gastroenteritis several months ago.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Dermatologic: No rashes, skin lesions, or nail changes.  
+Psychiatric: No depression or anxiety noted beyond mild fatigue; PHQ‑2 scores of 1–2 and GAD‑7 scores of 1–3 on prior screens.  
+Endocrine/Metabolic: No polyuria, polydipsia, or heat/cold intolerance.  
+
+Past Medical History  
+- Asthma, intermittently treated with short‑acting bronchodilator (albuterol) and inhaled budesonide as needed.  
+- Remote viral gastroenteritis (food‑borne) several months ago.  
+- Chronic low back pain documented in prior records (onset 2014), though the current exacerbation is of recent onset.  
+- Chronic pain noted in past records.  
+- No history of surgeries.  
+
+Social History  
+- Occupation: Full‑time bank employee.  
+- Living situation: Resides with girlfriend in a city condo.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes beer or cocktails occasionally on weekends.  
+- Illicit drugs: Uses marijuana socially about once or twice per week.  
+- Exercise: Not currently engaged in regular exercise.  
+- Environmental allergies: Reports seasonal/pollen allergy; currently taking fexofenadine.  
+
+Family History  
+- Mother has psoriasis, treated with topical agents; no known joint disease.  
+- No other reported family history of rheumatologic or autoimmune disorders.  
+
+Allergies  
+- Documented allergy to an unspecified substance (severity 1). No known drug allergies reported.  
+
+Current Medications (active)  
+- Albuterol inhalation solution (as needed for asthma).  
+- Budesonide inhalation suspension (as needed).  
+- Fexofenadine 60 mg oral tablet daily for environmental allergies.  
+- Acetaminophen 325 mg oral tablet as needed for pain.  
+- Ibuprofen 400 mg oral tablet as needed for pain.  
+- Naproxen sodium 220 mg oral tablet as needed (listed as active).  
+- Hydrocodone/acetaminophen combination tablet as needed for breakthrough pain.  
+- Epinephrine auto‑injector (for allergic reactions).  
+- Hydrocortisone 10 mg/ML topical cream (as needed).  
+
+Vital Signs (most recent recorded)  
+- Temperature: Not recorded.  
+- Blood Pressure: Not recorded.  
+- Heart Rate: 86 beats/min.  
+- Respiratory Rate: 15 breaths/min.  
+- SpO₂: Not recorded.  
+- Height: 169.7 cm; Weight: Not recorded; BMI: 42.0 kg/m² (severe obesity).  
+
+Physical Examination  
+No in‑person examination was performed at this encounter; the patient’s musculoskeletal status will be assessed at the upcoming in‑person visit.  
+
+Laboratory Data  
+Recent laboratory panel includes complete blood count with hemoglobin 39 % hematocrit, erythrocyte count 5.23 ×10⁶/µL, platelets 287 ×10³/µL, and other indices within reference ranges. No inflammatory markers (CRP, ESR) or auto‑immune serologies have been obtained to date.  
+
+Imaging  
+No imaging studies have been performed yet.  
+
+Assessment  
+1. Subacute to chronic low back pain with prominent morning stiffness, likely inflammatory in nature. Differential considerations include:  
+   - Ankylosing spondylitis (typical in young males, presents with insidious dull back pain, morning stiffness, improvement with activity).  
+   - Psoriatic arthritis (family history of psoriasis, though patient lacks cutaneous manifestations).  
+   - Reactive arthritis (preceded by recent gastroenteritis).  
+   - Mechanical low back pain secondary to obesity and deconditioning.  
+
+2. Asthma, intermittent, well‑controlled with rescue inhaler.  
+3. Seasonal allergic rhinitis.  
+4. Obesity (BMI 42).  
+
+Plan  
+Diagnostics  
+- Order laboratory studies: CBC with differential, ESR, CRP, rheumatoid factor, anti‑CCP, HLA‑B27 typing, and antinuclear antibody panel.  
+- Obtain plain radiographs of the lumbar spine and sacroiliac joints; consider MRI of the sacroiliac region if radiographs are inconclusive.  
+- Obtain X‑rays of the hands and knees given episodic peripheral joint pain.  
+
+Therapeutic  
+- Continue scheduled acetaminophen for baseline pain control.  
+- Initiate a trial of NSAID therapy (e.g., naproxen 500 mg twice daily with food) unless contraindicated; educate patient on gastro‑protection.  
+- If inflammatory etiology is confirmed, consider referral to rheumatology for disease‑modifying therapy (e.g., TNF‑α inhibitor or IL‑17 inhibitor) as appropriate.  
+- Recommend a structured physical therapy program focusing on core strengthening and flexibility, aiming to improve posture and reduce mechanical load.  
+- Counsel on weight reduction strategies, including dietary modification and low‑impact aerobic activity as tolerated.  
+
+Follow‑up  
+- Schedule in‑person rheumatology evaluation within two weeks after labs and imaging are available.  
+- Return to primary care in 4–6 weeks to review test results, assess response to NSAID therapy, and adjust management plan.  
+- Advise patient to seek urgent care if he develops new neurological symptoms (e.g., radiculopathy, weakness), fever, unexplained weight loss, or severe worsening of pain.  
+
+Patient Education  
+- Discuss the nature of inflammatory back pain and the importance of early diagnosis.  
+- Review proper use of NSAIDs and potential side effects.  
+- Emphasize the role of regular exercise, posture, and weight loss in mitigating back pain.  
+- Provide written instructions on when to use rescue analgesics and how to monitor for adverse reactions.  
+
+Signature: _____________________________  
+Date: 07/19/2024   (Electronic)

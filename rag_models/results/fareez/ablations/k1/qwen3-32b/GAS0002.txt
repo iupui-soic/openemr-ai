@@ -1,0 +1,53 @@
+Model: qwen/qwen3-32b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:39:52
+Time: 4.00s
+Tokens: 7,939 in / 1,189 out
+============================================================
+
+Patient Information  
+Agustin McGlynn, a 59-year-old male, presented to the Emergency Department with a chief complaint of severe right upper quadrant abdominal pain. He resides in Hingham, Massachusetts, and is accompanied by his partner and two children. His occupation is as a bank consultant. He has a history of cerebral palsy, spasticity, osteoporosis, intellectual disability, and chronic kidney disease, which has progressed to a post-transplant status. He is currently on tacrolimus and other maintenance medications. His BMI is 27.27, indicating overweight status. He denies tobacco or recreational drug use and consumes one to two glasses of wine nightly. No recent travel or sick contacts were reported.
+
+Chief Complaint  
+The patient presented with acute onset of severe right upper quadrant abdominal pain that began three days prior. The pain localized to the upper right corner of the abdomen, below the rib cage, and was described as sharp. It worsened over the past three days, reaching its peak severity three to four hours before presentation. The pain was unrelieved by over-the-counter analgesics such as Advil and Tylenol. The patient reports a prior episode of similar pain several years ago that resolved spontaneously without medical intervention.
+
+History of Present Illness  
+The patient initially experienced mild right upper quadrant pain three days prior, which progressively worsened. The pain began approximately one hour after a meal and was localized without radiation. It is constant and rated as an 8 out of 10 in intensity. The patient experienced associated nausea but no vomiting, emesis with blood, or changes in bowel or urinary habits. Appetite has decreased, especially on the day of presentation. He reports fatigue and reduced energy levels due to the pain. There is no history of fever, chills, jaundice, or skin changes. The patient has not noticed any changes in weight or recent infections.
+
+Review of Systems  
+Constitutional: Fatigue and reduced energy reported.  
+Respiratory: No cough, shortness of breath, or chest pain.  
+Cardiovascular: No palpitations, chest pain, or syncope.  
+Gastrointestinal: Nausea without vomiting, no diarrhea, constipation, or changes in stool color or blood.  
+Other: No rash, fever, or recent injuries.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a complex medical history including cerebral palsy, spasticity, osteoporosis, intellectual disability, chronic kidney disease (stages 1 through 4), history of renal transplant, and subsequent transplant failure and rejection. He also has a history of hypertension, type 2 diabetes mellitus, anemia, and multiple dental issues. He has had prior hospitalizations for pneumonia, acute bronchitis, and viral sinusitis. No prior surgeries were reported.
+
+Family History  
+The patient’s mother has a history of gallstones, and the father had a stroke in his 60s. No other significant family history was provided.
+
+Social History  
+The patient is employed part-time as a bank consultant. He consumes one to two glasses of wine nightly but does not smoke or use recreational drugs. He lives with his partner and two children in a stable home environment with no reported domestic issues.
+
+Current Medications  
+The patient is currently prescribed tacrolimus (24 HR 5 mg extended release oral capsule), acetaminophen, hydrochlorothiazide, amlodipine, and glycopyrrolate. He occasionally uses antacids for heartburn.
+
+Objective  
+Vital signs at presentation showed a heart rate of 94 bpm, respiratory rate of 13 breaths per minute, and blood pressure within normal limits. Temperature and oxygen saturation were not recorded. Physical examination of the abdomen revealed tenderness in the right upper quadrant without rebound or guarding. No masses or organomegaly were appreciated. No jaundice or skin changes were observed. The remainder of the physical examination was unremarkable.
+
+Labs  
+Laboratory results showed a white blood cell count of 7.58 × 10³/uL, hemoglobin of 13.58 g/dL, hematocrit of 40.1%, MCV of 94.5 fL, MCH of 28.36 pg, MCHC of 34.2 g/dL, RDW of 39.89 fL, and platelet count of 351.65 × 10³/uL. Total cholesterol was 252.43 mg/dL, with HDL of 58.23 mg/dL and LDL of 168.19 mg/dL. Triglycerides were 130.05 mg/dL. No acute metabolic or electrolyte disturbances were noted.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with acute right upper quadrant pain, likely secondary to gallbladder pathology, given the location, timing postprandial, and family history of gallstones. The absence of fever, leukocytosis, or jaundice does not rule out cholecystitis but suggests a less severe or early process. Other considerations include biliary colic or peptic ulcer disease, though the latter is less likely given the localized nature of the pain and absence of epigastric symptoms.
+
+Plan  
+The patient was advised to follow up with his primary care provider for further evaluation, including possible ultrasound of the abdomen to assess for gallbladder pathology. He was instructed to monitor for worsening pain, fever, vomiting, or jaundice, and to return to the Emergency Department if these symptoms develop. Pain management with acetaminophen was recommended, and he was advised to avoid NSAIDs due to his renal transplant status. No medications were prescribed at discharge. The patient was discharged in stable condition with a plan for outpatient follow-up.

@@ -1,0 +1,107 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 03:23:08
+Time: 6.39s
+Tokens: 9,532 in / 1,994 out
+============================================================
+
+Patient Information:  
+Abdul Gorczany, Male, Date of Birth 03/09/1971. Medical Record Number 179. Home address 404 Effertz Crossroad, Springfield, Massachusetts 01020.  
+
+Chief Complaint:  
+Sudden sharp pain over the right anterior shoulder and elbow that began yesterday after weight‑training exercise.  
+
+History of Present Illness:  
+The patient reports that while using a biceps‑training machine he performed a flexion movement of the elbows without external weight. Within approximately 30 minutes he experienced a sudden, stabbing pain localized to the front of the right shoulder and anterior right elbow. He does not recall hearing an audible “pop,” but is uncertain. The pain has persisted without significant relief and is rated 8‑9/10. He notes swelling, bruising‑like discoloration, and a palpable “mass” over the biceps region that makes the muscle appear enlarged. Elbow flexion and forearm supination are markedly limited by pain; shoulder flexion to the front is possible but uncomfortable, and overhead motion is less painful than elbow movement. He has tried rest, ice, and ibuprofen (Advil) without improvement and reports a painful night of sleep. No prior similar episode on this side; he had a remote episode of shoulder discomfort a few years ago that resolved with physical therapy.  
+
+Review of Systems:  
+Constitutional – No fever, chills, recent weight loss, or appetite changes.  
+Eyes, Ears, Nose, Throat – No visual, auditory, olfactory, or gustatory disturbances; no sore throat, rhinorrhea, or cough.  
+Cardiovascular – No chest pain, palpitations, or known arrhythmias.  
+Respiratory – No shortness of breath, wheezing, or cough.  
+Gastrointestinal – No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary – No dysuria, frequency, or hematuria.  
+Musculoskeletal – Positive for acute right shoulder and elbow pain with limited range of motion; no pain in other joints.  
+Neurologic – No numbness, tingling, weakness outside the affected arm; denies dizziness or syncope.  
+Skin – Localized erythema and bruising over the right anterior arm; no rash elsewhere.  
+Psychiatric – No new mood or anxiety symptoms reported.  
+
+Past Medical History:  
+- Essential hypertension.  
+- Type 2 diabetes mellitus with microalbuminuria, proteinuria, and chronic kidney disease (currently stage 4).  
+- Major depressive disorder.  
+- Alcohol use disorder (history of alcoholism, currently not drinking).  
+- Hyperlipidemia.  
+- Chronic kidney disease stage 4, awaiting renal transplantation.  
+
+Surgical History:  
+- Tonsillectomy in childhood.  
+- Knee injury with patellar tendon rupture in 2022 (conservative management).  
+
+Medications (current as of this encounter):  
+- Simvastatin 10 mg PO daily.  
+- Hydrochlorothiazide 25 mg PO daily.  
+- Lisinopril 10 mg PO daily.  
+- Amlodipine 2.5 mg PO daily.  
+- Vitamin B12 injectable (dose and schedule per protocol).  
+
+Allergies:  
+No known drug, food, or environmental allergies.  
+
+Family History:  
+No known hereditary diseases reported.  
+
+Social History:  
+Lives with wife and daughter in a condominium in Springfield, MA. Works from home as an accountant; may take a few days off for recovery. No current tobacco use; only experimental use in high school and college. No current alcohol consumption; past history of alcoholism. Denies recreational drug use. Recently resumed weight‑training after a hiatus; otherwise physically active.  
+
+Vital Signs (most recent):  
+Heart rate 93 beats/min, respiratory rate 16 breaths/min. Blood pressure, temperature, SpO₂, weight, and height not recorded at this visit.  
+
+Physical Examination:  
+General – Alert, oriented, in mild distress due to right arm pain.  
+Extremities – Right anterior shoulder and elbow demonstrate swelling, erythema, and bruising. A palpable, tender mass is noted over the proximal biceps region, giving the appearance of increased bulk. Elbow flexion is limited to approximately 30° with severe pain; forearm supination is markedly restricted. Shoulder flexion to the front is possible but elicits pain; abduction overhead is less painful than elbow motion. No obvious temperature increase over the area. No distal neurovascular deficits; capillary refill normal, radial pulse palpable. No lymphadenopathy.  
+Cardiovascular – Regular rate and rhythm, no murmurs.  
+Respiratory – Clear breath sounds bilaterally.  
+Abdomen – Soft, non‑tender, no organomegaly.  
+Neurologic – Gross strength 4/5 in right elbow flexors due to pain; sensation intact in the hand and forearm.  
+
+Laboratory Data (most recent):  
+- Sodium 137.5 mmol/L, Potassium 4.8 mmol/L, Chloride 108.7 mmol/L, CO₂ 27.6 mmol/L – within normal limits.  
+- Glucose 79 mg/dL – normal.  
+- BUN 12.9 mg/dL, Creatinine 2.86 mg/dL, eGFR 85 mL/min/1.73 m² – elevated creatinine reflecting chronic kidney disease.  
+- Calcium 9.3 mg/dL, Albumin 5.10 g/dL, Total protein 7.06 g/dL – within normal limits.  
+- Liver enzymes (AST 19 U/L, ALT 33 U/L, Alk Phos 75 U/L, Bilirubin 0.52 mg/dL) – unremarkable.  
+- Lipid profile: Total cholesterol 168 mg/dL, LDL 134 mg/dL, HDL 36 mg/dL, Triglycerides 161 mg/dL – modestly elevated LDL.  
+
+Imaging:  
+No imaging performed during this visit. The treating physician recommended an immediate right elbow ultrasound to assess the biceps tendon; MRI may be obtained if the ultrasound suggests a partial or complete tear.  
+
+Assessment:  
+1. Right proximal biceps tendon injury – likely partial tear versus severe tendinopathy given acute onset, palpable mass, swelling, and marked loss of elbow flexion/supination.  
+2. Hypertension, controlled on current regimen.  
+3. Type 2 diabetes mellitus with chronic kidney disease stage 4, awaiting transplantation.  
+4. Hyperlipidemia, on statin therapy.  
+5. Major depressive disorder, stable.  
+
+Plan:  
+- Imaging: Order right elbow soft‑tissue ultrasound within 48 hours. If ultrasound confirms significant tendon disruption, arrange MRI of the elbow for detailed anatomic delineation.  
+- Pharmacologic: Continue current antihypertensive and lipid‑lowering therapy. Provide an NSAID trial with naproxen sodium 220 mg PO BID for 5 days, provided renal function permits (monitor for any rise in creatinine). Offer acetaminophen 650 mg q6h PRN for breakthrough pain.  
+- Activity: Instruct strict rest of the right upper extremity; avoid weight‑bearing, lifting, and any resisted elbow flexion or supination for at least 2 weeks. Apply ice to the affected area for 20 minutes every 2–3 hours while awake. Elevate the arm when possible.  
+- Referral: Schedule orthopedic sports‑medicine appointment within the next week to discuss possible operative versus continued conservative management based on imaging results.  
+- Physical therapy: Defer until after imaging and orthopedic evaluation; if conservative management chosen, initiate a supervised PT program focusing on gradual range‑of‑motion and strengthening after pain subsides.  
+- Follow‑up: Return to primary care in 7–10 days for review of imaging results and reassessment of pain and function. Prompt return advised if worsening swelling, increasing pain, numbness/tingling, fever, or loss of distal pulse.  
+- Chronic disease management: Continue monitoring blood pressure, glucose, and renal function per standard protocol; ensure adherence to diabetic diet and medication.  
+
+Discharge Instructions:  
+- Rest the right arm; avoid any activities that stress the biceps or elbow.  
+- Ice the area for 20 minutes every few hours; keep the arm elevated when seated.  
+- Take prescribed naproxen with food as directed; use acetaminophen for additional pain relief if needed.  
+- Observe the swelling and color change; seek urgent care if the area becomes hot, increasingly red, or if you develop fever.  
+- Do not lift objects heavier than a light can of soup for the next two weeks.  
+- Keep the scheduled orthopedic appointment; bring the ultrasound report if obtained before the visit.  
+
+The patient verbalized understanding of the plan, agreed to the imaging and follow‑up schedule, and was given written instructions.  
+
+Prepared by: Dr. External Provider  
+Date of encounter: 09/09/2024.

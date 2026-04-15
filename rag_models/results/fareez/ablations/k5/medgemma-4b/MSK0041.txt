@@ -1,0 +1,45 @@
+Model: google/medgemma-4b-it
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 05:33:44
+Time: 31.71s
+Tokens: 9,651 in / 558 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Name: Abel Fritsch
+DOB: 1945-02-24
+Sex: Male
+Unit Number: 342
+
+Chief Complaint: Intense pain in the right foot for the past six hours.
+
+History of Present Illness:
+
+Mr. Fritsch presents today with intense pain in his right foot that began approximately six hours ago. The pain has been constant since its onset. He reports that the pain is located below his big toe, on the medial side of his foot. He denies any recent trauma to the foot. He denies any movement of the foot that makes the pain worse. He took an ibuprofen, but it did not alleviate the pain. He states that any movement of the foot causes pain. He is able to walk on his right foot, but it is very painful, and he cannot fully flex or extend his big toe. He describes the pain as intense and sharp. He denies any radiation of the pain to other areas. He denies any other associated symptoms.
+
+Past Medical History:
+
+Mr. Fritsch reports a history of high blood pressure, diabetes, and being overweight. He was recently hospitalized for kidney stones, which have since resolved. He denies any prior hospitalizations or surgeries.
+
+Medications:
+
+Mr. Fritsch is currently taking ramipril for high blood pressure and insulin for diabetes. He denies any recent medication changes.
+
+Social History:
+
+Mr. Fritsch lives with his son in a house. He denies being around anyone who has been sick recently. He denies any recent travel. He reports drinking about 2 glasses of wine a day and a beer every day.
+
+Physical Exam:
+
+On examination, the patient reports redness and swelling in the right foot, with warmth noted in the right foot. He is able to move his ankle and toes, with some limitation in the range of motion of his right big toe. The patient denies any muscle atrophy, joint malalignment, or deformities in the foot.
+
+Assessment:
+
+The patient's presentation is most consistent with a possible gout flare in the right big toe (podagra). Given his history of diabetes and obesity, and his family history of arthritis and gout, this is the most likely diagnosis. Aspiration of the joint fluid is recommended to rule out infection. Treatment will likely involve high-dose anti-inflammatory medications such as colchicine, along with dietary modifications to reduce red meat and alcohol intake, and improved diabetes management.
+
+Plan:
+
+A joint aspiration will be performed to rule out infection. Colchicine will be prescribed to treat the suspected gout flare. The patient will be instructed to reduce his intake of red meat and alcohol. He will also be advised to improve his diabetes management. Follow-up is recommended to assess response to treatment.

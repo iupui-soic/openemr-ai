@@ -1,0 +1,170 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:21:53
+Time: 7.80s
+Tokens: 10,438 in / 2,197 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abbey Arie Schroeder  
+- **DOB:** 1951‑10‑26 (Age 72)  
+- **Sex:** Female  
+- **MRN:** 100  
+- **Address:** 292 Von Parade, Leominster, MA 01420  
+
+---
+
+## SUBJECTIVE  
+
+**Chief Complaint:**  
+- “Sore throat for the past three days; feverish feeling for about one day.”
+
+**History of Present Illness (HPI):**  
+- **Onset:** Sore throat began 3 days ago; low‑grade fever started ~24 hours ago.  
+- **Course:** Throat pain has been constant and appears to be worsening. Fever is intermittent with chills but no measured temperature.  
+- **Associated Symptoms (positive):**  
+  - Fatigue / increased tiredness  
+  - Palpable “lumps” in the neck (cervical lymphadenopathy)  
+  - Dysphagia – pain worsens with swallowing, especially solids; occasional discomfort with very cold liquids.  
+- **Associated Symptoms (negative):**  
+  - No cough, dyspnea, or chest pain  
+  - No rhinorrhea, nasal congestion, or sinus pain  
+  - No headache, nausea, vomiting, or abdominal pain  
+  - No rash, skin changes, or pruritus  
+  - No night sweats, weight loss, or recent travel  
+  - No diarrhea, constipation, or urinary symptoms  
+  - No recent known sick contacts  
+
+**Past Medical History (PMH):**  
+- Crohn’s disease (diagnosed ≈ 1 year ago; currently on sulfasalazine)  
+- End‑stage renal disease with prior kidney transplant (on tacrolimus)  
+- Hypertension, pre‑diabetes, anemia, metabolic syndrome, ischemic heart disease, chronic kidney disease (stages 1‑4)  
+- History of miscarriage  
+
+**Past Surgical History:**  
+- Colonoscopy with brief hospitalization (last year)  
+
+**Medications (home):**  
+- Sulfasalazine (Crohn’s) – dose not specified  
+- Tacrolimus (extended‑release 1 mg) – ongoing  
+- Hydrochlorothiazide 25 mg daily  
+- Lisinopril 10 mg daily  
+- Amlodipine 2.5 mg daily  
+- Simvastatin 20 mg daily  
+- Metoprolol succinate 100 mg daily (ER)  
+- Nitroglycerin spray PRN  
+- Other chronic meds listed in chart (e.g., insulin, antihypertensives) – unchanged  
+
+**Allergies:**  
+- No known drug, food, or environmental allergies reported.  
+
+**Social History:**  
+- Lives in an apartment with parents and a younger brother.  
+- No tobacco use, no current alcohol use (rare past use, avoided due to Crohn’s).  
+- No recreational drug use.  
+- Physical activity: swims regularly; no contact sports.  
+
+**Family History:**  
+- Positive for Crohn’s disease and ulcerative colitis in first‑degree relatives.  
+- Asthma and eczema also reported in family.  
+
+**Review of Systems (pertinent positives & negatives):**  
+- **Constitutional:** Fever (subjective), chills, fatigue – no weight loss.  
+- **ENT:** Sore throat, odynophagia, cervical lymphadenopathy – no ear pain, no nasal symptoms.  
+- **Respiratory:** No cough, dyspnea, or wheezing.  
+- **Cardiovascular:** No chest pain, palpitations, or edema.  
+- **GI:** No nausea, vomiting, diarrhea, constipation; appetite mildly reduced due to throat pain.  
+- **Genitourinary:** No dysuria, hematuria, or frequency changes.  
+- **Neurologic:** No headache, dizziness, or focal deficits.  
+- **Dermatologic:** No rash or skin lesions.  
+
+---
+
+## OBJECTIVE  
+
+**Vital Signs (most recent in chart):**  
+- Heart Rate: 89 bpm  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not recorded in this encounter  
+- Temperature: Not measured (patient reports feeling “hot” with chills)  
+- SpO₂: Not recorded  
+- Height: 169.3 cm; Weight: Not recorded; BMI: 27.6 (overweight)  
+
+**Physical Examination (reported/limited):**  
+- **General:** Alert, appears mildly fatigued, in no acute distress.  
+- **HEENT:** Oropharynx erythematous with mild tenderness; no exudates noted in transcript. Palpable, non‑fluctuant cervical lymph nodes bilaterally. No tonsillar enlargement specifically described.  
+- **Neck:** No diffuse swelling, but patient reports palpable “lumps” (lymphadenopathy).  
+- **Lungs:** Not assessed (patient denies cough; exam not documented).  
+- **Cardiovascular:** Not assessed (no chest pain, normal HR).  
+- **Abdomen:** Not assessed (no GI symptoms).  
+- **Extremities:** No edema noted.  
+- **Skin:** No rash.  
+
+**Laboratory Data (most recent available):**  
+- CBC: WBC 4.7 ×10³/µL (low‑normal), Hemoglobin 15.9 g/dL, MCV 90.5 fL, MCHC 35.7 g/dL.  
+- BMP: Sodium 137 mmol/L, Potassium 4.6 mmol/L, Chloride 110 mmol/L, CO₂ 28 mmol/L, BUN 9.3 mg/dL, Creatinine 0.95 mg/dL (stable for transplant patient).  
+- Glucose 64.6 mg/dL.  
+- Urinalysis: No leukocyte esterase, nitrites, or ketones; pH 5.2.  
+
+**Imaging / Microbiology:**  
+- None performed during this visit.  
+
+---
+
+## ASSESSMENT  
+
+1. **Acute Pharyngitis – likely viral**  
+   - Presentation of sore throat, low‑grade fever, cervical lymphadenopathy, and absence of exudates or significant leukocytosis.  
+   - Immunocompromised status (renal transplant, tacrolimus) raises concern for atypical or opportunistic pathogens.  
+
+2. **Differential considerations**  
+   - **COVID‑19 infection** – Must be ruled out given pandemic context and respiratory transmission risk.  
+   - **Infectious mononucleosis (EBV)** – Consistent with lymphadenopathy and prolonged sore throat.  
+   - **Group A Streptococcal (GAS) pharyngitis** – Still possible; rapid strep test indicated.  
+   - **Other viral etiologies** (influenza, adenovirus, rhinovirus).  
+   - **Early bacterial superinfection** – Less likely given current labs, but cannot be excluded without testing.  
+
+3. **Fatigue & mild constitutional symptoms** – Likely secondary to infection and underlying chronic disease burden.
+
+4. **Cervical lymphadenopathy** – Reactive vs. early EBV; monitor for size increase or suppuration.
+
+5. **Crohn’s disease, post‑renal transplant, hypertension, metabolic syndrome** – Chronic conditions stable per recent labs; continue current regimen.
+
+---
+
+## PLAN  
+
+**Diagnostic Testing**  
+- **COVID‑19:** Nasopharyngeal RT‑PCR (swab) performed today; results expected within 24‑48 h. Advise self‑isolation until negative.  
+- **Rapid Antigen/Throat Culture for Group A Streptococcus:** Obtain throat swab now; pending results.  
+- **EBV Serology (VCA IgM/IgG, EBNA):** To evaluate for acute infectious mononucleosis.  
+- **Complete Blood Count with differential** (repeat) if symptoms persist >48 h or worsen, to assess for leukocytosis or atypical lymphocytes.  
+
+**Therapeutic Management**  
+- **Symptomatic relief:**  
+  - Acetaminophen 650 mg PO q6h PRN for fever/pain (ensure total ≤3 g/24 h).  
+  - Continue lozenges as needed for throat comfort.  
+  - Adequate hydration; warm saline gargles.  
+- **Antibiotics:** Hold pending rapid strep result; if positive, start Penicillin V 500 mg PO q6h for 10 days (or appropriate alternative if allergic).  
+- **Immunosuppression:** No adjustment at this time; monitor tacrolimus troughs per transplant protocol.  
+
+**Patient Education & Safety**  
+- Discuss signs that warrant urgent re‑evaluation: high fever >38.5 °C, worsening throat pain, difficulty swallowing liquids, shortness of breath, neck swelling that becomes tender/red, new rash, or any signs of sepsis.  
+- Reinforce hand hygiene, mask use, and isolation while awaiting COVID result.  
+- Encourage continued low‑impact activity (swimming) as tolerated; avoid contact sports if sore throat worsens.  
+
+**Follow‑Up**  
+- **Phone call** in 48 hours to review COVID and rapid strep results, assess symptom trajectory.  
+- **In‑person or telehealth visit** in 5–7 days or sooner if test results are positive or symptoms exacerbate.  
+- **Transplant clinic**: No change needed now; maintain routine labs (creatinine, tacrolimus level) as scheduled.  
+
+**Disposition**  
+- Patient stable, discharged home with above plan.  
+
+---  
+
+**Prepared by:** [Provider’s Name, MD]  
+**Date:** 2024‑04‑14  
+
+*(All data extracted from patient interview, current EMR, and recent laboratory values. The plan reflects current clinical guidelines for acute pharyngitis in an immunocompromised adult.)*

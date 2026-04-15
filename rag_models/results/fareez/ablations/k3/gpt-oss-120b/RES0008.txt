@@ -1,0 +1,114 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:24:46
+Time: 5.75s
+Tokens: 11,326 in / 1,791 out
+============================================================
+
+Patient Information  
+Abraham Schneider is a 96‑year‑old male (DOB 01‑10‑1928) residing at 658 Koepp Vista, Wayland, Massachusetts. He lives with his wife in a house in the same town.  
+
+Chief Complaint  
+Cough with sputum production, dyspnea, and fever for the past three days.  
+
+History of Present Illness  
+The patient reports that three days ago (approximately Monday) he began to feel unwell, developing a productive cough that is occurring “a couple of times per hour” and requiring frequent use of tissues. The sputum is described as dark greenish‑yellow. He notes increasing shortness of breath over the same period and a sharp, right‑sided chest pain that is accentuated by coughing or taking a deep breath. The pain began shortly after the cough started and is not associated with exertion or activity. He has also experienced subjective fevers, measuring a temperature of 38.6 °C on the day of presentation. Analgesics (acetaminophen and ibuprofen) have provided only transient relief of the chest discomfort. He denies any recent travel, known sick contacts, or identifiable triggers for his symptoms.  
+
+Review of Systems  
+
+- Constitutional: Positive for fever (38.6 °C). No weight loss or night sweats reported.  
+- Respiratory: Positive for cough with green‑yellow sputum, dyspnea, and pleuritic‑type right‑sided chest pain. No reported wheezing, orthopnea, or hemoptysis.  
+- Cardiovascular: No chest pain other than the described pleuritic pain, no palpitations, no known edema.  
+- Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel habits.  
+- Genitourinary: No dysuria or urinary frequency reported.  
+- Musculoskeletal: No joint pain or myalgias.  
+- Neurological: No headache, dizziness, or focal deficits.  
+- Psychiatric: No depression or anxiety reported at this visit.  
+- Allergic/Immunologic: Denies medication allergies; reports environmental allergies only.  
+
+Allergies  
+Environmental allergies only; no known drug allergies.  
+
+Past Medical History  
+
+- Type 2 diabetes mellitus, managed with metformin, an SGLT‑2 inhibitor, and insulin.  
+- Essential hypertension, treated with amlodipine.  
+- Chronic kidney disease, currently stage 4 with an estimated GFR of approximately 9.5 mL/min.  
+- Ischemic heart disease with prior coronary artery bypass grafting and documented heart failure.  
+- History of bronchitis associated with long‑term tobacco use.  
+- No prior history of similar chest pain.  
+
+Surgical History  
+No surgical procedures reported during this encounter.  
+
+Social History  
+The patient has smoked approximately one pack of cigarettes per day for the past 30 years. He denies alcohol use and any illicit drug use. He volunteers several times per week at a homeless shelter, exposing him to a large number of individuals. He reports no recent changes in routine activities.  
+
+Family History  
+Father suffered a myocardial infarction in his 70s. Mother had hypertension. No other significant familial respiratory or cardiac disease reported.  
+
+Current Medications (home)  
+
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (specific agent not specified)  
+- Insulin (type and dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Multivitamin daily  
+- Occasional acetaminophen and ibuprofen taken for pain relief (self‑administered)  
+
+Vital Signs  
+Temperature recorded by the patient: 38.6 °C. Blood pressure, heart rate, respiratory rate, oxygen saturation, weight, and height were not documented at this encounter.  
+
+Physical Examination  
+No physical examination findings were documented.  
+
+Laboratory Data (most recent)  
+
+- Ferritin: 1,547 µg/L (elevated)  
+- Calcium: 8.66 mg/dL (low‑normal)  
+- Bicarbonate: 23.6 mmol/L (within normal limits)  
+- Blood urea nitrogen: 8.81 mg/dL (normal)  
+- Hematocrit: 40.4 % (normal)  
+- Erythrocyte count: 4.74 ×10⁶/µL (normal)  
+- Neutrophils: 2.79 ×10³/µL (low‑normal)  
+- Lymphocytes: 22.8 % (normal)  
+- Monocytes: 1.13 ×10³/µL (normal)  
+- Eosinophils: 3.24 % (normal)  
+- Basophils: 0.22 ×10³/µL (normal)  
+- Albumin: 4.62 g/dL (normal)  
+- Alkaline phosphatase: 55.5 U/L (normal)  
+- AST: 20.3 U/L (normal)  
+- INR: 4.70 (significantly elevated)  
+- Estimated GFR: 9.5 mL/min/1.73 m² (severe renal impairment)  
+
+Imaging  
+No imaging studies were provided in the current record.  
+
+Assessment  
+
+1. **Pneumonia** – Acute onset of productive cough with purulent sputum, fever, dyspnea, and pleuritic chest pain is consistent with a lower respiratory tract infection.  
+2. **Type 2 diabetes mellitus** – Chronic disease, currently on oral agents and insulin.  
+3. **Essential hypertension** – Controlled on amlodipine.  
+4. **Chronic kidney disease, stage 4** – Severely reduced GFR; requires careful medication dosing and monitoring.  
+5. **Ischemic heart disease with heart failure** – Known history, currently stable.  
+6. **Tobacco use disorder** – Long‑standing 30‑year pack‑year history.  
+
+Plan  
+
+- **Antimicrobial therapy**: Initiate empiric antibiotic coverage appropriate for community‑acquired pneumonia, taking into account renal impairment and potential drug‑drug interactions. Adjust dosing based on the estimated GFR.  
+- **Supportive care**: Encourage adequate oral hydration, antipyretics for fever, and analgesics for chest pain as needed (continue acetaminophen; use ibuprofen cautiously given renal status).  
+- **Respiratory support**: Monitor oxygen saturation; provide supplemental oxygen if SpO₂ falls below 92 %. Consider a short‑acting bronchodilator (e.g., albuterol) PRN for dyspnea.  
+- **Laboratory monitoring**: Repeat complete blood count and basic metabolic panel in 24–48 hours to assess for leukocytosis, renal function trends, and electrolytes. Re‑check INR and coordinate with anticoagulation service if anticoagulants are required.  
+- **Diabetes management**: Continue current insulin regimen; monitor capillary glucose closely while on systemic illness. Adjust insulin dosing as needed.  
+- **Hypertension**: Continue amlodipine; monitor blood pressure at home.  
+- **Renal disease**: Avoid nephrotoxic agents; dose‑adjust all medications per renal function.  
+- **Smoking cessation**: Offer counseling and referral to smoking cessation resources.  
+- **Follow‑up**: Return to primary care physician within 48–72 hours for reassessment of symptoms, vital signs, and laboratory results. Seek urgent care if fever persists > 3 days, respiratory status worsens, or chest pain becomes more severe.  
+- **Patient education**: Instruct the patient to seek immediate medical attention for worsening shortness of breath, increasing sputum volume or change in color, new onset of confusion, or any signs of bleeding given the elevated INR.  
+
+Disposition  
+The patient will be managed as an outpatient with close follow‑up, pending clinical stability and ability to tolerate oral therapy. No admission was indicated at this time.  
+
+Prepared by: [Physician’s Name], MD  
+Date: April 14 2026

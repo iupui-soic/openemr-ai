@@ -1,0 +1,87 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:54:12
+Time: 2.53s
+Tokens: 15,065 in / 1,270 out
+============================================================
+
+Patient Information:  
+Name: Abel Wunsch (as recorded in the electronic health record)  
+Date of Birth: 07 June 1932  
+Age: 94 years old (if using the provided DOB)  
+Sex: Male (as per electronic record)  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+
+Chief Complaint:  
+The patient reports a persistent, sharp left-sided chest pain lasting five days, accompanied by shortness of breath. The pain worsens with deep inspiration and physical exertion (walking).  
+
+History of Present Illness:  
+The patient presents with a five‑day history of continuous, sharp, left chest pain that is localized to a single spot on the left side of the chest. The pain does not radiate to other areas. It is described as lingering and exacerbated by deep breathing and walking. The patient has taken acetaminophen (Tylenol) and ibuprofen (Advil) with only partial relief. No fever, chills, cough, wheezing, nausea, vomiting, abdominal pain, urinary symptoms, or night sweats have been reported. The patient notes a mild sense of fatigue due to decreased activity caused by shortness of breath but denies significant fatigue otherwise.  
+
+Review of Systems:  
+Constitutional: No fever, chills, night sweats, or weight loss.  
+Respiratory: Shortness of breath worsened by exertion; no cough, wheeze, or sputum.  
+Cardiovascular: No palpitations, chest pressure, or syncope.  
+Gastrointestinal: No abdominal pain, nausea, or vomiting.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: No joint, leg, or muscle pain.  
+Skin: No rashes or skin changes.  
+
+Past Medical History (as per the patient’s report):  
+The patient has no known medical conditions or chronic diseases. The only prior surgery is a hysterectomy performed approximately one month ago, after which she had a brief period of decreased fluid intake but has since resumed normal urinary output and general activity. No regular prescription medications are reported.  
+
+Surgical History:  
+Hysterectomy (approximately one month ago). No other surgical procedures.  
+
+Social History:  
+The patient lives with her husband and two teenage children. She works as an accountant. She consumes a glass of wine on weekends. She smokes approximately five cigarettes per day and is attempting to quit. No recreational drug use currently. No recent travel or long trips.  
+
+Family History:  
+The patient’s mother suffered a heart attack in her seventies. No other reported family history of heart disease, cancer, clotting disorders, or significant illnesses.  
+
+Medications (current):  
+- Acetaminophen (Tylenol) – taken as needed for pain  
+- Ibuprofen (Advil) – taken as needed for pain  
+
+Objective Data:  
+Vital signs were not recorded during this encounter; therefore, no vital sign information is available.  
+
+Physical Examination:  
+No physical examination findings were documented in the transcript or electronic record for this encounter.  
+
+Laboratory Data (most recent available):  
+White blood cells: 9.49 × 10^3/µL (normal range not specified)  
+Red blood cells: 3.80 × 10^6/µL  
+Hemoglobin: 16.9 g/dL  
+Hematocrit: 47.5%  
+MCV: 80.6 fL  
+MCH: 27.1 pg  
+MCHC: 33.4 g/dL  
+RDW: 14.5%  
+Platelets: 297 × 10^3/µL  
+Glucose: 82.8 mg/dL  
+Urea nitrogen: 10.5 mg/dL  
+Creatinine: 0.88 mg/dL  
+BUN/Cr ratio within normal limits.  
+Serum electrolytes: Sodium 142.9 mmol/L, Potassium 3.73 mmol/L, Chloride 102.3 mmol/L, bicarbonate 23.2 mmol/L.  
+Estimated GFR: 158 mL/min (mildly elevated, likely overestimated in an elderly patient).  
+Serum calcium: 8.79 mg/dL.  
+
+Assessment:  
+1. Acute chest pain with dyspnea in a 94‑year‑old female with recent surgery (hysterectomy) and smoking history. Differential diagnosis includes pulmonary embolism, musculoskeletal pain, and cardiac ischemia.  
+2. Risk factors for thromboembolism are present (recent surgery, smoking, advanced age).  
+3. No evidence of infection or inflammatory process based on absence of fever, chills, or elevated inflammatory markers.  
+
+Plan:  
+1. Order a D‑dimer test to evaluate for possible pulmonary embolism.  
+2. If the D‑dimer is elevated or if clinical suspicion remains high, proceed with a computed tomography pulmonary angiography (CTPA) to assess for pulmonary embolism.  
+3. Monitor vital signs, oxygen saturation, and repeat symptom assessment every 4 hours.  
+4. Initiate anticoagulation therapy (low‑molecular‑weight heparin bridging to oral anticoagulant) pending imaging results if PE is confirmed.  
+5. Continue NSAIDs or acetaminophen for pain control, but limit NSAID use due to potential renal effects in an elderly patient.  
+6. Encourage smoking cessation; provide resources such as counseling and nicotine replacement therapy.  
+7. Schedule follow‑up appointment in 48 hours or sooner if symptoms worsen (increased pain, worsening shortness of breath, chest pain radiating, or syncope).  
+8. Advise the patient to seek emergency care if chest pain becomes more intense, if she experiences palpitations, new onset shortness of breath, fainting, or other acute symptoms.  
+
+Disposition:  
+The patient remains under observation with plans for further diagnostic workup to rule out pulmonary embolism and other acute causes of chest pain. Follow‑up is scheduled as outlined above.

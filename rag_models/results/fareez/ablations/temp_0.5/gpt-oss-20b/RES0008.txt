@@ -1,0 +1,81 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:16:55
+Time: 2.64s
+Tokens: 10,847 in / 1,211 out
+============================================================
+
+Patient Information  
+Abraham Schneider, 98 years old, male, resident of 658 Koepp Vista, Wayland, Massachusetts.  
+
+Chief Complaint  
+The patient presents with a three‑day history of worsening cough, dyspnea, and right‑sided chest pain, accompanied by fever.  
+
+History of Present Illness  
+The patient reports that approximately three days ago he began experiencing a cough that has increased in frequency and severity. He now coughs several times per hour and produces dark greenish‑yellow sputum. The cough is associated with a sharp, right‑sided chest pain that worsens with coughing or deep inspiration. The pain has not been present before and is not related to activity. The patient notes a fever, having measured a temperature of 38.6 °C earlier in the day. He has taken acetaminophen and ibuprofen for pain relief with only transient benefit. He denies any recent travel, known sick contacts, or changes in routine. He reports ongoing smoking (approximately one pack per day for 30 years), no alcohol use, and no recreational drug use.  
+
+Review of Systems  
+Constitutional: fever (38.6 °C), malaise.  
+Respiratory: productive cough with greenish‑yellow sputum, dyspnea, chest pain on inspiration, no wheezing reported.  
+Cardiovascular: no chest pain other than right‑sided pain, no palpitations, no known heart failure symptoms.  
+Gastrointestinal: no abdominal pain, nausea, vomiting, or changes in bowel habits.  
+Other: no rash, no joint pain, no urinary symptoms.  
+
+Past Medical History  
+Type 2 diabetes mellitus with insulin and metformin therapy; chronic kidney disease stage 4 secondary to diabetic nephropathy; hypertension; ischemic heart disease with prior coronary artery bypass grafting; chronic obstructive pulmonary disease is implied by long‑term smoking; history of chronic kidney disease stages 1–3; history of recurrent urinary tract infection; history of severe anxiety and stress; history of drug overdose; history of chronic pain.  
+
+Surgical History  
+Coronary artery bypass grafting (date unspecified).  
+
+Social History  
+Current smoker (≈1 pack/day for 30 years). No alcohol or recreational drug use. Lives with wife. Volunteering at a homeless shelter several times per week. No exercise routine.  
+
+Family History  
+Father had a heart attack in his 70s. Mother had hypertension. No other significant family history provided.  
+
+Current Medications  
+Amlodipine 2.5 mg oral daily; insulin (type unspecified); metformin (dose unspecified); SGLT‑2 inhibitor (name unspecified); multivitamin. No other current medications reported by the patient.  
+
+Vital Signs  
+Temperature 38.6 °C. Blood pressure, heart rate, respiratory rate, oxygen saturation, and weight were not documented in the encounter.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record for this encounter.  
+
+Laboratory Findings  
+- White blood cell count not provided.  
+- Neutrophils 2.79 ×10³/µL (low).  
+- Lymphocytes 22.8 % (normal).  
+- Platelets 31.4 ×10³/µL (low).  
+- Hemoglobin 13.4 g/dL (normal).  
+- Hematocrit 40.4 % (normal).  
+- Creatinine estimated GFR 9.5 mL/min (advanced chronic kidney disease).  
+- INR 4.70 (elevated).  
+- Ferritin 1547 µg/L (elevated).  
+- Calcium 8.66 mg/dL (normal).  
+- Other routine chemistries within normal ranges.  
+
+Imaging  
+No imaging studies were documented for this encounter.  
+
+Assessment  
+Primary diagnosis: Pneumonia (community‑acquired, likely bacterial or viral given sputum characteristics and fever).  
+Secondary diagnoses: Type 2 diabetes mellitus, chronic kidney disease stage 4, hypertension, ischemic heart disease, chronic obstructive pulmonary disease (implied by smoking history).  
+
+Plan  
+1. Admit to the hospital for evaluation and treatment of pneumonia.  
+2. Initiate empiric broad‑spectrum antibiotics covering typical and atypical organisms (e.g., ceftriaxone plus azithromycin) after obtaining cultures.  
+3. Provide supplemental oxygen to maintain SpO₂ > 92 %.  
+4. Monitor vital signs, including temperature, heart rate, blood pressure, respiratory rate, and oxygen saturation, every 4 hours.  
+5. Continue insulin therapy; hold metformin due to advanced chronic kidney disease and potential lactic acidosis risk.  
+6. Continue amlodipine for hypertension; consider holding diuretic therapy if present.  
+7. Provide pain control with acetaminophen; avoid NSAIDs due to renal impairment.  
+8. Encourage adequate hydration and early mobilization as tolerated.  
+9. Counsel on smoking cessation; provide resources and support.  
+10. Arrange for chest physiotherapy and pulmonary hygiene.  
+11. Repeat laboratory studies (CBC, electrolytes, renal function, coagulation profile) within 24 hours to assess response and adjust therapy.  
+12. Follow up with primary care physician and endocrinology within 7 days of discharge.  
+13. Provide discharge instructions on medication adjustments, wound care if any, signs of worsening infection, and when to seek urgent care.  
+
+This plan addresses the acute infectious process while accounting for the patient’s significant comorbidities and medication profile.

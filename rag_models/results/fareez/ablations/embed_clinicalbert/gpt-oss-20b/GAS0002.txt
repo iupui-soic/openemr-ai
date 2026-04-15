@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:55:31
+Time: 3.01s
+Tokens: 8,325 in / 1,304 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Date of Birth: April 16, 1965  
+Sex: Male  
+Age: 59 years  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+The patient presented to the Emergency Department with a chief complaint of sudden, sharp pain in the right upper quadrant of the abdomen.
+
+History of Present Illness  
+Mr McGlynn reports that the abdominal pain began approximately three days ago after a meal, becoming progressively worse and most severe about three to four hours prior to arrival. The pain is localized to the right upper quadrant, described as sharp, does not radiate, and is rated 8 out of 10 in severity. He has experienced nausea during the past few days but denies vomiting or any blood in vomit. No change in stool color or form, no hematuria, and no urinary symptoms. Prior episodes of similar pain occurred years ago and resolved spontaneously; no emergency department visits were made at that time. Over-the-counter NSAIDs and acetaminophen have failed to provide meaningful relief.
+
+Review of Systems  
+Constitutional: Reports decreased energy and fatigue related to pain, but otherwise no fever, chills, or weight change.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, no vomiting, no diarrhea, no hematochezia, no changes in bowel habits.  
+Genitourinary: No dysuria, no hematuria, no changes in urinary frequency or color.  
+Respiratory: No cough, shortness of breath, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Skin: No rashes or skin changes reported.  
+
+Past Medical History  
+- Chronic kidney disease stage 4 (due to diabetes mellitus)  
+- Essential hypertension  
+- Diabetes mellitus type 2 (implied by kidney disease)  
+- Gastroesophageal reflux disease  
+- Chronic kidney disease stage 1–3 (historical)  
+- History of kidney transplant (failure and rejection)  
+- Anemia (ongoing)  
+- Severe anxiety (panic)  
+- Osteoporosis  
+- Intellectual disability  
+- Cerebral palsy with spasticity  
+- Multiple dental issues (gingivitis, dental caries)  
+
+Surgical History  
+No prior abdominal or major surgeries reported. The only hospitalizations were related to childbirth of his children and unspecified other encounters.
+
+Social History  
+Mr McGlynn is a full‑time consultant at a bank. He lives with his partner and two children in a supportive environment. He drinks one to two glasses of wine nightly, reports no alcohol dependence, no tobacco use, and denies recreational drug use.
+
+Family History  
+Father died of a stroke in his 60s. Mother has gallstones. No other significant cardiac or gallbladder disease reported in the immediate family.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+- Antacids (used sporadically for heartburn).  
+No active prescription medications are listed in the current record.  
+
+Objective  
+Vital Signs – No vital sign data were documented during the encounter.  
+Physical Examination – No physical exam findings were recorded in the transcript or electronic record.  
+Laboratory Results (drawn at presentation) –  
+White blood cell count: 7.58 × 10³/µL (normal range not provided)  
+Hemoglobin: 13.58 g/dL  
+Hematocrit: 40.1 %  
+Mean corpuscular volume: 94.5 fL  
+Mean corpuscular hemoglobin: 28.4 pg  
+Platelet count: 351.7 × 10³/µL  
+Albumin not reported.  
+Lipid panel: Total cholesterol 252.4 mg/dL, LDL 168.2 mg/dL, HDL 58.2 mg/dL, triglycerides 130.1 mg/dL.  
+
+Imaging – No imaging studies were ordered or reported during the visit.  
+
+Assessment  
+Mr McGlynn is a 59‑year‑old man with chronic kidney disease stage 4, hypertension, diabetes mellitus, and a history of kidney transplantation who presents with a three‑day history of acute, sharp right‑upper‑quadrant abdominal pain radiating no distance, accompanied by nausea. Differential diagnosis includes biliary colic or acute cholecystitis secondary to gallstones, hepatic pathology, peptic ulcer disease, pancreatitis, musculoskeletal strain, or less likely, renal pathology. The absence of fever, vomiting, or leukocytosis does not exclude early cholecystitis, but the clinical picture is most consistent with a biliary etiology.
+
+Plan  
+1. Order an abdominal ultrasound to evaluate the gallbladder and biliary ducts.  
+2. Obtain liver function tests, serum amylase and lipase to assess for hepatitis or pancreatitis.  
+3. Continue supportive care with acetaminophen for pain; NSAIDs withheld due to chronic kidney disease.  
+4. Encourage oral hydration and small, bland meals; avoid fatty foods.  
+5. Monitor vital signs and pain level every 4 hours; reassess laboratory values if clinical status changes.  
+6. Discuss findings with the patient and advise that if pain worsens, fever develops, or vomiting occurs, he should return immediately or seek urgent care.  
+7. Arrange follow‑up with gastroenterology in 7 days or sooner if imaging indicates a surgical indication.  
+8. Counsel on weight management and dietary modification, given the father’s gallstone history.  
+9. Document plan in the electronic medical record and provide the patient with written instructions.  
+
+Disposition – The patient was admitted for observation and evaluation of right‑upper‑quadrant pain. He was advised of the plan and scheduled for follow‑up care. All orders were entered into the system and the patient was discharged with instructions and a copy of this summary.

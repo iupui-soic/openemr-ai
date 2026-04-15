@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 03:15:00
+Time: 4.30s
+Tokens: 15,252 in / 1,460 out
+============================================================
+
+Patient Information  
+Name: Abel Daugherty  
+Date of Birth: August 19, 1940 (Age 85)  
+Sex: Male  
+Address: 849 Miller Rapid, Boston, Massachusetts 02110  
+Living Situation: Lives alone in an apartment downtown  
+Occupation/Student Status: Currently enrolled in school  
+
+Chief Complaint  
+Right wrist pain, swelling, and bruising after a fall while skiing yesterday.  
+
+History of Present Illness  
+The patient reports that while skiing he fell forward and landed on his outstretched right hand, with the wrist in slight extension. He experienced immediate sharp pain localized to the volar aspect of the wrist just distal to the thumb. Since the injury he notes swelling, bruising, and constant pain that he rates as 5–6 out of 10. Movement of the wrist, particularly flexion, extension, and radial/ulnar deviation, exacerbates the pain, but he is still able to perform these motions. He denies any radiation of pain into the forearm or hand, numbness, tingling, weakness, or loss of sensation. He has taken ibuprofen and applied ice, which provided modest relief. He has not experienced any fever, chills, headache, visual or auditory changes, respiratory symptoms, chest pain, palpitations, dizziness, syncope, nausea, vomiting, abdominal pain, changes in bowel or urinary habits, systemic fatigue, or night sweats. He has no prior history of wrist or hand injury.  
+
+Past Medical History  
+- Seizure disorder / epilepsy (ongoing)  
+- Prediabetes (ongoing)  
+- Diabetes mellitus type 2 (ongoing)  
+- Essential hypertension (ongoing)  
+- Chronic kidney disease (stage 1–4 historically; currently end‑stage renal disease with renal transplant)  
+- Hypertriglyceridemia (ongoing)  
+- Metabolic syndrome (ongoing)  
+- Ischemic heart disease with prior coronary artery bypass grafting (ongoing)  
+- History of coronary artery disease (ongoing)  
+
+Surgical History  
+- History of renal transplantation (date not specified)  
+
+Medications  
+- Ibuprofen 200 mg oral tablet as needed for pain (patient reports current use)  
+- Clopidogrel 75 mg oral tablet (daily)  
+- Simvastatin 20 mg oral tablet (daily)  
+- Metoprolol succinate 100 mg extended‑release oral tablet (daily)  
+- Nitroglycerin 0.4 mg mucosal spray as needed for chest discomfort  
+- Other medications listed in the record (e.g., insulin, various peri‑operative agents) are not currently active for this encounter.  
+
+Allergies  
+No known drug allergies reported.  
+
+Social History  
+- Tobacco: None  
+- Alcohol: Consumes approximately two beers every other week  
+- Cannabis: Uses an edible approximately once per month  
+- Recreational drugs: None  
+- Exercise: Engages in snowboarding, camping, tennis, and volleyball; otherwise active  
+- Immunizations: Believes immunizations are up to date but has not yet received the first dose of Gardasil  
+
+Family History  
+No reported family history of neurological, musculoskeletal, or autoimmune disorders.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, night sweats, or fatigue.  
+HEENT: No headache, visual, auditory, olfactory, or gustatory changes; no sore throat, cough, nasal congestion, or sinus symptoms.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No shortness of breath, wheezing, or cough.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or hematochezia.  
+Genitourinary: No dysuria, frequency, or other urinary complaints.  
+Musculoskeletal: Right wrist pain, swelling, and bruising after trauma; otherwise full range of motion though painful. No pain in other joints.  
+Neurologic: No numbness, tingling, weakness, or sensory loss.  
+Psychiatric: No depression, anxiety, or other concerns reported.  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+Vital Signs: Not recorded at this encounter.  
+Extremities – Right Wrist: Mild swelling compared with the left side, warmth to touch, and a visible bruise over the volar distal radius. No gross deformity. Palpation elicits tenderness over the distal radius on the volar aspect; the anatomical snuffbox is non‑tender. Full flexion, extension, radial and ulnar deviation are possible but limited by pain. The patient can make a fist without difficulty. No evidence of neurovascular compromise; capillary refill is normal and distal pulses are palpable. Elbow and shoulder examinations are unremarkable.  
+
+Assessment  
+1. Right distal radius injury – possible fracture (distal radius fracture vs soft‑tissue sprain).  
+2. Possible associated scaphoid injury – less likely given absence of snuffbox tenderness but cannot be excluded without imaging.  
+3. Chronic conditions: hypertension, type 2 diabetes mellitus, end‑stage renal disease with renal transplant, ischemic heart disease.  
+
+Plan  
+- Obtain immediate plain radiographs of the right wrist (anteroposterior, lateral, and oblique views) to assess for distal radius and scaphoid fractures.  
+- Continue ibuprofen 200 mg PO every 6–8 hours as needed for pain, provided renal function allows; monitor for gastrointestinal tolerance.  
+- Apply a removable splint or rigid wrist immobilizer pending radiographic results to limit motion and reduce pain.  
+- Advise ice application to the wrist for 15–20 minutes every 2–3 hours while awake, and elevation of the extremity when possible.  
+- If radiographs confirm a fracture, refer to orthopedics for possible closed reduction and casting; discuss the potential need for surgical fixation depending on displacement and joint involvement.  
+- If scaphoid fracture is suspected despite negative snuffbox tenderness, consider advanced imaging (e.g., CT or MRI) if initial X‑ray is inconclusive.  
+- Review tetanus immunization status; administer tetanus‑diphtheria booster if indicated.  
+- Follow up in the orthopedic clinic within 3–5 days after imaging, or sooner if pain worsens or neurovascular signs develop.  
+- Continue management of chronic comorbidities as per existing treatment plans; ensure that renal function is monitored given existing CKD and transplant status, especially if NSAIDs are used.  
+- Provide patient education on activity restrictions, signs of worsening condition (increasing pain, swelling, numbness, loss of motion), and when to seek emergent care.  
+
+The patient verbalized understanding of the plan and agreed to obtain the recommended imaging and follow‑up.

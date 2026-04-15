@@ -1,0 +1,53 @@
+Model: google/medgemma-4b-it
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 05:59:27
+Time: 39.59s
+Tokens: 6,550 in / 747 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abbey Shala Kunde
+Date of Birth: 1986-03-02
+Unit Number: 109
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109
+
+Chief Complaint: Cough, headaches, and muscle aches.
+
+History of Present Illness:
+
+The patient presented today with a cough that started three days ago, accompanied by headaches and generalized muscle aches. The cough is dry. The patient denies any sputum or blood production. The muscle aches are described as being all over the body. The patient denies any recent strenuous activity, lifting, or injuries. The patient reports headaches that have come and gone over the last couple of days, described as a band squeezing around the head. The headaches are described as pressure-like. The patient reports occasional headaches, but not frequently. The patient denies trying any medications for the cough or headaches. She reports feeling feverish. She denies chills, sore throat, chest pain, or runny nose. The patient denies shortness of breath. She denies recent travel or contact with someone who is ill. She denies nausea or vomiting or loss of taste or smell. She denies night sweats or fatigue. The patient reports diarrhea for the past day, but denies any changes in stool color or blood. She denies trying any new foods or eating outside. She denies changes in appetite or weight. She denies exposure to fumes or dust or animals. The patient denies any known medical conditions. She reports taking a multivitamin and vitamin D. She denies any allergies. She reports an allergy to peanuts and carries an EpiPen. She denies any hospitalizations or surgeries. She reports her father has high blood pressure and her grandfather had lung cancer. She works as a pharmacy technician. She denies noticing anyone sick at work. She wears a mask at work and follows cleaning protocols. She has been off work for the last couple of days due to her symptoms. She lives with her wife in a townhouse. Her wife is feeling well. She is not a smoker and occasionally uses CBD oils. She drinks alcohol occasionally, about 3-4 beers per week.
+
+Medications:
+
+The patient is currently taking a multivitamin and vitamin D. She is also taking an EpiPen for peanut allergies.
+
+Allergies:
+
+The patient reports an allergy to peanuts.
+
+Past Medical History:
+
+The patient has a history of recurrent urinary tract infection, only received primary school education, misuses drugs, obesity, essential hypertension, full-time employment, past pregnancy history of miscarriage, medication review due, stress, part-time employment, fracture of bone, fracture of rib, unemployed, part-time employment, stress, reports of violence in the environment, gingivitis, sprain, sprain of wrist, normal pregnancy, full-time employment, and stress.
+
+Family History:
+
+The patient's father has high blood pressure and her grandfather had lung cancer.
+
+Social History:
+
+The patient is employed as a pharmacy technician. She works in an office environment and wears a mask and follows cleaning protocols. She is not a smoker and occasionally uses CBD oils. She drinks alcohol occasionally, about 3-4 beers per week.
+
+Exam:
+
+The patient is afebrile. Her vital signs are within normal limits.
+
+Assessment:
+
+The patient presents with symptoms suggestive of an upper respiratory infection, possibly COVID-19, or another viral illness.
+
+Plan:
+
+The patient was advised to isolate for two weeks until her symptoms have gone and the test result you will get you will get back in the next 24 to 48 hours. Public health will provide further instructions about whether or not another swab is needed and when to return to work.

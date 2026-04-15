@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:51:17
+Time: 5.19s
+Tokens: 8,361 in / 1,883 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: November 14, 1952 (Age 73)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+Primary Care Provider: Not specified  
+
+Chief Complaint  
+Loss of taste for the past two days accompanied by a dry cough, fatigue, mild dizziness, and a single episode of diarrhea this morning.
+
+History of Present Illness  
+The patient reports that over the last two days (yesterday and today) he has experienced a marked reduction in his ability to taste foods. He describes meals as “plain” or “like cardboard” and notes that the pizza he normally enjoys has no discernible flavor. He also believes his sense of smell may be diminished. There is no history of recent trauma to the face, mouth, or nose. He denies fever but acknowledges feeling “a little hot” and perceives a low‑grade temperature rise.  
+
+Approximately three to four days ago he developed a dry cough without sputum or blood. The cough has been non‑productive and not associated with wheezing. After coughing he occasionally feels short‑of‑breath, but denies ongoing dyspnea at rest. He reports increased fatigue over the past several days, sleeping more during the day, and feeling generally “lazy.” Appetite remains intact, and he reports being hungry. He denies muscle aches, chest pain, palpitations, or dizziness except for a brief episode upon arising this morning, which he attributes possibly to mild dehydration.  
+
+He experienced one to two loose bowel movements this morning (diarrhea) but no prior episodes, no blood, and no melena. He denies abdominal pain, constipation, or changes in urinary habits. He notes a mild, scratchy throat associated with the cough but no sore throat. He denies rhinorrhea or nasal congestion, skin rashes, or visual changes. He reports no recent travel. He is aware of a classmate who was recently ill with cough and fever, suggesting possible exposure to a viral respiratory illness.  
+
+The patient’s primary concern is whether he may have COVID‑19.  
+
+Review of Systems  
+Constitutional: Fatigue, mild dizziness on standing, subjective feeling of being “hot”; denies fever, chills, night sweats, weight loss.  
+HEENT: Loss of taste, possible decreased smell, mild scratchy throat; no sore throat, no nasal congestion or discharge, no ear pain.  
+Respiratory: Dry cough for 3–4 days, no sputum, no hemoptysis, no wheezing, occasional shortness of breath after coughing; no chest pain.  
+Cardiovascular: No chest pain, palpitations, or known heart racing.  
+Gastrointestinal: One episode of diarrhea this morning; no abdominal pain, nausea, vomiting, constipation, or melena.  
+Genitourinary: Normal urination; no dysuria or hematuria.  
+Neurologic: Brief dizziness on standing; no confusion, memory loss, or focal deficits.  
+Musculoskeletal: No muscle aches or joint pain.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depression reported; PHQ‑2 score 1, GAD‑7 score 0 on recent screening.  
+
+Allergies  
+Patient reports possible cat allergy but no current exposure; otherwise no known drug or environmental allergies.
+
+Past Medical History  
+The electronic health record lists extensive chronic conditions, including obesity (BMI 31), pre‑diabetes, anemia, essential hypertension, metabolic syndrome, chronic kidney disease (stages 1‑4, now end‑stage renal disease with a history of kidney transplantation and subsequent graft failure), diabetes‑related kidney disease, and a history of renal transplant failure. However, the patient verbally states that he has never been diagnosed with any medical condition.  
+
+Surgical History  
+Appendectomy performed approximately four years ago (age ~ 69). No other surgeries reported by the patient.  
+
+Social History  
+The patient lives in a townhouse with his mother, step‑father, and younger sister. He is a high‑school student and attends school in person. He denies tobacco smoking and alcohol use. He reports occasional use of flavored vaping devices several times per day; the patient is unsure whether these contain nicotine or tobacco. He reports no recent illicit drug use. He reports no exposure to mold, pets, or other environmental hazards at home.  
+
+Family History  
+Maternal and paternal histories are not provided. The patient mentions a grandfather who had lung cancer and diabetes; no other family cardiac or pulmonary conditions are noted.  
+
+Current Medications  
+The patient reports taking no medications at this time. (The EMR lists multiple chronic medications including tacrolimus, antihypertensives, insulin, and others, but the patient denies current use.)
+
+Objective  
+
+Vital Signs (recorded on 2010‑05‑09)  
+- Temperature: 37.7 °C (99.9 °F)  
+- Heart Rate: 62 beats/min  
+- Respiratory Rate: 12 breaths/min  
+- Blood Pressure: Not documented  
+- SpO₂: Not documented  
+- Height: 176.7 cm; Weight: Not documented; BMI: 31.03 (obese)  
+
+Physical Examination  
+No detailed physical exam findings were documented during the encounter. The patient appears alert and oriented; airway patent; lungs clear to auscultation with no wheezes or rales reported; cardiovascular exam not described; abdomen soft, non‑tender; no skin lesions observed.  
+
+Laboratory Data (most recent values from EMR)  
+- Sodium: 137–141 mmol/L (within normal limits)  
+- Potassium: 4.8 mmol/L (normal)  
+- Chloride: 105–108 mmol/L (normal)  
+- BUN: 14 mg/dL (normal)  
+- Creatinine: 0.97–0.99 mg/dL (within normal range for chronic kidney disease baseline)  
+- Glucose: 95–100 mg/dL (fasting range)  
+- Calcium: 9.48 mg/dL (normal)  
+- CO₂ total: 20.21 mmol/L (low‑normal)  
+- PHQ‑2: 1 (negative screen)  
+- GAD‑7: 0 (negative screen)  
+
+No acute infectious labs (e.g., CBC, viral panel) were obtained during this visit.
+
+Assessment  
+1. Upper respiratory infection, likely viral in etiology (possible SARS‑CoV‑2 infection).  
+2. New‑onset dysgeusia (loss of taste) and possible anosmia, consistent with viral upper respiratory infection.  
+3. Dry cough, mild fatigue, and transient dizziness, likely secondary to the viral illness and mild dehydration.  
+4. Single episode of mild diarrhea, likely viral gastroenteritis component.  
+5. Chronic medical conditions per EMR (obesity, hypertension, pre‑diabetes, chronic kidney disease, prior kidney transplant) – patient denies active problems but they remain part of his medical record and may influence management.  
+
+Plan  
+
+Diagnostics  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing.  
+- Consider rapid influenza testing if clinically indicated.  
+
+Therapeutic Interventions  
+- Symptomatic care: Encourage adequate oral hydration, especially given mild dizziness and recent diarrhea.  
+- Antitussive agents may be used PRN for cough that interferes with sleep or daily activities.  
+- No antibiotics are indicated at this time given the likely viral etiology.  
+
+Isolation & Public Health  
+- Advise the patient to self‑isolate for 14 days from symptom onset, regardless of test result, to prevent potential spread.  
+- If the COVID‑19 test returns positive, the patient will be instructed to notify the local health department for contact tracing and follow local public health isolation guidelines.  
+
+Patient Education  
+- Discuss signs of worsening illness: fever >38 °C, increasing shortness of breath, chest pain, persistent high‑grade diarrhea, dehydration, or new neurologic symptoms. Instruct the patient to seek medical attention promptly if any of these develop.  
+- Counsel on vaping: review product ingredients, emphasize potential respiratory irritation, and offer resources for nicotine‑free alternatives or cessation.  
+
+Follow‑up  
+- Telephone follow‑up in 48‑72 hours to review COVID‑19 test results and clinical status.  
+- In‑person or telehealth follow‑up in 5‑7 days if symptoms persist or worsen.  
+- Routine follow‑up with primary care provider to review chronic conditions documented in the electronic record, especially kidney function and hypertension, once the acute illness resolves.  
+
+Disposition  
+The patient was discharged home with instructions as above. No further immediate investigations were ordered.

@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:34:15
+Time: 2.79s
+Tokens: 6,951 in / 1,480 out
+============================================================
+
+Patient Information:  
+Abbie Stamm, female, born November 16, 2001 (23 years old), residing at 635 Eichmann Neck Apt 65, Amherst, Massachusetts. Current encounter date February 10, 2024.
+
+Chief Complaint:  
+The patient presents with a 4‑day history of fever, a dry cough, and progressive fatigue. She reports a temperature of 38.5 °C measured this morning and notes that her symptoms have worsened over the past few days.
+
+History of Present Illness:  
+The patient reports that her cough and fever began on a Monday and have been steadily worsening. She has been feeling increasingly fatigued, experiencing mild nausea, and has had intermittent tension‑type headaches over the last several days. The cough is dry, non‑productive, and not associated with sputum, hemoptysis, or wheezing. She denies chest pain, dyspnea at rest, sore throat, dysphagia, or significant nasal congestion, though she notes a mild runny nose. She has not had any vomiting, abdominal pain, or urinary symptoms. She notes a slight loss of appetite but no significant weight change beyond a few pounds over the past week. Her past medical history includes childhood asthma and perennial allergic rhinitis, both inactive, mitral valve regurgitation (ongoing), and a prior episode of acute bronchitis in late 2016. She reports no recent exposure to sick contacts, recent travel, or known environmental irritants. She was asymptomatic for COVID‑19 until now, but due to overlapping symptoms, COVID‑19 testing is being ordered.
+
+Review of Systems:  
+Constitutional: Fever, fatigue, mild weight loss (few pounds over the week).  
+Respiratory: Dry cough, mild runny nose, no sputum, no wheeze, no chest pain, occasional shortness of breath after coughing.  
+Cardiovascular: No chest pain, palpitations, or dizziness.  
+Gastrointestinal: Mild nausea without vomiting, no abdominal pain, normal bowel habits.  
+Genitourinary: No urinary frequency, dysuria, or hematuria.  
+Neurologic: Tension‑type headaches, no confusion or dizziness.  
+Psychosocial: No significant stressors reported; living with a partner.  
+Allergies: Penicillin allergy (hives).  
+
+Past Medical History:  
+- Childhood asthma (resolved).  
+- Perennial allergic rhinitis (resolved).  
+- Mitral valve regurgitation (ongoing).  
+- Acute bronchitis (2016–2017).  
+- Viral sinusitis (2019).  
+- Acute viral pharyngitis (2023).  
+- Prediabetes (A1C 6.2% six months ago).  
+- Hypercholesterolemia (on rosuvastatin).  
+- Mild nasal allergies (history of allergies to bee venom, mold, house dust mite, animal dander, tree pollen, cow's milk, and peanut).  
+
+Surgical History:  
+- Inguinal hernia repair, approximately five years ago.  
+
+Social History:  
+- Non‑smoker, no tobacco use.  
+- Occasional alcohol intake (2–3 beers on weekends).  
+- No recreational drug use.  
+- Lives in a duplex, renting the basement; no known exposure to mold or asbestos.  
+- Works full‑time, no significant occupational exposures.  
+
+Family History:  
+No known family history of lung disease, heart disease, or cancer. The patient’s grandfather had bladder cancer; no other significant hereditary conditions reported.  
+
+Allergies:  
+- Penicillin (hives).  
+
+Current Medications:  
+- Rosuvastatin 20 mg daily (for hypercholesterolemia).  
+- Multivitamin (daily).  
+- Nitrofurantoin (discontinued; last dose Feb 11, 2024) – prescribed for a recent urinary tract infection.  
+
+Objective Findings:  
+Vitals: Temperature 38.5 °C; heart rate, blood pressure, respiratory rate, SpO₂, and weight not recorded during this encounter.  
+Physical Examination: No examination findings were documented in the transcript; no abnormalities noted.  
+
+Laboratory Data:  
+Urinalysis (prior encounter): WBC 13/HPF, RBC 1.96/HPF, protein 4.4 mg/dL, glucose 12.6 mg/dL; findings consistent with acute cystitis. No recent complete blood count or metabolic panel data available.  
+
+Assessment:  
+Primary diagnosis: Acute bronchitis (confirmed by clinical presentation and patient’s previous history).  
+Secondary considerations:  
+- Possible COVID‑19 infection (symptoms overlap and recent exposure in a mall environment).  
+- Acute urinary tract infection (based on recent urinalysis; already treated with nitrofurantoin).  
+- Prediabetes and hypercholesterolemia (chronic conditions requiring ongoing management).  
+
+Plan:  
+1. COVID‑19 PCR test to be performed today; advise the patient and her partner to self‑isolate for 14 days pending results.  
+2. Symptomatic treatment: acetaminophen 325 mg every 4–6 hrs as needed for fever and headache; maintain adequate hydration; rest.  
+3. Encourage continued use of rosuvastatin and review lipid panel at next primary‑care visit.  
+4. Discuss lifestyle modifications for prediabetes: increased physical activity (walking the dog), dietary changes (reduce sugary foods, portion control), and weight management.  
+5. If symptoms worsen (e.g., increasing dyspnea, chest pain, or new fever), return to clinic or seek urgent care; consider imaging (chest X‑ray) and possible empiric antibiotic therapy for bacterial pneumonia if indicated.  
+6. Follow‑up: Schedule a telehealth or in‑office visit in 7–10 days to review COVID‑19 test results and symptom progression; re‑assess blood glucose control and lipid status.  
+7. Reinforce infection prevention: hand hygiene, mask use, and avoidance of crowded indoor settings during isolation.  
+
+Discharge Instructions:  
+- Continue isolation until COVID‑19 test results are negative or until symptoms resolve.  
+- Monitor temperature twice daily; seek medical attention if temperature exceeds 38.9 °C or if symptoms deteriorate.  
+- Take acetaminophen as needed for fever and headache; do not exceed 3 g/day.  
+- Maintain rosuvastatin therapy; schedule lipid panel in 3 months.  
+- Schedule routine primary‑care appointment for prediabetes evaluation and management.  
+
+Follow‑up: Telehealth in 7–10 days or sooner if symptoms worsen. Routine primary‑care follow‑up in 3 months for metabolic and cardiovascular status.  
+
+No additional imaging or laboratory studies are ordered at this time. The patient was advised to contact the clinic if any new or worsening symptoms develop.

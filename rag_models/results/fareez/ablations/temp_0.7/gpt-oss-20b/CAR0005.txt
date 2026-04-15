@@ -1,0 +1,69 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:20:20
+Time: 1.65s
+Tokens: 7,367 in / 943 out
+============================================================
+
+Patient Information  
+Name: Amee Reva Goyette  
+Date of Birth: 1916-07-09 (Note: The patient’s age appears inconsistent with the clinical encounter; the encounter is treated as a contemporary visit based on the transcript.)  
+Sex: Female  
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915  
+
+Chief Complaint  
+The patient reports intermittent chest pain that began approximately two weeks ago.  
+
+History of Present Illness  
+The patient describes sharp, localized chest discomfort on the left side of the chest that lasts 20–30 minutes each episode. She has experienced two to three such episodes in the past two weeks, with no change in frequency or intensity. The pain is rated at a 4 out of 10 on a pain scale and does not appear to be relieved by over‑the‑counter analgesics such as acetaminophen, ibuprofen, or antacids. The pain is not associated with nausea, vomiting, dyspnea, or fever. The patient notes that episodes most commonly occur while at work or driving, but the pain is otherwise unrelated to exertion or rest. She has no prior history of similar chest pain or known cardiac disease.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight change reported.  
+Cardiovascular: No palpitations, shortness of breath, or prior chest pain.  
+Respiratory: No cough, wheeze, or dyspnea.  
+Gastrointestinal: No heartburn, reflux, or abdominal pain.  
+Other systems: No reported symptoms of nausea, vomiting, or gastrointestinal upset.  
+
+Past Medical History  
+No chronic medical conditions reported. The patient has not been on any regular medications, including cardiovascular or antihypertensive agents.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Social History  
+The patient is a current smoker, using approximately half a pack to one full pack of cigarettes daily, though she has been attempting to quit. She consumes one to two glasses of wine on weekends. She reports moderate physical activity, engaging in running or cycling three to four days per week, and has not experienced chest discomfort during exercise. The patient has experienced significant life stressors, including separation from her husband two years ago, which she believes may contribute to her current symptoms.  
+
+Family History  
+The patient reports a father who suffered a myocardial infarction at age 60 last year, which is a source of concern for her current chest pain. No other family history of cardiac disease or other significant illnesses was noted.  
+
+Medications  
+No current prescription or over‑the‑counter medications are being taken regularly, aside from occasional acetaminophen, ibuprofen, and antacids used during chest pain episodes.  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No physical examination findings were documented in the encounter.  
+
+Laboratory Data  
+No current laboratory results were available at the time of the visit.  
+
+Imaging  
+No imaging studies were performed or reported during this encounter.  
+
+Assessment  
+1. Intermittent, sharp, left-sided chest pain of uncertain etiology, likely non‑cardiac in origin given the lack of associated cardiac symptoms, normal physical exam (not documented but presumed normal), and absence of risk factors beyond smoking.  
+2. Consideration of anxiety or stress‑related chest discomfort secondary to recent life stressors.  
+3. Differential diagnosis includes musculoskeletal chest wall pain, gastroesophageal reflux disease (though patient denies heartburn), and less likely acute coronary syndrome given the episodic nature and lack of exertional precipitant, though cardiac evaluation remains prudent due to family history.  
+
+Plan  
+- Advise the patient to seek immediate medical attention if chest pain becomes more frequent, increases in intensity, or is accompanied by new symptoms such as dyspnea, palpitations, sweating, or nausea.  
+- Arrange for a low‑threshold evaluation of cardiac causes, including an electrocardiogram (ECG) and possible cardiac enzyme assessment, to rule out ischemic heart disease.  
+- Encourage smoking cessation support and provide resources for cessation programs.  
+- Discuss stress management strategies and consider referral to counseling or support services.  
+- Reinforce the importance of regular follow‑up with a primary care provider for ongoing assessment and monitoring.  
+- Provide written instructions on recognizing red‑flag symptoms and when to seek emergency care.  
+
+Follow‑up  
+The patient was advised to follow up with her primary care physician within one week to review ECG results and discuss further management, including potential cardiology referral if indicated.

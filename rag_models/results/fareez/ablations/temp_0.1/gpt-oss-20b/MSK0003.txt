@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:15:49
+Time: 3.19s
+Tokens: 7,121 in / 1,492 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: March 24, 1995  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Unit Number: 311  
+
+Chief Complaint  
+The patient presents with a 4–5 month history of dull, diffuse back pain that is worse in the morning and improves with movement.
+
+History of Present Illness  
+Mr. Steuber reports that his back pain began approximately five months ago and has progressively worsened. The pain is described as dull and diffuse, affecting the middle to lower back, without radiation to the legs or other areas. He rates the pain as 4–5 out of 10 on most days, with occasional peaks. Morning stiffness lasts 30–60 minutes before improving with activity. He has tried over‑the‑counter acetaminophen (Tylenol) and ibuprofen (Advil) with modest relief, but the stiffness returns the next morning. No precipitating trauma or injury is recalled. He denies any recent falls, weight loss, fever, chills, night sweats, or urinary or bowel changes. He reports increased fatigue and malaise over the past several months. He has no history of prior episodes of similar back pain. He also reports intermittent pain in his right knee and hands, which are intermittent and not currently associated with swelling or redness.
+
+Review of Systems  
+Constitutional: Fatigue, malaise; no fever, chills, night sweats, weight loss, or appetite changes.  
+Musculoskeletal: Diffuse back pain, intermittent knee and hand pain; no swelling, redness, or limited range of motion reported.  
+Neurologic: No numbness, tingling, or weakness.  
+Respiratory: Asthma, uses albuterol inhaler as needed; no current shortness of breath.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, diarrhea, constipation, or urinary symptoms.  
+Dermatologic: No rashes or nail changes.  
+Psychiatric: PHQ‑2 score of 2, GAD‑7 score of 2–3, indicating mild depressive and anxiety symptoms.  
+
+Past Medical History  
+- Asthma (well controlled, uses albuterol inhaler occasionally)  
+- Chronic low back pain (ongoing)  
+- Chronic pain (ongoing)  
+- Prior gastrointestinal infection with diarrhea and antibiotic treatment several months ago  
+- Prior knee injury (meniscal tear) and subsequent arthroscopic repair (no current knee symptoms)  
+
+Past Surgical History  
+- None reported.  
+
+Allergies  
+- Environmental allergies (pollen/ ragweed)  
+- One unspecified substance allergy noted in the record (severity 1).  
+
+Social History  
+- Occupation: Bank employee (full‑time).  
+- Living situation: Lives with girlfriend in a city condo.  
+- Tobacco: Never smoked cigarettes.  
+- Alcohol: Occasional beer or cocktails on weekends.  
+- Recreational drugs: Marijuana, used once or twice per week.  
+- Exercise: None reported.  
+- Sleep: No information available.  
+
+Family History  
+- Mother with psoriasis (no joint involvement reported).  
+- No other significant family history of autoimmune or musculoskeletal disease.  
+
+Current Medications  
+- Acetaminophen 325 mg tablets (as needed for pain)  
+- Ibuprofen 400 mg tablets (as needed for pain)  
+- Albuterol 0.83 mg/mL inhalation solution (as needed for asthma)  
+- Fexofenadine 60 mg tablets (as needed for allergies)  
+- Epinephrine auto‑injector (for anaphylaxis)  
+- Hydrocortisone 10 mg/mL topical cream (for allergic dermatitis)  
+
+Objective  
+Vital Signs  
+No vital sign data were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record.  
+
+Laboratory Studies  
+No laboratory studies were performed during this visit.  
+
+Imaging  
+No imaging studies were ordered or performed at this time.  
+
+Assessment  
+The patient’s presentation is most consistent with chronic low back pain of likely inflammatory origin, given the morning stiffness, progressive nature, and associated intermittent joint pain in the knee and hands. Differential diagnoses include:  
+1. Mechanical low back pain (non‑inflammatory)  
+2. Psoriatic arthritis (considering maternal psoriasis, though no skin lesions are present)  
+3. Ankylosing spondylitis (male, young adult, morning stiffness)  
+4. Reactive arthritis (post‑infectious, following a gastrointestinal illness)  
+
+Plan  
+1. Order laboratory work to evaluate for inflammatory arthritis:  
+   - Complete blood count with differential  
+   - Erythrocyte sedimentation rate (ESR)  
+   - C‑reactive protein (CRP)  
+   - Rheumatoid factor (RF)  
+   - Anti‑cyclic citrullinated peptide (anti‑CCP)  
+   - Antinuclear antibody (ANA)  
+   - HLA‑B27 typing  
+
+2. Order imaging studies:  
+   - X‑ray of the lumbar spine and sacroiliac joints  
+   - X‑ray of the hands and knees  
+
+3. Initiate or continue non‑steroidal anti‑inflammatory therapy:  
+   - Ibuprofen 400 mg orally every 6–8 hours as needed, not exceeding 1200 mg/day unless otherwise directed.  
+   - Consider acetaminophen 325 mg as adjunct for pain control.  
+
+4. Encourage physical therapy referral for core strengthening and posture education.  
+
+5. Provide patient education on activity modification, ergonomic adjustments at work, and the importance of early mobilization after waking.  
+
+6. Discuss safety netting: If the patient develops new neurological deficits (e.g., numbness, weakness, bladder or bowel dysfunction), fever, or worsening pain that does not improve with NSAIDs, he should seek urgent medical care.  
+
+7. Schedule a follow‑up appointment in 2 weeks to review laboratory results, imaging, and response to therapy.  
+
+8. Provide written instructions on medication use, potential side effects, and when to seek medical attention.  
+
+9. Encourage routine follow‑up with primary care and consider referral to a rheumatologist once laboratory and imaging results are available.  
+
+Discharge Instructions  
+- Continue current medications as prescribed.  
+- Take ibuprofen with food to minimize gastrointestinal upset.  
+- Monitor for any new symptoms such as fever, rash, or neurological changes.  
+- Maintain a pain diary to track intensity, duration, and response to medications.  
+- Contact the office or seek urgent care if symptoms worsen or new concerning signs develop.  
+
+Follow‑up  
+- Return to the office in 2 weeks for review of labs and imaging.  
+- If symptoms do not improve or worsen, consider earlier rheumatology referral.  
+
+This summary reflects the information provided in the patient interview and the electronic health record, with the transcript taking precedence for current clinical status.

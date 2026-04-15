@@ -1,0 +1,54 @@
+Model: google/medgemma-4b-it
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 05:03:06
+Time: 32.42s
+Tokens: 12,423 in / 523 out
+Cell: k3
+============================================================
+
+Patient Information:
+
+Name: Abe Huels
+DOB: 1961-09-02
+Sex: Male
+Unit Number: 275
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000
+
+Chief Complaint: The patient presents with numbness and tingling in the left hand, described as a burning sensation, that has been worsening over the past few months.
+
+History of Present Illness:
+
+The patient reports experiencing numbness and tingling in the left hand, described as a burning sensation, for approximately four to five months. Initially, the symptoms would only occur for a few minutes at a time and could be alleviated by shaking the hand or wrist. However, the symptoms have become more frequent and persistent, now occurring at night as well. The patient attributes the worsening to the symptoms being present at night.
+
+Associated Symptoms:
+
+The patient reports that the numbness and tingling are most prominent on the outside of the left hand, specifically affecting the thumb, index finger, and ring finger. The patient also describes a burning pain associated with the numbness and tingling. The patient denies any weakness in the arms.
+
+Past Medical History:
+
+The patient reports having hypothyroidism, which he is treated with thyroxine. He also reports being overweight, classified as obese class one. He takes Synthroid for his hypothyroidism.
+
+Medications:
+
+The patient is currently taking Synthroid for hypothyroidism. He is not on any weight loss medications.
+
+Social History:
+
+The patient is a smoker, smoking 5-10 cigarettes per day for approximately 10 years. He has tried to quit smoking.
+
+Family History:
+
+The patient reports a family history of stroke in his grandfather and high cholesterol in his father.
+
+Physical Exam:
+
+The physical exam revealed no signs of redness, swelling, or deformities in the left arm. Palpation of the wrist and elbow elicited no pain. Tinel's sign and Phalen's sign were positive.
+
+Assessment:
+
+Based on the patient's history, physical exam findings, and positive Tinel's and Phalen's signs, the patient is diagnosed with carpal tunnel syndrome.
+
+Plan:
+
+The patient was instructed to modify his activities to reduce repetitive wrist movements. Cold packs were recommended for symptomatic relief. Non-surgical treatments, such as wrist splinting and nonsteroidal anti-inflammatory drugs (NSAIDs), were discussed as potential options if symptoms persist. If these measures are ineffective, surgical intervention may be considered. The patient was advised to follow up with his primary care physician.

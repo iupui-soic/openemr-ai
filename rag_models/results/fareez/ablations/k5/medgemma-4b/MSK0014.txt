@@ -1,0 +1,50 @@
+Model: google/medgemma-4b-it
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-04-14 05:33:44
+Time: 27.54s
+Tokens: 11,502 in / 442 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Name: Adalberto Gerlach
+DOB: 1941-06-15
+Sex: Male
+Unit Number: 637
+Address: 236 Leannon Mall, Andover, Massachusetts 01810
+
+Chief Complaint: Right knee pain and swelling.
+
+History of Present Illness:
+
+The patient presents today complaining of right knee pain and swelling that began five days ago. He initially attributed the symptoms to his usual arthritis, but the pain and swelling have become more pronounced and are now significantly impacting his mobility. The pain is described as sharp, stabbing, and most intense with movement. The joint is also red and warm to the touch compared to his other knee. The pain is exacerbated by movement and relieved by rest. He has taken over-the-counter pain relievers (Advil) which provide some temporary relief. The pain is constant throughout the day, unlike his usual morning stiffness associated with osteoarthritis. He denies any trauma or injury to the knee. He did have a steroid injection to the same knee a week ago. He denies fevers or chills.
+
+Past Medical History:
+
+The patient has a history of osteoarthritis in both knees and hips, high blood pressure, a heart attack four years ago, and heart failure. He is also overweight.
+
+Medications:
+
+The patient is currently taking furosemide and ramipril for his blood pressure, and over-the-counter pain relievers. He has a penicillin allergy.
+
+Social History:
+
+The patient lives with his wife and daughter in a small townhouse in the city. He is retired due to his medical history. He drinks alcohol (3-4 beers per night) and used to smoke cigarettes for over 30 years, smoking 1-2 packs per day.
+
+Family History:
+
+Family history includes heart disease in his father and brother.
+
+Physical Exam:
+
+The physical exam reveals a red, swollen, and warm right knee. The patient has a limp when standing.
+
+Assessment:
+
+The differential diagnosis includes gout, pseudogout, and septic arthritis. The knee injection a week ago could predispose to infection.
+
+Plan:
+
+A knee aspiration will be performed to send for investigation.

@@ -1,0 +1,52 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:31:17
+Time: 2.40s
+Tokens: 9,232 in / 661 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel (as provided in the electronic health record)  
+Age: 25 years (patient reports being a 25‑year‑old student)  
+Date of Birth: Not available in the clinical encounter  
+
+Chief Complaint  
+Patient reports “really sharp pain in my chest” and expresses fear of having a heart attack.  
+
+History of Present Illness  
+The patient first noted the pain approximately three days ago. She describes it as a sharp, brief episode lasting a few seconds. The pain is most intense in the area over the heart and radiates to the neck. It worsens when coughing or when lying down and improves when she leans forward. She rates the pain 6 out of 10 on a pain scale. She denies any associated symptoms such as shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or any change in chest pain location. She has not experienced similar pain in the past. She has taken acetaminophen (Tylenol) once yesterday, which provided some relief. She reports no recent injuries to the chest area.
+
+Past Medical History  
+The patient reports no chronic medical conditions, no prior surgeries, and no history of hospitalizations.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight change, or fatigue.  
+Respiratory: No cough (except a brief cough during a recent flu episode), no shortness of breath.  
+Cardiovascular: No palpitations, no dizziness, no prior chest pain episodes.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Other: No headaches, no headaches, no weakness or numbness.  
+
+Social History  
+The patient is a college student studying engineering and works part‑time as a postal worker. She lives with her parents in a private house. She consumes alcohol occasionally, usually one or two drinks on weekends. She denies use of tobacco, recreational drugs, or illicit substances. She reports no regular exercise or sleep difficulties.  
+
+Family History  
+Father recently suffered a heart attack two weeks prior and passed away. No other known family history of cardiovascular disease, cancer, or other significant illnesses.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Physical Examination  
+Not assessed during this encounter.  
+
+Labs  
+Not assessed during this encounter.  
+
+Imaging  
+Not assessed during this encounter.  
+
+Assessment  
+Acute chest pain of uncertain etiology. Primary concern includes acute coronary syndrome given the patient’s fear, family history of myocardial infarction, and pain characteristics; musculoskeletal chest wall pain and pleuritic causes are also considered in the differential diagnosis.  
+
+Plan  
+The provider will obtain an electrocardiogram (ECG) to evaluate cardiac rhythm and ST‑segment changes. Blood work, including cardiac biomarkers, will be drawn if indicated by ECG findings. The patient was advised to refrain from unnecessary worry and to monitor symptoms closely. No new medications were prescribed at this time. The patient is instructed to return for follow‑up evaluation after test results or to seek emergent care if chest pain worsens, becomes more frequent, or if new symptoms such as shortness of breath or dizziness develop.

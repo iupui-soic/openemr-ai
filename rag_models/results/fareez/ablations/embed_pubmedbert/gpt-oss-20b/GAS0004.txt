@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:57:28
+Time: 2.85s
+Tokens: 11,612 in / 986 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Sex: Female  
+Age: Not specified in the encounter (transcript)  
+Address: Not provided in the encounter  
+
+Chief Complaint  
+The patient presents with acute diarrhea.
+
+History of Present Illness  
+The patient reports having diarrhea for the past three to four days. She describes the stools as consistently loose, occurring approximately every hour, and has had intermittent abdominal cramps that began the day before presentation. The patient denies any blood in the stool; the stool color remains brown. She has experienced two episodes of vomiting over the same period, describing the vomitus as watery. No fever or chills have been reported; the patient has felt fatigued but has not measured her temperature. The onset of symptoms was approximately five days after dining at a Chinese restaurant where she consumed rice and chicken Manchurian. No other dietary changes or exposures were noted. She reports decreased appetite since the onset of symptoms, with no significant change in urine output or voiding pattern.
+
+Review of Systems  
+Constitutional: Reports fatigue; denies fever, chills, weight loss, or night sweats.  
+Respiratory: No cough, wheeze, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Diarrhea, intermittent cramping, two episodes of vomiting; no blood or melena.  
+Genitourinary: No dysuria, frequency, or change in urine.  
+Skin: No rash or lesions.  
+Neurologic/psychiatric: No headaches, dizziness, or mood changes.  
+Other systems: No additional symptoms reported.
+
+Past Medical History  
+Asthma – currently uses a rescue inhaler as needed.  
+No other chronic medical conditions reported by the patient.
+
+Surgical History  
+No surgeries reported.
+
+Social History  
+The patient is a student living with two roommates in a shared apartment. She drinks alcohol occasionally (one to two drinks on weekends) and denies tobacco or illicit drug use. She has not traveled outside the local area in recent weeks and reports no contact with sick individuals. She has not been exposed to any known outbreaks or food poisoning incidents beyond the recent restaurant visit.
+
+Family History  
+Brother had appendicitis in his youth. Mother underwent a hysterectomy. No other significant gastrointestinal or chronic illnesses reported in the family.
+
+Current Medications  
+- Rescue inhaler for asthma (usage as needed).  
+No other regular medications are taken.
+
+Physical Examination  
+No physical examination findings were recorded during this encounter.
+
+Vital Signs  
+No vital sign measurements were obtained during this encounter.
+
+Laboratory Results  
+No laboratory studies were ordered or performed during this encounter.
+
+Imaging Studies  
+No imaging studies were ordered or performed during this encounter.
+
+Assessment  
+Acute infectious diarrhea, most likely of dietary origin related to a recent meal at a Chinese restaurant. Differential diagnoses include bacterial pathogens such as Campylobacter, Salmonella, Shigella, or enterotoxigenic E. coli, and viral etiologies such as norovirus. No red‑flag symptoms (fever, blood in stool, severe dehydration) are present at this time.
+
+Plan  
+
+1. **Rehydration** – Encourage oral intake of clear fluids or oral rehydration solution to prevent dehydration.  
+2. **Symptomatic Treatment** –  
+   - Loperamide 4 mg as a single dose if no blood is present, followed by 2 mg after each loose stool as needed, not exceeding 8 mg in 24 hours.  
+   - Ondansetron 4 mg orally for nausea/vomiting if symptoms worsen.  
+3. **Dietary Modification** – Resume a bland, low‑fiber diet once symptoms improve; avoid dairy, fatty foods, and spicy items until resolution.  
+4. **Monitoring** – Educate the patient to monitor for signs of dehydration (dry mucous membranes, dizziness, decreased urine output) and to seek urgent care if fever >38 °C, blood in stool, or persistent vomiting.  
+5. **Follow‑up** – Arrange a return visit or telehealth check‑in in 3 days to assess symptom resolution and to determine if further work‑up (stool culture, CBC, CMP) is warranted.  
+6. **Patient Education** – Discuss food safety, hand hygiene, and avoidance of questionable foods during future dining experiences.  
+7. **Documentation Note** – No laboratory or imaging studies are indicated at this time; repeat if symptoms persist beyond 48 hours or if clinical status changes.  
+
+The patient was advised to contact the clinic sooner if any red‑flag symptoms develop. The plan is to re‑evaluate her clinical status in a few days and to proceed with additional diagnostics only if necessary.

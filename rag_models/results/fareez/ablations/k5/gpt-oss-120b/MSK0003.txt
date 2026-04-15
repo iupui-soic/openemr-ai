@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:30:02
+Time: 5.82s
+Tokens: 8,315 in / 1,608 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 24 March 1995 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+Height: 169.7 cm (5 ft 7 in)  
+Weight: Not recorded at this visit; BMI previously documented as 42.03 (severely obese)  
+
+Chief Complaint  
+“Back pain and stiffness, especially in the morning, for the past several months.”  
+
+History of Present Illness  
+Mr. Steuber reports a dull, aching pain that involves the middle to lower portions of his back. The discomfort has been present for approximately five to six months and has gradually worsened over that time. He rates the pain as 4–5 out of 10 on a numeric scale, with some days feeling better and others worse. Morning stiffness is prominent; it improves after about 30 to 60 minutes of activity and the pain lessens as the day progresses. He denies any specific inciting event or trauma. The pain does not radiate to the extremities, and he does not notice swelling, redness, or warmth over the affected area. He has tried over‑the‑counter acetaminophen and ibuprofen, which provide modest relief but do not eliminate the stiffness the following morning.  
+
+Associated musculoskeletal symptoms include intermittent pain in the right knee and both hands that began roughly six months ago; these episodes are brief and resolve spontaneously. He denies numbness, tingling, or weakness in the legs or arms.  
+
+Constitutional complaints include increased fatigue and a general sense of malaise over the same period. He reports no fevers, chills, night sweats, weight loss, or changes in appetite.  
+
+Review of Systems  
+Constitutional: Fatigue and malaise present; no fever, chills, night sweats, weight change, or appetite change.  
+Respiratory: History of asthma, uses a rescue inhaler as needed; no shortness of breath at rest.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No current abdominal pain, nausea, vomiting, diarrhea, or constipation. He experienced an episode of diarrhea several months ago after a buffet, treated with antibiotics at that time.  
+Genitourinary: No dysuria, urgency, frequency, or incontinence.  
+Musculoskeletal: Dull, non‑radiating low‑mid back pain with morning stiffness; intermittent right knee and hand pain; no swelling, erythema, or deformity; no neurologic deficits.  
+Skin: No rashes, lesions, or nail changes.  
+Neurologic: No headache, dizziness, numbness, tingling, or weakness.  
+Psychiatric: Mild depressive and anxiety symptoms noted on screening questionnaires (PHQ‑2 scores 1–2, GAD‑7 scores 1–3), but no active suicidal ideation or severe anxiety reported.  
+
+Allergies  
+Environmental allergens (likely pollen or ragweed) – severity not specified. No known drug allergies reported.  
+
+Past Medical History  
+- Asthma, intermittent, managed with rescue inhaler.  
+- Environmental (seasonal) allergic rhinitis.  
+- Chronic low back pain documented in the record (onset 2014).  
+- Prior viral sinusitis, acute bronchitis, and a self‑limited episode of gastroenteritis with antibiotic treatment several months ago.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Social History  
+Employed full‑time as a bank employee.  
+Lives with his girlfriend in a condominium in the city.  
+Tobacco: Never smoker.  
+Alcohol: Consumes beer or cocktails occasionally, typically on weekends.  
+Recreational drug use: Smokes marijuana approximately once or twice per week.  
+Exercise: No regular exercise reported.  
+
+Family History  
+Mother has psoriasis involving the skin; no known joint disease in mother. No other family medical history reported.  
+
+Current Medications (home)  
+- Acetaminophen 325 mg oral tablet, as needed for pain.  
+- Ibuprofen (Advil) 200‑400 mg oral tablet, as needed for pain.  
+- Albuterol inhalation solution (rescue inhaler) as needed for asthma.  
+- Fexofenadine 60 mg oral tablet daily for environmental allergies.  
+
+Objective  
+Vital Signs: Heart rate 86 beats/min; respiratory rate 15 breaths/min; temperature not taken; blood pressure not recorded at this encounter; weight not recorded; BMI previously documented as 42.03 (severely obese).  
+
+Physical Examination: No physical exam findings documented for this visit.  
+
+Laboratory Data  
+No laboratory studies were obtained during the current encounter. Prior CBC values (most recent) show: hemoglobin 13.9 g/dL, hematocrit 39 %, white blood cell count within normal limits, platelets 287 ×10³/µL. No inflammatory marker results are available.  
+
+Imaging  
+No imaging studies have been performed to date.  
+
+Assessment  
+1. Chronic low‑back pain with predominant morning stiffness – differential includes mechanical low‑back pain secondary to deconditioning and obesity, versus inflammatory spondyloarthropathy (ankylosing spondylitis, psoriatic arthritis, or reactive arthritis).  
+2. Intermittent right knee and hand arthralgias – possibly related to an underlying inflammatory process.  
+3. Asthma, intermittent, well‑controlled with rescue inhaler.  
+4. Environmental allergic rhinitis.  
+5. Obesity (BMI > 40) contributing to musculoskeletal strain.  
+6. Mild depressive and anxiety symptoms per screening questionnaires.  
+
+Plan  
+- Schedule a comprehensive musculoskeletal examination, focusing on spinal range of motion, sacroiliac tenderness, and peripheral joint assessment.  
+- Order laboratory studies: CBC with differential, ESR, CRP, rheumatoid factor, anti‑CCP, and ANA to evaluate for inflammatory arthritis.  
+- Obtain plain radiographs of the lumbar spine, sacroiliac joints, and bilateral hands and knees to assess for sacroiliitis, syndesmophytes, or erosive changes.  
+- Continue as‑needed acetaminophen and ibuprofen for pain; advise the patient to take ibuprofen with food and limit use to the lowest effective dose.  
+- Encourage regular low‑impact stretching and strengthening exercises once pain permits; refer to physical therapy for a back‑strengthening program.  
+- Discuss weight‑management strategies, including dietary counseling and gradual increase in physical activity, given severe obesity.  
+- Maintain current asthma regimen; ensure rescue inhaler is readily available.  
+- Continue daily fexofenadine for allergy symptoms.  
+- Provide education on red‑flag symptoms (new onset weakness, numbness, bowel or bladder dysfunction, fever, unexplained weight loss) and instruct the patient to seek urgent care if they develop.  
+- Arrange referral to rheumatology for further evaluation of possible spondyloarthropathy.  
+- Follow‑up in primary care in 2–4 weeks to review lab results, imaging, and response to the current pain management plan.  
+- Document mild depressive and anxiety symptoms; reinforce coping strategies and consider referral to behavioral health if symptoms persist or worsen.  
+
+Disposition  
+Patient was counseled on the plan, agreed to the recommended work‑up, and will be contacted with results and next steps. No immediate interventions required beyond the outlined orders.

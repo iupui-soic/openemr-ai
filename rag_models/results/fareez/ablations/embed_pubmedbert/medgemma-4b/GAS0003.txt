@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 06:28:26
+Time: 37.23s
+Tokens: 18,462 in / 475 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+The patient is Ali Hayes, DOB 11/05/1946, female, and resides at 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086.
+
+Chief Complaint:
+
+The patient presents with abdominal pain.
+
+History of Present Illness:
+
+The patient reports abdominal pain that started approximately 8 hours ago. The pain is primarily located on the right side of the abdomen. The pain is described as an aching pain, initially coming and going, but now constant. The pain is rated as an 8 out of 10, with a potential for 10. The patient states that the pain started about 8 hours ago and has been constant for the past 5-6 hours. The patient denies any specific triggers or alleviating factors. She has not tried any medications, specifically Tylenol, and reports that it did not relieve the pain. She reports some nausea, but no vomiting. She denies fever or chills. The patient denies any changes in bowel movements. She has not traveled recently. She reports some fatigue.
+
+Past Medical History:
+
+The patient has a history of cerebral palsy, spasticity, gastroesophageal reflux disease, prediabetes, chronic kidney disease stage 2, diabetes mellitus, loss of teeth, obesity, metabolic syndrome X, tubal ligation, chronic intractable migraine without aura, chronic pain, dependent drug abuse, a criminal record, and chronic kidney disease stage 3. She also has proteinuria due to type 2 diabetes mellitus.
+
+Medications:
+
+The patient takes metformin for her diabetes.
+
+Family History:
+
+The patient's father had a heart attack in his 60s. No other significant family history is reported.
+
+Social History:
+
+The patient is laid off due to COVID. She drinks alcohol occasionally, consuming 1-2 drinks per day. She does not smoke or use recreational drugs.
+
+Physical Exam:
+
+No specific physical exam findings are mentioned in the provided data.
+
+Assessment:
+
+The patient presents with abdominal pain, likely related to her medical history, including diabetes and chronic kidney disease. Further evaluation is needed to determine the underlying cause of the pain.
+
+Plan:
+
+Further evaluation is needed to determine the cause of the abdominal pain. This may include further laboratory testing and/or imaging studies. The patient should follow up with her primary care physician.

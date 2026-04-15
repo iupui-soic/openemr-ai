@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-20b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:28:32
+Time: 2.58s
+Tokens: 6,377 in / 1,229 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Dooley’s 1‑year‑old son (name not provided in the transcript)  
+- **Age:** 1 year  
+- **Gender:** Male  
+- **Encounter Date:** 2026‑04‑14  
+- **Chief Complaint:** Fever, cough, and runny nose  
+
+---
+
+### **Subjective (S)**  
+
+**History of Present Illness (HPI)**  
+The patient’s mother presents with a 2‑day history of fever (highest recorded 38.8 °C), dry cough, clear nasal discharge, mild sore throat, and myalgias. She reports that the cough and rhinorrhea began on day 1, with fever and chills developing last night. No shortness of breath, wheezing, chest pain, ear pain, or vomiting has been noted. The child has a decreased appetite but is still eating solids in smaller portions.  
+
+**Review of Systems (ROS)**  
+
+| System | Findings |
+|--------|----------|
+| **Constitutional** | Fever (38.8 °C), chills, mild myalgias, decreased appetite |
+| **Respiratory** | Dry cough, clear rhinorrhea, no dyspnea, no wheeze |
+| **ENT** | Mild sore throat, no ear pain or discharge, vision and hearing intact |
+| **Cardiovascular** | None reported |
+| **Gastro‑intestinal** | No vomiting, no diarrhea |
+| **Skin** | No rash |
+| **Neurologic** | No dizziness, no focal deficits |
+| **Allergic/Immunologic** | No known allergies |
+
+**Past Medical History (PMH)**  
+- No chronic illnesses, surgeries, or hospitalizations.  
+- No known drug allergies.  
+
+**Immunization Status**  
+- Up‑to‑date per parent’s report.  
+
+**Social History**  
+- No exposure to tobacco smoke at home.  
+- No recent travel.  
+- Lives with parents and two siblings; no known sick contacts.  
+
+**Family History**  
+- No family history of lung or cardiac disease.  
+
+**Current Medications**  
+- None.  
+
+---
+
+### **Objective (O)**  
+
+| Parameter | Value | Note |
+|-----------|-------|------|
+| **Temperature** | 38.8 °C | Febrile |
+| **Heart Rate** | Not recorded | – |
+| **Respiratory Rate** | Not recorded | – |
+| **Blood Pressure** | Not recorded | – |
+| **SpO₂** | Not recorded | – |
+| **Weight** | Not recorded | – |
+
+**Physical Examination**  
+
+- **General:** Alert, active, in mild distress due to fever.  
+- **HEENT:** Clear nasal mucosa; mild erythema of the oropharynx; no tonsillar exudates; no ear discharge.  
+- **Neck:** Supple, no lymphadenopathy.  
+- **Cardiovascular:** Regular rate and rhythm; no murmurs appreciated.  
+- **Respiratory:** Clear breath sounds bilaterally; no wheezes, rales, or crackles.  
+- **Abdomen:** Soft, non‑tender.  
+- **Skin:** No rash, erythema, or lesions.  
+- **Neurologic:** Awake, responsive; no focal deficits.  
+
+**Laboratory/Imaging**  
+- No labs or imaging performed during this visit.  
+- **COVID‑19 test** ordered (nasopharyngeal swab); result pending (24–48 h).  
+
+---
+
+### **Assessment (A)**  
+
+1. **Acute viral upper respiratory infection (common cold)** – most likely etiology based on presentation.  
+2. **Possible influenza** – differential during influenza season.  
+3. **COVID‑19 infection** – cannot be ruled out; pending test results.  
+
+*No evidence of bacterial pneumonia or lower respiratory tract involvement.*
+
+---
+
+### **Plan (P)**  
+
+1. **Diagnostic Testing**  
+   - COVID‑19 RT‑PCR swab (results in 24–48 h).  
+   - Consider influenza rapid test if in season or if symptoms worsen.
+
+2. **Therapeutics**  
+   - **Supportive care**:  
+     - Adequate hydration (oral fluids or breastfeed).  
+     - Fever control with acetaminophen 10 mg/kg PO every 6 h as needed.  
+     - Rest.  
+   - No prescription antibiotics or bronchodilators at this time.
+
+3. **Education & Counseling**  
+   - Instruct parents to monitor for:  
+     - Persistent high fever >38.9 °C >48 h.  
+     - New or worsening cough, wheezing, or breathing difficulty.  
+     - Poor oral intake or signs of dehydration (dry mucous membranes, decreased tears).  
+     - Any new rash, vomiting, or diarrhea.  
+   - Emphasize hand hygiene and respiratory etiquette.  
+   - Isolate the child if COVID‑19 positive; limit exposure to household members, especially the elderly.
+
+4. **Follow‑up**  
+   - Return for test results in 24–48 h.  
+   - Re‑evaluate if symptoms worsen or new concerns arise.  
+   - If COVID‑19 test positive and symptoms become severe or new respiratory distress develops, seek urgent care or ED evaluation.
+
+5. **Discharge Instructions**  
+   - Rest and hydration.  
+   - Use acetaminophen for fever/pain as directed.  
+   - Avoid over‑the‑counter cough suppressants (not recommended for <4 y).  
+   - Keep the child out of daycare/school until fever resolves and symptoms improve.  
+
+**Signature:** ___________________________  
+**Date:** 2026‑04‑14  
+
+---

@@ -1,0 +1,110 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:12:54
+Time: 4.41s
+Tokens: 6,674 in / 1,336 out
+============================================================
+
+Patient Information:  
+Name: Abbey Shala Kunde  
+Date of Birth: 02 March 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+Medical Record Number: 109  
+
+Chief Complaint:  
+Dry cough of three days duration accompanied by frontal pressure‑type headache, generalized myalgias, low‑grade feverish feeling, and one episode of loose stools.
+
+History of Present Illness:  
+The patient reports that the dry, non‑productive cough began three days ago, followed shortly thereafter by generalized muscle aches and a frontal “band‑like” pressure headache. The headache is described as pressure rather than throbbing and occurs daily, with brief periods of relief after taking acetaminophen or ibuprofen. She also feels feverish, although she has not measured a temperature, and notes a single day of watery diarrhea without blood. She denies sputum production, hemoptysis, sore throat, nasal congestion or rhinorrhea, shortness of breath, chest pain, nausea, vomiting, loss of taste or smell, chills, night sweats, or marked fatigue. There are no recent travel exposures, known contacts with ill individuals, or environmental exposures to dust, fumes, or animals. She has not attempted any over‑the‑counter remedies for the cough. She reports decreased appetite but stable weight. She has been off work for the past two days and is working from home. She lives with her wife, who is currently asymptomatic.
+
+Review of Systems:  
+Constitutional: Low‑grade feverish sensation, decreased appetite, one day of watery diarrhea. No chills, night sweats, or weight loss.  
+HEENT: Dry cough; no sore throat, rhinorrhea, or nasal congestion; no loss of taste or smell.  
+Respiratory: Dry cough, no sputum, no dyspnea, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: One episode of loose stools, no blood, no nausea or vomiting.  
+Musculoskeletal: Generalized myalgias, no recent exertion or injury.  
+Neurological: Frontal pressure‑type headache, intermittent, no visual changes or neurological deficits.  
+Dermatologic: No rash.  
+Psychiatric: No anxiety or depression reported at this visit.  
+
+Past Medical History:  
+- Essential hypertension (diagnosed 2011)  
+- Obesity (BMI 35.8)  
+- Recurrent urinary tract infections  
+- Prior acute viral sinusitis (2019, 2022)  
+- Prior acute bronchitis (2020)  
+- History of ACL reconstruction (approximately 10 years ago)  
+
+Surgical History:  
+- Right knee anterior cruciate ligament repair (≈10 years prior)  
+
+Social History:  
+- Occupation: Employee of a pharmacy company; occasional on‑site work, currently working from home due to illness.  
+- Living situation: Lives with spouse in a townhouse in Boston.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes 3–4 beers per week.  
+- Recreational drugs: Occasionally uses CBD oil; no other illicit drug use.  
+- Exercise: No regular exercise reported.  
+
+Family History:  
+- Father: Hypertension.  
+- Paternal grandfather: Lung cancer (smoked). No other significant familial illnesses reported.  
+
+Allergies:  
+- Peanut allergy (carries epinephrine auto‑injector).  
+- No known drug allergies.  
+
+Medications:  
+- Multivitamin (daily)  
+- Vitamin D supplement (daily)  
+The patient reports no other prescription or over‑the‑counter medications at this time.  
+
+Vital Signs (most recent recorded in the electronic record):  
+- Heart Rate: 98 beats per minute  
+- Respiratory Rate: 15 breaths per minute  
+- Blood Pressure: Not recorded at this encounter  
+- Temperature: Not recorded; patient reports feeling feverish  
+- SpO₂: Not recorded  
+- Height: 167.7 cm  
+- Weight: Not recorded (BMI documented as 35.84)  
+
+Physical Examination:  
+No physical examination was performed during this telehealth encounter.  
+
+Laboratory and Imaging Studies:  
+- No point‑of‑care labs or imaging obtained at this visit.  
+- A nasopharyngeal swab for SARS‑CoV‑2 PCR was ordered during the encounter.  
+
+Assessment:  
+1. Upper respiratory infection, likely viral in etiology.  
+2. Rule‑out COVID‑19 infection (pending PCR result).  
+3. Essential hypertension, stable.  
+4. Obesity (BMI 35.8).  
+
+Plan:  
+Diagnostics:  
+- Perform SARS‑CoV‑2 PCR nasopharyngeal swab today; results expected within 24–48 hours.  
+
+Therapeutic:  
+- Symptomatic treatment: Continue acetaminophen 650 mg PO q6‑8 hours as needed for fever or headache; ibuprofen 200 mg PO q6‑8 hours may be used if no contraindications.  
+- Encourage adequate hydration and rest.  
+- Monitor temperature; if fever ≥38.0 °C (100.4 °F) or worsens, seek medical attention.  
+
+Isolation and Public Health:  
+- Advise patient to self‑isolate for at least 10 days from symptom onset and until fever‑free for 24 hours without antipyretics and symptoms improve, per current public health guidelines.  
+- Follow local public health instructions regarding repeat testing or clearance to return to work.  
+
+Follow‑up:  
+- Telephone or telehealth follow‑up in 48–72 hours to review SARS‑CoV‑2 test result and clinical status.  
+- Advise the patient to present sooner if she develops shortness of breath, chest pain, persistent high fever, worsening cough, or any new concerning symptoms.  
+
+Patient Education:  
+- Discussed the likely viral nature of her illness, the importance of isolation, hand hygiene, and mask use to protect household contacts.  
+- Reviewed red‑flag symptoms that would warrant immediate evaluation.  
+
+Signature:  
+[Physician’s name], MD  
+Date of encounter: 4 August 2024

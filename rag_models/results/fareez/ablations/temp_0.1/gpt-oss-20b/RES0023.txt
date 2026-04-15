@@ -1,0 +1,79 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:15:08
+Time: 2.75s
+Tokens: 13,529 in / 1,323 out
+============================================================
+
+Patient Information  
+Aaron Feeney, male, born December 5, 1915, presents to the emergency department for a five‑day history of a dry cough that has progressively worsened and is now interfering with sleep. He reports associated feverish sensations, night sweats, sore throat, and a recent loss of smell. He denies chest pain, nausea, vomiting, chills, or significant weight change. He has a past medical history of hypertension and type 2 diabetes mellitus, for which he takes ramipril and metformin, and he takes vitamin D supplementation. He has had a cholecystectomy approximately ten years ago. He has no known drug allergies; he reports environmental pollen sensitivity. He is a non‑smoker, consumes 3–4 beers on weekends, and denies cannabis or other recreational drug use. He works at a grocery store and lives with his wife and two children, all of whom have not reported recent illness. Family history is notable for asthma in his brother and mother.
+
+Chief Complaint  
+The patient reports a dry cough that began five days ago, has worsened over time, and is now persistent throughout the day and night, disrupting sleep. He also reports a sore throat, feverish feeling, night sweats, and a recent loss of smell.
+
+History of Present Illness  
+The cough started five days prior to presentation and has been progressively worsening. It is dry, non‑productive, and occurs throughout the day. The patient notes that the cough has become more intense, leading to throat discomfort and occasional chest discomfort that is now more localized to the throat. He reports feeling hot and sweaty, suggesting a fever, but has not measured his temperature. He experienced night sweats that soaked his shirt during the previous night. He denies chest pain, shortness of breath, wheezing, or hemoptysis. He denies nausea, vomiting, abdominal pain, or diarrhea. He reports a recent loss of smell, but his taste remains intact. He has not experienced weight loss, chills, or significant fatigue beyond feeling exhausted.
+
+Review of Systems  
+Constitutional: feverish sensation, night sweats, exhaustion.  
+Respiratory: dry cough, sore throat, loss of smell, no chest pain, no wheezing, no shortness of breath.  
+Cardiovascular: no chest pain, no palpitations.  
+Gastrointestinal: no nausea, vomiting, abdominal pain, or diarrhea.  
+Neurologic: no headaches, dizziness, or syncope.  
+Psychiatric: no anxiety or depression reported.  
+Skin: no rash.  
+Musculoskeletal: no joint pain.  
+Endocrine: no polyuria or polydipsia.  
+Genitourinary: no dysuria or hematuria.  
+Hematologic: no bruising or bleeding.  
+Allergy/Immunologic: environmental pollen sensitivity.  
+
+Past Medical History  
+Hypertension, type 2 diabetes mellitus, cholecystectomy, obesity (BMI 31.5), chronic kidney disease stage 1, anemia, hyperlipidemia, metabolic syndrome, coronary artery disease with prior bypass graft, osteoarthritis of the hand, and a history of renal transplant.  
+
+Surgical History  
+Cholecystectomy (approximately 10 years ago).  
+
+Social History  
+Non‑smoker. Alcohol use: 3–4 beers on weekends. No recreational drug use. Lives with wife and two children. Works at a grocery store. No recent travel. No known exposure to sick contacts beyond routine grocery store interactions.  
+
+Family History  
+Brother and mother have asthma. No other significant family history reported.  
+
+Current Medications  
+Ramipril 10 mg daily, Metformin (dose not specified), Vitamin D supplementation.  
+
+Allergies  
+Environmental pollen. No known drug allergies.  
+
+Physical Examination  
+No vital signs or physical examination findings were documented during this encounter.  
+
+Laboratory Results  
+- Sodium 143.9 mmol/L (normal).  
+- Chloride 103.8 mmol/L (normal).  
+- Potassium 4.74 mmol/L (normal).  
+- Creatinine 0.39 mg/dL (low, likely due to chronic kidney disease).  
+- Glucose 70.6 mg/dL (low).  
+- AST 36.8 U/L (slightly elevated).  
+- Alkaline phosphatase 79.5 U/L (normal).  
+- Protein in urine 280 mg/dL (elevated).  
+- Other routine labs within normal limits.  
+
+Imaging  
+No imaging studies were performed during this visit.  
+
+Assessment  
+The patient’s presentation is most consistent with an acute viral bronchitis, likely a respiratory viral infection. The dry cough, sore throat, feverish sensation, night sweats, and anosmia are typical of a viral upper respiratory tract infection, and the absence of sputum production, chest pain, or significant hypoxia supports a non‑bacterial etiology. Given the current pandemic context, a SARS‑CoV‑2 infection remains a differential consideration; therefore, a nasopharyngeal swab for COVID‑19 testing was ordered.  
+
+Plan  
+1. COVID‑19 testing: A nasopharyngeal swab will be obtained and the patient will be advised to self‑isolate for 14 days pending results.  
+2. Symptomatic treatment: Acetaminophen for fever and discomfort; recommend adequate hydration and rest.  
+3. Monitor for worsening symptoms: If the patient develops shortness of breath, chest pain, or fever >38.3°C, he should return to the emergency department or call his primary care provider.  
+4. Follow‑up: The patient will be instructed to follow up with his primary care provider within 7–10 days or sooner if symptoms worsen.  
+5. Education: Discuss the importance of hand hygiene, mask use, and avoiding close contact with others while symptomatic.  
+6. Medication review: No changes to current antihypertensive or antidiabetic therapy are indicated at this time.  
+7. Lifestyle: Encourage continued avoidance of smoking, moderate alcohol consumption, and adherence to a balanced diet.  
+
+The patient was advised to monitor his symptoms closely, maintain hydration, and seek medical attention if he experiences any new or worsening symptoms. He was discharged with instructions to self‑isolate and to follow up as outlined.

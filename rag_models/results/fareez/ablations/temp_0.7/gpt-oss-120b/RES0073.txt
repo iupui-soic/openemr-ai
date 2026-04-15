@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-120b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 04:12:23
+Time: 6.43s
+Tokens: 12,521 in / 1,844 out
+============================================================
+
+Patient Information:  
+Aaron Bartoletti is a 44‑year‑old male (DOB 03‑Aug‑1981) residing at 409 Veum Drive, Spencer, Massachusetts. He is employed part‑time at a grocery store and lives alone in an apartment just outside of London. He reports a past medical history significant for essential hypertension, dyslipidemia (treated with a statin), chronic kidney disease (stage 1–4 documented historically with a history of renal transplantation), and a remote history of viral sinusitis. He denies any known drug or environmental allergies. Current home medications include hydrochlorothiazide 25 mg daily, amlodipine 2.5 mg daily, a statin (type not specified), and a multivitamin. He reports no use of tobacco; he quit several years ago. Alcohol use is limited to red wine a few times per week, and he reports occasional cannabis use (approximately once or twice per month). He has no recent hospitalizations or surgeries.
+
+Chief Complaint:  
+Nasal congestion, facial pressure/pain, and clear nasal discharge of 5 days’ duration.
+
+History of Present Illness:  
+The patient reports that approximately eight days ago he experienced a brief episode of a runny nose that resolved, followed by a worsening of symptoms five days ago. Since then he has had persistent clear to whitish nasal discharge, post‑nasal drip especially on waking, and marked nasal obstruction that forces him to alternate sides during sleep. Over the past two days he has noted increasing pressure and pain localized to the cheeks, maxillary region, and the area just inferior to the nose extending to the anterior teeth. He describes the pain as pressure‑type rather than sharp and denies any dental pain, grinding, or temporomandibular joint dysfunction. He reports a new loss of smell over the last three days but retains normal taste. He denies cough, sore throat, wheezing, shortness of breath, chest pain, fever, chills (aside from brief episodes of chills), weight loss, nausea, vomiting, abdominal pain, diarrhea, urinary symptoms, rash, joint or muscle aches, weakness, or dizziness. He notes mild eye redness and itchiness. He has had a similar self‑limited episode about two years ago. He has not been exposed to sick contacts, has not traveled recently, and his coworkers have remained well.
+
+Review of Systems:  
+- Constitutional: No fever, chills brief, no weight loss, no fatigue noted.  
+- ENT: Clear nasal discharge, nasal obstruction, post‑nasal drip, loss of smell, mild eye redness and itching; no sore throat, cough, or wheeze.  
+- Respiratory: No dyspnea, no chest pain.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+- Genitourinary: No dysuria or urinary frequency.  
+- Musculoskeletal: No joint or muscle pain, no weakness.  
+- Neurologic: No headache, dizziness, or light‑headedness.  
+- Dermatologic: No rash.  
+- Psychiatric: PHQ‑9 score 24 (severe depressive symptoms) noted on laboratory panel; otherwise denies suicidal ideation.  
+
+Past Medical History:  
+- Essential hypertension.  
+- Dyslipidemia.  
+- Chronic kidney disease (historical stages 1–4) with a history of renal transplantation.  
+- Prior episodes of viral sinusitis.  
+- Chronic migraine without aura.  
+- Other historic conditions (e.g., gingivitis, stress, substance misuse) are documented but not currently active.  
+
+Surgical History:  
+No surgeries reported.
+
+Social History:  
+Lives alone, works part‑time at a grocery store, no current tobacco use (quit several years ago), occasional alcohol (red wine), occasional cannabis use. No recent travel. No known exposure to ill individuals.
+
+Family History:  
+No known family history of lung, heart disease, or cancer.
+
+Allergies:  
+No known drug or environmental allergies reported.
+
+Current Medications:  
+- Hydrochlorothiazide 25 mg PO daily.  
+- Amlodipine 2.5 mg PO daily.  
+- Statin (unspecified) for dyslipidemia.  
+- Multivitamin daily.  
+
+Vital Signs (most recent):  
+- Heart Rate: 85 beats/min.  
+- Respiratory Rate: 14 breaths/min.  
+- Blood Pressure: Not recorded at this visit.  
+- Temperature: Not recorded.  
+- Height: 179.8 cm; Weight: Not recorded; BMI: 28.83 kg/m².  
+- SpO₂: Not recorded.
+
+Physical Examination:  
+No physical examination findings documented during this encounter.
+
+Laboratory Data (most recent):  
+- Complete blood count: WBC 3.5 ×10³/µL (low‑normal), RBC 5.46 ×10⁶/µL, Hemoglobin 16.36 g/dL, Hematocrit within normal limits, MCV 88.7 fL, MCHC 35.7 g/dL, Platelets 209 ×10³/µL.  
+- Lipid panel: Total cholesterol 186.6 mg/dL, LDL 98.1 mg/dL, HDL 62.3 mg/dL, Triglycerides 130.7 mg/dL.  
+- Mental health screens: PHQ‑9 total 24 (severe depression), PHQ‑2 total 4, GAD‑7 total 3 (minimal anxiety).  
+
+Imaging:  
+No imaging performed during this visit.
+
+Assessment:  
+1. Acute sinusitis – clinical picture of persistent nasal obstruction, clear purulent‑type discharge, facial pressure localized to the maxillary region, loss of smell, and a biphasic course (initial improvement followed by worsening) raises concern for bacterial sinusitis despite the predominately clear discharge.  
+2. Hypertension, well‑controlled on current regimen.  
+3. Dyslipidemia, currently managed with a statin.  
+4. Chronic kidney disease with prior renal transplantation – stable, no acute concerns noted.  
+5. Severe depressive symptoms (PHQ‑9 = 24) – warrants further evaluation and possible intervention.  
+
+Plan:  
+- **Sinusitis Management:** Instruct the patient to obtain a home temperature measurement. If fever ≥38.3 °C (101 °F) or worsening symptoms persist beyond 10 days, initiate empiric antibiotic therapy (e.g., amoxicillin‑clavulanate) as per current sinusitis guidelines. Until then, recommend supportive care: saline nasal irrigation several times daily, intranasal corticosteroid spray (e.g., fluticasone), oral decongestant (e.g., pseudoephedrine) if no contraindications, and analgesics such as acetaminophen or ibuprofen for facial pain. Advise the patient to continue normal hydration and to elevate the head of the bed to reduce post‑nasal drip.  
+- **Follow‑up:** Re‑evaluate in 7 days or sooner if fever develops, symptoms markedly worsen, or new ocular or neurologic symptoms appear.  
+- **Hypertension & Dyslipidemia:** Continue current antihypertensive regimen (hydrochlorothiazide, amlodipine) and statin therapy. No changes at this time.  
+- **Renal Status:** No acute issues; continue routine nephrology follow‑up as previously arranged.  
+- **Mental Health:** Given the severe PHQ‑9 score, discuss the need for a formal mental health assessment. Provide a referral to behavioral health services for depression management and consider initiating an antidepressant after evaluation, or arrange urgent follow‑up if suicidal ideation emerges.  
+- **Lifestyle Counseling:** Encourage continued abstinence from tobacco, limit alcohol to ≤2 drinks per day, and advise moderation of cannabis use. Reinforce regular exercise as tolerated.  
+- **Patient Education:** Reviewed signs that would necessitate urgent care (high fever, severe headache, visual changes, swelling around the eyes, or worsening facial pain). Provided education on proper nasal spray technique and the expected course of viral versus bacterial sinusitis.  
+
+The patient verbalized understanding of the plan and expressed agreement to monitor his temperature and return for follow‑up as instructed. No prescriptions were written at this encounter pending temperature assessment.  
+
+Signature:  
+[Physician’s Name], MD  
+Date: 14‑Apr‑2026

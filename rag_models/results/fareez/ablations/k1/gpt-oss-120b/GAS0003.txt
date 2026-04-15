@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:23:52
+Time: 5.80s
+Tokens: 18,020 in / 1,607 out
+============================================================
+
+Patient Information
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint
+The patient presents with a painful sensation in the right side of the abdomen that began approximately eight hours ago.
+
+History of Present Illness
+Ali Hayes reports the onset of an aching right‑sided abdominal pain about eight hours prior to the visit. The pain was initially intermittent, occurring for the first two hours after onset, but has been constant for the past five to six hours. She rates the pain as an 8 on a scale of 0 to 10. The discomfort does not radiate to other areas. She notes that the pain tends to worsen after eating, especially after consuming fatty foods such as burgers or fries. She has tried acetaminophen without relief. She describes mild nausea but no vomiting, fever, chills, diaphoresis, or changes in bowel habits. She has not noted any jaundice, skin changes, or hematuria. She feels somewhat fatigued because the pain limits her activities. There is no recent travel, sick contacts, or urinary symptoms.
+
+Review of Systems
+Constitutional: Positive for fatigue; denies fever, chills, or recent weight loss.  
+Gastrointestinal: Positive for right‑sided abdominal aching, nausea, and pain exacerbated by fatty meals; denies vomiting, diarrhea, constipation, melena, hematochezia, or change in appetite beyond reduced intake due to pain.  
+Genitourinary: Denies dysuria, frequency, urgency, flank pain, or hematuria.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Respiratory: Denies cough, dyspnea, or wheezing.  
+Neurological: No headache, dizziness, or focal deficits.  
+Dermatologic: No rashes, jaundice, or other skin changes.  
+Psychiatric: No depression or anxiety reported at this visit.
+
+Past Medical History
+- Type 2 diabetes mellitus (patient reports diabetes; EMR lists prediabetes and chronic kidney disease related to diabetes)  
+- Essential hypertension  
+- Chronic kidney disease stage 3 (estimated GFR 36.9 mL/min/1.73 m²)  
+- Metabolic syndrome/obesity (BMI ≈27.9)  
+- Gastroesophageal reflux disease  
+- Chronic intractable migraine without aura  
+- Chronic pain (non‑specified)  
+- Chronic obstructive bronchitis (active)  
+
+Surgical History
+- Extraction of wisdom teeth during teenage years.  
+
+Medications
+- Metformin (patient‑reported for diabetes)  
+- Lisinopril 10 mg oral tablet (antihypertensive)  
+- Albuterol inhalation solution (rescue bronchodilator)  
+- Fluticasone propionate / salmeterol dry powder inhaler (maintenance asthma/COPD)  
+- Sodium fluoride oral gel (dental prophylaxis)  
+- Insulin isophane and regular insulin (historical in EMR; not confirmed as current by patient)  
+
+Allergies
+No known drug, food, or environmental allergies reported.
+
+Family History
+Father suffered a myocardial infarction in his 60s; otherwise no known familial cancers, inflammatory bowel disease, or other significant conditions.
+
+Social History
+The patient lives alone in an apartment. She is currently unemployed following job loss due to the COVID‑19 pandemic. She reports regular exercise, including outdoor runs when weather permits. Alcohol use consists of one to two glasses of wine per day; she denies tobacco use and recreational drug use. She reports occasional stress related to unemployment but no current safety concerns.
+
+Physical Examination
+No physical examination findings were documented during this encounter.
+
+Vital Signs
+Heart rate: 92 beats/min (recorded in EMR)  
+Respiratory rate: 13 breaths/min (recorded in EMR)  
+Blood pressure, temperature, SpO₂, weight, and height not recorded at this visit.
+
+Laboratory Data (most recent values available)
+- Serum calcium: 9.27 mg/dL  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L  
+- Serum chloride: 103.96 mmol/L  
+- Urine protein: 214 mg/dL (elevated)  
+- Urine glucose: 1.53 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+- Urine bilirubin: 0.44 mg/dL (trace)  
+Other urine dipstick components (leukocyte esterase, nitrite, specific gravity) were not reported.
+
+Assessment
+1. Right‑sided abdominal pain, likely biliary colic secondary to gallbladder dysfunction (pain precipitated by fatty meals, aching quality, no fever or peritoneal signs).  
+2. Chronic kidney disease stage 3, stable (eGFR ≈ 37 mL/min/1.73 m²).  
+3. Type 2 diabetes mellitus, controlled on metformin.  
+4. Essential hypertension, controlled on lisinopril.  
+5. Chronic obstructive bronchitis, stable.  
+
+Plan
+Diagnostic Work‑up
+- Obtain a complete metabolic panel, complete blood count, and liver function tests (AST, ALT, ALP, total bilirubin) to evaluate for cholestasis or hepatobiliary inflammation.  
+- Order right upper quadrant abdominal ultrasound to assess for gallstones, gallbladder wall thickening, or signs of acute cholecystitis.  
+- Consider a hepatobiliary iminodiacetic acid (HIDA) scan if ultrasound is nondiagnostic and suspicion for cholecystitis remains high.  
+
+Symptomatic Management
+- Continue acetaminophen for pain control, respecting the maximum daily dose given hepatic considerations.  
+- If further analgesia is required, a short course of a low‑dose NSAID (e.g., ibuprofen 200 mg) may be used with caution, monitoring renal function given CKD.  
+- Encourage a low‑fat diet until definitive evaluation is completed.  
+
+Diabetes and Hypertension
+- Reinforce adherence to metformin and lisinopril.  
+- Review home blood glucose logs and blood pressure readings at the next visit.  
+
+Renal Considerations
+- Continue monitoring urine protein and renal function; avoid nephrotoxic agents.  
+
+Follow‑up
+- Return to primary care or gastroenterology clinic within 3‑5 days for review of ultrasound results and laboratory studies.  
+- Advise the patient to seek emergent care if she develops fever, vomiting, worsening pain, jaundice, or any signs of an acute abdomen.  
+
+Patient Education
+- Discuss the likely relationship between fatty meals and gallbladder pain.  
+- Provide written instructions on low‑fat dietary modifications.  
+- Review proper use of acetaminophen and warning signs for renal or hepatic adverse effects.  
+
+Disposition
+The patient will be discharged home with the above plan and instructions. No immediate hospitalization is indicated at this time pending imaging and laboratory results.

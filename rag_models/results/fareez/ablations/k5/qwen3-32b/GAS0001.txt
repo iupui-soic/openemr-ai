@@ -1,0 +1,90 @@
+Model: qwen/qwen3-32b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:45:48
+Time: 6.27s
+Tokens: 21,277 in / 1,983 out
+============================================================
+
+Patient Information:
+
+The patient is a 79-year-old male with a complex medical history, including essential hypertension, prediabetes, anemia, chronic kidney disease stages 1 through 3, and a long history of tobacco use. He has a history of sinusitis, chronic sinusitis, and multiple dental conditions including primary dental caries, gingivitis, and gingival disease. He has also been diagnosed with ischemic heart disease and has a history of coronary artery bypass grafting. The patient has a history of stress, limited social contact, and social isolation. He has a history of abuse and violence in the environment. The patient has a history of alcohol use, though it is noted as unhealthy drinking behavior. He has a history of part-time and full-time employment, with periods of unemployment and not being in the labor force. The patient has a history of medication reviews due and has been prescribed various medications over the years, including insulin, cefazolin, and others. The patient has a history of multiple conditions, including prostate cancer in situ, and has been diagnosed with suspected and confirmed cases of coronavirus disease 2019 (COVID-19), with complications including pneumonia, hypoxemia, respiratory distress, acute respiratory failure, sepsis, septic shock, coagulation disorders, heart injury, heart failure, and acute respiratory distress syndrome.
+
+Chief Complaint:
+
+The patient presents with a 9-day history of persistent nausea, vomiting, and urinary frequency. The nausea is exacerbated by strong odors and is more pronounced in the morning. The patient reports vomiting 1-2 times per day. He also notes increased urinary frequency, occurring approximately every hour, with no nocturnal enuresis or urgency. The patient denies dysuria, hematuria, or flank pain. He also denies fever, chills, or other systemic symptoms. The patient reports that his last menstrual period was approximately six weeks ago, and he notes that this is unusual for him. The patient is sexually active and uses condoms for contraception. He denies any recent travel or exposure to sick individuals.
+
+History of Present Illness:
+
+The patient reports that his symptoms began approximately 9 days ago. The nausea is constant and is exacerbated by strong odors and in the morning. He has vomited 1-2 times per day but does not report any associated abdominal pain or changes in bowel habits. The patient reports increased urinary frequency, occurring approximately every hour, with no associated urgency or incontinence. He denies any pain or burning with urination. The patient also reports mild abdominal cramping but denies any gynecological symptoms or recent trauma. He denies any recent illnesses or travel. The patient is sexually active and uses condoms for contraception. He denies any recent changes in his sexual activity or new partners. The patient has no known allergies to medications or foods. He has a history of nickel allergy related to jewelry. The patient does not use tobacco or alcohol regularly. He has a history of part-time and full-time employment but is currently not in the labor force.
+
+Review of Systems:
+
+Constitutional: The patient denies fever, chills, or weight loss. He reports increased thirst and fluid intake, which he attributes to vomiting and potential dehydration.
+
+Respiratory: No cough, shortness of breath, or wheezing reported.
+
+Cardiovascular: No chest pain, palpitations, or edema reported.
+
+Gastrointestinal: Nausea and vomiting are the primary complaints. No abdominal pain, changes in bowel habits, or melena reported.
+
+Genitourinary: Increased urinary frequency is reported, occurring approximately every hour. No dysuria, hematuria, or flank pain reported.
+
+Neurological: No headaches, dizziness, or syncope reported.
+
+Musculoskeletal: No joint pain or muscle aches reported.
+
+Psychiatric: No mood changes or anxiety reported.
+
+Endocrine: No polyphagia or changes in sweating reported.
+
+Hematologic: No bruising or bleeding reported.
+
+Integumentary: No rashes or skin changes reported.
+
+Allergic/Immunologic: No new allergies reported. History of nickel allergy.
+
+Social History:
+
+The patient lives with one roommate. He does not smoke and consumes alcohol very rarely due to headaches. He does not use recreational drugs. He is sexually active and uses condoms for contraception. He has a history of tobacco use but is currently not using it. He has a history of part-time and full-time employment but is currently not in the labor force.
+
+Family History:
+
+The patient's father has a history of hypertension. No other significant family history is reported.
+
+Current Medications:
+
+The patient is not currently taking any medications. He has tried over-the-counter ginger products for nausea without improvement.
+
+Allergies:
+
+The patient has a nickel allergy related to jewelry. No medication or food allergies reported.
+
+Past Medical History:
+
+The patient has a history of essential hypertension, prediabetes, anemia, chronic kidney disease stages 1 through 3, and a history of tobacco use. He has a history of sinusitis, chronic sinusitis, and multiple dental conditions including primary dental caries, gingivitis, and gingival disease. He has been diagnosed with ischemic heart disease and has a history of coronary artery bypass grafting. The patient has a history of stress, limited social contact, and social isolation. He has a history of abuse and violence in the environment. The patient has a history of alcohol use, though it is noted as unhealthy drinking behavior. He has a history of part-time and full-time employment, with periods of unemployment and not being in the labor force. The patient has a history of medication reviews due and has been prescribed various medications over the years, including insulin, cefazolin, and others. The patient has a history of prostate cancer in situ and has been diagnosed with suspected and confirmed cases of coronavirus disease 2019 (COVID-19), with complications including pneumonia, hypoxemia, respiratory distress, acute respiratory failure, sepsis, septic shock, coagulation disorders, heart injury, heart failure, and acute respiratory distress syndrome.
+
+Objective:
+
+Vital Signs: No recent vital signs available in the electronic health record.
+
+Physical Examination: No recent physical examination findings available in the electronic health record.
+
+Laboratory Results: Recent laboratory results show a white blood cell count of 3.78 × 10^3/uL, hemoglobin of 12.28 g/dL, hematocrit of 43.41%, mean corpuscular volume of 86.82 fL, mean corpuscular hemoglobin of 31.17 pg, mean corpuscular hemoglobin concentration of 31.98 g/dL, red cell distribution width of 14.48%, and platelet count of 105.59 × 10^3/uL. Differential counts show neutrophils at 26.20%, lymphocytes at 13.62%, monocytes at 10.43%, eosinophils at 3.47%, and basophils at 3.69%.
+
+Imaging: No recent imaging studies available in the electronic health record.
+
+Assessment:
+
+The patient presents with a 9-day history of persistent nausea and vomiting, along with increased urinary frequency. The nausea is exacerbated by strong odors and is more pronounced in the morning. The patient reports vomiting 1-2 times per day but denies any associated abdominal pain or changes in bowel habits. The increased urinary frequency is occurring approximately every hour, with no associated urgency or incontinence. The patient denies any pain or burning with urination. The patient also reports mild abdominal cramping but denies any gynecological symptoms or recent trauma. The patient is sexually active and uses condoms for contraception. He denies any recent illnesses or travel. The patient has a complex medical history, including essential hypertension, prediabetes, anemia, chronic kidney disease stages 1 through 3, and a history of tobacco use. He has a history of sinusitis, chronic sinusitis, and multiple dental conditions including primary dental caries, gingivitis, and gingival disease. He has been diagnosed with ischemic heart disease and has a history of coronary artery bypass grafting. The patient has a history of stress, limited social contact, and social isolation. He has a history of abuse and violence in the environment. The patient has a history of alcohol use, though it is noted as unhealthy drinking behavior. He has a history of part-time and full-time employment, with periods of unemployment and not being in the labor force. The patient has a history of medication reviews due and has been prescribed various medications over the years, including insulin, cefazolin, and others. The patient has a history of prostate cancer in situ and has been diagnosed with suspected and confirmed cases of coronavirus disease 2019 (COVID-19), with complications including pneumonia, hypoxemia, respiratory distress, acute respiratory failure, sepsis, septic shock, coagulation disorders, heart injury, heart failure, and acute respiratory distress syndrome.
+
+Plan:
+
+1. Obtain a pregnancy test to rule out pregnancy as a potential cause of the nausea and vomiting.
+2. Perform a urinalysis to evaluate for urinary tract infection or other urological causes of increased urinary frequency.
+3. Order a complete metabolic panel to assess for electrolyte imbalances, renal function, and glucose levels.
+4. Consider imaging studies such as an abdominal ultrasound to evaluate for gynecological or gastrointestinal causes of the symptoms.
+5. Initiate antiemetic therapy as needed for symptom relief.
+6. Provide hydration support and monitor for signs of dehydration.
+7. Schedule a follow-up appointment to reassess symptoms and review diagnostic results.
+8. Provide patient education regarding hydration, symptom management, and the importance of follow-up care.

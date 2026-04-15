@@ -1,0 +1,59 @@
+Model: qwen/qwen3-32b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:58:38
+Time: 4.92s
+Tokens: 15,190 in / 1,359 out
+============================================================
+
+Patient Information  
+The patient is a 106-year-old male with a complex medical history, including atrial fibrillation, hypertension, chronic kidney disease stage 4, end-stage renal disease, and a history of renal transplant. He is currently taking Metoprolol, a statin, and low-dose aspirin for his atrial fibrillation. The patient has a remote history of an inguinal hernia repair and has been vaccinated for shingles and pneumococcal disease. He has a past history of smoking, having quit approximately five years ago. The patient currently resides in a house with his wife and denies any recent travel or recreational drug use. He uses CBD edibles at a low dose for sleep.
+
+Chief Complaint  
+The patient presents with a three-day history of cough productive of yellowish-green sputum, and a one-day history of progressive shortness of breath. The cough is described as hacking and wet, with sputum production approximately the size of a fingertip. The patient reports that the symptoms have disrupted his sleep and that he feels generally weak and tired. He denies chest pain, fever, chills, night sweats, or weight loss. He also denies dizziness, syncope, or confusion. There is no history of similar symptoms in the past.
+
+History of Present Illness  
+The patient initially developed a wet, productive cough three days ago. The sputum is yellowish-green in color and is not associated with blood or pus. The cough is described as hacking and has been persistent throughout the day and night. Shortness of breath developed approximately one day after the onset of the cough and is now rated as a 7 out of 10 in severity. The patient reports that wheezing may occur during episodes of significant dyspnea. He also notes mild generalized body aches and weakness. There is no associated chest pain, palpitations, or changes in bowel or urinary habits. The patient has a decreased sense of smell but denies sore throat, runny nose, or changes in vision or hearing. He recently visited a long-term care facility where there have been reported outbreaks of illness, raising concern for possible exposure to respiratory pathogens, including SARS-CoV-2.
+
+Review of Systems  
+- **Constitutional**: The patient reports fatigue, weakness, and disrupted sleep. He denies fever, chills, or unintentional weight loss.  
+- **Respiratory**: Cough productive of yellowish-green sputum, shortness of breath, and wheezing. No hemoptysis or chest pain.  
+- **Cardiovascular**: No chest pain, palpitations, or syncope. The patient has a history of atrial fibrillation but reports stable heart rate and no recent symptoms.  
+- **Gastrointestinal**: Mild abdominal discomfort reported. No nausea, vomiting, or changes in bowel habits.  
+- **Other**: The patient notes a diminished sense of smell but otherwise denies other sensory changes. No neurological symptoms or musculoskeletal pain beyond generalized weakness.
+
+Allergies  
+The patient reports a sulfa allergy, which was previously associated with a rash.
+
+Past Medical History  
+The patient has a long-standing history of atrial fibrillation, managed with Metoprolol. He has a history of hypertension, chronic kidney disease, end-stage renal disease, and a renal transplant. Additional past medical issues include a history of myocardial infarction, chronic sinusitis, and multiple dental issues. The patient has also had a history of opioid abuse and chronic kidney disease.
+
+Surgical History  
+The patient underwent an inguinal hernia repair approximately 15 years ago with no complications.
+
+Social History  
+The patient is a former smoker, having quit five years ago. He denies current or past use of recreational drugs other than occasional low-dose CBD edibles for sleep. He does not consume alcohol. The patient resides in a house with his wife and reports no recent travel or exposure to environmental hazards such as mold or asbestos.
+
+Family History  
+The patient reports an aunt with a history of lung cancer, who was a lifelong smoker. There is no known family history of other cancers or heart conditions.
+
+Current Medications  
+The patient is currently taking Metoprolol for atrial fibrillation, a statin for cardiovascular risk reduction, and low-dose aspirin. He is also using CBD edibles for sleep. The patient agrees to review his medications in detail during the clinical visit.
+
+Objective  
+Vital Signs: Vital signs were not available in the OpenEMR record. The patient's height is 172.20 cm, and his weight is not listed. BMI is 28.16, indicating obesity.  
+Physical Examination: No physical examination findings were available in the OpenEMR record.  
+Labs: Laboratory results include elevated urea nitrogen (17.88 mg/dL), normal potassium (4.04 mmol/L), and normal creatinine (not listed). Other findings include mild anemia and elevated ferritin levels.  
+Imaging: No imaging studies were available in the OpenEMR record.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory tract infection, with features overlapping with possible viral or bacterial etiologies. Given the recent exposure to a long-term care facility with known outbreaks, concern for possible SARS-CoV-2 infection is raised. The presence of productive cough, dyspnea, and wheezing suggests possible bronchitis or early pneumonia. The patient's complex medical history, including chronic kidney disease and atrial fibrillation, places him at higher risk for complications from respiratory infections. The patient will undergo a SARS-CoV-2 PCR test to confirm or exclude COVID-19 as a potential cause. Isolation for 14 days is advised pending results. If symptoms persist or worsen, further evaluation for bacterial pneumonia or other respiratory infections may be warranted.
+
+Plan  
+1. Perform a SARS-CoV-2 PCR test and await results.  
+2. Advise the patient to isolate for 14 days and avoid contact with others, including his wife, until symptoms resolve and test results are available.  
+3. Monitor symptoms for progression. If symptoms worsen or fail to improve, consider follow-up for further evaluation, including possible chest imaging and initiation of antibiotics if bacterial infection is suspected.  
+4. Review current medications, including Metoprolol, statin, and aspirin, to ensure appropriate dosing and safety.  
+5. Address sleep concerns and consider non-CBD alternatives for sleep support if desired.  
+6. Schedule a follow-up appointment to reassess symptoms and review test results.  
+7. Provide patient education on infection control, symptom monitoring, and when to seek urgent care.

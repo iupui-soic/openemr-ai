@@ -1,0 +1,82 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:10:31
+Time: 4.31s
+Tokens: 13,675 in / 1,264 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male, accompanied by his mother. No specific name, date of birth, or medical record number is provided in the encounter documentation.
+
+Chief Complaint  
+Abdominal pain associated with vomiting, watery diarrhea, and fever for the past three days.
+
+History of Present Illness  
+The mother reports that the child began experiencing diffuse abdominal discomfort three days ago. The pain was initially mild and made him irritable. Two days ago he started vomiting; the first episode occurred after lunch and consisted of recently ingested food. Since then he has vomited a total of six times, with the most recent episodes described as yellowish material, without visible bile or blood. The vomiting has become more random and is not clearly precipitated by meals. On the second day of vomiting, watery diarrhea began, occurring approximately six to seven times in the most recent 24‑hour period. The stool is described as very watery with no blood or abnormal color. Yesterday the child developed a fever measured at 38.3 °C (101 °F) at home, accompanied by chills that required additional blankets. He has been notably quiet and spent most of the day sleeping. He denies headache, ear or eye pain, nasal congestion, sore throat, cough, shortness of breath, wheezing, chest pain, dysuria, rash, joint or muscle aches, or any recent skin changes. There has been no recent change in diet, no known exposure to sick contacts, and no recent travel. The family reports that the child’s immunizations are up to date and that he has no known chronic medical conditions.
+
+Review of Systems  
+Constitutional: Positive for fever, chills, irritability, fatigue, and decreased activity. Negative for weight loss, night sweats, or recent trauma.  
+Respiratory: No cough, dyspnea, wheeze, or sore throat.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: Positive for diffuse abdominal pain, vomiting (six episodes, yellowish, no blood), and watery diarrhea (6‑7 episodes/24 h). Negative for hematemesis, melena, constipation, or abdominal distension.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Skin: No rash or lesions.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Musculoskeletal: No joint or muscle pain.  
+ENT: No ear pain, eye redness, or nasal discharge.  
+
+Past Medical History  
+The mother reports no prior medical diagnoses, hospitalizations, or surgeries for the child. No chronic illnesses are known.
+
+Surgical History  
+No surgical procedures have been performed.
+
+Social History  
+The child lives at home with his mother, father, and two older siblings (ages 7 and 10). No tobacco, alcohol, or recreational drug use is reported in the household. There are no pets. The family does not smoke. The child recently returned to school one week ago; no other household members are currently ill. No recent travel outside the home. The mother denies any concerns for safety, abuse, or neglect.
+
+Family History  
+No known family history of heart disease, lung disease, inflammatory bowel disease, celiac disease, or other genetic conditions.
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Current Medications  
+The child is not taking any prescription or over‑the‑counter medications on a regular basis.
+
+Vital Signs  
+No vital signs were recorded during the office visit. The mother measured a temperature of 38.3 °C at home on the day of presentation.
+
+Physical Examination  
+A formal physical examination was not documented in the encounter note. No objective findings are available.
+
+Laboratory and Diagnostic Studies  
+No laboratory results are available at the time of this documentation. The provider ordered a nasopharyngeal COVID‑19 test and a basic metabolic panel (including electrolytes) to assess for dehydration and possible infection. A complete blood count is also planned to evaluate for leukocytosis.
+
+Assessment  
+1. Acute viral gastroenteritis, likely viral in etiology (possible SARS‑CoV‑2 infection).  
+2. Dehydration risk secondary to vomiting and diarrhea.  
+3. Fever with chills, consistent with an infectious process.
+
+Plan  
+Diagnostics:  
+- Obtain a rapid COVID‑19 antigen test (or PCR) today.  
+- Order basic metabolic panel (electrolytes, BUN, creatinine) and complete blood count.  
+
+Therapeutic:  
+- Encourage oral rehydration with age‑appropriate oral rehydration solution; offer small, frequent sips of clear fluids.  
+- If oral intake remains inadequate, consider ondansetron oral disintegrating tablets per weight‑based dosing to control nausea and vomiting.  
+- Antipyretic (acetaminophen 10‑15 mg/kg per dose) for fever and discomfort, administered as needed.  
+
+Education and Discharge Instructions:  
+- Counsel the mother on signs of worsening dehydration (decreased urine output, dry mucous membranes, sunken eyes, lethargy).  
+- Advise to continue oral rehydration; if the child cannot retain fluids, seek urgent care.  
+- Instruct to monitor temperature; treat fever with acetaminophen.  
+- Advise to keep the child home from school until fever has resolved for at least 24 hours without antipyretics and vomiting has ceased.  
+- Discuss infection control measures: hand hygiene, mask use if COVID‑19 test is positive, and limiting close contact with other children until cleared.  
+
+Follow‑up:  
+- Telephone follow‑up in 24‑48 hours to review test results and clinical status.  
+- Return to clinic or seek emergency care if the child develops persistent vomiting, inability to tolerate fluids, increasing abdominal pain, blood in vomit or stool, high‑grade fever >39 °C, or any new concerning symptoms.  
+
+The mother verbalized understanding of the plan and agreed to the outlined management.

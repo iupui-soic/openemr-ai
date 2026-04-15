@@ -1,0 +1,64 @@
+Model: openai/gpt-oss-20b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:54:56
+Time: 2.18s
+Tokens: 6,551 in / 971 out
+============================================================
+
+Patient Information:  
+Abbey Shala Kunde, age 38, female, resident of 774 Gleichner Harbor, Boston, Massachusetts. She presents to the clinic on 4 August 2024.
+
+Chief Complaint:  
+The patient reports a three‑day history of a dry cough, associated muscle aches, frontal pressure‑type headaches, and intermittent feverish feeling. She also notes loose stools for the past day.
+
+History of Present Illness:  
+Three days ago Abbey began experiencing a dry cough. The cough has persisted without sputum production or hemoptysis. Shortly after the onset of the cough, she developed diffuse muscle aches and intermittent headaches described as a band‑like pressure over the forehead. She reports feeling feverish, although she has not recorded her temperature; she has not had chills. Over the last 24 hours, she has experienced one episode of loose, non‑bloody stools and a decreased appetite. The headaches have been somewhat relieved by acetaminophen and ibuprofen, but recur as the analgesic effect wanes. She has not taken any treatment for the cough. No shortness of breath, chest pain, sore throat, or nasal congestion has been reported. She denies nausea, vomiting, loss of taste or smell, night sweats, or significant fatigue. She denies any recent travel or known contact with sick individuals besides a family member who is asymptomatic. She has been working from home for the past few days and has taken time off from her pharmacy company. She lives with her wife, who is not experiencing symptoms.
+
+Review of Systems:  
+Constitutional: Feverish feeling, decreased appetite.  
+Respiratory: Dry cough, no sputum, no shortness of breath, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or dizziness.  
+Gastrointestinal: One episode of loose, non‑bloody stools; no nausea or vomiting.  
+Neurologic/Headache: Frontal pressure‑type headaches that are partially relieved with over‑the‑counter analgesics.  
+Musculoskeletal: Generalized muscle aches.  
+Other: No rash, no loss of taste or smell, no night sweats, no weight change.
+
+Past Medical History:  
+No information available.
+
+Surgical History:  
+No information available.
+
+Social History:  
+The patient is a non‑smoker and denies recreational drug use apart from occasional CBD oil. She drinks alcohol socially, approximately 3–4 beers per week. She does not use coffee or other stimulants. She lives in a townhouse with her wife. She works at a pharmacy company, currently working from home. No occupational exposure to respiratory pathogens has been identified, and she follows workplace mask and distancing protocols.
+
+Family History:  
+Father has a history of hypertension. Grandfather had lung cancer in his 80s and was a lifelong smoker.
+
+Medications:  
+The patient reports only multivitamin and vitamin D supplementation. She has not taken any prescription or over‑the‑counter medication for her current symptoms.
+
+Allergies:  
+Peanut allergy; carries an epinephrine auto‑injector. No known drug or environmental allergies.
+
+Physical Examination:  
+No objective examination findings are documented in the transcript. No vital signs are recorded.
+
+Laboratory Results:  
+No laboratory data were obtained during this encounter.
+
+Assessment:  
+1. Acute viral upper respiratory infection, likely COVID‑19 given overlap of symptoms and current epidemiologic context.  
+2. Secondary considerations include influenza, common cold, or other viral exanthem.  
+No bacterial infection is suspected at this time.
+
+Plan:  
+- Obtain a SARS‑CoV‑2 nucleic acid test (nasopharyngeal swab) today.  
+- Advise the patient to isolate for at least 14 days or until symptom resolution, whichever occurs first, pending test results.  
+- Continue symptomatic treatment: acetaminophen or ibuprofen for headache and muscle aches; stay well‑hydrated; adequate rest; maintain good nutrition.  
+- Reassess in clinic or via telehealth if symptoms worsen, develop new respiratory distress, or if fever exceeds 102°F for more than 48 hours.  
+- If COVID‑19 test is positive, follow local public health guidance for isolation and return‑to‑work criteria.  
+- If test is negative and symptoms persist beyond 7–10 days, consider further evaluation for alternate etiologies or referral to infectious disease.  
+- Instruct the patient to monitor for new symptoms such as chest pain, increasing shortness of breath, persistent fever, or worsening abdominal pain.  
+- Schedule a follow‑up appointment in one week or sooner if clinically indicated.

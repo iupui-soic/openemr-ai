@@ -1,0 +1,131 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:08:07
+Time: 6.21s
+Tokens: 10,581 in / 1,884 out
+============================================================
+
+Patient Information  
+Name: Adrianna Camelia Wuckert  
+Date of Birth: 02/25/1919 (Age 107 years)  
+Sex: Female  
+Address: 609 Bartell Gate, Marshfield, Massachusetts 02050  
+Medical Record Number: 1637  
+
+Chief Complaint  
+The patient presents with progressive shortness of breath and productive cough of six days’ duration.
+
+History of Present Illness  
+Six days ago the patient noted a sudden onset of dyspnea that has been persistent and worsening. The shortness of breath is present at rest and becomes markedly more severe with exertion such as walking from her car. Concurrently she developed a cough that is productive of a “rusty‑colored” sputum occurring several times per day. The cough and dyspnea have been constant and are now both worsening. She reports associated chills and a sensation of feeling cold, although she has not measured a temperature. She denies any clear exposure to sick contacts. She experiences mild wheezing on auscultation and describes a sharp pleuritic chest pain that intensifies with coughing; she rates the pain as 7/10. The pain resolves gradually when coughing subsides. She denies hemoptysis, night sweats, weight loss, headache, nausea, vomiting, dizziness, syncope, palpitations, or changes in bowel or urinary habits. She reports a recent runny nose a few days prior to the onset of respiratory symptoms. She has no known allergies.
+
+Review of Systems  
+Constitutional: Reports chills and subjective feverishness; no documented fever, weight loss, or night sweats.  
+Respiratory: Progressive dyspnea, productive cough with rusty sputum, mild wheezing, pleuritic chest pain. No hemoptysis.  
+Cardiovascular: No chest pressure, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Skin: No rashes.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Chronic sinusitis (ongoing)  
+- Essential hypertension (ongoing)  
+- Ischemic heart disease (ongoing)  
+- Obesity (BMI >30, ongoing)  
+- Chronic kidney disease stages 1‑4 (historical, most recent stage 4 noted)  
+- Diabetes mellitus type 2 with microalbuminuria and proteinuria (ongoing)  
+- Hyperlipidemia (ongoing)  
+- Anemia (ongoing)  
+- Prior stroke (1990)  
+- Prior renal transplant (history of transplantation)  
+- Prior pneumonia (1993)  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+The patient works in a crowded environment with a malfunctioning air‑conditioning system, high humidity, and likely exposure to dust and mold. She lives in a poorly maintained apartment with possible mold or dust exposure. She reports long‑standing exposure to asbestos in both her home and workplace. She smokes approximately 10 cigarettes per day, a habit that began at age 20. She occasionally uses cannabis (≈5 mg per week). Alcohol intake is modest, about five drinks per week. She reports a diet high in fast food and limited regular exercise. No known drug allergies.
+
+Family History  
+No reported family history of cancer, cardiovascular disease, or pulmonary disorders.
+
+Allergies  
+No known drug or environmental allergies.
+
+Current Medications  
+The patient reports taking no medications at this time.
+
+Objective  
+
+Vital Signs  
+No vital sign measurements documented at this encounter.
+
+Physical Examination  
+No physical examination findings documented.
+
+Laboratory Data (most recent values available)  
+- Sodium: 142.95 mmol/L (within normal limits)  
+- Potassium: 4.7 mmol/L (within normal limits)  
+- Chloride: 107.38 mmol/L (within normal limits)  
+- BUN: 11.83 mg/dL (within normal limits)  
+- Creatinine: 2.72 mg/dL (elevated, consistent with chronic kidney disease)  
+- eGFR (MDRD): 74 mL/min/1.73 m² (reduced)  
+- Calcium: 9.33 mg/dL (normal)  
+- Albumin: 4.49 g/dL (normal)  
+- ALT: 34 U/L (normal)  
+- Total bilirubin: 0.45 mg/dL (normal)  
+- Lipid panel: Total cholesterol 150–186 mg/dL, HDL 46–49 mg/dL, LDL 75–85 mg/dL, Triglycerides 129 mg/dL (all within expected ranges for patient)  
+- PHQ‑2 score: 2 (positive screen)  
+- DAST‑10 score: 1 (low risk)  
+
+Imaging  
+No imaging studies documented at this visit.
+
+Assessment  
+1. Community‑acquired pneumonia – presentation with acute onset dyspnea, productive cough with rusty sputum, pleuritic chest pain, mild wheezing, and systemic symptoms is consistent with bacterial pneumonia.  
+2. Chronic obstructive pulmonary disease (COPD) exacerbation – significant tobacco use (10 cigarettes/day) and wheezing raise concern for underlying COPD contributing to symptom severity.  
+3. Chronic kidney disease, stage 4 – elevated creatinine and reduced eGFR.  
+4. Hypertension, ischemic heart disease, type 2 diabetes mellitus, hyperlipidemia, obesity – chronic comorbidities that may influence management.  
+5. Positive PHQ‑2 screen – mild depressive symptoms warrant further evaluation.  
+
+Plan  
+
+Diagnostics  
+- Obtain a chest radiograph (postero‑anterior and lateral) to confirm infiltrate pattern and assess for complications.  
+- Complete blood count with differential to evaluate for leukocytosis.  
+- Sputum Gram stain and culture, including atypical pathogens, given rusty sputum.  
+- Pulse oximetry and arterial blood gas if oxygen saturation is low or patient appears in distress.  
+- Consider spirometry after acute illness resolves to assess for COPD.  
+
+Therapeutic  
+- Initiate empiric antibiotic therapy for community‑acquired pneumonia (e.g., amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7‑10 days) pending culture results.  
+- Provide a short course of oral corticosteroids (e.g., prednisone 40 mg daily for 5 days) if COPD exacerbation is confirmed.  
+- Prescribe a short‑acting bronchodilator (e.g., albuterol inhaler 2 puffs every 4‑6 hours PRN) for wheezing.  
+- Continue acetaminophen as needed for fever or discomfort.  
+- Counsel on smoking cessation; offer nicotine replacement therapy and referral to cessation program.  
+- Advise avoidance of further exposure to mold, dust, and possible asbestos; consider environmental remediation of home and workplace.  
+- Monitor renal function; adjust medication dosing as appropriate for CKD.  
+
+Disposition  
+The patient will be managed as an outpatient with close follow‑up, provided she remains hemodynamically stable, maintains oxygen saturation ≥ 92 % on room air, and can tolerate oral intake. If respiratory status worsens, fever spikes > 38.5 °C, or oxygen saturation falls, she should return to the emergency department immediately.
+
+Follow‑up  
+- Return to primary care or pulmonary clinic in 48‑72 hours for reassessment of symptoms and review of chest X‑ray results.  
+- Follow‑up with nephrology within one week to review renal function and medication dosing.  
+- Arrange mental health follow‑up to address positive PHQ‑2 screen.  
+- Schedule smoking cessation counseling session within the next week.  
+
+Patient Education  
+Discussed the nature of pneumonia and the importance of completing the full course of antibiotics. Reviewed signs of clinical deterioration that require urgent care (increased shortness of breath, chest pain, fever, confusion). Provided written instructions on medication use, smoking cessation resources, and environmental control measures.  
+
+Discharge Instructions  
+- Take prescribed antibiotics exactly as directed.  
+- Use albuterol inhaler as needed for wheezing; do not exceed recommended doses.  
+- Rest, stay hydrated, and maintain a balanced diet.  
+- Monitor temperature twice daily; seek care if > 38.5 °C.  
+- Avoid exposure to dust, mold, and second‑hand smoke.  
+- Schedule follow‑up appointments as outlined above.  
+
+No further information available.

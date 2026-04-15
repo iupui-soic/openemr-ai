@@ -1,0 +1,338 @@
+Model: google/medgemma-4b-it
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:03:06
+Time: 114.54s
+Tokens: 13,971 in / 1,950 out
+Cell: k3
+============================================================
+
+Patient Information:
+
+Name: Aaron Feeney
+DOB: 1915-12-05
+Sex: Male
+Unit Number: 48
+
+Chief Complaint: Cough
+
+History of Present Illness:
+
+Mr. Feeney presents to the emergency department with a cough that has been ongoing for approximately five days. He reports feeling hot and generally unwell, with fatigue as a prominent symptom. He states that his cough has been progressively worsening, disrupting his sleep. He denies chest pain, but reports throat pain associated with coughing. He denies any specific triggers or alleviating factors for his cough.
+
+Past Medical History:
+
+Mr. Feeney has a significant past medical history including:
+*   Served in armed forces (finding)
+*   Received higher education (finding)
+*   Obesity (BMI 31.53)
+*   Prediabetes
+*   Anemia
+*   Hyperlipidemia
+*   Essential hypertension
+*   Metabolic syndrome X
+*   Neoplasm of prostate
+*   Carcinoma in situ of prostate
+*   Ischemic heart disease
+*   Abnormal findings diagnostic imaging heart+coronary circulat
+*   History of coronary artery bypass grafting
+*   Localized, primary osteoarthritis of the hand
+*   Disorder of kidney due to diabetes mellitus
+*   Microalbuminuria due to type 2 diabetes mellitus
+*   Proteinuria due to type 2 diabetes mellitus
+*   History of renal transplant
+*   Atrial fibrillation
+*   Chronic kidney disease stage 1
+*   Chronic kidney disease stage 2
+*   Osteoporosis
+*   Has a criminal record
+*   Chronic kidney disease stage 3
+*   Social isolation
+*   Full-time employment
+*   Medication review due
+*   Stress
+*   Limited social contact
+*   Gingivitis
+*   Gingival disease
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Not in labor force
+*   Primary dental caries
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Stress
+*   Medication review due
+*   Limited social contact
+*   Gingivitis
+*   Leaking dental filling
+*   Full-time employment
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Not in labor force
+*   Stress
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Infection of tooth
+*   Gingival disease
+*   Loss of teeth
+*   Torus palatinus
+*   Full-time employment
+*   Gingivitis
+*   Primary dental caries
+*   Medication review due
+*   Not in labor force
+*   Stress
+*   Medication review due
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Gingivitis
+*   Part-time employment
+*   Full-time employment
+*   Social isolation
+*   

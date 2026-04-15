@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 06:28:26
+Time: 30.76s
+Tokens: 6,515 in / 590 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abbey Eliza Schmitt
+Date of Birth: 1965-09-27
+Unit Number: 103
+
+Chief Complaint: Cough
+
+History of Present Illness:
+
+The patient presents today complaining of a cough that began three days ago. The cough is dry and is affecting her sleep. She reports feeling hot today, which started this morning. She has not taken her temperature. She denies any associated symptoms like sputum production, blood, or triggers like cold air, smoke, or dust. She has tried over-the-counter cough syrup, but it has not been effective. She denies any headache, eye or ear pain, or nasal discharge. She denies any sore throat. Her appetite is okay, but she finds it difficult to eat due to the cough. She denies any swallowing difficulties. She denies any weight loss. She reports feeling a little chilly and sweaty last night. She denies any chest pain or shortness of breath. She denies wheezing, racing heart, or fainting. She denies dizziness. She denies any loss of taste or smell. She denies diarrhea or nausea/vomiting. She reports feeling fatigued. She also reports some muscle aches. She denies painful urination or skin rashes.
+
+Past Medical History:
+
+The patient reports being diagnosed with hypothyroidism, which she is currently treated with Synthroid. She had her last TSH checked six months ago, and the results were normal. She takes a multi-vitamin daily. She had her appendix removed as a teenager and denies any complications.
+
+Social History:
+
+The patient lives with her husband and two teenagers. Her husband has been throwing up for the past two days and has been feeling hot. She is unsure if he has been assessed by a physician. She works from home in marketing. Her children have been well. She drinks wine occasionally, about once every three or four days. She has smoked marijuana occasionally. She denies any other recreational drug use. Her sister had a heart attack recently. Her parents were both healthy and died of old age.
+
+Family History:
+
+Her sister had a heart attack. Her parents were both healthy and died of old age.
+
+Medications:
+
+She takes Synthroid for hypothyroidism. She takes a multi-vitamin daily.
+
+Allergies:
+
+She denies any medication allergies.
+
+Surgical History:
+
+She had her appendix removed as a teenager.
+
+Assessment:
+
+The patient presents with a dry cough of three days duration, associated with fatigue and mild muscle aches. She denies any associated symptoms such as fever, sputum production, or chest pain. She has tried over-the-counter cough medication without relief. She is feeling hot today, which started this morning.
+
+Plan:
+
+The physician will order a PCR nasal swab to test for COVID-19 and a chest X-ray. The results of these investigations will be used to determine the cause of the cough.

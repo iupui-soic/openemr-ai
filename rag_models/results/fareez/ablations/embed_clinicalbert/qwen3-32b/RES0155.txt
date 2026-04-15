@@ -1,0 +1,60 @@
+Model: qwen/qwen3-32b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:58:57
+Time: 4.30s
+Tokens: 12,403 in / 1,303 out
+============================================================
+
+Patient Information  
+The patient is a 109-year-old female, Adela Tapia, residing at 517 Hills Trace, Stoneham, Massachusetts 02180. She is accompanied by her daughter and works at a local grocery store. The patient has a long-standing medical history including chronic obstructive pulmonary disease (COPD), essential hypertension, and gastroesophageal reflux disease (GERD). She is a pack-a-day smoker with a 30- to 40-year smoking history and consumes wine occasionally on weekends. No recreational drug use is reported. The patient has a complex past medical history including a history of myocardial infarction, coronary artery bypass grafting, chronic kidney disease, and a renal transplant in 2013. She is currently on multiple medications including metoprolol, valsartan, atorvastatin, and others. No known allergies are documented.
+
+Chief Complaint  
+The patient presents with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough with yellowish-green sputum. She reports that her symptoms have progressively worsened over the past week and that her usual inhaler has not provided significant relief. She also notes a subjective feeling of feverishness over the last few days, though no temperature has been measured.
+
+History of Present Illness  
+The patient reports that her symptoms began approximately five days ago and have progressively worsened. She describes a productive cough with yellowish-green sputum, estimated to be about the size of a palm with each episode. She experiences shortness of breath, particularly with exertion, and reports chest discomfort that has persisted for four to five days. The chest discomfort is described as a general sense of congestion rather than sharp or stabbing pain. She denies dyspnea at rest, orthopnea, or paroxysmal nocturnal dyspnea. The patient denies any hemoptysis, chest pain on inspiration or expiration, palpitations, syncope, or dizziness. She also denies nausea, vomiting, diarrhea, or changes in appetite or sleep. She denies night sweats or unintentional weight loss. The patient has not been in close contact with any sick individuals recently but reports having had similar symptoms in the past, typically requiring antibiotics. She last used antibiotics approximately four months ago for a chest cold. She has not sought medical attention for this current episode prior to today.
+
+Review of Systems  
+Constitutional: The patient reports a subjective feeling of feverishness but no measured fever, chills, or weight loss.  
+Respiratory: The patient has a productive cough with yellowish-green sputum, shortness of breath with exertion, and a general sense of chest congestion. No hemoptysis or pleuritic chest pain is reported.  
+Cardiovascular: No chest pain, palpitations, syncope, or edema are reported.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits are reported.  
+Genitourinary: No changes in urination or dysuria are reported.  
+Neurological: No headaches, dizziness, or changes in vision are reported.  
+Musculoskeletal: No joint pain or muscle aches are reported.  
+Integumentary: No rashes or skin changes are reported.  
+Psychiatric: No mood changes or depressive symptoms are reported.  
+Endocrine: No changes in appetite or weight are reported.  
+Hematologic: No easy bruising or bleeding is reported.  
+Allergic/Immunologic: No new allergies or allergic reactions are reported.  
+
+Past Medical History  
+The patient has a history of COPD, essential hypertension, GERD, myocardial infarction, coronary artery bypass grafting, chronic kidney disease, and a renal transplant in 2013. She has a history of multiple hospitalizations for various conditions, including acute bronchitis and viral sinusitis. She has also had a history of dental issues including gingivitis and tooth loss. She has a complex social history including reports of violence in the environment and social isolation.  
+
+Past Surgical History  
+No recent surgeries are reported. The patient has a history of coronary artery bypass grafting and a renal transplant.
+
+Medications  
+The patient is currently on multiple medications including metoprolol, valsartan, atorvastatin, aspirin, and others. She uses a Ventolin inhaler and Symbicort for COPD management. No changes in medications have been made recently.
+
+Allergies  
+No known drug allergies are reported.
+
+Social History  
+The patient is a pack-a-day smoker with a 30- to 40-year smoking history. She consumes wine occasionally on weekends. She is employed at a local grocery store and lives with her daughter. No recreational drug use is reported.
+
+Family History  
+No significant family history of lung or heart conditions is reported. No family history of cancer is noted.
+
+Objective  
+Vital Signs: No recent vital signs are available in the electronic health record. The patient's height is 162.70 cm, and her BMI is 27.43.  
+Physical Examination: No recent physical examination findings are available.  
+Laboratory Results: Recent lab results include normal electrolytes, creatinine, and glucose levels. Liver enzymes are elevated with an ALT of 51.98 U/L. Bilirubin and albumin levels are within normal limits.  
+Imaging: No recent imaging studies are available in the electronic health record.
+
+Assessment  
+The patient presents with symptoms consistent with an exacerbation of COPD, possibly secondary to a bacterial infection. The presence of productive cough with yellowish-green sputum, feverishness, and worsening shortness of breath supports this assessment. Given her history of COPD and the clinical presentation, bacterial pneumonia is a strong consideration. Additional evaluation with a chest X-ray and sputum culture is warranted. A COVID-19 test is also recommended given the overlap in symptoms.
+
+Plan  
+The patient is advised to proceed to the emergency department for a comprehensive evaluation, including a chest X-ray, sputum culture, and a COVID-19 test. She will be monitored for response to nebulized bronchodilators and may require hospital admission for further management. If an infectious etiology is confirmed, appropriate antibiotics will be initiated. The patient should follow up with her primary care provider for continued management of COPD and hypertension. Smoking cessation counseling is recommended.

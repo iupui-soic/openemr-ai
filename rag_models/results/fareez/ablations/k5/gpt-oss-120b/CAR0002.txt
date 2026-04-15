@@ -1,0 +1,140 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:31:33
+Time: 5.59s
+Tokens: 10,331 in / 1,875 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (Age 92)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Living Situation: Resides in a house with his parents  
+
+Chief Complaint  
+Chest pain of acute onset, began 30 minutes ago while shoveling snow.  
+
+History of Present Illness  
+Mr. Crona reports a sudden onset of a dull, pressure‑like pain localized to the left side of his chest. The pain began approximately half an hour prior to presentation while he was shoveling his driveway. He rates the pain as 7/10. He describes the discomfort as worsening with movement, ambulation, and when lying down, and it has not been relieved by any maneuver since its onset. He also notes associated shortness of breath that started shortly after the chest pain began, a sensation of being “hot,” and a subjective feeling of his heart beating faster, which he normally experiences only during sports. He measured his temperature at home, which was 38 °C (100.4 °F). He denies any prior episodes of similar chest pain, trauma to the chest, cough, sputum production, nausea, vomiting, abdominal pain, leg swelling, dizziness, syncope, or rash. He reports no recent travel or known sick contacts.  
+
+Review of Systems  
+Constitutional: Fever (38 °C); no chills, weight loss, or fatigue.  
+Respiratory: Shortness of breath since onset of chest pain; no cough, wheeze, or hemoptysis.  
+Cardiovascular: Chest pressure described above; palpitations/rapid heartbeat noted; no known edema, orthopnea, or known murmur.  
+Gastrointestinal: No nausea, vomiting, dysphagia, or abdominal pain.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurologic: No dizziness, headache, or syncope.  
+Dermatologic: No rash or lesions.  
+Psychiatric: No reported anxiety or depression at this visit; PHQ‑2 score of 2 noted on recent screening.  
+
+Past Medical History  
+- Ischemic heart disease (coronary artery disease)  
+- Essential hypertension  
+- Hyperlipidemia (high cholesterol)  
+- Metabolic syndrome  
+- Prediabetes / type 2 diabetes mellitus (microalbuminuria, proteinuria)  
+- Chronic kidney disease (stage 1–4 historically; currently post‑renal transplant)  
+- End‑stage renal disease (historical)  
+- Chronic low back pain, chronic neck pain, chronic pain syndrome  
+- Sleep apnea and sleep disorder  
+- Seizure disorder (single seizure history)  
+- History of intimate partner abuse (social history)  
+
+Surgical History  
+No prior surgeries reported.  
+
+Allergies  
+No known drug allergies.  
+
+Medications (home regimen per interview and record)  
+- Lisinopril (ACE inhibitor for hypertension)  
+- Rosuvastatin (statin for hyperlipidemia)  
+- Multivitamin  
+- Metoprolol succinate 100 mg daily (beta‑blocker)  
+- Nitroglycerin spray PRN for chest discomfort  
+- Simvastatin (10 mg and 20 mg formulations)  
+- Hydrochlorothiazide 25 mg daily  
+- Other chronic transplant‑related medications listed in the record (tacrolimus, epoetin alfa, insulin, etc.)  
+
+Social History  
+- Tobacco: Smokes approximately 0.5–1 pack of cigarettes per day for the past 20 years.  
+- Alcohol: Denies any alcohol consumption.  
+- Illicit drugs: Reports prior use of crystal methamphetamine approximately twice per month for the past seven years; last use was six days ago.  
+- Occupation: City bus driver.  
+- Exercise: Occasionally runs on Sundays; otherwise limited physical activity.  
+- Diet: Attempts a balanced diet with vegetables but admits to frequent eating out.  
+
+Family History  
+No known family history of myocardial infarction, coronary artery disease, or cancer.  
+
+Objective  
+
+Vital Signs  
+- Temperature: 38 °C (recorded by patient)  
+- Heart Rate: 91 bpm (last recorded value in chart)  
+- Blood Pressure: Not recorded at this encounter  
+- Respiratory Rate: 14 breaths/min (last recorded value)  
+- SpO₂: Not recorded  
+- Weight/Height: Height 168 cm; BMI 30.97 (obese)  
+
+Physical Examination  
+No physical exam findings documented in the transcript; therefore, “No information available.”  
+
+Laboratory Data (most recent)  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.5 mg/dL  
+- Potassium: 5.03 mmol/L (earlier value 4.31 mmol/L)  
+- Sodium: 141.5 mmol/L  
+- Chloride: 101.2 mmol/L  
+- BUN: 19.2 mg/dL (earlier value 17.4 mg/dL)  
+- Calcium: 9.47 mg/dL (later 10.06 mg/dL)  
+- LDL Cholesterol: 140.6 mg/dL  
+- Total Cholesterol: 185 mg/dL  
+- ALT: 21.8 U/L  
+- PHQ‑2: Score 2 (positive screen)  
+
+No cardiac biomarkers, ECG, or imaging studies are currently available.  
+
+Assessment  
+1. Acute chest pain, likely ischemic in nature (possible unstable angina or non‑ST‑elevation myocardial infarction) given significant cardiovascular risk factors (known CAD, hypertension, hyperlipidemia, active smoking, age).  
+2. Shortness of breath associated with chest discomfort – concerning for cardiac or pulmonary etiology.  
+3. Fever 38 °C – may represent a non‑cardiac infectious process or inflammatory response; needs evaluation.  
+4. Hypertension, hyperlipidemia, and chronic kidney disease – chronic comorbidities requiring ongoing management.  
+5. Tobacco use disorder.  
+6. Recent crystal‑methamphetamine use – potential contributor to tachycardia and chest discomfort.  
+
+Plan  
+
+Immediate Diagnostic Measures  
+- Obtain a 12‑lead electrocardiogram on arrival.  
+- Draw cardiac biomarkers (troponin I/T, CK‑MB) and repeat in 3–6 hours per ACS protocol.  
+- Basic metabolic panel, complete blood count, and coagulation profile.  
+- Chest radiograph to assess for pulmonary causes (e.g., pneumonia, pneumothorax).  
+- Pulse oximetry and continuous cardiac monitoring.  
+
+Therapeutic Interventions  
+- Administer aspirin 325 mg chewable now, then 81 mg daily.  
+- Give sublingual nitroglycerin 0.4 mg PRN for persistent chest pain, monitoring blood pressure.  
+- Initiate supplemental oxygen to keep SpO₂ ≥ 94 % if desaturation occurs.  
+- Consider intravenous morphine for severe pain not relieved by nitroglycerin, per protocol.  
+- If ECG shows ST changes or biomarkers are elevated, start full ACS protocol including anticoagulation (e.g., low‑molecular‑weight heparin) and arrange for cardiology consultation for possible early invasive strategy.  
+
+Monitoring and Admission  
+- Admit to telemetry unit for cardiac monitoring and serial labs.  
+- Reassess vitals, pain score, and symptom progression every hour.  
+
+Address Contributing Factors  
+- Counsel on smoking cessation; offer nicotine replacement therapy and referral to cessation program.  
+- Discuss risks associated with recent crystal‑methamphetamine use and provide resources for substance‑use counseling.  
+- Review antihypertensive regimen; ensure adherence to lisinopril and consider uptitration if blood pressure remains elevated.  
+- Optimize lipid management; verify current statin therapy and consider intensification given LDL >130 mg/dL.  
+
+Disposition and Follow‑Up  
+- Continue inpatient observation until cardiac work‑up is complete and patient is hemodynamically stable.  
+- Arrange follow‑up with primary care physician within one week of discharge for chronic disease management (HTN, CKD, diabetes screening).  
+- Schedule cardiology outpatient visit within 7–10 days for further evaluation of coronary disease.  
+- Provide education on warning signs that require immediate emergency care (worsening chest pain, syncope, new dyspnea).  
+
+Disposition: Admit to telemetry for further evaluation and management.

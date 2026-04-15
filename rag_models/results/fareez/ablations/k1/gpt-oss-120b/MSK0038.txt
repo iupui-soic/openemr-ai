@@ -1,0 +1,150 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 03:23:32
+Time: 6.51s
+Tokens: 11,684 in / 2,078 out
+============================================================
+
+Patient Information  
+Name: Abraham Lowe  
+Date of Birth: May 31, 1962 (Age 63)  
+Sex: Male  
+Address: 173 Renner Run, Bridgewater, Massachusetts 02324  
+Unit/Patient ID: 450  
+
+Chief Complaint  
+Left knee pain of several months’ duration, now present at rest.
+
+History of Present Illness  
+Mr. Lowe reports a three‑ to four‑month history of left knee pain that began with activity‑related discomfort and has progressively worsened. In the past two weeks the pain now persists at rest and is noticeable with daily activities such as walking. The pain is described as a sharp, stabbing sensation that occurs with each foot strike during running and a dull ache when the knee is at rest. He rates the current pain intensity as 6/10. Aggravating factors include running, climbing stairs, and any weight‑bearing activity; rest provides partial relief. He denies any specific trauma. He notes a similar episode several years ago while rowing in college that resolved with stretching and strengthening without formal medical evaluation. He is currently not participating in rowing and his sole exercise is running. The pain has begun to interfere modestly with his daily routine, as he feels discomfort even during short walks. He denies systemic symptoms such as fever, chills, weight loss, rash, visual or auditory changes, cough, dyspnea, chest pain, palpitations, gastrointestinal upset, urinary symptoms, headaches, or neurologic deficits. No numbness, tingling, or muscle aches around the knee are reported.
+
+Review of Systems  
+- Constitutional: No fever, chills, night sweats, or unintentional weight loss.  
+- Musculoskeletal: Positive for left knee pain; no other joint pain, swelling, or deformities. No muscle weakness or atrophy reported. No numbness or tingling.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Respiratory: No cough, shortness of breath, or wheezing.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, hematuria, or urinary frequency changes.  
+- Neurologic: No headache, dizziness, confusion, or memory loss.  
+- Skin: No rashes or lesions.  
+- Psychiatric: PHQ‑2 score of 2 (mild depressive symptoms); otherwise denies depression or anxiety.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 1987)  
+- Type 2 diabetes mellitus with prediabetes and metabolic syndrome  
+- Chronic kidney disease, stage 4 progressing to end‑stage renal disease (on transplant list)  
+- Obesity (BMI 28.4)  
+- Chronic low back pain, chronic neck pain, chronic pain syndromes  
+- No known history of cardiovascular disease, stroke, or cancer  
+
+Surgical History  
+- No prior surgeries reported.  
+
+Medications (current)  
+- Insulin (human regular and NPH)  
+- Hydrochlorothiazide 25 mg daily  
+- Amlodipine 2.5 mg daily  
+- Multivitamin (over‑the‑counter)  
+- No regular use of NSAIDs or analgesics reported; acetaminophen 325 mg PRN is listed in the record but not confirmed as active.  
+
+Allergies  
+No drug, food, or environmental allergies reported.  
+
+Family History  
+Father with hypertension and hypercholesterolemia; no known early myocardial infarction, stroke, or malignancy in first‑degree relatives.  
+
+Social History  
+- Tobacco: Never smoked.  
+- Alcohol: No use reported.  
+- Recreational drugs: No use.  
+- Current living situation: Lives alone in a small apartment while completing a master’s degree.  
+- Exercise: Regular running; no other structured exercise.  
+- Occupation: Full‑time student; previously employed full‑time.  
+
+Objective Findings  
+
+Vital Signs  
+- Heart rate: 94 beats/minute  
+- Respiratory rate: 13 breaths/minute  
+- Temperature: Not recorded  
+- Blood pressure: Not recorded at this visit  
+- Height: 179.6 cm (5 ft 11 in)  
+- Weight: Not recorded (BMI previously documented as 28.36)  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+
+Left Knee – Inspection: No visible swelling, erythema, bruising, or deformity. No obvious temperature asymmetry compared with the right knee.  
+
+Palpation: No tenderness over the patella, medial collateral structures, or patellar tendon. Mild tenderness noted along the lateral aspect above the joint line. No tenderness over the quadriceps or proximal tibia/fibula.  
+
+Range of Motion: Active flexion to 90° and full extension without pain while seated.  
+
+Functional Tests:  
+- Rising from a seated position produced sharp pain in the left knee.  
+- Sitting down again elicited pain.  
+- Ober test performed in the lateral decubitus position was positive, indicating tightness of the iliotibial band.  
+
+Neurovascular: Sensation intact, pulses palpable distally. No distal edema.  
+
+Laboratory Data (most recent)  
+- Sodium: 138–144 mmol/L (within normal limits)  
+- Potassium: 4.4–5.1 mmol/L (within normal limits)  
+- Chloride: 101–103 mmol/L (within normal limits)  
+- BUN: 15–19 mg/dL (within normal limits)  
+- Creatinine: 1.06 mg/dL (stable for patient with CKD)  
+- Glucose: 81–84 mg/dL (controlled)  
+- Calcium: 8.8–9.6 mg/dL (within normal limits)  
+- CO₂ total: 20–25 mmol/L (within normal limits)  
+- PHQ‑2: 2 (mild depressive symptoms)  
+- DAST‑10: 0, HARK: 0 (no substance misuse or intimate partner violence at present)  
+
+Imaging  
+No imaging studies were performed during this encounter.  
+
+Assessment  
+1. Iliotibial band syndrome (ITBS) of the left knee – clinical picture consistent with lateral knee pain exacerbated by running and a positive Ober test.  
+2. Essential hypertension, well‑controlled on amlodipine and hydrochlorothiazide.  
+3. Type 2 diabetes mellitus with current insulin therapy; glucose currently controlled.  
+4. Chronic kidney disease, stage 4 progressing to end‑stage renal disease – on transplant evaluation.  
+5. Obesity (BMI ≈ 28) and metabolic syndrome.  
+6. Chronic low back and neck pain – stable.  
+
+Plan  
+
+Conservative Management of ITBS  
+- Activity modification: Reduce running mileage by 50 % for 2–3 weeks; substitute with low‑impact cross‑training such as swimming or stationary cycling.  
+- Ice: Apply ice to the lateral knee for 15–20 minutes after activity, 3–4 times daily as needed for pain control.  
+- NSAID: Ibuprofen 400 mg PO q6‑8 h PRN with food, provided renal function remains stable; monitor for any gastrointestinal or renal adverse effects.  
+- Stretching and foam‑rolling: Initiate a daily iliotibial band stretching routine and foam‑roll the lateral thigh for 5 minutes each session.  
+- Physical therapy referral: Order outpatient PT focused on ITB stretching, hip abductor strengthening, core stability, and gait retraining.  
+- Taping: Recommend patellar or ITB taping techniques for symptomatic relief during activity.  
+
+Follow‑up and Monitoring  
+- Return visit in 4–6 weeks to assess response to conservative measures and to consider adjunctive modalities (ultrasound therapy, shockwave therapy) if symptoms persist.  
+- Earlier return if pain worsens, develops swelling, redness, or systemic symptoms.  
+
+Chronic Disease Management  
+- Hypertension: Continue amlodipine 2.5 mg daily and hydrochlorothiazide 25 mg daily; obtain blood pressure measurement at next primary‑care visit.  
+- Diabetes: Continue current insulin regimen; maintain target fasting glucose 80‑130 mg/dL. Review glucose logs at next endocrine follow‑up.  
+- CKD/ESRD: Continue monitoring renal function; ensure coordination with nephrology and transplant team. No NSAID dose increase beyond recommended limits.  
+- Obesity: Counsel on weight‑management strategies, including nutrition counseling and gradual increase in low‑impact aerobic activity as tolerated.  
+
+Preventive Care  
+- Immunizations: Patient reports receiving annual influenza vaccine; ensure COVID‑19 booster status is up to date.  
+- Screening: Continue routine diabetic eye and foot examinations per standard guidelines.  
+
+Patient Education  
+- Explained the nature of ITBS, the importance of activity modification, and the role of stretching/strengthening.  
+- Discussed safe use of ibuprofen given renal disease and instructed to report any signs of worsening kidney function (e.g., decreased urine output, swelling).  
+- Provided written handouts on ITB stretches and foam‑rolling techniques.  
+
+Disposition  
+- Discharged home with the above plan.  
+- Copies of the treatment plan and PT referral placed in the patient portal.  
+
+Follow‑up Instructions  
+- Schedule physical therapy within the next week.  
+- Follow up with primary care in 4–6 weeks or sooner if symptoms do not improve.  
+- Continue routine follow‑up with nephrology and endocrinology as previously arranged.

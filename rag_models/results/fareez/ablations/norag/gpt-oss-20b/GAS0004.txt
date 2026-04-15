@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:17:37
+Time: 1.97s
+Tokens: 10,746 in / 870 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Date of Birth: 1920-09-24 (per OpenEMR extract, though not relevant to current presentation)  
+Sex: Female  
+
+Chief Complaint  
+The patient reports having diarrhea for the past three to four days, accompanied by abdominal cramps and intermittent vomiting.
+
+History of Present Illness  
+The patient has experienced diarrhea for the last 3–4 days, with frequent loose, brown stools occurring approximately every hour. She reports no blood in the stool and describes mild to moderate cramping that began yesterday. She has also had two episodes of watery vomiting, occurring on and off, with no visible blood. The patient has not taken any over‑the‑counter medications for her symptoms other than increased fluid intake. She has reduced her food intake since the onset of abdominal discomfort. She denies fever, chills, rash, weight loss, or recent travel. No prior history of similar gastrointestinal upset is noted. She reports no changes in urinary habits.
+
+Past Medical History  
+- Asthma; currently using rescue inhaler as needed.  
+- No other chronic medical conditions reported.  
+- No known drug or food allergies.  
+
+Medications  
+- Rescue inhaler for asthma (specific agent not documented in transcript).  
+- No other current medications reported by the patient.  
+
+Allergies  
+No known drug or food allergies.
+
+Social History  
+- Student, living with two roommates.  
+- Occasional alcohol consumption (approximately one to two drinks on weekends).  
+- Denies tobacco use and recreational drug use.  
+- No recent travel.  
+- No occupational exposures reported.
+
+Family History  
+- Brother had appendicitis as a child.  
+- Mother underwent a hysterectomy.  
+- No other significant gastrointestinal or systemic illnesses noted in the family.
+
+Review of Systems  
+General: No fever or chills reported.  
+Skin: No rash or dermatologic changes.  
+HEENT: No sore throat or nasal congestion.  
+Respiratory: Asthma controlled with rescue inhaler; no current respiratory symptoms.  
+GI: Diarrhea, abdominal cramps, intermittent vomiting. No nausea beyond intermittent episodes. No blood in stool.  
+GU: No dysuria or changes in urine output.  
+Musculoskeletal: No pain or swelling reported.  
+Psychiatric: No depression or anxiety symptoms reported.
+
+Physical Examination  
+No physical examination findings were documented during the encounter.
+
+Assessment  
+Acute infectious diarrhea, likely viral or foodborne, secondary to recent ingestion of food at a Chinese restaurant approximately five days prior to symptom onset. The presentation is consistent with an acute, self-limited gastrointestinal illness. No evidence of systemic infection, dehydration, or complications such as hemolytic anemia or renal impairment.
+
+Plan  
+1. Symptomatic treatment:  
+   - Continue oral rehydration with water; consider oral rehydration solution if oral intake is insufficient.  
+   - Maintain electrolyte balance; advise avoiding caffeine and alcohol until symptoms resolve.  
+2. Pharmacologic therapy:  
+   - Consider oral loperamide 2 mg as needed for diarrhea (after confirming no contraindications).  
+   - Use antispasmodic (e.g., dicyclomine) if cramping persists, after evaluation for contraindications.  
+   - No antiemetics are currently indicated; if nausea/vomiting worsens, consider ondansetron.  
+3. Monitoring:  
+   - The patient should monitor for signs of dehydration (dry mucous membranes, decreased urine output, dizziness).  
+   - If fever develops or symptoms worsen (e.g., persistent vomiting, blood in stool, severe abdominal pain), return for re-evaluation.  
+4. Follow-up:  
+   - Outpatient follow-up in 2–3 days if symptoms persist beyond 5 days or if new symptoms arise.  
+   - Provide instructions for urgent care or emergency department evaluation if severe dehydration, persistent vomiting, or other concerning symptoms appear.  
+
+Patient was educated on the importance of adequate hydration, gradual reintroduction of bland foods, and recognition of red‑flag symptoms. She was advised to maintain her asthma inhaler regimen and to contact the clinic if any respiratory symptoms develop. The plan was reviewed and the patient expressed understanding and agreement.

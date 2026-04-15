@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:04:00
+Time: 5.58s
+Tokens: 13,529 in / 1,618 out
+============================================================
+
+Patient Information  
+Aaron Feeney, male, date of birth 05 December 1915 (age 108 years). Resident of 656 Murphy Stravenue, Walpole, Massachusetts 02081. He presented to the emergency department on 8 September 2024.
+
+Chief Complaint  
+Dry cough of five days’ duration, accompanied by feverish sensations, fatigue, sore throat, loss of smell, and night sweats.
+
+History of Present Illness  
+The patient reports that five days ago he began experiencing a dry, non‑productive cough that has progressively worsened and is now present throughout the day, interrupting his sleep. He describes a sore throat that developed in conjunction with the cough and notes mild chest discomfort localized to the throat area after prolonged coughing. He feels “pretty hot” and has been sweating, although he has not taken an oral temperature. He reports a single episode of night sweats the previous night in which his shirt was soaked. He also notes a new loss of sense of smell that began this morning; taste remains intact. He denies nausea, vomiting, chills, or recent weight loss; in fact, he believes he has gained 5–10 lb recently. He has not traveled recently and cannot identify any specific exposure to ill individuals, although he works in a grocery store with frequent public contact. He has not tried any over‑the‑counter remedies for his symptoms.
+
+Review of Systems  
+Constitutional: feverish feeling, fatigue, night sweats, no chills, no recent weight loss (weight gain reported).  
+Respiratory: dry cough, sore throat, mild chest discomfort after coughing, no dyspnea, no wheezing.  
+ENT: loss of smell, normal taste.  
+Gastrointestinal: no nausea, vomiting, abdominal pain, or change in bowel habits.  
+Cardiovascular: no chest pain at rest, no palpitations.  
+Genitourinary: no dysuria, no urinary frequency.  
+Neurologic: no headache, dizziness, or focal deficits.  
+Psychiatric: no anxiety or depression reported at this visit.  
+Musculoskeletal: no joint pain.  
+Skin: night sweats noted; no rash.
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus (treated with metformin)  
+- Obesity (BMI 31.5)  
+- Chronic kidney disease stage 4 and end‑stage renal disease (awaiting transplantation)  
+- Atrial fibrillation  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Hyperlipidemia  
+- Metabolic syndrome  
+- Anemia, microalbuminuria, proteinuria secondary to diabetes  
+- Osteoporosis  
+- History of renal transplant (status pending)  
+
+Surgical History  
+- Laparoscopic cholecystectomy performed approximately ten years ago.
+
+Social History  
+The patient lives with his wife and two school‑aged children. He is employed full‑time at a grocery store. He does not use tobacco, cannabis, or other recreational drugs. Alcohol consumption is limited to three to four beers on weekends. He reports no recent travel. He has environmental pollen allergy but no known drug allergies.
+
+Family History  
+Both his brother and his mother have a history of asthma. No other significant family history of respiratory disease, cardiovascular disease, or cancer reported.
+
+Allergies  
+Environmental pollen (seasonal). No known medication allergies.
+
+Current Medications (as reported by the patient)  
+- Ramipril (dose not specified) for hypertension  
+- Metformin (dose not specified) for diabetes mellitus  
+- Vitamin D supplement (dose not specified)
+
+Objective Findings  
+
+Vital Signs  
+- Heart rate: 88 beats per minute  
+- Respiratory rate: 13 breaths per minute  
+- Height: 166.3 cm  
+- Body mass index: 31.53 kg/m²  
+- Temperature, blood pressure, SpO₂, and weight: not recorded at this encounter.
+
+Physical Examination  
+No information available.
+
+Laboratory Data (most recent values on record)  
+- Sodium: 143.9 mmol/L  
+- Potassium: 4.74 mmol/L  
+- Chloride: 103.8 mmol/L  
+- Carbon dioxide (total): 25.7 mmol/L  
+- Blood urea nitrogen: 17.3 mg/dL  
+- Creatinine: 0.39 mg/dL (note: reflects chronic renal impairment)  
+- Glucose: 70.6 mg/dL (fasting) and 85.8 mg/dL (random)  
+- Calcium: 9.98 mg/dL  
+- Alkaline phosphatase: 79.5 U/L  
+- Aspartate aminotransferase (AST): 36.8 U/L  
+- Total protein in urine (dipstick): 280 mg/dL (proteinuria)  
+- Globulin (serum): 2.91 g/L  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- AUDIT‑C score: 1 (low‑risk alcohol use)  
+- HARK score: 0 (no intimate partner violence reported at this visit)  
+
+Imaging  
+No imaging studies performed during this encounter.
+
+Assessment  
+1. Acute bronchitis, likely viral in etiology, presenting with a five‑day dry cough, sore throat, feverish sensation, loss of smell, and night sweats.  
+2. Chronic comorbidities: hypertension, type 2 diabetes mellitus, obesity, chronic kidney disease stage 4/end‑stage renal disease, atrial fibrillation, ischemic heart disease, hyperlipidemia, and osteoporosis.  
+3. Environmental pollen allergy.  
+
+Plan  
+
+Diagnostic Testing  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19) and a respiratory viral panel to rule out influenza and other viral pathogens.  
+
+Therapeutic Interventions  
+- Advise self‑isolation for 14 days for the duration of the COVID‑19 work‑up and until results are available.  
+- Symptomatic treatment: continue acetaminophen as needed for fever or discomfort (dose per standard adult guidelines).  
+- Encourage adequate hydration, rest, and use of a humidifier to soothe the airway.  
+- Recommend an over‑the‑counter cough suppressant (e.g., dextromethorphan) if cough becomes intolerable, provided no contraindications.  
+- Continue current chronic medications (ramipril, metformin, vitamin D) without interruption.  
+
+Patient Education  
+- Instruct the patient to monitor temperature at home; seek urgent care if temperature exceeds 38.5 °C, if shortness of breath develops, or if cough worsens markedly.  
+- Discuss the importance of hand hygiene and mask use while symptomatic, especially given household exposure.  
+- Review signs of dehydration and advise prompt fluid intake.  
+
+Follow‑up  
+- Telephone follow‑up in 48 hours to review COVID‑19 test results and symptom progression.  
+- If the test is positive, provide guidance on isolation, symptom monitoring, and when to seek emergency care.  
+- Routine follow‑up with his primary care physician for chronic disease management as scheduled.  
+
+Disposition  
+The patient was discharged home after the swab was obtained and counseling completed. No immediate need for antibiotics was identified given the likely viral nature of the illness.

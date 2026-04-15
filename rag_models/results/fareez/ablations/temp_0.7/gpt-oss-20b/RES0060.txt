@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:19:08
+Time: 2.82s
+Tokens: 6,508 in / 1,372 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a four‑day history of fever, dry cough, and progressive fatigue.
+
+History of Present Illness  
+Abbie reports that she first noticed a fever and cough on Monday of this week. She measured a temperature of 38.5 °C (101.3 °F) this morning, which is the first time she has taken her temperature. The cough is dry, non‑productive, and has been worsening over the past four days. She also reports increasing fatigue, mild body aches, and intermittent nausea. She has had no sputum production, no hemoptysis, and no chest pain. Shortness of breath is minimal except after coughing fits. She has not experienced any wheezing, chest tightness, or orthopnea. Headaches have been present intermittently over the past several days and are described as tension‑type, relieved with over‑the‑counter analgesics. She denies sore throat, dysphagia, or loss of appetite, although she notes a decreased appetite over the last week. She has had a mild runny nose but no nasal congestion. She reports feeling chilly at night but no night sweats. There have been no significant changes in bowel habits, and she has had occasional nausea but no vomiting. She denies any recent travel, known sick contacts, or changes in living environment. She has not taken any antibiotics recently.
+
+Review of Systems  
+Constitutional: fever (38.5 °C), fatigue, mild body aches, decreased appetite, intermittent nausea, mild chills at night.  
+Respiratory: dry cough, no sputum, no hemoptysis, no wheeze, no chest pain, minimal shortness of breath post‑cough.  
+Cardiovascular: no palpitations, no chest pain, no edema.  
+Gastrointestinal: no abdominal pain, no nausea vomiting, normal bowel movements.  
+Neurologic: no headaches (tension‑type), no dizziness, no confusion.  
+Skin: no rash, no hives (except known penicillin allergy).  
+Hematologic/Immunologic: no known immunosuppression.  
+Endocrine: pre‑diabetes, high cholesterol.  
+
+Past Medical History  
+- Childhood asthma (resolved)  
+- Perennial allergic rhinitis (resolved)  
+- Mitral valve regurgitation (ongoing, asymptomatic)  
+- Acute bronchitis (2016–2017, resolved)  
+- Gingivitis (multiple episodes, resolved)  
+- Viral sinusitis (2019, resolved)  
+- Acute viral pharyngitis (2023, resolved)  
+- Prediabetes (diagnosed 6 months ago)  
+- Hypercholesterolemia (on rosuvastatin, controlled)  
+
+Surgical History  
+- Inguinal hernia repair, 5 years ago.  
+
+Social History  
+- Non‑smoker, no recreational drug use.  
+- Occasional alcohol consumption (1–2 beers on weekends).  
+- Lives in a duplex, rents the basement unit; lives with a girlfriend.  
+- No pets, no known mold or asbestos exposure.  
+- Regular exercise: walking the dog, increased activity recently.  
+
+Family History  
+- No known heart disease, lung disease, or cancer in immediate family.  
+- Grandfather had bladder cancer (uncertain details).  
+
+Allergies  
+- Penicillin (hives).  
+- Bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, peanut (reported hypersensitivity).  
+
+Current Medications  
+- Rosuvastatin 10 mg daily for hypercholesterolemia.  
+- Multivitamin daily.  
+- No current use of inhaled bronchodilators or antihistamines.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Results  
+Urinalysis (most recent): mild leukocyte esterase, 13.1 WBC/HPF, 2.0 RBC/HPF, trace protein, glucose 12.6 mg/dL, pH 5.2.  
+No complete blood count, metabolic panel, or inflammatory markers were obtained at this visit.  
+
+Assessment  
+Acute bronchitis secondary to a likely viral upper respiratory infection. The presentation is consistent with a viral prodrome (fever, dry cough, fatigue, mild headache, nausea). No evidence of bacterial superinfection or pneumonia at this time. Differential diagnoses include COVID‑19, influenza, and other common respiratory viruses; bacterial bronchitis or pneumonia are less likely given the absence of sputum, chest pain, or significant hypoxia.  
+
+Plan  
+- Obtain a COVID‑19 PCR test and advise the patient and her partner to isolate for 14 days pending results.  
+- Symptomatic treatment: acetaminophen for fever and headache, adequate hydration, and rest.  
+- Encourage continued use of rosuvastatin and monitor lipid profile in the next routine visit.  
+- Discuss lifestyle modifications for pre‑diabetes: increased physical activity, dietary counseling, and weight management.  
+- Review and potentially adjust antihistamine or inhaler therapy if future respiratory symptoms arise.  
+- Follow‑up in 3–5 days if symptoms worsen or fail to improve, or sooner if new symptoms (e.g., worsening cough, fever >38.5 °C, shortness of breath, chest pain) develop.  
+- Educate on signs of bacterial infection (increased sputum production, purulent sputum, fever >38.5 °C, worsening shortness of breath) that would warrant re‑evaluation and possible antibiotic therapy.  
+- Reinforce the importance of annual influenza vaccination and adherence to current immunization schedule.  
+- Encourage routine monitoring of blood glucose and lipid levels.  
+
+Discharge Instructions  
+The patient was advised to monitor her temperature, keep a symptom diary, and seek medical care if symptoms deteriorate. She was reminded to stay hydrated, rest, and continue her current medications. The patient was instructed to follow isolation guidelines until a COVID‑19 test result is available.  
+
+Follow‑up  
+A follow‑up visit or phone call is scheduled in 5 days to reassess symptoms and review test results.

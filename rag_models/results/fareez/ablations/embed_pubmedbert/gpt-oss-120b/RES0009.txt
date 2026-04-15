@@ -1,0 +1,126 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:50:45
+Time: 5.45s
+Tokens: 15,118 in / 1,692 out
+============================================================
+
+Patient Information:  
+Name: Abel Wunsch  
+Date of Birth: 1932‑06‑07 (Age 93)  
+Sex: Female (as reported by the patient)  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+
+Chief Complaint:  
+Chest pain and shortness of breath of five days’ duration.
+
+Subjective  
+
+History of Present Illness:  
+The patient reports a continuous, sharp, lingering pain located on the left side of the chest that began five days ago while seated on the couch. The pain is described as “tiny” but persistent and is aggravated by deep inspiration and by exertional activity such as walking to retrieve the mail. The patient notes that the discomfort is slightly relieved by over‑the‑counter analgesics (acetaminophen and ibuprofen) but never completely resolves. She also experiences dyspnea on exertion; walking even short distances makes her “harder to catch her breath.” She denies any radiation of the pain, cough, fever, chills, nausea, vomiting, palpitations, light‑headedness, syncope, hemoptysis, or sputum production. She reports that she has been less active because of the breathing difficulty, which she describes as “a little” fatigue. There are no associated headaches, night sweats, or skin changes. She denies recent travel or prolonged immobilization.  
+
+Review of Systems:  
+- Constitutional: No fever, chills, night sweats, or recent weight loss.  
+- Respiratory: Shortness of breath on exertion; no cough, wheeze, or hemoptysis.  
+- Cardiovascular: No chest pain radiation, palpitations, or known heart rhythm abnormalities.  
+- Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel habits.  
+- Genitourinary: No dysuria, hematuria, or urinary frequency; recent hysterectomy (approximately one month ago) with recovery reported as back to normal activity.  
+- Musculoskeletal: No joint or muscle pain.  
+- Neurologic: No headaches, dizziness, or syncope.  
+- Psychiatric: No reported mood changes.  
+
+Past Medical History:  
+- Recent total abdominal hysterectomy performed approximately one month ago for severe menorrhagia.  
+- The patient reports no chronic medical diagnoses such as hypertension, diabetes, coronary artery disease, or renal disease.  
+
+Surgical History:  
+- Total abdominal hysterectomy (≈1 month ago).  
+- Extraction of wisdom teeth during adolescence.  
+
+Social History:  
+- Occupation: Accountant.  
+- Living situation: Resides with husband and two teenage children.  
+- Tobacco use: Currently smoking approximately five cigarettes per day; reports attempting to cut down.  
+- Alcohol: Consumes roughly one glass of wine on weekends; otherwise abstains.  
+- Illicit drugs: No current use; prior occasional marijuana use in youth.  
+- Exercise: No regular exercise reported.  
+
+Family History:  
+- Mother experienced a myocardial infarction in her 70s.  
+- No known family history of cancer, bleeding disorders, or thromboembolic disease.  
+
+Allergies:  
+- No known drug, food, or environmental allergies.  
+
+Current Medications:  
+- Acetaminophen 325 mg as needed for pain (over‑the‑counter).  
+- Ibuprofen 200 mg as needed for pain (over‑the‑counter).  
+- No prescription medications reported by the patient at this visit.  
+
+Objective  
+
+Vital Signs (most recent documented values):  
+- Heart Rate: 79 beats per minute  
+- Respiratory Rate: 15 breaths per minute  
+- Temperature: Not recorded  
+- Blood Pressure: Not recorded  
+- Oxygen Saturation: Not recorded  
+- Height: 182.6 cm  
+- Weight: Not recorded (BMI calculated from prior data = 33.29, indicating obesity)  
+
+Physical Examination:  
+No information available from the encounter documentation.  
+
+Laboratory Data (most recent panel):  
+- White Blood Cell Count: 9.49 ×10³/µL  
+- Red Blood Cell Count: 3.80 ×10⁶/µL  
+- Hemoglobin: 16.9 g/dL  
+- Hematocrit: 47.5 %  
+- Mean Corpuscular Volume: 80.6 fL  
+- Mean Corpuscular Hemoglobin: 27.1 pg  
+- Mean Corpuscular Hemoglobin Concentration: 33.4 g/dL  
+- Red Cell Distribution Width: 14.5 %  
+- Platelet Count: 296.7 ×10³/µL  
+- Glucose: 82.8 mg/dL  
+- Blood Urea Nitrogen: 10.5 mg/dL  
+- Creatinine: 0.88 mg/dL (eGFR 158 mL/min/1.73 m²)  
+- Electrolytes: Sodium 142.9 mmol/L, Potassium 3.73 mmol/L, Chloride 102.3 mmol/L, CO₂ 23.2 mmol/L  
+- Calcium: 8.79 mg/dL  
+- Total Protein: 6.86 g/dL  
+
+Imaging:  
+No imaging studies have been performed at the time of this visit.  
+
+Assessment  
+
+1. Acute pleuritic chest pain with exertional dyspnea – primary concern for pulmonary embolism given recent major surgery (hysterectomy), immobility, smoking history, and the nature of the pain (sharp, worsened by deep inspiration).  
+2. Differential diagnosis includes musculoskeletal chest wall pain, pleurisy secondary to viral infection, early pericarditis, and less likely acute coronary syndrome (patient reports no radiation, palpitations, or known cardiac disease).  
+3. Recent abdominal hysterectomy (≈1 month ago) – postoperative status may predispose to venous thromboembolism.  
+4. Tobacco use – contributes to cardiovascular risk.  
+
+Plan  
+
+Diagnostics:  
+- Obtain a D‑dimer assay.  
+- Order a computed tomography pulmonary angiography (CTPA) to evaluate for pulmonary embolus.  
+- Perform lower‑extremity duplex ultrasound to assess for deep venous thrombosis.  
+- Consider basic chest radiograph to rule out alternative pulmonary pathology.  
+- Repeat complete blood count and basic metabolic panel if clinically indicated.  
+
+Therapeutic:  
+- No anticoagulation initiated pending definitive imaging; if the clinical suspicion remains high and imaging is delayed, consider starting empiric therapeutic anticoagulation after discussion of risks and benefits.  
+- Continue current OTC analgesics (acetaminophen or ibuprofen) as needed, but advise the patient to seek immediate care if pain worsens or if new symptoms such as hemoptysis, syncope, or marked tachypnea develop.  
+
+Patient Education & Counseling:  
+- Discuss signs and symptoms of pulmonary embolism that warrant urgent medical attention (sudden worsening shortness of breath, chest pain, coughing up blood, fainting).  
+- Advise smoking cessation and provide resources for tobacco‑cessation programs.  
+- Encourage gradual ambulation as tolerated; avoid prolonged periods of immobility.  
+
+Follow‑up:  
+- Review results of D‑dimer and imaging studies within 24–48 hours.  
+- Schedule a follow‑up visit (in‑person or telehealth) within 3 days to reassess symptoms and determine need for ongoing anticoagulation.  
+- If pulmonary embolism is confirmed, arrange referral to hematology/vascular medicine for anticoagulation management and consider transition to oral anticoagulant therapy.  
+
+Disposition:  
+Patient discharged home with pending diagnostic work‑up, instructions to return to the emergency department for any acute worsening, and scheduled follow‑up as outlined above.

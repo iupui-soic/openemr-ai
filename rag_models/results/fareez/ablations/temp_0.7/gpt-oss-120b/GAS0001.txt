@@ -1,0 +1,115 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 04:14:03
+Time: 5.57s
+Tokens: 20,039 in / 1,630 out
+============================================================
+
+Patient Information  
+Name: Amado Baumbach (recorded)  
+Date of Birth: 1942‑06‑09 (recorded) – however the patient described herself as a young adult female who is currently menstruating irregularly; exact age not provided.  
+Sex: Female (per interview)  
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with persistent nausea and intermittent vomiting for the past nine days, accompanied by increased urinary frequency.
+
+History of Present Illness  
+The patient reports that nausea began approximately nine days ago and has been present “all the time,” with worsening in the mornings and when exposed to strong or unpleasant odors. She has vomited one to two times on many days during this period. She denies any associated fever, chills, headache, myalgias, cough, or respiratory symptoms. She notes mild, cramp‑like abdominal discomfort but no overt abdominal pain, change in bowel habits, or blood in the stool. She has not observed any melena or hematochezia.  
+
+In addition to the gastrointestinal symptoms, the patient reports a noticeable increase in urinary frequency, estimating she voids roughly every one to two hours during the day. She does not awaken at night specifically to void, although she occasionally gets up for other reasons and then chooses to use the bathroom. She retains full control over voiding and denies urgency, dysuria, nocturia, or suprapubic pain. She attributes the increased fluid intake to feeling dehydrated from the vomiting episodes.  
+
+The patient’s last menstrual period occurred approximately six weeks ago. She describes her cycles as usually regular but does not track exact dates. She is not currently using hormonal birth control because it previously caused nausea. She is sexually active with one boyfriend and reports consistent condom use.  
+
+She denies any recent travel, sick contacts, dietary changes, or new medications. She has tried ginger chews for nausea without relief.  
+
+Review of Systems  
+Constitutional: Positive for nausea, vomiting, and fatigue related to frequent vomiting; no fever, chills, or weight loss reported.  
+Gastrointestinal: Positive for nausea, vomiting, mild crampy abdominal sensation; negative for abdominal pain, diarrhea, constipation, hematemesis, melena, or hematochezia.  
+Genitourinary: Positive for urinary frequency; negative for dysuria, urgency, nocturia, hematuria, flank pain.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or known heart disease.  
+Neurologic: No headaches, dizziness, or syncope.  
+Dermatologic: No rashes aside from known nickel allergy.  
+Psychiatric: No depression, anxiety, or suicidal ideation reported.  
+
+Allergies  
+Nickel – causes contact dermatitis (rash); no known drug, food, or latex allergies.  
+
+Past Medical History  
+The patient reports no known chronic medical conditions. (The electronic record lists numerous chronic diagnoses, but the patient denies any current problems; per instruction, the interview is taken as the current status.)  
+
+Surgical History  
+No surgical procedures reported.  
+
+Medications  
+The patient is not taking any prescription or over‑the‑counter medications at this time. She has used ginger chews for nausea, which were ineffective.  
+
+Social History  
+The patient lives with one roommate. She does not smoke tobacco. She consumes alcohol rarely, noting that she experiences headaches when she does. She denies any illicit drug use. She is sexually active with one male partner and uses condoms consistently.  
+
+Family History  
+Father has a history of hypertension. No other significant familial illnesses reported.  
+
+Objective  
+
+Vital Signs  
+Heart rate: 61 beats/min (recorded in the EMR)  
+Respiratory rate: 15 breaths/min (recorded)  
+Blood pressure: Not recorded at this visit  
+Temperature: Not recorded  
+SpO₂: Not recorded  
+Height: 173.7 cm (recorded)  
+Weight: Not recorded  
+Body Mass Index: 27.34 kg/m² (recorded)  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent available in the record)  
+- Leukocyte count: 3.78 × 10³/µL (low)  
+- Hemoglobin: 12.28 g/dL (within low‑normal range)  
+- Hematocrit: 43.4 % (normal)  
+- Platelet count: 105.6 × 10³/µL (low)  
+- Neutrophils: 26.2 % (low relative neutrophil proportion)  
+- Lymphocytes: 13.6 % (low)  
+- Monocytes: 10.4 % (elevated proportion)  
+- Electrolytes, renal function, and liver enzymes were not provided in the current data set.  
+
+Assessment  
+
+1. Persistent nausea and vomiting of 9‑day duration, likely early pregnancy (morning sickness) versus gastrointestinal irritation. The absence of a recent menstrual period (≈6 weeks) raises concern for possible pregnancy.  
+2. Increased urinary frequency, most likely secondary to increased oral fluid intake in response to vomiting; no evidence of urinary tract infection or dysuria.  
+3. Dehydration risk due to ongoing emesis; mild abdominal cramping noted.  
+4. Known nickel contact allergy; otherwise no drug or food allergies.  
+5. Social factors: lives with roommate, sexually active with condom use, rare alcohol use, no tobacco or illicit drugs.  
+
+Plan  
+
+Diagnostics  
+- Obtain a quantitative serum β‑hCG to assess for pregnancy.  
+- If β‑hCG is positive, perform a transvaginal ultrasound as indicated by gestational age.  
+- Basic metabolic panel and serum electrolytes to evaluate for dehydration and electrolyte disturbances.  
+- Urinalysis and urine culture if any new urinary symptoms develop.  
+
+Therapeutic  
+- Encourage oral rehydration with electrolyte‑containing solutions (e.g., oral rehydration salts or sports drinks) in small, frequent sips.  
+- If oral intake remains inadequate, consider anti‑emetic therapy: prescribe ondansetron 4 mg orally every 8 hours as needed for nausea/vomiting.  
+- Consider vitamin B6 (pyridoxine) 25 mg three times daily, which may alleviate mild morning sickness.  
+- Advise the patient to avoid strong odors and trigger foods that exacerbate nausea.  
+- Continue use of ginger chews if tolerated, but monitor effectiveness.  
+
+Education & Counseling  
+- Discuss the importance of confirming pregnancy status promptly, as management may differ.  
+- Review signs of dehydration (dry mouth, decreased urine output, dizziness) and advise seeking care if they develop.  
+- Counsel on safe hydration practices and the need to maintain adequate fluid intake.  
+- Reinforce condom use and discuss future contraceptive options should she wish to avoid pregnancy.  
+
+Follow‑Up  
+- Review β‑hCG results within 48 hours; if positive, arrange obstetric follow‑up.  
+- If symptoms persist or worsen despite anti‑emetics, schedule an urgent return visit for further evaluation (including possible gastrointestinal work‑up).  
+- Routine primary‑care follow‑up in 1 week to reassess hydration status, urinary frequency, and overall well‑being.  
+
+Disposition  
+The patient will be discharged home with the above plan, instructions for hydration, anti‑emetic use, and prompt follow‑up for pregnancy testing and symptom reassessment. No immediate red‑flag findings warranting emergency department referral were identified at this time.

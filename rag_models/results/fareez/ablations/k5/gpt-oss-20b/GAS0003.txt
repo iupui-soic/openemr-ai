@@ -1,0 +1,99 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:37:13
+Time: 3.21s
+Tokens: 19,642 in / 1,495 out
+============================================================
+
+Patient Information  
+Ali Hayes, female, 77 years old (born November 5, 1946).  Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086.  Unit number 5194.
+
+Chief Complaint  
+The patient presents with a chief complaint of right upper quadrant abdominal pain of 8 hours duration.
+
+History of Present Illness  
+Ms. Hayes reports that the abdominal pain began approximately 8 hours ago as she was preparing to sleep.  The pain is described as aching in nature and is localized to the right side of the abdomen, more pronounced in the upper quadrant.  Initially it was intermittent, but in the past 5–6 hours it has become constant and has not responded to over-the-counter acetaminophen (Tylenol).  She rates the pain as 8 out of 10 on a standard pain scale.  The pain has not radiated elsewhere.  Ms. Hayes notes that she has experienced similar postprandial right‑sided abdominal discomfort in the past, particularly after consuming fatty foods such as burgers or fries, which she previously attributed to indigestion.  The patient denies any nausea beyond mild, has not vomited, and denies fever, chills, diaphoresis, or significant changes in bowel movements.  She reports mild fatigue attributable to the pain but denies other constitutional symptoms.  No urinary complaints, rash, or jaundice are noted.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or significant fatigue beyond pain‑related.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, aching; no vomiting, diarrhea, constipation, melena, or hematochezia; mild nausea.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: Denies headache, dizziness, or focal deficits.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No depression or anxiety symptoms reported at this visit.  
+Allergies: No known drug allergies.
+
+Past Medical History  
+- Type 2 diabetes mellitus, controlled on metformin.  
+- Hypertension, on lisinopril.  
+- Chronic kidney disease, stage 2–3 with proteinuria and microalbuminuria secondary to diabetes.  
+- Gastroesophageal reflux disease.  
+- Metabolic syndrome.  
+- Obesity (BMI 27.9).  
+- Chronic intractable migraine without aura.  
+- Chronic pain.  
+- Chronic obstructive bronchitis.  
+- History of cerebral palsy and spasticity.  
+- Past surgical history limited to wisdom tooth extraction.  
+- No history of abdominal surgery.
+
+Surgical History  
+Wisdom teeth extraction in teenage years; no other operative procedures.
+
+Social History  
+The patient lives alone in an apartment.  She reports being laid off from employment due to COVID‑19.  She engages in regular outdoor running.  She consumes one to two alcoholic drinks per day, typically wine.  She denies tobacco use and recreational drug use.
+
+Family History  
+Mother: No significant medical history reported.  
+Father: History of heart attack at age 60.  
+No family history of gastrointestinal cancers, inflammatory bowel disease, or other hereditary conditions.
+
+Current Medications  
+- Metformin (dose not specified, continued).  
+- Lisinopril 10 mg daily.  
+- Acetaminophen with dextromethorphan and doxylamine (previously taken for symptom relief).  
+- No other prescription or over‑the‑counter medications reported at this encounter.
+
+Vital Signs  
+No vital signs were recorded during this encounter.
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record for this visit.
+
+Laboratory Results  
+The most recent laboratory data include:
+- Serum creatinine 1.97 mg/dL and estimated glomerular filtration rate (eGFR) 36.9 mL/min/1.73 m², consistent with chronic kidney disease stage 3.  
+- Urine protein 214.8 mg/dL, indicating significant proteinuria.  
+- Urine ketones 0.93 mg/dL, mild.  
+- Serum calcium 9.27 mg/dL.  
+- Serum sodium 136.0 mmol/L, chloride 103.96 mmol/L.  
+- Serum glucose 66.6 mg/dL, within normal range.  
+- Urine glucose 1.53 mg/dL (trace).  
+No leukocyte esterase, nitrites, or hematuria detected.  
+No evidence of acute metabolic derangement or infection from the available data.
+
+Imaging  
+No imaging studies have been performed at this time.  Ultrasound or computed tomography of the abdomen will be considered based on clinical evolution.
+
+Assessment  
+The patient presents with acute right upper quadrant abdominal pain of 8 hours duration, described as aching and non‑radiating, with a significant pain score and no response to acetaminophen.  Differential diagnoses include acute cholecystitis, biliary colic, pancreatitis, peptic ulcer disease, and less likely acute appendicitis (though classically lower quadrant).  Chronic kidney disease and hypertension may complicate analgesic choices.  The lack of fever, chills, vomiting, or significant laboratory abnormalities does not exclude an acute surgical abdomen but necessitates prompt imaging and possible surgical consultation.
+
+Plan  
+1. Order an abdominal ultrasound to evaluate gallbladder, bile ducts, and pancreatic head.  
+2. Obtain a comprehensive metabolic panel including liver function tests and serum lipase/amylase to evaluate for pancreatitis or hepatic pathology.  
+3. Obtain a CBC to assess for leukocytosis.  
+4. Initiate IV fluid hydration (0.9% saline) to support renal perfusion and mitigate pain.  
+5. Provide analgesia with acetaminophen (avoiding NSAIDs due to CKD) and consider opioid analgesics (e.g., hydromorphone) if pain remains uncontrolled.  
+6. Hold metformin temporarily if the patient becomes dehydrated or experiences worsening renal function; resume once renal parameters stabilize.  
+7. Monitor vital signs and pain score every 4–6 hours.  
+8. Consult general surgery for possible operative evaluation if imaging suggests gallstone disease, pancreatitis, or other surgical pathology.  
+9. Advise the patient to return to the emergency department if pain worsens, if nausea/vomiting develops, or if she experiences fever or worsening urinary symptoms.  
+10. Counsel on dietary modifications to reduce fatty foods, maintain adequate hydration, and adhere to diabetes and hypertension management.  
+11. Follow‑up with primary care or endocrinology within 1–2 weeks to review laboratory results and adjust chronic disease management.  
+12. Document all interventions and findings in the electronic medical record.
+
+Disposition  
+The patient will be admitted for observation pending imaging results and further evaluation of the abdominal pain, with close monitoring of renal function and pain control.  Surgical and laboratory workup will guide definitive management.

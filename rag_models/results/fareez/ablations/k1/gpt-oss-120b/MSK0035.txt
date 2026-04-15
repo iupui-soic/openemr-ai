@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 03:23:19
+Time: 5.61s
+Tokens: 15,564 in / 1,720 out
+============================================================
+
+Patient Information  
+Name: Abel Daugherty  
+Date of Birth: August 19, 1940 (Age 85)  
+Sex: Male  
+Address: 849 Miller Rapid, Boston, Massachusetts 02110  
+Unit/Patient ID: 336  
+
+Chief Complaint  
+The patient presents with acute right wrist pain, swelling, and bruising after a fall while skiing yesterday.
+
+History of Present Illness  
+Abel Daugherty reports that he was skiing yesterday and fell onto an outstretched right arm, landing directly on his wrist with the hand extended. He experienced immediate sharp pain localized to the right wrist just distal to the thumb on the palmar side. Since the injury, he notes constant pain rated 5‑6/10, worsened by movement of the wrist. He has observed mild swelling, warmth, and a bruised appearance of the area. He has been taking over‑the‑counter ibuprofen and has tried to limit motion, which provides minimal relief. He denies any pain elsewhere, and there is no history of prior wrist or hand injury. Neurological symptoms such as numbness, tingling, or weakness are absent. There are no associated systemic symptoms (fever, chills, headache, visual changes, respiratory or cardiac complaints). He has not lost consciousness, vomited, or experienced abdominal pain. He inquires whether surgery will be required and asks about the need for imaging.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight loss, or fatigue.  
+Skin: Noted bruising and mild swelling over the right wrist; no open wounds.  
+Musculoskeletal: Right wrist pain, swelling, and limited motion; no pain in other joints; denies back or neck pain.  
+Neurologic: No numbness, tingling, or weakness in the affected limb.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Respiratory: No cough, wheezing, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or urinary frequency.  
+ENT: No sore throat, sinus congestion, or changes in hearing, smell, or taste.  
+
+Past Medical History  
+- Seizure disorder / epilepsy (chronically managed)  
+- Prediabetes, type 2 diabetes mellitus (ongoing)  
+- Anemia  
+- Essential hypertension  
+- Chronic kidney disease (stage 4, progressing to end‑stage renal disease)  
+- Metabolic syndrome, hypertriglyceridemia, obesity (BMI >30)  
+- History of renal transplantation (ongoing)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Other historic conditions (e.g., stress, social isolation) noted in record but not currently active concerns  
+
+Surgical History  
+- History of coronary artery bypass grafting (date not specified)  
+- No prior wrist or hand surgeries  
+
+Social History  
+Abel lives alone in a downtown Boston apartment and is currently a full‑time student. He does not use tobacco. Alcohol consumption is limited to approximately two beers every other week. He uses cannabis edibles about once per month and denies use of other recreational drugs. He reports no recent travel and no known sick contacts. He engages in winter sports (skiing, snowboarding) and recreational activities such as camping, tennis, and volleyball.  
+
+Family History  
+No known family history of neurological, musculoskeletal, or autoimmune disorders.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+- Clopidogrel 75 mg PO daily (active)  
+- Simvastatin 20 mg PO daily (active)  
+- Metoprolol succinate 100 mg extended‑release PO daily (active)  
+- Nitroglycerin 0.4 mg mucosal spray as needed (active)  
+- Insulin, regular, human (active)  
+- Over‑the‑counter ibuprofen 200 mg tablet as needed for wrist pain (patient‑reported)  
+(All other listed injectable agents are historical intra‑operative medications and not part of his home regimen.)  
+
+Vital Signs  
+No current vital sign measurements were recorded during this encounter.  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+Extremities – Right Wrist: Mild swelling compared with the left wrist, warmth to touch, and a superficial bruising. No gross deformity observed. Palpation elicits tenderness over the distal radius on the volar (palmar) aspect; the anatomical snuffbox is non‑tender. Full active range of motion (flexion, extension, radial and ulnar deviation) is possible but limited by pain. Grip strength is preserved; the patient can make a fist without difficulty. No neurovascular deficits; capillary refill is brisk and distal pulses are intact.  
+Other joints (elbow, shoulder): Full range of motion, no pain.  
+Neuro: No focal deficits noted.  
+
+Laboratory Data  
+Recent laboratory values in the record (dated 2002) show: hemoglobin 16.1 g/dL, hematocrit 48.6 %, leukocytes 8.2 ×10³/µL, platelets 432 ×10³/µL, glucose 119 mg/dL, serum creatinine 2.89 mg/dL, estimated GFR 13 mL/min/1.73 m², and normal electrolytes. No current laboratory results are available for this visit.  
+
+Imaging  
+No imaging has been performed yet. The plan includes obtaining plain radiographs of the right wrist (anteroposterior, lateral, and oblique views).  
+
+Assessment  
+1. Right distal radius fracture versus wrist sprain pending radiographic confirmation.  
+2. Right wrist soft‑tissue contusion with mild swelling.  
+3. Chronic kidney disease stage 4/5 (eGFR ≈ 13 mL/min) – relevant to medication selection.  
+4. Type 2 diabetes mellitus, hypertension, ischemic heart disease – chronic comorbidities.  
+
+Plan  
+- Order immediate right wrist X‑ray (PA, lateral, oblique) to assess for distal radius fracture and to rule out scaphoid fracture.  
+- Advise the patient to immobilize the wrist with a removable splint or soft brace until imaging results are available.  
+- Recommend RICE measures: rest, ice application for 15‑20 minutes every 2‑3 hours, compression with an elastic bandage, and elevation of the hand above heart level when possible.  
+- Continue limited use of ibuprofen only if tolerated; given severe chronic kidney disease, prefer acetaminophen 500‑650 mg PO q6h as needed for pain, not exceeding 3 g per day.  
+- Counsel the patient on avoiding weight‑bearing or gripping activities that provoke pain.  
+- If radiographs confirm a displaced distal radius fracture, arrange orthopedic referral for possible closed reduction and casting or surgical fixation depending on fracture pattern.  
+- If imaging shows only a sprain, continue splinting, NSAID/acetaminophen for pain control, and initiate gentle range‑of‑motion exercises after 7‑10 days under supervision.  
+- Review his antiplatelet therapy (clopidogrel) with orthopedics in case surgical intervention is contemplated.  
+- Ensure tetanus immunization is up to date; administer booster if indicated.  
+- Follow‑up: Patient to return to the clinic within 48‑72 hours for review of imaging results and further management plan. Sooner return if pain worsens, new numbness, swelling increases, or any systemic symptoms develop.  
+- Education: Discuss signs of compartment syndrome (increasing pain unrelieved by elevation, paresthesias, pallor) and advise immediate emergency department evaluation if they occur.  
+
+Disposition  
+Patient was discharged home with instructions, a splint provided, and a prescription for acetaminophen. Imaging order placed. Follow‑up appointment scheduled as noted.

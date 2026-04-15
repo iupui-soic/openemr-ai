@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:18:13
+Time: 2.41s
+Tokens: 8,409 in / 1,268 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Date of Birth: April 16, 1965  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+Patient ID: 2046  
+
+Chief Complaint  
+The patient presents to the Emergency Department with a chief complaint of right upper quadrant abdominal pain.
+
+History of Present Illness  
+The patient reports a sharp, localized pain in the right upper quadrant of the abdomen, just below the lung margin. The pain began approximately three days ago after a meal, and has progressively worsened, reaching its peak intensity three to four hours prior to arrival. The patient rates the pain as 8 out of 10. The pain is constant, does not radiate, and is not relieved by over‑the‑counter analgesics such as acetaminophen or NSAIDs. The patient has experienced nausea for several days but denies vomiting, blood in vomitus, or hematochezia. He reports no changes in urinary habits, bowel movements, or stool color. Energy levels have been decreased due to pain, and appetite is poor. No fever, chills, or recent travel are reported.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight change.  
+Respiratory: No cough, shortness of breath, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, no vomiting, no hematochezia, no melena, no changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or frequency changes.  
+Skin: No rashes or skin changes.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Psychiatric: No anxiety or depression reported.  
+Endocrine: No polyuria or polydipsia.  
+Musculoskeletal: No joint pain or swelling.  
+
+Past Medical History  
+Chronic kidney disease stage 4 (post kidney transplant), essential hypertension, gastroesophageal reflux disease, cerebral palsy, intellectual disability, osteoporosis, chronic kidney disease stage 3, chronic kidney disease stage 2, chronic kidney disease stage 1, anemia, chronic kidney disease due to diabetes mellitus, microalbuminuria due to type 2 diabetes mellitus, and a history of kidney transplant failure and rejection. The patient also has a history of pneumonia, acute bronchitis, and viral sinusitis.  
+
+Surgical History  
+No prior abdominal or other surgeries reported. The only surgical event noted in the record is the delivery of his children, which is not an abdominal operation.
+
+Social History  
+The patient is a bank consultant. He lives with his partner and two children. He consumes alcohol socially, approximately one to two glasses of wine nightly, and denies smoking or recreational drug use. He does not report any recent travel or exposure to illness.
+
+Family History  
+Father died of stroke in his 60s. Mother has gallstones.
+
+Allergies  
+No known drug allergies.
+
+Current Medications  
+Tacrolimus (immunosuppressant) – ongoing therapy.  
+Glycopyrrolate – ongoing therapy.  
+Other medications listed in the electronic record are inactive or discontinued and are not considered current.
+
+Vital Signs  
+No current vital sign data available.
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record for this encounter.  
+
+Laboratory Results  
+White blood cell count: 7.58 ×10^3/µL (normal).  
+Hemoglobin: 13.58 g/dL (normal).  
+Hematocrit: 40.1% (normal).  
+Mean corpuscular volume: 94.5 fL (normal).  
+Mean corpuscular hemoglobin: 28.4 pg (normal).  
+Mean corpuscular hemoglobin concentration: 34.2 g/dL (normal).  
+Platelet count: 351.7 ×10^3/µL (normal).  
+Platelet distribution width: 155.4 fL (normal).  
+Platelet mean volume: 10.4 fL (normal).  
+Lipid panel: Total cholesterol 252.4 mg/dL, LDL 168.2 mg/dL, HDL 58.2 mg/dL, triglycerides 130.1 mg/dL.  
+No other laboratory tests were reported.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The presentation of acute, sharp right upper quadrant abdominal pain with nausea, a history of gallstones in the mother, and no evidence of vomiting or hematuria is most consistent with acute cholecystitis. The patient’s immunosuppressed status and chronic kidney disease are important comorbidities that may influence management and postoperative outcomes. No alternative diagnoses (e.g., pancreatitis, peptic ulcer disease, hepatic pathology) were identified based on the available data.
+
+Plan  
+1. Immediate surgical consultation for evaluation of acute cholecystitis and consideration of laparoscopic cholecystectomy.  
+2. Initiate intravenous pain control with acetaminophen or NSAID if renal function permits, and consider opioid analgesia as needed.  
+3. Maintain NPO status until surgical evaluation.  
+4. Continue tacrolimus therapy with close monitoring of trough levels and renal function.  
+5. Obtain abdominal ultrasound to confirm gallbladder inflammation, gallstones, or other pathology.  
+6. Monitor vital signs, pain score, and laboratory values (CBC, CMP, liver enzymes) closely.  
+7. Provide discharge instructions regarding postoperative care, pain management, wound care, and signs of infection or complications.  
+8. Schedule follow‑up appointment with the primary care provider and transplant nephrology within one week post‑discharge.  
+9. Counsel patient on alcohol moderation given immunosuppression and renal disease.  
+
+No additional imaging or laboratory studies are recommended at this time beyond the planned ultrasound and routine postoperative labs. The patient is advised to seek immediate medical attention if pain worsens, fever develops, or new symptoms such as vomiting or jaundice occur.

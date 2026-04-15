@@ -1,0 +1,41 @@
+Model: google/medgemma-4b-it
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 06:28:26
+Time: 32.08s
+Tokens: 10,754 in / 531 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Name: Abbey Arie Schroeder
+DOB: 1951-10-26
+Unit Number: 100
+Address: 292 Von Parade, Leominster, Massachusetts 01420
+
+Chief Complaint: Sore throat for three days, feverish.
+
+History of Present Illness:
+
+The patient presents today with a sore throat that began three days prior. She reports feeling feverish. The patient did not take any temperature measurements. She describes the fever as starting a day prior and breaking sometimes, but there is no clear pattern. The sore throat is constant and painful when swallowing. She denies any cough. She has tried lozenges, which provide temporary relief. She denies any previous similar episodes. She lives with her parents and younger brother. She denies any recent contact with sick individuals. The sore throat worsens with swallowing. She notes swelling in her neck, but not her entire neck, and some lumps in her neck. She denies any swelling elsewhere on her body. She denies any skin changes. She denies any recent travel. She denies headaches, nausea, vomiting, or night sweats. She reports feeling fatigued. She denies chest pain or palpitations. She denies any bowel changes. She denies any changes in urination. She reports getting adequate sleep, approximately 7 to 8 hours per night. Her appetite is adequate, but she finds it difficult to eat due to the sore throat, which is more painful with solids than liquids. She denies allergies. She denies any recent infections.
+
+Past Medical History:
+
+The patient has Crohn's disease, diagnosed last year. She is taking medication for it, which she believes is Sulfasalazine. She denies any other medications. She had a colonoscopy last year. She has a family history of Crohn's disease and Ulcerative Colitis. She has asthma and eczema in her family.
+
+Medications:
+
+The patient is taking Sulfasalazine for her Crohn's disease.
+
+Social History:
+
+The patient drinks alcohol occasionally, but not regularly. She does not smoke or use recreational drugs. She swims.
+
+Assessment:
+
+The patient presents with a sore throat, fever, and neck swelling, concerning for a possible infection. COVID-19 is a possibility, and a swab will be performed. Other viral infections and mono are also considerations.
+
+Plan:
+
+The patient is instructed to self-isolate until the COVID-19 test results are available (24-48 hours). A mono test (EBV antibody testing) will also be performed. The patient will be instructed to self-isolate until the results are available.

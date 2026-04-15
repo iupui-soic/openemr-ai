@@ -1,0 +1,44 @@
+Model: google/medgemma-4b-it
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:59:42
+Time: 46.08s
+Tokens: 5,669 in / 844 out
+Cell: norag
+============================================================
+
+Patient Information:
+Patient Name: Abbie Stamm
+Date of Birth: 2001-11-16
+Sex: Female
+Unit Number: 123
+
+Chief Complaint:
+The patient presents with a fever and cough that started four days ago, accompanied by fatigue and worsening cough.
+
+History of Present Illness:
+The patient reports a fever that started four days ago, along with a cough that has been present for several days. The patient states that the symptoms are worsening, with increasing fatigue and a worsening cough. The patient denies any sore throat, difficulty swallowing, or changes in taste or smell. She denies any recent changes in urinary habits or bowel movements. She reports no chest pain, wheezing, or shortness of breath. She denies any blood in her sputum. The patient states that she has not noticed any changes in her hearing or vision. She denies any pain or discharge from her ears or eyes. The patient reports a dry cough and no sputum production. She denies any recent changes in her symptoms.
+
+Past Medical History:
+The patient has a history of childhood asthma, perennial allergic rhinitis, medication review due, mitral valve regurgitation, and acute bronchitis. She also has gingivitis and a medication review due.
+
+Medications:
+The patient is currently taking nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule, Trinessa 28 Day Pack, Penicillin V Potassium 500 MG Oral Tablet, 168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System, Camila 28 Day Pack, sodium fluoride 0.0272 MG/MG Oral Gel, Etonogestrel 68 MG Drug Implant, Acetaminophen 325 MG Oral Tablet, Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler [Qvar], albuterol 0.83 MG/ML Inhalation Solution, Loratadine 5 MG Chewable Tablet, NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector.
+
+Allergies:
+The patient is allergic to penicillin, bee venom, mold, house dust mite, animal dander, tree pollen, cow's milk, and peanut.
+
+Social History:
+The patient lives in a duplex and rents the basement. She is currently single. She denies smoking, marijuana, or other recreational drug use. She reports drinking a few beers on the weekend.
+
+Family History:
+The patient denies any family history of lung conditions or heart conditions. She reports a grandfather with bladder cancer.
+
+Review of Systems:
+The patient reports fatigue, but denies any weight loss, night sweats, or chills. She reports no changes in appetite, taste, or smell. She denies any abdominal pain. She denies any changes in bowel movements. She denies any changes in urinary habits or voiding frequency. She denies any pain or discharge from her ears or eyes. She denies any chest pain, wheezing, or shortness of breath. She denies any recent memory loss or confusion. She denies any dizziness or fainting spells. She denies any recent changes in her headache pattern.
+
+Assessment:
+The patient presents with symptoms consistent with an upper respiratory infection, possibly COVID-19 given the current prevalence.
+
+Plan:
+The patient is instructed to isolate for 14 days, including her girlfriend, even if the COVID swab comes back negative. A COVID swab will be performed. The patient will be notified of the results. The patient will also be educated on the importance of isolation. If symptoms persist or worsen, a reassessment will be performed. If the COVID swab is negative, other possible diagnoses such as a common viral illness or the flu will be considered. If bacterial pneumonia is suspected, antibiotics will be prescribed. The patient will be instructed to follow up if symptoms do not improve.

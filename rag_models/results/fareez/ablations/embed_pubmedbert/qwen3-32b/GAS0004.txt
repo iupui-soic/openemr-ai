@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 04:03:04
+Time: 4.17s
+Tokens: 11,616 in / 1,162 out
+============================================================
+
+Patient Information  
+The patient is a 95-year-old female, Alane Ling Muller, presenting with a history of acute diarrhea. She resides in Chelsea, Massachusetts, and is currently living with two roommates. She has a known history of asthma and is on prescribed inhalers. She denies any allergies. Her social history includes occasional alcohol consumption, primarily on weekends, with no reported use of tobacco or recreational drugs. Her typical diet includes oatmeal for breakfast, salads for lunch, and dining out for dinner, often consuming fast food items such as burgers and fries.
+
+Chief Complaint  
+The patient presents with acute onset diarrhea over the past three to four days, which has significantly impacted her daily activities and caused her to miss classes. She reports frequent bowel movements, approximately every hour, with all stools being loose in consistency. She denies any prior episodes of similar symptoms.
+
+History of Present Illness  
+The patient reports that her diarrhea began approximately three to four days ago and has progressively worsened. She notes that she has not experienced any solid stools during this time. She also reports experiencing crampy abdominal pain that started approximately one day after the onset of diarrhea. She denies any blood in her stool, but acknowledges that she has not closely examined it. She has also experienced nausea and vomiting, with two episodes of vomiting reported the previous day. The vomiting has been less severe than the diarrhea. She denies any fever, chills, or rashes. She has attempted to stay hydrated by drinking water but has not taken any over-the-counter medications. She reports a decreased appetite since the onset of her symptoms. She denies any changes in urine output or discomfort during urination. She denies any recent travel or contact with individuals who are ill. She reports dining at a Chinese restaurant five days ago, where she consumed rice with chicken Manchurian. She did not eat the same meal with a friend and is unsure if this is related to her current symptoms.
+
+Past Medical History  
+The patient has a complex past medical history, including essential hypertension, prediabetes, anemia, chronic kidney disease (stage 4 progressing to end-stage renal disease), ischemic heart disease, chronic intractable migraine, and a history of renal transplant. She has also undergone a hysterectomy and has a history of breast and colon malignancies. She has a history of impacted molars and has undergone wisdom teeth removal. She has a documented history of social isolation and reports of violence in the environment. She has also had a history of substance misuse and intimate partner abuse.
+
+Family History  
+The patient's family history includes a brother who had appendicitis in childhood and a mother who has had a hysterectomy. There is no reported family history of other digestive disorders or abdominal surgeries.
+
+Medications  
+The patient is currently on several medications, including tacrolimus, simvastatin, metoprolol succinate, nitroglycerin, and acetaminophen. She also has a history of using various pain medications, including hydrocodone and oxycodone, though these are no longer active. She uses an inhaler for asthma management.
+
+Allergies  
+The patient reports no known allergies.
+
+Social History  
+The patient is a student and lives with two roommates. She consumes alcohol occasionally, approximately one to two glasses per week on weekends. She does not use tobacco or recreational drugs. She is employed full-time and has a history of part-time and full-time employment.
+
+Review of Systems  
+Constitutional: The patient reports fatigue and decreased appetite. She denies fever or chills.  
+Respiratory: No symptoms reported.  
+Cardiovascular: No symptoms reported.  
+Gastrointestinal: The patient reports diarrhea, crampy abdominal pain, nausea, and vomiting. She denies heartburn, constipation, or changes in appetite.  
+Genitourinary: No symptoms reported.  
+Neurological: No symptoms reported.  
+Musculoskeletal: No symptoms reported.  
+Integumentary: No rashes or changes in skin reported.  
+Psychiatric: No symptoms reported.  
+Endocrine: No symptoms reported.  
+Hematologic: No symptoms reported.  
+Lymphatic: No symptoms reported.  
+Immunologic: No symptoms reported.
+
+Objective  
+Vital signs were not available in the OpenEMR extract. However, the patient's height is 155.70 cm, with a BMI of 27.72. No recent vital signs were recorded in the OpenEMR data. Physical examination findings were not available in the provided data.
+
+Laboratory Results  
+Available lab results include hemoglobin, leukocytes, glucose, creatinine, and other routine blood and urine tests. The results are within normal ranges, with no evidence of infection or significant abnormalities. Specific values are detailed in the OpenEMR extract.
+
+Assessment  
+The patient presents with acute diarrhea, likely of infectious origin, given the recent dietary exposure and the absence of a prior history of similar symptoms. The presence of crampy abdominal pain and nausea supports this assessment. The patient is at risk for dehydration due to the frequency and severity of her symptoms. No evidence of systemic infection or other underlying conditions is present in the current presentation.
+
+Plan  
+The patient should be advised to continue hydration with oral fluids and consider oral rehydration solutions. She should monitor for signs of dehydration, including decreased urination, dizziness, or dark urine. A follow-up with a primary care provider is recommended if symptoms persist beyond 48 hours or if there is no improvement. She should avoid solid foods until symptoms subside and gradually reintroduce them. She should also avoid alcohol and caffeine. If symptoms worsen or new symptoms develop, such as fever or blood in the stool, she should seek immediate medical attention.

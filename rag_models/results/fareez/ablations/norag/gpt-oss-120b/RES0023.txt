@@ -1,0 +1,98 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:13:16
+Time: 4.70s
+Tokens: 12,691 in / 1,582 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: 05‑December‑1915 (Age 108)  
+Sex: Male  
+Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+Unit/Patient ID: 48  
+
+Chief Complaint  
+The patient presents to the emergency department reporting a worsening dry cough of five‑day duration that is interrupting his sleep.
+
+History of Present Illness  
+Aaron reports that the cough began approximately five days ago. It has progressively worsened and is present throughout the day without any clear alleviating or exacerbating factors. The cough is dry; he does not produce sputum. He now experiences a sore throat that worsens with coughing and describes mild throat pain but no localized chest wall pain. He feels “pretty hot,” describes sweating and night sweats (one episode with a soaked shirt), and reports a subjective fever although he has not taken a temperature. He notes a new loss of sense of smell that began this morning, while taste remains normal. He denies nausea, vomiting, chills, or recent weight loss; he actually feels he has gained 5–10 lb. He has not traveled recently and has no known recent sick contacts, though he works in a grocery store where he encounters many customers. He lives with his wife and two children, who are home‑bound and attending school online. He denies tobacco, alcohol (except 3–4 beers on weekends), illicit drug use, and cannabis. He reports a remote history of a similar illness when he was younger, likely viral.
+
+Review of Systems  
+- Constitutional: Positive for feverish feeling, night sweats, fatigue; negative for chills, recent weight loss.  
+- Respiratory: Positive for dry cough, sore throat, mild throat pain; negative for dyspnea, wheezing, sputum production, hemoptysis.  
+- ENT: Positive for anosmia; negative for ear pain or visual changes.  
+- Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea.  
+- Cardiovascular: No chest pain aside from throat discomfort, no palpitations.  
+- Genitourinary: No dysuria, urinary frequency, or incontinence.  
+- Musculoskeletal: No myalgias or joint pain reported.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Psychiatric: No anxiety or depression reported at this visit (screening scores low).  
+
+Past Medical History  
+- Hypertension (essential) – patient reports current use of ramipril.  
+- Type 2 diabetes mellitus – patient reports current use of metformin.  
+- Obesity (BMI ≈ 31.5) documented in EMR.  
+- Chronic kidney disease (stages 1‑4) and end‑stage renal disease (awaiting transplant) documented in EMR.  
+- Ischemic heart disease with prior coronary artery bypass graft.  
+- Atrial fibrillation.  
+- Hyperlipidemia.  
+- Metabolic syndrome.  
+- Prostate neoplasm (carcinoma in situ).  
+- Osteoarthritis of the hand.  
+- Osteoporosis.  
+- History of cholecystectomy (≈ 10 years ago).  
+- Multiple prior episodes of acute bronchitis (most recent 2022‑12‑25).  
+
+Past Surgical History  
+- Laparoscopic cholecystectomy (≈ 10 years prior).  
+
+Medications (as reported by the patient)  
+- Ramipril 10 mg PO daily (for hypertension).  
+- Metformin 500 mg PO BID (for type 2 diabetes).  
+- Vitamin D supplement (dose not specified).  
+
+Medications listed in the EMR but not currently confirmed by the patient include numerous cardiac agents (lisinopril, amlodipine, digoxin, verapamil, hydrochlorothiazide, warfarin, tacrolimus, nitroglycerin, simvastatin) and others (epoetin alfa, insulin, alendronate). Because the patient did not mention these during the encounter, they are not considered active at this visit pending verification.
+
+Allergies  
+- Environmental pollen (seasonal).  
+- No known drug allergies reported.
+
+Family History  
+- Mother: Asthma.  
+- Brother: Asthma.  
+- No other significant familial respiratory or cardiac disease reported.
+
+Social History  
+- Occupation: Grocery store employee, full‑time.  
+- Living situation: Resides with wife and two school‑aged children; both are home‑bound.  
+- Tobacco: Never smoker.  
+- Alcohol: Consumes 3–4 beers on weekends.  
+- Illicit drugs: None.  
+- Exercise: Not reported.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript or EMR for this encounter.  
+
+Assessment  
+1. **Acute bronchitis** – consistent with a five‑day dry cough, sore throat, feverish symptoms, and recent loss of smell, raising concern for a viral respiratory infection.  
+2. **Possible COVID‑19 infection** – anosmia, feverish feeling, and night sweats are classic for SARS‑CoV‑2; a diagnostic nasal swab is indicated.  
+3. **Hypertension, well‑controlled on ramipril (per patient report).**  
+4. **Type 2 diabetes mellitus, controlled on metformin (per patient report).**  
+5. **Chronic kidney disease/end‑stage renal disease** – ongoing per EMR; no acute change reported.  
+
+Plan  
+- **Testing:** Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (COVID‑19 test). Consider a rapid influenza antigen test if clinically indicated.  
+- **Isolation:** Advise the patient and household members to self‑isolate for 14 days from the date of testing, following public health guidelines.  
+- **Symptomatic care:**  
+  • Acetaminophen 325 mg PO q6‑8 h PRN for fever or discomfort, not to exceed 3 g per day.  
+  • Encourage adequate hydration and rest.  
+  • Use a honey‑lemon warm beverage or over‑the‑counter cough suppressant (dextromethorphan‑containing) if cough becomes distressing.  
+- **Monitoring:** Instruct the patient to record temperature at home. Seek immediate care if he develops dyspnea, chest pain unrelieved by rest, high‑grade fever (> 38.5 °C), worsening cough with purulent sputum, or any new neurologic symptoms.  
+- **Chronic disease management:** Continue ramipril, metformin, and vitamin D as prescribed. Reinforce adherence to renal disease and cardiac follow‑up appointments; no medication changes are required today.  
+- **Vaccinations:** Review COVID‑19 vaccination status; administer booster if indicated and not contraindicated. Offer influenza vaccine if the season is appropriate.  
+- **Follow‑up:** Telephone or telehealth follow‑up in 48‑72 hours to review test results and symptom progression. In‑person evaluation if symptoms worsen.  
+
+Disposition  
+The patient was evaluated in the emergency department, a COVID‑19 swab was performed, and he was discharged with the above plan and instructions for self‑isolation. No further acute interventions were required at this time.

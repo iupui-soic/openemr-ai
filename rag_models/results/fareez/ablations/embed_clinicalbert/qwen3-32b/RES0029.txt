@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:58:22
+Time: 2.83s
+Tokens: 10,100 in / 793 out
+============================================================
+
+Patient Information:  
+The patient is a 22-year-old female named Alyson Laila Leuschke. She resides at 422 Emmerich Gate Suite 68, Winchester, Massachusetts. She is employed as a mechanic and lives independently. She is a current smoker with a history of hay fever and allergies to certain nasal sprays and antihistamines. She denies recreational drug use and reports only occasional alcohol consumption on weekends. Her father has a history of type 2 diabetes, and there is no known family history of heart disease or cancer.  
+
+Chief Complaint:  
+The patient presents with chest pain following a bicycle accident that occurred approximately 2 hours prior to arrival. The pain is localized to the entire left side of the chest and is described as sharp, stabbing in nature. The pain has progressively worsened over the past 2 hours.  
+
+History of Present Illness:  
+The patient fell off her bicycle and sustained impact to the left side of her chest. Since the injury, she has experienced significant chest pain that is exacerbated by deep breathing. She reports that she must take slow, shallow breaths to minimize discomfort. The pain is localized to the left chest and has not radiated elsewhere. She denies any loss of consciousness, head injury, or dizziness at the time of the fall. She denies fever, chills, nausea, vomiting, cough, or shortness of breath beyond what is related to the pain. She also denies any prior episodes of chest pain.  
+
+Review of Systems:  
+- Constitutional: No fever, chills, or weight loss.  
+- Respiratory: No cough or sputum production.  
+- Cardiovascular: No palpitations or syncope.  
+- Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+- Musculoskeletal: No other injuries noted besides minor scrapes on the hands.  
+- Neurological: No headache, numbness, or tingling.  
+- Other: No rashes or skin changes.  
+
+Allergies:  
+The patient has a documented allergy to certain nasal sprays containing steroids and to some antihistamines. No known drug allergies.  
+
+Past Medical History:  
+The patient has a history of hay fever. She has no known chronic medical conditions and no prior hospitalizations or surgeries.  
+
+Social History:  
+The patient is a current smoker, averaging 2.5 to 3 packs per day. She has no history of recreational drug use and consumes alcohol occasionally, primarily on weekends.  
+
+Family History:  
+Her father has type 2 diabetes. No other significant family history is reported.  
+
+Current Medications:  
+No medications are currently prescribed or taken at home.  
+
+Objective:  
+Vital signs were not available in the provided OpenEMR extract. Physical examination findings were not included in the provided data.  
+
+Laboratory Results:  
+No specific laboratory results relevant to the current presentation were included in the provided data.  
+
+Imaging:  
+No imaging studies were included in the provided data.  
+
+Assessment:  
+The patient presents with acute chest pain following a traumatic fall. The pain is localized to the left side of the chest, sharp in nature, and worsens with deep breathing. Given the mechanism of injury and clinical presentation, possible diagnoses include musculoskeletal injury, rib fracture, or contusion. There is no evidence of cardiac or pulmonary pathology at this time.  
+
+Plan:  
+The patient should undergo a thorough physical examination, including focused assessment of the chest wall for tenderness, deformity, or crepitus. Imaging, such as a chest X-ray, may be warranted to rule out rib fractures or other structural injuries. Pain management with appropriate analgesics should be initiated as needed. The patient should be monitored for any signs of worsening pain, respiratory distress, or other concerning symptoms. Follow-up with a primary care provider or orthopedic specialist is recommended for further evaluation and management.

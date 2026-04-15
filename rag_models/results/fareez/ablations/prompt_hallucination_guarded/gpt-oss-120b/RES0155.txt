@@ -1,0 +1,74 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:25:55
+Time: 4.26s
+Tokens: 12,226 in / 1,058 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia DOB: 01‑07‑1914 Sex: Female Address: 517 Hills Trace, Stoneham, MA 02180  
+
+Chief Complaint  
+Shortness of breath, chest discomfort, and productive cough of five days’ duration.
+
+History of Present Illness  
+Ms. Tapia reports a five‑day history of worsening shortness of breath associated with exertional dyspnea. She notes that at rest she feels able to sit without major difficulty, but any activity around the apartment that was previously tolerated now leaves her “unable to catch her breath.” She also describes a continuous sense of chest “discomfort” or congestion that has been present throughout the episode; she does not characterize it as pain, stabbing, or pressure. The cough is productive, yielding small amounts of yellow‑green sputum—approximately the volume that would fill the inside of her palm with each episode. She denies hemoptysis. Over the past two days she has felt “a bit feverish,” although she has not measured her temperature. She denies sore throat, rhinorrhea, chills, night sweats, orthopnea, paroxysmal nocturnal dyspnea, or recent travel. She has used her rescue inhaler (Ventolin) three to four puffs this morning and also used it last night; normally she uses a rescue inhaler only two to three times per week. She reports no headaches, visual changes, nausea, vomiting, palpitations, gastrointestinal symptoms, urinary changes, or altered sleep or appetite.
+
+Review of Systems  
+- Constitutional: Subjective feverish feeling; no measured fever, chills, night sweats, or weight change.  
+- Respiratory: Progressive dyspnea on exertion, productive cough with yellow‑green sputum, no hemoptysis, no wheezing reported, no orthopnea or nighttime dyspnea.  
+- Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or dyspepsia beyond baseline GERD.  
+- Others: No headache, visual changes, or neurologic symptoms.
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed ≈ 3 years ago)  
+- Hypertension  
+- Gastroesophageal reflux disease (GERD)  
+
+Surgical History  
+No surgeries reported.
+
+Medications (home)  
+- Albuterol inhaler (Ventolin) – used as needed  
+- Symbicort (inhaled corticosteroid/long‑acting beta‑agonist) – taken daily  
+- ACE‑inhibitor for hypertension (specific agent not stated)  
+- Antacid (Tums) as needed for GERD  
+
+Allergies  
+No medication allergies reported.
+
+Social History  
+- Tobacco: Smokes approximately one pack per day; smoking history estimated at 30–40 years.  
+- Alcohol: Occasional wine with dinner on weekends.  
+- No illicit drug use.  
+- Lives in an apartment with her daughter; employed part‑time at a grocery store.  
+
+Family History  
+No known family history of lung, cardiac, or oncologic disease reported.
+
+Objective  
+Vital Signs: Not assessed during this encounter.  
+Physical Examination: Not assessed during this encounter.  
+Laboratory Studies: Not obtained during this encounter.  
+Imaging: Not performed during this encounter.
+
+Assessment  
+1. Acute COPD exacerbation, likely precipitated by an infectious process (productive cough with purulent sputum and subjective fever).  
+2. Rule out pneumonia versus viral lower‑respiratory infection (COVID‑19 considered).  
+
+Plan  
+- Immediate evaluation in the emergency department for full vital sign assessment, pulse oximetry, and physical examination.  
+- Obtain chest radiograph to evaluate for pneumonia.  
+- Perform SARS‑CoV‑2 PCR testing.  
+- Order basic laboratory panel including CBC with differential, BMP, and inflammatory markers as clinically indicated.  
+- Initiate nebulized bronchodilator therapy (e.g., albuterol ± ipratropium) in the ED.  
+- Consider systemic corticosteroid therapy (e.g., oral prednisone) pending severity assessment.  
+- If bacterial pneumonia is confirmed or strongly suspected, start empiric antibiotic therapy per local guidelines.  
+- Continue home inhaler regimen (Ventolin as needed, Symbicort daily).  
+- Counsel on smoking reduction/cessation; offer referral to smoking‑cessation resources.  
+- Provide education on signs that should prompt immediate return (worsening dyspnea at rest, new chest pain, fever > 101 °F, or altered mental status).  
+- Arrange follow‑up with primary care provider within 1–2 days after ED discharge to reassess respiratory status and medication regimen.  
+
+No new prescriptions were written during this encounter; all treatment recommendations were to be initiated in the emergency department as described above.

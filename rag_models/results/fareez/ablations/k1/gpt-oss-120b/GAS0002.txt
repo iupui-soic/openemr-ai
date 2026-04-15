@@ -1,0 +1,104 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:23:47
+Time: 4.68s
+Tokens: 7,935 in / 1,590 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Medical Record #: 2046  
+Date of Birth: 16‑April‑1965 (Age 61)  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+The patient presented to the Emergency Department with severe upper right abdominal pain.
+
+History of Present Illness  
+Agustin reports a sharp, localized pain in the right upper quadrant (RUQ) of the abdomen, described as “right below where the lungs are.” The pain began three days ago, approximately 30–60 minutes after lunch, and has progressively worsened, reaching its peak intensity about three to four hours prior to presentation. He rates the current pain as 8/10. The pain does not radiate to other areas. He notes associated nausea over the past several days but denies any vomiting, hematemesis, melena, or hematochezia. Appetite has markedly decreased, especially today. He reports that the pain limits his mobility and has left him feeling drained. He denies any recent travel, sick contacts, skin changes, rashes, urinary symptoms, or changes in bowel habits. He recalls a similar self‑limited episode of abdominal pain a few years ago that resolved without medical evaluation. Over‑the‑counter analgesics (ibuprofen and acetaminophen) have provided minimal relief.
+
+Review of Systems  
+Constitutional: Denies fever, chills, weight loss, or recent fatigue aside from pain‑related exhaustion.  
+Respiratory: No cough, shortness of breath, or recent infections.  
+Cardiovascular: No chest pain, palpitations, or known heart disease.  
+Gastrointestinal: RUQ pain, nausea, decreased appetite; no vomiting, no diarrhea, no constipation, no blood in stool, no change in stool color.  
+Genitourinary: No dysuria, hematuria, or changes in urine output/color.  
+Skin: No rashes or lesions noted.  
+Neurologic: No headaches, dizziness, or syncope.  
+Psychiatric: No anxiety, depression, or other mood concerns reported.  
+
+Past Medical History  
+The patient reports no chronic medical conditions other than a recommendation from his primary physician to lose weight. He denies any history of hypertension, diabetes, kidney disease, or other systemic illnesses.  
+
+Surgical History  
+No prior surgeries reported. The only hospitalizations mentioned were related to the births of his children.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Medications  
+The patient uses antacids on an occasional basis (a few times per month for heartburn). He is not taking any prescription medications or regular over‑the‑counter products.  
+
+Social History  
+Occupation: Bank consultant.  
+Living situation: Resides with partner and two children; reports a supportive home environment.  
+Alcohol: Consumes one to two glasses of wine nightly; does not feel a need to reduce intake.  
+Tobacco: Denies current or past smoking.  
+Illicit drugs: Denies use.  
+Exercise: No regular exercise reported.  
+
+Family History  
+Mother has a history of gallstones. Father died of a stroke in his 60s. No other significant familial medical conditions reported.  
+
+Vital Signs (recorded on 30‑May‑2024)  
+Heart Rate: 94 beats/min  
+Respiratory Rate: 13 breaths/min  
+Blood Pressure: Not documented  
+Temperature: Not documented  
+SpO₂: Not documented  
+Height: 177.7 cm (5 ft 10 in)  
+Weight: Not documented (BMI calculated from prior data as 27.27 kg/m²)  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent values)  
+- White blood cell count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.1 %  
+- Red blood cell count: 4.34 ×10⁶/µL  
+- Mean corpuscular volume: 94.5 fL  
+- Mean corpuscular hemoglobin: 28.35 pg  
+- Mean corpuscular hemoglobin concentration: 34.20 g/dL  
+- Red cell distribution width: 39.89 fL  
+- Platelet count: 351.7 ×10³/µL  
+- Platelet mean volume: 10.43 fL  
+- Platelet distribution width: 155.38 fL  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL 168 mg/dL, HDL 58 mg/dL, Triglycerides 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- Fall risk (Morse Scale): 105 (moderate risk)  
+
+Imaging  
+No imaging studies have been performed to date.  
+
+Assessment  
+1. **Acute right‑upper‑quadrant abdominal pain – probable biliary colic / early acute cholecystitis** – presentation is classic for gallbladder‑related pain precipitated by a fatty meal, associated nausea, and a family history of gallstones.  
+2. **Nausea, likely secondary to biliary irritation.**  
+3. **Overweight (BMI ≈ 27)** – contributes to gallstone risk.  
+4. **Alcohol use – moderate (1–2 glasses of wine nightly).**  
+
+Plan  
+- **Diagnostic Imaging:** Obtain a right‑upper‑quadrant abdominal ultrasound urgently to evaluate for gallstones, gallbladder wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- **Laboratory Studies:** Order a complete metabolic panel, liver function tests (AST, ALT, ALP, bilirubin), and a repeat CBC to monitor for leukocytosis.  
+- **Pain Management:** Initiate IV analgesia with morphine or hydromorphone as needed; consider adding IV ketorolac if no contraindications.  
+- **Antiemetics:** Give ondansetron 4 mg IV q6‑8 h PRN for nausea.  
+- **NPO Status:** Keep patient nil per os until imaging results are available; if cholecystitis is confirmed, surgical consultation will be arranged.  
+- **Hydration:** Start IV normal saline bolus 1 L, then maintain at 125 mL/hr, adjusting for urine output and clinical status.  
+- **Disposition:** Admit for observation and further work‑up pending ultrasound findings; surgical team to be consulted early if imaging suggests acute cholecystitis.  
+- **Patient Education:** Discuss signs of worsening pain, fever, or vomiting and advise to notify nursing staff promptly. Review low‑fat diet recommendations and weight‑loss counseling.  
+- **Follow‑up:** If discharged, schedule outpatient follow‑up with primary care within 3‑5 days and with gastroenterology or surgery within 1 week, depending on imaging outcomes.  
+
+The patient was monitored in the Emergency Department, received initial pain control, and a plan for further diagnostic evaluation and management was established. No immediate life‑threatening findings were identified at this time.

@@ -1,0 +1,104 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:04:33
+Time: 5.01s
+Tokens: 6,508 in / 1,559 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 24)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+Medical Record Number: 123  
+
+Chief Complaint  
+Fever and cough of several days’ duration.  
+
+History of Present Illness  
+Ms. Stamm reports that she began experiencing a dry cough approximately four days ago, on Monday. She noted feeling “hot” throughout the week and measured a temperature of 38.5 °C (101.3 °F) this morning, which she describes as her first documented fever. Since onset, the cough has progressively worsened and is now associated with increasing fatigue, mild body aches, and occasional shortness of breath following coughing spells. She denies sputum production, hemoptysis, wheezing, chest pain, palpitations, or a sore throat. She reports a mild, non‑productive runny nose and occasional chills at night but no night sweats. Appetite has decreased, resulting in a modest weight loss of a few pounds over the past week. She has experienced intermittent nausea without vomiting and describes a pressure‑type headache that has been present on and off for several days, similar to her usual tension‑type headaches, responsive to over‑the‑counter analgesics. She denies dysphagia, changes in taste or smell, visual or auditory changes, and any recent exposure to known sick individuals. She did shop at a mall over the weekend, with mask use reported by herself and others. No recent travel, no known mold or asbestos exposure at home, and no recent antibiotic use.  
+
+Review of Systems  
+Constitutional: Fever (38.5 °C), fatigue, chills, mild weight loss, headache, body aches.  
+Respiratory: Dry cough, worsening over four days, mild shortness of breath after coughing, no sputum, no wheeze, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, no orthopnea.  
+Gastrointestinal: Decreased appetite, nausea without vomiting, normal bowel movements, no abdominal pain.  
+Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+ENT: Mild runny nose, no sore throat, no dysphagia, normal taste and smell.  
+Neurologic: No dizziness, syncope, or confusion.  
+Dermatologic: No rash.  
+Psychiatric: No mood changes reported.  
+
+Allergies  
+Penicillin – causes hives.  
+
+Past Medical History  
+- Hyperlipidemia, on rosuvastatin.  
+- Pre‑diabetes (A1C 6.2 % six months ago).  
+- Childhood asthma, resolved in January 2021.  
+- Perennial allergic rhinitis, resolved in November 2020.  
+- Mitral valve regurgitation, ongoing.  
+- Prior inguinal hernia repair (≈5 years ago).  
+
+Surgical History  
+Inguinal hernia repair, approximately five years prior.  
+
+Social History  
+Non‑smoker, no marijuana or other recreational drug use. Consumes 2–3 beers on weekends. Lives in a rented basement unit of a duplex with her girlfriend; no known mold or asbestos issues in her unit. Works full‑time.  
+
+Family History  
+No known family history of lung, cardiac, or diabetic disease. Grandfather possibly had bladder cancer (uncertain).  
+
+Current Medications  
+- Rosuvastatin (dose not specified).  
+- Multivitamin.  
+
+Objective  
+Vital Signs: No current vital sign data available.  
+Physical Examination: No physical exam findings documented.  
+
+Laboratory Data (most recent)  
+Urinalysis (from recent visit for acute cystitis):  
+- White blood cells: 13 /HPF (elevated).  
+- Red blood cells: 1.96 /HPF (mildly elevated).  
+- Protein: 4.4 mg/dL.  
+- Glucose: 12.6 mg/dL.  
+- Specific gravity: 1.017.  
+- pH: 5.21.  
+
+Complete blood count (partial):  
+- Platelet count: 285 ×10³/µL (within normal limits).  
+- Mean platelet volume: 12.07 fL.  
+- MCV: 87 fL.  
+- MCHC: 33.65 g/dL.  
+
+Assessment  
+1. Acute viral upper respiratory infection – most consistent with acute bronchitis, pending COVID‑19 testing.  
+2. Fever, likely viral in etiology.  
+3. Pre‑diabetes, hyperlipidemia – stable on current therapy.  
+4. Mitral valve regurgitation – stable, no current cardiac symptoms.  
+5. Acute uncomplicated cystitis – evidenced by urinalysis findings.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. Instruct patient to self‑isolate for 14 days from the time of testing, regardless of result, and to wear a mask around household members. Notify public health authorities if test is positive.  
+- Symptomatic treatment: Acetaminophen 500 mg PO q6‑8 hours PRN for fever or headache, not to exceed 3 g per day. Encourage adequate oral hydration and rest.  
+- Cough: Recommend honey‑lemon tea or an over‑the‑counter cough suppressant (e.g., dextromethorphan) if cough is distressing.  
+- Monitor for warning signs: worsening dyspnea, chest pain, high‑grade fever >39 °C, persistent vomiting, or new onset confusion. Seek urgent care if any develop.  
+- No antibiotics prescribed at this time; will reassess if bacterial infection becomes suspected.  
+- Continue rosuvastatin as prescribed.  
+- Pre‑diabetes management: Reinforce lifestyle modifications – regular aerobic exercise (e.g., walking the dog), dietary carbohydrate moderation, weight monitoring. Arrange follow‑up with primary care in 3 months for repeat A1C.  
+- Acute cystitis: Since the urine culture is pending, advise increased fluid intake. If symptoms persist or worsen, consider a short course of appropriate antibiotics after culture results.  
+- Follow‑up: Return to primary care in 5‑7 days for COVID‑19 result review and symptom reassessment, or sooner if condition deteriorates.  
+
+Discharge Instructions  
+- Remain isolated from others for at least 14 days.  
+- Use a separate bathroom if possible; clean high‑touch surfaces frequently.  
+- Maintain hydration, balanced nutrition, and adequate sleep.  
+- Use antipyretics as needed for fever or headache.  
+- Avoid strenuous activity until fever resolves.  
+- Keep a symptom diary, noting temperature, cough severity, and any new respiratory or systemic symptoms.  
+- Contact the clinic or go to the emergency department if you develop shortness of breath at rest, chest pain, high fever, or any concerning change in condition.  
+
+Prepared by: Dr. External Provider  
+Date of Encounter: 10 February 2024.

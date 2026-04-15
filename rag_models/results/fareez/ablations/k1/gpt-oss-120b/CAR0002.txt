@@ -1,0 +1,135 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:24:11
+Time: 5.25s
+Tokens: 8,615 in / 1,988 out
+============================================================
+
+Patient Information:
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (Age 92)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Living Situation: Resides in a house with his parents.  
+
+Chief Complaint:
+Sudden onset left‑sided chest pressure that began approximately 30 minutes ago while shoveling snow.
+
+History of Present Illness:
+The patient reports that the chest discomfort started abruptly about half an hour prior to presentation while he was shoveling his driveway. He describes the sensation as a dull, pressure‑like pain localized to the left side of the chest. He rates the pain as 7/10 in intensity. The pain has not radiated to other areas. He notes that movement, especially walking and lying down, makes the discomfort slightly worse; there is no maneuver that provides relief. Since the onset of the pain, he has experienced mild shortness of breath. He also reports feeling “a little hot” today and measured a temperature of 38 °C. He denies nausea, vomiting, cough, sputum production, or recent fevers prior to today. He does not recall any prior episodes of chest pain. He mentions a recent rugby tackle the day before, but states his chest felt fine after that event. He has not traveled recently and no known sick contacts. He acknowledges a sensation of a faster heart rate, which he usually only feels during sports activity.
+
+Review of Systems:
+Constitutional: Low‑grade fever (38 °C) reported; denies chills, weight loss, or fatigue.  
+Cardiovascular: Chest pressure as described; reports palpitations/faster heart rate; denies syncope, edema, or known murmurs.  
+Respiratory: Mild dyspnea since symptom onset; no cough, wheeze, or sputum.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: No headache, dizziness, or loss of consciousness.  
+Musculoskeletal: No recent injury to the chest aside from the rugby tackle; no joint pain reported.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No anxiety or depression noted; PHQ‑2 score of 2 on recent screen (mild depressive symptoms).  
+
+Past Medical History:
+- Essential hypertension (diagnosed 1984, ongoing)  
+- Hyperlipidemia / high cholesterol (diagnosed 2010, ongoing)  
+- Metabolic syndrome  
+- Obesity (BMI 30.9)  
+- Prediabetes with microalbuminuria  
+- Chronic kidney disease (stage 1–4 historically, progressed to end‑stage renal disease, now status post renal transplant – transplant performed 2013)  
+- Ischemic heart disease (diagnosed 1992, ongoing)  
+- Chronic low back pain, chronic neck pain, chronic pain syndrome  
+- Sleep apnea and sleep disorder  
+- Seizure disorder (single seizure history)  
+- History of intimate partner abuse (recorded)  
+
+Surgical History:
+- Renal transplant (2013)  
+- No other surgeries reported.
+
+Social History:
+- Tobacco: Smoking half a pack to one pack of cigarettes daily for approximately 20 years.  
+- Alcohol: Denies current alcohol use.  
+- Recreational Drugs: No current marijuana use; reports occasional crystal methamphetamine use, approximately twice per month for the past seven years, most recent use six days ago.  
+- Occupational: Works as a city bus driver.  
+- Exercise: Typically runs on Sundays; otherwise limited activity.  
+- Diet: Describes a fairly balanced diet with regular vegetable intake, though eats out occasionally.  
+- Living Situation: Lives with parents in a house.  
+
+Family History:
+No reported family history of myocardial infarction, cancer, diabetes, or other major illnesses.
+
+Allergies:
+No known drug allergies.
+
+Current Medications (home regimen):
+- Rosuvastatin (for hyperlipidemia)  
+- Lisinopril (for hypertension)  
+- Multivitamin  
+- Metoprolol succinate 100 mg extended‑release (cardiovascular)  
+- Nitroglycerin spray PRN (angina)  
+- Hydrochlorothiazide 25 mg (blood pressure)  
+- Additional chronic transplant and renal support medications listed in the record (tacrolimus, epoetin alfa, insulin, etc.) are assumed to be continued per transplant protocol.  
+
+Vital Signs:
+No current vital signs documented at this encounter. The most recent recorded vitals in the chart (May 2005) show a heart rate of 91 bpm, respiratory rate 14/min, and BMI 30.9. Temperature measured today by patient was 38 °C.
+
+Physical Examination:
+No physical exam findings recorded in the transcript. No objective data available at this time.
+
+Laboratory Data (most recent values on record):
+- Creatinine: 0.72 mg/dL (within normal limits)  
+- Glucose: 84.5 mg/dL  
+- Potassium: 5.03 mmol/L (first value) and 4.31 mmol/L (second value) – within acceptable range  
+- Sodium: 141.5 mmol/L  
+- Chloride: 101.2 mmol/L  
+- Bicarbonate (CO₂): 20.7 mmol/L and 28.4 mmol/L – mildly low in the first measurement  
+- Blood Urea Nitrogen: 19.2 mg/dL and 17.4 mg/dL  
+- Calcium: 9.47 mg/dL and 10.06 mg/dL  
+- LDL Cholesterol: 140.6 mg/dL (elevated)  
+- Total Cholesterol: 185.3 mg/dL  
+- ALT: 21.8 U/L (normal)  
+- PHQ‑2 score: 2 (positive screen)  
+- AUDIT‑C total score: 1 (low risk alcohol use)  
+- Morse Fall Risk total: 36 (moderate risk)  
+
+Assessment/Impression:
+1. Acute chest pressure likely cardiac in origin – concern for unstable angina or acute coronary syndrome given history of ischemic heart disease, hypertension, hyperlipidemia, smoking, and recent exertion (shoveling).  
+2. Shortness of breath and low‑grade fever may reflect pulmonary or infectious contribution, but infection is less likely without cough or sputum.  
+3. Tachycardia/palpitations reported, possibly secondary to pain, anxiety, or stimulant use (recent crystal meth).  
+4. Chronic comorbidities: hypertension, hyperlipidemia, post‑renal‑transplant status with stable renal function, chronic pain syndromes, sleep apnea, seizure disorder.  
+5. Risk factors: active tobacco use, recent stimulant exposure, sedentary lifestyle aside from occasional running.  
+
+Plan:
+Diagnostics:
+- Immediate 12‑lead electrocardiogram to evaluate for ischemic changes.  
+- Serial cardiac biomarkers (troponin I/T) at presentation and repeat in 3–6 hours.  
+- Chest radiograph to assess for pulmonary pathology.  
+- Basic metabolic panel and repeat CBC to evaluate for infection or electrolyte abnormalities.  
+- Consider point‑of‑care ultrasound if pericardial effusion or aortic pathology is suspected.  
+
+Therapeutic Interventions:
+- Administer sublingual nitroglycerin 0.4 mg PRN for chest discomfort, monitor response.  
+- Initiate aspirin 325 mg chewed now, followed by daily low‑dose aspirin.  
+- Begin anticoagulation with low‑molecular‑weight heparin if ECG or troponins suggest ACS, unless contraindicated.  
+- Provide supplemental oxygen to keep SpO₂ ≥ 94 % if hypoxic.  
+- Address hypertension and pain as needed; consider beta‑blocker titration (metoprolol) if tachycardic and no contraindication.  
+
+Disposition:
+- Admit to telemetry unit for continuous cardiac monitoring, further work‑up, and management of potential acute coronary syndrome.  
+- Cardiology consult for possible coronary angiography based on evolving data.  
+
+Patient Education & Discharge Planning (to be addressed after stabilization):
+- Counsel on smoking cessation and offer nicotine replacement therapy or pharmacologic aids.  
+- Discuss risks associated with recreational stimulant use and provide resources for substance use counseling.  
+- Reinforce adherence to antihypertensive, lipid‑lowering, and transplant immunosuppressive regimen.  
+- Review signs and symptoms that warrant immediate medical attention (worsening chest pain, dyspnea, syncope).  
+
+Follow‑up:
+- Cardiology follow‑up within 1 week of discharge or sooner if symptoms recur.  
+- Nephrology follow‑up for transplant medication monitoring as per routine schedule.  
+- Primary care visit within 1–2 weeks to address chronic disease management, smoking cessation, and preventive care.  
+
+Signature:
+[Physician’s name], MD  
+Date: April 14 2026

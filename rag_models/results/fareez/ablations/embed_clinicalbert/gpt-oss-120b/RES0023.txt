@@ -1,0 +1,115 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:46:59
+Time: 5.04s
+Tokens: 13,523 in / 1,778 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney Date of Birth: 1915‑12‑05 Sex: Male Unit #: 48 Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+The patient presented to the emergency department with a five‑day history of a dry, persistent cough that is now disturbing his sleep.
+
+History of Present Illness  
+Mr. Feeney reports that the cough began approximately five days ago and has steadily worsened. The cough is dry, occurs throughout the day, and does not improve with any particular activity or position. He describes associated “feeling hot,” marked fatigue, and a subjective fever with sweating, although he has not taken a temperature. He notes night sweats, describing one episode in which his shirt was soaked through. He reports a sore throat that seems to be secondary to the frequent coughing and a new loss of sense of smell that started this morning; his taste remains intact. He denies nausea, vomiting, weight loss (he actually feels he has gained 5–10 lb), chills, or recent travel. He has had no known sick contacts, although he works in a grocery store with frequent customer interaction. The cough has begun to cause mild throat pain after prolonged episodes. He has no history of a similar prolonged cough, although he recalls occasional flu‑like illnesses when younger.
+
+Review of Systems  
+
+- Constitutional: Positive for feverish feeling, fatigue, night sweats; negative for chills, weight loss, recent change in appetite.  
+- Respiratory: Positive for dry cough, sore throat, and mild throat pain with cough; negative for dyspnea, wheezing, or chest pain unrelated to cough.  
+- ENT: Positive for loss of smell; negative for nasal congestion, ear pain.  
+- Cardiovascular: No chest pain other than throat discomfort, no palpitations.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+- Genitourinary: No dysuria, hematuria, or frequency.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Musculoskeletal: No myalgias or arthralgias.  
+- Psychiatric: No anxiety or depression reported at this visit.  
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus (previously noted as prediabetes)  
+- Obesity (BMI 31.5)  
+- Chronic kidney disease stage 3 (most recent labs show creatinine 0.39 mg/dL, consistent with prior documentation)  
+- End‑stage renal disease with awaiting kidney transplant (as per recent records)  
+- Ischemic heart disease with prior coronary artery bypass graft  
+- Atrial fibrillation  
+- Hyperlipidemia, metabolic syndrome, and associated micro‑albuminuria/proteinuria  
+- Prostate neoplasm (carcinoma in situ)  
+- Osteoarthritis of the hand, osteoporosis, and a history of gallbladder removal (≈10 years ago)  
+
+Surgical History  
+- Laparoscopic cholecystectomy (approx. ten years prior)  
+
+Social History  
+The patient is employed full‑time at a grocery store. He lives with his wife and two school‑aged children. He does not smoke tobacco or use cannabis or other recreational drugs. Alcohol consumption is modest, approximately three to four beers per weekend. He reports environmental allergies to pollen but no known drug allergies.  
+
+Family History  
+His mother and brother have a history of asthma. No other significant family history of respiratory disease, cardiovascular disease, or malignancy was reported.  
+
+Allergies  
+- Environmental: Pollen (seasonal)  
+- No known drug allergies  
+
+Current Medications (home regimen as reported)  
+- Ramipril 10 mg daily for hypertension  
+- Metformin (dose not specified) for diabetes mellitus  
+- Vitamin D supplement (dose not specified)  
+The patient also has over‑the‑counter acetaminophen available for symptomatic relief.  
+
+Vital Signs (recorded at the time of the encounter)  
+- Heart Rate: 88 beats/min  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not documented in the current encounter  
+- Temperature: Not recorded (patient reports feeling febrile)  
+- SpO₂: Not documented  
+- Height: 166.3 cm  
+- Weight: Not documented  
+- Body Mass Index: 31.53 kg/m²  
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record for this visit.  
+
+Laboratory Results (most recent values available)  
+- Sodium: 143.9 mmol/L  
+- Potassium: 4.74 mmol/L  
+- Chloride: 103.8 mmol/L  
+- Carbon Dioxide (total): 25.7 mmol/L  
+- BUN: 17.3 mg/dL  
+- Creatinine: 0.39 mg/dL (reflecting chronic renal disease)  
+- Glucose: 70.6 mg/dL (fasting) and 85.8 mg/dL (random)  
+- Calcium: 9.98 mg/dL  
+- Alkaline Phosphatase: 79.5 U/L  
+- AST: 36.8 U/L  
+- Globulin: 2.91 g/L  
+- Urine protein: 280 mg/dL (elevated)  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+- AUDIT‑C score: 1 (low risk alcohol use)  
+
+Assessment  
+1. **Acute bronchitis** – clinical presentation of a five‑day dry cough, sore throat, subjective fever, night sweats, and recent loss of smell is consistent with an acute lower respiratory tract infection.  
+2. **Possible viral upper respiratory infection (including SARS‑CoV‑2)** – given the loss of smell and current community prevalence, COVID‑19 remains a consideration.  
+3. **Chronic comorbidities** – hypertension, type 2 diabetes, chronic kidney disease stage 3–4, atrial fibrillation, and coronary artery disease, all of which increase the risk for complications from respiratory infections.  
+
+Plan  
+
+- **Diagnostic testing**: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (and multiplex viral panel if available).  
+- **Isolation**: Advise the patient and his household to self‑isolate for 14 days from the date of testing, per public health guidelines.  
+- **Symptomatic care**:  
+  * Continue acetaminophen 325 mg PO q6h PRN for fever or discomfort, not to exceed 3 g per day.  
+  * Encourage adequate oral fluid intake and rest.  
+  * Use a humidifier and throat lozenges as needed for sore throat relief.  
+- **Monitoring**: Instruct the patient to seek immediate care if he develops shortness of breath, high‑grade fever (>101 °F), chest pain, worsening cough with purulent sputum, or any new neurologic symptoms.  
+- **Medication review**: No changes to chronic medications at this visit; ensure continued adherence to ramipril, metformin, and vitamin D.  
+- **Follow‑up**:  
+  * Telephone follow‑up in 48–72 hours to review COVID‑19 test results and clinical status.  
+  * If the test is positive, provide guidance on isolation duration, symptom monitoring, and when to seek urgent care.  
+  * If symptoms persist beyond 10 days or worsen, schedule an in‑person evaluation and consider chest radiography.  
+
+Discharge Instructions  
+The patient was counseled on the importance of hand hygiene, mask use, and limiting close contact with household members while symptomatic. He was given written instructions on the isolation protocol, signs that warrant urgent medical attention, and a prescription for acetaminophen as needed. He verbalized understanding and agreement with the plan.  
+
+Prepared by: Dr. External Provider, Emergency Department  
+Date of documentation: 2024‑09‑08.

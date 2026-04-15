@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:33:44
+Time: 28.54s
+Tokens: 11,518 in / 461 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Patient Name: Alyson Laila Leuschke
+Date of Birth: 1921-02-28
+Patient ID: 7303
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+
+The patient presented to the Emergency Department complaining of chest pain that started approximately 2 hours prior to arrival. The pain is located in the left side of the chest, described as stabbing and burning. The pain is exacerbated by taking deep breaths, and the patient reports feeling short of breath. The pain has been progressively worsening over the last two hours. The patient fell off her bicycle approximately 2 hours prior to arrival, and the impact was on the left side of her chest. She denies any loss of consciousness. She denies any injuries to the head. She denies any headache. She denies any fever or chills. She denies any nausea or vomiting. She reports feeling a little more heart racing in the last hour. She denies any skin changes or rashes. She denies any cough. She denies any recent infections. She denies any dizziness. She denies any weakness or numbness or tingling. She last ate around 3 hours prior to arrival. She denies any prior history of chest pain.
+
+Past Medical History:
+
+The patient reports having hay fever, but no other medical conditions. She has allergies to nasal sprays and some antihistamines. She has no hospitalizations or surgeries.
+
+Family History:
+
+Her father has type 2 diabetes.
+
+Social History:
+
+The patient is a mechanic and supports herself. She smokes 2.5-3 packs of cigarettes per day and drinks alcohol occasionally. She denies any drug use.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided text.
+
+Labs:
+
+The provided OpenEMR extract includes some lab results, including glucose, hemoglobin, hematocrit, and potassium. The results are within normal limits.
+
+Assessment:
+
+The patient is presenting with chest pain, likely related to the bicycle fall. Further evaluation is needed to rule out cardiac etiologies.
+
+Plan:
+
+The patient requires further evaluation to determine the cause of her chest pain. This may include an electrocardiogram (ECG), chest X-ray, and cardiac enzymes. The patient should be monitored closely for any changes in her condition.

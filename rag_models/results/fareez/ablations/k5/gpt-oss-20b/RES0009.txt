@@ -1,0 +1,123 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:35:49
+Time: 4.12s
+Tokens: 16,488 in / 1,685 out
+============================================================
+
+Patient Information  
+Name: Abel Wunsch  
+Date of Birth: June 7, 1932 (Age 94)  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with a 5‑day history of left‑sided chest pain described as a persistent, sharp, lingering discomfort that worsens with exertion and deep inspiration. He also reports shortness of breath that has become more pronounced with walking and daily activities.
+
+History of Present Illness  
+Mr. Wunsch reports that the pain began while he was seated at home and has persisted for five days. It is localized to the left side of the chest and does not radiate to other areas. The intensity of the pain increases with walking, particularly when he has to get out of the house for routine tasks such as going to the mail office. He has taken acetaminophen and ibuprofen, which provide only a modest reduction in discomfort. The pain is more noticeable with deep breaths and is associated with shortness of breath, but he denies cough, wheeze, fever, chills, nausea, vomiting, or syncope. He notes a mild sense of fatigue due to limited activity, but otherwise feels that his energy level has not been significantly diminished. He denies night sweats, headaches, palpitations, dizziness, or chest tightness. He has no current cough or sputum production and reports no abdominal, urinary, or skin changes.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or significant weight change. Mild fatigue related to decreased activity.  
+Respiratory: Shortness of breath on exertion; no cough, wheeze, sputum, or hemoptysis.  
+Cardiovascular: Chest pain as described; no palpitations, dizziness, or syncope.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or changes in bowel habit.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: No joint or limb pain.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Psychiatric: No depression or anxiety reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Obesity (BMI 33.3)  
+- Chronic kidney disease (historical stages 1–4, currently stable with normal creatinine and GFR of 158 mL/min)  
+- History of kidney transplant (2011) with ongoing tacrolimus therapy  
+- Chronic congestive heart failure (diagnosed 2009, currently managed)  
+- Ischemic heart disease with abnormal cardiac imaging (diagnosed 2000)  
+- Chronic sinusitis  
+- Hysterectomy (one month prior to presentation)  
+- No known allergies.  
+
+Surgical History  
+- Hysterectomy (one month prior)  
+- Wisdom tooth extraction (adolescent)  
+
+Medications  
+Current home medications:  
+- Tacrolimus 5 mg daily (extended‑release capsule)  
+- Tacrolimus 1 mg daily (extended‑release tablet)  
+- Lisinopril 10 mg daily  
+- Amlodipine 2.5 mg daily  
+- Sertraline 100 mg daily  
+- Clopidogrel 75 mg daily  
+- Simvastatin 20 mg daily  
+- Metoprolol succinate 100 mg daily  
+- Furosemide 40 mg daily  
+- Acetaminophen 325 mg (as needed)  
+- Ibuprofen 200 mg (as needed)  
+
+Social History  
+Mr. Wunsch resides with his wife and two teenage children. He works as an accountant. He consumes a glass of wine on weekends and smokes approximately five cigarettes per day, expressing a desire to quit. He denies recent recreational drug use and has not undertaken any long trips in the recent past.
+
+Family History  
+Mother had a myocardial infarction in her 70s. No other documented family history of cardiovascular disease, cancers, or clotting disorders.
+
+Objective Findings  
+Vital Signs (most recent available):  
+- Heart rate: 79 bpm  
+- Respiratory rate: 15 breaths/min  
+- Blood pressure: Not documented in the current visit  
+- Temperature: Not documented  
+- SpO₂: Not documented  
+- Height: 182.6 cm (6 ft)  
+- Weight: Not documented  
+- BMI: 33.3  
+
+Physical Examination  
+No examination findings were provided in the transcript; no abnormalities noted beyond the patient’s self‑reported chest pain and dyspnea.
+
+Laboratory Results  
+- White blood cells: 9.49 ×10³/µL  
+- Red blood cells: 3.80 ×10⁶/µL  
+- Hemoglobin: 16.92 g/dL  
+- Hematocrit: 47.5%  
+- Mean corpuscular volume: 80.6 fL  
+- Mean corpuscular hemoglobin: 27.1 pg  
+- Mean corpuscular hemoglobin concentration: 33.4 g/dL  
+- Red cell distribution width: 14.5%  
+- Platelets: 296.7 ×10³/µL  
+- Glucose: 82.8 mg/dL  
+- Blood urea nitrogen: 10.5 mg/dL  
+- Creatinine: 0.88 mg/dL  
+- Calcium: 8.79 mg/dL  
+- Sodium: 142.9 mmol/L  
+- Potassium: 3.73 mmol/L  
+- Chloride: 102.3 mmol/L  
+- Bicarbonate: 23.2 mmol/L  
+- Estimated glomerular filtration rate (MDRD): 158 mL/min/1.73 m²  
+- Serum protein: 6.86 g/dL  
+
+Imaging  
+No imaging studies have yet been performed at the time of this summary. The clinician has expressed concern for a potential pulmonary embolism and has planned appropriate diagnostic work‑up.
+
+Assessment  
+Differential diagnosis includes:  
+1. Pulmonary embolism – the patient’s recent hysterectomy, smoking, and exertional dyspnea are risk factors; the pleuritic nature of pain and worsening with deep inspiration support this possibility.  
+2. Acute coronary syndrome – given his history of ischemic heart disease, but the absence of radiation, exertional chest pain, or elevated cardiac biomarkers makes it less likely at this time.  
+3. Musculoskeletal chest wall pain – localized sharp pain could be due to musculoskeletal strain; however, the associated dyspnea reduces its likelihood.  
+4. Pericarditis – possible but would usually present with diffuse pain and friction rub; not suggested by history.  
+
+Plan  
+- Order D‑dimer to screen for thromboembolic disease.  
+- If D‑dimer is elevated, proceed with computed tomography pulmonary angiography to confirm or exclude pulmonary embolism.  
+- Initiate empiric anticoagulation with low‑molecular‑weight heparin if imaging confirms PE; otherwise, continue close monitoring.  
+- Continue current antihypertensive, lipid‑lowering, and heart‑failure medications.  
+- Continue tacrolimus monitoring with therapeutic drug levels.  
+- Advise the patient to increase fluid intake and to avoid prolonged immobility.  
+- Counsel on smoking cessation resources and consider nicotine replacement therapy or other pharmacologic aids.  
+- Schedule a follow‑up appointment in one week to review imaging results and reassess symptoms.  
+- Provide discharge instructions: avoid heavy exertion until cleared, continue to monitor for worsening chest pain, shortness of breath, swelling of extremities, or new neurological symptoms; seek immediate care if these occur.  
+- Educate the patient about signs of bleeding, especially given his antiplatelet therapy, and advise to report any bruising or bleeding promptly.  
+- No changes to current pain management beyond the use of acetaminophen or ibuprofen as needed for pain relief.  
+
+This plan addresses the immediate concern for pulmonary embolism while maintaining the patient’s chronic disease management. The patient will be monitored closely, and further work‑up will guide definitive therapy.

@@ -1,0 +1,57 @@
+Model: google/medgemma-4b-it
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 05:59:27
+Time: 27.47s
+Tokens: 11,553 in / 431 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Bartoletti
+Date of Birth: 1981-08-03
+Unit Number: 28
+Address: 409 Veum Drive, Spencer, Massachusetts 01562
+
+Chief Complaint: Patient presents with sinus problems, including nasal obstruction, discharge, headache, and facial pressure.
+
+History of Present Illness:
+
+The patient reports experiencing sinus problems for a few weeks, which have not improved with saline rinses. He describes a green-colored mucus discharge and a headache associated with the symptoms. He denies cough, shortness of breath, wheezing, sore throat, or loss of taste. He reports a recent elevated temperature of 99.7°F.
+
+Past Medical History:
+
+The patient has a history of chronic pain, chronic intractable migraine without aura, and essential hypertension. He has a history of ACL repair surgery and a past emergency department visit for a sinus infection. He also has a history of drug misuse, chronic kidney disease stage 1, and a disorder of kidney due to diabetes mellitus.
+
+Medications:
+
+The patient currently uses saline rinses and occasionally takes Advil for knee pain. He was previously using a nasal steroid spray.
+
+Allergies:
+
+The patient has a mild allergy to cats.
+
+Family History:
+
+The patient denies any significant family history of lung or heart conditions.
+
+Social History:
+
+The patient lives with his wife and teenage son. He drinks a few beers on the weekend (5-6 per weekend). He occasionally uses cannabis.
+
+Review of Systems:
+
+*   Constitutional: Denies fever or chills.
+*   Respiratory: Denies cough or shortness of breath.
+*   Cardiovascular: Denies chest pain.
+*   Gastrointestinal: Denies changes in bowel movements.
+*   Other: Denies changes in vision or hearing.
+
+Assessment:
+
+The patient presents with acute bacterial rhinosinusitis.
+
+Plan:
+
+The patient will be prescribed amoxicillin for five to seven days. He will also be prescribed inhaled corticosteroids to help with the inflammation. The patient will be followed up in one week to assess his response to treatment.

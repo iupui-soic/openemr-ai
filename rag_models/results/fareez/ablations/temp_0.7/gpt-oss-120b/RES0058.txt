@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:11:59
+Time: 4.21s
+Tokens: 8,264 in / 1,201 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: 1952‑11‑14 (age approximated from transcript appears to be a high‑school student; current age not explicitly stated)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint  
+Loss of taste and a dry cough of several days’ duration.
+
+History of Present Illness  
+Aaron reports that over the past two days he has experienced a marked loss of taste, describing foods as “plain” and “like cardboard.” He believes his sense of smell may also be diminished. The change in taste was first noticed while eating pizza but is now present with most foods. He also reports a dry, non‑productive cough that began three to four days ago, which is not associated with sputum or hemoptysis. After coughing he occasionally feels short of breath but denies wheezing or chest pain. He has felt unusually fatigued and has been sleeping more during the day. He notes a single episode of mild diarrhea this morning (two loose stools) without blood, abdominal pain, or constipation. He denies fever, though he feels “a bit hot” and describes a sensation of being warm. He experienced brief light‑headedness upon standing this morning, which resolved after sitting. He denies sore throat, nasal congestion, rhinorrhea, rash, joint pain, or muscle aches. He has not had any recent trauma to the face, nose, or mouth.  
+
+Review of Systems  
+Constitutional: Mildly elevated body temperature sensation, fatigue, brief dizziness on standing. No documented weight loss.  
+ENT: Loss of taste, possible decreased smell, itchy/scratchy throat, no sore throat, no nasal congestion or discharge.  
+Respiratory: Dry cough for 3–4 days, shortness of breath after coughing, no wheezing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, no known heart rhythm abnormalities.  
+Gastrointestinal: One episode of diarrhea this morning, no abdominal pain, no nausea, no vomiting, no blood in stool, no constipation.  
+Genitourinary: No dysuria, no change in urine output or appearance.  
+Neurologic: No confusion, no focal deficits, brief orthostatic dizziness resolved with rest.  
+Musculoskeletal: No myalgias or joint pain.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depressive symptoms reported.  
+
+Allergies  
+Patient reports possible allergy to cats; no current exposure to cats. No medication allergies reported.  
+
+Past Medical History  
+The patient states he has never been diagnosed with any chronic medical conditions. No prior surgeries reported in the current interview.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Social History  
+The patient lives in a townhouse with his mother, step‑father, and younger sister. He is a high‑school student and recently returned to in‑person classes. He denies tobacco cigarette use and alcohol consumption. He uses a flavored vape several times per day; he is uncertain whether the product contains nicotine or tobacco. He does not use other recreational drugs. No recent travel. No known exposure to mold or environmental hazards.  
+
+Family History  
+Maternal grandfather had lung cancer and diabetes. No other family history of heart or lung disease reported.  
+
+Current Medications  
+The patient reports that he is not taking any prescription or over‑the‑counter medications at this time.  
+
+Objective  
+Vital Signs: Temperature 37.7 °C (recorded in prior EMR entry), Heart Rate 62 bpm, Respiratory Rate 12 breaths/min, BMI 31.0 kg/m² (obesity noted in historical record). No blood pressure, SpO₂, or weight recorded at this encounter.  
+
+Physical Examination: No physical exam findings documented in the encounter transcript.  
+
+Laboratory and Imaging Studies  
+No laboratory tests or imaging studies have been ordered at this visit. A nasopharyngeal swab for SARS‑CoV‑2 PCR is planned.  
+
+Assessment  
+1. Acute viral upper respiratory infection, likely COVID‑19 pending test.  
+2. Anosmia/ageusia associated with viral URI.  
+3. Mild dehydration contributing to orthostatic dizziness.  
+
+Plan  
+• Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing today.  
+• Advise the patient to self‑isolate for 14 days regardless of test result, following local public‑health guidelines.  
+• Encourage adequate oral hydration to address possible dehydration; advise drinking fluids regularly.  
+• Symptomatic treatment: acetaminophen or ibuprofen for fever or discomfort as needed, and cough suppressants if cough becomes bothersome.  
+• Counsel the patient on vaping: discuss potential respiratory irritation and advise cessation or reduction, especially while symptomatic; inquire about nicotine content and consider referral for cessation resources.  
+• Monitor for worsening symptoms: increasing shortness of breath, chest pain, high fever, persistent diarrhea, or new neurologic signs. Instruct to seek urgent care if any of these occur.  
+• Follow‑up: Telephone or telehealth check‑in in 48–72 hours to review test results and symptom progression. If the COVID‑19 test returns positive, arrange appropriate public‑health notification and discuss eligibility for monoclonal antibody therapy if indicated. If negative and symptoms persist beyond one week, consider further evaluation for bacterial superinfection.  
+• Provide written discharge instructions summarizing isolation, hydration, symptom monitoring, and when to return for care.  
+
+Disposition  
+The patient was discharged home with the above plan and instructions. No immediate referrals were deemed necessary at this time.

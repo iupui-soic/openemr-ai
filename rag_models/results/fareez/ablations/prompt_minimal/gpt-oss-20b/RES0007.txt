@@ -1,0 +1,141 @@
+Model: openai/gpt-oss-20b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 04:27:38
+Time: 3.14s
+Tokens: 7,468 in / 2,078 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abby Ondricka  
+- **DOB:** 01 Jan 2003 (20 years old)  
+- **Sex:** Female  
+- **Address:** 564 Breitenberg View, Westfield, MA 01086  
+- **Insurance:** Not provided in the extract  
+- **Primary Care Physician:** Dr. External Provider (attending during the current visit)  
+
+---
+
+## SOAP Note
+
+### Subjective
+
+**Chief Complaint (CC):**  
+“Check‑up for asthma – I’ve been having trouble breathing during gym and when it’s cold or around pets.”
+
+**History of Present Illness (HPI):**  
+Abby reports a return of asthma symptoms that were initially diagnosed in childhood. The most recent exacerbations began about 2 months ago during gym class when she attempted to run at a faster pace than usual and felt “cannot breathe” and had to slow down or stop. She notes that the episode resolves within a couple of minutes once she stops exercising. Similar symptoms occur in cold weather (e.g., during outdoor activities in winter), when she is around cats (at a friend’s house), and occasionally with seasonal changes (notably in spring). She has not had a cough or nighttime dyspnea, nor has she experienced chest pain or wheezing at rest. She has an inhaler (albuterol) that she uses during these events, and a rescue inhaler (likely a steroid‑containing controller) that she confuses with the rescue device. She has not had any recent fever, chills, night sweats, nausea, vomiting, urinary, or bowel complaints.  
+
+**Associated Symptoms (Positive):**  
+- Shortness of breath during exertion  
+- Chest tightness in cold air  
+- Wheezy sound when around cats (possible allergic reaction)  
+
+**Associated Symptoms (Negative):**  
+- No cough, sputum production, chest pain, or nocturnal symptoms  
+- No fever, chills, night sweats, nausea, vomiting, or GI upset  
+- No urinary symptoms  
+
+**Review of Systems (ROS):**  
+- **Constitutional:** No weight changes, fevers, or night sweats.  
+- **Respiratory:** Shortness of breath on exertion; no cough, wheezing at rest, or nighttime symptoms.  
+- **Cardiovascular:** No palpitations, chest pain, or edema.  
+- **Gastrointestinal:** Normal appetite, no nausea/vomiting, no abdominal pain.  
+- **Skin:** No rashes or hives now; history of atopic dermatitis in childhood.  
+- **Allergies:** Known sensitivity to animal dander (cats), pollen (grass, tree), mold, dust mite, and some food allergens (wheat, tree nuts).  
+- **Psychiatric:** GAD‑7 score 2 (minimal anxiety); PHQ‑2 1–2 (no significant depression).  
+- **Social:** Lives with parents and younger brother. In Grade 11 of high school. Plays video games, drinks beer socially, no tobacco or recreational drug use. Uses condoms consistently with her girlfriend.  
+- **Occupational/Training:** Interested in joining the Marines; concerned about asthma affecting eligibility.
+
+**Past Medical History (PMH):**  
+- Childhood asthma (diagnosed 2007, remission 2022, now active)  
+- Atopic dermatitis (2005–2021)  
+- Perennial allergic rhinitis (2008–2022)  
+- Multiple episodes of acute bronchitis, viral sinusitis, and oral health issues (gingivitis) in the past decade.  
+- No significant surgeries except wisdom‑teeth removal.  
+
+**Medications:**  
+- **Albuterol sulfate** (rescue inhaler) – usage unclear, but patient reports using it during symptoms.  
+- **Fluticasone propionate** (controller inhaler) – patient is confused about dosage and timing.  
+- **Fexofenadine** 30 mg PO daily (antihistamine).  
+- **Epinephrine auto‑injector** (for allergic reactions).  
+- **Yaz** (combined oral contraceptive) – active.  
+- **Trinessa** (nasal steroid) – discontinued 2020.  
+- **Other OTCs** as needed.  
+
+**Allergies:**  
+- Animal dander (cats)  
+- Mold, dust mite, grass pollen, tree pollen, wheat, tree nuts.  
+
+**Family History:**  
+- Father had childhood asthma and seasonal rhinitis; no current respiratory disease.  
+- Mother and siblings have no documented asthma or atopic disease.  
+
+**Social History:**  
+- Non‑smoker, occasional alcohol (beer at parties).  
+- No recreational drug use.  
+- Lives at home, attends high school.  
+- No occupational exposures.  
+
+---
+
+### Objective
+
+**Vital Signs:**  
+- Height: 162 cm, Weight: (not recorded – BMI 17.95 per EHR, indicating low weight).  
+- BP, HR, Temp not documented during this visit; earlier record shows HR 99 bpm, RR 13 bpm.  
+- SpO₂: Not recorded.  
+
+**Physical Examination:**  
+- **General:** Alert, cooperative, no acute distress.  
+- **HEENT:** Clear nasal passages, no rhinitis signs at rest.  
+- **Cardiovascular:** Regular rhythm, no murmurs.  
+- **Respiratory:** Mild expiratory wheeze on forced exhalation, otherwise clear breath sounds; no adventitious crackles.  
+- **Skin:** No current rash; history of atopic dermatitis noted.  
+- **Extremities:** No clubbing or cyanosis.  
+
+**Laboratory Results:**  
+- CBC: Hemoglobin 13.66 g/dL (normal), Hematocrit 45.2 % (normal), WBC 5.63 k/µL (normal), Platelets 186 k/µL (normal).  
+- MCV 83.8 fL (low‑normal), MCH 31.1 pg, MCHC 35.6 g/dL, RDW 45.6 % (slightly elevated).  
+- GAD‑7 score 2; PHQ‑2 scores 1–2.  
+- No evidence of infection or anemia.  
+
+**Pulmonary Function Test (PFT):**  
+- Reported in prior visit: “Asthma confirmed.” Specific values not provided; patient reports symptoms consistent with reversible airway obstruction.
+
+**Other Data:**  
+- No recent imaging or microbiology testing.
+
+---
+
+### Assessment
+
+1. **Asthma – likely moderate‑to‑severe intermittent with triggers (exercise, cold air, allergens).**  
+   - Symptoms: exertional dyspnea, chest tightness in cold, wheeze when exposed to cats.  
+   - Patient uses rescue inhaler; confusion about controller usage.  
+2. **Allergic rhinitis (seasonal and perennial).**  
+3. **Past atopic dermatitis (resolved).**  
+4. **Low BMI (17.95) – potential nutritional concern.**  
+5. **Social/psychological: minimal anxiety, no depression; no suicidal ideation.**  
+6. **Potential military eligibility concern due to asthma.**
+
+---
+
+### Plan
+
+| Management | Details |
+|------------|---------|
+| **Medication Reconciliation** | Review inhaler devices with patient. Provide written instructions: use fluticasone (controller) once daily, albuterol (rescue) as needed (up to 4 puffs per day). Reinforce technique (breathing in slowly, holding breath). |
+| **Asthma Action Plan** | Create a written plan including: <br>• Daily controller use.<br>• When to use rescue inhaler.<br>• Trigger avoidance (cats, cold air).<br>• When to seek urgent care (dyspnea at rest, wheeze >3 days). |
+| **Spirometry** | Order spirometry with bronchodilator response to confirm diagnosis and severity, and to guide future dosing. |
+| **Allergy Testing** | Consider skin prick or IgE testing for common aeroallergens (cat dander, pollen, mold) to tailor antihistamine or nasal steroid therapy. |
+| **Lifestyle Counseling** | <br>• Encourage balanced diet to address BMI.<br>• Discuss smoking cessation resources (though non‑smoker).<br>• Limit alcohol to moderate consumption. |
+| **Contraception Review** | Continue Yaz; review any potential interactions with inhalers (none known). |
+| **Military Eligibility** | Discuss with patient that asthma is not an absolute disqualifier; refer to appropriate service medical evaluation for formal clearance. |
+| **Follow‑up** | Return visit in 4 weeks or sooner if symptoms worsen. Bring inhaler usage log. |
+| **Education** | Provide patient education handouts on asthma management, inhaler technique, and trigger avoidance. |
+| **Psychosocial** | Low anxiety; reassure. No need for psychiatric referral. |
+| **Vaccinations** | Verify up‑to‑date; recommend influenza vaccine, COVID‑19 boosters if appropriate. |
+| **Lab Follow‑up** | Repeat CBC and electrolytes in 6 months to monitor for anemia or steroid‑related changes. |
+
+**Disposition:** Patient advised to use inhalers correctly and to contact urgent care if symptoms persist or worsen. A follow‑up appointment is scheduled for 4 weeks. All changes and education will be documented in the EMR.

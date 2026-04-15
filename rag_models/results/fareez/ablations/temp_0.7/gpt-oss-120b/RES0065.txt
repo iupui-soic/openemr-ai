@@ -1,0 +1,123 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 04:12:16
+Time: 5.39s
+Tokens: 10,668 in / 1,896 out
+============================================================
+
+Patient Information:  
+Name: Abbey Arie Schroeder  
+Date of Birth: 26 October 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint:  
+Sore throat of three days duration associated with recent onset of fever and neck lymphadenopathy.
+
+History of Present Illness:  
+The patient reports a constant sore throat that began three days ago. She describes the pain as worsening, especially with swallowing solid foods and occasionally with very cold liquids. One day ago she began to feel feverish, accompanied by chills, though she has not taken a measured temperature. She notes that the fever has been intermittent but overall appears to be worsening. She also reports palpable “lumps” in the neck, which she interprets as swollen lymph nodes. The sore throat has been unrelenting, and lozenges provide only temporary relief. She denies cough, rhinorrhea, shortness of breath, chest pain, palpitations, headache, nausea, vomiting, night sweats, or rash. She feels markedly fatigued but reports sleeping 7–8 hours per night with no difficulty maintaining sleep. Appetite is reduced primarily because of pain with solid foods; liquids are tolerated better unless they are very cold. She has not been exposed to anyone known to be ill and has not traveled recently. She inquires whether the illness could be COVID‑19.
+
+Review of Systems:  
+- Constitutional: Fever (subjective), chills, fatigue, no weight change reported.  
+- ENT: Sore throat constant, pain on swallowing solids, no cough, no hoarseness reported.  
+- Respiratory: No cough, dyspnea, or wheezing.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Gastrointestinal: No nausea, vomiting, diarrhea, or constipation.  
+- Genitourinary: No dysuria or urinary frequency changes.  
+- Musculoskeletal: No joint pain or myalgia.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Dermatologic: No rash or skin changes.  
+- Psychiatric: No anxiety or depression noted.  
+
+Allergies:  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History:  
+- Crohn’s disease, diagnosed in 2022, currently treated with sulfasalazine (patient’s report).  
+- End‑stage renal disease with prior kidney transplant (history of renal transplant noted in EMR).  
+- Chronic kidney disease stages 1–4 (historical EMR entries).  
+- Hypertension.  
+- Prediabetes.  
+- Anemia.  
+- Ischemic heart disease with documented coronary findings.  
+- Metabolic syndrome.  
+- History of gastrointestinal disease (Crohn’s) and associated colonoscopy with brief hospitalization last year.  
+
+Surgical History:  
+- Colonoscopy with brief hospitalization (day stay) in 2022.  
+- No other surgical procedures documented.
+
+Social History:  
+The patient lives in an apartment with her parents and younger brother. She does not currently use tobacco, alcohol (minimal past use discontinued due to Crohn’s disease), or recreational drugs. She reports swimming as regular exercise. No occupational exposures reported.
+
+Family History:  
+Both Crohn’s disease and ulcerative colitis are present in family members. Additionally, asthma and eczema run in the family. No reported family history of cardiovascular disease, diabetes, or malignancy.
+
+Current Medications (as listed in the electronic record and patient report):  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression for transplant).  
+- Tacrolimus injection 5 mg/mL as needed (historical).  
+- Acetaminophen/Hydrocodone 325 mg/7.5 mg tablets as needed for pain.  
+- Naproxen sodium 220 mg as needed.  
+- Epoetin alfa (historical).  
+- Sodium fluoride gel (dental prophylaxis).  
+- Medroxyprogesterone acetate injection (historical).  
+- Human insulin (isophane/regular) as per diabetic regimen.  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate ER 100 mg daily.  
+- Nitroglycerin spray as needed for chest discomfort.  
+- Sulfasalazine (patient‑reported for Crohn’s disease).  
+
+Vital Signs (recorded during the encounter):  
+Heart rate: 89 beats per minute  
+Respiratory rate: 13 breaths per minute  
+Blood pressure: No information available  
+Temperature: No information available (patient reports subjective fever)  
+SpO₂: No information available  
+Weight: No information available  
+
+Physical Examination:  
+No objective physical exam findings were documented in the transcript. Therefore, “No information available” for all systems.
+
+Laboratory Data (most recent values available in the record):  
+- Hemoglobin: 15.9 g/dL (within normal limits)  
+- Leukocyte count: 4.7 ×10³/µL (low‑normal)  
+- Sodium: 137 mmol/L, Potassium: 4.6 mmol/L, Chloride: 110 mmol/L, CO₂ total: 28 mmol/L (all within normal limits)  
+- BUN: 9.3 mg/dL, Creatinine: 0.95 mg/dL (near normal for a patient with renal transplant)  
+- Glucose: 64.6 mg/dL (slightly low, consistent with insulin therapy)  
+- Calcium: 8.8 mg/dL (low‑normal)  
+- Urinalysis: No leukocyte esterase, nitrites, or ketones detected; urine pH 5.2.  
+- PHQ‑2 score: 2 (screening for depression, not elevated)  
+- DAST‑10 score: 2 (low risk for substance abuse)  
+
+No microbiology or imaging studies were performed during this visit.
+
+Assessment:  
+1. Acute pharyngitis – likely viral in etiology (presentation without cough, absence of exudates noted, low‑normal white blood cell count).  
+2. Rule‑out COVID‑19 infection – patient is immunocompromised and presents with fever and sore throat; testing is indicated.  
+3. Rule‑out infectious mononucleosis (EBV) – cervical lymphadenopathy and prolonged sore throat warrant EBV serology.  
+4. Chronic medical conditions – stable end‑stage renal disease with transplanted kidney, hypertension, prediabetes, anemia, ischemic heart disease, and Crohn’s disease.  
+
+Plan:  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR; advise patient to self‑isolate pending results.  
+- Order EBV viral capsid antigen IgM and IgG serology to assess for acute mononucleosis.  
+- Provide symptomatic therapy: continue use of lozenges, consider acetaminophen for fever/comfort, and maintain adequate hydration.  
+- Counsel patient to avoid solid foods that exacerbate pain; suggest soft, lukewarm diets and adequate fluid intake.  
+- Review current immunosuppressive regimen (tacrolimus) and ensure therapeutic drug monitoring is up to date; no changes at this time.  
+- Advise the patient to monitor temperature at home and report any escalation of fever, new cough, shortness of breath, or worsening neck swelling.  
+- Schedule a follow‑up telephone visit in 48–72 hours to review test results and clinical status. If symptoms worsen or new concerning features develop (e.g., high fever > 101 °F, dyspnea, rash), instruct the patient to seek urgent care.  
+- Continue all chronic medications as prescribed; no new prescriptions at this visit.  
+- Provide written education on infection control measures, especially given her immunocompromised state.  
+
+Discharge Instructions:  
+- Self‑isolate until COVID‑19 test results are known.  
+- Maintain soft diet, use lozenges and acetaminophen as needed for pain/fever (max 3 g acetaminophen per day).  
+- Keep a log of temperature readings and any new symptoms.  
+- Contact the clinic if fever exceeds 101 °F, if she develops difficulty breathing, new rash, or significant neck swelling.  
+
+Follow‑up:  
+- Telephone follow‑up in 2–3 days to discuss test results and reassess symptoms.  
+- In‑person evaluation in 1 week if symptoms persist or worsen, or sooner based on test outcomes.

@@ -1,0 +1,58 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:16:19
+Time: 2.69s
+Tokens: 14,321 in / 1,269 out
+============================================================
+
+Patient Information  
+The patient is a 39‑year‑old female accountant who presents to the clinic with a chief complaint of left‑sided chest pain and associated shortness of breath. She lives with her husband and two teenage children and reports a recent hysterectomy performed approximately one month ago. Her past surgical history also includes the removal of wisdom teeth during her teenage years. She currently does not take any prescription or over‑the‑counter medications on a regular basis, aside from occasional use of acetaminophen and ibuprofen for pain relief.
+
+Chief Complaint  
+The patient reports a persistent, sharp pain localized to the left side of the chest that has been present for the past five days. The pain is described as lingering and is exacerbated by deep breathing and ambulation. She notes that the discomfort is constant and has not improved with over‑the‑counter acetaminophen or ibuprofen, although these medications may provide slight relief. The pain has not radiated to other areas, and she denies associated cough, wheezing, or fever.
+
+History of Present Illness  
+Five days ago the patient began experiencing a sharp, non‑radiating chest pain on the left side. She initially perceived the pain while seated on her couch, and it has since worsened with walking, such as when she goes out to get the mail. The pain intensifies with deep inspiration and is accompanied by a sensation of shortness of breath. She has not experienced fever, chills, nausea, vomiting, or night sweats. There have been no episodes of dizziness, syncope, or palpitations. No cough, sputum production, or wheezing has been reported. The patient has reduced her activity level due to the shortness of breath, which she interprets as mild fatigue.
+
+Review of Systems  
+General: No fever, chills, night sweats, or weight loss.  
+Cardiovascular: No chest pain radiating to arm or jaw, no palpitations or pounding heart.  
+Respiratory: Shortness of breath with exertion, sharp chest pain on inspiration, no cough, sputum, or wheeze.  
+Gastrointestinal: No abdominal pain, nausea, or vomiting.  
+Genitourinary: No urinary symptoms; recent hysterectomy noted.  
+Musculoskeletal: No joint or limb pain.  
+Skin: No rashes or lesions.  
+Psychiatric: No depression or anxiety symptoms reported.
+
+Past Medical History  
+The patient’s only significant surgical history is a hysterectomy performed one month ago for heavy menstrual bleeding. She has no known chronic medical conditions, such as hypertension, diabetes, or hyperlipidemia, and does not take any long‑term medications. There are no recorded allergies to medications.
+
+Medications  
+None taken regularly. The patient uses acetaminophen and ibuprofen occasionally for pain. She has no known drug allergies.
+
+Social History  
+The patient smokes approximately five cigarettes per day and is attempting to reduce her consumption. She occasionally drinks wine on the weekends. She works full‑time as an accountant. She has no history of recreational drug use aside from intermittent marijuana use during her youth. She reports no recent travel.
+
+Family History  
+Her mother suffered a myocardial infarction in her 70s. No other known family history of cardiac, pulmonary, or hematologic disease is reported.
+
+Physical Examination  
+No information available.
+
+Laboratory Data  
+Recent laboratory studies demonstrate normal leukocyte count (9.5 ×10³/µL), hemoglobin 16.9 g/dL, hematocrit 47.5%, platelet count 297 ×10³/µL, and normal basic metabolic panel (glucose 82.8 mg/dL, creatinine 0.88 mg/dL, BUN 10.5 mg/dL). Serum electrolytes are within normal limits. Estimated glomerular filtration rate is 158 mL/min/1.73 m², which may reflect laboratory artifact or overestimation. No evidence of anemia or infection is present.
+
+Assessment  
+The patient presents with acute, sharp left‑sided chest pain that worsens with inspiration and exertion, accompanied by exertional dyspnea. Differential diagnoses include pulmonary embolism, musculoskeletal chest wall irritation, costochondritis, pleuritic pleural effusion, and acute coronary syndrome. Her risk factors for pulmonary embolism include recent surgery (hysterectomy) and smoking. Her lack of fever, cough, or wheezing makes pneumonia less likely. The normal laboratory values and absence of tachycardia or overt tachypnea reduce the probability of a massive pulmonary embolus but do not exclude a sub‑massive or moderate event. Given the recent surgery and persistent symptoms, a pulmonary embolism remains a strong consideration. Alternative etiologies such as musculoskeletal pain or early acute coronary syndrome should also be ruled out.
+
+Plan  
+1. Order an D‑dimer assay to assess for thrombotic activity.  
+2. Arrange for a computed tomography pulmonary angiography (CTPA) to definitively evaluate for pulmonary embolism.  
+3. Obtain an electrocardiogram (ECG) to screen for ischemic changes or arrhythmias.  
+4. Perform a chest radiograph to assess for pneumonia, pneumothorax, or effusion.  
+5. Counsel the patient on smoking cessation resources and provide educational materials on the importance of reducing risk factors for venous thromboembolism post‑surgery.  
+6. If imaging confirms pulmonary embolism, initiate anticoagulation therapy per current guidelines (e.g., low‑molecular‑weight heparin followed by warfarin or direct oral anticoagulant).  
+7. If imaging rules out pulmonary embolism, evaluate for musculoskeletal causes and consider referral to a pain specialist if symptoms persist.  
+8. Advise the patient to monitor for worsening symptoms such as increasing chest pain, new palpitations, syncope, or worsening shortness of breath and to seek emergency care if they occur.  
+9. Schedule a follow‑up appointment in 48–72 hours to review imaging results and adjust treatment accordingly.

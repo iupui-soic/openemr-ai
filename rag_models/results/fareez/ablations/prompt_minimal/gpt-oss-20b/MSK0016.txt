@@ -1,0 +1,169 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 04:28:45
+Time: 2.98s
+Tokens: 11,684 in / 2,009 out
+============================================================
+
+**Patient Information**  
+**Name:** Abe Huels  
+**DOB:** 09‑02‑1961 (62 years old)  
+**Sex:** Male  
+**Address:** 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000  
+**Primary Care Provider:** Dr. External Provider  
+**Insurance:** (not documented)  
+
+---
+
+### Subjective
+
+**Chief Complaint:**  
+“Left hand numbness, tingling, and burning sensation.”
+
+**History of Present Illness:**  
+Mr. Huels reports a 4‑5 month history of intermittent numbness, tingling, and burning in the left hand, primarily affecting the thumb, index, and ring fingers. Initially, episodes lasted only a few minutes and were alleviated by moving the wrist or “flicking” the hand. In the past few weeks, symptoms have worsened, occurring more frequently and sometimes at night, occasionally waking him from sleep. Pain intensity peaks at a 6/10 on the pain scale. The patient has tried OTC NSAIDs (Advil, Tylenol) with minimal relief. No cold compresses, topical creams, or other therapies have been attempted. He denies pain elsewhere, weakness, or other neurologic deficits. He reports mild clumsiness with the left hand, dropping objects, and difficulty opening jars, but no muscle weakness.
+
+**Associated Symptoms (Positive):**  
+- Burning pain in affected fingers  
+- Nighttime symptoms that awaken him (2–3 times/night)  
+
+**Associated Symptoms (Negative):**  
+- No weakness, numbness or tingling in other extremities  
+- No headache, dizziness, visual changes, hearing loss, or facial weakness  
+- No chest pain, palpitations, shortness of breath, cough, or wheezing  
+- No abdominal pain, nausea, vomiting, diarrhea, constipation, or bleeding  
+- No urinary symptoms, fever, chills, rash, or weight loss  
+- No recent travel, sick contacts, or known exposures  
+
+**Review of Systems (selected):**  
+- **Constitutional:** No fever, chills, or weight loss.  
+- **Neurologic:** Negative for headache, dizziness, memory loss, or gait disturbances.  
+- **Cardiovascular:** No chest pain or palpitations.  
+- **Respiratory:** No cough or wheeze.  
+- **GI:** No nausea, vomiting, diarrhea, constipation, or blood.  
+- **Musculoskeletal:** Pain and numbness localized to left hand; otherwise no joint pain.  
+
+**Past Medical History:**  
+- Hypothyroidism (on Synthroid)  
+- Obesity (BMI 30+ per past records; current BMI 27.5)  
+- Chronic kidney disease stage 4 (history of transplant)  
+- Type 2 diabetes (prediabetes noted)  
+- Hypertension, hyperlipidemia  
+- Chronic obstructive sleep apnea  
+- Osteoarthritis (family)  
+
+**Past Surgical History:**  
+- Kidney transplant (date not specified)  
+- Appendectomy  
+- No other significant surgeries.  
+
+**Family History:**  
+- Grandfather: stroke in his 70s  
+- Father: hypercholesterolemia  
+- No known autoimmune diseases, cancers, or hereditary neurologic conditions.  
+
+**Social History:**  
+- **Tobacco:** 5–10 cigarettes/day for ~10 years; attempts to quit noted.  
+- **Alcohol:** Occasional wine (≤1 drink/week).  
+- **Illicit Drugs:** None.  
+- **Occupation:** Warehouse worker, repetitive wrist motions, possible vibration exposure.  
+- **Living Situation:** Married, lives with spouse and two daughters.  
+
+**Allergies:** None reported.  
+
+**Medications:**  
+- Synthroid (levothyroxine)  
+- Simvastatin 10 mg daily  
+- Lisinopril 10 mg daily  
+- Hydrochlorothiazide 25 mg daily  
+- Clopidogrel 75 mg daily  
+- (Other chronic meds omitted for brevity; see EMR.)  
+
+### Objective
+
+**Vital Signs:**  
+- BP: Not documented in encounter.  
+- HR: 76 bpm.  
+- RR: 14 breaths/min.  
+- SpO₂: Not documented.  
+- Weight: Not documented.  
+- Height: 175 cm.  
+
+**Physical Examination:**
+
+- **General:** Alert, oriented, no acute distress.  
+- **Skin:** No erythema, swelling, or lesions over left arm or hand.  
+- **Musculoskeletal:**  
+  - No muscle wasting noted in left forearm; slight reduction in bulk over thumb region.  
+  - No deformities or skin changes.  
+- **Neurologic:**
+  - **Tinel’s Sign (left wrist):** Positive – tingling sensation when tapping over median nerve.  
+  - **Phalen’s Test (left hand):** Positive – numbness/tingling in thumb, index, and middle fingers after 60 s of wrist flexion.  
+  - No weakness in forearm or hand muscles; patient can grasp and release objects, albeit with clumsiness.  
+  - Sensation to light touch intact in all extremities except affected fingers.  
+- **Other Systems:** Exam normal; no tenderness over shoulder, elbow, or wrist; full range of motion in all joints; normal gait.
+
+**Laboratory Data (most recent):**  
+- Hemoglobin: 16.5 g/dL (within normal)  
+- Creatinine: 1.0 mg/dL (baseline)  
+- Glucose: 94.3 mg/dL (normal)  
+- Electrolytes: within reference ranges  
+- GAD‑7 score: 4 (minimal anxiety)  
+- PHQ‑2 score: 2 (minimal depression)  
+
+**Imaging:** None performed at this visit.  
+
+### Assessment
+
+**Primary Diagnosis:**  
+- Carpal Tunnel Syndrome (median nerve entrapment) of the left hand, confirmed by positive Tinel’s and Phalen’s tests and typical clinical presentation.
+
+**Secondary/Comorbid Conditions (relevant to current visit):**  
+- Hypothyroidism (controlled)  
+- Obesity (BMI 27.5)  
+- Chronic kidney disease stage 4  
+- Hypertension, hyperlipidemia, type 2 diabetes (prediabetes)  
+- Smoking (10 pack‑years)  
+
+**Differential Diagnosis Considered:**  
+- Cervical radiculopathy (excluded by normal cervical exam and localized symptoms)  
+- Peripheral neuropathy (unlikely given localized distribution)  
+- Complex regional pain syndrome (unlikely, no widespread pain or swelling)  
+- Thoracic outlet syndrome (excluded by normal exam and lack of trapezius/shoulder involvement)  
+
+**Plan**
+
+1. **Conservative Management of Carpal Tunnel Syndrome:**
+   - **Activity Modification:** Encourage ergonomic assessment at workplace; take frequent breaks, avoid prolonged wrist flexion, reduce vibration exposure.
+   - **Wrist Splint:** Prescribe night‑time wrist splint (neutral position) to reduce nocturnal symptoms.
+   - **NSAIDs:** Continue over‑the‑counter NSAID (e.g., ibuprofen 400 mg q6h PRN) for pain control; advise against long‑term NSAID use due to kidney disease.
+   - **Cold Therapy:** Use ice packs (15–20 min) 2–3×/day for acute flare‑ups.
+   - **Physical Therapy Referral:** For ergonomic education, hand/wrist strengthening and stretching exercises.
+
+2. **Follow‑Up and Escalation of Care:**
+   - **Re‑evaluation** in 4–6 weeks to assess symptom improvement; if symptoms persist or worsen, consider:
+     - **Electrodiagnostic Studies (EMG/NCS)** to confirm median nerve compression and assess severity.
+     - **Corticosteroid Injection** into carpal tunnel if conservative measures fail.
+     - **Surgical Consultation** (carpal tunnel release) if refractory to non‑surgical therapy.
+
+3. **Lifestyle Modifications:**
+   - **Smoking Cessation:** Provide resources (quitline, nicotine replacement). Discuss potential impact on vascular health and recovery.
+   - **Weight Management:** Encourage balanced diet and gradual exercise; refer to nutritionist if needed.
+   - **Sleep Hygiene:** Address nighttime awakening; consider sleep study review given OSA history.
+
+4. **Medication Review:**
+   - Review current antihypertensives, statins, and anticoagulants for potential adjustments, particularly given CKD and risk of bleeding with NSAIDs.
+
+5. **Education:**
+   - Explain signs of worsening (increasing numbness, weakness, loss of function) that warrant earlier contact.
+   - Discuss the natural history of CTS and importance of adherence to splint and ergonomic changes.
+
+6. **Documentation & Continuity:**
+   - Update EMR with diagnosis code: G56.0 (Carpal tunnel syndrome, left upper limb).  
+   - Plan: Home splint, NSAIDs, activity modification, follow‑up in 4–6 weeks; consider EMG if no improvement.
+
+7. **Follow‑Up Appointment:**  
+   - Schedule in 4 weeks; advise patient to call sooner if symptoms significantly worsen or if new neurological deficits develop.
+
+---

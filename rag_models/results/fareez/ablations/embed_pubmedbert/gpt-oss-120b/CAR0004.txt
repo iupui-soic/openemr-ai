@@ -1,0 +1,96 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:53:45
+Time: 4.31s
+Tokens: 9,036 in / 1,211 out
+============================================================
+
+Patient Information  
+Name: Not provided  
+Age: 25 years  
+Gender: Not specified (patient referred to as “I”)  
+Occupation: Engineering student at Western University; part‑time post‑man  
+Living Situation: Resides with mother in a house  
+Date of Encounter: Not specified  
+
+Chief Complaint  
+The patient presents with sharp chest pain that began three days ago and is worried that she may be experiencing a heart attack.
+
+History of Present Illness  
+The patient reports the onset of a sharp, localized chest pain three days prior to the visit. The pain is described as “sharp” and is situated over the area of the heart. Each episode lasts only a few seconds and then resolves spontaneously. The intensity is rated as 6/10 on a pain scale. The discomfort is precipitated by coughing and by lying down, and it is partially relieved when the patient leans forward. The pain occasionally radiates to the neck. The patient denies any associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, headache, or other systemic symptoms. She has not experienced similar pain in the past. One dose of acetaminophen (Tylenol) taken yesterday provided some relief. There is no recent trauma or injury to the chest. The patient reports a recent viral upper‑respiratory illness (flu) one week ago, which has now resolved.
+
+Review of Systems  
+- Constitutional: No fever, chills, weight loss, or fatigue reported.  
+- Cardiovascular: Chest pain as described; no palpitations, syncope, or known murmur.  
+- Respiratory: No shortness of breath; cough present only with the recent flu, now resolved.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+- Neurologic: No dizziness or headaches.  
+- Musculoskeletal: No joint pain or recent injury.  
+- Psychiatric: No anxiety or panic reported beyond concern about heart attack.  
+- All other systems: No abnormalities reported.
+
+Past Medical History  
+The patient states she is healthy with no chronic medical conditions.
+
+Surgical History  
+No prior surgeries.
+
+Social History  
+- Tobacco: None.  
+- Alcohol: Occasional (one to two drinks on weekends).  
+- Illicit drugs: None.  
+- Smoking: None.  
+- Exercise: Not documented.  
+- Occupational exposure: None reported.  
+
+Family History  
+The patient’s father suffered a myocardial infarction two weeks ago and subsequently passed away. No other family history of cardiac disease, cancer, diabetes, or stroke is reported.
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Current Medications  
+- Acetaminophen (Tylenol) – taken occasionally for pain; last dose yesterday.  
+No other regular medications reported.
+
+Vital Signs  
+No current vital sign measurements were documented at this encounter.
+
+Physical Examination  
+No physical exam findings were recorded during this visit.
+
+Laboratory and Diagnostic Data  
+No laboratory or imaging results are available at this time. The provider indicated that an electrocardiogram (ECG) and appropriate blood work will be obtained.
+
+Assessment  
+1. Acute chest pain, sharp, short‑lasting, worsened by coughing and lying supine, improved by leaning forward – differential includes:  
+   • Acute pericarditis (clinical features of positional pain and relief with forward flexion)  
+   • Musculoskeletal chest wall pain (cough‑related)  
+   • Less likely acute coronary syndrome given the brief, non‑exertional nature and young age, but family history is concerning.  
+2. Recent viral upper‑respiratory infection, now resolved.  
+3. Anxiety related to concern for myocardial infarction.
+
+Plan  
+Diagnostic Studies  
+- Obtain a 12‑lead electrocardiogram immediately to evaluate for ischemic changes, pericarditis, or other arrhythmias.  
+- Draw cardiac biomarkers (troponin I or T) and a basic metabolic panel, CBC, and inflammatory markers as indicated.  
+- Consider chest radiograph to assess for pulmonary causes if initial evaluation is unrevealing.  
+- If ECG shows pericarditis changes or if clinical suspicion remains high, arrange transthoracic echocardiography.
+
+Therapeutic Interventions  
+- Continue acetaminophen for analgesia as needed, not to exceed recommended dosing.  
+- If pericarditis is confirmed and there are no contraindications, initiate an NSAID (e.g., ibuprofen 600 mg PO TID) and consider colchicine 0.5 mg PO BID for 3 months, pending renal function and tolerability.  
+- Advise the patient to avoid heavy lifting and strenuous activity until a definitive diagnosis is made.
+
+Patient Education & Disposition  
+- Explained that while the pain is likely non‑cardiac, the recent family history warrants prompt cardiac evaluation.  
+- Instructed the patient to seek immediate emergency care if the pain becomes prolonged, intensifies, is associated with shortness of breath, diaphoresis, syncope, or any new concerning symptoms.  
+- Provided reassurance that the work‑up will be performed promptly and results will be reviewed with her.
+
+Follow‑up  
+- Schedule a follow‑up appointment within 48–72 hours to discuss ECG and lab results, or sooner if symptoms evolve.  
+- Encourage the patient to keep a brief symptom diary noting timing, triggers, and any alleviating factors.  
+
+Disposition Summary  
+The patient will undergo an urgent ECG and cardiac biomarker testing today. Pending those results, further management will be tailored to the underlying etiology of her chest pain. No immediate life‑threatening condition was identified during the interview, but close monitoring is warranted given her family history.

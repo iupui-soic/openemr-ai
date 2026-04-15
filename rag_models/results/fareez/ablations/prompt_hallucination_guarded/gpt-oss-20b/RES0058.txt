@@ -1,0 +1,60 @@
+Model: openai/gpt-oss-20b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:30:07
+Time: 2.10s
+Tokens: 8,307 in / 693 out
+============================================================
+
+Patient Information  
+The patient is a male adult presenting to the office. No additional demographic information was provided during the encounter.
+
+Chief Complaint  
+The patient reports a two‑day history of loss of taste and a dry cough, accompanied by fatigue.
+
+History of Present Illness  
+The patient has experienced an acute onset of hypogeusia over the last two days, describing the taste as “cardboard” and noting a reduced ability to smell. The cough began approximately three to four days ago, is dry, and has no associated sputum or hemoptysis. The patient reports mild shortness of breath only after coughing bouts. He describes feeling more tired than usual, sleeping longer during the day, but maintains a normal appetite. He also notes a single episode of mild diarrhea this morning without abdominal pain. No fever, chest pain, wheezing, or significant nasal congestion has been reported. The patient denies any trauma to the head or face, recent travel, or exposure to known sick contacts besides a classmate with similar respiratory symptoms.
+
+Review of Systems  
+Constitutional: fatigue, mild dizziness upon standing, no fever, no chills.  
+Respiratory: dry cough, no sputum, no wheeze, mild shortness of breath after coughing.  
+Cardiovascular: no chest pain, no palpitations.  
+Gastrointestinal: one episode of mild diarrhea, no abdominal pain.  
+ENT: loss of taste, reduced smell, itchy throat, no sore throat.  
+Dermatologic: no rash.  
+Neurologic: no confusion, no memory loss.  
+Genitourinary: normal.  
+Psychiatric: no anxiety or depression reported.  
+
+Past Medical History  
+No past medical problems were reported by the patient during this encounter.
+
+Social History  
+The patient lives at home with his mother, step‑father, and younger sister in a townhouse. He resides in an urban setting. He does not smoke cigarettes or consume alcohol. The patient reports occasional use of flavored vape products, several times a day, though he is uncertain if nicotine or tobacco is present. He has not traveled outside the local area recently and has not been exposed to pets.
+
+Family History  
+No family medical history was discussed during the visit.
+
+Medications  
+The patient reports not taking any medications at present.
+
+Allergies  
+The patient reports no known drug allergies.
+
+Physical Examination  
+Not assessed during this encounter.
+
+Laboratory Tests  
+Not assessed during this encounter.
+
+Assessment  
+Acute viral upper respiratory infection, most likely COVID‑19 given the symptom profile and recent contact with an infected classmate. The differential includes other viral respiratory pathogens such as influenza or common cold viruses.
+
+Plan  
+1. Perform a COVID‑19 PCR or antigen swab to confirm diagnosis.  
+2. Instruct the patient to isolate for 14 days regardless of test result.  
+3. If the test is positive, notify public health authorities for contact tracing.  
+4. If the test is negative and symptoms persist or worsen, consider evaluation for bacterial infection and potential antibiotic therapy.  
+5. Advise rest, adequate hydration, and over‑the‑counter measures for cough and fatigue as tolerated.  
+6. The patient is advised to monitor for worsening shortness of breath, chest pain, or other concerning symptoms and to seek emergent care if those occur.  
+7. No new medications were prescribed during this visit.

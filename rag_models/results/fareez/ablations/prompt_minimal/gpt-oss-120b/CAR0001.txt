@@ -1,0 +1,120 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:24:18
+Time: 5.27s
+Tokens: 9,395 in / 1,889 out
+============================================================
+
+**Patient Information**  
+- **Name:** (not provided)  
+- **Age:** 39 years  
+- **Sex:** Male  
+- **Date of Encounter:** 2024‑06‑04 (presenting visit)  
+
+---
+
+### **S – Subjective**
+
+**Chief Complaint (CC):**  
+“Chest pain” – sharp, left‑sided, began last night and has been present for approximately 8 hours.
+
+**History of Present Illness (HPI):**  
+- **Onset:** Sudden onset last night while moving furniture (no specific injury reported).  
+- **Location:** Left side of the chest.  
+- **Duration:** Continuous for ~8 hours.  
+- **Character:** Sharp, described as “pretty sharp.”  
+- **Severity:** 7‑8/10 on a numeric pain scale.  
+- **Radiation:** None reported.  
+- **Aggravating factors:** Lying down worsens the pain; deep breathing may increase discomfort.  
+- **Alleviating factors:** Lying flat (i.e., not lying down) provides some relief.  
+- **Associated symptoms:** Light‑headedness, shortness of breath (dyspnea), mild palpitations (“a little bit” of racing heart), diaphoresis secondary to breathing difficulty. No cough, wheeze, hemoptysis, fever, chills, nausea, vomiting, abdominal pain, urinary or bowel changes, syncope, or recent immobilization.  
+- **Prior Episodes:** Denies any similar previous episodes.  
+- **Review of Systems (pertinent negatives):** No fever, chills, infectious symptoms, cough, wheezing, rash, neck pain, trauma, or recent surgeries.
+
+**Past Medical History (PMH):**  
+- Denies any chronic medical conditions.  
+- No prior hospitalizations or surgeries.  
+
+**Medications:**  
+- None (does not take any prescription or OTC medications regularly).  
+
+**Allergies:**  
+- No known drug allergies.  
+
+**Social History:**  
+- **Tobacco:** Smokes ~1 pack of cigarettes per day for the past 10–15 years.  
+- **Alcohol:** Consumes ~1–2 drinks per day (≈10 drinks/week).  
+- **Recreational drugs:** Occasionally uses cannabis (~5 mg weekly); denies use of cocaine, methamphetamine, opioids, or IV drugs.  
+- **Living situation:** Lives alone in an apartment.  
+- **Occupation:** Accountant (potentially stressful).  
+- **Exercise/Diet:** Tries to run 30 minutes every other day; meals are generally healthy at dinner but lunch is often eaten out.  
+
+**Family History (FH):**  
+- Father had a myocardial infarction at age 45 and a history of hypercholesterolemia.  
+- No known family history of stroke, diabetes, or cancer.  
+
+---
+
+### **O – Objective**
+
+| Parameter | Finding |
+|-----------|---------|
+| **Vital Signs** | Not recorded during the encounter (patient not yet assessed). |
+| **General** | Appears mildly distressed due to chest discomfort; alert and oriented. |
+| **Cardiovascular** | No physical exam documented; patient reports palpitations but denies syncope. |
+| **Respiratory** | Reports dyspnea; no cough, wheeze, or audible stridor noted. |
+| **Chest / Pulmonary** | No documented auscultation findings; pain worsens with deep breath and lying flat. |
+| **Extremities** | No swelling, edema, or calf pain reported. |
+| **Skin** | No rash; patient notes mild neck swelling (subjective, no objective assessment). |
+| **Neurologic** | No focal deficits reported; light‑headedness present. |
+| **Labs / Imaging** | No laboratory results or imaging studies performed at the time of this visit. |
+
+*Because the encounter was limited to history‑taking, objective data are pending.*
+
+---
+
+### **A – Assessment / Differential Diagnosis**
+
+1. **Acute Coronary Syndrome (ACS) – Unstable Angina / NSTEMI**  
+   - High‑risk features: male, age < 45 but strong family history of premature MI, smoking, hypertension risk from lifestyle, sharp, substernal‑ish left‑sided pain, diaphoresis, dyspnea, palpitations.  
+2. **Pericarditis**  
+   - Sharp pleuritic pain that worsens when supine and improves when sitting up; mild dyspnea and low‑grade light‑headedness are compatible.  
+3. **Musculoskeletal chest wall strain**  
+   - Recent furniture moving could cause intercostal strain; pain is sharp, localized, and may be aggravated by deep breathing.  
+4. **Pulmonary Embolism (PE)**  
+   - Acute dyspnea, pleuritic component, light‑headedness; however, no recent immobilization, leg pain, or risk factors beyond smoking.  
+5. **Pneumothorax**  
+   - Sudden unilateral pleuritic pain and dyspnea; would expect more marked respiratory distress and possible asymmetry on exam.  
+6. **Gastroesophageal reflux disease (GERD) / Esophageal spasm**  
+   - Can cause sharp chest pain but less likely to cause diaphoresis or palpitations.  
+
+*The most concerning diagnoses are ACS and pericarditis; both require urgent evaluation.*
+
+---
+
+### **P – Plan**
+
+| Step | Details |
+|------|---------|
+| **1. Immediate ED Evaluation** | Transport to the emergency department for rapid assessment. |
+| **2. Diagnostic Studies** | • 12‑lead ECG (within 10 min) – assess for ST changes, PR depression, arrhythmias.<br>• Cardiac biomarkers (troponin I/T, CK‑MB) at 0 h and repeat at 3–6 h.<br>• Chest X‑ray – evaluate for pneumothorax, pulmonary infiltrates, cardiac silhouette.<br>• Consider CT pulmonary angiography if PE remains a concern after initial assessment.<br>• Basic labs: CBC, BMP, coagulation panel, lipids (baseline). |
+| **3. Initial Medical Management** | • Aspirin 325 mg PO chewable now (if no contraindication).<br>• Nitroglycerin SL 0.4 mg q5 min up to 3 doses for ongoing chest pain, monitor blood pressure.<br>• Oxygen titrated to maintain SpO₂ ≥ 94 % if hypoxic.<br>• Sublingual or IV morphine for uncontrolled pain after cardiac ischemia ruled out (per protocol). |
+| **4. Cardiology Consultation** | Early consult if ECG shows ischemic changes, elevated troponin, or high clinical suspicion. |
+| **5. Monitoring** | Cardiac telemetry, continuous pulse‑oximetry, serial vitals every 15 min until stable. |
+| **6. Risk‑Factor Counseling** | • Smoking cessation: Offer nicotine replacement therapy, referral to cessation program.<br>• Alcohol moderation counseling (≤ 14 drinks/week recommended).<br>• Discuss stress management related to his accounting job. |
+| **7. Disposition** | Admit to telemetry/observation unit pending results, or discharge with close outpatient follow‑up if work‑up is negative and pain resolves (unlikely given presentation). |
+| **8. Follow‑Up** | • Cardiology outpatient visit within 3–5 days if discharged.<br>• Primary care follow‑up within 1 week for risk‑factor management.<br>• Return precautions: Worsening chest pain, new syncope, increasing dyspnea, profuse sweating, or arm/neck/jaw pain – go to nearest ED immediately. |
+| **9. Documentation** | Complete full ROS, physical exam, and vital signs as soon as the patient arrives in the ED. |
+
+**Patient Education Provided (verbal):**  
+- Explained the possible seriousness of chest pain and the need for urgent evaluation.  
+- Reviewed the purpose of aspirin, nitroglycerin, and the importance of not delaying care.  
+- Discussed smoking as a major modifiable risk factor for heart disease and offered resources.
+
+**Signature:**  
+[Physician’s name, MD] – Attending (or resident) – Date: 2024‑06‑04  
+
+---  
+
+*Note: The OpenEMR extract attached to the request pertains to a different patient (Althea Shawn Howell, a 62‑year‑old female with chronic renal disease, hypertension, and CAD). It was not incorporated into this summary because the clinical encounter described in the transcript is for a 39‑year‑old male presenting with acute chest pain.*

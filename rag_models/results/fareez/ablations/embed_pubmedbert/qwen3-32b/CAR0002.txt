@@ -1,0 +1,75 @@
+Model: qwen/qwen3-32b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:03:15
+Time: 3.93s
+Tokens: 8,965 in / 1,295 out
+============================================================
+
+Patient Information:  
+The patient is a 90-year-old male named Amos Crona, residing at 201 O'Conner Glen, Wayland, Massachusetts. He is currently living with his parents in a house. The patient works as a bus driver for the city. His past medical history is extensive and includes prediabetes, anemia, obesity, sleep apnea, essential hypertension, metabolic syndrome, chronic kidney disease (stages 1-4), ischemic heart disease, and hyperlipidemia. He has a history of end-stage renal disease and received a kidney transplant in 2013. He is currently on multiple medications, including Rosuvastatin, Lisinopril, and a multivitamin. His social history includes a 20-year history of cigarette smoking, with a current consumption of half a pack to one pack per day. He has no history of alcohol use but admits to using crystal meth in the past, with the last use occurring six days prior to this visit. He exercises on Sundays and reports a generally balanced diet, though he eats out frequently. There is no family history of heart attacks or cancers.  
+
+Chief Complaint:  
+The patient presents with sudden onset chest pain on the left side, which began 30 minutes prior to arrival. The pain is described as dull with a sensation of pressure and is rated as a 7 out of 10 in intensity. The pain started while he was shoveling snow and has progressively worsened since onset. It is exacerbated by movement and laying down. The patient also reports shortness of breath and a fever with a measured temperature of 38°C. He denies any cough, rash, nausea, vomiting, swelling in the legs, fatigue, dizziness, fainting, or palpitations outside of a faster heart rate.  
+
+History of Present Illness:  
+The patient reports a sudden onset of left-sided chest pain 30 minutes prior to presentation. The pain is described as dull and pressure-like, with no radiation to other areas. It is worsened by movement and lying down, and no activity or position has provided relief. The patient also notes a sensation of increased heart rate, which he attributes to physical exertion. He denies any prior episodes of chest pain. The patient recently played rugby and was tackled, but he did not experience chest pain at that time. He reports feeling slightly short of breath since the onset of chest pain and a mild fever.  
+
+Review of Systems:  
+Constitutional: The patient denies fatigue, weight loss, or chills.  
+Respiratory: The patient reports mild shortness of breath but no cough or sputum production.  
+Cardiovascular: The patient has a history of essential hypertension and hyperlipidemia. He denies syncope, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Musculoskeletal: The patient plays rugby and recently sustained a tackle but denies chest trauma.  
+Neurological: No dizziness or fainting episodes.  
+Psychiatric: No mood changes or anxiety reported.  
+Other: No rash, urinary symptoms, or visual changes.  
+
+Allergies:  
+The patient has no known drug allergies.  
+
+Past Medical History:  
+The patient has a long-standing history of prediabetes, anemia, obesity, sleep apnea, essential hypertension, metabolic syndrome, chronic kidney disease (stages 1-4), ischemic heart disease, and hyperlipidemia. He has undergone a kidney transplant and is currently on immunosuppressive therapy.  
+
+Surgical History:  
+The patient has no prior surgeries.  
+
+Social History:  
+The patient has a 20-year history of cigarette smoking, with a current consumption of half a pack to one pack per day. He denies alcohol use but admits to recreational use of crystal meth, with the last use occurring six days prior. He exercises on Sundays and reports a generally balanced diet, though he eats out frequently.  
+
+Family History:  
+No family history of heart attacks or cancers.  
+
+Current Medications:  
+The patient is currently taking Rosuvastatin, Lisinopril, and a multivitamin. He has no known drug allergies.  
+
+Objective:  
+Vital Signs:  
+Blood Pressure: Not available at the time of this visit.  
+Heart Rate: 91 bpm  
+Respiratory Rate: 14 breaths per minute  
+Temperature: 38°C  
+Oxygen Saturation: Not available  
+Weight: Not available  
+Height: 168 cm  
+BMI: 30.97  
+
+Physical Exam:  
+No physical examination findings were recorded in the provided data.  
+
+Labs:  
+Creatinine: 0.72 mg/dL  
+Glucose: 84.52 mg/dL  
+Potassium: 5.03 mmol/L  
+Sodium: 141.55 mmol/L  
+Cholesterol: 185.27 mg/dL  
+Low Density Lipoprotein Cholesterol (LDL): 140.58 mg/dL  
+
+Imaging:  
+No imaging studies were performed at the time of this visit.  
+
+Assessment:  
+The patient presents with acute onset chest pain, described as left-sided, dull, and pressure-like, with associated shortness of breath and fever. The pain is exacerbated by movement and lying down. Given the patient's age, history of ischemic heart disease, hypertension, and hyperlipidemia, the differential diagnosis includes acute coronary syndrome, musculoskeletal chest pain, and possibly pulmonary causes such as pleuritis or pulmonary embolism. The presence of a fever raises concern for an infectious or inflammatory process. Further evaluation is warranted to rule out life-threatening conditions.  
+
+Plan:  
+The patient requires immediate evaluation for potential acute coronary syndrome. Electrocardiography (ECG) and serial cardiac biomarkers should be obtained. A chest X-ray may be considered to evaluate for pulmonary causes. The patient should be monitored for any changes in symptoms, including worsening chest pain, shortness of breath, or hemodynamic instability. Additional laboratory tests, including a complete blood count, inflammatory markers, and coagulation profile, should be obtained. The patient should be advised to avoid strenuous activity and to follow up with his primary care provider for further evaluation and management. Smoking cessation counseling and a review of his recreational drug use should be addressed in a follow-up visit.

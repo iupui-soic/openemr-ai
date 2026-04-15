@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 04:02:51
+Time: 4.15s
+Tokens: 19,774 in / 986 out
+============================================================
+
+Patient Information  
+The patient is a 79-year-old male with a complex medical history including essential hypertension, prediabetes, anemia, chronic kidney disease stages 1 through 3, and a history of coronary artery bypass grafting. He resides at 374 Wyman Station, Wrentham, Massachusetts. The patient is not currently on any regular medications and reports no known drug allergies, though he does have a nickel allergy. Social history is notable for no tobacco or alcohol use, no recreational drug use, and a history of smoking tobacco daily in the past. He is sexually active with a partner and uses condoms for contraception. The patient lives with one roommate.
+
+Chief Complaint  
+The patient presents with a chief complaint of persistent nausea, with associated vomiting occurring once or twice daily for approximately nine days. The nausea is reported to be worse in the morning and when exposed to strong odors. The patient also reports urinary frequency, occurring approximately every hour, but denies urgency, incontinence, or dysuria.
+
+History of Present Illness  
+The patient has experienced persistent nausea for about nine days, with no clear precipitating event. The symptoms are described as constant, though exacerbated in the morning and by strong smells. Vomiting has occurred on multiple occasions, but the patient denies any associated abdominal pain, changes in bowel habits, or flu-like symptoms. The patient notes that he has been drinking more water, likely due to dehydration from vomiting. He also reports that his last menstrual period was approximately six weeks ago, which he acknowledges is irregular for him. No fever, chills, headache, chest pain, or other systemic symptoms are reported. The patient denies any recent travel or ingestion of potentially harmful substances.
+
+Review of Systems  
+Constitutional: The patient denies weight loss, fever, chills, or fatigue.  
+Respiratory: No shortness of breath, cough, or sputum production.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Nausea and vomiting as described, no abdominal pain, diarrhea, or constipation.  
+Genitourinary: Increased urinary frequency, no dysuria, hematuria, or flank pain.  
+Neurological: No headaches, dizziness, or syncope.  
+Musculoskeletal: No joint pain or muscle aches.  
+Dermatological: No rash or skin changes.  
+Endocrine: No polyphagia or polydipsia beyond increased water intake.  
+Hematological: No bruising or bleeding.  
+Psychiatric: No depression or anxiety reported.  
+Allergic/Immunologic: Nickel allergy only.  
+Other: No other symptoms reported.
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, prediabetes, anemia, and chronic kidney disease. He has a history of coronary artery bypass grafting and has experienced multiple episodes of gingivitis and dental issues over the years. The patient also has a history of sinusitis and has undergone multiple medication reviews due to various health concerns.
+
+Past Surgical History  
+No information available.
+
+Family History  
+The patient reports that his father has a history of hypertension. No other significant family medical history is provided.
+
+Social History  
+The patient does not use tobacco or alcohol and has no history of illicit drug use. He is sexually active and uses condoms for contraception. He lives with one roommate and has no recent history of travel.
+
+Current Medications  
+The patient reports not taking any regular medications, though he has used over-the-counter ginger products for nausea with no significant benefit.
+
+Objective  
+Vital signs at the time of the visit were not recorded. Physical examination findings were not provided in the transcript. Laboratory results from the OpenEMR extract include a complete blood count and basic metabolic panel, but these are not directly relevant to the current presentation. The patient is currently receiving intravenous medications including vancomycin, piperacillin/tazobactam, norepinephrine, and vasopressin for a separate acute condition.
+
+Assessment  
+The patient presents with persistent nausea and vomiting, likely secondary to an undetermined cause. Given the associated urinary frequency and the patient's age, a differential diagnosis should include gastrointestinal disorders, pregnancy (given the irregular menstrual history), and possible metabolic or endocrine causes. The patient's complex medical history and chronic conditions may also contribute to his symptoms. Further evaluation is warranted to determine the underlying etiology.
+
+Plan  
+The patient will undergo further evaluation, including a pregnancy test, urinalysis, and possibly an ultrasound or other imaging studies to assess for possible gynecological or gastrointestinal pathology. A review of his chronic conditions and their potential impact on his current symptoms will be conducted. The patient will be advised to continue hydration and to monitor symptoms for any changes. A follow-up appointment is scheduled for further assessment and to review test results.

@@ -1,0 +1,98 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:31:08
+Time: 5.97s
+Tokens: 9,557 in / 1,747 out
+============================================================
+
+Patient Information  
+Agustin McGlynn is a 59‑year‑old male (DOB April 16 1965) residing at 266 Heller Park Apt 46, Hingham, Massachusetts 02043. He presented to the Emergency Department for evaluation of acute abdominal pain.
+
+Chief Complaint  
+Right upper quadrant (RUQ) abdominal pain.
+
+History of Present Illness  
+The patient reports a sharp, localized pain in the right upper quadrant of the abdomen, situated just inferior to the right costal margin. The discomfort began three days ago, approximately one hour after a midday meal. Over the past two days the pain remained mild, but three to four hours prior to arrival it intensified markedly and is now rated 8/10 on a numeric pain scale. The pain has not radiated and is confined to the RUQ. He describes associated nausea that has been present for the last several days, but he denies any vomiting, hematemesis, or melena. Appetite has decreased markedly today, although he had a normal appetite prior to the onset of symptoms. He has taken over‑the‑counter ibuprofen and acetaminophen with minimal relief. He denies recent travel, sick contacts, or recent infections. He recalls a similar, self‑limited episode of abdominal pain several years ago that resolved without medical care.
+
+Review of Systems  
+Constitutional: Positive for nausea and decreased energy today; no fever, chills, or weight loss.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No palpitations, chest discomfort, or edema.  
+Gastrointestinal: Positive for RUQ pain and nausea; negative for vomiting, hematemesis, hematochezia, melena, change in bowel habits, diarrhea, constipation, or dyspepsia. No reported jaundice.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No depression or anxiety reported; PHQ‑2 score 0, GAD‑7 score 2 on recent screening.  
+Social History: The patient works as a bank consultant. He lives with his partner and two children. He consumes one to two glasses of wine nightly; he does not feel a need to cut down, experiences no guilt, and has never felt compelled to drink in the morning. He denies tobacco use, illicit drug use, and smoking. He reports occasional use of antacids for heartburn.  
+Family History: Mother has a history of gallstones. Father died of a cerebrovascular accident in his 60s. No other significant familial illnesses reported.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+- Essential hypertension  
+- Type 2 diabetes mellitus with microalbuminuria  
+- Chronic kidney disease (historical stages 1‑4; currently post‑renal‑transplant status)  
+- History of renal transplantation with subsequent graft failure and rejection (2020)  
+- Gastroesophageal reflux disease  
+- Cerebral palsy with associated spasticity and chronic pain  
+- Osteoporosis  
+- Intellectual disability  
+- Chronic anemia  
+- History of pneumonia and viral sinusitis (remote)  
+
+Surgical History  
+No prior surgical procedures other than obstetric deliveries.
+
+Current Medications (home)  
+- Tacrolimus extended‑release (5 mg and 1 mg formulations) – immunosuppression post‑transplant  
+- Acetaminophen 325 mg oral tablet as needed for pain  
+- Hydrochlorothiazide 25 mg daily for hypertension  
+- Amlodipine 2.5 mg daily for hypertension  
+- Glycopyrrolate 1.5 mg daily (likely for salivation)  
+- Epoetin alfa injection (dose unspecified) for anemia  
+- Antacids as needed for heartburn  
+
+Objective  
+Vital Signs (recorded on 2024‑05‑30): Heart rate 94 beats/min, respiratory rate 13 breaths/min. Blood pressure, temperature, SpO₂, weight, and BMI were not documented at this encounter.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record.  
+
+Laboratory Data (most recent values available)  
+- White blood cell count: 7.58 × 10³/µL (within normal limits)  
+- Red blood cell count: 4.34 × 10⁶/µL  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.1 %  
+- Mean corpuscular volume: 94.5 fL  
+- Mean corpuscular hemoglobin: 28.4 pg  
+- Mean corpuscular hemoglobin concentration: 34.2 g/dL  
+- Red cell distribution width: 39.9 fL (elevated)  
+- Platelet count: 351.7 × 10³/µL  
+- Lipid panel: Total cholesterol 252 mg/dL, LDL‑C 168 mg/dL, HDL‑C 58 mg/dL, triglycerides 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+
+Imaging  
+No imaging studies have been performed or documented at the time of this visit.
+
+Assessment  
+1. Acute right upper quadrant abdominal pain, likely biliary colic versus early acute cholecystitis.  
+2. Nausea secondary to abdominal pain.  
+3. Essential hypertension, stable on current regimen.  
+4. Type 2 diabetes mellitus with chronic kidney disease and prior renal transplant (status post‑failure).  
+5. Gastroesophageal reflux disease.  
+6. Cerebral palsy with associated chronic pain and spasticity.  
+
+Plan  
+- **Diagnostic work‑up:** Obtain right upper quadrant abdominal ultrasound urgently to assess for gallstones, gallbladder wall thickening, or biliary ductal dilation. Order liver function tests, serum amylase, lipase, and a basic metabolic panel (including creatinine) to evaluate hepatic and pancreatic involvement and to monitor renal function.  
+- **Pain management:** Continue scheduled acetaminophen 650 mg PO q6h as needed for pain; consider low‑dose IV opioids if pain remains uncontrolled, taking into account renal function and opioid stewardship. NSAIDs are contraindicated given chronic kidney disease.  
+- **Nausea:** Offer ondansetron 4 mg IV/PO q8h PRN if nausea persists.  
+- **Diet:** Keep NPO until imaging results are available; if discharged, advance to clear liquids and then a low‑fat diet as tolerated.  
+- **Medications:** Reinforce adherence to home antihypertensive regimen (hydrochlorothiazide, amlodipine) and tacrolimus; arrange for tacrolimus level check within 24 hours. Continue epoetin alfa per prior schedule. Hold antacids until after imaging unless symptomatic heartburn recurs.  
+- **Monitoring:** Observe for signs of clinical deterioration (fever, jaundice, vomiting, increasing pain, hypotension). If any of these develop, reassess promptly and consider admission.  
+- **Disposition:** Discharge home with pending ultrasound; provide written instructions.  
+- **Follow‑up:** Arrange outpatient follow‑up with primary care physician within 2‑3 days and gastroenterology within 1 week. Advise patient to seek immediate care if pain worsens, fever develops, or he develops vomiting, yellowing of skin or eyes, or changes in stool color.  
+- **Health maintenance:** Counsel regarding moderation of alcohol intake (current consumption of 1‑2 glasses of wine nightly is acceptable but should be monitored given liver and renal considerations). Encourage regular physical activity as tolerated given orthopedic and neurologic comorbidities.  
+
+No further information is available at this time.

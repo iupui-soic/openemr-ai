@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:50:01
+Time: 4.27s
+Tokens: 8,983 in / 1,269 out
+============================================================
+
+Patient Information:
+Aileen Vi Rempel is a 25‑year‑old female presenting to the clinic for evaluation of acute chest pain. She is a university engineering student who also works part‑time as a postal carrier. She lives in a house with her mother. She reports no known drug allergies. Current home medication is occasional acetaminophen (Tylenol) as needed for pain.
+
+Chief Complaint:
+Sharp chest pain that began three days ago and is persisting with intermittent episodes.
+
+History of Present Illness:
+The patient reports the onset of a sharp, localized chest pain approximately three days prior to the visit. The pain is described as a “sharp” sensation centered over the area of the heart and occasionally radiates to the neck. Episodes are brief, lasting only a few seconds before resolving spontaneously. The intensity is rated 6 out of 10. The pain is provoked by coughing and by lying supine, and is relieved when the patient leans forward. She denies any associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or syncope. She has not experienced any similar episodes in the past. One dose of acetaminophen taken yesterday provided some relief. She denies recent trauma, falls, or injuries to the chest. She had an uncomplicated viral upper respiratory infection with fever, rhinorrhea, and cough about one week ago, which has now resolved.
+
+Review of Systems:
+Constitutional – No fever, chills, weight loss, or fatigue reported.  
+Respiratory – No current cough, shortness of breath, or wheezing; recent resolved viral cough.  
+Cardiovascular – No palpitations, orthopnea, or edema.  
+Gastrointestinal – No nausea, vomiting, or abdominal pain.  
+Neurologic – No headache, dizziness, or syncope.  
+Musculoskeletal – Pain described as sharp, localized to chest, improves with leaning forward.  
+Psychiatric – Reports anxiety related to recent death of father from myocardial infarction two weeks ago; otherwise no depression or anxiety symptoms reported.
+
+Past Medical History:
+The patient reports no chronic medical conditions. She states she is otherwise healthy.
+
+Surgical History:
+No prior surgeries.
+
+Social History:
+The patient is a full‑time university student studying engineering at Western, with part‑time employment as a postman. She lives with her mother. She consumes alcohol occasionally (1–2 drinks on weekends). She does not smoke tobacco, use recreational drugs, or vape. She reports no regular exercise regimen.
+
+Family History:
+Her father suffered a myocardial infarction and died two weeks ago. No other family history of cardiac disease, hypertension, diabetes, or cancer reported.
+
+Allergies:
+No known drug allergies.
+
+Current Medications:
+Acetaminophen (Tylenol) – taken occasionally for pain relief.
+
+Vital Signs (most recent available):
+Heart Rate: 82 beats per minute.  
+Blood Pressure: Not documented.  
+Respiratory Rate: Not documented.  
+Temperature: Not documented.  
+SpO2: Not documented.  
+Weight/Height: Not documented.
+
+Physical Examination:
+No physical examination findings were recorded during this encounter. Therefore, “No information available.”
+
+Laboratory Data:
+Recent laboratory values extracted from the electronic record include:
+- Sodium: 141.33 mmol/L  
+- Potassium: 4.25 mmol/L (latest)  
+- Chloride: 108.32 mmol/L  
+- Carbon Dioxide (total): 25.44 mmol/L (latest)  
+- Calcium: 8.66 mg/dL (latest)  
+- Blood Urea Nitrogen: 11.99 mg/dL (latest)  
+- Creatinine: 0.35 mg/dL (latest)  
+- Glucose: 92.46 mg/dL  
+- PHQ‑2 score: 1 (minimal depressive symptoms)  
+- GAD‑7 score: 1 (minimal anxiety symptoms)  
+- Fall risk score (Morse): 45 (moderate risk)  
+
+Imaging:
+No imaging studies have been performed at this visit. An electrocardiogram (ECG) is planned.
+
+Assessment:
+1. Acute intermittent sharp chest pain, likely non‑ischemic in origin. The positional nature (worse supine, better leaning forward) and association with cough raise the possibility of acute pericarditis versus musculoskeletal chest wall pain.  
+2. Anxiety related to recent familial myocardial infarction.  
+3. No evidence of acute coronary syndrome at this time, but given family history and symptom description, cardiac evaluation is warranted.
+
+Plan:
+- Order a 12‑lead electrocardiogram immediately to assess for pericardial changes, ST‑segment abnormalities, or evidence of ischemia.  
+- Obtain cardiac biomarkers (troponin I or T) to rule out myocardial injury.  
+- Consider chest radiograph to evaluate for pulmonary or mediastinal causes.  
+- If ECG or biomarkers are abnormal, arrange urgent cardiology consultation and consider further imaging (echocardiogram).  
+- If pericarditis is suspected and no contraindication exists, advise non‑steroidal anti‑inflammatory drug (e.g., ibuprofen 400 mg PO TID with food) and continue acetaminophen for breakthrough pain.  
+- Counsel the patient on activity modification: avoid strenuous activity and lying flat for prolonged periods; encourage leaning forward when discomfort occurs.  
+- Provide education on warning signs that require immediate medical attention: worsening chest pain, shortness of breath, diaphoresis, syncope, or new palpitations.  
+- Schedule follow‑up in 2–3 days to review test results and reassess symptoms. If symptoms worsen before then, instruct the patient to seek emergency care.  
+- Address anxiety: reassure patient about the evaluation process, and consider brief counseling or referral if anxiety persists.  
+
+Disposition:
+The patient will remain in the outpatient setting pending diagnostic test results. No admission is indicated at this time.

@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:56:29
+Time: 2.62s
+Tokens: 15,186 in / 1,463 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 25 March 1917  
+Sex: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of productive cough and progressive shortness of breath.  
+
+History of Present Illness  
+Mr. Cummerata reports that the cough began approximately three days ago and has been persistent throughout the day and night. The sputum is described as yellowish‑green and the volume is roughly the size of a thumb tip. He denies hemoptysis, chest pain, palpitations, dizziness, or syncope. Shortness of breath developed about one day after the cough started, currently rated as 7 out of 10 in severity. He reports that the dyspnea interrupts his sleep, though he is uncertain whether the cough or the breathing difficulty is the primary cause. No specific triggers or positional changes aggravate his symptoms. He denies wheezing except when he is severely short of breath. He also reports fatigue, a general sense of weakness, mild abdominal discomfort, and a loss of smell. He has not experienced fever, chills, night sweats, weight loss, nausea, vomiting, or changes in bowel habits.  
+
+Review of Systems  
+Constitutional: Fatigue, weakness, mild loss of smell, no fever, chills, or night sweats.  
+Respiratory: Productive cough with yellow‑green sputum, shortness of breath (7/10), mild wheezing when dyspneic, no chest pain.  
+Cardiovascular: No palpitations, chest pain, or syncope.  
+Gastrointestinal: Mild abdominal ache, no nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Neurologic: No dizziness, fainting, confusion, or memory loss.  
+
+Allergies  
+Known sulfa allergy, manifested by a rash after prior antibiotic therapy. No current sulfa exposure.  
+
+Past Medical History  
+- Atrial fibrillation diagnosed approximately four years ago, managed with metoprolol.  
+- Hypertension, chronic kidney disease (stage 4), and chronic heart failure (history of myocardial infarction).  
+- Hyperlipidemia on statin therapy.  
+- Aspirin 81 mg daily for cardiovascular prophylaxis.  
+- No recent hospitalizations or surgeries except an inguinal hernia repair fifteen years ago.  
+
+Surgical History  
+- Inguinal hernia repair, 15 years prior.  
+
+Social History  
+The patient is a former smoker, having quit about five years ago after smoking one pack per day. He reports occasional use of CBD edibles purchased from licensed Ontario stores, typically taken a few times per week to aid sleep. He has no alcohol consumption and denies use of recreational drugs. He lives in a renovated house with his wife and reports no exposure to mold or other environmental allergens.  
+
+Family History  
+No documented family history of lung disease or cardiac conditions beyond a maternal aunt’s lung cancer attributed to smoking.  
+
+Current Medications  
+- Metoprolol (dose not specified).  
+- Statin (type not specified).  
+- Aspirin 81 mg daily.  
+- Other medications listed in the electronic record include albuterol, piperacillin/tazobactam, vancomycin, norepinephrine, vasopressin, heparin, acetaminophen, iron supplements, penicillin V, ferrous sulfate, sodium fluoride gel, and previously used insulin, verapamil, and digoxin (all discontinued).  
+
+Vital Signs (most recent available)  
+No recent vitals were recorded at the time of this encounter; therefore, no information is available.  
+
+Physical Examination  
+No examination findings were documented during this visit.  
+
+Laboratory Data  
+The most recent laboratory panel shows normal ranges for most parameters, with a notably elevated ferritin level of 1,853 µg/L, consistent with chronic disease or inflammatory state. Other values—including WBC differential, electrolytes, liver enzymes, and coagulation profile—are within normal limits. No acute infection markers such as elevated neutrophils or CRP were reported.  
+
+Assessment  
+The patient’s presentation is most consistent with an acute lower respiratory tract infection, likely viral pneumonia. The presence of yellow‑green sputum and shortness of breath, coupled with the patient’s recent visit to a long‑term care facility, raises concern for COVID‑19, as well as other community‑acquired viral etiologies. His comorbidities, particularly atrial fibrillation, chronic kidney disease, and heart failure, place him at increased risk for severe disease.  
+
+Plan  
+
+1. **Diagnostic Testing**  
+   - Arrange a SARS‑CoV‑2 PCR nasopharyngeal swab immediately and send to laboratory.  
+   - Consider chest radiography to evaluate for infiltrates if clinical deterioration occurs or to confirm pneumonia.  
+
+2. **Isolation Precautions**  
+   - Advise the patient and his spouse to practice strict isolation for at least 14 days or until symptom resolution, whichever comes first, to prevent potential transmission.  
+
+3. **Symptom Management**  
+   - Continue current home medications (metoprolol, statin, aspirin).  
+   - Encourage use of over‑the‑counter acetaminophen for fever or malaise as needed.  
+   - Review and optimize sleep hygiene; discuss alternative options to CBD edibles if desired.  
+
+4. **Antibiotic Consideration**  
+   - If PCR results are negative for COVID‑19 and clinical suspicion for bacterial pneumonia remains high (e.g., persistent fever, worsening respiratory status, or radiographic infiltrates), initiate empiric broad‑spectrum antibiotics such as a combination of piperacillin‑tazobactam and vancomycin, pending culture results.  
+
+5. **Follow‑Up**  
+   - Schedule a telehealth or in‑person follow‑up within 48–72 hours to review test results and reassess symptoms.  
+   - If the patient’s condition worsens (increased dyspnea, hypoxia, chest pain, or hemodynamic instability), advise immediate emergency department evaluation.  
+
+6. **Patient Education**  
+   - Reinforce the importance of hand hygiene, mask usage, and staying home to limit exposure.  
+   - Instruct the patient to monitor oxygen saturation using a home pulse oximeter if available, and to seek care if saturation falls below 92 %.  
+   - Discuss the potential need for additional vaccinations, such as influenza and pneumococcal, if not up to date.  
+
+Disposition  
+The patient will be monitored for changes in respiratory status and will be re‑evaluated following COVID‑19 test results. No additional imaging or laboratory testing is required at this time unless clinical status changes. The plan will be revised based on test outcomes and clinical evolution.  
+
+Prepared by: _______________________  
+Date: _______________________

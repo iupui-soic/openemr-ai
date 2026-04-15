@@ -1,0 +1,68 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:17:46
+Time: 2.08s
+Tokens: 8,239 in / 881 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel (patient identifying name from EMR)  
+Date of Birth: 1917-07-25 (EMR) – patient reports age 25 years at visit, therefore current age 25 years.  
+Gender: Not specified by patient; EMR records female.  
+Address: 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171.  
+Contact: No additional contact information provided.  
+
+Chief Complaint  
+The patient presented with a sharp chest pain localized over the heart, lasting a few seconds, occurring three days ago and continuing intermittently.
+
+History of Present Illness  
+The patient reports that the chest pain started approximately three days prior to the visit. The pain is described as sharp, rated 6/10 on the pain scale. Episodes last a few seconds and then resolve. Pain worsens when coughing or lying down and is relieved when leaning forward. The pain occasionally radiates to the neck. The patient denies associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or other systemic symptoms. No prior similar episodes have been reported. The patient is concerned about a possible heart attack, citing the recent sudden death of her father from a heart attack two weeks ago.  
+
+Past Medical History  
+The patient reports no chronic medical conditions, surgeries, or prior hospitalizations. The patient describes herself as a "pretty healthy 25-year-old."
+
+Medications  
+The patient occasionally takes acetaminophen (Tylenol) for pain relief; no other medications are reported at this time.
+
+Allergies  
+No known drug or environmental allergies.
+
+Social History  
+Occupation: Student at Western University studying engineering; part-time postal worker.  
+Housing: Lives with mother in a family house.  
+Alcohol: Occasional consumption, one or two drinks on weekends.  
+Tobacco: Denies use.  
+Recreational drugs: Denies marijuana, cocaine, or other illicit substances.  
+Exercise: No regular exercise routine reported.  
+
+Family History  
+Father deceased from a heart attack two weeks prior to the visit. No other family history of cardiovascular disease, cancer, or diabetes noted.
+
+Review of Systems  
+General: No fever, chills, weight loss, or fatigue.  
+Cardiovascular: Chest pain as described; denies palpitations.  
+Respiratory: No shortness of breath, cough, or wheezing.  
+GI: No nausea, vomiting, or abdominal pain.  
+Neurologic: No dizziness or syncope.  
+Musculoskeletal: No joint or muscle pain.  
+Psychiatric: No anxiety or depression symptoms reported.
+
+Physical Examination  
+No physical examination findings were documented in the encounter notes.
+
+Assessment  
+Acute chest pain of uncertain etiology. Differential diagnosis includes acute coronary syndrome versus musculoskeletal chest wall pain. Given the patient’s young age, absence of classic cardiovascular risk factors, and the brief, sharp nature of the pain, a musculoskeletal etiology is likely, yet a cardiac etiology cannot be excluded due to family history and the patient’s anxiety.  
+
+Plan  
+1. Obtain a 12‑lead electrocardiogram (ECG) immediately to evaluate for ischemic changes.  
+2. Order cardiac biomarkers (troponin I/T, CK‑MB) to rule out myocardial injury.  
+3. If ECG or biomarkers are abnormal, arrange for cardiology referral and possible further imaging (e.g., echocardiography).  
+4. Reassure the patient regarding the likely benign nature of the pain, while acknowledging the family history of cardiac disease.  
+5. Discuss the importance of seeking urgent care if chest pain becomes more frequent, lasts longer, or is accompanied by shortness of breath, dizziness, or sweating.  
+6. Continue acetaminophen for pain as needed; advise against NSAIDs until cardiac evaluation is complete.  
+7. Provide educational materials on signs of acute coronary syndrome and when to call emergency services.  
+8. Schedule a follow‑up appointment within 48–72 hours to review test results and reassess symptoms.
+
+Disposition  
+Patient was advised to return to the emergency department if symptoms worsen or new symptoms develop. No medication changes were made at this visit.

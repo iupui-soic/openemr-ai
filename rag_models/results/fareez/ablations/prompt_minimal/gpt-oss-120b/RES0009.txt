@@ -1,0 +1,171 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:20:55
+Time: 7.23s
+Tokens: 15,041 in / 2,847 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abel Wunsch  
+- **Medical Record #:** 388  
+- **Date of Birth:** 1932‑06‑07 (94 y/o)  
+- **Sex:** Male  
+- **Visit Date:** 2024‑04‑14 (telehealth/office visit)  
+
+---
+
+## Subjective  
+
+### Chief Complaint  
+“Chest pain and shortness of breath for the past 5 days.”
+
+### History of Present Illness  
+The patient reports a **new, persistent, sharp, left‑sided chest pain** that began 5 days ago while seated on the couch. The pain is described as “tiny” but constant, and it **worsens with deep inspiration and with ambulation** (e.g., walking to retrieve the mail). The patient notes a mild‑to‑moderate **dyspnea** that is more pronounced during activity and when taking a deep breath. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide only modest relief.  
+
+- **Onset:** 5 days ago, acute while at rest.  
+- **Location:** Left anterior chest, localized, non‑radiating.  
+- **Quality:** Sharp, “lingering.”  
+- **Severity:** Not quantified, but described as bothersome enough to limit walking.  
+- **Duration:** Continuous since onset.  
+- **Modifying factors:** Improves slightly with Tylenol/Advil; worsens with deep breaths and exertion.  
+- **Associated symptoms:** No fever, chills, cough, sputum, hemoptysis, wheezing, nausea, vomiting, palpitations, syncope, headache, night sweats, or peripheral edema. The patient reports a subjective sense of fatigue secondary to the dyspnea.  
+
+### Review of Systems  
+| System | Positive | Negative |
+|--------|----------|----------|
+| **Constitutional** | Fatigue (activity‑related) | Fever, chills, night sweats, weight loss |
+| **Respiratory** | Dyspnea on exertion, pleuritic‑type pain | Cough, sputum, wheeze, hemoptysis |
+| **Cardiovascular** | Chest pain, dyspnea | Palpitations, orthopnea, paroxysmal nocturnal dyspnea, edema |
+| **Gastrointestinal** | None | Nausea, vomiting, abdominal pain, change in bowel habits |
+| **Genitourinary** | History of recent hysterectomy (≈1 month ago) – currently normal voiding | Dysuria, hematuria |
+| **Neurologic** | None | Light‑headedness, syncope |
+| **Musculoskeletal** | None | Myalgias, arthralgias |
+| **Skin** | None | Rashes |
+
+### Past Medical History  
+- Essential hypertension (diagnosed 1954)  
+- Obesity (BMI ≈ 33 kg/m²)  
+- Chronic kidney disease (stage 1‑3 historically; currently stable, eGFR ≈ 158 mL/min/1.73 m²)  
+- Type 2 diabetes mellitus with micro‑albuminuria & proteinuria  
+- Chronic sinusitis  
+- Prostate neoplasm (carcinoma in situ)  
+- Opioid abuse (historical)  
+- Ischemic heart disease (known CAD)  
+- Chronic congestive heart failure (ongoing)  
+- History of renal transplant (2011) with current tacrolimus therapy  
+
+### Surgical History  
+- Hysterectomy (≈1 month ago) – indication: refractory heavy menstrual bleeding/pelvic pain  
+- Wisdom teeth extraction (teenage years)  
+- Multiple minor procedures (lacerations, dental work) noted in record  
+
+### Social History  
+- **Tobacco:** Currently smoking ~5 cigarettes per day; attempts to quit.  
+- **Alcohol:** Occasional weekend glass of wine.  
+- **Illicit drugs:** No current use; historic occasional marijuana use.  
+- **Living situation:** Resides with husband and two teenage children.  
+- **Occupation:** Accountant (currently not working due to recent health issues).  
+
+### Family History  
+- Mother: Myocardial infarction in her 70s.  
+- No known family history of clotting disorders, cancers (other than mother’s cousin), or early‑onset CAD.  
+
+### Allergies  
+- No known drug, food, or environmental allergies.  
+
+### Current Medications (home regimen)  
+| Medication | Dose | Route | Frequency |
+|------------|------|-------|-----------|
+| Tacrolimus (extended‑release) | 5 mg | PO | Daily |
+| Tacrolimus (1 mg tablet) | 1 mg | PO | Daily |
+| Tacrolimus injection | 1 mL (5 mg/ mL) | IM/IV | As directed |
+| Furosemide injection | 10 mg/ mL (10 mL) | IV | As needed |
+| Furosemide tablets | 40 mg | PO | Daily |
+| Acetaminophen | 325 mg | PO | PRN |
+| Ibuprofen | 200 mg | PO | PRN |
+| Multisymptom cough‑cold solution (acetaminophen/dextromethorphan/doxylamine) | 1 mL | PO | PRN |
+| Sodium fluoride gel | 0.0272 mg/mg | Topical | As needed |
+| Lisinopril | 10 mg | PO | Daily |
+| Amlodipine | 2.5 mg | PO | Daily |
+| Sertraline | 100 mg | PO | Daily |
+| Clopidogrel | 75 mg | PO | Daily |
+| Simvastatin | 20 mg | PO | Daily |
+| Metoprolol succinate (ER) | 100 mg | PO | Daily |
+
+---
+
+## Objective  
+
+### Vital Signs (most recent entry, 2003‑03‑11)  
+- **Heart Rate:** 79 bpm (regular)  
+- **Respiratory Rate:** 15 breaths/min  
+- **Blood Pressure:** Not recorded in current extract  
+- **Temperature:** Not recorded  
+- **SpO₂:** Not recorded  
+- **Height:** 182.6 cm  
+- **Weight:** Not recorded (BMI 33.3 kg/m² from prior data)  
+
+### Physical Examination  
+*No exam data captured during this encounter.*  
+
+### Laboratory Results (most recent panel)  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| WBC | 9.5 ×10³/µL | – |
+| RBC | 3.80 ×10⁶/µL | – |
+| Hemoglobin | 16.9 g/dL | – |
+| Hematocrit | 47.5 % | – |
+| MCV | 80.6 fL | – |
+| MCH | 27.1 pg | – |
+| MCHC | 33.4 g/dL | – |
+| RDW | 14.5 % | – |
+| Platelets | 297 ×10³/µL | – |
+| Glucose | 82.8 mg/dL | – |
+| BUN | 10.5 mg/dL | – |
+| Creatinine | 0.88 mg/dL | – |
+| eGFR (MDRD) | 158 mL/min/1.73 m² | – |
+| Electrolytes: Na 142.9 mmol/L, K 3.73 mmol/L, Cl 102.3 mmol/L, CO₂ 23.2 mmol/L | – |
+| Calcium | 8.79 mg/dL | – |
+| Total Protein | 6.86 g/dL | – |
+| *Cardiac biomarkers (cTn, CK‑MB) – not ordered yet* | – | – |
+
+### Imaging  
+- No imaging performed yet; the clinician expressed intent to obtain studies to evaluate for pulmonary embolism.
+
+---
+
+## Assessment  
+
+1. **Suspected Acute Pulmonary Embolism (PE)** – New pleuritic chest pain, exertional dyspnea, recent major pelvic surgery (hysterectomy) within the past month, and active smoking are significant risk factors. No overt hypoxia documented yet, but clinical suspicion is high.  
+
+2. **Chronic Ischemic Heart Disease** – Known CAD; must rule out acute coronary syndrome (ACS) as part of the differential.  
+
+3. **Heart Failure, NYHA Class II‑III** – Baseline CHF; the current dyspnea may reflect decompensation secondary to PE or fluid shifts.  
+
+4. **Hypertension, Obesity, Type 2 Diabetes Mellitus** – Chronic comorbidities contributing to cardiovascular risk.  
+
+5. **Recent Hysterectomy (≈1 month ago)** – Postsurgical immobilization may have contributed to venous stasis.  
+
+6. **Active Tobacco Use** – Ongoing risk factor for both thromboembolism and CAD.  
+
+---
+
+## Plan  
+
+| Item | Details |
+|------|---------|
+| **Diagnostics** | • **CT pulmonary angiography (CTPA)** – definitive test for PE. <br>• **Ventilation‑perfusion (V/Q) scan** – if CTPA contraindicated (e.g., contrast allergy, renal concerns). <br>• **12‑lead ECG** – to assess for ischemic changes, right‑heart strain. <br>• **High‑sensitivity troponin I/T** – baseline and repeat at 3 h to evaluate for myocardial injury/PE‑related strain. <br>• **D‑dimer** – if low clinical probability; however, given high pre‑test probability (recent surgery, smoking), proceed directly to imaging. |
+| **Therapeutic** | • **Supplemental oxygen** to maintain SpO₂ > 94 % if hypoxic. <br>• **Anticoagulation** – if PE confirmed: start **low‑molecular‑weight heparin (e.g., enoxaparin 1 mg/kg SC q12h)** or **weight‑adjusted unfractionated heparin** pending imaging, unless contraindicated. <br>• **Pain control** – continue acetaminophen PRN; avoid high‑dose NSAIDs given CKD and potential platelet interaction with clopidogrel. <br>• **Monitor vitals** (HR, RR, BP, O₂ sat) q4 h while in the observation area. |
+| **Cardiac** | • Continue **metoprolol succinate** and **clopidogrel** as per CAD regimen. <br>• Review **beta‑blocker dose** given bradycardia risk if combined with anticoagulation. |
+| **Renal/Transplant** | • Tacrolimus trough level to be checked within 24 h (target 5‑10 ng/mL). <br>• Maintain current immunosuppression; adjust only if renal function declines after contrast exposure. |
+| **Lifestyle/Prevention** | • Strong smoking cessation counseling; consider nicotine replacement or varenicline. <br>• Encourage ambulation as tolerated; consider compression stockings after confirming no active bleeding. |
+| **Disposition** | • Admit to telemetry/step‑down unit pending imaging results and anticoagulation initiation. <br>• If CTPA negative and low‑risk PE ruled out, consider discharge with outpatient VTE work‑up and anticoagulation. |
+| **Patient Education** | • Discuss signs of worsening dyspnea, chest pain, hemoptysis, leg swelling, or syncope – advise immediate return to ED. <br>• Review medication adherence, especially for antihypertensives, statin, and antiplatelet agents. |
+| **Follow‑up** | • Cardiology follow‑up within 1 week (post‑imaging). <br>• Primary care visit in 2 weeks to reassess blood pressure, renal function, and smoking cessation progress. <br>• Transplant nephrology to be notified of any contrast‑related renal changes. |
+| **Orders** | • CTPA with IV contrast (pre‑hydration protocol). <br>• CBC, BMP, coagulation panel, tacrolimus level, high‑sensitivity troponin. <br>• ECG. <br>• VTE prophylaxis if admitted and imaging delayed (sequential compression devices + low‑dose heparin). |
+
+**Signature:** ________________________  
+**Provider:** Dr. _____________ (MD)  
+**Date:** 2024‑04‑14

@@ -1,0 +1,110 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:53:21
+Time: 4.65s
+Tokens: 18,463 in / 1,623 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (age 79)  
+Sex: Female  
+Medical Record Number: 5194  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with acute right‑sided abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ms. Hayes reports an aching pain located in the right upper portion of her abdomen. The discomfort started while she was preparing to go to sleep and was initially intermittent, occurring for the first two hours after onset. Over the past five to six hours the pain has become constant and now rates an 8 out of 10 on the pain scale. She describes the pain as a persistent ache that does not radiate to other areas. The pain worsens after eating, particularly after consuming fatty foods such as burgers or fries, a pattern she has experienced intermittently in the past and previously attributed to indigestion. She has taken acetaminophen without relief. She feels mildly nauseated but has not vomited. She denies fever, chills, sweats, diarrhea, constipation, hematochezia, melena, dysuria, urinary color changes, or recent travel. She notes a decreased appetite because she fears the pain will recur after meals. She reports feeling a little fatigued secondary to the pain but denies any other new systemic symptoms.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss; mild fatigue reported.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Respiratory: No dyspnea, cough, or wheezing.  
+Gastrointestinal: Right upper abdominal aching pain, worsened by fatty meals; nausea present, no vomiting, no change in bowel habits, no blood in stool, decreased appetite.  
+Genitourinary: No dysuria, hematuria, or changes in urine color.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Musculoskeletal: No new joint pain or swelling.  
+Skin: No rashes, jaundice, or other lesions.  
+Psychiatric: No depression or anxiety reported at this visit.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (currently managed with metformin)  
+- Prediabetes  
+- Chronic kidney disease stage 3 (baseline GFR ~37 mL/min/1.73 m²)  
+- Hypertension  
+- Metabolic syndrome (obesity, elevated BMI ≈ 27.9)  
+- Gastroesophageal reflux disease  
+- Chronic migraine without aura  
+- Chronic pain (unspecified)  
+- Chronic obstructive bronchitis (active)  
+
+Surgical History  
+- Wisdom teeth extraction performed in adolescence.  
+
+Social History  
+The patient is currently unemployed after being laid off due to the COVID‑19 pandemic. She lives alone in an apartment. She walks or runs outdoors when the weather permits. Alcohol use consists of one to two drinks per day, most often a glass of wine in the evening. She does not smoke cigarettes and denies any recreational drug use.  
+
+Family History  
+Father had a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other major illnesses.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Current Medications  
+- Metformin (dose not specified) – home medication for diabetes  
+- Lisinopril 10 mg orally daily – for hypertension  
+- Insulin isophane and regular insulin (historical entry) – unclear if currently active  
+- Fluticasone propionate/salmeterol dry powder inhaler – for chronic obstructive bronchitis  
+- Albuterol inhalation solution – rescue inhaler for bronchospasm  
+
+Vital Signs (most recent)  
+Heart rate: 92 beats per minute  
+Respiratory rate: 13 breaths per minute  
+Blood pressure: Not recorded at this visit  
+Temperature: Not recorded at this visit  
+Oxygen saturation: Not recorded at this visit  
+Weight: Not recorded at this visit  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent)  
+- Serum calcium: 9.27 mg/dL (within normal limits)  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL (consistent with chronic kidney disease)  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L  
+- Serum chloride: 103.96 mmol/L (both within normal limits)  
+- Serum glucose: 66.6 mg/dL (fasting range)  
+- Urine specific gravity: 1.038  
+- Urine protein: 214 mg/dL (elevated)  
+- Urine glucose: 1.5 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+
+Imaging  
+No imaging studies have been performed during this visit.  
+
+Assessment  
+1. Right upper quadrant abdominal pain, likely biliary colic secondary to gallstone disease. The pain pattern of worsening after fatty meals and the persistent nature raise concern for early acute cholecystitis.  
+2. Nausea, likely secondary to the abdominal pain.  
+3. Chronic kidney disease stage 3, stable.  
+4. Type 2 diabetes mellitus, well‑controlled on metformin.  
+5. Hypertension, controlled on lisinopril.  
+6. Chronic obstructive bronchitis, stable.  
+
+Plan  
+- Diagnostic studies: Order right upper quadrant abdominal ultrasound to evaluate for gallstones, gallbladder wall thickening, and signs of cholecystitis. Obtain liver function tests, amylase, and lipase to assess for hepatobiliary or pancreatic involvement.  
+- Pain management: Initiate intravenous acetaminophen 1 g every 6 hours as tolerated. If pain remains uncontrolled and there are no contraindications, consider a short course of intravenous ketorolac, monitoring renal function closely given CKD.  
+- Nausea: Provide ondansetron 4 mg IV every 8 hours as needed for nausea.  
+- Nutrition: Keep the patient NPO until ultrasound results are available; if cholecystitis is confirmed, surgical consultation for possible cholecystectomy will be arranged.  
+- Fluid status: Maintain adequate oral hydration; if unable to tolerate oral intake, start isotonic IV fluids (0.9% saline) while monitoring electrolytes.  
+- Chronic conditions: Continue metformin and lisinopril; monitor blood glucose and blood pressure during the visit. Reinforce adherence to diabetic diet and medication regimen.  
+- Follow‑up: Review ultrasound and lab results within 24 hours. If imaging confirms acute cholecystitis, arrange for same‑day surgical evaluation. If findings are equivocal, consider repeat imaging or observation with gastroenterology input. The patient should return to the emergency department or contact her primary care provider if she develops fever, worsening pain, vomiting, or any signs of jaundice.  
+
+Disposition  
+The patient will be observed in the clinic/observation unit pending imaging results. Education regarding signs of worsening condition and instructions for follow‑up were provided. No discharge at this time.  
+
+Prepared by: _______________________   Date: ____________   (Physician signature)

@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:59:27
+Time: 29.39s
+Tokens: 10,095 in / 503 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Alyson Laila Leuschke, DOB 1921-02-28, is a 37-year-old female residing at 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890. She is a mechanic and is currently supporting herself.
+
+Chief Complaint:
+
+The patient presented to the Emergency Department complaining of chest pain.
+
+History of Present Illness:
+
+The patient reports chest pain that began approximately 2 hours prior to arrival, while riding her bicycle. She fell off her bike and reports that the impact was directly on her chest. The pain is described as stabbing and is located on the left side of her chest. She is taking small, shallow breaths to alleviate the pain. The pain has been progressively worsening over the last two hours. She denies any associated symptoms such as nausea, vomiting, or dizziness. She has never experienced chest pain before. She denies any loss of consciousness. She reports no injuries to the head.
+
+Associated Symptoms:
+
+The patient reports feeling short of breath, possibly due to the slow, shallow breathing she is taking to manage the pain.
+
+Past Medical History:
+
+The patient reports a history of essential hypertension, chronic kidney disease stage 1, chronic kidney disease stage 2, microalbuminuria due to type 2 diabetes mellitus, sepsis, septic shock, chronic kidney disease stage 3, and proteinuria due to type 2 diabetes mellitus. She also has a history of a hay fever and allergies to nasal sprays and antihistamines. She denies any hospitalizations or surgeries.
+
+Family History:
+
+The patient's father has type 2 diabetes.
+
+Social History:
+
+The patient is a smoker, smoking 2.5 to 3 packs of cigarettes per day since age 18. She denies recreational drug use and alcohol use, stating she only drinks beer occasionally.
+
+Review of Systems:
+
+The patient denies fever, chills, nausea, vomiting, racing heart, skin changes or rashes, cough, and dizziness.
+
+Physical Exam:
+
+The physical exam findings are not available in the provided data.
+
+Assessment:
+
+The patient presents with chest pain, likely related to the bicycle fall. Further evaluation is needed to rule out cardiac or musculoskeletal causes.
+
+Plan:
+
+The patient will undergo further evaluation to determine the cause of her chest pain. This may include an electrocardiogram (ECG), chest X-ray, and potentially other diagnostic tests. The patient will be monitored for any changes in her condition.

@@ -1,0 +1,143 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:03:49
+Time: 5.91s
+Tokens: 10,847 in / 2,038 out
+============================================================
+
+Patient Information  
+Abraham Schneider is a 98‑year‑old male with a past medical history significant for type 2 diabetes mellitus, essential hypertension, chronic kidney disease (stage 4) with a renal transplant, and a 30‑year history of cigarette smoking (approximately one pack per day). He lives at home with his wife and volunteers several times per week at a local homeless shelter. He denies alcohol or illicit drug use. He reports environmental allergies only.
+
+Chief Complaint  
+Cough, dyspnea, and right‑sided chest pain of three days’ duration, accompanied by fever.
+
+History of Present Illness  
+Three days ago (approximately Monday) the patient began to feel unwell, noting the onset of a productive cough that has become more frequent (approximately two episodes per hour) and is associated with the expectoration of dark green‑yellow sputum. He reports increasing shortness of breath and a sharp, localized pain on the right side of his chest and upper abdomen that is provoked by coughing or taking a deep breath. The pain is described as sharp and intermittent, without radiation. He has taken acetaminophen (Tylenol) and ibuprofen (Advil) with modest relief of the pain. He also reports feeling “hot” and measured a temperature of 38.6 °C (101.5 °F) at home, prompting his visit. He denies any recent travel, known sick contacts, or changes in his routine that might have precipitated the symptoms. He has a long‑standing, non‑productive cough attributed to his smoking history, but notes that the current cough is different in frequency and character.
+
+Review of Systems  
+Constitutional: Fever (38.6 °C). No weight loss reported.  
+Respiratory: Productive cough with green‑yellow sputum, dyspnea on exertion, no reported wheezing or hemoptysis.  
+Cardiovascular: No chest pain at rest or with activity other than the cough‑related pain; no palpitations.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain aside from the right‑sided chest discomfort.  
+Genitourinary: No dysuria or flank pain.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Musculoskeletal: No myalgias.  
+Skin: No rashes.  
+Allergies  
+Environmental allergens only; no known drug allergies.
+
+Past Medical History  
+- Type 2 diabetes mellitus (on metformin, an SGLT‑2 inhibitor, and insulin).  
+- Essential hypertension (on amlodipine).  
+- Chronic kidney disease, stage 4, with prior renal transplant.  
+- Long‑standing tobacco use (≈30 pack‑years).  
+- No documented history of heart disease, asthma, or COPD, although smoking history raises concern for chronic airway disease.
+
+Surgical History  
+No surgical procedures reported in the current encounter.
+
+Social History  
+- Tobacco: 1 pack per day for 30 years, continues to smoke.  
+- Alcohol: None.  
+- Illicit drugs: None.  
+- Occupation: Retired; volunteers at a homeless shelter several times per week.  
+- Living situation: Lives with wife in a house in Wayland, Massachusetts.
+
+Family History  
+Father had a myocardial infarction in his 70s; mother had hypertension. No known familial lung disease.
+
+Current Medications (home)  
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (dose not specified)  
+- Insulin (dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Simvastatin 20 mg daily  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Hydrochlorothiazide 25 mg daily  
+- Nitroglycerin spray as needed  
+- Albuterol inhalation solution/MDI as needed  
+- Multivitamin daily  
+- Acetaminophen 500 mg PRN (used today)  
+- Ibuprofen 220 mg PRN (used today)
+
+Objective  
+
+Vital Signs  
+- Temperature: 38.6 °C (measured at home)  
+- Heart Rate: 62 bpm (last recorded in chart)  
+- Respiratory Rate: 16 breaths/min (last recorded in chart)  
+- Blood Pressure: Not recorded at this visit  
+- SpO₂: Not recorded  
+- Weight: Not recorded  
+
+Physical Examination  
+No physical exam findings were documented during the encounter.
+
+Laboratory Data (most recent)  
+- Hemoglobin 13.5 g/dL (derived from Hct 40.4 %).  
+- Hematocrit 40.4 %.  
+- White blood cell count: Neutrophils 2.79 ×10³/µL, Lymphocytes 22.8 %, Monocytes 1.13 ×10³/µL, Eosinophils 3.24 %, Basophils 0.22 ×10³/µL (overall WBC not explicitly listed).  
+- Platelet count not provided.  
+- Ferritin 1547 µg/L (elevated).  
+- Serum calcium 8.66 mg/dL.  
+- BUN 8.81 mg/dL.  
+- Serum creatinine not listed; estimated GFR 9.5 mL/min/1.73 m² indicating severe renal impairment.  
+- Bicarbonate 23.6 mmol/L; arterial CO₂ 35.7 mm Hg.  
+- ALT 20 U/L; AST 20 U/L; Alkaline phosphatase 55 U/L.  
+- Albumin 4.62 g/dL.  
+- INR 4.70 (significantly elevated).  
+- No arterial blood gas values reported.
+
+Imaging  
+No imaging studies have been performed or documented at this encounter.
+
+Assessment  
+1. Community‑acquired pneumonia, likely bacterial, presenting with productive cough, fever, and right‑sided pleuritic chest pain.  
+2. Acute exacerbation of chronic bronchitis secondary to tobacco use.  
+3. Type 2 diabetes mellitus, poorly controlled risk factor for infection.  
+4. Chronic kidney disease, stage 4 with markedly reduced GFR; requires dose adjustment of renally cleared medications.  
+5. Hypertension, controlled on amlodipine.  
+6. Elevated INR, possibly related to recent anticoagulation therapy (enoxaparin) noted in the record; risk of bleeding must be considered.  
+7. Tobacco use disorder.
+
+Plan  
+
+Diagnostics  
+- Obtain a chest radiograph (PA and lateral) to confirm infiltrate and assess for complications.  
+- Sputum Gram stain and culture with sensitivity.  
+- Complete blood count with differential and repeat basic metabolic panel.  
+- Blood cultures x2 given fever and possible sepsis.  
+- Consider arterial blood gas to evaluate oxygenation and acid‑base status.  
+
+Therapeutic  
+- Initiate empiric antibiotic therapy for community‑acquired pneumonia: oral amoxicillin‑clavulanate 875 mg/125 mg twice daily for 7 days, adjusted for renal function, or a respiratory fluoroquinolone if beta‑lactam contraindicated.  
+- Continue albuterol inhaler PRN for bronchospasm.  
+- Provide antipyretics: acetaminophen 650 mg PO q6h PRN for fever.  
+- Hold ibuprofen while INR remains elevated.  
+- Review anticoagulation: discontinue enoxaparin pending INR re‑check; consider reversal if bleeding risk high.  
+- Optimize diabetes management: check capillary glucose now and adjust insulin dosing as needed given infection‑related hyperglycemia.  
+- Encourage smoking cessation; offer counseling and nicotine replacement therapy.  
+
+Supportive Care  
+- Encourage adequate oral hydration.  
+- Monitor temperature, respiratory status, and oxygen saturation at home; seek urgent care if SpO₂ falls below 92 % or if dyspnea worsens.  
+
+Disposition  
+Given the patient’s advanced age, comorbidities (CKD stage 4, diabetes, elevated INR), and the presence of fever and possible hypoxemia, admission to the hospital for close monitoring, intravenous antibiotics, and possible oxygen therapy is recommended.  
+
+Follow‑up  
+- If discharged, arrange follow‑up with primary care physician within 48 hours and with pulmonology within one week.  
+- Repeat chest X‑ray in 7‑10 days to document resolution.  
+- Re‑check INR in 24 hours; adjust anticoagulation accordingly.  
+- Schedule diabetes education and renal clinic follow‑up.  
+
+Discharge Instructions (if applicable)  
+- Complete the full course of prescribed antibiotics.  
+- Take acetaminophen for fever or pain; avoid NSAIDs while INR is elevated.  
+- Monitor blood glucose closely; adjust insulin as directed.  
+- Maintain adequate fluid intake.  
+- Use albuterol inhaler for wheezing or shortness of breath.  
+- Seek immediate medical attention for worsening shortness of breath, chest pain, fever >38.9 °C, or any signs of bleeding.  
+
+No information available for physical exam findings, detailed vital signs at this visit, or imaging results.

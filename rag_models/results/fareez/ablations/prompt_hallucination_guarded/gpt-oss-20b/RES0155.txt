@@ -1,0 +1,70 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:30:24
+Time: 3.78s
+Tokens: 12,226 in / 918 out
+============================================================
+
+Patient Information  
+Adela Tapia, female, date of birth 01 Jul 1914, presents to the clinic for evaluation of respiratory symptoms.
+
+Chief Complaint  
+The patient reports worsening shortness of breath, a productive cough, chest discomfort, and feeling feverish for the past five days.
+
+History of Present Illness  
+The patient has experienced progressive shortness of breath over the last five days that worsens with exertion but is not present at rest. She notes a daily cough that produces yellowish or greenish sputum, though the amount is minimal—roughly the size of a small palm each time. The cough is wet rather than dry. She denies hemoptysis, chest pain, or changes in the chest discomfort with breathing. There is no orthopnea or paroxysmal nocturnal dyspnea, and she reports no nighttime gasping. She feels feverish but has not taken a temperature, and she reports no chills or night sweats. Other constitutional symptoms are absent.
+
+Review of Systems  
+- Constitutional: feverish sensation, no chills, no night sweats.  
+- Respiratory: productive cough with yellow/green sputum, exertional shortness of breath, no wheezing or chest pain.  
+- Cardiovascular: denies palpitations or chest pain; reports no dizziness.  
+- Gastrointestinal: no nausea, vomiting, diarrhea, or constipation.  
+- Genitourinary: no urinary symptoms.  
+- Neurologic: no headaches, no visual changes.  
+- Musculoskeletal: no reported fatigue beyond difficulty with exertion.  
+- Psychosocial: no reported depression or anxiety; PHQ-2 score 2 noted in the chart, but not discussed in this visit.
+
+Past Medical History  
+The patient has a known diagnosis of chronic obstructive pulmonary disease (COPD) for which she takes a daily inhaled corticosteroid/long‑acting bronchodilator (Symbicort) and an as‑needed short‑acting bronchodilator (Ventolin). She also has a history of hypertension, managed with an ACE inhibitor, and gastroesophageal reflux disease, for which she takes antacids as needed.
+
+Medications  
+- Ventolin inhaler (albuterol) – used as needed, typically 2–3 puffs per week; recently took three‑four puffs this morning.  
+- Symbicort inhaler – taken daily.  
+- ACE inhibitor – ongoing therapy.  
+- Antacid (Tums) – used when reflux symptoms worsen.
+
+Allergies  
+The patient reports no known drug allergies.
+
+Social History  
+The patient is a current smoker, consuming approximately one pack of cigarettes per day for 30–40 years. She drinks wine on weekends. She works full‑time at a grocery store and lives with her daughter in an apartment.
+
+Family History  
+No family history of lung or heart disease reported.
+
+Physical Examination  
+Not assessed during this encounter.
+
+Labs  
+Not assessed during this encounter.
+
+Imaging  
+Not assessed during this encounter.
+
+Assessment  
+The clinical presentation is most consistent with an acute exacerbation of COPD, likely triggered by an infection (viral or bacterial). Differential diagnosis includes community‑acquired pneumonia, given the productive cough, feverish sensation, and shortness of breath. COVID‑19 infection remains a consideration due to overlapping symptoms.
+
+Plan  
+- Obtain vital signs (temperature, blood pressure, heart rate, respiratory rate, SpO₂) during the physical exam.  
+- Perform a focused chest examination.  
+- Order a chest X‑ray to evaluate for infiltrates or consolidation.  
+- Request a complete blood count and basic metabolic panel to assess for infection and metabolic status.  
+- Obtain a COVID‑19 PCR test.  
+- If imaging or laboratory results support bacterial pneumonia, initiate empiric antibiotic therapy per hospital protocol.  
+- Continue current COPD therapy (Symbicort daily, Ventolin as needed). Consider nebulized bronchodilator therapy if symptoms persist.  
+- Discuss smoking cessation resources and reinforce inhaler technique.  
+- Provide discharge instructions on medication use, signs of worsening condition, and when to seek emergent care.  
+- Schedule a follow‑up visit or arrange for outpatient monitoring based on test results and clinical improvement.
+
+This summary reflects information directly provided in the patient–provider interview and the patient’s electronic health record extract, without extrapolation or assumption.

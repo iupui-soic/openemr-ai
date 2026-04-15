@@ -1,0 +1,61 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:27:06
+Time: 3.14s
+Tokens: 13,718 in / 1,011 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male, presented to the clinic accompanied by his mother.
+
+Chief Complaint  
+“Stomach ache, vomiting, diarrhea, and fever for the past few days.”
+
+History of Present Illness  
+The mother reports that the child’s abdominal discomfort began approximately three days ago. Two days ago he started vomiting, initially after lunch, and has vomited a total of six times to date. The first episode produced partially digested food; subsequent episodes have been described as yellow‑ish material without obvious bile or blood. He also developed watery diarrhea about two days ago, with an estimated six to seven loose stools in the most recent 24‑hour period, again without blood or discoloration. Yesterday he measured a temperature of 38.3 °C (101 °F) and experienced chills, prompting the use of multiple blankets. Since the onset of fever, he has been unusually quiet, irritable at first and then largely sleeping throughout the day. He denies any headache, ear or eye pain, nasal discharge, sore throat, cough, shortness of breath, wheezing, rash, joint or muscle aches, urinary symptoms, or chest pain. He has had no recent changes in diet, no known exposure to sick contacts aside from a recent return to school, no travel, and no known food intolerances. He has not taken any medication for these symptoms.
+
+Review of Systems  
+- Constitutional: Fever (38.3 °C) with chills; irritability early in the course, now lethargic. No weight loss reported.  
+- Gastrointestinal: Abdominal pain (central, non‑localizable, non‑tender on palpation by caregiver), vomiting (six episodes, yellowish, no blood or bile), watery diarrhea (six‑seven episodes in past day, no blood). No nausea reported separately.  
+- Respiratory: No cough, shortness of breath, wheezing, or sore throat.  
+- ENT: No ear pain, eye pain, or redness. No nasal discharge.  
+- Dermatologic: No rash or skin changes.  
+- Musculoskeletal: No joint or muscle pain.  
+- Genitourinary: No dysuria or increased frequency.  
+- Neurologic: No headache.  
+
+Past Medical History  
+The mother states the child has no prior medical diagnoses, hospitalizations, surgeries, or chronic illnesses.
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Medications  
+No current home medications.
+
+Social History  
+The child resides with his mother, father, and two older siblings (ages 7 and 10). He attends school, having returned the previous week. No recent travel. No exposure to tobacco smoke, alcohol, or illicit substances in the household. No pets. No recent household illness. The mother reports no concerns for safety, abuse, or neglect.
+
+Family History  
+No family history of heart disease, lung disease, celiac disease, Crohn’s disease, or other gastrointestinal disorders. A sibling is being evaluated for possible asthma but has not received a diagnosis.
+
+Objective  
+Vital signs: Not assessed during this encounter.  
+Physical examination: Not assessed during this encounter.  
+Laboratory studies: No laboratory results obtained at the time of this visit.  
+
+Assessment  
+1. Acute viral gastroenteritis – presenting with abdominal pain, vomiting, watery diarrhea, and low‑grade fever.  
+2. Rule‑out COVID‑19 infection – given the overlapping gastrointestinal presentation.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing.  
+- Order basic laboratory work including a complete blood count, basic metabolic panel, and serum electrolytes to evaluate for dehydration and electrolyte disturbance.  
+- Encourage oral rehydration with age‑appropriate oral rehydration solution; advise frequent small sips. If oral intake remains poor or vomiting persists, consider referral for intravenous fluids.  
+- Antipyretic (e.g., acetaminophen) as needed for fever, dosing per weight as per standard pediatric guidelines.  
+- Monitor stool frequency, character, and any emergence of blood or worsening pain.  
+- Advise the mother to seek urgent care if the child develops persistent vomiting, inability to retain fluids, signs of dehydration (dry mucous membranes, decreased urine output, tachycardia), worsening abdominal pain, blood in vomitus or stool, or a temperature > 39 °C persisting beyond 24 hours.  
+- Follow‑up: Telephone check‑in tomorrow to review COVID test result and symptom progression; in‑person pediatric follow‑up in 48‑72 hours or sooner if condition worsens.  
+
+The mother was given reassurance that most viral gastroenteritis cases are self‑limited and that the outlined plan addresses hydration, symptom control, and evaluation for COVID‑19.

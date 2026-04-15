@@ -1,0 +1,61 @@
+Model: openai/gpt-oss-20b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:36:29
+Time: 1.79s
+Tokens: 8,134 in / 736 out
+============================================================
+
+Patient Information  
+Name: Aaron Dooley (patient ID 45)  
+Age: 1 year (child of the adult patient)  
+Gender: Male  
+Date of Visit: [Date of encounter]  
+
+Chief Complaint  
+The mother presents with a one‑day history of fever, dry cough, and clear nasal discharge in her 1‑year‑old son.  
+
+History of Present Illness  
+The mother reports that her son began with a dry cough and clear runny nose approximately 24 hours ago. About 12 hours later, she noted a fever of 38.8°C, chills, and a mild sore throat. The cough remains dry, with no sputum or blood noted. No shortness of breath, wheezing, chest pain, or ear pain has been observed. The child has not had vomiting, diarrhea, or urinary changes. Appetite has decreased somewhat, but the child is still eating solid foods in smaller portions. The mother reports no weight loss. The symptoms have persisted for the last two days.  
+
+Review of Systems  
+Constitutional: fever (38.8°C), chills, mild myalgias.  
+Respiratory: dry cough, clear nasal discharge, no wheezing, no shortness of breath.  
+Gastrointestinal: mild sore throat, decreased appetite, no vomiting, no diarrhea.  
+Cardiovascular: no chest pain, no palpitations.  
+Neurologic: no dizziness, no fainting, no numbness or tingling.  
+Dermatologic: no rash.  
+Other systems reviewed and negative.  
+
+Past Medical History  
+No chronic medical conditions. The child is reported to be healthy and has had mild colds occasionally. No hospitalizations or surgeries. No known immunodeficiency.  
+
+Medications  
+No current medications are being taken by the child.  
+
+Allergies  
+No known drug or environmental allergies reported for the child.  
+
+Social History  
+The child lives with both parents and two siblings. No smoking is present in the household. The parents report no recent travel, and no known exposure to ill individuals.  
+
+Family History  
+No significant family history of respiratory or cardiac disease. The adult patient's grandfather had hypertension and hypercholesterolemia; otherwise no relevant family history.  
+
+Physical Examination  
+Vital signs were not formally recorded during this visit. Temperature was noted by the mother at 38.8°C. No physical examination findings were documented.  
+
+Laboratory and Imaging  
+No laboratory tests or imaging studies were ordered or performed at this time.  
+
+Assessment  
+Likely viral upper respiratory infection (common cold). Differential includes influenza and COVID‑19 given overlap of symptoms.  
+
+Plan  
+1. Obtain a nasopharyngeal COVID‑19 swab to rule out SARS‑CoV‑2 infection. Results will be available within 24–48 hours.  
+2. Supportive care: encourage oral hydration, provide age‑appropriate nutrition, and monitor for worsening symptoms.  
+3. Monitor for red‑flag signs: increased respiratory distress, high fever (>39.5°C), inability to feed, lethargy, or persistent vomiting. If any of these occur, seek emergency care immediately.  
+4. Follow‑up: Contact the clinic within 24–48 hours for results of the COVID‑19 test or sooner if the child’s condition deteriorates.  
+
+Disposition  
+The child remains well‑appearing. No immediate disposition instructions beyond the above plan. The mother was advised to keep the child home, avoid contact with others until the test results are known, and to keep monitoring symptoms closely.

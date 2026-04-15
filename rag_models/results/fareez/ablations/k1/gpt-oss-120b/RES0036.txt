@@ -1,0 +1,143 @@
+Model: openai/gpt-oss-120b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:21:37
+Time: 6.38s
+Tokens: 10,263 in / 2,320 out
+============================================================
+
+Patient Information  
+Name: Adrianna Camelia Wuckert  
+Date of Birth: 1919-02-25 (Age: 107 years)  
+Sex: Female  
+Address: 609 Bartell Gate, Marshfield, Massachusetts 02050  
+Medical Record Number: 1637  
+
+Chief Complaint  
+The patient presents with progressive shortness of breath and cough of six days’ duration.
+
+History of Present Illness  
+Six days ago the patient began experiencing sudden onset dyspnea that has become increasingly severe. She reports that the shortness of breath is constant, worsens with exertion such as walking, and is associated with a productive cough that yields a “rusty‑colored” sputum a few times per day. The cough began at the same time as the dyspnea and has been persistent. She notes accompanying wheezing that is mild but audible. The patient also describes sharp pleuritic chest pain that is aggravated by coughing and rates the pain as a 7/10; the pain improves when coughing subsides. She feels generally feverish and reports chills and a sensation of being cold, though she has not measured a temperature. There is no reported hemoptysis, but the sputum’s rusty hue raises concern for possible blood‑tinged expectoration. No nocturnal variation in symptoms has been noted. The patient has taken acetaminophen (Tylenol) with some subjective reduction in feeling chilly. She denies any recent travel, known sick contacts, or prior episodes of similar respiratory illness.
+
+Review of Systems  
+Constitutional: Positive for chills, subjective fever, and fatigue; negative for weight loss, night sweats (aside from feeling chilly at night), dizziness, or syncope.  
+Respiratory: Positive for dyspnea on exertion, productive cough with rusty sputum, wheezing, and pleuritic chest pain; negative for hemoptysis, dyspnea at rest, or orthopnea.  
+Cardiovascular: Positive for known ischemic heart disease; negative for palpitations, chest pressure, or peripheral edema.  
+Gastrointestinal: Denies nausea, vomiting, abdominal pain, diarrhea, constipation, or changes in appetite.  
+Genitourinary: Denies dysuria, hematuria, or change in urinary frequency.  
+Neurologic: No headache, confusion, or focal deficits.  
+Musculoskeletal: No myalgias or joint pain.  
+Skin: No rashes.  
+Psychiatric: No anxiety or depression reported at this visit.  
+Other: No recent upper respiratory infection aside from a mild runny nose a few days before symptom onset.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Past Medical History  
+- Chronic sinusitis  
+- Essential hypertension  
+- Ischemic heart disease  
+- Obesity (BMI >30)  
+- Type 2 diabetes mellitus with diabetic kidney disease (chronic kidney disease stages 1‑4) and microalbuminuria/proteinuria  
+- Hyperlipidemia  
+- Chronic kidney disease (stage 4) pending renal transplantation (history of renal transplant)  
+- Anemia  
+- Stroke (history)  
+- Colon polyp  
+- Familial early‑onset Alzheimer disease (family history)  
+
+Surgical History  
+The patient reports no prior surgeries.
+
+Social History  
+The patient works in a crowded environment with a malfunctioning air‑conditioning system, high humidity, and possible dust/mold exposure. She lives in a poorly maintained small apartment with possible mold and dust exposure. She has kept pet birds for approximately three years without prior respiratory issues. She smokes approximately 10 cigarettes per day, a habit that began at age 20. She uses cannabis intermittently, estimating roughly 5 mg per week. Alcohol consumption is modest, roughly five drinks per week. She reports minimal regular exercise and a diet dominated by fast food and junk food. She denies any recent illicit drug use beyond the described cannabis.
+
+Family History  
+No reported family history of lung disease, coronary artery disease, or malignancy.
+
+Current Medications (home)  
+- Alteplase 100 mg injection (active)  
+- Amoxicillin 250 mg/Clavulanate 125 mg oral tablet (active)  
+- Tacrolimus extended‑release 1 mg oral tablet (active)  
+- Tacrolimus 5 mg/mL injection (active)  
+- Sodium fluoride oral gel (active)  
+- Epoetin alfa injection (active)  
+- Hydrochlorothiazide 25 mg oral tablet (active)  
+- Lisinopril 10 mg oral tablet (active)  
+- Simvastatin 10 mg oral tablet (active)  
+- Nitroglycerin 0.4 mg actuat mucosal spray (active)  
+
+Objective  
+
+Vital Signs  
+No vital sign data were recorded at this encounter.
+
+Physical Examination  
+General: No specific findings documented.  
+Respiratory: Patient reports wheezing; no detailed lung auscultation findings documented.  
+Cardiovascular: No documented findings.  
+Other systems: No documented examination findings.
+
+Laboratory Data (most recent)  
+- Creatinine: 2.72 mg/dL (elevated, consistent with chronic kidney disease)  
+- Estimated GFR: 74 mL/min/1.73 m²  
+- Sodium: 142.95 mmol/L (within normal limits)  
+- Potassium: 4.7 mmol/L (within normal limits)  
+- Chloride: 107.38 mmol/L (within normal limits)  
+- Calcium: 9.33 mg/dL (within normal limits)  
+- Urea nitrogen: 11.83 mg/dL (within normal limits)  
+- ALT: 34.2 U/L (within normal limits)  
+- Total bilirubin: 0.45 mg/dL (within normal limits)  
+- Albumin: 4.49 g/dL (within normal limits)  
+- Lipid panel: Total cholesterol 150.7 mg/dL, HDL 49.2 mg/dL, LDL 75.7 mg/dL, Triglycerides 128.8 mg/dL  
+- PHQ‑2 score: 2 (positive screen)  
+- DAST‑10 total score: 1 (low risk for substance use disorder)  
+
+Imaging  
+No imaging studies have been performed or documented at this visit.
+
+Assessment  
+1. **Pneumonia, likely bacterial** – New onset of productive cough with rusty sputum, feverish feeling, pleuritic chest pain, wheezing, and progressive dyspnea in a high‑risk host (chronic lung and cardiac disease, smoking, possible environmental exposures).  
+2. **Chronic obstructive pulmonary disease (COPD) exacerbation** – History of long‑term tobacco use and wheezing; acute worsening may be superimposed on chronic airway disease.  
+3. **Chronic kidney disease, stage 4** – Baseline elevated creatinine; renal function to be monitored with any nephrotoxic therapy.  
+4. **Type 2 diabetes mellitus** – Current therapy not detailed; glycemic control to be considered in management.  
+5. **Hypertension, ischemic heart disease** – Continue current antihypertensive and anti‑anginal regimen.  
+
+Plan  
+
+Investigations  
+- Obtain a complete blood count with differential and basic metabolic panel to assess for leukocytosis, anemia, and electrolyte status.  
+- Order a chest radiograph (PA and lateral) to evaluate for infiltrates consistent with pneumonia and to assess for possible COPD changes.  
+- Sputum Gram stain and culture, including aerobic, anaerobic, and fungal studies; consider sputum acid‑fast bacilli smear given rust‑colored sputum, though TB risk is low.  
+- Blood cultures x2 if febrile.  
+- Consider viral respiratory panel (influenza, RSV, COVID‑19) given recent upper‑respiratory symptoms.  
+- Repeat renal function and drug levels (tacrolimus) prior to initiating any potentially nephrotoxic agents.
+
+Therapeutic Interventions  
+- Initiate empiric antibiotic therapy targeting typical community‑acquired pneumonia pathogens: amoxicillin‑clavulanate 875 mg/125 mg PO twice daily for 7‑10 days, adjusting for renal function as needed.  
+- Begin a short course of systemic corticosteroids (e.g., prednisone 40 mg PO daily for 5 days) to address possible COPD exacerbation, with taper as clinically indicated.  
+- Provide a short‑acting bronchodilator (e.g., albuterol inhaler, 2 puffs every 4‑6 hours as needed for wheeze).  
+- Continue home antihypertensive and cardiac medications (lisinopril, hydrochlorothiazide, nitroglycerin) with close blood pressure monitoring.  
+- Encourage smoking cessation; offer nicotine replacement therapy and referral to cessation counseling.  
+- Counsel on reducing exposure to indoor mold, dust, and bird droppings; recommend environmental remediation if feasible.  
+- Advise increased fluid intake and rest.  
+- Continue acetaminophen for fever/chills as needed, respecting renal dosing limits.
+
+Disposition and Follow‑up  
+- Patient to remain in the outpatient setting with close monitoring; instruct to seek emergency care for worsening dyspnea, chest pain, high fever, or any new hemoptysis.  
+- Follow‑up visit with primary care physician in 48‑72 hours to review chest X‑ray results, laboratory data, and clinical response to antibiotics.  
+- Arrange pulmonary follow‑up within one week for evaluation of COPD component and spirometry if indicated.  
+- Nephrology to be alerted regarding any adjustments to tacrolimus or other nephrotoxic medications.  
+
+Discharge Instructions  
+- Take prescribed antibiotics exactly as directed; complete the full course even if symptoms improve.  
+- Use albuterol inhaler as needed for wheezing; do not exceed prescribed doses.  
+- Monitor temperature twice daily; record any fever ≥100.4 °F (38 °C).  
+- Maintain adequate hydration; limit intake of salty or processed foods given hypertension.  
+- Avoid exposure to dust, mold, and bird droppings; keep living area well ventilated.  
+- Refrain from smoking; consider nicotine patch or gum.  
+- Limit alcohol intake to ≤2 drinks per day.  
+- Seek urgent care if chest pain becomes persistent, radiates, or is associated with diaphoresis, or if shortness of breath becomes severe at rest.  
+
+No information available for several sections (vital signs at presentation, detailed physical exam findings, imaging results).

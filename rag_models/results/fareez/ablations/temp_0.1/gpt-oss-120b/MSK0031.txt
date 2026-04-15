@@ -1,0 +1,120 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 04:06:01
+Time: 6.07s
+Tokens: 10,422 in / 1,887 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: September 28, 1931 (Age 94)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+Medical Record Number: 3055  
+
+Chief Complaint  
+Right hip pain after a fall down stairs two hours ago.
+
+History of Present Illness  
+Mr. Turner was brought to the emergency department after slipping on the last few steps of a staircase approximately two hours prior to arrival. He reports that he missed a step, fell forward onto his right side, and landed directly on his right hip. He denies any loss of consciousness, dizziness preceding the fall, or striking his head. Immediately after the fall he was unable to bear weight on the right lower extremity. He describes the pain as “excruciating,” rating it a 10 out of 10. The pain is sharp when any weight is placed on the hip and achy when the hip is at rest. He notes swelling, mild redness, and bruising over the right groin and lateral hip region. The right hip appears slightly externally rotated compared with the left. He is unable to perform hip flexion, extension, abduction, or adduction without severe pain. He reports mild dizziness after the fall, which he attributes to the pain. He denies headache, visual changes, numbness, tingling, weakness, or any other neurologic symptoms. He has no prior history of falls or similar hip pain.
+
+Review of Systems  
+Constitutional: No fever, chills, recent weight loss, or night sweats.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or changes in urine output.  
+Musculoskeletal: Acute right hip pain with swelling and bruising; no other joint pain or muscle aches.  
+Neurologic: No headache, dizziness (except mild post‑fall), syncope, or focal neurologic deficits.  
+Skin: Mild redness and bruising over right hip; no rashes.  
+Psychiatric: No depression, anxiety, or suicidal ideation reported.  
+
+Past Medical History  
+- Essential hypertension  
+- Osteoarthritis (hand)  
+- Chronic kidney disease stage 3 (historical)  
+- History of renal transplant (historical)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Anemia (historical)  
+- Other chronic conditions listed in the record (e.g., prior seizures, gout) are not currently active per patient report.  
+
+Surgical History  
+- Prior coronary artery bypass grafting (date not specified).  
+- No prior orthopedic surgeries reported.  
+
+Social History  
+The patient lives in a small apartment with his husband. He does not smoke and has never smoked. He consumes alcohol occasionally, approximately one glass of wine every other day. He does not use recreational drugs. He reports limited outdoor activity and no regular exercise program. He has not traveled recently and has not been exposed to anyone known to be ill.  
+
+Family History  
+Father died of myocardial infarction in his 60s. Mother had a history of non‑melanoma skin cancer treated with topical therapy. No other significant familial cardiac, oncologic, or metabolic diseases reported.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications (per patient report)  
+- Ramipril (dose not specified) for hypertension  
+- Vitamin D supplement  
+- Calcium supplement  
+- Multivitamin  
+
+(Other chronic medications listed in the electronic record such as hydrochlorothiazide, amlodipine, metoprolol, nitroglycerin, and immunosuppressants are not confirmed as active by the patient at this visit and therefore are not included in the current medication list.)
+
+Vital Signs  
+Heart Rate: 74 beats per minute  
+Respiratory Rate: 14 breaths per minute  
+Temperature: Not recorded  
+Blood Pressure: Not recorded  
+SpO₂: Not recorded  
+Height: 173.7 cm  
+Weight: Not recorded  
+Body Mass Index: 28.44 (overweight)  
+
+Physical Examination  
+General: Alert, oriented, in acute distress due to right hip pain.  
+HEENT: No head injury, no scalp lacerations, pupils equal and reactive.  
+Neck: No tenderness.  
+Cardiovascular: Regular rate and rhythm, no murmurs.  
+Respiratory: Clear to auscultation bilaterally, no wheezes.  
+Abdomen: Soft, non‑tender, no organomegaly.  
+Extremities: Right hip shows mild swelling, slight erythema, and bruising over the lateral aspect and groin. The right side feels warmer to the touch compared with the left. The right lower extremity appears slightly externally rotated. The patient is unable to bear weight on the right side and demonstrates marked limitation of hip range of motion in all planes due to pain. No obvious deformity of the femur or pelvis. No distal neurovascular deficits noted. Left lower extremity normal.  
+Skin: No open wounds.  
+
+Laboratory Data (most recent)  
+- Hemoglobin: 16.7 g/dL (within normal limits)  
+- Hematocrit: Not provided  
+- White blood cell count: 10.1 ×10³/µL (within normal limits)  
+- Platelets: 199 ×10³/µL (within normal limits)  
+- MCV: 93.4 fL (normocytic)  
+- MCHC: 33.3 g/dL (normal)  
+- Electrolytes: Sodium 138 mmol/L, Chloride 111 mmol/L (both normal)  
+- Creatinine: 1.01 mg/dL (baseline for chronic kidney disease)  
+- Glucose: 74 mg/dL (fasting range)  
+- Urinalysis: No leukocyte esterase, nitrites, ketones, or glucose; pH 7.9.  
+
+Imaging  
+No imaging studies have been completed at the time of this documentation. A plain radiograph of the pelvis and right hip is pending to confirm the suspected fracture.
+
+Assessment  
+1. Right hip fracture (suspected) secondary to mechanical fall – high clinical suspicion based on mechanism, inability to bear weight, localized pain, swelling, and external rotation.  
+2. Essential hypertension, currently on ramipril.  
+3. Osteoarthritis of the hand.  
+4. Chronic kidney disease stage 3 (baseline).  
+5. Ischemic heart disease with prior CABG.  
+6. Anemia (stable).  
+
+Plan  
+- Orthopedic Consultation: Immediate referral to orthopedic surgery for definitive evaluation and operative planning (possible internal fixation versus hemi‑ or total hip arthroplasty based on fracture pattern).  
+- Imaging: Obtain an anteroposterior pelvis and lateral hip X‑ray, followed by CT of the hip if radiographs are inconclusive.  
+- Pain Management: Initiate oral ibuprofen 600 mg every 6 hours with food, provided renal function remains stable, and acetaminophen 650 mg every 6 hours as needed. If pain remains uncontrolled, consider short‑term opioid analgesia (e.g., oxycodone/acetaminophen) with close monitoring.  
+- Weight‑bearing Precautions: Strict non‑weight‑bearing on the right lower extremity until orthopedic evaluation is completed. Use of a walker or wheelchair for mobility.  
+- VTE Prophylaxis: Begin low‑dose low‑molecular‑weight heparin (e.g., enoxaparin 40 mg subcutaneously daily) unless contraindicated, given age and anticipated immobilization.  
+- Continue home antihypertensive therapy (ramipril) and vitamin supplementation. Hold any non‑essential nephrotoxic agents.  
+- Monitor for signs of neurovascular compromise, increasing swelling, or systemic symptoms (fever, tachycardia).  
+- Discharge Instructions: Educate patient and caregiver on strict non‑weight‑bearing, use of assistive devices, pain medication schedule, and signs that require urgent return (e.g., worsening pain, numbness, fever).  
+- Follow‑up: Orthopedic surgery appointment within 24‑48 hours. Primary care follow‑up in 1 week to reassess blood pressure, renal function, and overall recovery.  
+
+Disposition  
+Patient remains in the emergency department for pain control and pending orthopedic evaluation. No immediate surgical intervention performed at this time.  
+
+Prepared by: _______________________   Date: 14 April 2026   (Electronic medical record)

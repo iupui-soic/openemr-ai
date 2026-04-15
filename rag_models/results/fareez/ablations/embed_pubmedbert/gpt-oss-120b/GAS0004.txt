@@ -1,0 +1,111 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:53:26
+Time: 5.07s
+Tokens: 11,612 in / 1,501 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Date of Birth: 09/24/1920 (Age 105 years)  
+Sex: Female  
+Address: 1056 Reichert Spur Suite 87, Chelsea, Massachusetts 02151  
+
+Chief Complaint  
+Acute onset of watery diarrhea for the past three to four days, accompanied by abdominal cramping, nausea, and two episodes of vomiting.
+
+History of Present Illness  
+Alane reports that the diarrhea began approximately three to four days ago and has been continuous and profuse, occurring roughly once per hour. The stools are described as loose, brown, and watery without any noted change in color or the presence of visible blood. She began to experience intermittent lower abdominal cramping yesterday, which she describes as mild to moderate and intermittent. Associated symptoms include nausea that is intermittent and two episodes of non‑bloody, watery vomiting that occurred yesterday. She denies any fever, chills, or rigors but admits to feeling unusually tired. She has been drinking a large amount of water to prevent dehydration but has reduced oral intake because of the cramping and loss of appetite. She reports no urinary symptoms, no rash, and no recent weight change. There is no recent travel history. Five days before the onset of symptoms she ate rice with chicken Manchurian at a new Chinese restaurant; she was accompanied by a friend who has not reported similar symptoms. She has not taken any over‑the‑counter medications for relief.
+
+Review of Systems  
+
+- Constitutional: Fatigue/tiredness present; no fever, chills, or night sweats.  
+- Gastrointestinal: Profuse watery diarrhea, abdominal cramping, nausea, vomiting (2 episodes); no hematochezia, melena, dysphagia, or change in appetite other than reduced intake since onset.  
+- Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+- Respiratory: History of asthma, currently stable; no cough, dyspnea, or wheezing reported today.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Dermatologic: No rash or skin changes.  
+- Neurologic: No headache or neurologic deficits.  
+- Endocrine/Metabolic: No polydipsia, polyuria, or recent weight change reported.  
+
+Past Medical History  
+- Asthma (current)  
+
+Surgical History  
+- Extraction of wisdom teeth (no hospitalization required).  
+
+Social History  
+Alane is a university student living with two roommates. She reports occasional alcohol consumption (approximately one to two drinks on weekends). She does not smoke tobacco or use recreational drugs. No regular exercise routine was disclosed.  
+
+Family History  
+- Brother: Appendicitis in childhood.  
+- Mother: History of hysterectomy.  
+No other significant familial gastrointestinal or chronic illnesses reported.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Current Medications  
+- Asthma inhaler (short‑acting bronchodilator/puffer) as needed.  
+
+Objective  
+
+Vital Signs  
+- No current vital signs documented at the time of this encounter.  
+
+Physical Examination  
+- No physical exam findings documented.  
+
+Laboratory Data (most recent values available in the electronic record)  
+- Hemoglobin: 15.7 g/dL (within normal limits)  
+- Hematocrit: 39.3 % (within normal limits)  
+- White blood cell count: 3.96 ×10³/µL (slightly low)  
+- Red blood cell count: 4.29 ×10⁶/µL (normal)  
+- Platelet distribution width: 311 fL (within reference range)  
+- Electrolytes: Sodium 143 mmol/L, Chloride 108 mmol/L, Carbon dioxide 22.4 mmol/L (all within normal limits)  
+- Glucose (serum): 92 mg/dL (normal)  
+- Urinalysis: pH 4.86, specific gravity 1.019, negative for nitrites, leukocytes, ketones, glucose, protein, and blood.  
+
+Assessment  
+
+1. **Acute infectious diarrhea** – likely food‑borne given recent exposure to a new restaurant; presentation is consistent with a viral or bacterial gastroenteritis. The absence of blood, high fever, and severe leukocytosis makes invasive bacterial infection less likely at this time.  
+2. **Dehydration risk** – frequent watery stools and vomiting increase the likelihood of volume depletion, though the patient reports adequate oral fluid intake.  
+3. **Asthma, stable** – no acute exacerbation noted.  
+
+Plan  
+
+*General Management*  
+- Encourage continued oral rehydration with water and oral rehydration solutions (ORS) to replace fluid and electrolytes.  
+- Advise a bland diet (e.g., bananas, rice, applesauce, toast) while symptoms persist; avoid dairy, caffeine, fatty, spicy, and high‑fiber foods until diarrhea resolves.  
+- Recommend small, frequent meals as tolerated.
+
+*Pharmacologic*  
+- If nausea persists, consider an anti‑emetic such as ondansetron 4 mg PO every 8 hours as needed.  
+- If diarrhea remains severe and no blood is present, a trial of loperamide 2 mg PO after each loose stool (maximum 8 mg per day) may be used, with discontinuation if fever, blood, or worsening abdominal pain develops.  
+- No antibiotics are indicated at this time without evidence of bacterial infection or systemic signs.
+
+*Monitoring*  
+- Instruct the patient to monitor for signs of dehydration (dizziness, decreased urine output, dry mouth) and for any new fever, blood in stool, or worsening abdominal pain.  
+- Advise to seek urgent care if she experiences any of the above, or if she is unable to maintain oral intake for more than 24 hours.
+
+*Follow‑up*  
+- Telephone or office follow‑up in 48–72 hours to reassess symptom progression.  
+- If diarrhea persists beyond 7 days, or if there is any concern for bacterial etiology, obtain stool studies (culture, ova and parasites, C. diff toxin) and consider a targeted antimicrobial based on results.  
+
+*Patient Education*  
+- Review proper hand hygiene and safe food handling practices.  
+- Discuss the typical course of viral gastroenteritis (usually self‑limited within 3–5 days).  
+- Reinforce the importance of maintaining hydration and electrolyte balance.  
+
+*Asthma Management*  
+- Continue her rescue inhaler as needed; ensure she has an adequate supply of her inhaler.  
+
+*Return Precautions*  
+- Fever ≥100.4 °F (38 °C)  
+- Presence of blood or pus in stool  
+- Severe abdominal pain or tenderness  
+- Inability to tolerate oral fluids for >24 hours  
+- Dizziness or syncope suggestive of dehydration  
+
+The patient verbalized understanding of the plan and agreed to the recommendations.

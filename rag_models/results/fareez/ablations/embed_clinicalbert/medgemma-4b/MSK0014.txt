@@ -1,0 +1,38 @@
+Model: google/medgemma-4b-it
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-04-14 05:59:27
+Time: 27.91s
+Tokens: 10,291 in / 475 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+Adalberto Gerlach, a 72-year-old male, presented to the clinic today with a chief complaint of right knee pain and swelling. He reports a history of osteoarthritis, hypertension, heart attack, and heart failure. He is currently taking furosemide and ramipril, and has a penicillin allergy. He is also overweight and lives with his wife and daughter in a small townhouse. He is retired due to his medical history.
+
+Chief Complaint:
+The patient's primary complaint is right knee pain and swelling that began five days prior to the visit.
+
+History of Present Illness (HPI):
+The patient reports that the pain and swelling started approximately five days ago, initially thought to be related to his usual arthritis. However, the swelling and pain have become more pronounced than usual. The pain is described as stabbing and is most intense when moving the knee. The pain radiates only to the knee itself. The patient reports that the pain is worse at rest, and he finds relief by resting the knee. He takes Advil for pain relief, which provides some temporary relief. The morning stiffness is more significant than his usual arthritis-related stiffness. He denies any trauma or injury to the knee. He had a steroid injection to the same knee a week prior to the visit. He denies fevers or chills.
+
+Past Medical History (PMH):
+The patient has a significant past medical history including osteoarthritis of both knees and hips, hypertension, a history of heart attack, and heart failure. He also has a penicillin allergy.
+
+Medications:
+The patient is currently taking furosemide, ramipril, and over-the-counter Advil.
+
+Social History:
+The patient drinks alcohol (3-4 beers per night) and used to smoke cigarettes for over 30 years, smoking 1-2 packs per day.
+
+Family History:
+The patient's family history includes heart disease in his father and brother.
+
+Physical Exam:
+The physical exam revealed a red, swollen, and warm right knee. The patient reported pain with knee movement. He had a limp when standing.
+
+Assessment:
+The patient's presentation is concerning for possible gout or septic arthritis.
+
+Plan:
+The plan is to perform a knee aspiration and send the fluid for analysis to rule out gout and septic arthritis.

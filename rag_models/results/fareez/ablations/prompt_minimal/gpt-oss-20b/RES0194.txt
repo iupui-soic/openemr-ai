@@ -1,0 +1,36 @@
+Model: openai/gpt-oss-20b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:28:36
+Time: 2.08s
+Tokens: 6,444 in / 716 out
+============================================================
+
+**Patient Information:**  
+Abbey Shala Kunde, 38 years old, female, employed in a pharmacy company, currently on sick leave. She lives in a Boston townhouse with her wife and reports no recent travel. She is a non‑smoker, drinks alcohol socially (3‑4 beers per week), occasionally uses CBD oil, and takes no prescription medications apart from a multivitamin and vitamin D. She has no known drug allergies except for peanuts.  
+
+**Subjective:**  
+Mrs. Kunde presents with a 3‑day history of a dry cough that began first, followed by diffuse myalgias, intermittent frontal headaches described as a band‑like pressure, and subjective low‑grade feverish feelings. She denies sputum, hemoptysis, chest pain, dyspnea, sore throat, nasal congestion, loss of taste or smell, and recent chills. She reports one day of loose stools without blood and no change in bowel habits beyond that. She has tried acetaminophen and ibuprofen for the headache with only transient relief. No recent strenuous activity or injury.  
+
+Her review of systems is largely unremarkable: no rash, no weight loss, no significant appetite changes beyond mild loss of appetite, no recent vomiting, and no significant changes in sleep or activity.  
+
+Past medical history is largely unremarkable; she has no chronic disease requiring medication at present, and no prior surgical complications.  
+
+**Objective:**  
+Vital signs were not captured during the encounter; the patient reports feeling “hot” but did not measure temperature. Physical exam findings were not documented. Laboratory work‑up is pending a COVID‑19 rapid antigen test.  
+
+**Assessment:**  
+1. Acute viral upper respiratory infection (likely COVID‑19 pending test).  
+2. Mild viral gastroenteritis (diarrhea).  
+No evidence of bacterial infection, pneumonia, or other complications at this time.  
+
+**Plan:**  
+1. **Testing** – Perform a COVID‑19 rapid antigen or PCR test today; advise the patient to self‑isolate until results return and symptoms resolve.  
+2. **Symptom Management** – Continue acetaminophen or ibuprofen for headache and muscle aches as needed, ensuring not to exceed recommended dosages.  Offer an OTC cough suppressant (e.g., dextromethorphan) if cough becomes bothersome.  
+3. **Hydration & Rest** – Encourage ample fluid intake, adequate rest, and a balanced diet.  
+4. **Monitoring** – Educate the patient to monitor for worsening symptoms such as new shortness of breath, chest pain, persistent high fever, or worsening diarrhea. If any of these occur, seek urgent care.  
+5. **Follow‑up** – If symptoms persist beyond 7 days or worsen, arrange a telehealth follow‑up. If the COVID‑19 test is positive, refer to local public‑health guidelines for isolation duration and potential repeat testing.  
+6. **Work & Social** – Remain on sick leave until symptom resolution and clearance per public‑health guidance.  
+7. **Documentation** – Record test results, symptom progression, and any additional interventions in the EMR.  
+
+The patient was reassured that her presentation is consistent with a common viral illness, which may include COVID‑19 but also other respiratory viruses. She understands the isolation period and the plan for symptom management, and she has no questions at this time.

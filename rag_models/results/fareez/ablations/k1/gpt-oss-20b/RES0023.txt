@@ -1,0 +1,86 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:32:08
+Time: 2.47s
+Tokens: 13,112 in / 1,187 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney  
+Date of Birth: 1915-12-05 (age per record)  
+Sex: Male  
+Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+The patient presents to the emergency department with a 5‑day history of a dry cough that has progressively worsened, now interfering with sleep.  
+
+History of Present Illness  
+Mr. Feeney reports a dry cough that began approximately five days ago. The cough has steadily increased in frequency and severity, occurring throughout the day and at night. He notes that the cough has become more irritating and has started to cause throat discomfort. He describes feeling febrile, describing a sensation of being "pretty hot" and sweaty, though he has not taken a temperature. He reports night sweats, with one episode at the end of the previous night during which his shirt was soaked. His sense of smell has been altered since this morning, but he denies changes in taste. No nausea, vomiting, chest pain, or shortness of breath was reported, aside from a mild throat ache associated with coughing. The patient denies any prior similar episodes in recent years, aside from a childhood flu episode.  
+
+Review of Systems  
+Constitutional: Reports feeling exhausted, hot, sweaty, and night sweats.  
+Respiratory: 5‑day dry cough, worsening, no sputum, sore throat, no dyspnea reported.  
+Cardiovascular: No chest pain other than mild throat discomfort; no palpitations.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Other: No headache, dizziness, or urinary symptoms reported.  
+
+Past Medical History  
+- Hypertension (controlled with Ramipril)  
+- Type 2 Diabetes Mellitus (controlled with Metformin)  
+- Obesity (BMI 31.5 per old record; current weight not documented)  
+- Hyperlipidemia  
+- Coronary artery disease history (CABG)  
+- Chronic kidney disease (stage 1‑2 per prior record)  
+- Gallbladder removal (cholecystectomy) ~10 years ago  
+- Other chronic conditions listed in the electronic record, including anemia, osteoarthritis, and chronic kidney disease progression, are noted but not acute.  
+
+Surgical History  
+- Cholecystectomy (~10 years ago)  
+
+Social History  
+- Lives with wife and two children.  
+- Works full‑time at a grocery store, interacting with customers daily.  
+- Non‑smoker.  
+- Occasional alcohol consumption (3–4 beers per week).  
+- No recreational drug use.  
+- No recent travel or known sick contacts; potential exposure at grocery store.  
+
+Family History  
+- Mother and brother with asthma.  
+- No documented family history of respiratory disease beyond asthma.  
+
+Current Medications (active per transcript)  
+- Ramipril 10 mg orally daily  
+- Metformin 500 mg orally twice daily (dose inferred from standard management)  
+- Vitamin D (dose unspecified)  
+
+Allergies  
+- No known drug allergies reported.  
+- Environmental allergy to pollen noted.  
+
+Physical Examination  
+No documentation of a physical exam was available in the transcript or the electronic record for this encounter.  
+
+Laboratory Results (selected values)  
+- Electrolytes: Sodium 143.9 mmol/L (norm), Potassium 4.74 mmol/L (norm), Chloride 103.8 mmol/L (norm), Bicarbonate 25.7 mmol/L (norm).  
+- Renal: Creatinine 0.39 mg/dL (low), Urea nitrogen 17.3 mg/dL (norm).  
+- Glucose: 70.6 mg/dL (low), later 85.8 mg/dL (norm).  
+- Liver enzymes: AST 36.8 U/L (slightly elevated).  
+- Urinalysis: Protein 280 mg/dL (elevated), leukocyte esterase and nitrites not reported.  
+
+Imaging  
+No radiographic imaging was performed or reported during this visit.  
+
+Assessment  
+The patient’s presentation is most consistent with an acute viral respiratory infection, likely acute bronchitis. The dry cough, sore throat, fever‑like symptoms, altered sense of smell, and night sweats support an upper respiratory tract viral etiology. There is no evidence of bacterial infection or lower respiratory involvement at this time.  
+
+Plan  
+1. Diagnostic testing: A nasopharyngeal swab for SARS‑CoV‑2 and influenza A/B will be obtained to rule out COVID‑19 and influenza.  
+2. Isolation: The patient and his household are instructed to self‑isolate for 14 days pending test results.  
+3. Symptomatic treatment: Advise acetaminophen for fever and pain as needed; recommend humidified air and adequate hydration.  
+4. Medication review: Continue current antihypertensive (Ramipril) and antidiabetic (Metformin) therapy. No new medications will be added at this time.  
+5. Follow‑up: Patient to re‑contact the clinic or ED if symptoms worsen, develop shortness of breath, chest pain, or if test results are positive for COVID‑19 or influenza.  
+6. Education: Discuss importance of hand hygiene, mask use, and monitoring for worsening respiratory symptoms.  
+
+No additional imaging or laboratory work is ordered at this time. The patient was discharged with a plan to return or call for further evaluation should his condition deteriorate.

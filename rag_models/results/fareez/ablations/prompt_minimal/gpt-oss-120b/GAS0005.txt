@@ -1,0 +1,182 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 04:24:13
+Time: 5.55s
+Tokens: 13,445 in / 2,156 out
+============================================================
+
+**Patient Information**  
+- **Name:** (Parent presenting on behalf of) 6‑year‑old male  
+- **Date of Birth:** Approx. 2018 (age 6)  
+- **Gender:** Male  
+- **Accompanying Adult:** Mother (primary caregiver)  
+- **Location:** Outpatient clinic / urgent‑care setting  
+
+---
+
+## SUBJECTIVE  
+
+### Chief Complaint  
+“Stomach ache, vomiting, diarrhea and fever for the past 3 days.”
+
+### History of Present Illness  
+- **Onset & Timeline:**  
+  - **Day ‑3:** Began with vague abdominal discomfort/irritability.  
+  - **Day ‑2:** First episode of vomiting after lunch (food‑content emesis). Subsequent vomiting became more frequent and “random,” totaling **6 vomits** over the last 2 days.  
+  - **Day ‑1:** Development of watery diarrhea, occurring **≈ 6‑7 times** in the past 24 h. Also noted a measured temperature of **38.3 °C (101 °F)** with associated chills; required extra blankets.  
+  - **Today (Day 0):** Child is markedly quiet, sleeping most of the day, with persistent abdominal pain described as diffuse (central abdomen) and no focal tenderness on gentle palpation by the mother.
+
+- **Associated Symptoms (Positive):**  
+  - Fever (38.3 °C) with chills  
+  - Diffuse abdominal pain  
+  - Non‑bloody, non‑bilious vomiting (initially food‑filled, later yellow‑ish fluid)  
+  - Watery, non‑bloody diarrhea (≈ 6‑7 stools/24 h)  
+  - Irritability → marked lethargy/somnolence  
+
+- **Associated Symptoms (Negative):**  
+  - No blood or bile in vomit or stool  
+  - No headache, ear pain, eye pain/redness, sore throat, dysphagia, cough, shortness of breath, wheezing  
+  - No rhinorrhea, nasal congestion, loss of taste or smell  
+  - No rash, joint or muscle aches, urinary symptoms, or recent dysuria  
+  - No recent travel, sick contacts (except school attendance last week)  
+  - No change in diet, no recent food “adventure,” no known food allergies  
+  - No vomiting triggered consistently by meals after the first episode  
+
+### Review of Systems (pertinent)  
+- **Constitutional:** Fever, chills, lethargy, irritability.  
+- **Gastrointestinal:** Abdominal pain, vomiting (6 episodes), watery diarrhea (≈ 6‑7 episodes), no blood, no melena.  
+- **Respiratory:** No cough, dyspnea, wheeze.  
+- **ENT:** No sore throat, ear pain, nasal discharge.  
+- **Dermatologic:** No rash or skin changes.  
+- **Genitourinary:** No dysuria, frequency, or hematuria.  
+
+### Past Medical History  
+- No chronic medical problems reported for the child.  
+- Up‑to‑date on routine childhood immunizations.  
+- No prior hospitalizations or surgeries.  
+
+### Medications  
+- None on a regular schedule.  
+
+### Allergies  
+- No known drug, food, or environmental allergies (NKDA).  
+
+### Family History  
+- No known hereditary gastrointestinal disorders (e.g., Celiac, Crohn’s).  
+- No significant cardiac or pulmonary disease in first‑degree relatives.  
+
+### Social History  
+- Lives with mother, father, and two older siblings (ages 7 and 10).  
+- No tobacco, alcohol, or illicit drug exposure in the home.  
+- No pets.  
+- Attends school; returned to school the week prior to presentation.  
+- No recent travel; homebound during the pandemic.  
+
+---
+
+## OBJECTIVE  
+
+### Vital Signs (obtained in clinic)  
+- **Temperature:** 38.3 °C (measured by mother)  
+- **Heart Rate:** Not recorded (estimated age‑appropriate ~ 100 bpm)  
+- **Respiratory Rate:** Not recorded (estimated age‑appropriate ~ 20 /min)  
+- **Blood Pressure:** Not recorded (generally not routine in this age for acute visit)  
+- **SpO₂:** Not recorded (patient not in respiratory distress)  
+- **Weight/Height:** Not recorded today (growth noted as appropriate per mother).  
+
+### General Appearance  
+- Appears mildly ill, lethargic, lying supine, tolerating oral fluids minimally.  
+
+### HEENT  
+- Normocephalic, atraumatic.  
+- No conjunctival injection, no oral lesions, no tonsillar erythema or exudate.  
+
+### Neck  
+- Supple, no cervical adenopathy.  
+
+### Cardiovascular  
+- Regular rate and rhythm (as per auscultation, no murmurs).  
+
+### Respiratory  
+- Clear breath sounds bilaterally, no wheezes or crackles.  
+
+### Abdomen  
+- Soft, mildly distended; child points to central abdomen for pain.  
+- No guarding or rebound tenderness noted by caregiver (no deep palpation performed).  
+
+### Skin  
+- No rashes, lesions, or signs of dehydration (turgor not formally assessed).  
+
+### Neurologic  
+- Alert but sleepy; oriented to person.  
+
+### Laboratory / Imaging (ordered at this visit)  
+- **Rapid SARS‑CoV‑2 antigen test** (pending).  
+- **Basic metabolic panel** (BMP) – electrolytes, BUN, creatinine for dehydration assessment.  
+- **CBC with differential** – to evaluate for leukocytosis.  
+- **Stool studies** (if diarrhea persists > 48 h): viral PCR panel, ova & parasites (optional).  
+
+---
+
+## ASSESSMENT  
+
+1. **Acute Viral Gastroenteritis** (most likely etiology – likely a non‑specific viral pathogen; COVID‑19 considered given current pandemic context).  
+2. **Dehydration – mild to moderate** (evidenced by ≥ 6 episodes of emesis, ≥ 6 watery stools, lethargy, and fever).  
+3. **Fever, likely viral** – 38.3 °C, chills.  
+
+*Differential diagnoses considered*:  
+- Bacterial gastroenteritis (e.g., *Salmonella*, *Shigella*) – less likely without blood in stool or severe abdominal tenderness.  
+- COVID‑19 infection with gastrointestinal predominance.  
+- Early appendicitis – unlikely given diffuse pain, absence of localized RLQ tenderness, and short duration.  
+- Food‑borne toxin ingestion – no new foods reported.  
+
+---
+
+## PLAN  
+
+### Diagnostic  
+- **COVID‑19 rapid antigen test** – result to guide isolation and public‑health reporting.  
+- **CBC with differential** – assess for leukocytosis or lymphopenia.  
+- **Basic metabolic panel** – evaluate for electrolyte abnormalities (e.g., hyponatremia, hypokalemia) and renal function (BUN/Cr).  
+- **Stool PCR panel** (if diarrhea persists > 48 h or worsens) – to identify viral or bacterial pathogen.  
+
+### Therapeutic  
+1. **Rehydration**  
+   - Initiate **oral rehydration solution (ORS)**: ½ L every 2‑3 h if able to tolerate; encourage small, frequent sips.  
+   - If unable to maintain oral intake or signs of moderate‑to‑severe dehydration develop (dry mucosa, decreased urine output, tachycardia), arrange for **IV isotonic fluids** (e.g., 20 mL/kg normal saline bolus).  
+
+2. **Antiemetic**  
+   - Consider **ondansetron** PO/OD (0.15 mg/kg single dose) if vomiting persists and oral intake remains poor.  
+
+3. **Antipyretic**  
+   - **Acetaminophen** 15 mg/kg PO q6‑8 h PRN for fever > 38 °C, not to exceed 5 doses/24 h.  
+
+4. **Diet**  
+   - When appetite returns, advance diet gradually: clear fluids → bland solids (e.g., bananas, rice, applesauce, toast – “BRAT” diet).  
+
+### Education & Discharge Instructions  
+- **Hydration:** Emphasize importance of maintaining fluid intake; watch for signs of worsening dehydration (dry mouth, no tears, sunken eyes, decreased urine output).  
+- **Fever Management:** Use acetaminophen as needed; monitor temperature.  
+- **Activity:** Light activity; encourage rest.  
+- **When to Seek Immediate Care:**  
+  - > 2 vomits in 1 hour or inability to retain any fluids.  
+  - Persistent high fever (> 39 °C) > 24 h.  
+  - Increased lethargy, irritability, or any new abdominal pain localization.  
+  - Signs of blood in vomit or stool.  
+  - Decreased urine output or dark urine.  
+
+### Follow‑up  
+- **Telehealth/Phone check‑in** in **24 hours** to review hydration status, fever trend, and test results.  
+- **In‑person follow‑up** with pediatrician **within 48‑72 hours** or sooner if any red‑flag symptoms develop.  
+
+### Documentation  
+- Record all orders in the EMR; attach parental consent for COVID‑19 testing.  
+- Update immunization record (already current).  
+
+---  
+
+*Prepared by:* _________________________  
+*Date:* 2024‑04‑14  
+
+*Signature (electronic):* Dr. [Physician’s Name], MD – Pediatric Emergency/Primary Care.

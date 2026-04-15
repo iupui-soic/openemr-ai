@@ -1,0 +1,57 @@
+Model: openai/gpt-oss-20b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 04:15:33
+Time: 1.81s
+Tokens: 6,426 in / 842 out
+============================================================
+
+Patient Information  
+The patient is a young adult male who presents to the clinic for evaluation of a persistent cough and recent nasal congestion. No name, date of birth, or insurance information was provided during the encounter. No identifying demographic details are available.
+
+Chief Complaint  
+The patient reports a two‑week history of a dry cough that has not resolved, accompanied by a clear, watery nasal discharge that began approximately one week ago.
+
+History of Present Illness  
+The cough began two weeks prior to presentation and was initially more severe but has gradually improved, although it remains present. The patient describes the cough as dry and non‑productive, with no hemoptysis or sputum production. A clear, watery nasal discharge started about one week ago, coinciding with the onset of mild congestion. The patient denies sore throat, chest pain, shortness of breath, palpitations, abdominal pain, nausea, vomiting, diarrhea, or constipation. He reports no fever, chills, night sweats, or unintentional weight loss. He has experienced two nights of mild chills last week but has otherwise been afebrile. He has no headaches, visual changes, or taste disturbances. He reports no nasal or sinus pain, and his sense of smell was slightly diminished during periods of congestion but has otherwise remained intact.
+
+Review of Systems  
+Constitutional: No fever, chills (only two nights), night sweats, weight loss, or fatigue reported.  
+Respiratory: Dry cough, clear nasal discharge, mild congestion; denies dyspnea, wheezing, chest pain, or sputum production.  
+Cardiovascular: No palpitations, chest pain, or shortness of breath.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+Neurologic: No headaches, dizziness, or neurologic deficits.  
+Psychiatric: No anxiety or depression reported.  
+Musculoskeletal: No muscle aches or joint pain.  
+Skin: No rash or lesions.  
+Allergy: No known drug or environmental allergies reported.
+
+Past Medical History  
+No information available regarding prior medical conditions or surgeries.
+
+Social History  
+The patient is a university student who was residing in a dormitory but is currently at home with parents due to virtual learning. He reports occasional smoking (a few casual attempts) and recreational marijuana use (four to five times). He consumes alcohol socially on weekends. He denies use of prescription medications, over‑the‑counter drugs, or herbal supplements. He has no history of illicit drug use.
+
+Family History  
+Father has a history of hypercholesterolemia. No other significant family medical history was reported.
+
+Medications  
+The patient reports no current medications, including over‑the‑counter or herbal products.
+
+Physical Examination  
+No physical examination findings were documented during the encounter.
+
+Laboratory Results  
+No laboratory studies were performed or reported at this time.
+
+Assessment  
+The clinical presentation is most consistent with a viral upper respiratory tract infection, likely a common cold. The patient’s symptoms are mild, non‑productive cough and clear nasal discharge, with no evidence of bacterial infection or lower respiratory involvement. A COVID‑19 infection cannot be excluded given the overlap of symptoms; therefore, a SARS‑CoV‑2 PCR test is recommended.
+
+Plan  
+1. Order a SARS‑CoV‑2 PCR test and advise the patient to self‑isolate at home until results are available.  
+2. Provide symptomatic treatment recommendations: adequate hydration, saline nasal rinses, and over‑the‑counter cough suppressants if needed.  
+3. No antibiotics are indicated at this time.  
+4. Instruct the patient to monitor for worsening symptoms such as fever, increased cough, dyspnea, or chest pain; if any of these develop, seek urgent care.  
+5. Follow up in clinic or via telehealth in 5–7 days to reassess symptoms and review test results.  
+6. Educate the patient on infection control measures to protect household contacts, including mask use and hand hygiene.  
+7. No additional imaging or laboratory work is required at this time.

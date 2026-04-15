@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-120b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:22:27
+Time: 3.19s
+Tokens: 6,183 in / 1,088 out
+============================================================
+
+Patient Information:  
+The patient is a male child brought to the clinic by his mother. The exact age is not documented in the encounter notes. He is otherwise healthy with no known chronic medical conditions, surgeries, or hospitalizations. He is up to date on immunizations and has no known drug allergies.
+
+Chief Complaint:  
+Fever, dry cough, runny nose, sore throat, and generalized body aches for the past two days.
+
+History of Present Illness:  
+The mother reports that the child’s symptoms began approximately two days ago. The runny nose and dry cough started first, followed by a fever and chills that occurred last night. The mother measured the temperature at 38.8 °C (101.8 °F). The cough is non‑productive, and the nasal discharge is clear. The child reports a mild sore throat but states it is not severe enough to affect eating significantly; however, his appetite is somewhat decreased and he is taking smaller portions of solid foods. He has experienced generalized muscle aches ("feels like a ache all over") but denies shortness of breath, wheezing, chest pain, or difficulty breathing. There is no sputum production, hemoptysis, ear pain, eye discharge, or visual changes. He denies nasal congestion, sinus pressure, or a change in sense of smell or taste. He has had no vomiting, nausea, diarrhea, or urinary changes. There are no rashes, dizziness, fainting spells, numbness, tingling, or joint pain beyond the described myalgias. He has not been exposed to anyone known to be ill, has not traveled recently, and there are no smokers in the household. The home environment is not thought to contain dust, mold, or other irritants.
+
+Review of Systems:  
+- Constitutional: Positive for fever (38.8 °C), chills, decreased appetite, and generalized myalgias. Negative for weight loss, fatigue beyond described, or night sweats.  
+- Eyes: No pain, discharge, or visual changes.  
+- ENT: Positive for clear nasal discharge, dry cough, and mild sore throat. Negative for ear pain, ear discharge, nasal congestion, sinus pain, or changes in smell/taste.  
+- Respiratory: Positive for dry cough. Negative for shortness of breath, wheezes, or chest pain.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+- Genitourinary: No dysuria, frequency, or changes in urine appearance.  
+- Musculoskeletal: Positive for diffuse muscle aches. Negative for joint swelling or focal pain.  
+- Neurologic: No headache, dizziness, fainting, weakness, or focal neurologic deficits.  
+- Skin: No rash or lesions.  
+- Psychiatric: No anxiety or mood changes reported.
+
+Past Medical History:  
+The child is described as previously healthy with no chronic illnesses. He has experienced occasional colds in winter but no other significant medical problems.
+
+Surgical History:  
+No prior surgeries.
+
+Allergies:  
+No known drug, food, or environmental allergies reported.
+
+Current Medications:  
+The child is not taking any prescription or over‑the‑counter medications at this time.
+
+Social History:  
+The child lives with his mother, father, and two younger siblings. No tobacco use in the home. No recent travel. He participates in a combination of online and in‑person schooling. No known exposure to sick contacts.
+
+Family History:  
+No family history of respiratory, cardiac, or immunologic disease reported. The paternal grandfather has hypertension and hyperlipidemia.
+
+Physical Examination:  
+No objective vital signs were recorded other than the parental report of temperature (38.8 °C). A formal physical examination was not documented in the encounter notes.
+
+Laboratory and Diagnostic Testing:  
+The provider ordered a nasopharyngeal swab for SARS‑CoV‑2 PCR testing. No other laboratory studies were performed at this visit.
+
+Assessment:  
+1. Upper respiratory infection – viral etiology, possible COVID‑19 or influenza pending test results.  
+2. Fever, dry cough, clear rhinorrhea, mild sore throat, and myalgias consistent with a self‑limited viral illness.
+
+Plan:  
+- Perform SARS‑CoV‑2 PCR testing with results expected within 24–48 hours.  
+- Provide supportive care: encourage adequate fluid intake, maintain nutrition with small, frequent meals, and ensure rest.  
+- Use antipyretics such as acetaminophen as needed for fever or discomfort, following appropriate pediatric dosing.  
+- Monitor for worsening symptoms: increased work of breathing, persistent high fever (>39 °C), new onset vomiting, dehydration, or any focal neurologic signs.  
+- Advise parents to seek immediate emergency care if the child develops respiratory distress, inability to maintain hydration, seizures, or any severe change in mental status.  
+- Follow‑up: Telephone or in‑person follow‑up in 48 hours or sooner if symptoms worsen or test results become available.  
+
+The mother verbalized understanding of the plan and agreed to the outlined recommendations. No additional prescriptions were written at this time.

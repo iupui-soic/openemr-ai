@@ -1,0 +1,71 @@
+Model: qwen/qwen3-32b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 03:59:34
+Time: 4.41s
+Tokens: 10,385 in / 1,311 out
+============================================================
+
+Patient Information  
+Albert Turner is an 89-year-old male with a complex past medical history including essential hypertension, ischemic heart disease, a history of coronary artery bypass grafting, chronic kidney disease stage 4, end-stage renal disease, localized osteoarthritis of the hand, and a history of renal transplant. He resides in a small apartment with his husband and has no known allergies. His current medications include ramipril for hypertension and over-the-counter supplements such as vitamin D, calcium, and multivitamins. He consumes alcohol occasionally, approximately one glass of wine every other day, and has no history of tobacco or recreational drug use.
+
+Chief Complaint  
+The patient presents with severe right hip pain following a fall that occurred approximately two hours prior to arrival. He fell while descending stairs, landing on his right side and head, and is unable to bear weight on the affected hip.
+
+History of Present Illness  
+The patient fell while descending the last few steps of a staircase, slipping and landing on his right side and head. The fall resulted in immediate and severe pain localized to the right hip, with inability to stand or bear weight on the affected leg. The pain is described as sharp and excruciating, with a 10/10 intensity. There is associated swelling and redness noted in the right hip region. The patient denies any prior falls or similar episodes of pain. He reports a sensation of outward rotation of the right leg and some bruising. He also mentions transient dizziness following the fall, which he attributes to the pain. No numbness, tingling, or radiating pain is reported. The patient has not experienced chest pain, shortness of breath, fever, or changes in bowel or urinary habits. He is currently in significant discomfort and requires assistance for mobility.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: No headache, confusion, memory loss, or focal neurological deficits.  
+Musculoskeletal: Pain and inability to bear weight on the right hip; no other joint pain or muscle aches.  
+Integumentary: No rash or other skin changes.  
+Hematologic: No easy bruising or bleeding.  
+Endocrine: No changes in vision, hearing, smell, or taste.  
+Psychiatric: No new onset of anxiety or depression.  
+Other: No new symptoms reported.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, ischemic heart disease with prior coronary artery bypass grafting, chronic kidney disease stage 4 progressing to end-stage renal disease, a history of renal transplant, localized osteoarthritis of the hand, and a history of coronary artery disease. He also has a history of seizures, social isolation, and limited social contact. He has undergone multiple dental procedures and has had several episodes of gingivitis and gingival disease.
+
+Surgical History  
+The patient has a history of coronary artery bypass grafting and a renal transplant.
+
+Social History  
+The patient lives with his husband in a small apartment in Barnstable, Massachusetts. He does not smoke, consumes alcohol occasionally, and has no history of recreational drug use. He is currently not employed and has a history of limited social contact and social isolation.
+
+Family History  
+The patient reports a family history of heart disease, with his father having died of a heart attack in his 60s. His mother had a history of skin cancer, which was treated with excision.
+
+Current Medications  
+The patient is currently taking ramipril for hypertension and over-the-counter supplements including vitamin D, calcium, and multivitamins. His other medications include lisinopril, hydrochlorothiazide, and naproxen sodium, though these are listed as active in the electronic health record and may not be currently prescribed.
+
+Objective  
+Vital Signs:  
+Blood Pressure: 138/88 mmHg  
+Heart Rate: 74 bpm  
+Respiratory Rate: 14 breaths/min  
+SpO2: 98% on room air  
+Temperature: Not recorded  
+Weight: Not recorded  
+Height: 173.7 cm  
+BMI: 28.44  
+
+Physical Examination:  
+The patient is in significant distress due to pain. He is unable to stand or bear weight on the right leg. Physical examination reveals swelling and mild redness over the right hip. The right leg appears to be externally rotated. There is no deformity or obvious bruising noted. The right hip is tender to palpation, and the patient experiences sharp pain with any attempted movement. No numbness or motor deficits are noted in the lower extremities. Neurovascular examination of the right leg is intact. No temperature difference is noted between the hips. The patient is able to move the left leg without difficulty.
+
+Labs and Imaging  
+No recent laboratory results or imaging studies are available in the provided data. The patient has a history of chronic kidney disease and end-stage renal disease, with creatinine levels previously recorded at 1.01 mg/dL.
+
+Assessment  
+Based on the history and physical examination, the patient is suspected to have sustained a right hip fracture following a fall. The mechanism of injury, inability to bear weight, and localized pain and swelling are consistent with a hip fracture. Given his age and history of osteoarthritis and chronic kidney disease, the risk of complications is elevated.
+
+Plan  
+The patient will be referred for immediate imaging, including X-ray or CT scan of the pelvis and hip, to confirm the diagnosis and assess the extent of the injury. If a hip fracture is confirmed, the patient will be evaluated by an orthopedic surgeon for potential surgical intervention, which may include internal fixation with screws or a hip replacement. Pain management will include ibuprofen or other non-opioid analgesics as tolerated. The patient will require post-operative physical therapy and rehabilitation to restore mobility and function. Follow-up with the orthopedic team and primary care provider will be arranged. The patient and his husband will be provided with detailed discharge instructions and a follow-up appointment.

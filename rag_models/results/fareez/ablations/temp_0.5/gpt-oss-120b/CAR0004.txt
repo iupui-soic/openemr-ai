@@ -1,0 +1,86 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:10:45
+Time: 4.27s
+Tokens: 9,189 in / 1,234 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel (recorded)  
+Age: 25 years (based on patient report)  
+Sex: Not specified (patient identifies as female in the record)  
+Date of Encounter: 2024‑04‑14  
+
+Chief Complaint  
+The patient presents with sharp, intermittent chest pain that began three days ago and is worried that she may be experiencing a heart attack.
+
+History of Present Illness  
+The patient reports the onset of a sharp, localized chest pain three days prior to the visit. The pain is situated over the area she describes as “right over my heart” and is rated 6/10 in intensity. Episodes last only a few seconds and then resolve spontaneously. The discomfort is provoked by coughing and by lying supine, and it is relieved when she leans forward. She notes that the pain occasionally radiates to her neck. She denies any associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or headache. She has not experienced any weakness or numbness. The patient reports that a single dose of acetaminophen (Tylenol) taken yesterday provided some relief. She denies any recent trauma, falls, or injuries to the chest. She had an influenza‑like illness one week ago, characterized by fever, runny nose, cough, and fatigue, which has since resolved.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Cardiovascular: Positive for intermittent sharp chest pain; negative for palpitations, orthopnea, or edema.  
+Respiratory: Positive for cough that worsens the chest pain; negative for dyspnea, wheezing, or recent sputum production.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or dysphagia.  
+Neurologic: No dizziness, syncope, weakness, or numbness.  
+Psychiatric: No anxiety or panic symptoms reported at this time.  
+Musculoskeletal: No recent injuries; pain improves with forward flexion, suggesting a possible musculoskeletal or pleuritic component.  
+ENT: Recent resolved viral upper respiratory symptoms; no current sore throat or sinus congestion.  
+
+Past Medical History  
+The patient states she is “pretty healthy” and reports no chronic medical conditions. No prior surgeries are reported.  
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.  
+
+Current Medications  
+Occasional acetaminophen (Tylenol) as needed for pain. No other prescription or over‑the‑counter medications are listed.  
+
+Social History  
+The patient is a 25‑year‑old engineering student at Western University and works part‑time as a post‑man. She lives with her mother in a house. She drinks alcohol occasionally (one to two drinks on weekends) and denies tobacco, recreational drug use, or regular smoking.  
+
+Family History  
+Her father suffered a myocardial infarction two weeks ago and subsequently passed away. No other family history of cardiac disease, hypertension, diabetes, or cancer is reported.  
+
+Objective  
+
+Vital Signs  
+No vital sign measurements were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented.  
+
+Laboratory and Imaging Studies  
+No laboratory results or imaging studies have been obtained at the time of this visit. The provider indicated that an electrocardiogram (ECG) and appropriate cardiac laboratory testing will be ordered.  
+
+Assessment  
+
+1. Acute intermittent chest pain, sharp quality, positional (worse with supine, better with leaning forward) – differential includes acute pericarditis, musculoskeletal chest wall pain, and less likely ischemic cardiac pain given the brief, self‑limited nature of episodes.  
+2. Recent viral upper respiratory infection – raises suspicion for viral pericarditis.  
+3. Family history of recent myocardial infarction – warrants prompt cardiac evaluation to exclude acute coronary syndrome.  
+
+Plan  
+
+Diagnostic Work‑up  
+- Obtain a 12‑lead electrocardiogram immediately to assess for pericarditis changes (e.g., diffuse ST‑segment elevation) or ischemic abnormalities.  
+- Draw cardiac biomarkers (high‑sensitivity troponin) to rule out myocardial injury.  
+- Order a chest radiograph to evaluate for pulmonary pathology and mediastinal silhouette.  
+- Consider transthoracic echocardiography if ECG or biomarkers suggest pericardial involvement or if clinical concern for cardiac dysfunction persists.  
+
+Therapeutic Measures  
+- Continue acetaminophen for pain as needed; advise not to exceed recommended dosing.  
+- If pericarditis is confirmed and pain persists, consider prescribing non‑steroidal anti‑inflammatory drugs (e.g., ibuprofen) unless contraindicated.  
+- Encourage the patient to avoid activities that exacerbate the pain, particularly lying flat; advise sleeping with the head of the bed elevated.  
+
+Patient Education and Disposition  
+- Discussed the possible causes of her chest pain, emphasizing that while the presentation is more consistent with a non‑ischemic etiology, the family history of recent MI necessitates thorough evaluation.  
+- Instructed the patient to seek immediate medical attention if the pain becomes prolonged, intensifies, is associated with shortness of breath, diaphoresis, syncope, or new palpitations.  
+- Provided reassurance that most cases of viral pericarditis are self‑limited and respond well to anti‑inflammatory therapy.  
+
+Follow‑up  
+- The patient will be contacted with the results of the ECG and cardiac enzymes within 24‑48 hours.  
+- Arrange a follow‑up appointment in the cardiology clinic within one week, or sooner if test results are abnormal or symptoms worsen.  
+
+Disposition  
+The patient was discharged home after counseling, with instructions to return to the emergency department if any concerning symptoms develop. No further immediate interventions were required pending diagnostic results.

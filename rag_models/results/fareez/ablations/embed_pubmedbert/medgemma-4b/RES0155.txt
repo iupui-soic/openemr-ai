@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 06:28:26
+Time: 37.49s
+Tokens: 12,398 in / 577 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Adela Tapia, DOB 1914-01-07, is a 98-year-old female residing at 517 Hills Trace, Stoneham, Massachusetts 02180. She is a former full-time employee at a grocery store and currently works part-time. She is a smoker, having smoked approximately one pack per day for 30-40 years. She also reports using alcohol occasionally with dinner on weekends.
+
+Chief Complaint:
+
+The patient presents with worsening shortness of breath and chest discomfort over the past five days, accompanied by a worsening cough producing yellowish-greenish sputum.
+
+History of Present Illness:
+
+The patient reports experiencing a cough and shortness of breath in the past, but these symptoms have significantly worsened over the past five days. She is experiencing shortness of breath with minimal exertion, and reports chest discomfort that is present at rest. She denies any blood in her sputum. She denies any fever or chills. She denies any recent travel. She reports trying an inhaler, but it has not provided significant relief.
+
+Past Medical History:
+
+The patient has a history of COPD, hypertension, and GERD. She was diagnosed with COPD three years ago. She is taking Ventolin, Symbicort, and an ACE inhibitor. She denies any allergies.
+
+Physical Exam:
+
+The patient reports feeling feverish. She denies any headache, vision changes, nausea, vomiting, palpitations, diarrhea, or increased fatigue. She denies gasping for air at night. She denies any sensation of palpitations. She denies any changes in urination. She denies any changes in sleep or appetite. She denies any night sweats. She denies any significant weight change. She denies any exposure to anyone sick.
+
+Social History:
+
+The patient reports being home and not exposed to anyone sick. She has had similar symptoms before.
+
+Medications:
+
+The patient is taking Ventolin, Symbicort, and an ACE inhibitor. She denies any allergies.
+
+Family History:
+
+The patient denies any significant family history of medical conditions.
+
+Assessment:
+
+The patient's symptoms, including shortness of breath, chest discomfort, and productive cough, are concerning for an exacerbation of her COPD, possibly triggered by a viral or bacterial infection. The presence of a fever further supports this possibility.
+
+Plan:
+
+The patient will be evaluated by the emergency department, including a physical examination, vital signs assessment, and laboratory tests, including a chest X-ray and a COVID-19 swab. Based on the results of these tests, the emergency department will determine whether admission is necessary. If admission is required, the patient will receive nebulized medications and antibiotics. If the patient can be managed on an outpatient basis, she will be discharged with instructions to follow up with her primary care physician. The physician will also discuss smoking cessation resources with the patient.

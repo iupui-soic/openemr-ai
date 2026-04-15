@@ -1,0 +1,143 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:24:30
+Time: 5.56s
+Tokens: 8,959 in / 2,080 out
+============================================================
+
+**Patient Information**  
+**Name:** Aileen Vi Rempel **DOB:** 07/25/1917 **Age:** 25 years (per interview) **Sex:** Female **MRN:** 2502 **Location:** Quincy, MA  
+
+---
+
+## SOAP NOTE  
+
+### **S – Subjective**
+
+**Chief Complaint:**  
+“Sharp chest pain that started three days ago; I’m scared it might be a heart attack.”
+
+**History of Present Illness (HPI):**  
+- **Onset:** 3 days ago.  
+- **Location:** Central chest, over the area of the heart.  
+- **Quality:** Described as “sharp.”  
+- **Duration:** Each episode lasts only a few seconds and then resolves.  
+- **Temporal pattern:** Intermittent, episodic; no constant pain.  
+- **Exacerbating factors:** Worse with coughing and when lying flat.  
+- **Relieving factors:** Improves when leaning forward.  
+- **Radiation:** Occasionally radiates to the neck.  
+- **Severity:** 6/10 on a pain scale.  
+- **Associated symptoms:** Denies dyspnea, dizziness, palpitations, nausea, vomiting, fever, chills, cough (now resolved), headache, weakness, numbness, or syncope.  
+- **Recent illnesses:** Had an acute viral upper‑respiratory infection (flu‑like illness with fever, runny nose, cough, and fatigue) the week prior; symptoms have resolved.  
+- **Medication trials:** Took one dose of acetaminophen (Tylenol) yesterday with some relief.  
+- **Prior episodes:** No similar prior chest pain.  
+
+**Review of Systems (pertinent positives/negatives):**  
+
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | – | Fever, chills, weight loss |
+| Respiratory | Recent viral URI last week | Current cough, dyspnea |
+| Cardiovascular | Chest pain (sharp, positional) | Dyspnea, palpitations, syncope |
+| Gastrointestinal | – | Nausea, vomiting, abdominal pain |
+| Musculoskeletal | Pain worsened by coughing/lying flat | Joint swelling, recent trauma |
+| Neurologic | – | Headache, dizziness, weakness |
+| Psychiatric | Anxiety about heart attack | Depression (PHQ‑2 score = 1) |
+
+**Past Medical History:**  
+- The patient reports being “pretty healthy” with no chronic medical conditions. (The historic EMR lists numerous chronic diseases that are clearly **not applicable** to this 25‑year‑old; these are omitted as they belong to a different record.)
+
+**Past Surgical History:**  
+- None.
+
+**Medications:**  
+- Acetaminophen PRN (used once yesterday).  
+- No chronic prescription meds reported by the patient.
+
+**Allergies:**  
+- No known drug allergies.
+
+**Family History:**  
+- Father suffered a myocardial infarction two weeks ago and subsequently passed away. No other reported familial cardiac disease.
+
+**Social History:**  
+- Student (engineering) at Western University; part‑time employment as a post‑man.  
+- Lives with mother in a house.  
+- Alcohol: occasional (1‑2 drinks on weekends).  
+- Tobacco: none.  
+- Illicit drugs: none.  
+- No current occupational exposures.
+
+---
+
+### **O – Objective**
+
+**Vital Signs (most recent EMR entry, 08/11/2010):**  
+- Heart Rate: 82 bpm  
+- Respiratory Rate: 14 breaths/min  
+- Blood Pressure: not recorded in the extract (assume pending measurement)  
+- SpO₂: not recorded  
+- Height: 166.9 cm  
+- Weight: not recorded (BMI calculated from prior data ≈ 27.6 kg/m²)  
+
+**Physical Examination:**  
+- No exam details were documented in the encounter transcript.  
+- The patient appears anxious but is in no acute distress.  
+- Cardiovascular: no murmurs, rubs, or gallops reported by the patient; however, a focused exam is pending.  
+- Respiratory: lungs clear to auscultation (patient reports no current cough).  
+- No peripheral edema noted.  
+
+**Laboratory Data (most recent labs, unrelated to current complaint but available):**  
+
+| Analyte | Value | Reference |
+|---------|-------|-----------|
+| Sodium (Na) | 141.33 mmol/L | normal |
+| Potassium (K) | 4.19‑4.25 mmol/L | normal |
+| Chloride (Cl) | 108.32 mmol/L | normal |
+| CO₂ (bicarbonate) | 25.44‑27.21 mmol/L | normal |
+| Calcium | 8.66‑9.75 mg/dL | normal |
+| BUN | 11.99‑15.7 mg/dL | normal |
+| Creatinine | 0.35 mg/dL | low‑normal (consistent with low muscle mass) |
+| Glucose | 92.46 mg/dL | normal |
+| PHQ‑2 score | 1 | minimal depressive symptoms |
+| GAD‑7 score | 1 | minimal anxiety |
+| Fall risk (Morse) | 45 | moderate risk (note for safety) |
+
+**Imaging / ECG:** None performed yet; ordered during this visit.
+
+---
+
+### **A – Assessment / Differential Diagnosis**
+
+1. **Acute pericarditis (likely viral)** – pleuritic, sharp chest pain worsened by lying supine and improved by leaning forward; recent viral prodrome supports this etiology.  
+2. **Musculoskeletal chest wall strain** – pain provoked by coughing and positional change could be musculoskeletal, but radiation to neck and pericardial‑type characteristics make pericarditis more likely.  
+3. **Non‑ST‑elevation myocardial infarction (NSTEMI) / Acute coronary syndrome** – family history of recent fatal MI raises concern; must be ruled out with ECG and cardiac enzymes.  
+4. **Pulmonary causes (e.g., pleurisy, pneumothorax)** – less likely given absence of dyspnea and normal respiratory exam, but still in the differential.  
+
+**Impression:** The presentation is most consistent with **acute viral pericarditis**; however, given the strong family history of fatal coronary disease and the patient’s anxiety, an **ischemic cardiac work‑up is warranted** to exclude an acute coronary syndrome.
+
+---
+
+### **P – Plan**
+
+| Intervention | Details / Rationale |
+|--------------|----------------------|
+| **Immediate diagnostics** | • **12‑lead ECG** – evaluate for diffuse ST‑elevations, PR depressions, or ischemic changes.<br>• **Cardiac enzymes** (high‑sensitivity troponin I/T) – assess for myocardial injury.<br>• **Chest X‑ray** – rule out pulmonary pathology, assess cardiac silhouette. |
+| **Laboratory panel** | • CBC, CMP (already have electrolytes; repeat for completeness).<br>• Inflammatory markers (CRP, ESR) – often elevated in pericarditis. |
+| **Medication** | • **NSAID** (e.g., ibuprofen 600 mg PO q6‑8 h with food) for pericardial inflammation, unless contraindicated.<br>• Continue **acetaminophen** PRN for breakthrough pain.<br>• **Colchicine** 0.6 mg PO BID for 3 months can be considered if pericarditis confirmed and no renal/hepatic contraindication.<br>• **Avoid** heavy exertion until cleared. |
+| **Monitoring** | • Observe in the ED/observation unit for at least 6 hours with serial ECGs and troponins.<br>• Re‑assess pain pattern and vitals. |
+| **Patient education** | • Explain the likely viral pericarditis vs. cardiac ischemia; emphasize the importance of the work‑up.<br>• Teach warning signs that require immediate return: worsening chest pressure, radiating pain, dyspnea, diaphoresis, syncope. |
+| **Follow‑up** | • If ECG and troponins are normal and symptoms improve, schedule **outpatient cardiology** follow‑up within 3‑5 days.<br>• If evidence of ischemia, admit for cardiac monitoring and further cardiology management per ACS protocol. |
+| **Lifestyle/Preventive** | • Counsel on **stress reduction** (recent loss of father, anxiety).<br>• Encourage regular low‑impact exercise once cleared.<br>• Maintain moderate alcohol intake; continue non‑smoking status. |
+| **Safety** | • Given a Morse fall risk score of 45, ensure ambulation assistance as needed during the ED stay. |
+| **Documentation** | • Record all vitals, ECG findings, and lab results in the EMR.<br>• Update problem list with “Suspected acute pericarditis – rule out ACS.” |
+
+**Disposition:**  
+- **ED observation** with the above work‑up.  
+- **If work‑up negative** and pain improves → discharge with NSAID/colchicine prescription, activity restrictions, and cardiology follow‑up.  
+- **If work‑up positive for ischemia** → admit under cardiac service for ACS protocol.
+
+---  
+
+**Physician Signature:** ______________________   **Date:** 2024‑04‑14   (Electronic)

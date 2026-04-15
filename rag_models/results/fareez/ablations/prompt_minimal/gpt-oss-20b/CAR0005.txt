@@ -1,0 +1,132 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:29:33
+Time: 3.35s
+Tokens: 7,137 in / 1,603 out
+============================================================
+
+**Patient Information**  
+**Name:** Amee Reva Goyette  
+**DOB:** 1916‑07‑09 (age per record, note possible data mismatch)  
+**Sex:** Female  
+**Address:** 668 Quigley Mill Apt 10, Beverly, MA 01915  
+**Insurance / Provider:** Not documented in the transcript  
+
+---
+
+## SOAP Note
+
+### Subjective
+**Chief Complaint:**  
+- “Chest pain” (initiated 2 weeks ago, left‑sided, sharp, 20‑30 min episodes, 2–3 times in the past 2 weeks).
+
+**History of Present Illness (HPI):**  
+- The pain is sharp, localized to the left chest, and does not radiate.  
+- Duration: 20–30 min per episode, with 2–3 episodes over the last 2 weeks.  
+- Intensity: 4/10 on the numeric pain scale.  
+- No change in intensity or frequency over time.  
+- No alleviating or aggravating factors identified; OTC NSAIDs (Advil, Tylenol) and Tums were ineffective.  
+- Pain tends to occur at work or while driving.  
+- No associated nausea, vomiting, dyspnea, diaphoresis, fever, or syncope.  
+- No chest‑burning or heartburn history.  
+- Recent life stress: separation from spouse 2 years ago, ongoing emotional stress.  
+
+**Review of Systems (ROS):**  
+- **Constitutional:** No fever, chills, or weight change.  
+- **Cardiovascular:** No palpitations, chest tightness outside described episodes, or SOB.  
+- **Respiratory:** No cough, wheeze, or dyspnea.  
+- **Gastrointestinal:** No nausea, vomiting, heartburn, reflux, or abdominal pain.  
+- **Neurologic/Other:** No syncope, dizziness, or focal deficits.  
+
+**Allergies:** None reported.  
+
+**Past Medical History (PMH):**  
+- Patient reports no chronic illnesses and has not seen a family doctor for routine care.  
+- *OpenEMR record* lists multiple chronic conditions (diabetes mellitus with nephropathy, essential hypertension, chronic kidney disease stages 1–4, ischemic heart disease, acute MI, hyperlipidemia, anemia, etc.) and a long list of prescription medications (aspirin, statins, beta‑blocker, ACE inhibitor, nitroglycerin spray, etc.).  This appears inconsistent with the patient’s self‑report and will be clarified during the visit.
+
+**Surgical History:**  
+- None reported.  
+
+**Social History:**  
+- Tobacco: Smokes ½–1 pack/day, recently reduced but still daily.  
+- Alcohol: 1–2 glasses of wine on weekends.  
+- Recreational drugs: None.  
+- Exercise: Running or cycling 3–4 days/week; no chest discomfort with exertion.  
+
+**Family History:**  
+- Father had a heart attack at age 60 (last year).  
+- No other significant family cardiac disease reported.  
+
+**Current Medications (as stated by patient):**  
+- None (OTC: Tylenol, Advil, Tums).  
+
+### Objective
+**Vital Signs:**  
+- Not documented in the encounter.  
+
+**Physical Examination:**  
+- No examination performed during the conversation; vital signs and focused cardiac, pulmonary, and musculoskeletal exam pending.
+
+**Laboratory Data (OpenEMR):**  
+- Complete metabolic panel largely normal (creatinine 0.51 mg/dL, BUN 12.95 mg/dL, sodium 137 mmol/L, potassium 4.42 mmol/L).  
+- Hematologic values within normal limits.  
+- No acute cardiac biomarkers recorded.  
+
+**Imaging:**  
+- None ordered or reported in this encounter.  
+
+### Assessment
+**Primary Diagnosis:**  
+- Atypical chest pain (likely musculoskeletal or psychosomatic) – ICD‑10: R07.9.
+
+**Differential Diagnosis (detailed):**  
+1. **Stable angina / coronary artery disease** – risk factors: smoking, family history, stress.  
+2. **Acute coronary syndrome** – less likely given brief episodes, lack of radiation, and no precipitating exertion.  
+3. **Costochondritis / musculoskeletal strain** – sharp pain localized, no systemic symptoms.  
+4. **Gastroesophageal reflux disease (GERD)** – absent heartburn, but still possible.  
+5. **Pulmonary embolism** – unlikely given lack of dyspnea, tachypnea, or risk factors.  
+6. **Anxiety/Stress‑related chest pain** – significant psychosocial stress noted.  
+
+**Notes on Discrepancy:**  
+The OpenEMR record lists significant comorbidities (CKD, diabetes, hypertension, ischemic heart disease) and multiple cardiovascular medications, yet the patient denies any chronic disease or medication use. A review of medication reconciliation and possible mis‑labeling is warranted.
+
+### Plan
+1. **Diagnostic Work‑Up**  
+   - **Electrocardiogram (ECG)** – immediately to assess for ischemic changes.  
+   - **Serial cardiac troponins** – to rule out acute myocardial injury.  
+   - **Basic metabolic panel & complete blood count** – already available; monitor for renal function.  
+   - **Chest X‑ray** – if respiratory or structural cause suspected.  
+   - **Consider cardiac stress testing** (exercise treadmill or pharmacologic) if initial work‑up is non‑diagnostic.  
+
+2. **Medication Review**  
+   - Reconcile current medication list with OpenEMR data.  
+   - Discuss potential need for aspirin, statin, or antihypertensives based on cardiovascular risk.  
+
+3. **Lifestyle Modification**  
+   - Strongly encourage smoking cessation; offer counseling, nicotine replacement, or prescription agents (varenicline, bupropion).  
+   - Moderate alcohol intake; limit to no more than 1–2 drinks per week.  
+   - Continue regular aerobic exercise (3–4 days/week), monitoring for chest symptoms.  
+
+4. **Psychosocial Support**  
+   - Discuss stress management techniques (cognitive behavioral therapy, relaxation exercises).  
+   - Consider referral to a mental health professional if stress remains significant.  
+
+5. **Follow‑Up**  
+   - Return for cardiology evaluation within 1 week if ECG/troponins abnormal or if chest pain persists.  
+   - If work‑up is benign, schedule routine follow‑up in 4–6 weeks to reassess pain and adherence to lifestyle changes.  
+
+6. **Patient Education**  
+   - Explain differential diagnoses and the rationale for tests.  
+   - Discuss red‑flag symptoms that warrant immediate care: chest pain with sweating, shortness of breath, nausea, or radiating pain.  
+   - Provide written instructions on OTC medication use (avoid NSAIDs if on aspirin or for potential GI irritation).  
+
+7. **Documentation & Coordination**  
+   - Update EHR with accurate medication list and reconcile discrepancies.  
+   - Communicate findings to primary care physician and cardiology referral.  
+
+---  
+
+**Prepared by:**  
+[Name], MD  
+[Date]

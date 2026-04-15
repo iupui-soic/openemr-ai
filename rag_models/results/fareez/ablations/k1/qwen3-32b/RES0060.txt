@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:38:21
+Time: 3.57s
+Tokens: 6,095 in / 964 out
+============================================================
+
+Patient Information  
+The patient is a 22-year-old female, Abbie Stamm, who presented to the clinic with a four-day history of fever, cough, fatigue, and mild nausea. She is currently residing in a duplex in Amherst, Massachusetts, and lives with her girlfriend. She works full-time and has a history of high cholesterol managed with Rosuvastatin. She is up to date on her annual flu vaccine and has no known history of tobacco or recreational drug use. She consumes alcohol occasionally, typically two to three beers on weekends.
+
+Chief Complaint  
+The patient reports a four-day history of fever, cough, fatigue, and mild nausea. She is concerned about the possibility of COVID-19.
+
+History of Present Illness  
+The patient's symptoms began four days ago with the onset of a dry cough, which has progressively worsened. On the morning of the visit, she measured a fever of 38.5°C. She has also experienced increasing fatigue, mild nausea, and occasional headaches consistent with tension-type headaches. She denies chest pain, wheezing, night sweats, or body aches. There is no history of blood in sputum, and she has not experienced shortness of breath except briefly after coughing fits. She denies any recent travel or known exposure to sick individuals, though she visited a mall last weekend where everyone was masked. Her appetite has decreased slightly, and she has lost a few pounds due to reduced food intake. She denies any changes in bowel habits or urinary symptoms.
+
+Review of Systems  
+- **Constitutional:** Fever, fatigue, mild weight loss.
+- **Respiratory:** Dry cough, mild post-cough dyspnea, no chest pain, wheezing, or sputum production.
+- **Cardiovascular:** No palpitations or chest pain.
+- **Gastrointestinal:** Mild nausea without vomiting, no abdominal pain.
+- **Neurological:** Headaches consistent with tension-type, no dizziness or confusion.
+- **Musculoskeletal:** Mild body aches.
+- **Other:** No changes in vision, hearing, or smell. No night sweats or chills beyond mild chills at night.
+
+Allergies  
+The patient has a documented allergy to penicillin, which causes hives. No other current allergies were reported during the visit.
+
+Past Medical History  
+The patient has a history of high cholesterol, managed with Rosuvastatin. She was diagnosed with pre-diabetes six months ago with an A1C of 6.2%. She has a history of childhood asthma, which resolved in 2021. She has had multiple episodes of gingivitis and viral pharyngitis in the past. She also has a history of mitral valve regurgitation, currently ongoing. She had an inguinal hernia repair five years ago.
+
+Current Medications  
+The patient is currently taking Rosuvastatin for high cholesterol and a multivitamin. She has no other active prescriptions at this time.
+
+Social History  
+The patient does not use tobacco or recreational drugs. She consumes alcohol occasionally on weekends. She is not currently exercising but has been walking the dog more frequently. She lives with her girlfriend in a duplex and reports no exposure to mold or asbestos in her living environment.
+
+Family History  
+No known family history of lung or heart conditions. The patient reports that her grandfather had bladder cancer, but no other relevant family medical history was provided.
+
+Objective  
+Vital signs were not recorded in the OpenEMR extract. During the visit, the patient's temperature was noted to be 38.5°C. No other objective findings were provided in the transcript. A physical examination was not detailed in the transcript, but the patient was assessed for signs of respiratory infection.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory viral illness. Given the current public health context and the constellation of symptoms, including fever, cough, and fatigue, a differential diagnosis of COVID-19 is being considered. A COVID-19 swab was ordered for confirmation. The patient is advised to isolate for 14 days regardless of test results due to the potential for false negatives. If symptoms persist or worsen, further evaluation for bacterial infection or pneumonia may be necessary.
+
+Plan  
+- Order a rapid antigen test for SARS-CoV-2.
+- Advise the patient to isolate for 14 days and avoid contact with her girlfriend.
+- Monitor symptoms for progression or change.
+- Encourage hydration, rest, and symptomatic relief for cough and headache.
+- Schedule a follow-up in 7-10 days or sooner if symptoms worsen.
+- Discuss lifestyle modifications for pre-diabetes management during a future visit.
+- Provide public health contact information for follow-up if the test is positive.

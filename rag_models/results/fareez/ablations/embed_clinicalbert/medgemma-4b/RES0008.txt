@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:59:27
+Time: 26.90s
+Tokens: 11,062 in / 447 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Abraham Schneider, a 82-year-old male, presents with a history of type 2 diabetes, hypertension, and ischemic heart disease. He is a former smoker (30 pack-year history) and currently lives with his wife. He is currently not working.
+
+Chief Complaint:
+
+The patient reports difficulty breathing and a cough that started approximately three days ago. He also experiences right-sided chest pain that worsens with deep breaths. He has a temperature of 38.6°F.
+
+History of Present Illness:
+
+The patient states that he initially felt unwell a couple of days ago, experiencing a cough and difficulty breathing. The cough is more frequent throughout the day and produces more sputum than his usual cough, which he attributes to smoking. The sputum is described as dark greenish-yellow in color. He denies any recent changes in his routine or any specific triggers for the cough. The chest pain started around the same time as the cough. The pain is described as sharp and is exacerbated by deep breaths. He has taken Tylenol and Advil for the pain, but they provide only temporary relief.
+
+Past Medical History:
+
+The patient has a history of type 2 diabetes, hypertension, ischemic heart disease, and chronic kidney disease. He has undergone coronary artery bypass grafting (CABG). He also has a history of recurrent urinary tract infection and dependent drug abuse.
+
+Medications:
+
+The patient is currently taking amlodipine, insulin, metformin, and an SGLT2 inhibitor.
+
+Social History:
+
+The patient is a former smoker with a 30 pack-year history. He denies alcohol use and recreational drug use. He volunteers at a homeless shelter a few times a week.
+
+Family History:
+
+The patient's father had a history of heart problems.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided information.
+
+Assessment:
+
+The patient's symptoms and history are concerning for pneumonia, given the cough, sputum production, and fever. The chest pain could be related to the pneumonia or another underlying condition.
+
+Plan:
+
+The physician recommends further evaluation to determine the cause of the patient's symptoms. The patient should be seen for further evaluation and treatment.

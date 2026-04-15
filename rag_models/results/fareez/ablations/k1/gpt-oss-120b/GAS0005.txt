@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:24:02
+Time: 4.36s
+Tokens: 13,338 in / 1,213 out
+============================================================
+
+Patient Information  
+Name: (parent provided) – Male, 6 years old.  
+Date of Birth: Not supplied.  
+Guardian: Mother accompanying the patient.  
+Residence: Home environment with mother, father, and two older siblings (ages 7 and 10).  
+
+Chief Complaint  
+Acute onset abdominal pain associated with vomiting, watery diarrhea, and fever.
+
+History of Present Illness  
+The patient’s mother reports that three days ago the child began complaining of generalized abdominal discomfort. Two days ago he experienced his first episode of vomiting, initially after lunch and consisting of partially digested food. Since that time he has vomited a total of six times, with the most recent episode consisting of yellowish material without visible bile or blood. Yesterday he developed a fever measured at 38.3 °C (101 °F) accompanied by chills; he required multiple blankets and was noted to be unusually quiet and sleepy for the entire day. Over the past 24 hours he has had six to seven watery bowel movements. He has been irritable initially but is now more lethargic. He denies headache, ear or eye pain, sore throat, cough, shortness of breath, rash, urinary symptoms, joint or muscle aches, and any recent trauma. There is no history of recent dietary changes, sick contacts, travel, or pet exposure. The mother is uncertain whether school exposure could be a factor, as the child returned to school last week.  
+
+Review of Systems  
+Constitutional: Fever 38.3 °C, chills, decreased activity, irritability → positive.  
+Gastrointestinal: Abdominal pain (central, non‑localized), vomiting (6 episodes, non‑bloody, yellowish), watery diarrhea (6‑7 episodes/day) → positive.  
+Respiratory: No cough, dyspnea, wheezing → negative.  
+ENT: No sore throat, ear pain, nasal discharge, eye redness → negative.  
+Genitourinary: No dysuria, polyuria, or hematuria → negative.  
+Musculoskeletal: No myalgia or arthralgia → negative.  
+Neurologic: No headache, dizziness, or altered mental status beyond lethargy → negative.  
+Dermatologic: No rash or skin changes → negative.  
+
+Past Medical History  
+The child has no known chronic medical conditions. Immunizations are reported to be up‑to‑date. No prior hospitalizations or surgeries.  
+
+Surgical History  
+None reported.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Medications  
+No regular home medications.  
+
+Social History  
+The patient lives at home with both parents and two older siblings. No tobacco use, alcohol, or illicit drug exposure in the household. No pets. No recent travel. Attends school; no known sick contacts. Home environment is safe with no reported abuse or safety concerns.  
+
+Family History  
+No reported family history of gastrointestinal disease (e.g., celiac disease, Crohn’s disease), cardiac or pulmonary disorders.  
+
+Physical Examination  
+No objective physical examination findings were documented during this encounter.  
+
+Vital Signs  
+No vital sign measurements were recorded at the time of this visit.  
+
+Laboratory and Diagnostic Studies  
+- COVID‑19 rapid antigen test: ordered.  
+- Complete blood count (CBC) with differential: ordered.  
+- Comprehensive metabolic panel (CMP) to assess electrolytes and renal function: ordered.  
+- Consider stool studies (culture, ova/parasites) if diarrhea persists beyond 48 hours or if clinical deterioration occurs.  
+
+Assessment  
+1. Acute viral gastroenteritis, likely viral in etiology (possible SARS‑CoV‑2 infection).  
+2. Fever secondary to infectious process.  
+
+Differential diagnoses include bacterial gastroenteritis, early appendicitis, and other viral pathogens. Current presentation is most consistent with a self‑limited viral illness.  
+
+Plan  
+1. Diagnostic Testing  
+   • Perform a rapid COVID‑19 test today.  
+   • Obtain CBC and CMP to evaluate for leukocytosis, dehydration, and electrolyte disturbances.  
+   • Reserve stool culture/ova‑parasite testing for if symptoms worsen or persist >48 hours.  
+
+2. Fluid Management  
+   • Encourage oral rehydration with age‑appropriate oral rehydration solution (ORS) or clear fluids every 15–30 minutes as tolerated.  
+   • Monitor for signs of dehydration (decreased urine output, dry mucosa, sunken fontanelle).  
+   • If oral intake remains inadequate, consider intravenous fluids per pediatric protocol.  
+
+3. Symptomatic Treatment  
+   • Antipyretic: Acetaminophen 15 mg/kg PO q6‑8 h PRN for fever or discomfort.  
+   • Antiemetic: Ondansetron 0.15 mg/kg PO single dose if vomiting continues and oral intake is limited.  
+   • No antibiotics at this time given the likely viral etiology.  
+
+4. Disposition and Education  
+   • Mother instructed to keep the child home from school until fever has resolved for at least 24 hours and stools have normalized.  
+   • Emphasized hand hygiene and environmental cleaning to reduce transmission.  
+   • Provided return precautions: worsening abdominal pain, persistent vomiting, inability to retain fluids, bloody stools, high fever >39 °C, signs of dehydration, or new neurologic symptoms.  
+
+5. Follow‑Up  
+   • Call back for COVID‑19 test result within 24 hours.  
+   • Follow‑up with the primary pediatrician in 48‑72 hours, or sooner if symptoms worsen.  
+
+The mother verbalized understanding of the plan and agreed to the outlined recommendations.

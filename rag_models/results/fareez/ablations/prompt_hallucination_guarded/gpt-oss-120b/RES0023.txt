@@ -1,0 +1,74 @@
+Model: openai/gpt-oss-120b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:25:09
+Time: 3.73s
+Tokens: 13,572 in / 1,006 out
+============================================================
+
+Patient Information  
+Name: Aaron Feeney Date of Birth: 12 May 1915 Sex: Male Unit #: 48 Address: 656 Murphy Stravenue, Walpole, Massachusetts 02081  
+
+Chief Complaint  
+Cough of five days’ duration, described as dry and increasingly severe, accompanied by feverish sensations, night sweats, sore throat, and recent loss of smell.
+
+History of Present Illness  
+The patient reports that five days ago he began experiencing a dry cough that has progressively worsened and now occurs throughout the day, disrupting his sleep. He notes a sensation of being “pretty hot” and feels exhausted. He has not measured his temperature but reports feeling “sweaty” and believes he may have a fever. He also reports a single episode of profuse night‑sweating that soaked his shirt the previous night. The cough is not associated with any particular aggravating or relieving factors; it is constant. He denies production of sputum. He describes a sore throat that began after the cough started and is now painful when he coughs. He reports a new loss of smell that began this morning, although taste remains intact. He denies nausea, vomiting, weight loss (in fact, he believes he has gained 5–10 lb), chills, or recent travel. He has not been in contact with anyone he knows to be ill, other than the general exposure encountered while working in a grocery store.
+
+Review of Systems  
+
+- Constitutional: Positive for feverish feeling, fatigue, night sweats, weight gain; negative for chills, recent weight loss.  
+- Respiratory: Positive for dry cough, sore throat, intermittent chest discomfort localized to throat; negative for dyspnea, wheezing, sputum production, hemoptysis.  
+- ENT: Positive for loss of smell; negative for nasal congestion, sinus pain.  
+- Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea.  
+- Cardiovascular: No chest pain other than throat discomfort after coughing; no palpitations reported.  
+- Neurologic: No headache, dizziness, or focal deficits reported.  
+- Psychiatric: No anxiety or depression reported during this visit.  
+- Musculoskeletal, Dermatologic, Hematologic, Endocrine, and other systems: No pertinent positives reported.
+
+Allergies  
+The patient reports environmental allergies, specifically to pollen. He denies any drug allergies.
+
+Past Medical History  
+- Hypertension (treated)  
+- Type 2 diabetes mellitus (treated)  
+- No other chronic illnesses were discussed during this encounter.
+
+Surgical History  
+- Cholecystectomy performed approximately ten years ago.
+
+Current Medications (as reported by the patient)  
+- Ramipril (for hypertension)  
+- Metformin (for diabetes)  
+- Vitamin D supplement  
+
+Family History  
+- Mother: Asthma  
+- Brother: Asthma  
+
+Social History  
+- Occupation: Grocery store employee (full‑time).  
+- Living situation: Resides with wife and two children; wife is currently at home, children are attending high school online.  
+- Alcohol use: Consumes approximately three to four beers on weekends.  
+- Tobacco: None.  
+- Illicit substances: None.  
+
+Objective  
+Vital Signs: Not assessed during this encounter.  
+Physical Examination: Not assessed during this encounter.  
+Laboratory Data: No laboratory results were reviewed or ordered during this visit.
+
+Assessment  
+1. Acute bronchitis – most consistent with a viral upper respiratory infection given the dry cough, sore throat, feverish sensations, and loss of smell.  
+2. Rule‑out COVID‑19 infection – given the current epidemiologic context and the patient’s loss of smell.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing.  
+- Advise the patient and his household to self‑isolate for 14 days pending test results, following local public‑health guidelines.  
+- Symptomatic care: Encourage adequate hydration, rest, and use of over‑the‑counter antipyretics or cough suppressants as needed (no specific prescription was provided).  
+- Monitor temperature at home; if fever exceeds 38 °C (100.4 °F) or symptoms worsen (e.g., increasing dyspnea, chest pain, or inability to maintain oral intake), return for further evaluation.  
+- Follow‑up: The patient will be contacted with test results. If the COVID‑19 test is positive, appropriate public‑health reporting and treatment guidance will be given. If negative and symptoms persist beyond 10 days or deteriorate, consider further work‑up (e.g., chest radiograph).  
+
+No new medications were prescribed during this encounter.  
+
+— End of Note —

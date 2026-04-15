@@ -1,0 +1,106 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:08:18
+Time: 5.72s
+Tokens: 6,508 in / 1,863 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (24 years old)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+
+Chief Complaint  
+Fever and cough of several days’ duration.  
+
+History of Present Illness  
+Ms. Stamm reports that she began feeling “hot” earlier this week and measured a temperature of 38.5 °C (101.3 °F) this morning, which is the first documented measurement. She notes that a dry, non‑productive cough started on Monday, four days ago, and has progressively worsened. Associated symptoms include increasing fatigue, mild body aches, occasional chills at night (without sweats), decreased appetite with a modest weight loss of a few pounds over the past week, and intermittent nausea without vomiting. She describes a pressure‑type headache that has been present on and off for the past several days; she characterizes these as similar to her usual tension‑type headaches and treats them with over‑the‑counter analgesics as needed. She denies sore throat, dysphagia, changes in taste or smell, wheezing, shortness of breath at rest (only brief breathlessness after coughing fits), chest pain, palpitations, dizziness, confusion, or focal neurologic deficits. She reports a mild runny nose but no significant nasal congestion. She has not noticed any sputum production, hemoptysis, or ear or eye discharge. She denies recent sick contacts; the only notable exposure was a trip to a shopping mall last weekend where most patrons were masked. She has not traveled recently.  
+
+Review of Systems  
+Constitutional: Positive for fever, fatigue, chills, mild weight loss; negative for night sweats, dizziness, syncope.  
+HEENT: Positive for dry cough, mild rhinorrhea, occasional headache; negative for sore throat, dysphagia, odynophagia, visual changes, hearing loss, ear pain, eye pain, discharge.  
+Respiratory: Positive for dry cough, brief post‑cough dyspnea; negative for wheezing, persistent shortness of breath, chest pain.  
+Cardiovascular: Negative for chest pain, palpitations, edema.  
+Gastrointestinal: Positive for decreased appetite, nausea; negative for vomiting, abdominal pain, diarrhea, constipation, change in bowel habits.  
+Genitourinary: Negative for dysuria, hematuria, frequency, urgency.  
+Musculoskeletal: Positive for mild body aches; negative for joint swelling or severe myalgias.  
+Neurologic: Positive for tension‑type headache; negative for focal deficits, confusion, memory loss.  
+Skin: No rashes reported.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- High cholesterol, on rosuvastatin for several years, currently controlled.  
+- Pre‑diabetes (most recent A1c 6.2 % six months ago).  
+- Childhood asthma, resolved in early 2021.  
+- Perennial allergic rhinitis, resolved in 2020.  
+- Mitral valve regurgitation, ongoing.  
+- Prior acute bronchitis (2016‑2017) and viral sinusitis (2019).  
+- Recent acute infective cystitis (treated 10 Feb 2024).  
+
+Surgical History  
+- Inguinal hernia repair performed approximately five years ago.  
+
+Social History  
+- Tobacco: None.  
+- Alcohol: Consumes two to three beers on weekends.  
+- Illicit drugs: None.  
+- Marijuana: None.  
+- Living situation: Rents basement unit of a duplex; lives with girlfriend; no known mold or asbestos in her unit.  
+- Occupation: Full‑time employment.  
+
+Family History  
+- No known family history of lung or heart disease.  
+- Grandfather possibly had bladder cancer (uncertain).  
+
+Allergies  
+- Penicillin – hives.  
+
+Current Medications  
+- Rosuvastatin (dose not specified).  
+- Multivitamin (over‑the‑counter).  
+
+Objective  
+Vital Signs (recorded in the electronic record, not contemporaneous to this visit): Heart rate 68 beats/min, respiratory rate 14 breaths/min. No blood pressure, temperature, SpO₂, weight, or height documented at the time of this encounter.  
+Physical Examination: No specific findings documented; patient reports no abnormal lung sounds, no wheezing, and no chest tenderness.  
+
+Laboratory Data  
+Urinalysis performed on 10 Feb 2024 showed:  
+- Protein 4.4 mg/dL, glucose 12.6 mg/dL, specific gravity 1.017, pH 5.2.  
+- Microscopic examination: 13 WBCs/HPF, 2 RBCs/HPF, 3 epithelial cells/HPF.  
+No other laboratory results are available from this visit.  
+
+Assessment  
+1. Acute bronchitis – most likely viral in etiology given dry cough, low‑grade fever, and absence of sputum or focal lung findings.  
+2. Rule‑out COVID‑19 infection – patient expresses concern; a nasopharyngeal swab for SARS‑CoV‑2 has been ordered.  
+3. Pre‑diabetes – stable, last A1c 6.2 % six months ago.  
+4. Hyperlipidemia – controlled on rosuvastatin.  
+
+Plan  
+- COVID‑19 testing: Nasopharyngeal swab obtained today; results expected within 24 hours. Advise patient to self‑isolate for 14 days from symptom onset regardless of test result, given the high community prevalence and symptom profile. Counsel on proper isolation precautions and inform public health authorities as required.  
+- Symptomatic treatment: Recommend acetaminophen 500 mg PO q6‑8 h PRN for fever and headache, ensuring total daily dose does not exceed 3 g. Encourage increased fluid intake, rest, and use of a humidifier as needed.  
+- Cough care: Warm fluids and honey (if not diabetic contraindication) may provide relief; no bronchodilators are indicated at this time given lack of wheeze or asthma exacerbation.  
+- Monitoring: Instruct patient to seek urgent care if she develops high‑grade fever (>39 °C), worsening dyspnea, chest pain, new sputum production, hemoptysis, or signs of dehydration.  
+- Antibiotics: Not indicated at this time; will reassess if bacterial pneumonia becomes suspected based on clinical deterioration or abnormal chest imaging.  
+- Follow‑up: Telephone follow‑up in 48 hours to review COVID test result and symptom trajectory. If symptoms persist beyond 10 days or worsen, schedule an in‑person visit for possible chest radiograph and further evaluation.  
+- Chronic disease management: Continue rosuvastatin as prescribed. Reinforce lifestyle measures for pre‑diabetes – regular aerobic activity (e.g., walking the dog), dietary modifications to reduce simple sugars, and weight monitoring. Arrange routine labs (fasting glucose, A1c) in 3‑6 months.  
+- Preventive care: Patient is up‑to‑date on influenza vaccination; ensure COVID‑19 vaccine series is current (status not documented).  
+
+Disposition  
+Patient was educated on the natural course of acute viral bronchitis, the importance of isolation pending COVID‑19 results, and red‑flag symptoms that would warrant immediate medical attention. No prescriptions were written at this visit. She will be contacted with test results and instructed on next steps.  
+
+Discharge Instructions  
+- Isolate at home for 14 days from symptom onset.  
+- Take acetaminophen for fever or headache as needed.  
+- Maintain adequate hydration and nutrition; small, frequent meals may help with nausea.  
+- Use a soft cough suppressant (e.g., dextromethorphan) if cough is distressing, after confirming no contraindications.  
+- Monitor temperature twice daily; record any rise above 38.5 °C.  
+- Contact clinic if breathing becomes difficult, chest pain develops, fever persists >3 days, or if COVID‑19 test is positive and symptoms worsen.  
+
+Follow‑up Instructions  
+- Telephone follow‑up in 2 days for COVID‑19 result review.  
+- In‑person follow‑up with primary care provider in 1 week or sooner if symptoms change.  
+
+Prepared by: Dr. External Provider  
+Date of encounter: 10 February 2024.

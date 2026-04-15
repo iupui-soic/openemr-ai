@@ -1,0 +1,81 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:35:10
+Time: 3.39s
+Tokens: 8,861 in / 1,415 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn; DOB: April 16, 1965 (59 years old); Sex: Male; Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043; Patient ID: 2046; Encounter Date: May 30, 2024.
+
+Chief Complaint  
+The patient presented to the emergency department with a chief complaint of severe right upper quadrant abdominal pain.
+
+History of Present Illness  
+The patient reports a sharp, localized pain in the right upper quadrant of the abdomen that began approximately three days ago after a lunch meal, roughly 30–60 minutes postprandial. The pain intensified over the past few hours, reaching an intensity of 8 out of 10 on the pain scale prior to arrival. The discomfort is constant, does not radiate, and is exacerbated by movement. The patient has experienced nausea for several days but has not vomited and denies any blood in vomitus. No changes in stool color, consistency, or the presence of blood. The patient’s appetite has decreased, particularly today, and energy levels are low due to the pain. No prior episodes of similar severity were treated in the emergency department. The patient attempted over‑the‑counter acetaminophen and ibuprofen (Advil) with minimal relief.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight change.  
+Respiratory: No cough, dyspnea, or chest pain.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Right upper quadrant abdominal pain, nausea, decreased appetite, no vomiting, no changes in bowel movements, no melena or hematochezia.  
+Genitourinary: No dysuria, hematuria, or frequency changes.  
+Skin: No rashes or skin changes.  
+Neurologic: No headaches, dizziness, or focal deficits.  
+Psychiatric: No anxiety or depression reported beyond a minimal GAD‑7 score of 2.  
+All other systems: No additional symptoms reported.
+
+Past Medical History  
+The patient has a complex medical history including cerebral palsy, spasticity, intellectual disability, osteoporosis, gastroesophageal reflux disease, hypertension, chronic kidney disease secondary to type 2 diabetes mellitus (now with a renal transplant performed on May 29, 2020, followed by a transplant rejection event in June 2020), and a history of kidney transplant failure and rejection. He has also been treated for chronic kidney disease stages 1 through 4 over the years, and he has documented microalbuminuria and proteinuria associated with diabetes. No other significant past surgical procedures besides delivery of his children and a recent kidney transplant.
+
+Surgical History  
+- Delivery of children (obstetric);  
+- Renal transplant on May 29, 2020;  
+- No prior abdominal or hepatobiliary surgeries.
+
+Social History  
+The patient is a bank consultant, currently employed. He reports living with his two children and partner in a stable home environment. He consumes alcohol socially, approximately one to two glasses of wine nightly, and denies any recreational drug use or tobacco smoking. He does not report any recent travel or exposure to illness.
+
+Family History  
+The patient’s mother has gallstones. His father died of a stroke in his sixties. No known family history of gallbladder disease beyond the mother’s gallstones. No documented familial cardiovascular disease or cancer.
+
+Current Medications  
+- Antacids for intermittent heartburn (occasionally after dinner).  
+- No prescription medications reported by the patient at presentation.  
+- The electronic health record lists historical tacrolimus therapy and other immunosuppressants related to his renal transplant, but all entries indicate end dates prior to the encounter, suggesting these were discontinued or replaced.
+
+Physical Examination  
+No information available.
+
+Labs  
+- White blood cell count: 7.58 ×10³/µL (within normal limits).  
+- Hemoglobin: 13.58 g/dL.  
+- Hematocrit: 40.1%.  
+- MCV: 94.5 fL.  
+- MCH: 28.4 pg.  
+- MCHC: 34.2 g/dL.  
+- RDW: 39.9%.  
+- Platelet count: 351.7 ×10³/µL.  
+- Cholesterol: Total 252.4 mg/dL; LDL 168.2 mg/dL; HDL 58.2 mg/dL.  
+- Triglycerides: 130.1 mg/dL.  
+- Liver enzymes, amylase, and lipase were not yet obtained.
+
+Imaging  
+No imaging studies have been performed at the time of this summary.
+
+Assessment  
+The patient’s presentation is most consistent with acute biliary colic or early acute cholecystitis, given the right upper quadrant pain onset after a fatty meal, sharp character, localized tenderness, nausea, and a family history of gallstones. Differential considerations include pancreatitis, hepatic pathology, or peptic ulcer disease; however, the absence of vomiting, epigastric pain, or epigastric tenderness makes pancreatitis less likely. The patient's history of chronic kidney disease and recent renal transplant warrants caution with imaging contrast and medication choices.
+
+Plan  
+1. Obtain an abdominal ultrasound to evaluate the gallbladder, bile ducts, and hepatic parenchyma for stones, wall thickening, or pericholecystic fluid.  
+2. Order serum amylase, lipase, complete metabolic panel, and liver function tests to assess for pancreatitis or hepatic involvement.  
+3. Initiate IV analgesia with ketorolac or acetaminophen as appropriate, monitoring for renal function; consider alternative analgesics if renal impairment persists.  
+4. Administer antiemetics (ondansetron) for nausea.  
+5. Initiate a low-fat diet and encourage small, frequent meals once pain improves.  
+6. Refer to gastroenterology for further evaluation and potential surgical consultation if imaging confirms gallstones or cholecystitis.  
+7. Monitor vital signs and pain scores closely; reassess renal function and drug dosing due to immunosuppressive therapy status.  
+8. Provide discharge instructions: maintain low-fat diet, complete any prescribed medications, avoid alcohol, and report any worsening pain, fever, vomiting, or changes in stool or urine.  
+9. Schedule a follow‑up appointment with the primary care provider or GI within 48–72 hours, and coordinate with the transplant team for medication review and adjustment.  
+
+The patient was advised of the potential need for further imaging and possible surgical intervention. All instructions were confirmed to be understood, and the patient was provided written educational material. No additional surgical or procedural interventions were performed during this encounter.

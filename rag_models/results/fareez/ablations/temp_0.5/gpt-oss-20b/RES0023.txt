@@ -1,0 +1,65 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:17:01
+Time: 3.07s
+Tokens: 13,529 in / 982 out
+============================================================
+
+Patient Information  
+Aaron Feeney, male, born December 5, 1915, residing at 656 Murphy Street, Walpole, Massachusetts 02081.
+
+Chief Complaint  
+The patient presented to the emergency department with a five‑day history of a dry cough that has progressively worsened and is now interfering with sleep.
+
+History of Present Illness  
+Mr. Feeney reports that the cough began approximately five days ago and has become increasingly severe. The cough is dry, occurs throughout the day, and has recently begun to cause throat discomfort. He has experienced a feeling of heat and sweating, which he interprets as a fever, and reports a night of significant sweating that soaked his shirt. He also notes a change in his sense of smell that started this morning, although his taste sensation remains unchanged. No nausea, vomiting, or chest pain aside from throat discomfort has been reported. He denies chills, weight loss, or recent travel. He has had similar respiratory symptoms in childhood, but no prior episodes in adulthood. He has not measured his temperature but feels hot and sweaty.
+
+Review of Systems  
+Constitutional: Reports feeling hot, sweaty, and exhausted; night sweats present. No weight loss; reports weight gain of 5–10 pounds.  
+Respiratory: Dry cough, sore throat, no shortness of breath, no chest pain except throat discomfort.  
+Cardiovascular: No chest pain aside from throat discomfort.  
+Gastrointestinal: No nausea or vomiting.  
+Other: Smell decreased; taste normal. No known drug allergies; environmental allergy to pollen.
+
+Past Medical History  
+Hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4, end‑stage renal disease, and a history of gallbladder removal ten years ago. No other significant past medical conditions reported in the current visit.
+
+Surgical History  
+Cholecystectomy (gallbladder removal) approximately ten years prior.
+
+Medications  
+Current home medications include ramipril and metformin. The patient also takes vitamin D. No other medications were reported during the encounter.
+
+Allergies  
+No known drug allergies. Environmental allergy to pollen.
+
+Social History  
+Mr. Feeney lives with his wife and two children. He works at a grocery store. He consumes 3–4 beers per week. He does not smoke and does not use cannabis or other recreational substances. He has had no recent travel and has had limited contact with sick individuals, primarily at the grocery store.
+
+Family History  
+Brother and mother have asthma. No other significant family history of respiratory disease.
+
+Physical Examination  
+No information available.
+
+Laboratory Results  
+Recent laboratory values (date not specified) include: sodium 143.9 mmol/L, chloride 103.8 mmol/L, creatinine 0.39 mg/dL, glucose 70.6 mg/dL, potassium 4.74 mmol/L, calcium 9.98 mg/dL, and urea nitrogen 17.3 mg/dL. All values are within normal limits or consistent with the patient’s chronic conditions. No recent complete blood count or inflammatory markers were obtained during this visit.
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+Acute viral bronchitis is the most likely diagnosis given the dry cough, sore throat, feverish sensation, and recent onset of anosmia. Differential diagnoses include COVID‑19 and influenza; bacterial infection is less likely due to the absence of purulent sputum, fever spikes, or significant leukocytosis.
+
+Plan  
+1. Obtain a nasopharyngeal swab for SARS‑CoV‑2 testing.  
+2. Advise self‑isolation for 14 days and limit contact with household members until test results are available.  
+3. Continue current antihypertensive (ramipril) and antidiabetic (metformin) therapy.  
+4. Encourage oral hydration, rest, and use of over‑the‑counter analgesics such as acetaminophen for discomfort.  
+5. Consider a cough suppressant (e.g., dextromethorphan) if cough becomes disruptive.  
+6. Monitor temperature and symptom progression; seek medical attention if fever >38.5 °C, worsening cough, shortness of breath, or chest pain develops.  
+7. Follow up with primary care provider within 3–5 days or sooner if symptoms worsen.  
+8. Provide educational materials on hand hygiene, mask use, and symptom monitoring.  
+
+The patient was informed of the plan and agreed to proceed with testing and self‑isolation. He was discharged with instructions to return to the emergency department or call the clinic if his condition deteriorates.

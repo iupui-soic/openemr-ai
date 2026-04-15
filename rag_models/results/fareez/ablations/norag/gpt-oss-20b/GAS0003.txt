@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:17:35
+Time: 3.19s
+Tokens: 17,613 in / 1,095 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: 5 November 1946 (age 80)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+Insurance/ID: 5194  
+
+Chief Complaint  
+The patient presents with acute right upper quadrant abdominal pain that began approximately eight hours ago.  
+
+History of Present Illness  
+The patient reports an aching pain localized to the upper right side of the abdomen. The pain started as intermittent, but over the last five to six hours has become constant. She rates the severity at an 8 out of 10 on a pain scale. The pain is associated with mild nausea but no vomiting. She has not experienced fever, chills, changes in bowel habits, urinary symptoms, or visible blood in stool. The pain is exacerbated by ingestion of fatty or high‑calorie foods such as burgers or fries, suggesting a possible post‑prandial etiology. She has a history of similar post‑prandial abdominal discomfort in the past, which she previously attributed to indigestion. No over‑the‑counter analgesic has provided relief; Tylenol was ineffective. The patient is currently not using any other medications for pain.  
+
+Past Medical History  
+Type 2 diabetes mellitus, managed with oral metformin.  
+Chronic kidney disease stage 2–3, likely secondary to diabetes.  
+Essential hypertension.  
+Gastroesophageal reflux disease.  
+Metabolic syndrome (obesity BMI >30).  
+Chronic migraine without aura.  
+Chronic pain of unspecified origin.  
+Other historical diagnoses include cerebral palsy, spasticity, chronic obstructive bronchitis, and several dental issues; these are not active in the current clinical context.  
+
+Medications (Current)  
+Metformin (dose and frequency not specified).  
+
+Medications (Past/Inactive)  
+The electronic record lists several medications (acetaminophen‑dextromethorphan solution, fluticasone/salmeterol inhaler, albuterol, sodium fluoride gel, insulin isophane/regular, lisinopril) that have end dates prior to the present encounter and are considered inactive.  
+
+Allergies  
+No known drug or environmental allergies reported.  
+
+Social History  
+The patient lives alone in an apartment and is currently unemployed, having been laid off due to the COVID pandemic. She reports walking or running outdoors when weather permits. She drinks one to two glasses of wine per day, typically in the evening, and denies use of tobacco or illicit recreational drugs. She reports no significant changes in appetite or weight.  
+
+Review of Systems  
+General: No fever, chills, or weight loss.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Respiratory: No cough, wheezing, or dyspnea reported.  
+Gastrointestinal: Right upper quadrant abdominal pain, mild nausea, no vomiting, no change in bowel habits, no hematochezia, no melena, no change in stool form.  
+Genitourinary: No dysuria, frequency, urgency, or hematuria.  
+Musculoskeletal: No focal weakness or pain outside the abdomen.  
+Neurologic: No focal deficits reported.  
+Dermatologic: No rashes or jaundice.  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Assessment  
+Acute right upper quadrant abdominal pain of likely biliary origin (e.g., gallbladder disease or biliary colic) versus other post‑prandial causes such as gastritis or early pancreatitis. Differential also includes hepatic causes, although less likely given the absence of jaundice, fever, or hepatic enzyme elevation. The patient's diabetes, chronic kidney disease, and hypertension are relevant comorbidities that may affect both diagnostic evaluation and treatment.  
+
+Plan  
+1. Order laboratory studies: complete blood count, comprehensive metabolic panel, liver function tests, serum amylase and lipase, fasting lipid panel, and urinalysis.  
+2. Order abdominal ultrasound to evaluate gallbladder, biliary ducts, liver parenchyma, and pancreas.  
+3. Continue metformin; monitor blood glucose levels and assess for any hypoglycemic events.  
+4. Initiate pain control with acetaminophen, mindful of renal function; NSAIDs are avoided due to CKD.  
+5. Advise dietary modifications: reduce intake of fatty and high‑calorie foods, increase fiber, and encourage small, frequent meals.  
+6. Monitor for progression of pain, onset of vomiting, fever, or signs of peritonitis; advise patient to return urgently if symptoms worsen.  
+7. Schedule follow‑up appointment in 48–72 hours or sooner if imaging or labs suggest acute cholecystitis, pancreatitis, or another emergent process.  
+8. Provide educational materials regarding gallbladder disease and the importance of timely medical evaluation for abdominal pain.  
+9. Coordinate care with primary physician and possible gastroenterology or surgical referral based on imaging and laboratory findings.  
+
+This plan addresses immediate symptom relief, diagnostic clarification, and management of comorbid conditions while ensuring safe medication use in the context of chronic kidney disease.

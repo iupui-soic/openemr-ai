@@ -1,0 +1,75 @@
+Model: openai/gpt-oss-120b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:26:18
+Time: 4.86s
+Tokens: 7,188 in / 1,409 out
+============================================================
+
+Patient Information  
+Name: Abbey Shala Kunde  
+Date of Birth: 02 March 1986 (Age 40)  
+Sex: Female  
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109  
+BMI (most recent calculation in EMR): 35.84 (obesity)  
+
+Chief Complaint  
+Dry cough, frontal pressure‑type headache, generalized body aches, low‑grade feverish feeling, and one‑day episode of diarrhea.
+
+History of Present Illness  
+The patient reports that three days ago she developed a dry, non‑productive cough. The cough was the first symptom to appear. Two days later she began to experience a frontal pressure‑type headache described as a band‑like squeezing sensation across both sides of the forehead. The headache is intermittent, occurring daily and improving briefly with over‑the‑counter analgesics (acetaminophen and ibuprofen) but returning as the medication wears off. Along with the cough and headache, she notes diffuse muscle aches (“feeling achy all over”) without any inciting physical activity or injury. She also feels “feverish” for the past two days but has not taken a temperature; she denies chills. There is no associated sore throat, nasal congestion, rhinorrhea, chest pain, shortness of breath, or cough with sputum or blood. She reports a single episode of watery diarrhea on the day of the visit, without blood or mucus, and a decreased appetite. She denies nausea, vomiting, loss of taste or smell, night sweats, or recent weight loss. There is no recent travel, known sick contacts, or exposure to animals, dust, or fumes. She has not tried any remedy for the cough. The patient is currently off work and self‑isolating at home. She expresses concern that her illness could be COVID‑19.
+
+Review of Systems  
+Constitutional: Positive for dry cough (3 days), frontal pressure headache, generalized myalgia, subjective fever, diarrhea (1 day), decreased appetite. Negative for chills, night sweats, weight loss, fatigue beyond described malaise.  
+Respiratory: Positive for dry cough. Negative for sputum production, hemoptysis, dyspnea, chest pain, wheezing.  
+ENT: Negative for sore throat, nasal congestion, rhinorrhea, dysphagia, loss of taste or smell.  
+Cardiovascular: Negative for chest pain, palpitations, edema.  
+Gastrointestinal: Positive for diarrhea, decreased appetite. Negative for nausea, vomiting, abdominal pain, blood in stool.  
+Genitourinary: No urinary symptoms reported.  
+Neurologic: Positive for headache. Negative for dizziness, syncope, focal deficits.  
+Psychiatric: No anxiety, depression, or sleep disturbance reported beyond headache‑related discomfort.  
+Social History: Lives with spouse in a townhouse; employed by a pharmacy company with occasional on‑site work; reports mask use and cleaning/distancing protocols at work; currently off work for illness. No tobacco use. Occasional alcohol (3‑4 beers per week). Uses CBD oil occasionally. No illicit drug use.  
+
+Past Medical History  
+The patient reports that she is otherwise healthy and denies any chronic medical conditions. (Note: The electronic health record lists a history of essential hypertension, obesity, recurrent urinary tract infections, and prior viral respiratory illnesses, but the patient does not acknowledge any active problems at this time.)  
+
+Surgical History  
+Right knee anterior cruciate ligament reconstruction performed approximately ten years ago. No other surgeries reported.  
+
+Allergies  
+Food: Peanut allergy (carries an epinephrine auto‑injector).  
+Medications: No known drug allergies.  
+
+Current Medications  
+Multivitamin (daily) and vitamin D supplement. No prescription medications reported.  
+
+Family History  
+Father with hypertension. Grandfather died of lung cancer in his 80s; he was a lifelong smoker. No other significant family medical history reported.  
+
+Social History (expanded)  
+Employed in a pharmacy company with periodic office attendance; adheres to mask‑wearing and distancing measures at work. Lives with wife, who is asymptomatic. No smoking, no illicit drug use. Consumes a few beers on weekends and occasional CBD oil.  
+
+Vital Signs  
+No vital signs were recorded during this encounter. The most recent EMR vitals (from 31 May 2015) show heart rate 98 bpm and respiratory rate 15 breaths/min; temperature, blood pressure, SpO₂, weight, and height were not available at the time of the visit.  
+
+Physical Examination  
+No physical examination findings were documented during this telehealth encounter.  
+
+Laboratory and Diagnostic Data  
+A nasopharyngeal swab for SARS‑CoV‑2 PCR was ordered during the visit. No other laboratory studies were obtained at this time.  
+
+Assessment  
+1. Acute viral upper respiratory infection, likely SARS‑CoV‑2 infection pending test results.  
+2. Acute viral gastroenteritis (diarrhea, decreased appetite).  
+3. Headache secondary to viral illness.  
+
+Plan  
+- SARS‑CoV‑2 PCR testing: specimen collected today; results expected within 24‑48 hours. Patient instructed to self‑isolate for at least 14 days or until cleared per public‑health guidance.  
+- Symptomatic treatment: Continue acetaminophen as needed for fever and headache; ibuprofen may be used for additional pain relief if tolerated. Encourage adequate oral hydration, rest, and nutrition as tolerated.  
+- Diarrhea: Advise a bland diet, oral rehydration solutions, and monitoring for worsening symptoms (e.g., blood in stool, persistent vomiting, high fever). No antidiarrheal medication prescribed at this time.  
+- Return precautions: Advise the patient to seek urgent care if she develops high fever (> 38.5 °C), worsening shortness of breath, chest pain, persistent vomiting, blood in stool, or any new neurologic symptoms.  
+- Follow‑up: The patient will be contacted with her COVID‑19 test result. If the test is negative and symptoms persist beyond 10 days, she will be reassessed for possible alternative diagnoses. Otherwise, routine follow‑up in one week or sooner if symptoms worsen.  
+- Preventive counseling: Reinforce hand hygiene, mask use, and avoidance of close contact with household members while symptomatic. Encourage continuation of her multivitamin and vitamin D.  
+- No antibiotics prescribed, as the presentation is consistent with a viral process.  
+
+The patient voiced understanding of the plan and agreed to isolate and await test results.

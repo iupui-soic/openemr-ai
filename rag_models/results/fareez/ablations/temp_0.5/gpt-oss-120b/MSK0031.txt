@@ -1,0 +1,134 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 04:09:44
+Time: 5.66s
+Tokens: 10,422 in / 1,958 out
+============================================================
+
+Patient Information  
+Name: Albert Turner  
+Date of Birth: September 28, 1931 (Age 94)  
+Sex: Male  
+Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673  
+Medical Record Number: 3055  
+
+Chief Complaint  
+Right hip pain after a fall down a flight of stairs approximately two hours prior to presentation.
+
+History of Present Illness  
+Mr. Turner was brought to the emergency department after slipping on the last few steps of a staircase while descending. He reports that he missed a step, fell forward onto his right side, and landed directly on his right hip. He denied any loss of consciousness, dizziness preceding the fall, or a direct blow to the head. Immediately after the fall he was unable to bear weight on the right lower extremity and experienced “excruciating” pain rated 10/10. The pain is described as sharp when weight is applied and achy when the hip is at rest. He notes swelling, mild erythema, and bruising over the right groin and lateral hip region. The right leg appears slightly externally rotated compared to the left. He is unable to perform hip flexion, extension, abduction, or adduction without severe pain. He reports a brief episode of light‑headedness after the fall while in the ambulance, which he attributes to pain rather than true vertigo. He denies headache, nausea, vomiting, numbness, tingling, weakness, or changes in bowel or bladder function. This is his first fall and first episode of hip pain of this severity.
+
+Review of Systems  
+Constitutional: No fever, chills, recent weight loss, or night sweats.  
+Neurologic: No headache, confusion, memory loss, numbness, or tingling. Light‑headedness noted briefly post‑fall.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or change in urine output.  
+Musculoskeletal: Acute right hip pain with swelling, bruising, and limited range of motion. No prior joint pain other than known osteoarthritis of the hands.  
+Skin: Mild erythema and bruising over right hip; no rashes.  
+Psychiatric: No depression, anxiety, or suicidal ideation reported.  
+Social History: Lives with husband in a small apartment. No tobacco use, no illicit drug use, and consumes alcohol only occasionally (approximately one glass of wine every other day).  
+
+Past Medical History  
+- Osteoarthritis (hand)  
+- Essential hypertension  
+- Chronic kidney disease (stage 3) and history of renal transplant (status not clarified)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- History of anemia  
+
+Surgical History  
+- Coronary artery bypass grafting (date not specified)  
+
+Family History  
+- Father died of myocardial infarction in his 60s.  
+- Mother had non‑melanoma skin cancers treated with topical therapy.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications (as reported by patient)  
+- Ramipril (ACE inhibitor) for hypertension  
+- Vitamin D supplement  
+- Calcium supplement  
+- Multivitamin  
+
+Vital Signs  
+No vital sign data were documented during this encounter.  
+
+Physical Examination  
+General: Alert, oriented, in acute distress due to right hip pain.  
+HEENT: No scalp lacerations or visible head injury.  
+Neck: Supple, no cervical tenderness.  
+Cardiovascular: Regular rate and rhythm, no murmurs noted (assessment limited by patient discomfort).  
+Respiratory: Clear to auscultation bilaterally, no distress.  
+Abdomen: Soft, non‑tender, no distension.  
+Extremities:  
+- Right hip: Visible swelling, mild erythema, and bruising over the lateral aspect and groin. The skin feels warmer than the left side. The right lower extremity is externally rotated. The patient is unable to bear weight on the right side and can only stand with assistance using the left leg. Active and passive range of motion of the right hip is severely limited by pain; any attempt at flexion, extension, abduction, or adduction elicits sharp pain.  
+- Left hip and lower extremities: Normal alignment, no swelling or bruising, full range of motion without pain.  
+Neurologic: Sensation intact to light touch in bilateral lower extremities; distal pulses palpable. No focal deficits.  
+
+Laboratory Data (most recent values available)  
+- Hemoglobin: 16.7 g/dL  
+- Hematocrit: Not reported  
+- White blood cell count: 10.1 ×10³/µL  
+- Platelets: 199 ×10³/µL  
+- Mean corpuscular volume: 93.4 fL  
+- Mean corpuscular hemoglobin concentration: 33.3 g/dL  
+- Electrolytes: Sodium 138 mmol/L, Chloride 111 mmol/L  
+- Creatinine: 1.01 mg/dL (consistent with known chronic kidney disease)  
+- Glucose: 74 mg/dL (serum), urine negative for glucose, ketones, nitrites, leukocyte esterase, and blood.  
+- Urine pH: 7.9  
+
+Imaging  
+No imaging studies have been performed or documented at the time of this encounter.  
+
+Assessment  
+1. Right hip fracture (suspected intracapsular or intertrochanteric) secondary to mechanical fall.  
+2. Acute right hip pain with associated swelling and limited mobility.  
+3. Osteoarthritis of the hands (chronic).  
+4. Essential hypertension, currently on Ramipril.  
+5. Chronic kidney disease stage 3.  
+
+Plan  
+**Orthopedic Management**  
+- Obtain immediate plain radiographs of the pelvis and right hip (AP and lateral views) to confirm fracture pattern and displacement.  
+- If fracture is confirmed, arrange urgent orthopedic consultation for surgical planning (options include internal fixation with screws, hemiarthroplasty, or total hip arthroplasty depending on fracture type, bone quality, and patient functional status).  
+- Until definitive imaging, maintain non‑weight‑bearing status on the right lower extremity. Provide a walker or crutches with assistance from family.  
+
+**Pain Control**  
+- Ibuprofen 400 mg orally every 6 hours with food, provided renal function remains stable and no contraindication exists.  
+- Acetaminophen 650 mg orally every 6 hours as needed for breakthrough pain.  
+- If pain is uncontrolled, consider a short course of low‑dose oral opioid (e.g., oxycodone 5 mg every 4–6 hours PRN) with close monitoring for side effects.  
+
+**Medical Management**  
+- Continue Ramipril for blood pressure control; monitor blood pressure at home and report any symptomatic hypotension.  
+- Continue vitamin D, calcium, and multivitamin supplementation.  
+- Review renal function and adjust any nephrotoxic medications as needed.  
+
+**Supportive Care**  
+- Apply ice packs to the right hip for 20 minutes every 2 hours to reduce swelling, ensuring skin integrity.  
+- Elevate the right lower extremity when seated to decrease edema.  
+- Encourage deep breathing exercises to prevent atelectasis while ambulating minimally.  
+
+**Physical Therapy / Rehabilitation**  
+- Refer to inpatient physical therapy for gentle range‑of‑motion exercises within pain tolerance and for gait training with assistive device.  
+- Post‑operative rehabilitation plan to be coordinated by orthopedics and PT once surgical management is defined.  
+
+**Discharge Instructions**  
+- Strict non‑weight‑bearing on the right leg until cleared by orthopedics.  
+- Use a walker or crutches with assistance from a caregiver for all transfers and ambulation.  
+- Monitor the hip for increasing swelling, worsening redness, fever, or new numbness/tingling; seek immediate medical attention if these occur.  
+- Take prescribed analgesics as directed; do not exceed recommended dosing.  
+- Keep the affected limb elevated when possible and apply ice as described.  
+- Maintain hydration and a balanced diet; continue prescribed antihypertensive therapy.  
+
+**Follow‑Up**  
+- Orthopedic surgery clinic appointment within 24–48 hours (schedule prior to discharge).  
+- Primary care follow‑up in 1 week to review blood pressure, renal function, and overall recovery.  
+- Return to the emergency department for any sudden increase in pain, inability to move the leg, signs of infection, or new neurologic symptoms.  
+
+The patient verbalized understanding of the plan, the need for urgent orthopedic evaluation, and the importance of non‑weight‑bearing precautions. He agreed to the medication regimen and follow‑up schedule.  
+
+Prepared by: _______________________   Date: 2024‑04‑14   (Electronic transcription)

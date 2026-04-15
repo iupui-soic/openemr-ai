@@ -1,0 +1,34 @@
+Model: qwen/qwen3-32b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:20:23
+Time: 3.78s
+Tokens: 12,911 in / 878 out
+============================================================
+
+Patient Information  
+The patient is a six-year-old male who presents with his mother for evaluation of a three-day history of abdominal pain, vomiting, and fever. The patient is otherwise healthy, with no known chronic medical conditions. He is up to date on all immunizations and has no known allergies. He lives at home with his mother, father, and two older siblings, and there are no pets in the household. There is no history of smoking or drug use in the home. The patient has no history of hospitalizations or surgeries. His birth history is unremarkable, with a normal vaginal delivery at 39 weeks and a healthy birth weight of approximately 3 kg. He is meeting all developmental milestones and is described as active and social at school.
+
+Chief Complaint  
+The patient's chief complaint is a three-day history of abdominal pain, vomiting, and fever. He has had six episodes of vomiting over the past two days, with the first episode occurring after lunch. The vomiting has been intermittent and not associated with eating or drinking. He has also had watery diarrhea, with approximately six to seven episodes in the last day. The patient developed a fever of 38.3°C yesterday and has been experiencing chills. He has been more irritable initially and has become increasingly lethargic and sleepy over the past 24 hours.
+
+History of Present Illness  
+The patient's symptoms began three days ago with diffuse abdominal pain. Two days ago, he experienced his first episode of vomiting, followed by additional episodes, totaling six. The vomiting initially consisted of food, but later episodes were described as yellowish in color, without blood or bile. He has had watery diarrhea without blood or mucus. The patient has had a fever, with chills, and has been more withdrawn and less active than usual. There is no associated headache, ear pain, eye symptoms, cough, or shortness of breath. There is no history of recent travel or dietary changes. The patient has not had any urinary symptoms, rashes, or joint or muscle pain. His mother is concerned about the possibility of a gastrointestinal viral illness or, more recently, a potential diagnosis of COVID-19, given the nonspecific nature of the symptoms.
+
+Past Medical History  
+The patient has no known chronic medical conditions. He is up to date on all immunizations and has no history of hospitalizations or surgeries. There is no history of allergies or chronic medications. His developmental history is normal, with no delays in motor or cognitive milestones.
+
+Family History  
+There is no known family history of congenital or genetic disorders, celiac disease, Crohn's disease, or other bowel diseases. One of the patient's older siblings is currently being evaluated for possible asthma, but no diagnosis has been confirmed. There is no known history of heart or lung disease in the family.
+
+Social History  
+The patient lives at home with his parents and two older siblings. There are no pets in the household, and there is no history of smoking or drug use in the home. The patient is currently attending school and has recently returned from in-person classes, which raises the possibility of an infectious cause for his symptoms.
+
+Physical Examination  
+No physical examination findings were documented in the provided data.
+
+Assessment  
+Based on the clinical presentation of abdominal pain, vomiting, diarrhea, and fever, the most likely diagnosis is acute gastroenteritis. The symptoms are consistent with a viral etiology, and the absence of blood in the stool or vomitus supports this. The patient's recent return to in-person schooling increases the likelihood of an infectious cause. The possibility of a gastrointestinal manifestation of a viral illness, including a potential diagnosis of COVID-19, has been considered.
+
+Plan  
+The patient will undergo further evaluation with a COVID-19 test and blood work, including a complete blood count, electrolytes, and renal function tests. The patient is at risk for dehydration due to the frequency of vomiting and diarrhea, and hydration will be a key component of management. The patient will be monitored for signs of worsening symptoms, including persistent vomiting, high fever, or signs of dehydration. If symptoms persist or worsen, further evaluation or hospitalization may be necessary. The patient's mother will be advised to continue monitoring symptoms and to seek immediate medical attention if the patient becomes more lethargic, shows signs of dehydration, or develops severe abdominal pain.

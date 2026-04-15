@@ -1,0 +1,72 @@
+Model: qwen/qwen3-32b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:43:49
+Time: 4.51s
+Tokens: 14,860 in / 1,140 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old male with a complex medical history including hypertension, type 2 diabetes mellitus, chronic kidney disease stage 4 progressing to end-stage renal disease, a history of coronary artery bypass grafting, atrial fibrillation, and a history of renal transplant. He is currently employed full-time and lives with his wife and two children. His social history is notable for occasional alcohol consumption (3-4 beers on the weekend) and no history of tobacco or illicit drug use. He reports environmental allergies, specifically to pollen, and has no known drug allergies.  
+
+Chief Complaint  
+The patient presents with a five-day history of a progressively worsening dry cough, associated with fatigue, fever, and night sweats. The cough is persistent and has begun to cause throat pain and chest discomfort.  
+
+History of Present Illness  
+The patient reports that his cough started five days ago and has progressively worsened since onset. It is dry in nature and has been persistent throughout the day, disrupting sleep. He also notes that after episodes of coughing, he experiences chest discomfort, which he localizes to the throat area. He describes feeling feverish and sweaty, with a recent episode of night sweats the previous night. He denies chills, nausea, vomiting, or weight loss, but reports unintentional weight gain of approximately 5-10 pounds. The patient denies any recent travel and has no known exposure to sick individuals, though he works in a grocery store and has had general public exposure.  
+
+Review of Systems  
+Constitutional: The patient reports fatigue, fever, and night sweats.  
+Respiratory: Dry cough, throat pain, and mild chest discomfort.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, or diarrhea.  
+Genitourinary: No dysuria, hematuria, or changes in urinary habits.  
+Neurological: No headaches or dizziness.  
+Musculoskeletal: No joint pain or muscle aches.  
+Psychiatric: No mood changes or anxiety.  
+Dermatological: No rashes or skin changes.  
+Endocrine: No changes in appetite or thirst.  
+Hematologic: No bruising or bleeding.  
+Allergic/Immunologic: No new allergic symptoms.  
+
+Past Medical History  
+The patient has a long-standing history of hypertension, type 2 diabetes mellitus, chronic kidney disease progressing to end-stage renal disease, a history of coronary artery bypass grafting, atrial fibrillation, and a history of renal transplant. He also has a history of hyperlipidemia, metabolic syndrome, and osteoporosis.  
+
+Past Surgical History  
+The patient has a history of cholecystectomy performed approximately ten years ago.  
+
+Medications  
+The patient is currently taking Ramipril and Metformin for hypertension and diabetes, respectively. He also takes Vitamin D as a supplement.  
+
+Allergies  
+No known drug allergies. Environmental allergies to pollen.  
+
+Family History  
+The patient reports a family history of asthma in both his mother and brother.  
+
+Social History  
+The patient is employed full-time at a grocery store and lives with his wife and two children. He consumes alcohol occasionally (3-4 beers per week), does not smoke, and does not use any recreational drugs.  
+
+Objective  
+Vital signs were not fully documented in the OpenEMR extract, but the patient's height is 166.3 cm and BMI is 31.53, indicating obesity.  
+
+Physical Examination  
+No physical examination findings were documented in the OpenEMR extract.  
+
+Laboratory Results  
+Recent lab results include a creatinine level of 0.39 mg/dL, glucose of 70.64 mg/dL, sodium of 143.88 mmol/L, potassium of 4.74 mmol/L, and urea nitrogen of 17.26 mg/dL. Additional results are available but not relevant to the current presentation.  
+
+Imaging  
+No imaging studies were performed or documented in the OpenEMR extract.  
+
+Assessment  
+The patient presents with symptoms concerning for an infectious process, likely viral in nature. Given the current clinical context and the presence of fever, cough, and night sweats, a concern for a viral respiratory illness, including but not limited to COVID-19, is raised. The dry cough with associated throat pain and fatigue is consistent with acute bronchitis.  
+
+Plan  
+The patient will undergo a nasopharyngeal swab for SARS-CoV-2 testing. Given the potential for infectious transmission, the patient and his household are advised to self-isolate for 14 days. The patient will be monitored for any worsening symptoms, including increased shortness of breath, persistent chest pain, or worsening fever. He will be advised to continue his current medications and to monitor his symptoms closely. Follow-up with a primary care provider is recommended after the isolation period.  
+
+Discharge Instructions  
+The patient is to remain in self-isolation at home for 14 days. He should monitor for worsening symptoms and seek immediate medical attention if he experiences difficulty breathing, persistent chest pain, or a high fever. He is advised to continue his prescribed medications and to maintain hydration and rest. The patient and his family should avoid contact with others during the isolation period.  
+
+Follow-Up Instructions  
+The patient is to follow up with his primary care provider after the 14-day isolation period for further evaluation and management. A repeat evaluation may be necessary if symptoms persist or worsen. The results of the SARS-CoV-2 test will guide further recommendations.

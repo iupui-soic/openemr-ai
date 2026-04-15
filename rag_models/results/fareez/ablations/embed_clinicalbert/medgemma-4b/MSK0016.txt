@@ -1,0 +1,34 @@
+Model: google/medgemma-4b-it
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 05:59:27
+Time: 23.32s
+Tokens: 11,883 in / 351 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Name: Abe Huels
+DOB: 1961-09-02
+Sex: Male
+Unit Number: 275
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000
+
+Chief Complaint: The patient presents with numbness and tingling in the left hand, accompanied by a burning sensation.
+
+History of Present Illness:
+
+The patient reports experiencing numbness and tingling in the left hand, described as a burning sensation, for approximately four to five months. Initially, the symptoms were brief, lasting only a few minutes, and could be alleviated by shaking the hand or wrist. However, the symptoms have worsened over the past few weeks, now occurring more frequently, including at night. The patient reports that the symptoms are persistent and come and go. Advil and Tylenol have not provided significant relief, and the only factor that seems to help is avoiding use of the affected hand.
+
+Physical Exam:
+
+The physical exam revealed no signs of redness, swelling, or deformities in the left arm. Palpation of the wrist and elbow elicited no pain. Tinel's sign and Phalen's sign were positive, indicating a possible diagnosis of carpal tunnel syndrome.
+
+Assessment:
+
+Based on the patient's history and physical exam findings, the most likely diagnosis is carpal tunnel syndrome.
+
+Plan:
+
+The patient was advised to modify work habits to reduce repetitive hand movements. Wrist splinting was recommended for nighttime use. Non-steroidal anti-inflammatory drugs (NSAIDs) were suggested for pain relief. If these measures are ineffective, surgical intervention may be considered. The patient was also advised to address underlying conditions such as hypothyroidism and obesity.

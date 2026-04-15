@@ -1,0 +1,125 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:14:33
+Time: 6.39s
+Tokens: 9,114 in / 1,974 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (92 years old)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with acute left‑sided chest pain that began approximately 30 minutes ago while shoveling snow.  
+
+History of Present Illness  
+Mr. Crona reports a sudden onset of a dull, pressure‑type pain localized to the left side of his chest. He rates the pain as 7/10 in intensity. The discomfort began while he was performing moderate exertion (shoveling) and has persisted without relief. He notes that the pain worsens with movement, walking, and when lying down, and is slightly alleviated by no specific measure. He denies radiation of the pain to the arm, jaw, or back. Associated symptoms include shortness of breath that started shortly after the pain began, a sensation of feeling “hot,” and a measured oral temperature of 38 °C. He also describes a sensation of his heart beating faster, which he usually experiences only during sports. He denies nausea, vomiting, cough, sputum production, recent trauma to the chest, fever beyond the recorded temperature, leg swelling, dizziness, or syncope. He has never experienced similar chest pain in the past.  
+
+Review of Systems  
+Constitutional: Positive for low‑grade fever (38 °C) and feeling “hot”; negative for chills, weight loss, or fatigue.  
+Respiratory: Positive for shortness of breath; negative for cough, wheeze, or hemoptysis.  
+Cardiovascular: Positive for chest pressure and palpitations; negative for orthopnea, paroxysmal nocturnal dyspnea, or known arrhythmias.  
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, or dysphagia.  
+Genitourinary: Negative for dysuria or urinary frequency.  
+Neurologic: Negative for headache, dizziness, or syncope.  
+Musculoskeletal: No recent musculoskeletal injury other than a rugby tackle yesterday, which he reports did not cause chest discomfort.  
+Skin: No rashes or lesions.  
+
+Allergies  
+The patient reports no known drug allergies.  
+
+Past Medical History  
+- Hypertension (essential)  
+- Hyperlipidemia (high cholesterol)  
+- Ischemic heart disease (coronary artery disease)  
+- Prediabetes / type 2 diabetes mellitus with microalbuminuria and proteinuria  
+- Chronic kidney disease (stage 1‑4) and end‑stage renal disease with prior renal transplantation  
+- Obesity (BMI ≈ 31)  
+- Obstructive sleep apnea  
+- Chronic low‑back, neck, and generalized pain  
+- Seizure disorder (history of single seizure)  
+- Anemia  
+
+Surgical History  
+The patient reports no prior surgeries.  
+
+Social History  
+Mr. Crona lives in a house with his parents. He is employed as a city bus driver. He reports running once a week on Sundays and describes his diet as “fairly balanced,” though he eats out frequently. He has a 20‑year history of smoking approximately 0.5–1 pack of cigarettes per day. He does not consume alcohol. He denies current marijuana use but admits to occasional crystal‑methamphetamine use (approximately twice per month) for the past seven years, with the most recent use six days ago. No caffeine use was reported.  
+
+Family History  
+No known family history of premature myocardial infarction, coronary artery disease, or cancer.  
+
+Current Medications (as reported by the patient)  
+- Lisinopril (for hypertension)  
+- Rosuvastatin (for hyperlipidemia)  
+- Multivitamin  
+
+Objective  
+
+Vital Signs  
+No current vital sign measurements were documented during this encounter.  
+
+Physical Examination  
+A focused physical examination was not performed; therefore, no objective findings are available.  
+
+Laboratory Data (most recent)  
+- Serum creatinine: 0.72 mg/dL (within normal limits)  
+- Serum glucose: 84.5 mg/dL  
+- Potassium: 5.03 mmol/L (first value) and 4.31 mmol/L (second value)  
+- Calcium: 9.47 mg/dL and 10.06 mg/dL (two separate measurements)  
+- Blood urea nitrogen: 19.21 mg/dL and 17.43 mg/dL  
+- Sodium: 141.55 mmol/L  
+- Chloride: 101.22 mmol/L  
+- Total CO₂: 20.67 mmol/L and 28.44 mmol/L (two values)  
+- Low‑density lipoprotein cholesterol: 140.6 mg/dL  
+- Total cholesterol: 185.3 mg/dL  
+- Alanine aminotransferase (ALT): 21.8 U/L  
+- PHQ‑2 score: 2 (positive screen)  
+- AUDIT‑C total score: 1 (low‑risk alcohol use)  
+
+Imaging  
+No imaging studies have been obtained at this time.  
+
+Assessment  
+1. Acute chest pain with exertional onset, pressure quality, associated dyspnea, low‑grade fever, and palpitations in a 92‑year‑old male with multiple cardiovascular risk factors (known coronary artery disease, hypertension, hyperlipidemia, diabetes, obesity, and a history of tobacco use). The presentation is concerning for an acute coronary syndrome (unstable angina or non‑ST‑segment elevation myocardial infarction).  
+2. Possible contribution of recent stimulant exposure (crystal methamphetamine) to myocardial ischemia and tachycardia.  
+3. Shortness of breath likely secondary to cardiac ischemia or underlying pulmonary limitation; differential includes heart failure exacerbation versus pulmonary embolism, though no risk factors for PE are evident.  
+4. Fever of 38 °C may represent a non‑specific inflammatory response or early infection; no focal source identified.  
+5. Chronic medical conditions as listed in past medical history, notably end‑stage renal disease with transplant, which may affect medication choices and contrast use.  
+
+Plan  
+
+Diagnostic Work‑up  
+- Obtain a 12‑lead electrocardiogram immediately to assess for ischemic changes.  
+- Draw cardiac biomarkers (troponin I or T) at presentation and repeat in 3–6 hours.  
+- Perform a bedside chest radiograph to evaluate for pulmonary pathology, aortic pathology, or pulmonary edema.  
+- Order basic metabolic panel, complete blood count, and repeat inflammatory markers (CBC with differential, CRP) given the fever.  
+- Consider a point‑of‑care ultrasound to assess cardiac function and rule out pericardial effusion if clinically indicated.  
+
+Therapeutic Interventions  
+- Initiate cardiac monitoring and continuous pulse oximetry.  
+- Administer supplemental oxygen to maintain SpO₂ ≥ 94 % if needed.  
+- Give chewable aspirin 325 mg now, followed by 81 mg daily.  
+- Provide sublingual nitroglycerin 0.4 mg every 5 minutes up to three doses for ongoing chest discomfort, monitoring blood pressure closely.  
+- Initiate intravenous morphine 2–4 mg if pain remains severe and not relieved by nitroglycerin, with careful monitoring for respiratory depression.  
+- Start a beta‑blocker (e.g., metoprolol succinate) only after confirming no contraindications (e.g., severe bradycardia, acute decompensated heart failure).  
+- Consider anticoagulation with low‑molecular‑weight heparin if ACS is confirmed and renal function permits.  
+- Obtain a statin loading dose (e.g., high‑intensity rosuvastatin) if not already at target, given the acute coronary syndrome protocol.  
+
+Disposition  
+- Admit to the cardiac telemetry unit for further observation, serial ECGs, and troponin trend.  
+- Consult cardiology for possible early invasive strategy (cardiac catheterization) once the patient is hemodynamically stable and after evaluating renal function and contrast risk.  
+
+Additional Management  
+- Counsel on smoking cessation; offer nicotine replacement therapy or pharmacologic aids.  
+- Discuss avoidance of stimulant drugs, emphasizing the cardiovascular risks of methamphetamine.  
+- Review home antihypertensive regimen; consider adjusting lisinopril dose if blood pressure is elevated on admission.  
+- Ensure renal transplant immunosuppression is continued as per transplant team recommendations; avoid nephrotoxic agents.  
+- Arrange follow‑up with primary care within 1 week after discharge and cardiology within 2 weeks.  
+- Provide education on warning signs that require emergent care (worsening chest pain, syncope, new shortness of breath).  
+
+Disposition Summary  
+The patient will be admitted for evaluation of possible acute coronary syndrome, with immediate ECG, cardiac enzymes, and appropriate medical therapy initiated in the emergency department. All further management will be guided by the results of the diagnostic work‑up and specialist consultation.

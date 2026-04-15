@@ -1,0 +1,134 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:29:15
+Time: 3.58s
+Tokens: 18,264 in / 2,156 out
+============================================================
+
+**Patient Information**  
+Name: **Ali Hayes** DOB: **November 5, 1946** Age: **80 years** Sex: **Female** Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+Insurance & payer: (not specified)  
+Chief Complaint: “Right‑upper‑quadrant abdominal pain that started several hours ago and has become constant and severe.”  
+
+---  
+
+### SOAP Summary  
+
+**Subjective**  
+The patient reports an *aching* pain localized to the right side of the abdomen, primarily in the right upper quadrant, that began approximately **8 hours** ago. He describes the pain as a continuous ache, now rated **8/10** on the pain scale, and notes that it has worsened over the last 5–6 hours. Pain is *not* radiating elsewhere and is aggravated by food—particularly fatty or “outdoor” meals—though he has not yet eaten since onset. He has experienced *nausea* but denies vomiting, fever, chills, diarrhea, constipation, or urinary symptoms. He reports mild fatigue and reduced appetite, likely secondary to the pain.
+
+He has tried **acetaminophen** (Tylenol) with no relief. No other analgesics or antiemetics have been taken. He is currently on **metformin** for type 2 diabetes; other home medications listed in the EMR include lisinopril, albuterol, and fluticasone; no recent changes have been noted. He denies smoking, recreational drug use, or recent travel. His social history includes living alone in an apartment, occasional alcohol intake (one to two glasses of wine per day), and an employment history that currently includes a layoff due to COVID‑19.  
+
+**Past Medical History (PMH)**  
+- Type 2 diabetes mellitus (poorly controlled; recent HbA1c not available but CKD suggests longstanding disease)  
+- Chronic kidney disease, stage 3 (baseline creatinine ~1.9 mg/dL)  
+- Hypertension (on lisinopril)  
+- Gastroesophageal reflux disease (GERD)  
+- Obesity (BMI ~28)  
+- Chronic pain (likely musculoskeletal)  
+- Migraine without aura (chronic)  
+
+**Surgical History**  
+- Wisdom‑teeth extraction (teenage years) – otherwise no abdominal surgery.  
+
+**Family History**  
+- Father had myocardial infarction in his 60s. No known family history of inflammatory bowel disease, colon cancer, or other significant GI disease.  
+
+**Review of Systems** (relevant positives/negatives)  
+- Constitutional: Mild fatigue, no fever, weight loss, or night sweats.  
+- Cardiovascular: Denies chest pain, palpitations, orthopnea.  
+- Respiratory: No cough, wheeze, or dyspnea.  
+- GI: Right‑upper‑quadrant abdominal pain, nausea, no vomiting, no changes in bowel habits, no melena or hematochezia.  
+- GU: No dysuria, frequency, or hematuria.  
+- Dermatologic: No rashes or jaundice.  
+
+**Allergies**: None reported.  
+
+---  
+
+**Objective**  
+*Vitals:* Not documented in the encounter.  
+*Physical Examination:* Not documented; no signs of peritonitis, guarding, rebound tenderness, or Murphy’s sign noted in the record.  
+
+*Laboratory Data (selected key results):*  
+| Test | Result | Comment |
+|------|--------|---------|
+| Serum creatinine | **1.97 mg/dL** | CKD stage 3 (consistent with PMH) |
+| eGFR (MDRD) | **36.9 mL/min/1.73 m²** | CKD stage 3 |
+| Serum sodium | 136 mmol/L | Normal |
+| Serum chloride | 104 mmol/L | Normal |
+| Serum calcium | 9.27 mg/dL | Normal |
+| Urine specific gravity | 1.038 | Mildly concentrated |
+| Urine protein (dipstick) | **214 mg/dL** | Significant proteinuria |
+| Urine ketones | 0.93 mg/dL | Trace |
+| Urine glucose | 1.53 mg/dL | Normal |
+| Urine leukocyte esterase | Negative (not reported) | No infection indicated |
+| Urine nitrite | Negative (not reported) | No infection indicated |
+
+No complete blood count, liver function tests, pancreatic enzymes, or abdominal imaging results are available at this time.  
+
+---  
+
+**Assessment**  
+1. **Acute abdominal pain, right‑upper‑quadrant** – likely biliary in etiology (e.g., biliary colic or acute cholecystitis) given the location, aggravation by fatty food, and lack of peritoneal signs. Appendicitis is less probable given the pain location and absence of migration typical of that condition.  
+2. **Type 2 diabetes mellitus** – well‑documented in PMH; current metformin therapy continues.  
+3. **Chronic kidney disease, stage 3** – baseline creatinine 1.9 mg/dL, eGFR 37 mL/min; requires cautious medication selection.  
+4. **Hypertension** – on lisinopril; blood pressure not documented but presumably controlled.  
+5. **GERD** – history of reflux disease; no current symptoms.  
+
+**Differential Diagnosis**  
+- Acute cholecystitis / biliary colic  
+- Acute pancreatitis (though epigastric pain and elevated enzymes not yet assessed)  
+- Peptic ulcer disease or gastritis (consider GERD history)  
+- Hepatobiliary obstruction (e.g., choledocholithiasis)  
+- Gastroenteritis (less likely given no GI symptoms or fever)  
+- Musculoskeletal pain (unlikely given acute onset and nausea)  
+
+---  
+
+**Plan**  
+
+1. **Diagnostic Work‑up**  
+   - **Abdominal ultrasound** (US) of the RUQ to evaluate gallbladder wall thickening, pericholecystic fluid, gallstones, and hepatic biliary ducts.  
+   - **Complete blood count (CBC)** – to screen for leukocytosis.  
+   - **Comprehensive metabolic panel (CMP)** – to assess liver enzymes (ALT, AST, ALP, bilirubin) and confirm renal function.  
+   - **Serum lipase and amylase** – to rule out pancreatitis.  
+   - **Consider abdominal CT if US is inconclusive** or if suspicion of other intra‑abdominal pathology remains.  
+
+2. **Pain Management**  
+   - Continue **acetaminophen** (max 2 g/day) for analgesia; avoid NSAIDs due to CKD and GI risk.  
+   - If pain remains uncontrolled, consider **opioid** (e.g., hydromorphone 0.5 mg q4h PRN), monitoring for respiratory depression.  
+
+3. **Nausea/Emesis**  
+   - Administer **ondansetron 4 mg IV q8h PRN** or oral as tolerated.  
+
+4. **Fluid & Nutrition**  
+   - Encourage adequate hydration; ½ L orally or IV fluids if oral intake remains limited.  
+   - Advise a bland, low‑fat diet while awaiting imaging; avoid large fatty meals until diagnosis is clarified.  
+
+5. **Medication Review**  
+   - Confirm **metformin** continuation (renal function acceptable).  
+   - Verify dosing of **lisinopril**, **albuterol**, and **fluticasone** are appropriate and unchanged.  
+   - No new medications will be initiated until imaging/lab results are available.  
+
+6. **Monitoring & Safety**  
+   - Reassess pain, vital signs, and mental status every 4 hours.  
+   - Watch for signs of peritoneal irritation, worsening abdominal distention, or new systemic symptoms (fever, rigors).  
+
+7. **Disposition**  
+   - **Outpatient** if imaging and labs do not reveal acute pathology requiring surgery and pain is manageable; otherwise, **admit** for further evaluation, pain control, and possible surgical consultation.  
+
+8. **Discharge / Follow‑up Instructions (if discharged)**  
+   - Return to the ER immediately if abdominal pain worsens, vomiting becomes persistent, fever develops, or new symptoms such as jaundice or shoulder tip pain appear.  
+   - Keep scheduled follow‑up with primary care and **endocrinology** to review diabetes control.  
+   - Continue current medications unchanged.  
+   - Hydrate adequately; avoid high‑fat foods until clearance.  
+
+9. **Follow‑up**  
+   - Schedule an in‑person follow‑up within **24–48 hours** post‑discharge to review imaging, labs, and adjust therapy accordingly.  
+
+---  
+
+**Summary**  
+An 80‑year‑old woman presents with acute, severe right‑upper‑quadrant abdominal pain that has persisted for 8 hours, accompanied by nausea and minimal appetite. The pain is not relieved by acetaminophen and is aggravated by fatty food. Physical findings are not documented, but there are no signs of peritonitis. Laboratory data demonstrate chronic kidney disease and significant proteinuria but no evidence of infection. The most likely diagnosis is biliary colic or acute cholecystitis; differential includes pancreatitis and peptic ulcer disease. Immediate abdominal ultrasound and basic labs will clarify the etiology. Pain control with acetaminophen and cautious use of opioids is advised, with avoidance of NSAIDs due to renal impairment. The patient will be monitored closely, and further management will be guided by imaging results; surgical consultation is on standby if findings suggest acute cholecystitis or another emergent biliary pathology.

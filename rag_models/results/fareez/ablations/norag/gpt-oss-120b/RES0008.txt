@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:13:07
+Time: 5.26s
+Tokens: 10,115 in / 1,805 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Medical Record Number: 475  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of worsening cough, dyspnea, right‑sided pleuritic chest pain, and fever.
+
+History of Present Illness  
+Mr. Schneider reports that three days ago (approximately Monday) he began to feel unwell with a productive cough that has increased in frequency to about two episodes per hour. The sputum is described as dark greenish‑yellow and is accompanied by a sharp, right‑sided chest pain that radiates to the upper abdominal area. The pain is worsened by coughing and by taking a deep breath after a coughing episode but is not related to exertion or activity. He notes feeling “hot” and measured a temperature of 38.6 °C earlier in the day, prompting his visit. He denies any recent changes in routine, exposure to known irritants, or identifiable triggers for the cough. He has a long‑standing, smoker’s cough related to a 30‑year history of smoking about one pack per day, but this episode is distinct in its productive nature and associated systemic symptoms. He has taken acetaminophen and ibuprofen over the past few days with only modest relief of the chest discomfort. He denies any recent travel, but he volunteers several times per week at a local homeless shelter, increasing his exposure to other individuals. He has not been in close contact with anyone known to be ill.
+
+Review of Systems  
+- Constitutional: Fever (38.6 °C), chills reported.  
+- Respiratory: Cough productive of dark green‑yellow sputum, dyspnea, no reported wheezing or hemoptysis.  
+- Cardiovascular: Pleuritic chest pain on the right; denies palpitations, orthopnea, or peripheral edema.  
+- Gastrointestinal: No nausea, vomiting, or change in bowel habits.  
+- Genitourinary: No dysuria or flank pain.  
+- Musculoskeletal: No joint pain.  
+- Neurologic: No headaches or focal deficits.  
+- Dermatologic: No rash.  
+- Psychiatric: No anxiety or depression reported today.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (on insulin, metformin, and an SGLT‑2 inhibitor).  
+- Essential hypertension (on amlodipine).  
+- Chronic kidney disease (stage 4) secondary to diabetic nephropathy; history of renal transplant (ongoing).  
+- Ischemic heart disease with prior coronary artery bypass grafting.  
+- Hyperlipidemia (on simvastatin).  
+- History of bronchitis associated with smoking.  
+- Severe anxiety/panic disorder.  
+- Prior episodes of drug overdose and intimate partner abuse (historical).  
+
+Past Surgical History  
+- Coronary artery bypass grafting (date not specified).  
+- Renal transplant (performed in 2017).  
+
+Medications (current as documented)  
+- Metformin (dose not specified).  
+- SGLT‑2 inhibitor (dose not specified).  
+- Insulin (dose not specified).  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate 100 mg extended‑release daily.  
+- Hydrochlorothiazide 25 mg daily.  
+- Nitroglycerin spray as needed.  
+- Albuterol inhalation solution and metered‑dose inhaler (as needed).  
+- Multivitamin daily.  
+- Acetaminophen 500 mg PRN (used today).  
+- Ibuprofen (used today).  
+
+Allergies  
+Patient reports environmental allergies only; no known medication allergies.
+
+Family History  
+Father experienced a myocardial infarction in his 70s. Mother had hypertension. No other significant family history of respiratory or cardiac disease reported.
+
+Social History  
+- Tobacco: 1 pack per day for approximately 30 years; continues to smoke.  
+- Alcohol: None.  
+- Illicit drugs: None.  
+- Living situation: Resides with his wife in a house in Wayland, MA.  
+- Occupation: Retired; volunteers at a homeless shelter several times per week.  
+
+Physical Examination  
+No physical examination findings documented.  
+Vital signs: Temperature recorded by patient at 38.6 °C; other vital signs not available at the time of documentation.  
+
+Laboratory and Diagnostic Data (most recent, historical)  
+- Ferritin markedly elevated at 1547 µg/L.  
+- INR markedly prolonged at 4.70.  
+- Estimated glomerular filtration rate 9.5 mL/min/1.73 m² (severe renal impairment).  
+- Bicarbonate 23.6 mmol/L, carbon dioxide pressure 35.7 mm Hg.  
+- Complete blood count: Hematocrit 40.4 %, neutrophils 2.79 ×10³/µL, lymphocytes 22.8 %, eosinophils 3.2 %.  
+- No current arterial blood gas values.  
+- Prior imaging and cultures not available in this encounter.  
+
+Assessment  
+1. Community‑acquired pneumonia, likely bacterial given productive purulent sputum, fever, and pleuritic chest pain.  
+2. Acute dyspnea secondary to pneumonia.  
+3. Exacerbation of chronic bronchitic symptoms in the setting of active tobacco use.  
+4. Type 2 diabetes mellitus with end‑stage renal disease (GFR ≈ 9 mL/min).  
+5. Hypertension, ischemic heart disease, and prior coronary artery bypass grafting.  
+6. Elevated INR suggests over‑anticoagulation; risk of bleeding must be considered in management.  
+
+Plan  
+Diagnostic  
+- Obtain a chest radiograph urgently to confirm infiltrate and assess extent of pneumonia.  
+- Order sputum Gram stain and culture with sensitivity.  
+- Obtain complete blood count with differential, comprehensive metabolic panel, and repeat renal function tests.  
+- Repeat INR; consider reversal if >3.0 and invasive procedures are contemplated.  
+- Consider arterial blood gas to evaluate oxygenation and acid‑base status given reported dyspnea.  
+- Blood cultures x2 given febrile presentation.  
+
+Therapeutic  
+- Initiate empiric antibiotic therapy targeting typical and atypical community pathogens; given renal impairment, consider intravenous ceftriaxone 1 g daily plus azithromycin 500 mg on day 1 then 250 mg daily, adjusting doses for renal function.  
+- Provide supplemental oxygen to maintain SpO₂ ≥ 94 % if hypoxemia is documented.  
+- Continue acetaminophen for fever; advise against further NSAID use pending assessment of renal function and INR.  
+- Reinforce smoking cessation; offer referral to tobacco cessation counseling and nicotine replacement therapy.  
+- Review and adjust antihypertensive regimen as needed in the context of acute illness.  
+- Monitor blood glucose closely; adjust insulin dosing as infection may increase requirements.  
+
+Disposition  
+- Admit to the medical floor for close monitoring of respiratory status, renal function, and anticoagulation status, given severe chronic kidney disease and elevated INR.  
+- Infectious disease and pulmonary consultations to be considered.  
+
+Follow‑up  
+- Re‑evaluate clinical status at least twice daily while inpatient.  
+- Repeat chest radiograph in 48 hours to assess response.  
+- Outpatient follow‑up with primary care provider within one week of discharge to reassess diabetes, hypertension, renal function, and smoking cessation progress.  
+
+Patient Education  
+- Discussed signs of worsening respiratory distress, such as increasing shortness of breath, chest pain, or change in mental status, and instructed the patient to seek immediate care if they occur.  
+- Reviewed importance of medication adherence, especially insulin and antihypertensive agents, and the need to avoid over‑the‑counter NSAIDs given renal disease.  
+- Provided education on proper hand hygiene and infection control measures, particularly given his volunteer work.  
+
+Signature  
+[Physician’s name], MD  
+Date: April 14, 2026

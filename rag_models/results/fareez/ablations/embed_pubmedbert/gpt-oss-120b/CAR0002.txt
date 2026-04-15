@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:53:40
+Time: 5.45s
+Tokens: 8,961 in / 1,730 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (Age 92)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with acute onset left‑sided chest pressure that began approximately 30 minutes ago while shoveling his driveway.
+
+History of Present Illness  
+Mr. Crona reports that the chest discomfort started suddenly about half an hour ago during physical exertion (shoveling). He describes the sensation as a dull, pressure‑like pain localized to the left side of the chest. He rates the pain as 7 out of 10. The pain has not radiated to other areas. It worsens with movement, walking, and lying supine, and there is no maneuver that provides relief. Since the onset, he has experienced mild shortness of breath and feels that his heart is beating faster than usual, a sensation he normally only notices during sports. He reports a low‑grade fever, having measured a temperature of 38 °C at home. He denies nausea, vomiting, diaphoresis, cough, sputum production, or any recent trauma to the chest. He has not had any prior episodes of chest pain. He notes a recent rugby tackle the previous day but states his chest felt fine after that event. No recent travel or known sick contacts.  
+
+Review of Systems  
+Constitutional: Low‑grade fever (38 °C); no chills, weight loss, or fatigue.  
+Cardiovascular: Chest pressure, palpitations, no known murmurs; no edema of lower extremities.  
+Respiratory: Shortness of breath since symptom onset; no cough, wheeze, or hemoptysis.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No dizziness, syncope, or focal deficits.  
+Musculoskeletal: Pain aggravated by movement and lying down; no recent musculoskeletal injury reported aside from the rugby tackle.  
+Skin: No rashes or lesions.  
+Psychiatric: PHQ‑2 score 2 (indicating possible mild depressive symptoms).  
+
+Past Medical History  
+- Ischemic heart disease (chronic)  
+- Essential hypertension  
+- Hyperlipidemia  
+- Metabolic syndrome  
+- Chronic kidney disease (stage 1‑4 history, currently post‑renal transplant)  
+- Diabetes mellitus (prediabetes/ type 2) with microalbuminuria and proteinuria  
+- Chronic low‑back, neck, and generalized pain  
+- Sleep apnea and sleep disorder  
+- Seizure disorder (history of single seizure)  
+- Anemia, obesity (BMI 30.9)  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+- Tobacco: Smokes approximately half a pack to one pack of cigarettes daily for the past 20 years.  
+- Alcohol: Denies current alcohol use.  
+- Illicit drugs: Past use of crystal methamphetamine, approximately a few times per month for the past seven years; last use six days ago.  
+- Occupation: City bus driver.  
+- Living situation: Resides in a house with his parents.  
+- Exercise: Occasionally runs on Sundays; recent physical activity included shoveling and rugby.  
+- Diet: Generally balanced but reports occasional dining out.  
+
+Family History  
+No reported family history of myocardial infarction, coronary artery disease, or cancer.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications (home regimen)  
+- Rosuvastatin (dose not specified) for hyperlipidemia  
+- Lisinopril for hypertension  
+- Multivitamin  
+- Metoprolol succinate extended‑release 100 mg daily (antihypertensive/anti‑anginal)  
+- Nitroglycerin 0.4 mg sublingual spray PRN for chest pain  
+- Additional chronic medications listed in the record (e.g., tacrolimus, insulin, hydrochlorothiazide, etc.) are noted as active but were not specifically reviewed with the patient during this encounter.  
+
+Vital Signs  
+Temperature recorded by patient: 38 °C.  
+No additional vital signs (blood pressure, heart rate, respiratory rate, SpO₂, weight) documented at the time of this encounter.  
+
+Physical Exam  
+No physical examination findings were documented during this visit.  
+
+Laboratory Data  
+Recent laboratory values available from the electronic record (date not specified) include:  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.5 mg/dL  
+- Potassium: 5.03 mmol/L (first value) and 4.31 mmol/L (second value)  
+- Calcium: 9.47 mg/dL and 10.06 mg/dL  
+- Blood urea nitrogen: 19.2 mg/dL and 17.4 mg/dL  
+- Sodium: 141.6 mmol/L  
+- Chloride: 101.2 mmol/L  
+- Total CO₂: 20.7 mmol/L and 28.4 mmol/L (two separate measurements)  
+- LDL‑C: 140.6 mg/dL  
+- Total cholesterol: 185.3 mg/dL  
+- ALT: 21.8 U/L  
+- PHQ‑2 score: 2 (positive screen)  
+
+Assessment  
+1. Acute chest pressure concerning for possible acute coronary syndrome (unstable angina vs NSTEMI) given age, extensive cardiac risk factors (ischemic heart disease, hypertension, hyperlipidemia, diabetes, smoking) and symptom characteristics.  
+2. Shortness of breath possibly secondary to cardiac ischemia or exertional demand.  
+3. Low‑grade fever of 38 °C; infectious etiology less likely but warrants evaluation.  
+4. Chronic comorbidities: hypertension, hyperlipidemia, chronic kidney disease post‑renal transplant, diabetes/prediabetes, seizure disorder, sleep apnea.  
+
+Plan  
+- Immediate 12‑lead electrocardiogram to assess for ischemic changes.  
+- Serial cardiac biomarkers (troponin I/T) at presentation and 3–6 hour intervals.  
+- Obtain chest radiograph to evaluate for pulmonary pathology.  
+- Initiate cardiac monitoring with continuous telemetry.  
+- Administer aspirin 325 mg chewable PO now, followed by low‑dose aspirin 81 mg daily.  
+- Offer sublingual nitroglycerin 0.4 mg PRN for persistent chest discomfort, monitoring blood pressure.  
+- Provide supplemental oxygen to maintain SpO₂ > 94 % if needed.  
+- Give intravenous morphine 2–4 mg IV for pain relief if nitroglycerin ineffective and pain remains severe, while observing hemodynamics.  
+- Review current antihypertensive regimen; consider adding beta‑blocker (metoprolol already prescribed) and titrating as needed.  
+- Consult cardiology for possible early invasive strategy given high risk profile.  
+- Admit to telemetry unit for observation, further work‑up, and management.  
+- Re‑measure vital signs on arrival to the unit, including blood pressure, heart rate, respiratory rate, and SpO₂.  
+- Order basic metabolic panel, complete blood count, coagulation profile, and lipid panel to update baseline labs.  
+- Counsel patient on smoking cessation; offer referral to cessation program and discuss nicotine replacement or pharmacotherapy.  
+- Discuss avoidance of strenuous activity until cardiac cause ruled out; advise rest and limited exertion.  
+- Arrange follow‑up with primary care provider within 1 week of discharge and cardiology within 2 weeks.  
+- Provide discharge instructions regarding red‑flag symptoms (increasing chest pain, diaphoresis, syncope, worsening shortness of breath) and to seek emergency care if they occur.  
+
+No further information is available at this time.

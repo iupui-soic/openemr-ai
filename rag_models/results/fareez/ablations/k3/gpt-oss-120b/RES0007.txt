@@ -1,0 +1,130 @@
+Model: openai/gpt-oss-120b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 03:24:41
+Time: 5.51s
+Tokens: 8,173 in / 2,081 out
+============================================================
+
+Patient Information  
+Name: Abby Ondricka  
+Date of Birth: 01/16/2003 (Age 23)  
+Sex: Female  
+Address: 564 Breitenberg View, Westfield, Massachusetts 01086  
+Medical Record Number: 145  
+
+Chief Complaint  
+Patient presents for follow‑up of newly re‑diagnosed asthma after pulmonary function testing performed a few months ago. She reports intermittent shortness of breath with exertion, cold exposure, and exposure to cat dander.
+
+History of Present Illness  
+Abby reports that she was diagnosed with asthma several months ago after a pulmonary function test revealed a return of her childhood asthma. She describes episodes of dyspnea that occur primarily during high‑intensity activities such as running in gym class. The symptoms are described as an inability to catch her breath, forcing her to stop or slow down. The breathing difficulty resolves within a few minutes of resting. She also notes that cold outdoor weather precipitates tightness in her chest and shortness of breath, exemplified by an inability to participate in building a snowman. Exposure to multiple cats at a friend’s house produced wheezing and a prolonged recovery after she left the environment. She denies a chronic cough, nighttime awakenings due to breathlessness, fever, chills, nausea, vomiting, urinary or bowel complaints, or recent infections. She reports occasional allergic rhinitis symptoms (runny, itchy eyes) in the spring and occasional itchy skin as a child but not presently.  
+
+She was prescribed two inhalers at the prior visit: a daily inhaled corticosteroid (fluticasone propionate) and a rescue albuterol inhalation solution. She is uncertain about the dosing schedule. She states she uses the “S” inhaler (presumed steroid) twice daily but sometimes forgets a dose and that she occasionally uses the rescue inhaler during gym class. She also possesses a self‑injectable epinephrine device for an unspecified allergy.  
+
+Abby expresses concern about whether her asthma will limit her goal of joining the United States Marine Corps. She requests clarification on this matter.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight change, or fatigue reported.  
+Respiratory: Positive for exertional dyspnea, cold‑induced chest tightness, and cat‑related wheezing; negative for chronic cough, sputum production, hemoptysis, or nocturnal symptoms.  
+Cardiovascular: No chest pain, palpitations, or edema reported.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or incontinence.  
+Allergic/Immunologic: Positive for seasonal allergic rhinitis (spring) and cat dander sensitivity; negative for other drug or food allergies besides those listed in the chart.  
+Neurologic/Psychiatric: No depression, anxiety, or suicidal ideation. PHQ‑2 scores 0‑2 on separate entries (lowest score 0), GAD‑7 score 1‑2 (minimal anxiety).  
+Social: Lives with both parents and a younger brother. Enrolled in 11th grade at a local high school. Occasionally drinks beer at weekend parties; does not smoke or use recreational drugs. Diet consists of typical family meals (cereal breakfast, sandwich lunch, meat/vegetable dinner). Sexually active with one girlfriend; reports consistent condom use.  
+
+Allergies  
+Documented environmental allergies: mold, house dust mite, animal dander, grass pollen, tree pollen, wheat, tree nuts (all severity 1). Patient reports cat dander triggers wheezing. No known medication allergies.  
+
+Past Medical History  
+- Childhood asthma (resolved in early adulthood, now recurrent)  
+- Atopic dermatitis (resolved 2021)  
+- Perennial allergic rhinitis (active)  
+- Prior acute bronchitis episodes (2016, 2021)  
+- Acute viral pharyngitis, viral sinusitis, acute cystitis (historical)  
+- No current chronic illnesses.  
+
+Surgical History  
+- Wisdom tooth extraction (date not specified)  
+- No other surgical procedures reported.  
+
+Social History  
+- Tobacco: None  
+- Alcohol: Infrequent beer consumption at social events  
+- Recreational drugs: None  
+- Exercise: Participates in school gym class; reports difficulty with high‑intensity exertion.  
+- Sexual activity: Heterosexual, one partner, consistent condom use.  
+
+Family History  
+Father had a history of asthma in youth and experiences seasonal allergic rhinitis. No other significant family medical history reported.  
+
+Current Medications (home)  
+- Fluticasone propionate 44 µg inhaler (Flovent) – prescribed for daily use, intended twice daily.  
+- Albuterol 0.083 mg/actuation inhalation solution – rescue inhaler, “as needed” for symptoms.  
+- Fexofenadine 30 mg oral tablet – antihistamine for allergic rhinitis, frequency not specified.  
+- Epinephrine auto‑injector 0.3 mg – prescribed for anaphylaxis risk, dosing as needed.  
+- Vitamin supplement (type unspecified) – taken per mother’s instruction.  
+
+Objective  
+Vital Signs (recorded 04/05/2015):  
+- Heart Rate: 99 beats/min  
+- Respiratory Rate: 13 breaths/min  
+- Height: 162 cm  
+- Body Mass Index: 17.95 kg/m² (underweight)  
+- Blood Pressure: Not documented  
+- Temperature: Not documented  
+- Oxygen Saturation: Not documented  
+
+Physical Examination  
+No physical exam findings were documented during this encounter.  
+
+Laboratory Data (most recent)  
+- Hemoglobin 13.66 g/dL (within normal limits)  
+- Hematocrit 45.2 % (within normal limits)  
+- White blood cell count 5.63 ×10³/µL (normal)  
+- Platelets 187 ×10³/µL (normal)  
+- Mean corpuscular volume 83.8 fL (normal)  
+- Mean corpuscular hemoglobin 31.1 pg (normal)  
+- Mean corpuscular hemoglobin concentration 35.6 g/dL (normal)  
+- Red blood cell count 4.44 ×10⁶/µL (normal)  
+- PHQ‑2 total scores ranging 0–2 (no significant depressive symptoms)  
+- GAD‑7 total score 1–2 (minimal anxiety)  
+- AUDIT‑C total score 1–2 (low risk alcohol use)  
+
+Imaging  
+No imaging studies were performed or documented during this visit.  
+
+Assessment  
+1. Recurrent asthma, moderate intermittent, triggered by exertion, cold air, and cat dander.  
+2. Perennial allergic rhinitis with seasonal exacerbations.  
+3. Underweight (BMI 17.9) – nutritional status to be monitored.  
+4. Interest in military service (Marine Corps) – requires evaluation of fitness with asthma control.  
+
+Plan  
+
+Medication Management  
+- Reinforce fluticasone propionate inhaler as a controller medication: 1 puff (44 µg) twice daily, scheduled, not to be missed. Emphasize the importance of adherence for optimal airway inflammation control.  
+- Albuterol rescue inhaler: 1–2 puffs every 4–6 hours as needed for acute symptoms; advise use 15 minutes before anticipated exertion (e.g., gym class) if symptoms are predictable.  
+- Continue daily fexofenadine 30 mg for allergic rhinitis; consider adding intranasal corticosteroid if symptoms persist.  
+- Ensure epinephrine auto‑injector is readily available; review proper administration technique.  
+
+Education & Action Plan  
+- Provide a written asthma action plan detailing daily controller use, rescue medication dosing, and criteria for seeking urgent care (e.g., symptoms not improving after 2–3 albuterol doses).  
+- Recommend a warm‑up and cool‑down routine before and after exercise; consider using a short‑acting bronchodilator 15 minutes prior to high‑intensity activity.  
+- Counsel on avoidance of known triggers: limit exposure to cats, use a scarf or mask in cold weather, keep home environment free of dust mites and mold as per documented sensitivities.  
+- Discuss the impact of well‑controlled asthma on eligibility for the Marine Corps; advise that with consistent medication adherence and documented pulmonary function testing, he/she may meet the physical standards, but a formal evaluation by a military medical examiner will be required.  
+
+Follow‑up & Referrals  
+- Schedule pulmonary function testing within the next 4–6 weeks to objectively assess airway reversibility and severity.  
+- Arrange a follow‑up appointment in 4 weeks to review inhaler technique, symptom control, and results of spirometry.  
+- Consider referral to an allergist for possible immunotherapy targeting cat dander and seasonal pollen if symptoms remain troublesome.  
+- Nutrition counseling referral to address low BMI and ensure adequate caloric intake for growth and athletic performance.  
+
+Immunizations  
+Patient reports that immunizations are up to date; verify records at the next visit and administer any pending vaccines per the adolescent schedule.  
+
+Disposition  
+Patient educated on asthma self‑management, medication schedule, and trigger avoidance. No acute distress noted. Discharged home with a written asthma action plan and prescriptions refilled for fluticasone and albuterol as needed.  
+
+Signature  
+Dr. External Provider, MD   (Electronic Signature)   Date: 04/18/2024

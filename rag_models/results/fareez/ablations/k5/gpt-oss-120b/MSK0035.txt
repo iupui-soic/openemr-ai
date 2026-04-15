@@ -1,0 +1,118 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 03:30:40
+Time: 6.08s
+Tokens: 16,916 in / 2,032 out
+============================================================
+
+Patient Information  
+Name: Abel Daugherty  
+Date of Birth: August 19, 1940 (age 85)  
+Sex: Male  
+Address: 849 Miller Rapid, Boston, Massachusetts 02110  
+Unit Number: 336  
+
+Chief Complaint  
+Right wrist pain, swelling, and bruising after a fall while skiing yesterday.
+
+History of Present Illness  
+Mr. Daugherty reports that yesterday he fell on an outstretched right arm while skiing, landing directly on his wrist with the hand extended backward. He experienced immediate sharp pain localized to the volar (palm‑side) aspect of the wrist just distal to the thumb. Since the fall he notes persistent, constant pain rated 5–6/10, increased with wrist movement and with attempts to use the hand. He describes the pain as sharp and localized, without radiation to the forearm or hand. He has applied ice and taken over‑the‑counter ibuprofen, which provides partial relief, and he has been limiting wrist motion. He denies any injuries to the elbow, shoulder, or head, and reports no loss of consciousness. He denies numbness, tingling, sensory loss, or muscle weakness in the affected extremity. He has not had any fevers, chills, gastrointestinal, respiratory, or constitutional symptoms. He is uncertain whether surgery will be required and asks about the need for imaging.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, night sweats, fatigue, or appetite changes.  
+Skin: Bruising noted over the right wrist; no open wounds.  
+Musculoskeletal: Right wrist pain, swelling, and limited range of motion; no pain in other joints; denies prior wrist injuries. No back or lower extremity pain.  
+Neurologic: No numbness, tingling, or weakness in the right hand or forearm.  
+Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+Respiratory: No cough, wheezing, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or urinary frequency.  
+ENT: No headaches, vision changes, hearing loss, or sinus symptoms.  
+
+Past Medical History  
+- Seizure disorder / epilepsy (ongoing)  
+- Prediabetes  
+- Type 2 diabetes mellitus (ongoing)  
+- Anemia (ongoing)  
+- Essential hypertension (ongoing)  
+- Chronic kidney disease stage 3 (historical) progressing to end‑stage renal disease, currently post‑renal transplant (ongoing)  
+- Hypertriglyceridemia  
+- Metabolic syndrome X  
+- Ischemic heart disease with prior coronary artery bypass grafting (ongoing)  
+- History of coronary artery disease (ongoing)  
+
+Past Surgical History  
+- History of renal transplantation (date not specified)  
+- Coronary artery bypass grafting (date not specified)  
+
+Medications (Home)  
+- Clopidogrel 75 mg PO daily  
+- Simvastatin 20 mg PO nightly  
+- Metoprolol succinate 100 mg ER PO daily  
+- Nitroglycerin 0.4 mg sublingual spray PRN for chest discomfort  
+- Ibuprofen 200 mg PO as needed for pain (patient reports current use)  
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Family History  
+No known family history of neurological, musculoskeletal, or autoimmune diseases.
+
+Social History  
+Mr. Daugherty lives alone in a downtown Boston apartment. He is currently a student. He does not smoke cigarettes. He consumes alcohol infrequently, averaging two beers every other week. He uses cannabis edibles approximately once per month. He denies use of any other recreational drugs. He reports no recent travel and no known exposure to ill individuals.
+
+Physical Examination  
+General: Alert, oriented, in mild distress due to right wrist pain.  
+Vital Signs: Heart rate 62 beats/min, respiratory rate 14 breaths/min, temperature not recorded, blood pressure not recorded, SpO₂ not recorded, height 181.9 cm, weight not recorded, BMI 27.8.  
+Extremities – Right Wrist: Visible bruising over the volar radial aspect with mild swelling compared to the left side. The overlying skin is warm to touch. No obvious deformity. Palpation elicits tenderness over the distal radius; no tenderness over the anatomical snuffbox or scaphoid. Range of motion (flexion, extension, radial and ulnar deviation) is present but limited by pain. Patient can make a fist without difficulty. No gross motor weakness noted. No sensory deficits. Elbow flexion and extension are full and painless. Distal pulses are intact (not documented but presumed normal).  
+
+Laboratory Data (most recent)  
+- White blood cell count: 8.2 ×10³/µL (within normal limits)  
+- Hemoglobin: 16.1 g/dL  
+- Hematocrit: 48.6 %  
+- Platelets: 433 ×10³/µL  
+- Serum glucose: 119 mg/dL  
+- BUN: 19 mg/dL  
+- Creatinine: 2.9 mg/dL (elevated, consistent with chronic renal disease)  
+- eGFR (MDRD): 13 mL/min/1.73 m² (severe renal impairment)  
+- Electrolytes: Na 136 mmol/L, K 4.6 mmol/L, Cl 101 mmol/L, CO₂ 23 mmol/L  
+- Calcium: 9.2 mg/dL  
+- Total protein: 6.8 g/dL  
+
+Imaging  
+No imaging performed at this visit. The provider recommended immediate plain radiographs of the right wrist (including PA, lateral, and oblique views) to evaluate for possible distal radius fracture and to rule out a scaphoid fracture.
+
+Assessment  
+1. Suspected distal radius fracture secondary to fall on outstretched hand – clinical findings of localized volar tenderness, swelling, and mechanism of injury warrant imaging.  
+2. Possible wrist sprain versus occult scaphoid fracture – although snuffbox tenderness is absent, imaging is indicated to exclude occult fracture.  
+3. Chronic kidney disease / end‑stage renal disease on transplant (stable) – baseline labs reviewed.  
+4. Ischemic heart disease with prior CABG – cardiovascular status currently stable.  
+
+Plan  
+- Order right wrist X‑ray (PA, lateral, and oblique) today; expedite imaging to determine presence and extent of fracture.  
+- Continue current ibuprofen as needed for pain, but advise limited use given chronic kidney disease; consider acetaminophen 500 mg PO q6h PRN if renal function concerns arise.  
+- Apply a removable splint or soft‑bandage to immobilize the wrist while awaiting radiographic results; advise the patient to keep the wrist elevated and apply ice intermittently (15 minutes every 2‑3 hours).  
+- Educate the patient on neurovascular monitoring: report any increasing pain, numbness, tingling, swelling, or change in skin color promptly.  
+- If imaging confirms a distal radius fracture, refer to orthopedics for possible closed reduction and casting; discuss potential need for surgical fixation if the fracture is displaced or involves the joint surface.  
+- If a scaphoid fracture is identified, immobilize in a thumb‑spica cast and arrange orthopedics follow‑up.  
+- Review his renal function and medication list; avoid nephrotoxic NSAIDs if possible; consider switching to acetaminophen for analgesia.  
+- Provide written discharge instructions including activity restrictions (no lifting >5 lb with the right hand, avoid wrist flexion/extension beyond comfort), wound care, and signs of complications.  
+- Schedule follow‑up with primary care physician within 3‑5 days to review imaging results and coordinate orthopedic referral.  
+- Arrange orthopedic follow‑up within 7‑10 days if fracture confirmed.  
+
+Discharge Instructions  
+- Keep the wrist immobilized in the splint; remove only for bathing.  
+- Apply ice to the swollen area for 15 minutes, three times daily for the next 48 hours.  
+- Elevate the right hand above heart level when seated or lying down to reduce swelling.  
+- Take ibuprofen 200 mg PO every 6‑8 hours with food for pain, not exceeding 1200 mg per day; if renal concerns arise, switch to acetaminophen 500 mg PO every 6 hours, not exceeding 3000 mg per day.  
+- Monitor for increased pain, numbness, tingling, color change, or swelling; seek immediate care if these develop.  
+- Avoid driving or operating heavy machinery until pain is controlled and wrist function is assessed.  
+
+Follow‑up Instructions  
+- Return to the clinic or contact the office within 48 hours for radiograph results.  
+- If a fracture is identified, schedule orthopedic evaluation within 7 days.  
+- Primary care follow‑up in 3–5 days for overall health review and medication reconciliation, especially regarding renal function and NSAID use.  
+
+Prepared by: ________________________  
+Date: ________________________

@@ -1,0 +1,129 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 03:56:58
+Time: 3.02s
+Tokens: 11,862 in / 1,574 out
+============================================================
+
+Patient Information  
+Name: Abe Huels  
+Date of Birth: 02 September 1961  
+Sex: Male  
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000  
+Patient ID: 275  
+
+Chief Complaint  
+The patient presents with a 4–5 month history of numbness, tingling, and burning sensation in the left hand, predominantly involving the thumb, index, and ring fingers, with recent onset of nighttime symptoms.  
+
+History of Present Illness  
+Mr. Huels reports that the symptoms began approximately 4–5 months ago. Initially, brief episodes of discomfort lasting a few minutes resolved with gentle wrist movement. Over the past several weeks, the symptoms have become more frequent and occasionally nocturnal, waking him from sleep two to three times per night. The sensations are described as burning and painful, rated up to 6/10 at their worst. He has experienced increased clumsiness with the left hand, dropping objects and difficulty opening jars or car doors, but denies any weakness or loss of grip strength. No pain, swelling, redness, or warmth in the hand or forearm has been noted.  
+
+He has tried over‑the‑counter acetaminophen and ibuprofen without significant relief and has not used cold compresses or topical creams. There is no history of similar symptoms in the right hand or elsewhere in the body.  
+
+Review of Systems  
+Constitutional: No weight loss, no fever or chills.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or rectal bleeding.  
+Genitourinary: No urinary symptoms.  
+Neurologic: No weakness, confusion, headache, dizziness, vision, hearing, or taste changes.  
+Psychiatric: PHQ‑2 score 2, GAD‑7 score 4 (minimal anxiety).  
+Musculoskeletal: No pain or swelling in other joints; left hand described as slightly less muscular bulk.  
+
+Past Medical History  
+- Hypothyroidism, treated with Synthroid (levothyroxine).  
+- Obesity class I (BMI approximately 27.5).  
+- Chronic kidney disease stage 1 and later stage 2 (CKD‑1/2 per EHR).  
+- Hyperlipidemia (on statins).  
+- Hypertension (treated with lisinopril).  
+- Smoking history: 5–10 cigarettes per day for the past 10 years.  
+- No known drug allergies.  
+
+Surgical History  
+No documented surgical procedures or hospitalizations.  
+
+Medication List  
+- Synthroid (levothyroxine) – ongoing.  
+- Simvastatin 10 mg (current).  
+- Clopidogrel 75 mg (current).  
+- Metoprolol succinate 100 mg extended‑release (current).  
+- Nitroglycerin 0.4 mg mucosal spray (current).  
+(Additional medications recorded in the medical record are noted as discontinued or past‑tenure; the patient reports only Synthroid as an active daily medication.)  
+
+Social History  
+- Lives with spouse and two daughters in a single family residence.  
+- Smokes tobacco (5–10 cigarettes/day), 10 years duration.  
+- Drinks wine occasionally (≤1 drink/week).  
+- No recreational drug use.  
+- Works in a warehouse environment involving repetitive wrist flexion and use of vibrating tools.  
+- No recent travel or sick contacts.  
+
+Family History  
+- Grandfather: stroke in 70s.  
+- Father: hypercholesterolemia.  
+- No family history of autoimmune disease or cancer.  
+
+Objective  
+Vital Signs – No current vitals recorded during this encounter.  
+
+Physical Examination  
+Left Upper Extremity:  
+- No erythema, swelling, or heat.  
+- Decreased muscle bulk noted over the thenar eminence.  
+- Full range of motion at shoulder, elbow, wrist, and fingers; no pain with passive or active movement.  
+- Palpation of shoulder, biceps, elbow, and wrist: no tenderness or trigger points.  
+- Tinel’s sign positive at the left wrist (tingling in thumb, index, and middle fingers).  
+- Phalen’s test positive: sustained wrist flexion for 60 seconds produced tingling and numbness in the same distribution.  
+- No motor deficits or sensory loss beyond the described paresthesias.  
+
+Laboratory Results (most recent)  
+- Hemoglobin: 16.47 g/dL.  
+- Creatinine: 1.0 mg/dL.  
+- Glucose: 94.3 mg/dL.  
+- Calcium: 8.74 mg/dL (low-normal).  
+- Sodium: 142.6 mmol/L.  
+- Potassium: 4.56 mmol/L.  
+- Chloride: 101.7 mmol/L.  
+- Bicarbonate: 21.5 mmol/L.  
+- GAD‑7: 4 (minimal anxiety).  
+- PHQ‑2: 2 (minimal depression).  
+
+Assessment  
+Primary Diagnosis: Carpal tunnel syndrome (left hand).  
+Secondary Diagnoses:  
+- Hypothyroidism (controlled).  
+- Obesity class I.  
+- Chronic kidney disease stage 1–2.  
+- Hyperlipidemia.  
+- Hypertension.  
+- Tobacco use disorder.  
+
+Plan  
+1. Carpal Tunnel Management  
+   - Prescribe a night‑time dorsal wrist splint to maintain neutral wrist position.  
+   - Continue NSAID therapy (e.g., ibuprofen 400 mg PO every 6–8 hours PRN for pain).  
+   - Counsel on ergonomic modifications: frequent breaks, wrist‑neutral posture, use of ergonomic tools.  
+   - If symptoms persist or worsen after 4–6 weeks, consider corticosteroid injection into the carpal tunnel or referral to hand surgery for possible release.  
+
+2. Thyroid Management  
+   - Continue current levothyroxine dose; obtain TSH in 6 months or sooner if symptoms of hypothyroidism arise.  
+
+3. Cardiovascular & Metabolic  
+   - Continue statin (Simvastatin 10 mg) and antihypertensive (lisinopril).  
+   - Encourage weight‑loss diet and exercise; refer to nutrition counseling.  
+
+4. Smoking Cessation  
+   - Discuss cessation strategies, nicotine replacement options, and provide resources for counseling.  
+
+5. Follow‑Up  
+   - Schedule follow‑up in 4 weeks to reassess hand symptoms and review compliance with splint and ergonomic advice.  
+   - Monitor renal function and electrolytes annually.  
+
+Discharge Instructions  
+- Use night splint as prescribed.  
+- Take NSAID only as needed for pain, not exceeding recommended dose.  
+- Maintain regular follow‑up for thyroid, hypertension, and lipid management.  
+- Contact the office sooner if hand pain becomes constant, if there is sudden weakness, or if new neurological deficits develop.  
+
+The patient was educated on the nature of carpal tunnel syndrome, treatment options, and lifestyle modifications. He verbally confirmed understanding and agreed to the plan of care.

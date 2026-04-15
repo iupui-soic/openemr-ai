@@ -1,0 +1,86 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:23:42
+Time: 4.84s
+Tokens: 19,521 in / 1,381 out
+============================================================
+
+Patient Information  
+Name: Amado Baumbach (as recorded in the EMR)  
+Date of Birth: 09‑06‑1942 (recorded age ≈ 79 years) – however, the patient’s gender and age were not explicitly confirmed during the interview; the patient described menstrual history, indicating a female gender.  
+Sex: Female (as inferred from the interview)  
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000  
+MRN: 7355  
+
+Chief Complaint  
+The patient presents with persistent nausea for approximately nine days, associated with occasional vomiting and increased urinary frequency.  
+
+History of Present Illness  
+The patient reports the onset of nausea about nine days ago. The nausea is described as continuous, with a sensation that is worse in the morning and is aggravated by exposure to foul odors. She estimates that she vomits once to twice per day on many days. She denies any specific foods or medications that precipitate the episodes. In addition to the nausea, she notes an increase in the frequency of urination, estimating a need to void roughly every one to two hours during the day; she does not awaken specifically to urinate, but sometimes gets up after hearing noises and then feels the urge. She reports that she can control the urge and does not experience incontinence. She denies dysuria, hematuria, flank pain, or urinary urgency. She has not noticed any fevers, chills, myalgias, headaches, cough, shortness of breath, chest pain, palpitations, or changes in bowel habits. She reports mild, cramp‑like abdominal discomfort that she initially thought might be related to her menstrual cycle, but she has not had a period in approximately six weeks; her periods have generally been regular in the past. She has been drinking more water because she feels dehydrated from the vomiting. She has tried chewing ginger “candies” for nausea without relief.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight loss reported.  
+Neurologic: No headaches, dizziness, or syncope.  
+Cardiovascular: No chest pain, palpitations, or known heart disease reported.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Gastrointestinal: Persistent nausea, occasional vomiting (1‑2 times/day), mild crampy abdominal discomfort; no diarrhea, constipation, melena, or hematochezia.  
+Genitourinary: Increased urinary frequency (every 1‑2 hours), no dysuria, no nocturia, no hematuria.  
+Musculoskeletal: No myalgias.  
+Skin: No rashes or lesions noted today.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+The patient reports no chronic medical problems. (The EMR lists numerous chronic conditions, but the patient denied any known medical issues during the interview; per instruction, the interview information is given priority.)  
+
+Surgical History  
+No surgical procedures reported.  
+
+Allergies  
+Nickel – contact dermatitis (rash with non‑precious jewelry). No known drug or food allergies.  
+
+Current Medications  
+No prescription or over‑the‑counter medications reported. The patient is using ginger chewable products for nausea, which have not provided relief.  
+
+Family History  
+Father has hypertension. No other family medical history reported.  
+
+Social History  
+Living Situation: Resides with one roommate.  
+Tobacco: No current use.  
+Alcohol: Rare consumption; last drink approximately one month ago, avoided due to headache.  
+Illicit Drugs: None.  
+Sexual Activity: Sexually active with a boyfriend; uses condoms. Previously used hormonal birth control but discontinued because it caused nausea.  
+
+Physical Examination  
+Vital signs: Not documented at this encounter.  
+General: No acute distress noted.  
+HEENT: No oral lesions; no evidence of dehydration noted.  
+Neck: No lymphadenopathy.  
+Cardiovascular: No murmurs or gallops reported.  
+Respiratory: Breath sounds clear bilaterally; no wheezes or rales reported.  
+Abdomen: Mild crampy discomfort reported; no guarding, rebound, or masses noted.  
+Genitourinary: No suprapubic tenderness.  
+Extremities: No edema.  
+Skin: No rashes aside from known nickel contact dermatitis.  
+
+Laboratory and Imaging Studies  
+No laboratory tests or imaging studies were performed during this visit.  
+
+Assessment  
+1. Persistent nausea and intermittent vomiting of 9‑day duration, likely functional or early gastrointestinal irritation; differential includes gastritis, viral gastroenteritis, early pregnancy, medication/ supplement effect, or hormonal changes related to missed menstrual period.  
+2. Increased urinary frequency, most likely secondary to increased fluid intake and possible mild irritative effect from nausea/vomiting; no evidence of urinary tract infection or dysuria.  
+3. Missed menstrual period for approximately six weeks; consider pregnancy test and evaluation of possible hormonal imbalance.  
+
+Plan  
+- Diagnostic: Obtain a urine pregnancy test today to evaluate for possible pregnancy given the missed period. Consider basic metabolic panel and serum electrolytes if vomiting persists, to assess for dehydration or electrolyte disturbances.  
+- Pharmacologic: Prescribe ondansetron 4 mg PO every 8 hours as needed for nausea and vomiting. Offer an antacid such as ranitidine 150 mg PO twice daily if dyspepsia is present. Encourage continued adequate oral hydration; consider oral rehydration solution if unable to maintain fluid intake.  
+- Non‑pharmacologic: Advise the patient to eat small, bland meals (e.g., crackers, toast, bananas) and avoid strong odors and spicy or fatty foods. Encourage the use of ginger in tea form rather than candy if tolerated. Recommend a voiding diary to track urinary frequency and any nocturnal episodes.  
+- Follow‑up: Schedule a follow‑up appointment in 3–5 days or sooner if vomiting becomes more frequent, signs of dehydration develop (dry mucous membranes, dizziness), fever arises, or urinary symptoms worsen (painful urination, hematuria).  
+- Education: Discuss warning signs that warrant immediate medical attention, including inability to keep fluids down, persistent vomiting, severe abdominal pain, fever, or new urinary pain. Explain the importance of taking the pregnancy test and reporting the result.  
+
+Disposition  
+The patient was discharged home with the above plan and instructions. No further inpatient care is indicated at this time.  
+
+Signature  
+Attending Physician: _______________________   Date: _______________________

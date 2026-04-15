@@ -1,0 +1,131 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:10:22
+Time: 6.30s
+Tokens: 18,494 in / 1,826 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with acute right‑upper abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ms. Hayes reports an aching pain localized to the right side of the abdomen. The discomfort started about eight hours prior to the visit while she was preparing to go to sleep. Initially the pain was intermittent, but over the past five to six hours it has become constant. She rates the pain as 8 out of 10 in intensity. The pain does not radiate to other areas. She notes that similar episodes have occurred in the past, typically after consuming fatty foods such as burgers or fries, which she previously attributed to indigestion. She has tried acetaminophen (Tylenol) without relief. She feels mildly nauseated but has not vomited. She denies fever, chills, sweats, diarrhea, constipation, dysuria, hematuria, jaundice, or changes in skin. She reports a decreased appetite because eating worsens the pain, but she has not experienced recent weight loss. She feels a little fatigued due to the pain. No recent travel or sick contacts are reported.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss; mild fatigue.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: Right‑upper abdominal aching pain, worsened by eating; nausea without vomiting; no diarrhea, constipation, melena, hematochezia, or change in bowel habits.  
+Genitourinary: No dysuria, urgency, frequency, hematuria, or change in urine color.  
+Musculoskeletal: No joint pain or muscle aches beyond chronic migraine and chronic pain history.  
+Neurologic: No headache change; chronic migraine noted in past history.  
+Psychiatric: No depression or anxiety reported at this visit.  
+Endocrine: No polyuria, polydipsia, or heat/cold intolerance.  
+Hematologic/Lymphatic: No easy bruising or bleeding.  
+Allergic/Immunologic: No known drug or environmental allergies.
+
+Past Medical History  
+- Type 2 diabetes mellitus (managed with metformin; insulin therapy noted in historic medication list)  
+- Essential hypertension  
+- Chronic kidney disease, stage 3 (eGFR ≈ 37 mL/min/1.73 m²) with proteinuria  
+- Metabolic syndrome (obesity, BMI ≈ 27.9)  
+- Gastroesophageal reflux disease  
+- Chronic intractable migraine without aura  
+- Chronic pain (non‑specific)  
+- Chronic obstructive bronchitis  
+- Prediabetes (historical)  
+
+Surgical History  
+- Wisdom teeth extraction (adolescent)  
+
+Medications (current as documented)  
+- Metformin (as reported by patient)  
+- Lisinopril 10 mg PO daily (hypertension)  
+- Insulin isophane and regular human insulin (diabetes) – dosage not specified  
+- Fluticasone propionate/salmeterol dry powder inhaler (COPD) – dosage not specified  
+- Albuterol inhalation solution (COPD) – dosage not specified  
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Family History  
+Father had a myocardial infarction in his 60s. No reported family history of cancer, inflammatory bowel disease, or other hereditary conditions.
+
+Social History  
+The patient lives alone in an apartment. She is currently unemployed after being laid off due to the COVID‑19 pandemic. She reports occasional alcohol use, averaging one to two glasses of wine per day. She does not smoke cigarettes and denies recreational drug use. She engages in running when weather permits. No recent travel.
+
+Physical Examination  
+No physical examination findings were documented during this encounter.
+
+Vital Signs  
+Heart rate: 92 beats/min (recorded in historic EMR)  
+Respiratory rate: 13 breaths/min (recorded in historic EMR)  
+Blood pressure: Not recorded at this visit  
+Temperature: Not recorded at this visit  
+SpO₂: Not recorded at this visit  
+Weight/BMI: Weight not recorded; BMI previously documented as 27.87  
+
+Laboratory Data (most recent values)  
+- Serum calcium: 9.27 mg/dL  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L  
+- Serum chloride: 103.96 mmol/L (both serum and plasma values concordant)  
+- Urine protein: 214.8 mg/dL (elevated)  
+- Urine glucose: 1.53 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+- Urine bilirubin: 0.44 mg/dL (trace)  
+- Urine specific gravity: 1.038  
+
+No complete blood count, liver function tests, or pancreatic enzymes were provided.
+
+Assessment  
+1. Right‑upper quadrant (RUQ) abdominal pain, likely biliary colic or early acute cholecystitis given the classic post‑prandial, fatty‑food‑triggered pattern, female sex, age, obesity, and metabolic syndrome.  
+2. Type 2 diabetes mellitus, moderately controlled on metformin (insulin regimen noted).  
+3. Chronic kidney disease, stage 3 with proteinuria.  
+4. Essential hypertension.  
+5. Chronic obstructive bronchitis.  
+
+Plan  
+Diagnostic Studies  
+- Obtain right‑upper quadrant abdominal ultrasound to evaluate gallbladder for stones, wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- Order complete blood count with differential, comprehensive metabolic panel, liver function tests (AST, ALT, ALP, total bilirubin), and serum lipase to assess for possible hepatobiliary or pancreatic involvement.  
+- Consider HIDA scan if ultrasound is nondiagnostic and clinical suspicion for acute cholecystitis remains high.  
+
+Therapeutic Interventions  
+- Initiate intravenous fluid resuscitation with isotonic saline, titrated to maintain euvolemia, taking into account CKD status.  
+- Provide analgesia with acetaminophen 650 mg PO q6h PRN (avoid NSAIDs given reduced renal function).  
+- Offer antiemetic therapy (ondansetron 4 mg PO/IV q8h PRN) for nausea.  
+- Keep patient NPO until imaging results are available; if cholecystitis is confirmed, consider surgical consultation for cholecystectomy.  
+
+Medication Review  
+- Continue metformin and insulin as per diabetic regimen; monitor blood glucose closely while on IV fluids.  
+- Continue lisinopril; monitor blood pressure and renal function.  
+- Continue inhaled bronchodilators for COPD as needed.  
+
+Monitoring  
+- Reassess pain, nausea, and vital signs every 2–4 hours.  
+- Monitor urine output and renal function labs (creatinine, BUN) given underlying CKD.  
+
+Disposition  
+- Admit for observation and further work‑up pending imaging results, given severity of pain (8/10) and comorbidities.  
+- If imaging confirms uncomplicated biliary colic without evidence of infection, consider discharge with outpatient surgical follow‑up; if acute cholecystitis is diagnosed, proceed with surgical evaluation.  
+
+Follow‑up Instructions  
+- If discharged, schedule outpatient follow‑up with primary care within 3 days and with gastroenterology or surgery within 1 week.  
+- Advise patient to avoid fatty meals until definitive diagnosis is made.  
+- Instruct patient to seek immediate care if she develops fever, vomiting, worsening pain, jaundice, or any new concerning symptoms.  
+
+Patient Education  
+- Discuss the likely biliary etiology of her pain and the importance of dietary modification.  
+- Review signs of worsening infection and when to return to the emergency department.  
+
+No further information available.

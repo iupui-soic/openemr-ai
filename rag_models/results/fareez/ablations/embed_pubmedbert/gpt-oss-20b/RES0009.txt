@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-20b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:56:11
+Time: 3.37s
+Tokens: 15,118 in / 1,415 out
+============================================================
+
+Patient Information  
+The patient is a female presenting for evaluation of a left-sided chest pain that has persisted for the past five days. No specific age or identifying details are available from the encounter.
+
+Chief Complaint  
+Left-sided chest pain lasting five days, described as a persistent sharp pain that is aggravated by deep inhalation and walking.
+
+History of Present Illness  
+The patient reports a new onset of left chest pain that began five days ago while she was seated on her couch. The pain is localized to the left side of the chest, sharp, and persistent. She notes that it worsens with deep breaths and with walking, especially when she goes out for the mail. The pain has not improved markedly despite occasional use of acetaminophen and ibuprofen, which only provide minimal relief. She denies any radiation of the pain to other areas. The patient has experienced difficulty breathing associated with the pain and reports mild fatigue due to reduced activity, but otherwise states her energy was normal prior to the onset of symptoms. She denies fever, chills, night sweats, nausea, vomiting, cough, wheezing, hemoptysis, abdominal pain, urinary symptoms, headaches, chest trauma, or any other systemic complaints. She reports no chest trauma or recent travel. She has had no previous episodes of chest pain or known cardiovascular or pulmonary disease. She had a hysterectomy approximately one month prior to presentation, which was uncomplicated and after which she has returned to normal activity.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or weight change; mild fatigue secondary to reduced activity.  
+Respiratory: Dyspnea on exertion; no cough, wheeze, hemoptysis, or chest congestion.  
+Cardiovascular: No chest pain radiating to arm or jaw, no palpitations, no syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or frequency; recent hysterectomy noted.  
+Musculoskeletal: No joint pain, leg pain, or muscle pain.  
+Skin: No rash or lesions.  
+Neurologic: No headaches or dizziness.  
+
+Past Medical History  
+- Hysterectomy one month prior (no complications noted).  
+No other medical diagnoses reported by the patient.  
+
+Past Surgical History  
+- Hysterectomy.  
+No other surgeries reported.  
+
+Social History  
+The patient lives with her husband and two teenage children. She works as an accountant. She consumes alcohol socially, typically one glass of wine on weekends. She smokes approximately five cigarettes per day and has expressed a desire to quit. She denies recreational drug use except for occasional marijuana in her youth. She has not recently traveled or taken long trips.
+
+Family History  
+- Mother had a myocardial infarction in her 70s.  
+No other significant family history of cardiovascular, pulmonary, or thrombotic disease reported.
+
+Medications  
+The patient reports that she does not take any prescription or over‑the‑counter medications regularly. She has used acetaminophen and ibuprofen intermittently for pain relief.  
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Vital Signs  
+No current vital sign information was obtained during this encounter.
+
+Physical Examination  
+No physical examination findings were documented at this time.
+
+Laboratory Results  
+- White Blood Cell Count: 9.49 ×10^3/µL (normal)  
+- Red Blood Cell Count: 3.80 ×10^6/µL (normal)  
+- Hemoglobin: 16.92 g/dL (normal)  
+- Hematocrit: 47.5% (normal)  
+- Mean Corpuscular Volume: 80.6 fL (normal)  
+- Mean Corpuscular Hemoglobin: 27.1 pg (normal)  
+- Mean Corpuscular Hemoglobin Concentration: 33.4 g/dL (normal)  
+- Platelet Count: 296.7 ×10^3/µL (normal)  
+- Glucose: 82.8 mg/dL (normal)  
+- Blood Urea Nitrogen: 10.5 mg/dL (normal)  
+- Creatinine: 0.88 mg/dL (normal)  
+- Estimated GFR (MDRD): 158 mL/min/1.73 m² (normal)  
+- Calcium: 8.79 mg/dL (normal)  
+- Sodium: 142.9 mmol/L (normal)  
+- Potassium: 3.73 mmol/L (normal)  
+- Chloride: 102.3 mmol/L (normal)  
+- Total CO₂: 23.2 mmol/L (normal)  
+- Serum Protein: 6.86 g/dL (normal)  
+
+Imaging  
+No imaging studies were performed or documented at the time of this visit.
+
+Assessment  
+The patient presents with a five‑day history of left‑sided sharp chest pain that is pleuritic in nature (worsening with deep breaths and exertion) and associated with mild dyspnea. Differential diagnosis includes musculoskeletal chest wall pain, pleuritic inflammation (e.g., pneumonia or pleurisy), pulmonary embolism, and other cardiopulmonary causes. The absence of fever, cough, wheezing, hemoptysis, recent immobilization, or trauma lowers the probability of pulmonary embolism but does not exclude it. The patient has a history of recent hysterectomy and is a smoker, both of which may increase thrombotic risk. Given the patient's symptoms and risk factors, a pulmonary embolism remains a significant consideration.
+
+Plan  
+1. Order a D‑dimer assay to assess for thrombotic activity.  
+2. If D‑dimer is elevated or clinical suspicion remains high, obtain a CT pulmonary angiogram to rule out pulmonary embolism.  
+3. Provide symptomatic analgesia: acetaminophen 500 mg orally every 6–8 hours as needed for pain; avoid NSAIDs due to potential renal impact and unknown kidney status.  
+4. Counsel on smoking cessation strategies, including nicotine replacement therapy and referral to a smoking cessation program.  
+5. Educate the patient about red‑flag symptoms (worsening chest pain, new onset of dyspnea, hemoptysis, syncope) that warrant immediate medical evaluation.  
+6. Arrange a follow‑up appointment in 48–72 hours to review laboratory and imaging results, or sooner if symptoms worsen.  
+7. Encourage regular follow‑up with primary care for ongoing cardiovascular risk assessment.  
+
+This summary reflects the information gathered during the encounter and incorporates current laboratory data while acknowledging the absence of vital signs and physical examination findings. The plan aims to promptly evaluate for pulmonary embolism and manage the patient’s chest pain and associated symptoms.

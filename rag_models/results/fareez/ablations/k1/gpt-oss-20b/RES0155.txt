@@ -1,0 +1,84 @@
+Model: openai/gpt-oss-20b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:32:38
+Time: 2.75s
+Tokens: 11,865 in / 1,074 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+DOB: 1914-01-07 (no current age available)  
+Sex: Female  
+
+Chief Complaint  
+Shortness of breath, chest discomfort, and productive cough for the past five days.  
+
+History of Present Illness  
+The patient reports a five‑day history of progressive shortness of breath that worsens with exertion, accompanied by chest discomfort described as a feeling of congestion. She has a productive cough with yellowish to greenish sputum; the volume is approximately a palm‑sized amount each time. She denies hemoptysis, orthopnea, paroxysmal nocturnal dyspnea, or nighttime gasping. The patient reports feeling feverish over the last few days, although she has not measured her temperature. No chest pain, palpitations, nausea, vomiting, or gastrointestinal upset are reported. She denies recent travel, sick contacts, or new exposures.  
+
+Review of Systems  
+- Constitutional: Feels feverish, no chills, no night sweats, no significant weight change.  
+- Respiratory: Productive cough with yellow/green sputum, shortness of breath on exertion, chest congestion, no hemoptysis, no orthopnea.  
+- Cardiovascular: No palpitations, no chest pain.  
+- Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+- Genitourinary: No dysuria or frequency.  
+- Neurologic: No headaches, vision changes, or dizziness.  
+- Musculoskeletal: No joint pain.  
+- Skin: No rashes or lesions.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed approximately three years ago).  
+- Essential hypertension.  
+- Gastroesophageal reflux disease.  
+No surgical history or known significant comorbidities reported.  
+
+Family History  
+No known family history of pulmonary or cardiac disease.  
+
+Social History  
+The patient smokes approximately one pack of cigarettes daily and has smoked for roughly 30–40 years. She consumes wine on weekends. She works at a grocery store and lives with her daughter in an apartment. No recreational drug use.  
+
+Current Medications (as reported by patient)  
+- Ventolin (albuterol) inhaler – used as needed (3–4 puffs in the morning, 2–3 puffs nightly).  
+- Symbicort (beclomethasone/formoterol) – daily inhaler.  
+- ACE inhibitor – unspecified brand.  
+- Tums or similar antacid for GERD flare‑ups.  
+
+Allergies  
+No known drug allergies.  
+
+Physical Examination  
+No physical exam findings are available in the current documentation.  
+
+Vital Signs  
+- Heart rate: 92 bpm  
+- Respiratory rate: 12 breaths/min  
+- Temperature: not recorded  
+- Blood pressure: not recorded  
+- SpO₂: not recorded  
+
+Laboratory Results  
+- Complete metabolic panel shows normal electrolytes (Na 138.4, K 4.85, Cl 106.7), normal renal function (creatinine 0.42 mg/dL, GFR 88.5 mL/min), and normal liver enzymes (AST 51.9 U/L, ALT 51.9 U/L).  
+- Blood glucose 96.7 mg/dL, total cholesterol 204 mg/dL.  
+- No complete blood count or inflammatory markers are available.  
+
+Imaging  
+No imaging studies have been completed at the time of documentation.  
+
+Assessment  
+The clinical picture is most consistent with an acute exacerbation of chronic obstructive pulmonary disease, likely precipitated by a lower respiratory tract infection. The presence of feverish sensation, productive yellow/green sputum, and worsening dyspnea on exertion suggests a possible bacterial pneumonia superimposed on COPD. No evidence of heart failure, pulmonary embolism, or other acute cardiopulmonary processes is noted.  
+
+Plan  
+1. Admit for monitoring and supportive care.  
+2. Initiate nebulized bronchodilator therapy and consider systemic corticosteroids.  
+3. Obtain a chest radiograph to evaluate for infiltrates consistent with pneumonia.  
+4. Order a CBC with differential, sputum Gram stain and culture, and COVID‑19 PCR test.  
+5. Continue the patient’s home inhaler regimen (Ventolin as needed, Symbicort daily).  
+6. Start empiric antibiotic therapy tailored to local resistance patterns once culture results are available.  
+7. Reinforce smoking cessation resources; provide counseling and offer pharmacologic aids if desired.  
+8. Monitor vitals and oxygen saturation closely; supplement oxygen as needed.  
+9. Educate the patient on the signs of worsening dyspnea, chest pain, or persistent fever that warrant immediate evaluation.  
+10. Arrange outpatient follow‑up with primary care and pulmonology in 48–72 hours post‑discharge to review test results and adjust therapy.  
+
+Discharge instructions will include instructions on inhaler technique, medication schedule, when to seek urgent care, and smoking cessation resources. Follow‑up will be scheduled with the patient’s primary provider and a pulmonary specialist.

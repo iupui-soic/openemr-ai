@@ -1,0 +1,84 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:32:26
+Time: 3.10s
+Tokens: 14,652 in / 1,252 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 1917‑03‑25  
+Sex: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of a productive cough and worsening shortness of breath.
+
+History of Present Illness  
+Mr. Cummerata reports that his cough began approximately three days ago, initially dry but soon producing yellowish‑green sputum about the size of a thumb tip. He describes the cough as hacking and notes that it has been persistent throughout the day and night. Shortness of breath started about one day after the onset of cough and has escalated to a severity of 7 on a 10‑point scale. The dyspnea is intermittent, sometimes accompanied by mild wheezing when the symptoms are most severe. The patient denies chest pain, palpitations, dizziness, fainting, confusion, or changes in vision or hearing. He reports mild abdominal ache, generalized fatigue, weakness, and difficulty sleeping due to the cough and dyspnea. He has not experienced fever, chills, or night sweats, although he notes a feeling of being “a little hot.” No recent weight loss has occurred.
+
+Review of Systems  
+Constitutional: Fatigue, weakness, no fever, chills, night sweats, or weight change.  
+Respiratory: Productive cough with yellowish‑green sputum, shortness of breath (severity 7/10), mild wheezing.  
+Cardiovascular: Known atrial fibrillation; no chest pain, palpitations, or dizziness.  
+Gastrointestinal: Mild abdominal ache; no nausea, vomiting, diarrhea, constipation, or blood in stool.  
+HEENT: Anosmia (reduced sense of smell); no sore throat, ear pain, or visual changes.  
+Musculoskeletal: Mild body aches.  
+Neurological: No dizziness, fainting, confusion, or memory loss.  
+Integumentary: No rash.  
+
+Allergies  
+Known sulfa allergy (rash with prior sulfa antibiotic).  
+
+Past Medical History  
+Atrial fibrillation (diagnosed 4 years ago, managed with metoprolol).  
+Hypertension (diagnosed 1951, managed with antihypertensives).  
+Chronic kidney disease (stage 2 per historic records, currently not active).  
+Other chronic conditions noted in prior records (diabetes, osteoarthritis) are not reported as active at this time.  
+
+Surgical History  
+Inguinal hernia repair approximately 15 years ago.  
+
+Social History  
+Patient is retired and lives with his wife in a renovated house. He has been a former smoker (one pack per day) but quit approximately five years ago. He does not consume alcohol or use recreational drugs. He occasionally uses CBD edibles (low‑dose, 2.5 mg) for sleep, taken a few times per week.  
+
+Family History  
+Aunt had lung cancer; she was a lifelong smoker. No other cancers or major cardiovascular diseases reported in the family.  
+
+Current Medications  
+Metoprolol (dose unspecified) for atrial fibrillation.  
+Atorvastatin (dose unspecified).  
+Low‑dose aspirin (81 mg) for cardiovascular prophylaxis.  
+CBD edibles (2.5 mg) used intermittently for sleep.  
+
+Objective  
+Vital signs: No current vital sign data available.  
+Physical examination: No physical examination data documented in this encounter.  
+Laboratory results (selected values):  
+- Hematocrit 43.3 %  
+- Hemoglobin not reported but inferred within normal range.  
+- White blood cell differential: neutrophils 13.7 %, lymphocytes not listed.  
+- Ferritin 1853 µg/L (elevated).  
+- Calcium 9.75 mg/dL (normal).  
+- Potassium 4.04 mmol/L (normal).  
+- Bicarbonate 24.3 mmol/L (normal).  
+- Urea nitrogen 17.9 mg/dL (slightly elevated).  
+
+Imaging  
+No imaging studies performed during this encounter.  
+
+Assessment  
+The clinical presentation is most consistent with an acute viral upper respiratory illness, likely COVID‑19 given the overlap of symptoms, exposure to a long‑term care facility with known outbreaks, and the presence of anosmia. Bacterial pneumonia remains in the differential, given the productive yellowish sputum, mild fever, and elevated inflammatory markers, but no definitive evidence of consolidation or pleuritic pain is reported.  
+
+Plan  
+1. Obtain a SARS‑CoV‑2 PCR test via nasopharyngeal swab and send to laboratory; results expected in 1–2 days.  
+2. Advise patient to self‑isolate at home for 14 days regardless of test outcome to prevent potential transmission to his spouse.  
+3. Continue current cardiac and lipid‑lowering medications (metoprolol, statin, aspirin) without modification.  
+4. Monitor symptoms; if cough or dyspnea worsens, or if new chest pain or fever >100.4 °F develops, return to the clinic or seek urgent care.  
+5. Consider empirical antibiotic therapy if clinical suspicion of bacterial pneumonia increases (e.g., persistent fever, increased sputum purulence, worsening hypoxia).  
+6. Discuss sleep hygiene and potential pharmacologic options (e.g., melatonin, short‑term hypnotic) to replace CBD edibles if needed.  
+7. Follow‑up appointment in 3 days to review PCR results and symptom progression.  
+8. Educate patient on early signs of respiratory decompensation (increased shortness of breath, new chest pain, confusion) and instructions to seek emergent care.  
+
+End of summary.

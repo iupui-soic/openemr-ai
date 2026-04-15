@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:33:34
+Time: 2.04s
+Tokens: 8,690 in / 898 out
+============================================================
+
+Patient Information  
+A 25‑year‑old male student presents to the clinic with a chief complaint of sharp chest pain.
+
+Chief Complaint  
+Sharp, episodic chest pain localized over the area of the heart, radiating to the neck on occasion, lasting a few seconds and occurring intermittently for the past three days.
+
+History of Present Illness  
+The patient reports onset of chest pain three days ago. The pain is described as sharp rather than pressure‑like, with a severity rating of 6 on a 0–10 scale. Episodes last a few seconds and are brief, often occurring when coughing or lying down. The pain improves when leaning forward. There is no associated shortness of breath, dizziness, palpitations, weakness, numbness, nausea, vomiting, fever, chills, headache, or any other systemic symptoms. The patient has taken acetaminophen (Tylenol) once yesterday, which provided some relief. No recent injuries or trauma to the chest. The patient denies any prior episodes of chest pain.
+
+Review of Systems  
+Constitutional – No fever, chills, weight change, or malaise reported.  
+Respiratory – No cough (other than mild recent flu), dyspnea, or wheeze.  
+Cardiovascular – No palpitations, syncope, or known heart disease.  
+Gastrointestinal – No nausea, vomiting, abdominal pain, or reflux.  
+Neurologic – No dizziness, weakness, or numbness.  
+Other – No headache, no rash, no musculoskeletal pain.
+
+Past Medical History  
+No known medical conditions. No surgeries. No history of hypertension, diabetes, hyperlipidemia, or cardiovascular disease.
+
+Family History  
+Father deceased two weeks ago from a myocardial infarction. No other family history of heart disease, stroke, or cancer noted.
+
+Social History  
+The patient is a college student studying engineering and works part‑time as a postal worker. He lives with his mother. Occasional alcohol intake on weekends (one to two drinks). No tobacco use, no recreational drugs. Regular exercise not reported.
+
+Medications  
+Patient reports occasional use of Tylenol for pain relief. No other regular medications.
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Vital Signs  
+No vital sign data recorded during this visit.
+
+Physical Examination  
+No physical examination was documented during this encounter.
+
+Laboratory Tests  
+No laboratory studies were performed during this visit.
+
+Imaging  
+No imaging studies were obtained during this encounter.
+
+Assessment  
+Acute, sharp chest pain of unclear etiology in a young adult. Differential diagnosis includes musculoskeletal pain, pericarditis, pulmonary embolism, and acute coronary syndrome, although the absence of classic ischemic features (pressure, diaphoresis, radiation to arm, etc.) lowers the pre‑test probability. The patient’s anxiety and family history of a recent myocardial infarction heighten concern; thus, cardiac evaluation is warranted.
+
+Plan  
+1. Obtain an electrocardiogram (ECG) to assess for ischemic changes or arrhythmias.  
+2. Order cardiac biomarkers (troponin I/T) and basic metabolic panel.  
+3. Reassure the patient about the low likelihood of an acute coronary syndrome given the short duration and lack of typical features, but emphasize the importance of prompt evaluation.  
+4. Advise the patient to seek immediate medical attention if the pain becomes more frequent, lasts longer than a few seconds, is associated with new symptoms (dyspnea, diaphoresis, syncope), or if he experiences any new chest discomfort.  
+5. Schedule a follow‑up appointment in 24–48 hours or sooner if new symptoms arise.  
+6. Consider referral to cardiology if ECG or cardiac enzymes are abnormal or if clinical suspicion remains high.  
+7. Discuss lifestyle measures: maintain a balanced diet, limit alcohol consumption, and encourage regular physical activity.  
+8. Provide patient education on recognizing warning signs of heart attack and the importance of timely medical care.  
+
+Follow‑up Instructions  
+The patient should return to the clinic within 24–48 hours for review of ECG and laboratory results or sooner if symptoms worsen. In case of any new or worsening chest pain, shortness of breath, dizziness, or palpitations, the patient should go to the nearest emergency department immediately.

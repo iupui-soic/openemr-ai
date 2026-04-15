@@ -1,0 +1,133 @@
+Model: openai/gpt-oss-120b
+Patient: RES0007
+Detected Disease: Asthma
+Generated: 2026-04-14 03:28:22
+Time: 5.88s
+Tokens: 9,002 in / 2,044 out
+============================================================
+
+Patient Information  
+Name: Abby Ondricka DOB: 2003‑01‑16 (Age 23) Sex: Female Address: 564 Breitenberg View, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+Follow‑up visit for recent diagnosis of recurrent asthma and clarification of inhaler regimen.
+
+History of Present Illness  
+Abby reports that a pulmonary function test performed a few months ago confirmed the return of asthma, which she had in childhood and believed she had outgrown. She notes intermittent shortness of breath and a sensation of “can’t breathe” during high‑intensity activities such as running in gym class. The dyspnea resolves within a few minutes of stopping activity. She also experiences chest tightness and difficulty breathing when exposed to cold outdoor air (e.g., building a snowman) and reports wheezing and audible breathing difficulty when she was at a friend’s house with multiple cats. She does not have a chronic cough, nocturnal symptoms, or fever. She denies nausea, vomiting, urinary or bowel complaints, and recent infections. Her only trigger‑related symptoms have been during exercise, cold exposure, and cat dander.  
+
+She has been prescribed an inhaler regimen but is uncertain about the dosing. She states she uses a medication that “starts with an ‘s’” (fluticasone propionate) two times per day, though occasionally she misses a dose. She also uses a rescue inhaler (albuterol) during gym class. She was told by the nurse that she should be using both inhalers, but only one medication was filled at the pharmacy, leading to confusion. She wishes clarification and wants to know whether her asthma will preclude her goal of joining the Marine Corps.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, weight change reported.  
+Respiratory: Exercise‑induced dyspnea, shortness of breath with cold air, wheeze with cat exposure; no cough, no nocturnal symptoms.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Skin: History of atopic dermatitis in childhood; no current rashes or itching.  
+Allergic/Immunologic: Seasonal allergic rhinitis (spring) and cat dander sensitivity; reports itchy eyes and runny nose with cat exposure and during spring.  
+Psychiatric: No depression, anxiety, or suicidal ideation (PHQ‑2 score 0–2, GAD‑7 score 1–2).  
+Social: Lives with parents and younger brother; high‑school junior (Grade 11). Occasional alcohol use at weekend parties; denies tobacco or illicit drug use. Sexually active with one girlfriend, consistent condom use. No history of sexually transmitted infections.
+
+Past Medical History  
+- Childhood asthma (diagnosed 2007, previously inactive, now recurrent).  
+- Atopic dermatitis (resolved 2021).  
+- Perennial allergic rhinitis (active, especially in spring).  
+- Prior acute bronchitis episodes (2016, 2021, 2021).  
+- Acute viral pharyngitis, viral sinusitis, acute cystitis, gingivitis (historical).  
+
+Surgical History  
+- Wisdom tooth extraction.  
+- No other surgeries.
+
+Allergies  
+- Cat dander (environmental).  
+- House dust mite, mold, grass pollen, tree pollen, wheat, tree nut (per EMR).  
+- No medication allergies reported.
+
+Family History  
+- Father possibly had asthma in childhood, currently asymptomatic.  
+- Father experiences seasonal allergic rhinitis.  
+- No other significant family medical problems reported.
+
+Social History  
+- Education: Currently in high school, Grade 11.  
+- Living situation: Resides with parents and brother.  
+- Exercise: Participates in school gym class; reports difficulty with high‑intensity activity.  
+- Alcohol: Infrequent beer consumption at social gatherings.  
+- Tobacco/Drugs: None.  
+- Sexual activity: Heterosexual, monogamous relationship, condom use every time.
+
+Current Medications (Home)  
+- Fluticasone propionate metered‑dose inhaler 44 µg/actuat (Flovent) – prescribed as a daily controller, dosage unclear to patient.  
+- Albuterol inhalation solution 0.83 mg/mL – rescue inhaler, used during gym class.  
+- Fexofenadine 30 mg oral tablet – antihistamine for seasonal allergies, taken as needed.  
+- Vitamin supplement (unspecified).  
+
+Objective  
+Vital Signs (most recent in EMR)  
+- Heart Rate: 99 beats/min  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not recorded  
+- Temperature: Not recorded  
+- SpO₂: Not recorded  
+- Height: 162 cm; Weight: Not recorded; BMI: 17.95 (underweight)  
+
+Physical Examination  
+- General: Alert, oriented, appears well‑nourished but underweight.  
+- HEENT: No nasal discharge or ocular tearing noted at the time of exam.  
+- Respiratory: No wheezes or crackles auscultated at rest; no use of accessory muscles.  
+- Cardiovascular: Regular rate and rhythm, no murmurs.  
+- Skin: No active dermatitis or rashes.  
+- No other abnormal findings.
+
+Laboratory Data (most recent)  
+- Complete blood count within normal limits (WBC 5.6 ×10³/µL, Hgb 13.7 g/dL, Hct 45.2 %).  
+- Platelet count 187 ×10³/µL.  
+- No evidence of anemia or infection.  
+- PHQ‑2 total score 0–2 (negative for depression).  
+- GAD‑7 total score 1–2 (minimal anxiety).  
+- AUDIT‑C total score 1–2 (low‑risk alcohol use).  
+
+Imaging  
+- No imaging performed during this encounter.
+
+Assessment  
+1. Persistent asthma, partially controlled, with exercise‑induced bronchoconstriction, cold‑air sensitivity, and cat‑dander trigger.  
+2. Perennial allergic rhinitis, seasonal exacerbation in spring.  
+3. Underweight (BMI 17.9).  
+4. Social/occupational goal: Interest in enlisting in the United States Marine Corps; requires clarification of medical standards for asthma.  
+
+Plan  
+1. **Asthma Management**  
+   - Reinforce daily controller therapy: Fluticasone propionate 1 puff BID (twice daily) regardless of symptoms.  
+   - Rescue therapy: Albuterol 2 puffs inhaled at onset of symptoms; may be used 30 minutes before anticipated exercise (e.g., gym class) and repeated every 4–6 hours as needed, not exceeding 8 puffs per day.  
+   - Provide written Asthma Action Plan outlining green (well‑controlled), yellow (caution), and red (emergency) zones, including when to use rescue inhaler and when to seek emergency care.  
+   - Schedule repeat spirometry with bronchodilator response in 4–6 weeks to assess control and confirm need for step‑up or step‑down therapy.  
+   - Encourage use of a spacer with the rescue inhaler to improve delivery during exercise.  
+
+2. **Allergic Rhinitis**  
+   - Continue fexofenadine 30 mg PO once daily during peak pollen season; consider adding intranasal corticosteroid spray if symptoms persist.  
+   - Environmental control: Limit exposure to cat dander (avoid indoor cat environments, wash hands after any contact, consider HEPA air filter at home).  
+
+3. **Weight Management**  
+   - Counsel on a balanced, calorie‑dense diet to achieve a healthy BMI; consider referral to a dietitian if needed.  
+
+4. **Military Eligibility Counseling**  
+   - Explain that the U.S. Marine Corps requires individuals with asthma to be symptom‑free for a minimum of 3 years off all asthma medications, with normal pulmonary function testing, before enlistment.  
+   - Discuss that well‑controlled asthma on low‑dose inhaled corticosteroid may be considered on a case‑by‑case basis, but documentation of control and a medication‑free period will be essential.  
+   - Offer referral to a pulmonology specialist for detailed evaluation and potential certification for military service.  
+
+5. **Education**  
+   - Demonstrate proper inhaler technique for both controller and rescue devices.  
+   - Review trigger avoidance strategies (cold air, cat exposure, strong odors).  
+   - Discuss importance of adherence to daily controller to prevent exacerbations.  
+
+6. **Follow‑up**  
+   - Return visit in 4–6 weeks for spirometry results, medication review, and assessment of asthma control.  
+   - Patient instructed to call the clinic sooner if she experiences worsening dyspnea, frequent use of albuterol (>2 days/week), nighttime symptoms, or any acute respiratory distress.  
+
+7. **Documentation**  
+   - Update medication list in the electronic health record to reflect current dosing instructions.  
+   - Ensure allergy list includes cat dander and environmental allergens as noted.  
+
+The above plan was discussed with Abby, and she verbalized understanding and agreement.

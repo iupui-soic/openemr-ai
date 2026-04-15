@@ -1,0 +1,45 @@
+Model: google/medgemma-4b-it
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 06:28:26
+Time: 29.84s
+Tokens: 16,073 in / 408 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abel Daugherty
+Date of Birth: 1940-08-19
+Sex: Male
+Unit Number: 336
+
+Chief Complaint: Painful and swollen right hand following a skiing fall.
+
+History of Present Illness:
+
+The patient presented to the clinic complaining of pain and swelling in his right hand following a fall while skiing yesterday. He reports that he fell on his outstretched arm, with his hand braced to cushion the impact. He denies any other injuries, such as to the elbow, shoulder, or head. He reports immediate pain upon impact. He denies any numbness, tingling, or sensory loss. He has been taking ibuprofen for pain relief and has been trying to avoid moving his hand excessively. The pain is described as sharp and is localized to the area below the thumb and on the right wrist.
+
+Past Medical History:
+
+The patient has a history of seizure disorder, epilepsy, and chronic kidney disease stage 4. He also has a history of diabetes mellitus type 2, essential hypertension, and hypertriglyceridemia. He has a history of being in a social isolation situation.
+
+Social History:
+
+The patient lives alone in an apartment downtown and is currently in school. He reports no recent travel. He does not smoke, drinks alcohol occasionally (2 beers every other week), and uses cannabis edibles once a month.
+
+Family History:
+
+There is no significant family history of neurological or musculoskeletal problems.
+
+Physical Exam:
+
+The physical exam revealed swelling and tenderness in the right wrist and distal radius. Range of motion was limited due to pain. No muscle atrophy or deformity was noted.
+
+Assessment:
+
+The patient's presentation is consistent with a possible distal radial fracture or other wrist injury.
+
+Plan:
+
+An X-ray of the right wrist is ordered to evaluate for a fracture. The patient was advised to continue with pain management with ibuprofen and to avoid excessive movement of the wrist. Further management will depend on the X-ray findings.

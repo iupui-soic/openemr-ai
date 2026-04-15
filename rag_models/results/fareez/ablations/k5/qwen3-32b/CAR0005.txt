@@ -1,0 +1,55 @@
+Model: qwen/qwen3-32b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:46:21
+Time: 4.38s
+Tokens: 8,588 in / 1,313 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old female, Amee Reva Goyette, residing at 668 Quigley Mill Apt 10, Beverly, Massachusetts. She is a previously healthy individual with no known chronic conditions, currently presenting with a two-week history of intermittent chest pain. The patient is a smoker, consuming half a pack to one pack of cigarettes per day, and has a history of social stress due to personal life events, including a separation from her husband two years ago. She exercises regularly, engaging in running or cycling three to four times per week. The patient has a family history of heart disease, specifically a myocardial infarction in her father at age 60, which is a concern for her. She denies any allergies and is not currently taking any medications other than occasional over-the-counter analgesics such as Advil, Tylenol, and Tums, which have not provided relief. She has not traveled outside of Canada and denies recent contact with ill individuals.
+
+Chief Complaint  
+The patient presents with a two-week history of intermittent chest pain.
+
+History of Present Illness  
+The patient reports experiencing intermittent episodes of sharp, left-sided chest pain over the past two weeks. The pain is localized to the left side of the chest and does not radiate to other areas. Each episode lasts approximately 20 to 30 minutes and occurs two to three times per week. The pain is described as sharp and is neither constant nor associated with physical exertion, as it often occurs while she is at work or driving. The patient reports that the episodes have not increased in frequency or intensity over the past two weeks and rates the pain as a 4 out of 10 on a pain scale. She denies any associated symptoms such as nausea, vomiting, shortness of breath, or fever. Over-the-counter medications including ibuprofen, acetaminophen, and antacids have not provided relief. The patient has no prior history of similar symptoms and is concerned about the potential for a cardiac cause due to her family history of heart disease.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, weight loss, or fatigue.  
+Respiratory: No dyspnea, cough, or wheezing is reported.  
+Cardiovascular: No palpitations, syncope, or peripheral edema.  
+Gastrointestinal: No heartburn, dysphagia, or abdominal pain.  
+Neurological: No dizziness, headache, or visual changes.  
+Musculoskeletal: No back pain or joint pain.  
+Genitourinary: No dysuria or changes in urinary habits.  
+Hematologic: No easy bruising or bleeding.  
+Endocrine: No changes in appetite or sweating.  
+Psychiatric: The patient acknowledges significant stress due to personal life events but denies depression or anxiety symptoms.  
+Integumentary: No rashes or skin changes.  
+Allergic: No known allergies.  
+Other: No additional symptoms reported.
+
+Past Medical History  
+The patient reports no chronic medical conditions and has not been under regular care with a family physician. She has not been previously diagnosed with hypertension, hyperlipidemia, or diabetes. She has no history of heartburn or gastroesophageal reflux disease. She has not undergone any cardiac evaluations or procedures. The patient has a history of a renal transplant and chronic kidney disease, progressing to end-stage renal disease. She has a history of breast cancer, myocardial infarction, ischemic heart disease, and chronic kidney disease. She has also had a history of polyps of the colon and has undergone multiple medication reviews.
+
+Family History  
+The patient has a family history of heart disease, including a myocardial infarction in her father at age 60. No other significant family history is reported.
+
+Social History  
+The patient is a smoker, consuming half a pack to one pack of cigarettes per day, and is actively attempting to reduce this habit. She consumes alcohol occasionally, approximately one to two glasses of wine per weekend. She exercises regularly, engaging in running or cycling three to four times per week. She reports experiencing significant stress due to personal life events, including a separation from her husband two years ago.
+
+Medications  
+The patient is not currently taking any prescribed medications. She has used over-the-counter medications such as ibuprofen, acetaminophen, and Tums for symptom management, which have not provided relief.
+
+Allergies  
+No known drug or food allergies.
+
+Objective  
+Vital signs were not available in the electronic health record. Physical examination findings were not provided in the transcript or OpenEMR extract. Laboratory results included normal levels of sodium, potassium, creatinine, glucose, and other routine blood tests. No specific cardiac biomarkers such as troponin or CK-MB were reported. Imaging studies were not mentioned in the provided data.
+
+Assessment  
+The patient presents with intermittent, sharp, left-sided chest pain of two weeks duration. The pain is not associated with exertion, does not radiate, and is not accompanied by other concerning symptoms such as dyspnea, syncope, or diaphoresis. The patient has a family history of myocardial infarction and a personal history of ischemic heart disease. Given the age of the patient and the presence of a family history of heart disease, it is important to consider cardiac causes in the differential diagnosis. However, the non-exertional nature of the pain and lack of associated symptoms suggest a non-cardiac etiology, such as musculoskeletal or stress-related causes. The patient's stress levels may also contribute to her symptoms. Further evaluation is warranted to rule out acute cardiac events and to determine the underlying cause of her chest discomfort.
+
+Plan  
+The patient will be referred to her family physician for further evaluation and management. Additional diagnostic testing, including an electrocardiogram and possibly a stress test or imaging, may be indicated to rule out cardiac causes. The patient will be advised to continue monitoring her symptoms and to seek immediate medical attention if she experiences any new or worsening symptoms, particularly chest pain at rest, shortness of breath, or syncope. Follow-up with her primary care provider is recommended for a comprehensive assessment and to address her concerns regarding her family history of heart disease. Smoking cessation support will also be discussed, as reducing tobacco use is an important step in improving cardiovascular health. The patient will be advised to continue her regular exercise regimen unless advised otherwise by her physician.

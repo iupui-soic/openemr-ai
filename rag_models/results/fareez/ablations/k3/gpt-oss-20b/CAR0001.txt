@@ -1,0 +1,74 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:35:21
+Time: 2.26s
+Tokens: 10,142 in / 918 out
+============================================================
+
+Patient Information  
+Name: Unspecified (record indicates patient ID 6702)  
+Age: 39 years  
+Gender: Male  
+Occupation: Accountant  
+Living Situation: Lives alone in an apartment  
+
+Chief Complaint  
+The patient presents with acute left-sided chest pain that began last night and has been progressively worsening over the past eight hours.  
+
+History of Present Illness  
+The chest pain started approximately 8 to 10 hours ago while the patient was moving furniture. The pain is described as sharp, constant, and located on the left side of the chest. It has increased in intensity, now rated 7–8 on a 0–10 pain scale. The pain is aggravated by lying down and taking deep breaths, and is relieved somewhat by remaining upright. There is no radiation of the pain to the arm, jaw, or back. The patient reports associated symptoms of lightheadedness, shortness of breath, palpitations, and diaphoresis related to breathing difficulty. He denies loss of consciousness, nausea, vomiting, fever, chills, cough, wheezing, abdominal pain, urinary symptoms, bowel changes, or night sweats.  
+
+Review of Systems  
+Constitutional: Lightheadedness, diaphoresis related to dyspnea.  
+Cardiovascular: Chest pain, palpitations, no syncope.  
+Respiratory: Shortness of breath, worsened by lying down and deep inspiration; no cough, wheeze, or sputum.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: No neck pain; patient notes a mild neck swelling.  
+Neurologic: No headaches, dizziness beyond lightheadedness.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+The patient reports no prior medical conditions, surgeries, or hospitalizations.  
+
+Surgical History  
+None.  
+
+Social History  
+The patient smokes one pack of cigarettes daily for the past 10–15 years. He occasionally uses cannabis (approximately 5 mg weekly). Alcohol consumption is about one to two drinks per day, totaling roughly 10 drinks per week. He exercises approximately every other day, running for about 30 minutes. He works as an accountant and lives alone.  
+
+Family History  
+Father had a myocardial infarction at age 45 and has a history of hypercholesterolemia. No family history of stroke, cancer, diabetes, or other significant conditions reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+The patient reports no regular medications.  
+
+Physical Examination  
+No physical exam data were obtained during this encounter; vital signs and physical findings are currently unavailable.  
+
+Laboratory Data  
+No laboratory studies were performed or reported in this encounter.  
+
+Assessment  
+1. Acute chest pain of likely cardiac etiology (suspected acute coronary syndrome).  
+2. Secondary considerations: musculoskeletal chest wall pain, anxiety-related chest pain, pulmonary embolism, and gastroesophageal reflux disease.  
+
+Plan  
+- Immediate cardiac workup: obtain an electrocardiogram and serial cardiac troponin measurements.  
+- Initiate standard acute coronary syndrome therapy pending results: 325 mg aspirin chewable, sublingual nitroglycerin as needed for pain relief, and consider high‑dose morphine for refractory pain.  
+- Administer supplemental oxygen to maintain SpO₂ ≥ 94%.  
+- Monitor vital signs and cardiac rhythm continuously.  
+- Arrange for transfer to a higher‑level cardiac care facility if ischemic changes appear.  
+- Counsel patient on smoking cessation resources and discuss potential need for cardiac stress testing or imaging after stabilization.  
+- Follow‑up with cardiology within 48 hours or sooner if symptoms recur or worsen.  
+- Educate patient on red flag symptoms (e.g., worsening pain, syncope, worsening dyspnea) that warrant immediate return to the emergency department.  
+
+Follow‑up Instructions  
+The patient should seek emergency care immediately if chest pain becomes more severe, spreads to other areas, is accompanied by sweating, fainting, or new shortness of breath. He is advised to keep a record of pain episodes and any associated symptoms.  
+
+Disposition  
+The patient was advised to undergo emergent cardiac evaluation and to follow up closely with cardiology. No discharge medications were prescribed at this time pending laboratory and imaging results.

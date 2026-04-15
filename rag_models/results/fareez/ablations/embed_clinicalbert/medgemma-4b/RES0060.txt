@@ -1,0 +1,53 @@
+Model: google/medgemma-4b-it
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 05:59:27
+Time: 36.37s
+Tokens: 6,501 in / 698 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abbie Stamm
+Date of Birth: 2001-11-16
+Gender: Female
+Unit Number: 123
+
+Chief Complaint: Patient presents with fever and cough.
+
+History of Present Illness:
+
+The patient reports a fever that started four days ago, along with a cough that began four days prior. The patient notes that the cough has been worsening, and they have also experienced fatigue and increased shortness of breath. The patient denies any prior similar episodes. They deny any sore throat, difficulty swallowing, or changes in taste or smell. The patient reports a runny nose, but not to a significant degree. They deny any ear or eye pain or discharge. The patient reports no sputum production. The cough is dry. The patient denies any blood in their sputum. They deny any wheezing or chest pain. The patient reports feeling chilly at night, but denies night sweats. The patient denies weight loss. The patient reports that the cough is not affected by anything specific. The patient reports nausea, but denies vomiting. The patient reports that the headache started several days ago and is intermittent. The patient denies any memory loss or confusion. They deny any dizziness or fainting spells. The patient reports being generally healthy, except for a history of high cholesterol, which she is managing with Rosuvastatin. She also reports being pre-diabetic, with an A1C of 6.2% six months ago. She reports making lifestyle changes, including walking her dog more and eating out less. The patient denies any recent travel. She denies contact with anyone who has been sick.
+
+Physical Exam:
+
+The physical exam is not detailed in the provided transcript.
+
+Medications:
+
+The patient is currently taking Rosuvastatin for high cholesterol. She also takes a multivitamin. She is allergic to penicillin.
+
+Allergies:
+
+Penicillin (hives)
+
+Past Medical History:
+
+The patient has a history of childhood asthma, which resolved. She has perennial allergic rhinitis, which also resolved. She has a history of mitral valve regurgitation. She has had an inguinal hernia repaired five years ago.
+
+Family History:
+
+The patient's family history is not detailed in the provided transcript.
+
+Social History:
+
+The patient lives in a duplex and reports that she and her girlfriend are both healthy. She denies smoking, marijuana, or other recreational drug use. She drinks alcohol occasionally, typically two or three beers on the weekend.
+
+Assessment:
+
+The patient presents with symptoms suggestive of an upper respiratory infection, possibly viral. COVID-19 is a concern, and the patient is advised to isolate for 14 days, even if the COVID swab is negative. Other possible diagnoses include influenza or other common respiratory viruses.
+
+Plan:
+
+The patient is advised to isolate for 14 days, including her girlfriend. A COVID swab will be performed. The patient is instructed to follow up if symptoms worsen or change. If the COVID swab is positive, the patient will be advised to continue isolation. If the COVID swab is negative, the patient will be advised to continue isolation for 14 days. If symptoms persist after 14 days, a bacterial infection or bacterial pneumonia should be considered, and antibiotics may be prescribed. The patient is advised to make lifestyle changes to manage her pre-diabetes. The patient is referred to a provider for further evaluation and management of her pre-diabetes.

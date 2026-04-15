@@ -1,0 +1,104 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0031
+Detected Disease: Hip Fracture
+Generated: 2026-04-14 04:13:33
+Time: 7.02s
+Tokens: 10,422 in / 1,919 out
+============================================================
+
+Patient Information  
+Name: Albert Turner Date of Birth: 28 September 1931 Sex: Male Address: 370 Bins Trailer Suite 9, Barnstable, Massachusetts 02673 Age: 94 years  
+
+Chief Complaint  
+Severe right‑hip pain after a fall down stairs, with inability to bear weight on the right lower extremity.  
+
+History of Present Illness  
+The patient reports that approximately two hours prior to presentation he was descending a flight of stairs in his home when he missed a step and slipped, falling onto the right side of his body. He denies any loss of consciousness or dizziness preceding the fall. Immediately after the incident he experienced excruciating pain localized to the right hip and groin region. The pain is described as sharp when weight is applied and achy when the hip is rested. He rates the intensity as 10/10, stating that he has never experienced pain of this magnitude. He notes swelling, a degree of redness, and bruising over the right hip, as well as warmth compared with the left side. The right lower extremity appears slightly outwardly rotated. He is unable to stand without assistance, can only support himself with the left leg, and is unable to perform active hip flexion, extension, abduction, or adduction due to pain. He denies prior similar injuries, prior falls, or chronic hip problems. He reports mild dizziness after the fall while in the ambulance, which he attributes to the severe pain. No headache, visual changes, nausea, vomiting, numbness, tingling, fever, chills, cough, shortness of breath, chest pain, palpitations, bowel or urinary changes are reported.  
+
+Review of Systems  
+Constitutional: Positive for severe right‑hip pain, swelling, and warmth; negative for fever, chills, weight loss, or night sweats.  
+Skin: Positive for bruising and mild erythema over the right hip; negative for rashes.  
+Musculoskeletal: Positive for acute right‑hip pain, limited range of motion, and inability to weight‑bear; negative for prior joint pain elsewhere.  
+Neurologic: Negative for numbness, tingling, weakness, or loss of sensation.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Eyes/Ears/Nose/Throat: No visual, auditory, olfactory, or taste disturbances.  
+
+Past Medical History  
+- Osteoarthritis (hand)  
+- Essential hypertension  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (historical)  
+- Chronic kidney disease (stage 3) and prior end‑stage renal disease with renal transplant (historical)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Anemia  
+- History of prior closed hip fracture (1999) – remote, unrelated to current event  
+
+Surgical History  
+- Coronary artery bypass graft (date not specified)  
+- Renal transplant (date not specified)  
+
+Social History  
+The patient lives in a small apartment with his husband. He is a lifelong nonsmoker and denies any recreational drug use. He consumes alcohol occasionally, approximately one glass of wine every other day. He reports no recent travel, no known sick contacts, and limited physical activity.  
+
+Family History  
+Father died of myocardial infarction in his 60s. Mother had non‑melanoma skin cancers treated with local therapy. No known family history of musculoskeletal or autoimmune disease.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications (home)  
+- Ramipril (blood pressure) – as reported by patient  
+- Vitamin D supplement  
+- Calcium supplement  
+- Multivitamin  
+
+(Additional chronic medications listed in the electronic record include lisinopril, amlodipine, hydrochlorothiazide, metoprolol succinate, nitroglycerin spray, and various analgesics; however, the patient specifically identified Ramipril as his antihypertensive at this visit.)  
+
+Vital Signs  
+No current vital sign measurements documented in the encounter note.  
+
+Physical Examination  
+General: Alert, oriented, in acute distress due to right‑hip pain.  
+Extremities: Right hip demonstrates swelling, mild erythema, and bruising. The skin is warmer to the touch compared with the left side. The right lower extremity appears slightly externally rotated. The patient is unable to stand without assistance and reports severe pain with any attempt at weight‑bearing. Active range of motion of the right hip is severely limited; the patient cannot perform flexion, extension, abduction, or adduction due to pain. No obvious deformity beyond external rotation. No distal neurovascular deficits noted.  
+Cardiovascular, Respiratory, Abdomen, Neurologic (cranial), and other systems: No abnormal findings reported or observed.  
+
+Laboratory Data (most recent values available)  
+- Hemoglobin: 16.7 g/dL (within normal limits)  
+- Leukocyte count: 10.1 ×10³/µL (normal)  
+- Platelet count: 199.5 ×10³/µL (normal)  
+- MCV: 93.4 fL (normal)  
+- MCHC: 33.3 g/dL (normal)  
+- Sodium: 138 mmol/L (normal)  
+- Chloride: 111 mmol/L (normal)  
+- Glucose (serum): 74 mg/dL (normal)  
+- Creatinine: 1.01 mg/dL (baseline for chronic kidney disease)  
+- Urinalysis: No leukocyte esterase, nitrites, ketones, or glucose; pH 7.9 (within normal range)  
+
+Imaging  
+No imaging studies have been completed at the time of this documentation.  
+
+Assessment  
+1. Right hip fracture secondary to fall (probable intracapsular or intertrochanteric fracture).  
+2. Acute right‑hip pain with associated swelling and limited mobility.  
+3. Osteoarthritis (hand) – stable.  
+4. Essential hypertension.  
+5. Chronic kidney disease (stage 3) – stable.  
+6. Ischemic heart disease with prior CABG.  
+7. Type 2 diabetes mellitus with historic microalbuminuria/proteinuria.  
+
+Plan  
+- Orthopedic Consultation: Immediate referral to orthopedics for urgent evaluation and definitive imaging (plain radiographs of the pelvis and right hip, followed by CT if fracture pattern is unclear).  
+- Analgesia: Initiate scheduled acetaminophen 650 mg PO q6h PRN for pain; add ibuprofen 600 mg PO q8h PRN if renal function permits and no contraindication. Consider low‑dose opioid (e.g., oxycodone/acetaminophen) only if pain remains uncontrolled after NSAID/acetaminophen regimen.  
+- Weight‑Bearing Precautions: Strict non‑weight‑bearing on the right lower extremity until orthopedic assessment is completed. Provide crutches or a walker for assisted ambulation with the left leg only.  
+- Admission: Admit for pain control, monitoring, and surgical planning.  
+- Pre‑operative Work‑up: Obtain pre‑operative labs (CBC, BMP, coagulation profile), cardiac clearance given history of ischemic heart disease, and review of renal function for medication dosing.  
+- DVT Prophylaxis: Begin low‑dose low‑molecular‑weight heparin (e.g., enoxaparin 40 mg SC daily) unless contraindicated.  
+- Physical Therapy: Bed‑side range‑of‑motion exercises as tolerated; defer weight‑bearing until orthopedic clearance.  
+- Medication Review: Continue antihypertensive regimen; verify current blood pressure and adjust as needed. Hold nephrotoxic agents; ensure calcium and vitamin D supplementation continues.  
+- Patient Education: Discuss the likely need for surgical fixation (intramedullary screw fixation, hemiarthroplasty, or total hip arthroplasty) based on fracture type and patient’s functional status. Counsel on fall‑prevention strategies, use of assistive devices at home, and the importance of adhering to weight‑bearing restrictions.  
+- Follow‑up: Orthopedic surgery follow‑up within 24 hours; primary care follow‑up within 1 week after discharge to reassess chronic conditions and medication management.  
+
+Disposition  
+Patient will be admitted to the orthopedic service for further evaluation, imaging, and definitive management of the right hip fracture. Pain control measures and safety precautions have been instituted pending surgical planning.

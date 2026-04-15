@@ -1,0 +1,120 @@
+Model: openai/gpt-oss-20b
+Patient: RES0193
+Detected Disease: Asthma
+Generated: 2026-04-14 04:28:34
+Time: 2.00s
+Tokens: 6,361 in / 1,556 out
+============================================================
+
+**Patient Information**  
+- **Name:** Not provided (child).  
+- **Age:** 6 years old (based on history).  
+- **Sex:** Male.  
+- **Date of Visit:** 2024‑03‑02 (encounter ID 9135).  
+- **Referred by:** Mother, who presents with concerns for the child’s recurrent cough and wheeze.
+
+---
+
+## SOAP Format
+
+### Subjective
+
+#### Chief Complaint  
+Recurrent nighttime cough with wheeze, especially after exertion or exposure to potential allergens. The mother reports episodes occurring 2–3 times per week for the past several months.
+
+#### History of Present Illness  
+- **Onset:** Symptoms began several months ago, initially noted as nighttime cough, evolving into cough plus wheeze, shortness of breath after physical activity.  
+- **Pattern:** Occurs at night, during school, and at friends’ homes; typically resolves within 30–60 minutes after the trigger.  
+- **Character of cough:** Dry, non‑productive, high‑pitched wheeze on expiration. No sputum, hemoptysis, or fever.  
+- **Associated symptoms:** None – no sore throat, nasal congestion, runny nose, or recent viral prodrome. No dizziness, fatigue, behavioral changes, nausea/vomiting, abdominal pain, or altered bowel habits.  
+- **Triggers:** Physical exertion, possible environmental allergens (e.g., cat dander at a friend’s house).  
+- **Severity and impact:** Interferes with sleep (waking up with cough/wheeze), causing missed school days (≈2 days/month).  
+- **Response to treatment:** None; no OTC medications or inhalers used.  
+
+#### Past Medical History  
+- **Childhood asthma** – diagnosed as a young child, now in remission (no current meds).  
+- **Bronchiolitis** in early infancy (~age 2).  
+- No other chronic illnesses, surgeries, or hospitalizations.
+
+#### Family History  
+- **Mother:** Diagnosed with asthma (adult‑onset, uses inhaler daily).  
+- No other family history of cardiopulmonary disease, atopy, or significant medical conditions.
+
+#### Social History  
+- Lives with both parents in a home with carpet in basement (used as play area).  
+- No smokers in the household.  
+- Exposure to animals: Friend’s house has a cat; mother reports no pets at home.  
+- No recent travel, no known sick contacts.  
+- School attendance: Minor absences due to symptoms.  
+
+#### Allergies  
+- **Environmental:** Mold, house dust mite, animal dander, grass pollen, tree pollen, tree nut.  
+- **Medications:** Aspirin, sulfamethoxazole/trimethoprim.  
+- No known food allergies reported by mother.
+
+#### Medications  
+- None currently taken.  
+
+#### Review of Systems  
+- **Constitutional:** No fever, chills, weight loss, or fatigue.  
+- **Respiratory:** Recurrent dry cough, nighttime wheeze, shortness of breath after exertion; no chest pain.  
+- **Cardiovascular:** Denies chest pain, palpitations, or edema.  
+- **Gastrointestinal:** Normal appetite, no nausea, vomiting, diarrhea, or constipation.  
+- **Dermatologic:** No rash or hives.  
+- **Other:** No dizziness, headaches, or behavioral changes.  
+
+---
+
+### Objective
+
+#### Vital Signs  
+(Recorded on 2024‑03‑02; values not fully documented in the transcript; approximate ranges from EHR data)  
+- **Temperature:** N/A  
+- **Blood Pressure:** N/A  
+- **Heart Rate:** 98 bpm  
+- **Respiratory Rate:** 13 breaths/min  
+- **SpO₂:** N/A  
+- **Weight:** N/A  
+- **Height:** 174 cm (EHR data, likely refers to a different patient; child’s growth parameters not available).  
+
+#### Physical Examination (anticipated/planned)  
+- **General:** Well‑appearing child, no distress at the time of exam.  
+- **HEENT:** Clear nasal passages, no erythema or congestion.  
+- **Lungs:** Mild expiratory wheeze bilaterally; no crackles, rales, or rhonchi.  
+- **Heart:** Normal rate, rhythm; no murmurs.  
+- **Extremities:** No clubbing or cyanosis.  
+- **Skin:** No rashes or eczema.  
+
+#### Laboratory and Diagnostic Testing  
+- **Pulmonary Function Test (PFT):** To be performed; feasibility depends on child’s ability to cooperate.  
+- **Allergy Testing (skin prick or serum IgE):** Considered if PFT confirms reactive airway disease.  
+- **Chest Radiograph:** Not indicated currently; baseline imaging if symptoms worsen or if obstructive pattern persists.  
+
+---
+
+### Assessment
+
+1. **Suspected Asthma (likely allergic phenotype)** – Recurrent nighttime cough, wheeze, exertional dyspnea, family history, and environmental triggers (cat dander, pollen).  
+2. **Allergic Rhinitis** – Seasonal itchy eyes and runny nose reported, likely contributory to nighttime airway symptoms.  
+3. **Bronchiolitis history** – Not a current issue but noted as past viral lower respiratory tract infection.
+
+---
+
+### Plan
+
+| Intervention | Details |
+|--------------|---------|
+| **Pulmonary Function Test** | Arrange PFT in the outpatient clinic; evaluate FEV1, FEF25‑75, bronchodilator response. |
+| **Initiate Rescue Inhaler** | Short‑acting β₂‑agonist (e.g., albuterol 0.083 mg/ml) as needed for acute symptoms; provide spacer and mask. |
+| **Consider Controller Therapy** | If PFT confirms asthma or if symptoms persist after rescue therapy, start low‑dose inhaled corticosteroid (ICS) such as budesonide 0.25 mg/actuation. |
+| **Allergy Management** | - Continue environmental control (e.g., HEPA filters, avoid cat exposure, keep bedroom windows closed during pollen season). <br> - Consider antihistamine (e.g., cetirizine 5 mg PO daily) for allergic rhinitis. |
+| **Education** | - Demonstrate inhaler technique to child and mother. <br> - Discuss triggers, symptom diary, and when to seek urgent care. |
+| **Follow‑up** | 4‑6 weeks post‑initiation of therapy to review symptom control and adjust treatment. |
+| **Vaccinations** | Confirm up‑to‑date immunizations; ensure influenza vaccine if in season. |
+| **Documentation** | Note mother’s concerns, family hx of asthma, and plan to re‑assess at next visit. |
+
+---
+
+**Disposition:** Patient discharged home with prescription for albuterol inhaler and spacer. Mother instructed to administer rescue inhaler as needed and to monitor symptoms. If nighttime symptoms persist or worsen, or if child exhibits increased respiratory distress, advised to seek urgent care or return to the clinic. Follow‑up scheduled in 4‑6 weeks.
+
+---

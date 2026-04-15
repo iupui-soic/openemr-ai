@@ -1,0 +1,95 @@
+Model: qwen/qwen3-32b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:00:01
+Time: 4.08s
+Tokens: 8,329 in / 1,414 out
+============================================================
+
+Patient Information  
+The patient is a 59-year-old male, Agustin McGlynn, residing at 266 Heller Park Apt 46, Hingham, Massachusetts. He is a bank consultant, married with two children. He presents to the Emergency Department with a chief complaint of severe right upper quadrant abdominal pain. The patient is a non-smoker, consumes one or two glasses of wine daily, and denies recreational drug use. His past medical history includes cerebral palsy, spasticity, osteoporosis, intellectual disability, essential hypertension, chronic kidney disease (currently post-renal transplant), anemia, and a history of intimate partner abuse. His mother has a history of gallstones, and his father died of a stroke in his 60s. He is currently on tacrolimus, epoetin alfa, hydrochlorothiazide, and amLODIPine.
+
+Chief Complaint  
+The patient presents with severe right upper quadrant abdominal pain that has been present for the past three days and has worsened over the last three to four hours.
+
+History of Present Illness  
+The patient reports experiencing severe right upper quadrant abdominal pain, localized to the area just below the right rib cage. The pain began approximately three days ago, following a meal, and has progressively worsened over the past 24 hours. The pain is described as sharp and is rated as an 8 out of 10 on the pain scale. It does not radiate to other areas. The patient has attempted to manage the pain with over-the-counter medications such as Advil and Tylenol, but these have not provided significant relief. He has also experienced nausea over the past few days but has not vomited. There is no reported fever, chills, changes in bowel habits, or hematemesis. The patient notes that he has had similar episodes in the past, which resolved without medical intervention. He has not noticed any skin changes, rashes, or changes in urinary habits. His appetite has been poor, particularly on the day of presentation, and he has not experienced any recent infections or travel.
+
+Review of Systems  
+Constitutional: The patient reports fatigue and decreased energy levels due to the pain, particularly on the day of presentation.  
+Respiratory: No cough, shortness of breath, or chest pain is reported.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: Nausea is present, but no vomiting, diarrhea, or changes in stool color or consistency.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency or volume.  
+Neurological: No new-onset headaches, dizziness, or neurological deficits.  
+Musculoskeletal: No joint pain or muscle aches.  
+Dermatological: No rashes, skin changes, or new lesions.  
+Endocrine: No changes in weight or appetite beyond the reported decrease on the day of presentation.  
+Hematologic: No bruising, bleeding, or anemia symptoms beyond his known medical history.  
+Psychiatric: No new-onset anxiety or depression symptoms.  
+Other: No recent injuries or trauma.
+
+Allergies  
+No known drug allergies.
+
+Past Medical History  
+The patient has a complex medical history including cerebral palsy, spasticity, osteoporosis, intellectual disability, essential hypertension, chronic kidney disease (now post-renal transplant), anemia, and a history of intimate partner abuse. He has also had a history of chronic kidney disease stages 1 through 4, diabetes-related complications, and a history of full-time and part-time employment.
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+The patient consumes one or two glasses of wine nightly and denies smoking or recreational drug use. He lives with his partner and two children in a supportive home environment.
+
+Family History  
+His mother has a history of gallstones, and his father died of a stroke in his 60s.
+
+Current Medications  
+The patient is currently on tacrolimus (24 HR extended release 5 mg), epoetin alfa, hydrochlorothiazide, and amLODIPine. He occasionally uses over-the-counter antacids for heartburn.
+
+Objective  
+Vital Signs:  
+- Heart Rate: 94 bpm  
+- Respiratory Rate: 13 breaths/min  
+- Blood Pressure: Not recorded  
+- Temperature: Not recorded  
+- SpO2: Not recorded  
+- Weight: Not recorded  
+- Height: 177.70 cm  
+- BMI: 27.27  
+
+Physical Exam:  
+- The patient is alert and oriented.  
+- Abdominal examination reveals tenderness in the right upper quadrant without rebound or guarding.  
+- No peritoneal signs are present.  
+- No jaundice, rash, or other skin abnormalities are noted.  
+- No hepatomegaly or splenomegaly is appreciated.  
+
+Laboratory Results:  
+- Leukocyte count: 7.58 × 10^3/uL  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.10%  
+- Platelet count: 351.65 × 10^3/uL  
+- Mean corpuscular volume (MCV): 94.48 fL  
+- Mean corpuscular hemoglobin (MCH): 28.35 pg  
+- Mean corpuscular hemoglobin concentration (MCHC): 34.20 g/dL  
+- Red cell distribution width (RDW): 39.89 fL  
+- Cholesterol: 252.43 mg/dL  
+- Low-density lipoprotein (LDL): 168.19 mg/dL  
+- High-density lipoprotein (HDL): 58.23 mg/dL  
+- Triglycerides: 130.05 mg/dL  
+
+Imaging:  
+No imaging studies were performed during this encounter.
+
+Assessment  
+The patient presents with acute right upper quadrant abdominal pain, likely secondary to biliary pathology, given the location, timing, and associated nausea. The history of similar episodes and family history of gallstones support this suspicion. No acute peritonitis or other systemic signs are present. The patient's complex medical history, including a history of chronic kidney disease and post-renal transplant status, must be considered in the differential diagnosis and management plan.
+
+Plan  
+- Further evaluation with abdominal ultrasound is recommended to assess for gallbladder pathology.  
+- Monitor for any worsening of symptoms, including fever, vomiting, or jaundice.  
+- Consider additional laboratory testing, including liver function tests and amylase/lipase, if indicated.  
+- Continue current medications as prescribed.  
+- Follow-up with a gastroenterologist for further management and possible intervention.  
+- The patient should avoid heavy meals and alcohol consumption in the interim.  
+- Return to the Emergency Department if symptoms worsen or if new symptoms develop.

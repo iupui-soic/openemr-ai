@@ -1,0 +1,124 @@
+Model: openai/gpt-oss-120b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:25:30
+Time: 6.77s
+Tokens: 6,951 in / 2,012 out
+============================================================
+
+Patient Information  
+Name: Abbie Stamm  
+Date of Birth: 16 November 2001 (Age 22)  
+Sex: Female  
+Address: 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000  
+
+Chief Complaint  
+Fever and cough of four days’ duration.
+
+History of Present Illness  
+The patient reports that on Monday (approximately four days ago) she began to experience a dry cough that has progressively worsened. She noted feeling “hot” throughout the week and measured her temperature this morning at 38.5 °C (101.3 °F), representing her first documented fever. In addition to the cough, she reports increasing fatigue, generalized body aches, and occasional chills at night without overt night sweats. She denies sore throat, dysphagia, loss of taste or smell, and reports only a minimal amount of clear nasal discharge. She has not produced sputum, seen blood, or experienced wheezing. Shortness of breath is occasional and only after coughing fits; she denies chest pain, palpitations, or orthopnea. She notes mild nausea without emesis and a pressure‑type headache that is similar to her usual tension‑type headaches, responding to over‑the‑counter analgesics. Appetite has decreased, resulting in a slight weight loss over the past week. She denies recent sick contacts, travel, or known exposure to COVID‑19, although she visited a shopping mall the previous weekend and reports that most patrons were masked.  
+
+Review of Systems  
+Constitutional: Fever, fatigue, chills, mild weight loss, headache, body aches.  
+Respiratory: Dry cough, worsening over four days, occasional shortness of breath after coughing, no sputum, no hemoptysis, no wheezing, no chest pain.  
+Cardiovascular: No palpitations, no chest pain, no edema.  
+Gastrointestinal: Decreased appetite, mild nausea, no vomiting, normal bowel movements, no abdominal pain.  
+ENT: Scratchy throat with cough, no sore throat, no dysphagia, no change in taste or smell, mild rhinorrhea, no ear pain or discharge, no visual changes.  
+Neurologic: Tension‑type headache, no dizziness, no syncope, no confusion or memory loss.  
+Skin: No rash, no new lesions; reports penicillin allergy causing hives.  
+Genitourinary: No dysuria, hematuria, or change in urinary frequency.  
+Musculoskeletal: Mild body aches, no joint swelling.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Childhood asthma, resolved in January 2021.  
+- Perennial allergic rhinitis, resolved in November 2020.  
+- Mitral valve regurgitation, ongoing.  
+- Hypercholesterolemia, on rosuvastatin.  
+- Pre‑diabetes (A1c 6.2 % six months ago).  
+- Prior inguinal hernia repair (approximately five years ago).  
+
+Surgical History  
+Inguinal hernia repair, five years prior.  
+
+Social History  
+The patient does not smoke cigarettes or use marijuana or other illicit drugs. She consumes alcohol socially, typically two to three beers on weekends. She lives in a basement unit of a duplex with her girlfriend; no known mold, asbestos, or carpet issues in her unit. She works full‑time and reports limited recent social contact beyond essential activities. She reports regular mask use when in public spaces.  
+
+Family History  
+No known family history of lung, cardiac, or oncologic disease. The patient is uncertain but believes her paternal grandfather may have had bladder cancer.  
+
+Allergies  
+- Penicillin – hives.  
+- Environmental allergens (bee venom, mold, house dust mite, animal dander, tree pollen, cow’s milk, peanut) documented in the record.  
+
+Current Medications  
+- Rosuvastatin (dose unspecified).  
+- Multivitamin.  
+- As‑needed acetaminophen for headache.  
+
+Objective  
+Vital Signs (recorded during encounter):  
+- Heart Rate: 68 beats/minute.  
+- Respiratory Rate: 14 breaths/minute.  
+- Temperature: Patient’s home measurement 38.5 °C (101.3 °F); no in‑office temperature recorded.  
+- Blood Pressure: Not documented.  
+- SpO₂: Not documented.  
+- Height: 157.9 cm; Weight: Not documented; BMI: 23.3 (from prior record).  
+
+Physical Examination  
+General: Alert, oriented, in mild discomfort from cough.  
+HEENT: Nasal mucosa mildly erythematous with scant clear discharge; oropharynx mildly erythematous without exudate; no tonsillar swelling; lungs clear to auscultation bilaterally, no wheezes, rales, or rhonchi; no use of accessory muscles at rest.  
+Cardiovascular: Regular rate and rhythm, no murmurs appreciated at the time of exam.  
+Abdomen: Soft, non‑tender, non‑distended, normal bowel sounds.  
+Extremities: No edema.  
+Neurologic: Cranial nerves II‑XII intact, no focal deficits.  
+
+Laboratory Data (pertinent to current encounter)  
+Urinalysis performed as part of a concurrent urinary infection work‑up shows:  
+- WBCs: 13 /HPF (elevated)  
+- RBCs: 2 /HPF (mildly elevated)  
+- Protein: 4.4 mg/dL (trace)  
+- Glucose: 12.6 mg/dL (trace)  
+- Specific gravity: 1.017  
+- pH: 5.2  
+Other urine parameters (ketones, nitrite, leukocyte esterase) not reported.  
+Complete blood count and metabolic panel were not available in the record for this visit.  
+
+Assessment  
+1. Acute viral upper respiratory infection – likely acute bronchitis given the dry cough, low‑grade fever, and progressive fatigue.  
+2. Rule out SARS‑CoV‑2 infection – pending nasopharyngeal PCR test.  
+3. Pre‑diabetes – stable, last A1c 6.2 % six months ago.  
+4. Hypercholesterolemia – controlled on rosuvastatin.  
+5. History of mitral valve regurgitation – stable, no current cardiac symptoms.  
+6. Acute cystitis – currently being treated with nitrofurantoin (completed today).  
+
+Plan  
+- COVID‑19: Obtain nasopharyngeal swab today; advise patient to self‑isolate for 14 days from symptom onset, regardless of test result, and to inform close contacts. Provide guidance on proper isolation and symptom monitoring.  
+- Symptomatic care for acute bronchitis:  
+  • Acetaminophen 650 mg PO q6‑8 h PRN for fever or headache, not to exceed 3 g per day.  
+  • Encourage increased fluid intake and rest.  
+  • Use a humidifier or saline nasal spray for nasal congestion.  
+  • Cough suppressant (dextromethorphan) can be used if cough interferes with sleep, PRN.  
+- No antibiotics are indicated at this time given the likely viral etiology and absence of purulent sputum or focal findings.  
+- Return precautions: Seek urgent care if she develops high fever >39 °C, worsening shortness of breath, chest pain, productive cough with purulent sputum, hemoptysis, confusion, or if symptoms do not improve within 7‑10 days.  
+- Follow‑up: Phone or telehealth follow‑up in 48 hours to discuss COVID test result and symptom trajectory. If COVID‑19 positive, arrange appropriate public health reporting and reinforce isolation guidance.  
+- Pre‑diabetes: Continue lifestyle measures (regular walking, dietary modification) and schedule repeat A1c in 3–6 months.  
+- Hypercholesterolemia: Continue rosuvastatin as prescribed; schedule lipid panel at next primary‑care visit.  
+- Acute cystitis: Completed prescribed nitrofurantoin course; advise patient to monitor for resolution of urinary symptoms.  
+- Immunizations: Verify that seasonal influenza vaccine is up to date; consider COVID‑19 booster if indicated per local guidelines.  
+
+Discharge Instructions  
+- Stay home and avoid close contact with others until isolation period is complete.  
+- Monitor temperature twice daily; record and report any rise above 39 °C.  
+- Maintain adequate hydration and nutrition; small, frequent meals if appetite remains low.  
+- Use over‑the‑counter analgesics as needed for fever or headache.  
+- Perform hand hygiene frequently and disinfect commonly touched surfaces.  
+- Continue current chronic medications (rosuvastatin, multivitamin).  
+- Avoid smoking or exposure to second‑hand smoke; no vaping.  
+
+Follow‑up Appointments  
+- Telehealth visit in 2 days for COVID‑19 test result and reassessment.  
+- Routine primary‑care follow‑up in 4–6 weeks for chronic disease management.  
+
+Prepared by: Dr. External Provider, MD  
+Date of encounter: 10 February 2024.

@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:50:10
+Time: 5.45s
+Tokens: 9,054 in / 1,911 out
+============================================================
+
+Patient Information
+Name: Adan Crona  
+Date of Birth: 1943-04-07 (Age 80)  
+Sex: Male  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint
+The patient presents with a painful, red, swollen area on his right ankle that has been present for approximately one week and has become increasingly tender, hot, and exudative over the past 24 hours.
+
+History of Present Illness
+Mr. Crona reports that the rash on his right ankle began about one week ago as a “weird looking” spot. Over the preceding 24‑48 hours the area has become more swollen, red, and painful, with development of scabs that have now opened, leaking a white‑colored fluid. He notes that the skin around the lesion appears increasingly erythematous and feels warmer than the contralateral leg. He rates the pain as moderate and mentions that it worsens with walking and ankle flexion but is less sensitive to direct touch. He denies any recent trauma other than occasional minor foot injuries related to his diabetes. He also reports feeling generally “crummy” over the past two weeks, with increased hunger, weight gain, and fatigue, which he attributes to poor glycemic control (last documented A1C >9%). He has not measured his blood glucose recently. He denies fever, chills, dyspnea, chest pain, or systemic symptoms aside from a subjective feeling of being “hot.” He has a known chronic diabetic foot ulcer on his left heel that he describes as “doing alright.”
+
+Review of Systems
+Constitutional: No documented fever, chills, or weight loss; reports fatigue and increased hunger.  
+Skin: Red, warm, swollen, and exudative lesion on right ankle consistent with cellulitis; chronic left heel ulcer noted.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Respiratory: No dyspnea or cough.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or urinary frequency reported.  
+Neurologic: No loss of sensation over the affected ankle; reports chronic decreased sensation in the feet secondary to diabetes.  
+Musculoskeletal: Reports chronic back pain managed with over‑the‑counter NSAIDs.  
+Psychiatric: Reports stress related to family and employment; no depression or anxiety noted.  
+Endocrine: History of poorly controlled type 2 diabetes mellitus.  
+Hematologic: No bruising or bleeding disorders reported.  
+
+Past Medical History
+- Type 2 diabetes mellitus (poorly controlled, last A1C >9%).  
+- Hyperlipidemia.  
+- Hypertension (mentioned in prior records; not addressed in current interview).  
+- Chronic kidney disease stage 2–3 (historical labs show creatinine 2.98 mg/dL, eGFR ≈79 mL/min/1.73 m²).  
+- Asthma in childhood (no current symptoms).  
+- Chronic low‑back pain.  
+- History of diabetic foot ulcer on left heel.  
+
+Surgical History
+- Functional endoscopic sinus surgery performed in teenage years for chronic sinusitis. No other surgeries reported.  
+
+Allergies
+- Penicillin – causes facial swelling and respiratory difficulty.  
+- Documented sensitivities to grass pollen and lisinopril from prior records.  
+
+Family History
+- Maternal side: multiple members with diabetes, hypertension, and hyperlipidemia.  
+- Paternal side: generally healthy; aunt with lung cancer (significant smoking history).  
+
+Social History
+The patient lives in an urban setting and sees his children every two weeks. He is currently unemployed but runs his own accounting‑related business on a part‑time basis. He smokes cigarettes intermittently, reporting approximately two packs per week over the past few weeks, with increased use during periods of stress. Alcohol intake is primarily on weekends, averaging two to four drinks per occasion. He does not engage in regular exercise. No recreational drug use reported.  
+
+Current Medications
+- Rosuvastatin (dose not specified) for hyperlipidemia.  
+- Metformin (dose not specified) for diabetes.  
+- Additional oral diabetes medication (patient unable to recall exact name).  
+- Occasional over‑the‑counter acetaminophen or ibuprofen for back pain.  
+- No insulin therapy reported.  
+
+Vital Signs
+No vital sign measurements were documented during this encounter.  
+
+Physical Examination
+A detailed physical examination was not performed at the time of this documentation.  
+
+Laboratory Data
+Recent laboratory values (from the most recent available record) are as follows:  
+- Sodium: 139.8 mmol/L  
+- Potassium: 4.5 mmol/L  
+- Chloride: not reported  
+- Total CO₂: 22 mmol/L  
+- Blood urea nitrogen: 13.7 mg/dL  
+- Creatinine: 2.98 mg/dL (elevated)  
+- Estimated GFR: 79 mL/min/1.73 m²  
+- Glucose: 94 mg/dL (random)  
+- Hemoglobin A1C: >9 % (historical)  
+- Lipid panel: Total cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 31.6 mg/dL, Triglycerides 177 mg/dL  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, Alk Phos 123.7 U/L, Bilirubin 0.77 mg/dL  
+- Albumin: 3.88 g/dL, Globulin: 2.16 g/L, Total protein: 6.52 g/dL  
+
+Assessment
+1. Cellulitis of the right ankle/foot – acute bacterial skin infection characterized by erythema, warmth, swelling, and purulent drainage.  
+2. Type 2 diabetes mellitus, poorly controlled.  
+3. Chronic kidney disease stage 2–3 (stable).  
+4. Hyperlipidemia.  
+5. Hypertension (historical).  
+6. Chronic diabetic foot ulcer on left heel (stable).  
+7. History of tobacco use.  
+
+Plan
+Medical Management
+- Initiate oral antibiotic therapy targeting typical cellulitis pathogens while avoiding penicillin due to documented allergy. Recommended regimen: clindamycin 300 mg orally three times daily for 7‑10 days, or doxycycline 100 mg orally twice daily if no contraindication.
+- If rapid progression or systemic signs develop, advise immediate return for possible oral cephalexin (if allergy status is re‑evaluated) or parenteral therapy.
+- Advise proper wound care: gentle cleaning with saline, application of a sterile non‑adherent dressing, and elevation of the affected leg to reduce swelling.
+- Reinforce tight glycemic control: encourage home glucose monitoring at least twice daily, and schedule urgent follow‑up with primary care for diabetes management and possible adjustment of antihyperglycemic agents.
+- Review renal function before initiating any new medication; adjust doses of renally cleared drugs as needed.
+- Counsel on smoking cessation: offer referral to tobacco cessation program and discuss nicotine replacement options.
+- Limit alcohol intake to moderate levels; counsel on potential interactions with medications.
+- Continue current rosuvastatin; reassess lipid control at next primary‑care visit.
+- Schedule follow‑up in 48‑72 hours to assess response to antibiotics and wound status. Earlier return if fever, increasing pain, spreading erythema, or systemic symptoms develop.
+- Provide patient education on signs of worsening infection (fever, expanding redness, increased drainage) and instructions to seek emergency care if they occur.
+
+Referral and Follow‑up
+- Primary care physician within the next week for comprehensive diabetes and chronic kidney disease management.
+- Podiatry referral for evaluation of chronic left heel ulcer and diabetic foot care education.
+- Consider vascular evaluation if peripheral arterial disease is suspected based on exam findings at a later visit.
+
+Discharge Instructions
+- Take prescribed antibiotics exactly as directed; complete the full course even if symptoms improve.
+- Keep the wound clean and dry; change dressing daily or as instructed.
+- Elevate the leg above heart level when possible to reduce swelling.
+- Monitor temperature; if >100.4 °F (38 °C) or if you feel increasingly unwell, contact the clinic or go to the emergency department.
+- Avoid scratching or further trauma to the area.
+- Continue to take rosuvastatin and metformin; attempt to recall the third diabetes medication and bring the medication list to the next visit.
+- Do not use any penicillin‑based antibiotics.  
+
+The patient verbalized understanding of the plan and agreed to comply with medication, wound care, and follow‑up recommendations. No further questions were raised.

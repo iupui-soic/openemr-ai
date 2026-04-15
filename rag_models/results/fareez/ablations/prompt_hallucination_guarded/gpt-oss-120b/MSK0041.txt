@@ -1,0 +1,62 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 04:26:47
+Time: 3.58s
+Tokens: 8,628 in / 987 out
+============================================================
+
+Patient Information:  
+Abel Fritsch, 79‑year‑old male.  
+
+Chief Complaint:  
+Intense, sharp pain in the right foot that began approximately six hours ago.  
+
+History of Present Illness:  
+The patient reports the abrupt onset of severe, sharp pain localized to the medial aspect just below the right great toe (first toe). The pain has remained constant in intensity (rated 8/10) since onset and is aggravated by any movement of the toe, including wearing shoes. He is unable to flex or extend the affected toe, although he can move his other toes and ankle normally. The pain is associated with noticeable swelling, erythema, and a feeling of warmth over the involved area, and he walks with an antalgic gait to avoid bearing weight on the right toe. He has taken ibuprofen without relief. There is no history of recent trauma, fever, chills, or systemic symptoms. He denies prior episodes of similar pain in the toes or other joints.  
+
+Review of Systems:  
+- Positive: Right great toe pain, swelling, redness, warmth; limited range of motion of the right great toe; antalgic gait.  
+- Negative: No fever, chills, night sweats, weight loss, or constitutional symptoms. No headaches, visual or auditory changes, memory loss, or confusion. No numbness, tingling, or motor weakness. No chest pain, palpitations, dyspnea, cough, or shortness of breath. No nausea, vomiting, abdominal pain, diarrhea, constipation, or urinary symptoms. No rash, nail changes, or other skin findings. No fatigue, malaise, or other joint or muscle pains.  
+
+Past Medical History (as reported by patient):  
+- Hypertension, treated with ramipril.  
+- Diabetes mellitus, treated with insulin.  
+- Overweight/obesity.  
+- Recent hospitalization for kidney stones (treated with lithotripsy).  
+
+Medications (as reported by patient):  
+- Ramipril (for hypertension).  
+- Insulin (for diabetes).  
+No recent changes in medication regimen were noted.  
+
+Allergies:  
+No information available.  
+
+Social History:  
+The patient does not smoke cigarettes, use marijuana, or use other recreational drugs. He drinks approximately two glasses of wine per day and has recently added one beer per day. He lives at home with his son. No recent travel or known sick contacts.  
+
+Family History (as reported by patient):  
+- Father: severe arthritis, hypertension, diabetes.  
+- Maternal side: arthritis, gout, kidney stones.  
+
+Physical Examination:  
+- General: Not assessed during this encounter.  
+- Vital signs: Not assessed during this encounter.  
+- Right foot: Marked swelling, erythema, and increased warmth over the first metatarsophalangeal (MTP) joint. The joint is exquisitely tender, and the patient is unable to actively flex or extend the great toe. No deformity other than swelling. No pain on examination of the other toes or the ankle. The patient demonstrates an antalgic gait to minimize weight bearing on the right toe.  
+- Remaining systems: Not assessed during this encounter.  
+
+Assessment:  
+1. Acute right first MTP joint inflammation most consistent with gouty arthritis (podagra) given the rapid onset, intense pain, swelling, erythema, and the patient’s risk factors (diabetes, obesity, high purine diet, alcohol use, family history of gout).  
+2. Septic arthritis remains a differential diagnosis that must be excluded because of the presence of warmth, swelling, and limited motion.  
+
+Plan:  
+- Diagnostic: Perform urgent arthrocentesis of the right first MTP joint with synovial fluid analysis including cell count, Gram stain, culture, and crystal examination to rule out septic arthritis and confirm gout.  
+- Therapeutic: Initiate colchicine therapy as recommended by the provider (dosage and schedule to be determined per standard protocol). The patient was instructed to continue ibuprofen as needed for pain, recognizing limited benefit thus far.  
+- Education: Discuss lifestyle modifications to reduce future gout flares, including decreasing intake of red meat and alcohol, promoting weight loss, and improving glycemic control.  
+- Follow‑up: Arrange a follow‑up visit within 3‑5 days to review synovial fluid results and reassess symptom control. The patient was advised to return sooner if fever, increasing pain, or signs of infection develop.  
+
+Disposition:  
+Patient was given verbal instructions and will have joint aspiration performed today. No further immediate interventions were ordered.  
+
+Signature: __________________________   Date: 2024‑04‑06   (Physician)

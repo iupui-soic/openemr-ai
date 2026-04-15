@@ -1,0 +1,39 @@
+Model: google/medgemma-4b-it
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:03:06
+Time: 25.15s
+Tokens: 9,705 in / 418 out
+Cell: k3
+============================================================
+
+Patient Information:
+Patient Name: Aileen Vi Rempel
+Date of Birth: 1917-07-25
+Patient ID: 2502
+
+Chief Complaint: Sharp chest pain.
+
+History of Present Illness:
+The patient presents with a chief complaint of sharp chest pain. The pain began approximately three days prior to the encounter. The pain is described as sharp and is located primarily over the heart. The pain comes and goes, lasting for a few seconds at a time. It is exacerbated by coughing and lying down, but improves when leaning forward. The patient denies any associated symptoms such as shortness of breath, dizziness, palpitations, nausea, or vomiting. She has taken Tylenol, which provided some relief. She denies any recent injuries. She reports a flu last week, but is now feeling better. She denies any previous episodes of similar chest pain. The pain is rated as a 6/10. The pain sometimes radiates to the neck.
+
+Past Medical History:
+The patient reports no prior history of similar chest pain. She denies any other medical conditions, including diabetes, high blood pressure, or heart problems. She is a 25-year-old female.
+
+Medications:
+The patient reports taking Tylenol.
+
+Family History:
+The patient reports a family history of heart problems in her father, who had a heart attack two weeks prior to the encounter and passed away.
+
+Social History:
+The patient is a student. She works part-time as a postman. She drinks occasionally, one or two drinks on the weekends. She denies recreational drug use or smoking. She lives with her mother.
+
+Physical Exam:
+No information available.
+
+Assessment:
+The patient presents with sharp chest pain, likely musculoskeletal in origin, but the possibility of cardiac etiology cannot be ruled out. Given the family history of heart disease, further cardiac evaluation is warranted.
+
+Plan:
+The patient will undergo an ECG to assess cardiac function. Blood work will be ordered to evaluate for any underlying medical conditions. The patient is advised to avoid activities that exacerbate her pain.

@@ -1,0 +1,63 @@
+Model: qwen/qwen3-32b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:41:53
+Time: 3.88s
+Tokens: 7,192 in / 1,253 out
+============================================================
+
+Patient Information  
+The patient is a 38-year-old female, Abbey Shala Kunde, who presents with a chief complaint of a dry cough, generalized body aches, and intermittent frontal headaches. She is employed at a pharmacy company and resides in a townhouse in Boston, Massachusetts, with her spouse. She denies any recent travel and has no known exposure to ill individuals. The patient has a past medical history of essential hypertension, obesity, recurrent urinary tract infections, and a history of intimate partner abuse. She is currently not taking any prescription medications but uses over-the-counter acetaminophen and ibuprofen for symptom management. She also takes a multivitamin and vitamin D supplement. The patient has a known allergy to peanuts and carries an EpiPen for anaphylaxis. She is not a current smoker, uses CBD oil occasionally, and consumes alcohol in moderation, approximately 3 to 4 beers per week.
+
+Chief Complaint  
+The patient reports a three-day history of a dry, non-productive cough, generalized body aches, and intermittent frontal headaches. She also notes feeling feverish over the past few days and has experienced one day of loose stools. She denies chest pain, sore throat, shortness of breath, runny nose, nausea, vomiting, night sweats, or changes in taste or smell. She has not used any specific cough medication and is concerned about the possibility of COVID-19.
+
+History of Present Illness  
+The patient's symptoms began three days ago with the onset of a dry cough, which was followed by generalized body aches and intermittent frontal headaches. The headaches are described as a band-like pressure around the forehead and have been partially responsive to over-the-counter analgesics. She has also experienced a low-grade fever, though no temperature was measured. The patient has had one day of loose stools but no blood in the stool. She has not engaged in any strenuous activity or experienced any injuries recently. She has been working in the pharmacy and has been adhering to workplace safety protocols, including mask-wearing and social distancing. She has been isolating at home for the past few days due to her symptoms.
+
+Review of Systems  
+Constitutional: The patient reports fatigue, feverishness, and decreased appetite. She denies weight loss or night sweats.  
+Respiratory: She has a dry cough without sputum, blood, or chest pain. No shortness of breath or wheezing is reported.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: One day of loose stools without blood or mucus. No nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency.  
+Neurological: Headaches are frontal and described as a band-like pressure. No visual changes, dizziness, or neurological deficits.  
+Musculoskeletal: Generalized body aches without localized joint pain or swelling.  
+Integumentary: No rash, bruising, or skin changes.  
+Psychiatric: No new-onset anxiety or depressive symptoms.  
+Endocrine: No changes in energy, heat/cold intolerance, or menstrual irregularities.  
+Hematologic: No easy bruising, bleeding, or anemia symptoms.  
+Allergic/Immunologic: No new allergies or immune-related symptoms.  
+Other: No otalgia, rhinorrhea, or pharyngitis.
+
+Allergies  
+The patient has a known allergy to peanuts and carries an EpiPen for anaphylaxis. No other medication or environmental allergies are reported.
+
+Past Medical History  
+The patient has a history of essential hypertension, obesity (BMI 35.8), recurrent urinary tract infections, and a history of intimate partner abuse. She has also had a prior diagnosis of acute bronchitis and viral sinusitis. She has a history of miscarriage and a previous normal pregnancy. She has undergone an ACL repair approximately 10 years ago. There is a family history of hypertension and lung cancer in her grandfather, who was a lifelong smoker.
+
+Surgical History  
+The patient has a history of ACL repair surgery approximately 10 years ago.
+
+Social History  
+The patient is employed full-time at a pharmacy company and has been working in an office setting with adherence to safety protocols. She lives with her spouse and resides in a townhouse in Boston. She does not smoke, uses CBD oil occasionally, and consumes alcohol in moderation. She has no history of illicit drug use.
+
+Family History  
+The patient reports a family history of hypertension in her father and lung cancer in her grandfather, who was a lifelong smoker.
+
+Current Medications  
+The patient is not currently taking any prescription medications. She uses over-the-counter acetaminophen and ibuprofen for symptomatic relief. She also takes a multivitamin and vitamin D supplement.
+
+Objective  
+Vital signs were not obtained during this visit. Physical examination findings were not documented in the provided data. Laboratory results from the OpenEMR extract include normal hemoglobin, hematocrit, and white blood cell count. Other laboratory values, including electrolytes and liver function tests, were within normal limits. No recent imaging studies were reported.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory infection, including dry cough, generalized body aches, and intermittent frontal headaches. Given the current public health context and overlapping symptoms with those of COVID-19, a nasal swab for SARS-CoV-2 testing was performed. The differential diagnosis includes viral upper respiratory infection, influenza, and, less likely, bacterial infection. The patient is advised to isolate for two weeks and await test results before returning to work.
+
+Plan  
+1. Order a nasal swab for SARS-CoV-2 testing.  
+2. Advise the patient to continue isolation for 14 days and monitor for worsening symptoms.  
+3. Recommend symptomatic management with acetaminophen or ibuprofen as needed.  
+4. Encourage hydration and rest.  
+5. Follow up with public health for further instructions based on test results.  
+6. Schedule a follow-up visit if symptoms persist or worsen.

@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:29:39
+Time: 6.18s
+Tokens: 13,562 in / 1,585 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914-01-07 (Age 112)  
+Sex: Female  
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+Unit/Record #: 982  
+
+Chief Complaint  
+The patient presents with worsening shortness of breath, chest discomfort, and a productive cough of five days’ duration.
+
+History of Present Illness  
+Adela Tapia reports that over the past five days she has experienced progressively increasing shortness of breath that limits her ability to perform routine activities around her apartment. The dyspnea is present at rest only minimally, but is markedly aggravated by any exertion. She also describes a constant sense of chest “congestion” without sharp, stabbing, or pressure‑type pain. The cough is productive, yielding small amounts of yellow‑green sputum each time she coughs—approximately the volume that would fill the interior of her palm. She denies any hemoptysis. Over the last two days she has felt “feverish,” although she has not taken a temperature. She denies chills, night sweats, sore throat, nasal congestion, or other upper‑respiratory symptoms. She has used her rescue inhaler (Ventolin) more frequently than usual—three to four puffs this morning and additional use last night—but reports that it provides little relief. She has not experienced orthopnea, paroxysmal nocturnal dyspnea, palpitations, headache, visual changes, nausea, vomiting, abdominal pain, diarrhea, constipation, dysuria, or changes in sleep or appetite.
+
+Review of Systems  
+Constitutional: Positive for feverish feeling; no documented fever, chills, or weight loss.  
+Respiratory: Positive for dyspnea on exertion, productive cough with yellow‑green sputum; negative for hemoptysis, wheezing at rest, pleuritic chest pain, orthopnea, or nocturnal dyspnea.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Gastrointestinal: History of GERD; no current nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, or visual changes.  
+Skin: No rashes or night sweats.  
+Psychiatric: No anxiety or depression reported.
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed ≈ 3 years ago)  
+- Hypertension  
+- Gastroesophageal reflux disease (GERD)  
+
+Surgical History  
+No surgical procedures reported.
+
+Allergies  
+No known drug allergies.
+
+Current Medications (home)  
+- Ventolin (albuterol) inhaler, used as needed (increased use this episode)  
+- Symbicort (budesonide/formoterol) – daily inhaled steroid/long‑acting bronchodilator  
+- ACE inhibitor (specific agent not named) for hypertension  
+- Calcium carbonate (Tums) as needed for GERD  
+
+Social History  
+The patient lives with her adult daughter in an apartment. She is employed part‑time at a grocery store. She has a 30–40‑year history of cigarette smoking, currently about one pack per day. She denies use of marijuana or other illicit substances. Alcohol consumption is limited to occasional wine with dinner on weekends. No recent travel or known sick contacts.
+
+Family History  
+No reported family history of lung, cardiac, or oncologic disease.
+
+Physical Examination  
+No physical examination findings were documented in the encounter transcript. Vital signs were not recorded at the time of the visit.
+
+Vital Signs  
+Blood pressure, temperature, respiratory rate, oxygen saturation, weight, and body mass index are not available for this encounter.
+
+Laboratory Data  
+Laboratory values retrieved from the electronic record (not specific to the current visit) include:  
+- CO₂ total: 26.88 mmol/L  
+- Potassium: 4.85 mmol/L  
+- Calcium: 9.48 mg/dL  
+- BUN: 10.35 mg/dL  
+- Creatinine: 0.42 mg/dL (estimated GFR ≈ 88 mL/min)  
+- Sodium: 138‑139 mmol/L  
+- Chloride: 105‑107 mmol/L  
+- Glucose: 96.6 mg/dL  
+- ALT: 52 U/L  
+- Total bilirubin: 0.69 mg/dL  
+- Albumin: 3.73 g/dL  
+- Lipid panel: total cholesterol 204 mg/dL  
+
+These values are within normal limits for most parameters; the mild elevation in ALT is noted but not currently clinically significant.
+
+Imaging  
+The provider indicated that a chest radiograph (CXR) will be obtained in the Emergency Department to evaluate for pneumonia or other acute pathology. No imaging results are available at this time.
+
+Assessment  
+1. Acute exacerbation of chronic obstructive pulmonary disease (COPD) likely precipitated by an infectious process.  
+2. Possible community‑acquired pneumonia (pending CXR and microbiologic testing).  
+3. Hypertension, stable on current ACE‑inhibitor therapy.  
+4. Gastroesophageal reflux disease, controlled with antacids as needed.  
+
+Plan  
+- **Emergency Department Management**: Patient will be escorted to the ED for immediate evaluation. Orders to include: full set of vital signs, pulse oximetry, arterial blood gas if indicated, complete blood count, basic metabolic panel, and serum lactate.  
+- **Imaging**: Portable chest X‑ray on arrival; consider CT chest if the X‑ray is equivocal.  
+- **Microbiology**: Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR; consider sputum culture if purulent sputum persists.  
+- **Pharmacologic Therapy**:  
+  • Initiate nebulized bronchodilator therapy (albuterol/ipratropium) in the ED.  
+  • Start systemic corticosteroid (e.g., prednisone 40 mg PO daily for 5 days) for COPD exacerbation.  
+  • Begin empiric antibiotic coverage for presumed bacterial pneumonia (e.g., amoxicillin‑clavulanate or a macrolide, tailored to local resistance patterns).  
+  • Provide supplemental oxygen to maintain SpO₂ ≥ 90 %.  
+- **Disposition**: Admit for observation and treatment if hypoxemia, hypercapnia, or hemodynamic instability develop; otherwise consider discharge with close follow‑up if clinical response is rapid.  
+- **Smoking Cessation**: Offer counseling and referral to smoking cessation resources; discuss nicotine replacement or pharmacotherapy (e.g., varenicline).  
+- **Patient Education**: Instruct patient on proper use of rescue inhaler and maintenance inhaler, signs of worsening respiratory status (increased work of breathing, cyanosis, confusion), and when to return to the ED.  
+- **Follow‑Up**: If discharged, schedule follow‑up with primary care physician within 48–72 hours and with pulmonary clinic within one week. Ensure repeat chest radiograph in 1–2 weeks if pneumonia is confirmed.  
+
+Disposition communicated to the Emergency Department, and patient agreed to the outlined plan.

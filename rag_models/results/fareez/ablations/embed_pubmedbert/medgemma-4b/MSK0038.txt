@@ -1,0 +1,40 @@
+Model: google/medgemma-4b-it
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 06:28:26
+Time: 32.10s
+Tokens: 12,105 in / 528 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Abraham Lowe, a 57-year-old male, presented to the clinic with complaints of left knee pain that had been worsening over the past few months. He was last seen in the hospital on September 12, 2019, and discharged on September 12, 2019. He has a history of chronic kidney disease, diabetes, obesity, and a history of intimate partner abuse. He is currently employed full-time.
+
+Chief Complaint:
+
+The patient's primary complaint is left knee pain that has been progressively worsening over the past few months.
+
+History of Present Illness:
+
+The patient reports that the left knee pain began approximately three to four months ago. Initially, the pain was only aggravated by activity, but it has now started to occur at rest as well. He describes the pain as a sharp stabbing pain with each foot strike, and a dull ache while at rest. He has a history of similar knee pain from rowing in his undergraduate years, which improved with stretching and strengthening exercises. He stopped rowing and now primarily runs. The pain is affecting his daily activities, causing discomfort even when walking. He denies any recent changes in the pain's characteristics or severity.
+
+Past Medical History:
+
+The patient has a history of chronic kidney disease stage 1, chronic kidney disease stage 2, chronic kidney disease stage 3, proteinuria due to type 2 diabetes mellitus, microalbuminuria due to type 2 diabetes mellitus, essential hypertension, refugee status, and obesity. He has a criminal record and a history of being a victim of intimate partner abuse.
+
+Medications:
+
+The patient is currently taking Acetaminophen 325 MG Oral Tablet, Meperidine Hydrochloride 50 MG Oral Tablet, Ibuprofen 200 MG Oral Tablet, and sodium fluoride 0.0272 MG/MG Oral Gel.
+
+Physical Exam:
+
+The physical exam revealed no visible swelling or bruising in the left knee. Palpation of the knee cap and medial/lateral ligaments did not elicit significant pain. The patient reported pain with knee flexion and extension.
+
+Assessment:
+
+The patient's symptoms and physical exam findings suggest a possible diagnosis of iliotibial band syndrome (ITBS).
+
+Plan:
+
+The plan includes activity modification to prevent aggravating the knee joint, ice or heating pads, taping, and stretching. If the pain persists, ibuprofen may be considered. A referral to physical therapy is recommended for strengthening and range of motion exercises. If conservative measures fail, other treatments such as ultrasound therapy or shockwave therapy may be considered. Surgical management is a last resort.

@@ -1,0 +1,262 @@
+Model: google/medgemma-4b-it
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:59:42
+Time: 109.02s
+Tokens: 11,450 in / 2,060 out
+Cell: norag
+============================================================
+
+Patient Information:
+
+Name: Adela Tapia
+DOB: 1914-01-07
+Sex: Female
+Unit Number: 982
+
+Chief Complaint: Shortness of breath and chest discomfort.
+
+History of Present Illness:
+
+The patient presents with a five-day history of worsening shortness of breath and chest discomfort. She also reports a worsening cough, which is producing yellowish or greenish sputum. The patient denies any blood in her sputum. She describes the shortness of breath as feeling like she can't catch her breath even with small exertions, but she is currently at rest. She also experiences chest discomfort that is present at rest. The patient denies any blood in her sputum. She denies any fever or chills. She denies any recent travel. She has been using an inhaler, but it has not been effective. She denies headaches or vision changes. She denies nausea or vomiting. She denies increased fatigue. She denies palpitations. She denies diarrhea or constipation. She denies any problems with urination. She denies any changes in sleep or appetite. She denies night sweats. She denies any significant weight change. She denies any exposure to sick individuals. She has a history of COPD, hypertension, and GERD. She was diagnosed with COPD three years ago. She takes Ventolin, Symbicort, and an ACE inhibitor. She denies any allergies. She has no past hospitalizations or surgeries. She has no family history of lung or heart conditions. She has no reported cancers. She is currently living with her daughter in an apartment. She works at a grocery store. She smokes approximately one pack per day, having smoked for 30-40 years. She denies using any other drugs. She drinks wine on the weekends.
+
+Past Medical History:
+
+*   COPD
+*   Hypertension
+*   GERD
+*   Obesity
+*   Metabolic Syndrome X
+*   Prediabetes
+*   Risk activity involvement
+*   Received higher education
+*   Hyperlipidemia
+*   Loss of teeth
+*   Preinfarction syndrome
+*   History of myocardial infarction
+*   Ischemic heart disease
+*   Abnormal findings diagnostic imaging heart+coronary circulat
+*   History of coronary artery bypass grafting
+*   Chronic kidney disease stage 1
+*   Disorder of kidney due to diabetes mellitus
+*   Chronic kidney disease stage 2
+*   Microalbuminuria due to type 2 diabetes mellitus
+*   Chronic kidney disease stage 3
+*   Proteinuria due to type 2 diabetes mellitus
+*   Alzheimer's disease
+*   Has a criminal record
+*   Chronic kidney disease stage 4
+*   Awaiting transplantation of kidney
+*   Part-time employment
+*   Stress
+*   Reports of violence in the environment
+*   Medication review due
+*   Full-time employment
+*   Limited social contact
+*   Primary dental caries
+*   Prediabetes
+*   Medication review due
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due
+*   Medication review due

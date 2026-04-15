@@ -1,0 +1,108 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:24:15
+Time: 4.20s
+Tokens: 8,690 in / 1,451 out
+============================================================
+
+Patient Information:  
+Name: Aileen Vi Rempel  
+Date of Birth: Not provided (patient states she is a 25‑year‑old student)  
+Sex: Female  
+Address: 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171  
+
+Chief Complaint:  
+Sharp, intermittent chest pain of three days’ duration that the patient fears may represent a heart attack.
+
+History of Present Illness:  
+The patient reports the onset of a sharp, localized chest pain approximately three days ago. The pain is situated over the area of the heart and is described as “sharp” with a severity of 6/10. Episodes last only a few seconds and then resolve spontaneously. The pain is provoked by coughing and by lying down, and it improves when the patient leans forward. Occasionally the discomfort radiates to the neck. The patient denies any associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or recent trauma. She has taken acetaminophen (Tylenol) once yesterday, which provided some relief. She reports a recent influenza‑like illness one week ago that included fever, runny nose, cough, and fatigue, but those symptoms have resolved. She has no prior history of similar chest pain.
+
+Review of Systems:  
+- Constitutional: No fever, chills, weight loss, or fatigue currently.  
+- Cardiovascular: Chest pain as described; no palpitations, syncope, or dyspnea.  
+- Respiratory: No shortness of breath; cough present only as a trigger for pain.  
+- Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+- Neurologic: No headache, dizziness, weakness, or numbness.  
+- Musculoskeletal: No recent injuries; pain improves with forward flexion.  
+- Psychiatric: No anxiety or depression noted at this visit.  
+
+Past Medical History:  
+The patient reports no chronic medical conditions. She describes herself as “pretty healthy.” No prior surgeries.  
+
+Medications:  
+- Acetaminophen (Tylenol) – taken PRN, most recent dose yesterday.  
+No other prescription or over‑the‑counter medications reported.  
+
+Allergies:  
+No known drug, food, or environmental allergies.  
+
+Family History:  
+Father suffered a myocardial infarction two weeks ago and subsequently passed away. No other cardiac or chronic illnesses reported in family.  
+
+Social History:  
+- Occupation/Student Status: Full‑time engineering student at Western University; part‑time employment as a postman.  
+- Living Situation: Resides with mother in a house.  
+- Tobacco: Never smoked.  
+- Alcohol: Consumes alcohol occasionally, 1–2 drinks on weekends.  
+- Illicit Drugs: Denies use of marijuana, cocaine, or other recreational substances.  
+
+Vital Signs (most recent available):  
+Heart Rate: 82 beats per minute  
+Respiratory Rate: 14 breaths per minute  
+Height: 166.9 cm  
+Weight: Not documented; BMI calculated as 27.6 (overweight).  
+Blood Pressure, Temperature, and SpO₂: Not documented at this encounter.  
+
+Physical Examination:  
+No physical exam findings were documented during this encounter.  
+
+Laboratory Data (most recent values on file):  
+- Sodium: 141.33 mmol/L (within normal limits)  
+- Potassium: 4.25 mmol/L (within normal limits)  
+- Chloride: 108.32 mmol/L (within normal limits)  
+- Carbon Dioxide (total): 25.44 mmol/L (within normal limits)  
+- Blood Urea Nitrogen: 11.99 mg/dL (within normal limits)  
+- Creatinine: 0.35 mg/dL (low normal)  
+- Calcium: 8.66 mg/dL (low‑normal)  
+- Glucose: 92.5 mg/dL (normal)  
+- PHQ‑2 score: 1 (negative for depressive symptoms)  
+- GAD‑7 score: 1 (negative for anxiety)  
+- Fall risk score: 45 (moderate risk)  
+
+No cardiac biomarkers, ECG, or imaging results are currently available.  
+
+Imaging:  
+None performed or documented at this time.  
+
+Assessment:  
+1. Acute chest pain, likely non‑cardiac in origin (possible musculoskeletal or early pericarditis) versus atypical presentation of acute coronary syndrome.  
+2. Recent upper respiratory infection (influenza‑like illness) – resolved.  
+3. Family history of premature myocardial infarction (father) – raises concern for hereditary cardiac risk.  
+4. Overweight (BMI 27.6).  
+
+Plan:  
+Diagnostic Studies  
+- Obtain a 12‑lead electrocardiogram (ECG) immediately to assess for ischemic changes, pericarditis, or other arrhythmias.  
+- Order cardiac enzymes (high‑sensitivity troponin) at presentation and repeat in 3–6 hours if initial result is abnormal or clinical suspicion persists.  
+- Consider chest radiograph to evaluate for pulmonary or mediastinal pathology given cough‑related exacerbation.  
+- If ECG suggests pericarditis (e.g., diffuse ST elevation, PR depression) or if troponin is elevated, arrange cardiology consultation.  
+
+Therapeutic Measures  
+- Continue acetaminophen for pain as needed; do not exceed recommended dosing.  
+- Advise patient to avoid activities that provoke pain (e.g., coughing, lying flat) and to adopt a forward‑leaning position when symptomatic.  
+- Counsel on low‑dose aspirin 81 mg daily pending cardiology evaluation, unless contraindicated, to address possible coronary risk.  
+
+Education & Lifestyle  
+- Discuss warning signs that require immediate emergency care: chest pain lasting >5 minutes, worsening intensity, associated shortness of breath, diaphoresis, nausea, or syncope.  
+- Encourage regular aerobic exercise as tolerated, weight management, and a heart‑healthy diet.  
+- Limit alcohol intake to ≤1 drink per day and continue abstaining from tobacco and illicit drugs.  
+
+Follow‑Up  
+- Schedule a follow‑up appointment with primary care or cardiology within 3–5 days to review test results and determine further management.  
+- If ECG or troponin results are abnormal, arrange expedited cardiology referral and possible stress testing or advanced imaging.  
+
+Disposition  
+The patient was reassured that the work‑up will help clarify the cause of her chest pain. She was instructed to seek emergency care if symptoms become severe or new concerning features develop. No discharge medications beyond as‑needed acetaminophen were prescribed at this time.  
+
+Prepared by: ______________________   Date: ______________________   (Electronic medical record)

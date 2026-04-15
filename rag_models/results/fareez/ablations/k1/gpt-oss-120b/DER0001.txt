@@ -1,0 +1,142 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:24:25
+Time: 6.43s
+Tokens: 8,741 in / 2,386 out
+============================================================
+
+Patient Information  
+Name: Adan Crona DOB: 1943‑04‑07 (Age per transcript: 45 years) Sex: Male MRN: 820 Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint  
+The patient presents with a painful, red, swollen area on his right ankle that has been present for approximately one week and became increasingly painful and erythematous over the past 24 hours.
+
+History of Present Illness  
+Adan reports that about one week ago he noticed a “weird‑looking” lesion on his right ankle. At that time it was not painful, but over the last 24 hours the area has become markedly swollen, more red, and now leaks a white exudate from a former scab, creating an open wound. He describes the lesion as “bigger” and “meaner” than before. The pain is described as a dull ache at rest, worsened by walking and flexing the ankle. He notes that the right leg feels hotter than the left, especially after changing socks. He denies systemic symptoms such as shortness of breath or chest pain, but reports feeling generally “crummy,” slightly feverish (subjective feeling of heat), increased hunger, and fatigue over the past two weeks. He has a longstanding history of type 2 diabetes mellitus with poor glycemic control (most recent A1C in the 9‑range) and admits to not checking his blood sugars regularly. He also has a known ulcer on his left heel that he feels is “doing alright.” No prior similar episodes on the right leg.  
+
+Review of Systems  
+Constitutional: Subjective feeling of heat, fatigue, increased hunger; no measured fever, chills, or weight change reported.  
+Skin: Red, swollen, painful lesion on right ankle with white discharge; no other rashes.  
+HEENT: No sore throat, cough, or sinus symptoms today.  
+Respiratory: No dyspnea, cough, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or known edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+Genitourinary: No dysuria or urinary symptoms.  
+Musculoskeletal: Chronic low‑back pain, dull ache over right ankle; no loss of range of motion reported.  
+Neurologic: No focal weakness; reports chronic decreased sensation in the feet consistent with diabetic peripheral neuropathy.  
+Psychiatric: Stressed about work and family responsibilities; no depression or anxiety noted.  
+Endocrine: Known diabetes mellitus; no recent hypoglycemic episodes reported.  
+Hematologic/Lymphatic: No bruising or bleeding abnormalities reported.  
+
+Allergies  
+Penicillin – causes facial swelling and difficulty breathing (anaphylaxis‑type reaction).  
+Grass pollen – mild seasonal symptoms.  
+Lisinopril – unspecified reaction (recorded in EMR).  
+
+Past Medical History  
+- Type 2 diabetes mellitus (poorly controlled, recent A1C ~9%).  
+- Essential hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 2‑4 historically, most recent eGFR 79 mL/min/1.73 m², serum creatinine 2.98 mg/dL).  
+- Diabetic peripheral neuropathy (decreased sensation in feet).  
+- History of myocardial infarction (1997) with ongoing coronary disease.  
+- Prior myocardial infarction with ST‑segment elevation.  
+- Asthma in childhood (now quiescent).  
+- Chronic low‑back pain (managed with OTC analgesics).  
+- History of renal transplant (post‑1997) with current tacrolimus therapy noted in EMR.  
+
+Surgical History  
+- Endoscopic sinus surgery in teenage years for chronic sinusitis.  
+
+Social History  
+The patient resides in town and sees his children every two weeks. He is currently unemployed and runs his own accounting‑related business intermittently. He reports occasional tobacco use, currently about two packs per week, with an increase over the past two weeks due to stress. Alcohol intake is approximately two to four drinks per week, primarily on weekends (roughly three drinks per day on those days). No regular exercise. No recreational drug use.  
+
+Family History  
+Maternal side: Multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+Paternal side: Generally healthy.  
+Aunt on maternal side had lung cancer and was a heavy smoker.  
+
+Current Medications (as reported and documented)  
+- Rosuvastatin (dose unspecified).  
+- Metformin (dose unspecified).  
+- Additional oral diabetes agent (patient described as “Sidas…,” likely a sulfonylurea; dose unspecified).  
+- Aspirin 325 mg PO daily (EMR).  
+- Nitroglycerin sublingual 0.4 mg PRN for chest discomfort (EMR).  
+- Morphine sulfate 2 mg IV PRN for pain (EMR).  
+- Acetaminophen 325 mg PO PRN (EMR).  
+- Sodium fluoride gel (oral, as dental prophylaxis – EMR).  
+- Losartan potassium 25 mg PO daily (EMR).  
+- Simvastatin 10 mg PO daily (EMR; note possible overlap with rosuvastatin).  
+- Diphenhydramine 25 mg PO PRN for allergic symptoms (EMR).  
+- Tacrolimus extended‑release 1 mg daily (EMR, for transplant maintenance).  
+
+Objective  
+Vital Signs: No vital signs documented at this encounter.  
+Physical Examination – Right Lower Extremity  
+- Inspection: Marked erythema, edema, and warmth extending around the ankle; a central area of ulceration with surrounding white purulent‑appearing exudate; scabbing noted previously has broken down.  
+- Palpation: Tenderness to light touch; increased temperature compared with the contralateral limb.  
+- Range of Motion: Patient reports pain with ankle flexion; no obvious limitation noted on passive motion.  
+- Neurovascular: Distal pulses palpable; diminished protective sensation noted in both feet consistent with diabetic neuropathy.  
+
+Laboratory Data (most recent)  
+- Serum creatinine: 2.98 mg/dL (elevated).  
+- Estimated GFR: 79 mL/min/1.73 m².  
+- Blood glucose: 94 mg/dL (random).  
+- Hemoglobin A1C: Not directly listed; patient estimates recent value in the 9‑range.  
+- Lipid panel: Total cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 31.6 mg/dL, triglycerides 177 mg/dL.  
+- Electrolytes: Sodium 139.8 mmol/L, potassium 4.5 mmol/L, chloride (not reported), CO₂ total 22 mmol/L.  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, ALP 123.7 U/L, bilirubin 0.77 mg/dL.  
+- Protein/albumin: Total protein 6.52 g/dL, albumin 3.88 g/dL, globulin 2.16 g/L.  
+
+Imaging  
+No imaging studies were performed or documented during this visit.  
+
+Assessment  
+1. Acute cellulitis of the right ankle with associated purulent drainage, likely secondary to a diabetic foot ulcer.  
+2. Type 2 diabetes mellitus, poorly controlled (A1C ≈9%).  
+3. Chronic kidney disease, stage 2‑4 (elevated creatinine, reduced GFR).  
+4. Peripheral neuropathy secondary to diabetes.  
+5. Hypertension, hyperlipidemia, and prior myocardial infarction – stable on current regimen.  
+6. History of renal transplant on tacrolimus therapy.  
+
+Plan  
+Medical Management  
+- Initiate empiric oral antibiotics targeting common skin‑and‑soft‑tissue pathogens: Cephalexin 500 mg PO q6h for 7‑10 days, or if concern for MRSA, add Trimethoprim‑Sulfamethoxazole 160/800 mg PO BID. Adjust based on culture results if obtained.  
+- Advise the patient to keep the wound clean and covered with sterile dressings; change dressings daily and monitor for increasing drainage or foul odor.  
+- Obtain a wound swab for culture and sensitivity if drainage increases or fails to improve within 48‑72 hours.  
+
+Diabetes Management  
+- Reinforce the importance of regular self‑monitoring of blood glucose; target fasting glucose 80‑130 mg/dL.  
+- Schedule a follow‑up appointment with his primary care physician/endocrinologist within one week to reassess glycemic control and consider intensifying therapy (possible addition of basal insulin).  
+
+Renal & Cardiovascular Care  
+- Continue current antihypertensive (losartan) and statin therapy; consider consolidating rosuvastatin and simvastatin to a single agent after review.  
+- Monitor renal function (serum creatinine, eGFR) in 2‑4 weeks; adjust tacrolimus dose if needed in coordination with transplant team.  
+
+Wound Care & Foot Care  
+- Refer to podiatry/diabetic foot clinic for debridement if indicated and for education on proper foot hygiene.  
+- Encourage daily inspection of both feet, proper footwear, and avoidance of scratching or trauma.  
+
+Lifestyle & Counseling  
+- Tobacco cessation: Offer nicotine replacement therapy and counseling; aim to reduce smoking to <5 cigarettes per day.  
+- Alcohol: Advise limiting intake to ≤ 2 drinks per day and avoiding binge drinking on weekends.  
+- Nutrition: Refer to dietitian for diabetic meal planning and weight management.  
+
+Follow‑Up  
+- Return to the clinic or urgent care if the lesion expands, becomes more painful, develops increased drainage, fever (>38 °C), or systemic signs of infection.  
+- Routine follow‑up with primary care/diabetes specialist in 7‑10 days; podiatry appointment within 1 week.  
+
+Patient Education  
+- Discuss signs of worsening infection (increasing redness, swelling, pain, fever) and importance of prompt medical attention.  
+- Review proper wound dressing techniques and the need for tight glycemic control to promote healing.  
+
+Discharge Instructions  
+- Take prescribed antibiotics exactly as directed; complete the full course even if symptoms improve.  
+- Keep the affected foot elevated when possible to reduce edema.  
+- Perform daily foot checks; report any new lesions or changes immediately.  
+- Maintain hydration, adhere to dietary recommendations, and avoid smoking.  
+
+The patient verbalized understanding of the plan and agreed to follow the recommendations.  
+
+Prepared by: _______________________   Date: _______________________   (Medical Scribe)

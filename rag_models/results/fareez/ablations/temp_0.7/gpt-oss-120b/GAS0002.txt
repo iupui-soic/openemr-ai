@@ -1,0 +1,141 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:14:08
+Time: 4.99s
+Tokens: 8,409 in / 1,976 out
+============================================================
+
+Patient Information  
+Name: Agustin McGlynn  
+Medical Record #: 2046  
+Date of Birth: 16 April 1965 (Age 61)  
+Sex: Male  
+Address: 266 Heller Park Apt 46, Hingham, Massachusetts 02043  
+
+Chief Complaint  
+The patient presented to the Emergency Department with a chief complaint of severe right‑upper‑quadrant (RUQ) abdominal pain that began three days ago and markedly worsened approximately three to four hours prior to arrival.
+
+History of Present Illness  
+Mr. McGlynn reports a sharp, localized pain situated just below the right lower ribs in the upper right abdomen. The pain started after a midday meal three days earlier, with an initial mild discomfort that progressively intensified. Over the past two days the pain remained relatively constant, but this morning it escalated to an 8/10 in intensity. The pain does not radiate to other areas. He denies any alleviating factors; over‑the‑counter analgesics (ibuprofen and acetaminophen) have provided minimal relief. Associated symptoms include intermittent nausea over the past several days, but he has not experienced vomiting, hematemesis, hematochezia, melena, or changes in bowel habits. Appetite has markedly decreased today, and he feels fatigued and “drained” due to the pain. He denies fever, chills, dysuria, hematuria, rash, or recent travel. No prior similar episodes were noted except a vague episode several years ago that resolved spontaneously without medical evaluation.
+
+Review of Systems  
+Constitutional: Positive for fatigue and decreased energy today; no fever, chills, or weight loss.  
+Respiratory: No cough, dyspnea, or recent infections.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Positive for RUQ abdominal pain and nausea; negative for vomiting, dysphagia, heartburn (except occasional antacid use), diarrhea, constipation, melena, hematochezia, or change in stool color.  
+Genitourinary: No dysuria, urinary frequency, urgency, or hematuria.  
+Musculoskeletal: No joint pain or weakness.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Skin: No rashes or lesions.  
+Psychiatric: No reported anxiety, depression, or substance‑use concerns.  
+
+Past Medical History  
+- Essential hypertension  
+- Chronic kidney disease (stage 4) with prior kidney transplant and subsequent graft failure  
+- Diabetes mellitus type 2 with microalbuminuria and proteinuria  
+- Gastroesophageal reflux disease  
+- Osteoporosis  
+- Cerebral palsy with associated spasticity and intellectual disability  
+- History of anemia, chronic kidney disease stages 1‑3 (now progressed)  
+- Severe anxiety/panic disorder (historical)  
+
+Surgical History  
+- No prior abdominal surgeries.  
+- Obstetric history includes hospitalizations for childbirth (patient’s partner’s deliveries).  
+
+Social History  
+- Occupation: Bank consultant (full‑time).  
+- Living situation: Resides with partner and two children; supportive home environment.  
+- Tobacco: None.  
+- Alcohol: Consumes one to two glasses of wine nightly; does not feel a need to cut down and reports no cravings or morning use.  
+- Illicit drugs: None.  
+- Exercise: Not reported.  
+
+Family History  
+- Mother has a history of gallstones.  
+- Father died of a stroke in his 60s. No other notable hereditary conditions reported.  
+
+Allergies  
+The patient reports no known drug allergies.  
+
+Current Medications (home)  
+- Tacrolimus extended‑release 5 mg PO daily (immunosuppression)  
+- Tacrolimus 1 mg extended‑release PO daily (duplicate entry)  
+- Tacrolimus 5 mg/ML injection (as needed per transplant protocol)  
+- Acetaminophen 325 mg PO PRN for pain  
+- Hydrochlorothiazide 25 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Glycopyrrolate 1.5 mg PO daily  
+- Over‑the‑counter antacid (as needed for heartburn)  
+
+Vital Signs (recorded on 30 May 2024)  
+Heart Rate: 94 beats/minute  
+Respiratory Rate: 13 breaths/minute  
+Blood Pressure: Not documented in the extract  
+Temperature: Not documented  
+SpO₂: Not documented  
+Height: 177.7 cm (5 ft 10 in)  
+Weight: Not documented  
+BMI: 27.27 kg/m²  
+
+Physical Examination  
+Admission exam: No detailed physical exam findings were documented in the source material. Therefore, no information is available regarding abdominal tenderness, Murphy’s sign, or other pertinent findings.
+
+Laboratory Data (most recent)  
+- White blood cell count: 7.58 ×10³/µL (within normal limits)  
+- Hemoglobin: 13.58 g/dL  
+- Hematocrit: 40.1 %  
+- Mean corpuscular volume: 94.5 fL  
+- Mean corpuscular hemoglobin: 28.35 pg  
+- Mean corpuscular hemoglobin concentration: 34.2 g/dL  
+- Red cell distribution width: 39.9 fL (elevated)  
+- Platelets: 351 ×10³/µL  
+- LDL cholesterol: 168 mg/dL (elevated)  
+- Total cholesterol: 252 mg/dL (elevated)  
+- HDL cholesterol: 58 mg/dL  
+- Triglycerides: 130 mg/dL  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+- GAD‑7 score: 2 (minimal anxiety)  
+
+Imaging  
+No imaging studies were documented during this encounter.  
+
+Assessment  
+1. Acute right‑upper‑quadrant abdominal pain – differential includes biliary colic or early acute cholecystitis given the location, post‑prandial onset, and family history of gallstones.  
+2. Chronic kidney disease stage 4 with prior transplant failure – requires careful medication dosing and avoidance of nephrotoxic agents.  
+3. Hypertension, type 2 diabetes mellitus, dyslipidemia – chronic comorbidities under ongoing management.  
+4. Gastroesophageal reflux disease – intermittent antacid use.  
+
+Plan  
+Diagnostic Work‑up  
+- Obtain right‑upper‑quadrant abdominal ultrasound urgently to evaluate for gallstones, gallbladder wall thickening, pericholecystic fluid, and biliary ductal dilation.  
+- If ultrasound is inconclusive and clinical suspicion remains high, consider a hepatobiliary iminodiacetic acid (HIDA) scan.  
+- Basic metabolic panel and liver function tests (AST, ALT, ALP, total bilirubin) to assess for cholestasis or hepatic involvement.  
+
+Therapeutic Interventions  
+- Initiate intravenous fluid resuscitation with isotonic crystalloid as tolerated, mindful of renal function.  
+- Provide analgesia with intravenous acetaminophen 1 g q6h; avoid NSAIDs given chronic kidney disease.  
+- Offer antiemetic therapy (e.g., ondansetron 4 mg IV PRN) for nausea.  
+- Continue home antihypertensive regimen; monitor blood pressure closely.  
+- Maintain tacrolimus levels per transplant protocol; coordinate with transplant team for trough monitoring.  
+
+Disposition  
+- Admit for observation, pain control, and further evaluation of possible biliary pathology.  
+- Surgical consultation to discuss need for cholecystectomy if imaging confirms cholecystitis or symptomatic cholelithiasis.  
+
+Disposition Instructions (to be provided at discharge)  
+- Follow up with primary care physician within 1 week for blood pressure, diabetes, and renal function review.  
+- Follow up with transplant nephrology within 2 weeks for tacrolimus level assessment.  
+- If discharged after definitive treatment, return to the Emergency Department for any of the following: worsening abdominal pain, fever, vomiting, jaundice, or any new gastrointestinal bleeding.  
+
+Follow‑up Appointments  
+- Gastroenterology or surgery clinic appointment within 5‑7 days pending imaging results.  
+- Routine laboratory monitoring (CBC, CMP, lipid panel) in 1 month.  
+
+Patient Education  
+- Educated on signs of worsening abdominal pain, fever, vomiting, or jaundice that would warrant immediate medical attention.  
+- Reviewed medication adherence, especially tacrolimus, antihypertensives, and diabetes medications.  
+- Discussed low‑fat diet and avoidance of large, fatty meals until the underlying cause of RUQ pain is clarified.  
+
+The above reflects the current encounter and integrates the patient’s chronic medical conditions with the acute presentation. No further information is available for physical exam findings or imaging at this time.

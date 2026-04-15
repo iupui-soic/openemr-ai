@@ -1,0 +1,56 @@
+Model: qwen/qwen3-32b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:40:00
+Time: 3.66s
+Tokens: 11,188 in / 968 out
+============================================================
+
+Patient Information  
+The patient is a 99-year-old female, Alane Ling Muller, residing in Chelsea, Massachusetts. She is a student living with two roommates. She has a history of asthma and is currently using puffers prescribed by her family physician. She denies any allergies. Her social history includes occasional alcohol consumption, with approximately one or two drinks per week on weekends. She does not use tobacco or recreational drugs. Her typical diet includes oatmeal for breakfast, a quick lunch such as a salad, and dinner often consists of eating out, such as burgers or fries.  
+
+Chief Complaint  
+The patient presents with acute onset of severe diarrhea over the past three to four days. She reports frequent, loose stools occurring approximately every hour, which has significantly impacted her daily activities, including missing classes. She also notes the development of intermittent abdominal cramps starting approximately one day after the onset of diarrhea.  
+
+History of Present Illness  
+The patient first noticed symptoms of diarrhea three to four days ago. She describes all stools as loose and watery, with no solid stools observed. She denies the presence of blood in the stool but acknowledges some cramping in the abdomen that began the day prior. She reports nausea and vomiting, with two episodes of vomiting occurring the previous day. The vomiting is described as watery, without blood. She denies fever, chills, or any rashes. She has not taken any over-the-counter medications for her symptoms but has been attempting to stay hydrated by drinking water. She reports a decreased appetite since the onset of cramping.  
+
+She recalls dining at a Chinese restaurant five days ago, where she consumed rice with chicken Manchurian. She notes that she was not with anyone else at the time and has not discussed this with her friend. She denies recent travel or contact with anyone who is ill. She has not noticed any changes in urine output or discomfort with urination. She reports feeling fatigued but has not measured her temperature.  
+
+Review of Systems  
+- **Constitutional:** Reports fatigue and decreased appetite.  
+- **Gastrointestinal:** Diarrhea occurring every hour, abdominal cramping, nausea, and vomiting. No blood in stool or vomitus. No changes in urine output or discomfort with urination.  
+- **Respiratory:** No cough, shortness of breath, or chest pain.  
+- **Cardiovascular:** No chest pain or palpitations.  
+- **Neurological:** No headaches, dizziness, or syncope.  
+- **Musculoskeletal:** No joint pain or muscle aches.  
+- **Other:** No rashes, fever, or chills.  
+
+Allergies  
+No known drug or food allergies.  
+
+Past Medical History  
+The patient has a history of asthma, for which she uses puffers. She has no prior history of digestive disorders. She has a family history of appendicitis in her brother and a hysterectomy in her mother.  
+
+Social History  
+She consumes alcohol occasionally, with approximately one or two drinks per week on weekends. She does not use tobacco or recreational drugs.  
+
+Family History  
+Her brother had appendicitis in childhood, and her mother underwent a hysterectomy. No other significant family history of digestive disorders or abdominal surgeries is reported.  
+
+Current Medications  
+The patient is currently using puffers for asthma management. No other medications are reported.  
+
+Objective  
+Vital signs were not available in the OpenEMR extract. Physical examination findings were not documented in the provided data.  
+
+Laboratory Results  
+Available lab results from OpenEMR include normal hemoglobin, leukocyte count, glucose, sodium, chloride, and creatinine levels. Urinalysis results were negative for nitrites, leukocytes, ketones, glucose, and protein. Specific gravity of urine was within normal limits.  
+
+Assessment  
+The patient presents with acute diarrhea, likely of infectious etiology, given the recent dietary exposure and associated symptoms of nausea and vomiting. The absence of fever, blood in stool, or significant systemic symptoms suggests a self-limiting gastroenteritis. The history of recent consumption at a restaurant raises the possibility of foodborne illness.  
+
+Plan  
+The patient should continue to maintain hydration with oral fluids. She should monitor for signs of dehydration, including decreased urine output, dizziness, or worsening fatigue. If symptoms persist or worsen, she should seek further medical evaluation. She should avoid solid foods for the time being and may consider a bland diet as tolerated. No specific medications were prescribed in the encounter.  
+
+Follow-up is recommended if symptoms persist beyond 48 hours or if new symptoms such as fever, severe abdominal pain, or signs of dehydration develop. She should also follow up with her primary care provider for continued management of her asthma and any other chronic conditions.

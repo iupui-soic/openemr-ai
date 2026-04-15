@@ -1,0 +1,53 @@
+Model: google/medgemma-4b-it
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 06:28:26
+Time: 34.66s
+Tokens: 6,611 in / 654 out
+Cell: embed_pubmedbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abbie Stamm
+Date of Birth: 2001-11-16
+Sex: Female
+Unit Number: 123
+
+Chief Complaint: Fever and cough.
+
+History of Present Illness:
+
+The patient presents with a complaint of fever and cough. The patient reports that she started experiencing a cough four days ago, and the fever started four days ago as well. The patient reports that the cough has been getting worse, and she is also feeling fatigued and tired. The patient denies any prior history of similar symptoms. She denies any sore throat, difficulty swallowing, or changes in taste or smell. She reports a runny nose, but not severe congestion. She denies any ear or eye pain or discharge. She denies any wheezing or shortness of breath. She denies chest pain or palpitations. She reports feeling chilly at night, but denies night sweats. She denies weight loss. The patient reports that the cough is dry. She denies any blood associated with the cough. She denies nausea or vomiting. She denies any triggers for her nausea. She reports a headache that has been on and off for several days, and she has been resting more. She denies any memory loss or confusion. She denies dizziness or fainting spells. She reports being generally healthy, except for being told she has high cholesterol and pre-diabetes. She is taking Rosuvastatin for her cholesterol and is trying to lose weight and walk the dog more. She denies any surgeries or hospitalizations. She is up to date on her immunizations. She denies any family history of lung or heart conditions. She denies any cancers in the family. She denies any changes to her urinary habits. She denies any smoking or recreational drug use. She reports consuming a few beers on the weekend.
+
+Medications:
+
+The patient is currently taking Rosuvastatin for high cholesterol, and she is also taking a multivitamin. She is also on a birth control pill. She is pre-diabetic and is trying to lose weight. She is taking a medication for her GERD.
+
+Allergies:
+
+The patient is allergic to penicillin, which causes hives.
+
+Family History:
+
+The patient denies any family history of lung or heart conditions. She reports that her grandfather had bladder cancer.
+
+Social History:
+
+The patient lives in a duplex and rents the basement. She lives with her girlfriend. She reports that she went shopping in the mall last weekend. She was wearing a mask, and everyone else was wearing a mask. She denies traveling recently.
+
+Physical Exam:
+
+The patient's vital signs were not recorded. The physical exam findings were not recorded.
+
+Labs:
+
+The patient's lab results were not recorded.
+
+Assessment:
+
+The patient's symptoms are consistent with an upper respiratory infection, possibly COVID-19.
+
+Plan:
+
+The patient is instructed to isolate for 14 days, including her girlfriend, even if the COVID swab comes back negative. The patient will be tested for COVID-19. The patient will be notified if the COVID swab comes back positive. The patient will be instructed to follow up with their primary care physician if their symptoms persist or worsen. The patient will be reviewed for lifestyle changes to manage her pre-diabetes.

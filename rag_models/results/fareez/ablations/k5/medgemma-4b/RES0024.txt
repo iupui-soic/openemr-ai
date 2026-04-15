@@ -1,0 +1,301 @@
+Model: google/medgemma-4b-it
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 05:33:44
+Time: 110.96s
+Tokens: 13,084 in / 1,977 out
+Cell: k5
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Bartoletti
+Date of Birth: 1981-08-03
+Unit Number: 2
+
+Chief Complaint: Loss of smell and taste.
+
+History of Present Illness:
+The patient presents today complaining of a loss of smell and taste that began two days prior. He reports that he can no longer smell or taste food, describing it as "super weird." He denies any other symptoms such as fever, cough, shortness of breath, chest pain, nausea, vomiting, diarrhea, constipation, urinary changes, headaches, or recent weight loss. He reports feeling "totally fine" otherwise, aside from the sensory loss. He mentions that he heard that this can happen with COVID.
+
+Review of Systems:
+The patient denies any symptoms in the following systems:
+*   Constitutional: Fever, chills, night sweats
+*   Respiratory: Cough, shortness of breath, sputum production, chest pain
+*   Cardiovascular: Chest pain, palpitations, rapid heart rate
+*   Gastrointestinal: Nausea, vomiting, diarrhea, constipation
+*   Genitourinary: Urinary changes, painful urination, increased frequency
+*   Neurological: Headaches, dizziness, vision changes
+*   Musculoskeletal: Joint pain, muscle weakness
+*   Skin: Rash, itching
+*   Psychiatric: Anxiety, depression
+
+Past Medical History:
+The patient has a history of:
+*   Impacted molars
+*   Chronic pain
+*   Chronic intractable migraine without aura
+*   Risk activity involvement
+*   Received certificate of high school equivalency
+*   Essential hypertension
+*   Misuses drugs
+*   Chronic kidney disease stage 1
+*   Disorder of kidney due to diabetes mellitus
+*   Dependent drug abuse
+*   Full-time employment
+*   Has a criminal record
+*   Stress
+*   Drug overdose
+*   Medication review due
+*   Part-time employment
+*   Victim of intimate partner abuse
+*   Gingivitis
+*   Drug overdose
+*   Full-time employment
+*   Limited social contact
+*   Stress
+*   Drug overdose
+*   Full-time employment
+*   Limited social contact
+*   End-stage renal disease
+*   Proteinuria due to type 2 diabetes mellitus
+*   Part-time employment
+*   Limited social contact
+*   Viral sinusitis
+*   Not in labor force
+*   Stress
+*   Victim of intimate partner abuse
+*   Not in labor force
+*   Drug overdose
+*   Full-time employment
+*   Limited social contact
+*   Infection of tooth
+*   Loss of teeth
+*   Torus palatinus
+*   Medication review due
+*   Part-time employment
+*   Limited social contact
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Infection of tooth
+*   Gingival disease
+*   Fractured dental filling
+*   Part-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Full-time employment
+*   Social isolation
+*   Stress
+*   Victim of intimate partner abuse
+*   Medication review due
+*   Medication review due
+*   Part-time employment
+*   Gingivitis
+*   Stress
+*

@@ -1,0 +1,121 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:28:49
+Time: 4.28s
+Tokens: 7,739 in / 1,476 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt  
+Date of Birth: 27 September 1965 (Age 60)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Medical Record Number: 103  
+
+Chief Complaint  
+Dry cough lasting three days, associated with feverish sensation, chills, night sweats, fatigue, and mild headache, interfering with sleep.
+
+History of Present Illness  
+Abbey reports the onset of a persistent, non‑productive cough three days ago. The cough has progressively worsened and is present throughout the day, disrupting her ability to sleep. She denies any sputum production, hemoptysis, or wheezing. Today she began feeling “hot,” describing a fever‑like sensation, accompanied by chills and a brief episode of night sweats last night. She has not measured her temperature. She feels unusually fatigued, which she attributes in part to the lack of sleep from the cough. She notes a mild headache, which she believes may be secondary to coughing strain. She denies shortness of breath, chest pain, palpitations, dizziness, visual changes, loss of taste or smell, nausea, vomiting, diarrhea, abdominal pain, dysuria, or recent weight loss. She has tried an over‑the‑counter cough syrup without relief. There are no identifiable environmental triggers such as cold air, smoke, dust, or pet exposure.  
+
+Review of Systems  
+Constitutional: Feverish sensation, chills, night sweats, fatigue, mild headache.  
+Respiratory: Dry cough, no sputum, no hemoptysis, no dyspnea, no wheezing, no chest pain.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain, or dysphagia.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No dizziness or focal deficits.  
+ENT: No sore throat, rhinorrhea, nasal congestion, conjunctival discharge, or ear pain.  
+Musculoskeletal: Reports mild body aches and muscle fatigue.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No anxiety or depression noted beyond baseline stress.  
+
+Past Medical History  
+- Hypothyroidism, currently treated with levothyroxine (Synthroid).  
+- Essential hypertension.  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus.  
+- Type 2 diabetes mellitus (managed with oral agents, not detailed).  
+- Chronic congestive heart failure.  
+- Obesity (BMI 30.1).  
+- Chronic low‑back and neck pain.  
+- Prior acute bronchitis (2015).  
+
+Surgical History  
+- Appendectomy performed in teenage years, without complications.  
+
+Social History  
+- Lives in a townhouse with husband and two teenage children; recently moved.  
+- No tobacco use.  
+- Consumes a glass of wine approximately every three to four days (≈2–3 drinks per week).  
+- Occasionally uses marijuana, not on a regular schedule.  
+- No other recreational drug use.  
+- Works from home as a marketing professional; husband works in an office setting.  
+
+Family History  
+- Sister suffered a recent myocardial infarction.  
+- No known family history of hypertension, diabetes, cancer, or lung disease.  
+
+Allergies  
+No known drug allergies reported.  
+
+Current Medications  
+- Levothyroxine (Synthroid) – dose not specified.  
+- Multivitamin (generic formulation).  
+- Other chronic medications listed in the record (e.g., amlodipine, furosemide, naproxen) are presumed active, although exact dosing and adherence are not confirmed at this visit.  
+
+Vital Signs  
+Heart rate: 98 beats per minute (recorded on prior visit).  
+Respiratory rate: 15 breaths per minute.  
+Blood pressure: Not available at this encounter.  
+Temperature: Not measured.  
+SpO₂: Not available.  
+Weight/BMI: Height 162.8 cm, BMI 30.06 (obesity).  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory and Imaging Studies Ordered  
+- Nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Complete blood count with differential.  
+- Comprehensive metabolic panel.  
+- Chest radiograph (PA view) to assess for pneumonia or other infiltrates.  
+
+Assessment / Diagnosis  
+1. Acute viral bronchitis – dry cough, feverish sensation, and systemic symptoms without focal lung findings.  
+2. Rule‑out COVID‑19 infection – exposure to symptomatic household member (husband with vomiting and fever).  
+3. Chronic medical conditions (hypertension, CKD stage 2, type 2 diabetes, hypothyroidism, CHF, obesity) – stable per prior records.  
+
+Plan  
+1. Diagnostic Testing  
+   - Obtain SARS‑CoV‑2 PCR test today.  
+   - Draw CBC, CMP, and inflammatory markers as baseline.  
+   - Perform chest X‑ray to exclude bacterial pneumonia.  
+
+2. Symptomatic Management  
+   - Continue over‑the‑counter cough suppressant as needed.  
+   - Initiate acetaminophen 650 mg PO q6h PRN for fever or headache, not to exceed 3 g per day.  
+   - Encourage increased fluid intake, humidified air, and rest.  
+   - Advise use of honey or warm tea if tolerated.  
+
+3. Isolation and Public Health Measures  
+   - Instruct patient to self‑isolate at home pending COVID‑19 test result, limit contact with household members, and wear a mask when interacting with others.  
+   - Monitor temperature twice daily; record any temperature ≥38 °C (100.4 °F).  
+
+4. Red‑Flag Education  
+   - Seek urgent care if she develops worsening shortness of breath, chest pain, high‑grade fever, persistent vomiting, new wheezing, or confusion.  
+
+5. Follow‑Up  
+   - Telephone or virtual follow‑up in 48–72 hours to review test results and symptom progression.  
+   - Earlier evaluation if symptoms deteriorate.  
+
+6. Chronic Disease Management  
+   - Continue current levothyroxine and other chronic medications.  
+   - Encourage adherence to antihypertensive and diabetic regimens; arrange routine labs for CKD monitoring per primary care schedule.  
+
+7. Lifestyle Recommendations  
+   - Maintain adequate hydration and balanced nutrition; consider small, frequent meals if cough interferes with eating.  
+   - Continue moderate alcohol use within recommended limits.  
+   - Avoid exposure to respiratory irritants; no smoking.  
+
+The patient verbalized understanding of the plan, agreed to the recommended testing, and will follow up as instructed. No further immediate interventions are planned at this time.

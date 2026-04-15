@@ -1,0 +1,81 @@
+Model: openai/gpt-oss-120b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 03:14:16
+Time: 4.29s
+Tokens: 10,695 in / 1,427 out
+============================================================
+
+Patient Information:  
+Aaron Bartoletti, male, born 03 August 1981 (age 44). Current address: 409 Veum Drive, Spencer, Massachusetts 01562. He is employed full‑time, works from home, and lives with his wife and teenage son. He reports a pet dog (Labradoodle, 3 years old). No recent travel or known sick contacts.
+
+Chief Complaint:  
+Acute sinus infection with worsening nasal congestion, purulent green nasal discharge, facial pressure, and sinus‑type headache.
+
+History of Present Illness:  
+The patient reports a several‑week history of sinus symptoms consistent with acute rhinosinusitis. He describes green, thick nasal discharge that does not improve with regular saline irrigations. He has prominent facial pressure and fullness over the frontal sinuses, and a frontal headache that sometimes radiates across the face. He notes post‑nasal drip causing a mild, stingy throat irritation but denies a classic sore throat. He reports low‑grade fever measured at approximately 99.7 °F last night. He denies cough, wheezing, shortness of breath, chest pain, loss of smell (though he feels “plugged up”), dizziness, or syncope. He has tried over‑the‑counter nasal decongestants for a few days (avoiding prolonged use) and routine saline rinses without relief. He previously used a nasal steroid spray with good effect but has discontinued it because he had been symptom‑free for a period. He takes ibuprofen (Advil) occasionally for knee pain. He reports occasional cannabis oil capsules (approximately once per month) for recreational use and occasional knee pain relief. He denies any recent emergency department visits for this episode; his only prior ED visit for sinus infection resulted in discharge without admission.
+
+Review of Systems:  
+- Constitutional: Low‑grade fever (≈99.7 °F); no weight loss, chills, or night sweats.  
+- Eyes/Vision: No changes.  
+- ENT: Nasal congestion, purulent green discharge, frontal facial pressure/fullness, sinus‑type headache, post‑nasal drip with mild throat irritation; no sore throat, dysphagia, or loss of taste. No hearing changes.  
+- Respiratory: No cough, dyspnea, wheezing, or chest pain.  
+- Cardiovascular: No palpitations or chest discomfort.  
+- Gastrointestinal: Normal bowel movements, no nausea, vomiting, or abdominal pain.  
+- Genitourinary: No dysuria or urinary changes.  
+- Musculoskeletal: History of ACL repair; occasional knee pain treated with ibuprofen; no new joint complaints.  
+- Neurologic: No dizziness, syncope, or focal deficits.  
+- Psychiatric: No reported anxiety, depression, or mood changes.  
+- Dermatologic: No rash.  
+- Allergic/Immunologic: Allergic to cats (mild); no drug allergies reported.
+
+Past Medical History:  
+The patient states he is otherwise healthy aside from a prior ACL reconstruction. He reports no chronic medical conditions such as hypertension, diabetes, or kidney disease. He denies any hospitalizations or surgeries other than the ACL repair. No history of asthma, COPD, or immunodeficiency.
+
+Past Surgical History:  
+- Anterior cruciate ligament (ACL) reconstruction (date not specified).  
+- No other surgeries reported.
+
+Medications:  
+- No prescription medications currently taken.  
+- Occasional ibuprofen (Advil) for knee pain.  
+- Occasional cannabis oil capsule (≈once/month).  
+- Saline nasal rinses used regularly.  
+- Previously used a nasal steroid spray (discontinued).  
+- No other over‑the‑counter or herbal products reported.
+
+Allergies:  
+- Cat dander – mild allergic reaction.  
+- No known drug allergies.
+
+Family History:  
+The patient reports no known family history of lung, heart, or other significant diseases.
+
+Social History:  
+- Tobacco: Never smoked.  
+- Alcohol: Consumes five to six beers on weekends.  
+- Recreational drugs: Occasional cannabis oil capsule (≈monthly).  
+- Occupation: Works full‑time from home.  
+- Living environment: New house, no known mold, asbestos, or smoke exposure.  
+- Pets: Dog (Labradoodle); no cats at home.
+
+Physical Examination:  
+No physical exam findings were documented during this encounter.
+
+Assessment:  
+1. Acute bacterial rhinosinusitis – frontal sinus predominance, >7 days duration, purulent green discharge, low‑grade fever, and facial pressure not responding to saline irrigation alone.  
+2. Post‑nasal drip with mild throat irritation.  
+3. Allergic rhinitis component (cat allergy) possibly contributing to congestion.  
+4. Prior ACL reconstruction – asymptomatic.
+
+Plan:  
+- Diagnostic testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR to rule out COVID‑19; results to be communicated within 24–48 hours.  
+- Pharmacologic therapy: Initiate amoxicillin‑clavulanate 875 mg/125 mg orally twice daily for 7 days (adjust if penicillin allergy develops).  
+- Intranasal therapy: Restart a prescription intranasal corticosteroid spray (e.g., fluticasone propionate 50 mcg spray, 2 sprays each nostril once daily) for 7–10 days to reduce mucosal inflammation.  
+- Symptomatic relief: Continue isotonic saline nasal irrigations twice daily; use an over‑the‑counter topical decongestant spray for no more than 3 consecutive days if needed.  
+- Analgesia: Ibuprofen 400–600 mg orally every 6–8 hours as needed for headache or facial pain, not to exceed 1200 mg per day.  
+- Follow‑up: Re‑evaluate in one week, either in person or via telehealth, to assess symptom resolution. If symptoms persist or worsen (e.g., fever >101 °F, increasing facial pain, swelling, or visual changes), consider imaging (CT sinus) and possible ENT referral.  
+- Education: Reviewed proper saline irrigation technique, warned against prolonged use of topical decongestants, and emphasized adherence to the full antibiotic course. Discussed avoidance of known cat allergen exposure when possible and use of air filtration if needed.  
+- Preventive: Counsel on smoking avoidance, moderate alcohol intake, and continued use of protective knee measures when engaging in activity.  
+
+The patient verbalized understanding of the plan and agreed to start the prescribed antibiotics and intranasal steroid spray, perform the COVID test, and follow up as scheduled.

@@ -1,0 +1,55 @@
+Model: openai/gpt-oss-20b
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:16:35
+Time: 2.35s
+Tokens: 5,670 in / 1,156 out
+============================================================
+
+Patient Information  
+Abbie Stamm, female, born November 16, 2001, residing at 635 Eichmann Neck Apt 65, Amherst, Massachusetts 00000. Her unit number is 123.  
+
+Chief Complaint  
+The patient presents with a four‑day history of fever and a dry cough, accompanied by worsening fatigue and mild nausea. She is concerned that her symptoms may be related to COVID‑19.  
+
+History of Present Illness  
+The patient reports that she began experiencing fever (the first measured temperature of 38.5 °C this morning) and a dry cough on Monday, which has progressively worsened. She notes increasing fatigue, a mild sense of tiredness, and occasional nausea, but no vomiting. The cough is non‑productive and has not been associated with sputum, blood, or wheezing. She denies sore throat, difficulty swallowing, chest pain, shortness of breath, or wheezing, although she feels slightly short of breath after coughing fits. Her nasal symptoms are mild with a slight runny nose; she does not report congestion or rhinorrhea significant enough to cause discomfort. There is no loss of taste or smell. She has had intermittent tension‑type headaches over the last several days but has not had any new or severe headaches. She has also experienced a mild chill at night but no night sweats.  
+
+The patient has no new weight loss, although she notes a small reduction in appetite over the past week. She has not experienced any bowel or urinary changes other than mild nausea and normal bowel movements. She has not had any recent vomiting, diarrhea, abdominal pain, or urinary symptoms.  
+
+She has no known exposure to sick contacts, although she visited a mall over the weekend. She denies recent travel.  
+
+Past Medical History  
+The patient reports a history of childhood asthma and perennial allergic rhinitis, both in remission. She has mitral valve regurgitation diagnosed in 2016 and currently takes rosuvastatin for hyperlipidemia. She is pre‑diabetic with an HbA1c of 6.2% noted six months ago. She underwent inguinal hernia repair five years ago. No current or prior diagnosis of chronic bronchitis or other pulmonary disease.  
+
+Social History  
+The patient lives in a duplex with her girlfriend. She is a non‑smoker, consumes alcohol socially (approximately two to three beers on weekends), and reports no recreational drug use. She reports walking her dog regularly to manage her weight. She is employed full time and receives an annual flu vaccination. She denies any illicit drug use, marijuana, or significant substance abuse.  
+
+Allergies  
+The patient is allergic to penicillin, resulting in hives upon exposure. No other drug or environmental allergies were reported.  
+
+Medications  
+Current medications include rosuvastatin 5 mg daily and a multivitamin. No other prescription, over‑the‑counter, or herbal supplements are being taken.  
+
+Objective Findings  
+- Temperature: 38.5 °C  
+- Heart rate: 68 bpm (recorded in the EMR)  
+- Respiratory rate: 14 breaths/min (recorded in the EMR)  
+- Blood pressure, SpO₂, weight, height, and BMI: not documented during this visit.  
+
+Laboratory Data  
+Recent laboratory results are limited to a routine urine dipstick panel and urinary microscopy performed on February 10, 2024, which showed mild proteinuria, mild glucosuria, and mild erythrocytosis but are not relevant to the current respiratory presentation. No recent blood counts, inflammatory markers, or viral panels are available.  
+
+Assessment  
+The patient is most likely experiencing an acute viral upper respiratory infection, with a high probability of COVID‑19 given her symptoms, the timing of onset, and the current prevalence. Influenza and other seasonal viral etiologies remain on the differential but are less likely in the absence of myalgia or gastrointestinal symptoms. Bacterial superinfection is unlikely given the absence of purulent sputum, pleuritic chest pain, or significant leukocytosis. Her chronic conditions (hyperlipidemia, pre‑diabetes) and prior asthma do not appear to be contributing factors at this time.  
+
+Plan  
+1. Obtain a SARS‑CoV‑2 nucleic acid amplification test (COVID swab) and advise the patient and her girlfriend to isolate for 14 days pending results.  
+2. Continue symptomatic management: rest, hydration, acetaminophen for fever and headache, and saline nasal irrigation if congestion worsens.  
+3. Monitor for worsening respiratory symptoms, new chest pain, or onset of productive cough; if any of these occur, return to the clinic or seek urgent care.  
+4. Counsel on COVID‑19 preventive measures, including mask usage and hand hygiene, especially around her girlfriend.  
+5. Discuss lifestyle modifications for pre‑diabetes: increased physical activity, dietary counseling, and monitoring of blood glucose levels.  
+6. Review and reinforce medication adherence for rosuvastatin and multivitamin.  
+7. Schedule a follow‑up appointment in one week or sooner if symptoms do not improve or if COVID‑19 test returns positive.  
+
+The patient was educated regarding the possibility of false‑negative COVID tests and the importance of continued isolation until test results are confirmed. She was reassured that her symptoms are consistent with a common viral upper respiratory illness and that bacterial pneumonia is unlikely at this time. She expressed understanding of the plan and agreed to the recommendations.

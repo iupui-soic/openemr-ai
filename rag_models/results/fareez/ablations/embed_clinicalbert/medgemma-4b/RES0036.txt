@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:59:27
+Time: 30.79s
+Tokens: 10,796 in / 494 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Adrianna Camelia Wuckert, DOB 1919-02-25, is a 64-year-old female residing at 609 Bartell Gate, Marshfield, Massachusetts 02050. She is currently employed and has a history of chronic sinusitis, essential hypertension, ischemic heart disease, chronic kidney disease, and hyperlipidemia. She also has a history of a criminal record and a family history of familial Alzheimer's disease. She is a smoker (10 cigarettes/day) and occasional cannabis user. She has no known allergies.
+
+Chief Complaint:
+
+The patient presents with shortness of breath and cough for the past six days, which has worsened.
+
+History of Present Illness:
+
+The patient reports experiencing shortness of breath for six days, which started suddenly. She also has a cough, with rusty-colored sputum noted a couple of times a day. The shortness of breath and cough have been constant, and she reports that they are getting worse. She denies any recent infections or exposures. She reports feeling feverish and has noticed some wheezing. She has a sharp chest pain that gets worse with coughing. She has tried Tylenol for fever. She denies blood in the cough. She denies any other symptoms like sore throat, runny nose, chest pain, or dizziness.
+
+Past Medical History:
+
+The patient has a history of chronic sinusitis, essential hypertension, ischemic heart disease, chronic kidney disease, and hyperlipidemia. She also has a history of a criminal record.
+
+Social History:
+
+The patient is a smoker (10 cigarettes/day) and occasional cannabis user. She works in a crowded environment with an air conditioner that is not properly maintained.
+
+Family History:
+
+The patient reports a family history of familial Alzheimer's disease.
+
+Medications:
+
+The patient is currently taking Alteplase, Amoxicillin, Tacrolimus, Epoetin Alfa, Hydrochlorothiazide, Lisinopril, and Simvastatin.
+
+Physical Exam:
+
+No physical exam findings are provided in the transcript.
+
+Assessment:
+
+The patient's symptoms and history are suggestive of an upper respiratory tract infection, possibly pneumonia. The patient's smoking history increases the risk of COPD exacerbation.
+
+Plan:
+
+The patient requires further investigation to determine the underlying cause of her symptoms. Antibiotics may be considered. The patient will be discharged with instructions to follow up with her primary care physician.

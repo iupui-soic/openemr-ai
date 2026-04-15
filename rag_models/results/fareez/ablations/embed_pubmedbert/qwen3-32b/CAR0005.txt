@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:03:22
+Time: 3.72s
+Tokens: 7,218 in / 1,157 out
+============================================================
+
+Patient Information  
+The patient is a 108-year-old female, Amee Reva Goyette, residing at 668 Quigley Mill Apt 10, Beverly, Massachusetts. She is a previously healthy individual with a complex medical history including hypertension, ischemic heart disease, history of myocardial infarction, chronic kidney disease progressing to end-stage renal disease, and a history of renal transplant. She has a long-standing history of stress and social isolation. She is not currently on any medications and reports no known allergies. She has a history of smoking, approximately half a pack to a pack per day, and consumes alcohol in moderation, primarily on weekends.
+
+Chief Complaint  
+The patient presents with a two-week history of intermittent chest pain localized to the left side. The pain is described as sharp, lasting 20 to 30 minutes per episode, and occurring two to three times per week. It is not associated with radiation, dyspnea, nausea, vomiting, or diaphoresis. The pain is not exacerbated by physical activity and is not relieved by over-the-counter analgesics or antacids.
+
+History of Present Illness  
+The patient reports that the chest pain began approximately two weeks ago and has remained stable in frequency and intensity. The pain is localized to the left side of the chest and is described as sharp. It is not constant, occurring in episodes lasting 20 to 30 minutes and resolving spontaneously. The patient denies any radiation of the pain to other areas. She has attempted to manage the pain with over-the-counter medications such as Advil, Tylenol, and Tums, but these have not provided relief. The episodes are not associated with exertion or physical activity, and she has not experienced any associated symptoms such as shortness of breath, nausea, or vomiting. The patient reports that she has not had any recent illnesses or exposures. She is concerned about the chest pain due to a family history of heart disease, specifically her father having a heart attack at age 60.
+
+Review of Systems  
+Constitutional: The patient denies fever, chills, or unintentional weight loss.  
+Respiratory: No dyspnea, cough, or sputum production.  
+Cardiovascular: No palpitations, syncope, or edema.  
+Gastrointestinal: No nausea, vomiting, or heartburn.  
+Neurological: No dizziness or syncope.  
+Musculoskeletal: No myalgias or arthralgias.  
+Other: No rash, headache, or visual changes.
+
+Allergies  
+No known drug or food allergies.
+
+Past Medical History  
+The patient has a significant medical history including hypertension, ischemic heart disease, history of myocardial infarction, chronic kidney disease progressing to end-stage renal disease, history of renal transplant, type 2 diabetes mellitus, metabolic syndrome, and a history of breast cancer. She also has a history of stress, social isolation, and reports of violence in the environment. She has undergone multiple medication reviews and has a history of polyps and gingivitis.
+
+Surgical History  
+No information available.
+
+Social History  
+The patient has a history of smoking, approximately half a pack to a pack per day, and consumes alcohol in moderation. She reports a history of significant personal stress due to a recent separation from her husband two years ago. She is currently not employed and reports limited social contact.
+
+Family History  
+The patient has a family history of heart disease, specifically her father had a heart attack at age 60. There is no known family history of cancer, diabetes, or stroke.
+
+Current Medications  
+The patient is not currently on any prescribed medications and has not been on regular medications in the past. She has used over-the-counter medications including Advil, Tylenol, and Tums for pain relief without benefit.
+
+Objective  
+Vital signs were not available in the OpenEMR record. Physical examination findings were not provided in the transcript or OpenEMR extract.
+
+Laboratory Results  
+Recent laboratory results include normal potassium, sodium, chloride, glucose, creatinine, urea nitrogen, and calcium levels. Hematologic parameters such as hemoglobin, hematocrit, red blood cell count, and platelet count were within normal limits. No evidence of anemia or infection was noted. Additional tests including the Patient Health Questionnaire (PHQ-2) showed a score of 2, indicating minimal depressive symptoms.
+
+Imaging  
+No recent imaging studies were available in the OpenEMR extract.
+
+Assessment  
+The patient presents with intermittent, sharp, left-sided chest pain of two weeks duration. The pain is not associated with radiation, dyspnea, nausea, or vomiting. Given the patient's age, family history of heart disease, and the presence of ischemic heart disease in her past medical history, it is important to consider cardiac causes for her symptoms. However, the pain does not appear to be exertional or associated with typical anginal features. Other potential etiologies such as musculoskeletal pain, gastrointestinal causes, or anxiety-related chest discomfort should also be considered.
+
+Plan  
+The patient will be referred to her family physician for further evaluation, including a thorough physical examination and appropriate diagnostic testing such as an electrocardiogram (ECG), chest X-ray, and possibly a stress test or cardiac enzymes if indicated. A follow-up appointment is recommended for further assessment and to discuss the next steps in her care. The patient should be advised to seek immediate medical attention if she experiences any new or worsening symptoms, particularly chest pain that is prolonged, associated with shortness of breath, or accompanied by other concerning features. Smoking cessation counseling and stress management strategies should also be discussed during the follow-up visit.

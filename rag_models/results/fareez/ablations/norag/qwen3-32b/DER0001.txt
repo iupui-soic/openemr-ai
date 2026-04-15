@@ -1,0 +1,40 @@
+Model: qwen/qwen3-32b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:20:43
+Time: 5.35s
+Tokens: 8,358 in / 1,520 out
+============================================================
+
+Patient Information  
+The patient is a 45-year-old male with a known history of type 2 diabetes mellitus, hyperlipidemia, and a family history of diabetes and hypertension. He is currently unemployed and lives in town, with children whom he sees every two weeks. The patient reports a history of sinus surgery for chronic sinusitis during his teenage years. He has a documented allergy to penicillin, with a history of anaphylactic reaction as a child. He occasionally smokes tobacco, approximately two packs per week during times of stress, and consumes alcohol, averaging about three drinks per day, primarily on weekends. He is currently taking rosuvastatin for hyperlipidemia and multiple oral hypoglycemic agents for diabetes, including metformin and sitagliptin. He is not on insulin therapy.
+
+Chief Complaint  
+The patient presents with a painful, swollen, and erythematous lesion on the right ankle that has been present for approximately one week and has worsened over the past 24 hours. He reports that the lesion has become more painful, swollen, and has developed a purulent discharge, with associated localized warmth and tenderness. He also reports subjective fevers for the past 12 hours and generalized fatigue and malaise over the past two weeks.
+
+History of Present Illness  
+The patient reports a progressive rash on his right ankle that has been present for about a week but has become increasingly painful and swollen over the past 24 hours. The lesion is described as erythematous, swollen, and "mean-looking," with surrounding redness and the presence of scabs that have now opened into a wound. He notes that the area is tender to touch and becomes more painful with movement. The lesion is warm to the touch and has begun to drain a white, purulent exudate. He reports subjective fevers for the past 12 hours, with no measured temperature at home. He denies any recent trauma or insect bites to the area. The patient has a history of diabetic foot ulcers and reports currently having an ulcer on his left heel, which he states is stable. He also mentions a history of occasional ulcers and foot injuries, but this is the first time he has encountered a lesion of this nature. He reports generalized fatigue, increased hunger, and weight gain over the past few weeks, which he attributes to stress and lifestyle factors. He has not been monitoring his blood glucose levels recently and reports an A1C of approximately 9% at his last known check. He has not sought medical attention for this issue until now.
+
+Past Medical History  
+The patient has a long-standing history of type 2 diabetes mellitus, with associated complications including diabetic nephropathy and peripheral neuropathy. He has a history of chronic kidney disease, progressing from stage 1 to stage 4, and has undergone a renal transplant in the past, with a current history of end-stage renal disease. He has a history of essential hypertension, hyperlipidemia, and coronary artery disease, including a prior myocardial infarction and ongoing management with antiplatelet therapy. He has a history of sinus surgery for chronic sinusitis and has undergone multiple dental procedures, including treatment for gingivitis and dental caries. He has a documented history of stress, social isolation, and limited social contact, as well as a history of intimate partner abuse. He has a history of alcohol misuse and has been classified as having unhealthy alcohol drinking behavior in the past.
+
+Medications  
+The patient is currently prescribed rosuvastatin for hyperlipidemia and multiple oral hypoglycemic agents for diabetes, including metformin and sitagliptin. He is not currently on insulin therapy. He also takes acetaminophen and nonsteroidal anti-inflammatory drugs (NSAIDs) for chronic back pain. He has a documented allergy to penicillin and avoids all penicillin-containing medications.
+
+Allergies  
+The patient has a documented allergy to penicillin, with a history of anaphylaxis as a child. He also reports a sensitivity to grass pollen and lisinopril, though the latter is not confirmed in the electronic health record.
+
+Family History  
+The patient has a strong family history of diabetes mellitus, hypertension, and hyperlipidemia on his mother’s side. His father’s side of the family is described as relatively healthy, though one aunt has a history of lung cancer, which is associated with a history of tobacco use.
+
+Social History  
+The patient is currently unemployed and reports being partially employed, as he is an accountant by trade. He lives in town and sees his children every two weeks. He reports occasional tobacco use, approximately two packs per week during times of stress, and consumes alcohol, averaging about three drinks per day, primarily on weekends. He reports a sedentary lifestyle and limited physical activity. He lives alone and reports limited social contact, with a history of social isolation.
+
+Review of Systems  
+The patient denies any recent upper respiratory symptoms, chest pain, dyspnea, or changes in bowel or bladder habits. He reports generalized fatigue and malaise over the past two weeks but denies any specific new symptoms outside of the right ankle lesion. He denies any new neurological symptoms, visual changes, or changes in appetite or sleep. He reports a history of peripheral neuropathy, with decreased sensation in the feet over the years. He denies any recent falls or injuries. He reports a history of stress and ongoing life challenges but does not report any new psychiatric symptoms. He denies any new rashes or lesions elsewhere on the body.
+
+Physical Examination  
+Physical examination findings are pending as the transcript does not include the physical examination performed by the provider. The patient is scheduled to undergo a detailed physical examination with a focus on the right ankle lesion to assess for signs of infection, including erythema, warmth, swelling, and purulent discharge. Additional evaluation of the left heel ulcer will also be performed to ensure it remains stable and uncomplicated. A general physical examination will be conducted to assess for any other signs of systemic illness or complications related to his diabetes and other comorbidities.
+
+Assessment and Plan  
+The patient presents with a concerning lesion on the right ankle, consistent with cellulitis, given the erythema, warmth, swelling, and purulent discharge. Given his history of diabetes mellitus and peripheral neuropathy, there is an increased risk of infection and delayed healing. The presence of subjective fevers and generalized fatigue further supports the possibility of a localized infection with systemic involvement. The patient’s poor glycemic control, as evidenced by a reported A1C of approximately 9%, places him at higher risk for complications. The plan includes obtaining a detailed physical examination, including assessment of the right ankle lesion and left heel ulcer. Laboratory evaluation will include a complete blood count with differential, comprehensive metabolic panel, and blood glucose level. A wound culture may be obtained from the right ankle lesion to guide antibiotic therapy. The patient will be started on appropriate empiric antibiotic therapy for cellulitis, with consideration for coverage of both gram-positive and gram-negative organisms. He will be advised to maintain strict glycemic control, with follow-up with his primary care provider for diabetes management. He will also be referred for wound care and diabetic foot evaluation if not already under care. The patient will be educated on the importance of foot care, infection prevention, and the need for regular monitoring of his diabetes and associated complications. Follow-up will be arranged for reassessment of the lesion and overall condition.

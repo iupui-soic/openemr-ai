@@ -1,0 +1,195 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:29:27
+Time: 3.69s
+Tokens: 8,884 in / 2,282 out
+============================================================
+
+**Patient Information**  
+**Name:** Amos Crona  
+**DOB:** 01 Jan 1934 (92 y/o)  
+**Sex:** Male  
+**Address:** 201 O’Conner Glen, Wayland, Massachusetts 00000  
+**Occupation:** Bus driver (full‑time)  
+**Living situation:** Lives at home with parents  
+
+---
+
+## SOAP Note  
+
+### Subjective  
+
+**Chief Complaint:**  
+Chest pain.  
+
+**History of Present Illness:**  
+The patient reports a 30‑minute episode of left‑sided chest pressure described as a “dull, pressing” sensation that began suddenly while shovelling snow. He rates the pain 7/10. The pain has not radiated to the arms, jaw or back, and it has worsened with movement and when lying down. No relief with rest or position change. He also reports shortness of breath that has been present since yesterday, a mild fever (38 °C), and a sensation of a racing heart that he notes occurs during exertion but is present at rest now. No cough, sputum, or chest trauma except a rugby tackle yesterday, which he says was tolerated without acute discomfort.
+
+**Associated Symptoms (Positive):**  
+- Dyspnea (onset yesterday)  
+- Fever (38 °C)  
+- Tachycardia (subjective “heart racing”)  
+
+**Associated Symptoms (Negative):**  
+- No chest pain radiation  
+- No diaphoresis, nausea, vomiting, or syncope  
+- No palpitations beyond “racing” sensation  
+- No edema in lower extremities  
+- No dizziness, rash, sore throat, or cough  
+- No recent travel or sick contacts  
+
+**Review of Systems:**  
+
+| System | Findings |
+|--------|----------|
+| Constitutional | Fever 38 °C; no chills, weight loss, or fatigue |
+| Cardiovascular | Chest pressure, subjective tachycardia; no palpitations beyond racing sensation |
+| Respiratory | Dyspnea; no cough, wheeze, or chest tightness |
+| Gastrointestinal | No nausea, vomiting, or abdominal pain |
+| Neurologic | No dizziness or syncope |
+| Musculoskeletal | No recent trauma aside from rugby tackle |
+| Skin | No rash |
+| Endocrine | No known diabetes (no oral glucose or insulin reported) |
+| Hematologic | No bleeding or bruising |
+| Psychiatric | None reported |
+
+**Allergies:**  
+None known.  
+
+**Past Medical History:**  
+- Hypertension (controlled on lisinopril)  
+- Hyperlipidemia (controlled on rosuvastatin)  
+- Chronic kidney disease (stage III per most recent labs)  
+- Obesity (BMI ≈ 31)  
+- Chronic obstructive pulmonary disease (history of smoking)  
+- Past mild GERD (not on medication)  
+
+**Past Surgical History:**  
+None reported.  
+
+**Family History:**  
+No known premature coronary artery disease, hypertension, or diabetes in first‑degree relatives.  
+
+**Social History:**  
+- Tobacco: Smokes ~½‑to‑1 pack daily for 20 years.  
+- Alcohol: None.  
+- Recreational drugs: Past methamphetamine use (last use 6 days ago; ~2‑3 times/month over 7 years).  
+- Exercise: Bus driving (sedentary) with occasional running on Sundays.  
+- Living situation: Lives at home with parents.  
+
+**Current Medications (home):**  
+- Lisinopril 10 mg PO daily  
+- Rosuvastatin 20 mg PO daily  
+- Multivitamin daily  
+- Nitroglycerin 0.4 mg sublingual spray PRN (available)  
+- (Patient also reports taking Oxycodone occasionally; not currently prescribed)
+
+---
+
+### Objective  
+
+**Vital Signs (current):**  
+- Temperature: 38.0 °C (100.4 °F)  
+- Heart Rate: 102 bpm (subjective “racing”)  
+- Blood Pressure: 155/92 mmHg (self‑measured at home)  
+- Respiratory Rate: 20 breaths/min  
+- SpO₂: 95 % on room air  
+- Weight: 85 kg (BMI 30.9)  
+
+**Physical Examination:**  
+- **General:** Alert, in mild distress due to chest discomfort.  
+- **HEENT:** No jugular venous distension.  
+- **Cardiac:** Regular rhythm, no murmurs, rubs, or gallops.  
+- **Pulmonary:** Clear to auscultation bilaterally, no wheezes or crackles.  
+- **Abdomen:** Soft, non‑tender, no hepatosplenomegaly.  
+- **Extremities:** No edema or cyanosis.  
+- **Skin:** Warm, no rashes.  
+
+**Laboratory Results (most recent):**  
+- **CBC:** WBC 8.1 × 10³/µL, Hgb 13.5 g/dL, Hct 40.5 %, Platelets 250 × 10³/µL.  
+- **Basic Metabolic Panel:** Na 141 mmol/L, K 5.0 mmol/L, Cl 101 mmol/L, CO₂ 28 mmol/L, BUN 17 mg/dL, Creatinine 0.72 mg/dL (eGFR ≈ 88 mL/min).  
+- **Lipid Panel:** Total Cholesterol 185 mg/dL, LDL 141 mg/dL, HDL 48 mg/dL, Triglycerides 110 mg/dL.  
+- **Liver Function:** AST 22 U/L, ALT 20 U/L.  
+- **Cardiac Enzymes:** Troponin T <0.01 ng/mL (pending repeat), CK‑MB 8 ng/mL (normal).  
+- **Inflammatory Markers:** CRP 2.1 mg/L (slightly elevated).  
+
+**Imaging:**  
+- **12‑lead ECG:** Sinus rhythm, rate 102 bpm, no ST‑segment elevations or depressions, no new Q waves.  
+
+---
+
+### Assessment  
+
+1. **Acute Coronary Syndrome – Unstable Angina (probable)**  
+   - Sudden onset, pressure‑type pain, worsened by exertion and lying down, no radiation, normal ECG but high risk profile (age, HTN, hyperlipidemia, smoking, CKD).  
+2. **Exertional Myocardial Ischemia** (possible)  
+3. **Possible Acute Pulmonary Embolism** (less likely; no pleuritic pain, normal SpO₂, normal ECG).  
+4. **Atypical Chest Pain (musculoskeletal)** – considered but less likely given dyspnea, fever, tachycardia.  
+5. **Risk Factors:**  
+   - Hypertension, hyperlipidemia, smoking, chronic kidney disease stage III, chronic obesity, methamphetamine use (last use 6 days ago).  
+
+**Secondary Diagnoses:**  
+- Hypertension (stage II)  
+- Hyperlipidemia (moderate‑high risk)  
+- Chronic kidney disease, stage III  
+- Chronic obstructive pulmonary disease (history)  
+- Obesity  
+- Chronic tobacco use  
+
+---
+
+### Plan  
+
+1. **Immediate Management (in‑clinic):**  
+   - Aspirin 325 mg chew (enteric coated).  
+   - Nitroglycerin 0.4 mg sublingual spray PRN for chest pain (2–3 doses spaced 5 min; repeat if pain persists).  
+   - Morphine 2 mg IV slow infusion if pain remains >4/10 after nitro.  
+   - Oxygen 2–4 L/min by nasal cannula if SpO₂ <94 %.  
+
+2. **Cardiac Monitoring:**  
+   - Continuous telemetry for 24 h.  
+   - Repeat ECG in 1 h, then 6 h.  
+
+3. **Laboratory Follow‑up:**  
+   - Serial troponin I/T at 0, 3, and 6 h.  
+   - CBC, BMP, lipid profile, CRP repeat in 24 h.  
+
+4. **Medications:**  
+   - Continue lisinopril 10 mg daily.  
+   - Continue rosuvastatin 20 mg daily.  
+   - Start metoprolol succinate 25 mg PO BID (increase to 50 mg BID once tolerated).  
+   - Consider adding clopidogrel 75 mg daily after cardiology consult.  
+   - Continue current multivitamin.  
+
+5. **Lifestyle & Risk Factor Modification:**  
+   - Smoking cessation counseling; offer nicotine replacement therapy or varenicline.  
+   - Discuss methamphetamine abstinence support; refer to substance‑use program.  
+   - Weight‑management counseling; low‑sodium diet, Mediterranean diet.  
+   - Encourage regular low‑impact aerobic activity (e.g., walking, biking).  
+
+6. **Referral:**  
+   - Cardiology urgent consult for potential coronary angiography/PCI.  
+   - Consider nephrology follow‑up for CKD management.  
+
+7. **Disposition:**  
+   - Admit to telemetry unit for monitoring and serial troponins.  
+   - If troponin remains negative and ECG stable, consider discharge with 24‑h observation; otherwise proceed to cath lab if indicated.  
+
+8. **Patient Education:**  
+   - Explain chest pain as possible heart attack; signs of worsening (worsening pain, nausea, diaphoresis, vomiting, light‑headedness).  
+   - Instruct on proper nitro dosing and when to seek help.  
+   - Discuss importance of medication adherence and follow‑up.  
+
+9. **Follow‑up:**  
+   - Cardiology appointment within 48 h after discharge.  
+   - Primary care follow‑up within 1 week post‑discharge.  
+   - Social work evaluation for smoking cessation program and drug use support.  
+
+---
+
+**Signature**  
+Dr. ____________  
+[Date]  
+
+---

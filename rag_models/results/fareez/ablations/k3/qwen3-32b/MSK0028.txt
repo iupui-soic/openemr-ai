@@ -1,0 +1,100 @@
+Model: qwen/qwen3-32b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 03:42:14
+Time: 4.00s
+Tokens: 10,438 in / 1,199 out
+============================================================
+
+Patient Information:
+
+The patient is a 53-year-old male, Abdul Gorczany, residing in Springfield, Massachusetts. He is employed as an accountant and lives with his wife and daughter. The patient has a history of pre-diabetes and has previously experienced shoulder pain requiring physiotherapy, but no prior imaging was performed. He denies any known allergies, tobacco use, or recreational drug use. His past medical history includes chronic kidney disease, hypertension, hyperlipidemia, and a history of patellar tendon rupture. He is currently taking simvastatin for hyperlipidemia and has several other medications listed in his OpenEMR record, though none are currently relevant to his current complaint.
+
+Chief Complaint:
+
+The patient presents with acute onset of severe right upper arm pain, involving the shoulder and elbow, which began the previous day following a weight training session. The pain is described as sharp and stabbing, localized to the front of the right elbow and shoulder. The patient reports a noticeable swelling and bruising in the affected area, with a visible mass in the biceps region. The pain has not improved with rest, ice, or over-the-counter analgesia and is rated as an 8 to 9 out of 10 in intensity.
+
+History of Present Illness:
+
+The patient reports that the pain began suddenly during a weight training session involving biceps flexion. He recalls a possible popping sensation at the time of injury, followed by immediate onset of sharp pain in the right shoulder and elbow. The pain has persisted since and has not improved. He notes that the pain is localized to the front of the right elbow and shoulder, without radiation. The patient is unable to fully flex his elbow or supinate his forearm due to pain and limited range of motion. There is no history of fever, chills, or systemic symptoms. The patient has not experienced any other joint pain or neurological symptoms. He is currently working from home and may need to take time off due to functional limitations.
+
+Review of Systems:
+
+Constitutional: No fever, chills, or weight loss reported.
+
+Respiratory: No shortness of breath, cough, or wheezing.
+
+Cardiovascular: No chest pain, palpitations, or dizziness.
+
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.
+
+Genitourinary: No dysuria, frequency, or hematuria.
+
+Neurological: No numbness, tingling, or weakness in other areas.
+
+Musculoskeletal: No pain in other joints. The patient notes limited movement in the affected arm, particularly with elbow flexion and supination.
+
+Dermatological: No rashes or changes in skin integrity.
+
+Allergies:
+
+No known drug or food allergies.
+
+Past Medical History:
+
+The patient has a history of chronic kidney disease, hypertension, hyperlipidemia, and a prior patellar tendon rupture. He also has a history of depression, alcoholism, and gingivitis. He has undergone a tonsillectomy in childhood.
+
+Surgical History:
+
+Tonsillectomy performed in childhood.
+
+Social History:
+
+The patient is a non-smoker and denies recreational drug use. He has a history of weight training, which he resumed recently after a period of inactivity. He is currently working from home as an accountant.
+
+Family History:
+
+No known family history of musculoskeletal or autoimmune disorders.
+
+Current Medications:
+
+The patient is currently taking simvastatin for hyperlipidemia. No other medications are relevant to the current complaint.
+
+Objective:
+
+Vital Signs:
+
+Blood pressure: 137/85 mmHg
+Heart rate: 78 bpm
+Respiratory rate: 16 breaths/min
+Temperature: 98.6°F
+Oxygen saturation: 98% on room air
+Weight: Not documented
+Height: 180 cm
+BMI: 27.31
+
+Physical Examination:
+
+The patient is in no acute distress. Examination of the right upper extremity reveals localized swelling and bruising in the anterior aspect of the elbow and shoulder. A visible mass is noted in the biceps region. The patient is unable to fully flex the elbow or supinate the forearm due to pain. There is tenderness to palpation over the biceps tendon. Range of motion of the shoulder is preserved, though movement causes discomfort. No redness or warmth is noted. Neurological examination is unremarkable. No other abnormalities are found on general physical examination.
+
+Labs:
+
+No recent laboratory results are available for this visit. The patient has a history of elevated creatinine and chronic kidney disease, but no acute changes are noted in the current context.
+
+Imaging:
+
+No imaging has been performed yet. The patient is scheduled for an ultrasound of the right upper extremity to evaluate for biceps tendon injury. If necessary, an MRI may be obtained for further evaluation.
+
+Assessment:
+
+Based on the history and physical examination, the most likely diagnosis is a biceps tendon injury, possibly a partial or complete tear of the long head of the biceps tendon. The acute onset of pain following biceps flexion, presence of swelling, bruising, and a visible mass are consistent with this diagnosis. The patient's symptoms are consistent with a musculoskeletal injury rather than a systemic or neurological condition.
+
+Plan:
+
+1. Order an ultrasound of the right upper extremity to evaluate for biceps tendon injury.
+2. If ultrasound is inconclusive or if further detail is needed, schedule an MRI of the right shoulder and elbow.
+3. Prescribe nonsteroidal anti-inflammatory medication (e.g., ibuprofen) for pain and inflammation.
+4. Advise the patient to avoid activities that exacerbate the pain and to apply ice intermittently.
+5. Recommend a follow-up appointment in one week or sooner if symptoms worsen.
+6. Refer to physical therapy for rehabilitation once the acute phase has resolved.
+7. Monitor for any signs of systemic illness or complications.

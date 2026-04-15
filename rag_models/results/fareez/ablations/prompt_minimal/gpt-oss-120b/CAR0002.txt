@@ -1,0 +1,182 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:24:25
+Time: 6.47s
+Tokens: 8,884 in / 2,504 out
+============================================================
+
+**Patient Information**  
+**Name:** Amos Crona **DOB:** 20 Jan 1934 **Sex:** Male **MRN:** 7863 **Address:** 201 O'Conner Glen, Wayland, MA 00000  
+
+---
+
+## Subjective  
+
+**Chief Complaint:**  
+“Chest pain” that began ≈ 30 minutes ago while shoveling the driveway.
+
+**History of Present Illness (HPI):**  
+- **Onset & Timing:** Sudden onset of left‑sided chest pressure while performing moderate‑intensity physical activity (shoveling). Pain has been present continuously for the past 30 minutes and has worsened since onset.  
+- **Quality:** Described as a dull, pressure‑like sensation (“a lot of pressure on my chest”).  
+- **Severity:** 7/10 on a numeric pain scale.  
+- **Location & Radiation:** Localized to the left anterior chest; no radiation to arm, jaw, back, or neck.  
+- **Duration & Course:** Constant since onset; no periods of relief.  
+- **Aggravating Factors:** Movement (walking) and lying supine appear to increase discomfort.  
+- **Alleviating Factors:** None reported.  
+- **Associated Symptoms:**  
+  - Shortness of breath that began shortly after the chest pain started.  
+  - Feeling “hot” with a measured temperature of 38 °C (100.4 °F).  
+  - Palpitations/subjective sense of a faster heart rate (normally only noticed during sports).  
+  - No cough, wheeze, sputum production, hemoptysis, nausea, vomiting, diaphoresis, syncope, dizziness, leg swelling, or recent fever/chills beyond the noted temperature.  
+- **Past Episodes:** No prior similar chest pain.  
+
+**Past Medical History (relevant):**  
+- Ischemic heart disease (CAD) – chronic, ongoing.  
+- Hypertension (essential).  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 1–3 historically; now post‑renal transplant, currently end‑stage renal disease with transplant in 2013).  
+- Diabetes/prediabetes (ongoing).  
+- Metabolic syndrome, obesity (BMI ≈ 31).  
+- Sleep apnea.  
+- Chronic low back, neck, and generalized pain.  
+- Seizure disorder (single seizure history).  
+
+**Past Surgical History:** None reported.  
+
+**Medications (home):**  
+- Lisinopril (ACE‑inhibitor) – antihypertensive.  
+- Rosuvastatin – lipid‑lowering.  
+- Metoprolol succinate 100 mg ER – β‑blocker (cardiac risk reduction).  
+- Nitroglycerin 0.4 mg spray – PRN for chest discomfort.  
+- Multivitamin.  
+- (Other chronic transplant‑related meds listed in the EMR, e.g., tacrolimus, but not directly relevant to the acute presentation.)  
+
+**Allergies:** No known drug allergies.  
+
+**Social History:**  
+- **Tobacco:** Smokes ~½–1 pack per day for ~20 years.  
+- **Alcohol:** None.  
+- **Illicit drugs:** History of crystal methamphetamine use (≈ 2 times/month for the past 7 years; last use 6 days ago).  
+- **Occupation:** City bus driver.  
+- **Living situation:** Resides in a house with parents.  
+- **Exercise:** Runs intermittently (usually Sundays).  
+- **Diet:** Generally balanced but reports occasional dining out.  
+
+**Family History:** No known premature coronary artery disease, myocardial infarction, or cancers reported.  
+
+**Review of Systems (pertinent positives/negatives):**  
+- **Constitutional:** Fever (38 °C); no chills, weight loss, or fatigue.  
+- **Cardiovascular:** Chest pressure, palpitations; no known prior MI, no known valvular disease.  
+- **Respiratory:** Dyspnea on exertion; no cough, wheeze, hemoptysis.  
+- **GI:** No nausea, vomiting, abdominal pain.  
+- **GU:** No edema, no dysuria.  
+- **Neuro:** No dizziness, syncope, focal deficits.  
+- **Skin:** No rashes.  
+
+---
+
+## Objective  
+
+**Vital Signs (most recent):**  
+- Temperature: 38 °C (measured by patient)  
+- Heart Rate: 91 bpm (EMR)  
+- Respiratory Rate: 14 /min (EMR)  
+- Blood Pressure: Not recorded in this encounter (most recent EMR entry missing).  
+- SpO₂: Not documented.  
+- Weight/Height: 168 cm; BMI ≈ 30.97 (obesity).  
+
+**Physical Examination:** *(Limited to information available; no documented exam in transcript.)*  
+- General: Appears mildly uncomfortable due to chest pressure; diaphoretic not reported.  
+- Cardiovascular: No documented murmurs, rubs, or gallops; patient reports feeling “heart beating faster.”  
+- Respiratory: No auscultation notes; no reported dyspnea at rest beyond mild SOB.  
+- Abdomen: Not examined.  
+- Extremities: No lower‑extremity swelling noted.  
+
+**Laboratory Data (most recent values):**  
+- Creatinine: 0.72 mg/dL (within normal limits for a transplanted patient).  
+- Glucose: 84.5 mg/dL.  
+- Electrolytes: Na 141.6 mmol/L, K 4.31–5.03 mmol/L, Cl 101 mmol/L, CO₂ 20.7–28.4 mmol/L.  
+- BUN: 17–19 mg/dL.  
+- Lipids: LDL ≈ 140 mg/dL, total cholesterol ≈ 185 mg/dL.  
+- Liver enzymes: ALT ≈ 22 U/L (normal).  
+- Hematology: No CBC data provided in this encounter.  
+- No cardiac biomarkers (troponin, CK‑MB) reported.  
+
+**Imaging:** None performed yet; pending ECG and possibly chest X‑ray.  
+
+---
+
+## Assessment  
+
+1. **Acute coronary syndrome (unstable angina vs NSTEMI) – high pre‑test probability**  
+   - Classic exertional chest pressure, radiation absent but high‑risk profile (CAD, HTN, hyperlipidemia, smoking, age >65, recent physical exertion).  
+   - Associated dyspnea and mild fever may represent inflammatory component or early myocardial ischemia.  
+
+2. **Differential diagnoses**  
+   - **Musculoskeletal chest pain** (costochondritis, strain from shoveling) – less likely given pressure quality, exertional trigger, dyspnea, and risk factors.  
+   - **Pulmonary embolism** – low suspicion (no leg swelling, no recent travel, no pleuritic pain).  
+   - **Pericarditis** – fever present but no pleuritic pain or pericardial rub.  
+   - **Aortic dissection** – unlikely (pain described as pressure, not tearing; no radiation to back, no hypertension crisis documented).  
+
+3. **Other chronic conditions** – stable hypertension, hyperlipidemia, chronic kidney disease with transplant, sleep apnea, seizure disorder.  
+
+4. **Risk factors** – active tobacco use, recent methamphetamine exposure (possible coronary vasospasm), sedentary lifestyle except intermittent running, obesity.  
+
+5. **Social/behavioral health** – ongoing meth use; needs counseling.  
+
+---
+
+## Plan  
+
+**Immediate ED Management**  
+1. **Cardiac monitoring** – continuous ECG telemetry.  
+2. **12‑lead ECG** – obtain within 10 min; look for ischemic changes.  
+3. **Cardiac biomarkers** – troponin I/T at 0 h, 3 h, and 6 h per protocol.  
+4. **Oxygen** – titrate to maintain SpO₂ ≥ 94 % if hypoxic.  
+5. **Aspirin** – 325 mg chewable PO now, unless contraindicated.  
+6. **Nitroglycerin** – 0.4 mg SL spray q5 min x 3 doses for pain relief (monitor BP).  
+7. **Morphine** – consider only if pain persists after nitroglycerin and patient is hemodynamically stable.  
+8. **Beta‑blocker** – continue home metoprolol; consider IV metoprolol if tachycardic and no signs of heart failure.  
+9. **Anticoagulation** – if STEMI or high‑risk NSTEMI suspected, start UFH or LMWH per protocol after ruling out contraindications.  
+10. **Statin** – ensure high‑intensity statin (rosuvastatin or switch to atorvastatin 80 mg) given ACS.  
+
+**Diagnostic Work‑up**  
+- CBC, BMP (already partially available).  
+- Repeat electrolytes if receiving IV meds.  
+- Chest X‑ray to rule out pulmonary pathology.  
+- Consider CT‑pulmonary angiography only if PE becomes a concern.  
+- Echocardiogram (bedside) to assess wall motion abnormalities if troponin positive.  
+
+**Disposition**  
+- Admit to cardiac observation/step‑down unit for serial ECGs, troponins, and further risk stratification (TIMI/GRACE scores).  
+
+**Medication Reconciliation & Adjustments**  
+- Verify dosing of nitroglycerin spray, metoprolol, lisinopril, rosuvastatin.  
+- Hold any nephrotoxic agents (e.g., NSAIDs).  
+- Ensure tacrolimus levels are therapeutic (transplant team to be consulted).  
+
+**Preventive & Lifestyle Counseling**  
+- **Smoking cessation** – offer nicotine replacement therapy, referral to tobacco cessation program.  
+- **Methamphetamine use** – brief intervention, referral to substance‑use counseling; emphasize cardiovascular risk.  
+- **Diet & Exercise** – low‑sodium, heart‑healthy diet; encourage regular aerobic activity as tolerated.  
+- **Vaccinations** – ensure influenza and COVID‑19 up to date, especially given chronic kidney disease.  
+
+**Follow‑up**  
+- Cardiology outpatient appointment within 7 days post‑discharge.  
+- Primary care follow‑up within 2 weeks for chronic disease management.  
+- Transplant nephrology follow‑up per routine schedule.  
+
+**Patient Education**  
+- Discuss warning signs that require immediate ED return: worsening chest pain, new onset shortness of breath, diaphoresis, syncope, or palpitations.  
+- Review proper use of nitroglycerin spray and aspirin.  
+- Provide printed material on smoking cessation and substance‑use resources.  
+
+**Documentation**  
+- Complete admission note with all above elements.  
+- Order “Chest Pain Protocol” order set to streamline labs, meds, and monitoring.  
+
+---  
+
+*Prepared by: [Physician’s Name], MD*  
+*Date/Time: 14 Apr 2026*

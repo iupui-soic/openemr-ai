@@ -1,0 +1,65 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:57:31
+Time: 2.70s
+Tokens: 13,564 in / 1,001 out
+============================================================
+
+Patient Information  
+A 6‑year‑old male child presented to the pediatric clinic with a 3‑day history of abdominal pain, vomiting, and watery diarrhea. The patient is accompanied by his mother, who reports no known allergies, no prior medical conditions, and up‑to‑date immunizations.
+
+Chief Complaint  
+The child’s mother reports that the child has been experiencing abdominal discomfort, vomiting, and diarrhea for the past several days.
+
+History of Present Illness  
+Three days prior to the visit the child developed abdominal pain, which was described as diffuse and mildly uncomfortable. Two days ago, he began vomiting. He has vomited a total of six times over the last two days, with the initial episodes occurring after meals and the later episodes occurring spontaneously. The vomitus was yellowish in color; the mother noted it did not contain bile or blood. Concurrently, the child developed watery diarrhea, with approximately six to seven loose stools in the past 24 hours. Yesterday, the child’s temperature rose to 38.3 °C (100.9 °F) and he exhibited chills. The child has been quiet, sleeping most of the day, and has not complained of headaches, ear pain, eye pain, nasal congestion, sore throat, cough, shortness of breath, wheezing, chest pain, or urinary symptoms. There are no rashes or skin changes. The mother denies any recent dietary changes or exposure to sick contacts. The child is otherwise healthy, with normal growth and development milestones.
+
+Review of Systems  
+Constitutional: fever (38.3 °C) and chills, no weight loss, no night sweats.  
+Respiratory: no cough, no shortness of breath, no wheezing.  
+Cardiovascular: no chest pain, no palpitations.  
+Gastrointestinal: abdominal pain (diffuse), vomiting (yellowish, 6 episodes), watery diarrhea (6‑7 episodes), no blood.  
+Genitourinary: no dysuria, no frequency.  
+Dermatologic: no rash.  
+Musculoskeletal: no joint or muscle pain.  
+Neurologic: no headache.  
+Psychiatric: no anxiety or behavioral changes reported.  
+
+Past Medical History  
+No prior medical conditions, surgeries, or chronic illnesses reported. No known drug allergies. The child is not taking any medications.
+
+Social History  
+Lives at home with mother, father, and two older siblings. No pets. No smoking or substance use in the household. No recent travel. The mother reports no other family members ill at home.
+
+Family History  
+No known family history of heart disease, lung disease, gastrointestinal disorders (celiac, Crohn’s), or genetic diseases.
+
+Medications  
+The child is not on any regular medications.
+
+Vitals  
+Temperature: 38.3 °C (100.9 °F). Other vital signs were not documented during this encounter.
+
+Physical Examination  
+The physical examination was not documented in the encounter notes. No examination findings are available at this time.
+
+Laboratory Results  
+Laboratory studies have not yet been completed. The provider plans to obtain a COVID‑19 test and basic metabolic panel (electrolytes, renal function) to assess for dehydration and electrolyte disturbance.
+
+Imaging  
+No imaging studies were ordered or performed at this time.
+
+Assessment  
+Acute viral gastroenteritis, likely of infectious etiology. Differential diagnosis includes common viral pathogens (rotavirus, norovirus, adenovirus, enteric adenovirus), bacterial enteritis, and COVID‑19 infection given the gastrointestinal presentation and recent community spread. No evidence of bacterial infection or other organ involvement.
+
+Plan  
+1. Order a rapid COVID‑19 test and send for a comprehensive metabolic panel including electrolytes, BUN/creatinine, and CBC.  
+2. Initiate oral rehydration therapy with an oral rehydration solution; advise the mother to encourage frequent small sips of clear fluids.  
+3. Consider antiemetic therapy (e.g., ondansetron) if vomiting becomes refractory to oral hydration.  
+4. Monitor for signs of dehydration (dry mucous membranes, decreased urine output, lethargy).  
+5. Educate the mother on red‑flag symptoms that warrant immediate return to care: persistent high fever (>39 °C), inability to keep fluids down, bloody stool or vomitus, abdominal rigidity or severe pain, persistent vomiting >24 h, or signs of shock.  
+6. Schedule a follow‑up pediatric visit or telephone check‑in within 48–72 hours to reassess hydration status and symptom progression.  
+7. Continue routine preventive care and immunizations as scheduled.  
+
+The child was discharged home with supportive care instructions, pending laboratory results. The mother was advised to monitor the child closely and seek urgent care if any concerning symptoms arise.

@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 04:23:13
+Time: 6.43s
+Tokens: 9,766 in / 2,654 out
+============================================================
+
+**Patient Information**  
+- **Name:** Abdul Gorczany  
+- **DOB:** 03‑09‑1971 (55 y)  
+- **Sex:** Male  
+- **MRN:** 179  
+- **Encounter Date/Time:** 2024‑09‑09, 02:18 – 02:33 CST  
+- **Provider:** Dr. External Provider  
+
+---
+
+## SOAP NOTE  
+
+### **S – Subjective**
+
+| Element | Details |
+|---|---|
+| **Chief Complaint** | “Sudden sharp pain in the front of my right shoulder and elbow that started yesterday after weight‑training.” |
+| **History of Present Illness** | The patient was performing a biceps‑focused weight‑training exercise (machine “biceps curl” without external weights) when he felt a sudden, stabbing pain localized to the anterior right shoulder and elbow. He does **not** recall an audible “pop,” though he is uncertain. The pain began within 30 minutes of the activity and has persisted unchanged (now 24 h) with a severity of **8‑9/10**. He reports: <br>• Swelling and bruising over the mid‑upper arm (appears as a “mass” that makes the biceps look enlarged). <br>• Marked limitation of elbow flexion and forearm supination; active flexion is painful and limited. <br>• Shoulder range is relatively preserved, though any movement of the upper arm provokes discomfort. <br>• No radiation of pain, no paresthesias, no weakness elsewhere, and no systemic symptoms (fever, chills, weight loss, appetite change, etc.). <br>• Over‑the‑counter ibuprofen provided no relief. Ice and rest have not improved symptoms. |
+| **Review of Systems (pertinent positives/negatives)** | **Constitutional:** No fever, chills, night sweats, weight loss, or fatigue. <br>**Musculoskeletal:** Acute right shoulder/upper arm pain, swelling, bruising, limited elbow flexion & supination. No other joint pain. <br>**Neurologic:** No numbness, tingling, or weakness beyond the limited motion noted. <br>**Cardiovascular/Respiratory/GI/ENT:** All negative (no chest pain, palpitations, dyspnea, cough, sore throat, GI upset, etc.). |
+| **Past Medical History** | • Essential hypertension (on HCTZ, Lisinopril, Amlodipine) <br>• Type 2 diabetes mellitus with micro‑albuminuria & proteinuria (pre‑diabetes noted, but labs show CKD) <br>• Chronic kidney disease – currently stage 4 (eGFR ≈ 85 mL/min/1.73 m² reported, creatinine 2.86 mg/dL) <br>• Hyperlipidemia (on Simvastatin 10 mg) <br>• Major depressive disorder (stable) <br>• History of sepsis, ARDS (remote) <br>• No prior shoulder or elbow surgeries. |
+| **Past Surgical History** | Tonsillectomy (age 10). |
+| **Medications (home)** | Lisinopril 10 mg daily, Hydrochlorothiazide 25 mg daily, Amlodipine 2.5 mg daily, Simvastatin 10 mg nightly, Vitamin B12 injection, Epogen (Epoetin alfa) as needed for CKD, occasional acetaminophen. No NSAIDs on a chronic basis. |
+| **Allergies** | None reported. |
+| **Social History** | Lives with wife & daughter in a condo; works from home as an accountant. Former occasional smoker (high school/college) – none now. No alcohol misuse currently (though “alcoholism” listed historically). No recreational drug use. Engages in weight‑training 1–2 × week (resumed this year). |
+| **Family History** | Non‑contributory for musculoskeletal or autoimmune disease. |
+
+---
+
+### **O – Objective**
+
+| Category | Findings |
+|---|---|
+| **Vital Signs** (recorded 2024‑09‑09) | HR 93 bpm, RR 16 /min, Temp N/A, BP N/A, SpO₂ N/A, Weight N/A, Height 180 cm (BMI 27.3). |
+| **General** | Alert, oriented, in mild distress due to right upper‑arm pain. |
+| **Inspection** | Right upper arm demonstrates localized swelling and ecchymosis over the mid‑biceps region; the area appears slightly bulged compared with the left side. No obvious deformity of the elbow or shoulder. |
+| **Palpation** | Tenderness over the anterior shoulder‑elbow interval and especially over the biceps brachii belly; warmth not appreciably different from contralateral side. |
+| **Range of Motion** | • **Shoulder:** Able to abduct and flex to ~150°, mild discomfort with full elevation. <br>• **Elbow:** Active flexion limited to ~70°–80° with pain; passive flexion limited similarly. Supination markedly reduced and painful. Extension and pronation relatively preserved. |
+| **Strength** | 3/5 elbow flexion against resistance due to pain; otherwise 5/5 in surrounding musculature. No distal neurovascular deficits. |
+| **Neurovascular** | Sensation intact to light touch over the radial, median, ulnar distributions; radial pulse 2+ bilaterally. |
+| **Imaging (pending)** | None performed during this encounter; physician ordered bedside **musculoskeletal ultrasound** of the right biceps tendon with possible subsequent **MRI** if needed. |
+| **Laboratory** | Recent labs (most recent available) show: <br>• Creatinine 2.86 mg/dL, eGFR ≈ 85 mL/min/1.73 m² (consistent with CKD). <br>• Electrolytes within normal limits. <br>• Lipids: LDL ≈ 134 mg/dL, HDL ≈ 36 mg/dL, TG ≈ 161 mg/dL. <br>Other values unremarkable. |
+| **Assessment of Physical Exam** | Findings are consistent with **acute biceps tendon injury** – most likely a **partial‑ or complete tear of the long head of the biceps tendon** given the sudden onset after eccentric loading, localized swelling/“Popeye”‑type bulge, and severe limitation of elbow flexion and supination. No overt shoulder instability or rotator cuff signs noted. |
+
+---
+
+### **A – Assessment**
+
+1. **Right long‑head biceps tendon injury (probable partial/complete tear)** – acute, traumatic, post‑eccentric loading.  
+2. **Hypertension**, well‑controlled on current regimen.  
+3. **Chronic kidney disease, stage 4** (elevated creatinine, proteinuria).  
+4. **Hyperlipidemia** – on low‑dose Simvastatin.  
+5. **Major depressive disorder**, stable.  
+
+*Impression:* The acute presentation, physical findings, and mechanism are classic for a biceps tendon rupture. Imaging is required to differentiate partial versus complete tear and to guide management (conservative vs surgical repair).  
+
+*Risk considerations:* The patient’s CKD limits the use of NSAIDs; his antihypertensive regimen should be maintained.  
+
+---
+
+### **P – Plan**
+
+| Goal | Intervention |
+|---|---|
+| **Diagnostic Confirmation** | • **Right upper‑arm musculoskeletal ultrasound** (high‑resolution) within the next 24 h to evaluate tendon continuity, presence of tendon retraction, and associated hematoma.<br>• If ultrasound is equivocal or suggests a complete tear, obtain a **MRI of the right shoulder/upper arm** (T1/T2 with fat‑sat) for detailed assessment of tendon, muscle, and surrounding structures. |
+| **Pain Control** | • **Acetaminophen 650 mg PO q6h PRN** (max 3 g/day) – safe in CKD.<br>• **Avoid NSAIDs** (renal risk).<br>• If pain remains >7/10 after acetaminophen, consider **short course of low‑dose tramadol 25 mg PO q6h PRN** (monitor for constipation, CNS effects). |
+| **Immobilization & Activity Modification** | • Place the arm in a **slingsack** (or a simple sling) with the elbow flexed to ~90° to reduce tension on the biceps tendon.<br>• Instruct patient to **avoid elbow flexion, supination, and resisted biceps activity** for at least 2 weeks. |
+| **Physical Therapy** | • Once imaging rules out a complete rupture requiring surgical repair, begin **gentle passive ROM** of shoulder and elbow within pain limits, progressing to active‑assisted and then active exercises under PT supervision.<br>• If a complete tear is confirmed and surgical repair is elected, arrange **post‑operative PT** per orthopedic protocol. |
+| **Referral** | • **Orthopedic surgery (sports medicine / shoulder‑elbow)** – for evaluation of need for operative repair, especially if imaging shows complete tear or significant tendon retraction. |
+| **Medication Review** | • Continue antihypertensives (Lisinopril, HCTZ, Amlodipine). <br>• Continue Simvastatin. <br>• Hold **Naproxen** (listed in medication list) given CKD. <br>• Ensure **Vitamin B12** and **Epoetin alfa** are continued per nephrology schedule. |
+| **Laboratory Follow‑up** | • Repeat **serum creatinine & eGFR** in 1 month (baseline for any future medication adjustments). <br>• Lipid panel in 3 months (LDL target <100 mg/dL). |
+| **Patient Education** | • Discuss the nature of biceps tendon injuries, expected healing timeline (4–6 weeks for partial tears, longer if surgery). <br>• Emphasize **ice** (15 min q2‑3 h) for swelling, **elevation**, and **avoidance of heavy lifting**. <br>• Review signs of complications: increasing swelling, worsening pain, fever, numbness/tingling, or loss of hand function – to call clinic/ER immediately. |
+| **Follow‑up** | • **Clinic visit** in **7 days** to review imaging results and reassess pain/ROM.<br>• If imaging shows complete tear and patient elects surgery, schedule orthopedic consult within **1 week**. |
+| **Documentation** | • ICD‑10‑CM codes: <br>  – **S46.011A** – Strain of distal biceps tendon, right arm, initial encounter. <br>  – **I10** – Essential hypertension. <br>  – **N18.4** – Chronic kidney disease, stage 4 (if needed). <br>  – **E78.5** – Hyperlipidemia, unspecified. |
+| **Safety Net** | • Call the clinic or go to the nearest emergency department if: <br> • Pain escalates to >10/10, <br> • New numbness/weakness, <br> • Fever >38 °C, or <br> • Rapid increase in swelling/skin discoloration. |
+
+---  
+
+**Signature:**  
+Dr. External Provider, MD (Electronic Signature)  
+Date: 2024‑09‑09  
+
+---  
+
+*Prepared by:* ChatGPT, MD‑level medical scribe (generated per provider dictation).

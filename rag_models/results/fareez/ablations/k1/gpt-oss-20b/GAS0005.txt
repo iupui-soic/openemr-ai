@@ -1,0 +1,62 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:33:27
+Time: 2.20s
+Tokens: 13,338 in / 867 out
+============================================================
+
+Patient Information  
+The patient is a 6‑year‑old male, brought to the clinic by his mother. No chronic medical conditions, allergies, or prior surgeries are reported. The child is healthy and is meeting developmental milestones appropriate for age. He lives at home with both parents and two older siblings. There is no history of tobacco, alcohol, or illicit drug use in the household, no pets, and no recent travel or exposure to illness outside of school.
+
+Chief Complaint  
+The mother reports that her son has been experiencing abdominal pain, vomiting, and watery diarrhea for the past three days, with fever and chills developing yesterday.
+
+History of Present Illness  
+Three days ago the child began having diffuse abdominal discomfort and became irritable. Two days ago he started vomiting; the first episode was food material, and subsequent episodes were yellowish and non‑bloody. Over the last two days he has vomited a total of six times and has had 6–7 episodes of watery diarrhea. Yesterday, he developed a fever of 38.3 °C accompanied by chills; he was more quiet and slept most of the day. No other symptoms such as headache, ear or eye pain, sore throat, cough, shortness of breath, chest pain, urinary changes, rashes, muscle or joint aches, or loss of taste or smell have been noted. The mother denies any recent dietary changes, exposure to sick individuals, or travel.
+
+Review of Systems  
+
+Constitutional: Fever 38.3 °C, chills, irritability, increased sleep.  
+Respiratory: No cough, congestion, sore throat, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Abdominal pain (diffuse), vomiting (yellow, non‑bloody), watery diarrhea (6–7 times).  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Skin: No rash or lesions.  
+Musculoskeletal: No joint or muscle pain.  
+Neurologic: No headache, dizziness, or altered mental status.  
+Psychiatric: No anxiety or mood changes reported.  
+Endocrine: No symptoms of diabetes.  
+
+Past Medical History  
+No prior medical conditions, surgeries, or hospitalizations. No chronic medications.  
+
+Medications  
+The patient is not currently taking any medications.  
+
+Social History  
+The child resides in a smoke‑free home with parents and siblings. No pets or recent travel. The mother reports no exposure to sick contacts aside from a brief school return last week.  
+
+Family History  
+No known family history of gastrointestinal disease, celiac disease, inflammatory bowel disease, or congenital disorders.  
+
+Physical Examination  
+No physical examination data were documented during this encounter.  
+
+Laboratory Data  
+No laboratory or imaging studies have been obtained for the child at this time.  
+
+Assessment  
+1. Viral gastroenteritis – most consistent with an acute viral illness causing abdominal pain, vomiting, and watery diarrhea.  
+2. Possible SARS‑CoV‑2 infection – given the febrile, gastrointestinal presentation and the mother’s concern about COVID‑19.  
+
+Plan  
+- Order a rapid SARS‑CoV‑2 PCR test; results will guide isolation and infection control measures.  
+- Initiate supportive care: oral rehydration solution (ORS) with electrolytes; encourage small, frequent sips of clear fluids.  
+- Provide anti‑emetic (e.g., ondansetron) if vomiting persists or interferes with hydration.  
+- Monitor vital signs (temperature, pulse, respiration) and hydration status (mucous membranes, skin turgor).  
+- Educate parents on signs of dehydration (dry mouth, decreased urine output, lethargy) and when to seek urgent care.  
+- Discharge instructions include continuing ORS, avoiding solid foods until vomiting improves, and maintaining good hand hygiene.  
+- Follow‑up in 48 hours or sooner if symptoms worsen or if the child exhibits persistent fever > 38.5 °C, dehydration, or inability to retain fluids.  
+
+No imaging or additional laboratory testing is indicated at this time pending COVID‑19 results.

@@ -1,0 +1,54 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:17:48
+Time: 2.25s
+Tokens: 6,417 in / 973 out
+============================================================
+
+Patient Information  
+Name: Amee Reva Goyette  
+Date of Birth: July 9, 1916  
+Sex: Female  
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915  
+
+Chief Complaint  
+The patient presents with intermittent chest discomfort that has been occurring for the past two weeks.  
+
+History of Present Illness  
+The patient reports a sharp, localized pain on the left side of the chest that occurs in episodes lasting approximately 20 to 30 minutes. She has experienced two to three episodes over the two‑week period, with no increase in severity or frequency. She rates the pain at about 4 out of 10 on a pain scale. The pain is not radiating, is not related to exertion, and resolves spontaneously. She has attempted over‑the‑counter analgesics including acetaminophen, ibuprofen, and antacids with no relief. The patient reports no accompanying symptoms such as nausea, vomiting, shortness of breath, fever, chills, or palpitations. She has not noticed any changes in the pattern of the pain with activity, and it has not worsened while driving or at work. She denies any recent travel or sick contacts. The patient attributes the onset of the pain to ongoing personal stress following a separation from her husband two years ago, although she notes that stress has been a chronic issue for several years.
+
+Past Medical History  
+According to the current interview, the patient denies any chronic medical conditions and does not take any prescription medications. However, the electronic health record lists a history of essential hypertension, type 2 diabetes mellitus with chronic kidney disease, prior myocardial infarction, ischemic heart disease, and other related sequelae. The patient has not been on any of the listed medications currently.
+
+Family History  
+The patient reports that her father suffered a myocardial infarction at the age of 60, one year prior to the current presentation. No other family history of cardiac disease or significant medical conditions was reported.
+
+Social History  
+Tobacco: The patient smokes approximately half a pack to a full pack per day and is attempting to quit. Alcohol: She consumes one to two glasses of wine on weekends. Recreational drug use: None reported. Exercise: She engages in running or cycling 3–4 days per week, during which she has not experienced any chest pain. Sleep, diet, and other social behaviors were not discussed in detail.
+
+Review of Systems  
+Constitutional: No fever, chills, or weight changes reported.  
+Cardiovascular: Intermittent chest pain as described; no palpitations, syncope, or edema.  
+Respiratory: No shortness of breath, wheezing, or cough.  
+Gastrointestinal: No nausea, vomiting, or heartburn.  
+Musculoskeletal: No shoulder or arm pain.  
+Neurologic: No dizziness or headache.  
+Psychiatric: Elevated stress due to recent life events.  
+
+Medications  
+The patient is not taking any prescription medications at present. She has used over‑the‑counter acetaminophen, ibuprofen, and antacids for the chest pain with no effect. No known drug allergies were identified.  
+
+Assessment  
+Acute, intermittent, sharp chest pain localized to the left chest without associated symptoms and without evidence of exertional limitation. The presentation is suggestive of a non‑cardiac etiology such as musculoskeletal or anxiety‑related chest discomfort, although the patient’s smoking habit and family history of coronary artery disease raise concern for a cardiac origin. Current evidence does not support a myocardial ischemic event, but a formal evaluation is warranted given the potential risk.  
+
+Plan  
+1. Order an electrocardiogram (ECG) and cardiac enzymes (troponin I/T) to rule out acute coronary syndrome.  
+2. If ECG and troponins are normal, consider a non‑invasive cardiac assessment (e.g., exercise stress test or cardiac CT) to evaluate for underlying coronary disease.  
+3. Refer to primary care physician or cardiology for follow‑up evaluation and management of any identified cardiac pathology.  
+4. Provide counseling on smoking cessation resources, stress management techniques, and moderation of alcohol intake.  
+5. Advise the patient to seek immediate medical attention if chest pain becomes more frequent, severe, or is accompanied by dyspnea, diaphoresis, nausea, or syncope.  
+6. Schedule a follow‑up visit in one week to review test results and reassess symptoms, or sooner if new symptoms arise.  
+
+Disposition  
+The patient was advised to remain alert for worsening symptoms and to follow up according to the plan above. No acute intervention was performed during this visit.

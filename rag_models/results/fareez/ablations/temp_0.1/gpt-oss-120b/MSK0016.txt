@@ -1,0 +1,157 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-04-14 04:05:44
+Time: 10.56s
+Tokens: 11,914 in / 2,434 out
+============================================================
+
+Patient Information  
+Name: Abe Huels  
+Date of Birth: 02 September 1961 (Age 64)  
+Sex: Male  
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000  
+Primary Care Provider: Dr. External Provider  
+
+Chief Complaint  
+Numbness, tingling, and burning sensation in the left hand, present for the past 4–5 months.
+
+History of Present Illness  
+Mr. Huels reports a gradual onset of intermittent numbness, tingling, and a burning pain localized to the left hand that began approximately four to five months ago. Initially the symptoms lasted only a few minutes and resolved with a “flick” of the wrist. Over the past several weeks the episodes have become more frequent and now occur at night, awakening him two to three times. The discomfort is described as a burning pain rated up to 6/10 at its worst. The sensory changes involve the thumb, index finger, middle finger, and partially the ring finger; the little finger is spared. He denies weakness, but notes occasional clumsiness, such as dropping objects and difficulty opening jars or car doors. No similar symptoms are present in the right hand or elsewhere. Over‑the‑counter analgesics (ibuprofen, acetaminophen) have provided minimal relief; avoidance of hand use offers the most benefit. He has not tried cold compresses or topical agents. Physical provocative testing performed during the visit (positive Tinel’s sign at the wrist and positive Phalen’s maneuver) reproduced his symptoms, supporting median nerve compression. He denies associated constitutional symptoms, headache, visual changes, respiratory or cardiovascular complaints, gastrointestinal upset, urinary changes, or skin rash.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Neurologic: Positive for left hand numbness/tingling and burning pain; negative for weakness, gait disturbance, dizziness, headache, or memory changes.  
+Musculoskeletal: No pain, swelling, or deformity in shoulders, elbows, or wrists aside from the described hand symptoms; no generalized joint pain.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Respiratory: No cough, dyspnea, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or rectal bleeding.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Endocrine: Known hypothyroidism, on levothyroxine. No polyuria or polydipsia reported.  
+Psychiatric: PHQ‑2 score 2, GAD‑7 score 4 (minimal depressive or anxiety symptoms).  
+Hematologic/Lymphatic: No easy bruising or bleeding.  
+Skin: No rashes or lesions.  
+Allergic/Immunologic: No known drug allergies; immunizations up to date, receives annual influenza vaccine.
+
+Past Medical History  
+- Hypothyroidism (on levothyroxine)  
+- Obesity (BMI 27.5)  
+- Essential hypertension  
+- Hyperlipidemia  
+- Coronary artery disease with prior coronary artery bypass grafting (2012)  
+- Type 2 diabetes mellitus (prediabetes noted, on insulin therapy)  
+- Chronic kidney disease progressing to end‑stage renal disease; status post renal transplant (2023)  
+- Obstructive sleep apnea (on CPAP)  
+- Metabolic syndrome  
+- Chronic sinusitis  
+- Anemia (stable)  
+
+Surgical History  
+- Coronary artery bypass graft (2012)  
+- Renal transplant (2023)  
+- Appendectomy (2020)  
+- Prior wrist sprain (2019) – resolved  
+
+Social History  
+- Tobacco: Smokes 5–10 cigarettes per day for approximately 10 years; expresses interest in cessation resources.  
+- Alcohol: Consumes wine approximately once per week (≈1 drink).  
+- Illicit drugs: Denies use.  
+- Occupation: Works in a warehouse with repetitive hand motions; reports that work may contribute to symptoms.  
+- Living situation: Resides with husband and two daughters in a house.  
+- Exercise: Reports limited physical activity due to hand discomfort.  
+
+Family History  
+- Father: Hypercholesterolemia.  
+- Grandfather: Stroke in his 70s.  
+- Several relatives with osteoarthritis.  
+- No known familial autoimmune disease or cancer.  
+
+Allergies  
+No known drug allergies.
+
+Current Medications (home)  
+- Levothyroxine (Synthroid) – dose not specified  
+- Simvastatin 10 mg PO daily  
+- Metoprolol succinate 100 mg ER PO daily  
+- Lisinopril 10 mg PO daily  
+- Amlodipine 2.5 mg PO daily  
+- Hydrochlorothiazide 25 mg PO daily  
+- Clopidogrel 75 mg PO daily  
+- Nitroglycerin 0.4 mg spray PRN  
+- Tacrolimus 1 mg extended‑release PO daily (immunosuppression for transplant)  
+- Epoetin alfa (dose not specified) – for anemia of chronic kidney disease  
+- Insulin isophane and regular (dose not specified) – for diabetes  
+- Ferrous sulfate 325 mg PO daily  
+- Naproxen sodium 220 mg PO as needed for pain (though last documented end date 2019, patient reports occasional use)  
+
+Vital Signs (recorded on 31 January 2015)  
+- Heart Rate: 76 beats/min  
+- Respiratory Rate: 14 breaths/min  
+- Blood Pressure: Not recorded at this visit  
+- Temperature: Not recorded  
+- Height: 175 cm  
+- Weight: Not recorded  
+- Body Mass Index: 27.53 kg/m²  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+Extremities: Left hand shows mild decreased bulk of the thenar eminence. No erythema, swelling, warmth, or deformity noted. No tenderness on palpation of the shoulder, biceps, elbows, or wrists bilaterally. Full range of motion of shoulders, elbows, and wrists without pain. Positive Tinel’s sign over the median nerve at the wrist (reproduces tingling in the thumb, index, and middle fingers). Positive Phalen’s maneuver (numbness/tingling after 60 seconds). No motor weakness detected in the hand or forearm. Sensation to light touch reduced in the median nerve distribution of the left hand.  
+Neuro: Cranial nerves II–XII intact. No gait abnormalities.  
+Cardiovascular, Respiratory, Abdomen, Skin, and other systems: No abnormal findings reported during focused exam.  
+
+Laboratory Data (most recent)  
+- Sodium: 142.6 mmol/L (within normal limits)  
+- Potassium: 4.56 mmol/L (within normal limits)  
+- Chloride: 101.7 mmol/L (within normal limits)  
+- BUN: 7.9 mg/dL (first value) and 15 mg/dL (second value) – within normal range  
+- Creatinine: 1.0 mg/dL (within normal limits) – note discrepancy with known ESRD status; likely reflects recent transplant function.  
+- Glucose: 94.3 mg/dL (fasting)  
+- Calcium: 8.74 mg/dL (first) and 9.96 mg/dL (second) – within normal limits  
+- Hemoglobin: 16.5 g/dL (upper normal)  
+- Platelets: 284 ×10³/µL (normal)  
+- PHQ‑2: 2 (negative screen)  
+- GAD‑7: 4 (minimal anxiety)  
+
+Assessment  
+1. **Left Carpal Tunnel Syndrome** – clinical presentation of intermittent numbness, tingling, and burning pain in the median nerve distribution with positive Tinel’s and Phalen’s signs.  
+2. **Hypothyroidism**, stable on levothyroxine.  
+3. **Obesity (BMI 27.5)** – contributing risk factor for median nerve compression.  
+4. **Hypertension**, **Hyperlipidemia**, and **Coronary Artery Disease** – on appropriate medical therapy.  
+5. **Type 2 Diabetes Mellitus**, on insulin therapy; glycemic control appears acceptable.  
+6. **End‑Stage Renal Disease with functioning renal transplant**, on tacrolimus and epoetin alfa.  
+7. **Obstructive Sleep Apnea**, on CPAP.  
+8. **Tobacco use disorder** – 5–10 cigarettes/day for 10 years.  
+
+Plan  
+- **Conservative management of carpal tunnel syndrome**:  
+  * Advise activity modification at work; incorporate frequent breaks and avoid prolonged wrist flexion.  
+  * Recommend a prefabricated wrist splint to be worn nightly and during activities that provoke symptoms.  
+  * Continue NSAID therapy (e.g., naproxen 220 mg PO BID with food) as needed for pain, monitoring renal function given transplant status.  
+  * If symptoms persist after 4–6 weeks, consider a single corticosteroid injection into the carpal tunnel.  
+  * Referral to occupational therapy for ergonomic education and splint fitting.  
+  * If no improvement after 8–12 weeks of conservative therapy, order nerve conduction studies/electromyography to confirm severity and discuss surgical release.  
+
+- **Risk factor modification**:  
+  * Offer smoking cessation counseling and referral to the tobacco cessation program; discuss nicotine replacement or pharmacotherapy as appropriate.  
+  * Encourage weight reduction through diet and low‑impact exercise compatible with hand symptoms.  
+  * Reinforce adherence to antihypertensive, lipid‑lowering, and diabetic regimens; schedule routine labs to monitor renal function, electrolytes, and glycemic control.  
+
+- **Medication review**:  
+  * Verify current dose of levothyroxine and adjust based on recent TSH (not available).  
+  * Ensure appropriate dosing of tacrolimus and monitor trough levels per transplant protocol.  
+  * Continue current antihypertensive and antiplatelet therapy.  
+
+- **Follow‑up**:  
+  * Return to clinic in 4–6 weeks for reassessment of carpal tunnel symptoms and review of any side effects from NSAIDs.  
+  * Earlier return if symptoms worsen, develop weakness, or night pain becomes severe.  
+  * Routine follow‑up for chronic conditions as per primary care schedule; coordinate with transplant team for renal function monitoring.  
+
+- **Patient Education**:  
+  * Discuss the nature of carpal tunnel syndrome, expected course with conservative therapy, and signs that would warrant urgent evaluation (e.g., progressive weakness, muscle atrophy).  
+  * Provide written instructions on splint use, ergonomic hand positioning, and over‑the‑counter pain management.  
+  * Offer resources for smoking cessation and nutrition counseling.  
+
+No further imaging is indicated at this time.  
+
+Prepared by: Dr. External Provider  
+Date: 20 April 2024

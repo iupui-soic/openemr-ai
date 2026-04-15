@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-20b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:34:20
+Time: 2.13s
+Tokens: 11,202 in / 926 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951  
+Age: 75 years  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Patient presents to the family clinic with a three‑day history of a constant sore throat accompanied by intermittent feverish sensations and chills.
+
+History of Present Illness  
+The patient reports that the sore throat began three days prior to presentation. She has experienced a feverish feeling for the past two days, with intermittent spikes of temperature and chills. No objective temperature measurement was taken. She describes the sore throat as constant, worse with swallowing solids and occasionally liquids, particularly cold items. She denies cough, wheezing, shortness of breath, or respiratory distress. The patient has noticed tender “lumps” in the neck consistent with cervical lymphadenopathy but no generalized swelling elsewhere. She has not experienced nausea, vomiting, abdominal pain, diarrhea, or constipation. She reports increased fatigue and appetite suppression due to throat discomfort, though she has maintained a normal sleep pattern of approximately seven to eight hours per night.
+
+Review of Systems  
+Constitutional: Feverish sensations, chills, fatigue.  
+Respiratory: No cough, no dyspnea, no chest pain.  
+Cardiovascular: No palpitations, no chest pain.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation.  
+Dermatologic: No rash, no skin changes.  
+Neurologic: No headache, no dizziness.  
+Urinary: No changes in urination.  
+Psychosocial: No anxiety or depression reported.  
+
+Past Medical History  
+- Crohn’s disease, diagnosed last year.  
+- No prior infections such as recent cold.  
+- No surgeries except a colonoscopy performed last year.  
+- No other chronic conditions noted in the current encounter.  
+
+Social History  
+- Lives in an apartment with parents and younger brother.  
+- Non‑smoker.  
+- Rarely consumes alcohol; abstains due to Crohn’s disease.  
+- Recreational activity: swimming; no contact sports.  
+- No illicit drug use.  
+- No recent travel or exposure to sick contacts.  
+
+Family History  
+- Both parents have a history of inflammatory bowel disease (Crohn’s disease and ulcerative colitis).  
+- Asthma and eczema present in family members.  
+- No family history of cardiovascular disease, diabetes, or cancer noted.  
+
+Current Medications  
+- Sulfasalazine (dose not specified).  
+No other medications were reported at this visit.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Physical Examination  
+No examination findings were documented in the encounter transcript.  
+
+Labs  
+No laboratory studies were obtained during this visit. Pending investigations include:  
+- SARS‑CoV‑2 nucleic acid test (nasopharyngeal swab).  
+- Epstein–Barr virus serology (EBV antibody panel).  
+
+Assessment  
+1. Viral pharyngitis (acute viral sore throat) – most likely etiology given the gradual onset, lack of cough, and presence of cervical lymphadenopathy.  
+2. Possible infectious mononucleosis – considered due to lymphadenopathy and systemic symptoms; pending EBV serology.  
+3. COVID‑19 infection – ruled out pending PCR test; patient advised to self‑isolate until results are available.  
+
+Plan  
+- Order SARS‑CoV‑2 PCR test and advise patient to self‑isolate until results are returned, with a return visit or telehealth follow‑up within 48–72 hours.  
+- Order EBV serology to evaluate for infectious mononucleosis.  
+- Symptomatic treatment: acetaminophen or ibuprofen for fever and pain; warm saltwater gargles; adequate hydration; soft diet to ease swallowing.  
+- Continue current Crohn’s disease therapy with sulfasalazine.  
+- Counsel patient on hand hygiene, avoiding contact with others while symptomatic, and monitoring for worsening symptoms such as persistent high fever, difficulty breathing, or chest pain.  
+- Follow‑up: return to clinic or telehealth in 48–72 hours to review test results and reassess clinical status.  
+
+Disposition  
+Patient advised to remain in self‑isolation, monitor temperature and symptom progression, and seek immediate care if symptoms worsen or new concerning symptoms develop.

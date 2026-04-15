@@ -1,0 +1,29 @@
+Model: qwen/qwen3-32b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:46:08
+Time: 2.76s
+Tokens: 10,846 in / 679 out
+============================================================
+
+Patient Information:  
+The patient is a 39-year-old male presenting with acute onset of left-sided chest pain. He reports the pain started last night and has become sharper over the past 8 hours. The pain is described as sharp, constant, and worsened by lying down and deep breathing. He denies any radiation of the pain. The patient also reports associated symptoms of lightheadedness, trouble breathing, and a sensation of a racing heart. He denies fever, chills, nausea, vomiting, cough, hemoptysis, abdominal pain, urinary or bowel symptoms. He notes a slight swelling in his neck but no pain. There is no history of trauma to the chest or back. The patient has no prior history of similar episodes.  
+
+The patient lives alone in an apartment and works as an accountant. He has a 10- to 15-year history of smoking one pack of cigarettes daily and occasionally uses cannabis, approximately 5 milligrams per week. He consumes about 10 alcoholic drinks per week. He exercises every other day by running for 30 minutes and reports eating out for lunch but attempting to eat healthy dinners.  
+
+Family history includes a father who had a heart attack at age 45 and a history of cholesterol problems. No history of stroke, cancer, or other significant medical conditions in the family is reported.  
+
+Past Medical History:  
+The patient has no documented prior medical conditions, surgeries, or hospitalizations. No known allergies to medications. Immunizations are reported to be up to date.  
+
+Social History:  
+The patient is a current smoker with a 10- to 15-year history of one pack per day. He occasionally uses cannabis and consumes alcohol approximately 10 drinks per week. No history of illicit drug use or intravenous drug use.  
+
+Objective Findings:  
+Vital signs were not recorded during this visit. Physical examination findings were not detailed in the transcript. Laboratory results from the electronic health record (OPENEMR) show normal electrolyte levels, glucose, creatinine, and other routine metabolic parameters. No acute abnormalities were noted in the most recent lab results.  
+
+Assessment:  
+The patient presents with acute, sharp, left-sided chest pain that is exacerbated by deep breathing and lying down. The associated symptoms of dyspnea, lightheadedness, and palpitations raise concern for a possible cardiac or pulmonary etiology. Given the patient’s age and lack of prior medical history, the differential diagnosis includes pericarditis, musculoskeletal pain, or possibly an early cardiac event. The presence of a family history of early-onset coronary artery disease and the patient’s smoking history further support the need for a thorough cardiac evaluation.  
+
+Plan:  
+The patient should be evaluated with an electrocardiogram (ECG) and cardiac enzymes to rule out acute myocardial infarction or pericarditis. A chest X-ray may be considered to assess for pulmonary causes. Further evaluation may include a stress test or echocardiogram depending on initial findings. The patient should be advised to avoid activities that exacerbate the pain and to seek immediate medical attention if symptoms worsen. A follow-up appointment is recommended within 24–48 hours to review test results and reassess the clinical status. The patient should also be advised to consider smoking cessation and to discuss potential cardiovascular risk factors with his provider.

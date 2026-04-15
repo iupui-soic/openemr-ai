@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-20b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:32:03
+Time: 3.26s
+Tokens: 10,529 in / 1,182 out
+============================================================
+
+Patient Information  
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928  
+Sex: Male  
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of worsening cough, sputum production, shortness of breath, fever, and right‑sided chest pain.
+
+History of Present Illness  
+Mr. Schneider reports that approximately three days ago he began to feel unwell, developing a cough that has increased in frequency to roughly two episodes per hour. He notes the sputum is dark greenish‑yellow, and the cough has become more productive. He also experiences sharp pain on the right side of his chest and abdomen that worsens with coughing or deep inspiration. The pain is not activity‑related and has not been present before this episode. His temperature today measures 38.6°C, and he reports feeling hot and having chills. No recent travel, sick contacts, or new exposures are identified. He has not taken any medications other than over‑the‑counter acetaminophen and ibuprofen for mild discomfort; these provided only transient relief. He denies any positional aggravation of his cough or pain.
+
+Review of Systems  
+Constitutional: Fever (38.6°C), chills, malaise.  
+Respiratory: Persistent cough with greenish‑yellow sputum, dyspnea, chest pain on coughing, no wheezing.  
+Cardiovascular: No palpitations, chest discomfort aside from coughing pain.  
+Gastrointestinal: No abdominal pain, nausea, or vomiting.  
+Neurologic: No headaches or dizziness.  
+Musculoskeletal: No joint pain.  
+Allergic/Immunologic: No drug allergies reported.  
+Psychiatric: No anxiety or depression reported at this visit.  
+
+Past Medical History  
+- Type 2 diabetes mellitus managed with insulin, metformin, and an SGLT‑2 inhibitor.  
+- Chronic kidney disease stage 4 (history of diabetic nephropathy).  
+- Essential hypertension treated with amlodipine.  
+- Long‑standing smoking history of approximately 30 pack‑years.  
+- History of chronic productive cough, likely chronic bronchitis, attributed to smoking.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Social History  
+Mr. Schneider lives with his wife and does not consume alcohol. He is a former smoker, smoking roughly one pack per day for 30 years. He currently volunteers at a local homeless shelter several times per week and reports no recent changes to his routine. No recreational drug use.  
+
+Family History  
+Father had a myocardial infarction in his 70s. Mother had hypertension. No other significant hereditary conditions reported.  
+
+Allergies  
+No known drug or environmental allergies.  
+
+Current Medications  
+- Amlodipine 2.5 mg orally once daily  
+- Insulin (type unspecified) as per diabetic regimen  
+- Metformin (dose unspecified) orally once daily  
+- SGLT‑2 inhibitor (dose unspecified) orally once daily  
+- Multivitamin daily  
+
+Vital Signs (most recent laboratory data)  
+- Temperature: 38.6 °C  
+- Heart rate, blood pressure, respiratory rate, SpO₂: not documented in this encounter.  
+
+Physical Examination  
+No documented physical exam findings were provided during this visit.  
+
+Laboratory Results  
+The most recent laboratory panel shows a markedly reduced estimated glomerular filtration rate of 9.5 mL/min, indicating advanced chronic kidney disease. Hematocrit is 40.4 %, with a normal hemoglobin range implied. The white blood cell differential shows neutrophilia (2.79 × 10³/µL) and a normal lymphocyte percentage (22.8 %). Platelets, electrolytes, liver enzymes, and albumin are within normal limits. INR is elevated at 4.70, suggesting significant anticoagulation. Other values such as serum creatinine and urea nitrogen are within the reference ranges for this patient’s condition.  
+
+Imaging  
+No imaging studies were reported in this encounter.  
+
+Assessment  
+The clinical presentation is most consistent with community‑acquired pneumonia complicated by acute exacerbation of a chronic productive cough, fever, and pleuritic right‑sided chest pain. The patient’s underlying diabetes, hypertension, chronic kidney disease, and long‑term smoking history place him at increased risk for severe infection and complications.  
+
+Plan  
+1. Initiate empiric antibiotic therapy appropriate for community‑acquired pneumonia in an elderly patient with comorbidities (specific agent and dosage to be determined by the treating physician).  
+2. Continue current diabetic and antihypertensive therapy; monitor blood glucose and blood pressure closely.  
+3. Manage pain with acetaminophen or ibuprofen as tolerated, avoiding NSAIDs if renal function worsens.  
+4. Encourage adequate hydration, rest, and continued smoking cessation support.  
+5. Monitor vital signs, oxygen saturation, and repeat temperature checks twice daily.  
+6. Follow up in the clinic in 48 hours or sooner if symptoms worsen; consider admission if oxygen saturation drops below 90 % or if respiratory distress escalates.  
+7. Educate the patient and caregiver about signs of worsening infection (increased shortness of breath, persistent fever, new chest pain) and advise immediate medical attention if these occur.  
+
+Disposition  
+Mr. Schneider will remain under observation with a plan to review laboratory and clinical status within 24 hours and to adjust therapy as indicated. Discharge instructions and follow‑up appointments will be arranged after stabilization.

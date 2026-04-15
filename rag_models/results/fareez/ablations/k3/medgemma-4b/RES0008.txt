@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 05:03:06
+Time: 29.99s
+Tokens: 11,325 in / 467 out
+Cell: k3
+============================================================
+
+Patient Information:
+
+Patient Name: Abraham Schneider
+Date of Birth: 1928-01-10
+Unit Number: 475
+
+Chief Complaint: Cough and difficulty breathing
+
+History of Present Illness:
+
+Mr. Schneider presents with a cough and difficulty breathing that started approximately three days ago. He reports that the cough is more frequent throughout the day and produces more sputum than his usual cough, which he attributes to smoking. He denies any recent changes in his routine or any specific triggers for the cough. He reports that the cough has progressively worsened over the three days. He denies any fever. He reports a sharp pain in the right chest and belly area that started around the same time as the cough. The pain is exacerbated by deep breaths. He has taken Tylenol and Advil for the pain, but they provide only temporary relief. He denies any prior history of similar symptoms.
+
+Past Medical History:
+
+Mr. Schneider has a history of type 2 diabetes, hypertension, and ischemic heart disease. He takes metformin, an SGLT2 inhibitor, and amlodipine. He reports that he has had a history of bronchitis in the past. He denies any history of heart problems.
+
+Social History:
+
+Mr. Schneider is a 30-year smoker, consuming approximately one pack of cigarettes per day. He denies alcohol use or recreational drug use. He lives with his wife and reports that he volunteers at a homeless shelter a few times a week.
+
+Family History:
+
+Mr. Schneider reports a family history of heart problems in his father.
+
+Medications:
+
+Mr. Schneider takes amlodipine, metformin, and an SGLT2 inhibitor. He also uses insulin for his diabetes.
+
+Physical Exam:
+
+(Note: This section would normally include physical exam findings, but they are not included in the provided data. The physician would need to perform a physical exam to gather this information.)
+
+Assessment:
+
+Based on the patient's history and symptoms, the most likely diagnosis is pneumonia. He also has a history of chronic conditions that could potentially complicate his presentation.
+
+Plan:
+
+The physician will evaluate Mr. Schneider and determine the appropriate course of treatment. This may include antibiotics, oxygen therapy, and other supportive measures. Further investigation is warranted to determine the cause of his symptoms.

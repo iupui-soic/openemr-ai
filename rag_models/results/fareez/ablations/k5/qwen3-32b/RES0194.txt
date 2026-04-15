@@ -1,0 +1,67 @@
+Model: qwen/qwen3-32b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:44:55
+Time: 4.43s
+Tokens: 8,205 in / 1,193 out
+============================================================
+
+Patient Information  
+The patient is a 38-year-old female, Abbey Shala Kunde, residing at 774 Gleichner Harbor, Boston, Massachusetts. She is employed full-time at a pharmacy company and lives with her wife in a city townhouse. She has no known allergies to medications, but has a documented peanut allergy and carries an EpiPen. She does not smoke, but occasionally uses CBD oil and consumes alcohol on weekends, typically 3 to 4 beers per week. She has a past medical history of hypertension, obesity, prior pregnancies including a miscarriage, and a history of intimate partner abuse. She has no recent travel history and no known close contact with individuals who are ill.
+
+Chief Complaint  
+The patient presents with a three-day history of a dry cough, generalized body aches, and intermittent frontal headaches described as a band-like pressure. She also reports feeling feverish and experiencing one day of loose stools. She has not had any runny nose, sore throat, chest pain, or shortness of breath. She has not taken any medication for the cough but has used acetaminophen and ibuprofen for the headaches and body aches, with partial relief.
+
+History of Present Illness  
+The patient's symptoms began three days ago with the onset of a dry cough. Over the next few days, she developed generalized body aches and intermittent frontal headaches. The headaches are described as a band-like pressure and are not pulsating. She reports that the headaches are not constant but recur and are partially relieved by acetaminophen and ibuprofen. She has also experienced a low-grade fever, feeling hot without measurable temperature, and has had one day of loose stools without blood or mucus. She denies any nausea, vomiting, night sweats, or changes in appetite or weight. She has been isolating at home and has not returned to work due to her symptoms. She is concerned about the possibility of a coronavirus infection and is seeking evaluation and testing.
+
+Review of Systems  
+Constitutional: The patient reports feeling feverish and generally unwell. She has had a decreased appetite but no weight loss. She denies fatigue, night sweats, or chills.  
+Respiratory: She has a dry cough without sputum or blood. She denies chest pain, shortness of breath, or wheezing.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: She has had loose stools for one day without blood, mucus, or cramping. No nausea or vomiting.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurological: Headaches are described as frontal and band-like, with no associated visual changes, dizziness, or focal neurological deficits.  
+Musculoskeletal: Generalized body aches without localized pain or trauma.  
+Integumentary: No rash or skin changes.  
+Psychiatric: No mood changes or anxiety reported.  
+Endocrine: No changes in menstrual cycle or other endocrine symptoms.  
+Hematologic: No bruising or bleeding.  
+Allergic/Immunologic: No new allergic reactions.  
+Other: No loss of taste or smell.
+
+Allergies  
+The patient has a documented allergy to peanuts and carries an EpiPen. No known drug allergies.
+
+Past Medical History  
+The patient has a history of hypertension, obesity, recurrent urinary tract infections, and a history of intimate partner abuse. She has also had a miscarriage in the second trimester and a prior pregnancy that resulted in a normal delivery. She has a history of stress, viral sinusitis, and acute bronchitis. She has no history of pneumonia or asthma.
+
+Surgical History  
+The patient underwent an ACL repair and knee surgery approximately 10 years ago.
+
+Family History  
+The patient reports that her father has hypertension and her grandfather had lung cancer, which was attributed to a lifetime of smoking.
+
+Current Medications  
+The patient is not currently taking any prescription medications. She takes a multivitamin and vitamin D. She has no active prescriptions for chronic conditions.
+
+Objective  
+Vital signs were not obtained during this visit due to the nature of the encounter. The patient's height is 167.7 cm, and her BMI is 35.84, indicating obesity. No physical examination findings were documented in the provided data.
+
+Labs  
+No laboratory results were obtained during this visit. Previous lab results from OpenEMR include normal hemoglobin, hematocrit, and white blood cell count. Cholesterol and triglyceride levels are within normal limits. No recent infectious workup was performed.
+
+Imaging  
+No imaging studies were performed during this visit.
+
+Assessment  
+The patient presents with symptoms consistent with an upper respiratory infection. Given the current public health context and the overlap of symptoms with coronavirus disease (COVID-19), including fever, cough, and generalized aches, a nasal swab for SARS-CoV-2 was performed. The patient is advised to isolate for two weeks until symptoms resolve and to await test results. If positive, she will receive further instructions from public health authorities regarding follow-up and return to work. If negative, she is advised to continue rest, hydration, and symptomatic management.
+
+Plan  
+1. Order a nasal swab for SARS-CoV-2 testing.  
+2. Advise the patient to continue self-isolation for 14 days and monitor symptoms.  
+3. Recommend acetaminophen for headache and body aches as needed.  
+4. Advise hydration and rest.  
+5. Follow up in 48 hours with test results and further instructions.  
+6. If symptoms worsen, including fever, shortness of breath, or chest pain, she should seek immediate medical attention.  
+7. Provide information on public health guidelines for returning to work after a potential or confirmed case of COVID-19.

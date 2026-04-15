@@ -1,0 +1,67 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 04:18:10
+Time: 3.30s
+Tokens: 20,039 in / 1,143 out
+============================================================
+
+Patient Information  
+The patient is a 84‑year‑old individual identified in the electronic health record as Amado Baumbach (DOB 1942‑06‑09). No gender was specified in the encounter transcript; the patient reports menstrual history, indicating a female gender. The patient resides with one roommate, does not smoke, drinks alcohol rarely, and is sexually active with a boyfriend using condoms.  
+
+Chief Complaint  
+The patient presents with persistent nausea for approximately nine days, accompanied by intermittent vomiting (one to two episodes per day).  
+
+History of Present Illness  
+The patient reports that the nausea has been ongoing for about nine days, worsening in the morning and when exposed to strong odors. She has experienced several episodes of vomiting over the same period, typically one to two times per day. She notes increased urinary frequency, feeling the urge to void every one to two hours, but reports adequate control and no dysuria or hematuria. She has been drinking more water to compensate for fluid loss from vomiting. No abdominal pain, diarrhea, constipation, or changes in bowel habits have been reported. She denies fever, chills, headache, muscle aches, cough, chest pain, palpitations, or any other systemic symptoms.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or fatigue reported.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Cardiovascular: No chest pain, palpitations, or paleness.  
+Gastrointestinal: Nausea, vomiting, mild crampy abdominal sensation; no pain, diarrhea, constipation, or melena.  
+Genitourinary: Increased urinary frequency, no pain, hematuria, or incontinence.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Psychiatric: No depression, anxiety, or mood changes reported.  
+
+Past Medical History (from electronic record)  
+The patient has a long history of chronic medical conditions, including essential hypertension, prediabetes, anemia, chronic kidney disease stages 1–3, and related diabetic complications (microalbuminuria, proteinuria). The patient also has a history of sinusitis, chronic sinusitis, and several dental issues. No recent surgical history is noted.  
+
+Social History  
+The patient lives with a roommate. She is a non‑smoker, consumes alcohol rarely (last drink approximately one month ago), and denies illicit drug use. She is sexually active with a boyfriend and uses condoms consistently. She previously used birth control but discontinued due to nausea.  
+
+Family History  
+Father has a history of hypertension; no other significant family diseases are documented.  
+
+Allergies  
+The patient reports a nickel allergy causing rash with jewelry; no food or medication allergies are noted.  
+
+Medications  
+The patient reports using ginger chews for nausea but has not taken any prescription medications. No current home medications are listed in the electronic record.  
+
+Physical Examination  
+No vital signs or physical examination findings were recorded during this encounter.  
+
+Laboratory Results  
+A complete blood count was performed, revealing the following values:  
+- White blood cells: 3.78 × 10³/µL (low)  
+- Red blood cells: 4.85 × 10⁶/µL (within normal range)  
+- Hemoglobin: 12.28 g/dL (low‑normal)  
+- Hematocrit: 43.41 % (normal)  
+- Mean corpuscular volume: 86.82 fL (normocytic)  
+- Platelets: 105.59 × 10³/µL (low)  
+Neutrophils, lymphocytes, monocytes, eosinophils, and basophils were within reference ranges, though absolute neutrophil count was slightly decreased.  
+
+Assessment  
+The primary diagnosis is acute nausea and vomiting of unclear etiology, likely multifactorial. Differential diagnoses include gastroenteritis, medication side effect (though no current medications), metabolic disturbances (e.g., electrolyte imbalance secondary to vomiting), and early signs of a systemic infection. The patient’s chronic conditions (hypertension, CKD, diabetes) and low white blood cell count raise concern for possible infection or sepsis, but the absence of fever, chills, and other systemic symptoms makes this less likely at present.  
+
+Plan  
+1. Symptomatic treatment: Continue ginger chews; consider ondansetron 4 mg orally every 8 hours as needed for nausea.  
+2. Hydration: Encourage oral fluids; consider oral rehydration solution if vomiting persists.  
+3. Monitor urinary frequency; if pain or hematuria develops, evaluate for urinary tract infection.  
+4. Follow‑up: Re‑evaluate in 48–72 hours or sooner if symptoms worsen (e.g., increased vomiting, fever, abdominal pain).  
+5. Labs: Repeat CBC and electrolytes in 48 hours to assess for evolving anemia or leukopenia.  
+6. Education: Counsel patient on avoiding strong odors, eating bland foods, and maintaining adequate fluid intake.  
+7. Safety: Ensure patient has a phone and caregiver support due to increased urinary frequency and potential dehydration.  
+
+The patient was advised to seek immediate medical attention if she experiences worsening nausea, vomiting, fever, chest pain, shortness of breath, or signs of dehydration. Follow‑up appointment to be scheduled within three days.

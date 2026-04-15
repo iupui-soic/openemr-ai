@@ -1,0 +1,69 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:35:07
+Time: 2.35s
+Tokens: 20,457 in / 854 out
+============================================================
+
+Patient Information  
+Name: Patient (demographics not fully specified in the transcript).  
+Date of Birth: Not provided.  
+Sex: Female.  
+
+Chief Complaint  
+The patient reports persistent nausea and intermittent vomiting over the past nine days, with increased urinary frequency.
+
+History of Present Illness  
+The patient presents with a nine‑day history of constant nausea that is exacerbated by strong odors and tends to worsen in the mornings. She reports vomiting one to two episodes on several days during this period. She describes an increase in urinary frequency, estimating she needs to void approximately every two hours during the day, with no nocturia or incontinence. She denies dysuria or flank pain. No associated abdominal pain, changes in bowel habits, fever, chills, headache, cough, chest pain, palpitations, or other constitutional symptoms. She reports feeling more thirsty and increased fluid intake, likely due to attempts to compensate for perceived dehydration from vomiting. She has not been using any prescription medications; she has tried over‑the‑counter ginger supplements, which did not relieve her symptoms.
+
+Review of Systems  
+- Constitutional: No fever, chills, weight changes, or fatigue reported.  
+- Gastrointestinal: Nausea, intermittent vomiting, mild crampy abdominal discomfort, no dyspepsia, no constipation or diarrhea, no hematemesis or melena.  
+- Genitourinary: Urinary frequency, no urgency, no pain, no hematuria.  
+- Respiratory: No cough, shortness of breath, or wheezing.  
+- Cardiovascular: No chest pain, palpitations, or edema.  
+- Neurologic: No headaches, dizziness, or syncope.  
+- Musculoskeletal: No myalgias or arthralgias.  
+- Endocrine: No polyuria, polydipsia, or polyphagia.  
+- Hematologic: No easy bruising or bleeding.  
+- Allergic: No known drug allergies except to nickel.  
+- Psychiatric: No anxiety or depression symptoms reported.  
+
+Past Medical History  
+No significant past medical or surgical history reported.  
+
+Medications  
+None at present.  
+
+Allergies  
+Nickel (contact dermatitis). No known drug or food allergies.
+
+Social History  
+The patient lives with one roommate. She is a non‑smoker. She consumes alcohol rarely, most recently about a month ago, and reports headaches after drinking. She does not use illicit drugs. She is sexually active with a boyfriend and uses condoms. She previously used hormonal birth control but discontinued it due to nausea.
+
+Family History  
+No chronic medical conditions reported in immediate family members.
+
+Physical Examination  
+No physical examination data were provided during this encounter.
+
+Laboratory Studies  
+No laboratory results were reported during this encounter.
+
+Assessment  
+1. Acute nausea and vomiting of unclear etiology, likely related to gastroenteritis or early viral illness.  
+2. Urinary frequency without dysuria or hematuria—likely functional or related to increased fluid intake.
+
+Plan  
+1. Symptomatic treatment:  
+   - Continue oral or intravenous antiemetics as needed (e.g., ondansetron 4 mg IV q6h PRN).  
+   - Encourage gradual re‑initiation of oral fluids and light meals as tolerated.  
+   - Consider antiemetic ginger or dimenhydrinate if symptoms persist.  
+2. Hydration: Advise adequate oral fluid intake; consider oral rehydration salts if vomiting continues.  
+3. Urinary frequency: Monitor for signs of urinary tract infection; no current indication for urinary culture.  
+4. Follow‑up: Return to clinic or urgent care if vomiting persists >48 hours, if signs of dehydration (dry mucous membranes, decreased skin turgor, orthostatic hypotension), or if new symptoms such as fever, abdominal pain, or hematuria develop.  
+5. Education: Discuss potential causes of nausea and vomiting, importance of hydration, and when to seek emergency care.  
+
+Disposition  
+Patient was advised to monitor symptoms and return for follow‑up as indicated. No disposition to admission was necessary.

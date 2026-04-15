@@ -1,0 +1,149 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:05:07
+Time: 7.43s
+Tokens: 12,183 in / 2,061 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia  
+Date of Birth: 1914‑01‑07 (Age 112)  
+Sex: Female  
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+
+Chief Complaint  
+Worsening shortness of breath, chest discomfort, and productive cough for the past five days.
+
+History of Present Illness  
+Ms. Tapia reports a five‑day history of progressive dyspnea that is most noticeable with minimal exertion around the apartment. She describes a constant sense of “congestion” and mild chest discomfort that is present at rest and does not change with position. The cough has become more frequent and is productive of small amounts of yellow‑green sputum, approximately the volume that would fill the palm of her hand each time she coughs. She denies hemoptysis. Over the last two days she has felt “feverish,” although she has not taken a temperature. She denies chills, night sweats, orthopnea, or paroxysmal nocturnal dyspnea.  
+
+She has a known diagnosis of chronic obstructive pulmonary disease (COPD) diagnosed three years ago and uses a rescue albuterol inhaler (Ventolin) and a daily inhaled corticosteroid/long‑acting beta‑agonist combination (Symbicort). In response to her current symptoms she used three to four puffs of her albuterol inhaler this morning and also used it last night; normally she uses a rescue inhaler only two to three times per week. She has tried her usual inhalers without significant relief.  
+
+She reports a long smoking history of approximately one pack per day for the past 30–40 years. She drinks wine on weekends only and denies any illicit drug use. She has not traveled recently and has not been exposed to anyone known to be ill. She has had two prior episodes of “chest colds” in the past year that required antibiotics from a walk‑in clinic, the most recent about four months ago.  
+
+She denies associated sore throat, rhinorrhea, gastrointestinal symptoms, headache, visual changes, palpitations, nausea, vomiting, diarrhea, constipation, urinary symptoms, weight loss, or changes in appetite or sleep.  
+
+Review of Systems  
+Constitutional: Positive for feverish feeling; negative for measured fever, chills, night sweats, weight change, fatigue beyond that attributable to dyspnea.  
+Respiratory: Positive for productive cough with yellow‑green sputum, dyspnea on exertion, chest “congestion”; negative for hemoptysis, wheezing, orthopnea, paroxysmal nocturnal dyspnea.  
+Cardiovascular: Negative for chest pain, palpitations, edema, orthostatic symptoms.  
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea, constipation, dysphagia.  
+Genitourinary: Negative for dysuria, frequency, urgency.  
+Neurologic: Negative for headache, dizziness, visual changes.  
+Psychiatric: PHQ‑2 score 2 (mild depressive symptoms); GAD‑7 score 0.  
+
+Allergies  
+No known drug allergies reported.
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed 3 years ago)  
+- Hypertension (essential)  
+- Gastroesophageal reflux disease (GERD)  
+- Hyperlipidemia  
+- Prediabetes / metabolic syndrome  
+- Chronic kidney disease (historical stages 1‑4, currently not on dialysis)  
+- History of myocardial infarction and coronary artery disease with prior coronary artery bypass grafting  
+- Alzheimer’s disease  
+- History of renal transplant (status post)  
+
+Surgical History  
+No surgical procedures reported.
+
+Social History  
+- Lives in an apartment with her adult daughter.  
+- Employed part‑time at a grocery store.  
+- Tobacco: cigarettes, approximately 1 pack per day for 30–40 years; currently smoking.  
+- Alcohol: wine on weekends only.  
+- No recreational drug use.  
+
+Family History  
+No known family history of lung disease, heart disease, or cancer.
+
+Current Medications (home)  
+- Albuterol inhaler (Ventolin) – rescue use as needed.  
+- Symbicort (budesonide/formoterol) – daily inhaled corticosteroid/long‑acting beta‑agonist.  
+- ACE inhibitor (unspecified) for hypertension.  
+- Tums (calcium carbonate) as needed for reflux.  
+- Donepezil/memantine extended‑release (Alzheimer’s disease).  
+- Tacrolimus (immunosuppressant, post‑renal transplant).  
+- Amlodipine 2.5 mg daily.  
+- Metoprolol succinate 100 mg extended‑release daily.  
+- Valsartan 320 mg daily.  
+- Aspirin 81 mg daily.  
+- Simvastatin 20 mg daily.  
+- Atorvastatin 40 mg daily.  
+
+Objective  
+
+Vital Signs (most recent documented values)  
+- Heart Rate: 92 beats/min  
+- Respiratory Rate: 12 breaths/min  
+- Temperature: Not recorded at this visit  
+- Blood Pressure: Not recorded at this visit  
+- SpO₂: Not recorded  
+- Height: 162.7 cm (BMI 27.4)  
+
+Physical Examination  
+No physical examination findings were documented in the source material.  
+
+Laboratory Data (most recent)  
+- CO₂ (total): 26.9 mmol/L  
+- Potassium: 4.85 mmol/L  
+- Calcium: 9.48 mg/dL  
+- Blood Urea Nitrogen: 10.35 mg/dL  
+- Creatinine: 0.42 mg/dL (eGFR ≈ 88 mL/min/1.73 m²)  
+- Glucose: 96.7 mg/dL  
+- Sodium: 138 mmol/L  
+- Chloride: 107 mmol/L  
+- ALT: 52 U/L (mildly elevated)  
+- Total Bilirubin: 0.69 mg/dL  
+- Albumin: 3.73 g/dL  
+- Total Cholesterol: 204 mg/dL  
+- PHQ‑2: 2 (positive screen)  
+- GAD‑7: 0 (negative screen)  
+
+Imaging  
+No imaging studies have been performed yet; a chest radiograph is planned.
+
+Assessment  
+1. Community‑acquired pneumonia – clinical picture of productive cough with purulent sputum, feverish sensation, and worsening dyspnea in a patient with underlying COPD.  
+2. Acute COPD exacerbation – increased shortness of breath and need for more frequent rescue inhaler use.  
+3. Hypertension, GERD, hyperlipidemia, prediabetes, chronic kidney disease, coronary artery disease, Alzheimer’s disease – chronic comorbidities currently managed on home regimen.  
+
+Plan  
+
+Emergency Department Management  
+- Immediate triage to obtain full vital signs, pulse oximetry, and a focused physical exam.  
+- Obtain a chest radiograph and COVID‑19 PCR test.  
+- Initiate supplemental oxygen to maintain SpO₂ ≥ 90 % if needed.  
+- Begin nebulized short‑acting bronchodilator (albuterol) and ipratropium every 4–6 hours.  
+- Start systemic corticosteroid (e.g., prednisone 40 mg PO daily) for COPD exacerbation.  
+- Empiric antibiotic therapy for presumed bacterial pneumonia (e.g., azithromycin 500 mg PO daily plus ceftriaxone 1 g IV daily) pending culture results.  
+- Continue home inhaled therapies (Symbicort) and rescue albuterol as needed.  
+- Review inhaler technique and reinforce adherence.  
+
+Diagnostic Work‑up  
+- CBC with differential, comprehensive metabolic panel, and arterial blood gas as indicated.  
+- Sputum Gram stain and culture.  
+- Blood cultures if febrile.  
+- Consider pro‑BNP if cardiac involvement is suspected.  
+
+Disposition  
+- Admit for observation, intravenous antibiotics, and close monitoring of respiratory status given COPD and pneumonia overlap.  
+- If clinical improvement is rapid and oxygenation remains stable, consider step‑down to oral antibiotics and discharge with close outpatient follow‑up.  
+
+Discharge Instructions (if discharged)  
+- Complete the full course of prescribed antibiotics.  
+- Continue inhaled corticosteroid/long‑acting beta‑agonist and use rescue albuterol only for breakthrough symptoms.  
+- Use supplemental oxygen at home if prescribed; maintain SpO₂ ≥ 90 %.  
+- Seek immediate care for worsening dyspnea, new fever > 38 °C, chest pain, or altered mental status.  
+- Smoking cessation counseling and referral to cessation resources.  
+- Follow up with primary care physician within 48–72 hours and pulmonology within 1 week.  
+
+Follow‑up  
+- Primary care visit in 2–3 days.  
+- Pulmonology appointment within 1 week.  
+- Repeat chest radiograph in 4–6 weeks to confirm resolution, if clinically indicated.  
+
+The above plan reflects current best practice for a patient with suspected pneumonia superimposed on a COPD exacerbation.

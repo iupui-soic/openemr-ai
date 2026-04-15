@@ -1,0 +1,142 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:29:20
+Time: 6.10s
+Tokens: 12,009 in / 2,074 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: 26 October 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Sore throat of three days’ duration with associated fever and fatigue.
+
+History of Present Illness  
+The patient reports a sore throat that began three days ago and has remained constant. She notes that the pain intensifies with swallowing, especially solid foods, and occasionally with very cold liquids. One day ago she began feeling “feverish,” with subjective chills and a sensation of heat, although she has not taken a temperature measurement. She describes the fever as intermittent but currently ongoing. The sore throat appears to be getting worse rather than improving. She also reports palpable “lumps” in the neck, consistent with tender cervical lymphadenopathy. She denies any cough, dyspnea, chest pain, rash, headache, nausea, vomiting, night sweats, or gastrointestinal symptoms. Fatigue is notable; she feels “really tired” but is still obtaining 7‑8 hours of sleep nightly. She has been using throat lozenges with temporary relief. She has not been in contact with anyone known to be ill and has not traveled recently. She inquires about COVID‑19 as a possible cause.
+
+Review of Systems  
+
+- Constitutional: Positive for fever (subjective), fatigue, sore throat; negative for weight change, night sweats, chills beyond those described, recent weight loss.  
+- ENT: Positive for sore throat, painful swallowing, cervical lymphadenopathy; negative for hoarseness, ear pain, sinus pain, nasal congestion, post‑nasal drip.  
+- Respiratory: Negative for cough, dyspnea, wheezing, chest pain.  
+- Cardiovascular: Negative for chest pain, palpitations, orthopnea, edema.  
+- Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea, constipation, changes in appetite (appetite reported as “OK” but limited by throat pain).  
+- Genitourinary: Negative for dysuria, hematuria, change in urine output.  
+- Neurologic: Negative for headache, light‑sensitivity, dizziness.  
+- Dermatologic: Negative for rash or skin changes.  
+- Psychiatric: No reported anxiety or depression.  
+
+Allergies  
+No known drug allergies reported.
+
+Past Medical History  
+
+- Crohn’s disease, diagnosed in 2022 (last year).  
+- Hypertension (essential).  
+- Prediabetes.  
+- Anemia.  
+- Chronic kidney disease (stage 4) with progression to end‑stage renal disease and a history of renal transplant (date of transplant not specified).  
+- Metabolic syndrome.  
+- Ischemic heart disease.  
+- Other chronic conditions noted in historical record (e.g., stress, social isolation) but not directly relevant to the current visit.
+
+Surgical History  
+
+- Colonoscopy with brief observation in 2022.  
+- No other surgical procedures reported.
+
+Social History  
+
+- Lives in an apartment with parents and a younger brother.  
+- No current tobacco, alcohol, or recreational drug use (reports past minimal alcohol use, avoided because it worsens Crohn’s disease).  
+- Exercise: Swims regularly; no participation in contact sports.  
+- Occupation: Not currently employed (historical record shows periods of part‑time/full‑time employment, but current status not specified).  
+
+Family History  
+
+- Mother and father: No significant conditions reported.  
+- Siblings: No specific illnesses noted.  
+- Positive family history of inflammatory bowel disease (both Crohn’s disease and ulcerative colitis) as well as asthma and eczema.
+
+Current Medications (home)  
+
+- Sulfasalazine (presumed for Crohn’s disease; exact dose not provided).  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression for renal transplant).  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate ER 100 mg daily.  
+- Nitroglycerin spray PRN.  
+- Acetaminophen/Hydrocodone 325 mg/7.5 mg tablet PRN.  
+- Naproxen sodium 220 mg PRN.  
+- Additional agents listed in the historic medication list (e.g., insulin, medroxyprogesterone) are not confirmed as currently active for this encounter.  
+
+Objective  
+
+Vital Signs (most recent documented in the record; no new vitals obtained today)  
+- Heart Rate: 89 beats/minute  
+- Respiratory Rate: 13 breaths/minute  
+- Blood Pressure: Not recorded  
+- Temperature: Not recorded (patient reports subjective fever)  
+- SpO₂: Not recorded  
+- Height: 169.3 cm  
+- Weight: Not recorded  
+- Body Mass Index: 27.6 kg/m² (based on historic data)  
+
+Physical Examination (not performed during this telephone encounter; no objective findings documented)  
+- No physical exam performed; patient’s description suggests oropharyngeal erythema and tender cervical lymphadenopathy.
+
+Laboratory Data (most recent values from historical record; no new labs drawn today)  
+
+- Complete metabolic panel: Sodium 137 mmol/L, Potassium 4.6 mmol/L, Chloride 110 mmol/L, CO₂ 28 mmol/L, BUN 9.3 mg/dL, Creatinine 0.95 mg/dL, Glucose 64.6 mg/dL, Calcium 8.76 mg/dL.  
+- Complete blood count: Hemoglobin 15.9 g/dL, MCV 90.5 fL, Leukocytes 4.7 ×10³/µL (within normal limits).  
+- Urinalysis: No leukocyte esterase, nitrites, or ketones; pH 5.2.  
+- PHQ‑2 score 2, DAST‑10 score 2 (screening scores indicating low level of depression symptoms and low substance use risk).  
+
+No recent rapid strep test, COVID‑19 PCR, or EBV serology available at the time of documentation.
+
+Assessment  
+
+1. **Acute pharyngitis, likely viral** – 3‑day history of sore throat, low‑grade subjective fever, cervical lymphadenopathy, and absence of cough or purulent exudate. The patient’s immunocompromised status (renal transplant on tacrolimus) raises concern for atypical or more severe infections.  
+2. **Rule‑out COVID‑19 infection** – Patient presents during ongoing community transmission; respiratory symptoms are minimal but isolation is prudent.  
+3. **Consider infectious mononucleosis (EBV)** – Cervical lymphadenopathy and prolonged sore throat are compatible; testing is planned.  
+4. **Chronic medical conditions** – Crohn’s disease, hypertension, CKD/ESRD status, and post‑renal‑transplant immunosuppression are stable per patient report; no acute decompensation noted.  
+
+Plan  
+
+- **Testing:**  
+  • Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (results expected within 24‑48 hours).  
+  • Order EBV antibody panel (VCA IgM/IgG, EBNA) to assess for acute mononucleosis.  
+  • Consider rapid streptococcal antigen test if symptoms persist >5 days or if bacterial pharyngitis becomes more likely; not ordered at this visit.  
+
+- **Isolation:**  
+  • Advise patient to self‑isolate at home until COVID‑19 results are negative and symptoms improve.  
+
+- **Symptomatic Management:**  
+  • Continue throat lozenges as needed for comfort.  
+  • Acetaminophen 500 mg PO q6‑8 h PRN for fever or throat pain, ensuring total daily dose does not exceed 3 g.  
+  • Maintain adequate hydration and soft diet; encourage warm liquids.  
+  • Monitor temperature; if measured temperature exceeds 38.5 °C (101.3 °F) or if new symptoms develop (shortness of breath, chest pain, severe dysphagia, or inability to tolerate oral intake), seek urgent care.  
+
+- **Medication Review:**  
+  • No changes to chronic immunosuppressive or antihypertensive regimen at this time.  
+  • Reinforce adherence to sulfasalazine for Crohn’s disease.  
+
+- **Follow‑up:**  
+  • Telephone follow‑up in 48 hours to review COVID‑19 result and EBV serology.  
+  • In‑person evaluation if symptoms worsen, fever persists >3 days, or new lymphadenopathy develops.  
+  • Routine follow‑up with gastroenterology for Crohn’s disease and transplant clinic per established schedule.  
+
+- **Patient Education:**  
+  • Discuss signs of bacterial superinfection (increasing pain, purulent discharge, high fever) and when to return.  
+  • Review proper hand hygiene, mask use, and avoiding close contact with household members while isolating.  
+
+The patient verbalized understanding of the plan, agreed to self‑isolation, and has no further questions at this time.  
+
+Prepared by: [Physician’s Name], MD  
+Date: 14 April 2026

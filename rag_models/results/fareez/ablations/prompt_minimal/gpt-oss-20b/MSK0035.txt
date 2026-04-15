@@ -1,0 +1,85 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-04-14 04:28:56
+Time: 2.68s
+Tokens: 15,657 in / 1,197 out
+============================================================
+
+**Patient Information**  
+A 25‑year‑old male student presented to the office with a right wrist injury sustained during a skiing trip the previous day. He lives alone in a downtown apartment and reports no chronic medical conditions, regular medications, or known drug allergies. He is a non‑smoker, consumes alcohol socially (≈2 drinks every other week), and occasionally uses cannabis edibles once per month.
+
+---
+
+### SOAP Note
+
+**S – Subjective**  
+
+- **Chief Complaint:** “Right hand is very painful, swollen, and bruised after a fall while skiing.”  
+- **History of Present Illness:**  
+  - Mechanism: He fell from a ski, using his right arm to brace the fall; the impact was on the dorsolateral aspect of the wrist.  
+  - Timing: Symptoms began immediately after the fall (yesterday).  
+  - Pain characteristics: Sharp, localized to the distal radius area just below the thumb, constant, 5–6/10 intensity. No radiation to forearm or hand.  
+  - Aggravating factors: Movement, especially flexion/extension and deviation.  
+  - Relieving factors: Rest, ibuprofen, minimal improvement.  
+  - Associated symptoms: No numbness, tingling, weakness, fever, chills, headache, dizziness, shortness of breath, chest pain, or neurologic deficits. No prior similar wrist injuries.  
+  - Functional impact: Limited wrist motion due to pain but still able to flex, extend, and make a fist.  
+
+- **Review of Systems (ROS):**  
+  - **Constitutional:** No fever, chills, night sweats, weight loss, or fatigue.  
+  - **Skin/Soft Tissue:** Bruising and mild swelling; no open wounds or rashes.  
+  - **Musculoskeletal:** Pain limited to right wrist; no other joint pain.  
+  - **Neurologic:** No numbness, tingling, or weakness.  
+  - **Cardiovascular/Respiratory:** No chest pain, palpitations, or dyspnea.  
+  - **GI/GU:** No nausea, vomiting, abdominal pain, urinary frequency or pain.  
+  - **Allergies:** None reported.  
+
+- **Past Medical History (PMH):** No chronic illnesses, surgeries, or hospitalizations.  
+- **Medications:** None chronically; currently taking ibuprofen as needed.  
+- **Social History:** Lives alone; student; denies tobacco; occasional alcohol; occasional cannabis. No recent travel or sick contacts.  
+
+- **Family History:** No known family history of musculoskeletal or autoimmune disorders.
+
+---
+
+**O – Objective**  
+
+- **Vital Signs:** Not recorded in the encounter; patient appears hemodynamically stable.  
+- **Physical Examination:**  
+  - **Inspection:** Mild swelling and bruising over the distal radius and volar wrist. No visible deformity or open wounds.  
+  - **Palpation:** Tenderness to palpation over the distal radius (volar aspect); no tenderness over the anatomical snuffbox or scaphoid.  
+  - **Range of Motion:** Full but painful flexion/extension and radial/ulnar deviation. Patient can make a fist.  
+  - **Neurovascular:** Capillary refill <2 s, no numbness/tingling, intact sensation to light touch over the hand. Radial and ulnar pulses palpable and equal bilaterally.  
+  - **Skin:** No erythema or warmth noted.  
+
+- **Laboratory Results:** No acute labs performed at this time.  
+
+- **Imaging:** None performed during this visit; plan to obtain wrist X‑ray.
+
+---
+
+**A – Assessment**  
+
+1. **Suspected distal radius fracture** – mechanism of injury and localized pain over the distal radius are classic.  
+2. **Soft‑tissue contusion/swelling** – likely accompanying the fracture.  
+3. **No neurovascular compromise** – reassuring for continued outpatient management.
+
+---
+
+**P – Plan**  
+
+- **Imaging:** Order plain radiographs of the right wrist (anteroposterior and lateral views) to confirm fracture type and extent.  
+- **Pain Management:** Continue ibuprofen 400 mg PO q6–8 h PRN, up to 1200 mg/day, with caution for GI side effects. Consider acetaminophen 500 mg PO q6h if additional pain relief needed.  
+- **Immobilization:** Apply a firm wrist splint or cast pending radiographic results; instruct patient to keep the wrist elevated and avoid weight‑bearing on the arm.  
+- **Ice:** Use ice packs (15–20 min every 2–3 h) for swelling.  
+- **Activity Modification:** Avoid activities that exacerbate pain; restrict heavy lifting or sports until fracture healing is confirmed.  
+- **Follow‑up:**  
+  - **Immediate:** Review X‑ray results within 24–48 h.  
+  - **If fracture confirmed:** Discuss potential for non‑operative cast management or operative fixation depending on displacement; schedule orthopedic referral if needed.  
+  - **If no fracture:** Continue supportive care; reassess if pain worsens or persists beyond 3–5 days.  
+- **Patient Education:** Explain signs of complication (increased swelling, numbness, tingling, or worsening pain) that warrant urgent evaluation.  
+- **Documentation:** Note current findings and plan in the chart; update EMR with any new imaging or treatment decisions.
+
+---
+
+**Disposition:** Outpatient; patient will return for imaging review or follow‑up as indicated. No emergent issues identified.

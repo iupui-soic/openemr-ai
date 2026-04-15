@@ -1,0 +1,45 @@
+Model: google/medgemma-4b-it
+Patient: RES0060
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:30:19
+Time: 48.21s
+Tokens: 6,090 in / 934 out
+Cell: k1
+============================================================
+
+Patient Information:
+
+Patient Name: Abbie Stamm
+Date of Birth: 2001-11-16
+Sex: Female
+Unit Number: 123
+
+Chief Complaint: Patient presents with a fever and cough.
+
+History of Present Illness:
+
+The patient reports a fever that began four days ago, along with a cough that started four days ago as well. The patient states that the cough has been getting progressively worse, and she has also experienced fatigue and increased tiredness. The patient denies any prior similar episodes. She denies any sore throat, difficulty swallowing, or changes in taste or smell. She reports a runny nose, but not to a significant degree. She denies any hearing or vision changes, ear pain, or eye discharge. The patient reports no sputum production. The cough is described as dry. She denies any blood associated with the cough. She denies wheezing or shortness of breath. She denies chest pain, palpitations, or night sweats. The patient reports a weight loss of a few pounds over the past week, attributed to decreased appetite. She denies any factors that make the cough better or worse. She reports normal bowel movements and denies abdominal pain. She reports nausea, but denies vomiting. She denies any triggers for her nausea. The patient reports a headache that has been on and off for several days, which she attributes to fatigue. She denies any memory loss or confusion. She denies any dizziness or fainting spells. The patient is otherwise healthy, except for a history of high cholesterol, which she is currently managing with Rosuvastatin. She also reports being pre-diabetic, with an A1C of 6.2% six months ago. She reports making lifestyle changes to improve her blood glucose control, including walking her dog more and eating out less. She denies any surgeries or hospitalizations. She is up to date on her immunizations, including the flu shot. She denies any family history of lung or heart conditions. She denies any cancers in the family. She denies any changes to her urinary habits or urine appearance. She denies smoking or recreational drug use, but reports occasional alcohol consumption (2-3 beers on Saturday and Sunday). She lives in a duplex with her girlfriend and reports no concerns about old carpets or mold.
+
+Medications:
+
+The patient is currently taking Rosuvastatin for high cholesterol, Trinessa 28 Day Pack, Penicillin V Potassium 500 MG Oral Tablet, 168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System, Camila 28 Day Pack, sodium fluoride 0.0272 MG/MG Oral Gel, Etonogestrel 68 MG Drug Implant, Acetaminophen 325 MG Oral Tablet, Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler [Qvar], albuterol 0.83 MG/ML Inhalation Solution, Loratadine 5 MG Chewable Tablet, NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector.
+
+Allergies:
+
+The patient has a penicillin allergy, with hives as a reaction. She also has allergies to bee venom, mold, house dust mite, animal dander, and tree pollen. She also has a cow's milk allergy.
+
+Family History:
+
+The patient denies any family history of lung or heart conditions. She reports her grandfather had bladder cancer.
+
+Social History:
+
+The patient reports being employed full-time. She lives with her girlfriend in a duplex. She denies any concerns about old carpets or mold.
+
+Assessment:
+
+The patient presents with symptoms consistent with an upper respiratory infection, likely viral in origin, given the timing of the year and the lack of specific triggers. The patient's symptoms are being monitored for improvement.
+
+Plan:
+
+The patient is advised to isolate for 14 days from her girlfriend, even if the COVID swab comes back negative. A COVID swab will be performed and results will be available in a day or so. If the swab is positive, the patient will be instructed to isolate for 14 days. If the swab is negative, the patient is advised to monitor her symptoms and return if they worsen or change. If symptoms persist or worsen, a bacterial infection or bacterial pneumonia should be considered, and antibiotics may be prescribed. The patient will be reviewed for options to improve her blood glucose control.

@@ -1,0 +1,80 @@
+Model: openai/gpt-oss-120b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 03:25:23
+Time: 5.27s
+Tokens: 8,778 in / 1,431 out
+============================================================
+
+Patient Information  
+Name: Aaron Russel  
+Date of Birth: 14 November 1952 (Age 73)  
+Sex: Male  
+Address: 278 McCullough Center Apt 99, Upton, Massachusetts 01568  
+
+Chief Complaint  
+Loss of taste for the past two days accompanied by a dry cough, fatigue, mild fever‑ish sensation, and a brief episode of diarrhea.
+
+History of Present Illness  
+The patient reports that beginning yesterday he noticed a marked decrease in the ability to taste foods, describing foods as “plain” or “like cardboard.” He also perceives a diminished sense of smell. The loss of taste and smell began approximately two days ago. At the same time he developed a dry, non‑productive cough, which started three to four days ago. The cough is not associated with sputum production or hemoptysis. He denies wheezing. He notes that after bouts of coughing he feels briefly short‑of‑breath, but there is no persistent dyspnea at rest. Over the past few days he has felt more fatigued than usual, sleeping more during the day and describing a general sense of “laziness.” He reports a mild sensation of being hot, which he interprets as a low‑grade fever, although he has not measured his temperature. This morning he experienced a single episode of diarrhea (two loose stools) without blood, urgency, or abdominal pain. He denies constipation, melena, or changes in urine output. He has not noticed any rash, dizziness (except a brief light‑headedness on rising this morning that resolved after sitting), chest pain, palpitations, or muscle aches. He reports an itchy, mildly scratchy throat associated with the cough but no true sore throat. He denies nasal congestion or rhinorrhea. He has not been ill previously, has no recent trauma to the face or nose, and has not traveled outside his home. He is concerned that he may have COVID‑19, especially because a classmate was recently ill with cough and fever.
+
+Review of Systems  
+Constitutional: Positive for fatigue, mild fever‑ish sensation, brief dizziness on standing; negative for weight loss, night sweats, chills.  
+HEENT: Positive for loss of taste and smell, itchy scratchy throat; negative for sore throat, nasal congestion, rhinorrhea, ear pain, visual changes.  
+Respiratory: Positive for dry cough, mild post‑cough dyspnea; negative for sputum production, hemoptysis, wheezing, pleuritic chest pain.  
+Cardiovascular: Negative for chest pain, palpitations, orthopnea, edema.  
+Gastrointestinal: Positive for one episode of non‑bloody diarrhea; negative for abdominal pain, nausea, vomiting, constipation.  
+Genitourinary: Negative for dysuria, hematuria, frequency.  
+Musculoskeletal: Negative for myalgias, joint pain.  
+Neurologic: Negative for headache, confusion, focal deficits.  
+Dermatologic: Negative for rash.  
+Psychiatric: Negative for anxiety or depression beyond mild fatigue.
+
+Past Medical History  
+- Obesity (BMI >30)  
+- Prediabetes  
+- Anemia  
+- Essential hypertension  
+- Metabolic syndrome  
+- Chronic kidney disease (stages 1‑3 historically, progressed to end‑stage renal disease with kidney transplant in 2016; currently status post‑transplant failure and rejection)  
+- Diabetes‑related kidney disease (microalbuminuria, proteinuria)  
+
+Surgical History  
+- Appendectomy (approximately 4 years ago)  
+- Kidney transplant (2016) with subsequent failure and rejection  
+
+Allergies  
+Patient reports possible cat allergy; no recent exposure to cats. No known drug allergies.
+
+Current Medications  
+The patient states he is not currently taking any medications. (Note: Historical medication list in the record includes tacrolimus, antihypertensives, insulin, and others, but the patient reports none at this visit.)
+
+Social History  
+The patient lives in a townhouse with his mother, step‑father, and younger sister. He is a high‑school student and recently returned to in‑person classes. He does not smoke tobacco cigarettes and does not consume alcohol. He uses a flavored vape several times per day; he is uncertain whether it contains nicotine or tobacco. He denies recent travel, exposure to mold, or other environmental hazards. He reports no pets at home. He has no recent known exposures other than a classmate with respiratory illness.
+
+Family History  
+Maternal and paternal histories are not provided. The patient notes that his grandfather had lung cancer (with a long smoking history) and diabetes.
+
+Objective  
+Vital Signs: No current vital signs recorded. The most recent temperature in the record was 37.71 °C.  
+Physical Examination: No physical exam findings documented during this encounter.
+
+Laboratory and Imaging Studies  
+No laboratory or imaging studies have been performed at this visit. The plan includes a nasopharyngeal swab for SARS‑CoV‑2 PCR.
+
+Assessment  
+1. Probable viral upper respiratory infection, likely COVID‑19 given recent exposure, anosmia/ageusia, dry cough, and low‑grade fever‑ish symptoms.  
+2. Acute self‑limited gastroenteritis (single episode of diarrhea).  
+3. Dehydration contributing to brief orthostatic dizziness.  
+4. Chronic medical conditions (hypertension, prediabetes, CKD/renal transplant history) as background comorbidities.
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing.  
+- Instruct the patient to self‑isolate for 14 days from the onset of symptoms, regardless of test result, and to wear a mask when around others.  
+- Encourage adequate oral hydration, especially in light of diarrhea and dizziness.  
+- Advise symptomatic care: acetaminophen for fever or discomfort as needed, lozenges or honey (if not diabetic) for throat irritation, and cough suppressants if cough becomes troublesome.  
+- Counsel on vaping cessation; discuss the potential for nicotine or other irritants to exacerbate respiratory symptoms and recommend seeking resources for reduction or quitting.  
+- Monitor for worsening symptoms: increasing shortness of breath, high fever (>38.5 °C), persistent vomiting/diarrhea, chest pain, or new neurological signs. Instruct to seek urgent care if any of these develop.  
+- Arrange follow‑up telehealth visit in 48–72 hours to review COVID test result and clinical status, or sooner if symptoms progress.  
+- No new prescriptions at this time; patient reports no current home medications.  
+- Document that the patient is aware of isolation and symptom monitoring instructions and consents to the plan.

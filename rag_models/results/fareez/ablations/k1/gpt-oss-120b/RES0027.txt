@@ -1,0 +1,90 @@
+Model: openai/gpt-oss-120b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 03:21:26
+Time: 4.06s
+Tokens: 5,995 in / 1,341 out
+============================================================
+
+Patient Information  
+Name: Abbey Eliza Schmitt  
+Date of Birth: September 27, 1965 (Age 60)  
+Sex: Female  
+Address: 291 Franecki Union, Hudson, Massachusetts 01749  
+Medical Record #: 103  
+
+Chief Complaint  
+Dry cough for three days, associated with feverish sensation, chills, night sweats, and fatigue that interferes with sleep.
+
+History of Present Illness  
+Mrs. Schmitt reports the sudden onset of a persistent, dry cough three days ago. The cough has been continuous throughout the day and has progressively worsened. She notes a new sensation of feeling “hot” beginning today and reports mild chills and night sweats last night. She denies any productive sputum, hemoptysis, or purulent nasal discharge. She has not identified any specific triggers such as cold air, smoke, dust, or pet exposure. Over‑the‑counter cough syrup has been tried without relief. The cough disrupts her sleep, leading to marked fatigue and a mild headache. She also describes generalized body aches and a slight sense of malaise. She denies shortness of breath, wheezing, chest pain, palpitations, dizziness, syncope, nausea, vomiting, diarrhea, dysuria, or urinary frequency. She has not measured her temperature. There are no recent upper‑respiratory symptoms such as sore throat, rhinorrhea, or sinus congestion. Her husband has been ill with vomiting and a feeling of being hot for the past two days; he has not sought medical care.
+
+Review of Systems  
+Constitutional: Feverish sensation, chills, night sweats, fatigue, mild headache, generalized body aches.  
+Respiratory: Dry, non‑productive cough present all day; no sputum, hemoptysis, dyspnea, wheezing, or chest pain.  
+Cardiovascular: No palpitations, chest pain, or syncope.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or changes in appetite other than difficulty eating due to coughing.  
+Genitourinary: No dysuria or urinary frequency.  
+Neurologic: No dizziness or focal deficits.  
+ENT: No sore throat, nasal congestion, rhinorrhea, or ear/mucosal discharge.  
+Skin: No rash or lesions.  
+Psychiatric: No anxiety or depressive symptoms reported.  
+
+Past Medical History  
+- Hypothyroidism, on levothyroxine (Synthroid).  
+- Essential hypertension.  
+- Chronic congestive heart failure.  
+- Chronic kidney disease stage 2 secondary to type 2 diabetes mellitus; microalbuminuria present.  
+- Type 2 diabetes mellitus.  
+- Osteoarthritis of the knee.  
+- Chronic low‑back and neck pain.  
+- Prior episode of acute bronchitis in 2015.  
+
+Surgical History  
+- Appendectomy performed in adolescence, uncomplicated.  
+
+Medications (home)  
+- Levothyroxine (Synthroid) – dose not specified.  
+- Amlodipine 2.5 mg daily for hypertension.  
+- Naproxen sodium 220 mg as needed for musculoskeletal pain.  
+- Multivitamin daily.  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+Mrs. Schmitt lives in a townhouse with her husband and two teenage children. She works from home as a marketing professional. She does not smoke cigarettes. Alcohol consumption consists of a glass of wine approximately every three to four days. She reports occasional marijuana use but not on a regular basis. No other recreational drug use. No regular exercise reported.  
+
+Family History  
+- Sister (15 years older) experienced a recent myocardial infarction.  
+- Parents deceased of age‑related causes; no known cardiac or oncologic disease.  
+- No family history of lung disease, diabetes, or cancer reported.  
+
+Vital Signs  
+No current vital signs documented.  
+
+Physical Examination  
+No physical examination findings documented at this encounter.  
+
+Laboratory and Imaging Studies Planned  
+- Nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- Complete blood count with differential.  
+- Basic metabolic panel.  
+- Chest radiograph (PA/Lateral) to assess for infiltrates or other acute pathology.  
+
+Assessment  
+1. Acute bronchitis – most likely viral in etiology, presenting with dry cough, feverish sensation, and constitutional symptoms.  
+2. Rule‑out COVID‑19 infection given recent exposure to a household member with gastrointestinal symptoms and overlapping respiratory signs.  
+3. Chronic comorbidities (hypothyroidism, hypertension, congestive heart failure, chronic kidney disease, type 2 diabetes) noted; stable per patient report.  
+
+Plan  
+- Obtain nasopharyngeal SARS‑CoV‑2 PCR and send CBC, BMP, and chest X‑ray as ordered.  
+- Symptomatic management: advise acetaminophen 500 mg every 6 hours as needed for fever or headache, not to exceed 3 g per day. Consider an over‑the‑counter antitussive containing dextromethorphan if cough remains distressing. Continue current inhaled or oral cough syrup if tolerated.  
+- Encourage increased oral fluid intake, humidified air, and rest.  
+- Advise the patient to monitor temperature at home; if temperature exceeds 38.5 °C (101.3 °F) or if she develops shortness of breath, chest pain, worsening cough, or new sputum production, she should seek medical attention promptly.  
+- Discuss infection control measures at home: isolate as feasible, wear a mask when in shared spaces, practice hand hygiene, and disinfect frequently touched surfaces. Husband should be evaluated by a healthcare provider given his vomiting and feverish symptoms.  
+- Follow‑up: Telephone or telehealth check‑in in 48 hours to review test results and clinical status. If symptoms improve, continue supportive care; if they worsen or new concerning signs appear, arrange in‑person evaluation.  
+- Continue current chronic medications (levothyroxine, amlodipine, naproxen as needed) and monitor for any drug interactions with newly prescribed agents.  
+
+Disposition  
+Patient discharged home with instructions above. No immediate need for emergency department referral at this time.

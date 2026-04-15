@@ -1,0 +1,101 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:15:38
+Time: 4.52s
+Tokens: 10,746 in / 1,592 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Date of Birth: 1920‑09‑24  
+Sex: Female  
+Address: 1056 Reichert Spur Suite 87, Chelsea, Massachusetts 02151  
+Unit/Patient ID: 2871  
+
+Chief Complaint  
+Acute onset of watery diarrhea for the past three to four days.
+
+History of Present Illness  
+The patient reports an abrupt onset of diarrhea that began approximately three to four days ago. She describes the stools as uniformly loose and brown in color, occurring at a frequency of roughly one episode per hour. She denies any visible blood in the stool, although she admits she does not routinely inspect the stool. Approximately two days into the illness she developed intermittent lower abdominal cramping, which she describes as “a bit of a cramp” that is intermittent and began yesterday. She notes that she retains a warning sensation before needing to defecate and can usually reach a toilet in time, though the urgency is high.  
+
+Associated symptoms include nausea and two episodes of vomiting yesterday; the vomitus was watery without blood. The nausea is intermittent. She has not experienced fever, chills, rash, dysuria, or urinary frequency. She denies weight loss, although she has not weighed herself in the past five days. She reports decreased oral intake since the onset of abdominal cramping, preferring to drink water to avoid dehydration. She has not taken any over‑the‑counter antidiarrheal agents.  
+
+She recalls eating a meal at a new Chinese restaurant five days ago (rice with chicken Manchurian). She was accompanied by a friend who has not reported similar symptoms. She does not recall any recent travel, sick contacts, or changes in her usual environment.  
+
+Past Medical History  
+- Asthma (current)  
+- Essential hypertension (chronic)  
+- Prediabetes (chronic)  
+- Anemia (chronic)  
+- Chronic kidney disease, stage 1‑4 (ongoing) secondary to diabetes mellitus  
+- History of renal transplant (ongoing)  
+- Ischemic heart disease (ongoing)  
+- Chronic intractable migraine without aura (ongoing)  
+- History of malignant breast neoplasm (ongoing)  
+- History of malignant colon tumor (resolved)  
+- Multiple prior episodes of stress, social isolation, and intimate partner abuse (historical)  
+
+Past Surgical History  
+- Wisdom teeth extraction (no hospitalization)  
+
+Medications (active)  
+- Asthma inhaler (short‑acting beta‑agonist) – dose and frequency not specified  
+- Tacrolimus extended‑release 1 mg daily (immunosuppression)  
+- Tacrolimus injection 5 mg/ML as needed (immunosuppression)  
+- Simvastatin 20 mg daily (hyperlipidemia)  
+- Metoprolol succinate extended‑release 100 mg daily (ischemic heart disease)  
+- Nitroglycerin 0.4 mg actuat mucosal spray PRN (angina)  
+- Acetaminophen 325 mg as needed (pain)  
+- Acetaminophen/Hydrocodeine 5 mg/300 mg as needed (pain)  
+- Oxycodone extended‑release 15 mg daily (pain)  
+- Acetaminophen/Oxycodone 5 mg/325 mg as needed (pain)  
+- Ibuprofen 200 mg as needed (pain/anti‑inflammatory)  
+- Leucovorin, oxaliplatin, epoetin alfa, sodium fluoride gel, tamoxifen – listed in record but not confirmed as current for this encounter  
+
+Allergies  
+No drug, food, or environmental allergies reported.
+
+Social History  
+The patient is a college student living with two roommates. She reports occasional alcohol consumption, typically one to two drinks on weekends, and denies tobacco or illicit drug use. She reports occasional social drinking but no pattern of heavy use. No recent travel. No known exposure to sick individuals.  
+
+Family History  
+- Brother: history of appendicitis in childhood.  
+- Mother: history of hysterectomy (no further detail).  
+No known family history of gastrointestinal disease, inflammatory bowel disease, or colorectal cancer.
+
+Review of Systems  
+- General: Reports fatigue; temperature not measured, no documented fever.  
+- Gastrointestinal: Diarrhea (watery, brown, hourly) for 3‑4 days; intermittent abdominal cramping; nausea and two episodes of non‑bloody vomiting; decreased oral intake; no dysphagia, no hematemesis, no melena.  
+- Genitourinary: No dysuria, no change in urinary frequency or color.  
+- Constitutional: No chills or rigors.  
+- Dermatologic: No rash or skin changes.  
+- Cardiovascular: No chest pain, palpitations.  
+- Respiratory: No cough or shortness of breath beyond baseline asthma.  
+- Neurologic: No headache reported today; history of chronic migraine.  
+- Psychiatric: Reports stress and fatigue; no depression or anxiety noted.  
+
+Physical Examination  
+No physical exam findings documented for this encounter.
+
+Assessment  
+1. Acute infectious diarrhea, likely viral or bacterial etiology, with accompanying mild dehydration risk.  
+2. Nausea and vomiting, likely secondary to the same gastroenteritis.  
+3. Abdominal cramping associated with diarrhea.  
+4. Chronic comorbidities (asthma, hypertension, prediabetes, CKD, heart disease, post‑transplant immunosuppression) noted, requiring continued monitoring.
+
+Plan  
+- Rehydration: Encourage oral rehydration with electrolyte solutions; advise continued water intake.  
+- Diet: Recommend bland diet (BRAT – bananas, rice, applesauce, toast) while symptoms persist; avoid dairy, fatty, spicy, and high‑fiber foods.  
+- Antidiarrheal therapy: Hold antidiarrheal agents given immunosuppressed status; consider loperamide only if stools become less frequent and no evidence of invasive infection.  
+- Antiemetic: Offer ondansetron 4 mg PO every 8 hours PRN for nausea/vomiting.  
+- Monitoring: Instruct patient to monitor for signs of dehydration (dry mouth, decreased urine output, dizziness), high fever (>38.5 °C), bloody stools, or worsening abdominal pain. Seek urgent care if any develop.  
+- Laboratory evaluation: Obtain stool culture, ova and parasite panel, and Clostridioides difficile toxin assay given recent antibiotic‑naïve status but immunosuppression. Consider basic metabolic panel to assess electrolyte status.  
+- Follow‑up: Telephone follow‑up in 48 hours to reassess hydration status and symptom progression; in‑person visit if no improvement or worsening within 72 hours.  
+- Chronic disease management: Continue current regimen for asthma, hypertension, CKD, and transplant immunosuppression. Ensure tacrolimus levels are monitored per transplant protocol.  
+
+Patient Education  
+Discussed the likely self‑limited nature of acute viral gastroenteritis, the importance of maintaining hydration, signs that warrant urgent evaluation, and the need to avoid over‑the‑counter antidiarrheal medications given her immunosuppressed state. Provided written instructions on oral rehydration solutions and diet modifications.  
+
+Disposition  
+The patient will be managed conservatively on an outpatient basis with close follow‑up as outlined above. No immediate need for hospitalization at this time.

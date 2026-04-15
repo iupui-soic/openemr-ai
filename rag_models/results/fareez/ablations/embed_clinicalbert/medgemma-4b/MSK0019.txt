@@ -1,0 +1,44 @@
+Model: google/medgemma-4b-it
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 05:59:27
+Time: 34.52s
+Tokens: 8,985 in / 579 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Aida Vanesa Reichert, a 46-year-old female, presented to the clinic with complaints of right elbow pain that had been worsening over the past three days. Her date of birth is October 20, 1968, and her medical record number is 2418. She lives at 995 Breitenberg Branch, Plymouth, Massachusetts 02360.
+
+Chief Complaint:
+
+The patient's primary complaint was right elbow pain, which she described as worsening over the past three days.
+
+History of Present Illness:
+
+The patient reported that the pain started approximately three days prior to the encounter. The pain is localized to the right elbow and is exacerbated by gripping motions. She has been resting the elbow to alleviate the pain. She has tried taking Advil, which provided some temporary relief, but the pain returns. The pain is described as achy, but sharp when extending the wrist. The pain is rated as a 6 or 7 out of 10, with 10 being the worst pain she has ever felt. She has never experienced this type of pain before. The pain has been getting worse over the past three days, especially when she is at work using tools. She has not noticed any numbness or tingling. She denies any other pain elsewhere in her body. She has not experienced any headaches, dizziness, chest pain, or shortness of breath. She denies any changes in bowel or bladder function, nausea, vomiting, or changes in vision, hearing, smell, or taste. She denies any fevers or chills. She also denies any rashes.
+
+Past Medical History:
+
+The patient reports being generally healthy with no other significant medical conditions. She has a history of essential hypertension, chronic kidney disease stage 1, and a history of tubal ligation. She also has a criminal record and a history of obesity. She has a family history of knee and hip pain in her father, who is 60 years old.
+
+Medications:
+
+The patient is currently taking Advil for the pain. She reports being up-to-date on her immunizations and having no known allergies.
+
+Social History:
+
+The patient reports drinking wine occasionally, and denies smoking or using marijuana. She lives with her wife and four-year-old daughter.
+
+Physical Exam:
+
+The physical exam revealed tenderness to palpation on the lateral aspect of the elbow, particularly when pressing down on the forearm extensor muscle group. She was able to extend her elbow and wrist without significant pain.
+
+Assessment:
+
+Based on the patient's history and physical exam findings, the most likely diagnosis is tennis elbow (lateral epicondylitis).
+
+Plan:
+
+The plan involves conservative management, including activity modification at work to avoid repetitive gripping motions. The patient was referred to physical therapy for muscle strengthening exercises. If conservative measures fail, operative management may be considered in 6 to 12 months.

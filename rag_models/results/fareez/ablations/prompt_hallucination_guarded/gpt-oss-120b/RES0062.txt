@@ -1,0 +1,76 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:25:35
+Time: 4.43s
+Tokens: 15,013 in / 1,240 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: 1917‑03‑25  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with a three‑day history of cough and recent onset shortness of breath that has been worsening over the past day.
+
+History of Present Illness  
+Three days ago the patient began coughing. The cough is productive, described as “wet,” and produces yellow‑green sputum roughly the size of the tip of his thumb. He denies hemoptysis. The character of the cough is “hacking.” Approximately one day ago he noted increasing shortness of breath, which he rates as 7/10 in severity. The dyspnea is present at rest and occasionally is accompanied by wheezing when the shortness of breath is most severe. The symptoms have been continuous throughout the day and night, disturbing his sleep. He also reports generalized fatigue, weakness, mild muscle aches, and a vague abdominal ache. He notes a recent loss of smell (anosmia) after being unable to smell a candle; he does not report loss of taste. He feels “a little hot” but denies chills, night sweats, fever measured, or recent weight loss. He has no chest pain, palpitations, dizziness, syncope, confusion, or memory changes. He denies sore throat, rhinorrhea, nasal congestion, visual or auditory changes, urinary symptoms, or gastrointestinal upset other than mild abdominal discomfort.
+
+Review of Systems  
+- Constitutional: Fatigue, mild weakness; no documented fever, chills, night sweats, or weight loss.  
+- Respiratory: Productive cough with yellow‑green sputum, wheezing noted during episodes of severe dyspnea, shortness of breath (7/10). No chest pain.  
+- Cardiovascular: History of atrial fibrillation, currently stable; no palpitations, chest pain, or edema.  
+- Gastrointestinal: Mild abdominal ache; no nausea, vomiting, diarrhea, constipation, or hematochezia.  
+- ENT: Loss of smell; no sore throat, rhinorrhea, or nasal obstruction.  
+- Neurologic: No dizziness, syncope, confusion, or memory loss.  
+- Musculoskeletal: Mild body aches.  
+- Others: No visual or hearing changes, no urinary symptoms.
+
+Allergies  
+Sulfa – causes rash (historical reaction).
+
+Past Medical History  
+- Atrial fibrillation (diagnosed approximately four years ago; currently managed with metoprolol).  
+- No other chronic illnesses were discussed during this encounter.
+
+Surgical History  
+- Inguinal hernia repair performed about 15 years ago; no reported complications.
+
+Social History  
+- Former cigarette smoker, 1 pack per day, quit five years ago when atrial fibrillation was diagnosed.  
+- Occasionally consumes low‑dose CBD edibles (approximately 2.5 mg) to aid sleep; no other recreational drug use.  
+- No current alcohol use; previously drank but stopped several years ago.  
+- Lives in a house with his wife; home has been renovated, no known mold or asbestos concerns.  
+- Recent exposure: Visited his mother at a long‑term care facility one week ago; facility is experiencing a COVID‑19 outbreak.  
+- No recent travel.  
+
+Family History  
+- Aunt with lung cancer (smoked heavily). No other family history of cardiac or pulmonary disease reported.
+
+Current Medications (as reported by the patient)  
+- Metoprolol (beta‑blocker for atrial fibrillation)  
+- Statin (unspecified)  
+- Low‑dose baby aspirin (for cardiovascular prophylaxis)  
+
+Objective  
+Vital Signs: Not assessed during this encounter.  
+Physical Examination: Not assessed during this encounter.  
+Laboratory and Imaging Studies: No laboratory or imaging results were obtained or reviewed during this visit.  
+
+Assessment  
+1. Acute lower respiratory infection – likely viral in etiology (possible COVID‑19 given recent exposure, anosmia, and systemic symptoms).  
+2. Bacterial pneumonia remains a differential diagnosis given productive yellow‑green sputum and wheezing.  
+3. Atrial fibrillation – stable on current therapy.  
+
+Plan  
+- Diagnostic Testing: Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR. If the result is positive, public health will be notified for contact tracing.  
+- Isolation: Advise the patient to self‑isolate for at least 14 days from symptom onset or until symptom resolution, whichever is longer, and to limit contact with household members, especially his wife.  
+- Symptomatic Management: Encourage adequate hydration, use of antipyretics (e.g., acetaminophen) as needed for fever or discomfort, and use of his rescue inhaler (if prescribed previously) for wheezing.  
+- Monitoring: Instruct the patient to monitor temperature, oxygen saturation (if a pulse oximeter is available), and worsening dyspnea. Seek urgent care if he develops high‑grade fever, increasing shortness of breath, chest pain, or confusion.  
+- Antibiotic Consideration: If symptoms do not improve within 5‑7 days or if clinical suspicion for bacterial pneumonia increases, a follow‑up evaluation will be arranged to consider empiric antibiotics.  
+- Continue Current Medications: Maintain metoprolol, statin, and aspirin as previously prescribed. Review dosage and necessity of aspirin at the next visit, given his atrial fibrillation.  
+- Follow‑up: Telephone or telemedicine follow‑up in 48‑72 hours to review COVID‑19 test results and clinical status. Earlier evaluation if condition worsens.  
+- Preventive Care: Confirm that pneumococcal and shingles vaccinations are up to date (patient reports they are).  
+
+The patient verbalized understanding of the plan and agreed to the outlined steps. No additional questions were raised.

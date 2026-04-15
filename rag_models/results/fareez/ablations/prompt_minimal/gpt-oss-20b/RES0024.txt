@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-20b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 04:27:51
+Time: 3.31s
+Tokens: 11,601 in / 1,388 out
+============================================================
+
+**Patient Information**  
+Name: Aaron Bartoletti  
+DOB: 03 Aug 1981 (42 years)  
+Sex: Male  
+Address: 409 Veum Drive, Spencer, Massachusetts 01562  
+Phone: [contact number]  
+Insurance: [plan details]  
+
+---  
+
+### Subjective  
+**Chief Complaint:** Sudden onset of loss of smell (anosmia) for the past 2 days.  
+
+**History of Present Illness (HPI):**  
+Aaron reports that for the last two days he has not been able to smell or taste his food. He has no other complaints of malaise, fever, cough, congestion, sore throat, headache, chest pain, palpitations, abdominal pain, urinary symptoms, or recent weight changes. He mentions mild fatigue but denies shortness of breath or dyspnea. He is concerned about a possible COVID‑19 infection given the association of anosmia with the virus.  
+
+**Review of Systems (ROS):**  
+- **Constitutional:** No fever, chills, night sweats, weight change, or malaise.  
+- **Respiratory:** No cough, sputum, wheeze, shortness of breath, or chest pain.  
+- **Cardiovascular:** No palpitations or chest pain.  
+- **Gastrointestinal:** No nausea, vomiting, diarrhea, or constipation.  
+- **Genitourinary:** No dysuria or frequency.  
+- **Neurologic:** No headaches, dizziness, or focal deficits.  
+- **Ear/ENT:** No ear pain, tinnitus, or visual changes.  
+- **Dermatologic:** Eczema present; no new rashes.  
+- **Psychiatric:** No anxiety or depression symptoms reported at this time.  
+
+**Allergies:**  
+- Peanut allergy (anaphylaxis history; EpiPen prescribed and used in childhood).  
+- No known drug allergies.  
+
+**Past Medical History (PMH):**  
+- Eczema (atopic dermatitis).  
+- Essential hypertension (diagnosed 2003; controlled on antihypertensives).  
+- Chronic kidney disease stage 4 (diagnosed 2015; awaiting kidney transplant).  
+- End‑stage renal disease (diagnosed 2017).  
+- History of viral sinusitis and chronic sinus inflammation.  
+- Migraine without aura.  
+- Chronic pain (unspecified).  
+
+**Surgical History:**  
+- None reported.  
+
+**Social History:**  
+- Lives with boyfriend (no other household members).  
+- No tobacco use.  
+- Occasional marijuana (edibles).  
+- Alcohol: 2 beers on weekends.  
+- No illicit drug use.  
+- Sexually active with boyfriend; no recent STI diagnoses.  
+
+**Family History:**  
+- Mother: No known disease.  
+- Father: No known disease.  
+- Uncle: Prostate cancer.  
+- No family history of heart or lung disease, or anosmia.  
+
+**Medications:**  
+- Oral birth control (started ~3 years ago).  
+- Topical steroid cream for eczema (used a few times per week during flares).  
+- No current prescription medications listed from transplant or antihypertensives; patient reports none.  
+
+### Objective  
+**Vital Signs:** Not documented in this encounter (patient was asymptomatic).  
+
+**Physical Examination:** Not performed; patient was in the office for a brief assessment.  
+
+**Laboratory Results:** (Recent, not drawn at visit)  
+- **Complete Blood Count (CBC):**  
+  - WBC 3.54 × 10³/µL (low normal)  
+  - Hemoglobin 16.36 g/dL (normal)  
+  - Hematocrit 48.6% (normal)  
+  - Platelets 208 × 10³/µL (normal)  
+- **Lipid Panel:**  
+  - Total Cholesterol 186.6 mg/dL (borderline high)  
+  - LDL 98.1 mg/dL (acceptable)  
+  - HDL 62.3 mg/dL (protective)  
+  - Triglycerides 130.7 mg/dL (normal)  
+- **Psychological Screening:**  
+  - PHQ‑9 24 (moderate‑severe depression)  
+  - PHQ‑2 2 (screen positive)  
+  - GAD‑7 3 (minimal anxiety)  
+- No other labs or imaging were obtained during this visit.  
+
+### Assessment  
+1. **Acute Anosmia (Loss of Smell)** – most likely viral in origin (e.g., COVID‑19 infection).  
+2. **Suspected COVID‑19 infection** – patient’s presentation (anosmia, mild fatigue) raises high index of suspicion.  
+3. **Chronic conditions** – hypertension, CKD stage 4/ESRD, and eczema are stable and unrelated to the current complaint.  
+
+### Plan  
+**COVID‑19 Management**  
+- Order a rapid SARS‑CoV‑2 PCR test (nasopharyngeal swab).  
+- Advise self‑isolation at home until results are available; isolate for 14 days if positive.  
+- Monitor for development of fever, cough, shortness of breath, or worsening anosmia.  
+
+**Supportive Care**  
+- Encourage nasal saline irrigation and adequate hydration.  
+- Rest and avoidance of irritants.  
+- Continue current birth control and eczema therapy.  
+
+**Follow‑Up**  
+- Telehealth check‑in in 48–72 hrs or sooner if symptoms worsen.  
+- If COVID‑19 test is positive, follow public health guidance and consider antiviral therapy per current guidelines.  
+- If anosmia persists >6 weeks, schedule ENT referral for further evaluation (possible sinonasal pathology, neurologic assessment).  
+
+**Patient Education**  
+- Explain that anosmia can be a common early symptom of COVID‑19 and may resolve spontaneously.  
+- Discuss the importance of wearing a mask if around others, even if asymptomatic.  
+- Review EpiPen use and when to seek emergency care for anaphylaxis.  
+
+**Disposition**  
+- Patient advised to stay home and isolate.  
+- Contact provider if new respiratory symptoms develop.  
+- No discharge medication changes needed at this time.  
+
+---  
+
+**Signature**  
+[Provider Name, Credentials]  
+[Date]

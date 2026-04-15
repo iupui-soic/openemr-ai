@@ -1,0 +1,97 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 03:15:06
+Time: 5.91s
+Tokens: 33,134 in / 1,680 out
+============================================================
+
+Patient Information:
+Adan Wehner is a male born on February 7, 1923, currently residing at 738 Lehner Avenue Apt 69, Groton, Massachusetts 01450. He lives with his wife in a small apartment. He is employed as a construction worker and has been in this occupation for approximately ten years.
+
+Chief Complaint:
+The patient reports difficulty extending the fourth and fifth digits of his right hand, accompanied by small nodules at the bases of those fingers. He states that the problem began about two months ago and has been gradually worsening.
+
+History of Present Illness:
+Mr. Wehner describes an aching discomfort over the past two months that is exacerbated when he attempts to extend the affected fingers. He notes the presence of palpable nodules at the metacarpophalangeal (MCP) region of the fourth and fifth digits. Pressing on the nodules causes only mild discomfort, and there is no significant pain at rest. He reports a sensation of “catching” when he tries to fully extend the fingers, and passive extension performed by the examiner is more painful than active extension. There is no associated redness, swelling, warmth, fever, chills, night sweats, or systemic symptoms. He denies any prior trauma to the hand, numbness, tingling, weakness, or other neurologic deficits. The patient has not tried any treatments, exercises, or medications for this problem and is concerned that continued work activity may cause further deterioration.
+
+Review of Systems:
+General: No fever, chills, weight loss, fatigue, or night sweats.  
+Skin: No rashes, itching, or changes to nails or hair.  
+HEENT: No headaches, vision changes, hearing loss, sore throat, cough, nasal congestion, or sinus symptoms.  
+Respiratory: No shortness of breath, wheezing, or chest pain.  
+Cardiovascular: No palpitations, light‑headedness, or dizziness.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria or urinary frequency.  
+Musculoskeletal: Difficulty extending the right fourth and fifth fingers; no pain or swelling elsewhere.  
+Neurologic: No numbness, tingling, weakness, or other sensory changes.  
+Psychiatric: No memory loss, confusion, or mood changes.  
+
+Past Medical History:
+- Prediabetes (onset 1948) evolving to Type 2 diabetes mellitus.  
+- Chronic kidney disease, currently stage 4 with an estimated GFR of 24 mL/min/1.73 m².  
+- Essential hypertension.  
+- Hypertriglyceridemia and metabolic syndrome.  
+- Obesity (BMI ≈ 27.6).  
+- Localized primary osteoarthritis of the hand.  
+- Ischemic heart disease with documented coronary imaging abnormalities.  
+- Chronic intractable migraine without aura.  
+- Prostate neoplasm (carcinoma in situ).  
+- History of an ACL repair at age 18.  
+- Alzheimer’s disease.  
+- Past episodes of sepsis and anemia.  
+
+Medications:
+According to the patient’s current report, he is taking a statin for hypercholesterolemia. (All other medications listed in the electronic record are not confirmed as current by the patient.)
+
+Allergies:
+The patient reports no known drug, food, or environmental allergies.
+
+Social History:
+- Tobacco: Smokes approximately one pack of cigarettes per day for the past ten years.  
+- Alcohol: Consumes one to two alcoholic drinks daily, occasionally three.  
+- Illicit substances: Uses marijuana a few times per month; denies use of other recreational or intravenous drugs.  
+- Occupational exposure: Repetitive hand vibration, frequent drilling, and heavy lifting as part of construction work. No recent puncture wounds or splinters noted.  
+- Travel: No recent travel.  
+- Living situation: Lives with spouse; no known exposure to ill individuals.
+
+Family History:
+The patient is unaware of any family history of musculoskeletal, neurological, or autoimmune diseases, including Dupuytren’s contracture, rheumatoid arthritis, or hypothyroidism.
+
+Physical Examination:
+General: Alert, cooperative male in no acute distress.  
+Extremities: Right hand shows firm, pea‑size nodules at the ulnar side of the MCP joints of the fourth and fifth digits. No erythema, warmth, or overt swelling. Palpation over the nodules elicits mild discomfort but no sharp pain. Passive extension of the fourth and fifth fingers is limited by a catching sensation and is more painful than active extension. No crepitus or audible clicking is noted. No visible atrophy of thenar or hypothenar musculature. Wrist and elbow examinations are unremarkable. No other joint deformities or skin changes are observed.
+
+Laboratory Data (most recent):
+- Glucose: 120.4 mg/dL  
+- Blood urea nitrogen: 8.2 mg/dL  
+- Creatinine: 2.22 mg/dL (estimated GFR ≈ 24 mL/min/1.73 m²)  
+- Electrolytes: Na 137 mmol/L, K 4.4 mmol/L, Cl 104 mmol/L, CO₂ 21.9 mmol/L  
+- Calcium: 9.8 mg/dL  
+- Urine glucose, bilirubin, and ketones detected on dipstick.  
+
+Assessment / Impression:
+1. Dupuytren’s contracture of the right fourth and fifth digits, likely early stage with nodular formation and limited extension.  
+2. Chronic kidney disease stage 4, currently stable.  
+3. Type 2 diabetes mellitus, moderately controlled.  
+4. Hypertension, on long‑standing therapy.  
+5. Hyperlipidemia, managed with a statin (patient reports use).  
+6. Occupational exposure to hand vibration and repetitive stress, contributing to hand symptoms.
+
+Plan:
+- Hand Specialty Referral: Schedule an appointment with a hand surgeon or hand therapist for further evaluation, possible collagenase clostridium histolyticum injection, or surgical fasciectomy if contracture progresses.  
+- Physical Therapy: Initiate a hand‑stretching and strengthening program focusing on gentle passive extension of the affected digits, with activity modification to limit prolonged vibration exposure.  
+- Imaging: Obtain a high‑resolution ultrasound or MRI of the right palm to assess the extent of fascial thickening and rule out flexor tendon pathology.  
+- Laboratory Work‑up: Order CBC, comprehensive metabolic panel, ESR, and CRP to exclude inflammatory or infectious processes.  
+- Pain Management: Recommend non‑steroidal anti‑inflammatory drugs (NSAIDs) only if renal function allows; otherwise, use acetaminophen as needed for discomfort.  
+- Chronic Disease Management: Continue current statin therapy; review antihypertensive and diabetic regimens at the next primary‑care visit, with attention to renal dosing adjustments.  
+- Smoking Cessation: Offer counseling and pharmacologic aids (e.g., nicotine replacement, varenicline) to reduce tobacco use.  
+- Alcohol Use: Counsel on limiting intake to ≤ 1 drink per day given renal and hepatic considerations.  
+- Follow‑up: Return to clinic in 4–6 weeks after hand‑therapy initiation to assess functional improvement and discuss definitive treatment options.  
+
+Patient Education:
+The patient was educated on the nature of Dupuytren’s contracture, the importance of early intervention, and the role of hand therapy in preserving finger motion. He was advised to avoid prolonged gripping, heavy vibration, and repetitive strain until further evaluation. Smoking cessation and moderation of alcohol intake were emphasized as part of overall health optimization.  
+
+Signature:
+[Physician’s name], MD  
+Date: 2022‑04‑13

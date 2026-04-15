@@ -1,0 +1,95 @@
+Model: openai/gpt-oss-20b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:36:12
+Time: 4.18s
+Tokens: 16,349 in / 1,475 out
+============================================================
+
+Patient Information  
+Name: Abel Cummerata  
+Date of Birth: March 25, 1917  
+Sex: Male  
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a three‑day history of a wet cough producing yellow‑green sputum and a progressive shortness of breath that began approximately one day after the cough started.  
+
+History of Present Illness  
+The patient reports that the cough began about three days ago and has been persistent throughout the day and night. The sputum is described as yellow‑green, roughly the size of a thumb tip, without frank blood, pus, or froth. The cough is hacking in character and has not been associated with any known triggers such as pollen, pets, or particular times of day. Shortness of breath developed within the last 24 hours, is severe enough to interrupt sleep (rated 7 out of 10), and has been accompanied by mild wheezing when the patient feels more dyspneic. The patient denies chest pain, palpitations, dizziness, syncope, confusion, or memory loss. He reports feeling weak, fatigued, and experiencing mild abdominal discomfort. He has noted a loss of sense of smell but no loss of taste. There is no reported fever, night sweats, chills, weight loss, or changes in bowel habits. The patient has not had a runny or blocked nose, sore throat, or nasal congestion. He reports no recent travel and no known contact with sick individuals other than a visit to a long‑term care facility one week ago, where a COVID‑19 outbreak had been reported.  
+
+Review of Systems  
+Constitutional: Mild subjective fever; no chills, night sweats, or weight changes.  
+Respiratory: Cough producing yellow‑green sputum, dyspnea (7/10), mild wheezing, no hemoptysis.  
+Cardiovascular: No chest pain, palpitations, or syncope; known atrial fibrillation with stable heart rate on metoprolol.  
+Gastrointestinal: Mild abdominal ache; no nausea, vomiting, diarrhea, constipation, or blood in stool.  
+Neurologic: No dizziness, fainting, confusion, or memory loss.  
+ENT: No sore throat, nasal congestion, or discharge; loss of smell noted.  
+Musculoskeletal: Mild body aches and weakness.  
+Dermatologic: No rash or skin changes.  
+Psychiatric: No depression or anxiety reported.  
+Sleep: Difficulty sleeping due to cough and dyspnea; uses CBD edibles for sleep.  
+
+Past Medical History  
+- Atrial fibrillation diagnosed approximately four years ago; currently managed with metoprolol.  
+- Hypertension (essential) noted in prior records.  
+- Inguinal hernia repair performed 15 years ago.  
+- No prior episodes of pneumonia or chronic lung disease reported by the patient.  
+
+Surgical History  
+- Inguinal hernia repair (15 years ago).  
+
+Medications  
+- Metoprolol (dose unspecified).  
+- Statin (type and dose unspecified).  
+- Baby aspirin (aspirin, low dose).  
+- Cannabidiol edibles (low‑dose, used for sleep, approximate 2.5 mg per dose).  
+- The patient is not taking any antibiotics at present.  
+
+Allergies  
+- Sulfa drug allergy; history of rash following a sulfa‑containing antibiotic.  
+
+Social History  
+- Former smoker; quit approximately five years ago after smoking one pack of cigarettes per day.  
+- No alcohol consumption.  
+- Recreational drug use: none.  
+- Living with wife in a renovated house; no exposure to mold, asbestos, or other environmental hazards.  
+
+Family History  
+- Aunt with a history of lung cancer (smoking history).  
+- No known family history of heart disease, lung disease, or other cancers.  
+
+Vital Signs  
+No vital sign data were recorded during this encounter.  
+
+Physical Examination  
+No physical examination findings were documented in the encounter.  
+
+Laboratory Results  
+- White blood cell differential: neutrophils 13.66 %, monocytes 9.46 %, basophils 3.05 %.  
+- Ferritin markedly elevated at 1853 µg/L.  
+- Hematocrit 43.34 %.  
+- Hemoglobin not documented.  
+- Platelets, RBC indices, and other standard panels not reported.  
+- Renal function: urea nitrogen 17.88 mg/dL; creatinine not listed.  
+- Electrolytes: potassium 4.04 mmol/L.  
+- Liver enzymes: AST 15.30 U/L; ALT 15.30 U/L (within normal limits).  
+- Coagulation: Prothrombin time 11.90 s.  
+- Arterial blood gas: bicarbonate 24.31 mmol/L; partial pressure of CO₂ 41.94 mmHg.  
+
+Assessment  
+1. Acute viral respiratory illness, likely COVID‑19 infection given exposure history and symptom profile, with evidence of lower respiratory tract involvement (cough, dyspnea, wheeze, radiographic suspicion of pneumonia).  
+2. Atrial fibrillation, well‑controlled on metoprolol.  
+
+Plan  
+- Obtain a SARS‑CoV‑2 PCR swab and send for laboratory confirmation; isolate for 14 days pending results.  
+- Provide symptomatic treatment: acetaminophen for fever and pain; encourage adequate hydration and rest.  
+- Monitor oxygen saturation and respiratory status; consider pulse oximetry at home if symptoms worsen.  
+- Discuss potential empirical antibiotic therapy should the patient fail to improve or develop worsening signs of bacterial pneumonia (e.g., increased sputum purulence, rising temperature, worsening hypoxia).  
+- Continue current cardiovascular medications (metoprolol, statin, aspirin) unchanged.  
+- Counsel on sleep hygiene; consider alternative sleep aids such as melatonin or prescription options if CBD edibles remain inadequate.  
+- Reassess in clinic or via telehealth in 48–72 hours or sooner if symptoms worsen.  
+- Ensure patient is up‑to‑date with vaccinations (influenza, COVID‑19 booster, pneumococcal) and schedule a follow‑up appointment to review test results and adjust management accordingly.  
+
+Follow‑up Instructions  
+The patient should remain in isolation for 14 days and contact the clinic if oxygen saturation falls below 94 %, if he experiences worsening cough, dyspnea, or new chest pain. He should seek emergent care if he develops signs of respiratory distress, confusion, or fainting. He is advised to maintain fluid intake, monitor symptoms, and use the prescribed over‑the‑counter analgesic for comfort. The next scheduled visit will occur after receipt of the PCR result to determine further therapeutic steps.

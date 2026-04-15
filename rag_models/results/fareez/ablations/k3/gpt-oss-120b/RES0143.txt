@@ -1,0 +1,84 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 03:25:55
+Time: 3.85s
+Tokens: 6,905 in / 1,236 out
+============================================================
+
+Patient Information  
+Name: Aaron McClure  
+Date of Birth: 1934‑04‑26 (age 92 years) – however the patient describes himself as a university student currently living at home with his parents while attending virtual classes, indicating a much younger functional status.  
+Sex: Male  
+Address: 839 Turner Stravenue, Springfield, Massachusetts 01106  
+
+Chief Complaint  
+Dry cough of two‑week duration accompanied by a clear rhinorrhea that began one week ago.
+
+History of Present Illness  
+The patient reports a dry, non‑productive cough that started approximately 14 days ago. The cough was most severe during the prior week but has modestly improved; however, it persists longer than any previous cough he recalls. About one week after the cough began, he developed a clear, watery nasal discharge. He denies any sputum production, hemoptysis, or purulent nasal secretions. He notes occasional nasal congestion that modestly reduced his sense of smell, although taste remains normal. He denies sore throat, hoarseness, dyspnea, chest pain, palpitations, or wheezing. He reports two evenings last week when he felt chilly and experienced mild chills, but he has not had a measured fever. No night sweats, unexplained weight loss, gastrointestinal symptoms, musculoskeletal aches, or neurologic deficits have been noted. The patient’s mother experienced a similar “sniffles” illness the week prior but was not tested for COVID‑19. The patient has not traveled outside the province and has not been in close contact with anyone known to have COVID‑19. He is seeking evaluation to determine the cause of his prolonged cough and to inquire about the need for antibiotics.
+
+Review of Systems  
+Constitutional: No documented fever, chills limited to two nights, no weight loss, no night sweats.  
+Respiratory: Dry cough for two weeks, clear rhinorrhea for one week, mild nasal congestion, no dyspnea, chest pain, wheezing, or hemoptysis.  
+ENT: Decreased sense of smell when congested, no sore throat, no ear pain, no visual changes, no eye redness or tearing.  
+Cardiovascular: No palpitations, no chest discomfort.  
+Gastrointestinal: No nausea, vomiting, diarrhea, constipation, or abdominal pain.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: No myalgias or joint pain.  
+Neurologic: No headaches, dizziness, numbness, or tingling.  
+Psychiatric: No reported anxiety or depression.  
+Skin: No rash.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.
+
+Past Medical History  
+The patient reports no chronic medical conditions. (Historical EMR entries list numerous past diagnoses, but the patient denies any current problems; therefore, the current encounter records no active past medical history.)
+
+Surgical History  
+No surgical procedures reported.
+
+Medications  
+The patient reports taking no prescription, over‑the‑counter, herbal, or vitamin medications.
+
+Family History  
+Father has a history of high cholesterol. No other significant family medical history reported.
+
+Social History  
+The patient is a university student currently residing at his parents’ home while engaged in virtual learning. He lives with both parents. He reports occasional alcohol consumption on weekends while at school. He has experimented with tobacco smoking a few times and has tried marijuana on four to five occasions; neither habit is current or regular. He denies use of any other recreational drugs. No regular exercise reported.
+
+Physical Examination  
+A focused physical examination was planned but not yet performed at the time of documentation. No objective findings are available.
+
+Vital Signs  
+No vital signs were recorded during this encounter.
+
+Assessment / Impression  
+1. Acute viral upper respiratory infection (common cold) – clinical presentation of dry cough, clear rhinorrhea, mild congestion, and limited systemic symptoms is most consistent with a self‑limited viral process.  
+2. Rule out SARS‑CoV‑2 infection – given recent household exposure to a symptomatic adult and the ongoing pandemic, COVID‑19 remains a differential diagnosis.  
+
+Plan  
+
+Diagnostics  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR testing. Results are expected within 24–48 hours; public health will be notified of a positive result.  
+- No additional laboratory testing is indicated at this time.
+
+Therapeutic Measures  
+- No antibiotics are indicated for an uncomplicated viral upper respiratory infection.  
+- Recommend supportive care: adequate hydration, rest, and use of over‑the‑counter antipyretics or analgesics (e.g., acetaminophen) as needed for discomfort.  
+- If nasal congestion is bothersome, a saline nasal spray or topical decongestant may be used for short‑term relief.  
+- Encourage use of a humidifier and avoidance of irritants (e.g., smoke, strong odors).
+
+Patient Education & Self‑Management  
+- Instruct the patient to self‑isolate at home until a negative COVID‑19 result is obtained or until symptom resolution, per local public health guidelines.  
+- Advise the patient to monitor temperature twice daily; seek care if fever >38 °C, worsening cough, shortness of breath, chest pain, or new systemic symptoms develop.  
+- Counsel on proper hand hygiene, mask use when around others, and avoidance of close contact with household members, especially the mother who has recent upper respiratory symptoms.  
+
+Follow‑Up  
+- The patient will be contacted by public health if the COVID‑19 test is positive.  
+- If the COVID‑19 test is negative and symptoms persist beyond 10 days without improvement, schedule a follow‑up visit for reassessment.  
+- The patient may return sooner if concerning symptoms arise.  
+
+Disposition  
+The patient was advised to remain at home, self‑monitor, and await COVID‑19 test results. No prescription medications were given at this time.

@@ -1,0 +1,128 @@
+Model: openai/gpt-oss-120b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:03:54
+Time: 5.68s
+Tokens: 15,271 in / 1,740 out
+============================================================
+
+Patient Information  
+Name: Abel Wunsch  
+Medical Record Number: 388  
+Date of Birth: June 7, 1932 (Age 93)  
+Sex: Male  
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952  
+
+Chief Complaint  
+Chest pain and shortness of breath of five days’ duration.  
+
+History of Present Illness  
+Mr. Wunsch reports the onset of a persistent, sharp, lingering pain localized to the left side of his chest five days ago while he was seated on his couch. He describes the pain as “tiny” but constant, without radiation to other areas. The discomfort worsens with deep inspiration and with mild exertion such as walking to retrieve the mail. He notes that he becomes “unable to catch his breath” during these activities. Over‑the‑counter analgesics (acetaminophen and ibuprofen) provide only minimal relief. He denies any associated fever, chills, nausea, vomiting, cough, sputum production, wheezing, palpitations, light‑headedness, syncope, or recent trauma. Prior to this episode he was asymptomatic and able to walk up to approximately five kilometers without difficulty. He reports a slight increase in fatigue secondary to the dyspnea.  
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, or weight loss.  
+Respiratory: Dyspnea on exertion; pleuritic chest pain; no cough, sputum, or wheezing.  
+Cardiovascular: No chest pressure radiating elsewhere, no palpitations, no known arrhythmias, no orthopnea or paroxysmal nocturnal dyspnea.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or changes in bowel habits.  
+Genitourinary: No dysuria, hematuria, or recent urinary changes.  
+Musculoskeletal: No joint or muscle pain.  
+Neurologic: No headache, dizziness, or syncope.  
+Psychiatric: No anxiety or depression reported beyond baseline.  
+Skin: No rashes or lesions.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 1954)  
+- Obesity (BMI 33.29)  
+- Chronic kidney disease (stages 1‑3 historically, now status post kidney transplant)  
+- History of renal transplant (2011) with ongoing tacrolimus therapy  
+- Ischemic heart disease  
+- Chronic congestive heart failure  
+- Hyperlipidemia (on simvastatin)  
+- Chronic sinusitis  
+- History of opioid abuse (remote)  
+
+Surgical History  
+- Hysterectomy performed approximately one month ago (patient reports recent gynecologic surgery)  
+- Wisdom teeth extraction (adolescence)  
+- Kidney transplant (2011)  
+- Laceration of thigh (2008)  
+
+Social History  
+Mr. Wunsch lives with his husband and two teenage children. He is employed as an accountant. He consumes approximately one glass of wine on weekends and denies other regular alcohol use. He currently smokes about five cigarettes per day and is attempting to reduce his tobacco use. He reports prior occasional marijuana use but none in the recent past. He has not traveled recently.  
+
+Family History  
+Mother experienced a myocardial infarction in her 70s. No known family history of cancer, bleeding disorders, or thromboembolic disease.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Current Medications (home)  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Lisinopril 10 mg daily  
+- Amlodipine 2.5 mg daily  
+- Simvastatin 20 mg nightly  
+- Clopidogrel 75 mg daily  
+- Sertraline 100 mg daily  
+- Tacrolimus (extended‑release) 5 mg daily  
+- Furosemide 40 mg daily (as needed)  
+- Acetaminophen 325 mg as needed for pain  
+- Ibuprofen 200 mg as needed for pain  
+
+Vital Signs (most recent)  
+Heart Rate: 79 beats/min  
+Respiratory Rate: 15 breaths/min  
+Blood Pressure: Not documented in this encounter  
+Temperature: Not documented  
+SpO₂: Not documented  
+Weight: Not documented  
+
+Physical Examination  
+No physical examination findings were documented during this encounter.  
+
+Laboratory Data (most recent)  
+- White blood cell count: 9.5 ×10³/µL (within normal limits)  
+- Hemoglobin: 16.9 g/dL (normal)  
+- Hematocrit: 47.5 % (normal)  
+- Platelets: 297 ×10³/µL (normal)  
+- Serum electrolytes: Na 142.9 mmol/L, K 3.73 mmol/L, Cl 102.3 mmol/L, CO₂ 23.2 mmol/L (all within normal limits)  
+- Glucose: 82.8 mg/dL (normal)  
+- BUN: 10.5 mg/dL, Creatinine: 0.88 mg/dL, eGFR (MDRD): 158 mL/min/1.73 m² (stable renal function)  
+- Calcium: 8.79 mg/dL (normal)  
+- No cardiac biomarkers (troponin, CK‑MB) were reported.  
+
+Imaging  
+No imaging studies have been performed or documented at this time.  
+
+Assessment  
+1. Acute pleuritic chest pain with exertional dyspnea – clinical picture raises concern for pulmonary embolism (PE) pending further work‑up.  
+2. Known ischemic heart disease and chronic congestive heart failure – cannot exclude acute coronary syndrome (ACS) as a contributor to chest discomfort.  
+3. Recent hysterectomy (≈1 month ago) – postoperative state adds to venous thromboembolic risk.  
+4. Hypertension, hyperlipidemia, and obesity – ongoing cardiovascular risk factors.  
+5. Chronic kidney disease with stable post‑transplant function – continued immunosuppression with tacrolimus.  
+
+Plan  
+Diagnostic Studies  
+- Obtain a 12‑lead electrocardiogram to evaluate for ischemic changes or right‑heart strain.  
+- Order cardiac enzymes (high‑sensitivity troponin) to rule out myocardial injury.  
+- Perform a D‑dimer assay; if elevated, proceed with computed tomography pulmonary angiography (CTPA) to assess for PE.  
+- Obtain a chest radiograph to evaluate for alternative pulmonary pathology.  
+
+Therapeutic Interventions  
+- Hold further NSAID use until cardiac work‑up is completed; continue acetaminophen for pain as needed.  
+- Continue current antihypertensive and heart‑failure regimen (lisinopril, amlodipine, metoprolol, furosemide) pending hemodynamic stability.  
+- Maintain clopidogrel therapy; discuss with cardiology regarding need for additional antiplatelet or anticoagulant therapy based on diagnostic results.  
+
+Patient Education & Counseling  
+- Discuss signs and symptoms of worsening dyspnea, chest pain, or syncope and advise immediate emergency department evaluation if they occur.  
+- Reinforce smoking cessation efforts; offer referral to tobacco cessation program.  
+- Advise limited physical exertion until PE and ACS are excluded.  
+
+Follow‑Up  
+- Review laboratory and imaging results within 24 hours; arrange a follow‑up visit with primary care and cardiology within 3‑5 days.  
+- If PE is confirmed, initiate anticoagulation per institutional protocol and arrange hematology/vascular follow‑up.  
+- If ACS is suspected, admit for cardiac monitoring and management per cardiology guidelines.  
+
+Disposition  
+Patient is to remain in the outpatient setting pending diagnostic work‑up. He was provided with written instructions and a direct phone line for urgent concerns.  
+
+Prepared by: _______________________   Date: ____________   (Physician)

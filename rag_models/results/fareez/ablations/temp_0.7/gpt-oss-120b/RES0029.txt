@@ -1,0 +1,125 @@
+Model: openai/gpt-oss-120b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:11:49
+Time: 6.27s
+Tokens: 10,302 in / 2,000 out
+============================================================
+
+Patient Information  
+Name: Alyson Laila Leuschke  
+Date of Birth: February 28 1921 (Age 105)  
+Sex: Female  
+Address: 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890  
+Primary Care Provider: Not listed  
+
+Chief Complaint  
+Chest pain following a fall from a bicycle, described as stabbing pain localized to the left side of the chest, onset 2 hours ago.
+
+History of Present Illness  
+The patient is a 105‑year‑old female who presented to the emergency department after falling from a bicycle approximately two hours prior to arrival. She reports that the impact of the fall was directly onto her left chest wall. Since the fall she has experienced constant, sharp, “stabbing” pain over the entire left hemithorax. The pain is aggravated by deep inspiration and is partially relieved by taking very shallow, slow breaths. She notes that the discomfort has progressively worsened since onset. She denies any loss of consciousness, head injury, or helmet removal; she was wearing a helmet at the time of the fall. She reports mild shortness of breath that she attributes to the need for shallow breathing. She feels her heart “racing” more than usual over the past hour. She denies fever, chills, cough, nausea, vomiting, dizziness, syncope, weakness, numbness, tingling, or any other focal neurological symptoms. She has a few superficial scrapes on her hands but no other visible injuries. She reports no prior episodes of chest pain.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Respiratory: Positive for pleuritic chest pain and mild dyspnea; negative for cough, wheezing, or hemoptysis.  
+Cardiovascular: Positive for sensation of a racing heart; negative for palpitations, known arrhythmias, orthopnea, or peripheral edema.  
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, or change in bowel habits.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Neurological: No headache, dizziness, syncope, weakness, numbness, or tingling.  
+Musculoskeletal: Positive for left chest wall pain; negative for joint swelling or other musculoskeletal pain aside from chronic knee osteoarthritis (historical).  
+Dermatologic: Superficial scrapes on hands; no rashes or lesions elsewhere.  
+Psychiatric: No reported anxiety or depression at this visit; historical severe anxiety noted in prior records.  
+
+Allergies  
+Patient reports possible allergic reactions to nasal spray steroids and to certain antihistamines (e.g., rash or irritation). No drug allergies documented for current medications.
+
+Past Medical History  
+- Essential hypertension (chronically documented)  
+- Chronic kidney disease, stage 4 progressing to end‑stage renal disease, with a history of renal transplantation (ongoing)  
+- Osteoarthritis of the knee (chronic)  
+- Severe anxiety/panic disorder (historical)  
+- Hay fever (allergic rhinitis)  
+- No prior history of cardiac disease, pulmonary disease, or prior chest trauma  
+
+Surgical History  
+No surgical procedures reported by the patient. Historical records list no surgeries.
+
+Social History  
+The patient works as a mechanic in the city and lives alone in an apartment. She smokes heavily, estimating 2½–3 packs of cigarettes per day, with a smoking history beginning at age 18. She denies current marijuana or illicit drug use and reports occasional weekend alcohol consumption (typically one to two beers while watching television). She reports no recent drug or alcohol intake prior to the fall. She is employed full‑time and financially self‑supported.
+
+Family History  
+Father has type 2 diabetes mellitus. No other significant familial illnesses reported.
+
+Current Medications (as listed in the electronic record)  
+- Tacrolimus 1 mg extended‑release, 24 hr formulation (immunosuppression) – active  
+- Tacrolimus 5 mg/mL injection – active  
+- Naproxen sodium 220 mg oral tablet – active (as needed for pain)  
+- Amlodipine 2.5 mg oral tablet – active (for hypertension)  
+- Epoetin alfa injection (dose unspecified) – active (for anemia of chronic kidney disease)  
+- Mestranol / Norethynodrel (combined oral contraceptive) – active (historical)  
+- Sodium fluoride gel – active (dental prophylaxis)  
+
+Vital Signs  
+No vital signs documented for the current emergency department encounter. The most recent recorded vitals in the system (historical) show a heart rate of 80 beats/min and a respiratory rate of 12 breaths/min; blood pressure, temperature, and SpO₂ were not recorded.
+
+Physical Examination  
+No physical examination findings were documented in the transcript. Therefore, a formal exam could not be abstracted.
+
+Laboratory Results (most recent available)  
+- Glucose: 95.8 mg/dL  
+- Hemoglobin: 13.5 g/dL (derived from RBC and Hct values)  
+- Hematocrit: 38.2 %  
+- RBC count: 4.79 ×10⁶/µL  
+- MCH: 27.4 pg  
+- RDW: 42.98 fL (likely a data entry error)  
+- Platelet mean volume: 9.95 fL  
+- Potassium: 3.89 mmol/L  
+- Calcium: 8.87 mg/dL  
+- Carbon dioxide (bicarbonate): 26.6 mmol/L  
+- Blood urea nitrogen: 16.9 mg/dL  
+- Urine dipstick: negative for protein, blood, bilirubin, and glucose; specific gravity 1.016  
+
+Imaging  
+No imaging studies (e.g., chest radiograph, CT) were documented at the time of this encounter.
+
+Assessment  
+1. Traumatic left chest wall pain likely secondary to rib contusion or possible fracture after blunt impact; pleuritic component suggested by pain on deep inspiration.  
+2. Rule‑out considerations: pneumothorax, pulmonary contusion, cardiac contusion, and acute coronary syndrome (less likely given the mechanism but cannot be excluded without ECG and cardiac enzymes).  
+3. Chronic kidney disease with end‑stage renal disease on immunosuppression (post‑transplant) – baseline condition.  
+4. Hypertension, well‑controlled on amlodipine.  
+5. Heavy tobacco use – significant cardiovascular risk factor.  
+6. Mild anxiety, historical severe anxiety disorder.
+
+Plan  
+Diagnostic Studies  
+- Obtain a portable chest X‑ray immediately to evaluate for rib fractures, pneumothorax, or pulmonary infiltrates.  
+- Perform a 12‑lead electrocardiogram and obtain cardiac enzymes (troponin) to exclude myocardial injury.  
+- Consider bedside ultrasound if pneumothorax is clinically suspected.  
+
+Therapeutic Interventions  
+- Continue naproxen sodium for analgesia, monitoring for renal safety given underlying kidney disease; consider acetaminophen as an adjunct if needed.  
+- Encourage use of incentive spirometry and gentle, shallow breathing exercises to prevent atelectasis while pain is controlled.  
+- Provide supplemental oxygen if SpO₂ is found to be <94 % on room air.  
+- Maintain current antihypertensive regimen (amlodipine).  
+- Continue tacrolimus and other transplant medications; ensure trough levels are within therapeutic range (coordinate with transplant team).  
+
+Disposition  
+- Patient to be observed in the emergency department for at least 4–6 hours with repeat vitals, pain assessment, and reassessment of respiratory status.  
+- If imaging is negative for life‑threatening pathology and pain is manageable, discharge with strict return precautions: worsening chest pain, increasing shortness of breath, new cough, fever, syncope, or any neurological changes.  
+
+Discharge Instructions  
+- Take naproxen 220 mg orally every 8 hours with food, not exceeding 660 mg per day; avoid NSAIDs if renal function declines.  
+- Use acetaminophen 650 mg every 6 hours as needed for breakthrough pain, not exceeding 3 g per day.  
+- Perform incentive spirometry 10 breaths every hour while awake.  
+- Avoid heavy lifting or strenuous activity for the next 48 hours.  
+- Keep the wound on the hands clean; apply sterile dressings as needed.  
+- Smoking cessation counseling offered; provide referral to cessation program and nicotine replacement therapy.  
+- Follow up with primary care physician within 48 hours and with transplant nephrology within one week.  
+- Return to the emergency department immediately for any of the following: sudden increase in chest pain, shortness of breath, coughing up blood, fainting, or new palpitations.  
+
+Follow‑up Appointments  
+- Primary Care Provider: within 2 days.  
+- Transplant Nephrology: within 7 days.  
+- Cardiology (if ECG or troponin abnormal): as advised by the emergency physician.  
+
+No further information is available for sections not addressed above.

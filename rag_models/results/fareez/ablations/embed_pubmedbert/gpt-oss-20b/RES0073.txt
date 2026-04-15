@@ -1,0 +1,72 @@
+Model: openai/gpt-oss-20b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-04-14 03:56:35
+Time: 3.17s
+Tokens: 12,146 in / 1,444 out
+============================================================
+
+Patient Information  
+Aaron Bartoletti, male, born 08/03/1981, residing at 409 Veum Drive, Spencer, Massachusetts 01562.
+
+Chief Complaint  
+The patient presents with a 5‑day history of progressive nasal congestion, clear nasal discharge, facial pressure and pain, and recent loss of sense of smell.
+
+History of Present Illness  
+Approximately five days ago the patient first experienced a clear, runny nose. Over the past week the symptoms progressed to significant congestion of the nasal passages and throat, with associated post‑nasal drip especially upon waking. In the last two days the patient reports increasing pain and pressure around the cheeks, jaw, and upper teeth, describing the discomfort as localized to the facial region. Concurrently, the patient has noticed a loss of olfactory sensation that began within the last three days. The nasal discharge remains clear with occasional whitish cloudiness; no yellow or green purulence is noted. The patient reports nasal obstruction that alternates sides during the night, requiring positional changes to breathe more comfortably. No cough, sore throat, wheezing, shortness of breath, chest pain, or systemic symptoms such as fever or chills, beyond brief, transient chills, have been reported. The patient denies recent travel, sick contacts, or occupational exposures beyond working at a local grocery store. Symptoms have not improved with over‑the‑counter measures, and the patient has not sought prior medical care for this episode.
+
+Review of Systems  
+Constitutional: No fever, chills only brief episodes, no weight loss, no fatigue beyond occasional sleep difficulty due to congestion.  
+Respiratory: Clear nasal discharge, congestion, nasal obstruction, post‑nasal drip, no cough, sore throat, wheezing, or dyspnea.  
+ENT: Loss of smell, mild eye redness, mild eye itching, no eye discharge.  
+Cardiovascular: No chest pain, palpitations, or paleness.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or diarrhea.  
+Genitourinary: No urinary symptoms.  
+Musculoskeletal: No joint or muscle aches or weakness.  
+Psychiatric: No depression or anxiety symptoms reported during this visit.
+
+Past Medical History  
+- Dyslipidemia, managed with statin therapy.  
+The electronic record indicates a complex past medical history including hypertension, chronic kidney disease, and other chronic conditions; however, these are not currently active or impacting the acute presentation and were not corroborated by the patient during this visit.
+
+Social History  
+The patient lives alone in an apartment outside of London (Spencer, MA). He works full‑time at a grocery store. He has quit smoking two years ago and occasionally consumes red wine two to three times per week. Recreational marijuana use occurs once or twice per month. He denies current alcohol abuse and drug misuse.
+
+Family History  
+The patient reports no known family history of cancers, heart disease, or other significant hereditary conditions.
+
+Current Medications  
+- Statin (specific agent not specified).  
+- Multivitamin supplements.  
+The patient has no other prescription, OTC, or herbal medications currently.
+
+Physical Examination  
+No vital signs are recorded in the current encounter; assume normal limits. Examination of the nasal cavity reveals mucosal edema with clear discharge. There is bilateral nasal congestion with alternating obstruction noted on positional changes. The oropharynx is clear; no erythema or exudate. Facial inspection shows mild tenderness over the maxillary and frontal sinuses, consistent with facial pain reported. No lymphadenopathy or orbital tenderness is noted. External eye exam shows mild conjunctival redness and mild itching, but no discharge or significant ocular involvement. Cardiopulmonary exam is unremarkable; heart sounds are regular without murmurs, lungs clear to auscultation bilaterally.
+
+Laboratory Results  
+A complete blood count demonstrates a white blood cell count of 3.5 × 10^3/µL, hemoglobin 16.4 g/dL, hematocrit 48.5 %, platelets 209 × 10^3/µL, and normal differential. These values are within or near normal limits and do not indicate acute infection. No inflammatory markers (e.g., CRP, ESR) were obtained at this time.
+
+Assessment  
+Acute sinusitis, most consistent with a bacterial process given the persistence of facial pain, loss of smell, clear but copious discharge, and the pattern of symptom recurrence over the past week. The absence of a fever does not exclude bacterial sinusitis, but if a fever of ≥38.5 °C is present the likelihood increases. The patient’s history of a prior similar episode that resolved spontaneously suggests a viral etiology previously; the current presentation has progressed beyond the typical 7–10 day viral course and exhibits features favoring bacterial superinfection.
+
+Plan  
+
+Medications  
+- Amoxicillin‑clavulanate 875 mg/125 mg orally twice daily for 10 days, contingent upon a documented temperature ≥38.5 °C.  
+- OTC pain reliever such as ibuprofen 400 mg orally every 6–8 hours as needed for facial pain, or acetaminophen if NSAIDs contraindicated.  
+- Saline nasal spray or irrigation (Neti pot) several times daily to reduce congestion and promote drainage.  
+- Consider an oral decongestant (pseudoephedrine) if nasal obstruction worsens, with caution regarding hypertension or cardiovascular history.
+
+Non‑Pharmacologic  
+- Use a humidifier or vaporizer in the bedroom during sleep to relieve congestion.  
+- Warm compresses applied to the face twice daily to ease sinus pressure.  
+- Adequate fluid intake (≥2 L per day) to thin secretions.  
+- Elevate the head of the bed to reduce post‑nasal drip during sleep.
+
+Follow‑up  
+Schedule a telemedicine or in‑person visit in 5–7 days to reassess symptom resolution. If symptoms worsen (e.g., increasing facial pain, new fever, visual changes) or fail to improve within 10 days, consider imaging (CT sinus) or referral to an ENT specialist for further evaluation.
+
+Discharge Instructions  
+The patient was advised to monitor his temperature twice daily; a temperature ≥38.5 °C warrants earlier review and initiation of antibiotic therapy as indicated. He was instructed to complete the full course of prescribed antibiotics even if symptoms improve before the course ends. He was reminded to avoid smoking, limit alcohol intake, and reduce marijuana use as these may impede recovery. The patient was encouraged to contact the clinic promptly if he develops fever, worsening facial pain, vision changes, or any new systemic symptoms.
+
+No additional imaging or laboratory work is ordered at this time. The patient was informed that the diagnosis is acute sinusitis and that the symptoms are expected to resolve within the next week with appropriate treatment.

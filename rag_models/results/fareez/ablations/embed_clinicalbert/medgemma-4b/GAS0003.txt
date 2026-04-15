@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 05:59:27
+Time: 42.68s
+Tokens: 18,409 in / 607 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+The patient is Ali Hayes, DOB 11/05/1946, and is a female. She is currently laid off due to COVID-19. She lives alone in an apartment.
+
+Chief Complaint:
+
+The patient presents with abdominal pain.
+
+History of Present Illness:
+
+The patient reports abdominal pain that started approximately 8 hours ago. The pain is primarily located on the right side of her abdomen. The pain is described as an aching pain, initially coming and going, but now constant. The pain is rated as an 8 out of 10. She reports that eating usually makes the pain worse. She has not had any nausea or vomiting, but is a little nauseous. She denies fever or chills. She has no changes in bowel movements, urinary patterns, or skin/hair/nails. She has diabetes, and takes metformin. She denies any other medical conditions, allergies, or past hospitalizations. She has had her wisdom teeth removed as a teenager. She denies recent infections or travel. She reports fatigue.
+
+Review of Systems:
+
+*   Constitutional: No fever or chills reported.
+*   Respiratory: No respiratory symptoms reported.
+*   Cardiovascular: No cardiovascular symptoms reported.
+*   Gastrointestinal: Abdominal pain, no nausea or vomiting.
+*   Other: No other significant symptoms reported.
+
+Past Medical History:
+
+The patient has a history of cerebral palsy, spasticity, gastroesophageal reflux disease, prediabetes, chronic kidney disease stage 2, diabetes mellitus, loss of teeth, obesity, metabolic syndrome X, tubal ligation, chronic intractable migraine, chronic pain, drug abuse, chronic kidney disease stage 3, proteinuria due to diabetes mellitus, essential hypertension, and Gingivitis.
+
+Medications:
+
+The patient is taking metformin for diabetes. She also takes Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution, 60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler, albuterol 5 MG/ML Inhalation Solution, and sodium fluoride 0.0272 MG/MG Oral Gel.
+
+Social History:
+
+The patient drinks alcohol occasionally, consuming 1-2 drinks per day. She does not smoke or use recreational drugs. She does not exercise regularly.
+
+Family History:
+
+The patient's father had a heart attack in his 60s.
+
+Assessment:
+
+The patient presents with abdominal pain, likely related to her history of gastrointestinal issues. Further evaluation is needed to determine the cause of the pain.
+
+Plan:
+
+The patient should follow up with her primary care physician. Further investigation, such as imaging or laboratory tests, may be necessary to determine the cause of the abdominal pain.

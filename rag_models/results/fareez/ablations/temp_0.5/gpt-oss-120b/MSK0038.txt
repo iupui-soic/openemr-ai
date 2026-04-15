@@ -1,0 +1,135 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-04-14 04:10:02
+Time: 6.35s
+Tokens: 11,997 in / 2,123 out
+============================================================
+
+Patient Information  
+Name: Abraham Lowe Date of Birth: May 31, 1962 Sex: Male Address: 173 Renner Run, Bridgewater, Massachusetts 02324 Unit #: 450  
+
+Chief Complaint  
+Left knee pain of three to four months’ duration, now present at rest.
+
+History of Present Illness  
+Mr. Lowe reports a progressive left knee pain that began approximately three to four months ago while he was running. Initially the discomfort was limited to activity, especially ascending or descending stairs and running, and was described as a sharp, stabbing sensation each time his foot struck the ground. Over the past two weeks the pain has become more persistent, lasting longer after activity and now occurring at rest, where it is described as a dull ache. He rates the current pain as 6/10. The pain is aggravated by weight‑bearing activities such as running, climbing stairs, and transitioning from sitting to standing; it is partially relieved by rest. He denies any history of similar pain aside from a remote episode during undergraduate rowing that resolved with stretching and strengthening. He is not currently engaged in rowing and his sole regular exercise is running. The pain has begun to affect daily activities, including walking, although it is less severe than during running. He denies systemic symptoms such as fever, chills, weight loss, rash, visual or auditory changes, cough, dyspnea, chest pain, palpitations, gastrointestinal, genitourinary, or neurologic complaints. He reports no numbness, tingling, or muscle aches around the knee.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Cardiovascular: No chest pain or palpitations.  
+Respiratory: No cough, shortness of breath, or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, hematuria, or urinary frequency.  
+Musculoskeletal: Positive for left knee pain as described; no pain elsewhere, no swelling, bruising, or deformities. No numbness or tingling.  
+Neurologic: No headaches, dizziness, confusion, or memory loss.  
+Skin: No rashes or lesions.  
+Psychiatric: PHQ‑2 score of 2 (screen positive for mild depressive symptoms); otherwise no reported mood concerns.  
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Past Medical History  
+- Essential hypertension (diagnosed 1987)  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (diagnosed 1992)  
+- Metabolic syndrome X  
+- Chronic kidney disease progressing to stage 4 and currently end‑stage renal disease (diagnosed 2015)  
+- Obesity (BMI ≈ 28 kg/m²)  
+- Chronic low back pain  
+- Chronic neck pain  
+- Chronic pain syndrome  
+- No prior surgeries or hospitalizations reported in the current encounter.  
+
+Surgical History  
+No prior surgical procedures reported.
+
+Social History  
+The patient lives alone in a small apartment while completing a master’s degree. He does not use tobacco, alcohol, or recreational drugs. He previously experimented with marijuana but discontinued use. He reports regular annual influenza vaccination. He is not currently employed; his primary activity is running for exercise. No recent travel or known sick contacts.
+
+Family History  
+Father has hypertension and hypercholesterolemia; no known heart attacks, cancer, or autoimmune diseases reported in the family.
+
+Current Medications (home)  
+- Acetaminophen 325 mg oral tablet, PRN  
+- Ibuprofen 200 mg oral tablet, PRN  
+- Hydrochlorothiazide 25 mg oral tablet daily  
+- Amlodipine 2.5 mg oral tablet daily  
+- Insulin (human regular and NPH) as per diabetes regimen  
+- Sodium fluoride oral gel (dental use)  
+
+Vital Signs (most recent)  
+Heart rate: 94 beats/min  
+Respiratory rate: 13 breaths/min  
+Height: 179.6 cm  
+Weight: Not documented (BMI recorded as 28.36)  
+Blood pressure: Not documented  
+Temperature: Not documented  
+SpO₂: Not documented  
+
+Physical Examination  
+General: Alert, oriented, in no acute distress.  
+Extremities – Left Knee: No visible erythema, swelling, bruising, or deformity. No temperature asymmetry compared with the right knee. Palpation of the patella, medial joint line, and patellar tendon is non‑tender. Tenderness is noted over the lateral aspect just above the joint line. Quadriceps muscle bulk is normal, and palpation of the proximal tibia/fibula is non‑tender.  
+Range of Motion / Functional Tests: Transitioning from sitting to standing elicits sharp pain; sitting down is also painful. Active knee flexion and extension while seated are painless. Hip abduction (Ober test) performed in the lateral decubitus position reveals marked tightness and a positive test on the left, indicating limited iliotibial band flexibility. No crepitus or instability noted.  
+Neurovascular: Sensation intact, distal pulses palpable.  
+
+Laboratory Data (most recent)  
+- Sodium: 143.86 mmol/L (range not provided)  
+- Potassium: 4.39 mmol/L (repeat value 5.11 mmol/L)  
+- Chloride: 103.2 mmol/L (repeat 101.43 mmol/L)  
+- BUN: 19.18 mg/dL (repeat 15.68 mg/dL)  
+- Creatinine: 1.06 mg/dL (stable)  
+- Glucose: 81.21 mg/dL (repeat 84.45 mg/dL)  
+- Calcium: 8.76 mg/dL (repeat 9.55 mg/dL)  
+- Total CO₂: 20.45 mmol/L (repeat 25.33 mmol/L)  
+- PHQ‑2: 2 (screen positive)  
+- DAST‑10: 0 (no drug abuse)  
+- HARK: 0 (no intimate partner violence)  
+
+Imaging  
+No imaging studies were performed during this encounter.
+
+Assessment  
+1. Iliotibial band syndrome of the left knee – clinical picture of lateral peripatellar tenderness, pain exacerbated by running and weight‑bearing, and a positive Ober test.  
+2. Essential hypertension, controlled on hydrochlorothiazide and amlodipine.  
+3. Type 2 diabetes mellitus with chronic kidney disease (stage 4) and end‑stage renal disease, currently on insulin therapy.  
+4. Obesity (BMI ≈ 28 kg/m²).  
+5. Chronic low back pain and chronic neck pain.  
+6. Chronic pain syndrome.  
+
+Plan  
+- **Conservative Management of IT‑Band Syndrome**  
+  * Activity modification: suspend running for 2–4 weeks; substitute with low‑impact aerobic exercise such as swimming or stationary cycling.  
+  * Ice: apply ice to the lateral knee for 15–20 minutes after activity, 3–4 times daily.  
+  * NSAID therapy: ibuprofen 200 mg PO q6‑8 hours PRN for pain, provided renal function remains stable; monitor for gastrointestinal tolerance.  
+  * Stretching and strengthening: initiate a daily iliotibial band stretching routine and hip abductor strengthening; consider foam‑rolling of the lateral thigh.  
+  * Physical therapy referral: order outpatient PT focusing on IT‑band flexibility, hip biomechanics, and gait retraining.  
+  * Taping or kinesiology tape: advise trial of patellar taping to reduce lateral tension if pain persists.  
+  * Follow‑up: return visit in 4–6 weeks to reassess symptoms and functional status; earlier return if pain worsens or new symptoms develop.  
+
+- **Medication Review**  
+  * Continue current antihypertensive regimen (hydrochlorothiazide, amlodipine).  
+  * Continue insulin therapy; advise regular glucose monitoring.  
+  * Continue acetaminophen as needed for mild pain.  
+  * Review renal dosing of ibuprofen; if renal function declines, consider acetaminophen or topical NSAID alternatives.  
+
+- **Chronic Disease Management**  
+  * Hypertension: maintain target BP <130/80 mmHg; obtain home BP log.  
+  * Diabetes: reinforce diet, exercise (non‑impact), and glucose monitoring; schedule routine labs for HbA1c and renal panel in 3 months.  
+  * CKD/ESRD: continue nephrology follow‑up; ensure medication dosing appropriate for current GFR.  
+
+- **Lifestyle & Preventive Care**  
+  * Encourage weight‑loss strategies consistent with renal and diabetic restrictions.  
+  * Continue annual influenza vaccination.  
+  * Screen for depression given PHQ‑2 score of 2; consider PHQ‑9 if symptoms persist.  
+
+- **Patient Education**  
+  * Discuss the nature of iliotibial band syndrome, expected course with conservative therapy, and signs that would warrant earlier re‑evaluation (e.g., increasing swelling, locking, or severe pain).  
+  * Provide written instructions on stretching protocol and activity modification.  
+
+- **Follow‑up Instructions**  
+  * Orthopedic/ sports‑medicine clinic appointment in 4–6 weeks or sooner if symptoms do not improve.  
+  * Primary care follow‑up in 3 months for chronic disease review.  
+
+No further imaging is indicated at this time.  
+
+Prepared by: _______________________   Date: ____________   (Physician signature)

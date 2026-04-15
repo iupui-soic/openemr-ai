@@ -1,0 +1,77 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:53:11
+Time: 4.97s
+Tokens: 19,770 in / 1,258 out
+============================================================
+
+Patient Information  
+Name: Amado Baumbach  
+Date of Birth: 1942-06-09 (Age 81)  
+Sex: Male (recorded) – patient reports female reproductive concerns, suggesting a discrepancy in the electronic record.  
+Medical Record Number: 7355  
+
+Chief Complaint  
+The patient presents with persistent nausea and occasional vomiting for the past nine days, accompanied by increased urinary frequency.
+
+History of Present Illness  
+The patient reports that nausea began approximately nine days ago and has been present continuously, with worsening in the mornings and when exposed to unpleasant odors. Vomiting has occurred on most days, typically one to two episodes per day. The patient also notes a sensation of mild crampy abdominal discomfort but denies any specific abdominal pain. There is a new onset of urinary frequency, with the need to void roughly every hour to two hours during the day; nighttime voiding does not awaken the patient, although she sometimes gets up after hearing sounds. She reports feeling thirsty, attributing this to fluid loss from vomiting and attempts to stay hydrated. The patient denies any fever, chills, headache, muscle aches, cough, shortness of breath, chest pain, palpitations, dysuria, hematuria, or blood in the stool. She also denies any recent flu‑like illness. She mentions that her last menstrual period was approximately six weeks ago, which is later than her usual regular cycle; she does not track cycles closely. She has tried chewing ginger supplements for nausea without relief.
+
+Review of Systems  
+Constitutional: Positive for nausea, vomiting, increased thirst; negative for fever, chills, weight loss, fatigue.  
+Gastrointestinal: Positive for nausea, vomiting, mild crampy abdominal discomfort; negative for abdominal pain, diarrhea, constipation, melena, hematochezia.  
+Genitourinary: Positive for urinary frequency; negative for dysuria, urgency, incontinence, hematuria.  
+Respiratory: Negative for cough, dyspnea, wheezing.  
+Cardiovascular: Negative for chest pain, palpitations, orthopnea, edema.  
+Neurological: Negative for headache, dizziness, syncope.  
+Musculoskeletal: Negative for myalgias or arthralgias.  
+Skin: Positive for nickel allergy causing contact dermatitis; negative for rash otherwise.  
+Psychiatric: No evidence of depression or anxiety reported.  
+
+Past Medical History  
+According to the electronic record, the patient has a longstanding history of essential hypertension, pre‑diabetes, anemia, chronic kidney disease (stages 1‑3) secondary to diabetes mellitus, and proteinuria/microalbuminuria. Additional recorded problems include ischemic heart disease, coronary artery bypass grafting, and a diagnosis of prostate carcinoma (recorded as male). The patient states she has no known medical problems, which conflicts with the chronic conditions listed in the record.
+
+Surgical History  
+No surgical procedures were reported by the patient during the interview. The electronic record lists a remote history of coronary artery bypass grafting.
+
+Social History  
+The patient lives with a single roommate. She does not smoke tobacco. Alcohol consumption is rare; the last intake was about one month ago, avoided due to headaches. She denies any illicit drug use. She is currently sexually active with a boyfriend and uses condoms for contraception. She previously used hormonal birth control but discontinued it because it caused nausea.  
+
+Family History  
+Father has a history of hypertension. No other familial medical conditions were reported.
+
+Allergies  
+Allergic to nickel (contact dermatitis). No known drug, food, or latex allergies.
+
+Current Medications  
+The patient reports no home medications at this time. No over‑the‑counter or prescription drugs were identified in the interview.
+
+Vital Signs  
+No vital sign measurements were documented during this encounter.
+
+Physical Examination  
+No physical examination findings were recorded.
+
+Laboratory Data  
+No laboratory studies were performed during this visit. Prior laboratory values in the record show mild leukopenia and thrombocytopenia, but these are not directly related to the current complaint.
+
+Imaging  
+No imaging studies were obtained for this visit.
+
+Assessment  
+1. Acute nausea and vomiting of 9‑day duration, likely multifactorial.  
+2. New‑onset urinary frequency, possibly secondary to increased oral fluid intake and mild dehydration.  
+3. Missed menstrual period (approximately six weeks), raising concern for possible early pregnancy.  
+4. Chronic medical conditions per record (hypertension, pre‑diabetes, chronic kidney disease, ischemic heart disease) – patient denies awareness of these conditions.  
+
+Plan  
+- Diagnostic Studies: Obtain a serum β‑hCG pregnancy test promptly; if positive, arrange obstetric referral. If negative, consider basic metabolic panel, CBC, and urinalysis to evaluate for electrolyte disturbance, infection, or renal involvement.  
+- Symptomatic Management: Prescribe ondansetron 4 mg orally every 8 hours as needed for nausea/vomiting. Encourage small, frequent meals and avoidance of strong odors. Recommend oral rehydration with electrolyte solutions; if vomiting persists, consider anti‑emetic escalation or IV fluids.  
+- Urinary Symptoms: Counsel on fluid timing to reduce nocturnal frequency; no further work‑up needed unless dysuria or hematuria develop.  
+- Reproductive Health: Discuss the option of starting a reliable contraceptive method if pregnancy is excluded; provide counseling on the risks of hormonal contraception in the context of nausea.  
+- Follow‑up: Return to clinic in 48‑72 hours or sooner if vomiting worsens, inability to retain oral fluids, development of fever, abdominal pain, or signs of dehydration. If pregnancy test is positive, schedule obstetric follow‑up within one week.  
+- Education: Review signs of dehydration, when to seek emergency care (e.g., persistent vomiting, inability to urinate, severe abdominal pain, fever). Provide written instructions for medication use and fluid intake.  
+
+Disposition  
+Patient discharged home with prescriptions and follow‑up plan as outlined above. No immediate admission indicated.

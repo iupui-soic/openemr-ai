@@ -1,0 +1,28 @@
+Model: google/medgemma-4b-it
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:30:19
+Time: 27.67s
+Tokens: 11,864 in / 464 out
+Cell: k1
+============================================================
+
+Patient Information:
+
+Patient Name: Adela Tapia
+Date of Birth: 1914-01-07
+Unit Number: 982
+
+Chief Complaint: Death Certification
+
+History of Present Illness:
+
+The patient presents with a five-day history of worsening shortness of breath and chest discomfort, along with a worsening cough. The cough is productive, with yellowish or greenish sputum brought up with each cough. The patient denies any blood in the sputum. The shortness of breath is described as feeling like she can't catch her breath, even with small exertions, but is currently comfortable sitting. She also reports chest discomfort that is present at rest. The chest discomfort is described as congestion, not sharp or stabbing pain. The patient denies any fever or chills. She denies any recent travel. She has tried an inhaler, but it has not provided significant relief. She denies headaches, vision changes, nausea, vomiting, or increased fatigue. She denies gasping for air at night. She denies any associated symptoms like sore throat or runny nose. She denies any recent exposure to sick individuals. She has a past medical history of COPD, hypertension, and GERD. She takes Ventolin, Symbicort, and an ACE inhibitor. She has no known allergies. She denies any past hospitalizations or surgeries. Her family history is unremarkable. She lives with her daughter in an apartment and works at a grocery store. She currently smokes approximately one pack of cigarettes per day, with a smoking history of 30-40 years. She also drinks wine with dinner on weekends.
+
+Assessment:
+
+The patient's symptoms, including shortness of breath, cough with sputum production, and chest discomfort, are concerning for a possible exacerbation of her COPD, potentially triggered by a viral or bacterial infection. The presence of a fever further supports this possibility.
+
+Plan:
+
+The patient will undergo a physical examination and receive a chest X-ray to evaluate for pneumonia. Blood work will also be performed. A Covid swab will be performed. The patient will be given nebulized medications for home use. The emergency department will determine if admission is necessary. If discharged, she will be given antibiotics. The patient will be instructed to follow up with her primary care physician.

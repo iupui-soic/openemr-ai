@@ -1,0 +1,131 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0019
+Detected Disease: Tennis Elbow
+Generated: 2026-04-14 03:23:02
+Time: 6.37s
+Tokens: 8,807 in / 1,876 out
+============================================================
+
+Patient Information  
+Name: Aida Vanesa Reichert  
+Date of Birth: October 20, 1968 (Age 57)  
+Sex: Female  
+Address: 995 Breitenberg Branch, Plymouth, Massachusetts 02360  
+
+Chief Complaint  
+Right elbow pain, described as aching at rest and sharp with wrist extension, worsening over the past three days.
+
+History of Present Illness  
+The patient reports the onset of right elbow pain three days ago. The discomfort began gradually and has become progressively more bothersome. She notes that the pain is persistent but is accentuated by activities that involve gripping, lifting, or extending the wrist—particularly when using tools such as a screwdriver at work. At rest the pain is described as an ache, but when she extends her wrist she experiences a sharp, localized pain over the lateral (outside) aspect of the elbow. She rates the pain severity as 6–7 out of 10. Over‑the‑counter ibuprofen (Advil) provides temporary relief, but the pain returns shortly thereafter. She denies any prior episodes of similar elbow pain, numbness, tingling, weakness, or muscle atrophy. There are no associated systemic symptoms such as fever, chills, weight loss, rash, visual changes, shortness of breath, chest pain, gastrointestinal upset, or urinary complaints.
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or night sweats.  
+Eyes/Ears/Nose/Throat: No visual, auditory, olfactory, or taste changes.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Respiratory: No cough, wheezing, or dyspnea.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or bowel habit changes.  
+Genitourinary: No dysuria, hematuria, or voiding difficulty.  
+Musculoskeletal: Positive for right lateral elbow pain; no pain elsewhere, no joint swelling, no deformities, no weakness reported.  
+Neurologic: No headaches, dizziness, or focal neurologic deficits.  
+Skin: No rashes or lesions.  
+Psychiatric: No anxiety or depression reported at this visit (PHQ‑2 score 0).  
+
+Past Medical History  
+- Essential hypertension (ongoing)  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (ongoing)  
+- Chronic kidney disease, currently stage 1 (ongoing)  
+- End‑stage renal disease previously, status post renal transplantation (transplant ongoing)  
+- Obesity (BMI 30.02)  
+- Anemia (ongoing)  
+- History of severe anxiety/panic (historical)  
+
+Surgical History  
+No surgical procedures documented in the current encounter.  
+
+Social History  
+The patient lives with her wife and a four‑year‑old daughter. She does not smoke cigarettes, use marijuana, or use other recreational drugs. Alcohol use is limited to occasional wine or beer, approximately every couple of days. She reports no recent travel, sick contacts, or occupational exposures beyond routine tool use at work.  
+
+Family History  
+Father, age 60, with knee and hip osteoarthritis. Maternal aunt with uterine cancer. No other significant family history reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications  
+- Ibuprofen (as needed for elbow pain)  
+The patient reports no other prescription or over‑the‑counter medications at this visit.  
+
+Vital Signs  
+Heart rate: 80 beats/min (recorded)  
+Respiratory rate: 14 breaths/min (recorded)  
+Height: 164.1 cm  
+Weight: Not documented (BMI recorded as 30.02)  
+Blood pressure: Not documented  
+Temperature: Not documented  
+SpO₂: Not documented  
+
+Physical Examination  
+General: Alert, well‑appearing female in no acute distress.  
+
+Extremities – Right Upper Extremity:  
+- Inspection: No visible redness, swelling, deformity, atrophy, or skin changes when compared with the left side.  
+- Palpation: Tenderness over the lateral epicondyle of the humerus and over the lateral forearm extensor muscle group. Mild tenderness noted medially, but significantly less. No tenderness over the biceps or triceps tendons.  
+- Range of Motion: Full elbow flexion and extension without pain; full wrist extension elicits soreness over the lateral elbow, while wrist flexion produces only mild discomfort.  
+- Strength: Patient can grip a pencil tightly without noted weakness, but reports pain with wrist extension while gripping.  
+
+Neurovascular: Sensation intact to light touch in the right hand and forearm; radial pulse palpable and symmetric.  
+
+Review of systems and focused exam otherwise negative.  
+
+Laboratory Data (most recent)  
+- Carbon dioxide, total: 27.49 mmol/L  
+- Potassium: 3.77 mmol/L  
+- Calcium: 8.71 mg/dL  
+- Blood urea nitrogen: 10.96 mg/dL  
+- Hematocrit: 38.58 %  
+- Hemoglobin: Not reported (value unavailable)  
+- Erythrocytes: 3.96 ×10⁶/µL  
+- MCH: 30.75 pg  
+- Platelet distribution width: 438.8 fL  
+- Erythrocyte distribution width: 41.42 fL  
+- Urine pH: 5.02  
+- PHQ‑2 score: 0 (no depressive symptoms)  
+Other urinalysis parameters were not reported or marked as unknown.  
+
+Assessment  
+1. Lateral epicondylitis (tennis elbow) of the right elbow – consistent with activity‑related pain localized to the lateral epicondyle and extensor forearm musculature, worsening with wrist extension and gripping.  
+2. Essential hypertension, well‑controlled on prior regimen (current medication list not provided).  
+3. Type 2 diabetes mellitus with renal involvement (CKD stage 1).  
+4. Post‑renal transplant status with ongoing immunosuppression history (tacrolimus previously used).  
+5. Obesity (BMI 30.0).  
+6. Anemia of chronic disease.  
+
+Plan  
+- **Conservative Management of Lateral Epicondylitis**  
+  * Activity modification: Limit repetitive wrist extension and gripping at work; incorporate frequent short breaks.  
+  * Pharmacologic therapy: Continue ibuprofen 400–600 mg every 6–8 hours as needed, not exceeding 3 g/day; counsel regarding potential renal effects given CKD and advise to use the lowest effective dose for the shortest duration.  
+  * Physical therapy: Referral for supervised eccentric strengthening of the wrist extensors, stretching of forearm musculature, and modality use (ice and ultrasound as tolerated).  
+  * Orthosis: Consider a counter‑force brace applied just distal to the lateral epicondyle during activities.  
+  * Education: Teach the patient proper ergonomics for tool use, avoid heavy lifting, and apply ice for 15 minutes after activity if pain increases.  
+
+- **If No Improvement**  
+  * Re‑evaluate in 4–6 weeks. If pain persists despite adherence to the above regimen, discuss a corticosteroid injection into the lateral epicondyle region or a trial of platelet‑rich plasma, with attention to renal function and immunosuppression status.  
+  * Surgical consultation for release of the extensor origin may be considered only after 6–12 months of failed conservative therapy.  
+
+- **Chronic Disease Management**  
+  * Continue routine monitoring of blood pressure, blood glucose, and renal function (eGFR, serum creatinine) per primary care protocol.  
+  * Ensure adherence to diabetes and hypertension regimens; adjust as needed based on recent labs (not provided today).  
+  * Maintain anemia surveillance; consider iron studies if symptomatic.  
+
+- **Follow‑Up**  
+  * Orthopedic/primary care follow‑up in 4–6 weeks to assess response to therapy.  
+  * Earlier return if pain markedly worsens, new numbness/tingling develops, or any systemic symptoms arise.  
+
+- **Patient Instructions**  
+  * Use ibuprofen with food; avoid NSAIDs on an empty stomach.  
+  * Apply ice to the lateral elbow for 15 minutes, 3–4 times daily as needed.  
+  * Perform prescribed forearm stretching and strengthening exercises twice daily.  
+  * Use a counter‑force brace during activities that provoke pain.  
+  * Monitor for signs of infection, increased swelling, or loss of function and seek medical attention promptly.  
+
+The patient verbalized understanding of the diagnosis and agreed with the proposed plan. No additional questions were reported.

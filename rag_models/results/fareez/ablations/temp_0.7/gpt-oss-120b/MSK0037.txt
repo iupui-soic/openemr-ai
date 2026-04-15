@@ -1,0 +1,122 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0037
+Detected Disease: Dupuytren's Contracture
+Generated: 2026-04-14 04:13:46
+Time: 7.93s
+Tokens: 33,852 in / 2,085 out
+============================================================
+
+Patient Information  
+Name: Adan Wehner  
+Date of Birth: February 7, 1923 (Age 103)  
+Sex: Male  
+Address: 738 Lehner Avenue Apt 69, Groton, Massachusetts 01450  
+
+Chief Complaint  
+The patient presents with difficulty extending the fourth and fifth digits of his right hand. He reports a palpable “little bump” at the base of each finger that has been progressively worsening over the past two months and is limiting his ability to work as a construction laborer.
+
+History of Present Illness  
+Two months ago the patient first noticed small nodular prominences at the ulnar‑side bases of the right fourth and fifth digits. Over the ensuing weeks the nodules have become more apparent and he now experiences an aching discomfort when attempting to extend these fingers, especially with passive manipulation by the opposite hand. The discomfort is described as mild and not sharply painful; it does not radiate to the forearm or hand. He reports a sensation of “catching” when trying to straighten the fingers but no locking, clicking, or crepitus. There is no associated swelling, erythema, or warmth. He denies any recent trauma, falls, or puncture wounds to the hand. The symptoms have interfered with his ability to perform routine construction tasks that require grip and finger extension. He has not tried any treatments or modifications that have provided relief.
+
+Review of Systems  
+Constitutional: No fever, chills, night sweats, unexpected weight loss, or fatigue.  
+Respiratory: No shortness of breath, wheezing, cough, or sore throat.  
+Cardiovascular: No chest pain, palpitations, or known heart rhythm disturbances.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or blood in stool.  
+Genitourinary: No dysuria, frequency, or hematuria.  
+Neurologic: No numbness, tingling, weakness, or other sensory changes in the upper extremities.  
+Musculoskeletal: Positive for aching discomfort and limited extension of the right fourth and fifth fingers; no other joint pain or swelling reported.  
+Skin: No rashes, lesions, or nail changes.  
+Endocrine/Metabolic: No polyuria, polydipsia, or heat/cold intolerance.  
+Psychiatric: No confusion, memory loss, or mood disturbances reported.  
+
+Past Medical History  
+- Type 2 diabetes mellitus  
+- Essential hypertension  
+- Hypertriglyceridemia  
+- Metabolic syndrome (obesity, BMI 27.6)  
+- Chronic kidney disease, stage 4 (eGFR ~24 mL/min/1.73 m²)  
+- Ischemic heart disease with documented coronary artery abnormalities  
+- Anemia of chronic disease  
+- Chronic pain syndrome  
+- Chronic migraine without aura  
+- Prostate carcinoma in situ (neoplasm of prostate)  
+- Prior stroke (March 2022)  
+- Prediabetes (historical)  
+- Chronic kidney disease stages 1–3 documented historically, now progressed to stage 4  
+- History of ACL reconstruction at age 18  
+
+Surgical History  
+- Anterior cruciate ligament repair performed in adolescence.  
+
+Social History  
+The patient lives with his wife in a small apartment. He has been employed full‑time as a construction worker for the past ten years, a job that involves frequent hand use, heavy lifting, and exposure to vibration from power tools. He reports smoking approximately one pack of cigarettes per day for the last ten years and consumes one to three alcoholic drinks daily. Marijuana use is occasional (a few times per month). He denies the use of any other recreational or intravenous drugs.  
+
+Family History  
+No known family history of musculoskeletal or neurologic disorders, autoimmune disease, or Dupuytren’s contracture.  
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.  
+
+Current Medications  
+- HMG‑CoA reductase inhibitor (statin) – dose unspecified, taken daily for hypercholesterolemia.  
+- Clopidogrel 75 mg oral tablet, once daily.  
+- Alteplase 100 mg injection (listed as active; clinical relevance unclear).  
+- Epoetin alfa (discontinued March 2 2022).  
+- Acetaminophen/Dextromethorphan/Doxylamine oral solution (discontinued February 28 2022).  
+- Sodium fluoride oral gel (discontinued July 16 2014).  
+- Insulin isophane/regular (human) injectable suspension (active).  
+- Hydrochlorothiazide 25 mg oral tablet, once daily.  
+- Lisinopril 10 mg oral tablet, once daily.  
+- Amlodipine 2.5 mg oral tablet, once daily.  
+- Tacrine 10 mg oral capsule, once daily.  
+- Nitroglycerin 0.4 mg actuat mucosal spray, as needed.  
+
+Vital Signs  
+No current vital signs were recorded at this visit. The most recent documented vitals (from an older encounter) show a heart rate of 74 beats/min, respiratory rate of 14 breaths/min, and a height of 180 cm with a calculated BMI of 27.59. Blood pressure and temperature were not available.  
+
+Physical Examination  
+General: The patient appears his stated age, in no acute distress.  
+Extremities – Right Hand: Visible nodular thickening at the palmar bases of the fourth and fifth digits. When the fingers are passively extended, a faint whitening of the skin over the nodules is noted. No erythema, warmth, or swelling is present. Palpation over the nodules elicits mild discomfort but no sharp pain. The patient reports a “catching” sensation during passive extension. No crepitus, clicking, or palpable cords are appreciated. No atrophy of thenar or hypothenar muscles, and no deformities of the wrist or elbow.  
+Neurovascular: Sensation intact to light touch and pinprick in all hand distributions; capillary refill <2 seconds.  
+Cardiovascular, Respiratory, Abdominal, Neurologic, Skin: No abnormal findings reported or observed.  
+
+Laboratory Data (most recent)  
+- Serum glucose: 120.4 mg/dL  
+- Blood urea nitrogen: 8.2 mg/dL  
+- Serum creatinine: 2.22 mg/dL (eGFR 24 mL/min/1.73 m²)  
+- Calcium: 9.8 mg/dL  
+- Sodium: 137 mmol/L  
+- Potassium: 4.4 mmol/L  
+- Chloride: 104.5 mmol/L  
+- CO₂ total: 21.9 mmol/L  
+- Urine glucose (strip): 1.6 mg/dL  
+- Urine ketones (strip): 16.2 mg/dL  
+- Urine bilirubin (strip): 0.54 mg/dL  
+
+Assessment  
+1. Dupuytren’s contracture of the right hand, affecting the fourth and fifth digits, presenting with nodular palmar thickening and limited active and passive extension.  
+2. Chronic kidney disease, stage 4, with reduced eGFR.  
+3. Type 2 diabetes mellitus, moderately controlled.  
+4. Essential hypertension.  
+5. Ischemic heart disease.  
+6. Hypertriglyceridemia and metabolic syndrome.  
+7. Prostate carcinoma in situ.  
+8. History of recent cerebrovascular accident (stroke).  
+
+Plan  
+- Hand Specialist Referral: Arrange an outpatient appointment with a hand surgeon or hand therapist for formal assessment of contracture severity and discussion of treatment options, including supervised stretching, collagenase clostridium histolyticum injection, or limited fasciectomy if functional impairment progresses.  
+- Physical Therapy: Initiate hand therapy focusing on gentle passive and active extension exercises, splinting at night to maintain finger extension, and activity modification to reduce repetitive strain.  
+- Medications: Continue current chronic disease regimen (statin, antihypertensives, insulin, antiplatelet therapy). Review the necessity of alteplase and tacrine with the primary care team. Adjust antihypertensive therapy if needed based on blood pressure readings.  
+- Renal Monitoring: Repeat basic metabolic panel and eGFR in 4–6 weeks to monitor renal function; consider nephrology follow‑up given stage 4 CKD.  
+- Diabetes Management: Review insulin dosing and dietary intake; aim for fasting glucose <130 mg/dL. Obtain HbA1c at next primary care visit.  
+- Cardiovascular Risk Reduction: Counsel on smoking cessation and provide resources for nicotine replacement or pharmacotherapy. Encourage limiting alcohol to ≤2 drinks per day.  
+- Stroke Follow‑up: Ensure compliance with antiplatelet therapy and schedule neurology follow‑up as previously arranged.  
+- Vaccinations: Verify that immunizations are up to date; administer influenza and pneumococcal vaccines if indicated.  
+- Follow‑up: Return to primary care in 4 weeks for review of hand symptoms, renal labs, and overall chronic disease management. Hand clinic follow‑up within 2 weeks of referral.  
+
+Disposition  
+The patient was educated on the nature of Dupuytren’s contracture, the importance of hand therapy, and the potential need for procedural intervention if contracture worsens. He verbalized understanding and agreed to the outlined plan. No immediate surgical intervention was indicated at this time.  
+
+Prepared by: ___________________________  
+Date: ________________________________

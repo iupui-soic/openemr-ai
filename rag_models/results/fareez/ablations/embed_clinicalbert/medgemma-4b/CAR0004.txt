@@ -1,0 +1,52 @@
+Model: google/medgemma-4b-it
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:59:27
+Time: 25.65s
+Tokens: 8,982 in / 431 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Aileen Vi Rempel, DOB 1917-07-25, is a 25-year-old female residing at 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171. She is a student at Western University studying engineering. She lives with her mother.
+
+Chief Complaint:
+
+The patient presents with a sharp chest pain.
+
+History of Present Illness:
+
+The patient reports experiencing sharp chest pain for the past three days. The pain is located primarily over the heart and is described as sharp. The pain comes and goes, lasting for a few seconds, and then subsides. The pain is exacerbated by coughing and lying down, but improves when leaning forward. She denies any previous similar episodes. The pain is rated as a 6/10. She denies any associated symptoms such as shortness of breath, dizziness, palpitations, nausea, vomiting, fevers, or chills. She has taken Tylenol, which provided some relief. She denies any recent injuries. She reports having a flu last week, but is now feeling better. She denies any weakness or numbness.
+
+Past Medical History:
+
+The patient reports no prior surgeries. She has a family history of heart problems in her father, who had a heart attack two weeks prior to the current presentation. She denies any other significant past medical history.
+
+Medications:
+
+The patient takes Tylenol occasionally.
+
+Allergies:
+
+The patient denies any allergies.
+
+Social History:
+
+The patient drinks alcohol occasionally, about one or two drinks on weekends. She does not use recreational drugs. She does not smoke.
+
+Family History:
+
+The patient's father had a heart attack two weeks prior to the current presentation.
+
+Physical Exam:
+
+No information available.
+
+Assessment:
+
+The patient presents with sharp chest pain, likely related to her history of heart problems in her family. Further evaluation is needed to determine the cause of the chest pain.
+
+Plan:
+
+The patient will undergo an ECG to assess her heart function. Blood work will be considered as needed. The patient is advised to not worry too much about the pain and to see what the tests come back as.

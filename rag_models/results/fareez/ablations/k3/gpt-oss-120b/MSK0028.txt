@@ -1,0 +1,106 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-04-14 03:26:46
+Time: 6.17s
+Tokens: 10,434 in / 2,072 out
+============================================================
+
+Patient Information  
+Abdul Gorczany, male, born March 9, 1971 (age 53). Current address: 404 Effertz Crossroad, Springfield, Massachusetts 01020.  
+
+Chief Complaint  
+Acute right shoulder and elbow pain that began yesterday after a weight‑training session.  
+
+History of Present Illness  
+The patient reports that while performing a biceps‑focused weight‑training exercise on a machine (flexing the elbows without external weights) he experienced a sudden, sharp, stabbing pain localized to the anterior aspect of his right shoulder and right elbow. He does not recall hearing an audible “pop,” although he is uncertain. The pain began within approximately 30 minutes of the activity and has persisted without significant improvement. The discomfort is described as 8–9/10 in intensity, radiating neither to the forearm nor elsewhere. He notes marked swelling and bruising over the mid‑biceps region, which gives the appearance of a “mass” that makes his biceps look enlarged. The swelling is tender, and active elbow flexion and supination are severely limited; the patient is unable to fully flex the elbow or turn the forearm palm‑up. Shoulder elevation in the plane of forward flexion is relatively preserved, though any movement of the upper arm elicits pain. He has attempted self‑care with rest, ice, and over‑the‑counter ibuprofen (Advil) without relief. There are no associated fevers, chills, weight loss, appetite changes, headaches, visual or auditory disturbances, respiratory symptoms, gastrointestinal upset, urinary symptoms, rashes, or neurologic deficits.  
+
+Review of Systems  
+- Constitutional: No fever, chills, night sweats, or recent weight loss.  
+- Musculoskeletal: Positive for acute right shoulder and elbow pain, swelling, bruising, limited range of motion, and weakness of elbow flexion/supination. No pain in other joints.  
+- Neurologic: No numbness, tingling, or weakness elsewhere. No dizziness or syncope.  
+- Cardiovascular: No chest pain, palpitations, or dyspnea on exertion.  
+- Respiratory: No cough, shortness of breath, wheezing, or sore throat.  
+- Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Integumentary: Localized erythema/bruising over the right biceps; no rash elsewhere.  
+- Psychiatric: No new anxiety or depressive symptoms reported at this visit.  
+
+Past Medical History  
+- Essential hypertension (diagnosed 1993, chronic).  
+- Chronic kidney disease, currently stage 4 (diagnosed 2021).  
+- Type 2 diabetes mellitus with microalbuminuria and proteinuria (diagnosed 2012).  
+- Hyperlipidemia (diagnosed 2018).  
+- Major depressive disorder (diagnosed 1990).  
+- History of alcoholism (diagnosed 1997).  
+- Prior episode of sepsis (2013) and acute respiratory distress syndrome (2013–2020).  
+
+Surgical History  
+- Tonsillectomy performed in childhood (approximately age 10).  
+
+Social History  
+The patient lives in a condominium with his wife and daughter. He works from home as an accountant and may take a few days off work for recovery. He previously engaged in regular weight training during university and early 30s, resumed activity this year. He denies current tobacco use; he experimented with cigarettes in high school and college but does not smoke now. He reports no current alcohol consumption and avoids recreational drugs.  
+
+Family History  
+No known family history of musculoskeletal, autoimmune, or major chronic illnesses reported.  
+
+Allergies  
+No known drug allergies.  
+
+Current Medications (home)  
+- Lisinopril 10 mg oral daily (hypertension).  
+- Amlodipine 2.5 mg oral daily (hypertension).  
+- Hydrochlorothiazide 25 mg oral daily (hypertension).  
+- Simvastatin 10 mg oral nightly (hyperlipidemia).  
+- Vitamin B12 injectable (dose unspecified).  
+- Epoetin alfa injection (dose unspecified, for renal anemia).  
+- Acetaminophen 325 mg oral as needed for pain.  
+
+Vital Signs (most recent recorded)  
+- Heart rate: 93 beats/minute.  
+- Respiratory rate: 16 breaths/minute.  
+- Blood pressure: not recorded at this visit.  
+- Temperature: not recorded.  
+- SpO₂: not recorded.  
+- Height: 180 cm; weight: not recorded; BMI: 27.3 kg/m² (based on historic data).  
+
+Physical Examination  
+General: Alert, oriented, in mild distress due to right upper‑extremity pain.  
+Right Upper Extremity: Inspection reveals visible swelling and ecchymosis over the anterior mid‑biceps region, giving an enlarged appearance. Palpation elicits marked tenderness over the same area; a palpable, firm “mass” is appreciated. Active elbow flexion is limited to <90°, and active supination is markedly reduced due to pain. Passive range of motion is similarly limited by discomfort. Shoulder forward flexion to at least 90° is possible, though any movement of the upper arm reproduces pain. No obvious deformity, crepitus, or gross instability. Distal neurovascular exam is intact (radial pulse present, sensation to light touch normal in the radial, median, and ulnar distributions).  
+Left Upper Extremity: Normal appearance and range of motion.  
+Other systems: No abnormalities noted.  
+
+Laboratory Findings (most recent)  
+- Serum creatinine: 2.86 mg/dL (elevated, consistent with CKD).  
+- Estimated GFR (MDRD): 85 mL/min/1.73 m² (reported).  
+- BUN: 12.9 mg/dL.  
+- Electrolytes: Na 137.5 mmol/L, K 4.8 mmol/L, Cl 108.7 mmol/L, CO₂ 27.6 mmol/L.  
+- Calcium: 9.3 mg/dL.  
+- Liver panel: AST 19 U/L, ALT 33 U/L, ALP 75 U/L, total bilirubin 0.52 mg/dL, albumin 5.1 g/dL, total protein 7.06 g/dL.  
+- Lipid panel: Total cholesterol 168.7 mg/dL, LDL 133.6 mg/dL, HDL 36.3 mg/dL, triglycerides 161 mg/dL.  
+- Glucose (fasting): 79 mg/dL.  
+
+Imaging Plan  
+The provider recommended an immediate right upper‑arm ultrasound to evaluate the biceps tendon and surrounding soft tissues. If the ultrasound suggests a partial or complete tear, magnetic resonance imaging of the shoulder and elbow will be obtained for detailed anatomic assessment.  
+
+Assessment  
+1. Right biceps tendon injury – likely a distal biceps tendon tear or severe tendinopathy with associated hematoma/soft‑tissue swelling.  
+2. Hypertension, well‑documented, on three antihypertensive agents.  
+3. Chronic kidney disease stage 4, baseline creatinine elevated.  
+4. Type 2 diabetes mellitus with microalbuminuria/proteinuria.  
+5. Hyperlipidemia.  
+6. Major depressive disorder, stable.  
+
+Plan  
+- Imaging: Order right upper‑arm ultrasound today; schedule MRI of the shoulder/elbow if ultrasound indicates tendon discontinuity.  
+- Orthopedic referral: Prompt referral to orthopedic surgery for possible operative evaluation if imaging confirms a full‑thickness distal biceps tear.  
+- Activity modification: Advise strict rest of the affected arm, avoid any lifting or biceps‑contracting activities for at least 2 weeks. Use a sling for comfort as needed.  
+- Pharmacologic pain control: Continue acetaminophen 325 mg q6‑8 h PRN; avoid NSAIDs given reduced renal function. Consider a short course of a low‑dose opioid (e.g., hydrocodone/acetaminophen) if pain remains ≥7/10 despite acetaminophen.  
+- Ice therapy: Apply ice packs 15 minutes every 2‑3 hours for the first 48 hours, then as tolerated.  
+- Physical therapy: Initiate gentle passive range‑of‑motion exercises under supervision after acute pain subsides (generally after 1 week), progressing to active strengthening per orthopedic recommendation.  
+- Monitoring: Check renal function (creatinine, eGFR) in 1 week given analgesic plan and existing CKD.  
+- Follow‑up: Return to clinic in 7 days or sooner if pain worsens, swelling increases, new neurovascular symptoms develop, or fever emerges.  
+- Education: Discuss signs of complications (increasing swelling, numbness, loss of pulse, fever) and instruct patient to seek urgent care if they occur. Emphasized the importance of gradual return to weight training after full recovery to prevent re‑injury.  
+
+Disposition  
+The patient was discharged home with instructions, imaging orders placed, and referrals arranged. No immediate surgical intervention was performed at this visit.

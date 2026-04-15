@@ -1,0 +1,48 @@
+Model: google/medgemma-4b-it
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-04-14 05:59:27
+Time: 25.11s
+Tokens: 12,001 in / 393 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Aaron Bartoletti
+Date of Birth: 1981-08-03
+Unit Number: 2
+
+Chief Complaint: Loss of smell and taste.
+
+History of Present Illness:
+
+The patient presents today complaining of a loss of smell and taste that began two days prior. He reports that he can no longer smell or taste food, even when exposed to strong odors like onion. He states that he feels otherwise well, with no other significant symptoms. He is concerned about the possibility of COVID-19 infection.
+
+Review of Systems:
+
+The patient denies any other significant symptoms, including cough, shortness of breath, chest pain, palpitations, nausea, vomiting, diarrhea, constipation, urinary changes, headaches, fever, chills, night sweats, weight loss, sore throat, runny nose, or congestion.
+
+Past Medical History:
+
+The patient has a history of eczema and peanut allergy. He takes birth control pills and occasionally uses a steroid cream for eczema flares. He denies any past surgeries or hospitalizations.
+
+Medications:
+
+The patient takes birth control pills and occasionally uses a steroid cream for eczema. He has an EpiPen for his peanut allergy, which he keeps with him.
+
+Social History:
+
+The patient lives with his boyfriend and denies any recent exposure to sick individuals at work or school. He does not smoke or use recreational drugs. He drinks alcohol occasionally (a couple of beers on the weekend).
+
+Family History:
+
+The patient's family history is unremarkable, with no reported history of heart or lung conditions or cancer.
+
+Assessment:
+
+The patient presents with a sudden onset of loss of smell and taste, which could be related to COVID-19, although other causes should be considered.
+
+Plan:
+
+The physician will order a nasal swab test to evaluate for COVID-19. The patient is instructed to self-isolate for 14 days after the resolution of symptoms.

@@ -1,0 +1,122 @@
+Model: openai/gpt-oss-120b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-04-14 03:53:54
+Time: 5.25s
+Tokens: 9,060 in / 1,967 out
+============================================================
+
+Patient Information:  
+Name: Adan Crona  
+Age: 45 years old (male)  
+Date of Birth: 1943-04-07 (as recorded in the electronic record)  
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451  
+
+Chief Complaint:  
+Patient presents with a painful, red, swollen area on the right ankle that has been present for approximately one week and has become increasingly painful and hot over the past 24 hours. The lesion now has an open wound with white drainage.
+
+History of Present Illness:  
+The patient first noticed an abnormal area on his right ankle about one week ago. At that time the lesion was not painful, but it appeared “weird” and slightly raised. Over the last two days the area has become more red, larger, and edematous, and the patient reports a sensation of heat in the affected leg compared with the contralateral side. Yesterday the area began to hurt, and this morning the patient observed white purulent material leaking from a former scab, creating an open wound. The pain is described as a dull ache at rest and is worsened by walking and flexing the ankle. The patient denies any shortness of breath, chest pain, or systemic fever (he does not have a home thermometer). He reports feeling generally “crummy” over the past few weeks, with increased hunger, weight gain, and fatigue, which he attributes to poor glycemic control; his most recent A1c was in the 9 % range. He also mentions a known left‑heel diabetic foot ulcer that is presently “doing alright.” He has no prior similar lesions on his legs.  
+
+Review of Systems:  
+- Constitutional: Reports fatigue, increased hunger, and weight gain; no measured fever.  
+- Skin: Red, swollen, painful right ankle with open wound and purulent drainage; no other rashes noted.  
+- Musculoskeletal: Dull aching pain in the right ankle, worsened with ambulation; no limitation of range of motion reported.  
+- Neurologic: No loss of sensation in the ankle; chronic reduced sensation reported in the feet secondary to diabetic peripheral neuropathy.  
+- Respiratory: No dyspnea.  
+- Cardiovascular: No chest pain or palpitations.  
+- Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+- Endocrine: Known type 2 diabetes mellitus with suboptimal control; no recent hypoglycemic episodes reported.  
+- Others: No recent sick contacts or upper respiratory infection.  
+
+Past Medical History:  
+- Type 2 diabetes mellitus (poorly controlled, recent A1c ≈9 %).  
+- Hypertension.  
+- Hyperlipidemia.  
+- Chronic kidney disease (stage 2–3 historically, most recent eGFR 79 mL/min/1.73 m²).  
+- Diabetic peripheral neuropathy (reduced sensation in feet).  
+- Prior left‑heel diabetic foot ulcer (currently stable).  
+- History of myocardial infarction (1997) with ongoing cardiac risk factors.  
+
+Surgical History:  
+- Functional endoscopic sinus surgery performed in teenage years for chronic sinusitis. No other surgical procedures reported.  
+
+Social History:  
+- Employment: Currently self‑employed as an accountant; intermittently employed, actively seeking additional work.  
+- Living situation: Resides in town; sees his children every two weeks.  
+- Tobacco use: Occasional smoking, increased to approximately two packs per week over the past few weeks.  
+- Alcohol use: Consumes alcohol primarily on weekends, averaging roughly three drinks per day on those days.  
+- Illicit drug use: None reported.  
+- Exercise: None reported.  
+
+Family History:  
+- Mother’s side: Multiple relatives with diabetes, hypertension, and hyperlipidemia.  
+- Father’s side: Generally healthy; one aunt with lung cancer (heavy smoker).  
+
+Allergies:  
+- Penicillin – causes facial swelling and respiratory difficulty (anaphylaxis‑type reaction).  
+- Grass pollen – mild seasonal symptoms.  
+- Lisinopril – unspecified reaction.  
+
+Current Medications (home):  
+- Rosuvastatin (lipid‑lowering agent).  
+- Metformin (biguanide for diabetes).  
+- Two additional oral diabetes agents (patient unable to recall exact names; described as “Sidas…something”).  
+- No insulin therapy.  
+- Occasional over‑the‑counter acetaminophen or ibuprofen for back pain.  
+
+Vital Signs:  
+No vital signs were recorded during this encounter. The most recent documented heart rate in the record is 83 beats/min; blood pressure, temperature, respiratory rate, and oxygen saturation are not available for the current visit.  
+
+Physical Examination:  
+No detailed physical examination findings are documented in the transcript. The patient reports localized swelling, erythema, warmth, and purulent drainage from the right ankle. No mention of fluctuance, lymphangitic streaking, or systemic signs such as fever.  
+
+Laboratory Data (most recent):  
+- Serum creatinine: 2.98 mg/dL (elevated).  
+- Estimated GFR: 79 mL/min/1.73 m².  
+- Serum glucose: 94 mg/dL (random).  
+- Hemoglobin A1c (historical, not a lab value from today): approximately 9 %.  
+- Lipid panel: Total cholesterol 177 mg/dL, LDL 121 mg/dL, HDL 31.6 mg/dL, triglycerides 177 mg/dL.  
+- Electrolytes: Sodium 139.8 mmol/L, potassium 4.5 mmol/L, bicarbonate 22 mmol/L, calcium 8.5 mg/dL.  
+- Liver enzymes: AST 24.7 U/L, ALT 43.9 U/L, ALP 123.7 U/L, total bilirubin 0.77 mg/dL.  
+
+Assessment:  
+1. **Cellulitis of the right ankle** – acute bacterial skin infection characterized by localized erythema, warmth, swelling, pain, and purulent drainage, occurring in a patient with diabetes and peripheral neuropathy.  
+2. Uncontrolled type 2 diabetes mellitus – A1c in the 9 % range, contributing to infection risk and impaired wound healing.  
+3. Chronic kidney disease, stage 2‑3 – elevated creatinine with modestly reduced GFR.  
+4. Hypertension and hyperlipidemia – stable on current therapy.  
+
+Plan:  
+
+Medical Management  
+- Initiate empiric oral antibiotic therapy targeting common skin flora while avoiding penicillin due to documented allergy. Recommended regimen: **Clindamycin 300 mg PO every 6 hours for 10 days** (covers Streptococcus, Staphylococcus including MRSA).  
+- If clinical response is inadequate within 48‑72 hours, consider escalation to oral **doxycycline** or IV therapy pending culture results (if wound culture obtained).  
+- Advise the patient to keep the wound clean; irrigate with sterile saline twice daily and apply a dry, non‑adherent dressing.  
+- Counsel on strict glycemic control: restart regular self‑monitoring of blood glucose, aim for fasting glucose 80‑130 mg/dL, and schedule prompt follow‑up with his primary care provider to reassess diabetes regimen (possible addition of a GLP‑1 agonist or basal insulin).  
+- Review current diabetes medications; obtain a complete medication list to confirm doses and avoid drug interactions.  
+
+Wound Care  
+- Refer to wound‑care clinic for evaluation of the open ankle wound and possible debridement.  
+- Educate on signs of worsening infection (increasing pain, spreading redness, fever, purulent drainage, foul odor) and to seek immediate care if these occur.  
+
+Laboratory/Imaging  
+- Obtain wound culture and sensitivity at the time of dressing change.  
+- Repeat basic metabolic panel and CBC in 3‑5 days to monitor renal function and look for leukocytosis.  
+
+Follow‑Up  
+- Return to clinic in 48‑72 hours for reassessment of the ankle and review of culture results.  
+- Follow‑up with primary care physician within one week for diabetes management and renal function monitoring.  
+- If systemic signs develop (fever >38 °C, chills, hypotension), present to the emergency department promptly.  
+
+Patient Education/Discharge Instructions  
+- Keep the affected leg elevated when possible to reduce swelling.  
+- Do not scratch or manipulate the wound.  
+- Avoid tight shoes or socks that may compress the area.  
+- Continue all current non‑penicillin medications as prescribed.  
+- Abstain from smoking as it impairs wound healing; consider smoking cessation resources.  
+- Limit alcohol intake; excessive consumption can interfere with glucose control.  
+- Record daily blood glucose readings and bring log to the next primary‑care visit.  
+
+Signature:  
+[Physician’s Name], MD  
+Date: 2026‑04‑14

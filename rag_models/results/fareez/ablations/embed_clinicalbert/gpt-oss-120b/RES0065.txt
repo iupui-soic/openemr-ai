@@ -1,0 +1,114 @@
+Model: openai/gpt-oss-120b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:47:42
+Time: 5.45s
+Tokens: 10,609 in / 1,666 out
+============================================================
+
+Patient Information  
+Name: Abbey Arie Schroeder  
+Date of Birth: October 26, 1951 (Age 74)  
+Sex: Female  
+Address: 292 Von Parade, Leominster, Massachusetts 01420  
+
+Chief Complaint  
+Sore throat of three days duration with recent onset of feverish feeling.
+
+History of Present Illness  
+The patient reports a constant sore throat that began three days ago. She describes the pain as worsened by swallowing, particularly solid foods, and occasionally by very cold liquids. One day ago she began to feel hot and experienced chills, describing these sensations as “feverish,” although she has not taken an oral temperature. She feels increasingly fatigued but denies night sweats, headaches, nausea, vomiting, or chest pain. The sore throat has not improved with lozenges, which provide only temporary relief. She notes palpable “lumps” in the neck consistent with lymphadenopathy but no swelling elsewhere. She denies recent travel, known sick contacts, or prior similar episodes. There is no cough, rhinorrhea, or other upper respiratory symptoms.
+
+Review of Systems  
+Constitutional: Feverish feeling, chills, fatigue; no weight loss or night sweats.  
+HEENT: Sore throat constant, worsened with swallowing; no cough, no nasal congestion, no ear pain, no visual changes.  
+Respiratory: No cough or dyspnea.  
+Cardiovascular: No chest pain, palpitations, or known arrhythmias.  
+Gastrointestinal: Normal bowel movements, no nausea, vomiting, or abdominal pain.  
+Genitourinary: No dysuria or change in urine output.  
+Skin: No rash or lesions.  
+Musculoskeletal: No joint pain; reports swimming as regular activity.  
+Neurologic: No headaches or focal deficits.  
+Psychiatric: No anxiety or depression reported.  
+
+Past Medical History  
+- Crohn’s disease, diagnosed last year, currently on sulfasalazine.  
+- Essential hypertension.  
+- Prediabetes.  
+- Anemia.  
+- Chronic kidney disease (stages 1–4 documented historically) progressing to end‑stage renal disease with a history of renal transplant (status ongoing).  
+- Metabolic syndrome.  
+- Ischemic heart disease.  
+- History of renal transplant (post‑transplant immunosuppression with tacrolimus).  
+
+Surgical History  
+- Colonoscopy with brief observation last year.  
+- Renal transplant (date not specified).  
+
+Social History  
+The patient lives in an apartment with her parents and younger brother. She does not smoke, does not use recreational drugs, and abstains from alcohol after brief past experimentation. She reports regular swimming for exercise and no participation in contact sports. No known environmental allergies.  
+
+Family History  
+Both Crohn’s disease and ulcerative colitis are present in family members. Asthma and eczema are also reported in relatives. No known hereditary cardiovascular disease.  
+
+Medications (current)  
+- Sulfasalazine (for Crohn’s disease) – dose not specified.  
+- Tacrolimus (extended‑release 1 mg daily) – immunosuppression for renal transplant.  
+- Hydrochlorothiazide 25 mg daily.  
+- Lisinopril 10 mg daily.  
+- Amlodipine 2.5 mg daily.  
+- Simvastatin 20 mg nightly.  
+- Metoprolol succinate 100 mg daily (extended‑release).  
+- Nitroglycerin 0.4 mg mucosal spray as needed.  
+- Additional agents listed in the record (e.g., acetaminophen/hydrocodone, naproxen) are available but not noted as scheduled daily medications.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Vital Signs  
+Heart rate: 89 beats per minute (recorded in prior chart).  
+Blood pressure, temperature, respiratory rate, SpO₂, weight, and height were not documented at this visit.  
+
+Physical Examination  
+No physical exam findings were documented in the encounter note.  
+
+Laboratory Data (most recent)  
+- Sodium: 137 mmol/L  
+- Potassium: 4.6 mmol/L  
+- Chloride: 109.8 mmol/L (secondary value 105.5 mmol/L)  
+- Carbon dioxide (total): 28 mmol/L  
+- Glucose: 64.6 mg/dL  
+- BUN: 9.3 mg/dL  
+- Creatinine: 0.95 mg/dL  
+- Calcium: 8.8 mg/dL  
+- Hemoglobin: 15.9 g/dL  
+- Hematocrit/MCV/MCHC values within normal limits (MCV 90.5 fL, MCHC 35.7 g/dL)  
+- White blood cell count: 4.7 × 10³/µL (low‑normal)  
+- Urinalysis: negative for leukocyte esterase, nitrites, ketones; pH 5.2.  
+- PHQ‑2 score: 2 (screening positive for possible depressive symptoms).  
+- DAST‑10 score: 2 (low‑level substance use concerns).  
+
+Assessment  
+1. Acute pharyngitis – most likely viral in etiology given lack of purulent exudate, absence of cough, and low‑normal leukocyte count.  
+2. Possible COVID‑19 infection – must be ruled out given current pandemic considerations.  
+3. Rule‑out infectious mononucleosis (EBV) – lymphadenopathy and fever are compatible.  
+4. Underlying immunosuppression from renal transplant and Crohn’s disease therapy may increase risk for atypical infections.  
+
+Plan  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR; advise patient to self‑isolate pending results (expected 24–48 hours).  
+- Order EBV serology (VCA IgM, IgG, and EBNA) to evaluate for infectious mononucleosis.  
+- Provide symptomatic treatment: recommend acetaminophen 500 mg every 6 hours as needed for fever or throat pain, continue use of throat lozenges, and maintain adequate hydration and soft diet.  
+- Counsel on signs that would warrant earlier re‑evaluation: high‑grade fever, inability to tolerate oral intake, new respiratory symptoms, or rapid enlargement of neck nodes.  
+- No antibiotics prescribed at this time; will consider throat culture or empiric therapy if bacterial infection becomes likely (e.g., persistent high fever, exudates, or worsening after 72 hours).  
+- Review immunosuppressive regimen; no changes are indicated currently, but ensure tacrolimus levels are within therapeutic range at the next transplant follow‑up.  
+- Schedule follow‑up in the family clinic in 3–5 days or sooner if test results return positive for COVID‑19 or EBV, or if symptoms progress.  
+- Provide education on infection control, hand hygiene, and the importance of completing the COVID‑19 test.  
+
+Discharge Instructions  
+- Remain isolated from household members until the COVID‑19 test result is known.  
+- Continue current medications as prescribed.  
+- Use over‑the‑counter analgesics as directed, maintain fluid intake, and rest.  
+- Return to the clinic or go to the emergency department if you develop shortness of breath, chest pain, high fever (>101 °F), or inability to swallow fluids.  
+
+Follow‑up  
+- Phone or in‑person visit in 3–5 days for result review and symptom reassessment.  
+- Earlier contact if any concerning new symptoms develop.

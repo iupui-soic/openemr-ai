@@ -1,0 +1,44 @@
+Model: google/medgemma-4b-it
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-04-14 05:59:27
+Time: 22.75s
+Tokens: 7,160 in / 387 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+Name: Amee Reva Goyette
+DOB: 1916-07-09
+Sex: Female
+Unit Number: 7671
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915
+
+Chief Complaint: Chest pain
+
+History of Present Illness:
+The patient presents with chest pain that has been occurring for the past two weeks. The pain is described as chest discomfort, localized to the left side. The pain is sharp in nature and comes and goes, lasting approximately 20-30 minutes at a time. The patient reports that the pain has been about the same in terms of frequency and severity over the past two weeks. The patient denies any associated symptoms such as nausea, vomiting, or difficulty breathing. The patient denies any recent changes in lifestyle or health. She reports that she has been experiencing increased stress due to personal issues. The patient has tried Advil, Tylenol, and Tums, but these medications have not provided relief. The pain is most prominent when the patient is at work or driving. The patient denies any previous episodes of chest pain.
+
+Past Medical History:
+The patient reports that she has been previously healthy. She denies any chronic conditions that she sees her family doctor for.
+
+Medications:
+The patient denies taking any medications currently.
+
+Allergies:
+The patient denies any allergies.
+
+Family History:
+The patient reports that her father had a heart attack last year.
+
+Social History:
+The patient is a smoker, smoking approximately half a pack to a pack per day. She is trying to quit. She drinks alcohol occasionally, having one or two glasses of wine on the weekend.
+
+Physical Exam:
+No information available.
+
+Assessment:
+The patient is experiencing chest pain that is likely related to stress. Further evaluation is needed to rule out any serious cardiac causes.
+
+Plan:
+The patient is being referred to her family doctor for further evaluation and management.

@@ -1,0 +1,58 @@
+Model: qwen/qwen3-32b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-04-14 03:44:44
+Time: 3.59s
+Tokens: 12,972 in / 969 out
+============================================================
+
+Patient Information  
+The patient is a 40-year-old male with a history of essential hypertension, chronic kidney disease stage 5 with renal transplant, chronic pain, chronic intractable migraine without aura, and a history of substance use disorder. He resides in Spencer, Massachusetts, with his wife and teenage son. He has a labradoodle and no known allergies except mild cat allergy. He reports recreational use of cannabis approximately once per month and consumes five to six beers on weekends. He is not a smoker and has no history of tobacco use. He has a past medical history of impacted molars, chronic kidney disease, and an ACL repair surgery. The patient has no recent travel or sick contacts and lives in a new home with no reported exposure to mold, asbestos, or other environmental irritants.
+
+Chief Complaint  
+The patient presents with a chief complaint of sinus symptoms consistent with acute sinusitis, including nasal congestion, greenish nasal discharge, facial pressure, headache, and low-grade fever.
+
+History of Present Illness  
+The patient reports experiencing symptoms consistent with a sinus infection for several weeks. He describes nasal congestion, green mucus upon saline rinsing, facial pressure and fullness, and a sinus headache. He denies fever or chills, but mentions a low-grade temperature of approximately 99.7°F. He has no cough, wheezing, or shortness of breath. He reports postnasal drip with a stinging sensation in the throat but no sore throat in the traditional sense. There is no loss of smell, though he notes that his sense of smell is diminished when congested. He has tried saline nasal rinses and occasional nasal decongestants but reports no significant improvement. He has a history of prior sinus infections and has used nasal steroid sprays in the past, but has not used them recently. He has not used antibiotics for this current episode.
+
+Review of Systems  
+Constitutional: Fever, headache, and fatigue are reported.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Normal bowel movements.  
+Genitourinary: No changes in urination.  
+Neurological: No dizziness, fainting, or visual changes.  
+Musculoskeletal: No new joint or muscle pain.  
+Integumentary: No rash or skin changes.  
+Psychiatric: No new mood changes.  
+Endocrine: No new symptoms of diabetes or thyroid dysfunction.  
+Hematologic: No bleeding or bruising.  
+Allergic/Immunologic: Mild cat allergy.  
+Other: No new symptoms in other systems.
+
+Allergies  
+Mild cat allergy.
+
+Past Medical History  
+Essential hypertension, chronic kidney disease stage 5 with renal transplant, chronic pain, chronic intractable migraine without aura, history of impacted molars, and a history of substance use disorder.
+
+Surgical History  
+ACL repair surgery and a prior hospital visit for a severe sinus infection.
+
+Social History  
+The patient consumes five to six beers on weekends and uses cannabis recreationally once per month. He lives with his wife and son and has a dog. No tobacco use. No recent travel or sick contacts.
+
+Family History  
+No known family history of lung or heart conditions.
+
+Current Medications  
+The patient is not currently on any prescribed medications. He occasionally uses ibuprofen for knee pain and has used nasal saline rinses and nasal steroid sprays in the past.
+
+Objective  
+Vital signs were not recorded in the OpenEMR extract. Physical examination findings were not detailed in the transcript. However, the patient’s symptoms are consistent with acute bacterial rhinosinusitis, including purulent nasal discharge, facial pressure, and headache. No other physical exam findings were reported.
+
+Assessment  
+The patient is diagnosed with acute bacterial rhinosinusitis. The symptoms are consistent with a bacterial infection, including purulent nasal discharge, facial pressure, and lack of improvement with conservative measures. The patient also has a history of chronic intractable migraine, essential hypertension, and chronic kidney disease stage 5 with renal transplant. No other acute or chronic conditions were identified in the current visit.
+
+Plan  
+The patient will be prescribed amoxicillin-clavulanate for five to seven days to treat the suspected bacterial sinusitis. In addition, an inhaled corticosteroid will be prescribed to help reduce nasal inflammation. The patient will be advised to continue saline nasal rinses and to monitor for improvement. A follow-up appointment is scheduled in one week to reassess symptoms. A rapid antigen test for SARS-CoV-2 will be performed to rule out concurrent infection. The patient will be instructed to return for further evaluation if symptoms worsen or do not improve within the treatment period.

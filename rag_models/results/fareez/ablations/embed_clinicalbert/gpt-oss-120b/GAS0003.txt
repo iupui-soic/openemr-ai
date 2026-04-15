@@ -1,0 +1,124 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:49:37
+Time: 5.48s
+Tokens: 18,410 in / 1,644 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (Age 79)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with acute right‑sided abdominal pain that began approximately eight hours ago.
+
+History of Present Illness  
+Ali Hayes reports that the pain started while she was preparing to go to sleep, about eight hours prior to the visit. She describes the pain as an aching quality localized to the right side of the abdomen. Initially the discomfort was intermittent, occurring for the first two hours, but over the subsequent five to six hours it has become constant. She rates the pain as 8 on a scale of 0 to 10. The pain does not radiate to other areas. She notes that eating, especially fatty foods such as burgers or fries, has historically triggered similar episodes of discomfort that she previously attributed to indigestion. She has not identified any factor that provides relief; acetaminophen (Tylenol) was taken without benefit. She feels mildly nauseated but has not vomited. She denies fever, chills, sweats, changes in bowel habits (no constipation or diarrhea), urinary symptoms, jaundice, or visible blood in stool. She reports a decreased appetite due to fear of pain after meals and a mild sense of fatigue related to the current discomfort. There is no recent travel, sick contacts, or known infections.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss reported.  
+Respiratory: No cough, dyspnea, or recent respiratory infections.  
+Cardiovascular: No chest pain, palpitations, or known heart disease beyond a paternal heart attack in his 60s.  
+Gastrointestinal: Right‑sided abdominal aching, worse after fatty meals; mild nausea without vomiting; no diarrhea, constipation, hematochezia, melena, or jaundice.  
+Genitourinary: No dysuria, hematuria, or change in urine color.  
+Musculoskeletal/Neurologic: No recent injuries; chronic migraine history noted in past records.  
+Psychiatric: No current depression or anxiety reported; occasional fatigue.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (currently treated with metformin; prior record also indicates insulin therapy)  
+- Essential hypertension  
+- Chronic kidney disease stage 2 progressing to stage 3 (most recent eGFR 36.9 mL/min/1.73 m²)  
+- Metabolic syndrome / obesity (BMI 27.9)  
+- Gastroesophageal reflux disease  
+- Chronic obstructive bronchitis (ongoing)  
+- Chronic migraine without aura  
+- Chronic pain syndrome  
+
+Surgical History  
+- Wisdom teeth extraction in teenage years  
+
+Social History  
+The patient is currently unemployed following lay‑off due to the COVID‑19 pandemic. She lives alone in an apartment. She reports regular outdoor runs when weather permits. Alcohol consumption is modest, averaging one to two glasses of wine per day. She does not smoke cigarettes or use recreational drugs.  
+
+Family History  
+Father suffered a myocardial infarction in his 60s. No known family history of cancer, inflammatory bowel disease, or other significant hereditary conditions.  
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.  
+
+Current Medications  
+- Metformin (dose not specified) for diabetes  
+- Lisinopril 10 mg daily for hypertension  
+- Insulin (human regular and NPH) as previously prescribed  
+- Fluticasone propionate/salmeterol inhaler (dose not specified) for chronic obstructive bronchitis  
+- Albuterol inhalation solution as needed  
+
+Objective  
+
+Vital Signs  
+Heart rate: 92 beats per minute  
+Respiratory rate: 13 breaths per minute  
+Temperature: Not documented  
+Blood pressure: Not documented  
+Weight: Not documented  
+Height: 167.5 cm (BMI 27.9)  
+
+Physical Examination  
+No physical examination findings were recorded in the encounter note.  
+
+Laboratory Data (most recent values available)  
+- Serum calcium: 9.27 mg/dL (within normal limits)  
+- Blood urea nitrogen: 7.05 mg/dL  
+- Serum creatinine: 1.97 mg/dL (consistent with CKD stage 3)  
+- Estimated GFR (MDRD): 36.9 mL/min/1.73 m²  
+- Serum sodium: 136 mmol/L  
+- Serum chloride: 103.96 mmol/L  
+- Urine protein: 214.8 mg/dL (elevated)  
+- Urine glucose: 1.53 mg/dL (trace)  
+- Urine ketones: 0.93 mg/dL (trace)  
+- Urine specific gravity: 1.038  
+
+No complete blood count, liver function panel, or lipase results are currently available.
+
+Assessment  
+1. Acute right‑sided abdominal pain, likely biliary colic or early acute cholecystitis given the location, character, and association with fatty meals.  
+2. Type 2 diabetes mellitus, controlled on metformin and insulin.  
+3. Hypertension, managed with lisinopril.  
+4. Chronic kidney disease stage 3, with reduced eGFR.  
+5. Chronic obstructive bronchitis.  
+
+Plan  
+
+Diagnostic Studies  
+- Obtain a complete metabolic panel, complete blood count, and serum lipase to evaluate for hepatobiliary or pancreatic pathology.  
+- Order right upper quadrant abdominal ultrasound to assess for gallstones, gallbladder wall thickening, and biliary ductal dilation.  
+- If ultrasound is nondiagnostic and suspicion for acute cholecystitis remains high, consider a HIDA scan.  
+
+Therapeutic Interventions  
+- Initiate intravenous fluid hydration with isotonic saline, titrated to renal status and cardiac function.  
+- Provide analgesia with intravenous acetaminophen (if renal dosing permits) or low‑dose opioid as needed, monitoring for respiratory depression given underlying COPD.  
+- Offer an antiemetic such as ondansetron for nausea.  
+- Keep the patient nil per os (NPO) pending imaging results.  
+
+Medication Management  
+- Continue home medications: metformin, lisinopril, insulin regimen, and inhaled bronchodilators.  
+- Hold any non‑essential nephrotoxic agents until renal function is re‑evaluated.  
+
+Consultations  
+- Request a general surgery consult for possible cholecystectomy if imaging confirms acute cholecystitis.  
+
+Disposition and Follow‑up  
+- Observe in the emergency department or short‑stay unit until imaging and laboratory results are available.  
+- If the work‑up confirms uncomplicated biliary colic, advise low‑fat diet and schedule outpatient surgical evaluation within the next 1–2 weeks.  
+- If acute cholecystitis is diagnosed, arrange for inpatient admission and surgical intervention per standard protocols.  
+- Arrange follow‑up with primary care within 3–5 days to reassess renal function, diabetes control, and overall status.  
+
+Patient Education  
+- Discuss the likely relationship between fatty meals and right‑upper‑quadrant pain.  
+- Counsel on low‑fat dietary modifications and the importance of prompt medical evaluation for worsening pain, fever, or vomiting.  
+- Review signs of complications (e.g., fever, jaundice, dark urine, clay‑colored stools) and instruct the patient to seek emergency care if these develop.  
+
+No further information is available at this time.

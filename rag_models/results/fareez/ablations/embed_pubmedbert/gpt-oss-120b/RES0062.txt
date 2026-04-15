@@ -1,0 +1,126 @@
+Model: openai/gpt-oss-120b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:51:27
+Time: 5.91s
+Tokens: 15,186 in / 2,013 out
+============================================================
+
+Patient Information  
+Abel Cummerata, Male, Date of Birth 25 March 1917. He resides at 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts. His primary language and cultural background are not documented.  
+
+Chief Complaint  
+Cough and progressive shortness of breath for the past three days.  
+
+History of Present Illness  
+Mr. Cummerata reports the onset of a productive cough three days ago. The sputum is described as yellow‑green in color and approximately the size of the tip of his thumb. He denies any blood in the sputum. The cough is described as “hacking” and is present throughout the day and night, worsening over the past 48 hours. One day ago he began experiencing increasing shortness of breath, which he rates as 7/10 on a severity scale. He notes that the dyspnea is associated with occasional wheezing when the shortness of breath is at its worst. The respiratory symptoms have disrupted his sleep, although he is uncertain whether the cough or the dyspnea is the primary cause. He reports generalized fatigue, a feeling of weakness, mild body aches, and a low‑grade sense of fever (“feeling a little hot”). He has also noticed a new loss of smell, being unable to detect the odor of a candle earlier in the day. He denies chest pain, palpitations, dizziness, syncope, confusion, or memory changes. He has mild abdominal discomfort but no nausea, vomiting, diarrhea, constipation, or blood in the stool. He has not experienced a sore throat, rhinorrhea, nasal congestion, visual or auditory changes, or urinary symptoms. He has no known triggers for his cough and no recent travel. He visited his mother in a long‑term care facility approximately one week ago, where there is a known COVID‑19 outbreak.
+
+Review of Systems  
+
+Constitutional: Positive for fatigue, generalized weakness, mild body aches, low‑grade fever, loss of smell. Negative for chills, night sweats, weight loss, or dizziness.  
+
+Respiratory: Positive for productive cough with yellow‑green sputum, dyspnea (7/10), occasional wheezing; negative for hemoptysis, chest pain, or pleuritic pain.  
+
+Cardiovascular: Positive for known atrial fibrillation, currently stable on metoprolol; negative for chest pain, palpitations, orthopnea, or lower extremity edema.  
+
+Gastrointestinal: Positive for mild abdominal ache; negative for nausea, vomiting, dysphagia, heartburn, diarrhea, constipation, melena, or hematochezia.  
+
+Genitourinary: Negative for dysuria, frequency, urgency, or hematuria.  
+
+Neurologic: Positive for anosmia; negative for headache, dizziness, syncope, focal deficits, or altered mental status.  
+
+Skin: No rash currently; historical sulfa allergy noted.  
+
+Allergies  
+Sulfa drugs – causes rash (type unspecified). No other drug, food, or environmental allergies reported.  
+
+Past Medical History  
+
+- Atrial fibrillation (diagnosed 1993; currently on metoprolol).  
+- Hypertension (essential).  
+- Chronic kidney disease (stage 4) and end‑stage renal disease (on dialysis per historical record).  
+- Anemia.  
+- Metabolic syndrome.  
+- History of renal transplant (awaiting re‑transplant per record).  
+- Other chronic conditions listed in the record (e.g., osteoarthritis, prostate neoplasm) are not directly relevant to the current presentation.  
+
+Surgical History  
+Inguinal hernia repair performed approximately 15 years ago; no reported complications.  
+
+Social History  
+Former cigarette smoker, 1 pack per day for many years, quit five years ago after diagnosis of atrial fibrillation. No current tobacco use. Denies current alcohol consumption; reports abstinence for several years. Uses over‑the‑counter cannabidiol (CBD) edibles a few times per week (lowest dose, approximately 2.5 mg) to aid sleep. No illicit drug use. Lives in a house with his wife; no known environmental mold, asbestos, or pet exposures.  
+
+Family History  
+Aunt with lung cancer (smoked throughout life). No other reported familial cardiac, oncologic, or metabolic diseases.  
+
+Current Medications (home)  
+
+- Metoprolol (beta‑blocker) – dose not specified.  
+- Statin (type and dose not specified).  
+- Low‑dose aspirin (baby aspirin) – for atrial fibrillation prophylaxis.  
+- Over‑the‑counter CBD edibles (≈2.5 mg) – used for sleep.  
+
+Objective  
+
+Vital Signs: No current vital signs documented.  
+
+Physical Examination: No physical exam findings recorded at this encounter.  
+
+Laboratory Data (most recent values available)  
+
+- Basophils: 3.05 % (0.252 ×10³/µL).  
+- Neutrophils: 13.66 % (value not converted to absolute count).  
+- Monocytes: 9.46 % (0.536 ×10³/µL).  
+- Hematocrit: 43.34 %.  
+- Hemoglobin (derived from Hct): within normal limits for age.  
+- Red blood cell count: 4.24 ×10⁶/µL.  
+- Ferritin: 1853 µg/L (elevated, consistent with chronic disease).  
+- Electrolytes: Sodium not listed; Potassium 4.04 mmol/L; Calcium 9.75 mg/dL.  
+- Bicarbonate (serum): 24.89 mmol/L; arterial CO₂ (partial pressure) 41.9 mmHg; arterial HCO₃⁻ 24.3 mmol/L.  
+- Blood urea nitrogen: 17.9 mg/dL.  
+- Liver enzymes: AST 15 U/L; ALT not reported.  
+- Other values: No complete blood count differential, lactate, or inflammatory markers recorded.  
+
+Imaging: No imaging studies performed or documented during this visit.  
+
+Assessment  
+
+Primary Diagnosis: Pneumonia, likely viral in etiology (possible COVID‑19) given recent exposure, anosmia, and systemic symptoms.  
+
+Secondary Diagnoses:  
+- Atrial fibrillation, stable on metoprolol.  
+- Chronic kidney disease stage 4 / end‑stage renal disease.  
+- Hypertension.  
+- Anemia of chronic disease.  
+- History of inguinal hernia repair.  
+
+Hospital Course: This encounter is an outpatient evaluation. The patient’s respiratory symptoms are consistent with an acute lower‑respiratory‑tract infection. Given recent exposure to a known COVID‑19 outbreak, a nasopharyngeal swab for SARS‑CoV‑2 PCR was ordered. The clinical picture does not currently suggest bacterial superinfection, but the patient will be monitored closely for clinical deterioration.  
+
+Plan  
+
+1. Diagnostic Testing  
+   - Obtain nasopharyngeal swab for SARS‑CoV‑2 PCR; results expected within 24–48 hours.  
+
+2. Pharmacologic Management  
+   - No immediate antibiotics prescribed; will consider empiric antimicrobial therapy if bacterial pneumonia becomes likely (e.g., persistent fever >38.5 °C, worsening dyspnea, or radiographic evidence).  
+   - Continue current home medications (metoprolol, statin, aspirin).  
+   - Encourage use of prescribed albuterol inhaler as needed for wheezing (if available).  
+   - Advise against initiating new OTC cough suppressants or expectorants without physician guidance.  
+
+3. Non‑Pharmacologic Measures  
+   - Strict home isolation for at least 14 days from the onset of symptoms, including separation from household members when feasible.  
+   - Encourage adequate hydration, rest, and use of a humidifier if tolerated.  
+   - Monitor temperature twice daily; treat fever with acetaminophen 500 mg PO q6h PRN not to exceed 3 g per day.  
+   - Use of the CBD edibles for sleep may be continued, but discuss alternative sleep aids (e.g., melatonin) at the next visit if desired.  
+
+4. Discharge Instructions  
+   - Seek urgent care or emergency department evaluation if any of the following occur: worsening shortness of breath, chest pain, new onset confusion, inability to maintain oral intake, fever >38.5 °C persisting >48 hours, or oxygen saturation (if measured) falls below 94 %.  
+   - Continue routine monitoring of blood pressure and heart rate; report any episodes of rapid or irregular heartbeats.  
+   - Maintain medication adherence for atrial fibrillation and chronic conditions; bring medication list to any subsequent visits.  
+
+5. Follow‑Up  
+   - Telephone or telemedicine follow‑up in 48–72 hours to review COVID‑19 test result and symptom trajectory.  
+   - In‑person evaluation sooner if clinical status worsens.  
+   - Routine cardiology follow‑up for atrial fibrillation as previously arranged.  
+
+The patient verbalized understanding of the plan, agreed to testing and isolation, and has no further questions at this time.

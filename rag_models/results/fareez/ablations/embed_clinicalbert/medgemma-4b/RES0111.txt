@@ -1,0 +1,50 @@
+Model: google/medgemma-4b-it
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 05:59:27
+Time: 27.19s
+Tokens: 9,723 in / 450 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Name: Aaron Paucek
+DOB: 1950-09-14
+Sex: Male
+Unit Number: 84
+Address: 318 Fay Ferry, Boston, Massachusetts 02116
+
+Chief Complaint: Sore throat for four days, fever, difficulty swallowing, hoarseness.
+
+History of Present Illness:
+
+The patient presents with a sore throat that began four days ago. He reports a fever and difficulty swallowing. He is able to drink, but solid foods are difficult to eat. He denies any difficulty with breathing, chest pain, or nasal congestion. He denies any changes in his voice. He denies any runny nose or cough. He denies any difficulty breathing or chest pain. He denies any nasal congestion or facial/head pain when bending down. He denies headache. He denies feeling confused or not feeling well. He denies any changes in hearing or vision. He denies heart palpitations or shortness of breath. He denies belly pain, nausea, or vomiting. He denies diarrhea or constipation. He denies fatigue or unintentional weight loss.
+
+Past Medical History:
+
+The patient reports no significant past medical history. He had his appendix removed at age 13.
+
+Medications:
+
+The patient is currently taking multivitamins.
+
+Social History:
+
+The patient lives with his parents and two siblings. He feels safe at home. He is not sexually active. He does not drink alcohol or smoke. He has not tried marijuana or any recreational drugs. He is currently in grade 10 and doing well in school. He denies any bullying at school. He denies any concerns about depression or anxiety. He has not traveled recently. He is maintaining social distancing and wearing a mask at school.
+
+Family History:
+
+The patient denies any significant medical conditions in his family.
+
+Physical Exam:
+
+The doctor noted that the patient's throat appeared swollen and red.
+
+Assessment:
+
+The doctor suspects an inflammation or swelling of the throat, possibly due to bacteria or viruses, or potentially COVID-19.
+
+Plan:
+
+The doctor ordered a rapid strep test and instructed the patient to quarantine for 14 days, or until symptoms improve, or until the COVID-19 swabs return. The doctor will provide further management based on the strep test result.

@@ -1,0 +1,78 @@
+Model: openai/gpt-oss-20b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 03:32:49
+Time: 1.93s
+Tokens: 6,687 in / 1,170 out
+============================================================
+
+Patient Information  
+Abe Steuber, a 26‑year‑old male, was evaluated on July 19, 2024 for chronic back pain. He is employed full‑time as a bank teller, lives in a condo with his girlfriend, and has no known tobacco use. He reports recreational marijuana use once or twice per week and occasional alcohol consumption on weekends.  
+
+Chief Complaint  
+The patient presents with persistent lower back pain that has been progressively worsening for approximately five months.
+
+History of Present Illness  
+The patient reports dull, aching pain distributed from the mid to lower thoracic spine extending to the lumbar region. He cannot identify a single focal point; the pain is generalized over the back. The pain intensity fluctuates between 4 and 5 on a 0‑10 numeric rating scale, with some days experiencing slightly higher scores. Morning stiffness is prominent, lasting 30 to 60 minutes after awakening, after which the pain improves gradually as the day progresses. The pain has been progressive in nature; it began as a mild discomfort that increased over time. No precipitating trauma or injury was identified. The patient has used over‑the‑counter analgesics, including acetaminophen and ibuprofen/advil, with modest transient relief. He denies any radicular radiation into the legs, numbness, tingling, weakness, or sensory deficits. He has also reported mild fatigue and malaise over the past few months, but denies fever, night sweats, weight loss, altered bowel or urinary habits, or changes in vision.  
+
+Review of Systems  
+Constitutional: mild fatigue, malaise; no fever, night sweats, or weight change.  
+Musculoskeletal: chronic low back pain, occasional knee pain, occasional hand pain; no swelling, redness, or deformity.  
+Neurologic: no numbness, tingling, or weakness.  
+Cardiovascular: no chest pain, palpitations.  
+Respiratory: asthma, uses blue inhaler when needed, otherwise no cough or dyspnea.  
+Gastrointestinal: no abdominal pain, nausea, vomiting; one episode of diarrhea several months ago treated with antibiotics.  
+Genitourinary: no dysuria, hematuria.  
+Dermatologic: mother has psoriasis; patient has no current skin changes.  
+Psychiatric/Behavioral: PHQ‑2 score 2, GAD‑7 2; mild anxiety noted.  
+
+Past Medical History  
+Asthma (current use of rescue inhaler).  
+Seasonal allergic rhinitis (fexofenadine use).  
+No previous surgeries or significant trauma.  
+
+Medication History  
+Current home medications (per patient report): blue rescue inhaler for asthma, over‑the‑counter acetaminophen and ibuprofen/advil as needed.  
+Past prescriptions (from OpenEMR, likely outdated): acetaminophen, naproxen, fexofenadine, hydrocortisone cream, etc.  
+
+Social History  
+Works full‑time in a bank environment. Lives with partner; uses condoms for contraception. No tobacco use. Recreational marijuana use once or twice per week. Occasional alcohol. No illicit drug use.  
+
+Family History  
+Mother has psoriasis; no known joint disease in family.  
+
+Allergies  
+One unspecified medication allergy noted in OpenEMR; no current drug allergies reported by patient.  
+
+Physical Examination  
+Vital signs not documented in the encounter.  
+General: Well‑appearing male, no acute distress.  
+Musculoskeletal: Spinal range of motion limited by discomfort, especially during flexion and extension; tenderness noted over the mid‑lumbar and lower thoracic vertebrae. No swelling or erythema of extremities. No palpable masses or deformities. Neurologic exam not documented.  
+
+Laboratory Studies  
+No labs were drawn during this visit.  
+
+Imaging  
+No imaging was obtained during this encounter.  
+
+Assessment  
+Primary: Chronic mechanical low back pain of unclear etiology, likely musculoskeletal in origin.  
+Differential diagnoses include:  
+- Ankylosing spondylitis (male, young, morning stiffness, progressive pain)  
+- Psoriatic arthritis (family history, joint pain)  
+- Reactive arthritis (prior gastrointestinal illness)  
+
+Plan  
+1. Order baseline laboratory work: Complete blood count, ESR, C‑reactive protein, rheumatoid factor, antinuclear antibody, HLA‑B27.  
+2. Order imaging studies: X‑ray of the spine and sacroiliac joints; X‑ray of hands and knees for baseline comparison.  
+3. Initiate conservative management: Continue NSAIDs (e.g., ibuprofen) for pain control; acetaminophen for breakthrough pain.  
+4. Counsel on activity modifications: gentle stretching, posture education, and weight‑bearing exercises as tolerated.  
+5. Schedule follow‑up appointment in 4 weeks to review lab results, imaging, and response to therapy.  
+6. If imaging or labs suggest inflammatory arthritis, refer to rheumatology for further evaluation and potential disease‑modifying therapy.  
+7. Provide education on red‑flag symptoms that warrant immediate medical attention (fever, weight loss, new neurological deficits, urinary retention).  
+
+Follow‑up instructions: The patient will return to the office in one month for review of diagnostic studies and to discuss next steps. He should contact the clinic sooner if symptoms worsen or new concerning signs develop.  
+
+Discharge instructions: None applicable; the patient remains in the outpatient setting.  
+Prepared by: [Provider Name]  
+Date: July 19, 2024

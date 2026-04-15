@@ -1,0 +1,100 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:57:37
+Time: 3.47s
+Tokens: 8,961 in / 1,605 out
+============================================================
+
+Patient Information  
+Name: Amos Crona  
+Date of Birth: January 20, 1934 (92 years old)  
+Sex: Male  
+Address: 201 O'Conner Glen, Wayland, Massachusetts 00000  
+Living situation: Lives with parents in a house  
+
+Chief Complaint  
+The patient presents with sudden onset chest pain localized to the left chest wall, reporting a 7/10 intensity at the time of evaluation.  
+
+History of Present Illness  
+Mr. Crona reports that the chest pain began approximately 30 minutes ago while shoveling the driveway. He describes the pain as dull with a sensation of pressure. The pain has increased steadily since onset. It is localized to the left chest and does not radiate. Mr. Crona notes that the pain worsens with movement, particularly when walking or when lying down. He has not identified any relieving maneuvers. He reports shortness of breath that began yesterday and has continued since the onset of chest pain. No cough, wheeze, or hemoptysis is reported. He denies any recent trauma to the chest, though he was tackled during rugby the previous day and did not feel any chest discomfort at that time. He denies nausea, vomiting, diaphoresis, or palpitations except for a sensation of a faster heartbeat while playing sports, which he attributes to exertion.  
+
+Review of Systems  
+Constitutional: Fever noted with temperature 38 °C; reports feeling a little hot today; denies chills or weight loss.  
+Respiratory: Shortness of breath since yesterday; denies cough, sputum, wheeze, or chest tightness apart from the described pain.  
+Cardiovascular: Chest pain, tachycardia sensation while exercising; denies palpitations, syncope, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, or change in bowel habits.  
+Neurologic: No dizziness or headache.  
+Skin: No rashes or lesions.  
+Psychiatric: PHQ‑2 score of 2 (moderate depressive symptoms).  
+
+Past Medical History  
+- Hypertension (diagnosed 1984)  
+- Hyperlipidemia (diagnosed 2010)  
+- Chronic kidney disease stage 3 (diagnosis 2004) – no current laboratory evidence of renal dysfunction.  
+- Anemia (history)  
+- Sleep apnea (history)  
+- Ischemic heart disease (history)  
+- Prediabetes (history)  
+- Chronic pain (lower back, neck)  
+- Chronic obstructive pulmonary disease (history of smoking)  
+
+Medications (current)  
+- Rosuvastatin 10 mg daily  
+- Lisinopril 20 mg daily  
+- Multivitamin daily  
+(Other medications listed in the electronic record are either discontinued or not currently prescribed, as confirmed by the patient.)  
+
+Social History  
+- Tobacco: Smokes approximately half a pack to a full pack per day for the past 20 years.  
+- Alcohol: Denies alcohol use.  
+- Recreational drugs: Reports using crystal methamphetamine a few times per month, most recently six days ago.  
+- Occupation: Bus driver for the city; reports moderate physical activity such as shoveling.  
+- Exercise: Runs on Sundays; otherwise limited activity.  
+- Diet: Reports a balanced diet but frequent eating out.  
+- Living situation: Lives with parents in a house; no isolation noted.  
+
+Family History  
+No known family history of heart attack, stroke, or cancer.  
+
+Physical Examination  
+Vital signs: Temperature 38 °C. Blood pressure, heart rate, respiratory rate, and oxygen saturation were not documented during this encounter.  
+General: Alert and oriented, appears anxious.  
+Cardiovascular: No murmurs heard; heart rate felt tachycardic by patient; no jugular venous distension.  
+Respiratory: Breath sounds clear bilaterally; no wheezes, crackles, or rhonchi.  
+Chest: No tenderness noted except in the left anterior chest; no crepitus or deformity.  
+Abdomen: Soft, non‑tender, non‑distended.  
+Extremities: No edema in lower extremities.  
+Neurologic: No focal deficits.  
+
+Laboratory Results (most recent available)  
+- Temperature: 38 °C  
+- White blood cell count: not available  
+- Hemoglobin: not available  
+- Platelets: not available  
+- Creatinine: 0.72 mg/dL  
+- BUN: 19.2 mg/dL  
+- Electrolytes: Sodium 141.6 mmol/L, Potassium 5.03 mmol/L, Chloride 101.2 mmol/L, CO₂ 20.7 mmol/L  
+- Lipid panel: Total cholesterol 185 mg/dL, LDL 140 mg/dL  
+- Glucose: 84.5 mg/dL  
+- Liver enzymes: ALT 21.8 U/L  
+
+Assessment  
+Acute chest pain of unclear etiology; differential diagnosis includes acute coronary syndrome (unstable angina or myocardial infarction), musculoskeletal strain, pulmonary embolism, pericarditis, or esophageal spasm. The patient’s age, history of ischemic heart disease, hypertension, hyperlipidemia, smoking, and recent methamphetamine use increase his cardiovascular risk profile. The presence of shortness of breath, fever, and a sensation of tachycardia further raise concern for an acute coronary event.  
+
+Plan  
+1. Immediate evaluation: Obtain an ECG within the next 10 minutes to assess for ischemic changes or arrhythmia.  
+2. Cardiac biomarkers: Serial troponin I/T levels to evaluate for myocardial injury.  
+3. Pain management: Administer 325 mg aspirin chewable, 100 mg sublingual nitroglycerin if no contraindications, and consider morphine sulfate 2.5 mg IV if pain persists.  
+4. Oxygen therapy: If SpO₂ falls below 94 %, administer supplemental oxygen.  
+5. Monitor vital signs continuously (BP, HR, RR, SpO₂) and reassess pain every 30 minutes.  
+6. Consult cardiology for urgent assessment and possible cardiac catheterization.  
+7. Smoking cessation counseling and referral to a cessation program.  
+8. Discuss methamphetamine cessation resources; refer to substance abuse counseling.  
+9. Educate the patient on red‑flag symptoms (worsening chest pain, diaphoresis, syncope) and advise immediate return to the emergency department if these occur.  
+10. Arrange follow‑up: Cardiology clinic in 2 days or sooner if symptoms worsen; primary care follow‑up in 1 week to review medication adherence, lifestyle modification, and mental health.  
+11. Document and order a chest X‑ray if suspicion for pneumonia or other pulmonary process persists.  
+12. If troponin results are negative and ECG is normal, consider alternative diagnoses such as musculoskeletal strain; provide NSAID therapy (e.g., ibuprofen 400 mg PO q6h PRN) if no contraindication.  
+
+Disposition  
+The patient was advised to remain in the clinic for observation until cardiac workup is complete. He was given written instructions on symptom monitoring and when to seek emergent care. The plan was reviewed with the patient and his parents, and they expressed understanding. The patient will be scheduled for a cardiology appointment and substance abuse counseling.

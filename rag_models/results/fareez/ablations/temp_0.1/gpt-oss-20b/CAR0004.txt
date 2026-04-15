@@ -1,0 +1,72 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 04:16:35
+Time: 2.21s
+Tokens: 9,189 in / 1,001 out
+============================================================
+
+Patient Information  
+The patient is a 25‑year‑old male, currently a student and part‑time postal worker. He lives with his parents. No additional demographic information is available.
+
+Chief Complaint  
+Sharp, brief episodes of chest pain localized over the heart region, radiating to the neck.
+
+History of Present Illness  
+The patient reports that the chest pain began approximately three days ago. The pain is described as sharp and lasts only a few seconds before resolving. It is most intense when coughing or lying down, and improves when he leans forward. The pain does not spread to other areas of the chest and is rated 6 out of 10 in intensity. The patient denies any associated shortness of breath, dizziness, palpitations, weakness, numbness, nausea, vomiting, fever, chills, or recent injuries. He has taken acetaminophen (Tylenol) once yesterday, which provided some relief. He had a flu‑like illness last week with fever, runny nose, and cough, but these symptoms have resolved. He has no prior episodes of chest pain and no known medical conditions.
+
+Review of Systems  
+Constitutional: No fever, chills, weight change, or fatigue.  
+Respiratory: No cough, wheeze, or shortness of breath.  
+Cardiovascular: Chest pain as described; denies palpitations, syncope, or edema.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Neurologic: No dizziness, weakness, or numbness.  
+Psychiatric: No anxiety or depression symptoms reported.  
+Other systems: No skin changes, joint pain, or urinary symptoms.
+
+Past Medical History  
+No chronic medical conditions, surgeries, or hospitalizations. No regular medications except occasional acetaminophen. No known drug allergies.
+
+Social History  
+The patient is a student and works part‑time as a postal worker. He lives with his parents. He consumes alcohol occasionally (one to two drinks on weekends). He does not smoke cigarettes or use recreational drugs.
+
+Family History  
+Father died of a heart attack two weeks prior to the current visit. No other family history of cardiovascular disease, cancer, or significant illnesses is reported.
+
+Medications  
+Acetaminophen (Tylenol) as needed for pain relief.
+
+Allergies  
+No known drug, food, or environmental allergies.
+
+Physical Examination  
+No physical examination findings were documented during this encounter.
+
+Laboratory Results  
+The following laboratory values were retrieved from the electronic health record; however, the dates of these results are not specified and may not reflect the current clinical status.  
+- Potassium: 4.19 mmol/L  
+- Calcium: 9.75 mg/dL  
+- Urea nitrogen: 15.7 mg/dL  
+- Creatinine: 0.35 mg/dL  
+- Glucose: 92.46 mg/dL  
+- Sodium: 141.33 mmol/L  
+- Chloride: 108.32 mmol/L  
+- Carbon dioxide, total: 27.21 mmol/L  
+- Additional routine labs (CBC, electrolytes, metabolic panel) were within normal limits as per the record.
+
+Imaging  
+No imaging studies were performed or documented at this time.
+
+Assessment  
+The patient presents with acute, sharp, brief episodes of chest pain that are worsened by coughing and lying down, and relieved by leaning forward. The pain characteristics and lack of associated symptoms make acute coronary syndrome less likely, but cannot be excluded given the family history of a recent fatal myocardial infarction. Differential diagnoses include musculoskeletal chest wall pain, pericarditis, and less likely pulmonary embolism or aortic dissection. The absence of fever, pericardial rub, and systemic symptoms makes pericarditis less probable. The pain’s brief duration and positional relief are more typical of musculoskeletal origin.
+
+Plan  
+1. Order an electrocardiogram (ECG) to evaluate for ischemic changes or arrhythmias.  
+2. Obtain cardiac biomarkers (troponin I/T) to rule out myocardial injury.  
+3. Consider a chest radiograph if respiratory or structural causes are suspected.  
+4. Continue acetaminophen PRN for pain control.  
+5. Educate the patient on warning signs of acute coronary syndrome (persistent chest pain, diaphoresis, nausea, shortness of breath) and advise immediate medical attention if these develop.  
+6. Schedule a follow‑up appointment within 24–48 hours or sooner if symptoms worsen or new symptoms appear.  
+7. If ECG or biomarkers are abnormal, refer to cardiology for further evaluation and management.  
+
+The patient was advised to monitor his symptoms closely and to seek emergency care if chest pain becomes more frequent, prolonged, or is accompanied by additional concerning symptoms.

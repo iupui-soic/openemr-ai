@@ -1,0 +1,116 @@
+Model: qwen/qwen3-32b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:46:01
+Time: 4.45s
+Tokens: 12,880 in / 1,286 out
+============================================================
+
+Patient Information:
+
+The patient is a 99-year-old female with a complex medical history, including essential hypertension, type 2 diabetes mellitus, chronic kidney disease (stage 4 progressing to end-stage renal disease), breast cancer, colon cancer, ischemic heart disease, and a history of renal transplantation. She resides with two roommates and is currently employed full-time. She has a history of asthma and uses a rescue inhaler as needed. She denies any allergies and consumes alcohol occasionally, primarily on weekends. Her past surgical history includes a hysterectomy and impacted molars. She has a history of chronic pain, chronic intractable migraine, and social isolation. She has a criminal record and has experienced intimate partner abuse in the past.
+
+Chief Complaint:
+
+The patient presents with acute onset of severe diarrhea over the past three to four days, occurring approximately every hour, with associated cramping abdominal pain, nausea, and two episodes of vomiting in the past 24 hours. She reports that the diarrhea has been so severe that it has prevented her from attending classes and has caused significant disruption to her daily activities.
+
+History of Present Illness:
+
+The patient developed acute, watery diarrhea three to four days ago, with no prior history of similar symptoms. The stools have been consistently loose, with no blood noted. She has experienced crampy abdominal pain since the second day of illness, which is intermittent in nature. She reports nausea, with two episodes of vomiting, but no fever, chills, or significant fatigue. She has not consumed any over-the-counter medications for her symptoms and has attempted to stay hydrated by drinking water. She notes a decreased appetite since the onset of abdominal cramps. She recently dined at a Chinese restaurant five days ago, consuming chicken Manchurian with rice, but no other individuals with her at the time have reported similar symptoms.
+
+Review of Systems:
+
+Constitutional: The patient denies fever, chills, or unintentional weight loss.
+
+Respiratory: No cough, shortness of breath, or chest pain reported.
+
+Cardiovascular: No palpitations or syncope.
+
+Gastrointestinal: Diarrhea is the primary concern; no constipation or changes in appetite aside from decreased intake. No dysphagia or heartburn.
+
+Genitourinary: No dysuria, hematuria, or changes in urinary frequency or volume.
+
+Musculoskeletal: No joint pain or muscle aches reported.
+
+Neurological: No headaches, dizziness, or altered mental status.
+
+Psychiatric: No anxiety or depression reported.
+
+Dermatological: No rashes or skin changes.
+
+Endocrine: No polyuria or polydipsia beyond hydration efforts.
+
+Hematologic: No bruising or bleeding noted.
+
+Allergies:
+
+No known drug or food allergies.
+
+Past Medical History:
+
+The patient has a long-standing history of essential hypertension, type 2 diabetes mellitus, chronic kidney disease (progressing to end-stage renal disease), breast and colon cancer, ischemic heart disease, and a history of renal transplantation. She has also experienced chronic pain, chronic intractable migraine, and chronic kidney disease secondary to diabetes. She has a history of social isolation, reports of violence in the environment, and intimate partner abuse.
+
+Surgical History:
+
+The patient has undergone a hysterectomy and has impacted molars. She has also undergone a renal transplant.
+
+Social History:
+
+The patient lives with two roommates and is currently employed full-time. She consumes alcohol occasionally, primarily on weekends, and denies any tobacco or recreational drug use. She reports a diet consisting of oatmeal for breakfast, salads for lunch, and frequently eats out for dinner, including fast food.
+
+Family History:
+
+The patient's brother had appendicitis in childhood. Her mother has had a hysterectomy. No known family history of inflammatory bowel disease or other digestive disorders.
+
+Current Medications:
+
+The patient is on multiple medications, including tacrolimus, simvastatin, metoprolol succinate, nitroglycerin, acetaminophen, and others. These medications are primarily related to her chronic conditions, including renal transplant, hypertension, and ischemic heart disease.
+
+Objective:
+
+Vital Signs:
+
+Heart rate: 95 bpm  
+Respiratory rate: 15 breaths/min  
+SpO2: Not available  
+Temperature: Not available  
+Blood pressure: Not available  
+Weight: Not available  
+Height: 155.7 cm  
+BMI: 27.72  
+
+Physical Exam:
+
+No physical examination findings were provided in the transcript. The patient's symptoms are primarily gastrointestinal in nature, with no signs of systemic illness or dehydration reported.
+
+Laboratory Results:
+
+Hemoglobin: 15.7 g/dL  
+Leukocytes: 3.96 × 10³/uL  
+Glucose: 92.2 mg/dL  
+Creatinine: 0.68 mg/dL  
+Sodium: 143.42 mmol/L  
+Chloride: 108.13 mmol/L  
+Carbon dioxide: 22.42 mmol/L  
+Nitrite in urine: Negative  
+Leukocytes in urine: Not specified  
+Protein in urine: Negative  
+Glucose in urine: Negative  
+
+Imaging:
+
+No imaging studies were performed or reported in the provided data.
+
+Assessment:
+
+The patient presents with acute onset of severe diarrhea, cramping abdominal pain, and nausea, likely secondary to a gastrointestinal infection. Given the recent consumption of food at a restaurant and the absence of fever or blood in the stool, a possible diagnosis of acute gastroenteritis is considered. No evidence of systemic infection or dehydration is noted at this time. The patient's extensive medical history, including chronic kidney disease and renal transplant, necessitates careful monitoring for complications.
+
+Plan:
+
+1. Encourage oral hydration with electrolyte solutions and continued water intake.
+2. Monitor for signs of dehydration, including dizziness, decreased urine output, or worsening fatigue.
+3. Recommend a bland diet and avoidance of dairy or fatty foods.
+4. Avoid over-the-counter anti-diarrheal medications unless directed by a physician.
+5. Schedule a follow-up visit in 24–48 hours if symptoms persist or worsen.
+6. Consider stool studies or further evaluation if symptoms do not resolve or if new symptoms develop.
+7. Continue current medications as prescribed, with particular attention to renal function and hydration status.

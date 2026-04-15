@@ -1,0 +1,71 @@
+Model: openai/gpt-oss-20b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:34:25
+Time: 2.60s
+Tokens: 10,317 in / 919 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek (as recorded in the electronic health record)  
+Age: 16 years (10th grade student)  
+Sex: Male  
+
+Chief Complaint  
+The patient presents with a sore throat lasting four days and the onset of fever.
+
+History of Present Illness  
+The patient reports a progressively worsening sore throat that began four days ago. He is able to swallow liquids but experiences significant pain when eating solid foods. He denies any difficulty swallowing or sensation of food getting stuck. He reports a mild hoarseness and describes the throat as swollen and red upon visual inspection. The patient notes that he is feeling hot and believes he may have a fever, although his temperature has not yet been measured. No cough, nasal congestion, chest pain, shortness of breath, headache, dizziness, visual changes, hearing changes, abdominal pain, nausea, vomiting, diarrhea, constipation, or fatigue have been reported. He denies recent weight loss or unexplained weight changes. No history of trauma or recent illness apart from the current throat pain.
+
+Review of Systems  
+Constitutional: No chills (other than feeling hot), no weight loss.  
+Respiratory: No cough, no shortness of breath, no nasal congestion, no chest pain.  
+Cardiovascular: No palpitations, no chest discomfort.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Neurologic: No confusion, no headaches, no vision or hearing changes.  
+Psychiatric: No anxiety or depression.  
+Social: Lives with parents and two siblings; no alcohol, tobacco, or recreational drug use; no sexual activity; no recent travel; mask use in school.  
+
+Past Medical History  
+No chronic medical conditions reported. The patient underwent an appendectomy at age 13. No known allergies. No current medications aside from multivitamin supplementation.  
+
+Medications  
+- Multivitamins (home medication)  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+- Lives with parents and two siblings.  
+- No alcohol, tobacco, or recreational drug use.  
+- No current sexual activity; not planning to become sexually active before completion of high school.  
+- Attends school in a hybrid model (half in-person, half virtual).  
+- Adheres to mask-wearing and social distancing when in person.  
+
+Family History  
+No significant family history of chronic illness or genetic conditions reported.  
+
+Physical Examination  
+No objective examination findings documented at the time of this note. The provider stated that a throat exam would be performed.  
+
+Vital Signs  
+No vital sign measurements available at the time of this encounter.  
+
+Laboratory Data  
+No laboratory studies have been performed or reported for the current visit.  
+
+Assessment  
+The patient is most likely experiencing acute viral pharyngitis, with differential considerations including streptococcal pharyngitis and SARS‑CoV‑2 infection. The presence of fever and sore throat with no cough or other systemic symptoms makes bacterial infection a possibility, warranting evaluation.  
+
+Plan  
+1. Order a rapid antigen test for SARS‑CoV‑2 and a rapid streptococcal antigen test.  
+2. Advise the patient to self‑isolate until COVID‑19 results return or until symptoms improve, whichever is sooner.  
+3. Provide symptomatic treatment: encourage adequate fluid intake, use of acetaminophen or ibuprofen for fever and pain, and throat lozenges or salt‑water gargles for comfort.  
+4. Counsel on good hand hygiene, covering coughs, and wearing a mask if symptomatic.  
+5. Encourage rest and avoidance of irritants such as smoke or strong odors.  
+6. Discuss vaccination status: patient has not received a current influenza vaccine; recommend influenza vaccination as soon as possible. Discuss HPV vaccination; although the patient is beyond the age of 26, the provider notes that it may still be considered but is less effective.  
+7. Follow‑up: If symptoms worsen or do not improve within 48–72 hours, or if fever exceeds 38.5°C (101.3°F), contact the office for further evaluation.  
+8. Return to clinic for review of rapid test results and to assess response to therapy.  
+
+Disposition  
+The patient was advised to monitor symptoms, complete recommended testing, and return to care if conditions do not improve or worsen. No medication was prescribed at this time pending test results.

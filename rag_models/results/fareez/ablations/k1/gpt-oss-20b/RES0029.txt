@@ -1,0 +1,82 @@
+Model: openai/gpt-oss-20b
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:32:15
+Time: 2.26s
+Tokens: 9,803 in / 1,259 out
+============================================================
+
+Patient Information  
+A patient presents to the emergency department following a recent bicycle accident. The patient is a male mechanic who works independently. No recorded age is provided in the clinical encounter, and the patient did not report any current medications or prior medical conditions beyond a history of hay fever.  
+
+Chief Complaint  
+Sharp, stabbing chest pain localized to the left side of the thorax, described as worsening over the past two hours.  
+
+History of Present Illness  
+The patient reports that the pain began approximately two hours ago after falling from a bicycle, striking his left chest. The pain is described as stabbing and has increased in intensity as the day progressed. The patient notes that deep inspiration worsens the pain, whereas shallow, slow breaths are more tolerable. He denies chest pain radiating to other areas, nausea, vomiting, or dizziness. The pain is accompanied by a sensation of breathlessness; he feels he cannot catch his breath when attempting deeper inhalation. He denies loss of consciousness, head injury, or any other injuries aside from superficial hand scrapes. The patient states he had cereal and chocolate milk for breakfast about three hours before presentation and is currently sober.  
+
+Review of Systems  
+Constitutional: No fever, chills, or weight change noted.  
+Respiratory: Dyspnea on deep inspiration; no cough, wheezing, or recent infections.  
+Cardiovascular: Reports mild tachycardia in the past hour; no palpitations beyond a slight increase in heart rate.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or changes in bowel habits.  
+Genitourinary: No dysuria or hematuria.  
+Musculoskeletal: Pain localized to left chest wall; no reported weakness, numbness, or tingling.  
+Skin/Allergy: Scrapes on hands; reports occasional allergy to nasal spray steroids and some antihistamines.  
+Psychiatric: No anxiety or panic symptoms reported in this encounter.  
+Other: No headaches, dizziness, or recent infections.  
+
+Past Medical History  
+No chronic medical conditions reported at presentation. The patient has a history of hay fever. No prior surgeries or hospitalizations were described.  
+
+Social History  
+The patient smokes approximately 2.5 to 3 packs daily and has been a smoker since age 18. He consumes alcohol socially on weekends, typically one or two beers. He denies recreational drug use. He works as a mechanic, lives alone, and is currently self‑sufficient.  
+
+Family History  
+Father has type 2 diabetes mellitus. No other significant family history provided.  
+
+Current Medications  
+The patient did not report taking any medications at the time of presentation.  
+
+Physical Examination  
+Vital signs: No vital signs are recorded in the transcript.  
+General: Awake, alert, in mild distress due to chest pain.  
+Chest: Inspection reveals no deformities or bruising. Palpation of the left chest wall reproduces the patient’s described stabbing pain. No tenderness noted on the sternum or ribs.  
+Cardiac: Regular rate and rhythm, no murmurs, rubs, or gallops heard.  
+Respiratory: Breath sounds are clear bilaterally with no wheezes, crackles, or decreased air entry.  
+Abdominal: Soft, non-tender, no organomegaly.  
+Extremities: No cyanosis, clubbing, or edema.  
+Neurologic: Cranial nerves intact; motor strength 5/5 throughout; sensation intact; no focal deficits.  
+
+Laboratory Data  
+Routine blood work is limited. Key values include:  
+- Glucose 95.8 mg/dL  
+- Potassium 3.9 mmol/L  
+- Sodium not listed, but chloride and bicarbonate not reported.  
+- Hemoglobin 12.9 g/dL (derived from hemoglobin 12.9? not shown but hemoglobin not listed explicitly).  
+- Hematocrit 38.2%  
+- White blood cell count 4.79 ×10⁶/µL  
+- Platelet count not provided.  
+- Serum urea nitrogen 16.9 mg/dL  
+- Creatinine not reported.  
+- Urinalysis negative for protein and hematuria.  
+
+Imaging  
+No imaging studies are documented in the transcript.  
+
+Assessment  
+The patient’s presentation is most consistent with traumatic chest wall pain secondary to a bicycle fall with direct impact to the left chest. Differential considerations include rib fracture, costochondritis, or, less likely given the absence of systemic signs, a pulmonary contusion or cardiac contusion. The absence of breath sounds abnormalities, normal vital signs (when available), and lack of pericardial friction rub make acute cardiac events unlikely.  
+
+Plan  
+- Pain Management: Initiate oral non‑steroidal anti‑inflammatory therapy (e.g., ibuprofen 400 mg every 6–8 hours as needed) with caution in a smoker and considering renal function.  
+- Respiratory Support: Encourage shallow breathing exercises to minimize pain; consider a local anesthetic block if pain remains severe.  
+- Monitoring: Repeat vital signs every 30 minutes; monitor for worsening dyspnea, tachycardia, or new chest pain radiating to the back.  
+- Imaging: Obtain a chest radiograph to assess for rib fractures, pneumothorax, or pulmonary contusion.  
+- Follow‑up: Arrange a follow‑up visit with primary care or orthopedics within 48–72 hours for reassessment and potential imaging review.  
+- Safety Counseling: Discuss safe bicycle practices, helmet usage, and importance of reporting significant falls promptly.  
+- Smoking Cessation: Offer resources for smoking cessation and discuss potential impact on respiratory health.  
+- Alcohol: Reinforce moderation and awareness of the interaction between alcohol and pain medication.  
+
+No additional laboratory or imaging studies were ordered at this time. The patient was advised to seek immediate care if chest pain worsens, becomes radiating to the back or arm, or if he develops shortness of breath, palpitations, or fainting.  
+
+End of Summary.

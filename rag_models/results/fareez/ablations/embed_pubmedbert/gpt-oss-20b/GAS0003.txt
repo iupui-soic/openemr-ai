@@ -1,0 +1,98 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 03:57:25
+Time: 3.07s
+Tokens: 18,463 in / 1,287 out
+============================================================
+
+Patient Information  
+Name: Ali Hayes  
+Date of Birth: November 5, 1946 (80 years old)  
+Sex: Female  
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086  
+
+Chief Complaint  
+The patient presents with right upper quadrant abdominal pain that began approximately eight hours ago and has progressed to a constant, aching discomfort rated about 8 out of 10.  
+
+History of Present Illness  
+The patient reports that the pain started in the right upper quadrant of the abdomen and has been persistent for the past six hours after an initial intermittent course over the first two hours. She describes the pain as aching rather than sharp. The pain does not radiate elsewhere. She reports mild nausea but has not vomited. She denies fever, chills, diaphoresis, diarrhea, constipation, or any changes in urinary output or color. She notes that the pain is often triggered or worsened by ingestion of fatty foods such as burgers or fries, and she has experienced similar but less severe episodes in the past after such meals. Tylenol has provided no relief. She is otherwise able to ambulate, but her activity is limited by the discomfort. She has been eating less due to the pain. She denies any recent travel, new medications, or known exposures.  
+
+Review of Systems  
+- Constitutional: No fever, chills, night sweats, weight loss, or fatigue beyond that caused by pain.  
+- Cardiovascular: No chest pain, palpitations, or shortness of breath.  
+- Respiratory: No cough, wheezing, or dyspnea.  
+- Gastrointestinal: Positive for right upper quadrant abdominal pain, nausea, and decreased appetite. Negative for vomiting, diarrhea, constipation, melena, or hematochezia.  
+- Genitourinary: No dysuria, frequency, or hematuria.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Musculoskeletal: No joint pain or swelling.  
+
+Past Medical History  
+- Type 2 diabetes mellitus (controlled with metformin)  
+- Chronic kidney disease stage 2/3 (baseline creatinine 1.97 mg/dL, eGFR 36.9 mL/min/1.73 m²)  
+- Hypertension (controlled)  
+- Gastroesophageal reflux disease  
+- Metabolic syndrome  
+- Chronic pain (non-specific)  
+
+Past Surgical History  
+- Wisdom teeth extraction in adolescence.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Social History  
+- Lives alone in an apartment.  
+- Non‑smoker.  
+- Drinks alcohol socially, approximately one to two drinks per day, usually wine.  
+- No illicit drug use.  
+- No recent travel or new exposures.  
+
+Family History  
+- Father suffered a myocardial infarction in his 60s.  
+- No known familial cancers or inflammatory bowel disease.  
+
+Current Medications  
+- Metformin (dose and schedule not specified in the transcript).  
+
+Objective Findings  
+
+Vital Signs  
+No vital sign data were recorded during this encounter.  
+
+Physical Examination  
+No physical examination was documented in the transcript or records.  
+
+Laboratory Data  
+- Serum creatinine: 1.97 mg/dL  
+- eGFR (MDRD): 36.9 mL/min/1.73 m²  
+- BUN: 7.05 mg/dL  
+- Serum sodium: 136 mmol/L  
+- Serum chloride: 103.96 mmol/L  
+- Serum calcium: 9.27 mg/dL  
+- Serum potassium: not reported  
+- Urinalysis: protein 214.8 mg/dL, ketones 0.93 mg/dL, glucose 1.53 mg/dL, specific gravity 1.038, leukocyte esterase absent, nitrite absent.  
+- No evidence of hematuria or pyuria.  
+
+Assessment  
+The presentation of acute, constant right upper quadrant abdominal pain with associated nausea and a history of similar episodes after fatty meals is most consistent with an acute biliary or gastric process. Differential diagnoses include:  
+
+1. Acute cholecystitis or biliary colic secondary to gallstones.  
+2. Acute gastritis or peptic ulcer disease, possibly exacerbated by NSAID avoidance.  
+3. Acute pancreatitis, although epigastric pain and lipase data are not yet available.  
+4. Appendicitis (less likely given right upper quadrant localization, but cannot be excluded without imaging).  
+5. Gastroesophageal reflux exacerbation.  
+
+The patient’s chronic kidney disease and diabetes warrant careful consideration of contrast use if imaging is pursued.  
+
+Plan  
+1. **Imaging** – Order an abdominal ultrasound to evaluate the gallbladder, bile ducts, pancreas, and liver for gallstones, wall thickening, or pericholecystic fluid.  
+2. **Laboratory testing** – Repeat serum amylase and lipase to rule out pancreatitis; obtain a comprehensive metabolic panel to monitor renal function and electrolytes.  
+3. **Pain management** – Initiate acetaminophen (as tolerated) for analgesia; consider a short course of a low‑dose opioid if pain remains uncontrolled, with caution given the patient’s age and renal function.  
+4. **Fluid management** – Encourage oral hydration; if vomiting develops, consider IV fluids.  
+5. **Dietary advice** – Recommend a bland, low‑fat diet until pain resolves; avoid heavy fatty meals.  
+6. **Follow‑up** – Schedule a return visit within 24–48 hours if symptoms worsen or do not improve, or sooner if imaging suggests surgical pathology.  
+7. **Referral** – If imaging reveals gallbladder disease or other surgical pathology, arrange for gastroenterology or surgical consultation.  
+8. **Education** – Counsel the patient on signs of worsening illness (fever, worsening pain, vomiting, jaundice) that warrant immediate medical attention.  
+
+The plan is to monitor the patient closely for resolution or progression of symptoms while obtaining definitive imaging and laboratory data to guide further management.

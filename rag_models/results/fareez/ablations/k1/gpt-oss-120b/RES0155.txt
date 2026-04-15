@@ -1,0 +1,116 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:22:17
+Time: 5.73s
+Tokens: 11,865 in / 1,794 out
+============================================================
+
+Patient Information  
+Name: Adela Tapia DOB: 1914‑01‑07 Sex: Female Unit #: 982 Address: 517 Hills Trace, Stoneham, Massachusetts 02180  
+
+Chief Complaint  
+Worsening shortness of breath, chest discomfort, and productive cough of five days’ duration.  
+
+History of Present Illness  
+Ms. Tapia reports a five‑day history of progressive dyspnea, a sensation of “not being able to catch my breath” with ordinary household activities, and a constant, non‑painful chest discomfort described as a feeling of congestion. The cough is productive; each episode expels a small amount of yellow‑green sputum that fits roughly within the patient’s palm. She denies hemoptysis, orthopnea, paroxysmal nocturnal dyspnea, or nighttime gasping. Over the past two days she has felt “feverish,” although she has not taken a temperature. There are no associated sore throat, rhinorrhea, nausea, vomiting, abdominal pain, diarrhea, constipation, palpitations, headache, visual changes, or skin changes. She has used her rescue inhaler (Ventolin) three to four puffs this morning and a few puffs last night; normally she uses a rescue inhaler only two to three times per week. She reports that her usual inhaled combination therapy (Symbicort) and a daily ACE inhibitor for hypertension have not alleviated the current symptoms.  
+
+Review of Systems  
+Constitutional: Subjective fever, no chills, no night sweats, no recent weight change.  
+Respiratory: Productive cough with yellow‑green sputum, worsening dyspnea on exertion, chest “congestion” without pleuritic pain, no wheezing reported, no hemoptysis.  
+Cardiovascular: No chest pain, palpitations, or orthopnea; denies lower extremity edema.  
+Gastrointestinal: History of GERD, currently taking antacids as needed; no nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, or visual changes.  
+Psychiatric: No anxiety, depression, or suicidal ideation noted.  
+
+Allergies  
+No known drug allergies reported.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed 3 years ago)  
+- Essential hypertension  
+- Gastroesophageal reflux disease  
+- Alzheimer’s disease  
+- Metabolic syndrome, obesity (BMI ≈ 27 kg/m²)  
+- Prediabetes / type 2 diabetes‑related kidney disease (stages 1‑4 chronic kidney disease, currently stage 3)  
+- Hyperlipidemia  
+- History of myocardial infarction and coronary artery disease with prior coronary artery bypass graft  
+- Prior acute bronchitis and viral sinusitis episodes  
+- Prior acute viral pharyngitis  
+
+Surgical History  
+No surgeries reported.  
+
+Social History  
+Ms. Tapia lives in an apartment with her adult daughter. She is employed part‑time at a grocery store. She has a 30‑ to 40‑year history of smoking approximately one pack of cigarettes per day. She reports occasional wine with dinner on weekends and no other alcohol use. No illicit drug use.  
+
+Family History  
+No known family history of lung disease, cardiac disease, or cancer.  
+
+Current Medications (home)  
+- Ventolin (albuterol) rescue inhaler, as needed  
+- Symbicort (budesonide/formoterol) inhaler, daily  
+- ACE inhibitor for hypertension (specific agent not named)  
+- Antacids (Tums) as needed for GERD  
+- Amlodipine 2.5 mg daily (antihypertensive)  
+- Metoprolol succinate 100 mg extended‑release daily  
+- Valsartan 320 mg daily  
+- Simvastatin 20 mg nightly  
+- Atorvastatin 40 mg nightly  
+- Aspirin 81 mg daily  
+- Donepezil/Memantine extended‑release capsule (for Alzheimer’s disease)  
+- Galantamine 4 mg daily  
+- Nitroglycerin sublingual spray as needed (prn)  
+
+(Other agents listed in the electronic record such as tacrolimus, insulin, and epoetin were discontinued prior to the current encounter and are not part of the active regimen.)  
+
+Objective – Vital Signs (as recorded in the EMR)  
+Heart Rate: 92 beats/minute  
+Respiratory Rate: 12 breaths/minute  
+Blood Pressure: not recorded at this encounter  
+Temperature: not measured; patient reports feeling febrile  
+SpO₂: not recorded  
+Weight: not recorded  
+
+Physical Examination  
+No physical examination findings were documented for this encounter.  
+
+Laboratory Data (most recent values)  
+- Carbon dioxide, total: 26.9 mmol/L  
+- Potassium: 4.85 mmol/L  
+- Calcium: 9.48 mg/dL  
+- Blood urea nitrogen: 10.35 mg/dL  
+- Sodium: 138–139 mmol/L  
+- Chloride: 106–107 mmol/L  
+- Creatinine: 0.42 mg/dL (estimated GFR ≈ 88 mL/min/1.73 m²)  
+- Glucose: 96.6 mg/dL  
+- Total cholesterol: 204 mg/dL  
+- ALT: 52 U/L  
+- Total bilirubin: 0.69 mg/dL  
+- Albumin: 3.73 g/dL  
+
+No complete blood count, arterial blood gas, or inflammatory markers were available at the time of documentation.  
+
+Imaging  
+A chest radiograph was ordered to evaluate for pneumonia; results are pending.  
+
+Assessment  
+1. Community‑acquired pneumonia – likely bacterial given productive purulent sputum and subjective fever in a patient with chronic obstructive pulmonary disease.  
+2. Acute exacerbation of COPD – triggered by probable infection.  
+3. Hypertension – chronic, currently treated.  
+4. Gastroesophageal reflux disease – chronic, controlled with antacids.  
+5. Alzheimer’s disease, chronic kidney disease (stage 3), hyperlipidemia, and coronary artery disease – stable chronic conditions.  
+
+Plan  
+- Antibiotic therapy: Initiate oral azithromycin 500 mg on day 1 followed by 250 mg daily for 4 more days (or alternative macrolide/respiratory‑fluoroquinolone if contraindicated).  
+- Continue current COPD regimen: Symbicort twice daily, Ventolin rescue as needed. Add a short course of oral prednisone 40 mg daily for 5 days to address the exacerbation.  
+- Provide a nebulized bronchodilator (e.g., albuterol/ipratropium) in the emergency department and consider home nebulizer therapy if symptoms persist.  
+- Supplemental oxygen to maintain SpO₂ ≥ 90 % if needed; monitor at home with a pulse oximeter.  
+- Encourage smoking cessation; offer referral to the tobacco cessation program and prescribe nicotine replacement therapy or varenicline as appropriate.  
+- Advise adequate hydration, rest, and use of antacids for reflux symptoms.  
+- Discharge instructions: Return to the emergency department if worsening dyspnea, new chest pain, fever > 101 °F, confusion, or inability to maintain oxygen saturation.  
+- Follow‑up: Schedule an appointment with the primary care physician within 3 days for reassessment of respiratory status and to review antibiotic course. Arrange a follow‑up pulmonary clinic visit within 1‑2 weeks.  
+- Labs/Imaging: Review chest X‑ray results upon availability; obtain a CBC with differential to assess for leukocytosis. Consider sputum culture if the patient fails to improve.  
+
+The patient was informed of the diagnosis, treatment plan, and return precautions, and verbal consent for the outlined management was obtained.

@@ -1,0 +1,73 @@
+Model: openai/gpt-oss-20b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-04-14 03:37:15
+Time: 2.60s
+Tokens: 12,876 in / 917 out
+============================================================
+
+Patient Information  
+Name: Alane Ling Muller  
+Date of Birth: 1920-09-24 (Note: DOB provided in electronic health record)  
+Sex: Female  
+Address: 1056 Reichert Spur Suite 87, Chelsea, Massachusetts 02151  
+Insurance: Not documented in transcript or EHR  
+
+Chief Complaint  
+The patient presents with acute onset of diarrhea and associated abdominal cramping and intermittent vomiting.
+
+History of Present Illness  
+The patient reports a 3- to 4-day history of frequent loose, brown-colored stools occurring approximately hourly. She notes that the stools have remained loose throughout the episode and that she has experienced cramping that began yesterday and has been intermittent. She also reports intermittent watery vomiting, with two episodes noted the previous day. No blood in stool or vomitus has been observed. The patient denies fever, chills, or significant weight loss. She reports that the onset of symptoms occurred after eating at a Chinese restaurant five days prior, but she denies that she shared the meal with anyone who developed similar symptoms. She has not taken any over‑the‑counter medications for her symptoms other than increased fluid intake. She has reduced her food intake since the onset of abdominal cramps. She denies recent travel, sick contacts, or use of illicit substances.
+
+Review of Systems  
+Constitutional: No fever, chills, or recent weight loss reported.  
+Respiratory: No cough, wheezing, or shortness of breath.  
+Cardiovascular: No chest pain or palpitations.  
+Gastrointestinal: Diarrhea (frequent, loose stools, hourly), abdominal cramping (intermittent), nausea and vomiting (watery, intermittent). No blood in stool or vomit, no melena or hematochezia. No abdominal distension or pain that localizes to a specific area.  
+Other: No rash, skin changes, or musculoskeletal complaints.  
+
+Past Medical History  
+- Asthma (managed with rescue inhaler).  
+- No other chronic medical conditions reported in the current encounter.  
+
+Surgical History  
+No surgical procedures reported.  
+
+Medications  
+- Short‑acting bronchodilator inhaler (puffer) as needed for asthma.  
+No other prescription or over‑the‑counter medications were reported at this time.  
+
+Allergies  
+No known drug, food, or environmental allergies reported.  
+
+Social History  
+- Occupation: Student.  
+- Living Situation: Resides with two roommates.  
+- Alcohol Use: Occasional consumption, approximately one to two drinks on weekends.  
+- Tobacco: Denies smoking.  
+- Illicit Drugs: Denies use.  
+
+Family History  
+- No known family history of gastrointestinal disease, inflammatory bowel disease, or abdominal surgeries.  
+
+Physical Examination  
+No physical examination findings were documented in the transcript. Vital signs and other objective findings are not available from the encounter.  
+
+Laboratory Data  
+No laboratory studies were performed or documented during this encounter.  
+
+Assessment  
+1. Acute viral gastroenteritis (likely food‑borne) presenting with watery diarrhea, intermittent vomiting, and mild abdominal cramping.  
+2. No evidence of bacterial or parasitic infection at this time; no red‑flag symptoms such as fever, blood in stool, or signs of dehydration beyond patient’s own report of increased fluid intake.  
+
+Plan  
+- Rehydration: Encourage oral rehydration solutions; continue to drink water and clear fluids.  
+- Symptom Management: Use antiemetic (e.g., oral ondansetron) if nausea persists; use loperamide only after resolution of vomiting and if stool frequency remains >4 stools per day.  
+- Diet: Advise bland, low‑fiber diet until symptoms improve; avoid dairy, caffeine, alcohol, and fatty foods.  
+- Monitoring: Patient should monitor stool frequency and consistency, watch for fever, increased abdominal pain, or worsening vomiting.  
+- Follow‑up: Return to clinic or urgent care if symptoms persist beyond 48–72 hours, if fever >38°C, if stool becomes bloody, or if signs of dehydration develop.  
+- Patient Education: Discuss hygiene, handwashing, and safe food handling to prevent future episodes; explain that most viral gastroenteritis resolves spontaneously.  
+- No antibiotics are indicated at this time.  
+
+Disposition  
+The patient was advised to follow the above plan and to seek medical attention promptly if red‑flag symptoms occur. No additional tests or referrals were ordered.

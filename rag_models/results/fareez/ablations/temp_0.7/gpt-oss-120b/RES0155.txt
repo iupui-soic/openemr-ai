@@ -1,0 +1,82 @@
+Model: openai/gpt-oss-120b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:12:36
+Time: 4.55s
+Tokens: 12,183 in / 1,316 out
+============================================================
+
+Patient Information  
+Name: Not documented  
+Date of Birth: Not documented  
+Sex: Not documented  
+Medical Record Number: Not documented  
+
+Chief Complaint  
+The patient presents with worsening shortness of breath, chest discomfort, and an increasingly productive cough of five days’ duration.
+
+History of Present Illness  
+The patient reports that over the past five days she has experienced progressive shortness of breath that is most noticeable with minimal exertion around the home. At rest she feels able to sit comfortably, but any activity results in an inability to “catch her breath.” She describes a constant sense of chest “discomfort” that she characterizes as a feeling of congestion rather than pain; there is no sharp, stabbing, or pressure‑type pain. The cough is productive, yielding small amounts of yellow‑green sputum that she estimates to fill roughly the interior of her palm with each episode. She denies hemoptysis. Over the last two days she has felt “feverish,” although she has not taken a temperature. She denies sore throat, rhinorrhea, night sweats, orthopnea, paroxysmal nocturnal dyspnea, or recent travel. She has used her rescue inhaler (Ventolin) more frequently than usual—three to four puffs this morning and additional use last night—whereas normally she uses it only two to three times per week. She has not found the inhaler to relieve her current symptoms. She denies headaches, visual changes, nausea, vomiting, palpitations, abdominal pain, diarrhea, constipation, urinary symptoms, changes in appetite, or recent weight loss.
+
+Review of Systems  
+Constitutional: Subjective feverish feeling; no documented temperature, chills, night sweats, or weight change.  
+Respiratory: Productive cough with yellow‑green sputum, increased dyspnea on exertion, chest “congestion” sensation; no hemoptysis, no wheezing reported, no orthopnea, no PND.  
+Cardiovascular: No chest pain, palpitations, or known heart rhythm abnormalities.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, constipation, or reflux symptoms beyond her known GERD.  
+Genitourinary: No dysuria, frequency, or urgency.  
+Neurologic: No headache, dizziness, visual changes, or focal deficits.  
+Psychiatric: No anxiety, depression, or sleep disturbances reported.  
+
+Past Medical History  
+- Chronic obstructive pulmonary disease (diagnosed ~3 years ago)  
+- Hypertension  
+- Gastroesophageal reflux disease  
+
+Surgical History  
+No prior surgeries reported.  
+
+Social History  
+The patient lives in an apartment with her adult daughter. She is employed part‑time at a grocery store. She has a 30‑ to 40‑year history of cigarette smoking, currently about one pack per day. She does not use marijuana or other illicit substances. Alcohol use is limited to occasional wine with dinner on weekends. No documented exposure to sick contacts.  
+
+Family History  
+No known family history of lung, cardiac, or malignant disease.  
+
+Allergies  
+No medication allergies reported.  
+
+Current Medications (home)  
+- Ventolin (albuterol) rescue inhaler, used as needed  
+- Symbicort (budesonide/formoterol) daily inhaled corticosteroid/long‑acting beta‑agonist  
+- ACE inhibitor for hypertension (specific agent not specified)  
+- Antacid (Tums) as needed for GERD  
+
+Objective  
+Vital Signs: No vital signs documented at this encounter.  
+Physical Examination: No physical exam findings documented; the provider indicated that a full examination, including vitals, will be performed in the emergency department.  
+
+Laboratory and Imaging Studies  
+No laboratory results or imaging studies are available from this encounter. The provider plans to obtain a chest radiograph, complete blood count, basic metabolic panel, sputum culture, and a SARS‑CoV‑2 test in the emergency department.  
+
+Assessment  
+1. Acute exacerbation of chronic obstructive pulmonary disease, likely precipitated by a lower respiratory tract infection.  
+2. Possible bacterial pneumonia pending radiographic and microbiologic confirmation.  
+3. Hypertension, stable on current ACE‑inhibitor therapy.  
+4. Gastroesophageal reflux disease, stable on antacid as needed.  
+
+Plan  
+- Transport the patient to the emergency department for urgent evaluation, including vitals, pulse oximetry, and a complete physical exam.  
+- Initiate nebulized short‑acting bronchodilator therapy (albuterol ± ipratropium) and systemic corticosteroids (e.g., oral prednisone 40 mg daily) in the ED.  
+- Obtain a chest X‑ray to assess for infiltrate consistent with pneumonia.  
+- Order laboratory studies: CBC with differential, BMP, CRP, and sputum Gram stain/culture. Perform a nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+- If pneumonia is confirmed or strongly suspected, start empiric antibiotic therapy (e.g., azithromycin 500 mg PO daily for 5 days or doxycycline 100 mg PO BID for 7 days) pending culture results.  
+- Continue home inhaled therapies (Symbicort) and rescue inhaler as needed; consider adding a long‑acting muscarinic antagonist if indicated after further assessment.  
+- Assess need for hospital admission based on oxygen saturation, work of breathing, and response to initial therapy.  
+- Provide smoking cessation counseling; offer referral to a tobacco cessation program and discuss nicotine replacement or pharmacotherapy (e.g., varenicline).  
+- Counsel regarding hydration, rest, and monitoring for worsening symptoms such as increasing dyspnea at rest, fever >38 °C, or new chest pain.  
+- Follow‑up: If discharged from the ED, schedule a follow‑up appointment with her primary care provider within 48–72 hours and arrange pulmonary clinic review within one week.  
+
+Disposition  
+The patient will be escorted to the emergency department for further work‑up and management as outlined above.  
+
+Prepared by: [Physician’s Name], MD  
+Date: [Date of Documentation]

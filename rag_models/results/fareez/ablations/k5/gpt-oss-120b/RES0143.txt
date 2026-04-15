@@ -1,0 +1,61 @@
+Model: openai/gpt-oss-120b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-04-14 03:29:33
+Time: 3.42s
+Tokens: 7,743 in / 1,005 out
+============================================================
+
+Patient Information  
+The patient is a young adult university student who is currently residing at home with his parents while attending virtual classes. No specific name or date of birth was provided in the encounter transcript. He reports no known chronic medical conditions.
+
+Chief Complaint  
+Cough lasting approximately two weeks, accompanied by a clear, watery nasal discharge that began about one week ago.
+
+History of Present Illness  
+The patient reports the onset of a dry, non‑productive cough two weeks prior to the visit. He describes the cough as persistent but notes that it was more severe during the first week and has slightly improved over the past several days, although it remains present. Approximately one week ago, he developed a clear, thin nasal discharge. He denies any hemoptysis, sore throat, dysphagia, or difficulty breathing. He also denies chest pain, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, myalgias, or neurological symptoms such as numbness or tingling. He reports mild congestion that transiently reduced his sense of smell, though taste remains intact. He had two evenings last week when he felt chilly and experienced mild chills, but he has not had a measured fever, night sweats, or unintentional weight loss. He denies headaches. Overall, his symptoms are consistent with an upper respiratory tract infection.
+
+Review of Systems  
+Constitutional: No fever, chills (except two episodes), night sweats, or weight loss.  
+Respiratory: Dry cough present for two weeks; runny nose with clear discharge for one week; no shortness of breath, wheezing, or chest pain.  
+ENT: Nasal congestion with temporary decreased smell; no sore throat, hoarseness, ear pain, or sinus pain.  
+Cardiovascular: No palpitations, chest pain, or known heart disease.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, diarrhea, or constipation.  
+Neurological: No headaches, dizziness, numbness, or tingling.  
+Musculoskeletal: No muscle aches or joint pain.  
+Dermatologic: No rashes.  
+Psychiatric: No mood changes reported.
+
+Allergies  
+The patient reports no known drug, food, or environmental allergies.
+
+Past Medical History  
+The patient states he has been “completely healthy otherwise” and does not recall any prior medical diagnoses.
+
+Medications  
+The patient is not taking any prescription, over‑the‑counter, herbal, or vitamin medications.
+
+Family History  
+Father has a history of high cholesterol. No other significant familial medical conditions were reported.
+
+Social History  
+The patient lives in a university dorm but is currently staying at his parents’ home. He reports occasional experimentation with tobacco (a few times) and marijuana (four to five occasions) but no regular use. He consumes alcohol socially on weekends. He denies the use of any recreational drugs. No current employment details were provided.
+
+Physical Examination  
+No physical examination findings were documented in the transcript. Vital signs were not recorded at the time of this encounter.
+
+Laboratory and Imaging Studies  
+No laboratory tests or imaging studies have been performed during this visit. The provider ordered a nasopharyngeal swab for SARS‑CoV‑2 testing to rule out COVID‑19 infection.
+
+Assessment  
+The clinical picture is most consistent with an acute viral upper respiratory infection, likely the common cold. The recent exposure to a symptomatic household member (mother with “sniffles”) supports a viral etiology. COVID‑19 infection remains a consideration; testing has been ordered.
+
+Plan  
+1. COVID‑19 Testing: Obtain a nasopharyngeal swab today; results anticipated within 24‑48 hours. Follow public health guidance based on test outcome.  
+2. Self‑Isolation: Advise the patient to self‑isolate at home until a negative COVID‑19 result is confirmed and symptoms improve, maintaining distance from household members when possible.  
+3. Symptomatic Care: Recommend supportive measures including adequate hydration, humidified air, and over‑the‑counter antitussive or analgesic agents (e.g., acetaminophen) as needed for cough or discomfort.  
+4. Monitor for Warning Signs: Instruct the patient to seek immediate care if he develops fever >38 °C, worsening dyspnea, chest pain, productive cough with purulent sputum, hemoptysis, or new neurologic symptoms.  
+5. No Antibiotics: Given the lack of bacterial features (no purulent sputum, no fever, no sinus tenderness), antibiotics are not indicated at this time.  
+6. Follow‑Up: The patient will receive a call from public health officials regarding the COVID‑19 result. He should return for evaluation if symptoms persist beyond 10 days or worsen.  
+
+The patient verbalized understanding of the plan and agreed to the proposed management.

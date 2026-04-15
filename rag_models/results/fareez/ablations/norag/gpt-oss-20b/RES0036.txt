@@ -1,0 +1,88 @@
+Model: openai/gpt-oss-20b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:16:31
+Time: 2.42s
+Tokens: 9,849 in / 1,176 out
+============================================================
+
+Patient Information  
+The patient is a female who presents for evaluation of recent respiratory symptoms. No age, sex, or other identifying information is available in the current encounter data.
+
+Chief Complaint  
+The patient reports increasing shortness of breath and a productive cough lasting six days.
+
+History of Present Illness  
+The patient states that, beginning six days ago, she experienced a sudden onset of dyspnea that has progressively worsened. She now finds that she must stop while walking due to breathlessness, and the symptom is constant rather than intermittent. Concomitantly, she developed a cough producing rusty‑colored sputum on several occasions per day. The cough is productive and worsens with exertion; there is no mention of a dry cough. Wheezing is occasionally heard, but it is not pronounced. The patient also reports sharp chest pain that intensifies during coughing, rated approximately 7 out of 10 in intensity. She denies chest pressure, palpitations, or orthopnea. Constitutional symptoms include feeling feverish and chills, though she has not measured her temperature. She denies recent weight loss, night sweats, headaches, dizziness, nausea, vomiting, or abdominal pain. She has had no prior similar episodes. She has had a runny nose a few days prior to symptom onset.
+
+Past Medical History  
+According to the patient’s self‑report, there are no known chronic medical conditions, surgeries, or prior hospitalizations.
+
+Past Surgical History  
+None reported.
+
+Medications  
+The patient reports no current medications.
+
+Allergies  
+No known drug or environmental allergies.
+
+Social History  
+The patient smokes approximately 10 cigarettes daily and has been smoking since age 20. She occasionally uses cannabis, approximately five times per week. Alcohol consumption is moderate, about five drinks per week. She reports a diet high in fast food and junk food, with minimal exercise. The patient works in a crowded environment with poor air conditioning and high humidity; she notes that the air conditioner has been broken. She resides in a small, poorly maintained apartment where mold or dust exposure is possible. She has a history of exposure to birds for the past three years, but this has not previously caused issues.
+
+Family History  
+No family history of cardiovascular, respiratory, or oncologic disease is reported.
+
+Review of Systems  
+General: Feverish, chills, no weight change.  
+Respiratory: Dyspnea, productive cough with rusty sputum, mild wheeze, chest pain on coughing. No hemoptysis.  
+Cardiovascular: No chest pressure, palpitations, or edema.  
+Gastrointestinal: No abdominal pain, nausea, vomiting, constipation, or diarrhea.  
+Genitourinary: No urinary changes.  
+Musculoskeletal: No joint pain or swelling.  
+Neurologic: No headache, dizziness, or syncope.  
+Psychiatric: No anxiety or mood disturbance reported.  
+Dermatologic: No skin changes noted.
+
+Physical Examination  
+No physical examination findings were documented in the transcript or electronic record.
+
+Assessment  
+The presentation is most consistent with an acute lower respiratory tract infection, likely community‑acquired pneumonia, given the sudden onset of productive cough with rusty sputum, dyspnea, feverish feeling, and chest pain on coughing. A COPD exacerbation is also plausible given the patient’s significant smoking history; however, the absence of a prior diagnosis of COPD or prior exacerbations makes pneumonia the more probable primary diagnosis. Differential considerations include bacterial pneumonia, viral respiratory infection, or bronchitis.
+
+Plan  
+1. Immediate workup:  
+   - Complete blood count with differential to assess for leukocytosis.  
+   - Basic metabolic panel to evaluate electrolytes and renal function.  
+   - Chest radiograph to confirm infiltrate and rule out other pathology.  
+   - Pulse oximetry and, if desaturation occurs, consider supplemental oxygen.  
+   - Sputum Gram stain and culture to guide targeted antimicrobial therapy.
+
+2. Empiric antibiotic therapy:  
+   - Initiate amoxicillin‑clavulanate 875 mg/125 mg orally twice daily, pending culture results.  
+   - Consider adjunctive therapy with a macrolide or doxycycline if atypical coverage is desired.
+
+3. Symptom management:  
+   - Adequate hydration and rest.  
+   - Cough suppressants (e.g., dextromethorphan) may be considered if cough becomes disruptive.  
+   - Use of a humidifier to reduce airway irritation.
+
+4. Smoking cessation counseling:  
+   - Discuss risks of continued smoking, particularly in the context of pneumonia and potential COPD progression.  
+   - Offer resources for cessation programs and nicotine replacement therapy.
+
+5. Lifestyle modifications:  
+   - Encourage gradual increase in physical activity within tolerable limits.  
+   - Address dietary habits; recommend balanced meals with reduced fast food intake.  
+   - Discuss proper maintenance of the living environment to reduce mold/dust exposure.
+
+6. Follow‑up:  
+   - Reassess in 48–72 hours to review imaging and laboratory results.  
+   - If symptoms worsen or new findings emerge, consider hospital admission and advanced imaging or pulmonary consultation.
+
+7. Education:  
+   - Instruct the patient on signs of worsening illness (e.g., increasing dyspnea, high fever, chest pain, or confusion) that warrant immediate medical attention.  
+   - Review medication adherence and potential side effects of antibiotics.
+
+Disposition  
+The patient is to continue outpatient care with close monitoring of symptom progression and laboratory/imaging results. If the patient develops hypoxia, respiratory distress, or fails to improve, emergent evaluation and potential hospitalization will be pursued.

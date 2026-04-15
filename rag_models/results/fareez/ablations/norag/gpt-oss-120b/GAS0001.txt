@@ -1,0 +1,100 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:15:22
+Time: 5.49s
+Tokens: 19,057 in / 1,557 out
+============================================================
+
+Patient Information
+Name: Amado Baumbach (record identifier 7355)  
+Date of Birth: 09‑06‑1942 (Age 84 years according to record, however the patient describes menstrual history and reproductive concerns indicating a female of reproductive age; the transcript is considered the most accurate source for the current encounter)  
+Sex: Female (as per patient report)  
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000  
+
+Chief Complaint
+Nausea and vomiting for approximately nine days, accompanied by increased urinary frequency.
+
+History of Present Illness
+The patient reports a persistent sensation of nausea that began about nine days ago. She describes the nausea as being present most of the time, with worsening in the mornings and when exposed to strong or unpleasant odors. She has experienced vomiting on several days, typically once or twice per day. The patient notes mild crampy abdominal discomfort but denies any localized pain, bloating, or changes in bowel movements. She reports a marked increase in urinary frequency, needing to void roughly every one to two hours during the day; she does not awaken specifically to void, although she may notice the need after waking. She denies dysuria, hematuria, urgency, or incontinence. The patient attributes her increased fluid intake to a feeling of dehydration related to the vomiting. She denies fever, chills, headache, myalgias, cough, chest pain, shortness of breath, or any other systemic symptoms. She has not taken any prescription medications; she has tried ginger supplements for nausea without relief. She reports that her last menstrual period was approximately six weeks ago and that her cycles are usually regular, though she does not track them precisely. She is not currently using hormonal contraception because it previously caused nausea. She is sexually active with a single boyfriend and uses condoms.
+
+Review of Systems
+General: Positive for nausea, vomiting, and increased urinary frequency. Denies fever, weight loss, or night sweats.  
+HEENT: Positive for nausea triggered by odors. Denies headache, visual changes, ear pain, or sore throat.  
+Cardiovascular: Denies chest pain, palpitations, or edema.  
+Respiratory: Denies cough, dyspnea, or wheezing.  
+Gastrointestinal: Positive for nausea, occasional vomiting, and mild crampy abdominal discomfort. Denies abdominal pain, hematemesis, melena, hematochezia, diarrhea, or constipation.  
+Genitourinary: Positive for urinary frequency. Denies dysuria, urgency, nocturia, hematuria, or incontinence.  
+Musculoskeletal: Denies myalgias or arthralgias.  
+Neurological: Denies dizziness, syncope, or focal deficits.  
+Psychiatric: No reported anxiety or depression.  
+Skin: Positive for contact dermatitis to nickel; otherwise no rashes.  
+
+Past Medical History
+- Essential hypertension (diagnosed 1973)  
+- Prediabetes / type 2 diabetes mellitus with microalbuminuria and proteinuria (diagnosed 1973)  
+- Chronic kidney disease, stages 1‑3 secondary to diabetic nephropathy (onset 1976)  
+- Anemia (diagnosed 1973)  
+- History of coronary artery disease with prior coronary artery bypass grafting (onset 2018)  
+- Chronic sinusitis (ongoing)  
+- Multiple episodes of gingivitis and dental caries (historical)  
+- No documented history of gastrointestinal disease, peptic ulcer disease, or prior pregnancies.  
+
+Current Medications
+The patient is not taking any prescription or over‑the‑counter medications at this time. She has been using ginger supplements for nausea, which were ineffective.
+
+Allergies
+Nickel – causes contact dermatitis (skin rash). No known drug or food allergies.
+
+Social History
+The patient lives with one roommate. She does not smoke tobacco. Alcohol consumption is very rare; the last drink was approximately one month ago, as she experiences headaches with alcohol. She denies any illicit drug use. She is sexually active with a single male partner and uses condoms for contraception; she previously used hormonal birth control but discontinued it due to nausea.
+
+Family History
+Father has hypertension. No other significant familial illnesses reported.
+
+Physical Examination
+No physical examination data were documented during this encounter.  
+Vital signs: Not available.
+
+Objective Data – Laboratory Results
+No current laboratory studies have been obtained for this visit. Historical laboratory data from prior admissions show mild anemia (hemoglobin 12.3 g/dL) and thrombocytopenia (platelets 106 ×10³/µL), but these values are not contemporaneous with the present complaint.
+
+Assessment
+1. Nausea and vomiting of 9‑day duration, worsening in the morning and with odors – probable early pregnancy (morning sickness) given missed period and cessation of hormonal contraception.  
+2. Urinary frequency likely secondary to increased fluid intake and possible early gestational changes.  
+3. Dehydration risk due to vomiting.  
+4. Chronic comorbidities (hypertension, prediabetes, CKD stage 3) that may influence management.  
+5. Contact dermatitis to nickel (allergy).  
+
+Plan
+Diagnostic Studies
+- Urine pregnancy test (point‑of‑care) to evaluate for early gestation.  
+- Serum β‑hCG if urine test is positive or equivocal.  
+- Basic metabolic panel and serum electrolytes to assess for dehydration and renal function.  
+- CBC to re‑evaluate hemoglobin and platelet levels.  
+- Urinalysis to rule out infection or glucosuria related to diabetes.  
+
+Therapeutic Interventions
+- Initiate oral rehydration with electrolyte‑balanced solutions; advise small, frequent sips of clear fluids.  
+- Prescribe ondansetron 4 mg orally every 8 hours as needed for nausea/vomiting, with caution given underlying CKD.  
+- Recommend dietary modifications: bland diet, avoid strong odors and fatty or spicy foods.  
+- Discuss the option of vitamin B6 (pyridoxine) 10 mg three times daily as an adjunct for nausea if pregnancy is confirmed.  
+- Advise continuation of condom use; counsel regarding contraception options should pregnancy not be desired.  
+
+Follow‑up
+- Review pregnancy test results within 24–48 hours.  
+- If pregnant, schedule obstetric referral for early prenatal care.  
+- If pregnancy test negative, consider gastroenterology referral for evaluation of possible gastritis, peptic ulcer disease, or functional dyspepsia; obtain H. pylori testing if indicated.  
+- Monitor urine output and signs of dehydration; advise return to care sooner if vomiting becomes frequent (>3 times/day), inability to retain fluids, or development of fever, abdominal pain, or dysuria.  
+
+Patient Education
+- Instruct the patient on signs of worsening dehydration (dry mouth, dizziness, decreased urine output) and when to seek emergent care.  
+- Educate on proper hydration techniques and avoidance of triggers for nausea.  
+- Review proper condom use and discuss alternative contraceptive methods if pregnancy is not desired.  
+
+Disposition
+The patient will be discharged home with the above plan and instructions. A follow‑up appointment is arranged in 2–3 days or sooner based on test results and symptom progression.  
+
+Signature
+[Physician’s name], MD  
+Date: 2024‑04‑14

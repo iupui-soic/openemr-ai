@@ -1,0 +1,192 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0002
+Detected Disease: Abdominal Pain
+Generated: 2026-04-14 04:23:56
+Time: 6.57s
+Tokens: 8,179 in / 2,565 out
+============================================================
+
+**Patient Information**  
+**Name:** Agustin McGlynn **DOB:** 04‑16‑1965 (58 y/o) **Sex:** Male **MRN:** 2046 **Encounter:** ED visit 05‑30‑2024 (07:39 – 08:09) **Attending:** Dr. External Provider  
+
+---
+
+## S – Subjective  
+
+### Chief Complaint  
+“Severe right‑upper‑abdominal pain.”  
+
+### History of Present Illness  
+Mr. McGlynn reports a **sharp, constant** pain localized to the **right upper quadrant (RUQ)** just inferior to the rib cage.  
+* **Onset:** Approximately 3 days ago, began about 30–60 minutes after a lunchtime meal.  
+* **Progression:** Pain was mild‑moderate for the first two days; **worsened dramatically 3–4 hours before ED arrival**, rating it **8/10** at the time of evaluation.  
+* **Quality:** Described as “sharp.”  
+* **Radiation:** None.  
+* **Timing:** Persistent; no relief with position changes.  
+* **Aggravating factors:** Eating (especially fatty meals).  
+* **Alleviating factors:** Over‑the‑counter analgesics (ibuprofen, acetaminophen) provided minimal relief.  
+* **Associated symptoms:**  
+  * **Nausea** for the past few days (no vomiting, no hematemesis).  
+  * **Decreased appetite** today; otherwise normal appetite prior to worsening.  
+  * No fever, chills, chest pain, dyspnea, dysuria, hematuria, hematochezia, melena, or change in bowel habits.  
+  * No recent travel, sick contacts, or skin changes.  
+* **Past similar episodes:** Similar self‑limited RUQ pain several years ago that resolved without medical care.  
+
+### Review of Systems (pertinent positives/negatives)  
+| System | Positive | Negative |
+|--------|----------|----------|
+| Constitutional | Fatigue today (energy low due to pain) | No fever, weight loss |
+| Gastrointestinal | RUQ pain, nausea, poor appetite | No vomiting, no bowel habit change, no blood in stool |
+| Genitourinary | – | No dysuria, no urinary frequency, no hematuria |
+| Cardiovascular | – | No chest pain, no palpitations |
+| Respiratory | – | No cough, dyspnea |
+| Neurologic | – | No headache, no focal deficits |
+| Skin | – | No rash, no jaundice |
+| Psychiatric | – | No anxiety or depression (PHQ‑2 = 0, GAD‑7 = 2) |
+
+### Past Medical History (selected, per EMR)  
+- Essential hypertension  
+- Chronic kidney disease (stage 4, post‑failed renal transplant, on tacrolimus)  
+- Diabetes mellitus type 2 with micro‑albuminuria  
+- Anemia (stable)  
+- Gastroesophageal reflux disease (GERD)  
+- Osteoporosis, cerebral palsy, spasticity, intellectual disability (baseline)  
+
+### Surgical / Procedural History  
+- No prior abdominal surgeries.  
+- Hysterectomy/childbirth hospitalizations (irrelevant to current problem).  
+
+### Medications (home)  
+- Tacrolimus (extended‑release) – immunosuppression  
+- Hydrochlorothiazide 25 mg PO daily – hypertension  
+- Amlodipine 2.5 mg PO daily – hypertension  
+- Glycopyrrolate 1.5 mg PO daily – (indication unclear)  
+- Acetaminophen 325 mg PRN for pain  
+- Occasional antacids for heartburn  
+
+### Allergies  
+None reported.  
+
+### Family History  
+- Mother: Gallstones.  
+- Father: Ischemic stroke (deceased in 60s).  
+
+### Social History  
+- Occupation: Bank consultant (full‑time).  
+- Alcohol: 1–2 glasses of wine nightly; does not feel need to cut down.  
+- Tobacco: Never.  
+- Illicit drugs: None.  
+- Living situation: Lives with partner and two children; supportive home environment.  
+
+---
+
+## O – Objective  
+
+### Vital Signs (ED triage)  
+- Heart Rate: **94 bpm**  
+- Respiratory Rate: **13 /min**  
+- Blood Pressure: **Not documented** (N/A)  
+- Temperature: **Not documented** (N/A)  
+- SpO₂: **Not documented** (N/A)  
+- Height: **177.7 cm** Weight: **Not documented** BMI: **27.3** (overweight)  
+
+### Physical Examination  
+*Not provided in transcript; assume standard ED assessment performed.*  
+- General: Alert, in moderate distress due to pain.  
+- Abdomen: Tenderness to palpation in RUQ, no guarding or rebound reported (not documented). No visible skin changes.  
+- Cardiovascular, respiratory, neurologic: No abnormal findings reported.  
+
+### Laboratory Data (most recent, likely drawn during this visit)  
+
+| Test | Result | Reference |
+|------|--------|-----------|
+| WBC (automated) | 7.58 ×10³/µL | Normal |
+| Hemoglobin | 13.58 g/dL | Normal for male |
+| Hematocrit | 40.1 % | Normal |
+| MCV | 94.5 fL | Normal |
+| MCH | 28.4 pg | Normal |
+| MCHC | 34.2 g/dL | Normal |
+| RDW | 39.9 fL | Slightly high (possible anisocytosis) |
+| Platelets | 351 ×10³/µL | Normal |
+| LDL‑C | 168 mg/dL | Elevated |
+| Total Cholesterol | 252 mg/dL | Elevated |
+| HDL‑C | 58 mg/dL | Acceptable |
+| Triglycerides | 130 mg/dL | Borderline high |
+| PHQ‑2 | 0 | No depressive symptoms |
+| GAD‑7 | 2 | Minimal anxiety |
+
+*Renal function tests (creatinine, BUN) not listed but are clinically relevant given CKD and tacrolimus therapy.*  
+
+### Imaging  
+No imaging performed yet; ordered as part of the plan.  
+
+---
+
+## A – Assessment  
+
+1. **Right‑upper‑quadrant abdominal pain – likely biliary colic / early acute cholecystitis**  
+   - Classic post‑prandial onset, RUQ localization, risk factor (maternal gallstones), no fever or leukocytosis yet, but pain is severe and worsening.  
+2. **Chronic kidney disease (stage 4) with prior renal transplant on tacrolimus** – requires careful drug dosing and avoidance of nephrotoxic agents.  
+3. **Essential hypertension** – currently on HCTZ and amlodipine.  
+4. **Type 2 diabetes mellitus with micro‑albuminuria** – continue current management, monitor glucose.  
+5. **Hyperlipidemia** – elevated LDL/total cholesterol; consider statin therapy pending renal function.  
+
+*Differential diagnoses to keep in mind:*  
+- Acute cholecystitis (if fever, leukocytosis, Murphy’s sign develop)  
+- Choledocholithiasis / biliary obstruction  
+- Peptic ulcer disease (post‑prandial pain)  
+- Hepatobiliary liver pathology (hepatitis, hepatic congestion)  
+- Pancreatitis (less likely without epigastric radiation or elevated lipase)  
+- Renal colic (right flank pain typically radiates; absent)  
+
+---
+
+## P – Plan  
+
+### Diagnostic Studies  
+1. **Right upper quadrant (RUQ) abdominal ultrasound** – to evaluate gallstones, gallbladder wall thickness, pericholecystic fluid, biliary ductal dilation.  
+2. **Complete metabolic panel** (including AST, ALT, ALP, GGT, total bilirubin, direct bilirubin, lipase, amylase, serum creatinine, BUN, electrolytes) – to assess hepatic enzymes, pancreatitis, and renal function before any medication adjustments.  
+3. **Repeat CBC** in 6 hours if clinical status changes (fever, increasing pain).  
+4. **Electrocardiogram** – baseline given hypertension and age.  
+
+### Therapeutic Interventions  
+1. **Analgesia** –  
+   - Continue acetaminophen 650 mg PO q6h PRN (max 3 g/24 h).  
+   - If pain persists, consider IV ketorolac 15 mg q6h **unless contraindicated by CKD** (use with caution; assess renal function).  
+2. **Antiemetic** – Ondansetron 4 mg IV/PO q8h PRN for nausea.  
+3. **NPO** until imaging completed; if gallstone disease confirmed and surgery indicated, keep NPO.  
+4. **IV Fluids** – 0.9% NS bolus 500 mL to maintain hydration, monitor urine output given CKD.  
+
+### Medication Review / Adjustments  
+- **Tacrolimus**: Verify trough level; avoid interacting drugs (e.g., NSAIDs high dose).  
+- **Hydrochlorothiazide**: Continue; monitor electrolytes.  
+- **Amlodipine**: Continue.  
+- **Glycopyrrolate**: Review indication; consider discontinuation if not needed (anticholinergic side‑effects).  
+- **Statin**: Discuss initiating low‑to‑moderate intensity statin (e.g., rosuvastatin 5 mg) after confirming renal function and evaluating potential drug‑drug interactions with tacrolimus.  
+
+### Disposition / Follow‑up  
+- **Observation** in ED for at least 4 hours after labs/imaging; if ultrasound confirms uncomplicated biliary colic and pain improves, discharge with follow‑up.  
+- **If ultrasound shows cholecystitis, gallstone obstruction, or complicated disease**, admit to surgical service for possible cholecystectomy (laparoscopic) after optimization of renal function and electrolytes.  
+- **Outpatient follow‑up:**  
+  - Gastroenterology or General Surgery clinic within **7 days** for definitive management of gallbladder disease.  
+  - Nephrology follow‑up within **2 weeks** to reassess tacrolimus level and renal status.  
+  - Primary care for hypertension, diabetes, and lipid management within **1 month**.  
+
+### Patient Education  
+- Discuss typical biliary colic triggers (fatty meals) and low‑fat diet until definitive treatment.  
+- Counsel on signs that warrant immediate return: fever > 100.4 °F, vomiting, worsening pain, jaundice, or dark urine.  
+- Reinforce medication adherence, especially tacrolimus; advise not to skip doses.  
+- Review safe alcohol intake; 1–2 glasses of wine nightly is acceptable but encourage moderation given liver and renal considerations.  
+
+### Documentation / Orders  
+- Orders placed for RUQ US, CMP, LFTs, lipase, CBC, EKG, IV fluids, ondansetron, and acetaminophen PRN.  
+- Tacrolimus level drawn today.  
+- Discharge instructions prepared pending imaging results.  
+
+---  
+
+**Prepared by:**  
+[Your Name], MD – Emergency Medicine  
+Date: 2024‑05‑30  
+
+*End of SOAP note.*

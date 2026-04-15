@@ -1,0 +1,60 @@
+Model: qwen/qwen3-32b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-04-14 04:01:50
+Time: 4.45s
+Tokens: 12,403 in / 1,342 out
+============================================================
+
+Patient Information  
+The patient is a 109-year-old female, Adela Tapia, residing at 517 Hills Trace, Stoneham, Massachusetts 02180. She is currently living with her daughter and works at a grocery store. The patient has a long-standing history of multiple chronic conditions, including essential hypertension, chronic obstructive pulmonary disease (COPD), gastroesophageal reflux disease (GERD), chronic kidney disease, and a history of coronary artery bypass grafting. She is a pack-a-day smoker with a 30- to 40-year smoking history and consumes wine occasionally on weekends. No recreational drug use is reported.  
+
+Chief Complaint  
+The patient presents with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough with yellowish to greenish sputum. She reports that her symptoms are exacerbated with exertion and that she has been experiencing intermittent fevers over the past few days. She notes that her usual COPD medications, including Ventolin and Symbicort, have not been effective in alleviating her symptoms.  
+
+History of Present Illness  
+The patient reports that her symptoms began approximately five days ago and have progressively worsened. She describes a persistent cough with sputum production, which she estimates to be about the size of a palmful each time. The sputum is yellowish to greenish in color and does not contain blood. She experiences dyspnea on exertion, with a sensation of not being able to catch her breath during routine activities. At rest, her breathing is less affected, though she continues to feel chest discomfort. The discomfort is described as a general sense of congestion rather than sharp or stabbing pain. She denies orthopnea, paroxysmal nocturnal dyspnea, or nocturnal gasping.  
+
+The patient reports feeling feverish over the past few days but has not measured her temperature. She denies sore throat, rhinorrhea, nausea, vomiting, palpitations, chest pain, syncope, or changes in bowel or bladder habits. She has not experienced night sweats, weight loss, or changes in appetite or sleep. She denies any recent travel or known exposure to sick individuals. She has had similar symptoms in the past, requiring antibiotic treatment at a walk-in clinic approximately four months ago.  
+
+Past Medical History  
+The patient has a complex medical history, including essential hypertension, COPD, GERD, chronic kidney disease (currently stage 5 with a history of renal transplant), ischemic heart disease, a history of myocardial infarction, and coronary artery bypass grafting. She also has a history of metabolic syndrome, prediabetes, hyperlipidemia, and Alzheimer’s disease. She has undergone multiple dental procedures and has a long history of gingivitis.  
+
+Current Medications  
+The patient is currently taking several medications, including valsartan for hypertension, metoprolol succinate for heart disease, Symbicort and Ventolin for COPD, atorvastatin for hyperlipidemia, and Tums for GERD. She also takes aspirin, nitroglycerin, and simvastatin. She is on a regimen of tacrolimus and epoetin alfa due to her history of renal transplant.  
+
+Allergies  
+No known drug allergies are reported.  
+
+Social History  
+The patient has a long history of tobacco use, currently smoking one pack per day. She has smoked for approximately 30 to 40 years. She consumes wine occasionally on weekends but denies the use of recreational drugs.  
+
+Family History  
+No significant family history of lung or heart disease is reported. No known cases of cancer in the family are noted.  
+
+Review of Systems  
+Constitutional: The patient reports intermittent fevers but no weight loss, chills, or night sweats.  
+Respiratory: Shortness of breath on exertion, productive cough with yellowish-green sputum, and chest discomfort are reported. No hemoptysis or wheezing is noted.  
+Cardiovascular: No chest pain, palpitations, or syncope.  
+Gastrointestinal: No nausea, vomiting, or changes in bowel habits.  
+Neurological: No headaches, dizziness, or changes in mental status.  
+Musculoskeletal: No joint pain or muscle aches.  
+Integumentary: No rashes or skin changes.  
+Genitourinary: No changes in urination or dysuria.  
+Hematologic: No easy bruising or bleeding.  
+Endocrine: No changes in appetite or weight.  
+Psychiatric: No depression or anxiety reported.  
+
+Objective  
+Vital Signs: No current vital signs are available in the electronic health record. The patient’s height is 162.7 cm, and her BMI is 27.43.  
+Physical Examination: Not performed in this setting.  
+Laboratory Results: Available lab results include normal renal function (creatinine 0.42 mg/dL), normal electrolytes (sodium 138.42 mmol/L, potassium 4.85 mmol/L), and normal glucose (96.65 mg/dL). Liver enzymes are elevated (ALT 51.98 U/L), and total bilirubin is within normal limits.  
+Imaging: No imaging studies are currently available in the electronic health record.  
+
+Assessment  
+The patient presents with worsening dyspnea, productive cough, and chest discomfort, consistent with an exacerbation of COPD. The presence of fever, yellowish-green sputum, and a history of prior antibiotic treatment for similar symptoms raises concern for a bacterial infection, possibly pneumonia. Given her complex medical history and current symptoms, further evaluation is warranted to rule out pneumonia, assess for acute exacerbation of COPD, and screen for potential viral causes such as COVID-19.  
+
+Plan  
+The patient requires urgent evaluation in the emergency department. The plan includes obtaining a chest X-ray, sputum culture, and a complete blood count with differential to assess for infection. A COVID-19 swab should be performed to rule out viral etiology. The patient will receive nebulized bronchodilators and may require intravenous antibiotics if bacterial pneumonia is suspected. Oxygen saturation and vital signs should be closely monitored. Based on the results of the evaluation, the patient may be admitted for further management or discharged with a home treatment plan and follow-up.  
+
+Follow-up is recommended with her primary care provider or pulmonologist for continued management of COPD and monitoring of her renal function and hypertension. Smoking cessation counseling is strongly advised.

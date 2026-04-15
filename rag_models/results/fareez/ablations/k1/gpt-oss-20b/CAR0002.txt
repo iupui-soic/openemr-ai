@@ -1,0 +1,106 @@
+Model: openai/gpt-oss-20b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:33:32
+Time: 3.08s
+Tokens: 8,615 in / 1,430 out
+============================================================
+
+Patient Information  
+The patient is a male of unknown age who presents to the clinic today. No name, date of birth, or address is available in the current encounter records.  
+
+Chief Complaint  
+The patient reports a sudden onset left-sided chest pressure that began approximately thirty minutes ago while shoveling a driveway. He rates the pain 7 out of 10 on a standard pain scale.  
+
+History of Present Illness  
+The chest pain is described as dull and pressure‑like, localized to the left side of the chest without radiation. It worsened with movement and lying down and has not improved with any self‑treatments. The patient also reports mild shortness of breath that began yesterday, a mild fever with a measured temperature of 38°C, and a sensation of increased heart rate. He denies any recent chest trauma, cough, nausea, vomiting, or significant weight changes. There was a rugby tackle one day prior to the onset of pain, but the chest was reported to feel fine immediately afterward.  
+
+Review of Systems  
+Constitutional: fever 38°C, no chills, no night sweats, no weight loss, energy reported as good.  
+Respiratory: shortness of breath, no cough, no wheezing.  
+Cardiovascular: chest pain, palpitations described as “fast heart,” no known arrhythmias.  
+Gastrointestinal: no nausea, no vomiting.  
+Neurologic: no dizziness, no fainting.  
+Musculoskeletal: no known back or neck pain reported during this visit.  
+Skin: no rashes, no edema of lower extremities.  
+
+Past Medical History  
+The patient has a history of hypertension and hyperlipidemia. No prior episodes of chest pain or documented cardiac disease are reported. No history of diabetes, kidney disease, or anemia is mentioned in the current encounter.  
+
+Surgical History  
+No surgeries are reported.  
+
+Social History  
+The patient is a full‑time bus driver. He lives in a house with his parents. He engages in moderate exercise, running on Sundays. He reports a balanced diet but often eats out. He has a 20‑year history of cigarette smoking, averaging half a pack to one pack per day. He denies current alcohol use. He has a history of crystal methamphetamine use, most recent use six days ago, with a frequency of a few times per month over the past seven years.  
+
+Family History  
+No known family history of heart disease, cancer, diabetes, or other significant illnesses is provided.  
+
+Medications  
+Current home medications include lisinopril for hypertension and rosuvastatin for hyperlipidemia. The patient also takes a multivitamin. No other current medications are reported by the patient.  
+
+Allergies  
+No drug allergies are reported.  
+
+Vitals  
+Temperature: 38.0 °C.  
+Blood pressure, heart rate, respiratory rate, and oxygen saturation are not documented in this encounter.  
+
+Physical Examination  
+No physical examination findings are documented in the current records.  
+
+Laboratory Results  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.5 mg/dL  
+- Urea nitrogen: 19.2 mg/dL (also 17.4 mg/dL in another sample)  
+- Sodium: 141.6 mmol/L  
+- Potassium: 5.03 mmol/L (also 4.31 mmol/L in another sample)  
+- Chloride: 101.2 mmol/L  
+- Calcium: 9.47 mg/dL (also 10.06 mg/dL in another sample)  
+- Low‑density lipoprotein cholesterol: 140.6 mg/dL  
+- Total cholesterol: 185.3 mg/dL  
+- Alanine aminotransferase: 21.8 U/L  
+
+Assessment  
+The patient presents with acute, unexplained left‑sided chest pain in the setting of significant cardiovascular risk factors (hypertension, hyperlipidemia, tobacco use, methamphetamine exposure). The differential diagnosis includes acute coronary syndrome, musculoskeletal strain, pulmonary embolism, and less likely aortic dissection. The absence of radiation, diaphoresis, and vomiting makes musculoskeletal strain possible, yet the presence of shortness of breath, fever, tachycardia, and risk factors elevate concern for ischemic etiology.  
+
+Plan  
+
+1. Immediate cardiac evaluation  
+   - Perform a 12‑lead electrocardiogram (ECG) at the bedside.  
+   - Obtain cardiac biomarkers (troponin I/T and CK‑MB) and repeat them in 3–6 hours.  
+
+2. Symptom management  
+   - Administer sublingual nitroglycerin 0.4 mg PRN for chest discomfort, monitoring for blood pressure drop.  
+   - Provide oral aspirin 325 mg chewable if not contraindicated.  
+
+3. Monitoring  
+   - Place the patient on cardiac telemetry for continuous rhythm monitoring.  
+   - Reassess vital signs, including heart rate and blood pressure, every 15–30 minutes for the first two hours.  
+
+4. Further diagnostics  
+   - Order a chest radiograph to evaluate for pulmonary pathology.  
+   - Consider a chest CT angiography if pulmonary embolism is suspected or if the patient’s status does not improve.  
+
+5. Consultations  
+   - Request early cardiology consultation for possible further work‑up and management of suspected acute coronary syndrome.  
+
+6. Lifestyle and risk‑factor modification  
+   - Counsel on smoking cessation, offering nicotine replacement therapy or a prescription medication (e.g., varenicline) as appropriate.  
+   - Discuss the risks associated with methamphetamine use and provide resources for substance abuse counseling.  
+
+7. Follow‑up  
+   - Schedule a follow‑up appointment with primary care or cardiology within 24 hours if the patient is discharged.  
+   - Advise the patient to seek emergency care immediately if chest pain worsens, is accompanied by diaphoresis, new onset shortness of breath, or if he experiences syncope.  
+
+Discharge Instructions (if applicable)  
+- Take prescribed antihypertensive and lipid‑lowering medications exactly as directed.  
+- Continue smoking cessation efforts and avoid methamphetamine.  
+- Monitor for recurrence of chest pain and call emergency services if symptoms persist or worsen.  
+- Maintain a heart‑healthy diet and increase physical activity gradually.  
+
+Follow‑up Instructions  
+- Return to the clinic or cardiology clinic within 24 hours if symptomatic.  
+- Schedule routine blood pressure and lipid monitoring per standard guidelines.  
+
+This plan addresses the immediate need for cardiac evaluation while also targeting long‑term cardiovascular risk reduction.

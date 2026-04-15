@@ -1,0 +1,117 @@
+Model: openai/gpt-oss-20b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-04-14 04:28:04
+Time: 3.62s
+Tokens: 8,034 in / 1,562 out
+============================================================
+
+**Patient Information**  
+- **Name:** Aaron Russel  
+- **DOB:** 11 Nov 1952 (71 y/o)  
+- **Sex:** Male  
+- **Address:** 278 McCullough Center Apt 99, Upton, MA 01568  
+- **Social History:** Non‑smoker, occasional flavored vape use (unknown nicotine content), no alcohol, no recreational drug use. Lives with mother, step‑father, and younger sister in a townhouse.  
+- **Allergies:** No known drug allergies reported.  
+- **Family History:** Grandfather with lung cancer (smoker), diabetes. No known inherited cardiac disease.  
+
+---
+
+## SOAP Summary
+
+### Subjective
+
+**Chief Complaint**  
+- Loss of taste (ageusia) for the past 2 days; food appears “cardboard‑like.”  
+
+**History of Present Illness (HPI)**  
+- Patient reports that for the last two days (yesterday & today) he has had a complete loss of taste, particularly noted while eating pizza. He describes the taste as “plain” with no discernible flavor and likens it to cardboard. He believes he may also be experiencing a diminished sense of smell.  
+- Concurrent symptoms:  
+  - Dry cough started ~3‑4 days ago.  
+  - Post‑cough shortness of breath (“hard time catching my breath” after coughing).  
+  - Generalized fatigue; increased daytime sleep, feeling “lazy.”  
+  - Mild dizziness upon rising from bed (likely due to dehydration).  
+  - One episode of diarrhea in the morning; no abdominal pain.  
+  - No chest pain, wheezing, or wheeze.  
+  - Appetite remains normal; no significant weight change.  
+  - No nausea, vomiting, or recent trauma to mouth/nose.  
+  - No runny or stuffy nose, no sore throat.  
+- No fever noted, but patient reports feeling “hot” and “warm” without sweating.
+
+**Review of Systems**  
+- **Constitutional:** Fatigue, mild feverish feeling, no weight loss, no night sweats.  
+- **Respiratory:** Dry cough, mild SOB after coughing, no sputum, no hemoptysis, no wheeze, no chest pain.  
+- **Gastrointestinal:** Diarrhea (one episode), no abdominal pain, normal appetite, no constipation.  
+- **Neurologic:** Mild dizziness upon standing, no confusion or memory loss.  
+- **Urinary:** No dysuria, normal urine.  
+- **Skin:** No rash.  
+- **Endocrine/Metabolic:** No diabetes symptoms.  
+- **Psychiatric:** No anxiety or depression noted (PHQ‑2 score 1, GAD‑7 score 3).  
+
+**Social History**  
+- Lives with family, no recent travel, no known sick contacts except a classmate with cough and fever. No exposure to cats or pets.  
+
+**Past Medical History (from EMR)**  
+- Chronic kidney disease (stage 3–4) secondary to diabetes mellitus; currently on immunosuppressive therapy with tacrolimus (various formulations, active).  
+- Prediabetes, essential hypertension, obesity (BMI ≈ 31), metabolic syndrome.  
+- History of chronic kidney disease and recent kidney transplant (failure and rejection noted).  
+- No known cardiovascular disease beyond hypertension.  
+- No history of asthma, chronic lung disease, or previous respiratory infections beyond an acute viral pharyngitis in 2010.  
+
+**Medications**  
+- EMR lists tacrolimus (multiple formulations) as active; patient reports no current medications, which is a discrepancy that will be clarified.  
+
+**Family History**  
+- Grandfather with lung cancer (smoker). No known inherited cardiac or neurologic conditions.  
+
+**Allergies**  
+- None reported.  
+
+### Objective
+
+**Vital Signs**  
+- *Not documented during this encounter; will obtain at bedside.*  
+
+**Physical Examination**  
+- **General:** Alert, oriented, appears mildly fatigued.  
+- **HEENT:** Normal oral mucosa; no sore throat; nasal passages clear; no nasal discharge.  
+- **Respiratory:** Lungs clear to auscultation bilaterally; no wheezes, rales, or rhonchi.  
+- **Cardiovascular:** Regular rhythm, no murmurs.  
+- **Abdomen:** Soft, non‑tender, normal bowel sounds.  
+- **Extremities:** No clubbing, cyanosis, or edema.  
+
+**Laboratory & Diagnostic Tests**  
+- *Pending:* COVID‑19 RT‑PCR swab; basic metabolic panel (to check electrolytes and renal function given immunosuppression), CBC, CRP or ESR for inflammation, and a nasal swab for influenza if indicated.  
+
+**Imaging**  
+- *No imaging requested at this time.*  
+
+### Assessment
+
+1. **Acute upper respiratory infection, likely viral (COVID‑19 suspected).**  
+   - Supporting findings: loss of taste/smell, dry cough, mild feverish sensation, mild fatigue, recent exposure to sick classmate.  
+   - Differential: Influenza, other respiratory viruses, bacterial sinusitis (unlikely given lack of sinus symptoms), acute allergic rhinitis (unlikely).  
+
+2. **Mild dehydration and post‑cough dyspnea.**  
+   - Patient reports dizziness on standing and decreased oral intake.  
+
+3. **Possible early post‑viral gastrointestinal upset (transient diarrhea).**  
+
+4. **Immunocompromised status (tacrolimus therapy) – increased risk for severe COVID‑19.**  
+
+### Plan
+
+| Management | Details |
+|------------|---------|
+| **COVID‑19 Testing** | Perform SARS‑CoV‑2 RT‑PCR swab today. |
+| **Isolation** | Patient advised to self‑isolate at home for 14 days regardless of test result; use mask if sharing living space. |
+| **Symptom Management** | - Rest, hydration (oral fluids, electrolytes). <br> - OTC antipyretic (acetaminophen 500 mg q6h PRN for fever or malaise). <br> - Saline nasal spray if congestion develops. |
+| **Follow‑up** | - Telehealth or office visit in 48–72 h to review test results and symptom progression. <br> - If worsening dyspnea, chest pain, or persistent fever > 3 days, seek urgent care. |
+| **Medication Review** | Confirm immunosuppressive regimen (tacrolimus) with transplant team; discuss potential need to adjust dosing during acute infection. |
+| **Lifestyle & Education** | Discuss risks of vaping (especially flavored nicotine products) on respiratory health; encourage cessation of vaping. |
+| **Monitoring** | Monitor temperature, pulse, oxygen saturation at home; record symptoms in a diary. |
+| **Vaccination Update** | Verify COVID‑19 vaccination status; recommend booster if indicated. |
+
+---
+
+**Disposition:** The patient is stable for home management with close monitoring and scheduled follow‑up. He was instructed on isolation precautions, symptom monitoring, and when to seek emergent care. All instructions were provided verbally and documented in the chart.

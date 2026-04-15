@@ -1,0 +1,92 @@
+Model: openai/gpt-oss-120b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:27:55
+Time: 3.96s
+Tokens: 9,706 in / 1,261 out
+============================================================
+
+Patient Information  
+Name: Aileen Vi Rempel  
+Date of Birth: Not documented in the current encounter (transcript indicates a 25‑year‑old female)  
+Sex: Female  
+Address: 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171  
+
+Chief Complaint  
+Sharp, intermittent chest pain for the past three days.  
+
+History of Present Illness  
+The patient reports the sudden onset of a sharp, localized chest pain three days ago. The discomfort is centered over the area of the heart and is described as a 6/10 in intensity. Episodes are brief, lasting only a few seconds, and occur several times per day. The pain is provoked by coughing and by lying supine, and is alleviated when the patient leans forward. She notes occasional radiation of the pain to the neck. No associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or syncope has been experienced. The patient took a single dose of acetaminophen (Tylenol) yesterday, which provided some relief. She denies any recent trauma to the chest. She had an episode of influenza with fever, rhinorrhea, cough, and fatigue a week ago, but those symptoms have resolved.  
+
+Review of Systems  
+Constitutional: No fever, chills, weight loss, or recent fatigue (apart from prior flu).  
+Cardiovascular: Chest pain as described; no palpitations, orthopnea, or edema.  
+Respiratory: No shortness of breath, cough (current), or wheezing.  
+Gastrointestinal: No nausea, vomiting, abdominal pain, or change in bowel habits.  
+Neurologic: No dizziness, fainting, weakness, or numbness.  
+Psychiatric: No anxiety or depression reported at this visit.  
+
+Past Medical History  
+The patient states she has no chronic medical conditions and is otherwise healthy.  
+
+Surgical History  
+No prior surgeries reported.  
+
+Family History  
+Father suffered a myocardial infarction two weeks ago and subsequently passed away. No other family history of heart disease, cancer, diabetes, or stroke reported.  
+
+Social History  
+Student majoring in engineering at Western University; also employed part‑time as a postman. Lives with her mother in a house. Occasionally consumes alcohol (one to two drinks on weekends). Denies tobacco use, recreational drug use, and nicotine vaping.  
+
+Allergies  
+No known drug, food, or environmental allergies.  
+
+Current Medications  
+Occasional acetaminophen (Tylenol) as needed for pain. No other regular medications reported.  
+
+Vital Signs (most recent documented)  
+Heart Rate: 82 beats per minute  
+Respiratory Rate: 14 breaths per minute  
+Blood Pressure: Not documented for this encounter  
+Temperature: Not documented for this encounter  
+SpO₂: Not documented  
+Height: 166.9 cm (from historic record)  
+Weight: Not documented (BMI from historic record 27.6)  
+
+Physical Examination  
+No physical exam findings were recorded during this encounter.  
+
+Laboratory Data  
+Recent laboratory values (historical) show:  
+- Sodium 141 mmol/L, Potassium 4.2 mmol/L, Chloride 108 mmol/L, Bicarbonate 25–27 mmol/L – within normal limits.  
+- Glucose 92 mg/dL – normal.  
+- Creatinine 0.35 mg/dL – low but without clinical context.  
+- Blood urea nitrogen 12–16 mg/dL – normal.  
+- Calcium 9.0 mg/dL (average of two values) – normal.  
+No cardiac biomarkers (troponin, CK‑MB) or electrocardiogram results are currently available.  
+
+Assessment  
+1. Acute, sharp, positional chest pain of uncertain etiology. The pain characteristics (sharp quality, worsening with coughing and supine position, improvement when leaning forward, brief duration) are suggestive of acute pericarditis but cannot exclude musculoskeletal or pleuritic causes at this time.  
+2. Family history of recent myocardial infarction in the father raises concern for possible coronary artery disease, although the patient’s age and lack of risk factors make this less likely.  
+3. Recent viral upper respiratory infection (influenza) could be a precipitant for pericardial inflammation.  
+
+Plan  
+Diagnostic Studies:  
+- Immediate 12‑lead electrocardiogram to evaluate for pericarditis (diffuse ST‑segment elevation, PR depression) and to rule out acute ischemia.  
+- Serum cardiac enzymes (high‑sensitivity troponin) to assess for myocardial injury.  
+- Chest radiograph to evaluate cardiac silhouette and rule out pulmonary pathology.  
+
+Medications:  
+- Continue acetaminophen as needed for pain, not to exceed recommended dosing.  
+- If pericarditis is confirmed and pain persists, consider a short course of non‑steroidal anti‑inflammatory drug (e.g., ibuprofen 600 mg PO TID) unless contraindicated.  
+
+Education & Disposition:  
+- Discussed that the pain is most likely non‑cardiac but emphasized the importance of completing the ECG and labs promptly.  
+- Instructed the patient to seek emergency care if the chest pain becomes sustained, worsens, is associated with shortness of breath, diaphoresis, syncope, or new palpitations.  
+- Advised avoidance of strenuous activity until the underlying cause is clarified.  
+
+Follow‑up:  
+- Review ECG, troponin, and chest X‑ray results within 24 hours.  
+- Arrange a follow‑up appointment with primary care or cardiology within 3‑5 days, or sooner if symptoms evolve.  
+
+Disposition: Patient discharged home after discussion and pending diagnostic work‑up. No immediate life‑threatening findings identified at the time of the visit.

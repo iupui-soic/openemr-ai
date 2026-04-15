@@ -1,0 +1,135 @@
+Model: openai/gpt-oss-120b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-04-14 04:09:13
+Time: 5.85s
+Tokens: 7,121 in / 1,838 out
+============================================================
+
+Patient Information  
+Name: Abe Steuber  
+Date of Birth: 24 March 1995 (Age 26)  
+Sex: Male  
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with a several‑month history of dull, aching back pain associated with morning stiffness.
+
+History of Present Illness  
+Abe reports that for the past four to five months he has experienced a diffuse, dull pain centered in the middle to lower thoracic and lumbar regions of his back. The pain is described as a constant ache, rated 4–5/10 on a numeric scale, with occasional variation in intensity from day to day. He notes marked stiffness on awakening that improves after approximately 30 to 60 minutes of activity; by one hour after getting up he feels his best. The pain does not radiate to the extremities, and he cannot identify any specific movements (bending, standing, lying) that exacerbate it. There is no history of trauma or a precipitating injury. Over the same time frame he has had intermittent pain in his right knee and in his hands, which he describes as “coming and going.” He has tried acetaminophen and ibuprofen, with ibuprofen providing modest relief, but the stiffness returns each morning. He denies fevers, chills, night sweats, weight loss, changes in appetite, bowel or urinary disturbances, rashes, nail changes, visual changes, numbness, tingling, or muscle weakness. He does report increased fatigue and a general sense of malaise over the past several months. He had an episode of gastroenteritis with diarrhea a few months ago that required a short course of antibiotics.  
+
+Review of Systems  
+
+Constitutional: Positive for fatigue and malaise; negative for fever, chills, night sweats, weight loss, or recent illness.  
+Musculoskeletal: Positive for chronic low back pain, intermittent right knee pain, intermittent hand pain, morning stiffness >30 minutes; negative for joint swelling, redness, warmth, or limited range of motion. No reported weakness, numbness, or paresthesias.  
+Respiratory: History of asthma, uses a short‑acting bronchodilator (“blue inhaler”) as needed; no current dyspnea.  
+Cardiovascular: No chest pain, palpitations, or edema.  
+Gastrointestinal: Prior episode of diarrhea several months ago; no current abdominal pain, nausea, vomiting, constipation, or blood in stool.  
+Genitourinary: No dysuria, frequency, urgency, or incontinence.  
+Neurologic: No headaches, dizziness, syncope, or focal neurologic deficits.  
+Dermatologic: No rashes, skin lesions, or nail changes.  
+Psychiatric: No depression, anxiety, or suicidal ideation reported.  
+Endocrine/Metabolic: No polyuria, polydipsia, or heat/cold intolerance.  
+
+Allergies  
+Environmental allergies (likely pollen/ragweed) – severity not specified.  
+EMR records indicate an unspecified “Allergy to substance” noted in 2015; details unavailable.
+
+Past Medical History  
+- Asthma, intermittent use of short‑acting bronchodilator.  
+- Chronic low back pain (documented in EMR).  
+- Obesity (BMI 42.03, severe obesity).  
+- Prior viral sinusitis, acute viral pharyngitis, gingivitis, and other minor infections (historical).  
+- No history of diabetes, hypertension, or cardiovascular disease.  
+
+Surgical History  
+No prior surgeries reported.
+
+Social History  
+Employed full‑time as a bank employee.  
+Lives with his girlfriend in a city condo.  
+Denies tobacco use; occasional alcohol consumption (one to two beers or a cocktail on weekends).  
+Occasional recreational marijuana use (once or twice per week).  
+No regular exercise program reported.  
+No coffee consumption.  
+
+Family History  
+Mother has psoriasis treated with topical agents; no known joint disease in mother. No other significant familial medical conditions reported.
+
+Current Medications (patient‑reported and EMR active list)  
+- Acetaminophen 325 mg as needed for pain.  
+- Ibuprofen (Advil) 200 mg as needed for pain.  
+- Albuterol inhalation solution (short‑acting bronchodilator) as needed for asthma.  
+- Budesonide inhalation suspension (maintenance asthma therapy).  
+- Fexofenadine 60 mg daily for environmental allergies.  
+- Hydrocortisone topical cream as needed for skin irritation.  
+- No current prescription opioid or disease‑modifying agents.
+
+Objective  
+
+Vital Signs (most recent EMR entry, 13 Feb 2015)  
+- Heart Rate: 86 beats/min  
+- Respiratory Rate: 15 breaths/min  
+- Temperature: Not recorded  
+- Blood Pressure: Not recorded  
+- SpO₂: Not recorded  
+- Height: 169.7 cm  
+- Weight: Not recorded  
+- Body Mass Index: 42.03 (severe obesity)  
+
+Physical Examination  
+No in‑person physical examination was performed during this telehealth encounter. The patient appears alert and oriented; no acute distress noted verbally. No focal neurologic deficits or gait abnormalities reported.
+
+Laboratory Data  
+No laboratory studies were obtained during this visit. Existing EMR laboratory values are historical and not reflective of the current presentation.
+
+Imaging  
+No imaging studies have been performed to date.
+
+Assessment  
+
+1. Chronic low back pain with prominent morning stiffness – inflammatory back pain syndrome on the differential (possible early ankylosing spondylitis, psoriatic arthritis, or reactive arthritis).  
+2. Intermittent right knee and hand arthralgias – may represent peripheral manifestations of a spondyloarthropathy.  
+3. Asthma, intermittent short‑acting bronchodilator use.  
+4. Severe obesity (BMI > 40).  
+5. Fatigue/malaise, likely secondary to chronic pain and possible inflammatory process.  
+
+Plan  
+
+Diagnostics  
+- Order laboratory panel: CBC with differential, ESR, CRP, rheumatoid factor, anti‑CCP, ANA, HLA‑B27.  
+- Obtain plain radiographs of the lumbar spine and sacroiliac joints.  
+- Obtain X‑rays of the right knee and both hands to evaluate for erosive changes.  
+
+Referrals  
+- Refer to rheumatology for evaluation of possible spondyloarthropathy and guidance on disease‑modifying therapy.  
+- Consider referral to physical therapy for core strengthening, flexibility, and posture training once inflammatory etiology is clarified.  
+
+Medications  
+- Continue ibuprofen 400 mg three times daily with food for pain control, monitoring for gastrointestinal side effects.  
+- Continue acetaminophen 325 mg as needed for breakthrough pain.  
+- Continue current asthma regimen (albuterol as needed, budesonide inhaler).  
+- Continue fexofenadine for allergy symptoms.  
+
+Lifestyle & Education  
+- Initiate a gradual, low‑impact exercise program (e.g., walking, swimming, or supervised physical therapy) aimed at weight reduction and core strengthening.  
+- Counsel on ergonomic modifications at work and during daily activities.  
+- Discuss importance of weight loss; consider referral to nutrition counseling.  
+- Advise to avoid prolonged inactivity; encourage gentle stretching after waking to reduce stiffness.  
+- Educate on red‑flag symptoms that require urgent evaluation: new neurologic deficits, bowel or bladder dysfunction, severe unremitting pain, fever, or unexplained weight loss.  
+
+Follow‑up  
+- Schedule follow‑up visit in 2–3 weeks to review laboratory and imaging results and to discuss rheumatology recommendations.  
+- Patient instructed to contact the clinic sooner if symptoms worsen or red‑flag signs develop.  
+
+Discharge Instructions  
+- Take ibuprofen with food; limit use to the prescribed frequency.  
+- Use acetaminophen for additional pain relief if needed, not exceeding 3 g per day.  
+- Perform gentle spinal and hamstring stretches each morning after the initial stiffness period.  
+- Maintain adequate hydration and a balanced diet to support weight loss goals.  
+- Continue asthma inhalers as needed; seek medical attention for worsening respiratory symptoms.  
+- Avoid smoking and limit alcohol intake; continue current marijuana use within legal limits but be aware of potential interactions with NSAIDs.  
+
+The patient verbalized understanding of the plan and agreed to proceed with the outlined investigations and referrals.  
+
+Prepared by: _______________________   Date: 14 April 2026   (Electronic Medical Record)

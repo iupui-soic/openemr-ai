@@ -1,0 +1,83 @@
+Model: qwen/qwen3-32b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:01:09
+Time: 4.03s
+Tokens: 6,520 in / 1,296 out
+============================================================
+
+Patient Information:
+
+The patient is a 58-year-old female, Abbey Eliza Schmitt, who presents with a three-day history of a dry, persistent cough that is interfering with her sleep. She is a resident of Hudson, Massachusetts, and lives with her husband and two teenage children. She reports no known allergies and is currently taking Synthroid for hypothyroidism, as well as a daily multivitamin. She has a history of appendectomy in her youth and is currently employed in marketing from home. She consumes alcohol occasionally, approximately once every three to four days, and has a history of marijuana use, though not on a regular basis. She denies any tobacco use. Her BMI is 30.06, indicating obesity, and she has a family history of heart disease, including a recent heart attack in her older sister.
+
+Chief Complaint:
+
+The patient presents with a chief complaint of a dry, persistent cough for the past three days, which has progressively worsened and is now associated with fever, fatigue, and mild chills and night sweats.
+
+History of Present Illness:
+
+The patient reports that the cough began three days ago and has been constant throughout the day, with no identifiable triggers such as cold air, smoke, or allergens. The cough is dry and unproductive, with no sputum or blood. She has tried over-the-counter cough syrup without improvement. In the past 24 hours, she has experienced a sensation of feeling hot, which she attributes to a possible fever. She also reports mild fatigue, which she suspects is due to sleep disruption from the cough. She has had chills and night sweats the previous night. She denies chest pain, shortness of breath, wheezing, or any gastrointestinal symptoms such as nausea, vomiting, or diarrhea. She also denies dizziness, syncope, or any neurological symptoms. She has no recent travel history or known sick contacts, though her husband has been experiencing nausea and vomiting for the past two days and may also be feeling unwell.
+
+Review of Systems:
+
+Constitutional: The patient reports fatigue and mild chills and night sweats. She denies weight loss, fever (though she feels hot), or significant changes in appetite or sleep.
+
+Respiratory: The patient has a dry, persistent cough that is constant throughout the day and night. She denies any sputum production, hemoptysis, chest pain, or dyspnea.
+
+Cardiovascular: No chest pain, palpitations, or syncope reported.
+
+Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.
+
+Genitourinary: No dysuria, frequency, or urgency reported.
+
+Neurological: No dizziness, syncope, or headaches reported beyond what may be attributed to coughing.
+
+Musculoskeletal: The patient reports mild muscle aches and body aches.
+
+Dermatological: No rashes or skin changes reported.
+
+Endocrine: No changes in appetite, weight, or energy levels beyond what is attributed to the illness. She has a known history of hypothyroidism, managed with Synthroid.
+
+Hematologic: No bruising, bleeding, or anemia symptoms reported.
+
+Psychiatric: No depressive symptoms or anxiety reported.
+
+Allergies:
+
+The patient has no known drug allergies.
+
+Past Medical History:
+
+The patient has a history of hypothyroidism, managed with Synthroid. Her last TSH was six months ago and was within normal limits. She also has a history of chronic low back and neck pain, osteoarthritis of the knee, chronic congestive heart failure, chronic kidney disease stage 2, and chronic kidney disease due to type 2 diabetes. She has a history of essential hypertension and has previously experienced viral sinusitis and acute bronchitis. She has a history of full-time and part-time employment and has undergone a medication review in the past.
+
+Social History:
+
+The patient does not use tobacco products. She consumes alcohol occasionally, approximately once every three to four days. She reports past use of marijuana, but not on a regular basis. She does not use any other recreational drugs. She works from home in marketing and lives with her husband and two teenage children. She reports no recent travel or sick contacts, though her husband has been experiencing gastrointestinal symptoms.
+
+Family History:
+
+The patient has a family history of heart disease, including a recent heart attack in her older sister. She reports her parents were healthy and passed away due to old age. There is no reported history of cancer or diabetes in the immediate family.
+
+Current Medications:
+
+The patient is currently taking Synthroid for hypothyroidism and a daily multivitamin. She has no known drug allergies.
+
+Objective:
+
+Vital signs were not recorded in the electronic health record. Physical examination findings were not provided in the transcript. However, the patient presented with a dry cough, mild fatigue, and subjective fever. No other physical findings were noted in the transcript.
+
+Labs:
+
+Recent laboratory results include a creatinine level of 1.99 mg/dL, sodium of 140 mmol/L, potassium of 4.41 mmol/L, and glucose of 67.3 mg/dL. Urinalysis showed proteinuria and ketonuria. No recent complete blood count or inflammatory markers were available in the record.
+
+Imaging:
+
+No imaging studies were performed at the time of the visit.
+
+Assessment:
+
+The patient presents with a three-day history of a dry, persistent cough that is interfering with sleep and is now associated with subjective fever, fatigue, and mild chills and night sweats. The differential diagnosis includes viral upper respiratory infection, acute bronchitis, or possibly early signs of a viral illness such as influenza or COVID-19. Given the recent onset and progression of symptoms, as well as the presence of fever and systemic symptoms, further evaluation is warranted.
+
+Plan:
+
+The patient will undergo further diagnostic evaluation, including a nasal PCR swab for respiratory viruses, including SARS-CoV-2, and a chest X-ray to assess for acute bronchitis or other pulmonary pathology. Blood work will be ordered to evaluate for signs of infection or inflammation. The patient will be advised to continue monitoring her symptoms, maintain hydration, and follow up as needed based on the results of the investigations. She will also be advised to monitor her husband's symptoms and encourage him to seek medical evaluation if his condition worsens.

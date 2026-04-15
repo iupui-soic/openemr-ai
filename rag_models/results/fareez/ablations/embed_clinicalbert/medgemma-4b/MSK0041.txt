@@ -1,0 +1,40 @@
+Model: google/medgemma-4b-it
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-04-14 05:59:27
+Time: 41.52s
+Tokens: 8,720 in / 793 out
+Cell: embed_clinicalbert
+============================================================
+
+Patient Information:
+
+Patient Name: Abel Fritsch
+Date of Birth: 1945-02-24
+Unit Number: 342
+
+Chief Complaint: Intense right foot pain.
+
+History of Present Illness:
+
+The patient presents with intense pain in the right foot that began approximately six hours ago. The pain has been constant since its onset. The patient reports no trauma to the foot. The pain is located below the big toe, on the medial side of the foot. The pain is described as sharp and intense. The patient has not tried any specific interventions to alleviate the pain, but has been trying to keep the foot still and stationary. Ibuprofen has not provided any relief. The pain is exacerbated by movement of the foot, as well as by putting on shoes or clothing touching the affected area. The patient is able to walk on the foot, but it is very painful, and they are unable to fully flex or extend the big toe. The pain is rated as an 8 out of 10. The patient denies any prior history of similar pain in the toes or other joints. The patient denies any neurological symptoms such as numbness, tingling, or sensory loss. The patient denies any muscle weakness. The patient denies any headaches. The patient denies any memory loss or confusion. The patient denies any fevers or chills. The patient denies any unexpected weight loss. The patient denies any night sweats. The patient denies any sensory changes in vision, hearing, smell, or taste. The patient denies any sore throat or runny nose. The patient denies any cough or shortness of breath. The patient denies any chest pain. The patient denies any heart palpitations or feeling like their heart is racing. The patient denies any lightheadedness or dizziness. The patient denies any nausea or vomiting. The patient denies any abdominal pain. The patient denies any changes to bowel habits. The patient denies any changes to urinary patterns. The patient denies any skin changes. The patient reports no fatigue or malaise. The patient denies any muscle aches or body pains or joint pains elsewhere. The patient reports a history of high blood pressure, diabetes, and being overweight. The patient takes ramipril for high blood pressure and insulin for diabetes. The patient denies any recent medication changes. The patient reports a recent hospitalization for kidney stones, which has since resolved. The patient denies any prior surgeries, except for the lithotripsy for the kidney stones. The patient's immunizations are up to date. The patient does not smoke, use marijuana, or use other cannabis products. The patient denies using any recreational drugs. The patient reports drinking approximately 2 glasses of wine per day and a beer every day.
+
+Social History:
+
+The patient lives with his son in a house. The patient denies being around anyone who has been sick. The patient denies any recent travel. The patient reports eating a lot of red meat but not a lot of seafood.
+
+Family History:
+
+The patient's father had arthritis and high blood pressure and diabetes. His mother had arthritis and gout. There is some arthritis and gout in his mother's family.
+
+Physical Examination:
+
+The patient is seen with redness and swelling in the right foot. The right foot is warmer than the left foot. There is no muscle atrophy or joint malalignment. The patient can flex and extend their toes. The patient can move their ankle on a full range of motion. The patient is walking with an antalgic gait.
+
+Assessment:
+
+The patient presents with a likely gout flare in the right big toe. The risk factors for gout include diabetes, obesity, and family history.
+
+Plan:
+
+The patient will be started on colchicine to treat the gout flare. The patient will be instructed to reduce red meat and alcohol intake, lose weight, and improve diabetes management to prevent future flares. A joint aspiration will be performed to rule out infection.

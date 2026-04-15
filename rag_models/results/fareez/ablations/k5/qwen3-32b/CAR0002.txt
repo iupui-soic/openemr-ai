@@ -1,0 +1,89 @@
+Model: qwen/qwen3-32b
+Patient: CAR0002
+Detected Disease: Chest Pain
+Generated: 2026-04-14 03:46:13
+Time: 4.88s
+Tokens: 10,335 in / 1,342 out
+============================================================
+
+Patient Information  
+Amos Crona is a 89-year-old male with a complex medical history, including essential hypertension, hyperlipidemia, ischemic heart disease, chronic kidney disease (now post-transplant), chronic low back and neck pain, chronic pain, and a history of substance use. He resides in a house with his parents and works as a city bus driver. He has a long-standing history of tobacco use (approximately 20 years) and reports smoking half to a full pack daily. He denies alcohol use but acknowledges recreational use of crystal methamphetamine approximately two times per month, with the last use six days prior to presentation. He has no known drug allergies.  
+
+Chief Complaint  
+The patient presents with acute onset of left-sided chest pain that began 30 minutes prior to arrival. The pain is described as dull and associated with a sensation of pressure. It is persistent, has worsened since onset, and is exacerbated by movement or standing. The patient rates the pain as 7/10 on a pain scale. He also reports mild dyspnea and a low-grade fever (38°C).  
+
+History of Present Illness  
+The patient reports that the chest pain began suddenly while shoveling snow. The pain is localized to the left side of the chest and has not migrated. It is not relieved by rest or position change but is worsened when lying down. The patient denies previous episodes of chest pain. He denies cough, diaphoresis, syncope, or nausea. He notes mild shortness of breath, which he attributes to the onset of chest pain. He denies rashes, dizziness, or syncope.  
+
+The patient recently played rugby and was tackled the previous day but denies any chest trauma or injury. He denies recent travel or exposure to sick contacts. He denies swelling in the lower extremities, fatigue, or palpitations except for a sensation of increased heart rate, which he relates to physical activity.  
+
+Review of Systems  
+Constitutional: The patient reports a mild fever (38°C) but denies chills, night sweats, or weight loss.  
+Respiratory: Mild dyspnea is reported but no cough or sputum production.  
+Cardiovascular: Chest pain as described above. No history of arrhythmias or syncope.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain.  
+Neurological: No dizziness, syncope, or neurological deficits.  
+Musculoskeletal: No joint pain or swelling.  
+Integumentary: No rashes or skin changes.  
+Psychiatric: No mood changes or anxiety reported.  
+Endocrine: No new-onset diabetes symptoms.  
+Hematologic: No bruising or bleeding.  
+Genitourinary: No dysuria or hematuria.  
+Allergic/Immunologic: No recent allergic reactions.  
+
+Past Medical History  
+The patient has a long-standing history of essential hypertension, hyperlipidemia, ischemic heart disease, chronic kidney disease (now post-transplant), chronic low back and neck pain, chronic pain, and a history of renal transplant. He has also been diagnosed with prediabetes, sleep apnea, and chronic pain syndromes.  
+
+Past Surgical History  
+No previous surgeries reported.  
+
+Medications  
+The patient is currently prescribed Rosuvastatin and Lisinopril for hypertension and hyperlipidemia, as well as a multivitamin. He also has a long-standing regimen including metoprolol, tacrolimus, and other medications related to his renal transplant and chronic conditions.  
+
+Allergies  
+No known drug allergies.  
+
+Social History  
+The patient is a long-term smoker (20 years), with a reported intake of half to one pack per day. He denies alcohol use. He has a history of recreational use of crystal methamphetamine, with the last use occurring six days prior to presentation. He uses the substance approximately twice per month. The patient is employed as a bus driver and reports moderate physical activity, including weekly runs. His diet is described as fairly balanced, though he admits to eating out frequently.  
+
+Family History  
+No family history of heart attacks or cancers reported.  
+
+Objective  
+Vital Signs:  
+- Temperature: 38°C  
+- Heart Rate: 91 bpm  
+- Blood Pressure: Not available in the electronic record  
+- Respiratory Rate: 14 breaths per minute  
+- Oxygen Saturation: Not available  
+- Weight: 30.97 BMI (calculated from height and weight)  
+- Height: 168 cm  
+
+Physical Examination:  
+Not available in the provided data.  
+
+Laboratory Results  
+- Creatinine: 0.72 mg/dL  
+- Glucose: 84.52 mg/dL  
+- Potassium: 5.03 mmol/L  
+- Sodium: 141.55 mmol/L  
+- Urea Nitrogen: 19.21 mg/dL  
+- Cholesterol: 185.27 mg/dL  
+- Low-Density Lipoprotein (LDL): 140.58 mg/dL  
+
+Imaging  
+No imaging studies reported in the provided data.  
+
+Assessment  
+The patient presents with acute onset of left-sided chest pain, described as dull and associated with pressure, following physical exertion. The pain is persistent and worsens with movement. Given the patient’s age, history of ischemic heart disease, and the nature of the pain, a high index of suspicion for acute coronary syndrome is warranted. The presence of mild fever and a history of illicit drug use (crystal methamphetamine) further complicate the differential diagnosis. Additional evaluation, including cardiac enzymes, EKG, and possibly imaging, is indicated to rule out myocardial infarction or other acute cardiac events.  
+
+Plan  
+1. Obtain an EKG and cardiac enzymes (troponin, CK-MB) to evaluate for acute myocardial infarction.  
+2. Monitor vital signs and pain intensity closely.  
+3. Initiate oxygen therapy if hypoxia is present.  
+4. Administer aspirin (if not contraindicated) and nitrates for chest pain relief.  
+5. Consider additional imaging (CXR, echocardiogram) if indicated.  
+6. Evaluate for potential drug-induced cardiac effects given the history of methamphetamine use.  
+7. Schedule follow-up with cardiology for further evaluation and management.  
+8. Reinforce smoking cessation counseling and discuss the risks of continued methamphetamine use.  
+9. Provide patient education regarding signs and symptoms of cardiac events and the importance of prompt medical attention.

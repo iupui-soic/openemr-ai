@@ -1,0 +1,83 @@
+Model: openai/gpt-oss-120b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-04-14 03:14:03
+Time: 4.24s
+Tokens: 9,061 in / 1,260 out
+============================================================
+
+Patient Information  
+Name: Aaron Paucek  
+Age: Approx. 15 years (grade 10 student)  
+Sex: Male  
+Address: 318 Fay Ferry, Boston, Massachusetts 02116  
+Date of Encounter: July 25 2024  
+
+Chief Complaint  
+The patient presents with a sore throat of four days’ duration that has not improved and is now associated with a subjective fever.
+
+History of Present Illness  
+Aaron reports an “awful” sore throat that began four days ago. He has not measured his temperature but feels “really hot,” suggesting the onset of a fever. He is able to drink liquids but finds it painful to eat solid foods. He notes mild hoarseness, which he attributes to speaking less. He denies any difficulty swallowing solids, a sensation of food getting stuck, or any throat swelling that interferes with breathing. He reports no cough, nasal congestion, runny nose, or post‑nasal drip. He denies headache, confusion, visual or auditory changes, chest pain, shortness of breath, palpitations, gastrointestinal symptoms (nausea, vomiting, diarrhea, constipation), fatigue, or recent weight loss. He has not taken any medications other than a daily multivitamin. He has not measured his temperature formally. He has not been in close contact with anyone known to be ill and has not traveled recently. He reports that his throat appears markedly swollen and red on visual inspection.
+
+Past Medical History  
+According to the patient, he has no known chronic medical conditions. He reports an appendectomy performed at age 13. He reports no prior episodes of similar throat problems.
+
+Medications  
+- Multivitamin (over‑the‑counter) – daily  
+
+Allergies  
+No drug, food, or environmental allergies reported.
+
+Social History  
+Aaron lives at home with his parents and two siblings. He is a full‑time student in grade 10, attending a hybrid schedule of in‑person and virtual classes. He reports consistent mask use at school except when drinking water. He denies tobacco, alcohol, or illicit drug use. He is not sexually active and does not anticipate sexual activity before completing high school. He reports no bullying or psychosocial stressors. He feels safe at home.
+
+Family History  
+The patient reports no known family history of serious illness, although he mentioned the possibility of high blood pressure in the family.
+
+Review of Systems  
+Constitutional: Positive for subjective fever and sore throat; negative for chills, weight change, fatigue.  
+HEENT: Positive for sore throat, mild hoarseness, swollen/red oropharynx; negative for cough, rhinorrhea, nasal congestion, ear pain, visual changes.  
+Respiratory: Negative for dyspnea, cough, wheezing, chest pain.  
+Cardiovascular: Negative for palpitations, chest pain.  
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea, constipation.  
+Genitourinary: Negative for dysuria or urinary symptoms.  
+Neurologic: Negative for headache, confusion, dizziness.  
+Psychiatric: Negative for depression, anxiety.  
+Skin: No rashes reported.
+
+Physical Examination  
+Vital signs were not documented at the time of the encounter. On inspection of the oral cavity, the oropharynx appears markedly erythematous and swollen. No exudates were described. No cervical lymphadenopathy was noted in the transcript. Lungs were clear to auscultation, and the remainder of the physical exam was not recorded.
+
+Assessment  
+1. Acute pharyngitis – likely viral vs. bacterial (streptococcal) etiology.  
+2. Possible early COVID‑19 infection given overlapping symptoms; testing indicated.  
+3. Immunization status – not up to date on seasonal influenza vaccine and human papillomavirus (HPV) series.
+
+Plan  
+Diagnostics:  
+- Perform a rapid antigen detection test (RADT) for group A Streptococcus on the throat swab.  
+- Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR (or rapid antigen) testing.  
+
+Therapeutic:  
+- Symptomatic care with acetaminophen 500 mg PO q6h PRN for fever and throat pain, not to exceed 3 g per day.  
+- Encourage adequate oral fluid intake, soft diet, and rest.  
+- If the rapid strep test returns positive, initiate a 10‑day course of amoxicillin 500 mg PO three times daily (or appropriate penicillin allergy alternative). If negative and viral etiology is presumed, continue supportive care only.  
+
+Infection Control:  
+- Advise the patient to self‑isolate for 14 days from the onset of symptoms or until a negative COVID‑19 result is obtained, whichever is longer.  
+- Maintain physical distancing and mask use at school; limit close contact with household members when possible.  
+
+Immunizations:  
+- Recommend receipt of the current seasonal influenza vaccine as soon as possible.  
+- Discuss initiation of the HPV vaccine series (three‑dose schedule) now, emphasizing increased efficacy when started before age 26.  
+
+Follow‑up:  
+- Review test results within 48 hours. If bacterial pharyngitis is confirmed, schedule a follow‑up visit to assess response to antibiotics.  
+- If COVID‑19 is confirmed, provide guidance per local public health protocols and arrange telehealth follow‑up for symptom monitoring.  
+- Re‑evaluate in 5‑7 days if symptoms worsen, new symptoms develop (e.g., difficulty breathing, persistent high fever, rash), or there is no improvement.  
+
+Patient Education:  
+- Reviewed signs of worsening infection, including difficulty breathing, inability to swallow liquids, high fever > 101 °F, or new rash, and instructed to seek urgent care if these occur.  
+- Discussed proper hand hygiene, cough etiquette, and the importance of completing any prescribed antibiotic course if started.  
+
+The patient verbalized understanding of the plan and had no further questions.

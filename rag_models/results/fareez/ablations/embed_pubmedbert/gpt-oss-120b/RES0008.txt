@@ -1,0 +1,154 @@
+Model: openai/gpt-oss-120b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-04-14 03:50:40
+Time: 6.24s
+Tokens: 11,063 in / 2,327 out
+============================================================
+
+Patient Information
+Name: Abraham Schneider  
+Date of Birth: January 10, 1928 (Age 98)  
+Sex: Male  
+Medical Record Number: 475  
+Address: 658 Koepp Vista, Wayland, Massachusetts  
+
+Chief Complaint
+Cough with increased sputum production, shortness of breath, right‑sided chest pain, and fever for the past three days.
+
+History of Present Illness
+Mr. Schneider reports the acute onset of worsening cough, dyspnea, and pleuritic‑type chest pain three days ago (approximately Monday). The cough, which he has experienced intermittently for years and attributes to his long‑standing smoking habit, has changed in character. It is now more frequent—approximately two episodes per hour—and produces a copious amount of dark greenish‑yellow sputum. He notes that the pain is sharp, localized to the right anterior chest and upper abdominal area, and is aggravated by deep inspiration or a coughing spell. The pain is not present at rest and does not increase with routine activity or walking. He also reports feeling “hot” and measured a temperature of 38.6 °C (101.5 °F) at home, prompting his visit. He has taken acetaminophen (Tylenol) and ibuprofen (Advil) with modest relief of the pain but no effect on the cough or dyspnea. He denies any recent travel, known sick contacts, or identifiable environmental triggers. He volunteers several times a week at a homeless shelter, exposing him to many individuals. He has a 30‑year history of smoking approximately one pack per day. He denies alcohol or illicit drug use.
+
+Review of Systems
+Constitutional: Fever (38.6 °C); no weight loss reported.  
+Respiratory: Productive cough with green‑yellow sputum, dyspnea on exertion, no wheezing reported by patient.  
+Cardiovascular: Sharp right‑sided chest pain worsened by deep breaths; no palpitations, orthopnea, or peripheral edema.  
+Gastrointestinal: No nausea, vomiting, or abdominal pain aside from the chest‑side discomfort.  
+Genitourinary: No dysuria or frequency noted.  
+Neurologic: No headache, dizziness, or focal deficits.  
+Musculoskeletal: No joint pain.  
+Skin: No rash.  
+Allergic/Immunologic: Reports environmental allergies only; no known drug allergies.
+
+Allergies
+Environmental allergens (type unspecified). No medication allergies reported.
+
+Past Medical History
+- Type 2 diabetes mellitus (on insulin, metformin, and an SGLT‑2 inhibitor)  
+- Hypertension (on amlodipine)  
+- Chronic kidney disease, stage 4, secondary to diabetic nephropathy (currently on renal transplant follow‑up)  
+- Ischemic heart disease with prior coronary artery bypass grafting  
+- Heart failure (presumed chronic)  
+- History of bronchitis (smoker’s cough)  
+- Severe anxiety/panic disorder  
+- Prior episodes of recurrent urinary tract infection  
+
+Surgical History
+No surgical procedures reported in the current interview. Historical records list a renal transplant (date unspecified) and coronary artery bypass grafting.
+
+Social History
+- Tobacco: 30‑year history of smoking ~1 pack/day; currently continues.  
+- Alcohol: None.  
+- Illicit drugs: None.  
+- Living situation: Resides with his wife in Wayland, MA.  
+- Occupation: Retired; volunteers at a homeless shelter several times per week.  
+- Exercise: None reported.  
+- Sleep: Not discussed.
+
+Family History
+- Father: Myocardial infarction in his 70s.  
+- Mother: Hypertension.  
+- No known family history of respiratory disease or other significant illnesses reported.
+
+Current Medications (home regimen)
+- Metformin (dose not specified)  
+- SGLT‑2 inhibitor (specific agent not specified)  
+- Insulin (type and dose not specified)  
+- Amlodipine 2.5 mg daily  
+- Multivitamin daily  
+- Simvastatin 20 mg daily (from EMR)  
+- Metoprolol succinate 100 mg extended‑release daily (from EMR)  
+- Hydrochlorothiazide 25 mg daily (from EMR)  
+- Nitroglycerin spray PRN (from EMR)  
+- Albuterol inhalation solution 5 mg/mL as needed (from EMR)  
+- Acetaminophen 500 mg PRN for pain (from EMR)  
+
+Objective Data
+
+Vital Signs (most recent documented)
+- Heart Rate: 62 beats per minute  
+- Respiratory Rate: 16 breaths per minute  
+- Blood Pressure: Not available  
+- Temperature: Not recorded at the encounter; patient reported 38.6 °C at home.  
+- SpO₂: Not available  
+- Height: 167.7 cm  
+- Weight: Not available  
+- Body Mass Index: 29.1 kg/m² (overweight/obese)
+
+Physical Examination
+Admission Exam – Vitals: As above.  
+Systems: No detailed physical exam findings documented in the transcript. No auscultation findings, lung sounds, or cardiovascular exam recorded.
+
+Laboratory Data (most recent from EMR)
+- Hemoglobin/hematocrit: Hgb 13.5 g/dL, Hct 40.4 % (within normal limits)  
+- White blood cell differential: Neutrophils 2.79 ×10³/µL, Lymphocytes 22.8 %, Monocytes 1.13 ×10³/µL, Eosinophils 3.24 % (suggestive of mild neutrophilia relative to total count)  
+- Electrolytes: Sodium not listed, Potassium not listed, Bicarbonate 23.6 mmol/L, Calcium 8.66 mg/dL (low‑normal)  
+- Renal function: BUN 8.81 mg/dL, eGFR 9.5 mL/min (severe renal impairment)  
+- Liver enzymes: AST 20 U/L, ALP 55 U/L, Albumin 4.62 g/dL (normal)  
+- Inflammatory markers: Ferritin markedly elevated at 1547 µg/L (consistent with acute phase response)  
+- Coagulation: INR 4.70 (therapeutic anticoagulation, likely due to enoxaparin therapy)  
+- Arterial blood gas: CO₂ partial pressure 35.7 mm Hg (near normal)  
+
+Imaging
+No imaging studies documented in the current encounter. Prior EMR entries list a chest radiograph (CXR) associated with a pneumonia diagnosis dated December 2020, but no recent images are available.
+
+Assessment
+1. Community‑acquired pneumonia, likely bacterial given purulent green‑yellow sputum, fever, and elevated inflammatory markers.  
+2. Acute exacerbation of chronic bronchitis secondary to smoking.  
+3. Acute pleuritic chest pain likely secondary to pneumonia‑related inflammation.  
+4. Type 2 diabetes mellitus, chronic kidney disease stage 4 (eGFR 9.5 mL/min), and post‑renal transplant status – chronic comorbidities that increase infection risk.  
+5. Hypertension, ischemic heart disease, and heart failure – stable per history.  
+6. Tobacco use disorder.  
+
+Plan
+Medications
+- Begin empiric antibiotic therapy for community‑acquired pneumonia: oral amoxicillin‑clavulanate 875/125 mg twice daily for 7‑10 days (or alternative macrolide if beta‑lactam allergy emerges).  
+- Continue home diabetes regimen (insulin, metformin, SGLT‑2 inhibitor) with close glucose monitoring; adjust insulin dose if oral intake changes.  
+- Continue antihypertensive regimen (amlodipine, metoprolol, hydrochlorothiazide) and heart failure therapy as previously prescribed.  
+- Continue tacrolimus and other transplant immunosuppressants (not listed in current interview but present in EMR).  
+- Continue anticoagulation with enoxaparin as per prior orders; monitor INR and adjust if necessary.  
+- Provide short‑acting bronchodilator (albuterol inhaler) PRN for bronchospasm.  
+- Acetaminophen 500 mg PO q6h PRN for fever or pain; avoid NSAIDs given renal insufficiency.  
+
+Diagnostics
+- Obtain a chest radiograph today to confirm infiltrate pattern and assess for complications (e.g., effusion).  
+- Obtain sputum culture and Gram stain if production continues.  
+- CBC with differential and basic metabolic panel to monitor for leukocytosis and renal function trends.  
+- Pulse oximetry; if SpO₂ < 92 % on room air, initiate supplemental oxygen.  
+
+Supportive Care
+- Encourage adequate oral hydration.  
+- Advise rest and activity as tolerated; avoid heavy exertion until fever resolves.  
+- Counsel on smoking cessation; offer referral to tobacco cessation program and nicotine replacement therapy.  
+
+Disposition
+The patient will be managed as an outpatient with close follow‑up given stable vital signs and absence of severe hypoxemia documented at this encounter. He will be instructed to return to the emergency department if he experiences worsening dyspnea, chest pain, fever >38.9 °C, confusion, or any new symptoms.
+
+Follow‑up
+- Primary care physician within 48‑72 hours for review of culture results and medication adjustment.  
+- Pulmonology follow‑up in 1‑2 weeks.  
+- Nephrology follow‑up as per transplant clinic schedule, with particular attention to renal function and drug dosing.  
+
+Patient Education and Discharge Instructions
+- Complete the full course of prescribed antibiotics even if symptoms improve.  
+- Monitor temperature twice daily; seek care for temperatures >38.9 °C persisting >24 hours.  
+- Use acetaminophen for fever or pain; avoid ibuprofen or naproxen due to CKD.  
+- Perform deep‑breathing exercises and incentive spirometry if available to promote lung expansion.  
+- Keep a symptom diary (cough frequency, sputum color, shortness of breath).  
+- Maintain strict glucose monitoring; adjust insulin per home protocol.  
+- Stop smoking; contact the state tobacco quitline at 1‑800‑QUIT‑NOW.  
+- Return to the emergency department for any new or worsening chest pain, difficulty breathing, confusion, or signs of bleeding.
+
+Signature
+[Physician’s name], MD  
+Date: April 14, 2026

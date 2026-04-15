@@ -1,0 +1,70 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-04-14 03:15:42
+Time: 3.84s
+Tokens: 12,907 in / 1,280 out
+============================================================
+
+Patient Information  
+Name: Not provided (6‑year‑old male, son of the mother speaking)  
+Age: Approximately 6 years  
+Sex: Male  
+Date of Encounter: Current visit (date not specified)  
+Accompanied by: Mother  
+
+Chief Complaint  
+Acute onset of abdominal pain, vomiting, diarrhea, and fever over the past three days.
+
+History of Present Illness  
+The child was well until three days ago when he developed vague abdominal discomfort. Two days ago the abdominal pain was followed by vomiting, initially consisting of recently ingested food. Since then he has vomited a total of six times, with the most recent episodes consisting of yellow‑tinged material of uncertain composition. The vomiting has occurred at random intervals and is no longer clearly related to meals. Concurrently, he began experiencing watery diarrhea, with an estimated six to seven loose stools in the past 24 hours. Yesterday he developed a fever measured at 38.3 °C (101 °F) accompanied by chills; he required additional blankets and was noted to be unusually quiet and fatigued, spending most of the day sleeping. He has been irritable since the onset of symptoms but became markedly lethargic after the fever began. He denies any associated headache, ear or eye pain, nasal congestion, sore throat, cough, shortness of breath, wheezing, chest pain, urinary symptoms, rash, joint or muscle aches, or loss of taste or smell. He has had no recent travel, no known sick contacts, and no change in diet. No blood or bile was observed in vomitus or stool. The mother reports that the child’s growth and developmental milestones are appropriate for age and that he has no known chronic medical conditions or allergies. Immunizations are up to date.
+
+Past Medical History  
+No prior medical diagnoses reported for the child. No history of hospitalizations or surgeries. No current medications.
+
+Family History  
+No known family history of cardiac, pulmonary, gastrointestinal, or autoimmune disease. One sibling (10‑year‑old) is being evaluated for possible asthma; no confirmed diagnosis.
+
+Social History  
+The child lives with his mother, father, and two older siblings (ages 7 and 10). No exposure to tobacco smoke, pets, or illicit substances in the home. No recent travel. No known exposure to sick individuals aside from possible school exposure. No alcohol or drug use. No history of abuse or safety concerns reported.
+
+Review of Systems  
+- Constitutional: Fever (38.3 °C), chills, fatigue, irritability. No weight loss.  
+- Gastrointestinal: Abdominal pain (central, non‑localized), nausea, vomiting (6 episodes, yellowish material, no blood or bile), watery diarrhea (≈6–7 episodes/24 h, no blood). No constipation.  
+- Respiratory: No cough, dyspnea, wheezing, or sore throat.  
+- ENT: No ear pain, eye pain, redness, or nasal discharge.  
+- Dermatologic: No rash or skin changes.  
+- Genitourinary: No dysuria, frequency, or incontinence.  
+- Neurologic: No headache, dizziness, or focal deficits.  
+- Musculoskeletal: No myalgias or arthralgias.  
+
+Physical Examination  
+No physical examination findings documented in the transcript. Vital signs reported only include a fever of 38.3 °C measured at home. No objective assessment of hydration status, abdominal exam, or other systems is available.
+
+Assessment  
+1. Acute gastroenteritis – likely viral in etiology given the combination of vomiting, watery diarrhea, fever, and absence of blood or focal abdominal signs.  
+2. Possible dehydration secondary to fluid losses from vomiting and diarrhea.  
+3. Rule out COVID‑19 infection, as SARS‑CoV‑2 can present with prominent gastrointestinal symptoms in children.
+
+Plan  
+- Diagnostic Testing:  
+  • Obtain a nasopharyngeal swab for SARS‑CoV‑2 PCR.  
+  • Perform basic laboratory studies including complete blood count, serum electrolytes, BUN/creatinine, and a basic metabolic panel to assess for dehydration and electrolyte disturbances.  
+- Management of Dehydration:  
+  • Initiate oral rehydration therapy using an age‑appropriate oral rehydration solution (ORS) at frequent small volumes.  
+  • If oral intake remains inadequate or vomiting persists, consider intravenous fluid bolus (e.g., 20 mL/kg isotonic saline) and reassess.  
+- Symptomatic Treatment:  
+  • Administer acetaminophen for fever and discomfort as needed, dosing per weight‑based guidelines.  
+  • Antiemetic (e.g., ondansetron) may be prescribed if vomiting interferes with oral rehydration.  
+- Monitoring:  
+  • Instruct mother to monitor urine output, level of consciousness, and signs of worsening dehydration (dry mucous membranes, decreased tears, tachycardia).  
+  • Advise to return or call the clinic urgently if vomiting becomes continuous, blood appears in vomit or stool, fever persists >48 hours, or the child shows lethargy or decreased responsiveness.  
+- Disposition:  
+  • Provide education on home care and signs that warrant emergency evaluation.  
+  • Schedule follow‑up telephone call within 24 hours to review test results and clinical status.  
+
+Counseling and Education  
+The mother was reassured that most pediatric viral gastroenteritis cases are self‑limited and that prompt rehydration is the most important intervention. She was instructed on how to prepare and administer ORS, the appropriate dosing of acetaminophen, and the importance of infection control measures (hand hygiene, limiting close contact with other children while symptomatic). She was also educated about the potential for COVID‑19 to present with gastrointestinal symptoms and the need for testing.
+
+Disposition and Follow‑Up  
+The child will remain at home with supportive care pending test results. Mother will be contacted within one day for laboratory review and to assess clinical progress. If the child’s condition deteriorates, she was instructed to seek immediate medical attention.

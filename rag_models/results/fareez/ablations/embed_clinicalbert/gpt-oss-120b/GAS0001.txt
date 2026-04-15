@@ -1,0 +1,105 @@
+Model: openai/gpt-oss-120b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-04-14 03:49:27
+Time: 5.26s
+Tokens: 20,164 in / 1,691 out
+============================================================
+
+Patient Information  
+Name: Amado Baumbach  
+Date of Birth: 1942‑06‑09 (Age 83)  
+Sex: Not specified in the interview; the patient describes menstrual history suggesting female gender, while the electronic record lists male.  
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000  
+
+Chief Complaint  
+The patient presents with persistent nausea that began approximately nine days ago and has been accompanied by intermittent vomiting.
+
+History of Present Illness  
+The patient reports that the nausea started about nine days ago and has been present “almost all the time.” The sensation is worse in the mornings and is exacerbated by exposure to foul odors. She notes that she has vomited once or twice on most days since the onset. In addition to the gastrointestinal symptoms, the patient describes increased urinary frequency, stating that she needs to void roughly every one to two hours during the day; she does not awaken at night specifically to void but will go to the bathroom after waking for other reasons. She believes the increased fluid intake is a response to feeling “a little dehydrated” from the vomiting. She also mentions mild, cramp‑like abdominal discomfort that she initially thought might be related to her menstrual cycle. The last menstrual period occurred roughly six weeks ago; she characterizes her cycles as usually regular but does not track them precisely. She denies fever, chills, headache, myalgias, cough, chest pain, palpitations, dysuria, hematuria, or changes in bowel habits. She has not taken any prescription medications for these symptoms but has tried over‑the‑counter ginger supplements without relief. She reports no known drug allergies except a contact dermatitis to nickel.
+
+Review of Systems  
+Constitutional: Positive for nausea, vomiting, and mild abdominal cramping; negative for fever, chills, weight loss, or fatigue.  
+Gastrointestinal: Positive for nausea, vomiting, and occasional abdominal cramping; negative for dysphagia, heartburn, melena, hematochezia, or constipation.  
+Genitourinary: Positive for urinary frequency; negative for dysuria, urgency, nocturia, hematuria, or flank pain.  
+Respiratory: Negative for cough, dyspnea, or wheezing.  
+Cardiovascular: Negative for chest pain, palpitations, or edema.  
+Neurologic: Negative for headache, dizziness, or syncope.  
+Other: Negative for rash (other than nickel contact), vision changes, or recent travel.
+
+Past Medical History  
+- Essential hypertension (diagnosed 1973)  
+- Prediabetes (diagnosed 1973)  
+- Anemia (diagnosed 1973)  
+- Chronic kidney disease, stages 1‑3 secondary to diabetic nephropathy (diagnosed 1976)  
+- Chronic sinusitis (ongoing)  
+- Ischemic heart disease (diagnosed 2018)  
+- History of coronary artery bypass grafting (present)  
+
+Surgical History  
+No surgical procedures are documented in the record.
+
+Allergies  
+Nickel – causes contact dermatitis (skin rash). No known drug or food allergies.
+
+Social History  
+The patient lives with one roommate. She does not smoke. Alcohol use is rare; the last drink was approximately one month ago, and she avoids alcohol because it triggers headaches. She denies any illicit drug use. She is sexually active with a boyfriend and uses condoms consistently. She previously used hormonal birth control but discontinued it because it caused nausea. Employment status and exercise habits are not documented for the current encounter.
+
+Family History  
+Father has hypertension. No other significant familial medical conditions are reported.
+
+Current Medications  
+The patient reports no prescription or over‑the‑counter medications aside from occasional ginger supplements taken for nausea, which have not provided relief.
+
+Objective  
+Vital Signs: No vital sign measurements are documented for this encounter.  
+Physical Examination: No physical exam findings are recorded.
+
+Laboratory Data (most recent)  
+- White blood cell count: 3.78 ×10³/µL (low)  
+- Red blood cell count: 4.85 ×10⁶/µL (within normal limits)  
+- Hemoglobin: 12.28 g/dL (borderline low)  
+- Hematocrit: 43.4 % (normal)  
+- Mean corpuscular volume: 86.8 fL (normocytic)  
+- Platelet count: 105 ×10³/µL (low)  
+- Neutrophils: 26 % (low)  
+- Lymphocytes: 13.6 % (low)  
+- Monocytes: 10.4 % (elevated proportionally)  
+- Eosinophils: 3.5 % (within reference)  
+- Basophils: 3.7 % (within reference)  
+
+Imaging  
+No imaging studies are documented for this visit.
+
+Assessment  
+1. Acute nausea and vomiting of 9‑day duration, likely multifactorial. Differential considerations include:  
+   • Early pregnancy (given menstrual irregularity)  
+   • Diabetic gastroparesis or other diabetic gastrointestinal dysmotility  
+   • Medication/odor‑triggered functional nausea  
+   • Gastritis or peptic ulcer disease  
+2. Urinary frequency secondary to increased oral fluid intake and possible irritative voiding pattern; no evidence of infection or dysuria.  
+3. Chronic medical conditions: hypertension, prediabetes, chronic kidney disease stage 3, anemia, ischemic heart disease.  
+4. Low platelet count and mild leukopenia – may be related to chronic disease or a separate hematologic process; requires monitoring.  
+
+Plan  
+- Order a pregnancy test (urine β‑hCG) to evaluate for early gestation given the missed period.  
+- Obtain basic metabolic panel, liver function tests, and repeat CBC with differential to reassess leukopenia and thrombocytopenia.  
+- Urinalysis and urine culture to rule out occult infection contributing to urinary frequency.  
+- Consider abdominal ultrasound or upper gastrointestinal endoscopy if symptoms persist beyond 48–72 hours or if alarm features (weight loss, hematemesis) develop.  
+- Initiate symptomatic anti‑emetic therapy: ondansetron 4 mg PO every 8 hours as needed for nausea/vomiting.  
+- Encourage oral rehydration with electrolyte‑balanced solutions; advise small, frequent meals and avoidance of strong odors or foods that trigger nausea.  
+- Discuss trial of a proton pump inhibitor (e.g., omeprazole 20 mg daily) for possible gastritis/ulcer disease.  
+- Review diabetes management; ensure blood glucose monitoring is ongoing and that glycemic control is optimized to reduce gastroparesis risk.  
+- Monitor urine output and electrolytes closely given chronic kidney disease.  
+- Advise the patient to seek urgent care if she experiences: persistent vomiting preventing oral intake, inability to retain fluids, hematemesis, melena, severe abdominal pain, fever > 38 °C, or signs of dehydration (dry mucous membranes, dizziness).  
+- Follow‑up appointment in 3–5 days with primary care or gastroenterology, sooner if symptoms worsen.  
+- Continue chronic medications for hypertension, prediabetes, and heart disease as prescribed; no changes are indicated at this time.  
+
+Discharge Instructions  
+- Take ondansetron as prescribed for nausea; do not exceed recommended dose.  
+- Maintain adequate hydration; sip clear fluids regularly.  
+- Avoid strong or unpleasant odors, greasy and spicy foods.  
+- Use small, bland meals (e.g., toast, crackers, bananas).  
+- Keep a log of urine frequency and fluid intake; report any new dysuria or hematuria.  
+- Perform the home pregnancy test as instructed and report the result at the next visit.  
+- Return for follow‑up as scheduled or sooner for any worsening of symptoms.

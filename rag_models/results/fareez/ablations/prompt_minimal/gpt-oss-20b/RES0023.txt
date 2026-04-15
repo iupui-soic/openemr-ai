@@ -1,0 +1,149 @@
+Model: openai/gpt-oss-20b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-04-14 04:27:48
+Time: 3.26s
+Tokens: 13,299 in / 1,734 out
+============================================================
+
+**Patient Information**  
+Name: Aaron Feeney DOB: December 5, 1915 (108 years old) Sex: Male ID: 48  
+Address: 656 Murphy Stravenue, Walpole, MA 02081  
+Primary Care: External Provider (ED visit) Encounter: 3210 (September 8, 2024)  
+
+---
+
+### SOAP Note
+
+**S – Subjective**  
+
+**Chief Complaint**  
+“Cough that’s been bothering me.”
+
+**History of Present Illness**  
+Mr. Feeney reports a 5‑day history of a dry, persistent cough that has progressively worsened. The cough is constant throughout the day and has begun to interrupt his sleep. He describes associated throat soreness that has been present “since the cough started” and now also feels pain in the throat during coughing. He notes that he feels “pretty hot” and sweaty, with a night sweat that soaked his shirt last night. He reports a loss of smell that began this morning, but his sense of taste remains intact. No nasal congestion or purulent sputum. He denies nausea, vomiting, abdominal pain, chest pain beyond throat discomfort, or dyspnea. No recent travel or known exposure to sick individuals aside from normal grocery‑store contacts.  
+
+**Review of Systems**  
+- **Constitutional:** Positive – feverish feeling, night sweats, mild fatigue. Negative – no chills, no weight loss (reports weight gain of 5‑10 lb).  
+- **Respiratory:** Positive – dry cough, sore throat, throat pain with coughing. Negative – no dyspnea, wheezing, or chest tightness.  
+- **Cardiovascular:** Negative – no palpitations, edema, orthopnea.  
+- **Gastrointestinal:** Negative – no nausea, vomiting, diarrhea, or abdominal pain.  
+- **Genitourinary:** Negative – no dysuria.  
+- **Skin:** Negative – no rash.  
+- **Neurologic:** Negative – no headaches or dizziness.  
+
+**Allergies**  
+Environmental pollen. No drug allergies.  
+
+**Past Medical History**  
+- Essential hypertension (on ramipril)  
+- Type 2 diabetes mellitus (on metformin)  
+- Obesity (BMI ≈ 31.5)  
+- Hyperlipidemia  
+- Chronic kidney disease stage 1‑3 (creatinine 0.39 mg/dL)  
+- History of gallbladder removal (cholecystectomy)  
+- No prior episodes of acute bronchitis in the past year (last documented in 2022).  
+
+**Surgical History**  
+- Cholecystectomy (≈ 10 years ago)  
+
+**Medications**  
+- Ramipril 10 mg PO daily  
+- Metformin 500 mg PO BID  
+- Vitamin D (dose not specified)  
+
+**Social History**  
+- Lives with wife and two children; no smoking.  
+- Drinks 3–4 beers on weekends.  
+- Works as a grocery‑store employee (high customer contact).  
+- No illicit drug or alcohol abuse.  
+
+**Family History**  
+- Mother and brother have asthma.  
+- No known hereditary respiratory disease.  
+
+---
+
+**O – Objective**  
+
+**Vital Signs**  
+(Temperature, BP, HR, RR, SpO₂ not documented during ED visit; patient reports feeling febrile and sweaty.)
+
+**Physical Examination**  
+- **General:** Alert, appears 108 years old, mild distress from coughing.  
+- **HEENT:** Throat erythema; no tonsillar exudate or lymphadenopathy.  
+- **Respiratory:** Clear breath sounds bilaterally, no wheezes, rales, or rhonchi. No use of accessory muscles.  
+- **Cardiovascular:** Regular rhythm, no murmurs.  
+- **Abdominal:** Soft, non‑tender.  
+- **Skin:** Warm, no rashes; mild sweating noted.  
+- **Extremities:** No edema.  
+
+**Laboratory Data** (selected values)  
+- Sodium 143.9 mmol/L (↑)  
+- Chloride 103.8 mmol/L (↑)  
+- Potassium 4.74 mmol/L (normal)  
+- Creatinine 0.39 mg/dL (low)  
+- Glucose 70.6 mg/dL (low) – note 2nd reading 85.8 mg/dL later.  
+- AST 36.8 U/L (↑)  
+- ALP 79.5 U/L (normal)  
+- Proteinuria 280 mg/dL (significant) – urinary protein; may be incidental or reflect CKD.  
+- No leukocyte esterase or nitrites in urine.  
+
+**Imaging**  
+No imaging studies performed during this encounter.
+
+---
+
+**A – Assessment**  
+
+1. **Acute bronchitis** – most likely viral (upper respiratory infection) given dry cough, sore throat, feverish symptoms, recent loss of smell, and absence of bacterial indicators (no sputum, no lobar consolidation on exam).  
+2. **COVID‑19** – high‑pretest probability given current pandemic, loss of smell, and cough; must be ruled out.  
+3. **Chronic conditions** – hypertension, type 2 diabetes, CKD stage 1‑3, obesity – stable on current regimen.  
+4. **Possible viral upper respiratory infection** – supportive of acute bronchitis; differential includes influenza, RSV, and other respiratory viruses.  
+
+**Rationale**  
+The patient’s symptom timeline, lack of purulent sputum, normal lung exam, and recent onset of anosmia strongly suggest a viral etiology. The acute cough and throat pain are typical of acute bronchitis. The patient’s chronic comorbidities are relevant for risk stratification but do not alter the acute diagnosis.
+
+---
+
+**P – Plan**  
+
+1. **Testing**  
+   - Order SARS‑CoV‑2 PCR (nasopharyngeal swab) immediately.  
+   - Consider rapid influenza A/B antigen if available (given seasonality).  
+
+2. **Isolation**  
+   - Advise patient and household to self‑isolate for 14 days pending results.  
+   - Provide instructions on mask use, hand hygiene, and monitoring for worsening symptoms.  
+
+3. **Symptomatic Management**  
+   - OTC antitussive (e.g., dextromethorphan) and analgesic (acetaminophen) as needed.  
+   - Encourage adequate hydration and rest.  
+   - Use humidifier if possible.  
+
+4. **Monitoring**  
+   - If fever > 38.3 °C (100.9 °F) or if cough worsens, advise return to ED.  
+   - If respiratory distress, shortness of breath, or chest pain, seek immediate care.  
+
+5. **Medication Review**  
+   - Continue ramipril and metformin unchanged.  
+   - No new medications prescribed at this time.  
+
+6. **Follow‑up**  
+   - Phone follow‑up in 48 hours to assess symptom progression and COVID‑19 test results.  
+   - If symptomatic and test negative, consider outpatient evaluation if symptoms persist > 7 days.  
+
+7. **Education**  
+   - Educated patient on signs of complications (difficulty breathing, severe chest pain).  
+   - Reviewed proper isolation procedures and when to seek urgent care.  
+
+**Disposition**  
+Patient discharged home with instructions to self‑isolate, monitor temperature, and follow up as directed.  
+
+---  
+
+**Prepared by:**  
+[Name], MD  
+Emergency Department – Walpole, MA  
+Date: 08 Sep 2024  
+Signature: ____________________
