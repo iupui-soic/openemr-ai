@@ -1,0 +1,25 @@
+# Data files (licensed: MDACE Profee via PhysioNet, UMLS, AMA CPT, SNOMED)
+dataset/
+
+# Benchmark outputs
+reports/
+logs/
+
+# Python cruft
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Environment / credentials
+.env
+.env.local
+
+# HuggingFace / model caches (tens of GB)
+.hf_cache/
+.cache/
+
+# MedCAT unzipped model packs (can be >1 GB when expanded)
+**/.temp/

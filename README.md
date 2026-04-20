@@ -200,7 +200,7 @@ Canonical numeric outputs and a reproducibility notebook:
 - [`rag_models/results/institutional/table2b_norag_6case.csv`](rag_models/results/institutional/table2b_norag_6case.csv) — no-RAG baseline.
 - [`rag_models/results/institutional/ablation_analysis.ipynb`](rag_models/results/institutional/ablation_analysis.ipynb) — loads both CSVs, reports deltas, and verifies every quantitative claim made in the paper's ablation paragraphs.
 
-Findings: disabling retrieval degrades every metric for every model (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060). k=3 and k=5 substantially degraded quality vs. k=2. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
+Findings: disabling retrieval degrades the entity- and structure-sensitive metrics across all seven LLMs (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060); BLEU and SBERT show the same directional pattern but several cells (e.g., GPT-OSS-120B BLEU 0.071→0.069) are within three-run variance. k=3 and k=5 degraded quality vs. k=2 on the gold-referenced n=6 cases; on the Fareez transcript-reference ablation (Table 2c) the same sweep fell within run-to-run variance. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
 
 ### RAG Ablation Replication on Fareez n=40 (Table 2c)
 
@@ -294,6 +294,14 @@ Rows sorted by mean rank across datasets. Bold = best in that column.
 - All models show higher WER on full conversations vs short utterances, as expected.
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
+
+## Automated CPT Coding
+
+Multi-label CPT procedure code classification on MDACE Profee (312 MIMIC-III notes, 61 CPT codes). Compares LLMs (Claude Sonnet 4.6, Gemma 4 26B-A4B, gpt-oss-120b, Qwen 3.6 35B-A3B) against non-LLM retrieval baselines (BGE `embed_match` + LOINC/RadLex enrichment + NegEx + auto-discovered sibling rules) and traditional NLP (regex, scispaCy+SapBERT, MedCAT v2).
+
+Headline: Gemma 4 26B F1=0.793 (local, 1.2 s/note); best non-LLM F1=0.524 (BGE + LOINC + RadLex + rules, 0.19 s/note on CPU).
+
+**Methodology, full leaderboard, ablations, and scaling (61→200 codes) analysis: [`automated_coding/RESULTS.md`](automated_coding/RESULTS.md).** Reproducibility + data sources: [`automated_coding/README.md`](automated_coding/README.md).
 
 ## Running Experiments
 
@@ -494,6 +502,13 @@ rag_models/
 
 scripts/
 └── generate_tables.py      # Generate publication tables from all results
+
+automated_coding/
+├── approaches/                      # regex, medcat, embed_match, entity_match, rerank_match, llm, ...
+├── scripts/                         # UMLS / LOINC / RadLex synonym fetchers
+├── run.py                           # CLI orchestrator
+├── README.md                        # Setup, data sources, reproducibility
+└── RESULTS.md                       # Full leaderboard + ablations + scaling analysis
 ```
 
 ## License
