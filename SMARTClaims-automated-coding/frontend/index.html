@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTClaims · Automated CPT Coding</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="app-header">
+    <div class="app-header-left">
+        <div class="app-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 3H15L20 8V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20V5C4 3.9 4.9 3 6 3H9Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14 3V9H20" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 14L11 17L16 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="app-title-block">
+            <h1>SMARTClaims</h1>
+            <div class="tagline">Automated CPT coding · Built for clinical AI</div>
+            <div class="tag-row">
+                <span class="tag">SMART on FHIR</span>
+                <span class="tag">Gemma 4 26B-A4B</span>
+                <span class="tag">BYOK</span>
+                <span class="tag">Modal GPU</span>
+            </div>
+        </div>
+    </div>
+    <div class="ai-badge">AI Assisted</div>
+</div>
+
+<div class="container">
+
+    <div id="patient-strip" class="patient-strip" style="display:none">
+        <div class="patient-avatar" id="patient-avatar">?</div>
+        <div style="flex:1;min-width:0">
+            <div class="patient-name" id="patient-name">—</div>
+            <div class="patient-meta">
+                <span><strong>Gender:</strong> <span id="patient-gender">—</span></span>
+                <span><strong>DOB:</strong> <span id="patient-dob">—</span></span>
+                <span><strong>Patient ID:</strong> <span id="patient-id">—</span></span>
+                <span><strong>Notes:</strong> <span id="note-count">0</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="notes-container">
+        <div class="report-card wrap" data-doc-id="placeholder">
+            <div class="report-header">
+                <div>
+                    <div class="report-title">Clinical Note</div>
+                    <div class="report-subtitle">Awaiting note selection</div>
+                </div>
+                <button class="analyze-btn" id="btn-analyze" disabled>
+                    Predict CPT Codes →
+                </button>
+            </div>
+
+            <div class="model-bar">
+                <span><strong data-inference-ms>—</strong> ms</span>
+                <span><strong>Gemma 4 26B-A4B-it</strong> · BYOK Modal</span>
+                <span>Benchmark F1 <strong>0.79</strong> on MDACE Profee</span>
+                <span class="status-pill" data-status-pill>Awaiting Analysis</span>
+            </div>
+
+            <div class="status-area"></div>
+
+            <div class="tab-panel" data-tab="predicted">
+                <h3>Predicted CPT Codes</h3>
+                <div class="codes-row" data-codes-row="predicted">
+                    <span class="code-chip ghost">— — —</span>
+                    <span class="code-chip ghost">— — —</span>
+                    <span class="code-chip ghost">— — —</span>
+                </div>
+                <div class="raw-line" style="margin-top:14px">
+                    Raw model output:
+                    <code class="raw-output empty" data-raw-output>awaiting analysis</code>
+                </div>
+            </div>
+
+            <div class="tab-panel" data-tab="metrics">
+                <h3>Performance Metrics</h3>
+                <div class="metric-grid">
+                    <div class="metric-card green"><div class="metric-value empty" data-metric="precision">—</div><div class="metric-label">Precision</div></div>
+                    <div class="metric-card blue"><div class="metric-value empty" data-metric="recall">—</div><div class="metric-label">Recall</div></div>
+                    <div class="metric-card purple"><div class="metric-value empty" data-metric="f1">—</div><div class="metric-label">F1 Score</div></div>
+                    <div class="metric-card orange"><div class="metric-value empty" data-metric="correct">—</div><div class="metric-label">Correct</div></div>
+                </div>
+            </div>
+
+            <div class="tab-panel" data-tab="source">
+                <h3>Source Clinical Note</h3>
+                <div class="report-content empty" data-report-content>Select a clinical note to load its full text and run CPT coding.</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:history.back()" class="back-link">← Back to OpenEMR</a>
+</div>
+
+<script>
+    window.SMART_CONFIG = {
+        clientId: 'smartclaims-automated-coding',
+        scope: 'launch patient/Patient.read patient/Encounter.read patient/DocumentReference.read patient/Condition.read patient/Procedure.read patient/Observation.read patient/Binary.read openid fhirUser api:oemr user/document.read user/document.write user/custom.read user/custom.write',
+        codingServiceUrl: window.location.origin + '/api/coding'
+    };
+</script>
+<script src="js/fhirclient.min.js"></script>
+</body>
+</html>
