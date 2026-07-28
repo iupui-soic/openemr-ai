@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Optional, List
 import chromadb
 import requests
+import modal
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -34,6 +35,17 @@ MODAL_CODE_URL = os.getenv("MODAL_CODE_URL", "https://chaitrasree-20--gemma4-cpt
 BASE_DIR = Path(__file__).parent
 CPT_JSON = BASE_DIR / "cpt_codes_final.json"
 ICD10_JSON = BASE_DIR / "icd10_codes_final.json"
+
+# OpenEMR DB config (read-only UUID resolution + direct billing-table insert)
+DB_HOST = os.getenv("OPENEMR_DB_HOST", "localhost")
+DB_PORT = int(os.getenv("OPENEMR_DB_PORT", "3306"))
+DB_USER = os.getenv("OPENEMR_DB_USER", "openemr")
+DB_PASS = os.getenv("OPENEMR_DB_PASS", "openemr")
+DB_NAME = os.getenv("OPENEMR_DB_NAME", "openemr")
+
+CODE_TYPE_CPT4 = "CPT4"
+CODE_TYPE_ICD10 = "ICD10"
+
 
 def load_codes(path):
     with open(path) as f:
@@ -145,6 +157,114 @@ def select_via_groq(note, candidates, system=''):
     except Exception as e:
         print(f'Groq error: {e}')
         return []
+
+def _get_db_connection():
+    import pymysql
+    return pymysql.connect(
+        host=DB_HOST, port=DB_PORT, user=DB_USER, password=DB_PASS,
+        database=DB_NAME, charset="utf8mb4", cursorclass=pymysql.cursors.DictCursor
+    )
+
+
+def _resolve_pid_from_uuid(patient_uuid):
+    conn = _get_db_connection()
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute(
+                "SELECT pid, fname, lname FROM patient_data WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
+                (patient_uuid,)
+            )
+            row = cursor.fetchone()
+            if not row:
+                raise ValueError(f"Patient UUID not found: {patient_uuid}")
+            logger.info(f"   Resolved patient: {row.get('fname','')} {row.get('lname','')} (pid={row['pid']})")
+            return row["pid"]
+    finally:
+        conn.close()
+
+
+def _resolve_encounter_from_uuid(encounter_uuid):
+    conn = _get_db_connection()
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute(
+                "SELECT encounter, pid, provider_id, facility_id, date FROM form_encounter "
+                "WHERE uuid = UNHEX(REPLACE(%s, '-', '')) LIMIT 1",
+                (encounter_uuid,)
+            )
+            row = cursor.fetchone()
+            if not row:
+                raise ValueError(f"Encounter UUID not found: {encounter_uuid}")
+            logger.info(f"   Resolved encounter: {row['encounter']} (pid={row['pid']}, date={row['date']})")
+            return row
+    finally:
+        conn.close()
+
+
+def save_codes_to_openemr(patient_uuid, encounter_uuid, cpt_codes, icd10_codes, cpt_descriptions, icd10_descriptions):
+    """
+    Insert AI-suggested CPT4/ICD10 codes into OpenEMR's billing table (Fee Sheet)
+    for the given encounter. Rows are inserted with authorized=0 (pending) --
+    a human still reviews and approves them on the Fee Sheet before they're billable.
+    """
+    from datetime import datetime
+    logger.info(f"Saving {len(cpt_codes)} CPT + {len(icd10_codes)} ICD-10 codes to Fee Sheet")
+
+    try:
+        pid = _resolve_pid_from_uuid(patient_uuid)
+        enc_row = _resolve_encounter_from_uuid(encounter_uuid)
+        encounter = enc_row["encounter"]
+        provider_id = enc_row.get("provider_id") or 0
+
+        if enc_row["pid"] != pid:
+            raise ValueError(
+                f"Encounter {encounter} does not belong to patient {pid} (belongs to pid {enc_row['pid']})"
+            )
+
+        rows_to_insert = []
+        for code in icd10_codes:
+            rows_to_insert.append({"code_type": CODE_TYPE_ICD10, "code": code,
+                                    "code_text": icd10_descriptions.get(code, "")})
+        for code in cpt_codes:
+            rows_to_insert.append({"code_type": CODE_TYPE_CPT4, "code": code,
+                                    "code_text": cpt_descriptions.get(code, "")})
+
+        if not rows_to_insert:
+            return {"success": True, "message": "No codes to save", "inserted": 0, "billing_ids": []}
+
+        conn = _get_db_connection()
+        inserted_ids = []
+        try:
+            with conn.cursor() as cursor:
+                now = datetime.now()
+                for row in rows_to_insert:
+                    cursor.execute(
+                        """
+                        INSERT INTO billing
+                            (date, code_type, code, pid, provider_id, encounter,
+                             code_text, billed, authorized, activity, units, notecodes)
+                        VALUES
+                            (%s, %s, %s, %s, %s, %s, %s, 0, 0, 1, 1, 'AI-SUGGESTED')
+                        """,
+                        (now, row["code_type"], row["code"], pid, provider_id, encounter, row["code_text"])
+                    )
+                    inserted_ids.append(cursor.lastrowid)
+            conn.commit()
+        finally:
+            conn.close()
+
+        logger.info(f"Inserted {len(inserted_ids)} billing rows (pending): {inserted_ids}")
+        return {"success": True, "message": f"Saved {len(inserted_ids)} code(s) as pending review",
+                "inserted": len(inserted_ids), "billing_ids": inserted_ids}
+
+    except ValueError as e:
+        logger.error(f"UUID/encounter resolution failed: {e}")
+        return {"success": False, "error": str(e)}
+    except Exception as e:
+        logger.error(f"Error saving codes to Fee Sheet: {e}")
+        return {"success": False, "error": f"Failed to save codes: {str(e)}"}
+
+
 app = FastAPI(title="CPT and ICD-10 Coding Service", version="3.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -161,6 +281,130 @@ class CodingResponse(BaseModel):
     icd10_descriptions: dict = {}
     time_seconds: Optional[float] = None
     error: Optional[str] = None
+
+class SaveCodesRequest(BaseModel):
+    patient_uuid: str
+    encounter_uuid: str
+    cpt_codes: List[str] = []
+    icd10_codes: List[str] = []
+    cpt_descriptions: dict = {}
+    icd10_descriptions: dict = {}
+
+
+class SaveCodesResponse(BaseModel):
+    success: bool
+    message: Optional[str] = None
+    inserted: int = 0
+    billing_ids: List[int] = []
+    error: Optional[str] = None
+
+
+
+# ============================================================================
+# Gemma-4 / Modal pipeline (extract -> retrieve -> match against
+# medical-codes-vectordb). Separate from the BGE+Groq /code path above.
+# ============================================================================
+
+MODAL_APP_NAME = "automated-cpt-icd-coding"
+MODAL_CLASS_NAME = "Gemma4Coder"
+
+
+class GemmaCodeRequest(BaseModel):
+    note: str
+    patient_uuid: str
+    encounter_uuid: str
+
+
+class GemmaCodeResponse(BaseModel):
+    success: bool
+    entities: Optional[dict] = None
+    cpt_codes: List[str] = []
+    icd10_codes: List[str] = []
+    cpt_descriptions: dict = {}
+    icd10_descriptions: dict = {}
+    inserted: int = 0
+    billing_ids: List[int] = []
+    time_seconds: Optional[float] = None
+    error: Optional[str] = None
+
+
+
+
+
+
+@app.post("/warmup-gemma")
+async def warmup_gemma():
+    """
+    Ping the Modal Gemma-4 coding container to force it to boot and load the
+    model now, ahead of time -- same pattern as transcription-service's
+    /warmup. Call this at the same trigger point as the transcription
+    warmup (recording start), so the container is warm by the time SOAP
+    note save auto-triggers coding.
+    """
+    try:
+        Gemma4Coder = modal.Cls.from_name(MODAL_APP_NAME, MODAL_CLASS_NAME)
+        coder = Gemma4Coder()
+        result = coder.wakeup.remote()
+        return {"status": "warm", "result": result}
+    except Exception as e:
+        logger.error(f"Gemma-4 warmup failed: {e}")
+        return {"status": "failed", "error": str(e)}
+
+
+@app.post("/code-gemma", response_model=GemmaCodeResponse)
+async def code_note_gemma(request: GemmaCodeRequest):
+    """
+    Run the note through the Modal-hosted Gemma-4 two-stage pipeline
+    (extract entities -> retrieve candidates -> match codes), then save
+    the resulting codes directly to the Fee Sheet (authorized=0, pending).
+    """
+    if not request.note.strip():
+        raise HTTPException(status_code=400, detail="note is required")
+
+    start = time.time()
+    try:
+        Gemma4Coder = modal.Cls.from_name(MODAL_APP_NAME, MODAL_CLASS_NAME)
+        coder = Gemma4Coder()
+        result = coder.generate_codes.remote(note_text=request.note)
+    except Exception as e:
+        logger.error(f"Modal Gemma-4 coding call failed: {e}")
+        return GemmaCodeResponse(success=False, error=f"Modal call failed: {e}")
+
+    matches = result.get("matches", [])
+    cpt_codes, icd10_codes = [], []
+    cpt_descriptions, icd10_descriptions = {}, {}
+    for m in matches:
+        code = m.get("code")
+        desc = m.get("description", "")
+        if m.get("code_type", "").upper() in ("CPT4", "CPT"):
+            cpt_codes.append(code)
+            cpt_descriptions[code] = desc
+        else:
+            icd10_codes.append(code)
+            icd10_descriptions[code] = desc
+
+    saved = save_codes_to_openemr(
+        patient_uuid=request.patient_uuid,
+        encounter_uuid=request.encounter_uuid,
+        cpt_codes=cpt_codes,
+        icd10_codes=icd10_codes,
+        cpt_descriptions=cpt_descriptions,
+        icd10_descriptions=icd10_descriptions,
+    )
+
+    return GemmaCodeResponse(
+        success=saved.get("success", False),
+        entities=result.get("entities"),
+        cpt_codes=cpt_codes,
+        icd10_codes=icd10_codes,
+        cpt_descriptions=cpt_descriptions,
+        icd10_descriptions=icd10_descriptions,
+        inserted=saved.get("inserted", 0),
+        billing_ids=saved.get("billing_ids", []),
+        time_seconds=time.time() - start,
+        error=saved.get("error"),
+    )
+
 
 embed_model = None
 cpt_col = None
@@ -197,6 +441,28 @@ async def code_note(request: CodingRequest):
     except Exception as e:
         logger.error(f"Error: {e}")
         return CodingResponse(success=False, error=str(e))
+
+
+@app.post("/save-codes", response_model=SaveCodesResponse)
+async def save_codes(request: SaveCodesRequest):
+    """
+    Save previously-generated CPT/ICD-10 codes to the patient's Fee Sheet
+    for the given encounter. Call this after /code has returned codes the
+    user wants to accept. Codes are saved as pending (authorized=0).
+    """
+    if not request.cpt_codes and not request.icd10_codes:
+        raise HTTPException(status_code=400, detail="No codes provided to save")
+
+    result = save_codes_to_openemr(
+        patient_uuid=request.patient_uuid,
+        encounter_uuid=request.encounter_uuid,
+        cpt_codes=request.cpt_codes,
+        icd10_codes=request.icd10_codes,
+        cpt_descriptions=request.cpt_descriptions,
+        icd10_descriptions=request.icd10_descriptions,
+    )
+    return SaveCodesResponse(**result)
+
 
 @app.get("/health")
 async def health():
