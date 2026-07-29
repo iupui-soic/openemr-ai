@@ -92,6 +92,10 @@ def _build_predictor(
         from .approaches.rerank_match import RerankMatchPredictor
 
         return RerankMatchPredictor()
+    if approach == "gemma_pipeline":
+        from .approaches.gemma_pipeline import GemmaPipelinePredictor
+
+        return GemmaPipelinePredictor()
     if approach == "llm":
         from .approaches.llm import LLMPredictor
 
@@ -286,6 +290,7 @@ def main(argv: list[str] | None = None) -> int:
             "hybrid_match",
             "rerank_match",
             "llm",
+            "gemma_pipeline",
         ],
     )
     parser.add_argument(

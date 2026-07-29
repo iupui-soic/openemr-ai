@@ -1,0 +1,112 @@
+[
+  {
+    "case_id": "v1",
+    "note": "Patient presents with sore throat. Rapid strep test performed and positive. Started on amoxicillin.",
+    "code": "87880",
+    "description": "Strep A assay with optical (e.g., laser) immunoassay",
+    "expected_supported": true,
+    "expected_evidence": "Rapid strep test performed and positive",
+    "actual_supported": true,
+    "passed": true,
+    "model_reason": ""
+  },
+  {
+    "case_id": "v2",
+    "note": "3cm laceration of the left forearm repaired with simple sutures.",
+    "code": "12001",
+    "description": "Repair superficial wound(s)",
+    "expected_supported": true,
+    "expected_evidence": "laceration of the left forearm repaired with simple sutures",
+    "actual_supported": true,
+    "passed": true,
+    "model_reason": ""
+  },
+  {
+    "case_id": "v3",
+    "note": "Patient's blood pressure is 148/92 mmHg. Patient has known essential hypertension, started on low-dose lisinopril today.",
+    "code": "I10",
+    "description": "Essential (primary) hypertension",
+    "expected_supported": true,
+    "expected_evidence": "known essential hypertension",
+    "actual_supported": true,
+    "passed": true,
+    "model_reason": ""
+  },
+  {
+    "case_id": "v4",
+    "note": "Patient received seasonal quadrivalent, preservative-free influenza vaccination today.",
+    "code": "90686",
+    "description": "Flu vaccine, quadrivalent, preservative free",
+    "expected_supported": true,
+    "expected_evidence": "received seasonal quadrivalent, preservative-free influenza vaccination",
+    "actual_supported": true,
+    "passed": true,
+    "model_reason": ""
+  },
+  {
+    "case_id": "v5",
+    "note": "Patient with a long history of hypertension comes in today for a blood pressure check as part of lisinopril refill management. Continue current ACE inhibitor therapy.",
+    "code": "4009F",
+    "description": "Ace inhibitor therapy, rx",
+    "expected_supported": true,
+    "expected_evidence": "Continue current ACE inhibitor therapy",
+    "actual_supported": true,
+    "passed": true,
+    "model_reason": ""
+  },
+  {
+    "case_id": "v6",
+    "note": "Patient presents with headache. Primary diagnosis: Headache of unspecified etiology. Plan: Initiate atenolol 25 mg orally once daily.",
+    "code": "S63509",
+    "description": "Unspecified sprain of unspecified wrist",
+    "expected_supported": false,
+    "expected_evidence": "",
+    "actual_supported": false,
+    "passed": true,
+    "model_reason": "The note describes a headache, which has no clinical relationship to a wrist sprain."
+  },
+  {
+    "case_id": "v7",
+    "note": "Patient with sore throat and elevated blood pressure. Started on amoxicillin for strep throat and lisinopril for hypertension.",
+    "code": "T465X5A",
+    "description": "Adverse effect of other antihypertensive drugs, initial encounter",
+    "expected_supported": false,
+    "expected_evidence": "",
+    "actual_supported": false,
+    "passed": true,
+    "model_reason": "The note describes the initiation of lisinopril for hypertension, not an adverse effect caused by the medication."
+  },
+  {
+    "case_id": "v8",
+    "note": "Patient's past medical history is significant for type 2 diabetes, hyperlipidemia, COPD, and hypothyroidism, all stable and managed with existing medications. Today's visit is solely for a 3cm laceration of the left forearm, repaired with simple sutures.",
+    "code": "E11618",
+    "description": "Type 2 diabetes mellitus with other diabetic arthropathy",
+    "expected_supported": false,
+    "expected_evidence": "",
+    "actual_supported": false,
+    "passed": true,
+    "model_reason": "The note lists type 2 diabetes as stable past medical history, but does not mention diabetic arthropathy, nor does it indicate the diabetes was addressed during today's visit."
+  },
+  {
+    "case_id": "v9",
+    "note": "Established patient office visit for routine follow-up of hypertension, straightforward complexity. No new complaints. Continue current medications.",
+    "code": "99217",
+    "description": "Observation care discharge",
+    "expected_supported": false,
+    "expected_evidence": "",
+    "actual_supported": false,
+    "passed": true,
+    "model_reason": "note describes an established patient office visit, not an observation care discharge"
+  },
+  {
+    "case_id": "v10",
+    "note": "Patient with chest pain. 12-lead EKG performed, normal sinus rhythm. Chest x-ray, two views, obtained -- no acute infiltrate.",
+    "code": "99263",
+    "description": "Follow-up inpatient consult",
+    "expected_supported": false,
+    "expected_evidence": "",
+    "actual_supported": false,
+    "passed": true,
+    "model_reason": "The note describes diagnostic procedures (EKG, X-ray) for an acute presentation, but contains no evidence of an inpatient status or a follow-up consultation encounter."
+  }
+]
