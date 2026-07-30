@@ -11,10 +11,3 @@ openemr_whisper_wer/data/fareez_osce/
 # Manuscript (not tracked in git)
 manuscript/
 .ipynb_checkpoints/
-
-# Virtual environments (no-dot variant used under smart-ambient-listening/)
-venv/
-**/venv/
-
-# ChromaDB local vector data
-smart-ambient-listening/chromadb/
