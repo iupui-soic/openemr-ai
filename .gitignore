@@ -15,3 +15,5 @@ venv/
 **/venv/
 __pycache__/
 *.pyc
+smart-ambient-listening/chromadb/chroma_data/
+reports/
