@@ -1,0 +1,102 @@
+name: Automated CPT/ICD Coding Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_note_file:
+        description: 'Path to a sample note file for a smoke test (optional)'
+        type: string
+        default: ''
+  push:
+    paths:
+      - 'automated_cpt_and_icd_coding/models/gemma4_26b_modal.py'
+      - 'automated_cpt_and_icd_coding/pipeline/**'
+      - 'automated_coding/**'
+      - '.github/workflows/automated-coding.yml'
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  deploy-gemma:
+    name: Deploy Gemma4 to Modal
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Modal
+        run: pip install modal
+
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          modal token set --token-id $MODAL_TOKEN_ID --token-secret $MODAL_TOKEN_SECRET
+
+      - name: Create HF_TOKEN secret in Modal
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          modal secret create hf-token HF_TOKEN="$HF_TOKEN" 2>/dev/null || \
+          modal secret create hf-token HF_TOKEN="$HF_TOKEN" --force
+
+      - name: Deploy Gemma4
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          echo "Deploying gemma4_26b_modal.py..."
+          modal deploy automated_cpt_and_icd_coding/models/gemma4_26b_modal.py
+          echo "Gemma4 deployed"
+
+      - name: Run smoke test (if a sample note was provided)
+        if: github.event.inputs.test_note_file != ''
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          echo "Running smoke test against: ${{ github.event.inputs.test_note_file }}"
+          modal run automated_cpt_and_icd_coding/models/gemma4_26b_modal.py --note-file "${{ github.event.inputs.test_note_file }}"
+
+  benchmark-claude-groq:
+    name: Benchmark Claude and Groq
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: pip install anthropic groq
+
+      - name: Run Claude benchmark
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m automated_coding.run --approach llm \
+            --backend anthropic --model-id claude-sonnet-4-6
+
+      - name: Run Groq benchmark
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -m automated_coding.run --approach llm \
+            --backend groq --model-id llama-3.3-70b-versatile
+
+      - name: Summary
+        run: |
+          echo "## Automated Coding Benchmark" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Ran Claude Sonnet and Groq/Llama benchmarks via automated_coding.run." >> $GITHUB_STEP_SUMMARY
+          echo "Gemma4 deployed to Modal in the separate job. Qwen not yet in CI -- never successfully deployed, needs a real HF_TOKEN value tested manually first." >> $GITHUB_STEP_SUMMARY

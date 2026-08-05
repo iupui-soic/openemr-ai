@@ -39,6 +39,16 @@ image = (
     .add_local_dir(
         os.path.join(os.path.dirname(__file__), "..", ".."),
         remote_path="/root/project",
+        ignore=modal.FilePatternMatcher(
+            "**/.env",
+            "**/.git/**",
+            "**/venv/**",
+            "**/__pycache__/**",
+            "**/*.pyc",
+            "**/chroma_data/**",
+            "**/.idea/**",
+            "**/*.parquet",
+        ),
     )
 )
 
@@ -75,13 +85,29 @@ class Qwen3Coder(BaseCoder, ValidatorMixin):
         before hitting max_new_tokens. If the generated token count is at or
         near the cap, that's a signal generation was cut off mid-response
         rather than finishing naturally.
+
+        Qwen3 models default to a "thinking" mode that emits hidden <think>
+        reasoning tokens before the actual answer, which was eating the
+        entire max_tokens budget before reaching the JSON output. Building
+        the prompt text explicitly with enable_thinking=False disables this.
         """
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
-        output = self.pipe(messages, max_new_tokens=max_tokens, do_sample=False)
-        text = output[0]["generated_text"][-1]["content"]
+        prompt_text = self.pipe.tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+        output = self.pipe(
+            prompt_text,
+            max_new_tokens=max_tokens,
+            do_sample=False,
+            return_full_text=False,
+        )
+        text = output[0]["generated_text"]
         generated_token_count = len(self.pipe.tokenizer.encode(text, add_special_tokens=False))
         was_truncated = generated_token_count >= max_tokens
         return text, was_truncated

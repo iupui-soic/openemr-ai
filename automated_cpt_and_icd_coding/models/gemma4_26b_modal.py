@@ -39,6 +39,16 @@ image = (
     .add_local_dir(
         os.path.join(os.path.dirname(__file__), "..", ".."),
         remote_path="/root/project",
+        ignore=modal.FilePatternMatcher(
+            "**/.env",
+            "**/.git/**",
+            "**/venv/**",
+            "**/__pycache__/**",
+            "**/*.pyc",
+            "**/chroma_data/**",
+            "**/.idea/**",
+            "**/*.parquet",
+        ),
     )
 )
 
