@@ -6,7 +6,7 @@ from automated_cpt_and_icd_coding.pipeline.coder_base import BaseCoder
 MODEL_NAME = "llama-3.3-70b-versatile"
 
 
-class GroqLlamaModal(BaseCoder):
+class GroqLlama(BaseCoder):
     MODEL_NAME = MODEL_NAME
 
     def __init__(self):

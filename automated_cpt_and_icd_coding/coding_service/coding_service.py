@@ -59,7 +59,7 @@ ICD10_JSON = BASE_DIR / "icd10_codes_final.json"
 
 
 app = FastAPI(title="CPT and ICD-10 Coding Service", version="4.0.0")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["https://chaitra.b691.us"], allow_methods=["*"], allow_headers=["*"])
 
 
 class CodingRequest(BaseModel):

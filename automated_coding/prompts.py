@@ -101,9 +101,6 @@ VALIDATION_TEMPLATE = (
     "Return the JSON now:"
 )
 
-_JSON_OBJECT_RE = re.compile(r"\{.*\}", re.DOTALL)
-
-
 def build_extraction_messages(note_text: str) -> tuple[str, str]:
     return EXTRACTION_SYSTEM, EXTRACTION_TEMPLATE.format(note_text=note_text)
 
@@ -131,13 +128,35 @@ def build_validation_messages(
 
 
 def extract_json(raw: str) -> dict:
-    """Best-effort JSON extraction: try a brace-matched span first, then the whole string."""
-    match = _JSON_OBJECT_RE.search(raw)
-    if match:
-        try:
-            return json.loads(match.group(0))
-        except json.JSONDecodeError:
-            pass
+    """Best-effort JSON extraction: find the first balanced {...} span (tracking
+    quoted strings so braces inside string values don't throw off the count),
+    then fall back to parsing the whole string."""
+    start = raw.find("{")
+    if start != -1:
+        depth = 0
+        in_string = False
+        escape = False
+        for i in range(start, len(raw)):
+            ch = raw[i]
+            if in_string:
+                if escape:
+                    escape = False
+                elif ch == "\\":
+                    escape = True
+                elif ch == '"':
+                    in_string = False
+            else:
+                if ch == '"':
+                    in_string = True
+                elif ch == "{":
+                    depth += 1
+                elif ch == "}":
+                    depth -= 1
+                    if depth == 0:
+                        try:
+                            return json.loads(raw[start:i + 1])
+                        except json.JSONDecodeError:
+                            break
     try:
         return json.loads(raw)
     except json.JSONDecodeError:

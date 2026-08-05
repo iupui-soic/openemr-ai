@@ -18,6 +18,14 @@ from automated_cpt_and_icd_coding.pipeline.validator import ValidatorMixin
 
 app = modal.App("automated-cpt-icd-coding")
 
+_hf_token = os.environ.get("HF_TOKEN", "")
+if not _hf_token:
+    raise RuntimeError(
+        "HF_TOKEN is not set in the local environment. Export it before "
+        "running `modal deploy` -- an empty token will otherwise be "
+        "silently passed into the container and fail at model load time."
+    )
+
 MODEL_NAME = "google/gemma-4-26B-A4B-it"
 
 image = (
@@ -39,7 +47,7 @@ image = (
     image=image,
     gpu="A100-80GB",
     timeout=3600,
-    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
+    secrets=[modal.Secret.from_dict({"HF_TOKEN": _hf_token})],
 )
 class Gemma4Coder(BaseCoder, ValidatorMixin):
     MODEL_NAME = MODEL_NAME

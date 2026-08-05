@@ -6,7 +6,7 @@ from automated_cpt_and_icd_coding.pipeline.coder_base import BaseCoder
 MODEL_NAME = "claude-sonnet-4-6"
 
 
-class ClaudeSonnetModal(BaseCoder):
+class ClaudeSonnet(BaseCoder):
     MODEL_NAME = MODEL_NAME
 
     def __init__(self):
@@ -21,7 +21,6 @@ class ClaudeSonnetModal(BaseCoder):
             model=MODEL_NAME,
             system=system,
             max_tokens=max_tokens,
-            temperature=0.0,
             messages=[{"role": "user", "content": user}],
         )
         parts = [b.text for b in resp.content if getattr(b, "type", "") == "text"]

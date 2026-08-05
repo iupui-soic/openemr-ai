@@ -1,0 +1,17 @@
+# Service (FastAPI app, runs in coding_service/venv)
+fastapi==0.139.0
+uvicorn==0.50.2
+pydantic==2.13.4
+python-dotenv==1.2.2
+requests==2.34.2
+chromadb==1.5.9
+sentence-transformers==5.6.0
+modal==1.5.2
+groq==1.5.0
+
+# Model backends (run inside Modal containers, versions per pip_install() in models/*.py)
+torch>=2.4.0
+transformers>=4.51.0
+accelerate>=0.29.0
+huggingface_hub>=0.22.0
+anthropic
