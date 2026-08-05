@@ -74,7 +74,7 @@ class Gemma4Coder(BaseCoder, ValidatorMixin):
         ]
         output = self.pipe(messages, max_new_tokens=max_tokens, do_sample=False)
         text = output[0]["generated_text"][-1]["content"]
-        generated_token_count = len(self.pipe.tokenizer.encode(text))
+        generated_token_count = len(self.pipe.tokenizer.encode(text, add_special_tokens=False))
         was_truncated = generated_token_count >= max_tokens
         return text, was_truncated
 

@@ -20,9 +20,9 @@ from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 
 import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from pipeline.retrieval import load_codes, build_or_load_collection, retrieve_candidates
-from pipeline.coder_base import TruncatedResponseError
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from automated_cpt_and_icd_coding.pipeline.retrieval import load_codes, build_or_load_collection, retrieve_candidates
+from automated_cpt_and_icd_coding.pipeline.coder_base import TruncatedResponseError
 
 load_dotenv()
 

@@ -16,7 +16,7 @@ sys.path.insert(0, "/root/project")
 from automated_cpt_and_icd_coding.pipeline.coder_base import BaseCoder
 from automated_cpt_and_icd_coding.pipeline.validator import ValidatorMixin
 
-app = modal.App("automated-cpt-icd-coding")
+app = modal.App("qwen3-6-35b-coder")
 
 MODEL_NAME = "Qwen/Qwen3.6-35B-A3B"
 
@@ -74,7 +74,7 @@ class Qwen3Coder(BaseCoder, ValidatorMixin):
         ]
         output = self.pipe(messages, max_new_tokens=max_tokens, do_sample=False)
         text = output[0]["generated_text"][-1]["content"]
-        generated_token_count = len(self.pipe.tokenizer.encode(text))
+        generated_token_count = len(self.pipe.tokenizer.encode(text, add_special_tokens=False))
         was_truncated = generated_token_count >= max_tokens
         return text, was_truncated
 
