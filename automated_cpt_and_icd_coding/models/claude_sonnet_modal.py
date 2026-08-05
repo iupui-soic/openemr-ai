@@ -16,7 +16,7 @@ class ClaudeSonnetModal(BaseCoder):
             raise RuntimeError("ANTHROPIC_API_KEY not set")
         self.client = anthropic.Anthropic(api_key=api_key)
 
-    def _call(self, system: str, user: str, max_tokens: int) -> str:
+    def _call(self, system: str, user: str, max_tokens: int) -> tuple[str, bool]:
         resp = self.client.messages.create(
             model=MODEL_NAME,
             system=system,
@@ -25,4 +25,6 @@ class ClaudeSonnetModal(BaseCoder):
             messages=[{"role": "user", "content": user}],
         )
         parts = [b.text for b in resp.content if getattr(b, "type", "") == "text"]
-        return "".join(parts)
+        text = "".join(parts)
+        was_truncated = resp.stop_reason == "max_tokens"
+        return text, was_truncated

@@ -1,7 +1,7 @@
 """
 Automated CPT and ICD-10 Coding Service v4.0
 Stage 1: keyword match + BioBERT similarity shortlist via ChromaDB
-Stage 2: Modal Gemma4Coder.generate_codes (extraction + matching)
+Stage 2: Modal Gemma4Coder.extract_entities, then match_codes (separate GPU calls)
 Run: python3 coding_service.py
 """
 import base64
@@ -18,6 +18,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
+
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from pipeline.retrieval import load_codes, build_or_load_collection, retrieve_candidates
+from pipeline.coder_base import TruncatedResponseError
 
 load_dotenv()
 
@@ -47,74 +52,6 @@ CPT_JSON = BASE_DIR / "cpt_codes_final.json"
 ICD10_JSON = BASE_DIR / "icd10_codes_final.json"
 
 
-def load_codes(path):
-    with open(path) as f:
-        return json.load(f)
-
-
-def build_or_load_collection(client, model, name, codes):
-    existing = [c.name for c in client.list_collections()]
-    if name in existing:
-        col = client.get_collection(name)
-        if col.count() == len(codes):
-            logger.info(f"Loaded '{name}' from ChromaDB ({col.count()} codes)")
-            return col
-        logger.info(f"Rebuilding '{name}'...")
-        client.delete_collection(name)
-    logger.info(f"Building '{name}' for {len(codes)} codes...")
-    col = client.create_collection(name=name, metadata={"hnsw:space": "cosine"})
-    code_list = list(codes.keys())
-    descs = [codes[c] for c in code_list]
-    BATCH = 256
-    for i in range(0, len(code_list), BATCH):
-        bc = code_list[i:i + BATCH]
-        bd = descs[i:i + BATCH]
-        embs = model.encode(bd, batch_size=BATCH, normalize_embeddings=True, show_progress_bar=False).tolist()
-        col.upsert(ids=bc, embeddings=embs, metadatas=[{"description": d, "code": c} for c, d in zip(bc, bd)], documents=bd)
-        logger.info(f"  {min(i + BATCH, len(code_list))}/{len(code_list)}")
-    logger.info(f"Built '{name}'")
-    return col
-
-
-def retrieve_candidates(model, col, terms: List[str], k: int = SHORTLIST_TOP_K) -> dict:
-    """
-    Two-pass retrieval:
-      1. Keyword substring match (ChromaDB-side $contains filter, not a full
-         table fetch -- avoids "too many SQL variables" on large collections).
-      2. Embedding similarity search -- fills in candidates for terms that
-         don't literally appear in any description (e.g. "headache" vs "R51").
-    """
-    if not terms:
-        return {}
-
-    candidates: dict = {}
-
-    for term in terms:
-        try:
-            keyword_res = col.get(
-                where_document={"$contains": term.lower()},
-                include=["metadatas"],
-                limit=KEYWORD_MATCH_LIMIT,
-            )
-        except Exception as e:
-            logger.warning(f"Keyword match failed for '{term}': {e}")
-            keyword_res = {"metadatas": []}
-        for meta in keyword_res["metadatas"]:
-            code = meta.get("code")
-            if code and code not in candidates:
-                candidates[code] = meta.get("description", "")
-
-    for term in terms:
-        query_emb = model.encode([term], normalize_embeddings=True).tolist()
-        res = col.query(query_embeddings=query_emb, n_results=k, include=["metadatas"])
-        for meta in res["metadatas"][0]:
-            code = meta.get("code")
-            if code and code not in candidates:
-                candidates[code] = meta.get("description", "")
-
-    return candidates
-
-
 
 
 
@@ -138,6 +75,21 @@ class CodingResponse(BaseModel):
     cpt_descriptions: dict = {}
     icd10_descriptions: dict = {}
     time_seconds: Optional[float] = None
+    error: Optional[str] = None
+
+
+class ValidationRequest(BaseModel):
+    note: str
+    code: str
+    description: str
+
+
+class ValidationResponse(BaseModel):
+    success: bool
+    code: str = ""
+    supported: bool = False
+    evidence: str = ""
+    reason: str = ""
     error: Optional[str] = None
 
 
@@ -240,15 +192,17 @@ async def code_note(request: CodingRequest, authorization: str = Header(None)):
         raise HTTPException(status_code=400, detail="note is required")
     start = time.time()
     try:
-        result = gemma_coder.generate_codes.remote(note_text=request.note, candidates={})
-        entities = result.get("entities", {})
+        extraction_result = gemma_coder.extract_entities.remote(note_text=request.note)
+        entities = extraction_result.get("entities", {})
         all_terms = entities.get("diagnoses", []) + entities.get("procedures", [])
 
         cpt_candidates = retrieve_candidates(embed_model, cpt_col, all_terms)
         icd10_candidates = retrieve_candidates(embed_model, icd10_col, all_terms)
         combined_candidates = {**cpt_candidates, **icd10_candidates}
 
-        result = gemma_coder.generate_codes.remote(note_text=request.note, candidates=combined_candidates)
+        result = gemma_coder.match_codes.remote(
+            note_text=request.note, entities=entities, candidates=combined_candidates
+        )
 
         cpt_codes, icd10_codes = [], []
         cpt_descriptions, icd10_descriptions = {}, {}
@@ -272,11 +226,40 @@ async def code_note(request: CodingRequest, authorization: str = Header(None)):
             icd10_descriptions=icd10_descriptions,
             time_seconds=time.time() - start,
         )
+    except TruncatedResponseError as e:
+        logger.error(f"Truncated response: {e}")
+        return CodingResponse(success=False, error=f"Response truncated, please retry: {e}")
     except Exception as e:
         logger.error(f"Error: {e}")
         return CodingResponse(success=False, error=str(e))
 
 
+
+
+@app.post("/validate", response_model=ValidationResponse)
+async def validate_code(request: ValidationRequest, authorization: str = Header(None)):
+    await validate_token_and_get_user(authorization)
+    if not request.note.strip():
+        raise HTTPException(status_code=400, detail="note is required")
+    if not request.code.strip():
+        raise HTTPException(status_code=400, detail="code is required")
+    try:
+        result = gemma_coder.validate_code.remote(
+            note_text=request.note, code=request.code, description=request.description
+        )
+        return ValidationResponse(
+            success=True,
+            code=result.get("code", request.code),
+            supported=result.get("supported", False),
+            evidence=result.get("evidence", ""),
+            reason=result.get("reason", ""),
+        )
+    except TruncatedResponseError as e:
+        logger.error(f"Truncated response: {e}")
+        return ValidationResponse(success=False, error=f"Response truncated, please retry: {e}")
+    except Exception as e:
+        logger.error(f"Validation error: {e}")
+        return ValidationResponse(success=False, error=str(e))
 
 
 @app.get("/health")
