@@ -100,6 +100,11 @@ def _build_predictor(
                 "--approach llm requires --backend {hf|anthropic|groq} and --model-id"
             )
         return LLMPredictor(model_id=model_id, backend=backend)
+    if approach == "retr_llm":
+        if not backend or not model_id:
+            raise SystemExit("--approach retr_llm requires --backend and --model-id")
+        from .approaches.llm_retrieval import RetrievalLLMPredictor
+        return RetrievalLLMPredictor(model_id=model_id, backend=backend)
     raise SystemExit(f"Unknown approach: {approach}")
 
 
@@ -115,6 +120,7 @@ def _run_id(approach: str, backend: str | None, model_id: str | None) -> str:
 
 
 def _run(
+    task: str,
     approach: str,
     backend: str | None,
     model_id: str | None,
@@ -124,10 +130,14 @@ def _run(
     dataset_path: Path,
 ) -> None:
     import os
-    notes = data.load_notes(dataset_path)
+    if task == "icd10":
+        all_notes = data.load_notes_icd10()
+    else:
+        all_notes = data.load_notes(dataset_path)
+    notes = all_notes
     if limit is not None:
         notes = notes[:limit]
-    gold_space = data.get_label_space(data.load_notes(dataset_path))
+    gold_space = data.get_label_space(all_notes)
     expanded_path = os.environ.get("EXPANDED_CODES_JSON")
     if expanded_path:
         descriptions = json.loads(Path(expanded_path).read_text(encoding="utf8"))
@@ -140,7 +150,10 @@ def _run(
         )
     else:
         label_space = gold_space
-        descriptions = data.load_cpt_descriptions(label_space=label_space)
+        if task == "icd10":
+            descriptions = data.load_icd10_descriptions(label_space=label_space)
+        else:
+            descriptions = data.load_cpt_descriptions(label_space=label_space)
 
     codes_path = out_dir / "codes.json"
     if not codes_path.exists():
@@ -286,6 +299,7 @@ def main(argv: list[str] | None = None) -> int:
             "hybrid_match",
             "rerank_match",
             "llm",
+            "retr_llm",
         ],
     )
     parser.add_argument(
@@ -302,6 +316,7 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         default=data.default_parquet(),
     )
+    parser.add_argument("--task", choices=["cpt", "icd10"], default="cpt")
     parser.add_argument("--summarize", action="store_true")
     args = parser.parse_args(argv)
 
@@ -316,6 +331,7 @@ def main(argv: list[str] | None = None) -> int:
     if not args.approach:
         parser.error("--approach is required unless --summarize is given")
     _run(
+        task=args.task,
         approach=args.approach,
         backend=args.backend,
         model_id=args.model_id,

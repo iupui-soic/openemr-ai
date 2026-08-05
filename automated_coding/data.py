@@ -9,6 +9,7 @@ copy is absent it falls back to the canonical `data/processed/mdace_cpt/` path.
 exists, otherwise walks the raw MDACE Profee JSONs. The 61 codes in
 `all.parquet` are all covered with consistent official CPT text in MDACE.
 """
+from __future__ import annotations
 import json
 from pathlib import Path
 from typing import NamedTuple
@@ -94,3 +95,36 @@ def write_codes_json(descriptions: dict[str, str], out_path: Path) -> None:
     out_path.write_text(
         json.dumps(descriptions, indent=2, ensure_ascii=False), encoding="utf8"
     )
+
+
+# ---- ICD-10 benchmark (issue #10) ----
+BUNDLED_ICD10_PARQUET = _BENCHMARK_DIR / "dataset" / "all_icd10.parquet"
+BUNDLED_ICD10_CODES_JSON = _BENCHMARK_DIR / "dataset" / "codes_icd10.json"
+
+
+def load_notes_icd10(path: Path = BUNDLED_ICD10_PARQUET) -> list[Note]:
+    """Load the MDACE Profee ICD-10 gold set (note_id, text, gold ICD-10 codes)."""
+    df = pl.read_parquet(path)
+    notes: list[Note] = []
+    for row in df.iter_rows(named=True):
+        notes.append(
+            Note(
+                note_id=str(row["note_id"]),
+                text=row["text"],
+                gold_codes=set(row["icd10_codes"]),
+            )
+        )
+    return notes
+
+
+def load_icd10_descriptions(
+    label_space: list[str] | None = None,
+) -> dict[str, str]:
+    """Load ICD-10 code -> description map built from MDACE annotations."""
+    descriptions = json.loads(BUNDLED_ICD10_CODES_JSON.read_text(encoding="utf8"))
+    if label_space is not None:
+        missing = [c for c in label_space if c not in descriptions]
+        if missing:
+            raise ValueError(f"Missing ICD-10 descriptions for: {missing}")
+        descriptions = {c: descriptions[c] for c in label_space}
+    return descriptions

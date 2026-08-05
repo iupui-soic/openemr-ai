@@ -17,7 +17,8 @@ from .. import prompts
 from .base import Predictor
 
 
-MAX_NEW_TOKENS = 512
+import os as _os
+MAX_NEW_TOKENS = int(_os.environ.get('MAX_NEW_TOKENS', '256'))
 HF_MAX_INPUT_TOKENS = 14000
 
 logger = logging.getLogger(__name__)
