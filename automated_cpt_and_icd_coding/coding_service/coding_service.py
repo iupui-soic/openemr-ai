@@ -4,14 +4,16 @@ Stage 1: keyword match + BioBERT similarity shortlist via ChromaDB
 Stage 2: Modal Gemma4Coder.generate_codes (extraction + matching)
 Run: python3 coding_service.py
 """
+import base64
+import hashlib
 import json, logging, os, time, datetime
 from pathlib import Path
 from typing import Optional, List
 
 import chromadb
 import modal
-import pymysql
-from fastapi import FastAPI, HTTPException
+import requests
+from fastapi import FastAPI, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
@@ -24,6 +26,9 @@ logger = logging.getLogger(__name__)
 
 HOST = os.getenv("HOST", "0.0.0.0")
 PORT = int(os.getenv("PORT", "8003"))
+
+OPENEMR_SERVER_URL = os.getenv("OPENEMR_SERVER_URL", "https://localhost:9300")
+OPENEMR_FHIR_BASE = f"{OPENEMR_SERVER_URL}/apis/default/fhir"
 
 EMBED_MODEL = "BAAI/bge-base-en-v1.5"
 SHORTLIST_TOP_K = 5
@@ -110,49 +115,10 @@ def retrieve_candidates(model, col, terms: List[str], k: int = SHORTLIST_TOP_K) 
     return candidates
 
 
-def get_db_connection():
-    return pymysql.connect(
-        host=os.getenv("OPENEMR_DB_HOST", "127.0.0.1"),
-        port=int(os.getenv("OPENEMR_DB_PORT", "3308")),
-        user=os.getenv("OPENEMR_DB_USER", "openemr"),
-        password=os.getenv("OPENEMR_DB_PASS", "openemr"),
-        database=os.getenv("OPENEMR_DB_NAME", "openemr"),
-    )
 
 
-def _uuid_to_hex(uuid_str: str) -> str:
-    """Strip dashes so it matches how MariaDB's UNHEX() expects a plain hex string."""
-    return uuid_str.replace("-", "")
 
 
-def resolve_patient_and_encounter(cursor, patient_uuid: str, encounter_uuid: str):
-    """
-    Resolve external UUIDs to OpenEMR's internal pid/encounter integers,
-    and fetch the encounter date for the same-day-visit check.
-    Returns (pid, encounter, encounter_date) or (None, None, None) if not found.
-
-    MariaDB has no UUID_TO_BIN/BIN_TO_UUID (those are MySQL 8.0+ only), so we
-    convert manually with UNHEX() against the dash-stripped UUID string.
-    """
-    cursor.execute(
-        "SELECT pid FROM patient_data WHERE uuid = UNHEX(%s)",
-        (_uuid_to_hex(patient_uuid),),
-    )
-    row = cursor.fetchone()
-    if not row:
-        return None, None, None
-    pid = row[0]
-
-    cursor.execute(
-        "SELECT encounter, date FROM form_encounter WHERE uuid = UNHEX(%s)",
-        (_uuid_to_hex(encounter_uuid),),
-    )
-    row = cursor.fetchone()
-    if not row:
-        return pid, None, None
-    encounter, encounter_date = row
-
-    return pid, encounter, encounter_date
 
 
 app = FastAPI(title="CPT and ICD-10 Coding Service", version="4.0.0")
@@ -175,27 +141,81 @@ class CodingResponse(BaseModel):
     error: Optional[str] = None
 
 
-class CodeGemmaRequest(BaseModel):
-    note: str
-    patient_uuid: str
-    encounter_uuid: str
 
 
-class CodeGemmaResponse(BaseModel):
-    success: bool
-    cpt_codes: List[str] = []
-    icd10_codes: List[str] = []
-    cpt_descriptions: dict = {}
-    icd10_descriptions: dict = {}
-    inserted: int = 0
-    billing_ids: List[int] = []
-    error: Optional[str] = None
 
 
 embed_model = None
 cpt_col = None
 icd10_col = None
 gemma_coder = None
+
+
+def extract_token_from_header(authorization: str) -> str:
+    """Extract bearer token from Authorization header"""
+    if not authorization:
+        raise HTTPException(status_code=401, detail="Missing Authorization header")
+
+    parts = authorization.split()
+    if len(parts) != 2 or parts[0].lower() != 'bearer':
+        raise HTTPException(status_code=401, detail="Invalid Authorization header format")
+
+    return parts[1]
+
+
+def try_decode_jwt_subject(token: str) -> str | None:
+    try:
+        parts = token.split(".")
+        if len(parts) != 3:
+            return None
+
+        payload_b64 = parts[1]
+        padding = "=" * (-len(payload_b64) % 4)
+        payload_json = base64.urlsafe_b64decode(payload_b64 + padding).decode("utf-8")
+        payload = json.loads(payload_json)
+
+        fhir_user = payload.get("fhirUser")
+        sub = payload.get("sub")
+        user_id = payload.get("user_id")
+        username = payload.get("username")
+
+        return fhir_user or sub or user_id or username
+    except Exception:
+        return None
+
+
+async def validate_token_and_get_user(authorization: str) -> dict:
+    """
+    Validate SMART access token by calling OpenEMR FHIR metadata.
+    If token is JWT, derive user id from claims. Else hash token.
+    Mirrors the pattern used in rag-text-summarization/summarize.py.
+    """
+    token = extract_token_from_header(authorization)
+
+    try:
+        resp = requests.get(
+            f"{OPENEMR_FHIR_BASE}/metadata",
+            headers={"Authorization": f"Bearer {token}"},
+            timeout=10,
+            verify=False,
+        )
+        if resp.status_code != 200:
+            logger.error(f"FHIR metadata token check failed: {resp.status_code} {resp.text}")
+            raise HTTPException(status_code=401, detail="Invalid or expired access token")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to validate token against FHIR: {e}")
+        raise HTTPException(status_code=503, detail="Failed to validate token with OpenEMR")
+
+    extracted = try_decode_jwt_subject(token)
+    if extracted:
+        user_id = str(extracted).replace("/", "-")
+        logger.info(f"Authenticated token. Derived user id from JWT: {user_id}")
+        return {"user_id": user_id, "username": None, "token": token}
+
+    token_fingerprint = hashlib.sha256(token.encode("utf-8")).hexdigest()[:16]
+    user_id = f"token-{token_fingerprint}"
+    logger.info(f"Authenticated token. Derived user id from token hash: {user_id}")
+    return {"user_id": user_id, "username": None, "token": token}
 
 
 @app.on_event("startup")
@@ -214,7 +234,8 @@ async def startup():
 
 
 @app.post("/code", response_model=CodingResponse)
-async def code_note(request: CodingRequest):
+async def code_note(request: CodingRequest, authorization: str = Header(None)):
+    await validate_token_and_get_user(authorization)
     if not request.note.strip():
         raise HTTPException(status_code=400, detail="note is required")
     start = time.time()
@@ -256,105 +277,6 @@ async def code_note(request: CodingRequest):
         return CodingResponse(success=False, error=str(e))
 
 
-@app.post("/code-gemma", response_model=CodeGemmaResponse)
-async def code_gemma(request: CodeGemmaRequest):
-    """
-    Full pipeline: extract -> retrieve -> match -> insert into the Fee
-    Sheet. Codes are only inserted for TODAY's encounter -- if the
-    encounter date is not today, the pipeline refuses to insert and
-    returns an explanatory error, since AI-suggested codes only make
-    sense for the visit that's actually happening right now.
-    """
-    if not request.note.strip():
-        raise HTTPException(status_code=400, detail="note is required")
-
-    conn = get_db_connection()
-    try:
-        with conn.cursor() as cursor:
-            pid, encounter, encounter_date = resolve_patient_and_encounter(
-                cursor, request.patient_uuid, request.encounter_uuid
-            )
-            if pid is None:
-                return CodeGemmaResponse(success=False, error="Patient not found")
-            if encounter is None:
-                return CodeGemmaResponse(success=False, error="Encounter not found")
-
-            today = datetime.date.today()
-            encounter_day = encounter_date.date() if hasattr(encounter_date, "date") else encounter_date
-            if encounter_day != today:
-                return CodeGemmaResponse(
-                    success=False,
-                    error=(
-                        f"Encounter date ({encounter_day}) is not today ({today}). "
-                        "AI-suggested codes are only inserted for same-day office visits."
-                    ),
-                )
-
-        result = gemma_coder.generate_codes.remote(note_text=request.note, candidates={})
-        entities = result.get("entities", {})
-        all_terms = entities.get("diagnoses", []) + entities.get("procedures", [])
-
-        cpt_candidates = retrieve_candidates(embed_model, cpt_col, all_terms)
-        icd10_candidates = retrieve_candidates(embed_model, icd10_col, all_terms)
-        combined_candidates = {**cpt_candidates, **icd10_candidates}
-
-        result = gemma_coder.generate_codes.remote(note_text=request.note, candidates=combined_candidates)
-
-        cpt_codes, icd10_codes = [], []
-        cpt_descriptions, icd10_descriptions = {}, {}
-        billing_ids = []
-
-        seen_pairs = set()
-        deduped_matches = []
-        for m in result.get("matches", []):
-            pair = (m.get("code_type", ""), m.get("code", ""))
-            if pair not in seen_pairs:
-                seen_pairs.add(pair)
-                deduped_matches.append(m)
-
-        with conn.cursor() as cursor:
-            for m in deduped_matches:
-                code = m.get("code")
-                code_type = m.get("code_type", "")
-                desc = m.get("description", "")
-                if code_type not in ("CPT4", "ICD10"):
-                    continue
-
-                cursor.execute(
-                    """
-                    INSERT INTO billing
-                        (date, code_type, code, pid, provider_id, authorized,
-                         encounter, code_text, billed, activity, units, notecodes, revenue_code)
-                    VALUES
-                        (NOW(), %s, %s, %s, 0, 0, %s, %s, 0, 1, 1, '', '')
-                    """,
-                    (code_type, code, pid, encounter, f"AI-SUGGESTED: {desc}"),
-                )
-                billing_ids.append(cursor.lastrowid)
-
-                if code_type == "CPT4":
-                    cpt_codes.append(code)
-                    cpt_descriptions[code] = desc
-                else:
-                    icd10_codes.append(code)
-                    icd10_descriptions[code] = desc
-
-            conn.commit()
-
-        return CodeGemmaResponse(
-            success=True,
-            cpt_codes=cpt_codes,
-            icd10_codes=icd10_codes,
-            cpt_descriptions=cpt_descriptions,
-            icd10_descriptions=icd10_descriptions,
-            inserted=len(billing_ids),
-            billing_ids=billing_ids,
-        )
-    except Exception as e:
-        logger.error(f"code-gemma error: {e}")
-        return CodeGemmaResponse(success=False, error=str(e))
-    finally:
-        conn.close()
 
 
 @app.get("/health")
