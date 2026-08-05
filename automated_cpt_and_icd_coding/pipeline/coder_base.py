@@ -6,16 +6,27 @@ send a system/user prompt to that specific backend and get text back.
 import time
 from typing import Dict, List, Any
 
-from automated_cpt_and_icd_coding.pipeline import prompts
+from automated_coding import prompts
+
+
+class TruncatedResponseError(Exception):
+    """Raised when a model response was cut off at max_tokens, distinguishing
+    this from a genuine "no codes apply" result.
+    """
+    pass
 
 
 class BaseCoder:
-    def _call(self, system: str, user: str, max_tokens: int) -> str:
+    def _call(self, system: str, user: str, max_tokens: int) -> tuple[str, bool]:
         raise NotImplementedError("Each model file must implement _call()")
 
     def _extract_entities(self, note_text: str) -> Dict[str, List[str]]:
         system, user = prompts.build_extraction_messages(note_text)
-        raw = self._call(system, user, max_tokens=256)
+        raw, was_truncated = self._call(system, user, max_tokens=256)
+        if was_truncated:
+            raise TruncatedResponseError(
+                "Entity extraction response was truncated at max_tokens=256"
+            )
         obj = prompts.extract_json(raw)
         return {
             "diagnoses": [str(x).strip() for x in obj.get("diagnoses", []) if str(x).strip()],
@@ -29,7 +40,11 @@ class BaseCoder:
             return []
         all_terms = entities.get("diagnoses", []) + entities.get("procedures", [])
         system, user = prompts.build_matching_messages(note_text, all_terms, candidates)
-        raw = self._call(system, user, max_tokens=512)
+        raw, was_truncated = self._call(system, user, max_tokens=512)
+        if was_truncated:
+            raise TruncatedResponseError(
+                "Code matching response was truncated at max_tokens=512"
+            )
         obj = prompts.extract_json(raw)
 
         matches = []
@@ -44,7 +59,37 @@ class BaseCoder:
                 })
         return matches
 
+    def extract_entities(self, note_text: str) -> Dict[str, Any]:
+        """Public wrapper: run extraction only, no candidates needed yet.
+        Split out from generate_codes() so callers doing their own retrieval
+        between extraction and matching don't pay for two extraction passes.
+        """
+        start = time.time()
+        entities = self._extract_entities(note_text)
+        return {
+            "entities": entities,
+            "total_time": time.time() - start,
+            "model": getattr(self, "MODEL_NAME", "unknown"),
+        }
+
+    def match_codes(
+        self, note_text: str, entities: Dict[str, List[str]], candidates: Dict[str, str]
+    ) -> Dict[str, Any]:
+        """Public wrapper: run matching only, given entities already extracted."""
+        start = time.time()
+        matches = self._match_codes(note_text, entities, candidates)
+        return {
+            "entities": entities,
+            "candidates_considered": len(candidates),
+            "matches": matches,
+            "total_time": time.time() - start,
+            "model": getattr(self, "MODEL_NAME", "unknown"),
+        }
+
     def generate_codes(self, note_text: str, candidates: Dict[str, str]) -> Dict[str, Any]:
+        """Convenience method: full extraction + matching in one call.
+        Kept for standalone/CLI use where the two-call split isn't needed.
+        """
         start = time.time()
         entities = self._extract_entities(note_text)
         matches = self._match_codes(note_text, entities, candidates)

@@ -5,7 +5,8 @@ judges whether the note actually supports it.
 """
 from typing import Dict, Any
 
-from automated_cpt_and_icd_coding.pipeline import prompts
+from automated_coding import prompts
+from automated_cpt_and_icd_coding.pipeline.coder_base import TruncatedResponseError
 
 
 class ValidatorMixin:
@@ -13,7 +14,11 @@ class ValidatorMixin:
 
     def validate_code(self, note_text: str, code: str, description: str) -> Dict[str, Any]:
         system, user = prompts.build_validation_messages(note_text, code, description)
-        raw = self._call(system, user, max_tokens=256)
+        raw, was_truncated = self._call(system, user, max_tokens=256)
+        if was_truncated:
+            raise TruncatedResponseError(
+                "Validation response was truncated at max_tokens=256"
+            )
         obj = prompts.extract_json(raw)
         return {
             "code": code,

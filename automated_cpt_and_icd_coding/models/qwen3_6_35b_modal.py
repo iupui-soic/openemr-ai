@@ -1,5 +1,5 @@
 """
-Gemma-4 26B on Modal -- thin model file, all extraction/matching logic
+Qwen3.6-35B-A3B on Modal -- thin model file, all extraction/matching logic
 lives in pipeline/coder_base.py, shared with every other model file.
 
 Retrieval is done OUTSIDE this file, by coding_service.py querying a local
@@ -18,13 +18,13 @@ from automated_cpt_and_icd_coding.pipeline.validator import ValidatorMixin
 
 app = modal.App("automated-cpt-icd-coding")
 
-MODEL_NAME = "google/gemma-4-26B-A4B-it"
+MODEL_NAME = "Qwen/Qwen3.6-35B-A3B"
 
 image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
         "torch>=2.4.0",
-        "transformers>=4.45.0",
+        "transformers>=4.51.0",
         "accelerate>=0.29.0",
         "huggingface_hub>=0.22.0",
     )
@@ -41,7 +41,7 @@ image = (
     timeout=3600,
     secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
 )
-class Gemma4Coder(BaseCoder, ValidatorMixin):
+class Qwen3Coder(BaseCoder, ValidatorMixin):
     MODEL_NAME = MODEL_NAME
 
     @modal.enter()
@@ -102,11 +102,11 @@ class Gemma4Coder(BaseCoder, ValidatorMixin):
 @app.local_entrypoint()
 def main(note_file: str = ""):
     if not note_file:
-        print("Usage: modal run gemma4_26b_modal.py --note-file path/to/note.txt")
+        print("Usage: modal run qwen3_6_35b_modal.py --note-file path/to/note.txt")
         return
     with open(note_file) as f:
         note_text = f.read()
-    coder = Gemma4Coder()
+    coder = Qwen3Coder()
     result = coder.generate_codes.remote(note_text=note_text, candidates={})
     import json
     print(json.dumps(result, indent=2))

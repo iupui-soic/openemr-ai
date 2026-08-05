@@ -16,7 +16,7 @@ class GroqLlamaModal(BaseCoder):
             raise RuntimeError("GROQ_API_KEY not set")
         self.client = Groq(api_key=api_key)
 
-    def _call(self, system: str, user: str, max_tokens: int) -> str:
+    def _call(self, system: str, user: str, max_tokens: int) -> tuple[str, bool]:
         resp = self.client.chat.completions.create(
             model=MODEL_NAME,
             messages=[
@@ -26,4 +26,6 @@ class GroqLlamaModal(BaseCoder):
             max_tokens=max_tokens,
             temperature=0.0,
         )
-        return resp.choices[0].message.content or ""
+        text = resp.choices[0].message.content or ""
+        was_truncated = resp.choices[0].finish_reason == "length"
+        return text, was_truncated
