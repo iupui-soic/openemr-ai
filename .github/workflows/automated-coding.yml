@@ -79,3 +79,37 @@ jobs:
         run: |
           python -m automated_coding.run --help
           python -c "import automated_coding.run; print('run.py imports OK, --task cpt/icd10 available')"
+
+  benchmark-icd10:
+    name: Benchmark ICD-10 (Gemma sample)
+    needs: deploy-gemma
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install dependencies
+        run: pip install modal polars pyarrow sentence-transformers numpy
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id "$MODAL_TOKEN_ID" --token-secret "$MODAL_TOKEN_SECRET"
+      - name: Run ICD-10 benchmark
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          RETRIEVE_TOP_K: '50'
+          MODAL_APP: automated-cpt-icd-coding
+          MODAL_CLASS: Gemma4Coder
+        run: python -m automated_coding.run --task icd10 --approach modal_coder --limit 289 --out-dir reports/ci_icd10
+      - name: Publish summary
+        run: |
+          python -m automated_coding.run --summarize --out-dir reports/ci_icd10
+          echo "## ICD-10 Benchmark (Gemma-26B sample)" >> $GITHUB_STEP_SUMMARY
+          cat reports/ci_icd10/summary.md >> $GITHUB_STEP_SUMMARY
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: icd10-results
+          path: reports/ci_icd10/
