@@ -105,6 +105,9 @@ def _build_predictor(
             raise SystemExit("--approach retr_llm requires --backend and --model-id")
         from .approaches.llm_retrieval import RetrievalLLMPredictor
         return RetrievalLLMPredictor(model_id=model_id, backend=backend)
+    if approach == "modal_coder":
+        from .approaches.modal_coder import ModalCoderPredictor
+        return ModalCoderPredictor(model_id=model_id or "")
     raise SystemExit(f"Unknown approach: {approach}")
 
 
@@ -300,6 +303,7 @@ def main(argv: list[str] | None = None) -> int:
             "rerank_match",
             "llm",
             "retr_llm",
+            "modal_coder",
         ],
     )
     parser.add_argument(

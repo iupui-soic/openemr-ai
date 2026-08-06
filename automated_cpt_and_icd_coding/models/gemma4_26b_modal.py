@@ -18,6 +18,14 @@ from automated_cpt_and_icd_coding.pipeline.validator import ValidatorMixin
 
 app = modal.App("automated-cpt-icd-coding")
 
+_hf_token = os.environ.get("HF_TOKEN", "")
+if not _hf_token:
+    raise RuntimeError(
+        "HF_TOKEN is not set in the local environment. Export it before "
+        "running `modal deploy` -- an empty token will otherwise be "
+        "silently passed into the container and fail at model load time."
+    )
+
 MODEL_NAME = "google/gemma-4-26B-A4B-it"
 
 image = (
@@ -31,6 +39,16 @@ image = (
     .add_local_dir(
         os.path.join(os.path.dirname(__file__), "..", ".."),
         remote_path="/root/project",
+        ignore=modal.FilePatternMatcher(
+            "**/.env",
+            "**/.git/**",
+            "**/venv/**",
+            "**/__pycache__/**",
+            "**/*.pyc",
+            "**/chroma_data/**",
+            "**/.idea/**",
+            "**/*.parquet",
+        ),
     )
 )
 
@@ -39,7 +57,7 @@ image = (
     image=image,
     gpu="A100-80GB",
     timeout=3600,
-    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
+    secrets=[modal.Secret.from_dict({"HF_TOKEN": _hf_token})],
 )
 class Gemma4Coder(BaseCoder, ValidatorMixin):
     MODEL_NAME = MODEL_NAME
@@ -72,9 +90,12 @@ class Gemma4Coder(BaseCoder, ValidatorMixin):
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
-        output = self.pipe(messages, max_new_tokens=max_tokens, do_sample=False)
-        text = output[0]["generated_text"][-1]["content"]
-        generated_token_count = len(self.pipe.tokenizer.encode(text))
+        prompt = self.pipe.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True, enable_thinking=False
+        )
+        output = self.pipe(prompt, max_new_tokens=max_tokens, do_sample=False, return_full_text=False)
+        text = output[0]["generated_text"]
+        generated_token_count = len(self.pipe.tokenizer.encode(text, add_special_tokens=False))
         was_truncated = generated_token_count >= max_tokens
         return text, was_truncated
 

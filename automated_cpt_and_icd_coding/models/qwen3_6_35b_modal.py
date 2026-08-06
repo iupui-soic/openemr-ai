@@ -16,7 +16,15 @@ sys.path.insert(0, "/root/project")
 from automated_cpt_and_icd_coding.pipeline.coder_base import BaseCoder
 from automated_cpt_and_icd_coding.pipeline.validator import ValidatorMixin
 
-app = modal.App("automated-cpt-icd-coding")
+app = modal.App("qwen3-6-35b-coder")
+
+_hf_token = os.environ.get("HF_TOKEN", "")
+if not _hf_token:
+    raise RuntimeError(
+        "HF_TOKEN is not set in the local environment. Export it before "
+        "running `modal deploy` -- an empty token will otherwise be "
+        "silently passed into the container and fail at model load time."
+    )
 
 MODEL_NAME = "Qwen/Qwen3.6-35B-A3B"
 
@@ -31,6 +39,16 @@ image = (
     .add_local_dir(
         os.path.join(os.path.dirname(__file__), "..", ".."),
         remote_path="/root/project",
+        ignore=modal.FilePatternMatcher(
+            "**/.env",
+            "**/.git/**",
+            "**/venv/**",
+            "**/__pycache__/**",
+            "**/*.pyc",
+            "**/chroma_data/**",
+            "**/.idea/**",
+            "**/*.parquet",
+        ),
     )
 )
 
@@ -39,7 +57,7 @@ image = (
     image=image,
     gpu="A100-80GB",
     timeout=3600,
-    secrets=[modal.Secret.from_dict({"HF_TOKEN": os.environ.get("HF_TOKEN", "")})],
+    secrets=[modal.Secret.from_dict({"HF_TOKEN": _hf_token})],
 )
 class Qwen3Coder(BaseCoder, ValidatorMixin):
     MODEL_NAME = MODEL_NAME
@@ -67,14 +85,30 @@ class Qwen3Coder(BaseCoder, ValidatorMixin):
         before hitting max_new_tokens. If the generated token count is at or
         near the cap, that's a signal generation was cut off mid-response
         rather than finishing naturally.
+
+        Qwen3 models default to a "thinking" mode that emits hidden <think>
+        reasoning tokens before the actual answer, which was eating the
+        entire max_tokens budget before reaching the JSON output. Building
+        the prompt text explicitly with enable_thinking=False disables this.
         """
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
-        output = self.pipe(messages, max_new_tokens=max_tokens, do_sample=False)
-        text = output[0]["generated_text"][-1]["content"]
-        generated_token_count = len(self.pipe.tokenizer.encode(text))
+        prompt_text = self.pipe.tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+        output = self.pipe(
+            prompt_text,
+            max_new_tokens=max_tokens,
+            do_sample=False,
+            return_full_text=False,
+        )
+        text = output[0]["generated_text"]
+        generated_token_count = len(self.pipe.tokenizer.encode(text, add_special_tokens=False))
         was_truncated = generated_token_count >= max_tokens
         return text, was_truncated
 

@@ -1,0 +1,81 @@
+name: Automated CPT/ICD Coding Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_note_file:
+        description: 'Path to a sample note file for a smoke test (optional)'
+        type: string
+        default: ''
+  push:
+    paths:
+      - 'automated_cpt_and_icd_coding/models/gemma4_26b_modal.py'
+      - 'automated_cpt_and_icd_coding/models/qwen3_6_35b_modal.py'
+      - 'automated_cpt_and_icd_coding/pipeline/**'
+      - 'automated_coding/**'
+      - '.github/workflows/automated-coding.yml'
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  deploy-gemma:
+    name: Deploy Gemma4 to Modal
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Modal
+        run: pip install modal
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id "$MODAL_TOKEN_ID" --token-secret "$MODAL_TOKEN_SECRET"
+      - name: Deploy Gemma4 to Modal
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: modal deploy automated_cpt_and_icd_coding/models/gemma4_26b_modal.py
+      - name: Smoke test (optional)
+        if: ${{ github.event.inputs.test_note_file != '' }}
+        run: modal run automated_cpt_and_icd_coding/models/gemma4_26b_modal.py --note-file "${{ github.event.inputs.test_note_file }}"
+
+  deploy-qwen:
+    name: Deploy Qwen3 to Modal
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Modal
+        run: pip install modal
+      - name: Authenticate Modal
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal token set --token-id "$MODAL_TOKEN_ID" --token-secret "$MODAL_TOKEN_SECRET"
+      - name: Deploy Qwen3 to Modal
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: modal deploy automated_cpt_and_icd_coding/models/qwen3_6_35b_modal.py
+      - name: Smoke test (optional)
+        if: ${{ github.event.inputs.test_note_file != '' }}
+        run: modal run automated_cpt_and_icd_coding/models/qwen3_6_35b_modal.py --note-file "${{ github.event.inputs.test_note_file }}"
+
+  lint-benchmark-harness:
+    name: Validate benchmark harness (CPT + ICD-10)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install dependencies
+        run: pip install polars pyarrow
+      - name: Validate run.py imports and both tasks parse
+        run: |
+          python -m automated_coding.run --help
+          python -c "import automated_coding.run; print('run.py imports OK, --task cpt/icd10 available')"
