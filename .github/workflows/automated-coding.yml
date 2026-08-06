@@ -113,3 +113,27 @@ jobs:
         with:
           name: icd10-results
           path: reports/ci_icd10/
+
+  benchmark-icd10-api:
+    name: Benchmark ICD-10 (Claude + Groq)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install anthropic groq polars pyarrow sentence-transformers
+      - name: Claude ICD-10
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m automated_coding.run --task icd10 --approach retr_llm --backend anthropic --model-id claude-sonnet-4-6 --limit 20 --out-dir reports/icd10_claude
+      - name: Groq Qwen ICD-10
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python -m automated_coding.run --task icd10 --approach retr_llm --backend groq --model-id qwen/qwen3.6-27b --limit 20 --out-dir reports/icd10_qwen
+      - name: Summarize
+        run: |
+          python -m automated_coding.run --summarize --out-dir reports/icd10_claude
+          python -m automated_coding.run --summarize --out-dir reports/icd10_qwen
+          echo "## ICD-10 API models" >> $GITHUB_STEP_SUMMARY
+          cat reports/icd10_claude/summary.md reports/icd10_qwen/summary.md >> $GITHUB_STEP_SUMMARY
