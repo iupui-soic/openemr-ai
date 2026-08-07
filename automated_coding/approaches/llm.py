@@ -28,7 +28,7 @@ class LLMPredictor:
     def __init__(
         self,
         model_id: str,
-        backend: Literal["hf", "anthropic", "groq"],
+        backend: Literal["hf", "anthropic", "groq", "cerebras", "deepinfra"],
         max_new_tokens: int = MAX_NEW_TOKENS,
     ) -> None:
         self.model_id = model_id
@@ -54,6 +54,10 @@ class LLMPredictor:
             self._load_anthropic()
         elif self.backend == "groq":
             self._load_groq()
+        elif self.backend == "cerebras":
+            self._load_openai_compat("CEREBRAS_API_KEY", "https://api.cerebras.ai/v1")
+        elif self.backend == "deepinfra":
+            self._load_openai_compat("DEEPINFRA_API_KEY", "https://api.deepinfra.com/v1/openai")
         else:
             raise ValueError(f"Unknown backend: {self.backend}")
 
@@ -94,12 +98,19 @@ class LLMPredictor:
             api_key=api_key, base_url="https://api.groq.com/openai/v1"
         )
 
+    def _load_openai_compat(self, key_env: str, base_url: str) -> None:
+        from openai import OpenAI
+        api_key = os.environ.get(key_env)
+        if not api_key:
+            raise RuntimeError(f"{key_env} not set")
+        self._client = OpenAI(api_key=api_key, base_url=base_url)
+
     def predict(self, text: str) -> set[str]:
         if self.backend == "hf":
             raw = self._generate_hf(text)
         elif self.backend == "anthropic":
             raw = self._generate_anthropic(text)
-        elif self.backend == "groq":
+        elif self.backend in ("groq", "cerebras", "deepinfra"):
             raw = self._generate_groq(text)
         else:
             raw = ""

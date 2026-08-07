@@ -307,7 +307,7 @@ def main(argv: list[str] | None = None) -> int:
         ],
     )
     parser.add_argument(
-        "--backend", choices=["hf", "anthropic", "groq"], default=None
+        "--backend", choices=["hf", "anthropic", "groq", "cerebras", "deepinfra"], default=None
     )
     parser.add_argument("--model-id", default=None)
     parser.add_argument("--threshold", type=float, default=None)

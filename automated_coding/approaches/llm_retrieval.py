@@ -57,7 +57,7 @@ class RetrievalLLMPredictor(LLMPredictor):
                 raw = self._generate_hf(text)
             elif self.backend == "anthropic":
                 raw = self._generate_anthropic(text)
-            elif self.backend == "groq":
+            elif self.backend in ("groq", "cerebras", "deepinfra"):
                 raw = self._generate_groq(text)
             else:
                 raw = ""
