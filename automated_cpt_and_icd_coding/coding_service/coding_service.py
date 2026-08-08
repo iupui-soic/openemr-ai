@@ -74,6 +74,7 @@ class CodingResponse(BaseModel):
     icd10_codes: List[str] = []
     cpt_descriptions: dict = {}
     icd10_descriptions: dict = {}
+    cpt_icd_linkage: dict = {}
     time_seconds: Optional[float] = None
     error: Optional[str] = None
 
@@ -206,24 +207,40 @@ async def code_note(request: CodingRequest, authorization: str = Header(None)):
 
         cpt_codes, icd10_codes = [], []
         cpt_descriptions, icd10_descriptions = {}, {}
+        entity_to_cpt, entity_to_icd10 = {}, {}
         for m in result.get("matches", []):
             code = m.get("code")
             code_type = m.get("code_type", "")
             desc = m.get("description", "")
+            entity = m.get("entity", "")
             if code_type == "CPT4":
                 cpt_codes.append(code)
                 cpt_descriptions[code] = desc
+                entity_to_cpt.setdefault(entity, []).append(code)
             elif code_type == "ICD10":
                 icd10_codes.append(code)
                 icd10_descriptions[code] = desc
+                entity_to_icd10.setdefault(entity, []).append(code)
 
-        logger.info(f"CPT: {cpt_codes}, ICD-10: {icd10_codes}")
+        # Link each CPT code to the ICD-10 codes sharing the same extracted
+        # entity, for the OpenEMR module to populate BillingUtilities'
+        # `justify` field. This groups by shared entity as the join key --
+        # not explicitly specified in the design doc, so confirm with sunbiz
+        # this matches what the module actually needs before relying on it.
+        cpt_icd_linkage = {}
+        for entity, cpts in entity_to_cpt.items():
+            linked_icd10 = entity_to_icd10.get(entity, [])
+            for cpt in cpts:
+                cpt_icd_linkage[cpt] = linked_icd10
+
+        logger.info(f"CPT: {cpt_codes}, ICD-10: {icd10_codes}, linkage: {cpt_icd_linkage}")
         return CodingResponse(
             success=True,
             cpt_codes=cpt_codes,
             icd10_codes=icd10_codes,
             cpt_descriptions=cpt_descriptions,
             icd10_descriptions=icd10_descriptions,
+            cpt_icd_linkage=cpt_icd_linkage,
             time_seconds=time.time() - start,
         )
     except TruncatedResponseError as e:
