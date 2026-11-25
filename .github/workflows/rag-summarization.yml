@@ -74,14 +74,14 @@ jobs:
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Deploying text evaluator service (BLEU, ROUGE, SBERT, BERTScore)..."
-          modal deploy text_evaluator_service.py
+          modal deploy evaluation/text_evaluator_service.py
           echo "✅ Text evaluator service deployed successfully"
 
       - name: Deploy Entity Evaluator Service
         run: |
           cd ${{ env.WORK_DIR }}
           echo "🚀 Deploying entity evaluator service (scispaCy, MedCAT)..."
-          modal deploy entity_evaluator_service.py
+          modal deploy evaluation/entity_evaluator_service.py
           echo "✅ Entity evaluator service deployed successfully"
 
       - name: Warm up Text Evaluator
