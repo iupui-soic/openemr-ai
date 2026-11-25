@@ -1,8 +1,225 @@
 # openemr-ai
 
-Artificial Intelligence tooling for OpenEMR related to clinical decision rules, ambient listening, note summarization and automated coding.
+Artificial Intelligence tooling for OpenEMR. The repository holds three separate research areas. Each has its own code and its own data, and results from one area should not be read as part of another.
 
-## ELM JSON Validation (Clinical Decision Support Validation)
+| Research area | What it studies | Code | Data |
+|---|---|---|---|
+| **1. Ambient listening and summarization** | Patient-provider conversation to transcript (ASR), transcript to SOAP note (retrieval-augmented LLM), and blinded clinician rating of the notes | `openemr_whisper_wer/`, `rag_models/`, `smart-ambient-listening/`, `scripts/revision_*` | See the data table below |
+| **2. CQL clinical decision support (CQL-CDS)** | Whether LLMs can tell if an ELM JSON rule correctly implements a clinical practice guideline | `cdr_elmjson_validator/` | 41 hand-curated ELM JSON cases built from published guidelines. No patient data |
+| **3. Automated coding** | Multi-label CPT and ICD-10-CM coding of clinical notes | `coding_bench/` | MDACE Profee annotations over MIMIC-III notes |
+
+### Data used in the ambient listening and summarization work
+
+| Experiment | Data | What is used |
+|---|---|---|
+| ASR word error rate | Six institutional conversations recorded at IU Indianapolis | Audio and reference transcripts |
+| ASR word error rate | Kaggle Medical Speech, Transcription, and Intent | Short single-speaker utterances |
+| ASR word error rate | PriMock57 | 57 mock primary care consultations, audio |
+| ASR word error rate | Fareez OSCE | 272 simulated interviews, audio |
+| Note schema library, built once offline | 1,000 MIMIC-IV notes | Structure-only outlines (section, test and diagnosis names, with no values, dates or narrative), extracted with a locally hosted MedGemma-27B. Not redistributed here |
+| Seven-model reference-based note evaluation | Six institutional cases | Transcript, OpenEMR chart extract and a manually written reference SOAP note |
+| Blinded clinician evaluation and automated metrics | 40 of the 272 Fareez OSCE conversations | Gold speaker-labelled transcript (not ASR output), a paired chart from the OpenEMR training instance (a de-identified MIMIC-IV-derived record, matched on condition) and two retrieved note outlines |
+| RAG ablations | The six institutional cases and the 40 Fareez conversations | Same inputs with one factor changed |
+
+MIMIC-IV has two roles: its notes supply the structure of the generated note, and MIMIC-IV-derived records in the OpenEMR training instance supply the chart paired with each Fareez conversation. The conversations themselves come from the institutional recordings and from Fareez OSCE. The OpenEMR training instance holds 11,030 patients: MIMIC-IV-derived records, Synthea-generated records added on top, and the six institutional case records. The CQL-CDS and automated coding sections further down are separate studies.
+
+## Ambient listening: ASR Model Evaluation (Word Error Rate)
+
+Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medical transcription across four datasets:
+
+1. **Institutional Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
+2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (~380 utterances)
+3. **PriMock57**: 57 primary care mock consultations from [PriMock57](https://github.com/babylonhealth/primock57) (~9 hours, real clinicians, utterance-level TextGrid transcripts)
+4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (51.9 hours of audio, 5 medical specialties)
+
+### Models Evaluated
+
+| Model | Provider | Notes |
+|-------|----------|-------|
+| Whisper Large v3 Turbo | OpenAI | Fast, accurate general-purpose ASR |
+| Whisper Large v3 | OpenAI | Higher accuracy, slower than turbo |
+| Canary-1B-v2 | NVIDIA | Multi-task ASR from NeMo toolkit |
+| Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
+| **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); Fareez OOM on RNN-T decoder, CPU-mode pending |
+| **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); **best Fareez WER 14.50%** |
+| Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
+| MedASR | Google | Conformer architecture pre-trained for medical dictation |
+
+### Latest Results
+
+#### Average WER (%) across all 4 datasets
+
+Rows sorted by mean rank across datasets. Bold = best in that column.
+
+| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=272) |
+|-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
+| **Voxtral Mini 3B**       | **5.71**  | 15.33      | 25.15          | **14.50**           |
+| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 20.17 †             |
+| Parakeet TDT 0.6B v2      | —         | **14.57**  | 18.16          | 18.63 †             |
+| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 21.29               |
+| Groq Whisper v3 Turbo     | 9.60      | **14.91**  | 18.87          | 19.54               |
+| Whisper Edge              | 9.93      | 35.01      | —              | —                   |
+| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 24.27               |
+| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 23.33 *             |
+| MedASR                    | 44.01     | 39.25      | 64.59          | 47.53               |
+
+† 251/272 files processed (21 exceeded A100 80GB memory on RNN-T decoder).
+* 84/272 files (Modal billing limit).
+"—" = not evaluated on that dataset.
+
+**Dataset-level headline numbers:**
+- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
+- Kaggle (~385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
+- PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
+- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
+
+**Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
+- **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
+- **Parakeet TDT 1.1B** remains best on PriMock57 (17.06%) and is the recommended fallback for high-throughput / low-latency deployments (~1–3 s/file).
+- **Parakeet TDT 0.6B v2** beats its 1.1B parent on Fareez (18.63% vs 20.17%) at half the parameter count — recommended ASR if Voxtral's per-file latency is prohibitive.
+- **Canary** delivers consistent ~21% WER across all datasets with zero failures.
+- **MedASR** has significantly higher WER on conversational speech (47-65%) vs shorter medical dictation.
+- All models show higher WER on full conversations vs short utterances, as expected.
+
+> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
+
+## Ambient listening: SOAP Note Generation and Blinded Clinician Evaluation
+
+This repository includes an evaluation of LLM models for generating medical discharge summaries in SOAP format using Retrieval-Augmented Generation (RAG). We test multiple models on their ability to create structured clinical summaries from doctor-patient transcripts and electronic health records.
+
+**What is RAG?** Retrieval-Augmented Generation combines language models with a vector database to retrieve relevant context (SOAP note schemas from MIMIC Clinical Notes) before generating summaries. This ensures outputs follow proper clinical documentation structure.
+
+**Vector Database**: ChromaDB hosted on Modal Volume containing SOAP note structures extracted from MIMIC Clinical Notes. Uses **all-MiniLM-L6-v2** for semantic retrieval of top 2 relevant schemas based on detected disease.
+
+**Test Dataset**: 6 patient test cases with doctor-patient transcripts, OpenEMR extracts, and reference summaries for evaluation.
+
+### Models Evaluated
+
+| Model | Provider | Size | Infrastructure | Notes |
+|-------|----------|------|----------------|-------|
+| MedGemma 4B-IT | Google | 4B | Modal (A10G GPU) | Healthcare-specialized model |
+| MedGemma 27B 4-bit | Google | 27B | Modal (A10G GPU) | Quantized healthcare model |
+| Llama 3.1 8B Instruct | Meta | 8B | Modal (A10G GPU) | vLLM for fast inference |
+| Qwen 3 32B | Alibaba | 32B | Modal (A10G GPU) | General-purpose |
+| GPT-OSS 20B | Groq | 20B | Groq API | Fast inference |
+| GPT-OSS 120B | Groq | 120B | Groq API | Large model |
+| Llama 4 Scout | Groq | - | Groq API | Latest Llama generation |
+
+### Results
+
+Results are aggregated across 3 independent runs using `rag_models/evaluation/aggregate_results.py`.
+
+**Evaluation Metrics:**
+- **BLEU & ROUGE-L**: Lexical overlap and structural recall
+- **SBERT Similarity**: Global semantic coherence (0.80-0.90 indicates clinical equivalence)
+- **BERTScore F1**: Local semantic accuracy for clinical details
+- **SciSpaCy/MedCAT Entity Recall**: Medical entity extraction coverage
+
+### Fareez OSCE Experiment (40 Conversations x 6 Models, 239 Rated Notes)
+
+**Dataset**: 40 conversations from [Fareez et al.](https://springernature.figshare.com/collections/5545842) balanced across 5 medical specialties (20 RES, 10 MSK, 5 GAS, 4 CAR, 1 DER). Each conversation paired with a condition-matched, MIMIC-IV-derived chart from the OpenEMR training instance (11,030 patients in total).
+
+**Design**: All models use the same pre-detected conditions (via Llama 3.3 70B) for ChromaDB schema retrieval, isolating summary generation quality as the only variable.
+
+| Model | Size | Infrastructure | Summaries | Avg Time | Avg Chars |
+|-------|------|----------------|-----------|----------|-----------|
+| GPT-OSS 120B | 120B | Groq (reasoning API) | 40/40 | 5.4s | 7,072 |
+| Qwen3 32B | 32B | Groq API | 40/40 | 4.3s | 5,568 |
+| GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.9s | 5,275 |
+| MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 44.5s | 2,741 |
+| Qwen3.8 27B (round two) | 27B | Groq API | 40/40 | 8.9s | 6,290 |
+| LLaMA 4 Scout (round two) | 17B | Amazon Bedrock | 40/40 | 5.5s | 3,421 |
+
+**Clinician Evaluation**: 3 physician fellows (GI, IR, ER) independently rated the notes on 6 dimensions using 5-point Likert scales adapted from PDQI-9 and QNOTE, in two blinded rounds. Round one covered four models (159 notes, 477 ratings; the one failed MedGemma 4B generation, MSK0037, is excluded). Round two added Qwen3.8 27B and LLaMA 4 Scout (80 notes, 240 ratings) and repeated 15 unmarked round-one notes per rater. The total is 239 notes and 717 ratings. Round-two rating files hold scores only. Inter-rater agreement uses Gwet's AC2 (ordinal weights) and Krippendorff's alpha. Models are compared with a Friedman test, Bonferroni-corrected pairwise Wilcoxon signed-rank tests, and cumulative link mixed models with a round effect.
+
+#### Clinician Rating Results (Mean (SD), 5-point Likert)
+
+| Model | Ratings | Accuracy | Completeness | Organization | Conciseness | Clinical Utility | Overall Quality | Composite |
+|-------|---------|----------|--------------|--------------|-------------|------------------|-----------------|-----------|
+| Qwen3.8 27B | 120 | 2.85 (0.83) | 4.22 (0.46) | 4.88 (0.33) | 3.28 (0.68) | 3.67 (0.80) | 3.54 (0.68) | 3.74 |
+| GPT-OSS 120B | 120 | 2.70 (0.90) | 4.14 (0.57) | 5.00 (0.00) | 3.64 (0.99) | 3.54 (0.88) | 3.44 (0.86) | 3.74 |
+| GPT-OSS 20B | 120 | 2.62 (0.92) | 3.92 (0.64) | 5.00 (0.00) | 3.92 (0.78) | 3.47 (0.85) | 3.35 (0.86) | 3.71 |
+| Qwen3 32B | 120 | 2.50 (0.90) | 3.83 (0.62) | 4.94 (0.27) | 3.70 (0.71) | 3.42 (0.91) | 3.29 (0.90) | 3.61 |
+| MedGemma 4B | 117 | 2.41 (0.79) | 3.02 (0.68) | 3.98 (1.02) | 3.39 (1.21) | 2.66 (0.81) | 2.55 (0.90) | 3.00 |
+| LLaMA 4 Scout | 120 | 2.10 (0.59) | 3.11 (0.46) | 3.67 (0.92) | 3.21 (0.73) | 2.58 (0.57) | 2.52 (0.53) | 2.86 |
+
+**Inter-rater agreement, both rounds (239 notes):** Gwet's AC2 ranged from 0.71 to 0.93 across dimensions and Krippendorff's alpha from 0.04 to 0.51 (accuracy 0.22). AC2 is high partly because scores cluster in a narrow range; alpha shows that raters agreed much less on which notes were better. Per-round and pairwise values are in `rag_models/results/revision/six_model_output.txt`.
+
+**Friedman test over six models** (39 complete conversation blocks, all P<.001): Organization W=0.88, Completeness W=0.77, Clinical Utility W=0.52, Overall Quality W=0.51, Conciseness W=0.32, Accuracy W=0.26.
+
+#### Automated Metrics (40 Conversations, transcript as reference)
+
+| Model | BLEU | ROUGE-L | SBERT Similarity | BERTScore F1 | MedCAT Entity Recall | Avg Words |
+|-------|------|---------|------------------|--------------|----------------------|-----------|
+| Qwen3.8 27B | 0.025 | 0.143 | 0.504 | 0.803 | 0.489 | 927 |
+| GPT-OSS 120B | 0.011 | 0.115 | 0.511 | 0.799 | 0.429 | 1,005 |
+| GPT-OSS 20B | 0.009 | 0.118 | 0.529 | 0.799 | 0.396 | 756 |
+| Qwen3 32B | 0.015 | 0.129 | 0.491 | 0.802 | 0.404 | 831 |
+| MedGemma 4B | 0.011 | 0.145 | 0.506 | 0.801 | 0.306 | 565 |
+| LLaMA 4 Scout | 0.014 | 0.147 | 0.534 | 0.807 | 0.359 | 529 |
+
+**Key Findings:**
+- **Qwen3.8 27B and GPT-OSS 120B** had the highest composite clinician rating (3.74/5), followed by GPT-OSS 20B (3.71) and Qwen3 32B (3.61). MedGemma 4B (3.00) and LLaMA 4 Scout (2.86) were rated lowest.
+- **Accuracy was the weakest dimension for every model** (2.10 to 2.85), and it separated the models least (W=0.26).
+- **LLaMA 4 Scout had the highest BERTScore F1, SBERT similarity and ROUGE-L but the lowest clinician ratings.** At the note level BERTScore was unrelated to the composite rating (Spearman rho -0.06, 95% CI -0.22 to 0.10).
+- **Entity recall tracked completeness.** MedCAT entity recall correlated with rated completeness (rho 0.54, 95% CI 0.43 to 0.65; 0.36 after adjusting for note length).
+- The scripts and outputs for these analyses are listed in [`scripts/README_revision.md`](scripts/README_revision.md).
+
+**Full-precision MedGemma 27B (institutional six cases):** `google/medgemma-27b-text-it` in bfloat16 on a Modal A100-80GB, three passes, gave BLEU 0.092, ROUGE-L 0.353, SBERT 0.810, BERTScore F1 0.871, scispaCy recall 0.618 and MedCAT recall 0.629. Every metric is within 0.013 of the 4-bit run. Per-run files are in `rag_models/results/institutional/medgemma-27b/`.
+
+### RAG Ablation (Institutional 6-Case)
+
+Three ablations on the same six institutional conversations, 3 runs per LLM (7 LLMs × 2 conditions = 42 runs for the no-RAG baseline alone):
+
+1. **No-RAG baseline** — schema retrieval disabled.
+2. **Retrieval-depth sweep** — k ∈ {1, 2, 3, 5}.
+3. **Embedding-model substitution** — all-MiniLM-L6-v2 vs. ClinicalBERT vs. PubMedBERT.
+
+Canonical numeric outputs and a reproducibility notebook:
+
+- [`rag_models/results/institutional/institutional_rag_6case.csv`](rag_models/results/institutional/institutional_rag_6case.csv) — RAG on (k=2).
+- [`rag_models/results/institutional/institutional_norag_6case.csv`](rag_models/results/institutional/institutional_norag_6case.csv) — no-RAG baseline.
+- [`rag_models/results/institutional/ablation_analysis.ipynb`](rag_models/results/institutional/ablation_analysis.ipynb) — loads both CSVs, reports deltas, and recomputes every ablation figure quoted below.
+
+Findings: disabling retrieval degrades the entity- and structure-sensitive metrics across all seven LLMs (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060); BLEU and SBERT show the same directional pattern but several cells (e.g., GPT-OSS-120B BLEU 0.071→0.069) are within three-run variance. k=3 and k=5 degraded quality vs. k=2 on the gold-referenced n=6 cases; on the Fareez transcript-reference ablation (Table 2c) the same sweep fell within run-to-run variance. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
+
+### RAG Ablation Replication on Fareez n=40
+
+The n=6 ablation above was replicated on the 40 Fareez OSCE conversations used for clinician evaluation, with the four clinician-evaluated models (GPT-OSS-120B/20B, Qwen3-32B, MedGemma-4B) plus temperature/prompt sweeps on the top-2 models. **1,354 summaries across 12 cells × 4 models** (32 ablation cells in total).
+
+Canonical artefacts in [`rag_models/results/fareez/ablations/`](rag_models/results/fareez/ablations/):
+
+- `fareez_ablation_metrics.csv` — per-summary text + entity metrics (1,354 rows)
+- `ablation_means.csv` — per-(cell, model) means
+- `ablation_deltas.csv` — production-minus-cell deltas
+- `ablation_bootstrap_ci.csv` — paired bootstrap 95% CIs (B=5000)
+- `ablation_wilcoxon.csv` — Wilcoxon signed-rank p-values
+- `ablation_analysis_n40.ipynb` — reproducibility notebook
+
+**Headline result:** Of 136 production-vs-cell comparisons across 4 metrics, **only 26 (19%) had bootstrap CIs that excluded zero**, almost all in the prompt-variant cells (`prompt_minimal` 8/4, `prompt_hallucination_guarded` 6/4). The no-RAG, k-sweep, and embedding-substitution cells produced effects within run-to-run noise on the transcript-as-reference metric set. This is consistent with — and methodologically reinforces — the paper's central finding that automated metrics fail to discriminate the model-quality differences clinicians clearly identified (composite 2.95–3.74 on the same 40 conversations).
+
+The n=6 institutional ablation results (evaluated against gold-standard SOAP references) remain the more sensitive indicator of the RAG pipeline's contribution; the n=40 replication is a sensitivity check rather than a replacement.
+
+```bash
+cd rag_models
+
+# Run Groq models locally
+python models/run_fareez_local.py --output-dir results/fareez
+
+# Run MedGemma on Modal
+HF_TOKEN=your_token modal run pipeline/run_fareez_summaries.py --output-dir results/fareez
+
+# Generate randomized rating packets for clinician evaluation
+python clinician_validation/generate_rating_packets.py --output-dir rating_packets
+
+# Run clinician rating analysis
+python clinician_validation/analyze_ratings.py
+
+# Round two: models/build_fareez_prompts.py, models/run_fareez_round2_groq.py, models/run_fareez_round2_bedrock.py
+# and clinician_validation/generate_round2_packets.py (arguments are in each docstring); analyses in scripts/README_revision.md
+```
+
+## CQL-CDS: ELM JSON Validation (Clinical Decision Support Validation)
 
 Evaluation of LLM models for validating clinical decision support logic. Tests whether LLMs can identify if ELM (Expression Logical Model) JSON implementations correctly implement Clinical Practice Guidelines (CPG).
 
@@ -101,199 +318,6 @@ Single-run accuracy at temperature=0.1. Bold indicates the best (or tied-best) s
 - Qwen3-32B's single-run accuracy (92.7%) at standard/few-shot is within sampling variance of its 5-trial mean (90.7% ± 2.0%) from the main table.
 
 Detailed analysis available in the [Jupyter notebooks](cdr_elmjson_validator/notebooks/).
-
-## RAG Medical Summarization (SOAP Note Generation)
-
-This repository includes an evaluation of LLM models for generating medical discharge summaries in SOAP format using Retrieval-Augmented Generation (RAG). We test multiple models on their ability to create structured clinical summaries from doctor-patient transcripts and electronic health records.
-
-**What is RAG?** Retrieval-Augmented Generation combines language models with a vector database to retrieve relevant context (SOAP note schemas from MIMIC Clinical Notes) before generating summaries. This ensures outputs follow proper clinical documentation structure.
-
-**Vector Database**: ChromaDB hosted on Modal Volume containing SOAP note structures extracted from MIMIC Clinical Notes. Uses **all-MiniLM-L6-v2** for semantic retrieval of top 2 relevant schemas based on detected disease.
-
-**Test Dataset**: 6 patient test cases with doctor-patient transcripts, OpenEMR extracts, and reference summaries for evaluation.
-
-### Models Evaluated
-
-| Model | Provider | Size | Infrastructure | Notes |
-|-------|----------|------|----------------|-------|
-| MedGemma 4B-IT | Google | 4B | Modal (A10G GPU) | Healthcare-specialized model |
-| MedGemma 27B 4-bit | Google | 27B | Modal (A10G GPU) | Quantized healthcare model |
-| Llama 3.1 8B Instruct | Meta | 8B | Modal (A10G GPU) | vLLM for fast inference |
-| Qwen 3 32B | Alibaba | 32B | Modal (A10G GPU) | General-purpose |
-| GPT-OSS 20B | Groq | 20B | Groq API | Fast inference |
-| GPT-OSS 120B | Groq | 120B | Groq API | Large model |
-| Llama 4 Scout | Groq | - | Groq API | Latest Llama generation |
-
-### Results
-
-Results are aggregated across 3 independent runs using `rag_models/evaluation/aggregate_results.py`.
-
-**Evaluation Metrics:**
-- **BLEU & ROUGE-L**: Lexical overlap and structural recall
-- **SBERT Similarity**: Global semantic coherence (0.80-0.90 indicates clinical equivalence)
-- **BERTScore F1**: Local semantic accuracy for clinical details
-- **SciSpaCy/MedCAT Entity Recall**: Medical entity extraction coverage
-
-### Fareez OSCE Experiment (40 Conversations x 4 Models = 160 Summaries)
-
-**Dataset**: 40 conversations from [Fareez et al.](https://springernature.figshare.com/collections/5545842) balanced across 5 medical specialties (20 RES, 10 MSK, 5 GAS, 4 CAR, 1 DER). Each conversation paired with condition-matched EHR data from OpenEMR (11,030 synthetic patients).
-
-**Design**: All models use the same pre-detected conditions (via Llama 3.3 70B) for ChromaDB schema retrieval, isolating summary generation quality as the only variable.
-
-| Model | Size | Infrastructure | Summaries | Avg Time | Avg Chars |
-|-------|------|----------------|-----------|----------|-----------|
-| GPT-OSS 120B | 120B | Groq (reasoning API) | 40/40 | 5.4s | 7,072 |
-| Qwen3 32B | 32B | Groq API | 40/40 | 4.3s | 5,568 |
-| GPT-OSS 20B | 20B | Groq (reasoning API) | 40/40 | 2.9s | 5,275 |
-| MedGemma 4B-IT | 4B | Modal (A10G GPU) | 39/40 | 44.5s | 2,741 |
-
-**Clinician Evaluation**: 3 physician fellows (GI, IR, ER) independently rated all 160 summaries on 6 dimensions using 5-point Likert scales adapted from PDQI-9 and QNOTE. Inter-rater reliability via Gwet's AC2 (ordinal weights), model comparison via Friedman test with Bonferroni-corrected pairwise Wilcoxon signed-rank tests.
-
-#### Clinician Rating Results (Mean(SD), 5-point Likert)
-
-| Model | Accuracy | Completeness | Organization | Conciseness | Clinical Utility | Overall Quality | Composite |
-|-------|----------|--------------|--------------|-------------|------------------|-----------------|-----------|
-| GPT-OSS 120B | 2.70(0.90) | **4.14(0.57)** | **5.00(0.00)** | 3.64(0.99) | **3.54(0.88)** | **3.44(0.86)** | **3.74** |
-| GPT-OSS 20B | 2.62(0.92) | 3.92(0.64) | **5.00(0.00)** | **3.92(0.78)** | 3.47(0.85) | 3.35(0.86) | 3.71 |
-| Qwen3 32B | 2.50(0.90) | 3.83(0.62) | 4.94(0.27) | 3.70(0.71) | 3.42(0.91) | 3.29(0.90) | 3.61 |
-| MedGemma 4B | 2.38(0.81) | 2.97(0.74) | 3.91(1.11) | 3.35(1.23) | 2.62(0.84) | 2.51(0.92) | 2.95 |
-
-**Inter-Rater Reliability (Gwet's AC2, ordinal weights). Interpretation labels follow Landis & Koch (1977):**
-
-| Dimension | AC2 | 95% CI | Interpretation |
-|-----------|-----|--------|----------------|
-| Organization | 0.971 | [0.960, 0.982] | Almost perfect (note: ceiling effect — 240/480 ratings at 5.00) |
-| Completeness | 0.874 | [0.851, 0.898] | Almost perfect |
-| Overall Quality | 0.770 | [0.729, 0.810] | Substantial |
-| Clinical Utility | 0.758 | [0.720, 0.795] | Substantial |
-| Accuracy | 0.708 | [0.663, 0.752] | Substantial |
-| Conciseness | 0.654 | [0.612, 0.695] | Substantial (lowest of six dimensions; IR fellow rated 4.39 vs ER fellow 2.84 — a 1.55-pt systematic offset that suggests the construct lacks reliable anchoring on the 5-pt scale) |
-
-**Friedman Test** (significant dimensions): Organization (p<0.001, W=0.95), Completeness (p<0.001, W=0.74), Clinical Utility (p<0.001, W=0.43), Overall Quality (p<0.001, W=0.40)
-
-#### Automated Metrics (40 Conversations)
-
-| Model | BLEU | ROUGE-L | SBERT Coherence | BERTScore F1 | Avg Chars |
-|-------|------|---------|-----------------|--------------|-----------|
-| GPT-OSS 120B | 0.011 | 0.115 | 0.511 | 0.800 | 7,072 |
-| GPT-OSS 20B | 0.009 | 0.118 | 0.529 | 0.800 | 5,275 |
-| Qwen3 32B | 0.015 | 0.129 | 0.491 | 0.803 | 5,568 |
-| MedGemma 4B | 0.011 | 0.145 | 0.506 | 0.803 | 3,729 |
-
-**Key Findings:**
-- **GPT-OSS 120B** achieved the highest composite clinician rating (3.74/5), with perfect organization scores and strongest completeness
-- **Organization** showed near-perfect agreement across raters (AC2=0.971) and strongest model differentiation (W=0.95), with all three large models achieving near-perfect scores vs. MedGemma's 3.91
-- **MedGemma 4B** scored significantly lower on completeness (2.97 vs 3.83-4.14) and clinical utility (2.62 vs 3.42-3.54), despite comparable BERTScore F1 (0.803) — automated metrics do not capture clinical completeness
-- Automated text overlap metrics (BLEU, ROUGE-L) showed minimal variation across models, confirming clinician evaluation captures quality differences that automated metrics miss
-
-### RAG Ablation (Institutional 6-Case)
-
-Three ablations on the same six institutional conversations, 3 runs per LLM (7 LLMs × 2 conditions = 42 runs for the no-RAG baseline alone):
-
-1. **No-RAG baseline** — schema retrieval disabled.
-2. **Retrieval-depth sweep** — k ∈ {1, 2, 3, 5}.
-3. **Embedding-model substitution** — all-MiniLM-L6-v2 vs. ClinicalBERT vs. PubMedBERT.
-
-Canonical numeric outputs and a reproducibility notebook:
-
-- [`rag_models/results/institutional/institutional_rag_6case.csv`](rag_models/results/institutional/institutional_rag_6case.csv) — RAG on (k=2).
-- [`rag_models/results/institutional/institutional_norag_6case.csv`](rag_models/results/institutional/institutional_norag_6case.csv) — no-RAG baseline.
-- [`rag_models/results/institutional/ablation_analysis.ipynb`](rag_models/results/institutional/ablation_analysis.ipynb) — loads both CSVs, reports deltas, and verifies every quantitative claim made in the paper's ablation paragraphs.
-
-Findings: disabling retrieval degrades the entity- and structure-sensitive metrics across all seven LLMs (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060); BLEU and SBERT show the same directional pattern but several cells (e.g., GPT-OSS-120B BLEU 0.071→0.069) are within three-run variance. k=3 and k=5 degraded quality vs. k=2 on the gold-referenced n=6 cases; on the Fareez transcript-reference ablation (Table 2c) the same sweep fell within run-to-run variance. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
-
-### RAG Ablation Replication on Fareez n=40 (Table 2c)
-
-The n=6 ablation above was replicated on the 40 Fareez OSCE conversations used for clinician evaluation, with the four clinician-evaluated models (GPT-OSS-120B/20B, Qwen3-32B, MedGemma-4B) plus temperature/prompt sweeps on the top-2 models. **1,354 summaries across 12 cells × 4 models** (32 ablation cells in total).
-
-Canonical artefacts in [`rag_models/results/fareez/ablations/`](rag_models/results/fareez/ablations/):
-
-- `fareez_ablation_metrics.csv` — per-summary text + entity metrics (1,354 rows)
-- `ablation_means.csv` — per-(cell, model) means
-- `ablation_deltas.csv` — production-minus-cell deltas
-- `ablation_bootstrap_ci.csv` — paired bootstrap 95% CIs (B=5000)
-- `ablation_wilcoxon.csv` — Wilcoxon signed-rank p-values
-- `ablation_analysis_n40.ipynb` — reproducibility notebook
-
-**Headline result:** Of 136 production-vs-cell comparisons across 4 metrics, **only 26 (19%) had bootstrap CIs that excluded zero**, almost all in the prompt-variant cells (`prompt_minimal` 8/4, `prompt_hallucination_guarded` 6/4). The no-RAG, k-sweep, and embedding-substitution cells produced effects within run-to-run noise on the transcript-as-reference metric set. This is consistent with — and methodologically reinforces — the paper's central finding that automated metrics fail to discriminate the model-quality differences clinicians clearly identified (composite 2.95–3.74 on the same 40 conversations).
-
-The n=6 institutional ablation results (Table 2b, evaluated against gold-standard SOAP references) remain the more sensitive indicator of the RAG pipeline's contribution; the n=40 replication is a sensitivity check rather than a replacement.
-
-```bash
-cd rag_models
-
-# Run Groq models locally
-python models/run_fareez_local.py --output-dir results/fareez
-
-# Run MedGemma on Modal
-HF_TOKEN=your_token modal run pipeline/run_fareez_summaries.py --output-dir results/fareez
-
-# Generate randomized rating packets for clinician evaluation
-python clinician_validation/generate_rating_packets.py --output-dir rating_packets
-
-# Run clinician rating analysis
-python clinician_validation/analyze_ratings.py
-```
-
-## ASR Model Evaluation (Word Error Rate)
-
-Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medical transcription across four datasets:
-
-1. **Institutional Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
-2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (~380 utterances)
-3. **PriMock57**: 57 primary care mock consultations from [PriMock57](https://github.com/babylonhealth/primock57) (~9 hours, real clinicians, utterance-level TextGrid transcripts)
-4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (51.9 hours of audio, 5 medical specialties)
-
-### Models Evaluated
-
-| Model | Provider | Notes |
-|-------|----------|-------|
-| Whisper Large v3 Turbo | OpenAI | Fast, accurate general-purpose ASR |
-| Whisper Large v3 | OpenAI | Higher accuracy, slower than turbo |
-| Canary-1B-v2 | NVIDIA | Multi-task ASR from NeMo toolkit |
-| Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
-| **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); Fareez OOM on RNN-T decoder, CPU-mode pending |
-| **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); **best Fareez WER 14.50%** |
-| Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
-| MedASR | Google | Conformer architecture pre-trained for medical dictation |
-
-### Latest Results
-
-#### Average WER (%) across all 4 datasets
-
-Rows sorted by mean rank across datasets. Bold = best in that column.
-
-| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=272) |
-|-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
-| **Voxtral Mini 3B**       | **5.71**  | 15.33      | 25.15          | **14.50**           |
-| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 20.17 †             |
-| Parakeet TDT 0.6B v2      | —         | **14.57**  | 18.16          | 18.63 †             |
-| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 21.29               |
-| Groq Whisper v3 Turbo     | 9.60      | **14.91**  | 18.87          | 19.54               |
-| Whisper Edge              | 9.93      | 35.01      | —              | —                   |
-| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 24.27               |
-| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 23.33 *             |
-| MedASR                    | 44.01     | 39.25      | 64.59          | 47.53               |
-
-† 251/272 files processed (21 exceeded A100 80GB memory on RNN-T decoder).
-* 84/272 files (Modal billing limit).
-"—" = not evaluated on that dataset.
-
-**Dataset-level headline numbers:**
-- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
-- Kaggle (~385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
-- PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
-- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
-
-**Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
-- **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
-- **Parakeet TDT 1.1B** remains best on PriMock57 (17.06%) and is the recommended fallback for high-throughput / low-latency deployments (~1–3 s/file).
-- **Parakeet TDT 0.6B v2** beats its 1.1B parent on Fareez (18.63% vs 20.17%) at half the parameter count — recommended ASR if Voxtral's per-file latency is prohibitive.
-- **Canary** delivers consistent ~21% WER across all datasets with zero failures.
-- **MedASR** has significantly higher WER on conversational speech (47-65%) vs shorter medical dictation.
-- All models show higher WER on full conversations vs short utterances, as expected.
-
-> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
 
 ## Automated CPT and ICD-10 Coding
 
@@ -421,7 +445,7 @@ python medasr_wer.py --kaggle --output-dir ./results
 cd data && git clone https://github.com/babylonhealth/primock57.git && cd ..
 
 # Download Fareez OSCE (~1GB from Figshare)
-# See manuscript/EXPERIMENT_IMPROVEMENT_PLAN.md for download instructions
+# https://springernature.figshare.com/collections/5545842 ; unpack under openemr_whisper_wer/data/fareez_osce/
 
 # Run evaluations on local datasets
 python whisper_wer.py --local-dataset primock57 --output results/primock57-whisper-turbo.csv
@@ -435,7 +459,7 @@ python medasr_wer.py --local-dataset primock57 --output results/primock57-medasr
 python whisper_wer.py --local-dataset fareez --output results/fareez-whisper-turbo.csv
 ```
 
-#### Generate Publication Tables
+#### Generate Summary Tables
 ```bash
 cd .. && python scripts/generate_tables.py
 ```
@@ -468,7 +492,7 @@ cdr_elmjson_validator/
 ├── run_new_ablation_multi_trial.py # Ablation multi-trial for OpenRouter + OpenAI
 ├── create_expanded_cases.py # Script that generated 6 parametric variants
 ├── create_semantic_cases.py # Script that generated 8 semantic error cases
-├── generate_figure3_heatmap.py   # Per-case heatmap (Figure 3 in paper)
+├── generate_figure3_heatmap.py   # Per-case heatmap
 ├── test_data/              # 41 ELM JSON files, CPG markdown, ground_truth.json, BENCHMARK.md
 ├── notebooks/              # 4 Jupyter notebooks with pre-rendered analysis
 │   ├── 01_elm_validation_results.ipynb
@@ -520,7 +544,7 @@ rag_models/
 └── vectorDB/                        # ChromaDB vector database
 
 scripts/
-└── generate_tables.py      # Generate publication tables from all results
+└── generate_tables.py      # Generate summary tables from all results
 
 coding_bench/
 ├── data/                            # tiered gold set build, manifests, checksums
