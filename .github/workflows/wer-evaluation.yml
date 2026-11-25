@@ -20,10 +20,12 @@ on:
 #        description: 'Upload vector database to Modal volume'
 #        type: boolean
 #        default: false
-  push:
-    paths:
-      - 'openemr_whisper_wer/**'
-      - '.github/workflows/wer-evaluation.yml'
+  # Push trigger disabled: these runs spend Modal and API credit, so start them
+  # manually with workflow_dispatch. Re-enable by uncommenting below.
+  # push:
+  #   paths:
+  #     - 'openemr_whisper_wer/**'
+  #     - '.github/workflows/wer-evaluation.yml'
 
 jobs:
   # ============================================

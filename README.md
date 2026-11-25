@@ -466,9 +466,8 @@ cd .. && python scripts/generate_tables.py
 
 ### GitHub Actions
 
-The evaluation workflows run automatically on:
-- Push to `openemr_whisper_wer/**`, `cdr_elmjson_validator/**` files
-- Manual trigger via workflow dispatch
+- **Coding Bench** runs on pushes to `coding_bench/**` and by manual dispatch.
+- **RAG Medical Summarization**, **WER Evaluation** and **ELM JSON Validation** run by manual dispatch only, because each run spends Modal and API credit.
 
 **Caching**: Results are cached based on script content hash. Evaluations are skipped if the model script and utilities haven't changed.
 

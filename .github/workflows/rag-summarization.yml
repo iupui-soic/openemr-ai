@@ -31,10 +31,12 @@ on:
         description: 'Run Groq Llama-4-Scout-17B model'
         type: boolean
         default: true
-  push:
-    paths:
-      - 'rag_models/**'
-      - '.github/workflows/rag-summarization.yml'
+  # Push trigger disabled: these runs spend Modal and API credit, so start them
+  # manually with workflow_dispatch. Re-enable by uncommenting below.
+  # push:
+  #   paths:
+  #     - 'rag_models/**'
+  #     - '.github/workflows/rag-summarization.yml'
 
 env:
   PYTHON_VERSION: '3.11'
