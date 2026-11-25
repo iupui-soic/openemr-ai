@@ -28,7 +28,7 @@ MIMIC-IV has two roles: its notes supply the structure of the generated note, an
 Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medical transcription across four datasets:
 
 1. **Institutional Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
-2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (~380 utterances)
+2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (385 utterances)
 3. **PriMock57**: 57 primary care mock consultations from [PriMock57](https://github.com/babylonhealth/primock57) (~9 hours, real clinicians, utterance-level TextGrid transcripts)
 4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (51.9 hours of audio, 5 medical specialties)
 
@@ -40,8 +40,8 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 | Whisper Large v3 | OpenAI | Higher accuracy, slower than turbo |
 | Canary-1B-v2 | NVIDIA | Multi-task ASR from NeMo toolkit |
 | Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
-| **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); Fareez OOM on RNN-T decoder, CPU-mode pending |
-| **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); **best Fareez WER 14.50%** |
+| **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); lowest Fareez WER (12.51%) on the 250 files it completed |
+| **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); lowest WER on the institutional recordings (5.71%) |
 | Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
 | MedASR | Google | Conformer architecture pre-trained for medical dictation |
 
@@ -49,37 +49,41 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 
 #### Average WER (%) across all 4 datasets
 
-Rows sorted by mean rank across datasets. Bold = best in that column.
+Bold = lowest in that column.
 
-| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=272) |
+| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=270) |
 |-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
-| **Voxtral Mini 3B**       | **5.71**  | 15.33      | 25.15          | **14.50**           |
-| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 20.17 †             |
-| Parakeet TDT 0.6B v2      | —         | **14.57**  | 18.16          | 18.63 †             |
-| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 21.29               |
-| Groq Whisper v3 Turbo     | 9.60      | **14.91**  | 18.87          | 19.54               |
-| Whisper Edge              | 9.93      | 35.01      | —              | —                   |
-| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 24.27               |
-| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 23.33 *             |
-| MedASR                    | 44.01     | 39.25      | 64.59          | 47.53               |
+| Voxtral Mini 3B           | **5.71**  | 15.33      | 25.15          | 13.87               |
+| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 14.19 †             |
+| Parakeet TDT 0.6B v2      | Not run   | **14.57**  | 18.16          | **12.51** †         |
+| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 15.25               |
+| Groq Whisper v3 Turbo     | 9.60      | 14.91      | 18.87          | 13.61               |
+| Whisper Edge              | 9.93      | 35.01      | Not run        | Not run             |
+| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 19.03               |
+| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 17.80 *             |
+| MedASR                    | 44.01     | 39.25      | 64.59          | 43.95               |
 
-† 251/272 files processed (21 exceeded A100 80GB memory on RNN-T decoder).
-* 84/272 files (Modal billing limit).
-"—" = not evaluated on that dataset.
+† 250 of 270 files; 20 long recordings failed with GPU out-of-memory errors.
+* 83 of 270 files; the run was stopped by a Modal billing limit.
+
+Fareez WER is computed with the "D:" and "P:" speaker labels removed from every reference. Two references with text-encoding errors (RES0002, RES0054) are excluded, which leaves 270 of the 272 files. Earlier versions of this table removed the labels for Voxtral Mini 3B only, which inflated the Fareez WER of every other model; those values (for example 14.50% for Voxtral and 18.63% for Parakeet TDT 0.6B v2) are superseded. Per-file values are in `rag_models/results/revision/fareez_wer_labels_removed.csv` and are reproduced by `scripts/revision_asr_fareez_wer.py`.
+
+On the 250 Fareez files completed by seven of the eight models, Parakeet TDT 0.6B v2 is still lowest (12.51%), followed by Voxtral Mini 3B (13.14%), Groq Whisper v3 Turbo (13.59%), and Parakeet TDT 1.1B (14.19%).
 
 **Dataset-level headline numbers:**
 - Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
-- Kaggle (~385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
+- Kaggle (385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
 - PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
-- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
+- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono; 270 scored): Parakeet TDT 0.6B v2 is lowest (12.51% on the 250 files it completed), followed by Groq Whisper v3 Turbo (13.61%) and Voxtral Mini 3B (13.87%), both on all 270 files.
 
-**Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
-- **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
-- **Parakeet TDT 1.1B** remains best on PriMock57 (17.06%) and is the recommended fallback for high-throughput / low-latency deployments (~1–3 s/file).
-- **Parakeet TDT 0.6B v2** beats its 1.1B parent on Fareez (18.63% vs 20.17%) at half the parameter count — recommended ASR if Voxtral's per-file latency is prohibitive.
-- **Canary** delivers consistent ~21% WER across all datasets with zero failures.
-- **MedASR** has significantly higher WER on conversational speech (47-65%) vs shorter medical dictation.
-- All models show higher WER on full conversations vs short utterances, as expected.
+**Key Findings (revised after the Fareez WER correction):**
+- **No model is best on every dataset.** Voxtral Mini 3B has the lowest WER on the institutional recordings (5.71%), Parakeet TDT 0.6B v2 on Fareez OSCE (12.51%) and Kaggle (14.57%), and Parakeet TDT 1.1B on PriMock57 (17.06%).
+- **The deployed transcription service runs Parakeet TDT 1.1B** on an A10G GPU (`smart-ambient-listening/transcription-service/modal_asr.py`). Any of the benchmarked models can be substituted without changes elsewhere.
+- **Voxtral Mini 3B** takes about 25 s per Fareez file on an L40S GPU, against 1 to 3 s for the Parakeet and Whisper Turbo models, and has the highest WER of the general-purpose models on PriMock57 (25.15%).
+- **Groq Whisper v3 Turbo** is within 4 percentage points of the best model on every dataset and completed every file.
+- **Parakeet TDT 0.6B v2** has lower Fareez WER than its 1.1B parent (12.51% vs 14.19% on the same 250 files) at about half the parameter count.
+- **Canary 1B-v2** completed every file, with WER from 8.58% to 21.54% across datasets.
+- **MedASR** has the highest WER on every dataset (39.25% to 64.59%).
 
 > View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
 
