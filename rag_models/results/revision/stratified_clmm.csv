@@ -1,0 +1,13 @@
+scope,dimension,n_ratings,df,lr_chi2,p,conv_sd,converged,or_gpt-oss-20b,or_qwen3-32b,or_medgemma-4b,or_qwen38_vs_llama4
+round_1,accuracy,477,3,8.4,.04,1.03,True,0.88 (0.54 to 1.43),0.64 (0.39 to 1.05),0.51 (0.31 to 0.85),
+round_1,completeness,477,3,247.3,<.001,1.42,True,0.36 (0.20 to 0.66),0.21 (0.11 to 0.39),0.01 (0.00 to 0.02),
+round_1,organization,477,3,279.4,<.001,1.73,True,Not estimable,Not estimable,Not estimable,
+round_1,conciseness,477,3,23.2,<.001,0.56,True,2.89 (1.68 to 4.99),1.15 (0.69 to 1.93),0.83 (0.48 to 1.43),
+round_1,clinical_utility,477,3,99.8,<.001,1.21,True,0.83 (0.51 to 1.36),0.78 (0.48 to 1.28),0.10 (0.06 to 0.17),
+round_1,overall_quality,477,3,92.0,<.001,1.2,True,0.81 (0.50 to 1.33),0.73 (0.44 to 1.19),0.10 (0.06 to 0.17),
+round_2,accuracy,240,1,85.6,<.001,1.4,True,,,,15.39 (7.94 to 29.81)
+round_2,completeness,240,1,235.9,<.001,0.0,True,,,,729.37 (147.99 to 3594.75)
+round_2,organization,240,1,209.0,<.001,0.77,True,,,,483269699.27 (0.00 to 62847500624726298537990036526202880.00)
+round_2,conciseness,240,1,0.7,.40,1.06,True,,,,1.26 (0.73 to 2.17)
+round_2,clinical_utility,240,1,155.4,<.001,1.67,True,,,,62.86 (27.29 to 144.76)
+round_2,overall_quality,240,1,162.3,<.001,1.7,True,,,,81.34 (32.86 to 201.33)

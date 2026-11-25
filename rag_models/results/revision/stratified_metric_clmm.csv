@@ -1,0 +1,397 @@
+scope,metric,dimension,n,or_per_sd,ci_lo,ci_hi,p,converged
+all six models,bleu,accuracy,717,1.1,0.88,1.36,0.398204901479117,True
+all six models,bleu,completeness,717,0.81,0.64,1.01,0.06568149835428355,True
+all six models,bleu,organization,717,0.69,0.54,0.89,0.0013140635179130196,True
+all six models,bleu,conciseness,717,0.72,0.58,0.89,0.0020477348542739695,True
+all six models,bleu,clinical_utility,717,0.88,0.7,1.1,0.2559120359629947,True
+all six models,bleu,overall_quality,717,0.85,0.68,1.07,0.16811897486903254,True
+all six models,rouge_l,accuracy,717,1.3,1.07,1.59,0.008893830918484594,True
+all six models,rouge_l,completeness,717,1.11,0.9,1.38,0.324030607869117,True
+all six models,rouge_l,organization,717,0.92,0.76,1.11,0.38608496602572684,True
+all six models,rouge_l,conciseness,717,0.94,0.77,1.14,0.5228139259867932,True
+all six models,rouge_l,clinical_utility,717,1.19,0.97,1.47,0.09599963860713193,True
+all six models,rouge_l,overall_quality,717,1.2,0.98,1.47,0.08547488256447969,True
+all six models,bert_f1,accuracy,717,1.18,0.98,1.44,0.0879479048903847,True
+all six models,bert_f1,completeness,717,1.09,0.88,1.36,0.4228825306222015,True
+all six models,bert_f1,organization,717,1.09,0.88,1.34,0.4482904686658432,True
+all six models,bert_f1,conciseness,717,1.15,0.95,1.38,0.14123976139292999,True
+all six models,bert_f1,clinical_utility,717,1.26,1.02,1.55,0.033607497587417316,True
+all six models,bert_f1,overall_quality,717,1.23,1.0,1.52,0.05321909093375433,True
+all six models,sbert_similarity,accuracy,717,1.15,0.95,1.4,0.15257057298576657,True
+all six models,sbert_similarity,completeness,717,1.25,1.03,1.52,0.02735044461937854,True
+all six models,sbert_similarity,organization,717,1.18,0.96,1.44,0.11200540098202334,True
+all six models,sbert_similarity,conciseness,717,1.16,0.98,1.36,0.08113606454488813,True
+all six models,sbert_similarity,clinical_utility,717,1.13,0.94,1.37,0.1920411324834459,True
+all six models,sbert_similarity,overall_quality,717,1.15,0.95,1.39,0.1478081540655814,True
+all six models,medcat_entity_recall,accuracy,717,1.77,1.42,2.22,1.8152418315008225e-07,True
+all six models,medcat_entity_recall,completeness,717,3.61,2.69,4.84,1.0841859521243285e-19,True
+all six models,medcat_entity_recall,organization,717,4.87,3.28,7.23,1.6548096572151347e-18,True
+all six models,medcat_entity_recall,conciseness,717,2.0,1.56,2.57,5.557290961091095e-09,True
+all six models,medcat_entity_recall,clinical_utility,717,2.8,2.21,3.56,9.533836874825503e-18,True
+all six models,medcat_entity_recall,overall_quality,717,2.86,2.24,3.65,7.317516439554008e-18,True
+all six models,medcat_entity_precision,accuracy,717,0.98,0.77,1.23,0.83221031001746,True
+all six models,medcat_entity_precision,completeness,717,0.48,0.35,0.64,3.1798669511805086e-07,True
+all six models,medcat_entity_precision,organization,717,0.21,0.14,0.31,2.2848758909365003e-15,True
+all six models,medcat_entity_precision,conciseness,717,0.43,0.32,0.58,6.863641508856577e-09,True
+all six models,medcat_entity_precision,clinical_utility,717,0.53,0.41,0.69,4.2803740692416166e-06,True
+all six models,medcat_entity_precision,overall_quality,717,0.46,0.35,0.61,1.735116456428481e-07,True
+all six models,medcat_entity_f1,accuracy,717,1.32,1.08,1.62,0.00761502413320142,True
+all six models,medcat_entity_f1,completeness,717,1.04,0.84,1.29,0.7247523075818131,True
+all six models,medcat_entity_f1,organization,717,0.87,0.71,1.07,0.17758621723387433,True
+all six models,medcat_entity_f1,conciseness,717,0.94,0.77,1.15,0.5590598820505945,True
+all six models,medcat_entity_f1,clinical_utility,717,1.14,0.92,1.41,0.22634121619476227,True
+all six models,medcat_entity_f1,overall_quality,717,1.11,0.89,1.37,0.36528617938810515,True
+all six models,scispacy_entity_recall,accuracy,717,2.11,1.69,2.62,2.922803356235023e-12,True
+all six models,scispacy_entity_recall,completeness,717,3.54,2.69,4.65,1.222490957366443e-21,True
+all six models,scispacy_entity_recall,organization,717,3.9,2.67,5.7,4.542022828995657e-15,True
+all six models,scispacy_entity_recall,conciseness,717,2.12,1.68,2.68,2.17949073167445e-11,True
+all six models,scispacy_entity_recall,clinical_utility,717,3.06,2.44,3.84,7.042340044792131e-23,True
+all six models,scispacy_entity_recall,overall_quality,717,3.21,2.54,4.06,9.1440595822092e-24,True
+all six models,scispacy_entity_precision,accuracy,717,1.19,0.94,1.52,0.15675749154519664,True
+all six models,scispacy_entity_precision,completeness,717,0.54,0.4,0.74,5.807272174667264e-05,True
+all six models,scispacy_entity_precision,organization,717,0.18,0.11,0.29,9.930898822232499e-15,True
+all six models,scispacy_entity_precision,conciseness,717,0.5,0.37,0.68,3.786185414631636e-06,True
+all six models,scispacy_entity_precision,clinical_utility,717,0.67,0.5,0.89,0.005820329471950866,True
+all six models,scispacy_entity_precision,overall_quality,717,0.62,0.45,0.84,0.0017609231897735007,True
+all six models,scispacy_entity_f1,accuracy,717,1.69,1.38,2.08,5.830845185214211e-07,True
+all six models,scispacy_entity_f1,completeness,717,1.32,1.06,1.64,0.012210907156984313,True
+all six models,scispacy_entity_f1,organization,717,0.93,0.76,1.15,0.49959333550109053,True
+all six models,scispacy_entity_f1,conciseness,717,1.13,0.94,1.36,0.20298212086625347,True
+all six models,scispacy_entity_f1,clinical_utility,717,1.51,1.23,1.86,0.00011737323935372818,True
+all six models,scispacy_entity_f1,overall_quality,717,1.49,1.21,1.83,0.00020192165775082902,True
+all six models,bert_f1_full,accuracy,717,1.42,1.17,1.71,0.00039467178066015054,True
+all six models,bert_f1_full,completeness,717,2.11,1.67,2.66,4.060202129247533e-10,True
+all six models,bert_f1_full,organization,717,4.95,3.4,7.21,5.571711545370161e-22,True
+all six models,bert_f1_full,conciseness,717,2.29,1.85,2.82,1.5357049319053372e-16,True
+all six models,bert_f1_full,clinical_utility,717,2.49,2.05,3.03,9.09187316751427e-19,True
+all six models,bert_f1_full,overall_quality,717,2.57,2.1,3.14,5.83877389172258e-19,True
+all six models,bert_r_full,accuracy,717,1.55,1.23,1.95,0.0002256383132510279,True
+all six models,bert_r_full,completeness,717,2.71,1.94,3.78,8.136701585106296e-11,True
+all six models,bert_r_full,organization,717,6.19,3.75,10.22,8.647213361220477e-14,True
+all six models,bert_r_full,conciseness,717,2.12,1.58,2.84,1.711930870959363e-09,True
+all six models,bert_r_full,clinical_utility,717,2.71,2.08,3.53,6.546259753920734e-14,True
+all six models,bert_r_full,overall_quality,717,2.82,2.13,3.72,6.310042439653457e-14,True
+all six models,bert_p_full,accuracy,717,1.4,1.13,1.73,0.001892954865452998,True
+all six models,bert_p_full,completeness,717,1.93,1.5,2.47,3.7991318423539927e-07,True
+all six models,bert_p_full,organization,717,4.72,3.08,7.23,1.7618770530674696e-17,True
+all six models,bert_p_full,conciseness,717,2.34,1.88,2.92,7.62128798584969e-15,True
+all six models,bert_p_full,clinical_utility,717,2.58,2.07,3.21,2.0515746290141905e-16,True
+all six models,bert_p_full,overall_quality,717,2.66,2.13,3.33,1.5544239713557442e-16,True
+all six models,sbert_full,accuracy,717,1.66,1.37,2.0,2.2127635535254e-07,True
+all six models,sbert_full,completeness,717,3.75,2.94,4.78,2.6587723540924757e-31,True
+all six models,sbert_full,organization,717,8.52,5.79,12.54,7.54328383954731e-37,True
+all six models,sbert_full,conciseness,717,2.9,2.2,3.82,5.2415641625933386e-23,True
+all six models,sbert_full,clinical_utility,717,3.54,2.81,4.46,5.250187784288214e-32,True
+all six models,sbert_full,overall_quality,717,3.82,2.97,4.9,2.6429897496950925e-33,True
+all six models,bge_large_full,accuracy,717,1.94,1.59,2.36,3.138854793011576e-11,True
+all six models,bge_large_full,completeness,717,3.02,2.36,3.86,1.5649538125764626e-21,True
+all six models,bge_large_full,organization,717,4.24,2.93,6.13,1.0124094827017869e-20,True
+all six models,bge_large_full,conciseness,717,2.05,1.66,2.54,3.313355900487515e-13,True
+all six models,bge_large_full,clinical_utility,717,3.26,2.6,4.08,4.326471975733571e-27,True
+all six models,bge_large_full,overall_quality,717,3.4,2.7,4.26,1.2092787318813183e-28,True
+all six models,pubmedbert_full,accuracy,717,1.56,1.31,1.85,3.1670512257009396e-07,True
+all six models,pubmedbert_full,completeness,717,3.05,2.45,3.79,3.3898681908483725e-24,True
+all six models,pubmedbert_full,organization,717,4.98,3.69,6.7,6.760503254060328e-31,True
+all six models,pubmedbert_full,conciseness,717,2.61,2.09,3.26,5.715490129638248e-21,True
+all six models,pubmedbert_full,clinical_utility,717,2.92,2.4,3.54,2.053279443458187e-29,True
+all six models,pubmedbert_full,overall_quality,717,3.2,2.61,3.93,1.6389088451185188e-32,True
+all six models,nli_entail_transcript,accuracy,717,1.47,1.18,1.83,0.00048006222328218133,True
+all six models,nli_entail_transcript,completeness,717,0.83,0.65,1.05,0.11416264257056001,True
+all six models,nli_entail_transcript,organization,717,0.64,0.5,0.83,0.0005480547731071917,True
+all six models,nli_entail_transcript,conciseness,717,0.67,0.54,0.84,0.0003854798147741902,True
+all six models,nli_entail_transcript,clinical_utility,717,1.13,0.9,1.41,0.2954749800658163,True
+all six models,nli_entail_transcript,overall_quality,717,1.12,0.89,1.4,0.34599351159622116,True
+all six models,nli_contra_transcript,accuracy,717,0.66,0.54,0.81,5.9877982803637114e-05,True
+all six models,nli_contra_transcript,completeness,717,0.86,0.7,1.06,0.15559457178827135,True
+all six models,nli_contra_transcript,organization,717,0.99,0.81,1.19,0.8797188753014964,True
+all six models,nli_contra_transcript,conciseness,717,0.99,0.83,1.18,0.916439158746066,True
+all six models,nli_contra_transcript,clinical_utility,717,0.83,0.68,1.02,0.07544753765984101,True
+all six models,nli_contra_transcript,overall_quality,717,0.84,0.68,1.02,0.08012143588645046,True
+all six models,nli_supported_frac_transcript,accuracy,717,1.54,1.23,1.93,0.00012821226851215272,True
+all six models,nli_supported_frac_transcript,completeness,717,0.97,0.76,1.23,0.7785483340659232,True
+all six models,nli_supported_frac_transcript,organization,717,0.77,0.6,1.0,0.048489938899171955,True
+all six models,nli_supported_frac_transcript,conciseness,717,0.8,0.64,1.0,0.04994781395237518,True
+all six models,nli_supported_frac_transcript,clinical_utility,717,1.27,1.01,1.6,0.04036199686809917,True
+all six models,nli_supported_frac_transcript,overall_quality,717,1.26,0.99,1.59,0.05630428071695933,True
+all six models,nli_entail_inputs,accuracy,717,1.32,1.06,1.65,0.014824706933887714,True
+all six models,nli_entail_inputs,completeness,717,0.75,0.58,0.96,0.02149755856150965,True
+all six models,nli_entail_inputs,organization,717,0.57,0.43,0.76,7.663074280500117e-05,True
+all six models,nli_entail_inputs,conciseness,717,0.59,0.47,0.75,7.731997828780238e-06,True
+all six models,nli_entail_inputs,clinical_utility,717,1.0,0.79,1.26,0.9891142840766097,True
+all six models,nli_entail_inputs,overall_quality,717,1.01,0.79,1.27,0.9659684627605758,True
+all six models,nli_contra_inputs,accuracy,717,0.73,0.6,0.88,0.0011524466859643076,True
+all six models,nli_contra_inputs,completeness,717,0.7,0.56,0.88,0.0016844038219870157,True
+all six models,nli_contra_inputs,organization,717,0.61,0.46,0.82,0.0002655501171806588,True
+all six models,nli_contra_inputs,conciseness,717,0.78,0.64,0.95,0.013141324015716882,True
+all six models,nli_contra_inputs,clinical_utility,717,0.63,0.51,0.77,1.2397205743059376e-05,True
+all six models,nli_contra_inputs,overall_quality,717,0.64,0.52,0.79,3.6923826253552155e-05,True
+all six models,nli_supported_frac_inputs,accuracy,717,1.4,1.11,1.76,0.003739523586860118,True
+all six models,nli_supported_frac_inputs,completeness,717,0.83,0.65,1.07,0.14817658602523348,True
+all six models,nli_supported_frac_inputs,organization,717,0.62,0.47,0.83,0.0011313894657267647,True
+all six models,nli_supported_frac_inputs,conciseness,717,0.64,0.51,0.82,0.0002494276920677253,True
+all six models,nli_supported_frac_inputs,clinical_utility,717,1.07,0.84,1.36,0.5777671468155416,True
+all six models,nli_supported_frac_inputs,overall_quality,717,1.08,0.85,1.38,0.5118603852694348,True
+round one,bleu,accuracy,477,0.91,0.71,1.15,0.415014553505927,True
+round one,bleu,completeness,477,0.54,0.41,0.71,7.973980327528212e-06,True
+round one,bleu,organization,477,0.38,0.26,0.56,1.5722913090628042e-07,True
+round one,bleu,conciseness,477,0.57,0.43,0.76,3.1245388326676e-05,True
+round one,bleu,clinical_utility,477,0.63,0.5,0.8,0.00018532700457074333,True
+round one,bleu,overall_quality,477,0.59,0.46,0.75,2.9163483395565596e-05,True
+round one,rouge_l,accuracy,477,1.13,0.89,1.44,0.3330363972684681,True
+round one,rouge_l,completeness,477,0.96,0.72,1.26,0.7494557852781114,True
+round one,rouge_l,organization,477,0.9,0.69,1.19,0.45765169146127194,True
+round one,rouge_l,conciseness,477,0.91,0.7,1.18,0.471023314183459,True
+round one,rouge_l,clinical_utility,477,0.96,0.75,1.24,0.7728634304688831,True
+round one,rouge_l,overall_quality,477,0.96,0.74,1.24,0.7526346586173559,True
+round one,bert_f1,accuracy,477,1.29,1.02,1.65,0.03745971855829658,True
+round one,bert_f1,completeness,477,1.38,1.03,1.85,0.029679741618675547,True
+round one,bert_f1,organization,477,1.34,0.99,1.82,0.04324034117478069,True
+round one,bert_f1,conciseness,477,1.25,0.98,1.59,0.06742662867166081,True
+round one,bert_f1,clinical_utility,477,1.53,1.18,1.98,0.001454132381404565,True
+round one,bert_f1,overall_quality,477,1.49,1.15,1.93,0.0029088454334596898,True
+round one,sbert_similarity,accuracy,477,1.3,1.02,1.65,0.03403813617011237,True
+round one,sbert_similarity,completeness,477,1.51,1.17,1.95,0.0015653386932006975,True
+round one,sbert_similarity,organization,477,1.41,1.07,1.85,0.013191309871700646,True
+round one,sbert_similarity,conciseness,477,1.27,1.03,1.57,0.023667973188974328,True
+round one,sbert_similarity,clinical_utility,477,1.26,1.0,1.59,0.05099051191931504,True
+round one,sbert_similarity,overall_quality,477,1.29,1.02,1.62,0.03579091902530922,True
+round one,medcat_entity_recall,accuracy,477,1.28,0.99,1.65,0.05613436055304932,True
+round one,medcat_entity_recall,completeness,477,3.35,2.39,4.69,4.731551762751234e-13,True
+round one,medcat_entity_recall,organization,477,6.77,3.73,12.29,1.3824451027286518e-17,True
+round one,medcat_entity_recall,conciseness,477,2.38,1.63,3.45,1.0438653375541002e-07,True
+round one,medcat_entity_recall,clinical_utility,477,2.27,1.72,3.0,3.956318116033355e-09,True
+round one,medcat_entity_recall,overall_quality,477,2.33,1.75,3.09,2.945218714364875e-09,True
+round one,medcat_entity_precision,accuracy,477,0.87,0.66,1.13,0.2889279410241091,True
+round one,medcat_entity_precision,completeness,477,0.32,0.23,0.46,7.519631874865474e-11,True
+round one,medcat_entity_precision,organization,477,0.07,0.03,0.15,6.475634198609541e-24,True
+round one,medcat_entity_precision,conciseness,477,0.22,0.14,0.34,7.0935754421890145e-15,True
+round one,medcat_entity_precision,clinical_utility,477,0.38,0.28,0.51,1.9233540933821982e-10,True
+round one,medcat_entity_precision,overall_quality,477,0.33,0.24,0.45,1.4761420648723197e-12,True
+round one,medcat_entity_f1,accuracy,477,1.06,0.83,1.36,0.6395947404149727,True
+round one,medcat_entity_f1,completeness,477,0.85,0.64,1.12,0.24051182535290155,True
+round one,medcat_entity_f1,organization,477,0.7,0.5,0.98,0.02217216782966949,True
+round one,medcat_entity_f1,conciseness,477,0.77,0.59,1.0,0.04589848121745954,True
+round one,medcat_entity_f1,clinical_utility,477,0.83,0.64,1.08,0.15989238170018857,True
+round one,medcat_entity_f1,overall_quality,477,0.79,0.6,1.02,0.07203634219936772,True
+round one,scispacy_entity_recall,accuracy,477,1.48,1.17,1.87,0.0007974604762295587,True
+round one,scispacy_entity_recall,completeness,477,3.29,2.45,4.42,8.273525056397913e-16,True
+round one,scispacy_entity_recall,organization,477,5.3,3.22,8.71,7.79756309048912e-17,True
+round one,scispacy_entity_recall,conciseness,477,2.71,1.96,3.76,5.103603482485773e-12,True
+round one,scispacy_entity_recall,clinical_utility,477,2.36,1.85,3.01,4.127468308351446e-12,True
+round one,scispacy_entity_recall,overall_quality,477,2.44,1.9,3.15,1.9888452098398344e-12,True
+round one,scispacy_entity_precision,accuracy,477,1.0,0.76,1.33,0.9915789856187266,True
+round one,scispacy_entity_precision,completeness,477,0.38,0.26,0.54,1.0419728587661754e-07,True
+round one,scispacy_entity_precision,organization,477,0.06,0.03,0.14,5.911654918340927e-22,True
+round one,scispacy_entity_precision,conciseness,477,0.32,0.21,0.49,7.598054829687425e-09,True
+round one,scispacy_entity_precision,clinical_utility,477,0.45,0.33,0.62,6.159500140803445e-07,True
+round one,scispacy_entity_precision,overall_quality,477,0.39,0.28,0.55,2.2787311474543896e-08,True
+round one,scispacy_entity_f1,accuracy,477,1.33,1.04,1.69,0.023142335818845283,True
+round one,scispacy_entity_f1,completeness,477,1.19,0.91,1.56,0.20835123750362214,True
+round one,scispacy_entity_f1,organization,477,0.88,0.66,1.16,0.3431469846120436,True
+round one,scispacy_entity_f1,conciseness,477,1.07,0.85,1.36,0.5547834349329319,True
+round one,scispacy_entity_f1,clinical_utility,477,1.14,0.89,1.46,0.2947920496562011,True
+round one,scispacy_entity_f1,overall_quality,477,1.11,0.86,1.42,0.43103567885839167,True
+round one,bert_f1_full,accuracy,477,1.27,1.01,1.61,0.04240108205792146,True
+round one,bert_f1_full,completeness,477,2.63,2.0,3.46,2.476123481581094e-11,True
+round one,bert_f1_full,organization,477,7.26,4.21,12.53,1.9100543559530905e-25,True
+round one,bert_f1_full,conciseness,477,3.11,2.26,4.28,1.6444767343914578e-15,True
+round one,bert_f1_full,clinical_utility,477,2.55,2.01,3.23,1.7089691504533516e-14,True
+round one,bert_f1_full,overall_quality,477,2.63,2.05,3.36,1.010577299639873e-14,True
+round one,bert_r_full,accuracy,477,1.42,1.08,1.87,0.013501778157606573,True
+round one,bert_r_full,completeness,477,3.17,2.23,4.52,6.513682600028384e-11,True
+round one,bert_r_full,organization,477,8.53,4.28,17.03,8.214516258637253e-17,True
+round one,bert_r_full,conciseness,477,2.86,1.85,4.42,4.0839524578824653e-10,True
+round one,bert_r_full,clinical_utility,477,2.72,2.01,3.68,2.0023934570320675e-11,True
+round one,bert_r_full,overall_quality,477,2.84,2.06,3.9,1.7142426114222382e-11,True
+round one,bert_p_full,accuracy,477,1.25,0.97,1.61,0.08789856074314302,True
+round one,bert_p_full,completeness,477,2.52,1.85,3.42,7.188358165481112e-09,True
+round one,bert_p_full,organization,477,7.53,4.39,12.94,2.0702547470719622e-23,True
+round one,bert_p_full,conciseness,477,3.07,2.21,4.27,2.452597919720703e-13,True
+round one,bert_p_full,clinical_utility,477,2.64,2.03,3.43,6.386212709722288e-13,True
+round one,bert_p_full,overall_quality,477,2.72,2.08,3.55,3.998267487173285e-13,True
+round one,sbert_full,accuracy,477,1.5,1.18,1.9,0.0007782748632353339,True
+round one,sbert_full,completeness,477,4.59,3.43,6.15,1.802699470785512e-27,True
+round one,sbert_full,organization,477,18.12,8.51,38.6,3.500428155144823e-36,True
+round one,sbert_full,conciseness,477,6.09,3.75,9.91,3.0614665513562987e-24,True
+round one,sbert_full,clinical_utility,477,3.54,2.7,4.65,9.731245567664168e-24,True
+round one,sbert_full,overall_quality,477,3.94,2.91,5.35,4.040611532925914e-25,True
+round one,bge_large_full,accuracy,477,1.62,1.27,2.07,0.00010946883865869425,True
+round one,bge_large_full,completeness,477,2.94,2.17,3.98,4.797599931808203e-13,True
+round one,bge_large_full,organization,477,6.58,3.56,12.18,1.7020287067854928e-17,True
+round one,bge_large_full,conciseness,477,2.61,1.83,3.72,2.0377785225873094e-11,True
+round one,bge_large_full,clinical_utility,477,2.88,2.19,3.8,3.7543390676546845e-15,True
+round one,bge_large_full,overall_quality,477,3.03,2.29,4.0,2.188130187580273e-16,True
+round one,pubmedbert_full,accuracy,477,1.42,1.14,1.76,0.001325266786715117,True
+round one,pubmedbert_full,completeness,477,3.76,2.86,4.94,6.101579081129572e-23,True
+round one,pubmedbert_full,organization,477,13.41,6.61,27.21,2.871332355408762e-34,True
+round one,pubmedbert_full,conciseness,477,4.94,3.38,7.21,4.3532372125599565e-24,True
+round one,pubmedbert_full,clinical_utility,477,3.1,2.43,3.96,2.642132612146826e-22,True
+round one,pubmedbert_full,overall_quality,477,3.46,2.63,4.55,4.093716937426983e-24,True
+round one,nli_entail_transcript,accuracy,477,1.01,0.78,1.32,0.9155752848241464,True
+round one,nli_entail_transcript,completeness,477,0.38,0.27,0.52,2.1319895857116246e-09,True
+round one,nli_entail_transcript,organization,477,0.16,0.09,0.27,1.8628499667982916e-15,True
+round one,nli_entail_transcript,conciseness,477,0.37,0.26,0.52,9.261933454052004e-10,True
+round one,nli_entail_transcript,clinical_utility,477,0.58,0.44,0.77,0.00012428009860376355,True
+round one,nli_entail_transcript,overall_quality,477,0.54,0.41,0.72,2.668334432473755e-05,True
+round one,nli_contra_transcript,accuracy,477,0.72,0.57,0.93,0.010201989072942669,True
+round one,nli_contra_transcript,completeness,477,0.94,0.72,1.22,0.6328648183259906,True
+round one,nli_contra_transcript,organization,477,0.95,0.74,1.21,0.6605054425273844,True
+round one,nli_contra_transcript,conciseness,477,0.96,0.78,1.19,0.7086921280811493,True
+round one,nli_contra_transcript,clinical_utility,477,0.95,0.74,1.21,0.6615853226981108,True
+round one,nli_contra_transcript,overall_quality,477,0.93,0.73,1.18,0.5452237888349002,True
+round one,nli_supported_frac_transcript,accuracy,477,1.08,0.82,1.43,0.5661400993527211,True
+round one,nli_supported_frac_transcript,completeness,477,0.49,0.35,0.68,1.962522847765738e-05,True
+round one,nli_supported_frac_transcript,organization,477,0.25,0.16,0.4,9.196767787155171e-10,True
+round one,nli_supported_frac_transcript,conciseness,477,0.46,0.33,0.65,2.2791248413294405e-06,True
+round one,nli_supported_frac_transcript,clinical_utility,477,0.68,0.51,0.9,0.00853418093270869,True
+round one,nli_supported_frac_transcript,overall_quality,477,0.63,0.46,0.85,0.002487656795656873,True
+round one,nli_entail_inputs,accuracy,477,0.91,0.69,1.19,0.47877227424977764,True
+round one,nli_entail_inputs,completeness,477,0.34,0.24,0.47,5.6245077151116096e-11,True
+round one,nli_entail_inputs,organization,477,0.12,0.07,0.23,4.505343335831539e-17,True
+round one,nli_entail_inputs,conciseness,477,0.33,0.23,0.46,7.907136811545036e-12,True
+round one,nli_entail_inputs,clinical_utility,477,0.54,0.41,0.72,1.9892208096432496e-05,True
+round one,nli_entail_inputs,overall_quality,477,0.51,0.39,0.69,7.372209864502667e-06,True
+round one,nli_contra_inputs,accuracy,477,0.9,0.71,1.15,0.41354053339851593,True
+round one,nli_contra_inputs,completeness,477,0.74,0.56,0.99,0.03991150040455567,True
+round one,nli_contra_inputs,organization,477,0.52,0.35,0.75,0.00026768827960710735,True
+round one,nli_contra_inputs,conciseness,477,0.82,0.64,1.05,0.11966979827952719,True
+round one,nli_contra_inputs,clinical_utility,477,0.72,0.56,0.92,0.01078849170362022,True
+round one,nli_contra_inputs,overall_quality,477,0.72,0.56,0.94,0.014830225750167925,True
+round one,nli_supported_frac_inputs,accuracy,477,1.0,0.76,1.32,0.9868008178520101,True
+round one,nli_supported_frac_inputs,completeness,477,0.43,0.31,0.6,4.587653316764241e-07,True
+round one,nli_supported_frac_inputs,organization,477,0.19,0.11,0.31,9.570224541048524e-13,True
+round one,nli_supported_frac_inputs,conciseness,477,0.38,0.27,0.53,3.4397379611308043e-09,True
+round one,nli_supported_frac_inputs,clinical_utility,477,0.62,0.47,0.82,0.0008386179420797263,True
+round one,nli_supported_frac_inputs,overall_quality,477,0.58,0.43,0.78,0.00032157499712772005,True
+round two,bleu,accuracy,240,0.74,0.45,1.21,0.22261626245516714,True
+round two,bleu,completeness,240,0.8,0.54,1.17,0.2486663814532421,True
+round two,bleu,organization,240,0.53,0.32,0.9,0.011741262689476825,True
+round two,bleu,conciseness,240,0.66,0.42,1.05,0.07607438303728567,True
+round two,bleu,clinical_utility,240,0.67,0.4,1.12,0.12134627058765442,True
+round two,bleu,overall_quality,240,0.59,0.34,1.03,0.05758264706178895,True
+round two,rouge_l,accuracy,240,1.02,0.69,1.51,0.9149518949281165,True
+round two,rouge_l,completeness,240,0.79,0.58,1.08,0.13974225414223054,True
+round two,rouge_l,organization,240,0.64,0.44,0.92,0.0167398589027967,True
+round two,rouge_l,conciseness,240,0.72,0.48,1.07,0.0935127618745373,True
+round two,rouge_l,clinical_utility,240,1.02,0.68,1.51,0.9365134465161916,True
+round two,rouge_l,overall_quality,240,0.95,0.63,1.45,0.8255215182206744,True
+round two,bert_f1,accuracy,240,1.02,0.7,1.48,0.9173766255150199,True
+round two,bert_f1,completeness,240,0.78,0.57,1.08,0.12569894790288963,True
+round two,bert_f1,organization,240,0.7,0.47,1.06,0.07386385620078158,True
+round two,bert_f1,conciseness,240,0.84,0.57,1.23,0.3617923471429626,True
+round two,bert_f1,clinical_utility,240,0.93,0.62,1.38,0.6998872289836257,True
+round two,bert_f1,overall_quality,240,1.04,0.68,1.59,0.8629470327129355,True
+round two,sbert_similarity,accuracy,240,0.88,0.58,1.33,0.5388991101865102,True
+round two,sbert_similarity,completeness,240,0.86,0.62,1.19,0.37024370801538276,True
+round two,sbert_similarity,organization,240,0.89,0.58,1.35,0.5748987593500042,True
+round two,sbert_similarity,conciseness,240,1.02,0.7,1.49,0.9100290175218644,True
+round two,sbert_similarity,clinical_utility,240,0.98,0.64,1.51,0.9217590231464162,True
+round two,sbert_similarity,overall_quality,240,0.93,0.58,1.51,0.7809846909925755,True
+round two,medcat_entity_recall,accuracy,240,1.86,1.1,3.16,0.01951797338401298,True
+round two,medcat_entity_recall,completeness,240,1.85,1.14,3.01,0.008617191547254434,True
+round two,medcat_entity_recall,organization,240,1.85,1.01,3.36,0.03213292461603169,True
+round two,medcat_entity_recall,conciseness,240,1.57,0.92,2.66,0.08775573592407435,True
+round two,medcat_entity_recall,clinical_utility,240,2.19,1.26,3.82,0.004509717066790689,True
+round two,medcat_entity_recall,overall_quality,240,1.98,1.11,3.54,0.019140789289155493,True
+round two,medcat_entity_precision,accuracy,240,1.6,0.98,2.6,0.062061044482295394,True
+round two,medcat_entity_precision,completeness,240,0.81,0.55,1.18,0.2738536570792705,True
+round two,medcat_entity_precision,organization,240,0.73,0.45,1.19,0.19178589721227102,True
+round two,medcat_entity_precision,conciseness,240,1.24,0.77,2.01,0.3891866014626829,True
+round two,medcat_entity_precision,clinical_utility,240,1.72,1.04,2.83,0.03819474803457086,True
+round two,medcat_entity_precision,overall_quality,240,1.83,1.08,3.12,0.02904909159355382,True
+round two,medcat_entity_f1,accuracy,240,1.61,1.11,2.32,0.012727753162729165,True
+round two,medcat_entity_f1,completeness,240,0.97,0.71,1.34,0.8713400895698863,True
+round two,medcat_entity_f1,organization,240,0.92,0.63,1.34,0.6573758069363251,True
+round two,medcat_entity_f1,conciseness,240,1.2,0.84,1.72,0.3253629751817076,True
+round two,medcat_entity_f1,clinical_utility,240,1.71,1.18,2.49,0.005920815099002411,True
+round two,medcat_entity_f1,overall_quality,240,1.69,1.13,2.52,0.011636533193122186,True
+round two,scispacy_entity_recall,accuracy,240,2.14,1.27,3.6,0.0035138153812468475,True
+round two,scispacy_entity_recall,completeness,240,1.64,1.03,2.63,0.03022303474251507,True
+round two,scispacy_entity_recall,organization,240,1.39,0.81,2.39,0.22133069467679917,True
+round two,scispacy_entity_recall,conciseness,240,1.51,0.91,2.53,0.10445545505600048,True
+round two,scispacy_entity_recall,clinical_utility,240,2.02,1.19,3.41,0.008180340732207312,True
+round two,scispacy_entity_recall,overall_quality,240,2.03,1.17,3.53,0.01164154042703631,True
+round two,scispacy_entity_precision,accuracy,240,1.8,1.11,2.92,0.018150584744307207,True
+round two,scispacy_entity_precision,completeness,240,0.82,0.56,1.21,0.32362400435291766,True
+round two,scispacy_entity_precision,organization,240,0.52,0.31,0.9,0.009826667016480889,True
+round two,scispacy_entity_precision,conciseness,240,0.98,0.58,1.65,0.9285513640854173,True
+round two,scispacy_entity_precision,clinical_utility,240,1.6,0.97,2.63,0.0752169646886359,True
+round two,scispacy_entity_precision,overall_quality,240,1.76,1.04,2.99,0.04088478986663017,True
+round two,scispacy_entity_f1,accuracy,240,1.79,1.23,2.6,0.0024665946293094456,True
+round two,scispacy_entity_f1,completeness,240,1.02,0.74,1.4,0.9201156960553469,True
+round two,scispacy_entity_f1,organization,240,0.8,0.55,1.18,0.26352376099247277,True
+round two,scispacy_entity_f1,conciseness,240,1.19,0.83,1.71,0.3489383211083479,True
+round two,scispacy_entity_f1,clinical_utility,240,1.71,1.18,2.5,0.006636394325356268,True
+round two,scispacy_entity_f1,overall_quality,240,1.76,1.18,2.62,0.007059173918922105,True
+round two,bert_f1_full,accuracy,240,1.98,1.3,3.02,0.0017491799913867242,True
+round two,bert_f1_full,completeness,240,0.9,0.65,1.25,0.5280398658527394,True
+round two,bert_f1_full,organization,240,1.03,0.68,1.55,0.9003918387668617,True
+round two,bert_f1_full,conciseness,240,1.78,1.23,2.57,0.003810432205711279,True
+round two,bert_f1_full,clinical_utility,240,2.42,1.56,3.75,8.881082437607553e-05,True
+round two,bert_f1_full,overall_quality,240,2.46,1.52,3.99,0.0001835737854785948,True
+round two,bert_r_full,accuracy,240,1.36,0.8,2.31,0.2597189510267106,True
+round two,bert_r_full,completeness,240,0.91,0.62,1.34,0.6371922958792458,True
+round two,bert_r_full,organization,240,1.08,0.66,1.77,0.744937519443984,True
+round two,bert_r_full,conciseness,240,1.22,0.74,1.99,0.4356260338740039,True
+round two,bert_r_full,clinical_utility,240,1.37,0.79,2.38,0.257855987013477,True
+round two,bert_r_full,overall_quality,240,1.4,0.76,2.58,0.267614626648648,True
+round two,bert_p_full,accuracy,240,2.19,1.35,3.55,0.0016426169564793627,True
+round two,bert_p_full,completeness,240,0.91,0.62,1.31,0.6004519755737141,True
+round two,bert_p_full,organization,240,1.0,0.62,1.6,0.9853881003925076,True
+round two,bert_p_full,conciseness,240,2.0,1.33,3.02,0.002013709147350971,True
+round two,bert_p_full,clinical_utility,240,2.88,1.75,4.74,3.543377664046188e-05,True
+round two,bert_p_full,overall_quality,240,3.02,1.77,5.16,5.286352059951538e-05,True
+round two,sbert_full,accuracy,240,1.71,1.05,2.77,0.025504860673080564,True
+round two,sbert_full,completeness,240,1.4,0.98,1.99,0.06063721223010638,True
+round two,sbert_full,organization,240,1.45,0.96,2.19,0.0784270901594161,True
+round two,sbert_full,conciseness,240,2.06,1.35,3.14,0.0006657140966443327,True
+round two,sbert_full,clinical_utility,240,2.45,1.47,4.09,0.00029989509439384187,True
+round two,sbert_full,overall_quality,240,2.36,1.38,4.04,0.0011585357668905416,True
+round two,bge_large_full,accuracy,240,2.07,1.3,3.29,0.0021969019681496093,True
+round two,bge_large_full,completeness,240,2.32,1.5,3.61,4.894197637605436e-05,True
+round two,bge_large_full,organization,240,1.9,1.21,2.97,0.0045909577566790195,True
+round two,bge_large_full,conciseness,240,1.9,1.23,2.96,0.004046897674621783,True
+round two,bge_large_full,clinical_utility,240,3.09,1.9,5.03,3.91933362251126e-06,True
+round two,bge_large_full,overall_quality,240,3.09,1.79,5.31,2.9823220054543342e-05,True
+round two,pubmedbert_full,accuracy,240,1.69,1.12,2.56,0.011536413230195415,True
+round two,pubmedbert_full,completeness,240,1.14,0.78,1.68,0.4790487077001985,True
+round two,pubmedbert_full,organization,240,1.14,0.76,1.71,0.5168936318622954,True
+round two,pubmedbert_full,conciseness,240,1.42,0.95,2.13,0.08389222254633764,True
+round two,pubmedbert_full,clinical_utility,240,2.2,1.41,3.42,0.00030313013278836454,True
+round two,pubmedbert_full,overall_quality,240,2.15,1.32,3.51,0.0013982368593646244,True
+round two,nli_entail_transcript,accuracy,240,1.62,1.12,2.36,0.015704373772087204,True
+round two,nli_entail_transcript,completeness,240,1.5,1.1,2.05,0.011565196880332602,True
+round two,nli_entail_transcript,organization,240,0.81,0.56,1.19,0.28178526198551446,True
+round two,nli_entail_transcript,conciseness,240,0.97,0.66,1.43,0.8662936351720298,True
+round two,nli_entail_transcript,clinical_utility,240,1.73,1.17,2.55,0.010331860769604585,True
+round two,nli_entail_transcript,overall_quality,240,1.68,1.11,2.54,0.021336649794094706,True
+round two,nli_contra_transcript,accuracy,240,0.59,0.39,0.87,0.0071933237003555224,True
+round two,nli_contra_transcript,completeness,240,0.97,0.71,1.33,0.8362891392435088,True
+round two,nli_contra_transcript,organization,240,1.27,0.88,1.84,0.2038749573190011,True
+round two,nli_contra_transcript,conciseness,240,1.24,0.86,1.8,0.24880278229216013,True
+round two,nli_contra_transcript,clinical_utility,240,0.82,0.55,1.22,0.3272396290585662,True
+round two,nli_contra_transcript,overall_quality,240,0.83,0.54,1.27,0.38949282181710443,True
+round two,nli_supported_frac_transcript,accuracy,240,1.73,1.19,2.53,0.006185220594920177,True
+round two,nli_supported_frac_transcript,completeness,240,1.48,1.08,2.02,0.014475285868574937,True
+round two,nli_supported_frac_transcript,organization,240,0.96,0.66,1.42,0.8503692766984446,True
+round two,nli_supported_frac_transcript,conciseness,240,1.23,0.85,1.78,0.2884593125691599,True
+round two,nli_supported_frac_transcript,clinical_utility,240,1.99,1.35,2.91,0.0011220633459720906,True
+round two,nli_supported_frac_transcript,overall_quality,240,1.96,1.29,2.96,0.0028974762311183544,True
+round two,nli_entail_inputs,accuracy,240,1.41,0.96,2.08,0.09462304907178869,True
+round two,nli_entail_inputs,completeness,240,1.27,0.93,1.75,0.1460400596240781,True
+round two,nli_entail_inputs,organization,240,0.8,0.54,1.17,0.24169868637574443,True
+round two,nli_entail_inputs,conciseness,240,0.81,0.54,1.22,0.30366908226538114,True
+round two,nli_entail_inputs,clinical_utility,240,1.25,0.81,1.92,0.3202481952224465,True
+round two,nli_entail_inputs,overall_quality,240,1.29,0.81,2.04,0.3004391461974868,True
+round two,nli_contra_inputs,accuracy,240,0.52,0.36,0.75,0.00047804662699477986,True
+round two,nli_contra_inputs,completeness,240,0.89,0.65,1.22,0.4714393199080763,True
+round two,nli_contra_inputs,organization,240,0.99,0.66,1.49,0.9677683640242096,True
+round two,nli_contra_inputs,conciseness,240,0.72,0.5,1.04,0.0722894422990626,True
+round two,nli_contra_inputs,clinical_utility,240,0.59,0.41,0.85,0.005169375882662642,True
+round two,nli_contra_inputs,overall_quality,240,0.64,0.43,0.96,0.033235909441810096,True
+round two,nli_supported_frac_inputs,accuracy,240,1.41,0.97,2.04,0.07618749381469729,True
+round two,nli_supported_frac_inputs,completeness,240,1.18,0.86,1.63,0.3161719544394178,True
+round two,nli_supported_frac_inputs,organization,240,0.83,0.57,1.2,0.3167987867029229,True
+round two,nli_supported_frac_inputs,conciseness,240,0.89,0.61,1.3,0.5382999840866778,True
+round two,nli_supported_frac_inputs,clinical_utility,240,1.26,0.84,1.87,0.2726378729710639,True
+round two,nli_supported_frac_inputs,overall_quality,240,1.33,0.86,2.03,0.20994519358243302,True

@@ -1,0 +1,17 @@
+scope,dimension,n_blocks,stat_name,stat,p,effect_name,effect,ci_lo,ci_hi
+round_1,accuracy,39,Friedman_chi2_3df,5.15,0.16094261725382825,Kendall_W,0.044,0.009,0.162
+round_1,completeness,39,Friedman_chi2_3df,86.91,1.0119481711564622e-18,Kendall_W,0.743,0.691,0.809
+round_1,organization,39,Friedman_chi2_3df,110.53,8.419040850427323e-24,Kendall_W,0.945,0.896,0.988
+round_1,conciseness,39,Friedman_chi2_3df,14.39,0.002414813610954278,Kendall_W,0.123,0.057,0.267
+round_1,clinical_utility,39,Friedman_chi2_3df,49.33,1.1088760644780284e-10,Kendall_W,0.422,0.303,0.56
+round_1,overall_quality,39,Friedman_chi2_3df,45.84,6.130467329112658e-10,Kendall_W,0.392,0.26,0.544
+round_1,composite,39,Friedman_chi2_3df,55.44,5.53738635299989e-12,Kendall_W,0.474,0.364,0.6
+round_1,composite_no_org,39,Friedman_chi2_3df,46.06,5.50801026839468e-10,Kendall_W,0.394,0.278,0.532
+round_2,accuracy,40,Wilcoxon_diff,0.75,3.1227287644925127e-07,rank_biserial,0.963,0.592,0.908
+round_2,completeness,40,Wilcoxon_diff,1.117,1.8189894035458565e-12,rank_biserial,1.0,1.008,1.225
+round_2,organization,40,Wilcoxon_diff,1.208,1.8189894035458565e-12,rank_biserial,1.0,1.067,1.358
+round_2,conciseness,40,Wilcoxon_diff,0.075,0.6857258324933063,rank_biserial,0.081,-0.125,0.275
+round_2,clinical_utility,40,Wilcoxon_diff,1.083,1.8189894035458565e-11,rank_biserial,0.989,0.917,1.25
+round_2,overall_quality,40,Wilcoxon_diff,1.025,1.8189894035458565e-11,rank_biserial,0.989,0.883,1.167
+round_2,composite,40,Wilcoxon_diff,0.876,1.8189894035458565e-12,rank_biserial,1.0,0.768,0.979
+round_2,composite_no_org,40,Wilcoxon_diff,0.81,9.094947017729282e-12,rank_biserial,0.993,0.698,0.918

@@ -18,6 +18,8 @@ Round two adds 80 notes and 240 ratings (LLaMA-4-Scout and Qwen3.8-27B): 239 not
 | `revision_round2_metrics.py` | Automated metrics for the two models added in rating round two | `fareez_round2_metrics.csv` |
 | `revision_round2_analysis.py` | Merged ratings of both rounds; note-level metric versus rating correlations and mixed models for six models | `round2_ratings_long.csv`, `round2_model_means.csv`, `round2_metric_clinician_correlations.csv`, `round2_metric_clmm_odds_ratios.csv`, `round2_analysis_output.txt` |
 | `revision_six_model_analysis.py` | Six-model ratings, repeated-note comparison, Friedman and pairwise tests, mixed models with a round effect, agreement, per-rater results, between-model metric tests | `six_model_output.txt`, `six_model_table.csv`, `six_model_pairwise.csv`, `six_model_clmm.csv` |
+| `revision_sota_metrics.py` | Per note, on the full text: untruncated BERTScore precision, recall and F1; chunked embedding similarity with all-MiniLM-L6-v2, BGE-large and S-PubMedBERT; sentence-level NLI entailment and contradiction against the transcript and against the transcript plus chart; and the share of tokens that the default 510-token and 256-token limits discard | `fareez_sota_metrics.csv` |
+| `revision_round_stratified_analysis.py` | Model comparisons within each rating round (round one: Friedman, pairwise Wilcoxon and mixed models over four models; round two: paired Wilcoxon and mixed models over two models), tests within each rater, and correlations and mixed-model odds ratios of all 22 automated metrics with the ratings, within each round and pooled | `stratified_model_summary.csv`, `stratified_pairwise.csv`, `stratified_clmm.csv`, `stratified_metric_by_model.csv`, `stratified_metric_tests.csv`, `stratified_metric_correlations.csv`, `stratified_metric_clmm.csv`, `stratified_analysis_output.txt` |
 
 `ratings_long.csv` is the merged round-one rating file (one row per rating, with a `failed_generation` flag). `revision_rating_analyses.py` writes it and the R script reads it.
 
@@ -35,6 +37,8 @@ python scripts/revision_cost.py --repo .
 python scripts/revision_round2_metrics.py --repo . --models qwen3.8-27b llama-4-scout   # runs the entity evaluator on Modal
 python scripts/revision_round2_analysis.py --repo .
 python scripts/revision_six_model_analysis.py --repo .       # reads round2_ratings_long.csv; about 15 minutes
+python scripts/revision_sota_metrics.py --repo .             # one GPU; about 9 minutes
+python scripts/revision_round_stratified_analysis.py --repo . > rag_models/results/revision/stratified_analysis_output.txt   # reads fareez_sota_metrics.csv; about 7 minutes
 ```
 
 ## Requirements
@@ -42,6 +46,11 @@ python scripts/revision_six_model_analysis.py --repo .       # reads round2_rati
 - Python: numpy, pandas, scipy for the rating, ASR, correlation, and cost scripts. The metric script also needs nltk,
   rouge-score, bert-score, and sentence-transformers. The retrieval script needs chromadb and sentence-transformers.
   The entity script needs modal and a Modal account.
+- `revision_sota_metrics.py` needs torch and transformers and one GPU. It loads its models from the local Hugging Face
+  cache only, so download them first: `roberta-large`, `sentence-transformers/all-MiniLM-L6-v2`, `BAAI/bge-large-en-v1.5`,
+  `pritamdeka/S-PubMedBert-MS-MARCO`, and `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli`. The stored file was
+  computed in half precision on an RTX 3090 (24 GB) with torch 2.8.0 and transformers 4.57.6. It reads the transcripts from
+  the "Clean Transcripts" folder or, if that is absent, from the round-one rating packet.
 - R: package `ordinal` (the crossed model was fitted with ordinal 2026.7.26 on R 4.5.3).
 - Transcripts: the Fareez "Clean Transcripts" folder under `openemr_whisper_wer/data/fareez_osce/Data/`, or, if that is
   absent, the reference text stored in `openemr_whisper_wer/results/fareez-groq.csv`.

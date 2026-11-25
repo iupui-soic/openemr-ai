@@ -167,7 +167,7 @@ Results are aggregated across 3 independent runs using `rag_models/evaluation/ag
 - **Accuracy was the weakest dimension for every model** (2.10 to 2.85), and it separated the models least (W=0.26).
 - **LLaMA 4 Scout had the highest BERTScore F1, SBERT similarity and ROUGE-L but the lowest clinician ratings.** At the note level BERTScore was unrelated to the composite rating (Spearman rho -0.06, 95% CI -0.22 to 0.10).
 - **Entity recall tracked completeness.** MedCAT entity recall correlated with rated completeness (rho 0.54, 95% CI 0.43 to 0.65; 0.36 after adjusting for note length).
-- The scripts and outputs for these analyses are listed in [`scripts/README_revision.md`](scripts/README_revision.md).
+- The scripts and outputs for these analyses are listed in [`scripts/README.md`](scripts/README.md).
 
 **Full-precision MedGemma 27B (institutional six cases):** `google/medgemma-27b-text-it` in bfloat16 on a Modal A100-80GB, three passes, gave BLEU 0.092, ROUGE-L 0.353, SBERT 0.810, BERTScore F1 0.871, scispaCy recall 0.618 and MedCAT recall 0.629. Every metric is within 0.013 of the 4-bit run. Per-run files are in `rag_models/results/institutional/medgemma-27b/`.
 
@@ -220,7 +220,7 @@ python clinician_validation/generate_rating_packets.py --output-dir rating_packe
 python clinician_validation/analyze_ratings.py
 
 # Round two: models/build_fareez_prompts.py, models/run_fareez_round2_groq.py, models/run_fareez_round2_bedrock.py
-# and clinician_validation/generate_round2_packets.py (arguments are in each docstring); analyses in scripts/README_revision.md
+# and clinician_validation/generate_round2_packets.py (arguments are in each docstring); analyses in scripts/README.md
 ```
 
 ## CQL-CDS: ELM JSON Validation (Clinical Decision Support Validation)

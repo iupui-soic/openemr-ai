@@ -1,0 +1,484 @@
+scope,metric,dimension,n,rho,ci_lo,ci_hi,rho_within_conv,partial_rho_len,p_ci_lo,p_ci_hi
+round one,bleu,accuracy,159,-0.04,-0.22,0.15,0.01,-0.06,-0.26,0.14
+round one,bleu,completeness,159,0.11,-0.07,0.29,0.16,-0.05,-0.25,0.16
+round one,bleu,organization,159,0.17,0.01,0.32,0.03,0.02,-0.15,0.21
+round one,bleu,conciseness,159,-0.2,-0.36,-0.01,-0.39,-0.05,-0.21,0.11
+round one,bleu,clinical_utility,159,-0.0,-0.17,0.18,0.04,-0.07,-0.27,0.13
+round one,bleu,overall_quality,159,-0.02,-0.19,0.17,0.01,-0.08,-0.27,0.13
+round one,bleu,composite,159,0.01,-0.16,0.19,-0.02,-0.06,-0.26,0.14
+round one,rouge_l,accuracy,159,0.06,-0.16,0.27,-0.04,0.09,-0.13,0.3
+round one,rouge_l,completeness,159,-0.16,-0.35,0.04,-0.36,0.02,-0.19,0.24
+round one,rouge_l,organization,159,-0.32,-0.48,-0.14,-0.3,-0.17,-0.37,0.03
+round one,rouge_l,conciseness,159,0.12,-0.06,0.28,0.08,-0.07,-0.24,0.1
+round one,rouge_l,clinical_utility,159,-0.07,-0.28,0.14,-0.25,0.0,-0.22,0.22
+round one,rouge_l,overall_quality,159,-0.05,-0.26,0.16,-0.22,0.02,-0.21,0.22
+round one,rouge_l,composite,159,-0.09,-0.29,0.12,-0.25,-0.01,-0.23,0.2
+round one,bert_f1,accuracy,159,0.14,-0.06,0.33,0.09,0.15,-0.05,0.34
+round one,bert_f1,completeness,159,0.01,-0.2,0.21,-0.11,0.08,-0.14,0.28
+round one,bert_f1,organization,159,-0.08,-0.25,0.1,0.0,-0.02,-0.21,0.18
+round one,bert_f1,conciseness,159,0.1,-0.07,0.27,0.14,0.05,-0.13,0.23
+round one,bert_f1,clinical_utility,159,0.09,-0.1,0.29,0.01,0.12,-0.08,0.32
+round one,bert_f1,overall_quality,159,0.08,-0.13,0.28,0.01,0.1,-0.1,0.31
+round one,bert_f1,composite,159,0.07,-0.14,0.28,-0.01,0.1,-0.11,0.31
+round one,sbert_similarity,accuracy,159,0.06,-0.13,0.25,0.12,0.07,-0.12,0.26
+round one,sbert_similarity,completeness,159,0.11,-0.07,0.29,0.05,0.2,-0.0,0.39
+round one,sbert_similarity,organization,159,0.06,-0.09,0.21,0.14,0.14,-0.02,0.32
+round one,sbert_similarity,conciseness,159,0.12,-0.07,0.31,0.16,0.06,-0.12,0.25
+round one,sbert_similarity,clinical_utility,159,0.06,-0.12,0.23,0.05,0.09,-0.1,0.27
+round one,sbert_similarity,overall_quality,159,0.09,-0.09,0.25,0.06,0.11,-0.07,0.28
+round one,sbert_similarity,composite,159,0.1,-0.09,0.27,0.1,0.13,-0.07,0.31
+round one,medcat_entity_recall,accuracy,159,0.11,-0.11,0.31,0.16,0.09,-0.15,0.32
+round one,medcat_entity_recall,completeness,159,0.44,0.28,0.59,0.66,0.34,0.12,0.52
+round one,medcat_entity_recall,organization,159,0.49,0.37,0.6,0.54,0.39,0.23,0.53
+round one,medcat_entity_recall,conciseness,159,-0.12,-0.28,0.03,-0.06,0.06,-0.1,0.19
+round one,medcat_entity_recall,clinical_utility,159,0.25,0.05,0.42,0.39,0.2,-0.04,0.41
+round one,medcat_entity_recall,overall_quality,159,0.22,0.03,0.4,0.38,0.18,-0.05,0.39
+round one,medcat_entity_recall,composite,159,0.28,0.09,0.44,0.44,0.23,0.0,0.42
+round one,medcat_entity_precision,accuracy,159,0.01,-0.17,0.17,-0.15,0.05,-0.14,0.24
+round one,medcat_entity_precision,completeness,159,-0.38,-0.53,-0.25,-0.66,-0.17,-0.38,0.06
+round one,medcat_entity_precision,organization,159,-0.6,-0.69,-0.49,-0.55,-0.46,-0.6,-0.27
+round one,medcat_entity_precision,conciseness,159,0.1,-0.08,0.28,0.01,-0.24,-0.37,-0.08
+round one,medcat_entity_precision,clinical_utility,159,-0.21,-0.39,-0.04,-0.47,-0.12,-0.33,0.09
+round one,medcat_entity_precision,overall_quality,159,-0.17,-0.35,-0.02,-0.46,-0.1,-0.3,0.1
+round one,medcat_entity_precision,composite,159,-0.25,-0.41,-0.09,-0.5,-0.16,-0.37,0.04
+round one,medcat_entity_f1,accuracy,159,0.02,-0.19,0.21,-0.1,0.05,-0.16,0.24
+round one,medcat_entity_f1,completeness,159,-0.16,-0.33,0.01,-0.41,0.02,-0.2,0.23
+round one,medcat_entity_f1,organization,159,-0.31,-0.47,-0.14,-0.32,-0.16,-0.36,0.06
+round one,medcat_entity_f1,conciseness,159,0.08,-0.09,0.23,0.02,-0.13,-0.28,0.02
+round one,medcat_entity_f1,clinical_utility,159,-0.09,-0.29,0.1,-0.31,-0.01,-0.22,0.19
+round one,medcat_entity_f1,overall_quality,159,-0.07,-0.27,0.11,-0.31,-0.01,-0.21,0.18
+round one,medcat_entity_f1,composite,159,-0.11,-0.31,0.07,-0.32,-0.03,-0.24,0.16
+round one,scispacy_entity_recall,accuracy,159,0.23,0.01,0.41,0.25,0.22,-0.01,0.42
+round one,scispacy_entity_recall,completeness,159,0.49,0.31,0.63,0.62,0.4,0.19,0.58
+round one,scispacy_entity_recall,organization,159,0.45,0.31,0.59,0.48,0.36,0.17,0.53
+round one,scispacy_entity_recall,conciseness,159,-0.01,-0.17,0.14,0.02,0.17,0.01,0.32
+round one,scispacy_entity_recall,clinical_utility,159,0.35,0.16,0.52,0.42,0.31,0.09,0.5
+round one,scispacy_entity_recall,overall_quality,159,0.31,0.12,0.48,0.42,0.28,0.06,0.47
+round one,scispacy_entity_recall,composite,159,0.37,0.19,0.53,0.47,0.33,0.11,0.51
+round one,scispacy_entity_precision,accuracy,159,0.06,-0.12,0.23,-0.13,0.12,-0.09,0.31
+round one,scispacy_entity_precision,completeness,159,-0.34,-0.5,-0.21,-0.65,-0.09,-0.32,0.15
+round one,scispacy_entity_precision,organization,159,-0.59,-0.69,-0.48,-0.53,-0.44,-0.59,-0.25
+round one,scispacy_entity_precision,conciseness,159,0.18,-0.01,0.36,0.09,-0.14,-0.31,0.03
+round one,scispacy_entity_precision,clinical_utility,159,-0.15,-0.35,0.03,-0.44,-0.04,-0.28,0.2
+round one,scispacy_entity_precision,overall_quality,159,-0.12,-0.3,0.05,-0.42,-0.02,-0.25,0.22
+round one,scispacy_entity_precision,composite,159,-0.18,-0.36,-0.02,-0.46,-0.08,-0.31,0.16
+round one,scispacy_entity_f1,accuracy,159,0.14,-0.07,0.33,-0.01,0.18,-0.03,0.37
+round one,scispacy_entity_f1,completeness,159,-0.07,-0.25,0.1,-0.32,0.14,-0.07,0.34
+round one,scispacy_entity_f1,organization,159,-0.27,-0.45,-0.1,-0.26,-0.11,-0.32,0.11
+round one,scispacy_entity_f1,conciseness,159,0.19,0.01,0.35,0.13,0.0,-0.17,0.18
+round one,scispacy_entity_f1,clinical_utility,159,0.03,-0.17,0.21,-0.21,0.12,-0.09,0.31
+round one,scispacy_entity_f1,overall_quality,159,0.04,-0.15,0.22,-0.19,0.12,-0.09,0.3
+round one,scispacy_entity_f1,composite,159,0.02,-0.17,0.19,-0.21,0.11,-0.09,0.3
+round one,bert_f1_full,accuracy,159,0.12,-0.1,0.33,-0.03,0.15,-0.08,0.37
+round one,bert_f1_full,completeness,159,0.0,-0.2,0.19,-0.14,0.18,-0.01,0.37
+round one,bert_f1_full,organization,159,0.03,-0.13,0.19,0.19,0.22,0.06,0.35
+round one,bert_f1_full,conciseness,159,0.24,0.09,0.37,0.38,0.1,-0.07,0.26
+round one,bert_f1_full,clinical_utility,159,0.16,-0.03,0.36,0.11,0.25,0.05,0.43
+round one,bert_f1_full,overall_quality,159,0.15,-0.04,0.35,0.12,0.22,0.03,0.41
+round one,bert_f1_full,composite,159,0.13,-0.07,0.32,0.13,0.22,0.03,0.4
+round one,bert_r_full,accuracy,159,0.22,0.0,0.42,0.09,0.21,-0.03,0.44
+round one,bert_r_full,completeness,159,0.44,0.3,0.58,0.56,0.31,0.12,0.49
+round one,bert_r_full,organization,159,0.46,0.35,0.56,0.53,0.33,0.19,0.46
+round one,bert_r_full,conciseness,159,-0.08,-0.24,0.07,-0.05,0.14,-0.02,0.29
+round one,bert_r_full,clinical_utility,159,0.34,0.16,0.52,0.41,0.29,0.07,0.49
+round one,bert_r_full,overall_quality,159,0.29,0.11,0.46,0.39,0.25,0.03,0.44
+round one,bert_r_full,composite,159,0.34,0.19,0.5,0.42,0.29,0.08,0.48
+round one,bert_p_full,accuracy,159,0.04,-0.15,0.23,-0.08,0.1,-0.12,0.31
+round one,bert_p_full,completeness,159,-0.18,-0.37,0.01,-0.32,0.11,-0.09,0.3
+round one,bert_p_full,organization,159,-0.19,-0.36,-0.01,0.01,0.11,-0.07,0.27
+round one,bert_p_full,conciseness,159,0.33,0.17,0.46,0.42,0.08,-0.09,0.23
+round one,bert_p_full,clinical_utility,159,0.04,-0.15,0.22,-0.04,0.19,-0.0,0.37
+round one,bert_p_full,overall_quality,159,0.05,-0.13,0.23,-0.01,0.18,-0.01,0.37
+round one,bert_p_full,composite,159,0.01,-0.19,0.19,-0.02,0.15,-0.04,0.33
+round one,sbert_full,accuracy,159,0.35,0.18,0.5,0.08,0.35,0.18,0.5
+round one,sbert_full,completeness,159,0.56,0.41,0.69,0.48,0.62,0.47,0.74
+round one,sbert_full,organization,159,0.41,0.3,0.53,0.69,0.45,0.32,0.57
+round one,sbert_full,conciseness,159,0.23,0.07,0.37,0.35,0.26,0.12,0.39
+round one,sbert_full,clinical_utility,159,0.5,0.34,0.64,0.46,0.51,0.35,0.64
+round one,sbert_full,overall_quality,159,0.5,0.34,0.64,0.46,0.5,0.34,0.64
+round one,sbert_full,composite,159,0.53,0.38,0.66,0.54,0.54,0.39,0.67
+round one,bge_large_full,accuracy,159,0.2,-0.05,0.43,0.19,0.2,-0.06,0.43
+round one,bge_large_full,completeness,159,0.37,0.19,0.54,0.49,0.36,0.14,0.54
+round one,bge_large_full,organization,159,0.32,0.2,0.46,0.52,0.3,0.12,0.47
+round one,bge_large_full,conciseness,159,0.03,-0.13,0.2,0.12,0.11,-0.05,0.26
+round one,bge_large_full,clinical_utility,159,0.3,0.07,0.51,0.43,0.28,0.04,0.5
+round one,bge_large_full,overall_quality,159,0.32,0.1,0.53,0.45,0.31,0.07,0.52
+round one,bge_large_full,composite,159,0.32,0.11,0.52,0.46,0.3,0.07,0.51
+round one,pubmedbert_full,accuracy,159,0.26,0.04,0.47,0.11,0.26,0.03,0.47
+round one,pubmedbert_full,completeness,159,0.4,0.25,0.55,0.43,0.42,0.23,0.58
+round one,pubmedbert_full,organization,159,0.36,0.23,0.5,0.53,0.37,0.2,0.52
+round one,pubmedbert_full,conciseness,159,0.09,-0.08,0.25,0.32,0.14,-0.03,0.29
+round one,pubmedbert_full,clinical_utility,159,0.41,0.21,0.58,0.45,0.4,0.19,0.58
+round one,pubmedbert_full,overall_quality,159,0.41,0.21,0.58,0.45,0.4,0.19,0.58
+round one,pubmedbert_full,composite,159,0.4,0.21,0.57,0.49,0.4,0.19,0.57
+round one,nli_entail_transcript,accuracy,159,-0.06,-0.2,0.08,-0.08,-0.02,-0.18,0.14
+round one,nli_entail_transcript,completeness,159,-0.5,-0.64,-0.35,-0.63,-0.31,-0.51,-0.08
+round one,nli_entail_transcript,organization,159,-0.58,-0.68,-0.46,-0.47,-0.42,-0.57,-0.24
+round one,nli_entail_transcript,conciseness,159,0.12,-0.05,0.29,0.05,-0.25,-0.38,-0.1
+round one,nli_entail_transcript,clinical_utility,159,-0.25,-0.4,-0.11,-0.37,-0.17,-0.36,0.04
+round one,nli_entail_transcript,overall_quality,159,-0.21,-0.36,-0.06,-0.36,-0.14,-0.31,0.07
+round one,nli_entail_transcript,composite,159,-0.31,-0.46,-0.15,-0.43,-0.24,-0.42,-0.03
+round one,nli_contra_transcript,accuracy,159,-0.04,-0.25,0.16,-0.15,-0.06,-0.27,0.16
+round one,nli_contra_transcript,completeness,159,0.08,-0.12,0.28,0.2,-0.02,-0.23,0.19
+round one,nli_contra_transcript,organization,159,0.15,-0.01,0.3,0.15,0.05,-0.12,0.22
+round one,nli_contra_transcript,conciseness,159,-0.06,-0.22,0.1,-0.14,0.05,-0.11,0.21
+round one,nli_contra_transcript,clinical_utility,159,0.07,-0.14,0.28,0.07,0.03,-0.17,0.24
+round one,nli_contra_transcript,overall_quality,159,0.02,-0.18,0.23,0.07,-0.01,-0.22,0.2
+round one,nli_contra_transcript,composite,159,0.05,-0.16,0.25,0.08,0.0,-0.2,0.2
+round one,nli_supported_frac_transcript,accuracy,159,-0.04,-0.18,0.1,-0.07,0.0,-0.15,0.15
+round one,nli_supported_frac_transcript,completeness,159,-0.45,-0.6,-0.29,-0.57,-0.23,-0.43,-0.0
+round one,nli_supported_frac_transcript,organization,159,-0.54,-0.66,-0.39,-0.44,-0.36,-0.52,-0.16
+round one,nli_supported_frac_transcript,conciseness,159,0.18,0.0,0.34,0.11,-0.2,-0.33,-0.05
+round one,nli_supported_frac_transcript,clinical_utility,159,-0.22,-0.36,-0.07,-0.32,-0.13,-0.3,0.07
+round one,nli_supported_frac_transcript,overall_quality,159,-0.17,-0.32,-0.01,-0.31,-0.08,-0.25,0.1
+round one,nli_supported_frac_transcript,composite,159,-0.26,-0.42,-0.1,-0.38,-0.18,-0.35,0.02
+round one,nli_entail_inputs,accuracy,159,-0.08,-0.21,0.05,-0.14,-0.05,-0.2,0.09
+round one,nli_entail_inputs,completeness,159,-0.51,-0.65,-0.36,-0.65,-0.33,-0.51,-0.13
+round one,nli_entail_inputs,organization,159,-0.6,-0.7,-0.47,-0.48,-0.45,-0.58,-0.28
+round one,nli_entail_inputs,conciseness,159,0.09,-0.08,0.25,0.03,-0.29,-0.41,-0.17
+round one,nli_entail_inputs,clinical_utility,159,-0.26,-0.4,-0.11,-0.39,-0.18,-0.35,0.01
+round one,nli_entail_inputs,overall_quality,159,-0.21,-0.35,-0.06,-0.37,-0.14,-0.3,0.04
+round one,nli_entail_inputs,composite,159,-0.32,-0.47,-0.17,-0.46,-0.25,-0.41,-0.07
+round one,nli_contra_inputs,accuracy,159,0.06,-0.09,0.21,0.08,0.04,-0.12,0.21
+round one,nli_contra_inputs,completeness,159,0.22,0.04,0.38,0.36,0.0,-0.19,0.2
+round one,nli_contra_inputs,organization,159,0.25,0.09,0.4,0.14,0.04,-0.13,0.22
+round one,nli_contra_inputs,conciseness,159,-0.12,-0.28,0.04,-0.19,0.13,-0.0,0.26
+round one,nli_contra_inputs,clinical_utility,159,0.13,-0.04,0.29,0.17,0.04,-0.12,0.2
+round one,nli_contra_inputs,overall_quality,159,0.09,-0.08,0.26,0.16,0.02,-0.15,0.19
+round one,nli_contra_inputs,composite,159,0.13,-0.04,0.3,0.18,0.04,-0.12,0.21
+round one,nli_supported_frac_inputs,accuracy,159,-0.06,-0.19,0.07,-0.09,-0.02,-0.16,0.11
+round one,nli_supported_frac_inputs,completeness,159,-0.47,-0.61,-0.33,-0.59,-0.27,-0.44,-0.07
+round one,nli_supported_frac_inputs,organization,159,-0.58,-0.68,-0.44,-0.45,-0.41,-0.56,-0.23
+round one,nli_supported_frac_inputs,conciseness,159,0.13,-0.03,0.29,0.07,-0.25,-0.37,-0.11
+round one,nli_supported_frac_inputs,clinical_utility,159,-0.24,-0.37,-0.1,-0.34,-0.16,-0.3,0.01
+round one,nli_supported_frac_inputs,overall_quality,159,-0.18,-0.32,-0.04,-0.32,-0.1,-0.25,0.06
+round one,nli_supported_frac_inputs,composite,159,-0.29,-0.43,-0.13,-0.4,-0.21,-0.36,-0.04
+round one,summary_words,accuracy,159,0.06,-0.06,0.17,0.04,,,
+round one,summary_words,completeness,159,0.45,0.29,0.6,0.48,,,
+round one,summary_words,organization,159,0.46,0.26,0.63,0.2,,,
+round one,summary_words,conciseness,159,-0.46,-0.59,-0.3,-0.5,,,
+round one,summary_words,clinical_utility,159,0.19,0.04,0.33,0.18,,,
+round one,summary_words,overall_quality,159,0.16,0.02,0.3,0.13,,,
+round one,summary_words,composite,159,0.2,0.05,0.35,0.14,,,
+round two,bleu,accuracy,80,0.31,0.15,0.49,0.6,-0.05,-0.28,0.19
+round two,bleu,completeness,80,0.45,0.3,0.62,0.72,-0.1,-0.29,0.13
+round two,bleu,organization,80,0.33,0.19,0.49,0.55,-0.16,-0.34,0.04
+round two,bleu,conciseness,80,-0.23,-0.43,-0.01,-0.24,-0.14,-0.36,0.1
+round two,bleu,clinical_utility,80,0.35,0.2,0.51,0.58,-0.08,-0.31,0.17
+round two,bleu,overall_quality,80,0.35,0.2,0.52,0.59,-0.12,-0.38,0.15
+round two,bleu,composite,80,0.32,0.17,0.49,0.55,-0.14,-0.37,0.11
+round two,rouge_l,accuracy,80,0.05,-0.17,0.25,-0.15,0.07,-0.15,0.28
+round two,rouge_l,completeness,80,-0.06,-0.22,0.1,-0.1,-0.09,-0.29,0.11
+round two,rouge_l,organization,80,-0.12,-0.28,0.05,-0.18,-0.15,-0.35,0.07
+round two,rouge_l,conciseness,80,-0.06,-0.29,0.18,-0.15,-0.07,-0.29,0.17
+round two,rouge_l,clinical_utility,80,0.05,-0.15,0.25,-0.16,0.08,-0.13,0.3
+round two,rouge_l,overall_quality,80,0.03,-0.17,0.22,-0.19,0.05,-0.18,0.26
+round two,rouge_l,composite,80,-0.02,-0.21,0.17,-0.18,-0.01,-0.23,0.2
+round two,bert_f1,accuracy,80,0.01,-0.21,0.21,-0.44,0.06,-0.15,0.26
+round two,bert_f1,completeness,80,-0.16,-0.37,0.04,-0.41,-0.19,-0.4,0.03
+round two,bert_f1,organization,80,-0.18,-0.39,0.04,-0.39,-0.19,-0.4,0.07
+round two,bert_f1,conciseness,80,-0.02,-0.25,0.21,-0.12,-0.03,-0.29,0.21
+round two,bert_f1,clinical_utility,80,-0.02,-0.26,0.2,-0.5,0.03,-0.2,0.26
+round two,bert_f1,overall_quality,80,-0.02,-0.26,0.19,-0.46,0.04,-0.19,0.25
+round two,bert_f1,composite,80,-0.07,-0.3,0.14,-0.45,-0.03,-0.25,0.19
+round two,sbert_similarity,accuracy,80,-0.08,-0.34,0.16,-0.34,-0.03,-0.31,0.22
+round two,sbert_similarity,completeness,80,-0.18,-0.31,-0.05,-0.36,-0.19,-0.39,-0.01
+round two,sbert_similarity,organization,80,-0.12,-0.27,0.01,-0.42,-0.08,-0.28,0.12
+round two,sbert_similarity,conciseness,80,0.1,-0.14,0.33,0.0,0.09,-0.15,0.31
+round two,sbert_similarity,clinical_utility,80,-0.04,-0.28,0.18,-0.4,0.03,-0.23,0.25
+round two,sbert_similarity,overall_quality,80,-0.05,-0.28,0.16,-0.43,0.01,-0.23,0.23
+round two,sbert_similarity,composite,80,-0.08,-0.28,0.11,-0.4,-0.02,-0.25,0.2
+round two,medcat_entity_recall,accuracy,80,0.55,0.42,0.68,0.73,0.25,0.02,0.45
+round two,medcat_entity_recall,completeness,80,0.74,0.65,0.81,0.81,0.39,0.22,0.56
+round two,medcat_entity_recall,organization,80,0.64,0.55,0.73,0.74,0.28,0.11,0.45
+round two,medcat_entity_recall,conciseness,80,-0.08,-0.29,0.14,-0.02,0.08,-0.12,0.28
+round two,medcat_entity_recall,clinical_utility,80,0.63,0.5,0.74,0.78,0.31,0.09,0.51
+round two,medcat_entity_recall,overall_quality,80,0.64,0.51,0.74,0.78,0.3,0.1,0.47
+round two,medcat_entity_recall,composite,80,0.65,0.54,0.75,0.76,0.34,0.13,0.52
+round two,medcat_entity_precision,accuracy,80,-0.2,-0.4,0.01,-0.7,0.2,-0.05,0.41
+round two,medcat_entity_precision,completeness,80,-0.54,-0.68,-0.39,-0.74,-0.14,-0.38,0.09
+round two,medcat_entity_precision,organization,80,-0.49,-0.64,-0.35,-0.7,-0.16,-0.37,0.05
+round two,medcat_entity_precision,conciseness,80,0.25,0.02,0.45,0.12,0.17,-0.06,0.38
+round two,medcat_entity_precision,clinical_utility,80,-0.23,-0.42,-0.04,-0.66,0.23,-0.01,0.44
+round two,medcat_entity_precision,overall_quality,80,-0.26,-0.46,-0.07,-0.68,0.23,-0.02,0.43
+round two,medcat_entity_precision,composite,80,-0.3,-0.48,-0.12,-0.67,0.14,-0.09,0.36
+round two,medcat_entity_f1,accuracy,80,0.14,-0.07,0.35,-0.23,0.27,0.05,0.47
+round two,medcat_entity_f1,completeness,80,-0.12,-0.32,0.06,-0.23,-0.01,-0.23,0.2
+round two,medcat_entity_f1,organization,80,-0.14,-0.35,0.06,-0.28,-0.05,-0.26,0.16
+round two,medcat_entity_f1,conciseness,80,0.17,-0.05,0.37,0.03,0.14,-0.07,0.36
+round two,medcat_entity_f1,clinical_utility,80,0.15,-0.08,0.35,-0.17,0.33,0.09,0.53
+round two,medcat_entity_f1,overall_quality,80,0.12,-0.09,0.32,-0.22,0.31,0.09,0.51
+round two,medcat_entity_f1,composite,80,0.08,-0.14,0.27,-0.22,0.24,0.02,0.45
+round two,scispacy_entity_recall,accuracy,80,0.59,0.43,0.72,0.77,0.34,0.1,0.55
+round two,scispacy_entity_recall,completeness,80,0.68,0.56,0.77,0.83,0.31,0.12,0.49
+round two,scispacy_entity_recall,organization,80,0.56,0.44,0.66,0.72,0.17,0.01,0.33
+round two,scispacy_entity_recall,conciseness,80,-0.04,-0.27,0.19,-0.02,0.12,-0.09,0.31
+round two,scispacy_entity_recall,clinical_utility,80,0.63,0.48,0.75,0.78,0.35,0.1,0.55
+round two,scispacy_entity_recall,overall_quality,80,0.65,0.5,0.77,0.79,0.36,0.1,0.58
+round two,scispacy_entity_recall,composite,80,0.64,0.5,0.75,0.76,0.35,0.12,0.55
+round two,scispacy_entity_precision,accuracy,80,-0.17,-0.35,-0.01,-0.65,0.2,-0.01,0.39
+round two,scispacy_entity_precision,completeness,80,-0.51,-0.63,-0.41,-0.74,-0.13,-0.34,0.07
+round two,scispacy_entity_precision,organization,80,-0.52,-0.65,-0.4,-0.74,-0.23,-0.42,-0.04
+round two,scispacy_entity_precision,conciseness,80,0.2,-0.01,0.4,0.07,0.12,-0.11,0.32
+round two,scispacy_entity_precision,clinical_utility,80,-0.23,-0.4,-0.07,-0.66,0.19,-0.04,0.39
+round two,scispacy_entity_precision,overall_quality,80,-0.25,-0.42,-0.09,-0.67,0.19,-0.04,0.39
+round two,scispacy_entity_precision,composite,80,-0.31,-0.46,-0.16,-0.68,0.09,-0.13,0.29
+round two,scispacy_entity_f1,accuracy,80,0.28,0.09,0.44,-0.04,0.34,0.12,0.52
+round two,scispacy_entity_f1,completeness,80,0.03,-0.15,0.19,-0.08,0.04,-0.19,0.27
+round two,scispacy_entity_f1,organization,80,-0.03,-0.22,0.15,-0.18,-0.04,-0.27,0.18
+round two,scispacy_entity_f1,conciseness,80,0.19,-0.03,0.38,0.01,0.19,-0.03,0.37
+round two,scispacy_entity_f1,clinical_utility,80,0.26,0.06,0.43,-0.03,0.35,0.1,0.54
+round two,scispacy_entity_f1,overall_quality,80,0.26,0.07,0.42,-0.05,0.35,0.11,0.54
+round two,scispacy_entity_f1,composite,80,0.2,0.01,0.36,-0.07,0.27,0.03,0.47
+round two,bert_f1_full,accuracy,80,0.14,-0.1,0.33,-0.52,0.32,0.06,0.54
+round two,bert_f1_full,completeness,80,-0.23,-0.37,-0.11,-0.64,-0.11,-0.29,0.08
+round two,bert_f1_full,organization,80,-0.18,-0.33,-0.06,-0.55,-0.05,-0.24,0.15
+round two,bert_f1_full,conciseness,80,0.35,0.13,0.53,0.18,0.32,0.1,0.5
+round two,bert_f1_full,clinical_utility,80,0.12,-0.1,0.29,-0.49,0.34,0.1,0.54
+round two,bert_f1_full,overall_quality,80,0.09,-0.13,0.25,-0.51,0.33,0.09,0.52
+round two,bert_f1_full,composite,80,0.05,-0.13,0.2,-0.49,0.26,0.04,0.47
+round two,bert_r_full,accuracy,80,0.49,0.34,0.63,0.72,0.23,-0.03,0.45
+round two,bert_r_full,completeness,80,0.47,0.38,0.58,0.84,-0.03,-0.23,0.2
+round two,bert_r_full,organization,80,0.43,0.33,0.54,0.75,0.03,-0.15,0.21
+round two,bert_r_full,conciseness,80,-0.02,-0.23,0.21,-0.08,0.12,-0.1,0.33
+round two,bert_r_full,clinical_utility,80,0.5,0.36,0.63,0.71,0.19,-0.07,0.42
+round two,bert_r_full,overall_quality,80,0.5,0.37,0.62,0.73,0.16,-0.09,0.39
+round two,bert_r_full,composite,80,0.48,0.37,0.6,0.72,0.15,-0.07,0.37
+round two,bert_p_full,accuracy,80,-0.07,-0.28,0.11,-0.65,0.31,0.09,0.5
+round two,bert_p_full,completeness,80,-0.47,-0.6,-0.35,-0.78,-0.1,-0.3,0.08
+round two,bert_p_full,organization,80,-0.4,-0.55,-0.28,-0.66,-0.07,-0.26,0.12
+round two,bert_p_full,conciseness,80,0.38,0.16,0.55,0.22,0.33,0.11,0.51
+round two,bert_p_full,clinical_utility,80,-0.11,-0.3,0.06,-0.6,0.35,0.13,0.52
+round two,bert_p_full,overall_quality,80,-0.13,-0.33,0.03,-0.63,0.35,0.14,0.51
+round two,bert_p_full,composite,80,-0.17,-0.35,-0.03,-0.61,0.27,0.06,0.45
+round two,sbert_full,accuracy,80,0.43,0.15,0.69,0.73,0.26,-0.04,0.57
+round two,sbert_full,completeness,80,0.45,0.33,0.59,0.73,0.21,-0.01,0.41
+round two,sbert_full,organization,80,0.45,0.34,0.58,0.66,0.25,0.06,0.43
+round two,sbert_full,conciseness,80,0.22,0.02,0.4,0.03,0.34,0.13,0.53
+round two,sbert_full,clinical_utility,80,0.51,0.27,0.72,0.75,0.34,0.07,0.6
+round two,sbert_full,overall_quality,80,0.5,0.28,0.7,0.73,0.32,0.06,0.57
+round two,sbert_full,composite,80,0.5,0.31,0.68,0.72,0.33,0.09,0.55
+round two,bge_large_full,accuracy,80,0.6,0.44,0.73,0.69,0.38,0.17,0.57
+round two,bge_large_full,completeness,80,0.7,0.6,0.79,0.83,0.45,0.25,0.62
+round two,bge_large_full,organization,80,0.59,0.48,0.7,0.72,0.29,0.1,0.48
+round two,bge_large_full,conciseness,80,0.11,-0.09,0.31,-0.06,0.3,0.11,0.46
+round two,bge_large_full,clinical_utility,80,0.68,0.55,0.79,0.73,0.48,0.29,0.64
+round two,bge_large_full,overall_quality,80,0.67,0.53,0.78,0.73,0.43,0.24,0.61
+round two,bge_large_full,composite,80,0.69,0.56,0.79,0.74,0.48,0.29,0.65
+round two,pubmedbert_full,accuracy,80,0.5,0.31,0.65,0.65,0.3,0.06,0.51
+round two,pubmedbert_full,completeness,80,0.45,0.31,0.59,0.75,0.1,-0.18,0.36
+round two,pubmedbert_full,organization,80,0.42,0.27,0.56,0.64,0.13,-0.1,0.35
+round two,pubmedbert_full,conciseness,80,0.09,-0.12,0.31,0.04,0.21,-0.02,0.44
+round two,pubmedbert_full,clinical_utility,80,0.53,0.35,0.67,0.69,0.32,0.07,0.53
+round two,pubmedbert_full,overall_quality,80,0.55,0.38,0.7,0.68,0.34,0.1,0.56
+round two,pubmedbert_full,composite,80,0.53,0.36,0.67,0.69,0.31,0.07,0.53
+round two,nli_entail_transcript,accuracy,80,0.16,-0.05,0.36,-0.25,0.36,0.15,0.53
+round two,nli_entail_transcript,completeness,80,-0.04,-0.22,0.14,-0.23,0.26,0.06,0.43
+round two,nli_entail_transcript,organization,80,-0.15,-0.33,0.03,-0.36,0.0,-0.22,0.23
+round two,nli_entail_transcript,conciseness,80,0.15,-0.04,0.33,-0.07,0.11,-0.08,0.29
+round two,nli_entail_transcript,clinical_utility,80,0.15,-0.06,0.34,-0.26,0.39,0.17,0.56
+round two,nli_entail_transcript,overall_quality,80,0.11,-0.12,0.31,-0.27,0.36,0.14,0.54
+round two,nli_entail_transcript,composite,80,0.08,-0.11,0.27,-0.28,0.31,0.09,0.5
+round two,nli_contra_transcript,accuracy,80,-0.26,-0.41,-0.11,-0.11,-0.3,-0.48,-0.09
+round two,nli_contra_transcript,completeness,80,-0.04,-0.22,0.13,-0.01,-0.04,-0.28,0.21
+round two,nli_contra_transcript,organization,80,0.07,-0.11,0.24,0.03,0.13,-0.11,0.36
+round two,nli_contra_transcript,conciseness,80,0.12,-0.11,0.35,0.03,0.12,-0.1,0.34
+round two,nli_contra_transcript,clinical_utility,80,-0.16,-0.32,0.02,0.05,-0.18,-0.4,0.05
+round two,nli_contra_transcript,overall_quality,80,-0.14,-0.3,0.04,0.08,-0.17,-0.39,0.09
+round two,nli_contra_transcript,composite,80,-0.1,-0.25,0.08,-0.01,-0.11,-0.33,0.14
+round two,nli_supported_frac_transcript,accuracy,80,0.15,-0.06,0.35,-0.22,0.33,0.12,0.51
+round two,nli_supported_frac_transcript,completeness,80,-0.02,-0.21,0.14,-0.26,0.25,0.04,0.43
+round two,nli_supported_frac_transcript,organization,80,-0.11,-0.28,0.07,-0.32,0.04,-0.18,0.26
+round two,nli_supported_frac_transcript,conciseness,80,0.24,0.05,0.41,0.04,0.21,0.01,0.39
+round two,nli_supported_frac_transcript,clinical_utility,80,0.17,-0.04,0.35,-0.24,0.39,0.18,0.56
+round two,nli_supported_frac_transcript,overall_quality,80,0.12,-0.09,0.31,-0.27,0.36,0.14,0.54
+round two,nli_supported_frac_transcript,composite,80,0.11,-0.08,0.29,-0.25,0.33,0.11,0.51
+round two,nli_entail_inputs,accuracy,80,0.11,-0.13,0.32,-0.37,0.34,0.12,0.51
+round two,nli_entail_inputs,completeness,80,-0.13,-0.34,0.05,-0.37,0.18,-0.03,0.36
+round two,nli_entail_inputs,organization,80,-0.22,-0.41,-0.04,-0.43,-0.04,-0.26,0.18
+round two,nli_entail_inputs,conciseness,80,0.1,-0.12,0.29,-0.14,0.05,-0.17,0.25
+round two,nli_entail_inputs,clinical_utility,80,0.05,-0.18,0.27,-0.4,0.32,0.09,0.51
+round two,nli_entail_inputs,overall_quality,80,0.02,-0.21,0.24,-0.4,0.31,0.07,0.5
+round two,nli_entail_inputs,composite,80,-0.01,-0.23,0.19,-0.4,0.24,0.01,0.44
+round two,nli_contra_inputs,accuracy,80,-0.29,-0.45,-0.1,0.02,-0.42,-0.57,-0.22
+round two,nli_contra_inputs,completeness,80,0.03,-0.16,0.21,0.13,-0.08,-0.3,0.14
+round two,nli_contra_inputs,organization,80,0.07,-0.11,0.25,0.08,0.01,-0.22,0.24
+round two,nli_contra_inputs,conciseness,80,-0.11,-0.36,0.14,-0.21,-0.1,-0.33,0.14
+round two,nli_contra_inputs,clinical_utility,80,-0.17,-0.34,0.01,0.08,-0.31,-0.5,-0.09
+round two,nli_contra_inputs,overall_quality,80,-0.14,-0.31,0.05,0.12,-0.28,-0.48,-0.05
+round two,nli_contra_inputs,composite,80,-0.13,-0.29,0.04,0.02,-0.26,-0.45,-0.04
+round two,nli_supported_frac_inputs,accuracy,80,0.09,-0.14,0.29,-0.31,0.3,0.1,0.48
+round two,nli_supported_frac_inputs,completeness,80,-0.14,-0.35,0.05,-0.37,0.14,-0.08,0.34
+round two,nli_supported_frac_inputs,organization,80,-0.21,-0.4,-0.02,-0.37,-0.03,-0.24,0.19
+round two,nli_supported_frac_inputs,conciseness,80,0.12,-0.09,0.31,-0.06,0.07,-0.14,0.28
+round two,nli_supported_frac_inputs,clinical_utility,80,0.03,-0.18,0.24,-0.36,0.28,0.07,0.46
+round two,nli_supported_frac_inputs,overall_quality,80,0.01,-0.21,0.21,-0.34,0.27,0.07,0.45
+round two,nli_supported_frac_inputs,composite,80,-0.02,-0.23,0.18,-0.35,0.22,0.0,0.41
+round two,summary_words,accuracy,80,0.58,0.47,0.7,0.75,,,
+round two,summary_words,completeness,80,0.84,0.8,0.88,0.84,,,
+round two,summary_words,organization,80,0.71,0.66,0.77,0.67,,,
+round two,summary_words,conciseness,80,-0.2,-0.38,-0.0,-0.3,,,
+round two,summary_words,clinical_utility,80,0.66,0.58,0.75,0.71,,,
+round two,summary_words,overall_quality,80,0.7,0.61,0.78,0.74,,,
+round two,summary_words,composite,80,0.68,0.6,0.75,0.67,,,
+all six models,bleu,accuracy,239,0.07,-0.07,0.23,0.16,-0.02,-0.19,0.15
+all six models,bleu,completeness,239,0.2,0.06,0.35,0.27,-0.03,-0.19,0.15
+all six models,bleu,organization,239,0.03,-0.1,0.16,-0.03,-0.21,-0.35,-0.07
+all six models,bleu,conciseness,239,-0.35,-0.48,-0.22,-0.46,-0.28,-0.42,-0.13
+all six models,bleu,clinical_utility,239,0.08,-0.06,0.24,0.15,-0.07,-0.24,0.11
+all six models,bleu,overall_quality,239,0.06,-0.08,0.22,0.14,-0.08,-0.25,0.09
+all six models,bleu,composite,239,0.04,-0.1,0.2,0.08,-0.12,-0.29,0.06
+all six models,rouge_l,accuracy,239,0.02,-0.15,0.2,-0.05,0.12,-0.06,0.29
+all six models,rouge_l,completeness,239,-0.15,-0.29,0.0,-0.26,0.06,-0.09,0.21
+all six models,rouge_l,organization,239,-0.36,-0.49,-0.23,-0.42,-0.24,-0.38,-0.1
+all six models,rouge_l,conciseness,239,-0.13,-0.26,-0.0,-0.21,-0.25,-0.38,-0.13
+all six models,rouge_l,clinical_utility,239,-0.09,-0.25,0.09,-0.2,0.04,-0.13,0.21
+all six models,rouge_l,overall_quality,239,-0.08,-0.24,0.09,-0.2,0.04,-0.12,0.21
+all six models,rouge_l,composite,239,-0.15,-0.3,0.02,-0.26,-0.03,-0.19,0.14
+all six models,bert_f1,accuracy,239,0.06,-0.09,0.22,-0.07,0.11,-0.04,0.26
+all six models,bert_f1,completeness,239,-0.08,-0.25,0.07,-0.22,0.01,-0.16,0.17
+all six models,bert_f1,organization,239,-0.21,-0.34,-0.09,-0.3,-0.16,-0.3,-0.02
+all six models,bert_f1,conciseness,239,-0.07,-0.2,0.07,-0.09,-0.12,-0.25,0.02
+all six models,bert_f1,clinical_utility,239,0.01,-0.15,0.17,-0.17,0.07,-0.1,0.24
+all six models,bert_f1,overall_quality,239,-0.0,-0.16,0.16,-0.17,0.06,-0.11,0.22
+all six models,bert_f1,composite,239,-0.06,-0.22,0.11,-0.21,0.0,-0.17,0.17
+all six models,sbert_similarity,accuracy,239,0.0,-0.16,0.17,0.03,0.04,-0.12,0.21
+all six models,sbert_similarity,completeness,239,0.01,-0.12,0.14,-0.08,0.13,-0.03,0.28
+all six models,sbert_similarity,organization,239,-0.03,-0.14,0.07,-0.07,0.05,-0.08,0.18
+all six models,sbert_similarity,conciseness,239,0.07,-0.07,0.22,0.07,0.03,-0.11,0.18
+all six models,sbert_similarity,clinical_utility,239,0.01,-0.13,0.16,-0.05,0.07,-0.07,0.22
+all six models,sbert_similarity,overall_quality,239,0.03,-0.11,0.17,-0.05,0.08,-0.07,0.22
+all six models,sbert_similarity,composite,239,0.01,-0.13,0.15,-0.03,0.08,-0.08,0.22
+all six models,medcat_entity_recall,accuracy,239,0.26,0.11,0.41,0.39,0.17,-0.02,0.34
+all six models,medcat_entity_recall,completeness,239,0.54,0.43,0.65,0.72,0.36,0.19,0.51
+all six models,medcat_entity_recall,organization,239,0.4,0.32,0.48,0.46,0.2,0.04,0.34
+all six models,medcat_entity_recall,conciseness,239,-0.2,-0.3,-0.1,-0.16,-0.07,-0.18,0.04
+all six models,medcat_entity_recall,clinical_utility,239,0.37,0.22,0.5,0.51,0.23,0.04,0.41
+all six models,medcat_entity_recall,overall_quality,239,0.35,0.22,0.49,0.51,0.22,0.03,0.4
+all six models,medcat_entity_recall,composite,239,0.36,0.23,0.49,0.51,0.22,0.03,0.39
+all six models,medcat_entity_precision,accuracy,239,-0.08,-0.22,0.05,-0.25,0.1,-0.05,0.24
+all six models,medcat_entity_precision,completeness,239,-0.44,-0.55,-0.35,-0.63,-0.12,-0.29,0.04
+all six models,medcat_entity_precision,organization,239,-0.59,-0.67,-0.51,-0.64,-0.4,-0.52,-0.27
+all six models,medcat_entity_precision,conciseness,239,-0.01,-0.13,0.1,-0.13,-0.25,-0.36,-0.13
+all six models,medcat_entity_precision,clinical_utility,239,-0.24,-0.37,-0.12,-0.48,-0.02,-0.18,0.15
+all six models,medcat_entity_precision,overall_quality,239,-0.23,-0.36,-0.12,-0.49,-0.02,-0.18,0.13
+all six models,medcat_entity_precision,composite,239,-0.32,-0.44,-0.21,-0.53,-0.12,-0.27,0.03
+all six models,medcat_entity_f1,accuracy,239,0.04,-0.11,0.18,-0.08,0.13,-0.01,0.28
+all six models,medcat_entity_f1,completeness,239,-0.16,-0.29,-0.04,-0.31,0.05,-0.11,0.21
+all six models,medcat_entity_f1,organization,239,-0.35,-0.46,-0.23,-0.45,-0.22,-0.36,-0.07
+all six models,medcat_entity_f1,conciseness,239,-0.09,-0.22,0.02,-0.2,-0.21,-0.33,-0.1
+all six models,medcat_entity_f1,clinical_utility,239,-0.05,-0.2,0.09,-0.25,0.08,-0.07,0.23
+all six models,medcat_entity_f1,overall_quality,239,-0.05,-0.2,0.09,-0.26,0.08,-0.07,0.21
+all six models,medcat_entity_f1,composite,239,-0.13,-0.27,0.0,-0.31,0.0,-0.15,0.14
+all six models,scispacy_entity_recall,accuracy,239,0.35,0.19,0.48,0.45,0.27,0.1,0.42
+all six models,scispacy_entity_recall,completeness,239,0.54,0.42,0.65,0.67,0.39,0.24,0.54
+all six models,scispacy_entity_recall,organization,239,0.33,0.23,0.44,0.36,0.13,-0.04,0.3
+all six models,scispacy_entity_recall,conciseness,239,-0.14,-0.25,-0.04,-0.13,-0.02,-0.14,0.08
+all six models,scispacy_entity_recall,clinical_utility,239,0.42,0.28,0.54,0.52,0.31,0.14,0.47
+all six models,scispacy_entity_recall,overall_quality,239,0.4,0.27,0.52,0.52,0.3,0.13,0.45
+all six models,scispacy_entity_recall,composite,239,0.4,0.27,0.52,0.5,0.28,0.11,0.43
+all six models,scispacy_entity_precision,accuracy,239,-0.04,-0.18,0.09,-0.2,0.16,-0.0,0.3
+all six models,scispacy_entity_precision,completeness,239,-0.42,-0.52,-0.32,-0.62,-0.07,-0.24,0.12
+all six models,scispacy_entity_precision,organization,239,-0.6,-0.67,-0.53,-0.66,-0.4,-0.52,-0.28
+all six models,scispacy_entity_precision,conciseness,239,0.02,-0.11,0.14,-0.1,-0.22,-0.34,-0.1
+all six models,scispacy_entity_precision,clinical_utility,239,-0.21,-0.35,-0.08,-0.45,0.03,-0.15,0.21
+all six models,scispacy_entity_precision,overall_quality,239,-0.2,-0.34,-0.07,-0.45,0.03,-0.15,0.21
+all six models,scispacy_entity_precision,composite,239,-0.29,-0.42,-0.17,-0.51,-0.07,-0.24,0.1
+all six models,scispacy_entity_f1,accuracy,239,0.13,-0.01,0.26,0.04,0.23,0.09,0.36
+all six models,scispacy_entity_f1,completeness,239,-0.08,-0.19,0.03,-0.22,0.15,0.01,0.28
+all six models,scispacy_entity_f1,organization,239,-0.33,-0.44,-0.22,-0.42,-0.2,-0.33,-0.07
+all six models,scispacy_entity_f1,conciseness,239,-0.06,-0.19,0.06,-0.16,-0.17,-0.28,-0.06
+all six models,scispacy_entity_f1,clinical_utility,239,0.03,-0.11,0.16,-0.14,0.17,0.02,0.31
+all six models,scispacy_entity_f1,overall_quality,239,0.03,-0.1,0.16,-0.15,0.17,0.02,0.3
+all six models,scispacy_entity_f1,composite,239,-0.04,-0.17,0.08,-0.21,0.09,-0.05,0.22
+all six models,bert_f1_full,accuracy,239,0.1,-0.08,0.27,-0.08,0.19,0.02,0.37
+all six models,bert_f1_full,completeness,239,-0.09,-0.23,0.04,-0.24,0.12,-0.02,0.26
+all six models,bert_f1_full,organization,239,-0.12,-0.23,-0.01,-0.09,0.06,-0.05,0.17
+all six models,bert_f1_full,conciseness,239,0.14,0.03,0.25,0.16,0.05,-0.07,0.16
+all six models,bert_f1_full,clinical_utility,239,0.12,-0.03,0.26,-0.03,0.26,0.12,0.41
+all six models,bert_f1_full,overall_quality,239,0.1,-0.06,0.26,-0.04,0.24,0.09,0.39
+all six models,bert_f1_full,composite,239,0.05,-0.11,0.2,-0.06,0.19,0.05,0.34
+all six models,bert_r_full,accuracy,239,0.3,0.13,0.45,0.33,0.21,0.01,0.39
+all six models,bert_r_full,completeness,239,0.44,0.35,0.54,0.65,0.23,0.06,0.38
+all six models,bert_r_full,organization,239,0.33,0.26,0.42,0.45,0.11,-0.02,0.24
+all six models,bert_r_full,conciseness,239,-0.12,-0.24,0.0,-0.12,0.03,-0.1,0.15
+all six models,bert_r_full,clinical_utility,239,0.37,0.24,0.5,0.51,0.24,0.04,0.41
+all six models,bert_r_full,overall_quality,239,0.34,0.2,0.47,0.51,0.21,0.02,0.38
+all six models,bert_r_full,composite,239,0.35,0.23,0.47,0.5,0.21,0.03,0.37
+all six models,bert_p_full,accuracy,239,-0.01,-0.17,0.14,-0.18,0.17,-0.01,0.33
+all six models,bert_p_full,completeness,239,-0.3,-0.44,-0.16,-0.46,0.07,-0.09,0.21
+all six models,bert_p_full,organization,239,-0.28,-0.39,-0.17,-0.24,0.04,-0.09,0.15
+all six models,bert_p_full,conciseness,239,0.23,0.12,0.34,0.23,0.08,-0.05,0.19
+all six models,bert_p_full,clinical_utility,239,-0.03,-0.18,0.11,-0.2,0.24,0.09,0.38
+all six models,bert_p_full,overall_quality,239,-0.03,-0.18,0.11,-0.2,0.22,0.07,0.37
+all six models,bert_p_full,composite,239,-0.09,-0.25,0.05,-0.22,0.17,0.02,0.31
+all six models,sbert_full,accuracy,239,0.38,0.22,0.52,0.3,0.35,0.2,0.5
+all six models,sbert_full,completeness,239,0.52,0.42,0.61,0.54,0.54,0.41,0.64
+all six models,sbert_full,organization,239,0.44,0.34,0.54,0.65,0.42,0.3,0.54
+all six models,sbert_full,conciseness,239,0.25,0.13,0.37,0.3,0.32,0.21,0.42
+all six models,sbert_full,clinical_utility,239,0.51,0.37,0.65,0.55,0.5,0.35,0.63
+all six models,sbert_full,overall_quality,239,0.5,0.36,0.64,0.53,0.49,0.34,0.62
+all six models,sbert_full,composite,239,0.53,0.39,0.65,0.59,0.51,0.37,0.64
+all six models,bge_large_full,accuracy,239,0.36,0.18,0.52,0.43,0.31,0.12,0.48
+all six models,bge_large_full,completeness,239,0.5,0.39,0.61,0.61,0.41,0.24,0.56
+all six models,bge_large_full,organization,239,0.41,0.34,0.49,0.5,0.3,0.17,0.43
+all six models,bge_large_full,conciseness,239,0.08,-0.04,0.21,0.08,0.19,0.07,0.3
+all six models,bge_large_full,clinical_utility,239,0.45,0.29,0.6,0.57,0.38,0.19,0.55
+all six models,bge_large_full,overall_quality,239,0.46,0.29,0.61,0.57,0.39,0.2,0.56
+all six models,bge_large_full,composite,239,0.46,0.32,0.6,0.57,0.39,0.21,0.55
+all six models,pubmedbert_full,accuracy,239,0.35,0.18,0.51,0.28,0.31,0.13,0.48
+all six models,pubmedbert_full,completeness,239,0.42,0.32,0.52,0.48,0.38,0.22,0.51
+all six models,pubmedbert_full,organization,239,0.36,0.26,0.46,0.47,0.3,0.15,0.44
+all six models,pubmedbert_full,conciseness,239,0.11,-0.03,0.24,0.2,0.18,0.06,0.3
+all six models,pubmedbert_full,clinical_utility,239,0.45,0.31,0.59,0.47,0.41,0.24,0.57
+all six models,pubmedbert_full,overall_quality,239,0.46,0.31,0.6,0.48,0.42,0.25,0.58
+all six models,pubmedbert_full,composite,239,0.45,0.31,0.58,0.49,0.41,0.24,0.56
+all six models,nli_entail_transcript,accuracy,239,-0.02,-0.13,0.09,-0.09,0.14,0.02,0.26
+all six models,nli_entail_transcript,completeness,239,-0.37,-0.49,-0.24,-0.47,-0.05,-0.24,0.13
+all six models,nli_entail_transcript,organization,239,-0.55,-0.63,-0.45,-0.54,-0.36,-0.49,-0.23
+all six models,nli_entail_transcript,conciseness,239,-0.12,-0.24,-0.0,-0.18,-0.34,-0.44,-0.24
+all six models,nli_entail_transcript,clinical_utility,239,-0.19,-0.32,-0.07,-0.3,0.01,-0.14,0.17
+all six models,nli_entail_transcript,overall_quality,239,-0.17,-0.3,-0.05,-0.31,0.03,-0.13,0.18
+all six models,nli_entail_transcript,composite,239,-0.28,-0.4,-0.16,-0.38,-0.09,-0.24,0.06
+all six models,nli_contra_transcript,accuracy,239,-0.08,-0.25,0.08,-0.07,-0.13,-0.3,0.03
+all six models,nli_contra_transcript,completeness,239,0.06,-0.09,0.2,0.17,-0.06,-0.22,0.11
+all six models,nli_contra_transcript,organization,239,0.21,0.09,0.33,0.29,0.14,0.0,0.29
+all six models,nli_contra_transcript,conciseness,239,0.12,-0.03,0.28,0.11,0.18,0.04,0.32
+all six models,nli_contra_transcript,clinical_utility,239,0.04,-0.13,0.19,0.1,-0.03,-0.19,0.13
+all six models,nli_contra_transcript,overall_quality,239,0.01,-0.15,0.18,0.11,-0.05,-0.22,0.11
+all six models,nli_contra_transcript,composite,239,0.07,-0.09,0.22,0.14,0.0,-0.17,0.17
+all six models,nli_supported_frac_transcript,accuracy,239,-0.01,-0.13,0.1,-0.09,0.16,0.04,0.29
+all six models,nli_supported_frac_transcript,completeness,239,-0.34,-0.45,-0.21,-0.45,-0.0,-0.18,0.17
+all six models,nli_supported_frac_transcript,organization,239,-0.51,-0.6,-0.41,-0.51,-0.31,-0.44,-0.16
+all six models,nli_supported_frac_transcript,conciseness,239,-0.06,-0.18,0.05,-0.14,-0.28,-0.37,-0.19
+all six models,nli_supported_frac_transcript,clinical_utility,239,-0.16,-0.29,-0.05,-0.29,0.05,-0.1,0.2
+all six models,nli_supported_frac_transcript,overall_quality,239,-0.14,-0.27,-0.02,-0.29,0.07,-0.08,0.21
+all six models,nli_supported_frac_transcript,composite,239,-0.25,-0.36,-0.13,-0.36,-0.04,-0.19,0.1
+all six models,nli_entail_inputs,accuracy,239,-0.06,-0.17,0.05,-0.14,0.1,-0.01,0.22
+all six models,nli_entail_inputs,completeness,239,-0.4,-0.51,-0.29,-0.5,-0.1,-0.27,0.06
+all six models,nli_entail_inputs,organization,239,-0.6,-0.68,-0.5,-0.57,-0.43,-0.54,-0.31
+all six models,nli_entail_inputs,conciseness,239,-0.16,-0.29,-0.05,-0.22,-0.42,-0.5,-0.32
+all six models,nli_entail_inputs,clinical_utility,239,-0.23,-0.35,-0.11,-0.35,-0.03,-0.18,0.12
+all six models,nli_entail_inputs,overall_quality,239,-0.21,-0.33,-0.09,-0.34,-0.01,-0.16,0.13
+all six models,nli_entail_inputs,composite,239,-0.33,-0.44,-0.22,-0.43,-0.15,-0.28,-0.01
+all six models,nli_contra_inputs,accuracy,239,-0.01,-0.13,0.12,0.07,-0.12,-0.24,0.01
+all six models,nli_contra_inputs,completeness,239,0.18,0.04,0.31,0.3,-0.08,-0.23,0.09
+all six models,nli_contra_inputs,organization,239,0.27,0.15,0.38,0.27,0.08,-0.06,0.22
+all six models,nli_contra_inputs,conciseness,239,0.02,-0.13,0.17,0.0,0.15,0.03,0.28
+all six models,nli_contra_inputs,clinical_utility,239,0.08,-0.05,0.21,0.17,-0.08,-0.21,0.06
+all six models,nli_contra_inputs,overall_quality,239,0.07,-0.06,0.21,0.19,-0.08,-0.22,0.07
+all six models,nli_contra_inputs,composite,239,0.12,-0.02,0.26,0.2,-0.04,-0.17,0.12
+all six models,nli_supported_frac_inputs,accuracy,239,-0.05,-0.16,0.05,-0.13,0.11,-0.0,0.23
+all six models,nli_supported_frac_inputs,completeness,239,-0.38,-0.48,-0.27,-0.47,-0.06,-0.23,0.09
+all six models,nli_supported_frac_inputs,organization,239,-0.58,-0.66,-0.48,-0.55,-0.4,-0.52,-0.27
+all six models,nli_supported_frac_inputs,conciseness,239,-0.14,-0.25,-0.04,-0.2,-0.39,-0.47,-0.3
+all six models,nli_supported_frac_inputs,clinical_utility,239,-0.22,-0.34,-0.1,-0.33,-0.02,-0.16,0.13
+all six models,nli_supported_frac_inputs,overall_quality,239,-0.19,-0.31,-0.08,-0.33,0.01,-0.14,0.14
+all six models,nli_supported_frac_inputs,composite,239,-0.31,-0.42,-0.2,-0.41,-0.12,-0.26,0.01
+all six models,summary_words,accuracy,239,0.26,0.18,0.34,0.28,,,
+all six models,summary_words,completeness,239,0.61,0.5,0.71,0.64,,,
+all six models,summary_words,organization,239,0.54,0.43,0.64,0.4,,,
+all six models,summary_words,conciseness,239,-0.3,-0.39,-0.2,-0.3,,,
+all six models,summary_words,clinical_utility,239,0.38,0.28,0.48,0.39,,,
+all six models,summary_words,overall_quality,239,0.36,0.26,0.46,0.38,,,
+all six models,summary_words,composite,239,0.39,0.29,0.49,0.38,,,
