@@ -1,0 +1,92 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0009
+Detected Disease: Chest Pain
+Generated: 2026-11-19 05:24:55
+Time: 5.21s
+Tokens: 19,822 in / 1,295 out
+============================================================
+
+Patient Information
+Name: Abel Wunsch
+Date of Birth: 1932-06-07
+Sex: Male
+Unit Number: 388
+Address: 214 Rippin Mews, Salisbury, Massachusetts 01952
+
+Chief Complaint
+The patient presents with a five-day history of left-sided chest pain and dyspnea.
+
+History of Present Illness
+The patient is a previously healthy individual who reports feeling "not quite right" for the past five days. The primary symptoms are a lingering, sharp pain located on the left side of the chest and difficulty catching his breath. The patient states that the pain is localized to the left chest and does not radiate to other locations. The symptoms began while the patient was sitting on his couch. The pain has remained constant in its presence but is exacerbated by physical activity, such as walking to get the mail, and by taking deep breaths. The patient notes that while the pain itself may not worsen significantly with walking, his ability to catch his breath is compromised during exertion. Prior to this episode, the patient was highly active, walking approximately five kilometers daily. He has attempted to manage the symptoms with acetaminophen and ibuprofen, which provide only marginal relief. The patient denies any prior history of heart or lung problems. He initially suspected a chest infection but presents for evaluation due to the persistence of symptoms.
+
+Review of Systems
+Constitutional: The patient denies fevers, chills, or night sweats. He reports mild fatigue secondary to reduced activity levels due to dyspnea, though he felt fine energy-wise prior to the onset of symptoms.
+Respiratory: The patient reports dyspnea on exertion. He denies cough, hemoptysis, sputum production, or wheezing.
+Cardiovascular: The patient denies palpitations, racing heart, lightheadedness, or syncope.
+Gastrointestinal: The patient denies nausea, vomiting, abdominal pain, or bowel problems.
+Genitourinary: The patient denies urinary problems. He notes a history of reduced fluid intake and urination following a recent hysterectomy, but states this has normalized.
+Musculoskeletal: The patient denies joint pains, leg pains, or muscle pains.
+Skin: The patient denies rashes or skin changes.
+Neurological: The patient denies unusual headaches.
+
+Past Medical History
+The patient reports no chronic medical conditions such as high blood pressure, diabetes, or heart disease. He states he does not take any regular prescription or over-the-counter medications other than occasional acetaminophen and ibuprofen for pain.
+
+Surgical History
+The patient reports a hysterectomy performed approximately one month ago for heavy and painful periods. He also reports wisdom teeth extraction during his teenage years. He states he recovered from the hysterectomy quickly, being bed-bound for only a few days.
+
+Social History
+The patient is an accountant. He lives with his husband and two teenage children. He is a current smoker, consuming approximately five cigarettes per day, and is actively trying to quit. He consumes alcohol occasionally, limited to a glass of wine on weekends. He denies the use of recreational drugs, noting only past use of marijuana when younger.
+
+Family History
+The patient's mother suffered a heart attack in her 70s. The patient denies a family history of cancer, bleeding disorders, or coagulation disorders. He notes that his mother's cousin may have had a blood clot, but no first-degree relatives have experienced thrombosis.
+
+Allergies
+The patient reports no known drug allergies.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 79.00 bpm
+Respiratory Rate: 15.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 182.60 cm
+BMI: 33.29
+
+Physical Examination
+No information available.
+
+Laboratory Results
+The following laboratory values were obtained:
+White Blood Cell Count: 9.49 x 10^3/uL
+Red Blood Cell Count: 3.80 x 10^6/uL
+Hemoglobin: 16.92 g/dL
+Hematocrit: 47.49 %
+MCV: 80.65 fL
+MCH: 27.14 pg
+MCHC: 33.36 g/dL
+RDW: 14.47 %
+Platelets: 296.70 x 10^3/uL
+Glucose: 82.8 mg/dL
+Urea Nitrogen: 10.46 mg/dL
+Creatinine: 0.88 mg/dL
+Calcium: 8.79 mg/dL
+Sodium: 142.93 mmol/L
+Potassium: 3.73 mmol/L
+Chloride: 102.28 mmol/L
+Carbon Dioxide: 23.22 mmol/L
+Glomerular Filtration Rate: 158.08 mL/min
+Protein: 6.86 g/dL
+
+Imaging
+No information available.
+
+Assessment
+The patient presents with acute onset of pleuritic chest pain and exertional dyspnea. The clinical picture raises concern for a pulmonary embolism, particularly given the recent surgical history (hysterectomy one month ago) which is a risk factor for venous thromboembolism. Other differentials may include musculoskeletal chest pain or pericarditis, but the combination of sharp pain, dyspnea, and recent surgery makes pulmonary embolism the primary concern to be ruled out.
+
+Plan
+1. Diagnostic Workup: Order laboratory work and imaging studies to investigate and confirm or rule out pulmonary embolism.
+2. Monitoring: Monitor patient for any changes in respiratory status or hemodynamic stability while awaiting results.
+3. Follow-up: Re-evaluate patient based on the results of the diagnostic imaging and laboratory tests to determine appropriate treatment.

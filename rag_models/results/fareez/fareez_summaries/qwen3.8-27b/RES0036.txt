@@ -1,0 +1,70 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0036
+Detected Disease: Pneumonia
+Generated: 2026-11-19 05:24:55
+Time: 3.61s
+Tokens: 13,327 in / 1,221 out
+============================================================
+
+Patient Information
+Name: Adrianna Camelia Wuckert
+Date of Birth: 1919-02-25
+Sex: Female
+Unit Number: 1637
+Address: 609 Bartell Gate, Marshfield, Massachusetts 02050
+
+Chief Complaint
+The patient presents with a six-day history of progressive dyspnea and cough.
+
+History of Present Illness
+The patient is a female who presents with a six-day history of shortness of breath that began suddenly. The dyspnea has been constant and is progressively worsening. The patient reports having to stop frequently while walking from her car to the clinic due to breathlessness. Concurrently, she developed a cough that has also been worsening over the same six-day period. The cough is productive, with the patient noting rusty-colored sputum occurring a couple of times daily. She denies coughing up frank red blood. The patient reports feeling feverish and experiencing chills, though she has not taken her temperature. She also reports sharp chest pain that is exacerbated by coughing, which she rates as a 7 out of 10 in intensity. The pain resolves when the coughing subsides. She denies chest pressure, wheezing (though she mentions noticing some mild wheezing), or other respiratory triggers such as pollen or cold air. The symptoms are not dependent on time of day. The patient reports a history of a runny nose a few days prior to the onset of these respiratory symptoms. She denies recent travel, contact with sick individuals, or exposure to tuberculosis. She reports no recent weight loss, night sweats, dizziness, or fainting.
+
+Review of Systems
+Constitutional: Positive for feeling feverish, chills, and feeling chilly at night. Negative for significant weight loss, night sweats, or fatigue.
+Respiratory: Positive for dyspnea on exertion, productive cough with rusty sputum, mild wheezing, and pleuritic chest pain. Negative for hemoptysis (frank blood), wheezing (significant), or triggers related to environmental allergens.
+Cardiovascular: Positive for sharp chest pain with coughing. Negative for chest pressure, palpitations, or racing heart.
+Gastrointestinal: Negative for changes in bowel movements, constipation, or diarrhea.
+Genitourinary: Negative for changes in urinary patterns.
+Neurological: Negative for headaches, nausea, vomiting, dizziness, or fainting.
+Other: Negative for sore throat or runny nose at the time of presentation (though noted in HPI as preceding symptom).
+
+Allergies
+The patient reports no known allergies.
+
+Past Medical History
+The patient reports no past medical conditions such as high blood pressure, diabetes, or asthma. She reports no previous surgeries or hospitalizations. Note: The electronic health record contains extensive historical data including chronic sinusitis, essential hypertension, ischemic heart disease, obesity, chronic kidney disease stages 1-4, hyperlipidemia, anemia, and a history of renal transplant. However, per the patient's current verbal report in the transcript, she denies these conditions. The transcript is prioritized for current status.
+
+Surgical History
+The patient reports no previous surgeries.
+
+Social History
+The patient smokes 10 cigarettes per day and has been smoking since age 20. She reports occasional cannabis use, approximately 5 milligrams per week. She consumes alcohol, approximately 5 drinks per week. She works in a crowded environment with poor conditions, including a broken air conditioner and high humidity. She has been working there for the past year. She lives in a small, poorly maintained apartment with potential exposure to mold, dust, and asbestos due to the age of the building. She keeps birds at home, which she has had for three years without prior issues. She does not exercise regularly and reports a diet consisting largely of fast food and junk food.
+
+Family History
+The patient reports no family history of medical conditions such as cancers, heart attacks, or lung issues.
+
+Current Medications
+The patient reports she is not currently taking any medications. She has been taking Tylenol to help regulate her temperature.
+
+Objective
+Vital Signs
+No vital signs were recorded during this encounter. Temperature, blood pressure, heart rate, respiration rate, oxygen saturation, and weight are not available.
+
+Physical Exam
+No physical examination findings were documented in the provided data.
+
+Labs
+No laboratory results were obtained during this specific encounter. Historical lab data from the electronic health record includes various metabolic and lipid panels, but these are not relevant to the current acute presentation.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+Primary Diagnosis: Upper Respiratory Tract Infection (suspected) or Pneumonia.
+Secondary Diagnoses: COPD exacerbation (differential diagnosis due to significant smoking history).
+The patient presents with acute onset dyspnea, productive cough with rusty sputum, and pleuritic chest pain. The clinical picture is suggestive of a lower respiratory tract infection, such as pneumonia, or a severe upper respiratory tract infection. The rusty sputum and pleuritic pain raise concern for pneumonia. The patient's significant smoking history (10 cigarettes/day since age 20) and environmental exposures (mold, dust, asbestos) are risk factors for underlying lung disease or exacerbation.
+
+Plan
+1. Investigations: Further diagnostic workup is required to differentiate between an upper respiratory tract infection, pneumonia, and COPD exacerbation. This may include chest X-ray, complete blood count, and other relevant laboratory tests.
+2. Medications: Antibiotics or other medications may be prescribed depending on the results of the investigations, unless a viral etiology is confirmed.
+3. Follow-up: The patient will be monitored for response to treatment and follow-up will be arranged based on the diagnostic findings.

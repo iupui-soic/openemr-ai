@@ -1,0 +1,54 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0143
+Detected Disease: Common Cold
+Generated: 2026-11-19 05:24:55
+Time: 2.93s
+Tokens: 7,615 in / 1,021 out
+============================================================
+
+Patient Information
+The patient is a young male university student, currently residing at home with his parents while attending school virtually. He is from Ontario. The patient reports no known drug, food, or environmental allergies. He does not take any current medications, including over-the-counter drugs, herbal supplements, or vitamins. His family history is notable for his father having high cholesterol. The patient’s social history indicates he has tried tobacco and marijuana on a few occasions but does not use them regularly. He denies recreational drug use. He consumes alcohol socially on weekends.
+
+Chief Complaint
+The patient presents with a two-week history of a persistent dry cough and a one-week history of rhinorrhea.
+
+History of Present Illness
+The patient reports that his symptoms began approximately two weeks ago with the onset of a dry, non-productive cough. He denies any hemoptysis. The cough was more severe last week but has improved in intensity, though it persists longer than his previous respiratory illnesses. Approximately one week ago, he developed rhinorrhea with clear to light-colored discharge. He denies purulent (green or yellow) discharge. The patient reports a brief episode of chills for two nights last week but denies fever, night sweats, or unintentional weight loss. He reports mild congestion that temporarily reduced his sense of smell, but his sense of taste remains intact. He denies headache, visual changes, eye redness, tearing, sore throat, dyspnea, chest pain, palpitations, abdominal pain, nausea, vomiting, diarrhea, constipation, myalgias, or numbness or tingling in the extremities. The patient notes that his mother had a similar upper respiratory infection ("sniffles") the week prior to his symptom onset, which has since resolved. The patient’s mother was not tested for SARS-CoV-2. The patient has not traveled outside of his province.
+
+Review of Systems
+Constitutional: Negative for fever, chills (except for two nights last week), night sweats, and weight loss.
+Respiratory: Positive for dry cough and rhinorrhea. Negative for dyspnea, chest pain, and hemoptysis.
+Cardiovascular: Negative for palpitations and chest pain.
+Gastrointestinal: Negative for abdominal pain, nausea, vomiting, diarrhea, and constipation.
+Neurological: Negative for headache, visual changes, and numbness or tingling.
+Other: Negative for sore throat, myalgias, and changes in taste.
+
+Objective
+Vital Signs
+Blood Pressure: Not available.
+Heart Rate: 93 beats per minute.
+Temperature: Not available.
+Respiratory Rate: 12 breaths per minute.
+Oxygen Saturation: Not available.
+Weight: Not available.
+Height: 170.80 cm.
+BMI: 28.11.
+
+Physical Examination
+The physician plans to perform a physical examination to evaluate the patient’s condition. The examination will include inspection of the throat and mouth, auscultation of the chest to rule out pneumonia or other lower respiratory tract infections, and assessment for signs of streptococcal pharyngitis or mononucleosis. Specific findings from the physical examination are not yet documented in the provided record.
+
+Labs
+No laboratory results are currently available for this encounter. The physician indicated an intention to review labs to assist in the diagnostic process.
+
+Imaging
+No imaging studies have been performed or ordered for this encounter.
+
+Assessment
+The primary diagnosis is a common cold (viral upper respiratory infection). The clinical presentation of a dry cough, clear rhinorrhea, and recent exposure to a sick contact (mother) is consistent with a viral etiology. The physician has noted the need to rule out SARS-CoV-2 infection given the persistent symptoms and potential exposure. Differential diagnoses to be excluded via physical examination and potential testing include bacterial pneumonia, streptococcal pharyngitis, and mononucleosis. The patient’s request for antibiotics is noted, but the physician has explained that viral infections typically do not require antibiotic treatment.
+
+Plan
+1. Diagnostic Testing: A SARS-CoV-2 swab test has been ordered to rule out COVID-19. Results are expected within 24 to 48 hours. Public health will contact the patient if the result is positive.
+2. Isolation: The patient is instructed to self-isolate at home and maintain distance from his parents until test results are received and further guidance is provided.
+3. Physical Examination: To be performed to assess for signs of bacterial infection or other complications.
+4. Medications: No antibiotics are prescribed at this time. The physician will determine the need for any pharmacological intervention after the physical examination and review of any available labs.
+5. Follow-up: The patient will follow up based on the results of the SARS-CoV-2 test and the findings of the physical examination.

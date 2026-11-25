@@ -1,0 +1,78 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0035
+Detected Disease: Wrist Injury
+Generated: 2026-11-19 05:24:55
+Time: 33.56s
+Tokens: 20,739 in / 1,139 out
+============================================================
+
+Patient Information
+Patient Name: Abel Daugherty
+Date of Birth: 1940-08-19
+Sex: Male
+Address: 849 Miller Rapid, Boston, Massachusetts 02110
+Encounter Type: Outpatient Evaluation
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient presents with right wrist pain, swelling, and bruising following a fall while skiing yesterday.
+
+History of Present Illness
+The patient is a male who reports falling on his outstretched arm while skiing yesterday. He describes the mechanism of injury as falling with his wrist extended backwards, bracing the fall with his hand. He experienced immediate pain upon impact. He reports the pain is sharp, constant, and localized to the right wrist, specifically below the thumb area and on the right side of the wrist. He rates the pain severity as 5 to 6 out of 10. The pain is exacerbated by movement. He denies pain radiating to the hand or up the arm. He has been taking ibuprofen and limiting movement, which has provided mild relief. He denies any other injuries to the elbow, shoulder, or head, and reports no loss of consciousness during the fall. He denies any prior history of wrist or hand injuries.
+
+Review of Systems
+Constitutional: Negative for fever, chills, night sweats, fatigue, or unexpected weight loss.
+Respiratory: Negative for cough, shortness of breath, wheezing, or congestion.
+Cardiovascular: Negative for chest pain, palpitations, or racing heart.
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, or changes in bowel habits.
+Genitourinary: Negative for urinary pain or frequency.
+Neurological: Negative for numbness, tingling, sensory loss, muscle weakness, dizziness, or fainting.
+Musculoskeletal: Positive for right wrist pain, swelling, and bruising. Negative for other musculoskeletal pains.
+Other: Negative for headaches, visual or auditory changes, loss of smell or taste, sore throat, or recent travel.
+
+Past Medical History
+The patient reports no prior medical conditions, no regular physician visits, and no history of hospitalizations or surgeries. He denies a history of neurological or musculoskeletal problems in his family. Note: The electronic health record contains extensive historical data including diabetes, hypertension, and renal disease, but the patient explicitly denies these conditions in the current encounter. Per instructions, the transcript is prioritized for current status.
+
+Surgical History
+The patient denies any prior surgeries.
+
+Social History
+The patient lives alone in an apartment downtown and is currently a student. He reports no recent sick contacts. He is active, participating in snowboarding, camping, tennis, and volleyball. He denies tobacco use. He reports drinking alcohol approximately twice every two weeks. He reports using cannabis edibles approximately once a month. He denies use of other recreational drugs.
+
+Family History
+The patient denies any family history of neurological or musculoskeletal problems, or autoimmune conditions such as hypothyroidism.
+
+Current Medications
+The patient reports taking ibuprofen for pain management. He denies taking any other regular prescribed or over-the-counter medications.
+
+Allergies
+The patient reports no known allergies.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 62.00 bpm
+Respiration Rate: 14.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 181.90 cm
+BMI: 27.77
+
+Physical Examination
+The patient was examined for right wrist injury. Visual inspection revealed slight swelling compared to the left wrist and a slight bruise. There was no significant redness or muscle atrophy. The area felt hot to the touch. Palpation revealed tenderness at the distal radius on the palm side. There was no tenderness in the anatomical snuffbox at the base of the thumb on the dorsal aspect of the hand. No raised bumps or deformities were noted. Range of motion testing showed the patient was able to flex and extend the wrist, deviate the wrist side to side, and make a fist, though all movements were painful. Elbow flexion and extension were intact and painless.
+
+Labs
+No laboratory results were obtained during this encounter.
+
+Imaging
+No imaging was performed during this encounter. An X-ray is planned.
+
+Assessment
+The patient presents with an acute right wrist injury following a fall on an outstretched hand (FOOSH) while skiing. The mechanism of injury and location of pain (distal radius, palm side) are consistent with a potential distal radial fracture. The absence of pain in the anatomical snuffbox is reassuring against a scaphoid fracture, though imaging is required to rule it out. The primary working diagnosis is a suspected distal radial fracture.
+
+Plan
+1. Imaging: Obtain X-rays of the right wrist and hand to evaluate for distal radial fracture and scaphoid fracture.
+2. Treatment: If a fracture is confirmed, the patient will likely require a cast for a period of time. The possibility of surgical intervention will be evaluated based on the degree of joint involvement seen on imaging.
+3. Follow-up: The patient will follow up to review imaging results and determine the final treatment plan.
+4. Pain Management: Continue ibuprofen for pain as needed, pending further evaluation.

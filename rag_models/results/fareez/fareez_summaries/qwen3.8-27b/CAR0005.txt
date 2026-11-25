@@ -1,0 +1,141 @@
+Model: qwen/qwen3.8-27b
+Patient: CAR0005
+Detected Disease: Chest Pain
+Generated: 2026-11-19 05:24:55
+Time: 6.41s
+Tokens: 8,848 in / 1,816 out
+============================================================
+
+Patient Information
+Name: Amee Reva Goyette
+Date of Birth: 1916-07-09
+Sex: Female
+Patient ID: 7671
+Address: 668 Quigley Mill Apt 10, Beverly, Massachusetts 01915
+
+Chief Complaint
+The patient presents with a two-week history of left-sided chest pain.
+
+History of Present Illness
+The patient is a female who reports experiencing episodes of chest discomfort over the past two weeks. The pain is localized to the left side of the chest and does not radiate to other areas. The patient describes the quality of the pain as sharp. The episodes are intermittent, lasting approximately 20 to 30 minutes each, and have occurred two to three times during the two-week period. The severity of the pain is rated at 4 out of 10 on a scale of 0 to 10, with 10 being the worst pain imaginable. The frequency and intensity of the episodes have remained stable over the last two weeks, with no significant worsening or improvement.
+
+The patient reports that the pain is not consistently associated with specific activities, though she notes it occurs most frequently while at work or driving. She has attempted to manage the pain with over-the-counter medications, including ibuprofen (Advil), acetaminophen (Tylenol), and antacids (Tums), without relief. The patient denies any associated symptoms such as nausea, vomiting, difficulty breathing, or fever. She reports no recent contact with sick individuals and no recent travel outside of Canada.
+
+The patient mentions significant psychosocial stressors, including a separation from her husband two years ago, which she believes may be contributing to her overall stress levels. She states that she has not experienced similar symptoms in the past. She is concerned about the chest pain due to a family history of cardiac events.
+
+Review of Systems
+Constitutional: Negative for fever, chills, or recent weight changes.
+Respiratory: Negative for cough, shortness of breath, or wheezing.
+Cardiovascular: Positive for left-sided chest pain. Negative for palpitations, orthopnea, or peripheral edema.
+Gastrointestinal: Negative for nausea, vomiting, heartburn, or abdominal pain.
+Other: Negative for recent travel or sick contacts.
+
+Past Medical History
+According to the electronic health record, the patient has a complex medical history including:
+- Acute ST segment elevation myocardial infarction (onset 1990)
+- History of myocardial infarction
+- Ischemic heart disease
+- Essential hypertension
+- Prediabetes
+- Anemia
+- History of renal transplant
+- Chronic kidney disease (stages 1 through 4, with end-stage renal disease noted)
+- Malignant neoplasm of breast
+- Recurrent rectal polyps
+- Gingivitis
+- Primary dental caries
+- Stress and social isolation
+
+Note: The patient states in the interview that she is "previously healthy" and does not see a family doctor for chronic conditions. There is a discrepancy between the patient's self-report and the extensive past medical history recorded in the OpenEMR extract. Per instructions, the transcript is trusted for current status, but the EHR data is included for completeness.
+
+Surgical History
+No specific surgical history is documented in the provided transcript or extract, other than the history of renal transplant noted in the past medical history.
+
+Social History
+- Tobacco: The patient smokes approximately half a pack to one pack of cigarettes per day. She is currently attempting to quit and has reduced her intake from one pack per day.
+- Alcohol: The patient consumes one to two glasses of wine on weekends.
+- Recreational Drugs: Denies use of other substances.
+- Exercise: The patient exercises regularly, running or cycling three to four days per week. She reports no chest pain or issues during exercise.
+- Occupation: The patient is employed, though specific details are not provided in the transcript.
+
+Family History
+- Father: History of myocardial infarction at age 60 (occurred last year).
+- Other family history: No specific information provided regarding other family members.
+
+Allergies
+The patient reports no known drug allergies.
+
+Current Medications
+According to the electronic health record, the patient is prescribed the following medications:
+- Tacrolimus 5 MG/ML Injection
+- Sodium fluoride 0.0272 MG/MG Oral Gel
+- Epoetin Alfa 4000 UNT/ML Injection
+- Insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension
+- Hydrochlorothiazide 25 MG Oral Tablet
+- Tacrolimus 1 MG Extended Release Oral Tablet
+- Lisinopril 10 MG Oral Tablet
+- Simvastatin 20 MG Oral Tablet
+- Metoprolol succinate 100 MG Extended Release Oral Tablet
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+- Aspirin 81 MG Oral Tablet
+- Carvedilol 6.25 MG Oral Tablet
+- Pravastatin sodium 40 MG Oral Tablet
+- Lisinopril 40 MG Oral Tablet
+- Prasugrel 10 MG Oral Tablet
+
+Note: The patient states in the interview that she takes no medications, only using over-the-counter pain relievers as needed. There is a significant discrepancy between the patient's self-report and the medication list in the EHR.
+
+Objective
+Vital Signs
+- Blood Pressure: Not available
+- Heart Rate: 62.00 bpm
+- Temperature: Not available
+- Respiratory Rate: 12.00 breaths/min
+- SpO2: Not available
+- Weight: Not available
+- Height: 166.40 cm
+- BMI: 29.65
+
+Physical Examination
+No physical examination findings are documented in the provided transcript or extract.
+
+Labs
+The following laboratory results are available from the electronic health record:
+- Potassium: 4.42 mmol/L
+- Calcium: 8.99 mg/dL
+- Urea nitrogen: 12.95 mg/dL
+- Hematocrit: 42.47%
+- Erythrocytes: 3.97 x 10^6/uL
+- Chloride: 105.68 mmol/L
+- Sodium: 137.19 mmol/L
+- Creatinine: 0.51 mg/dL
+- Platelets: 304.47 x 10^3/uL
+- Glucose: 77.72 mg/dL
+- MCV: 81.57 fL
+- MCH: 30.61 pg
+- MCHC: 35.81 g/dL
+- Platelet distribution width: 438.48 fL
+- Erythrocyte distribution width: 44.76 fL
+- Platelet mean volume: 11.73 fL
+- PHQ-2 total score: 2
+
+Imaging
+No imaging studies are documented in the provided data.
+
+Assessment
+Primary Diagnosis: Atypical chest pain
+Secondary Diagnoses: 
+- History of myocardial infarction
+- Ischemic heart disease
+- Essential hypertension
+- Chronic kidney disease
+- Stress
+
+Hospital Course
+The patient presented with a two-week history of intermittent, sharp, left-sided chest pain. The pain is not relieved by over-the-counter medications and is not consistently associated with exertion. Given the patient's family history of myocardial infarction and her own complex medical history, including prior MI and ischemic heart disease, further evaluation is warranted to rule out cardiac causes. The patient also reports significant psychosocial stress, which may be a contributing factor.
+
+Plan
+1. The provider will communicate the findings and history to the patient's family doctor.
+2. The patient will follow up with her family doctor to discuss next steps, which may include further cardiac workup (e.g., ECG, stress test, echocardiogram) and management of underlying conditions.
+3. The patient is encouraged to continue her efforts to quit smoking.
+4. The patient should seek immediate medical attention if the chest pain worsens, becomes constant, or is accompanied by other symptoms such as shortness of breath, nausea, or sweating.

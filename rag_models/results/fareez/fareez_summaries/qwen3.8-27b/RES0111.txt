@@ -1,0 +1,94 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0111
+Detected Disease: Sore Throat
+Generated: 2026-11-19 05:24:55
+Time: 4.14s
+Tokens: 12,393 in / 1,357 out
+============================================================
+
+Patient Information
+Name: Aaron Paucek
+Date of Birth: 1950-09-14
+Sex: Male
+Patient ID: 84
+Address: 318 Fay Ferry, Boston, Massachusetts 02116
+Encounter Date: 2024-07-25
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with a four-day history of sore throat and subjective fever.
+
+History of Present Illness
+The patient is a male who reports a four-day history of severe sore throat that has not improved. He states he feels "really hot" and suspects he is developing a fever, though he has not measured his temperature at home. He reports difficulty eating solid foods due to pain, although he is able to drink liquids without issue. He denies any sensation of food getting stuck in the throat. He notes mild hoarseness, which he attributes to speaking less due to pain. He denies runny nose, cough, difficulty breathing, chest pain, nasal congestion, sinus pain, headache, confusion, changes in hearing or vision, palpitations, shortness of breath, abdominal pain, nausea, vomiting, diarrhea, constipation, fatigue, or unintentional weight loss. He denies recent travel. He denies known contact with individuals who are sick or have tested positive for SARS-CoV-2. He reports that his throat appears swollen and red when he looks in the mirror.
+
+Review of Systems
+Constitutional: Positive for subjective fever. Negative for fatigue, weight loss, or confusion.
+Respiratory: Negative for cough, shortness of breath, or difficulty breathing.
+Cardiovascular: Negative for chest pain or palpitations.
+Gastrointestinal: Negative for abdominal pain, nausea, vomiting, diarrhea, or constipation.
+Neurological: Negative for headache, confusion, or changes in vision or hearing.
+Other: Negative for recent travel or known exposure to infectious contacts.
+
+Past Medical History
+The patient denies having any current medical conditions. However, the electronic health record lists a complex history of chronic conditions, including essential hypertension, type 2 diabetes mellitus, hypertriglyceridemia, metabolic syndrome X, anemia, obesity, hyperglycemia, ischemic heart disease, chronic kidney disease stage 2, and a history of severe anxiety and stress. The record also notes a history of intimate partner abuse and social isolation. Given the discrepancy between the patient's denial of medical conditions and the extensive record, the current clinical presentation is being evaluated in the context of his reported symptoms.
+
+Surgical History
+The patient reports a history of an appendectomy performed at age 13.
+
+Social History
+The patient lives with his parents and two siblings and reports feeling safe at home. He is currently in grade 10 of high school, attending school half in person and half virtually. He reports maintaining social distancing and wearing a mask at school, except when drinking water. He is not currently sexually active and does not plan to be sexually active before finishing high school. He denies alcohol use, tobacco use, or recreational drug use. He reports that things are going well at school and denies any bullying, depression, or anxiety.
+
+Family History
+The patient denies any significant family history of medical conditions, though he mentions a possible family history of high blood pressure.
+
+Current Medications
+The patient reports taking only multivitamins. The electronic health record lists several active medications, including Clopidogrel, Simvastatin, Metoprolol succinate, and Nitroglycerin, as well as historical medications for diabetes and hypertension. The discrepancy between the patient's report and the record should be clarified.
+
+Allergies
+No information available.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 97.00 bpm
+Respiration Rate: 15.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 177.70 cm
+BMI: 30.15
+
+Physical Exam
+Admission Exam
+Vitals: As above.
+Systems: The physician performed a physical exam, including a look inside the throat. The patient reports the throat looks swollen and red. No specific findings from the physical exam are documented in the transcript beyond the patient's self-report.
+
+Labs
+Panels:
+- Potassium: 5.02 mmol/L
+- HDL Cholesterol: 31.88 mg/dL
+- PHQ-2 Score: 1
+- Urine pH: 6.43
+- Triglycerides: 102.14 mg/dL
+- Calcium: 9.82 mg/dL
+- Morse Fall Scale: 108
+- Total CO2: 24.05 mmol/L
+- BUN: 8.27 mg/dL
+- Platelet Mean Volume: 12.28 fL
+- Platelets: 435.22 10^3/uL
+- MCHC: 35.54 g/dL
+- MCV: 82.84 fL
+Microbiology: No information available.
+
+Imaging
+No information available.
+
+Assessment
+Primary Diagnosis: Sore throat, likely due to viral or bacterial pharyngitis (e.g., strep throat or mononucleosis).
+Secondary Diagnoses: Possible SARS-CoV-2 infection, given overlapping symptoms.
+Hospital Course: The patient presented with a four-day history of sore throat and subjective fever. The physician noted that the symptoms could be caused by bacteria or viruses, including strep throat or mononucleosis. Due to the overlap with SARS-CoV-2 symptoms, a decision was made to test for both conditions.
+
+Plan
+Medications Prescribed: No new medications were prescribed at this time. Management will depend on the results of the strep test.
+Discharge Instructions: The patient was advised to quarantine for the next 14 days, or at least until the SARS-CoV-2 swab results are back or symptoms improve.
+Follow-up Instructions: The patient will be contacted regarding the management plan based on the results of the rapid strep test and SARS-CoV-2 test. The physician also recommended that the patient receive the HPV vaccine and the annual flu shot, noting that the HPV vaccine is most effective when given earlier and may not be covered after age 26.

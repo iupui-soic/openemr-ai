@@ -1,0 +1,102 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0155
+Detected Disease: Pneumonia
+Generated: 2026-11-19 05:24:55
+Time: 5.03s
+Tokens: 15,460 in / 1,759 out
+============================================================
+
+Patient Information
+Name: Adela Tapia
+Date of Birth: 1914-01-07
+Sex: Female
+Address: 517 Hills Trace, Stoneham, Massachusetts 02180
+Patient ID: 982
+Encounter: 73704
+Attending: Dr. External Provider
+
+Chief Complaint
+The patient presented with a five-day history of worsening shortness of breath, chest discomfort, and a productive cough.
+
+History of Present Illness
+The patient is a female with a history of COPD, hypertension, and GERD who presented to the clinic for evaluation of respiratory symptoms. Over the past five days, she has experienced progressive shortness of breath and chest discomfort. She reports that while she has had a cough and shortness of breath in the past, these symptoms have been present all day for the last five days and are worsening. The cough is productive, with the patient bringing up yellowish to greenish sputum, approximately the volume of the inside of her palm, with each cough. She denies hemoptysis.
+
+Regarding her shortness of breath, the patient describes an inability to catch her breath with minor exertion, such as performing small tasks around her apartment. She notes that while she is comfortable at rest, her breathing is not normal and she continues to feel chest discomfort even while sitting. She describes the chest sensation as congestion rather than sharp, stabbing, or pressure-like pain. She denies orthopnea, paroxysmal nocturnal dyspnea, or waking up gasping for air.
+
+The patient reports feeling feverish over the last couple of days, though she has not taken her temperature. She denies sore throat, runny nose, recent travel, or exposure to sick contacts. She attempted to manage her symptoms with her home inhaler, using three to four puffs this morning and some the previous night, but reports that it has not provided significant relief. This is a change from her typical usage of two to three times per week. She denies headaches, vision changes, nausea, vomiting, palpitations, diarrhea, constipation, urinary issues, night sweats, or significant weight changes. Her energy levels are reported as okay, though limited by her dyspnea. She notes a history of similar "chest colds" in the past year that required antibiotics from a walk-in clinic, with the most recent episode occurring approximately four months ago. She feels this current episode may be slightly worse than previous ones.
+
+Review of Systems
+Constitutional: Positive for subjective fever. Negative for night sweats, significant weight change, or fatigue beyond that related to dyspnea.
+Respiratory: Positive for worsening shortness of breath with exertion, productive cough with yellow-green sputum, and chest discomfort described as congestion. Negative for hemoptysis, orthopnea, and PND.
+Cardiovascular: Negative for palpitations, chest pain, or racing heart.
+Gastrointestinal: Negative for nausea, vomiting, diarrhea, constipation, or reflux exacerbation.
+Genitourinary: Negative for urinary issues.
+Neurological: Negative for headaches or vision changes.
+Other: Negative for recent travel or sick contacts.
+
+Allergies
+The patient reports no known drug allergies.
+
+Past Medical History
+The patient has a documented history of Chronic Obstructive Pulmonary Disease (COPD), diagnosed approximately three years ago. She also has a history of essential hypertension and GERD. The electronic health record lists additional historical diagnoses including hyperlipidemia, prediabetes, metabolic syndrome, and a history of renal transplant. However, the patient's current self-reported history focuses on COPD, hypertension, and GERD.
+
+Surgical History
+The patient denies any past hospitalizations or surgeries. Note: The electronic health record indicates a history of renal transplant and coronary artery bypass grafting, which conflicts with the patient's verbal denial of surgeries. Per instructions, the patient's verbal report is prioritized for the current status, but the discrepancy is noted.
+
+Social History
+The patient currently smokes approximately one pack of cigarettes per day and has a smoking history of 30 to 40 years. She states she has cut down from smoking more in the past. She denies the use of marijuana or other recreational drugs. She consumes wine with dinner on weekends. She lives in an apartment with her daughter. She is currently employed at a grocery store.
+
+Family History
+The patient denies any family history of lung conditions, heart conditions, or cancer.
+
+Current Medications
+Based on the patient's verbal report, her home medications include:
+1. Ventolin (Albuterol) inhaler, used as needed.
+2. Symbicort (Budesonide/Formoterol) inhaler, taken daily.
+3. An ACE inhibitor for blood pressure (specific agent not named by patient).
+4. Tums (Calcium Carbonate) as needed for reflux.
+
+Note: The electronic health record lists a significantly different and more extensive medication list, including Donepezil/Memantine, Tacrolimus, Simvastatin, Metoprolol, Valsartan, Aspirin, and Nitroglycerin. Given the patient's verbal confirmation of only the four medications listed above, the verbal report is considered the accurate reflection of her current home regimen.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 92.00 bpm
+Temperature: Not available
+Respiratory Rate: 12.0 breaths/min
+SpO2: Not available
+Weight: Not available
+
+Physical Examination
+No information available. The physician stated that a full physical examination would be performed, but specific findings are not documented in the provided transcript or extract.
+
+Labs
+The electronic health record contains laboratory results, but they are not explicitly linked to the current acute presentation in the transcript. Available values include:
+- Sodium: 138.42 mmol/L and 139.4 mmol/L
+- Potassium: 4.85 mmol/L
+- Chloride: 106.74 mmol/L and 105 mmol/L
+- Carbon Dioxide (Total): 26.88 mmol/L
+- BUN: 10.35 mg/dL
+- Creatinine: 0.42 mg/dL
+- Glucose: 96.65 mg/dL
+- Calcium: 9.48 mg/dL
+- Albumin: 3.73 g/dL
+- Total Bilirubin: 0.69 mg/dL
+- ALT: 51.98 U/L
+- Cholesterol: 204.41 mg/dL
+- eGFR: 88.50 mL/min
+
+Imaging
+No information available. The physician indicated that a chest X-ray would be obtained to rule out pneumonia, but results are not present in the provided data.
+
+Assessment
+1. Acute Exacerbation of COPD: The patient presents with worsening dyspnea, productive cough with purulent sputum, and chest discomfort in the setting of known COPD. The lack of response to her home inhaler and the presence of subjective fever suggest an infectious trigger.
+2. Possible Pneumonia: Given the purulent sputum, fever, and worsening respiratory status, pneumonia is a primary differential diagnosis. The physician plans to obtain a chest X-ray to evaluate for infiltrates.
+3. Possible Viral or Bacterial Infection: The physician noted that viral or bacterial infections can precipitate COPD exacerbations. A COVID-19 swab is planned due to overlapping symptoms.
+
+Plan
+1. Emergency Department Referral: The patient is being referred to the Emergency Department for further evaluation.
+2. Diagnostics: The ED is instructed to perform a full physical examination, obtain vital signs, draw blood work, perform a chest X-ray, and administer a COVID-19 swab.
+3. Treatment: The physician anticipates the administration of nebulized bronchodilators in the hospital to monitor response.
+4. Disposition: The decision for admission versus discharge will be made by the ED team based on the results of the diagnostic workup. If discharged, the patient may be prescribed antibiotics.
+5. Follow-up: The patient will follow up with the ED team for disposition decisions.

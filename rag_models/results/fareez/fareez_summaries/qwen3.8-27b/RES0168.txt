@@ -1,0 +1,71 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0168
+Detected Disease: Sinus Infection
+Generated: 2026-11-19 05:24:55
+Time: 3.66s
+Tokens: 15,125 in / 1,139 out
+============================================================
+
+Patient Information
+Name: Aaron Bartoletti
+Date of Birth: 1981-08-03
+Sex: Male
+Address: 409 Veum Drive, Spencer, Massachusetts 01562
+Encounter Date: 2022-05-09
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient presented with a complaint of sinus problems, specifically feeling like he has a sinus infection that is not responding to conservative management.
+
+History of Present Illness
+The patient is a 40-year-old male with a history of recurrent sinus infections who presents with symptoms consistent with acute bacterial rhinosinusitis. He reports that his symptoms have been present for several weeks. He has attempted conservative management at home, including saline rinses, which have provided minimal relief. He notes that when performing saline rinses, he expels greenish, purulent mucus. His primary symptoms include nasal congestion, facial pain and pressure localized to the front of the face, and a "sinusy" headache that occasionally radiates. He reports a low-grade fever of approximately 99.7 degrees Fahrenheit recorded at home the previous evening. He denies cough, shortness of breath, wheeziness, or chest pain. He reports post-nasal drip causing a stinging sensation in the throat, but denies a true sore throat or loss of taste. He states that his sense of smell is intact, though sometimes difficult to use due to congestion. He denies changes in vision or hearing, weight loss, chills, dizziness, or fainting. He denies any sick contacts or recent travel. He works from home and lives with his wife and teenage son, neither of whom are currently ill.
+
+Review of Systems
+Constitutional: Positive for low-grade fever (99.7 F). Negative for chills, weight loss, or fatigue.
+Respiratory: Positive for nasal congestion and post-nasal drip. Negative for cough, shortness of breath, wheezing, or chest pain.
+Cardiovascular: Negative for chest pain, palpitations, or dizziness.
+Gastrointestinal: Negative for abdominal pain, nausea, vomiting, or changes in bowel movements.
+Genitourinary: Negative for changes in urine output or dysuria.
+Neurological: Positive for frontal facial pressure and headache. Negative for dizziness, fainting, or changes in vision or hearing.
+Musculoskeletal: Positive for chronic knee pain related to prior ACL injury.
+Allergic: Negative for new rashes or hives.
+
+Past Medical History
+The patient reports a history of recurrent sinus infections. He has a history of ACL repair surgery and sees an orthopedic specialist for ongoing knee issues. He states he is otherwise healthy. Note: The electronic health record contains extensive historical data including chronic kidney disease, hypertension, and dental issues; however, the patient's current self-report in the transcript indicates he is otherwise healthy aside from sinus and knee issues.
+
+Surgical History
+The patient reports a history of ACL repair surgery.
+
+Social History
+The patient is a non-smoker. He consumes alcohol, reporting five to six beers per weekend. He occasionally uses cannabis oil capsules, approximately once per month, for recreational purposes and to manage knee pain. He lives in a new house with his wife and teenage son. They have a pet dog (Labradoodle). He works from home.
+
+Family History
+The patient reports no known family history of lung or heart conditions.
+
+Allergies
+The patient reports a mild allergy to cats. No other drug or food allergies are reported.
+
+Current Medications
+The patient reports using saline nasal rinses. He previously used a nasal steroid spray but discontinued it recently as his symptoms had resolved. He occasionally uses Ibuprofen (Advil) for knee pain.
+
+Objective
+Vital Signs
+Heart Rate: 85.00 bpm
+Respiration Rate: 14.00 breaths/min
+Height: 179.80 cm
+BMI: 28.83
+Temperature, Blood Pressure, SpO2, and Weight: No information available in the current encounter record.
+
+Physical Examination
+No detailed physical examination findings are documented in the provided transcript or extract.
+
+Assessment
+The patient presents with symptoms and history consistent with acute bacterial rhinosinusitis. The diagnosis is supported by the duration of symptoms (greater than one week), the presence of purulent (green) nasal discharge, facial pain/pressure, and low-grade fever, along with the failure of conservative management (saline rinses and limited decongestant use). Given the overlap of symptoms with other respiratory infections, a swab test was performed to rule out other etiologies, with results expected in 24 to 48 hours.
+
+Plan
+1. Diagnostic Testing: Nasal swab performed to rule out other pathogens; patient will be notified of results within 24 to 48 hours.
+2. Medications:
+   - Amoxicillin prescribed for a duration of 5 to 7 days to treat the suspected bacterial infection.
+   - Inhaled corticosteroids prescribed to assist with inflammation and symptom relief.
+3. Follow-up: The patient is instructed to follow up with the clinic in one week to assess symptom resolution and response to therapy.
+4. Discharge Instructions: The patient was advised to continue monitoring symptoms and to return if symptoms become severe or if there is no improvement after the course of antibiotics.

@@ -1,0 +1,99 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0038
+Detected Disease: Knee Pain
+Generated: 2026-11-19 05:24:55
+Time: 8.94s
+Tokens: 15,097 in / 1,606 out
+============================================================
+
+Patient Information
+Patient Name: Abraham Lowe
+Date of Birth: 1962-05-31
+Sex: Male
+Address: 173 Renner Run, Bridgewater, Massachusetts 02324
+Encounter Date: 2019-09-12
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with a three-to-four-month history of left knee pain that has recently worsened in severity and frequency, now occurring at rest.
+
+History of Present Illness
+The patient is a male who reports left knee pain that began approximately three to four months ago. Initially, the pain was activity-related, occurring primarily during physical exertion. Over the past two weeks, the symptoms have progressed, with the pain now persisting at rest and lasting longer after activity. The patient describes the pain as sharp and stabbing, particularly upon impact such as when the foot hits the ground during running. At rest, the pain is described as dull. The patient rates the pain as 6 out of 10 on a numeric scale. The pain is exacerbated by running, ascending and descending stairs, and standing up from a seated position. It is alleviated by rest. The patient notes that the pain is now affecting his daily life, as he can feel it even while walking, although it is less severe than during running. The patient has a history of similar knee pain many years ago while rowing in undergraduate studies, which resolved with stretching and strengthening exercises without medical intervention. He is no longer rowing and currently engages in running as his primary physical activity. He denies any recent trauma to the knee.
+
+Review of Systems
+Constitutional: The patient denies fevers, chills, or weight loss.
+Respiratory: The patient denies cough, shortness of breath, or wheezing.
+Cardiovascular: The patient denies chest pain or heart palpitations.
+Gastrointestinal: The patient denies nausea, vomiting, abdominal pain, or changes in bowel movements.
+Genitourinary: The patient denies changes in urine or urinary issues.
+Neurological: The patient denies headaches, confusion, memory loss, or numbness and tingling in the affected area.
+Musculoskeletal: The patient denies pain elsewhere in the body or muscle aches in the quadriceps or surrounding areas.
+Other: The patient denies rashes or changes in vision, hearing, taste, or smell.
+
+Past Medical History
+According to the electronic health record, the patient has a history of essential hypertension, chronic kidney disease (stages 1 through 4, progressing to end-stage renal disease), disorder of kidney due to diabetes mellitus, obesity (BMI 30+), prediabetes, metabolic syndrome X, and chronic pain (low back and neck). The record also notes a history of viral sinusitis, acute viral pharyngitis, acute bronchitis, gingivitis, and primary dental caries. However, during the current interview, the patient states that he is otherwise healthy and has never been diagnosed with any medical conditions. He denies any hospitalizations or surgeries in the past. Given the discrepancy between the patient's self-report and the extensive electronic health record, the clinical team should verify the accuracy of the past medical history. For the purpose of this note, the patient's current self-reported status is documented as having no known chronic medical conditions.
+
+Surgical History
+The patient denies any prior surgeries.
+
+Social History
+The patient lives alone in a small apartment while finishing his Master's degree. He is currently not in the labor force. He denies tobacco use, alcohol use, or recreational drug use, noting only past experimentation with marijuana which he has since discontinued. He is up to date with immunizations, including annual flu shots. He denies recent travel or contact with sick individuals.
+
+Family History
+The patient reports that his father has a history of high blood pressure and high cholesterol. There is no family history of heart attack, cancer, or autoimmune conditions.
+
+Allergies
+The patient reports no known drug allergies.
+
+Current Medications
+The patient reports taking only a multivitamin. He denies taking any other prescription or over-the-counter medications. Note: The electronic health record lists several active medications including acetaminophen, meperidine, ibuprofen, sodium fluoride, insulin, hydrochlorothiazide, and amlodipine, which conflicts with the patient's self-report. This discrepancy requires verification.
+
+Objective
+
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 94.00 bpm
+Temperature: Not available
+Respiratory Rate: 13.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 179.60 cm
+BMI: 28.36
+
+Physical Examination
+General: The patient is alert and oriented.
+Musculoskeletal (Left Knee):
+Inspection: No visible redness, swelling, bruising, muscle atrophy, deformities, or skin changes noted on the left knee.
+Palpation: No pain over the kneecap. No pain on palpation of the medial ligaments. Pain is elicited on palpation of the lateral ligaments, specifically above the joint line. No pain in the quadriceps, patellar tendon, or proximal tibia/fibula.
+Range of Motion:
+- Standing from a seated position: Painful, with sharp pain reported.
+- Sitting down from a standing position: Painful.
+- Knee flexion (heel to buttock): No pain.
+- Knee extension: No pain.
+- Hip abduction/flexion: Patient reports tightness and discomfort, but no sharp pain.
+Special Tests:
+- Ober Test: Positive. The patient is unable to adduct the thigh fully; the leg remains elevated and feels tight, indicating tightness of the iliotibial band.
+
+Labs
+No laboratory results were obtained or reviewed during this encounter.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+Primary Diagnosis: Iliotibial Band Syndrome (ITB Syndrome) of the left knee.
+The patient presents with lateral knee pain exacerbated by running and stair climbing, with a positive Ober test, consistent with ITB syndrome. The chronicity of symptoms (3-4 months) and progression to pain at rest suggest a moderate severity case.
+
+Secondary Diagnoses:
+None identified in the current encounter. Note: Discrepancy exists between patient self-report and EHR regarding past medical history (hypertension, CKD, diabetes, etc.). Verification of past medical history is recommended.
+
+Plan
+1. Activity Modification: The patient is advised to modify his activities to prevent further aggravation of the knee. Specifically, he should temporarily switch from running to low-impact activities such as swimming.
+2. Conservative Management:
+   - Apply ice or heating pads to the affected area for pain relief.
+   - Perform stretching exercises for the iliotibial band and surrounding muscles.
+   - Consider taping for support.
+   - Use ibuprofen for temporary pain relief if needed.
+3. Referral: A referral for physiotherapy has been placed to strengthen the muscles around the knee joint and improve range of motion.
+4. Follow-up: The patient will follow up with the provider to assess response to conservative management. If symptoms persist, further treatments such as ultrasound therapy, muscle stimulation, or shockwave therapy may be considered. Surgical management is a last resort and is rarely required.
+5. Verification: The medical team should verify the patient's past medical history and current medication list, as there is a significant discrepancy between the patient's self-report and the electronic health record.

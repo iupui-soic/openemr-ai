@@ -1,0 +1,103 @@
+Model: qwen/qwen3.8-27b
+Patient: GAS0001
+Detected Disease: Morning Sickness
+Generated: 2026-11-19 05:24:55
+Time: 87.27s
+Tokens: 26,706 in / 1,678 out
+============================================================
+
+Patient Information
+Name: Amado Baumbach
+Date of Birth: 1942-06-09
+Sex: Male
+Patient ID: 7355
+Address: 374 Wyman Station, Wrentham, Massachusetts 00000
+Encounter Date: 2021-02-23
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with persistent nausea and vomiting for approximately nine days.
+
+History of Present Illness
+The patient is a male who reports feeling nauseated for the past week to two weeks, specifically noting a duration of approximately nine days. The nausea is described as constant but exacerbated by strong odors and in the morning. The patient reports vomiting one to two times per day on many days during this period. The patient also reports increased urinary frequency, occurring every one to two hours, though the patient attributes this to increased water intake due to dehydration from vomiting. The patient denies dysuria, urgency, or loss of bladder control. The patient reports mild abdominal cramping but denies other gastrointestinal symptoms such as changes in bowel movements or blood in the stool. The patient denies flu-like symptoms, including fever, headache, muscle aches, or cough. The patient denies chest pain or palpitations. The patient reports that ginger chews were attempted for nausea relief but were ineffective. The patient notes that her last menstrual period was six weeks ago and that she does not typically go this long without a period, raising the possibility of pregnancy, although the patient is identified as male in the medical record. The patient states she is sexually active with her boyfriend and uses condoms for protection, having previously discontinued birth control due to side effects.
+
+Review of Systems
+Constitutional: Negative for fever, chills, or fatigue.
+Respiratory: Negative for cough, shortness of breath, or wheezing.
+Cardiovascular: Negative for chest pain, palpitations, or edema.
+Gastrointestinal: Positive for nausea, vomiting, and mild abdominal cramping. Negative for diarrhea, constipation, or hematochezia.
+Genitourinary: Positive for urinary frequency. Negative for dysuria, hematuria, or incontinence.
+Neurological: Negative for headache, dizziness, or weakness.
+Musculoskeletal: Negative for muscle aches or joint pain.
+Psychiatric: No acute psychiatric symptoms reported.
+
+Allergies
+The patient reports an allergy to nickel, specifically noting that wearing non-real jewelry causes a rash. No known food or medication allergies.
+
+Past Medical History
+The patient reports no significant past medical history. The electronic health record lists a complex history including essential hypertension, prediabetes, anemia, chronic kidney disease (stages 1-3), disorder of kidney due to diabetes mellitus, microalbuminuria, proteinuria, chronic sinusitis, primary dental caries, loss of teeth, gingivitis, gingival disease, ischemic heart disease, history of coronary artery bypass grafting, suspected prostate cancer, neoplasm of prostate, carcinoma in situ of prostate, second degree burn, suspected COVID-19, confirmed COVID-19, pneumonia, hypoxemia, respiratory distress, acute respiratory failure, sepsis caused by virus, acute deep venous thrombosis, septic shock, acquired coagulation disorder, injury of heart, heart failure, and acute respiratory distress syndrome. However, the patient denies these conditions in the current interview.
+
+Surgical History
+The electronic health record indicates a history of coronary artery bypass grafting. The patient did not explicitly confirm or deny surgical history in the transcript.
+
+Social History
+The patient lives with one roommate. The patient does not smoke tobacco. The patient consumes alcohol very rarely, with the last drink approximately one month ago. The patient denies use of illicit drugs. The patient is sexually active with her boyfriend and uses condoms for contraception. The patient previously used birth control but discontinued it due to feeling sick.
+
+Family History
+The patient reports that her father has high blood pressure. No other significant family medical history is noted.
+
+Current Medications
+The patient reports taking ginger chews for nausea, which have been ineffective. No other home medications are reported. The electronic health record lists several active medications including vancomycin, piperacillin/tazobactam, norepinephrine, vasopressin, enoxaparin, acetaminophen, ondansetron, midazolam, propofol, rocuronium, isoflurane, alfentanil, insulin, cefazolin, and heparin, likely related to prior hospitalizations for severe illness.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 61.00 bpm
+Temperature: Not available
+Respiratory Rate: 15.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 173.70 cm
+BMI: 27.34
+
+Physical Examination
+No information available.
+
+Labs
+Complete Blood Count:
+Leukocytes: 3.78 x 10^3/uL
+Erythrocytes: 4.85 x 10^6/uL
+Hemoglobin: 12.28 g/dL
+Hematocrit: 43.41 %
+MCV: 86.82 fL
+MCH: 31.17 pg
+MCHC: 31.98 g/dL
+RDW: 14.48 %
+Platelets: 105.59 x 10^3/uL
+Neutrophils: 26.20 %
+Lymphocytes: 13.62 %
+Monocytes: 10.43 %
+Eosinophils: 3.47 %
+Basophils: 3.69 %
+Absolute Neutrophils: 3.41 x 10^3/uL
+Absolute Lymphocytes: 0.42 x 10^3/uL
+Absolute Monocytes: 0.96 x 10^3/uL
+Absolute Eosinophils: 0.31 x 10^3/uL
+Absolute Basophils: 0.35 x 10^3/uL
+
+Imaging
+No information available.
+
+Assessment
+Primary Diagnosis: Nausea and vomiting of unknown etiology.
+Secondary Diagnoses: Urinary frequency, possible pregnancy (based on patient report of amenorrhea and sexual activity, despite male sex in record), dehydration.
+Hospital Course: The patient presented with a nine-day history of nausea and vomiting. The differential diagnosis includes gastroenteritis, pregnancy, or other gastrointestinal pathology. The patient's report of amenorrhea and sexual activity suggests the need for a pregnancy test, although the patient is listed as male in the demographic data, which presents a discrepancy requiring clarification. The patient's urinary frequency is likely secondary to increased fluid intake. The patient's past medical history in the electronic record is extensive and severe, including recent critical illness, which may be relevant to current presentation if the patient is indeed the same individual. However, the patient denies these conditions, suggesting a potential data entry error or mismatch in patient identity.
+
+Plan
+1. Perform a pregnancy test to rule out pregnancy given the patient's report of amenorrhea and sexual activity.
+2. Order basic metabolic panel to assess electrolytes and renal function, particularly given the history of vomiting and potential dehydration.
+3. Consider gastrointestinal workup if symptoms persist, including stool studies or imaging.
+4. Provide antiemetic therapy for symptom relief.
+5. Recommend oral rehydration and dietary modifications.
+6. Follow up with primary care physician for further evaluation if symptoms do not improve.
+7. Clarify patient identity and past medical history discrepancies between the patient's report and the electronic health record.

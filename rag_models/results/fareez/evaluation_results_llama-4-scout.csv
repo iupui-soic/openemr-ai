@@ -1,0 +1,41 @@
+patient_name,model,detected_disease,total_time_s,input_tokens,output_tokens,summary_chars,summary_words,finish_reason
+RES0007,llama-4-scout,Asthma,4.68,7565,603,3135,474,end_turn
+RES0008,llama-4-scout,Pneumonia,4.32,10641,609,3085,449,end_turn
+RES0009,llama-4-scout,Chest Pain,6.58,14922,781,3684,553,end_turn
+RES0023,llama-4-scout,Acute Bronchitis,5.57,13253,674,3329,503,end_turn
+RES0024,llama-4-scout,Loss of Smell,4.91,11601,654,3289,519,end_turn
+RES0027,llama-4-scout,Acute Bronchitis,4.58,6330,749,3669,577,end_turn
+RES0029,llama-4-scout,Chest Pain,7.67,10130,802,3890,604,end_turn
+RES0036,llama-4-scout,Pneumonia,5.01,10370,650,3161,462,end_turn
+RES0058,llama-4-scout,Upper Respiratory Infection,4.54,8134,602,2860,452,end_turn
+RES0060,llama-4-scout,Acute Bronchitis,4.73,6417,756,3579,579,end_turn
+RES0062,llama-4-scout,Pneumonia,5.99,14646,668,3141,509,end_turn
+RES0065,llama-4-scout,Sore Throat,4.9,10491,611,3058,482,end_turn
+RES0073,llama-4-scout,Sinusitis,6.05,12273,744,3738,575,end_turn
+RES0111,llama-4-scout,Sore Throat,7.51,9594,1006,4213,624,end_turn
+RES0143,llama-4-scout,Common Cold,3.8,6315,583,2961,453,end_turn
+RES0155,llama-4-scout,Pneumonia,4.96,11909,596,2988,466,end_turn
+RES0168,llama-4-scout,Sinus Infection,5.27,11522,578,2898,452,end_turn
+RES0178,llama-4-scout,Upper Respiratory Infection,4.01,6498,665,3289,498,end_turn
+RES0193,llama-4-scout,Asthma,4.29,6470,640,3177,490,end_turn
+RES0194,llama-4-scout,Upper Respiratory Infection,5.14,6565,841,4181,664,end_turn
+MSK0003,llama-4-scout,Back Pain,4.63,7007,683,3387,537,end_turn
+MSK0014,llama-4-scout,Knee Arthritis,5.02,10086,757,3662,594,end_turn
+MSK0016,llama-4-scout,Carpal Tunnel Syndrome,6.34,11684,749,3721,557,end_turn
+MSK0019,llama-4-scout,Tennis Elbow,4.53,9013,671,3325,485,end_turn
+MSK0028,llama-4-scout,Bicep Tendonitis,7.53,9821,983,5038,788,end_turn
+MSK0031,llama-4-scout,Hip Fracture,5.0,10243,666,3307,527,end_turn
+MSK0035,llama-4-scout,Wrist Injury,6.12,15580,609,3065,496,end_turn
+MSK0037,llama-4-scout,Dupuytren's Contracture,9.67,32973,721,3450,538,end_turn
+MSK0038,llama-4-scout,Knee Pain,6.17,11747,712,3538,551,end_turn
+MSK0041,llama-4-scout,Foot Pain,8.16,8442,1021,5136,799,end_turn
+GAS0001,llama-4-scout,Morning Sickness,5.69,19619,623,2983,440,end_turn
+GAS0002,llama-4-scout,Abdominal Pain,4.92,8263,699,3398,537,end_turn
+GAS0003,llama-4-scout,Abdominal Pain,5.47,18114,625,3054,460,end_turn
+GAS0004,llama-4-scout,Acute Diarrhea,5.38,11359,641,3169,489,end_turn
+GAS0005,llama-4-scout,Gastroenteritis,5.28,13383,595,3041,473,end_turn
+CAR0001,llama-4-scout,Chest Pain,4.51,9485,619,3031,462,end_turn
+CAR0002,llama-4-scout,Chest Pain,5.42,8961,764,3920,581,end_turn
+CAR0004,llama-4-scout,Chest Pain,4.25,9026,615,3038,488,end_turn
+CAR0005,llama-4-scout,Chest Pain,4.24,7220,618,2873,470,end_turn
+DER0001,llama-4-scout,Cellulitis,5.7,8994,636,3362,513,end_turn

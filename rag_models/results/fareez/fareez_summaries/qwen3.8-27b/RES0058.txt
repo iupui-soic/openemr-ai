@@ -1,0 +1,73 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0058
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-11-19 05:24:55
+Time: 3.99s
+Tokens: 9,972 in / 1,373 out
+============================================================
+
+Patient Information
+The patient is a male adolescent, identified in the clinical transcript as a high school student. The electronic health record lists the patient as Aaron Russel, born November 14, 1952, with a recorded height of 176.70 cm and a BMI of 31.03. The patient resides in a townhouse in Upton, Massachusetts, with his mother, stepfather, and younger sister. He is currently attending high school in person.
+
+Chief Complaint
+The patient presented with a two-day history of loss of taste and smell, accompanied by a dry cough that began three to four days prior.
+
+History of Present Illness
+The patient reports that for the past two days, he has experienced a significant reduction in the ability to taste food, describing the sensation as eating "cardboard." He noted that this loss of gustation is accompanied by a diminished sense of smell. The onset of these symptoms coincides with the start of a dry, non-productive cough that began approximately three to four days ago. The patient denies the presence of sputum, hemoptysis, wheezing, or chest pain. He reports mild shortness of breath only after episodes of coughing. Additionally, the patient has experienced increased fatigue and lethargy over the last few days, noting that he has been sleeping more than usual. He reports a single episode of diarrhea this morning, with no blood or dark coloration in the stool, and no associated abdominal pain. He experienced mild dizziness upon standing this morning, which resolved after sitting for a few minutes, likely secondary to decreased oral intake due to the loss of taste. The patient denies fever, though he reports feeling "hot." He denies muscle aches, joint pain, rash, or difficulty swallowing. He reports a scratchy throat but denies significant soreness. The patient identifies a classmate who was sick last week with a cough, fever, and sore throat, suggesting a potential exposure. The patient denies recent travel. He is concerned about a possible SARS-CoV-2 infection.
+
+Review of Systems
+Constitutional: Positive for fatigue, lethargy, and feeling hot. Negative for fever (subjective), weight loss, night sweats, or chills.
+Respiratory: Positive for dry cough, mild post-tussive dyspnea, and hyposmia/ageusia. Negative for wheezing, chest pain, hemoptysis, or sputum production.
+Cardiovascular: Negative for palpitations, chest pain, or orthopnea.
+Gastrointestinal: Positive for one episode of diarrhea. Negative for nausea, vomiting, abdominal pain, constipation, or melena/hematochezia.
+Neurological: Positive for mild orthostatic dizziness. Negative for confusion, memory loss, or focal deficits.
+Musculoskeletal: Negative for muscle aches or joint pain.
+Skin: Negative for rash.
+Other: Negative for urinary symptoms.
+
+Allergies
+The patient reports a possible allergy to cats. He does not currently keep pets and denies recent exposure to cats.
+
+Past Medical History
+The patient states he is otherwise healthy and has not been diagnosed with any medical conditions. The electronic health record contains extensive historical data including obesity, prediabetes, anemia, essential hypertension, metabolic syndrome, and a history of chronic kidney disease progressing to end-stage renal disease with a renal transplant that subsequently failed. However, based on the patient's current self-report in the transcript, these historical conditions are not currently active or relevant to the acute presentation. The patient denies any current chronic medical conditions.
+
+Surgical History
+The patient reports a history of an appendectomy approximately four years ago, which was uncomplicated. The electronic health record also lists a history of renal transplant and subsequent transplant failure, which conflicts with the patient's current self-report of being otherwise healthy. Per instructions, the transcript is prioritized for current status, but the surgical history of appendectomy is confirmed by the patient.
+
+Social History
+The patient does not smoke tobacco. He denies alcohol use. He reports using flavored vapes several times a day, though he is unsure if they contain nicotine or tobacco. He lives in a clean townhouse environment with no known mold or structural issues. He is a student and has recently returned to in-person schooling.
+
+Family History
+The patient reports that his grandfather had lung cancer, diabetes, and was a lifelong smoker. No other family history of lung or heart conditions is noted.
+
+Current Medications
+The patient denies taking any current medications. The electronic health record lists several historical medications including tacrolimus, insulin, and antihypertensives, which are inconsistent with the patient's current self-report of being on no medications.
+
+Objective
+Vital Signs
+Temperature: 37.71 C
+Heart Rate: 62.00 bpm
+Respiration Rate: 12.00 breaths/min
+Blood Pressure: Not available
+SpO2: Not available
+Weight: Not available
+
+Physical Examination
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+No laboratory results were obtained during this encounter. Historical lab data from the electronic health record is present but not relevant to the current acute presentation.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+The patient is a young male presenting with a two-day history of ageusia and hyposmia, accompanied by a dry cough of three to four days duration, fatigue, and mild gastrointestinal symptoms. The clinical presentation is highly suggestive of an acute viral upper respiratory infection, with SARS-CoV-2 being a primary differential diagnosis given the prominent loss of taste and smell and the reported exposure to a sick classmate. Other viral etiologies are also possible. Bacterial infection is less likely given the absence of purulent sputum, high fever, or localized signs of bacterial superinfection.
+
+Plan
+1. A SARS-CoV-2 swab test was ordered to evaluate for active infection.
+2. The patient was advised to isolate for 14 days, regardless of the test result, to prevent potential transmission.
+3. If the swab test returns positive, public health authorities will be notified for contact tracing.
+4. If the swab test is negative and symptoms persist or worsen, further workup for bacterial infections will be considered, which may include antibiotic therapy if indicated.
+5. The patient was counseled on the health risks associated with vaping, specifically regarding potential nicotine or tobacco content, and encouraged to consider reducing or quitting use.
+6. The patient was advised to maintain hydration and monitor symptoms.

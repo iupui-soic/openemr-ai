@@ -1,0 +1,88 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0003
+Detected Disease: Back Pain
+Generated: 2026-11-19 05:24:55
+Time: 3.59s
+Tokens: 8,352 in / 1,330 out
+============================================================
+
+Patient Information
+Name: Abe Steuber
+Date of Birth: 1995-03-24
+Sex: Male
+Patient ID: 311
+Address: 339 Kerluke Crossing, Rockland, Massachusetts 00000
+Encounter Date: 2024-07-19
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient is a 26-year-old male presenting with progressive low back pain and morning stiffness for approximately six months.
+
+History of Present Illness
+The patient reports a dull, aching pain located primarily in the middle to lower back, with some involvement of the neck. The pain is rated 4 to 5 out of 10 on a standard pain scale, with variability depending on the day. The onset was gradual, beginning approximately six months ago with minimal pain (0-1/10) that has progressively worsened. The patient notes significant morning stiffness that improves after 30 to 60 minutes of activity. He denies any specific traumatic event or injury that precipitated the symptoms.
+
+The patient also reports intermittent pain in the right knee and hands, which began around the same time as the back pain. He denies radiation of pain to other parts of the body. Over-the-counter medications, specifically acetaminophen and ibuprofen, have provided only temporary relief, with stiffness and pain returning the following morning. The patient denies any specific aggravating factors such as bending, standing, or lying down.
+
+Associated symptoms include progressive fatigue and malaise over the same six-month period. The patient denies fever, chills, night sweats, shortness of breath, changes in bowel or urinary habits, appetite changes, weight loss, visual changes, numbness, tingling, or muscle weakness. He reports no recent viral or bacterial infections, though he notes an episode of diarrhea several months ago that was treated with antibiotics, possibly related to food poisoning.
+
+Review of Systems
+Constitutional: Positive for fatigue and malaise. Negative for fever, chills, night sweats, or weight changes.
+Respiratory: Negative for shortness of breath.
+Cardiovascular: No information available.
+Gastrointestinal: Negative for current diarrhea or urinary issues. History of diarrhea several months ago.
+Genitourinary: No information available.
+Musculoskeletal: Positive for back pain, right knee pain, and hand pain. Negative for swelling, redness, or muscle weakness.
+Neurological: Negative for numbness or tingling.
+Dermatological: Negative for rashes or nail changes.
+Ophthalmological: Negative for vision changes.
+
+Allergies
+The patient reports environmental allergies, likely to ragweed or pollen. No specific medication allergies were reported in the current encounter, though the electronic record notes a general allergy to a substance with severity level 1.
+
+Past Medical History
+The patient reports a history of asthma. He also notes a past episode of diarrhea several months ago, suspected to be food poisoning, which was treated with antibiotics. The electronic health record lists a history of chronic low back pain, obesity (BMI 40+), and various social determinants of health including stress and limited social contact.
+
+Surgical History
+The patient denies any previous hospitalizations or surgeries.
+
+Social History
+The patient is currently employed full-time at a bank. He lives with his girlfriend in a condo. He is sexually active with a female partner of six months; both partners deny a history of sexually transmitted infections, and the patient reports consistent condom use. He denies tobacco use. He reports occasional alcohol consumption (one to two beers or cocktails on weekends). He reports using marijuana once or twice per week with a friend.
+
+Family History
+The patient's mother has a history of psoriasis, treated with topical creams. The patient denies that his mother experienced joint pain alongside her skin condition. No other significant family history of autoimmune or musculoskeletal conditions was reported.
+
+Current Medications
+The patient currently uses an albuterol inhaler as needed for asthma. He has been using acetaminophen and ibuprofen for pain relief. The electronic record lists several other medications including fexofenadine, epinephrine auto-injector, hydrocortisone cream, and codeine/hydrocodone combinations, but the patient only confirmed the use of the asthma inhaler and over-the-counter pain relievers during the interview.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 86 bpm
+Respiratory Rate: 15 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 169.70 cm
+BMI: 42.03
+
+Physical Examination
+No detailed physical examination findings were documented in the transcript. The physician noted the need for a full physical examination to be performed in person.
+
+Labs
+No laboratory results were obtained during this encounter. The physician ordered the following labs for future evaluation: Complete Blood Count (CBC), C-Reactive Protein (CRP), Erythrocyte Sedimentation Rate (ESR), Rheumatoid Factor, and Antinuclear Antibodies (ANA).
+
+Imaging
+No imaging was performed during this encounter. The physician ordered X-rays of the spine, sacroiliac joints, hands, and knees.
+
+Assessment
+The patient presents with progressive axial and peripheral joint pain and stiffness, consistent with an inflammatory etiology. The differential diagnosis includes:
+1. Ankylosing Spondylitis: Given the patient's age, sex, progressive nature of the back pain, and morning stiffness.
+2. Psoriatic Arthritis: Given the family history of psoriasis, though the patient currently lacks skin manifestations.
+3. Reactive Arthritis: Given the history of gastroenteritis several months prior to the onset of joint symptoms.
+
+Plan
+1. Schedule an in-person appointment for a comprehensive physical examination.
+2. Order laboratory work including CBC, CRP, ESR, Rheumatoid Factor, and ANA.
+3. Order imaging studies including X-rays of the spine, sacroiliac joints, hands, and knees.
+4. Continue current management with over-the-counter analgesics as needed until further evaluation.
+5. Follow up with results of labs and imaging to refine diagnosis and initiate appropriate treatment.

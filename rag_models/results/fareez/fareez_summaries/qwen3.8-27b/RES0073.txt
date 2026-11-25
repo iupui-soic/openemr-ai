@@ -1,0 +1,108 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0073
+Detected Disease: Sinusitis
+Generated: 2026-11-19 05:24:55
+Time: 4.61s
+Tokens: 16,041 in / 1,674 out
+============================================================
+
+Patient Information
+Name: Aaron Bartoletti
+Date of Birth: 1981-08-03
+Sex: Male
+Patient ID: 17
+Address: 409 Veum Drive, Spencer, Massachusetts 01562
+Encounter Date: 2022-05-09
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with a one-week history of nasal congestion, facial pain, and post-nasal drip.
+
+History of Present Illness
+The patient is a 40-year-old male who reports that his symptoms began approximately eight days ago with a runny nose. The initial symptoms resolved slightly, but five days ago, the condition worsened, progressing to significant nasal and throat congestion. Over the last two days, the patient has developed significant pressure and pain localized around the nose, jaw, and cheeks, extending to the area just above the teeth. The patient describes the nasal discharge as clear to white, explicitly denying any green or yellow purulence. He reports bilateral nasal obstruction, noting that he must alternate sides to breathe at night. The patient also reports a loss of smell (anosmia) that began three days ago, coinciding with the peak of his congestion. He denies any changes in taste.
+
+The patient denies cough, sore throat, wheezing, shortness of breath, chest pain, lightheadedness, nausea, vomiting, abdominal pain, diarrhea, urinary problems, rashes, muscle aches, or joint aches. He reports brief episodes of chills over the last few days but denies having a measured fever. He notes that his energy levels are largely unaffected, though sleep is occasionally disrupted by congestion. He reports mild eye redness and itchiness.
+
+The patient has a history of a similar episode two years ago that resolved spontaneously without medical intervention. He denies any sick contacts, recent travel, or exposure to ill coworkers. He works at a grocery store and reports that the workplace is careful regarding pandemic safety protocols.
+
+Review of Systems
+Constitutional: Negative for fever, weight loss, or significant fatigue. Positive for brief episodes of chills.
+Eyes: Positive for mild redness and itchiness. Negative for discharge.
+ENT: Positive for rhinorrhea (clear/white), nasal obstruction, post-nasal drip, facial pain (cheeks, jaw, above teeth), and anosmia. Negative for sore throat, ear pain, or hearing changes.
+Respiratory: Negative for cough, wheezing, shortness of breath, or chest pain.
+Cardiovascular: Negative for chest pain, palpitations, or lightheadedness.
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, diarrhea, or constipation.
+Genitourinary: Negative for urinary symptoms.
+Musculoskeletal: Negative for muscle aches, joint aches, or weakness.
+Neurological: Negative for dizziness, weakness, or numbness.
+Psychiatric: No acute concerns reported in this encounter.
+
+Allergies
+The patient reports no known drug allergies. He denies known environmental allergies that might be exacerbating his current symptoms.
+
+Past Medical History
+The patient reports a history of dyslipidemia. The electronic health record contains a complex history including essential hypertension, chronic kidney disease (stages 1 through 4, with a history of renal transplant in 2018), disorder of kidney due to diabetes mellitus, microalbuminuria, proteinuria, and end-stage renal disease. The record also lists a history of impacted molars, chronic pain, chronic intractable migraine without aura, gingivitis, dental infections, loss of teeth, and torus palatinus. Additionally, the record notes a history of drug abuse, multiple drug overdoses, severe anxiety, stress, and victimization by intimate partner abuse. The patient’s current self-reported history focuses primarily on dyslipidemia.
+
+Surgical History
+The patient denies recent surgeries. The medical record indicates a history of renal transplantation in 2018.
+
+Social History
+The patient lives alone in an apartment outside of London (per transcript; note discrepancy with address in Spencer, MA). He works at a grocery store. He is a former smoker, having quit a couple of years ago. He consumes red wine a couple of times per week. He reports using marijuana once or twice a month. He denies recreational drug use other than the aforementioned.
+
+Family History
+The patient reports no family history of lung or heart conditions. He reports no family history of cancer.
+
+Current Medications
+The patient reports taking a statin medication for dyslipidemia and multivitamins. The electronic health record lists the following active medications:
+- Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+- Tacrolimus 1 MG Extended Release Oral Tablet
+- Tacrolimus 5 MG/ML Injection
+- Sodium fluoride 0.0272 MG/MG Oral Gel
+- Hydrochlorothiazide 25 MG Oral Tablet
+- Amlodipine 2.5 MG Oral Tablet
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 85.00 bpm
+Respiration Rate: 14.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 179.80 cm
+BMI: 28.83
+
+Physical Examination
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+Recent laboratory results from the electronic health record include:
+- Cholesterol in HDL: 62.31 mg/dL
+- Triglycerides: 130.73 mg/dL
+- Low Density Lipoprotein Cholesterol: 98.12 mg/dL
+- Total Cholesterol: 186.58 mg/dL
+- Hemoglobin: 16.36 g/dL
+- Leukocytes: 3.54 10*3/uL
+- Platelets: 208.54 10*3/uL
+- MCV: 88.69 fL
+- MCHC: 35.66 g/dL
+- Patient Health Questionnaire 9 item (PHQ-9) total score: 24
+- Generalized anxiety disorder 7 item (GAD-7) total score: 3
+
+Imaging
+No imaging studies were performed or documented for this encounter.
+
+Assessment
+Primary Diagnosis: Acute Sinusitis (Viral vs. Bacterial)
+The patient presents with symptoms consistent with acute sinusitis, including nasal obstruction, purulent or clear discharge, facial pain/pressure, and anosmia. The duration of symptoms is approximately one week. The presence of a "double sickening" pattern (initial improvement followed by worsening) and facial pain raises the possibility of bacterial sinusitis, although the discharge is currently clear/white. The absence of high fever and purulent discharge currently favors a viral etiology or early bacterial superinfection.
+
+Secondary Diagnoses:
+- Dyslipidemia
+- History of Renal Transplant
+- Essential Hypertension
+
+Plan
+1. Monitor Temperature: The patient is advised to check his temperature at home. If a high fever develops, this would increase the likelihood of bacterial sinusitis.
+2. Antibiotic Consideration: If fever develops or symptoms worsen significantly, antibiotics may be required. The current presentation (clear discharge, no high fever) does not yet mandate immediate antibiotic therapy, but the clinical picture (discharge, obstruction, loss of smell, facial pain) fits the criteria for sinusitis.
+3. Follow-up: The patient should follow up if symptoms do not improve or if they worsen, particularly if fever or purulent discharge develops.
+4. Medications: Continue current home medications. No new prescriptions were issued during this encounter.

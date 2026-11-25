@@ -1,0 +1,77 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0065
+Detected Disease: Sore Throat
+Generated: 2026-11-19 05:24:55
+Time: 3.96s
+Tokens: 13,610 in / 1,244 out
+============================================================
+
+Patient Information
+Patient Name: Abbey Arie Schroeder
+Date of Birth: 1951-10-26
+Sex: Female
+Address: 292 Von Parade, Leominster, Massachusetts 01420
+Patient ID: 100
+Encounter Type: Outpatient Family Clinic Visit
+
+Chief Complaint
+The patient presents to the family clinic with a three-day history of sore throat and a one-day history of fever. The patient reports that the sore throat is constant and has not improved, prompting the visit for evaluation.
+
+History of Present Illness
+The patient is a female presenting with a three-day history of sore throat that is described as constant and progressively worsening. One day prior to the visit, the patient developed a fever, accompanied by subjective feelings of heat and chills. The patient has not taken a precise temperature measurement at home. The patient reports no specific pattern to the fever, noting that it breaks intermittently. The sore throat is exacerbated by swallowing, particularly with solid foods, and occasionally with very cold liquids. The patient has attempted symptomatic relief with lozenges, which provided only temporary soothing. The patient denies cough, headache, nausea, vomiting, night sweats, chest pain, or palpitations. The patient reports increased fatigue and tiredness. There is no history of recent travel, recent upper respiratory infections, or known exposure to sick contacts. The patient notes the presence of palpable lumps in the neck, consistent with lymphadenopathy, but denies generalized neck swelling or swelling in other body regions. The patient denies skin rashes or changes. Bowel movements and urination are normal. Sleep is adequate at 7 to 8 hours per night. Appetite is generally preserved, though intake is limited by the pain associated with swallowing.
+
+Review of Systems
+Constitutional: Positive for fever, chills, and fatigue. Negative for night sweats.
+Respiratory: Negative for cough.
+Cardiovascular: Negative for chest pain and palpitations.
+Gastrointestinal: Negative for diarrhea, constipation, nausea, and vomiting.
+Genitourinary: Negative for changes in urination.
+Neurological: Negative for headache.
+Musculoskeletal: Negative for generalized swelling.
+Integumentary: Negative for rashes or skin changes.
+
+Allergies
+No known drug allergies are documented in the provided records.
+
+Past Medical History
+The patient reports a diagnosis of Crohn's disease, diagnosed last year. The patient states she is currently taking Sulfasalazine for this condition. The electronic health record contains a complex history including prediabetes, anemia, essential hypertension, chronic kidney disease (stages 1 through 4, with a history of end-stage renal disease), metabolic syndrome, ischemic heart disease, and a history of renal transplant. The record also notes a history of acute viral pharyngitis in 2002, multiple episodes of gingivitis, dental caries, and a rupture of the patellar tendon in 2010. However, based on the patient's current verbal report, the primary active chronic condition is Crohn's disease.
+
+Surgical History
+The patient reports a history of a colonoscopy performed last year, which required a one-day hospitalization. The electronic health record additionally documents a history of renal transplant.
+
+Social History
+The patient lives in an apartment with her parents and younger brother. She does not smoke cigarettes or use recreational drugs. She has minimal alcohol use, having consumed it only once or twice in the past, and avoids it as it exacerbates her Crohn's disease. She engages in swimming as physical activity and does not participate in contact sports.
+
+Family History
+The patient reports a family history of Crohn's disease and Ulcerative Colitis. There is also a family history of asthma and eczema.
+
+Current Medications
+Based on the patient's report, she is currently taking Sulfasalazine for Crohn's disease. The electronic health record lists several other active medications, including Tacrolimus, Simvastatin, Metoprolol succinate, and Nitroglycerin, likely related to her history of renal transplant and cardiovascular disease.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 89 bpm
+Temperature: Not available
+Respiratory Rate: 13 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 169.30 cm
+BMI: 27.63
+
+Physical Examination
+No detailed physical examination findings are documented in the provided transcript or electronic health record extract for this specific encounter. The patient self-reports palpable lumps in the neck.
+
+Labs
+No laboratory results are available for the current encounter. Historical laboratory data from the electronic health record includes normal ranges for electrolytes, glucose, and hemoglobin, though these do not reflect the current acute presentation.
+
+Imaging
+No imaging studies are available for the current encounter.
+
+Assessment
+The patient presents with acute pharyngitis characterized by a three-day history of worsening sore throat, one-day history of fever and chills, cervical lymphadenopathy, and fatigue. The differential diagnosis includes viral pharyngitis, infectious mononucleosis (Epstein-Barr virus), and SARS-CoV-2 infection. Given the presence of respiratory symptoms and lymphadenopathy, it is necessary to rule out COVID-19 and other viral etiologies such as mono.
+
+Plan
+1. Diagnostic Testing: A swab for COVID-19 testing will be performed today. Results are expected within 24 to 48 hours. Epstein-Barr virus (EBV) antibody testing will also be performed to evaluate for infectious mononucleosis.
+2. Isolation: The patient is instructed to self-isolate immediately pending the results of the COVID-19 test.
+3. Follow-up: The patient will follow up to review test results and determine further management based on the diagnostic findings.

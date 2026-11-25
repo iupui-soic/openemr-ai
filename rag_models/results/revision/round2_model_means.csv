@@ -1,0 +1,7 @@
+model,accuracy_mean,accuracy_std,completeness_mean,completeness_std,organization_mean,organization_std,conciseness_mean,conciseness_std,clinical_utility_mean,clinical_utility_std,overall_quality_mean,overall_quality_std,composite_mean,composite_std
+gpt-oss-120b,2.7,0.56,4.14,0.38,5.0,0.0,3.64,0.38,3.54,0.57,3.44,0.55,3.74,0.36
+gpt-oss-20b,2.62,0.53,3.92,0.42,5.0,0.0,3.92,0.21,3.47,0.56,3.35,0.57,3.71,0.33
+qwen3-32b,2.5,0.61,3.82,0.47,4.94,0.23,3.7,0.37,3.42,0.72,3.29,0.7,3.61,0.47
+medgemma-4b,2.41,0.54,3.02,0.45,3.98,0.87,3.39,1.07,2.66,0.67,2.55,0.75,3.0,0.61
+qwen3.8-27b,2.85,0.6,4.22,0.19,4.88,0.16,3.28,0.41,3.67,0.63,3.54,0.55,3.74,0.35
+llama-4-scout,2.1,0.43,3.11,0.29,3.67,0.45,3.21,0.54,2.58,0.46,2.52,0.41,2.86,0.3

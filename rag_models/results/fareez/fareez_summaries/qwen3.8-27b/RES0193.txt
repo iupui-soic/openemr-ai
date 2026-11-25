@@ -1,0 +1,77 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0193
+Detected Disease: Asthma
+Generated: 2026-11-19 05:24:55
+Time: 3.54s
+Tokens: 7,731 in / 1,346 out
+============================================================
+
+Patient Information
+Patient Name: Abby Stroman
+Date of Birth: 2001-10-18
+Sex: Female
+Address: 228 Spencer Flat Apt 61, Ware, Massachusetts 01082
+Encounter Date: 2024-03-02
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents for a consultation regarding persistent cough, wheezing, and difficulty breathing.
+
+History of Present Illness
+The patient is a 6-year-old female presenting with a several-month history of recurrent respiratory symptoms. The primary complaints include a dry cough and wheezing, which are most prominent at night and following physical exertion. The symptoms occur approximately twice per week. The cough is dry, with no production of yellow, green, or bloody sputum. The wheezing is described by the parent as a high-pitched whistling sound during exhalation. Symptoms are exacerbated by activity, such as playing at school or visiting friends' homes. Specifically, the patient experiences coughing and wheezing after visiting a friend's house where a cat is present; these symptoms typically resolve within 30 to 60 minutes. The patient has missed a few days of school in the past month due to poor sleep quality and subsequent malaise. There is a seasonal component to the symptoms, with the patient reporting itchy eyes and a runny nose during the fall and during seasonal changes, suggesting an allergic component. The patient denies recent fevers, chills, sore throat, or runny nose associated with the current respiratory episodes. There is no history of dizziness, behavioral changes, nausea, vomiting, or changes in bowel habits. The patient is growing well and maintaining a healthy appetite.
+
+Review of Systems
+Constitutional: Negative for fever, chills, or weight loss. Positive for weight gain appropriate for age.
+Respiratory: Positive for dry cough, wheezing, and dyspnea on exertion. Negative for hemoptysis or purulent sputum.
+Cardiovascular: Negative for dizziness or palpitations.
+Gastrointestinal: Negative for nausea, vomiting, diarrhea, or constipation.
+Neurological: Negative for behavioral changes or irritability.
+Other: Positive for itchy eyes and rhinorrhea during seasonal changes.
+
+Allergies
+The patient has documented allergies to mold, house dust mites, animal dander, grass pollen, tree pollen, sulfamethoxazole/trimethoprim, aspirin, and tree nuts.
+
+Past Medical History
+The patient has a history of childhood asthma, which was previously documented but noted as resolved in 2021. She also has a history of perennial allergic rhinitis, previously documented as resolved in 2020. Past medical history includes a prior episode of bronchiolitis at age two, which was attributed to a viral infection. Other past medical issues include gingivitis, acute infective cystitis, acute viral pharyngitis, viral sinusitis, and a confirmed case of COVID-19 in 2020. The patient has met all developmental milestones appropriately.
+
+Surgical History
+No surgical history is reported.
+
+Social History
+The patient lives with her parents in a house. There are no smokers in the household. The patient has carpet in the basement, which she uses as a playroom. She is the only child in the family.
+
+Family History
+The patient's mother has a history of asthma diagnosed in childhood. The mother manages her condition with daily inhaler use and has no reported severe exacerbations.
+
+Current Medications
+The patient is not currently taking any regular medications for her respiratory symptoms. The medical record lists several active medications, including Natazia, sodium fluoride gel, Fexofenadine, and an epinephrine auto-injector, as well as historical prescriptions for budesonide and albuterol.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 98.00 bpm
+Temperature: Not available
+Respiratory Rate: 13.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 174.20 cm
+BMI: 18.20
+
+Physical Examination
+A full physical examination was planned to assess the patient's breathing and lung sounds. Specific findings from the physical examination are not detailed in the provided transcript.
+
+Labs
+Laboratory results from the electronic health record include a complete blood count with the following values: Hemoglobin 15.96 g/dL, Hematocrit 38.81%, MCV 91.47 fL, MCH 29.80 pg, MCHC 33.82 g/dL, RDW 42.05 fL, Platelets 369.29 x 10^3/uL, and Leukocytes 10.02 x 10^3/uL. Respiratory viral panel results for Human metapneumovirus, Parainfluenza virus 3, Parainfluenza virus 1, and Influenza virus B were recorded as unknown.
+
+Imaging
+No imaging studies are reported for this encounter.
+
+Assessment
+The primary diagnosis is suspected asthma. This assessment is based on the patient's age, the pattern of symptoms (exertional and nocturnal cough and wheezing), the presence of atopic features (seasonal rhinitis and itchy eyes), and a strong family history of asthma. The differential diagnosis includes reactive airway disease or allergic rhinitis with post-nasal drip, but the exertional component and wheezing strongly suggest asthma.
+
+Plan
+1. Perform a full physical examination, with specific attention to lung auscultation.
+2. Order pulmonary function tests (PFTs) to assess lung function, noting that the patient is 6 years old and may be able to follow the necessary instructions.
+3. Consider allergy testing to identify specific environmental triggers.
+4. Discuss potential management strategies, which may include the use of a short-acting beta-agonist (e.g., Ventolin) for symptom relief and an inhaled corticosteroid for maintenance therapy, pending the results of the investigations.
+5. Follow up to review test results and finalize the treatment plan.

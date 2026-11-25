@@ -1,0 +1,7 @@
+dimension,n,lr_model,p_model,or_round2,round_ci,p_round,conv_sd,converged,or_qwen3.8-27b,or_gpt-oss-20b,or_qwen3-32b,or_medgemma-4b,or_llama-4-scout
+accuracy,762,78.3,<.001,0.9,0.49 to 1.66,.75,0.91,True,2.01 (0.97 to 4.19),0.87 (0.54 to 1.41),0.65 (0.40 to 1.04),0.50 (0.31 to 0.81),0.24 (0.12 to 0.51)
+completeness,762,457.7,<.001,0.59,0.28 to 1.21,.15,0.96,True,2.56 (1.08 to 6.11),0.39 (0.23 to 0.69),0.27 (0.15 to 0.47),0.01 (0.00 to 0.02),0.02 (0.01 to 0.05)
+organization,762,483.4,<.001,0.54,0.15 to 1.93,.36,0.6,True,not estimable,not estimable,not estimable,not estimable,not estimable
+conciseness,762,47.4,<.001,1.04,0.56 to 1.93,.89,0.45,True,0.27 (0.13 to 0.57),2.30 (1.43 to 3.70),1.08 (0.68 to 1.72),0.77 (0.47 to 1.26),0.21 (0.10 to 0.45)
+clinical_utility,762,238.3,<.001,0.78,0.42 to 1.44,.42,1.07,True,2.07 (0.99 to 4.34),0.84 (0.52 to 1.35),0.83 (0.52 to 1.33),0.09 (0.05 to 0.15),0.10 (0.05 to 0.21)
+overall_quality,762,227.4,<.001,0.74,0.39 to 1.38,.34,1.04,True,2.11 (1.00 to 4.47),0.83 (0.52 to 1.35),0.76 (0.47 to 1.23),0.09 (0.05 to 0.15),0.11 (0.05 to 0.24)

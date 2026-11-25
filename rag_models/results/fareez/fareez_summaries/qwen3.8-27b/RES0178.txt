@@ -1,0 +1,77 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0178
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-11-19 05:24:55
+Time: 3.23s
+Tokens: 7,909 in / 1,123 out
+============================================================
+
+Patient Information
+Patient Name: Aaron Dooley
+Date of Birth: 1957-06-30
+Sex: Male
+Unit Number: 45
+Address: 992 Dare Frontage road Unit 83, Abington, Massachusetts 02351
+Patient ID: 45
+
+Chief Complaint
+The patient presented with a two-day history of fever, dry cough, and rhinorrhea.
+
+History of Present Illness
+The patient is a 60-year-old male who presented to the clinic with a two-day history of fever, cough, and runny nose. The patient reports that the cough and rhinorrhea preceded the onset of fever. Last night, the patient developed a fever and chills, describing a sensation of being cold despite being covered with blankets. The cough is described as dry, with no sputum production or hemoptysis. The patient denies shortness of breath, wheezing, or chest pain. The rhinorrhea is clear in character, and the patient denies nasal congestion. The patient also reports a mild sore throat, which has not significantly impacted his ability to eat, though his appetite has been decreased. He continues to eat solids but in smaller portions. The patient reports generalized muscle aches, describing a feeling of being "beat up" all over. He denies dizziness, fainting, numbness, or tingling. There have been no changes in bowel movements, and he denies nausea or vomiting. There have been no changes in urination. The patient denies any recent contact with sick individuals or recent travel. He attends school both online and in person.
+
+Review of Systems
+Constitutional: Positive for fever, chills, and generalized muscle aches. Negative for weight loss.
+Respiratory: Positive for dry cough and clear rhinorrhea. Negative for shortness of breath, wheezing, chest pain, and nasal congestion.
+Cardiovascular: Negative for chest pain.
+Gastrointestinal: Negative for nausea, vomiting, diarrhea, or abdominal pain. Positive for decreased appetite.
+Neurological: Negative for dizziness, fainting, numbness, or tingling.
+Other: Negative for rash, eye redness or discharge, ear pain or discharge, and changes in smell or taste.
+
+Past Medical History
+According to the electronic health record, the patient has a history of essential hypertension, human immunodeficiency virus (HIV) infection, chronic hepatitis C, obesity (BMI 30+), chronic pain, chronic low back pain, and chronic neck pain. The record also notes a history of gingivitis, gingival disease, and acute viral pharyngitis. The patient reports no current medications, which conflicts with the electronic health record listing active prescriptions.
+
+Surgical History
+The electronic health record does not list specific surgical procedures. The patient reports no hospitalizations or surgeries.
+
+Social History
+The patient lives with his mother, a younger brother, and a younger sister. There is no smoking in the home. The patient denies use of alcohol, recreational drugs, or tobacco. He reports no specific exercise routine.
+
+Family History
+The patient reports that his grandfather had high blood pressure and high cholesterol. There is no family history of lung or heart conditions.
+
+Allergies
+The electronic health record lists allergies to substance (finding), Lisinopril, Ibuprofen, Aspirin, Penicillin V, and Tree nut. The patient verbally denied having any allergies during the encounter.
+
+Current Medications
+The patient verbally reported that he is not taking any medications. The electronic health record lists the following active medications: Lamivudine/Tenofovir, Raltegravir, Acetaminophen, Fentanyl transdermal system, Hydrocodone Bitartrate, Acetaminophen/Hydrocodone, Sodium fluoride gel, Losartan potassium, Lopinavir/Ritonavir, Emtricitabine/Tenofovir, and Doxycycline hyclate.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 73.00 bpm
+Respiration Rate: 15.00 breaths/min
+Temperature: Not available (Patient reported 38.8 C at home)
+SpO2: Not available
+Weight: Not available
+Height: 177.00 cm
+BMI: 28.03
+
+Physical Exam
+No information available.
+
+Labs
+No information available for the current encounter.
+
+Imaging
+No information available.
+
+Assessment
+The patient presents with symptoms consistent with an upper respiratory infection. The differential diagnosis includes common viral infections such as influenza or other seasonal viral illnesses. Given the overlapping symptoms, SARS-CoV-2 infection is also a consideration. The patient is hemodynamically stable with no signs of respiratory distress or focal neurological deficits.
+
+Plan
+1. A SARS-CoV-2 swab test was performed. Results are expected in 24 to 48 hours.
+2. Supportive care is recommended, including maintaining hydration and consuming nutritious foods.
+3. The patient was advised to monitor his symptoms closely.
+4. Return precautions were provided: The patient should seek immediate emergency care if symptoms worsen, become severe, or if focal neurological deficits such as weakness or seizures develop.
+5. No new medications were prescribed during this encounter.

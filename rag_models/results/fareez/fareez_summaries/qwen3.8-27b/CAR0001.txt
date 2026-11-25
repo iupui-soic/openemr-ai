@@ -1,0 +1,95 @@
+Model: qwen/qwen3.8-27b
+Patient: CAR0001
+Detected Disease: Chest Pain
+Generated: 2026-11-19 05:24:55
+Time: 5.96s
+Tokens: 12,026 in / 1,389 out
+============================================================
+
+Patient Information
+Name: Althea Shawn Howell
+Date of Birth: 1961-08-29
+Sex: Female
+Patient ID: 6702
+Address: 889 Feil Mall, Marshfield, Massachusetts 02050
+Occupation: Accountant
+Living Situation: Lives alone in an apartment
+
+Chief Complaint
+The patient presents with a chief complaint of left-sided chest pain that began the previous evening and has become sharper in character over the last eight hours.
+
+History of Present Illness
+The patient is a 39-year-old male (per transcript) who reports the onset of chest pain last night. The pain is localized to the left side of the chest and is described as sharp. The patient rates the severity of the pain as 7 to 8 out of 10. The pain has been constant throughout the eight-hour duration. The patient notes that lying down exacerbates the pain, while sitting upright provides some relief. Deep inspiration also worsens the pain. The patient recalls moving furniture when the pain started but denies feeling injured at the time. Associated symptoms include lightheadedness, difficulty breathing, and mild tachycardia. The patient denies loss of consciousness, nausea, vomiting, fever, chills, abdominal pain, urinary or bowel issues, cough, hemoptysis, wheezing, or noisy breathing. The patient reports a sensation of mild neck swelling but denies neck pain or recent trauma to the neck or chest. This is the first episode of such symptoms.
+
+Review of Systems
+Constitutional: Negative for fever, chills, night sweats, or weight changes.
+Respiratory: Positive for difficulty breathing and pain with deep inspiration. Negative for cough, hemoptysis, wheezing, or noisy breathing.
+Cardiovascular: Positive for chest pain and mild palpitations. Negative for syncope.
+Gastrointestinal: Negative for nausea, vomiting, abdominal pain, or changes in bowel habits.
+Genitourinary: Negative for urinary problems.
+Musculoskeletal: Negative for neck pain or trauma.
+Skin: Negative for rashes. Positive for subjective sensation of neck swelling.
+
+Allergies
+The patient reports no known drug allergies. The electronic health record lists allergies to mold, animal dander, grass pollen, tree pollen, and wheat, but the patient denies these in the current interview.
+
+Past Medical History
+The patient denies any prior medical conditions, recent hospitalizations, or prior surgeries. The electronic health record contains a complex history including ischemic heart disease, history of coronary artery bypass grafting, chronic kidney disease (stages 1-4), end-stage renal disease, history of renal transplant, essential hypertension, prediabetes, metabolic syndrome, osteoporosis, and various dental issues. However, the patient explicitly denies these conditions in the current interview. Per instructions, the transcript is trusted for the current status, indicating a lack of awareness or a discrepancy in the record.
+
+Surgical History
+The patient denies any prior surgeries. The electronic health record notes a history of coronary artery bypass grafting and renal transplant, but the patient denies this history.
+
+Social History
+The patient is an accountant and lives alone in an apartment. He smokes approximately one pack of cigarettes per day and has done so for 10 to 15 years. He uses cannabis occasionally, approximately 5 milligrams per week. He denies the use of other recreational drugs, including cocaine, crystal meth, opioids, or IV drugs. He consumes alcohol, approximately one to two drinks per day (10 drinks per week). He reports eating healthy dinners but eating out for lunch. He exercises by running for 30 minutes every other day.
+
+Family History
+The patient reports that his father had a heart attack at age 45 and had cholesterol problems. There is no family history of stroke or cancer.
+
+Current Medications
+The patient denies taking any regular medications, prescribed or over-the-counter. The electronic health record lists several active medications including tacrolimus, clopidogrel, simvastatin, metoprolol succinate, nitroglycerin, diphenhydramine, alendronic acid, and others. Per the patient's statement, he is not currently taking these medications.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 82.00 bpm
+Respiration Rate: 12.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 166.00 cm
+BMI: 28.05
+
+Physical Exam
+No physical examination findings were documented in the provided transcript or extract.
+
+Labs
+The following laboratory results are available from the electronic health record:
+Chloride: 106.02 mmol/L
+Sodium: 142.91 mmol/L
+Creatinine: 0.88 mg/dL and 0.71 mg/dL
+Glucose: 78.59 mg/dL and 78.64 mg/dL
+Carbon dioxide, total: 27.29 mmol/L
+Potassium: 3.79 mmol/L
+Calcium: 8.75 mg/dL
+Urea nitrogen: 9.15 mg/dL
+Hematocrit: 49.10%
+Erythrocytes: 4.43 x 10^6/uL
+MCH: 30.31 pg
+Erythrocyte distribution width: 43.51 fL
+Platelet distribution width: 451.29 fL
+Urine Glucose: Negative
+Urine Hemoglobin: Negative
+Urine Protein: Negative
+
+Imaging
+No imaging studies were documented in the provided data.
+
+Assessment
+Primary Diagnosis: Acute chest pain, etiology to be determined.
+Secondary Diagnoses: None established in this encounter.
+Hospital Course: The patient presented with acute left-sided chest pain. The etiology is unclear given the discrepancy between the patient's reported history and the electronic health record. The patient's denial of significant past medical history, including cardiac and renal disease, conflicts with the extensive record. Further evaluation is required to clarify the patient's actual medical history and to determine the cause of the chest pain.
+
+Plan
+Medications Prescribed: No new medications were prescribed in this encounter.
+Discharge Instructions: No specific discharge instructions were documented.
+Follow-up Instructions: The patient should follow up with his primary care provider for further evaluation of chest pain and reconciliation of his medical history.

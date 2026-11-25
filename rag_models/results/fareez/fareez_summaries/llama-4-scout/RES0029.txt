@@ -1,0 +1,70 @@
+Model: us.meta.llama4-scout-17b-instruct-v1:0
+Patient: RES0029
+Detected Disease: Chest Pain
+Generated: 2026-11-19 05:50:47
+Time: 7.67s
+Tokens: 10,130 in / 802 out
+============================================================
+
+Patient Information
+
+The patient, Alyson Laila Leuschke, is a female born on February 28, 1921. Her Unit Number is 7303, and she resides at 422 Emmerich Gate Suite 68, Winchester, Massachusetts 01890.
+
+Chief Complaint
+
+The patient presented to the emergency department with a chief complaint of chest pain. She reported that the pain started approximately 2 hours prior to her arrival, after she fell off her bicycle and landed on her left side.
+
+History of Present Illness
+
+The patient's chest pain is described as a stabbing sensation located on the left side of her chest. She reported that taking deep breaths exacerbates the pain, and she has been taking shallow breaths to alleviate it. The pain has been worsening over the last 2 hours. The patient denied experiencing pain in any other location. She also reported feeling short of breath and having a rapid heartbeat over the last hour.
+
+Review of Systems
+
+The patient denied having a fever, chills, nausea, or vomiting. She also denied having any headache. The patient reported that she was wearing a helmet when she fell off her bicycle and did not hit her head. She has some scrapes on her hands but no other injuries.
+
+Past Medical History
+
+The patient's past medical history includes hay fever and allergies to some medications, including nasal sprays and antihistamines. She has no history of heart problems or previous chest pain.
+
+Social History
+
+The patient works as a mechanic and supports herself financially. She smokes approximately 2.5 to 3 packs of cigarettes per day and has been smoking since she was 18 years old. She occasionally drinks alcohol on weekends, usually having one or two beers while watching a game.
+
+Family History
+
+The patient's father has type 2 diabetes, but there is no other significant family history of illnesses.
+
+Medications
+
+The patient's current medications are not explicitly listed in the provided data.
+
+Physical Examination
+
+No information available.
+
+Objective Data
+
+The patient's vital signs are as follows: heart rate 80 bpm, but other vital signs such as blood pressure, temperature, and oxygen saturation are not available.
+
+Laboratory Results
+
+The patient's laboratory results include: glucose 95.81 mg/dL, erythrocyte distribution width 42.976 fL, hematocrit 38.22070373779882%, hemoglobin not explicitly stated, erythrocytes 4.785347501184356 10*6/uL, and potassium 3.89 mmol/L. Other laboratory results are available but not explicitly listed.
+
+Assessment and Plan
+
+The patient's assessment and plan are not explicitly stated in the provided data.
+
+ 
+Given the information provided, here is a comprehensive SOAP-format medical summary:
+
+S: Subjective Data
+The patient is a 102-year-old female presenting with a 2-hour history of sharp, stabbing chest pain on the left side, which worsens with deep breathing. The pain started after a bicycle accident where she fell on her left side. She reports associated symptoms of shortness of breath and a rapid heartbeat. The patient has a history of hay fever and allergies to certain medications. She smokes 2.5-3 packs of cigarettes per day.
+
+O: Objective Data
+The patient's vital signs include a heart rate of 80 bpm. Laboratory results show a glucose level of 95.81 mg/dL and a hematocrit of 38.22%. 
+
+A: Assessment
+The patient presents with acute onset chest pain that may be related to trauma from the bicycle accident. The pain's characteristics and associated symptoms such as shortness of breath and palpitations warrant further evaluation for potential cardiac or pulmonary complications.
+
+P: Plan
+The plan involves further evaluation of the patient's chest pain, including possible cardiac and pulmonary assessments, management of her pain, and addressing her smoking history. Monitoring of her vital signs and laboratory results is necessary. Additional diagnostic tests may be required to rule out any serious conditions.

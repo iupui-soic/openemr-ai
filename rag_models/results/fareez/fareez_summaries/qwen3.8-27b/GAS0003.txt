@@ -1,0 +1,110 @@
+Model: qwen/qwen3.8-27b
+Patient: GAS0003
+Detected Disease: Abdominal Pain
+Generated: 2026-11-19 05:24:55
+Time: 6.25s
+Tokens: 24,535 in / 1,510 out
+============================================================
+
+Patient Information
+Name: Ali Hayes
+Date of Birth: 1946-11-05
+Sex: Female
+Address: 623 Purdy Branch Suite 62, Westfield, Massachusetts 01086
+Patient ID: 5194
+Encounter ID: 380365
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with acute abdominal pain.
+
+History of Present Illness
+The patient is a female who presents with a chief complaint of abdominal pain that began approximately 8 hours prior to the visit. The pain is localized to the right side of the abdomen. The patient describes the quality of the pain as aching. Initially, the pain was intermittent, coming and going, but over the past 5 to 6 hours, it has become constant and persistent. The patient rates the current pain intensity as 8 out of 10 on a scale of 1 to 10, with 10 being the worst pain imaginable. The onset occurred while the patient was preparing for sleep, with no specific precipitating activity noted at the time. The patient reports a history of similar pain that occurs after consuming fatty foods, such as burgers or fries, which she previously attributed to indigestion. Eating currently worsens the pain, and no specific measures have been found to alleviate it. The patient attempted to manage the pain with acetaminophen (Tylenol) without relief.
+
+Associated symptoms include mild nausea, but the patient denies vomiting. She denies fever, chills, or sweats. There are no changes in bowel habits, such as constipation or diarrhea. The patient denies recent travel, recent infections, or contact with ill individuals. She reports mild fatigue secondary to the pain. There are no changes in urinary patterns, skin color, or urine color. The patient denies blood in the stool. Appetite has decreased due to the association of pain with eating, but there is no significant recent weight loss.
+
+Review of Systems
+Constitutional: Mild fatigue reported. Denies fever, chills, or sweats.
+Gastrointestinal: Positive for right-sided abdominal pain and nausea. Negative for vomiting, changes in bowel habits, blood in stool, or jaundice.
+Genitourinary: Negative for changes in urinary patterns or urine color.
+Cardiovascular: No specific complaints reported in the current encounter.
+Respiratory: No specific complaints reported in the current encounter.
+Other: No rashes or skin changes noted.
+
+Past Medical History
+The patient reports a history of diabetes mellitus. According to the electronic health record, the patient has a complex medical history including Type 2 Diabetes Mellitus with associated complications such as chronic kidney disease (stages 2 and 3), microalbuminuria, and proteinuria. Additional documented conditions include essential hypertension, gastroesophageal reflux disease, chronic intractable migraine without aura, chronic pain, and chronic obstructive bronchitis. The record also notes a history of cerebral palsy and spasticity.
+
+Surgical History
+The patient reports a history of wisdom teeth removal during her teenage years. The electronic health record documents a history of tubal ligation.
+
+Social History
+The patient is currently unemployed due to the COVID-19 pandemic. She lives alone in an apartment. She engages in regular exercise, specifically running, particularly when the weather is warm. She does not smoke cigarettes and denies the use of recreational drugs. She consumes alcohol occasionally, reporting one to two drinks per day, typically a glass of wine at night to help her relax.
+
+Family History
+The patient reports that her father suffered a heart attack in his 60s. She denies any family history of cancer, inflammatory bowel disease (such as Crohn's disease or ulcerative colitis), or other significant hereditary conditions.
+
+Current Medications
+The patient reports taking metformin for her diabetes. The electronic health record lists the following active medications:
+- Acetaminophen / Dextromethorphan / Doxylamine succinate Oral Solution
+- Fluticasone propionate / Salmeterol Dry Powder Inhaler
+- Albuterol Inhalation Solution
+- Sodium fluoride Oral Gel
+- Insulin isophane / Insulin regular Injectable Suspension (Humulin)
+- Lisinopril 10 mg Oral Tablet
+
+Allergies
+The patient reports no known drug or environmental allergies.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 92.00 bpm
+Respiratory Rate: 13.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 167.50 cm
+BMI: 27.87
+
+Physical Examination
+No detailed physical examination findings are documented in the provided transcript or extract.
+
+Labs
+The following laboratory results are available from the record:
+- Glucose (Serum): 66.56 mg/dL
+- Urea Nitrogen (Blood): 7.05 mg/dL
+- Creatinine (Serum): 1.97 mg/dL
+- Sodium (Blood): 136.04 mmol/L
+- Chloride (Blood): 103.96 mmol/L
+- Calcium (Blood): 9.27 mg/dL
+- Glomerular Filtration Rate (eGFR): 36.87 mL/min/1.73 m2
+- Urine Protein: 214.78 mg/dL
+- Urine Glucose: 1.53 mg/dL
+- Urine Ketones: 0.93 mg/dL
+- Urine Bilirubin: 0.44 mg/dL
+- Urine Specific Gravity: 1.038
+
+Imaging
+No imaging studies are documented in the provided data.
+
+Assessment
+Primary Diagnosis: Acute Abdominal Pain, Right-Sided.
+Secondary Diagnoses:
+1. Type 2 Diabetes Mellitus with Chronic Kidney Disease (Stage 3) and Proteinuria.
+2. Essential Hypertension.
+3. Gastroesophageal Reflux Disease.
+4. Chronic Obstructive Bronchitis.
+5. Chronic Intractable Migraine.
+6. Cerebral Palsy.
+
+The patient presents with acute right-sided abdominal pain that has progressed from intermittent to constant over 8 hours. The history of postprandial pain after fatty foods raises concern for biliary pathology, such as cholecystitis or cholelithiasis, although acute appendicitis remains a differential given the location and progression. The patient's significant comorbidities, particularly diabetes and chronic kidney disease, require careful management of any new medications or interventions.
+
+Plan
+Medications Prescribed
+No new medications were prescribed during this encounter based on the provided transcript. The patient continues her home medications, including Metformin, Lisinopril, and Insulin.
+
+Discharge Instructions
+No specific discharge instructions are documented in the provided data.
+
+Follow-up Instructions
+No specific follow-up instructions are documented in the provided data.

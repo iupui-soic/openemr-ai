@@ -1,0 +1,130 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0008
+Detected Disease: Pneumonia
+Generated: 2026-11-19 05:24:55
+Time: 4.63s
+Tokens: 13,871 in / 1,652 out
+============================================================
+
+Patient Information
+Name: Abraham Schneider
+Date of Birth: 1928-01-10
+Sex: Male
+Patient ID: 475
+Address: 658 Koepp Vista, Wayland, Massachusetts 00000
+Encounter Date: 2021-01-19
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presented with a three-day history of worsening cough, difficulty breathing, and right-sided chest pain.
+
+History of Present Illness
+The patient is a male with a significant past medical history who reports that approximately three days prior to the visit, he began to feel unwell, developing a new onset of cough and dyspnea. He notes that while he has a chronic cough related to his long-term smoking history, this current episode is distinct, characterized by increased frequency throughout the day and the production of increased mucus. The sputum is described as dark greenish-yellow in color. The patient reports that his symptoms have progressively worsened over the three-day period, with the day of the visit being the worst. He estimates coughing several times per hour and filling tissues with sputum.
+
+Associated with the respiratory symptoms, the patient reports a sharp pain located in the right side of his chest and upper abdominal area. This pain began slightly after the onset of the cough and is exacerbated by coughing episodes and deep inspiration. He denies any pain associated with physical activity such as walking. The patient also reports feeling hot over the last few days and measured a temperature of 38.6 degrees Celsius earlier on the day of the visit. He has taken acetaminophen and ibuprofen for pain relief, which provided only temporary and minimal relief.
+
+Regarding potential exposures, the patient denies recent travel or known contact with sick individuals, though he notes he volunteers at a homeless shelter a few times a week, exposing him to a large number of people. He denies any recent changes to his routine that might have provoked the symptoms.
+
+Review of Systems
+Constitutional: Positive for fever (38.6 C) and feeling unwell.
+Respiratory: Positive for cough, dyspnea, and productive sputum.
+Cardiovascular: Negative for left-sided chest pain or palpitations.
+Gastrointestinal: Negative for nausea, vomiting, or abdominal pain unrelated to the referred chest pain.
+Other: No other positive symptoms reported.
+
+Allergies
+The patient reports environmental allergies. No known medication allergies.
+
+Past Medical History
+The patient has a history of Type 2 Diabetes Mellitus with associated diabetic nephropathy, which has progressed through stages of chronic kidney disease. He has a history of essential hypertension. Additionally, the medical record indicates a history of ischemic heart disease, coronary artery bypass grafting, and a renal transplant. The patient also has a history of recurrent urinary tract infections, gingivitis, and dental caries.
+
+Surgical History
+The patient has a history of coronary artery bypass grafting and a renal transplant.
+
+Social History
+The patient is a smoker with a 30-year history, consuming approximately one pack per day. He does not consume alcohol or use recreational drugs. He lives with his wife in Wayland, Massachusetts. He volunteers at a homeless shelter several times a week.
+
+Family History
+The patient's father had a heart attack in his 70s. His mother had a history of high blood pressure. No other significant family history of respiratory or cardiac disease was reported.
+
+Current Medications
+Home medications include Metformin, an SGLT2 inhibitor, insulin, and amlodipine. The patient also takes a multivitamin.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 62.00 bpm
+Temperature: Not available (Patient reported 38.6 C at home)
+Respiratory Rate: 16.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 167.70 cm
+BMI: 29.11
+
+Physical Exam
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+The following laboratory values were recorded in the electronic health record:
+Erythrocyte distribution width: 13.52 %
+Ferritin: 1547.24 ug/L
+Calcium: 8.66 mg/dL
+MCH: 31.37 pg
+Bicarbonate: 23.61 mmol/L
+Urea nitrogen: 8.81 mg/dL
+Carbon dioxide partial pressure: 35.72 mmHg
+Hematocrit: 40.36 %
+Basophils: 0.22 10*3/uL
+Aspartate aminotransferase: 20.27 U/L
+Erythrocytes: 4.74 10*6/uL
+Monocytes: 1.13 10*3/uL
+Alkaline phosphatase: 55.45 U/L
+Neutrophils: 2.79 10*3/uL
+Albumin: 4.62 g/dL
+Eosinophils: 3.24 %
+Glomerular filtration rate: 9.51 mL/min
+INR: 4.70
+Lymphocytes: 22.80 %
+
+Imaging
+No imaging studies were documented in the provided data.
+
+Assessment
+Primary Diagnosis: Pneumonia
+Secondary Diagnoses:
+1. Type 2 Diabetes Mellitus with diabetic nephropathy
+2. Essential Hypertension
+3. History of Ischemic Heart Disease
+4. History of Renal Transplant
+5. Chronic Kidney Disease
+6. Acute Respiratory Distress Syndrome (per EHR record)
+7. Sepsis caused by virus (per EHR record)
+8. Acute Deep Venous Thrombosis (per EHR record)
+9. Heart Failure (per EHR record)
+
+Hospital Course
+The patient presented with symptoms consistent with pneumonia, including productive cough, dyspnea, and fever. The electronic health record indicates a complex course involving acute respiratory failure, sepsis, and complications including deep venous thrombosis and heart failure. The patient was admitted for management of these conditions.
+
+Plan
+Medications Prescribed
+The following medications are listed as active in the record:
+1. Albuterol 5 MG/ML Inhalation Solution
+2. Enoxaparin sodium 150 MG/ML Prefilled Syringe
+3. Enoxaparin sodium 100 MG/ML Prefilled Syringe
+4. Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+5. Acetaminophen 500 MG Oral Tablet
+6. Tacrolimus 1 MG Extended Release Oral Tablet
+7. Tacrolimus 5 MG/ML Injection
+8. Naproxen sodium 220 MG Oral Tablet
+9. Sodium fluoride 0.0272 MG/MG Oral Gel
+10. Hydrochlorothiazide 25 MG Oral Tablet
+11. Amlodipine 2.5 MG Oral Tablet
+12. Simvastatin 20 MG Oral Tablet
+13. Metoprolol succinate 100 MG Extended Release Oral Tablet
+14. Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+
+Discharge Instructions
+No specific discharge instructions were documented in the provided data.
+
+Follow-up Instructions
+The patient was advised to follow up with the physician for further evaluation and management of his respiratory symptoms and underlying conditions.

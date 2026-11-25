@@ -1,0 +1,82 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0062
+Detected Disease: Pneumonia
+Generated: 2026-11-19 05:24:55
+Time: 5.34s
+Tokens: 19,151 in / 1,888 out
+============================================================
+
+Patient Information
+Name: Abel Cummerata
+Date of Birth: 1917-03-25
+Sex: Male
+Address: 982 Jenkins Drive Apt 39, East Longmeadow, Massachusetts 00000
+Patient ID: 334
+Encounter Date: 2020-11-22
+
+Chief Complaint
+The patient presented with a three-day history of cough and shortness of breath that began approximately one day prior to the visit.
+
+History of Present Illness
+The patient is a male who presented to the clinic complaining of a cough and significant shortness of breath. The cough began approximately three days prior to the visit and is described as a wet, hacking cough. The patient reports producing yellowish-green sputum, with each episode yielding an amount roughly the size of a thumb tip. The patient denies any blood in the sputum, pus, or froth. Shortness of breath developed within the last day, following the onset of the cough. The patient rates the severity of the dyspnea as 7 out of 10. The patient reports that the combination of cough and shortness of breath has been interrupting sleep. The symptoms are present throughout the day and night and have been progressively worsening over the last few days. The patient denies specific environmental triggers such as pollen or pets. The patient reports associated symptoms of fatigue, weakness, and mild muscle aches. The patient denies dizziness, fainting, confusion, memory loss, chest pain, palpitations, or changes in bowel movements. The patient reports mild abdominal aching. The patient denies sore throat, loss of taste, runny nose, or nasal congestion. The patient reports a loss of smell, noting an inability to detect the scent of a candle earlier in the day. The patient denies changes in vision, hearing, eye or ear discharge, or urinary symptoms. The patient reports a subjective feeling of being hot, though no objective fever was confirmed in the transcript. The patient denies night sweats, chills, or recent weight loss.
+
+Epidemiological history is notable for a visit to a long-term care facility to see the patient's mother approximately one week prior to the visit. The patient acknowledges that there have been reported outbreaks of COVID-19 at the facility, although the patient believes they avoided close contact with affected areas. The patient denies recent travel history.
+
+Review of Systems
+Constitutional: Positive for fatigue, weakness, mild muscle aches, and subjective feeling of heat. Negative for fever (objective), night sweats, chills, and weight loss.
+Respiratory: Positive for wet hacking cough, yellowish-green sputum, shortness of breath (7/10), wheezing during episodes of severe shortness of breath, and loss of smell. Negative for hemoptysis, sputum with pus or froth, and nasal congestion.
+Cardiovascular: Negative for chest pain, palpitations, or racing heart.
+Gastrointestinal: Positive for mild abdominal aching. Negative for diarrhea, constipation, or blood in stool.
+Neurological: Negative for dizziness, fainting, confusion, or memory loss.
+Other: Negative for sore throat, loss of taste, vision changes, hearing changes, eye or ear discharge, and urinary symptoms.
+
+Allergies
+The patient reports a sulfa allergy, characterized by a rash following antibiotic administration many years ago. The patient denies recent exposure to sulfonamides.
+
+Past Medical History
+The patient has a history of atrial fibrillation diagnosed approximately four years prior to the visit. The patient reports that his heart rate has been stable at approximately 80 beats per minute with no recent symptoms. The patient also reports a history of essential hypertension, chronic kidney disease (progressing to stage 4 and end-stage renal disease with a history of renal transplant and awaiting transplantation), type 2 diabetes mellitus with associated microalbuminuria and proteinuria, metabolic syndrome X, prediabetes, osteoarthritis of the knee, and a history of myocardial infarction (acute non-ST segment elevation). The patient also has a history of anemia, chronic sinusitis, and recurrent gingivitis and dental caries.
+
+Surgical History
+The patient underwent an inguinal hernia repair approximately 15 years prior to the visit with no reported complications.
+
+Social History
+The patient lives in a house with his wife. The patient is a former smoker, having quit approximately five years ago after a diagnosis of atrial fibrillation. The patient denies current tobacco use. The patient uses CBD edibles (lowest dose, approximately 2.5 mg) a couple of times per week to aid sleep. The patient denies use of marijuana smoking, other recreational drugs, or alcohol. The patient reports that he stopped drinking alcohol a few years ago. The patient is up to date on immunizations, including the zoster and pneumonia vaccines.
+
+Family History
+The patient reports that an aunt had lung cancer, which was associated with a lifetime history of smoking. The patient denies family history of other cancers, heart conditions, or lung conditions.
+
+Current Medications
+Home medications reported by the patient include Metoprolol for atrial fibrillation, a statin, and baby aspirin. The patient notes taking aspirin for cardiovascular prevention related to atrial fibrillation. The physician noted a plan to review medication doses at the end of the session.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 71.00 bpm
+Temperature: Not available
+Respiratory Rate: 15.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 172.20 cm
+BMI: 28.16
+
+Physical Exam
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+The following laboratory results were available from the electronic health record, though specific dates relative to the current encounter were not explicitly linked in the narrative:
+Complete Blood Count: Hematocrit 43.34%, Erythrocytes 4.24 x 10^6/uL, MCH 31.39 pg, RDW 14.58%, Neutrophils 13.66%, Monocytes 9.46%, Basophils 3.05%, Basophils count 0.25 x 10^3/uL, Monocytes count 0.54 x 10^3/uL.
+Metabolic Panel: Potassium 4.04 mmol/L, Calcium 9.75 mg/dL, Urea Nitrogen 17.88 mg/dL, Total CO2 24.89 mmol/L, Bicarbonate (Arterial) 24.31 mmol/L, pCO2 (Arterial) 41.94 mmHg.
+Other: Ferritin 1853.29 ug/L, Protein 5.59 g/dL, AST 15.30 U/L, PT 11.90 s.
+
+Imaging
+No imaging studies were documented in the provided data.
+
+Assessment
+The patient presents with a three-day history of productive cough and one-day history of dyspnea, accompanied by fatigue, weakness, and loss of smell. Given the recent exposure to a long-term care facility with known COVID-19 outbreaks, the primary working diagnosis is suspected upper respiratory viral illness, including COVID-19. The differential diagnosis includes other viral illnesses prevalent in the current season. The physician noted that if symptoms do not improve or if there is suspicion of a secondary bacterial infection or bacterial pneumonia, further treatment may be required. The electronic health record contains a list of severe complications including pneumonia, hypoxemia, respiratory distress, acute respiratory failure, sepsis, septic shock, and heart failure, which appear to be associated with a subsequent or concurrent severe clinical course not fully detailed in the initial outpatient transcript.
+
+Plan
+1. Diagnostic Testing: A nasal swab was obtained for PCR testing to evaluate for COVID-19. Results are expected within one to two days.
+2. Isolation: The patient was advised to isolate for 14 days, or until symptoms resolve, whichever is longer, to prevent potential transmission. This includes isolation from his wife.
+3. Follow-up: If the PCR test is positive, results will be sent to public health for contact tracing. If symptoms do not improve on their own, the patient will follow up to evaluate for possible bacterial infection or pneumonia, at which point antibiotics may be prescribed.
+4. Medication Review: The physician planned to review the patient's current medications, specifically Metoprolol, statin, and aspirin, to ensure correct dosages.
+5. Sleep Aid Discussion: The physician suggested discussing alternative options for sleep aids, such as melatonin or prescription sleep aids, to replace the patient's current use of CBD edibles.

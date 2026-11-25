@@ -1,0 +1,125 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0016
+Detected Disease: Carpal Tunnel Syndrome
+Generated: 2026-11-19 05:24:55
+Time: 5.48s
+Tokens: 14,765 in / 2,036 out
+============================================================
+
+Patient Information
+Name: Abe Huels
+Date of Birth: 1961-09-02
+Sex: Male
+Patient ID: 275
+Address: 294 Yundt Well Suite 80, Stoughton, Massachusetts 00000
+Encounter Date: 2024-04-20
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with a four-to-five-month history of progressive numbness, tingling, and burning pain in the left hand.
+
+History of Present Illness
+The patient is a male who reports the onset of numbness, tingling, and a burning sensation in his left hand approximately four to five months ago. Initially, the symptoms were intermittent, lasting only a few minutes, and were relieved by flicking the wrist. Over the past few weeks, the frequency and severity of the symptoms have increased. The patient now experiences these symptoms at night, which has woken him up two to three times per night over the last couple of weeks. The pain is described as burning in quality, with a maximum intensity of 6 out of 10 on a numeric scale. The symptoms are localized to the lateral aspect of the left hand, specifically affecting the thumb, index finger, and the radial half of the ring finger. The patient reports no muscle weakness but notes increased clumsiness in the left hand, including difficulty opening jars and car doors and dropping objects. Over-the-counter analgesics, including ibuprofen and acetaminophen, have provided minimal relief. The patient denies the use of cold compresses or topical creams. The physician performed a physical examination which revealed a positive Tinel's sign and a positive Phalen's sign, consistent with a diagnosis of carpal tunnel syndrome. The physician explained that the condition is likely related to compression of the median nerve, potentially exacerbated by repetitive movements at work and obesity.
+
+Review of Systems
+Constitutional: The patient denies fever, chills, or weight loss.
+Respiratory: The patient denies cough, wheezing, or shortness of breath.
+Cardiovascular: The patient denies chest pain or heart palpitations.
+Gastrointestinal: The patient denies nausea, vomiting, diarrhea, constipation, or blood in stool.
+Genitourinary: The patient denies changes in voiding or urinary problems.
+Neurological: The patient denies confusion, memory loss, or headaches.
+Musculoskeletal: The patient reports clumsiness and difficulty with fine motor tasks in the left hand but denies joint pain or swelling.
+Other: The patient denies rashes, changes in vision, hearing, smell, or taste.
+
+Allergies
+The patient reports no known drug allergies.
+
+Past Medical History
+The patient has a history of hypothyroidism, for which he takes levothyroxine. He also has a history of obesity, class I. The electronic health record lists a complex history including obstructive sleep apnea, essential hypertension, chronic kidney disease progressing to end-stage renal disease with a history of renal transplant, ischemic heart disease with a history of coronary artery bypass grafting, metabolic syndrome, prediabetes, chronic sinusitis, and anemia. However, the patient's current self-report focuses on hypothyroidism and obesity. The patient notes that he has not had a recent workup for blood pressure, diabetes, or cholesterol, suggesting a need for updated screening.
+
+Surgical History
+The patient denies any prior hospitalizations or surgeries in the current interview. The electronic health record indicates a history of coronary artery bypass grafting and renal transplant.
+
+Social History
+The patient is a smoker, consuming 5 to 10 cigarettes per day for the past 10 years. He has attempted to quit but cites social factors at his workplace as a barrier. He consumes alcohol occasionally, approximately one drink per week. He denies the use of marijuana or other recreational drugs. The patient lives with his husband and two daughters in a house. He reports being monogamous for over 10 years with no concerns for sexually transmitted infections. He is up to date with immunizations, including annual flu shots.
+
+Family History
+The patient's grandfather had a stroke in his 70s. His father has high cholesterol. There is a family history of osteoarthritis. The patient denies a family history of autoimmune conditions, noting that he is the only family member with thyroid issues. There is no family history of cancer.
+
+Current Medications
+Based on the electronic health record, the patient is currently prescribed the following medications:
+Simvastatin 10 mg oral tablet
+Tacrolimus 1 mg extended release oral tablet (24 HR)
+Tacrolimus 5 mg/mL injection
+Naproxen sodium 220 mg oral tablet
+Epoetin alfa 4000 units/mL injection
+Ferrous sulfate 325 mg oral tablet
+Sodium fluoride 0.0272 mg/mg oral gel
+Insulin isophane, human 70 units/mL / insulin, regular, human 30 units/mL injectable suspension
+Hydrochlorothiazide 25 mg oral tablet
+Lisinopril 10 mg oral tablet
+Amlodipine 2.5 mg oral tablet
+Clopidogrel 75 mg oral tablet
+Simvastatin 20 mg oral tablet
+Metoprolol succinate 100 mg extended release oral tablet (24 HR)
+Nitroglycerin 0.4 mg/actuation mucosal spray
+The patient also reports taking Synthroid (levothyroxine) for hypothyroidism.
+
+Objective
+Vital Signs
+Blood Pressure: Not recorded
+Heart Rate: 76.00 bpm
+Temperature: Not recorded
+Respiratory Rate: 14.00 breaths/min
+SpO2: Not recorded
+Weight: Not recorded
+Height: 175.00 cm
+BMI: 27.53
+
+Physical Examination
+The physician performed a focused examination of the left upper extremity. There was no erythema, swelling, or warmth noted in the left arm, hand, or wrist. There was mild atrophy of the thenar eminence (thumb muscle bulk). Palpation of the shoulder, acromion process, scapula, biceps, elbows, and wrists (medial and lateral) was non-tender. Range of motion for the shoulder, elbow, and wrist was full and painless. Special tests for carpal tunnel syndrome were performed:
+Tinel's Sign: Positive. Percussion over the carpal tunnel elicited tingling and an electric shock sensation in the hand.
+Phalen's Sign: Positive. Sustained wrist flexion for 60 seconds reproduced numbness and tingling in the affected fingers.
+
+Labs
+Recent laboratory results from the electronic health record include:
+Carbon dioxide, total: 21.53 mmol/L
+Potassium: 4.56 mmol/L
+Calcium: 8.74 mg/dL
+Urea nitrogen: 7.88 mg/dL
+Chloride: 101.71 mmol/L
+Sodium: 142.59 mmol/L
+Creatinine: 1 mg/dL
+Glucose: 94.3 mg/dL
+Bilirubin (urine): Negative
+Calcium (additional): 9.96 mg/dL
+Platelet mean volume: 11.62 fL
+Urea Nitrogen (additional): 15 mg/dL
+Platelets: 283.85 x 10^3/uL
+MCHC: 35.92 g/dL
+MCV: 89.06 fL
+Leukocyte esterase (urine): Negative
+Hemoglobin: 16.47 g/dL
+Patient Health Questionnaire 2 item (PHQ-2) total score: 2
+Generalized anxiety disorder 7 item (GAD-7) total score: 4
+Total score [HARK]: 0
+
+Imaging
+No imaging studies were performed or reported during this encounter.
+
+Assessment
+Primary Diagnosis: Carpal Tunnel Syndrome (Left Hand)
+The patient presents with classic symptoms of carpal tunnel syndrome, including paresthesias in the median nerve distribution (thumb, index, and radial half of ring finger), nocturnal symptoms, and positive provocative tests (Tinel's and Phalen's signs). The condition is likely exacerbated by repetitive work activities and obesity.
+Secondary Diagnoses:
+Hypothyroidism
+Obesity (Class I)
+The patient's extensive past medical history, including renal transplant, ischemic heart disease, and hypertension, requires ongoing management and monitoring.
+
+Plan
+1. Diagnosis: Carpal Tunnel Syndrome. No imaging is required at this time; diagnosis is clinical.
+2. Work Modification: The patient is advised to take frequent breaks and avoid repetitive wrist movements at work.
+3. Home Care: Apply cold packs to the wrist for symptom relief.
+4. Splinting: A wrist splint is recommended for use during sleep to alleviate nighttime symptoms.
+5. Medications: Continue current NSAIDs for pain relief. If symptoms persist, corticosteroid injections may be considered.
+6. Follow-up: The patient should follow up if symptoms do not improve or if weakness develops. Surgical consultation may be discussed if conservative measures fail.
+7. General Health: The patient is encouraged to continue efforts toward weight loss and smoking cessation. Resources for smoking cessation are available. The patient should ensure up-to-date screenings for blood pressure, diabetes, and cholesterol.

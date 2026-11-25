@@ -1,0 +1,76 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0027
+Detected Disease: Acute Bronchitis
+Generated: 2026-11-19 05:24:55
+Time: 2.86s
+Tokens: 7,563 in / 1,071 out
+============================================================
+
+Patient Information
+Name: Abbey Eliza Schmitt
+Date of Birth: 1965-09-27
+Sex: Female
+Patient ID: 103
+Address: 291 Franecki Union, Hudson, Massachusetts 01749
+
+Chief Complaint
+The patient presents with a three-day history of a persistent, dry cough that is interfering with sleep, accompanied by a new onset of feeling hot, fatigue, and mild body aches.
+
+History of Present Illness
+The patient is a female who reports a three-day history of a dry, non-productive cough. She denies hemoptysis or sputum production. The cough has been progressive in severity over the last three days and is constant throughout the day, significantly disrupting her sleep. The patient reports feeling hot today, suggestive of a fever, though she has not taken a temperature. She also reports mild fatigue, which she attributes to sleep deprivation, as well as mild muscle and body aches. She experienced mild chills and night sweats last night. She denies chest pain, shortness of breath, wheezing, palpitations, syncope, or dizziness. She denies sore throat, rhinorrhea, nasal congestion, or otalgia. She denies gastrointestinal symptoms such as nausea, vomiting, or diarrhea. She denies urinary symptoms or skin rashes. Her appetite is preserved, though eating is difficult due to the frequency of coughing. She has tried over-the-counter cough syrup without relief. She inquires if she may have contracted COVID-19.
+
+Review of Systems
+Constitutional: Positive for fatigue, mild body aches, chills, and night sweats. Negative for weight loss.
+Respiratory: Positive for dry cough. Negative for shortness of breath, wheezing, chest pain, or hemoptysis.
+Cardiovascular: Negative for chest pain, palpitations, or syncope.
+Gastrointestinal: Negative for nausea, vomiting, diarrhea, or abdominal pain.
+Genitourinary: Negative for dysuria or frequency.
+Neurological: Negative for headache (patient reports possible mild headache secondary to coughing strain), dizziness, or loss of taste or smell.
+Musculoskeletal: Positive for mild muscle aches.
+Skin: Negative for rashes or changes.
+Allergic/Immunologic: No known drug allergies.
+
+Past Medical History
+The patient reports a history of hypothyroidism. Her last TSH was checked six months ago and was within normal limits. The electronic health record lists additional historical diagnoses including essential hypertension, chronic low back pain, chronic neck pain, osteoarthritis of the knee, chronic congestive heart failure, chronic kidney disease stage 2, and disorder of kidney due to diabetes mellitus. However, the patient’s current verbal history focuses on hypothyroidism.
+
+Surgical History
+The patient reports a history of an appendectomy performed during her teenage years, with no complications.
+
+Social History
+The patient lives with her husband and two teenage children in a townhouse. She works from home in online marketing. She denies tobacco use. She reports drinking alcohol approximately two to three times per week, typically a glass of wine with dinner. She reports occasional marijuana use but denies regular use or other recreational drug use. Her husband has been ill for the past two days with vomiting and feeling hot; he has refused medical evaluation. The patient’s children are healthy.
+
+Family History
+The patient’s sister, who is 15 years older, recently suffered a heart attack. The patient’s parents are deceased from old age and were reported to be healthy. There is no family history of cancer.
+
+Current Medications
+The patient reports taking Synthroid for hypothyroidism and a daily multivitamin. The electronic health record lists several other medications including Furosemide, Naproxen sodium, and amlodipine, but the patient’s verbal report for current daily use is limited to Synthroid and a multivitamin.
+
+Allergies
+No known drug allergies.
+
+Objective
+Vital Signs
+Heart Rate: 98.00 bpm
+Respiration Rate: 15.00 breaths/min
+Height: 162.80 cm
+BMI: 30.06
+Blood Pressure, Temperature, SpO2, and Weight: No information available.
+
+Physical Examination
+No information available.
+
+Labs
+No information available.
+
+Imaging
+No information available.
+
+Assessment
+The patient presents with acute respiratory symptoms consistent with acute bronchitis or a viral upper respiratory infection. The differential diagnosis includes viral illness, bacterial infection, and SARS-CoV-2 infection (COVID-19), particularly given the sick contact (husband) and symptoms of cough, fever, and fatigue.
+
+Plan
+1. Order blood work for baseline evaluation.
+2. Order a PCR nasal swab to test for SARS-CoV-2.
+3. Order a chest X-ray to evaluate for pneumonia or other pulmonary pathology.
+4. Await results of the above investigations to determine further management.
+5. Follow up with the patient once results are available.

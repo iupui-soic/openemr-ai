@@ -1,0 +1,175 @@
+Ratings: 717 of 239 notes; anchor re-ratings: 45
+
+== Ratings by model: mean (SD) over ratings; composite is the mean of the six dimension means
+        model  n_ratings    accuracy completeness organization conciseness clinical_utility overall_quality  composite  composite_no_org
+  qwen3.8-27b        120 2.85 (0.83)  4.22 (0.46)  4.88 (0.33) 3.28 (0.68)      3.67 (0.80)     3.54 (0.68)       3.74              3.51
+ gpt-oss-120b        120 2.70 (0.90)  4.14 (0.57)  5.00 (0.00) 3.64 (0.99)      3.54 (0.88)     3.44 (0.86)       3.74              3.49
+  gpt-oss-20b        120 2.62 (0.92)  3.92 (0.64)  5.00 (0.00) 3.92 (0.78)      3.47 (0.85)     3.35 (0.86)       3.71              3.46
+    qwen3-32b        120 2.50 (0.90)  3.83 (0.62)  4.94 (0.27) 3.70 (0.71)      3.42 (0.91)     3.29 (0.90)       3.61              3.35
+  medgemma-4b        117 2.41 (0.79)  3.02 (0.68)  3.98 (1.02) 3.39 (1.21)      2.66 (0.81)     2.55 (0.90)       3.00              2.81
+llama-4-scout        120 2.10 (0.59)  3.11 (0.46)  3.67 (0.92) 3.21 (0.73)      2.58 (0.57)     2.52 (0.53)       2.86              2.70
+grand means: {'accuracy': 2.53, 'completeness': 3.71, 'organization': 4.58, 'conciseness': 3.52, 'clinical_utility': 3.22, 'overall_quality': 3.12}
+
+== Anchors: the same rater scoring the same note in both rounds (45 pairs)
+accuracy          shift +0.00 (Wilcoxon P=1.00); exact 100%, within 1 point 100%, weighted kappa 1.00
+completeness      shift -0.09 (Wilcoxon P=.05); exact 91%, within 1 point 100%, weighted kappa 0.92
+organization      shift +0.00 (Wilcoxon P=1.00); exact 100%, within 1 point 100%, weighted kappa 1.00
+conciseness       shift +0.00 (Wilcoxon P=1.00); exact 100%, within 1 point 100%, weighted kappa 1.00
+clinical_utility  shift +0.00 (Wilcoxon P=1.00); exact 100%, within 1 point 100%, weighted kappa 1.00
+overall_quality   shift +0.00 (Wilcoxon P=1.00); exact 100%, within 1 point 100%, weighted kappa 1.00
+composite         shift -0.01 (P=.07); Spearman 0.99; Pearson 1.00
+   rater_1: composite shift +0.00 (P=1.00); by dimension accur +0.00, compl +0.00, organ +0.00, conci +0.00, clini +0.00, overa +0.00
+   rater_2: composite shift -0.04 (P=.07); by dimension accur +0.00, compl -0.27, organ +0.00, conci +0.00, clini +0.00, overa +0.00
+   rater_3: composite shift +0.00 (P=1.00); by dimension accur +0.00, compl +0.00, organ +0.00, conci +0.00, clini +0.00, overa +0.00
+
+== Friedman over six models on rater-averaged scores (39 complete conversation blocks)
+accuracy          chi2=51.2 P=<.001 W=0.26 (95% CI 0.20 to 0.37) | means qwen3.8-27b 2.85, gpt-oss-120b 2.70, gpt-oss-20b 2.62, qwen3-32b 2.50, medgemma-4b 2.41, llama-4-scout 2.10
+completeness      chi2=149.6 P=<.001 W=0.77 (95% CI 0.73 to 0.82) | means qwen3.8-27b 4.22, gpt-oss-120b 4.14, gpt-oss-20b 3.92, qwen3-32b 3.83, medgemma-4b 3.02, llama-4-scout 3.11
+organization      chi2=172.5 P=<.001 W=0.88 (95% CI 0.85 to 0.92) | means qwen3.8-27b 4.88, gpt-oss-120b 5.00, gpt-oss-20b 5.00, qwen3-32b 4.94, medgemma-4b 3.98, llama-4-scout 3.67
+conciseness       chi2=62.9 P=<.001 W=0.32 (95% CI 0.25 to 0.43) | means qwen3.8-27b 3.28, gpt-oss-120b 3.64, gpt-oss-20b 3.92, qwen3-32b 3.70, medgemma-4b 3.39, llama-4-scout 3.21
+clinical_utility  chi2=101.2 P=<.001 W=0.52 (95% CI 0.43 to 0.63) | means qwen3.8-27b 3.67, gpt-oss-120b 3.54, gpt-oss-20b 3.47, qwen3-32b 3.42, medgemma-4b 2.66, llama-4-scout 2.58
+overall_quality   chi2=98.8 P=<.001 W=0.51 (95% CI 0.43 to 0.61) | means qwen3.8-27b 3.54, gpt-oss-120b 3.44, gpt-oss-20b 3.35, qwen3-32b 3.29, medgemma-4b 2.55, llama-4-scout 2.52
+composite         chi2=120.0 P=<.001 W=0.62 (95% CI 0.57 to 0.68) | means qwen3.8-27b 3.74, gpt-oss-120b 3.74, gpt-oss-20b 3.71, qwen3-32b 3.61, medgemma-4b 3.00, llama-4-scout 2.86
+minimal detectable W at 80% power, 39 blocks, 6 models: alpha .05 -> 0.066; alpha .05/6 -> 0.094
+
+== Pairwise Wilcoxon signed-rank tests (Bonferroni over 90 tests on the six dimensions)
+accuracy: qwen3.8-27b vs gpt-oss-120b +0.15 P=.08 adj=1.00; qwen3.8-27b vs gpt-oss-20b +0.23 P=.03 adj=1.00; qwen3.8-27b vs qwen3-32b +0.35 P=.01 adj=1.00; qwen3.8-27b vs medgemma-4b +0.44 P=<.001 adj=.02; qwen3.8-27b vs llama-4-scout +0.75 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.09 P=.15 adj=1.00; gpt-oss-120b vs qwen3-32b +0.21 P=.02 adj=1.00; gpt-oss-120b vs medgemma-4b +0.30 P=.005 adj=.49; gpt-oss-120b vs llama-4-scout +0.61 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.12 P=.24 adj=1.00; gpt-oss-20b vs medgemma-4b +0.21 P=.06 adj=1.00; gpt-oss-20b vs llama-4-scout +0.52 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.09 P=.32 adj=1.00; qwen3-32b vs llama-4-scout +0.40 P=<.001 adj=.03; medgemma-4b vs llama-4-scout +0.31 P=.001 adj=.10
+completeness: qwen3.8-27b vs gpt-oss-120b +0.09 P=.70 adj=1.00; qwen3.8-27b vs gpt-oss-20b +0.31 P=.002 adj=.15; qwen3.8-27b vs qwen3-32b +0.39 P=<.001 adj=.03; qwen3.8-27b vs medgemma-4b +1.21 P=<.001 adj=<.001; qwen3.8-27b vs llama-4-scout +1.11 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.22 P=<.001 adj=.05; gpt-oss-120b vs qwen3-32b +0.31 P=<.001 adj=.004; gpt-oss-120b vs medgemma-4b +1.12 P=<.001 adj=<.001; gpt-oss-120b vs llama-4-scout +1.03 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.09 P=.26 adj=1.00; gpt-oss-20b vs medgemma-4b +0.90 P=<.001 adj=<.001; gpt-oss-20b vs llama-4-scout +0.80 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.81 P=<.001 adj=<.001; qwen3-32b vs llama-4-scout +0.72 P=<.001 adj=<.001; medgemma-4b vs llama-4-scout -0.09 P=.31 adj=1.00
+organization: qwen3.8-27b vs gpt-oss-120b -0.13 P=<.001 adj=.010; qwen3.8-27b vs gpt-oss-20b -0.13 P=<.001 adj=.010; qwen3.8-27b vs qwen3-32b -0.07 P=.03 adj=1.00; qwen3.8-27b vs medgemma-4b +0.89 P=<.001 adj=<.001; qwen3.8-27b vs llama-4-scout +1.21 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.00 P=1.00 adj=1.00; gpt-oss-120b vs qwen3-32b +0.06 P=.06 adj=1.00; gpt-oss-120b vs medgemma-4b +1.02 P=<.001 adj=<.001; gpt-oss-120b vs llama-4-scout +1.34 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.06 P=.06 adj=1.00; gpt-oss-20b vs medgemma-4b +1.02 P=<.001 adj=<.001; gpt-oss-20b vs llama-4-scout +1.34 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.96 P=<.001 adj=<.001; qwen3-32b vs llama-4-scout +1.28 P=<.001 adj=<.001; medgemma-4b vs llama-4-scout +0.32 P=.02 adj=1.00
+conciseness: qwen3.8-27b vs gpt-oss-120b -0.33 P=<.001 adj=.01; qwen3.8-27b vs gpt-oss-20b -0.62 P=<.001 adj=<.001; qwen3.8-27b vs qwen3-32b -0.40 P=<.001 adj=<.001; qwen3.8-27b vs medgemma-4b -0.09 P=.15 adj=1.00; qwen3.8-27b vs llama-4-scout +0.10 P=.52 adj=1.00; gpt-oss-120b vs gpt-oss-20b -0.28 P=<.001 adj=.04; gpt-oss-120b vs qwen3-32b -0.07 P=.77 adj=1.00; gpt-oss-120b vs medgemma-4b +0.24 P=.50 adj=1.00; gpt-oss-120b vs llama-4-scout +0.44 P=<.001 adj=.006; gpt-oss-20b vs qwen3-32b +0.21 P=.003 adj=.25; gpt-oss-20b vs medgemma-4b +0.52 P=.005 adj=.46; gpt-oss-20b vs llama-4-scout +0.72 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.31 P=.49 adj=1.00; qwen3-32b vs llama-4-scout +0.50 P=<.001 adj=.003; medgemma-4b vs llama-4-scout +0.20 P=.11 adj=1.00
+clinical_utility: qwen3.8-27b vs gpt-oss-120b +0.13 P=.13 adj=1.00; qwen3.8-27b vs gpt-oss-20b +0.21 P=.03 adj=1.00; qwen3.8-27b vs qwen3-32b +0.26 P=.03 adj=1.00; qwen3.8-27b vs medgemma-4b +1.02 P=<.001 adj=<.001; qwen3.8-27b vs llama-4-scout +1.09 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.08 P=.25 adj=1.00; gpt-oss-120b vs qwen3-32b +0.13 P=.09 adj=1.00; gpt-oss-120b vs medgemma-4b +0.89 P=<.001 adj=<.001; gpt-oss-120b vs llama-4-scout +0.97 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.05 P=.58 adj=1.00; gpt-oss-20b vs medgemma-4b +0.81 P=<.001 adj=<.001; gpt-oss-20b vs llama-4-scout +0.89 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.76 P=<.001 adj=<.001; qwen3-32b vs llama-4-scout +0.84 P=<.001 adj=<.001; medgemma-4b vs llama-4-scout +0.08 P=.58 adj=1.00
+overall_quality: qwen3.8-27b vs gpt-oss-120b +0.10 P=.12 adj=1.00; qwen3.8-27b vs gpt-oss-20b +0.20 P=.03 adj=1.00; qwen3.8-27b vs qwen3-32b +0.26 P=.01 adj=.98; qwen3.8-27b vs medgemma-4b +1.00 P=<.001 adj=<.001; qwen3.8-27b vs llama-4-scout +1.03 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.09 P=.27 adj=1.00; gpt-oss-120b vs qwen3-32b +0.15 P=.04 adj=1.00; gpt-oss-120b vs medgemma-4b +0.90 P=<.001 adj=<.001; gpt-oss-120b vs llama-4-scout +0.93 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.06 P=.42 adj=1.00; gpt-oss-20b vs medgemma-4b +0.80 P=<.001 adj=<.001; gpt-oss-20b vs llama-4-scout +0.84 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.74 P=<.001 adj=<.001; qwen3-32b vs llama-4-scout +0.78 P=<.001 adj=<.001; medgemma-4b vs llama-4-scout +0.03 P=.51 adj=1.00
+composite: qwen3.8-27b vs gpt-oss-120b +0.00 P=.63 adj=1.00; qwen3.8-27b vs gpt-oss-20b +0.03 P=.27 adj=1.00; qwen3.8-27b vs qwen3-32b +0.13 P=.07 adj=1.00; qwen3.8-27b vs medgemma-4b +0.74 P=<.001 adj=<.001; qwen3.8-27b vs llama-4-scout +0.88 P=<.001 adj=<.001; gpt-oss-120b vs gpt-oss-20b +0.03 P=.43 adj=1.00; gpt-oss-120b vs qwen3-32b +0.13 P=.03 adj=1.00; gpt-oss-120b vs medgemma-4b +0.74 P=<.001 adj=<.001; gpt-oss-120b vs llama-4-scout +0.88 P=<.001 adj=<.001; gpt-oss-20b vs qwen3-32b +0.10 P=.16 adj=1.00; gpt-oss-20b vs medgemma-4b +0.71 P=<.001 adj=<.001; gpt-oss-20b vs llama-4-scout +0.85 P=<.001 adj=<.001; qwen3-32b vs medgemma-4b +0.61 P=<.001 adj=<.001; qwen3-32b vs llama-4-scout +0.75 P=<.001 adj=<.001; medgemma-4b vs llama-4-scout +0.14 P=.03 adj=1.00
+
+== Cumulative link mixed models: model, rater and round fixed; conversation random. Anchor re-ratings included so that round is estimable
+                                    0                    1              2                    3                    4                    5
+dimension                    accuracy         completeness   organization          conciseness     clinical_utility      overall_quality
+n                                 762                  762            762                  762                  762                  762
+lr_model                         78.3                457.7          483.4                 47.4                238.3                227.4
+p_model                         <.001                <.001          <.001                <.001                <.001                <.001
+or_round2                         0.9                 0.59           0.54                 1.04                 0.78                 0.74
+round_ci                 0.49 to 1.66         0.28 to 1.21   0.15 to 1.93         0.56 to 1.93         0.42 to 1.44         0.39 to 1.38
+p_round                           .75                  .15            .36                  .89                  .42                  .34
+conv_sd                          0.91                 0.96            0.6                 0.45                 1.07                 1.04
+converged                        True                 True           True                 True                 True                 True
+or_qwen3.8-27b    2.01 (0.97 to 4.19)  2.56 (1.08 to 6.11)  not estimable  0.27 (0.13 to 0.57)  2.07 (0.99 to 4.34)  2.11 (1.00 to 4.47)
+or_gpt-oss-20b    0.87 (0.54 to 1.41)  0.39 (0.23 to 0.69)  not estimable  2.30 (1.43 to 3.70)  0.84 (0.52 to 1.35)  0.83 (0.52 to 1.35)
+or_qwen3-32b      0.65 (0.40 to 1.04)  0.27 (0.15 to 0.47)  not estimable  1.08 (0.68 to 1.72)  0.83 (0.52 to 1.33)  0.76 (0.47 to 1.23)
+or_medgemma-4b    0.50 (0.31 to 0.81)  0.01 (0.00 to 0.02)  not estimable  0.77 (0.47 to 1.26)  0.09 (0.05 to 0.15)  0.09 (0.05 to 0.15)
+or_llama-4-scout  0.24 (0.12 to 0.51)  0.02 (0.01 to 0.05)  not estimable  0.21 (0.10 to 0.45)  0.10 (0.05 to 0.21)  0.11 (0.05 to 0.24)
+
+== Agreement: Gwet AC2 (ordinal weights) and Krippendorff alpha (ordinal), with pairwise exact agreement
+round one, 159 notes     accuracy          AC2=0.71 alpha=0.10 (0.01 to 0.20) | 1v2 exact 23% within1 81% qwk 0.17; 1v3 exact 27% within1 91% qwk 0.26; 2v3 exact 35% within1 74% qwk 0.13
+round one, 159 notes     completeness      AC2=0.87 alpha=0.42 (0.33 to 0.52) | 1v2 exact 47% within1 94% qwk 0.43; 1v3 exact 63% within1 99% qwk 0.62; 2v3 exact 42% within1 94% qwk 0.39
+round one, 159 notes     organization      AC2=0.97 alpha=0.54 (0.39 to 0.66) | 1v2 exact 79% within1 96% qwk 0.66; 1v3 exact 86% within1 99% qwk 0.82; 2v3 exact 83% within1 100% qwk 0.78
+round one, 159 notes     conciseness       AC2=0.66 alpha=-0.12 (-0.23 to 0.01) | 1v2 exact 5% within1 43% qwk 0.18; 1v3 exact 18% within1 94% qwk 0.36; 2v3 exact 38% within1 93% qwk 0.49
+round one, 159 notes     clinical_utility  AC2=0.76 alpha=0.36 (0.25 to 0.46) | 1v2 exact 26% within1 87% qwk 0.46; 1v3 exact 50% within1 97% qwk 0.53; 2v3 exact 35% within1 77% qwk 0.26
+round one, 159 notes     overall_quality   AC2=0.77 alpha=0.38 (0.27 to 0.49) | 1v2 exact 28% within1 83% qwk 0.43; 1v3 exact 60% within1 99% qwk 0.61; 2v3 exact 34% within1 76% qwk 0.28
+round two, 80 notes      accuracy          AC2=0.72 alpha=0.47 (0.32 to 0.57) | 1v2 exact 39% within1 90% qwk 0.43; 1v3 exact 54% within1 96% qwk 0.51; 2v3 exact 50% within1 95% qwk 0.45
+round two, 80 notes      completeness      AC2=0.82 alpha=0.63 (0.53 to 0.70) | 1v2 exact 39% within1 100% qwk 0.46; 1v3 exact 51% within1 100% qwk 0.66; 2v3 exact 72% within1 100% qwk 0.57
+round two, 80 notes      organization      AC2=0.80 alpha=0.37 (0.23 to 0.48) | 1v2 exact 50% within1 68% qwk 0.23; 1v3 exact 57% within1 99% qwk 0.76; 2v3 exact 36% within1 84% qwk 0.22
+round two, 80 notes      conciseness       AC2=0.83 alpha=0.17 (0.05 to 0.27) | 1v2 exact 59% within1 96% qwk 0.36; 1v3 exact 34% within1 98% qwk 0.37; 2v3 exact 21% within1 88% qwk 0.17
+round two, 80 notes      clinical_utility  AC2=0.86 alpha=0.67 (0.55 to 0.74) | 1v2 exact 48% within1 94% qwk 0.60; 1v3 exact 52% within1 96% qwk 0.67; 2v3 exact 66% within1 99% qwk 0.67
+round two, 80 notes      overall_quality   AC2=0.83 alpha=0.67 (0.55 to 0.76) | 1v2 exact 61% within1 95% qwk 0.60; 1v3 exact 64% within1 98% qwk 0.68; 2v3 exact 68% within1 100% qwk 0.71
+both rounds, 239 notes   accuracy          AC2=0.75 alpha=0.22 (0.14 to 0.30) | 1v2 exact 28% within1 84% qwk 0.26; 1v3 exact 36% within1 93% qwk 0.32; 2v3 exact 40% within1 81% qwk 0.17
+both rounds, 239 notes   completeness      AC2=0.88 alpha=0.49 (0.42 to 0.55) | 1v2 exact 44% within1 96% qwk 0.44; 1v3 exact 59% within1 99% qwk 0.63; 2v3 exact 52% within1 96% qwk 0.43
+both rounds, 239 notes   organization      AC2=0.93 alpha=0.51 (0.42 to 0.61) | 1v2 exact 69% within1 86% qwk 0.44; 1v3 exact 77% within1 99% qwk 0.82; 2v3 exact 67% within1 95% qwk 0.51
+both rounds, 239 notes   conciseness       AC2=0.71 alpha=0.04 (-0.05 to 0.13) | 1v2 exact 23% within1 61% qwk 0.14; 1v3 exact 23% within1 95% qwk 0.25; 2v3 exact 33% within1 91% qwk 0.50
+both rounds, 239 notes   clinical_utility  AC2=0.79 alpha=0.48 (0.39 to 0.55) | 1v2 exact 33% within1 90% qwk 0.51; 1v3 exact 51% within1 97% qwk 0.59; 2v3 exact 46% within1 84% qwk 0.35
+both rounds, 239 notes   overall_quality   AC2=0.81 alpha=0.48 (0.40 to 0.56) | 1v2 exact 39% within1 87% qwk 0.47; 1v3 exact 62% within1 98% qwk 0.63; 2v3 exact 45% within1 84% qwk 0.37
+
+== Mean score by rater and model, with within-rater Friedman test over six models
+accuracy          rater_1 3.33 2.98 3.10 2.95 2.67 2.17  P=<.001
+accuracy          rater_2 2.48 3.02 2.70 2.38 2.44 1.93  P=<.001
+accuracy          rater_3 2.75 2.10 2.08 2.17 2.13 2.20  P=<.001
+completeness      rater_1 4.70 4.15 3.95 3.90 2.87 3.00  P=<.001
+completeness      rater_2 3.98 4.45 4.15 3.95 3.41 3.40  P=<.001
+completeness      rater_3 4.00 3.83 3.67 3.62 2.77 2.92  P=<.001
+organization      rater_1 4.95 5.00 5.00 4.92 3.51 2.98  P=<.001
+organization      rater_2 5.00 5.00 5.00 4.97 4.46 4.65  P=<.001
+organization      rater_3 4.67 5.00 5.00 4.92 3.97 3.38  P=<.001
+conciseness       rater_1 3.45 2.60 3.05 3.00 2.74 3.25  P=<.001
+conciseness       rater_2 3.70 4.70 4.78 4.28 3.90 3.60  P=<.001
+conciseness       rater_3 2.70 3.62 3.92 3.83 3.54 2.77  P=<.001
+clinical_utility  rater_1 4.03 3.67 3.70 3.67 2.64 2.48  P=<.001
+clinical_utility  rater_2 3.40 3.95 3.67 3.25 2.62 2.67  P=<.001
+clinical_utility  rater_3 3.58 3.00 3.02 3.33 2.72 2.60  P=<.001
+overall_quality   rater_1 3.73 3.42 3.45 3.48 2.51 2.40  P=<.001
+overall_quality   rater_2 3.35 3.90 3.58 3.25 2.51 2.60  P=<.001
+overall_quality   rater_3 3.55 3.00 3.02 3.15 2.62 2.55  P=<.001
+
+== Score distribution by rater, round two notes (80 per rater)
+accuracy rater_1 [2, 34, 26, 18, 0] 2.75 (0.83)
+accuracy rater_2 [18, 32, 26, 4, 0] 2.20 (0.85)
+accuracy rater_3 [4, 36, 38, 2, 0] 2.48 (0.64)
+completeness rater_1 [0, 2, 37, 12, 29] 3.85 (0.96)
+completeness rater_2 [0, 0, 25, 55, 0] 3.69 (0.47)
+completeness rater_3 [0, 5, 33, 42, 0] 3.46 (0.62)
+organization rater_1 [1, 8, 22, 11, 38] 3.96 (1.13)
+organization rater_2 [0, 0, 0, 14, 66] 4.83 (0.38)
+organization rater_3 [0, 0, 25, 28, 27] 4.03 (0.81)
+conciseness rater_1 [1, 6, 38, 34, 1] 3.35 (0.70)
+conciseness rater_2 [0, 0, 29, 50, 1] 3.65 (0.51)
+conciseness rater_3 [0, 26, 49, 5, 0] 2.74 (0.57)
+clinical_utility rater_1 [1, 24, 21, 22, 12] 3.25 (1.08)
+clinical_utility rater_2 [0, 21, 35, 24, 0] 3.04 (0.75)
+clinical_utility rater_3 [1, 17, 36, 26, 0] 3.09 (0.77)
+overall_quality rater_1 [1, 26, 20, 33, 0] 3.06 (0.89)
+overall_quality rater_2 [0, 23, 36, 21, 0] 2.98 (0.75)
+overall_quality rater_3 [1, 18, 37, 24, 0] 3.05 (0.76)
+
+== Automated metrics by model, mean (SD), and Friedman test over six models (39 blocks)
+bleu                       0.025 (0.009) 0.011 (0.005) 0.009 (0.006) 0.015 (0.007) 0.011 (0.012) 0.014 (0.010) | chi2=83.6 P=<.001 W=0.43, pairs significant 10/15, highest qwen3.8-27b
+rouge_l                    0.143 (0.020) 0.115 (0.012) 0.118 (0.015) 0.129 (0.018) 0.145 (0.045) 0.147 (0.024) | chi2=105.2 P=<.001 W=0.54, pairs significant 10/15, highest llama-4-scout
+bert_f1                    0.803 (0.006) 0.799 (0.007) 0.799 (0.007) 0.802 (0.008) 0.801 (0.013) 0.807 (0.007) | chi2=39.9 P=<.001 W=0.20, pairs significant 6/15, highest llama-4-scout
+sbert_similarity           0.504 (0.071) 0.511 (0.086) 0.529 (0.088) 0.491 (0.120) 0.506 (0.082) 0.534 (0.077) | chi2=11.6 P=.04 W=0.06, pairs significant 1/15, highest llama-4-scout
+medcat_entity_recall       0.489 (0.051) 0.429 (0.056) 0.396 (0.060) 0.404 (0.057) 0.306 (0.085) 0.359 (0.062) | chi2=124.0 P=<.001 W=0.64, pairs significant 13/15, highest qwen3.8-27b
+medcat_entity_precision    0.262 (0.049) 0.192 (0.040) 0.228 (0.045) 0.260 (0.057) 0.404 (0.099) 0.366 (0.074) | chi2=157.5 P=<.001 W=0.81, pairs significant 13/15, highest medgemma-4b
+medcat_entity_f1           0.339 (0.047) 0.262 (0.042) 0.287 (0.045) 0.313 (0.053) 0.343 (0.083) 0.359 (0.056) | chi2=100.5 P=<.001 W=0.52, pairs significant 11/15, highest llama-4-scout
+scispacy_entity_recall     0.480 (0.060) 0.404 (0.043) 0.373 (0.054) 0.391 (0.063) 0.300 (0.082) 0.360 (0.063) | chi2=102.9 P=<.001 W=0.53, pairs significant 11/15, highest qwen3.8-27b
+scispacy_entity_precision  0.322 (0.064) 0.227 (0.048) 0.280 (0.060) 0.317 (0.082) 0.490 (0.117) 0.449 (0.085) | chi2=155.4 P=<.001 W=0.80, pairs significant 13/15, highest medgemma-4b
+scispacy_entity_f1         0.382 (0.058) 0.287 (0.042) 0.317 (0.051) 0.346 (0.069) 0.367 (0.087) 0.396 (0.062) | chi2=92.7 P=<.001 W=0.48, pairs significant 11/15, highest llama-4-scout
+summary_words              927.025 (143.070) 1005.100 (162.305) 756.350 (122.273) 831.475 (128.155) 564.795 (393.987) 529.250 (81.727) | chi2=118.8 P=<.001 W=0.61, pairs significant 11/15, highest gpt-oss-120b
+
+== LLaMA-4-Scout against each other model: metric difference (Wilcoxon P, uncorrected)
+bert_f1                    vs qwen3.8-27b +0.005 P=<.001; vs gpt-oss-120b +0.008 P=<.001; vs gpt-oss-20b +0.009 P=<.001; vs qwen3-32b +0.005 P=<.001; vs medgemma-4b +0.006 P=.005
+sbert_similarity           vs qwen3.8-27b +0.031 P=.002; vs gpt-oss-120b +0.024 P=.004; vs gpt-oss-20b +0.005 P=.57; vs qwen3-32b +0.043 P=.02; vs medgemma-4b +0.026 P=.05
+rouge_l                    vs qwen3.8-27b +0.005 P=.12; vs gpt-oss-120b +0.033 P=<.001; vs gpt-oss-20b +0.030 P=<.001; vs qwen3-32b +0.019 P=<.001; vs medgemma-4b +0.003 P=.56
+medcat_entity_recall       vs qwen3.8-27b -0.128 P=<.001; vs gpt-oss-120b -0.070 P=<.001; vs gpt-oss-20b -0.034 P=.001; vs qwen3-32b -0.047 P=<.001; vs medgemma-4b +0.054 P=<.001
+medcat_entity_precision    vs qwen3.8-27b +0.103 P=<.001; vs gpt-oss-120b +0.173 P=<.001; vs gpt-oss-20b +0.139 P=<.001; vs qwen3-32b +0.106 P=<.001; vs medgemma-4b -0.038 P=.02
+medcat_entity_f1           vs qwen3.8-27b +0.020 P=.04; vs gpt-oss-120b +0.096 P=<.001; vs gpt-oss-20b +0.075 P=<.001; vs qwen3-32b +0.045 P=<.001; vs medgemma-4b +0.016 P=.29
+scispacy_entity_recall     vs qwen3.8-27b -0.117 P=<.001; vs gpt-oss-120b -0.042 P=<.001; vs gpt-oss-20b -0.009 P=.22; vs qwen3-32b -0.032 P=.009; vs medgemma-4b +0.061 P=<.001
+
+== Model level: rank of each model (1 = highest) on metrics and on physician ratings
+model                      qwen3.8-27b  gpt-oss-120b  gpt-oss-20b  qwen3-32b  medgemma-4b  llama-4-scout
+bleu                                 1             4            6          2            5              3
+rouge_l                              3             6            5          4            2              1
+bert_f1                              2             5            6          3            4              1
+sbert_similarity                     5             3            2          6            4              1
+medcat_entity_recall                 1             2            4          3            6              5
+medcat_entity_precision              3             6            5          4            1              2
+medcat_entity_f1                     3             6            5          4            2              1
+scispacy_entity_recall               1             2            4          3            6              5
+scispacy_entity_precision            3             6            5          4            1              2
+scispacy_entity_f1                   2             6            5          4            3              1
+summary_words                        2             1            4          3            5              6
+accuracy                             1             2            3          4            5              6
+completeness                         1             2            3          4            6              5
+organization                         4             1            1          3            5              6
+conciseness                          5             3            1          2            4              6
+clinical_utility                     1             2            3          4            5              6
+overall_quality                      1             2            3          4            5              6
+composite                            2             1            3          4            5              6
+
+Spearman across the six model means (exact permutation P for n=6 not reported; descriptive):
+bleu                       accura +0.26, comple +0.37, organi -0.32, concis -0.49, clinic +0.26, overal +0.26, compos +0.09
+rouge_l                    accura -0.66, comple -0.60, organi -0.99, concis -0.77, clinic -0.66, overal -0.66, compos -0.83
+bert_f1                    accura -0.31, comple -0.14, organi -0.81, concis -0.83, clinic -0.31, overal -0.31, compos -0.49
+sbert_similarity           accura -0.37, comple -0.20, organi -0.12, concis -0.20, clinic -0.37, overal -0.37, compos -0.26
+medcat_entity_recall       accura +0.89, comple +0.94, organi +0.49, concis +0.09, clinic +0.89, overal +0.89, compos +0.83
+medcat_entity_precision    accura -0.60, comple -0.66, organi -0.93, concis -0.66, clinic -0.60, overal -0.60, compos -0.77
+medcat_entity_f1           accura -0.66, comple -0.60, organi -0.99, concis -0.77, clinic -0.66, overal -0.66, compos -0.83
+scispacy_entity_recall     accura +0.89, comple +0.94, organi +0.49, concis +0.09, clinic +0.89, overal +0.89, compos +0.83
+scispacy_entity_precision  accura -0.60, comple -0.66, organi -0.93, concis -0.66, clinic -0.60, overal -0.60, compos -0.77
+scispacy_entity_f1         accura -0.43, comple -0.31, organi -0.93, concis -0.83, clinic -0.43, overal -0.43, compos -0.66
+summary_words              accura +0.89, comple +0.83, organi +0.70, concis +0.31, clinic +0.89, overal +0.89, compos +0.94

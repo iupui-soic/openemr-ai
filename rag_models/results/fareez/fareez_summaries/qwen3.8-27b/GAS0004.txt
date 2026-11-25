@@ -1,0 +1,102 @@
+Model: qwen/qwen3.8-27b
+Patient: GAS0004
+Detected Disease: Acute Diarrhea
+Generated: 2026-11-19 05:24:55
+Time: 4.27s
+Tokens: 14,859 in / 1,501 out
+============================================================
+
+Patient Information
+Name: Alane Ling Muller
+Date of Birth: 1920-09-24
+Sex: Female
+Patient ID: 2871
+Address: 1056 Reichert Spur Suite 87, Chelsea, Massachusetts 02151
+
+Chief Complaint
+The patient presents with a three to four-day history of acute diarrhea.
+
+History of Present Illness
+The patient is a student who reports experiencing severe diarrhea for the past three to four days. The episodes are frequent, occurring approximately every hour, and consist of loose stools. The patient states that the condition has been significant enough to cause her to skip classes due to embarrassment. She denies any prior history of similar episodes. The stool is brown in color, and the patient denies visible blood in the stool, though she admits to not inspecting it closely. Abdominal pain was not present at the onset but developed yesterday as intermittent cramping that comes and goes. The patient retains some voluntary control over defecation, noting that she receives a warning before needing to use the toilet, but must do so quickly.
+
+Associated symptoms include nausea and vomiting. The patient vomited twice yesterday; the emesis was watery and without blood. Nausea is described as intermittent. The patient has been drinking large amounts of water to prevent dehydration but has not taken any over-the-counter medications. Her oral intake has decreased, particularly since the onset of abdominal cramps yesterday, as she lacks appetite. She denies any specific food triggers other than a recent meal.
+
+Timeline and Potential Triggers
+Approximately five days prior to the onset of symptoms, the patient dined at a new Chinese restaurant where she consumed rice with chicken Manchurian. She was accompanied by a friend, but the patient has not confirmed whether the friend experienced similar symptoms. The patient denies recent travel, contact with sick individuals, or changes in routine. She reports feeling generally tired but has not monitored her temperature for fever or chills. She denies rash, skin changes, or urinary symptoms.
+
+Review of Systems
+Constitutional: The patient reports feeling tired. She denies fever or chills, though she has not checked her temperature. She denies recent weight changes.
+Gastrointestinal: Positive for diarrhea, abdominal cramping, nausea, and vomiting. Negative for hematochezia, melena, hematemesis, or changes in stool color.
+Other: The patient denies respiratory, cardiovascular, or genitourinary symptoms.
+
+Past Medical History
+According to the electronic health record, the patient has a complex medical history including essential hypertension, prediabetes, anemia, chronic kidney disease (progressing through stages 1 to 4), disorder of kidney due to diabetes mellitus, microalbuminuria, proteinuria, malignant neoplasm of breast, malignant tumor of colon, chronic intractable migraine without aura, chronic pain, gingival disease, gingivitis, impacted molars, acute bronchitis, acute viral pharyngitis, ischemic heart disease, and a history of renal transplant. The record also notes past issues with stress, social isolation, and reports of violence in the environment. Note: The current transcript indicates the patient is a student with asthma, which conflicts with the extensive chronic disease history in the EHR; per instructions, the transcript is prioritized for current status, but the EHR history is documented here for completeness.
+
+Surgical History
+The patient reports a history of wisdom teeth removal. The electronic health record additionally documents a history of renal transplant.
+
+Social History
+The patient is a student living with two roommates. She denies tobacco use. She reports occasional alcohol consumption, approximately one or two drinks on weekends. She denies recreational drug use. Her typical diet consists of oatmeal for breakfast, a quick lunch such as a salad, and eating out for dinner, often burgers or fries.
+
+Family History
+The patient reports that her brother had appendicitis in the past. Her mother has a history of hysterectomy. No other significant family history of digestive or abdominal problems was reported.
+
+Allergies
+The patient denies any known allergies.
+
+Current Medications
+The patient reports using inhalers ("puffers") prescribed by her family doctor for asthma. The electronic health record lists several active medications including tacrolimus, simvastatin, metoprolol succinate, and nitroglycerin, as well as historical medications for cancer and pain management.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 95.00 bpm
+Respiration Rate: 15.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 155.70 cm
+BMI: 27.72
+
+Physical Examination
+No physical examination findings were documented in the provided transcript or extract.
+
+Labs
+The following laboratory results are available from the electronic health record:
+Hemoglobin: 15.71 g/dL
+Leukocytes: 3.96 x 10^3/uL
+Chloride: 108.13 mmol/L
+Sodium: 143.42 mmol/L
+Glucose: 92.2 mg/dL
+Creatinine: 0.68 mg/dL
+Platelet Distribution Width: 310.95 fL
+Erythrocyte Distribution Width: 44.82 fL
+MCH: 31.35 pg
+Hematocrit: 39.30 %
+Erythrocytes: 4.29 x 10^6/uL
+Carbon Dioxide: 22.42 mmol/L
+Urine Specific Gravity: 1.019
+Urine pH: 4.86
+Urine Nitrite: Negative
+Urine Ketones: Negative
+Urine Glucose: Negative
+Urine Hemoglobin: Negative
+Urine Protein: Negative
+
+Imaging
+No imaging studies were documented in the provided data.
+
+Assessment
+Primary Diagnosis: Acute Diarrhea
+The patient presents with acute onset diarrhea, nausea, vomiting, and abdominal cramping. The temporal relationship between the consumption of food at a new restaurant five days prior and the onset of symptoms suggests a possible foodborne illness or infectious gastroenteritis. The absence of blood in stool and the acute nature of the symptoms support this assessment.
+
+Secondary Diagnoses:
+1. Asthma (per patient report)
+2. Dehydration risk (due to frequent diarrhea and vomiting)
+
+Plan
+1. Hydration: Continue aggressive oral fluid replacement to prevent dehydration.
+2. Dietary Modification: Recommend a bland diet (e.g., BRAT diet) until symptoms resolve.
+3. Monitoring: Monitor for signs of worsening dehydration, persistent vomiting, or development of fever or bloody stools.
+4. Follow-up: If symptoms do not improve within 24-48 hours or if red flag symptoms develop, the patient should return for further evaluation, which may include stool studies.
+5. Medications: No new medications were prescribed in the transcript. The patient is advised to continue her current asthma management plan.

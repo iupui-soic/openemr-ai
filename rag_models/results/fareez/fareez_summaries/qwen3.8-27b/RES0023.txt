@@ -1,0 +1,88 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0023
+Detected Disease: Acute Bronchitis
+Generated: 2026-11-19 05:24:55
+Time: 4.99s
+Tokens: 17,500 in / 1,433 out
+============================================================
+
+Patient Information
+Patient Name: Aaron Feeney
+Date of Birth: 1915-12-05
+Sex: Male
+Encounter Date: 2024-09-08
+Encounter Type: Urgent Care / Emergency Department Visit
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient presented to the emergency department with a five-day history of a worsening dry cough, associated with subjective fever, fatigue, and sore throat.
+
+History of Present Illness
+The patient is a male presenting with a five-day history of cough that has progressively worsened in severity. The cough is described as dry, with no production of sputum or phlegm. The symptoms are consistent throughout the day and have begun to interrupt the patient's sleep. The patient reports associated symptoms of feeling "pretty hot," which he interprets as a fever, along with significant exhaustion and general malaise. He also reports a sore throat that has developed in conjunction with the cough. Additionally, the patient noted a change in his sense of smell starting this morning, describing it as "off," while his sense of taste remains intact. He denies nausea, vomiting, chills, or rigors. He reports one episode of night sweats last night, noting his shirt was soaked through upon waking. The patient has no recent travel history. He works at a grocery store and acknowledges potential exposure to sick individuals in that environment, though he notes frequent sanitization of surfaces. He lives with his wife and two children, who are currently at home; his children are in high school and have been doing online coursework, limiting their external exposure. The patient has a history of similar symptoms in the past, which he attributes to the flu.
+
+Review of Systems
+Constitutional: Positive for fatigue, subjective fever, and night sweats (one episode). Negative for chills, rigors, or unintentional weight loss. The patient reports gaining 5 to 10 pounds recently.
+Respiratory: Positive for dry cough and sore throat. Negative for chest pain (initially reported chest discomfort after coughing, but clarified as throat pain). Negative for shortness of breath or wheezing.
+Cardiovascular: Negative for chest pain, palpitations, or edema.
+Gastrointestinal: Negative for nausea, vomiting, diarrhea, or abdominal pain.
+Neurological: Positive for altered sense of smell. Negative for headache, dizziness, or confusion.
+Other: Negative for urinary symptoms.
+
+Allergies
+The patient reports environmental allergies to pollen. He denies any known drug allergies.
+
+Past Medical History
+The patient has a history of essential hypertension and type 2 diabetes mellitus. His medical record also documents a complex history including obesity (BMI 31.53), hyperlipidemia, metabolic syndrome, and chronic kidney disease progressing to end-stage renal disease, for which he has a history of renal transplant and is currently awaiting transplantation. Additional historical diagnoses include ischemic heart disease, history of coronary artery bypass grafting, atrial fibrillation, osteoporosis, and prostate neoplasm. He has a history of acute bronchitis.
+
+Surgical History
+The patient reports a cholecystectomy approximately 10 years ago. His medical record also indicates a history of coronary artery bypass grafting and renal transplant.
+
+Social History
+The patient works full-time at a grocery store. He lives with his wife and two children. He denies tobacco use. He denies recreational drug use. He reports consuming 3 to 4 beers per week, typically on weekends.
+
+Family History
+The patient reports that his brother and his mother have a history of asthma.
+
+Current Medications
+The patient reports taking Ramipril and Metformin for his hypertension and diabetes, respectively. He also takes Vitamin D. Note: The electronic health record lists numerous other medications including Warfarin, Lisinopril, Amlodipine, Alendronic acid, Insulin, Verapamil, Digoxin, Hydrochlorothiazide, Tacrolimus, Nitroglycerin, Simvastatin, and Epoetin Alfa. However, the patient only confirmed Ramipril, Metformin, and Vitamin D during the interview.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 88.00 bpm
+Respiratory Rate: 13.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 166.30 cm
+BMI: 31.53
+
+Physical Examination
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+The following laboratory results are on file, though specific dates relative to the current encounter are not explicitly linked in the extract:
+Sodium: 143.88 mmol/L
+Potassium: 4.74 mmol/L
+Chloride: 103.76 mmol/L
+Carbon Dioxide, Total: 25.72 mmol/L
+Creatinine: 0.39 mg/dL
+Glucose: 70.64 mg/dL and 85.8 mg/dL
+Urea Nitrogen: 17.26 mg/dL
+Calcium: 9.98 mg/dL
+Aspartate Aminotransferase (AST): 36.76 U/L
+Alkaline Phosphatase: 79.54 U/L
+Globulin: 2.91 g/L
+Urine Protein: 280.13 mg/dL
+
+Imaging
+No imaging studies were performed or documented during this encounter.
+
+Assessment
+The patient presents with a five-day history of worsening dry cough, sore throat, subjective fever, fatigue, and altered sense of smell. The clinical picture is suggestive of an acute viral respiratory infection. Given the current epidemiological context and the presence of anosmia (altered smell), SARS-CoV-2 infection is a primary concern. The patient also has a background of significant comorbidities, including end-stage renal disease and cardiovascular disease, which may impact his risk profile.
+
+Plan
+1. Diagnostic Testing: A nasopharyngeal swab for SARS-CoV-2 was ordered and performed during the visit.
+2. Isolation Precautions: The patient and his household members (wife and two children) are instructed to self-isolate for 14 days pending the results of the viral swab.
+3. Follow-up: The patient will be notified of the test results shortly. He should seek further medical attention if symptoms worsen, particularly if he develops shortness of breath, persistent high fever, or chest pain.
+4. Medications: The patient was advised to continue his home medications. No new prescriptions were written during this encounter.

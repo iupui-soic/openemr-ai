@@ -1,0 +1,83 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0194
+Detected Disease: Upper Respiratory Infection
+Generated: 2026-11-19 05:24:55
+Time: 3.67s
+Tokens: 7,925 in / 1,329 out
+============================================================
+
+Patient Information
+Patient Name: Abbey Shala Kunde
+Date of Birth: 1986-03-02
+Sex: Female
+Address: 774 Gleichner Harbor, Boston, Massachusetts 02109
+Encounter Date: 2024-08-04
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient presents with a three-day history of dry cough, generalized body aches, and frontal headaches. The patient expressed concern regarding the possibility of SARS-CoV-2 infection given the current public health situation.
+
+History of Present Illness
+The patient is a 38-year-old female who reports the onset of a dry, non-productive cough three days prior to the visit. The cough was the initial symptom, followed by the development of generalized myalgias and headaches. The patient describes the headache as a bilateral frontal pressure, characterized as a band-like squeezing sensation around the forehead. The headache has been intermittent over the last two days. The patient denies producing sputum or hemoptysis. She reports feeling feverish over the last couple of days but has not measured her temperature. She denies chills, rigors, or night sweats.
+
+Associated symptoms include loose stools (diarrhea) for the past day, without blood or significant changes in color. The patient reports a decreased appetite but denies nausea, vomiting, or weight loss. She denies sore throat, runny nose, chest pain, shortness of breath, or loss of taste or smell. There is no recent history of strenuous exercise, lifting, or injury that would explain the myalgias. The patient denies recent travel or known contact with ill individuals at home. She works for a pharmacy company and has been working from home for the last couple of days due to symptoms. She notes that while she has not observed sick colleagues, others have been entering the office, and the workplace utilizes masks and cleaning protocols.
+
+The patient has taken acetaminophen and ibuprofen for pain relief, which provided temporary alleviation of the headache, though symptoms recur as the medication wears off. She has not taken any specific treatment for the cough.
+
+Review of Systems
+Constitutional: Positive for subjective fever, generalized body aches, and decreased appetite. Negative for chills, night sweats, or significant fatigue.
+Respiratory: Positive for dry cough. Negative for shortness of breath, chest pain, sputum production, or hemoptysis.
+Cardiovascular: Negative for chest pain, palpitations, or edema.
+Gastrointestinal: Positive for diarrhea (loose stools) for one day. Negative for nausea, vomiting, constipation, or blood in stool.
+Neurological: Positive for bilateral frontal pressure headache. Negative for dizziness, weakness, or numbness.
+Other: Negative for loss of taste or smell. Negative for urinary symptoms.
+
+Allergies
+The patient reports an allergy to peanuts and carries an EpiPen for this indication. She denies any known drug allergies.
+
+Past Medical History
+The patient states she has generally been healthy. The electronic health record lists a history of recurrent urinary tract infections, essential hypertension, obesity (BMI 30+), and a past history of miscarriage. The record also notes a history of viral sinusitis and acute bronchitis. The patient denies any current chronic medical conditions during the interview.
+
+Surgical History
+The patient reports a history of ACL repair and knee surgery approximately ten years ago. The electronic health record also lists a history of rib fracture and bone fracture in 2015.
+
+Social History
+The patient is employed full-time in the pharmacy industry. She lives in a townhouse in the city with her wife, who is currently asymptomatic. The patient is a non-smoker. She denies use of recreational drugs, though she reports occasional use of CBD oils. She consumes alcohol socially, approximately 3 to 4 beers per week. She does not consume coffee.
+
+Family History
+The patient reports that her father had high blood pressure. Her grandfather passed away from lung cancer in his 80s; he was a lifelong smoker.
+
+Current Medications
+The patient reports taking a daily multivitamin and Vitamin D. The electronic health record lists several past medications including lisinopril, various hormonal contraceptives (Liletta, Jolivette, Errin, Etonogestrel implant), and antibiotics (Amoxicillin/Clavulanate), but the patient denies taking any prescription medications currently.
+
+Objective
+Vital Signs
+Blood Pressure: Not documented
+Heart Rate: 98.00 bpm
+Respiration Rate: 15.00 breaths/min
+Temperature: Not documented
+SpO2: Not documented
+Weight: Not documented
+Height: 167.70 cm
+BMI: 35.84
+
+Physical Exam
+No detailed physical examination findings were documented in the provided transcript or extract.
+
+Labs
+No laboratory results were obtained during this specific encounter. Previous records show normal CBC parameters and lipid panels from prior visits.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+1. Upper Respiratory Infection: The patient presents with a constellation of symptoms including dry cough, myalgias, headache, and subjective fever consistent with a viral upper respiratory infection.
+2. Rule Out SARS-CoV-2: Given the overlapping symptom profile and public health context, SARS-CoV-2 infection must be ruled out.
+3. Acute Diarrhea: Mild, self-limited diarrhea noted for one day, likely viral in etiology given the concurrent respiratory symptoms.
+
+Plan
+1. Diagnostic Testing: A nasopharyngeal swab for SARS-CoV-2 was performed today. Results are expected within 24 to 48 hours.
+2. Isolation Precautions: The patient is advised to isolate for two weeks or until symptoms have resolved and test results are received.
+3. Public Health Coordination: The patient will receive further instructions from public health authorities regarding the need for additional testing and clearance to return to work.
+4. Symptomatic Management: The patient was advised to rest, maintain adequate hydration, and allow the viral illness to take its course.
+5. Follow-up: The patient should follow up if symptoms worsen or if the SARS-CoV-2 test returns positive.

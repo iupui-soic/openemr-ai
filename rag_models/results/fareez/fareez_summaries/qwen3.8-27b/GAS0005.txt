@@ -1,0 +1,91 @@
+Model: qwen/qwen3.8-27b
+Patient: GAS0005
+Detected Disease: Gastroenteritis
+Generated: 2026-11-19 05:24:55
+Time: 4.91s
+Tokens: 17,587 in / 1,624 out
+============================================================
+
+Patient Information
+The patient is a 6-year-old male presenting for evaluation of acute gastrointestinal symptoms. The patient is accompanied by his father, who serves as the primary informant for the history. The patient resides with his mother, father, and two older siblings, a 7-year-old male and a 10-year-old female. The patient is currently attending school and has recently returned to the classroom. There are no known allergies to drugs, foods, or latex. The patient has no known chronic medical conditions, no prior hospitalizations, and no history of surgical procedures. Immunizations are reported to be up to date. The patient was born at 39 weeks gestation via normal vaginal delivery with a birth weight of approximately 3 kilograms. Apgar scores were normal, and there were no complications during pregnancy or delivery. The patient is meeting all developmental milestones, including gross and fine motor skills, and is performing well academically and socially.
+
+Chief Complaint
+The patient presents with a 3-day history of abdominal pain, accompanied by 2 days of vomiting and diarrhea, and 1 day of fever.
+
+History of Present Illness
+The patient is a previously healthy 6-year-old male who developed abdominal pain approximately 3 days prior to presentation. The pain is described by the parent as diffuse, located in the center of the abdomen, and is associated with irritability. Two days prior to presentation, the patient developed vomiting and diarrhea. The vomiting occurred a total of 6 times over the last 2 days. The initial emesis consisted of recently ingested food, while subsequent episodes consisted of yellowish material. The parent denies the presence of blood or bile (green material) in the vomit. The first episode of vomiting was triggered by eating lunch, but subsequent episodes were random. The diarrhea is described as very watery, with no blood or significant color changes, occurring approximately 6 to 7 times in the last 24 hours.
+
+One day prior to presentation, the patient developed a fever, with a home-measured temperature of 38.3 degrees Celsius. The fever was associated with chills, requiring the patient to be wrapped in multiple blankets. The patient’s behavior has changed significantly; while initially irritable due to pain, he has become quiet and lethargic, sleeping for most of the day. The parent reports no recent dietary changes, as the family has been consuming home-cooked meals. There is no history of travel. The patient recently returned to school, which may be a potential exposure source, although no other household members or known contacts are currently ill with similar symptoms. The parent inquired about the possibility of SARS-CoV-2 infection, noting the gastrointestinal presentation.
+
+Review of Systems
+Constitutional: Positive for fever (38.3 C), chills, lethargy, and irritability. Negative for weight loss.
+Respiratory: Negative for cough, shortness of breath, wheezing, or chest pain.
+Cardiovascular: Negative for palpitations or chest pain.
+Gastrointestinal: Positive for abdominal pain (central/diffuse), vomiting (6 episodes, yellowish, non-bilious, non-bloody), and diarrhea (watery, 6-7 episodes, non-bloody). Negative for nausea (not explicitly stated but implied by vomiting), hematemesis, or melena.
+Genitourinary: Negative for dysuria, frequency, or urgency.
+Neurological: Negative for headache, confusion, or seizures.
+Musculoskeletal: Negative for muscle aches or joint pains.
+Skin: Negative for rash or skin changes.
+Head, Eyes, Ears, Nose, Throat: Negative for sore throat, pain with swallowing, ear pain, eye pain, eye redness, runny nose, loss of taste, or loss of smell.
+
+Past Medical History
+The patient has no significant past medical history. He has no prior diagnoses of chronic conditions. He has no history of hospitalizations.
+
+Surgical History
+No surgical history is reported.
+
+Social History
+The patient lives with both parents and two older siblings. There is no tobacco, alcohol, or recreational drug use in the home. The patient is not exposed to secondhand smoke. There are no pets in the home. There are no concerns regarding safety, physical or verbal abuse, or environmental violence. The patient is active and social with peers.
+
+Family History
+The family history is notable for a 10-year-old sister who is currently being evaluated for asthma, though no diagnosis has been confirmed. There is no family history of heart disease, lung disease, congenital disorders, genetic diseases, celiac disease, or Crohn's disease.
+
+Current Medications
+The patient is not taking any regular medications.
+
+Objective
+Vital Signs
+Temperature: 38.3 degrees Celsius (reported by parent at home).
+Blood Pressure: Not documented in the provided data.
+Heart Rate: Not documented in the provided data.
+Respiratory Rate: Not documented in the provided data.
+SpO2: Not documented in the provided data.
+Weight: Not documented in the provided data.
+
+Physical Examination
+No detailed physical examination findings are documented in the provided transcript or electronic health record extract for this specific encounter. The physician noted the need to check hydration status and electrolytes due to fluid loss.
+
+Labs
+The physician indicated the intent to perform blood work to check electrolytes and a SARS-CoV-2 test. Specific laboratory results are not yet available in the provided data. Note: The electronic health record extract contains laboratory data for a different patient (Amina Cecil Blanda, DOB 1952) and is not applicable to this 6-year-old patient.
+
+Imaging
+No imaging studies have been ordered or performed for this encounter.
+
+Assessment
+Primary Diagnosis: Acute Gastroenteritis (Viral).
+The clinical presentation of acute onset abdominal pain, vomiting, watery diarrhea, and fever in a previously healthy 6-year-old is most consistent with acute viral gastroenteritis. The progression from pain to vomiting and diarrhea, followed by fever and lethargy, supports this diagnosis.
+
+Secondary Diagnoses:
+1. Dehydration: The patient has experienced significant fluid loss through vomiting (6 episodes) and diarrhea (6-7 episodes) over 48 hours, leading to lethargy and the need for electrolyte monitoring.
+2. Rule Out SARS-CoV-2 Infection: Given the potential for gastrointestinal manifestations of SARS-CoV-2 and the recent return to school, this etiology is being considered and will be tested.
+
+Hospital Course
+The patient presented to the clinic for evaluation of acute gastrointestinal symptoms. The history was taken, and the clinical picture suggests viral gastroenteritis with associated dehydration. The physician decided to order laboratory tests, including a SARS-CoV-2 test and a metabolic panel to assess electrolyte status and hydration.
+
+Plan
+1. Diagnostics:
+   - Perform SARS-CoV-2 testing to rule out viral etiology.
+   - Obtain blood work to check electrolytes and assess hydration status.
+
+2. Treatment:
+   - Increase oral hydration to address fluid losses.
+   - Monitor for signs of worsening dehydration or clinical deterioration.
+
+3. Discharge Instructions:
+   - Encourage frequent small sips of clear fluids or oral rehydration solution.
+   - Monitor the patient’s temperature and activity level.
+   - Return to the clinic or emergency department if the patient develops signs of severe dehydration (e.g., dry mouth, no tears, decreased urine output), persistent vomiting preventing fluid intake, blood in vomit or stool, or worsening lethargy.
+
+4. Follow-up:
+   - Follow up with test results to determine if further treatment is necessary.
+   - Contact the provider if symptoms do not improve or if they worsen.

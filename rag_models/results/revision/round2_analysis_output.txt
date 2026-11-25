@@ -1,0 +1,258 @@
+== Returned files
+rater_1: 95 rows, IDs belong to the packet of rater_1
+rater_2: 95 rows, IDs belong to the packet of rater_2
+rater_3: 95 rows, IDs belong to the packet of rater_3
+rater_1 vs rater_2: identical six-score rows 1/95
+rater_1 vs rater_3: identical six-score rows 2/95
+rater_2 vs rater_3: identical six-score rows 1/95
+
+Round one ratings 477, round two new-note ratings 240, anchor ratings 45
+
+== Anchors: the same rater scoring the same note in round one and round two (round two minus round one)
+all raters  n=45 composite -0.01 (P=.066) | accura +0.00 (exact 100%, P=1.000); comple -0.09 (exact 91%, P=.046); organi +0.00 (exact 100%, P=1.000); concis +0.00 (exact 100%, P=1.000); clinic +0.00 (exact 100%, P=1.000); overal +0.00 (exact 100%, P=1.000)
+rater_1     n=15 composite +0.00 (P=1.000) | accura +0.00 (exact 100%, P=1.000); comple +0.00 (exact 100%, P=1.000); organi +0.00 (exact 100%, P=1.000); concis +0.00 (exact 100%, P=1.000); clinic +0.00 (exact 100%, P=1.000); overal +0.00 (exact 100%, P=1.000)
+rater_2     n=15 composite -0.04 (P=.066) | accura +0.00 (exact 100%, P=1.000); comple -0.27 (exact 73%, P=.046); organi +0.00 (exact 100%, P=1.000); concis +0.00 (exact 100%, P=1.000); clinic +0.00 (exact 100%, P=1.000); overal +0.00 (exact 100%, P=1.000)
+rater_3     n=15 composite +0.00 (P=1.000) | accura +0.00 (exact 100%, P=1.000); comple +0.00 (exact 100%, P=1.000); organi +0.00 (exact 100%, P=1.000); concis +0.00 (exact 100%, P=1.000); clinic +0.00 (exact 100%, P=1.000); overal +0.00 (exact 100%, P=1.000)
+By round-one model (composite shift): {'gpt-oss-120b': -0.01, 'gpt-oss-20b': -0.03, 'medgemma-4b': -0.02, 'qwen3-32b': 0.0}
+
+== Agreement on the 80 new notes (and round one for reference)
+round two accuracy          AC2=0.721 alpha=0.467
+round two completeness      AC2=0.822 alpha=0.629
+round two organization      AC2=0.801 alpha=0.365
+round two conciseness       AC2=0.834 alpha=0.165
+round two clinical_utility  AC2=0.861 alpha=0.667
+round two overall_quality   AC2=0.825 alpha=0.668
+round one accuracy          AC2=0.708 alpha=0.104
+round one completeness      AC2=0.875 alpha=0.424
+round one organization      AC2=0.971 alpha=0.539
+round one conciseness       AC2=0.657 alpha=-0.117
+round one clinical_utility  AC2=0.758 alpha=0.365
+round one overall_quality   AC2=0.770 alpha=0.382
+
+== Mean rating by model (rater-averaged per note; round one models from round one)
+               accuracy  completeness  organization  conciseness  clinical_utility  overall_quality  composite
+model                                                                                                         
+gpt-oss-120b       2.70          4.14          5.00         3.64              3.54             3.44       3.74
+gpt-oss-20b        2.62          3.92          5.00         3.92              3.47             3.35       3.71
+qwen3-32b          2.50          3.82          4.94         3.70              3.42             3.29       3.61
+medgemma-4b        2.41          3.02          3.98         3.39              2.66             2.55       3.00
+qwen3.8-27b        2.85          4.22          4.88         3.28              3.67             3.54       3.74
+llama-4-scout      2.10          3.11          3.67         3.21              2.58             2.52       2.86
+
+== Paired Wilcoxon over conversations, rater-averaged (not corrected)
+llama-4-scout minus qwen3.8-27b: accura -0.75 P=<.001; comple -1.12 P=<.001; organi -1.21 P=<.001; concis -0.07 P=.686; clinic -1.08 P=<.001; overal -1.02 P=<.001; compos -0.88 P=<.001
+llama-4-scout minus medgemma-4b (cross-round): accura -0.31 P=.001; comple +0.09 P=.307; organi -0.32 P=.023; concis -0.20 P=.115; clinic -0.08 P=.585; overal -0.03 P=.505; compos -0.14 P=.033
+llama-4-scout minus gpt-oss-120b (cross-round): accura -0.60 P=<.001; comple -1.03 P=<.001; organi -1.33 P=<.001; concis -0.43 P=<.001; clinic -0.96 P=<.001; overal -0.93 P=<.001; compos -0.88 P=<.001
+qwen3.8-27b minus gpt-oss-120b (cross-round): accura +0.15 P=.077; comple +0.08 P=.705; organi -0.12 P=<.001; concis -0.36 P=<.001; clinic +0.12 P=.130; overal +0.10 P=.122; compos -0.00 P=.711
+qwen3.8-27b minus qwen3-32b (cross-round): accura +0.35 P=.011; comple +0.40 P=<.001; organi -0.07 P=.025; concis -0.42 P=<.001; clinic +0.25 P=.029; overal +0.25 P=.011; compos +0.13 P=.069
+
+Notes with metrics and ratings: 239
+
+== Model-level: mean metric and mean rating (six models)
+               bert_f1  sbert_similarity  rouge_l  medcat_entity_recall  medcat_entity_precision  medcat_entity_f1  summary_words  completeness  accuracy  conciseness  overall_quality  composite
+model                                                                                                                                                                                             
+gpt-oss-120b     0.799             0.511    0.115                 0.429                    0.192             0.262       1005.100         4.142     2.700        3.642            3.442      3.744
+gpt-oss-20b      0.799             0.529    0.118                 0.396                    0.228             0.287        756.350         3.925     2.625        3.917            3.350      3.714
+qwen3-32b        0.802             0.491    0.129                 0.404                    0.260             0.313        831.475         3.825     2.500        3.700            3.292      3.612
+medgemma-4b      0.801             0.506    0.145                 0.306                    0.404             0.343        564.795         3.017     2.410        3.393            2.547      3.001
+qwen3.8-27b      0.803             0.504    0.143                 0.489                    0.262             0.339        927.025         4.225     2.850        3.283            3.542      3.740
+llama-4-scout    0.807             0.534    0.147                 0.359                    0.366             0.359        529.250         3.108     2.100        3.208            2.517      2.864
+  rank correlation across 6 model means, bert_f1                 : comple -0.14, accura -0.31, concis -0.83, overal -0.31, compos -0.49
+  rank correlation across 6 model means, sbert_similarity        : comple -0.20, accura -0.37, concis -0.20, overal -0.37, compos -0.26
+  rank correlation across 6 model means, rouge_l                 : comple -0.60, accura -0.66, concis -0.77, overal -0.66, compos -0.83
+  rank correlation across 6 model means, medcat_entity_recall    : comple +0.94, accura +0.89, concis +0.09, overal +0.89, compos +0.83
+  rank correlation across 6 model means, medcat_entity_precision : comple -0.66, accura -0.60, concis -0.66, overal -0.60, compos -0.77
+  rank correlation across 6 model means, medcat_entity_f1        : comple -0.60, accura -0.66, concis -0.77, overal -0.66, compos -0.83
+  rank correlation across 6 model means, summary_words           : comple +0.83, accura +0.89, concis +0.31, overal +0.89, compos +0.94
+
+== Note-level Spearman (95% CI from conversation bootstrap), partial rho adjusts for note length
+         scope                  metric        dimension   n   rho  ci_lo  ci_hi  rho_within_conversation  partial_rho_len  p_ci_lo  p_ci_hi
+all six models                 rouge_l         accuracy 239  0.02  -0.15   0.20                    -0.05             0.12    -0.06     0.28
+all six models                 rouge_l     completeness 239 -0.15  -0.30  -0.00                    -0.26             0.06    -0.10     0.21
+all six models                 rouge_l      conciseness 239 -0.13  -0.25  -0.01                    -0.21            -0.25    -0.37    -0.13
+all six models                 rouge_l clinical_utility 239 -0.09  -0.25   0.10                    -0.20             0.04    -0.13     0.22
+all six models                 rouge_l  overall_quality 239 -0.08  -0.24   0.10                    -0.20             0.04    -0.13     0.21
+all six models                 rouge_l        composite 239 -0.15  -0.31   0.02                    -0.26            -0.03    -0.19     0.14
+all six models        sbert_similarity         accuracy 239  0.00  -0.17   0.17                     0.03             0.04    -0.13     0.21
+all six models        sbert_similarity     completeness 239  0.01  -0.12   0.13                    -0.08             0.13    -0.03     0.27
+all six models        sbert_similarity      conciseness 239  0.07  -0.07   0.21                     0.07             0.03    -0.11     0.17
+all six models        sbert_similarity clinical_utility 239  0.01  -0.13   0.15                    -0.05             0.07    -0.07     0.22
+all six models        sbert_similarity  overall_quality 239  0.03  -0.11   0.16                    -0.05             0.08    -0.06     0.22
+all six models        sbert_similarity        composite 239  0.01  -0.13   0.14                    -0.03             0.08    -0.07     0.22
+all six models                 bert_f1         accuracy 239  0.06  -0.09   0.21                    -0.07             0.11    -0.04     0.26
+all six models                 bert_f1     completeness 239 -0.08  -0.24   0.06                    -0.22             0.01    -0.16     0.17
+all six models                 bert_f1      conciseness 239 -0.07  -0.20   0.06                    -0.09            -0.12    -0.25     0.01
+all six models                 bert_f1 clinical_utility 239  0.01  -0.15   0.16                    -0.17             0.07    -0.10     0.23
+all six models                 bert_f1  overall_quality 239 -0.00  -0.16   0.15                    -0.17             0.06    -0.11     0.22
+all six models                 bert_f1        composite 239 -0.06  -0.22   0.10                    -0.21             0.00    -0.17     0.16
+all six models    medcat_entity_recall         accuracy 239  0.26   0.12   0.41                     0.39             0.17    -0.01     0.34
+all six models    medcat_entity_recall     completeness 239  0.54   0.43   0.65                     0.72             0.36     0.20     0.51
+all six models    medcat_entity_recall      conciseness 239 -0.20  -0.30  -0.09                    -0.16            -0.07    -0.18     0.04
+all six models    medcat_entity_recall clinical_utility 239  0.37   0.23   0.50                     0.51             0.23     0.05     0.41
+all six models    medcat_entity_recall  overall_quality 239  0.35   0.22   0.49                     0.51             0.22     0.04     0.40
+all six models    medcat_entity_recall        composite 239  0.36   0.24   0.49                     0.51             0.22     0.04     0.39
+all six models medcat_entity_precision         accuracy 239 -0.08  -0.22   0.05                    -0.25             0.10    -0.05     0.24
+all six models medcat_entity_precision     completeness 239 -0.44  -0.55  -0.35                    -0.63            -0.12    -0.29     0.04
+all six models medcat_entity_precision      conciseness 239 -0.01  -0.13   0.10                    -0.13            -0.25    -0.36    -0.14
+all six models medcat_entity_precision clinical_utility 239 -0.24  -0.37  -0.12                    -0.48            -0.02    -0.18     0.15
+all six models medcat_entity_precision  overall_quality 239 -0.23  -0.37  -0.12                    -0.49            -0.02    -0.17     0.13
+all six models medcat_entity_precision        composite 239 -0.32  -0.44  -0.21                    -0.53            -0.12    -0.27     0.02
+all six models        medcat_entity_f1         accuracy 239  0.04  -0.11   0.18                    -0.08             0.13    -0.01     0.28
+all six models        medcat_entity_f1     completeness 239 -0.16  -0.29  -0.04                    -0.31             0.05    -0.11     0.21
+all six models        medcat_entity_f1      conciseness 239 -0.09  -0.21   0.02                    -0.20            -0.21    -0.32    -0.10
+all six models        medcat_entity_f1 clinical_utility 239 -0.05  -0.20   0.09                    -0.25             0.08    -0.08     0.24
+all six models        medcat_entity_f1  overall_quality 239 -0.05  -0.20   0.09                    -0.26             0.08    -0.07     0.21
+all six models        medcat_entity_f1        composite 239 -0.13  -0.27   0.00                    -0.31             0.00    -0.15     0.14
+all six models  scispacy_entity_recall         accuracy 239  0.35   0.19   0.48                     0.45             0.27     0.10     0.42
+all six models  scispacy_entity_recall     completeness 239  0.54   0.43   0.65                     0.67             0.39     0.24     0.54
+all six models  scispacy_entity_recall      conciseness 239 -0.14  -0.26  -0.04                    -0.13            -0.02    -0.14     0.08
+all six models  scispacy_entity_recall clinical_utility 239  0.42   0.28   0.54                     0.52             0.31     0.15     0.46
+all six models  scispacy_entity_recall  overall_quality 239  0.40   0.27   0.52                     0.52             0.30     0.14     0.45
+all six models  scispacy_entity_recall        composite 239  0.40   0.27   0.52                     0.50             0.28     0.12     0.43
+all six models           summary_words         accuracy 239  0.26   0.19   0.33                     0.28              NaN      NaN      NaN
+all six models           summary_words     completeness 239  0.61   0.50   0.71                     0.64              NaN      NaN      NaN
+all six models           summary_words      conciseness 239 -0.30  -0.39  -0.20                    -0.30              NaN      NaN      NaN
+all six models           summary_words clinical_utility 239  0.38   0.28   0.48                     0.39              NaN      NaN      NaN
+all six models           summary_words  overall_quality 239  0.36   0.27   0.46                     0.38              NaN      NaN      NaN
+all six models           summary_words        composite 239  0.39   0.29   0.49                     0.38              NaN      NaN      NaN
+round two only                 rouge_l         accuracy  80  0.05  -0.17   0.24                    -0.15             0.07    -0.15     0.27
+round two only                 rouge_l     completeness  80 -0.06  -0.23   0.12                    -0.10            -0.09    -0.29     0.11
+round two only                 rouge_l      conciseness  80 -0.06  -0.29   0.18                    -0.15            -0.07    -0.29     0.17
+round two only                 rouge_l clinical_utility  80  0.05  -0.14   0.25                    -0.16             0.08    -0.13     0.29
+round two only                 rouge_l  overall_quality  80  0.03  -0.17   0.22                    -0.19             0.05    -0.18     0.25
+round two only                 rouge_l        composite  80 -0.02  -0.21   0.17                    -0.18            -0.01    -0.22     0.20
+round two only        sbert_similarity         accuracy  80 -0.08  -0.36   0.18                    -0.34            -0.03    -0.33     0.24
+round two only        sbert_similarity     completeness  80 -0.18  -0.31  -0.04                    -0.36            -0.19    -0.39    -0.00
+round two only        sbert_similarity      conciseness  80  0.10  -0.13   0.32                     0.00             0.09    -0.15     0.30
+round two only        sbert_similarity clinical_utility  80 -0.04  -0.28   0.19                    -0.40             0.03    -0.23     0.26
+round two only        sbert_similarity  overall_quality  80 -0.05  -0.28   0.16                    -0.43             0.01    -0.24     0.24
+round two only        sbert_similarity        composite  80 -0.08  -0.29   0.11                    -0.40            -0.02    -0.26     0.20
+round two only                 bert_f1         accuracy  80  0.01  -0.21   0.20                    -0.44             0.06    -0.15     0.27
+round two only                 bert_f1     completeness  80 -0.16  -0.37   0.03                    -0.41            -0.19    -0.40     0.03
+round two only                 bert_f1      conciseness  80 -0.02  -0.25   0.21                    -0.12            -0.03    -0.28     0.20
+round two only                 bert_f1 clinical_utility  80 -0.02  -0.26   0.19                    -0.50             0.03    -0.20     0.26
+round two only                 bert_f1  overall_quality  80 -0.02  -0.27   0.18                    -0.46             0.04    -0.19     0.25
+round two only                 bert_f1        composite  80 -0.07  -0.29   0.13                    -0.45            -0.03    -0.24     0.19
+round two only    medcat_entity_recall         accuracy  80  0.55   0.42   0.68                     0.73             0.25     0.02     0.45
+round two only    medcat_entity_recall     completeness  80  0.74   0.65   0.81                     0.81             0.39     0.22     0.56
+round two only    medcat_entity_recall      conciseness  80 -0.08  -0.29   0.13                    -0.02             0.08    -0.13     0.28
+round two only    medcat_entity_recall clinical_utility  80  0.63   0.50   0.74                     0.78             0.31     0.08     0.51
+round two only    medcat_entity_recall  overall_quality  80  0.64   0.52   0.75                     0.78             0.30     0.10     0.48
+round two only    medcat_entity_recall        composite  80  0.65   0.54   0.75                     0.76             0.34     0.13     0.53
+round two only medcat_entity_precision         accuracy  80 -0.20  -0.40   0.00                    -0.70             0.20    -0.04     0.41
+round two only medcat_entity_precision     completeness  80 -0.54  -0.68  -0.39                    -0.74            -0.14    -0.39     0.09
+round two only medcat_entity_precision      conciseness  80  0.25   0.02   0.45                     0.12             0.17    -0.04     0.37
+round two only medcat_entity_precision clinical_utility  80 -0.23  -0.42  -0.05                    -0.66             0.23    -0.01     0.43
+round two only medcat_entity_precision  overall_quality  80 -0.26  -0.45  -0.07                    -0.68             0.23    -0.02     0.42
+round two only medcat_entity_precision        composite  80 -0.30  -0.47  -0.12                    -0.67             0.14    -0.09     0.34
+round two only        medcat_entity_f1         accuracy  80  0.14  -0.07   0.35                    -0.23             0.27     0.06     0.47
+round two only        medcat_entity_f1     completeness  80 -0.12  -0.31   0.05                    -0.23            -0.01    -0.24     0.20
+round two only        medcat_entity_f1      conciseness  80  0.17  -0.05   0.37                     0.03             0.14    -0.06     0.35
+round two only        medcat_entity_f1 clinical_utility  80  0.15  -0.07   0.34                    -0.17             0.33     0.09     0.53
+round two only        medcat_entity_f1  overall_quality  80  0.12  -0.09   0.32                    -0.22             0.31     0.09     0.50
+round two only        medcat_entity_f1        composite  80  0.08  -0.14   0.26                    -0.22             0.24     0.02     0.44
+round two only  scispacy_entity_recall         accuracy  80  0.59   0.43   0.72                     0.77             0.34     0.10     0.55
+round two only  scispacy_entity_recall     completeness  80  0.68   0.56   0.78                     0.83             0.31     0.12     0.48
+round two only  scispacy_entity_recall      conciseness  80 -0.04  -0.27   0.19                    -0.02             0.12    -0.09     0.32
+round two only  scispacy_entity_recall clinical_utility  80  0.63   0.47   0.75                     0.78             0.35     0.09     0.56
+round two only  scispacy_entity_recall  overall_quality  80  0.65   0.49   0.77                     0.79             0.36     0.09     0.59
+round two only  scispacy_entity_recall        composite  80  0.64   0.49   0.75                     0.76             0.35     0.11     0.55
+round two only           summary_words         accuracy  80  0.58   0.48   0.70                     0.75              NaN      NaN      NaN
+round two only           summary_words     completeness  80  0.84   0.80   0.88                     0.84              NaN      NaN      NaN
+round two only           summary_words      conciseness  80 -0.20  -0.37  -0.00                    -0.30              NaN      NaN      NaN
+round two only           summary_words clinical_utility  80  0.66   0.58   0.75                     0.71              NaN      NaN      NaN
+round two only           summary_words  overall_quality  80  0.70   0.62   0.78                     0.74              NaN      NaN      NaN
+round two only           summary_words        composite  80  0.68   0.60   0.75                     0.67              NaN      NaN      NaN
+round one only                 rouge_l         accuracy 159  0.06  -0.16   0.27                    -0.04             0.09    -0.14     0.29
+round one only                 rouge_l     completeness 159 -0.16  -0.35   0.04                    -0.36             0.02    -0.20     0.24
+round one only                 rouge_l      conciseness 159  0.12  -0.06   0.28                     0.08            -0.07    -0.23     0.09
+round one only                 rouge_l clinical_utility 159 -0.07  -0.29   0.14                    -0.25             0.00    -0.23     0.21
+round one only                 rouge_l  overall_quality 159 -0.05  -0.26   0.16                    -0.22             0.02    -0.21     0.23
+round one only                 rouge_l        composite 159 -0.09  -0.29   0.13                    -0.25            -0.01    -0.23     0.19
+round one only        sbert_similarity         accuracy 159  0.06  -0.13   0.24                     0.12             0.07    -0.12     0.26
+round one only        sbert_similarity     completeness 159  0.11  -0.07   0.28                     0.05             0.20     0.01     0.38
+round one only        sbert_similarity      conciseness 159  0.12  -0.07   0.30                     0.16             0.06    -0.12     0.24
+round one only        sbert_similarity clinical_utility 159  0.06  -0.11   0.22                     0.05             0.09    -0.09     0.26
+round one only        sbert_similarity  overall_quality 159  0.09  -0.09   0.25                     0.06             0.11    -0.07     0.28
+round one only        sbert_similarity        composite 159  0.10  -0.09   0.26                     0.10             0.13    -0.05     0.31
+round one only                 bert_f1         accuracy 159  0.14  -0.07   0.33                     0.09             0.15    -0.05     0.34
+round one only                 bert_f1     completeness 159  0.01  -0.20   0.20                    -0.11             0.08    -0.14     0.27
+round one only                 bert_f1      conciseness 159  0.10  -0.08   0.27                     0.14             0.05    -0.13     0.22
+round one only                 bert_f1 clinical_utility 159  0.09  -0.10   0.28                     0.01             0.12    -0.07     0.31
+round one only                 bert_f1  overall_quality 159  0.08  -0.13   0.28                     0.01             0.10    -0.10     0.30
+round one only                 bert_f1        composite 159  0.07  -0.14   0.27                    -0.01             0.10    -0.11     0.30
+round one only    medcat_entity_recall         accuracy 159  0.11  -0.12   0.31                     0.16             0.09    -0.16     0.32
+round one only    medcat_entity_recall     completeness 159  0.44   0.27   0.59                     0.66             0.34     0.12     0.52
+round one only    medcat_entity_recall      conciseness 159 -0.12  -0.28   0.04                    -0.06             0.06    -0.10     0.19
+round one only    medcat_entity_recall clinical_utility 159  0.25   0.05   0.42                     0.39             0.20    -0.04     0.40
+round one only    medcat_entity_recall  overall_quality 159  0.22   0.03   0.40                     0.38             0.18    -0.05     0.38
+round one only    medcat_entity_recall        composite 159  0.28   0.09   0.44                     0.44             0.23     0.00     0.42
+round one only medcat_entity_precision         accuracy 159  0.01  -0.17   0.17                    -0.15             0.05    -0.14     0.24
+round one only medcat_entity_precision     completeness 159 -0.38  -0.53  -0.25                    -0.66            -0.17    -0.37     0.05
+round one only medcat_entity_precision      conciseness 159  0.10  -0.08   0.28                     0.01            -0.24    -0.37    -0.08
+round one only medcat_entity_precision clinical_utility 159 -0.21  -0.38  -0.04                    -0.47            -0.12    -0.33     0.09
+round one only medcat_entity_precision  overall_quality 159 -0.17  -0.34  -0.02                    -0.46            -0.10    -0.30     0.10
+round one only medcat_entity_precision        composite 159 -0.25  -0.41  -0.09                    -0.50            -0.16    -0.36     0.03
+round one only        medcat_entity_f1         accuracy 159  0.02  -0.18   0.21                    -0.10             0.05    -0.16     0.25
+round one only        medcat_entity_f1     completeness 159 -0.16  -0.34   0.01                    -0.41             0.02    -0.21     0.24
+round one only        medcat_entity_f1      conciseness 159  0.08  -0.09   0.23                     0.02            -0.13    -0.28     0.02
+round one only        medcat_entity_f1 clinical_utility 159 -0.09  -0.29   0.10                    -0.31            -0.01    -0.22     0.20
+round one only        medcat_entity_f1  overall_quality 159 -0.07  -0.27   0.11                    -0.31            -0.01    -0.21     0.18
+round one only        medcat_entity_f1        composite 159 -0.11  -0.31   0.07                    -0.32            -0.03    -0.24     0.17
+round one only  scispacy_entity_recall         accuracy 159  0.23   0.01   0.41                     0.25             0.22    -0.02     0.42
+round one only  scispacy_entity_recall     completeness 159  0.49   0.31   0.64                     0.62             0.40     0.19     0.58
+round one only  scispacy_entity_recall      conciseness 159 -0.01  -0.17   0.14                     0.02             0.17     0.01     0.32
+round one only  scispacy_entity_recall clinical_utility 159  0.35   0.16   0.51                     0.42             0.31     0.10     0.49
+round one only  scispacy_entity_recall  overall_quality 159  0.31   0.13   0.47                     0.42             0.28     0.07     0.46
+round one only  scispacy_entity_recall        composite 159  0.37   0.19   0.53                     0.47             0.33     0.12     0.51
+round one only           summary_words         accuracy 159  0.06  -0.05   0.17                     0.04              NaN      NaN      NaN
+round one only           summary_words     completeness 159  0.45   0.29   0.60                     0.48              NaN      NaN      NaN
+round one only           summary_words      conciseness 159 -0.46  -0.59  -0.30                    -0.50              NaN      NaN      NaN
+round one only           summary_words clinical_utility 159  0.19   0.04   0.33                     0.18              NaN      NaN      NaN
+round one only           summary_words  overall_quality 159  0.16   0.02   0.29                     0.13              NaN      NaN      NaN
+round one only           summary_words        composite 159  0.20   0.05   0.35                     0.14              NaN      NaN      NaN
+
+== CLMM: OR for a higher rating per 1 SD of the metric, adjusted for log length, rater and round; conversation random
+                 metric        dimension   n  or_per_sd  ci_lo  ci_hi     p  or_round2  converged
+                bert_f1         accuracy 717       1.18   0.98   1.44  .088       0.86       True
+                bert_f1     completeness 717       1.09   0.88   1.36  .423       0.82       True
+                bert_f1     organization 717       1.09   0.88   1.34  .448       0.14       True
+                bert_f1      conciseness 717       1.15   0.95   1.38  .141       0.18       True
+                bert_f1 clinical_utility 717       1.26   1.02   1.55  .034       0.68       True
+                bert_f1  overall_quality 717       1.23   1.00   1.52  .053       0.71       True
+       sbert_similarity         accuracy 717       1.15   0.95   1.40  .153       0.93       True
+       sbert_similarity     completeness 717       1.25   1.03   1.52  .027       0.84       True
+       sbert_similarity     organization 717       1.18   0.96   1.44  .112       0.15       True
+       sbert_similarity      conciseness 717       1.16   0.98   1.36  .081       0.19       True
+       sbert_similarity clinical_utility 717       1.13   0.94   1.37  .192       0.75       True
+       sbert_similarity  overall_quality 717       1.15   0.95   1.39  .148       0.77       True
+                rouge_l         accuracy 717       1.30   1.07   1.59  .009       0.80       True
+                rouge_l     completeness 717       1.11   0.90   1.38  .324       0.81       True
+                rouge_l     organization 717       0.92   0.76   1.11  .386       0.15       True
+                rouge_l      conciseness 717       0.94   0.77   1.14  .523       0.20       True
+                rouge_l clinical_utility 717       1.19   0.97   1.47  .096       0.68       True
+                rouge_l  overall_quality 717       1.20   0.98   1.47  .085       0.70       True
+   medcat_entity_recall         accuracy 717       1.77   1.42   2.22 <.001       0.68       True
+   medcat_entity_recall     completeness 717       3.61   2.69   4.84 <.001       0.44       True
+   medcat_entity_recall     organization 717       4.87   3.28   7.23 <.001       0.06       True
+   medcat_entity_recall      conciseness 717       2.00   1.56   2.57 <.001       0.13       True
+   medcat_entity_recall clinical_utility 717       2.80   2.21   3.56 <.001       0.43       True
+   medcat_entity_recall  overall_quality 717       2.86   2.24   3.65 <.001       0.44       True
+medcat_entity_precision         accuracy 717       0.98   0.77   1.23  .832       0.95       True
+medcat_entity_precision     completeness 717       0.48   0.35   0.64 <.001       1.12       True
+medcat_entity_precision     organization 717       0.21   0.14   0.31 <.001       0.18       True
+medcat_entity_precision      conciseness 717       0.43   0.32   0.58 <.001       0.25       True
+medcat_entity_precision clinical_utility 717       0.53   0.41   0.69 <.001       0.96       True
+medcat_entity_precision  overall_quality 717       0.46   0.35   0.61 <.001       1.05       True
+       medcat_entity_f1         accuracy 717       1.32   1.08   1.62  .008       0.78       True
+       medcat_entity_f1     completeness 717       1.04   0.84   1.29  .725       0.83       True
+       medcat_entity_f1     organization 717       0.87   0.71   1.07  .178       0.16       True
+       medcat_entity_f1      conciseness 717       0.94   0.77   1.15  .559       0.20       True
+       medcat_entity_f1 clinical_utility 717       1.14   0.92   1.41  .226       0.69       True
+       medcat_entity_f1  overall_quality 717       1.11   0.89   1.37  .365       0.73       True
+ scispacy_entity_recall         accuracy 717       2.11   1.69   2.62 <.001       0.54       True
+ scispacy_entity_recall     completeness 717       3.54   2.69   4.65 <.001       0.36       True
+ scispacy_entity_recall     organization 717       3.90   2.67   5.70 <.001       0.06       True
+ scispacy_entity_recall      conciseness 717       2.12   1.68   2.68 <.001       0.11       True
+ scispacy_entity_recall clinical_utility 717       3.06   2.44   3.84 <.001       0.33       True
+ scispacy_entity_recall  overall_quality 717       3.21   2.54   4.06 <.001       0.34       True

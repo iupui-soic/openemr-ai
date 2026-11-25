@@ -1,0 +1,80 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0041
+Detected Disease: Foot Pain
+Generated: 2026-11-19 05:24:55
+Time: 4.29s
+Tokens: 10,495 in / 1,418 out
+============================================================
+
+Patient Information
+Name: Abel Fritsch
+Date of Birth: 1945-02-24
+Sex: Male
+Unit Number: 342
+Address: 183 Bechtelar Stravenue, Brockton, Massachusetts 02302
+Encounter Date: 2024-04-06
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+Intense pain in the right foot.
+
+History of Present Illness
+The patient is a male presenting with a six-hour history of intense pain in the right foot. The pain is localized to the medial side just below the big toe. The patient reports that the pain has remained constant in severity since onset and is described as sharp. The pain is rated 8 out of 10 on a numerical scale. There was no preceding trauma to the foot. The patient reports that movement of the toe exacerbates the pain, and he is unable to flex or extend the first digit, although the remaining toes are functional. He is able to bear weight but does so with significant pain and an antalgic gait. Contact with shoes or clothing also increases discomfort. The patient attempted self-treatment with ibuprofen, which provided no relief. He denies any history of similar pain in other joints.
+
+Review of Systems
+Constitutional: The patient denies fevers, chills, night sweats, unexpected weight loss, fatigue, or malaise.
+Neurological: The patient denies numbness, tingling, sensory loss, muscle weakness, headaches, memory loss, or confusion.
+Respiratory: The patient denies cough, shortness of breath, or sore throat.
+Cardiovascular: The patient denies chest pain, palpitations, or lightheadedness.
+Gastrointestinal: The patient denies nausea, vomiting, abdominal pain, or changes in bowel habits.
+Musculoskeletal: The patient denies muscle aches, body pains, or joint pains in other locations.
+Other: The patient denies changes in vision, hearing, smell, taste, urinary patterns, or skin changes such as rashes.
+
+Past Medical History
+The patient has a history of essential hypertension, type 2 diabetes mellitus, and obesity. He has a significant history of renal disease, including chronic kidney disease stages 1 through 4, microalbuminuria, proteinuria, and end-stage renal disease, which was managed with a renal transplant in 2021. He has a history of acute non-ST segment elevation myocardial infarction in 2012, ischemic heart disease, and coronary artery bypass grafting. He was recently hospitalized for kidney stones, which were treated with lithotripsy. He has a history of anemia, gingivitis, and dental caries. He also has a history of a foot laceration in 2023.
+
+Surgical History
+The patient has a history of coronary artery bypass grafting and a renal transplant. He underwent lithotripsy for kidney stones.
+
+Social History
+The patient lives with his son in a house. He does not smoke cigarettes or use marijuana or other recreational drugs. He reports consuming approximately two glasses of wine daily and has recently started drinking one beer daily. He denies recent travel or exposure to sick contacts. He reports a diet high in red meat and low in seafood.
+
+Family History
+The patient's father had severe arthritis, high blood pressure, and diabetes. The patient's mother's side of the family has a history of arthritis, gout, and kidney stones.
+
+Current Medications
+The patient reports taking ramipril for high blood pressure and insulin for diabetes. The electronic health record lists the following active medications: Clopidogrel 75 mg daily, Simvastatin 20 mg daily, Nitroglycerin 0.4 mg spray as needed, Aspirin 81 mg daily, Metoprolol succinate 100 mg daily, Pravastatin sodium 40 mg daily, and Valsartan 40 mg daily. Note: The transcript indicates the patient is taking ramipril, while the record lists lisinopril, valsartan, and amlodipine; the transcript is considered the source of truth for current status.
+
+Allergies
+No information available.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 98.00 bpm
+Respiration Rate: 13.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 179.20 cm
+BMI: 27.87
+
+Physical Examination
+The patient presents with a swollen, red, and warm right foot. There is a visible bump on the medial side of the right foot, which is warmer than the left. The patient reports significant tenderness in the area just below the big toe. Range of motion is limited in the first digit of the right foot, with an inability to flex or extend the toe. The remaining toes have full range of motion. The ankle has full range of motion. There is no pain upon palpation of the metatarsals, the second through fifth digits, or the ankle. The patient exhibits an antalgic gait, avoiding weight on the right big toe. No muscle atrophy or joint deformities are noted other than the swelling.
+
+Labs
+No new laboratory results are available for this encounter. Previous records show a hemoglobin of 13.9 g/dL, leukocytes of 5.36 x 10^3/uL, and total cholesterol of 111.02 mg/dL.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+The patient presents with acute onset of severe pain, swelling, redness, and warmth in the first metatarsophalangeal joint of the right foot. The clinical presentation is highly suggestive of a gout flare, specifically podagra. However, given the patient's history of diabetes and renal transplant, septic arthritis must be ruled out. The differential diagnosis includes gout, septic arthritis, and foot cellulitis.
+
+Plan
+1. Joint aspiration of the right first metatarsophalangeal joint will be performed to analyze synovial fluid for crystals and to rule out infection.
+2. Colchicine will be initiated to manage the acute gout flare.
+3. If the fluid analysis confirms gout, high-dose anti-inflammatory therapy will be continued.
+4. Lifestyle modifications are recommended to prevent future flares, including a reduction in red meat and alcohol intake, weight loss, and improved management of diabetes.
+5. The patient will be monitored for signs of infection.
+6. Follow-up will be arranged to review joint fluid results and adjust treatment as necessary.

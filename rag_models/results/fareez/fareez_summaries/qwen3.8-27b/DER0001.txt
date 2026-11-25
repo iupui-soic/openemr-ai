@@ -1,0 +1,102 @@
+Model: qwen/qwen3.8-27b
+Patient: DER0001
+Detected Disease: Cellulitis
+Generated: 2026-11-19 05:24:55
+Time: 6.70s
+Tokens: 11,355 in / 1,613 out
+============================================================
+
+Patient Information
+Name: Adan Crona
+Date of Birth: 1943-04-07
+Sex: Male
+Unit Number: 820
+Address: 584 Waelchi Course, Waltham, Massachusetts 02451
+Encounter ID: 64385
+Attending Provider: Dr. External Provider
+
+Chief Complaint
+The patient is a 45-year-old male presenting with a one-week history of a rash on his right ankle that has become increasingly painful and swollen over the last 24 hours. He reports the area is red, swollen, and leaking white fluid from a scab.
+
+History of Present Illness
+The patient reports that a rash on his right ankle has appeared "weird" for approximately one week. The symptoms progressed yesterday, with the onset of pain and increased swelling. The patient describes the lesion as red, swollen, and "meaner" in appearance compared to previous days. He notes that the redness is spreading to the area surrounding the primary site. The patient has a history of diabetes and admits to poor glycemic control, stating he has stopped measuring his blood sugar recently. He recalls his last A1C was in the 9% range. He reports scratching at the area, which has resulted in scabs. One of these scabs has now opened, leaking white purulent material. The patient also reports feeling hot over the last 12 hours, though he has not taken a temperature at home. He notes that his right leg feels hotter than his left leg. Pain is exacerbated by walking and flexing the ankle, while resting provides relief. The patient denies any loss of sensation in the ankle itself, though he acknowledges decreased sensation in his feet over the years. He denies difficulty breathing or chest pain. He reports feeling generally rundown, tired, and hungry recently, which he attributes to poor diabetes management and life stressors.
+
+Review of Systems
+Constitutional: Positive for feeling hot, tired, hungry, and generally rundown.
+Respiratory: Negative for difficulty breathing.
+Cardiovascular: Negative for chest pain.
+Gastrointestinal: No specific complaints reported.
+Other: Positive for pain in the right ankle with movement. Negative for loss of sensation in the ankle.
+
+Allergies
+The patient reports an allergy to penicillin. He describes a childhood reaction involving facial swelling and difficulty breathing. The electronic health record also lists allergies to grass pollen and lisinopril, though the patient did not explicitly confirm these during the current interview.
+
+Past Medical History
+The patient reports a history of Type 2 Diabetes Mellitus, which he admits is not well-controlled. He also has a history of hyperlipidemia, for which he takes medication. He reports a history of asthma in childhood, which is no longer an issue. He has had chronic back pain for the last 10 years, managed with over-the-counter acetaminophen and ibuprofen. The electronic health record indicates a complex history including essential hypertension, chronic kidney disease progressing to end-stage renal disease, history of renal transplant, history of myocardial infarction (STEMI), and microalbuminuria/proteinuria due to diabetes. The patient also reports a current ulcer on his left heel, which he believes is stable.
+
+Surgical History
+The patient reports a history of sinus surgery during his teens for severe sinusitis. The electronic health record also documents a history of renal transplant.
+
+Social History
+The patient is currently unemployed but describes himself as partially employed through his own business as an accountant. He lives in town and sees his children every two weeks. He reports significant stress related to his children and work. He smokes cigarettes, with recent use increasing to approximately two packs per week due to stress. He consumes alcohol, averaging about two four-packs per week, primarily consumed on weekends.
+
+Family History
+The patient reports that his mother's side of the family has a strong history of diabetes, high blood pressure, and cholesterol. His father's side of the family is described as healthy. He notes that an aunt on his mother's side had lung cancer and was a heavy smoker.
+
+Current Medications
+The patient reports taking four pills daily: one for cholesterol (identified as rosuvastatin in the transcript, though the EHR lists Simvastatin) and three for diabetes (one identified as metformin, others unknown). He denies using insulin. The electronic health record lists the following active medications: Tacrolimus, Aspirin, Nitroglycerin, Morphine Sulfate, Acetaminophen, Sodium Fluoride, Insulin (Isophane/Regular), Losartan, Simvastatin, and Diphenhydramine.
+
+Objective
+Vital Signs
+The electronic health record provides the following vitals, though the date is noted as 1991-01-09:
+Heart Rate: 83.00 bpm
+Respiration Rate: 15.00 breaths/min
+Height: 173.50 cm
+BMI: 28.14
+Blood Pressure, Temperature, SpO2, and Weight are listed as N/A in the record.
+
+Physical Exam
+No detailed physical examination findings are documented in the provided transcript or electronic health record extract. The provider stated an intention to examine the leg but the specific findings were not recorded in the source data.
+
+Labs
+The electronic health record contains the following laboratory results, though the date is noted as 1991-01-09:
+Sodium: 139.84 mmol/L
+Potassium: 4.5 mmol/L
+Chloride: Not listed
+Total CO2: 21.99 mmol/L
+Glucose: 94.04 mg/dL
+Urea Nitrogen: 13.72 mg/dL
+Creatinine: 2.978 mg/dL
+Calcium: 8.53 mg/dL
+Cholesterol: 176.99 mg/dL
+HDL Cholesterol: 31.61 mg/dL
+LDL Cholesterol: 120.65 mg/dL
+Triglycerides: 177.43 mg/dL
+AST: 24.74 U/L
+ALT: 43.90 U/L
+Alkaline Phosphatase: 123.68 U/L
+Bilirubin Total: 0.77 mg/dL
+Albumin: 3.88 g/dL
+Globulin: 2.16 g/L
+Protein Total: 6.52 g/dL
+GFR (MDRD): 79.20 mL/min
+
+Imaging
+No information available.
+
+Assessment
+Primary Diagnosis: Cellulitis of the right ankle.
+Secondary Diagnoses: Type 2 Diabetes Mellitus with poor glycemic control (reported A1C in 9% range), Hyperlipidemia, History of Renal Transplant, History of Myocardial Infarction, Chronic Kidney Disease.
+
+Hospital Course
+No information available regarding inpatient course. The encounter appears to be an outpatient or urgent care visit based on the transcript.
+
+Plan
+Medications Prescribed
+No new medications were explicitly prescribed in the transcript. The provider indicated they would consult with a doctor to determine the course of action.
+
+Discharge Instructions
+No specific discharge instructions were documented in the transcript.
+
+Follow-up Instructions
+The patient was advised to see his family doctor to manage his diabetes and overall health. The provider stated they would consult with a physician to determine the next steps for the leg condition.

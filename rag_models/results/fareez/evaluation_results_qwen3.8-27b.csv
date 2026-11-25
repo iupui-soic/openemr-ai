@@ -1,0 +1,41 @@
+patient_name,model,detected_disease,total_time_s,input_tokens,output_tokens,summary_chars,summary_words,finish_reason
+RES0007,qwen3.8-27b,Asthma,4.23,9112,1568,6854,997,stop
+RES0008,qwen3.8-27b,Pneumonia,4.63,13871,1652,6307,931,stop
+RES0009,qwen3.8-27b,Chest Pain,5.21,19822,1295,5177,770,stop
+RES0023,qwen3.8-27b,Acute Bronchitis,4.99,17500,1433,6096,887,stop
+RES0024,qwen3.8-27b,Loss of Smell,4.06,15352,1307,5910,884,stop
+RES0027,qwen3.8-27b,Acute Bronchitis,2.86,7563,1071,4757,696,stop
+RES0029,qwen3.8-27b,Chest Pain,5.16,13257,1363,5583,826,stop
+RES0036,qwen3.8-27b,Pneumonia,3.61,13327,1221,5837,853,stop
+RES0058,qwen3.8-27b,Upper Respiratory Infection,3.99,9972,1373,6625,986,stop
+RES0060,qwen3.8-27b,Acute Bronchitis,5.89,7504,1458,6073,895,stop
+RES0062,qwen3.8-27b,Pneumonia,5.34,19151,1888,8195,1226,stop
+RES0065,qwen3.8-27b,Sore Throat,3.96,13610,1244,5778,831,stop
+RES0073,qwen3.8-27b,Sinusitis,4.61,16041,1674,7041,1022,stop
+RES0111,qwen3.8-27b,Sore Throat,4.14,12393,1357,5719,855,stop
+RES0143,qwen3.8-27b,Common Cold,2.93,7615,1021,4823,709,stop
+RES0155,qwen3.8-27b,Pneumonia,5.03,15460,1759,7588,1127,stop
+RES0168,qwen3.8-27b,Sinus Infection,3.66,15125,1139,5170,774,stop
+RES0178,qwen3.8-27b,Upper Respiratory Infection,3.23,7909,1123,4927,707,stop
+RES0193,qwen3.8-27b,Asthma,3.54,7731,1346,5647,823,stop
+RES0194,qwen3.8-27b,Upper Respiratory Infection,3.67,7925,1329,6078,894,stop
+MSK0003,qwen3.8-27b,Back Pain,3.59,8352,1330,6117,878,stop
+MSK0014,qwen3.8-27b,Knee Arthritis,4.0,12902,1490,6805,1013,stop
+MSK0016,qwen3.8-27b,Carpal Tunnel Syndrome,5.48,14765,2036,8330,1232,stop
+MSK0019,qwen3.8-27b,Tennis Elbow,4.02,11368,1261,5492,829,stop
+MSK0028,qwen3.8-27b,Bicep Tendonitis,4.96,12407,1894,8150,1220,stop
+MSK0031,qwen3.8-27b,Hip Fracture,3.84,13216,1424,5900,883,stop
+MSK0035,qwen3.8-27b,Wrist Injury,33.56,20739,1139,5244,791,stop
+MSK0037,qwen3.8-27b,Dupuytren's Contracture,63.42,45812,1852,7642,1105,stop
+MSK0038,qwen3.8-27b,Knee Pain,8.94,15097,1606,7384,1094,stop
+MSK0041,qwen3.8-27b,Foot Pain,4.29,10495,1418,6008,931,stop
+GAS0001,qwen3.8-27b,Morning Sickness,87.27,26706,1678,7051,987,stop
+GAS0002,qwen3.8-27b,Abdominal Pain,3.79,10450,1374,5851,825,stop
+GAS0003,qwen3.8-27b,Abdominal Pain,6.25,24535,1510,6286,917,stop
+GAS0004,qwen3.8-27b,Acute Diarrhea,4.27,14859,1501,6580,956,stop
+GAS0005,qwen3.8-27b,Gastroenteritis,4.91,17587,1624,7642,1135,stop
+CAR0001,qwen3.8-27b,Chest Pain,5.96,12026,1389,5932,856,stop
+CAR0002,qwen3.8-27b,Chest Pain,5.7,11344,1334,5502,804,stop
+CAR0004,qwen3.8-27b,Chest Pain,5.63,11488,1275,5666,822,stop
+CAR0005,qwen3.8-27b,Chest Pain,6.41,8848,1816,7198,1115,stop
+DER0001,qwen3.8-27b,Cellulitis,6.7,11355,1613,6633,995,stop

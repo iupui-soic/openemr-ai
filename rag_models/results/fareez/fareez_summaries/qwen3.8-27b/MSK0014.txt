@@ -1,0 +1,82 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0014
+Detected Disease: Knee Arthritis
+Generated: 2026-11-19 05:24:55
+Time: 4.00s
+Tokens: 12,902 in / 1,490 out
+============================================================
+
+Patient Information
+Name: Adalberto Gerlach
+Date of Birth: 1941-06-15
+Sex: Male
+Patient ID: 637
+Address: 236 Leannon Mall, Andover, Massachusetts 01810
+Encounter Date: 2023-07-02
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient is a 72-year-old male presenting with a five-day history of acute pain, swelling, and erythema in the right knee. He reports that the symptoms are significantly more severe than his baseline osteoarthritis and are accompanied by warmth to the touch.
+
+History of Present Illness
+The patient reports that five days ago he began experiencing pain and swelling in his right knee. He initially attributed the symptoms to an exacerbation of his known osteoarthritis; however, he noted that the degree of swelling and pain was atypical for his usual condition. The pain is described as sharp, with a stabbing quality, and is exacerbated by movement of the knee. The patient reports that the joint is warm to the touch compared to the surrounding tissue and appears visibly red compared to the contralateral knee. The severity of the pain has fluctuated, initially worsening before showing slight improvement in the immediate period prior to the visit. Resting the joint provides some relief, and the patient has been keeping the knee relatively immobilized. Over-the-counter ibuprofen has provided only mild relief. The patient denies any recent trauma, falls, or injury to the knee. He notes that he received a steroid injection in the same knee approximately one week prior to the onset of these symptoms. He denies fever, chills, or night sweats. He denies any radiating pain. The patient expresses concern regarding the severity of the pain and the potential need for surgical intervention.
+
+Review of Systems
+Constitutional: Negative for fever, chills, night sweats, or unexpected weight loss.
+Respiratory: Negative for cough, shortness of breath, wheezing, or chest pain.
+Cardiovascular: Negative for lightheadedness or dizziness.
+Gastrointestinal: Negative for nausea, vomiting, loss of appetite, abdominal pain, or changes in bowel movements.
+Genitourinary: Negative for painful urination or frequency.
+Musculoskeletal: Positive for right knee pain, swelling, and erythema. The patient reports chronic pain in hips and knees consistent with osteoarthritis, but the current presentation is distinct. Negative for muscle weakness, numbness, tingling, or burning sensations.
+Neurological: Negative for changes in memory or confusion.
+Skin: Negative for rashes or other skin changes.
+
+Past Medical History
+The patient has a significant past medical history including osteoarthritis of the knees and hips, essential hypertension, ischemic heart disease with a history of myocardial infarction four years ago, and heart failure. He is also noted to be overweight. The electronic health record indicates a history of chronic kidney disease, prediabetes, hyperlipidemia, and metabolic syndrome.
+
+Surgical History
+The patient reports a history of appendectomy during his youth. He underwent coronary intervention with the placement of stents following his myocardial infarction. He denies any recent orthopedic surgeries.
+
+Social History
+The patient lives in a townhouse in the city with his wife and daughter. He is retired due to his medical history and the stress of previous employment. He is independent in most activities of daily living, though his wife assists with shopping and cooking. He consumes alcohol, reporting three to four beers per night. He is a former smoker, having quit after his heart attack. He reports a smoking history of more than 30 years, with a consumption of one to two packs per day prior to cessation.
+
+Family History
+The patient reports a family history of heart disease. Both his father and his brother have suffered from myocardial infarctions. His maternal family history is reportedly healthy.
+
+Current Medications
+The patient reports currently taking furosemide and ramipril for blood pressure management. He also takes aspirin for his cardiac history and uses over-the-counter painkillers (ibuprofen) as needed. The electronic health record lists additional active medications including tacrolimus, simvastatin, metoprolol succinate, nitroglycerin, and ferrous sulfate, though the patient's verbal report focuses on the antihypertensives and aspirin.
+
+Allergies
+The patient reports an allergy to penicillin. He does not recall the specific nature of the reaction, which occurred during childhood.
+
+Objective
+Vital Signs
+Blood Pressure: Not documented in this encounter.
+Heart Rate: 70 beats per minute.
+Respiratory Rate: 13 breaths per minute.
+Temperature: Not documented in this encounter.
+SpO2: Not documented in this encounter.
+Weight: Not documented in this encounter.
+Height: 180 cm.
+BMI: 29.28.
+
+Physical Examination
+The right knee is noted to be swollen, erythematous, and warm to the touch compared to the left knee. The patient exhibits a limp and is unable to bear full weight on the right leg. There is significant pain with movement of the knee. There is no instability to varus or valgus stress. Anterior and posterior drawer tests are negative for ACL or PCL instability. There is no muscle weakness, numbness, tingling, or burning sensation in the lower extremity.
+
+Labs
+No laboratory results were obtained during this specific encounter. Previous laboratory data from the electronic health record shows a creatinine of 2.51 mg/dL, GFR of 87.48 mL/min, and potassium of 4.89 mmol/L.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+The primary working diagnoses are acute gout or pseudogout versus septic arthritis of the right knee. The patient presents with classic signs of acute monoarthritis, including pain, swelling, erythema, and warmth. Risk factors for crystal arthropathy include his use of diuretics (furosemide), alcohol consumption, and obesity. However, the recent history of a steroid injection in the same joint one week prior raises concern for septic arthritis, which is a medical emergency. The absence of systemic symptoms such as fever does not rule out septic arthritis.
+
+Plan
+1. Perform arthrocentesis (knee aspiration) of the right knee to obtain synovial fluid.
+2. Send synovial fluid for cell count, Gram stain, culture, and crystal analysis to differentiate between infectious and crystal-induced etiologies.
+3. Await laboratory results to guide definitive treatment.
+4. If septic arthritis is confirmed, initiate appropriate antibiotic therapy and consider surgical consultation for washout.
+5. If crystal arthropathy is confirmed, initiate anti-inflammatory therapy appropriate for gout or pseudogout, considering his cardiac and renal history.
+6. Continue current home medications.
+7. Follow up with results to determine next steps in management.

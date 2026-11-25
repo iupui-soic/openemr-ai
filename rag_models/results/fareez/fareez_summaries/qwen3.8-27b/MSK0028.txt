@@ -1,0 +1,99 @@
+Model: qwen/qwen3.8-27b
+Patient: MSK0028
+Detected Disease: Bicep Tendonitis
+Generated: 2026-11-19 05:24:55
+Time: 4.96s
+Tokens: 12,407 in / 1,894 out
+============================================================
+
+Patient Information
+Name: Abdul Gorczany
+Date of Birth: 1971-03-09
+Sex: Male
+Address: 404 Effertz Crossroad, Springfield, Massachusetts 01020
+Encounter Date: 2024-09-09
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+Sudden onset of sharp pain in the right shoulder and right elbow following weight training, accompanied by visible swelling and a palpable mass in the biceps region.
+
+History of Present Illness
+The patient is a 53-year-old male who presented to the clinic this morning complaining of sudden, severe pain in the right shoulder and right elbow. The symptoms began yesterday evening while the patient was performing weight training exercises, specifically flexing his elbows to work his biceps on a machine. The patient reports that the pain started approximately 30 minutes after the activity. He initially was unsure if he heard a "pop," but upon further reflection, he believes he may have heard one at the time of injury. The pain is described as sharp and stabbing in character, localized to the front of the right elbow and the right shoulder. The pain does not radiate to other areas. The patient rates the pain severity as 8 to 9 out of 10. The pain has remained constant and has not improved since onset; in fact, the patient reports it may have gotten slightly worse overnight. He has attempted to manage the pain with rest, ice, and over-the-counter ibuprofen (Advil), but none of these measures have provided relief.
+
+The patient also reports noticing a new mass in the right biceps area, which makes the biceps appear significantly larger than usual. He notes associated swelling and redness in the region, which resembles bruising. He reports significant functional limitation, stating that he cannot fully flex his right elbow due to pain and difficulty, and he is unable to supinate his arm. While he can lift his arm forward and above his head, any movement of the upper arm causes significant discomfort. The patient denies any other joint pain.
+
+Review of Systems
+Constitutional: The patient denies fever, chills, unexpected weight loss, or appetite loss.
+Respiratory: The patient denies cough, shortness of breath, or wheezing.
+Cardiovascular: The patient denies chest pain, heart palpitations, or lightheadedness.
+Gastrointestinal: The patient denies abdominal pain, nausea, vomiting, or changes in bowel movements such as diarrhea, constipation, or blood in the stool.
+Genitourinary: The patient denies urination problems such as pain or frequency.
+Neurological: The patient denies numbness, tingling, confusion, or memory loss. He reports muscle weakness limited to the affected right upper arm and elbow.
+Skin: The patient denies rashes or changes to nails or hair, though he notes redness and bruising in the right arm.
+Other: The patient denies headaches, sensory changes to vision, hearing, smell, or taste, runny nose, or sore throat.
+
+Past Medical History
+The patient reports a history of pre-diabetes but states he is not currently taking medication for it. He reports a history of shoulder pain a few years ago, which was managed with physiotherapy and strengthening exercises; he was advised to avoid overhead work. No imaging was performed for that prior episode. The electronic health record lists a complex past medical history including major depression disorder, essential hypertension, alcoholism, chronic kidney disease (progressing from stage 1 to stage 4), disorder of kidney due to diabetes mellitus, microalbuminuria, proteinuria, sepsis, acute respiratory distress syndrome, hyperlipidemia, anemia, and a history of patellar tendon rupture. However, the patient's current self-reported history focuses on pre-diabetes and prior shoulder issues.
+
+Surgical History
+The patient reports a history of tonsillectomy performed when he was approximately 10 years old. The electronic health record does not list other specific surgeries, though it notes a history of patellar tendon rupture which may have required intervention, though the patient did not explicitly confirm surgery for this in the current interview.
+
+Social History
+The patient is an accountant who works from home. He lives with his wife and daughter in a condominium in the city. He resumed weight lifting and bodybuilding approximately one year ago after a period of inactivity. He is a non-smoker, having tried cigarettes in high school and university but never developed a habit. He denies the use of alcohol, cannabis, or recreational drugs.
+
+Family History
+The patient reports no known family history of musculoskeletal or neurological problems. He also denies any family history of autoimmune diseases.
+
+Allergies
+The patient reports no known drug allergies.
+
+Current Medications
+The patient states he is not currently taking any regular medications. The electronic health record lists several active medications including Acetaminophen/Hydrocodone, Acetaminophen, Epoetin Alfa, Vitamin B12, Simvastatin, Naproxen, Sodium Fluoride, Hydrochlorothiazide, Lisinopril, and Amlodipine. Given the patient's explicit statement that he is not on medication, the current clinical status relies on the patient's report, though the discrepancy with the EHR should be noted for reconciliation.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 93.00 bpm
+Temperature: Not available
+Respiration Rate: 16.00 breaths/min
+SpO2: Not available
+Weight: Not available
+Height: 180.00 cm
+BMI: 27.31
+
+Physical Examination
+The patient presents with a visible mass in the right biceps region, causing the biceps to appear enlarged compared to the contralateral side. There is noted swelling and redness in the mid-arm region, consistent with bruising. The patient reports pain upon movement of the upper arm. Range of motion is significantly limited; the patient is unable to fully flex the right elbow due to pain and mechanical difficulty. Supination of the right arm is also restricted. Shoulder movement is preserved, with the patient able to lift the arm forward and overhead, though this action elicits discomfort.
+
+Labs
+Recent laboratory results from the electronic health record include:
+Glucose: 79.49 mg/dL
+Creatinine: 2.86 mg/dL
+Glomerular Filtration Rate (eGFR): 85.17 mL/min
+Cholesterol: 168.69 mg/dL
+LDL Cholesterol: 133.65 mg/dL
+HDL Cholesterol: 36.32 mg/dL
+Triglycerides: 161.05 mg/dL
+Sodium: 137.46 mmol/L
+Potassium: 4.8 mmol/L
+Chloride: 108.66 mmol/L
+Carbon Dioxide: 27.56 mmol/L
+Calcium: 9.3 mg/dL
+Albumin: 5.10 g/dL
+Protein: 7.06 g/dL
+Bilirubin: 0.52 mg/dL
+ALT: 33.27 U/L
+AST: 19.37 U/L
+Alkaline Phosphatase: 75.10 U/L
+Urea Nitrogen: 12.89 mg/dL
+
+Imaging
+No imaging has been performed during this encounter. The physician has recommended an ultrasound to evaluate the extent of the tissue damage, with a potential follow-up MRI if necessary.
+
+Assessment
+The patient presents with a clinical picture highly suggestive of a biceps tendon tear or injury. Key risk factors include recent weight training involving biceps flexion and a history of shoulder issues. Supporting symptoms include the sudden onset of sharp pain, the presence of a palpable mass (Popeye deformity), swelling, bruising, and significant functional limitation in elbow flexion and supination. The severity of the pain (8-9/10) and lack of response to conservative measures (ice, rest, NSAIDs) further support this diagnosis.
+
+Plan
+1. Diagnostic Imaging: An ultrasound of the right upper extremity is ordered to assess the extent of the biceps tendon injury. An MRI may be considered subsequently to evaluate tissue damage in greater detail.
+2. Treatment Strategy: If the imaging confirms a tear of the long head of the biceps tendon, conservative management will be the initial approach.
+3. Follow-up: The patient will follow up with the provider to review imaging results and determine the next steps in management.
+4. Medication Reconciliation: Given the discrepancy between the patient's report of no current medications and the electronic health record listing multiple active prescriptions (including antihypertensives, statins, and pain management), a medication reconciliation is required to ensure accurate clinical management.

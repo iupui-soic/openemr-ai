@@ -1,0 +1,74 @@
+Model: qwen/qwen3.8-27b
+Patient: RES0024
+Detected Disease: Loss of Smell
+Generated: 2026-11-19 05:24:55
+Time: 4.06s
+Tokens: 15,352 in / 1,307 out
+============================================================
+
+Patient Information
+The patient is a 40-year-old male, identified in the record as Aaron Bartoletti, with a date of birth of August 3, 1981. He resides at 409 Veum Drive, Spencer, Massachusetts. The current encounter is an outpatient visit occurring on May 9, 2022, from 20:25 to 20:40. The attending provider is listed as an external provider.
+
+Chief Complaint
+The patient presented with a two-day history of complete loss of smell (anosmia) and loss of taste (ageusia). He reports that he does not feel generally ill but became concerned about potential SARS-CoV-2 infection after noticing he could not taste food, specifically when attempting to taste an onion.
+
+History of Present Illness
+The patient reports that for the past two days, he has been unable to smell or taste anything. He describes the onset as sudden and notes that he feels otherwise well. He denies having a cough, shortness of breath, sputum production, hemoptysis, chest pain, or palpitations. He denies nausea, vomiting, diarrhea, constipation, or any changes in urinary habits. He denies headaches, chills, or night sweats. He reports feeling slightly tired and having a sensation of dryness, but denies a sore throat, runny nose, or nasal congestion. He denies eye pain, ear pain, or new rashes. He is concerned that these symptoms may be indicative of COVID-19.
+
+Review of Systems
+Constitutional: The patient reports mild fatigue. He denies fever, though he noted feeling "a little hot" without objective measurement. He denies chills, night sweats, or recent weight changes.
+Respiratory: The patient denies cough, shortness of breath, sputum, or hemoptysis. He denies nasal congestion or rhinorrhea.
+Cardiovascular: The patient denies chest pain or palpitations.
+Gastrointestinal: The patient denies nausea, vomiting, diarrhea, or constipation.
+Genitourinary: The patient denies dysuria or increased urinary frequency.
+Neurological: The patient denies headaches.
+Musculoskeletal: No complaints reported.
+Skin: The patient reports a history of eczema but denies any new rashes or changes to his skin condition.
+Allergic: No new allergic reactions reported.
+
+Allergies
+The patient reports a severe allergy to peanuts, which resulted in an anaphylactic reaction during childhood. He carries an EpiPen at all times. He denies any known drug allergies.
+
+Past Medical History
+The patient reports a history of eczema and a peanut allergy. The electronic health record contains a complex history including essential hypertension, chronic kidney disease (progressing from stage 1 to end-stage renal disease with a history of renal transplant in 2018), chronic intractable migraine without aura, and chronic pain. The record also notes a history of viral sinusitis, gingivitis, and impacted molars. However, the patient’s current self-reported history during this encounter is limited to eczema and peanut allergy.
+
+Surgical History
+The patient denies any prior surgeries. The electronic health record notes a history of renal transplant in 2018.
+
+Social History
+The patient lives with his boyfriend, who is currently asymptomatic. The patient states that he is not currently in close contact with others as his classes are online. He denies cigarette smoking. He reports occasional use of marijuana in the form of edibles but does not smoke it. He denies use of other recreational drugs such as cocaine or MDMA. He is sexually active with his boyfriend and denies a history of sexually transmitted infections. He reports drinking alcohol occasionally, specifically a couple of beers on the weekend.
+
+Family History
+The patient reports that his uncle had prostate cancer. He denies any family history of breast cancer, ovarian cancer, heart conditions, lung conditions, or loss of smell.
+
+Current Medications
+The patient reports taking oral birth control (noted as a discrepancy in the transcript, as the patient is male; this may refer to a partner's medication or a transcription error, but is recorded as stated) and uses a steroid cream for eczema flares, approximately twice a week during winter. The electronic health record lists active medications including Tacrolimus (extended release and injection), Amoxicillin/Clavulanate, Hydrochlorothiazide, Amlodipine, and Sodium Fluoride gel.
+
+Objective
+Vital Signs
+Heart rate: 85.00 bpm.
+Respiratory rate: 14.00 breaths/min.
+Blood pressure: Not available.
+Temperature: Not available.
+SpO2: Not available.
+Weight: Not available.
+Height: 179.80 cm.
+BMI: 28.83.
+
+Physical Exam
+No detailed physical examination findings were documented in the provided transcript or extract for this specific encounter.
+
+Labs
+No laboratory results were obtained or documented during this specific encounter. Previous records show a history of lab work including CBC, lipid panels, and renal function tests, but these are not relevant to the current acute presentation of anosmia.
+
+Imaging
+No imaging studies were performed during this encounter.
+
+Assessment
+The patient presents with acute onset anosmia and ageusia over the last two days. The primary concern is SARS-CoV-2 infection, given the characteristic symptom profile. The patient is otherwise asymptomatic with no respiratory distress, fever, or significant systemic symptoms. The differential diagnosis includes viral upper respiratory infections, though the isolated nature of the olfactory and gustatory loss is highly suggestive of SARS-CoV-2.
+
+Plan
+1. Diagnostic Testing: A nasal swab test for SARS-CoV-2 was performed during this visit. Results are expected within 48 hours.
+2. Isolation Precautions: The patient was instructed to self-isolate for 14 days following the resolution of his symptoms.
+3. Follow-up: The patient will be contacted when the test results are available to determine further management.
+4. Allergy Management: The patient was reminded of the importance of carrying his EpiPen due to his history of anaphylaxis to peanuts.

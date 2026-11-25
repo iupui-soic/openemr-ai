@@ -1,0 +1,73 @@
+Model: qwen/qwen3.8-27b
+Patient: CAR0004
+Detected Disease: Chest Pain
+Generated: 2026-11-19 05:24:55
+Time: 5.63s
+Tokens: 11,488 in / 1,275 out
+============================================================
+
+Patient Information
+Name: Aileen Vi Rempel
+Date of Birth: 1917-07-25
+Sex: Female
+Patient ID: 2502
+Address: 247 Goldner Spur Unit 96, Quincy, Massachusetts 02171
+Encounter Date: 2020-08-05
+Attending Physician: Dr. External Provider
+
+Chief Complaint
+The patient presents with a three-day history of sharp chest pain, expressing significant anxiety and fear that she is experiencing a myocardial infarction, particularly in the context of her father's recent death from a heart attack.
+
+History of Present Illness
+The patient is a 25-year-old female (per transcript) who reports the onset of sharp chest pain approximately three days prior to the visit. The pain is localized to the anterior chest, specifically over the heart, and occasionally radiates to the neck. The pain is described as sharp in quality and lasts for only a few seconds before resolving. It is exacerbated by coughing and lying down, but improves with leaning forward. The patient rates the pain intensity as 6 out of 10. She denies any associated shortness of breath, dizziness, palpitations, nausea, vomiting, fever, chills, or weakness. She reports a recent history of influenza one week prior to the current episode, which included fever, runny nose, cough, and fatigue, but states these symptoms have resolved. She took acetaminophen (Tylenol) once yesterday, which provided some relief. The patient denies any recent trauma or falls. She is currently a student studying engineering at Western and works part-time as a postman. She lives with her mother. The patient reports significant emotional distress due to her father's death from a heart attack two weeks ago, which has heightened her anxiety regarding her own cardiac health.
+
+Review of Systems
+Constitutional: Denies current fever, chills, or fatigue. Reports recent resolved flu-like symptoms.
+Cardiovascular: Positive for sharp chest pain radiating to the neck. Denies palpitations, shortness of breath, or syncope.
+Respiratory: Denies current cough, runny nose, or shortness of breath.
+Gastrointestinal: Denies nausea, vomiting, or abdominal pain.
+Neurological: No information available.
+Musculoskeletal: No information available.
+Psychiatric: Reports significant anxiety and fear of having a heart attack.
+
+PastMedical and Surgical Histories
+The patient denies any chronic medical conditions, stating she is a "prettyhealthy 25 year old." She denies any history of diabetes, hypertension, or other diagnoses. She denies any previous surgeries. Note: The electronic health record contains extensive historical data including hypertension, diabetes, renal disease, and myocardial infarction, but these conflict with the patient's current self-report in the transcript. Per instructions, the transcript is prioritized for current status.
+
+Social History
+The patient is a student and works part-time as a postman. She lives with her mother in a house. She denies tobacco use. She denies recreational drug use. She reports occasional alcohol consumption, limited to one or two drinks on weekends.
+
+Family History
+The patient reports that her father suffered a heart attack two weeks prior to this visit and subsequently passed away. No other family history of heart conditions, cancer, or other significant illnesses was reported.
+
+Current Medications
+The patient reports taking acetaminophen (Tylenol) as needed for pain. She denies taking any other regular medications. Note: The electronic health record lists numerous active medications including clopidogrel, atorvastatin, losartan, metoprolol, and nitroprusside, but these are not corroborated by the patient's current statement in the transcript.
+
+Objective
+Vital Signs
+Blood Pressure: Not available
+Heart Rate: 82.00 bpm
+Respiratory Rate: 14.00 breaths/min
+Temperature: Not available
+SpO2: Not available
+Weight: Not available
+Height: 166.90 cm
+BMI: 27.64
+
+Physical Examination
+No detailed physical examination findings are documented in the provided transcript or extract.
+
+Labs
+No specific lab results are directly tied to the current encounter in the transcript. The electronic health record contains historical lab values including normal electrolytes (Sodium 141.33 mmol/L, Potassium 4.19 mmol/L, Chloride 108.32 mmol/L, Carbon Dioxide 27.21 mmol/L), normal renal function (Creatinine 0.35 mg/dL, Urea Nitrogen 15.7 mg/dL), and normal glucose (92.46 mg/dL). These historical values do not reflect the current acute presentation.
+
+Imaging
+No imaging studies were performed or documented for this encounter.
+
+Assessment
+1. Atypical Chest Pain: The patient presents with sharp, pleuritic chest pain that is positional (worse with lying down, better with leaning forward) and brief in duration. This presentation is atypical for acute coronary syndrome (ACS) and more suggestive of musculoskeletal or pericardial etiology, though the recent viral illness raises the possibility of viral pericarditis.
+2. Anxiety: The patient exhibits significant anxiety related to her father's recent cardiac death.
+
+Plan
+1. Diagnostic Testing: An electrocardiogram (ECG) will be performed to evaluate cardiac function and rule out acute cardiac events. Blood work may be obtained if clinically indicated based on ECG results.
+2. Management: The patient was advised to remain calm and await test results. No specific pharmacological intervention was prescribed during this encounter.
+3. Follow-up: The patient will follow up based on the results of the ECG and any additional testing. She was encouraged to seek immediate medical attention if symptoms worsen or change character.
+4. Supportive Care: Acknowledgment of the patient's grief and anxiety regarding her father's death was provided.
