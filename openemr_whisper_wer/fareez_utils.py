@@ -1,6 +1,6 @@
 """
 Utilities for loading Fareez OSCE dataset for ASR evaluation.
-272 simulated patient-physician conversations (~55 hours).
+272 simulated patient-physician conversations (51.9 hours of audio; mean 11.4 minutes).
 Audio: MP3. Transcripts: TXT (manually corrected).
 
 Dataset: https://springernature.figshare.com/collections/5545842

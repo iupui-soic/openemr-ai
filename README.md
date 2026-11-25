@@ -242,7 +242,7 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 1. **Institutional Dataset**: 6 custom simulated doctor-patient conversations recorded at IU Indianapolis
 2. **Kaggle Dataset**: [Medical Speech, Transcription, and Intent](https://www.kaggle.com/datasets/paultimothymooney/medical-speech-transcription-and-intent) (~380 utterances)
 3. **PriMock57**: 57 primary care mock consultations from [PriMock57](https://github.com/babylonhealth/primock57) (~9 hours, real clinicians, utterance-level TextGrid transcripts)
-4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (~55 hours, 5 medical specialties)
+4. **Fareez OSCE**: 272 simulated patient-physician OSCE interviews from [Fareez et al.](https://springernature.figshare.com/collections/5545842) (51.9 hours of audio, 5 medical specialties)
 
 ### Models Evaluated
 
@@ -283,7 +283,7 @@ Rows sorted by mean rank across datasets. Bold = best in that column.
 - Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
 - Kaggle (~385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
 - PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
-- Fareez OSCE (272 multi-specialty interviews, ~55h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
+- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono): Voxtral wins decisively (14.50% with 272/272) vs next-best Parakeet TDT 0.6B v2 (18.63% on 251/272).
 
 **Key Findings (revised after Voxtral + Parakeet 0.6B v2 evaluation):**
 - **Voxtral Mini 3B is the new production pick** — best WER on Fareez OSCE (14.50%) AND on institutional recordings (5.71%); 25 s/file inference on RTX 6000 is the tradeoff.
