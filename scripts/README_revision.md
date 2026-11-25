@@ -59,4 +59,4 @@ New scripts write the column `sbert_similarity`. Older files keep `sbert_coheren
 
 `rag_models/models/medgemma_27b_modal.py` runs `google/medgemma-27b-text-it` in bfloat16 on a Modal A100-80GB over the six
 institutional cases. Three passes are in `rag_models/results/institutional/medgemma-27b/run{1,2,3}/`. The 4-bit run is the `medgemma-27b-4bit` row of
-`rag_models/results/institutional/table2_rag_6case.csv`.
+`rag_models/results/institutional/institutional_rag_6case.csv`.

@@ -196,8 +196,8 @@ Three ablations on the same six institutional conversations, 3 runs per LLM (7 L
 
 Canonical numeric outputs and a reproducibility notebook:
 
-- [`rag_models/results/institutional/table2_rag_6case.csv`](rag_models/results/institutional/table2_rag_6case.csv) — RAG on (k=2).
-- [`rag_models/results/institutional/table2b_norag_6case.csv`](rag_models/results/institutional/table2b_norag_6case.csv) — no-RAG baseline.
+- [`rag_models/results/institutional/institutional_rag_6case.csv`](rag_models/results/institutional/institutional_rag_6case.csv) — RAG on (k=2).
+- [`rag_models/results/institutional/institutional_norag_6case.csv`](rag_models/results/institutional/institutional_norag_6case.csv) — no-RAG baseline.
 - [`rag_models/results/institutional/ablation_analysis.ipynb`](rag_models/results/institutional/ablation_analysis.ipynb) — loads both CSVs, reports deltas, and verifies every quantitative claim made in the paper's ablation paragraphs.
 
 Findings: disabling retrieval degrades the entity- and structure-sensitive metrics across all seven LLMs (MedCAT −0.020 to −0.060, ROUGE-L −0.005 to −0.050, BERTScore F1 −0.020 to −0.060); BLEU and SBERT show the same directional pattern but several cells (e.g., GPT-OSS-120B BLEU 0.071→0.069) are within three-run variance. k=3 and k=5 degraded quality vs. k=2 on the gold-referenced n=6 cases; on the Fareez transcript-reference ablation (Table 2c) the same sweep fell within run-to-run variance. ClinicalBERT and PubMedBERT matched all-MiniLM-L6-v2 at higher latency. Full methodology in [`rag_models/README.md`](rag_models/README.md#rag-ablation-study-institutional-6-case-evaluation).
@@ -209,10 +209,10 @@ The n=6 ablation above was replicated on the 40 Fareez OSCE conversations used f
 Canonical artefacts in [`rag_models/results/fareez/ablations/`](rag_models/results/fareez/ablations/):
 
 - `fareez_ablation_metrics.csv` — per-summary text + entity metrics (1,354 rows)
-- `table2c_means.csv` — per-(cell, model) means
-- `table2c_deltas.csv` — production-minus-cell deltas
-- `table2c_bootstrap_ci.csv` — paired bootstrap 95% CIs (B=5000)
-- `table2c_wilcoxon.csv` — Wilcoxon signed-rank p-values
+- `ablation_means.csv` — per-(cell, model) means
+- `ablation_deltas.csv` — production-minus-cell deltas
+- `ablation_bootstrap_ci.csv` — paired bootstrap 95% CIs (B=5000)
+- `ablation_wilcoxon.csv` — Wilcoxon signed-rank p-values
 - `ablation_analysis_n40.ipynb` — reproducibility notebook
 
 **Headline result:** Of 136 production-vs-cell comparisons across 4 metrics, **only 26 (19%) had bootstrap CIs that excluded zero**, almost all in the prompt-variant cells (`prompt_minimal` 8/4, `prompt_hallucination_guarded` 6/4). The no-RAG, k-sweep, and embedding-substitution cells produced effects within run-to-run noise on the transcript-as-reference metric set. This is consistent with — and methodologically reinforces — the paper's central finding that automated metrics fail to discriminate the model-quality differences clinicians clearly identified (composite 2.95–3.74 on the same 40 conversations).
