@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Orchestrator: launch all reviewer-revision experiments into one tmux session.
+# Orchestrator: launch the ablation, ASR and diarization experiments in one tmux session.
 # Each window runs its own pipeline; logs tee to /tmp/revisions_<window>.log so
 # you can `tail -f` them without attaching.
 #

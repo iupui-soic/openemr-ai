@@ -1,0 +1,201 @@
+Ratings: 477  conversations: 40  raters: 3 
+
+==== accuracy ====
+Likelihood ratio tests of cumulative link models:
+ 
+   formula:                                     link: threshold:
+f0 y ~ 1 + (1 | conversation) + (1 | rater)     logit flexible  
+f1 y ~ model + (1 | conversation) + (1 | rater) logit flexible  
+
+   no.par    AIC  logLik LR.stat df Pr(>Chisq)  
+f0      6 1100.9 -544.46                        
+f1      9 1098.6 -540.28  8.3559  3     0.0392 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                   Estimate Std. Error    z value     Pr(>|z|)
+1|2              -3.4354989  0.6044653 -5.6835336 1.319398e-08
+2|3              -0.1575500  0.5752704 -0.2738712 7.841836e-01
+3|4               1.9500767  0.5837174  3.3407893 8.354060e-04
+4|5               4.8388096  0.7048180  6.8653322 6.633670e-12
+modelgpt-oss-20b -0.1314501  0.2506201 -0.5244996 5.999311e-01
+modelmedgemma-4b -0.6621195  0.2543598 -2.6030825 9.238972e-03
+modelqwen3-32b   -0.4394782  0.2509364 -1.7513526 7.988520e-02
+$conversation
+            (Intercept)
+(Intercept)    1.074823
+attr(,"stddev")
+(Intercept) 
+   1.036737 
+
+$rater
+            (Intercept)
+(Intercept)   0.8075088
+attr(,"stddev")
+(Intercept) 
+  0.8986149 
+
+
+==== completeness ====
+Likelihood ratio tests of cumulative link models:
+ 
+   formula:                                     link: threshold:
+f0 y ~ 1 + (1 | conversation) + (1 | rater)     logit flexible  
+f1 y ~ model + (1 | conversation) + (1 | rater) logit flexible  
+
+   no.par    AIC  logLik LR.stat df Pr(>Chisq)    
+f0      6 999.67 -493.84                          
+f1      9 759.27 -370.64   246.4  3  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                   Estimate Std. Error    z value     Pr(>|z|)
+1|2              -10.407074  1.1242868  -9.256601 2.110438e-20
+2|3               -6.896538  0.7862744  -8.771159 1.768369e-18
+3|4               -3.293300  0.6966624  -4.727254 2.275770e-06
+4|5                1.764414  0.6728215   2.622411 8.731017e-03
+modelgpt-oss-20b  -1.018333  0.3078277  -3.308128 9.392177e-04
+modelmedgemma-4b  -4.939596  0.4034141 -12.244479 1.798290e-34
+modelqwen3-32b    -1.564270  0.3148404  -4.968453 6.748898e-07
+$conversation
+            (Intercept)
+(Intercept)    2.057598
+attr(,"stddev")
+(Intercept) 
+   1.434433 
+
+$rater
+            (Intercept)
+(Intercept)    1.034945
+attr(,"stddev")
+(Intercept) 
+   1.017322 
+
+
+==== conciseness ====
+Likelihood ratio tests of cumulative link models:
+ 
+   formula:                                     link: threshold:
+f0 y ~ 1 + (1 | conversation) + (1 | rater)     logit flexible  
+f1 y ~ model + (1 | conversation) + (1 | rater) logit flexible  
+
+   no.par    AIC  logLik LR.stat df Pr(>Chisq)    
+f0      6 857.78 -422.89                          
+f1      9 840.62 -411.31  23.161  3  3.738e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                   Estimate Std. Error    z value     Pr(>|z|)
+1|2              -5.4963371  1.6518314 -3.3274203 0.0008765407
+2|3              -4.4662090  1.6410472 -2.7215603 0.0064974524
+3|4              -1.0618803  1.6287235 -0.6519709 0.5144199640
+4|5               3.6322029  1.6424737  2.2114223 0.0270066079
+modelgpt-oss-20b  1.0564324  0.2777326  3.8037749 0.0001425077
+modelmedgemma-4b -0.1898390  0.2765168 -0.6865369 0.4923746043
+modelqwen3-32b    0.1396511  0.2648572  0.5272694 0.5980065378
+$conversation
+            (Intercept)
+(Intercept)    0.323264
+attr(,"stddev")
+(Intercept) 
+  0.5685631 
+
+$rater
+            (Intercept)
+(Intercept)    7.758388
+attr(,"stddev")
+(Intercept) 
+   2.785388 
+
+
+==== clinical_utility ====
+Likelihood ratio tests of cumulative link models:
+ 
+   formula:                                     link: threshold:
+f0 y ~ 1 + (1 | conversation) + (1 | rater)     logit flexible  
+f1 y ~ model + (1 | conversation) + (1 | rater) logit flexible  
+
+   no.par    AIC  logLik LR.stat df Pr(>Chisq)    
+f0      6 1211.8 -599.92                          
+f1      9 1118.4 -550.21  99.431  3  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                    Estimate Std. Error      z value     Pr(>|z|)
+1|2              -5.32166067  0.5171287 -10.29078530 7.754136e-25
+2|3              -2.89124682  0.4247940  -6.80623236 1.001878e-11
+3|4               0.00725828  0.3958049   0.01833802 9.853692e-01
+4|5               2.41686296  0.4185065   5.77497165 7.696604e-09
+modelgpt-oss-20b -0.18176652  0.2498718  -0.72743922 4.669569e-01
+modelmedgemma-4b -2.34328535  0.2795384  -8.38269481 5.172948e-17
+modelqwen3-32b   -0.24470929  0.2493020  -0.98157779 3.263079e-01
+$conversation
+            (Intercept)
+(Intercept)     1.49048
+attr(,"stddev")
+(Intercept) 
+   1.220852 
+
+$rater
+            (Intercept)
+(Intercept)   0.2532295
+attr(,"stddev")
+(Intercept) 
+  0.5032191 
+
+
+==== overall_quality ====
+Likelihood ratio tests of cumulative link models:
+ 
+   formula:                                     link: threshold:
+f0 y ~ 1 + (1 | conversation) + (1 | rater)     logit flexible  
+f1 y ~ model + (1 | conversation) + (1 | rater) logit flexible  
+
+   no.par    AIC  logLik LR.stat df Pr(>Chisq)    
+f0      6 1208.3 -598.15                          
+f1      9 1122.7 -552.35  91.606  3  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                   Estimate Std. Error     z value     Pr(>|z|)
+1|2              -4.6670553  0.4468374 -10.4446388 1.550444e-25
+2|3              -2.7467826  0.3859509  -7.1169217 1.103642e-12
+3|4               0.4211830  0.3572317   1.1790191 2.383906e-01
+4|5               2.4525504  0.3843637   6.3808058 1.761586e-10
+modelgpt-oss-20b -0.2098945  0.2513893  -0.8349384 4.037524e-01
+modelmedgemma-4b -2.3054586  0.2821602  -8.1707434 3.064948e-16
+modelqwen3-32b   -0.3231051  0.2508190  -1.2882001 1.976763e-01
+$conversation
+            (Intercept)
+(Intercept)    1.458134
+attr(,"stddev")
+(Intercept) 
+   1.207532 
+
+$rater
+            (Intercept)
+(Intercept)   0.1669604
+attr(,"stddev")
+(Intercept) 
+  0.4086078 
+
+
+        dimension   n lr_chisq df         p conversation_sd rater_sd converged
+         accuracy 477    8.356  3 3.920e-02          1.0367   0.8986      TRUE
+     completeness 477  246.400  3 3.931e-53          1.4344   1.0173      TRUE
+      conciseness 477   23.161  3 3.738e-05          0.5686   2.7854      TRUE
+ clinical_utility 477   99.431  3 2.059e-21          1.2209   0.5032      TRUE
+  overall_quality 477   91.607  3 9.896e-20          1.2075   0.4086      TRUE
+ max_abs_gradient cond_hessian or_gpt-oss-20b or_gpt-oss-20b_lo
+        3.646e-04       135.27         0.8768            0.5365
+        1.411e-04        96.47         0.3612            0.1976
+        7.186e-05       609.42         2.8761            1.6688
+        3.584e-04        60.79         0.8338            0.5109
+        2.804e-04        50.82         0.8107            0.4953
+ or_gpt-oss-20b_hi or_qwen3-32b or_qwen3-32b_lo or_qwen3-32b_hi or_medgemma-4b
+            1.4330       0.6444          0.3940          1.0537       0.515757
+            0.6603       0.2092          0.1129          0.3878       0.007157
+            4.9569       1.1499          0.6842          1.9324       0.827092
+            1.3607       0.7829          0.4803          1.2762       0.096012
+            1.3269       0.7239          0.4428          1.1835       0.099713
+ or_medgemma-4b_lo or_medgemma-4b_hi
+          0.313281           0.84910
+          0.003246           0.01578
+          0.481041           1.42208
+          0.055511           0.16606
+          0.057356           0.17335

@@ -1,0 +1,19 @@
+done Voxtral Mini 3B
+done Parakeet TDT 1.1B
+done Canary 1B-v2
+done Groq Whisper v3 Turbo
+done Whisper Large v3 Turbo
+done Whisper Large v3
+done Parakeet TDT 0.6B v2
+done MedASR
+
+Files common to all 8 models: 70; to all except Whisper Large v3: 250
+                 model  files   wer  wer_common_7  wer_common_8
+  Parakeet TDT 0.6B v2    250 12.51         12.51         12.45
+ Groq Whisper v3 Turbo    270 13.61         13.59         13.33
+       Voxtral Mini 3B    270 13.87         13.14         13.27
+     Parakeet TDT 1.1B    250 14.19         14.19         14.22
+          Canary 1B-v2    270 15.25         15.20         15.21
+      Whisper Large v3     83 17.80           NaN         17.80
+Whisper Large v3 Turbo    270 19.03         19.06         19.07
+                MedASR    270 43.95         44.37         38.91

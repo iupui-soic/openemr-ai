@@ -1,0 +1,47 @@
+Schemas: 1000; distinct diagnosis lists: 973
+Unique conditions: 25; top-1 similarity mean 0.625 (population SD 0.161, sample SD 0.164); >=0.95: ['Cellulitis', 'Pneumonia']; <0.50: 7
+Check: mean 0.625 (SD 0.161) over 25 unique conditions
+Over 40 conversations: mean 0.654 (SD 0.166), range 0.34 to 1.00
+            scope        dimension   n   rho  ci_lo  ci_hi        p
+              all         accuracy 159  0.09  -0.18   0.35 0.256575
+              all     completeness 159  0.02  -0.18   0.22 0.781935
+              all     organization 159  0.04  -0.03   0.12 0.574251
+              all      conciseness 159 -0.05  -0.22   0.12 0.513974
+              all clinical_utility 159  0.09  -0.14   0.32 0.238446
+              all  overall_quality 159  0.06  -0.18   0.29 0.471699
+              all        composite 159  0.05  -0.18   0.28 0.497575
+     gpt-oss-120b         accuracy  40  0.11  -0.24   0.44 0.508801
+     gpt-oss-120b     completeness  40 -0.02  -0.36   0.30 0.924979
+     gpt-oss-120b     organization  40   NaN    NaN    NaN      NaN
+     gpt-oss-120b      conciseness  40 -0.06  -0.40   0.31 0.701471
+     gpt-oss-120b clinical_utility  40  0.09  -0.24   0.41 0.577156
+     gpt-oss-120b  overall_quality  40  0.10  -0.21   0.40 0.541997
+     gpt-oss-120b        composite  40  0.03  -0.31   0.37 0.863047
+      gpt-oss-20b         accuracy  40 -0.05  -0.38   0.28 0.777801
+      gpt-oss-20b     completeness  40 -0.07  -0.41   0.27 0.652629
+      gpt-oss-20b     organization  40   NaN    NaN    NaN      NaN
+      gpt-oss-20b      conciseness  40 -0.11  -0.45   0.26 0.507121
+      gpt-oss-20b clinical_utility  40 -0.03  -0.37   0.31 0.859705
+      gpt-oss-20b  overall_quality  40 -0.10  -0.41   0.22 0.559683
+      gpt-oss-20b        composite  40 -0.06  -0.40   0.27 0.697542
+        qwen3-32b         accuracy  40  0.17  -0.17   0.46 0.284464
+        qwen3-32b     completeness  40  0.11  -0.25   0.45 0.497167
+        qwen3-32b     organization  40  0.21  -0.07   0.48 0.185535
+        qwen3-32b      conciseness  40  0.01  -0.35   0.37 0.948048
+        qwen3-32b clinical_utility  40  0.21  -0.12   0.48 0.202487
+        qwen3-32b  overall_quality  40  0.10  -0.24   0.39 0.530549
+        qwen3-32b        composite  40  0.12  -0.23   0.42 0.464765
+      medgemma-4b         accuracy  39  0.10  -0.23   0.42 0.553710
+      medgemma-4b     completeness  39  0.18  -0.17   0.48 0.284721
+      medgemma-4b     organization  39  0.34   0.02   0.58 0.036933
+      medgemma-4b      conciseness  39 -0.03  -0.35   0.31 0.861321
+      medgemma-4b clinical_utility  39  0.21  -0.12   0.51 0.198246
+      medgemma-4b  overall_quality  39  0.15  -0.17   0.45 0.370861
+      medgemma-4b        composite  39  0.14  -0.17   0.45 0.379963
+conversation_mean         accuracy  40  0.05  -0.32   0.38 0.765907
+conversation_mean     completeness  40 -0.03  -0.38   0.31 0.841928
+conversation_mean     organization  40  0.26  -0.07   0.56 0.103347
+conversation_mean      conciseness  40 -0.02  -0.33   0.27 0.889672
+conversation_mean clinical_utility  40  0.09  -0.24   0.40 0.567571
+conversation_mean  overall_quality  40  0.07  -0.26   0.39 0.683083
+conversation_mean        composite  40  0.08  -0.25   0.40 0.607503

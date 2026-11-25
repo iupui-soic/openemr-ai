@@ -1,0 +1,255 @@
+Notes with both metrics and ratings: 159 (expected 159); ratings: 477 (expected 477)
+
+== Mean (SD) by model
+model                           gpt-oss-120b  gpt-oss-20b  qwen3-32b  medgemma-4b
+bleu_mean                              0.011        0.009      0.015        0.011
+bleu_std                               0.005        0.006      0.007        0.012
+rouge_l_mean                           0.115        0.118      0.129        0.145
+rouge_l_std                            0.012        0.015      0.018        0.045
+sbert_similarity_mean                  0.511        0.529      0.491        0.506
+sbert_similarity_std                   0.086        0.088      0.120        0.082
+bert_f1_mean                           0.799        0.799      0.802        0.801
+bert_f1_std                            0.007        0.007      0.008        0.013
+medcat_entity_recall_mean              0.429        0.396      0.404        0.306
+medcat_entity_recall_std               0.056        0.060      0.057        0.085
+medcat_entity_precision_mean           0.192        0.228      0.260        0.404
+medcat_entity_precision_std            0.040        0.045      0.057        0.099
+medcat_entity_f1_mean                  0.262        0.287      0.313        0.343
+medcat_entity_f1_std                   0.042        0.045      0.053        0.083
+scispacy_entity_recall_mean            0.404        0.373      0.391        0.300
+scispacy_entity_recall_std             0.043        0.054      0.063        0.082
+scispacy_entity_precision_mean         0.227        0.280      0.317        0.490
+scispacy_entity_precision_std          0.048        0.060      0.082        0.117
+scispacy_entity_f1_mean                0.287        0.317      0.346        0.367
+scispacy_entity_f1_std                 0.042        0.051      0.069        0.087
+summary_words_mean                  1005.100      756.350    831.475      564.795
+summary_words_std                    162.305      122.273    128.155      393.987
+
+== Spearman correlations (95% CI from 2,000 bootstrap resamples of conversations)
+                   metric        dimension   n   rho  ci_lo  ci_hi  partial_rho_len  p_ci_lo  p_ci_hi
+                     bleu         accuracy 159 -0.04  -0.22   0.15            -0.06    -0.26     0.14
+                     bleu     completeness 159  0.11  -0.07   0.29            -0.05    -0.25     0.16
+                     bleu     organization 159  0.17   0.01   0.32             0.02    -0.15     0.21
+                     bleu      conciseness 159 -0.20  -0.36  -0.01            -0.05    -0.21     0.11
+                     bleu clinical_utility 159 -0.00  -0.17   0.18            -0.07    -0.27     0.13
+                     bleu  overall_quality 159 -0.02  -0.19   0.17            -0.08    -0.27     0.13
+                     bleu        composite 159  0.01  -0.16   0.19            -0.06    -0.26     0.14
+                  rouge_l         accuracy 159  0.06  -0.16   0.27             0.09    -0.13     0.30
+                  rouge_l     completeness 159 -0.16  -0.35   0.04             0.02    -0.19     0.24
+                  rouge_l     organization 159 -0.32  -0.48  -0.14            -0.17    -0.37     0.03
+                  rouge_l      conciseness 159  0.12  -0.06   0.28            -0.07    -0.24     0.10
+                  rouge_l clinical_utility 159 -0.07  -0.28   0.14             0.00    -0.22     0.22
+                  rouge_l  overall_quality 159 -0.05  -0.26   0.16             0.02    -0.21     0.22
+                  rouge_l        composite 159 -0.09  -0.29   0.12            -0.01    -0.23     0.20
+         sbert_similarity         accuracy 159  0.06  -0.13   0.25             0.07    -0.12     0.26
+         sbert_similarity     completeness 159  0.11  -0.07   0.29             0.20    -0.00     0.39
+         sbert_similarity     organization 159  0.06  -0.09   0.21             0.14    -0.02     0.32
+         sbert_similarity      conciseness 159  0.12  -0.07   0.31             0.06    -0.12     0.25
+         sbert_similarity clinical_utility 159  0.06  -0.12   0.23             0.09    -0.10     0.27
+         sbert_similarity  overall_quality 159  0.09  -0.09   0.25             0.11    -0.07     0.28
+         sbert_similarity        composite 159  0.10  -0.09   0.27             0.13    -0.07     0.31
+                  bert_f1         accuracy 159  0.14  -0.06   0.33             0.15    -0.05     0.34
+                  bert_f1     completeness 159  0.01  -0.20   0.21             0.08    -0.14     0.28
+                  bert_f1     organization 159 -0.08  -0.25   0.10            -0.02    -0.21     0.18
+                  bert_f1      conciseness 159  0.10  -0.07   0.27             0.05    -0.13     0.23
+                  bert_f1 clinical_utility 159  0.09  -0.10   0.29             0.12    -0.08     0.32
+                  bert_f1  overall_quality 159  0.08  -0.13   0.28             0.10    -0.10     0.31
+                  bert_f1        composite 159  0.07  -0.14   0.28             0.10    -0.11     0.31
+     medcat_entity_recall         accuracy 159  0.11  -0.11   0.31             0.09    -0.15     0.32
+     medcat_entity_recall     completeness 159  0.44   0.28   0.59             0.34     0.12     0.52
+     medcat_entity_recall     organization 159  0.49   0.37   0.60             0.39     0.23     0.53
+     medcat_entity_recall      conciseness 159 -0.12  -0.28   0.03             0.06    -0.10     0.19
+     medcat_entity_recall clinical_utility 159  0.25   0.05   0.42             0.20    -0.04     0.41
+     medcat_entity_recall  overall_quality 159  0.22   0.03   0.40             0.18    -0.05     0.39
+     medcat_entity_recall        composite 159  0.28   0.09   0.44             0.23     0.00     0.42
+  medcat_entity_precision         accuracy 159  0.01  -0.17   0.17             0.05    -0.14     0.24
+  medcat_entity_precision     completeness 159 -0.38  -0.53  -0.25            -0.17    -0.38     0.06
+  medcat_entity_precision     organization 159 -0.60  -0.69  -0.49            -0.46    -0.60    -0.27
+  medcat_entity_precision      conciseness 159  0.10  -0.08   0.28            -0.24    -0.37    -0.08
+  medcat_entity_precision clinical_utility 159 -0.21  -0.39  -0.04            -0.12    -0.33     0.09
+  medcat_entity_precision  overall_quality 159 -0.17  -0.35  -0.02            -0.10    -0.30     0.10
+  medcat_entity_precision        composite 159 -0.25  -0.41  -0.09            -0.16    -0.37     0.04
+         medcat_entity_f1         accuracy 159  0.02  -0.19   0.21             0.05    -0.16     0.24
+         medcat_entity_f1     completeness 159 -0.16  -0.33   0.01             0.02    -0.20     0.23
+         medcat_entity_f1     organization 159 -0.31  -0.47  -0.14            -0.16    -0.36     0.06
+         medcat_entity_f1      conciseness 159  0.08  -0.09   0.23            -0.13    -0.28     0.02
+         medcat_entity_f1 clinical_utility 159 -0.09  -0.29   0.10            -0.01    -0.22     0.19
+         medcat_entity_f1  overall_quality 159 -0.07  -0.27   0.11            -0.01    -0.21     0.18
+         medcat_entity_f1        composite 159 -0.11  -0.31   0.07            -0.03    -0.24     0.16
+   scispacy_entity_recall         accuracy 159  0.23   0.01   0.41             0.22    -0.01     0.42
+   scispacy_entity_recall     completeness 159  0.49   0.31   0.63             0.40     0.19     0.58
+   scispacy_entity_recall     organization 159  0.45   0.31   0.59             0.36     0.17     0.53
+   scispacy_entity_recall      conciseness 159 -0.01  -0.17   0.14             0.17     0.01     0.32
+   scispacy_entity_recall clinical_utility 159  0.35   0.16   0.52             0.31     0.09     0.50
+   scispacy_entity_recall  overall_quality 159  0.31   0.12   0.48             0.28     0.06     0.47
+   scispacy_entity_recall        composite 159  0.37   0.19   0.53             0.33     0.11     0.51
+scispacy_entity_precision         accuracy 159  0.06  -0.12   0.23             0.12    -0.09     0.31
+scispacy_entity_precision     completeness 159 -0.34  -0.50  -0.21            -0.09    -0.32     0.15
+scispacy_entity_precision     organization 159 -0.59  -0.69  -0.48            -0.44    -0.59    -0.25
+scispacy_entity_precision      conciseness 159  0.18  -0.01   0.36            -0.14    -0.31     0.03
+scispacy_entity_precision clinical_utility 159 -0.15  -0.35   0.03            -0.04    -0.28     0.20
+scispacy_entity_precision  overall_quality 159 -0.12  -0.30   0.05            -0.02    -0.25     0.22
+scispacy_entity_precision        composite 159 -0.18  -0.36  -0.02            -0.08    -0.31     0.16
+       scispacy_entity_f1         accuracy 159  0.14  -0.07   0.33             0.18    -0.03     0.37
+       scispacy_entity_f1     completeness 159 -0.07  -0.25   0.10             0.14    -0.07     0.34
+       scispacy_entity_f1     organization 159 -0.27  -0.45  -0.10            -0.11    -0.32     0.11
+       scispacy_entity_f1      conciseness 159  0.19   0.01   0.35             0.00    -0.17     0.18
+       scispacy_entity_f1 clinical_utility 159  0.03  -0.17   0.21             0.12    -0.09     0.31
+       scispacy_entity_f1  overall_quality 159  0.04  -0.15   0.22             0.12    -0.09     0.30
+       scispacy_entity_f1        composite 159  0.02  -0.17   0.19             0.11    -0.09     0.30
+            summary_words         accuracy 159  0.06  -0.06   0.17              NaN      NaN      NaN
+            summary_words     completeness 159  0.45   0.29   0.60              NaN      NaN      NaN
+            summary_words     organization 159  0.46   0.26   0.63              NaN      NaN      NaN
+            summary_words      conciseness 159 -0.46  -0.59  -0.30              NaN      NaN      NaN
+            summary_words clinical_utility 159  0.19   0.04   0.33              NaN      NaN      NaN
+            summary_words  overall_quality 159  0.16   0.02   0.30              NaN      NaN      NaN
+            summary_words        composite 159  0.20   0.05   0.35              NaN      NaN      NaN
+
+== Between-model tests of each metric
+                   metric                        test  n_conv   stat            p     W       p_bonf  mean_diff
+                     bleu                    Friedman      39  25.12 1.455210e-05 0.215          NaN        NaN
+                     bleu gpt-oss-120b vs gpt-oss-20b      39 211.00 1.159097e-02   NaN 6.954579e-02     0.0024
+                     bleu   gpt-oss-120b vs qwen3-32b      39 145.00 3.880122e-04   NaN 2.328073e-03    -0.0041
+                     bleu gpt-oss-120b vs medgemma-4b      39 269.00 9.287868e-02   NaN 5.572721e-01     0.0004
+                     bleu    gpt-oss-20b vs qwen3-32b      39  74.00 1.562486e-06   NaN 9.374919e-06    -0.0065
+                     bleu  gpt-oss-20b vs medgemma-4b      39 342.00 5.116035e-01   NaN 1.000000e+00    -0.0020
+                     bleu    qwen3-32b vs medgemma-4b      39 176.00 2.242356e-03   NaN 1.345414e-02     0.0045
+                  rouge_l                    Friedman      39  44.75 1.043708e-09 0.383          NaN        NaN
+                  rouge_l gpt-oss-120b vs gpt-oss-20b      39 300.00 2.142567e-01   NaN 1.000000e+00    -0.0030
+                  rouge_l   gpt-oss-120b vs qwen3-32b      39  41.00 3.621244e-08   NaN 2.172746e-07    -0.0147
+                  rouge_l gpt-oss-120b vs medgemma-4b      39  94.00 9.681480e-06   NaN 5.808888e-05    -0.0303
+                  rouge_l    gpt-oss-20b vs qwen3-32b      39  79.00 2.529116e-06   NaN 1.517469e-05    -0.0117
+                  rouge_l  gpt-oss-20b vs medgemma-4b      39 113.00 4.399772e-05   NaN 2.639863e-04    -0.0272
+                  rouge_l    qwen3-32b vs medgemma-4b      39 195.00 5.695509e-03   NaN 3.417306e-02    -0.0155
+         sbert_similarity                    Friedman      39   2.66 4.468030e-01 0.023          NaN        NaN
+         sbert_similarity gpt-oss-120b vs gpt-oss-20b      39 307.00 2.527135e-01   NaN 1.000000e+00    -0.0187
+         sbert_similarity   gpt-oss-120b vs qwen3-32b      39 308.00 2.585683e-01   NaN 1.000000e+00     0.0189
+         sbert_similarity gpt-oss-120b vs medgemma-4b      39 385.00 9.504996e-01   NaN 1.000000e+00     0.0019
+         sbert_similarity    gpt-oss-20b vs qwen3-32b      39 271.00 9.855393e-02   NaN 5.913236e-01     0.0376
+         sbert_similarity  gpt-oss-20b vs medgemma-4b      39 302.00 2.247968e-01   NaN 1.000000e+00     0.0207
+         sbert_similarity    qwen3-32b vs medgemma-4b      39 342.00 5.116035e-01   NaN 1.000000e+00    -0.0169
+                  bert_f1                    Friedman      39  15.92 1.175914e-03 0.136          NaN        NaN
+                  bert_f1 gpt-oss-120b vs gpt-oss-20b      39 357.00 6.536582e-01   NaN 1.000000e+00     0.0002
+                  bert_f1   gpt-oss-120b vs qwen3-32b      39 124.00 9.754515e-05   NaN 5.852709e-04    -0.0035
+                  bert_f1 gpt-oss-120b vs medgemma-4b      39 252.00 5.434839e-02   NaN 3.260904e-01    -0.0023
+                  bert_f1    gpt-oss-20b vs qwen3-32b      39 146.00 4.126614e-04   NaN 2.475969e-03    -0.0037
+                  bert_f1  gpt-oss-20b vs medgemma-4b      39 239.00 3.466464e-02   NaN 2.079878e-01    -0.0026
+                  bert_f1    qwen3-32b vs medgemma-4b      39 383.00 9.285482e-01   NaN 1.000000e+00     0.0012
+     medcat_entity_recall                    Friedman      39  57.22 2.307247e-12 0.489          NaN        NaN
+     medcat_entity_recall gpt-oss-120b vs gpt-oss-20b      39 134.00 6.040526e-04   NaN 3.624315e-03     0.0362
+     medcat_entity_recall   gpt-oss-120b vs qwen3-32b      39 173.00 7.083309e-03   NaN 4.249985e-02     0.0234
+     medcat_entity_recall gpt-oss-120b vs medgemma-4b      39   2.00 1.091394e-11   NaN 6.548362e-11     0.1241
+     medcat_entity_recall    gpt-oss-20b vs qwen3-32b      39 260.00 2.514345e-01   NaN 1.000000e+00    -0.0128
+     medcat_entity_recall  gpt-oss-20b vs medgemma-4b      39  40.00 3.163586e-08   NaN 1.898152e-07     0.0879
+     medcat_entity_recall    qwen3-32b vs medgemma-4b      39  17.00 2.950927e-07   NaN 1.770556e-06     0.1007
+  medcat_entity_precision                    Friedman      39  95.19 1.680478e-20 0.814          NaN        NaN
+  medcat_entity_precision gpt-oss-120b vs gpt-oss-20b      39  52.00 1.454282e-07   NaN 8.725692e-07    -0.0338
+  medcat_entity_precision   gpt-oss-120b vs qwen3-32b      39   0.00 3.637979e-12   NaN 2.182787e-11    -0.0674
+  medcat_entity_precision gpt-oss-120b vs medgemma-4b      39   0.00 3.637979e-12   NaN 2.182787e-11    -0.2117
+  medcat_entity_precision    gpt-oss-20b vs qwen3-32b      39  68.00 1.149573e-05   NaN 6.897440e-05    -0.0336
+  medcat_entity_precision  gpt-oss-20b vs medgemma-4b      39   3.00 1.818989e-11   NaN 1.091394e-10    -0.1779
+  medcat_entity_precision    qwen3-32b vs medgemma-4b      39   8.00 9.094947e-11   NaN 5.456968e-10    -0.1443
+         medcat_entity_f1                    Friedman      39  49.10 1.240334e-10 0.420          NaN        NaN
+         medcat_entity_f1 gpt-oss-120b vs gpt-oss-20b      39 170.00 1.635122e-03   NaN 9.810732e-03    -0.0216
+         medcat_entity_f1   gpt-oss-120b vs qwen3-32b      39  12.00 2.546585e-10   NaN 1.527951e-09    -0.0507
+         medcat_entity_f1 gpt-oss-120b vs medgemma-4b      39  55.00 2.068409e-07   NaN 1.241046e-06    -0.0804
+         medcat_entity_f1    gpt-oss-20b vs qwen3-32b      39 104.00 1.111545e-04   NaN 6.669273e-04    -0.0291
+         medcat_entity_f1  gpt-oss-20b vs medgemma-4b      39 111.00 3.784197e-05   NaN 2.270518e-04    -0.0588
+         medcat_entity_f1    qwen3-32b vs medgemma-4b      39 230.00 2.485555e-02   NaN 1.491333e-01    -0.0297
+   scispacy_entity_recall                    Friedman      39  43.36 2.063066e-09 0.371          NaN        NaN
+   scispacy_entity_recall gpt-oss-120b vs gpt-oss-20b      39 146.00 1.933405e-03   NaN 1.160043e-02     0.0321
+   scispacy_entity_recall   gpt-oss-120b vs qwen3-32b      39 225.00 3.213612e-01   NaN 1.000000e+00     0.0100
+   scispacy_entity_recall gpt-oss-120b vs medgemma-4b      39  28.00 6.798628e-07   NaN 4.079177e-06     0.1028
+   scispacy_entity_recall    gpt-oss-20b vs qwen3-32b      39 241.00 9.550753e-02   NaN 5.730452e-01    -0.0221
+   scispacy_entity_recall  gpt-oss-20b vs medgemma-4b      39 111.00 3.784197e-05   NaN 2.270518e-04     0.0706
+   scispacy_entity_recall    qwen3-32b vs medgemma-4b      39  28.00 1.058637e-06   NaN 6.351821e-06     0.0928
+scispacy_entity_precision                    Friedman      39  96.82 7.518598e-21 0.827          NaN        NaN
+scispacy_entity_precision gpt-oss-120b vs gpt-oss-20b      39  16.00 6.148184e-10   NaN 3.688911e-09    -0.0522
+scispacy_entity_precision   gpt-oss-120b vs qwen3-32b      39   1.00 7.275958e-12   NaN 4.365575e-11    -0.0907
+scispacy_entity_precision gpt-oss-120b vs medgemma-4b      39   0.00 3.637979e-12   NaN 2.182787e-11    -0.2645
+scispacy_entity_precision    gpt-oss-20b vs qwen3-32b      39 122.00 8.473594e-05   NaN 5.084156e-04    -0.0384
+scispacy_entity_precision  gpt-oss-20b vs medgemma-4b      39   4.00 2.546585e-11   NaN 1.527951e-10    -0.2123
+scispacy_entity_precision    qwen3-32b vs medgemma-4b      39  10.00 1.564331e-10   NaN 9.385985e-10    -0.1739
+       scispacy_entity_f1                    Friedman      39  44.45 1.213273e-09 0.380          NaN        NaN
+       scispacy_entity_f1 gpt-oss-120b vs gpt-oss-20b      39  99.00 1.469051e-05   NaN 8.814307e-05    -0.0284
+       scispacy_entity_f1   gpt-oss-120b vs qwen3-32b      39  21.00 1.626177e-09   NaN 9.757059e-09    -0.0609
+       scispacy_entity_f1 gpt-oss-120b vs medgemma-4b      39  78.00 2.300272e-06   NaN 1.380163e-05    -0.0816
+       scispacy_entity_f1    gpt-oss-20b vs qwen3-32b      39 155.00 7.071368e-04   NaN 4.242821e-03    -0.0325
+       scispacy_entity_f1  gpt-oss-20b vs medgemma-4b      39 142.00 3.218550e-04   NaN 1.931130e-03    -0.0532
+       scispacy_entity_f1    qwen3-32b vs medgemma-4b      39 289.00 1.624803e-01   NaN 9.748819e-01    -0.0207
+            summary_words                    Friedman      39  54.23 1.001841e-11 0.464          NaN        NaN
+            summary_words gpt-oss-120b vs gpt-oss-20b      39  11.00 2.000888e-10   NaN 1.200533e-09   246.1538
+            summary_words   gpt-oss-120b vs qwen3-32b      39  77.50 2.300272e-06   NaN 1.380163e-05   166.7692
+            summary_words gpt-oss-120b vs medgemma-4b      39  92.00 8.161202e-06   NaN 4.896721e-05   436.8974
+            summary_words    gpt-oss-20b vs qwen3-32b      39 188.50 4.087226e-03   NaN 2.452336e-02   -79.3846
+            summary_words  gpt-oss-20b vs medgemma-4b      39 203.50 8.562067e-03   NaN 5.137240e-02   190.7436
+            summary_words    qwen3-32b vs medgemma-4b      39 160.00 9.425950e-04   NaN 5.655570e-03   270.1282
+
+== CLMM: odds ratio for a higher rating per 1 SD of the metric, adjusted for log length and rater
+                   metric        dimension   n  or_per_sd  ci_lo  ci_hi  lr_chisq_1df            p  or_log_length_per_sd  conversation_sd  converged
+                     bleu         accuracy 477       0.91   0.71   1.15          0.66 4.150146e-01                  1.11             1.00       True
+                     bleu     completeness 477       0.54   0.41   0.71         19.94 7.973980e-06                  4.21             1.10       True
+                     bleu     organization 477       0.38   0.26   0.56         27.50 1.572291e-07                  3.98             0.78       True
+                     bleu      conciseness 477       0.57   0.43   0.76         17.34 3.124539e-05                  0.51             0.52       True
+                     bleu clinical_utility 477       0.63   0.50   0.80         13.97 1.853270e-04                  1.69             1.04       True
+                     bleu  overall_quality 477       0.59   0.46   0.75         17.47 2.916348e-05                  1.59             1.04       True
+                  rouge_l         accuracy 477       1.13   0.89   1.44          0.94 3.330364e-01                  1.12             0.98       True
+                  rouge_l     completeness 477       0.96   0.72   1.26          0.10 7.494558e-01                  3.19             1.05       True
+                  rouge_l     organization 477       0.90   0.69   1.19          0.55 4.576517e-01                  2.17             0.20       True
+                  rouge_l      conciseness 477       0.91   0.70   1.18          0.52 4.710233e-01                  0.41             0.37       True
+                  rouge_l clinical_utility 477       0.96   0.75   1.24          0.08 7.728634e-01                  1.41             1.03       True
+                  rouge_l  overall_quality 477       0.96   0.74   1.24          0.10 7.526347e-01                  1.30             1.04       True
+         sbert_similarity         accuracy 477       1.30   1.02   1.65          4.49 3.403814e-02                  1.10             1.01       True
+         sbert_similarity     completeness 477       1.51   1.17   1.95         10.00 1.565339e-03                  3.35             0.98       True
+         sbert_similarity     organization 477       1.41   1.07   1.85          6.14 1.319131e-02                  2.29             0.00       True
+         sbert_similarity      conciseness 477       1.27   1.03   1.57          5.12 2.366797e-02                  0.44             0.32       True
+         sbert_similarity clinical_utility 477       1.26   1.00   1.59          3.81 5.099051e-02                  1.46             1.01       True
+         sbert_similarity  overall_quality 477       1.29   1.02   1.62          4.41 3.579092e-02                  1.35             1.01       True
+                  bert_f1         accuracy 477       1.29   1.02   1.65          4.33 3.745972e-02                  1.11             0.98       True
+                  bert_f1     completeness 477       1.38   1.03   1.85          4.73 2.967974e-02                  3.35             1.00       True
+                  bert_f1     organization 477       1.34   0.99   1.82          4.09 4.324034e-02                  2.36             0.23       True
+                  bert_f1      conciseness 477       1.25   0.98   1.59          3.34 6.742663e-02                  0.44             0.37       True
+                  bert_f1 clinical_utility 477       1.53   1.18   1.98         10.14 1.454132e-03                  1.52             1.01       True
+                  bert_f1  overall_quality 477       1.49   1.15   1.93          8.86 2.908845e-03                  1.39             1.01       True
+     medcat_entity_recall         accuracy 477       1.28   0.99   1.65          3.65 5.613436e-02                  0.95             1.02       True
+     medcat_entity_recall     completeness 477       3.35   2.39   4.69         52.31 4.731552e-13                  1.83             1.35       True
+     medcat_entity_recall     organization 477       6.77   3.73  12.29         72.87 1.382445e-17                  1.31             1.40       True
+     medcat_entity_recall      conciseness 477       2.38   1.63   3.45         28.29 1.043865e-07                  0.27             0.73       True
+     medcat_entity_recall clinical_utility 477       2.27   1.72   3.00         34.65 3.956318e-09                  0.93             1.21       True
+     medcat_entity_recall  overall_quality 477       2.33   1.75   3.09         35.22 2.945219e-09                  0.84             1.20       True
+  medcat_entity_precision         accuracy 477       0.87   0.66   1.13          1.12 2.889279e-01                  0.98             1.04       True
+  medcat_entity_precision     completeness 477       0.32   0.23   0.46         42.38 7.519632e-11                  1.60             1.46       True
+  medcat_entity_precision     organization 477       0.07   0.03   0.15        101.70 6.475634e-24                  0.60             1.88       True
+  medcat_entity_precision      conciseness 477       0.22   0.14   0.34         60.57 7.093575e-15                  0.13             0.98       True
+  medcat_entity_precision clinical_utility 477       0.38   0.28   0.51         40.54 1.923354e-10                  0.74             1.37       True
+  medcat_entity_precision  overall_quality 477       0.33   0.24   0.45         50.08 1.476142e-12                  0.62             1.43       True
+         medcat_entity_f1         accuracy 477       1.06   0.83   1.36          0.22 6.395947e-01                  1.10             1.00       True
+         medcat_entity_f1     completeness 477       0.85   0.64   1.12          1.38 2.405118e-01                  3.05             1.09       True
+         medcat_entity_f1     organization 477       0.70   0.50   0.98          5.23 2.217217e-02                  2.04             0.42       True
+         medcat_entity_f1      conciseness 477       0.77   0.59   1.00          3.99 4.589848e-02                  0.38             0.42       True
+         medcat_entity_f1 clinical_utility 477       0.83   0.64   1.08          1.98 1.598924e-01                  1.33             1.08       True
+         medcat_entity_f1  overall_quality 477       0.79   0.60   1.02          3.24 7.203634e-02                  1.20             1.10       True
+   scispacy_entity_recall         accuracy 477       1.48   1.17   1.87         11.25 7.974605e-04                  0.91             1.01       True
+   scispacy_entity_recall     completeness 477       3.29   2.45   4.42         64.80 8.273525e-16                  2.01             1.21       True
+   scispacy_entity_recall     organization 477       5.30   3.22   8.71         69.46 7.797563e-17                  1.54             1.18       True
+   scispacy_entity_recall      conciseness 477       2.71   1.96   3.76         47.65 5.103603e-12                  0.26             0.64       True
+   scispacy_entity_recall clinical_utility 477       2.36   1.85   3.01         48.06 4.127468e-12                  0.97             1.11       True
+   scispacy_entity_recall  overall_quality 477       2.44   1.90   3.15         49.49 1.988845e-12                  0.87             1.13       True
+scispacy_entity_precision         accuracy 477       1.00   0.76   1.33          0.00 9.915790e-01                  1.07             1.01       True
+scispacy_entity_precision     completeness 477       0.38   0.26   0.54         28.29 1.041973e-07                  1.68             1.41       True
+scispacy_entity_precision     organization 477       0.06   0.03   0.14         92.76 5.911655e-22                  0.56             2.06       True
+scispacy_entity_precision      conciseness 477       0.32   0.21   0.49         33.38 7.598055e-09                  0.18             0.83       True
+scispacy_entity_precision clinical_utility 477       0.45   0.33   0.62         24.86 6.159500e-07                  0.80             1.32       True
+scispacy_entity_precision  overall_quality 477       0.39   0.28   0.55         31.24 2.278731e-08                  0.67             1.38       True
+       scispacy_entity_f1         accuracy 477       1.33   1.04   1.69          5.16 2.314234e-02                  1.20             0.94       True
+       scispacy_entity_f1     completeness 477       1.19   0.91   1.56          1.58 2.083512e-01                  3.46             0.99       True
+       scispacy_entity_f1     organization 477       0.88   0.66   1.16          0.90 3.431470e-01                  2.16             0.17       True
+       scispacy_entity_f1      conciseness 477       1.07   0.85   1.36          0.35 5.547834e-01                  0.45             0.30       True
+       scispacy_entity_f1 clinical_utility 477       1.14   0.89   1.46          1.10 2.947920e-01                  1.51             0.98       True
+       scispacy_entity_f1  overall_quality 477       1.11   0.86   1.42          0.62 4.310357e-01                  1.37             1.00       True
+          log_length_only         accuracy 477       1.07   0.89   1.29           NaN          NaN                   NaN             1.01       True
+          log_length_only     completeness 477       3.24   2.56   4.09           NaN          NaN                   NaN             1.04       True
+          log_length_only     organization 477       2.24   1.75   2.86           NaN          NaN                   NaN             0.00       True
+          log_length_only      conciseness 477       0.43   0.34   0.54           NaN          NaN                   NaN             0.33       True
+          log_length_only clinical_utility 477       1.43   1.18   1.73           NaN          NaN                   NaN             1.02       True
+          log_length_only  overall_quality 477       1.32   1.09   1.60           NaN          NaN                   NaN             1.03       True

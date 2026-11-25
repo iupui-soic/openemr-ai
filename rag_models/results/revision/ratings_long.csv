@@ -1,0 +1,481 @@
+summary_id,rater,conversation,model,specialty,condition,accuracy,completeness,organization,conciseness,clinical_utility,overall_quality,failed_generation
+S001,rater_1,GAS0002,gpt-oss-20b,GAS,Abdominal Pain,2,3,5,3,3,3,0
+S002,rater_1,RES0058,gpt-oss-20b,RES,Upper Respiratory Infection,4,4,5,4,4,4,0
+S003,rater_1,MSK0019,medgemma-4b,MSK,Tennis Elbow,3,3,4,3,3,3,0
+S004,rater_1,RES0111,qwen3-32b,RES,Sore Throat,2,3,4,2,2,2,0
+S005,rater_1,MSK0014,gpt-oss-20b,MSK,Knee Arthritis,3,4,5,3,4,3,0
+S006,rater_1,MSK0016,medgemma-4b,MSK,Carpal Tunnel Syndrome,2,3,4,4,3,3,0
+S007,rater_1,CAR0002,medgemma-4b,CAR,Chest Pain,3,3,2,1,2,1,0
+S008,rater_1,GAS0005,qwen3-32b,GAS,Gastroenteritis,4,4,5,3,4,4,0
+S009,rater_1,RES0023,medgemma-4b,RES,Acute Bronchitis,2,2,4,3,2,2,0
+S010,rater_1,GAS0002,qwen3-32b,GAS,Abdominal Pain,3,4,5,3,4,3,0
+S011,rater_1,RES0143,gpt-oss-20b,RES,Common Cold,4,5,5,3,4,4,0
+S012,rater_1,CAR0005,qwen3-32b,CAR,Chest Pain,1,3,5,3,1,1,0
+S013,rater_1,MSK0041,gpt-oss-20b,MSK,Foot Pain,3,4,5,3,4,4,0
+S014,rater_1,MSK0028,gpt-oss-20b,MSK,Bicep Tendonitis,3,4,5,3,4,4,0
+S015,rater_1,GAS0003,qwen3-32b,GAS,Abdominal Pain,3,4,5,3,4,4,0
+S016,rater_1,RES0194,qwen3-32b,RES,Upper Respiratory Infection,3,4,5,3,4,4,0
+S017,rater_1,RES0193,gpt-oss-120b,RES,Asthma,4,5,5,3,5,4,0
+S018,rater_1,RES0073,medgemma-4b,RES,Sinusitis,3,3,3,3,3,3,0
+S019,rater_1,MSK0014,medgemma-4b,MSK,Knee Arthritis,4,4,5,4,4,4,0
+S020,rater_1,RES0058,qwen3-32b,RES,Upper Respiratory Infection,4,4,5,3,4,4,0
+S021,rater_1,MSK0031,qwen3-32b,MSK,Hip Fracture,3,4,5,3,4,4,0
+S022,rater_1,RES0065,medgemma-4b,RES,Sore Throat,3,3,4,3,3,3,0
+S023,rater_1,CAR0001,gpt-oss-20b,CAR,Chest Pain,3,4,5,3,4,4,0
+S024,rater_1,CAR0002,gpt-oss-20b,CAR,Chest Pain,3,4,5,3,4,3,0
+S025,rater_1,GAS0005,gpt-oss-120b,GAS,Gastroenteritis,4,5,5,3,4,4,0
+S026,rater_1,RES0027,medgemma-4b,RES,Acute Bronchitis,3,3,4,4,3,3,0
+S027,rater_1,MSK0037,gpt-oss-120b,MSK,Dupuytren's Contracture,3,5,5,3,4,4,0
+S028,rater_1,RES0024,qwen3-32b,RES,Loss of Smell,2,3,5,2,3,3,0
+S029,rater_1,MSK0028,medgemma-4b,MSK,Bicep Tendonitis,3,3,3,2,3,3,0
+S030,rater_1,RES0023,qwen3-32b,RES,Acute Bronchitis,3,4,5,3,4,4,0
+S031,rater_1,CAR0002,qwen3-32b,CAR,Chest Pain,3,4,5,3,4,4,0
+S032,rater_1,CAR0005,gpt-oss-120b,CAR,Chest Pain,3,3,5,3,3,3,0
+S033,rater_1,MSK0019,qwen3-32b,MSK,Tennis Elbow,3,4,5,3,4,4,0
+S034,rater_1,RES0036,qwen3-32b,RES,Pneumonia,3,3,5,3,4,3,0
+S035,rater_1,RES0065,qwen3-32b,RES,Sore Throat,3,4,5,3,4,3,0
+S036,rater_1,RES0155,gpt-oss-120b,RES,Pneumonia,3,4,5,2,3,3,0
+S037,rater_1,RES0007,qwen3-32b,RES,Asthma,3,4,5,3,4,4,0
+S038,rater_1,MSK0003,qwen3-32b,MSK,Back Pain,3,4,5,3,4,4,0
+S039,rater_1,RES0073,qwen3-32b,RES,Sinusitis,3,4,5,3,4,4,0
+S040,rater_1,MSK0038,qwen3-32b,MSK,Knee Pain,3,4,5,3,4,4,0
+S041,rater_1,MSK0003,medgemma-4b,MSK,Back Pain,2,3,4,3,3,3,0
+S042,rater_1,RES0143,gpt-oss-120b,RES,Common Cold,4,5,5,3,4,4,0
+S043,rater_1,RES0111,gpt-oss-120b,RES,Sore Throat,2,3,5,2,2,2,0
+S044,rater_1,RES0194,gpt-oss-20b,RES,Upper Respiratory Infection,3,4,5,3,4,4,0
+S045,rater_1,RES0023,gpt-oss-120b,RES,Acute Bronchitis,3,4,5,3,4,4,0
+S046,rater_1,RES0178,medgemma-4b,RES,Upper Respiratory Infection,2,3,3,3,2,2,0
+S047,rater_1,RES0027,gpt-oss-20b,RES,Acute Bronchitis,4,4,5,3,4,4,0
+S048,rater_1,RES0007,gpt-oss-120b,RES,Asthma,3,5,5,3,4,4,0
+S049,rater_1,RES0060,medgemma-4b,RES,Acute Bronchitis,2,2,2,1,1,1,0
+S050,rater_1,RES0008,gpt-oss-20b,RES,Pneumonia,3,3,5,4,4,3,0
+S051,rater_1,RES0009,gpt-oss-20b,RES,Chest Pain,3,4,5,3,4,4,0
+S052,rater_1,RES0029,qwen3-32b,RES,Chest Pain,2,3,5,2,3,2,0
+S053,rater_1,MSK0003,gpt-oss-20b,MSK,Back Pain,4,5,5,3,4,4,0
+S054,rater_1,RES0178,gpt-oss-120b,RES,Upper Respiratory Infection,3,4,5,3,4,4,0
+S055,rater_1,RES0073,gpt-oss-20b,RES,Sinusitis,3,4,5,3,4,4,0
+S056,rater_1,MSK0041,medgemma-4b,MSK,Foot Pain,4,4,4,3,4,4,0
+S057,rater_1,RES0008,medgemma-4b,RES,Pneumonia,3,3,4,3,3,3,0
+S058,rater_1,MSK0019,gpt-oss-120b,MSK,Tennis Elbow,3,4,5,3,4,3,0
+S059,rater_1,RES0036,medgemma-4b,RES,Pneumonia,2,3,4,3,3,2,0
+S060,rater_1,GAS0005,medgemma-4b,GAS,Gastroenteritis,2,2,2,1,1,1,0
+S061,rater_1,MSK0041,gpt-oss-120b,MSK,Foot Pain,3,5,5,2,4,3,0
+S062,rater_1,RES0062,gpt-oss-20b,RES,Pneumonia,3,4,5,3,4,4,0
+S063,rater_1,MSK0031,medgemma-4b,MSK,Hip Fracture,2,3,4,3,3,2,0
+S064,rater_1,RES0029,gpt-oss-20b,RES,Chest Pain,2,3,5,3,3,3,0
+S065,rater_1,MSK0041,qwen3-32b,MSK,Foot Pain,3,5,5,4,4,4,0
+S066,rater_1,MSK0035,gpt-oss-20b,MSK,Wrist Injury,3,4,5,3,3,3,0
+S067,rater_1,RES0168,gpt-oss-120b,RES,Sinus Infection,2,4,5,2,3,3,0
+S068,rater_1,RES0024,gpt-oss-20b,RES,Loss of Smell,3,4,5,3,4,4,0
+S069,rater_1,MSK0016,gpt-oss-20b,MSK,Carpal Tunnel Syndrome,2,2,5,3,2,2,0
+S070,rater_1,RES0168,qwen3-32b,RES,Sinus Infection,4,4,5,3,4,4,0
+S071,rater_1,RES0060,gpt-oss-20b,RES,Acute Bronchitis,3,4,5,3,4,3,0
+S072,rater_1,RES0009,medgemma-4b,RES,Chest Pain,2,2,2,1,1,1,0
+S073,rater_1,RES0036,gpt-oss-20b,RES,Pneumonia,3,4,5,3,4,3,0
+S074,rater_1,GAS0004,qwen3-32b,GAS,Acute Diarrhea,2,4,5,3,3,3,0
+S075,rater_1,GAS0003,gpt-oss-120b,GAS,Abdominal Pain,3,4,5,3,4,4,0
+S076,rater_1,RES0168,medgemma-4b,RES,Sinus Infection,3,2,2,1,2,1,0
+S077,rater_1,CAR0001,qwen3-32b,CAR,Chest Pain,4,4,5,3,4,4,0
+S078,rater_1,CAR0002,gpt-oss-120b,CAR,Chest Pain,3,4,5,2,4,3,0
+S079,rater_1,RES0178,qwen3-32b,RES,Upper Respiratory Infection,4,5,5,3,4,4,0
+S080,rater_1,RES0111,gpt-oss-20b,RES,Sore Throat,3,4,5,3,3,3,0
+S081,rater_1,RES0027,qwen3-32b,RES,Acute Bronchitis,3,4,5,3,4,4,0
+S082,rater_1,MSK0016,qwen3-32b,MSK,Carpal Tunnel Syndrome,2,3,5,3,3,3,0
+S083,rater_1,CAR0005,medgemma-4b,CAR,Chest Pain,3,3,4,3,3,3,0
+S084,rater_1,GAS0002,medgemma-4b,GAS,Abdominal Pain,2,3,3,2,2,2,0
+S085,rater_1,RES0029,gpt-oss-120b,RES,Chest Pain,4,4,5,3,4,4,0
+S086,rater_1,DER0001,gpt-oss-20b,DER,Cellulitis,2,4,5,3,3,3,0
+S087,rater_1,RES0007,gpt-oss-20b,RES,Asthma,3,4,5,3,4,3,0
+S088,rater_1,RES0168,gpt-oss-20b,RES,Sinus Infection,3,4,5,3,4,3,0
+S089,rater_1,MSK0037,qwen3-32b,MSK,Dupuytren's Contracture,3,4,5,3,4,4,0
+S090,rater_1,MSK0035,gpt-oss-120b,MSK,Wrist Injury,3,5,5,2,4,3,0
+S091,rater_1,MSK0031,gpt-oss-20b,MSK,Hip Fracture,3,3,5,3,3,3,0
+S092,rater_1,GAS0001,gpt-oss-120b,GAS,Morning Sickness,2,3,5,2,2,2,0
+S093,rater_1,RES0060,qwen3-32b,RES,Acute Bronchitis,3,4,5,3,4,3,0
+S094,rater_1,RES0062,qwen3-32b,RES,Pneumonia,3,4,5,3,4,4,0
+S095,rater_1,CAR0004,gpt-oss-120b,CAR,Chest Pain,3,4,5,3,4,4,0
+S096,rater_1,DER0001,medgemma-4b,DER,Cellulitis,3,3,4,3,3,3,0
+S097,rater_1,GAS0001,qwen3-32b,GAS,Morning Sickness,1,2,3,2,1,1,0
+S098,rater_1,CAR0001,gpt-oss-120b,CAR,Chest Pain,4,4,5,3,4,4,0
+S099,rater_1,GAS0001,medgemma-4b,GAS,Morning Sickness,2,2,3,3,2,2,0
+S100,rater_1,CAR0004,qwen3-32b,CAR,Chest Pain,4,5,5,3,4,4,0
+S101,rater_1,RES0058,gpt-oss-120b,RES,Upper Respiratory Infection,3,4,5,3,4,4,0
+S102,rater_1,MSK0031,gpt-oss-120b,MSK,Hip Fracture,3,4,5,3,4,4,0
+S103,rater_1,MSK0038,gpt-oss-120b,MSK,Knee Pain,2,4,5,2,3,3,0
+S104,rater_1,RES0027,gpt-oss-120b,RES,Acute Bronchitis,3,5,5,3,4,4,0
+S105,rater_1,RES0062,gpt-oss-120b,RES,Pneumonia,3,4,5,3,4,4,0
+S106,rater_1,GAS0004,gpt-oss-120b,GAS,Acute Diarrhea,3,4,5,3,4,4,0
+S107,rater_1,MSK0038,gpt-oss-20b,MSK,Knee Pain,3,4,5,3,4,4,0
+S108,rater_1,RES0024,gpt-oss-120b,RES,Loss of Smell,2,3,5,2,3,3,0
+S109,rater_1,RES0065,gpt-oss-20b,RES,Sore Throat,3,4,5,3,4,4,0
+S110,rater_1,RES0194,medgemma-4b,RES,Upper Respiratory Infection,3,3,3,2,3,3,0
+S111,rater_1,RES0008,gpt-oss-120b,RES,Pneumonia,3,4,5,3,4,4,0
+S112,rater_1,GAS0003,medgemma-4b,GAS,Abdominal Pain,2,2,4,3,2,2,0
+S113,rater_1,MSK0003,gpt-oss-120b,MSK,Back Pain,4,5,5,3,5,4,0
+S114,rater_1,RES0062,medgemma-4b,RES,Pneumonia,3,3,4,3,3,3,0
+S115,rater_1,MSK0035,medgemma-4b,MSK,Wrist Injury,2,3,4,3,2,2,0
+S116,rater_1,RES0065,gpt-oss-120b,RES,Sore Throat,3,4,5,3,4,3,0
+S117,rater_1,RES0073,gpt-oss-120b,RES,Sinusitis,3,4,5,2,3,3,0
+S118,rater_1,RES0023,gpt-oss-20b,RES,Acute Bronchitis,3,4,5,3,4,3,0
+S119,rater_1,RES0029,medgemma-4b,RES,Chest Pain,3,3,3,3,2,3,0
+S120,rater_1,CAR0004,gpt-oss-20b,CAR,Chest Pain,4,4,5,3,4,4,0
+S121,rater_1,MSK0028,gpt-oss-120b,MSK,Bicep Tendonitis,3,5,5,2,3,3,0
+S122,rater_1,MSK0038,medgemma-4b,MSK,Knee Pain,3,3,4,3,3,3,0
+S123,rater_1,RES0193,medgemma-4b,RES,Asthma,2,3,4,3,3,2,0
+S124,rater_1,RES0155,gpt-oss-20b,RES,Pneumonia,2,3,5,2,3,3,0
+S125,rater_1,RES0036,gpt-oss-120b,RES,Pneumonia,3,4,5,2,4,3,0
+S126,rater_1,RES0178,gpt-oss-20b,RES,Upper Respiratory Infection,4,4,5,4,4,4,0
+S127,rater_1,RES0007,medgemma-4b,RES,Asthma,3,3,4,3,3,3,0
+S128,rater_1,MSK0037,medgemma-4b,MSK,Dupuytren's Contracture,1,1,1,1,1,1,1
+S129,rater_1,RES0009,qwen3-32b,RES,Chest Pain,2,3,5,4,3,3,0
+S130,rater_1,MSK0016,gpt-oss-120b,MSK,Carpal Tunnel Syndrome,2,4,5,2,3,3,0
+S131,rater_1,RES0060,gpt-oss-120b,RES,Acute Bronchitis,3,4,5,2,3,3,0
+S132,rater_1,GAS0005,gpt-oss-20b,GAS,Gastroenteritis,4,5,5,3,4,4,0
+S133,rater_1,GAS0001,gpt-oss-20b,GAS,Morning Sickness,3,3,5,3,2,2,0
+S134,rater_1,MSK0028,qwen3-32b,MSK,Bicep Tendonitis,2,4,5,3,3,3,0
+S135,rater_1,CAR0001,medgemma-4b,CAR,Chest Pain,3,3,4,3,3,3,0
+S136,rater_1,RES0111,medgemma-4b,RES,Sore Throat,3,3,4,4,3,3,0
+S137,rater_1,MSK0019,gpt-oss-20b,MSK,Tennis Elbow,2,4,5,3,3,3,0
+S138,rater_1,RES0009,gpt-oss-120b,RES,Chest Pain,2,3,5,3,3,3,0
+S139,rater_1,CAR0005,gpt-oss-20b,CAR,Chest Pain,3,4,5,3,3,3,0
+S140,rater_1,RES0193,qwen3-32b,RES,Asthma,4,4,5,4,4,4,0
+S141,rater_1,MSK0014,gpt-oss-120b,MSK,Knee Arthritis,3,4,5,2,3,3,0
+S142,rater_1,GAS0004,medgemma-4b,GAS,Acute Diarrhea,3,3,2,1,2,1,0
+S143,rater_1,RES0155,qwen3-32b,RES,Pneumonia,3,4,5,3,4,3,0
+S144,rater_1,RES0008,qwen3-32b,RES,Pneumonia,3,4,5,3,4,3,0
+S145,rater_1,DER0001,gpt-oss-120b,DER,Cellulitis,3,5,5,2,4,3,0
+S146,rater_1,MSK0037,gpt-oss-20b,MSK,Dupuytren's Contracture,4,5,5,3,4,4,0
+S147,rater_1,RES0143,qwen3-32b,RES,Common Cold,4,5,5,4,5,5,0
+S148,rater_1,RES0024,medgemma-4b,RES,Loss of Smell,2,3,4,4,3,3,0
+S149,rater_1,RES0143,medgemma-4b,RES,Common Cold,3,3,4,3,3,3,0
+S150,rater_1,RES0155,medgemma-4b,RES,Pneumonia,3,3,4,3,3,3,0
+S151,rater_1,GAS0003,gpt-oss-20b,GAS,Abdominal Pain,4,5,5,3,5,4,0
+S152,rater_1,RES0194,gpt-oss-120b,RES,Upper Respiratory Infection,3,4,5,3,4,4,0
+S153,rater_1,RES0058,medgemma-4b,RES,Upper Respiratory Infection,3,3,3,3,3,3,0
+S154,rater_1,MSK0035,qwen3-32b,MSK,Wrist Injury,3,4,5,3,4,3,0
+S155,rater_1,GAS0004,gpt-oss-20b,GAS,Acute Diarrhea,3,4,5,3,4,3,0
+S156,rater_1,RES0193,gpt-oss-20b,RES,Asthma,4,5,5,3,4,4,0
+S157,rater_1,DER0001,qwen3-32b,DER,Cellulitis,3,4,5,3,4,4,0
+S158,rater_1,MSK0014,qwen3-32b,MSK,Knee Arthritis,4,5,5,3,4,4,0
+S159,rater_1,CAR0004,medgemma-4b,CAR,Chest Pain,3,3,4,3,3,3,0
+S160,rater_1,GAS0002,gpt-oss-120b,GAS,Abdominal Pain,3,4,5,3,4,3,0
+S161,rater_2,RES0194,qwen3-32b,RES,Upper Respiratory Infection,4,5,5,5,5,5,0
+S162,rater_2,GAS0005,gpt-oss-120b,GAS,Gastroenteritis,5,5,5,5,5,5,0
+S163,rater_2,RES0058,medgemma-4b,RES,Upper Respiratory Infection,2,4,5,4,3,3,0
+S164,rater_2,RES0008,qwen3-32b,RES,Pneumonia,3,4,5,4,3,3,0
+S165,rater_2,RES0029,medgemma-4b,RES,Chest Pain,2,4,5,4,2,2,0
+S166,rater_2,RES0143,gpt-oss-120b,RES,Common Cold,5,5,5,5,5,5,0
+S167,rater_2,MSK0003,medgemma-4b,MSK,Back Pain,4,4,5,5,4,4,0
+S168,rater_2,RES0178,gpt-oss-120b,RES,Upper Respiratory Infection,4,5,5,5,5,5,0
+S169,rater_2,MSK0014,qwen3-32b,MSK,Knee Arthritis,3,4,5,5,4,4,0
+S170,rater_2,MSK0031,qwen3-32b,MSK,Hip Fracture,3,4,5,5,4,4,0
+S171,rater_2,RES0008,gpt-oss-20b,RES,Pneumonia,3,4,5,5,4,4,0
+S172,rater_2,GAS0003,gpt-oss-120b,GAS,Abdominal Pain,4,5,5,5,5,5,0
+S173,rater_2,MSK0003,gpt-oss-20b,MSK,Back Pain,4,5,5,5,5,5,0
+S174,rater_2,RES0155,gpt-oss-20b,RES,Pneumonia,2,4,5,4,3,3,0
+S175,rater_2,RES0065,medgemma-4b,RES,Sore Throat,2,3,5,5,2,2,0
+S176,rater_2,RES0062,gpt-oss-120b,RES,Pneumonia,2,4,5,4,3,3,0
+S177,rater_2,CAR0004,qwen3-32b,CAR,Chest Pain,2,3,5,4,2,2,0
+S178,rater_2,RES0058,gpt-oss-20b,RES,Upper Respiratory Infection,4,4,5,5,5,5,0
+S179,rater_2,RES0194,gpt-oss-120b,RES,Upper Respiratory Infection,5,5,5,5,5,5,0
+S180,rater_2,RES0060,gpt-oss-120b,RES,Acute Bronchitis,4,5,5,5,5,5,0
+S181,rater_2,RES0007,gpt-oss-120b,RES,Asthma,4,5,5,5,5,5,0
+S182,rater_2,MSK0035,qwen3-32b,MSK,Wrist Injury,1,4,5,4,2,2,0
+S183,rater_2,GAS0004,qwen3-32b,GAS,Acute Diarrhea,1,4,5,4,2,2,0
+S184,rater_2,RES0036,gpt-oss-20b,RES,Pneumonia,2,3,5,4,2,2,0
+S185,rater_2,RES0024,gpt-oss-120b,RES,Loss of Smell,2,4,5,4,3,3,0
+S186,rater_2,GAS0004,gpt-oss-20b,GAS,Acute Diarrhea,1,3,5,4,2,2,0
+S187,rater_2,MSK0037,gpt-oss-120b,MSK,Dupuytren's Contracture,2,4,5,5,3,3,0
+S188,rater_2,RES0168,gpt-oss-20b,RES,Sinus Infection,2,4,5,4,3,3,0
+S189,rater_2,MSK0037,medgemma-4b,MSK,Dupuytren's Contracture,1,1,1,1,1,1,1
+S190,rater_2,GAS0005,qwen3-32b,GAS,Gastroenteritis,1,4,5,4,2,2,0
+S191,rater_2,MSK0003,qwen3-32b,MSK,Back Pain,4,4,5,5,5,5,0
+S192,rater_2,RES0155,qwen3-32b,RES,Pneumonia,2,4,5,4,3,3,0
+S193,rater_2,RES0009,gpt-oss-20b,RES,Chest Pain,1,4,5,5,2,2,0
+S194,rater_2,RES0168,medgemma-4b,RES,Sinus Infection,4,4,2,1,2,2,0
+S195,rater_2,MSK0038,gpt-oss-120b,MSK,Knee Pain,2,4,5,4,3,3,0
+S196,rater_2,CAR0004,gpt-oss-120b,CAR,Chest Pain,2,4,5,5,3,2,0
+S197,rater_2,MSK0016,gpt-oss-20b,MSK,Carpal Tunnel Syndrome,2,4,5,5,3,3,0
+S198,rater_2,GAS0003,gpt-oss-20b,GAS,Abdominal Pain,4,5,5,5,5,5,0
+S199,rater_2,RES0009,qwen3-32b,RES,Chest Pain,1,3,5,4,1,1,0
+S200,rater_2,RES0111,medgemma-4b,RES,Sore Throat,1,2,5,5,1,1,0
+S201,rater_2,MSK0038,medgemma-4b,MSK,Knee Pain,2,4,5,4,3,3,0
+S202,rater_2,MSK0028,gpt-oss-120b,MSK,Bicep Tendonitis,4,5,5,5,5,5,0
+S203,rater_2,MSK0014,gpt-oss-20b,MSK,Knee Arthritis,4,5,5,4,5,5,0
+S204,rater_2,RES0143,qwen3-32b,RES,Common Cold,1,4,5,5,2,2,0
+S205,rater_2,CAR0002,gpt-oss-120b,CAR,Chest Pain,4,5,5,5,5,5,0
+S206,rater_2,DER0001,qwen3-32b,DER,Cellulitis,3,4,5,4,4,4,0
+S207,rater_2,MSK0041,gpt-oss-20b,MSK,Foot Pain,3,4,5,5,4,4,0
+S208,rater_2,RES0007,qwen3-32b,RES,Asthma,4,4,5,5,5,5,0
+S209,rater_2,RES0168,qwen3-32b,RES,Sinus Infection,4,4,5,5,5,5,0
+S210,rater_2,MSK0016,gpt-oss-120b,MSK,Carpal Tunnel Syndrome,3,4,5,5,4,4,0
+S211,rater_2,RES0036,qwen3-32b,RES,Pneumonia,2,4,5,4,3,3,0
+S212,rater_2,RES0073,qwen3-32b,RES,Sinusitis,2,4,5,4,3,3,0
+S213,rater_2,RES0029,gpt-oss-120b,RES,Chest Pain,2,4,5,4,3,3,0
+S214,rater_2,RES0073,gpt-oss-20b,RES,Sinusitis,4,5,5,5,5,5,0
+S215,rater_2,CAR0001,gpt-oss-120b,CAR,Chest Pain,1,4,5,5,2,2,0
+S216,rater_2,RES0007,gpt-oss-20b,RES,Asthma,4,5,5,5,5,5,0
+S217,rater_2,CAR0001,gpt-oss-20b,CAR,Chest Pain,1,2,5,5,2,1,0
+S218,rater_2,RES0024,gpt-oss-20b,RES,Loss of Smell,2,4,5,5,3,3,0
+S219,rater_2,RES0027,gpt-oss-20b,RES,Acute Bronchitis,4,4,5,5,5,5,0
+S220,rater_2,MSK0035,medgemma-4b,MSK,Wrist Injury,2,3,4,4,2,2,0
+S221,rater_2,RES0073,gpt-oss-120b,RES,Sinusitis,4,5,5,5,5,5,0
+S222,rater_2,RES0168,gpt-oss-120b,RES,Sinus Infection,3,4,5,4,4,4,0
+S223,rater_2,GAS0004,medgemma-4b,GAS,Acute Diarrhea,2,4,2,1,2,1,0
+S224,rater_2,MSK0041,medgemma-4b,MSK,Foot Pain,3,4,5,4,4,4,0
+S225,rater_2,MSK0031,gpt-oss-20b,MSK,Hip Fracture,2,4,5,5,3,3,0
+S226,rater_2,GAS0003,qwen3-32b,GAS,Abdominal Pain,3,4,5,5,4,4,0
+S227,rater_2,RES0008,gpt-oss-120b,RES,Pneumonia,4,5,5,5,5,5,0
+S228,rater_2,GAS0004,gpt-oss-120b,GAS,Acute Diarrhea,2,4,5,5,3,3,0
+S229,rater_2,MSK0037,qwen3-32b,MSK,Dupuytren's Contracture,2,4,5,4,3,3,0
+S230,rater_2,GAS0002,gpt-oss-120b,GAS,Abdominal Pain,2,4,5,5,3,3,0
+S231,rater_2,GAS0001,gpt-oss-20b,GAS,Morning Sickness,1,4,5,5,2,2,0
+S232,rater_2,CAR0001,medgemma-4b,CAR,Chest Pain,1,2,5,4,1,1,0
+S233,rater_2,GAS0005,gpt-oss-20b,GAS,Gastroenteritis,1,4,5,5,4,2,0
+S234,rater_2,RES0062,medgemma-4b,RES,Pneumonia,3,3,5,4,3,3,0
+S235,rater_2,RES0036,gpt-oss-120b,RES,Pneumonia,2,4,5,4,3,3,0
+S236,rater_2,RES0009,gpt-oss-120b,RES,Chest Pain,2,4,5,4,3,3,0
+S237,rater_2,RES0065,gpt-oss-20b,RES,Sore Throat,2,4,5,4,3,3,0
+S238,rater_2,MSK0028,medgemma-4b,MSK,Bicep Tendonitis,4,4,5,4,4,4,0
+S239,rater_2,MSK0041,gpt-oss-120b,MSK,Foot Pain,4,5,5,5,5,5,0
+S240,rater_2,RES0111,qwen3-32b,RES,Sore Throat,1,4,5,4,2,2,0
+S241,rater_2,RES0024,qwen3-32b,RES,Loss of Smell,2,4,5,4,3,3,0
+S242,rater_2,MSK0028,qwen3-32b,MSK,Bicep Tendonitis,3,4,5,4,4,4,0
+S243,rater_2,DER0001,gpt-oss-120b,DER,Cellulitis,3,4,5,4,4,4,0
+S244,rater_2,MSK0016,qwen3-32b,MSK,Carpal Tunnel Syndrome,3,4,5,4,4,4,0
+S245,rater_2,RES0029,qwen3-32b,RES,Chest Pain,2,4,5,3,3,3,0
+S246,rater_2,RES0036,medgemma-4b,RES,Pneumonia,2,4,5,4,2,2,0
+S247,rater_2,CAR0005,gpt-oss-20b,CAR,Chest Pain,2,3,5,5,2,2,0
+S248,rater_2,GAS0002,medgemma-4b,GAS,Abdominal Pain,3,4,5,4,3,3,0
+S249,rater_2,MSK0038,qwen3-32b,MSK,Knee Pain,2,4,5,4,3,3,0
+S250,rater_2,RES0073,medgemma-4b,RES,Sinusitis,4,4,5,5,4,4,0
+S251,rater_2,MSK0031,gpt-oss-120b,MSK,Hip Fracture,4,5,5,5,5,5,0
+S252,rater_2,RES0143,gpt-oss-20b,RES,Common Cold,4,5,5,5,5,5,0
+S253,rater_2,MSK0019,gpt-oss-120b,MSK,Tennis Elbow,4,5,5,5,5,5,0
+S254,rater_2,RES0023,gpt-oss-20b,RES,Acute Bronchitis,2,4,5,5,3,3,0
+S255,rater_2,RES0060,qwen3-32b,RES,Acute Bronchitis,4,4,5,5,5,5,0
+S256,rater_2,MSK0035,gpt-oss-120b,MSK,Wrist Injury,2,4,5,5,3,3,0
+S257,rater_2,RES0060,gpt-oss-20b,RES,Acute Bronchitis,3,4,5,5,4,4,0
+S258,rater_2,MSK0003,gpt-oss-120b,MSK,Back Pain,4,5,5,5,5,5,0
+S259,rater_2,RES0193,gpt-oss-120b,RES,Asthma,2,4,5,5,4,3,0
+S260,rater_2,MSK0019,qwen3-32b,MSK,Tennis Elbow,4,5,5,5,5,5,0
+S261,rater_2,RES0027,gpt-oss-120b,RES,Acute Bronchitis,5,5,5,5,5,5,0
+S262,rater_2,CAR0004,gpt-oss-20b,CAR,Chest Pain,2,4,5,5,3,3,0
+S263,rater_2,RES0194,gpt-oss-20b,RES,Upper Respiratory Infection,5,5,5,5,5,5,0
+S264,rater_2,RES0178,medgemma-4b,RES,Upper Respiratory Infection,1,4,5,5,1,1,0
+S265,rater_2,DER0001,medgemma-4b,DER,Cellulitis,3,4,5,4,3,3,0
+S266,rater_2,GAS0002,qwen3-32b,GAS,Abdominal Pain,4,5,5,5,5,5,0
+S267,rater_2,RES0058,qwen3-32b,RES,Upper Respiratory Infection,2,4,5,4,3,3,0
+S268,rater_2,RES0008,medgemma-4b,RES,Pneumonia,3,4,5,5,4,4,0
+S269,rater_2,RES0062,gpt-oss-20b,RES,Pneumonia,3,4,5,5,4,4,0
+S270,rater_2,GAS0001,qwen3-32b,GAS,Morning Sickness,1,2,4,3,1,1,0
+S271,rater_2,MSK0041,qwen3-32b,MSK,Foot Pain,4,5,5,5,5,5,0
+S272,rater_2,RES0058,gpt-oss-120b,RES,Upper Respiratory Infection,2,4,5,5,3,3,0
+S273,rater_2,RES0155,medgemma-4b,RES,Pneumonia,2,2,5,5,2,2,0
+S274,rater_2,CAR0002,qwen3-32b,CAR,Chest Pain,2,4,5,4,3,3,0
+S275,rater_2,MSK0037,gpt-oss-20b,MSK,Dupuytren's Contracture,2,4,5,5,3,3,0
+S276,rater_2,MSK0038,gpt-oss-20b,MSK,Knee Pain,2,4,5,5,4,3,0
+S277,rater_2,RES0193,qwen3-32b,RES,Asthma,2,4,5,4,3,3,0
+S278,rater_2,MSK0016,medgemma-4b,MSK,Carpal Tunnel Syndrome,3,3,5,5,4,4,0
+S279,rater_2,MSK0028,gpt-oss-20b,MSK,Bicep Tendonitis,4,5,5,5,5,5,0
+S280,rater_2,RES0009,medgemma-4b,RES,Chest Pain,1,2,2,1,1,1,0
+S281,rater_2,RES0065,qwen3-32b,RES,Sore Throat,2,4,5,4,3,3,0
+S282,rater_2,CAR0004,medgemma-4b,CAR,Chest Pain,1,3,5,4,2,1,0
+S283,rater_2,RES0023,medgemma-4b,RES,Acute Bronchitis,2,3,5,4,3,3,0
+S284,rater_2,MSK0014,medgemma-4b,MSK,Knee Arthritis,4,4,5,5,5,5,0
+S285,rater_2,RES0193,medgemma-4b,RES,Asthma,1,4,5,4,2,2,0
+S286,rater_2,RES0023,gpt-oss-120b,RES,Acute Bronchitis,4,5,5,5,5,5,0
+S287,rater_2,RES0143,medgemma-4b,RES,Common Cold,1,4,5,5,2,2,0
+S288,rater_2,RES0029,gpt-oss-20b,RES,Chest Pain,4,5,5,5,5,5,0
+S289,rater_2,MSK0035,gpt-oss-20b,MSK,Wrist Injury,1,4,5,5,2,2,0
+S290,rater_2,GAS0003,medgemma-4b,GAS,Abdominal Pain,3,4,5,4,3,3,0
+S291,rater_2,MSK0019,medgemma-4b,MSK,Tennis Elbow,4,4,5,5,4,4,0
+S292,rater_2,RES0007,medgemma-4b,RES,Asthma,3,4,5,4,3,3,0
+S293,rater_2,GAS0001,gpt-oss-120b,GAS,Morning Sickness,1,4,5,4,2,2,0
+S294,rater_2,CAR0001,qwen3-32b,CAR,Chest Pain,1,2,5,4,2,2,0
+S295,rater_2,MSK0031,medgemma-4b,MSK,Hip Fracture,2,3,5,4,3,3,0
+S296,rater_2,CAR0005,gpt-oss-120b,CAR,Chest Pain,2,4,5,5,3,3,0
+S297,rater_2,GAS0001,medgemma-4b,GAS,Morning Sickness,1,1,4,4,1,1,0
+S298,rater_2,RES0027,medgemma-4b,RES,Acute Bronchitis,3,3,5,5,3,3,0
+S299,rater_2,CAR0002,gpt-oss-20b,CAR,Chest Pain,2,4,5,5,3,3,0
+S300,rater_2,MSK0019,gpt-oss-20b,MSK,Tennis Elbow,4,5,5,5,5,5,0
+S301,rater_2,RES0193,gpt-oss-20b,RES,Asthma,2,4,5,5,3,3,0
+S302,rater_2,MSK0014,gpt-oss-120b,MSK,Knee Arthritis,4,5,5,5,5,5,0
+S303,rater_2,CAR0005,qwen3-32b,CAR,Chest Pain,2,4,5,4,2,2,0
+S304,rater_2,RES0178,qwen3-32b,RES,Upper Respiratory Infection,1,4,5,5,2,2,0
+S305,rater_2,RES0060,medgemma-4b,RES,Acute Bronchitis,3,4,1,1,2,1,0
+S306,rater_2,RES0155,gpt-oss-120b,RES,Pneumonia,3,4,5,4,4,4,0
+S307,rater_2,RES0065,gpt-oss-120b,RES,Sore Throat,2,4,5,4,3,3,0
+S308,rater_2,RES0023,qwen3-32b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S309,rater_2,CAR0002,medgemma-4b,CAR,Chest Pain,4,4,2,1,3,2,0
+S310,rater_2,RES0194,medgemma-4b,RES,Upper Respiratory Infection,4,4,5,4,4,4,0
+S311,rater_2,RES0111,gpt-oss-20b,RES,Sore Throat,2,4,5,4,3,3,0
+S312,rater_2,CAR0005,medgemma-4b,CAR,Chest Pain,2,2,5,5,2,2,0
+S313,rater_2,RES0062,qwen3-32b,RES,Pneumonia,2,4,5,4,3,3,0
+S314,rater_2,DER0001,gpt-oss-20b,DER,Cellulitis,3,4,5,4,4,4,0
+S315,rater_2,RES0111,gpt-oss-120b,RES,Sore Throat,1,4,5,4,2,2,0
+S316,rater_2,RES0024,medgemma-4b,RES,Loss of Smell,1,2,5,5,2,2,0
+S317,rater_2,RES0027,qwen3-32b,RES,Acute Bronchitis,3,4,5,4,4,4,0
+S318,rater_2,GAS0002,gpt-oss-20b,GAS,Abdominal Pain,3,4,5,4,4,4,0
+S319,rater_2,RES0178,gpt-oss-20b,RES,Upper Respiratory Infection,5,5,5,5,5,5,0
+S320,rater_2,GAS0005,medgemma-4b,GAS,Gastroenteritis,2,4,2,1,1,1,0
+S321,rater_3,MSK0038,gpt-oss-20b,MSK,Knee Pain,2,4,5,4,3,3,0
+S322,rater_3,RES0194,qwen3-32b,RES,Upper Respiratory Infection,3,4,5,4,4,4,0
+S323,rater_3,RES0009,gpt-oss-120b,RES,Chest Pain,2,4,5,4,3,3,0
+S324,rater_3,DER0001,medgemma-4b,DER,Cellulitis,2,3,4,4,3,3,0
+S325,rater_3,RES0036,medgemma-4b,RES,Pneumonia,2,3,4,4,3,3,0
+S326,rater_3,GAS0003,qwen3-32b,GAS,Abdominal Pain,2,4,5,4,4,3,0
+S327,rater_3,GAS0004,gpt-oss-20b,GAS,Acute Diarrhea,2,3,5,4,3,3,0
+S328,rater_3,GAS0002,qwen3-32b,GAS,Abdominal Pain,2,3,5,4,3,3,0
+S329,rater_3,RES0065,qwen3-32b,RES,Sore Throat,2,3,5,4,3,3,0
+S330,rater_3,RES0027,gpt-oss-20b,RES,Acute Bronchitis,3,4,5,4,4,4,0
+S331,rater_3,RES0008,gpt-oss-20b,RES,Pneumonia,2,3,5,4,3,3,0
+S332,rater_3,CAR0001,qwen3-32b,CAR,Chest Pain,2,3,5,4,3,3,0
+S333,rater_3,MSK0014,medgemma-4b,MSK,Knee Arthritis,3,3,4,4,3,3,0
+S334,rater_3,CAR0001,gpt-oss-120b,CAR,Chest Pain,2,3,5,4,3,3,0
+S335,rater_3,RES0024,qwen3-32b,RES,Loss of Smell,2,3,5,3,3,3,0
+S336,rater_3,RES0065,gpt-oss-120b,RES,Sore Throat,2,4,5,4,3,3,0
+S337,rater_3,RES0073,gpt-oss-20b,RES,Sinusitis,3,4,5,4,4,4,0
+S338,rater_3,MSK0037,qwen3-32b,MSK,Dupuytren's Contracture,2,3,5,4,3,3,0
+S339,rater_3,GAS0003,gpt-oss-20b,GAS,Abdominal Pain,2,4,5,4,3,3,0
+S340,rater_3,MSK0041,gpt-oss-120b,MSK,Foot Pain,2,4,5,3,3,3,0
+S341,rater_3,RES0027,medgemma-4b,RES,Acute Bronchitis,2,3,4,4,3,3,0
+S342,rater_3,RES0024,gpt-oss-20b,RES,Loss of Smell,1,2,5,4,2,2,0
+S343,rater_3,RES0194,gpt-oss-20b,RES,Upper Respiratory Infection,3,4,5,4,4,4,0
+S344,rater_3,GAS0002,gpt-oss-20b,GAS,Abdominal Pain,1,3,5,4,2,2,0
+S345,rater_3,CAR0004,gpt-oss-120b,CAR,Chest Pain,2,4,5,4,4,3,0
+S346,rater_3,MSK0038,gpt-oss-120b,MSK,Knee Pain,2,4,5,3,3,3,0
+S347,rater_3,MSK0028,gpt-oss-20b,MSK,Bicep Tendonitis,2,4,5,4,3,3,0
+S348,rater_3,CAR0002,medgemma-4b,CAR,Chest Pain,2,3,3,1,2,2,0
+S349,rater_3,MSK0035,medgemma-4b,MSK,Wrist Injury,2,3,4,4,3,3,0
+S350,rater_3,CAR0002,gpt-oss-120b,CAR,Chest Pain,2,4,5,3,3,3,0
+S351,rater_3,RES0029,gpt-oss-120b,RES,Chest Pain,3,4,5,3,4,4,0
+S352,rater_3,MSK0035,qwen3-32b,MSK,Wrist Injury,2,4,5,4,3,3,0
+S353,rater_3,GAS0004,qwen3-32b,GAS,Acute Diarrhea,2,3,5,4,3,3,0
+S354,rater_3,RES0058,gpt-oss-20b,RES,Upper Respiratory Infection,2,3,5,4,3,3,0
+S355,rater_3,GAS0002,medgemma-4b,GAS,Abdominal Pain,2,3,4,4,2,2,0
+S356,rater_3,MSK0028,medgemma-4b,MSK,Bicep Tendonitis,2,3,5,4,3,3,0
+S357,rater_3,RES0029,medgemma-4b,RES,Chest Pain,2,3,4,4,3,2,0
+S358,rater_3,MSK0041,medgemma-4b,MSK,Foot Pain,3,3,4,4,4,3,0
+S359,rater_3,CAR0001,medgemma-4b,CAR,Chest Pain,3,3,4,4,3,3,0
+S360,rater_3,RES0062,gpt-oss-20b,RES,Pneumonia,2,4,5,4,3,3,0
+S361,rater_3,RES0178,qwen3-32b,RES,Upper Respiratory Infection,4,4,5,4,4,4,0
+S362,rater_3,RES0027,gpt-oss-120b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S363,rater_3,RES0143,gpt-oss-120b,RES,Common Cold,3,4,5,4,4,4,0
+S364,rater_3,RES0111,gpt-oss-20b,RES,Sore Throat,2,3,5,4,3,3,0
+S365,rater_3,RES0036,qwen3-32b,RES,Pneumonia,2,4,5,4,3,3,0
+S366,rater_3,DER0001,qwen3-32b,DER,Cellulitis,2,4,5,4,3,3,0
+S367,rater_3,RES0023,gpt-oss-20b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S368,rater_3,MSK0003,gpt-oss-20b,MSK,Back Pain,2,4,5,3,3,3,0
+S369,rater_3,CAR0002,gpt-oss-20b,CAR,Chest Pain,2,4,5,4,3,3,0
+S370,rater_3,CAR0004,qwen3-32b,CAR,Chest Pain,2,4,4,4,4,3,0
+S371,rater_3,RES0029,gpt-oss-20b,RES,Chest Pain,2,4,5,3,3,3,0
+S372,rater_3,RES0178,gpt-oss-120b,RES,Upper Respiratory Infection,3,4,5,4,4,4,0
+S373,rater_3,RES0024,medgemma-4b,RES,Loss of Smell,3,3,5,4,3,3,0
+S374,rater_3,MSK0014,qwen3-32b,MSK,Knee Arthritis,3,4,5,4,4,4,0
+S375,rater_3,GAS0001,medgemma-4b,GAS,Morning Sickness,2,2,4,4,2,2,0
+S376,rater_3,MSK0031,gpt-oss-120b,MSK,Hip Fracture,2,4,5,4,3,3,0
+S377,rater_3,RES0023,medgemma-4b,RES,Acute Bronchitis,2,2,4,4,2,2,0
+S378,rater_3,RES0193,qwen3-32b,RES,Asthma,3,4,5,4,4,4,0
+S379,rater_3,RES0168,gpt-oss-20b,RES,Sinus Infection,2,4,5,4,3,3,0
+S380,rater_3,RES0065,gpt-oss-20b,RES,Sore Throat,2,4,5,4,3,3,0
+S381,rater_3,RES0073,gpt-oss-120b,RES,Sinusitis,2,4,5,3,2,2,0
+S382,rater_3,RES0008,medgemma-4b,RES,Pneumonia,2,3,5,4,3,3,0
+S383,rater_3,GAS0005,gpt-oss-20b,GAS,Gastroenteritis,2,4,5,4,3,3,0
+S384,rater_3,RES0007,medgemma-4b,RES,Asthma,3,3,5,4,3,3,0
+S385,rater_3,CAR0004,gpt-oss-20b,CAR,Chest Pain,2,3,5,4,3,3,0
+S386,rater_3,MSK0003,medgemma-4b,MSK,Back Pain,2,3,4,4,3,3,0
+S387,rater_3,MSK0031,medgemma-4b,MSK,Hip Fracture,1,2,5,4,2,2,0
+S388,rater_3,RES0168,gpt-oss-120b,RES,Sinus Infection,2,4,5,4,3,3,0
+S389,rater_3,GAS0001,gpt-oss-20b,GAS,Morning Sickness,2,3,5,4,2,2,0
+S390,rater_3,RES0111,qwen3-32b,RES,Sore Throat,1,2,5,4,2,2,0
+S391,rater_3,MSK0038,medgemma-4b,MSK,Knee Pain,2,3,5,4,3,3,0
+S392,rater_3,CAR0001,gpt-oss-20b,CAR,Chest Pain,2,3,5,4,3,3,0
+S393,rater_3,GAS0005,qwen3-32b,GAS,Gastroenteritis,2,4,5,3,3,3,0
+S394,rater_3,MSK0014,gpt-oss-20b,MSK,Knee Arthritis,2,4,5,4,3,3,0
+S395,rater_3,RES0060,gpt-oss-20b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S396,rater_3,RES0155,medgemma-4b,RES,Pneumonia,3,3,4,4,3,3,0
+S397,rater_3,RES0009,qwen3-32b,RES,Chest Pain,1,3,4,4,2,2,0
+S398,rater_3,RES0155,gpt-oss-120b,RES,Pneumonia,2,4,5,4,2,3,0
+S399,rater_3,MSK0019,qwen3-32b,MSK,Tennis Elbow,2,4,5,4,4,3,0
+S400,rater_3,RES0194,medgemma-4b,RES,Upper Respiratory Infection,3,3,5,4,3,3,0
+S401,rater_3,GAS0003,medgemma-4b,GAS,Abdominal Pain,2,3,5,4,3,3,0
+S402,rater_3,RES0143,gpt-oss-20b,RES,Common Cold,3,4,5,4,4,4,0
+S403,rater_3,RES0008,qwen3-32b,RES,Pneumonia,2,4,5,3,3,3,0
+S404,rater_3,DER0001,gpt-oss-20b,DER,Cellulitis,2,4,5,4,2,2,0
+S405,rater_3,GAS0005,medgemma-4b,GAS,Gastroenteritis,1,2,2,1,1,1,0
+S406,rater_3,MSK0037,medgemma-4b,MSK,Dupuytren's Contracture,1,1,1,3,1,1,1
+S407,rater_3,GAS0002,gpt-oss-120b,GAS,Abdominal Pain,2,3,5,4,3,3,0
+S408,rater_3,MSK0016,qwen3-32b,MSK,Carpal Tunnel Syndrome,2,4,5,4,4,3,0
+S409,rater_3,DER0001,gpt-oss-120b,DER,Cellulitis,2,4,5,3,3,3,0
+S410,rater_3,RES0009,medgemma-4b,RES,Chest Pain,1,1,2,1,1,1,0
+S411,rater_3,GAS0001,gpt-oss-120b,GAS,Morning Sickness,1,3,5,4,2,2,0
+S412,rater_3,MSK0031,qwen3-32b,MSK,Hip Fracture,2,4,5,4,4,3,0
+S413,rater_3,CAR0005,gpt-oss-20b,CAR,Chest Pain,2,4,5,4,3,3,0
+S414,rater_3,GAS0004,gpt-oss-120b,GAS,Acute Diarrhea,2,4,5,4,3,3,0
+S415,rater_3,RES0009,gpt-oss-20b,RES,Chest Pain,3,4,5,4,4,4,0
+S416,rater_3,RES0029,qwen3-32b,RES,Chest Pain,2,4,5,3,3,3,0
+S417,rater_3,RES0060,medgemma-4b,RES,Acute Bronchitis,2,2,2,1,2,1,0
+S418,rater_3,RES0007,gpt-oss-20b,RES,Asthma,2,4,5,4,3,3,0
+S419,rater_3,RES0193,gpt-oss-20b,RES,Asthma,2,4,5,4,3,3,0
+S420,rater_3,RES0194,gpt-oss-120b,RES,Upper Respiratory Infection,2,4,5,4,3,3,0
+S421,rater_3,RES0062,qwen3-32b,RES,Pneumonia,2,4,5,4,4,3,0
+S422,rater_3,GAS0004,medgemma-4b,GAS,Acute Diarrhea,2,2,3,1,2,2,0
+S423,rater_3,RES0193,gpt-oss-120b,RES,Asthma,3,4,5,4,4,4,0
+S424,rater_3,MSK0038,qwen3-32b,MSK,Knee Pain,2,3,5,4,3,3,0
+S425,rater_3,RES0143,qwen3-32b,RES,Common Cold,3,4,5,4,4,4,0
+S426,rater_3,MSK0014,gpt-oss-120b,MSK,Knee Arthritis,2,4,5,3,3,3,0
+S427,rater_3,RES0143,medgemma-4b,RES,Common Cold,2,3,4,4,3,3,0
+S428,rater_3,MSK0019,gpt-oss-20b,MSK,Tennis Elbow,1,3,5,3,2,2,0
+S429,rater_3,MSK0003,qwen3-32b,MSK,Back Pain,3,4,5,4,4,4,0
+S430,rater_3,RES0065,medgemma-4b,RES,Sore Throat,2,3,4,4,3,3,0
+S431,rater_3,RES0023,gpt-oss-120b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S432,rater_3,RES0073,qwen3-32b,RES,Sinusitis,2,3,5,4,3,3,0
+S433,rater_3,RES0062,gpt-oss-120b,RES,Pneumonia,2,4,5,3,3,3,0
+S434,rater_3,RES0193,medgemma-4b,RES,Asthma,2,3,4,4,3,3,0
+S435,rater_3,RES0178,medgemma-4b,RES,Upper Respiratory Infection,2,3,4,4,3,3,0
+S436,rater_3,RES0168,medgemma-4b,RES,Sinus Infection,2,2,2,1,2,1,0
+S437,rater_3,RES0073,medgemma-4b,RES,Sinusitis,2,3,4,4,3,3,0
+S438,rater_3,RES0036,gpt-oss-120b,RES,Pneumonia,2,4,5,3,3,3,0
+S439,rater_3,MSK0019,gpt-oss-120b,MSK,Tennis Elbow,2,4,5,4,3,3,0
+S440,rater_3,MSK0028,qwen3-32b,MSK,Bicep Tendonitis,2,4,5,4,3,3,0
+S441,rater_3,RES0062,medgemma-4b,RES,Pneumonia,2,3,4,4,3,3,0
+S442,rater_3,GAS0003,gpt-oss-120b,GAS,Abdominal Pain,2,4,5,4,3,3,0
+S443,rater_3,MSK0037,gpt-oss-20b,MSK,Dupuytren's Contracture,2,4,5,4,3,3,0
+S444,rater_3,CAR0005,qwen3-32b,CAR,Chest Pain,1,3,5,3,2,2,0
+S445,rater_3,RES0058,medgemma-4b,RES,Upper Respiratory Infection,2,3,4,4,3,3,0
+S446,rater_3,RES0060,qwen3-32b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S447,rater_3,MSK0041,qwen3-32b,MSK,Foot Pain,3,4,5,4,4,4,0
+S448,rater_3,RES0008,gpt-oss-120b,RES,Pneumonia,2,3,5,4,2,2,0
+S449,rater_3,MSK0003,gpt-oss-120b,MSK,Back Pain,2,4,5,4,3,3,0
+S450,rater_3,MSK0035,gpt-oss-120b,MSK,Wrist Injury,2,4,5,4,3,3,0
+S451,rater_3,CAR0002,qwen3-32b,CAR,Chest Pain,2,4,5,4,4,3,0
+S452,rater_3,RES0027,qwen3-32b,RES,Acute Bronchitis,2,4,5,4,3,3,0
+S453,rater_3,RES0155,qwen3-32b,RES,Pneumonia,2,4,5,3,3,3,0
+S454,rater_3,GAS0005,gpt-oss-120b,GAS,Gastroenteritis,3,4,5,4,4,4,0
+S455,rater_3,RES0058,gpt-oss-120b,RES,Upper Respiratory Infection,2,3,5,4,3,3,0
+S456,rater_3,RES0007,qwen3-32b,RES,Asthma,3,4,5,4,4,4,0
+S457,rater_3,MSK0041,gpt-oss-20b,MSK,Foot Pain,3,4,5,4,4,4,0
+S458,rater_3,RES0023,qwen3-32b,RES,Acute Bronchitis,2,3,5,4,3,3,0
+S459,rater_3,RES0168,qwen3-32b,RES,Sinus Infection,3,4,5,4,4,4,0
+S460,rater_3,RES0178,gpt-oss-20b,RES,Upper Respiratory Infection,2,3,5,4,3,3,0
+S461,rater_3,MSK0035,gpt-oss-20b,MSK,Wrist Injury,2,4,5,4,3,3,0
+S462,rater_3,RES0060,gpt-oss-120b,RES,Acute Bronchitis,2,4,5,3,3,3,0
+S463,rater_3,MSK0016,gpt-oss-20b,MSK,Carpal Tunnel Syndrome,2,4,5,4,3,3,0
+S464,rater_3,MSK0037,gpt-oss-120b,MSK,Dupuytren's Contracture,2,4,5,4,3,3,0
+S465,rater_3,RES0111,gpt-oss-120b,RES,Sore Throat,2,3,5,3,2,2,0
+S466,rater_3,GAS0001,qwen3-32b,GAS,Morning Sickness,1,2,4,3,2,2,0
+S467,rater_3,MSK0019,medgemma-4b,MSK,Tennis Elbow,2,3,4,4,3,3,0
+S468,rater_3,MSK0016,medgemma-4b,MSK,Carpal Tunnel Syndrome,2,3,5,4,3,3,0
+S469,rater_3,MSK0028,gpt-oss-120b,MSK,Bicep Tendonitis,2,4,5,3,3,3,0
+S470,rater_3,RES0155,gpt-oss-20b,RES,Pneumonia,2,4,5,4,3,3,0
+S471,rater_3,MSK0016,gpt-oss-120b,MSK,Carpal Tunnel Syndrome,2,4,5,3,3,3,0
+S472,rater_3,CAR0004,medgemma-4b,CAR,Chest Pain,2,3,4,4,3,3,0
+S473,rater_3,RES0036,gpt-oss-20b,RES,Pneumonia,2,3,5,4,3,3,0
+S474,rater_3,MSK0031,gpt-oss-20b,MSK,Hip Fracture,2,4,5,4,3,3,0
+S475,rater_3,RES0007,gpt-oss-120b,RES,Asthma,2,4,5,3,3,3,0
+S476,rater_3,CAR0005,gpt-oss-120b,CAR,Chest Pain,2,3,5,4,2,2,0
+S477,rater_3,RES0024,gpt-oss-120b,RES,Loss of Smell,2,4,5,3,3,3,0
+S478,rater_3,RES0111,medgemma-4b,RES,Sore Throat,2,3,4,4,3,3,0
+S479,rater_3,CAR0005,medgemma-4b,CAR,Chest Pain,3,3,4,4,3,3,0
+S480,rater_3,RES0058,qwen3-32b,RES,Upper Respiratory Infection,3,4,5,4,4,4,0

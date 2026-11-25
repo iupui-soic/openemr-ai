@@ -1,9 +1,9 @@
 """
 Entity Evaluator Service - Handles medical entity extraction and evaluation.
 
-This service provides CUI-based entity recall metrics:
-- scispaCy Entity Recall: UMLS CUI-based medical entity coverage
-- MedCAT Entity Recall: UMLS CUI-based medical entity coverage
+This service provides CUI-based entity metrics (recall, precision, F1) from:
+- scispaCy: UMLS CUI-based medical entity coverage
+- MedCAT: UMLS CUI-based medical entity coverage
 
 Usage:
     modal deploy entity_evaluator_service.py
@@ -28,7 +28,7 @@ app = modal.App("entity-evaluator-service")
 # Entity Evaluator Image
 # ============================================================================
 
-entity_evaluator_image = entity_evaluator_image = (
+entity_evaluator_image = (
     modal.Image.debian_slim(python_version="3.11")
     .run_commands("apt-get update && apt-get install -y wget unzip")
     .pip_install("numpy==1.26.4")
@@ -57,7 +57,7 @@ entity_evaluator_image = entity_evaluator_image = (
     image=entity_evaluator_image,
     timeout=1800,
     gpu="T4",
-    memory=8192,
+    memory=16384,
     scaledown_window=600,
 )
 class EntityEvaluator:
@@ -144,6 +144,26 @@ class EntityEvaluator:
         matched = reference_cuis.intersection(generated_cuis)
         return len(matched) / len(reference_cuis)
 
+    def _compute_cui_prf(self, reference_cuis: set, generated_cuis: set) -> Dict[str, float]:
+        """
+        Recall, precision, and F1 over sets of unique CUIs.
+
+        N = unique CUIs in the generated note, R = unique CUIs in the reference.
+        recall = |N & R| / |R|, precision = |N & R| / |N|, F1 = harmonic mean.
+        """
+        matched = len(reference_cuis & generated_cuis)
+        recall = matched / len(reference_cuis) if reference_cuis else 0.0
+        precision = matched / len(generated_cuis) if generated_cuis else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+        return {
+            "recall": recall,
+            "precision": precision,
+            "f1": f1,
+            "n_note_cuis": len(generated_cuis),
+            "n_ref_cuis": len(reference_cuis),
+            "n_matched_cuis": matched,
+        }
+
     @modal.method()
     def evaluate(self, generated: str, reference: str) -> Dict[str, float]:
         """
@@ -154,44 +174,36 @@ class EntityEvaluator:
             reference: Reference summary text
 
         Returns:
-            dict with:
-                - scispacy_entity_recall: CUI-based recall (scispaCy)
-                - medcat_entity_recall: CUI-based recall (MedCAT)
+            dict with, for each tool in {scispacy, medcat}:
+                - {tool}_entity_recall, {tool}_entity_precision, {tool}_entity_f1
+                - {tool}_n_note_cuis, {tool}_n_ref_cuis, {tool}_n_matched_cuis
         """
         print("🔹 Computing entity evaluation metrics...")
+
+        results = {}
 
         # Handle empty inputs
         if not generated or not generated.strip() or not reference:
             print("⚠️ Warning: Empty text, returning zero scores")
-            return {
-                "scispacy_entity_recall": 0.0,
-                "medcat_entity_recall": 0.0,
-            }
+            for tool in ("scispacy", "medcat"):
+                for k in ("recall", "precision", "f1"):
+                    results[f"{tool}_entity_{k}"] = 0.0
+                for k in ("n_note_cuis", "n_ref_cuis", "n_matched_cuis"):
+                    results[f"{tool}_{k}"] = 0
+            return results
 
-        # ==============================
-        # scispaCy Entity Recall
-        # ==============================
-        print("  → Computing scispaCy entity recall...")
-        scispacy_ref_cuis = self._extract_scispacy_cuis(reference)
-        scispacy_gen_cuis = self._extract_scispacy_cuis(generated)
-        scispacy_entity_recall = self._compute_cui_recall(scispacy_ref_cuis, scispacy_gen_cuis)
-        print(f"    scispaCy: {len(scispacy_ref_cuis)} ref CUIs, {len(scispacy_gen_cuis)} gen CUIs, recall={scispacy_entity_recall:.4f}")
-
-        # ==============================
-        # MedCAT Entity Recall
-        # ==============================
-        print("  → Computing MedCAT entity recall...")
-        medcat_ref_cuis = self._extract_medcat_cuis(reference)
-        medcat_gen_cuis = self._extract_medcat_cuis(generated)
-        medcat_entity_recall = self._compute_cui_recall(medcat_ref_cuis, medcat_gen_cuis)
-        print(f"    MedCAT: {len(medcat_ref_cuis)} ref CUIs, {len(medcat_gen_cuis)} gen CUIs, recall={medcat_entity_recall:.4f}")
-
-        results = {
-            "scispacy_entity_recall": scispacy_entity_recall,
-            "medcat_entity_recall": medcat_entity_recall,
-        }
-
-        print(f"  ✅ scispaCy Recall: {scispacy_entity_recall:.4f} | MedCAT Recall: {medcat_entity_recall:.4f}")
+        for tool, extract in (("scispacy", self._extract_scispacy_cuis),
+                              ("medcat", self._extract_medcat_cuis)):
+            print(f"  → Computing {tool} entity metrics...")
+            ref_cuis = extract(reference)
+            gen_cuis = extract(generated)
+            prf = self._compute_cui_prf(ref_cuis, gen_cuis)
+            for k in ("recall", "precision", "f1"):
+                results[f"{tool}_entity_{k}"] = prf[k]
+            for k in ("n_note_cuis", "n_ref_cuis", "n_matched_cuis"):
+                results[f"{tool}_{k}"] = prf[k]
+            print(f"    {tool}: {prf['n_ref_cuis']} ref CUIs, {prf['n_note_cuis']} gen CUIs, "
+                  f"recall={prf['recall']:.4f} precision={prf['precision']:.4f} f1={prf['f1']:.4f}")
 
         return results
 
@@ -234,6 +246,6 @@ def test():
     print("📊 ENTITY EVALUATION RESULTS")
     print("=" * 60)
     for metric, value in metrics.items():
-        print(f"  {metric:<25}: {value:.4f}")
+        print(f"  {metric:<28}: {value:.4f}")
 
     print("\n✅ Test complete!")

@@ -1,0 +1,61 @@
+Transcript source: fareez-groq.csv ground_truth column
+✓ Initialized. View run at https://modal.com/apps/sunbiz/main/ap-icQGj1yLnTMEkROav9X0MO
+✓ Created objects.
+├── 🔨 Created mount ./rag_models/evaluation/entity_evaluator_service.py
+├── 🔨 Created function EntityEvaluator.*.
+└── 🔨 Created function health_check.
+./scripts/revision_entity_metrics.py:39: DeprecationError: 2025-06-27: Function.map currently leaks an internal exception wrapping type (modal.exceptions.UserCodeException) when `return_exceptions=True` is set. In the future, this will change, and the underlying exception will be returned directly.
+To opt into the future behavior and silence this warning, add `wrap_returned_exceptions=False`:
+
+    f.map(..., return_exceptions=True, wrap_returned_exceptions=False)
+  results = list(EntityEvaluator().evaluate.map(notes, refs, return_exceptions=True))
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+🔄 Loading entity evaluation models...
+  deserializers["tokenizer"] = lambda p: self.tokenizer.from_disk(  # type: ignore[union-attr]
+🔄 Loading entity evaluation models...
+--
+Saved ./rag_models/results/revision/fareez_automated_metrics.csv; notes failed: 0
+model                           gpt-oss-120b  gpt-oss-20b  qwen3-32b  medgemma-4b
+medcat_entity_recall      mean         0.429        0.396      0.404        0.306
+                          std          0.056        0.060      0.057        0.085
+medcat_entity_precision   mean         0.192        0.228      0.260        0.404
+                          std          0.040        0.045      0.057        0.099
+medcat_entity_f1          mean         0.262        0.287      0.313        0.343
+                          std          0.042        0.045      0.053        0.083
+scispacy_entity_recall    mean         0.404        0.373      0.391        0.300
+                          std          0.043        0.054      0.063        0.082
+scispacy_entity_precision mean         0.227        0.280      0.317        0.490
+                          std          0.048        0.060      0.082        0.117
+scispacy_entity_f1        mean         0.287        0.317      0.346        0.367
+                          std          0.042        0.051      0.069        0.087
+model                    gpt-oss-120b  gpt-oss-20b  qwen3-32b  medgemma-4b
+medcat_n_note_cuis              284.6        219.9      197.5         93.9
+medcat_n_ref_cuis               127.4        127.4      127.4        126.7
+medcat_n_matched_cuis            54.0         50.2       51.0         38.1
+scispacy_n_note_cuis            244.2        182.3      169.0         82.0
+scispacy_n_ref_cuis             136.4        136.4      136.4        135.6
+scispacy_n_matched_cuis          54.8         50.9       53.2         40.4
+rc=0
