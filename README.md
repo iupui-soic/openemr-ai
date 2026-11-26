@@ -57,14 +57,17 @@ Bold = lowest in that column.
 | Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 14.19 †             |
 | Parakeet TDT 0.6B v2      | Not run   | **14.57**  | 18.16          | **12.51** †         |
 | Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 15.25               |
-| Groq Whisper v3 Turbo     | 9.60      | 14.91      | 18.87          | 13.61               |
+| Groq Whisper v3 Turbo     | 8.48      | 15.05      | 18.87          | 13.61               |
 | Whisper Edge              | 9.93      | 35.01      | Not run        | Not run             |
-| Whisper Large v3 Turbo    | 14.02     | 23.92      | 21.00          | 19.03               |
-| Whisper Large v3          | 13.26     | 19.35      | 22.28          | 17.80 *             |
-| MedASR                    | 44.01     | 39.25      | 64.59          | 43.95               |
+| Whisper Large v3 Turbo    | 13.88     | 23.88      | 21.00          | 19.03               |
+| Whisper Large v3          | 17.13 ‡   | 19.35      | 22.28          | 17.80 *             |
+| MedASR                    | 43.94     | 39.25      | 64.59          | 43.95               |
 
 † 250 of 270 files; 20 long recordings failed with GPU out-of-memory errors.
 * 83 of 270 files; the run was stopped by a Modal billing limit.
+‡ One recording (`gerd`) scored 54.65% with 360 inserted words and no deletions, a repetition loop; the other five average 9.63%. Earlier versions of this table gave 13.26%, which a bug in `whisper_wer.py` had produced with Whisper Large v3 Turbo.
+
+The institutional and Kaggle values for Parakeet TDT 1.1B, Canary 1B-v2, Groq Whisper v3 Turbo, Whisper Large v3 Turbo, Whisper Large v3 and MedASR are from the workflow run of 2026-11-26 and are the means of the per-file scores in `openemr_whisper_wer/results/institutional-*.csv` and `kaggle-*.csv`. Values that changed from the earlier runs: Groq institutional 9.60 to 8.48 and Kaggle 14.91 to 15.05, Whisper Large v3 Turbo 14.02 to 13.88 and 23.92 to 23.88, MedASR institutional 44.01 to 43.94.
 
 Fareez WER is computed with the "D:" and "P:" speaker labels removed from every reference. Two references with text-encoding errors (RES0002, RES0054) are excluded, which leaves 270 of the 272 files. Earlier versions of this table removed the labels for Voxtral Mini 3B only, which inflated the Fareez WER of every other model; those values (for example 14.50% for Voxtral and 18.63% for Parakeet TDT 0.6B v2) are superseded. Per-file values are in `rag_models/results/revision/fareez_wer_labels_removed.csv` and are reproduced by `scripts/revision_asr_fareez_wer.py`.
 
@@ -72,7 +75,7 @@ On the 250 Fareez files completed by seven of the eight models, Parakeet TDT 0.6
 
 **Dataset-level headline numbers:**
 - Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
-- Kaggle (385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), narrowly edging Groq Whisper (14.91%). Voxtral Mini 3B competitive at 15.33%.
+- Kaggle (385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), ahead of Canary 1B-v2 and Groq Whisper (both 15.05%). Voxtral Mini 3B competitive at 15.33%.
 - PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
 - Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono; 270 scored): Parakeet TDT 0.6B v2 is lowest (12.51% on the 250 files it completed), followed by Groq Whisper v3 Turbo (13.61%) and Voxtral Mini 3B (13.87%), both on all 270 files.
 
@@ -428,6 +431,8 @@ python canary_wer.py --output results.csv
 python parakeet_wer.py --output results.csv
 python wlv3t_on_groq.py --output results.csv
 python medasr_wer.py --output results.csv
+python speech_llm_wer.py --model qwen3-asr --output results.csv
+python speech_llm_wer.py --model granite-speech --output results.csv
 ```
 
 #### Kaggle Dataset
@@ -441,6 +446,8 @@ python canary_wer.py --kaggle --output-dir ./results
 python parakeet_wer.py --kaggle --output-dir ./results
 python wlv3t_on_groq.py --kaggle --output-dir ./results
 python medasr_wer.py --kaggle --output-dir ./results
+python speech_llm_wer.py --model qwen3-asr --kaggle --output-dir ./results
+python speech_llm_wer.py --model granite-speech --kaggle --output-dir ./results
 ```
 
 #### PriMock57 and Fareez OSCE Datasets
@@ -517,6 +524,7 @@ openemr_whisper_wer/
 ├── parakeet_wer.py         # NVIDIA Parakeet evaluation
 ├── medasr_wer.py           # Google MedASR evaluation
 ├── wlv3t_on_groq.py        # Groq API Whisper evaluation
+├── speech_llm_wer.py       # Qwen3-ASR and Granite Speech evaluation
 ├── wer_utils.py            # Shared utilities (WER calculation, Notion/Kaggle fetcher)
 ├── primock57_utils.py      # PriMock57 dataset loader + audio channel mixer
 ├── fareez_utils.py         # Fareez OSCE dataset loader + MP3-to-WAV converter
