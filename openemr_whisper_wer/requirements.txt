@@ -24,3 +24,7 @@ httpx>=0.24.0
 #groq
 groq
 python-dotenv
+# Second score of speech_llm_wer.py (Whisper English text normalizer)
+whisper-normalizer
+# PriMock57 transcripts (local dataset mode)
+textgrid
