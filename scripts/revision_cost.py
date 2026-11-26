@@ -36,7 +36,7 @@ GROQ_PER_M_TOKENS = {  # (input, output)
 # ----------------------------------------------------------------------------------------------
 # Part A assumptions
 # ----------------------------------------------------------------------------------------------
-ASR_LOG = "openemr_whisper_wer/results/fareez-voxtral-mini.csv"   # compute_s per file, local RTX 6000
+ASR_LOG = "openemr_whisper_wer/results/fareez-voxtral-mini.csv"   # compute_s per file, local RTX 6000 Ada
 ASR_LOG_GPU = "L40S"                                              # Modal GPU whose price the logged seconds are charged at
 ASR_LOG_MODEL = "Voxtral Mini 3B"
 DURATION_LOG = "openemr_whisper_wer/results/fareez_der.csv"       # duration_s per file
@@ -92,7 +92,7 @@ def main():
     print(f"Audio duration per encounter: {audio_s:.0f} s ({audio_s/60:.1f} min), mean of {len(dur)} Fareez recordings "
           f"({dur.duration_s.sum()/3600:.1f} h in total), from {DURATION_LOG}")
     print(f"ASR GPU seconds per encounter: {gpu_s:.1f} s (median {asr.compute_s.median():.1f}, max {asr.compute_s.max():.1f}), "
-          f"{ASR_LOG_MODEL} on a local RTX 6000, priced at the Modal {ASR_LOG_GPU} rate, {len(asr)} files, from {ASR_LOG}. "
+          f"{ASR_LOG_MODEL} on a local RTX 6000 Ada, priced at the Modal {ASR_LOG_GPU} rate, {len(asr)} files, from {ASR_LOG}. "
           f"Processing time only; container start-up and idle time before scale-down are not included.")
     for m, (i, o, n) in tok.items():
         print(f"Generation tokens, {m}: input {i:.0f}, output {o:.0f} (mean of {n} Fareez conversations)")

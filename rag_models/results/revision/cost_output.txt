@@ -5,7 +5,7 @@ Prices retrieved 2026-11-11. Modal: https://modal.com/pricing. Groq: https://con
 Modal GPU, US$ per second: {'A10': 0.000306, 'L40S': 0.000542, 'A100-40GB': 0.000583, 'A100-80GB': 0.000694}
 Groq, US$ per million tokens (input, output): {'gpt-oss-20b': (0.075, 0.3), 'gpt-oss-120b': (0.15, 0.6)}
 Audio duration per encounter: 687 s (11.4 min), mean of 272 Fareez recordings (51.9 h in total), from openemr_whisper_wer/results/fareez_der.csv
-ASR GPU seconds per encounter: 25.7 s (median 25.3, max 37.2), Voxtral Mini 3B on a local RTX 6000, priced at the Modal L40S rate, 272 files, from openemr_whisper_wer/results/fareez-voxtral-mini.csv. Processing time only; container start-up and idle time before scale-down are not included.
+ASR GPU seconds per encounter: 25.7 s (median 25.3, max 37.2), Voxtral Mini 3B on a local RTX 6000 Ada, priced at the Modal L40S rate, 272 files, from openemr_whisper_wer/results/fareez-voxtral-mini.csv. Processing time only; container start-up and idle time before scale-down are not included.
 Generation tokens, gpt-oss-20b: input 11134, output 1185 (mean of 40 Fareez conversations)
 Generation tokens, gpt-oss-120b: input 11134, output 1675 (mean of 40 Fareez conversations)
 Condition extraction: 600 input and 20 output tokens (assumed from the deployed settings)

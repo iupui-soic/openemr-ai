@@ -2,7 +2,7 @@
 """
 Mistral Voxtral Mini 3B — local WER evaluation on PriMock57 + Fareez OSCE.
 
-Uses transformers' Voxtral integration. Runs locally on RTX 6000.
+Uses transformers' Voxtral integration. Runs locally on RTX 6000 Ada.
 
 Usage:
     python voxtral_mini_wer.py --dataset both

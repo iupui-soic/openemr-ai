@@ -213,8 +213,8 @@ test_data/
 
 | Model | Params / Active | Infrastructure |
 |---|---|---|
-| Gemma 4 31B | 31B dense | Local RTX 6000 (4-bit quantization) |
-| Gemma 4 26B A4B | 26B / 4B active MoE | Local RTX 6000 (4-bit) |
+| Gemma 4 31B | 31B dense | Local RTX 6000 Ada (4-bit quantization) |
+| Gemma 4 26B A4B | 26B / 4B active MoE | Local RTX 6000 Ada (4-bit) |
 | Qwen3 32B | 32B dense | Groq API |
 | GPT-OSS 120B | 120B / 5.1B active MoE | Groq API |
 | Qwen3.5 35B A3B | 35B / 3B active MoE | OpenRouter API |
@@ -231,19 +231,19 @@ test_data/
 
 | Model | Infrastructure |
 |---|---|
-| MedGemma 1.5 4B | Local RTX 6000 (bfloat16) |
-| Phi-3 Mini | Local RTX 6000 |
+| MedGemma 1.5 4B | Local RTX 6000 Ada (bfloat16) |
+| Phi-3 Mini | Local RTX 6000 Ada |
 | Gemma 3 4B | OpenRouter API |
-| MedGemma 4B | Local RTX 6000 (bfloat16) |
+| MedGemma 4B | Local RTX 6000 Ada (bfloat16) |
 
 ### Small (4 models, 1–3B)
 
 | Model | Infrastructure |
 |---|---|
-| Llama-3.2-1B | Local RTX 6000 |
-| Qwen-2.5-3B | Local RTX 6000 |
-| Llama-3.2-3B | Local RTX 6000 |
-| Qwen-2.5-1.5B | Local RTX 6000 |
+| Llama-3.2-1B | Local RTX 6000 Ada |
+| Qwen-2.5-3B | Local RTX 6000 Ada |
+| Llama-3.2-3B | Local RTX 6000 Ada |
+| Qwen-2.5-1.5B | Local RTX 6000 Ada |
 
 ## Ablation Study Design
 

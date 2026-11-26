@@ -2,7 +2,7 @@
 """
 Run small models (1-3B) locally on GPU for genuine inference results.
 
-These models previously failed on Modal but can run locally on RTX 6000.
+These models previously failed on Modal but can run locally on RTX 6000 Ada.
 """
 
 import os

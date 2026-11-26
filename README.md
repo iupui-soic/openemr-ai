@@ -74,7 +74,7 @@ Bold = lowest in that column.
 ‡ One recording (`gerd`) scored 54.65% with 360 inserted words and no deletions, a repetition loop; the other five average 9.61%. Earlier versions of this table gave 13.26%, which a bug in `whisper_wer.py` had produced with Whisper Large v3 Turbo.
 
 ¶ Earlier versions of this table gave 5.71%. That run (`run_voxtral_institutional.py`) scored Voxtral against the Whisper Edge transcripts instead of the reference transcripts. Voxtral is now part of the WER workflow (`voxtral_mini_modal.py`) and is scored against the reference transcripts like every other model. Its transcripts from the earlier run score 6.63% against the same reference. Its Kaggle value was 15.33 before this run.
-‖ The GPU of the Modal runs (Kaggle, and for Voxtral the institutional recordings). The PriMock57 and Fareez values of these two models are from local scripts (`voxtral_mini_wer.py`, `parakeet_06b_v2_wer.py`), whose headers name an RTX 6000 and an RTX 6000 Ada (48 GB, the same class of GPU as an L40S).
+‖ The GPU of the Modal runs (Kaggle, and for Voxtral the institutional recordings). The PriMock57 and Fareez values of these two models are from local scripts (`voxtral_mini_wer.py`, `parakeet_06b_v2_wer.py`), which ran on a local RTX 6000 Ada (48 GB, the same class of GPU as an L40S).
 
 § Ishiki ASR 1.0 returns text that is already normalized, for example "i have" for "I've" and "3" for "three". The WER in this table removes only case and punctuation, so it counts each of those rewrites as an error. The table below scores it like for like.
 
@@ -99,7 +99,7 @@ Four models recorded how fast they ran on the PriMock57 and Fareez recordings (8
 | Granite Speech 5.0 2B     | A10G | 59 to 74 | 7.3 GiB      | about $0.02      |
 | Ishiki ASR 1.0            | L40S | 53 to 58 | 34.5 GiB     | about $0.04      |
 | Qwen3-ASR-1.7B            | A10G | 18 to 20 | 20.6 GiB     | about $0.06      |
-| Voxtral Mini 3B           | Local RTX 6000 | 21 to 27 | Not recorded | $0.07 to $0.10 at the L40S price |
+| Voxtral Mini 3B           | Local RTX 6000 Ada | 21 to 27 | Not recorded | $0.07 to $0.10 at the L40S price |
 
 These figures count transcription time only. Starting a container, loading the model and idle time add to the bill. Ishiki ASR 1.0's weights alone are 24.8 GiB, so it does not fit a 24 GB GPU. Qwen3-ASR-1.7B is the slowest of the three because it transcribes each recording in one pass.
 
@@ -293,11 +293,11 @@ Evaluation of LLM models for validating clinical decision support logic. Tests w
 | **GPT-5.4-mini** (proprietary reference) | OpenAI | — | OpenAI API |
 | **Gemma 4 31B** | Google | 31B dense | Modal A100 80GB (Unsloth GGUF Q4\_K\_M via llama.cpp) |
 | **GPT-OSS 20B** | OpenAI | 20B / 3.6B active MoE | Groq API |
-| MedGemma 4B / 1.5 4B | Google | 4B | Local RTX 6000 (bfloat16) |
+| MedGemma 4B / 1.5 4B | Google | 4B | Local RTX 6000 Ada (bfloat16) |
 | Gemma 3 4B | Google | 4B | OpenRouter API |
-| Phi-3 Mini | Microsoft | 3.8B | Local RTX 6000 |
-| Llama 3.2 1B/3B | Meta | 1-3B | Local RTX 6000 |
-| Qwen 2.5 1.5B/3B | Alibaba | 1.5-3B | Local RTX 6000 |
+| Phi-3 Mini | Microsoft | 3.8B | Local RTX 6000 Ada |
+| Llama 3.2 1B/3B | Meta | 1-3B | Local RTX 6000 Ada |
+| Qwen 2.5 1.5B/3B | Alibaba | 1.5-3B | Local RTX 6000 Ada |
 
 ### Latest Results (41 Test Cases, 16 Valid / 25 Invalid: 13 parametric, 12 semantic)
 
