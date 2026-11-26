@@ -42,8 +42,9 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 | Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
 | **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); lowest Fareez WER (12.51%) on the 250 files it completed |
 | **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); lowest WER on the institutional recordings (5.71%) |
-| **Qwen3-ASR-1.7B** | Alibaba | Speech-LM (added 2026-11); lowest Kaggle WER (13.22%). Institutional and Kaggle sets only |
-| Granite Speech 5.0 2B | IBM | Speech-LM (added 2026-11); long recordings are cut at quiet points into pieces of at most 100 s. Institutional and Kaggle sets only |
+| **Qwen3-ASR-1.7B** | Alibaba | Speech-LM (added 2026-11); lowest PriMock57 WER (14.66%) |
+| Granite Speech 5.0 2B | IBM | Speech-LM (added 2026-11); long recordings are cut at quiet points into pieces of at most 100 s |
+| **Ishiki ASR 1.0** | Ishiki Labs | Seven open speech models in one 13.3 B-parameter checkpoint, with a router that merges their outputs (added 2026-11); lowest Kaggle WER (10.98%). Its text is already normalized, see the note under the results |
 | Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
 | MedASR | Google | Conformer architecture pre-trained for medical dictation |
 
@@ -53,40 +54,72 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 
 Bold = lowest in that column.
 
-| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=270) |
-|-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
-| Voxtral Mini 3B           | **5.71**  | 15.33      | 25.15          | 13.87               |
-| Qwen3-ASR-1.7B            | 7.25      | **13.22**  | Not run        | Not run             |
-| Granite Speech 5.0 2B     | 7.66      | 14.41      | Not run        | Not run             |
-| Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 14.19 †             |
-| Parakeet TDT 0.6B v2      | Not run   | 14.57      | 18.16          | **12.51** †         |
-| Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 15.25               |
-| Groq Whisper v3 Turbo     | 8.48      | 15.05      | 18.87          | 13.61               |
-| Whisper Edge              | 9.93      | 35.01      | Not run        | Not run             |
-| Whisper Large v3 Turbo    | 13.88     | 23.88      | 21.00          | 19.03               |
-| Whisper Large v3          | 17.13 ‡   | 19.35      | 22.28          | 17.80 *             |
-| MedASR                    | 43.94     | 39.25      | 64.59          | 43.95               |
+| Model | GPU used | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=270) |
+|-------|----------|:-------------------:|:--------------:|:----------------:|:--------------------:|
+| Voxtral Mini 3B           | L40S                  | **5.71**  | 15.33      | 25.15          | 13.87               |
+| Granite Speech 5.0 2B     | A10G                  | 7.06      | 14.41      | 19.75          | 13.54               |
+| Qwen3-ASR-1.7B            | A10G                  | 7.25      | 13.36      | **14.66**      | 14.55               |
+| Parakeet TDT 1.1B         | A100, A10G for Kaggle | 8.30      | 16.28      | 17.06          | 14.19 †             |
+| Parakeet TDT 0.6B v2      | A100, A10G for Kaggle | Not run   | 14.57      | 18.16          | **12.51** †         |
+| Groq Whisper v3 Turbo     | None (Groq API)       | 8.48      | 15.05      | 18.87          | 13.61               |
+| Canary 1B-v2              | A10G                  | 8.58      | 15.05      | 21.54          | 15.25               |
+| Whisper Edge              | Not recorded          | 9.93      | 35.01      | Not run        | Not run             |
+| Whisper Large v3 Turbo    | A100, A10G for Kaggle | 13.88     | 23.88      | 21.00          | 19.03               |
+| Ishiki ASR 1.0 §          | L40S                  | 15.06     | **10.98**  | 22.17          | 20.83               |
+| Whisper Large v3          | A100, A10G for Kaggle | 17.11 ‡   | 19.35      | 22.28          | 17.80 *             |
+| MedASR                    | A10G                  | 43.94     | 39.25      | 64.59          | 43.95               |
 
 † 250 of 270 files; 20 long recordings failed with GPU out-of-memory errors.
 * 83 of 270 files; the run was stopped by a Modal billing limit.
-‡ One recording (`gerd`) scored 54.65% with 360 inserted words and no deletions, a repetition loop; the other five average 9.63%. Earlier versions of this table gave 13.26%, which a bug in `whisper_wer.py` had produced with Whisper Large v3 Turbo.
+‡ One recording (`gerd`) scored 54.65% with 360 inserted words and no deletions, a repetition loop; the other five average 9.61%. Earlier versions of this table gave 13.26%, which a bug in `whisper_wer.py` had produced with Whisper Large v3 Turbo.
 
-The institutional and Kaggle values for Parakeet TDT 1.1B, Canary 1B-v2, Groq Whisper v3 Turbo, Whisper Large v3 Turbo, Whisper Large v3 and MedASR are from the workflow run of 2026-11-26 and are the means of the per-file scores in `openemr_whisper_wer/results/institutional-*.csv` and `kaggle-*.csv`. Values that changed from the earlier runs: Groq institutional 9.60 to 8.48 and Kaggle 14.91 to 15.05, Whisper Large v3 Turbo 14.02 to 13.88 and 23.92 to 23.88, MedASR institutional 44.01 to 43.94.
+§ Ishiki ASR 1.0 returns text that is already normalized, for example "i have" for "I've" and "3" for "three". The WER in this table removes only case and punctuation, so it counts each of those rewrites as an error. The table below scores it like for like.
 
-Qwen3-ASR-1.7B and Granite Speech 5.0 2B were added on 2026-11-26 and scored by the same workflow with `speech_llm_wer.py` (`institutional-qwen3-asr.csv`, `institutional-granite-speech.csv`, `kaggle-qwen3-asr.csv` and `kaggle-granite-speech.csv` in `openemr_whisper_wer/results/`). All 6 institutional recordings and all 385 Kaggle files were scored for both. Neither has been run on PriMock57 or Fareez OSCE.
+#### WER (%) after text normalization
+
+The three models run by `speech_llm_wer.py`, scored after the Whisper English text normalizer is applied to both the reference and the transcript (numbers as digits, contractions expanded, fillers such as "um" dropped; column `wer_norm` of their result files). Normalization lowers every model's WER, so these values are not comparable with the table above. Bold = lowest in that column.
+
+| Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=270) |
+|-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
+| Ishiki ASR 1.0            | **4.91**  | **10.05**  | **11.56**      | **8.47**            |
+| Qwen3-ASR-1.7B            | 5.37      | 12.90      | 11.63          | 10.28               |
+| Granite Speech 5.0 2B     | 5.47      | 13.59      | 15.10          | 10.88               |
+
+#### GPU and cost
+
+The GPU column is the GPU that each model's script requests on Modal. Modal's on-demand prices on 2026-11-26 were $1.10 per hour for an A10G (24 GB), $1.95 for an L40S (48 GB) and $2.10 for an A100 (40 GB); CPU and memory are billed on top. Groq Whisper is a hosted API and needs no GPU. Whisper Edge transcripts were produced outside these scripts and the hardware is not recorded here.
+
+Four models recorded how fast they ran on the PriMock57 and Fareez recordings (8.6 and 51.9 hours of audio):
+
+| Model | GPU | Speed (times real time) | Peak GPU memory | GPU cost per hour of audio |
+|-------|-----|:-----------------------:|:---------------:|:--------------------------:|
+| Granite Speech 5.0 2B     | A10G | 59 to 74 | 7.3 GiB      | about $0.02      |
+| Ishiki ASR 1.0            | L40S | 53 to 58 | 34.5 GiB     | about $0.04      |
+| Qwen3-ASR-1.7B            | A10G | 18 to 20 | 20.6 GiB     | about $0.06      |
+| Voxtral Mini 3B           | L40S | 21 to 27 | Not recorded | $0.07 to $0.10   |
+
+These figures count transcription time only. Starting a container, loading the model and idle time add to the bill. Ishiki ASR 1.0's weights alone are 24.8 GiB, so it does not fit a 24 GB GPU. Qwen3-ASR-1.7B is the slowest of the three because it transcribes each recording in one pass.
+
+#### Where the values come from
+
+The institutional and Kaggle values of the nine models in the WER workflow (Parakeet TDT 1.1B, Canary 1B-v2, Groq Whisper v3 Turbo, Whisper Large v3 Turbo, Whisper Large v3, MedASR, Qwen3-ASR-1.7B, Granite Speech 5.0 2B and Ishiki ASR 1.0) are from the workflow run of 2026-11-26 and are the means of the per-file scores in `openemr_whisper_wer/results/institutional-*.csv` and `kaggle-*.csv`. Values that changed from the runs before that date: Groq institutional 9.60 to 8.48 and Kaggle 14.91 to 15.05, Whisper Large v3 Turbo 14.02 to 13.88 and 23.92 to 23.88, MedASR institutional 44.01 to 43.94.
+
+The six older models, Qwen3-ASR-1.7B and Granite Speech 5.0 2B were each run twice that day. The second run reproduced 11 of the 12 result files of the six older models exactly. Whisper Large v3's institutional mean moved from 17.13 to 17.11 and Qwen3-ASR-1.7B's Kaggle mean from 13.22 to 13.36 (6 of 385 files), so a difference of about 0.1 between two models is within run-to-run variation. Granite Speech 5.0 2B's institutional mean moved from 7.66 to 7.06 after the script was changed to transcribe the pieces of a recording as one batch; three of the six recordings changed, and its Kaggle files, which are one piece each, did not.
+
+Qwen3-ASR-1.7B, Granite Speech 5.0 2B and Ishiki ASR 1.0 were added on 2026-11-26. Their PriMock57 and Fareez values are from the local dataset mode of `speech_llm_wer.py` (`primock57-*.csv` and `fareez-*.csv` for `qwen3-asr`, `granite-speech` and `ishiki-asr`). All 57 PriMock57 recordings and all 270 Fareez recordings were scored for each model. Their Fareez references have the speaker labels removed and leave out the two unreadable references, as for the other models.
 
 Fareez WER is computed with the "D:" and "P:" speaker labels removed from every reference. Two references with text-encoding errors (RES0002, RES0054) are excluded, which leaves 270 of the 272 files. Earlier versions of this table removed the labels for Voxtral Mini 3B only, which inflated the Fareez WER of every other model; those values (for example 14.50% for Voxtral and 18.63% for Parakeet TDT 0.6B v2) are superseded. Per-file values are in `rag_models/results/revision/fareez_wer_labels_removed.csv` and are reproduced by `scripts/revision_asr_fareez_wer.py`.
 
 On the 250 Fareez files completed by seven of the eight models, Parakeet TDT 0.6B v2 is still lowest (12.51%), followed by Voxtral Mini 3B (13.14%), Groq Whisper v3 Turbo (13.59%), and Parakeet TDT 1.1B (14.19%).
 
 **Dataset-level headline numbers:**
-- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%), followed by Qwen3-ASR-1.7B (7.25%) and Granite Speech 5.0 2B (7.66%); all conversational ASRs ≤10% except Whisper Large variants.
-- Kaggle (385 short-form medical utterances, `validate` split): Qwen3-ASR-1.7B wins (13.22%), ahead of Granite Speech 5.0 2B (14.41%) and Parakeet TDT 0.6B v2 (14.57%). Canary 1B-v2 and Groq Whisper follow (both 15.05%), then Voxtral Mini 3B (15.33%).
-- PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
-- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono; 270 scored): Parakeet TDT 0.6B v2 is lowest (12.51% on the 250 files it completed), followed by Groq Whisper v3 Turbo (13.61%) and Voxtral Mini 3B (13.87%), both on all 270 files.
+- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%), followed by Granite Speech 5.0 2B (7.06%) and Qwen3-ASR-1.7B (7.25%); all conversational ASRs ≤10% except Whisper Large variants and Ishiki ASR 1.0, whose 15.06% falls to 4.91% once its normalized text is scored like for like.
+- Kaggle (385 short-form medical utterances, `validate` split): Ishiki ASR 1.0 wins (10.98%), ahead of Qwen3-ASR-1.7B (13.36%), Granite Speech 5.0 2B (14.41%) and Parakeet TDT 0.6B v2 (14.57%). Canary 1B-v2 and Groq Whisper follow (both 15.05%), then Voxtral Mini 3B (15.33%).
+- PriMock57 (57 primary-care consultations, ~9h, real clinicians): Qwen3-ASR-1.7B wins (14.66%), ahead of Parakeet TDT 1.1B (17.06%) and Parakeet TDT 0.6B v2 (18.16%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
+- Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono; 270 scored): Parakeet TDT 0.6B v2 is lowest (12.51% on the 250 files it completed), followed by Granite Speech 5.0 2B (13.54%), Groq Whisper v3 Turbo (13.61%) and Voxtral Mini 3B (13.87%), all three on all 270 files.
 
 **Key Findings (revised after the Fareez WER correction):**
-- **No model is best on every dataset.** Voxtral Mini 3B has the lowest WER on the institutional recordings (5.71%), Qwen3-ASR-1.7B on Kaggle (13.22%), Parakeet TDT 0.6B v2 on Fareez OSCE (12.51%), and Parakeet TDT 1.1B on PriMock57 (17.06%). Qwen3-ASR-1.7B and Granite Speech 5.0 2B have not been run on PriMock57 or Fareez OSCE.
+- **No model is best on every dataset.** Voxtral Mini 3B has the lowest WER on the institutional recordings (5.71%), Ishiki ASR 1.0 on Kaggle (10.98%), Qwen3-ASR-1.7B on PriMock57 (14.66%), and Parakeet TDT 0.6B v2 on Fareez OSCE (12.51%).
 - **The deployed transcription service runs Parakeet TDT 1.1B** on an A10G GPU (`smart-ambient-listening/transcription-service/modal_asr.py`). Any of the benchmarked models can be substituted without changes elsewhere.
 - **Voxtral Mini 3B** takes about 25 s per Fareez file on an L40S GPU, against 1 to 3 s for the Parakeet and Whisper Turbo models, and has the highest WER of the general-purpose models on PriMock57 (25.15%).
 - **Groq Whisper v3 Turbo** is within 4 percentage points of the best model on every dataset and completed every file.
@@ -439,6 +472,7 @@ python wlv3t_on_groq.py --output results.csv
 python medasr_wer.py --output results.csv
 python speech_llm_wer.py --model qwen3-asr --output results.csv
 python speech_llm_wer.py --model granite-speech --output results.csv
+python speech_llm_wer.py --model ishiki-asr --output results.csv
 ```
 
 #### Kaggle Dataset
@@ -454,6 +488,7 @@ python wlv3t_on_groq.py --kaggle --output-dir ./results
 python medasr_wer.py --kaggle --output-dir ./results
 python speech_llm_wer.py --model qwen3-asr --kaggle --output-dir ./results
 python speech_llm_wer.py --model granite-speech --kaggle --output-dir ./results
+python speech_llm_wer.py --model ishiki-asr --kaggle --output-dir ./results
 ```
 
 #### PriMock57 and Fareez OSCE Datasets
@@ -474,6 +509,11 @@ python medasr_wer.py --local-dataset primock57 --output results/primock57-medasr
 
 # Same for Fareez (replace primock57 with fareez)
 python whisper_wer.py --local-dataset fareez --output results/fareez-whisper-turbo.csv
+
+# Qwen3-ASR, Granite Speech and Ishiki ASR (--model qwen3-asr, granite-speech or ishiki-asr).
+# A run that stops can be started again with the same command and continues where it stopped.
+python speech_llm_wer.py --model qwen3-asr --local-dataset primock57 --workers 2 --output results/primock57-qwen3-asr.csv
+python speech_llm_wer.py --model qwen3-asr --local-dataset fareez --workers 2 --output results/fareez-qwen3-asr.csv
 ```
 
 #### Generate Summary Tables
@@ -530,7 +570,7 @@ openemr_whisper_wer/
 ├── parakeet_wer.py         # NVIDIA Parakeet evaluation
 ├── medasr_wer.py           # Google MedASR evaluation
 ├── wlv3t_on_groq.py        # Groq API Whisper evaluation
-├── speech_llm_wer.py       # Qwen3-ASR and Granite Speech evaluation
+├── speech_llm_wer.py       # Qwen3-ASR, Granite Speech and Ishiki ASR evaluation
 ├── wer_utils.py            # Shared utilities (WER calculation, Notion/Kaggle fetcher)
 ├── primock57_utils.py      # PriMock57 dataset loader + audio channel mixer
 ├── fareez_utils.py         # Fareez OSCE dataset loader + MP3-to-WAV converter
