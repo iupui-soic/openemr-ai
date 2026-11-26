@@ -74,11 +74,15 @@ MODELS = {
     # cannot receive a large call (64 MiB worked, 96 MiB did not), hence
     # max_call_bytes; local recordings are sent to it as FLAC, which is lossless
     # and about half the size. batch_size is the number of its pieces of audio
-    # (about 22 s each) transcribed at once.
+    # (about 22 s each) transcribed at once. Its GPU memory also grows with the
+    # audio it is given in one generate call (about 30 GiB for 10 minutes and
+    # 42 GiB for 40 minutes on a 44 GiB card), so recordings are given to it in
+    # sets of at most generate_audio_s seconds.
     "ishiki-asr": {
         "model_id": "ishiki-labs/ishiki-asr-1.0",
         "revision": "902d5c85ad46066c214895c0b8f2200c1800661a",
         "batch_size": 64,
+        "generate_audio_s": 1300,
         "max_call_bytes": 48 * 1024 * 1024,
     },
 }
@@ -316,6 +320,11 @@ class SpeechLLM:
         # A batch of prompts is padded on the left, so that every row ends where
         # generation starts.
         self.processor.tokenizer.padding_side = "left"
+        # A first matrix product sets up the GPU's linear algebra library. Without
+        # it, a first batch that takes most of the memory leaves no room for
+        # that setup and fails (CUBLAS_STATUS_ALLOC_FAILED).
+        warm = torch.ones(8, 8, device="cuda", dtype=torch.bfloat16)
+        (warm @ warm).sum().item()
         print("Model loaded!")
 
     # ------------------------------------------------------------------
@@ -400,12 +409,18 @@ class SpeechLLM:
         for batch in batches:
             try:
                 out = self._transcribe_pieces([pieces[i] for i in batch])
-            except torch.cuda.OutOfMemoryError:
-                if len(batch) == 1:
+            except RuntimeError as e:
+                # torch.cuda.OutOfMemoryError is a RuntimeError; a failed
+                # allocation inside a CUDA library is reported as a plain one.
+                if len(batch) == 1 or not ("out of memory" in str(e) or "ALLOC_FAILED" in str(e)):
                     raise
                 # Too much for one batch: transcribe its pieces one at a time.
+                print(f"  A batch of {len(batch)} pieces did not fit in GPU memory, transcribing them one at a time")
                 torch.cuda.empty_cache()
-                out = [self._transcribe_pieces([pieces[i]])[0] for i in batch]
+                out = []
+                for i in batch:
+                    out.append(self._transcribe_pieces([pieces[i]])[0])
+                    torch.cuda.empty_cache()
             for i, text in zip(batch, out):
                 texts[i] = text
 
@@ -476,6 +491,18 @@ class IshikiASR:
         ).to("cuda:0").eval()
         print("Model loaded!")
 
+    def _generate(self, audios: list) -> list[str]:
+        """One generate call for a set of recordings."""
+        import torch
+
+        inputs = self.processor(
+            audios if len(audios) > 1 else audios[0], sampling_rate=16000, return_tensors="pt",
+            padding="longest", return_attention_mask=True,
+        )
+        with torch.inference_mode():
+            output_ids = self.model.generate(**inputs, batch_size=self.config["batch_size"])
+        return [t.strip() for t in self.processor.batch_decode(output_ids, skip_special_tokens=True)]
+
     def _transcribe_many(self, audios: list) -> list[str]:
         """Transcribe recordings of mono 16 kHz audio of any length."""
         import time
@@ -483,26 +510,23 @@ class IshikiASR:
         import torch
 
         started = time.time()
-        inputs = self.processor(
-            audios if len(audios) > 1 else audios[0], sampling_rate=16000, return_tensors="pt",
-            padding="longest", return_attention_mask=True,
-        )
-        batch_size = self.config["batch_size"]
-        while True:
-            try:
-                with torch.inference_mode():
-                    output_ids = self.model.generate(**inputs, batch_size=batch_size)
-                break
-            except torch.cuda.OutOfMemoryError:
-                if batch_size <= 8:
-                    raise
-                torch.cuda.empty_cache()
-                batch_size //= 2
-                print(f"  Out of GPU memory, trying again with batch size {batch_size}")
-        texts = [t.strip() for t in self.processor.batch_decode(output_ids, skip_special_tokens=True)]
+        limit = self.config["generate_audio_s"] * 16000
+        sets = []
+        for i, audio in enumerate(audios):
+            if sets and sum(len(audios[j]) for j in sets[-1]) + len(audio) <= limit:
+                sets[-1].append(i)
+            else:
+                sets.append([i])
+
+        texts = [""] * len(audios)
+        for indices in sets:
+            for i, text in zip(indices, self._generate([audios[i] for i in indices])):
+                texts[i] = text
+            torch.cuda.empty_cache()
+
         seconds = sum(len(a) for a in audios) / 16000
         if seconds > 60:
-            print(f"  {seconds:.0f} s of audio in {len(audios)} recording(s) transcribed in "
+            print(f"  {seconds:.0f} s of audio in {len(audios)} recording(s), {len(sets)} generate call(s), transcribed in "
                   f"{time.time() - started:.0f} s, peak GPU memory {torch.cuda.max_memory_allocated() / 2**30:.1f} GB")
         return texts
 
