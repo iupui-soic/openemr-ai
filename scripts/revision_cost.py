@@ -36,8 +36,8 @@ GROQ_PER_M_TOKENS = {  # (input, output)
 # ----------------------------------------------------------------------------------------------
 # Part A assumptions
 # ----------------------------------------------------------------------------------------------
-ASR_LOG = "openemr_whisper_wer/results/fareez-voxtral-mini.csv"   # compute_s per file, Modal L40S
-ASR_LOG_GPU = "L40S"
+ASR_LOG = "openemr_whisper_wer/results/fareez-voxtral-mini.csv"   # compute_s per file, local RTX 6000
+ASR_LOG_GPU = "L40S"                                              # Modal GPU whose price the logged seconds are charged at
 ASR_LOG_MODEL = "Voxtral Mini 3B"
 DURATION_LOG = "openemr_whisper_wer/results/fareez_der.csv"       # duration_s per file
 # The deployed service runs Parakeet TDT 1.1B on a Modal A10G, but its Modal runs did not log
@@ -92,7 +92,7 @@ def main():
     print(f"Audio duration per encounter: {audio_s:.0f} s ({audio_s/60:.1f} min), mean of {len(dur)} Fareez recordings "
           f"({dur.duration_s.sum()/3600:.1f} h in total), from {DURATION_LOG}")
     print(f"ASR GPU seconds per encounter: {gpu_s:.1f} s (median {asr.compute_s.median():.1f}, max {asr.compute_s.max():.1f}), "
-          f"{ASR_LOG_MODEL} on Modal {ASR_LOG_GPU}, {len(asr)} files, from {ASR_LOG}. "
+          f"{ASR_LOG_MODEL} on a local RTX 6000, priced at the Modal {ASR_LOG_GPU} rate, {len(asr)} files, from {ASR_LOG}. "
           f"Processing time only; container start-up and idle time before scale-down are not included.")
     for m, (i, o, n) in tok.items():
         print(f"Generation tokens, {m}: input {i:.0f}, output {o:.0f} (mean of {n} Fareez conversations)")
@@ -106,8 +106,8 @@ def main():
         ext = (EXTRACT_INPUT_TOKENS * e_in + EXTRACT_OUTPUT_TOKENS * e_out) / 1e6
         return gen, ext
     scenarios = [
-        ("Logged ASR run: Voxtral Mini 3B on L40S; gpt-oss-20b", ASR_LOG_GPU, "gpt-oss-20b"),
-        ("Logged ASR run: Voxtral Mini 3B on L40S; gpt-oss-120b", ASR_LOG_GPU, "gpt-oss-120b"),
+        ("Logged ASR run: Voxtral Mini 3B at the L40S price; gpt-oss-20b", ASR_LOG_GPU, "gpt-oss-20b"),
+        ("Logged ASR run: Voxtral Mini 3B at the L40S price; gpt-oss-120b", ASR_LOG_GPU, "gpt-oss-120b"),
         ("Deployed GPU type: A10 at the logged GPU seconds; gpt-oss-20b", DEPLOYED_ASR_GPU, "gpt-oss-20b"),
     ]
     for name, gpu, m in scenarios:
