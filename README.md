@@ -42,6 +42,8 @@ Comprehensive evaluation of Automatic Speech Recognition (ASR) models for medica
 | Parakeet-TDT-1.1B | NVIDIA | Fast Token-and-Duration Transducer |
 | **Parakeet-TDT-0.6B-v2** | NVIDIA | Smaller TDT (added 2026-04); lowest Fareez WER (12.51%) on the 250 files it completed |
 | **Voxtral Mini 3B** | Mistral | Multimodal speech-LM (added 2026-04); lowest WER on the institutional recordings (5.71%) |
+| **Qwen3-ASR-1.7B** | Alibaba | Speech-LM (added 2026-11); lowest Kaggle WER (13.22%). Institutional and Kaggle sets only |
+| Granite Speech 5.0 2B | IBM | Speech-LM (added 2026-11); long recordings are cut at quiet points into pieces of at most 100 s. Institutional and Kaggle sets only |
 | Groq Whisper | Groq | API-based Whisper Large v3 Turbo |
 | MedASR | Google | Conformer architecture pre-trained for medical dictation |
 
@@ -54,8 +56,10 @@ Bold = lowest in that column.
 | Model | Institutional (n=6) | Kaggle (n=385) | PriMock57 (n=57) | Fareez OSCE (n=270) |
 |-------|:-------------------:|:--------------:|:----------------:|:--------------------:|
 | Voxtral Mini 3B           | **5.71**  | 15.33      | 25.15          | 13.87               |
+| Qwen3-ASR-1.7B            | 7.25      | **13.22**  | Not run        | Not run             |
+| Granite Speech 5.0 2B     | 7.66      | 14.41      | Not run        | Not run             |
 | Parakeet TDT 1.1B         | 8.30      | 16.28      | **17.06**      | 14.19 †             |
-| Parakeet TDT 0.6B v2      | Not run   | **14.57**  | 18.16          | **12.51** †         |
+| Parakeet TDT 0.6B v2      | Not run   | 14.57      | 18.16          | **12.51** †         |
 | Canary 1B-v2              | 8.58      | 15.05      | 21.54          | 15.25               |
 | Groq Whisper v3 Turbo     | 8.48      | 15.05      | 18.87          | 13.61               |
 | Whisper Edge              | 9.93      | 35.01      | Not run        | Not run             |
@@ -69,18 +73,20 @@ Bold = lowest in that column.
 
 The institutional and Kaggle values for Parakeet TDT 1.1B, Canary 1B-v2, Groq Whisper v3 Turbo, Whisper Large v3 Turbo, Whisper Large v3 and MedASR are from the workflow run of 2026-11-26 and are the means of the per-file scores in `openemr_whisper_wer/results/institutional-*.csv` and `kaggle-*.csv`. Values that changed from the earlier runs: Groq institutional 9.60 to 8.48 and Kaggle 14.91 to 15.05, Whisper Large v3 Turbo 14.02 to 13.88 and 23.92 to 23.88, MedASR institutional 44.01 to 43.94.
 
+Qwen3-ASR-1.7B and Granite Speech 5.0 2B were added on 2026-11-26 and scored by the same workflow with `speech_llm_wer.py` (`institutional-qwen3-asr.csv`, `institutional-granite-speech.csv`, `kaggle-qwen3-asr.csv` and `kaggle-granite-speech.csv` in `openemr_whisper_wer/results/`). All 6 institutional recordings and all 385 Kaggle files were scored for both. Neither has been run on PriMock57 or Fareez OSCE.
+
 Fareez WER is computed with the "D:" and "P:" speaker labels removed from every reference. Two references with text-encoding errors (RES0002, RES0054) are excluded, which leaves 270 of the 272 files. Earlier versions of this table removed the labels for Voxtral Mini 3B only, which inflated the Fareez WER of every other model; those values (for example 14.50% for Voxtral and 18.63% for Parakeet TDT 0.6B v2) are superseded. Per-file values are in `rag_models/results/revision/fareez_wer_labels_removed.csv` and are reproduced by `scripts/revision_asr_fareez_wer.py`.
 
 On the 250 Fareez files completed by seven of the eight models, Parakeet TDT 0.6B v2 is still lowest (12.51%), followed by Voxtral Mini 3B (13.14%), Groq Whisper v3 Turbo (13.59%), and Parakeet TDT 1.1B (14.19%).
 
 **Dataset-level headline numbers:**
-- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%); all conversational ASRs ≤10% except Whisper Large variants.
-- Kaggle (385 short-form medical utterances, `validate` split): Parakeet TDT 0.6B v2 wins (14.57%), ahead of Canary 1B-v2 and Groq Whisper (both 15.05%). Voxtral Mini 3B competitive at 15.33%.
+- Institutional (6 custom medical recordings): Voxtral Mini 3B wins (5.71%), followed by Qwen3-ASR-1.7B (7.25%) and Granite Speech 5.0 2B (7.66%); all conversational ASRs ≤10% except Whisper Large variants.
+- Kaggle (385 short-form medical utterances, `validate` split): Qwen3-ASR-1.7B wins (13.22%), ahead of Granite Speech 5.0 2B (14.41%) and Parakeet TDT 0.6B v2 (14.57%). Canary 1B-v2 and Groq Whisper follow (both 15.05%), then Voxtral Mini 3B (15.33%).
 - PriMock57 (57 primary-care consultations, ~9h, real clinicians): Parakeet TDT 1.1B wins (17.06%). Groq Whisper second (18.87%). Voxtral drops to 25.15% on these stereo-mixed doctor/patient recordings.
 - Fareez OSCE (272 multi-specialty interviews, 51.9 h, mono; 270 scored): Parakeet TDT 0.6B v2 is lowest (12.51% on the 250 files it completed), followed by Groq Whisper v3 Turbo (13.61%) and Voxtral Mini 3B (13.87%), both on all 270 files.
 
 **Key Findings (revised after the Fareez WER correction):**
-- **No model is best on every dataset.** Voxtral Mini 3B has the lowest WER on the institutional recordings (5.71%), Parakeet TDT 0.6B v2 on Fareez OSCE (12.51%) and Kaggle (14.57%), and Parakeet TDT 1.1B on PriMock57 (17.06%).
+- **No model is best on every dataset.** Voxtral Mini 3B has the lowest WER on the institutional recordings (5.71%), Qwen3-ASR-1.7B on Kaggle (13.22%), Parakeet TDT 0.6B v2 on Fareez OSCE (12.51%), and Parakeet TDT 1.1B on PriMock57 (17.06%). Qwen3-ASR-1.7B and Granite Speech 5.0 2B have not been run on PriMock57 or Fareez OSCE.
 - **The deployed transcription service runs Parakeet TDT 1.1B** on an A10G GPU (`smart-ambient-listening/transcription-service/modal_asr.py`). Any of the benchmarked models can be substituted without changes elsewhere.
 - **Voxtral Mini 3B** takes about 25 s per Fareez file on an L40S GPU, against 1 to 3 s for the Parakeet and Whisper Turbo models, and has the highest WER of the general-purpose models on PriMock57 (25.15%).
 - **Groq Whisper v3 Turbo** is within 4 percentage points of the best model on every dataset and completed every file.
