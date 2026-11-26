@@ -1,5 +1,12 @@
 #!/usr/bin/env python
-"""Run Voxtral Mini on the 6 institutional WAVs. Reference = *_edge.txt transcripts."""
+"""
+Superseded by the Notion mode of voxtral_mini_modal.py. Do not use this script for WER.
+
+It runs Voxtral Mini on the 6 institutional WAVs and scores against the
+*_edge.txt files. Those are Whisper Edge transcripts, not the reference
+transcripts, so its result (5.71% mean WER) measured agreement with Whisper
+Edge. Against the reference transcripts the same Voxtral transcripts score 6.63%.
+"""
 import sys, time
 from pathlib import Path
 import jiwer, pandas as pd

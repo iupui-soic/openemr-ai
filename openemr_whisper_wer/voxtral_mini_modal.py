@@ -1,18 +1,31 @@
 #!/usr/bin/env python
 """
-Modal-hosted Voxtral Mini 3B evaluation on the Kaggle medical speech dataset.
+Modal-hosted Voxtral Mini 3B WER evaluation, on an L40S.
 
-Mirrors the ParakeetKaggleEvaluator flow in parakeet_wer.py — reads audio from
-the `medical-speech-dataset` Modal volume, transcribes on an L40S, writes a
-per-file WER CSV.
+Two modes, as in the other scripts of this folder:
+    python voxtral_mini_modal.py --output results.csv            # the Notion recordings
+    python voxtral_mini_modal.py --kaggle --output-dir results   # Kaggle medical speech dataset
 
-Usage:
-    python voxtral_mini_modal.py --kaggle --output-dir results
+The Notion mode scores against the reference transcripts stored in Notion, like
+every other model. It replaces run_voxtral_institutional.py, which scored against
+the *_edge.txt files, and those are Whisper Edge transcripts.
+
+The Kaggle mode mirrors the ParakeetKaggleEvaluator flow in parakeet_wer.py: it
+reads audio from the `medical-speech-dataset` Modal volume and writes a per-file
+WER CSV.
 """
 from __future__ import annotations
 import os
 import argparse
 import modal
+
+# Local-only imports (not needed in Modal container)
+if not os.environ.get("MODAL_IS_REMOTE"):
+    from wer_utils import (
+        NotionFetcher,
+        WERCalculator,
+        calculate_and_save_results,
+    )
 
 app = modal.App("voxtral-kaggle-transcription")
 MODEL_ID = "mistralai/Voxtral-Mini-3B-2507"
@@ -62,6 +75,41 @@ class VoxtralKaggleEvaluator:
         print("Loaded")
 
     @modal.method()
+    def transcribe(self, audio_bytes: bytes) -> str:
+        """
+        Transcribe audio bytes (m4a, mp3, wav, etc.) to text.
+
+        The same request as transcribe_file in voxtral_mini_wer.py, which
+        produced the PriMock57 and Fareez results.
+        """
+        import subprocess
+        import tempfile
+
+        with tempfile.NamedTemporaryFile(suffix=".audio", delete=False) as f:
+            f.write(audio_bytes)
+            input_path = f.name
+        wav_path = input_path + "_converted.wav"
+        try:
+            subprocess.run([
+                "ffmpeg", "-y", "-i", input_path,
+                "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav_path
+            ], check=True, capture_output=True)
+            inputs = self.processor.apply_transcription_request(
+                language="en", audio=wav_path, model_id=MODEL_ID,
+            ).to(self.device, dtype=self.model.dtype)
+            out = self.model.generate(**inputs, max_new_tokens=2048)
+            decoded = self.processor.batch_decode(
+                out[:, inputs.input_ids.shape[1]:], skip_special_tokens=True,
+            )
+            return (decoded[0] if decoded else "").strip()
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(f"FFmpeg conversion failed: {e.stderr.decode()}")
+        finally:
+            for path in (input_path, wav_path):
+                if os.path.exists(path):
+                    os.unlink(path)
+
+    @modal.method()
     def evaluate_dataset(self, split: str = "validate") -> list[dict]:
         import sys, time
         import pandas as pd
@@ -99,7 +147,7 @@ class VoxtralKaggleEvaluator:
                 hyp = (decoded[0] if decoded else "").strip()
                 o = jiwer.process_words(transform(ref), transform(hyp))
                 results.append({
-                    "file_name": audio.name, "ground_truth": ref,
+                    "name": audio.name, "ground_truth": ref,
                     "transcript": hyp, "wer": o.wer, "mer": o.mer, "wil": o.wil,
                     "insertions": o.insertions, "deletions": o.deletions,
                     "substitutions": o.substitutions, "hits": o.hits,
@@ -109,18 +157,88 @@ class VoxtralKaggleEvaluator:
                     print(f"  [{i}/{len(files)}] {audio.name}  WER={o.wer:.3f}")
             except Exception as e:
                 print(f"  [{i}] {audio.name}: ERROR {str(e)[:100]}")
-                results.append({"file_name": audio.name, "ground_truth": ref,
+                results.append({"name": audio.name, "ground_truth": ref,
                                 "transcript": "", "wer": None,
                                 "error": str(e)[:200]})
         return results
 
 
+def run_pipeline(database_id: str, output_csv: str, error_report_path: str):
+    """Run the WER pipeline on the Notion recordings."""
+    print("=" * 60)
+    print("Voxtral Mini 3B WER Pipeline")
+    print("=" * 60)
+    print(f"Model: {MODEL_ID}")
+
+    print("\n[1/5] Fetching entries from Notion...")
+    fetcher = NotionFetcher()
+    entries = fetcher.get_entries(database_id)
+    print(f"  Found {len(entries)} entries")
+    if not entries:
+        print("No entries found!")
+        return
+
+    wer_calc = WERCalculator()
+    results = []
+
+    print("\n[2/5] Starting transcription...")
+    with app.run():
+        transcriber = VoxtralKaggleEvaluator()
+        for i, entry in enumerate(entries):
+            name = entry["name"]
+            print(f"\n  [{i+1}/{len(entries)}] {name}")
+            try:
+                print("    Downloading audio...")
+                audio_bytes = fetcher.download_audio(entry["audio_url"])
+                print(f"    Downloaded {len(audio_bytes):,} bytes")
+
+                print("    Transcribing...")
+                transcript = transcriber.transcribe.remote(audio_bytes)
+
+                metrics = wer_calc.calculate(entry["ground_truth"], transcript)
+                print(f"    WER: {metrics['wer']:.4f} ({metrics['wer']*100:.2f}%)")
+                results.append({
+                    "name": name,
+                    "ground_truth": entry["ground_truth"],
+                    "transcript": transcript,
+                    **metrics
+                })
+            except Exception as e:
+                print(f"    ERROR: {e}")
+                results.append({
+                    "name": name,
+                    "ground_truth": entry.get("ground_truth", ""),
+                    "transcript": "",
+                    "wer": 1.0,
+                    "error": str(e)
+                })
+
+    # In a workflow run this writes scores only (see wer_utils.py).
+    return calculate_and_save_results(
+        results=results,
+        wer_calc=wer_calc,
+        model_name=MODEL_ID,
+        output_csv=output_csv,
+        error_report_path=error_report_path,
+    )
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--kaggle", action="store_true", required=True)
+    ap.add_argument("--kaggle", action="store_true",
+                    help="Evaluate on the Kaggle medical speech dataset instead of the Notion recordings")
     ap.add_argument("--split", default="validate")
-    ap.add_argument("--output-dir", default="results")
+    ap.add_argument("--output-dir", default="results", help="Output directory (Kaggle mode)")
+    ap.add_argument("--database-id", default="294a6166c4978050930fea2073e66dc2",
+                    help="Notion database ID (Notion mode)")
+    ap.add_argument("--output", default="results.csv", help="Output CSV path (Notion mode)")
+    ap.add_argument("--error-report", default="error_analysis.txt",
+                    help="Error analysis report path (Notion mode)")
     args = ap.parse_args()
+
+    if not args.kaggle:
+        run_pipeline(args.database_id, args.output, args.error_report)
+        return
 
     import pandas as pd
     from pathlib import Path
@@ -131,7 +249,7 @@ def main():
         results = ev.evaluate_dataset.remote(args.split)
 
     df = pd.DataFrame(results)
-    out = Path(args.output_dir) / f"kaggle-{SHORT}.csv"
+    out = Path(args.output_dir) / f"kaggle-results-{SHORT}.csv"
     df.to_csv(out, index=False)
     valid = df.dropna(subset=["wer"])
     if len(valid):

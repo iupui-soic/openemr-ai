@@ -107,6 +107,7 @@ jobs:
       parakeet_hash: ${{ steps.hashes.outputs.parakeet }}
       medasr_hash: ${{ steps.hashes.outputs.medasr }}
       speechllm_hash: ${{ steps.hashes.outputs.speechllm }}
+      voxtral_hash: ${{ steps.hashes.outputs.voxtral }}
       kaggle_hash: ${{ steps.hashes.outputs.kaggle }}
       utils_hash: ${{ steps.hashes.outputs.utils }}
     steps:
@@ -145,6 +146,7 @@ jobs:
           echo "parakeet=${{ hashFiles('openemr_whisper_wer/parakeet_wer.py') }}" >> $GITHUB_OUTPUT
           echo "medasr=${{ hashFiles('openemr_whisper_wer/medasr_wer.py') }}" >> $GITHUB_OUTPUT
           echo "speechllm=${{ hashFiles('openemr_whisper_wer/speech_llm_wer.py') }}" >> $GITHUB_OUTPUT
+          echo "voxtral=${{ hashFiles('openemr_whisper_wer/voxtral_mini_modal.py') }}" >> $GITHUB_OUTPUT
           echo "kaggle=${{ hashFiles('openemr_whisper_wer/kaggle_wer_evaluation.py', 'openemr_whisper_wer/kaggle_dataset.py') }}" >> $GITHUB_OUTPUT
           echo "utils=${{ hashFiles('openemr_whisper_wer/wer_utils.py', 'openemr_whisper_wer/requirements.txt') }}" >> $GITHUB_OUTPUT
 
@@ -977,6 +979,96 @@ jobs:
           path: openemr_whisper_wer/kaggle-results-ishiki-asr.csv
           retention-days: 90
 
+  evaluate-voxtral-mini:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    outputs:
+      ran: ${{ steps.check.outputs.ran }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check cache for previous results
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/results-voxtral-mini.csv
+          key: wer-voxtral-mini-${{ needs.detect-changes.outputs.voxtral_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Check cache for Kaggle results
+        id: kaggle-cache
+        uses: actions/cache@v4
+        with:
+          path: openemr_whisper_wer/kaggle-results-voxtral-mini.csv
+          key: kaggle-voxtral-mini-${{ needs.detect-changes.outputs.voxtral_hash }}-${{ needs.detect-changes.outputs.utils_hash }}
+
+      - name: Determine if evaluation needed
+        id: check
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
+            echo "ran=false" >> $GITHUB_OUTPUT
+          else
+            echo "ran=true" >> $GITHUB_OUTPUT
+          fi
+
+          # Kaggle evaluation check (run by default on push, or when explicitly enabled)
+          if [ "${{ github.event.inputs.force_all }}" == "true" ]; then
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.run_kaggle }}" == "false" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Kaggle evaluation disabled"
+          elif [ "${{ steps.kaggle-cache.outputs.cache-hit }}" == "true" ]; then
+            echo "kaggle_run=false" >> $GITHUB_OUTPUT
+            echo "Using cached Kaggle results"
+          else
+            echo "kaggle_run=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check.outputs.ran == 'true' || steps.check.outputs.kaggle_run == 'true'
+        run: pip install -r openemr_whisper_wer/requirements.txt
+
+      - name: Run WER evaluation
+        if: steps.check.outputs.ran == 'true'
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python voxtral_mini_modal.py --output results-voxtral-mini.csv
+
+      - name: Run Kaggle evaluation
+        if: steps.check.outputs.kaggle_run == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          cd openemr_whisper_wer
+          python voxtral_mini_modal.py --kaggle --output-dir .
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-voxtral-mini
+          path: openemr_whisper_wer/results-voxtral-mini.csv
+          retention-days: 90
+
+      - name: Upload Kaggle results artifact
+        if: steps.check.outputs.kaggle_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-results-voxtral-mini
+          path: openemr_whisper_wer/kaggle-results-voxtral-mini.csv
+          retention-days: 90
+
   # ============================================
   # Comparison table generation
   # ============================================
@@ -993,6 +1085,7 @@ jobs:
       - evaluate-qwen3-asr
       - evaluate-granite-speech
       - evaluate-ishiki-asr
+      - evaluate-voxtral-mini
     if: always()
     runs-on: ubuntu-latest
     permissions:
@@ -1047,6 +1140,7 @@ jobs:
               ('qwen3-asr-1.7b', 'results-qwen3-asr'),
               ('granite-speech-5.0-2b', 'results-granite-speech'),
               ('ishiki-asr-1.0', 'results-ishiki-asr'),
+              ('voxtral-mini-3b', 'results-voxtral-mini'),
           ]
 
           # Kaggle dataset models
@@ -1060,6 +1154,7 @@ jobs:
               ('qwen3-asr', 'kaggle-results-qwen3-asr'),
               ('granite-speech', 'kaggle-results-granite-speech'),
               ('ishiki-asr', 'kaggle-results-ishiki-asr'),
+              ('voxtral-mini', 'kaggle-results-voxtral-mini'),
           ]
 
           def process_results(models, prefix="artifacts"):
@@ -1288,6 +1383,7 @@ jobs:
               'results-qwen3-asr': 'institutional-qwen3-asr.csv',
               'results-granite-speech': 'institutional-granite-speech.csv',
               'results-ishiki-asr': 'institutional-ishiki-asr.csv',
+              'results-voxtral-mini': 'institutional-voxtral-mini.csv',
               'kaggle-results-whisper-turbo': 'kaggle-whisper-turbo.csv',
               'kaggle-results-whisper-v3': 'kaggle-whisper-v3.csv',
               'kaggle-results-canary': 'kaggle-canary.csv',
@@ -1297,6 +1393,7 @@ jobs:
               'kaggle-results-qwen3-asr': 'kaggle-qwen3-asr.csv',
               'kaggle-results-granite-speech': 'kaggle-granite-speech.csv',
               'kaggle-results-ishiki-asr': 'kaggle-ishiki-asr.csv',
+              'kaggle-results-voxtral-mini': 'kaggle-voxtral-mini.csv',
           }
 
           for artifact, target in files.items():
