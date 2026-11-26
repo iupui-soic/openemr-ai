@@ -89,7 +89,7 @@ def _wait_for_gate(prefix: str, poll_s: int = 60, max_wait_s: int = 21600) -> No
 @app.function(
     image=eval_image,
     volumes={RESULTS_MOUNT: results_volume, GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     timeout=86400,
     cpu=4.0,
     memory=8192,

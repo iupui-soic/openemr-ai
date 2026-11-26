@@ -167,7 +167,7 @@ def _evaluate_inline(config: dict) -> dict:
     # The chain now does the scoring itself, so it needs the gold volume and the
     # provider secret that the evaluator used to hold.
     volumes={RESULTS_MOUNT: results_volume, GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     # Long enough for a queue of full length runs. Each step commits its own
     # record, so hitting this ceiling loses one step, not the queue.
     timeout=86400,

@@ -90,7 +90,7 @@ DEFAULTS = {
 @app.function(
     image=eval_image,
     volumes={RESULTS_MOUNT: results_volume, GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     # Nothing here touches Groq, but the image expects the secret to resolve.
     timeout=86400,
     cpu=4.0,

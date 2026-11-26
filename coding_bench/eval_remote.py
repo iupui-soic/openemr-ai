@@ -215,7 +215,7 @@ def build_predictor(
     # including the ones that never touch Anthropic:
     #     modal secret create anthropic-api ANTHROPIC_API_KEY=<key>
     secrets=[
-        modal.Secret.from_name("groq-api"),
+        modal.Secret.from_name("groq-api-key"),
         modal.Secret.from_name("anthropic-api"),
     ],
     timeout=14400,

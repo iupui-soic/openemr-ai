@@ -35,7 +35,7 @@ name: Coding Bench
 # bank one that has finished.
 #
 # Credentials: MODAL_TOKEN_ID and MODAL_TOKEN_SECRET only. The provider keys are
-# Modal secrets (`groq-api`, `anthropic-api`) that eval_remote.py declares and
+# Modal secrets (`groq-api-key`, `anthropic-api`) that eval_remote.py declares and
 # Modal resolves server side, so no provider key passes through GitHub.
 
 on:

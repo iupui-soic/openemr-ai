@@ -34,7 +34,7 @@ WORKING_NOTE = "76207"
 @app.function(
     image=eval_image,
     volumes={GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     timeout=3600,
 )
 def probe(note_ids: list[str]) -> None:

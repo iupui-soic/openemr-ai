@@ -114,7 +114,7 @@ def _wait_for_call(call_id: str, poll_s: int = 60, max_wait_s: int = 43200) -> N
 @app.function(
     image=eval_image,
     volumes={RESULTS_MOUNT: results_volume, GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     # Muse is slow. The full catalogue step alone is measured in hours, so this
     # ceiling is the 24h maximum rather than anything tuned.
     timeout=86400,

@@ -68,7 +68,7 @@ DEFAULTS = {
 @app.function(
     image=eval_image,
     volumes={RESULTS_MOUNT: results_volume, GOLD_MOUNT: gold_volume},
-    secrets=[modal.Secret.from_name("groq-api")],
+    secrets=[modal.Secret.from_name("groq-api-key")],
     # A day, because this step is measured in hours and the ceiling should never
     # be the thing that ends it.
     timeout=86400,
