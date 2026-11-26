@@ -19,7 +19,7 @@ app = modal.App("fareez-round2-groq")
 image = modal.Image.debian_slim(python_version="3.11").pip_install("groq>=0.30.0")
 
 
-@app.function(image=image, secrets=[modal.Secret.from_name("groq-api")], timeout=900, max_containers=4, retries=2)
+@app.function(image=image, secrets=[modal.Secret.from_name("groq-api-key")], timeout=900, max_containers=4, retries=2)
 def generate(item: dict, model: str, max_tokens: int = 4096) -> dict:
     from groq import Groq
     key = next(v for k, v in os.environ.items() if "GROQ" in k.upper() and v)
