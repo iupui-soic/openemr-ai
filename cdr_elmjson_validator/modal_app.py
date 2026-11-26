@@ -865,7 +865,7 @@ def validate_medgemma_1_5(items: list) -> list:
 @app.function(
     image=groq_image,
     timeout=1800,
-    secrets=[modal.Secret.from_name("groq-api")]
+    secrets=[modal.Secret.from_name("groq-api-key")]
 )
 def validate_gpt_oss_120b(items: list) -> list:
     """Batch validate with GPT OSS 120B via Groq API."""
@@ -875,7 +875,7 @@ def validate_gpt_oss_120b(items: list) -> list:
 @app.function(
     image=groq_image,
     timeout=1800,
-    secrets=[modal.Secret.from_name("groq-api")]
+    secrets=[modal.Secret.from_name("groq-api-key")]
 )
 def validate_gpt_oss_20b(items: list) -> list:
     """Batch validate with GPT OSS 20B via Groq API."""
@@ -885,7 +885,7 @@ def validate_gpt_oss_20b(items: list) -> list:
 @app.function(
     image=groq_image,
     timeout=1800,
-    secrets=[modal.Secret.from_name("groq-api")]
+    secrets=[modal.Secret.from_name("groq-api-key")]
 )
 def validate_llama_3_3_70b(items: list) -> list:
     """Batch validate with Llama 3.3 70B via Groq API."""
@@ -895,7 +895,7 @@ def validate_llama_3_3_70b(items: list) -> list:
 @app.function(
     image=groq_image,
     timeout=1800,
-    secrets=[modal.Secret.from_name("groq-api")]
+    secrets=[modal.Secret.from_name("groq-api-key")]
 )
 def validate_qwen3_32b(items: list) -> list:
     """Batch validate with Qwen 3 32B via Groq API."""

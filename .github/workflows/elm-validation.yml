@@ -352,8 +352,8 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" --force
 
       - name: Run validation
         if: steps.check.outputs.ran == 'true'
@@ -416,8 +416,8 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" --force
 
       - name: Run validation
         if: steps.check.outputs.ran == 'true'
@@ -480,8 +480,8 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" --force
 
       - name: Run validation
         if: steps.check.outputs.ran == 'true'
@@ -544,8 +544,8 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
-          modal secret create groq-api GROQ_API_KEY="$GROQ_API_KEY" --force
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" 2>/dev/null || \
+          modal secret create groq-api-key GROQ_API_KEY="$GROQ_API_KEY" --force
 
       - name: Run validation
         if: steps.check.outputs.ran == 'true'
