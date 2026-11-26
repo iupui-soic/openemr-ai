@@ -201,8 +201,16 @@ class NotionFetcher:
         return entries
 
     def download_audio(self, url: str) -> bytes:
-        response = requests.get(url, timeout=300)
-        response.raise_for_status()
+        # The URL is signed and gives access to the recording, and request
+        # errors quote it. The error raised here leaves it out, so that it
+        # cannot reach a log or a result file.
+        try:
+            response = requests.get(url, timeout=300)
+            response.raise_for_status()
+        except requests.RequestException as e:
+            status = getattr(getattr(e, "response", None), "status_code", None)
+            detail = f"HTTP {status}" if status else type(e).__name__
+            raise RuntimeError(f"Audio download failed ({detail})") from None
         return response.content
 
 
@@ -441,6 +449,23 @@ def generate_error_report(
 # Shared Pipeline Logic
 # ============================================================================
 
+# Columns of a result file that hold no text: the name and the scores.
+SCORE_COLUMNS = ["name", "wer", "mer", "wil", "insertions", "deletions", "substitutions", "hits"]
+
+
+def on_github_actions() -> bool:
+    """True in a workflow run, where the logs and artifacts of this public repo are public."""
+    return os.environ.get("GITHUB_ACTIONS") == "true"
+
+
+def scores_only(df):
+    """Drop the reference text and the transcript, and reduce the error message to a flag."""
+    out = df[[c for c in SCORE_COLUMNS if c in df.columns]].copy()
+    if "error" in df.columns:
+        out["error"] = ["failed" if isinstance(e, str) and e else "" for e in df["error"]]
+    return out
+
+
 def calculate_and_save_results(
         results: list,
         wer_calc: WERCalculator,
@@ -473,15 +498,26 @@ def calculate_and_save_results(
     else:
         avg_wer = agg_wer = 1.0
 
+    # These results are for the recordings in the private Notion database. In a
+    # workflow run the result file becomes an artifact that anyone can download,
+    # so only the scores are written there, and the error report, which quotes
+    # the reference text and the transcript, is not written at all.
+    public = on_github_actions()
+
     # Save CSV
     print("\n[4/5] Saving results...")
     df = pd.DataFrame(results)
+    if public:
+        df = scores_only(df)
     df.to_csv(output_csv, index=False)
     print(f"  Results saved to: {output_csv}")
 
     # Generate error report
-    print("\n[5/5] Generating error analysis report...")
-    generate_error_report(results, wer_calc, model_name, error_report_path)
+    if public:
+        print("\n[5/5] Error analysis report not written in a workflow run.")
+    else:
+        print("\n[5/5] Generating error analysis report...")
+        generate_error_report(results, wer_calc, model_name, error_report_path)
 
     # Print summary
     print("\n" + "=" * 60)
@@ -499,7 +535,8 @@ def calculate_and_save_results(
         else:
             print(f"  {r['name']}: {r['wer']:.4f} ({r['wer']*100:.2f}%)")
 
-    print(f"\nDetailed error analysis: {error_report_path}")
+    if not public:
+        print(f"\nDetailed error analysis: {error_report_path}")
 
     return {
         "average_wer": avg_wer,

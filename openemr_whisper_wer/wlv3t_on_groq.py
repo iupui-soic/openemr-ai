@@ -269,12 +269,6 @@ def run_pipeline(
             metrics = wer_calc.calculate(entry["ground_truth"], transcript)
             print(f"    WER: {metrics['wer']:.4f} ({metrics['wer']*100:.2f}%)")
 
-            # Show quick error summary for high WER
-            if metrics['wer'] > 0.15:
-                errors = wer_calc.get_error_details(entry["ground_truth"], transcript)
-                if errors["substitutions"]:
-                    print(f"    Top substitutions: {errors['substitutions'][:3]}")
-
             results.append({
                 "name": name,
                 "ground_truth": entry["ground_truth"],

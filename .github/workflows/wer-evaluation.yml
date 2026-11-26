@@ -985,10 +985,12 @@ jobs:
           import glob
           import pandas as pd
 
-          # Only the per-file scores are committed. The reference text, the
-          # model transcript and the raw error message stay in the artifact:
-          # this commit is not reviewed, and the institutional recordings come
-          # from a private database.
+          # Only the per-file scores are committed: no reference text, no model
+          # transcript and no raw error message. This commit is not reviewed.
+          # The institutional result files arrive here already reduced to
+          # scores (calculate_and_save_results in wer_utils.py), because those
+          # recordings come from a private database and artifacts of a public
+          # repo are public. The Kaggle artifacts hold that public dataset's text.
           SCORES = ['name', 'wer', 'mer', 'wil', 'insertions', 'deletions',
                     'substitutions', 'hits']
 
