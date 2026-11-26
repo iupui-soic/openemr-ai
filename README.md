@@ -85,7 +85,7 @@ On the 250 Fareez files completed by seven of the eight models, Parakeet TDT 0.6
 - **Canary 1B-v2** completed every file, with WER from 8.58% to 21.54% across datasets.
 - **MedASR** has the highest WER on every dataset (39.25% to 64.59%).
 
-> View detailed results in the [GitHub Actions workflow runs](../../actions/workflows/wer-evaluation.yml)
+> Per-file results are in `openemr_whisper_wer/results/`. The [WER evaluation workflow](../../actions/workflows/wer-evaluation.yml) commits the institutional and Kaggle per-file scores there on each run.
 
 ## Ambient listening: SOAP Note Generation and Blinded Clinician Evaluation
 

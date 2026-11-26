@@ -277,7 +277,7 @@ def run_pipeline(
     print("\n[2/5] Starting Whisper transcription...")
 
     with app.run():
-        transcriber = WhisperTranscriber()
+        transcriber = WhisperTranscriber(model_id=model_id)
 
         for i, entry in enumerate(entries):
             name = entry["name"]

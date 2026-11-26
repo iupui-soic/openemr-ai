@@ -27,6 +27,11 @@ on:
   #     - 'openemr_whisper_wer/**'
   #     - '.github/workflows/wer-evaluation.yml'
 
+# One run per branch at a time: the last job commits result files to the branch.
+concurrency:
+  group: wer-evaluation-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   # ============================================
   # Optional: Setup Modal persistent volume (run once)
@@ -714,8 +719,15 @@ jobs:
       - evaluate-medasr
     if: always()
     runs-on: ubuntu-latest
+    permissions:
+      # The per-file results are committed to openemr_whisper_wer/results.
+      # Artifacts expire after 90 days, so they cannot be the only copy.
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history, so the commit can be rebased if the branch moved.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -966,4 +978,97 @@ jobs:
         with:
           name: wer-comparison
           path: comparison_results.csv
+
+      - name: Copy results into the repo
+        run: |
+          python << 'EOF'
+          import glob
+          import pandas as pd
+
+          # Only the per-file scores are committed. The reference text, the
+          # model transcript and the raw error message stay in the artifact:
+          # this commit is not reviewed, and the institutional recordings come
+          # from a private database.
+          SCORES = ['name', 'wer', 'mer', 'wil', 'insertions', 'deletions',
+                    'substitutions', 'hits']
+
+          # Artifact name -> file in openemr_whisper_wer/results. The names
+          # follow the fareez-<model>.csv and primock57-<model>.csv files there.
+          files = {
+              'results-whisper-large-v3-turbo': 'institutional-whisper-turbo.csv',
+              'results-whisper-large-v3': 'institutional-whisper-v3.csv',
+              'results-canary-1b-v2': 'institutional-canary.csv',
+              'results-groq-whisper-large-v3-turbo': 'institutional-groq.csv',
+              'results-parakeet-tdt-1.1b': 'institutional-parakeet.csv',
+              'results-medasr': 'institutional-medasr.csv',
+              'kaggle-results-whisper-turbo': 'kaggle-whisper-turbo.csv',
+              'kaggle-results-whisper-v3': 'kaggle-whisper-v3.csv',
+              'kaggle-results-canary': 'kaggle-canary.csv',
+              'kaggle-results-parakeet': 'kaggle-parakeet.csv',
+              'kaggle-results-groq': 'kaggle-groq.csv',
+              'kaggle-results-medasr': 'kaggle-medasr.csv',
+          }
+
+          for artifact, target in files.items():
+              found = glob.glob(f"artifacts/**/{artifact}.csv", recursive=True)
+              if not found:
+                  print(f"{target}: no file from this run, the committed file is kept")
+                  continue
+              try:
+                  df = pd.read_csv(found[0])
+              except Exception as e:
+                  print(f"::warning::{target}: unreadable ({e}), the committed file is kept")
+                  continue
+              if df.empty or 'name' not in df.columns or 'wer' not in df.columns:
+                  print(f"::warning::{target}: no WER rows, the committed file is kept")
+                  continue
+              if 'error' in df.columns:
+                  is_failed = df['error'].notna() & (df['error'] != '')
+              else:
+                  is_failed = pd.Series(False, index=df.index)
+              failed = int(is_failed.sum())
+              # A run in which every file failed (an expired key, a billing
+              # limit) must not replace a complete result with error rows.
+              if failed == len(df):
+                  print(f"::warning::{target}: all {len(df)} files failed, the committed file is kept")
+                  continue
+              if failed:
+                  print(f"::warning::{target}: {failed} of {len(df)} files failed in this run")
+              # Read as text so the numbers are written exactly as the run
+              # produced them.
+              out = pd.read_csv(found[0], dtype=str, keep_default_na=False)
+              out = out[[c for c in SCORES if c in out.columns]]
+              if failed:
+                  out['error'] = ['failed' if f else '' for f in is_failed]
+              out.to_csv(f"openemr_whisper_wer/results/{target}", index=False)
+              print(f"{target}: {len(df) - failed} of {len(df)} files scored")
+          EOF
+
+      - name: Commit results
+        if: github.ref_type == 'branch'
+        run: |
+          git add openemr_whisper_wer/results
+          if git diff --cached --quiet; then
+            echo "No result file changed."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Bank WER results from CI"
+          # Rebase before pushing, in case someone pushed during the run. If the
+          # push cannot be made, the same files are in this run's artifacts.
+          for attempt in 1 2 3; do
+            git fetch origin "${{ github.ref_name }}"
+            if ! git rebase "origin/${{ github.ref_name }}"; then
+              git rebase --abort
+              echo "::error::The result files conflict with a newer commit, nothing pushed. Commit them by hand from this run's artifacts."
+              exit 1
+            fi
+            if git push origin "HEAD:${{ github.ref_name }}"; then
+              exit 0
+            fi
+            echo "Push rejected, attempt $attempt of 3."
+          done
+          echo "::error::Push kept being rejected. Commit the result files by hand from this run's artifacts."
+          exit 1
           retention-days: 90
