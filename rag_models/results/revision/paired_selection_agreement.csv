@@ -1,0 +1,71 @@
+round,pair,model_a,model_b,n_blocks,n_comp_nonties,model_a_comp_wins,n_acc_nonties,model_a_acc_wins,metric,rule_label,agree_comp,agree_comp_pct,agree_acc,agree_acc_pct
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,sbert_similarity,Higher default SBERT (256-token cap),11,27.5,11,29.7
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,bert_f1,Higher default BERTScore F1 (510-token cap),11,27.5,12,32.4
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,bert_f1_full,Higher untruncated BERTScore F1,5,12.5,7,18.9
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,sbert_full,Higher full-text SBERT,35,87.5,34,91.9
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,bge_large_full,Higher full-text BGE-large,38,95.0,35,94.6
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,pubmedbert_full,Higher full-text S-PubMedBERT,33,82.5,33,89.2
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,medcat_entity_recall,Higher MedCAT entity recall,40,100.0,35,94.6
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,scispacy_entity_recall,Higher scispaCy entity recall,37,92.5,33,89.2
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,nli_contra_transcript,Lower NLI contradiction (transcript),18,45.0,20,54.1
+Round 2,Qwen3.8-27B vs LLaMA-4-Scout,qwen3.8-27b,llama-4-scout,40,40,40,37,35,summary_words,Longer note (word count baseline),40,100.0,35,94.6
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,sbert_similarity,Higher default SBERT (256-token cap),18,47.4,14,58.3
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,bert_f1,Higher default BERTScore F1 (510-token cap),16,42.1,16,66.7
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,bert_f1_full,Higher untruncated BERTScore F1,12,31.6,13,54.2
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,sbert_full,Higher full-text SBERT,30,78.9,15,62.5
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,bge_large_full,Higher full-text BGE-large,29,76.3,15,62.5
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,pubmedbert_full,Higher full-text S-PubMedBERT,27,71.1,16,66.7
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,medcat_entity_recall,Higher MedCAT entity recall,35,92.1,16,66.7
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,scispacy_entity_recall,Higher scispaCy entity recall,31,81.6,18,75.0
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,nli_contra_transcript,Lower NLI contradiction (transcript),12,31.6,12,50.0
+Round 1,gpt-oss-120b vs MedGemma-4B,gpt-oss-120b,medgemma-4b,39,38,36,24,16,summary_words,Longer note (word count baseline),31,81.6,14,58.3
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,sbert_similarity,Higher default SBERT (256-token cap),21,53.8,21,67.7
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,bert_f1,Higher default BERTScore F1 (510-token cap),16,41.0,19,61.3
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,bert_f1_full,Higher untruncated BERTScore F1,14,35.9,13,41.9
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,sbert_full,Higher full-text SBERT,32,82.1,17,54.8
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,bge_large_full,Higher full-text BGE-large,29,74.4,17,54.8
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,pubmedbert_full,Higher full-text S-PubMedBERT,27,69.2,19,61.3
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,medcat_entity_recall,Higher MedCAT entity recall,32,82.1,20,64.5
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,scispacy_entity_recall,Higher scispaCy entity recall,27,69.2,21,67.7
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,nli_contra_transcript,Lower NLI contradiction (transcript),13,33.3,17,54.8
+Round 1,gpt-oss-20b vs MedGemma-4B,gpt-oss-20b,medgemma-4b,39,39,37,31,19,summary_words,Longer note (word count baseline),31,79.5,19,61.3
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,sbert_similarity,Higher default SBERT (256-token cap),19,50.0,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,bert_f1,Higher default BERTScore F1 (510-token cap),23,60.5,19,73.1
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,bert_f1_full,Higher untruncated BERTScore F1,30,78.9,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,sbert_full,Higher full-text SBERT,33,86.8,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,bge_large_full,Higher full-text BGE-large,30,78.9,17,65.4
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,pubmedbert_full,Higher full-text S-PubMedBERT,33,86.8,17,65.4
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,medcat_entity_recall,Higher MedCAT entity recall,29,76.3,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,scispacy_entity_recall,Higher scispaCy entity recall,33,86.8,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,nli_contra_transcript,Lower NLI contradiction (transcript),17,44.7,16,61.5
+Round 1,Qwen3-32B vs MedGemma-4B,qwen3-32b,medgemma-4b,39,38,35,26,15,summary_words,Longer note (word count baseline),29,76.3,14,53.8
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,sbert_similarity,Higher default SBERT (256-token cap),22,57.9,18,60.0
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,bert_f1,Higher default BERTScore F1 (510-token cap),25,65.8,18,60.0
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,bert_f1_full,Higher untruncated BERTScore F1,24,63.2,18,60.0
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,sbert_full,Higher full-text SBERT,25,65.8,20,66.7
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,bge_large_full,Higher full-text BGE-large,18,47.4,14,46.7
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,pubmedbert_full,Higher full-text S-PubMedBERT,27,71.1,19,63.3
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,medcat_entity_recall,Higher MedCAT entity recall,19,50.0,15,50.0
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,scispacy_entity_recall,Higher scispaCy entity recall,17,44.7,12,40.0
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,nli_contra_transcript,Lower NLI contradiction (transcript),23,60.5,19,63.3
+Round 1,gpt-oss-120b vs gpt-oss-20b,gpt-oss-120b,gpt-oss-20b,40,38,21,30,17,summary_words,Longer note (word count baseline),17,44.7,14,46.7
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,sbert_similarity,Higher default SBERT (256-token cap),22,55.0,13,48.1
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,bert_f1,Higher default BERTScore F1 (510-token cap),17,42.5,12,44.4
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,bert_f1_full,Higher untruncated BERTScore F1,15,37.5,9,33.3
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,sbert_full,Higher full-text SBERT,21,52.5,16,59.3
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,bge_large_full,Higher full-text BGE-large,25,62.5,18,66.7
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,pubmedbert_full,Higher full-text S-PubMedBERT,22,55.0,13,48.1
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,medcat_entity_recall,Higher MedCAT entity recall,19,47.5,12,44.4
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,scispacy_entity_recall,Higher scispaCy entity recall,22,55.0,16,59.3
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,nli_contra_transcript,Lower NLI contradiction (transcript),22,55.0,15,55.6
+Round 1,gpt-oss-120b vs Qwen3-32B,gpt-oss-120b,qwen3-32b,40,40,26,27,19,summary_words,Longer note (word count baseline),21,52.5,14,51.9
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,sbert_similarity,Higher default SBERT (256-token cap),20,51.3,14,48.3
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,bert_f1,Higher default BERTScore F1 (510-token cap),18,46.2,13,44.8
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,bert_f1_full,Higher untruncated BERTScore F1,17,43.6,15,51.7
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,sbert_full,Higher full-text SBERT,18,46.2,11,37.9
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,bge_large_full,Higher full-text BGE-large,21,53.8,17,58.6
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,pubmedbert_full,Higher full-text S-PubMedBERT,19,48.7,13,44.8
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,medcat_entity_recall,Higher MedCAT entity recall,19,48.7,14,48.3
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,scispacy_entity_recall,Higher scispaCy entity recall,19,48.7,15,51.7
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,nli_contra_transcript,Lower NLI contradiction (transcript),27,69.2,21,72.4
+Round 1,gpt-oss-20b vs Qwen3-32B,gpt-oss-20b,qwen3-32b,40,39,23,29,16,summary_words,Longer note (word count baseline),16,41.0,12,41.4
